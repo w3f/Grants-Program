@@ -11,9 +11,17 @@ Use this page for an overview of all public grants and their status. Use the sid
 >
 > Besides, **there is a clear difference between an application being accepted and the successful delivery of the respective project**, and only teams that have successfully delivered a milestone are allowed to make public announcements on the matter or to use our [badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). The badge can also never be used as a general endorsement for a team. Violations to this policy can be reported [here](mailto:grants@web3.foundation).
 
+## Menu
+- [2023](#2023): [17](#🏄‍♀️-wave-17---first-quarter-2023)
+- [2022](#2022): [16](#🏄‍♀️-wave-16---fourth-quarter-2022), [15](#🏄‍♀️-wave-15---third-quarter-2022), [14](#🏄‍♀️-wave-14---second-quarter-2022), [13](#🏄‍♀️-wave-13---first-quarter-2022)
+- [2021](#2021): [12](#🏄‍♀️-wave-12---fourth-quarter-2021), [11](#🏄‍♀️-wave-11---third-quarter-2021), [10](#🏄‍♀️-wave-10---second-quarter-2021), [9](#🏄‍♀️-wave-9---first-quarter-2021)
+- [2020](#2020): [8](#🏄‍♀️-wave-8---fourth-quarter-2020), [7](#🏄‍♀️-wave-7---third-quarter-2020), [6](#🏄‍♀️-wave-6---second-quarter-2020), [5](#🏄‍♀️-wave-5---first-quarter-2020)
+- [2019](#2019): [4](#🏄‍♀️-wave-4---fourth-quarter-2019), [3](#🏄‍♀️-wave-3---third-quarter-2019), [2](#🏄‍♀️-wave-2---second-quarter-2019), [1](#🏄‍♀️-wave-1---first-quarter-2019)
+
 ## 2023
 
-### 🏄‍♀️ Wave 17 - First Quarter 2023
+### 🏄‍♀️ Wave 17 - First Quarter 2023 
+[Menu🔝](#menu)
 
 | Team                                                                           | Project                                                                                                                                              | Link                                                                 | Terminated | First Delivery | Completed |
 | :----------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -44,6 +52,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 ## 2022
 
 ### 🏄‍♀️ Wave 16 - Fourth Quarter 2022
+[Menu🔝](#menu)
 
 | Team                                                                           | Project                                                                                                                                              | Link                                                                 | Terminated | First Delivery | Completed |
 | :----------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -88,6 +97,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [MangoBOX labs](https://www.mangobox.xyz/)                                          | [MangoSale Protocol](MangoSale_Protocol.md)                                                                                                                      | [GitHub](https://github.com/Mangoboxlabs)                             | ☐          |       ☐        |     ☐     |
 
 ### 🏄‍♀️ Wave 15 - Third Quarter 2022
+[Menu🔝](#menu)
 
 | Team                                                         | Project                                                                                       | Link                                                                   | Terminated | First Delivery | Completed |
 | :----------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -132,6 +142,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [hack-ink](https://github.com/hack-ink)                      | [Subalfred](./subalfred.md)                                                                   | [GitHub](https://github.com/hack-ink/subalfred)                        | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 14 - Second Quarter 2022
+[Menu🔝](#menu)
 
 | Team                                                       | Project                                                                                                 | Link                                                                   | Terminated | First Delivery | Completed |
 | :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -173,6 +184,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [MangoBOX labs](http://mangobox.xyz/)                      | [MangoBOX Protocol](./MangoBOX-Protocol.md)                                                             | [GitHub](https://github.com/Mangoboxlabs)                              | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 13 - First Quarter 2022
+[Menu🔝](#menu)
 
 | Team                                                  | Project                                                                                 | Link                                                                   | Terminated | First Delivery | Completed |
 | :---------------------------------------------------- | :-------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -212,6 +224,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 ## 2021
 
 ### 🏄‍♀️ Wave 12 - Fourth Quarter 2021
+[Menu🔝](#menu)
 
 | Team                                                       | Project                                                                                   | Link                                                                       | Terminated | First Delivery | Completed |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -238,6 +251,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | Crypto Pay Lab (CPL))                                      | [Dotpay a github paid task platform using DOT](./DotPay.md)                               | [GitHub](https://github.com/bytepayment)                                   | ☐          |       ☒        |     ☐     |
 
 ### 🏄‍♀️ Wave 11 - Third Quarter 2021
+[Menu🔝](#menu)
 
 | Team                                            | Project                                                                                   | Link                                                | Terminated | First Delivery | Completed |
 | :---------------------------------------------- | :---------------------------------------------------------------------------------------- | :-------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -269,6 +283,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Evercity](https://evercity.io/)                | Sustainable Finance Protocol                                                              | [GitHub](https://github.com/EvercityEcosystem)      | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 10 - Second Quarter 2021
+[Menu🔝](#menu)
 
 | Team                                                               | Project                                                                                             | Link                                                                   | Terminated | First Delivery | Completed |
 | :----------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -303,6 +318,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Yatima Inc](https://github.com/yatima-inc/yatima)                 | [Lambda-VM and programming language for Substrate](./yatima.md)                                     | [GitHub](https://github.com/yatima-inc/yatima)                         | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 9 - First Quarter 2021
+[Menu🔝](#menu)
 
 | Team                                                                    | Project                                                                                                                       | Link                                                                                         | Terminated | First Delivery | Completed |
 | :---------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -358,6 +374,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 ## 2020
 
 ### 🏄‍♀️ Wave 8 - Fourth Quarter 2020
+[Menu🔝](#menu)
 
 | Team                                                              | Project                                                                                                                                               | Link                                                       | Terminated | First Delivery | Completed |
 | :---------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -406,6 +423,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Bounce Protocol](https://bounce.finance/)                        | [Decentralized Auction Protocol](./bounce-protocol.md)                                                                                                | [GitHub](https://github.com/bouncefinance/bounce-network)  | ☐          |       ☐        |     ☐     |
 
 ### 🏄‍♀️ Wave 7 - Third Quarter 2020
+[Menu🔝](#menu)
 
 | Team                                                             | Project                                                                                                                                                                                  | Link                                                                  | Terminated | First Delivery | Completed |
 | :--------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -442,6 +460,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Shard Labs](https://shardlabs.io)                               | [Tip or Donate KSM Embeddable Button](./KSM-embeddable-tip-or-donate-button.md)                                                                                                          | [GitHub](https://github.com/Shard-Labs)                               | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 6 - Second Quarter 2020
+[Menu🔝](#menu)
 
 | Team                                                      | Project                                                                                                                                       | Link                                                             | Terminated | First Delivery | Completed |
 | :-------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -480,6 +499,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Dipole Tech](https://www.dipole.tech)                    | [Dipole Oracle: Distributed energy resource management](./DipoleOracle.md)                                                                    | [GitHub](https://github.com/DipoleTech/dipole-oracle)            | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 5 - First Quarter 2020
+[Menu🔝](#menu)
 
 | Team                                                                                                        | Project                                                                                                                                                                                       | Link                                                                                             | Terminated | First Delivery | Completed |
 | :---------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -524,6 +544,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 ## 2019
 
 ### 🏄‍♀️ Wave 4 - Fourth Quarter 2019
+[Menu🔝](#menu)
 
 | Team                                                   | Project                                                                                                                                                                    | Link                                                             | Terminated | First Delivery | Completed |
 | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -555,6 +576,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Chain Security](https://chainsecurity.com/)           | Tool for validating correctness of Polkadot runtimes                                                                                                                       | [GitHub](https://github.com/ChainSecurity/polpatrol)             | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 3 - Third Quarter 2019
+[Menu🔝](#menu)
 
 | Team                                                     | Project                                                                                                                                                                             | Link                                                                   | Terminated | First Delivery | Completed |
 | :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -574,6 +596,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Wiv](http://wiv.io/)                                    | Supply chain modules and front-end UI                                                                                                                                               | [GitHub](https://github.com/wivtech)                                   | ☒          |       ☐        |     ☐     |
 
 ### 🏄‍♀️ Wave 2 - Second Quarter 2019
+[Menu🔝](#menu)
 
 | Team                                          | Project                                                                                                                                                         | Link                                                                | Terminated | First Delivery | Completed |
 | :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------ | :--------- | :------------: | :-------: |
@@ -591,6 +614,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Usetech](http://usetech.com/blockchain.html) | [Polkadot C++ API](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/cpp_api.md)                                                     | [GitHub](https://github.com/usetech-llc/polkadot_api_cpp)           | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 1 - First Quarter 2019
+[Menu🔝](#menu)
 
 | Team                                          | Project                                                                                                                                                 | Link                                                                        | Terminated | First Delivery | Completed |
 | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------- | :--------- | :------------: | :-------: |
