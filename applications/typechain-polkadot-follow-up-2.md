@@ -1,8 +1,5 @@
 # Typechain-Polkadot Follow-up-2
 
-# [Typechain-Polkadot](https://github.com/727-Ventures/typechain-polkadot)
-
-- **Project Name:** [Typechain-Polkadot](https://github.com/727-Ventures/typechain-polkadot)
 - **Team Name:** [727.ventures](https://github.com/727-Ventures)
 - **Payment Address:** ERC 20 (DAI):
 0x352F779203202c99699CdA8cc95adF06CcC8abEf
@@ -20,7 +17,7 @@ Information about how to interact with a contract (methods names, arguments & re
 
 Interaction with blockchain is done with the polkadot.js library, which only has abstract definitions for the contract in use. Thus users' code cannot be typesafe. And Typechain-Polkadot can change it.
 
-This Grant is a follow-up to the previous grants, [first grant](https://github.com/w3f/Grants-Program/blob/master/applications/typechain-polkadot.md) and [second grant](https://github.com/w3f/Grants-Program/blob/master/applications/typechain-polkadot-follow-up.md).
+This Grant is a follow-up to the previous grants, [Typechain-Polkadot](https://github.com/w3f/Grants-Program/blob/master/applications/typechain-polkadot.md) and [Typechain-Polkadot Follow-up](https://github.com/w3f/Grants-Program/blob/master/applications/typechain-polkadot-follow-up.md).
 In this grant, we aim to integrate event subscription, allow users to create their plugins and expand the tool into more packages so the users can alo use different parts of the application alone if needed.
 
 ### Usage of Typechain-compiler
