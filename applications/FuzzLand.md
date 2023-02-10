@@ -17,7 +17,7 @@ The use of human auditors by auditing firms presents several challenges, includi
  
 In contrast, FuzzLand aims to parallelize novel automated program analysis techniques to gain accurate results in a reasonable amount of time. To achieve high parallelism with low costs, FuzzLand platform allows the public to contribute computation power to accomplish the automated auditing in return for token rewards. In the meantime, all the program analysis intermediate statistics and waypoints are verified and stored on the FuzzLand chain, which can finally be leveraged to mint the auditing reports. 
 
-Unlike traditional collaborative manual auditing platforms, FuzzLand uses sound automated program analysis techniques to provide auditing reports. Since the program analysis results and intermediate waypoints can be easily verified through a fully automated oracle, the manual confirmation process is no longer needed. While it is impossible to quantify the performance of human auditors, FuzzLand can quantify the auditing progress and completeness of auditing reports based on metrics backed with on-chain data. 
+Unlike traditional collaborative manual auditing platforms, FuzzLand uses sound automated program analysis (e.g., fuzzing and symbolic execution) techniques to provide accurate auditing reports. Since the program analysis results and intermediate waypoints can be easily verified through a fully automated oracle, the manual confirmation process is no longer needed. While it is impossible to quantify the performance of human auditors, FuzzLand can quantify the auditing progress and completeness of auditing reports based on metrics backed with on-chain data. 
 
 The FuzzLand platform can offer two key benefits to the ecosystem. Firstly, it allows Substrate module and Ink developers to access low-cost, highly accurate auditing reports for their projects with on-chain guarantees. Secondly, the platform will be implemented as a Substrate chain and the platform's Substrate pallets can be easily reused by other projects.
 
@@ -122,7 +122,7 @@ Given `u8` domain is 256, weight (exploration difficulty) of E1 is `(256 - 20) /
 
 We support automated auditing of any program that can be compiled to LLVM bytecode by leveraging fuzz testing techniques, which involve sending random input to the program. This method, also known as heuristic search, aims to achieve 100% code coverage and uncover all vulnerabilities. While infinite time would guarantee zero false negatives, we use formal methods such as symbolic and concolic execution for guiding the fuzz testing search to reduce the time needed. Additionally, by partitioning the program into smaller, more manageable subprograms for each node, we can reduce the time required linearly as the number of nodes increases.
 
-Fuzz testing employs partitioning through the use of an instrumented target. If an input causes execution of code outside the partition plan, the target will terminate. Early termination reduces the time spent exploring code not within the partition, saving significant time.
+Fuzz testing employs partitioning through the use of an instrumented target. If an input causes execution of code outside the partition plan, the target will terminate. Early termination reduces the time spent exploring code not within the partition, saving significant time. Similarly, symbolic and concolic execution can also conduct early-termination to avoid exploring code outside the partition. 
 
 
 **Reaching Consensus**
@@ -138,6 +138,15 @@ Verifying partition plans and interesting test cases can be costly or even impos
 - Substrate
 - Rust
 - LLVM
+
+#### Dependencies
+
+- LibAFL for fuzzing
+- Rustc for converting Substrate Pallets and ink! smart contracts to LLVM IR
+- Substrate Client (https://github.com/scs/substrate-api-client) for WS communication between the chain and the oracles
+- (Potentially) SymCC (https://github.com/eurecom-s3/symcc) for symbolic execution on LLVM bytecode
+- (Potentially) yul2llvm (https://github.com/Veridise/yul2llvm) for converting Solidity to LLVM IR
+- More TBD
 
 #### Implementation Details
 
@@ -242,6 +251,9 @@ The oracle also interacts with chain by interacting with optimistic rollups. The
 #### UI
 Design Doc: https://xd.adobe.com/view/41cd2fa4-f124-4877-8b17-a8ff47799bf7-149e/
 
+PoC Source Code: https://github.com/fuzzland/protocol_v1/tree/main/frontend
+
+
 Screen 1: Onboarding - Upload Project
 ![](https://i.imgur.com/blNwnb7.png)
 
@@ -260,8 +272,12 @@ Downstream DeFis, including insurance, using the auditing intermediate informati
 
 Other projects can reuse the components of FuzzLand platforms. For example, the optimistic rollups pallet can be used by Layer 2 solutions. Collaborative manual auditing projects can also use the audit pallet or our chain by replacing the rollups pallet with consensus pallets. 
 
-We have yet to see any similar projects in Substrate / Polkadot / Kusama ecosystem. Code4rena, Immunefi, Secure3, Sherlock, etc. are similar projects in other ecosystems, but they all rely on human auditors. 
+[Decentralized Security Marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/decentralized-security-marketplace.md) is a related RFP. [QRUCIAL DAO](https://github.com/w3f/Grants-Program/pull/989) is a related project in Substrate ecosystem. QRUCIAL DAO and FuzzLand both reach consensus about the auditing result. The fundamental differences are:
+* FuzzLand harnesses the computation power of the crowd to perform compute-intensive dynamic program analysis, resulting in fast and highly accurate auditing. Yet, QRUCIAL DAO's analysis is performed by rerunning a same set of fast static analysis tools on multiple nodes, of which the requirement of multiple nodes is solely for reaching consensus. 
+* We support all LLVM targets, including Substrate pallet, ink!, Solidity, Move, Rust, C/C++, etc. projects while QRUCIAL DAO is tailored for smart contract auditing. 
+* We use optimistic rollups to efficiently reach consensus while QRUCIAL DAO uses the governance pallet. 
 
+Code4rena, Immunefi, Secure3, Sherlock, etc. are similar projects in other ecosystems, but they all rely on human auditors. 
 
 ## Team :busts_in_silhouette:
 
@@ -337,11 +353,30 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):** 4 FTE
 - **Total Costs:** 30,000 USD
 
-### Milestone 1 — Substrate Chain
+### Milestone 1 — Offchain Oracle
 
-- **Estimated duration:** 5 month
+- **Estimated duration:** 1.5 month
 - **FTE:** 4 FTE
-- **Costs:** 30,000 USD
+- **Costs:** 12,000 USD
+
+| Number | Deliverable                 | Specification                                                                                                                                                                                                                                                                                                  |
+| -----: | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                     | GPLv3                                                                                                                                                                                                                                                                                                          |
+|    0b. | Documentation               | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of a validator or a auditor node.                                                                  |
+|    0c. | Testing Guide               | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                              |
+|    0d. | Docker                      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                  |
+|    0e. | Article                     | We will publish an **article**/workshop that explains the technical details. We will also publish research papers about our algorithms and implementations.                                                                                                                                                                                                    |
+|     1. | Auditor Nodes Oracle Library            | We will implement our DPA algorithm for LLVM targets in the form of a Rust library and fine tune it for ink! contracts and Substrate pallets.                                                      |
+|     2. | Validator Nodes Oracle Library             | We will implement the partition plan synthesis algorithm and offchain testcase validation tool in the form of a Rust library.                                                    |
+|     3. | Verifier                     | We will develop the verifier for testcase validation and partition plan validation in the form of a Rust library that can be compiled to WASM. We will benchmark this library to ensure that the complexity of result verification is significantly lower than that of offchain oracles generating results.                                                                       |
+|     4. | Integration Testing                     | We will demonstrate that at least 3 auditor nodes oracle can efficiently collaborate to conduct program analysis for a ink! contract. We will also demonstrate that verifiers can be resistent to gaming by running a cluster of 2 honest validator nodes oracle and 1 malicious node.                                                                        |
+
+
+### Milestone 2 — Substrate Chain
+
+- **Estimated duration:** 3 month
+- **FTE:** 4 FTE
+- **Costs:** 18,000 USD
 
 | Number | Deliverable                 | Specification                                                                                                                                                                                                                                                                                                  |
 | -----: | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -350,11 +385,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |    0c. | Testing Guide               | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                              |
 |    0d. | Docker                      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                  |
 |    0e. | Article                     | We will publish an **article**/workshop that explains the technical details and how to initiate an audit request. We will also publish research papers based on effectiveness of our solution and metrics collected from operating our platform.                                                                                                                                                                                                    |
-|     1. | Substrate module: optimistic_rollups       | We will create a pallet that implements the optimistic rollups algorithm and a Rust SDK can that can interact with the pallet. |
-|     2. | Substrate module: audit | We will create a pallet for accepting auditing requests onboarding, storing testcases, and distributing rewards. The pallet can also generate auditing reports in txt format automatically.                                                                   |
-|     3. | Substrate chain             | Module `optimistic_rollups` and `auditing` can be integrated into a substrate node, to enable auditor nodes to submit intermediate auditing results and information. This chain will integrate contracts, treasury, council, democracy and also other essential pallets, to build a full-featured blockchain.                                                     |
-|     4. | Offchain oracle             | We will implement off-chain oracle that conducts dynamic program analysis and outcome verification for auditor nodes and validator nodes in Rust.                                                    |
-|     5. | Web App                     | We will create a web app, to let users easily interact with our substrate node. Users can create auditing requests, visualize intermediate auditing information, and view final auditing report.                                                                     |
+|     1. | Substrate module: optimistic_rollups       | We will create a pallet that implements the optimistic rollups algorithm and a Rust SDK can that can interact with the pallet. We will also integrate the verifier developed in last milestone into this pallet. |
+|     2. | Substrate module: audit | We will create a pallet for onboarding auditing requests, storing testcases, and distributing rewards. The pallet can also generate auditing reports in txt format automatically.                                                                   |
+|     3. | Substrate chain             | Module `optimistic_rollups` and `auditing` will be integrated into a Substrate node, to enable auditor nodes to submit intermediate auditing results and information. This chain will integrate contracts, treasury, council, democracy and also other essential pallets, to build a full-featured blockchain.                                                    |
+|     4. | Offchain oracle clients             | Auditor and validator nodes clients will be built by integrating the libraries built in the last milestone. The two clients will be able to interact with the chain so that the full auditing workflow shown in the [Project Details](#Project-Details) can be accomplished.                                                     |
+|     4. | Web App                     | We will create a web app, to let users easily interact with our substrate node. Users can create auditing requests, visualize intermediate auditing information, and view final auditing report.                                                                     |
 
 ## Future Plans
 
