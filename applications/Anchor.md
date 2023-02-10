@@ -1,8 +1,7 @@
-# W3F Grant Proposal
+# Anchor, On-chain Linked List pallet and Name Service
 
-- **Anchor, On-chain Linked List pallet and Name Service**
-- **Fuu**
-- **0xF8105ea1cC3130501bad5De60Bd3D794a9115dE2 (USDT)**
+- **Team Name:** Fuu
+- **Payment Address:** 0xF8105ea1cC3130501bad5De60Bd3D794a9115dE2 (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 
