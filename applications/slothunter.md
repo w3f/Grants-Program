@@ -91,7 +91,7 @@ If they contain no activity, references to projects hosted elsewhere or live are
 
 - **Total Estimated Duration:** 5 weeks
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 18,000 USD in Ethereum USDC
+- **Total Costs:** 18,000 USD
 
 ### Milestone 1
 
