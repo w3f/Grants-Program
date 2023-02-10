@@ -33,5 +33,6 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program) 
+- [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/) 
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
 - [SubQuery Grants Programme](https://subquery.network/grants)
