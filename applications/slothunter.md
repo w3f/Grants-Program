@@ -1,7 +1,7 @@
 # Subalfred
 
 - **Team Name:** hack-ink
-- **Payment Address:** 0xccd79b2b77e71292924e85de130bfb1c03d94522 (Ethereum)
+- **Payment Address:** 0xccd79b2b77e71292924e85de130bfb1c03d94522 (Ethereum) USDC
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
