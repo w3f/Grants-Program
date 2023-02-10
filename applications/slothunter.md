@@ -1,4 +1,4 @@
-# Subalfred
+# Slothunter
 
 - **Team Name:** hack-ink
 - **Payment Address:** 0xccd79b2b77e71292924e85de130bfb1c03d94522 (Ethereum) USDC
