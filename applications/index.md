@@ -12,11 +12,11 @@ Use this page for an overview of all public grants and their status. Use the sid
 > Besides, **there is a clear difference between an application being accepted and the successful delivery of the respective project**, and only teams that have successfully delivered a milestone are allowed to make public announcements on the matter or to use our [badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). The badge can also never be used as a general endorsement for a team. Violations to this policy can be reported [here](mailto:grants@web3.foundation).
 
 ## Menu
-- [2023](#2023): [17](#🏄‍♀️-wave-17---first-quarter-2023)
-- [2022](#2022): [16](#🏄‍♀️-wave-16---fourth-quarter-2022), [15](#🏄‍♀️-wave-15---third-quarter-2022), [14](#🏄‍♀️-wave-14---second-quarter-2022), [13](#🏄‍♀️-wave-13---first-quarter-2022)
-- [2021](#2021): [12](#🏄‍♀️-wave-12---fourth-quarter-2021), [11](#🏄‍♀️-wave-11---third-quarter-2021), [10](#🏄‍♀️-wave-10---second-quarter-2021), [9](#🏄‍♀️-wave-9---first-quarter-2021)
-- [2020](#2020): [8](#🏄‍♀️-wave-8---fourth-quarter-2020), [7](#🏄‍♀️-wave-7---third-quarter-2020), [6](#🏄‍♀️-wave-6---second-quarter-2020), [5](#🏄‍♀️-wave-5---first-quarter-2020)
-- [2019](#2019): [4](#🏄‍♀️-wave-4---fourth-quarter-2019), [3](#🏄‍♀️-wave-3---third-quarter-2019), [2](#🏄‍♀️-wave-2---second-quarter-2019), [1](#🏄‍♀️-wave-1---first-quarter-2019)
+- [2023](#2023): [17](#%EF%B8%8F-wave-17---first-quarter-2023)
+- [2022](#2022): [16](#%EF%B8%8F-wave-16---fourth-quarter-2022), [15](#%EF%B8%8F-wave-15---third-quarter-2022), [14](#%EF%B8%8F-wave-14---second-quarter-2022), [13](#%EF%B8%8F-wave-13---first-quarter-2022)
+- [2021](#2021): [12](#%EF%B8%8F-wave-12---fourth-quarter-2021), [11](#%EF%B8%8F-wave-11---third-quarter-2021), [10](#%EF%B8%8F-wave-10---second-quarter-2021), [9](#%EF%B8%8F-wave-9---first-quarter-2021)
+- [2020](#2020): [8](#%EF%B8%8F-wave-8---fourth-quarter-2020), [7](#%EF%B8%8F-wave-7---third-quarter-2020), [6](#%EF%B8%8F-wave-6---second-quarter-2020), [5](#%EF%B8%8F-wave-5---first-quarter-2020)
+- [2019](#2019): [4](#%EF%B8%8F-wave-4---fourth-quarter-2019), [3](#%EF%B8%8F-wave-3---third-quarter-2019), [2](#%EF%B8%8F-wave-2---second-quarter-2019), [1](#%EF%B8%8F-wave-1---first-quarter-2019)
 
 ## 2023
 
