@@ -79,9 +79,7 @@ Data disputes originate via the pallet on the consumer chain and require a dispu
 *Tellor core architecture:* 
 The underlying oracle design will follow the same structure as Tellor on other chains, namely a game theoretic design where data is put on-chain by staked reporters who are liable to lose their stake if disputed.  The system can be as fast as participants desire, but like other blockchain architectures, is more secure the slower the oracle use is since it allows more time for disputes.
 
-Tellor Architecture of the smart contracts can be found: https://github.com/tellor-io/tellorFlex  
-Or in our whitepaper: https://tellor.io/whitepaper/ 
-Information on the Tellor Reporter (node) software can be found here:  https://docs.tellor.io/tellor/reporting-data/introduction 
+Tellor architecture of the smart contracts can be found in the [TellorFlex github repository](https://github.com/tellor-io/tellorFlex) or in our [whitepaper](https://tellor.io/whitepaper/).  Information on the Tellor Reporter (node) software can be found in the [Tellor Docs](https://docs.tellor.io/tellor/reporting-data/introduction).
 
 *Prior work or research on the topic:*
 The team received an Ethereum foundation grant for researching bridges as the team was initially designing a cross-chain decentralized derivative protocol. There were no available decentralized oracles at the time and that prompted the team to design and build a decentralized oracle, which soon was dubbed Tellor.  Tellor has been live on Ethereum mainnet since August 2019 and the team has continued to iterate to increase decentralization, token dependency, and improve upon governance. We have launched on several chains as of May 2022, including Ethereum, Polygon, Arbitrum, Algorand, and corresponding testnets. 
@@ -154,7 +152,7 @@ The smart contract structure for Tellor is finished for most EVM chains, but wil
 - Medium Articles - https://medium.com/@tellor 
 - Research - ​​https://vc.bridgew.edu/cgi/viewcontent.cgi?article=1037&context=ijcic 
 - Smart Contract repository - https://github.com/tellor-io/tellorFlex 
-- Reporter (Node) repository - https://github.com/tellor-io/telliot-core 
+- Reporter (Node) repository - https://github.com/tellor-io/telliot-feeds  
 
 ## Development Roadmap :nut_and_bolt:
 
