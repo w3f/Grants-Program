@@ -248,6 +248,8 @@ Anchor.js can help developer accessing Anchor network by this single JS.
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. On anchor.js, will supply demo to test. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. I am not so fimilar with Docker, that will take a bit long time. |
+| 0e. | Anchor pallet | Will fix if neccessary. Mainly testing this time. |
+| 0f. | anchor.js | A demo with all functions will be developed by React |
 
 ## Future Plans
 
