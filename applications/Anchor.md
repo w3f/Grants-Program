@@ -1,7 +1,7 @@
 # Anchor, On-chain Linked List pallet and Name Service
 
 - **Team Name:** Fuu
-- **Payment Address:** 0xF8105ea1cC3130501bad5De60Bd3D794a9115dE2 (USDT)
+- **Payment Address:** 13u5kLGrt4n1Smc78ZXtYVedgp1U1LyGAAHtPFtVcv6Z1BtR (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 
@@ -234,13 +234,13 @@ Anchor.js can help developer accessing Anchor network by this single JS.
 
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):**  1
-- **Total Costs:** 6,000USD
+- **Total Costs:** 6,000 USDC
 
 ### Milestone 1 — Anchor pallet testing & documents, anchor.js full function
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 6,000 USDT
+- **Costs:** 6,000 USDC
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
