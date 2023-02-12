@@ -11,7 +11,7 @@
 
 Claps defines itself as a "gamified health tracking app" that uses gaming elements to motivate users to track their health and make healthy lifestyle choices. By integrating with artificial intelligence (AI) into a gamified health tracking app to provide a more personalized and interactive user experience.
 
-AI algorithms are used to analyze users' health data and provide personalized recommendations for activities or behaviors that could help them achieve their health goals. The app AI can provide users with the option to request a consultation with a health practitioner if they are experiencing specific symptoms or are in need of support.
+The Claps AI is designed to support health practitioners in tracking patients' data on a daily basis. The AI algorithms analyze patients' health information and provide insights and recommendations to assist health practitioners in delivering personalized care to their patients. This can improve patient outcomes and help practitioners provide the most effective and efficient care.
 
 Claps is designed to be engaging and enjoyable to use, and could provide users with feedback and support to help them achieve their health goals. It could be a useful tool for promoting health and well-being, and could be particularly appealing to users who enjoy gaming and are looking for a more interactive and engaging way to track their health.
 
@@ -20,6 +20,9 @@ Claps is designed to be engaging and enjoyable to use, and could provide users w
 - Taiwan Research-based Biopharmaceutical Manufacturers Association (TRPMA) is jointly established by 28 biopharmaceutical manufacturers and developers and 19 regenerative medicine companies based in Taiwan. This proposal is proposed by Jacob Lee, director of the digital health team at TRPMA. Jacob Lee is the co-designer of phrOS(Personal Health Records Operating System), a Ethereum private blockchain and IPFS Cluster based SaaS at Medical Center Hospital in 2017.
 
 ### Project Details
+
+## Architecture
+![claps_health_diagam](https://user-images.githubusercontent.com/14127551/218294412-3f0c2a9e-774a-49f0-b4c0-67e8ee6cb896.png)
 
 ## Claps App Use Case
 
@@ -48,18 +51,23 @@ Collect and analyze data from patients' mood tracking
 Provide personalized recommendations and education content to patients based on their data
 Facilitate communication and collaboration between patients, health practitioners, and pharmaceutical companies.
 
-![diagam](https://user-images.githubusercontent.com/14127551/215703063-220a9219-34f5-4034-be41-0d8ee9d48b70.png)
-
 # Solutions
-Personal Health AI Assistant
+Gamefield Mood Tracking
 
-By integrating with Open AI technology,  AI assistants are designed to provide support and encouragement to individuals who may be struggling with health issues. The AI could provide individuals with the option to request a consultation with a health practitioner if they are experiencing specific symptoms or are in need of support.
+- By gamifying the experience through a health diary design, aims to break through the challenge of collecting mental health real-world data. The app provides a challenge card and a way for users to set personal goals, track progress, and receive rewards for their efforts. This approach makes the experience more engaging, encouraging patients to stick with their tracking habits and provide more accurate data. The personal goal-setting feature also caters to a wide range of needs and preferences, making the app more accessible and appealing to a broad audience.
+
 Health Practitioners AI Assistant
 
-AI algorithms can analyze individual patient data and provide personalized recommendations for treatment or care. This can help practitioners to tailor their approach to the needs of each patient and to make more informed decisions.
+- AI can help health practitioners in various ways by analyzing patient data and providing actionable insights to improve patient care. The use of AI can save time and improve the efficiency of health practitioners by automating routine tasks and allowing them to focus on more complex and critical tasks. AI-powered alerts can help practitioners detect potential issues earlier and provide more proactive care. By providing tailored recommendations based on individual patient data, AI can also help practitioners make more informed decisions and provide personalized care.
+
+Omni-channel
+
+- This allows pharmaceutical companies to track and analyze the behavior and engagement of healthcare practitioners, patients, and other stakeholders, and make data-driven decisions about their marketing and communication strategies. These solutions can help pharmaceutical companies to make data-driven decisions about their marketing and communication strategies, which can help improve patient outcomes and the quality of care.
+
 Web3 Technology
 
-Web3 technologies can give individuals more control over their personal health records, as they can choose who has access to their data and when it is shared. This can help to enhance privacy and ensure that personal health information is used appropriately.
+- Web3 technologies can give individuals more control over their personal health records, as they can choose who has access to their data and when it is shared. This can help to enhance privacy and ensure that personal health information is used appropriately.
+
 
 # Our Goals
 Improve the quality of care and outcomes for patients.
@@ -74,8 +82,20 @@ Claps enable patients to self-report, self-test, and access health education, an
 
 Technology
 
-- GPT-3 AI model
-GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language processing artificial intelligence developed by OpenAI. AI assistants are designed to provide support and encouragement to individuals who may be struggling with health issues.
+Substrate Blockchain
+
+- By using Substrate blockchain technology to store and manage data, facilitate data sharing, dapps contracts, and create and manage digital assets with patient’s data. Leveraging Substrate blockchain technology for healthcare can offer significant benefits for patients and healthcare industry, providing them with enhanced privacy protection and better data consent management. By taking control of their own data, patients can access the care and support they need more efficiently and securely.
+
+Self-Sovereign Identity (SSI)
+
+- Self-Sovereign Identity (SSI) is a decentralized digital identity model that puts individuals in control of their personal information and how it is used. This approach to identity provides users with more privacy and control over their personal information, and helps to prevent data breaches and misuse of sensitive information.
+Zero-knowledge proof
+The zero-knowledge proof is part of SSI, this means that a user can prove their identity or access rights to a service without revealing any sensitive personal information. This helps to protect the privacy of the user and reduce the risk of data breaches, while still enabling secure and reliable authentication.
+![zkproof](https://user-images.githubusercontent.com/14127551/218294803-fefcbb47-9be2-418a-a595-424302e838bb.png)
+
+GPT-3 AI model
+
+- GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language processing artificial intelligence developed by OpenAI. The GPT-3 chatbots are designed to interact with patients on a daily basis to support and enhance the continued care work of health practitioners. It's always monitored by health practitioners to ensure the accuracy and relevance of their responses.
 
 ### Ecosystem Fit
 
@@ -133,7 +153,7 @@ New project
 - **Full-Time Equivalent (FTE):**  5-6 FTE
 - **Total Costs:** 75,000 USD
 
-### Milestone 1 Claps Prototyping and Patients Registration
+### Milestone 1 Prototyping  & Registration API
 
 - **Estimated duration:** 2 month
 - **FTE:**  4
@@ -145,8 +165,9 @@ New project
 | **0b.** | Documentation | We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Patient Registration | Patients registration API & Dapps on substrate for mobile app, developed in ink! smart contract. <br> Patient ID & profile management <br> - Add patient ID <br> - Update patient profile <br> Credential management <br> - Receive credential issued by system (for example: user credibility level) <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> Anti-fraud <br> - Twitter account verification <br> - Email verification |
-| 2. | Documentation | We will provide the document for commend-line verification  |
+| 1. | Substrate module: Patient Registration | Patients registration API & Dapps on substrate for mobile app, developed in ink! smart contract. <br> Patient ID & profile management <br> - Add patient ID <br> - Update patient profile <br> Credential management <br> - Receive credential issued by system (for example: user validation) <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> Support Zero-knowledge proof <br> - On-chain authentication (Prove patient ID without private information) |
+| 2. | Substrate module: Enterprise Registration | Enterprise registration API & Dapps on substrate for web backend, developed in ink! smart contract. <br> Organization ID & profile management <br> - Add organization ID <br> - Add users & access policy <br> Credential management <br> - Receive credential issued by issuers (for example: organization validation) <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> Support Zero-knowledge proof <br> - On-chain authentication (Prove organization ID without private information) |
+| 3. | Documentation | We will provide the document for command-line verification or simple UI verification  |
 
 ### Milestone 2 Challenge card & Health diary
 
@@ -168,7 +189,7 @@ New project
 | 6. | Audit logging on web backend | The web backend will implement an auditable log of all access to system, including who accessed it and what actions were performed, to help detect and respond to security incidents. |
 
 
-### Milestone 3 Claps DAO
+### Milestone 3 Data Sharing Protocol
 
 - **Estimated Duration:** 2 month
 - **FTE:**  2
@@ -180,9 +201,9 @@ New project
 | **0b.** | Documentation | We will provide Claps API reference documents. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Claps Health DAO | We will implement a DAO for configure and manage Claps Dapps, the DAO function included multi-signature for DAO managers. Module developed in ink! smart contract. |
+| 1. | Substrate module: Claps Health Data Sharing protocol | We will implement a health data sharing protocol dapps on Substrate to enable secure sharing of health data among various stakeholders. Module developed in ink! smart contract. <br> - Consent management <br> - Offer data feed <br> - Delete data |
 
-### Milestone 4 Claps Web Backend for Clients & Health Practitioners
+### Milestone 4 Omnichannel
 
 - **Estimated Duration:** 2 month
 - **FTE:**  4
@@ -194,9 +215,35 @@ New project
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use Claps app. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Web Backend module: Client registration | We will provide a web backend for client registration, allowing clients access to patient groups. Develop in Vue and Java. <br> - Account signup/signin by invitation <br> - Subscribe patient group <br> - Add health practitioners <br> - Add sponsorship on health education contents |
-| 2. | Web Backend module: Health  Practitioner Registration | We will provide a web backend for HP registration, allowing HP to publish health education contents. Develop in Vue and Java. <br> - Account signup/signin by client invitation <br> - Published health education contents <br> - View and tracking patients feedback |
-| 3. | Article | We will publish an article/workshop that explains how Claps work and benefit patients. |
+| 1. | Substrate module: Health Education Content Management | We will provide a web backend for health education content publishing & management. Module developed in ink! smart contract. |
+| 2. | Substrate module: IPFS Cluster | We will provide an integrated Substrate module with IPFS swam for health education content storage.  |
+| 3. | Substrate module: Analytics | We will provide a web backend for pharmaceutical and healthcare businesses . By analyzing large datasets to identify patterns about health behaviors, allowing for targeted and proactive education efforts. Develop in Vue and Java. (or Rust) |
+| 4. | Article | We will publish an article/workshop that explains how Claps Health work and benefit patients. |
+
+## Regulation and Compliance with HIPAA/GDPR
+
+### Pseudonymization
+
+By using pseudonyms, the health data can be processed and shared in a secure and de-identified manner, while still allowing for verifiable identification.
+
+### End-to-end data encryption
+
+Claps Health offers tools based on public key cryptography and AES256 GCM end-to-end data encryption to secure health data. Only authorized parties can access the data. The application layers are using AWS S3 industry compliance secure storage. 
+
+### Audit logs
+
+The auditable log of all access to the system, including who accessed it and what actions were performed
+Consent Tracking
+
+By implementing consent tracking smart contracts, organizations can demonstrate that they are following privacy regulations and that patients have control over their health data. 
+
+### Right to be forgotten
+
+Claps Health does not store personal data on the blockchain and there is only random ID and hash code on chain. Individuals have more control over their data and can request deletion of the corresponding data in the database. Ensure that all personal data is securely deleted and no residual information remains that could be used to re-identify individuals.
+
+### However, it is important to note that HIPAA/GDPR compliance involves a comprehensive set of rules and regulations for protecting health information. This proposal does not cover all of the guidelines such as physical access, governance of organizations..etc.
+
+
 ## Future Plans
 
 Open AI Integration
