@@ -1,8 +1,8 @@
-# W3F Maintenance Grant Proposal
+# `wasm-opt` for Rust Maintenance
 
-- **Project Code Name:** `wasm-opt` for Rust Maintenance
 - **Team Name:** Common Orbit LLC
 - **Payment Address:** (Ethereum DAI) 0x2de31E52E24Df0588C64B27657D4F75e5462adEf
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 
 ## Project Overview :page_facing_up:

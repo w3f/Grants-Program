@@ -1,5 +1,5 @@
-# W3F Grant Proposal
-- **Project Name:** ink!/pallet/solidity performance benchmarking
+# ink!/pallet/solidity performance benchmarking
+
 - **Team Name:** Talentica Software
 - **Payment Address:** 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1

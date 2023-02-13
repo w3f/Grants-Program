@@ -7,6 +7,7 @@ If you are certain you want to apply for a W3F grant, head straight to our [appl
 
 ## Funding Opportunities Overview
 
+For a longer list and a description of the programs listed below, check out [our page on alternative funding opportunities](funding.md).
 
 ```mermaid
 flowchart LR

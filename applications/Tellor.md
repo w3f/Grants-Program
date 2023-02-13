@@ -164,13 +164,16 @@ The smart contract structure for Tellor is finished for most EVM chains, but wil
 
 
 
+
 ### Overview
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2 
 - **Total Costs:** 40,000 USD
 
+
 ### Milestone 1 — Launch Tellor core contracts on an EVM parachain
+
 
 - **Estimated duration:** 2 month
 - **FTE:**  2
@@ -188,9 +191,6 @@ The smart contract structure for Tellor is finished for most EVM chains, but wil
 | 3 | Local testing| |
 
 
-
-### Milestone 2 — Create and test oracle pallet and complete documentation with usage examples
-
 - **Estimated Duration:** 2 months
 - **FTE:**  2
 - **Costs:** 20,000 USD
@@ -206,6 +206,7 @@ Details:  A new Substrate pallet will be required which includes the core oracle
 | 1 | Substrate Oracle pallet design and integration | We will provide the Substrate oracle pallet                                                                                                                     |
 | 2 | Testing the pallet and testing integration with projects and selected parachains| We will test full functionality of the system for interactions between the consumer chain and oracle pallet                                                     |
 | 3 | Documentation/ Usage Examples| We will provide documenatation and usage examples for the system.                                                                                               |
+
 
 
 ## Future Plans

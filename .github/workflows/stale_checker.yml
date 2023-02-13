@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: stale
-      uses: 0xCaso/label-stale-pull-requests@v1
+      uses: w3f/label-stale-pull-requests@main
       with:
         context: ${{ toJSON(github) }}
         token: ${{ secrets.GITHUB_TOKEN }}
