@@ -174,7 +174,7 @@ The goal is to achive a fully functional mechanism for the random selection of t
 
 ### Overview
 
-- **Total Estimated Duration:** 5 months (starting date - August 2022)
+- **Total Estimated Duration:** 5 months (starting date - August 2022) _ Update: Because of changes in the development team M2 delivery date will be ≈15th of March 2023, with relative shift of the whole timeline.
 - **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** 44,000 USD
 
