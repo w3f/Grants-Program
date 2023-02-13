@@ -12,9 +12,9 @@ title: Requests for Proposals
 
 ## :grey_question: What is an RFP?
 
-An RFP (Request for Proposals) is a declaration of interest for others to submit a grant application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](suggesting.md)) deems useful and missing or unsolved in our ecosystem.
+An RFP (Request for Proposals) is a declaration of interest for others to submit a grant or a treasury application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](suggesting.md)) deems useful and missing or unsolved in our ecosystem.
 
-If you find an open RFP here that you think you can address, feel free to [submit a grant application](process.md). There is a [section in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing.
+If you find an open RFP here that you think you can address, feel free to [submit a grant application](process.md). There is a [section in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing. Alternatively, you can always submit an on-chain treasury application for an RFP. 
 
 
 ## 📜 List of RFPs
@@ -56,6 +56,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [scale-codec-comparator.md](RFPs/Under%20Development/scale-codec-comparator.md) | 🟡 | 30.05.2022 |
 | [social-recovery-wallet.md](RFPs/Under%20Development/social-recovery-wallet.md) | 🟡 | 05.07.2021 |
 | [staking-rewards-collector-front-end.md](RFPs/Implemented/staking-rewards-collector-front-end.md) | 🔴 | 20.07.2021 |  
+| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Open/Static-Analysis-for-Runtime-Pallets.md) | 🟢 | 06.02.2023 |  
 | [sub-consensus.md](RFPs/Open/sub-consensus.md) | 🟢 | 23.11.2021 |
 | [uncollateralized-stablecoin-research.md](RFPs/Implemented/uncollateralized-stablecoin-research.md) | 🔴 | 01.01.23 |
 | [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 🟢 | 07.01.2023 |

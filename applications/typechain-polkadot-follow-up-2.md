@@ -1,4 +1,4 @@
-# Typechain-Polkadot Follow-up
+# Typechain-Polkadot Follow-up-2
 
 - **Team Name:** [727.ventures](https://github.com/727-Ventures)
 - **Payment Address:** ERC 20 (DAI):
@@ -17,9 +17,8 @@ Information about how to interact with a contract (methods names, arguments & re
 
 Interaction with blockchain is done with the polkadot.js library, which only has abstract definitions for the contract in use. Thus users' code cannot be typesafe. And Typechain-Polkadot can change it.
 
-This Grant is a follow-up to the previous grant, [Typechain-Polkadot](https://github.com/w3f/Grants-Program/pull/992)..
-We have decided to add a new tool that will help developers easily integrate typechain to their projects. It will also be compatible with Redspot (if redspot was used for compiler projects, you could just leave most of the things).
-We have some updates on our team, so check them out. And also, we did more work on Milestone 1 than we thought, so now it'll be easier to add new features to the project, so we considered to reestimate our time.
+This Grant is a follow-up to the previous grants, [Typechain-Polkadot](https://github.com/w3f/Grants-Program/blob/master/applications/typechain-polkadot.md) and [Typechain-Polkadot Follow-up](https://github.com/w3f/Grants-Program/blob/master/applications/typechain-polkadot-follow-up.md).
+In this grant, we aim to integrate event subscription, allow users to create their plugins and expand the tool into more packages so the users can alo use different parts of the application alone if needed.
 
 ### Usage of Typechain-compiler
 
@@ -74,7 +73,7 @@ No, we are the first project of the kind in the ecosystem. However, in the Solid
 
 - **Markian Ivanichok** (СEO of 727.ventures)
 - **Fedor Lebed** (Head of Operations | 727.ventures)
-- **Green Baneling** (Blockchain Core Rust Engineer | 727.ventures)
+- **Dominik Krížo** (Head of Engineering | 727.ventures)
 - **Varex Silver** (Blockchain developer | 727.ventures)
 - **Artem Lech** (Blockchain developer | 727.ventures)
 
@@ -99,13 +98,10 @@ CEO of 727.ventures, Blockchain entrepreneur, Software Engineer. Started my engi
 Fedor is the head of operations at Brushfam, a portfolio company of 727. ventures which is developing the ink! Smart contracts tools.
 Fedor invested in mining pools from 15 years old. He has a background in product management, working with international software products for Tier-1 markets.
 
-**Green Baneling**
-Blockchain Core Developer
-Primary programming languages are: C++, Go, Rust
+**Dominik Krížo**
+Head of Engineering
 
-Finished the faculty of applied mathematics(Master's degree). Participated in programming competitions during education. Has worked as a programmer for around six years.
-
-Was a freelancer the first year, creating an application for IOS(Swift), and creating modules for the desktop application on C++. After that, I spent two years in a company that created software for TV devices(C++/ Haxe). After which, for three years, working on different blockchain projects(C++/Go/Rust/Solidity/Js).
+Started programming own games at age of 15 as a hobby, then went to University studying informatics and object oriented programming, becoming an Android developer, eventually switching to work in web3. Dominik played a crucial role in the OpenBrush and Sol2Ink development and is currently developing the ink! smart contracts tools as part of Brushfam.
 
 **Varex Silver**
 Blockchain Developer.
@@ -124,14 +120,15 @@ Student of Applied Mathematics at the Kyiv National University of Taras Shevchen
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- [https://github.com/xgreenx](https://github.com/xgreenx)
+- [https://github.com/coreggon11](https://github.com/coreggon11)
 - [https://github.com/varex83](https://github.com/varex83)
 - [https://github.com/Artemka374](https://github.com/Artemka374)
 
 ### Team LinkedIn Profiles (if available)
 
 - [https://www.linkedin.com/in/mivanichok/](https://www.linkedin.com/in/mivanichok/)
-- [https://www.linkedin.com/in/toma-sadova/](https://www.linkedin.com/in/toma-sadova/)
+- [https://www.linkedin.com/in/fedor-lebed-b8520b1a8/](https://www.linkedin.com/in/fedor-lebed-b8520b1a8/)
+- [https://www.linkedin.com/in/dominik-krizo/](https://www.linkedin.com/in/dominik-krizo/)
 - [https://www.linkedin.com/in/bogdan-ogorodniy/](https://www.linkedin.com/in/bogdan-ogorodniy/)
 - [https://www.linkedin.com/in/artem-fomiuk-31249b226/](https://www.linkedin.com/in/artem-fomiuk-31249b226/)
 
@@ -143,67 +140,42 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-We have decided to describe a full roadmap of a Typechain here, with estimates. However, the funding we request at this stage is for milestone 2.
+We have decided to describe a full roadmap of a Typechain here, with estimates. However, the funding we request at this stage is for milestone 3.
+
+* **Total Estimated Duration:** 8 weeks
+* **Full-Time Equivalent (FTE):** 2.5
+* **Total Costs:** 56,000 USD
 
 ## Previous work
 
-### Milestone 1 - MVP, first application and testing.
+### [Grant #1](https://github.com/w3f/Grants-Program/pull/992)
 
-- **Estimated duration:** 8 weeks
-- **FTE:** 2
-- **Costs:** 44,800 USD
-
-| Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
-| 0a     | License  | MIT |
-| 0b     | Documentation | We will provide TypeScript code examples of this package in use, inline documentation, JSDoc, and the description of its features. |
-| 1 | TS Types | We will research & match types from ABI to TypeScript, compatible with polkadot{.js} v8 library. Separately, for methods' arguments and return values. Files with types definition will be generated. | 
-| 2 | Runtime Code | Prepare output(its draft can be seen in [technical specification](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#generated-code-draft)) of runtime code with contracts' methods implementation. At this point we have minimal viable coverage of the ABI types, original methods' names, and general types for methods' options, without specifics for contract's namespaces.
-| 3 | Testing | Minimal coverage of PSP22 contract with integration tests. We will be testing correctness of the derived types of the arguments and return values. |
-| 4 | NPM Packaging | Prepare the repository to work through CLI as a package. In TypeScript, as is, without translation to JavaScript. We will publish the package to NPM repository and provide set-up instructions (i.e. for installation, input & output). |
+### [Grant #2](https://github.com/w3f/Grants-Program/pull/1368)
 
 ## Current work - Scope of this grant
+### Milestone 1 - High-level improvements, flexibility and simplifying of usage
 
-### Milestone 2 - Full coverage for ABIs’ types. Contracts deployment.
-
-- **Estimated duration:** 7.5 weeks
+- **Estimated duration:** 8 weeks
 - **FTE:** 2.5
-- **Costs:** 52,500 USD
+- **Costs:** 56,000 USD
+
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
-| 0a | License | MIT |
-| 0b | Documentation | Cover new-added features in documentation and usage examples. Prepare generated code to have more informative IDE hints based on TSDoc and the output type system (if needed). |
-| 1 | Investigation & Refactoring | Broaden types definitions for methods arguments and return values (to full coverage). Also, refactor project structure to monorepo for future development | 
-| 2 | Parser & generators modules | Design and implement a new parser module for ABI JSON to work with different versions of the ABI. Parser's output structure serves as an input for generators. Refactor, replace inline generation with the parser to generator flow. |
-| 3 | Contract deployment | Add availability to deploy contracts with `Constructors` field, using `*.contract` files.
-| 4a | Contract classes extension | Extend generated contract classes with valuable properties ordinarily available on the contract (e.g., address, name, signer, etc.). Also, provide the ability to change signer and contract address easily without creating a new contract manually. |
-| 4b | Methods' names | Format methods' names in the output from the original `MethodTrait::method_name` to a more user-friendly `methodName` naming scheme while resolving overlap in formatted names. |
-| 5 | Testing | Complete coverage of PSP22 contract with integration tests. Both for contract usage and deployment. We will be testing arguments' & return values' types' correctness. |
-| 6 | Article | We will publish an article that explains features of Typechain, how to use it in projects |
-| 7 | Branding | Make logotype for typechain and better README |
+| 0a. | License | MIT | 
+| 0b. | Documentation | We will cover new-added features in documentation and usage examples. | 
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | 
+| 0e. | Article | We will publish an article that explains how to integrate the typechain library into a project and describes the types of connection options (directly or via compiler). | 
+| 1. | User-defined plugins | We will provide an opportunity for users to make their plugins, for instance, how to use parsed types, adding new fields and so on. | 
+| 2. | Subscribing to events | We will research and subscribe to events the contract emits, which will be handy for developers. |
+| 3. | Typechain-compiler | The tool will be easy for big projects to compile Rust code and generate Typechain definitions. It’ll be helpful for TDD when users can write code and develop everything in one CLI command instead of generating a typechain-code file by file. In plans, we want to make a wrapper for running user scripts (like hardhat run) and also functionality to initialize the environment for typechain usage |
+| 4. | Openbrush integration tests | We will test typechain on openbrush integration tests to ensure everything is working correctly and is easy to use. |
+| 5. | typechain/types package | We will make a separate package for types that typechain use to reduce the usage of the same code and separate static code from generated code. |
 
 ## Future work
 
-### Milestone 3 - High-level improvements, flexibility and simplifying of usage
-
-- **Estimated duration:** 8-12 weeks
-- **FTE:** ?
-- **Costs: -**
-
-
-| Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
-| 0a | License | MIT | 
-| 0b | Documentation | We will cover new-added features in documentation and usage examples. | 
-| 1 | User-defined plugins | We will provide an opportunity for users to make their plugins, for instance, how to parse types or what generated code will look like. | 
-| 2 | Subscribing to events | We will research and subscribe to events the contract emits, which will be handy for developers. |
-| 3 | Typechain-compiler | The tool will be easy for big projects to compile Rust code and generate Typechain definitions. It’ll be helpful for TDD when users can write code and develop everything in one CLI command instead of generating a typechain-code file by file. In plans, we want to make a wrapper for running user scripts (like hardhat run) and also functionality to initialize the environment for typechain usage |
-| 4 | Openbrush integration | We will test typechain on openbrush integration tests to ensure everything is working correctly and is easy to use. |
-| 5 | typechain/types package | We will make a separate package for types that typechain use to reduce the usage of the same code and separate static code from generated code. |
-| 6 | Article | We will publish article that explain how to connect it to the project and describe the types of connection options (directly or via compiler) |
-
-After this grant, we will maintain the project to keep up with new emerging ecosystem standards, listen to community issues, and update the tool to make the transformation process a more excellent experience for the developers and teams. We are going to work on integration with the Swanky project.
+After this grant, we will maintain the project to keep up with new emerging ecosystem standards, listen to community issues, and update the tool to make the transformation process a more excellent experience for the developers and teams.
 
 ## Additional Information :heavy_plus_sign:
 
@@ -213,4 +185,4 @@ Have a number of approved applications:
 
 - OpenBrush
 - Sol2Ink
-- Typechain-polkadot (Milestone 1)
+- Typechain-polkadot (Milestone 1, 2)

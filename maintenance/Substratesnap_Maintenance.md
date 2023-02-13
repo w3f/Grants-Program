@@ -1,12 +1,7 @@
 # SubstrateSnap Maintainance Grant Proposal
 
-
-
-- **Project Name:** SubstrateSnap
 - **Team Name:** ChainSafe Systems
-- **Payment Details:** DAI (ERC20) 
- **Address**: 0x85D81Ab61Fe16CDcaeF2Ca556ED4577A51b9b07C (DAI)
-- Network
+- **Payment Address:** 0x85D81Ab61Fe16CDcaeF2Ca556ED4577A51b9b07C (DAI ERC20)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
 
