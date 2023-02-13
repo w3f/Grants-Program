@@ -158,11 +158,9 @@ The smart contract structure for Tellor is finished for most EVM chains, but wil
 
 | Milestone | Description                                                                      | Stack                 | Resources | Funding |
 | --------- | -------------------------------------------------------------------------------- | --------------------- | --------- | ------- |
-| 1         | Develop controller contracts                                                     | Solidity / javascript | 2 devs    | 10,000  |
-| 2         | Develop parachain integration contract                                           | Solidity              | 2 devs    | 10,000  |
-| 3         | Substrate Oracle pallet design and integration                                   | Rust / Solidity       | 2 devs    | 10,000  |
-| 4         | Testing the pallet and testing integration with projects and selected parachains | numerous              | 2 devs    | 5,000   |
-| 5         | Documentation/ Usage Examples                                                    | *   <br>              | 2 devs    | 5,000   |
+| 1         | Develop and launch Tellor core contracts on an EVM parachain                     | Solidity / javascript | 2 devs    | 20,000  |
+| 2         | Create and test oracle pallet and complete documentation with usage examples     | Rust / Solidity       | 2 devs    | 20,000  |
+
 
 
 
@@ -172,7 +170,7 @@ The smart contract structure for Tellor is finished for most EVM chains, but wil
 - **Full-Time Equivalent (FTE):**  2 
 - **Total Costs:** 40,000 USD
 
-### Milestone 1,2 — Launch Tellor core contracts on an EVM parachain
+### Milestone 1 — Launch Tellor core contracts on an EVM parachain
 
 - **Estimated duration:** 2 month
 - **FTE:**  2
@@ -184,12 +182,14 @@ The smart contract structure for Tellor is finished for most EVM chains, but wil
 | **0a.** | License |  MIT|
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial**. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1 | Controller contracts | We will provide a set of solidity smart contracts with the functionality described above  |
-| 2 | Parachain integration contract| We will provide an integration contract |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1 | Develop Controller contracts | We will provide a set of solidity smart contracts with the functionality described above  |
+| 2 | Develop Parachain integration contract| We will provide an integration contract |
+| 3 | Local testing| |
 
 
 
-### Milestone 3,4,5 — Create and test oracle pallet and complete documentation with usage examples
+### Milestone 2 — Create and test oracle pallet and complete documentation with usage examples
 
 - **Estimated Duration:** 2 months
 - **FTE:**  2
@@ -202,9 +202,10 @@ Details:  A new Substrate pallet will be required which includes the core oracle
 | **0a.** | License | MIT                                                                                                                                                             |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial**.                                                                             |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 3 | Substrate Oracle pallet design and integration | We will provide the Substrate oracle pallet                                                                                                                     |
-| 4 | Testing the pallet and testing integration with projects and selected parachains| We will test full functionality of the system for interactions between the consumer chain and oracle pallet                                                     |
-| 5 | Documentation/ Usage Examples| We will provide documenatation and usage examples for the system.                                                                                               |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1 | Substrate Oracle pallet design and integration | We will provide the Substrate oracle pallet                                                                                                                     |
+| 2 | Testing the pallet and testing integration with projects and selected parachains| We will test full functionality of the system for interactions between the consumer chain and oracle pallet                                                     |
+| 3 | Documentation/ Usage Examples| We will provide documenatation and usage examples for the system.                                                                                               |
 
 
 ## Future Plans
