@@ -132,7 +132,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):**  2 Software Engineer, 0.5 Project Manager
-- **Total W3F Costs:** 50 000$
+- **Total Costs:** 50,000 USD
 - **Total Polywrap DAO Costs:** 27 000$ & 60 WRAP ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x1c4b651c654c9409353e70e4675b3311f06a06ab40d8818e4370faa064c5645d))
 - **Start Date:** 11. April 2022
 
@@ -140,7 +140,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 Software Engineer, 0.5 Project Manager
-- **Costs:** 50 000$
+- **Costs:** $50,000
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
