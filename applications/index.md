@@ -49,6 +49,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Zeeve](https://www.zeeve.io)             | [Parachain deployment zoombienet testing automation](Zeeve_Parachain_deployment_zoombienet_testing_automation.md)                                                               | [GitHub](https://github.com/Zeeve-App)                                  | ☐          |        ☐         |      ☐     |
 | [Polytope Labs](https://research.polytope.technology/)             | [Trie Verifier Implementation](solidity-trie-verifier.md)                                                               | [GitHub](https://github.com/polytope-labs)                                  | ☐          |        ☐         |      ☐     |
 | Off-Narrative Labs             | [Tuxedo](tuxedo.md)                                                               | [GitHub](https://github.com/JoshOrndorff)                                  | ☐          |        ☐         |      ☐     |
+| [FuzzLand](https://fuzz.land/)             | [FuzzLand](FuzzLand.md)                                                               | [GitHub](https://github.com/fuzzland)                                  | ☐          |        ☐         |      ☐     |
 
 ## 2022
 
