@@ -125,7 +125,7 @@ In `Milestone 1`, we are going to implement `RedDSA`, optimize `Jubjub` curve an
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both `inline documentation` of the code and a `basic tutorial` that explains how users use the wallet and delegate proof generation. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
@@ -144,7 +144,7 @@ In `Milestone 2`, we are going to implement `plookup` and recursion on top of [p
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both `inline documentation` of the code and a `basic tutorial` that explains how users implement `plookup` circuit and aggregate proofs. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
@@ -163,7 +163,7 @@ In `Milestone 3`, we are going to implement `plookup` and `recursive proof` on t
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both `inline documentation` of the code and a `basic tutorial` that explains how users prove the validity of **wasm** ISA execution. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
@@ -182,7 +182,7 @@ In `Milestone 4`, we are going to implement rollup node. This can aggregate tran
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both `inline documentation` of the code and a `basic tutorial` that explains how users setup the node and send transfer transactions. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
