@@ -50,6 +50,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Polytope Labs](https://research.polytope.technology/)             | [Trie Verifier Implementation](solidity-trie-verifier.md)                                                               | [GitHub](https://github.com/polytope-labs)                                  | ☐          |        ☐         |      ☐     |
 | Off-Narrative Labs             | [Tuxedo](tuxedo.md)                                                               | [GitHub](https://github.com/JoshOrndorff)                                  | ☐          |        ☐         |      ☐     |
 | [FuzzLand](https://fuzz.land/)             | [FuzzLand](FuzzLand.md)                                                               | [GitHub](https://github.com/fuzzland)                                  | ☐          |        ☐         |      ☐     |
+| [Fuu](https://github.com/ff13dfly/)             | [Anchor, On-chain Linked List pallet and Name Service](Anchor.md)                                                               | [GitHub](https://github.com/ff13dfly/Anchor)                                  | ☐          |        ☐         |      ☐     |
 
 ## 2022
 
