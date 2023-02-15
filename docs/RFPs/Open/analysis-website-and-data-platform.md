@@ -2,6 +2,7 @@
 
 * **Status:** Open 
 * **Proposer:** [Keegan Quigley](https://github.com/keeganquigley)
+* **Teams/People that could deliver the RFP**: @web3go-xyz
 
 ## Project Description :page_facing_up: 
 On-chain analysis is an important emerging field for the Polkadot & Kusama ecosystems. One can currently use GraphQL to query data via backend services such as [Subquery](https://explorer.subquery.network/) and [Subsquid](https://app.subsquid.io), however it would be nice to have an easy-to-use front-end with sharable customized dashboards as well. The end result might look similar to [Dune Analytics](https://dune.com/browse/dashboards), a popular data sharing dashboard used in the Ethereum community. Using Dune Analytics, users can quickly create and openly share queries wich can then be forked and remixed in a variety of ways by others.
