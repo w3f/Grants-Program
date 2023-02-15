@@ -216,9 +216,9 @@ Personal
 
 ### Overview
 
-- Total Estimated Duration: 3 months
-- Full-Time Equivalent (FTE): 0.2 FTE
-- Total Costs: 10,000 USD
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):** 0.2 FTE
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 — Data gathering & Polkadot Networks
 
