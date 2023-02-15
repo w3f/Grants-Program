@@ -8,33 +8,9 @@
 
 ### Overview
 
-Slothunter is a CLI program.
+Slothunter is a Rust CLI program.
 
-**It could:**
-1. Monitor the auction state.
-   1. This program will run as a system service.
-   2. It will fetch and cache the chain state periodically.
-2. Calculate the current winner.
-   1. Base on previous data, calculate the current auction winner.
-3. Webhook, email notifications.
-   1. Provide webhook and email notifications.
-   2. This can be integrate to telegram, slack, etc.
-   3. It could notify the users:
-      1. New auction.
-      2. Insufficient fund for bidding/contributing.
-      3. New winner.
-      4. Auction end.
-4. Auto bidding/contributing.
-   1. Use regular account to bid/contribute.
-   2. Use proxy account to bid/contribute.
-5. Customize bidding/contributing strategy.
-6. Provide a config.toml to configure:
-   1. Relaychain.
-   2. Accounts.
-   3. Bidding/contributing target and amount.
-   4. Keep bidding/contributing every `x` blocks.
-   5. Notification mailbox.
-   6. Webhook URI.
+It's goal is to help teams/users to participate in the Polkadot auction more easily and efficiently.
 
 ### Ecosystem Fit
 
@@ -43,6 +19,48 @@ I noticed nobody realized there was a slot action, and no one participated in it
 This could help small teams to catch the chance.
 
 And this also could help teams/users to bid/contribute automatically.
+
+### Details(spec)
+
+Slothunter will be implemented in Rust, which means it will be efficient and stable while running as a system service.
+
+This grant contains 7 parts.
+
+1. Monitor the auction state.
+   1. This program will run as a system service.
+   2. It will fetch and cache the chain state periodically.
+2. Calculate the current winner.
+   1. Base on previous data, calculate the current auction winner.
+   2. The data will be logged in the terminal.
+   3. It will also provide an API for people to query. e.g. http://127.0.0.1:12345/winner
+      1. The response type will be a json object.
+3. Email and webhook notifications.
+   1. It could notify the users:
+      1. New auction started. (email and webhook)
+      2. Insufficient fund for bidding/contributing. (webhook only, because I think it is annoying)
+      3. Stop bidding/contributing and reason. (email and webhook)
+      4. New winner. (webhook only, because I think it is annoying)
+      5. Auction ended. (email and webhook)
+   2. All the notification content will be present in json style.
+   3. Webhook notification can be integrated to telegram, slack, etc. e.g. the telegram bot will provide a listen address and Slothunter will push the notification to the bot periodically.
+4. Auto bidding/contributing.
+   1. Auto bid/contribute if there is new winner. And the bot will stop if the new winner's price is greater than the max acceptable value in the configuration file.
+   2. Able to use regular account to bid/contribute.
+   3. Able to use proxy account to bid/contribute.
+5. Customize bidding/contributing strategy, including:
+   1. Set max acceptable value.
+   2. Set bidding/contributing frequency every `x` blocks.
+6. Provide a config.toml to configure:
+   1. Relaychain.
+   2. Bidding/contributing account.
+   3. Bidding/contributing amount, target and max acceptable price.
+   4. Keep bidding/contributing every `x` blocks.
+   5. Notification mailbox.
+   6. Webhook URI.
+7. A Telegram bot, this should be easily deployed on any ubuntu:20.04+ server.
+
+Teams/users could start the bot before the auction. And all the things should go as expected.
+Teams/users could deploy the telegram bot and get latest auction status in group.
 
 ## Team :busts_in_silhouette:
 
@@ -91,25 +109,38 @@ If they contain no activity, references to projects hosted elsewhere or live are
 
 - **Total Estimated Duration:** 5 weeks
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 18,000 USD
+- **Total Costs:** 11,000 USD
 
-### Milestone 1
+### Milestone 1 Slothunter CLI tool
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  1
-- **Costs:** 18,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable                                  | Specification                                                                     |
 | -----: | -------------------------------------------- | --------------------------------------------------------------------------------- |
 |    0a. | License                                      | GPLv3                                                                             |
 |    0b. | Documentation                                | There will be a guide to tell people how to use this.                             |
 |    0c. | Testing guide                                | There will be a docker file and a guide to tell the auditor how to run the tests. |
-|     1. | Monitoring component                         | As I described in the overview.                                                   |
-|     2. | Auction winner calculator                    | As I described in the overview.                                                   |
-|     3. | Notification component                       | As I described in the overview.                                                   |
-|     4. | Auto bidding/contributing component          | As I described in the overview.                                                   |
-|     5. | Bidding/contributing configuration component | As I described in the overview.                                                   |
+|     1. | Auction winner calculator                    | All features that in **Details 2.** should work perfectly.                        |
+|     3. | Notification component                       | All features that in **Details 3.** should work perfectly.                        |
+|     4. | Auto bidding/contributing component          | All features that in **Details 4.** should work perfectly.                        |
+|     5. | Bidding/contributing configuration component | All features that in **Details 6.** should work perfectly.                        |
 |     6. | Releases                                     | Linux, macOS, Windows prebuilt binaries, and crates.io release.                   |
+
+### Milestone 2 Slothunter notification Telegram bot
+
+- **Estimated duration:** 2 weeks
+- **FTE:**  1
+- **Costs:** 1,000 USD
+
+| Number | Deliverable   | Specification                                                                     |
+| -----: | ------------- | --------------------------------------------------------------------------------- |
+|    0a. | License       | GPLv3                                                                             |
+|    0b. | Documentation | There will be a guide to tell people how to use this.                             |
+|    0c. | Testing guide | There will be a docker file and a guide to tell the auditor how to run the tests. |
+|     1. | Source code   |                                                                                   |
+|     2. | Deploy guide  | All notification that in **Details 3.** should be ported to Telegram perfectly.   |
 
 ## Future Plans
 
@@ -118,5 +149,10 @@ If they contain no activity, references to projects hosted elsewhere or live are
 ## Additional Information :heavy_plus_sign:
 
 We could talk about the bidding/contributing strategy. It's really flexible. If anyone got more ideas. I can integrate them into the program.
+
+I have talked to some teams few months ago. Because they ask me what script did I use during the bidding. Can I share it?
+Actually, I set some proxies accounts and share them with my team members. Then we watch the auction manually. If there is a new winner we could bid immediately.
+
+As I said before, there is even an empty auction in Kusama. This is not friendly and not good for the ecosystem. So, I decided to develop this. And I think it is valuable.
 
 **How did you hear about the Grants Program?** GitHub.
