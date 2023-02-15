@@ -1,4 +1,4 @@
-# Substrate Tokenomics:
+# Substrate Tokenomics
 
 - **Team Name:** Mark Van de Vyver [PhD(Dist)](https://www.student.uwa.edu.au/course/award-verification-service?family=van+de+vyver&family_partial=on&given=mark&search=Search)
 - **Payment Address:** To be provided (e.g. 0x8920... (USD))
