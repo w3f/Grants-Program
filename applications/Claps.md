@@ -165,8 +165,8 @@ New project
 | **0b.** | Documentation | We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Patient Registration | Patients registration API & Dapps on substrate for mobile app, developed in ink! smart contract. <br> Patient ID & profile management <br> - Add patient ID <br> - Update patient profile <br> Credential management <br> - Receive credential issued by system (for example: user validation) <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> Support Zero-knowledge proof <br> - On-chain authentication (Prove patient ID without private information) |
-| 2. | Substrate module: Enterprise Registration | Enterprise registration API & Dapps on substrate for web backend, developed in ink! smart contract. <br> Organization ID & profile management <br> - Add organization ID <br> - Add users & access policy <br> Credential management <br> - Receive credential issued by issuers (for example: organization validation) <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> Support Zero-knowledge proof <br> - On-chain authentication (Prove organization ID without private information) |
+| 1. | Patient registration module | Patients registration service for mobile app <br> Substrate Module (Developed in Rust): <br> Patient ID & profile management <br> - Add patient ID <br> - Update patient profile <br> Credential management <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> ink! Smart Contract (Developed as a DApp): <br> Support Zero-knowledge proof <br> - On-chain authentication (Prove patient ID without private information) |
+| 2. | Enterprise Registration Module | Enterprise registration service for web backend. <br>  Substrate Module (Developed in Rust): <br> Organization ID & profile management <br> - Add organization ID <br> - Add users & access policy <br> Credential management <br> - Receive credential issued by issuers (for example: organization validation) <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> ink! Smart Contract (Developed as a DApp): <br> On-chain anonymous identity and on-chain verification <br> - Zero-knowledge proof for on-chain authentication to prove organization ID without private information |
 | 3. | Documentation | We will provide the document for command-line verification or simple UI verification  |
 
 ### Milestone 2 Challenge card & Health diary
@@ -181,7 +181,7 @@ New project
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Challenge card | Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Module developed in ink! smart contract <br> Add challenge card <br> - Add personalized mission <br> - Delete challenge card <br> - Receive daily mission <br> - Receive rewards by mission completed <br> - Receive rewards by challenge completed <br> * Rewards by fungible tokens or NFT |
+| 1. | Dapp: Challenge card | Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Developed in ink! smart contract <br> Add challenge card <br> - Add personalized mission <br> - Delete challenge card <br> - Receive daily mission <br> - Receive rewards by mission completed <br> - Receive rewards by challenge completed <br> * Rewards by fungible tokens or NFT |
 | 2. | Web Backend module: Health dairy | Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java. <br> - Add Type <br> - Add Name <br> - Add Questionaire |
 | 3. | Android apk | We will provide android apk for above challenge card data input and functional verification. Developed in Flutters. <br> - We will provide android apk for user challenge card with wallet to receive rewards |
 | 4. | Data encryption module | We will implement data encryption module of all stored and transmitted data to prevent unauthorized access or tampering |
@@ -201,7 +201,9 @@ New project
 | **0b.** | Documentation | We will provide Claps API reference documents. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Claps Health Data Sharing protocol | We will implement a health data sharing protocol dapps on Substrate to enable secure sharing of health data among various stakeholders. Module developed in ink! smart contract. <br> - Consent management <br> - Offer data feed <br> - Delete data |
+| 1. | Software module: Claps Health Data Sharing protocol | We will implement a health data sharing protocol on Substrate and dapps to enable secure sharing of health data among various stakeholders. <br> - Consent management (Developed in ink! smart contract) <br> - Offer data feed(Develope in Rust on Substrate) <br> - Delete data (Develope in Rust on Substrate)
+
+ |
 
 ### Milestone 4 Omnichannel
 
@@ -215,10 +217,10 @@ New project
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use Claps app. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Health Education Content Management | We will provide a web backend for health education content publishing & management. Module developed in ink! smart contract. |
+| 1. | Substrate module: Health Education Content Management | We will provide a web backend for health education content publishing & management. Module developed in Rust on Substrate. |
 | 2. | Substrate module: IPFS Cluster | We will provide an integrated Substrate module with IPFS swam for health education content storage.  |
 | 3. | Substrate module: Analytics | We will provide a web backend for pharmaceutical and healthcare businesses . By analyzing large datasets to identify patterns about health behaviors, allowing for targeted and proactive education efforts. Develop in Vue and Java. (or Rust) |
-| 4. | Article | We will publish an article/workshop that explains how Claps Health work and benefit patients. |
+| 4. | Article | We will publish an article/workshop that explains how Claps Health work and benefit patients and healthcare business. |
 
 ## Regulation and Compliance with HIPAA/GDPR
 
