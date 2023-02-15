@@ -1,4 +1,4 @@
-# Substrate Tokenomics:
+# Substrate Tokenomics
 
 - **Team Name:** Mark Van de Vyver [PhD(Dist)](https://www.student.uwa.edu.au/course/award-verification-service?family=van+de+vyver&family_partial=on&given=mark&search=Search)
 - **Payment Address:** To be provided (e.g. 0x8920... (USD))
@@ -216,9 +216,9 @@ Personal
 
 ### Overview
 
-- Total Estimated Duration: 3 months
-- Full-Time Equivalent (FTE): 0.2 FTE
-- Total Costs: 10,000 USD
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):** 0.2 FTE
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 — Data gathering & Polkadot Networks
 
