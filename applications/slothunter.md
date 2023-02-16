@@ -130,7 +130,7 @@ If they contain no activity, references to projects hosted elsewhere or live are
 
 ### Milestone 2 Slothunter notification Slack/Telegram bot setup guide
 
-- **Estimated duration:** 2 weeks
+- **Estimated duration:** 1 weeks
 - **FTE:**  1
 - **Costs:** 1,000 USD
 
