@@ -1,7 +1,7 @@
 # Solidity Verifier Implementation for "Accountable Light Client Systems for PoS Blockchains"
 
 - **Team Name:** Darwinia
-- **Payment Address:** 0x... (DAI)
+- **Payment Address:** 0x5FD8bCC6180eCd977813465bDd0A76A5a9F88B47 (Ethereum USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -60,8 +60,8 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 curves, whi
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 3 FRASER STREET #05-25 DUO TOWER SINGAPORE (189352)
+- **Registered Legal Entity:** ITERING TECH PTE. LTD.
 
 ### Team's experience
 
@@ -159,7 +159,7 @@ If you've already started implementing your project or it is part of a larger re
 ## Referral Program :moneybag: 
 
 - **Referrer:** Aki Wu
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** 0x794BF0B66926D84CB735283D849f454A2A8d9a44 (Ethereum USDC)
 
 ## Additional Information :heavy_plus_sign:
 
