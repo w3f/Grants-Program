@@ -156,5 +156,5 @@ Github accounts of team members:
 
 Additional information:
 
-- [Darwinia truth layer code](https://github.com/darwinia-network/darwinia-messages-sol/tree/master/contracts/bridge/src/truth) currently include Beacon light client, BSC light client and Darwinia light client.
+- [Darwinia truth layer](https://github.com/darwinia-network/darwinia-messages-sol/tree/master/contracts/bridge/src/truth) currently include Beacon light client, BSC light client and Darwinia light client.
 - [Helix Bridge](https://helixbridge.app/en) which have bridges based on Darwinia cross-chain messaging protocol.
