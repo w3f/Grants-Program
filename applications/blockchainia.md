@@ -24,7 +24,7 @@ With the initial MVP, we can research in the nearby Business Research Center at 
 
 ### Project Details
 
-## Technologies Used
+#### Technologies Used
 
 - We will be creating our infrastructure from available substrate pallettes, and creating pallettes for our custom parachain supporting our custom game features. 
 - Unity as a means for Game and Server creation
