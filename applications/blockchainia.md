@@ -24,18 +24,17 @@ With the initial MVP, we can research in the nearby Business Research Center at 
 
 ### Project Details
 
-- Technologies Used
+## Technologies Used
 
 - We will be creating our infrastructure from available substrate pallettes, and creating pallettes for our custom parachain supporting our custom game features. 
 - Unity as a means for Game and Server creation
 - Gimp/Adobe Creative Suite - PixelArt for games, marketing materials
 
-- We have created a game server and client in unity for a simple first-person shooter. We are taking the lessons learned from this experience to create the MVP that we will release for our proof-of-concept, before porting to Oculus VR. 
-
+- We have created a game server and client in unity for a simple first-person shooter. We will use this to create the MVP game/parachain interaction that we will release for our proof-of-concept, before porting to Oculus VR. 
 
 ### Ecosystem Fit
 
-Our target audience includes game developers and gamers. We will develop a decentralized means of distribution that allows game developers to release directly to consumers. Our DAO-driven online gaming infrastructure will drive community engagement and provide free infrastructure for use by developers to take their games online. This  infrastructure will enable decentralized game distribution. There are no similar projects in the ecosystem's current gaming space. 
+Our target audience includes game developers and the general gaming community. We will develop a decentralized means of distribution that allows game developers to release directly to consumers. Our DAO-driven online gaming infrastructure will drive community engagement and provide free infrastructure for use by developers to take their games online. This  infrastructure will enable decentralized game distribution. There are no similar projects in the ecosystem's current gaming space. 
 
 ## Team :busts_in_silhouette:
 
