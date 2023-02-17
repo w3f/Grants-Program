@@ -1,4 +1,4 @@
-# Solidity Verifier Implementation for "Accountable Light Client Systems for PoS Blockchains"
+# Solidity Verifier Implementation for Accountable Light Client
 
 - **Team Name:** Darwinia
 - **Payment Address:** 0x5FD8bCC6180eCd977813465bDd0A76A5a9F88B47 (Ethereum USDC)
@@ -18,13 +18,13 @@ The cross-chain solutions we are currently focusing on are mainly on-chain light
 
 ### Project Details
 
-We have read this paper and found it very valuable. It provides a very efficient way to use snark to verify aggregate signatures, while still keeping signers' accountable. This approach makes the generation of zk proof very fast and cost effective.
+We have read this paper and found it very valuable. It provides a very efficient way to use SNARK to verify aggregated public key of signers , while still keeping signers' accountable. This approach makes the proof generation very fast and cost effective.
 
-We have implemented [an beacon light client from ethereum to darwinia](https://darwinia.subscan.io/account/0xD2A37C4523542F2dFD7Cb792D2aeAd5c61C1bAAE), which is based on the verification of bls aggregate signature. Although aggregate signatures effectively reduce the cross-chain gas, it is still not low enough because pubkeys need to be stored in the contract or carried in the message every time the header is updated. This can be a big problem if the number of pubkeys is large.
+We have implemented [an beacon light client from ethereum to darwinia](https://darwinia.subscan.io/account/0xD2A37C4523542F2dFD7Cb792D2aeAd5c61C1bAAE), which is based on the verification of BLS aggregate signature. Although aggregate signatures effectively reduce the cross-chain gas, it is still not low enough because the entire list of public keys need to be known by the light client smart contract. This can be a big problem if the number of pubkeys is large.
 
-So, we are looking for a better solution to the pubkeys problem of aggregate signatures. We put our eyes on zero-knowledge proofs. Zero-knowledge proofs are considered as an honest-computation proof method, so we just need to put the computation of the verification process off the chain. But through our studying, we found that the number of constraints under the generic snark scheme was so huge that not only the proof was slow to generate, but also required very powerful device. We were stuck here until we came across this paper from W3F.
+So, we are looking for a better solution to the pubkeys problem of aggregate signature. We put our eyes on zero-knowledge proofs. Zero-knowledge proofs are considered as an honest-computation proof method, with this method we only need to put the verification computation process off the chain. But through our studies, we found that the number of constraints under the generic snark scheme was so huge that not only the proof was slow to generate, but also required very powerful device. We were stuck here until we came across this paper from W3F.
 
-This verifier will be implemented based on the BLS12-377 and BW6-761 curves, which is consistent with the implementation in the paper and [W3F's PoC implementation](https://github.com/w3f/apk-proofs).
+This verifier will be implemented based on the BLS12-377 and BW6-761 elliptic curves, which is consistent with the implementation in the paper and [W3F's PoC implementation](https://github.com/w3f/apk-proofs).
 
 ### Ecosystem Fit
 
@@ -34,11 +34,11 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 curves, whi
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
   
-  The user of this lib will be the cross-chain messaging/bridge service providers.
+  The users of this verifier will be the cross-chain messaging/bridge service providers.
   
 - What need(s) does your project meet?
 
-  The light clients which use this library should preferably support precompiles of BLS12-377 and BW6-761. But, according to the paper, you can replace these two elliptic curves with other satisfying elliptic curves. What we can to do is provide an interface to make it easy to switch curves. You can switch to other curve precompiles, or use the solidity version of the curve implementations If gas and speed are not an issue.
+  The light clients which use this verifier should preferably support precompiles of BLS12-377 and BW6-761. You can use the no-precompiles version of the curve implementations If gas and speed are not an issue.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
@@ -65,7 +65,7 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 curves, whi
 
 ### Team's experience
 
-Darwinia has many years of experience in the blockchain cross-chain field. We are familiar with various cross-chain approaches, especially those based on light clients. We know Polkadot's technology well, our chains and some cross-chain facilities are based on parity's technology. We are also very familiar with solidity language. The beacon light client we developed with solidity has already run on Darwinia chain.
+Darwinia has many years of experience in the blockchain cross-chain field. We are familiar with various cross-chain approaches, especially those based on light clients. We know Polkadot's technology well, our chains and some cross-chain facilities are based on parity's technology. We are also very familiar with solidity language. The beacon light client we developed with solidity has already run on Darwinia Chain.
 
 ### Team Code Repos
 
@@ -82,90 +82,79 @@ Github accounts of team members:
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+  https://forum.polkadot.network/t/decentralized-dot-eth-bridges-a-comparison-thread/777/33
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:**  4 months
+- **Full-Time Equivalent (FTE):**  2 FTE
+- **Total Costs:** 70,000 USD
 
-### Milestone 1 — Basic verifier
+### Milestone 1 — Curve precompiles
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 15,000 USD
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can integrate it to a light client. We will provide example code to verify the proof generated from [W3F's PoC example](https://github.com/w3f/apk-proofs/blob/main/bw6/examples/recursive.rs). |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Curve precompiles | We will create the two curves(BLS12-377 and BW6-761) precompiles which can run inside [frontier](https://github.com/paritytech/frontier). |
-| 2. | Verifier | The verifier it self. |
+| 1. | BLS12-377 precompile | We will create a [EIP-2539](https://eips.ethereum.org/EIPS/eip-2539) compatible BLS12-377 precompile which can run inside [frontier](https://github.com/paritytech/frontier). |
+| 2. | BW6-761precompile | We will create a [EIP-3026](https://eips.ethereum.org/EIPS/eip-3026) compatible BW6-761 precompile which can run inside [frontier](https://github.com/paritytech/frontier). |
 | 3. |                           |                                                              |
 
-### Milestone 2 — Packed verifier
+### Milestone 2 — Basic & Packed verifier
 
-- **Estimated Duration:** 0.5 month
+- **Estimated Duration:** 2 month
 - **FTE:**  2
-- **Costs:** 8,000 USD
+- **Costs:** 30,000 USD
 
 |  Number | Deliverable               | Specification                                                |
 | ------: | ------------------------- | ------------------------------------------------------------ |
 | **0a.** | License                   | MIT                                                          |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can integrate it to a light client. We will provide example code to verify the proof generated from [W3F's PoC example](https://github.com/w3f/apk-proofs/blob/main/bw6/examples/recursive.rs). |
+| **0b.** | Documentation             | We will provide both **inline documentation** of the code and an example to verify the proof generated from [W3F's PoC example](https://github.com/w3f/apk-proofs/blob/main/bw6/examples/recursive.rs). |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-|      1. |                           |                                                              |
-|      2. |                           |                                                              |
-|      3. |                           |                                                              |
+|      1. | APK verifier              | We will implement the apk verifer which will check the apk is correct. |
+|      2. | BLS verifier              | We will implement the bls verifier which will check if the aggregate signature is signed by the apk. |
+|      3. | Signers threshold checker | Check if the bitvector contains enough signers.              |
 |      4. |                           |                                                              |
-|      5. |                           |                                                              |
 
 ### Milestone 3 — Counting verifier
 
-- **Estimated Duration:** 0.5 month
+- **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 8,000 USD
+- **Costs:** 20,000 USD
 
 |  Number | Deliverable               | Specification                                                |
 | ------: | ------------------------- | ------------------------------------------------------------ |
 | **0a.** | License                   | MIT                                                          |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can integrate it to a light client. We will provide example code to verify the proof generated from [W3F's PoC example](https://github.com/w3f/apk-proofs/blob/main/bw6/examples/recursive.rs). |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0b.** | Documentation             | We will provide both **inline documentation** of the code.   |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
 | **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-|      1. |                           |                                                              |
+| **0e.** | Article                   | We will publish an medium **article** that explains what was done. |
+|      1. | Counting verifier         | We will implement the counting verifier described in the [PoC](https://github.com/w3f/apk-proofs/blob/main/bw6/src/piop/counting.rs). |
 |      2. |                           |                                                              |
-|      3. |                           |                                                              |
-|      4. |                           |                                                              |
-|      5. |                           |                                                              |
 
 ## Future Plans
 
-- We plan to use this lib to implement our beacon accountable light client after the grant is completed.
+- We plan to use this verifier to implement our bridge on chain light client after the grant is completed. 
 
-- Adapt to other evm chains that meet the conditions, and support different curves.
+- Adapt to other evm chains that meet the curves conditions.
 
-## Referral Program :moneybag: 
-
-- **Referrer:** Aki Wu
-- **Payment Address:** 0x794BF0B66926D84CB735283D849f454A2A8d9a44 (Ethereum USDC)
+- Follow W3F paper's updates.
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / personal recommendation
 
-Aadditional information:
+Additional information:
 
 - [Darwinia truth layer code](https://github.com/darwinia-network/darwinia-messages-sol/tree/master/contracts/bridge/src/truth) currently include Beacon light client, BSC light client and Darwinia light client.
-- [Helix Bridge](https://helixbridge.app/en) which have bridges based on Darwinia cross-chain messaging.
+- [Helix Bridge](https://helixbridge.app/en) which have bridges based on Darwinia cross-chain messaging protocol.
