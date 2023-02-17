@@ -1,6 +1,6 @@
 # Solidity Verifier Implementation for Accountable Light Client
 
-- **Team Name:** Darwinia
+- **Team Name:** Itering
 - **Payment Address:** 0x5FD8bCC6180eCd977813465bDd0A76A5a9F88B47 (Ethereum USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
@@ -14,7 +14,7 @@ Darwinia is working in the cross-chain space. We have two Substrate based blockc
 
 Darwinia has been following cross-chain innovations, especially from W3F and Polkadot, and trying to apply these innovations in practice. 
 
-The cross-chain solutions we are currently focusing on are mainly on-chain light clients. So we know the importance of this kind of light client system described in the paper.
+The cross-chain solutions Darwinia is currently focusing on are mainly on-chain light clients. As a dev company contributing to Darwinia, we know the importance of this kind of light client system described in the paper.
 
 ### Project Details
 
@@ -91,13 +91,13 @@ Github accounts of team members:
 
 - **Total Estimated Duration:**  4 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 70,000 USD
+- **Total Costs:** 95,000 USD
 
 ### Milestone 1 — Curve precompiles
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 20,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -113,7 +113,7 @@ Github accounts of team members:
 
 - **Estimated Duration:** 2 month
 - **FTE:**  2
-- **Costs:** 30,000 USD
+- **Costs:** 45,000 USD
 
 |  Number | Deliverable               | Specification                                                |
 | ------: | ------------------------- | ------------------------------------------------------------ |
