@@ -19,12 +19,16 @@ We are proposing a project to:
 - implement the tool in Polkadot and Kusama communities 
 - analyse the interactions and perceptions data to validate the framework and provide insights to advance the communities
 
+We will deliver the project using three milestones. Milestone 1 and 2 are independent of each other. Milestone 3 depends on the input of milestone 1 and 2. 
+
+Milestone 1: Conduct a community health check for Polkadot (or Kusama).
+Milestone 2: Conduct a community health check for Kusama (or Polkadot).
+Milestone 3: Conduct an ecosystem health check on Polkadot and Kusama.  
 
 **An indication of how your project relates to Polkadot / Kusama.**
 Polkadot is a diverse ecosystem with "[more than 200 teams](https://polkadot.network/blog/polkadot-2022-roundup/)" building using Polkadot's technology stack. A lot of development within the ecosystem makes it increasingly difficult for community members to stay on top of everything. Our report includes the *small world metric*, a measure of how much the ecosystem allows for specialized cliques while, at the same time, enabling the flow of information between cliques. Knowing this metric for the ecosystem will provide community leaders and contributors with actionable data on where more alignment is necessary, where silos are forming, and what teams build strong bridges. 
 
 The health check will be extended to also include the Kusama ecosystem. Given that the two ecosystems are related, it is expected that movements in one system (e.g., conflicts, sudden inflow or outflow of many members) will impact the other. 
-
 
 
 **An indication of why your team is interested in creating this project**
@@ -54,6 +58,10 @@ Social network data and its methodology (Social Network Analysis; SNA) is a stru
 Pulse Surveys are frequent and automated micro-surveys that provide qualitative and quantitative insights. In traditional organizations, they have been shown to increase employee response rates and employee engagement with related initiatives. They’re also used as a tool for culture design and implementing culture change. Lastly, Pulse Surveys significantly reduce admin work for community managers and related roles.
 
 The data is anonymised and collected in a central repository for this first phase (we’re exploring decentralised hosting) and managed by a team having received ethics training and at risk of losing their credentials should it be misused.
+
+#### Is this safe?
+Analyzing conversations in Discord is within a grey zone of private and public conversations. Servers and channels that are not gated in anyway (token or role) are akin to public conversations as there are no barriers for people to enter and join the conversations. On the other hand, once users need to fulfil certain criterias or pay in order to access a server/channel, the conversation could be perceived as private. This distinction has ethical and legal consequences. For this reason, we are working with lawyers from LexDAO to ensure people's private data is handled appropriately. 
+
 
 ### Rationale
 
@@ -190,7 +198,15 @@ While this development is ongoing, we continue to deliver low fidelity dashboard
 
 Early development of this project has been funded by [Aragon](https://forum.aragon.org/t/real-time-community-health-analytics), Polygon DAO, [Aave](https://noturhandle.gitbook.io/rndao/proposals/proposals/grant-proposal-aave), [MetaCartel](https://forum.metacartel.org/t/grant-request-community-health-a-project-by-rndao/2354) and Near.
 
+### GDPR
+We are aware that working with Discord data is in a grey zone and we will be analyzing a combination of public and private data. For this reason, we have worked with a legal counsel via LexDAO. As part of this, two lawyers have reviewed the process from fetching data and presenting results to ensure we are within GDPR laws. On Wednesday 22nd February we will have a GDPR session for our team and subsequently will implement the recommendations. This session will be organized as a public event within the RnDAO and followed up with a closed session specifically for TogetherCrew.
+- anti-virus software to be installed on the personal laptops of the two data scientists who have access to the raw data
+- a data transfer agreement will be signed with the data scientist residing in the US
+- We will prepare a record of processind activities
 
+Once our process from data fetching to analysis will be fully automated, we will
+- create a mock database developers can use for testing data fetching and analysis
+- periodically review who has access to the db and remove unnecessary person
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -204,6 +220,10 @@ Early development of this project has been funded by [Aragon](https://forum.arag
 We are following a grant-matching processes to spread the risk among different communities. 
 
 ### Milestone 1 — Community Health check for Polkadot
+
+*Note 1: We can also begin with Kusama if this is preferred. Milestone 1 and 2 are independent of each other. For readability, I have only added one community name in the text instead of writing Polkadot/Kusama. *
+
+* Note 2: After discussions, we have considered changing milestone 1 to offering governance analytics based on Polkassembly data. While the data is public reducing risk in one area, it increases uncertainty in another area. As we have not yet developped and tested governance analytics metrics the time for creating a useful and actionable dashboard would take longer. By beginning with Discord data we can quicker demonstrate our expertise and ability to delilver on the proposed milestones.*
 
 - **Estimated duration:** 1 month
 - **FTE:**  3
@@ -250,7 +270,8 @@ We are following a grant-matching processes to spread the risk among different c
 - **FTE:**  3
 - **Costs:** 10 000 USD
 
-*The aim of this milestone is to go beyond one community, and look at the ecosystem. To conduct an ecosystem health check it is necessary to work with several communities building on Polkadot and Kusama and using Discord. We can only deliver on this milestone if there is some overlap between membership in the different Discord servers. The costs are for doing an ecosystem health check using only the Polkadot and Kusama discord servers. The data for running this health check will have been collected in milestone 1 (Polkadot) and milestone 2 (Kusama). If other communities that build on Polkadot or Kusama should be included, depending on the number and their size, we should negotiate the budget.*
+*The aim of this milestone is to go beyond one community, and look at the ecosystem. We will have to develop and test specific ecosystem metrics. To conduct an ecosystem health check it is necessary to work with several communities building on Polkadot and Kusama and using Discord. We can only deliver on this milestone if there is some overlap between membership in the different Discord servers. The costs are for doing an ecosystem health check using only the Polkadot and Kusama discord servers. The data for running this health check will have been collected in milestone 1 (Polkadot) and milestone 2 (Kusama). If other communities that build on Polkadot or Kusama should be included, depending on the number and their size, we should negotiate the budget.*
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -266,13 +287,21 @@ We are following a grant-matching processes to spread the risk among different c
 
 ## Future Plans
 
-The custom health checks we are doing for communities currently include metrics that are not included in our app. We are planning to include these metrics using a step-wise approach. They are first tested and fine-tuned using the custom health checks for communities and subsequently included in our app. By April 2023, we plan to have the following features included in the app: 
-- When is your community most active (already included)
-- Insights into active community members (February 2023)
-- Insights into inactive community members (March 2023)
-- Small world network (April 2023)
+We have two concrete workstreams planned in the future: new metrics and new data sources. Beyond that, we are looking at text analysis and GPT3 to help community members and moderators gain an overview of important discussions and information. 
 
-Beyond the additional metrics, we are planning to extend our data pipeline to include Twitter and Discourse (work started end of January). We are discussing weather adding governance data (e.g., Snapshot) or more advanced artificial intelligence (e.g., GPT3) would be more beneficial for users. 
+### New metrics
+
+The custom health checks we are doing for communities currently include metrics that are not included in our app. We are planning to include these metrics using a step-wise approach. They are first tested and fine-tuned with the help of (1) communities who are receiving a custom health checks and (2) user research. In the first approach, the community is receiving a health report of their own community, while in the second approach users walk through a demo health report with fake data. By April 2023, we plan to have the following features included in the app: 
+- When is your community most active (already included)
+- Insights into active community members (March 2023)
+- Insights into inactive community members (April 2023)
+- Decentralization & Fragmentation scores (May 2023)
+- Small world metric (June 2023)
+
+
+### New data sources
+Beyond the additional metrics, we are planning to extend our data pipeline to include public data. We started to look into Twitter and Discourse data (work started end of January). In addition, we are looking into governance data. So far we have looked at the Snapshot API and brainstormed potential analysis. For Polkadot/Kusama we can center our efforts on Polkassembly. 
+
 
 ## Additional Information :heavy_plus_sign:
 
