@@ -8,9 +8,9 @@
 
 ### Overview
 
-Darwinia is interested in implementing an on-chain accountable light client verifier using the Solidity language. The design of the accountable light client comes from the recent [paper](https://eprint.iacr.org/2022/1205) published by the Web3 Foundation. 
+As a developer company contributing to Darwinia, Itering is working on implementing an on-chain accountable light client verifier using the Solidity language. The accountable light client design is based on a recent [paper](https://eprint.iacr.org/2022/1205) published by the Web3 Foundation. 
 
-Darwinia is constantly following innovations in the cross-chain space, especially from the Web3 Foundation and Polkadot, with a goal of implementing these innovations in practical settings. Currently, Darwinia is prioritizing the development of on-chain light clients as the cross-chain solution. As a development company that contributes to Darwinia, we recognize the importance of the accountable light client system presented in the paper.
+Darwinia is constantly following innovations in the cross-chain space, especially from the Web3 Foundation and Polkadot, with a goal of implementing these innovations in practical settings. Currently, Darwinia is prioritizing the development of on-chain light clients as the cross-chain solution. We recognize the importance of the accountable light client system presented in the paper.
 
 ### Project Details
 
@@ -49,6 +49,7 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 elliptic cu
 - Denny, denny.wang@itering.io
 - Echo, echo.hu@itering.io
 - Aki, aki.wu@itering.io
+- Nada, nada.fu@darwiniadao.xyz
 
 ### Contact
 
@@ -63,7 +64,11 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 elliptic cu
 
 ### Team's experience
 
-Darwinia has accumulated significant expertise in the field of blockchain cross-chain technology through several years of experience. We are well-versed in various cross-chain approaches, particularly those involving light clients. Our team is highly knowledgeable about Polkadot's technology, and our chains, along with some cross-chain facilities, have been developed using Parity's technology. Additionally, we have extensive experience with the Solidity programming language. Notably, we have already implemented a beacon light client in Solidity that has been successfully running on the Darwinia Chain.
+Itering is a team of passionate blockchain technology enthusiasts. We believe that blockchains should be interoperable with each other. Itering has accumulated significant expertise in the field of cross-chain technology through several years of experience. Our expertise spans various cross-chain approaches, with a focus on light client. 
+
+We are well-versed in Polkadot/Substrate technology. We leverage the Polkadot/Substrate technology stack to power most of our blockchain development. Our blockchains, Darwinia and its canary network Crab, are based on Substrate and currently operate as parachains of Polkadot and Kusama respectively. 
+
+Additionally, we have extensive experience with the Solidity programming language. Notably, we have already implemented a beacon light client in Solidity that has been successfully running on the Darwinia Chain.
 
 ### Team Code Repos
 

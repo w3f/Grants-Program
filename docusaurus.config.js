@@ -126,7 +126,7 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/', 
-          // editUrl: 'https://github.com/w3f/grants/edit/master/',
+          editUrl: 'https://github.com/w3f/Grants-Program/edit/master/',
           // showLastUpdateAuthor: true,
           // showLastUpdateTime: true,
           sidebarPath: require.resolve('./sidebars.js'),

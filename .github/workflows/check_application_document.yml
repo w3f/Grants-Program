@@ -3,7 +3,7 @@ name: Check application document
 on:
   workflow_dispatch:
   pull_request:
-    types: [opened, edited]
+    types: [opened, synchronize]
 
 jobs:
   get_filename:
