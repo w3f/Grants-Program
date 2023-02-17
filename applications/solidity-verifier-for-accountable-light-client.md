@@ -8,21 +8,17 @@
 
 ### Overview
 
-Darwinia wants to implement a light client verifier in solidity language as described in this [paper](https://eprint.iacr.org/2022/1205) from the Web3 Foundation.
+Darwinia is interested in implementing an on-chain accountable light client verifier using the Solidity language. The design of the accountable light client comes from the recent [paper](https://eprint.iacr.org/2022/1205) published by the Web3 Foundation. 
 
-Darwinia is working in the cross-chain space. We have two Substrate based blockchains Crab and Darwinia, they are currently parachains to Kusama and Polkadot respectively. Many cross-chain facilities of Darwinia are also based on Parity's Technologies.
-
-Darwinia has been following cross-chain innovations, especially from W3F and Polkadot, and trying to apply these innovations in practice. 
-
-The cross-chain solutions Darwinia is currently focusing on are mainly on-chain light clients. As a dev company contributing to Darwinia, we know the importance of this kind of light client system described in the paper.
+Darwinia is constantly following innovations in the cross-chain space, especially from the Web3 Foundation and Polkadot, with a goal of implementing these innovations in practical settings. Currently, Darwinia is prioritizing the development of on-chain light clients as the cross-chain solution. As a development company that contributes to Darwinia, we recognize the importance of the accountable light client system presented in the paper.
 
 ### Project Details
 
-We have read this paper and found it very valuable. It provides a very efficient way to use SNARK to verify aggregated public key of signers , while still keeping signers' accountable. This approach makes the proof generation very fast and cost effective.
+After reading the paper, we found it to be extremely valuable. It presents an efficient method for utilizing SNARK to verify the aggregated public key of signers, while still holding those signers accountable. This approach greatly improves the speed and cost-effectiveness of proof generation.
 
-We have implemented [an beacon light client from ethereum to darwinia](https://darwinia.subscan.io/account/0xD2A37C4523542F2dFD7Cb792D2aeAd5c61C1bAAE), which is based on the verification of BLS aggregate signature. Although aggregate signatures effectively reduce the cross-chain gas, it is still not low enough because the entire list of public keys need to be known by the light client smart contract. This can be a big problem if the number of pubkeys is large.
+Darwinia has created [a beacon light client from ethereum to darwinia](https://darwinia.subscan.io/account/0xD2A37C4523542F2dFD7Cb792D2aeAd5c61C1bAAE), which is based on the BLS aggregate signature verification. The cross-chain gas is effectively reduced by aggregate signatures, but it is still too high because the light client smart contract needs to be aware of the entire list of public keys. If there are too many pubkeys, this could be a serious issue.
 
-So, we are looking for a better solution to the pubkeys problem of aggregate signature. We put our eyes on zero-knowledge proofs. Zero-knowledge proofs are considered as an honest-computation proof method, with this method we only need to put the verification computation process off the chain. But through our studies, we found that the number of constraints under the generic snark scheme was so huge that not only the proof was slow to generate, but also required very powerful device. We were stuck here until we came across this paper from W3F.
+So, we are searching for a more effective solution to the aggregate signature pubkeys problem. We concentrate on the honest computation provided by zero-knowledge proof solutions. It allows us to off-chain the verification step. But through our study, we discovered that the generic SNARK solutions have so many limits that not only took a long time to produce the proof, but also required an extremely powerful device. We were stuck here until we came across this paper and Alistair's explanation [video](https://www.youtube.com/watch?v=MCvX9ZZhO4I&list=PLOyWqupZ-WGvywLqJDsMIYdCn8QEa2ShQ&index=19) and [slides](https://docs.google.com/presentation/d/16LlsXWY2Q6_6QGZxkg84evaJqWNk6szX).
 
 This verifier will be implemented based on the BLS12-377 and BW6-761 elliptic curves, which is consistent with the implementation in the paper and [W3F's PoC implementation](https://github.com/w3f/apk-proofs).
 
@@ -30,7 +26,7 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 elliptic cu
 
 - Where and how does your project fit into the ecosystem?
 
-  This verifier will be useful when Polkadot/Substrate/Kusama bridges to an EVM-compatible blockchain. 
+  When Polkadot/Substrate/Kusama bridges to a blockchain that is EVM-compatible, this verifier will be helpful.
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
   
@@ -38,11 +34,13 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 elliptic cu
   
 - What need(s) does your project meet?
 
-  The light clients which use this verifier should preferably support precompiles of BLS12-377 and BW6-761. You can use the no-precompiles version of the curve implementations If gas and speed are not an issue.
+  Precompiled versions of BLS12-377 and BW6-761 should ideally be supported by the blockchains that use this verifier. 
+
+  If gas and speed are not a concern, you can use the no-precompile elliptic curve implementations.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
-  We don't see any solidity implementations of this kind of verifier.
+  This type of verifier hasn't been implemented in solidity yet, as far as we know.
 
 ## Team :busts_in_silhouette:
 
@@ -65,7 +63,7 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 elliptic cu
 
 ### Team's experience
 
-Darwinia has many years of experience in the blockchain cross-chain field. We are familiar with various cross-chain approaches, especially those based on light clients. We know Polkadot's technology well, our chains and some cross-chain facilities are based on parity's technology. We are also very familiar with solidity language. The beacon light client we developed with solidity has already run on Darwinia Chain.
+Darwinia has accumulated significant expertise in the field of blockchain cross-chain technology through several years of experience. We are well-versed in various cross-chain approaches, particularly those involving light clients. Our team is highly knowledgeable about Polkadot's technology, and our chains, along with some cross-chain facilities, have been developed using Parity's technology. Additionally, we have extensive experience with the Solidity programming language. Notably, we have already implemented a beacon light client in Solidity that has been successfully running on the Darwinia Chain.
 
 ### Team Code Repos
 
@@ -123,7 +121,7 @@ Github accounts of team members:
 | **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 |      1. | APK verifier              | We will implement the apk verifer which will check the apk is correct. |
 |      2. | BLS verifier              | We will implement the bls verifier which will check if the aggregate signature is signed by the apk. |
-|      3. | Signers threshold checker | Check if the bitvector contains enough signers.              |
+|      3. | Signers threshold checker | Check if the bitvector of pubkeys contains enough signers.   |
 |      4. |                           |                                                              |
 
 ### Milestone 3 — Counting verifier
@@ -144,11 +142,9 @@ Github accounts of team members:
 
 ## Future Plans
 
-- We plan to use this verifier to implement our bridge on chain light client after the grant is completed. 
-
-- Adapt to other evm chains that meet the curves conditions.
-
-- Follow W3F paper's updates.
+- We intend to leverage this verifier to develop our on-chain light clients after the grant is completed. 
+- Adapt to other EVM chains that satisfy the curves' requirements.
+- Follow the revision of the W3F paper.
 
 ## Additional Information :heavy_plus_sign:
 
