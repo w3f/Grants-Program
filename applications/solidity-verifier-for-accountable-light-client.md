@@ -36,11 +36,11 @@ This verifier will be implemented based on the BLS12-377 and BW6-761 elliptic cu
 
   Precompiled versions of BLS12-377 and BW6-761 should ideally be supported by the blockchains that use this verifier. 
 
-  If gas and speed are not a concern, you can use the no-precompile elliptic curve implementations.
+  If gas and speed are not a concern, you can also use the no-precompiled curves.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
-  This type of verifier hasn't been implemented in solidity yet, as far as we know.
+  This kind of verifier hasn't been implemented in solidity yet, as far as we know.
 
 ## Team :busts_in_silhouette:
 
