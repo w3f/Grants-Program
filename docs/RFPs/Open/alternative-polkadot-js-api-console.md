@@ -1,5 +1,13 @@
-## Current state
-We have a Javascript console at the Developer tab which is really useful for running polkadot js API scripts [https://polkadot.js.org/docs/api/cookbook/blocks](https://polkadot.js.org/docs/api/cookbook/blocks)
+# Title of the RFP Proposal
+
+* **Status:** Open (anyone is allowed to apply)
+* **Proposer:** @muddlebee
+* **Projects you think this work could be useful for** [optional]: Javascript console at https://polkadot.js.org/apps/#/js
+
+## Project Description :page_facing_up: 
+
+### Current state
+We have a Javascript console at the Developer tab which is really useful for running polkadot js API scripts [polkadot JS API docs](https://polkadot.js.org/docs/)
 
 
 **Link** - [https://polkadot.js.org/apps/#/js](https://polkadot.js.org/apps/#/js), UI screenshot below
@@ -14,7 +22,7 @@ Cannot save code properly, not much keyboard shortcuts, cannot customize configu
 1. [https://github.com/subdirectory/subshell](https://github.com/subdirectory/subshell)
 
 
-## Proposed RFP
+### Proposed-RFP
 
 A new polkadot js API playground with vs-code like configurations like save the code, workspace, keyboard shortcuts etc etc..
 [https://polkadot.js.org/apps/#/js](https://polkadot.js.org/apps/#/js)
@@ -26,4 +34,22 @@ here we have to manually build and run our js bundles
 **Why alternative javascript console for for polkadot js API**
 
 Current polkadot js API console which I mentioned in beginning of this post, has some limitations, which we can overcome by creating a better version for smoother dev experience.
+
+
+
+## Deliverables :nut_and_bolt:
+
+The following items could be the initial deliverables of the project. Of course, improvements and additions are more than welcome.
+
+- Initial research:
+  - study how the current javascript console is developed at https://polkadot.js.org/apps/#/js
+  - understand the libaries currently integrated from [polkadot JS API docs](https://polkadot.js.org/docs/)
+
+- Development:
+  - design a new UI/UX with better experience than current javascript console with features like
+    - save code preferably with secure session management
+    - keyboard shortcuts
+    - [example](#Proposed-RFP)
+    
+    more features which makes the polkadot js experience productive and smoother are welcome
 
