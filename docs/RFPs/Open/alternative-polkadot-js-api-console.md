@@ -1,4 +1,4 @@
-# Title of the RFP Proposal
+# Alternative javascript console for Polkadot JS API
 
 * **Status:** Open (anyone is allowed to apply)
 * **Proposer:** @muddlebee
