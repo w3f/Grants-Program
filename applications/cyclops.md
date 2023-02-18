@@ -1,7 +1,7 @@
 # Cyclops Validator Dashboard
 
 - **Team Name:** decentraDOT
-- **Payment Address:** Polkadot: `15wznkm7fMaJLFaw7B8KrJWkNcWsDziyTKVjrpPhRLMyXsr5`
+- **Payment Address:** BTC: `36GRQ5h9L17fSDsbK59mpkYvsQuifatRpr`
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
