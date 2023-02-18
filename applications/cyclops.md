@@ -43,12 +43,12 @@ The combination of Angular and TypeScript will provide a powerful toolset for bu
 
 #### Back-end stack
 
-- PHP
+- Node-JS
 - Express framework
 - Subscan API
 - coingecko API
 
-Cyclops will use the Express PHP framework for a custom middleware solution, fetching data from the Polkadot subscan API, processing it, and providing it to the frontend application. The middleware will also handle any necessary authentication and rate limiting that may be required.
+Cyclops will use the Express Node framework for a custom middleware solution, fetching data from the Polkadot subscan API, processing it, and providing it to the frontend application. The middleware will also handle any necessary authentication and rate limiting that may be required.
 
 #### Features
 
