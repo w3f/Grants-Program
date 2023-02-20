@@ -218,7 +218,7 @@ This milestone will allow for the creation and use of Ink! coding problems.
 |     6. | First Ink! Problem Set | Develop first 5 Ink! problems working with core teams of popular DeFi protocols                                                                                                                       | 
 |     7. | Database               | Database to store all problem datasets (Postgres)                                                                                                                                                     | 
 |     8. | API                    | Create an API with express, express router, Postgres and CORS                                                                                                                                         | 
-|    19. | Frontend user profile  | User profile page where they can edit their information and see their progress                                                                                                                        | 
+|    9. | Frontend user profile  | User profile page where they can edit their information and see their progress                                                                                                                        | 
 |    10. | Logging                | Server logging with morgan and winston                                                                                                                                                                | 
 
 ### Milestone 2 — Educational Modules and Extension
