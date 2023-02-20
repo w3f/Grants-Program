@@ -60,6 +60,7 @@ Cyclops will use the Express Node framework for a custom middleware solution, fe
 - Network ERA progress information
 - 1kv statistics
 - Stash balance tracking
+- Per-session ERA point performance tracking
 - Monthly income reports (PDF overview of all reward transactions, handy for TAX purposes)
     Reward date
     Amount
@@ -199,13 +200,14 @@ We currently have a fully operational proof-of-concept, and have started with th
 | 1. | API Service | Create service in Angular to communicate with API |
 | 2. | Display data | Fetch data from API and display on dashboard |
 | 3. | Elected / waiting | Display elected / waiting status per validator |
-| 4. | Income tracking | Display daily income tracking |
+| 4. | Reward tracking | Display daily income tracking |
 | 5. | Token price tracking | Display token price data |
 | 6. | ERA | Display network ERA progress information |
 | 7. | 1kv statistics | Display 1kv statistics if applicable to selected validator |
 | 8. | Stash | Stash balance tracking |
 | 9. | PDF reports | Monthly PDF export functionality, overview of all reward transactions |
 | 10. | E-mail alert system | Sent e-mail alert if validator is down |
+| 11. | ERA point tracking | Per-session ERA point performance tracking |
 
 
 ## Future Plans
