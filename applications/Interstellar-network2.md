@@ -8,7 +8,7 @@
 
 ## Project Overview :page_facing_up:
 
-**Follow-up of Interstellar- Wallet Phase 1**: Link to the application pull request: [w3f/Grants-Program#1354](https://github.com/w3f/Grants-Program/pull/1354)
+**Follow-up of Interstellar- Wallet Phase 1**: Link to the application pull request: [w3f/Grants-Program#734](https://github.com/w3f/Grants-Program/pull/734). Amendment: [w3f/Grants-Program#1354](https://github.com/w3f/Grants-Program/pull/1354)
 
 ### Overview
 
