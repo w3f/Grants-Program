@@ -29,6 +29,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | :-- | :----: | :----------: |
 | [a-and-v-topology.md](RFPs/Open/a-and-v-topology.md) | 🟢 | 29.11.2021 |
 | [alternative_polkadot_host_implementations.md](RFPs/Open/alternative_polkadot_host_implementations.md) | 🟢 | 29.11.2021 |
+| [analysis-website-and-data-platform.md](RFPs/Open/analysis-website-and-data-platform.md) | 🟢 | 17.02.2023 |
 | [anti-collusion_infrastructure.md](RFPs/Open/anti-collusion_infrastructure.md) | 🟢 | 29.11.2021 |
 | [appi.md](RFPs/Implemented/appi.md) | 🔴 | 20.07.2021 |
 | [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 🟢 | 06.01.2023 |
