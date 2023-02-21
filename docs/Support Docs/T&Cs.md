@@ -75,7 +75,7 @@ To apply for the Web 3.0 Foundation Grants Program, your application shall fulfi
 
 -  it shall be a research or software-based project, which contributes to the advancement of the Polkadot ecosystem;
 -  the Software shall be released under the Apache license version 2.0.;
--  You must accept payment in Fiat, Bitcoin, USDT (on Kusama or Polkadot), USDC/DAI (Ethereum);
+-  You must accept payment in Fiat, Bitcoin, USDT (on Kusama or Polkadot) or USDC/DAI (Ethereum);
 -  You will need to submit the application and deliver the milestones according to the process specified below;
 
 The grants process consists of five parts, each of them described in more detail below:
