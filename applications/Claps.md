@@ -89,8 +89,10 @@ Substrate Blockchain
 Self-Sovereign Identity (SSI)
 
 - Self-Sovereign Identity (SSI) is a decentralized digital identity model that puts individuals in control of their personal information and how it is used. This approach to identity provides users with more privacy and control over their personal information, and helps to prevent data breaches and misuse of sensitive information.
+
 Zero-knowledge proof
-The zero-knowledge proof is part of SSI, this means that a user can prove their identity or access rights to a service without revealing any sensitive personal information. This helps to protect the privacy of the user and reduce the risk of data breaches, while still enabling secure and reliable authentication.
+
+- The zero-knowledge proof is part of SSI, this means that a user can prove their identity or access rights to a service without revealing any sensitive personal information. This helps to protect the privacy of the user and reduce the risk of data breaches, while still enabling secure and reliable authentication.
 ![zkproof](https://user-images.githubusercontent.com/14127551/218294803-fefcbb47-9be2-418a-a595-424302e838bb.png)
 
 GPT-3 AI model
@@ -153,74 +155,91 @@ New project
 - **Full-Time Equivalent (FTE):**  5-6 FTE
 - **Total Costs:** 75,000 USD
 
-### Milestone 1 Prototyping  & Registration API
+Milestone 1 - Prototyping & Registration
 
-- **Estimated duration:** 2 month
-- **FTE:**  4
-- **Costs:** 20,000 USD
+Estimated Duration: 2 month
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Patient registration module | Patients registration service for mobile app <br> Substrate Module (Developed in Rust): <br> Patient ID & profile management <br> - Add patient ID <br> - Update patient profile <br> Credential management <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> ink! Smart Contract (Developed as a DApp): <br> Support Zero-knowledge proof <br> - On-chain authentication (Prove patient ID without private information) |
-| 2. | Enterprise Registration Module | Enterprise registration service for web backend. <br>  Substrate Module (Developed in Rust): <br> Organization ID & profile management <br> - Add organization ID <br> - Add users & access policy <br> Credential management <br> - Receive credential issued by issuers (for example: organization validation) <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> ink! Smart Contract (Developed as a DApp): <br> On-chain anonymous identity and on-chain verification <br> - Zero-knowledge proof for on-chain authentication to prove organization ID without private information |
-| 3. | Documentation | We will provide the document for command-line verification or simple UI verification  |
+Developers: FTE x 4
 
-### Milestone 2 Challenge card & Health diary
+(Product Design x 1, Art Design x 1, Web Engineer x 1, Clinical Trial Project Manager x 1)
 
-- **Estimated Duration:** 2 month
-- **FTE:**  6
-- **Costs:** 25,000 USD
+Costs: 20,000 USD
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Dapp: Challenge card | Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Developed in ink! smart contract <br> Add challenge card <br> - Add personalized mission <br> - Delete challenge card <br> - Receive daily mission <br> - Receive rewards by mission completed <br> - Receive rewards by challenge completed <br> * Rewards by fungible tokens or NFT |
-| 2. | Web Backend module: Health dairy | Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java. <br> - Add Type <br> - Add Name <br> - Add Questionaire |
-| 3. | Android apk | We will provide android apk for above challenge card data input and functional verification. Developed in Flutters. <br> - We will provide android apk for user challenge card with wallet to receive rewards |
-| 4. | Data encryption module | We will implement data encryption module of all stored and transmitted data to prevent unauthorized access or tampering |
-| 5. | Data privacy control module | We will implement a data privacy control module to allow patients to exercise their rights under the GDPR, such as the right to access, rectify, and delete their personal data. |
-| 6. | Audit logging on web backend | The web backend will implement an auditable log of all access to system, including who accessed it and what actions were performed, to help detect and respond to security incidents. |
+|Number|Deliverable|Specification|
+| :- | :- | :- |
+|1|License|Apache 2.0 / MIT / Unlicense|
+|2|Documentation|We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works.|
+|3|Testing and Testing Guide|Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
+|4|Docker|We will provide a Docker file(s) that can be used to test all the functionality delivered with this milestone.|
+|5|Patient ID creation|<p>Develop the patient ID creation tool in JavaScript. <br>- Generate a new ID on client-side for the patient based on BIP39. (12 words passphrase)<br>- Encrypted key store (private key) by patient user’s password (AES-256 GCM mode)<br>- Implement the decentralized design using public key cryptography. (Client signed by private key, same as metamask)<br></p>|
+|6|Patient profile management module|<p>Patient profile off-chain management tools developed by JAVA<br>- Support AWS S3 storage<br>- Updating of patient profile<br>- ECIES end-to-end data encryption to secure profile data transfer.<br></p>|
+|7|Patient ID on-chain authentication|<p>Non-Interactive Zero-Knowledge Proof (NIZKP) developed by !ink Smart Contract<br>- Receive credential by trust issuer (token file)<br>- Zero-knowledge proof for on-chain authentication to prove patient ID without private information</p>|
+|8|Enterprise ID registration tool|<p>We will offer a Smart Contract as a Service for enterprise ID registration. Developed by !ink! Smart Contract.<br><br>This contract will provide a secure way for enterprises to manage their identities and multi-users access policies. Each enterprise can be assigned a unique contract address, which can be linked to the Polkadot Name System (PNS) for improved usability. The function list in below:<br>- Add new users<br>- Remove existing users<br>- Assign roles and permissions to users<br>- Revoke user access</p>|
+|9|Enterprise account management web backend module|<p>Enterprise account management (connects with Enterprise ID), the tool will be developed using Vue.js for the frontend and Java for the backend.<br>- User authentication: The module will implement user authentication, ensuring that only authorized users can access the system. Two-factor authentication will also be implemented for added security.<br>- Role-based access control: The module will implement role-based access control, allowing the organization to assign roles to users and control their access to the system.<br>- Secure storage of user data: The module will ensure the secure storage of user data, including user IDs, access policies, and profile information. This includes encryption of sensitive data at rest.<br>- Logging and auditing: The module will provide logging and auditing features to track user activity and detect any security breaches or policy violations.</p>|
+|10|Documentation|We will provide the document for command-line verification or simple UI verification|
 
+Milestone 2 - Challenge card & Health diary
 
-### Milestone 3 Data Sharing Protocol
+Estimated Duration: 2 month
 
-- **Estimated Duration:** 2 month
-- **FTE:**  2
-- **Costs:** 10,000 USD
+Developers: FTE x 6
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide Claps API reference documents. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Software module: Claps Health Data Sharing protocol | We will implement a health data sharing protocol on Substrate and dapps to enable secure sharing of health data among various stakeholders. <br> - Consent management (Developed in ink! smart contract) <br> - Offer data feed(Develope in Rust on Substrate) <br> - Delete data (Develope in Rust on Substrate)
+(Product Design x 1, Art Design x 1, Web Engineer x 1, Dapp Engineer x 1, APP Engineer x 1, Clinical Trial Project Manager x 1)
 
- |
+Costs: 25,000 USD
 
-### Milestone 4 Omnichannel
+|Number|Deliverable|Specification|
+| :- | :- | :- |
+|1|License|Apache 2.0 / MIT / Unlicense|
+|2|Documentation|We will provide the interface for the web backend of self-report measures of data collection forms and procedures.|
+|3|Testing and Testing Guide|Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
+|4|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
+|5|Challenge card dapp module|<p>Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Dapp developed in ink! smart contract.<br><br>- Add challenge card<br>- Add personalized mission<br>- Delete challenge card<br>- Receive daily mission<br>- Receive rewards by mission completed<br>- Receive rewards by challenge completed<br>- Rewards by fungible tokens or NFT<br></p>|
+|6|Health dairy web backend module|<p>Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java.<br>- Add Type<br>- Add Name<br>- Add Questionaire</p>|
+|7|Android apk|<p>We will provide android apk for above challenge card data input and functional verification<br>We will provide android apk for user challenge card with wallet to receive rewards</p>|
+|8|Database encryption module|We will implement a database encryption AES-256 GCM module of all stored and transmitted data to prevent unauthorized access or tampering. Developed by JAVA.|
+|9|Data privacy control module|We will implement a data privacy control module to allow patients to exercise their rights under the GDPR, delete their personal data by patient’s requirement. Developed by JAVA.|
+|10|Audit logging on web backend|The web backend will implement an auditable log of all access to the system, including who accessed it and what actions were performed, to help detect and respond to security incidents. Developed by JAVA.|
 
-- **Estimated Duration:** 2 month
-- **FTE:**  4
-- **Costs:** 20,000 USD
+Milestone 3 - Data Sharing Protocol
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use Claps app. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Health Education Content Management | We will provide a web backend for health education content publishing & management. Module developed in Rust on Substrate. |
-| 2. | Substrate module: IPFS Cluster | We will provide an integrated Substrate module with IPFS swam for health education content storage.  |
-| 3. | Substrate module: Analytics | We will provide a web backend for pharmaceutical and healthcare businesses . By analyzing large datasets to identify patterns about health behaviors, allowing for targeted and proactive education efforts. Develop in Vue and Java. (or Rust) |
-| 4. | Article | We will publish an article/workshop that explains how Claps Health work and benefit patients and healthcare business. |
+Estimated Duration: 2 month
+
+Developers: FTE x 2
+
+(Product Design x 1, Dapp Engineer x 1)
+
+Costs: 10,000 USD
+
+|Number|Deliverable|Specification|
+| :- | :- | :- |
+|1|License|Apache 2.0 / MIT / Unlicense|
+|2|Documentation|We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works.|
+|3|Testing and Testing Guide|Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
+|4|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
+|5|Claps Health Data Sharing protocol: Consent management |<p>We will implement a health data sharing protocol based on dapp to enable secure sharing of health data among various stakeholders. Developed by !ink Smart Contract.<br><br>- Accept consent<br>- Revoke consent<br>- View data sharing requests<br><br>a. The consent data will be stored anonymously, without any personal identifying information.<br>b. The smart contract will be accessible to authorized parties using public key cryptography.<br>c. Users are able to request that their data be permanently deleted from the system at any time (Please reference Data privacy control module)<br>d. Users are able to see a list of all the organizations that have requested access to their data, along with the specific types of data being requested, and be able to manage these requests.</p>|
+|6|Claps Health Data Sharing protocol: Patient data feed |<p>We will implement a health data feed on the backend, developed using Rust or Java.<br><br><br>- Subscribe data feed by numbers of Patient ID<br>- Unsubscribe data feed by Patient ID<br><br>a. The data feed will allow authorized parties to access and subscribe to a patient's health data in real-time.<br>b. The data will be encrypted using ECIES to ensure data security.<br>c. The data feed will be accessible through a secure API, which will authenticate and authorize users using public key cryptography.<br>d. Support delete data by patient required.</p>|
+
+Millestone 4 - Omnichannel
+
+Estimated Duration: 2 month
+
+Developers: FTE x 4
+
+(Product Design x 1, Art Design x 1, Web Engineer x 1, Clinical Trial Project Manager x 1)
+
+Costs: 20,000 USD
+
+|Number|Deliverable|Specification|
+| :- | :- | :- |
+|1|License|Apache 2.0 / MIT / Unlicense|
+|2|Documentation|We will provide the interface for the web backend of self-report measures of data collection forms and procedures.|
+|3|Testing and Testing Guide|Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
+|4|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
+|5|Substrate module: Health Education Content Management|<p>We will provide a web backend for health education content publishing & management. Support HTML Editor. Module developed in Rust or JAVA.<br><br>- Article keywords<br>- Article draft editor<br>- Article publish<br>- Remove article<br>- Insert sponsor link<br>- Article survey for user research(The user can then submit their response, which will be stored in the backend database)</p>|
+|6|Substrate module: IPFS |We will provide an integrated Substrate module with IPFS for health education content storage. |
+|7|Analytics module|<p>We will provide a web backend for pharmaceutical and healthcare businesses . By analyzing large datasets to identify patterns about health behaviors, allowing for targeted and proactive education efforts. Develop in Vue and Java. (or Rust)<br>- Result of Article survey for user research<br><br>The module will provide customizable reporting and visualization capabilities to enable businesses to track and measure the success of their education campaigns.</p>|
+|8|Article|We will publish an article/workshop that explains how Claps work and benefit patients and healthcare businesses.|
 
 ## Regulation and Compliance with HIPAA/GDPR
 
@@ -229,8 +248,11 @@ New project
 By using pseudonyms, the health data can be processed and shared in a secure and de-identified manner, while still allowing for verifiable identification.
 
 ### End-to-end data encryption
+Claps Health offers tools based on public key cryptography ECIES encryption to secure data storage and transfer are compliance with patient data protection and industry requirements. Only authorized parties can access the data. The application layers are using AWS S3 industry compliance secure storage. 
 
-Claps Health offers tools based on public key cryptography and AES256 GCM end-to-end data encryption to secure health data. Only authorized parties can access the data. The application layers are using AWS S3 industry compliance secure storage. 
+### Database data encryption
+Claps Health backend database using AES256 GCM data encryption to secure database data. Based on data access policy,  only authorized parties can access the data. The application layers are using AWS S3 industry compliance secure storage. 
+ 
 
 ### Audit logs
 
