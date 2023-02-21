@@ -53,6 +53,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Fuu](https://github.com/ff13dfly/)             | [Anchor, On-chain Linked List pallet and Name Service](Anchor.md)                                                               | [GitHub](https://github.com/ff13dfly/Anchor)                                  | ☐          |        ☐         |      ☐     |
 | [hack-ink](https://hack.ink/)             | [Slothunter](slothunter.md)                                                               | [GitHub](https://github.com/hack-ink)                                  | ☐          |        ☐         |      ☐     |
 | [Invers Inc](https://invers.tech/)             | [Zkwasm Rollups Transfer](zkwasm-rollups-transfer.md)                                                               | [GitHub](https://github.com/zero-network)                                  | ☐          |        ☐         |      ☐     |
+| [decentraDOT](https://decentradot.com/)             | [Cyclops Validator Dashboard](cyclops.md)                                                               | [GitHub](https://github.com/ArthurHoeke?tab=repositories)                                  | ☐          |        ☐         |      ☐     |
+
 
 ## 2022
 
