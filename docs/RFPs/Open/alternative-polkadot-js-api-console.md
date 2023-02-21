@@ -1,7 +1,7 @@
 # Alternative javascript console for Polkadot JS API
 
 * **Status:** Open (anyone is allowed to apply)
-* **Proposer:** @muddlebee
+* **Proposer:** [muddlebee](https://github.com/muddlebee)
 * **Projects you think this work could be useful for** [optional]: Javascript console at https://polkadot.js.org/apps/#/js
 
 ## Project Description :page_facing_up: 
