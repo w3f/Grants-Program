@@ -1,183 +1,355 @@
+
 # polkadot-mempool-explorer-v2
 
+  
+  
 
-- **Team Name:**  NA
-- **Payment Address:** TBD
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+-  **Team Name:** NA
 
+-  **Payment Address:** TBD
+
+-  **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+
+  
+  
 
 ## Project Overview :page_facing_up:
+
 Mempool Explorer enables Polkadot ecosystem members to monitor pending transactions across several parameters and gain meaningful insights.
 
+  
+
 **Follow-up of Mempool Dashboard - Version 1**
+
 - Link to the phase 1 project: [medium](https://medium.com/protofire-blog/monitoring-pending-transactions-in-polkadot-with-mempool-explorer-36e88e8a41ed)
+
+  
 
 However the project was created by a different team, Protofire. Currently it's not in working condition, the provided link https://mempool.dot.protofire.io/ doesn't work anymore.
 
+  
+
 ### Overview
+
 Version 2 of mempool dashboard, is a tool to monitor pending transactions in Polkadot, Kusama, Westend, Rococo and you can add your customized network.
 
+  
+
 **Current issues with the initial implementation**
+
 version 1 of the mempool dashboard is not in working condition. I took this opportunity to revive the project and create a next version of the original project by fixing the current issues, creating a new UI to enhance user experience and readability and improvements to the API.
+
+  
 
 My first task was to understand the codebase, identify the current issue and provide a fix for it. After applying a few patches I was able to restore back to the original state, however still with few issues.
 
+  
+  
 
 **Noteable issues**
--   [proper balance amount was not displayed correctly](https://github.com/muddlebee/polkadot-mempool-explorer/issues/4)
+
+- [proper balance amount was not displayed correctly](https://github.com/muddlebee/polkadot-mempool-explorer/issues/4)
+
 - [docker scripts not working](https://github.com/muddlebee/polkadot-mempool-explorer/issues/1)
+
 - [enhance caching logic](https://github.com/muddlebee/polkadot-mempool-explorer/issues/5)
+
 - [feature to view accounts/txn details not working properly across different networks](https://github.com/muddlebee/polkadot-mempool-explorer/issues/6)
-- lack of proper code documentation ( it was difficult for me to understand the codebase 
+
+- lack of proper code documentation ( it was difficult for me to understand the codebase
+
+  
 
 and set of exhaustive open issues https://github.com/muddlebee/polkadot-mempool-explorer/issues
+
 track of patches/fixes done till date - https://github.com/muddlebee/polkadot-mempool-explorer/commits/dev
+
 We have fixed majority of the issues already.
+
+  
 
 **What's in version 2**
 
+  
+
 - new UI for desktop and mobile view [figma link](https://www.figma.com/file/2EIEKQXfpI6wBldxQ18h6Q/Polkadot-work?node-id=0:1&t=aWz2emO8pIhjWyP5-1)
+
 - fix the existing issues
+
 - enable CI/CD deployment to the hosted servers and fix docker scripts
-- generic tutorial on how to create a polkadot dashboard to fetch transactions using polkadot-js API. 
+
+- generic tutorial on how to create a polkadot dashboard to fetch transactions using polkadot-js API.
+
 -- currently there's a lack of proper tutorials/education materials for anything polkadot-js API related stuff other than the official docs. I would like to create an extensive tutorial on how to consume polkadot-js API (more details below)
+
+  
 
 ***polkadot js API tutorials overview***
 
+  
+
 target audience: folks with zero or intermediate knowledge of polkadot
+
 - basic overview of polkadot architecture
+
 - explanation of basic terms like extrinsics, events, state/rpc queries, query subscription
+
 - design a step by step tutorial to create a transaction dashboard, by fetching the transactions in the API or UI if possible
 
+  
+
 why create a separate set of tutorials?
+
 - currently the [polkadot JS docs](https://polkadot.js.org/docs/api) is difficult for beginners with zero or less technical knowledge about the polkadot architecture to understand properly.
+
 - easy to learn and develop using polkadot JS APIs/SDKs as compared to substrate in Rust
 
+  
+
 ### Project Details
-Github:  https://github.com/muddlebee/polkadot-mempool-explorer
+
+Github: https://github.com/muddlebee/polkadot-mempool-explorer
+
 API : /api folder
+
 Frontend: /web folder
 
+  
+
 API uses nodejs on top of polkadot js API
+
 Frontend uses React to render the transaction blocks in the UI
 
+  
+
 **Note** We already have done 50% of the proposed work, and its live in the url below
+
 [mempool-ui](http://139.84.168.166:3000/#/main)
+
+  
 
 #### Technology stack
 
+  
+
 - javascript, nodejs, react
+
 - polkadot js API
+
 - docker
 
+  
+  
 
 ### Ecosystem Fit
+
 Solution that would allow members of the Polkadot ecosystem to monitor information related to pending transactions.
+
 More details has been published in the phase 1 delivery report [medium](https://medium.com/protofire-blog/monitoring-pending-transactions-in-polkadot-with-mempool-explorer-36e88e8a41ed)
+
+  
 
 Tutorials for polkadot JS APIs will help educate folks who are not expert in Rust/Substrate and want to adopt JS first approach first. We have many examples of live webapps integrating polkadot JS APIs like wallets, tools etc.
 
+  
+
 ## Team :busts_in_silhouette:
 
+  
+  
 
 ### Team members
+
 #### Name of team leader:
+
 - Anwesh Nayak (@muddlebee)
+
 #### Names of team members:
+
 - Arnav Nayak
+
 - Dikhyant Krishna
+
+  
 
 ### Contact
 
-- **Contact Name:** Anwesh Nayak
-- **Contact Email:** anweshknayak@gmail.com
+  
+
+-  **Contact Name:** Anwesh Nayak
+
+-  **Contact Email:** anweshknayak@gmail.com
+
+  
 
 ### Legal Structure
 
-- **Registered Address:**  NA
-- **Registered Legal Entity:** NA
+  
+
+-  **Registered Address:** NA
+
+-  **Registered Legal Entity:** NA
+
+  
 
 ### Team's experience
+
 I have around 5 years of experience in full stack development. Currently work as a tech lead at B2B fintech firm. Also a polkadot ambassador and the community moderator of the official polkadot/kusama discord. I have been contributing to the ecosystem since last year. Also participated in Thousand Contributors Programme by w3f and have been adding suggestions/improvements across the w3f github projects.
+
+  
 
 **Arnav**, our lead designer has 2 years of experience in product design prior to that used to work as a architect with few years of experience.
 
+  
+
 **Dikhyant**, frontend developer has around 2 years of experience in web development, creating UI out of design specs.
+
+  
 
 ### Team Code Repos
 
+  
+
 - Currently hosted here https://github.com/muddlebee/polkadot-mempool-explorer
+
 will move to a separate github repo once grant is approved
+
+  
 
 ### Team LinkedIn Profiles (if available)
 
+  
+
 - <https://www.linkedin.com/in/anweshnayak/> Anwesh Nayak
 
+  
+
 - <https://www.linkedin.com/in/arnav-nayak-321595141/> Arnav Nayak
+
 - https://www.linkedin.com/in/dikhyantkrishnadalai/> Dikhyant Krishna
 
+  
+  
 
 ## Development Roadmap :nut_and_bolt:
 
+  
+
 ### Overview
 
-- **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):** 3
-- **Total Costs:** 9000 USD
+  
 
+-  **Total Estimated Duration:** 2 months
 
-### Milestone 1 - initial version of 
+-  **Full-Time Equivalent (FTE):** 3
 
-- **Estimated Duration:** 3-4 weeks
-- **FTE:** 3
-- **Costs:** 6000 USD
+-  **Total Costs:** 9000 USD
 
-|  Number | Deliverable                            | Specification                                                                                                                                                                                                                |
+  
+  
+
+### Milestone 1 
+
+  #### Part 1 : version 2 of mempool dashboard
+
+-  **Estimated Duration:** 3-4 weeks
+
+-  **FTE:** 3
+
+-  **Costs:** 6000 USD
+
+  
+
+| Number | Deliverable | Specification |
+
 | ------: | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                                | APACHE 2                                                                                                                                                                                                                     |
-| **0b.** | Documentation                          | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to view pending transactions in dashboard |
-| **0c.** | Testing and Testing Guide              | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
-| **0d.** | Docker                                 | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
-|      1. | new UI for desktop and mobile view and fix existing issues|                                                                                                                                            |
-|      2. | enhance the APIs and fix existing issues                                                                                                                                                                        |
-|      3. | enable CI/CD | spin up a server instance for hosting the backend and deploying the frontend at github pages                                                                                                                                                     |
+
+| **0a.** | License | APACHE 2 |
+
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to view pending transactions in dashboard |
+
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | | | |
+
+| 1. | new UI for desktop and mobile view and fix existing issues| |
+
+| 2. | enhance the APIs and fix existing issues |
+
+| 3. | enable CI/CD | spin up a server instance for hosting the backend and deploying the frontend at github pages |
+
+  
 
 **Cost breakup for Milestone 1**
+
 Design - 1500 USD
+
 Frontend - 1500 USD
+
 API changes - 2000 USD
+
 CI/CD setup + server costs/maintenance - 1000 USD
 
-### Milestone 2 - polkadot js API tutorials
+  
 
-- **Estimated Duration:** 3-4 weeks
-- **FTE:** 1
-- **Costs:** 3000 USD
+#### Part 2 - polkadot js API tutorials
 
-|  Number | Deliverable               | Specification                                                                                                                                                                                                                |
+  
+-  **Estimated Duration:** 3-4 weeks
+
+-  **FTE:** 1
+
+-  **Costs:** 3000 USD
+
+  
+
+| Number | Deliverable | Specification |
+
 | ------: | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                   | APACHE 2                                                                                                                                                                                                                     |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to run sample examples |
-| **0c.** | Code samples | Tutorials in form of chapters, each divided into a certain section  
+
+| **0a.** | License | APACHE 2 |
+
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to run sample examples |
+
+| **0c.** | Code samples | Tutorials in form of chapters, each divided into a certain section
+
 | **0d.** | Graphics/Illustrations | Illustrations wherever required to explain complex topics
 
+  
+
 Chapters overview
+
 1. Explain the basics of polkadot architecture
+
 2. Role of polkadot JS API, substrate and how to interact with the live blockchain
+
 3. How to fetch the metadata, and what are the metadata of the blockchain? https://polkadot.js.org/docs/api/start/basics
+
 4. What's the purpose of polkadot js console and how to use it? https://polkadot.js.org/apps/#/
+
 5. Explain transaction lifecycle, and how to perform transactions through the API
+
+  
 
 and more .....
 
-Overall goal it to curate a series of tutorials to build the concepts of polkadot blockchain.
-         
+  
 
+Overall goal it to curate a series of tutorials to build the concepts of polkadot blockchain.
+
+  
+  
 
 ## Future Plans
 
+  
+
 ### Version 2 of polkadot JS tutorials
-- Create a extensive and expanded set of tutorials covering most of the [polkadot JS APIs](https://polkadot.js.org/docs/api/) 
+
+- Create a extensive and expanded set of tutorials covering most of the [polkadot JS APIs](https://polkadot.js.org/docs/api/)
+
 - Make it good enough so it can be integrated and added over to the education repo at w3f https://github.com/w3f/w3f-education
+
 - Expand the goal of education through quality content
+
 - Add good explanatory graphics to explain the basic concepts
