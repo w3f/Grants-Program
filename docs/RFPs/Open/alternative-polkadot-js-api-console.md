@@ -51,5 +51,5 @@ The following items could be the initial deliverables of the project. Of course,
     - keyboard shortcuts
     - [example](#Proposed-RFP)
     
-    more features which makes the polkadot js experience productive and smoother are welcome
+    Any additional features which make the Polkadot-JS experience more productive and smoother are welcome.
 
