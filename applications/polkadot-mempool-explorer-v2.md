@@ -1,5 +1,5 @@
 
-# Mempool Dashboard - Version 2
+# polkadot-mempool-explorer-v2
 
 
 - **Team Name:**  NA
