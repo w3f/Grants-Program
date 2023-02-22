@@ -99,7 +99,9 @@ Tutorials for polkadot JS APIs will help educate folks who are not expert in Rus
 
 ### Team's experience
 I have around 5 years of experience in full stack development. Currently work as a tech lead at B2B fintech firm. Also a polkadot ambassador and the community moderator of the official polkadot/kusama discord. I have been contributing to the ecosystem since last year. Also participated in Thousand Contributors Programme by w3f and have been adding suggestions/improvements across the w3f github projects.
+
 **Arnav**, our lead designer has 2 years of experience in product design prior to that used to work as a architect with few years of experience.
+
 **Dikhyant**, frontend developer has around 2 years of experience in web development, creating UI out of design specs.
 
 ### Team Code Repos
