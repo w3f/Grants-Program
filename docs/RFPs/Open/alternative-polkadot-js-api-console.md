@@ -6,7 +6,7 @@
 
 ## Project Description :page_facing_up: 
 
-### Current state
+### Current State
 We have a Javascript console on the Developer tab which is really useful for running Polkadot-JS API scripts [Polkadot-JS API docs](https://polkadot.js.org/docs/)
 
 
