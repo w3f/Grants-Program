@@ -1,13 +1,13 @@
 # Claps Health
 
-- **Team Name:** Taiwan Research-based Biopharmaceutical Manufacturers Association 
+- **Team Name:** Taiwan Research-based Biopharmaceutical Manufacturers Association
 - **Payment Address:** 0x39D3E0c7AAcfbCa133f08cfb153B4888fd36bA9B (DAI)
-- **[Level 3]
+- **[Level 3]**
 
-### Overview
+## Overview
 
-- Make self-care a fun game with Claps
-- Claps is the mobile app that integrates gaming with personal health tracking can be a fun and engaging way to encourage users to track their health on a daily basis and make healthy lifestyle choices. The app could allow users to play games and record the results as a health diary, and reward them with incentives and rewards for completing diagnostic tests or answering questionnaires such as mood tracking.
+### Make self-care a fun game with Claps
+Claps is the mobile app that integrates gaming with personal health tracking can be a fun and engaging way to encourage users to track their health on a daily basis and make healthy lifestyle choices. The app could allow users to play games and record the results as a health diary, and reward them with incentives and rewards for completing diagnostic tests or answering questionnaires such as mood tracking.
 
 Claps defines itself as a "gamified health tracking app" that uses gaming elements to motivate users to track their health and make healthy lifestyle choices. By integrating with artificial intelligence (AI) into a gamified health tracking app to provide a more personalized and interactive user experience.
 
@@ -15,61 +15,61 @@ The Claps AI is designed to support health practitioners in tracking patients' d
 
 Claps is designed to be engaging and enjoyable to use, and could provide users with feedback and support to help them achieve their health goals. It could be a useful tool for promoting health and well-being, and could be particularly appealing to users who enjoy gaming and are looking for a more interactive and engaging way to track their health.
 
-- By using Substrate technology to store and manage data, facilitate data sharing, dapps contracts, and create and manage digital assets such as NFT with patient’s data. In the long-term, patients could potentially benefit from blockchain including in the areas of insurance and financial support. By leveraging the transparency, security, and efficiency of blockchain technology, patients could be better equipped to access the care and support they need.
+By using Substrate technology to store and manage data, facilitate data sharing, dapps contracts, and create and manage digital assets such as NFT with patient’s data. In the long-term, patients could potentially benefit from blockchain including in the areas of insurance and financial support. By leveraging the transparency, security, and efficiency of blockchain technology, patients could be better equipped to access the care and support they need.
 
-- Taiwan Research-based Biopharmaceutical Manufacturers Association (TRPMA) is jointly established by 28 biopharmaceutical manufacturers and developers and 19 regenerative medicine companies based in Taiwan. This proposal is proposed by Jacob Lee, director of the digital health team at TRPMA. Jacob Lee is the co-designer of phrOS(Personal Health Records Operating System), a Ethereum private blockchain and IPFS Cluster based SaaS at Medical Center Hospital in 2017.
+Taiwan Research-based Biopharmaceutical Manufacturers Association (TRPMA) is jointly established by 28 biopharmaceutical manufacturers and developers and 19 regenerative medicine companies based in Taiwan. This proposal is proposed by Jacob Lee, director of the digital health team at TRPMA. Jacob Lee is the co-designer of phrOS(Personal Health Records Operating System), a Ethereum private blockchain and IPFS Cluster based SaaS at Medical Center Hospital in 2017.
 
-### Project Details
+## Project Details
 
-## Architecture
+### Architecture
 ![claps_health_diagam](https://user-images.githubusercontent.com/14127551/218294412-3f0c2a9e-774a-49f0-b4c0-67e8ee6cb896.png)
 
 ## Claps App Use Case
 
-Patients
+### Patients
 
 Use the app to track their mood on a daily basis
 Receive rewards by reporting their mood or blood pressure, or by completing other activities such as questionnaires. By providing these proof of work to the Claps dapps(Claps DAO).
 View personalized health education content provided by health practitioners
 Share their mood tracking data with their healthcare provider for review and analysis
 
-Pharmaceutical Company
+### Pharmaceutical Company
 
 Use the data collected by the app to inform their product development and marketing strategies
 Provide funding to health practitioners to produce health education content for the app
 Use the app as a platform to promote their products and services to patients
 
-Health Practitioners
+### Health Practitioners
 
 Use the app to provide personalized health education content to patients
 Use the data collected by the app to inform treatment decisions and track patient progress
 Receive funding from pharmaceutical companies to produce health education content for the app
 
-AI Assistant
+### AI Assistant
 
 Collect and analyze data from patients' mood tracking
 Provide personalized recommendations and education content to patients based on their data
 Facilitate communication and collaboration between patients, health practitioners, and pharmaceutical companies.
 
-# Solutions
-Gamefield Mood Tracking
+## Solutions
+### Gamefield Mood Tracking
 
-- By gamifying the experience through a health diary design, aims to break through the challenge of collecting mental health real-world data. The app provides a challenge card and a way for users to set personal goals, track progress, and receive rewards for their efforts. This approach makes the experience more engaging, encouraging patients to stick with their tracking habits and provide more accurate data. The personal goal-setting feature also caters to a wide range of needs and preferences, making the app more accessible and appealing to a broad audience.
+By gamifying the experience through a health diary design, aims to break through the challenge of collecting mental health real-world data. The app provides a challenge card and a way for users to set personal goals, track progress, and receive rewards for their efforts. This approach makes the experience more engaging, encouraging patients to stick with their tracking habits and provide more accurate data. The personal goal-setting feature also caters to a wide range of needs and preferences, making the app more accessible and appealing to a broad audience.
 
-Health Practitioners AI Assistant
+### Health Practitioners AI Assistant
 
-- AI can help health practitioners in various ways by analyzing patient data and providing actionable insights to improve patient care. The use of AI can save time and improve the efficiency of health practitioners by automating routine tasks and allowing them to focus on more complex and critical tasks. AI-powered alerts can help practitioners detect potential issues earlier and provide more proactive care. By providing tailored recommendations based on individual patient data, AI can also help practitioners make more informed decisions and provide personalized care.
+AI can help health practitioners in various ways by analyzing patient data and providing actionable insights to improve patient care. The use of AI can save time and improve the efficiency of health practitioners by automating routine tasks and allowing them to focus on more complex and critical tasks. AI-powered alerts can help practitioners detect potential issues earlier and provide more proactive care. By providing tailored recommendations based on individual patient data, AI can also help practitioners make more informed decisions and provide personalized care.
 
-Omni-channel
+### Omni-channel
 
-- This allows pharmaceutical companies to track and analyze the behavior and engagement of healthcare practitioners, patients, and other stakeholders, and make data-driven decisions about their marketing and communication strategies. These solutions can help pharmaceutical companies to make data-driven decisions about their marketing and communication strategies, which can help improve patient outcomes and the quality of care.
+This allows pharmaceutical companies to track and analyze the behavior and engagement of healthcare practitioners, patients, and other stakeholders, and make data-driven decisions about their marketing and communication strategies. These solutions can help pharmaceutical companies to make data-driven decisions about their marketing and communication strategies, which can help improve patient outcomes and the quality of care.
 
-Web3 Technology
+### Web3 Technology
 
-- Web3 technologies can give individuals more control over their personal health records, as they can choose who has access to their data and when it is shared. This can help to enhance privacy and ensure that personal health information is used appropriately.
+Web3 technologies can give individuals more control over their personal health records, as they can choose who has access to their data and when it is shared. This can help to enhance privacy and ensure that personal health information is used appropriately.
 
 
-# Our Goals
+## Our Goals
 Improve the quality of care and outcomes for patients.
 
 - Chronic disease awareness and prevention
@@ -80,26 +80,26 @@ Improve the quality of care and outcomes for patients.
 
 Claps enable patients to self-report, self-test, and access health education, and that incorporate AI-based features, can be a useful tool for improving the quality of care and outcomes for patients. By providing patients with the tools and support they need to manage their own health, these apps can help to empower patients and to improve the effectiveness of healthcare delivery.
 
-Technology
+## Technology
 
-Substrate Blockchain
+### Substrate Blockchain
 
-- By using Substrate blockchain technology to store and manage data, facilitate data sharing, dapps contracts, and create and manage digital assets with patient’s data. Leveraging Substrate blockchain technology for healthcare can offer significant benefits for patients and healthcare industry, providing them with enhanced privacy protection and better data consent management. By taking control of their own data, patients can access the care and support they need more efficiently and securely.
+By using Substrate blockchain technology to store and manage data, facilitate data sharing, dapps contracts, and create and manage digital assets with patient’s data. Leveraging Substrate blockchain technology for healthcare can offer significant benefits for patients and healthcare industry, providing them with enhanced privacy protection and better data consent management. By taking control of their own data, patients can access the care and support they need more efficiently and securely.
 
-Self-Sovereign Identity (SSI)
+### Self-Sovereign Identity (SSI)
 
-- Self-Sovereign Identity (SSI) is a decentralized digital identity model that puts individuals in control of their personal information and how it is used. This approach to identity provides users with more privacy and control over their personal information, and helps to prevent data breaches and misuse of sensitive information.
+Self-Sovereign Identity (SSI) is a decentralized digital identity model that puts individuals in control of their personal information and how it is used. This approach to identity provides users with more privacy and control over their personal information, and helps to prevent data breaches and misuse of sensitive information.
 
-Zero-knowledge proof
+### Zero-knowledge proof
 
-- The zero-knowledge proof is part of SSI, this means that a user can prove their identity or access rights to a service without revealing any sensitive personal information. This helps to protect the privacy of the user and reduce the risk of data breaches, while still enabling secure and reliable authentication.
+The zero-knowledge proof is part of SSI, this means that a user can prove their identity or access rights to a service without revealing any sensitive personal information. This helps to protect the privacy of the user and reduce the risk of data breaches, while still enabling secure and reliable authentication.
 ![zkproof](https://user-images.githubusercontent.com/14127551/218294803-fefcbb47-9be2-418a-a595-424302e838bb.png)
 
-GPT-3 AI model
+### GPT-3 AI model
 
-- GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language processing artificial intelligence developed by OpenAI. The GPT-3 chatbots are designed to interact with patients on a daily basis to support and enhance the continued care work of health practitioners. It's always monitored by health practitioners to ensure the accuracy and relevance of their responses.
+GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language processing artificial intelligence developed by OpenAI. The GPT-3 chatbots are designed to interact with patients on a daily basis to support and enhance the continued care work of health practitioners. It's always monitored by health practitioners to ensure the accuracy and relevance of their responses.
 
-### Ecosystem Fit
+## Ecosystem Fit
 
 The pharmaceutical companies in this ecosystem can provide information to doctors, doctors provide consultation and health education to patients, and patients provide self-health tracking to doctors, could potentially be an effective way to improve the quality and accessibility of healthcare. In this model, the pharmaceutical company would be responsible for providing relevant and accurate information to doctors, who would then use this information to provide consultation and health education to patients. Patients would be responsible for tracking their own health and providing this information to doctors, which could help to inform treatment and care decisions.
 
@@ -155,15 +155,12 @@ New project
 - **Full-Time Equivalent (FTE):**  5-6 FTE
 - **Total Costs:** 75,000 USD
 
-Milestone 1 - Prototyping & Registration
+### Milestone 1 - Prototyping & Registration
 
-Estimated Duration: 2 month
-
-Developers: FTE x 4
-
-(Product Design x 1, Art Design x 1, Web Engineer x 1, Clinical Trial Project Manager x 1)
-
-Costs: 20,000 USD
+- **Estimated Duration:** 2 month
+- **Developers:** FTE x 4
+- **(Product Design x 1, Art Design x 1, Web Engineer x 1, Clinical Trial Project Manager x 1)**
+- **Costs:** 20,000 USD
 
 |Number|Deliverable|Specification|
 | :- | :- | :- |
@@ -171,22 +168,18 @@ Costs: 20,000 USD
 |2|Documentation|We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works.|
 |3|Testing and Testing Guide|Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
 |4|Docker|We will provide a Docker file(s) that can be used to test all the functionality delivered with this milestone.|
-|5|Patient ID creation|<p>Develop the patient ID creation tool in JavaScript. <br>- Generate a new ID on client-side for the patient based on BIP39. (12 words passphrase)<br>- Encrypted key store (private key) by patient user’s password (AES-256 GCM mode)<br>- Implement the decentralized design using public key cryptography. (Client signed by private key, same as metamask)<br></p>|
-|6|Patient profile management module|<p>Patient profile off-chain management tools developed by JAVA<br>- Support AWS S3 storage<br>- Updating of patient profile<br>- ECIES end-to-end data encryption to secure profile data transfer.<br></p>|
-|7|Patient ID on-chain authentication|<p>Non-Interactive Zero-Knowledge Proof (NIZKP) developed by !ink Smart Contract<br>- Receive credential by trust issuer (token file)<br>- Zero-knowledge proof for on-chain authentication to prove patient ID without private information</p>|
-|8|Enterprise ID registration tool|<p>We will offer a Smart Contract as a Service for enterprise ID registration. Developed by !ink! Smart Contract.<br><br>This contract will provide a secure way for enterprises to manage their identities and multi-users access policies. Each enterprise can be assigned a unique contract address, which can be linked to the Polkadot Name System (PNS) for improved usability. The function list in below:<br>- Add new users<br>- Remove existing users<br>- Assign roles and permissions to users<br>- Revoke user access</p>|
-|9|Enterprise account management web backend module|<p>Enterprise account management (connects with Enterprise ID), the tool will be developed using Vue.js for the frontend and Java for the backend.<br>- User authentication: The module will implement user authentication, ensuring that only authorized users can access the system. Two-factor authentication will also be implemented for added security.<br>- Role-based access control: The module will implement role-based access control, allowing the organization to assign roles to users and control their access to the system.<br>- Secure storage of user data: The module will ensure the secure storage of user data, including user IDs, access policies, and profile information. This includes encryption of sensitive data at rest.<br>- Logging and auditing: The module will provide logging and auditing features to track user activity and detect any security breaches or policy violations.</p>|
+|5|Patient ID creation| Develop>Develop the patient ID creation tool in JavaScript. <br>- Generate a new ID on client-side for the patient based on BIP39. (12 words passphrase)<br>- Encrypted key store (private key) by patient user’s password (AES-256 GCM mode)<br>- Implement the decentralized design using public key cryptography. (Client signed by private key, same as metamask)<br>|
+|6|Patient profile management module|Patient profile off-chain management tools developed by JAVA<br>- Support AWS S3 storage<br>- Updating of patient profile<br>- ECIES end-to-end data encryption to secure profile data transfer.<br>|
+|7|Patient ID on-chain authentication|Non-Interactive Zero-Knowledge Proof (NIZKP) developed by !ink Smart Contract<br>- Receive credential by trust issuer (token file)<br>- Zero-knowledge proof for on-chain authentication to prove patient ID without private information|
+|8|Enterprise ID registration tool|We will offer a Smart Contract as a Service for enterprise ID registration. Developed by !ink! Smart Contract.<br><br>This contract will provide a secure way for enterprises to manage their identities and multi-users access policies. Each enterprise can be assigned a unique contract address, which can be linked to the Polkadot Name System (PNS) for improved usability. The function list in below:<br>- Add new users<br>- Remove existing users<br>- Assign roles and permissions to users<br>- Revoke user access|
+|9|Enterprise account management web backend module|Enterprise account management (connects with Enterprise ID), the tool will be developed using Vue.js for the frontend and Java for the backend.<br>- User authentication: The module will implement user authentication, ensuring that only authorized users can access the system. Two-factor authentication will also be implemented for added security.<br>- Role-based access control: The module will implement role-based access control, allowing the organization to assign roles to users and control their access to the system.<br>- Secure storage of user data: The module will ensure the secure storage of user data, including user IDs, access policies, and profile information. This includes encryption of sensitive data at rest.<br>- Logging and auditing: The module will provide logging and auditing features to track user activity and detect any security breaches or policy violations.|
 |10|Documentation|We will provide the document for command-line verification or simple UI verification|
 
-Milestone 2 - Challenge card & Health diary
-
-Estimated Duration: 2 month
-
-Developers: FTE x 6
-
-(Product Design x 1, Art Design x 1, Web Engineer x 1, Dapp Engineer x 1, APP Engineer x 1, Clinical Trial Project Manager x 1)
-
-Costs: 25,000 USD
+### Milestone 2 - Challenge card & Health diary
+- **Estimated Duration:** 2 month
+- **Developers:** FTE x 6
+- **(Product Design x 1, Art Design x 1, Web Engineer x 1, Dapp Engineer x 1, APP Engineer x 1, Clinical Trial Project Manager x 1)**
+- **Costs:** 25,000 USD
 
 |Number|Deliverable|Specification|
 | :- | :- | :- |
@@ -194,22 +187,19 @@ Costs: 25,000 USD
 |2|Documentation|We will provide the interface for the web backend of self-report measures of data collection forms and procedures.|
 |3|Testing and Testing Guide|Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
 |4|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-|5|Challenge card dapp module|<p>Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Dapp developed in ink! smart contract.<br><br>- Add challenge card<br>- Add personalized mission<br>- Delete challenge card<br>- Receive daily mission<br>- Receive rewards by mission completed<br>- Receive rewards by challenge completed<br>- Rewards by fungible tokens or NFT<br></p>|
-|6|Health dairy web backend module|<p>Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java.<br>- Add Type<br>- Add Name<br>- Add Questionaire</p>|
-|7|Android apk|<p>We will provide android apk for above challenge card data input and functional verification<br>We will provide android apk for user challenge card with wallet to receive rewards</p>|
+|5|Challenge card dapp module|Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Dapp developed in ink! smart contract.<br>- Add challenge card<br>- Add personalized mission<br>- Delete challenge card<br>- Receive daily mission<br>- Receive rewards by mission completed<br>- Receive rewards by challenge completed<br>- Rewards by fungible tokens or NFT<br>|
+|6|Health dairy web backend module|Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java.<br>- Add Type<br>- Add Name<br>- Add Questionaire<|
+|7|Android apk|We will provide android apk for above challenge card data input and functional verification<br>We will provide android apk for user challenge card with wallet to receive rewards|
 |8|Database encryption module|We will implement a database encryption AES-256 GCM module of all stored and transmitted data to prevent unauthorized access or tampering. Developed by JAVA.|
 |9|Data privacy control module|We will implement a data privacy control module to allow patients to exercise their rights under the GDPR, delete their personal data by patient’s requirement. Developed by JAVA.|
 |10|Audit logging on web backend|The web backend will implement an auditable log of all access to the system, including who accessed it and what actions were performed, to help detect and respond to security incidents. Developed by JAVA.|
 
-Milestone 3 - Data Sharing Protocol
+### Milestone 3 - Data Sharing Protocol
 
-Estimated Duration: 2 month
-
-Developers: FTE x 2
-
-(Product Design x 1, Dapp Engineer x 1)
-
-Costs: 10,000 USD
+- **Estimated Duration:** 2 month
+- **Developers:** FTE x 2
+- **(Product Design x 1, Dapp Engineer x 1)**
+- **Costs:** 10,000 USD
 
 |Number|Deliverable|Specification|
 | :- | :- | :- |
@@ -217,18 +207,15 @@ Costs: 10,000 USD
 |2|Documentation|We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works.|
 |3|Testing and Testing Guide|Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
 |4|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-|5|Claps Health Data Sharing protocol: Consent management |<p>We will implement a health data sharing protocol based on dapp to enable secure sharing of health data among various stakeholders. Developed by !ink Smart Contract.<br><br>- Accept consent<br>- Revoke consent<br>- View data sharing requests<br><br>a. The consent data will be stored anonymously, without any personal identifying information.<br>b. The smart contract will be accessible to authorized parties using public key cryptography.<br>c. Users are able to request that their data be permanently deleted from the system at any time (Please reference Data privacy control module)<br>d. Users are able to see a list of all the organizations that have requested access to their data, along with the specific types of data being requested, and be able to manage these requests.</p>|
-|6|Claps Health Data Sharing protocol: Patient data feed |<p>We will implement a health data feed on the backend, developed using Rust or Java.<br><br><br>- Subscribe data feed by numbers of Patient ID<br>- Unsubscribe data feed by Patient ID<br><br>a. The data feed will allow authorized parties to access and subscribe to a patient's health data in real-time.<br>b. The data will be encrypted using ECIES to ensure data security.<br>c. The data feed will be accessible through a secure API, which will authenticate and authorize users using public key cryptography.<br>d. Support delete data by patient required.</p>|
+|5|Claps Health Data Sharing protocol: Consent management |We will implement a health data sharing protocol based on dapp to enable secure sharing of health data among various stakeholders. Developed by !ink Smart Contract.<br>- Accept consent<br>- Revoke consent<br>- View data sharing requests<br>a. The consent data will be stored anonymously, without any personal identifying information.<br>b. The smart contract will be accessible to authorized parties using public key cryptography.<br>c. Users are able to request that their data be permanently deleted from the system at any time (Please reference Data privacy control module)<br>d. Users are able to see a list of all the organizations that have requested access to their data, along with the specific types of data being requested, and be able to manage these requests.</p>|
+|6|Claps Health Data Sharing protocol: Patient data feed |We will implement a health data feed on the backend, developed using Rust or Java.<br>- Subscribe data feed by numbers of Patient ID<br>- Unsubscribe data feed by Patient ID<br>a. The data feed will allow authorized parties to access and subscribe to a patient's health data in real-time.<br>b. The data will be encrypted using ECIES to ensure data security.<br>c. The data feed will be accessible through a secure API, which will authenticate and authorize users using public key cryptography.<br>d. Support delete data by patient required.|
 
-Millestone 4 - Omnichannel
+### Millestone 4 - Omnichannel
 
-Estimated Duration: 2 month
-
-Developers: FTE x 4
-
-(Product Design x 1, Art Design x 1, Web Engineer x 1, Clinical Trial Project Manager x 1)
-
-Costs: 20,000 USD
+- **Estimated Duration: 2 month**
+- **Developers:** FTE x 4
+- **(Product Design x 1, Art Design x 1, Web Engineer x 1, Clinical Trial Project Manager x 1)**
+- **Costs:** 20,000 USD
 
 |Number|Deliverable|Specification|
 | :- | :- | :- |
@@ -236,9 +223,9 @@ Costs: 20,000 USD
 |2|Documentation|We will provide the interface for the web backend of self-report measures of data collection forms and procedures.|
 |3|Testing and Testing Guide|Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
 |4|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-|5|Substrate module: Health Education Content Management|<p>We will provide a web backend for health education content publishing & management. Support HTML Editor. Module developed in Rust or JAVA.<br><br>- Article keywords<br>- Article draft editor<br>- Article publish<br>- Remove article<br>- Insert sponsor link<br>- Article survey for user research(The user can then submit their response, which will be stored in the backend database)</p>|
+|5|Substrate module: Health Education Content Management|We will provide a web backend for health education content publishing & management. Support HTML Editor. Module developed in Rust or JAVA.<br>- Article keywords<br>- Article draft editor<br>- Article publish<br>- Remove article<br>- Insert sponsor link<br>- Article survey for user research(The user can then submit their response, which will be stored in the backend database)|
 |6|Substrate module: IPFS |We will provide an integrated Substrate module with IPFS for health education content storage. |
-|7|Analytics module|<p>We will provide a web backend for pharmaceutical and healthcare businesses . By analyzing large datasets to identify patterns about health behaviors, allowing for targeted and proactive education efforts. Develop in Vue and Java. (or Rust)<br>- Result of Article survey for user research<br><br>The module will provide customizable reporting and visualization capabilities to enable businesses to track and measure the success of their education campaigns.</p>|
+|7|Analytics module|We will provide a web backend for pharmaceutical and healthcare businesses . By analyzing large datasets to identify patterns about health behaviors, allowing for targeted and proactive education efforts. Develop in Vue and Java. (or Rust)<br>- Result of Article survey for user research<br>The module will provide customizable reporting and visualization capabilities to enable businesses to track and measure the success of their education campaigns.|
 |8|Article|We will publish an article/workshop that explains how Claps work and benefit patients and healthcare businesses.|
 
 ## Regulation and Compliance with HIPAA/GDPR
@@ -265,20 +252,19 @@ By implementing consent tracking smart contracts, organizations can demonstrate 
 
 Claps Health does not store personal data on the blockchain and there is only random ID and hash code on chain. Individuals have more control over their data and can request deletion of the corresponding data in the database. Ensure that all personal data is securely deleted and no residual information remains that could be used to re-identify individuals.
 
-### However, it is important to note that HIPAA/GDPR compliance involves a comprehensive set of rules and regulations for protecting health information. This proposal does not cover all of the guidelines such as physical access, governance of organizations..etc.
-
+However, it is important to note that HIPAA/GDPR compliance involves a comprehensive set of rules and regulations for protecting health information. This proposal does not cover all of the guidelines such as physical access, governance of organizations..etc.
 
 ## Future Plans
 
-Open AI Integration
+### Open AI Integration
 
 We are planning to integrate Open AI into Claps health mobile app in a second phase, after testing the market and gathering feedback. This approach allows us to minimize development costs and time in the first phase, while also gathering feedback and making sure that the features that we implement in the second phase are the most useful and needed.
 
-Expand Substrate
+### Expand Substrate
 
 We are planning to build an omnichannel platform for pharmaceutical companies and healthcare related based on Polkadot Substrate for expanding the ecosystem, providing a more secure and private way of data management, better interoperability, automation and improved healthcare education communication.
 
-## Additional Information :heavy_plus_sign:
+### Additional Information
 
 Reference:
 https://www.ledgerinsights.com/blockchain-health-records-taiwan/
