@@ -15,8 +15,8 @@ We have a Javascript console at the Developer tab which is really useful for run
 ![image](https://user-images.githubusercontent.com/8139783/197954316-1449075f-b8be-4a30-a759-873c15f8a14f.png)
 
 
-**Current limitations of the above console**
-Cannot save code properly, not much keyboard shortcuts, cannot customize configurations.
+**Current limitations of the above console**:
+Cannot save code properly, not many keyboard shortcuts, cannot customize configurations.
 
 **Alternative polkadot js API playground**
 1. [https://github.com/subdirectory/subshell](https://github.com/subdirectory/subshell)
