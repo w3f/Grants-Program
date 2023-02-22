@@ -90,7 +90,7 @@ My first task was to understand the codebase, identify the current issue and pro
 
   
 
-- lack of proper code documentation ( it was difficult for me to understand the codebase
+- lack of proper code documentation ( it was difficult for me to understand the codebase initially )
 
   
 
@@ -372,7 +372,7 @@ will move to a separate github repo once grant is approved
 
   
 
-- https://www.linkedin.com/in/dikhyantkrishnadalai/> Dikhyant Krishna
+- <https://www.linkedin.com/in/dikhyantkrishnadalai/> Dikhyant Krishna
 
   
 
@@ -390,8 +390,7 @@ will move to a separate github repo once grant is approved
 
   
 
--  **Total Estimated Duration:** 2 months
-
+-  **Total Estimated Duration:** 7-8 weeks
   
 
 -  **Full-Time Equivalent (FTE):** 3
