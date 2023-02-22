@@ -2,7 +2,7 @@
 
 - **Team Name:** Taiwan Research-based Biopharmaceutical Manufacturers Association
 - **Payment Address:** 0x39D3E0c7AAcfbCa133f08cfb153B4888fd36bA9B (DAI)
-- **[Level 3]**
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Overview
 
