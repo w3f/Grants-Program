@@ -40,8 +40,9 @@ By integrating some very popular ZKP libraries into the substrate pallet, the pr
 
 ### Legal Structure
 
-- **Registered Address:** 待加。。。。。
-- **Registered Legal Entity:** 待加。。。。
+- **Registered Address:** 5001 BEACH ROAD, #07-37, GOLDEN MILE COMPLEX
+SINGAPORE (199588)
+- **Registered Legal Entity:** SYN UNIVERSAL PRIVATE LTD
 
 ### Team's experience
 - Bun
