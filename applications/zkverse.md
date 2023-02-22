@@ -1,4 +1,4 @@
-# Name of your Project
+# Zkverse
 
 - **Team Name:** Zkverse
 - **Payment Address:** 0x8554fff69177C2cf470fA276b0C65dB58b5EfEE5(DAI)
