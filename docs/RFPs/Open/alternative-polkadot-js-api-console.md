@@ -24,7 +24,7 @@ Cannot save code properly, not much keyboard shortcuts, cannot customize configu
 
 ### Proposed-RFP
 
-A new polkadot js API playground with vs-code like configurations like save the code, workspace, keyboard shortcuts etc etc..
+A new Polkadot-JS API playground with VS Code-like configurations like save the code, workspace, keyboard shortcuts, etc.
 [https://polkadot.js.org/apps/#/js](https://polkadot.js.org/apps/#/js)
 
 some examples -> https://playground.substrate.dev/
