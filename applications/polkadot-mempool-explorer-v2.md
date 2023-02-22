@@ -81,11 +81,11 @@ Tutorials for polkadot JS APIs will help educate folks who are not expert in Rus
 
 
 ### Team members
-- Name of team leader:
---  Anwesh Nayak (@muddlebee)
-- Names of team members:
--- Arnav Nayak
--- Dikhyant Krishna
+#### Name of team leader:
+- Anwesh Nayak (@muddlebee)
+#### Names of team members:
+- Arnav Nayak
+- Dikhyant Krishna
 
 ### Contact
 
