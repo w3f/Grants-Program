@@ -214,7 +214,7 @@ Frontend uses React to render the transaction blocks in the UI
 
   
 
-#### Technology stack
+### Technology stack
 
   
 
