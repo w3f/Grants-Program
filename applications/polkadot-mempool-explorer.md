@@ -8,8 +8,9 @@
 
 
 ## Project Overview :page_facing_up:
+Mempool Explorer enables Polkadot ecosystem members to monitor pending transactions across several parameters and gain meaningful insights.
 
-**Follow-up of Mempool Dashboard - Phase 1**
+**Follow-up of Mempool Dashboard - Version 1**
 - Link to the phase 1 project: [medium](https://medium.com/protofire-blog/monitoring-pending-transactions-in-polkadot-with-mempool-explorer-36e88e8a41ed)
 
 However the project was created by a different team, Protofire. Currently it's not in working condition, the provided link https://mempool.dot.protofire.io/ doesn't work anymore.
