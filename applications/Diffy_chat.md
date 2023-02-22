@@ -104,7 +104,7 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the developed features work. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure new functionality and robustness. In the guide, we will describe how to run these tests. |
 | 1. | Diffy chat pallet | We will develop a pallet (using Rust) which will include event handling to send and approve WebRTC offers for chat initiation. |
-| 2. | DOTRTC library | We will develop a DOTRTC library (with JS) for p2p transport implementation using a parachain with Diffy chat pallet. This library will provide an API for organizing p2p communication, will split packets into chunks (and reassemble on the receiver’s end) and provide methods for secure messaging between two participants (a sender will encrypt outgoing messages with recipient’s public key so only the recipient could decrypt them with his private key). The library will. |
+| 2. | DOTRTC library | We will develop a DOTRTC library (with JS) for p2p transport implementation using a parachain with Diffy chat pallet. This library will include an API for organizing p2p communication, methods for splitting packets into chunks (and reassemble on the receiver’s end). For secure messaging between two participants a e2e encryption using the rs25519 algorithm will be implemented in the DOTRTC library (a sender will encrypt outgoing messages with recipient’s public key so only the recipient could decrypt them with his private key). |
 | 3. | HTML test page | We will deliver an HTML test page for DOTRTC library testing (setting a p2p channel between 2 users using the DOTRTC library). |
 
 ### Milestone 2 — A web messenger MVP development
@@ -120,7 +120,7 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
 | 1. | Contacts list feature | We will develop a contact list feature allowing users to tie real names to contact’s wallet addresses and store them encrypted in a blockchain. Encryption and decryption will be carried out on the frontend. | 
-| 2. | Web messenger dapp MVP | A web messenger dapp (written on JS) with authorization via Polkadot.js wallet, p2p messaging using developed DOTRTC library and contacts list: a user will be able to start a conversation with someone on his contacts list. | 
+| 2. | Web messenger dapp MVP | A web messenger dapp (written on JS) with authorization via Polkadot.js keys, p2p messaging using developed DOTRTC library and contacts list: a user will be able to start a conversation with someone on his contacts list. | 
 
 ## Future Plans
 
