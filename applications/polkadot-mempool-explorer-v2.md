@@ -439,8 +439,11 @@ will move to a separate github repo once grant is approved
   
 
 Design - 1500 USD
+
 Frontend - 1500 USD
+
 API changes - 2000 USD
+
 CI/CD setup + server costs/maintenance - 1000 USD
 
   
