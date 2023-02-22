@@ -1,7 +1,7 @@
 Grants Terms and Conditions
 ===========================
 
-Updated December 2022
+Updated February 2023
 
 * * * * *
 
@@ -75,7 +75,7 @@ To apply for the Web 3.0 Foundation Grants Program, your application shall fulfi
 
 -  it shall be a research or software-based project, which contributes to the advancement of the Polkadot ecosystem;
 -  the Software shall be released under the Apache license version 2.0.;
--  You must accept payment in Bitcoin, USDT (on Kusama or Polkadot), USDC/DAI (Ethereum) or aUSD (Acala);
+-  You must accept payment in fiat, Bitcoin, USDT (on Kusama or Polkadot) or USDC/DAI (Ethereum);
 -  You will need to submit the application and deliver the milestones according to the process specified below;
 
 The grants process consists of five parts, each of them described in more detail below:
@@ -123,7 +123,7 @@ As soon as one evaluator approves the pull request, the delivery is officially a
 
 **(v)  Payment process:**
 
-The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the Bitcoin, USDT (on Kusama or Polkadot), USDC/DAI (Ethereum) or aUSD (Acala) address specified in the initial application. 
+The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the Bitcoin, USDT (on Kusama or Polkadot) or USDC/DAI (Ethereum) address specified in the initial application. 
 ## 5.  Scope of these Terms and Conditions
 
 The subject matter of these Terms and Conditions is (i) the development of the Software by You in accordance with the Specifications, Milestones and Time Schedule, as well as any related activities (including any development activities undertaken before the Effective Date in relation to the Software) (collectively referred to as "Development Work") in accordance with the terms of these Terms and Conditions.

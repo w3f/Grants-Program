@@ -148,7 +148,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ## :pencil: Process
 
-> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT (on [Statemine/Statemint](https://support.polkadot.network/support/solutions/articles/65000181800-what-is-statemint-and-statemine-and-how-do-i-use-them-)), USDC/DAI (Ethereum) or aUSD (Acala). If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in fiat, Bitcoin, USDT (on [Statemine/Statemint](https://support.polkadot.network/support/solutions/articles/65000181800-what-is-statemint-and-statemine-and-how-do-i-use-them-)) or USDC/DAI (Ethereum). If you want to apply in **private**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -223,7 +223,7 @@ Please note that:
 
 We give away 500 USD to each referral of a successful grant application by _anyone having previously worked on a Web3 Foundation grant_ or _a [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors)_. Web3 Foundation and Parity employees do not qualify for the program, even if they previously worked on a grant.
 
-In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in Bitcoin, USDT (on Kusama or Polkadot), USDC/DAI (Ethereum) or aUSD (Acala).
+In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in Bitcoin, USDT (on Kusama or Polkadot) or USDC/DAI (Ethereum).
 
 ## :bulb: Help
 
