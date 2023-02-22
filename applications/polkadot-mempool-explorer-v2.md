@@ -434,7 +434,7 @@ will move to a separate github repo once grant is approved
 
   
 
-**Cost breakup for Milestone 1**
+**Cost breakup for Part 1**
 
   
 
