@@ -31,7 +31,7 @@ some examples -> https://playground.substrate.dev/
 here we have to manually build and run our js bundles
 ![image](https://user-images.githubusercontent.com/8139783/198254152-abdd0f2e-62d4-4f0f-aad1-bcfdd6d48a74.png)
 
-**Why alternative javascript console for for polkadot js API**
+**Why alternative javascript console for Polkadot-JS API**?
 
 Current polkadot js API console which I mentioned in beginning of this post, has some limitations, which we can overcome by creating a better version for smoother dev experience.
 
