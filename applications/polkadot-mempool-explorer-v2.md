@@ -491,6 +491,7 @@ Chapters overview
 5. Explain transaction lifecycle, and how to perform transactions through the API
 
 and more .....
+
 Overall goal it to curate a series of tutorials to build the concepts of polkadot blockchain.
 
   
