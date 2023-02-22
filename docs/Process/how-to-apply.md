@@ -6,7 +6,7 @@ title: 1. Application
 
 :::caution
 
-The process below is independent of the [level](../Introduction/levels.md). Payment is made in Bitcoin, USDT (on Kusama or Polkadot), USDC/DAI (Ethereum) or aUSD (Acala). If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+The process below is independent of the [level](../Introduction/levels.md). Payment is made in fiat, Bitcoin, USDT (on Kusama or Polkadot) or USDC/DAI (Ethereum). If you want to apply in **private**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 :::
 
