@@ -65,6 +65,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 🟡 | 07.12.2022 |
 | [wallet-aggregator-library.md](RFPs/Open/wallet-aggregator-library.md) | 🟢 | 23.01.2023 |
 | [xcm-tool.md](RFPs/Open/xcm-tool.md) | 🟢 | 20.07.2021 |
+| [alternative-polkadot-js-api-console.md](RFPs/Open/alternative-polkadot-js-api-console.md) | 🟢 | 16.02.2023 |
 
 ## :mailbox_with_mail: Suggest an RFP
 
