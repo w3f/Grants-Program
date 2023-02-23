@@ -18,7 +18,18 @@ There are three main goals for project:
 - Publish some tutorial blogs/demos to let more substrate community developers enjoy the convenience of the above zkp development kits.
 
 Meanwhile, We know that snakjs and circom are excellent and popular zkp development libraries. They are very popular in the Ethereum ecosystem and can automatically generate verification contract codes. We observed this very good feature, so we want to generate circuit codes more easily through circom, and generate proofs by snarkjs, which will be verified on substrate-based chain. Due to many people using snakjs, and circom is developer friendly, Unlike some domain-specific circuit writing methods, our project can attract many developers who are familiar with snarkjs to develop zkp Dapps in substrate/polkadot ecosystem. They can also enjoy the convenience of developing zkp applications in Polkadot ecosystem. So our main goal is to provide zkp infrastructure that is convenient for Polkadot developers. Also ,we will show a minimal example with Merkle tree and ZKP for rollup.
-
+```
+h(h(h(sm0+sm1) + h(sm2+sm3)) + sm4) (merkle root)
+      /                         \
+    h(h(sm0+sm1) + h(sm2+sm3))  sm4 (2 siblings)
+    /          \                /
+   h(sm0+sm1)   h(sm2+sm3)   sm4 (3 siblings)
+  /   \        /   \         /
+sm0   sm1   sm2    sm3      sm4 (leaves are the base level, 5 siblings)
+^     ^     ^      ^        ^
+|     |     |      |        |
+m0    m1    m2     m3       m4
+```
 
 ### Ecosystem Fit
 By integrating some very popular ZKP libraries into Substrate pallet, the rollup function of ZKP can be realized on the substrate-based chains, which is convenient for developers to develop zk applications on the substrate-based chains. Although zkp has been relatively active in the Ethereum ecosystem, zkp technology has not been widely popularized in polkadot ecosystem.
