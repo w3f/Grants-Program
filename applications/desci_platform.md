@@ -31,7 +31,6 @@ In fact, we have already implemented a variety of features for the technology tr
 
 #### User interfaces
 
-
 **Technology show-casing**</br>
 When a user registered to the platform it’s available to add detailed information of the project and upload any kind of documentation providing technical details of the technology such as blueprints, research paper, articles, and etc.
 
@@ -47,10 +46,10 @@ To enable technology show-casing user should create a technology profile on the 
 [![Screenshot-2023-02-16-at-13-15-26.png](https://i.postimg.cc/7YTVgY1n/Screenshot-2023-02-16-at-13-15-26.png)](https://postimg.cc/dLwrFFxh)
 
 | Number | Element                   | Description                                                                                                            |
-|-------:|---------------------------|------------------------------------------------------------------------------------------------------------------------|
+|-------:|---------------------------|------------------------------------------------------------------------------------------------------------------|
 |     4. | Privacy switcher          | Option for management privacy of project information: private technology mode makes it available for project team only |
-|     5. | Description               | Executive summary about the project/technology                                                                         |
-|        | Commercialization Options | Opportunity to create express license or issue co-creation license                                                     |
+|     5. | Description               | Executive summary about the project/technology                                                                    |
+|        | Commercialization Options | Opportunity to create express license or issue co-creation license                                                |
 
 [![Screenshot-2023-02-16-at-13-49-08.png](https://i.postimg.cc/xdWxrJP8/Screenshot-2023-02-16-at-13-49-08.png)](https://postimg.cc/R3LQK0yx)
 
