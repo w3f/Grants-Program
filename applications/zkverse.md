@@ -8,21 +8,22 @@
 
 ### Overview
 
-The privacy protection technology in the blockchain is constantly developing, with the emergence of multi-party security computing, differential privacy, homomorphic encryption, zero-knowledge proof and other technologies. At present, ZKP technology is constantly developing and innovating in the privacy and expansion track in Ethereum. So the main goal of this project is to introduce ZKP technology into the Polkadot/Substrate ecosystem. Polkadot/Substrate natively does not support ZKP, so this project(Zkverse, which means zk universe) will provide zk-related pallets to support substrate and more efficient zk proof generation ways.
+At present, ZKP technology is constantly developing and innovating in the scaling and expansion track in Ethereum, especially some zk rollup projects, such as zksync, scroll, starknit, etc. So the main goal of this project is to introduce ZKP technology into the Polkadot/Substrate ecosystem. Polkadot/Substrate natively does not support ZKP, so this project(Zkverse, which means zk universe) will provide zk-related pallets to support substrate and more efficient zk proof generation ways. 
 
 ### Project Details
 
 There are three main goals for project: 
 - Integrate some zkp libray(like bellman, plonk library and eg...) into substrate pallet
-- Maximize the efficiency and convenience of zk proof generation(The proof is not generated on the chain, but through some developer friendly libraries(like snarkjs) which will be adapted to the zk lib on substrate-based chain.)
+- Maximize the efficiency and convenience of zk proof generation(The proof is not generated on the chain, but through some developer friendly libraries(like snarkjs) which will be adapted to the zk lib on substrate-based chain.). This is very important and convenient for scaling. It can realize rollup for app-specific Dapps and greatly increase the throughput of the substrated-based chain. It can be said "Off-chain execution and on-chain verification".
 - Publish some tutorial blogs/demos to let more substrate community developers enjoy the convenience of the above zkp development kits.
 
-Also, this project mainly focus on privacy function with ZKP technology. Meanwhile, We know that snakjs and circom are excellent and popular zkp development libraries. They are very popular in the Ethereum ecosystem and can automatically generate verification contract codes. We observed this very good feature, so we want to generate circuit codes more easily through circom, and generate proofs by snarkjs, which will be verified on substrate-based chain. Due to many people using snakjs, and circom is developer friendly, Unlike some domain-specific circuit writing methods, our project can attract many developers who are familiar with snarkjs to develop zkp Dapps in substrate/polkadot ecosystem. They can also enjoy the convenience of developing zkp applications in Polkadot ecosystem.
+Meanwhile, We know that snakjs and circom are excellent and popular zkp development libraries. They are very popular in the Ethereum ecosystem and can automatically generate verification contract codes. We observed this very good feature, so we want to generate circuit codes more easily through circom, and generate proofs by snarkjs, which will be verified on substrate-based chain. Due to many people using snakjs, and circom is developer friendly, Unlike some domain-specific circuit writing methods, our project can attract many developers who are familiar with snarkjs to develop zkp Dapps in substrate/polkadot ecosystem. They can also enjoy the convenience of developing zkp applications in Polkadot ecosystem. So our main goal is to provide zkp infrastructure that is convenient for Polkadot developers. Also ,we will show a minimal example with Merkle tree and ZKP for rollup.
+
 
 ### Ecosystem Fit
-By integrating some very popular ZKP libraries into Substrate pallet, the privacy function of ZKP can be realized on the substrate-based chains, which is convenient for developers to develop zk applications on the substrate-based chains. Although zkp has been relatively active in the Ethereum ecosystem, zkp technology has not been widely popularized in polkadot ecosystem.
+By integrating some very popular ZKP libraries into Substrate pallet, the rollup function of ZKP can be realized on the substrate-based chains, which is convenient for developers to develop zk applications on the substrate-based chains. Although zkp has been relatively active in the Ethereum ecosystem, zkp technology has not been widely popularized in polkadot ecosystem.
 - [Zeropool](https://github.com/zeropoolnetwork/zeropool-substrate-groth16-example) implements zk on the substrate chain, but this library has not been updated for a long time. The substrate has gone through many development iterations and needs to be supported by the latest library.
-- [Glacier](https://github.com/gbctech) is building a Distaff VM for zk-STARK proof generation and verification that are used to make  private smart contracts and private credential verifications.
+- [Glacier](https://github.com/gbctech) is building a Distaff VM for zk-STARK proof generation and verification that are used to make  private smart contracts and private credential verifications. Also, this project is outdate and not latest.
 - [zk-plonk](https://github.com/w3f/Grants-Program/blob/master/applications/zk-plonk.md) would like to implement Zk plonk pallet. However, plonk takes a long time to generate proofs and is generated on the chain, so there may be problems in efficiency.
 - [ZK-Snarks tutorial](https://github.com/w3f/Grants-Program/blob/master/applications/ZK-Snarks%20tutorial.md) want to introduce the substrate community into the zk-snarks concept，but their ideas and goals have been implmentd since last year. Our project will do more education and involve more zk libraries
 
@@ -61,6 +62,7 @@ SINGAPORE (199588)
 Currently, we have developed a substrate-based chain with zkp protocol and a practical zkp tool (which can adapt to two different zkp libraries to facilitate developers to develop zkp Dapps)
 
 ## Development Roadmap :nut_and_bolt:
+We will implement two different proof systems(groth16 and plonk) separately to meet the needs of different developers
 
 ### Overview
 
@@ -84,7 +86,7 @@ Implement groth16 pallet in Substrate and develop a tool which can let the proof
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop to explain.
 | 1. | make groth16 compatible with substrate | We will create a Substrate pallet with groth16 algorithm. Bellman is not fully compatible with `no_std`, so we first make it possible and then we will modify attributes according to `parity-codec` and `Rng` to be compatible with　Substrate environment. Finally, a zkp `verification Pallet` on the chain was developed |
-| 2. | adapt snarkjs and bellman | Adapt snarkjs to bellman, so that the proof generated by snarkjs can be verified by the verification pallet on the substrate-based chain |
+| 2. | adapt snarkjs and bellman | We will use circom to write a minimal circuit example of zk rollup. Adapt snarkjs to bellman, so that the proof generated by snarkjs can be verified by the verification pallet on the substrate-based chain. |
 
 
 ### Milestone 2
@@ -103,7 +105,7 @@ Implement plonk pallet in Substrate and develop a tool which can let the proof o
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop to explain.  
 | 1. | make plonk compatible with substrate | We will create a Substrate pallet with plonk algorithm. Many plonk librares are not fully compatible with `no_std`, so we first make it possible and then we will modify attributes according to `parity-codec` and `Rng` to be compatible with　Substrate environment. Finally, a zkp `verification Pallet` on the chain was developed |
-| 2. | adapt snarkjs and plonk lib | Adapt snarkjs to plonk library, so that the proof generated by snarkjs can be verified by the verification pallet on the substrate chain |
+| 2. | adapt snarkjs and plonk lib | We will use circom to write a minimal circuit example of zk rollup. Adapt snarkjs to bellman, so that the proof generated by snarkjs can be verified by the verification pallet on the substrate-based chain. |
 
 
 ## Future Plans
