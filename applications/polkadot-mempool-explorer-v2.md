@@ -407,11 +407,12 @@ will move to a separate github repo once grant is approved
 
   
 
-#### Part 1 : version 2 of mempool dashboard
+#### version 2 of mempool dashboard and polkadot js API tutorials
+
 
   
 
--  **Estimated Duration:** 3-4 weeks
+-  **Estimated Duration:** 7-8 weeks
 
   
 
@@ -419,7 +420,8 @@ will move to a separate github repo once grant is approved
 
   
 
--  **Costs:** 6000 USD
+-  **Costs:** 9000 USD
+
    
 |  Number | Deliverable                            | Specification                                                                                                                                                                                                                |
 | ------: | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -430,50 +432,10 @@ will move to a separate github repo once grant is approved
 |      1. | new UI for desktop and mobile view and fix existing issues|                                                                                                                                            |
 |      2. | enhance the APIs and fix existing issues                                                                                                                                                                        |
 |      3. | enable CI/CD | spin up a server instance for hosting the backend and deploying the frontend at github pages                                                                                                                                                     |
-  
+  | **1a.** | polkadot js API tutorials             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to run sample examples |
+| **1b.** | Graphics/Illustrations | Illustrations wherever required to explain complex topics
 
-  
 
-**Cost breakup for Part 1**
-
-  
-
-Design - 1500 USD
-
-Frontend - 1500 USD
-
-API changes - 2000 USD
-
-CI/CD setup + server costs/maintenance - 1000 USD
-
-  
-
-  
-
-#### Part 2 - polkadot js API tutorials
-
-  
-
--  **Estimated Duration:** 3-4 weeks
-
-  
-
--  **FTE:** 1
-
-  
-
--  **Costs:** 3000 USD
-
-  
-
-  
-  
-|  Number | Deliverable               | Specification                                                                                                                                                                                                                |
-| ------: | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                   | APACHE 2                                                                                                                                                                                                                     |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to run sample examples |
-| **0c.** | Code samples | Tutorials in form of chapters, each divided into a certain section  
-| **0d.** | Graphics/Illustrations | Illustrations wherever required to explain complex topics
 
 
 Chapters overview
@@ -493,6 +455,20 @@ Chapters overview
 and more .....
 
 Overall goal it to curate a series of tutorials to build the concepts of polkadot blockchain.
+  
+
+#### Cost breakup
+
+Design - 1500 USD
+
+Frontend - 1500 USD
+
+API changes - 2000 USD
+
+CI/CD setup + server costs/maintenance - 1000 USD
+
+polkadot js API tutorials - 3000 USD
+  
 
   
 
