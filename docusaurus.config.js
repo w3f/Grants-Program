@@ -42,7 +42,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'introduction',
+          docId: 'docs/introduction',
           label: 'Introduction',
         },
         {
@@ -53,18 +53,18 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'faq',
+          docId: 'docs/faq',
           label: 'FAQ',
         },
         {
           type: 'doc',
-          docId: 'Process/how-to-apply',
+          docId: 'docs/Process/how-to-apply',
           position: 'right',
           label: 'Apply',
         },
         {
           type: 'doc',
-          docId: 'contribute',
+          docId: 'docs/contribute',
           position: 'right',
           label: 'Contribute',
         }
@@ -86,7 +86,7 @@ module.exports = {
             },
             {
               label: 'Privacy Policy',
-              href: './Support%20Docs/privacy_policy',
+              to: 'docs/Support%20Docs/privacy_policy',
             },
           ],
         }, 
@@ -125,6 +125,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: '.',
           routeBasePath: '/', 
           editUrl: 'https://github.com/w3f/Grants-Program/edit/master/',
           // showLastUpdateAuthor: true,
@@ -140,9 +141,23 @@ module.exports = {
           rehypePlugins: [
           ],
           exclude: [
-            'Applications/application-template.md',
-            'Applications/example-project.md',
-            'RFPs/suggestion-template.md'
+            'applications/application-template.md',
+            'applications/example-project.md',
+            'docs/RFPs/suggestion-template.md',
+            '.docusaurus/**',
+            '.github/**',
+            '.vscode/**',
+            'build/**',
+            'node_modules/**',
+            'src/**',
+            'static/**',
+            'babel.config.js',
+            '.gitignore',
+            'LICENSE',
+            'package-lock.json',
+            'package.json',
+            'sidebars.js',
+            'README.md'
           ],
         },
         blog: false,
