@@ -43,6 +43,7 @@ To enable technology show-casing user should create a technology profile on the 
 |     1. | Cover image      | Photo or illustration represent the concept of the project |
 |     2. | Title            | The name of the project or technology                      |
 |     3. | Reference Number | User defined ID for the project                            |
+
 [![Screenshot-2023-02-16-at-13-15-26.png](https://i.postimg.cc/7YTVgY1n/Screenshot-2023-02-16-at-13-15-26.png)](https://postimg.cc/dLwrFFxh)
 
 | Number | Element                   | Description                                                                                                            |
@@ -50,6 +51,7 @@ To enable technology show-casing user should create a technology profile on the 
 |     4. | Privacy switcher          | Option for management privacy of project information: private technology mode makes it available for project team only |
 |     5. | Description               | Executive summary about the project/technology                                                                         |
 |        | Commercialization Options | Opportunity to create express license or issue co-creation license                                                     |
+
 [![Screenshot-2023-02-16-at-13-49-08.png](https://i.postimg.cc/xdWxrJP8/Screenshot-2023-02-16-at-13-49-08.png)](https://postimg.cc/R3LQK0yx)
 
 | Number | Element                | Description                                                     |
@@ -62,12 +64,14 @@ To enable technology show-casing user should create a technology profile on the 
 |   6.5. | Milestone description  | Expanded description of the results to achieve during the phase |
 |   6.6. | Add item of roadmap    | Option to add one more block for describing roadmap point       |
 |   6.7. | Delete item of roadmap | Option to delete a block from roadmap                           |
+
 [![Screenshot-2023-02-16-at-14-08-01.png](https://i.postimg.cc/4xM6SCJQ/Screenshot-2023-02-16-at-14-08-01.png)](https://postimg.cc/Sn6YnvYn)
 
 | Number | Element      | Description                                       |
 |-------:|--------------|---------------------------------------------------|
 |     7. | Applications | Description of technology usage or use cases      |
 |     8. | Advantages   | Description of benefits of the project/technology |
+
 [![Screenshot-2023-02-16-at-14-35-45.png](https://i.postimg.cc/tCDQPkXj/Screenshot-2023-02-16-at-14-35-45.png)](https://postimg.cc/XpZz6wGH)
 
 | Number | Element      | Description                                                        |
@@ -77,6 +81,7 @@ To enable technology show-casing user should create a technology profile on the 
 |   9.2. | URL          | Link to the resource                                               |
 |   9.3. | Add item     | Option to add new item                                             |
 |   9.4. | Delete item  | Option to delete item                                              |
+
 [![Screenshot-2023-02-16-at-14-41-53.png](https://i.postimg.cc/g2TVTxV7/Screenshot-2023-02-16-at-14-41-53.png)](https://postimg.cc/NKR2yfP8)
 
 | Number | Element                      | Description                                                   |
@@ -91,6 +96,7 @@ To enable technology show-casing user should create a technology profile on the 
 |  11.2. | URL                          | Link to the external resource                                 |
 |  11.3. | Add item                     | Option to add new item                                        |
 |  11.4. | Delete item                  | Option to delete item                                         |
+
 [![Screenshot-2023-02-16-at-14-51-35.png](https://i.postimg.cc/5yrPqs2P/Screenshot-2023-02-16-at-14-51-35.png)](https://postimg.cc/m1QNTNMM)
 
 | Number | Element                          | Description                                                                                                                                                                                                                                                      |
@@ -101,6 +107,7 @@ To enable technology show-casing user should create a technology profile on the 
 |    15. | Keywords                         | Keywords allow to simplify filtering and search technology in the portfolio                                                                                                                                                                                      |
 |    16. | Technology readiness level (TRL) | This option specifies the maturity of the project and it’s available the following levels: </br>1 - Idea </br> 2 - Basic Research </br> 3 - Applied (Lab) Research </br> 4 - Proof of Concept Prototype </br> 5 - Sub-system Prototype </br> 6 - Alpha Prototype |
 |    17. | Project manager                  | Option to set the project manager of the technology                                                                                                                                                                                                              |
+
 [![Screenshot-2023-02-16-at-15-00-17.png](https://i.postimg.cc/qqf8wWdZ/Screenshot-2023-02-16-at-15-00-17.png)](https://postimg.cc/R6R6Vshc)
 
 **Secured upload of the files**
@@ -114,6 +121,7 @@ To enable technology show-casing user should create a technology profile on the 
 |     4. | References on materials from platform   | In case if the file was created based on the materials previously uploaded on the platform it could be specified |
 |     5. | File to attach                          | Original file                                                                                                    |
 |     6. | Confirmation of ownership               | Option to confirm ownership explicitly                                                                           |
+
 [![Screenshot-2023-02-16-at-15-19-57.png](https://i.postimg.cc/250Y4fnr/Screenshot-2023-02-16-at-15-19-57.png)](https://postimg.cc/WDqxvC9H)
 
 The uploaded content enriches an intrinsic value of the project and it allows to accumulate information in a validated and easy-to-use manner as a summary page of the file.
