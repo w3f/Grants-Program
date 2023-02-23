@@ -432,8 +432,8 @@ will move to a separate github repo once grant is approved
 |      1. | new UI for desktop and mobile view and fix existing issues|                                                                                                                                            |
 |      2. | enhance the APIs and fix existing issues                                                                                                                                                                        |
 |      3. | enable CI/CD | spin up a server instance for hosting the backend and deploying the frontend at github pages                                                                                                                                                     |
-  | **1a.** | polkadot js API tutorials             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to run sample examples |
-| **1b.** | Graphics/Illustrations | Illustrations wherever required to explain complex topics
+  | 4a | polkadot js API tutorials             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to run sample examples |
+| 4b | Graphics/Illustrations | Illustrations wherever required to explain complex topics
 
 
 
