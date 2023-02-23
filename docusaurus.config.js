@@ -86,7 +86,7 @@ module.exports = {
             },
             {
               label: 'Privacy Policy',
-              href: 'docs/Support%20Docs/privacy_policy',
+              to: 'docs/Support%20Docs/privacy_policy',
             },
           ],
         }, 
@@ -156,7 +156,8 @@ module.exports = {
             'LICENSE',
             'package-lock.json',
             'package.json',
-            'sidebars.js'
+            'sidebars.js',
+            'README.md'
           ],
         },
         blog: false,
