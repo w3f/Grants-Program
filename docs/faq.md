@@ -58,7 +58,7 @@ title: FAQ
   Depending on the size of the grant, applications require two to five committee members to approve it. Since we have many different members with different backgrounds and specializations, it is possible that the committee disagrees and your application gets rejected even though one or two members approved it.
   The application is accepted once the pull request is merged.
 
-### How do I apply if I want to keep information private or want to be paid in fiat?
+### How do I apply if I want to keep information private?
 
   For special cases that do not fit the regular grants structure, we provide [a form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). You can provide all application data by submitting this form, or submit the form with a reference to a pull request with data you are willing to make public.
 
