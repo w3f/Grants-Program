@@ -463,9 +463,9 @@ Design - 1500 USD
 
 Frontend - 1500 USD
 
-API changes - 2000 USD
+API/backend - 2500 USD
 
-CI/CD setup + server costs/maintenance - 1000 USD
+CI/CD setup + server costs/maintenance - 500 USD
 
 polkadot js API tutorials - 3000 USD
   
