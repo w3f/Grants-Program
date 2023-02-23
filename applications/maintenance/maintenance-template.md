@@ -78,7 +78,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
+- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
 - academic publications relevant to the problem,
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
@@ -93,11 +93,13 @@ Also, make sure the current project owners are willing to review/accept your con
 Below we provide **example maintenance responsibilities**.
 
 Issues we want to fix:
+
 - There's a bug in the JsonRPC library that affects its speed.
 - Massive lack of documentation and part of it is outdated.
 - Code has no comments, and it's tough for new developers to understand the code and contribute.
 
 Our responsibilities:
+
 - We will maintain the project's documentation.
 - We will answer issues and discussions.
 - We will fix new bugs as we receive and help contributors who have pull requests get any needed information.
@@ -106,12 +108,12 @@ Our responsibilities:
 
 ### Overview
 
-- **Start Date:** Date, when you plan to start with the maintenance work. 
+- **Start Date:** Date, when you plan to start with the maintenance work.
 - **Sprint/Period Duration:** Duration of the sprint/period (e.g. 4 weeks)
 - **Total Duration:** Duration of the entire maintenance contract (e.g. 1 year)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Max budget per sprint/period:** Requested max budget in USD per sprint/period (e.g. 7,000 USD). Cost for each period need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
-- **Hourly rate:** Amount of budget per hour, since it’s unlikely that the maintenance of the project requires the exact same workload each sprint. 
+- **Hourly rate:** Amount of budget per hour, since it’s unlikely that the maintenance of the project requires the exact same workload each sprint.
 
 > ⚠️ *Note that you will need to provide a comprehensive report of the work done at the end of each month, including the list of issues/bugs/pull requests worked on, time spent on each of these, & finally, the associated cost. The time allocation & price will likely vary from month to month, depending on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. W3F will make the payments only after the successful merge of each individual report.*
 
