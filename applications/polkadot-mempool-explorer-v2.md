@@ -409,8 +409,11 @@ will move to a separate github repo once grant is approved
 |      3. | enable CI/CD | spin up a server instance for hosting the backend and deploying the frontend at github pages                                                                                                                                                     |
   | 4a | polkadot js API tutorials             | We will provide both **inline documentation** of the code and a series of **tutorial** that explains how to run sample examples |
 | 4b | Graphics/Illustrations | Illustrations wherever required to explain complex topics
+| 4c | Publish tutorials online  | Use a technical documentation tool to publish the tutorials online 
 
-
+Sample tutorials
+- https://github.com/muddlebee/polkadot-js-beginner-series
+- https://rust-unofficial.github.io/too-many-lists/index.html
 
 
 Chapters overview
