@@ -1,4 +1,4 @@
-## DeSci platform on Substrate
+# DeSci platform on Substrate
 
 - **Team Name:** DeTech.World
 - **Payment Address:** 0xbF98d362Dd45Caf254d284ac01A46C57F6C9ED73 (ERC20 USDC)
