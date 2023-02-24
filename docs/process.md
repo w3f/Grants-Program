@@ -25,7 +25,8 @@ flowchart LR
     style G stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     
-    click C "Process/index" "Apply now"
+    click C "Process/how-to-apply" "Apply now"
+    click F "Process/how-to-apply" "Apply now"
     click D "https://wiki.polkadot.network/docs/en/learn-treasury" "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
     click H "https://www.substrate.io/builders-program/" "https://www.substrate.io/builders-program" _blank
 ```
