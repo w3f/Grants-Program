@@ -177,6 +177,10 @@ V2 will be implemented as part of this grant
 
 ## Development Roadmap :nut_and_bolt:
 
+### Overview
+
+- **Total Costs:** 54,000 USD
+
 ### Milestone 1 - Dynamic Type Loader from metadata
 
 - **Estimated duration:** 5 weeks (200 hours)

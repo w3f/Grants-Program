@@ -6,15 +6,15 @@ title: Requests for Proposals
   <img src="https://raw.githubusercontent.com/w3f/Grants-Program/master/static/img/rfp-header.png" style={{width:"1300px"}} />
 </p>
 
-- [❔ What is an RFP?](#grey_question-what-is-an-rfp)
-- [📜 List of RFPs](#scroll-list-of-rfps)
-- [📬 Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
+- [:grey\_question: What is an RFP?](#grey_question-what-is-an-rfp)
+- [📜 List of RFPs](#-list-of-rfps)
+- [:mailbox\_with\_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
 
 ## :grey_question: What is an RFP?
 
 An RFP (Request for Proposals) is a declaration of interest for others to submit a grant or a treasury application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](suggesting.md)) deems useful and missing or unsolved in our ecosystem.
 
-If you find an open RFP here that you think you can address, feel free to [submit a grant application](process.md). There is a [section in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing. Alternatively, you can always submit an on-chain treasury application for an RFP. 
+If you find an open RFP here that you think you can address, feel free to [submit a grant application](process.md). There is a [section in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing. Alternatively, you can always submit an on-chain treasury application for an RFP.
 
 
 ## 📜 List of RFPs
@@ -29,6 +29,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | :-- | :----: | :----------: |
 | [a-and-v-topology.md](RFPs/Open/a-and-v-topology.md) | 🟢 | 29.11.2021 |
 | [alternative_polkadot_host_implementations.md](RFPs/Open/alternative_polkadot_host_implementations.md) | 🟢 | 29.11.2021 |
+| [analysis-website-and-data-platform.md](RFPs/Open/analysis-website-and-data-platform.md) | 🟢 | 17.02.2023 |
 | [anti-collusion_infrastructure.md](RFPs/Open/anti-collusion_infrastructure.md) | 🟢 | 29.11.2021 |
 | [appi.md](RFPs/Implemented/appi.md) | 🔴 | 20.07.2021 |
 | [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 🟢 | 06.01.2023 |
@@ -42,7 +43,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [implementation-benchmarking.md](RFPs/Open/implementation-benchmarking.md) | 🟢 | 20.07.2021 |
 | [ink!_smart_contract_block_explorer.md](RFPs/Under%20Development/ink_smart_contract_block_explorer.md) | 🟡 | 05.07.2021 |
 | [ISO_20022.md](RFPs/Open/ISO_20022.md) | 🟢 | 31.05.2022 |
-| [ISO_8583.md](RFPs/Under%20Development/ISO_8583.md) | 🟡 | 31.05.2022 |
+| [ISO_8583.md](RFPs/Open/ISO_8583.md) | 🟡 | 31.05.2022 |
 | [ksm-tipping-button.md](RFPs/Implemented/ksm-tipping-button.md) | 🔴 | 20.07.2021 |  
 | [move_smart_contract_pallet.md](RFPs/Open/move_smart_contract_pallet.md) | 🟢 | 22.12.2022 |
 | [multi-chain-block-explorer.md](RFPs/Under%20Development/multi-chain-block-explorer.md) | 🟡 | 23.11.2021 |
@@ -64,6 +65,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 🟡 | 07.12.2022 |
 | [wallet-aggregator-library.md](RFPs/Open/wallet-aggregator-library.md) | 🟢 | 23.01.2023 |
 | [xcm-tool.md](RFPs/Open/xcm-tool.md) | 🟢 | 20.07.2021 |
+| [alternative-polkadot-js-api-console.md](RFPs/Open/alternative-polkadot-js-api-console.md) | 🟢 | 16.02.2023 |
 
 ## :mailbox_with_mail: Suggest an RFP
 
