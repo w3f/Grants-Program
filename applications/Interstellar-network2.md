@@ -78,10 +78,10 @@ https://book.interstellar.gg/Mobile_App.html
 - Documentation of core components
 https://book.interstellar.gg/
 
-![TTV overview drawio](https://user-images.githubusercontent.com/4605611/144742049-54d3a212-b471-4a69-9f44-adfb150814ca.png#gh-light-mode-only)
 
-![TTV overview dark drawio](https://user-images.githubusercontent.com/4605611/144738926-e6f0db47-f7ff-4382-ae5d-251420e23a61.png#gh-dark-mode-only)
+![Architecture overview](https://book.interstellar.gg/fig/Architecture-mobile-L1-L2-Signers.svg "architecture L1 L2 signer")
 
+https://book.interstellar.gg/fig/Transaction_Validation_Module.svg
 
 
 #### Technology stack
