@@ -175,7 +175,7 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 |      1. | Integritee pallet - Signer/Key Manager | We will create a pallet to manage signers associated with private key management                                                                                                                                             |
 |      2. | Integritee pallet- Polkadot signer     | We will create a pallet to sign Polkadot transaction                                                                                                                                                                         |
 |      3. | Integritee pallet - Ethereum signer    | We will create a pallet to sign Ethereum transaction                                                                                                                                                                         |
-|      4. | Integritee pallet - submit transaction | We will create a pallet to send transactions to the appropriate network                                                                                                                                                      |
+|      4. | submit transaction | signed transaction is sent to the appropriate network through light client on the mobile or through API (see scheme)                                                                                                                                                     |
 
 
 ### Milestone 2 - Android pre-MVP wallet Polkadot/Ethereum
@@ -191,8 +191,12 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
 | **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
 |      1. | Android Wallet App        | We will update the current android app to handle Polkadot and Ethereum transaction                                                                                                                                           |
-|      2. | upgrade pallets           | Mobile Registry and signers, will handle complete Polkadot and Ethereum transactions                                                                                                                                         |
-|      3. | light security screen     | We will provide a less secure but very comfortable to read secure screen version - this version will be used later with our adaptive security framework                                                                      |
+|      2. | Upgrade Mobile registry pallet | manage unsigned extrinsic with signed extension for the proxy mobile keys  |
+
+|      3. | upgrade mobile app   |  support for the Keystore/Keychain  and get rid of the hard coded keys                                                           |
+
+|      4. | light security screen     | We will provide a less secure but very comfortable to read secure screen version using fading with less blinking (link)  - this  non-screenshot proof version will be used later with our adaptive security framework                                                                      |
+
 
 ### Milestone 3 - iOS pre-MVP wallet Polkadot/Ethereum
 
@@ -224,9 +228,9 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 | **0d.** | Docker                             | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |
 | **0e.** | Article                            | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)                               |
 |      1. | Substrate Module - social recovery | We will integrate social recovery pallet with our chain                                                                                                                                                                      |
-|     2.a | Android Wallet                     | We will update android app to handle social recovery                                                                                                                                                                         |
-|     2.b | iOS Wallet                         | We will update iOS app to handle social recovery                                                                                                                                                                             |
-|      3. | Substrate Integritee chain         | POC to demonstrate instant onboarding and easy airdrop                                                                                                                                                                       |
+|     2.a | Android Wallet                     | We will provide MVP garde android app through Firbase  to handle social recovery                                                                                                                                                                         |
+|     2.b | iOS Wallet                         | We will provide MVP grade iOS app through TestFlight to handle social recovery                                                                                                                                                                             |
+|      3. | Substrate Integritee chain         | MVP Grade POC to demonstrate instant onboarding and easy airdrop                                                                                                                                                                       |
 |         |                                    |                                                                                                                                                                                                                              |
 
 ### Milestone 5 — Circuit Design Update/Optimization
