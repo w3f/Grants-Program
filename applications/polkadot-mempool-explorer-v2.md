@@ -128,36 +128,11 @@ We have fixed majority of the issues already.
 
   
 
-- generic tutorial on how to create a polkadot dashboard to fetch transactions using polkadot-js API.
+- series of tutorials on polkadot-js APIs
 
   
 
-Currently there's a lack of proper tutorials/education materials for anything polkadot-js API related stuff other than the official docs. I would like to create an extensive tutorial on how to consume polkadot-js API (more details below)
-
-  
-
-  
-
-***polkadot js API tutorials overview***
-
-  
-
-  
-
-target audience: folks with zero or intermediate knowledge of polkadot
-
-  
-
-- basic overview of polkadot architecture
-
-  
-
-- explanation of basic terms like extrinsics, events, state/rpc queries, query subscription
-
-  
-
-- design a step by step tutorial to create a transaction dashboard, by fetching the transactions in the API or UI if possible
-
+Currently there's a lack of proper tutorials/education materials for anything polkadot-js API related stuff other than the official docs. I would like to create an extensive tutorial on how to consume polkadot-js APIs (more details in Milestone section).
   
 
   
@@ -432,7 +407,7 @@ will move to a separate github repo once grant is approved
 |      1. | new UI for desktop and mobile view and fix existing issues|                                                                                                                                            |
 |      2. | enhance the APIs and fix existing issues                                                                                                                                                                        |
 |      3. | enable CI/CD | spin up a server instance for hosting the backend and deploying the frontend at github pages                                                                                                                                                     |
-  | 4a | polkadot js API tutorials             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to run sample examples |
+  | 4a | polkadot js API tutorials             | We will provide both **inline documentation** of the code and a series of **tutorial** that explains how to run sample examples |
 | 4b | Graphics/Illustrations | Illustrations wherever required to explain complex topics
 
 
