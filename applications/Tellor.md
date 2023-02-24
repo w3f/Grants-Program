@@ -37,20 +37,16 @@ The major components have been identified as follows, along with a description o
 
 ![PolkaTellor design](https://github.com/tellor-io/PolkaTellor/blob/main/public/PolkaTellorDesign.png)
 
-**Tellor Tributes (TRB) Token**
-The TRB (ERC-20) token is integral to the Tellor solution, requiring oracle data reporters to stake some amount of tokens to be able to report data on-chain in return for tips. A stake can be slashed via an on-chain data dispute or governance process. New tokens are also minted as time-based rewards for reporters, ensuring liveness. The Tellor 360 contract is the controller of the token.
-
-Rather than deploying the TRB token as a standard ERC-20 contract, it can instead be deployed as a native asset and interacted with via an ERC-20 interface, unlocking cross-chain interoperability.
 
 **Oracle  Contract**
-The main oracle contract which handles staking, reporting and slashing, which is controlled by the Governance contract. Oracle reporters are required to stake TRB tokens to ensure data integrity before reporting oracle data. Data is reported on-chain using a query identifier, a hash of an off-chain data specification, and a simple byte array representing the data. The Oracle contract also uses its own functionality to be provided with a current TRB/USD price, which is used to dynamically adjust the minimum stake amount.
+The main oracle contract which handles staking, reporting and slashing, which is controlled by the Governance contract. Oracle reporters are required to stake a token to ensure data integrity before reporting oracle data. Data is reported on-chain using a query identifier, a hash of an off-chain data specification, and a simple byte array representing the data. The Oracle contract also uses its own functionality to be provided with a current staking token price, which is used to dynamically adjust the minimum stake amount (to guarantee a minimum amount of security).
 
 The existing smart contract will need to be adapted to support staking by parachain, so that corresponding staking events/balances can be reported from the contract to oracle consumer parachains, effectively unlocking oracle reporters to begin reporting data to these consumer parachains directly.
 
 The revised Oracle contract will continue to provide existing functionality to the local smart contract parachain on which it is deployed, enabling other smart contracts deployed on the same chain to use the oracle solution as-is.
 
 **Governance Contract**
-Used to handle oracle data disputes, where a successful dispute results in the corresponding oracle data reporter having their stake slashed and distributed to the dispute initiator via the Oracle contract. Governance votes are split equally between TRB holders, reporters, users and the Tellor team: TRB holders are weighted by on-chain token balances, active reporters by non-transferrable ‘reporter tokens’ earned for each report, users by the number of tips and the team as a tie-breaker.
+Used to handle oracle data disputes, where a successful dispute results in the corresponding oracle data reporter having their stake slashed and distributed to the dispute initiator via the Oracle contract. Governance votes are split equally between the staking token holders, reporters, users and the Tellor team: the staking token holders are weighted by on-chain token balances, active reporters by non-transferrable ‘reporter tokens’ earned for each report they provide, users by the number of tips and the team as a tie-breaker.
 
 Data disputes for an oracle consumer parachain will originate on said parachain and then be reported into the Governance contract for dispute resolution. The existing Governance smart contract will therefore need to be adapted to support disputes by parachain, so that the result of disputes can be reported back to the corresponding oracle consumer parachain to take additional action.
 
@@ -67,12 +63,12 @@ The Using Tellor contract is incorporated into consumer smart contracts to acces
 **Parachain Integration Contract**
 A new lightweight smart contract to handle parachain registration and ease parachain integration from the Oracle and Governance contracts. Registration provides parachain-specific configuration and ensures that sensitive functionality can only be called by the corresponding consumer parachain ‘owner’ accounts. Helper functions will abstract the necessary call encodings for remote execution, keeping cross-chain messaging functionality separate from oracle and governance logic.
 
-Parachain registration could also require a TRB stake within the Oracle contract, further adding to the economic security of the oracle solution.
+Parachain registration could also require additional staking within the Oracle contract, further adding to the economic security of the oracle solution.
 
 **Tellor Pallet**
 An amalgamation of aspects of the functionality from the Oracle, AutoPay and Consumer contracts, enabling oracle functionality on any parachain secured by stake within the Oracle contract. Allows oracle data feed setup and funding as well as oracle data reporting and consumption, ensuring that all oracle data for a particular parachain is stored within its own local state.
 
-Oracle reporters must have staked the necessary TRB tokens for a parachain via the Oracle contract before they are able to start reporting on a consumer parachain. Oracle reporters earn rewards for reporting oracle data in the token of the parachain.
+Oracle reporters must have staked the necessary tokens for a parachain via the Oracle contract before they are able to start reporting on a consumer parachain. Oracle reporters earn rewards for reporting oracle data in the token of the parachain.
 
 Data disputes originate via the pallet on the consumer chain and require a dispute fee, typically 10% of stake amount and increasing with each round, to be locked before being reported to the Governance contract where they are voted on, locking an oracle reporter from reporting to the parachain until resolution.
 
@@ -115,7 +111,7 @@ The developers of Tellor have years of blockchain specific coding experience.
 
 ### Legal Structure
 
-- **Registered Address:** 118 N. Market Street.  Frederick, MD 21701
+- **Registered Address:** 118 N. Market Street Suite 110,  Frederick, MD 21701
 - **Registered Legal Entity:** Tellor Inc
 
 ### Team's experience
@@ -186,10 +182,11 @@ The smart contract structure for Tellor is finished for most EVM chains, but wil
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial**. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1 | Develop Controller contracts | We will provide a set of solidity smart contracts with the functionality described above  |
+| 1 | Develop Controller contracts | We will provide a set of solidity smart contracts with the functionality described above in the [Project Details](#project-details)  |
 | 2 | Develop Parachain integration contract| We will provide an integration contract |
-| 3 | Local testing| |
 
+
+### Milestone 2 — Create and test oracle pallet and complete documentation with usage examples
 
 - **Estimated Duration:** 2 months
 - **FTE:**  2
@@ -203,8 +200,8 @@ Details:  A new Substrate pallet will be required which includes the core oracle
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial**.                                                                             |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1 | Substrate Oracle pallet design and integration | We will provide the Substrate oracle pallet                                                                                                                     |
-| 2 | Testing the pallet and testing integration with projects and selected parachains| We will test full functionality of the system for interactions between the consumer chain and oracle pallet                                                     |
+| 1 | Substrate Oracle pallet design and integration | We will provide the Substrate oracle pallet |
+| 2 | Testing functionallity of the the pallet and testing integration with a mock project and selected parachains| We will test full functionality of the system for interactions between the consumer chain and oracle pallet (meaning test the functinallity between milestone 1 and 2 -  solidity contracts, pallet, XCM)|
 | 3 | Documentation/ Usage Examples| We will provide documenatation and usage examples for the system.                                                                                               |
 
 
