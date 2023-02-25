@@ -1,5 +1,5 @@
-# W3F Grant Proposal
-- **Project Name:** Native Bitcoin Vaults (NBV)
+# Native Bitcoin Vaults (NBV)
+
 - **Team Name:** Hashed Systems (Max Gravitt)
 - **Payment Address:** bc1qcqzspw5ykm7rv4ph8ahzynvp6jmfdp8hvwevpv6xaqq9wt79vlasygls3w (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

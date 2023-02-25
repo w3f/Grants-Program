@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Sup
 
-* **Project:** Sup
 * **Proposer:** [clearloop](https://github.com/clearloop)
 * **Payment Address:** 1NKWsqRaWZDNX17cuzfyykcAA317njqzSn
 

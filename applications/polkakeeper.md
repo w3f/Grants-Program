@@ -2,9 +2,8 @@
 
 ![](https://rampdefi.com/polkakeeper/digitalassets/polkakeeperlogo.png)
 
-# Open Grant Proposal
+# Polkakeeper
 
-- **Project Name:** Polkakeeper
 - **Team Name:** RAMP DEFI
 - **BTC Payment Address:** 1DQNr9EyYmoS5hbwRzQkfNrw5DS247cpF8
 - **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/200#issuecomment-897495999)
