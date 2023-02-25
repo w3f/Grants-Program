@@ -47,11 +47,11 @@ pub trait Tree<H: Hasher> {
 
     fn depth (&self) -> usize;
 
-    fn get_value(&self, index: usize) -> Result<Option<DBValue>, TreeError>;
+    fn value(&self, index: usize) -> Result<Option<DBValue>, TreeError>;
 
-    fn get_leaf(&self, index: usize) -> Result<Option<DBValue>, TreeError>;
+    fn leaf(&self, index: usize) -> Result<Option<DBValue>, TreeError>;
   
-    fn get_proof(&self, index: usize) -> Result<Option<Vec<usize, DBValue>>, TreeError>;
+    fn proof(&self, index: usize) -> Result<Option<Vec<usize, DBValue>>, TreeError>;
 }
 
 pub struct TreeDBMut<'a, H: Hasher> {
@@ -68,15 +68,47 @@ pub trait TreeMut<H: Hasher> {
 
     fn depth(&self) -> uszie;
 
-    fn get_value(&self, index: usize) -> Result<Option<DBValue>, TreeError>;
+    fn value(&self, index: usize) -> Result<Option<DBValue>, TreeError>;
 
-    fn get_leaf(&self, index: usize) -> Result<Option<DBValue>, TreeError>;
+    fn leaf(&self, index: usize) -> Result<Option<DBValue>, TreeError>;
   
-    fn get_proof(&self, index: usize) -> Result<Option<Vec<usize, DBValue>>, TreeError>;
+    fn proof(&self, index: usize) -> Result<Option<Vec<usize, DBValue>>, TreeError>;
 
-    fn insert_value(&mut self, index: usize, value: DBValue) -> Result<Option<DBValue>, TreeError>;
+    fn insert(&mut self, index: usize, value: DBValue) -> Result<Option<DBValue>, TreeError>;
+    
+    fn remove(&mut self, key: &[u8]) -> Result<Option<DBValue>, TreeError>;
   
     fn commit(&mut self);
+}
+
+pub trait SparseTree<H: Hasher> {
+    fn root(&self) -> &H::Out;
+
+    fn depth(&self) -> usize;
+
+    fn value(&self, key: &[u8]) -> Result<Option<DBValue>, TreeError>;
+
+    fn leaf(&self, key: &[u8]) -> Result<Option<H::Out>, TreeError>;
+
+    fn proof(&self, key: &[u8]) -> Result<Option<Vec<DBValue>>, TreeError>;
+}
+
+pub trait SparseTreeMut<H: Hasher> {
+    fn root(&mut self) -> &H::Out;
+
+    fn depth(&self) -> usize;
+
+    fn value(&self, key: &[u8]) -> Result<Option<DBValue>, TreeError>;
+
+    fn leaf(&self, key: &[u8]) -> Result<Option<H::Out>, TreeError>;
+
+    fn proof(&self, key: &[u8]) -> Result<Option<Vec<Node<H>>>, TreeError>;
+
+    fn insert(&mut self, key: &[u8], value: DBValue) -> Result<Option<DBValue>, TreeError>;
+
+    fn remove(&mut self, key: &[u8]) -> Result<Option<DBValue>, TreeError>;
+
+    fn commit(&mut self, key: &[u8]);
 }
 
 pub struct Recorder<H: Hasher> {
@@ -229,6 +261,8 @@ The project has not started yet.  We have defined the requirements and designed 
 - **FTE:**  2
 - **Costs:** 10,000 USD
 
+- **Estimated extension required** 2 weeks (as of 25/2/2023)
+
 | Number | Deliverable                | Specification                                                                                                                                                                                                                                 |
 | -----: |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0a. | License                    | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                          |
@@ -243,6 +277,8 @@ The project has not started yet.  We have defined the requirements and designed 
 - **Estimated Duration:** 2 month
 - **FTE:**  2
 - **Costs:** 15,000 USD
+
+- **Estimated extension required** 2 months (following completion of milestone 1)
 
 | Number | Deliverable                              | Specification                                                                                                                                                                                                                                 |
 | -----: |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
