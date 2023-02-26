@@ -56,6 +56,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [hack-ink](https://hack.ink/)             | [Slothunter](slothunter.md)                                                               | [GitHub](https://github.com/hack-ink)                                  | ☐          |        ☐         |      ☐     |
 | [Invers Inc](https://invers.tech/)             | [Zkwasm Rollups Transfer](zkwasm-rollups-transfer.md)                                                               | [GitHub](https://github.com/zero-network)                                  | ☐          |        ☐         |      ☐     |
 | [decentraDOT](https://decentradot.com/)             | [Cyclops Validator Dashboard](cyclops.md)                                                               | [GitHub](https://github.com/ArthurHoeke?tab=repositories)                                  | ☐          |        ☐         |      ☐     |
+| [Anwesh Nayak](https://github.com/muddlebee)             | [Mempool Dashboard - Version 2](polkadot-mempool-explorer-v2.md)                                                               | [GitHub](https://github.com/muddlebee)                                  | ☐          |        ☐         |      ☐     |
 
 
 ## 2022
