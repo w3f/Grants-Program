@@ -201,7 +201,7 @@ Details:  A new Substrate pallet will be required which includes the core oracle
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1 | Substrate Oracle pallet design and integration | We will provide the Substrate oracle pallet |
-| 2 | Testing functionallity of the the pallet and testing integration with a mock project and selected parachains| We will test full functionality of the system for interactions between the consumer chain and oracle pallet (meaning test the functinallity between milestone 1 and 2 -  solidity contracts, pallet, XCM)|
+| 2 | Tests and a guide for testing functionallity of the the pallet with integration of a mock project on selected parachains| We will provide tests and a guide to test cross functionality of the system for interactions between the EVM chain and consumer chain and oracle pallet (meaning test the functinallity between milestone 1 and 2 delivarable 1 -  solidity contracts, pallet, XCM)|
 | 3 | Documentation/ Usage Examples| We will provide documenatation and usage examples for the system.                                                                                               |
 
 
