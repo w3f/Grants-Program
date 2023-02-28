@@ -143,6 +143,8 @@ module.exports = {
           exclude: [
             'applications/application-template.md',
             'applications/example-project.md',
+            'applications/maintenance/maintenance-template.md',
+            'applications/application-template-research.md',
             'docs/RFPs/suggestion-template.md',
             '.docusaurus/**',
             '.github/**',

@@ -1,7 +1,7 @@
 # solidity-trie-verifier
 
 - **Team Name:** Polytope Labs
-- **Payment Address:** 0xC70ac55B07A070743555C5D12B263733eCae9f92 (Ethereum DAI)
+- **Payment Address:** 0x486cbad2d704bc76f8d0cdda6aa93c94d53297b9 (Ethereum DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
