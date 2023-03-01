@@ -1,7 +1,7 @@
 # Community Health Analytics and Benchmarking
 
 - **Team Name:** TogetherCrew
-- **Payment Address:** eth:0x6612213880f80b298aB66375789E8Ef15e98604E
+- **Payment Address:** eth:0x6612213880f80b298aB66375789E8Ef15e98604E (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
