@@ -91,4 +91,14 @@ For example:
 - Chart of applications by status (Not yet delivered / delivered first milestone / completed / terminated)
 
 
+### API
+
+- The web app should ideally separate frontend from backend logic, and publish an API to fetch the structured data.
+
+
+
+## Note
+
+The features proposed above represent an opinion on what the grant management webapp should do and look like,
+but are neither exhaustive nor strict requirements. Teams are welcome to propose their own design and vision for this product.
 
