@@ -83,7 +83,7 @@ For example:
 
 - Shows current deliveries pending evaluation.
 - Links to all relevant information and history.
-
+- Status of the delivery, submission date, evaluator, and if it's on stale.
 
 ### Stats
 
