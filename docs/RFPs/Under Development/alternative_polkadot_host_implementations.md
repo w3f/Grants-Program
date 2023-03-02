@@ -1,6 +1,6 @@
 # Alternative Polkadot Host Implementation
 
-* **Status:** Open
+* **Status:** [Under Development 1](https://github.com/LimeChain/java-host-research), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/hybrid_node_research.md) 
 * **Proposer:** [Noc2](https://github.com/Noc2)
 
 ## Project Description :page_facing_up: 
