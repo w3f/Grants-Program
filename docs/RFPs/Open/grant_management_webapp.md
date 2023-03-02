@@ -31,7 +31,7 @@ Therefore, the web application and the structure of our repositories can be re-u
 
 ## Existing prototype
 
-A quick an dirty prototype already exists for the application:
+A quick and dirty prototype already exists for the application:
 - [Backend](https://github.com/w3f/w3f_grants_backend)
 - [Frontend](https://github.com/w3f/w3f_grants_frontend)
 
