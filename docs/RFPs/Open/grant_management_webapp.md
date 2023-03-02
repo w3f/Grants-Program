@@ -98,8 +98,14 @@ For example:
 
 
 
-## Note
+## Additional Notes
 
-The features proposed above represent an opinion on what the grant management webapp should do and look like,
+- The features proposed above represent an opinion on what the grant management webapp should do and look like,
 but are neither exhaustive nor strict requirements. Teams are welcome to propose their own design and vision for this product.
 
+- Web3 Foundation's grants program should be just an example/first step. 
+Ideally, the tool (combining GitHub + website) can benefit other grant programs and on-chain treasuries.
+
+- Long term goals: 
+  * Oracles/pallets for treasury integration
+  * Using a decentralized alternative instead of github.
