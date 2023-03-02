@@ -152,14 +152,23 @@ Each portal has following elements:
 - **Server** - Back-end part of application. Applies some business logic + Communicate with Blockchain and Database to fetch/store data.
 - **Substrate node** - DApp that runs base business logic and contains DeSci pallets.
 
-[![photo-2023-02-23-12-17-50.jpg](https://i.postimg.cc/cLKFSQCS/photo-2023-02-23-12-17-50.jpg)](https://postimg.cc/ZWS8Pv67)
+[![photo-2023-03-02-12-55-37.jpg](https://i.postimg.cc/FzHgmZHr/photo-2023-03-02-12-55-37.jpg)](https://postimg.cc/dkgTjGCp)
 
 Common interfaces:
 
-- **Main Blockchain validator** - Substrate validator that provided telemetry/analytics/transactions for explorer.
-- **Transaction explorer** - Custom transaction explorer for the DeSci applications.
-- **MongoDB** - Offchain data storage. Holds Read Models to improve data access speed.
-- **File Storage** - configurable storage module to have an ability to send files to some place according to Admin choice.
+- Main Blockchain validator - Substrate validator that provided telemetry/analytics/transactions for explorer.
+- Transaction explorer - Custom transaction explorer for the DeSci applications.
+- MongoDB - Offchain data storage.
+- Stores sensitive data like users personal data
+- Stores read models
+- File Storage - S3 storage to hold NFT files and other content related to technology.
+
+Sensitive data protection:
+
+- As we build an application for EU countries we have to apply GDPR. To apply GDPR we will store User personal data in a Database that will be hosted in the EU region (Mongo Atlas). MongoDB already has an encryption mechanism: no one without a security key has no access to the database data.
+- Also it will store legal and other sensitive content on MongoDB.
+- Public project and technology data and references will store on ipfs/s3 and on-chain within related metadata.
+
 
 #### Data Model
 
@@ -182,7 +191,7 @@ Agenda:
    - Provides an interface to subscribe/create/validate ownership
 4. Proposal Pallet is used for implementing postponed transactions based on multi signatures.
 5. BIO Pallet: 
-   - Holds data about Users profiles
+   - Holds data about Users profiles (all personal data will store offchain, onchain only assessment score dynamics and metadata will be available)
    - Provides an interface to store/update User’s Bio.
 6. Membership Pallet - collective management of technology for DeSci
 7. Technology Collection - read model that holds public technology data to improve sorting/filtering performance
@@ -312,7 +321,7 @@ MVP includes basic Tech Assets Showcasing, Collaboration, Assessment functionali
 |      2. |Content pallet                                     | Content pallet that will provide secured uploading content related to Tech Asset includes functionalities: </br>1. Upload file related to technology; </br>2. View/Retrieve file; </br>3. Verify files by hash.
 |      3. |Agreement pallet                                   | Agreement pallet will include functionalities: </br>1. Add Agreement to the item; </br>2. Sign Agreement by multi-signatures; </br>3. Reject Agreement; </br>4. View Agreement.|
 |      4. |Proposal pallet                                    | Proposal pallet will include functionalities: </br>1. Request for multi-signature transaction; </br>2. Add postponed multi-signature transaction; </br>3. Confirm postponed transaction; </br>4. Reject postponed transaction.|
-|      5. |BIO pallet                                         | BIO pallet (pallet to holds bio of User onChain) will include functionalities: </br>1. View account info; </br>2. Add bio; </br>3. Edit bio.|
+|      5. |BIO pallet                                         | BIO pallet will include functionalities: </br>1. View account info; </br>2. Add bio; </br>3. Edit bio.|
 |      6. |UI pages for signing up, signing in/out            | UI pages for signing up, signing in/out which will allow to register user, create wallet, authorize wallet, authentificate wallet and log out     |
 |      7. |Substrate chain                                    | We will set up a stand alone test network to provide an ability test and validate ideas in the DeSci domain.      |
 
