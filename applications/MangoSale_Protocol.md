@@ -259,7 +259,7 @@ In the Substrate/Polkadot/Kusama ecosystem,  we have not found any similar produ
 
 ### Contact
 
-- **Contact Name:Jason Zhao** 
+- **Contact Name:** Jason Zhao 
 - **Contact Email:** MangoBOXLabs@gmail.com
 - **Website: mangobox.xyz**
 
