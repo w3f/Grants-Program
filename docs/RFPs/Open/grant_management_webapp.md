@@ -107,5 +107,5 @@ but are neither exhaustive nor strict requirements. Teams are welcome to propose
 Ideally, the tool (combining GitHub + website) can benefit other grant programs and on-chain treasuries.
 
 - Long term goals: 
-  * Oracles/pallets for treasury integration
+  * Oracles/pallets for treasury integration.
   * Using a decentralized alternative instead of github.
