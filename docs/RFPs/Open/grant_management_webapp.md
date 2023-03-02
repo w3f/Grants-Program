@@ -50,6 +50,7 @@ Also, these are just an option, and the RFP doesn't require building from these.
 - Filter
 
 For example:
+
 ![screenshot_grants_page](./img/grants_page.png)
 
 
