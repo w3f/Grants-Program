@@ -10,4 +10,4 @@ An overview of existing projects in the Web 3.0 Technology Stack along with broa
 
 Finally, you don't need to start your own project in order to be eligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project. See the [Maintenance Grants section](../maintenance.md) for more info.
 
-If you have a **good concept of the technical challenges** that your idea entails and would like feedback before applying, you can send us an [email](mailto:grants@web3.foundation) and tell us about it.
+If you have a **good concept of the technical challenges** that your idea entails and would like feedback/input before submitting it, you can send us an [email](mailto:grants@web3.foundation) and tell us about it.
