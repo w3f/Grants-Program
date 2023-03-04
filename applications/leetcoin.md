@@ -230,18 +230,18 @@ This milestone will allow for the creation and use of Ink! coding problems.
 This milestone will extend the problem compiler and problem sets as well as introduce new functionality related to
 different learning paths and in-depth analysis of hugely popular smart contracts.
 
-| Number | Deliverable                    | Specification                                                                                                                                             |
-|-------:|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                        | Apache 2.0                                                                                                                                                |
-|    0b. | Documentation                  | We will provide the documentation for the repository code as well as a tutorial for publishing/designing a user-generated coding problem and test suites. |
-|    0c. | Testing Guide                  | Best practices for developing problem sets, how to test them and a FAQ.                                                                                   |
-|    0d. | Article                        | Announcement blog post explaining the new educational modules on the platform.                                                                            |
-|     1. | Set Creator                    | Implement problem set curation and creation                                                                                                               |  
-|     2. | Problem Favouriting            | Allow users to favourite specific problems to easily reference later                                                                                      |  
-|     3. | Expand Online Judge            | Allow for problems written in Ink!, Rust and Go by extending compiler                                                                                     |  
-|     4. | Diversify Sets                 | Define and add more problems.                                                                                                                             |  
-|     5. | Badges                         | Award badges to specific users and educators that have hit specific achievements                                                                          |
-|     6. | Educational Page.              | List of awesome educational Ink! resources
+| Number | Deliverable                     | Specification                                                                                                                                             |
+|-------:|-------------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                         | Apache 2.0                                                                                                                                                |
+|    0b. | Documentation                   | We will provide the documentation for the repository code as well as a tutorial for publishing/designing a user-generated coding problem and test suites. |
+|    0c. | Testing Guide                   | Best practices for developing problem sets, how to test them and a FAQ.                                                                                   |
+|    0d. | Article                         | Announcement blog post explaining the new educational modules on the platform.                                                                            |
+|     1. | Set Creator                     | Implement problem set curation and creation                                                                                                               |  
+|     2. | Problem Favouriting             | Allow users to favourite specific problems to easily reference later                                                                                      |  
+|     3. | Expand Online Judge             | Allow for problems written in Ink!, Rust and Go by extending compiler                                                                                     |  
+|     4. | Diversify Sets                  | Define and add more problems.                                                                                                                             |  
+|     5. | Badges                          | Award badges to specific users and educators that have hit specific achievements                                                                          |
+|     6. | Page with educational resources | List of awesome educational Ink! resources
 
 ### Milestone 3 — Hiring Module
 
