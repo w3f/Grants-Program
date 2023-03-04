@@ -240,7 +240,8 @@ different learning paths and in-depth analysis of hugely popular smart contracts
 |     2. | Problem Favouriting            | Allow users to favourite specific problems to easily reference later                                                                                      |  
 |     3. | Expand Online Judge            | Allow for problems written in Ink!, Rust and Go by extending compiler                                                                                     |  
 |     4. | Diversify Sets                 | Define and add more problems.                                                                                                                             |  
-|     5. | Badges                         | Award badges to specific users and educators that have hit specific achievements                                                                          | 
+|     5. | Badges                         | Award badges to specific users and educators that have hit specific achievements                                                                          |
+|     6. | Educational Page.              | List of awesome educational Ink! resources
 
 ### Milestone 3 — Hiring Module
 
