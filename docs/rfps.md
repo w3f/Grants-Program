@@ -60,6 +60,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [Static-Analysis-for-Runtime-Pallets.md](RFPs/Open/Static-Analysis-for-Runtime-Pallets.md) | 🟢 | 06.02.2023 |  
 | [sub-consensus.md](RFPs/Open/sub-consensus.md) | 🟢 | 23.11.2021 |
 | [uncollateralized-stablecoin-research.md](RFPs/Implemented/uncollateralized-stablecoin-research.md) | 🔴 | 01.01.23 |
+| [uptane-for-substrate-design-and-scope.md](RFPs/Open/uptane-for-substrate-design-and-scope.md) | 🟢 | 04.03.2023 |
 | [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 🟢 | 07.01.2023 |
 | [validator-setup-maintenance.md](RFPs/Open/validator-setup-maintenance.md) | 🟢 | 23.11.2021 |
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 🟡 | 07.12.2022 |
