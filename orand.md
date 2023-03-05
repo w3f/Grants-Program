@@ -1,14 +1,24 @@
-# Title of the RFP Proposal
+# Orand - Allows randomness to be generated and fed to any smart contracts on any EVM compatible blockchain.
 
-* **Status:** Open (anyone is allowed to apply) / Closed (invited respondents only) / Implemented (finished)
-* **Proposer:** GitHub username
-* **Your Project(s):** [optional]: Link(s)
+* **Status:** Open (anyone is allowed to apply)
+* **Proposer:** chiro-hiro
+* **Your Project(s):** [optional]: https://github.com/orochi-network/sdk
 * **Projects you think this work could be useful for** [optional]: Link(s)
-* **Teams/People that could deliver the RFP** [optional]: Link(s)
+* **Teams/People that could deliver the RFP** [optional]: https://github.com/orochi-network/
 
 ## Project Description :page_facing_up: 
 
-Please describe exactly why you are proposing this RFP. Make sure to point out why it’s potentially useful for your project or other projects in the ecosystem.  
+**Verifiable randomness**: We’re using Verifiable Random Function (VRF) to generate randomness the process described here https://www.rfc-editor.org/rfc/rfc6979 . Curve secp256k1 was used to minimizing verification cost for smart contract on Ethereum.
+
+**Dispersity**: A distributed system with many participants/nodes will join to generate randomness by using Multi Party Computation (MPC).
+
+**Unpredictability**: A VRF will perform with the input is previous randomness and it’s also require half of participants to participate in MPC.
+
+**High throughput**: Game/application server could request randomness from the Orochi đRNG system. The result will be provided as soon as half of participants participate in the MPC.
+
+**Fault Proof**: If the game/application server tries to delay the feeding process to manipulate the result, a fault proof will be committed so sue the game server.
+
+**Multi-chain**: All EVM compatible blockchains can be supported.
 
 ## Deliverables :nut_and_bolt:
 
