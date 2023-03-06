@@ -58,6 +58,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [decentraDOT](https://decentradot.com/)                            | [Cyclops Validator Dashboard](cyclops.md)                                                              | [GitHub](https://github.com/ArthurHoeke?tab=repositories)            | ☐          |        ☒       |      ☐     |
 | [Anwesh Nayak](https://github.com/muddlebee)                       | [Mempool Dashboard - Version 2](polkadot-mempool-explorer-v2.md)                                       | [GitHub](https://github.com/muddlebee)                               | ☐          |        ☐       |      ☐     |
 | [Tellor Inc](https://tellor.io/)                       | [Tellor Oracle Protocol](Tellor.md)                                       | [GitHub](https://github.com/tellor-io/)                               | ☐          |        ☐       |      ☐     |
+| Jonathan Brown                       | [Hybrid Explorer](hybrid.md)                                       | [GitHub](https://github.com/acuity-social)                               | ☐          |        ☐       |      ☐     |
 
 
 ## 2022
