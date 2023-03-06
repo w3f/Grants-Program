@@ -85,7 +85,7 @@ We will implement two different proof systems(groth16 and plonk) separately to m
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 12,000 USD
+- **Costs:** 10,000 USD
 
 Implement groth16 pallet in Substrate and develop a tool which can let the proof of snarkjs(off-chain) verified by the bellman library(on-chain). In this way, We can make it convenient for developers to develop zkp applications using the groth16(Bellman is an excellent zkp lib, but it is easy to make mistakes when using bellman to develop circuits, and snarkjs can cooperate with circom to write circuit with few mistakes. So we combined them to make the development of zkp applications more safe and efficient). So far, we haven't seen any team do this, but we think it is very meaningful.
 
