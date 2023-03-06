@@ -94,12 +94,15 @@ The indexing component has value far beyond the Hybrid block explorer. Many Subs
 - [DotScan](https://dotscan.com/) - proprietary
 - [Blockchair](https://blockchair.com/polkadot) - proprietary
 - [Subscan](https://www.subscan.io/) - proprietary. Open source version is very basic with fully centralized database
+- [Polkadot Apps](https://polkadot.js.org/apps/) - open source and fully decentralized, but non-indexing
 - [Polkascan](https://explorer.polkascan.io/) - fully centralized database.
 - [Blockcoders ink! Explorer](https://ink-explorer.blockcoders.io/) - fully centralized database, focused on contracts
 - [Sirato ink! Explorer](https://github.com/web3labs/epirus-substrate) (previously Epirus) - fully centralized database, focused on contracts
 - [SubSquid](https://www.subsquid.io/) - fully centralized database
 - [SubQuery](https://subquery.network/) - fully centralized database
 - [Substrate Archive](https://github.com/paritytech/substrate-archive) - fully centralized database, unmaintained
+
+There are no known block explorers in other ecosystems that are indexing, and either fully decentralized or have a hybrid design like this one.
 
 
 ## Team :busts_in_silhouette:
