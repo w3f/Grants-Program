@@ -87,6 +87,7 @@ A major issue holding back the Substrate and Polkadot ecosystem is a high qualit
 
 The target audience is blockchain enthusiasts and developers. Eventually end-users should not need to know about block explorers, but this depends on dapps improving their user experience.
 
+The indexing component has value far beyond the Hybrid block explorer. Many Substrate applications will find a centralized event indexer extremely useful.
 
 #### Comparison to other Substrate explorers / indexers
 
@@ -167,12 +168,12 @@ Development has not started on the project, however the codebase will largely fo
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can index a Substrate node and query events. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Connect to Substrate chains | The indexer will be configurable to connect to any Substrate chain. |
+| 1. | Connect to Substrate chains | The indexer will be written in Rust and configurable to connect to any Substrate chain using the subxt library. |
 | 2. | Block syncing | As new blocks are produced, the indexer reads all events. Additionally, it will read events from existing blocks, starting at block 0. |
-| 3. | Index writing | All identifying parameters in events will be indexed in the database as described above. |
-| 4. | Status querying | It will be possible to query the current status of the indexer. This will include information about which chain is being indexed, indexing progress and last know block. |
+| 3. | Index writing | All identifying parameters in events will be indexed in the database using the sled library. |
+| 4. | Status querying | It will be possible to query the current status of the indexer via WSS. This will include information about which chain is being indexed, indexing progress and last know block. Queries will be handled via  tokio_tungstenite. |
 | 5. | Index querying | It will be possible to search via WSS for events with an identifier. |
-| 6. | Dapp | A rudimentary web interface will be developed to expose this functionality. |
+| 6. | Dapp | A rudimentary web interface will be developed to expose this functionality. This will be built using pnpm, vite, vue, vuetify & polkdadot.js .|
 
 ### Milestone 2 — Event Subscribing
 
