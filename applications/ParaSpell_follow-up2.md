@@ -100,7 +100,7 @@ The key areas are:
 
 UI is purposely designed to be as simple as possible. This guarantees, that all tasks can be done quickly and without extended searching. All necessary screens also feature notifications which will as a milestone explain be callback reactive. The loading screen is only present on the first application & network startup, once accessing the same screen after the application was loaded it will be skipped automatically. The screen serves to register necessary assets in parachain nodes. This is only required to be run once per network startup.
 
-SDK currently handles transfers to 42 compatible Parachains (ones that have xTokens pallet) ([Beta-pre-release ParaSpell SDK](https://github.com/paraspell/sdk/tree/beta-pre-release)) and also can transfer to both Relay chains. It is easy to construct calls as is but we want to make it even easier and more developer friendly. 
+SDK currently handles transfers to 42 compatible Parachains (all XCM Palletts) ([ParaSpell SDK](https://github.com/paraspell/sdk/)) and also can transfer to both Relay chains. It is easy to construct calls as is but we want to make it even easier and more developer friendly. 
 
 #### Technology Stack  💻️
 -   Vue.js
@@ -119,7 +119,7 @@ In Polkadot and Kusama ecosystem, there are few XCM related tools in development
 | Features | ParaSpell XCM SDK | Moonbeam XCM SDK |
 | -----: | ----------- | ------------- |
 | Number of packages user has to install | User needs to install only 1 package | User needs to install 2 packages |
-| Support for Parachains | Already integrated for every XCM compatible pallet Link to implementation [Beta-pre-release ParaSpell SDK](https://github.com/paraspell/sdk/tree/beta-pre-release)  | Every new node has to be added manually |
+| Support for Parachains | Already integrated for every XCM compatible pallet Link to implementation [ParaSpell SDK](https://github.com/paraspell/sdk/)  | Every new node has to be added manually |
 | Build pattern | Integrated as intuitive as possible | Integrated, not as intuitive to implement however |
 | Support for asset pallet operations | Integrated  | Not integrated |
 | Support for HRMP pallet operations | Integrated users can open & close HRMP channels on their local chain (Useful feature for devs) | Not integrated |
@@ -128,7 +128,7 @@ In Polkadot and Kusama ecosystem, there are few XCM related tools in development
 
 
 
-Unlike the already mentioned "Moonbeam XCM" platform ParaSpell provides UI enhancement that uses our XCM SDK and users can try/learn technology from it. ParaSpell also includes support for 42 Substrate Parachains ([Beta-pre-release ParaSpell SDK](https://github.com/paraspell/sdk/tree/beta-pre-release)) that have XCM pallets compared to Moonbeam XCM to which users have to implement compatible nodes manually. ParaSpell SDK only needs one package compared to Moonbeam XCM which has total of two. Compared to Moonbeam XCM which contains only XCM calls ParaSpell also contains calls that can open or close HRMP channels. We also include support for Parachains that have template pallet for XCM called polkadotXCM this pallet is a little harder to work with than xTokens, even more for inexperienced developers.
+Unlike the already mentioned "Moonbeam XCM" platform ParaSpell provides UI enhancement that uses our XCM SDK and users can try/learn technology from it. ParaSpell also includes support for 42 Substrate Parachains ([ParaSpell SDK](https://github.com/paraspell/sdk/) that have XCM pallets compared to Moonbeam XCM to which users have to implement compatible nodes manually. ParaSpell SDK only needs one package compared to Moonbeam XCM which has total of two. Compared to Moonbeam XCM which contains only XCM calls ParaSpell also contains calls that can open or close HRMP channels. We also include support for Parachains that have template pallet for XCM called polkadotXCM this pallet is a little harder to work with than xTokens, even more for inexperienced developers.
 
 Another comparison worth mentioning is UI vs Morph which is also enhancement of XCM UI Transfer tool
 | Features | ParaSpell XCM UI | Morph |
