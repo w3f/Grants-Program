@@ -79,7 +79,7 @@ We will implement two different proof systems(groth16 and plonk) separately to m
 
 - **Total Estimated Duration:** 2.5 months
 - **Full-Time Equivalent (FTE):**  1FTE
-- **Total Costs:** 29,000 USD
+- **Total Costs:** 27,000 USD
 
 ### Milestone 1
 
