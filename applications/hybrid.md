@@ -210,7 +210,7 @@ Development has not started on the project, however the codebase will largely fo
 
 ## Future Plans
 
-- hosting - The project needs to host indexes for all major Substrate chains, and to host the app itself.
+- hosting - The project needs to host indexes for all major Substrate chains. The frontend can be hosted as a traditional website and on IPFS.
 
 - improve dapp - explore how the event index can be used to better display the richness of the Polkadot ecosystem.
 
