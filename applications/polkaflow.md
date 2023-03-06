@@ -2,7 +2,7 @@
 
 - **Team Name:** justmert
 - **Payment Address:** [0xf5412558d977915D56d8B4d3773871142d379E74](https://etherscan.io/address/0xf5412558d977915D56d8B4d3773871142d379E74) (USDC, Ethereum (ERC20))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
@@ -110,7 +110,7 @@ Develops ecosystem tools and applications with various tech stacks. AAVE and Fil
 
 ## Development Status :open_book:
 
-PolkaFlow is already deployed on Vercel and can be accessed via `polkaflow.vercel.app`. The project is currently in the MVP stage with Milestone 1 completed. Initially 17 repositories are added to the platform because of the demo purposes. After milestone 2, the project will have more repositories curated by me (or requests from the DOT Team) and the more can be added by the DOT community via Submit button in the app.
+PolkaFlow is already deployed on Vercel and can be accessed via `polkaflow.vercel.app`. The project is currently in the MVP stage with Milestone 1 completed. Initially 17 repositories are added to the platform because of the demo purposes. After the approve, the project will have more repositories curated by me (or requests from the DOT Team) and the more can be added by the DOT community via Submit button in the app.
 
 - **Website:** https://polkaflow.vercel.app/
 - **Github (Frontend):** https://github.com/justmert/eco-flow-frontend
@@ -120,15 +120,15 @@ PolkaFlow is already deployed on Vercel and can be accessed via `polkaflow.verce
 ## Development Roadmap :nut_and_bolt:
 ### Overview
 
-- **Total Estimated Duration:** 4 months
+- **Total Estimated Duration:** 1.5 months
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 28,500 USD
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 - MVP
 
 - **Estimated duration:** 1.5 month
 - **FTE:**  1 FTE
-- **Costs:** 8,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -156,50 +156,9 @@ PolkaFlow is already deployed on Vercel and can be accessed via `polkaflow.verce
 | 18. | Integrate: Google Analytics | Track user engagement and adapt and improve the platform accordingly. |
 
 
-### Milestone 2 — Deploy
-
-- **Estimated Duration:** 2 weeks
-- **FTE:**  1 FTE
-- **Costs:** 3,500 USD
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1. | Deploy | Deploy backend to a cloud instance provider |
-| 2. | Schedule Backend | Fetch and update project data from the Github APIs on a regular basis (e.g. every 30 minutes). |
-| 4. | Domain | Change domain name for the PolkaFlow to `polkaflow.xyz` |
-
-
-### Milestone 3 — Expand 1
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1 FTE
-- **Costs:** 8,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1. | Feature: Project Health Score | Designed to provide users with a comprehensive overview of a project's overall health by evaluating a variety of metrics. This score will help users identify projects that have potential and are worth investing time and resources into, as well as flagging projects that are struggling or have a high risk of abandonment.<br/> To calculate the project health score, we will consider a variety of metrics, including but not limited to: commit frequency and consistency, pull request acceptance rate, issue response time and resolution rate, contributor activity and diversity, overall project activity and engagement. Each of these metrics will be assigned a weighted value based on their importance, and the resulting score will be displayed on the project detail page alongside other key information. |
-| 2. | Feature: Twitter Data | With Twitter data of the project, we can gain more insights and metrics about the open source projects listed in the platform. This integration will provide users with a variety of additional metrics, such as the number of followers, number of retweets, and number of likes, thus engagement rate. It will help users to evaluate the popularity and visibility of projects on Twitter and identify projects that are worth investing time and resources into. |
-| 2. | Feature: Categorization | This feature will allow for the categorization of projects based on various criteria within the DOT ecosystem. This feature is essential because of the vast size of the DOT ecosystem, making it difficult for users to locate projects based on their specific interests. The projects will be categorized on their underlying protocol, such as Polkadot, Substrate, Kusama, etc., as well as further categories like DeFi, DEX, and others. This categorization information will be obtained through a Typeform questionnaire that will be presented to project submitters during the submission process.<br/>The categorization feature will make it easier for users to find projects that align with their interests and investment strategies, enhancing the user experience on PolkaFlow. Additionally, this feature will allow developers to gain more visibility for their projects, as projects will be more easily discoverable by interested users. |
-
-
-
-### Milestone 4 — Expand 2
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1 FTE
-- **Costs:** 8,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1. | Feature: User Profiles | Create user Github integration that allow users to showcase their Github contributions in the DOT ecosystem. User profiles could show users' Github statistics, such as their total commits, pull requests, and issues, as well as their recent activity in the DOT projects.<br/>The feature could provide a way for developers to showcase their contributions to the DOT ecosystem and build their personal brand. Users could use their profiles to discover new projects to work on, and showcase their skills. Besides, integration with Github will enable project ownership in the platform. |
-| 2. | Feature: Leaderboards | Improve upon top contributors section to provide leaderboard system that allow users to compete with other developers in the DOT ecosystem based on Github activity. This provide an incentive for developers to contribute more to the DOT ecosystem and showcase their skills. The leaderboard system could track metrics such as the number of commits, pull requests, issues resolved in DOT ecosystem etc.|
-| 3. | Feature: Bounty Issues | With user profiles are integrated through the platform, projects can offer bounties for specific Github issues. Developers could view a list of available bounty issues, which would include information on the bounty amount, the issue details, and the requirements for resolving the issue. Developers could then claim a bounty issue and work on resolving it (through Github). The transaction after the developer completes the bounty, will resolve outside the platform.<br/>The feature could help to incentivize developers to work on high-priority issues in the DOT ecosystem and provide a way for developers to earn money for their contributions. Projects could use this feature to attract new contributors and accelerate the development of their projects. Additionally, this feature could help to connect developers with projects that align with their interests and expertise, leading to more effective collaboration and faster issue resolution.|
-
-
 ## Future Plans
 
-In the short term, we intend to use PolkaFlow to provide a comprehensive and user-friendly platform for developers and ecosystem users to track and analyze projects in the DOT ecosystem. We will continuously enhance and update the platform to ensure that it is the go-to resource for up-to-date information on DOT projects. This includes adding new features as described in the expand milestones.
+In the short term, we intend to use PolkaFlow to provide a comprehensive and user-friendly platform for developers and ecosystem users to track and analyze projects in the DOT ecosystem. We will continuously enhance and update the platform to ensure that it is the go-to resource for up-to-date information on DOT projects. 
 
 In the long term, our team's plan is to continue supporting and improving PolkaFlow to meet the evolving needs of the DOT community. This includes incorporating additional metrics and data sources to provide more detailed insights into projects. Besides, if the platform is well-received by the community, and gains traction, we are going to open a Twitter account for PolkaFlow to engage with the community and promote top open-source projects on the DOT ecosystem. 
 
