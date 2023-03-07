@@ -120,13 +120,13 @@ PolkaFlow is already deployed on Vercel and can be accessed via `polkaflow.verce
 ## Development Roadmap :nut_and_bolt:
 ### Overview
 
-- **Total Estimated Duration:** 1.5 months
+- **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 10,000 USD
 
 ### Milestone 1 - MVP
 
-- **Estimated duration:** 1.5 month
+- **Estimated duration:** 2 month
 - **FTE:**  1 FTE
 - **Costs:** 10,000 USD
 
@@ -152,9 +152,11 @@ PolkaFlow is already deployed on Vercel and can be accessed via `polkaflow.verce
 | 14. | Frontend: Project Page<br/>Backend: Data Process | Implement Recent Stargazing Activity (Line Chart) for visualizing recent stargazing activity over time. |
 | 15. | Frontend: Project List Page | Create the Project List page that lists the DOT ecosystem projects in order of their respective stargazing counts. |
 | 16. | Integrate: Algolia | Enhance the search functionality of the platform. |
+| 19. | Frontend: Categorization | The projects will be categorized on their underlying protocol, such as Polkadot, Substrate, Kusama, etc., as well as further categories like DeFi, DEX, and others. |
 | 17. | Integrate: Typeform | Allow ecosystem users to suggest new projects for PolkaFLow |
 | 18. | Integrate: Google Analytics | Track user engagement and adapt and improve the platform accordingly. |
-
+| 19. | Backend: Schedule | Implement scheduling mechanism to fetch and update every project data from the Github APIs on a regular basis (e.g. every 30 minutes). |
+| 20. | Frontend: UX & UI | Improve the UX and UI of the platform. Increase responsiveness, add animations, enhance user interaction, etc. |
 
 ## Future Plans
 
