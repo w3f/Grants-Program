@@ -22,7 +22,7 @@ const FeatureList = [
   {
     title: 50,
     description: (
-      <>in countries
+      <>countries
       </>
     ),
   },
