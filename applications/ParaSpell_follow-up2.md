@@ -198,7 +198,7 @@ Sidenote: We have recently developed article about Polkadot & Paraspell called 
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 1 FTE
-- **Total Costs:** 10 000 USD
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 - Phase 3, make XCM SDK more efficient, add new nodes & rework Localhost network in UI
 
