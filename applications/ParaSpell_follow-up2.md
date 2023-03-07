@@ -204,7 +204,7 @@ Sidenote: We have recently developed article about Polkadot & Paraspell called 
 
 - **Estimated duration:** 2 months ⌛️
 - **FTE:**  1
-- **Costs:** 10 000 USD 💰️
+- **Costs:** 10,000 USD 💰️
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
