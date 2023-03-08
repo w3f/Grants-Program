@@ -14,7 +14,7 @@ All the grant applications, approvals, deliveries and evaluations are pushed int
 so that all processes are public and transparent.
 
 You can find all the details about how applications and deliveries are submitted in the [Grants Program Website](https://w3f.github.io/Grants-Program/),
-or also by browsing the 2 repositories above.
+or by browsing the two repositories above.
 
 
 ## Project Description :page_facing_up: 
