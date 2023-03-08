@@ -120,7 +120,9 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
 | 1. | Contacts list feature | We will develop a contact list feature allowing users to tie real names to contact’s wallet addresses and store them encrypted in a blockchain. Encryption and decryption will be carried out on the frontend. | 
-| 2. | Web messenger dapp MVP | A web messenger dapp (written on JS) with authorization via Polkadot.js keys, p2p messaging using developed DOTRTC library and contacts list: a user will be able to start a conversation with someone on his contacts list. | 
+| 2. | Web messenger dapp MVP | A web messenger dapp (written on JS) with authorization via Polkadot.js keys, p2p messaging using developed DOTRTC library and contacts list: a user will be able to start a conversation with someone on his contacts list. A web dapp MVP mockup is shouwn below and the basic user logic is as follows. To establish a chat User A sends a short 1st message to User B (limited to 50 symbols as it is written into the blockchain). This message is sent with the connection request. When User B is on-line he receives this message with connection request and accepts it: automatically for users on his contact list and manually for requests from unknown users (connection request can be declined as well).| 
+
+![Diffy_chat mockup](https://user-images.githubusercontent.com/126072104/223709096-ccec2425-f3ac-4c8f-853f-d3656a8c29c5.jpg)
 
 ## Future Plans
 
