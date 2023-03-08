@@ -6,7 +6,7 @@
 
 ## Context
 
-Web3 Foundation manages grant applications and deliveries in 2 github repositories:
+Web3 Foundation manages grant applications and deliveries in two github repositories:
 * [Grants](https://github.com/w3f/Grants-Program)
 * [Deliveries](https://github.com/w3f/Grant-Milestone-Delivery)
 
