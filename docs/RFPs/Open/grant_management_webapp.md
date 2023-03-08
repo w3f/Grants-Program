@@ -20,8 +20,7 @@ or by browsing the two repositories above.
 ## Project Description :page_facing_up: 
 
 The objective of this RFP is a web application that publishes all the information contained in 
-the grants repositories in a way that facilitates navigation for the grant team itself primarily, but also
-to any other interested party.
+the W3F grants repositories in a way that facilitates easier navigation for the grants committee. Though the software would initially be used for the W3F Grants Program, any interested third parties would ideally be able to utilize the application for their own grants program. 
 
 By providing an API, it will also allow to pull the data in a structured way and make it easy to calculate statistics or track different metrics.
 
