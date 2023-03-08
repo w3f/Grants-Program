@@ -39,6 +39,8 @@ Our solution consists of using the RPC API to receive an incoming file. Then gen
 
 When the TDS IPFS off-chain worker is invoked, it fetches the file from the off-chain storage and adds it to the local IPFS node. At last we need to update the status of the CID on chain to "Done". A running IPFS node and communication logic was implemented in Milestone 1 and 2. So this project will focus on the off-chain storage usage implementation with an RPC API.
 
+After implementing the RPC API, another optimisation should be implemented. This optimisation will focus on handling InputStreams as input parameters of the RPC API to have a better handling of large input files.
+
 ### Ecosystem Fit
 
 The implementation helps people using IPFS with Substrate, this is a common scenario.
@@ -105,65 +107,58 @@ You can find the current project here:
 
 ## Development Roadmap :nut_and_bolt:
 
-(!)(!)(!)
+The project is split into two Milestones. The first Milestone will include the implementation of the RPC API. Afterwards we are going to focus on accepting InputStreams as input parameter for the RPC API. Please check the details below.
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 2 Months
+- **Full-Time Equivalent (FTE):** 2
+- **Total Costs:** 66,000 DAI
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 - RPC API
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 1 Month
+- **FTE:** 2
+- **Costs:** 33,000 DAI
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
-|  Number | Deliverable               | Specification                                                                                                                                                                                                                                 |
-| ------: | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                   | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                          |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
-| **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
-|     0e. | Article                   | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)                                                |
-|      1. | Substrate module: X       | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.)                                                      |
-|      2. | Substrate module: Y       | The Y Substrate module will...                                                                                                                                                                                                                |
-|      3. | Substrate module: Z       | The Z Substrate module will...                                                                                                                                                                                                                |
-|      4. | Substrate chain           | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible)                                                                                                            |
-|      5. | Library: ABC              | We will deliver a JS library that will implement the functionality described under "ABC Library"                                                                                                                                              |
-|      6. | Smart contracts: ...      | We will deliver a set of ink! smart contracts that will...                                                                                                                                                                                    |
+|  Number | Deliverable                                        | Specification                                                                                                                                                                                                                                                                                                                                                                      |
+| ------: | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                                            | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                                                                                                                                                               |
+| **0b.** | Documentation                                      | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                                                                      |
+| **0c.** | Testing and Testing Guide                          | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                                    |
+| **0d.** | Docker                                             | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                                                      |
+|      1. | Substrate RPC API                                  | We will implement and describe a RPC API that takes bytes of a file and metadata in JSON as input parameter. After retrieving the file and metadata, an IPFS CID is generated locally. Together with the CID, the file is stored in the off-chain storage.                                                                                                                         |
+|      2. | Substrate Extrinsic to store CID (TDS IPFS Pallet) | An extrinsic method is added to store a CID with metadata and a status. The status can at least be "In Progress", "Error" or "Done". This extrinsic is called by the RPC API after successfully retrieving a file. In this step, the file is not stored on chain!                                                                                                                  |
+|      3. | Substrate Off-Chain Worker (TDS IPFS Pallet)       | The off-chain worker is fetching the uploaded files from the off-chain storage and adds those to IPFS. For this step, the local embedded IPFS node is used. After successfully adding the file and checking, that the file is available in the IPFS network, the status for the CID on chain is set to "Done". To update the status, another extrinsic method needs to be created. |
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 - InputStreams
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated Duration:** 1 Month
+- **FTE:** 2
+- **Costs:** 33,000 DAI
 
-...
+|  Number | Deliverable                              | Specification                                                                                                                                                                                                                                                                                                                        |
+| ------: | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **0a.** | License                                  | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                                                                                                                 |
+| **0b.** | Documentation                            | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                        |
+| **0c.** | Testing and Testing Guide                | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                      |
+| **0d.** | Docker                                   | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                        |
+|     0e. | Article                                  | We will write and publish a Medium article to spread the word and give developers an introduction to the project and how to use it.                                                                                                                                                                                                  |
+|      1. | Research                                 | A research needs to take place on how to use InputStreams with RPCs. There are several approaches that need to be checked. In this first part a POC mock implementation will be created.                                                                                                                                             |  |
+|      2. | Substrate RPC API accepting InputStreams | The existing RPC API for uploading files will be refactored to allow handling of InputStreams. The idea is to perform actions on every retrieved chunk of the stream instead of handling the whole file at once. This should allow clients to add huge files to IPFS via Substrate without having performance issues and high costs. |
+|      3. | Tutorial                                 | After the implementation of MS1 and 2, a video tutorial is created and published to explain developers how the achieved implementation can help in other Substrate applications. Besides the video tutorial, the tutorial will be provided in text form as step-by-step guide.                                                       |
 
 
 ## Future Plans
 
-Please include here
+We are willing to continue developing the IPFS integration for Substrate based blockchains, as we need this for our own products and are happy to share this with other developers.
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
 
-## Referral Program (optional) :moneybag: 
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+**How did you hear about the Grants Program?** 
+This is our third application for an open-source project to innovate the web3 Ecosystem.
