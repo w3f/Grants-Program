@@ -1,28 +1,37 @@
 "use strict";
-exports.id = 71;
-exports.ids = [71];
+exports.id = 316;
+exports.ids = [316];
 exports.modules = {
 
-/***/ 11071:
+/***/ 96316:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "diagram": () => (/* binding */ diagram)
 /* harmony export */ });
-/* harmony import */ var _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(51508);
+/* harmony import */ var _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(87115);
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(59373);
-/* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(91619);
-/* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(12281);
-/* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(7201);
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(30381);
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(91619);
+/* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(12281);
+/* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(7201);
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27484);
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17967);
 /* harmony import */ var dompurify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20683);
 /* harmony import */ var dagre_d3_es_src_dagre_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(70277);
 /* harmony import */ var dagre_d3_es_src_graphlib_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(45625);
 /* harmony import */ var dagre_d3_es_src_graphlib_json_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(39354);
 /* harmony import */ var dagre_d3_es__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(91518);
+/* harmony import */ var dayjs_plugin_isoWeek_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(59542);
+/* harmony import */ var dayjs_plugin_isoWeek_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(dayjs_plugin_isoWeek_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var dayjs_plugin_customParseFormat_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(10285);
+/* harmony import */ var dayjs_plugin_customParseFormat_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(dayjs_plugin_customParseFormat_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var dayjs_plugin_advancedFormat_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(28734);
+/* harmony import */ var dayjs_plugin_advancedFormat_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(dayjs_plugin_advancedFormat_js__WEBPACK_IMPORTED_MODULE_10__);
+
+
+
 
 
 
@@ -266,6 +275,7 @@ var parser = function() {
           throw new Error(str);
         }
       },
+      // resets the lexer, sets new input
       setInput: function(input, yy) {
         this.yy = yy || this.yy || {};
         this._input = input;
@@ -285,6 +295,7 @@ var parser = function() {
         this.offset = 0;
         return this;
       },
+      // consumes and returns one char from the input
       input: function() {
         var ch = this._input[0];
         this.yytext += ch;
@@ -305,6 +316,7 @@ var parser = function() {
         this._input = this._input.slice(1);
         return ch;
       },
+      // unshifts one char (or a string) into the input
       unput: function(ch) {
         var len = ch.length;
         var lines = ch.split(/(?:\r\n?|\n)/g);
@@ -330,10 +342,12 @@ var parser = function() {
         this.yyleng = this.yytext.length;
         return this;
       },
+      // When called from action, caches matched text and appends it on next action
       more: function() {
         this._more = true;
         return this;
       },
+      // When called from action, signals the lexer that this rule fails to match the input, so the next matching rule (regex) should be tested instead.
       reject: function() {
         if (this.options.backtrack_lexer) {
           this._backtrack = true;
@@ -346,13 +360,16 @@ var parser = function() {
         }
         return this;
       },
+      // retain first n characters of the match
       less: function(n) {
         this.unput(this.match.slice(n));
       },
+      // displays already matched input, i.e. for error messages
       pastInput: function() {
         var past = this.matched.substr(0, this.matched.length - this.match.length);
         return (past.length > 20 ? "..." : "") + past.substr(-20).replace(/\n/g, "");
       },
+      // displays upcoming input, i.e. for error messages
       upcomingInput: function() {
         var next = this.match;
         if (next.length < 20) {
@@ -360,11 +377,13 @@ var parser = function() {
         }
         return (next.substr(0, 20) + (next.length > 20 ? "..." : "")).replace(/\n/g, "");
       },
+      // displays the character position where the lexing error occurred, i.e. for error messages
       showPosition: function() {
         var pre = this.pastInput();
         var c = new Array(pre.length + 1).join("-");
         return pre + this.upcomingInput() + "\n" + c + "^";
       },
+      // test the lexed token: return FALSE when not a match, otherwise return token
       test_match: function(match, indexed_rule) {
         var token, lines, backup;
         if (this.options.backtrack_lexer) {
@@ -427,6 +446,7 @@ var parser = function() {
         }
         return false;
       },
+      // return next match in input
       next: function() {
         if (this.done) {
           return this.EOF;
@@ -477,6 +497,7 @@ var parser = function() {
           });
         }
       },
+      // return next match that has a token
       lex: function lex() {
         var r = this.next();
         if (r) {
@@ -485,9 +506,11 @@ var parser = function() {
           return this.lex();
         }
       },
+      // activates a new lexer condition state (pushes the new lexer condition state onto the condition stack)
       begin: function begin(condition) {
         this.conditionStack.push(condition);
       },
+      // pop the previously active lexer condition state off the condition stack
       popState: function popState() {
         var n = this.conditionStack.length - 1;
         if (n > 0) {
@@ -496,6 +519,7 @@ var parser = function() {
           return this.conditionStack[0];
         }
       },
+      // produce the lexer rule set which is active for the currently active lexer condition state
       _currentRules: function _currentRules() {
         if (this.conditionStack.length && this.conditionStack[this.conditionStack.length - 1]) {
           return this.conditions[this.conditionStack[this.conditionStack.length - 1]].rules;
@@ -503,6 +527,7 @@ var parser = function() {
           return this.conditions["INITIAL"].rules;
         }
       },
+      // return the currently active lexer condition state; when an index argument is provided it produces the N-th previous condition state, if available
       topState: function topState(n) {
         n = this.conditionStack.length - 1 - Math.abs(n || 0);
         if (n >= 0) {
@@ -511,9 +536,11 @@ var parser = function() {
           return "INITIAL";
         }
       },
+      // alias for begin(condition)
       pushState: function pushState(condition) {
         this.begin(condition);
       },
+      // return the number of states currently on the stack
       stateStackSize: function stateStackSize() {
         return this.conditionStack.length;
       },
@@ -602,16 +629,16 @@ let currentTaskId = 0;
 const sections = [];
 const tasks = [];
 const rawTasks = [];
-const getCommonDb = () => _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.j;
+const getCommonDb = () => _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.j;
 const parseDirective = (statement, context, type) => {
-  (0,_mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.k)(globalThis, statement, context, type);
+  (0,_mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.k)(globalThis, statement, context, type);
 };
 const clear = function() {
   sections.length = 0;
   tasks.length = 0;
   currentSection = "";
   rawTasks.length = 0;
-  (0,_mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.m)();
+  (0,_mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.m)();
 };
 const addSection = function(txt) {
   currentSection = txt;
@@ -638,6 +665,7 @@ const addTask = function(period, length, event) {
     type: currentSection,
     task: period,
     score: length ? length : 0,
+    //if event is defined, then add it the events array
     events: event ? [event] : []
   };
   rawTasks.push(rawTask);
@@ -680,16 +708,16 @@ const timelineDb = {
 };
 const db = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  getCommonDb,
-  parseDirective,
-  clear,
+  addEvent,
   addSection,
+  addTask,
+  addTaskOrg,
+  clear,
+  default: timelineDb,
+  getCommonDb,
   getSections,
   getTasks,
-  addTask,
-  addEvent,
-  addTaskOrg,
-  default: timelineDb
+  parseDirective
 }, Symbol.toStringTag, { value: "Module" }));
 const MAX_SECTIONS = 12;
 const drawRect = function(elem, rectData) {
@@ -984,11 +1012,11 @@ const setConf = function(cnf) {
   });
 };
 const draw = function(text, id, version, diagObj) {
-  const conf2 = (0,_mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.g)();
+  const conf2 = (0,_mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.g)();
   const LEFT_MARGIN = conf2.leftMargin ? conf2.leftMargin : 50;
   diagObj.db.clear();
   diagObj.parser.parse(text + "\n");
-  _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("timeline", diagObj.db);
+  _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("timeline", diagObj.db);
   const securityLevel = conf2.securityLevel;
   let sandboxElement;
   if (securityLevel === "sandbox") {
@@ -999,10 +1027,10 @@ const draw = function(text, id, version, diagObj) {
   svg.append("g");
   const tasks2 = diagObj.db.getTasks();
   const title = diagObj.db.getCommonDb().getDiagramTitle();
-  _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("task", tasks2);
+  _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("task", tasks2);
   svgDraw.initGraphics(svg);
   const sections2 = diagObj.db.getSections();
-  _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("sections", sections2);
+  _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("sections", sections2);
   let maxSectionHeight = 0;
   let maxTaskHeight = 0;
   let depthY = 0;
@@ -1022,12 +1050,12 @@ const draw = function(text, id, version, diagObj) {
       maxHeight: maxSectionHeight
     };
     const sectionHeight = svgDraw.getVirtualNodeHeight(svg, sectionNode, conf2);
-    _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("sectionHeight before draw", sectionHeight);
+    _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("sectionHeight before draw", sectionHeight);
     maxSectionHeight = Math.max(maxSectionHeight, sectionHeight + 20);
   });
   let maxEventCount = 0;
   let maxEventLineLength = 0;
-  _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("tasks.length", tasks2.length);
+  _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("tasks.length", tasks2.length);
   for (const [i, task] of tasks2.entries()) {
     const taskNode = {
       number: i,
@@ -1038,7 +1066,7 @@ const draw = function(text, id, version, diagObj) {
       maxHeight: maxTaskHeight
     };
     const taskHeight = svgDraw.getVirtualNodeHeight(svg, taskNode, conf2);
-    _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("taskHeight before draw", taskHeight);
+    _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("taskHeight before draw", taskHeight);
     maxTaskHeight = Math.max(maxTaskHeight, taskHeight + 20);
     maxEventCount = Math.max(maxEventCount, task.events.length);
     let maxEventLineLengthTemp = 0;
@@ -1056,8 +1084,8 @@ const draw = function(text, id, version, diagObj) {
     }
     maxEventLineLength = Math.max(maxEventLineLength, maxEventLineLengthTemp);
   }
-  _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("maxSectionHeight before draw", maxSectionHeight);
-  _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("maxTaskHeight before draw", maxTaskHeight);
+  _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("maxSectionHeight before draw", maxSectionHeight);
+  _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("maxTaskHeight before draw", maxTaskHeight);
   if (sections2 && sections2.length > 0) {
     sections2.forEach((section) => {
       const sectionNode = {
@@ -1068,10 +1096,10 @@ const draw = function(text, id, version, diagObj) {
         padding: 20,
         maxHeight: maxSectionHeight
       };
-      _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("sectionNode", sectionNode);
+      _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("sectionNode", sectionNode);
       const sectionNodeWrapper = svg.append("g");
       const node = svgDraw.drawNode(sectionNodeWrapper, sectionNode, sectionNumber, conf2);
-      _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("sectionNode output", node);
+      _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("sectionNode output", node);
       sectionNodeWrapper.attr("transform", `translate(${masterX}, ${sectionBeginY})`);
       masterY += maxSectionHeight + 50;
       const tasksForSection = tasks2.filter((task) => task.section === section);
@@ -1111,14 +1139,14 @@ const draw = function(text, id, version, diagObj) {
     );
   }
   const box = svg.node().getBBox();
-  _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("bounds", box);
+  _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("bounds", box);
   if (title) {
     svg.append("text").text(title).attr("x", box.width / 2 - LEFT_MARGIN).attr("font-size", "4ex").attr("font-weight", "bold").attr("y", 20);
   }
   depthY = hasSections ? maxSectionHeight + maxTaskHeight + 150 : maxTaskHeight + 100;
   const lineWrapper = svg.append("g").attr("class", "lineWrapper");
   lineWrapper.append("line").attr("x1", LEFT_MARGIN).attr("y1", depthY).attr("x2", box.width + 3 * LEFT_MARGIN).attr("y2", depthY).attr("stroke-width", 4).attr("stroke", "black").attr("marker-end", "url(#arrowhead)");
-  (0,_mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.s)(
+  (0,_mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.s)(
     void 0,
     svg,
     conf2.timeline.padding ? conf2.timeline.padding : 50,
@@ -1135,11 +1163,11 @@ const drawTasks = function(diagram2, tasks2, sectionColor, masterX, masterY, max
       padding: 20,
       maxHeight: maxTaskHeight
     };
-    _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("taskNode", taskNode);
+    _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("taskNode", taskNode);
     const taskWrapper = diagram2.append("g").attr("class", "taskWrapper");
     const node = svgDraw.drawNode(taskWrapper, taskNode, sectionColor, conf2);
     const taskHeight = node.height;
-    _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("taskHeight after draw", taskHeight);
+    _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("taskHeight after draw", taskHeight);
     taskWrapper.attr("transform", `translate(${masterX}, ${masterY})`);
     maxTaskHeight = Math.max(maxTaskHeight, taskHeight);
     if (task.events) {
@@ -1154,7 +1182,7 @@ const drawTasks = function(diagram2, tasks2, sectionColor, masterX, masterY, max
       ).attr("stroke-width", 2).attr("stroke", "black").attr("marker-end", "url(#arrowhead)").attr("stroke-dasharray", "5,5");
     }
     masterX = masterX + 200;
-    if (isWithoutSections && !(0,_mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.g)().timeline.disableMulticolor) {
+    if (isWithoutSections && !(0,_mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.g)().timeline.disableMulticolor) {
       sectionColor++;
     }
   }
@@ -1173,7 +1201,7 @@ const drawEvents = function(diagram2, events, sectionColor, masterX, masterY, co
       padding: 20,
       maxHeight: 50
     };
-    _mermaid_95cd9c8e_js__WEBPACK_IMPORTED_MODULE_8__.l.debug("eventNode", eventNode);
+    _mermaid_ae477ddf_js__WEBPACK_IMPORTED_MODULE_11__.l.debug("eventNode", eventNode);
     const eventWrapper = diagram2.append("g").attr("class", "eventWrapper");
     const node = svgDraw.drawNode(eventWrapper, eventNode, sectionColor, conf2);
     const eventHeight = node.height;
@@ -1192,10 +1220,10 @@ const genSections = (options) => {
   let sections2 = "";
   for (let i = 0; i < options.THEME_COLOR_LIMIT; i++) {
     options["lineColor" + i] = options["lineColor" + i] || options["cScaleInv" + i];
-    if ((0,khroma__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z)(options["lineColor" + i])) {
-      options["lineColor" + i] = (0,khroma__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Z)(options["lineColor" + i], 20);
+    if ((0,khroma__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z)(options["lineColor" + i])) {
+      options["lineColor" + i] = (0,khroma__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Z)(options["lineColor" + i], 20);
     } else {
-      options["lineColor" + i] = (0,khroma__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Z)(options["lineColor" + i], 20);
+      options["lineColor" + i] = (0,khroma__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Z)(options["lineColor" + i], 20);
     }
   }
   for (let i = 0; i < options.THEME_COLOR_LIMIT; i++) {
@@ -1268,7 +1296,7 @@ const diagram = {
   styles
 };
 
-//# sourceMappingURL=diagram-definition.444bacb8.js.map
+//# sourceMappingURL=timeline-definition-8e5a9bc6.js.map
 
 
 /***/ }),
