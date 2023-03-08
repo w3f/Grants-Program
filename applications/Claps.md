@@ -170,7 +170,7 @@ New project
 |4|Docker|We will provide a Docker file(s) that can be used to test all the functionality delivered with this milestone.|
 |5|Patient ID creation| Develop>Develop the patient ID creation tool in JavaScript. <br>- Generate a new ID on client-side for the patient based on BIP39. (12 words passphrase)<br>- Encrypted key store (private key) by patient user’s password (AES-256 GCM mode)<br>- Implement the decentralized design using public key cryptography. (Client signed by private key, same as metamask)<br>|
 |6|Patient profile management module|Patient profile off-chain management tools developed by JAVA<br>- Support AWS S3 storage<br>- Updating of patient profile<br>- ECIES end-to-end data encryption to secure profile data transfer.<br>|
-|7|Patient ID on-chain authentication|Non-Interactive Zero-Knowledge Proof (NIZKP) developed by !ink Smart Contract<br>- Receive credential by trust issuer (token file)<br>- Zero-knowledge proof for on-chain authentication to prove patient ID without private information|
+|7|Patient ID on-chain authentication| zkSNARKs Groth16 based on Non-Interactive Zero-Knowledge Proof (NIZKP) developed by !ink Smart Contract<br>- Receive credential by trust issuer (token file)<br>- Zero-knowledge proof for on-chain authentication to prove patient ID without private information|
 |8|Enterprise ID registration tool|We will offer a Smart Contract as a Service for enterprise ID registration. Developed by !ink! Smart Contract.<br><br>This contract will provide a secure way for enterprises to manage their identities and multi-users access policies. Each enterprise can be assigned a unique contract address, which can be linked to the Polkadot Name System (PNS) for improved usability. The function list in below:<br>- Add new users<br>- Remove existing users<br>- Assign roles and permissions to users<br>- Revoke user access|
 |9|Enterprise account management web backend module|Enterprise account management (connects with Enterprise ID), the tool will be developed using Vue.js for the frontend and Java for the backend.<br>- User authentication: The module will implement user authentication, ensuring that only authorized users can access the system. Two-factor authentication will also be implemented for added security.<br>- Role-based access control: The module will implement role-based access control, allowing the organization to assign roles to users and control their access to the system.<br>- Secure storage of user data: The module will ensure the secure storage of user data, including user IDs, access policies, and profile information. This includes encryption of sensitive data at rest.<br>- Logging and auditing: The module will provide logging and auditing features to track user activity and detect any security breaches or policy violations.|
 |10|Documentation|We will provide the document for command-line verification or simple UI verification|
@@ -227,6 +227,13 @@ New project
 |6|Substrate module: IPFS |We will provide an integrated Substrate module with IPFS for health education content storage. |
 |7|Analytics module|We will provide a web backend for pharmaceutical and healthcare businesses . By analyzing large datasets to identify patterns about health behaviors, allowing for targeted and proactive education efforts. Develop in Vue and Java. (or Rust)<br>- Result of Article survey for user research<br>The module will provide customizable reporting and visualization capabilities to enable businesses to track and measure the success of their education campaigns.|
 |8|Article|We will publish an article/workshop that explains how Claps work and benefit patients and healthcare businesses.|
+
+## User Interface
+
+The user interface will be based on [here](https://www.figma.com/file/Zlx3Qq4EoFtuV8AopAffVl/Claps-Health-Mobile-for-Patients?node-id=0%3A1&t=pUNA27WItIqVx5n8-1) and [here](https://www.figma.com/file/3uk14HULTZUcdAJeKmTkCM/Claps-Health-Web-Backend-for-Pharma?t=pUNA27WItIqVx5n8-1). 
+
+![app01](https://user-images.githubusercontent.com/14127551/223708073-28ffd406-a286-4f80-9476-c728762f6812.png)
+![p3](https://user-images.githubusercontent.com/14127551/223708107-b1ed9dbe-c94e-452f-9dce-dc9ffb93511a.png)
 
 ## Regulation and Compliance with HIPAA/GDPR
 
