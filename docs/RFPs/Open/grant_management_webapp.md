@@ -34,7 +34,7 @@ A quick and dirty prototype already exists for the application:
 - [Backend](https://github.com/w3f/w3f_grants_backend)
 - [Frontend](https://github.com/w3f/w3f_grants_frontend)
 
-These are just a first experiment to test how the app could work, and are completely undocumented, 
+These examples are just an initial experiment to test how the app could work, and are completely undocumented, 
 but please feel free to contact [randombishop](nabil@web3.foundation) if you need help trying them out or simply discuss.
 
 Also, these are just an option, and the RFP doesn't require building from these. Proposers are free to propose the framework and approach of their choice.
