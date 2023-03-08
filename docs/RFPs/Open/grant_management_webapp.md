@@ -22,7 +22,7 @@ or by browsing the two repositories above.
 The objective of this RFP is a web application that publishes all the information contained in 
 the W3F grants repositories in a way that facilitates easier navigation for the grants committee. Though the software would initially be used for the W3F Grants Program, any interested third parties would ideally be able to utilize the application for their own grants program. 
 
-By providing an API, it will also allow to pull the data in a structured way and make it easy to calculate statistics or track different metrics.
+By providing an API, it will also allow for pulling the data in a structured way in order to make it easy to calculate statistics or track different metrics.
 
 Finally, we hope to set Web3 Foundation Grant Program as an example of how other grant programs can leverage a simple yet powerful process to manage their grants.
 Therefore, the web application and the structure of our repositories can be re-used by other grant programs.
