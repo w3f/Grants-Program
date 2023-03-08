@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-IPFS is a web3 solution to store and provide big-sized and not structured data. The datas address is based on it's content (CID: Content Identifier), which guarantees that the content or file isn't changed or manipulated in any way. The same CID will always point to the same content spread in the IPFS network. Currently there is no satisfying way of an integration for IPFS on Substrate based blockchains. An example use case are NFTs (Non-Fungible Tokens): An NFT for instance might be linked to an external artwork (image, audio file, video file, ...) that is stored within IPFS.
+IPFS is a web3 solution to store and provide big-sized and unstructured data. The datas address is based on it's content (CID: Content Identifier), which guarantees that the content or file isn't changed or manipulated in any way. The same CID will always point to the same content spread in the IPFS network. Currently there is no satisfying way of an integration for IPFS on Substrate based blockchains. An example use case are NFTs (Non-Fungible Tokens): An NFT for instance might be linked to an external artwork (image, audio file, video file, ...) that is stored within IPFS.
 
 This is a follow-up project for [Substrate IPFS Utilities](https://github.com/w3f/Grants-Program/pull/1187) MS1 and MS2. During the previous project some issues occurred that are related to already existing IPFS APIs and patterns used. Goal of this project is to solve those issues and make the IPFS integration ready for real use cases.
 
@@ -27,19 +27,19 @@ We made some research and came up with a solution: This project is about the imp
 
 ### Project Details
 
-The implementation developed in this project will be based on the existing IPFS implementation from TDSoftware:
+The implementation to be delivered in this project will be based on the existing IPFS implementation from TDSoftware:
 👉 [https://github.com/TDSoftware/substrate-ipfs](https://github.com/TDSoftware/substrate-ipfs)
 
 Here is a rough overview about the involved components and communication flow:
 ![Image](https://tdsoftware-dev.de/w3f-grant-program/ipfs-util-2.png)
 
-**The problem** with the current implementation is, that the bytes of the file added are passed to an extrinsic. With that the block size limit will limit the file size too. It is then impossible to upload bigger files, which is of course a requirement of an IPFS integration into Substrate. All existing projects handling IPFS integration do have the same issue.
+**The problem** with the current implementation is, that the bytes of the file added are passed to an extrinsic. With that, the block size limit will limit the file size too. It is then impossible to upload bigger files, which is of course a requirement of an IPFS integration into Substrate. All existing projects handling IPFS integration do have the same issue.
 
 Our **solution** consists of using the RPC API to receive an incoming file. Then generating the CID of the content and store it in the Substrate off-chain storage. Together with some related metadata (depending one use case: e.g. NFT) an extrinsic is called to store the CID with the metadata and the status "In Progress". The file is not stored on chain nor passed to the extrinsic.
 
 When the TDS IPFS off-chain worker is invoked, it fetches the file from the off-chain storage and adds it to the local IPFS node. Once added we can check, if the file is spread in the IPFS network to be sure it is available from the outside. At last we need to update the status of the CID on chain to "Done". A running IPFS node and communication logic was implemented in Milestone 1 and 2. So this project will focus on the off-chain storage usage implementation with an RPC API.
 
-After implementing the RPC API, another optimisation should be implemented. This optimisation will focus on handling InputStreams as input parameters of the RPC API to have a better handling of large input files.
+After implementing the RPC API, another optimisation should be implemented. This optimisation will focus on handling input streams as input parameters of the RPC API to have a better handling of large input files.
 
 ### Ecosystem Fit
 
