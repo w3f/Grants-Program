@@ -110,7 +110,7 @@ You can find the current project here:
 
 ## Development Roadmap :nut_and_bolt:
 
-The project is split into two Milestones. The first Milestone will include the implementation of the RPC API. Afterwards we are going to focus on accepting InputStreams as input parameters for the RPC API. Please check the details below.
+The project is split into two Milestones. The first Milestone (Milestone 3) will include the implementation of the RPC API. Afterwards we are going to focus on accepting InputStreams as input parameters for the RPC API. Please check the details below.
 
 ### Overview
 
@@ -118,7 +118,7 @@ The project is split into two Milestones. The first Milestone will include the i
 - **Full-Time Equivalent (FTE):** 2
 - **Total Costs:** 66,000 DAI
 
-### Milestone 1 - RPC API
+### Milestone 3 - RPC API
 
 - **Estimated duration:** 1 Month
 - **FTE:** 2
@@ -135,7 +135,7 @@ The project is split into two Milestones. The first Milestone will include the i
 |      3. | Substrate Off-Chain Worker (TDS IPFS Pallet)       | The off-chain worker is fetching the uploaded files from the off-chain storage and adds those to IPFS. For this step, the local embedded IPFS node is used. After successfully adding the file and checking, that the file is available in the IPFS network, the status for the CID on chain is set to "Done". To update the status, another extrinsic method needs to be created. |
 
 
-### Milestone 2 - InputStreams
+### Milestone 4 - InputStreams
 
 - **Estimated Duration:** 1 Month
 - **FTE:** 2
