@@ -2,7 +2,7 @@
 
 
 - **Team Name:** Magic Powered Inc,
-- **Payment Address:** Magicpowered.eth, USDC, Ethereum
+- **Payment Address:** Magicpowered.eth (0x85f9c38a44EfB45CeF47cBf510e6e18cDdf2a78A), USDC, Ethereum
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
