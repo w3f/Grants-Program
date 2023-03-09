@@ -1,4 +1,4 @@
-# Name of your Project
+# Interlock
 
 - **Team Name:** Interlock
 - **Payment Address:** 0x670dD4B35b00cF693D6E30cc82d6bB1Ff404C8E1 (ERC-20 USDT/USDC preferred)
