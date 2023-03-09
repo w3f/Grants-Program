@@ -119,8 +119,6 @@ Weekly updates on Twitter: https://twitter.com/interlockweb3
 - **FTE:**  1
 - **Costs:** 10,000 USD
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | GPLv3|
