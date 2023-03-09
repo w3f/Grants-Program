@@ -54,7 +54,7 @@ The judge can change the reward size in the proposal and the serenity of found i
 
 ![Change report submission](https://github.com/magic-powered/decentralised-security-marketplace-architecture/blob/main/img/change-proposal.png?raw=true)
 
-Any eligible community member can become a judge. Judges are rewards from the same rewards pool with a percent of rewards to be distributed by the proposals they review.
+Any eligible community member can become a judge. Judges are rewarded from the same rewards pool with a percent of rewards to be distributed by the proposals they review.
 
 The eligibility criteria for a community member to become a judge will be provided during the protocol design phase.
 
