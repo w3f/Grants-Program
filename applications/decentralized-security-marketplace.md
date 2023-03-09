@@ -187,8 +187,7 @@ Currently, the project is under technical design phase
 | **0a.** | License                   | MIT                                                                                                                                                                     |
 | **0b.** | Documentation             | Both inline and markdown documentation pages describing the contract functions and other necessary info: How to run, contract composition diagrams, how to call, etc... |
 | **0c.** | Testing and Testing Guide | Unit tests and functional tests for the contracts                                                                                                                       |
-| **0d.** | Code repo                 | Repo with the code of smart contracts                                                                                                                                   |
-|  **1.** | Deployment                | Smart contracts deployed to mainnet environment                                                                                                                         |
+| **1.** | Code repo                 | Repo with the code of smart contracts                                                                                                                                   
 
 ### Milestone 4 — Backend infrastructure and data processing version 1.0
 
