@@ -39,6 +39,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [decentralized-security-marketplace.md](RFPs/Open/decentralized-security-marketplace.md) | 🟢 | 23.01.2023 |  
 | [epassport-zk-validation.md](RFPs/Open/epassport-zk-validation.md) | 🟢 | 29.11.2021 |
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 🟢 | 07.10.2022 |
+| [grant_management_webapp.md](RFPs/Open/grant_management_webapp.md) | 🟢 | 09.03.2023 |
 | [identity-directory.md](RFPs/Under%20Development/identity-directory.md) | 🟡 | 30.05.2022 |
 | [implementation-benchmarking.md](RFPs/Open/implementation-benchmarking.md) | 🟢 | 20.07.2021 |
 | [ink!_smart_contract_block_explorer.md](RFPs/Under%20Development/ink_smart_contract_block_explorer.md) | 🟡 | 05.07.2021 |
