@@ -14,6 +14,12 @@
 const sidebars = {
   docs: [
     {
+      type: 'html',
+      className: 'sidebar-title',
+      value: 'Basic Information',
+      defaultStyle: true,
+    },
+    {
       type: 'category',
       label: '👋 Introduction',
       link: {type:'doc', id:'docs/introduction'},
@@ -34,6 +40,12 @@ const sidebars = {
       value: '<span class="sidebar-divider" />',
     },
     {
+      type: 'html',
+      className: 'sidebar-title',
+      value: 'In Depth',
+      defaultStyle: true,
+    },
+    {
       type: 'doc',
       id:'docs/help'
     },
@@ -52,6 +64,12 @@ const sidebars = {
     {
       type: 'html',
       value: '<span class="sidebar-divider" />',
+    },
+    {
+      type: 'html',
+      className: 'sidebar-title',
+      value: 'Beyond',
+      defaultStyle: true,
     },
     {
       type: 'doc',
