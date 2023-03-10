@@ -6,11 +6,11 @@ title: Requests for Proposals
   <img src="https://raw.githubusercontent.com/w3f/Grants-Program/master/static/img/rfp-header.png" style={{width:"1300px"}} />
 </p>
 
-- [:grey\_question: What is an RFP?](#grey_question-what-is-an-rfp)
+- [❔ What is an RFP?](#-what-is-an-rfp)
 - [📜 List of RFPs](#-list-of-rfps)
-- [:mailbox\_with\_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
+- [📬 Suggest an RFP](#-suggest-an-rfp)
 
-## :grey_question: What is an RFP?
+## ❔ What is an RFP?
 
 An RFP (Request for Proposals) is a declaration of interest for others to submit a grant or a treasury application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](suggesting.md)) deems useful and missing or unsolved in our ecosystem.
 
@@ -69,6 +69,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [xcm-tool.md](RFPs/Open/xcm-tool.md) | 🟢 | 20.07.2021 |
 | [alternative-polkadot-js-api-console.md](RFPs/Open/alternative-polkadot-js-api-console.md) | 🟢 | 16.02.2023 |
 
-## :mailbox_with_mail: Suggest an RFP
+## 📬 Suggest an RFP
 
 If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](https://wiki.polkadot.network/docs/build-open-source), please submit a suggestion using the process described in our [Grants program README](suggesting.md). We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.

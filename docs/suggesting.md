@@ -5,7 +5,9 @@ title: 📬 Suggesting a Project
 
 <!-- ## :mailbox_with_mail: Suggest a Project -->
 
-If you think that we should support the development of certain tools or projects that aren't in the Polkadot/Kusama [tech stack](https://wiki.polkadot.network/docs/build-open-source), feel free to submit a suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
+If you think that we should support the development of certain tools or projects that aren't in the Polkadot/Kusama [tech stack](https://wiki.polkadot.network/docs/build-open-source), feel free to submit a suggestion ("Request for Proposal") using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
+
+For a list of previous Requests for Proposal and their status, see our [separate RFP page below](./rfps.md).
 
 **Submit an idea:**
 
