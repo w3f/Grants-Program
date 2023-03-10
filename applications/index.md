@@ -61,6 +61,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | Jonathan Brown                       | [Hybrid Explorer](hybrid.md)                                       | [GitHub](https://github.com/acuity-social)                               | ☐          |        ☐       |      ☐     |
 | [ParaSpell](https://github.com/paraspell)                        | [ParaSpell_Follow Up 2](ParaSpell_follow-up2.md)                                       | [GitHub](https://github.com/paraspell)                               | ☐          |        ☐       |      ☐     |
 | [justmert](https://github.com/justmert)                        | [PolkaFlow](polkaflow.md)                                       | [GitHub](https://github.com/justmert)                               | ☐          |        ☐       |      ☐     |
+| [BelSoft](https://www.belsoft.rs)                        | [Diffy messenger](Diffy_chat.md)                                       | [GitHub](https://github.com/1db1)                               | ☐          |        ☐       |      ☐     |
+
 
 
 ## 2022
