@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: Suggesting a Project
+title: 📬 Suggesting a Project
 ---
 
 <!-- ## :mailbox_with_mail: Suggest a Project -->

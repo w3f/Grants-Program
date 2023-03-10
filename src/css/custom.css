@@ -75,3 +75,10 @@ a {
 .button, .menu__link, .navbar__brand, .navbar__item, .pagination-nav__link, .table-of-contents__link {
   text-decoration: none;
 }
+
+/* Divider for sidebar */
+.sidebar-divider {
+  border-top: 1px solid var(--ifm-color-gray-200);
+  display: block;
+  margin: 0.5rem 0 0.25rem 1rem;
+}

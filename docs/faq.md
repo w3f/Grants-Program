@@ -1,6 +1,6 @@
 ---
 sidebar_position: 11
-title: FAQ
+title: 🙋 FAQ
 ---
 
 # Frequently Asked Questions<!-- omit in toc -->
