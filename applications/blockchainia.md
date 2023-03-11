@@ -52,14 +52,14 @@ Our target audience includes game developers and gamers. We will develop a decen
 
 ### Contact
 
-- **Contact Name:** Edmund Anderson
+- **Contact Name:** Ed Anderson
 - **Contact Email:** eca20@pitt.edu
 - **Website:** https://github.com/eca20
 
 ### Legal Structure
 
-- **Registered Address:** 906 Yetta Ave. Pittsburgh, PA 15212
-- **Registered Legal Entity:** Edmund Casey Anderson
+- **Registered Address:** 502 W 7th St, Suite 100, Erie, PA 16502
+- **Registered Legal Entity:** Blockchainia LLC
 
 ### Team's experience
 
@@ -89,9 +89,11 @@ We plan to leverage all of our experience and industry connections to build a he
 
 
 ## Development Status
-We have started created a Unity game, but in C#. We are converting these scripts to Rust in the most performant way possible. We have poured countless hours of development into a deep lore, complete with a full "blockchain" universe inhabited by the very blocks that make it up. However, not is all as it seems, as everyone who inhabits this world has a bit of an identity issue. The blocks don't know they're blocks, and the in-game avatars feel empty inside until they are "minted" and receive a "meta". 
+We have started created a Unity game, but in C#. We are converting these scripts to Rust in the most performant way possible. 
 We have performed most of the RnD necessary to use our NFT images as in-game "prefabs" in unity, so that a players in-game avatar matches their purchased NFT characters image and custom variations. Our economics and go to market strategy to drive community engagement are complete, and we are ready to being creating the most optimal end-user experience for a testable minimum viable product. 
 We plan to work in an agile/scrum setting to provide seasonal (3-4 month) updates to our games and servers. These changes will require updates to our substrate pallets as we add community demanded gaming functionality. We will use lean/six sigma concepts, a well as test-driven development and various other methodologies to ensure we provide fast, meaningful updates to our growing community. 
+
+These repos include our R & D work, although we have not begun development on our first iteration of the MVP. We will be starting two projects from scratch, the Blockchainia blockchain, and the DeathToll vide game, for Milestone 1. These repos will include all necessary documentation to run and test our functionality.
 
 - https://github.com/eca20/BlockchainiaJRPG
 - https://github.com/eca20/SubstratePlayGround
@@ -104,32 +106,34 @@ We plan to work in an agile/scrum setting to provide seasonal (3-4 month) update
 
  - **Total Estimated Duration:** Continuous
  - **Full-Time Equivalent (FTE):**  2
- - **Total Costs:** $24,978
+ - **Total Costs:** $25,000
 
  ### Milestone 1  — Basic MVP
 
- - **Estimated duration:** 12 weeks development 
- - **FTE:**  2 FTE
- - **Costs:** $24,978 USD
+ - **Estimated duration:** 13 weeks development 
+ - **FTE:**  .97 FTE
+ - **Costs:** $25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. Core concepts and blockchain functionality will be tested through game functionality and other quality assurance testing. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. This will include a deployable "Full Node" that encases both a game server and substrate node. These will interact with our game client and substrate parachain respectively. A successful MVP will allow a game client to register events on the game server (Server-Authoritative model), which is then written to the parachain ledger. This state must be synchronized across all players connected to the server and performance tested to meet our needs. Upon completion of the initial game "level", an "accolade" NFT will be deposited via ink! smart contract to the wallet that completed the required in-game tasks.  |
-| 0e. | Social Media | We will deploy a social media marketing campaign upon the successful development and testing of an MVP. This will include a social media campaign, building a discord community of evangelists, and marketing materials that describe our project to potential stakeholders and various customers of our ecosystem. 
-| 2. | Substrate module: DeathToll Game Events | The DeathToll Game Events Substrate module will add functionality for starting/ending a "match"", start and end a "round", eliminate a player, score a point, complete a "task". Tasks examples include "move through a defined space", eliminate an AI enemy, retrieve an item, etc. 
-| 3. | Unity Game/Server | Both DeathToll Modules of our custom chain will interact with with open-source scrips we create to control our Unity created game server.  Each of these processes will initially need to be deployable on the same machine via docker container, until appropriate configuration is added.
-| 4. | Community Documentation | A portion of this project will include creating the documentation that will allow our community to use our infrastructure. We have included the costs of some of the hardware for us to deploy to and performance test in this grant application, but it can be removed if necessary. 
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Unit tests will be written for relevent game server functionality. Unit tests will be written for the DeathToll pallet. In each guide (in each project's Github repo), we will describe how to run these tests. Integration testing will be enabled through game functionality (i.e, Given an enemy is eliminated on server, the proper state functions are executed on chain, and the leaderboard updates through the in-game chain browser) |
+| **0d.** | Docker | We will provide Dockerfiles that can be used to run and test all the functionality delivered with this milestone. This will include a deployable "Full Node" that encases both a game server and substrate node. These will interact with our game client and substrate parachain respectively. A successful MVP will allow a game client to register events on the game server (Server-Authoritative model), which is then written to the parachain ledger. Upon completion of the initial game "level", an "accolade" NFT will be deposited via ink! smart contract to the wallet that completed the required in-game tasks. |
+| 1. | Social Media | We will deploy a social media marketing campaign upon the successful development and testing of an MVP. This will include a social media campaign, building a discord community of evangelists, and marketing materials that describe our project to potential stakeholders and various customers of our ecosystem. The first milestone will involve hitting 1000 followers, which will enable us to involve our community from Milestone 2 forward. 
+| 2. | Substrate module: DeathToll Game Events | The DeathToll Game Events Substrate module will add functionality for starting/ending a "match"", start and end a "round", eliminate a player, score a point, complete a "task". Tasks examples include "move through a defined space", eliminate an AI enemy, retrieve an item, etc. This deliverable will include unit tests and instructions in the git repository. It is highly likely that we will break this into two pallets, one for core gaming functionality, and one specific to the needs of the DeathToll game-type. 
+| 3. | Unity Game/Server | Both DeathToll Modules of our custom chain will interact with with open-source scrips we create to control our Unity created game server.  Each of these processes will initially need to be deployable on the same machine via docker container, until appropriate configuration is added. 
+| 4. | Community Documentation | This project includes creating the documentation that will allow our community to test and use our infrastructure. We hope to receive feedback on this documentation in Milestone 2.
 
 ## Future Plans
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Market Research | A completed and successfully tested MVP will allow us to run an in-person consumer research study in the Business Research Center at the Katz Graduate School of Business, University of Pittsburgh. We hope to make the case for funding from a separate Square One grant to support this market research. 
-| 2. |  Oculus VR Port | We plan to port these concepts to an online multiplayer Oculus VR arcade game. This will involve continuous seasonal expansion of our pallets with new features that add additional configuration to game play. Various configurations will come together to create new community driven game types. While this may involve additional grant requests, our hope is that the idea is self sustaining once our MVP is release ready. The web3 enhanced online multiplayer game will showcase the creative ways web3 can enhance the gaming experience at a lower price point than gamers have grown accustomed to from current distribution channels. 
-| 3. | Front End Expansion| Our initial browser will be embedded into the game client itself. We plan to expand this to an iOS app and web3 browser for viewing leader boards and accolades or trading collectibles. 
-| 4. | Community Expansion| Users who are invited to the DAO will be encouraged to run their own reputable server/node to grow their community and earn money from the pay-to-play architecture. Fair game play will be enforced by server moderators called "admins". Servers which decline in reputation will lose revenue and influence within the DAO.
+| 1. | Oculus VR Port | We plan to port the game  to an online multiplayer Oculus VR arcade game. This will involve continuous seasonal expansion of our pallets with new features that add additional configuration to game play. Various configurations will come together to create new community driven game types. While this may involve additional grant requests, our hope is that the idea is self sustaining once our MVP is release ready. The web3 enhanced online multiplayer game will showcase the creative ways web3 can enhance the gaming experience at a lower price point than gamers have grown accustomed to from current distribution channels. 
+| 2. | Front End Expansion| Our initial browser will be embedded into the game client itself. We plan to expand this to an iOS app and web3 browser for viewing leader boards and accolades or trading collectibles. 
+| 3. | Community Expansion| Users who are invited to the DAO will be encouraged to run their own reputable server/node to grow their community and earn money from the pay-to-play architecture. Fair game play will be enforced by server moderators called "admins". Servers which decline in reputation will lose revenue and influence within the DAO.
+| 4. | Automate integration testing | To keep our development cycle lean and free from waste, we want to create automated integration tests for all game server/blockchain interactions.
+| 5. | Substrate module: DeathToll Game Events Expansion| W will add new features to the DeathToll Game Events Substrate module in seasonal updates, like 3-4 months in length. The features added will be driven in part by the community that plays the game, in the form of the DAO created during Milestone 2. We will use existing pallets to implement the DAO. 
+| 6. | Community DAO|  We will use existing pallets to implement a DAO that can add and remove members, vote on feature expansion and development direction, and earn earn "reputation" points. To run a DAO-authorized server, you must stake your reputation points, which can be forfeited after a successful vote by the DAO, triggered by a threshold of members for behavior deemed detrimental to the community. If you no longer have the reputation points to run a server, your server will not be able to communicate with the chain. the more reputation points you hold, the more servers you can run. 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / LinkedIn 
