@@ -249,7 +249,7 @@ This milestone implements the work from the previous milestone by building the d
 | -----: | ----------- | ------------- |
 | 0a. | License | The code for data fetching and storage aisre already available in a public github folder (Unlicensed). We will specify an OSS license. |
 | 0b. | Documentation | We will provide a tutorial for users to understand how to run the health checks themselves. Our current version will be updated to include recent development.|
-| 0c. | Testing and Testing Guide | Running the data pipeline and analyzing the data will be covered by tests to ensure functionality. We will describe how to run the tests|
+| 0c. | Testing and Testing Guide | Running the data pipeline and analyzing the data will be covered by tests to ensure functionality. We will describe how to run the tests|.
 | 0d. | Docker | We will run a docker file to tests the functionality. |
 | 0e. | Article | In addition to the dashboard, we write a handout. This is a walkthrough of the dashboard, explaining each metric, if the score is good or bad, and a list of recommendations.  |
 | 1. | Twitter data integration | We will create a data pipeline fetching data from Twitter using their API. The user will have several options to define their community (e.g., everyone who follows the official Polkadot/Kusama account, everyone who follows the account and interacts with the content). |
