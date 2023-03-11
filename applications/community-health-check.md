@@ -192,7 +192,7 @@ Analyzing conversations in private channels (e.g., Discord) is within a grey zon
 For this reason, we have worked with a legal counsel via LexDAO. As part of this, two lawyers have reviewed the process from fetching data and presenting results to ensure we are within GDPR laws. On Wednesday 22nd February we had a GDPR session for our team and  implemented the lawyers' recommendations.
 - anti-virus software to be installed on the personal laptops of the two data scientists who have access to the raw data
 - a data transfer agreement will be signed with the data scientist residing in the US
-- We will prepare a record of processind activities
+- We will prepare a record of processing activities
 
 Once our process from data fetching to analysis will be fully automated, we will
 - create a mock database developers can use for testing data fetching and analysis
