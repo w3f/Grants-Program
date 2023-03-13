@@ -135,15 +135,15 @@ Additionally, our team members have between 5-10 years of experience within the 
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
+- **Total Estimated Duration:** 3 weeks
 - **Full-Time Equivalent (FTE):** 3 FTE
-- **Total Costs:** 60,000 USD
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 — Polkadot Developments
 
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 3 weeks (estiamted 360 hours)
 - **FTE:** 3
-- **Costs:** 35,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -155,22 +155,6 @@ Additionally, our team members have between 5-10 years of experience within the 
 | 6. | Internal testing | Internal testing and auditing of the developments, infrastructure and integrations |
 | 7. | Release of the Polkadot integration & developments | - Release on Windows, MacOS and Linux with the Polkadot integrations & developments;<br/>- Support Polkadot as a native chain and token;<br/>- We will announcements across all social channels and in-wallet;<br/>- We will create a custom Polkadot web page on the website;<br/>- We will start collaborating with Polkadot ecosystem projects on direct integration of tokens and DApps into the Infinity Wallet to drive Polkadot ecosystem adoption and discoverability;<br/>- We will create a video tutorial to demonstrate how to use Polkadot functions & developments; |
 
-
-### Milestone 2 — Kusama Developments
-
-- **Estimated Duration:** 3 weeks
-- **FTE:** 3
-- **Costs:** 25,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1. | Develop out Kusama and core functionalities | - Kusama chain integration/support in wallet;<br/>- Kusama core functionalities (balance tracking, send, receive, etc);<br/>- Complete Kusama transaction history with advanced information and smart contract tracking support;<br/>- Integrate/develop portfolio & analytics management for Kusama;|
-| 2. | Develop Kusama custom asset importing | - Ability to import and custom manage non-default integrated tokens;<br/>- Support top Kusama tokens as default enabled/integrated for instant use;<br/>- Develop and support Kusama tokens across available Infinity Wallet features;|
-| 3. | Web3 browser development and create Kusama Web3 DApp store | - Desktop Web3 Browser integration/development to allow for seamless transacting and one-click connecting/management with Kusama Web3 projects and DApps, removing the need for browser extensions;<br/>- Web3/DApp Store to allow for easy discoverability and adoption of Kusama ecosystem projects; |
-| 4. | Cross-chain swap/bridge between multiple tokens/chains | Cross-chain swap support for Kusama (Allowing users to directly onboard to Kusama from different chains “BTC, ETH, BSC etc.” within a single click) |
-| 5. | Implement Kusama into remaining features/services and secondary features. | - Contact/Address book;<br/>- Payment requests;<br/>- Desktop drag and drop QR scan;<br/>- Live Market stats;<br/>- Price Alerts;<br/>- Etc..|
-| 6. | Internal testing | Internal testing and auditing of the developments, infrastructure and integrations |
-| 7. | Release of the Kusama integrations & developments | - Release on Windows, MacOS and Linux with the Kusama integration & developments;<br/>- Support Kusama as a native chain and token;<br/>- We will announcements across all social channels and in-wallet;<br/>- We will create a custom Kusama web page on the website;<br/>- We will start collaborating with Kusama ecosystem projects on direct integration of tokens and DApps into the Infinity Wallet to drive Kusama ecosystem adoption and discoverability;<br/>- We will create a video tutorial to demonstrate how to use Kusama functions & developments; |
 
 
 #### Usage of funds
