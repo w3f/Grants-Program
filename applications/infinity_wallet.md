@@ -174,7 +174,7 @@ We have a lot planned over the next couple of years, however some of the develop
 * Social Wallet (removing the need for a seed phrase and enabling users to create a wallet via social login, allowing for easier onboarding and usage of DeFi & Web3 by the general Web2 user required for mass adoption);
 
 
-More on our overall roadmap that could benefit Polkadot and Kusama can be found on page 27, here: https://infinitywallet.io/docs/Infinity%20Wallet%20Deck.pdf OR our docs here https://docs.infinitywallet.io/infinity-wallet/infinity-ecosystem-roadmap
+More on our overall roadmap that could benefit Polkadot can be found on page 27, here: https://infinitywallet.io/docs/Infinity%20Wallet%20Deck.pdf OR our docs here https://docs.infinitywallet.io/infinity-wallet/infinity-ecosystem-roadmap
 
 Specific to Polkadot, we will continue to provide ongoing support and integration into future developments/features/services on a case by case basis, as well as support in our unique user focused mobile version once launched. Along with continuously working with ecosystem projects and providing ecosystem support for Polkadot Web3 projects and DApps with direct integrations into the Infinity Wallet DApp store. In which we will waive our usual DApp store listing fee for Polkadot projects to help drive awareness and adoption of Polkadot DApps/Web3 projects, and overall support their developers.
 
@@ -183,7 +183,7 @@ Specific to Polkadot, we will continue to provide ongoing support and integratio
 
 
 **How did you hear about the Grants Program?** 
-Our support team has received many requests from users reaching out over the last several months regarding expanding support/developing out Polkadot and Kusama, some had suggested the grants program.
+Our support team has received many requests from users reaching out over the last several months regarding expanding support/developing out Polkadot, some had suggested the grants program.
 
 
 
