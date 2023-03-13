@@ -8,7 +8,7 @@
 
 ### Overview
 
-This project proposes the development of all required components for a healthy Decentralized Identity ecosystem for all Substrate-based chains, following internationally recognized standards from W3C, the OpenId Foundation and the European eIDAS regulation.
+This project proposes the development of a Proof-of-Concept (PoC) for all required components for a healthy Decentralized Identity ecosystem for all Substrate-based chains, following internationally recognized standards from W3C, the OpenId Foundation and the European eIDAS regulation.
 
 Decentralized Identity or Self-Sovereign Identity (SSI) defines a new method for identity management and authentication. It removes the centralized aspects and puts the identity subject in full control over its own identity and data. Decentralized Identity provides a solution for the increasing amount of database breaches, the lack of trust in any digital setting, and the increasingly difficult to comply with privacy legislation, such as GDPR. It has caught the attention in many different ecosystems and industries such as Crypto, Government, Finance and Education.
 
@@ -20,7 +20,7 @@ The Substrate / Polkadot and Kusama ecosystems have shown significant interest i
 
 Impierce Technologies would like to develop and maintain an Identity Wallet in several phases over the following years. This initial phase requires us to implement an Identity Wallet with all features necessary for users to create and manage their substrate-based DIDs, log-in and authenticate yourself with Relying Parties and collect and share Verifiable Credentials. In later phases, we would like to further enhance the wallet with more features that will connect ecosystems and encourage adoption.
 
-In order to achieve the first phase, we would develop a mature DID Pallet and accompanying Substrate DID Method that fully complies with the DID standard. In addition, we implement a client that can connect to an Identity Provider that is compatible with the SIOPv2, OIDC, OpenID4VP and OpenID4VCI. These are OpenID Foundation standards that allow user authentication following globally recognized standards adopted by hundreds of thousands of websites.
+In order to achieve the first phase, we would develop a PoC for a DID Pallet and accompanying Substrate DID Method that complies with the DID standard. In addition, we implement a client that can connect to an Identity Provider that is compatible with the SIOPv2, OIDC, OpenID4VP and OpenID4VCI. These are OpenID Foundation standards that allow user authentication following globally recognized standards adopted by hundreds of thousands of websites.
 
 The Identity Wallet is a sensitive piece of software as it will handle private keys and personal information. As such, security is our topmost priority. We have decided to develop the cross-platform app in Rust using the [Tauri framework](https://tauri.app/). It is chosen as it provides the best tools to our developers for separating front-end rendering from business logic and handling sensitive data. This clear separation allows us to handle any sensitive information inside Rust, which gives an extra layer of defense in order to maintain optimal security and privacy.
 
@@ -28,13 +28,13 @@ The Identity Wallet is a sensitive piece of software as it will handle private k
 
 As shown in the above picture, we would need to develop the following components:
 * A Tauri-based Identity Wallet for Android and IOS
-* Develop a secure solution for handling sensitive data and private keys in the mobile environment
 * A DID-Pallet for Substrate following the DID standard
-* A W3C approved submission for a Substrate DID Method
 * Implement the SIOPv2, OpenID4VP and OpenID4VCI standards
 * Research and implement Browser - Application communication via deeplinking, websockets or via a browser plug-in.
 
 This application does not (yet) include the following components that we may or may not request as follow-up projects:
+* A W3C approved submission for a Substrate DID Method
+* A secure solution for handling sensitive data and private keys in the mobile environment
 * Support for Revocation via the [StatusList2021](https://w3c.github.io/vc-status-list-2021/) W3C standard
 * Support for Selective Disclosure
 * Support for [ISO 18013-5:202](https://www.iso.org/standard/69084.html)
@@ -66,10 +66,7 @@ The project is similar to existing DID projects for specific Blockchains using S
 	* Daniel Mader - Full-stack / Rust Developer
 	* Currently Hiring a Mobile Developer
 
-If this project is accepted, we would hire an additional Rust developer with Substrate experience and a front-end developer.
-
-* External Partner
-	* External UX team specialist on Web3 and experienced with Digital Identity
+If this project is accepted, we would hire an additional Rust developer with Substrate experience and a part-time front-end developer.
 
 ### Contact
 
@@ -138,66 +135,32 @@ In the last screen, we show that we always give the user the insight in the hist
 
 ## Development Roadmap :nut_and_bolt:
 
-We are aware that the project plan described in the next section in fact describes two projects (DID Pallet and the Identity Wallet) and have a relatively high budget for these type of grant requests, especially as a new party in the ecosystem. Yet, we have designed the project as is due to the fact that both the Pallet and the Wallet depend on each other. As Impierce Technologies, we wouldn't be making significant steps towards building an ecosystem if we would just build a DID pallet. In addition, in the past we have build an DID implementation for IOTA and observed the lack of an Identity Wallet as the biggest roadblock to adoption. Due to these reasons, we fundamentally believe that any ecosystem should only invest in DID by committing to building both components.
+As a larger project, we would like to fully develop a production-ready DID Pallet and Wallet. The wallet will continue to gain additional functionalities, features and security updates and has a much larger scope then is described in this grant proposal. While we are an experienced team in the SSI world, we are not well-known in the Substrate / Polkadot ecosystem. This grant request is scoped as a PoC, with our intention of showing our skill and ability to deliver amazing software. We would hope to follow this up with a Polkadot Treasury Proposal for maturing the Pallet and Wallet. 
+
+We have designed the PoC project as is due to the fact that both the Pallet and the Wallet depend on each other. As Impierce Technologies, we wouldn't be making significant steps towards building an ecosystem if we would just build a DID pallet. In addition, in the past we have build an DID implementation for IOTA and observed the lack of an Identity Wallet as the biggest roadblock to adoption. Due to these reasons, we fundamentally believe that any ecosystem should only invest in DID by committing to building both components.
 
 For the milestones, we have tried to keep them short, but also didn't want to create too many milestones. As we will be building both the DID Pallet and Identity Wallet in parallel, we aren't sure what the order of the delivery will be. As such, we have split the milestones in to two parallel paths, but have ordered them in the expected order of delivery. The time frames between delivery of milestones may also be shorter then the duration due to parallel developments.
 
 ### Overview
 
-- **Total Estimated Duration:** ~24 Weeks
-- **Full-Time Equivalent (FTE):**  4.5 FTE
-- **Total Costs:** 172,400 USD
+- **Total Estimated Duration:** ~15 Weeks (Parallel developments)
+- **Full-Time Equivalent (FTE):** 4.5 FTE
+- **Total Costs:** 82,400 USD
 
-### Milestone 1-Wallet — UX Designs
-
-- **Estimated duration:** 6.5 weeks
-- **FTE:**  2.5
-- **Costs:** 26,000 USD
-
-*Description*
-
-Using a third party specialist in UX/UI designs for Web3 application, including experience with Self-Sovereign Identity (SSI), we will deliver a full design for the Identity Wallet.  The UX party will first research existing Identity Wallet solutions and afterwards create a full design of high-fidelity screens for a Mobile Identity Wallet for all features and functionalities further described in this project.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| 1. | UX Designs | High-fidelity UX/UI designs for a mobile Identity Wallet that can handle all features under the scope of this project. |
-| 2. | Research | A rapport that contains all research done by the UX team to explain design choices. |
-
-### Milestone 2-Wallet — OpenID Prototype
-
-- **Estimated duration:** 6 weeks
-- **FTE:**  2,5 (devs)
-- **Costs:** 24,000 USD
-
-*Description*
-
-In this milestone, we will develop a prototype of all the important interactions that take place between a user, the identity provider and the relying party. We implement and test the various standards such as SIOPv2, OpenID4VP and OpenID4VCI. We will test out existing implementations of these standards and will contribute fixes or implement them from scratch where necessary into the ARF standards repo.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both inline documentation of the code and explain the overall architecture and interactions between the standards. |
-| **0c.** | Testing and Testing Guide | Besides unit tests, a set of scenarios will be provided to test the interaction of several standards. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article that explains the standards, what they achieve and why they are important. |
-| 1. | Identity Wallet | The Identity Wallet Github will provide a simple Tauri-based mobile app that implements and tests the aforementioned standards. |
-| 2. | ARF Standards | A Github repo that contains collect and/or implements the SIOPv2, OpenID4VP and OpenID4VCI and will grow in time to fully cover the Architecture Reference Framework for eIDAS. |
-
-### Milestone 1-Pallet — MVP DID Pallet
+### Milestone 1 — MVP DID Pallet
 
 - **Estimated duration:** 12 weeks
-- **FTE:**  2,0 (devs)
+- **FTE:**  2,0
 - **Costs:** 38,400 USD
 
 *Description*
 
-We will develop a feature complete DID Pallet that is compliant with the DID standard and follow our research and feedback collected from the Substrate community through interviews and research. We will deliver an initial document describing how the method works which can later be submitted to W3C. As we are sure to gather feedback and find improvements, we would keep it in MVP status until we are more comfortable with stabilizing the method and its implementation in a later milestone. We will run either run a public testnet or join an existing one which will support this DID Pallet for testing purposes.
+We will develop a feature complete DID Pallet that is compliant with the DID standard and follow our research and feedback collected from the Substrate community through interviews and research. We will deliver an initial document describing how the method works which can later be submitted to W3C. We will run either run a public testnet or join an existing one which will support this DID Pallet for testing purposes.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **instructions** on how to run the code. We will also draft an initial rough DID method explaining how DID on Substrate work. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **instructions** on how to run the code. We will also draft an initial rough DID method explaining how DID on Substrate works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness.|
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will write an article on how DID works on Substrate and highlight some of the features, asking for feedback. |
@@ -205,12 +168,11 @@ We will develop a feature complete DID Pallet that is compliant with the DID sta
 | 2. | DID Method Specification | We provide a draft version of the DID Method Specification following W3C requirements. |
 | 3. | DID Testnet | We run a public testnet or join an existing one which will implement the DID Pallet. |
 
+### Milestone 2 — Login Wallet MVP
 
-### Milestone 3-Wallet — Login Wallet
-
-- **Estimated duration:** 5 weeks
-- **FTE:**  2,5 (devs)
-- **Costs:** 20,000 USD
+- **Estimated duration:** 11 weeks
+- **FTE:**  2,5
+- **Costs:** 44,000 USD
 
 *Description*
 
@@ -226,59 +188,24 @@ The previously implement standards will now be accompanied by the full-implement
 | 1. | Identity Wallet |  The Identity Wallet repo is updated with a MVP Tauri Identity Wallet including a standard design. |
 | 2. | Identity Client | We deliver an Identity Client that supports SIOPv2. |
 | 3. | Integration Guide |  A guide that explains how to integrate as a website with the new login functionality |
-| 4. | Whitelabel Guide | A guide that explains developers on how to create their own app |
-
-
-### Milestone 2-Pallet - Release of Method and Pallet
-
-- **Estimated duration:** 8 weeks
-- **FTE:**  1,0
-- **Costs:** 19,200 USD
-
-*Description*
-
-For this milestone, we mostly incorporate feedback received during testing and stabilize the pallet. This milestone includes an accepted submission into W3C DID Method Registry for the DID Pallet. Lastly, we will integrate the method into the identity.rs framework that fully support DID and Verifiable Credentials, making it easy for developers to create their own SSI applications.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that e up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We announce the release of the DID Pallet and provide a short explainer of what benefits it brings to chains and encourage them to adopt the Pallet into their Substrate chains. |
-| 1. | Substrate DID Pallet | Release a v1.0 of the DID Pallet with incorporated feedback |
-| 2. | DID Method Specification | Finalized DID Method Specification |
-| 3. | Approval by W3C DID | Approved PR to W3C DID Method Registry for being added |
-| 4. | Integration with Identity.rs | Integrate the DID method into Identity.rs framework |
-
-
-### Milestone 4-Wallet — Credentials
-
-- **Estimated duration:** 8 weeks
-- **FTE:**  3,5 (devs) + UX
-- **Costs:** 44,800 USD
-
-*Description*
-
-In this last milestone we update the app to fully support Verifiable Credentials. This includes Verifiable Credential management, sharing and receiving. Users will be able to share and verify credentials peer-to-peer or with other parties via the OpenId standards.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide **inline documentation** of the code, contribution guidelines for translations and a white labeling guide. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests. We will set up basic end-to-end testing and perform user testing. |
-| **0d.** | Docker | Where relevant and possible, we will deliver a Dockerfile to test out the functionality of this milestone. |
-| 0e. | Article | We will publish an **article** that announced the release of the second version of the app and how it can be used or how parties may integrate with this new technology! |
-| 1. | Identity Wallet |  The Identity Wallet repo is updated with full support for Verifiable Credentials and OpenID4VP and OpenID4VCI. |
-| 2. | Identity Client | The Identity Client repo is updated to support OpenID4VP and OpenID4VCI. |
-| 3. | Integration Guide |  Update the guide to include Verifiable Credentials |
-| 4. | Demo | Integrate the Wallet into an Digital Identity and OpenBadges demo in collaboration with a Dutch school of 20.000 students |
+| 4. | ARF Standards | A Github repo that contains collect and/or implements the SIOPv2, OpenID4VP and OpenID4VCI and will grow in time to fully cover the Architecture Reference Framework for eIDAS. |
 
 ## Future Plans
 
 This project is the start of a larger journey to develop a healthy and vibrant identity ecosystem that follows widely accepted standards and is compatible with GDPR and eIDAS regulations. By developing the DID Pallet and the initial Identity Wallet, all Substrate-based Blockchains will be able to benefit from Digital Identity technology. After delivering this project, adoption and expanding features and services will be the main goal for Impierce Technologies.
 
 We will use the wallet for our own clients, promote it for new clients and parties and enhance it with additional features. We plan to add an extension system to the wallet such that parties can have their own space within user's identity wallet. This space can contain functionalities that specifically fit a party such as showing only particular Verifiable Credentials (think entry tickets), display NFTs, manage tokens or integrate services their services directly in the app.
+
+We plan to apply for the Polkadot Treasury to mature the outcome of this PoC into a full production-ready Identity Pallet and Wallet with the following additional features:
+* A W3C approved submission for a Substrate DID Method
+* A secure solution for handling sensitive data and private keys in the mobile environment
+* Support for Desktop environements: Windows, Linux and MacOS
+* Full integration of Verifiable Credentials in the Wallet
+* Implementation of OpenID4VP and OpenID4VCI
+* Multi-chain support for all Substrate chains with the DID Pallet enabled
+* An extention system for developers to integrate with the Wallet
+* A whitelabel solution for developers to brand their own app
+* Integration with Identity.rs
 
 The wallet will be extended to fully comply with the eIDAS regulations (according to the ARF design) meaning we plan to include support for:
 * Support for Revocation via the [StatusList2021](https://w3c.github.io/vc-status-list-2021/) W3C standard
