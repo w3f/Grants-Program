@@ -158,14 +158,14 @@ Additionally, our team members have between 5-10 years of experience within the 
 
 
 #### Usage of funds
-The grant would be utilized to help fund the developments outlined for building out Polkadot and Kusama with complete integration into the Infinity Wallet and Web3 Browser, its features and required infrastructure that will be developed. As we operate as a free to use platform for hundreds of thousands of users and are self funded, we require a grant to help cover the development costs. While this would provide Polkadot and Kusama with a much needed valuable platform that is solving many issues in the crypto, Web3 and payments spaces.
+The grant would be utilized to help fund the developments outlined for building out Polkadot with complete integration into the Infinity Wallet and Web3 Browser, its features and required infrastructure that will be developed. As we operate as a free to use platform for hundreds of thousands of users and are self funded, we require a grant to help cover the development costs. While this would provide Polkadot with a much needed valuable platform that is solving many issues in the crypto, Web3 and payments spaces.
 
 
 ## Future Plans
 Our long term plan is to continue to refine and deliver innovative solutions with the Infinity Wallet. Working closely with users to further establish Infinity Wallet as a leading wallet and DeFi ecosystem with Web3 browser, serving hundreds of millions of users on Desktop and Mobile.
 
 
-We have a lot planned over the next couple of years, however some of the developments planned over the next 6 months that could benefit Polkadot and Kusama in the future as we release them on a case by case basis include:
+We have a lot planned over the next couple of years, however some of the developments planned over the next 6 months that could benefit Polkadot in the future as we release them on a case by case basis include:
 
 
 * One-click in-wallet fiat on/off ramp;
@@ -176,7 +176,7 @@ We have a lot planned over the next couple of years, however some of the develop
 
 More on our overall roadmap that could benefit Polkadot and Kusama can be found on page 27, here: https://infinitywallet.io/docs/Infinity%20Wallet%20Deck.pdf OR our docs here https://docs.infinitywallet.io/infinity-wallet/infinity-ecosystem-roadmap
 
-Specific to Polkadot and Kusama, we will continue to provide ongoing support and integration into future developments/features/services on a case by case basis, as well as support in our unique user focused mobile version once launched. Along with continuously working with ecosystem projects and providing ecosystem support for Polkadot and Kusama Web3 projects and DApps with direct integrations into the Infinity Wallet DApp store. In which we will waive our usual DApp store listing fee for Polkadot and Kusama projects to help drive awareness and adoption of Polkadot and Kusama DApps/Web3 projects, and overall support their developers.
+Specific to Polkadot, we will continue to provide ongoing support and integration into future developments/features/services on a case by case basis, as well as support in our unique user focused mobile version once launched. Along with continuously working with ecosystem projects and providing ecosystem support for Polkadot Web3 projects and DApps with direct integrations into the Infinity Wallet DApp store. In which we will waive our usual DApp store listing fee for Polkadot projects to help drive awareness and adoption of Polkadot DApps/Web3 projects, and overall support their developers.
 
 
 ## Additional Information :heavy_plus_sign:
