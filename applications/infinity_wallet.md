@@ -107,17 +107,6 @@ Infinity Wallet provides a unique all-in-one wallet solution and the first Web3 
 
 * Our team has been within the crypto/blockchain space for close to 10 years. Having gained a vast amount of experience with the industry, and a deep understanding of what is missing and needed to onboard the next 1 billion users to DeFi & Web3.
 
-####  Benefit from our project
-Those who would benefit most would include Polkadot, the Polkadot Ecosystem (Developers & DApps), and Retail users (Polkadot holders/users).
-
-- Users (both novice and experienced) who desire to utilize Polkadot and its ecosystem or to take ownership of their finances and data, will benefit from a unique first of its kind solution made for mass adoption that will provide access to all their needs in a single access point. Enabling a high level user experience for Polkadot users for Web3, instant cross-border payments, DeFi, NFTs and much more on desktop and via the first desktop Web3 browser and DApp store, with mobile in the works.
-
-- Developers who desire to enable easy access to their DApps & Web3 projects in a single click via the first desktop Web3 browser, that removes the need for unfriendly and feature lacking browser extension wallets and enables easier onboarding and conversion of users for projects. Developers will also benefit from the Infinity Wallet DApp store which will drive additional exposure, awareness and adoption to their projects. Additionally developers’ tokens will benefit from default integration in the Infinity Wallet, providing access to a range of unique features/services enabling easier usage of tokens.
-
-- Polkadot will benefit from Infinity Wallet as it will enable easier usage, discoverability and adoption of Polkadot and its ecosystem by users and developers via the Infinity Wallet and Web3 Browser, and its wide range of unique features/services, as a first of its kind platform ecosystem. It will not only benefit current Polkadot users, but future Polkadot users too, making access to the Polkadot ecosystem as seamless as possible. Infinity Wallet will also provide constant awareness and adoption to Polkadot from hundreds of thousands of current users and future users for free, while providing ongoing Polkadot support.
-
-
-
 ## Team :busts_in_silhouette:
 
 ### Team members
