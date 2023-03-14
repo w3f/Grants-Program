@@ -120,8 +120,6 @@ Information on the core team members can be found at the following link: https:/
 
 ### Legal Structure
 
-Corporation
-
 - **Registered Address:** 71-75 Shelton Street, London, United Kingdom, WC2H 9JQ
 - **Registered Legal Entity:** Infinity Wallet
 
