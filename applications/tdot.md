@@ -3,6 +3,7 @@
 - **Team Name:** NUTS Finance
 - **Payment Address:** 0x679824d755B054a2a50358008472a6F400740319(DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/872#issuecomment-1424407082)
 
 ## Project Overview :page_facing_up:
 

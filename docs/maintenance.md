@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: Maintenance Grants
+title: 🛠️ Maintenance Grants
 ---
 
 <!-- ## :hammer_and_wrench: Maintenance Grants -->
