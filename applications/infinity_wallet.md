@@ -157,7 +157,7 @@ The grant would be utilized to help fund the developments outlined for building 
 Our long term plan is to continue to refine and deliver innovative solutions with the Infinity Wallet. Working closely with users to further establish Infinity Wallet as a leading wallet and DeFi ecosystem with Web3 browser, serving hundreds of millions of users on Desktop and Mobile.
 
 
-We have a lot planned over the next couple of years, however some of the developments planned over the next 6 months that could benefit Polkadot in the future as we release them on a case by case basis include:
+We have a lot planned over the next couple of years, however some of the developments planned over the next 6 months that could benefit Polkadot & Kusama in the future as we release them on a case by case basis include:
 
 
 * One-click in-wallet fiat on/off ramp;
@@ -166,7 +166,7 @@ We have a lot planned over the next couple of years, however some of the develop
 * Social Wallet (removing the need for a seed phrase and enabling users to create a wallet via social login, allowing for easier onboarding and usage of DeFi & Web3 by the general Web2 user required for mass adoption);
 
 
-More on our overall roadmap that could benefit Polkadot can be found on page 27, here: https://infinitywallet.io/docs/Infinity%20Wallet%20Deck.pdf OR our docs here https://docs.infinitywallet.io/infinity-wallet/infinity-ecosystem-roadmap
+More on our overall roadmap that could benefit Polkadot & Kusama can be found on page 27, here: https://infinitywallet.io/docs/Infinity%20Wallet%20Deck.pdf OR our docs here https://docs.infinitywallet.io/infinity-wallet/infinity-ecosystem-roadmap
 
 Specific to Polkadot & Kusama, we will continue to provide ongoing support and integration into future developments/features/services on a case by case basis, as well as support in our unique user focused mobile version once launched.
 
