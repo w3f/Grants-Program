@@ -2,7 +2,7 @@
 
 - **Team Name:** Infinity Wallet
 - **Payment Address:** TODO
-- **Level:** 3
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
@@ -135,21 +135,21 @@ Additionally, our team members have between 5-10 years of experience within the 
 
 ### Overview
 
-- **Total Estimated Duration:** 3 weeks
+- **Total Estimated Duration:** 4 weeks
 - **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs:** 30,000 USD
 
 ### Milestone 1 — Polkadot Developments
 
-- **Estimated duration:** 3 weeks (estiamted 360 hours)
+- **Estimated duration:** 4 weeks
 - **FTE:** 3
 - **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Develop out Polkadot and core functionalities | - Polkadot chain integration/support in wallet;<br/>- Polkadot core functionalities (balance tracking, send, receive, etc);<br/>- Complete Polkadot transaction history with advanced information and smart contract transaction detection;<br/>- Integrate/develop portfolio & analytics management for Polkadot;|
+| 1. | Develop out Polkadot and core functionalities | - Polkadot chain integration/support in wallet;<br/>- Polkadot core functionalities (balance tracking, send, receive, create/restore wallet and etc);<br/>- Complete Polkadot transaction history with advanced information;<br/>- Integrate/develop portfolio & analytics management for Polkadot;|
 | 2. | Develop Polkadot custom asset importing | - Ability to import and custom manage non-default integrated tokens;<br/>- Support top Polkadot tokens as default enabled/integrated for instant use;<br/>- Develop and support Polkadot tokens across available Infinity Wallet features;|
-| 3. | Web3 browser development and create Polkadot Web3 DApp store | - Desktop Web3 Browser integration/development to allow for seamless transacting and one-click connecting/management with Polkadot Web3 projects and DApps, removing the need for browser extensions;<br/>- Web3/DApp Store to allow for easy discoverability and adoption of Polkadot ecosystem projects; |
+| 3. | Web3 browser development and create Polkadot Web3 DApp store | - Desktop Web3 Browser to allow for seamless transacting and one-click connecting/management with Polkadot Web3 projects and DApps, removing the need for browser extensions;<br/>- Web3/DApp Store to allow for easy discoverability and adoption of Polkadot ecosystem projects; |
 | 4. | Cross-chain swap/bridge between multiple tokens/chains | Cross-chain swap support for Polkadot (Allowing users to directly onboard to Polkadot from different chains “BTC, ETH, BSC etc.” within a single click) |
 | 5. | Implement Polkadot into remaining features/services and secondary features. | - Contact/Address book;<br/>- Payment requests;<br/>- Desktop drag and drop QR scan;<br/>- Live Market stats;<br/>- Price Alerts;<br/>- Etc.. |
 | 6. | Internal testing | Internal testing and auditing of the developments, infrastructure and integrations |
