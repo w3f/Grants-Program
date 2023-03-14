@@ -144,7 +144,7 @@ mod governance {
         /// TODO
     }
     
-    impl RewardsPool {
+    impl Governance {
         /// Called by RewardsPool contract to start accepting proposals
         pub fn start_governance(&mut self, id: ProjectId) -> Result<(), Error> {}
         /// Called by engineer to create proposal for rewards
