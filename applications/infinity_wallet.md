@@ -147,17 +147,17 @@ Additionally, our team members have between 5-10 years of experience within the 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Develop out Polkadot and core functionalities | - Polkadot chain integration/support in wallet;<br/>- Polkadot core functionalities (balance tracking, send, receive, create/restore wallet and etc);<br/>- Complete Polkadot transaction history with advanced information;<br/>- Integrate/develop portfolio & analytics management for Polkadot;|
-| 2. | Web3 browser development and create Polkadot Web3 DApp store | - Desktop Web3 Browser to allow for seamless transacting (signing and approving) and one-click connecting/management (manage DApp connecting) with Polkadot Web3 projects and DApps, removing the need for browser extensions;<br/>- Web3/DApp Store to allow for easy discoverability and adoption of Polkadot ecosystem projects; |
-| 3. | Cross-chain swap/bridge between multiple tokens/chains | Cross-chain swap support for Polkadot (Allowing users to directly onboard to Polkadot from different chains “BTC, ETH, BSC etc.” within a single click) |
-| 4. | Implement Polkadot into remaining features/services and secondary features. | - Contact/Address book;<br/>- Payment requests;<br/>- Desktop drag and drop QR scan;<br/>- Live Market stats;<br/>- Price Alerts;<br/>- Etc.. |
+| 1. | Develop out Polkadot & Kusama core functionalities | - Polkadot & Kusama chain integration/support in wallet;<br/>- Polkadot & Kusama core functionalities (balance tracking, send, receive, create/restore wallet and etc);<br/>- Complete Polkadot & Kusama transaction history with advanced information;<br/>- Integrate/develop portfolio & analytics management for Polkadot & Kusama;|
+| 2. | Web3 browser | - Desktop Web3 Browser to allow for seamless transacting (signing and approving) and one-click connecting/management (manage DApp connecting), removing the need for browser extensions;<br/>- Web3/DApp Store to allow for easy discoverability and adoption of Polkadot & Kusama ecosystem projects; |
+| 3. | Cross-chain swap/bridge between multiple tokens/chains | Cross-chain swap support for Polkadot & Kusama (Allowing users to directly onboard to Polkadot & Kusama from different chains “BTC, ETH, BSC etc.” within a single click) |
+| 4. | Implement Polkadot & Kusama into remaining features/services and secondary features. | - Contact/Address book;<br/>- Payment requests;<br/>- Desktop drag and drop QR scan;<br/>- Live Market stats;<br/>- Price Alerts;<br/>- Etc.. |
 | 5. | Internal testing | Internal testing and auditing of the developments, infrastructure and integrations |
-| 6. | Release of the Polkadot integration & developments | - Release on Windows, MacOS and Linux with the Polkadot integrations & developments;<br/>- Support Polkadot as a native chain and token;<br/>- We will announcements across all social channels and in-wallet;<br/>- We will create a custom Polkadot web page on the website;<br/>- We will start collaborating with Polkadot ecosystem projects on direct integration of tokens and DApps into the Infinity Wallet to drive Polkadot ecosystem adoption and discoverability;<br/>- We will create a video tutorial to demonstrate how to use Polkadot functions & developments; |
+| 6. | Release of the Polkadot & Kusama integration & developments | - Release on Windows, MacOS and Linux with the Polkadot & Kusama integrations & developments;<br/>- Support Polkadot & Kusama as a native chain and token;<br/>- We will announcements across all social channels and in-wallet;<br/>- We will create a custom Polkadot & Kusama web page on the website;<br/>- We will create a video tutorial to demonstrate how to use Polkadot functions & developments; |
 
 
 
 #### Usage of funds
-The grant would be utilized to help fund the developments outlined for building out Polkadot with complete integration into the Infinity Wallet and Web3 Browser, its features and required infrastructure that will be developed. As we operate as a free to use platform for hundreds of thousands of users and are self funded, we require a grant to help cover the development costs. While this would provide Polkadot with a much needed valuable platform that is solving many issues in the crypto, Web3 and payments spaces.
+The grant would be utilized to help fund the developments outlined for building out Polkadot & Kusama with complete integration into the Infinity Wallet and Web3 Browser, its features and required infrastructure that will be developed. As we operate as a free to use platform for hundreds of thousands of users and are self funded, we require a grant to help cover the development costs. While this would provide Polkadot & Kusama with a much needed valuable platform that is solving many issues in the crypto, Web3 and payments spaces.
 
 
 ## Future Plans
@@ -175,7 +175,7 @@ We have a lot planned over the next couple of years, however some of the develop
 
 More on our overall roadmap that could benefit Polkadot can be found on page 27, here: https://infinitywallet.io/docs/Infinity%20Wallet%20Deck.pdf OR our docs here https://docs.infinitywallet.io/infinity-wallet/infinity-ecosystem-roadmap
 
-Specific to Polkadot, we will continue to provide ongoing support and integration into future developments/features/services on a case by case basis, as well as support in our unique user focused mobile version once launched. Along with continuously working with ecosystem projects and providing ecosystem support for Polkadot Web3 projects and DApps with direct integrations into the Infinity Wallet DApp store. In which we will waive our usual DApp store listing fee for Polkadot projects to help drive awareness and adoption of Polkadot DApps/Web3 projects, and overall support their developers.
+Specific to Polkadot & Kusama, we will continue to provide ongoing support and integration into future developments/features/services on a case by case basis, as well as support in our unique user focused mobile version once launched.
 
 
 ## Additional Information :heavy_plus_sign:
