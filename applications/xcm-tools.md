@@ -34,7 +34,7 @@ the lack of the function of sending transactions, I also need to change dependen
    signature (sr25519, ed25519), and send transaction function
 
 2. Send xcm messages between relay chain and parachain and between parachain and parachain, support VMP(UMP & DMP) and
-   HRMP
+   HRMP, and supports the following methods
 
 * LimitedReserveTransferAssets
 * LimitedTeleportAssets
@@ -122,7 +122,7 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), suppo
 |     2. | extrinsic encode | [extrinsic.go](https://github.com/itering/scale.go/blob/master/extrinsic.go#L19) Add encode feature                                                  |  
 |     3. | Send extrinsic   | Send transaction support, include ed25519&sr25519                                                                                                    |  
 |     4. | Testing          | Including all the unit tests mentioned above                                                                                                         |
-|     5. | Github action    | Auto test when comparator commit code                                                                                                                |  
+|     5. | Github action    | Auto test when commit code                                                                                                                           |  
 |     6. | Pull request     | Create pull request merge into [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [scale.go](https://github.com/itering/scale.go) |  
 
 ### Milestone 2
@@ -138,7 +138,7 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), suppo
 |     1. | Send ump message  | support [UMP](https://wiki.polkadot.network/docs/learn-xcm#vmp-vertical-message-passing) message send |  
 |     2. | Send dmp message  | support [DMP](https://wiki.polkadot.network/docs/learn-xcm#vmp-vertical-message-passing) message send |  
 |     3. | Send hrmp message | support [HRMP](https://wiki.polkadot.network/docs/learn-xcm#hrmp-xcmp-lite) message send              |  
-|     4. | Github action     | Auto test when comparator commit code                                                                 |  
+|     4. | Github action     | Auto test when commit code                                                                            |  
 |     5. | Testing           | Including all the unit tests mentioned above                                                          |
 
 ### Milestone 3
@@ -154,7 +154,7 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), suppo
 |     1. | Parse xcm instructions | Parse instructions raw data, support xcm format v1 & v2                                |  
 |     2. | Tracing transaction    | Support xcm format v1 & v2                                                             |  
 |     3. | Cli support            | Add command line tool to send message & parse xcm instructions && tracking transaction |  
-|     4. | Github action          | Auto test when comparator commit code                                                  |  
+|     4. | Github action          | Auto test when commit code                                                             |  
 |     5. | Testing                | Including all the unit tests mentioned above                                           |
 
 ## Future Plans
