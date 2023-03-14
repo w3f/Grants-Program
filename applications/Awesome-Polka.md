@@ -77,7 +77,7 @@ In summary, Awesome Polka's search infrastructure is designed to provide a seaml
 
 Search Element             |  Search Focused
 :-------------------------: | :-------------------------: 
-<img src="https://user-images.githubusercontent.com/40897846/223080151-88030420-4069-43c2-aa9c-46c5a5aff226.png" width="500px">| <img src="https://user-images.githubusercontent.com/40897846/223080239-26b43b70-a915-4310-9d73-8f3916152700.png" width="500px">
+<img src="https://user-images.githubusercontent.com/40897846/223080151-88030420-4069-43c2-aa9c-46c5a5aff226.png" width="500px"/>| <img src="https://user-images.githubusercontent.com/40897846/223080239-26b43b70-a915-4310-9d73-8f3916152700.png" width="500px"/>
 
 **Solution on Static Project Pages**
 
@@ -200,7 +200,7 @@ In addition to my technical skills, I have also been actively involved in the wi
 
 The user interface and search infrastructure of this project are largely complete and ready for discovery. To get a glimpse of the minimum viable product (MVP), you can either take a look at the repository or visit the website.
 
-<img src="https://user-images.githubusercontent.com/40897846/223081582-4f6de29a-bbb0-402e-9a25-e5c4870741b0.png" width="650px">
+<img src="https://user-images.githubusercontent.com/40897846/223081582-4f6de29a-bbb0-402e-9a25-e5c4870741b0.png" width="650px"/>
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -223,7 +223,7 @@ This project is planned as 1 milestone, it will be completed in one months.
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | I will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | I will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
-| **1.** | UI & UX Development | **Home Page:** Visually appealing and user-friendly homepage which includes latest articles, popular categories and many more <br /><br /> **Projects Page:** Showcase page with detailed filtering and search infrastructure </br></br>**Project Detail Page:** Project details page to display detailed information about project with several modules like explained in the solution <br /></br>**Articles Page:** Articles page to showcase informative articles related to the subject <br /></br>**Article Detail Page:** Detail page for individual articles to display their full content <br /></br>**Ranking Page:** Ranking page based on votes and token stats which is supported by CoinGecko api to showcase popular projects and articles </br></br> **Learn Page:** Useful resources to learn about polkadot ecosystem </br></br> **UX Improvements & Testing:** I will work to improve the user experience by ensuring that the user interface is fully compatible with mobile and tablet devices. |
+| **1.** | UI & UX Development | **Home Page:** Visually appealing and user-friendly homepage which includes latest articles, popular categories and many more <br /> **Projects Page:** Showcase page with detailed filtering and search infrastructure <br/>**Project Detail Page:** Project details page to display detailed information about project with several modules like explained in the solution <br />**Articles Page:** Articles page to showcase informative articles related to the subject <br />**Article Detail Page:** Detail page for individual articles to display their full content <br />**Ranking Page:** Ranking page based on votes and token stats which is supported by CoinGecko api to showcase popular projects and articles <br/> **Learn Page:** Useful resources to learn about polkadot ecosystem </br/> **UX Improvements & Testing:** I will work to improve the user experience by ensuring that the user interface is fully compatible with mobile and tablet devices. |
 | *2.* | Project Owner Dashboard  | As part of this milestone, I will be implementing both the frontend and backend components of the Project Owner Dashboard. This involves designing and developing the user interface (UI) for the dashboard, as well as building the necessary backend infrastructure to support its functionality. To ensure the quality of my work, I will conduct thorough testing to ensure that the dashboard is user-friendly and performs as expected. My ultimate goal is to provide project owners with a seamless and efficient experience when updating their pages and publishing articles on our platform.
 
 ## Future Plans
