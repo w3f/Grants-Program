@@ -63,7 +63,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [justmert](https://github.com/justmert)                        | [PolkaFlow](polkaflow.md)                                       | [GitHub](https://github.com/justmert)                               | ☐          |        ☐       |      ☐     |
 | [BelSoft](https://www.belsoft.rs)                        | [Diffy messenger](Diffy_chat.md)                                       | [GitHub](https://github.com/1db1)                               | ☐          |        ☐       |      ☐     |
 | [Zkverse](https://github.com/Zkvers)                        | [Zkverse](zkverse.md)                                       | [GitHub](https://github.com/Zkvers/substrate-zk)                               | ☐          |        ☐       |      ☐     |
-
+| Taiwan Research-based Biopharmaceutical Manufacturers Association                        | [Claps Health](Claps.md)                                       | [GitHub](https://github.com/Claps-Health/)                               | ☐          |        ☐       |      ☐     |
 
 ## 2022
 
