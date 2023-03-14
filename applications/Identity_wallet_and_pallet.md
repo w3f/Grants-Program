@@ -155,7 +155,9 @@ For the milestones, we have tried to keep them short, but also didn't want to cr
 
 *Description*
 
-We will develop a feature complete DID Pallet that is compliant with the DID standard and follow our research and feedback collected from the Substrate community through interviews and research. We will deliver an initial document describing how the method works which can later be submitted to W3C. We will run either run a public testnet or join an existing one which will support this DID Pallet for testing purposes.
+We will develop a feature complete DID Pallet that is compliant with the DID standard and follow our research and feedback collected from the Substrate community through interviews and research. The Pallet will implement all requirements of the DID standard, including different all 5 verificationMethods, of which 'capabilityInvocation' will be empowered to sign DID state changes. Unlike previous DID implementations inside the ecosystem, this method will fully comply with the controller feature, allowing both the subject and registered controller keys to alter the state of a DID. Any DID updates will be written to a Substrate-based Blockchain, in an efficient compressed way to lower fees. The method has forward compatibility for updates in hashing algorithm, compression algorithm and changes to the general DID update messages. Using a UTXO-based system, the latest state of a DID Document can be extracted from the ledger state without having to download its entire history. The Pallet will in general be relatively challenging as UTXO-based DID Document state management is rather new and unique, while also being compliant with the challenging controller requirements from the standard.
+
+We will deliver an initial document describing how the method works which can later be submitted to W3C. We will run either run a public testnet or join an existing one which will support this DID Pallet for testing purposes.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -185,8 +187,8 @@ The previously implement standards will now be accompanied by the full-implement
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests. We will set up basic end-to-end testing and perform user testing. |
 | **0d.** | Docker | Where relevant and possible, we will deliver a Dockerfile to test out the functionality of this milestone. |
 | 0e. | Article | We will publish an **article** that announced the release of the app and how it can be used or how parties may integrate with this new technology! |
-| 1. | Identity Wallet |  The Identity Wallet repo is updated with a MVP Tauri Identity Wallet including a standard design. |
-| 2. | Identity Client | We deliver an Identity Client that supports SIOPv2. |
+| 1. | Identity Wallet |  A MVP Tauri Identity Wallet that utilizes the Substrate DID Method from the previous milestone for DID management. |
+| 2. | Identity Client | We deliver an Identity Client library that supports SIOPv2 for easy adoption in different environments. |
 | 3. | Integration Guide |  A guide that explains how to integrate as a website with the new login functionality |
 | 4. | ARF Standards | A Github repo that contains collect and/or implements the SIOPv2, OpenID4VP and OpenID4VCI and will grow in time to fully cover the Architecture Reference Framework for eIDAS. |
 
