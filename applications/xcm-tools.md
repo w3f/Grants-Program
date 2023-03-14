@@ -114,15 +114,16 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), suppo
 * **FTE:**  1
 * **Costs:** 6000 USDC
 
-| Number | Deliverable      | Specification                                                                                       |
-|-------:|------------------|-----------------------------------------------------------------------------------------------------|
-|    0a. | License          | MIT                                                                                                 |
-|    0b. | Documentation    | Simple documentation on how to use and how to test                                                  |
-|     1. | Sign message     | Add sr25519 & ed25519 sign message                                                                  |  
-|     2. | extrinsic encode | [extrinsic.go](https://github.com/itering/scale.go/blob/master/extrinsic.go#L19) Add encode feature |  
-|     3. | Send extrinsic   | Send transaction support, include ed25519&sr25519                                                   |  
-|     4. | Testing          | Including all the unit tests mentioned above                                                        |
-|     5. | Github action    | Auto test when comparator commit code                                                               |  
+| Number | Deliverable      | Specification                                                                                                                                        |
+|-------:|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License          | MIT                                                                                                                                                  |
+|    0b. | Documentation    | Simple documentation on how to use and how to test                                                                                                   |
+|     1. | Sign message     | Add sr25519 & ed25519 sign message                                                                                                                   |  
+|     2. | extrinsic encode | [extrinsic.go](https://github.com/itering/scale.go/blob/master/extrinsic.go#L19) Add encode feature                                                  |  
+|     3. | Send extrinsic   | Send transaction support, include ed25519&sr25519                                                                                                    |  
+|     4. | Testing          | Including all the unit tests mentioned above                                                                                                         |
+|     5. | Github action    | Auto test when comparator commit code                                                                                                                |  
+|     6. | Pull request     | Create pull request merge into [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [scale.go](https://github.com/itering/scale.go) |  
 
 ### Milestone 2
 
