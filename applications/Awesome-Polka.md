@@ -2,7 +2,7 @@
 
 - **Team Name:** Awesome Polka
 - **Payment Address:** [0xa632439DE1592936fbA3368053eaafd491443493](https://etherscan.io/address/0xa632439DE1592936fbA3368053eaafd491443493) (USDC, Ethereum (ERC20))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
