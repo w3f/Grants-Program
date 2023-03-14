@@ -118,11 +118,6 @@ Information on the core team members can be found at the following link: https:/
 - **Contact Email:** aron@infinitywallet.io
 - **Website:** [infinitywallet.io](https://infinitywallet.io/)
 
-### Legal Structure
-
-- **Registered Address:** 71-75 Shelton Street, London, United Kingdom, WC2H 9JQ
-- **Registered Legal Entity:** Infinity Wallet
-
 ### Team's experience
 
 Our team is made up from individuals that have extensive experience in the space, with a complete crypto experience from Smart Contracts, DeFi/Web3 projects, DApp development, Wallet and more. Our team has a general background in software development and UI/UX.
