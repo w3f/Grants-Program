@@ -204,17 +204,17 @@ The user interface and search infrastructure of this project are largely complet
 
 ## Development Roadmap :nut_and_bolt:
 
-This project is planned as 2 milestone, it will be completed in two months.
+This project is planned as 1 milestone, it will be completed in one months.
 
-- **Total Estimated Duration:** ~2 month
-- **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 26,000 USD
+- **Total Estimated Duration:** ~1 month
+- **Full-Time Equivalent (FTE):**  1
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 13,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -224,22 +224,7 @@ This project is planned as 2 milestone, it will be completed in two months.
 | **0d.** | Docker | I will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | I will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
 | **1.** | UI & UX Development | **Home Page:** Visually appealing and user-friendly homepage which includes latest articles, popular categories and many more <br /><br /> **Projects Page:** Showcase page with detailed filtering and search infrastructure </br></br>**Project Detail Page:** Project details page to display detailed information about project with several modules like explained in the solution <br /></br>**Articles Page:** Articles page to showcase informative articles related to the subject <br /></br>**Article Detail Page:** Detail page for individual articles to display their full content <br /></br>**Ranking Page:** Ranking page based on votes and token stats which is supported by CoinGecko api to showcase popular projects and articles </br></br> **Learn Page:** Useful resources to learn about polkadot ecosystem </br></br> **UX Improvements & Testing:** I will work to improve the user experience by ensuring that the user interface is fully compatible with mobile and tablet devices. |
-
-### Milestone 2
-
-- **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 13,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Unlicense |
-| **0b.** | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | I will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **0e.** | Article | I will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
-| **1.** | Project Owner Dashboard  | As part of this milestone, I will be implementing both the frontend and backend components of the Project Owner Dashboard. This involves designing and developing the user interface (UI) for the dashboard, as well as building the necessary backend infrastructure to support its functionality. To ensure the quality of my work, I will conduct thorough testing to ensure that the dashboard is user-friendly and performs as expected. My ultimate goal is to provide project owners with a seamless and efficient experience when updating their pages and publishing articles on our platform.  <br/><br/> **For project owners who wants to make fast updates on their mobile devices also Android and IOS apps will be deployed.** |
-| **2.** | Admin Dashboard  | A powerful dashboard for managing content on the platform. As an admin, the individual responsible for managing content is tasked with setting categories, reviewing and approving or rejecting projects, and making requests for fixing inappropriate content. The dashboard is designed to streamline these tasks and provide an efficient workflow for managing platform content. <br/><br/> Similar to the Project Owner Dashboard, authentication is handled through Magic Web3 wallet to ensure a secure and seamless experience. The dashboard is tailored to meet the unique needs of admins and includes both frontend and backend implementations, as well as thorough testing to ensure the functionality and usability of the dashboard. The ultimate goal is to provide admins with a comprehensive and user-friendly platform for effectively managing content and ensuring the high quality of the platform. <br/><br/> **For admins who wants to make fast updates on their mobile devices also Android and IOS apps will be deployed.** |
+| *2.* | Project Owner Dashboard  | As part of this milestone, I will be implementing both the frontend and backend components of the Project Owner Dashboard. This involves designing and developing the user interface (UI) for the dashboard, as well as building the necessary backend infrastructure to support its functionality. To ensure the quality of my work, I will conduct thorough testing to ensure that the dashboard is user-friendly and performs as expected. My ultimate goal is to provide project owners with a seamless and efficient experience when updating their pages and publishing articles on our platform.
 
 ## Future Plans
 
