@@ -1,7 +1,7 @@
 # Infinity Wallet & Web3 Browser
 
 - **Team Name:** Infinity Wallet
-- **Payment Address:** TODO
+- **Payment Address:** 0xb7D6937F3aa9E09817C045b7d5b5Fb5064370671
 - **Level:** 2
 
 ## Project Overview :page_facing_up:
