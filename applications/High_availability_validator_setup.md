@@ -91,7 +91,7 @@ This grant proposal is a follow-up to a discussion that began in autumn 2022. Si
 
 ### Overview
 
-The development of the specified goal will be broken into 3 milestones, lasting 3 weeks (M1), 4 weeks (M2) and 5 weeks (M3).
+The development of the specified goal will be broken into 3 milestones, lasting 4 weeks (M1), 3 weeks (M2) and 2 weeks (M3).
 
 
 Definition of Done for each deliverable:
@@ -110,9 +110,9 @@ At the end of each milestone:
 
 ## Deliverables :nut_and_bolt:
 
-* **Total Estimated Duration:** 12 weeks
+* **Total Estimated Duration:** 9 weeks
 * **Full-time equivalent (FTE):** 1
-* **Total Costs:** 30,000 DAI
+* **Total Costs:** 25,000 DAI
 
 ### Milestone 1 - Block authoring, finalization  & liveness PoC
 
@@ -122,15 +122,15 @@ The goal of the first milestone will be adding a switch to the substrate codebas
 * **FTE:** 1
 * **Costs:** 12,500 DAI
 
-| Number | Deliverable | Specification | Testing
-| ------------- | ------------- | ------------- | ------------- |
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- | 
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | **0b.** | Documentation | We will provide inline documentation.|
 | **0c.** | Testing and Testing Guide | We will provide unit tests and the guidelines for running and testing it the scope. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Update substrate | Modify the substrate code to conditionally submit blocks/votes for finalised blocks (GRANDPA)/`I'm online` messages. |
 | 2. | Update substrate client - cli | Modify the substrate code to conditionally grant or permit permissions. There will be option to run node in permission granted or permission denied mode). It will be useful to prove that permissioning works by running two nodes with same auth keys but different modes (permission granted/denied) |
-| 3. | Integration test | A dockerised setup that allows to run network in setup described above. | Run `. docker/build.sh` and `docker-compose up`
+| 3. | Integration test | A dockerised setup that allows to run network in setup described above. |
 
 ### Milestone 2 - External service for permission granting
 
@@ -141,7 +141,7 @@ The service should contain only basic logic (e.g. return `true` for node that as
 
 * **Estimated Duration:** 3 weeks
 * **FTE:** 1
-* **Costs:** 10,000 DAI
+* **Costs:** 7,500 DAI
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -162,7 +162,7 @@ Each node should try to get authorship premission based on the KV state. Replace
 
 * **Estimated Duration:** 2 weeks
 * **FTE:** 1
-* **Costs:** 7,500 DAI 
+* **Costs:** 5,000 DAI 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
