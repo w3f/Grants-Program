@@ -77,7 +77,7 @@ In summary, Awesome Polka's search infrastructure is designed to provide a seaml
 
 Search Element             |  Search Focused
 :-------------------------: | :-------------------------: 
-<img src="https://user-images.githubusercontent.com/40897846/223080151-88030420-4069-43c2-aa9c-46c5a5aff226.png" width="500px">| <img src="https://user-images.githubusercontent.com/40897846/223080239-26b43b70-a915-4310-9d73-8f3916152700.png" width="500px">
+<img src="https://user-images.githubusercontent.com/40897846/223080151-88030420-4069-43c2-aa9c-46c5a5aff226.png" width="500px"/>| <img src="https://user-images.githubusercontent.com/40897846/223080239-26b43b70-a915-4310-9d73-8f3916152700.png" width="500px"/>
 
 **Solution on Static Project Pages**
 
@@ -200,7 +200,7 @@ In addition to my technical skills, I have also been actively involved in the wi
 
 The user interface and search infrastructure of this project are largely complete and ready for discovery. To get a glimpse of the minimum viable product (MVP), you can either take a look at the repository or visit the website.
 
-<img src="https://user-images.githubusercontent.com/40897846/223081582-4f6de29a-bbb0-402e-9a25-e5c4870741b0.png" width="650px">
+<img src="https://user-images.githubusercontent.com/40897846/223081582-4f6de29a-bbb0-402e-9a25-e5c4870741b0.png" width="650px"/>
 
 ## Development Roadmap :nut_and_bolt:
 
