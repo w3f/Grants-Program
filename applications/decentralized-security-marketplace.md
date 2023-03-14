@@ -1,4 +1,4 @@
-# Decentralized Security Marketplace
+# Decentralized Security Marketplace - escrow protocol
 
 
 - **Team Name:** Magic Powered Inc,
@@ -64,47 +64,122 @@ The central piece of the platform will be the smart contracts:
 
 - **Rewards pool contract**: Lock and release rewards funds for developers that make audits.
 - **Governance contract**: Control and verify audit reports submissions
-- **Souldbound NFT**: Help identify if a community member is a Judge and can vote for audits reports.
+- **Souldbound NFT**: Help identify if a community member is a Judge and can vote for audits reports. - the protocol is not aiming to implement this, the protocol will support standard nft
 
 ![Smart contract composition](https://github.com/magic-powered/decentralised-security-marketplace-architecture/blob/main/img/architecture/smart-contracts.png?raw=true)
 
-We leverage a data aggregation and indexing pipeline built on top of the SubSquid and postgres database to ensure low latency and high availability.
+#### Preliminary interface of the smart contracts
 
-The GraphQL API will provide all necessary data to the Frontend application of the Platform.
+* Note that this list preliminary interface is hacky and dirty. It is provided to show what our team has in mind
 
-The Frontend application, as mentioned, should read the GraphQL API to get all information and let users communicate with the smart contract directly using their wallet.
+##### Rewards Pool
 
-![AppStructure](https://github.com/magic-powered/decentralised-security-marketplace-architecture/blob/main/img/architecture/app-structure.png?raw=true)
+```rust
+mod rewardspool {
+    pub type ProjectId = u32;
+    pub type ProposalId = u32;
 
-Technical stack will be the following:
+    pub struct RewardsPool {
+        /// TODO
+    }
+    
+    pub enum Error {
+        /// TODO
+    }
+    
+    pub enum BountyType {
+        /// TODO
+    }
+    
+    pub enum ProjectStatus {
+        Pending,
+        Started,
+        Completed
+    }
+    
+    pub enum ProjectPolicy {
+        AdminOnly,
+        JudgesOnly,
+        AdminAndJudges
+    }
+    
+    impl RewardsPool {
+        /// create an empty project. Recently created project will have a status: Pending
+        pub fn create_project(&mut self, id: ProjectId) -> ProjectId {}
+        /// defines whatever who can vote for rewards proposals
+        pub fn set_project_policy(&mut self, id: ProjectId, policy: ProjectPolicy, numberOfVotes: u8) -> Result<(), Error> {}
+        /// get project policy. Called mainly by governance contract 
+        pub fn get_project_policy(&mut self, id: ProjectId) -> (ProjectPolicy, u8) {}
+        /// append bounty for specific job type. job type later can be used to create proposal for reward
+        pub fn append_bounty(&mut self, id: ProjectId, bountyType: BountyType, reward: u32) -> Result<(), Error> {}
+        /// when all bounties appended - start the project. The project can be started only when rewards funds are moved to the contract address 
+        pub fn start_project(&mut self, id: ProjectId) -> Result<(), Error> {} 
+        /// get list of bounty types and amounts of rewards for each bounty type
+        pub fn get_bounties(&self, id: ProjectId) -> Mapping<BountyType, u32> {}
+        /// Governance will call this function to release rewards from the pool in benefit of recevier
+        pub fn release_reward(&mut self, id: ProjectId, amount: u32, receiver: AccountId, proposalId: ProposalId) -> Result<(), Error> {}
+        /// receiver call this to claim rewards for their work
+        pub fn claim(&mut self, id: ProjectId, proposalId: ProposalId) -> Result<(), Error> {}
+    }
+}
+```
 
-1. **Rust** for smart contracts
-2. **Typescript** for backend and frontend code
-3. **Nodejs** for lambdas and SubSquid processor
-4. **React** for frontend application
-5. **Terraform** for provisioning the infrastructure
+```rust
+mod governance {
+    pub type ProjectId = u32;
+    pub type ProposalId = u32;
+    pub type ChangeProposalRequestId = u32;
+    /// correspond to the id of IPFS uploaded report file
+    pub type ReportId = u32;
 
-Infrastructure stack:
+    pub struct Governance {
+        /// TODO
+    }
+    
+    pub enum BountyType {
+        /// TODO
+    }
+    
+    pub enum Error {
+        /// TODO
+    }
+    
+    impl RewardsPool {
+        /// Called by RewardsPool contract to start accepting proposals
+        pub fn start_governance(&mut self, id: ProjectId) -> Result<(), Error> {}
+        /// Called by engineer to create proposal for rewards
+        pub fn create_proposal(&mut self, id: ProjectId, bounties: Vec<BountyType>, report: ReportId) -> ProposalId {}
+        /// called by someone who was defined in project policy. if necessary number of votes reached it calls release_reward function of RewardsPool contract
+        pub fn vote(&mut self, proposalId: ProposalId) -> Result<(), Error> {}
+        /// when report validation is done and it was found that the list of bounties in the proposal need to be changed. Called by project admin or judge 
+        pub fn create_change_proposal_request(&mut self, proposalId: ProposalId, bounties: Vec<BountyType>) -> ChangeProposalRequestId {}
+        /// confirm proposal changes
+        pub fn vote_for_proposal_change(&mut self, id: ChangeProposalRequestId) -> Result<(), Error> {} 
+    }
+}
+```
 
-1. AWS EKS
-2. AWS Lambda
-3. AWS RDS
-4. AWS API Gateway
+Technical stack:
+
+1. **!ink** for smart contracts
 
 ### Ecosystem Fit
 
-- Engineers can contribute to the overall security of entire ecosystem.
-- Projects receive diverse security reports for their code and technology.
-- Security community growth.
-- Open Platform helps new engineers learn fast by participating in the community and learning by the open reports. 
+ - an open-source escrow protocol can help other builders build their own marketplaces later
+ - any other business can deploy escrow protocol for their own internal needs, such as paying for any other work to their contractors
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Petrovskyi Anatolii - Technical Lead, Solution Architect, Backend developer
+Team lead:
+- Petrovskyi Anatolii - Technical Lead, Solutions Architect
+
+Developer:
+- Andrii Sologor - Smart contract developer
+
+Consultant:
 - Denis Krasovskyi - MagicPowered CTO, Frontend Architect
-- Max Khaiuk - Frontend developer
 
 *MagicPowered is a big and flexible developer community. At any point of time we can onboard any developer we see required for the project. Current team composition is minimal required we see right now, it might change later during implementation phase
 
@@ -142,76 +217,61 @@ Currently, the project is under technical design phase
 ### Overview
 
 - **Total Estimated Duration:** 5 months
-- **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 99,000 USD
+- **Full-Time Equivalent (FTE):**  1.5 FTE
+- **Total Costs:** 59,000 USD
 
 ### Milestone 1 — Design Phase
 
 - **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 19,000 USD
-
-|  Number | Deliverable               | Specification                                                                |
-|--------:|---------------------------|------------------------------------------------------------------------------|
-| **0a.** | License                   | MIT                                                                          |
-| **0b.** | Documentation             | We will provide architecture design document, task list for development team |
-| **0c.** | Testing and Testing Guide | We provide core User-Story based test scenario for the platform              |
-| **0d.** | Docker                    | N/A                                                                          |
-|  **1.** | API Mock                  | Swagger documentation for the API that frontend application will use         |
-|  **2.** | Smart contract API Mock   | Interfaces for the smart contracts implemented                               |
-|  **2.** | Frontend app figma design | Figma design for frontend app                                                |
-
-### Milestone 2 — Frontend version 1.0
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 19,000 USD
-
-|  Number | Deliverable               | Specification                                                                                  |
-|--------:|---------------------------|------------------------------------------------------------------------------------------------|
-| **0a.** | License                   | MIT                                                                                            |
-| **0b.** | Documentation             | User Story documentation, User guides, FAQ and documentation                                   |
-| **0c.** | Testing and Testing Guide | Test report                                                                                    |
-| **0d.** | Docker                    | N/A the frontend application will be implemented as a set of static files hosted on cloudfront |
-|  **1.** | Code repo                 | React app code repo                                                                            |
-|  **2.** | Functional React App      | Fully working application that works against mocked API and mocked smart contracts on testnets |
-
-### Milestone 3 — Smart Contracts version 1.0
-
-- **Estimated Duration:** 1 month
-- **FTE:**  2
-- **Costs:** 30,500 USD
-
-|  Number | Deliverable               | Specification                                                                                                                                                           |
-|--------:|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                   | MIT                                                                                                                                                                     |
-| **0b.** | Documentation             | Both inline and markdown documentation pages describing the contract functions and other necessary info: How to run, contract composition diagrams, how to call, etc... |
-| **0c.** | Testing and Testing Guide | Unit tests and functional tests for the contracts                                                                                                                       |
-| **1.** | Code repo                 | Repo with the code of smart contracts                                                                                                                                   
-
-### Milestone 4 — Backend infrastructure and data processing version 1.0
-
-- **Estimated Duration:** 2 month
 - **FTE:**  1
-- **Costs:** 30,500 USD
+- **Costs:** 15,000 USD
 
-|  Number | Deliverable               | Specification                                                                                                                      |
-|--------:|---------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                   | MIT                                                                                                                                |
-| **0b.** | Documentation             | Both inline and markdown documentation pages describing a lambda functions and blockchain data processor with steps to deploy both |
-| **0c.** | Testing and Testing Guide | Unit tests and functional tests, API tests                                                                                         |
-| **0d.** | Docker                    | We will provide docker images and docker files for subsquid processor service                                                      |
-|  **1.** | Lambda code repo          | Repo with the code of lambda APIs                                                                                                  |
-|  **2.** | Processor code repo       | Repo with the code of subsquid processor                                                                                           |
-|  **3.** | Infrastructure code repo  | Repo with necessary terraform code to spin up the underlying infrastructure: AWS Account, RDS, API Gateway, etc..                  |
-|  **3.** | Deployment                | Deployment for both API and processir services. Integrate frontend with real data from the API                                     |
+|  Number | Deliverable               | Specification                                                                                                                                                                                                                                                                            |
+|--------:|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                   | MIT                                                                                                                                                                                                                                                                                      |
+| **0b.** | Documentation             | Inline code documentation for public interface                                                                                                                                                                                                                                           |
+| **0c.** | Testing and Testing Guide | Tests for each public function on the smart contract                                                                                                                                                                                                                                     |
+| **0d.** | Docker                    | N/A                                                                                                                                                                                                                                                                                      |
+|  **1.** | Smart contract API Mock   | Complete interface for both smart contracts without implementation yet: **Pool**: Create project, define types of work inside the bounty, send funds to the rewards pool, create governance space, **Governance**: create proposal, approve proposal, call pool to reward propose author |
+
+### Milestone 2 — Implementation of Pool smart contract
+
+- **Estimated Duration:** 1 month
+- **FTE:**  1.5 
+- **Costs:** 22,000 USD
+
+
+|   Number | Deliverable                 | Specification                                                                                                                                                               |
+|---------:|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  **0a.** | License                     | MIT                                                                                                                                                                         |
+|  **0b.** | Documentation               | Markdown documents describing user flow and details on how to run RewardsPool contract and call it from the cli                                                             |
+|  **0c.** | Testing and Testing Guide   | N/A                                                                                                                                                                         |
+|  **0d.** | Docker                      | N/A                                                                                                                                                                         |
+|   **1.** | Rewards Pool implementation | Rewards pool contract implemented: Create project, define types of work inside the bounty, send funds to the rewards pool, create governance space functions implementation |
+
+### Milestone 3 — Implementation of Governance smart contract
+
+- **Estimated Duration:** 1 month
+- **FTE:**  1.5
+- **Costs:** 22,000 USD
+
+|  Number | Deliverable                 | Specification                                                                                                  |
+|--------:|-----------------------------|----------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | MIT                                                                                                            |
+| **0b.** | Documentation               | Markdown documents describing user flow and details on how to run Governance contract and call it from the cli |
+| **0c.** | Testing and Testing Guide   | N/A                                                                                                            |
+| **0d.** | Docker                      | N/A                                                                                                            |
+|  **1.** | Rewards Pool implementation | Governance contract implemented: create proposal, approve proposal, call pool to reward propose author         |
 
 ## Future Plans
 
-In the future we want to build security specialists community around the platform:
-- Community events
-- Podcasts with security engineers
-- Work with web3 projects to onboard them to the platform
+In the future we want to build decentralised security marketplace on top of the implemented escrow protocol with:
+- Engineers leaderboard
+- Judges leaderboard and statistics
+- Projects list
+- etc
+
+we want to build security audit marketplace and community around it to be able to contribute to the general web3 security at massive scale 
 
 ## Additional Information :heavy_plus_sign:
 
