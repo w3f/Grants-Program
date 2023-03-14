@@ -135,13 +135,13 @@ Additionally, our team members have between 5-10 years of experience within the 
 
 ### Overview
 
-- **Total Estimated Duration:** 4 weeks
+- **Total Estimated Duration:** 3 weeks
 - **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs:** 30,000 USD
 
 ### Milestone 1 — Polkadot Developments
 
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 3 weeks
 - **FTE:** 3
 - **Costs:** 30,000 USD
 
