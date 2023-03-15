@@ -110,7 +110,7 @@ Not yet
 ### Overview
 
 * **Total Estimated Duration:** 4.5 months
-* **Total Costs:** 26000 USDC
+* **Total Costs:** 30000 USDC
 
 ### Milestone 1
 
@@ -135,7 +135,7 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [s
 
 * **Estimated duration:** 2.5 month
 * **FTE:**  1
-* **Costs:** 11000 USDC
+* **Costs:** 14000 USDC
 
 | Number | Deliverable               | Specification                                                                                                                                                   |
 |-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -150,9 +150,9 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [s
 
 ### Milestone 3
 
-* **Estimated duration:** 5 week
+* **Estimated duration:** 6 week
 * **FTE:**  1
-* **Costs:** 9000 USDC
+* **Costs:** 10000 USDC
 
 | Number | Deliverable               | Specification                                                                                                                                                   |
 |-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
