@@ -14,24 +14,26 @@ XCM (Cross-Consensus Message) is a cross-chain message between parachain and rel
 Instruction, MultiAssets, and MultiLocation) are too complex, and no good tool exists. It has yet to be widely used.
 
 XCM Tools is a tool and an SDK. This library is written in golang. It provides the following functions: sending xcm
-messages, parsing xcm message instructions, getting the execution result of the execution after sending xcm
+messages, parsing xcm message instructions, getting the execution result of the execution after sending xcm.
 
 ### Project Details
 
 We only have two libs to choose from, and some functions still need to be included.
 
-[Go-Substrate-RPC-Client](https://github.com/centrifuge/go-substrate-rpc-rient)
-Centrifuge's open source and supports transaction and chain status queries. Scale Codec is a static type. Types analysis
-many
-require users definition, and lack of support for Metadata V14 Types
-[Substrate-API-rpc](https://github.com/itering/substrate-api-rpc), [scale.go](https://github.com/scale.go))
+[Go-Substrate-RPC-Client](https://github.com/centrifuge/go-substrate-rpc-client)
+Centrifuge's open source and supports transaction and chain status queries. Scale Codec is a static type.
+Types analysis require users definition, and lack of support for Metadata V14 Types
+
+[Substrate-API-rpc](https://github.com/itering/substrate-api-rpc), [scale.go](https://github.com/itering/scale.go))
 Subscan open source, support chain status query, Scale Codec supports dynamic types, good serialization, and back-order
 functions. But lack the function of transaction sending.
-After comparison, I chose [Substrate-API-rpc](https://github.com/tering/substrate-api-RPC) as dependence, but because of
-the lack of the function of sending transactions, I also need to change dependence.
+After comparison, I chose [Substrate-API-rpc](https://github.com/itering/substrate-api-RPC) as dependence, but because
+of the lack of the function of sending transactions, I also need to change dependence.
 
-1. Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), add extrinsic encode, transaction
-   signature (sr25519, ed25519), and send transaction function
+1. Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), add extrinsic encode, sign transaction
+   (sr25519, ed25519), and send transaction feature.
+   Create pull request merge into [substrate-api-rpc](https://github.com/itering/substrate-api-rpc)
+   and [scale.go](https://github.com/itering/scale.go)
 
 2. Send xcm messages between relay chain and parachain and between parachain and parachain, support VMP(UMP & DMP) and
    HRMP, and supports the following methods
@@ -51,7 +53,8 @@ the lack of the function of sending transactions, I also need to change dependen
 ### Ecosystem Fit
 
 - Where and how does your project fit into the ecosystem?
-  XCM developers or users who want to use XCM Feature. A solution is provided here. You can send and track your XCM transaction
+  XCM developers or users who want to use XCM Feature. A solution is provided here. You can send and track your XCM
+  transaction
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase,
   yourself)?
@@ -103,8 +106,8 @@ Not yet
 
 ### Overview
 
-* **Total Estimated Duration:** 4 months
-* **Total Costs:** 24000 USDC
+* **Total Estimated Duration:** 4.5 months
+* **Total Costs:** 28000 USDC
 
 ### Milestone 1
 
@@ -114,49 +117,52 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), suppo
 * **FTE:**  1
 * **Costs:** 6000 USDC
 
-| Number | Deliverable      | Specification                                                                                                                                        |
-|-------:|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License          | MIT                                                                                                                                                  |
-|    0b. | Documentation    | Simple documentation on how to use and how to test                                                                                                   |
-|     1. | Sign message     | Add sr25519 & ed25519 sign message                                                                                                                   |  
-|     2. | extrinsic encode | [extrinsic.go](https://github.com/itering/scale.go/blob/master/extrinsic.go#L19) Add encode feature                                                  |  
-|     3. | Send extrinsic   | Send transaction support, include ed25519&sr25519                                                                                                    |  
-|     4. | Testing          | Including all the unit tests mentioned above                                                                                                         |
-|     5. | Github action    | Auto test when commit code                                                                                                                           |  
-|     6. | Pull request     | Create pull request merge into [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [scale.go](https://github.com/itering/scale.go) |  
+| Number | Deliverable               | Specification                                                                                                                                                   |
+|-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                   | MIT or Apache 2.0                                                                                                                                               |
+|    0b. | Documentation             | Simple documentation on how to use and how to test                                                                                                              |
+|    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+|    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
+|     1. | Sign message              | Add sr25519 & ed25519 sign message                                                                                                                              |  
+|     2. | extrinsic encode          | [extrinsic.go](https://github.com/itering/scale.go/blob/master/extrinsic.go#L19) Add encode feature                                                             |  
+|     3. | Send extrinsic            | Send transaction support, include ed25519&sr25519                                                                                                               |  
+|     4. | Pull request              | Create pull request merge into [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [scale.go](https://github.com/itering/scale.go)            |  
 
 ### Milestone 2
 
-* **Estimated duration:** 1.5 month
+* **Estimated duration:** 2.5 month
 * **FTE:**  1
-* **Costs:** 10000 USDC
+* **Costs:** 11000 USDC
 
-| Number | Deliverable       | Specification                                                                                         |
-|-------:|-------------------|-------------------------------------------------------------------------------------------------------|
-|    0a. | License           | MIT                                                                                                   |
-|    0b. | Documentation     | Simple documentation on how to use and how to test                                                    |
-|     1. | Send ump message  | support [UMP](https://wiki.polkadot.network/docs/learn-xcm#vmp-vertical-message-passing) message send |  
-|     2. | Send dmp message  | support [DMP](https://wiki.polkadot.network/docs/learn-xcm#vmp-vertical-message-passing) message send |  
-|     3. | Send hrmp message | support [HRMP](https://wiki.polkadot.network/docs/learn-xcm#hrmp-xcmp-lite) message send              |  
-|     4. | Github action     | Auto test when commit code                                                                            |  
-|     5. | Testing           | Including all the unit tests mentioned above                                                          |
+| Number | Deliverable               | Specification                                                                                                                                                   |
+|-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                   | MIT or Apache 2.0                                                                                                                                               |
+|    0b. | Documentation             | Simple documentation on how to use and how to test                                                                                                              |
+|    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+|    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
+|     1. | Send UMP message          | support [UMP](https://wiki.polkadot.network/docs/learn-xcm-transport#vmp-vertical-message-passing) message send                                                 |  
+|     2. | Send DMP message          | support [DMP](https://wiki.polkadot.network/docs/learn-xcm-transport#vmp-vertical-message-passing) message send                                                 |  
+|     3. | Send HRMP message         | support [HRMP](https://wiki.polkadot.network/docs/learn-xcm-transport#hrmp-xcmp-lite) message send                                                              |  
+|     3. | Send XCMP message(XCM V3) | support [XCMP](https://wiki.polkadot.network/docs/learn-xcm-transport#xcmp-cross-chain-message-passing) message send                                            |  
 
 ### Milestone 3
 
-* **Estimated duration:** 4 week
+* **Estimated duration:** 5 week
 * **FTE:**  1
-* **Costs:** 8000 USDC
+* **Costs:** 9000 USDC
 
-| Number | Deliverable            | Specification                                                                          |
-|-------:|------------------------|----------------------------------------------------------------------------------------|
-|    0a. | License                | MIT                                                                                    |
-|    0b. | Documentation          | Simple documentation on how to use and how to test                                     |
-|     1. | Parse xcm instructions | Parse instructions raw data, support xcm format v1 & v2                                |  
-|     2. | Tracing transaction    | Support xcm format v1 & v2                                                             |  
-|     3. | Cli support            | Add command line tool to send message & parse xcm instructions && tracking transaction |  
-|     4. | Github action          | Auto test when commit code                                                             |  
-|     5. | Testing                | Including all the unit tests mentioned above                                           |
+| Number | Deliverable               | Specification                                                                                                                                                   |
+|-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                   | MIT                                                                                                                                                             |
+|    0b. | Documentation             | Simple documentation on how to use and how to test                                                                                                              |
+|    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+|    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
+|     1. | Parse xcm instructions    | Parse instructions raw data, support xcm format v1 & v2 & v3                                                                                                    |  
+|     2. | Tracing transaction       | Support xcm format v1 & v2 & v3                                                                                                                                 |  
+|     3. | Cli support               | Add command line tool to send message & parse xcm instructions && tracking transaction                                                                          |                                                                                                         |
 
 ## Future Plans
 
-XCM v3 will be released this year, and I will support xcm v3 later.
+I have been maintaining [php-scale-code](https://github.com/gmajor-encrypt/php-scale-codec)
+and [php-api-lib](https://github.com/gmajor-encrypt/php-substrate-api) for three years, and this application will also
+be maintained continuously
