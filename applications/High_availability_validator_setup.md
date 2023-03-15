@@ -134,7 +134,7 @@ The goal of the first milestone will be adding a switch to the substrate codebas
 
 ### Milestone 2 - External service for permission granting
 
-Sendecond milestone introduces a microservice which will test dynamic switching of the permission granting, during the validators work. We will be able to test permission granting triggered whenever the block is produced, vote is made on the finalized block (GRANDPA) and message (`I'm online`) is sent for communicating liveness. Only the leader validator will be granted to run those actions. At worst the author may miss a slot.
+The second milestone introduces a microservice which will test dynamic switching of the permission granting, during the validator's work. We will be able to test permission granting triggered whenever the block is produced, the vote is made on the finalized block (GRANDPA) and a message (`I'm online`) is sent for communicating liveness. Only the leader validator will be granted to run those actions. At worst, the author may miss a slot.
 
 The service should contain only basic logic (e.g. return `true` for node that asked first and `false` for following ones).
 
@@ -150,15 +150,15 @@ The service should contain only basic logic (e.g. return `true` for node that as
 | **0c.** | Testing and Testing Guide | We will provide unit tests and the guidelines for running and testing it the scope. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Basic service | Create a microservice that accepts connections from the node. | 
-| 2. | Getting permission from microservice | Setup custom node repository and write PermissionResolver trait implementation for getting permission from microservice. |
+| 2. | Getting permission from microservice | Set up a custom node repository and write the `PermissionResolver` trait implementation for getting permission from the microservice. |
 | 3. | Allow as optional | The choice of using an outside decision making agent for block submission should be configurable in the cli. |
-| 4. | Cleanup substrate code | Remove deprecated cli options.
-| 5. | Integration test | A dockerised setup that allows to run custom nodes network and microservice in order to show that created solution works. |
+| 4. | Clean up substrate code | Remove deprecated cli options. |
+| 5. | Integration test | A dockerized setup that allows to run custom node networks and a microservice in order to show that the created solution works. |
 
 ### Milestone 3 - Raft based current leader selection
 
-Replace the dummy microservice as an infrastructure component with a TiKV cluster used for leader selection. 
-Each node should try to get authorship premission based on the KV state. Replace current microservice client with TiKV client and add corresponding logic.
+Replace the dummy microservice as an infrastructure component with a [TiKV](https://github.com/tikv/tikv) cluster used for leader selection. 
+Each node should try to get authorship permission based on the KV (Key-value) state. Replace the current microservice client with a TiKV client and add corresponding logic.
 
 * **Estimated Duration:** 2 weeks
 * **FTE:** 1
@@ -170,8 +170,8 @@ Each node should try to get authorship premission based on the KV state. Replace
 | **0b.** | Documentation | We will provide inline documentation.|
 | **0c.** | Testing and Testing Guide | We will provide unit tests and the guidelines for running and testing it the scope. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Run the necessary Raft services | Setup local dev infrastructure to run TiKV components in order to provide distributed KV store. |
-| 2. | Integrate a Raft client into the node | Replace previous logic with TiKV based one and modify configs to allow TiKV client to connect to Placement Drivers. | 
+| 1. | Run the necessary Raft services | Set up a local dev infrastructure to run TiKV components in order to provide a distributed KV store. |
+| 2. | Integrate a Raft client into the node | Replace the previous logic with a TiKV based one and modify configs to allow the TiKV client to connect to Placement Drivers. | 
 | 3. | Integration test | A dockerised setup that allows to test the Raft consensus mechanism. | 
 
 
