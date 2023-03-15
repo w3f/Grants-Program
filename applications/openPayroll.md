@@ -92,23 +92,37 @@ The frontend includes:
 
 #### <a name="step3"></a>3.- Implement and test the payroll contract
 
-Build an Ink! contract, its purpose is to manage a treasury, that can only be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The data contained on chain are the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information is public and accessible though the blockchain explorer for every person to access.
+Build an Ink! contract, which purpose is to manage a treasury, that can only be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The funds in the treasury can be withdrawn by the owner of the contract if needed. This could be helpful in the case of migrating to a new version of openPayroll, amending a mistake of sending too much funds, etc. The data contained on chain are the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information is public and accessible though the blockchain explorer for every person. Each payee multipliers can be updated individually E.g. if a developer is promoted, his seniority multiplier will be changed so he will earn more money. The contract also will be pausable, so the owner can stop the payments if needed. We will provide some helper functions to let the payees know how much they can claim at any given time, and also a function that the owner can call to know how much will be paid in the next period with the current parameters.
 
 #### <a name="step4"></a>4.- Integrate the interface with the contracts
 
 Use polkadotJs to generate all the posible interactions with the contract, those include:
 
-- Creation parameters needed to create a new contract,
-- Contract interactions:
-  - Changing the current parameters in the contract
-  - Claiming the payments that are already released.
+- Creation parameters needed to create a new payroll contract:
 
-Once the treasury has funds, the only way to spend it is by the beneficiaries claiming their payment. This ensures that the funds are always available for the payees and cannot be spent by the contract owner.
+  - Base amount
+  - Multipliers
+  - Period
+  - Beneficiaries
+
+- Contract interactions from the owner's perspective:
+
+  - Change the current parameters in the contract.
+  - Add or remove beneficiaries.
+  - Withdraw funds from the treasury.
+  - Pause the contract.
+  - Change the owner of the contract.
+  - Calculate the amount that will be paid in the next period.
+
+- Contract interactions from the payees' perspective:
+  - Calculate the amount that they can claim.
+  - Calculate the amount that they can claim in the next period with the current parameters.
+  - Claim the payments that are already available.
 
 #### <a name="step5"></a>5.- Quality Assurance
 
-In this step we'll work on security and usability, checking the functionality and reviewing all of the interactions between the UX and the smart contracto.
-This includes building a suite of automated testing including happy paths and edge cases. We aim for a high code coverage to minimize the chances of bugs.
+In this step we'll work on security and usability, checking the functionality and reviewing all of the interactions between the UX and the smart contracts.
+This includes building a suite of automated testing not only including happy paths, but also including edge cases. We aim for a high code coverage to minimize the chances of bugs. We will perform e2e testing using tools such as Selenium or Puppeteer to ensure that the frontend and the smart contract are behaving as expected.
 
 #### <a name="step6"></a>6.- Build a Dockerized deliverable
 
@@ -118,8 +132,8 @@ Our deliverable is built using Docker to ensure easy reproducibility across vari
 
 Build meaningful documentation, including:
 
-- Video and blog post on how to run the tool
-- Video and blog post on how to create a payroll contract from the ui and showing how to claim the amount released on a period of time
+- Video and blog post on how to run the tool.
+- Video and blog post on how to create a payroll contract from the ui and showing how to claim the amount released on a period of time.
 
 ### Ecosystem Fit
 
@@ -207,41 +221,25 @@ Described in project details.
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 24,000 USD
+- **Total Costs:** 20,000 USD
 
 ### Milestone 1 — UI and Contract Development
 
-- **Estimated duration:** 3 month
+- **Estimated duration:** 4 months
 - **FTE:** 2
-- **Costs:** 18,000 USD
+- **Costs:** 20,000 USD
 
-|  Number | Deliverable                                             | Specification                                                                                                                             |
-| ------: | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                                                 | GPLv3                                                                                                                                     |
-| **0b.** | Documentation                                           | We will provide both inline documentation of the code and a basic tutorial that explains how a user can generate its own smart contracts. |
-| **0c.** | Testing and Testing Guide                               | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests.      |
-| **0d.** | Docker                                                  | We will provide a docker container with current milestones deliverables to easily run the application.                                    |
-|      1. | Desing frontend interface                               | The functionality to be implemented corresponds to [step 1](#step1) of the Project Details section.                                       |
-|      2. | Develop the interface based on the previous task result | The functionality to be implemented corresponds to [step 2](#step2) of the Project Details section.                                       |
-|      3. | Develop the payroll smart contract                      | The functionality to be implemented corresponds to [step 3](#step3) of the Project Details section.                                       |
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:** 2
-- **Costs:** 6,000 USD
-
-|  Number | Deliverable                             | Specification                                                                                                                         |
-| ------: | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                                 | GPLv3                                                                                                                                 |
-| **0b.** | Documentation                           | We will provide both inline documentation of the code and a basic tutorial that explains how a user can instantiate a smart contract. |
-| **0c.** | Testing and Testing Guide               | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests.  |
-| **0d.** | Docker                                  | We will provide a docker container with current milestones deliverables to easily run the application.                                |
-|     0e. | Article                                 | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem .         |
-|      1. | Integrate the UI with the contracts.    | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section.                                   |
-|      2. | Quality Assurance                       | The functionality to be implemented corresponds to [step 5](#step5) of the Project Details section.                                   |
-|      3. | Build the containeraized implementation | The functionality to be implemented corresponds to [step 6](#step6) of the Project Details section.                                   |
-|      4. | Record and edit video tutorials         | The functionality to be implemented corresponds to [step 7](#step7) of the Project Details section.                                   |
+|  Number | Deliverable                                                                                                 | Specification                                                                                                                                                                                      |
+| ------: | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                                                                                                     | GPLv3                                                                                                                                                                                              |
+| **0b.** | Documentation                                                                                               | We will provide both inline documentation of the code and a basic tutorial that explains how a user can generate its own smart contracts. Corresponds to [step 7](#step7) of the Project Details.  |
+| **0c.** | Testing and Testing Guide                                                                                   | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                               |
+| **0d.** | Docker                                                                                                      | We will provide a docker container with current milestones deliverables to easily run the application. The functionality to be implemented corresponds to [step 6](#step6) of the Project Details. |
+|      1. | Desing frontend interface (Figma)                                                                           | The functionality to be implemented corresponds to [step 1](#step1) of the Project Details section.                                                                                                |
+|      2. | Develop the interface based on the previous task result (React, Next.js, PolkadotJS wallet extension, Jest) | The functionality to be implemented corresponds to [step 2](#step2) of the Project Details section.                                                                                                |
+|      3. | Develop the payroll smart contract (Ink!, Rust)                                                             | The functionality to be implemented corresponds to [step 3](#step3) of the Project Details section.                                                                                                |
+|      4. | Integrate the UI with the contracts.                                                                        | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section.                                                                                                |
+|      5. | Quality Assurance                                                                                           | The functionality to be implemented corresponds to [step 5](#step5) of the Project Details section.                                                                                                |
 
 ...
 
@@ -267,6 +265,10 @@ After the completion of this project, we would love to broaden its scope.
 - DCA (Dollar Cost Averaging) for crypto assets.
 - Automated savings.
 - Gradual token incentive distribution to replace vested air drops.
+
+**Token Streaming**
+
+- Allow the treasury to stream tokens to the payees over time instead of them receiving the full amount at once per payment.
 
 ## Referral Program (optional) :moneybag:
 
