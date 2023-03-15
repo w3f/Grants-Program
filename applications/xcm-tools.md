@@ -14,19 +14,21 @@ XCM (Cross-Consensus Message) is a cross-chain message between parachain and rel
 Instruction, MultiAssets, and MultiLocation) are too complex, and no good tool exists. It has yet to be widely used.
 
 XCM Tools is a tool and an SDK. This library is written in golang. It provides the following functions: sending xcm
-messages, parsing xcm message instructions, getting the execution result of the execution after sending xcm.
+messages, parsing xcm message instructions and getting the execution result of the execution after sending xcm.
 
 ### Project Details
 
 We only have two libs to choose from, and some functions still need to be included.
 
 [Go-Substrate-RPC-Client](https://github.com/centrifuge/go-substrate-rpc-client)
-Centrifuge's open source and supports transaction and chain status queries. Scale Codec is a static type.
-Types analysis require users definition, and lack of support for Metadata V14 Types
+Centrifuge's open source and supports transaction and chain status queries. Scale Codec is
+a [static](https://pkg.go.dev/github.com/centrifuge/go-substrate-rpc-client#hdr-Types) and strongly typed library.
+All types of analysis require user definition.
 
-[Substrate-API-rpc](https://github.com/itering/substrate-api-rpc), [scale.go](https://github.com/itering/scale.go))
+[Substrate-API-rpc](https://github.com/itering/substrate-api-rpc), [scale.go](https://github.com/itering/scale.go)
 Subscan open source, support chain status query, Scale Codec supports dynamic types, good serialization, and back-order
-functions. But lack the function of transaction sending.
+functions, history version types support. But lack the function of transaction sending.
+
 After comparison, I chose [Substrate-API-rpc](https://github.com/itering/substrate-api-RPC) as dependence, but because
 of the lack of the function of sending transactions, I also need to change dependence.
 
@@ -35,8 +37,8 @@ of the lack of the function of sending transactions, I also need to change depen
    Create pull request merge into [substrate-api-rpc](https://github.com/itering/substrate-api-rpc)
    and [scale.go](https://github.com/itering/scale.go)
 
-2. Send xcm messages between relay chain and parachain and between parachain and parachain, support VMP(UMP & DMP) and
-   HRMP, and supports the following methods
+2. Send xcm messages between relay chain and parachain and between parachain and parachain, support VMP(UMP & DMP),
+   HRMP,XCMP(XCM V3) and supports the following methods
 
 * LimitedReserveTransferAssets
 * LimitedTeleportAssets
@@ -67,6 +69,7 @@ of the lack of the function of sending transactions, I also need to change depen
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
   [xcm-sdk](https://github.com/blockcoders/xcm-sdk), written in Javascript/Typescript, has to send the xcm feature.
+
   [xcm-tools](https://github.com/PureStake/xcm-tools) written in Typescript, a set of scripts to help XCM
   initialization, asset registration, and channel setup,
 
@@ -107,11 +110,11 @@ Not yet
 ### Overview
 
 * **Total Estimated Duration:** 4.5 months
-* **Total Costs:** 28000 USDC
+* **Total Costs:** 26000 USDC
 
 ### Milestone 1
 
-Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), support signed & send transaction
+Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [scale.go](https://github.com/itering/scale.go), support signed & send transaction
 
 * **Estimated duration:** 3 week
 * **FTE:**  1
@@ -143,7 +146,7 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), suppo
 |     1. | Send UMP message          | support [UMP](https://wiki.polkadot.network/docs/learn-xcm-transport#vmp-vertical-message-passing) message send                                                 |  
 |     2. | Send DMP message          | support [DMP](https://wiki.polkadot.network/docs/learn-xcm-transport#vmp-vertical-message-passing) message send                                                 |  
 |     3. | Send HRMP message         | support [HRMP](https://wiki.polkadot.network/docs/learn-xcm-transport#hrmp-xcmp-lite) message send                                                              |  
-|     3. | Send XCMP message(XCM V3) | support [XCMP](https://wiki.polkadot.network/docs/learn-xcm-transport#xcmp-cross-chain-message-passing) message send                                            |  
+|     4. | Send XCMP message(XCM V3) | support [XCMP](https://wiki.polkadot.network/docs/learn-xcm-transport#xcmp-cross-chain-message-passing) message send                                            |  
 
 ### Milestone 3
 
@@ -153,7 +156,7 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), suppo
 
 | Number | Deliverable               | Specification                                                                                                                                                   |
 |-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                   | MIT                                                                                                                                                             |
+|    0a. | License                   | MIT or Apache 2.0                                                                                                                                               |
 |    0b. | Documentation             | Simple documentation on how to use and how to test                                                                                                              |
 |    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
