@@ -13,7 +13,7 @@ This application is a response to an [RFP: Decentralized Security Marketplace](h
 
 #### Tagline: Decentralized Security Marketplace
 
-This project aims to build a platform connecting a broad community of engineers and web3 projects that need audits. For web3 projects, community contests and bounties can provide more time&cost flexibility and better capabilities diversity than traditional security audits. For engineers, the platform offers the ability to learn with a vast community and gain experience in a wide range of web3 projects, guaranteeing payments for work done.
+This project aims to build a universal escrow protocol on !ink to let other developer build their own marketplaces or manage their payments in transparent and fair way. This project derives an idea of decentralised security marketplace proposed by the grants team, so the use-case described below respect an idea about security audits. However this project may be used in many other ways.    
 
 Actors:
 
@@ -21,7 +21,7 @@ Actors:
 - Engineers - Community engineers: Developers, QA, Security experts. - People who apply for a bounty and do the audition work.
 - Judges - Top performing auditors chosen from the community with recorded credentials on the platform. Judges validate reports posted by Auditors to ensure fairness and transparency of the contest.
 
-The platform provides rewards lock and release (escrow) functionality to reward engineers submitting their audit reports.
+The protocol provides rewards lock and release (escrow) functionality to reward engineers submitting their audit reports.
 
 As mentioned, the system has three actors: Projects, Engineers, and Judges.
 
