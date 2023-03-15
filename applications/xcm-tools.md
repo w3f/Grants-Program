@@ -110,13 +110,13 @@ Not yet
 ### Overview
 
 * **Total Estimated Duration:** 4.5 months
-* **Total Costs:** 30000 USDC
+* **Total Costs:** 29500 USDC
 
 ### Milestone 1
 
 Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [scale.go](https://github.com/itering/scale.go), support signed & send transaction
 
-* **Estimated duration:** 3 week
+* **Estimated duration:** 4 week
 * **FTE:**  1
 * **Costs:** 6000 USDC
 
@@ -133,9 +133,9 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [s
 
 ### Milestone 2
 
-* **Estimated duration:** 2.5 month
+* **Estimated duration:** 10 week
 * **FTE:**  1
-* **Costs:** 14000 USDC
+* **Costs:** 14500 USDC
 
 | Number | Deliverable               | Specification                                                                                                                                                   |
 |-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -152,7 +152,7 @@ Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [s
 
 * **Estimated duration:** 6 week
 * **FTE:**  1
-* **Costs:** 10000 USDC
+* **Costs:** 9000 USDC
 
 | Number | Deliverable               | Specification                                                                                                                                                   |
 |-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
