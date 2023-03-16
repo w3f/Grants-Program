@@ -52,7 +52,7 @@ Although our initial focus is community health metrics, the proposed approach se
 
 Social network data and its methodology (Social Network Analysis; SNA) is a structured way to visualize how communications, information, and value creation occur through an organization based on interaction graphs. Although a relatively new decision-making tool for leaders, SNA is gaining popularity over traditional survey tools. SNA has been linked to a wide range of insights, such as improving contributor retention, avoiding member burnout, predicting team performance and community resilience, identifying key contributors, enabling decentralization, and improving coordination.
 
-![Data points for measuring community health](howmeasurecommhealth.jpg)
+![Data points for measuring community health](https://user-images.githubusercontent.com/5393704/224280603-03e8b7a7-4212-4a46-b957-ef06ebe3de5a.png)
 
 Pulse surveys are frequent and automated micro-surveys that provide qualitative and quantitative insights. In traditional organizations, they have been shown to increase employee response rates and employee engagement with related initiatives. They’re also used as a tool for culture design and implementing culture change. Lastly, pulse surveys significantly reduce admin work for community managers and related roles.
 
