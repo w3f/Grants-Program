@@ -41,7 +41,7 @@ Our community health checks combine objective data (interactions between contrib
 
 Although our initial focus is community health metrics, the proposed approach sets the foundation for further applications. The combination of SNA and pulse surveys offers unprecedented actionable insights in real-time. Some of the potential applications and insights for the ecosystem are
 
-- Generate baseline metrics for community health / vibez to quantify and better understand the impact a specific event is having on a community and/or sub-groups within the community
+- Generate baseline metrics for community health / vibes to quantify and better understand the impact a specific event is having on a community and/or sub-groups within the community
 - Identify measurements of decentralization to serve as KPIs or Insights metrics
 - Build funnels to track member onboarding and identify areas for improvement
 - Monitor specific topics like contributor wellbeing, alignment, community experience, etc. in near real-time
