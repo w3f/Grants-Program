@@ -247,7 +247,7 @@ This milestone implements the work from the previous milestone by building the d
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | The code for data fetching and storage aisre already available in a public github folder (Unlicensed). We will specify an OSS license. |
+| 0a. | License | The code for data fetching and storage is already available in a public GitHub folder (Unlicensed). We will specify an OSS license. |
 | 0b. | Documentation | We will provide a tutorial for users to understand how to run the health checks themselves. Our current version will be updated to include recent development.|
 | 0c. | Testing and Testing Guide | Running the data pipeline and analyzing the data will be covered by tests to ensure functionality. We will describe how to run the tests|.
 | 0d. | Docker | We will deliver a docker file to tests the functionality. |
