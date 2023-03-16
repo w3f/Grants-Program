@@ -101,7 +101,7 @@ The community health check is for community managers and moderators to support t
 Our project provides moderators, leaders, and contributors with a bird's eye view of what is happening inside the ecosystem. 
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-Our current approach rests on off-chain data. Other community analytics dashboard exists, fetching data from various off-chain data. However, they focus on posting behavior and not on the  interaction between members. Orbit.love reach metric, conceptually, comes close to our metrics, but technically also rests on individual posting behavior and not interaction data. 
+Our current approach rests on off-chain data. Other community analytics dashboard exists, fetching data from various off-chain data. However, they focus on posting behavior and not on the  interaction between members. Individual posting behavior focuses only on the number of activities of a person, but not how these activities impact others. Our data points are relationships (replies, mentions, emoji reactions). Orbit.love reach metric, conceptually, comes close to our metrics, but technically also rests on individual posting behavior and not interaction data. 
 
 Looking at on-chain community analysis, Chainverse is similar in terms of methodology (network analysis). However, they are currently solely focusing on on-chain data and are adopting a knowledge graph methodology.
 
@@ -227,7 +227,11 @@ We are following a grant-matching processes to spread the risk among different c
 
 Research social network metrics that are viable to measure the health of a community on Twitter, and how they integrate with our existing community health framework. This will build on our existing framework, extending it to metrics that have been tested and used in Twitter communities. For example, we will look into approaches to build the network, virality and clustering/fragmentation of very large online communities. 
 
-Note: We have done an evaluation to decide wheter Reddit or Twitter would be a better option. Given other requests we have received, we have decided that building an integration and health metrics for Twitter is a more viable path for us.
+Note: We have done an evaluation to decide wheter Reddit or Twitter would be a better option. In the discussion we had with other communities, we were more often asked about an integration with Twitter than with Reddit. Hence, from a scaling perspective, we decided that focusing first on Twitter makes more sense with us.
+
+That being said, we realize that Twitter is undergoing a lot of changes, and we might have to do a last minute pivot to another platform. We are building our analytical scripts in such a way that they can easily be used for other platforms. Therefore, the only thing that has to be changed in the milestones is the name of the platform. 
+
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -235,7 +239,7 @@ Note: We have done an evaluation to decide wheter Reddit or Twitter would be a b
 | 0b. | Documentation | No documentation necessary.|
 | 0c. | Testing and Testing Guide | Testing and Testing Guide not necessary. |
 | 0d. | Docker | A docker file is not necessary for using the community health check. |
-| 0e. | Article| We will publish an article (technical document) describing the metrics, the insights (so-what), and limitations. This article will also explain how the Twitter community is build. |
+| 0e. | Article| We will publish an article (technical document) describing the metrics, the insights (so-what), and limitations. This article will also explain how the Twitter community is build (e.g., who are nodes, when there is an edge between two people, who is excluded/included and why). The article will not be behind a paywall. The article will be written for an audience comfortable with data analysis. |
 
 ### Milestone 2 — Twitter community health dashboard
 
@@ -243,17 +247,23 @@ Note: We have done an evaluation to decide wheter Reddit or Twitter would be a b
 - **FTE:**  5
 - **Costs:** 10 000 USDC
 
-This milestone implements the work from the previous milestone by building the dashboard.
+This milestone implements the work from the previous milestone by building the dashboard. It will be build using the Twitter API v2. This comes with the following rate limits: 
+- 900 tweet lookups/user/15-minute time window
+- 900 user timeline lookups/user/15-minute time window
+When querying a tweet, we will get information about the number of comments and likes 
+
+Given the rate limit, we will see how users will be able to combine different accounts (e.g., parachains, dApp developers and other teams that build on Substrate) to create a holistic picture of their community. 
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | The code for data fetching and storage is already available in a public GitHub folder (Unlicensed). We will specify an OSS license. |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide a tutorial for users to understand how to run the health checks themselves. Our current version will be updated to include recent development.|
 | 0c. | Testing and Testing Guide | Running the data pipeline and analyzing the data will be covered by tests to ensure functionality. We will describe how to run the tests|.
 | 0d. | Docker | We will deliver a docker file to tests the functionality. |
 | 0e. | Article | In addition to the dashboard, we write a handout. This is a walkthrough of the dashboard, explaining each metric, if the score is good or bad, and a list of recommendations.  |
-| 1. | Twitter data integration | We will create a data pipeline fetching data from Twitter using their API. The user will have several options to define their community (e.g., everyone who follows the official Polkadot/Kusama account, everyone who follows the account and interacts with the content). |
-| 2. | Twitter dashboard | We will extend our dashboard to include a page with Twitter community health data.  |
+| 1. | Twitter data integration | We will create a data pipeline fetching data from Twitter using their API. The user will have several options to define their community (e.g., everyone who follows the official Polkadot/Kusama account, everyone who follows the account and interacts with the content). The data pipeline is build using python. We have already a data flow for Discord visible in the following repos: [Discord bot](https://github.com/RnDAO/tc-botComm), [interactions with db](https://github.com/RnDAO/tc-dbComm), and [interactions between front-end and db](https://github.com/RnDAO/tc-serverComm). |
+| 2. | Twitter dashboard | We will extend our dashboard to include a page with Twitter community health data. The dashboard is build using Typescript. Our current dashbaord, build on Discord data, is available in this [github](https://github.com/RnDAO/tc-uiComm). We will add the Twitter metrics to this dashboard.  |
 | 3. | Workshop/call | We will hold a workshop/ call to answer any questions about the dashboard and handout.  |
 
 ## Future Plans: 
