@@ -92,15 +92,15 @@ Github accounts of team members:
 
 ### Overview
 
-- **Total Estimated Duration:**  4 months
+- **Total Estimated Duration:**  6 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 95,000 USD
+- **Total Costs:** 60,000 USD
 
 ### Milestone 1 — Curve precompiles
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 month
 - **FTE:**  2
-- **Costs:** 30,000 USD
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -108,42 +108,26 @@ Github accounts of team members:
 | **0b.** | Documentation | We will provide both **inline documentation** of the code. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | BLS12-377 precompile | We will create a [EIP-2539](https://eips.ethereum.org/EIPS/eip-2539) compatible BLS12-377 precompile which can run inside [frontier](https://github.com/paritytech/frontier). |
-| 2. | BW6-761precompile | We will create a [EIP-3026](https://eips.ethereum.org/EIPS/eip-3026) compatible BW6-761 precompile which can run inside [frontier](https://github.com/paritytech/frontier). |
-| 3. |                           |                                                              |
+| 1. | BLS12-377 precompile | We will create a [EIP-2539](https://eips.ethereum.org/EIPS/eip-2539) compatible BLS12-377 precompile which can run inside [frontier](https://github.com/paritytech/frontier). It will be developed using Rust programming language. The libraries we plan to use are [arkworks-rs/curves](https://github.com/arkworks-rs/curves) library or the substrate host function calls provided by this [Pull Request](https://github.com/paritytech/substrate/pull/13031). |
+| 2. | BW6-761precompile | We will create a [EIP-3026](https://eips.ethereum.org/EIPS/eip-3026) compatible BW6-761 precompile which can run inside [frontier](https://github.com/paritytech/frontier). The programming language and libs to use are the same as BLS12-377 precompile. |
 
 ### Milestone 2 — Basic & Packed verifier
 
-- **Estimated Duration:** 2 month
+- **Estimated Duration:** 4 month
 - **FTE:**  2
-- **Costs:** 45,000 USD
+- **Costs:** 40,000 USD
 
-|  Number | Deliverable               | Specification                                                |
-| ------: | ------------------------- | ------------------------------------------------------------ |
-| **0a.** | License                   | MIT                                                          |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and an example to verify the proof generated from [W3F's PoC example](https://github.com/w3f/apk-proofs/blob/main/bw6/examples/recursive.rs). |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-|      1. | APK verifier              | We will implement the apk verifer which will check the apk is correct. |
-|      2. | BLS verifier              | We will implement the bls verifier which will check if the aggregate signature is signed by the apk. |
-|      3. | Signers threshold checker | Check if the bitvector of pubkeys contains enough signers.   |
-|      4. |                           |                                                              |
-
-### Milestone 3 — Counting verifier
-
-- **Estimated Duration:** 1 month
-- **FTE:**  2
-- **Costs:** 20,000 USD
-
-|  Number | Deliverable               | Specification                                                |
-| ------: | ------------------------- | ------------------------------------------------------------ |
-| **0a.** | License                   | MIT                                                          |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code.   |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
-| **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **0e.** | Article                   | We will publish an medium **article** that explains what was done. |
-|      1. | Counting verifier         | We will implement the counting verifier described in the [PoC](https://github.com/w3f/apk-proofs/blob/main/bw6/src/piop/counting.rs). |
-|      2. |                           |                                                              |
+|  Number | Deliverable                             | Specification                                                |
+| ------: | --------------------------------------- | ------------------------------------------------------------ |
+| **0a.** | License                                 | MIT                                                          |
+| **0b.** | Documentation                           | We will provide both **inline documentation** of the code and an example to verify the proof generated from [W3F's PoC example](https://github.com/w3f/apk-proofs/blob/main/bw6/examples/recursive.rs). |
+| **0c.** | Testing and Testing Guide               | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker                                  | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+|      1. | Basic APK verifier                      | We will implement the basic verifer which will check the apk is correct.  We plan to use the PoC code from [apk-proofs](https://github.com/w3f/apk-proofs) as a reference to implement this verifier. It can verify the proofs generated by [the PoC example](https://github.com/w3f/apk-proofs/blob/main/bw6/examples/recursive.rs). We will implement it using Solidity language. |
+|      2. | Packed APK verifier                     | We will implement the packed verifer which will check the apk is correct. We plan to use the PoC code from [apk-proofs](https://github.com/w3f/apk-proofs) as a reference to implement this verifier. We will implement it using Solidity language. |
+|      3. | BLS verifier                            | We will implement the bls verifier which will check if the aggregate signature is signed by the apk. We will use the BLS12-377 precompile implemented in Milestone 1. We will implement it using Solidity language. |
+|      4. | Signers threshold checker               | Check if the bitvector of pubkeys contains enough signers. We will implement it using Solidity language. |
+|      5. | replace `merlin::Transcript` with hash? | For it is difficult to implement the Transcript in solidity, we plan to use a alternative way to do it. |
 
 ## Future Plans
 
