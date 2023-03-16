@@ -10,27 +10,31 @@ RFPs [https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/xcm-tool.
 
 ### Overview
 
-XCM (Cross-Consensus Message) is a cross-chain message between parachain and relaychain because the xcm format (
-Instruction, MultiAssets, and MultiLocation) are too complex, and no good tool exists. It has yet to be widely used.
+XCM (Cross-Consensus Message) is a messaging format and language used to communicate between consensus
+systems. [xcm-format](https://github.com/paritytech/xcm-format) (
+Instruction, MultiAssets, MultiLocation...) are too complex, and no good tool exists. It has yet to be widely used.
 
 XCM Tools is a tool and an SDK. This library is written in golang. It provides the following functions: sending xcm
 messages, parsing xcm message instructions and getting the execution result of the execution after sending xcm.
 
 ### Project Details
 
-We only have two libs to choose from, and some functions still need to be included.
+I need to choose between two libraries to interact with
+Substrate: [Go-Substrate-RPC-Client](https://github.com/centrifuge/go-substrate-rpc-client)
+and [substrate-api-rpc](https://github.com/itering/substrate-api-rpc). Both libraries support querying the chain status,
+but they have different features and limitations.
 
-[Go-Substrate-RPC-Client](https://github.com/centrifuge/go-substrate-rpc-client)
-Centrifuge's open source and supports transaction and chain status queries. Scale Codec is
-a [static](https://pkg.go.dev/github.com/centrifuge/go-substrate-rpc-client#hdr-Types) and strongly typed library.
-All types of analysis require user definition.
+[Go-Substrate-RPC-Client](https://github.com/centrifuge/go-substrate-rpc-client) is an open-source library developed by Centrifuge. It also supports sending transactions.
+However, it uses a static and strongly typed Scale Codec library that requires custom structs with Encoding/Decoding
+methods for most types.
 
-[Substrate-API-rpc](https://github.com/itering/substrate-api-rpc), [scale.go](https://github.com/itering/scale.go)
-Subscan open source, support chain status query, Scale Codec supports dynamic types, good serialization, and back-order
-functions, history version types support. But lack the function of transaction sending.
+[substrate-api-rpc](https://github.com/itering/substrate-api-rpc) is another open-source library developed by Subscan. It uses a dynamic Scale Codec library that
+supports serialization, deserialization, and backward compatibility for historical types. However, it does not support
+sending transactions.
 
-After comparison, I chose [Substrate-API-rpc](https://github.com/itering/substrate-api-RPC) as dependence, but because
-of the lack of the function of sending transactions, I also need to change dependence.
+After comparing these libraries with other alternatives, I decided to use [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) because of its flexible and
+robust Scale Codec implementation. However, I still need to add the functionality of sending transactions to the library
+myself.
 
 1. Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc), add extrinsic encode, sign transaction
    (sr25519, ed25519), and send transaction feature.
@@ -40,13 +44,13 @@ of the lack of the function of sending transactions, I also need to change depen
 2. Send xcm messages between relay chain and parachain and between parachain and parachain, support VMP(UMP & DMP),
    HRMP,XCMP(XCM V3) and supports the following methods
 
-* LimitedReserveTransferAssets
-* LimitedTeleportAssets
-* TeleportAssets
-* ReserveWithdrawAssets
-* LimitedReserveWithdrawAssets
-* Execute
-* Sent
+* `LimitedReserveTransferAssets`
+* `LimitedTeleportAssets`
+* `TeleportAssets`
+* `ReserveWithdrawAssets`
+* `LimitedReserveWithdrawAssets`
+* `Execute`
+* `Sent`
 
 3. Get the execution result and the block_hash (block_num) of the execution after sending xcm
 
@@ -114,7 +118,8 @@ Not yet
 
 ### Milestone 1
 
-Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc) and [scale.go](https://github.com/itering/scale.go), support signed & send transaction
+Improve [substrate-api-rpc](https://github.com/itering/substrate-api-rpc)
+and [scale.go](https://github.com/itering/scale.go), support signed & send transaction
 
 * **Estimated duration:** 4 week
 * **FTE:**  1
