@@ -114,7 +114,7 @@ Not yet
 ### Overview
 
 * **Total Estimated Duration:** 4.5 months
-* **Total Costs:** 29500 USDC
+* **Total Costs:** 28500 USDC
 
 ### Milestone 1
 
@@ -138,9 +138,9 @@ and [scale.go](https://github.com/itering/scale.go), support signed & send trans
 
 ### Milestone 2
 
-* **Estimated duration:** 10 week
+* **Estimated duration:** 9 week
 * **FTE:**  1
-* **Costs:** 14500 USDC
+* **Costs:** 13500 USDC
 
 | Number | Deliverable               | Specification                                                                                                                                                   |
 |-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
