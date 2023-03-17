@@ -1,7 +1,7 @@
 # ink!/pallet/solidity performance benchmarking
 
 - **Team Name:** Talentica Software
-- **Payment Address:** 
+- **Payment Address:** 0x8bd54ec34A35f3A2f668A33d9578b5C3A6b730dE
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :
