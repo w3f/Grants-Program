@@ -257,9 +257,13 @@ It is **not** a chance to pitch your project, especially since only a small subs
 
 ### Additional Information
 
-| <img src="static/img/web.png?s=50" width="50" /> | <img src="static/img/twitter.png?s=50" width="50" /> | <img src="static/img/medium.png?s=50" width="50" /> | <img src="static/img/like.png?s=50" width="50" /> | <img src="static/img/reddit.png?s=50" width="50" /> | <img src="static/img/youtube-play.png?s=50" width="50" /> |
+<div align="center">
+
+| <img src="/Grants-Program/img/Web.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Twitter.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Learn.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Wiki.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Reddit.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Youtube.svg?s=50" width="50"></img> |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
+
+</div>
 
 
 ## :rocket: Alternative Funding Sources
