@@ -127,7 +127,6 @@ Github accounts of team members:
 |      2. | Packed APK verifier                     | We will implement the packed verifer which will check the apk is correct. We plan to use the PoC code from [apk-proofs](https://github.com/w3f/apk-proofs) as a reference to implement this verifier. We will implement it using Solidity language. |
 |      3. | BLS verifier                            | We will implement the bls verifier which will check if the aggregate signature is signed by the apk. We will use the BLS12-377 precompile implemented in Milestone 1. We will implement it using Solidity language. |
 |      4. | Signers threshold checker               | Check if the bitvector of pubkeys contains enough signers. We will implement it using Solidity language. |
-|      5. | replace `merlin::Transcript` with hash? | For it is difficult to implement the Transcript in solidity, we plan to use a alternative way to do it. |
 
 ## Future Plans
 
