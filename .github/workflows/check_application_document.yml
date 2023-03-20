@@ -6,6 +6,22 @@ on:
     types: [opened, synchronize]
 
 jobs:
+  discussion_private:
+    if: ${{ github.event.action == 'opened' }} 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add 'discussion private' label if the application is private
+        if: ${{ !contains(github.event.pull_request.body, '- [ ] I prefer the discussion') || !contains(github.event.pull_request.body, '@_______:matrix.org') }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["discussion private"]
+            })
+
   get_filename:
     if: contains(github.event.pull_request.body, 'Project Abstract')
     runs-on: ubuntu-latest
