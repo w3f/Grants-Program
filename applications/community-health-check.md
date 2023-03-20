@@ -232,14 +232,16 @@ Note: We have done an evaluation to decide wheter Reddit or Twitter would be a b
 That being said, we realize that Twitter is undergoing a lot of changes, and we might have to do a last minute pivot to another platform. We are building our analytical scripts in such a way that they can easily be used for other platforms. Therefore, the only thing that has to be changed in the milestones is the name of the platform. 
 
 
+Milestone 1 will be focused on research. Hence, we're not going to deliver the following usually mandatory deliverables:
+
+- Documentation
+- Testing and Testing Guide
+- Docker
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | The results will be published open-access (no paywall or copyright). |
-| 0b. | Documentation | No documentation necessary.|
-| 0c. | Testing and Testing Guide | Testing and Testing Guide not necessary. |
-| 0d. | Docker | A docker file is not necessary for using the community health check. |
-| 0e. | Article| We will publish an article (technical document) describing the metrics, the insights (so-what), and limitations. This article will also explain how the Twitter community is build (e.g., who are nodes, when there is an edge between two people, who is excluded/included and why). The article will not be behind a paywall. The article will be written for an audience comfortable with data analysis. |
+| 0b. | Article | We will publish an article (technical document) describing the metrics, insights (so-what), and limitations. This article will also explain how the Twitter community is built (e.g., who are nodes, when there is an edge between two people, who is excluded/included, and why). The article will not be behind a paywall. The article will be written for an audience comfortable with data analysis. |
 
 ### Milestone 2 — Twitter community health dashboard
 
