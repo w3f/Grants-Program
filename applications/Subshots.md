@@ -36,7 +36,7 @@ We have designed a set of explorer modular components for the Substrate ecosyste
 
 #### High level design
 
-# ![Proposal architecture]()
+![Proposal architecture](https://user-images.githubusercontent.com/6647863/226307035-cf68a5af-88bc-4090-8fab-40fe55e12f53.png)
 
 *Figure 1: Proposal architecture*
 
@@ -50,7 +50,7 @@ We have designed a set of explorer modular components for the Substrate ecosyste
 
 Snapshot push, pull and browse are the three core features for the Subshots Hub. They are illustrated in detail below.
 
-# ![Workflow]()
+![Workflow](https://user-images.githubusercontent.com/6647863/226304502-a1ca05a3-8124-4394-9aa6-18e30d701dc1.svg)
 
 *Figure 2: Workflow*
 
@@ -162,13 +162,13 @@ Parachain/dapp/wallet
 
 ### Team's experience
 
-● In 2019, the CESS team was established and began to design the prototype design of the storage system network's underlying construction. 
+- In 2019, the CESS team was established and began to design the prototype design of the storage system network's underlying construction. 
 
-● In 2020, CESS completed the design of the Random Rotational Selection consensus mechanism (R²S), Multi-format Data Rights Mechanism (MDRC) and Proof of Data Reduplication and Recovery (PoDR²). 
+- In 2020, CESS completed the design of the Random Rotational Selection consensus mechanism (R²S), Multi-format Data Rights Mechanism (MDRC) and Proof of Data Reduplication and Recovery (PoDR²). 
 
-● In 2021, released CESS v0.1 white paper. Released CESS Demo v0.2, started BSC testnet storage mining. The end of the same year, CESS was awarded 1st place in the Polkadot Hackathon APAC Edition. 
+- In 2021, released CESS v0.1 white paper. Released CESS Demo v0.2, started BSC testnet storage mining. The end of the same year, CESS was awarded 1st place in the Polkadot Hackathon APAC Edition. 
 
-● In February 2022, CESS joined the Substrate Builders Program. In July CESS passed all milestones in W3F to receive a grant for developing a storage pallet for Substrate. CESS launched its testnet the same month. 
+- In February 2022, CESS joined the Substrate Builders Program. In July CESS passed all milestones in W3F to receive a grant for developing a storage pallet for Substrate. CESS launched its testnet the same month. 
 
 ### Team Code Repos
 
