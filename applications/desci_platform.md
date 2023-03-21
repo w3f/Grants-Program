@@ -13,17 +13,17 @@ It’s the first application of DeTech.World to the Grants Program
 
 DeTech.World is a Web3 startup focused on creating an all-in-one infrastructure for technology assets as a new asset class. Our goal is to make technology assets liquid and to facilitate the sound technology transfer and monetization processes even in early tech development phases. We do this by introducing multi-chain IP-NFTs and custom IP-NFT marketplaces to showcase unique portfolios of DAOs, research hubs, or any corporate tech R&D.
 
-According to ARK Invest, we will face a $210T cap for disruptive technology by 2030. We want to be at the forefront of making them liquid! By analogy, we build a sort of “Ebay for disruptive technologies and DeSci”. 
+According to ARK Invest, we will face a $210T cap for disruptive technology by 2030. We want to be at the forefront of making them liquid! By analogy, we build a sort of “Ebay for disruptive technologies and DeSci”.
 
-Our Web3 platforms enable features that blur the line between investing and innovating, such as trust-enabled showcasing technology assets, instant IP protection, IP-NFTs, custom IP-NFT marketplaces, new forms of collaboration and co-creation, AI based tech assessment, matching investors and innovations, and providing novel funding, monetization, licensing, and DeFi tools for a new class of assets: Tech Assets. 
+Our Web3 platforms enable features that blur the line between investing and innovating, such as trust-enabled showcasing technology assets, instant IP protection, IP-NFTs, custom IP-NFT marketplaces, new forms of collaboration and co-creation, AI based tech assessment, matching investors and innovations, and providing novel funding, monetization, licensing, and DeFi tools for a new class of assets: Tech Assets.
 
-Thus, we would like to drive the introduction of the DeSci segment within the Polkadot ecosystem. 
+Thus, we would like to drive the introduction of the DeSci segment within the Polkadot ecosystem.
 
-Initially, we’ve built our platforms based on Graphene blockchain and now would like to implement Substrate based pallets for the introduction of DeTech service logic and platform, firstly on Kusama following with a Polkadot parachain. In this approach we are focusing on delivering technology show-casing, co-creation, IP assessment and early stage research funding tools for the DeSci community and growing number of technological DAOs.  
+Initially, we’ve built our platforms based on Graphene blockchain and now would like to implement Substrate based pallets for the introduction of DeTech service logic and platform, firstly on Kusama following with a Polkadot parachain. In this approach we are focusing on delivering technology show-casing, co-creation, IP assessment and early stage research funding tools for the DeSci community and growing number of technological DAOs.
 
-We would like to introduce a DeSci segment within the Polkadot ecosystem and to be the first Polkadot all-in-one platform for DeSci applications and to support numerous technology DAOs with our technology show-casing, co-creation, tech IP assessment, IP-NFTs and funding DeTech tools. We also would like to introduce custom IP NFT marketplaces to feature technology DAOs portfolios in a unique way which will strengthen the DeSci community. 
+We would like to introduce a DeSci segment within the Polkadot ecosystem and to be the first Polkadot all-in-one platform for DeSci applications and to support numerous technology DAOs with our technology show-casing, co-creation, tech IP assessment, IP-NFTs and funding DeTech tools. We also would like to introduce custom IP NFT marketplaces to feature technology DAOs portfolios in a unique way which will strengthen the DeSci community.
 
-Moreover, we target a multi-chain approach and thus would like to utilize XCM and XCMP for our DeSci applications. 
+Moreover, we target a multi-chain approach and thus would like to utilize XCM and XCMP for our DeSci applications.
 
 In fact, we have already implemented a variety of features for the technology transfer process and tested the product idea on TTOs. So we have realized that for keeping delivery fast and being flexible we need to enhance our DLT solution. That's why we look at Substrate as a cutting-edge framework for fast delivery. And we believe that Decentralized science is a segment that could enrich the Polkadot ecosystem to attract new users and to increase adoption.
 
@@ -46,10 +46,10 @@ To enable technology show-casing user should create a technology profile on the 
 [![Screenshot-2023-02-16-at-13-15-26.png](https://i.postimg.cc/7YTVgY1n/Screenshot-2023-02-16-at-13-15-26.png)](https://postimg.cc/dLwrFFxh)
 
 | Number | Element                   | Description                                                                                                            |
-|-------:|---------------------------|------------------------------------------------------------------------------------------------------------------|
+|-------:|---------------------------|------------------------------------------------------------------------------------------------------------------------|
 |     4. | Privacy switcher          | Option for management privacy of project information: private technology mode makes it available for project team only |
-|     5. | Description               | Executive summary about the project/technology                                                                    |
-|        | Commercialization Options | Opportunity to create express license or issue co-creation license                                                |
+|     5. | Description               | Executive summary about the project/technology                                                                         |
+|        | Commercialization Options | Opportunity to create express license or issue co-creation license                                                     |
 
 [![Screenshot-2023-02-16-at-13-49-08.png](https://i.postimg.cc/xdWxrJP8/Screenshot-2023-02-16-at-13-49-08.png)](https://postimg.cc/R3LQK0yx)
 
@@ -120,7 +120,7 @@ To enable technology show-casing user should create a technology profile on the 
 |     3. | Authors                               | List of file authors who own it                                                                                  |
 |     4. | References on materials from platform | In case if the file was created based on the materials previously uploaded on the platform it could be specified |
 |     5. | File to attach                        | Original file                                                                                                    |
-|     6. | Confirmation of ownership             | Option to confirm ownership explicitly       
+|     6. | Confirmation of ownership             | Option to confirm ownership explicitly                                                                           |
 
 [![Screenshot-2023-02-16-at-15-19-57.png](https://i.postimg.cc/250Y4fnr/Screenshot-2023-02-16-at-15-19-57.png)](https://postimg.cc/WDqxvC9H)
 
@@ -132,7 +132,7 @@ Any visitor of the platform can verify the file if he/she has file hash or the o
 [![Screenshot-2023-02-16-at-18-39-39.png](https://i.postimg.cc/RVtPr5Cd/Screenshot-2023-02-16-at-18-39-39.png)](https://postimg.cc/qzkcnF36)
 
 **Contract Management**
-</br>To protect Intellectual Property Rights (IPR) you can add Non Disclosure Agreement (NDA) or Confidentiality Agreement to a Tech Asset. 
+</br>To protect Intellectual Property Rights (IPR) you can add Non Disclosure Agreement (NDA) or Confidentiality Agreement to a Tech Asset.
 [![Screenshot-2023-02-16-at-21-40-25.png](https://i.postimg.cc/13qcnpVK/Screenshot-2023-02-16-at-21-40-25.png)](https://postimg.cc/5XfFDQ3H)
 A consumer/contributor of Tech Asset should sign an agreement in case it was provided for the Tech Assets or reject it. To sign an agreement it uses a private key of the platform user.
 [![Screenshot-2023-02-16-at-21-50-14.png](https://i.postimg.cc/R0q3JmYx/Screenshot-2023-02-16-at-21-50-14.png)](https://postimg.cc/t1QR8KyB)
@@ -145,7 +145,7 @@ A consumer/contributor of Tech Asset should sign an agreement in case it was pro
 [![Screenshot-2023-02-16-at-23-03-51.png](https://i.postimg.cc/wTyFdK2M/Screenshot-2023-02-16-at-23-03-51.png)](https://postimg.cc/zVNTnc9Y)
 
 
-#### Architecture and overview of common interfaces 
+#### Architecture and overview of common interfaces
 Each portal has following elements:
 
 - **Client** - Platform UI that can sign blockchain transactions and have an integration with Polkadot wallets to identify Users on the portal.
@@ -180,27 +180,27 @@ Agenda:
 - Read Model - Database collection that contains blockchain external id and used for improving performance of filtering/sorting operations.
 
 **Modules description**:
-1. Technology Profile Pallet: 
-   - Holds data about technology
-   - Provides interface to store/update Technology profiles
+1. Technology Profile Pallet:
+    - Holds data about technology
+    - Provides interface to store/update Technology profiles
 2. Content Pallet:
-   - Holds data about any content (file hash) linked to the Technology
-   - Provides an interface to store/validate existence of the files (file hashes) in the database.
-3. Agreement Pallet: 
-   - Holds data about signed NDAs
-   - Provides an interface to subscribe/create/validate ownership
+    - Holds data about any content (file hash) linked to the Technology
+    - Provides an interface to store/validate existence of the files (file hashes) in the database.
+3. Agreement Pallet:
+    - Holds data about signed NDAs
+    - Provides an interface to subscribe/create/validate ownership
 4. Proposal Pallet is used for implementing postponed transactions based on multi signatures.
-5. BIO Pallet: 
-   - Holds data about Users profiles (all personal data will store offchain, onchain only assessment score dynamics and metadata will be available)
-   - Provides an interface to store/update User’s Bio.
+5. BIO Pallet:
+    - Holds data about Users profiles (all personal data will store offchain, onchain only assessment score dynamics and metadata will be available)
+    - Provides an interface to store/update User’s Bio.
 6. Membership Pallet - collective management of technology for DeSci
 7. Technology Collection - read model that holds public technology data to improve sorting/filtering performance
 8. Categorization Pallet:
-   - Holds technology categories
-   - Provides an interface to store it
+    - Holds technology categories
+    - Provides an interface to store it
 9. Review Pallet:
-   - Holds review information
-   - Provides an interface to create review/validate ownership
+    - Holds review information
+    - Provides an interface to create review/validate ownership
 10. Access Pallet: universal access to any type of resource. Users have an ability to grant or get access to resources. Access should be validated by the connected wallet.
 11. TechDAO Pallet provides an interface for the Group Technology Asset Management
 12. Review Criteria: database collection that stores review settings for each portal in the network.
@@ -228,7 +228,7 @@ Please find below some of our foundational concepts on DeTech.World:
 
 ### Ecosystem Fit
 
-We would like to introduce the DeSci segment within the Polkadot ecosystem and to enable an all-in-one DeTech platform as a parachain for DeSci organizations and tech DAOs. We also would like to make use of XCM and XCMP for the multi-chain framework. 
+We would like to introduce the DeSci segment within the Polkadot ecosystem and to enable an all-in-one DeTech platform as a parachain for DeSci organizations and tech DAOs. We also would like to make use of XCM and XCMP for the multi-chain framework.
 
 Our target audience is: DeSci community, technology DAOs, research Hubs, Tech Transfer Offices, tech investors, NFT marketplaces
 
@@ -285,7 +285,7 @@ Github account: https://github.com/KatherineDubovik/
 All developments within the Polkadot Grants Program will be open-sourced from day one on GitHub.
 
 ### Team LinkedIn Profiles
- 
+
 - Dr. Dimitri Sidorovitch: https://www.linkedin.com/in/dr-dimitri-sidorovitch-891020163
 - Elena Borer: https://www.linkedin.com/in/elena-borer-profile/
 - Ulad Vinsarevich: https://www.linkedin.com/in/uladzislau-vintsarevich/
@@ -304,9 +304,9 @@ Platform built on Graphene is piloted and the product/market fit is verified. Th
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 7 FTE
-- **Total Costs:** Requested amount in USD for the whole project 30,000 USD. 
+- **Total Costs:** Requested amount in USD for the whole project 30,000 USD.
 
-During 2 months it's going to create Proof of concept based on Substrate framework. 
+During 2 months it's going to create Proof of concept based on Substrate framework.
 POC includes basic DeSci functionality such as: technology identification, content uploading, ability to share access to general info about technology and enrich technology by co-creation
 
 ### Milestone POC - Basic DeSci platform functionality
@@ -316,19 +316,19 @@ POC includes basic DeSci functionality such as: technology identification, conte
 - **Costs:** 30,000 USD
 
 
-|  Number | Deliverable                                       | Specification                                                                                                                                                                                                                                                                                                                                        |
-|--------:|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                                           | Apache 2.0                                                                                                                                                                                                                                                                                                                                           |
-| **0b.** | Documentation                                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                                                      |
-| **0c.** | Testing and Testing Guide                         | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                      |
-| **0d.** | Docker                                            | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                        |
-|     0e. | Article                                           | We will publish an article that explains how to use DeSci pallet functionality, get access to the DeSci project info and use case of co-creation via Co-creation and content access pallet                                                                                                                                                           |
-|      1. |DeSci project pallet                               | DeSci project pallet will provide functionality to create DeSci project and it will include fuctionality: </br>1.1. Add information about the DeSci project (technology); </br>1.2. Edit project information; </br>1.3. Get information about the DeSci project (technology).                                                                        |
-|      2. |Content upload pallet                              | Content pallet that will provide secured uploading content related to technology includes functionalities: </br>2.1. File upload (integration with S3); </br>2.2. View/Retrieve file; </br>2.3. Verify files by hash.                                                                                                                                |                            
-|      3. |Co-creation and content access pallet              | Co-creation and content access pallet will realize functionality: </br>2.1. Create co-creation collaboration (based on wallet address); </br>2.2. Send request for co-creation;</br>2.3. Confirm request for co-creation; </br>2.4. Decline request for co-creation; </br>2.5. Revoke co-creation access; </br>2.6. Get status of co-creation access.|
-|      4. |Integration with Polkadot wallet extension         | It will be add an opportunity to use Polkadot wallet for authorization and authentication in the application.                                                                                                                                                                                                                                        |
-|      5. |UI for DeSci project and access to content         | Based on React + React Query + GraphQL (UI tech stack) we will implement UI pages which allow to manage DeSci project (create and edit info), upload content and manage access to the project. It will be used Polkadot wallet integration for user authorization and authentication.                                                                |
-|      6. |Substrate chain                                    | We will set up a stand alone test network to provide an ability test and validate ideas in the DeSci domain.                                                                                                                                                                                                                                         |
+|  Number | Deliverable                                | Specification                                                                                                                                                                                                                                                                                                                                         |
+|--------:|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                                    | Apache 2.0                                                                                                                                                                                                                                                                                                                                            |
+| **0b.** | Documentation                              | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                                                       |
+| **0c.** | Testing and Testing Guide                  | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                       |
+| **0d.** | Docker                                     | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                         |
+|     0e. | Article                                    | We will publish an article that explains how to use DeSci pallet functionality, get access to the DeSci project info and use case of co-creation via Co-creation and content access pallet                                                                                                                                                            |
+|      1. | DeSci project pallet                       | DeSci project pallet will provide functionality to create DeSci project and it will include fuctionality: </br>1.1. Add information about the DeSci project (technology); </br>1.2. Edit project information; </br>1.3. Get information about the DeSci project (technology).                                                                         |
+|      2. | Content upload pallet                      | Content pallet that will provide secured uploading content related to technology includes functionalities: </br>2.1. File upload (integration with S3); </br>2.2. View/Retrieve file; </br>2.3. Verify files by hash.                                                                                                                                 |                            
+|      3. | Co-creation and content access pallet      | Co-creation and content access pallet will realize functionality: </br>2.1. Create co-creation collaboration (based on wallet address); </br>2.2. Send request for co-creation;</br>2.3. Confirm request for co-creation; </br>2.4. Decline request for co-creation; </br>2.5. Revoke co-creation access; </br>2.6. Get status of co-creation access. |
+|      4. | Integration with Polkadot wallet extension | It will be add an opportunity to use Polkadot wallet for authorization and authentication in the application.                                                                                                                                                                                                                                         |
+|      5. | UI for DeSci project and access to content | Based on React + React Query + GraphQL (UI tech stack) we will implement UI pages which allow to manage DeSci project (create and edit info), upload content and manage access to the project. It will be used Polkadot wallet integration for user authorization and authentication.                                                                 |
+|      6. | Substrate chain                            | We will set up a stand alone test network to provide an ability test and validate ideas in the DeSci domain.                                                                                                                                                                                                                                          |
 
 
 ## Future Plans
@@ -341,13 +341,13 @@ N/A
 
 ### Project Motivation
 
-DeTech.World is a DLT platform that enables liquidity of Technology Assets, from ideation to commercialization, enhances technologies commercialization process and creates a new class of assets – Synthetic Tech Assets. 
+DeTech.World is a DLT platform that enables liquidity of Technology Assets, from ideation to commercialization, enhances technologies commercialization process and creates a new class of assets – Synthetic Tech Assets.
 
 Tech assets refer to any intangible technology-based resources and technological innovations such as know-how inventions, scientific creations, proprietary algorithms, unique design, frameworks or any other kind of intellectual property (IP).
 
 **Tech transfer challenges**
 
-There are several potential ways to address the challenges facing technology transfer today. 
+There are several potential ways to address the challenges facing technology transfer today.
 
 One potential solution is to develop a more comprehensive and standardized process for technology transfer, including clear guidelines and resources for innovators to help them navigate the process and find the right partners.
 
@@ -379,7 +379,7 @@ From DeTech.World perspective, most important and relevant Web 3.0 features are:
 
 ### Market Fit
 
-In today's knowledge age, corporate assets are increasingly dominated by intangible assets. Right now, roughly 90% of assets in S&P 500 companies are intangible, a trend that will only keep growing. An intangible asset is an identifiable, non-monetary asset that lacks physical substance. 
+In today's knowledge age, corporate assets are increasingly dominated by intangible assets. Right now, roughly 90% of assets in S&P 500 companies are intangible, a trend that will only keep growing. An intangible asset is an identifiable, non-monetary asset that lacks physical substance.
 
 [![Screenshot-2023-02-15-at-15-43-15.png](https://i.postimg.cc/Gm9tPYVD/Screenshot-2023-02-15-at-15-43-15.png)](https://postimg.cc/87QTNF1k)
 
@@ -400,7 +400,7 @@ We guess that the reasons why the current legal and IP system are unable to make
 
 On the other hand, non-fungible tokens (NFTs), or cryptoassets representing proof of title to a unique digital version of an underlying asset provide a fast and secure way to exchange. In the sports and digital arts sectors, recent NFT issuances have sold out in seconds, netting their creators millions. And the idea of DeTech.World is to provide a technical solution based on NFTs as an IP metadata container with multichain compatibility and opportunity to use DeFi tools and list assets to marketplaces.
 
-The goals of the our product are the following:	
+The goals of the our product are the following:
 1. Enhance capability of IP showcasing using up-to-date cryptography methods.
 2. Boost experts' collaboration via economics incentives and DAO mechanism.
 3. Enable quick investment decisions and add value to Tech Assets by creating statistical models of assessment.
