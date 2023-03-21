@@ -310,7 +310,7 @@ The interface will leverage all the features [here](https://trello.com/1/cards/6
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an article that explains supersig pallet to developers on a blog post; and a substrate workshop/seminar that explains that shows how the pallet was designed (if there available slot, else a video shared on loom/youtube).
 | 1. | Substrate module: pallet_supersig | We will refactor the pallet so that it does not store unbounded call data.  |  
-| 2. | Supersig-app: polkadot-js-ui  | We need to make various changes and use a lot of polkadot js hooks in order Jaco to accept the PR  |  
+| 2. | Supersig-app: polkadot-js-ui  | We need to make various changes and use a lot of polkadot js hooks in order Jaco to accept the PR: refactoring converting a lot of hooks to be the native polkadot-rs hooks rather than our own hooks; linting; changing augment-types; linting, and 300 errors when building for the polkadot-js PR.  |  
 | 3. | Benchmarking | The pallet will be benchmarked and unit tested using worst case weightings. |
 
 ### Milestone 2 — Supersig UI and feedback from Fellowship
