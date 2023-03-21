@@ -236,7 +236,7 @@ DEX integrations:
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that introduces to the solution with all the guidelines included. |
-| 1. | Attestation oracle core: Off-chain worker | We will create an Off-chain worker as stated in the architecture overview section (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
+| 1. | Attestation oracle core: Off-chain worker | We will create an Off-chain worker as stated in the architecture overview section. |
 | 2. | Attestation oracle core: Pallet | The entire solution will be made available as Pallet (described in architecture section). |
 | 3. | Attestation oracle core: RPCs | We will set-up connections to RPCs of other chains with fallback functionality (at least 2 RPCs per chain). |
 | 4. | Attestation oracle core: Collateral ratio calculation | The logic for calculating collateral ratio will be developed within the off-chain worker. |
@@ -254,9 +254,9 @@ DEX integrations:
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can integrate bridges collateralization value, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Bridge Integration: XCM | We will integrate XCM bridge with the off-chain worker which will read contract states from different chains to arrive with a unified collateral value. |
-| 2. | Bridge Integration: Multichain | We will integrate Mulitchain bridge with the off-chain worker which will read contract states from different chains to arrive with a unified collateral value. |
-| 3. | Bridge Integration: Interlay | We will integrate Interlay bridge with the off-chain worker which will read contract states from different chains to arrive with a unified collateral value. |
+| 1. | Bridge Integration: XCM | We will develop a module as part of the proposed solution that retrieves collateral information for assets bridged by the [XCM bridge contracts](https://github.com/paritytech/polkadot/tree/master/xcm). |
+| 2. | Bridge Integration: Multichain | We will develop a module as part of the proposed solution that retrieves collateral information for assets bridged by the [Multichain bridge contracts](https://github.com/anyswap). |
+| 3. | Bridge Integration: Interlay | We will develop a module as part of the proposed solution that retrieves collateral information for assets bridged by the [Interlay bridge contracts](https://github.com/interlay/interbtc). |
 
 
 ## Future Plans
