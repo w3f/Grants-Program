@@ -171,7 +171,7 @@ Each node should try to get authorship permission based on the KV (Key-value) st
 | **0c.** | Testing and Testing Guide | We will provide unit tests and the guidelines for running and testing it the scope. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Run the necessary Raft services | Set up a local dev infrastructure to run TiKV components in order to provide a distributed KV store. |
-| 2. | Integrate a Raft client into the node | Replace the previous logic with a TiKV based one and modify configs to allow the TiKV client to connect to Placement Drivers. | 
+| 2. | Integrate a Raft client into the node | Replace the previous logic with a TiKV based one and modify configs to allow the TiKV client to connect to Placement Drivers. Placement Drivers (PD) is one of the components which stores metadata for the entire TiKV cluster. It is responsible for sending commands to the TiKV nodes. The minimum setup for PD is to manage three TiKV nodes. | 
 | 3. | Integration test | A dockerised setup that allows to test the Raft consensus mechanism. | 
 
 
