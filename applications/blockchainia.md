@@ -80,7 +80,7 @@ We plan to leverage all of our experience and industry connections to build a he
 - https://github.com/eca20/Coursework/tree/main/CS1699-Blockchain
 - https://github.com/eca20/BlockchainiaJRPG
 - https://github.com/eca20
-- https://github.com/bluedragonblockchain
+- https://github.com/oopmatt
 
 ### Team LinkedIn Profiles (if available)
 
