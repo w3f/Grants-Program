@@ -284,7 +284,7 @@ pub enum Error<T> {
 **Milestone 2** Create a custom UI, and act on feedback from Fellowship. 
 
 - Build a custom interface where the user interacts with their organisation created with supersig. The interface will initially support Statemine, Kabocha, and Soupcan (testnet).
-The interface will leverage all the features [here](https://trello.com/1/cards/64197a7bcc843f46bfb0ab2b/attachments/64198bf574e7348c470997bb/download/Screenshot_2023-03-21_at_10.46.20.png), but in a cleaner and bespoke user interface that is different to polkadot-js design. 
+The interface will leverage all the features [here](https://trello.com/1/cards/64197a7bcc843f46bfb0ab2b/attachments/64198bf574e7348c470997bb/download/Screenshot_2023-03-21_at_10.46.20.png), but in a cleaner and bespoke user interface like [this simple mockup](https://trello.com/c/fUTXOuo3/619-create-supersig-ui-for-m2-2). 
 - Make improvements so that Fellowship member feedback is satisfied (if any).
 
 
