@@ -177,10 +177,10 @@ Substrate deliverables are newer to us and imply a learning curve, however the a
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can test functionality, implement a Chain Reactor, etc. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Chain Reactor API | We will create the API for Chain Reactors using API technologies that facilitate language-agnostic implementations. |
-| 2. | Chain Reactor RI | We will implement a Chain Reactor Reference Implementation based on Apache CloudStack that can run against the Apache CloudStack Simulator to facilitate further development. |
-| 3. | Chain Reactor RI Test Suite | We will release a comprehensive set of Chain Reactor RI Unit tests that should serve as guideline for TDD of other implementations |
-| 4. | CD/CI Chain Reactor RI | Pipelines will be created for Chain Reactor Reference Implementation that must serve as guideline to other implementations |
+| 1. | Chain Reactor API | We will create the API for Chain Reactors using API technologies (OpenAPI or similar) that facilitate language-agnostic implementations. |
+| 2. | Chain Reactor RI | We will implement a Chain Reactor Reference Implementation based on Apache CloudStack that can run against the Apache CloudStack Simulator to facilitate further development. The RI will be written in Python as programming language and Ansible as automation stack|
+| 3. | Chain Reactor RI Test Suite | We will release a comprehensive set of Chain Reactor RI Unit tests that should serve as guideline for TDD of other implementations, implmented with Python. |
+| 4. | CD/CI Chain Reactor RI | Gitlab Pipelines will be created for Chain Reactor Reference Implementation that must serve as guideline to other implementations |
 
 
 ### Milestone 2 — Substrate Parachain
@@ -195,10 +195,10 @@ Substrate deliverables are newer to us and imply a learning curve, however the a
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run, test and contribute to the DINFRA parachain. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | DINFRA Provider Pallet | It will allow for Accounts to register as providers, Providers to declare supported Deployment types and avilable capacity. Will Assign Deployments to Providers by simple means such as Round Robin, Random or Capacity Based. |
-| 2. | DINFRA Subscription Pallet | It will represent a simple Subscription to pay for a deployment. Cost will be fixed per block. Deployments will be teared down when allocated Balance is consumed. Consumers will be able to cancel Subscriptions and any time, tearing down the deployment. |
-| 3. | Chain Reactor Interface | A Substrate Interface will be created with Providers Chain Reactors so that Deployment Contracts can be Deployed and Teared Down. |
-| 4. | SSH Key Derivation | A viability study and implementation of converter of Substrate Account Keys into SSH Keys based on ed25519. |
+| 1. | DINFRA Provider Pallet | It will allow for Accounts to register as providers, Providers to declare supported Deployment types and avilable capacity. Will Assign Deployments to Providers by simple means such as Round Robin, Random or Capacity Based. Implemented with Substrate/Rust.|
+| 2. | DINFRA Subscription Pallet | It will represent a simple Subscription to pay for a deployment. Cost will be fixed per block. Deployments will be teared down when allocated Balance is consumed. Consumers will be able to cancel Subscriptions and any time, tearing down the deployment. Implemented with Substrate/Rust. |
+| 3. | Chain Reactor Interface | A Substrate Interface will be created with Providers Chain Reactors so that Deployment Contracts can be Deployed and Teared Down. The interface will be based on standard Substrate interfaces OCW, RPC and/or sidecar service / REST |
+| 4. | SSH Key Derivation | A viability study and implementation of converter of Substrate Account Keys into SSH Keys based on ed25519. Implemented with NodeJS|
 
 ### Milestone 3 — Integration Testing and Test Chain
 
