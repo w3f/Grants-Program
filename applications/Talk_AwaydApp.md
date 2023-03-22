@@ -26,6 +26,7 @@ Our mission is to provide a differentiated teaching approach to promote language
 
 
 TECHNICAL PART AND PROJECT DETAILS
+
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 In this moment we have a Proof of Concept with around 100 classes offered. Our next step is a MVP in web3.
 Our dApp will build from scratch under Polkadot.
