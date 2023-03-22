@@ -12,7 +12,8 @@ jobs:
     steps:
       - name: Add 'discussion private' label if the application is private
         if: |
-          ${{ 
+          ${{
+            github.event.pull_request.body &&
             contains(github.event.pull_request.body, '- [x] I prefer the discussion') || 
             (
               contains(github.event.pull_request.body, '- [ ] I prefer the discussion') &&
