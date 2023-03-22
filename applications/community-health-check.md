@@ -231,15 +231,13 @@ Note: We have done an evaluation to decide wheter Reddit or Twitter would be a b
 
 That being said, we realize that Twitter is undergoing a lot of changes, and we might have to do a last minute pivot to another platform. We are building our analytical scripts in such a way that they can easily be used for other platforms. Therefore, the only thing that has to be changed in the milestones is the name of the platform. 
 
-
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | The results will be published open-access (no paywall or copyright). |
+| 0a. | License | The results will be published open-access using an Apache 2.0, GPLv3, or MIT license. We will decide later which one is most suitable for the written document. |
 | 0b. | Documentation | No documentation necessary.|
 | 0c. | Testing and Testing Guide | Testing and Testing Guide not necessary. |
 | 0d. | Docker | A docker file is not necessary for using the community health check. |
-| 0e. | Article| We will publish an article (technical document) describing the metrics, the insights (so-what), and limitations. This article will also explain how the Twitter community is build (e.g., who are nodes, when there is an edge between two people, who is excluded/included and why). The article will not be behind a paywall. The article will be written for an audience comfortable with data analysis. |
+| 0e. | Article| We will publish an article (technical document) describing the metrics, the insights (so-what), and limitations. This article will also explain how the Twitter community is build (e.g., who are nodes, when there is an edge between two people, who is excluded/included and why). We will build a directed network, where nodes are always Twitter users. From a network assembly perspective, we will not differentiate between accounts representing people and those representing communities or organizations. The edges between an user profiles are either a reply, quote, mention, retweets, or likes. Thus, a tie from user A to user B exists if (1) user A replies to user B, user A quotes user B, user A mentions user B, user A retweets user B, or user A likes user B's tweet. At this moment, we will created weighted edges, not making a conceptual difference between the interaction type (reply, quote, mention, retweets and likes).The article will not be behind a paywall. The article will be written for an audience comfortable with data analysis. |
 
 ### Milestone 2 — Twitter community health dashboard
 
@@ -262,7 +260,7 @@ Given the rate limit, we will see how users will be able to combine different ac
 | 0c. | Testing and Testing Guide | Running the data pipeline and analyzing the data will be covered by tests to ensure functionality. We will describe how to run the tests|.
 | 0d. | Docker | We will deliver a docker file to tests the functionality. |
 | 0e. | Article | In addition to the dashboard, we write a handout. This is a walkthrough of the dashboard, explaining each metric, if the score is good or bad, and a list of recommendations.  |
-| 1. | Twitter data integration | We will create a data pipeline fetching data from Twitter using their API. The user will have several options to define their community (e.g., everyone who follows the official Polkadot/Kusama account, everyone who follows the account and interacts with the content). The data pipeline is build using python. We have already a data flow for Discord visible in the following repos: [Discord bot](https://github.com/RnDAO/tc-botComm), [interactions with db](https://github.com/RnDAO/tc-dbComm), and [interactions between front-end and db](https://github.com/RnDAO/tc-serverComm). |
+| 1. | Twitter data pipeline | We will create a data pipeline fetching data from Twitter using their API. The user will enter one or a few twitter handles. The data pipeline is build using Python. We have already a data flow for Discord visible in the following repos: [Discord bot](https://github.com/RnDAO/tc-botComm), [interactions with db](https://github.com/RnDAO/tc-dbComm), and [interactions between front-end and db](https://github.com/RnDAO/tc-serverComm). |
 | 2. | Twitter dashboard | We will extend our dashboard to include a page with Twitter community health data. The dashboard is build using Typescript. Our current dashbaord, build on Discord data, is available in this [github](https://github.com/RnDAO/tc-uiComm). We will add the Twitter metrics to this dashboard.  |
 | 3. | Workshop/call | We will hold a workshop/ call to answer any questions about the dashboard and handout.  |
 
