@@ -201,7 +201,7 @@ Parachain/dapp/wallet
 | 0a.    | License                 | Apache 2.0                         |
 | 0b.    | Documentation           | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run the CLI to push or pull snapshots. |
 | 0c.    | Testing Guide           | Core functions will be fully covered by comprehensive unit tests written using unittest package to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1a.    | Subshots CLI            | We will develop a CLI tool using Golang with the following main features: compressing snapshots, uploading snapshots, scheduling tasks, querying snapshot hashes, downloading snapshots, and decompressing snapshots. |
+| 1a.    | Subshots CLI            | We will develop a CLI tool using Golang with the following main features: compressing snapshots, uploading snapshots, scheduling tasks, querying snapshot hashes, downloading snapshots, and decompressing snapshots. Support Pruned Node, RocksDb database format. |
 | 1b.    | Smart Contract          | We will develop a smart contract using ink!, with the main function of storing snapshot information. |
 
 ### Milestone 2
@@ -216,7 +216,8 @@ Parachain/dapp/wallet
 | 0b.    | Documentation          | We will provide both inline documentation of the code and a basic tutorial that explains how to use the website. |
 | 0c.    | Testing Guide          | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided. |
 | 0d.    | Article                | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem. |
-| 1a.    | Subshots Portal        | We will develop frontend embedded in [substats](https://substats.cess.cloud/) block explorer to display a list of snapshots and their details. |
+| 1a.    | Subshots CLI           | Support Full Node and Archive Node, ParityDb database format. |
+| 1b.    | Subshots Portal        | We will develop frontend embedded in [substats](https://substats.cess.cloud/) block explorer to display a list of snapshots and their details. |
 
 ## Future Plans
 
