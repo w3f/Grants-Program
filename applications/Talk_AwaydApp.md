@@ -1,11 +1,12 @@
 # dApp-project-
 
-team_name: Talk Away
-contact_name: Fernanda Paixão e Douglas Miranda 
- contact_email: talkawaylanguage@gmail.com
-total_cost_dai: 14.000,00
-level: 2
-total_milestones : 2
+* team_name: Talk Away
+* contact_name: Fernanda Paixão e Douglas Miranda 
+* contact_email: talkawaylanguage@gmail.com
+* total_cost_dai: 14.000,00
+* level: 2
+* total_milestones : 2
+
 Adress: Rua Joaquim Murtinho 700/s204. Zip code 20241320
 This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a > (such as this one) should be removed. Please use markdown instead of HTML (e.g. instead of ).
 See the [Grants Program Process]
@@ -23,10 +24,66 @@ As a teaching platform on the web3, we are building a dapp and a metaverse proto
 
 Our mission is to provide a differentiated teaching approach to promote language knowledge for people with limited financial resources and migratory vulnerability. We also aim to connect people from all over the world, fostering greater awareness of global cultural diversity.
 
-PROJECT DETAILS
+
+TECHNICAL PART AND PROJECT DETAILS
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 In this moment we have a Proof of Concept with around 100 classes offered. Our next step is a MVP in web3.
 Our dApp will build from scratch under Polkadot.
+
+* The smart contract will handle the following:
+
+-	Create new user 
+It will create a new user, either a free student or a certificate student.
+-	Create new tutor 
+It will create a tutor with information about the courses, services he will provide, and the price for his lesson. 
+-	Create new resources 
+-	Login/logout from the wallet and chack thebalance.
+-	Pay per lesson: it will get the predefined price from the student and save it to the website contract address 
+-	Payment for multiple classes will be an offer to get some discounts. 
+-	Certificate generation 
+-	Transfer payment to tutor: it will send the money from the website address to the tutor's address after the user call the check class successfully.
+-	Check class for user: after each class, the user -student- will call this function so the class passes successfully and the money can be transferred to the tutor.
+-	Check level: this function will be called by the tutor only and return the level of the user
+To be able to handle the following information we need to create a struct for the user, tutor, 
+certification 
+-	Part of the classes payment will go to social projects that will be voted on by community: voting system and distribution of the fund.
+
+ Small enums 
+User type: student-tutor 
+Level enum: determine the level the student has 
+Student type enum: free - with certificate 
+
+Student info will be saved on the contract: 
+-	User id 
+-	User name 
+-	User type
+-	Public key 
+-	Level 
+-	Certificate 
+-	Has payed 
+-	Has checked 
+
+Tutor info will be saved on the contract: 
+-	User id 
+-	User name 
+-	Rating 
+-	Course info hash will contain a hash to the saved class info and material if existing.
+Course material and info will be saved on IPFS 
+
+Certification will be SBTs and will be minted at the end of each level.
+
+Technical parts: The stack will be React.js, node.js, and mongoose. 
+
+Dapp Solid overview:
+-	The home page contains classes and tutor info. 
+-	Forms for creating a user/tutor. 
+-	Log in with the user’s wallet.
+-	The user profile contains info about the user. Attended class, level, certifications
+-	The tutor profile contains info about the tutor, classes, rating 
+-	Terms policy
+-	Contact us
+
+
 
 ECOSYSTEM FIT
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -73,10 +130,10 @@ We will release our smart contract codes in a github page of our app structure.
 
 Contact
 
-Contact Name: Fernanda Paixão Moreira
-Contact Email: talkawaylanguage@gmail.com
-Website: http://talkawaylanguage.com/
-Legal Structure
+* Contact Name: Fernanda Paixão Moreira
+* Contact Email: talkawaylanguage@gmail.com
+* Website: http://talkawaylanguage.com/
+* Legal Structure
 Registered Address: Talk Away, Rua Joaquim Murtinho, 700 zipcode: 20241-320, Rio de Janeiro, Brazil.
 Registered Legal Entity: Polvo Criações I.S (Inova Simples)
 46.008.424/0001-01 https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Comprovante.asp
@@ -105,3 +162,4 @@ If you've already started implementing your project or it is part of a larger re
 https://medium.com/@nomadelabel/decentralized-education-what-decentralization-do-we-want-c58b619828d9
 
 https://gov.near.org/t/approved-july-august-2022-cultural-event-to-launch-payment-in-crypto-currency-on-the-talk-away-platform/23351
+
