@@ -10,11 +10,12 @@ jobs:
     if: |
       ${{ 
         github.event.action == 'opened' &&
-        github.event.pull_request.body &&
-        contains(github.event.pull_request.body, '- [x] I prefer the discussion') || 
-        (
-          contains(github.event.pull_request.body, '- [ ] I prefer the discussion') &&
-          !contains(github.event.pull_request.body, '@_______:matrix.org')
+        github.event.pull_request.body && (
+          contains(github.event.pull_request.body, '- [x] I prefer the discussion') || 
+          (
+            contains(github.event.pull_request.body, '- [ ] I prefer the discussion') &&
+            !contains(github.event.pull_request.body, '@_______:matrix.org')
+          )
         )
       }} 
     runs-on: ubuntu-latest
