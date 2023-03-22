@@ -231,12 +231,15 @@ Note: We have done an evaluation to decide wheter Reddit or Twitter would be a b
 
 That being said, we realize that Twitter is undergoing a lot of changes, and we might have to do a last minute pivot to another platform. We are building our analytical scripts in such a way that they can easily be used for other platforms. Therefore, the only thing that has to be changed in the milestones is the name of the platform. 
 
+Milestone 1 will be focused on research. Hence, we're not going to deliver the following usually mandatory deliverables:
+
+- Documentation
+- Testing and Testing Guide
+- Docker
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | The results will be published open-access using an Apache 2.0, GPLv3, or MIT license. We will decide later which one is most suitable for the written document. |
-| 0b. | Documentation | No documentation necessary.|
-| 0c. | Testing and Testing Guide | Testing and Testing Guide not necessary. |
-| 0d. | Docker | A docker file is not necessary for using the community health check. |
 | 0e. | Article| We will publish an article (technical document) describing the metrics, the insights (so-what), and limitations. This article will also explain how the Twitter community is build (e.g., who are nodes, when there is an edge between two people, who is excluded/included and why). We will build a directed network, where nodes are always Twitter users. From a network assembly perspective, we will not differentiate between accounts representing people and those representing communities or organizations. The edges between an user profiles are either a reply, quote, mention, retweets, or likes. Thus, a tie from user A to user B exists if (1) user A replies to user B, user A quotes user B, user A mentions user B, user A retweets user B, or user A likes user B's tweet. At this moment, we will created weighted edges, not making a conceptual difference between the interaction type (reply, quote, mention, retweets and likes).The article will not be behind a paywall. The article will be written for an audience comfortable with data analysis. |
 
 ### Milestone 2 — Twitter community health dashboard
