@@ -80,7 +80,13 @@ Snapshot push, pull and browse are the three core features for the Subshots Hub.
 
 #### Mockups/designs of any UI components
 
+- **Chain List**
 
+![list](https://user-images.githubusercontent.com/6647863/226823473-5532bc81-fbab-457d-9d11-606582250920.png)
+
+- **Snapshot Details**
+
+![details](https://user-images.githubusercontent.com/6647863/226823519-d1148824-d802-4760-b856-41f87935c60d.png)
 
 #### API specifications of the core functionality
 
