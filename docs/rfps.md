@@ -54,7 +54,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [php-scale.md](RFPs/Closed/php-scale.md) | 🔴 | 23.11.2022 |  
 | [polkadot-collator-setup.md](RFPs/Closed/polkadot-collator-setup.md) | 🔴 | 22.03.2023 |
 | [privacy-enhancement-polkadot-extension.md](RFPs/Under%20Development/privacy-enhancement-polkadot-extension.md) | 🟡 | 27.05.22 |
-| [raft-validators.md](RFPs/Open/raft-validators.md) | 🟢 | 23.11.2021 |
+| [raft-validators.md](RFPs/Under%20Development/raft-validators.md) | 🟡 | 23.05.2023 |
 | [scale-codec-comparator.md](RFPs/Under%20Development/scale-codec-comparator.md) | 🟡 | 30.05.2022 |
 | [social-recovery-wallet.md](RFPs/Under%20Development/social-recovery-wallet.md) | 🔴 | 03.03.2023 |
 | [staking-rewards-collector-front-end.md](RFPs/Closed/staking-rewards-collector-front-end.md) | 🔴 | 20.07.2021 |  
