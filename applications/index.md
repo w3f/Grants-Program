@@ -67,6 +67,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Tolga Yaycı](https://github.com/tolgayayci)                        | [Awesome Polka](Awesome-Polka.md)                                       | [GitHub](https://github.com/tolgayayci/awesome-polka/tree/dev)                               | ☐          |        ☐       |      ☐     |
 | [gmajor](https://github.com/gmajor-encrypt)                        | [XCM Tools](xcm-tools.md)                                       | [GitHub](https://github.com/gmajor-encrypt/)                               | ☐          |        ☐       |      ☐     |
 | [David Semakula](https://github.com/davidsemakula)                        | [Ink Analyzer](ink-analyzer.md)                                       | [GitHub](https://github.com/ink-analyzer/ink-analyzer)                               | ☐          |        ☐       |      ☐     |
+| [Bright Inventions](https://brightinventions.pl/)      | [High-availability validator setup](High_availability_validator_setup.md)     | [GitHub](https://github.com/bright/)          | ☐          |        ☐       |      ☐     |
+
 
 ## 2022
 
