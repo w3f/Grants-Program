@@ -68,7 +68,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [gmajor](https://github.com/gmajor-encrypt)                        | [XCM Tools](xcm-tools.md)                                       | [GitHub](https://github.com/gmajor-encrypt/)                               | ☐          |        ☐       |      ☐     |
 | [David Semakula](https://github.com/davidsemakula)                        | [Ink Analyzer](ink-analyzer.md)                                       | [GitHub](https://github.com/ink-analyzer/ink-analyzer)                               | ☐          |        ☐       |      ☐     |
 | [Bright Inventions](https://brightinventions.pl/)      | [High-availability validator setup](High_availability_validator_setup.md)     | [GitHub](https://github.com/bright/)          | ☐          |        ☐       |      ☐     |
-
+| [DIA Data](https://www.diadata.org/)      | [Bridges Attestation Oracle](DIA_Bridge_Attestation_Oracle.md)     | [GitHub](https://github.com/diadata-org/)          | ☐          |        ☐       |      ☐     |
 
 ## 2022
 
