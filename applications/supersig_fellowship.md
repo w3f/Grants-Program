@@ -323,7 +323,7 @@ The interface will leverage all the features [here](https://trello.com/1/cards/6
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide inline documentation and a tutorial with a polkadot-js apps fork that guides a developer to simply set up supersig pallet and UI. |
-| 0c. | Error messages | Core functions will be fully covered by very informative error messages. |
+| 0c. | Testing messages | Core functions will be fully covered by e2e testing guide and informative error messages. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with milestone 2. The dockerfile will be a polkadot JS UI fork, it will also be the smallest possible file size (MBs not GBs) |
 | 0e. | Article | We will publish an article that explains supersig pallet to the end-user. The article will be on medium and subsocial.
 | 1. | React/Typecript: Supersig UI | We will build a custom user interface so that users can interact with supersig.   |  
