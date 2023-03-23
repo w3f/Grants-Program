@@ -66,6 +66,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | Taiwan Research-based Biopharmaceutical Manufacturers Association                        | [Claps Health](Claps.md)                                       | [GitHub](https://github.com/Claps-Health/)                               | ☐          |        ☐       |      ☐     |
 | [Tolga Yaycı](https://github.com/tolgayayci)                        | [Awesome Polka](Awesome-Polka.md)                                       | [GitHub](https://github.com/tolgayayci/awesome-polka/tree/dev)                               | ☐          |        ☐       |      ☐     |
 | [gmajor](https://github.com/gmajor-encrypt)                        | [XCM Tools](xcm-tools.md)                                       | [GitHub](https://github.com/gmajor-encrypt/)                               | ☐          |        ☐       |      ☐     |
+| [David Semakula](https://github.com/davidsemakula)                        | [Ink Analyzer](ink-analyzer.md)                                       | [GitHub](https://github.com/ink-analyzer/ink-analyzer)                               | ☐          |        ☐       |      ☐     |
 
 ## 2022
 
