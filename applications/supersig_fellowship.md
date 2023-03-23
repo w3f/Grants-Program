@@ -281,11 +281,11 @@ pub enum Error<T> {
 - A lot of functions need to be transformed into the hooks that polkadot js apps use as a standard.
 - Very strict linting and standards, currently sitting at 300 errors. 
 
-**Milestone 2** Create a custom UI, and act on feedback from Fellowship. 
+**Milestone 2** Custom UI foundation MVP, and act on feedback from Fellowship. 
 
 - Build a custom interface where the user interacts with their organisation created with supersig. The interface will initially support Statemine, Kabocha, and Soupcan (testnet).
 The interface will leverage all the features [here](https://trello.com/1/cards/64197a7bcc843f46bfb0ab2b/attachments/64198bf574e7348c470997bb/download/Screenshot_2023-03-21_at_10.46.20.png), but in a cleaner and bespoke user interface like [this simple mockup](https://trello.com/c/fUTXOuo3/619-create-supersig-ui-for-m2-2). 
-- Custom UI will be simpler and more bespoke to organising, initially around supersig. It will begin with similar features to page-supersig on polkadot-js app, however it will be the foundation for then future building blocks, such as: multisig interface, automated payments, and other statemine/mint primitives, etc. We can prioritise on what those will be based on feedback, and in future milestone. With our own interface we have the freedom to create something different and specific to a core set of interrelated tools, rather than abide by polkadot-js which is designed to encompass basically everything.
+- Custom UI will be simpler and more bespoke to organising, initially around supersig. It will begin with similar features to page-supersig on polkadot-js app, however it will be the foundation for then future building blocks, such as: multisig interface, automated payments, and other statemine/mint primitives, XCM apps, etc. We can prioritise on what those will be based on feedback, and in future milestone. With our own interface we have the freedom to create something different and specific to a core set of interrelated tools, rather than abide by polkadot-js which is designed to encompass basically everything.
 - Make improvements so that Fellowship member feedback is satisfied (if any).
 
 
