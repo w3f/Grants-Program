@@ -161,13 +161,13 @@ Substrate deliverables are newer to us and imply a learning curve, however the a
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 4.5 months
 - **Full-Time Equivalent (FTE):**  1
 - **Total Costs:** 75,000 USD
 
 ### Milestone 1 — Infrastructure Provider SDK
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 1.5 month
 - **FTE:**  1
 - **Costs:** 25.000 USD
 
@@ -185,7 +185,7 @@ Substrate deliverables are newer to us and imply a learning curve, however the a
 
 ### Milestone 2 — Substrate Parachain
 
-- **Estimated duration:** 1.5 month
+- **Estimated duration:** 2 month
 - **FTE:**  1
 - **Costs:** 35,000 USD
 
@@ -202,7 +202,7 @@ Substrate deliverables are newer to us and imply a learning curve, however the a
 
 ### Milestone 3 — Integration Testing and Test Chain
 
-- **Estimated duration:** 0.5 month
+- **Estimated duration:** 1 month
 - **FTE:**  1
 - **Costs:** 15,000 USD
 
