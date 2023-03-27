@@ -65,9 +65,9 @@ Mock up of how an extrinsic page will look:
 
 ![Extrinsic Page](https://drive.google.com/uc?id=112GANJWuaxcFJBbhS6-I9ubGMfi9pV-N)
 
-#### **EVM Contract Support**
+#### **Frontier EVM Pallet Contract Support**
 
-In the Squid data handlers for EVM contracts, we plan to provide the data models and data handlers for:
+In the Squid data handlers for [Frontier EVM contracts](https://docs.subsquid.io/substrate-indexing/evm-support/), we plan to provide the data models and data handlers for:
 
 - EVM transactions
 - EVM events
@@ -81,6 +81,10 @@ In the UI, we plan to provide components for:
 - EVM account list
 - EVM contract page: contains details of the contract and list of related activites and events
 - EVM account page: contains balance details of the account and list of related activities and deployed contracts. The user can also navigate from the page to the equivalent native (Substrate SS58) account.
+
+This work will make use of only the pallet-evm component of Frontier. This provides EVM execution capabilities using the Substrate account model, which signs transactions on behelf of EVM accounts. 
+
+It will only support calls via the Substrate API, which is the recommended mechanism for providing EVM execution capabilities in Substrate networks. Ethereum RPC support via pallet-ethereum is not in scope for this grant as it is of less value to the Substrate ecosystem. 
 
 #### Mock-ups
 
@@ -108,7 +112,11 @@ Due to time and resource constraints, we will leave the following items for futu
 
 ### Ecosystem Fit
 
-There is currently a lack of high-quality open-source explorers for smart contract networks in the Substrate ecosystem. Polkadot.js is the de facto explorer and it is very modular and flexible. However, it was designed more for development and lacks the ability to filter, sort and search through data on the network. In the space of user-facing explorers, Subscan is currently the most popular solution and has the most comprehensive support for Substrate pallets. On the other hand, Subscan is mostly close-sourced and introduces an economic entry barrier for new networks. While a number of open-source alternatives have emerged, none of them have support for smart contracts. In our previous grants, we have expanded the open-source explorer offerings to include Wasm contracts on Substrate and we wish to further expand the support to EVM contracts. Considering that there are already more than 20 parachains and solo chains live with Frontier EVM, we believe that it will be a valuable addition to the ecosystem. At the same time, we also want to provide the essential base data like blocks and extrinsics so that smart contract networks can have a feature-complete explorer at their fingertips.
+There is currently a lack of high-quality open-source explorers for smart contract networks in the Substrate ecosystem. Polkadot.js is the de facto explorer and it is very modular and flexible. However, it was designed more for development and lacks the ability to filter, sort and search through data on the network. In the space of user-facing explorers, Subscan is currently the most popular solution and has the most comprehensive support for Substrate pallets. On the other hand, Subscan is mostly close-sourced and introduces an economic entry barrier for new networks. 
+
+This dominance by Subscan is something that has been highlighted recently during an in-depth [discussion on the Polkadot Forum](https://forum.polkadot.network/t/subscan-ought-to-change-its-business-model-or-be-replaced/2357). Subscan in addition supports the Frontier EVM pallet. 
+
+While a number of open-source alternatives have emerged, none of them have support for smart contracts. In our previous grants, we have expanded the open-source explorer offerings to include Wasm contracts on Substrate and we wish to further expand the support to EVM contracts. Considering that there are already more than 20 parachains and solo chains live with Frontier EVM, we believe that it will be a valuable addition to the ecosystem. At the same time, we also want to provide the essential base data like blocks and extrinsics so that smart contract networks can have a feature-complete explorer at their fingertips.
 
 ## Development Roadmap :nut_and_bolt:
 
