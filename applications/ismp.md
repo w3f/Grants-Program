@@ -15,7 +15,7 @@ If this application is in response to an RFP, please indicate this on the first 
 If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
-The Interoperable State Machine Protocol, or ISMP for short, is the product of our [research](https://research.polytope.technology/state-(machine)-proofs), proving state-proof based messaging possible and more efficient as the messages no longer need to be routed through the relay chain and can be exchanged independent of it, while still maintaining the same level of trustlessness and security. This protocol allows not just for messaging but also state reads of other parachains in a trustless and secure manner.
+The Interoperable State Machine Protocol, or ISMP for short, is the product of our [research](https://research.polytope.technology/state-(machine)-proofs) in to state proofs. We show that state-proof based interoperability is possible and more efficient as the messages no longer need to be routed through the relay chain and can be exchanged independent of it, while still maintaining the same level of trustlessness and security. This protocol allows not just for messaging but also [state reads of other parachains](https://github.com/paritytech/polkadot/issues/5087) in a trustless and secure manner.
 
 Polkadot’s goal is to facilitate seamless interoperability between parachains and external chains. It does so by providing a fully programmable L1 environment as well as highly efficient light client proofs so other chains can validate it’s consensus cheaply.
 
@@ -24,6 +24,8 @@ Unfortunately, Parachain <> Parachain communication today relies on the relay ch
 We believe ISMP can serve as a permissionless alternative to HRMP, where parachains no longer need to negotiate channels between each other to share assets. With the relevant ISMP modules each parachain can send and receive messages and assets to and from other parachains who also have the ISMP modules, no channels needed. Seconded by Rob Habermeier via [twitter](https://twitter.com/rphmeier/status/1631448117634650114?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1631448117634650114%7Ctwgr%5Ea370351bc1a5b9b71e67a3fe8025d6dbe47efe59%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.notion.so%2Fpolytopelabs%2FInteroperable-State-Machine-Protocol-b3a1766a82f640b883926c34ab737da2).
 
 ### Project Details
+
+*Insert ISMP draft*
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
@@ -101,11 +103,19 @@ Femi Bankole -
 
 Jesse Chejieh - [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/25)
 
+### Research Publications
+
+ - [Consensus Proofs](https://research.polytope.technology/consensus-proofs)
+ - [State (Machine) Proofs](https://research.polytope.technology/state-(machine)-proofs)
+ - [Merkle Mountain Range Proofs](https://research.polytope.technology/merkle-mountain-range-multi-proofs)
+ - [Merkle Multi Proofs](https://research.polytope.technology/merkle-multi-proofs)
+
 ### Team Code Repos
 - [sync-committee-rs](https://github.com/polytope-labs/sync-committee-rs)
-- [Simnode](https://github.com/polytope-labs/sc-simnode)
-- [Merkle Patricia Trie - Ethereum](https://github.com/polytope-labs/patricia-merkle-trie)
+- [Merkle Patricia Trie](https://github.com/polytope-labs/patricia-merkle-trie)
 - [Solidity Merkle Trees](https://github.com/polytope-labs/solidity-merkle-trees)
+- [Simnode](https://github.com/polytope-labs/sc-simnode)
+
 
 ### Team GitHub Profiles
 
