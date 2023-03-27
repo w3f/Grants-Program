@@ -100,12 +100,13 @@ Fernanda Paixão (Founder)
  GUSTAVO MANUTE (meta-architect and voxel designer) 
  Mohammed ElJazouli (TUTOR)
  
+
+
 ### Contact
 
-
-Contact Name: Fernanda Paixão Moreira
-Contact Email: talkawaylanguage@gmail.com
-Website: http://talkawaylanguage.com 
+- **Contact Name:** Fernanda Paixão Moreira
+- **Contact Email:** talkawaylanguage@gmail.com
+- **Website:** http://talkawaylanguage.com 
 
 ### Legal Structure
 
