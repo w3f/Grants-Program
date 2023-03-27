@@ -1,7 +1,7 @@
 # ink!/pallet/solidity performance benchmarking
 
-* **Status:** Open
-* **Proposer:** [mmagician](https://github.com/mmagician)
+- **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/ink-pallet-benchmarking.md)
+- **Proposer:** [mmagician](https://github.com/mmagician)
 
 
 ## Project Description :page_facing_up:
@@ -10,6 +10,7 @@ When a new team comes to the ecosystem, they are faced with a decision on how to
 Traditionally in substrate, this has been a choice between a smart contract vs. runtime module (a.k.a. pallet) and elaborated on [in this StackOverflow question](https://stackoverflow.com/questions/56040779/when-should-i-build-a-substrate-runtime-module-versus-a-substrate-smart-contract) or [this entry in Substrate Developer Hub](https://substrate.dev/docs/en/knowledgebase/smart-contracts/#smart-contracts-vs-runtime-development). The choice has since been augmented by the possibility to deploy solidity contracts to an EVM-compatible chain, or even writing solidity code and compiling it to WASM with the help of a [solang](https://solang.readthedocs.io/en/latest) compiler.
 
 As substrate is gaining traction, more and more tools will enable developers to write their logic in their language of choice and deploy on-chain, such as:
+
 - Move: [diem on polkadot](https://docs.pontem.network), PoC finished
 - Yatima: [pure functional language for web3](https://github.com/w3f/Open-Grants-Program/pull/463), application in progress
 
@@ -20,14 +21,14 @@ Before starting this effort, it might make sense to take a look at the official 
 
 ## Deliverables :nut_and_bolt:
 
-* **Total Estimated Duration:** 4 weeks
-* **Full-time equivalent (FTE):** 1
-* **Total Costs:** 10,000 DAI
+- **Total Estimated Duration:** 4 weeks
+- **Full-time equivalent (FTE):** 1
+- **Total Costs:** 10,000 DAI
 
 ### Milestone 1 - Basic benchmarking
 
-* **Estimated Duration:** 2 weeks
-* **Costs:** 5000 DAI
+- **Estimated Duration:** 2 weeks
+- **Costs:** 5000 DAI
 
 
 | Number | Deliverable                | Specification                                                                                                                                                                                                                                                                       |
@@ -39,8 +40,8 @@ Before starting this effort, it might make sense to take a look at the official 
 
 ### Milestone 2 - Integrate native solidity & `solang`-compiled solidity
 
-* **Estimated Duration:** 2 weeks
-* **Costs:** 5000 DAI
+- **Estimated Duration:** 2 weeks
+- **Costs:** 5000 DAI
 
 | Number | Deliverable                           | Specification                                    |   |
 |--------|---------------------------------------|--------------------------------------------------|---|
@@ -53,6 +54,7 @@ Before starting this effort, it might make sense to take a look at the official 
 ### Milestone 3 - More complex application logic
 
 Apart from just reading & writing basic types, all the above implementations should be extended to include more complex logic. The scope is up to the implementers, but here are some ideas:
+
 - cross-contract calls
 - emitting events
 - storage-agnostic logic (self-contained methods performing e.g. some heavy computation)

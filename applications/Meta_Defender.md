@@ -3,7 +3,7 @@
 - **Team Name:** Meta Defender Team
 - **Payment Address:** 25r4oZedLXEunTmdvytyH4xcmQqqWWw8KmphdiD5LqpU29pv （aUSD）
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
-
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1089#issuecomment-1484905533)
 
 ## Project Overview :page_facing_up:
 

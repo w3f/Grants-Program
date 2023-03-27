@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: Referral Program
+title: 💰 Referral Program
 ---
 
 We give away 500 USD to each referral of a successful grant application by _anyone having previously worked on a Web3 Foundation grant_ or _a [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors)_. Web3 Foundation and Parity employees do not qualify for the program, even if they previously worked on a grant.
