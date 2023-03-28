@@ -161,15 +161,15 @@ Substrate deliverables are newer to us and imply a learning curve, however the a
 
 ### Overview
 
-- **Total Estimated Duration:** 4.5 months
+- **Total Estimated Duration:** 3.5 months
 - **Full-Time Equivalent (FTE):**  1
-- **Total Costs:** 75,000 USD
+- **Total Costs:** 47.000 USD
 
 ### Milestone 1 — Infrastructure Provider SDK
 
 - **Estimated duration:** 1.5 month
 - **FTE:**  1
-- **Costs:** 25.000 USD
+- **Costs:** 20.000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -181,13 +181,15 @@ Substrate deliverables are newer to us and imply a learning curve, however the a
 | 2. | Chain Reactor RI | We will implement a Chain Reactor Reference Implementation based on Apache CloudStack that can run against the Apache CloudStack Simulator to facilitate further development. The RI will be written in Python as programming language and Ansible as automation stack|
 | 3. | Chain Reactor RI Test Suite | We will release a comprehensive set of Chain Reactor RI Unit tests that should serve as guideline for TDD of other implementations, implmented with Python. |
 | 4. | CD/CI Chain Reactor RI | Gitlab Pipelines will be created for Chain Reactor Reference Implementation that must serve as guideline to other implementations |
+| 5. | SSH Key Derivation | A viability study and implementation of converter of Substrate Account Keys into SSH Keys based on ed25519. Implemented with NodeJS|
+| 6. | Substrate Deployment Descriptors | Documented Examples of Deployment Descriptors for the Chain Reactor RI will be provided that would spawn Substrate Nodes under DINFRA.|
 
 
 ### Milestone 2 — Substrate Parachain
 
 - **Estimated duration:** 2 month
 - **FTE:**  1
-- **Costs:** 35,000 USD
+- **Costs:** 27,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -198,29 +200,13 @@ Substrate deliverables are newer to us and imply a learning curve, however the a
 | 1. | DINFRA Provider Pallet | It will allow for Accounts to register as providers, Providers to declare supported Deployment types and avilable capacity. Will Assign Deployments to Providers by simple means such as Round Robin, Random or Capacity Based. Implemented with Substrate/Rust.|
 | 2. | DINFRA Subscription Pallet | It will represent a simple Subscription to pay for a deployment. Cost will be fixed per block. Deployments will be teared down when allocated Balance is consumed. Consumers will be able to cancel Subscriptions and any time, tearing down the deployment. Implemented with Substrate/Rust. |
 | 3. | Chain Reactor Interface | A Substrate Interface will be created with Providers Chain Reactors so that Deployment Contracts can be Deployed and Teared Down. The interface will be based on standard Substrate interfaces OCW, RPC and/or sidecar service / REST |
-| 4. | SSH Key Derivation | A viability study and implementation of converter of Substrate Account Keys into SSH Keys based on ed25519. Implemented with NodeJS|
 
-### Milestone 3 — Integration Testing and Test Chain
-
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** 15,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** and DEMO Video that explains the result of this project and is useful for our future plans|
-| 1. | DINFRA Test Parachain | Our test parachain will register in Rococo test network |
-| 2. | ACS Test Resources | Limited Resources in Apache CloudStack will be allocated for public testing. Deployments will have limited duration to facilitate testing by the community. |
-| 3. | End to end CI/CD testing| Gitlab pipelines will be setup Capable to validate functionality as new Apache Cloudstack versions are released |
 
 ## Future Plans
 
 We intend to continue to our second phase in the plan as described in our video presentation. We will use the deliverables from this release to:
 
+- Setup a DINFRA Test Network 
 - Generate awareness in our community
 - Allow the community to test the system
 - Pitch and demo: Treasuries, Infrastructure Providers, Developers 
