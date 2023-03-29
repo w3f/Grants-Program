@@ -1,6 +1,6 @@
 # Root - an on-chain decision-making, talent sourcing and collective creation system
 
-- **Team Name:** [Polkassembly](https://www.polkassembly.io) / [stated.tech](stated-tech.notion.site/) / [Decent Partners](https://decent.partners)
+- **Team Name:** [Polkassembly](https://www.polkassembly.io) / [stated.tech](http://www.stated.tech/) / [Decent Partners](https://decent.partners)
 - **Payment Address:** 0xdf08f8fcd47d857b9e4ce69e06bf6e569969b229 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
