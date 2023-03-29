@@ -29,6 +29,8 @@ Also, there is no common deploy flow for every stage - local/testnet/production,
 
 ## Project details
 
+UI concept can be previewed [here](https://www.figma.com/file/Q50Z11g0LKROslWIIbgR8K/Patron-Concept).
+
 ### Smart contract explorer
 
 Explorer that behaves similarly to Subscan, which allows users to find smart contracts by their address and see the data of the smart contract (code, dependencies, version of the compiler, chain etc.).
