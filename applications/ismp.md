@@ -21,12 +21,6 @@ ISMP will also support request timeouts, allowing for a more safer parachain <> 
 
 ![Architecture](https://drive.google.com/uc?id=1t8Qow88En3-ZCW7P0LYjRnbSqzFS30be)
 
-
-### Consensus Clients
-
-In order for parachains to recieve requests & responses from other parachains, it's necessary for parachains to be able to use the relay chain as a consensus oracle for other parachain's headers. As such, we'll need to introduce new host functions to parachain runtimes that allow them to read the relay chain storage. Equipped with this host function, pallet-ismp can read the parachain headers stored in the relay chain in order to verify the associated incoming request/response proofs with those headers.
-
-
 ```rust
 use sp_storage::{StorageKey, StorageValue};
 
@@ -37,22 +31,20 @@ trait RelayChainStorageProvider {
 }
 ```
 
-
 ### **`pallet-ismp`**
 This serves as the foundational element for state-proof based messaging between parachains, enabling state reads of the relay chain directly from any given parachain, granting the ability to verify incoming messages and data from other parachains under the shared security umbrella of the relay chain.
 
 **Custom crates**
 
-1. `ismp-rust` - A set of primitives necessary for pallet-ismp
-   1. `ISMPHost`: Represents a state machine's core functionality
-   2. `ISMPRouter`: Embodies the request and response primitives for parachain interactions
-   3. `ConsensusClient`: Logic for consensus proof verification
+-  `ismp-rust` - A set of primitives necessary for pallet-ismp
+   -  `ISMPHost`: Represents a state machine's core functionality
+   -  `ISMPRouter`: Embodies the request and response primitives for parachain interactions
+   -  `ConsensusClient`: Logic for consensus proof verification
    
 This module will also allow for highly sophisticated messaging protocols, allowing for message timeouts and can serve as an alternative transport layer for XCM messages.
 
 #### **Cumulus**
-In addition to `pallet-ismp` will be a new host function `RelayChainStorageProvider` added to `parachain-system` and `pvf`, enabling parachains read the relay chain state directly from runtime. Then subsequently during pov validation. the relay chain would provide the necessary state to the parachains for validation.
-
+In addition to `pallet-ismp` will be a new host function `RelayChainStorageProvider` added to `parachain-system` and `pvf`, leveraging the Relay chain as a consensus oracle for verifying incoming requests and responses proofs from other parachains with their associated headers in the Relay chain storage.
 
 ### Ecosystem Fit
 
@@ -145,26 +137,25 @@ In this milestone we develop the overarching component and related sub-component
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
 | **1.** | `ismp-rust`| primitives for handling incoming messages to and from connected parachains |
-| 1a. | `ISMPHost` | State machine core, |
+| 1a. | `ISMPHost` | State machine core primitive |
 | 1b. | `ISMPRouter` | Primitive for transmitting parachain messages across the network |
+| | dispatch | Logic for sending a request from a module to the ISMP router|
+| | response | Logic for providing a response to a previously received request|
 | 1c. | `ConsensusClient` | Logic for consensus proof verification |
+| | membership verification | Logic Verifying membership of proof of a commitment |
+| | non membership verification | Logic for verifying non-membership of proof of a commitment |
 | 1d. | Handlers | Logic for handling varying types of incoming messages to a giving state machine(i.e parachains) |
-| | `CreateConsensusClient` | functionality for creating a consensus client on the receiving state machine. | 
-| | `ConsensusMessage` | functionality for handling consensus messages from other state machines |
-| | `RequestMessage` | functionality for handling request messages from other state machines |
-| | `ResponseMessage` | functionality for handling response messages from other state machines |
+| | `CreateConsensusClient` | Functionality for creating a consensus client on the receiving state machine. | 
+| | `ConsensusMessage` | Functionality for handling consensus messages from other state machines |
+| | `RequestMessage` | Functionality for handling request messages from other state machines |
+| | `ResponseMessage` | Functionality for handling response messages from other state machines |
 | **2.** | Cumulus | Functionality to enable ISMP Modules read the relay chain state directly inside of the parachain runtime then subsequently when running the pov |
-| 2a.| parachain-system | |
-| 2b. | pvf validation | |
-| **3.** | Ismp Inherent Provider | |
-
-
-## Future Plans
-
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+| 2a.| `parachain-system` | Including `RelayChainStorageProvider` |
+| 2b. | `pvf` validation | Including `RelayChainStorageProvider` |
+| **3.** | Pallet | Building the substrate pallet(core, rpc, runtime-api) with above stated dependencies. |
+| **3a.** | MMR | Merkle mountain range storage implementation |
+| **3b.** | Host | `ISMPHost` implementation fot the pallet |
+| **3c.** | Router | `ISMPRouter` implementation for the pallet |
 
 ## Additional Information :heavy_plus_sign:
 
