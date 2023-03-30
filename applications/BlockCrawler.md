@@ -4,7 +4,7 @@
 
 - **Project Name:** Block Crawler
 - **Team Name:** ZettaFi Labs, Inc.
-- **Payment Address:** 
+- **Payment Address:** 0xC0Efea6aa8947fC2F207333FE2F61a79069392ac
 - **[Level](../README.md#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
