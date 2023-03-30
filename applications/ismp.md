@@ -9,17 +9,36 @@
 ### Overview
 The Interoperable State Machine Protocol, or ISMP for short, is the product of our [research](https://research.polytope.technology/state-(machine)-proofs) in to state proofs. We show that state-proof based interoperability is possible and more efficient as the messages no longer need to be routed through the relay chain and can be exchanged independent of it, while still maintaining the same level of trustlessness and security. This protocol allows not just for messaging but also [state reads of other parachains](https://github.com/paritytech/polkadot/issues/5087) in a trustless and secure manner.
 
-Polkadot’s goal is to facilitate seamless interoperability between parachains and external chains. It does so by providing a fully programmable L1 environment as well as highly efficient light client proofs so other chains can validate it’s consensus cheaply.
+Unfortunately, Parachain-to-Parachain communication today relies on the relay chain for message routing. This is highly inefficient and relieving the relay chain of this burden will allow for better Parachain throughput and scalability. We believe ISMP is the end-game for parachain interoperability, with the relevant ISMP modules, each parachain can send and receive messages and assets to and from other parachains which also have the ISMP modules. Seconded by Rob Habermeier on [twitter](https://twitter.com/rphmeier/status/1631448117634650114).
 
-Unfortunately, Parachain <> Parachain communication today relies on the relay chain for message routing. This is highly inefficient and relieving the relay chain of this burden will allow for better Parachain throughput and scalability.
+## Project Details
 
-We believe ISMP can serve as a permissionless alternative to HRMP, where parachains no longer need to negotiate channels between each other to share assets. With the relevant ISMP modules each parachain can send and receive messages and assets to and from other parachains who also have the ISMP modules, no channels needed. Seconded by Rob Habermeier via [twitter](https://twitter.com/rphmeier/status/1631448117634650114?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1631448117634650114%7Ctwgr%5Ea370351bc1a5b9b71e67a3fe8025d6dbe47efe59%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.notion.so%2Fpolytopelabs%2FInteroperable-State-Machine-Protocol-b3a1766a82f640b883926c34ab737da2).
+ISMP is a simple protocol for state machines to send requests that can be handled by a counterparty chain. Akin to the HTTP paradigm in web2, parachains can issue GET-like requests for storage reads as well as POST-like requests for sending data.
 
-### Project Details
+Requests are stored in a merkle mountain range tree on the sending chain as this data structure provides some benefits, binary merkle trees have more compact proof sizes than patricia merkle tries, and in particular, merkle mountain range trees have much smaller proof sizes for recently inserted items in the tree. We believe this choice will enable higher bandwidth parachain <> parachain messaging with smaller proof sizes.
 
-*Insert ISMP draft*
+ISMP will also support request timeouts, allowing for a more safer parachain <> parachain messaging.
 
-#### **`pallet-ismp`**
+![Architecture](https://drive.google.com/uc?id=1t8Qow88En3-ZCW7P0LYjRnbSqzFS30be)
+
+
+### Consensus Clients
+
+In order for parachains to recieve requests & responses from other parachains, it's necessary for parachains to be able to use the relay chain as a consensus oracle for other parachain's headers. As such, we'll need to introduce new host functions to parachain runtimes that allow them to read the relay chain storage. Equipped with this host function, pallet-ismp can read the parachain headers stored in the relay chain in order to verify the associated incoming request/response proofs with those headers.
+
+
+```rust
+use sp_storage::{StorageKey, StorageValue};
+
+#[runtime_interface]
+trait RelayChainStorageProvider {
+  /// Read the relay chain storage at a specified key
+  fn read_storage(key: StorageKey) -> StorageValue;
+}
+```
+
+
+### **`pallet-ismp`**
 This serves as the foundational element for state-proof based messaging between parachains, enabling state reads of the relay chain directly from any given parachain, granting the ability to verify incoming messages and data from other parachains under the shared security umbrella of the relay chain.
 
 **Custom crates**
@@ -30,14 +49,10 @@ This serves as the foundational element for state-proof based messaging between 
    3. `ConsensusClient`: Logic for consensus proof verification
    
 This module will also allow for highly sophisticated messaging protocols, allowing for message timeouts and can serve as an alternative transport layer for XCM messages.
+
 #### **Cumulus**
-In association with `pallet-ismp` are host functions added to `parachain-system` and `pvf`, enabling parachains read the relay chain state directly from runtime. Then subsequently during pov validation. the relay chain would provide the necessary state to the parachains for validation.
+In addition to `pallet-ismp` will be a new host function `RelayChainStorageProvider` added to `parachain-system` and `pvf`, enabling parachains read the relay chain state directly from runtime. Then subsequently during pov validation. the relay chain would provide the necessary state to the parachains for validation.
 
-#### **`ismp-inherent-provider`**
-This crate listens over wss jsonrpc to parachain messages and data directed to it's own chain, which it uses to include relevant state proofs into it's own runtime for consumption by the ISMP Modules.
-
-
-![Architecture](https://drive.google.com/uc?id=1LwILBqEzyS3l8Nv9qicfYg3R-a2YIeZN)
 
 ### Ecosystem Fit
 
