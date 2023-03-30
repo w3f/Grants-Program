@@ -1,4 +1,4 @@
-# Name of your Project
+# Web3Foundation Grant Proposal
 
 ## Block Crawler
 
