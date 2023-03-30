@@ -7,12 +7,9 @@
 - **Payment Address:** 
 - **[Level](../README.md#level_slider-levels):** 1
 
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up:
 
 ### Overview
-
 - Block Crawler is an open source high-performance ETL framework for blockchain data designed to process blockchain data and transform it into useful datasets in the easiest way possible. We will configure it for free to collect any dataset for you.
 - Block Crawler creates datasets from blockchains and provides it to those who are building applications. Its high-performance, open-source ETL framework is designed to process massive amounts of blockchain data and transform it into useful datasets in the easiest and most expedient way possible. With Block Crawler, anyone can extract any blockchain data from EVM RPC APIs like Ethereum, Polygon, and more, transform it into desired datasets, and persist it into databases to support data access requests on historical and real-time data. Furthermore, the Block Crawler's modular components can be combined with dataset specific components to cater to the unique requirements of every user.
 Whether a blockchain looking to improve data availability or a blockchain application needing a specific dataset, we are creating a product where data consumers tell us what data they need, and we configure the Block Crawler for them and work with them to extract, transform, and load the data.
