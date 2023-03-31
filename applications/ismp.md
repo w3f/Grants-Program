@@ -128,7 +128,7 @@ And some Updates to cumulus, required for parachains to read the relay chain sta
 - **FTE:**  3
 - **Costs:** 30,000 USD
 
-In this milestone we develop the overarching component and related sub-components enabling state-proof based messaging between parachains.
+In this milestone we develop the core primitives needed for pallet-ismp
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -159,6 +159,11 @@ In this milestone we develop the overarching component and related sub-component
 - **FTE:**  2
 - **Costs:** 30,000 USD
 
+In this milestone we develop the cumulus/parachain primitives needed for pallet-ismp
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
 | **2.** | Cumulus | Functionality to enable pallets read the relay chain state directly inside of the parachain runtime then subsequently when re-executing the pov on polkadot/kusama |
 | 2a.| `parachain-system` | Including `RelayChainStorageProvider` |
 | 2b. | `pvf` validation | Including `RelayChainStorageProvider` |
@@ -169,6 +174,11 @@ In this milestone we develop the overarching component and related sub-component
 - **FTE:**  3
 - **Costs:** 45,000 USD
 
+In this milestone we develop pallet-ismp
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
 | **1.** | pallet-ismp | Building the substrate pallet with above stated dependencies. |
 | **1b.** | Host | `ISMPHost` implementation for the pallet |
 | **1c.** | Router | `ISMPRouter` implementation for the pallet |
