@@ -28,7 +28,7 @@
   - [Substrate Builders Program](#substrate-builders-program)
   - [Treasury](#treasury)
   - [Hackathons](#hackathons)
-  - [Other Grant Programs](#other-grant-programs)
+  - [Other Grant or Bounty Programs](#other-grant-or-bounty-programs)
 
 ## :wave: Introduction
 
@@ -314,7 +314,7 @@ From time to time, Web3 Foundation and/or Parity organise hackathons to promote 
 
 The best way to find out about upcoming hackathons is by following Polkadot on the various social channels, such as Element or Twitter.
 
-### Other Grant Programs
+### Other Grant or Bounty Programs
 
 Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
