@@ -7,7 +7,7 @@
 ## Project Overview :page_facing_up:
 
 ### Overview
-The Interoperable State Machine Protocol, or ISMP for short, is the product of our [research](https://research.polytope.technology/state-(machine)-proofs) in to state proofs. We show that state-proof based interoperability is possible and more efficient as the messages no longer need to be routed through the relay chain and can be exchanged independent of it, while still maintaining the same level of trustlessness and security. This protocol allows not just for messaging but also [state reads of other parachains](https://github.com/paritytech/polkadot/issues/5087) in a trustless and secure manner.
+The Interoperable State Machine Protocol, or ISMP for short, is the product of our [research](https://research.polytope.technology/state-(machine)-proofs) into state proofs. We show that state-proof based interoperability is possible and more efficient as the messages no longer need to be routed through the relay chain and can be exchanged independent of it, while still maintaining the same level of trustlessness and security. This protocol allows not just for messaging but also [state reads of other parachains](https://github.com/paritytech/polkadot/issues/5087) in a trustless and secure manner.
 
 Unfortunately, Parachain-to-Parachain communication today relies on the relay chain for message routing. This is highly inefficient and relieving the relay chain of this burden will allow for better Parachain throughput and scalability. We believe ISMP is the end-game for parachain interoperability, with the relevant ISMP modules, each parachain can send and receive messages and assets to and from other parachains which also have the ISMP modules. Seconded by Rob Habermeier on [twitter](https://twitter.com/rphmeier/status/1631448117634650114).
 
@@ -17,7 +17,7 @@ ISMP is a simple protocol for state machines to send requests that can be handle
 
 Requests are stored in a [merkle mountain range tree](https://research.polytope.technology/merkle-mountain-range-multi-proofs) on the sending chain as this data structure provides some benefits, binary merkle trees have more compact proof sizes than patricia merkle tries, and in particular, merkle mountain range trees have much smaller proof sizes for recently inserted items in the tree. We believe this choice will enable higher bandwidth parachain <> parachain messaging with smaller proof sizes.
 
-ISMP will also support request timeouts, allowing for a more safer parachain <> parachain messaging.
+ISMP will also support request timeouts, allowing for more safer parachain <> parachain messaging.
 
 ![Architecture](https://drive.google.com/uc?id=1t8Qow88En3-ZCW7P0LYjRnbSqzFS30be)
 
@@ -133,24 +133,25 @@ In this milestone we develop the core primitives needed for pallet-ismp
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how parachain teams can utilize pallet-ismp for cross-chain messaging. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a README stating objectives of this ISMP primitive on the project repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
-| 0f. | ismp specification | We will put together a technical specification detailing the ISMP protocol. |
-| **1.** | `ismp-rs`| Rust implementation of ISMP primitives for handling incoming messages to and from connected parachains |
-| 1a. | `ISMPHost` | State machine host functionality required to support ISMP |
-| 1b. | `ISMPRouter` | Subcomponent for routing incoming requests & response to the destination ISMP modules |
-| 1c. | `ISMPModule` | Interface modules/pallets must conform to in order to receive incoming ISMP requests/responses |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test functionalities delivered with this milestone. |
+| 0e. | Article | We will publish an article that explains what was achieved as part of the grant. |
+| 0f. | ISMP Specification | We will put together a technical specification detailing the ISMP protocol. |
+| **1.** | `ismp-rs`| Rust implementation of ISMP primitives for handling incoming messages to and from connected parachains. |
+| 1a. | `ISMPHost` | State machine host functionality required to support ISMP. |
+| 1b. | `ISMPRouter` | Sub-component for routing incoming requests & response to the destination ISMP modules. |
+| 1c. | `ISMPModule` | Interface modules/pallets must conform to in order to receive incoming ISMP requests/responses. |
 | 1d. | `ConsensusClient` | Logic for consensus proof verification, In the case of parachains, we will leverage the relay chain as a `ConsensusClient` through the new host functions in cumulus. |
-| | Request/Response proof verification | Subcomponent for verifying membership of proofs of a request/response in a merkle mountain range tree. |
+| | Request/Response proof verification | Sub-component for verifying membership of proofs of a request/response in a merkle mountain range tree. |
 | | Request Timeout verification | Verifying non-membership of a request in the state trie of a parachain. |
-| 1e. | Handlers | Logic for handling varying types of incoming messages |
+| 1e. | Handlers | Logic for handling varying types of incoming messages. |
 | | `CreateConsensusClient` | Functionality for creating a consensus client on the receiving state machine. | 
-| | `ConsensusMessage` | Functionality for handling consensus update messages from other state machines |
-| | `RequestMessage` | Functionality for handling request messages from other state machines |
-| | `ResponseMessage` | Functionality for handling response messages from other state machines |
-| | `TimeoutMessage` | Functionality for handling request timeout messages from other state machines |
+| | `ConsensusMessage` | Functionality for handling consensus update messages from other state machines. |
+| | `RequestMessage` | Functionality for handling request messages from other state machines. |
+| | `ResponseMessage` | Functionality for handling response messages from other state machines. |
+| | `TimeoutMessage` | Functionality for handling request timeout messages from other state machines. |
+
 
 ### Milestone 2 — `RelayChainStorageProvider`
 
@@ -163,9 +164,15 @@ In this milestone we develop the cumulus/parachain primitives needed for pallet-
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **2.** | Cumulus | Functionality to enable pallets read the relay chain state directly inside of the parachain runtime then subsequently when re-executing the pov on polkadot/kusama |
-| 2a.| `parachain-system` | Including `RelayChainStorageProvider` |
-| 2b. | `pvf` validation | Including `RelayChainStorageProvider` |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide **inline documentation** of the code which will also state the objective of this host function. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | Dockerfiles for testing parachain functionality are present in the cumulus repository. |
+| 0e. | Article | We will publish an article that explains what was achieved as part of the grant. |
+| **1.** | Cumulus | Functionality to enable pallets read the relay chain state directly inside of the parachain runtime then subsequently when re-executing the pov on polkadot/kusama. |
+| 1a.| `parachain-system` | Including `RelayChainStorageProvider`. |
+| 1b. | `pvf` validation | Including `RelayChainStorageProvider`. |
+
 
 ### Milestone 3 — `pallet-ismp`
 
@@ -178,15 +185,18 @@ In this milestone we develop pallet-ismp
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a README stating objectives of this ISMP primitive on the project repository. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test functionalities delivered with this milestone. |
 | **1.** | pallet-ismp | Building the substrate pallet with above stated dependencies. |
-| **1b.** | Host | `ISMPHost` implementation for the pallet |
-| **1c.** | Router | `ISMPRouter` implementation for the pallet |
-| **1c.** | `ParachainConsensusClient` | `ConsensusClient` implementation for the pallet-ismp, utilizing the relay chain as consensus client for parachains |
-| **1d.** | RPC | The subcrate will allow for users to query relevant ISMP data over RPC |
-| **1e.** | Runtime-APIs | The subcrate will expose relevant ISMP data from the runtime through runtime APIS |
-| **1f.** | Benchmarks | We will benchmark pallet-ismp, providing a benchmark crate for parachain teams to run so as to generate the proper weights for their runtime |
-| **1g.** | Tests | We will write proper unit tests for pallet-ismp that ensures it is correctly implemented |
+| **1b.** | Host | `ISMPHost` implementation for the pallet. |
+| **1c.** | Router | `ISMPRouter` implementation for the pallet. |
+| **1c.** | `ParachainConsensusClient` | `ConsensusClient` implementation for the pallet-ismp, utilizing the relay chain as consensus client for parachains. |
+| **1d.** | RPC | This sub-crate will allow for users to query relevant ISMP data over RPC. |
+| **1e.** | Runtime-APIs | This sub-crate will expose relevant ISMP data from the runtime through runtime APIS. |
+| **1f.** | Benchmarks | We will benchmark pallet-ismp, providing a benchmark crate for parachain teams to run so as to generate the proper weights for their runtime. |
 
 ## Additional Information :heavy_plus_sign:
 
-Successfully delivered the Solidity Trie Verifier
+[Solidity Trie Verifier](https://github.com/w3f/Grant-Milestone-Delivery/pull/774)
