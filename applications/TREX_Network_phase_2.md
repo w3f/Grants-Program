@@ -1,6 +1,6 @@
 # TREX - Timed Release Encryption Xing chains - Phase II
 - **Team Name:** [NexToken Technology](https://github.com/NexTokenTech)
-- **Payment Address:** 0x478189352D495F07409Ee2952d4B051855EB7014(USDT)
+- **Payment Address:** bc1qdkjqwtt52jz6s3sa993m8ucxl3w86zjdk3xsna(BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview:
