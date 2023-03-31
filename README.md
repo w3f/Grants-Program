@@ -316,7 +316,7 @@ The best way to find out about upcoming hackathons is by following Polkadot on t
 
 ### Other Grant Programs
 
-Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
+Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
 - [Acala Grants Program](https://acala.network/ecosystem-program)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
@@ -324,6 +324,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [ink!ubator](https://use.ink/ubator/)
 - [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
