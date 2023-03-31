@@ -72,15 +72,15 @@ Currently messages are sent over the Relay Chain through opening HRMP channels b
 
 Polytope Labs is a collective of core blockchain engineers, researchers & scientists from varying blockchain protocol backgrounds passionate about the proliferation of networks over platforms and enabling this future through blockchain research, education, tooling and core infrastructure development.
 
-Seun Lanlege - Founder, Mad Scientist at Polytope Labs and [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/33). Previously core developer at Parity Tech, Ethereum and Polkadot with over 4 years of industry experience.
+1. Seun Lanlege - Founder, Mad Scientist at Polytope Labs and [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/33). Previously core developer at Parity Tech, Worked on Ethereum and Polkadot with over 4 years of industry experience.
 
-David Salami - Scientist at Polytope Labs and [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/38). Previously Senior Blockchain Engineer at [Composable Finance](https://github.com/ComposableFi/) and [Webb](https://github.com/webb-tools).
+2. David Salami - Scientist at Polytope Labs and [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/38). Previously Senior Blockchain Engineer at [Composable Finance](https://github.com/ComposableFi/) and [Webb](https://github.com/webb-tools).
 
-Damilare Akinlose - Lab Intern at Polytope Labs and [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/41). Previously Blockchain Engineer at [Webb](https://github.com/webb-tools)
+3. Damilare Akinlose - Lab Intern at Polytope Labs and [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/41). Previously Blockchain Engineer at [Webb](https://github.com/webb-tools)
 
-Femi Bankole - Blockchain engineer at [Matchx_iot](https://matchx.io/) + [MXC Foundation](https://www.mxc.org/) and Lab Intern at Polytope Labs.
+4. Femi Bankole - Blockchain engineer at [Matchx_iot](https://matchx.io/) + [MXC Foundation](https://www.mxc.org/) and Lab Intern at Polytope Labs.
 
-Jesse Chejieh - [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/25).
+5. Jesse Chejieh - [Polkadot Fellowship Member](https://github.com/polkadot-fellows/seeding/pull/25).
 
 ### Research Publications
 
@@ -139,7 +139,7 @@ In this milestone we develop the core primitives needed for pallet-ismp
 | 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
 | 0f. | ismp specification | We will put together a technical specification detailing the ISMP protocol. |
 | **1.** | `ismp-rs`| Rust implementation of ISMP primitives for handling incoming messages to and from connected parachains |
-| 1a. | `ISMPHost` | State machine host functionality needed for ISMP to work |
+| 1a. | `ISMPHost` | State machine host functionality required to support ISMP |
 | 1b. | `ISMPRouter` | Subcomponent for routing incoming requests & response to the destination ISMP modules |
 | 1c. | `ISMPModule` | Interface modules/pallets must conform to in order to receive incoming ISMP requests/responses |
 | 1d. | `ConsensusClient` | Logic for consensus proof verification, In the case of parachains, we will leverage the relay chain as a `ConsensusClient` through the new host functions in cumulus. |
@@ -151,7 +151,6 @@ In this milestone we develop the core primitives needed for pallet-ismp
 | | `RequestMessage` | Functionality for handling request messages from other state machines |
 | | `ResponseMessage` | Functionality for handling response messages from other state machines |
 | | `TimeoutMessage` | Functionality for handling request timeout messages from other state machines |
-| **1f.** | Tests | We will write proper unit tests for ismp-rs that ensures it is correctly implemented |
 
 ### Milestone 2 — `RelayChainStorageProvider`
 
@@ -182,6 +181,7 @@ In this milestone we develop pallet-ismp
 | **1.** | pallet-ismp | Building the substrate pallet with above stated dependencies. |
 | **1b.** | Host | `ISMPHost` implementation for the pallet |
 | **1c.** | Router | `ISMPRouter` implementation for the pallet |
+| **1c.** | `ParachainConsensusClient` | `ConsensusClient` implementation for the pallet-ismp, utilizing the relay chain as consensus client for parachains |
 | **1d.** | RPC | The subcrate will allow for users to query relevant ISMP data over RPC |
 | **1e.** | Runtime-APIs | The subcrate will expose relevant ISMP data from the runtime through runtime APIS |
 | **1f.** | Benchmarks | We will benchmark pallet-ismp, providing a benchmark crate for parachain teams to run so as to generate the proper weights for their runtime |
