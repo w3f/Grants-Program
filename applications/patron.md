@@ -150,6 +150,7 @@ Verification will be part of the deploy flow and thus with mass adoption will be
 - **Nameless Endless** (Blockchain Developer | 727.ventures)
 - **Varex Silver** (Blockchain Developer | 727.ventures)
 - **Artem Lech** (Blockchain Developer | 727.ventures)
+- **Matviy Matsipura** (Designer | 727.ventures)
 
 **Contact**
 
@@ -203,6 +204,11 @@ Blockchain Developer
 
 Student of Applied Mathematics at the Kyiv National University of Taras Shevchenko. Started programming in 2016 and participated in a lot of Ukrainian and international competitions of competitive programming. Worked as a lecturer of algorithms at the school of competitive programming and as Intern Backend Engineer (Rust). Now works as Blockchain Developer on Polkadot Blockchain (Rust, Typescript).
 
+**Matviy Matsipura**
+
+Gained professional experience as a lead designer in a product company, where he was responsible for creating packaging and visual designs for a popular milk
+brand in Ukraine. Transitioned to the field of web3 design and is currently leading the design process for blockchain projects.
+
 **Team Code Repos**
 
 - https://github.com/727-Ventures
@@ -227,19 +233,19 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-Total duration: 15 weeks
+Total duration: 11 weeks
 
-FTE: 2
+FTE: 3
 
-Total cost: 96,000 USD
+Total cost: 93,000 USD
 
 ### Milestone 1 - MVP with basic functionality
 
 Duration: 7 weeks (Frontend, Backend, CLI utility implementations).
 
-FTE: 2
+FTE: 3
 
-Total cost: 44,800 USD
+Total cost: 63,000 USD
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
@@ -258,18 +264,20 @@ Total cost: 44,800 USD
 
 ### Milestone 2
 
-Duration: 8 weeks
+Duration: 4 weeks
 
-FTE: 2
+FTE: 2.5
 
-Total cost: 51,200 USD
+Total cost: 30,000 USD
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 1. | Scripting | We will implement the scripting functionality previously described. |
-| 2. | Deployment tool expansion | Deployment tool is to be expanded to support local development workflows, integration with sol2ink, OpenBrush and TypeChain. |
-| 3. | Smart contract method call interface | We will provide users with functionality to perform calls to smart contracts from our UI. |
-| 4. | Social features | Like, comment and feed functionality are to be implemented for users to discuss other smart contracts. |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide API documentation for contributors to get along with the codebase. |
+| 0c. | Testing guidelines | Core functionality will be covered by a comprehensive unit test suite. |
+| 0d. | Article | We will publish an article that explains the achievements done as part of the grant. |
+| 1.  | Deployment tool expansion | Deployment tool is to be expanded to support local development workflows, integration with sol2ink, OpenBrush and TypeChain. |
+| 2.  | Smart contract method call interface | We will provide users with functionality to perform calls to smart contracts from our UI. |
 
 ## Additional Information :heavy_plus_sign:
 
