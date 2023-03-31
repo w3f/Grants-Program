@@ -122,15 +122,15 @@ While a number of open-source alternatives have emerged, none of them have suppo
 
 ### Overview
 
--   **Total Estimated Duration:** 4 months
+-   **Total Estimated Duration:** 3 months
 -   **Full-Time Equivalent (FTE):** 2 FTE
--   **Total Costs:** 100,000 EUR
+-   **Total Costs:** 75,000 EUR
 
 ### Milestone 1
 
--   **Estimated duration:** 1.5 month
+-   **Estimated duration:** 1 month
 -   **FTE:** 2
--   **Costs:** 37,500 EUR
+-   **Costs:** 25,500 EUR
     
 | Nº  | Deliverable | Specification
 | :-- | :--         | :--
@@ -143,9 +143,9 @@ While a number of open-source alternatives have emerged, none of them have suppo
 
 ### Milestone 2
 
--   **Estimated duration:** 2.5 months
+-   **Estimated duration:** 2 months
 -   **FTE:** 2
--   **Costs:** 62,500 EUR
+-   **Costs:** 50,000 EUR
     
 | Nº  | Deliverable | Specification
 | :-- | :--         | :--
