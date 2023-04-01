@@ -120,10 +120,10 @@ will be used as means of payment transaction which is fully connected to Polkado
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Modify the User Flow | The current user flow will be modified to accomodate the current project. |
+| 1. | Modify the User Flow | The current user flow will be modified to accomodate the current project. Thus the following will be added to the design flow (i) Account locked page, (ii) Unlock account page, (iii) Transfer page, (iv) Receive page, (v) Crypto Dashboard, (vi) Settings, (vii) Profile page |
 | 2. | Modify the User Persona | We will add more User Personas to the current ones as it will affect the PassMeCash-Polkadot. |
-| 3. | Modify the High Fidelity | More pages will be added to the High-Fidelity design. |
-| 4. | Modify the Prototype | Additional pages will be included to the prototype design too. |
+| 3. | Modify the High Fidelity | More pages will be added to the High-Fidelity design. Thus the following will be added to the high-fidelity; (i) Account locked page, (ii) Unlock account page, (iii) Transfer page, (iv) Receive page, (v) Crypto Dashboard, (vi) Settings, (vii) Profile page |
+| 4. | Modify the Prototype | Additional pages will be included to the prototype design too. Thus the following will be added to the prototype design (i) Account locked page, (ii) Unlock account page, (iii) Transfer page, (iv) Receive page, (v) Crypto Dashboard, (vi) Settings, (vii) Profile page |
 
 
 ### Milestone 2 — Development
@@ -143,8 +143,7 @@ will be used as means of payment transaction which is fully connected to Polkado
 | 2. | Backend Development | The back-end would be built using Django, a python framework. python would handle the wallet's business logic, such as generating and storing private keys and handling transactions. Through the use of web3.py, we can generate a wallet address for the blockchain and also encrypt it why passing all necessary details to the user via API created with Django |
 | 3. | APIs & Libraries |  Chainlink aggregator would be used to communicate with the Polkadot blockchain nodes and retrieve real time information such as transaction history and account balances. RESTful APIs would be implemented using Django, a python web application framework. 1inch aggregator plugin for swap, Coinbase and Polkadot.js SDKs for Blockchain and token data. |
 | 4. | Smart Contract | Smart contracts would be developed with the implemetation of Ink-OpenBrush, to provide standard contracts based on PSP. Smart contracts would be used to automate certain transaction functions, such as sending and receiving payments. |
-| 5. | Hosting | PassMecash would be hosted on a cloud platform such as Amazon Web Services (AWS) or Google Cloud Platform (GCP). This would ensure high availability and scalability. |
-| 6. | Testing, Debugging & Launch | We will test and debug errors in the codes, thereafter we will deploy and launch. |
+| 5. | Testing on Polkadot Testnet, Debugging & Deploy to Polkadot Mainnet | We will test the smart-contract developed on testnet and debug errors if there is any, thereafter we will deploy the smartcontract to the Polkadot mainnet. |
 
 
 
