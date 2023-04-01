@@ -24,7 +24,6 @@ Talk Away is a social impact language learning startup that offers a unique and 
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
  In this moment we have a Proof of Concept with around 100 classes offered. Our next step is a MVP in web3.
  Our dApp will build from scratch under Polkadot.
 
@@ -161,7 +160,7 @@ https://medium.com/@nomadelabel/decentralized-education-what-decentralization-do
 
 - **Total Estimated Duration:**  2 months
 - **Full-Time Equivalent (FTE):**  30 days (Building the dapp) with 5 people full time. 60 days spreading and reach out people with 5 people full time. 
-- **Total Costs:** Requested amount in USD for the whole project 2 milestones (e.g. 14,000 USD). 
+- **Total Costs:** Requested amount in USD for the whole project 2 milestones: 14,000 USD. 
 
 ### Milestone 1 Example — Basic functionality
 
@@ -173,12 +172,11 @@ https://medium.com/@nomadelabel/decentralized-education-what-decentralization-do
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-|| 1. | Develop out Polkadot & Kusama core functionalities | - Polkadot & Kusama chain integration/support in wallet;<br/>- Polkadot & Kusama core functionalities ( send, receive, create/restore wallet and etc);<br/>- Complete Polkadot & Kusama transaction history with advanced information;
- | 2. | Cross-chain swap/bridge between multiple tokens/chains | Cross-chain swap support for Polkadot & Kusama (Allowing users to directly onboard to Polkadot & Kusama from different chains “BTC, ETH, BSC and FIAT” within a single click) 
- | 3. |  The smart contract will handle the following: Create new user | It will create a new user, either a free student or a certificate student. |Create new tutor | It will create a tutor with information about the courses, services he will provide, and the price for his lesson. | Create new resources | Login/logout from the wallet and chack the balance.
- | 4. | - Contact/Address book;<br/>- Payment requests;<br/>- Pay per lesson: it will get the predefined price from the student and save it to the website contract address | Payment for multiple classes will be an offer to get some discountS.| Certificate generation | Transfer payment to tutor: it will send the money from the website address to the tutor's address after the user call the check class successfully| Check class for user: after each class, the user -student- will call this function so the class passes successfully and the money can be transferred to the tutor. | Check level: this function will be called by the tutor only and return the level of the use | To be able to handle the following information we need to create a struct for the user, tutor, certification,	Part of the classes payment will go to social projects that will be voted on by community: voting system and distribution of the fund.<br/>- 
- | 5. | Internal testing | Internal testing and auditing of the developments, infrastructure and integrations |
- | 6. | <br/>- We will create a video tutorial to demonstrate how to use Polkadot crypto currecy and how you can open a wallet |
+|| 1. | Develop out Polkadot & Kusama core functionalities | - Polkadot & Kusama chain integration/support in wallet;<br/>- Polkadot & Kusama core functionalities ( send, receive, create/restore wallet and etc);<br/>- Complete Polkadot & Kusama transaction history with advanced information; 
+ | 2. |  The smart contract will handle the following: Create new user | It will create a new user, either a free student or a certificate student. |Create new tutor | It will create a tutor with information about the courses, services he will provide, and the price for his lesson. | Create new resources | Login/logout from the wallet and chack the balance.
+ | 3. | - Contact/Address book;<br/>- Payment requests;<br/>- Pay per lesson: it will get the predefined price from the student and save it to the website contract address | Payment for multiple classes will be an offer to get some discountS.| Certificate generation | Transfer payment to tutor: it will send the money from the website address to the tutor's address after the user call the check class successfully| Check class for user: after each class, the user -student- will call this function so the class passes successfully and the money can be transferred to the tutor. | Check level: this function will be called by the tutor only and return the level of the use | To be able to handle the following information we need to create a struct for the user, tutor, certification,	Part of the classes payment will go to social projects that will be voted on by community: voting system and distribution of the fund.<br/>- 
+ | 4. | Internal testing | Internal testing and auditing of the developments, infrastructure and integrations |
+ | 5. | <br/>- We will create a video tutorial to demonstrate how to use Polkadot crypto currecy and how you can open a wallet |
 
 ### Milestone 2 Example — Additional features
 
