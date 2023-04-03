@@ -13,13 +13,21 @@ Use this page for an overview of all public grants and their status. Use the sid
 
 ## Menu
 
-- [2023](#2023): [17](#%EF%B8%8F-wave-17---first-quarter-2023)
+- [2023](#2023): [18](#%EF%B8%8F-wave-18---second-quarter-2023), [17](#%EF%B8%8F-wave-17---first-quarter-2023)
 - [2022](#2022): [16](#%EF%B8%8F-wave-16---fourth-quarter-2022), [15](#%EF%B8%8F-wave-15---third-quarter-2022), [14](#%EF%B8%8F-wave-14---second-quarter-2022), [13](#%EF%B8%8F-wave-13---first-quarter-2022)
 - [2021](#2021): [12](#%EF%B8%8F-wave-12---fourth-quarter-2021), [11](#%EF%B8%8F-wave-11---third-quarter-2021), [10](#%EF%B8%8F-wave-10---second-quarter-2021), [9](#%EF%B8%8F-wave-9---first-quarter-2021)
 - [2020](#2020): [8](#%EF%B8%8F-wave-8---fourth-quarter-2020), [7](#%EF%B8%8F-wave-7---third-quarter-2020), [6](#%EF%B8%8F-wave-6---second-quarter-2020), [5](#%EF%B8%8F-wave-5---first-quarter-2020)
 - [2019](#2019): [4](#%EF%B8%8F-wave-4---fourth-quarter-2019), [3](#%EF%B8%8F-wave-3---third-quarter-2019), [2](#%EF%B8%8F-wave-2---second-quarter-2019), [1](#%EF%B8%8F-wave-1---first-quarter-2019)
 
 ## 2023
+
+### 🏄‍♀️ Wave 18 - Second Quarter 2023
+
+[Menu🔝](#menu)
+
+| Team                                                               | Project                                                                                                | Link                                                                 | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------------------------------- | :--------- | :------------: | :--------: |
+
 
 ### 🏄‍♀️ Wave 17 - First Quarter 2023
 
