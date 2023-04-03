@@ -155,82 +155,11 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 
 ### Overview
 
-- **Total Estimated Duration:** 6.5 months
+- **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 2.5
-- **Total Costs:** 97,000 USD
+- **Total Costs:** 30,000 USD
 
-
-### Milestone 1 - Polkadot and Ethereum pallet signers
-
-- **Estimated Duration:** 6 weeks
-- **FTE:** 2.5
-- **Costs:** 22,000 USD
-
-|  Number | Deliverable                            | Specification                                                                                                                                                                                                                |
-| ------: | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                                | APACHE 2                                                                                                                                                                                                                     |
-| **0b.** | Documentation                          | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide              | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
-| **0d.** | Docker                                 | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
-|      1. | Integritee pallet - Signer/Key Manager | We will create a pallet to manage signers associated with private key management                                                                                                                                             |
-|      2. | Integritee pallet- Polkadot signer     | We will create a pallet to sign Polkadot transaction                                                                                                                                                                         |
-|      3. | Integritee pallet - Ethereum signer    | We will create a pallet to sign Ethereum transaction                                                                                                                                                                         |
-|      4. | Submit transaction | Signed transaction is sent to the appropriate network through light client or API(see scheme)                                                                                                                                                 |
-
-
-### Milestone 2 - Android pre-MVP wallet Polkadot/Ethereum
-
-- **Estimated Duration:** 4 weeks
-- **FTE:** 2.5
-- **Costs:** 15,000 USD
-
-|  Number | Deliverable               | Specification                                                                                                                                                                                                                |
-| ------: | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                   | APACHE 2                                                                                                                                                                                                                     |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
-| **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
-|      1. | Android Wallet App        | We will update the current android app to handle Polkadot and Ethereum transaction                                                              |
-|      2. | Upgrade Mobile registry pallet | manage unsigned extrinsic with signed extension for the proxy mobile keys  |
-|      3. | upgrade mobile app   |  support for the Keystore/Keychain  and get rid of the hard coded keys                                                           |
-|      4. | Light security screen     | We will provide a less secure but very comfortable to read secure screen version using fading with less blinking (link)  - this  non-screenshot proof version will be used later with our adaptive security framework                                                                      |
-
-
-### Milestone 3 - iOS pre-MVP wallet Polkadot/Ethereum
-
-- **Estimated Duration:** 4 weeks
-- **FTE:** 2.5
-- **Costs:** 15,000 USD
-
-|  Number | Deliverable                 | Specification                                                                                                                                                                                                                |
-| ------: | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                     | APACHE 2                                                                                                                                                                                                                     |
-| **0b.** | Documentation               | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide   | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
-| **0d.** | Docker                      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
-|      1. | iOS Wallet App (TestFlight) | We will update the iOS app (port Jetpack compose to Swift UI) to handle Polkadot and Ethereum transaction                                                                                                                    |
-
-
-
-### Milestone 4 - MVP iOS/Android with social recovery
-- **Estimated duration:** 8 weeks
-- **FTE:** 2.5
-- **Costs:** 30,000 USD
-
-
-|  Number | Deliverable                        | Specification                                                                                                                                                                                                                |
-| ------: | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                            | APACHE 2                                                                                                                                                                                                                     |
-| **0b.** | Documentation                      | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide          | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
-| **0d.** | Docker                             | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |
-|      1. | Substrate Module - social recovery | We will integrate social recovery pallet with our chain                                                                                                                                                                      |
-|     2.a | Android Wallet                     | We will provide MVP grade android app through Firebase  to handle social recovery                                                                                                                                                                         |
-|     2.b | iOS Wallet                         | We will provide MVP grade iOS app through TestFlight to handle social recovery                                                                                                                                                                             |
-|      3. | Substrate Integritee chain         | MVP Grade POC to demonstrate instant onboarding and easy airdrop                                                                                                                                                                       |
-|         |                                    |                                                                                                                                                                                                                              |
-
-### Milestone 5 — Circuit Design Update/Optimization
+### Milestone 1 — New Garbling scheme
 
 - **Estimated duration:** 4 weeks
 - **FTE:** 2.5
@@ -243,59 +172,26 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 | **0b.** | Documentation                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
 | **0d.** | Docker                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
-|      1. | Garble Circuit pallet update | We will optimize the garbled circuit evaluation scheme to target at least **60 fps** through parralelization, caching and likely with an efficient [permutation-based garbling scheme: see 4.5](https://www.cs.fsu.edu/~tvhoang/thesis.pdf) optimized for performance |
-|      2. | Display Circuit update       | We will modify the current display circuit to enable a more comfortable user experience by decreasing the cognitive load needed for the user to read the screen. - likely by adding specific sub-circuits to manage a set of probabilities of displaying segments for each frame, then fine tuned segments ON/OFF per frame to improve readbility|
-
-
-## Future Plans
+|      1. | Garble Circuit pallet update | We will rewrite the garbled circuit evaluation scheme to target at least **60 fps** through parralelization, caching and likely with an efficient [1.permutation-based garbling scheme: see 4.5](https://www.cs.fsu.edu/~tvhoang/thesis.pdf) optimized for performance or a [2.new garbling scheme](https://www.esat.kuleuven.be/cosic/publications/article-3351.pdf) that could potentially require lower computation cost per gate|
 
 
 
-### Potential Research project:
 
-The issue that requires investigation is the increasing sophistication and effectiveness of targeted malware attacks, particularly those that utilize a 0-day vulnerability to establish a rootkit. This is a crucial matter to address as such attacks can cause significant harm to individuals and organizations.
+### Milestone 2 — Circuit design optimization and light security screen
 
-Targeted attacks with rootkit capabilities are highly elusive, as an attacker with malware and root privileges can quickly disable any type of system or network monitoring. This is made even more challenging by the fact that the attacker has access to the entire system's resources and can alter the memory and code of any application. Furthermore, it is even more difficult to detect such attacks when the targeted application lacks root privileges, as the attacker has an advantage in terms of access and control.
+- **Estimated duration:** 4 weeks
+- **FTE:** 2.5
+- **Costs:** 15,000 USD
 
-Despite the challenges presented by rootkit-enabled targeted attacks, we think that our security and authentication framework (decentralized & distributed) can be used to design a real-time targeted attack detection that focuses on our transaction validation/sensitive operation session. This is made possible by our use of hardware protected signature on mobile and the computation privacy and protection of inputs of garbled circuit evaluation. By leveraging these advanced security measures, we can enhance our ability to detect and prevent targeted attacks, even those with rootkit capabilities.
 
-
-**Research question/hypothesis**: Can we design an efficient and accurate machine learning (ML) malware detection model for rootkits, based on processor resource consumption during transaction validation sessions on mobile devices?
-
-During the transaction validation session, we aim to maximize processor resource consumption by designing a task based on evaluating garbled circuits to create an unalterable cryptographic dataset. This dataset can be used to train a machine learning model to detect malicious resource usage patterns. The task-based approach can be fine-tuned to detect subtle variations in resource consumption and is more likely to identify malicious behavior as the usage patterns for evaluating garbled circuits are unique compared to other tasks. Moreover, garbled circuits provide privacy and protection for computation and inputs, making it challenging for attackers to mimic normal behavior and evade detection.
-
-### Future security framework
-The proposed system incorporates multiple security layers to increase the cost of targeted attacks on mobile user interface (UI) software.
-
-The first layer focuses on the security of transaction confirmation, using features such as TUI and Android protected confirmation.
-
-The second layer adds an additional layer of security through behavioral biometrics, such as keypad pressure and input timestamps, making it difficult for attackers to replicate the user's input. [99% proven success rate model]( https://book.interstellar.gg/TTVP.html#behavioral-biometric-roadmap)
-
-The third layer uses garbled circuits to execute a recursive AES hashing function that maximizes resource consumption on the mobile processors: CPU, GPU, and ML engine. The evaluation of these circuits generates an unalterable secret sequence number, which is then embedded as a watermark in the frames displayed to the user. These frames are sent to nodes and regularly verified during the session, ensuring legitimate execution of the garbled circuits and limiting available resources for attackers.
-
-The system could then set up an ML model to detect attack attempts, especially if the sequence numbers are correlated with behavioral biometric inputs. This system can be initiated during the launch of the mainnet to manage the ML learning phase and establish normal usage patterns during transaction validation sessions on various ARM-based mobiles, including their GPU and ML processors.
-
-This proposed multi-layer security system is believed to effectively deter malicious actors. If attackers aim to exploit a highly expensive 0-day vulnerability or are unable to access information about the assets in the wallet, they are likely to target less secure wallets with more predictable returns in order to maximize their return on investment.
-
-If the research hypothesis is confirmed, we think that a high success rate in detecting targeted attack attempts can be achieved with sufficient diverse datasets and model refinement through simulated attacks. [Bittensor](https://bittensor.com/) in the Polkadot ecosystem could be a promising candidate for implementing the ML models.
-
-**Bug bounty program**: To encourage security researchers in conducting targeted attacks on our system. This will also train the model and improve its accuracy while also assisting developers in enhancing the system security framework.
-
-**Potential research lead in the future**: The way the display circuit is configured/tuned can affect the user's cognitive load when reading the display (i.e. time for the brain to process visual information) changing its behavior to improve our ML model. It is also potentially a new type of behavioral biometric that could discriminate a real human from an ML model used by the attackers.
-
-### Potential Guarantee fund backed by reinsurance service
-
-Establishing a guarantee fund for individual and corporate users could be a sensible option given the level of security achieved by the system.
-
-With the multi-layer security system described earlier, it is easy to enable users to securely provide their mobile device forensic data in a simple manner to verify potential claims.
-
-### Some potential other improvements:
-
-- Filecoin may allow for the backup and retrieval of private keys using Shamir Secret Sharing.
-
-- Private scheme like stealth address can be added to the system
-
-- Enhancement of distributed HSM based on TEE with hardware HSM module on some nodes
+|  Number | Deliverable                  | Specification                                                                                                                                                                                                                |
+| ------: | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                      | APACHE 2                                                                                                                                                                                                                     |
+| **0b.** | Documentation                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
+| **0d.** | Docker                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
+|      1. | Display Circuit update       | We will modify the current display circuit to enable a more comfortable user experience by decreasing the cognitive load needed for the user to read the screen. - likely by adding specific sub-circuits to manage a set of probabilities of displaying segments for each frame, then fine tuned segments ON/OFF per frame to improve readbility
+|      2. | Light security screen     | We will provide a less secure but very comfortable to read secure screen version using fading with less blinking (link)  - this  non-screenshot proof version will be used later with our adaptive security framework                                                                      |
 
 
 
