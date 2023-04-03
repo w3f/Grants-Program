@@ -131,10 +131,15 @@ Please add additional milestones in the same way:
 ## Future Plans
 
 Developer other milestones:
+  
  **Milestone 4: ** Research about MPC in ECVRF
+  
  **Milestone 5: ** Implement DKG allow validators to genereate secret shares
+  
  **Milestone 6: ** Implement distributed ECVRF based on MPC
+  
  **Milestone 7: ** Implement pallet-mpc-ecvrf
+  
  **Milestone 8: ** Implement precompile evm pallet for MPC ECVRF in frontier
 
   
