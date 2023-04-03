@@ -312,15 +312,13 @@ The code of the preferundum pallet is available in [Matthiew's github](https://g
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can create a preferundum, edit one, add possibility, vote, participate in the proposal |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. For each module, we will provide a strong test file that will ensure the safety and the good logic of the preferendum. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish some **articles** that explains the philosophy, the interest and the roadmap |
 | 1. | Substrate module: Proposal | Our proposal making process is fully Org-agnostic: Multisigs, proxy-based organizations or any single address are welcome to create preferendums. Whenever there is a join, we will add the address account to the proposal. |
 | 2. | Substrate module: Quorum | We're building a custom quorum specifically designed for Preferendums. This quorum is a hybrid between an "optimistic" and "pessimistic" quorum that enables to take decisions in a way that suits each phase of the proposal process. the first phase uses an optimistic quorum that only takes into account vetoes, while the second phase which is the voting phase, uses a pessimistic quorum. Quorums are needed to decide when to vote or when to end a phase. There will be function where you can modify the maximum number of people that can join the team, and modify it over time. |
 | 3. | Substrate module: Preferundum | The pallet preferundum will host functions described in Milestone 2. It will be linking the hashmaps to IPFS and store them on the blockchain. Vetoes and joins are managed by the Quorum module (optimistic). |
 | 4. | Substrate module: Vote | For the logic of the vote, we will allow for a more democratic voting by giving each member of the proposal the same voting power. Using the **range-normalization** method, voters will decide percentages of their will to support this different alternatives. Voting is started and stopped according to quorum module (pessimistic).|
-| 5. | Test module (with mock file) | For each module, we will provide a strong test file that will ensure the safety and the good logic of the preferendum.|
-| 6. | Runtime Upgrades | We will deploy our Pallet on Kabocha as a DotSama-native Experimental Playground Parachain. We're confident that our pallet will contribute to the development of several other parachains where we will implement preferendums over time and experience. Our aim is to end developing a version for Statemine and propose it on OpenGov.|
 
 ### Milestone 2 - stated.tech x Polkassembly - Front-End - 56.5k
 
