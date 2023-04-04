@@ -70,7 +70,7 @@ The central piece of the platform will be the smart contracts:
 
 #### Preliminary interface of the smart contracts
 
-* Note that this list preliminary interface is hacky and dirty. It is provided to show what our team has in mind
+* Note that this list pseudo-code interface is hacky and dirty. It is provided to show what our team has in mind
 
 ##### Rewards Pool
 
@@ -216,9 +216,9 @@ Currently, the project is under technical design phase
 
 ### Overview
 
-- **Total Estimated Duration:** 5 months
+- **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):**  1.5 FTE
-- **Total Costs:** 59,000 USD
+- **Total Costs:** 55,000 USD
 
 ### Milestone 1 — Design Phase
 
@@ -230,38 +230,51 @@ Currently, the project is under technical design phase
 |--------:|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **0a.** | License                   | MIT                                                                                                                                                                                                                                                                                      |
 | **0b.** | Documentation             | Inline code documentation for public interface                                                                                                                                                                                                                                           |
-| **0c.** | Testing and Testing Guide | Tests for each public function on the smart contract                                                                                                                                                                                                                                     |
-| **0d.** | Docker                    | N/A                                                                                                                                                                                                                                                                                      |
-|  **1.** | Smart contract API Mock   | Complete interface for both smart contracts without implementation yet: **Pool**: Create project, define types of work inside the bounty, send funds to the rewards pool, create governance space, **Governance**: create proposal, approve proposal, call pool to reward propose author |
+| **0c.** | Testing and Testing Guide | Unit tests for each public function on the smart contract. The team leverage TDD approach.                                                                                                                                                                                               |
+|  **1.** | Smart contract API        | Complete interface for both smart contracts without implementation yet: **Pool**: Create project, define types of work inside the bounty, send funds to the rewards pool, create governance space, **Governance**: create proposal, approve proposal, call pool to reward propose author |
 
 ### Milestone 2 — Implementation of Pool smart contract
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1.5 
-- **Costs:** 22,000 USD
+- **FTE:**  1 
+- **Costs:** 15,000 USD
 
 
-|   Number | Deliverable                 | Specification                                                                                                                                                               |
-|---------:|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  **0a.** | License                     | MIT                                                                                                                                                                         |
-|  **0b.** | Documentation               | Markdown documents describing user flow and details on how to run RewardsPool contract and call it from the cli                                                             |
-|  **0c.** | Testing and Testing Guide   | N/A                                                                                                                                                                         |
-|  **0d.** | Docker                      | N/A                                                                                                                                                                         |
-|   **1.** | Rewards Pool implementation | Rewards pool contract implemented: Create project, define types of work inside the bounty, send funds to the rewards pool, create governance space functions implementation |
+|  Number | Deliverable                 | Specification                                                                                                                                                               |
+|--------:|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | MIT                                                                                                                                                                         |
+| **0b.** | Documentation               | Markdown documents describing user flow and details on how to run RewardsPool contract and call it from the cli                                                             |
+| **0c.** | Testing and Testing Guide   | Unit tests for internal functions and actual implemented business logic                                                                                                     |
+| **0d.** | Docker                      | Docker and docker-compose environment for compile, build and run contract locally                                                                                           |
+|  **1.** | Rewards Pool implementation | Rewards pool contract implemented: Create project, define types of work inside the bounty, send funds to the rewards pool, create governance space functions implementation |
 
 ### Milestone 3 — Implementation of Governance smart contract
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1.5
-- **Costs:** 22,000 USD
+- **FTE:**  1
+- **Costs:** 15,000 USD
 
 |  Number | Deliverable                 | Specification                                                                                                  |
 |--------:|-----------------------------|----------------------------------------------------------------------------------------------------------------|
 | **0a.** | License                     | MIT                                                                                                            |
 | **0b.** | Documentation               | Markdown documents describing user flow and details on how to run Governance contract and call it from the cli |
-| **0c.** | Testing and Testing Guide   | N/A                                                                                                            |
-| **0d.** | Docker                      | N/A                                                                                                            |
+| **0c.** | Testing and Testing Guide   | Unit tests for internal functions and actual implemented business logic                                        |
+| **0d.** | Docker                      | Docker and docker-compose environment for compile, build and run contract locally                              |
 |  **1.** | Rewards Pool implementation | Governance contract implemented: create proposal, approve proposal, call pool to reward propose author         |
+
+### Milestone 3 — Stabilisation and production readiness
+
+- **Estimated Duration:** 2 weeks
+- **FTE:**  1.5
+- **Costs:** 10,000 USD
+
+|  Number | Deliverable                 | Specification                                                                                          |
+|--------:|-----------------------------|--------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | MIT                                                                                                    |
+| **0b.** | Documentation               | Deploy, test, build and run guides. Github pages website with the docs generated previously            |
+| **0c.** | Testing and Testing Guide   | e2e tests                                                                                              |
+| **0d.** | Docker                      | Extended docker environment to run e2e tests                                                           |
+
 
 ## Future Plans
 
