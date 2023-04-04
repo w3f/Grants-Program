@@ -2,8 +2,8 @@
 
 
 - **Team Name:** Interstellar
-- **Payment Address:** TBD
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **Payment Address:** FIAT
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
 ## Project Overview :page_facing_up:
