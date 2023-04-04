@@ -202,7 +202,7 @@ In this milestone we develop pallet-ismp
 
 
 ## Future Plans
-We recognize the significant benefits that pallet-ismp offers to the ecosystem, and therefore, after the grant completion we plan to continue providing maintenance through the Web3 Maintenance grants.
+We recognize the significant benefits that pallet-ismp offers to the ecosystem, and therefore, after the grant completion we plan to continue providing maintenance with support from the Polkadot/Kusama treasury.
 
 ## Additional Information :heavy_plus_sign:
 
