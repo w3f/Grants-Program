@@ -2,7 +2,7 @@
 
 
 - **Team Name:** Interstellar
-- **Payment Address:** FIAT
+- **Payment Address:** Fiat 04.04.2023, 22:42
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
