@@ -121,6 +121,9 @@ And some Updates to cumulus, required for parachains to read the relay chain sta
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
+- **Total Estimated Duration:** 6 Months
+- **Full-Time Equivalent (FTE):** 7
+- **Total Costs:** 105,000 USD
 
 ### Milestone 1 — `ismp-rs`
 
@@ -196,6 +199,10 @@ In this milestone we develop pallet-ismp
 | **1d.** | RPC | This sub-crate will allow for users to query relevant ISMP data over RPC. |
 | **1e.** | Runtime-APIs | This sub-crate will expose relevant ISMP data from the runtime through runtime APIS. |
 | **1f.** | Benchmarks | We will benchmark pallet-ismp, providing a benchmark crate for parachain teams to run so as to generate the proper weights for their runtime. |
+
+
+## Future Plans
+We recognize the significant benefits that pallet-ismp offers to the ecosystem, and therefore, after the grant completion we plan to continue providing maintenance through the Web3 Maintenance grants.
 
 ## Additional Information :heavy_plus_sign:
 
