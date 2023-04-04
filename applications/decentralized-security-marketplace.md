@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-This application is a response to an [RFP: Decentralized Security Marketplace](https://github.com/0xCaso/Grants-Program/blob/604d506591ea57eef4fee04aa2cfdf2010e8772c/docs/RFPs/Open/decentralized-security-marketplace.md)
+This application is a response to an [RFP: Decentralized Security Marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/decentralized-security-marketplace.md)
 
 ### Overview
 
