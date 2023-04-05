@@ -7,7 +7,7 @@
 
 [ink!](https://github.com/paritytech/ink) is a domain-specific language for writing smart contracts in Rust and compiles to Wasm code. You can use it with blockchains built on Substrate.
 
-The goal of this RFP is to find teams that develop or maintain browser based playground for editing, sharing & compiling ink! Smart Contracts. We are hereby specifically looking for a developer or team that wants to continue to work on the [ink! Playground](https://github.com/paritytech/ink-playground), which was originally developed and maintained by Parity. But we are also actively looking for teams that want to implement alternative solutions, like, for example, something based on [http://remix.ethereum.org](https://remix.ethereum.org/). 
+The goal of this RFP is to find teams that would like to develop or maintain a browser based playground for editing, sharing & compiling ink! Smart Contracts. We are hereby specifically looking for a developer or team that wants to continue to work on the [ink! Playground](https://github.com/paritytech/ink-playground), which was originally developed and maintained by Parity. But we are also actively looking for teams that want to implement alternative solutions, like, for example, something based on [http://remix.ethereum.org](https://remix.ethereum.org/). 
 
 **Useful resources:**
 - [ink!](https://use.ink/)
