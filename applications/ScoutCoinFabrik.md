@@ -102,17 +102,18 @@ We have finished the first milestone of this project (Milestone #1), accomplishi
 
 - **Estimated duration:** 5 weeks
 - **FTE:**  5
-- **Costs:** 15,000 U$D
+- **Costs:** U$D
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT
-| 0b. | Documentation | Detailed documentation hosted on a separate webpage.
+| 0b. | Documentation | Documentation hosted on a separate webpage.
 | 0c. | Testing | Integration testing. Specific tests for every linting detector based on code examples and snippets of smart contracts.
 | 0d. | Docker | Does not apply at this stage.
 | 0e. | Article | We will upload to our blog a report summary.
- **1** | Research and Development | Vulnerability examples. In addition to the [examples developed in Milestone 1](#milestone-1), we will develop further code examples and snippets of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!. Further example versions of current vulnerabilities developed in Milestone 1.
- **2.a** | Development | Building a prototype that improves over the development of Milestone 1, detecting more classes of vulnerabilities and improving in precision on existing detectors.
+ **1.a** | Research and Development | Vulnerability examples. In addition to the [examples developed in Milestone 1](#milestone-1-proof-of-concept), we will develop more code examples and snippets of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!.
+ **1.b** | Research and Development | Further example versions of [current vulnerabilities developed in Milestone 1](https://github.com/CoinFabrik/web3-grant/tree/main/vulnerabilities).
+ **2.a** | Development | Building a prototype that improves over the [development of Milestone 1](#milestone-1-proof-of-concept), detecting more classes of vulnerabilities and improving in precision on existing detectors.
  **2.b** | Development | Command line interface for the prototype.
  **2.c** | Development | VSCode integration for the prototype.
  **3** | Evaluation | Prototype validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision. Evaluation report and detector improvement.
