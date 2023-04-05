@@ -115,7 +115,7 @@ We have finished the first milestone of this project (Milestone #1), accomplishi
  **2.a** | Development | Building a prototype that improves over the development of Milestone 1, detecting more classes of vulnerabilities and improving in precision on existing detectors.
  **2.b** | Development | Command line interface for the prototype.
  **2.c** | Development | VSCode integration for the prototype.
- **3** | Evaluation | Prototype validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision and recall. Evaluation report and detector improvement.
+ **3** | Evaluation | Prototype validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision. Evaluation report and detector improvement.
 
 
 ## Future Plans
