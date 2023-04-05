@@ -6,14 +6,14 @@ import CountUp from 'react-countup';
 
 const FeatureList = [
   {
-    title: 1100,
+    title: 1300,
     description: (
       <>applications
       </>
     ),
   },
   {
-    title: 450,
+    title: 500,
     description: (
       <>projects funded
       </>
