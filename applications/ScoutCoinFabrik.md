@@ -52,6 +52,7 @@ Our team has an academic background in computer science and mathematics, with wo
 
 ### Team Code Repos
 
+- https://github.com/CoinFabrik/web3-grant
 - https://gitlab.com/coinfabrik-private/data/frecuencia-de-vulnerabilidades
 - https://drive.google.com/drive/u/1/folders/1HoaL6EXX1Wky7e1SHYBY6oIZDGK2sgDD 
 
@@ -69,6 +70,8 @@ We have been working on different aspects of the tool:
 - Tools to assist developers.
 
 We briefly validated the idea of the development described in this application with David Hawig and Bhargav Bhatt from Web3 Foundation, who encourage us to apply for this grant.
+
+We have finished the first milestone of this project (Milestone #1), accomplishing all the deliverables listed in the milestone table below.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -95,10 +98,27 @@ We briefly validated the idea of the development described in this application w
  **2** | Development | Producing code examples and snippets of smart contracts written in ink! for each type of vulnerability from the list mentioned in 1. Research.
  **3** | Development | Proof of concept code detecting some (relevant) issues included in the list of vulnerabilities and best practices.
 
+### Milestone 2: Prototype
+
+- **Estimated duration:** 5 weeks
+- **FTE:**  5
+- **Costs:** 15,000 U$D
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | MIT
+| 0b. | Documentation | Detailed documentation hosted on a separate webpage.
+| 0c. | Testing | Integration testing. Specific tests for every linting detector based on code examples and snippets of smart contracts.
+| 0d. | Docker | Does not apply at this stage.
+| 0e. | Article | We will upload to our blog a report summary.
+ **1** | Research and Development | Additional code examples and snippets of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!. Further example versions of current vulnerabilities developed in Milestone 1.
+ **2** | Development | Detector refinement and improvement using MIR techniques. Command line interface tool. VSCode integration.
+ **3** | Evaluation | Tool validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision and recall. Evaluation report.
+
 
 ## Future Plans
 
-(Our original plan was to apply for a 3 months grant, to reach a public release of the tool. But we were advised to apply for a shorter objective, so we are presenting only Milestone #1 from our plan) After completing this first milestone, we are planning on applying for 2 additional iterations to reach a tool prototype (Milestones #2) and public release (Milestones #3). Our mission is to continue to work on improving automated and assisted tools for finding security vulnerabilities and writing more secure code. Our objective is to help the Polkadot / Kusama community produce better and more secure code with these tools.
+(Our original plan was to apply for a 3 months grant, to reach a public release of the tool. But we were advised to apply for a shorter objective) After completing the first milestone (Milestone #1), we are now applying for this second milestone to reach a tool prototype (Milestone #2). We envison a third milestone together with a public release (Milestone #3). Our mission is to continue to work on improving automated and assisted tools for finding security vulnerabilities and writing more secure code. Our objective is to help the Polkadot / Kusama community produce better and more secure code with these tools.
 
 ## Referral Program (optional) :moneybag: 
 
