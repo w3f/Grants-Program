@@ -111,9 +111,11 @@ We have finished the first milestone of this project (Milestone #1), accomplishi
 | 0c. | Testing | Integration testing. Specific tests for every linting detector based on code examples and snippets of smart contracts.
 | 0d. | Docker | Does not apply at this stage.
 | 0e. | Article | We will upload to our blog a report summary.
- **1** | Research and Development | Additional code examples and snippets of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!. Further example versions of current vulnerabilities developed in Milestone 1.
- **2** | Development | Detector refinement and improvement using MIR techniques. Command line interface tool. VSCode integration.
- **3** | Evaluation | Tool validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision and recall. Evaluation report.
+ **1** | Research and Development | Vulnerability examples. In addition to the [examples developed in Milestone 1](#milestone-1), we will develop further code examples and snippets of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!. Further example versions of current vulnerabilities developed in Milestone 1.
+ **2.a** | Development | Building a prototype that improves over the development of Milestone 1, detecting more classes of vulnerabilities and improving in precision on existing detectors.
+ **2.b** | Development | Command line interface for the prototype.
+ **2.c** | Development | VSCode integration for the prototype.
+ **3** | Evaluation | Prototype validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision and recall. Evaluation report and detector improvement.
 
 
 ## Future Plans
