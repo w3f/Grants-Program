@@ -52,6 +52,7 @@ Our team has an academic background in computer science and mathematics, with wo
 
 ### Team Code Repos
 
+- https://github.com/CoinFabrik/web3-grant
 - https://gitlab.com/coinfabrik-private/data/frecuencia-de-vulnerabilidades
 - https://drive.google.com/drive/u/1/folders/1HoaL6EXX1Wky7e1SHYBY6oIZDGK2sgDD 
 
@@ -70,13 +71,15 @@ We have been working on different aspects of the tool:
 
 We briefly validated the idea of the development described in this application with David Hawig and Bhargav Bhatt from Web3 Foundation, who encourage us to apply for this grant.
 
+We have finished the first milestone of this project (Milestone #1), accomplishing all the deliverables listed in the milestone table below.
+
 ## Development Roadmap :nut_and_bolt:
 
-### Overview
+### Overview (Milestones 1 and 2)
 
-- **Total Estimated Duration:** 1 month
+- **Total Estimated Duration:** 9 weeks
 - **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 15,000 U$D
+- **Total Costs:** 45,500 U$D
 
 ### Milestone 1: Proof of Concept
 
@@ -95,10 +98,30 @@ We briefly validated the idea of the development described in this application w
  **2** | Development | Producing code examples and snippets of smart contracts written in ink! for each type of vulnerability from the list mentioned in 1. Research.
  **3** | Development | Proof of concept code detecting some (relevant) issues included in the list of vulnerabilities and best practices.
 
+### Milestone 2: Prototype
+
+- **Estimated duration:** 5 weeks
+- **FTE:**  5
+- **Costs:** U$D 30,500
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | MIT
+| 0b. | Documentation | Documentation hosted on a separate webpage.
+| 0c. | Testing | Integration testing. Specific tests for every linting detector based on code examples and snippets of smart contracts.
+| 0d. | Docker | Does not apply at this stage.
+| 0e. | Article | We will upload a report summary to our blog.
+ **1.a** | Research and Development | Vulnerability examples. In addition to the [examples developed in Milestone 1](#milestone-1-proof-of-concept), we will develop more code examples and snippets of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!.
+ **1.b** | Research and Development | Further example versions of [vulnerabilities developed in Milestone 1](https://github.com/CoinFabrik/web3-grant/tree/main/vulnerabilities).
+ **2.a** | Development | Building a prototype that improves over the [development of Milestone 1](#milestone-1-proof-of-concept), detecting more classes of vulnerabilities and improving in precision on existing detectors.
+ **2.b** | Development | Command line interface for the prototype.
+ **2.c** | Development | VSCode integration for the prototype.
+ **3** | Evaluation | Prototype validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision. Evaluation report and detector improvement.
+
 
 ## Future Plans
 
-(Our original plan was to apply for a 3 months grant, to reach a public release of the tool. But we were advised to apply for a shorter objective, so we are presenting only Milestone #1 from our plan) After completing this first milestone, we are planning on applying for 2 additional iterations to reach a tool prototype (Milestones #2) and public release (Milestones #3). Our mission is to continue to work on improving automated and assisted tools for finding security vulnerabilities and writing more secure code. Our objective is to help the Polkadot / Kusama community produce better and more secure code with these tools.
+(Our original plan was to apply for a 3 months grant, to reach a public release of the tool. But we were advised to apply for a shorter objective) After completing the first milestone (Milestone #1), we are now applying for this second milestone to reach a tool prototype (Milestone #2). We envison a third milestone together with a public release (Milestone #3). Our mission is to continue to work on improving automated and assisted tools for finding security vulnerabilities and writing more secure code. Our objective is to help the Polkadot / Kusama community produce better and more secure code with these tools.
 
 ## Referral Program (optional) :moneybag: 
 
