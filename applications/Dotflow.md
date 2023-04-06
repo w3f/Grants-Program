@@ -30,8 +30,6 @@ When a user wants to transfer some tokens to an identity the user will only have
 
 In case the origin and destination chain are not the same, the UI will create an XCM message that will route the tokens to the proper blockchain.
 
-Our ink! smart contracts will be deployed on the Astar network.
-
 ### UI Design
 The UI will consist of three main parts:
 
@@ -142,8 +140,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | **0b.** | Documentation | Ink! contracts and the UI code will be well documented and open for everybody to take a look. The UI will be simple and intuitive to use. |
 | **0c.** | Testing and Testing Guide | The Identity ink! contract will be well tested with unit and integration tests. |
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milesone. |
-| 1. | Identity Contract | We will write the code for the Identity contract that was explained above. This includes functionality for creating an identity, adding addresses to an identity, updating the addresses of an identity. We will also implement the routing function that will return the proper destination address based on input arguments. |
-| 2. | My Identity page | We will make a UI that will allow users to interact with the Identity Contract. Users will be able to access all of the functionality from the Identity Contract by using this UI |
+| 1. | Identity Contract | We will write the code for the Identity contract using ink! so that our contracts can be compiled to wasm and deployed to any blockchain that implements the contracts pallet. The Identity contract will include the functionality for creating an identity, adding addresses that are mapped to specific blockchains and updating these addresses in case some of them change over time. The Identity contract will automatically create an `identityNo` which will be a unique identifier for an identity. |
+| 2. | My Identity page | The My Identity page will be written in React.js and it will make it possible for users to interact with the Identity contract. This includes creating an identity, adding addresses to an identity and removing an address from the identity. From this UI users will be able to easily access and copy their `identityNo` so that they can send it to someone. This UI will be based on the mock we displayed above in the [UI design section](https://github.com/Szegoo/Grants-Program/edit/application/applications/Dotflow.md?pr=%2Fw3f%2FGrants-Program%2Fpull%2F1657#ui-design). |
 
 
 ### Milestone 2 Example — Additional features
@@ -156,13 +154,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
 | **0b.** | Documentation | Both contracts and the website code will be well documented and open for everybody to check. The UI will have a simple UI that will be intuitive to use. |
-| **0c.** | Testing and Testing Guide | The Address Book ink! contract will be well tested with unit and integration tests before being deployed to the Astar network. The functionality for generating XCM messages will very well tested to make sure the tokens are always transfered to the proper destination. |
+| **0c.** | Testing and Testing Guide | The Address Book ink! contract will be well tested with unit and integration tests. The functionality for generating XCM messages will very well tested to make sure the tokens are always transfered to the proper destination. |
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milesone. |
 | 0e. | Article | We will publish a Medium article that explains the details of our project. |
-| 1. | Address Book Contract | We will write the code for the address book contract. This will contain the functionality for creating an address book, adding and modifying addresses. |
-| 2. | Routing functionality. | We will write the logic for constructing XCM messages that will route the tokens to the proper address. In case the destination chain is same as the origin there will just be a simple transaction. The code for this will be stored on the frontend.
-| 3. | Address Book page | We will make a UI that will allow users to interact with the Address Book Contract. Users will be able to access all of the functionality from the Address Book contract by using this UI |
-| 4. | Transfer page | We will make a UI that will allow users to send tokens by setting the destination to some `IdentityId`. The UI will abstract addresses away and take care of the routing. |
+| 1. | Address Book Contract | We will write the code for the Address Book contract using ink! so that our contracts can be compiled to wasm and deployed to any blockchain that implements the contracts pallet. The Address Book contract will include the functionality for creating an address book and filling it out with identities the user interacts with the most frequently.  |
+| 2. | Routing functionality. | The code that will route the tokens to the proper destination will be part of the frontend code written in typescript. This code will include the logic for constructing XCM messages that will route the tokens to the proper address. In case the destination chain is same as the origin there will just be a simple transaction.
+| 3. | Address Book page | We will write the code for the Address Book UI using React.js. The UI will be based on the provided mock design that we displayed above in the [UI design section](https://github.com/Szegoo/Grants-Program/edit/application/applications/Dotflow.md?pr=%2Fw3f%2FGrants-Program%2Fpull%2F1657#ui-design). The UI will make it possible for users to create an address book and add identities to it. |
+| 4. | Transfer page | We will make a UI written in React.js that will allow users to send tokens by setting the destination to some `IdentityId`. The UI will abstract addresses away and take care of the routing using the Routing functionality that we described in the section 2. inside this table. This UI will also be based on the mock design we displayed above in the [UI design section](https://github.com/Szegoo/Grants-Program/edit/application/applications/Dotflow.md?pr=%2Fw3f%2FGrants-Program%2Fpull%2F1657#ui-design). |
 
 
 ## Future Plans
