@@ -91,36 +91,42 @@ we Anchored the first substrate training in nigeria with Octpous network . We ar
  chess.incryptoencrypted.org
  https://github.com/InCryptoEncrypted/ChessOnChain
 
-## Development Roadmap :
-Game UI and substrate Pallet Completion (Already Started)
-Security Audit 
-NFT Launch / Waitlist 
-Register SAFT/BVI
+Development Roadmap nut_and_bolt
+Overview
+Description Development of Project Aurras - MVP - Phase 1
+Total Estimated Duration: 210 Person Days
+Full-time equivalent (FTE): Milestone 1 - 1.5; Milestone 2 and 3 - 3
+Total Costs: 15k $
+Milestone 1 — Substrate pallet completion 
+Estimated Duration: 3 months 
+FTE: 1.5
+Costs: 15k $
+
+Goal - Create and implement Storage system between Pallets and chess game 
+
+Create token Earn system 
+Store chess Game data 
 
 
 
-### Overview
 
-- **Total Estimated Duration:** Duration of the whole project ( 5 months)
 
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 30,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
-### Milestone 1 — Basic functionality
 
-- **Estimated duration:** 3 month
-- **Costs:** 10,000 USD
+Number	Deliverable	Specification
+0a.	License	Apache 2.0
+0b.	Documentation	 Documentation of how pallet interacts witj chess game data and stores Onchain 
+0c.	Testing Guide	The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Complete Game Features |Genre |Beta
-| **0b.** | Documentation | We will provide both **inline documentation** of the coTeke-pixel-patch-3de and a basic **tutorial** that explains how a user can (for example) Authenticate to game with desired chain play and earn NFTs and FTs |
-| **0c.** | NFT waitlist| to get testers and players we  will launch NFts on the Associated blockchains 
+1.	Substrate Pallet: json Data from Game play gets stored on storage maps of Substrate 
+2.	Substrate Pallet : Store leaderboard of game record on substrate Pallet
+3.	Substrate Event Feed: Docker Image	Dockerfile for Substrate Event Feed Package
+4. Article /tutorial: We will make an article and tutorial about data is anchored on chain 
 
 ### Milestone 2 Registeration — SAFT/BVI
 
 - **Estimated Duration:** 1 month
-- **Costs:** 20,000 USD
+- **Costs:** 15,000 USD
 
 ## Future Plans
 
