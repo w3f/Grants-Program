@@ -79,7 +79,7 @@ We have finished the first milestone of this project (Milestone #1), accomplishi
 
 - **Total Estimated Duration:** 9 weeks
 - **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 15,000 U$D
+- **Total Costs:** 45,500 U$D
 
 ### Milestone 1: Proof of Concept
 
