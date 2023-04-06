@@ -1,7 +1,7 @@
 # Substrate IPFS Utilities 2
 
 - **Team Name:** [TDSoftware](https://www.tdsoftware.de/)
-- **Payment Address:** 0x8Db0972d9F40357526B879A002d60CCf6B4a8882
+- **Payment Address:** 0x8Db0972d9F40357526B879A002d60CCf6B4a8882 (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -103,14 +103,14 @@ Team profiles:
 
 ## Development Status :open_book:
 
-A concept and solution draft was created as part of this application and can be found in the Project Details chapter. We took time on Milestone 1 and 2 to discuss and discover issues and find solutions. 
+A concept and solution draft was created as part of this application and can be found in the Project Details chapter. We took time on the IPFS utilities project to discuss and discover issues and find solutions. 
 
-You can find the current project here:
+You can find the previous ipfs utilities project here:
 👉 [IPFS Utilities for Substrate](https://github.com/TDSoftware/substrate-ipfs)
 
 ## Development Roadmap :nut_and_bolt:
 
-The project is split into two Milestones. The first Milestone (Milestone 3) will include the implementation of the RPC API. Afterwards we are going to focus on accepting InputStreams as input parameters for the RPC API. Please check the details below.
+The project is split into two Milestones. The first Milestone will include the implementation of the RPC API. Afterwards we are going to focus on accepting InputStreams as input parameters for the RPC API. Please check the details below.
 
 ### Overview
 
@@ -118,7 +118,7 @@ The project is split into two Milestones. The first Milestone (Milestone 3) will
 - **Full-Time Equivalent (FTE):** 2
 - **Total Costs:** 66,000 DAI
 
-### Milestone 3 - RPC API
+### Milestone 1 - RPC API
 
 - **Estimated duration:** 1 Month
 - **FTE:** 2
@@ -135,7 +135,7 @@ The project is split into two Milestones. The first Milestone (Milestone 3) will
 |      3. | Substrate Off-Chain Worker (TDS IPFS Pallet)       | The off-chain worker is fetching the uploaded files from the off-chain storage and adds those to IPFS. For this step, the local embedded IPFS node is used. After successfully adding the file and checking, that the file is available in the IPFS network, the status for the CID on chain is set to "Done". To update the status, another extrinsic method needs to be created. |
 
 
-### Milestone 4 - InputStreams
+### Milestone 2 - InputStreams
 
 - **Estimated Duration:** 1 Month
 - **FTE:** 2
@@ -148,7 +148,7 @@ The project is split into two Milestones. The first Milestone (Milestone 3) will
 | **0c.** | Testing and Testing Guide                | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                      |
 | **0d.** | Docker                                   | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                        |
 |     0e. | Article                                  | We will write and publish a Medium article to spread the word and give developers an introduction to the project and how to use it.                                                                                                                                                                                                  |
-|      1. | Research                                 | A research needs to take place on how to use InputStreams with RPCs. There are several approaches that need to be checked. In this first part a POC mock implementation will be created.                                                                                                                                             |  |
+|      1. | Research                                 | A research needs to take place on how to use InputStreams with RPCs. There are several approaches that need to be checked. In this first part a POC mock implementation will be created. Therefore we are checking exiting solutions of RPC APIs for Substrate. The mock implementation will show a functional API that accepts InputStreams.                                                                                                                                            |  |
 |      2. | Substrate RPC API accepting InputStreams | The existing RPC API for uploading files will be refactored to allow handling of InputStreams. The idea is to perform actions on every retrieved chunk of the stream instead of handling the whole file at once. This should allow clients to add huge files to IPFS via Substrate without having performance issues and high costs. |
 |      3. | Tutorial                                 | After the implementation of MS1 and 2, a video tutorial is created and published to explain developers how the achieved implementation can help in other Substrate applications. Besides the video tutorial, the tutorial will be provided in text form as step-by-step guide.                                                       |
 
