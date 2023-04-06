@@ -105,7 +105,8 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 - **Full-Time Equivalent (FTE):** 8
 - **Total Costs:** 30,000 USD
 
-- 
+
+
 ### Milestone 1 — Front End Development
 - **Estimated duration:** 4 weeks
 - **FTE:**  5
@@ -119,6 +120,7 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Frontend Development | The front-end would be built using React.js, a popular JavaScript library. This allows for the development of a responsive and user-friendly interface. This will involve the Landing Page & Dashboard, while Tailwind will be used to convert all the Figma files. |
+
 
 
 
