@@ -17,10 +17,6 @@ ChessonChain also features a multichain architecture, which enables it to intera
 Overall, ChessonChain provides a secure, scalable, and decentralized platform for chess enthusiasts to participate in online chess games and tournaments, learn from their experiences, and earn rewards for their efforts. By leveraging the unique advantages of blockchain technology, ChessonChain is expanding the possibilities for chess as a game and as a community.
 
 
-
-
-
-
 ### Project Details
 1: Platform Architecture: ChessonChain is built on the Substrate framework, which is a modular blockchain development platform that enables the creation of customizable and scalable blockchain networks. 
 This provides ChessonChain with a high degree of flexibility in terms of its features, functionality, and governance and forks
@@ -63,7 +59,6 @@ Smart Contract Developer: Gift Moris
 
 
 ### Contact
-
 - **Contact Name:Teke George Seidougha
 - **Contact Email:Georgeteke45@gmail.com
 - **Website:IncryptoEncrypted.org
@@ -91,26 +86,18 @@ we Anchored the first substrate training in nigeria with Octpous network . We ar
  chess.incryptoencrypted.org
  https://github.com/InCryptoEncrypted/ChessOnChain
 
-Development Roadmap nut_and_bolt
+Development Roadmap 
 Overview
-Description Development of Project Aurras - MVP - Phase 1
-Total Estimated Duration: 210 Person Days
 Full-time equivalent (FTE): Milestone 1 - 1.5; Milestone 2 and 3 - 3
 Total Costs: 15k $
 Milestone 1 — Substrate pallet completion 
 Estimated Duration: 3 months 
-FTE: 1.5
+
 Costs: 15k $
 
 Goal - Create and implement Storage system between Pallets and chess game 
-
 Create token Earn system 
 Store chess Game data 
-
-
-
-
-
 
 
 Number	Deliverable	Specification
@@ -123,7 +110,7 @@ Number	Deliverable	Specification
 3.	Substrate Event Feed: Docker Image	Dockerfile for Substrate Event Feed Package
 4. Article /tutorial: We will make an article and tutorial about data is anchored on chain 
 
-### Milestone 2 Registeration — SAFT/BVI
+### Milestone 2 Registeration — SAFT/BVI REGISTERATION
 
 - **Estimated Duration:** 1 month
 - **Costs:** 15,000 USD
