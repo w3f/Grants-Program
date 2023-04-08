@@ -8,11 +8,10 @@
 
 ### Overview
 
- Blockchainia delivers the benefits of digital ownership straight to gamers fingertips. Our infrastructure will enable developers to create games for gamers that decide to take ownership of their digital achievements. The Blockchainia library of pallets enables affordable pay-to-play games that forever immortalize gamings greatest moments on-chain. As an eventual competive gaming metaverse, Blockchaina's ecosystem includes a community hosted online multiplayer infrastructure consisting of game servers that will interact directly with our parachain for user moderated online gaming.
+ Blockchainia delivers the benefits of digital ownership straight to gamers fingertips. Our infrastructure will enable developers to create games for gamers that decide to take ownership of their digital achievements. The Blockchainia library of pallets enables affordable pay-to-play games that forever immortalize gamings greatest moments on-chain. As an eventual competitive gaming metaverse, Blockchaina's ecosystem includes a community hosted online multiplayer infrastructure consisting of game servers that will interact directly with our parachain for user moderated online gaming.
 
 Our Milestone 1 open-source pallets will enable:
-- a browser based PvPvE first-person shooter (Player vs Player vs Environment (AI) Enemy
-)
+- a browser based PvPvE first-person shooter (Player vs Player vs Environment (AI) Enemy)
 - a leader board that aggregates in-game earned on-chain statistics by week, month, and year.
  - air dropped NFTs earned by completing in game tasks and leader board achievements
  - environment enemies spawned from on-chain NFT assets that funnel spoils back to its owner's wallet
@@ -27,14 +26,16 @@ Future milestones will include updates to:
 
 While there are other gaming projects in the ecosystem, ours differs in various ways. First, we will break the stigma gamers associate with NFTs through a fun JRPG. Non-playable character "blocks" will explain their purpose as well as the metaverse they inhabit in their on-chain existence. However, not all is as it seems in the troubled world of Blockchainia. Players will make their way through seasonally released updates to uncover the deep lore, rescue these NPC blocks, and discover the fun that digital ownership brings to the future of gaming. The items and experience earned in this JRPG will be stored on-chain to the users wallet and available in our arcade PvPvE. We have acquired the URL Blockchainia.gg as the landing page for both of these games. 
 
-Other similar projects in the ecosystem are Ajuna network, and Asylum, among others. We differ in that we have the behavioral and marketing background to rapidly onboard users, as well as a product that can create a niche for itself in currently over-saturated market. Mark Zuckerberg tried and failed to create a metaverse with endless resources because he fails to realize the human utility of the technology of his time. We have the right team and the right vision to bring the metaverse to fruition, through a fair and economical value proposition that helped NBA Jam (Midway Games) earn 1 billion dollars to Jurassic Park's (Amblin Entertainment) 395 million in 1993, in quarters (.25USD). We believe we can minimize the cost to consumers by operating our parachain at the lowest cost possible while allowing a DAO driven public server community to earn a reasonable fee for hosting the online multiplayer infrastructure of the games in our ecosystem. This fee will eventually approach a real market value which will add value to the various fungible tokens used throughout the ecosystem. 
+Other similar projects in the ecosystem are Ajuna and Bajun.  We plan to build off of Ajuna's Layer 1 solution, and expand on their layer 2 and 3 solutions with our own side chain. 
 
-We will create free-to-use Unity assets that compliment our tech stack to allow independent developers to duplicate our model and optionally distribute their games via our distribution architecture or use our reputation based, community moderated online-multiplayer infrastructure.
+ We differ in that we have the behavioral and marketing background to rapidly onboard users, as well as a product that can create a niche for itself in currently over-saturated market. Mark Zuckerberg tried and failed to create a metaverse with endless resources because he fails to realize the human utility of the technology of his time. We have the right team and the right vision to bring the metaverse to fruition, through a fair and economical value proposition that helped NBA Jam (Midway Games) earn 1 billion dollars to Jurassic Park's (Amblin Entertainment) 395 million in 1993, in quarters (.25USD). We believe we can minimize the cost to consumers by operating our sidechain at the lowest cost possible while allowing a DAO driven public server community to earn a reasonable fee for hosting the online multiplayer infrastructure of the games in our ecosystem. This fee will eventually approach a real market value which will add value to the various fungible tokens used throughout the ecosystem. 
+
+We will create free-to-use Unity assets that compliment our tech stack to allow independent developers to duplicate our model and optionally distribute their games via our distribution architecture or use our reputation based, community moderated online-multiplayer infrastructure. 
 
 ## Project Details
 
 ### Architecture Diagram
-![Blockchainia Architecture](https://github.com/eca20/Blockchainia-Pitch/blob/main/blockchainiadiagram.pdf "Blockchainia Architecture")
+![Blockchainia Architecture](https://github.com/eca20/Blockchainia-Pitch/blob/main/blockchainiadiagram.jpg?raw=true?raw=true "Blockchainia Architecture")
 
 #### Technologies Used
 
@@ -122,7 +123,7 @@ These repos include our R & D work. Blockchainia JRPG was our initial playground
 
  ### Milestone 1  — Basic MVP
 
- - **Estimated duration:** 13 weeks development 
+ - **Estimated duration:** 20 weeks development 
  - **FTE:**  .97 FTE
  - **Costs:** $25,000 USD
 
