@@ -17,7 +17,7 @@ Our Milestone 1 open-source pallets will enable:
  - air dropped NFTs earned by completing in game tasks and leader board achievements
  - environment enemies spawned from on-chain NFT assets that funnel spoils back to its owner's wallet
   - a player prompt to create a wallet upon exit or completion
-  - commnunity driven DAO that manages the online server infrastructure
+  - community driven DAO that manages the online server infrastructure
 
 Future milestones will include updates to:
 - an evolving and expanding list of features through our open-source substrate pallet library
@@ -34,7 +34,7 @@ We will create free-to-use Unity assets that compliment our tech stack to allow 
 ## Project Details
 
 ### Architecture Diagram
-![Blockchainia Architecture](https://github.com/eca20/Blockchainia-Pitch/blob/main/Blockchainia.drawio.png?raw=true "Blockchainia Architecture")
+![Blockchainia Architecture](https://github.com/eca20/Blockchainia-Pitch/blob/main/blockchainiadiagram.pdf "Blockchainia Architecture")
 
 #### Technologies Used
 
@@ -134,7 +134,7 @@ These repos include our R & D work. Blockchainia JRPG was our initial playground
 | **0d.** | Docker | We will provide Dockerfiles that can be used to run and test all the functionality delivered with this milestone. This will include a deployable "Full Node" that encases both a game server and substrate node. These will interact with our game client and substrate parachain respectively. A successful MVP will allow a game client to register events on the game server (Server-Authoritative model), which is then written to the parachain ledger. Upon completion of the initial game "level", an "accolade" NFT will be deposited via ink! smart contract to the wallet that completed the required in-game tasks. |
 | 1. | Substrate module: DeathToll Game Events | The DeathToll Game Events Substrate module will add functionality for starting/ending a "match"", start and end a "round", eliminate a player, score a point, complete a "task". Tasks examples include "move through a defined space", eliminate an AI enemy, retrieve an item, etc. This deliverable will include unit tests and instructions in the git repository. It is highly likely that we will break this into two pallets, one for core gaming functionality, and one specific to the needs of the DeathToll game-type. 
 | 2. | Unity Game/Server | Both DeathToll Modules of our custom chain will interact with with open-source scripts we create to control our Unity created game server.  Each of these processes will initially be deployable via docker container. The game server architecture will operate from a community driven DAO implemented with existing pallets available in the Substrate store. 
-| 3. | Unity Assets | Besides the NFT playable characters, all assets created by our team will be released as free to use by other developers who would like to use our ecosystem to create their own games. These will include wall and floor textures, doors, environment enemies, and other sprites used throughout our games. 
+| 3. | Unity Assets | Besides the NFT playable characters released in our games collections, all assets created by our team will be released free to use by other developers who would like to use our ecosystem to create their own games and mods. These will include wall and floor textures, doors, environment enemies, and other sprites used throughout our games. 
 
 ## Future Plans
 | Number | Deliverable | Specification |
@@ -142,7 +142,7 @@ These repos include our R & D work. Blockchainia JRPG was our initial playground
 | 1. | Oculus VR Port | We plan to port our PvPvE and JRPG to Oculus VR. This will be used to expand into a metaverse of gamers, lead by a community of streamers and industry leaders who moderate their servers and influence the direction of our development team through their position in our community DAO. 
 | 2. | Front End Expansion| Our initial browser will be embedded into the game client itself. We plan to expand this to an iOS and Android apps for viewing leader boards, displaying accomplishments, and trading collectibles. 
 | 3. | Community Expansion| Users who are invited to the DAO will be encouraged to run their own reputable server/node to grow their community and earn money from the pay-to-play architecture. Owners will create a hierarchy of moderators called "admins" that will ensure fair, fun, and competative gameplay throughout our ecosystem. Owners/Servers who do not fulfill their commitments to the greater community will have their influence slashed.
-| 4. | Automate integration testing | To keep our development cycle lean and free from waste, we want to create automated integration tests for all game server/blockchain interactions.
+| 4. | Automate integration testing | Automated integration tests for all game server/blockchain interactions.
 | 5. | Substrate module: DeathToll Game Events Expansion| We will add new features to the DeathToll Game Events Substrate module in seasonal updates. The features added will be driven in part by the community that plays the game, in the form of the DAO created during Milestone 
 
 ## Additional Information :heavy_plus_sign:
