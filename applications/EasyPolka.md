@@ -34,7 +34,7 @@
 
 - **Easy Protocol** is a simple protocol to run application on Anchor node. There is no UI for it, but documents and a demo to implement the functions. In short, it is about how to load `cApp` and confirm the authority of related anchors. Details will be here : [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/README.md](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/README.md).
 
-- Data structure of **Easy Protocol** has been finished, more details you can check [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.ts](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.ts). Three exposed methods will be supplied.
+- Data structure of **Easy Protocol** has been finished, more details you can check [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.ts](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.d.ts). Three exposed methods will be supplied.
 
   1. easyRun. The method to run `cApp`
 
