@@ -90,15 +90,15 @@ https://github.com/orochi-network/orochimaru
 
 ### Overview
 
-* **Total Estimated Duration:** 9 
-* **Full-time equivalent (FTE):**  420
-* **Total Costs:** Amount of Payment in USD for the whole project: USD63,000 ~ 34.77 ETH
+* **Total Estimated Duration:** 7
+* **Full-time equivalent (FTE):**  9
+* **Total Costs:** Amount of Payment in USD for the whole project: USD61,740 ~ 33.14 ETH
 ### Milestone 1
 
 Please add additional milestones in the same way: 
 * **Estimated Duration:** 2 months
-* **FTE:**  120
-* **Costs:** USD18,000 ~ 9.93 ETH
+* **FTE:**  3
+* **Costs:** USD17,640 ~ 9.47 ETH
 
 
 | Number | Deliverable | Specification | 
@@ -109,8 +109,8 @@ Please add additional milestones in the same way:
 
 Please add additional milestones in the same way: 
 * **Estimated Duration:** 3 months
-* **FTE:**  180
-* **Costs:** USD27,000 ~ 14.9 ETH
+* **FTE:**  3
+* **Costs:** USD26,460 ~ 14.2 ETH
 
 
 | Number | Deliverable | Specification | 
@@ -120,9 +120,8 @@ Please add additional milestones in the same way:
 
 Please add additional milestones in the same way: 
 * **Estimated Duration:** 2 months
-* **FTE:**  120
-* **Costs:** USD18,000 ~ 9.93 ETH
-
+* **FTE:**  3
+* **Costs:** USD17,640 ~ 9.47 ETH
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
