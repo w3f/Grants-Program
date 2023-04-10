@@ -1,6 +1,6 @@
 # High-availability validator setup
 
-* **Status:** Open
+* **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/High_availability_validator_setup.md)
 * **Proposer:** mmagician
 * **Projects you think this work could be useful for:** Polkadot & Kusama Validators
 

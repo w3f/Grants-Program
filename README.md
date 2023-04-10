@@ -28,7 +28,7 @@
   - [Substrate Builders Program](#substrate-builders-program)
   - [Treasury](#treasury)
   - [Hackathons](#hackathons)
-  - [Other Grant Programs](#other-grant-programs)
+  - [Other Grant or Bounty Programs](#other-grant-or-bounty-programs)
 
 ## :wave: Introduction
 
@@ -70,7 +70,7 @@ An overview of existing projects in the Web 3.0 Technology Stack along with broa
 
 Finally, you don't need to start your own project in order to be eligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project. See the [Maintenance Grants section](#hammer_and_wrench-maintenance-grants) for more info.
 
-If you have a **good concept of the technical challenges** that your idea entails and would like feedback before applying, you can send us an [email](mailto:grants@web3.foundation) and tell us about it.
+If you have a **good concept of the technical challenges** that your idea entails and would like feedback/input before submitting it, you can send us an [email](mailto:grants@web3.foundation) and tell us about it.
 
 ### Support
 
@@ -257,9 +257,13 @@ It is **not** a chance to pitch your project, especially since only a small subs
 
 ### Additional Information
 
-| <img src="static/img/web.png?s=50" width="50" /> | <img src="static/img/twitter.png?s=50" width="50" /> | <img src="static/img/medium.png?s=50" width="50" /> | <img src="static/img/like.png?s=50" width="50" /> | <img src="static/img/reddit.png?s=50" width="50" /> | <img src="static/img/youtube-play.png?s=50" width="50" /> |
+<div align="center">
+
+| <img src="/Grants-Program/img/Web.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Twitter.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Learn.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Wiki.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Reddit.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Youtube.svg?s=50" width="50"></img> |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
+
+</div>
 
 
 ## :rocket: Alternative Funding Sources
@@ -310,9 +314,9 @@ From time to time, Web3 Foundation and/or Parity organise hackathons to promote 
 
 The best way to find out about upcoming hackathons is by following Polkadot on the various social channels, such as Element or Twitter.
 
-### Other Grant Programs
+### Other Grant or Bounty Programs
 
-Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
+Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
 - [Acala Grants Program](https://acala.network/ecosystem-program)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
@@ -320,6 +324,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [ink!ubator](https://use.ink/ubator/)
 - [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)

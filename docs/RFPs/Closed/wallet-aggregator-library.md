@@ -1,6 +1,6 @@
 # Wallet Aggregator Library
 
-* **Status:** Open 
+* **Status:** [Implemented: SubConnect](https://github.com/Koniverse/SubConnect), [Implemented: talisman-connect](https://github.com/TalismanSociety/talisman-connect) 
 * **Proposer:** [Matteo Casonato](https://github.com/0xCaso)
 
 ## Project Description :page_facing_up: 

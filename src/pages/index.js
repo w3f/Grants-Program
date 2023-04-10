@@ -21,6 +21,14 @@ function HomepageHeader() {
             to="./docs/Process/how-to-apply">
             Apply
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="./docs/rfps"
+            style={{
+              marginLeft: "20px"
+            }}>
+            Browse RFPs
+          </Link>
         </div>
       </div>
     </header>
