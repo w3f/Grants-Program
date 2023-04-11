@@ -106,10 +106,13 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 - **Total Costs:** 30,000 USD
 
 
+
 ### Milestone 1 — Front End Development
-- **Estimated duration:** 4 weeks
+
+- **Estimated Duration:** 4 weeks
 - **FTE:**  5
 - **Costs:** 10,000 USD
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
@@ -135,7 +138,6 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 | 0e. | Article or Video | We will develop and publish an **article or video** that explains this project in detail for everyone to understand how it works. |
 | 1. | Backend Development | The back-end would be built using Django, a python framework. python would handle the wallet's business logic, such as generating and displaying private keys and handling transactions. Integrating Polkadot.js with Node.js, we can generate mnemonics and create wallet address for the blockchain and also encrypt it why passing all necessary details to the user via API created with Django |
 | 2. | APIs & Libraries |  Chainlink aggregator would be used to communicate with the Polkadot blockchain nodes and retrieve real time information such as transaction history and account balances. RESTful APIs would be implemented using Django, a python web application framework, and Polkadot.js and Finally, PassMeCash-API will be built for other developers to integrate into their project development. |
-
 
 
 ## Future Plans
