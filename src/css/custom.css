@@ -15,6 +15,41 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  font-family: SuisseIntl,sans-serif;
+}
+
+.hero__title {
+  font-size: 4rem;
+}
+
+
+.footer__link-item {
+  text-decoration: none;
+}
+
+.footer__link-item:hover {
+  color: #ebedf0;
+} 
+
+.navbar__items {
+  font-size: 18px;
+}
+
+.number--count {
+  font-size: 4rem;
+}
+
+.number--title {
+  font-size: 1.5rem;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: #fff;
+  --ifm-hero-text-color: #000;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #000;
 }
 
 .docusaurus-highlight-code-line {
@@ -39,4 +74,20 @@ a {
 /* All other links should not be underlined */
 .button, .menu__link, .navbar__brand, .navbar__item, .pagination-nav__link, .table-of-contents__link {
   text-decoration: none;
+}
+
+/* Divider for sidebar */
+.sidebar-divider {
+  border-top: 1px solid var(--ifm-color-gray-200);
+  display: block;
+  margin: 0.5rem 0 0.25rem 1rem;
+}
+
+/* Title for sidebar */
+.sidebar-title {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ifm-color-gray-600);
 }

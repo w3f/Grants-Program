@@ -1,7 +1,7 @@
 # Keysafe Network
 
 - **Team Name:** Keysafe
-- **Payment Address:** 0x09C08f46d523822cC9D18A077e2e3BDE5BC07a0b (Ethereum (USDT))
+- **Payment Address:** 0x09C08f46d523822cC9D18A077e2e3BDE5BC07a0b (Ethereum (USDC))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -132,7 +132,7 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 
 - **Total Estimated Duration:** 8 months
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** $27,000 (payable in Ethereum-USDT)
+- **Total Costs:** $27,000 (payable in Ethereum-USDC)
 
 ### Milestone 1 — Implement On-chain Modules
 

@@ -121,14 +121,24 @@ As mentioned, this application is a response from the [anti-collusion infrastruc
 
 ### Overview
 
+<<<<<<< HEAD
+- **Total Estimated Duration:** 12 months
+- **Full-Time Equivalent (FTE):**  0.15 FTE
+=======
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):**  0.3 FTE
+>>>>>>> origin/master
 - **Total Costs:** $9,000
 
 ### Milestone 1 — Implement Voter functions
 
+<<<<<<< HEAD
+- **Estimated duration:** 6 months
+- **FTE:**  0.1 FTE
+=======
 - **Estimated duration:** 2 months
 - **FTE:**  0.3 FTE
+>>>>>>> origin/master
 - **Costs:** 3,000 USD
 
 | Number | Deliverable | Specification |
@@ -147,8 +157,13 @@ Note: As the implementation is based on others work (research and specification)
 
 ### Milestone 2 — Coordinator's functions
 
+<<<<<<< HEAD
+- **Estimated Duration:** 6 months
+- **FTE:**  0.2 FTE
+=======
 - **Estimated Duration:** 4 months
 - **FTE:**  0.3 FTE
+>>>>>>> origin/master
 - **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |

@@ -162,9 +162,9 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 
 ### Milestone 2  — More databoards, fully-automatic chart generation
 
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 8 months
 * **FTE:**  2
-* **Costs:** 15,000 USD
+* **Costs:** 9,000 USD
 
  Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -175,8 +175,6 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 | 0e. | Article | We will publish an **article**/workshop that explains the concept and vision of Web3Go
 | 1. | UI Module:support more charts in semi-automatic chart generation | we will continue optimizing the automatic generation of charts, to make it support more kinds of charts like scatter charts, area charts, and tables.|  
 | 2. | UI Module:fully-automatic chart generation| We will enhance the user interaction of generating charts, provide the "drag and create" module for the user to generate charts. In this case, the user can generate charts with the same complexity as writing SQL can do. This functionality will provide a more easy way for the user to generate complicated charts who does not know program with SQL.|  
-| 3. |UI and backend Module: labling system | With more data we have accumulated, we will create a new UI to present the labeled address. we will give the address different labels basing on its historical activities on the blockchain, e.g. cross-chain transfer,  Karura  CDP participation, etc. The labeled addresses are a very good dataset that can be monitored to signal what is happening on the blockchain.
-| 4. |Support GraphQL in semi-automatic chart generation| As GraphQL is getting more popular, so in the UI of semi-automatic chart generation, we will provide the option of GraphQL as the query language.
 
 ## Future Plans
 

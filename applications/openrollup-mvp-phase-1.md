@@ -141,14 +141,14 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):** 1 FTE
+- **Total Estimated Duration:** 7.5 months
+- **Full-Time Equivalent (FTE):** 1.5 FTE
 - **Total Costs:** 30,000 USD.
 
 ### Milestone 1 — Implement Substrate Modules
 
-- **Estimated duration:** 4 month
-- **FTE:**  1
+- **Estimated duration:** 7.5 month
+- **FTE:**  1.5
 - **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |

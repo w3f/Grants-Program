@@ -254,17 +254,17 @@ For this proposal we focus on building a simple substrate based chain containing
 
 ### Milestone 3 Documentation & Demo-Dapp
 
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 1.5 month
 * **FTE:**  1
 * **Costs:** 5.000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Tutorial | Installation instruction with  "Hello World" example. We want to provide a similar repos like the ones used by our Ethereum solution: https://github.com/element36-io/cash36-ping and a "buy me a coffee" demo app similar to that one here: https://github.com/element36-io/cash36-examples |
-| 1. | Coffee Smart Contract | A "buy me a coffee" contract. It will accept a payment and cash out automatically to the benefit of a hardcoded recipient who will be receiving the funds in FIAT. |
-| 2. | Dapp | The Dapp which uses the "by me a coffee" Smart Contract. |
-| 3. | Docker-Compose: node & Dapp | We will add the Dapp to the docker-compose file of Milestone 2 to demonstrate the full functionality of our chain, the ocw, including a proxy for the FIAT Rest Interface developed in Milestone 1 and the "buy me a coffee" Dapp. |
+| 0b. | Tutorial | We will provide a tutorial for using the following app for two different scenarios: donating with stablecoin and donating via bank transfer that ends up in the chain. |
+| 1. | Buy me a coffee dApp | DApp where users can accept donations in stablecoin or via bank transfer, similar to **Buy Me a Coffee** service. This will consist of a frontend app in React which serves as an interface for interacting with the chain. Users will be able to link their on-chain `AccountId` to their bank account details (IBAN, balance, etc.), withdraw on-chain balance to their bank account and transfer funds in the bank account via on-chain extrinsic. |
+| 2. | Docker-Compose: node & Dapp | We will add the Dapp to the docker-compose file of Milestone 2 to demonstrate the full functionality of our chain, the ocw, including a proxy for the FIAT Rest Interface developed in Milestone 1 and the "buy me a coffee" Dapp. |
+
 ## Future Plans
 
 First step is to prove technical feasibility and also to learn more about the concepts of the Polkadot ecosystem. We already have some ideas in which direction we want to continue, but that is to be validated. In other words - maybe our thoughts will not make sense once we know more :) So far, our next milestones and development goals:

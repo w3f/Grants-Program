@@ -2,6 +2,7 @@
 
 * **Team Name:** [LimeChain](https://github.com/LimeChain)
 * **Payment Address:** `0x6eDf76FD16Bb290A544fDc14fBB4b403D1DEeD9f` (USDT)
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/563#issuecomment-1404941967)
 
 ## Project Overview :page_facing_up:
 
