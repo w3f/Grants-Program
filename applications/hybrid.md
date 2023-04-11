@@ -168,7 +168,7 @@ Development has not started on the project, however the codebase will largely fo
 
 ### Overview
 
-- **Total Estimated Duration:** 8 weeks
+- **Total Estimated Duration:** 12 weeks
 - **Full-Time Equivalent (FTE):**  1
 - **Total Costs:** 10,000 USD
 
@@ -181,7 +181,7 @@ Development has not started on the project, however the codebase will largely fo
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can index a Substrate node and query events. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can index a Polkadot node and query events. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Connect to Substrate chains | The indexer will be written in Rust and configurable to connect to Substrates chain using the subxt library. |
@@ -220,7 +220,7 @@ Development has not started on the project, however the codebase will largely fo
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the rudimentary explorer dapp. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can build a chain-specific Hybrid Indexer and use the rudimentary explorer dapp. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Video | We will publish a video that explains and demonstrates all aspects of the explorer. |
