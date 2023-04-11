@@ -101,14 +101,26 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 
 ### Overview
 
-- **Total Estimated Duration:** 6 weeks
+- **Total Estimated Duration:** 10 weeks
 - **Full-Time Equivalent (FTE):** 5
-- **Total Costs:** 20,000 USD
+- **Total Costs:** 30,000 USD
+
+
+### Milestone 1 — Front End Development
+- **Estimated duration:** 4 weeks
+- **FTE:**  5
+- **Costs:** 10,000 USD
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Frontend Development | The front-end would be built using React.js, a popular JavaScript library. This allows for the development of a responsive and user-friendly interface. This will involve the Landing Page & Dashboard, while Tailwind will be used to convert all the Figma files. |
 
 
 
-
-### Milestone 1 — Backend Development, APIs & Libraries
+### Milestone 2 — Backend Development, APIs & Libraries
 
 - **Estimated Duration:** 6 weeks
 - **FTE:**  5
@@ -122,9 +134,7 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article or Video | We will develop and publish an **article or video** that explains this project in detail for everyone to understand how it works. |
 | 1. | Backend Development | The back-end would be built using Django, a python framework. python would handle the wallet's business logic, such as generating and storing private keys and handling transactions. Integrating Polkadot.js with Node.js, we can generate mnemonics and create wallet address for the blockchain and also encrypt it why passing all necessary details to the user via API created with Django |
-| 2. | APIs & Libraries |  Chainlink aggregator would be used to communicate with the Polkadot blockchain nodes and retrieve real time information such as transaction history and account balances. RESTful APIs would be implemented using Django, a python web application framework. 1inch aggregator plugin for swap, Coinbase and Polkadot.js for Blockchain and token data. |
-
-
+| 2. | APIs & Libraries |  Chainlink aggregator would be used to communicate with the Polkadot blockchain nodes and retrieve real time information such as transaction history and account balances. RESTful APIs would be implemented using Django, a python web application framework, and Polkadot.js  |
 
 
 
