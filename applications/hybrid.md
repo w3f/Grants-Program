@@ -184,7 +184,7 @@ Development has not started on the project, however the codebase will largely fo
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can index a Polkadot node and query events. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Connect to Substrate chains | The indexer will be written in Rust and configurable to connect to Substrates chain using the subxt library. |
+| 1. | Connect to Substrate chains | The indexer will be written in Rust and configurable to connect to the Polkadot chain using the subxt library. |
 | 2. | Block syncing | As new blocks are produced, the indexer reads all events. Additionally, it will read events from archived blocks. Indexing will be quite slow because communication with the full node will not be asynchronous. Only the Polkadot chain will be supported. |
 | 3. | Index writing | The following identifying parameters in events will be indexed in the database using the sled library: AccountId, AccountIndex, AuctionIndex, BountyIndex, CandidateHash, MessageId, ParaId, PoolId, ProposalHash, ProposalIndex, RefIndex, RegistrarIndex, TipHash. Not all events will be indexed. |
 | 4. | Status querying | It will be possible to query the current status of the indexer via WSS. This will include information about which chain is being indexed, indexing progress and last know block. Queries will be handled via  tokio_tungstenite. |
