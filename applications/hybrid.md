@@ -47,7 +47,7 @@ The Hybrid indexer will be written in Rust. It can be configured to connect to a
 
 It will read events in all blocks using [subxt](https://github.com/paritytech/subxt) and index these events in a Key-value database using the [sled](http://sled.rs/) library. This is considerably more efficient than storing the index in an SQL database.
 
-subxt currently has an [issue](https://github.com/paritytech/subxt/issues/793#issuecomment-1386902010) where it is not possible to query blocks prior to V14 metadata (block #7,229,126 on Polkadot). Resolving this issue us not within the scope of the grant. Once this grant is completed a further grant application will be made that includes resolving this issue.
+subxt currently has an [issue](https://github.com/paritytech/subxt/issues/793#issuecomment-1386902010) where it is not possible to query blocks prior to V14 metadata (block #7,229,126 on Polkadot). Resolving this issue is not within the scope of the grant. Once this grant is completed a further grant application will be made that includes resolving this issue.
 
 When decoding events, subxt needs to have the correct metadata. The metadata changes whenever a chain performs a runtime upgrade. Hybrid Indexer handles this in a very elegant way. When indexing begins it downloads the metadata for the starting block. When it encounters a decoding error it downloads the metadata for the current block and retries decoding. This means that the indexer does not have to be built with the metadata and block number of every runtime upgrade.
 
