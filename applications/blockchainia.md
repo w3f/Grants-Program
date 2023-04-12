@@ -123,8 +123,8 @@ We have begun development on a server authoritative online multiplayer game engi
 
  ### Milestone 1  — Basic MVP
 
- - **Estimated duration:** 20 weeks development 
- - **FTE:**  .97 FTE
+ - **Estimated duration:** 15 weeks development 
+ - **FTE:**  1 FTE
  - **Costs:** $25,000 USD
 
 | Number | Deliverable | Specification |
