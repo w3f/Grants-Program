@@ -43,7 +43,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | Team                                                               | Project                                                                                                | Link                                                                 | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------------------------------- | :--------- | :------------: | :--------: |
 | [Interstellar](https://www.interstellar.gg/)          | [Interstellar - Wallet Phase 2](./Interstellar-network2.md)                              | [GitHub](https://github.com/Interstellar-Network)                      | ☐          |       ☐         |     ☐      |
-| [Valletech AB](https://valletech.eu/)                 | [Polkawatch](./DINFRA.md)                                                           | [GitHub](https://gitlab.com/polkawatch)                                | ☐          |       ☐         |     ☐      |
+| [Valletech AB](https://valletech.eu/)                 | [DINFRA](./DINFRA.md)                                                           | [GitHub](https://gitlab.com/polkawatch)                                | ☐          |       ☐         |     ☐      |
 
 
 [🔝](#menu)
