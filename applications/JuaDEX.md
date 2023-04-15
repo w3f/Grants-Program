@@ -62,6 +62,22 @@ An escrow-based DEX depends solely on escrow smart contracts to facilitate trade
 
 Unlike other types of DEXs that rely on orderbooks, liquidity pools, or automated market-making algorithms, our escrow-based DEX allows users to trade cryptocurrencies directly with each other without the need for a centralized intermediary or additional trading infrastructure. Escrow-based DEXs are generally considered to be more secure, transparent, and more resistant to censorship than centralized exchanges or other types of DEXs.
 
+//
+
+Building our apllication on astar will help us utilize different capabilities in the blockchain space, the use of XVM to deploy  smart contracts
+where will help us enable the accessibility of different native assets from other blockchains,
+the use of precompiles to achieve interoperability between different assets.
+
+Utilisation of XCM to improve user experience in a way that user can access different type of assets in a click of a button
+rather than performing a tedious task in the name of migrating of tokens to other applications for bridging and swapping, 
+this functionality will be enabled in jua where chain extensions will take a major role in the implementation of the same.
+
+Overall, the minimal DEX pallets designed for our application will provide the necessary functionality,
+to create a functional DEX on Astar blockchain. 
+The combination of these pallets will allow users to trade different types of tokens, provide liquidity to pools,
+and distribute fees in a fair and transparent manner.
+
+
 
 The larger vision for Jua can be seen in our [white paper](https://jua.gitbook.io/welcome-juarian/).
 
@@ -92,6 +108,7 @@ Later in 2021, more cross-chain capabilities were introduced with the launch of 
 Elkanah Kariuki will be the major contributors for this phase of Jua DEX
 
 - Elkanah Kariuki: Jua DEX Founder
+- Julius Nyambu
 
 Additional team members will be announced shortly and contributing to this and other components of Jua DEX
 
@@ -118,7 +135,7 @@ Relevant Contributions are
 
 
 ### Team LinkedIn Profiles
-
+https://www.linkedin.com/in/julyp-julius-ba831a221/
 
 
 ## Development Roadmap :nut_and_bolt: 
@@ -131,6 +148,17 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 * **Total Costs:** ???
 
 ### Milestone 1: Framework design and minimal DEX Pallets
+
+| Number | Deliverable | Specification |
+| --- | --- | --- |
+| 0a. | License | Apache |
+| 0b. | Documentation | We will provide documentation for the code and a clear explanation of how our dapp works. This will include a Jua Dex user guide, workflow, and an overview of Jua dex. |
+| 0c. | Testing | We will provide a test for deposit and withdraw functionality for different crypto assets. The UI that users will interact with will also be displayed. |
+| 0d. | Development | This milestone includes pallets binding supporting features such as XCM integration for native asset support. We have also implemented an improved UI to hide complexity and provide a better user experience. |
+| 1. | Testing Guide | We will provide a testing guide as well as an already-made test for the same. |
+| 2. | Smart Contract | Our escrow smart contracts repository will showcase the functionality of our dex. |
+
+
 
 
 ### Milestone 2: Full version of SRS model
