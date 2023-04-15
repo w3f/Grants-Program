@@ -108,7 +108,6 @@ Later in 2021, more cross-chain capabilities were introduced with the launch of 
 Elkanah Kariuki will be the major contributors for this phase of Jua DEX
 
 - Elkanah Kariuki: Jua DEX Founder
-- Julius Nyambu
 
 Additional team members will be announced shortly and contributing to this and other components of Jua DEX
 
@@ -135,7 +134,7 @@ Relevant Contributions are
 
 
 ### Team LinkedIn Profiles
-https://www.linkedin.com/in/julyp-julius-ba831a221/
+
 
 
 ## Development Roadmap :nut_and_bolt: 
