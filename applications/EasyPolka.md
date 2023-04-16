@@ -4,7 +4,6 @@
 - **Payment Address:** 13u5kLGrt4n1Smc78ZXtYVedgp1U1LyGAAHtPFtVcv6Z1BtR (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-
 ## Project Overview :page_facing_up:
 
 ### Overview
@@ -36,7 +35,7 @@
 
 - Data structure of **Easy Protocol** has been finished, more details you can check [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.ts](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.d.ts). Three exposed methods will be supplied.
 
-  1. easyRun. The method to run `cApp`
+  1. easyRun. Main method to run `cApp`.
 
       ```Typescript
         //run cApp from anchor location
@@ -101,7 +100,7 @@
         }
       ```
 
-  3. **How to call**. Details about comminicating between cApps.
+  3. **How to call**. Details about communication between data and cApp.
 
       ```Typescript
         //the protocol details of data anchor to call cApp
@@ -121,6 +120,10 @@
 - Plinth is a web application, follow the **Easy Protocol** to launch **cApp**. The layouts design as follow. You can treat it as a container for **cApp**.
 
 <img src="http://metanchor.net/easy/plinth_layout.png" width="30%">
+
+- Plinth will be a personal portal by docking the `Anchor`, customer can dock their favirate data and cApp on the sidebar. If current Dapps can be published to Anchor Network, user can access the whole web3.0 via such single entry.
+
+<img src="http://metanchor.net/easy/plinth_pc_version.png" width="50%">
 
 - Launch **cApp** from `Plinth` will be easy, the `link={anchor_location}` way is recommend.
 
@@ -277,9 +280,9 @@
 - **Full-Time Equivalent (FTE):**  3.5
 - **Total Costs:** 28,000 USDT
 
-#### Milestone 1 — Easy Protocol
+#### Milestone 1 — Easy Protocol v1.0 and SDK
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 1.5 month
 - **FTE:**  1.5
 - **Costs:** 12,000 USDT
 
@@ -287,10 +290,12 @@
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | Easy Protocol v1.0 documents in details. This will take a bit long time.|
-| 0c. | Testing Guide | Protocol full test via node.js.  |
+| 0c. | Testing Guide | Protocol SDK full test via node.js.  |
 | 0d. | Docker | Will provide a Dockerfile(s) to run the `Easy Protocol` test. |
+| 1. | White Paper | Easy Protocol v1.0 White Paper. Details about `Anchor Linker`,`Data Structure`,`Launching`,`Hide`,`Authority`.|
+| 2. | SDK | Easy Protocol v1.0 Javascript SDK, includes `application launcher`, `anchor link decoder`, `foramt creator` components. It is the implement of Easy Protocol, and extend the `Hide` and `Authority` by auto set target Anchor.|
 
-#### Milestone 2 — Plinth
+#### Milestone 2 — Plinth, Portal of Anchor
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
@@ -302,8 +307,10 @@
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can deploy this launcher to load cApp. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker |  Will provide a Dockerfile(s) that can run this `Plinth` launcher with anchor node.|
+| 1. | Dock Portal | As personal portal, you can dock the `Anchor` to access web 3.0 world. `Anchor` list will be storaged locally. |
+| 2. | Setting | Account management, server management,publish management and basic setting will work properly. |
 
-#### Milestone 3 — cHomepage
+#### Milestone 3 — cHomepage, Sample of cApp
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
@@ -315,6 +322,9 @@
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can publish a homepage via cHomepage and how to update the content via anchor updateing.  |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
 | 0d. | Docker | Will provide a Dockerfile(s) that can run `Plinth` to call `cHomepage`. |
+| 1. | Viewer | Load `viewer` from mock customer data anchor, and `viewer` will get datat from template anchor |
+| 2. | Editor | Simple editor for customer, can update the data anchor. |
+| 3. | Authority Editor | Simple editor to update the authority of anchor. |
 
 ## Future Plans
 
