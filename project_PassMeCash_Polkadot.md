@@ -1,7 +1,7 @@
 # PassMeCash
 
 - **Team Name:** CodeUp Technologies Limited
-- **Payment Address:** 0x65d68c8d14cc4acf02ec4e8d572399620a684b57 (ERC 20)
+- **Payment Address:** 0xd33b9a4761fafda11f899d0ea4f0b59912f26ce4 (ERC 20)
 - **[Level]:** 2
 
 
