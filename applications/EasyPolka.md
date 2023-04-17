@@ -233,7 +233,7 @@
 
 ### Ecosystem Fit
 
-- A trying of new way to develop application on blockchian.
+- A trying of new way to develop application on blockchian. Current Dapps can be repulished on Anchor Network easily, then from customer view, one single portal of browsing the Web 3.0 world is coming.
 
 - More developers who do not understand substrate well can join and build interesting cApps. Developers who have not yet used substrate/Polkadot.
 
@@ -271,6 +271,8 @@
 ## Development Status :open_book:
 
 - Demo cApp [freeSaying](https://android.im/vManager/) is published now. The test network is available, you can access [wss:dev.metanchor.net](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdev.metanchor.net#/explorer).
+
+- Easy Protocol SDK is on process now, it is the basic and important part of Anchor Network. This is also part of Milestone 1. The github link here, [https://github.com/ff13dfly/EasyPolka/tree/main/protocol](https://github.com/ff13dfly/EasyPolka/tree/main/protocol).
 
 ## Development Roadmap :nut_and_bolt:
 
