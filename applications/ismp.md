@@ -34,19 +34,6 @@ This serves as the foundational element for state-proof based messaging between 
    
 This module can also serve as an alternative transport layer for XCM programs.
 
-#### **Cumulus**
-In addition to `pallet-ismp` will be a new host function `RelayChainStorageProvider` added to `parachain-system` and `parachain-pvf`, leveraging the Relay chain as a consensus oracle for parachain headers. These parachain headers will then be used for verifying incoming requests and responses proofs.
-
-```rust
-use sp_storage::{StorageKey, StorageValue};
-
-#[runtime_interface]
-trait RelayChainStorageProvider {
-  /// Read the relay chain storage at a specified key
-  fn read_storage(key: StorageKey) -> StorageValue;
-}
-```
-
 ### Ecosystem Fit
 
 Currently messages are sent over the Relay Chain through opening HRMP channels but through ISMP we can increase the bandwidth of messaging between parachains without burdening the relay chain with these messages. This allows the relay chain to focus on its main task: enforcing the validity of parachain state transitions.
@@ -122,8 +109,8 @@ And some Updates to cumulus, required for parachains to read the relay chain sta
 
 ### Overview
 - **Total Estimated Duration:** 6 Months
-- **Full-Time Equivalent (FTE):** 7
-- **Total Costs:** 105,000 USD
+- **Full-Time Equivalent (FTE):** 6
+- **Total Costs:** 75,000 USD
 
 ### Milestone 1 — `ismp-rs`
 
@@ -155,29 +142,7 @@ In this milestone we develop the core primitives needed for pallet-ismp
 | | `ResponseMessage` | Functionality for handling response messages from other state machines. |
 | | `TimeoutMessage` | Functionality for handling request timeout messages from other state machines. |
 
-
-### Milestone 2 — `RelayChainStorageProvider`
-
-- **Estimated duration:** 1.5 months
-- **FTE:**  2
-- **Costs:** 30,000 USD
-
-In this milestone we develop the cumulus/parachain primitives needed for pallet-ismp
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide **inline documentation** of the code which will also state the objective of this host function. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | Dockerfiles for testing parachain functionality are present in the cumulus repository. |
-| 0e. | Article | We will publish an article that explains what was achieved as part of the grant. |
-| **1.** | Cumulus | Functionality to enable pallets read the relay chain state directly inside of the parachain runtime then subsequently when re-executing the pov on polkadot/kusama. |
-| 1a.| `parachain-system` | Including `RelayChainStorageProvider`. |
-| 1b. | `pvf` validation | Including `RelayChainStorageProvider`. |
-
-
-### Milestone 3 — `pallet-ismp`
+### Milestone 2 — `pallet-ismp`
 
 - **Estimated duration:** 3 months
 - **FTE:**  3
