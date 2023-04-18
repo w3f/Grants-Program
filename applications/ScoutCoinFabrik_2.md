@@ -72,7 +72,9 @@ We have been working on different aspects of the tool:
 
 We briefly validated the idea of the development described in this application with David Hawig and Bhargav Bhatt from Web3 Foundation, who encourage us to apply for this grant.
 
-We have finished the first milestone of this project ([Milestone 1](https://github.com/w3f/Grants-Program/blob/master/applications/ScoutCoinFabrik.md#milestone-1-proof-of-concept)), accomplishing all the deliverables listed in the milestone table.
+We have finished the first milestone of this project ([Milestone 1 of ScoutCoinFabrik PoC](https://github.com/w3f/Grants-Program/blob/master/applications/ScoutCoinFabrik.md#milestone-1-proof-of-concept)), accomplishing all the deliverables listed in the milestone table.
+
+Please note, however, that this milestone is the second grant associated with the same project: [ScoutCoinFabrik](https://github.com/CoinFabrik/web3-grant). The first grant focused on the tool’s PoC, and in this second grant we aim to develop a prototype.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -82,7 +84,7 @@ We have finished the first milestone of this project ([Milestone 1](https://gith
 - **Full-Time Equivalent (FTE):**  5 FTE
 - **Total Costs:** 30,000 USD
 
-### Milestone 2: Prototype
+### Milestone 1: Prototype
 
 - **Estimated duration:** 5 weeks
 - **FTE:**  5
@@ -90,22 +92,22 @@ We have finished the first milestone of this project ([Milestone 1](https://gith
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | MIT
-| 0b. | Documentation | Documentation hosted on a separate webpage.
-| 0c. | Testing | Integration testing. Specific tests for every linting detector based on code examples and snippets of smart contracts.
-| 0d. | Docker | Does not apply at this stage.
-| 0e. | Article | We will upload a report summary to our blog.
- **1.a** | Research and Development | Vulnerability examples. In addition to the [examples developed in Milestone 1](https://github.com/w3f/Grants-Program/blob/master/applications/ScoutCoinFabrik.md#milestone-1-proof-of-concept), we will develop more code examples and snippets of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!.
- **1.b** | Research and Development | Further example versions of [vulnerabilities developed in Milestone 1](https://github.com/CoinFabrik/web3-grant/tree/main/vulnerabilities). This step is geared to provide a wider set of examples, therefore improving our ability to measure the precision of our prototype and any other ink! vulnerability detection tool.
- **2.a** | Development | Building a prototype that improves over the [development of Milestone 1](https://github.com/w3f/Grants-Program/blob/master/applications/ScoutCoinFabrik.md#milestone-1-proof-of-concept), detecting more classes of vulnerabilities and improving in precision on existing detectors.
- **2.b** | Development | Command line interface for the prototype.
- **2.c** | Development | VSCode integration for the prototype.
- **3** | Evaluation | Prototype validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision. Evaluation report and detector improvement.
+| 0a. | License | MIT |
+| 0b. | Documentation | Documentation hosted on a separate webpage. |
+| 0c. | Testing | Integration testing. Specific tests for every linting detector based on code examples and snippets of smart contracts. |
+| 0d. | Docker | Does not apply at this stage. |
+| 0e. | Article | We will upload a report summary to our blog. |
+ **1.a** | Research and Development | Vulnerability examples. In addition to the [examples developed in Milestone 1 of ScoutCoinFabrik PoC](https://github.com/w3f/Grants-Program/blob/master/applications/ScoutCoinFabrik.md#milestone-1-proof-of-concept), we will develop more code examples and snippets of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!. |
+ **1.b** | Research and Development | Further example versions of [vulnerabilities developed in Milestone 1 of ScoutCoinFabrik PoC](https://github.com/CoinFabrik/web3-grant/tree/main/vulnerabilities). This step is geared to provide a wider set of examples, therefore improving our ability to measure the precision of our prototype and any other ink! vulnerability detection tool. |
+ **2.a** | Development | Building a prototype that improves over the [development of Milestone 1 of ScoutCoinFabrik PoC](https://github.com/w3f/Grants-Program/blob/master/applications/ScoutCoinFabrik.md#milestone-1-proof-of-concept), detecting more classes of vulnerabilities and improving in precision on existing detectors. We are to build a prototype that can analyze Rust code to detect vulnerabilities in ink! smart contracts and possibly in pallets and other pieces of code. This builds over [this proof-of-concept tool](https://github.com/CoinFabrik/web3-grant) we've built and [delivered as part of a grant for the web3 foundation](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/ScoutCoinFabrik-1.md) by: <br> a) Moving from a proof-of-concept (PoC) tool to a robust tool that integrates with a popular IDE (VSCode), includes a CLI, etc, <br> b) We will improve on the precision of the detectors we included in the PoC reducing the rate of false positives, and  <br> c) We will add more detectors in order to have a reasonable coverage of the relevant security vulnerabilities that happen in smart contracts. |
+ **2.b** | Development | Command line interface for the prototype. For this prototype, we want to develop a simple command line interface like the one used in other static analyzers from other blockchains (eg: [Slither](https://github.com/crytic/slither), [Rustle](https://github.com/blocksecteam/rustle)). <br> In particular, we will develop the possibility to run the prototype on smart contract files or directories. <br> The base command will be: `cargo scout file_name.rs` <br> We will also include options for running subsets of detectors and triggering errors for CI/CD workflows. |
+ **2.c** | Development | VSCode integration for the prototype. Our VSCode development will list security issues, highlight issues with squiggles and hover-over descriptions. We will seek compatibility of this development with other relevant ink! extensions such as [Ink! Analyzer](https://w3f.github.io/Grants-Program/applications/ink-analyzer#future-plans). |
+ **3** | Evaluation | Prototype validation against a selection of projects deployed on testnet or mainnet in order to evaluate detector precision. Evaluation report and detector improvement. |
 
 
 ## Future Plans
 
-(Our original plan was to apply for a 3 milestones grant, to reach a public release of the tool. But we were advised to apply for a shorter objective) After completing the first milestone (Milestone #1), we are now applying for this second milestone to reach a tool prototype (Milestone #2). We envison a third milestone together with a public release (Milestone #3). Our mission is to continue to work on improving automated and assisted tools for finding security vulnerabilities and writing more secure code. Our objective is to help the Polkadot / Kusama community produce better and more secure code with these tools.
+(Our original plan was to apply for a 3 milestones grant, to reach a public release of the tool. But we were advised to apply for a shorter objective) After completing the PoC in our first milestone (Milestone #1), we are now applying for this second milestone to reach a tool prototype (Milestone #2). We envison a third milestone together with a public release (Milestone #3). Our mission is to continue to work on improving automated and assisted tools for finding security vulnerabilities and writing more secure code. Our objective is to help the Polkadot / Kusama community produce better and more secure code with these tools.
 
 ## Referral Program (optional) :moneybag: 
 
