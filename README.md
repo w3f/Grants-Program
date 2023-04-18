@@ -319,6 +319,7 @@ The best way to find out about upcoming hackathons is by following Polkadot on t
 Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
 - [Acala Grants Program](https://acala.network/ecosystem-program)
+- [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program) 
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
