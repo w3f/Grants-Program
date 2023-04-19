@@ -240,13 +240,13 @@ Currently, the project is under technical design phase
 - **Costs:** 15,000 USD
 
 
-|  Number | Deliverable                 | Specification                                                                                                                                                               |
-|--------:|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                     | MIT                                                                                                                                                                         |
-| **0b.** | Documentation               | Markdown documents describing user flow and details on how to run RewardsPool contract and call it from the cli                                                             |
-| **0c.** | Testing and Testing Guide   | Unit tests for internal functions and actual implemented business logic                                                                                                     |
-| **0d.** | Docker                      | Docker and docker-compose environment for compile, build and run contract locally                                                                                           |
-|  **1.** | Rewards Pool implementation | Rewards pool contract implemented: Create project, define types of work inside the bounty, send funds to the rewards pool, create governance space functions implementation |
+|  Number | Deliverable                 | Specification                                                                                                                                                                                                               |
+|--------:|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | MIT                                                                                                                                                                                                                         |
+| **0b.** | Documentation               | Markdown documents describing user flow and details on how to run RewardsPool contract and call it from the cli                                                                                                             |
+| **0c.** | Testing and Testing Guide   | Unit tests for internal functions and actual implemented business logic                                                                                                                                                     |
+| **0d.** | Docker                      | Docker and docker-compose environment for compile, build and run contract locally                                                                                                                                           |
+|  **1.** | Rewards Pool implementation | Rewards pool contract implemented: Create project, define types of work inside the bounty, send funds to the rewards pool, create governance space functions implementation. Implementation using !ink programming language |
 
 ### Milestone 3 — Implementation of Governance smart contract
 
@@ -254,15 +254,15 @@ Currently, the project is under technical design phase
 - **FTE:**  1
 - **Costs:** 15,000 USD
 
-|  Number | Deliverable                 | Specification                                                                                                  |
-|--------:|-----------------------------|----------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                     | MIT                                                                                                            |
-| **0b.** | Documentation               | Markdown documents describing user flow and details on how to run Governance contract and call it from the cli |
-| **0c.** | Testing and Testing Guide   | Unit tests for internal functions and actual implemented business logic                                        |
-| **0d.** | Docker                      | Docker and docker-compose environment for compile, build and run contract locally                              |
-|  **1.** | Rewards Pool implementation | Governance contract implemented: create proposal, approve proposal, call pool to reward propose author         |
+|  Number | Deliverable                 | Specification                                                                                                                                          |
+|--------:|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | MIT                                                                                                                                                    |
+| **0b.** | Documentation               | Markdown documents describing user flow and details on how to run Governance contract and call it from the cli                                         |
+| **0c.** | Testing and Testing Guide   | Unit tests for internal functions and actual implemented business logic                                                                                |
+| **0d.** | Docker                      | Docker and docker-compose environment for compile, build and run contract locally                                                                      |
+|  **1.** | Rewards Pool implementation | Governance contract implemented: create proposal, approve proposal, call pool to reward propose author. Implementation using !ink programming language |
 
-### Milestone 3 — Stabilisation and production readiness
+### Milestone 3 — Guides, User Manuals, e2e tests
 
 - **Estimated Duration:** 2 weeks
 - **FTE:**  1.5
