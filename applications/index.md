@@ -45,6 +45,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Interstellar](https://www.interstellar.gg/)          | [Interstellar - Wallet Phase 2](./Interstellar-network2.md)                              | [GitHub](https://github.com/Interstellar-Network)                      | ☐          |       ☐         |     ☐      |
 | [Valletech AB](https://valletech.eu/)                 | [DINFRA](./DINFRA.md)                                                           | [GitHub](https://gitlab.com/polkawatch)                                | ☐          |       ☐         |     ☐      |
 | [DAuth](https://github.com/DAuth-Network)                 | [DAuth](./dauth_network.md)                                                           | [GitHub](https://github.com/DAuth-Network)                                | ☐          |       ☐         |     ☐      |
+| [Galaxy.Do](https://galaxy.do)                 | [Galaxy: Three-dimensional Web for Polkadot Users](./galaxy.md)                                                           | [GitHub](https://github.com/7flash)                                | ☐          |       ☐         |     ☐      |
 
 
 [🔝](#menu)
