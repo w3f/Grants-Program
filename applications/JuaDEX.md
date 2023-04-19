@@ -135,7 +135,7 @@ Relevant Contributions are
 
 ### Team LinkedIn Profiles
 
-
+**Asante Ntiro:** 
 
 ## Development Roadmap :nut_and_bolt: 
 
@@ -146,8 +146,8 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 * **Full-time equivalent (FTE):**  ???
 * **Total Costs:** ???
 
-### Milestone 1: Framework design and minimal DEX Pallets
-
+### Milestone 1: Smart Contract Development
+The first milestone should be the development and deployment of the smart contracts required for the DEX. This includes the escrow smart contracts and any other smart contracts necessary for the exchange to function.
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | Apache |
@@ -155,17 +155,23 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 | 0c. | Testing | We will provide a test for deposit and withdraw functionality for different crypto assets. The UI that users will interact with will also be displayed. |
 | 0d. | Development | This milestone includes pallets binding supporting features such as XCM integration for native asset support. We have also implemented an improved UI to hide complexity and provide a better user experience. |
 | 1. | Testing Guide | We will provide a testing guide as well as an already-made test for the same. |
-| 2. | Smart Contract | Our escrow smart contracts repository will showcase the functionality of our dex. |
+| 2. | Smart Contract Implementation | This involves the actual implementation of the smart contracts. The escrow smart contracts will be the main focus here. It may also involve the implementation of other contracts that are necessary for the DEX to function, such as governance contracts and token contracts. |
+| 3. | Testing and Debugging | After implementation, the smart contracts will need to be thoroughly tested to ensure they function as intended. This includes unit testing, integration testing, and functional testing. Any bugs or issues discovered during testing will need to be resolved. |
+| 4. | Security Audit | Once the smart contracts have been tested and debugged, a security audit should be conducted to ensure that they are secure and free from vulnerabilities. |
+| 5. | Deployment | The final step is to deploy the smart contracts to the Astar parachain. This will involve configuring the smart contracts and deploying them to the blockchain network. |
+| 6. | MVP Launch | The next milestone should be the launch of the Minimum Viable Product (MVP) for the DEX on the Astar parachain. This will enable users to access the exchange and purchase cryptocurrencies with their preferred payment method. The MVP should have basic functionality and a user-friendly interface. |
 
+### Milestone 2: Compliance Framework Integration
+| Number | Deliverable | Specification |
+| --- | --- | --- |
+| 1. | Research and Analysis | This involves researching the various compliance frameworks that can be integrated into the DEX, analyzing their features and benefits, and selecting the most suitable one for the project. This could involve looking into various regulations that impact the crypto industry in Africa. |
+| 2. | Compliance Framework Integration Design | The next step is to design how the selected compliance framework will be integrated into the DEX. This involves identifying the components of the framework, their interactions with the DEX, and the necessary data flows. |
 
+### Milestone 3: Limit Orders and Smart Wallet Functionality
+The DEX should be expanded to include limit orders and smart wallet functionality. This will help streamline the exchange process and provide cost-effective alternatives to centralized exchanges and international remittances.
 
-
-### Milestone 2: Full version of SRS model
-
-
-**Here is an overview of the Jua Reward design**
-
-### Milestone 3: Jua DApp on Test Network
+### Milestone 3: Full Launch:
+The final milestone should be the full launch of the DEX, with all features and functionality in place. This will mark the completion of the project and enable users to fully leverage the Jua Dex ecosystem.
 
 
 ## Future plans
