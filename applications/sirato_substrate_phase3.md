@@ -90,7 +90,7 @@ While a number of open-source alternatives have emerged, none of them have suppo
 -   **Full-Time Equivalent (FTE):** 2 FTE
 -   **Total Costs:** 25,000 EUR
 
-### Delivery
+### Milestone 1
 
 | Nº  | Deliverable | Specification
 | :-- | :--         | :--
