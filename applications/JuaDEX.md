@@ -1,8 +1,8 @@
 # JUA DEX
 
 * **Team Name:** Jua
-* **Payment Address:** ???
-* **Status:** 
+* **Payment Address:** Ethereum USDC : 0x8Be27a27fE8B40EFB901c6991acc4D40B63C3087
+* **Status:** Level 1
 
 ## Project Overview :page_facing_up: 
 
@@ -105,23 +105,48 @@ Later in 2021, more cross-chain capabilities were introduced with the launch of 
 ## Team :Jua Dex:
 
 ### Team members
-Elkanah Kariuki will be the major contributors for this phase of Jua DEX
-
-- Elkanah Kariuki: Jua DEX Founder
-
-Additional team members will be announced shortly and contributing to this and other components of Jua DEX
+Kariuki Elkanah: Jua co founder Team lead
+Renny Langat   : Jua co founder
+Brian Gichuhi  : Jua co founder
+Antony Mwathi  : Jua co founder
+Asante Ntiro   : Jua engineer good in rust and solidity
+Julius P       : Jua engineer good in rust and solidity
 
 
 ### Contact
-* **Contact Name:** Elkanah Kariuki 
+* **Contact Name:**  Kariuki Elkanah
 * **Contact Email:** kariuki.369.elkanah@gmail.com
-* **Website:** [https://jua.co.ke/](https://jua.co.ke/)
 
-### Legal Structure 
-* **Registered Address:** N/A
-* **Registered Legal Entity:** N/A 
+
+* **Contact Name:** Renny langat
+* **Contact Email:** rennylngt@gmail.com
+
+
+* **Contact Name:** Brian  Gichuhi
+* **Contact Email:** brianchegegichuhi@gmail.com
+
+
+* **Contact Name:** Antony Mwathi 
+* **Contact Email:** mwathiantonyit@gmail.com
+
+
+* **Contact Name:** Asante Ntiro 
+* **Contact Email:** asante.ntiro@gmail.com
+
+
+* **Contact Name:** Julius P
+* **Contact Email:** julypjulius@gmail.com
+
+### Legal Structure
+* **Registered Address:**
+JUA LABS LIMITED,
+759-00100 Nairobi.
+* **Registered Legal Entity:**
+JUA LABS LIMITED,
+No. PVT-LRUYB23D
 
 ### Team's experience
+
 
 The team all have strong experience building Decentralized Financial Protocols.
 
@@ -129,31 +154,44 @@ Relevant Contributions are
 
 **Elkanah Kariuki:** Elkanah Kariuki has been passionate about software and technology since high school. 
 
+### Team's experience
+
+
+Our team is made up of African Web3 developers from across East Africa(Kenya and Tanzania) and Asia(Japan). We all believe in decentralization and we are working to leverage this tech to improve the quality of lives of Africans by using crypto asset solutions to improve Africa financial system. Our team is made up of three Rust developers Juluis, Ntiro and Muchiri and three solidity developers who also are fully stack to help us achive our mission.
+We are so far the first East,Central and Southern African project to dare leverage fully blockchain solution in our project and in finance and we do believe that crypto will be adopted well in Africa. Our current focus with our project is to onramp and offramp into the web3 ecosystem using crypto asset solution.
+
+
 ### Team Code Repos
 
+
+https://github.com/jua-labs/p2p-contracts
+https://github.com/juliusjulyp/PolkadotHackathon
+https://github.com/jua-labs/p2p
 
 
 ### Team LinkedIn Profiles
 
-**Asante Ntiro:** 
+(https://www.linkedin.com/in/muchiri-elkanah-396670224/
+https://www.linkedin.com/in/rennylangat/
+https://www.linkedin.com/in/gichuhibrian/
+[**Asante Ntiro:** ]https://www.linkedin.com/in/asante-ntiro/
+https://www.linkedin.com/in/antony-mwathi/
+https://www.linkedin.com/in/julyp-julius-ba831a221/
+)
 
 ## Development Roadmap :nut_and_bolt: 
 
 This application is specific to the DEX Pallet and lays the foundation for the larger vision which can be seen in our [draft white paper](https://jua.gitbook.io/welcome-juarian/).
 
 ### Overview
-* **Total Estimated Duration:** ???
-* **Full-time equivalent (FTE):**  ???
-* **Total Costs:** ???
+* **Total Estimated Duration:** 10 Person days
+* **Full-time equivalent (FTE):** 1.0
+* **Total Costs:** 10,000 USDC
 
 ### Milestone 1: Smart Contract Development
 The first milestone should be the development and deployment of the smart contracts required for the DEX. This includes the escrow smart contracts and any other smart contracts necessary for the exchange to function.
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache |
-| 0b. | Documentation | We will provide documentation for the code and a clear explanation of how our dapp works. This will include a Jua Dex user guide, workflow, and an overview of Jua dex. |
-| 0c. | Testing | We will provide a test for deposit and withdraw functionality for different crypto assets. The UI that users will interact with will also be displayed. |
-| 0d. | Development | This milestone includes pallets binding supporting features such as XCM integration for native asset support. We have also implemented an improved UI to hide complexity and provide a better user experience. |
 | 1. | Testing Guide | We will provide a testing guide as well as an already-made test for the same. |
 | 2. | Smart Contract Implementation | This involves the actual implementation of the smart contracts. The escrow smart contracts will be the main focus here. It may also involve the implementation of other contracts that are necessary for the DEX to function, such as governance contracts and token contracts. |
 | 3. | Testing and Debugging | After implementation, the smart contracts will need to be thoroughly tested to ensure they function as intended. This includes unit testing, integration testing, and functional testing. Any bugs or issues discovered during testing will need to be resolved. |
