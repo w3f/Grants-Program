@@ -204,7 +204,7 @@ Command Processing Flow Diagramm
 
 ```sql
  +------------+       +------------+       +-----------------+       +-------------------+       +------------+
- | Application|       |   Router   |       |Execution Chain  |       |  Event Relay Node |       | Aggregation|
+ | Application|       |   Router   |       | Execution Chain |       |  Event Relay Node |       | Aggregation|
  +------------+       +------------+       +-----------------+       +-------------------+       +------------+
         |                    |                    |                            |                               |
         |   Command Request  |                    |                            |                               |
