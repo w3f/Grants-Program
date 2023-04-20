@@ -15,7 +15,7 @@ Our Decentralized EXchange (DEX) is a peer-to-peer exchange that uses escrow sma
 
 **Deployment**
 
-The first phase of the project will be built and deployed on the Astar parachain. Jua is also evaluating the ability to deploy an Intrachain DEX parachain %%%%
+The first phase of the project will be built and deployed on the Astar parachain. Jua is also evaluating the ability to deploy an Intrachain DEX parachain.
 
 **Polkadot Ecosystem Benefits**
 
