@@ -115,7 +115,8 @@ To this date, researches on the subject of Blockchain and AI intersection have b
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a **tutorial** that explains how a user can setup RELAI node and interact with the Pallets.|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate Modules: `ModelTrail` & `MLOrg` Pallets | The main delivery of this milestone will be creating Substrate Modules for Model information management and audit trail as well as Organisation management with actors with their roles and accesses.|  
+| 1. | `MLOrg` Pallet | This pallet will be responsible for creating and managing Organizations and access for the users  `Create organization`, `Add/Remove users`, `Assign roles` (eg: Admin, AI engineer, MLOps, Stakeholders,…)|
+| 2. | `ModelBase` Pallet | The ModelBase pallet will be responsible for managing models and will allow to: `Create/Update` project ,`Create/Update` model artifact ,`Remove model` artifact ,`Create/Update` model version, `Create/Update` model experiment ,`Create/Update` model review. There will be data structures for the : `Projects`, `ProjectPurpose`, `Model`, `ModelVersion`, `ModelArtifact`, `ModelExperiment`, `ModelReview`. ModelBase pallet extrinsics will be called according to the caller's role (managed by the MLOrg pallet which will be loosely coupled).|
 
 
 ### Milestone 2 — Implementing the Front Layer
