@@ -193,7 +193,7 @@ To use the `AggregateState` , you must first create an instance of it and initia
 
 ## Diagramm
 
-Architcture Overview Diagramm
+Architecture Overview Diagram
 ![Diagramm](https://i.imgur.com/nWGtuEc.png)
 
 Flow Diagramm
