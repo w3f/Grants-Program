@@ -18,14 +18,13 @@ It's our first application.
 
 Talk Away is a social impact language learning startup that offers a unique and immersive learning experience. Our innovative approach involves learning languages through walking and exploring the city, making language learning both fun and practical.
 
- As a teaching platform on the web3, we are building a dapp and a metaverse prototype to further expand access to language learning. We haven't chosen a location to deploy yet, we would like to use Polkadot's decentralized metaverse infrastructure. Like efinity or other parachain metaverses projects.
-
+ As a teaching platform on the web3, we are building a dapp to further expand access to language learning, offering a journey that the walkings will be registered on chain and the walkings and some steps/challenges of the journeys will generate a certificate in NFT (SBT).
  Our mission is to provide a differentiated teaching approach to promote language knowledge for people with limited financial resources and migratory vulnerability. We also aim to connect people from all over the world, fostering greater awareness of global cultural diversity.
 
 ### Project Details
 
  In this moment we have a Proof of Concept with around 100 classes offered. Our next step is a MVP in web3.
- Our dApp will build from scratch under Polkadot.
+ Our mobile app will build from scratch under Polkadot.
 
  Dapp Solid overview:
  -	The home page contains classes and tutor info. 
@@ -60,10 +59,7 @@ Talk Away is a social impact language learning startup that offers a unique and 
 
  Certification will be SBTs and will be minted at the end of each level.
 
- Technical parts: The stack will be React.js, node.js, and mongoose. 
-
-
-
+ Technical parts: The stack will be React Native, node.js, and mongoose. 
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
 - The (future) tokenomics of your project 
@@ -95,8 +91,7 @@ By integrating Talkaway's language learning platform with Polkadot, the protocol
 Fernanda Paixão (Founder) 
 
  DOUGLAS MIRNDA (C0-FOUNDER) 
- RASHA ABDULLRAZZACK (DEV)
- GUSTAVO MANUTE (meta-architect and voxel designer) 
+ LUCAS OLIVEIRA (DEV)
  Mohammed ElJazouli (TUTOR)
  
 
@@ -122,9 +117,8 @@ Fernanda Paixão (Founder) Our team is versatile and international, as is our pl
 
  DOUGLAS MIRNDA (C0-FOUNDER) Douglas, aka Mr. Technocoins, founder of CoinMasters & Unstable Lab DAO, spreading cryptolove in Brazil and helping other blockchains with his projects and events. He created the Rio Crypto Hub, a monthly event, now happening in 4 states.
 
- RASHA ABDULLRAZZACK She's Turkish and has arrived to join our team for the next stage of Talk Away's entry to web3! We still have few developers in the world who are experts in building a dApp and Rasha is one of them. She is a web developer on the Near Education team.
-
- GUSTAVO MANUTE He is a digital artist, meta-architect and voxel designer. His trajectory at web3 began in 2021 on the tezos, ethereum and matic networks. Currently, he works as an advisor at Nomade Label DAO and with several works related to the metaverse. He participated in a Near Foundation fellowship in collaboration with Near Alexandria Library, and built many spaces with Ethereum partnership in voxel metaverse.
+ LUCAS OLIVEIRA Senior Blockchain Engineer | Rust, Substrate, Solidity, Vyper, Ink!, Python, Typescript, WebAssembly. He graduated in Mathematics (2021), and attended events at the largest mathematics institute in the world (IMPA).He received the Blockchain Professional Certification from the University of California - Berkeley (2021). He worked as a Blockchain Developer at Lunes Platform for 2.5 years reaching the position of Blockchain Leader. 
+In 2022 He dedicated myself to completing the introduction to DeFi at the University of Nicosia.
 
  Mohammed ElJazouli He is Moroccan, resident in Brazil, professor of Arabic and French, currently studying for a Masters in Social Sciences at the Fluminense Federal University. Fábio Sousa He is Brazilian, an English teacher, graduated in Letters from UNESA and holds a Cambridge C1 certificate.
  
@@ -136,11 +130,11 @@ Fernanda Paixão (Founder) Our team is versatile and international, as is our pl
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
 - https://github.com/riocryptohub/riocryptohub; 
-- https://rashaabdulrazzak.github.io/my-profile/#/; 
+-https://github.com/olivmath
 - 
 ### Team LinkedIn Profiles (if available)
 
-- https://tr.linkedin.com/in/rasha-abdulrazzak; 
+- https://www.linkedin.com/in/olivmath/; 
 - https://br.linkedin.com/in/douglas-miranda-; 
 - https://br.linkedin.com/in/fernanda-paix%C3%A3o-1483ba240
 - 
@@ -160,13 +154,13 @@ https://medium.com/@nomadelabel/decentralized-education-what-decentralization-do
 
 - **Total Estimated Duration:**  2 months
 - **Full-Time Equivalent (FTE):**  30 days (Building the dapp) with 5 people full time. 60 days spreading and reach out people with 5 people full time. 
-- **Total Costs:** Requested amount in USD for the whole project 2 milestones: 14,000 USD. 
+- **Total Costs:** 10,000 USD. 
 
 ### Milestone 1 Example — Basic functionality
 
 - **Estimated duration:** 1 month
 - **FTE:**  1,5
-- **Costs:** 7,000 USD
+- **Costs:** 10,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
@@ -177,13 +171,10 @@ https://medium.com/@nomadelabel/decentralized-education-what-decentralization-do
  | 3. | - Contact/Address book;<br/>- Payment requests;<br/>- Pay per lesson: it will get the predefined price from the student and save it to the website contract address | Payment for multiple classes will be an offer to get some discountS.| Certificate generation | Transfer payment to tutor: it will send the money from the website address to the tutor's address after the user call the check class successfully| Check class for user: after each class, the user -student- will call this function so the class passes successfully and the money can be transferred to the tutor. | Check level: this function will be called by the tutor only and return the level of the use | To be able to handle the following information we need to create a struct for the user, tutor, certification,	Part of the classes payment will go to social projects that will be voted on by community: voting system and distribution of the fund.<br/>- 
  | 4. | Internal testing | Internal testing and auditing of the developments, infrastructure and integrations |
  | 5. | <br/>- We will create a video tutorial to demonstrate how to use Polkadot crypto currecy and how you can open a wallet |
+ | 6. | <br/>- We will do several onboardings and launch the app in 3 cities of Brazil at Rio Crypto Hub event - Florianópolis, São Paulo and Rio de Janeiro.
+ 
 
-### Milestone 2 Example — Additional features
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 7,000 USD
-- metaverse prototype
 
 ...
 
@@ -192,7 +183,7 @@ https://medium.com/@nomadelabel/decentralized-education-what-decentralization-do
 
 next 3 months
 
-Digital marketing actions to genral public and onbording to the web3 language | Institutional partnership
+To improve and continue the Digital marketing actions to genral public and onbording to the web3 language | Institutional partnership
 
 
 
