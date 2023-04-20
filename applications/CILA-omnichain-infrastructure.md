@@ -92,7 +92,7 @@ The `EventStore`  is a database that stores events in the order they occurred. I
 
 ## Implementation
 
-The `EventStore`  is implemented using a internal Subsrate database. The `EventStore` stores events in the form of serialized binary data plus metadata, which can be easily deserialized for querying and analysis.
+The `EventStore`  is implemented using an internal Substrate database. The `EventStore` stores events in the form of serialized binary data plus metadata, which can be easily deserialized for querying and analysis.
 
 ## Features
 
