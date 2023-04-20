@@ -76,7 +76,7 @@ To use the `Dispatcher`, developers first define a set of command/operation hand
 
 ## Benefits
 
-The `Dispatcher` provides a simple and flexible way to handle commands/operations in the smart contract. By defining a set of command/operation handlers, developers can easily add new functionality to the smart contract without having to modify the `Dispatcher` class` itself.
+The `Dispatcher` provides a simple and flexible way to handle commands/operations in the smart contract. By defining a set of command/operation handlers, developers can easily add new functionality to the smart contract without having to modify the `Dispatcher` class itself.
 
 In addition, the `Dispatcher` enables developers to implement complex business logic in the smart contract by routing commands/operations to the appropriate handler. This allows for a more modular and maintainable codebase.
 
@@ -92,7 +92,7 @@ The `EventStore`  is a database that stores events in the order they occurred. I
 
 ## Implementation
 
-The `EventStore`  is implemented using a internal Subsrate database. The `EventStore` stores events in the form of serialized binary data plus metadata, which can be easily deserialized for querying and analysis.
+The `EventStore`  is implemented using an internal Substrate database. The `EventStore` stores events in the form of serialized binary data plus metadata, which can be easily deserialized for querying and analysis.
 
 ## Features
 
@@ -193,7 +193,7 @@ To use the `AggregateState` , you must first create an instance of it and initia
 
 ## Diagramm
 
-Architcture Overview Diagramm
+Architecture Overview Diagram
 ![Diagramm](https://i.imgur.com/nWGtuEc.png)
 
 Flow Diagramm
@@ -204,7 +204,7 @@ Command Processing Flow Diagramm
 
 ```sql
  +------------+       +------------+       +-----------------+       +-------------------+       +------------+
- | Application|       |   Router   |       |Execution Chain  |       |  Event Relay Node |       | Aggregation|
+ | Application|       |   Router   |       | Execution Chain |       |  Event Relay Node |       | Aggregation|
  +------------+       +------------+       +-----------------+       +-------------------+       +------------+
         |                    |                    |                            |                               |
         |   Command Request  |                    |                            |                               |
