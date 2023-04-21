@@ -1,5 +1,5 @@
-# Open Grant Proposal
-* **Project Name:** Curve AMM
+# Curve AMM
+
 * **Team Name:** Equilibrium
 * **Payment Address:** 0xee25e18E6bEa41792Adf464D399554B628A80067
 ## Project Overview 

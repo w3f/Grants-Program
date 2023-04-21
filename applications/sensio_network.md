@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Sensio Network
 
-- **Project:** [Sensio Network](https://www.sensio.group/sensio-network)
 - **Proposer:** woss
 - **Payment Address:** BTC: 3HLaefnngXW515Zr6MDdz3W2XpLojABeBW
 - **Keybase** [Sensio](https://keybase.io/sensio)

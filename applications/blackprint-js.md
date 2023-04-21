@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Integrating Polkadot.js with Blackprint
 
-- **Project Name:** Integrating Polkadot.js with Blackprint
 - **Team Name:** [Blackprint](https://github.com/Blackprint)
 - **Payment Address:** 0xE8b5923f891C5d42eBF9f385DDDFA4a8A74cb9AA (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -195,7 +194,7 @@ At the time writting -- when having many nodes and cable, users may find Blackpr
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?**<br>
+**How did you hear about the Grants Program?**<br />
 I heard about the Grants Program from Web3 Foundation's website when doing research about Polkadot's Parachain Rollout.
 
 Additional information that I think may relevant to this application:

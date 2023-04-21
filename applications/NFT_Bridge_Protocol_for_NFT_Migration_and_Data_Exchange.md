@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Protocol for NFT Migration and Data Exchange
 
-* **Project Name:** Protocol for NFT Migration and Data Exchange
 * **Team Name:** Perpetual Altruism 
 * **Payment Address:**        
 BTC : 1B6AHziiBvE28Lg74n23V3dYXbxcVLGKYi        

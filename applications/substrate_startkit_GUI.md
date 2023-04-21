@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Substrate startkit GUI
 
-* **Project:** Substrate startkit GUI
 * **Proposer:** MVP Workshop - https://github.com/MVPWorkshop
 * **Payment Address:** bc1qltgppjfmvh7yldel9afntnmp358xxnqtxgw7rd 
 
