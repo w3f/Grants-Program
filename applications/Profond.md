@@ -16,10 +16,10 @@ We’re focusing on emerging chain like Sui, Polkadot, and Aptos. We aim to onbo
 
 We’re inspired by [Pagoda.co](http://Pagoda.co), no code builders in the Near Ecosystem. It provides:
 
-1. Create smart contracts for Token and NFT
-2. Analytic for smart contracts
-3. Indexer (coming soon)
-4. API Analytics.
+1. No Code Builder: Create smart contracts for Token and NFT
+2. Indexer (coming soon): To help successful projects and enterprises scale their dApp.
+3. Analytics (coming soon): Data analytics for smart contracts, covering volume, users, transactions, and gas fees.
+4. API Analytics (coming soon): To get data from analytics.
 
 Currently, we’re building MVP in Sui Ecosystem for users to create NFT and Token. Analytics, API and Indexer is still under development.
 
@@ -32,6 +32,9 @@ NFT Tools, currently require users to manually upload the collection via NFT-Up,
 
 ![Untitled (2)](https://user-images.githubusercontent.com/81077632/232679334-a4c46b51-14e5-4be9-8c56-99a4c32152b2.png)
 Token/Coin tools. We’re looking at the example when we creating 1 million XOIN token (see “Coin Minting” section)
+
+<img width="1529" alt="Analytics" src="https://user-images.githubusercontent.com/81077632/233577845-2255131f-b7d8-4137-85f6-56998987d694.png">
+Example of smart contract analytic. In this image, we’re doing analytic on marketplace.paras.near.
 
 ### Ecosystem Fit
 
