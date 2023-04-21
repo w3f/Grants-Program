@@ -493,6 +493,7 @@ We have created a detailed project plan that outlines the development roadmap an
 | **0d.** | Docker | In order to facilitate testing and deployment of the NFTAggregate pallet and NFTAggregateState pallet, we will provide Dockerfiles that can be used to easily set up and configure a development environment. These Dockerfiles will include all the necessary dependencies and configuration to run the Substrate-based blockchain with the new functionalities. |
 | 1. | Substrate module: NFTAggregate | The NFTAggregate pallet provides a way to implement Non-Fungible Tokens (NFTs) on a Substrate-based blockchain. It defines a trait that NFT Aggregates can implement to specify the behavior of NFTs, including minting, burning, and transferring. |
 | 2. | Substrate module: NFTAggregateState | The NFTAggregateState pallet provides a default implementation of the state of an NFT Aggregate, which stores the current state of NFTs in the blockchain's storage. This pallet is responsible for managing the state of NFTs and updating it based on incoming commands. |
+| 3. | Report: Substrate Ecosystem NFT standards | To choose the most optimal standard for omnichain implementation we will conduct research and assess all the available NFT standards against two major criteria: popularity and technical quality. Popularity will be measured by the number of stars on the GitHub repository, and the technical quality will be assessed by analyzing if a specific standard satisfies [SOLID](https://en.wikipedia.org/wiki/SOLID) design principles. |
 
 
 ## Future Plans
