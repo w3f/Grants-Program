@@ -121,9 +121,9 @@ PoC → Here’s our current MVP in Sui [http://console.profond.ai/](http://cons
 | 0b. | Documentation | We will provide documentation page on how to create NFT (PSP34) and FT (PSP22) smart contract with our interface. API documentation for project settings will also be provided.  |
 | 0c. | Testing and Testing Guide | All functions will be covered with full integration test, testing guide will also be provided. |
 | 0d. | Article | We will publish an article that explains the no code builder |
-| 1. | No Code NFT Creation (ink!) | Allows users to create NFT collection smart contract (PSP34) using ink! in one of WASM supported Parachains. |
-| 2. | No Code Fungible Token Creation (ink!) | Allows users to create Fungible Token smart contract (PSP22) using ink! in one of WASM supported Parachains. |
-| 3. | Project Management Module | Allows users to create more than one projects |
+| 1. | No Code NFT Creation (ink!) | Allows users to create NFT collection smart contract (PSP34) using ink! in one of WASM supported Parachains. User will be able to login with Polkadot Wallet (SubWallet, polkadot.js, Talisman) and then deploy smart contract with provided code hash. The code hash will be uploaded using selected templates from OpenBrush PSP34 Smart contract. We are abstracting the technical details from users, users just need to upload NFT images, set metadata, and pay gas fee to deploy the smart contract. We will be using useInkathon for wallet and transaction, Next.Js for frontend framework, and OpenBrush for smart contract templates.  |
+| 2. | No Code Fungible Token Creation (ink!) | Allows users to create NFT collection smart contract (PSP34) using ink! in one of WASM supported Parachains. User will be able to login with Polkadot Wallet (SubWallet, polkadot.js, Talisman) and then deploy smart contract with provided code hash. The code hash will be uploaded using selected templates from OpenBrush PSP22 Smart contract. We are abstracting the technical details from users, users just need to set metadata and pay gas fee to deploy the smart contract. We will be using useInkathon for wallet and transaction, Next.Js for frontend framework, and OpenBrush for smart contract templates.   |
+| 3. | Project Management Module | Allows users to create more than one projects. We are using NestJS for backend framework. |
 | 4. | Multichain Integration | Allows users to choose between Polkadot Parachains, Kusama, or Sui |
 
 ### Milestone 2 Example — Analytics and API
@@ -138,7 +138,6 @@ PoC → Here’s our current MVP in Sui [http://console.profond.ai/](http://cons
 | 1. | Analytic Functionality | Add on-chain analytic for the smart contract. |
 | 2.  | REST API Service | API for users to get the data analytic. |
 | 3. | Indexer Service | Create an Indexer service. |
-| 4. | Go To Market | Onboard 20 project within a month after release. |
 
 ## Future Plans
 
