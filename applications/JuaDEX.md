@@ -62,7 +62,6 @@ An escrow-based DEX depends solely on escrow smart contracts to facilitate trade
 
 Unlike other types of DEXs that rely on orderbooks, liquidity pools, or automated market-making algorithms, our escrow-based DEX allows users to trade cryptocurrencies directly with each other without the need for a centralized intermediary or additional trading infrastructure. Escrow-based DEXs are generally considered to be more secure, transparent, and more resistant to censorship than centralized exchanges or other types of DEXs.
 
-//
 
 Building our apllication on astar will help us utilize different capabilities in the blockchain space, the use of XVM to deploy  smart contracts
 where will help us enable the accessibility of different native assets from other blockchains,
@@ -193,11 +192,12 @@ The first milestone should be the development and deployment of the smart contra
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 1. | Testing Guide | We will provide a testing guide as well as an already-made test for the same. |
-| 2. | Smart Contract Implementation | This involves the actual implementation of the smart contracts. The escrow smart contracts will be the main focus here. It may also involve the implementation of other contracts that are necessary for the DEX to function, such as governance contracts and token contracts. |
-| 3. | Testing and Debugging | After implementation, the smart contracts will need to be thoroughly tested to ensure they function as intended. This includes unit testing, integration testing, and functional testing. Any bugs or issues discovered during testing will need to be resolved. |
-| 4. | Security Audit | Once the smart contracts have been tested and debugged, a security audit should be conducted to ensure that they are secure and free from vulnerabilities. |
-| 5. | Deployment | The final step is to deploy the smart contracts to the Astar parachain. This will involve configuring the smart contracts and deploying them to the blockchain network. |
-| 6. | MVP Launch | The next milestone should be the launch of the Minimum Viable Product (MVP) for the DEX on the Astar parachain. This will enable users to access the exchange and purchase cryptocurrencies with their preferred payment method. The MVP should have basic functionality and a user-friendly interface. |
+| 2. | Smart Contract Implementation | EVM based contract written in solidity and WASM smart contract written in ink will be connected by the use of precompiles from EVM to WASM to call XVM pallet, then XVM WASM adapter.The use of chain extension from WASM to EVM to call XVM pallet, then XVM EVM adapter to succesfully connect the two(WASM smart contract and EVM smart contract), this is to facilate chross chain capabilities of the assets such as the support of Polkadot in the DEX, of which our escrow smart contract is written in solidity |
+| 3. | Testing | The code will have  unit-test  to ensure robustness and functionality. We will also provide a guide on how to run the tests, concerning the DEX we will provide a video how the functionality of the execution of buy and sell of different assets. |
+| 5. | Reusability | Our code will be made open source for implementation by other projects, showing how the polkadot ecosystem regarding parachain implementation can make easier the connection of different blockchains and the future of smart contracts using XVM capabilities for interoperability |
+| 6. | Security Audit | Once the smart contracts have been tested and debugged, a security audit will be conducted to ensure that they are secure and free from vulnerabilities. |
+| 7. | Deployment | The final step is to deploy the smart contracts to the Astar parachain. This will involve configuring the smart contracts and deploying them to the blockchain network. |
+| 8. | MVP Launch | The next milestone should be the launch of the Minimum Viable Product (MVP) for the DEX on the Astar parachain. This will enable users to access the exchange and purchase cryptocurrencies with their preferred payment method. The MVP should have basic functionality and a user-friendly interface. |
 
 ### Milestone 2: Compliance Framework Integration
 | Number | Deliverable | Specification |
