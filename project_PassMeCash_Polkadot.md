@@ -133,7 +133,7 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 
 
 
-### Milestone 1 — Dev Environment
+### Milestone 1 — Planning & Design
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  5
@@ -145,11 +145,10 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Frontend Development | The front-end would be built using React.js, a popular JavaScript library. This allows for the development of a responsive and user-friendly interface. This will involve the Landing Page & Dashboard, while Tailwind will be used to convert all the Figma files. |
+| 1. | Developers Environment  | Here we are installing and putting in place the tools we need for developing the library. In this case we are using polkadot.js, node.js, web3.py and ganache. We will connect to the polkadot node via polkadot.js |
+| 2. | Design structure | In this stage, is to create a high-level design of the PassMeCash-Library. This would involve identifying the classes, functions, and interfaces required to build the Library. Also is to create a detailed technical specification document that outlines the architecture and design of the Library. |
 
-
-
-### Milestone 2 — Backend Development, APIs & Libraries
+### Milestone 2 — Develop Code, Test & Publish
 
 - **Estimated Duration:** 6 weeks
 - **FTE:**  5
@@ -162,9 +161,9 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article or Video | We will develop and publish an **article or video** that explains this project in detail for everyone to understand how it works. |
-| 1. | Backend Development | The back-end would be built using Django, a python framework. python would handle the wallet's business logic, such as generating and storing private keys at the backend and handling transactions. Integrating Polkadot.js with Node.js, we can generate mnemonics and create wallet address for the blockchain and also encrypt it why passing all necessary details to the user via API created with Django |
-| 2. | APIs & Libraries |  Chainlink aggregator would be used to communicate with the Polkadot blockchain nodes and retrieve real time information such as transaction history and account balances. RESTful APIs would be implemented using Django, a python web application framework, and Polkadot.js and Finally, PassMeCash-API will be built for other developers to integrate into their project development. |
-
+| 1. | Write the Codes | With the API instance set up, we will develop the code for the library. This will involve defining custom types, writing functions to interact with the blockchain, and other things the  library needs to do. This involves creating the necessary classes, functions, and interfaces as defined in the design phase. as well as create unit tests to ensure that the code functions correctly.  |
+| 2. | Testing |  At this stage, is to perform various tests to ensure that the PassMeCash-Library functions correctly. This would involve unit testing, integration testing, and system testing. Also, we will perform security testing to ensure that the Library is secure from external threats. |
+| 3. | Deploy & Publish |  At this stage, after the library is written and tested, it will be publish in a package manager. The PassMeCash-Library will be deploy to the Polkadot network. This will also involve creating documentation, providing support to users, and ensuring that the Library is easily accessible to developers. |
 
 ## Future Plans
 
