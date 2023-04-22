@@ -12,7 +12,8 @@ Unlike the traditional centralized banking system where accounts holder funds ar
 PassMeCash is revolutionizing the banking and financial system by bringing funds to its users upon their request, instead of them going to banks to get funds. Users or Businesses can send and receive payments for goods and services via PassMeCash. Cross border payments and transfer can also be done through PassMeCash. Users who need low fiat currency bills to spray celebrants in parties and social functions, can also request for low currency bills through PassMeCash. All transactions on PassMeCash can be done using crypto (DOT) or cash payments.
 Thus PassMeCash Products are (i) PassMeCash get cash to its users at their choice of location. (ii) PassMeCash help Users and Businesses send and receive payments. (iii) PassMeCash make available low currency bills to her users upon request. (iv) PassMeCash performs Crypto (DOT) to Cash swap and vise versa, for easy transactions.
 and (v) PassMeCash-API for other project development.
-The problems addressed by PassMeCash include cash scarcity, low bills requests and crypto to fiat payments, which has affected over 100 million Nigerians in recent time. We intend to build PassMeCash on Polkadot by integrating Python SDK, Node.js with Polkadot.js for generating mnemonics and wallet creation, as regard the funds transactions on PassMeCash. Also, crypto (DOT) will be used for transactions which will lead to more adoption of Polkadot and increase number of DOT holders. Also, we intend to develop a PassMeCash-API that other developers can integrate into projects they are developing. This will aid other Polkadot users to carryout their daily transactions and thus add great value to the entire Polkadot ecosystem.
+The problems addressed by PassMeCash include cash scarcity, low bills requests and crypto to fiat payments, which has affected over 100 million Nigerians in recent time. We intend to build PassMeCash on Polkadot by integrating Python SDK, Node.js with Polkadot.js for generating mnemonics and wallet creation, as regard the funds transactions on PassMeCash. Also, crypto (DOT) will be used for transactions which will lead to more adoption of Polkadot and increase number of DOT holders. 
+Also, we intend to develop a PassMeCash-API that other developers can integrate into projects they are developing. This will aid other Polkadot users to carryout their daily transactions and thus add great value to the entire Polkadot ecosystem. In addition, we will develop PassMeCash Library for developers to use.
 
 
 ### Project Details
@@ -27,7 +28,7 @@ Below here are relevant links for PassMeCash towards its designs and development
 6. Github Repo: https://github.com/passmecash
 
 
-The technology stacks to be used include:
+The PassMeCash Technology stacks include:
 - Miro
 - React.js
 - Javascript
@@ -39,9 +40,32 @@ The technology stacks to be used include:
 - Polkadot.js
 
 
+### PassMeCash-Polkadot Library
+It is key to note that our project on Polkadot is to develop a PassMeCash-Polkadot Library, to make it easier for other developers to use in building decentralized apllications on the Polkadot network.
+
+The PassMeCash-Library for Polkadot can be used or integrated into web3 projects by developers who want to build decentralized applications (dApps) on top of the Polkadot network. Here are the ways in which future developers can use or integrate the PassMeCash-Library in their web3 projects:
+
+Integrating PassMeCash functionality: Developers can also integrate PassMeCash functionality into their dApps using the PassMeCash-Library. This would enable them to use pre-built PassMeCash functions and tools in their own applications, rather than building these functions from scratch. This would save them time and effort 
+and allow them to focus on building other features of their dApp.
+
+Customizing PassMeCash functionality: Developers can also customize the PassMeCash-Library to add new functionality or modify existing functions to meet the specific requirements of their dApps. This would enable them to create custom functions that are tailored to the needs of their application.
+
+For end-users, PassMeCash-Library would provide a seamless experience when using dApps built on top of the polkadot blockchain. Users would be able to interact with the blockchain using a user-friendly interface, without having to worry about the underlying technical details. They would also benefit from the increased security and transparency that blockchain technology provides, knowing that their data is stored in a secure and immutable manner.
+
+In summary, the PassMeCash-Library for Polkadot can be used or integrated into web3 projects by developers who want to build dApps on top of the Polkadot network. End-users would benefit from the increased security and transparency that blockchain technology provides when using dApps built with the PassMeCash-Library
+
+The Required Technology
+- Web3.py
+- Polkadot.js
+- Node.js
+- Ganache
+
 ### Ecosystem Fit
 
 The **PassMeCash** is built for all users of the ecosystem and it can be leveraged upon to send and receive payments globally. Users can also use crypto (DOT) to make transaction payments for goods and services via the PassMeCash platform. Also developers can integrate the PassMeCash-API into their projects, and all these will lead to more adoptability and usability of Polkadot.
+
+While the **PassMeCash Polkadot Library** will make the task easier for web3 developers to build decentralize applications on the Polkadot network. The key functions of the Library will be to provide a set of functions for connecting to a Polkadot node and interacting with the blockchain, querying the blockchain to retrieve information about blocks, transactions, accounts, and other data stored on the blockchain. It will provide functions for sending transactions to the Polkadot network, which can create and sign transactions and then send them to the Polkadot node for processing.
+
 
 
 ## Team :busts_in_silhouette:
@@ -71,7 +95,7 @@ Thus there is enough requisite experience by the team to deliver this project as
 - https://github.com/passmecash
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
- 
+  
 - https://github.com/iamgaddiel
 - https://github.com/favourwilson
 - https://github.com/scofieldwhitefire
@@ -81,6 +105,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://github.com/Dani-ui
 - https://www.behance.net/TochuCU
 - https://www.behance.net/clementfadeyi
+- https://github.com/fredtruix
+- https://github.com/Jonstance
 - https://github.com/ogasky
 
 ### Team LinkedIn Profiles (if available)
@@ -96,7 +122,7 @@ Details of the development of PassMeCash have been stated above with relevant li
 ## Development Roadmap :nut_and_bolt:
 
 We shall notify the team via the appropriate channel, upon completion of our milestones with a detailed report that will contain relevant links to codes, APIs used, 
-relevant Documents and other key information concerning the PassMeCash-Polkadot project. It is also key to note that Polkadot.js will be implemented, as well as the DOT will be used as means of payment transaction which is fully connected to Polkadot. Finally, PassMeCash-API will be built for other developers to integrate into their project development.
+relevant Documents and other key information concerning the PassMeCash-Polkadot project. It is also key to note that Polkadot.js will be implemented, as well as the DOT will be used as means of payment transaction which is fully connected to Polkadot. Finally, PassMeCash-API will be built for other developers to integrate into their project development. The PassMeCash-Polkadot Library will be deployed on the Polkadot and published on GitHub or npm for other developers to access it and use.
 
 
 ### Overview
@@ -107,7 +133,7 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 
 
 
-### Milestone 1 — Front End Development
+### Milestone 1 — Dev Environment
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  5
@@ -146,7 +172,7 @@ Once this project is completed, we intend to scale it to the next level in the n
 
 - We will constantly update our community of users on the platform updates.
 - We will provide continuous support for PassMeCash users on a constant and regular basis.
-- We will provide continuous support for Developers using the PassMeCash-API in their projects.
+- We will provide continuous support for Developers using the PassMeCash-API and/or the PassMeCash-Polkadot Library in their projects.
 
 
 ## Additional Information :heavy_plus_sign:
