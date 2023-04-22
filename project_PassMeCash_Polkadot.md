@@ -48,11 +48,11 @@ The PassMeCash-Library for Polkadot can be used or integrated into web3 projects
 Integrating PassMeCash functionality: Developers can also integrate PassMeCash functionality into their dApps using the PassMeCash-Library. This would enable them to use pre-built PassMeCash functions and tools in their own applications, rather than building these functions from scratch. This would save them time and effort 
 and allow them to focus on building other features of their dApp.
 
-Customizing PassMeCash functionality: Developers can also customize the PassMeCash-Library to add new functionality or modify existing functions to meet the specific requirements of their dApps. This would enable them to create custom functions that are tailored to the needs of their application.
+Customizing PassMeCash functionality: Developers can also customize the PassMeCash-Polkadot Library to add new functionality or modify existing functions to meet the specific requirements of their dApps. This would enable them to create custom functions that are tailored to the needs of their application.
 
-For end-users, PassMeCash-Library would provide a seamless experience when using dApps built on top of the polkadot blockchain. Users would be able to interact with the blockchain using a user-friendly interface, without having to worry about the underlying technical details. They would also benefit from the increased security and transparency that blockchain technology provides, knowing that their data is stored in a secure and immutable manner.
+For end-users, PassMeCash-Library would provide a seamless experience when using dApps built on top of the polkadot blockchain. Users would be able to interact with the blockchain using a user-friendly interface, without having to worry about the underlying technical details. They would also benefit from the increased security and transparency that Polkadot blockchain technology provides, knowing that their data is stored in a secure and immutable manner.
 
-In summary, the PassMeCash-Library for Polkadot can be used or integrated into web3 projects by developers who want to build dApps on top of the Polkadot network. End-users would benefit from the increased security and transparency that blockchain technology provides when using dApps built with the PassMeCash-Library
+In summary, the PassMeCash-Polkadot Library for Polkadot can be used or integrated into web3 projects by developers who want to build dApps on top of the Polkadot network. End-users would benefit from the increased security and transparency that blockchain technology provides when using dApps built with the PassMeCash-Library
 
 The Required Technology
 - Web3.py
