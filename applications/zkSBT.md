@@ -1,4 +1,4 @@
-# Name of your Project
+# zkSBT
 - **Team Name:** AsMatch
 - **Payment Address:** 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -102,19 +102,36 @@ https://github.com/As-Match/asMatch-front-end
 
 * ink! SBT smart contract
 * PC website for user to mint SBT to the Polkadot blockchain and generate proof key
-* AsMatch iOS/Android App support verifies the proof key and set the SBT picture as user's photo
+* AsMatch iOS/Android App support verifies the proof key and set the SBT picture as the user's photo
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 30,000 USDT
 
 ### Milestone 1 - zkSBT from AsMatch
 
-- **Estimated duration:** 3 month
+- **Estimated duration:** 2 months
 - **FTE:**  2
-- **Costs:** 30,000 USD
+- **Costs:** 15,000 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0e. | Article | We will publish an article that explains what was done as part of the grant |
+| 2. | PC website | The PC website for users to upload pictures and generate AIGC pictures and generate proof key|
+| 3. | iOS/Android App | AsMatch iOS/Android App support verify the proof key and set SBT picture as the users' photo |
+
+
+### Milestone 2 - ink! SBT smart contract & Manta
+
+- **Estimated duration:** 2 months
+- **FTE:**  2
+- **Costs:** 15,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -123,10 +140,7 @@ https://github.com/As-Match/asMatch-front-end
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Smart contract: SBT | We will deliver a SBT of ink! the smart contract that will allow users to mint SBT and store metadata on-chain |
-| 2. | PC website | The PC website for users to upload pictures and generate AIGC pictures and mint SBT to Polkadot blockchain |
-| 3. | iOS/Android App | AsMatch iOS/Android App support verify the proof key and set SBT picture as the users' photo |
-
+| 1. | Smart contract: SBT | We will deliver a SBT of ink! the smart contract that will allow users to mint SBT and store metadata on-chain and sync metadata to the Manta network for generating proof key by ZKP |
 
 ## Future Plans
 
@@ -150,3 +164,5 @@ Here you can also add any additional information that you think is relevant to t
 - Work you have already done.
 - If there are any other teams who have already contributed (financially) to the project.
 - Previous grants you may have applied for.
+
+
