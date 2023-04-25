@@ -2,7 +2,7 @@
 
 - **Team Name:** Jett Hays
 - **Payment Address:** 0x33644e4D6bb589854fbb906276147Afd7de86E09 (ERC-20 DAI)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 
 ### Overview
@@ -94,13 +94,13 @@ Faze ID began as a research project at Carnegie Mellon. Since the initial idea a
 
 - **Total Estimated Duration:** 12 weeks
 - **Full-Time Equivalent (FTE):**  1.5 FTE
-- **Total Costs:** 14,000 USD
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 — Recognition and Authentication
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  1.2
-- **Costs:** 6,000 USD
+- **Costs:** 5,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -117,7 +117,7 @@ Faze ID began as a research project at Carnegie Mellon. Since the initial idea a
 
 - **Estimated duration:** 3 Weeks
 - **FTE:**  1
-- **Costs:** 4,000 USD
+- **Costs:** 2,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -134,7 +134,7 @@ Faze ID began as a research project at Carnegie Mellon. Since the initial idea a
 
 - **Estimated duration:** 5 weeks
 - **FTE:**  1.2
-- **Costs:** 4,000 USD
+- **Costs:** 3,000 USD
 
 
 | Number | Deliverable | Specification |
