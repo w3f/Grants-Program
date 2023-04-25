@@ -47,6 +47,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [DAuth](https://github.com/DAuth-Network)                 | [DAuth](./dauth_network.md)                                                           | [GitHub](https://github.com/DAuth-Network)                                | ☐          |       ☐         |     ☐      |
 | [Galaxy.Do](https://galaxy.do)                 | [Galaxy: Three-dimensional Web for Polkadot Users](./galaxy.md)                                                           | [GitHub](https://github.com/7flash)                                | ☐          |       ☐         |     ☐      |
 | [Web3 Labs Ltd](https://www.web3labs.com/)                 | [Sirato (Epirus) Substrate Explorer - Phase III](./sirato_substrate_phase3.md)                                                           | [GitHub](https://github.com/web3labs)                                | ☐          |       ☐         |     ☐      |
+| [Collective Intelligence Labs](https://collectiveintelligence.dev/)                 | [Omnichain Infrastructure](./CILA-omnichain-infrastructure.md)                                                           | [GitHub](https://github.com/Collective-Intelligence-Labs)                                | ☐          |       ☐         |     ☐      |
 
 
 [🔝](#menu)
