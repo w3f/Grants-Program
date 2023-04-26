@@ -33,9 +33,8 @@ UI concept can be previewed [here](https://www.figma.com/file/Q50Z11g0LKROslWIIb
 
 ### Smart contract explorer
 
-Explorer that behaves similarly to Subscan, which allows users to find smart contracts by their address and see the data of the smart contract (code, dependencies, version of the compiler, chain etc.).
-
-Using such an explorer, users can also interact with smart contracts by calling them using their own private keys.
+Explorer that behaves similarly to Subscan, which allows users to find smart contracts by their address
+and see the data of the smart contract (code, dependencies, version of the compiler, chain etc.).
 
 ### Smart contract verification module
 
@@ -56,23 +55,16 @@ sequenceDiagram
     User->>+Patron: Deployment request (without passing private keys)
 ```
 
-### Smart contract manager
-
-Manager that will allow users to register and deploy their contracts and invoke various actions on existing contracts available on the platform, such as periodic invocation and vulnerability scanning.
-
-Unified ink! smart contract manager solution allows us to provide improved transparency (by building a contract ourselves and publishing it or by verifying an already published contract to match the provided source code), security (integrated vulnerability scanning, audit publishment capabilities) and versatility (periodic contract invocation, integrated scripting features.).
-
-Smart contract manager should provide most (if not all) of its functionality while keeping user’s private keys private, without delegating them to Patron.
-
 ### Deployment tool
 
-As part of our platform, we plan to provide users with a unified deployment tool that builds and publishes smart contracts for popular mainnets, testnets, and the user’s local development node.
+As part of our platform, we plan to provide users with a unified deployment tool that builds and publishes smart contracts for popular mainnets and testnets.
 
-When used with mainnets, the contract deployment process is done on our platform side using isolated containers and contract verification workflow.
+The contract build process is done on our platform side using isolated containers and contract verification workflow, while the deployment itself is done on user's side,
+without delegating any private keys to us.
 
-With testnets or local development nodes, we plan to simplify the onboarding process by automatically downloading required tooling and libraries for popular operating systems, ensuring that local builds work out of the box.
-
-Eventually, we plan to unify our tools into Patron CLI, allowing developers to create new ink! contracts, use existing smart contract templates, transpile existing Solidity contracts, or generate Typechain bindings without leaving the same unified interface they will already be familiar with.
+Eventually, we plan to unify our tools into Patron CLI, allowing developers to create new ink! contracts,
+use existing smart contract templates, transpile existing Solidity contracts, or generate Typechain bindings
+without leaving the same unified interface they will already be familiar with.
 
 ## Future work
 
@@ -80,6 +72,14 @@ Our long-term plans are to become a unified solution for developers to verify an
 
 We are eventually planning on providing monetization features in Patron, however the details are to be worked on later. We will not gatekeep
 users from the general hosted Patron functionality, while also providing all the necessary means to deploy a self-hosted instance.
+
+### Smart contract manager
+
+Manager that will allow users to register and deploy their contracts and invoke various actions on existing contracts available on the platform, such as periodic invocation and vulnerability scanning.
+
+Unified ink! smart contract manager solution allows us to provide improved transparency (by building a contract ourselves and publishing it or by verifying an already published contract to match the provided source code), security (integrated vulnerability scanning, audit publishment capabilities) and versatility (periodic contract invocation, integrated scripting features.).
+
+Smart contract manager should provide most (if not all) of its functionality while keeping user’s private keys private, without delegating them to Patron.
 
 ### Build/Compile flow
 
@@ -233,13 +233,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-Total duration: 11 weeks
+Total duration: 7 weeks
 
 FTE: 3
 
-Total cost: 93,000 USD
+Total cost: 63,000 USD
 
-### Milestone 1 - MVP with basic functionality
+### Milestone 1 - MVP with verification functionality only
 
 Duration: 7 weeks (Frontend, Backend, CLI utility implementations).
 
@@ -261,23 +261,6 @@ Total cost: 63,000 USD
 | 2b. | Detailed contract information | Frontend to display detailed contract info (as well as verification status) will be implemented. |
 | 2c. | User authentication | We will implement a web3-oriented authentication solution |
 | 3a. | Developer CLI utility | A deployment workflow unified, developer-oriented CLI utility will be implemented. |
-
-### Milestone 2
-
-Duration: 4 weeks
-
-FTE: 2.5
-
-Total cost: 30,000 USD
-
-| Number | Deliverable | Specification |
-| --- | --- | --- |
-| 0a. | License | MIT |
-| 0b. | Documentation | We will provide API documentation for contributors to get along with the codebase. |
-| 0c. | Testing guidelines | Core functionality will be covered by a comprehensive unit test suite. |
-| 0d. | Article | We will publish an article that explains the achievements done as part of the grant. |
-| 1.  | Deployment tool expansion | Deployment tool is to be expanded to support local development workflows, integration with sol2ink, OpenBrush and TypeChain. |
-| 2.  | Smart contract method call interface | We will provide users with functionality to perform calls to smart contracts from our UI. |
 
 ## Additional Information :heavy_plus_sign:
 
