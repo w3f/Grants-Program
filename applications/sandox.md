@@ -140,13 +140,16 @@ We have wide plans for SanDOx development. Some of them are:
 1)	Polkadot.js authorization with a user’s wallet
 2)	Projects and settings storage in an IPFS/blockchain
 3)	Examples library, that allows developers to use examples for different cases live in the IDE
-4)	Plug-ins support for adding features by other teams
+4)	Multistack: we will start with Ink! support
 5)	Library import from NPM
 6)	Import/export of projects, adding projects by drag’n’drop
-7)	“Network” panel, connection code autogeneration
+7)	“Network” panel, connection code autogeneration, chain state
 8)	“Find” panel
-9)	PWA
-10)	New IDE themes, themes constructor
+9)  "Extrinsics" panel
+10) "RPC calls" panel
+11)	PWA
+12)	New IDE themes, themes constructor
+13) Plug-ins support for adding features by other teams 
 
 ## Referral Program (optional) :moneybag: 
 
