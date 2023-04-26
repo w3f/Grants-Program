@@ -217,7 +217,7 @@ Here you can also add any additional information that you think is relevant to t
 Quick facts:
 1. We have a functional app prototype, multiple AI models and blockchain integrations are already available.
 2. Development team managed to generate our own GAN, RNN AI model prototypes which will be more cost effective for future sales. 
-3. Clear explanation of DeMemoriam's B2B2C business model, product features, financial forecasts and what value our product adds.
+3. Clear explanation of qlone.ai's B2B2C business model, product features, financial forecasts and what value our product adds.
 4. Dedicated team of 5-experienced members, with vast WEB2/WEB3 experience in B2B2C sectors, development, project scaling.
 5. Idea and business received very positive feedback.
 
