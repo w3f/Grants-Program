@@ -11,7 +11,7 @@ The process below is independent of the [level](../Introduction/levels.md). Paym
 :::
 
 
-## How to apply:
+## How to apply
 
    1. Please read our [FAQs](../faq.md), [category guidelines](../Support%20Docs/grant_guidelines_per_category.md), [announcement guidelines](../Support%20Docs/announcement-guidelines.md) and [Terms & Conditions](../Support%20Docs/T&Cs.md) to familiarize yourself with the subtleties of grants, applications and the program as a whole.
    2. [Fork](https://github.com/w3f/Grants-Program/fork) our grants program repository.
