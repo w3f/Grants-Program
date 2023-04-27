@@ -132,7 +132,7 @@ Alena Balakina is a QA test engineer and tech writer with over 7 years of experi
 | 1. | File search | We will develop a search feature in an opened file (case sensitive, by RegExp, etc.) |
 | 2. | Hotkeys feature | We will develop a hotkeys handler and implement “events binding hotkeys” to preferences. |
 | 3. | Themes support | We will develop IDE themes support and switching functionality. We will deliver two default themes: light & dark. |
-| 4. | Settings and projects storage | On this stage of the project we will store all project files and settings locally. |
+| 4. | Settings and projects storage | On this stage of the project we will store all project files and settings locally. The project could be downloaded in a ZIP archive. |
 
 ## Future Plans
 
