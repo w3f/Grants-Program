@@ -2,7 +2,7 @@
 
 - **Team Name:** Wunderbar Network
 - **Payment Address:** 0x6F76BED39E9B9D57cAb4d9b81D65d2fa088cB68E (DAI)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -104,15 +104,15 @@ Not started yet, mockup designs/wireframes provided above.
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** US$ 60,000.00
+- **Total Estimated Duration:** 6 months
+- **Full-Time Equivalent (FTE):**  0.5 FTE
+- **Total Costs:** US$ 30,000.00
 
 ### Milestone 1 - Foundations + Header + Account panels
 
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** US$ 20,000.00
+- **Estimated duration:** 2 months
+- **FTE:**  0.5
+- **Costs:** US$ 10,000.00
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -128,9 +128,9 @@ Not started yet, mockup designs/wireframes provided above.
 
 ### Milestone 2 - Runtime management, Event Panel and Pallet Interaction Composables
 
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** US$ 20,000.00
+- **Estimated duration:** 2 months
+- **FTE:**  0.5
+- **Costs:** US$ 10,000.00
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -144,9 +144,9 @@ Not started yet, mockup designs/wireframes provided above.
 
 ### Milestone 3 - Complete Vue.js App
 
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** US$ 20,000.00
+- **Estimated duration:** 2 months
+- **FTE:**  0.5
+- **Costs:** US$ 10,000.00
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
