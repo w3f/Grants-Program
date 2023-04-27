@@ -110,7 +110,7 @@ Not started yet, mockup designs/wireframes provided above.
 
 ### Milestone 1 - Foundations + Header + Account panels
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 2 months
 - **FTE:**  0.5
 - **Costs:** US$ 10,000.00
 
@@ -128,7 +128,7 @@ Not started yet, mockup designs/wireframes provided above.
 
 ### Milestone 2 - Runtime management, Event Panel and Pallet Interaction Composables
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 2 months
 - **FTE:**  0.5
 - **Costs:** US$ 10,000.00
 
@@ -144,7 +144,7 @@ Not started yet, mockup designs/wireframes provided above.
 
 ### Milestone 3 - Complete Vue.js App
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 2 months
 - **FTE:**  0.5
 - **Costs:** US$ 10,000.00
 
