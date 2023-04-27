@@ -140,7 +140,6 @@ PoC → Here’s our current MVP in Sui [http://console.profond.ai/](http://cons
 | 0. | API Documentation | We will provide documentation page on how to create basic NFT collection (PSP34) using our no-code builder and creating a fungible token (PSP22). |
 | 1. | Analytic Functionality | Add on-chain analytic for the smart contract. |
 | 2.  | REST API Service | API for users to get the data analytic. |
-| 3. | Indexer Service | Create an Indexer service. |
 
 ## Future Plans
 
