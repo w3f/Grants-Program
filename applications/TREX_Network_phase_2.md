@@ -163,8 +163,8 @@ Tested and successfully submitted dTRE data to the TREX blockchain node.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an online documents that explains how this module works as described in the following figure.
-| 1. | Private Key Splitting | Split the key and distribute encrypted key fragments.
-| 2. | TREX Indexing Backend | Archive block data, recover the key, decrypt the ciphertext with the recovered key, and rollback.
+| 1. | Private Key Splitting | Split the key and distribute encrypted key fragments.The programming language is Rust.
+| 2. | TREX Indexing Backend | Archive block data, recover the key, decrypt the ciphertext with the recovered key, and rollback.The programming language is Rust
 
 ### Milestone 2 - dApp
 
@@ -179,8 +179,8 @@ Tested and successfully submitted dTRE data to the TREX blockchain node.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an online documents that explains how this module works as described in the following figure.
-| 1. | TREX Tool | A tool for users to transfer funds and send distributed ciphertext to the chain.
-| 2. | TREX dApp | Constructing a visualized ecosystem for encrypted data in collaboration with TREX Indexing Backend.
+| 1. | TREX Tool | A tool for users to transfer funds and send distributed ciphertext to the chain.The programming language is JS.
+| 2. | TREX dApp | Constructing a visualized ecosystem for encrypted data in collaboration with TREX Indexing Backend.The programming language is JS.
 
 ### Milestone 3 — Incentive Mechanism of Key-holders And Time Security
 
@@ -195,8 +195,8 @@ Tested and successfully submitted dTRE data to the TREX blockchain node.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an online documents that explains how this module works as described in the following figure.
-| 1. | Incentive Mechanism of Key-holders | The key-holder profit mechanism encourages more people to join the key-holder working nodes. Key-holders can unlock rewards only after decrypting the data.
-| 2. | Real-time Blockchain Timestamp | Run the beefy light client in the enclave to make real-time timestamp requests for cross-chain blocks, ensuring the distributed security of release time and greater trustworthiness than NTS.
+| 1. | Incentive Mechanism of Key-holders | The key-holder profit mechanism encourages more people to join the key-holder working nodes. Key-holders can unlock rewards only after decrypting the data.The programming language is Rust.
+| 2. | Real-time Blockchain Timestamp | Run the beefy light client in the enclave to make real-time timestamp requests for cross-chain blocks, ensuring the distributed security of release time and greater trustworthiness than NTS.The programming language is Rust.
 
 
 ## Future Plans
