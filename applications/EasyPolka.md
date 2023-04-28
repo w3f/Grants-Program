@@ -15,7 +15,7 @@
 
 - EasyPolka is a pretty easy way for developer to join Web3.0 even he/she can only code in Javascript. Just by one-day learning, developer can join Polkadot world.
 
-- If EasyPolka system works well enough, then the network is valuable. Hope to build a parachain called **Anchor**.
+- If EasyPolka system works well enough, then the network is valuable. Hope to build a parachain called **Anchor**. EasyPolka is a solution base on [Anchor Pallet](https://github.com/ff13dfly/Anchor) which is another Grants.
 
 ### Project Details
 
@@ -33,29 +33,30 @@
 
 - **Easy Protocol** is a simple protocol to run application on Anchor node. There is no UI for it, but documents and a demo to implement the functions. In short, it is about how to load `cApp` and confirm the authority of related anchors. Details will be here : [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/README.md](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/README.md).
 
-- Data structure of **Easy Protocol** has been finished, more details you can check [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.ts](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.d.ts). Three exposed methods will be supplied.
+- Data structure of **Easy Protocol** is developing, more details you can check [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.ts](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/protocol.d.ts). Three exposed methods will be supplied.
 
-  1. easyRun. Main method to run `cApp`.
+  1. easyRun. Main method to run `cApp`. Code here: [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/interpreter.ts](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/interpreter.ts)
 
       ```Typescript
         //run cApp from anchor location
-        //1. if everything is fine, will run target cApp with proper parameter
-        //2. otherwise, will return error
-        (location:anchorLocation,inputAPI:APIObject,ck:Function) => cAppResult
+        //1. if everything is fine, will return group data as `easyResult` which is all details of cApp
+        //2. otherwise, will return error list
+        (linker:string,inputAPI:APIObject,ck:(res:easyResult) => void,fence?:boolean) => easyResult
       ```
 
-  2. easyProtocol. Get the protocol object from config.
+  2. easyProtocol. Get the protocol object from config. Code here: [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/format.ts](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/format.ts)
 
       ```Typescript
         //get the cApp protocol from target config
+        //it is the format of Easy Protocol, used to create data structure
         (type:rawType,cfg?:any|undefined) => dataProtocol|appProtocol|libProtocol
       ```
 
-  3. linkDecoder. Decode the `Anchor link` to object.
+  3. linkDecoder. Decode the `Anchor link` to object. Code here: [https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/decoder.ts](https://github.com/ff13dfly/EasyPolka/blob/main/protocol/src/decoder.ts)
 
       ```Typescript
         //decoder the anchor linker
-        (link:string,cfg?:any,ck?:Function) => decoderResult
+        (link:string) => decoderResult
       ```
 
 - Will use `Typescript` to implement the **Easy Protocol**. Automatic test will supply to check it.
@@ -77,41 +78,48 @@
         //There are three formats of Anchor Link.
 
         //normal Anchor Link
-        `anchor://${anchor}/${block}`;
+        `anchor://${anchor}/${block}[/]`;
 
         //latest Anchor Link
-        `anchor://${anchor}`;
+        `anchor://${anchor}[/]`;
 
         //Anchor Link with parameters
-        `anchor://${anchor}/${block}?${key_1}=${value_1}&${key_2}=${value_2}`;
+        `anchor://${anchor}/${block}[/]?${key_1}=${value_1}&${key_2}=${value_2}`;
       ```
 
-  2. **How to launch**. Details about launching a cApp from an `Anchor Location`. Parameters and the necessary callback will be described exhaustively.
+  2. **Declared Hidden**. The owner of `Anchor` can set up the `hide` keywords to hide the history of `Anchor`, directly or refer to another `Anchor`.
+
+  3. **Authority**. The owner of `Anchor` can set up the `auth` keywords to authority to another `Anchor` or special address. The limitation of expired time is related to the `block number` and "0" means forever.
+
+  4. **How to launch**. Details about launching a cApp from an `Anchor Location`. Parameters and the necessary callback will be described exhaustively.
 
       ```Typescript
         //the protocol details of a cApp
-        type appProtocol={
-          "type":rawType.APP;                 // `app` type
-          "fmt":formatType.JAVASCRIPT;        // app format, JS only now
-          "ver":string;                       // the cApp version, need incremnet when update
-          "lib"?:anchorLocation[];            // the list of required anchor list
-          "hide"?:hideMap|anchorLocation;     // anchor which storage the hide list defined by hideMap
-          "auth"?:authMap|anchorLocation;     // the list of auth anchor;when anchorLocation, map storage there.
+        export type appProtocol={
+            "type":rawType.APP;                 // `app` type
+            "fmt":formatType.JAVASCRIPT;        // app format, JS only now
+            "ver":string;                       // the cApp version, need incremnet when update
+            "lib"?:anchorLocation[];            // the list of required anchor list
+            "hide"?:hideMap|anchorLocation;     // anchor which storage the hide list defined by hideMap
+            "auth"?:authAddress|anchorLocation; // the list of auth anchor;when anchorLocation, map storage there.
+            "salt"?:string[2];                  // related to auth and hide, to aviod the same md5 hash. [auth(3),hide(3)]
         }
       ```
 
-  3. **How to call**. Details about communication between data and cApp.
+  5. **How to call**. Details about communication between data and cApp. The `Data Anchor` set the `call` keywords to target cApp. The implement need to check the `Authority` and `Declared Hidden`, then return the proper cApp object.
 
       ```Typescript
         //the protocol details of data anchor to call cApp
-        type dataProtocol={
-          "type":rawType.DATA;                // `data` type
-          "fmt":formatType;                   // raw data format
-          "code"?:codeType;                   // data code
-          "call"?:anchorLocation;             // call target anchor
-          "push"?:string[];                   // list of push to target cApp name
-          "hide"?:hideMap|anchorLocation;     // anchor which storage the hide list defined by hideMap
-          "auth"?:authMap|anchorLocation;     // the list of auth anchor;when anchorLocation, map storage there.
+        export type dataProtocol={
+            "type":rawType.DATA;                // `data` type
+            "fmt":formatType;                   // raw data format
+            "code"?:codeType;                   // data code
+            "call"?:anchorLocation;             // call target anchor
+            "push"?:string[];                   // list of push to target cApp name. This name is not anchor name
+            "args"?:argumentMap;                // arguments will sent to calling cApp
+            "hide"?:hideMap|anchorLocation;     // anchor which storage the hide list defined by hideMap
+            "auth"?:authAddress|anchorLocation; // the list of auth anchor;when anchorLocation, map storage there.
+            "salt"?:string[2];                  // related to auth and hide, to aviod the same md5 hash. [auth(3),hide(3)]
         }
       ```
 
@@ -119,13 +127,13 @@
 
 - Plinth is a web application, follow the **Easy Protocol** to launch **cApp**. The layouts design as follow. You can treat it as a container for **cApp**.
 
-<img src="http://metanchor.net/easy/plinth_layout.png" width="30%">
+  <img src="http://metanchor.net/easy/plinth_layout.png" width="30%">
 
-- Plinth will be a personal portal by docking the `Anchor`, customer can dock their favirate data and cApp on the sidebar. If current Dapps can be published to Anchor Network, user can access the whole web3.0 via such single entry.
+- Plinth will be a personal portal by docking the `Anchor`, customer can dock their favorite data or cApp on the sidebar. If current Dapps can be published to `Anchor Network`, user can access the whole web3.0 via such one single entry.
 
-<img src="http://metanchor.net/easy/plinth_pc_version.png" width="50%">
+  <img src="http://metanchor.net/easy/plinth_pc_version.png" width="50%">
 
-- Launch **cApp** from `Plinth` will be easy, the `link={anchor_location}` way is recommend.
+- Launch **cApp** from `Plinth` will be easy, the `link={anchor_location}` way is recommend. By the way, if you search the `Anchor` directly, you can dock the `Anchor` directly.
 
   ```Javascript
     //launch the latest anchor
@@ -152,9 +160,9 @@
 
   4. Setting, basic setting for `Plinth`. As normal setting page, no UI design yet, will be some switcher and button.
 
-- Plinth will be developed on React. `anchorJS` which bases on `@polkadot/api` is needed.
+- Plinth will be developed on React. `anchorJS` which bases on `@polkadot/api` is needed. `Easy Protocol` implement which is the **milestone 1** is needed.
 
-- Document is about how to use `Plinth`, the **cApp** part especially.
+- Document is about how to explorer `Plinth`, the **cApp** part especially.
 
 - Plinth is not an UI for `Polkadot` network, you can not interact with Substrate node without Anchor pallet. The function is limited to Anchor functions.
 
@@ -225,7 +233,7 @@
     }
   ```
 
-- Javascript is easy to build it right now.
+- Native `Javascript` is easy to build it right now. `Jquery` is needed to make the development easy.
 
 - Documents is mainly about the different roles, that's the business model of Web2.0, people do their own job to earn money. Now it is coins.
 
@@ -238,6 +246,13 @@
 - More developers who do not understand substrate well can join and build interesting cApps. Developers who have not yet used substrate/Polkadot.
 
 - Creating non-financial applications is a charming subject for blockchain system. More trying is a solution I can image.
+
+- Compared to [RMRK 1.0](https://docs.rmrk.app/rmrk1) which is base on `system.remark`, EasyPolkad do have some advantages as follow.
+  1. The simple and memorable `Anchor` name  is better for normal user than hash.
+  2. On-chain data do have a block number to mark the finalized time, it is a way to distinguish release time.
+  3. Backtrack history of `Anchor` is more convenient for application.
+  4. From develop view, by system.remark, it is more difficult to customize protocol implement.
+  5. The trade of `Anchor` is another advantage. You can sell your application by this way.
 
 ## Team :busts_in_silhouette:
 
@@ -294,8 +309,8 @@
 | 0b. | Documentation | Easy Protocol v1.0 documents in details. This will take a bit long time.|
 | 0c. | Testing Guide | Protocol SDK full test via node.js.  |
 | 0d. | Docker | Will provide a Dockerfile(s) to run the `Easy Protocol` test. |
-| 1. | White Paper | Easy Protocol v1.0 White Paper. Details about `Anchor Linker`,`Data Structure`,`Launching`,`Hide`,`Authority`.|
-| 2. | SDK | Easy Protocol v1.0 Javascript SDK, includes `application launcher`, `anchor link decoder`, `foramt creator` components. It is the implement of Easy Protocol, and extend the `Hide` and `Authority` by auto set target Anchor.|
+| 1. | White Paper | Easy Protocol v1.0 White Paper. Details about `Anchor Linker`,`Data Structure`,`Launching`,`Declared Hide`,`Authority`.|
+| 2. | SDK | Easy Protocol v1.0 Javascript SDK, includes `application launcher`, `anchor link decoder`, `foramt creator` components. It is the implement of Easy Protocol, and extend the `Declared Hide` and `Authority` by auto set target Anchor.|
 
 #### Milestone 2 — Plinth, Portal of Anchor
 
