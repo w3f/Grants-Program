@@ -34,7 +34,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [appi.md](RFPs/Closed/appi.md) | 🔴 | 20.07.2021 |
 | [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 🟢 | 06.01.2023 |
 | [candle-auction.md](RFPs/Closed/candle-auction.md) | 🔴 | 02.02.2022 |  
-| [crowdloan_front_end_template.md](RFPs/Under%20Development/crowdloan_front_end_template.md) | 🟡 | 18.11.2022 |  
+| [crowdloan_front_end_template.md](RFPs/Closed/crowdloan_front_end_template.md) | 🔴 | 25.04.2023 |  
 | [data_analysis_tools.md](RFPs/Open/data_analysis_tools.md) | 🟢 | 25.01.2023 |
 | [decentralized-security-marketplace.md](RFPs/Open/decentralized-security-marketplace.md) | 🟢 | 23.01.2023 |  
 | [epassport-zk-validation.md](RFPs/Closed/epassport-zk-validation.md) | 🔴 | 21.03.2023 |
@@ -64,7 +64,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [uncollateralized-stablecoin-research.md](RFPs/Closed/uncollateralized-stablecoin-research.md) | 🔴 | 01.01.23 |
 | [uptane-for-substrate-design-and-scope.md](RFPs/Open/uptane-for-substrate-design-and-scope.md) | 🟢 | 04.03.2023 |
 | [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 🟢 | 07.01.2023 |
-| [validator-setup-maintenance.md](RFPs/Open/validator-setup-maintenance.md) | 🟢 | 23.11.2021 |
+| [validator-setup-maintenance.md](RFPs/Under%20Development/validator-setup-maintenance.md) | 🟡 | 27.04.2023 |
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 🟡 | 07.12.2022 |
 | [wallet-aggregator-library.md](RFPs/Closed/wallet-aggregator-library.md) | 🔴 | 09.03.2023 |
 | [xcm-tool.md](RFPs/Open/xcm-tool.md) | 🟢 | 20.07.2021 |
