@@ -125,7 +125,6 @@ To this date, researches on the subject of Blockchain and AI intersection have b
 - **FTE:**  1
 - **Costs:** 5,000 USDC
 
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
@@ -133,12 +132,13 @@ To this date, researches on the subject of Blockchain and AI intersection have b
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Web Application | We will create a web frontend application that will be in charge of interacting with the blockchain and other layers such as storage a for model storage and also for Organisations management | 
-| 2. | Storage Layer SDK | We will create an SDK for Models and logs storage (centralized or decentralized) | 
+| 2. | SDK | We will provide SDK that will be used for : `interacting with the RELAI Network` (manage the lifecycle of AI models), giving API for `identity control and governance` and APIs for getting `proof of authenticity` for AI model provenance and history information.| 
 
 ## Future Plans
 
 The RELAI Network project at this stage will be focusing on setting up an infrastructure for having reliable and secure AI models. after this step the goal is build a layer for Decentralized Machine Learning compute protocol and/or data access protocol.
 Also creating DAO structure like for public Machine Learning and AI models management for public use cases is being researched.
+Improve SDK functionnalities
 
 ## Additional Information :heavy_plus_sign:
 
