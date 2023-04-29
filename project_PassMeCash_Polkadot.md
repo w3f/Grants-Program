@@ -132,27 +132,11 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 - **Total Costs:** 30,000 USD
 
 
+### Milestone 1 — Develop Code, Test & Publish
 
-### Milestone 1 — Planning & Design
-
-- **Estimated Duration:** 4 weeks
+- **Estimated Duration:** 10 weeks
 - **FTE:**  5
-- **Costs:** 10,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Developers Environment  | Here we are installing and putting in place the tools we need for developing the library. In this case we are using polkadot.js, node.js, web3.py and ganache. We will connect to the polkadot node via polkadot.js |
-| 2. | Design structure | In this stage, is to create a high-level design of the PassMeCash-Library. This would involve identifying the classes, functions, and interfaces required to build the Library. Also is to create a detailed technical specification document that outlines the architecture and design of the Library. |
-
-### Milestone 2 — Develop Code, Test & Publish
-
-- **Estimated Duration:** 6 weeks
-- **FTE:**  5
-- **Costs:** 20,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -161,9 +145,9 @@ relevant Documents and other key information concerning the PassMeCash-Polkadot 
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article or Video | We will develop and publish an **article or video** that explains this project in detail for everyone to understand how it works. |
-| 1. | Write the Codes | With the API instance set up, we will develop the code for the library. This will involve defining custom types, writing functions to interact with the blockchain, and other things the  library needs to do. This involves creating the necessary classes, functions, and interfaces as defined in the design phase. as well as create unit tests to ensure that the code functions correctly.  |
+| 1. | Write the Codes | With the API instance set up, we will develop the code for the library. This will involve defining custom types, writing functions to interact with the Polkadot blockchain, and other things the library needs to do. This involves creating the necessary classes, functions, and interfaces as defined in the design phase. as well as create unit tests to ensure that the code functions correctly. The main goal of this library is to help developers to create wallets for digital assets easily on their projects being developed on Polkadot without having to write the codes from scratch.  |
 | 2. | Testing |  At this stage, is to perform various tests to ensure that the PassMeCash-Library functions correctly. This would involve unit testing, integration testing, and system testing. Also, we will perform security testing to ensure that the Library is secure from external threats. |
-| 3. | Deploy & Publish |  At this stage, after the library is written and tested, it will be publish in a package manager. The PassMeCash-Library will be deploy to the Polkadot network. This will also involve creating documentation, providing support to users, and ensuring that the Library is easily accessible to developers. |
+| 3. | Document & Publish |  At this stage, after the library is written and tested, it will be publish in a package manager. The PassMeCash-Library will be on the GitHub repository. This will also involve creating documentation, providing support to users, and ensuring that the Library is easily accessible to developers, as well as it will be maintained over the long run. |
 
 ## Future Plans
 
