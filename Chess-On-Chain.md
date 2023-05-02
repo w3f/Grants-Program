@@ -27,20 +27,122 @@ The total supply of CHESS tokens will be Available for the public soon.
 3:Play 2 Earn Model: The Play 2 Earn model is one of the core features of ChessonChain, which incentivizes players to participate in the platform and strive for excellence. By earning rewards in the form of in-game tokens and NFTs, players are motivated to continue playing and improving their skills. 
 This creates a vibrant and growing community of chess enthusiasts, who are passionate about the game and its possibilities.
 
-4:Multichain Architecture: ChessonChain features a multichain architecture, which enables it to interact with other blockchain networks, For now   Ethereum,Stacks , Solana  and Near protocol. 
-This creates new opportunities for players to earn rewards and participate in a vibrant and growing economy around the game, and engages web3 individuals .
+4:Multichain Architecture:
+Chessonchain's multichain architecture is designed to allow players  connect with multiple Preffered  chains and participate in games across different networks this happens from Authenticating Players
+To participate in Chessonchain and earn tokens on both the user chain and the Chessonchain blockchain, users will need to authenticate themselves on both networks. Here's how the process may work:
 
-5:Governance Model: ChessonChain uses a decentralized governance model, which enables the community to have a say in the development and direction of the platform. 
-This creates a more democratic and inclusive environment for players to participate in the governance of the platform.
+Creating a User Chain:
+The first step is for the user to create a personal user chain Account /Key  that  they will play with and represent , store their NFTs earned from playing on Chessonchain. This user chain can be created using any blockchain technology that supports NFTsthat will accept and partner with ChessOnchain (For now Stacks , Solana ,Near ,Eth )
 
-6: Screenshot / Snapshot : Screenshot of checkmate wins are made nfts on the players chain/wallet and this equivalent to in game chess token ,Ofcourse with Winning streak and performance 
+Registering on Chessonchain:
+This registration process involves sending a transaction to the Chessonchain blockchain that includes their user chain address as well as other relevant information such as their username and public key.
 
-7:Team: The ChessonChain team consists of Growing/Learning blockchain developers and chess enthusiasts, who are passionate about the possibilities of combining blockchain technology with the game of chess. 
-The team is committed to creating a reliable, secure, and scalable platform for online chess gaming.
+Authentication & Play to Earn 
+After authentication users Earn substrate tokens from checkmate NFTS 
+Players on Chessonchain can earn tokens by winning games and completing certain milestones on the platform. Tokens are stored on the chain and can be transferred to other players or exchanged.
 
-8:Data Store: ChessOnchain serves as a data store / leaderboard for Game data , transaction Hashes ,Tokens, User profile and info etc 
 
-9:Game Types : ChessOnchain will have several Chess game types that every chess player will enjoy like  Ecosystem wars and competitions (stacks vs Near , solana vs Etherium etc), Bughouse ,  1v 1, timed , Handicapped , Target Challenge etc  
+
+
+5:Governance Model: The governance pallet or Democracy pallet for Chessonchain is designed to give users a say in the decision-making process of the platform. This is achieved by implementing a democratic voting system where users can propose and vote on changes to the platform.
+
+Here's how the Democracy pallet may work for Chessonchain:
+
+Proposals:
+Users can propose a change to the platform by submitting a proposal to the governance pallet. This proposal can be related to any aspect of the platform, such as new features, changes to the game rules, or modifications to the platform's governance structure.
+
+Voting:
+Once a proposal is submitted, other users can vote on it. The voting mechanism can be designed to ensure that only eligible users can vote and that each user has only one vote. The voting period can also be set to a fixed time, and the result will be determined based on a majority vote.
+
+Execution:
+If a proposal receives enough votes to pass, it will be executed on the platform. The execution can be automatic or require manual intervention from the platform administrators.
+
+Rewards:
+To incentivize users to participate in the voting process, the platform can offer rewards in the form of Chessonchain tokens or other rewards.
+
+By implementing a Democracy pallet, Chessonchain can give that user audience of over a 100 million of chess lovers  a voice in the platform's decision-making process, making the platform more democratic and transparent. It also allows the platform to evolve based on user needs and preferences, ensuring that it remains relevant and engaging for users.
+
+
+
+
+
+6: Screenshot / Snapshot : The storing of checkmate screenshots as NFTs on the Chessonchain blockchain involves encoding the image data as a base64 string and storing it as metadata within the NFT.
+
+Encoding:
+After a game is completed and a winner is determined, the checkmate screenshot is captured and converted into a base64 encoded string. This encoding process converts binary data (i.e., the image) into a string of characters that can be stored as metadata within the NFT.
+
+Metadata:
+The base64 encoded string is then stored as metadata within the NFT. This metadata may also include other relevant information about the game, such as the players' usernames, the date and time of the game, and the result.
+
+Storage:
+The NFT containing the checkmate screenshot and metadata is then stored on the User blockchain account . Since the NFT is a unique and immutable asset, it provides a secure and transparent way to store and verify the authenticity of the checkmate screenshot.
+
+By encoding the checkmate screenshots as base64 strings and storing them as metadata within NFTs, Chessonchain can provide users with a reliable and secure way to store and verify the results of their games. It also allows for easy sharing and transfer of the NFTs between users, making the platform more engaging and social.
+
+
+
+
+7:Data Store: Chessonchain serves as a data store and leaderboard for game data, transaction hashes, tokens, user profiles, and other relevant information. This data is stored on the substrate blockchain using various storage modules.
+
+Some of the substrate storage modules that will be used to store the different types of data on Chessonchain:
+
+Game data:
+Game data such as moves, wins, and competitions can be stored using the KeyValue storage module. This module allows for the creation of key-value pairs, with the key being the game ID and the value being the corresponding game data.
+
+Transaction hashes:
+Transaction hashes can be stored using the StorageValue module. This module allows for the storage of a single value, such as the transaction hash, under a specified key.
+
+Tokens:
+The token balances of users will be stored using the Balances storage module. This module maintains the balances of tokens for each account on the blockchain.
+
+User profile and info:
+User profiles and other relevant information can be stored using the Structured storage module. This module allows for the creation of complex data structures, such as user profiles, which can be stored on the blockchain.
+
+In addition to the above modules, Chessonchain will also use other substrate modules such as Event, Timestamp, and Randomness to store and manage data related to the platform.
+
+The use of substrate storage modules provides a secure and efficient way to store data on the Chessonchain blockchain. It also ensures that the data is easily accessible and can be used to generate leaderboards, statistics, and other insights about the platform's users and activities.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8:Game Types : Chessonchain will offer various chess game types to cater to the diverse interests of chess players. Here are some of the game types that users can expect on the platform:
+
+Ecosystem Wars and Competitions:
+Chessonchain will host chess wars and competitions between different blockchain ecosystems such as Ethereum, Near, Solana, and others. This will provide an exciting opportunity for players to compete against each other and represent their favorite blockchain ecosystems.
+
+Bughouse:
+Bughouse is a popular chess variant where two teams of two players each play on two separate boards. Captured pieces can be passed to the other board to be dropped on later turns. Chessonchain can offer this game type to provide a unique and exciting gameplay experience for its users.
+
+1v1:
+This is the standard form of chess where two players play against each other on a single board. Chessonchain can offer this game type with different time controls such as blitz, rapid, and classical.
+
+Timed:
+This game type is played with a fixed time limit for each player. Chessonchain can offer this game type with different time controls such as bullet, blitz, and rapid.
+
+Handicapped:
+Handicapped chess is played with one player starting with fewer pieces or with certain pieces restricted in their movements. Chessonchain can offer this game type to provide a more challenging gameplay experience for players.
+
+Target Challenge:
+In this game type, a player is challenged to win a game with a specific objective such as checkmating the opponent's king with only one specific piece. Chessonchain can offer this game type to provide a unique and challenging gameplay experience for players.
+
+Chessonchain's diverse game types will ensure that every chess player finds a game that suits their interests and skills. It will also provide an engaging and exciting platform for chess players to compete against each other and earn rewards.
+
+
+
+
+
+
 
 
 
@@ -88,37 +190,57 @@ we Anchored the first substrate training in nigeria with Octpous network . We ar
 
 Development Roadmap 
 Overview
-Full-time equivalent (FTE): Milestone 1 - 1.5; Milestone 2 and 3 - 3
-Total Costs: 15k $
-Milestone 1 — Substrate pallet completion 
-Estimated Duration: 3 months 
+Full-time equivalent (FTE): Milestone 1 , 2
+Total Costs: 30k $
 
-Costs: 15k $
-
-Goal - Create and implement Storage system between Pallets and chess game 
-Create token Earn system 
-Store chess Game data 
-
+Milestone 1 Example — Basic Build  functionality
+Estimated duration: 3 month
+FTE: 1,5
+Costs: 20,000 USD
+exclamation The default deliverables 0a-0d below are mandatory for all milestones, and deliverable 0e at least for the last one.
 
 Number	Deliverable	Specification
-0a.	License	Apache 2.0
-0b.	Documentation	 Documentation of how pallet interacts witj chess game data and stores Onchain 
-0c.	Testing Guide	The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests
+0a.	License	Apache 2.0 / GPLv3 / MIT / Unlicense
+0b.	Documentation	We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and earn tokens from gameplay , Step by Step guide to spawn up wallets , play chess and Earn tokens 
+0c.	Testing and Testing Guide	Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will write tests with substrate pallets for functionality.
+0d.	Docker	We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
+0e.	Article	We will publish an article/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+1.	Substrate module: OFFCHAIN WORKERS 	We will implement offchain workers to get data from Game played on ChessOnchain As JSON files with http requests  Offchain worker pallet  will collect Game data such as moves , winning streaks ,ranking and rating 
+2.	Substrate module: Y	The Y Substrate module will have a token supply that will be earned per checkmate NFT  and winning streak
+3.	Game UI features: We will deliver chess game UI with  several features( 1v 1, bughouse , Handicap )
 
-1.	Substrate Pallet: json Data from Game play gets stored on storage maps of Substrate 
-2.	Substrate Pallet : Store leaderboard of game record on substrate Pallet
-3.	Substrate Event Feed: Docker Image	Dockerfile for Substrate Event Feed Package
-4. Article /tutorial: We will make an article and tutorial about data is anchored on chain 
 
-### Milestone 2 Registeration — SAFT/BVI REGISTERATION
 
-- **Estimated Duration:** 1 month
-- **Costs:** 15,000 USD
+
+
+
+
+Milestone 2 Example — Additional features
+Estimated Duration: 1 month
+FTE: 1,5
+Costs: 10,000 USD
+Number	Deliverable	Specification
+0a.	License	Apache 2.0 / GPLv3 / MIT / Unlicense
+0b.	Documentation	We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and earn tokens from gameplay , Step by Step guide to spawn up wallets , play chess and Earn tokens 
+0c.	Testing and Testing Guide	Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will write tests with substrate pallets for functionality.
+0d.	Docker	We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
+0e.	Article	We will publish an article/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+1. Storage Pallet :Implement Storage Pallets  for game Data from offchain workers pallet  to substrate chain  with storage maps.
+2.	Substrate Democracy & Governance Pallet : Implememnt and Work on Democracy Pallet for Governance 
+3. Leader Board Pallet : A Decentralized Leaderboard Pallet for competetions and Records 
+
+
+
+
+
+
+
+
+
 
 ## Future Plans
 
-Become Parachain /Appchain with polkadot network, we will continue to market chessonchain and create the best chess gaming enviroment  
-We will have routine competitions and tournaments for continous enthusiasm 
+Become Parachain /Appchain with polkadot network, Expand chess Gaming with blockchain technology 
 
 
 ## Referral Program (optional)  
@@ -126,11 +248,11 @@ We will have routine competitions and tournaments for continous enthusiasm
 
 ## Additional Information :
 
-**How did you hear about the Grants Program?** personal recommendation 
+**How did you hear about the Grants Program?** personal recommendation From Bill Laboon 
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done.
+- Work you have already done. 
 - If there are any other teams who have already contributed (financially) to the project.
 - Previous grants you may have applied for.
 Footer
