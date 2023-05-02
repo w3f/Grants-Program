@@ -192,6 +192,11 @@ If we can drive forward more **nuanced and interactive decision making**, that l
 
 ![Root Design](https://github.com/stated-tech/Preferendum/blob/main/Root%20Design.png)
 
+
+### Wireframes
+
+The first version of our design is available on Figma [here](https://www.figma.com/file/IODFGupAfYtWrTQTDmxIaT/Root-(Low-fidelity-wireframes)?type=design&node-id=0%3A1&t=p8LLW4hFeIFas4Kx-1).
+
 ### Ecosystem Fit
 
 The stated.tech team seeks to provide the ecosystem with Root as a new governance framework available to every parachain & implementable throughout any dApp on those parachains - our first implementation will be on [Kabocha](https://kabocha.network) - a Kusama parachain. We will then focus on parachain deployment by proposing to integrate our pallet to existing parachains' runtime.
@@ -223,9 +228,6 @@ Our partnership with Polkassembly allows us to not only benefit from their UX/UI
 - Product Manager: David Germanowicz
 - Substrate Engineer: Matthiew M23
 - Front-End Engineering Team: [Polkassembly](https://polkassembly.io/)
-
-**Advisor**
-- Jam from [Shokunin Network](https://shokunin.network/)
 
 **Network Service:** 
 - Richard Welsh from [Decent Partners](https://decent.partners)
@@ -300,7 +302,7 @@ The code of the preferundum pallet is available in [Matthiew's github](https://g
 
 - **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):**  6 FTE
-- **Total Costs:** 96 500 USD
+- **Total Costs:** 90 500 USD
 
 ### Milestone 1 - Back-End — stated.tech - Preferendum Pallet - 40k
 
@@ -320,11 +322,11 @@ The code of the preferundum pallet is available in [Matthiew's github](https://g
 | 3. | Substrate module: Preferundum | The pallet preferundum will host functions described in Milestone 2. It will be linking the hashmaps to IPFS and store them on the blockchain. Vetoes and joins are managed by the Quorum module (optimistic). |
 | 4. | Substrate module: Vote | For the logic of the vote, we will allow for a more democratic voting by giving each member of the proposal the same voting power. Using the **range-normalization** method, voters will decide percentages of their will to support this different alternatives. Voting is started and stopped according to quorum module (pessimistic).|
 
-### Milestone 2 - stated.tech x Polkassembly - Front-End - 56.5k
+### Milestone 2 - stated.tech x Polkassembly - Front-End - 50.5k
 
 - **Estimated duration:** 2 month
 - **FTE:**  4
-- **Costs:** 56,500 USD
+- **Costs:** 50,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
