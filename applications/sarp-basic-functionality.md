@@ -1,7 +1,7 @@
 # SARP - A Static Analysis Tool for Runtime Pallets
 
-- **Team Name:** Supercomputing Systems AG
-- **Payment Address:** FsnxqJnqWVNMZZgxaQdhaCk9c5sL3WSggRCRqp1qEzk1L2i (KSM)
+- **Team Name:** Supercomputing Systems AG (SCS)
+- **Payment Address:** 0xd24622311a22470353bd21d9bcd9e02ba0cfebbe (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -18,7 +18,7 @@ Our team has no prior knowledge in static code analysis, but has a good understa
 
 ### Project Details
 
-We will base our work on [MIRAI](https://github.com/facebookexperimental/MIRAI/) and extend it with checks on substrate pallets. For details see [Milestone 1](#milestone-1---basic-setup--2-usecases)
+We will base our work on [MIRAI](https://github.com/facebookexperimental/MIRAI/) and extend it with checks on substrate pallets. For details see the [Development Roadmap](#development-roadmap-nut_and_bolt)
 
 ### Ecosystem Fit
 
@@ -90,26 +90,49 @@ We have not started to work on this.
 - **Full-Time Equivalent (FTE):** 0,8 FTE
 - **Total Costs:** 30.000 USD
 
-### Milestone 1 - Basic Setup + 2 Usecases
-
-- **Estimated duration:** 1,5 months
-- **FTE:** 0,8 FTE
-- **Costs:** 30.000 USD
 
 
 
-This project contains the basic project setup and a first set of checks on the following vulnerability classes:
+#### Vulnerability Classes
+For this project we want to address the following vulnerability classes:
 
 * [incorrect origin](https://github.com/bhargavbh/MIRAI/blob/main/substrate_examples/incorrect-origin/description.md) of dispatchable functions. 
 * [unsigned transaction](https://github.com/bhargavbh/MIRAI/blob/main/substrate_examples/unsigned-transaction/description.md) validation.
 
-The goal is to show the feasibility of the approach and to lay a basis for future development. Therefore we leave tasks with little risks to future work packages (see also [Future Plans](#future-plans)).
+These will be part of both milestones.
+
+### Milestone 1 - Research
+
+- **Estimated duration:** 0,5 months
+- **FTE:** 0,8 FTE
+- **Costs:** 10.000 USD
+
+In milestone 1 we want to investigate how the above stated [vulnerability classes](#vulnerability-classes), can be detected by extending MIRAI. 
+
+#### Deliverables
+
+| Number | Deliverable                 | Specification                                                                                                | 
+|--------|-----------------------------|--------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                     | MIT                                                                                                   |
+| 1.     | Prototype Code              | Prototype code to approach the above two stated vulnerability classes.                                       | 
+| 2.     | Documentation | Technical documentation, describing the approach we plan to implement in milestone 2, incl. its limitations. | 
+| 3.     | Engagement                  | Engage with teams at Web3 Foundation and Parity for prioritization.                                          |
+
+
+
+### Milestone 2 - Basic Setup + 2 Usecases
+
+- **Estimated duration:** 1 month
+- **FTE:** 0,8 FTE
+- **Costs:** 20.000 USD
+
+After the research in milestone 1, we want to implement a first simple version of the tool, together with tests and documentation. The goal is to show the feasibility of the approach and to lay a basis for future development. Therefore we leave tasks with little risks to future work packages (see also [Future Plans](#future-plans)).
 
 #### Deliverables
 
 | Number | Deliverable                                          | Specification                                                                                                                                                                                                                                                                           | 
 |--------|------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a.    | License                                              | Apache 2.0                                                                                                                                                                                                                                                                              |
+| 0a.    | License                                              | MIT                                                                                                                                                                                                                                                                              |
 | 0b.    | User Documentation                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the tool on a substrate pallet.|
 | 0c.    | Testing and Testing Guide                            | Each check, that the tool can perform, will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the testing guide, we will describe how to run these tests.                                                                                                 |
 | 0d.    | Docker                                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                           |
