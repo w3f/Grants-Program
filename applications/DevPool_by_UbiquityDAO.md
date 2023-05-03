@@ -70,6 +70,7 @@ UbiquiBot is developed with TypeScript, Supabase, Vercel, GitHub Actions, Probot
 [https://github.com/ubiquity/bounty-bot](https://github.com/ubiquity/bounty-bot)
 
 The only smart contract we use in the system at this time is [Uniswap’s Permit2](https://github.com/Uniswap/permit2). It has received audits from [ABDK](https://github.com/Uniswap/permit2/blob/main/audits/ABDKAudit.pdf) and [Chainsecurity](https://github.com/Uniswap/permit2/blob/main/audits/Chainsecurity%20Audit.pdf).
+The code is Open Source under Apache-2.0 license.
 
 - Documentation of core components, protocols, architecture, etc. to be deployed
 
