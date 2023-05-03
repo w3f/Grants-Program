@@ -104,8 +104,8 @@ Our responsibilities:
 - **Start Date:** Project will start after 3 days post approval.
 - **Sprint/Period Duration:** 15 Days/2 Weeks 
 - **Total Duration:** 6 months initially, will continue as per the work and support of the Web3 foundation Team
-- **Full-Time Equivalent (FTE):**  2 FTE 4 PTE 
-- **Max budget per sprint/period:** 11,200 USD/Sprint
+- **Full-Time Equivalent (FTE):**  3 FTE (2 full time, 2 part time)
+- **Max budget per sprint/period:** 8400 USD/Sprint
 - **Hourly rate:** 35USD/Dev
 
 ## Future Plans
