@@ -198,7 +198,7 @@ Demo
 
 [https://dao.ubq.fi/the-devpool](https://dao.ubq.fi/the-devpool)
 
-### DevPool smart automations get more done in less time
+DevPool smart automations get more done in less time
 
 Welcome to DevPool, a Ubiquity Research Ltd. product. Brought to you by Ubiquity DAO.
 
