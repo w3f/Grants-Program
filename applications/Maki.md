@@ -147,7 +147,7 @@ Note: As the implementation is based on others work (research and specification)
 
 ### Milestone 2 — Coordinator's functions
 
-- **Estimated Duration:** 4 months
+- **Estimated Duration:** 6 months
 - **FTE:**  0.3 FTE
 - **Costs:** 6,000 USD
 
