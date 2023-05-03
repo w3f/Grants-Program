@@ -194,7 +194,7 @@ Ideas generally have better chances of being implemented if they're presented in
 2. In the newly created fork, create a copy of the suggestion template ([`RFPs/suggestion-template.md`](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/suggestion-template.md)) inside the [`rfps`](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/docs/RFPs/suggestion-template.md) of the template into the new one, and _do not modify the template file directly._
 3. Name the file after your idea: `project_name.md`.
 4. Fill out the template with the project details. Please include as many details as possible.
-5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
+5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grants-Program/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
 6. You will see the same template as for creating an application. Please replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 7. The RFP will be accepted and merged as soon as it receives three approvals from [W3F Grants Committee](https://github.com/w3f/Grants-Program#w3f-grants-committee) members.
 
