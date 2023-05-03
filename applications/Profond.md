@@ -10,7 +10,7 @@
 
 [Profond.ai](http://profond.ai/) is web3 tools to help developers and creators to build, validate, and scale their dApps. We provide smart contract builder (NFT and token), analytic, and indexer. 
 
-We’re focusing on emerging chain like Sui, Polkadot, and Aptos. We aim to onboard millions of developers by making it easier onboarding for users to create smart contracts.
+We’re focusing on emerging chain and we aim to onboard millions of developers by making it easier onboarding for users to create smart contracts.
 
 ### Project Details
 
@@ -21,9 +21,9 @@ We’re inspired by [Pagoda.co](http://Pagoda.co), no code builders in the Near 
 3. Analytics (coming soon): Data analytics for smart contracts, covering volume, users, transactions, and gas fees.
 4. API Analytics (coming soon): To get data from analytics.
 
-Currently, we’re building MVP in Sui Ecosystem for users to create NFT and Token. Analytics, API and Indexer is still under development.
+Currently, we’re building MVP for users to create NFT and Token. Analytics, API and Indexer is still under development.
 
-We’re planning to add more emerging chains like Polkadot, Aptos, and Cosmos to our platform. Here’s our current MVP: [http://console.profond.ai/](http://console.profond.ai/)
+We’re planning to add more parachains from Polkadot and Kusama to our platform. Here’s our current MVP: [http://console.profond.ai/](http://console.profond.ai/)
 
 <img width="1728" alt="Create NFT Collection" src="https://user-images.githubusercontent.com/81077632/232679169-a0c4e372-10d0-4dae-8cd0-ad134c69f89d.png">
 
@@ -42,7 +42,7 @@ We aim to launch on Polkadot and Kusama, here’s what problem we’re trying to
 
 - For creators, creating a smart contract for their NFTs and tokens is hard. Especially in relatively new WASM smart contracts like ink! .
 - For UI developers, blockchain development is too complex. Furthermore, each chain has its own complexity.
-- Limited tooling for emerging chains like Polkadot, Sui, Aptos, and Cosmos.
+- Limited tooling for Polkadot and Kusama ecosystem.
 - For emerging chain, we help them create smart contract templates.
 
 ## Team :busts_in_silhouette:
@@ -102,7 +102,7 @@ Pipapo Ticketing System: [https://pipapo.io/](https://pipapo.io/)
 
 ## Development Status :open_book:
 
-PoC → Here’s our current MVP in Sui [http://console.profond.ai/](http://console.profond.ai/)
+PoC → Here’s our current MVP [http://console.profond.ai/](http://console.profond.ai/)
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -127,7 +127,7 @@ PoC → Here’s our current MVP in Sui [http://console.profond.ai/](http://cons
 | 1. | No Code NFT Creation (ink!) | Allows users to create NFT collection smart contract (PSP34) using ink! in one of WASM supported Parachains. User will be able to login with Polkadot Wallet (SubWallet, polkadot.js, Talisman) and then deploy smart contract with provided code hash. The code hash will be uploaded using selected templates from OpenBrush PSP34 Smart contract. We are abstracting the technical details from users, users just need to upload NFT images, set metadata, and pay gas fee to deploy the smart contract. We will be using useInkathon for wallet and transaction, Next.Js for frontend framework, and OpenBrush for smart contract templates.  |
 | 2. | No Code Fungible Token Creation (ink!) | Allows users to create NFT collection smart contract (PSP34) using ink! in one of WASM supported Parachains. User will be able to login with Polkadot Wallet (SubWallet, polkadot.js, Talisman) and then deploy smart contract with provided code hash. The code hash will be uploaded using selected templates from OpenBrush PSP22 Smart contract. We are abstracting the technical details from users, users just need to set metadata and pay gas fee to deploy the smart contract. We will be using useInkathon for wallet and transaction, Next.Js for frontend framework, and OpenBrush for smart contract templates.   |
 | 3. | Project Management Module | Allows users to create more than one projects. We are using NestJS for backend framework. |
-| 4. | Multichain Integration | Allows users to choose between Polkadot Parachains, Kusama, or Sui |
+| 4. | Multichain Integration | Allows users to choose between Polkadot Parachains and Kusama |
 
 ### Milestone 2 Example — Analytics and API
 
@@ -137,7 +137,10 @@ PoC → Here’s our current MVP in Sui [http://console.profond.ai/](http://cons
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0. | API Documentation | We will provide documentation page on how to create basic NFT collection (PSP34) using our no-code builder and creating a fungible token (PSP22). |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide documentation page on how to create basic NFT collection (PSP34) using our no-code builder and creating a fungible token (PSP22).  |
+| 0c. | Testing and Testing Guide | All functions will be covered with full integration test, testing guide will also be provided. |
+| 0d. | Article | We will publish an article that explains the analytics and API usage |
 | 1. | Analytic Functionality | Add on-chain analytic for the smart contract. |
 | 2.  | REST API Service | API for users to get the data analytic. |
 
