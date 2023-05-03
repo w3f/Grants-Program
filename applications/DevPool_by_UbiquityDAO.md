@@ -13,6 +13,7 @@ Please provide the following:
 - If the name of your project is not descriptive, a tag line (one sentence summary).
 
 DevPool is a crypto-native platform that organically sits on top of GitHub to optimally match developers with open tasks and get paid in crypto while automating the administrative components for DAOs and Repo managers.
+Ubiquity DAO https://github.com/ubiquity/
 
 - A brief description of your project.
 
