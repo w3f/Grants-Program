@@ -223,15 +223,7 @@ Easy to use and easy to manage:
 
 Increase your developing capacity without increasing your overhead. 
 
-Here is a quick video to showcase the simplicity and power of the DevPool:
-
 ---
-
-[Demo 3 - 12 sec.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96174bd5-6e6a-4fba-be0c-e8597df8c1d4/Demo_3_-_12_sec.mp4)
-
-Bounty claim video:
-
-[Demo 4 - 49 sec.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f257652-2de5-447e-94d7-3b8b2320c323/Demo_4_-_49_sec.mp4)
 
 Automation and highlights that are suitable both for bounty issuers and bounty hunters:
 
