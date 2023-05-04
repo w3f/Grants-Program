@@ -25,15 +25,15 @@ Currently, we’re building MVP for users to create NFT and Token. Analytics, AP
 
 We’re planning to add more parachains from Polkadot and Kusama to our platform. Here’s our current MVP: [http://console.profond.ai/](http://console.profond.ai/)
 
-<img width="1728" alt="Create NFT Collection" src="https://user-images.githubusercontent.com/81077632/232679169-a0c4e372-10d0-4dae-8cd0-ad134c69f89d.png">
+<img width="1728" alt="Create NFT Collection" src="https://user-images.githubusercontent.com/81077632/232679169-a0c4e372-10d0-4dae-8cd0-ad134c69f89d.png"/>
 
-<img width="1727" alt="NFT Tools" src="https://user-images.githubusercontent.com/81077632/232679206-2d43c455-5a3b-4742-b371-7ac949c3b2cf.png">
+<img width="1727" alt="NFT Tools" src="https://user-images.githubusercontent.com/81077632/232679206-2d43c455-5a3b-4742-b371-7ac949c3b2cf.png"/>
 NFT Tools, currently require users to manually upload the collection via NFT-Up, we’re working to make it drag&drop
 
 ![Untitled (2)](https://user-images.githubusercontent.com/81077632/232679334-a4c46b51-14e5-4be9-8c56-99a4c32152b2.png)
 Token/Coin tools. We’re looking at the example when we creating 1 million XOIN token (see “Coin Minting” section)
 
-<img width="1529" alt="Analytics" src="https://user-images.githubusercontent.com/81077632/233577845-2255131f-b7d8-4137-85f6-56998987d694.png">
+<img width="1529" alt="Analytics" src="https://user-images.githubusercontent.com/81077632/233577845-2255131f-b7d8-4137-85f6-56998987d694.png"/>
 Example of smart contract analytic. In this image, we’re doing analytic on marketplace.paras.near.
 
 ### Ecosystem Fit
