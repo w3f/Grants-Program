@@ -7,7 +7,7 @@
 
 ### Overview
 
-The first framework for SoulBound Tokens (SBTs) was first introduced by Vitalik Buterin, E. Glen Weyl, Puja Ohlhaver. In a whitepaper entitled [“Decentralized Society: Finding Web3’s Soul,”](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) released in May 2022. The whitepaper highlights how Soulbound tokens can be used as a great tool for achieving a fully decentralized society, in view of the amazing possibilities it presents.
+The first framework for SoulBound Tokens (SBTs) was first introduced by Vitalik Buterin, E. Glen Weyl, Puja Ohlhaver, in a whitepaper entitled [“Decentralized Society: Finding Web3’s Soul,”](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) released in May 2022. The whitepaper highlights how Soulbound tokens can be used as a great tool for achieving a fully decentralized society, in view of the amazing possibilities it presents.
 
 SoulBound tokens (SBTs) are non-transferable digital tokens that represent an individual's identity in the Web3 ecosystem. SoulBound tokens (SBTs) can be said to be a form of Digital Curriculum Vitae (CV), as it gives detailed credentials of the user who owns it. These records are stored or distributed via wallets referred to as "Souls". The soul can be said to be a Blockchain wallet that stores publicly accessible, non-transferable tokens.
 
@@ -77,7 +77,7 @@ After all, the zkSBT that we are proposing is not only a use case for AsMatch bu
 * Yi: Backend Dev
 * Ryan: Dev Ops
 * Mike: Backend Dev
-* Martin: Marketing 
+* Martin: Marketing
 * Ye Han: UI Designer
 
 
@@ -101,35 +101,50 @@ https://github.com/As-Match/asMatch-front-end
 ## Development Roadmap :nut_and_bolt:
 
 * ink! SBT smart contract
-* PC website for user to mint SBT to the Polkadot blockchain and generate proof key
-* AsMatch iOS/Android App support verifies the proof key and set the SBT picture as the user's photo
+* PC website for user to generate AIGC photos and mint SBT to the Polkadot blockchain and generate proof key
+* AsMatch iOS/Android App support verifies the proof key and sets the SBT picture as the user's photo
 
 ### Overview
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 30,000 USDT
+- **Total Costs:** 50,000 USDT
 
-### Milestone 1 - zkSBT from AsMatch
+### Milestone 1 - zkSBT PC Platform
 
 - **Estimated duration:** 2 months
 - **FTE:**  2
-- **Costs:** 15,000 USD
+- **Costs:** 20,000 USD
 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send test transactions, which will show how the new functionality works. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0e. | Article | We will publish an article that explains what was done as part of the grant |
 | 2. | PC website | The PC website for users to upload pictures and generate AIGC pictures and generate proof key|
 | 3. | iOS/Android App | AsMatch iOS/Android App support verify the proof key and set SBT picture as the users' photo |
 
 
-### Milestone 2 - ink! SBT smart contract & Manta
+### Milestone 2 - AsMatch iOS/Android Application
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 1.5 months
+- **FTE:**  2
+- **Costs:** 15,000 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0e. | Article | We will publish an article that explains what was done |
+| 1. | iOS/Android | We will deliver iOS/Android applications that allow users to copy-paste or scans the QR code of the proof key to verify the ownership of SBT and set the SBT photo as the user’s photo. |
+
+### Milestone 3 - ink! SBT smart contract & Manta
+
+- **Estimated duration:** 1.5 months
 - **FTE:**  2
 - **Costs:** 15,000 USD
 
@@ -139,8 +154,9 @@ https://github.com/As-Match/asMatch-front-end
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Smart contract: SBT | We will deliver a SBT of ink! the smart contract that will allow users to mint SBT and store metadata on-chain and sync metadata to the Manta network for generating proof key by ZKP |
+| 0e. | Article | We will publish an article that explains what was done |
+| 1. | Smart contract: SBT | We will deliver an ink smart contract that will allow users to mint SBT from the PC website and store metadata on-chain. |
+| 2. | Sync Service | We will deliver a back-end service(Node.js) monitoring the SBT smart contract and syncing SBT metadata to the Manta network for generating proof keys by ZKP. |
 
 ## Future Plans
 
@@ -164,5 +180,6 @@ Here you can also add any additional information that you think is relevant to t
 - Work you have already done.
 - If there are any other teams who have already contributed (financially) to the project.
 - Previous grants you may have applied for.
+
 
 
