@@ -47,22 +47,35 @@ The Hybrid indexer will be written in Rust. It can be configured to connect to a
 
 It will read events in all blocks using [subxt](https://github.com/paritytech/subxt) and index these events in a Key-value database using the [sled](http://sled.rs/) library. This is considerably more efficient than storing the index in an SQL database.
 
+subxt currently has an [issue](https://github.com/paritytech/subxt/issues/793#issuecomment-1386902010) where it is not possible to query blocks prior to V14 metadata (block #7,229,126 on Polkadot). Resolving this issue is not within the scope of the grant. Once this grant is completed a further grant application will be made that includes resolving this issue.
+
+When decoding events, subxt needs to have the correct metadata. The metadata changes whenever a chain performs a runtime upgrade. Hybrid Indexer handles this in a very elegant way. When indexing begins it downloads the metadata for the starting block. When it encounters a decoding error it downloads the metadata for the current block and retries decoding. This means that the indexer does not have to be built with the metadata and block number of every runtime upgrade.
+
+To index an event, it needs to be converted into a Rust type that matches the metadata. Sometimes the metadata for an event will change during a runtime upgrade. To handle this the indexer will have Rust types for current and historic versions of all events. When an event fails to be converted into a Rust type the previous type will be tried.
+
 All events in all pallets that have identifying parameters will be indexed. For example the Transfer event in the Balances pallet is identifiable by the `AccountId` of both `from` and `to`.
 
 Other examples of identifying event parameters are `assetId` in the Assets pallet, `code_hash` in the contracts pallet, `CollectionId` and `ItemId` in the NFTs pallet, and `MultiLocation` in the XCM pallet.
 
-Reading blocks and writing indexes will occur in separate threads with a queue from the read thread to the write thread. Enabling reading and writing simultaneously will maximize indexing throughput.
+Additionally, all events are indexed by event variant.
+
+To download a block, a query first has to be made to determine the hash for a given block number. In order to ensure throughput is as high as possible, multiple queries to the full node will be active at the same time to avoid round-trip delay. Block processing will be in a separate thread. 
+
+In the same manner that each Substrate chain is a separate Rust build that uses Substrate crates, each chain will need a separate Hybrid Indexer build that is configured to index the correct pallets.
+
+When a chain is going to potentially perform a runtime upgrade, the Hybrid Indexer for the chain will need a new release with any updated events. If an instance of the indexer is not updated before the runtime upgrade occurs, it can be restarted with the new version at the correct block number.
 
 WSS queries will be handled via the highly scalable [tokio_tungstenite](https://github.com/snapview/tokio-tungstenite) Rust library.
 
 In addition to the identifier being searched for, queries will be able to include start block, offset, and limit to control which events are returned.
 
-Consumers will be able to subscribe for new events that match a query. This will be handles by sled's powerful [watch_prefix](https://docs.rs/sled/latest/sled/struct.Tree.html#method.watch_prefix) functionality.
+Consumers will be able to subscribe for new events that match a query.
 
 The database keys will be constructed in such a way so that events can be found using iterators starting at a specific block number. For example, for for the AccountId keyspace:
 
 `AccountId/BlockNumber/EventIndex`
 
+Database entries will be key-only. No value will be stored. The blocknumber and event index are all that need to be returned for each event found. This reduces the size of the index database and increases decentralization. The frontend can query the chain in a decentralized manner to retrieve the event.
 
 #### Dapp
 
@@ -155,32 +168,32 @@ Development has not started on the project, however the codebase will largely fo
 
 ### Overview
 
-- **Total Estimated Duration:** 8 weeks
+- **Total Estimated Duration:** 12 weeks
 - **Full-Time Equivalent (FTE):**  1
 - **Total Costs:** 10,000 USD
 
 ### Milestone 1 — Event Indexing component
 
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 6 weeks
 - **FTE:**  1
 - **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can index a Substrate node and query events. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can index a Polkadot node and query events. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Connect to Substrate chains | The indexer will be written in Rust and configurable to connect to any Substrate chain using the subxt library. |
-| 2. | Block syncing | As new blocks are produced, the indexer reads all events. Additionally, it will read events from existing blocks, starting at block 0. |
-| 3. | Index writing | All identifying parameters in events will be indexed in the database using the sled library. |
+| 1. | Connect to Substrate chains | The indexer will be written in Rust and configurable to connect to the Polkadot chain using the subxt library. |
+| 2. | Block syncing | As new blocks are produced, the indexer reads all events. Additionally, it will read events from archived blocks. Indexing will be quite slow because communication with the full node will not be asynchronous. Only the Polkadot chain will be supported. |
+| 3. | Index writing | The following identifying parameters in events will be indexed in the database using the sled library: AccountId, AccountIndex, AuctionIndex, BountyIndex, CandidateHash, MessageId, ParaId, PoolId, ProposalHash, ProposalIndex, RefIndex, RegistrarIndex, TipHash. Not all events will be indexed. |
 | 4. | Status querying | It will be possible to query the current status of the indexer via WSS. This will include information about which chain is being indexed, indexing progress and last know block. Queries will be handled via  tokio_tungstenite. |
-| 5. | Index querying | It will be possible to search via WSS for events with an identifier. |
+| 5. | Index querying | It will be possible to search via WSS for events with an identifier. Basic event parameters details will be provided for most events. |
 | 6. | Dapp | A rudimentary web interface will be developed to expose this functionality. This will be built using pnpm, vite, vue, vuetify & polkdadot.js .|
 
 ### Milestone 2 — Event Subscribing
 
-- **Estimated duration:** 2 weeks
+- **Estimated duration:** 3 weeks
 - **FTE:**  1
 - **Costs:** 2,500 USD
 
@@ -192,26 +205,33 @@ Development has not started on the project, however the codebase will largely fo
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Event subscription API | The indexer will be updated to service subscription requests via WSS. |
 | 2. | Live dapp | The dapp will be updated so that pages displaying results from event queries will be updated as soon as a new event appears on the chain. |
+| 3. | Full Substrate & Polkadot support | All substrate & polkadot pallets & events supported |
+| 4. | Variant index | Additional event index by pallet, variant |
+| 5. | Increased decentralization | Don't store event in db - load events in front end from chain |
+| 6. | Asynchrous block downloading | Blocks will be downloaded as fast as possible for improved indexing speed. |
 
 
 ### Milestone 3 — Decentralized Component
 
-- **Estimated Duration:** 2 weeks
+- **Estimated Duration:** 3 weeks
 - **FTE:**  1
 - **Costs:** 2,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the rudimentary explorer dapp. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can build a chain-specific Hybrid Indexer and use the rudimentary explorer dapp. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Video | We will publish a video that explains and demonstrates all aspects of the explorer. |
 | 1. | Dapp | The dapp will be extended to query block and state via either the Substrate Connect light client, or via direct connect to a full node via WSS. |
 | 2. | Cross-chain UI | When a Tx includes a XCM, it will be easy and intuitive to open the relevant block from the other chain(s). |
-
+| 3. | Support event schema changes | It will be possible to index old events that have changed their Rust type in a runtime upgrade. |
+| 4. | Per-chain build | Indexer needs to be built for the chain, e.g. hybrid-indexer-polkadot - custom pallets can be indexed. |
 
 ## Future Plans
+
+- indexing block prior to V14 metadata (block #7,229,126 on Polkadot). See [issue](https://github.com/paritytech/subxt/issues/793#issuecomment-1386902010).
 
 - hosting - The project needs to host indexes for all major Substrate chains. The frontend can be hosted as a traditional website and on IPFS.
 

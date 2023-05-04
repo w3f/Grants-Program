@@ -1,6 +1,6 @@
 # polkadot-validator-setup maintenance
 
-* **Status:** Open
+* **Status:** [See Polkadot Validation Node Ansible Setup](https://github.com/polkachu/polkadot-validator)
 * **Teams/People that could deliver the RFP:** @melozo, @pmensik, @tylerztl, @bLd75
 
 ## Project Description :page_facing_up: 

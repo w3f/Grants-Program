@@ -3,7 +3,7 @@
 - **Team Name:** Keysafe
 - **Payment Address:** 0x09C08f46d523822cC9D18A077e2e3BDE5BC07a0b (Ethereum (USDC))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
-
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/947#issuecomment-1512008998)
 ## Project Overview :page_facing_up:
 
 This grant is for the RFP [Social Recovery Wallet](https://github.com/w3f/Grants-Program/blob/master/rfps/social-recovery-wallet.md)
