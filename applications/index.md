@@ -50,6 +50,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Collective Intelligence Labs](https://collectiveintelligence.dev/)                 | [Omnichain Infrastructure](./CILA-omnichain-infrastructure.md)                                                           | [GitHub](https://github.com/Collective-Intelligence-Labs)                                | ☐          |       ☐         |     ☐      |
 | [TradeLink](https://tradelink.pro/)                 | [Sandox](./sandox.md)                                                           | [GitHub](https://github.com/BEARlogin)                                | ☐          |       ☐         |     ☐      |
 | [Wunderbar Network](https://wunderbar.network/)                 | [Vue.js + TypeScript Substrate Front-End Template](./vue-typescript-substrate-frontend-template.md)                                                           | [GitHub](https://github.com/WunderbarNetwork)                                | ☐          |       ☐         |     ☐      |
+| [Profond.ai](https://www.profond.ai/)                 | [Profond](./Profond.md)                                                           | [GitHub](https://github.com/emarai)                                | ☐          |       ☐         |     ☐      |
 
 
 [🔝](#menu)
