@@ -1,7 +1,7 @@
 # zkSBT
 - **Team Name:** AsMatch
 - **Payment Address:** 
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
@@ -100,13 +100,13 @@ https://github.com/As-Match/asMatch-front-end
 
 ## Development Roadmap :nut_and_bolt:
 
-* ink! SBT smart contract
 * PC website for user to generate AIGC photos and mint SBT to the Polkadot blockchain and generate proof key
 * AsMatch iOS/Android App support verifies the proof key and sets the SBT picture as the user's photo
+* ink! SBT smart contract
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
+- **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 50,000 USDT
 
@@ -122,10 +122,8 @@ https://github.com/As-Match/asMatch-front-end
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0e. | Article | We will publish an article that explains what was done as part of the grant |
-| 2. | PC website | The PC website for users to upload pictures and generate AIGC pictures and generate proof key|
-| 3. | iOS/Android App | AsMatch iOS/Android App support verify the proof key and set SBT picture as the users' photo |
-
+| **0d.** | Article | We will publish an article that explains what was done as part of the grant. |
+| **1.** | PC website | The PC website for users to upload pictures and generate AIGC pictures and generate proof key.|
 
 ### Milestone 2 - AsMatch iOS/Android Application
 
@@ -139,10 +137,10 @@ https://github.com/As-Match/asMatch-front-end
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0e. | Article | We will publish an article that explains what was done |
-| 1. | iOS/Android | We will deliver iOS/Android applications that allow users to copy-paste or scans the QR code of the proof key to verify the ownership of SBT and set the SBT photo as the user’s photo. |
+| **0d.** | Article | We will publish an article that explains what was done |
+| **1.** | iOS/Android | We will deliver iOS/Android applications that allow users to copy-paste or scans the QR code of the proof key to verify the ownership of SBT and set the SBT photo as the user’s photo. |
 
-### Milestone 3 - ink! SBT smart contract & Manta
+### Milestone 3 - ink! SBT smart contract
 
 - **Estimated duration:** 1.5 months
 - **FTE:**  2
@@ -154,9 +152,9 @@ https://github.com/As-Match/asMatch-front-end
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0e. | Article | We will publish an article that explains what was done |
-| 1. | Smart contract: SBT | We will deliver an ink smart contract that will allow users to mint SBT from the PC website and store metadata on-chain. |
-| 2. | Sync Service | We will deliver a back-end service(Node.js) monitoring the SBT smart contract and syncing SBT metadata to the Manta network for generating proof keys by ZKP. |
+| **0d.** | Article | We will publish an article that explains what was done.|
+| **1.** | Smart contract: SBT | We will deliver an ink smart contract that will allow users to mint SBT from the PC website and store metadata on-chain. |
+| **2.** | Sync Service | We will deliver a back-end service(Node.js) monitoring the SBT smart contract and syncing SBT metadata to the Manta network for generating proof keys by ZKP. |
 
 ## Future Plans
 
@@ -173,7 +171,7 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Web3 Foundation Website
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
