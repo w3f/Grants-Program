@@ -21,6 +21,16 @@ ISMP will also support request timeouts, allowing for more safer parachain <> pa
 
 ![Architecture](https://drive.google.com/uc?id=1t8Qow88En3-ZCW7P0LYjRnbSqzFS30be)
 
+### Use cases
+
+For instance a user wanting to transfer their funds from parachain A to parachain B will initiate a post request on parachain A. This post request is stored in an mmr maintained in the state trie on parachain A. Parachain A's headers also contain the root for this mmr structure.
+
+The user('s wallet) after observing that parachain A's headers have been finalized and made it's way into the relay chain state trie, can present a merkle proof of parachain A's header in the relay chain state trie which parachain B can verify using it's access to the latest relay chain state root. Next they present the mmr proof for the request which they had previously initiated on parachain A. After verifying this mmr proof, parachain B can "execute" the request. In this case minting the equivalent asset that was burnt on parachain A.
+
+There are of course other use cases that can be built on POST requests, but this is the simplest case.
+
+For GET requests, a different mechanism is at play. Perhaps a user wants to settle a bet they had made in a prediction market in parachain A. The data that is needed to settle this bet is on parachain B where we regard parachain B as the oracle parachain. The user initiates a GET request, with it's content the keys of the storage items they need to settle their bet. After initiating the request, the request is stored in the parachain A's mmr trie, but it is never relayed anywhere. Instead, the user('s wallet) then reads the state trie of parachain B and provides the state proof for the appropriate data that was requested.
+
 
 ### **`pallet-ismp`**
 This serves as the foundational element for state-proof based messaging between parachains, enabling state reads of the relay chain directly from any given parachain, granting the ability to verify incoming messages and data from other parachains under the shared security umbrella of the relay chain.
