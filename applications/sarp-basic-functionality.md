@@ -111,12 +111,14 @@ In milestone 1 we want to investigate how the above stated [vulnerability classe
 
 #### Deliverables
 
-| Number | Deliverable                 | Specification                                                                                                | 
-|--------|-----------------------------|--------------------------------------------------------------------------------------------------------------|
-| 0a.    | License                     | MIT                                                                                                   |
-| 1.     | Prototype Code              | Prototype code to approach the above two stated vulnerability classes.                                       | 
-| 2.     | Documentation | Technical documentation, describing the approach we plan to implement in milestone 2, incl. its limitations. | 
-| 3.     | Engagement                  | Engage with teams at Web3 Foundation and Parity for prioritization.                                          |
+| Number | Deliverable                 | Specification                                                                                                                                                                                   | 
+|--------|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                     | MIT                                                                                                                                                                                             |
+| 0b.    | User Documentation                                   | We will provide a basic **tutorial** that explains how to use the tool on a substrate pallet.                                                      |
+| 0c.    | Testing and Testing Guide                            | A first set of tests will be provided, together with a testing guide, that describes how to run them.                                                                                   |
+| 1.     | Prototype Code              | Prototype code to approach the above two stated vulnerability classes.                                                                                                                           | 
+| 2.     | Documentation | Technical documentation <ul><li>describing the approach we plan to implement in milestone 2, incl. its limitations. </li><li>with (interesting) examples of the vulnerability classes.</li></ul> | 
+| 3.     | Engagement                  | Engage with teams at Web3 Foundation and Parity for prioritization.                                                                                                                             |
 
 
 
@@ -130,15 +132,15 @@ After the research in milestone 1, we want to implement a first simple version o
 
 #### Deliverables
 
-| Number | Deliverable                                          | Specification                                                                                                                                                                                                                                                                           | 
-|--------|------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a.    | License                                              | MIT                                                                                                                                                                                                                                                                              |
-| 0b.    | User Documentation                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the tool on a substrate pallet.|
-| 0c.    | Testing and Testing Guide                            | Each check, that the tool can perform, will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the testing guide, we will describe how to run these tests.                                                                                                 |
-| 0d.    | Docker                                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                           |
-| 1.     | Tool                                                 | A robust static analysis tool that works on Substrate runtime pallets. The tool will provide at least one check on each vulnerability class. See also [Limitations](#Limitations).                                                                                              | 
-| 2.     | Vulnerability Documentation | For each of the above stated vulnerability classes we will document, how this vulnerability is covered by our checks and limitations thereof.                                                                                                                                           | 
-| 3.     | Engagement                                           | Engage with teams at Web3 Foundation and Parity to prioritise vulnerability classes.                                                                                                                                                                                          |
+| Number | Deliverable                                          | Specification                                                                                                                                                                                            | 
+|--------|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                                              | MIT                                                                                                                                                                                                      |
+| 0b.    | User Documentation                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the tool on a substrate pallet.                                                              |
+| 0c.    | Testing and Testing Guide                            | Each check, that the tool can perform, will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the testing guide, we will describe how to run these tests.          |
+| 0d.    | Docker                                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                            |
+| 1.     | Tool                                                 | A robust static analysis tool that works on Substrate runtime pallets. Our aim is to provide features, that address all of the above stated vulnerability classes. See also [Limitations](#Limitations). | 
+| 2.     | Vulnerability Documentation | For each of the above stated vulnerability classes we will document, how this vulnerability is covered by our checks and limitations thereof.                                                            | 
+| 3.     | Engagement                                           | Engage with teams at Web3 Foundation and Parity to prioritise vulnerability classes.                                                                                                                     |
 
 #### Limitations
 The possibilities of a static code analysis are limited. On the one hand, the checks can generate many false positives. On the other hand, it might not be possible to catch all vulnerabilities within a class of vulnerabilities. Because of this we will document the limits of the tool and closely cooperate with the teams at Web3 Foundation and Parity to prioritize the features and their implementation. 
