@@ -171,7 +171,7 @@ Societal will use this subcription based pricing system to charge the DAOs on it
 
 ## Future Plans
 
-Societal plans to launch its own parachain and be the go to DAO Creation and Mangament platofrm for Polkadot and all of web3. We believe that this subscription pricing system will be a great onramp of DAOs from other ecosystems into Polkadot, as the organization members do not have to purchase the Societal token to participate in on-chain transactions. This will reduce the barrier for these DAOs to use a governace scaling solution for their organization, such as Societal. This subscription payment system can also be used by many substrate chains to reduce this barrier adoption as well.
+Societal plans to launch its own parachain and be the go-to DAO Creation and Management platform for Polkadot and all of web3. We believe that this subscription pricing system will be a great on-ramp of DAOs from other ecosystems into Polkadot, as the organization members do not have to purchase the Societal token to participate in on-chain transactions. This will reduce the barrier for these DAOs to use a governance scaling solution for their organization, such as Societal. This subscription payment system can also be used by many substrate chains to reduce this barrier adoption as well.
 
 
 ## Additional Information :heavy_plus_sign:
