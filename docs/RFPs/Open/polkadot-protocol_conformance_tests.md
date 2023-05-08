@@ -30,7 +30,7 @@ Initially, the focus would be on unit tests with tests designed and generated at
         - justification import & validation/verification
 - trie proof verification
 - scale encoding and decoding, for specific message types, and randomly generated ones
-- parachain candidate validation (once there are sufficient implementations that support parachains)
+- parachain candidate validation
 
 The goal of the initial grant should be to develop a PoC. The long-term goal should be to develop a comprehensive test suite that is funded by the on-chain treasury. 
 
@@ -39,6 +39,7 @@ The goal of the initial grant should be to develop a PoC. The long-term goal sho
 - [GitHub polkadot-tests](https://github.com/w3f/polkadot-tests)
 - [Chopsticks](https://github.com/AcalaNetwork/chopsticks)
 - [Zombienet](https://github.com/paritytech/zombienet) 
+- [try-runtime](https://docs.substrate.io/reference/command-line-tools/try-runtime/) 
 
 ## Deliverables
 
