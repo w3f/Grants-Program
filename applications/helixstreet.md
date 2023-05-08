@@ -1,12 +1,9 @@
-# W3F Grant Proposal
+# helixstreet Module
 
-
-
-- **Project Name:** helixstreet Module
 - **Team Name:** helixstreet
 - **Payment Address:** bc1qvu2mjjm602rqshwkspy2v7a6wke529uzkucnej
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
-
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/820#issuecomment-1442461748)
 
 ## Project Overview :page_facing_up:
 

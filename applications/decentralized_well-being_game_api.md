@@ -1,8 +1,4 @@
-# Project Overview
-
-## Project Name
-
-Decentralized Well-being Game API
+# Decentralized Well-being Game API
 
 ## Team Name
 
@@ -24,14 +20,13 @@ Well-being engagement is up and rising. With a more health-conscious generation 
 
 The Health Hero Game API provides the opportunity for developers to build games, apps, and features using well-being data endpoints that are centered around steps and fitness data. The play-to-earn approach of the API endpoints, allows the users to earn points in different areas such as XP (Experience Points), HP (Hero Points), Levels, Life, Star Power, badges, and parcels of land that ultimately rewards the user with digital assets (collectibles/NFTs) that are valued in Polkadot currency and Using State Channels to send out the payouts to users from the treasury based on their authentic health data.
 
-
 API specifications of the core functionality
 
 1. Endpoints will provide the following data:
-  1. IoT data: step trackers, to include Google Fit, Apple Health, Garmin, Fitbit, Peloton, Headspace, Calm, and more.
-  2. Activity data
-  3. Gamification data points such as XP, HP, levels, life, star power
-  4. Smart contracts customization based on health data engagement
+1. IoT data: step trackers, to include Google Fit, Apple Health, Garmin, Fitbit, Peloton, Headspace, Calm, and more.
+2. Activity data
+3. Gamification data points such as XP, HP, levels, life, star power
+4. Smart contracts customization based on health data engagement
 
 ## Ecosystem Fit
 
@@ -57,7 +52,7 @@ With the growing need of well-being engagement tools, a major pain point is the 
 
 ## Team
 
-### Team Members:
+### Team Members
 
 Team Leaders:
 
@@ -85,7 +80,7 @@ Website:
 
 - gohealthhero.com
 
-##Legal Structure
+## Legal Structure
 
 **Registered Address**
 
@@ -136,11 +131,12 @@ Costs
 - $25,000 USD
 
 ### Purposed Diagram
+
 ![Architecture  Diagram](https://gohealthhero-production.s3.amazonaws.com/Web3.png)
 
 ### State Channels Implementation
-![State Channels (2)](https://user-images.githubusercontent.com/44548958/144947081-88d681a9-e9c7-419d-96b0-8ec68fda6687.png)
 
+![State Channels (2)](https://user-images.githubusercontent.com/44548958/144947081-88d681a9-e9c7-419d-96b0-8ec68fda6687.png)
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |

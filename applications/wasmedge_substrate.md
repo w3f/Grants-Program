@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# WasmEdge for Substrate
 
-- **Project Name:** WasmEdge for Substrate
 - **Team Name:** Second State
 - **Payment Address:** 0xf212a28a62d01549c323a5feac7bbc8534064c41 (Ethereum USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -127,11 +126,10 @@ https://github.com/ParaState/substrate-ssvm-node
 | 0d.    | Docker          | Create Docker images with all build dependencies to faciliate the build process |
 | 0e.    | Article         | Create a blog article to annouce Substrate's option to use WasmEdge |
 | 1.     | Software        | Create configuration options to select between wasmtime and WasmEdge host wrappers. The option will allow the compiler / build system to choose between the wasmtime and wasmedge executors when building the substrate binary. |
-| 2.     | Upstream PR     | Create and merge a PR for the Substrate project. Work with the Substrate team to make sure that the PR is up to the coding standard and testing requirements for Substrate to merge it. |
 
 ### Milestone 3 -- Performance benchmarks and analysis
 
-- Estimated duration: 1 month
+- Estimated duration: 6 months
 - FTE: 2
 - Costs: 15,000 USD
 
@@ -145,6 +143,7 @@ https://github.com/ParaState/substrate-ssvm-node
 | 1.     | Config          | Make sure that AOT is enabled for WasmEdge |
 | 2.     | Eval            | Create performance metrics Substrate integration tests for wasmtime vs WasmEdge, as well as WasmEdge interpreter vs AOT |
 | 3.     | Eval            | Identify performance bottlenecks in Substrate WasmEdge for future actions |
+| 4.     | Upstream PR     | Create and merge a PR for the Substrate project. Work with the Substrate team to make sure that the PR is up to the coding standard and testing requirements for Substrate to merge it. |
 
 
 ## Future Plans

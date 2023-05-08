@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Hamster
 
-- **Project Name:** Hamster
 - **Team Name:** [Hamster](https://github.com/orgs/hamster-shared)
 - **Payment Address:** 0xa5dEFB39eDF3B678D3C4F264EAA909E3f490d2D0(USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

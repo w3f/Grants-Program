@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Ares
 
-* **Project:** `Ares`
 * **Proposer:** [jiyilanzhou](https://github.com/jiyilanzhou)
 * **Payment Address:**  3EDZ47i4ro1cgGqjXsyduuYyLrUesCgekw
 

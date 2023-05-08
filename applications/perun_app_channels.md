@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Perun App Channels
 
-- **Project Name:** Perun App Channels
 - **Team Name:** [Perun](https://perun.network)@[PolyCrypt](https://polycry.pt)
 - **Payment Address:**  0x308Ca526B009e10Ef0482C38A3370BFb44A32908 (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
@@ -274,7 +273,7 @@ https://github.com/ajuna-network/Ajuna.ServiceLayer.
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that describes the new functionality. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
-| 1. | App identifier and data | We will extend the channel parameters to include an optional app identifier and the channel state to include an app data field. We will adapt existing code and tests to accomodate the changes.
+| 1. | App identifier and data | We will extend the channel parameters to include an optional app identifier and the channel state to include an app data field. We will adapt existing code and tests to accommodate the changes.
 | 2. | App registry | We will create an app registry abstraction that will be used for dereferencing `validTransition` calls to the respective application logic. For testing, we will need to implement a simple app registry as part of a pallet. We plan to coordinate with Ajuna to ensure that the app registry abstraction can later be integrated with their platform.
 | 3. | Progress function | We will implement functionality for enforcing an app state transition without full off-chain consensus. This will require adapting the channel state machine and therefore also the existing Pallet state variables and functions. A corresponding new event type must be added.
 
@@ -291,7 +290,7 @@ https://github.com/ajuna-network/Ajuna.ServiceLayer.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
 | 1. | Update backend | We will update the Polkadot backend to ensure that it is compatible with the latest release of go-perun.
-| 2. | App identifier and data | We will extend the channel parameter encoding and decoding to include the app identifier. We will extend the channel state encoding to include an app data field. We will adapt existing code and tests to accomodate the changes.
+| 2. | App identifier and data | We will extend the channel parameter encoding and decoding to include the app identifier. We will extend the channel state encoding to include an app data field. We will adapt existing code and tests to accommodate the changes.
 | 3. | Progress function | We will implement the `Progress` function for the Polkadot backend so that it satisfies the client protocol requirements. We will adapt the event handler functionality to cope with the new event type.
 
 ### Milestone 3 — Demonstrator

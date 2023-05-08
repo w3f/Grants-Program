@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# Canyon Network
 
-- **Project Name:** Canyon Network
 - **Team Name:** Canyon Labs
 - **Payment Address:** 0x009643f61C7cbc91404aE77Fe65542D098B822d1 (DAI)
 
@@ -28,7 +27,7 @@ There is no doubt that the infrastructure, providing a secure, highly available,
 
 - **Contact Name:** Liu-Cheng Xu
 - **Contact Email:** xuliuchengxlc@gmail.com
-- **Website:** https://canyon-network.io
+- **Website:** <https://canyon-network.io>
 
 ### Legal Structure
 
@@ -44,17 +43,17 @@ There is no doubt that the infrastructure, providing a secure, highly available,
 
 ### Team Code Repos
 
-- https://github.com/canyon-network
-- https://github.com/canyon-network/canyon
-- https://github.com/canyon-network/canyon-cli
+- <https://github.com/canyon-network>
+- <https://github.com/canyon-network/canyon>
+- <https://github.com/canyon-network/canyon-cli>
 
 The GitHub accounts of all team members:
 
-- https://github.com/liuchengxu
+- <https://github.com/liuchengxu>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/liucheng-xu-2a639b116/
+- <https://www.linkedin.com/in/liucheng-xu-2a639b116/>
 
 ## Development Status :open_book:
 

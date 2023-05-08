@@ -1,4 +1,4 @@
-# Open Grant Proposal
+# Delmonicos
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required
 > information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open
@@ -7,22 +7,22 @@
 
 > This page is also available in [Chinese (中文)](./application-template-cn.md).
 
-* **Project Name:** Delmonicos
 * **Team Name:** Lumena
-* **Payment Address:** DAI(ERC20) 0x8cbc9b6191c1bba1652d51ae73f7c15f485a1c72. 
+* **Payment Address:** DAI(ERC20) 0x8cbc9b6191c1bba1652d51ae73f7c15f485a1c72.
 * **Payment address for Milestone 3:** DAI(ERC20) 0x8c810c87124c836802412dbbc42c5d6a8027dffc
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique
 identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
+
 #### A blockchain based EV charging platform initiated by [Lumena](https://www.lumena.tech) ####
 
 *This application is not in response to an RFP.*
 
 > Why Delmonicos ?
-> Delmonico's is a **chain** of restaurants in U.S. where the notables liked to go, among them Nikola Tesla. Tesla 
-> worked every day from 9:00 a.m. until 6:00 p.m. or later, with dinner at exactly 8:10 p.m., at Delmonico's 
+> Delmonico's is a **chain** of restaurants in U.S. where the notables liked to go, among them Nikola Tesla. Tesla
+> worked every day from 9:00 a.m. until 6:00 p.m. or later, with dinner at exactly 8:10 p.m., at Delmonico's
 > restaurant. So Delmonico's is a **chain** with Tesla going in it. An ideal codename for such a project. :blush:
 
 ### Overview
@@ -91,27 +91,29 @@ The following schema describes the overall architecture of the project.
   at <https://github.com/lumena-tech/delmonicos>
   
 #### Data Management
-We don't plan to store private data on-chain. Only figures regarding the Kwh consumed for charging sessions and 
-corresponding price. Otherwise, proofs will be stored on-chain (e.g. proof of consent of starting a charging session,
-proof of consent of bank account debit, ...). Proofs will mainly consist in hash of structured data signed by 
-external actors. 
 
-We will take care of being GDPR compliant. Private data will be stored of chain. The detailed design of data 
-management will be decided during the development of the project. We already have experience in developing GDPR 
+We don't plan to store private data on-chain. Only figures regarding the Kwh consumed for charging sessions and
+corresponding price. Otherwise, proofs will be stored on-chain (e.g. proof of consent of starting a charging session,
+proof of consent of bank account debit, ...). Proofs will mainly consist in hash of structured data signed by
+external actors.
+
+We will take care of being GDPR compliant. Private data will be stored of chain. The detailed design of data
+management will be decided during the development of the project. We already have experience in developing GDPR
 compliant blockchain based system for identity by having heavily contributed to the development of [OnchainId](https://tokeny.com/onchainid/).
 [API documentation](http://docs.onchainid.com/).
 
 ### Ecosystem Fit
 
-At that stage, we are not aware of any similar projects. The fact that charging stations themselves would be 
-blockchain nodes is a real innovation. We are currently talking with 2 solid players in the market around this 
+At that stage, we are not aware of any similar projects. The fact that charging stations themselves would be
+blockchain nodes is a real innovation. We are currently talking with 2 solid players in the market around this
 technology that would be a breakthrough:
-* A solid French manufacturer of charging station that would be keen to propose simpler and cost effective 
+
+* A solid French manufacturer of charging station that would be keen to propose simpler and cost effective
   micropayment solution
-* A Historic car manufacturer that would be keen to facilitate access to its large network of customers (B2C and B2B) 
+* A Historic car manufacturer that would be keen to facilitate access to its large network of customers (B2C and B2B)
   by providing easy and accessible payment solution to the future EV driver.
 
-With both of them, that are demonstrating solid interest, we would be able to engage POC and even Spin off, should 
+With both of them, that are demonstrating solid interest, we would be able to engage POC and even Spin off, should
 we be successful in the current phase.
 
 ## Team :busts_in_silhouette:
@@ -152,11 +154,10 @@ we be successful in the current phase.
   Substrate. He is the lead architect and developer of the above mentioned project Ibisa and My Sardine. Here are
   some sample public repos : <https://github.com/adetante/deconz-sp>, <https://github.com/adetante/explorer-besu-plugin>,
   <https://github.com/intech-id/collexi-rollup>.
-* Franck LEGARDEUR is the founder and president of ZEENCO (Zero Emission ENergy COmpany), and has a solid experience 
+* Franck LEGARDEUR is the founder and president of ZEENCO (Zero Emission ENergy COmpany), and has a solid experience
   in the EV infrastructure. He was the Managing Director of France & South of Europe of [EVBox](https://evbox.com/fr-fr/)
-  before becoming Managing Director of [ZeBorne](https://zeborne.com/fr-fr/accueil). He is now deploying solution 
+  before becoming Managing Director of [ZeBorne](https://zeborne.com/fr-fr/accueil). He is now deploying solution
   for B2B and B2C customers all over France. He will act as the product owner on this project.
-
 
 ### Team Code Repos
 
@@ -211,7 +212,7 @@ For each milestone:
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
 | 1. | Substrate module: Identity | Choose an existing [Identity](https://github.com/paritytech/substrate/tree/master/frame/identity) module to start from, integrate it with the project |  
 | 2. | Substrate module: Membership | Integrate existing [Membership](https://github.com/paritytech/substrate/tree/master/frame/membership) module to start from, integrate it with the project |  
@@ -230,7 +231,7 @@ For each milestone:
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
 | 1. | Substrate module: Identity | Adapt [Identity](https://github.com/paritytech/substrate/tree/master/frame/identity) module with the required information that are needed for charging purpose |  
 | 2. | Substrate module: Membership | Implement [Membership](https://github.com/paritytech/substrate/tree/master/frame/membership) module check if the connected user has subscribed to the service or is allowed to initiate one time payment by his bank, using SEPA Instant payment or SEPA Mandate. |  
@@ -250,7 +251,7 @@ For each milestone:
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
 | 1. | Substrate chain | The node will be compiled to be executable inside the charging station. |  
 | 2. | Admin Front-End | Implement a basic admin front end that allows the configuration of a charging station, and the deployment of a Tariff scheme as a smart contract  |  
@@ -262,6 +263,7 @@ For each milestone:
 
 If this phase is successful, we will create a company dedicated to the development, marketing and selling of the
 solution. First step will be to find investors (coming from industry or VCs). Future developments will include :
+
 * The ability to automatically detect who is trying to charge his EV, based on the location of the station and on
   the location of users, choosing the closest user.
 * A fully working production ready mobile app with an embedded wallet to identify and authenticate users, being
@@ -279,5 +281,5 @@ solution. First step will be to find investors (coming from industry or VCs). Fu
 We are convinced that this project has a huge potential to solve the majority of problems or paint points that EV
 users are facing regarding charging their vehicule. This is typically a domain where blockchain technology is the ideal
 technology by allowing the secure digitalisation of assets (charging power, money and identity) and the secure
-conversion of value between these assets. Our potential partnerships with actors mentioned above will give us direct 
+conversion of value between these assets. Our potential partnerships with actors mentioned above will give us direct
 access to the market.
