@@ -91,12 +91,6 @@ The framework now has all the information at hand to execute a fully abstracted 
 The gas fees are therefore called by the person utilizing the functionality - the user calling the initial extrinsic.
 
 
-### Runtime Decoder
-Currently the calling contracts with the `bare_call` functionality ends up in bytestreams on both ends that require knowledge of the traits and then a manual implementation of the bytestream decoding by the implementing chain. 
-
-We want to generalize this. Fortunately there has been already some research been done on this (https://github.com/paritytech/ink/issues/1674, which as well signals demand), but noone has implemented it so far. We want to change this by implementing the suggested solutions of 
-
-
 #### ink! Stylograph Facade Builder
 
 The aforementioned information is enough to auto generate a full boilerplate contract as template that substrate chain developers can use to deploy a sample contract and to write a macro that defines the interface that the runtime expects. 
@@ -105,7 +99,10 @@ This contract can be released to the extension developer community to use it as 
 
 ![image](https://user-images.githubusercontent.com/120174523/236872845-248bc23e-a96b-4008-8e9e-6d6cf1756d35.png)
 
-We therefore are building a cli tool to package a versioned ink! crate with installation steps and base documentation that can be published with a new runtime release of the chain to give protocol and extension developers a head start to extension development.
+We therefore are building a cli tool to package a versioned ink! crate with installation steps and base documentation that can be published with a new runtime release of the chain to give protocol and extension developers a head start to extension development. Both the chain and the contract will depend on those traits as dependency to identify the interface.
+
+![image](https://user-images.githubusercontent.com/120174523/236881416-f7d622dc-2993-4b84-99c3-4b1835970372.png)
+
 
 ## Ecosystem Fit
 
@@ -145,9 +142,9 @@ The development will happen on https://github.com/deep-ink-ventures/genesis-dao-
 ## Development Roadmap :nut_and_bolt:
 ### Milestone 1 
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 3 month
 - **FTE:**  3-4
-- **Costs:** 50,000
+- **Costs:** 70,000
 
 | Number | Deliverable                       | Specification                                                                                                                                                                                                                                 |
 | -----: |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -155,14 +152,14 @@ The development will happen on https://github.com/deep-ink-ventures/genesis-dao-
 | **0b.** | Documentation                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a can integrate the pallet and start working with |
 | **0c.** | Testing and Testing Guide         | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.              |            
 | 1. | Pallet Development           | Develop the pallet as specified within the `pallet_stylograph` section above.     |
-| 2. | Refrence Implementation           |  We will provide a sample implementation alongside with `pallet_contracts` on the Genesis DAO test chain to demonstrate the functionality.    |
+
 
 
 ### Milestone 2
 
 - **Estimated Duration:** 2 month
 - **FTE:**  3-4
-- **Costs:** 50,000 USD
+- **Costs:** 30,000 USD
 
 
 | Number | Deliverable                        | Specification                                                                                                                                                                                                                                 |
@@ -170,8 +167,8 @@ The development will happen on https://github.com/deep-ink-ventures/genesis-dao-
 | **0a.** | License                            | Apache 2.0       |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a can integrate the pallet and start working with |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.  |
-| 1. | Convenient value decoding lib | Smoothen the value transfer between Smart Contracts and the runtime as specified above in the `Runtime Decoder` section.   |                                                                                                              |
-| 2. | Facade Builder  | Develop the code generator for smart contracts as specified above in the `ink! Stylograph Facade Builder` section.   |
+| 1. | Facade Builder  | Develop the code generator for smart contracts as specified above in the `ink! Stylograph Facade Builder` section.   |
+| 2. | Refrence Implementation           |  We will provide a sample implementation alongside with `pallet_contracts` on the Genesis DAO test chain to demonstrate the functionality.    |
 
 
 ## Future Plans
