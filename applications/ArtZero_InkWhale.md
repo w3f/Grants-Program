@@ -3,7 +3,7 @@
 - **Project Name:** ArtZero & InkWhale
 - **Team Name:** ArtZero
 - **Payment Address:** 1scixS3ofLuBN8XEQQdSjMQaLtvvbcJiQAqpnaov8xopX78
-- **[Level]:** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
