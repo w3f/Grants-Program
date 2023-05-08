@@ -2,7 +2,7 @@
 
 - **Team Name:** Supercomputing Systems AG (SCS)
 - **Payment Address:** 0xd24622311a22470353bd21d9bcd9e02ba0cfebbe (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
@@ -86,9 +86,9 @@ We have not started to work on this.
 
 ### Overview
 
-- **Total Estimated Duration:** 1,5 months
+- **Total Estimated Duration:** 0,5 months
 - **Full-Time Equivalent (FTE):** 0,8 FTE
-- **Total Costs:** 30.000 USD
+- **Total Costs:** 10.000 USD
 
 
 
@@ -99,7 +99,6 @@ For this project we want to address the following vulnerability classes:
 * [incorrect origin](https://github.com/bhargavbh/MIRAI/blob/main/substrate_examples/incorrect-origin/description.md) of dispatchable functions. 
 * [unsigned transaction](https://github.com/bhargavbh/MIRAI/blob/main/substrate_examples/unsigned-transaction/description.md) validation.
 
-These will be part of both milestones.
 
 ### Milestone 1 - Research
 
@@ -121,41 +120,18 @@ In milestone 1 we want to investigate how the above stated [vulnerability classe
 | 3.     | Engagement                  | Engage with teams at Web3 Foundation and Parity for prioritization.                                                                                                                             |
 
 
-
-### Milestone 2 - Basic Setup + 2 Usecases
-
-- **Estimated duration:** 1 month
-- **FTE:** 0,8 FTE
-- **Costs:** 20.000 USD
-
-After the research in milestone 1, we want to implement a first simple version of the tool, together with tests and documentation. The goal is to show the feasibility of the approach and to lay a basis for future development. Therefore we leave tasks with little risks to future work packages (see also [Future Plans](#future-plans)).
-
-#### Deliverables
-
-| Number | Deliverable                                          | Specification                                                                                                                                                                                            | 
-|--------|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a.    | License                                              | MIT                                                                                                                                                                                                      |
-| 0b.    | User Documentation                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the tool on a substrate pallet.                                                              |
-| 0c.    | Testing and Testing Guide                            | Each check, that the tool can perform, will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the testing guide, we will describe how to run these tests.          |
-| 0d.    | Docker                                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                            |
-| 1.     | Tool                                                 | A robust static analysis tool that works on Substrate runtime pallets. Our aim is to provide features, that address all of the above stated vulnerability classes. See also [Limitations](#Limitations). | 
-| 2.     | Vulnerability Documentation | For each of the above stated vulnerability classes we will document, how this vulnerability is covered by our checks and limitations thereof.                                                            | 
-| 3.     | Engagement                                           | Engage with teams at Web3 Foundation and Parity to prioritise vulnerability classes.                                                                                                                     |
-
-#### Limitations
-The possibilities of a static code analysis are limited. On the one hand, the checks can generate many false positives. On the other hand, it might not be possible to catch all vulnerabilities within a class of vulnerabilities. Because of this we will document the limits of the tool and closely cooperate with the teams at Web3 Foundation and Parity to prioritize the features and their implementation. 
-
 ## Future Plans
 
 The next steps for the tool would be to:
 
-* improve the usability, by providing
-  * means to surpress warnings
-  * a comprehensive user tutorial, incl. documentation on the risks of each vulnerability
-* add more features including checks on the following vulnerability classes:
-  * tracking bad randomness: ensure bad randomness does not leak into sensitive functions.
-  * detect panics statically to avoid potential DoS attacks: these include [unsafe arithmetic operations](https://github.com/bhargavbh/MIRAI/blob/main/substrate_examples/arithmetic-overflow/description.md), access outside bounds, assertion failures, etc.
-  * tracking unsanitised input leakage for sensitive functions.
+1. Implement a first simple version of the tool, together with tests and documentation. 
+2. Improve the usability, by providing
+   * means to surpress warnings
+   * a comprehensive user tutorial, incl. documentation on the risks of each vulnerability
+3. Add more features including checks on the following vulnerability classes:
+   * tracking bad randomness: ensure bad randomness does not leak into sensitive functions.
+   * detect panics statically to avoid potential DoS attacks: these include [unsafe arithmetic operations](https://github.com/bhargavbh/MIRAI/blob/main/substrate_examples/arithmetic-overflow/description.md), access outside bounds, assertion failures, etc.
+   * tracking unsanitised input leakage for sensitive functions.
 
 Once we have a tool with a good feature set and basic usability features, we want to promote it to the Polkadot developers. Once the tool is in use, we hope to receive feedback on further features and improvements by the developers.
 
