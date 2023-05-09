@@ -103,6 +103,31 @@ We therefore are building a CLI tool to package a versioned ink! crate with inst
 
 ![image](https://user-images.githubusercontent.com/120174523/236881416-f7d622dc-2993-4b84-99c3-4b1835970372.png)
 
+## Additional Development
+As this is planned to be part of our to-be-planned-system-parachain, we are as well pushing the development of the main chain within this proposal.
+
+### Token Transfer
+Currently we rely on wallet extensions and polkadot.js.org to transfer DAO tokens around that reside on Genesis DAO. We have a primitive frontend UI in our MVP but would like to expand this to a more user friendly interface.
+
+We have already created some designs to show the direction, but this would include full wireframes, designs + additions to our backend services and, of course, the dApp:
+
+![image](https://github.com/deep-ink-ventures/Grants-Program/assets/120174523/f5c0bdf2-1600-4264-bda5-75a7708c1459)
+
+## Council Management
+We’ve already created the multisignature part of council and treasury management within our product / wireframe and design department and want to roll out a Gnosis Safe - Style interface for this as part of the treasury management.
+
+We are using pallet_multisig for this and currently council members need to go via polkadot.js.org, not the most user friendly interface in the world.
+
+This would again include the full wireframes, desings and code changes in the backend and frontend. We have already implemented the multisig part.
+
+![image](https://github.com/deep-ink-ventures/Grants-Program/assets/120174523/68608920-3a08-4658-bb84-2f1852b42053)
+
+## DAO Dashboard Add-On
+
+We are createing a few designs to make the DAO Dashboard more friendly and intuitive for users and want to do the frontend implementation as well as the respective adjustments to the APIs of our backend service.
+
+![image](https://github.com/deep-ink-ventures/Grants-Program/assets/120174523/3d1a5587-3bef-4d84-ad96-1a5c99c0d4c8)
+
 
 ## Ecosystem Fit
 
@@ -150,8 +175,11 @@ The development will happen on https://github.com/deep-ink-ventures/genesis-dao-
 | -----: |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **0a.** | License                           | Apache 2.0                                                |                                                                                                                                                                                    
 | **0b.** | Documentation                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a can integrate the pallet and start working with |
-| **0c.** | Testing and Testing Guide         | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.              |            
+| **0c.** | Testing and Testing Guide         | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.              |  
+| **0d.** | Benchmarking         | We will provide benchmarking & weights for the pallet            |   
 | 1. | Pallet Development           | Develop the pallet as specified within the `pallet_stylograph` section above.     |
+| 2. | Frontend Integration: Dashboard Add-On        | Develop full wireframes and designs + Frontend, Backend integration, deployed on https://genesis-dao.org.     |
+| 3. | Frontend Integration: Token Transfer        | Develop full wireframes and designs + Frontend, Backend integration, deployed on https://genesis-dao.org.     |
 
 
 
@@ -169,6 +197,7 @@ The development will happen on https://github.com/deep-ink-ventures/genesis-dao-
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.  |
 | 1. | Facade Builder  | Develop the code generator for smart contracts as specified above in the `ink! Stylograph Facade Builder` section.   |
 | 2. | Refrence Implementation           |  We will provide a sample implementation alongside with `pallet_contracts` on the Genesis DAO test chain to demonstrate the functionality.    |
+| 3. | Frontend Integration: Councils Management        | Develop full wireframes and designs + Frontend, Backend integration, deployed on https://genesis-dao.org.     |
 
 
 ## Future Plans
