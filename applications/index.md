@@ -53,6 +53,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Profond.ai](https://www.profond.ai/)                 | [Profond](./Profond.md)                                                           | [GitHub](https://github.com/emarai)                                | ☐          |       ☐         |     ☐      |
 | [727.ventures](https://727.ventures)                 | [Patron](./patron.md)                                                           | [GitHub](https://github.com/727-Ventures)                                | ☐          |       ☐         |     ☐      |
 | [Supercomputing Systems AG](https://www.scs.ch)                 | [SARP - A Static Analysis Tool for Runtime Pallets](./sarp-basic-functionality.md)                                                           | [GitHub](https://github.com/scs)                                | ☐          |       ☐         |     ☐      |
+| [Ed Anderson](https://github.com/eca20)                 | [Blockchainia](./blockchainia.md)                                                           | [GitHub](https://github.com/eca20)                                | ☐          |       ☐         |     ☐      |
 
 
 [🔝](#menu)
