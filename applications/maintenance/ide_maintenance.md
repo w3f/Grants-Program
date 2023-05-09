@@ -33,12 +33,8 @@ The following repo will be maintained:
 
 ### Team members
 
-- **Team lead:** [Karan Chopra](https://github.com/karanchopraa)
-- **Team member:** [Kulwinder](https://github.com/kulwindersingh-ant)
-- **Team member:** [Shubham Gupta](https://github.com/s-h-ubham)
-- **Team member:** [Veer Pratap Singh](https://github.com/coolveer)
+- **Team lead:** [Shubham Gupta](https://github.com/s-h-ubham)
 - **Team member:** [Shweta Saini](https://github.com/shweta2217)
-- **Team member:** [Rahul Saharan](https://github.com/RahulS100)
 
 ### Contact
 
@@ -104,9 +100,9 @@ Our responsibilities:
 - **Start Date:** Project will start after 3 days post approval.
 - **Sprint/Period Duration:** 1 Month/4 Weeks 
 - **Total Duration:** 6 months initially, will continue as per the work and support of the Web3 foundation Team
-- **Full-Time Equivalent (FTE):**  3 FTE (2 full time, 2 part time)
-- **Max budget per sprint/period:** 11,540 USD/Sprint
-- **Hourly rate:** 24USD/Dev
+- **Full-Time Equivalent (FTE):**  2 FTE
+- **Max budget per sprint/period:** 5120 USD/Sprint
+- **Hourly rate:** 16USD/Dev
 
 ## Future Plans
 
@@ -118,4 +114,4 @@ We expect to continue to be involved in the Substrate / Ink! ecosystems, and to 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Maintenance Grants Program?** From RFP portal8400
+**How did you hear about the Maintenance Grants Program?** From RFP portal
