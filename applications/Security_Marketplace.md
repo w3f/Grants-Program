@@ -289,15 +289,14 @@ Awaiting Response.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Technical Documentations | We will provide both **Architectural level Documentation** of the code and a
+| **0b.** | Technical Documentations | We will provide both **Architectural level Documentation** of the code and a **Contract level Documentation** that explains in absolute detail how our proposed project will work.|
 | **0c.** | One Solution Architect & One Technical Business Analyst | 
- **Contract level Documentation** that explains in absolute detail how our proposed project will work.| -->
 
 
 ### Milestone 2 Example — Development of Smart Contracts, APIs & Interactive Front-end
 
 - **Estimated Duration:** 6-7 Weeks
-- **FTE:**  4,5
+- **FTE:**  4,5 incuding 2 Smart Contract, 2 Front-end, 2 Back-end developers
 - **Costs:** 30,600 USD
 
 | Number | Deliverable | Specification |
@@ -305,15 +304,13 @@ Awaiting Response.
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | **0b.** | Smart contracts | We will provide all the **smart contracts** as mentioned/discussed in the technical Documentations. |
 | **0c.** | Back-End APIs | We will turn in all the **Node APIs** as mentioned/discussed in the technical Documentations. |
-| **0d.** | Front end builds | We will finish the development of front end and turn it inoto the interactive **Front-End**. |
-| **0e.** | 4,5 **FTE:** incuding 2 Smart Contract, 2 Front-end, 2 Back-end developers | -->
-
+| **0d.** | Front end builds | We will finish the development of front end and turn it into the interactive **Front-End**. |
 
 ### Milestone 3 Example — Protocol Integration & Testing
 
 - **Estimated Duration:** 4 weeks development + 2 weeks UAT/testing phase
-- **FTE:**  2
-- **PTE:**  1,5
+- **FTE:**  2 Front-end developers
+- **PTE:**  2 Quality analysts
 - **Costs:** 13,600 USD
 
 | Number | Deliverable | Specification |
@@ -322,7 +319,6 @@ Awaiting Response.
 | **0b.** | Smart-contract test scripts | We will finish the e2e testing of smart contracts and turn in the Test Scripts. |
 | **0c.** | Node Test scripts | We will finish the e2e testing of node services and turn in the Test Scripts. |
 | **0d.** | Front end Test Scripts | We will finish the e2e testing of front end and turn in the Test Scripts. |
-| **0e.** | 2 **FTE:** Front-end developers, 2 **PTE:** Quality analysts | -->
 
 ## Future Plans
 
