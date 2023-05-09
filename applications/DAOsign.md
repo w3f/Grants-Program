@@ -38,32 +38,32 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+DAOsign fit the Governance category and since, Polkadot and Kusama are designed to be community-driven networks that allow for decentralized governance. DAOsign can fit into this ecosystem by providing a platform for DAOs to manage their decision-making processes in a decentralized manner.
+Our target audience is not only DAOs, but also all the companies, who have a need to deal with the agreement/policies management including the use case for managing Grants, that was presented to you during our introdution call.
+Competitors analysis can be found here: https://docsend.com/view/sbexkxn5su3ahdg8 . Particularly in Substrate / Polkadot / Kusama ecosystems we are not aware about any tools, that provide exactly the same functionality. 
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Team Leader, Founder: Eugene Fine https://github.com/ConsiderItDone,
+- Solution Architect: Ramil Amerzyanov https://github.com/ramilexe
+- Blockchain / Tech lead: Misha Kushka https://github.com/kushkamisha
+- Director of Buisiness development and Partnerships: Oleksandra Burmenska github.com/burmenska
+
+
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Eugene Fine
+- **Contact Email:** eugene@daosign.org
+- **Website:** daosign.org
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** ILLINOIS LIMITED LIABILITY CORPORATION, US
+- **Registered Legal Entity:** DAOSIGN, LLC
 
 ### Team's experience
 
