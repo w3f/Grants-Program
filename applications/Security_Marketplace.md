@@ -283,14 +283,13 @@ Awaiting Response.
 ### Milestone 1 Example — Initial research and design phase
 
 - **Estimated duration:** 2-3 Weeks
-- **FTE:**  1,5
+- **FTE:**  2 One Solution Architect & One Technical Business Analyst
 - **Costs:** 4,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | **0b.** | Technical Documentations | We will provide both **Architectural level Documentation** of the code and a **Contract level Documentation** that explains in absolute detail how our proposed project will work.|
-| **0c.** | One Solution Architect & One Technical Business Analyst | 
 
 
 ### Milestone 2 Example — Development of Smart Contracts, APIs & Interactive Front-end
