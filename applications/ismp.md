@@ -119,7 +119,7 @@ And some Updates to cumulus, required for parachains to read the relay chain sta
 
 ### Overview
 - **Total Estimated Duration:** 4.5 Months
-- **Full-Time Equivalent (FTE):** 6
+- **Full-Time Equivalent (FTE):** 3
 - **Total Costs:** 75,000 USD
 
 ### Milestone 1 — `ismp-rs`
