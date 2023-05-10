@@ -177,6 +177,7 @@ The development will happen on https://github.com/deep-ink-ventures/genesis-dao-
 | **0b.** | Documentation                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a can integrate the pallet and start working with |
 | **0c.** | Testing and Testing Guide         | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.              |  
 | **0d.** | Benchmarking         | We will provide benchmarking & weights for the pallet            |   
+| **0e.** | State of the art Tech Stack         | We will use next.js/react for all frontend components, python / django for the backend services and rust for developing the substrate components|   
 | 1. | Pallet Development           | Develop the pallet as specified within the `pallet_stylograph` section above.     |
 | 2. | Frontend Integration: Dashboard Add-On        | Develop full wireframes and designs + Frontend, Backend integration, deployed on https://genesis-dao.org.     |
 | 3. | Frontend Integration: Token Transfer        | Develop full wireframes and designs + Frontend, Backend integration, deployed on https://genesis-dao.org.     |
@@ -195,6 +196,7 @@ The development will happen on https://github.com/deep-ink-ventures/genesis-dao-
 | **0a.** | License                            | Apache 2.0       |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a can integrate the pallet and start working with |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.  |
+| **0d.** | State of the art Tech Stack         | We will use next.js/react for all frontend components, python / django for the backend services and rust for developing the substrate components|   
 | 1. | Facade Builder  | Develop the code generator for smart contracts as specified above in the `ink! Stylograph Facade Builder` section.   |
 | 2. | Refrence Implementation           |  We will provide a sample implementation alongside with `pallet_contracts` on the Genesis DAO test chain to demonstrate the functionality.    |
 | 3. | Frontend Integration: Councils Management        | Develop full wireframes and designs + Frontend, Backend integration, deployed on https://genesis-dao.org.     |
