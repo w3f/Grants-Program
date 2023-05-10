@@ -66,25 +66,52 @@ Competitors analysis can be found here: https://docsend.com/view/sbexkxn5su3ahdg
 - **Registered Legal Entity:** DAOSIGN, LLC
 
 ### Team's experience
+**Eugene Fine:** CEO, Founder
+Background: 
+Over 20 years of building, scaling, and managing technology organizations. Past experience:
+- CTO for https://www.explorersurgical.com 
+- tech leadership contribution to https://bird.coach
+- tech advisor and facilitator for polywrap.io
+to name a few.
+Also, Eugene is a founder at consideritdone.tech and daosign.org
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
+**Ramil Amerzyanov:** Solution Architect, CTO
+Background: 
+12+ years in building complex enterprize solutions (all SDLC aspects), including 7+ years in Blockchain industry.
+Past projects include:
+- contribution to Ethereum  standards development
+- tech leadership for https://docsend.com/view/fjrvjtyzgm7wgrkj projects
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+**Oleksandra Burmenska:** Director of Business Development and Partnerships
+Background:
+Engineering, MBA, and Psychology diplomas. Over a decade of experience in IT: development and managerial positions, last five years focused on the Blockchain industry. 
+Experience with enterprises and startup companies, scaling teams, and building blockchain products.
+Previous blockchain projects include:
+- successfully managed ICOs during 2017-2019 (example: Õpet – Medium ) 
+- contribution to Polywrap, NEAR, Axelar, GnosisSafe, Avalanche ecosystems
+- contribution to nodle.com ecosystem: managing the block explorer development (before it moved to Subscan), leading the Landslide - Avalanche subnet development,etc. 
+
+**Misha Kushka**: Tech Lead and Blockchain Developer
+Background: 6+ years of professional experience as a developer, 4+ years of professional experience in the Blockchain field, 4+ years experience as a lead
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/ConsiderItDone
+- https://github.com/DAOsign
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- [Eugene Fine](https://github.com/ConsiderItDone)
+- [Ramil Amerzyanov](https://github.com/ramilexe)
+- [Oleksandra Burmenska](https://github.com/Burmenska)
+- [Misha Kushka](https://github.com/kushkamisha)
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- [Eugene Fine](https://www.linkedin.com/in/eugenefine/)
+- [Ramil Amerzyanov](https://www.linkedin.com/in/ramil-amerzyanov/)
+- [Oleksandra Burmenska](https://www.linkedin.com/in/oleksandra-burmenska/)
+- [Misha Kushka](https://www.linkedin.com/in/mkushka/) 
 
 
 ## Development Status :open_book:
@@ -94,7 +121,7 @@ If you've already started implementing your project or it is part of a larger re
 - links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
 - academic publications relevant to the problem,
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
+- references to conversations you might have had related to t his project with anyone from the Web3 Foundation,
 - previous interface iterations, such as mock-ups and wireframes.
 
 ## Development Roadmap :nut_and_bolt:
