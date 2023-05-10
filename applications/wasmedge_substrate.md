@@ -129,7 +129,7 @@ https://github.com/ParaState/substrate-ssvm-node
 
 ### Milestone 3 -- Performance benchmarks and analysis
 
-- Estimated duration: 2 month
+- Estimated duration: 6 months
 - FTE: 2
 - Costs: 15,000 USD
 

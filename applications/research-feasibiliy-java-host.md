@@ -183,9 +183,9 @@ Described below are the steps we think are necessary to get a deep understanding
 
 ### Milestone 1 — Research the feasibility of Polkadot Host in Java
 
-- **Estimated duration:** 4 working weeks
+- **Estimated duration:** 6 working weeks
 - **FTE:** 2
-- **Costs:** $24,000
+- **Costs:** $36,000
 
 This milestone will:
 

@@ -2,6 +2,7 @@
 
 * **Team Name:** Uddug
 * **Payment Address:** 0xc45eAd98E95D1962133d9c15847e2EA4E16dfD0b
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/254#issuecomment-1404647441)
 
 ## Project Overview :page_facing_up:
 

@@ -28,4 +28,4 @@ Please also heed our [Announcement Guidelines](../Support%20Docs/announcement-gu
 
 Finally, we take licensing and the right of all teams in and outside the ecosystem to be recognised for their work very seriously. Using others' work with no attribution or indication that this was not your own work as part of a milestone delivery **will lead to immediate termination**. Please reach out to us before submitting if you have any doubts on how to comply with a specific license and we'll be happy to help.
 
-We also try to enforce our [code of conduct](https://github.com/w3f/Grants-Program/blob/web-test-branch/CODE_OF_CONDUCT.md) and based on this may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
+We also try to enforce our [code of conduct](../../CODE_OF_CONDUCT.md) and based on this may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).

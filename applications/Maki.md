@@ -1,7 +1,7 @@
 # Maki
 
 - **Team Name:** Cyril Carlier (Individual)
-- **Payment Address:** 0x7e575d2140aa4b723ac2014d5627330a7ed514d4 (ERC-20 USDC)
+- **Payment Address:** 0x8a0cFA1DE5c26e3Cd553F33Dc560fBfa5267867C (ERC-20 USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -121,14 +121,14 @@ As mentioned, this application is a response from the [anti-collusion infrastruc
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):**  0.3 FTE
+- **Total Estimated Duration:** 15 months
+- **Full-Time Equivalent (FTE):**  0.15 FTE
 - **Total Costs:** $9,000
 
 ### Milestone 1 — Implement Voter functions
 
-- **Estimated duration:** 2 months
-- **FTE:**  0.3 FTE
+- **Estimated duration:** 9 months
+- **FTE:**  0.1 FTE
 - **Costs:** 3,000 USD
 
 | Number | Deliverable | Specification |
@@ -147,7 +147,7 @@ Note: As the implementation is based on others work (research and specification)
 
 ### Milestone 2 — Coordinator's functions
 
-- **Estimated Duration:** 4 months
+- **Estimated Duration:** 6 months
 - **FTE:**  0.3 FTE
 - **Costs:** 6,000 USD
 
