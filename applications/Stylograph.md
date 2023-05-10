@@ -155,7 +155,7 @@ You can think of this as the inverse to chain extension. While chain extension g
 
 ### Overview
 
-- **Total Estimated Duration:** 3 month
+- **Total Estimated Duration:** 4-5 month
 - **Full-Time Equivalent (FTE):**  3-4 FTE
 - **Total Costs:** $ 100,000
 
