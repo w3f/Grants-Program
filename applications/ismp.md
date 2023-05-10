@@ -118,7 +118,7 @@ And some Updates to cumulus, required for parachains to read the relay chain sta
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-- **Total Estimated Duration:** 6 Months
+- **Total Estimated Duration:** 4.5 Months
 - **Full-Time Equivalent (FTE):** 6
 - **Total Costs:** 75,000 USD
 
