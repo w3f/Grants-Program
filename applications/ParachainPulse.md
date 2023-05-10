@@ -18,7 +18,7 @@ ParachainPulse will leverage the available data to generate a visually appealing
 
 The inclusion of insightful statistics within the analysis will provide users with a comprehensive view of the evolution of ecosystems and facilitate comparisons between parachains. This will enable users to identify the best performers and encourage parachains to easily pinpoint areas that require further improvement.
 
-ParachainPulse is a follow-up project to the previous grant (DotPulse)[https://github.com/w3f/Grants-Program/blob/master/applications/DotPulse.md], that will extend the scope to all parachains in the Polkadot and Kusama ecosystems.
+ParachainPulse is a follow-up project to the previous grant [DotPulse](https://github.com/w3f/Grants-Program/blob/master/applications/DotPulse.md), that will extend the scope to all parachains in the Polkadot and Kusama ecosystems.
 
 ### Project Details
 
@@ -30,9 +30,17 @@ By aggregating all the necessary data in one place, ParachainPulse provides a co
 - access information regarding the total number of contributions made by each developer to the parachain's ecosystem, as well as the number of contributions made within the past 30 days.
 - can view the number of projects that a developer has contributed to, and how many of those projects were active during the last 30 days.
 
-Dashboard Overview
+#### UX/UI Overview: ParachainPulse home page
 
-<img width="833" alt="ParachainPulse" src="https://user-images.githubusercontent.com/91743348/192284364-81506e70-8fb5-4e17-87f2-ab83fddebb20.png">
+![Home page group](https://github.com/arctic-ash/Grants-Program/assets/91743348/a05746c9-d8f6-4cf9-812a-56819ccc6f96)
+
+#### UX/UI Overview: ParachainPulse parachain page
+
+![Parachain page group](https://github.com/arctic-ash/Grants-Program/assets/91743348/e08ac88d-9b0a-4aa9-b24c-479b5f8cb8f0)
+
+#### UX/UI Overview: Submit new parachain
+
+![Submit parachain group](https://github.com/arctic-ash/Grants-Program/assets/91743348/299af90e-d3d3-42ff-9387-71b39718c080)
 
 ### Ecosystem Fit
 
@@ -68,7 +76,7 @@ We’re CrossChain Labs, a team of software developers with hands-on experience 
 
 What sets us apart is our creativity and willingness to think outside the box. We see opportunities where others see problems and come up with solutions that are both elegant and effective.
 
-We're creative, experienced, responsible, organised and do our best to make high quality work and bring ideas to life. Some of our partners are: Polkadot, NEAR protocol, Filecoin.
+We're creative, experienced, responsible, organised and do our best to make high quality work and bring ideas to life. Some of our partners are: Polkadot, Dinity, NEAR protocol, Filecoin.
 
 ### Team Code Repos
 
@@ -199,7 +207,7 @@ To obtain a thorough understanding of the data across various parachains, using 
 To drive adoption of the ParachainPulse platform, CrossChain Labs will:
 - exhibit a YouTube video tutorial showcasing the ParachainPulse functionalities and usage
 - distribute it via social media channels
-- try to inform each parachain of the ParachainPulse existence
+- try to inform parachains of the release of ParachainPulse
 - implement a PRO version with more insightful data for each parachain, including their community's data
 - enable users to login with their metamask wallet and subscribe to the PRO version
 
