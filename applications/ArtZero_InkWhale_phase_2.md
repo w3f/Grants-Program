@@ -91,10 +91,6 @@ ArtZero is now LIVE on mainnet of Aleph Zero and Astar Network at:
 Ink Whale is still in development and the MVP is completed for public test at:
 - https://inkwhale.net
 
-INW token is LIVE on mainnet with token contract address of 
-```
-**5H4aCwLKUpVpct6XGJzDGPPXFockNKQU2JUVNgUw6BXEPzST**
-```
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -117,7 +113,7 @@ In this milestone, We will be adding auto calculation of reward liquidity for ea
 | 0b.    | Documentation      | We will provide technical documents and user guides |
 | 0c.    | Testing Guide      | We will provide Test Plan and Test Results for operating and using the staking and yield farming platform as well as launchpad operation. |
 | 0d.    | Article/Tutorial   | We will write an article or tutorial that explains the work principle as part of the grant. |
-| 1. | Smart Contract Development | We will require pool/farm creators to add liquidity to pay for reward at creation. Thus, it will reduce the adding liquidity step and stakers will always be guaranteed for rewards. The pool will also include the maximal number of staking amount that users can contribute. The platform will also contain a token launchpad, features include: creating new launchpad project with fixed fees pay in INW token; add sale phase and add whitelist to each phase; All collected fees will be burnt. |
+| 1. | Smart Contract Development | We will require pool/farm creators to add liquidity to pay for reward at creation. Thus, it will reduce the adding liquidity step and stakers will always be guaranteed for rewards. The pool will also include the maximal number of staking amount that users can contribute. The platform will also contain a token launchpad, features include: creating new launchpad project with fixed fees pay in any PSP22 token; add sale phase and add whitelist to each phase; All collected fees can be burnt or keep at contract. |
 | 2. | Backend | Adding more backend cronjobs for new features including: launchpad project monitoring; whitelist monitoring; minting history. |
 | 3. | Frontend | Project creators can provide different information for the public to see such as Logo, images, social media, roadmap, team, sale phases. We will be adding the launchpad design into Figma design at https://www.figma.com/file/63xCCH71Oa8AfJpkK1wCO3/Ink-Whale?node-id=88%3A234. The current demo can be seen at https://testnet.inkwhale.net |
 
