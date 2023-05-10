@@ -1,4 +1,3 @@
-
 - **Project Name:** Xcavate
 - **Team Name:** Xcavate
 - **Payment Address:** 5E28NSFGwYB9C39bYdRAQ79UKRsM6shxkJr3LG4hehycwfJc
@@ -6,32 +5,26 @@
 
 ## Project Overview
 
-Due to a combination of increased population and changing housing needs, there is global housing crisis. According to the UN, the global population is set to reach over 11.2 billion by the year 2100, therefore 2 billion new homes are required in the next 80 years. 20% of all housing is built by small to medium sized real estate developers but access to finance through traditonal banks and other financial institutions is complex, time consuming and expensive.
+Due to a combination of increased population and changing housing needs, there is global housing crisis. According to the UN, the global population is set to reach over 11.2 billion by the year 2100, therefore 2 billion new homes are required in the next 80 years. 20% of all housing is built by small to medium sized real estate developers but access to finance through traditional banks and other financial institutions is complex, time consuming and expensive.
 
-Xcavate is looking to solve this issue by developing a completely decentralised lending and NFT protocol to help fund the building of real world real estate assets, as well as transact and manage fractions of each property as a route to a global real estae investor market. Our goal is to create a community of real estate developers, investors and blockchain developers so more houses can be built and invested in to help reach the growing demand.
-
-![](https://www.youtube.com/watch?v=rEex6M9620U&t=1s)
+Xcavate is looking to solve this issue by developing a completely decentralised lending and NFT protocol governed by a DAO to help fund the building of real world real estate assets, as well as transact and manage fractions of each property as a route to a global real estate investor market. Our goal is to create a Decentralised Autonomous Organisation (DAO), which has a core Fellowship of real estate developers, investors and blockchain developers accountable to its wider community, so more houses can be built and invested in to help reach the growing demand.
 
 ### Overview
 
-Xcavate will be a first-of-its-kind real-world land & property NFT platform that collateralizes real world parcels of land to finance real estate development. 
-Xcavate facilitates digitizing land and/or property title deeds through minting and bundling of NFTs, which are then linked to verifiable digital identities (DIDs) approved by government entities.
+Xcavate will be a first-of-its-kind real-world land & property NFT platform that collateralises real world parcels of land to finance real estate development. 
+Xcavate facilitates digitising land and/or property title deeds through minting and bundling of NFTs, which are then linked to verifiable digital identities (DIDs) approved by government entities.
 Xcavate is an ecosystem that allows real-world property developers access to finance parcels of physical land with planning permission for development. Once the land is at the final development stage, the developer will create NFTs for the individual properties to be sold/managed by a peer-to-peer marketplace (property owners, investors, trusts etc.). 
 The system will significantly reduce the time from real estate planning permission to build start. By simplifying the finance application process and speeding up the release of funds to the developer. Xcavate not only provides real-world property developers with a way to build quicker but, as a result, enables a more significant number of much-needed houses to be delivered to market. It also provides liquidity to static real-world assets at every stage of the property development process in a fair and risk-averse way. It will enable the real estate to be onboarded cleanly and efficiently, opening up opportunities throughout the broader Dotsama ecosystem.
-
-![](https://www.youtube.com/watch?v=YjVfwjt_m3g)
-
-![](https://www.youtube.com/watch?v=7pD8NVHUBwE)
 
 ### Project Details
 
 We will initially build a POC of the real estate developer loan process to prove the concept. Building a simple polkadot.js wallet that allows verification of identity and creation of DIDS (through the KILT protocol). Once land ownership and build value has been identified (using Oracles) then the LAND NFT can be minted and placed in a multi-sig wallet along with the full loan amount (from the community loan pool). Each build tranche of money will be delivered to the real estate developer wallet, once real estate build evidence has been established and verified.
 
-![](https://xcavate.io/W3F/DeveloperLoanProcessPOC.pdf)
+![](https://xcavate.io/W3F/DeveloperLoanProcessPOCv2.jpg)
 
 Xcavate will adapt and build multiple Pallets to execute the functionalities. We will use the KILT SDK as well as the substrate framework and primary language Rust to create the pallets on the Polkadot ecosystem.
 Token Pallet
-Decentralized Identity Document pallet
+Decentralised Identity Document pallet
 User Management pallet
 Loan Management pallet
 Transaction management pallet
@@ -51,18 +44,18 @@ Xcavate Creates a central loan pool to manage Loan amounts and Loan repayment. T
 
 ### Technology Stack
 
-React.js
-Node.js
-Express.js
-Rust
-Substrate Framework
-Polkadot
+* React.js
+* Node.js
+* Express.js
+* Rust
+* Substrate Framework
+* Polkadot
 
 ### Third-Party
 
-Kilt – SDK
-Chainlink
-AWS
+* Kilt – SDK
+* Chainlink
+* AWS
 
 ### Ecosystem Fit
 
@@ -84,50 +77,50 @@ Our POC will use AWS to prove the concept, however going forward we will look to
 
 ### Team members
 
-Richard Houldsworth – CTO 
-Alex Ward – COO
-Akash Takyar - Management Sponsor
-Deepak Shokeen - Chief Engineer
-Kapil Saxena - Design Head
+* Richard Houldsworth – CTO
+* Alex Ward – COO
+* Kaioh - Substrate Developer
+* Ganish Oli - Substrate Developer
+* Neeraj Choubisa - Full Stack Developer
 
 ### Contact
 
-Richard Houldsworth – +44 7798 666 710 
-Alex Ward – +44 7779 885964 
-xcavate.io
+* Richard Houldsworth – +44 7798 666 710
+* Alex Ward – +44 7779 885964
+* xcavate.io
 
 ### Legal Structure
 
-H & W Investments Limited 
-17 College Road, Cheshunt EN8 9LS, United Kingdom
+* H & W Investments Limited
+* 17 College Road, Cheshunt EN8 9LS, United Kingdom
 
 ### Team's experience
 
 Richard Houldsworth – 10 years in web 2.0 dev space – serial Entrepreneur
 Alex Ward – 25 years in the global property market – serial Entrepreneur
-Akash Takyar - Akash has a master’s in computer application with a deep understanding of IoT and Blockchain. Akash is a world-renowned expert, blockchain influencer, and technical architect.
-Deepak Shokeen - With over 20 years of experience engineering and developing apps. He has a deep understanding of building Cloud, IoT, and Blockchain applications.
-Kapil Saxena - Kapil is a design professional with 15+ years of experience in User Experience & User Interface design. Currently, he is leading
-the design team at LeewayHertz designing UX and UI for Blockchain Applications, handheld devices, Artificial Intelligence Solutions, and IoT Products.
+Ganish Oli - ink! smart contract developer and substrate blockchain developer.
+Kaioh - ink! smart contract developer and substrate blockchain developer.
+Neeraj Choubisa - A Passionate Full Stack Blockchain Ethereum Based Web Developer, Third-Year student at Indian Institute of Information Technology, Dharwad
 
 ### Team Code Repos
 
+https://github.com/xcavateblockchain
 https://github.com/xcavate2022
-https://github.com/LeewayHertz
-https://github.com/orgs/XDCFoundation/repositories
-https://github.com/XDCFoundation/XDC3Android
-https://github.com/XDCFoundation/xdc-testnetwork-leo
+https://github.com/gflow33
+https://github.com/ganesh1233456
+https://github.com/Kali-Decoder
 
 ### Team LinkedIn Profiles
 
 https://www.linkedin.com/in/richard-houldsworth/ 
 https://www.linkedin.com/in/alex-ward-2350a036/
-https://www.linkedin.com/company/leewayhertz-technologies/
+https://www.linkedin.com/in/ganesh-oli-9285a4163/
+https://www.linkedin.com/in/neeraj-choubisa-a4952b202/
 
 ## Development Status :open_book:
 
 We have been heavily involved in learning all things associated with the Polkadot & Kusama Ecosystem. This has been coupled with the idea of bringing land and property from its current state into the web3 ecosystem. We have been meeting with top-level industry leads, government officials and developers.
-Robin Ejsmond-Frey and NIco Morgan from Parity have been a tremendous help by supporting us with information about the W3F grant application process and recommendations to attend Hackathons and the Polkadot Decoded Event London. As well as as number of forums to help our substrate development knowledge.
+Robin Ejsmond-Frey and Nico Morgan from Parity have been a tremendous help by supporting us with information about the W3F grant application process and recommendations to attend Hackathons and the Polkadot Decoded Event London. As well as as number of forums to help our substrate development knowledge.
 
 We have been taking time to play with Substrate to form initial local nodes. We feel we are now ready to build the initial POC for this project in the Rococco test environmenment.
 
@@ -138,34 +131,40 @@ We have been taking time to play with Substrate to form initial local nodes. We 
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  4
-- **Total Costs:** 4732 DOT
+- **Total Costs:** $30000
 
 ### Milestone 1 — Initial POC of lending protocol
 
 - **Estimated Duration:** 2 months
 - **FTE:**  4
-- **Costs:** 4732 DOT
+- **Costs:** $30000
 
-In the first milestone, the features for the PoC will be implemented and tested by limited users.
+We will build on the excellent work we have achieved developing the Real Estate NFT marketplace for the hackerearth.com hackerthon. 
+
+In the first milestone, the features for the PoC will be implemented and tested by limited users. We will build a pallet that has a unique structure of a central community loan pool that acts as a risk reducer to allow individual loan stakers to lock and unlock native XCAV coins quickly and easily, rather than being committed to the full term of a particular loan. This will provide an attractive low risk investment opportunity and increase community confidence in the network while eliminating any delay in providing the funds to the real estate development project, once all the necessary checks have been completed. This loan pool structure could be applied to many different chains in future projects.
 
 | Number    | Deliverables | Specification
 |:----------|:---------------------------|:------------------------ |
 | 0a.	    | License	                            |  Apache 2.0 |
-| 0b.	    | Documentation                       |  The documentation will be provided to show the whole achitecture of the Apron Network. |
-| 0c.	    | Testing and Testing Guide           |  The testing guide will be provided to test each component.
-| 1	      | Xcavate Node Repo             	    |  We will create a customized chain node with Substrate 2.0 Framework. |
-| 2       | Xcavate Loan App Repo               | The contracts will be implemented with Ink!, and it will handle all the API services related functions such as 1) Land planning permission, ownership & DIDs 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Define the APR of loan 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer.
-| 3. | Decentralized Developer Loan dApp / Front End Repo | It's a webpage working with Xcavate Network, it's implemented based on polkadot.js as planned. |
-| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-| 5. | Tutorial | We will write an tutorial about how to use Apron Network. |
-| 6. | Article | We will write an article published on media channels. |
-| 7. | DAO | An Xcavate DAO will be created to handle the governance of the Decentralized lending protocol. |
+| 0b.	    | Documentation                     |  The documentation will be provided to show the whole architecture of the Xcavate Network. |
+| 0c.	    | Testing and Testing Guide            |  The testing guide will be provided to test each component.
+| 1	    | Xcavate Node Repo             	    |  We will create a customized chain node with Substrate 2.0 Framework. |
+| 2        | Xcavate Loan App Repo                | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
+| 3. | Loan management pallet | * Manage loan application ** Land details' ** Registration * Manage loan interest percentage ** Based on land and experience * Approve/Reject request |
+| 4. | Staking pallet | * User can stake native token * Calculate APR * Distribute payouts |
+| 5. | Verification pallet | * Verification of user identity * Manage users identity * Manage loan request |
+| 6. | DAO | The PoC will have a basic DAO structure that will be created using the OpenGov pallet to ensure rewards can be given to the real estate build stage checkers (As we progress in to the MVP stage this will be expanded to form a full governance structure). |
+| 7. | Decentralized Developer Loan dApp / Front End Repo | It's a webpage working with Xcavate Network, it's implemented based on polkadot.js as planned. |
+| 8. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 9. | Tutorial | We will write a tutorial about how to use Xcavate Network. |
+| 10. | Article | We will write an article published on media channels. |
+
 
 ## Future Plans
 
-Once we have built the initial POC, then we will build the POC of the real estate NFT marketplace. Then on to the MVP and GTM. We have already started the white paper as well as developed a pitch deck to demonstrate the potential of the system to; investors, partners and eventually XCAV coin holders. We have started a social media campaign in order to build a community now and through the dApp build & testing stages.
+We are talking to Subwallet about integrating the KILT protocol DIDs in to their wallet for a smoother and simpler user experience. Once we have built the initial POC then on to the MVP and GTM. We have already started the white paper as well as developed a pitch deck to demonstrate the potential of the system to; investors, partners and eventually XCAV coin holders. We have started a social media campaign in order to build a community now and through the dApp build & testing stages.
 
 
 ## Additional Information :heavy_plus_sign:
 
-We have applied to be a speaker at the 2023 Polkadot Decoded event. We would talk through how Xcavate supported by the Polkadot community and network, can help to build much needed housing to a global population.
+We will be attending the 2023 Polkadot Decoded event. We are keen to network and expand our partnerships across the Dotsama Ecosystem, while helping to build much needed real estate investment opportunities to a global population.
