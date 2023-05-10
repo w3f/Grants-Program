@@ -100,8 +100,6 @@ http://github.com/dennohpeter
 https://github.com/kenyatta-nytch
 https://www.upwork.com/freelancers/~0115976ab2d9c66210
 
-**Arnold Gichunge - Senior UI/UX Engineer**
-
 
 
 **Org Repo:**
@@ -113,15 +111,15 @@ https://github.com/skeezer-org/
 
 ### Overview
 
-- **Total Estimated Duration:** 10 weeks
-- **Full-Time Equivalent (FTE):**  6-7 FTE
-- **Total Costs:** 105,000 USD
+- **Total Estimated Duration:** 8 weeks
+- **Full-Time Equivalent (FTE):**  5-6 FTE
+- **Total Costs:** 80,000 USD
 
 ### Milestone 1 - Initialization and Smart Contracts' Development
 
-- **Estimated duration:** 6 weeks
-- **FTE:**  6-7 FTE
-- **Costs:** 75,000 USD
+- **Estimated duration:** 4 weeks
+- **FTE:**  5-6 FTE
+- **Costs:** 55,000 USD
 
 
 
@@ -134,18 +132,17 @@ https://github.com/skeezer-org/
 | 1. | Community Research | Reports and analysis on conversations with mental health professionals & community members on best practices for such a network in addition to work currently done. These will in in `pdf` , `mp3` and/or video format. - Some of these participants will form `tier_1` voters on the network |
 | 2. | Initial Parachain Setup | Install and setup substrate prerequisites such as !ink CLI, pre-configured substrate node (to mine new blocks for testing our smart contracts) - Runtime logic, native tokens, and economy setup |
 | 3. | Fungible Token | Smart contract with a staggered governance model with two tiers of voters. `tier_1` voters incl. mental health professionals, experienced listeners, admin, and people in this category. `tier_2` voters incl. users, newer listeners & the general community. Proposals have to go through both tiers to get accepted. This format will affect normal Proposals, Reward Allocation proposals, Tier Promotion proposals, Conflict Resolution proposals & Org. Structure Change proposals|
-| 4. | Test Suite 1 | Test suite for the fungible token smart contract and it's governance functionality|
+| 4. | Test Suite 1 | Test suite for the fungible token smart contract and it's governance functionality: to include unit and integration scripts covering; event emission, state changes & inter-contract messaging (mainly calling `data_management_smart_contract` functions). These scripts can be reused in case of deploying a similar network or extending functionality|
 | 5. | data_management_smart_contract | Development of Skeezer network management smart contract to extend functionality that cannot be stored on `fungible_token_sc` . This to keep records, ratios and processes in the various categories of proposals|
-| 6. | IPFS setup | IPFS data logic to plug into the Skeezer Network (esp. data handled in `data_management_smart_contract`) |
-| 7. | Test Suite 2 | Test suite for `data_management_smart_contract` (mostly `CRUD` functionality) |
-| 8. | Deployment testing | Testing scripts for deployment of both smart contracts to a testnet: pref. Kusama Canary network |
+| 6. | IPFS setup | IPFS data logic to plug into the Skeezer Network (esp. data handled in `data_management_smart_contract`): to also include connectivity, performance and integration testing scripts working with the respective smart contracts. These can be reused incase of deploying a similar data handler for smart contracts  |
+| 7. | Test Suite 2 | Test suite for `data_management_smart_contract` (mostly `CRUD` functionality): to include unit and integration scripts covering; data storage and retrieval, cross-contract calling & user-acceptance tests. These scripts can be reused in case of deploying a similar tier based data management smart contract  |
 
 
 ### Milestone 2 - Frontend, APIs, and Interoperability 
 
 - **Estimated Duration:** 4 weeks
-- **FTE:**  6-7 FTE
-- **Costs:** 30,000 USD
+- **FTE:**  5-6 FTE
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
