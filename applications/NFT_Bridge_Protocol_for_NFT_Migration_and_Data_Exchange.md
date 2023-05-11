@@ -4,7 +4,6 @@
 - **Payment Address:**
 BTC : 1B6AHziiBvE28Lg74n23V3dYXbxcVLGKYi
 ETH/DAI : 0xA7427d0D45e8dd969049872F9cDE383716A39B23
-- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/809#issuecomment-1160448332)
 
 ## Project Overview :page_facing_up:
 
@@ -47,18 +46,21 @@ To our knowledge, there is currently no work being done on a standardized, unive
 
 ### Team members
 
-* Guillaume Gonnaud
+- Guillaume Gonnaud
+
 - Edouard Bessire
 
 ### Contact
 
-* Guillaume Gonnaud
+- Guillaume Gonnaud
+
 - g.gonnaud@perpetual-altruism.org
 - [NFT.com](http://NFT.com)
 
 ### Legal Structure
 
-* Perpetual Altruism Ltd
+- Perpetual Altruism Ltd
+
 - 2 Ordnance Mews, London NW86PF, United Kingdom
 
 ### Team's experience
@@ -82,7 +84,8 @@ To our knowledge, there is currently no work being done on a standardized, unive
 
 ### Overview
 
-* **Total Estimated Duration:** Less than 7 weeks
+- **Total Estimated Duration:** Less than 7 weeks
+
 - **Full-time equivalent (FTE):**  2 FTE
 - **Total Work Days:** 66 days
 - **Cost per work day:** £300
@@ -90,7 +93,8 @@ To our knowledge, there is currently no work being done on a standardized, unive
 
 ### Milestone 1 — Desirable Protocol Features
 
-* **Estimated Duration:** ~2 weeks
+- **Estimated Duration:** ~2 weeks
+
 - **FTE:**  2 FTE
 - **Work Days:** 21 days
 - **Cost per work day:** £300
@@ -99,6 +103,7 @@ To our knowledge, there is currently no work being done on a standardized, unive
 
 We will write up and engage with the community to determine the desirable features of a NFT migration and data exchange messaging protocol.
 So far, we have determined that the protocol must allow for the following features:
+
 - Migrate any ERC-721 token between EVM-compatible chains
 - Migrate an NFT back and forth to get the original token back.
 - Be ERC-1155 compatible
@@ -112,7 +117,8 @@ So far, we have determined that the protocol must allow for the following featur
 
 ### Milestone 2 — Checked Migration Process
 
-* **Estimated Duration:** ~2 weeks
+- **Estimated Duration:** ~2 weeks
+
 - **FTE:** 2
 - **Work Days:** 20 days
 - **Cost per work day:** £300
@@ -136,7 +142,8 @@ This process is NOT a fully decentralized trustless process itself in order to a
 
 ### Milestone 3 — Trustless Migration Process
 
-* **Estimated Duration:** ~1 week
+- **Estimated Duration:** ~1 week
+
 - **FTE:**  2
 - **Work Days:** 10 days
 - **Cost per work day:** £300
@@ -144,6 +151,7 @@ This process is NOT a fully decentralized trustless process itself in order to a
 - **Deliverable:** A documented step by step process that would allow a trust-minimized relayer to perform migrations of NFTs.
 
 We will write up the ‘Trustless Migration’ process which is designed to be used when the destination universe have trutsless state reading capabilities of the origin universe.
+
 - Snowfork is already building a substrate module allowing specifically for Ethereum Smart contract reading. If a Substrate-built parachain implement those reading capacities, then implementation of this process should be straightforward.
 - In the case of EVM => EVM ERC-721 migration without trustless reading, Chainbridge already exist. However, their contracts requires administrator input for new contract registration as well as lacking features that are NFT specific, such as preventing minting technically correct but legally counterfeit tokens.
 - NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
@@ -151,7 +159,8 @@ We will write up the ‘Trustless Migration’ process which is designed to be u
 
 ### Milestone 4 — Standard and Documentation for Cross-universe Migration
 
-* **Estimated Duration:** ~1 week
+- **Estimated Duration:** ~1 week
+
 - **FTE:**  2
 - **Work Days:** 15 days
 - **Cost per work day:** £300
@@ -164,6 +173,7 @@ We will write up the ‘Trustless Migration’ process which is designed to be u
 - Those standards must allow an EVM bridge following the EIP on ethereum mainnet/moonbeam to migrate an NFT to a WASM bridge following the PSP standard on a parachain and vice versa.
 
 We will write up the standard and documentation for cross-universe migration, which includes “necessary” and “optional” data for optimization. This is a summarized write up of both the previous milestones but writen as specifications for implementations, including the predicate and postulate of each message and what they mean in term of state on the source and destination universe.
+
 - Challenge: Establishing predicate and postulate on what are the allowed pair of source/destination worlds. Those allowed pairs could be designed in any fashion, from centralized trusted to decentralized and trust minimized.
 - Licensed under the [Unlicense](https://unlicense.org) or when required under the license requirements of EIP and PSP.
 
