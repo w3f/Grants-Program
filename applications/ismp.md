@@ -7,6 +7,7 @@
 ## Project Overview :page_facing_up:
 
 ### Overview
+
 The Interoperable State Machine Protocol, or ISMP for short, is the product of our [research](https://research.polytope.technology/state-(machine)-proofs) into state proofs. We show that state-proof based interoperability is possible and more efficient as the messages no longer need to be routed through the relay chain and can be exchanged independent of it, while still maintaining the same level of trustlessness and security. This protocol allows not just for messaging but also [state reads of other parachains](https://github.com/paritytech/polkadot/issues/5087) in a trustless and secure manner.
 
 Unfortunately, Parachain-to-Parachain communication today relies on the relay chain for message routing. This is highly inefficient and relieving the relay chain of this burden will allow for better Parachain throughput and scalability. We believe ISMP is the end-game for parachain interoperability, with the relevant ISMP modules, each parachain can send and receive messages and assets to and from other parachains which also have the ISMP modules. Seconded by Rob Habermeier on [twitter](https://twitter.com/rphmeier/status/1631448117634650114).
@@ -15,9 +16,9 @@ Unfortunately, Parachain-to-Parachain communication today relies on the relay ch
 
 ISMP is a simple protocol for state machines to send requests that can be handled by a counterparty chain. Akin to the HTTP paradigm in web2, parachains can issue GET-like requests for storage reads as well as POST-like requests for sending data.
 
-Requests are stored in a [merkle mountain range tree](https://research.polytope.technology/merkle-mountain-range-multi-proofs) on the sending chain as this data structure provides some benefits, binary merkle trees have more compact proof sizes than patricia merkle tries, and in particular, merkle mountain range trees have much smaller proof sizes for recently inserted items in the tree. We believe this choice will enable higher bandwidth parachain <> parachain messaging with smaller proof sizes.
+Requests are stored in a [merkle mountain range tree](https://research.polytope.technology/merkle-mountain-range-multi-proofs) on the sending chain as this data structure provides some benefits, binary merkle trees have more compact proof sizes than patricia merkle tries, and in particular, merkle mountain range trees have much smaller proof sizes for recently inserted items in the tree. We believe this choice will enable higher bandwidth parachain &lt;&gt; parachain messaging with smaller proof sizes.
 
-ISMP will also support request timeouts, allowing for more safer parachain <> parachain messaging.
+ISMP will also support request timeouts, allowing for more safer parachain &lt;&gt; parachain messaging.
 
 ![Architecture](https://drive.google.com/uc?id=1t8Qow88En3-ZCW7P0LYjRnbSqzFS30be)
 
@@ -33,15 +34,16 @@ For GET requests, a different mechanism is at play. Perhaps a user wants to sett
 
 
 ### **`pallet-ismp`**
+
 This serves as the foundational element for state-proof based messaging between parachains, enabling state reads of the relay chain directly from any given parachain, granting the ability to verify incoming messages and data from other parachains under the shared security umbrella of the relay chain.
 
 **Custom crates**
 
--  `ismp-rs` - A set of primitives necessary for pallet-ismp
-   -  `ISMPHost`: Represents a state machine's core functionality
-   -  `ISMPRouter`: Embodies the request and response routing logic for parachain interactions
-   -  `ConsensusClient`: Logic for consensus proof verification
-   
+- `ismp-rs` - A set of primitives necessary for pallet-ismp
+  - `ISMPHost`: Represents a state machine's core functionality
+  - `ISMPRouter`: Embodies the request and response routing logic for parachain interactions
+  - `ConsensusClient`: Logic for consensus proof verification
+
 This module can also serve as an alternative transport layer for XCM programs.
 
 ### Ecosystem Fit
@@ -62,6 +64,7 @@ Currently messages are sent over the Relay Chain through opening HRMP channels b
 - **Website:** [research.polytope.technology](https://research.polytope.technology/)
 
 ### Legal Structure
+
 - **Registered Address:** Harneys Fiduciary (Cayman) Limited, 4th Floor, Harbour Place, 103 South Church Street, Cayman Islands
 - **Registered Legal Entity:** Polytope Labs Ltd.
 
@@ -81,12 +84,13 @@ Polytope Labs is a collective of core blockchain engineers, researchers & scient
 
 ### Research Publications
 
- - [Consensus Proofs](https://research.polytope.technology/consensus-proofs)
- - [State (Machine) Proofs](https://research.polytope.technology/state-(machine)-proofs)
- - [Merkle Mountain Range Proofs](https://research.polytope.technology/merkle-mountain-range-multi-proofs)
- - [Merkle Multi Proofs](https://research.polytope.technology/merkle-multi-proofs)
+- [Consensus Proofs](https://research.polytope.technology/consensus-proofs)
+- [State (Machine) Proofs](https://research.polytope.technology/state-(machine)-proofs)
+- [Merkle Mountain Range Proofs](https://research.polytope.technology/merkle-mountain-range-multi-proofs)
+- [Merkle Multi Proofs](https://research.polytope.technology/merkle-multi-proofs)
 
 ### Team Code Repos
+
 - [sync-committee-rs](https://github.com/polytope-labs/sync-committee-rs)
 - [Merkle Patricia Trie](https://github.com/polytope-labs/patricia-merkle-trie)
 - [Solidity Merkle Trees](https://github.com/polytope-labs/solidity-merkle-trees)
@@ -111,6 +115,7 @@ Polytope Labs is a collective of core blockchain engineers, researchers & scient
 
 
 ## Development Status :open_book:
+
 State-proof based parachain messaging has been discussed on the [Polkadot Forum](https://forum.polkadot.network/t/state-proof-based-parachain-parachain-messaging/2214/4).
 
 And some Updates to cumulus, required for parachains to read the relay chain state has been [approved](https://github.com/paritytech/cumulus/pull/2268)
@@ -118,6 +123,7 @@ And some Updates to cumulus, required for parachains to read the relay chain sta
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
+
 - **Total Estimated Duration:** 4.5 Months
 - **Full-Time Equivalent (FTE):** 3
 - **Total Costs:** 75,000 USD
@@ -146,7 +152,7 @@ In this milestone we develop the core primitives needed for pallet-ismp
 | | Request/Response proof verification | Sub-component for verifying membership of proofs of a request/response in a merkle mountain range tree. |
 | | Request Timeout verification | Verifying non-membership of a request in the state trie of a parachain. |
 | 1e. | Handlers | Logic for handling varying types of incoming messages. |
-| | `CreateConsensusClient` | Functionality for creating a consensus client on the receiving state machine. | 
+| | `CreateConsensusClient` | Functionality for creating a consensus client on the receiving state machine. |
 | | `ConsensusMessage` | Functionality for handling consensus update messages from other state machines. |
 | | `RequestMessage` | Functionality for handling request messages from other state machines. |
 | | `ResponseMessage` | Functionality for handling response messages from other state machines. |
@@ -177,6 +183,7 @@ In this milestone we develop pallet-ismp
 
 
 ## Future Plans
+
 We recognize the significant benefits that pallet-ismp offers to the ecosystem, and therefore, after the grant completion we plan to continue providing maintenance with support from the Polkadot/Kusama treasury.
 
 ## Additional Information :heavy_plus_sign:
