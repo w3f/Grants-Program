@@ -1,63 +1,80 @@
-Name of your Project
-See the Grants Program Process on how to submit a proposal.
-Team Name: Qlone AI
-Payment Address:ERC20: 0xB0b6715F24bd84Dd945205426AE6643b33488A51
-Level: 2 
-Project Overview 📄
-Overview
-If the name of your project is not descriptive, a tag line (one sentence summary).
-Qlone AI
-A brief description of your project.
-With the leverage of AI & Blockchain, Qlone's infrastructure is aiming to provide an all-in-one solution to generate your smart-digital AR clone. A new seamless approach on how to simulate, train, personalize, and manage AI on blockchain. The technology that innovates fields like personal AI, Gaming, Customer service, Education and more…
-An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-The purpose of this proposal is to improve Polkadot ecosystem, achieve deeper collaboration with Polkadot blockchain, and integrate it in Qlone AI infrastructure. With the leverage of AI & Blockchain, Qlone's infrastructure is aiming to provide an all-in-one solution to generate your smart-digital AR clone. Simulate, train, personalize, and manage AI on Blockchain.
+# Name of your Project
+
+>
+> See the Grants Program Process on how to submit a proposal.
+- **Team Name:** Qlone AI
+- **Payment Address:** ERC20: 0xB0b6715F24bd84Dd945205426AE6643b33488A51
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
+
+## Project Overview :page_facing_up:
+
+### Overview
+
+- If the name of your project is not descriptive, a tag line (one sentence summary).
+- Qlone AI
+- A brief description of your project.
+- With the leverage of AI & Blockchain, Qlone's infrastructure is aiming to provide an all-in-one solution to generate your smart-digital AR clone. A new seamless approach on how to simulate, train, personalize, and manage AI on blockchain. The technology that innovates fields like personal AI, Gaming, Customer service, Education and more…
+
+- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+
+- The purpose of this proposal is to improve Polkadot ecosystem, achieve deeper collaboration with Polkadot blockchain, and integrate it in Qlone AI infrastructure. With the leverage of AI & Blockchain, Qlone's infrastructure is aiming to provide an all-in-one solution to generate your smart-digital AR clone. Simulate, train, personalize, and manage AI on Blockchain.
 The technology that innovates fields like personal AI, Gaming, Customer service, Education and more..
 
-
-An indication of why your team is interested in creating this project.
+- An indication of why your team is interested in creating this project.
 Together we met around November last year. We had a great discussion about IP rights, AR, AI&Blockchain merge and what we could improve. With our experience in web 3 market, vast programming knowledge and know how skills, we decided to make something unique and innovative which you would definitely enjoy to experience.
 
+### Project Details
 
-
-Project Details
-Mockups/designs of any UI components
+- Mockups/designs of any UI components
 https://docsend.com/view/8qrh7ugx864p2pi3
-Data models / API specifications of the core functionality
+- Data models / API specifications of the core functionality
 
-Communication between UI and backend developed in Representational State Transfer (REST) standart. Authentification based on bearer tokens.
+- Communication between UI and backend developed in Representational State Transfer (REST) standart. Authentification based on bearer tokens.
 Image to image model training based also on Representational State Transfer (REST) standart communicates with cloud based stable diffusion service.
 Voice cloning based on openAI open-sourcing a neural net Whisper and managed in REST API,
 Text to speech based on Azure text-to-speech service and maanaged on REST API
 
-All detailed API specifications will be provided in https://github.com/QLONEAI repo.
+- All detailed API specifications will be provided in https://github.com/QLONEAI repo.
 
-An overview of the technology stack to be used
-Adversarial Networks (GANs) 
-Variational Autoencoders (VAEs)
-Large Language Models (LoRA)
-Recurrent Neural Networks (RNNs)
-GPT-4 natural language AI model
-Machine learning
-Solidity
-Java Script
-Python
-Documentation of core components, protocols, architecture, etc. to be deployed
+- An overview of the technology stack to be used
+> Adversarial Networks (GANs) 
+> Variational Autoencoders (VAEs)
+> Large Language Models (LoRA)
+> Recurrent Neural Networks (RNNs)
+> GPT-4 natural language AI model
+> Machine learning
+> Solidity
+> JavaScript
+> Python
+
+- Documentation of core components, protocols, architecture, etc. to be deployed
 https://github.com/QLONEAI
-PoC/MVP or other relevant prior work or research on the topic
-We have a functional app prototype, and multiple AI models and blockchain integrations are already available.
+
+- PoC/MVP or other relevant prior work or research on the topic
+
+- We have a functional app prototype, and multiple AI models and blockchain integrations are already available.
 The development team managed to generate our own GAN, RNN AI model prototypes which will be more cost-effective for future sales.
-What your project is not or will not provide or implement
-The project will not develop all AI Models on its own in the first stages of the product, we will use some already polished 3rd party AI models. Such as Stable Diffusion, and Microsoft.
+
+- What your project is not or will not provide or implement
+
+- The project will not develop all AI Models on its own in the first stages of the product, we will use some already polished 3rd party AI models. Such as Stable Diffusion, and Microsoft.
+
 Things that shouldn’t be part of the application (see also our FAQ):
-The (future) tokenomics of your project
-For non-infrastructure projects—deployment and hosting costs, maintenance, or audits
-Business-oriented activities (marketing, business planning), events or outreach
-Ecosystem Fit
-Where and how does your project fit into the ecosystem?
+- The (future) tokenomics of your project
+- For non-infrastructure projects—deployment and hosting costs, maintenance, or audits
+- Business-oriented activities (marketing, business planning), events or outreach
+
+### Ecosystem Fit
+
+- Where and how does your project fit into the ecosystem?
+
 AI NFT generator is really demanding tool for any blockchain. Polkadot ecosystem could be one of the first blockchain to integrate AI into WEB3 with the help of our team. AI cloning tolls, and generators are useful tools for many businesses and people, we have multiple AI models prepared to merge. Our application will be the first one to offer many AI features that are not available on mobile. In add, our AI models will be available in one infrastructure which will give seamless access to users with no need to transfer through other platforms. 
-Who will benefit from Qlone AI:
+
+- Who will benefit from Qlone AI:
+
 Games/Gaming studios, Content/Collection creators, AI users/developers, Customer service, and more...
 Expected MAU in the first year:
+
 - 1st month: 500 active users
 - 3rd month: 5,000 active users
 - 6th month: 10,000 active users
