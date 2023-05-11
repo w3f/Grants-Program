@@ -5,7 +5,7 @@
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
-The proposal is in response to the  RFP : [Decentralised Security marketplace](../docs/RFPs/Open/decentralized-security-marketplace.md).
+The proposal is in response to the  RFP : [Decentralised Security marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/decentralized-security-marketplace.md).
 
 ### Overview
 
@@ -219,7 +219,7 @@ Our Smart contract Auditing team is led by some of the most experienced and comp
 The team is well-experienced in both the development side as well as the debugging side of an SDLC and has an eye for the bugs as well as respect
 for standards which, we believe, makes us a perfect fit to be the practicioner of this RFP.
 
-Here are some of the feets, achievements our organisation boasts of:
+Here are some of the feats, achievements our organisation boasts of:
 
 1) Developed validator and nominator apps for substrate based blockchains .
 2) Customised default reward mechanism in the staking pal of the substrate chain by integrating the sustainability and
@@ -230,8 +230,7 @@ Here are some of the feets, achievements our organisation boasts of:
    through XCM protocol with each other.
 6) Developed several NFT Marketplace contracts both decentralized and hybrid across various blockchains such as [Hungama](https://heftyverse.xyz/),
    [SkodaVerse](https://www.skoda-auto.com/world/skodaverse), [Fanverse](https://www.fan-verse.io/) just to name a few.
-7) Developed many DeFi projects across multiple blockchains such as [Shido, Staking](https://dex.shido.io/staking-page), [Shido, Perpetuals]
-   (https://perp.shido.io/), [YSL](https://ysl.io/), [Lithium](https://lithium.ventures/) and many more.
+7) Developed many DeFi projects across multiple blockchains such as [Shido, Staking](https://dex.shido.io/staking-page), [Shido, Perpetuals](https://perp.shido.io/), [YSL](https://ysl.io/), [Lithium](https://lithium.ventures/) and many more.
 8) We have also developed Asset Tokenization solution based on ERC3643 on EVM, Aptos & Provenance chain for some of the reknowned Financial Institutions. The    
    asset classes tokenized are Real Estate, Securities, Private Equity, Commodities such as Gold. Can't share the platform details, as we are under strict NDA.
 9) We are also developing some in-house Web3 solutions such as Relayer Hub for meta-transactions, Decentralized Token Bridge, a multi-sig solution like Gnosis-safe  
