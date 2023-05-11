@@ -55,6 +55,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Supercomputing Systems AG](https://www.scs.ch)                 | [SARP - A Static Analysis Tool for Runtime Pallets](./sarp-basic-functionality.md)                                                           | [GitHub](https://github.com/scs)                                | ☐          |       ☐         |     ☐      |
 | [Ed Anderson](https://github.com/eca20)                 | [Blockchainia](./blockchainia.md)                                                           | [GitHub](https://github.com/eca20)                                | ☐          |       ☐         |     ☐      |
 | [CoinFabrik](https://www.coinfabrik.com/)                          | [ScoutCoinFabrik: Milestone 2](ScoutCoinFabrik_2.md)                                                   | [GitHub](https://github.com/coinfabrik)                              | ☐          |        ☐       |      ☐      |
+| [Polytope Labs](https://research.polytope.technology/)                          | [Interoperable State Machine Protocol](ismp.md)                                                   | [GitHub](https://github.com/polytope-labs)                              | ☐          |        ☐       |      ☐      |
 
 
 [🔝](#menu)
