@@ -4,6 +4,7 @@
 - **Payment Address:**
 BTC : 1B6AHziiBvE28Lg74n23V3dYXbxcVLGKYi
 ETH/DAI : 0xA7427d0D45e8dd969049872F9cDE383716A39B23
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/809#issuecomment-1160448332)
 
 ## Project Overview :page_facing_up:
 
