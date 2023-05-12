@@ -173,8 +173,7 @@ To obtain a thorough understanding of the data across various parachains, using 
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  3.5
-- **Costs:** 28,750 USD,
-- NOTE: The M2 calculation includes the cloud infrastructure cost estimated at $1,000
+- **Costs:** 28,750 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -196,7 +195,6 @@ To obtain a thorough understanding of the data across various parachains, using 
 | 11. | Implement the ParachainPulse APIs required by frontend | Projects APIs that return the list of projects, the total number projects, the active projects during the last 30 days and during the last 12 months for Polkadot & Kusama and each of their parachains |
 | 12. | Implement the ParachainPulse APIs required by frontend | Contributions API that returns the total number of commits, the number of commits during the last 30 days, and during the last 6 months and commits growth for 12 months for Polkadot & Kusama and each of their parachains |
 | 13. | Implement the ParachainPulse APIs required by frontend | “Submit Parachain” API - is used by the frontend to push the following data to the the database: ‘Parachain name’, ‘GitHub URL’, ‘Logo URL’, ‘Email’. The admin reviews it and, if approved, is added to the parachain list. Additionally, the scraper will retrieve relevant data about the approved parachain and fill in the details automatically |
-| 14. | Prepare the final adjustments | Run the final tests and checks |
 
 ## Future Plans
 
