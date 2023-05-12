@@ -24,6 +24,11 @@
   font-size: 4rem;
 }
 
+.navbar__logo {
+  flex: 0 0 auto;
+  height: 48px;
+  margin-right: 0rem;
+}
 
 .footer__link-item {
   text-decoration: none;
