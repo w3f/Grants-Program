@@ -119,7 +119,7 @@ To obtain a thorough understanding of the data across various parachains, using 
 
 - **Total Estimated Duration:** 12 weeks
 - **Full-Time Equivalent (FTE):**  3 FTE, 1 PTE
-- **Total Costs:** 62,500 USD
+- **Total Costs:** 59,500 USD
 
 ### Milestone 1
 
@@ -173,7 +173,7 @@ To obtain a thorough understanding of the data across various parachains, using 
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  3.5
-- **Costs:** 31,750 USD,
+- **Costs:** 28,750 USD,
 - NOTE: The M2 calculation includes the cloud infrastructure cost estimated at $1,000
 
 | Number | Deliverable | Specification |
@@ -195,12 +195,8 @@ To obtain a thorough understanding of the data across various parachains, using 
 | 10. | Implement the ParachainPulse APIs required by frontend | Developers API that returns the list of contributors, the number of contributors and active contributors for Polkadot & Kusama and each of their parachains |
 | 11. | Implement the ParachainPulse APIs required by frontend | Projects APIs that return the list of projects, the total number projects, the active projects during the last 30 days and during the last 12 months for Polkadot & Kusama and each of their parachains |
 | 12. | Implement the ParachainPulse APIs required by frontend | Contributions API that returns the total number of commits, the number of commits during the last 30 days, and during the last 6 months and commits growth for 12 months for Polkadot & Kusama and each of their parachains |
-| 13. | Implement the ParachainPulse APIs required by frontend | Submit parachain API |
-| 14. | Prepare the final adjustments | Add Google Analytics to track users engagement in order to adapt and improve accordingly |
-| 15. | Prepare the final adjustments | Create the production infrastructure on Google Cloud |
-| 16. | Prepare the final adjustments | Deploy parachainpulse.io webapp |
-| 17. | Prepare the final adjustments | Run the final tests |
-| 18. | Prepare the final adjustments | Public release
+| 13. | Implement the ParachainPulse APIs required by frontend | “Submit Parachain” API - is used by the frontend to push the following data to the the database: ‘Parachain name’, ‘GitHub URL’, ‘Logo URL’, ‘Email’. The admin reviews it and, if approved, is added to the parachain list. Additionally, the scraper will retrieve relevant data about the approved parachain and fill in the details automatically |
+| 14. | Prepare the final adjustments | Run the final tests and checks |
 
 ## Future Plans
 
