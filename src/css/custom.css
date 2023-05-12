@@ -107,3 +107,32 @@ a {
   font-weight: 600;
   color: var(--ifm-color-gray-600);
 }
+
+/* Link styling */
+.navbar__item {
+  padding: 0px;
+  margin: 4px 12px;
+}
+
+a.navbar__item{
+  background:
+    linear-gradient(
+      to right,
+      #fff,
+      #fff
+    ),
+    linear-gradient(
+      to right,
+      #000,
+      #000,
+      #000
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover.navbar__item{
+  background-size: 0 3px, 100% 3px;
+}
