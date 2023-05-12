@@ -30,6 +30,7 @@
   margin-right: 0rem;
 }
 
+
 .footer__link-item {
   text-decoration: none;
 }
@@ -57,6 +58,8 @@
 
 .footer--dark {
   --ifm-footer-background-color: #000;
+  background-image: url("https://web3.foundation/static/fa2e2556a97b02fb8186cceaa6999d78/24754/research-large.avif");
+  background-size: cover;
 }
 
 .docusaurus-highlight-code-line {
