@@ -10,7 +10,7 @@ module.exports = {
   baseUrl: '/Grants-Program/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/Web3Foundation.png',
+  favicon: 'img/favicon-32x32.png',
   organizationName: 'w3f', // Usually your GitHub org/user name.
   trailingSlash: false,
   projectName: 'Grants-Program', // Usually your repo name.
