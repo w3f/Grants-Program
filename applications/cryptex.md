@@ -6,22 +6,20 @@
 
 ## Project Overview :page_facing_up:
 
-**Cryptex** is a blockchain that uses the *blind DKG* protocol. This proposal presents the blind DKG protocol, a consensus-backed distributed key generation protocol and a potential architecture to implement it within a substrate based blockchain. First we briefly explain the cryptographic tools and language needed, then we define the main protocol and finally we propose a potential architecture and implementation.
+**Cryptex** is a blockchain that uses the *blind DKG* protocol. This proposal presents the blind DKG protocol, a blind distributed key generation protocol and a potential architecture to implement it within a substrate based blockchain. First we briefly explain the cryptographic tools and language needed, then we define the main protocol, blind dkg, and finally we propose an architecture and implementation.
 
 ### Overview
 
-Blind DKG is a consensus-backed distributed key generation mechanism. It allows for a verifiable secret sharing scheme with an on-chain proof system to gate access to data. Unlike a traditional VSS scheme, it eliminates the need for a trusted setup by using a distributed key generator, as well as blind selection via a VRF. It allows for a semi-trustless decryption rights delegation (i.e. secret sharing) process. When implemented as part of a decentralized network (such as a blockchain), it enables a system where you can create a distributed secret and derive public keys which can be used to secure data. Additionally, we extend the protocol to enable a 'cryptographic gate' to data access using smart contracts, wherein an owner of some data can define rules to delegate decryption rights. The protocol is:
+A distributed key generator (DKG) is a multi-party computation protocol through which a set of participants can collectively generate a shared public/private keypair. Blind DKG, **blind distributed key generation**, is a type of distributed key generator (DKG) where there is no linkability between any specific member of the network and any contribution to a shared key resulting from a DKG. By adding blindness, blind dkg is able to mitigate and resist many vulnerabilities in other DKG protocols. It is resistant to attack via collusion, Sybil attacks, and malicious coordinator attacks. Each participant in the protocol generates their secret share through a verifiable secret sharing (VSS) mechanism, with the blindness facilitated by a randomly chosen 'coordinator'.
 
-- **non-interactive**: Alice does not need to interact with Bob in order to delegate decryption rights.
-- **no trusted setup**: Alice does not need to trust the set of participants holding the pieces of her secret.
-- **consensus agnostic**: The protocol can operate on top on top of any consensus mechanism that allows for at least 3 authorities in the network. 
+Cryptex is a blockchain that manages the participant and coordinator selection of the blind dkg protocol (elaborated below), enables a way to define conditions to data access, and provides a platform to incentivize participation in the protocol. It is intended to be a decentralized KEM for distributed key creation, encryption/decryption, and signing. The initial use of Cryptex is as a decentralized secret sharing network, wherein users can leverage the Cryptex blockchain to generate keys that can be used to encrypt data, specify conditions for data access (e.g. ownership of a specific asset), and require a threshold of shares in order to decrypt. The owner of a secret key never needs to know the secret, they only need to encrypt with the shared public key and then allow the Cryptex network to provide access to the secret key to other participant's who meet the rules defined by the owner of the key. Because the shareholders are blind, it is difficult (impossible?) for shareholders to be bribed or collude and by using the blockchain they are incentivized to provide shares when the conditions are met.
 
 Motivation:
-> Suppose Alice has a document that she wants to make available to anybody who can meet some set of rules, but Alice will not be unavailable later to hand over the document. Alice has a plan though, she splits her data into pieces, or shares, and gives a single piece to anybody who she thinks will be available later and tells each person some condition that someone should prove to get a share. Then, if Bob appears later and can prove that they have met Alice's rules and enough of the people who have shares believe Bob, then they give a copy to Bob and Bob is able to reassamble Alice's document and read her secret.
+> Suppose Alice has a document that she wants to make available to anybody who can meet some set of rules, but Alice will not be unavailable later to hand over the document. Alice has a plan though, she splits her data into pieces, or shares, and gives a single piece to anybody who she thinks will be available later and tells each person that if Bob shows up, to tell them their share. Then, each of these people have to make themselves known so that Bob can ask them for a secret. Bob appears, and they each give a copy to Bob and he is able to reassamble Alice's document and read her secret. However, suppose Charlie comes along before Bob and he doesn't want Alice to share her secret. Since Charlie knows who the shareholders are, he can bribe them to not give the key to Bob when he asks, or to get a key himself even though he isn't Bob. If sensitive information is to be secure this way, Alice needs a new plan to make sure Charlie can't do this.
 
 ### Project Details
 
-To start, we provide a brief overview of secret sharing and distributed key generation. Then, we will use this to explain the core protocol, and finally the implementation details. For additional motivation and deeper details on the cryptographic schemes, we direct the reader to a [substack](https://ideallabs.substack.com/p/blind-dkg-part-1) we wrote that elaborates on the reason that VSS by itself isn't enough for an unstoppable application.
+To start, we provide a brief overview of secret sharing and distributed key generation. Then, we will use this to explain the core protocol, and finally the implementation details. For additional motivation and deeper details on the cryptographic schemes, we direct the reader to a [substack](https://ideallabs.substack.com/p/blind-dkg-part-1) we wrote that elaborates on the reason that VSS by itself isn't enough for an unstoppable application, as well as a [deep dive into some thoughts](https://substack.com/inbox/post/120522945) that lead to this proposal.
 
 This proposal both extends and reimagines many of the concepts that were part of the [iris](https://github.com/w3f/Grants-Program/blob/master/applications/iris_followup.md) proposal.  
 
@@ -32,69 +30,66 @@ This proposal both extends and reimagines many of the concepts that were part of
 First introduced by [Shamir](https://web.mit.edu/6.857/OldStuff/Fall03/ref/Shamir-HowToShareASecret.pdf), threshold secret sharing is a cryptographic protocol to encrypt a secret so that it can only be recovered if a threshold of participants collaborate. A secret is split into shares and distributed to multiple parties who can reconstruct the secret when at least a threshold of them participate. However, TSS, and its extension VSS (verifiable secret sharing, such as [Feldman's scheme](https://www.cs.umd.edu/~gasarch/TOPICS/secretsharing/feldmanVSS.pdf)), by itself does not allow for an unstoppable system, namely in that it requires a trusted setup for the key generation phase. Additionally, there is not a clear way to make the sharing of a secret both trustless and non-interactive.
 
 ##### Distributed Key Generation
-A distributed key generation protocol (DKG). It allows for a distributed keypair to be generated among a set of participants in a trustless way. The basis of the scheme is that each participant generates a random secret and uses a VSS scheme to share it with other participants. Together, they can create a distributed public/private keypair. Our scheme, inspired by the [ethDKG scheme](https://eprint.iacr.org/2019/985), is composed of three phases: society formation, disputes, and public key derivation. 
+A distributed key generation protocol (DKG) is a multi-party computation protocol that allows for a distributed keypair to be generated among a set of participants in a trustless or semi-trustless way. The basis of the scheme is that each participant generates a random secret and uses a VSS scheme to share it with other participants. Together, they can create a distributed public/private keypair. DKGs are nothing new, and have been implemented many times in the past, such as [ethDKG scheme](https://eprint.iacr.org/2019/985) or in distributed networks like [Lit](https://litprotocol.com/). At a high level, one idea for a DKG is that each participant uses Feldman's scheme to create a secret, shares, and commitments, then distributes these amongst each other and collectively form a public and private key. 
 
 #### Our Proposal
 
-Though a DKG scheme solves the problem of securely generating the keys, it still does not allow for a 'fully decentralizable' protocol. First is the issue of choosing which participants in the network are selected to act as dealers. If this set is centralized or static, then the network is more centralized and less secure. Secondly, assuming that through some mechanism that the set of participants in the DKG are randomly distributed among the available candidates, how can we be sure that the selected participants will be willing to participate in the DKG to begin with? Or if they do, how can we be sure that they will remain online so our secret can be reencrypted later? EthDKG solved this with smart contracts, but contracts provide limited capabilities.
+We propose a blockchain, Cryptex, which uses Blind DKG (described below), to enable a decentralized KEM. We then define a smart contract based approach to define conditions for data access and a javascript/typescript SDK to provide tools for interacting with Cryptex and rule contracts. We intend to use the blockchain + contracts + SDK to enable dapps with general decentralized secret sharing capabilities (e.g. a fully-decentralized permissioned file system).
 
-We propose the consensus-backed blind DKG protocol. It enables a *blind* DKG process where participation is incentivized by rewards provided by the network, and shares are secured by the stake of each participant in the DKG protocol. We accomplish the 'blindness' of the protocol through the use of verifiable random functions in conjunction with zk SNARKs. The mechanisms allows for the formation of 'societies' whose members, each a validator, participated in the DKG process together. Our proposed implementation consists of a standalone 'Blind DKG' library that will compile to wasm, two new pallets to enable blind DKG and reencryption, and an SDK to interact with the blockchain, external storage systems, and a DSL to define smart contracts which act as rules which gate access to decryption.
+Cryptex itself will use a proof of stake consensus mechanism (using BABE + Grandpa).
 
 ##### What this is not
+- This is not an MPC wallet. The protocol *could* be used to build a custodial wallet, and that is a future use case we want to explore, however, for our initial use case we want to build tools for encryption and secret sharing.
 - The main protocol does not store information about encrypted datasets, it only provides keypairs and key management capabilities. Data encryption and decryption must still be handled outside of the main protocol, and in fact many different encryption schemes could be implemented on top of the derived keys. We will build encryption functionality alongside the core protocol, both from the SDK and the dkg library.
 - This protocol is not a decentralized storage solution. The management and storage of data that is encrypted with keys generated this way must still be handled offchain. This protocol will attempt to be storage agnostic.
 
 ### Blind DKG Protocol
 
-To begin, we describe the blind DKG algorithm. We interchangeabley use validator and participant in the description below. As previously stated, the sceme below closely follows EthDKG, with the change that blind DKG uses a VRF to choose which nodes are elgibile to participate. 
+This is a fairly technical and abridged version of the protocol. This is discussed more in depth [here](https://driemworks.substack.com/p/blind-distributed-key-generation). We are working on formalizing this in a paper along with a proper security analysis and proofs.
 
-#### DKG
+The goals of the protocol are:
+- Participants should be unaware of each others identities and there should be no way to link the secret held by a participant to its commitments or participation.
+- We want the resulting group public key to be able to be used for threshold signatures and threshold secret sharing.
+- To be able to recover the secret of any participant who has become unresponsive, when at least a threshold wants to recover it. This will be important for the system to be robust (e.g. if nodes become unresponsive you can redistribute a secret).
 
-The core algorithm requires some input, a threshold and share values, to start the dkg. Validators then participate in a 'bidding' phase where they use a VRF to determine if they can participate in the DKG. For those that participate, the ultimate goal is to collectively derive a public key, owned by the caller. The idea is that this set of validators can be tasked with providing the shares that can be assembled to reconstruct the secret key, so that data can be encrypted and decrypted with the resulting keypair. The usage of the VRF forms the basis for the 'blindness' of our construction and also ensures that we are given a unique, (pseudo)randomly sampled public key for each round of blind DKG. At the end of each session, rewards will be calculated and distributed based on validators' participation and performance during the session. The values for $\tau$ and $\epsilon$ are to be determined, but will be well known among all validators.
+The protocol is designed to keep the participants and the coordinator in check and incentivizes both to behave honestly. Below, we'll discuss how the protocol can be implemented in a blockchain. At a high-level, it can be initiated by any member of the network. Then, a coordinator is selected from the active validator set. By using a VRF and relying on the coordinator, members of the network are able to blindly particpate in a DKG, forming a shared private/public keypair with out exposing their identities to the network.
 
-As an aside: The idea of validators being able to participate in a VSS scheme has been used in [HoneyBadgerBFT](https://eprint.iacr.org/2016/199.pdf) previously, so we may want to explore atomic broadcast in the future. 
+1. **Initiation** The protocol is initiated when a user (an arbiter), say $A$, decides on a threshold $t$ and a group size $n$ and publishes $(t, n)$ by sending a signed transaction to the blockchain. The initiator/owner of keys created through the protocol is public information.
+2. **Coordinator Selection** The protocol relies on a semi-trusted coordinator who is responsible for ensuring the blindness of the protocol. The active session validator set forms the set of possible coordinators during any given session. Coordinator selection works via a small election, wherein the validator set selects a random leader who will take the role of coordinate. The coordinator randomly generates a new secret key $R$ and public key $Q_c$ and publishes it to the network. It also chooses two numbers randomly, $\tau > 0$ and $\varepsilon > 0$ to form a condition for accepting participants in the next step.
+3. **Participant Selection** Once a leader is selected and its identity broadcast to the network, members of the validator set attempt to participate. They each have access to a VRF, which they use to generate a new keypair $(SK^*, PK^*)$ and then to get a new random number and proof $(d, \pi) \leftarrow VRF.Eval(SK^*, x)$ for some randomly selected $x$. If $|\tau - d| < \varepsilon$, then it considers itself selected. It them randomly selects a new secret key $R_i$ and public key $Q_i$, which it blinds using the coordinators public key, and submits a commitment to $d$ along with the proof $\pi$, and it's blind public key $B$.
+4. **Blind DKG commitment** The coordinator unblinds each blind commitment $B$ and generates a group key, which is public and from which participants who contributed can derive their own shares and prove participation.
+5. **Key Generation** Each participant who believes itself valid (based on VRF output) generates a secret polynomial $f(x)$ and a commitment $F(x)$ (e.g. Pedersen commitment). Then it generates shares and commitments as per the Joint-Feldman approach, encrypting each commitment using the public key $Q_c$ and sending the commitment $F$ publicly (a partially blind messasge). Each message should contain the blinded public key so that the coordinator can verify valid participants.
+6. **Swapping** The coordinator generates a random permutation of the set of valid participants. Then for each bundle of shares received, it verifies the blinded public key sent was used in the creation of $S$, if so then it decrypts each share $f(j)$ it recieved, verifies it against $F(j)$. If the share is invalid, then the coordinator removes that participant from the rest of the protocol. Then by using the random permutation it generated it assigns each share to a unique participant. Then it uses each unblinded $Q_i$ to blind the share. Then it publishes the blinded shares by sending a signed transaction containing the blind public key of the participant and the encrypted shares, along with a zero-knowledge proof of correctness that it validated each secret.
+7. **Unblinding and Secret Generation** Each participant decrypts the shares it received and verifies that it was done correctly. Since each share is provided by a unique participant, the implication is that if the proof is valid then all shares provided are valid (since the coordinator should have validated them), so if any single one is invalid then the protocol aborts (and the coordinator node can be slashed).
+   
+**Public key Derivation** To blindly derive a new public key, any coordinator can be used. the coordinator chooses a new group generator $H$ and broadasts it. Each node that knows it participated is incentivized to generate a new public key with their secret share generated in the previous step. They then calculate a zk proof of correctness that they calculated the public key correctly, then blind the new public key and publish it along with the proof. The coordinator then unblinds each key, verifies each proof, and if all valid then it aggregates the unblinded keys to calculate a new group public key, which it then publishes.
 
-1. Some participant issues a request to derive a new secret society by issuing $(t, n, g, h)$, the threshold, number of shares, and group generators, respectively.
-2. Each validator calculates the output of a VRF and commits to it. Let $(\pi, d)$ be the VRF output.
-3. Using the commonly known values $\tau$ and $\epsilon$, and VRF output $d$, if $|\tau - d| \lt \epsilon$, then the validator can consider itself as a valid and begins to participate in the DKG process by generating a secret share, as well as a secret polynomial, commitment to that poly.
-4. Participants publish their proof and vrf output $(\pi, d)$, proving that their VRF output makes them a valid participant in the round of dkg, along with commitments to the polynomial, a calculated public key share $g^{f(0)}$, and a proof of correctness of the public key share calculation. 
-5. When another node *publicly* announces its ability to participate and commits to its poly (i.e. step (3)), then encrypt a secret key share for that identity using its published public key and publish it onchain along with its proper commitment. The encryption scheme used here is TBD, though looking at El Gamal.
-6. The validators dispute invalid shares. This is elaborated on [here](#disputes-phase).
-7. If a threshold of session validators participate honestly, then a public key can be calculated, as discussed [here](#key-derivation)
- 
+At the end of this, the participants have a shared secret/public keypair without ever having communicated, since the coordinator facilitated all communication. The coordinator, while having insight into the identities of the participants, has no insight into the secret that they have generated. Additionally, since the coordinator can identity participants, it provides a nice way to do away with the 'disputes' phase present in many dkg protocols (e.g. what what previously written in this proposal) and to identify malicious participants.
 
-<p align="center">
-
- <img src="https://github.com/ideal-lab5/Grants-Program/blob/dkg/static/img/spk.png?raw=true" alt="Secret Society high-level overview"/>
-</p>
-
-#### Disputes Phase
-
-The disputes phase occurs after each validator submits its encrypted shares and commitments to the network. If an adversary issues an invalid share, then honest participants should issue a dispute against it in order to remove it from the rest of the protocol and to slash that adversary. In order to ensure an adversary cannot falsely dispute the validity of a share, we place the burden of proving invalidity onto the party issuing a dispute. This is accomplished by using zk SNARKs. The phase is as follows:
-
-1. Since each participant of the dkg agrees on the same group generator $g$, when a participants receives a share from another participants it can verify if it is a valid share through a simple calculation. Each validator verifies each share it recieves. If a share is valid, then there is no dispute.
-2. If a share is invalid, then prepare a (zk) proof of correctness of their calculation that the share is invalid and publish it.
-3. If a threshold $t+1$ of participants verify the proof, then the share is rejected from the protocol. Here, the identity of the validator who provided a bad share can be publicly announced.
-
-At the end of this, if any validator submitted an invalid share we consider them an adversary, and their stake will be slashed.
-
-#### Key Derivation
-
-To derive keys, we use a new group generator $h$ to ensure a uniform distribution of public key shares. We will assume that this value is common knowledge to all participants and provided by the initator of the dkg. Each member of a society generates a public key by calculating $h^s$ for their secret share $s$. Each member also prepares a proof that they calculated their share correctly. For this, we will use a zk proof, possibly using the DLEQ as in EthDKG, or groth16 as in the disputes phase (though DLEQ could be used there as well). When deriving a public key, it can derived so that only shares for which valid proofs were provided are included in the calculation, ensuring it is a valid key.
-
-#### Encryption and Decryption using Derived Keys
-
-Initially, we plan on using El Gamal for encryption and decryption. The encryption scheme will be over the same curve as the DKG, so that during the encryption phase the encrypting party only needs to use the derived public key as any normal public key. To decrypt however, we need to reconstruct the private key. To do so, we need to calculate the sum of the secret shares. This might sound difficult: if only a threshold of participants are available, we still don't have enough information to construct the private key (since it is the sum of ALL shares)! But that's where the magic of the DKG comes in play. Since we used a DKG to generate the keys, the entire secret can be recovered by any threshold of collaborating participants! So as long as a threshold is honest and online, we can always reconstruct the secret key.
-
-<p align="center">
- <img src="https://github.com/ideal-lab5/Grants-Program/blob/dkg/static/img/dkg_enc.png?raw=true" alt="encryption"/>
-</p>
+##### Some Notes
+- No Disputes: This type of DKG does not require a disputes phase, as other DKGs do, since the coordinator verifies all shares before submitting them to participants. 
+- Privacy: The participants in the protocol are able to remain anonymous. This does not extend to the initator of the protocol, however, who will be publicly recorded as owning the derived public key.
+- Security: It's designed to resist a variety of attacks, including malicious participants and compromised coordinators. It is also resistant to Sybil attacks since the participants are selected randomly, though this does not imply the underlying consensus (and thus the coordinator) is resistant to Sybil attacks.  It is also resistant to collusion among shareholder, since it is not possible (in most situations) to determine who will be able to participate before the protocol starts. Additionally, after the public key is derived, since there is no publicly verifiable link between public key and participant, it is hard to find nodes to bribe.
+- Scalability: The protocol can be scaled to support a large number of participants. Since participants only communicate with the coordinator, there is no overhead where they need to send messages to each other (i.e. one message with 'n' shares to the coordinator v.s. 'n' messages of 1 share published for other participants).
+- Vulnerable to side-channel attacks: The protocol is vulnerable to side-channel attacks. For example, since it is somewhat computationally intensive, power consumption could be an indicator of particpation.If there are a lot of requests to decrypt the same keys (this would be even worse for large thresholds), then it maybe possible to figure out who's publishing keys based on energy usage and the signed txs sent as part of the protocol. There are some ways to mitigate this that we'll explore in the future.
 
 #### Non-interactive Secret Sharing
 
-We intend to enable non-interactive secret sharing using rules defined in smart contracts which can delegate decryption rights. The idea we propose is the same as was developed for the [iris](https://github.com/w3f/Grants-Program/blob/master/applications/iris_followup.md) proposal. The general idea is that the owner of some distributed key can define a contract that can verify if any given caller should be authorized to get a calculate a decryption key. If the contract determines they can, then the caller should receive shares from the society. Ideally, we would like to perform this in a cryptographically verifiable way, where we do not need to trust that the society is properly economically incentivized to behave correctly, however that will require more research. For now, we intend to develop simple "rule" contracts which can be aggregated in a "rule executor" contract, which can act as a gate to data. The network will incentivize members of the society to only deliver shares as determined by the contract.
+As a note, we would like to revisit this idea with a more elegant solution in the future. The initial version we propose here is not privacy preserving (i.e. it would be publicly recorded that someone requested keys for a public key).
+
+We intend to enable non-interactive secret sharing using rules defined in smart contracts which can delegate decryption rights. The idea we propose is the same as was developed for the [iris](https://github.com/w3f/Grants-Program/blob/master/applications/iris_followup.md) proposal. The general idea is that the owner of some distributed key can define a contract that can verify if any given caller should be authorized to get a calculate a decryption key. If the contract determines they can, then the caller should receive keys. Ideally, we would like to perform this in a cryptographically verifiable way, where we do not need to trust that the society is economically incentivized to behave correctly, however that will require more research. For now, we intend to develop **rules** contracts which can be aggregated in a "rule executor" contract, which can act as a barrier to data. The network will incentivize members of the society to only deliver shares as determined by the authorized address, such as a call from a contract. To accomplish this, the owner of a public key can authorize itself or another address (or set of addresses) to be able to authorize the transfer of reencryption keys.
+
+We do not make any stringent enforcement on how rules and rule executors should work, and they can really take any form. The only stipulation is that the owner of the public key has authorized the address to be able to initiate the distribution of keys to another address.
+
+This first use case we will build on Cryptex is a rule-based secret sharing platform. As part of this, the owner of a public key, derived via blind dkg, gets the hash of their secret (e.g. sha256), encrypts the secret with a shared public key, adds the ciphertext to IPFS, and then publishes the resulting CID and sha256 hash of the plaintext (e.g. to a smart contract that verifies their ownership of the pubkey). This is not the 'rule' contract, but just some dapp running on Iris. Other users can use that dapp to read and interact with the data that was just published. They can then request access by calling a rule executor associated with the public key. If the rule executor contract authorizes it, then it calls the chain (via a chain extension) to encode onchain that anyone with a share of the corresponding secret $S$ should encrypt a share for a participant $P$ and publish it *blindly*. To do this, each $P$ must publish a new public key that it has derived offcahin, this iwll be used to encrypt data. Then, we use an approach which is essentially the same as in the main blind dkg protocol. A coordinator is randomly chosen, each participant prepares their blind public key and publishes a share, encrypted for the coordinator, along with the blind key. The coordinator then unblinds the keys, verifies the shares, aggregates them into a master secret key, then encrypts it for the specified recipient and publishes it. 
 
 #### Proposed Architecture
+
+
+<p align="center">
+ <img src="https://github.com/ideal-lab5/Grants-Program/blob/dkg/static/img/high_level_cryptex_user_centered.drawio.png?raw=true" alt="SDK interactions overview"/>
+</p>
+
 
 ##### Libraries/Tech Stack
 
@@ -102,108 +97,56 @@ We intend to enable non-interactive secret sharing using rules defined in smart 
 - Frameworks/Libs: substrate + tools (e.g. ink!, zombienet, telemetry), arkworks-rs for algebra and zk SNARKs.
 - We will use [tarpaulin](https://github.com/xd009642/tarpaulin) for test coverage of our new pallets and dkg library.
 
-##### DKG Library
+##### Testing + Code Quality Approach
 
-This is a standalone library that contains the code for the core DKG and VSS protocol. We plan on building this using arkworks-rs. This library will enable the Blind DKG protocol as detailed above. It will provide functionality to:
+We intend to meet a minimum coverage of 80% on all code, as well as document manual test scenarios + zombienet scenarios, and to integrate code coverage and quality tools into our CI pipeline. Here is our testing tools/plans in brief:
+
+- Pallets: For pallets, we will write unit tests, with coverage verified by tarpaulin. We'll also perform benchmarking for each pallet.
+- E2E tests: E2E tests for the runtime will be done both manually and with zombienet. We intend to document manual testing steps, expected results, and verification for any reviewers.
+- SDK: The sdk will be tested with some unit testing framework.
+
+Code Quality: We haven't determined any code quality tools which we'll use, though we will follow all rust best practices, including ensuring code is properly formatted and passes cargo clippy. All code will be reviewed by the team before being released. We may also rely on the larger "PBA Alumni" community in some regard in order to receive external feedback as well.
+
+Once completed, we will have security audits performed on our codebases as well (and resolve any issues).
+
+##### Blind DKG Library
+
+This is a standalone library that contains the code for the core blind DKG implementation. We plan on building this using arkworks-rs. This library will enable the Blind DKG protocol as detailed above. It will provide functionality to:
 
 - generate secret polynomials, calculate shares and commitments
 - verify key shares and prepare proofs of correctness of invalidity calculations
-- encrypt and decrypt key shares using the curve used by the dkg 
-- encrypt plaintext using El Gamal (wasm)
-- restructure a secret key and decrypt ciphertext via el gamal (wasm)
+- blind messages, verify blind messages
+- encrypt/decrypt using El Gamal (wasm)
 
-We will make the implementation generic, though in practice we will probably use BLS12-377 or BLS12-381. 
-
-The library will also compile to wasm. Additionally, we would like to use the curves defined in the [ark-substrate](https://github.com/paritytech/ark-substrate) library.
+The library will also compile to wasm and work with both std and no-std.
 
 ##### Pallets
 
 These pallets may rely on other pallets that already exist in FRAME, which we don't mention here. (e.g. Grandpa, Babe, Balance, Timestamp, Assets, Contracts, etc.). The names and structure in the actual implementation may differ.
 
-###### Election Provider
+###### Coordinator Selection
 
-We will implement an election provider, similar to [election-provider-multi-phase](https://github.com/paritytech/substrate/tree/master/frame/election-provider-multi-phase), to facilitate VFR calculation, keygen, and the disputes process. The election provider operates in two phases, a signed phase and an unsigned phase, where the unsigned phase happens offchain and only allows validators to participate. The signed phase ends when the `elect` extrinsic is called. 
+We select a coordinator in the same way that a leader is selected in the consensus mechanism. That is, we select a coordinator using the same mechanism as BABE, via the election-provider-multi-phase module. 
 
-```
-                                                                    elect()
-                 +   <--T::SignedPhase-->  +  <--T::UnsignedPhase-->   +
-   +-------------------------------------------------------------------+
-    Phase::Off   +       Phase::Signed     +      Phase::Unsigned      +
-```
-During our signed phase, validators calculate the output of their VRF, secret polynomial, etc, and submit a commitment to it onchain. During the unsigned phase, the disputes process occurs where each participant calculates the validity of shares and prepares proofs of correctness offchain.
+###### DKG Pallet
 
-The signed phase lasts an entire session, during which requests to generate keys can be submitted, queued, and bid upon by validators. The unsigned phase, where shares are verified and proofs are generated, will run offchain and we do not know how many blocks this will take, though we will assume within some reasonable threshold. If that threshold is surpassed, or if the elect() function fails, then we will delegate to an emergency fallback, where keys that could be created are created and those that could not are refunded.
+The DKG pallet facilitates Blind DKG. That is, it contains the extrinsics needed to initate the protocol, submit blinded public keys, submit encrypted shares and commitments, and all other interactions as specified in the protocol. The pallet will allow for shared public key ownership to be validated, as well as contain the extrinsics needed to request decryption keys. The runtime storage of this pallet will store the blind public keys and allow for public verification that keys are correctly calcuated and that the participants were all valid. It will be able to trigger the coordinator selection process, which initates the blind dkg.
 
-###### DKG  Pallet
+##### Authorization Pallet and Contracts
 
-The DKG pallet will be responsible for coordinating and performing rounds of blind DKG. It does this by managing multiple rounds of elections simultaneously.
+To facilitate the non-interactive secret sharing aspect of the network, we build functionality to allow the owner of a public key created via Blind DKG to specify other addresses as being able to 'authorize' reencryption of data for other parties. To make this a non-interactive process, we will use smart contracts that we refer to as 'rule' contracts. A rule contract is any contract that can call into the blockchain, via a chain extension, which, when authorized by the owner, can initate the reencryption process as discussed above.
 
-This pallet will take a lot of inspiration from the substrate [staking pallet](https://github.com/paritytech/substrate/blob/master/frame/staking/README.md). The functionality of this pallet is not consensus-critical and is only available to members of the active validator set. This pallet has two main responsibilities:
+To make this work, we will develop an 'authorization' pallet which allows the owner of a pubkey to specify addresses that can authorize data access. The extrinsic to authorize data access will be exposed through a chain extension and callable by contracts.
 
-1. It allows validators to declare themselves as potential 'custodians' for secret key shares. Based on their stake, each validator is allowed to participate in some to-be-determined maximum number of unique societies at any given time. 
-2. It manages and coordinates the phases of multiple elections simultaneously. 
+These contracts have no one-size-fits-all template, but to begin we will define a few nice primitives that could be used to build more complex rules. To start, we will define rule contracts that enable:
 
-**Config**
-- `ElectionProvider`: The election provider as detailed above. The signed phase starts the first block after a request has been issued to start the DKG, followed by the unsigned phas as detailed above.
+- password protected data
+- identity-based data access
+- data procetected by ownership of an asset
 
-**Runtime Storage**
-Generally, runtime storage in this pallet is used to track the participation of validators in the blind dkg within any session. It also stored information about current and historical elections.
-- `ActiveCustodians`: The active validators who have declared themselves as custodians
-- `InactiveCustodians`: The inactive validators who have declared themselves as custodians
-- `RequeuestQueue`: The queue to which accounts can publich dkg requests
-- `ActiveDKG`: Tracks the active rounds of blind dkg (i.e. the election phases)
-- `HistoricDKG`: Tracks historic rounds of blind dkg, up to a number of blocks.
+These will be implemented with ink!. In order to make this possible, we also implement a chain extension to authorize an address to decrypt data.
 
-**Extrinsics**
-Callable by validators 
-- `declare(signed_origin)`: A validator can declare itself as a potential custodian
-- `revoke(signed_origin)`: Revoke your custodianship and forfeit your keys
-- `commit(signed_origin, election_id, vrf_proof, vrf_out, poly_commitment)`: Callable during the signed phase, allows a validator to submit their vrf output, proof, and commitment to a secret polynomial. The election_id will be some type of identifier, tying this to a specific instance of the election.
-- `prove_invalidity(unsigned_origin, signed_payload(proof of correctness))`: This function is callable by a validator's offchain worker. It allows a validator to submit the proof of correctness required for the disputes process.
-- `publish_shares(signed_origin, map(public_key -> encrypted_share))`: This function lets validators publish shares intended to be decrypted by a particular recipient. Here, we assume that the recipient `public_key` refers to the public key derived by a member of the society.
-
-Public
-- `request_dkg(signed_origin, t, n, g, h, reserve_balance)`: request to start the DKG process, essentially synonymous with starting the signed phase of the election. t is the threshold, n is the number of shares, g and h are distinct group generators, and reserve_balance is a locked amount of native tokens the caller has locked to pay for the dkg.
-
-Root
-- `set_election_params(signed_origin, params)`: Set any parameters related to the elections as needed.
-- `set_max_custodians(signed_origin, u32)`: Set the maximum number of active and inactive custodians
-
-Additionally, this pallet will handle the reward calculation and distribution based on the `reserved_balance` used to request the DKG and the performance of the participants in the DKG. We will implement our pallet so that it is generic in this regard, however, in practice, our reward mechanism will be quite simple. Without going in depth on the inflation and economics of the blockchain, our scheme will *loosely* be as follows:
-
-1. Each validator will be able to charge a transaction fee, probably static across all validators to begin but made more dynamic in the future
-2. When the dkg is triggered, the caller reserves $n * fee$ tokens.
-3. After a key is derived, each participant receives the $fee$ amount if they participated honestly and contributed to deriving the pubkey.
-4. If some validators' shares were rejected through the disputes process, the fee is refunded to the caller. If a threshold of validators issue invalid shares, then then entire reserve balance is returned to the caller.
-5. Dishonest participants will have their stake slashed by some percentage of their stake.
-
-###### SNFT Pallet
-
-This pallet enables the onchain representation of public keys derived through blind DKG.
-
-We use an approach similar to a [DID](https://www.w3.org/TR/did-core/) to allow the public keys created as part of the derivation phase of the VSS as unique, ownable, usable onchain entities. We could also consider this as some special kind of NFT, so we call it an SNFT (s for secret). The owner of the public key is able to request a decryption key at any time. Further, this pallet will allow the owner, or an authorized proxy, to temporarily (or permanently) provision access to other addreseses to request key shares from the network (like temorary delegate for a DID).
-
-**Runtime Storage**
-
-- `OwnerOf`: Track the owner of any given public key
-- `AttributeOf`: Track the attributes of any given public key
-- `DelegatesOf`: Track the delegates of any given public key
-- `ProxyOf`: Track the proxy of any given public key
-
-**Extrinsics**
-- `create(signed_origin, owner, public_key)`: Should be triggered as output of the DKG's key derivation phase, creating a link between the owner and the derived pubkey.
-- `add/revoke_attributes(signed_origin, public_key, attribute)`: add or revoke attributes to an owned public key (e.g. )
-- `add/revoke_delegate(signed_origin, public_key, delegate)`: add or revoke a delegate. A delegate is some other account that you can give temporary or permananent access to.
-- `add/revoke_proxy(signed_origin, public_key, proxy)`: add or revoke a proxy. A proxy is some other address, usually a smart contract, who the owner will authorize as being able to manage delegated users.
-- `execute(signed_origin, public_key, ephem_pubkey)`: Callable by the owner or any active delegate, submits a request to the network to recover secret key shares for the caller. The share will be encrypted using the `ephem_pubkey` and El Gamal.
-
-root
-These functions exists since we will use BoundedVecs in our storage maps.
-- `set_max_delegates`: Set the maximum number of delegates per key at any time
-- `set_max_attributes`: Set the max number of attributes 
-- `set_max_pubkeys`: Set the maximum nmumber of public keys that any given account can own
-
-###### SDK
+##### SDK
 
 We will build an SDK with the following capabilities to allow developers and protocols to interact with cryptex:
  
@@ -230,12 +173,6 @@ We will build an SDK with the following capabilities to allow developers and pro
   <p align="center">
     <img src="https://github.com/ideal-lab5/Grants-Program/blob/dkg/static/img/Cryptex-Graphql.jpeg?raw=true" alt="SDK Graphql Capability"/>
   </p>
-
-From a user-centric perspective, the basic vision for the architecture needed to build a dapp on cryptex might look something like this.
-
-<p align="center">
- <img src="https://github.com/ideal-lab5/Grants-Program/blob/dkg/static/img/high_level_cryptex_user_centered.drawio.png?raw=true" alt="SDK interactions overview"/>
-</p>
 
 Dapps built on the protocol would essentially be 'multiaddress and CID management' contracts which would be responsible for storage and curation of the multiaddresses and CIDs that are encrypted with some given public key. For example, a 'Netflix' dapp might look like some type of decentralized database mapping CIDs to some set of metadata (e.g. title, genre, rating), where the CIDs point to data encrypted with the Netflix public key generated via the DKG. The 'Netflix Rules' contract could be something as simple as checking if the caller owns the official 'Netflix NFT'. Dapps will most likely need to rely on some type of storage beyond what's available in the contract, as contract storage is limited and this data could potentially be huge. We leave the storage solution up to the implementer here via the storage module within the SDK. We intend to make this modular enough for a data owner to use any type of storage they choose, though to begin we limit this to only IPFS.
 
@@ -268,9 +205,9 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
     - [DaPassword](https://cardano.ideascale.com/c/idea/332494)
     - [Blockchain password](https://margatroid.github.io/blockchain-password/#/)
     - [You](https://medium.com/airgap-it/you-the-decentralized-password-manager-2f521cced7be)
-  - [EthDKG](https://github.com/PhilippSchindler/EthDKG): Our protocol uses the same DKG scheme as ethDKG, though we use a different SNARK system and have several other distinctions (e.g. consensus-backed security for secret shares).
+  - [EthDKG](https://github.com/PhilippSchindler/EthDKG): EthDKG is a DKG protocol on built on ethereum, where its main contribution is the introduction of zk snarks during the disputes process.
   - [Share](https://share.formless.xyz/): which appears to use some type of threshold encryption but does not go into major detail (and which has dubious scalability)
-  - [Lit Protocol](https://litprotocol.com/): We share many similarities with this protocol as it is built on the same underlying technology, using DKG and TSS. However, lit only enables on layer of TSS, similar to our 'session public key'. Additionally, it does not use zk SNARKs or other privacy preserving tools. I believe that Lit would not scale well, whereas this protocol does. 
+  - [Lit Protocol](https://litprotocol.com/): LIT is a protocol that runs on a distributed network of mostly static nodes who each participate in a DKG to enable TSS *threshold signature scheme/threshold secret sharing. LIT, however, isn't a blockchain and isn't really decentalized, it is 'middleware' as their docs claim. Additionally, the DKG it uses is quite different than the one proposed here.
 
 ## Team :busts_in_silhouette:
 
@@ -300,7 +237,7 @@ Tony has worked on two, [here as "iridium"](https://github.com/w3f/Grants-Progra
 
 ### Tony Riemer
 
-I am an engineer and math-lover with a passion for exploring new ideas. I studied mathematics at the University of Wisconsin and subsequently went to work at [Fannie Mae](https://en.wikipedia.org/wiki/Fannie_Mae) and then [Capital One](https://en.wikipedia.org/wiki/Capital_One), where I mainly worked on fintech products, like systems for loan servicing and efficient pricing algorithms. For the previous year and a half, I've been working exclusively in the web3 space, including having worked on two web3 foundation grants [here](https://github.com/w3f/Grants-Program/blob/master/applications/iris.md) and [here](https://github.com/w3f/Grants-Program/blob/master/applications/iris_followup.md). Beyond that, I have dabbled in many open source projects as well as have built several of my own, ranging from computer vision, machine learning, to blockchains and IoT.  Most recently, I attended the Polkadot Blockchain Academy in Buenos Aires, and this new proposal is an application of ideas I learned there applied to my previous grant.
+I am an engineer and math-lover with a passion for exploring new ideas. I studied mathematics at the University of Wisconsin and subsequently went to work at [Fannie Mae](https://en.wikipedia.org/wiki/Fannie_Mae) and then [Capital One](https://en.wikipedia.org/wiki/Capital_One), where I mainly worked on fintech products, like systems for loan servicing and efficient pricing algorithms. For the previous year and a half, I've been working exclusively in the web3 space, including having worked on two web3 foundation grants [here](https://github.com/w3f/Grants-Program/blob/master/applications/iris.md) and [here](https://github.com/w3f/Grants-Program/blob/master/applications/iris_followup.md) and as an independent consultant. Beyond the web3-sphere, I have dabbled in many open source projects as well as have built several of my own, ranging from computer vision, machine learning, to IoT and video games.  Most recently, I attended the Polkadot Blockchain Academy in Buenos Aires, and this new proposal is an application of ideas I learned there applied to my previous grant.
 
 ### Carlos Montoya
 I have been doing software for more than 20 years, most recently in the startup world. 
@@ -344,16 +281,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 ## Development Status :open_book:
 
 - academic publications relevant to the problem
-  - our main dkg protocol is inspired by [EthDKG](https://eprint.iacr.org/2019/985).
-  - the idea of the validator set participating in the reencryption of shares is inspired by [Honeybadger BFT](https://eprint.iacr.org/2016/199.pdf). Our network does not achieve atomic broacast at this time, but it is a future avenue we would like to explore. 
   - The VRF we use is the same as in [Babe](https://research.web3.foundation/en/latest/polkadot/block-production/Babe.html).
   - [Some further reading on VSS and DKG protocols](https://eprint.iacr.org/2012/377.pdf)
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-  - I have already started a PoC to implement and simulate the blind dkg protocol here: https://github.com/driemworks/dkg
-  - I have started on a whitepaper. [The draft can be found here](https://drive.google.com/file/d/1iouXfgJ7mMpwtfJrFTuaNnhy3R8oATPz/view?usp=sharing). We plan to complete it during the duration of this grant.
+  - I have already started a PoC to implement and simulate the blind dkg protocol here: https://github.com/ideal-lab5/dkg
+  - In my substack I've published a few things about this, [here](https://driemworks.substack.com/p/blind-distributed-key-generation) and [here](https://ideallabs.substack.com/p/blind-dkg-part-1).
   - This work builds on the previous work done by Tony in his Iris project (see previous w3f grants).
-  - We have started a substack to explain the protocol and document its development. Part 1 is published here: https://ideallabs.substack.com/p/blind-dkg-part-1
-  - While doing research for this proposal we uncovered we previously done by [protocol labs](https://research.protocol.ai/blog/2022/a-deep-dive-into-dkg-chain-of-snarks-and-arkworks/) on a deep dive of an implementation of a dkg within a SNARK using arkworks. Though it doesn't mirror our protocol, we see this as evidence for the feasibility of using arkworks for a DKG.
+  - While doing research for this proposal we uncovered we previously done by [protocol labs](https://research.protocol.ai/blog/2022/a-deep-dive-into-dkg-chain-of-snarks-and-arkworks/) on a deep dive of an implementation. Though it doesn't mirror our protocol, we see this as evidence for the feasibility of using arkworks for a DKG.
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation
   - We have spoken with several individuals involved with the grants program and with square one, specifically Coleman Maher and Nico Morgan, in a non-technical capacity, to discuss the high-level idea and potential. 
   - During an evaluation of the Iris grant, I spoke with the evaluator Diogo and he expressed scepticism around the security of the approach taken in Iris. While attending the PBA, after discussing ideas related to secret sharing schemes with instructors and  engineers from Parity and web3 foundation, I was able to reimagine the secret sharing implemented in Iris and redesign the system in order to fix the vulnerabilities inherent in the approach. I have already shared the draft whitepaper with some folks at web3 as well, though we haven't had a formal review of it.
@@ -368,100 +302,109 @@ The general flow of our milestones are a two-pronged approach. In each milestone
 - **Full-Time Equivalent (FTE):**  2.5 FTE
 - **Total Costs:** 72,000 USD
 
-### Milestone 1 — Simplified Blind DKG
+There is a mandatory set of deliverables defined in the template. Since we aim to make similarly defined delvieries for each milestone, we present the list of pre-defined deliverables, expected per milestone, here: 
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| **0e.** | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+
+Note on estimates: 
+- the estimates next to each deliverable are really high level, and we are attempting to break tasks down so that things can be worked on in parallel as much as possible. 
+- Unless otherwise specified, assume that the estimate includes both any required research, develop, *and* testing.
+
+### Milestone 1 — PoA Blind DKG
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  2.5
 - **Costs:** 18,000 USD
 
-Goals:
-- DKG/VSS Library development and testing
-- Simplified blind dkg (assumes all honest participants), including election module and dkg pallet
-- Beginnings of SDK: encryption, decryption, IPFS interactions, wasm calls
--- 
-- No disputes phase, no zk snarks
+In the first milestone we will use a proof of authority consensus with a static set of authorities. This makes the network simpler to test and verify while we develop the foundational aspects. 
 
+###### Goals
+The goals of this milestone are:
+- to implement and test blind dkg in a standalone library
+- to implement a modified (simplified) integration of Blind DKG into our runtime. Participation won't be blind but still no link between final pubkey 
+- a basic implementation of the SDK; the implementation should let users to initiate the dkg, check public key ownership, and query blockchain runtime storage.
+
+We implement a modified version of blind dkg, without the coordinator selection or the participant selection steps. Since the goal is to ensure that the blind dkg library integrates nicely with substrate, we do not want to overcomplicate things at the outset. In this modified version, only 'Alice' will be able to act as a coordinator. The size and threshold of the shareholder set will be static values for now too. The pallet will have functionality to initate the dkg and to initate the distribution of reencryption keys for the secret, with reencryption only possible when the owner sends a signed tx. Further, in the simplified implementation, we won't use a VRF quite yet and instead all validators participate.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | (2 weeks) Library: DKG | We implement and test a DKG protocol implemented with arkworks. The first version of the library will have abilities to generate a key/poly, commit to it, and to encrypt and decrypt secret shares using el gamal. This will be the main library we integrate into our runtime to enable the dkg. We will experiment with a few potential curves, most likely BLS12-381 and BLS12-377. |
-| 2. | (3 weeks) Substrate Module: Election Module| We implement a simplified version of blind DKG within a new election module. This simplified version will do nothing during the unsigned (offchain) phase, and for the initial phase we assume all honest participants (so no verification, no disputes) and we do not yet use zk snarks. |
-| 3. | (3 weeks) Substrate module: DKG Pallet | We build a simplified version of the [DKG pallet](#dkg-pallet). In this iteration, we do not include the function to issue disputes, only `declare`, `revoke`, `commit`, `publish_shares`, and `request_dkg` functions will be implemented. |
-| 4. | (3 weeks but done in parallel) SDK: Storage Interface, Encryption | Setup encryption and decryption capabilities and setup capabilities to interact with IPFS to add/read data. We will use a wasm call to call the dkg library in order to reassemble secret keys and decrypt data. |
+| 1. | (4 weeks) Library: Blind DKG | We implement and test the blind DKG protocol using arkworks. We will make our implementation work on any elliptic curve group implemented with arkworks. |
+| 2. | (3 weeks) Substrate module: DKG Pallet | We build a pallet to integrate blind dkg into our runtime as described above. This will also include the calculation of a group public key. We will use a conjunction of runtime storage maps and logic within an on_initialize hook to accomplish this. |
+| 3. | (2 weeks, done in parallel) SDK | The SDK should have basic functionality to: request to initate a round of blind dkg and query runtime storage, as well as setup the foundations of the SDK. |
 
-### Milestone 2 - Secret Sharing
+### Milestone 2 - PoA Secret Sharing
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2.5
 - **Costs:** 18,000 USD
 
-Goals:
-- to enable secret sharing within the network
-  - have onchain representation of ownership of public keys
-  - be able to delegate decryption rights to other accounts
-  - be able to use ownership to request key shares from the society
-- at the end of this milestone, we will have a simple version of a secret sharing scheme, without disputes or privacy and without any rule-based access models defined.
+At the end of the previous milestone, we have accomplished the abilitiy for Alice to act as a static coordinator for a static set of participants, but we have yet to use those keys for any purpose. In this milestone, we don't yet solve the issue of the static authority set, but we do make the keys usable.
+
+###### Goals
+The outcome of milestone 2 is to enable secret sharing within the network. In order to do so, we develop functionality to encrypt, reencrypt, and decrypt data secured using the keys created through the mechanism implemented in milestone 1.
+
+- shared public key derivation
+- zk proofs of correctness to verify correctness of shares
+- we begin the non-interactive secret sharing implementation by:
+  - allowing users to publish a new public key to be used for encryption of secret shares 
+  - allowing validators to encrypt shares and submit them onchain
+- update the SDK to be able to leverage the secret sharing capabilities
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1 .| (2 weeks) Substrate Module: SNFT Pallet | We build the [SNFT pallet](#snft-pallet) as detailed above. We integrate this with the DKG pallet in order to create an entry in this pallet when the dkg executes successfully. We also implement functionality to request secret shares from the owning society. | 
-| 2. | (2 weeks) Substrate Module: DKG Pallet | We add functionality that allows validators to respond to requests for shares and reencrypt them for an owner or delegate. We will use the same `publish_shares` function that will have been developed as part of M1 in order to encode encrypted shares onchain. |
-| 3. | (2 weeks) SDK: VSS Module | We build functionality to decrypt the encrypted shares (this is same encrypted from milestone 1) and to reassemble a secret key from shares in the browser by making a wasm call to the DKG library delivered in the previous milestone. We also develop functionality to interact with the new extrinsics, to request to start the dkg or request reencryption, and to query information related to the blockchain state (i.e. which keys you own). |
+| 1a. | (2 weeks) Substrate Module: DKG Pallet: PK Derivation | We implement the public key derivation process as described above. |
+| 1b. | (2 weeks) Substrate Module: DKG Pallet: SK derivation | We implement the blind mechanism for shareholders to submit keys as detailed [above](#non-interactive-secret-sharing). As part of this, we allow users to submit a public key to be used for encryption of their shares. |
+| 2. | (2 weeks) Substrate Module: DKG Pallet | We enhance the pallet so that the coordinator (Alice) sends a zk proof of correctness that she validated a share and each participant verifies the proof. |
+| 3. | (2 weeks) SDK | We add functionality to fetch public keys and verify their ownership, to encrypt/decrypt data, create and submit new public keys to the network for encryption, and to read a secret from the chain. |
 
-### Milestone 3 - zkSNARKs and Disputes
+
+### Milestone 3 - Full Blind DKG Implementation
+
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2.5
 - **Costs:** 18,000 USD
 
-Goals:
-- implement the disputes phase
-- use zk SNARKs to encode the proof of correctness of disputed shares
-- implement economic incentives to participate honestly in DKG (slashing + rewarding)
+###### Goals
+
+The goal of this milestone is to complete the implementation of blind dkg to make it truly blind. As part of this, we:
+- upgrade to NPoS consensus
+- implement coordinator selection
+- implement blind participant selection
+- slash/reward participants
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | (3 weeks) Library: DKG | We implement functionality to verify/unverify secret key shares. We will use [groth16](https://github.com/arkworks-rs/groth16) to prepare a zero knowlede proofs of correctness of invalidity calculations. We integrate this within our runtime, as well as functionality to verify proofs. |
-| 2. | (3 weeks) Substrate module: Election module and DKG Pallet: Disputes Phase and Slashing | We implement the disputes phase as detailed [here](#disputes-phase). We integrate the changes made as part of (1) in order to verify shares and construct proofs of their invalidity that can be shared with the network. We do this using the arkworks [r1cs library](https://github.com/arkworks-rs/r1cs-std). |
-| 3. | (2 weeks) Substrate Module: DKG Pallet: Slashes and Rewards | We implement slash and reward mechanisms at the end of each round of blind DKG. This is intended to incentivize validators to participate in the dkg honestly. | 
+| 1. | (1.5 weeks) | We upgrade our blockchain to use nominated proof of stake consensus. | 
+| 2. | (3 weeks) Substrate Module: Coordinator Selection | We implement the coordinator selection mechanism, using the same approach used by BABE to select a coordinator (using a VRF). We also integrate this into the DKG pallet to trigger the process via extrinsic call. |
+| 3. | (3 weeks) Substrate Module: Participant Selection (with VRF) | We implement the blind participant selection mechanism based on the work in the previous deliverable. Here, each validator submits a VRF and proof as detailed above. We also integrate this into the DKG pallet, so that once a coordinator is selected, the participant selection mechanism starts.  |
+| 4. | (2 weeks) Substrate Module: DKG Pallet: Slashes and Rewards | We implement a basic slashing/reward scheme for participants in the DKG in order to incentivize honest participation. | 
+| 5. | (2 weeks) SDK | We implement a storage adapapter in the SDK and verify a simple flow that keys can be created, used for encryption, and later on assembled and used for decryption. The reward mechanism will work by the coordinator distributing the reward to each participant. |
 
-### Milestone 4 - DSL, Decryption Delegation, and Demonstration
+### Milestone 4 - Rule contracts
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2.5
 - **Costs:** 18,000 USD
 
-Goals:
-- enable secret sharing in the network by:
-  - building onchain ownerhsip model for public key
-  - enabling a rule based system to determine if an address can decrypt data
-  - develop and test a set of contracts to act as a base rule set
+###### Goals
+Now that we have a complete implementation of Blind DKG, we will add a 'rule-based' access system on top of it, as defined using smart contracts. The intention is that the owner of data can define a proxy who can authorize data access, and that proxy is a smart cotnract deployed to the chain.
+- enabling a rule based system to determine if an address can decrypt data
+- develop and test a set of contracts to act as a base rule set
 - develop tools to define and deploy these rules using a DSL
 - showcase features and capabilities of everything developed thus far by building a dapp
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1 .| (1 weeks) Contracts, Assets and Chain Extensions | We add the contracts and assets pallet to our runtime and expose a chain extension to read the state of the asset balance in a contract. This will power our initial use case, where data access is gated by ownership of an asset. Additionally, we build a chain extension that can be called by contracts in order to delegate decryption rights in the SNFT pallet. | 
-| 2. | (2 weeks) Contracts | We will work off of the contracts [here](https://github.com/ideal-lab5/contracts) developed as part of Iris. We will developed contracts that: gates data based on specific identieis, based on ownership of an asset, as well as deliver the template/traits needed to implement custom rules. |
-| 3. | (3 weeks) SDK: DSL | We design and implement the DSL module of our SDK and enhance the VSS Module in order to ensure smart contract support. This DSL module will allow users to design rules and deploy them as a contract, which can then be associated with their public key via the snft pallet. |
-| 4. | (3 weeks) SDK: Generic Secret Sharing Dapp | The final task of the final milestone is to use everything that has been developed thus far and to build a dapp on top of it. Our inital dapp will be a simple secret sharing platform.  We will build an interface that lets users create secrets, store them, define rules for access, share secrets, etc. We want this experience to showcase the full feature set that we have developed. |
+| 1 .| (1.5 weeks) Substrate Module: Authorization Pallet + Chain Ext | We build a new pallet that provides functionality to authorize a proxy to delegate decryption rights to other addresses. Along with this, we build a chain extension that exposes this functionality for use in smart contracts. |
+| 2. | (.5 weeks) Substrate Module: DKG Pallet | We modify the DKG pallet so that validators can publish new keys when the contract asks. |
+| 2. | (2 weeks) Contracts | We use the chain extension and pallet from the previous deliverable to build several rule-based contracts for data that could be: password-protected, decryption based on identity (not exactly IBE*), and decryption based on ownership of an asset. |
+| 3. | (3 weeks) SDK: DSL | We design and implement the DSL module of our SDK and enhance. The DSL module will allow users to design rules and deploy them as a contract, which can then be associated with their public key through the authorization pallet. |
+| 4. | (3 weeks) SDK: Generic Secret Sharing Dapp | The final task of the final milestone is to use everything that has been developed thus far and to build a dapp on top of it. Our inital dapp will be a simple secret sharing platform that allows users to use our pre-defined contracts and DSL to build a decentralized, permission file system. We will build an interface that lets users create secrets, store them, define rules for access, share secrets, etc. We want this experience to showcase the full feature set that we have developed. |
 
 ## Future Plans
 
@@ -471,7 +414,6 @@ Please include here
   - We would like to become a parathread or parachain on Polkadot (probably parathread initially), which makes the next point more interesting.
   - We would like to explore the usage of XCM in order to accomplish cross-chain 'data locks', wherein the proof of a condition on chain A (e.g. owning some specific asset on Ajuna) would equate to decyryption rights being granted in Cryptex.
   - We would like to explore enabling a threshold signature scheme using the derived keys.
-  - We may investigate using an atomic broadcast approach, as in honeybadger BFT.
   - We would like to explore the usage of witness encryption within a blockchain. Some initial research has been done on this and it is a very promising concept, though a practical implementation would be very difficult at this point.
 
 ## Additional Information :heavy_plus_sign:
