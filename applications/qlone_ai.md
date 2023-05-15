@@ -115,17 +115,17 @@ Within the scope of the blockchain and AI industries, Qlone does not face any di
 
 ### Team members
 
-Name of team leader
+### Name of team leader
 
 Rysard Gvozdovic
 
-Names of team members
+### Names of team members
 
-Rysard CEO: https://www.linkedin.com/in/ry%C5%A1ard-gvozdovi%C4%8D/
-Lukas CMO: https://www.linkedin.com/in/lukas-zalagaitis-9b35211b9/
-Dainius CTO: https://www.linkedin.com/in/dainiussa/
-Arvaidas Blockchain dev: https://www.linkedin.com/in/arvaidas-silgalis/
-Jonas Levinskas: Full stack
+- Rysard CEO: https://www.linkedin.com/in/ry%C5%A1ard-gvozdovi%C4%8D/
+- Lukas CMO: https://www.linkedin.com/in/lukas-zalagaitis-9b35211b9/
+- Dainius CTO: https://www.linkedin.com/in/dainiussa/
+- Arvaidas Blockchain dev: https://www.linkedin.com/in/arvaidas-silgalis/
+- Jonas Levinskas: Full stack
 
 ### Contact
 
