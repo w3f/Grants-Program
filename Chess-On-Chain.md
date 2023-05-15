@@ -188,8 +188,11 @@ Total Costs: 30k $
 
 Milestone 1 Example — Functional Pallets 
 Estimated duration: 3 month
+
 FTE: 1,5
+
 Costs: 20,000 USD
+
 exclamation The default deliverables 0a-0d below are mandatory for all milestones, and deliverable 0e at least for the last one.
 
 | Number |Deliverable  | Specification |
@@ -206,8 +209,14 @@ exclamation The default deliverables 0a-0d below are mandatory for all milestone
 
 
 
+
+
+
+
 Milestone 2 Example — Additional features
+
 Estimated Duration: 1 month
+
 Costs: 10,000 USD
 
 | Number |Deliverable  | Specification |
