@@ -209,7 +209,8 @@ exclamation The default deliverables 0a-0d below are mandatory for all milestone
 | -------- | -------- | -------- |
 |0a     | Data 2   | Data 3   |
 | 0b   | Data 5   | Data 6   |
-
+| Data 1   | Data 2   | Data 3   |
+| Data 4   | Data 5   | Data 6   |
 
 
 Milestone 2 Example — Additional features
@@ -229,9 +230,6 @@ Costs: 10,000 USD
 
 
 
-
-| Column 1 | Column 2 | Column 3 |
-| -------- | -------- | -------- |
 
 | Column 1 | Column 2 | Column 3 |
 | -------- | -------- | -------- |
