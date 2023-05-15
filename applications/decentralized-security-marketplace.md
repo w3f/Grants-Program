@@ -250,7 +250,7 @@ Currently, the project is under technical design phase
 
 ### Milestone 3 — Implementation of Governance smart contract
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 1.5 month
 - **FTE:**  1
 - **Costs:** 22,000 USD
 
@@ -260,6 +260,7 @@ Currently, the project is under technical design phase
 | **0b.** | Documentation               | Markdown documents describing user flow and details on how to run Governance contract and call it from the cli                                         |
 | **0c.** | Testing and Testing Guide   | Unit tests for internal functions and actual implemented business logic. e2e tests for the whole system integrated.                                    |
 | **0d.** | Docker                      | Docker and docker-compose environment for compile, build and run contract locally                                                                      |
+| **0d.** | Article                     | An online article on Medium about the escrow protocol, use case description and simple example of how to setup it to use it as a marketplace           |
 |  **1.** | Rewards Pool implementation | Governance contract implemented: create proposal, approve proposal, call pool to reward propose author. Implementation using !ink programming language |
 
 ## Future Plans
