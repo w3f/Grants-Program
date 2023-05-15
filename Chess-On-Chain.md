@@ -205,7 +205,10 @@ exclamation The default deliverables 0a-0d below are mandatory for all milestone
 
 
 
-
+| Number | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+|0a     | Data 2   | Data 3   |
+| 0b   | Data 5   | Data 6   |
 
 
 
