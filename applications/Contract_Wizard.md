@@ -1,5 +1,5 @@
 # Polkadot Contract Wizard
-​
+
 - **Team Name:** Protofire
 - **Payment Address:** 0xD662E05ce522B3861b70FC376F60bF50E200abfA (USDC - Ethereum network)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3 
