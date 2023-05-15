@@ -1,7 +1,5 @@
-# Name of your Project
+# Qlone AI
 
->
-> See the Grants Program Process on how to submit a proposal.
 - **Team Name:** Qlone AI
 - **Payment Address:** ERC20: 0xB0b6715F24bd84Dd945205426AE6643b33488A51
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
@@ -35,27 +33,17 @@ For image to image model training we use modified version of open source stable 
 
 - An overview of the technology stack to be used
 
-Adversarial Networks (GANs) 
-
-Variational Autoencoders (VAEs)
-
-Large Language Models (LoRA)
-
-Recurrent Neural Networks (RNNs)
-
-GPT-4 natural language AI model
-
-Machine learning
-
-JavaScript
-
-Python
-
-PolkaDot SDKs
-
-PolkaDot PDKs
-
-Rust
+  Adversarial Networks (GANs) 
+  Variational Autoencoders (VAEs)
+  Large Language Models (LoRA)
+  Recurrent Neural Networks (RNNs)
+  GPT-4 natural language AI model
+  Machine learning
+  JavaScript
+  Python
+  PolkaDot SDKs
+  PolkaDot PDKs
+  Rust
 
 - Documentation of core components, protocols, architecture, etc. to be deployed
 https://github.com/QLONEAI
@@ -95,45 +83,59 @@ Expected token holders in first year:
 Expected NFT holders in first year:
 20,000 
 
-Vision: One of the leading AI tool providers in WEB3 market, the first application to offer all-in-one AI infrastructure on mobile platforms, one of the first AI NFT generator provider, first platform to offer AR/AI merged cloning with blockchain functionality. Project that generates revenue with 20K-30K MAU in first year.
+- Vision: 
+
+- One of the leading AI tool providers in WEB3 market, the first application to offer all-in-one AI infrastructure on mobile platforms, one of the first AI NFT generator provider, first platform to offer AR/AI merged cloning with blockchain functionality. Project that generates revenue with 20K-30K MAU in first year.
 Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 People from range 16-40, both male and female, living globally with an interest in technologies, WEB3, AI helpful tools, content creation, and business scalability. Businesses like AI providers, Games/Gaming studios, Customer service, Education, and Online marketplaces.
 
 
 
-What need(s) does your project meet?
+- What need(s) does your project meet?
+- 
 Problem: 
+
 The current AI market offers limited and non-realistic 2D and 3D avatars, lacking interactivity and personalization using biometric data. Speech avatars cannot be tailored to specific needs, and lack identification. Generating NFT collections is a complex and time-consuming process that requires hiring multiple experts. There is room for improvement in the AI market to create more engaging and personalized experiences.
+
 Solutions:
+
 With the leverage of AR technology, avatars will look more realistic and will be 3D rotatable; they will also have more scalability, export formats, and fewer AI indicators.
 Choose from hundreds of pre-made voices, avatars or clone your own. Personal voice cloning is available, along with AR face scanning, which allows users to personalize biometric data for a variety of use cases.
+
 Qlone avatars will have the ability to be trained for specific use cases. The use of the GPT-4 model allows training a one-of-a-kind AI avatar with specific data only for his mind to process.
 Qlone users can protect their rights and authenticate their avatars or NFTs using IP and AI technologies. IP rights are respected, allowing users to effectively control and monetize their generated assets.
+
 Qlone AI provides a practical option to generate an NFT collection. Users don't need to worry about hiring graphic designers or developers. The platform will generate asset designs and generate smart contracts automatically.
 Platform provides a seamless option to generate collections in a matter of clicks and seconds with no development time.
 Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 Within the scope of the blockchain and AI industries, Qlone does not face any direct competition from other brands. We provide our customers with seamless access to a number of features that are not available in other products. Competitor prices are high also we can compete with our tools which they lack, we can compete with our price and technology options. Simillar projects: Fetch.AI, Alethea.AI, Bicasso.
 
 
-Team 👥
-Team members
+## Team :busts_in_silhouette:
+
+### Team members
+
 Name of team leader
+
 Rysard Gvozdovic
+
 Names of team members
+
 Rysard CEO: https://www.linkedin.com/in/ry%C5%A1ard-gvozdovi%C4%8D/
 Lukas CMO: https://www.linkedin.com/in/lukas-zalagaitis-9b35211b9/
 Dainius CTO: https://www.linkedin.com/in/dainiussa/
 Arvaidas Blockchain dev: https://www.linkedin.com/in/arvaidas-silgalis/
 Jonas Levinskas: Full stack
-Contact
-Contact Name: Full name of the contact person in your team
-Rysard Gvozdovic
-Contact Email: Contact email (e.g. john@duo.com)
-hi@qlone.ai
-Website: Your website
-https://qlone.ai/
-Legal Structure
-Registered Address: 
+
+### Contact
+
+- **Contact Name:** Rysard Gvozdovic
+- **Contact Email:** hi@qlone.ai
+- **Website:** https://qlone.ai/
+
+### Legal Structure
+
+- **Registered Address:**
 Studio Meta Ltd
 2098889
 Craigmuir Chambers, Road Town, Tortola, VG 1110, British Virgin Islands
@@ -142,21 +144,26 @@ Craigmuir Chambers, Road Town, Tortola, VG 1110, British Virgin Islands
 
 
 
-Team's experience
+### Team's experience
 
 We are 5 full-time experienced core team members with more than 5 years of experience, from Vilnius, Lithuania. 3 AI and blockchain developers, Lukas CMO and Rysard CEO. With our experience in Web 3 market, vast programming knowledge and know-how skills, we decided to make something unique and innovative that you would definitely enjoy to experience. Founders have a successful background in WEB3/WEB2 markets and great work experience, CTO Dainius has a vast knowledge of AI technology and Machine Learning development, Jonas is known for his full stack and blockchain development skills, and Arvaidas is an experienced blockchain developer. All in all, we have a well-balanced team which covers all required fields to start the project successfully and expand our company. Team has direct plan how to achieve milestones and launch in the market successfully.
-Team Code Repos
+
+### Team Code Repos
 N/A
-Team LinkedIn Profiles (if available)
+
+### Team LinkedIn Profiles (if available)
+
 Rysard CEO: https://www.linkedin.com/in/ry%C5%A1ard-gvozdovi%C4%8D/
 Lukas CMO: https://www.linkedin.com/in/lukas-zalagaitis-9b35211b9/
 Dainius CTO: https://www.linkedin.com/in/dainiussa/
 Arvaidas Blockchain dev: https://www.linkedin.com/in/arvaidas-silgalis/
 Jonas Levinskas: Full stack
-Development Status 📖
+
+## Development Status 📖
 https://docsend.com/view/imej4x72rp4iuphf
-Development Roadmap 🔩
-Overview
+
+## Development Roadmap 🔩
+## Overview
 Total Estimated Duration: 3 months
 Full-Time Equivalent (FTE): 5 full time team members
 Total Costs: 30,000 USD 
@@ -202,12 +209,13 @@ Project in the next 12 months
 One of the leading AI tool providers in WEB3 market, first application to offer all-in-one AI infrastructure on mobile platforms, one of the first AI NFT generator provider, first platform to offer AR/AI merged cloning with blockchain functionality. Project that generates revenue with 20K-30K MAU in first year.
 Referral Program (optional) 💰
 We are planning to add such marketing campaigns as referral program, to increase users count and increase brand awareness.
-Additional Information ➕
-How did you hear about the Grants Program?
-Foundation Website
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-Quick facts:
+## Additional Information :heavy_plus_sign:
+
+**How did you hear about the Grants Program?** Web3 Foundation Website
+
+- Quick facts:
+- 
 1. We have a functional app prototype, multiple AI models and blockchain integrations are already available.
 2. Development team managed to generate our own GAN, RNN AI model prototypes which will be more cost effective for future sales. 
 3. Clear explanation of Qlone AI B2B2C business model, product features, financial forecasts and what value our product adds.
@@ -216,7 +224,6 @@ Quick facts:
 
 
 
-If there are any other teams who have already contributed (financially) to the project.
-No
-Previous grants you may have applied for.
-N/A
+- If there are any other teams who have already contributed (financially) to the project. No
+
+- Previous grants you may have applied for. N/A
