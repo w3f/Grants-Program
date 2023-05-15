@@ -35,17 +35,27 @@ For image to image model training we use modified version of open source stable 
 
 - An overview of the technology stack to be used
 
-- Adversarial Networks (GANs) 
-- Variational Autoencoders (VAEs)
-- Large Language Models (LoRA)
-- Recurrent Neural Networks (RNNs)
-- GPT-4 natural language AI model
-- Machine learning
-- JavaScript
-- Python
-- PolkaDot SDKs
-- PolkaDot PDKs
-- Rust
+Adversarial Networks (GANs) 
+
+Variational Autoencoders (VAEs)
+
+Large Language Models (LoRA)
+
+Recurrent Neural Networks (RNNs)
+
+GPT-4 natural language AI model
+
+Machine learning
+
+JavaScript
+
+Python
+
+PolkaDot SDKs
+
+PolkaDot PDKs
+
+Rust
 
 - Documentation of core components, protocols, architecture, etc. to be deployed
 https://github.com/QLONEAI
