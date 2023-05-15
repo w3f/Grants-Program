@@ -204,7 +204,7 @@ exclamation The default deliverables 0a-0d below are mandatory for all milestone
 |  0e  | Article :  |  We will write an article on each pallet and build in this milestones    |
 |  1   | OFC Pallet:  | implementation of  offchain workers Pallet to get data from Game played on ChessOnchain As JSON files with http requests  Offchain worker pallet  will collect Game data such as moves , winning streaks ,ranking and rating |
 |  2.   | Token Pallet:   |Substrate module will have a token supply pallet that will have an earn algorithm from checkmate NFTS and winning streaks    |
-|  3.   | Token Pallet:   |We will deliver chess game UI with javascript language  UI for  several features( 1v 1, bughouse , Handicap etc )  |
+|  3.   | Game UI:   |We will deliver chess game UI with javascript language  UI for  several features( 1v 1, bughouse , Handicap etc )  |
 
 
 
