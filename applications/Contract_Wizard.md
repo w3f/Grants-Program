@@ -143,7 +143,8 @@ Described in project details.
 ​
 - **Estimated duration:** 2 months
 - **FTE:** 2.5
-- **Costs:** 49000 
+- **Costs:** 49000
+  
 ​
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -161,6 +162,7 @@ Described in project details.
 - **Estimated duration:** 3 months
 - **FTE:** 2.5
 - **Costs:** 73500
+  
 ​
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
