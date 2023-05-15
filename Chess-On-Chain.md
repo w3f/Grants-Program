@@ -210,18 +210,6 @@ Milestone 2 Example — Additional features
 Estimated Duration: 1 month
 Costs: 10,000 USD
 
-|Number| Deliverable            | specification                                                                                                               | 
-|------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a   | License                |    	Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                    | 
-| 0b   | Documentation          | 	We will provide   documentation of the pallets on this milestones                                                       |
-| 0c   | Testing and Testing out|   The code will have unit-test coverage  to ensure functionality and robustness. In the guide, we will describe how to run these tests  |
-| 0d   | Docker  :               |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.               | 
-| Oe   | Article :               |  We will write an article on what each pallet and build does .                                     | 
-| 1.   | Storage Pallet:            | Implement Storage Pallets  for game Data from offchain workers pallet  to substrate chain  with storage maps. to store for each user/player            |
-| 2.   |Substrate Democracy & Governance Pallet : | Implememnt and Work on Democracy Pallet for Governance  |
-| 3.   | 	Leader Board Pallet :    | A Decentralized Leaderboard Pallet for competetions and Records  of championship games , and different chess game results               | 
-
-
 | Number |Deliverable  | Specification |
 | -------- | -------- | -------- |
 |0a     | License   | Apache 2.0 / GPLv3 / MIT / Unlicense   |
