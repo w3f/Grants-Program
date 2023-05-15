@@ -205,12 +205,18 @@ exclamation The default deliverables 0a-0d below are mandatory for all milestone
 
 
 
-| Number | Column 2 | Column 3 |
+| Number |Deliverable  | Specification |
 | -------- | -------- | -------- |
-|0a     | Data 2   | Data 3   |
-| 0b   | Data 5   | Data 6   |
-| Data 1   | Data 2   | Data 3   |
-| Data 4   | Data 5   | Data 6   |
+|0a     | License   | Apache 2.0 / GPLv3 / MIT / Unlicense   |
+| 0b   | Documentation | We will provide a repository with  documentation of the pallets and a basic "How TO Guide " that explains how a user can (for example) spin up one of our Substrate nodes and earn tokens from gameplay , Step by Step guide to spawn up wallets , play chess and Earn tokens          |
+| 0c  |Testing and Testing out  |The code will have unit-test coverage  to ensure functionality . In the guide, we will describe how to run these tests   |
+| 0d   | Docker  :      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.    |
+|  0e  | Article :  |  We will write an article on each pallet and build in this milestones    |
+|  1   | OFC Pallet:  | implementation of  offchain workers Pallet to get data from Game played on ChessOnchain As JSON files with http requests  Offchain worker pallet  will collect Game data such as moves , winning streaks ,ranking and rating |
+|  2.   | Token Pallet:   |Substrate module will have a token supply pallet that will have an earn algorithm from checkmate NFTS and winning streaks    |
+|  3.   | Token Pallet:   |We will deliver chess game UI with javascript language  UI for  several features( 1v 1, bughouse , Handicap etc )  |
+
+
 
 
 Milestone 2 Example — Additional features
