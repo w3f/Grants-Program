@@ -2,7 +2,7 @@
 
 - **Team Name:** Antier Solutions
 - **Payment Address:** 1XhNxALoCmXF86aiwZtdDJspjWZBiRX9UfbJ4jQsWN15eSu (DOT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -94,13 +94,13 @@ This is a proposal for a project that has already been developed.
 
 - **Total Estimated Duration:** 3.5 Months
 - **Full-Time Equivalent (FTE):** 3 FTE
-- **Total Costs:** 25,000 USD.
+- **Total Costs:** 24,000 USD.
 
 ### Milestone 1 — Implement Ink's Dependency versioning
 
 - **Estimated duration:** 3 Months
 - **FTE:** 3
-- **Costs:** 22,000 USD
+- **Costs:** 21000 USD
 
 | Number | Deliverable | Specification |
 | -----: | -------------- | ------------- |
