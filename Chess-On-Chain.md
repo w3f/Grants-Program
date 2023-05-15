@@ -4,7 +4,7 @@
 - **[Level]: 2 
 
 ## Project Overview :page_facing_up:
-### Overview
+### Overview 
 
 ChessonChain is a substrate blockchain platform for chess gaming, providing a decentralized and trustless environment for chess enthusiasts to play, learn, and earn rewards. The platform is designed to leverage the unique advantages of blockchain technology to enhance the gaming experience and create new opportunities for chess players.
 
@@ -227,7 +227,13 @@ Costs: 10,000 USD
 
 
 
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
 
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| Data 1   | Data 2   | Data 3   |
+| Data 4   | Data 5   | Data 6   |
 
 
 
