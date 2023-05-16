@@ -81,6 +81,7 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 * Alex Ward – COO
 * Kaioh - Substrate Developer
 * Ganish Oli - Substrate Developer
+* Rene Hürter - Substrate Developer
 * Neeraj Choubisa - Full Stack Developer
 * Yusuf Muhammad Bashir - Full Stack Developer
 * Victor Chukwonoso - UI/UX Designer
@@ -102,6 +103,7 @@ Richard Houldsworth – 10 years in web 2.0 dev space – serial Entrepreneur
 Alex Ward – 25 years in the global property market – serial Entrepreneur
 Ganish Oli - ink! smart contract developer and substrate blockchain developer.
 Kaioh - ink! smart contract developer and substrate blockchain developer.
+Rene Hürter - I am currently studying to become a blockchain developer. Alchemy University Ethereum Bootcamp 11/2022. Scaling Ethereum 2023 Hackathon 11/03/2023. Consensus 2023 Hackathon (Web3athon 2023) 17/04/2023.
 Neeraj Choubisa - A Passionate Full Stack Blockchain Ethereum Based Web Developer, Third-Year student at Indian Institute of Information Technology, Dharwad
 Yusuf Muhammad Bashir - A full stack developer with over 6 years of professional work experience, with great communication skills. Stacks  include: .Net Core, C#, ReactJs, Javascript, Angular, firebase and azure
 
@@ -113,6 +115,7 @@ https://github.com/gflow33
 https://github.com/ganesh1233456
 https://github.com/Kali-Decoder
 https://www.github.com/yusbash03
+https://github.com/RecrafterH
 
 ### Team LinkedIn Profiles
 
@@ -121,6 +124,7 @@ https://www.linkedin.com/in/alex-ward-2350a036/
 https://www.linkedin.com/in/ganesh-oli-9285a4163/
 https://www.linkedin.com/in/neeraj-choubisa-a4952b202/
 https://www.linkedin.com/in/yusuf-bashir-50907878/
+https://www.linkedin.com/in/ren%C3%A9-h%C3%BCrter-36084b249
 
 ## Development Status :open_book:
 
