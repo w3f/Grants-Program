@@ -9,7 +9,7 @@ Proposal for Milestone 2 in the RFP titled [implementation-benchmarking](https:/
 
 ### Overview
 
-There are multiple ways to implement the logic in substrate i.e using pallets or ink smart contracts, or even writing solidity code and compiling it to WASM with the help of a solang compiler. We have to benchmark the performance metrics of the logic implemented using each of the above methods. This will help new developers to decide the best tool to implement the logic.
+There are multiple ways to implement the logic in substrate i.e using pallets or ink smart contracts, or even writing solidity code and compiling it to WASM with the help of a solang compiler. We have to benchmark the performance metrics of the logic implemented using each of the above methods. We have already benchmarked the storage performance(basic data types) of each of the implementations as part of Milestone 1 and 2. Now, we will benchmark CPU-intensive logic, events emission and cross-contract calls across all the four implementations. We hope this will help new developers in deciding the best approach to implement the logic.
 
 ### Project Details
 
@@ -74,20 +74,23 @@ We have come up with a high-level implementation plan and will start implementin
 | 6. |  | Milestone 3, Deliverable 6 | 3 day |
 | 7. |  | Milestone 3, Deliverable 7 | 3 days |
 | 8. |  | Milestone 3, Deliverable 8 | 3 days |
-| 9. |  | Milestone 3, Deliverable 0b, 0e | 1 day |
-
+| 9. |  | Milestone 3, Deliverable 9  | 1 days |
+| 10. |  | Milestone 3, Deliverable 10  | 1 days |
+| 11. |  | Milestone 3, Deliverable 11  | 1 days |
+| 12. |  | Milestone 3, Deliverable 12  | 1 days |
+| 13. |  | Milestone 3, Deliverable 0b, 0e | 1 day |
 
 ### Overview
 
-- **Total Estimated Duration:** 1 month
+- **Total Estimated Duration:** 5 Weeks
 - **Full-Time Equivalent (FTE):**  1 
-- **Total Costs:** 5,000 DAI
+- **Total Costs:** 6,000 DAI
 
 ### Milestone 3 - Compute intensive function and cross-contract call benchmarking
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 5 Weeks
 - **FTE:**  1
-- **Costs:** 5,000 DAI
+- **Costs:** 6,000 DAI
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
@@ -106,8 +109,12 @@ We have come up with a high-level implementation plan and will start implementin
 | 6. | Ink! cross-contract call | Add another Ink! contract and invoke it from the sample Ink! contract. |
 | 7. | cross-contract benchmarks | run cross-contract calls across different implementations and collect benchmarks. |
 | 8. | Solidity-WASM and Solidity-Native cross-contract call | Add another Solidity contract and invoke it from the sample Solidity contract. (Note: There are [unresolved issues](https://github.com/hyperledger/solang/issues/666) questioning the feasibility of cross-contract calls in Solidity-WASM and Solidity-Native. Nevertheless, an attempt will be made to see if it's possible. |
+| 9. | Pallet events | benchmark events emitted from the sample pallet. |
+| 10. | Ink! events | benchmark events emitted from the sample Ink! contract. |
+| 11. | Solidity-WASM and Solidity-Native events | benchmark events emitted from the Solidity-WASM and Solidity-Native contracts. |
+| 12. | Benchmark events across implementations | benchmark and record events emission across implementations. |
 
-
+We are planning to submit another grant application towards Milestone 4 where we discuss our approach to maintaining this work, using some software tools to automate the process wherever possible.
 
 ## Additional Information :heavy_plus_sign:
 
