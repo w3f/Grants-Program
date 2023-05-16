@@ -65,12 +65,12 @@ We feel this is a great way to bring land & Property assets into the digital eco
 
 **Kilt (Identity & wallet)**
 This is a crucial part of the initial process to verify; Real Estate Director, Company & Title Deed and create DID’s, which will be held in a polkadot.js wallet and used throughout the process.
-**Chainlink (Oracle)**
-To accurately value and risk rate land and the completed real estate, we need to build Oracles that enable off-chain APIs to feed data into an algorithm which delivers the personalized loan APR. In the first phase, we will build a Chainlink Oracle that relies on https://propertydata.co.uk/ for its data.
 **Statemint / Acala**
 There are many stages of financing that will involve aUSD / USDT / GDPT… from the initial funding pool, a liquidity pool, as well as the need to exchange the locked loan value for each project in GBP stable coins (as our initial market is based in the UK).
 **CRUST**
 Our POC will use AWS to prove the concept, however going forward we will look to host our dApp and all the land and property related documents on the Crust network.
+**Subwallet**
+Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 
 ## Team :busts_in_silhouette:
@@ -82,6 +82,8 @@ Our POC will use AWS to prove the concept, however going forward we will look to
 * Kaioh - Substrate Developer
 * Ganish Oli - Substrate Developer
 * Neeraj Choubisa - Full Stack Developer
+* Yusuf Muhammad Bashir - Full Stack Developer
+* Victor Chukwonoso - UI/UX Designer
 
 ### Contact
 
@@ -101,6 +103,7 @@ Alex Ward – 25 years in the global property market – serial Entrepreneur
 Ganish Oli - ink! smart contract developer and substrate blockchain developer.
 Kaioh - ink! smart contract developer and substrate blockchain developer.
 Neeraj Choubisa - A Passionate Full Stack Blockchain Ethereum Based Web Developer, Third-Year student at Indian Institute of Information Technology, Dharwad
+Yusuf Muhammad Bashir - A full stack developer with over 6 years of professional work experience, with great communication skills. Stacks  include: .Net Core, C#, ReactJs, Javascript, Angular, firebase and azure
 
 ### Team Code Repos
 
@@ -109,6 +112,7 @@ https://github.com/xcavate2022
 https://github.com/gflow33
 https://github.com/ganesh1233456
 https://github.com/Kali-Decoder
+https://www.github.com/yusbash03
 
 ### Team LinkedIn Profiles
 
@@ -116,6 +120,7 @@ https://www.linkedin.com/in/richard-houldsworth/
 https://www.linkedin.com/in/alex-ward-2350a036/
 https://www.linkedin.com/in/ganesh-oli-9285a4163/
 https://www.linkedin.com/in/neeraj-choubisa-a4952b202/
+https://www.linkedin.com/in/yusuf-bashir-50907878/
 
 ## Development Status :open_book:
 
