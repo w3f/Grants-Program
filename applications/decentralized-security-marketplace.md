@@ -216,8 +216,8 @@ Currently, the project is under technical design phase
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):**  1.5 FTE
+- **Total Estimated Duration:** 3.5 months
+- **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 52,000 USD
 
 ### Milestone 1 — Design Phase
