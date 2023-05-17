@@ -121,7 +121,7 @@ To this date, researches on the subject of Blockchain and AI intersection have b
 
 ### Milestone 2 — Implementing the Front Layer
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 1,5 month
 - **FTE:**  1
 - **Costs:** 5,000 USDC
 
@@ -131,8 +131,8 @@ To this date, researches on the subject of Blockchain and AI intersection have b
 | 0b. | Documentation | Documentation of code and  tutorials that explains how to use the Web apps for full AI Models management lifecycle. Benefits of such systems wil also be explained |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Web Application | We will create a web frontend application that will be in charge of interacting with the blockchain and other layers such as storage a for model storage and also for Organisations management | 
-| 2. | SDK | We will provide SDK that will be used for : `interacting with the RELAI Network` (manage the lifecycle of AI models), giving API for `identity control and governance` and APIs for getting `proof of authenticity` for AI model provenance and history information.| 
+| 1. | Web Application | We will create a web frontend application that will be in charge of interacting with the blockchain and other layers such as storage a for model storage and also for Organisations management. The framework used will be `Angular` and it will utilize also the Javascript SDK| 
+| 2. | SDK | For this phase, We will provide a `javascript` SDK that will be used for : `interacting with the RELAI Network`. It will be used for: managing the lifecycle of AI models,also be used for `identity control and governance` and APIs for getting `proof of authenticity` for AI model provenance and history information.| 
 
 ## Future Plans
 
