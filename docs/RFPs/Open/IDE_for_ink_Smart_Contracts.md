@@ -17,6 +17,13 @@ The goal of this RFP is to find teams that would like to maintain the browser-ba
 
 ## Deliverables
 
-We recommend applying for a [maintenance grant](https://w3f.github.io/Grants-Program/docs/maintenance), which allows a more flexible structure and roadmap. The list of issues and features to be covered by the grant should be discussed with the previous maintainers and the community, but it is generally up to the applying team to come up with a milestone and delivery structure. 
+We recommend to initially apply for a [regular grant](https://github.com/w3f/Grants-Program#pencil-process) to fix the following issues and make the playground compatible with different versions of ink! as well as automatic updates:
+
+- https://github.com/paritytech/ink-playground/issues/427
+- https://github.com/paritytech/ink-playground/issues/197
+- https://github.com/paritytech/ink-playground/issues/460
+- https://github.com/paritytech/ink-playground/issues/428
+
+After this we would sign a [maintenance grant](https://w3f.github.io/Grants-Program/docs/maintenance), which allows a more flexible structure and roadmap. The list of issues and features to be covered by the grant should be discussed with the previous maintainers and the community, but it is generally up to the applying team to come up with a milestone and delivery structure. 
 
 

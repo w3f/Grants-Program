@@ -6,7 +6,7 @@ Any implementation that is EVM compatible (e.g. Moonriver or RMRK with EVM bridg
 
 - **Project Name:** NFT infrastructure | by walt.id
 - **Team Name:** walt.id
-- **Payment Address:** 0xa4c6c2013810661a6750443aEF86cFeAc983e07f (USDC)
+- **Payment Address:** Fiat (Mail: May 10, 2023, 8:55 AM)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:

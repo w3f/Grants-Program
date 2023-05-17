@@ -10,7 +10,7 @@ module.exports = {
   baseUrl: '/Grants-Program/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/Web3Foundation.png',
+  favicon: 'img/favicon-32x32.png',
   organizationName: 'w3f', // Usually your GitHub org/user name.
   trailingSlash: false,
   projectName: 'Grants-Program', // Usually your repo name.
@@ -34,26 +34,28 @@ module.exports = {
       isCloseable: true,
     },
     navbar: {
-      title: 'W3F Grants Program',
+      title: 'Grants Program',
       logo: {
         alt: 'W3F Grants Program',
-        src: 'img/Web3Foundation.png',
+        src: 'img/w3f_logo.svg',
       },
       items: [
         {
           type: 'doc',
           docId: 'docs/introduction',
+          position: 'right',
           label: 'Introduction',
         },
         {
           type: 'doc',
           docId: 'applications/index',
-          position: 'left',
+          position: 'right',
           label: 'List of Grants',
         },
         {
           type: 'doc',
           docId: 'docs/faq',
+          position: 'right',
           label: 'FAQ',
         },
         {
@@ -61,12 +63,6 @@ module.exports = {
           docId: 'docs/Process/how-to-apply',
           position: 'right',
           label: 'Apply',
-        },
-        {
-          type: 'doc',
-          docId: 'docs/contribute',
-          position: 'right',
-          label: 'Contribute',
         }
       ],
     },
