@@ -175,7 +175,6 @@ Described in project details.
 | 3. | Shareable Contract Interaction Links | The functionallity corresponds to what's described on [step 4](#step4) of the Project Details section. |
 | 4. | Create and publish video tutorials | The functionality to be implemented corresponds to [step 6](#step6) of the Project Details section. |
 | 5. | Finalize documentation | We will ensure that all documentation is up to date and clearly explains how to use all features of the Contract Wizard. |
-| 6. | Final testing and launch | We will conduct final testing and officially launch the updated Contract Wizard. |
 ​
 ​
 ## Future Plans
