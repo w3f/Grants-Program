@@ -1,6 +1,6 @@
 # Contracts performance messurement tool
 
-- **Gloslab:**
+- **Team Name:** Gloslab
 - **Payment Address:** Fiat 18.05.2023, 20:22
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
