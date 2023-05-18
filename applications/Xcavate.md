@@ -79,7 +79,7 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 * Richard Houldsworth – CTO
 * Alex Ward – COO
-* Kaioh - Substrate Developer
+* Jibril Danjuma Gupa - Substrate Developer
 * Ganish Oli - Substrate Developer
 * Rene Hürter - Substrate Developer
 * Neeraj Choubisa - Full Stack Developer
@@ -125,6 +125,7 @@ https://www.linkedin.com/in/ganesh-oli-9285a4163/
 https://www.linkedin.com/in/neeraj-choubisa-a4952b202/
 https://www.linkedin.com/in/yusuf-bashir-50907878/
 https://www.linkedin.com/in/ren%C3%A9-h%C3%BCrter-36084b249
+https://www.linkedin.com/in/jibril-g-562576208/
 
 ## Development Status :open_book:
 
@@ -140,13 +141,13 @@ We have been taking time to play with Substrate to form initial local nodes. We 
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  4
-- **Total Costs:** $30000
+- **Total Costs:** $30000 USDC
 
 ### Milestone 1 — Initial POC of lending protocol
 
 - **Estimated Duration:** 2 months
 - **FTE:**  4
-- **Costs:** $30000
+- **Costs:** $30000 USDC
 
 We will build on the excellent work we have achieved developing the Real Estate NFT marketplace for the hackerearth.com hackerthon. 
 
@@ -156,7 +157,10 @@ In the first milestone, the features for the PoC will be implemented and tested 
 |:----------|:---------------------------|:------------------------ |
 | 0a.	    | License	                            |  Apache 2.0 |
 | 0b.	    | Documentation                     |  The documentation will be provided to show the whole architecture of the Xcavate Network. |
-| 0c.	    | Testing and Testing Guide            |  The testing guide will be provided to test each component.
+| 0c.	    | Testing and Testing Guide            |  The testing guide will be provided to test each component. |
+| 0d. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 0e. | Tutorial | We will write a tutorial about how to use Xcavate Network. |
+| 0f. | Article | We will write an article published on media channels. |
 | 1	    | Xcavate Node Repo             	    |  We will create a customized chain node with Substrate 2.0 Framework. |
 | 2        | Xcavate Loan App Repo                | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
 | 3. | Loan management pallet | * Manage loan application ** Land details' ** Registration * Manage loan interest percentage ** Based on land and experience * Approve/Reject request |
@@ -164,10 +168,6 @@ In the first milestone, the features for the PoC will be implemented and tested 
 | 5. | Verification pallet | * Verification of user identity * Manage users identity * Manage loan request |
 | 6. | DAO | The PoC will have a basic DAO structure that will be created using the OpenGov pallet to ensure rewards can be given to the real estate build stage checkers (As we progress in to the MVP stage this will be expanded to form a full governance structure). |
 | 7. | Decentralized Developer Loan dApp / Front End Repo | It's a webpage working with Xcavate Network, it's implemented based on polkadot.js as planned. |
-| 8. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-| 9. | Tutorial | We will write a tutorial about how to use Xcavate Network. |
-| 10. | Article | We will write an article published on media channels. |
-
 
 ## Future Plans
 
