@@ -1,5 +1,6 @@
 
 
+
 # FiDi DotSight: Analytics Data Platform for DotSama
 
 - **Team Name:** FiDi
@@ -41,7 +42,7 @@ The key components include, i.e., from the user side to the data provider:
   - Technology Choice: The UI’s basis is the same as #1;
   - (i). The user-defined SQL, GraphQL, and dashboard metadata will initially live in a public Github with CI/CD and merging logic automated. We will opt for storing all metadata in a distributed cloud database, i.e., GCP CloudSQL (PGSQL backend) or BigQuery, as the project evolves post-Milsetone 3.
   - (ii). The Data Interface will manifest as a typical stateless GCP microservice mimicking the rest of our data infrastructure, i.e., a Node.js service in the Google App Engine for the execution layer; and CloudSQL (PGSQL) and BQ for the data persistence and caching layers, respectively.
-  - (iiii). The Data Interface will have an external endpoint queryable by users willing to build on top of it and FiDI itself.
+  - (iii). The Data Interface will have an external endpoint queryable by users willing to build on top of it and FiDI itself.
 - Data Mixer
   - Functionality: provides a source of truth for any served data point regardless of the upstream provider; processes the queries
   - Audience: FiDi devs
@@ -59,6 +60,16 @@ The key components include, i.e., from the user side to the data provider:
 - GiantSquid [API](https://docs.subsquid.io/giant-squid-api/)
   - Functionality: direct access to the data lake via GraphQL
   - Audience: FiDi and Subsquid devs, and blockchain devs
+
+**Technical Stack Overview**
+- Frontend (Web):  we currently rely on [React](https://react.dev/) and [Typescript](https://www.typescriptlang.org/) and will look into transitioning to [Next.js](https://nextjs.org/) as a part of this proposal
+- Backend: we currently leverage Typescript, Express, and [PostgreSQL](https://www.postgresql.org/). By Milestone 4, we'll also consider leveraging [Nest](https://nestjs.com/) if it fits the project's needs
+- Data Layer: [GraphQL](https://graphql.org/) and RPC for upstream providers, PostgreSQL elsewhere
+- Application Layer: [App Engine](https://cloud.google.com/appengine)
+- Database Layer: GCP [CloudSQL](https://cloud.google.com/sql) and [BQ](https://cloud.google.com/bigquery)
+- Serving layer: rest of GCP stack, i.e., CDN and Cloud Load Balancing
+- For more, see also in-line comments above in the components overview
+
 
 #### Analytical Primitives (Default Views) #### 
 
@@ -124,6 +135,8 @@ Advanced Dashboard: Customized On-Chain Metrics
 | EVM Deposits | Historical Volume | 
 | dApp names | Historical balance per dApp |
 
+**Language Agnostic Analytics**
+Since DotSight aims to be a combination of presentation and querying layer on top of the higher-level metrics above, it will abstract away the smart contracts implementation details and functionality, i.e., EVM, non-EVM, Vyper, WASM, or others will be supported.
 
 ### Ecosystem Fit
 
@@ -212,14 +225,14 @@ All infrastructure deliverables belong to the teams’ domains of expertise and 
 | **1a.** | GiantSquid data funneling | We will extend the existing data streaming infrastructure to support an arbitrary query to GS and user-built squids. |
 | **1b.** | Data Aggregation module | We will provide support for user-specified (GraphQL or SQL) aggregation logic that would be inputed via the data interface and invoked at the streaming stage. |
 | **1c.** | Off-chain sourced addresses support | We will provide rudimentary support for additional data materialization parameters, e.g., pricing via liquidity pool addresses. This will be extended to any off-chain data in an oracle-like fashion in future milestones. |
-| **2a.** | Data Interface for developers | We will provide a configuration-based interface (initially via git pull requests, then automated in Milestone 2) with key specifications for the new views. |
+| **2a.** | Data Interface for developers | We will provide a configuration-based interface (initially via git pull requests, then automated in Milestone 2) with key specifications for the new views. We will leverage React and Typescript on the frontend and Typescript with Nest and PGSQL on the backend.
 | **2b.** | Schema mapping and morphing | We will provide a configuration-based paradigm for specifying: the desired metrics mapping, aggregation logic, upstream GiantSquid URI, and desired materialized view.|
-| **2c.** | Data interface: view construction | We will provide developers with the ability to select a desired analytical dashboard from the pre-selected collection (see five views explained in the architecture section; fully customizable views will make it to future milestones). |
-| **2d.** | Data interface: Deployment | We will provide developers with the ability to schedule their customer view’s deployment (automatically at recurring times in the future milestones). |
-| **3a.** | Dashboards: Default Analytical Views | We will integrate the default views, i.e., pie chat, 1/3-metrics view, and list of assets, with the data interface and make it available for the ad-hoc developer deployment. |
+| **2c.** | Data interface: view construction | We will provide developers with the ability to select a desired analytical dashboard from the pre-selected collection (see five views explained in the architecture section; fully customizable views will make it to future milestones). These UI components will also be implemented via React and Typescript.|
+| **2d.** | Data interface: Deployment | We will provide developers with the ability to schedule their customer view’s deployment (automatically at recurring times in the future milestones). The deployment action will be a UI module, and the propagation/consensus will occur via GitHub at first and via a PGSQL query in future milestones.|
+| **3a.** | Dashboards: Default Analytical Views | We will integrate the default views, i.e., pie chat, 1/3-metrics view, and list of assets, with the data interface and make it available for the ad-hoc developer deployment. For 3a-c UI components, we will similarly rely on React + Typescript.|
 | **3b.** | Dashboards: Advanced Staking View | We will integrate the advanced staking view, e.g., the dApps names, nominator TVLs, balances, rewards, and ranks, with the data interface and make it available for ad-hoc developer deployment. |
-| **4a.** | Lighthouse use cases: Squids for Wallet-specific metrics |  We will implement new squids surfacing wallet-specific metrics for two parachains with the following metrics that need to be surfaced via GiantSquid: Free tokens, Vesting, EVM Deposits, and dApp names. |
-| **4b.** | Lighthouse use cases: Squids for dApp-specific metrics | We will implement new squids surfacing wallet-specific metrics for two parachains with wallet-specific metrics for dApps: TVL change per dApp, Active (UAW) and net new wallets per dApp (x2), historical  Transactions / Volume / Balance per dApp (x3). |
+| **4a.** | Lighthouse use cases: Squids for Wallet-specific metrics |  We will implement new squids in GraphQL surfacing wallet-specific metrics for two parachains with the following metrics that need to be surfaced via GiantSquid: Free tokens, Vesting, EVM Deposits, and dApp names. |
+| **4b.** | Lighthouse use cases: Squids for dApp-specific metrics | We will implement new squids in GraphQL surfacing wallet-specific metrics for two parachains with wallet-specific metrics for dApps: TVL change per dApp, Active (UAW) and net new wallets per dApp (x2), historical  Transactions / Volume / Balance per dApp (x3). |
 | **4c.** | Lighthouse use cases: customized dApp views | As the first two use-cases, a feasibility proof and an accelerator, we will provide the community with a fully integrated customized dApp analytics dashboard leveraging the data interface (2a-2c), the advanced staking view (3b), and the data aggregation module (1a-1c).  |
 
 
@@ -237,7 +250,7 @@ All infrastructure deliverables belong to the teams’ domains of expertise and 
 | **0a.** | License | Apache 2.0
 | **0b.** | Documentation | We will provide documentation on every supported metrics class and an educational tutorial explaining the typical way to interpret the data, navigate the developer UI, specify the required metadata, deploy a data interface configuration, and select the desired dashboard. |
 | **0c.** | Testing | Core functions will be fully covered by a unit and integration tests suite to ensure robustness, deployment, and serving times. |
-| **1a.** | dApp-level signals: collator metrics | We will generalize prior work from Milestone 1 to span collator/nominator activity and make metrics such as uptime, block production rate, block processing time, rank/nominator rank, name, and value locked available in the views. Respective squid query and GS code are also in scope. |
+| **1a.** | dApp-level signals: collator metrics | We will generalize prior work from Milestone 1 to span collator/nominator activity and make metrics such as uptime, block production rate, block processing time, rank/nominator rank, name, and value locked available in the views. For 1a-2a, the respective in GraphQL squid query and GiantSquid's code are also in scope; the UI components will be written in React + Typescript and the backend code in Typescript + Nest + PGSQL.|
 | **1b.** | dApp-level signals: user activity | Additionally, the dApp-specific user activity metrics will be surfaced, e.g., UAW, net new wallets,  historical transactions, volume, and balance per dApp. Respective squid query and GS code are also in scope. |
 | **2a.** | Network-level signals | We will generalize prior work from Milestone 1 to span L1-level metrics and activity made available in the developer UI, e.g., UAW per network, number of new wallets, adoption rates, unstaked tokens currently in wallets, tokens in circulation, and tokens staked or locked. Respective squid query and GS code are also in scope. |
 
@@ -256,10 +269,10 @@ All infrastructure deliverables belong to the teams’ domains of expertise and 
 | **0a.** | License | Apache 2.0
 | **0b.** | Documentation | We will provide documentation on every supported metrics class and an educational tutorial explaining the typical way to interpret the data, navigate the developer UI, specify the required metadata, deploy a data interface configuration, and select the desired dashboard. |
 | **0c.** | Testing | Core functions will be fully covered by a unit and integration tests suite to ensure robustness, deployment, and serving times. |
-| **1a.** | dApp-level signals: collator metrics | We will provide an intuitive web interface for specifying the desired metrics mapping, aggregation logic, upstream GiantSquid URI, and desired materialized view. |
-| **1b.** | Online testing & deployment | We will provide an intuitive web interface for querying the new view for deployment and validating its configuration. |
+| **1a.** | dApp-level signals: collator metrics | We will provide an intuitive web interface for specifying the desired metrics mapping, aggregation logic, upstream GiantSquid URI, and desired materialized view. The UI will be an extension of the one built in M2 and also leverage Typescript + React; and Nest + CloudSQL (PGSQL) + Typescript on the backend. |
+| **1b.** | Online testing & deployment | We will provide an intuitive web interface for querying the new view for deployment and validating its configuration. The UI's part technology choices is same as 1a.|
 | **2a.** | Deployment validation & View status | We will implement testing and validation layers to ensure the user-inputted configurations for newly spun-up views and GS queries are performant. We will surface the view “status,” e.g., up, down, missing data, and similar. |
-| **2a.** | Automated and ad-hoc deployment | We will decouple the existing infrastructure to support ad-hoc and scheduled deployments for newly created views. |
+| **2a.** | Automated and ad-hoc deployment | We will decouple the existing infrastructure to support ad-hoc and scheduled deployments for newly created views. The CI/CD and automation for 2a-b will rely on schedule App Engine workers. |
 
 ### Milestone 4 — Interactive SQL Query Engine for Views
 
@@ -273,11 +286,11 @@ All infrastructure deliverables belong to the teams’ domains of expertise and 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0
-| **0b.** | Documentation | We will provide documentation on querying methodology, e.g., functions, operators, data types, and statement reference; as well as an educational tutorial explaining the typical way to run the queries, associate them with the views, interpret the data, navigate the developer UI and share the views. |
+| **0b.** | Documentation | We will provide documentation on querying methodology, e.g., functions, operators, data types, and statement reference; as well as an educational tutorial explaining the typical way to run the queries, associate them with the views, interpret the data, navigate the developer UI, and share the views. |
 | **0c.** | Testing | Core functions will be fully covered by a unit and integration tests suite to ensure robustness, deployment, and serving times. |
 | **0e.** | Article | We will publish an announcement article capturing the work completed in the grant along with the educational guides and success stories, enabling users to further leverage and expand DotSight’s functionality. |
-| **1.** | FiDi SQL implementation | We will provide a query engine for blockchain data. Initially forked from [TrinoSQL](https://trino.io/) and/or [harmonizer](https://github.com/duneanalytics/harmonizer), we will extend the functionality to support variable views and embed GraphQL upstream queries. |
-| **2.** | SQL View UI | We will augment the no-code view developed in Milestone 2 with SQL functionality allowing users to rehash the existing views as well as create new ones. |
+| **1.** | FiDi SQL implementation | We will provide a query engine for blockchain data. Initially forked from [TrinoSQL](https://trino.io/) and/or [harmonizer](https://github.com/duneanalytics/harmonizer), we will extend the functionality to support variable views and embed GraphQL upstream queries. We'll simialrly rely on Typescript + Nest + CloudSQL (PGSQL) for the query engine's implementation. |
+| **2.** | SQL View UI | We will augment the no-code view developed in Milestone 2 with SQL functionality allowing users to rehash the existing views as well as create new ones. We'll similarly rely on React + Typescript for the UI's implementation.|
 | **3.** | Advanced Querying Documentation | We will provide a comprehensive guide for optimizing the queries, both language- and database-specific, along with real-world examples |
 
 
