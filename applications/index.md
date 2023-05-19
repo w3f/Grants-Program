@@ -57,6 +57,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [CoinFabrik](https://www.coinfabrik.com/)                          | [ScoutCoinFabrik: Milestone 2](ScoutCoinFabrik_2.md)                                                   | [GitHub](https://github.com/coinfabrik)                              | ☐          |        ☐       |      ☐      |
 | [Polytope Labs](https://research.polytope.technology/)                          | [Interoperable State Machine Protocol](ismp.md)                                                   | [GitHub](https://github.com/polytope-labs)                              | ☐          |        ☐       |      ☐      |
 | [Talentica Software](https://www.talentica.com/)                          | [Implementation Benchmarking Milestone 3](ink-pallet-benchmarking-phase-2.md)                                                   | [GitHub](https://github.com/Nikhil-Desai-Talentica)                              | ☐          |        ☐       |      ☐      |
+| [Deep Ink Ventures GmbH](https://github.com/deep-ink-ventures)                          | [Stylograph](Stylograph.md)                                                   | [GitHub](https://github.com/deep-ink-ventures)                              | ☐          |        ☐       |      ☐      |
 
 
 [🔝](#menu)
