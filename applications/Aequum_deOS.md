@@ -162,7 +162,7 @@ The project will be supported by a team of 3 developers, 1 UI/UX designer, 1 Dev
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new dapp works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 1. | DISPLAY API (JS, RUST) | We will develop a DISPLAY API that will allow all WASM dapps to show UIs and make databinding. This deliverable will include: API and it’s documentation; API implementation (RUST SDK, JS rendering). | 
-| 2. | Test app example | (надо добавить стек) We will deliver a test app, that will show all functionality, that is developed in this milestone. | 
+| 2. | JS test app example | We will deliver a test app, that will show all functionality, that is developed in this milestone. | 
 
 
 ### Milestone 4 — Aequum deOS windows manager
@@ -176,7 +176,7 @@ The project will be supported by a team of 3 developers, 1 UI/UX designer, 1 Dev
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new dapp works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 1. | Windows manager & task bar | We will develop a windows manager & a task bar using RUST. This windows manager … нужно описание | 
+| 1. | Windows manager & task bar | We will develop a windows manager & a task bar using RUST. | 
 
 ### Milestone 5 — Aequum deOS GUI API
 
