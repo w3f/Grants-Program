@@ -6,8 +6,8 @@ const mdxMermaid = require('mdx-mermaid');
 module.exports = {
   title: 'Web3 Foundation Grants',
   tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama.',
-  url: 'https://w3f.github.io',
-  baseUrl: '/Grants-Program/',
+  url: 'https://grants.web3.foundation',
+  baseUrl: '/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon-32x32.png',
