@@ -141,24 +141,24 @@ Work has been started, smart bench has been updated with new libraries and is ab
 
 ### Milestone 1 Smart-bench updated — Basic functionality
 
-- **Estimated duration:** 26 days
+- **Estimated duration:** 5 weeks
 - **FTE:**  0.5
 - **Costs:** 6500 EUR
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | License | GPLv3 |
-| 2. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up test net and run contracts with transactions. |
-| 3. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 4. | Updated evm contracts | We will update tool with support for newest Moonbeam parachain. |
-| 5. | Support for solidity-wasm contracts | We will deliver support for solidity contract compiled with solang to wasm. |
-| 6. | Launch scripts | Scripts which will allow to launch the tool on Zombienet. |
-| 7. | Dockerized benchmarking | Create Docker and docker-compose related configurations to build and start smart-bench, Zombienet and parachains to generate benchmarking results. |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up test net and run contracts with transactions. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | Create Docker and docker-compose related configurations to build and start smart-bench, Zombienet and parachains to generate benchmarking results. |
+| 1. | Updated evm contracts | We will update tool with support for newest Moonbeam parachain. |
+| 2. | Support for solidity-wasm contracts | We will deliver support for solidity contract compiled with solang to wasm. |
+| 3. | Launch scripts | Scripts which will allow to launch the tool on Zombienet. |
 
 
 ### Milestone Smart-bench in CI/CD flow — Additional features
 
-- **Estimated Duration:** 34 days
+- **Estimated Duration:** 7 weeks
 - **FTE:**  0,5
 - **Costs:** 8500 EUR
 
