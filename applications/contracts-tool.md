@@ -164,14 +164,14 @@ Work has been started, smart bench has been updated with new libraries and is ab
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | License | GPLv3 |
-| 2. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the performance tracking tooling to generate the graphs. |
-| 3. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 4. | Github Actions benchmark jobs | Create workflow and implement a job to utilize Dockerized benchmarking for generating results and uploading them to repository. |
-| 5. | Results processing tools | Implementation of tooling to translate smart-bench output format to format of InfluxDB. |
-| 6. | Dockerized visualizations | Create Docker and docker-compose related configurations to run Grafana and InfluxDB pre-configured with dashboards and measurements. |
-| 7. | Github Actions workflow | Create complete workflow running parallel jobs based on matrix strategy for all missing measurements. |
-| 8. | Article | We will publish article on Medium that explains what was done/achieved as part of the grant. |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the performance tracking tooling to generate the graphs. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | Create Docker and docker-compose related configurations to run Grafana and InfluxDB pre-configured with dashboards and measurements. |
+| 0e. | Article | We will publish article on Medium that explains what was done/achieved as part of the grant. |
+| 1. | Github Actions benchmark jobs | Create workflow and implement a job to utilize Dockerized benchmarking for generating results and uploading them to repository. |
+| 2. | Results processing tools | Implementation of tooling to translate smart-bench output format to format of InfluxDB. |
+| 3. | Github Actions workflow | Create complete workflow running parallel jobs based on matrix strategy for all missing measurements. |
 
 
 ...
