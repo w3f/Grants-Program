@@ -91,18 +91,18 @@ ETH Waterloo 2019 hackathon prize-winner, is a engineer with over 8 years of exp
 - **FTE:** 1.5
 - **Costs:** 7,500 USD
 
-| Number | Deliverable                       | Specification                                                                                                                                    |
-| -----: | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-|    0a. | License                           | Apache 2.0                                                                                                                                       |
-|    0b. | Documentation                     | I will provide both **inline documentation** of the code and a **tutorial** that explains how a developer can spin up his/her own faucet.        |
-|    0c. | Testing Guide                     | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. |
-|    0d. | Article                           | I will publish an **article** that explains how the faucet works, why it was created, and how it can be used by developers.                      |
-|     1. | Universal message interface (UMI) | Implement golang interface (contract) to unify all chat providers to one standart, so we can easily use abstraction                              |
-|     2. | Discord                           | Golang implementation of discord integration using open-source SDK, that support interface of UMI module                                         |
-|     3. | Matrix.org                        | So same as discord, golang module                                                                                                                |
-|     4. | Wallet status                     | Golang module that control user/wallet faucet drip, so user will be able to receive only once in a certain period of time                        |
-|     5. | Faucet drip                       | Module that can send token to user wallet address on substrate based chain                                                                       |
-|     6. | Substrate demo                    | Implement demo example on substrate template node                                                                                                |
+| Number | Deliverable                       | Specification                                                                                                                                                                                       |
+| -----: | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                           | Apache 2.0                                                                                                                                                                                          |
+|    0b. | Documentation                     | I will provide both **inline documentation** of the code and a **tutorial** that explains how a developer can spin up his/her own faucet.                                                           |
+|    0c. | Testing Guide                     | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests.                                                    |
+|    0d. | Article                           | I will publish an **article** that explains how the faucet works, why it was created, and how it can be used by developers.                                                                         |
+|     1. | Universal message interface (UMI) | Implement golang interface (contract) to unify all chat providers to one standart, so we can easily use abstraction                                                                                 |
+|     2. | Discord                           | Golang implementation of discord integration using open-source SDK, that support interface of UMI module                                                                                            |
+|     3. | Matrix.org                        | So same as discord, golang module                                                                                                                                                                   |
+|     4. | Wallet status                     | Golang module that control user/wallet faucet drip, so user will be able to receive only once in a certain period of time                                                                           |
+|     5. | Faucet drip                       | Golang module that can send token to user wallet address on substrate based chain, RPC library to substrate chain through open-source library https://github.com/centrifuge/go-substrate-rpc-client |
+|     6. | Substrate demo                    | Implement demo example on substrate template node                                                                                                                                                   |
 
 ## Future Plans
 
