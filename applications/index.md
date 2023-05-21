@@ -60,6 +60,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Deep Ink Ventures GmbH](https://github.com/deep-ink-ventures)                          | [Stylograph](Stylograph.md)                                                   | [GitHub](https://github.com/deep-ink-ventures)                              | ☐          |        ☐       |      ☐      |
 | [Zeeve](https://www.zeeve.io)                         | [Ink Playground IDE Improvements](ink-playground-ide-improvements.md)                                                   | [GitHub](https://github.com/Zeeve-App)                              | ☐          |        ☐       |      ☐      |
 | [Scio Labs](https://scio.xyz/)                         | [XCM Domain Name Service](xcm-domain-service.md)                                                   | [GitHub](https://github.com/scio-labs)                              | ☐          |        ☐       |      ☐      |
+| [Gloslab](https://github.com/smiasojed)                         | [Contracts performance measurement tool proposal](contracts-tool.md)                                                   | [GitHub](https://github.com/smiasojed)                              | ☐          |        ☐       |      ☐      |
 
 [🔝](#menu)
 
