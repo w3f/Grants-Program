@@ -64,9 +64,17 @@ _Funtionality below are not part of the deliverable in the grant duration._
 ### Ecosystem Fit
 
 **Ecosystem**
-Our team's long term vision is dedicated to bringing mass adoption of web3 through leading the next paradigm of social. We resonate a lot with YC's mission of "building a product people actually want." So frankly speaking, we did not start our journey based on a pre-decided option for a desired blockchain. But we soon realized that Polkadot is the perfect solution for us due to its L0 nature and its goal in building "true interoperability." We're not putting too much emphasis on our particular token design, what we really valued is building fun and useful NFTs that have cross-chain compatibility. NFTs that can be collected in one chain but also sufficiently manifested in another. Building and deploying Eden on Polkadot is.  
+Our team's long term vision is dedicated to bringing mass adoption of web3 through leading the next paradigm of social. We resonate a lot with YC's mission of "building a product people actually want." So frankly speaking, we did not start our journey based on a pre-decided option for a desired blockchain. But we soon realized that Polkadot is the perfect solution for us due to its L0 nature and its goal in building "true interoperability." 
+
+We're not putting too much emphasis on our particular token design, what we really valued is building fun and useful NFTs that have cross-chain compatibility. NFTs that can be collected in one chain but also sufficiently manifested in another. Building and deploying Eden on Polkadot is essentially our way of building an easilly accessible gateway into web3 for our users. From here, they can signup for Eden with their Twitter account, have our SageMint algorithm generate NFTs for them, and collect them at zero cost with AA wallets. 
+
+**Target Audience**
 
 
+**Needs**
+
+
+**Similar Projects**
 We have designed our UX (powered by AA, rentable NFT, and browser plugin) in a way that minimizes uses' entry barrier and cost of learning about our product. We believe the biggest problem with the current world of web3 social is that they are all built in a "fundamentalist" manner: purely imposing the concept of ownership without giving users the past benefits of connectivity and convenience they received from web2 social media. This in turn creating more information silos, preventing mass adoption. 
 
 
