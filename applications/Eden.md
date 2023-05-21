@@ -63,28 +63,23 @@ _Funtionality below are not part of the deliverable in the grant duration._
 
 ### Ecosystem Fit
 
-**Ecosystem**
+**Ecosystem**\
 Our team's long term vision is dedicated to bringing mass adoption of web3 through leading the next paradigm of social. We resonate a lot with YC's mission of "building a product people actually want." So frankly speaking, we did not start our journey based on a pre-decided option for a desired blockchain. But we soon realized that Polkadot is the perfect solution for us due to its L0 nature and its goal in building "true interoperability." 
 
 We're not putting too much emphasis on our particular token design, what we really valued is building fun and useful NFTs that have cross-chain compatibility. NFTs that can be collected in one chain but also sufficiently manifested in another. Building and deploying Eden on Polkadot is essentially our way of building an easilly accessible gateway into web3 for our users. From here, they can signup for Eden with their Twitter account, have our SageMint algorithm generate NFTs for them, and collect them at zero cost with AA wallets. 
 
-**Target Audience**
+**Target Audience**\
+In our early stages, we are planning to target the **college crypto degens on Twitter**. This is a very specific group that accounts for about 7 million potential users. We are targeting this group of users because they are vocal, expressive, and have a strong willingness to try novel products. We also have a very specific user acquisition strategy shared in our pitch deck. 
 
+**Needs**\
+Broadly speaking, social products are not meeting a niche pain point / demand particular users have (i.e. dogwalking, food delivery, cab services), they're rather creating values by presenting a better solution on the supply side to overcome the existing products. 
 
-**Needs**
+This is precisely what Eden is doing, using AI powered algorithm to generate creative yet accurate and personalized OpinionNFTs for users. With these NFTs, users are no longer strained to a single social graph organized by specific, point-to-point followings/followers. Users no longer have to share the most acceptable rather than real views because for each of their posts, they know exactly which group of users are seeing it. It unlocks infinite possibilities as it allows users to freely customize their social graphs, to mix and match OpinionNFTs just like lego blocks. 
 
+**Similar Projects**\
+There are no existing teams building a similar product on Substrate/Polkadot/Kusuma. But there are web3 social products like Lens on Polygon, Farcaster on Eth, Nostr not on a particular chain but supports the Bitcoin network. There are also social protocols like rss3 and utility tools like Mask Network. 
 
-**Similar Projects**
 We have designed our UX (powered by AA, rentable NFT, and browser plugin) in a way that minimizes uses' entry barrier and cost of learning about our product. We believe the biggest problem with the current world of web3 social is that they are all built in a "fundamentalist" manner: purely imposing the concept of ownership without giving users the past benefits of connectivity and convenience they received from web2 social media. This in turn creating more information silos, preventing mass adoption. 
-
-
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
 
 ## Team :busts_in_silhouette:
 
@@ -113,7 +108,7 @@ Nolan: Columbia undergrad dropout (IR + Philosophy), previously founded UFriend 
 
 Mike: Columbia undergrad dropout (CS + History), previously mobile UGC platform Ark during freshmen year, 2000+ DAU. 
 
-Mao: PhD at MIT, previously founded member at Cask Data (acquired by Google), SDE at Google and Yahoo!. Holds BS.CS from UIUC and MS.CS from Carnegie Mellon University. 
+Mao: PhD at MIT, previously founding member at Cask Data (acquired by Google), SDE at Google and Yahoo!. Holds BS.CS from UIUC and MS.CS from Carnegie Mellon University. 
 
 Jodi: undergrad at RISD, previously designer Vayner Media and Ogilvy, designer behind VeeFriends NFT series ($200mm+ TTV). 
 
@@ -274,7 +269,8 @@ Long Term (Post 2 Quarters of Beta Launch):
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website
+**How did you hear about the Grants Program?** \
+Web3 Foundation Website
 
 **Notes**
 - We are actively raising our seed round of funding and we're open to any recommendations/introductions from the w3f team! 
