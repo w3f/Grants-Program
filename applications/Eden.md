@@ -207,7 +207,7 @@ We have incorporated GPT-4 model into our algorithm and users will be able to lo
 
 - **Estimated Duration:** 5 weeks
 - **FTE:**  4
-- **Costs:** 8,000 USD
+- **Costs:** 7,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
