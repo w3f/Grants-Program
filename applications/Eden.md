@@ -1,4 +1,4 @@
-# Name of your Project
+# Eden
 
 - **Team Name:** Eden
 - **Payment Address:** 0xB906Bfc370C7b529DC3855851E852d8F2D6dE5ff (USDT/DAI)
