@@ -31,8 +31,8 @@ You can access our webapp mockup [here](https://www.figma.com/proto/5MdgAX7tCuyU
 
 **Tech Stack Overview:**
 - Front-end: Next.js
-- Application Server: Node.js
-- Databse: PostgreSQL
+- Back-end: Node.js, Prisma, PostgreSQL
+- Hosted On: PostgreSQL
 - Key NFT Standards: ERC-4907 & ERC-721
 
 **User Journey:**
