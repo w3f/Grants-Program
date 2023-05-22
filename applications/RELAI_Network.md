@@ -49,6 +49,7 @@ There are four main actors in the system:
 
 - Stakeholder: will be in charge of reviewing the AI model and will be able to see the results of the tests.
 
+Here is a link that gives some diagram, look and feed design and types of data : [link](https://docs.google.com/document/d/17xa2NWYbqphEXV1-Cw1t_IFryk-E3Nui8QuvTTenunA/edit?usp=sharing)
 
 ### Ecosystem Fit
 
