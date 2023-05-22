@@ -113,7 +113,7 @@ Societal has already been working on our project and has completed our MVP. The 
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:**  50,000 USDC
+- **Total Costs:**  40,000 USDC
 
 The main purpose of this grant will be creating a subcription based pricing system, that can be implemented into any subsrate chain. 
 
@@ -123,7 +123,7 @@ Societal will use this subcription based pricing system to charge the DAOs on it
 ### Milestone 1 — Subscription Pricing Pallet
 - **Estimated Duration:** 1.5 month
 - **FTE:**  2
-- **Costs:** 20,000 USD
+- **Costs:** 15,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -140,7 +140,7 @@ Societal will use this subcription based pricing system to charge the DAOs on it
 
 - **Estimated Duration:** 1.5 months
 - **FTE:**  2
-- **Costs:** 20,000 USDC
+- **Costs:** 15,000 USDC
 
 
 | Number | Deliverable | Specification |
