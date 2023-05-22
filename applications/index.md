@@ -61,6 +61,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Zeeve](https://www.zeeve.io)                         | [Ink Playground IDE Improvements](ink-playground-ide-improvements.md)                                                   | [GitHub](https://github.com/Zeeve-App)                              | ☐          |        ☐       |      ☐      |
 | [Scio Labs](https://scio.xyz/)                         | [XCM Domain Name Service](xcm-domain-service.md)                                                   | [GitHub](https://github.com/scio-labs)                              | ☐          |        ☐       |      ☐      |
 | [Gloslab](https://github.com/smiasojed)                         | [Contracts performance measurement tool proposal](contracts-tool.md)                                                   | [GitHub](https://github.com/smiasojed)                              | ☐          |        ☐       |      ☐      |
+| [Nikita Orlov PR](https://github.com/stringnick)                         | [Faucet chat based bot](faucet-bot.md)                                                   | [GitHub](https://github.com/stringnick)                              | ☐          |        ☐       |      ☐      |
 
 [🔝](#menu)
 
