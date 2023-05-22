@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Generic sybil-resistant chat based faucet bot
 
-- **Project Name:** Generic sybil-resistant chat based faucet bot
 - **Team Name:** Nikita Orlov PR
 - **Payment Address:** 0x49F19FA78C4E766b8C5592e53CC35b1411a5E11f (USDC/DAI)
 - **Level:** 1
