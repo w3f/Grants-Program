@@ -48,6 +48,10 @@ Some similar projects include:
 - https://github.com/paritytech/substrate-matrix-faucet
 - https://github.com/OAXFoundation/substrate-faucet
 
+The advantages of this project are that similar projects are implemented specifically for one platform, this project will be implemented on the interface, and the platforms will be like addons (classes) that correspond to the interface, which will allow you to easily connect new platforms, do not depend on the implementation of platforms, will allow you to run unlimited number of platforms at the same time.
+
+That is, to integrate a new platform, you will need to implement an interface, and cybil resist, message processing and other functionality will already work out of the box. Also, the implementation of new functionality requires only a change in one point of code, if this does not affect the interface.
+
 ## Team
 
 ### Team members
