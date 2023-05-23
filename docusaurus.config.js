@@ -28,7 +28,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Check out <a target="_blank" rel="noopener noreferrer" href="https://web3.bamboohr.com/jobs/">our current job openings</a>!',
+        'Check out our <a target="_blank" rel="noopener noreferrer" href="https://medium.com/web3foundation/web3-foundation-grants-program-reaches-500-projects-milestone-bf314727b2f9">500 GRANTS blogpost</a>!',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
