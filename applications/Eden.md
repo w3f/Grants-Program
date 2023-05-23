@@ -232,8 +232,9 @@ We have incorporated GPT-4 model into our algorithm and users will be able to lo
 | 0b. | Documentation | We will provide both documentation of the code and a basic tutorial that explains how to access Eden's product demo |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | OpinionNFT Standard | Develop corresponding NFT models (combination of ERC-721 and ERC-4907 standards). These models allow users to temporarily gain ownership to NFTs (aka rentable standards) |
-| 2. | OpinionNFT Deployment | Deploy NFT to Westend. |
+| 1. | OpinionNFT Standard | Develop custom NFT models (taking inspiration from ERC-721 and ERC-4907 standards) on Substrate. This will involve defining the structure of the NFT metadata, the ownership rules, and any additional functionality that allow users to temporarily gain ownership to NFTs (aka rentable standards) |
+| 2. | OpinionNFT Deployment | Implement the custom NFT model on the Substrate blockchain and deploy it to the Westend testnet. |
+| 3. | Demo Integration | Integrate the NFT functionality into our demo platform with Polkadot JS API. |
 
 ### Milestone 5 — Browser Plugin Development and Beta
 
@@ -249,7 +250,7 @@ We have incorporated GPT-4 model into our algorithm and users will be able to lo
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the fundamentals of SageMint and the fundamentals of Eden. Article will focus primarilly on progress made during the 5 milestones described in this file. |
 | 1. | UIUX Development | Develop UIUX for browser plugin. |
-| 2. | Eden Demo | Develop browser plugin FE and upload to Chrome Extension Store. |
+| 2. | Eden Demo | Develop browser plugin FE and integrate it with Polkadot JS API and upload to Chrome Extension Store. |
 | 3. | Beta Launch | Integrate SageMint into browser plugin front-end; demo QA. |
 | 4. | Alpha 1 | Release Browser plugin for testing through QuestN incentive. |
 | 5. | Alpha 2/Beta 1 | Browser plugin testing through selected web3 community (<5000 community members). |
