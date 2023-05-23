@@ -1,6 +1,6 @@
 # Aryaverse
 
-- **Aryaverse Team:** Aryaverse Team
+- **Team Name:** Aryaverse Team
 - **Payment Address:** 15.05.2023, 12:29
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
