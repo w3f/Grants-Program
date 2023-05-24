@@ -1,7 +1,7 @@
 # Syncra x Web3 Foundation
 
 - **Team Name:** Syncra
-- **Payment Address:** TBD (ERC20 USDC)
+- **Payment Address:** 15Geo1RfLLM1PmPsD4uggts1Ht5LrWUChBDruLPqt5EgFKPB (PolkaDOT)
 - **Level:** 3
 
 ## Project Overview
