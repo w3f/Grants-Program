@@ -1,7 +1,7 @@
 # Syncra x Web3 Foundation
 
 - **Team Name:** Syncra
-- **Payment Address:** 15Geo1RfLLM1PmPsD4uggts1Ht5LrWUChBDruLPqt5EgFKPB (PolkaDOT)
+- **Payment Address:** 15Geo1RfLLM1PmPsD4uggts1Ht5LrWUChBDruLPqt5EgFKPB (PolkaDOT - USDT)
 - **Level:** 3
 
 ## Project Overview
