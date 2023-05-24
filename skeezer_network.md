@@ -4,7 +4,7 @@
 
 - **Team Name:** Skeezer 
 - **Payment Address:** (ETH, USDT) 0xf4ecE479eba38D2AAD069Ff0c9c4166923DbB22E
-- **Level** 3
+- **Level** 2
 
 ## Project Overview :page_facing_up:
 
@@ -25,7 +25,7 @@ You can currently demo the platform on https://demo.skeezer.org
 Integrating blockchain to Skeezer came up as a way to create a more collaborative and user-centric experience for members of the communities we're trying to build - users, listeners, health professionals etc.
 The Skeezer Blockchain will be a de-centralized network built on the Polkadot parachain network inheriting its secure, efficient, interoperability and scalable characteristics.
 The network will be implemented as two major smart contracts:
-a `fungible_token` - to track user, listener and professionals' participation within the network, 
+a `token_smart_contract` - to track user, listener and professionals' participation within the network, 
 and a `data_management_smart_contract` - to expose data centric features envisioned by the network e.g. Reputation Management, Rewards, and Conflict Resolution
 
 A more comprehensive description of feature envisioned by the network can be found [here](https://skeezer.org/skeezer_blockchain_whitepaper.pdf).
@@ -40,7 +40,21 @@ A more comprehensive description of feature envisioned by the network can be fou
 
 ![enter image description here](https://skeezer.org/parachain_interaction.png)
 
+#### Tier Based Voting
 
+The proposed two-tier governance model for the `token_smart_contract` governance system in Skeezer aims to ensure a balanced and inclusive decision-making process. Here's an overview of how the tiers and proposal acceptance process would function:
+
+Tier 1 Voters: Tier 1 voters would consist of mental health professionals, experienced listeners, administrators, and individuals falling into this category. These stakeholders possess specific expertise and experience relevant to the Skeezer ecosystem. Their inclusion in the governance process ensures that decisions are informed by the insights and perspectives of professionals within the mental health field.
+
+Tier 2 Voters: Tier 2 voters would include users, newer listeners, and the general community. This tier represents a broader set of participants who may not have the same level of specialized expertise but are vital contributors to the Skeezer community. By including this tier, the governance model allows for the input and representation of a wider range of perspectives.
+
+Proposal Acceptance Process: To ensure comprehensive decision-making, proposals would need to go through both tiers for acceptance. This process would apply to various types of proposals, including normal proposals, reward allocation proposals, tier promotion proposals, conflict resolution proposals, and organizational structure change proposals.
+
+When a proposal is submitted, it would first be reviewed and voted upon by Tier 1 voters. Their expertise and experience would help evaluate the proposal's technical soundness, alignment with mental health best practices, and overall feasibility. If a proposal gains approval from Tier 1, it would then proceed to Tier 2 for voting.
+
+The Tier 2 voters would assess the proposal from a broader community perspective, considering factors such as user experience, inclusivity, and community impact. If a proposal receives majority approval from both tiers, it would be accepted and implemented.
+
+By incorporating both tiers of voters, the proposed governance model ensures that decisions are made with input from professionals, experienced community members, and the wider Skeezer user base. This approach strives to strike a balance between domain expertise and community representation, fostering a governance process that considers diverse perspectives and promotes the overall growth and success of the Skeezer ecosystem.
 
 
 ### Ecosystem Fit
@@ -111,15 +125,15 @@ https://github.com/skeezer-org/
 
 ### Overview
 
-- **Total Estimated Duration:** 8 weeks
+- **Total Estimated Duration:** 6 weeks
 - **Full-Time Equivalent (FTE):**  5-6 FTE
-- **Total Costs:** 80,000 USD
+- **Total Costs:** 25,000 USD
 
 ### Milestone 1 - Initialization and Smart Contracts' Development
 
 - **Estimated duration:** 4 weeks
-- **FTE:**  5-6 FTE
-- **Costs:** 55,000 USD
+- **FTE:**  4-5 FTE
+- **Costs:** 15,000 USD
 
 
 
@@ -129,20 +143,18 @@ https://github.com/skeezer-org/
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Community Research | Reports and analysis on conversations with mental health professionals & community members on best practices for such a network in addition to work currently done. These will in in `pdf` , `mp3` and/or video format. - Some of these participants will form `tier_1` voters on the network |
-| 2. | Initial Parachain Setup | Install and setup substrate prerequisites such as !ink CLI, pre-configured substrate node (to mine new blocks for testing our smart contracts) - Runtime logic, native tokens, and economy setup |
-| 3. | Fungible Token | Smart contract with a staggered governance model with two tiers of voters. `tier_1` voters incl. mental health professionals, experienced listeners, admin, and people in this category. `tier_2` voters incl. users, newer listeners & the general community. Proposals have to go through both tiers to get accepted. This format will affect normal Proposals, Reward Allocation proposals, Tier Promotion proposals, Conflict Resolution proposals & Org. Structure Change proposals|
-| 4. | Test Suite 1 | Test suite for the fungible token smart contract and it's governance functionality: to include unit and integration scripts covering; event emission, state changes & inter-contract messaging (mainly calling `data_management_smart_contract` functions). These scripts can be reused in case of deploying a similar network or extending functionality|
-| 5. | data_management_smart_contract | Development of Skeezer network management smart contract to extend functionality that cannot be stored on `fungible_token_sc` . This to keep records, ratios and processes in the various categories of proposals|
-| 6. | IPFS setup | IPFS data logic to plug into the Skeezer Network (esp. data handled in `data_management_smart_contract`): to also include connectivity, performance and integration testing scripts working with the respective smart contracts. These can be reused incase of deploying a similar data handler for smart contracts  |
-| 7. | Test Suite 2 | Test suite for `data_management_smart_contract` (mostly `CRUD` functionality): to include unit and integration scripts covering; data storage and retrieval, cross-contract calling & user-acceptance tests. These scripts can be reused in case of deploying a similar tier based data management smart contract  |
+| 1. | Research & Data Collection | Reports and analysis from conversations, survey, and data analysis  with mental health professionals & community members on preferred implementation & participation on such a network in addition to work currently done. These will in in `pdf` , `mp3` and/or video format. - Some of these participants will form `tier_1` voters on the network |
+| 2. | token_smart_contract | Smart contract with a staggered governance model with two tiers of voters. `tier_1` voters incl. mental health professionals, experienced listeners, admin, and people in this category. `tier_2` voters incl. users, newer listeners & the general community. Proposals have to go through both tiers to get accepted. This format will affect normal Proposals, Reward Allocation proposals, Tier Promotion proposals, Conflict Resolution proposals & Org. Structure Change proposals|
+| 3. | Test Suite 1 | Test suite for the fungible token smart contract and it's governance functionality: to include unit and integration scripts covering; event emission, state changes & inter-contract messaging (mainly calling `data_management_smart_contract` functions). These scripts can be reused in case of deploying a similar network or extending functionality|
+| 4. | data_management_smart_contract | Development of Skeezer network management smart contract to extend functionality that cannot be stored on `fungible_token_sc` . This to keep records, ratios and processes in the various categories of proposals|
+| 5. | Test Suite 2 | Test suite for `data_management_smart_contract`: to include unit and integration scripts covering; data storage and retrieval, cross-contract calling & user-acceptance tests. These scripts can be reused in case of deploying a similar tier based data management smart contract  |
 
 
 ### Milestone 2 - Frontend, APIs, and Interoperability 
 
 - **Estimated Duration:** 4 weeks
-- **FTE:**  5-6 FTE
-- **Costs:** 25,000 USD
+- **FTE:**  4-5 FTE
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -150,7 +162,7 @@ https://github.com/skeezer-org/
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Frontend Portal | User friendly Portal where users can log in and view network activities incl. active proposals, disputes, boards, rated professionals, etc. |
+| 1. | Frontend Portal | User friendly Portal where users can log in and view network activities incl. active proposals, disputes, boards, rated professionals, etc. Mockups can be found [here](https://www.figma.com/file/5oCWPYRdh4cSNcDSWLfNas/Skeezer-Blockchain-Network---Dashboard?type=design&node-id=0:1&t=kPGZdkn282t1kz3J-1) |
 | 2. | API development | Providing a developer friendly APIs to fetch data on the network as well as plugin to other blockchains |
 | 3. | Docs and Explainers | Published written and video documentation of how it all works|
 
