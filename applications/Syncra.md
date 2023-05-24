@@ -14,6 +14,8 @@ Building DAOs requires a lot of heavy, complex work and commitment to create a s
 
 Syncra simplifies this process. We're working on a no-code solution to create, manage, and build your decentralized organization. Our goal is to provide a seamless process where protocol owners can launch the DAO within 5 minutes or even less.
 
+![](https://i.imgur.com/Pe1Z26r.png)
+
 Transparency is inherent in blockchain technology, but many situations require privacy, especially in DAOs when it comes to tough decisions. Also in times when connecting particular wallet address to a person or entity can by relatively easy, or even required (KYC, ID verification, Identity providers). With Syncra, we want to provide a solution for confidential voting where votes are hidden by default, but everything happens on-chain. Leveraging a modular approach, we want to enhance privacy, provide an easy way for treasury management, and offer on-chain automation, ultimately providing this service for the entire Substrate ecosystem.
 
 Having Syncra in the PolkaDOT ecosystem is a necessary piece of the puzzle. Just as Tally, Aragon, and Snapshot exist on EVM, Syncra exists on Substrate.
@@ -24,8 +26,7 @@ We've already prepared and begun implementing some of our product designs. Our t
 
 Our goal is to make everything as simple as possible, while maintaining modularity and providing an excellent user experience.
 
-Figma link: https://www.figma.com/file/6Meta260L8Zs7MBVhNzlWe/Syncra?node-id=0%3A1&t=141CtS90gHjTmLBp-1
-
+![](https://i.imgur.com/GXzugeC.png)
 ### Key Functionalities
 
 - DAO management,
@@ -52,6 +53,8 @@ The traits with default implementations consists of:
 - **Governor** - extends **Votes** and **AccessControl**. The base for the DAO. Provides proposal creation and execution functionalities.
 - **Timelock** - extends **Governor**. Allows scheduling operations, for example to allow some time between voting end-time and proposal execution.
 - **ShieldedVoting** - extends **Governor**. Allows to represent the "votes" by PSP22 token that can be shielded using Shielder contract.
+
+![](https://i.imgur.com/aRwOgbR.png)
 
 In the future, we plan to develop multi-chain treasury module to increase functionality and customisability.
 
