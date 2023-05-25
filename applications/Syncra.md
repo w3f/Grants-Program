@@ -213,8 +213,8 @@ We will provide a Dockerfile(s) that can be used to test all the functionality d
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 1.a | SDK | We want to provide a programmatic way of DAOs interactions, allowing the protocols to use our infrastructure without dashboard. That means create, manage DAO, and proposals itself. SDK in Typescript in the beginning, with a clear path for more languages. |
-| 1.b | SDK Documentation | A clear overview of the SDK, with documented use-cases, and tutorials describing easy integration. |
+| 0.a | SDK | We want to provide a programmatic way of DAOs interactions, allowing the protocols to use our infrastructure without dashboard. That means create, manage DAO, and proposals itself. SDK in Typescript in the beginning, with a clear path for more languages. |
+| 0.b | SDK Documentation | A clear overview of the SDK, with documented use-cases, and tutorials describing easy integration. |
 
 ## Future Plans
 
