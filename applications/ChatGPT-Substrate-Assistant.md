@@ -1,7 +1,7 @@
 # ChatGPT Substrate Assistant: Text-to-SQL interfaces to Substrate + XCM Big Data (SXBD)
 
 - **Team Name:** Colorful Notion, Inc.
-- **Status:** DRAFT
+- **Payment Address** `0xEaf3223589Ed19bcd171875AC1D0F99D31A5969c`
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Abstract :page_facing_up:
