@@ -113,15 +113,15 @@ The project will be supported by a team of 3 developers, 1 UI/UX designer, 1 Dev
 
 ### Overview
 
-- **Total Estimated Duration:** 7 months
-- **Full-Time Equivalent (FTE):**  23 FTE
-- **Total Costs:** 218,000 USDT
+- **Total Estimated Duration:** 4,5 months
+- **Full-Time Equivalent (FTE):** 12 FTE
+- **Total Costs:** 98,000 USDT
 
 ### Milestone 1 — Design and development of the Aequum deOS loader
 
 - **Estimated duration:** 1,5 months
 - **FTE:**  3
-- **Costs:** 26,000 USDT
+- **Costs:** 24,000 USDT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -137,7 +137,7 @@ The project will be supported by a team of 3 developers, 1 UI/UX designer, 1 Dev
 
 - **Estimated duration:** 1,5 months
 - **FTE:**  5
-- **Costs:** 45,000 USDT
+- **Costs:** 40,000 USDT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -145,86 +145,47 @@ The project will be supported by a team of 3 developers, 1 UI/UX designer, 1 Dev
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new dapp works. 	|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 1. | Aequum deOS core & BUS API | This deliverable will be developed using JS. We will develop the BUS API that will interconnect all low-level browser APIs like camera or sound card access (through DOM or canvas), etc. BUS API will grant dapps abilities to register any used protocols and methods and thus interact with each other with these protocols. Meanwhile, a user will be able to control all access rights (approve or decline access to APIs for chosen dapps). | 
-| 2. | RUST lib | We will deliver a RUST library, that allows to register protocol handlers and call methods of any protocols. | 
+| 2. | RUST lib | We will deliver a RUST library, that allows to register protocol handlers and call methods of any protocol. | 
 | 3. | WASM loader | WASM app loader (developed with RUST) to load and run applications from a local source (for “dev” mode). Loading of dapps from a blockchain will be delivered on later stages of the project, after delivering a Substrate parachain pallet and of publishing tools. | 
 | 4. | PROCESS API | We will develop a PROCESS API (written with JS) for process (dapps) management. PROCESS API will be used in the “task manager” app. This deliverable will include: API and it’s documentation; API implementation. | 
 | 5. | KEY API | We will deliver a KEY API (written with JS) that will provide access to user keys, that were used by the user for authentication. This API will be used for wallet dapps. This deliverable will include: API and it’s documentation; API implementation. | 
 
-### Milestone 3 — DISPLAY API & test app
+### Milestone 3 — Base APIs & test app
 
 - **Estimated duration:** 1,5 months
 - **FTE:**  4
-- **Costs:** 39,000 USDT
+- **Costs:** 34,000 USDT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new dapp works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 1. | DISPLAY API (JS, RUST) | We will develop a DISPLAY API that will allow all WASM dapps to show UIs and make databinding. This deliverable will include: API and it’s documentation; API implementation (RUST SDK, JS rendering). | 
-| 2. | JS test app example | We will deliver a test app, that will show all functionality, that is developed in this milestone. | 
-
-
-### Milestone 4 — Aequum deOS windows manager
-
-- **Estimated duration:** 1,5 months
-- **FTE:** 4
-- **Costs:** 35,000 USDT
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new dapp works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 1. | Windows manager & task bar | We will develop a windows manager & a task bar using RUST. | 
-
-### Milestone 5 — Aequum deOS GUI API
-
-- **Estimated duration:** 1 month
-- **FTE:** 4
-- **Costs:** 35,000 USDT
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new dapp works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 1. | GUI API | We will develop GUI API (in RUST) as a separate dapp, it will use low-level DISPLAY API from the deOS and provide a high-level API to other dapps, which they will use to build UI. | 
-| 2. | RUST lib | We will develop a RUST library with UI API implementation. | 
-
-### Milestone 6 — Substrate pallet
-
-- **Estimated duration:** 1,5 months
-- **FTE:** 3
-- **Costs:** 28,000 USDT
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new dapp works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what are the benefits of using the system |  
-| 1. | Aequum deOS Substrate pallet | We will develop a Substrate pallet with defined functionality: saving dapps in the marketplace, searching for dapps in the marketplace by parameters, register protocols (for dapp custom features), get protocols. | 
+| 1. | DISPLAY API (JS, RUST) | We will develop a DISPLAY API that will allow all WASM dapps to show UIs and make databinding. This deliverable will include: API and it’s documentation; API implementation (RUST SDK, JS rendering). | 
+| 2. | KEYBOARD API (JS) | We will develop a KEYBOARD API that will allow all dapps to get data from a keyboard. |
+| 3. | MOUSE API (JS) | We will develop a MOUSE API that will allow all dapps to get data from a mouse pointer. |
+| 4. | Polkadot.js API | We will develop and implement an API for interaction of dapps with Polkadot parachains. Using this API dapps could get access to a parachain storage and call methods. |
+| 5. | JS test app example | We will deliver a test app, that will show all functionality, that is developed in this milestone. | 
 
 ## Future Plans
 
-We see these future steps for delivering the Aequum deOS MVP. These milestones are planned to be delivered in the next stage of the project under a separate grant application:
+We see these future steps for delivering the Aequum deOS MVP. These milestones are planned to be delivered in next stages of the project under separate grant applications:
 
 ### Future milestones
 
-- **Estimated duration:** 8 months
-- **FTE:** 20
-- **Costs:** 172,000 USDT
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Access rights management | We will develop an 'ACCESS API' – access rights management system for access to APIs/data/hardware (e.g.: assets, sound, camera, push notifications & etc. |
-| 2. | Upload tool | We will deliver a tool for compiling dapps into WASM, packing resources to bundles (using bundle assembly tool), uploading bundles to IPFS/blockchain, registering a dapp in the marketplace. | 
-| 3. | Dapps marketplace | Dapp marketplace will be delivered as a separate dapp, built into the system. It will provide a list of available dapps with search functionality by categories and other parameters. | 
-| 4. | Blockchain API | We will deliver and implement an API for interaction of dapps with Polkadot parachains. | 
-| 5. | HTTP API | An API (written in JS) for dapps for making https requests to servers and nodes. |
-| 6. | WS API | An API (written in JS) for dapps for making and using WebSocket connections with servers and nodes. |
-| 7. | WEBRTC API | A WebRTC API (written in JS) for dapps for making p2p connections and exchanging of streaming data. |
-| 8. | Aequum wallet | This dapp will request access to user’s keys (using the KEYS API) and provide functionality of a crypto wallet. Also we will deliver a "Wallet" protocol, that will describe access. Here, on this stage, the deOS will get abilities to get and manage user’s assets. This dapp won’t be built in the system, so other teams could develop other wallets for the Aequum deOS. We plan to implement code audit for all dapps, that get access to user’s keys and put particular badges in the marketplace, that has passed such security audits, so users could evaluate these dapps higher. | 
-| 9. | deOS loader browser extension | Aequum deOS is a decentralized solution, so it shouldn’t be downloaded from any centralized web site. We plan to develop an Aequum deOS loader as a browser extension, this loader is planned to be built only once and shouldn’t be changed. After running it will download the latest version of the Aequum deOS from the blockchain and run it in the browser. | 
+| 1. | Windows manager & task bar | We will develop a windows manager & a task bar using RUST. Using DISPLAY API deOS windows manager will make its GUI, that can manage dapps (windows, settings, tasks bar). The purpose of the deOS windows manager will be dapps windows management. It will allow users to move, resize, minimize dapps and put them on the screen in a desired order. DeOS windows manager will also allow to arrange virtual desktops, which can be used for arranging dapps. | 
+| 2. | GUI API | We will develop GUI API (in RUST) as a separate dapp, it will use low-level DISPLAY API from the deOS and provide a high-level API to other dapps, which they will use to build UI. | 
+| 3. | RUST lib | We will develop a RUST library with UI API implementation. | 
+| 4. | Aequum deOS Substrate pallet | We will develop a Substrate pallet with defined functionality: saving dapps in the marketplace, searching for dapps in the marketplace by parameters, register protocols (for dapp custom features), get protocols. | 
+| 5. | Access rights management | We will develop an 'ACCESS API' – access rights management system for access to APIs/data/hardware (e.g.: assets, sound, camera, push notifications & etc. |
+| 6. | Upload tool | We will deliver a tool for compiling dapps into WASM, packing resources to bundles (using bundle assembly tool), uploading bundles to IPFS/blockchain, registering a dapp in the marketplace. | 
+| 7. | Dapps marketplace | Dapp marketplace will be delivered as a separate dapp, built into the system. It will provide a list of available dapps with search functionality by categories and other parameters. | 
+| 8. | Blockchain API | We will deliver and implement an API for interaction of dapps with Polkadot parachains. | 
+| 9. | HTTP API | An API (written in JS) for dapps for making https requests to servers and nodes. |
+| 10. | WS API | An API (written in JS) for dapps for making and using WebSocket connections with servers and nodes. |
+| 11. | WEBRTC API | A WebRTC API (written in JS) for dapps for making p2p connections and exchanging of streaming data. |
+| 12. | Aequum wallet | This dapp will request access to user’s keys (using the KEYS API) and provide functionality of a crypto wallet. Also we will deliver a "Wallet" protocol, that will describe access. Here, on this stage, the deOS will get abilities to get and manage user’s assets. This dapp won’t be built in the system, so other teams could develop other wallets for the Aequum deOS. We plan to implement code audit for all dapps, that get access to user’s keys and put particular badges in the marketplace, that has passed such security audits, so users could evaluate these dapps higher. | 
+| 13. | deOS loader browser extension | Aequum deOS is a decentralized solution, so it shouldn’t be downloaded from any centralized web site. We plan to develop an Aequum deOS loader as a browser extension, this loader is planned to be built only once and shouldn’t be changed. After running it will download the latest version of the Aequum deOS from the blockchain and run it in the browser. |
