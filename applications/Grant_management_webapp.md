@@ -19,9 +19,12 @@ The Grant Management Web Application is a comprehensive software solution design
 - Organised relevant data.
 - Github API integration to carry out relevant actions.
 
-![Technical Architecture](https://drive.google.com/file/d/1bcxdD-MrDt1qJjREdlF37oLXh6xaZWrE/view?usp=sharing)
+Technical Architecture
+
+![Grant Management Webapp(draft 2)-Technical Architecture](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/e6c62984-9c63-4bfa-809d-c6436d4bf607)
+
 - Mockups/designs of any UI components
-![Data Model](https://drive.google.com/file/d/1nZCA3Wr6YSemByYS-9GLn3O6380VcYYB/view?usp=share_link)
+![Grant Management Webapp(draft 2)-DB final draft](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/b4c23d65-b52c-475c-a1cb-27533976d9f6)
 
 - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
