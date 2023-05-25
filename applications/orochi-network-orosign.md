@@ -12,27 +12,42 @@ Users are now able to take advantage of the highest security feature similar to 
 
 ### Project Details
 
-Orosign project utilize cryptographic primitives to help people manage/secure their digital assets, it could provide highest security meanwhile friendly to end-users. Orosign provides following features:
+Orosign project utilize cryptographic primitives and Multiparty Computation (MPC) to help people manage/secure their digital assets, it could provide highest security meanwhile friendly to end-users. Orosign provides following features:
 
-- **Gasless Multi-signature:** We use ECDSA proofs to perform off-chain voting to manage multisig wallet.
-- **Gaming & NFT:** Support gaming by providing automation transaction signing for Web3 game, this wallet can receive and display NFTs.
+- **Gasless Multi-signature:** We use ECDSA proofs to perform off-chain voting to manage multi-signature wallet.
+- **Gaming & NFT:** Support gaming by providing automation transaction signing for Web3 game, this wallet can manage and display NFTs.
 - **ZeroKey:** A MPC based wallet, we build ECDSA on top of MPC to secure the signing process where user can perform the signing without any actual private key.
-- **Web3 Passport:** Support Proof of Carrying Data for the.
+- **Web3 Passport:** Support Proof of Carrying Data (PCD) for the Web3 authorization.
 
 ![](https://orochi.network/assets/images/orosign.png)
 
 ### Ecosystem Fit
 
-- **Non-custodial** Users are holding their own digital asset that meant they hold the private keys in their crypto wallet and hold the major shares in MPC wallet. Orosign was design to make sure no one able to touch people digital asset even Orochi Network.
-- **High Customizability** In gasless Multi-signature and MPC wallet, user can customize number of participants and the threshold to perform signing process.
+- **Non-custodial** Users are holding their own digital asset that meant the encrypted private keys is stored in their crypto wallet and hold the major secret shares in MPC wallet. Orosign was design to make sure no one able to touch people digital asset even Orochi Network.
+- **High Customizability** In gasless Multi-signature Wallet and MPC Wallet, user can customize number of participants and the threshold to perform signing process.
 - **Highest Level of Security** Orosign can be provide the first MPC Wallet on Polkadot.
 - **NFT & games optimization** Automatic showcase for all NFT collectibles, and support automation transaction signing for Web3 game.
 
 **What is the benefit of this solution compared to others?**
 
-- Multi-signature and MPC wallet enable highest level of security in co-ownership for vast majority of Polkadot's users.
-- Orosign can be the first MPC wallet on Polkadot
-- Orosign is building toward the vision of Web3 passport.
+- Multi-signature and MPC Wallet enable highest level of security in co-ownership for vast majority of Polkadot's users.
+- Providing the first MPC Wallet as a mobile application on Polkadot
+- Orosign is building toward the vision of Web3 passport, it allos user to manage their digital identity and assets in one place.
+
+**Is this meant to be an enterprise-grade security wallet such as this SaaS wallet?**
+
+- Orosign is a self-custodian wallet, we offer enterprise-grade security for retail and semi-retail users.
+
+**Will it be cross-chain compatible or is it only meant for substrate chains?**
+
+- In the budget of this proposal we only able to support Polkadot's chain and its parachains. We will consider to support other chains in the future.
+
+**Can you further expand on the technical details of the wallet in the deliverables?**
+
+- We implement DKG to generate secret shares that will be used to perform signing process without actual private key.
+- User will hold let's say 3 shares (2 sign shares and 1 backup) of 5 shares (Orochi Network hold 2). We created a threshold signature 3 of 5, it's required at least 1 share from user to perform transaction co-signing.
+  - Orochi Network can't perform the signing process.
+  - User can perform the signing process with or without Orochi Network.
 
 ## Team :busts_in_silhouette:
 
@@ -91,15 +106,15 @@ We are focusing in cryptography and especially ZKP, we want to utilize cryptogra
 - **FTE:** 1.6
 - **Costs:** $5,600
 
-| Number  | Deliverable | Specification                                                                                                                       |
-| ------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License     | CC0 1.0                                                                                                                             |
-| **0b.** | Research    | Researching about Polkadot signature system                                                                                         |
-| **0c.** | Research    | Public article for every research we made, everything published under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
-| **1.**  | Research    | Researching about MPC in ECDSA (all supported signatures by Polkadot)                                                               |
-| **2.**  | Research    | Researching MPC for `secp256k1`                                                                                                     |
-| **3.**  | Research    | Researching about MPC for `ed25519`                                                                                                 |
-| **4.**  | Research    | Researching about MPC in `sr25519`                                                                                                  |
+| Number  | Deliverable | Specification                                                                                                                                              |
+| ------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License     | CC0 1.0                                                                                                                                                    |
+| **0b.** | Research    | Researching about Polkadot signature system and research their compatibility with MPC by which we can be fully comptabile with Polkadot and its parachains |
+| **0c.** | Research    | Public article for every research we made, everything published under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)                        |
+| **1.**  | Research    | Researching about MPC in ECDSA (all supported signatures by Polkadot)                                                                                      |
+| **2.**  | Research    | Researching MPC for `secp256k1` and providing the document that describe how the MPC will be built and its security consideration                          |
+| **3.**  | Research    | Researching MPC for `ed25519` and providing the document that describe how the MPC will be built and its security consideration                            |
+| **4.**  | Research    | Researching MPC in `sr25519` and providing the document that describe how the MPC will be built and its security consideration                             |
 
 ### Milestone 2
 
@@ -113,8 +128,8 @@ We are focusing in cryptography and especially ZKP, we want to utilize cryptogra
 | **0b.** | Documentation                        | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide            | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                       |
 | **0d.** | Docker                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                         |
-| **1.**  | Functionality: Polkadot in back-end  | Support Polkadot ecosystem in back-end of Orosign                                                                                                                                                                                     |
-| **2.**  | Functionality: Polkadot in front-end | Support Polkadot ecosystem in front-end of Orosign                                                                                                                                                                                    |
+| **1.**  | Functionality: Polkadot in back-end  | Support Polkadot ecosystem in back-end of Orosign, developing a service that can parsing Polkadot's transaction and provide the data for Orosign front-end. TypeScript is the main language for this service.                         |
+| **2.**  | Functionality: Polkadot in front-end | Support Polkadot ecosystem in front-end of Orosign. We're using React Native, TypeScript is the main language for this front-end.                                                                                                     |
 
 ### Milestone 3
 
@@ -122,13 +137,13 @@ We are focusing in cryptography and especially ZKP, we want to utilize cryptogra
 - **FTE:** 2
 - **Costs:** $7,000
 
-| Number  | Deliverable                           | Specification                                                                                                                                                                                                                         |
-| ------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                               | Apache 2.0                                                                                                                                                                                                                            |
-| **0b.** | Documentation                         | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide             | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                       |
-| **0d.** | Docker                                | We will publish an article that explains about Orosign's MPC wallet on curve `secp256k1`                                                                                                                                              |
-| **1.**  | Functionality: MPC on secp256k1 curve | Implement for `secp256k1`                                                                                                                                                                                                             |
+| Number  | Deliverable                           | Specification                                                                                                                                                                                                                                     |
+| ------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                               | Apache 2.0                                                                                                                                                                                                                                        |
+| **0b.** | Documentation                         | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.             |
+| **0c.** | Testing and Testing Guide             | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                   |
+| **0d.** | Docker                                | We will publish an article that explains about Orosign's MPC wallet on curve `secp256k1`                                                                                                                                                          |
+| **1.**  | Functionality: MPC on secp256k1 curve | Implement MPC for `secp256k1`, supporting multiparty computation to perform transaction/message signing with `secp256k1`. This module will implement with Rust programing language and compile to Wasm opcode or native lib for React Native app. |
 
 ### Milestone 4
 
@@ -136,14 +151,14 @@ We are focusing in cryptography and especially ZKP, we want to utilize cryptogra
 - **FTE:** 2
 - **Costs:** $14,000
 
-| Number  | Deliverable                         | Specification                                                                                                                                                                                                                         |
-| ------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                             | Apache 2.0                                                                                                                                                                                                                            |
-| **0b.** | Documentation                       | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide           | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                       |
-| **0d.** | Docker                              | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                         |
-| **0e.** | Article                             | We will publish an article that explains about Orosign's MPC wallet on curve `ed25519`                                                                                                                                                |
-| **1.**  | Functionality: MPC on ed25519 curve | Implement for `ed25519`                                                                                                                                                                                                               |
+| Number  | Deliverable                         | Specification                                                                                                                                                                                                                                 |
+| ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                             | Apache 2.0                                                                                                                                                                                                                                    |
+| **0b.** | Documentation                       | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.         |
+| **0c.** | Testing and Testing Guide           | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
+| **0d.** | Docker                              | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
+| **0e.** | Article                             | We will publish an article that explains about Orosign's MPC wallet on curve `ed25519`                                                                                                                                                        |
+| **1.**  | Functionality: MPC on ed25519 curve | Implement MPC for `ed25519`, supporting multiparty computation to perform transaction/message signing with `ed25519`. This module will implement with Rust programing language and compile to Wasm opcode or native lib for React Native app. |
 
 ### Milestone 5
 
@@ -151,14 +166,14 @@ We are focusing in cryptography and especially ZKP, we want to utilize cryptogra
 - **FTE:** 2
 - **Costs:** $14,000
 
-| Number  | Deliverable                   | Specification                                                                                                                                                                                                                         |
-| ------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                       | Apache 2.0                                                                                                                                                                                                                            |
-| **0b.** | Documentation                 | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide     | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                       |
-| **0d.** | Docker                        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                         |
-| **0e.** | Article                       | We will publish an article that explains about Orosign's MPC wallet on curve `sr25519`                                                                                                                                                |
-| **1.**  | Functionality: MPC on sr25519 | Implement for `sr25519`                                                                                                                                                                                                               |
+| Number  | Deliverable                   | Specification                                                                                                                                                                                                                                 |
+| ------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                       | Apache 2.0                                                                                                                                                                                                                                    |
+| **0b.** | Documentation                 | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.         |
+| **0c.** | Testing and Testing Guide     | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
+| **0d.** | Docker                        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
+| **0e.** | Article                       | We will publish an article that explains about Orosign's MPC wallet on curve `sr25519`                                                                                                                                                        |
+| **1.**  | Functionality: MPC on sr25519 | Implement MPC for `sr25519`, supporting multiparty computation to perform transaction/message signing with `sr25519`. This module will implement with Rust programing language and compile to Wasm opcode or native lib for React Native app. |
 
 ## Future Plans
 
