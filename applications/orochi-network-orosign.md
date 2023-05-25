@@ -18,6 +18,7 @@ Orosign project utilize cryptographic primitives and Multiparty Computation (MPC
 - **Gaming & NFT:** Support gaming by providing automation transaction signing for Web3 game, this wallet can manage and display NFTs.
 - **ZeroKey:** A MPC based wallet, we build ECDSA on top of MPC to secure the signing process where user can perform the signing without any actual private key.
 - **Web3 Passport:** Support Proof of Carrying Data (PCD) for the Web3 authorization.
+- **Account Abstraction with MPC:** You could see the raise of Account Abstraction at the smart contract level, we want to take it a bit further with MPC. We want to provide a MPC based account abstraction for the end-users, so they can manage their digital assets in a more secure way.
 
 ![](https://orochi.network/assets/images/orosign.png)
 
