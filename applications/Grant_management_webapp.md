@@ -21,31 +21,38 @@ The Grant Management Web Application is a comprehensive software solution design
 
 Technical Architecture
 
-![Grant Management Webapp(draft 2)-Technical Architecture](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/e6c62984-9c63-4bfa-809d-c6436d4bf607)
+![Grant Management Webapp(draft 2)-Technical Architecture (1)](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/e24b6156-b755-40ae-bc09-624c75e860fc)
 
 - Mockups/designs of any UI components
-![Grant Management Webapp(draft 2)-DB final draft](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/b4c23d65-b52c-475c-a1cb-27533976d9f6)
 
-- This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+### Core Components:
 
-#### Core Components:
+#### Front-End:
+1. UI:
+- Project Dashboard: ![image_2023_05_25T11_55_21_620Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/e3d77c8d-cb18-4391-9ad0-54b4cb049f54)
+- Project Details: ![image_2023_05_25T11_55_21_622Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/7a03cc76-3d06-450e-948c-73ab3455d2ac)
+- Team Dashbard: ![image_2023_05_25T11_55_21_634Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/091507b1-7f0f-45cd-a40f-76f29c3c7141)
+- Team Details (applications): ![image_2023_05_25T11_55_21_610Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/5d6feb69-a729-4253-8650-30bd70fda1c8)
+- Team Details (projects): ![image_2023_05_25T11_55_21_608Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/bbd1213a-6baf-49bd-ba1a-2400aed6f807)
+- Application Dashboard: ![image_2023_05_25T11_55_21_612Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/ed4c43c1-559e-49cb-a3a9-7b3c15584529)
+- Application Details: ![image_2023_05_25T11_55_21_614Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/62e11368-8198-4d69-849e-5ed47cba2e22)
+- Delivery Dashboard: ![image_2023_05_25T11_55_21_616Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/b4ad8609-87da-415e-9650-cb057f9e65fb)
+- Delivery Details: ![image_2023_05_25T11_55_21_618Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/159e0989-d88f-4ca3-af01-d7dc34cc23fe)
+2. Back-End API Integrations
 
-1. Front-End:
-- UI
-- Back-End API Integrations
-2. Back-End:
-- Front-End API Integrations
-- Github API Integrations
-- Database API Integration
-- Cron Job
-- Data Extractor - Service that extracts data from the MD files for storage
-- Web Hook Handler - Service that will listen to events and then handle the respective functionality
-3. Database
+#### Back-End:
+1. Front-End API Integrations
+2. Github API Integrations
+3. Database API Integration
+4. Cron Job
+5. Data Extractor - Service that extracts data from the MD files for storage
+6. Web Hook Handler - Service that will listen to events and then handle the respective functionality
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+#### Database
+![Grant Management Webapp(draft 2)-DB final draft (1)](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/f133eaba-caca-4ceb-add4-8268d08226a7)
+
+### Things not included in the project:
+There is no payment gateway or wallet support in this application but these can be integrated upon further discussion.
 
 ### Technology Stack
 
@@ -63,8 +70,9 @@ The W3F grants program is growing by the day. It is quite a hassle for the grant
 
 ### Team members
 
-- Kulwinder Singh
-- Shaivik Semwal
+- Kulwinder Singh (Backend)
+- Shaivik Semwal (Frontend)
+- Aanchal Kathuria (Tester)
 
 ### Contact
 
@@ -124,62 +132,52 @@ Things tested in POC:
 
 - POC (code)- [ghApi](https://github.com/lawmeskiviahs/ghApi)
 - POC (tested on) [helloGhpi](https://github.com/lawmeskiviahs/helloGhapi)
-- [Github API Ref](https://docs.google.com/spreadsheets/d/1RWB4XAMFj-tKU4nXEDN0ZUXXmVq1gLpEMqFp_WRPthg/edit?usp=sharing)
+- [Github API Ref Sheet](https://docs.google.com/spreadsheets/d/1RWB4XAMFj-tKU4nXEDN0ZUXXmVq1gLpEMqFp_WRPthg/edit?usp=sharing)
 
 Github provides REST API for a lot of github actions. The link to the API docs is [here](https://docs.github.com/en/rest?apiVersion=2022-11-28)
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 12 weeks
+- **Full-Time Equivalent (FTE):**  3 FTE
+- **Total Costs:** 18,000 USD
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1  — Teams and Projects 
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
+- **Estimated duration:** 6 weeks
+- **FTE:**  3
+- **Costs:** 9000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can browse through the application and perform github actions |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Frontend | We will provide dashboard and details pages for Projects and Teams with all details |
+| 2. | Backend | Database integrations and data extractor will be implemented. i.e data from the md files on github will be processed and saved to the database using API |
+| 3. | Data Base | DB schema implementation |
+
+### Milestone 2 Example — Applications and Deliveries
+
+- **Estimated duration:** 6 weeks
+- **FTE:**  3
+- **Costs:** 9000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can navigate through the data and perform github actions |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
-
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-...
-
+| 1. | Frontend | We will provide dashboard and details page for the remaining tabs i.e Applications and Deliveries |
+| 2. | Backend | Github API integrations and web hooks will be implemented so that our application can listen to events and make necessary changes in the db |
 
 ## Future Plans
-
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+ We may add payment gateways and wallet support so that payments can be handled using the application itself and make it truly the complete package to carry put the Grants Program more efficiently and effectively.
 
 ## Additional Information :heavy_plus_sign:
 
