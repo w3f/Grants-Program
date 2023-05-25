@@ -28,7 +28,7 @@ The following is the workflow designed for our zkSBT service for Polkadot.
 
 For AsMatch Team:
 
-* Deploy ink SBT smart contract to Polkadot blockchain
+* Deploy ink SBT smart contract to Polkadot parachain
 * Deploy PC website for users to mint SBT and generate proof key
 
 For AsMatch Users:
@@ -63,7 +63,7 @@ The SBT is playing more and more important roles in the Web3 World. SBTs have a 
 
 * Job applications – In theory, job applicants could submit all their prior work history and professional certificates using official SBTs issued by previous companies and institutions. The SBTs would function as proof of skill certificates.
 
-After all, the zkSBT that we are proposing is not only a use case for AsMatch but also a best SBT practice for the Polkadot ecosystem. The ink SBT smart contract we are developing is a good example for Dapps which also want to deploy SBT on the Polkadot blockchain. And we are ready to integrate more SBTs from the Polkadot blockchain into AsMatch users.
+After all, the zkSBT that we are proposing is not only a use case for AsMatch but also a best SBT practice for the Polkadot parachain. The ink SBT smart contract we are developing is a good example for Dapps which also want to deploy SBT on the Polkadot blockchain. And we are ready to integrate more SBTs from the Polkadot blockchain into AsMatch users.
 
 
 ## Team :busts_in_silhouette:
@@ -123,7 +123,7 @@ https://github.com/As-Match/asMatch-front-end
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Article | We will publish an article that explains what was done as part of the grant. |
-| **1.** | PC website | The PC website for users to upload pictures and generate AIGC pictures and generate proof key. |
+| **1.** | PC website | The PC website will be developed using React.js + Typescript. Users can upload pictures and generate AIGC NFT images based on [6pen](https://6pen.art/), and generate corresponding ZK proof key based on MANTA NPO Platform.|
 
 ### Milestone 2 - AsMatch iOS/Android Application
 
@@ -138,7 +138,7 @@ https://github.com/As-Match/asMatch-front-end
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Article | We will publish an article that explains what was done as part of the grant. |
-| **1.** | iOS/Android | We will deliver iOS/Android applications that allow users to copy-paste or scans the QR code of the proof key to verify the ownership of SBT and set the SBT photo as the user’s photo. |
+| **1.** | iOS/Android | We will deliver iOS/Android applications that allow users to copy-paste or scans the QR code of the proof key to verify the ownership of SBT and set the SBT photo as the user’s photo. The application will be developed by React Native, and published to Google Play & iOS TestFlight.|
 
 ### Milestone 3 - ink! SBT smart contract
 
