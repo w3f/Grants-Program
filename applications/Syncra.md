@@ -64,6 +64,18 @@ For not shielded voting process, users can simply call `cast_vote(proposal_id)` 
 
 For shielded voting, users have to first "register" for voting to mint the PSP22 tokens representing their votes. Then, the tokens representing the votes can be simply transferred to an address representing one of the voting options or the transaction can be "shielded" using the Shielder contract.
 
+### How does on-chain automation work?
+
+Smart Contracts, Blockchain, and DAOs are very often promoted as Autonomous solutions. However, there is still a need for a manual trigger from user, to execute a given action onchain. 
+
+At Syncra, we aim to deliver a complete automation with automatic Smart Contracts call execution. For this purposes we have started working a tool called Polkadot Smart Contracts Caller, which source code can be found here: https://github.com/KowalewskiPawel/Substrate-Polkadot-Smart-Contracts-Caller
+
+With Polakdot Smart Contracts Caller, we can easily create a relayer service, for delegating Smart Contracts calls. In this scope, we are planning to add scheduler, and frontend implementation, so that tasks such as execution of the proposal can be scheduled, and called automatically after the end of voting period. 
+
+Moreover, we are also planning to integrate this tool in the Private Voting feature, so that "withdraw" function can be called from a neutral account, without revealing any sensitive info about the original caller.
+
+Known drawbacks are the security concerns, related with storing private keys on the cloud. We are currently conducting the Security research, on a possible solution to this problem. Therefore, for the scope of the grant, we treat this feature rather more like a Proof of Concept, than MVP or even final product.
+
 ### Data Model
 
 Syncra uses IPFS as well as MongoDB for storing additional data about DAOs, proposals, and user stats. The purpose is to minimise the data footprint on the blockchain itself, as storing data onchain is costly, and not very performant. Only the critical data is stored inside of the the DAO Smart Contract’s. 
@@ -114,8 +126,19 @@ Our project aim to be the ecosystem standard for DAOs on Polkadot, Kusama, Aleph
 
 ### Team Code Repos
 
-All developments within the Polkadot Grants Program will be open-sourced from day one on GitHub.
+Syncra Organization: https://github.com/SyncraDAO
 
+Smart Contracts: https://github.com/SyncraDAO/modular-dao
+
+Backend: https://github.com/SyncraDAO/Liberum-Backend
+
+All developments within the Polkadot Grants Program will be open-sourced from day one on GitHub.
+### Team GitHub Profiles
+
+- Przemysław Paczoski: https://github.com/Kodziak
+- Krzysztof Kuczma: https://github.com/KrzysiekKuczma
+- Paweł Kowalewski: https://github.com/KowalewskiPawel
+- Jan Kuczma: https://github.com/jsk28
 ### Team LinkedIn Profiles
 
 - Przemysław Paczoski: https://www.linkedin.com/in/ppaczoski/
@@ -145,13 +168,18 @@ We are currently focusing on legalising the entity, marketing, pitch decks, whit
 - **FTE:** 2
 - **Costs:** 20,000 USD
 
+We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
+
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 1 | Documentation | A clear overview of the software's architecture and components, as well as its main functions and capabilities. Technical details, including programming language, technologies, frameworks, libraries, and services. |
-| 2 | Application | Finished MVP application contains easy way of creating, and manage DAO. |
-| 3 | Testing | We want our customers to be safe, that means, we want to cover contracts, backend, and frontend as extensively as possible. |
-| 4 | Infrastructure | The infrastructure has to be resilient to any downtime which might happen. With that in mind, we want to host our solutions as decentralized as possible, using various infra providers, e.g. AWS, and GCP. |
-| 5 | Product Development | During the MVP build we’ve realized that there is a lot of product development needed to fit the market properly. We want to use the opportunity to talk with protocols to make it even more suitable for their needs, gathering as much information as possible. |
+| 0.a | License | Apache 2.0 |
+| 0.b | Documentation | A clear overview of the software's architecture and components, as well as its main functions and capabilities. Technical details, including programming language, technologies, frameworks, libraries, and services. |
+| 0.c | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0.d | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Application | Finished MVP application contains easy way of creating, and manage DAO. |
+| 2. | Testing | We want our customers to be safe, that means, we want to cover contracts, backend, and frontend as extensively as possible. |
+| 3. | Infrastructure | The infrastructure has to be resilient to any downtime which might happen. With that in mind, we want to host our solutions as decentralized as possible, using various infra providers, e.g. AWS, and GCP. |
+| 4. | Product Development | During the MVP build we’ve realized that there is a lot of product development needed to fit the market properly. We want to use the opportunity to talk with protocols to make it even more suitable for their needs, gathering as much information as possible. |
 
 ### Milestone 2
 
@@ -161,12 +189,10 @@ We are currently focusing on legalising the entity, marketing, pitch decks, whit
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 1 | Identity Provider | We will integrate Identity Provider solution within Syncra to make DAOs accessible for everyone, even non-crypto native people.
-This is a part of off-chain voting, which allows Syncra usage for non-crypto native communities. |
-| 2 | Designs Improvement | We want to improve our initial UI, and UX processes to make DAOs even more accessible. That includes also marketing graphics creation. |
-| 3 | Marketing  | We want to work on marketing strategy to increase platform visibility even more. The goal is to attract more  |
-| 4 | Treasury management | We want to integrate custodian solution which allows DAOs manage their treasuries across networks, keeping the security as top priority.
-Custodian solutions allows DAO to manage their funds across multiple networks. |
+| 0. | Identity Provider | We will integrate Identity Provider solution within Syncra to make DAOs accessible for everyone, even non-crypto native people. This is a part of off-chain voting, which allows Syncra usage for non-crypto native communities. |
+| 1. | Designs Improvement | We want to improve our initial UI, and UX processes to make DAOs even more accessible. That includes also marketing graphics creation. |
+| 2. | Marketing  | We want to work on marketing strategy to increase platform visibility even more. The goal is to attract more  |
+| 3. | Treasury management | We want to integrate custodian solution which allows DAOs manage their treasuries across networks, keeping the security as top priority. Custodian solutions allows DAO to manage their funds across multiple networks. |
 
 ### Milestone 3
 
@@ -176,8 +202,8 @@ Custodian solutions allows DAO to manage their funds across multiple networks. |
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 1 | OpenZeppelins’ Governance standard | We want to polish our smart contracts, and propose them as a substrate standard, like it is in Open Zeppelin currently. |
-| 2 | On-chain automation | We want to provide a solution which allows DAO owners, and their voters to automate actions on-chain based on proposal resolution. |
+| 1. | OpenZeppelins’ Governance standard | We want to polish our smart contracts, and propose them as a substrate standard, like it is in Open Zeppelin currently. |
+| 2. | On-chain automation | We want to provide a solution which allows DAO owners, and their voters to automate actions on-chain based on proposal resolution. |
 
 ### Milestone 4
 
