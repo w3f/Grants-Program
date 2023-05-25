@@ -31,7 +31,6 @@ For example, given a prompt of:
 # Salary_Payments(id, employee_id, amount, date)
 #
 ### A query to list the names of the departments which employed more than 10 employees in the last 3 months
-SELECT
 ```
 
 the ChatGPT API generates a *text-to-SQL* completion of:
@@ -84,8 +83,7 @@ AND fee_usd > 1.0
 
 This SQL can be immediately mapped to a data table, with both the underlying ChatGPT API prompt and generated SQL inspectable for data analysts to use in their project.
 
-By combining user-generated prompts with system-generated data (such as CSV, schema, and dialect) in the context of a multichain block explorer, it is possible to generate
-effective SQL queries for substrate-etl that can be subsequently used inside business intelligence tools like Dune Analytics, Apache Superset, and Google Looker.
+By combining user-generated prompts with system-generated data (such as CSV, schema, and dialect) in the context of a multichain block explorer, it is possible to generate effective SQL queries for substrate-etl that can be subsequently used inside business intelligence tools like Dune Analytics, Apache Superset, and Google Looker.
 The generated SQL queries can be immediately mapped to data tables, allowing data analysts and blockchain engineers to inspect and utilize them in their projects.
 
 This proposal aims to:
@@ -95,8 +93,7 @@ This proposal aims to:
 * Make it easy for new users to generate prompts and allow data analysts to quickly find utility with substrate-etl data.
 
 It is important to note that 100% success cannot be guaranteed, as underspecified prompts or requests for more information
-may not be mapped into SQL. However, with iterative improvements based on user input and feedback, text-to-SQL processes can be
-improved over time. The Substrate community is expected to be forgiving of initial failures, understanding that prompt engineering requires refinement.
+may not be mapped into SQL. However, with iterative improvements based on user input and feedback, text-to-SQL processes can be improved over time. The Substrate community is expected to be forgiving of initial failures, understanding that prompt engineering requires refinement.
 
 ### Project Details
 
@@ -107,7 +104,7 @@ This project involves front-end and back-end engineering:
 We will add a "ChatGPT Substrate Assistant" to a subset of polkaholic.io pages (minimum 8 out of 15).  We list out 15 pages and a sample query we expect to be able to resolve with some prompt engineering:
 
 - [Chains page](https://polkaholic.io/) "Which chains had the highest percentage growth of active users month over month in the last 2 months?"
-- [Chain page](https://polkaholic.io/blocks/polkadot) "Find me what swap transactions I did in the last hour"
+- [Chain page](https://polkaholic.io/blocks/statemint) "Find me what dex swap transactions I did in the last hour"
 - [Block page](https://polkaholic.io/block/polkadot/15666391) "Can you find any Arthswap related events in this block"
 - [Extrinsic page](https://polkaholic.io/tx/0xbd5565ececb54ea552b7394a1d051fba1a1b2644c504b385fecceecc94bf2f11) "Show me all the calls related to this extrinsic, ordered by USD value?"
 - [Transaction page](https://polkaholic.io/tx/0x806a78fb8d4acd91f746919b5d1dcb7aae6e05b1827373c5e2df52e298d73e88) "Show me all the events related to this transaction that have the word swap in their ABI"
@@ -123,36 +120,36 @@ We will add a "ChatGPT Substrate Assistant" to a subset of polkaholic.io pages (
 - [Chain log page](https://polkaholic.io/chainlog/polkadot) "Show me the top 10 days with the most daily active users"
 
 
-The purpose of the "ChatGPT Substrate Assistant" is to provide users interact with Substrate blockchain data.
+The "ChatGPT Substrate Assistant" aims to enable users to engage with Substrate blockchain data, requiring minimal domain-specific knowledge. This means that even without being an SQL wizard or Substrate expert, users can still analyze and derive valuable insights from what the data already offer.
 
 ***Key Features:***
 
-1. *User Prompt*: The assistant allows users to supply their prompt in a manner similar to the ChatGPT interface.
+1. *User Prompt*:  In a manner similar to the ChatGPT interface, the assistant allows users to input their queries or prompts with ease
 
-2. *Hourglass Feedback*: Users will receive hourglass-type feedback during the response generation process. This feedback will typically last between 5 to 15 seconds, considering both ChatGPT and BigQuery.
+2. *Hourglass Feedback*: During the response generation process, users will receive dynamic hourglass-type feedback. This stage typically takes anywhere between 5 to 15 seconds, accounting for both the ChatGPT and BigQuery processes.
 
 3. *Readable Response*: Users will be able to view the response in a clear and usable format. Initially, this will be presented as a simple data table (refer to the screenshot above for an example).
 
-4. *Transparency*: The assistant provides visibility into the underlying BigQuery SQL and ChatGPT API prompt call that generated the response.
+4. *Transparency*: To promote transparency, the assistant reveals the underlying BigQuery SQL and ChatGPT API prompt calls that contribute to generating the response.
 
-5. *User Feedback*: Users can provide feedback on the generated response by using thumbs-up or thumbs-down indicators.
+5. *User Feedback*: Users can provide feedback on the generated response by using thumbs-up or thumbs-down indicators,  providing valuable feedback for continuous improvement.
 
-6. *Query Favorites*: Users have the option to mark any query as a favorite. Additionally, they can view highly favorited queries.
+6. *Query Favorites*: Users have the option to mark any query as a favorite. This allows users to not only save their preferred queries but also view those that are highly favored by others.
 
 
 #### Backend Engineering
 
 For each page where the "ChatGPT Substrate Assistant" is enabled, the following enhancements will be implemented:
 
-1. *Generating ChatGPT API Call*: The system will generate a suitable ChatGPT API call by combining the user-generated prompt with the system-generated prompt.
+1.  _Generation of ChatGPT API Call_: The system will generate a suitable ChatGPT API call by combining the user-generated prompt with the system-generated prompt.
 
-2. *Setting up Session Context*: A "session" context will be established to handle sequences of queries. This context will ensure a seamless flow of conversation and improve user experience.
+2.  _Establishment of Session Context_: A "session" context will be established to handle sequences of queries. This context will help maintain the flow of conversation, thereby enhancing the user experience.
 
-3. *Logging Results*: The assistant will log both successful interactions and failures. This logging system will provide valuable insights into the performance and effectiveness of the assistant.
+3.  _Result Logging_: The assistant will keep track of both successful interactions and any failures. This log will offer important insights into the assistant's performance and efficacy, assisting in further improvements.
 
-4. *Recording User Feedback*: User feedback will be actively recorded. This will enable continuous improvement of the assistant based on user input and preferences.
+4.  _User Feedback Capture_: Feedback from users will be systematically recorded. This will facilitate ongoing refinement of the assistant in accordance with user feedback and preferences.
 
-By implementing these enhancements, the ChatGPT Substrate Assistant will become more efficient, reliable, and user-friendly, leading to an enhanced overall user experience.
+The implementation of these enhancements will bolster the efficiency, reliability, and user-friendliness of the ChatGPT Substrate Assistant, ultimately leading to a superior user experience.
 
 ### Ecosystem Fit
 
@@ -200,15 +197,12 @@ We will work with an LLM engineer with significant experience with prompt engine
 
 ## Development Roadmap :nut_and_bolt:
 
-While Natural language interfaces are pervasive, to the best of our knowledge, user generated prompts have not been collected in the context of a multichain block explorer.
-While many test cases are easily generated by us, it is impossible for us to anticipate the full range of user generated prompts.  We expect to review all unique prompts for failures that could be improved.
 
-Milestone 1 will be considered proof-of-concept where prompt generation will be done by Colorful Notion and a small group of whitelisted testers.  To ensure controlled data collection and positive
-user experience, we will invite everyone to "Join Waitlist" so that user feedback can be collected and acted on in a controlled way.  Rather than do all 16 sections, we will focus on 8 sections which appear to yield good results.
-Logging of all activity to monitor for (a) repeat users; (b) users providing "thumbs up" / "thumbs down" (page specific) (c) resolution failures will be important setup for Milestone 2.
+Natural language interfaces are widely employed, yet to our understanding, user-generated prompts within the context of a multichain block explorer remain unexplored. Although we can generate a variety of test cases, predicting the complete array of user-generated prompts is beyond our current reach. We plan to review all unique prompts for any failures that could be ameliorated.
 
-Milestone 2 will be considered alpha testing where increased number of users will be invited to test the ChatGPT assistant while improvements are made to address "thumbs down" or resolution failures.
-During this time, we expect to compare multiple LLM engines (GPT 3.5 vs 4.0 etc.) and platforms (Bard vs ChatGPT) and address specific tables/views outlined in RFPs.
+Milestone 1 will serve as a proof-of-concept stage, during which prompt generation will be carried out by Colorful Notion along with a select group of whitelisted testers. To ensure a controlled data collection process and a positive user experience, we will establish a "Join Waitlist" system. This allows us to gather and act upon user feedback in a manageable manner. Rather than addressing all 16 sections at once, we'll concentrate on 8 sections that have demonstrated promising results. For the setup of Milestone 2, it will be crucial to log all activity for monitoring repeat users, tracking "thumbs up" / "thumbs down" feedback (specific to each page), and identifying resolution failures.
+
+Milestone 2, the alpha testing phase, will see an increased number of users invited to test the ChatGPT assistant while we make improvements to address any negative feedback or resolution failures. During this period, we anticipate comparing multiple Large Language Model (LLM) engines (e.g., GPT 3.5 vs. 4.0, etc.) and platforms (e.g., Bard vs. ChatGPT). We'll also address specific tables/views outlined in RFPs.
 
 ### Overview
 
@@ -231,7 +225,7 @@ During this time, we expect to compare multiple LLM engines (GPT 3.5 vs 4.0 etc.
 | 2.  | Backend Engineering   | Prompt Engineering for 8 placements; rate limited usage of ChatGPTAssistant |
 | 3.  | Dashboard Publication | Superset dashboard showing user feedback and redacted queries (no account / address information) |
 
-Colorful Notion will choose 8 suitable placements (minimum) out of 16 based on prompt engineering.
+Colorful Notion will concentrate on 8 suitable placements (minimum) out of 16 based on prompt engineering.
 
 ### Milestone 2 — Iteration on prompt engineering based on user feedback; Additional
 
