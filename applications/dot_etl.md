@@ -1,7 +1,7 @@
 # DOT-ETL
 
-- **Team Name:** TBD
-- **Payment Address:** TBD
+- **Team Name:** Davanti
+- **Payment Address:** 16m9eMpB3BuPSXwjvdCY6z63pTuvdnv8FjmmH33ZkYPCr9XC
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
 ## Project Overview :page_facing_up:
@@ -10,34 +10,34 @@
 
 This proposal is in response to the following RFP:  [Analysis Website and Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/analysis-website-and-data-platform.md)
 
-The goal of the Dot-ETL project is to lower the friction required to conduct fine-grained and aggregated analysis of transactions on Polkadot network, via a framework to extract Polkadot transaction-level data to various offline formats: e.g. CSV / delimited, relational, columnar.  Furthermore, we intend to deploy and maintain the same dataset on an ongoing basis as a public dataset on [Google BigQuery](https://cloud.google.com/bigquery), orchestrated via [Google Cloud Composer](https://cloud.google.com/composer).  
+The goal of the Dot-ETL project is to lower the friction required to conduct fine-grained and aggregated analysis of transactions on Polkadot network, via a framework to extract Polkadot transaction-level data to various offline formats: e.g. CSV / delimited, relational, columnar.  Furthermore, we intend to develop a framework to ETL Substrate to [Google BigQuery](https://cloud.google.com/bigquery), orchestrated via [Google Cloud Composer](https://cloud.google.com/composer).  
 
-Polkadot as an ecosystem has nurtured a significant developer community, and hosts a number of well-known parachains spanning a diverse series of domains, including Defi lending / liquidity, DEXs, NFTs, RWAs and securitization, as well as identity and privacy applications.  While there has been a great deal of interest in developing on polkadot, there hasn't thus far been a simple means to query and visualize transaction-level data and aggregates. 
+The Polkadot and Kusama ecosystems have nurtured a significant developer community, and hosts a number of well-known parachains spanning a diverse series of domains, including Defi lending / liquidity, DEXs, NFTs, RWAs and securitization, as well as identity and privacy applications.  While there has been a great deal of interest in developing on polkadot, there hasn't thus far been a simple means to query and visualize transaction-level data and aggregates. 
 
-Dot-ETL will be similar in functionality to the [Ethereum ETL project](https://ethereum-etl.readthedocs.io/en/latest/). In the same way that the ETH-ETL offering Ethereum transaction data as a Public Dataset from Google has helped to establish higher TVL and adoption of the Ethereum network, the goal is that by making PolkaDot transactional data easily accessible without the majority of data engineering tasks that exist in extracting data in usable form from the blockchain will lead to greater development and interest for the protocol by mainstream users of platforms such as Google Cloud. Once data is supported and provided in this format, there are also other potential use cases that can expand adoption of PolkaDot data by the blockchain industry such as easily being able to host Chainlink oracles for this data and provide it in readily available form for a number of different cross-chain applications.
+Dot-ETL will be similar in functionality to the [Ethereum ETL project](https://ethereum-etl.readthedocs.io/en/latest/). In the same way that the ETH-ETL offering Ethereum transaction data as a Public Dataset from Google has helped to establish higher TVL and adoption of the Ethereum network, the goal is that by making PolkaDot transactional data easily accessible without the majority of data engineering tasks that exist in extracting data in usable form from the blockchain will lead to greater development and interest for the protocol by mainstream users of platforms such as Google Cloud. Once data is supported and provided in this format, there are also other potential use cases that can expand adoption of PolkaDot data by the blockchain industry such as easily being able to host Chainlink oracles for this data and provide it in readily available form for a number of different cross-chain applications. The open nature of the google bigquery dataset would allow anyone to query and extract insights from on-chain activity via SQL, or even build visualizations on thedata. 
 
-Upon successful completion of transaction activity on the Polkadot relay chain, we will further expand to parachains within the Polkadot ecosystem, with a particular focus on Defi and RWAs.  We believe that providing focus on DeFi activity related to Real World Assets on Google Cloud is the most promising use of public data to attract attention to the ecosystem.
-
-While the open nature of the google bigquery dataset would allow anyone to query and extract insights from on-chain activity via SQL, we can lower that friction further by building dashboards on top of the data via publicly-accessible cloud platforms such as Looker and similar reporting / visualization platforms.
+Upon successful completion of transaction activity on the Polkadot relay chain, we plan to expand to parachains within the Polkadot ecosystem, with a particular focus on Defi and RWAs.  We believe that providing focus on DeFi activity related to Real World Assets on Google Cloud is the most promising use of public data to attract attention to the ecosystem.
 
 We also intend to publish guides on how to query and use the dataset (i.e. medium articles, github wikis, gitbook document site).   The source code for Dot-ETL will be made public through the Web3 foundation. 
 
 The team has extensive technical background in backend software engineering and machine learning / data science, and domain knowledge in machine learning, financial services (both retail as well as institutional), lending, and quantitative risk management. Our expertise and extensive domain experience, particularly in real world usage of data in Fintech and DeFi, will allow for us to build with adoption and practical use in mind.
 
 ### Project Details
+(Technical Details)
 
-The Dot-ETL project will utilize prior work on the SubQuery project to index and source block/event/call data on the Polkadot blockchain.  The SubQuery project is already able to parse blocks in polkadot (and other chains), save into a local (or docker-container) Postgres database, and serve queries on the data via GraphQL. 
+The Dot-ETL project will utilize prior work on the SubQuery project to index and source block/event/call data on the Polkadot blockchain.  The SubQuery project is already able to index and parse block / extrinsic(transaction) / event data on Substrate, persist into a postgres data schema, and serve queries on the data via GraphQL. 
 
-We intend to run / deploy a managed SubQuery node to parse Polkadot transaction data, query this data over GraphQL, and save to Google BigQuery in a format similar to existing blockchain-etl projects.  Our jobs to facilitate the transfer of data to BigQuery will be managed by Google Composer as Airflow DAGs, written in python.  
+Our ETL framework will consume the indexed data on a managed SubQuery node via GraphQL, and save to Google BigQuery in a format similar to existing blockchain-etl projects.  We plan to orchestrate this ETL to BigQuery via the Google Composer offering on GCP as Airflow DAGs, written in Python.  
 
 The design of the ETL will allow for a varied series of output formats.  Users of the framework can choose to download the code and run their own copy of the ETL locally against the SubQuery node, or they can utilize the GCP BigQuery offering.  We expect most users of the ETL data to utilize the public offering.
 
 The architecture and process of executing airflow pipelines within GCP composer are fairly well-documented.  We expect that the infrastructure / architectural components for Dot-ETL will be similar to standard deployments within GCP composer - we are unlikely to require anything truly bespoke.
 
-The first milestone of the project will focus around transactions and the Polkadot relay chain.  Subsequent milestones will engage with parachains within the Polkadot ecosystem, particularly those with Defi applications and RWAs (Real-World Assets).  **We believe that providing focus on DeFi activity related to Real World Assets on Google Cloud is the most promising use of public data to attract attention to the Polkadot ecosystem.**
+The first milestone of the project will focus around blocks and extrinsics in Substrate, and will produce the following tables: blocks, extrinstics/transactions, events, balances.  Subsequent milestones will engage with parachains within the Polkadot / Kusama ecosystem, particularly those with Defi applications and RWAs (Real-World Assets).  **We believe that providing focus on DeFi activity related to Real World Assets on Google Cloud is the most promising use of public data to attract attention to the Polkadot ecosystem.**
 
-We're still investigating the appropriate schema structure that will capture data in the most useful /optimal way for Polkadot, but believe that the core tables / schema will be very similar to that of the [Ethereum ETL project](https://ethereum-etl.readthedocs.io/en/latest/).  The investigation of the internals and schema development is part of the project. 
+We're still investigating the appropriate schema details that will capture data in the most useful /optimal way, but believe that the core tables / schema will be very similar to that of the [Ethereum ETL project](https://ethereum-etl.readthedocs.io/en/latest/).  
 
+There are two main components of the project.  The first is the configuration of the SubQuery managed node that will index the components of Substrate that we are interested in. The second component is the Airflow DAG that will communicate with the SubQuery node via a GraphQL API.  The DAG will write updates to BigQuery tables.  This can be customized and extended further.
 
 ### Ecosystem Fit
 
@@ -45,11 +45,11 @@ Questions / Answers on Ecosystem Fit:
 
 **Q: Where and how does your project fit into the ecosystem?**
 
-A: We intend to be the go-to datasource for analytics, machine learning, and casual querying for the Polkadot blockchain.  SubQuery and other indexing projects such as TheGraph expose their indexes via GraphQL, which is friendly for API integrations and developer use, but transforming that further into GCP BigQuery will drastically lower the amount of friction required for anyone to begin analyzing and producing insights on the data (developers, analysts, investors, enthusiasts).  
+A: Our aim is to provide a foundational framework and approach to ETLing Substrate data into the GCP BigQuery cloud storage medium.  A robust illustrative example will allow others to build upon / extend the framework, and run and maintain the ETL process for general community use.  By transforming into GCP BigQuery, we hope to drastically lower the friction required for anyone to analyze and produce insights on the data (developers, analysts, investors, enthusiasts).  
 
 **Q: Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?**
 
-A: Everyone. By making data available in a way that can be queried via SQL, and in conjunction with a repository of query recipes and articles / guides / docs, we allow anyone with some base-level analysis interest to get up and running quickly.  Because transaction-level data will also be available in a standard data query format on Google cloud, it will be possible to create any number of dashboards and visualizations on third-party / cloud-based analytic tools.
+A: Everyone. By building a framework that will make data available in a way that can be queried via SQL, and in conjunction with a repository of query recipes and articles / guides / docs, we allow anyone with some base-level analysis interest to get up and running quickly.  Because transaction-level data will also be available in a standard data query format on Google cloud, it will be possible to create any number of dashboards and visualizations on third-party / cloud-based analytic tools.
 
 **Q: What need(s) does your project meet?**
 
@@ -57,8 +57,7 @@ A: Analysis / Insights - ability for people (all audience types) to query transa
 
 **Q: Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem? If so, how is your project different?  If not, are there similar projects in related ecosystems?**
 
-A: We don't know of any projects that are similar on Polkadot / Substrate / Kusama.  We do know of other projects on other chains - e.g. Ethereum has the [Ethereum ETL](https://ethereum-etl.readthedocs.io/en/latest/), which was the first to implement this and publish to BigQuery.  There is also the [Blockchain ETL Consortium on Google BigQuery](https://github.com/blockchain-etl) - see this repository for all of the chains available.  The existence of such a consortium will allow us to get plugged into an ecosystem of other chains, and additionally expose Polkadot data to an existing community of users (as well as those at Google) who are already users of this data on other chains.
-
+A: There is already a team that has created substrate-etl on Google BigQuery.   However, we believe there is value to creating redundancy by providing a competing approach to the problem.  Our approach differs in two ways (technically): (a) use of the SubQuery indexer, whereas the competing team utilized their own indexer (polkaholic), (b) use of google composer / airflow.
 
 ## Team :busts_in_silhouette:
 
@@ -127,7 +126,7 @@ We are currently in research phase;  Development / coding has not started on thi
 | 2. | Set up BigQuery Schema to pull transaction data | Finalize stored format in BigQuery (double ledger format) that transactional data will be transformed into |
 | 3. | Airflow workflows to read SubQuery transaction updates | Read updates from SubQuery node via GraphQL queries and write to BigQuery on a periodic timeframe|
 | 4. | Deploy Airflow to Google Composer | Staging and Prod deployment pipelines for Airflow to GCP Composer |
-| 4. | Outreach to Google + Blockchain-ETL | After completion / testing, reach out to Google Cloud teams + Blockchain-ETL consortium to promote + add Dot to list of available / queryable / searchable chains.  There may be some infra items to complete here.  Will also coordinate w/ Web3 foundation. |
+| 5. | Detailed documentation / developer guides | Write dev guides to address how to extend version 1 of this framework |
 
 
 ### Milestone 2 — ETLs for Selected Parachains, Extensions
@@ -144,12 +143,12 @@ We are currently in research phase;  Development / coding has not started on thi
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish articles 
 | 1. | Outreach to RWA / Defi-focused Parachains | With milestone 1 completed, prioritize parachain data that is related to RWA given the more relevant use of analytics for that data in DeFi applications in order to help further grow interest in the PolkaDot ecosystem |
-| 2. | Expansion on Milestone 1 | Milestone 1 focuses on block transactions.  We plan to expand existing / built work and consume events and calls, the other two types of handlers built for SubQuery.  This includes changes to our managed SubQuery indexers, Airflow / Composer, and BigQuery table modifications. |
+| 2. | Expansion on Milestone 1 | Milestone 1 focuses on a select core group of tables.  We plan to expand existing / built work and consume events and calls, the other two types of handlers built for SubQuery.  This includes changes to our managed SubQuery indexers, Airflow / Composer, and BigQuery table modifications. |
 | 3. | Development: Basic Parachain ETL SDK | Create a simple / reference implementation of an SDK that Parachains can build on top of / extend if they wish to utilize the same path to deliver parachain-specific ETLs to GCP BigQuery |
 
 ## Future Plans
 
-Our vision is to provide the go-to queryable data source for Polkadot transactions - both for the main relay chain as well as for the respective parachains.   Users of Dot-ETL can either query the public Google BigQuery database directly or create their own index node for any purpose.  We expect the community to devise new use cases and applications for the underlying data.  
+Our vision is to provide the framework which will power the go-to queryable data source for Substrate (polkadot / kusama) transactions - both for the main relay chain as well as for the respective parachains.   Users of Dot-ETL can either query the public Google BigQuery database directly or create their own index node for any purpose.  We expect the community to devise new use cases and applications for the underlying data.  
 
 We intend to partner with / reach out to the following entities on the sponsorship / maintainance of the cloud-based query and storage formats (i.e. Google BigQuery):
 - Polkadot and Web3 Foundation - 
