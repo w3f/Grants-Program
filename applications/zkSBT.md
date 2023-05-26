@@ -35,8 +35,8 @@ For AsMatch Users:
 
 * Install polkadot.js wallet and Manta wallet, and create key pairs for both of these two wallets
 * The user uploads the photo as an SBT picture and the AsMatch back-end service will generate similar AIGC pictures with different styles
-* The user selects one of the AIGC pictures and signs the mint transaction to the Polkadot blockchain
-* The user sign transaction by Manta wallet to sync SBT metadata from Polkadot blockchain to Manta
+* The user selects one of the AIGC pictures and signs the mint transaction to the Polkadot parachain
+* The user sign transaction by Manta wallet to sync SBT metadata from Polkadot parachain to Manta
 * The user generates a proof key of SBT on the AsMatch PC website
 * The user opens AsMatch APP on iOS/Android, and copy-paste or scans the QR code of the proof key to verify the ownership of SBT
 * The user set SBT picture as the profile photo
@@ -52,6 +52,19 @@ iOS/Android APP:
 ![](https://raw.githubusercontent.com/As-Match/documentation/main/images/EnterProofKey.jpg)
 ![](https://raw.githubusercontent.com/As-Match/documentation/main/images/BindzkSBT.png)
 ![](https://raw.githubusercontent.com/As-Match/documentation/main/images/BindzkSBT2.png)
+
+The functions of ink! smart contract
+
+* mint(to, mintType) // Mint a new token.
+* balanceOf(owner) // Return the balance of the specified address.
+* burn(owner, tokenId) // Burn a specific token.
+* ownerOf(tokenId) // Return the owner of tokenId.
+* totalSupply() // Return the total amount of tokens stored by the contract.
+* tokenURI(tokenId) // Return the URI of the token metadata.
+* _exists(tokenId) // Return whether the specified token exists(internal function).
+* addMintType(tokenURI) // Add a new token URI, and will also generate a new corresponding token type.
+* listMintType() // Return all mint types and corresponding token URI.
+* tokenURIByMintType(mintType) // Return the token URI by the mint type.
 
 ### Ecosystem Fit
 
@@ -153,8 +166,5 @@ https://github.com/As-Match/asMatch-front-end
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Article | We will publish an article that explains what was done as part of the grant. |
-| **1.** | Smart contract: SBT | We will deliver an ink smart contract that will allow users to mint SBT from the PC website and store metadata on-chain. |
+| **1.** | Smart contract: SBT | We will deliver an ink smart contract that will allow users to mint SBT from the PC website and store metadata on-chain. All functions mentioned above will be included. |
 | **2.** | Sync Service | We will deliver a back-end service(Node.js) monitoring the SBT smart contract and syncing SBT metadata to the Manta network for generating proof keys by ZKP. |
-
-
-
