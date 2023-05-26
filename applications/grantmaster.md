@@ -83,6 +83,17 @@ interface TeamMember {
 
 For the actual implementation of the database the [Mongoose npm package](https://www.npmjs.com/package/mongoose) will be used.
 
+#### Data Synchronization Approach
+The data synchronization is designed to seamlessly update the applications and deliveries, making sure we're always working with the most current information. This process will be executed using a combination of a configurable crawler and GitHub Actions.
+
+**GitHub Actions**
+
+I will deliver a set of GitHub actions that triggers the crawler whenever new comments, pull requests, or PR reviews are added.
+
+**Configurable Crawler**
+
+To support and complement the push-based system facilitated by GitHub Actions, I will also employ a configurable crawler. The crawler will be responsible for selectively updating specific applications or deliveries. Furthermore, the crawler will parse the data from GitHub Actions for incremental updates. This ensures a scalable system that doesn't need to process entire datasets for minor updates, enhancing the efficiency of our data synchronization strategy.
+
 ### Ecosystem Fit
 
 The project fits into the ecosystem by enhancing the grant management process for the Web3 Foundation, thus contributing to the growth and development of the Dotsama ecosystem. The target audience is the Web3 Foundation grant committee and other similar grant programs. The project meets the need for efficient grant management and transparency.
@@ -161,11 +172,12 @@ To get a feeling how the page will look like, I prepared this Hi Fi wireframe. K
 | **0c.** | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. I will provide a guide describing how to run these tests. |
 | **0d.** | Docker | I will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | I will publish an **article** that explains the development process, the challenges faced and how I overcame them, and the functionalities of the GrantMaster application. |
-| 1. | Crawler & REST API | I will develop a crawler and a REST API that will facilitate the interaction between the web application and the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), and present the data in a format that is easy to parse on the frontend. The crawled data is going to be stored in a mongodb and updated, whenever the crawler is run. I will make the crawler runnable as an independent task and additionally provide the option to force a run on demand through the web UI. |
-| 2. | Frontend Module: Grants Page | I will develop a Grants Page that will display all the grants in a tabular format. Grants will be searchable by team name, application name as well as full text search. They will be filterable and sortable by pull request status, github label, last updated timestamp, number of approvals & rejections of committee members and all this data will also be displayed in the table. The table will be customizable and attributes will be hidable by the user. It will include all grants - both active and inactive. |
-| 3. | Frontend Module: Grant Details | I will create a Grant Details module that displays detailed information about a specific grant when clicked on in the Grants Page. This will include any parsable data, such as team name, level, payment address, team members, legal entity, milestones and their related info (duration, FTE, costs), etc. in a structural manner. In case an application is not fully parsable, the affected attributes will hold an indication. Finally, the application document will be displayed and the links for any related PRs will be displayed. |
-| 4. | Frontend Module: Teams | This module will present all teams involved in the grants in a concise and searchable manner. |
-| 5. | Frontend Feature: Grants Committee Lense | This feature will allow a user experience that is optimised to a specific grants committee member. The committee member will be able to provide his username (using simple textbox without authentication) and they'll be able to see in which pull requests for grants applications and amendments they've participated and how long it's been since they last commented on it. I think this will be useful for priorizing grant application reviews. |
+| 1. | Crawler & REST API | I will develop a configurable crawler and a REST API that facilitates interaction with the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program). The crawler will update specific applications or deliveries on demand through the web UI (see [Data Synchronization Approach](#data-synchronization-approach) chapter). |
+| 2. | GitHub Actions | GitHub Actions will be used to trigger updates in the application whenever new comments, pull requests, or PR reviews are added on GitHub (see [Data Synchronization Approach](#data-synchronization-approach) chapter). |
+| 3. | Frontend Module: Grants Page | I will develop a Grants Page that will display all the grants in a tabular format. Grants will be searchable by team name, application name as well as full text search. They will be filterable and sortable by pull request status, github label, last updated timestamp, number of approvals & rejections of committee members and all this data will also be displayed in the table. The table will be customizable and attributes will be hidable by the user. It will include all grants - both active and inactive. |
+| 4. | Frontend Module: Grant Details | I will create a Grant Details module that displays detailed information about a specific grant when clicked on in the Grants Page. This will include any parsable data, such as team name, level, payment address, team members, legal entity, milestones and their related info (duration, FTE, costs), etc. in a structural manner. In case an application is not fully parsable, the affected attributes will hold an indication. Finally, the application document will be displayed and the links for any related PRs will be displayed. |
+| 5. | Frontend Module: Teams | This module will present all teams involved in the grants in a concise and searchable manner. |
+| 6. | Frontend Feature: Grants Committee Lense | This feature will allow a user experience that is optimised to a specific grants committee member. The committee member will be able to provide his username (using simple textbox without authentication) and they'll be able to see in which pull requests for grants applications and amendments they've participated and how long it's been since they last commented on it. I think this will be useful for priorizing grant application reviews. |
 
 ### Milestone 2 — Development of API and Grant Frontend
 
@@ -180,9 +192,10 @@ To get a feeling how the page will look like, I prepared this Hi Fi wireframe. K
 | **0c.** | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. I will provide a guide describing how to run these tests. |
 | **0d.** | Docker | I will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | I will publish an **article** that explains the development process, the challenges faced and how I overcame them, and the functionalities of the GrantMaster application. |
-| 1. | Crawler & REST API | I will develop a crawler and a REST API that will facilitate the interaction between the web application and the [Grant-Milestone-Delivery GitHub repository](https://github.com/w3f/Grant-Milestone-Delivery/), and present the data in a format that is easy to parse on the frontend. The crawled data is going to be stored in a mongodb and updated, whenever the crawler is run. I will make the crawler runnable as an independent task and additionally provide the option to force a run on demand through the web UI. |
-| 2. | Frontend Module: Deliveries Page | I will develop a Grant Deliveries Page that will display all the deliveries in a tabular format. They will be searchable by team name, application name as well as full text search. They will be filterable and sortable by pull request status, github label, last updated timestamp. It will include all deliveries - both active and inactive. Also, the deliveries will be included in the team and grant pages that were delivered in M1. |
-| 3. | Frontend Module: Stats | A Stats module will be developed to provide statistics about the grant applications and deliveries. |
+| 1. | Crawler & REST API | I will extend the previously developed configurable (see [Data Synchronization Approach](#data-synchronization-approach) chapter) crawler and REST API to facilitate interaction with the [Grant-Milestone-Delivery GitHub repository](https://github.com/w3f/Grant-Milestone-Delivery/). |
+| 2. | GitHub Actions Integration | I will integrate GitHub Actions to trigger updates in the application for new comments, pull requests, or PR reviews in the Grant-Milestone-Delivery repository (see [Data Synchronization Approach](#data-synchronization-approach) chapter). |
+| 3. | Frontend Module: Deliveries Page | I will develop a Grant Deliveries Page that will display all the deliveries in a tabular format. They will be searchable by team name, application name as well as full text search. They will be filterable and sortable by pull request status, github label, last updated timestamp. It will include all deliveries - both active and inactive. Also, the deliveries will be included in the team and grant pages that were delivered in M1. |
+| 4. | Frontend Module: Stats | A Stats module will be developed to provide statistics about the grant applications and deliveries. |
 
 ## Future Plans
 
