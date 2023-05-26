@@ -21,7 +21,67 @@ The following components will be included in the GrantMaster:
 - Crawler: I will provide an efficient crawler that is resilient to failure and fetches the data from GitHub that is neccessary for the scope of this project.
 - API: I will provide a comprehensive and efficient API.
 - UI/UX components: Detailed designs can be found [here](#wireframes) for Grants Page, Grant Details, Teams, Deliveries, and Stats.
-- Tech Stack: The web app will use a React (TypeScript) frontend that comes in [ant design](https://ant.design/docs/react/introduce), Node.js (TypeScript) crawler, Node.js (TypeScript) REST API and a MongoDB database. For GitHub interaction, I'll use GitHub's REST API.
+- Tech Stack: The web app will use a React (TypeScript) frontend that comes in [ant design](https://ant.design/docs/react/introduce), Node.js (TypeScript) crawler, Node.js (TypeScript) REST API and a MongoDB database. I'll use Mongoose to enforce the [db schema](#db-schema). For GitHub interaction, I'll use GitHub's REST API.
+
+#### DB Schema
+
+The database schema is organized into several TypeScript interfaces representing the essential entities involved in the GrantMaster application. These interfaces are a rough draft of the structure of data I'll be working with and how that data will be represented in the mongodb database.
+
+Please note that these interfaces are subject to change and refinement as the project progresses and more specific needs or requirements are identified. However, it is important to emphasize that such changes are expected to be additive in nature. This means that while additional attributes might be included to these interfaces as needed for the completeness and accuracy of the data representation, no existing attributes are anticipated to be removed. So, you can consider these as the minimum set of data that will be stored and managed in the system.
+
+```TypeScript
+interface Grant {
+  name: string;
+  level: number;
+  paymentAddress: string;
+  githubPRs: string[];
+  status: string;
+  lastUpdated: Date;
+  committeeApprovals: string[];
+  committeeRejections: string[];
+  milestones: Milestone[];
+  totalCosts: number;
+  totalFTE: number;
+  totalDuration: number;
+}
+
+interface Milestone {
+  name: string;
+  grantName: string;
+  duration: number;
+  FTE: number;
+  costs: number;
+  deliverables: Deliverable[];
+  license: string;
+}
+
+interface Deliverable {
+  name: string;
+  number: string;
+  description: string;
+  specification: string;
+}
+
+interface Team {
+  name: string;
+  teamMembers: TeamMember[];
+  grants: Grant[];
+  contactName: string;
+  contactEmail: string;
+  website?: string;
+  registeredAddress?: string;
+  registeredLegalEntity?: string;
+  codeRepos: string[];
+}
+
+interface TeamMember {
+  name: string;
+  linkedin?: string;
+  github?: string;
+}
+```
+
+For the actual implementation of the database the [Mongoose npm package](https://www.npmjs.com/package/mongoose) will be used.
 
 ### Ecosystem Fit
 
