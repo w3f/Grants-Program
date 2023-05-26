@@ -29,15 +29,25 @@ Technical Architecture
 
 #### Front-End:
 1. UI:
-- Project Dashboard: ![image_2023_05_25T11_55_21_620Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/e3d77c8d-cb18-4391-9ad0-54b4cb049f54)
-- Project Details: ![image_2023_05_25T11_55_21_622Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/7a03cc76-3d06-450e-948c-73ab3455d2ac)
-- Team Dashbard: ![image_2023_05_25T11_55_21_634Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/091507b1-7f0f-45cd-a40f-76f29c3c7141)
-- Team Details (applications): ![image_2023_05_25T11_55_21_610Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/5d6feb69-a729-4253-8650-30bd70fda1c8)
-- Team Details (projects): ![image_2023_05_25T11_55_21_608Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/bbd1213a-6baf-49bd-ba1a-2400aed6f807)
-- Application Dashboard: ![image_2023_05_25T11_55_21_612Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/ed4c43c1-559e-49cb-a3a9-7b3c15584529)
-- Application Details: ![image_2023_05_25T11_55_21_614Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/62e11368-8198-4d69-849e-5ed47cba2e22)
-- Delivery Dashboard: ![image_2023_05_25T11_55_21_616Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/b4ad8609-87da-415e-9650-cb057f9e65fb)
-- Delivery Details: ![image_2023_05_25T11_55_21_618Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/159e0989-d88f-4ca3-af01-d7dc34cc23fe)
+- Project Dashboard: ![image_2023_05_25T13_03_13_705Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/57801170-bdf1-4a5f-aead-05b4c2c7402b)
+
+- Project Details: ![image_2023_05_25T13_03_13_706Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/a2518aad-0d3c-4c39-a829-6b8d52f483b4)
+
+- Team Dashbard: ![image_2023_05_25T13_03_13_710Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/db6dc265-b0f2-4d87-909b-9c71803821cb)
+
+- Team Details (applications): ![image_2023_05_25T13_03_13_710Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/aaca6386-9f96-4f09-a93a-c3670662ffa9)
+
+- Team Details (projects): ![image_2023_05_25T13_03_13_709Z](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/a63aa155-5e74-4fb1-adf5-cb395f609308)
+
+- Application Dashboard: ![image_2023_05_25T13_03_13_703Z (1)](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/0dcb6be4-2e24-4a5a-975b-c6f0ace10f51)
+
+The discussions, commit, and file changes pages will be designed same as they are shown on a PR in github. Approvals, reviews and rejections will be handeled in the discussions tab
+- Application Details: ![image_2023_05_25T13_03_13_703Z (2)](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/117f4eff-a6a4-4782-905d-f4abc62ecd1e)
+
+- Delivery Dashboard: ![image_2023_05_25T13_03_13_704Z (2)](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/16fd5ba0-a4de-47eb-a23a-624bed68177c)
+
+- Delivery Details: ![image_2023_05_25T13_03_13_704Z (1)](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/cd96dc63-ed61-4f80-ab8b-16aa87337321)
+
 2. Back-End API Integrations
 
 #### Back-End:
@@ -52,7 +62,8 @@ Technical Architecture
 ![Grant Management Webapp(draft 2)-DB final draft (1)](https://github.com/lawmeskiviahs/Grants-Program/assets/60818312/f133eaba-caca-4ceb-add4-8268d08226a7)
 
 ### Things not included in the project:
-There is no payment gateway or wallet support in this application but these can be integrated upon further discussion.
+
+There is no wallet support/oracle for treasury pallet in this application but these can be integrated upon further discussion.
 
 ### Technology Stack
 
@@ -177,7 +188,8 @@ Github provides REST API for a lot of github actions. The link to the API docs i
 | 2. | Backend | Github API integrations and web hooks will be implemented so that our application can listen to events and make necessary changes in the db |
 
 ## Future Plans
- We may add payment gateways and wallet support so that payments can be handled using the application itself and make it truly the complete package to carry put the Grants Program more efficiently and effectively.
+
+Oracle for treasury pallet integration is being researched meanwhile and also looking for decentrallised alternative for github. Upon further discussions with the grants committee we shall go ahead with this
 
 ## Additional Information :heavy_plus_sign:
 
