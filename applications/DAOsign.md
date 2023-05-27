@@ -24,7 +24,7 @@ Deliveries include DAOsign platform with an ability to:
 - add and remove signators of different levels of anonymity
 - allow signing the documents with further storing of signature proofs in Polkadot blockchain.
 Core components: 
-
+<img width="902" alt="Screenshot 2023-05-27 at 16 51 43" src="https://github.com/Burmenska/Grants-Program/assets/3983591/e6e3e78d-edf4-4d50-a298-e01210d75963">
 
 
 
@@ -137,14 +137,14 @@ Total Costs: 10,000 EUR
 
 ## Future Plans
 
-Please include here
+Our team plans to contribute to the Polkadot ecosystem through:
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+Announcing Early Adopters Program and working closely with DAOs to help them integrate DAOsign.
+Enhance our tutorials and supplementary materials to better support users and developers.
 
 ## Referral Program (optional) :moneybag: 
 
-You can find more information about the program [here](../README.md#moneybag-referral-program).
+
 - **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
 - **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
@@ -152,8 +152,4 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+By recommendation of Richard Casey from Parity.
