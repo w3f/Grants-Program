@@ -39,7 +39,7 @@ by connecting several blockchains to play chess together we create a multichain 
 
 
 
-5:Governance Model: The governance pallet or Democracy pallet for Chessonchain is designed to give users a say in the decision-making process of the platform. This is achieved by implementing a democratic voting system where users can propose and vote on changes to the platform.
+5: ChessOnchain Governance Model: The governance pallet or Democracy pallet for Chessonchain is designed to give users a say in the decision-making process of the platform. This is achieved by implementing a democratic voting system where users can propose and vote on changes to the platform.
 
 Here's how the Democracy pallet may work for Chessonchain:
 
@@ -227,7 +227,7 @@ Costs: 10,000 USD
 | 0d   | Docker  :      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.    |
 |  0e  | Article :  |  We will write an article on each pallet and build in this milestones    |
 |  1   | Storage Pallet |Implement Storage Pallets  for game Data from offchain workers pallet  to substrate chain  with storage maps. to store for each user/player   |
-|  2.   | Chess Games Democracy & Governance Pallet :    |Implememnt and Work on Democracy Pallet for Governance    |
+|  2.   | Chess Onchain Democracy & Governance Pallet :    |Implememnt and Work on Democracy Pallet for Governance    |
 |  3.   | 	Leader Board Pallet :     |A Decentralized Leaderboard Pallet for competetions and Records  of championship games , and different chess game results     |
 
 
