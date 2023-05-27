@@ -232,9 +232,9 @@ We have incorporated GPT-4 model into our algorithm and users will be able to lo
 | 0b. | Documentation | We will provide both documentation of the code and a basic tutorial that explains how to access Eden's product demo |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | OpinionNFT Standard | Develop custom NFT models (taking inspiration from ERC-721 and ERC-4907 standards) on Substrate. This will involve defining the structure of the NFT metadata, the ownership rules, and any additional functionality that allow users to temporarily gain ownership to NFTs (aka rentable standards) |
-| 2. | OpinionNFT Deployment | Implement the custom NFT model on the Substrate blockchain and deploy it to the Westend testnet. |
-| 3. | Demo Integration | Integrate the NFT functionality into our demo platform with Polkadot JS API. |
+| 1. | OpinionNFT Standard | Develop custom NFT models using the Substrate FRAME Pallet for NFTs (taking inspiration from ERC-721 and ERC-4907 standards) on Substrate. This will involve defining the structure of the NFT metadata, the ownership rules, and any additional functionality that allow users to temporarily gain ownership to NFTs (aka rentable standards) |
+| 2. | OpinionNFT Deployment | Implement the custom NFT model on the Substrate blockchain using the Substrate FRAME Pallet for NFTs and deploy it to the Westend testnet. |
+| 3. | Demo Integration | Integrate the NFT functionality into our demo platform with Polkadot JS API, which allows interaction with the Substrate-based blockchain |
 
 ### Milestone 5 — Browser Plugin Development and Beta
 
@@ -246,13 +246,13 @@ We have incorporated GPT-4 model into our algorithm and users will be able to lo
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both documentation of the code and a basic tutorial that explains how to access and use Eden. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests, including tests for Polkadot JS API interactions. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the fundamentals of SageMint and the fundamentals of Eden. Article will focus primarilly on progress made during the 5 milestones described in this file. |
 | 1. | UIUX Development | Develop UIUX for browser plugin. |
-| 2. | Eden Demo | Develop browser plugin FE and integrate it with Polkadot JS API and upload to Chrome Extension Store. |
+| 2. | Eden Demo | Develop browser plugin FE which can display on-chain information for users who link their web2 social media account to their Web3 Wallet. Integrate it with Polkadot JS API using ApiPromise.create(), api.query.system.account(), and other necessary functions. Test functionality and upload to Chrome Extension Store. |
 | 3. | Beta Launch | Integrate SageMint into browser plugin front-end; demo QA. |
-| 4. | Alpha 1 | Release Browser plugin for testing through QuestN incentive. |
+| 4. | Alpha 1 | Release Browser plugin for testing through user incentive programs. A token reward system will be built on Parachain or Parathread to reward to users for testing our plugin. Also, on-chain governance will be leveraged to involve token holders in decision-making, fostering a sense of community and ownership. User feedback on the plugin functionality will be collected to inform further improvement.|
 | 5. | Alpha 2/Beta 1 | Browser plugin testing through selected web3 community (<5000 community members). |
 
 
