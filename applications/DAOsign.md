@@ -18,22 +18,15 @@ DAOsign provides publicly verifiable cryptographic proofs; secure, transparent a
 
 Furthermore, DAOsign provides robust Governance and Policy Builder platform to provide governance, workflow automation and controls for organization policies and procedures.
 ### Project Details
-
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+A project goal is to implement signature proofs storing in Polkadot blockchain.
+Deliveries include DAOsign platform with an ability to:
+- create, edit and generate agreements/policies using ChatGPT 3.5
+- add and remove signators of different levels of anonymity
+- allow signing the documents with further storing of signature proofs in Polkadot blockchain.
+Core components: 
 
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+
 
 ### Ecosystem Fit
 
