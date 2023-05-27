@@ -20,7 +20,7 @@ Overall, ChessonChain provides a secure, scalable, and decentralized platform fo
 ### Project Details
 1: Substrate Blockchain : ChessonChain is built with Substrate framework, This provides ChessonChain with a high degree of flexibility in terms of its features, functionality, and governance and forks
 
-2:Token Supply : ChessonChain will use  a native token CHS , which is used as the in-game currency for players to participate in online chess games, tournaments, and events. The CHS token is also reward  for Players through Play 2 Earn model, Validators , and other in-game activities like voting and governance  
+2:Token Supply : ChessonChain will use  a native token , which is used as the in-game currency for players to participate in online chess games, tournaments, and events. The token is also reward  for Players through Play 2 Earn model, Validators , and other in-game activities like voting and governance  
 
 
 3:Play 2 Earn Model: The Play 2 Earn model is one of the core features of ChessonChain, which incentivizes players to participate in the platform and strive for excellence. By earning rewards in the form of in-game tokens and NFTs, players are motivated to continue playing and improving their skills. 
@@ -39,7 +39,7 @@ by connecting several blockchains to play chess together we create a multichain 
 
 
 
-5: ChessOnchain Governance Model: The governance pallet or Democracy pallet for Chessonchain is designed to give users a say in the decision-making process of the platform. This is achieved by implementing a democratic voting system where users can propose and vote on changes to the platform.
+5: ChessOnchain Governance Model: The governance pallet  for Chessonchain is designed to give users a say in the decision-making process of the platform. This is achieved by implementing a democratic voting system where users can propose and vote on changes to the platform.
 
 Here's how the Democracy pallet may work for Chessonchain:
 
@@ -174,7 +174,9 @@ we Anchored the first substrate training in nigeria with Octpous network . We ar
 
 
 ## Development Status :open_book:
- chess.incryptoencrypted.org
+ 
+ https://chess.incryptoencrypted.org/
+ 
  https://github.com/InCryptoEncrypted/ChessOnChain
 
 Development Roadmap 
