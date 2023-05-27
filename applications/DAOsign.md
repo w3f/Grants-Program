@@ -139,10 +139,7 @@ Total Costs: 10,000 EUR
 | 0e. | Article | We will publish an **article** that explains how does DAOsign users can create agreements and store them in Polkadot test- or mainnet. It will be published in our Medium, Linkedin, Twitter and Discord channels. Apart of that, we will regularly publish grant development status on our social media. 
 | 1. | Polkadot integration: testnet | We will create a testnet integration with Polkadot |
 | 2. | Polkadot integration: mainnet | We will create a mainnet integration with Polkadot |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+
 
 
 ## Future Plans
