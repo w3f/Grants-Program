@@ -22,10 +22,12 @@ A project goal is to store Agreements Proofs on Polkadot chain using Ink! smart 
 Proofs are implemented in EIP-712 standard and signed using user’s EVM private key. We are supporting this standard in Ink! smart contract to be able to verify signature.
 Also, we are implementing EIP-2771 standard to allow Agreement Signers gas-free delegation to publish proof on-chain.
 
+
 Deliveries include DAOsign platform with an ability to:
 - create, edit and generate agreements/policies using ChatGPT 3.5
-- add and remove signers/observers of different levels of anonymity
+- add and remove signers and observers of different levels of anonymity
 - allow signing the documents with further storing of signature proofs on Polkadot blockchain.
+
 Core DAOsign components: 
 <img width="902" alt="Screenshot 2023-05-27 at 16 51 43" src="https://github.com/Burmenska/Grants-Program/assets/3983591/e6e3e78d-edf4-4d50-a298-e01210d75963">
 
@@ -159,11 +161,7 @@ Announcing Early Adopters Program and working closely with DAOs to help them int
 Enhance our tutorials and supplementary materials to better support users and developers.
 Expanding DAOsign functionality according to the roadmap.
 
-## Referral Program (optional) :moneybag: 
 
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 
