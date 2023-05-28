@@ -26,11 +26,12 @@ Deliveries include DAOsign platform with an ability to:
 - add and remove signers and observers of different levels of anonymity
 - allow signing the documents with further storing of signature proofs on Polkadot blockchain.
 
-**Core DAOsign components: **
+**Core DAOsign components:**
 
 <img width="902" alt="Screenshot 2023-05-27 at 16 51 43" src="https://github.com/Burmenska/Grants-Program/assets/3983591/e6e3e78d-edf4-4d50-a298-e01210d75963">
 
 **Technical design:**
+
 Proofs are implemented in EIP-712 standard and signed using user’s EVM private key. We are supporting this standard in Ink! smart contract to be able to verify signature.
 Also, we are implementing EIP-2771 standard to allow Agreement Signers gas-free delegation to publish proof on-chain.
 
