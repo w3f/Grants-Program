@@ -158,9 +158,9 @@ We are currently focusing on legalising the entity, marketing, pitch decks, whit
 
 ### Overview
 
-- **Total Estimated Duration:** 24 weeks
+- **Total Estimated Duration:** 18 weeks
 - **Full-Time Equivalent (FTE):** 2-3 FTE
-- **Total Costs:** Requested amount in USD for the whole project 80,000 USD.
+- **Total Costs:** Requested amount in USD for the whole project 60,000 USD.
 
 ### Milestone 1
 
@@ -172,10 +172,10 @@ We will provide a Dockerfile(s) that can be used to test all the functionality d
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0.a | License | Apache 2.0 |
-| 0.b | Documentation | A clear overview of the software's architecture and components, as well as its main functions and capabilities. Technical details, including programming language, technologies, frameworks, libraries, and services. |
-| 0.c | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0.d | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | A clear overview of the software's architecture and components, as well as its main functions and capabilities. Technical details, including programming language, technologies, frameworks, libraries, and services. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Application | Finished MVP application contains easy way of creating, and manage DAO. |
 | 2. | Testing | We want our customers to be safe, that means, we want to cover contracts, backend, and frontend as extensively as possible. |
 | 3. | Infrastructure | The infrastructure has to be resilient to any downtime which might happen. With that in mind, we want to host our solutions as decentralized as possible, using various infra providers, e.g. AWS, and GCP. |
@@ -184,15 +184,17 @@ We will provide a Dockerfile(s) that can be used to test all the functionality d
 ### Milestone 2
 
 - **Estimated duration:** 6 weeks
-- **FTE:** 2
+- **FTE:** 2-3
 - **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0. | Identity Provider | We will integrate Identity Provider solution within Syncra to make DAOs accessible for everyone, even non-crypto native people. This is a part of off-chain voting, which allows Syncra usage for non-crypto native communities. |
-| 1. | Designs Improvement | We want to improve our initial UI, and UX processes to make DAOs even more accessible. That includes also marketing graphics creation. |
-| 2. | Marketing  | We want to work on marketing strategy to increase platform visibility even more. The goal is to attract more  |
-| 3. | Treasury management | We want to integrate custodian solution which allows DAOs manage their treasuries across networks, keeping the security as top priority. Custodian solutions allows DAO to manage their funds across multiple networks. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | A clear overview of the software's architecture and components, as well as its main functions and capabilities. Technical details, including programming language, technologies, frameworks, libraries, and services. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | OpenZeppelins’ Governance standard | We want to polish our smart contracts, and propose them as a substrate standard, like it is in Open Zeppelin currently. |
+| 2. | On-chain automation | We want to provide a solution which allows DAO owners, and their voters to automate actions on-chain based on proposal resolution. |
 
 ### Milestone 3
 
@@ -202,19 +204,12 @@ We will provide a Dockerfile(s) that can be used to test all the functionality d
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 1. | OpenZeppelins’ Governance standard | We want to polish our smart contracts, and propose them as a substrate standard, like it is in Open Zeppelin currently. |
-| 2. | On-chain automation | We want to provide a solution which allows DAO owners, and their voters to automate actions on-chain based on proposal resolution. |
-
-### Milestone 4
-
-- **Estimated duration:** 6 weeks
-- **FTE:** 2-3
-- **Costs:** 20,000 USD
-
-| Number | Deliverable | Specification |
-| --- | --- | --- |
-| 0.a | SDK | We want to provide a programmatic way of DAOs interactions, allowing the protocols to use our infrastructure without dashboard. That means create, manage DAO, and proposals itself. SDK in Typescript in the beginning, with a clear path for more languages. |
-| 0.b | SDK Documentation | A clear overview of the SDK, with documented use-cases, and tutorials describing easy integration. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | A clear overview of the software's architecture and components, as well as its main functions and capabilities. Technical details, including programming language, technologies, frameworks, libraries, and services. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Article | We will publish an article that introduces to the solution with all the guidelines included. |
+| 1. | SDK | We want to provide a programmatic way of DAOs interactions, allowing the protocols to use our infrastructure without dashboard. That means create, manage DAO, and proposals itself. SDK in Typescript in the beginning, with a clear path for more languages. |
+| 2. | SDK Documentation | A clear overview of the SDK, with documented use-cases, and tutorials describing easy integration. |
 
 ## Future Plans
 
