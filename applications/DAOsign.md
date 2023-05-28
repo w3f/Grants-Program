@@ -18,15 +18,20 @@ DAOsign provides publicly verifiable cryptographic proofs; secure, transparent a
 
 Furthermore, DAOsign provides robust Governance and Policy Builder platform to provide governance, workflow automation and controls for organization policies and procedures.
 ### Project Details
-A project goal is to implement signature proofs storing in Polkadot blockchain.
+A project goal is to store Agreements Proofs on Polkadot chain using Ink! smart contracts. 
+Proofs are implemented in EIP-712 standard and signed using user’s EVM private key. We are supporting this standard in Ink! smart contract to be able to verify signature.
+Also, we are implementing EIP-2771 standard to allow Agreement Signers gas-free delegation to publish proof on-chain.
+
 Deliveries include DAOsign platform with an ability to:
 - create, edit and generate agreements/policies using ChatGPT 3.5
-- add and remove signators of different levels of anonymity
-- allow signing the documents with further storing of signature proofs in Polkadot blockchain.
-Core components: 
+- add and remove signers/observers of different levels of anonymity
+- allow signing the documents with further storing of signature proofs on Polkadot blockchain.
+Core DAOsign components: 
 <img width="902" alt="Screenshot 2023-05-27 at 16 51 43" src="https://github.com/Burmenska/Grants-Program/assets/3983591/e6e3e78d-edf4-4d50-a298-e01210d75963">
 
+Technical design:
 
+<img width="805" alt="Screenshot 2023-05-28 at 23 30 53" src="https://github.com/Burmenska/Grants-Program/assets/3983591/54c8708d-e180-46f3-9a78-b7121de133d3">
 
 ### Ecosystem Fit
 
@@ -115,13 +120,11 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 **Overview**
 
 Total Estimated Duration: 2 months
-Full-Time Equivalent (FTE): 2 FTE
-Total Costs: 30,000 EUR
+Full-Time Equivalent (FTE): 4 FTE
+Total Costs: 48,100 EUR
 
-Milestone 1 - TestNet MVP
-Total Costs: 20,000 EUR
-Milestone 2 - MainNet MVP
-Total Costs: 10,000 EUR
+Milestone 1 - Smartcontracts
+Total Costs: 40,300 EUR
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -130,8 +133,21 @@ Total Costs: 10,000 EUR
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains how does DAOsign users can create agreements and store them in Polkadot test- or mainnet. It will be published in our Medium, Linkedin, Twitter and Discord channels. Apart of that, we will regularly publish grant development status on our social media. 
-| 1. | Polkadot integration: testnet | We will create a testnet integration with Polkadot |
-| 2. | Polkadot integration: mainnet | We will create a mainnet integration with Polkadot |
+| 1. | Smart Contracts | Agreement Contract |
+| 2. | Smart Contracts | EIP712 standard implementation on Ink! |
+| 3. | Smart Contracts | EIP2771 standard implementation on Ink! |
+| 4. | Smart Contracts | Delegate call using EIP2771 |
+
+
+
+Milestone 2 - Application integration
+Total Costs: 7,800 EUR
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | TBD |
+| 1. | Application Integration| Application Private Key Management |
+| 2. | Application Integration | DAOsign app integration |
 
 
 
@@ -141,6 +157,7 @@ Our team plans to contribute to the Polkadot ecosystem through:
 
 Announcing Early Adopters Program and working closely with DAOs to help them integrate DAOsign.
 Enhance our tutorials and supplementary materials to better support users and developers.
+Expanding DAOsign functionality according to the roadmap.
 
 ## Referral Program (optional) :moneybag: 
 
@@ -150,6 +167,6 @@ Enhance our tutorials and supplementary materials to better support users and de
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / **personal recommendation **/ etc.
 
 By recommendation of Richard Casey from Parity.
