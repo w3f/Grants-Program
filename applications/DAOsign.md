@@ -26,9 +26,11 @@ Deliveries include DAOsign platform with an ability to:
 - add and remove signers and observers of different levels of anonymity
 - allow signing the documents with further storing of signature proofs on Polkadot blockchain.
 
+
 **Core DAOsign components:**
 
 <img width="902" alt="Screenshot 2023-05-27 at 16 51 43" src="https://github.com/Burmenska/Grants-Program/assets/3983591/e6e3e78d-edf4-4d50-a298-e01210d75963">
+
 
 **Technical design:**
 
@@ -125,14 +127,14 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 
 Total Estimated Duration: 2 months
 Full-Time Equivalent (FTE): 4 FTE
-Total Costs: 48,100 EUR
+Total Costs: 48,100 USD
 
-Milestone 1 - Smartcontracts
-Total Costs: 40,300 EUR
+Milestone 1 - Smartcontracts. 
+Total Costs: 40,300 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | TBD |
+| **0a.** | License | Open Source |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can upload/generate the agreement, add signers/observers and complete the signature process with storing signature proofs either in test or mainnet, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -144,8 +146,10 @@ Total Costs: 40,300 EUR
 
 
 
-Milestone 2 - Application integration
-Total Costs: 7,800 EUR
+
+Milestone 2 - Application integration. 
+Total Costs: 7,800 USD
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -167,6 +171,6 @@ Expanding DAOsign functionality according to the roadmap.
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / **personal recommendation **/ etc.
+**How did you hear about the Grants Program?** 
 
 By recommendation of Richard Casey from Parity.
