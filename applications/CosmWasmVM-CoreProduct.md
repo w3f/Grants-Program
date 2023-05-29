@@ -105,9 +105,9 @@ We are the only team in the Substrate/Polkadot/Kusama ecosystem implementing Cos
 
 ### Team's experience
 
-- Hussein Ait Lahcen: Principal Blockchain engineer at Composable Finance, previously Core Rust developer at Parity
-- Abdullah Eryuzlu: Substrate Rust engineer at Composable Finance, previously Substrate engineer at Webb.tools
-- Cor Pruijs: Software engineer at Composable Finance, previously Software engineer at ConsenSys
+- Hussein Ait Lahcen: Principal Blockchain engineer at Composable Finance
+- Abdullah Eryuzlu: Substrate Rust engineer at Composable Finance
+- Cor Pruijs: Software engineer at Composable Finance
 
 ### Team Code Repos
 

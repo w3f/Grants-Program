@@ -194,7 +194,7 @@ Ideas generally have better chances of being implemented if they're presented in
 2. In the newly created fork, create a copy of the suggestion template ([`RFPs/suggestion-template.md`](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/suggestion-template.md)) inside the [`rfps`](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/docs/RFPs/suggestion-template.md) of the template into the new one, and _do not modify the template file directly._
 3. Name the file after your idea: `project_name.md`.
 4. Fill out the template with the project details. Please include as many details as possible.
-5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
+5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grants-Program/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
 6. You will see the same template as for creating an application. Please replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 7. The RFP will be accepted and merged as soon as it receives three approvals from [W3F Grants Committee](https://github.com/w3f/Grants-Program#w3f-grants-committee) members.
 
@@ -259,9 +259,9 @@ It is **not** a chance to pitch your project, especially since only a small subs
 
 <div align="center">
 
-| <img src="/Grants-Program/img/Web.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Twitter.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Learn.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Wiki.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Reddit.svg?s=50" width="50"></img> | <img src="/Grants-Program/img/Youtube.svg?s=50" width="50"></img> |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
+| <img src="static/img/Web.svg?s=50" width="50"></img> | <img src="static/img/Twitter.svg?s=50" width="50"></img> | <img src="static/img/Learn.svg?s=50" width="50"></img> | <img src="static/img/Wiki.svg?s=50" width="50"></img> | <img src="static/img/Youtube.svg?s=50" width="50"></img> |
+| :-: | :-: | :-: | :-: | :-: |
+| [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
 
 </div>
 
@@ -319,6 +319,7 @@ The best way to find out about upcoming hackathons is by following Polkadot on t
 Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
 - [Acala Grants Program](https://acala.network/ecosystem-program)
+- [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program) 
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
@@ -331,6 +332,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/)
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
+- [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 
 ## :information_source: License<!-- omit in toc -->
