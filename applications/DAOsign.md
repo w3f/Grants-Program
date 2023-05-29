@@ -22,7 +22,7 @@ A project goal is to store Agreements Proofs on Polkadot chain using Ink! smart 
 
 
 Deliveries include DAOsign platform with an ability to:
-- create, edit and generate agreements/policies using ChatGPT 3.5
+- create agreements including generating using ChatGPT
 - add and remove signers and observers of different levels of anonymity
 - allow signing the documents with further storing of signature proofs on Polkadot blockchain.
 
@@ -36,6 +36,10 @@ Deliveries include DAOsign platform with an ability to:
 
 Proofs are implemented in EIP-712 standard and signed using user’s EVM private key. We are supporting this standard in Ink! smart contract to be able to verify signature.
 Also, we are implementing EIP-2771 standard to allow Agreement Signers gas-free delegation to publish proof on-chain.
+
+Detailed storyboard can be found here: https://consideritdone.storiesonboard.com/m/PUCLDvQC4kKwoRJ8kbm3MA .
+
+Architectural diagram:
 
 <img width="805" alt="Screenshot 2023-05-28 at 23 30 53" src="https://github.com/Burmenska/Grants-Program/assets/3983591/54c8708d-e180-46f3-9a78-b7121de133d3">
 
@@ -126,7 +130,7 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 **Overview**
 
 Total Estimated Duration: 2 months
-Full-Time Equivalent (FTE): 4 FTE
+Full-Time Equivalent (FTE): 2 FTE per month
 Total Costs: 48,100 USD
 
 Milestone 1 - Smartcontracts. 
@@ -134,11 +138,10 @@ Total Costs: 40,300 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Open Source |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can upload/generate the agreement, add signers/observers and complete the signature process with storing signature proofs either in test or mainnet, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains how does DAOsign users can create agreements and store them in Polkadot test- or mainnet. It will be published in our Medium, Linkedin, Twitter and Discord channels. Apart of that, we will regularly publish grant development status on our social media. 
+| 0a. | License | Open Source |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can upload/generate the agreement, add signers/observers and complete the signature process with storing signature proofs either in test or mainnet, which will show how the new functionality works. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Article | We will publish an **article** that explains how does DAOsign users can create agreements and store them in Polkadot test- or mainnet. It will be published in our Medium, Linkedin, Twitter and Discord channels. Apart of that, we will regularly publish grant development status on our social media. 
 | 1. | Smart Contracts | Agreement Contract |
 | 2. | Smart Contracts | EIP712 standard implementation on Ink! |
 | 3. | Smart Contracts | EIP2771 standard implementation on Ink! |
