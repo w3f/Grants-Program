@@ -35,6 +35,8 @@ interface Grant {
   level: number;
   paymentAddress: string;
   githubPRs: string[];
+  applicationLink: string;
+  applicationDoc: string;
   status: string;
   lastUpdated: Date;
   committeeApprovals: string[];
@@ -52,7 +54,12 @@ interface Milestone {
   FTE: number;
   costs: number;
   deliverables: Deliverable[];
+  codeRepos: string[];
   license: string;
+  githubPrs: string[];
+  deliveryLink: string;
+  deliveryDoc: string;
+  evaluations: Evaluation[];
 }
 
 interface Deliverable {
@@ -78,6 +85,12 @@ interface TeamMember {
   name: string;
   linkedin?: string;
   github?: string;
+}
+
+interface Evaluation {
+  author: string;
+  link: string;
+  doc: string;
 }
 ```
 
@@ -157,13 +170,13 @@ To get a feeling how the page will look like, I prepared this Hi Fi wireframe. K
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  0.5 FTE
-- **Total Costs:** 18,000 USD
+- **Total Costs:** 21,600 USD
 
 ### Milestone 1 — Development of API and Grant Frontend
 
 - **Estimated Duration:** 2 months
-- **FTE:**  0.5
-- **Costs:** 9,000 USD
+- **FTE:**  0.6
+- **Costs:** 10,800 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -182,8 +195,8 @@ To get a feeling how the page will look like, I prepared this Hi Fi wireframe. K
 ### Milestone 2 — Development of API and Grant Frontend
 
 - **Estimated Duration:** 2 months
-- **FTE:**  0.5
-- **Costs:** 9,000 USD
+- **FTE:**  0.6
+- **Costs:** 10,800 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
