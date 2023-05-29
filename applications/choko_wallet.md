@@ -114,7 +114,7 @@ Mostly described above in the Overview section.
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** $64,000
+- **Total Costs:** $36,000
 
 ### Milestone 1
 
@@ -133,22 +133,6 @@ Mostly described above in the Overview section.
 | 2. | A Sample DApp | A sample DApp created with `@choko-wallet/sdk` to test with common functionalities. |
 | 3. | SDK | For `@choko-wallet/known-networks` will include a few popular Polkadot chains, `@choko-wallet/request-handler` will implements handler for "request for user public identity", "request to sign transaction", "request to sign message", "request to decrypt/encrypt message" (Note: encryption/decryption won't be a solution yet, see discussion above for details). |
 
-### Milestone 2
-
-- **Estimated Duration:** 1.5 month
-- **FTE:**  4 FTE
-- **Costs:** 28,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a **live demo**. Documentation to SDK.|
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | A Dockerfile won't be much useful for a static web app. Therefore, we are not going to provide one for this milestone. |
-| 0e. | Article | We will publish two **article** that explains 1. Dapp developers, how to get started and why to get started with Choko Wallet 2. How to create LinkDrop and rational behind it. |
-| 1. | Reactjs WebApp | dashboard (display balance, send tokens), stake tokens on selected networks. An alternative dashboard to list assets across multiple parachains and relay chains. A built-in Dapp to teleport assets between parachains (i.e. Support for only DOT and KSM) |
-| 2. | Linkdrop Pallet | A substrate pallet that enable anyone to create a linkdrop vault with X number of Y maximum recepients. The developer will create a batch of Y authorization code by `encode( signMessage(vaultId, receipientIndex) )` and distribute the authorization code to seed users. The pallet will then accept a rate limited 0 weight transaction that validate the authorization code and make transfers. |
-| 3. | Linkdrop in Web App | Web App interface to create and claim LinkDrops |
 
 ## Future Plans
 
