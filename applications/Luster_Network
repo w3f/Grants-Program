@@ -29,13 +29,13 @@ supplying them to companies.
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
+- We teach Rust, Substrate. We are building platform using NodeJS, ReactJS, etc.
+- We have completed 5 cohorts on various technologies including Rust.
 - What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+  - We will cover education part and talent providing part for the Polkadot ecosystem
+  - We will cover 3 major cohorts this year by upskilling 300 students
+  - We will not conduct longer cohorts (duration: 1 month max)
+  - We will not add more than 5 free projects on Polkadot on Proof of Experience platform
 
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
@@ -47,57 +47,58 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
+- Polkadot ecosystem needs a good amount of trained developers to grow. Luster can play major role.
+- Developers and Businesses in Polkadot ecosystem
+- We supply trained Polkadot developers to Polkadot startups
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+  - Yes, but we train and supply them to startups. They just train for the sake of training
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Pradnyashil Gajbhiye & Tulasi More
+- Kajal Singh, Mohit Rakhade, Akshay Kurhekar, Shubham Gupta, Ashwin
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Pradnyashil Gajbhiye
+- **Contact Email:** lusterdotnetwork@gmail.com
+- **Website:** https://luster.network
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Bondegaon Hudki, Bramhapuri, Maharashtra, India - 441206
+- **Registered Legal Entity:** Vihasta Network Pvt Ltd
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+We have trained 1300+ students by conducting 5 Bootcamps, 33 workshops. They have built 100+ projects collectively. 
+We all are software engineers by profession. Kajal has 9 years of teaching experience and Mohit has 2 years of Blockchain experience.
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/LusterNetwork/Luster-main-site
+- Beta for Proof of experience platform is under development, so will make public after launch
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/gshubham804/gshubham804
+- https://github.com/akshaykurhekar/AkshayKurhekarPortfolio
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://www.linkedin.com/in/pradnyashil-gajbhiye/
+- https://www.linkedin.com/in/tulasi-m-92367418b/
+- https://www.linkedin.com/in/akshay-kurhekar-64438a168/
+- https://www.linkedin.com/in/kajal-singh-3527a742/
 
 
 ## Development Status :open_book:
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
+- I have already shared a github repo. Beta version is under development for product. We will make it public once it is developed.
 - links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
 - academic publications relevant to the problem,
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
@@ -109,20 +110,20 @@ If you've already started implementing your project or it is part of a larger re
 This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
 Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
+      
 > :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 6 months
+- **Full-Time Equivalent (FTE):**  6
+- **Total Costs:** $30,000
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Developer Portfolio, Decentralized Stack Overflow & 1 Cohort (100 students)
 
 - **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:** 6
+- **Costs:** 10,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
@@ -133,21 +134,51 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 1. | Decentralize Stack Overflow | X will help developers solve their bugs/errors while learning as there is no such dedicated platform |
+| 2. | 1 Cohort | We will train 100+ developers for Polkadot ecosystem and will supply them to companies |
+| 3. | Smart Contract | This smart contract is for making stack overflow decentralized |
+| 4. | Portfolio | Most useful developer portfolio to hunt jobs and hunt talent at the same time |
 
 
-### Milestone 2 Example — Additional features
+
+### Milestone 2 — Milestone Projects, NFT Certification & 2 Cohort
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:**  6
+- **Costs:** 10,000 USD
 
-...
+> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 1. | Milestone Projects | We will add 5 free projects for learning on Polkadot, Substrate |
+| 2. | 2 Cohort | We will train 100+ developers for Polkadot ecosystem and will supply them to companies |
+| 3. | NFT Smart Contracts | Learners will get NFTs for completing the project and will be added to portfolio |
+
+
+### Milestone 3 — Job Portal & 3 Cohort
+
+- **Estimated Duration:** 2 month
+- **FTE:**  6
+- **Costs:** 10,000 USD
+
+> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 1. | Job Portal | We will develop job portal for developers and businesses for talent hunting - developer panel, business panel and admin panel |
+| 2. | 3 Cohort | We will train 100+ developers for Polkadot ecosystem and will supply them to companies |
+
 
 
 ## Future Plans
@@ -155,7 +186,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+- We will use this project for onboarding 10,000+ developers and 500+ businesses by the end 2023
+- We will use this project for onboarding 1M+ developers and 10,000+ businesses by 2025 end by offering the best quality learning and talent hunting
 
 ## Referral Program (optional) :moneybag: 
 
@@ -165,7 +197,7 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Web3 Foundation Website 
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
