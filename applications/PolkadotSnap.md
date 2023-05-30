@@ -4,6 +4,7 @@
 * **Proposer:** @aaronisme
 * **Payment Address:** 3KL2HNETiLbLVbnGfpGZ6ZkyyaWUL6bfpt（BTC）
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1166#issuecomment-1567918173)
 
 ## Project Overview :page_facing_up:
 
