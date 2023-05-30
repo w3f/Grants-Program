@@ -327,6 +327,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
 - [ink!ubator](https://use.ink/ubator/)
 - [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
+- [KodaDot Ecosystem Grants](https://github.com/kodadot/grants)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
