@@ -19,7 +19,7 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 Please provide the following:
 
-- A proof of experience platform creating experienced Blockchain, Metaverse and Cyber Security engineers
+- Empowering Web3 Revolution at a scale
 - Luster network is a proof of experience platform training engineers in the field of Blockchain, Metaverse and Cyber Security and 
 supplying them to companies.
 - We will train live our developers to work on Polkadot ecosystem and will supply them to companies.
