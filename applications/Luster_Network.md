@@ -32,12 +32,11 @@ We expect the teams to already have a solid idea about your project's expected f
 - We are developing the platform using NodeJS, ReactJS, MongoDB
 - Visit MVP: https://poc.luster.network (Designs/Mockups)
 - We are building platform using NodeJS, ReactJS, MongoDB, etc.
-- We are exploring Blockchains for building our Proof of experience platform DApp.
+- We are exploring Polkadot ecosystem for building our Proof of experience platform DApp.
 - We teach Rust, Substrate, Solidity-Ethereum, Hyperledger, Metaverse, etc.
 - We have completed 5 cohorts and 33 workshops by training 1300+ students.
 - What your project is _not_ or will _not_ provide or implement
-  - We will cover education part and talent providing part for the Polkadot ecosystem
-  - We will cover 3 major cohorts this year by upskilling 300 students
+  - We will create education and talent providing solution on the Polkadot ecosystem
   - We will not conduct longer cohorts (duration: 1 month max)
   - We will not add more than 5 free projects on Polkadot on Proof of Experience platform
 
@@ -123,7 +122,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Full-Time Equivalent (FTE):**  6
 - **Total Costs:** $30,000
 
-### Milestone 1 — Developer Portfolio, Decentralized Stack Overflow & 1 Cohort (100 students)
+### Milestone 1 — Developer Portfolio & Decentralized Stack Overflow
 
 - **Estimated duration:** 1 month
 - **FTE:** 4,8
@@ -139,14 +138,13 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | 1. | Decentralize Stack Overflow | This will help developers solve their bugs/errors while learning as there is no such dedicated platform |
-| 2. | Cohort 1 | We will train 100+ developers for Polkadot ecosystem and will supply them to companies. We will conduct classes on Google Meet live. |
-| 3. | Smart Contract | This smart contract is for making stack overflow decentralized |
-| 4. | Portfolio | Most useful developer portfolio to hunt jobs and hunt talent at the same time |
-| 5. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Solidity, Polygon, etc. for Web3 development. |
+| 2. | Smart Contract | This smart contract is for making stack overflow decentralized |
+| 3. | Portfolio | Most useful developer portfolio to hunt jobs and hunt talent at the same time |
+| 4. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Ink, Rust, Polkadot, etc. for Web3 development. |
 
 
 
-### Milestone 2 — Milestone Projects, NFT Certification & 2 Cohort
+### Milestone 2 — Milestone Projects, NFT Certification
 
 - **Estimated Duration:** 1 month
 - **FTE:**  4,8
@@ -162,12 +160,11 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | 1. | Milestone Projects | We will add 5 free projects for learning on Polkadot, Substrate |
-| 2. | Cohort 1 | We will train 100+ developers for Polkadot ecosystem and will supply them to companies. We will conduct classes on Google Meet live. |
-| 3. | NFT Smart Contracts | Learners will get NFTs for completing the project and will be added to portfolio |
-| 4. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Solidity, Polygon, etc. for Web3 development. |
+| 2. | NFT Smart Contracts | Learners will get NFTs for completing the project and will be added to portfolio |
+| 3. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Ink, Rust, Polkadot, etc. for Web3 development. |
 
 
-### Milestone 3 — Job Portal & 3 Cohort
+### Milestone 3 — Job Portal (Developer Panel, Business Panel & Admin Panel)
 
 - **Estimated Duration:** 2 month
 - **FTE:**  4,8
@@ -183,8 +180,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | 1. | Job Portal | We will develop job portal for developers and businesses for talent hunting - developer panel, business panel and admin panel |
-| 2. | Cohort 3 | We will train 100+ developers for Polkadot ecosystem and will supply them to companies. We will conduct classes on Google Meet live. |
-| 3. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Solidity, Polygon, etc. for Web3 development. |
+| 2. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Ink, Rust, Polkadot, etc. for Web3 development. |
 
 
 ## Future Plans
