@@ -4,7 +4,7 @@
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-- **Team Name:** Legal name of your team (e.g. Duo)
+- **Team Name:** Luster Network
 - **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
@@ -29,8 +29,12 @@ supplying them to companies.
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-- We teach Rust, Substrate. We are building platform using NodeJS, ReactJS, etc.
-- We have completed 5 cohorts on various technologies including Rust.
+- We are developing the platform using NodeJS, ReactJS, MongoDB
+- Visit MVP: https://poc.luster.network (Designs/Mockups)
+- We are building platform using NodeJS, ReactJS, MongoDB, etc.
+- We are exploring Blockchains for building our Proof of experience platform DApp.
+- We teach Rust, Substrate, Solidity-Ethereum, Hyperledger, Metaverse, etc.
+- We have completed 5 cohorts and 33 workshops by training 1300+ students.
 - What your project is _not_ or will _not_ provide or implement
   - We will cover education part and talent providing part for the Polkadot ecosystem
   - We will cover 3 major cohorts this year by upskilling 300 students
@@ -122,7 +126,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 ### Milestone 1 — Developer Portfolio, Decentralized Stack Overflow & 1 Cohort (100 students)
 
 - **Estimated duration:** 1 month
-- **FTE:** 6
+- **FTE:** 4,8
 - **Costs:** 10,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
@@ -134,17 +138,18 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Decentralize Stack Overflow | X will help developers solve their bugs/errors while learning as there is no such dedicated platform |
-| 2. | 1 Cohort | We will train 100+ developers for Polkadot ecosystem and will supply them to companies |
+| 1. | Decentralize Stack Overflow | This will help developers solve their bugs/errors while learning as there is no such dedicated platform |
+| 2. | Cohort 1 | We will train 100+ developers for Polkadot ecosystem and will supply them to companies. We will conduct classes on Google Meet live. |
 | 3. | Smart Contract | This smart contract is for making stack overflow decentralized |
 | 4. | Portfolio | Most useful developer portfolio to hunt jobs and hunt talent at the same time |
+| 5. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Solidity, Polygon, etc. for Web3 development. |
 
 
 
 ### Milestone 2 — Milestone Projects, NFT Certification & 2 Cohort
 
 - **Estimated Duration:** 1 month
-- **FTE:**  6
+- **FTE:**  4,8
 - **Costs:** 10,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
@@ -157,14 +162,15 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | 1. | Milestone Projects | We will add 5 free projects for learning on Polkadot, Substrate |
-| 2. | 2 Cohort | We will train 100+ developers for Polkadot ecosystem and will supply them to companies |
+| 2. | Cohort 1 | We will train 100+ developers for Polkadot ecosystem and will supply them to companies. We will conduct classes on Google Meet live. |
 | 3. | NFT Smart Contracts | Learners will get NFTs for completing the project and will be added to portfolio |
+| 4. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Solidity, Polygon, etc. for Web3 development. |
 
 
 ### Milestone 3 — Job Portal & 3 Cohort
 
 - **Estimated Duration:** 2 month
-- **FTE:**  6
+- **FTE:**  4,8
 - **Costs:** 10,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
@@ -177,8 +183,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | 1. | Job Portal | We will develop job portal for developers and businesses for talent hunting - developer panel, business panel and admin panel |
-| 2. | 3 Cohort | We will train 100+ developers for Polkadot ecosystem and will supply them to companies |
-
+| 2. | Cohort 3 | We will train 100+ developers for Polkadot ecosystem and will supply them to companies. We will conduct classes on Google Meet live. |
+| 3. | Tech Stack | NodeJS, ReactJS, MongoDB for Web2 development. Solidity, Polygon, etc. for Web3 development. |
 
 
 ## Future Plans
