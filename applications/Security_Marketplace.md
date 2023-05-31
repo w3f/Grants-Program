@@ -109,11 +109,11 @@ shut for some unforseen reason.
 
 **WireFrames**
 
-![Login Page]( https://github-production-user-asset-6210df.s3.amazonaws.com/106224868/241973709-159cd665-1751-4b89-8ee7-1575c3dc0936 )
+![Login Page]( https://github.com/viswatejay/RFP/assets/106224868/38a52e06-cdf9-4090-8c67-afe8796638ba )
 
 ---
 
-![SignUp Page]( https://github-production-user-asset-6210df.s3.amazonaws.com/106224868/241973745-820530e5-0976-49b2-8351-efb86314a21c )
+![SignUp Page]( https://github.com/viswatejay/RFP/assets/106224868/820530e5-0976-49b2-8351-efb86314a21c )
 
 ---
 
@@ -121,27 +121,27 @@ shut for some unforseen reason.
 
 ---
 
-![ Dashboard Page ]( https://github.com/viswatejay/RFP/assets/106224868/d1692626-0d1d-412c-9c89-81ccdbcd1a27 )
+![ Dashboard Page ]( https://github.com/viswatejay/RFP/assets/106224868/40cf5cb4-5d6e-4573-9223-851f82ab40a5 )
 
 ---
 
-![ Detail Page ]( https://github.com/viswatejay/RFP/assets/106224868/97f9006d-bd76-41a1-89ee-e4fd658bd25f )
+![ Detail Page ]( https://github.com/viswatejay/RFP/assets/106224868/8845baea-fc9c-480a-93d7-7692c9c59020 )
 
 ---
 
-![ Profile Page ]( https://github.com/viswatejay/RFP/assets/106224868/50450e30-6c6c-41c3-a9bc-9b0f7cf0a838 )
+![ Profile Page ]( https://github.com/viswatejay/RFP/assets/106224868/92b8b522-41b4-4ac9-9485-39f493056eea )
 
 ---
 
-![ Profile-MyAudits Page]( https://github.com/viswatejay/RFP/assets/106224868/7508a870-fe4b-4737-a7b6-c2fe3f3d74c9 )
+![ Profile-MyAudits Page]( https://github.com/viswatejay/RFP/assets/106224868/48c2b803-a68b-4613-9344-850d668f0ca4 )
 
 ---
 
-![ Profile-PendingAudits Page]( https://github.com/viswatejay/RFP/assets/106224868/532ffb47-a03d-4a0d-b954-5ae4fb54b3be )
+![ Profile-PendingAudits Page]( https://github.com/viswatejay/RFP/assets/106224868/853c43b2-f3e9-4c30-91b8-6da00650c6ba )
 
 ---
 
-![ Create Post Page ]( https://github.com/viswatejay/RFP/assets/106224868/132f3a36-d2d9-4bd7-a027-c2201c5843f0 )
+![ Create Post Page ]( https://github.com/viswatejay/RFP/assets/106224868/44caf541-f311-41e3-b415-e009bcdbe37c )
 
 ### Ecosystem Fit
 
