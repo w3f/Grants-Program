@@ -63,6 +63,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Gloslab](https://github.com/smiasojed)                         | [Contracts performance measurement tool proposal](contracts-tool.md)                                                   | [GitHub](https://github.com/smiasojed)                              | ☐          |        ☐       |      ☐      |
 | [Nikita Orlov PR](https://github.com/stringnick)                         | [Faucet chat based bot](faucet-bot.md)                                                   | [GitHub](https://github.com/stringnick)                              | ☐          |        ☐       |      ☐      |
 | [Societal Labs Ltd.](https://www.sctl.xyz/)                         | [Societal Saas Pricing](societal_saas_pricing.md)                                                   | [GitHub](https://github.com/sctllabs)                              | ☐          |        ☐       |      ☐      |
+| [MASTER UNION LLC.](https://github.com/TheDotflow)                         | [Dotflow](Dotflow.md)                                                   | [GitHub](https://github.com/TheDotflow)                              | ☐          |        ☐       |      ☐      |
 
 [🔝](#menu)
 
