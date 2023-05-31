@@ -78,7 +78,6 @@ We current have not found any similar projects in this or other related ecosyste
 - Vincent Kwasi Ogol
 - Dennis Mutua
 - Alvin Mugambi
-- Arnold Gichunge
 - Kenn Nyabuga
 
 ### Contact
@@ -126,12 +125,12 @@ https://github.com/skeezer-org/
 ### Overview
 
 - **Total Estimated Duration:** 6 weeks
-- **Full-Time Equivalent (FTE):**  5-6 FTE
+- **Full-Time Equivalent (FTE):**  4-5 FTE
 - **Total Costs:** 25,000 USD
 
 ### Milestone 1 - Initialization and Smart Contracts' Development
 
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 3 weeks
 - **FTE:**  4-5 FTE
 - **Costs:** 15,000 USD
 
@@ -144,15 +143,15 @@ https://github.com/skeezer-org/
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Research & Data Collection | Reports and analysis from conversations, survey, and data analysis  with mental health professionals & community members on preferred implementation & participation on such a network in addition to work currently done. These will in in `pdf` , `mp3` and/or video format. - Some of these participants will form `tier_1` voters on the network |
-| 2. | token_smart_contract | Smart contract with a staggered governance model with two tiers of voters. `tier_1` voters incl. mental health professionals, experienced listeners, admin, and people in this category. `tier_2` voters incl. users, newer listeners & the general community. Proposals have to go through both tiers to get accepted. This format will affect normal Proposals, Reward Allocation proposals, Tier Promotion proposals, Conflict Resolution proposals & Org. Structure Change proposals|
-| 3. | Test Suite 1 | Test suite for the fungible token smart contract and it's governance functionality: to include unit and integration scripts covering; event emission, state changes & inter-contract messaging (mainly calling `data_management_smart_contract` functions). These scripts can be reused in case of deploying a similar network or extending functionality|
-| 4. | data_management_smart_contract | Development of Skeezer network management smart contract to extend functionality that cannot be stored on `fungible_token_sc` . This to keep records, ratios and processes in the various categories of proposals|
-| 5. | Test Suite 2 | Test suite for `data_management_smart_contract`: to include unit and integration scripts covering; data storage and retrieval, cross-contract calling & user-acceptance tests. These scripts can be reused in case of deploying a similar tier based data management smart contract  |
+| 2. | token_smart_contract | Smart contract with a staggered governance model with two tiers of voters. `tier_1` voters incl. mental health professionals, experienced listeners, admin, and people in this category. `tier_2` voters incl. users, newer listeners & the general community. Proposals have to go through both tiers to get accepted. This format will affect normal Proposals, Reward Allocation proposals, Tier Promotion proposals, Conflict Resolution proposals & Org. Structure Change proposals: **Tech Stack:** Substrate + Rust, !ink|
+| 3. | Test Suite 1 | Test suite for the fungible token smart contract and it's governance functionality: to include unit and integration scripts covering; event emission, state changes & inter-contract messaging (mainly calling `data_management_smart_contract` functions). These scripts can be reused in case of deploying a similar network or extending functionality **Tech Stack:**  Rust, !ink, Python|
+| 4. | data_management_smart_contract | Development of Skeezer network management smart contract to extend functionality that cannot be stored on `fungible_token_sc` . This to keep records, ratios and processes in the various categories of proposals. **Tech Stack:**   Substrate + Rust, !ink|
+| 5. | Test Suite 2 | Test suite for `data_management_smart_contract`: to include unit and integration scripts covering; data storage and retrieval, cross-contract calling & user-acceptance tests. These scripts can be reused in case of deploying a similar tier based data management smart contract.**Tech Stack:**  Rust, !ink, Python  |
 
 
 ### Milestone 2 - Frontend, APIs, and Interoperability 
 
-- **Estimated Duration:** 4 weeks
+- **Estimated Duration:** 3 weeks
 - **FTE:**  4-5 FTE
 - **Costs:** 10,000 USD
 
@@ -162,8 +161,8 @@ https://github.com/skeezer-org/
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Frontend Portal | User friendly Portal where users can log in and view network activities incl. active proposals, disputes, boards, rated professionals, etc. Mockups can be found [here](https://www.figma.com/file/5oCWPYRdh4cSNcDSWLfNas/Skeezer-Blockchain-Network---Dashboard?type=design&node-id=0:1&t=kPGZdkn282t1kz3J-1) |
-| 2. | API development | Providing a developer friendly APIs to fetch data on the network as well as plugin to other blockchains |
+| 1. | Frontend Portal | User friendly Portal where users can log in and view network activities incl. active proposals, disputes, boards, rated professionals, etc. Mockups can be found [here](https://www.figma.com/file/5oCWPYRdh4cSNcDSWLfNas/Skeezer-Blockchain-Network---Dashboard?type=design&node-id=0:1&t=kPGZdkn282t1kz3J-1). **Tech Stack:**  React, Figma, Javascript|
+| 2. | API development | Providing a developer friendly APIs to fetch data on the network as well as plugin to other blockchains. **Tech Stack:**  Python, Django, Django Rest Framework, JWT, PostgreSQL|
 | 3. | Docs and Explainers | Published written and video documentation of how it all works|
 
 
