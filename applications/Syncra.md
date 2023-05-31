@@ -201,7 +201,7 @@ Smart Contracts: https://github.com/SyncraDAO/modular-dao
 
 Backend: https://github.com/SyncraDAO/Liberum-Backend
 
-All developments within the Polkadot Grants Program will be open-sourced from day one on GitHub.
+All developments within the Web3 Foundation Grants Program will be open-sourced from day one on GitHub.
 ### Team GitHub Profiles
 
 - Przemysław Paczoski: https://github.com/Kodziak
