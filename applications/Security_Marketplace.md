@@ -19,8 +19,6 @@ Our platform is also envisioned to feature a reputation system that allows audit
 
 ### Project Details
 
-Technical Proposal:
-
 **Technical Diagram**
 
 ![Technical Architecture](https://github-production-user-asset-6210df.s3.amazonaws.com/106224868/241970938-b0e0fda7-83bb-4001-97e2-66546db2eeb5.png)
@@ -37,7 +35,6 @@ Technical Proposal:
     carefully considering the market situation.
 
 Here is an envisioned lifecycle of a project on our platform.
-
 
 1. Users will begin their journey on our platform by registering on our sign-up page.
 2. Users can then proceed to our login page and then the dashboard after completing the validation process there.
@@ -254,7 +251,7 @@ Awaiting Response.
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1 | UI/UX | We will deliver complete UI/UX designs. |
 | 2 | Smart Contract| We will also deliver the !ink smart contracts designed to serve as escrow for our platform.  |
-| 3 | Node Services | WE will deliver the backend services for login , sign up and 2FA. |
+| 3 | Node Services | We will deliver the backend services for login , sign up and 2FA. |
 
 
 ### Milestone 2 Example — Application & Deliveries
@@ -269,7 +266,9 @@ Awaiting Response.
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1 | Front End | We will deliver the completely intigerated and working product. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 1 | Node Services | We will deliver the remaining back end services including Profile creation, Post creation and Bidding system. |
+| 2 | Front End | We will deliver the completely intigerated and working product. |
 
 
 
