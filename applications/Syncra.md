@@ -2,7 +2,7 @@
 
 - **Team Name:** Syncra
 - **Payment Address:** 15Geo1RfLLM1PmPsD4uggts1Ht5LrWUChBDruLPqt5EgFKPB (PolkaDOT - USDT)
-- **Level:** 3
+- **Level:** 2
 
 ## Project Overview
 
@@ -84,29 +84,29 @@ DAOs and Proposals titles, and descriptions are stored on the IPFS, and then cor
 
 ## Project Details
 
-In the scope of this grant, several core part will be implemented, as the extension of the pre-grant MVP product, built under AlephZero grant.
+In the scope of this grant, several core parts will be implemented, as the extension of the pre-grant MVP product, built under AlephZero grant.
 
 ### MVP (Pre-Grant)
 
-The MVP of the Syncra Platform, that we are going to start with will consist following parts:
+The MVP of the Syncra Platform, that we are going to start with, will consist the following parts:
 
 1. Frontend Application with the connection to Wallet, Smart Contracts, and Backend
 2. Set of Smart Contracts based on PSP22 voting strategy
-3. Backend for storing off-chain data, such as DAO and proposal additional info, for minimizing storage footprint on-chain
-4. Complete workflow allowing users to create DAO, manage it, as well as create proposal and vote directly from the web application
-5. Proof of Concept for Private voting, using AlephZero's Liminal Shielder - This one will require to start up local custom AlephZero node, with ZK Verifier pallet implemented, as currently this functionally is not available on any AlephZero live chain
+3. Backend for storing off-chain data, such as DAO and proposal's additional info stored on IPFS. It's done for the purpose of minimizing storage footprint on-chain
+4. Complete workflow of DAO creation, that allows users to create DAO, manage it, as well as create proposal and vote directly from the web application
+5. Proof of Concept for Private voting, using AlephZero's Liminal Shielder - This one will require to start up a local custom AlephZero node, with ZK Verifier pallet implemented, as currently this functionally is not available on any AlephZero live chain
 
 ### Scope of W3F Grant
 
-Based on the MVP described above, our team will deliver several extensions that make our solution more universal, accessible, and possibly transferable to other Polkadot based chains, that implement Contract pallet.
+Based on the MVP described above, our team will deliver several extensions that will make our solution more universal, accessible, and possibly transferable to other Polkadot based chains, that implement Contract pallet.
 
 * **OpenZeppelins’ like Governance Standards**
     We will refactor the Smart Contracts code for creating DAOs and voting strategies, improve them, make more universal, and customizable so that they can be easily implemented. Additionally, we will prepare a documentation of each part, so that custom DAO contracts can be easily build from the ready puzzles. OpenZeppelins standards are the inspiration for this part, as there isn't any similar standard on Polkadot ecosystem yet.
 * **On-chain Automation System Template**
-    Smart contracts, even though considered as autonomous, require a manual trigger from the user to execute certain functions. In ecosystems such as DAO, automatic execution of the proposals is something that is still missing. For this part we will create a template tool, that will work as off-chain worker for scheduling Smart Contracts calls. It will work as a simple application, with the Scheduler implement and some relayer accounts, that contain tokens for covering the gas costs. Scheduling certain actions, like for example mentioned above - executing proposal once they reach the deadline, will be possible by simply setting the call on the Smart Contract. The off-chain relayer, will read the state from the given smart contract, and schedule the given Smart Contract call.
+    Smart contracts, even though considered autonomous, require a manual trigger from the user to execute certain functions. In ecosystems such as DAO, automatic execution of the proposals is something that is still missing. For this part we will create a template tool, that will work as off-chain worker for scheduling Smart Contracts calls. It will work as a simple application, with the Scheduler, and some relayer accounts, that contain tokens for covering gas costs. Scheduling certain actions, like for example mentioned above - executing proposal once they reach the deadline, will be possible by simply setting the call on the Smart Contract. The off-chain relayer, will read the state from the given smart contract, and then schedule the Smart Contract call.
 
 * **SDK**
-    Our platform Syncra, is just one of the examples of how our infrastructure can be used, that is why we will create a set of ready solutions, so that a new platform (ex. frontend, mobile app, etc.) can be build upon the pillars created by Syncra. In this part, a bundle for NPM and Yarn will be created, wrapping all core functionalities of Syncra. Developer will be able to simply install the SDK library in their project, setup the endpoints, and API KEYs for accessing our backend services, and then simply call given functions inside of their custom application.
+    Our platform Syncra, is just one of the examples of how our infrastructure can be used, that is why we will create a set of ready solutions, so that a new platform (ex. frontend, mobile app, etc.) can be build, upon the pillars created by Syncra. In this part, a bundle for NPM and Yarn will be created, wrapping all core functionalities of Syncra. Developer will be able to simply install the SDK library in their project, setup the endpoints, and API KEYs for accessing our backend services, and then simply call given functions inside of their custom application.
 
 * **SDK Documentation**
 
@@ -117,27 +117,27 @@ Based on the MVP described above, our team will deliver several extensions that 
 Each of the core elements will be developed with certain set of technologies, and programming languages.
 
 1. **Smart Contracts as Governance Standards**
-    Written in Rust with the use of [ink!](https://github.com/paritytech/ink) framework and [OpenBrush](https://github.com/727-Ventures/openbrush-contracts) library for PSP22 standard of tokens, as well as additional helper functions, such as modifier for checking the roles. The documentation will be developed using [Docusaurus](https://docusaurus.io/) framework for Documentation, that leverages JavaScript and TypeScript.
+    Written in Rust with the use of [ink!](https://github.com/paritytech/ink) framework and [OpenBrush](https://github.com/727-Ventures/openbrush-contracts) library for PSP22 standard of tokens, as well as additional helper functions, such as modifier for checking the roles. The documentation will be developed using [Docusaurus](https://docusaurus.io/) framework, that leverages JavaScript and TypeScript.
 2. **On-chain Automation System Template**
-    Main technology stack here will be TypeScript, and Express for creating a server that can be deployed and hosted on most of the available hosting services. The reason behind this is also the ease of implementation, and availability of various libraries and technologies that can be added. This service won't receive many calls, rather act as a relayer that reads data on-chain, and then submits data/ send calls to Smart Contracts on-chain, without further need for external calls. As a core tool for creating calls to Smart Contracts, we will leverage [Polkadot.js Contracts API](https://polkadot.js.org/docs/api-contract).
+    Main technology stack here will be TypeScript, and Node.js Express for creating a server that can be deployed and hosted on most of the available hosting services. The reason behind this is the ease of implementation, and the availability of various libraries and technologies that can be added on top of it. This service won't receive many calls, rather act as a relayer that reads data on-chain, and then submits data/send calls to Smart Contracts on-chain, without further need for external calls. As a core tool for creating calls to Smart Contracts, we will leverage [Polkadot.js Contracts API](https://polkadot.js.org/docs/api-contract).
 3. **SDK**
-    JavaScript and TypeScript will be fundamental programming languages for this part, and [NPM](npmjs.com) for publishing the package itself. The SDK will be basically a wrapper of the certain functions that call Smart Contracts, and Backend. It will require the developer to add configuration, such as API Key to access our backend, Smart Contract Factory address, as well as the ABI files, that will serve as instruction for calling each Smart Contract. We are not going to hardcode those in the SDK, as in the future possibly the platform may be deployed on different chains in the Polkadot ecosystem, as well as the Smart Contracts can be upgraded, or created with different set of rules and methods.
+    JavaScript and TypeScript will be fundamental programming languages of this part, while [NPM](npmjs.com) registry will be used for publishing the package itself. The SDK will be basically a wrapper of the certain functions that call Smart Contracts, and Backend. It will require the developer to add configuration, such as API Key to access our backend, Smart Contract Factory address, as well as the ABI files, that will serve as an instruction for calling each Smart Contract. We are not going to hardcode those in the SDK, as in the future, the platform may be deployed on different chains in the Polkadot ecosystem. Moreover, the Smart Contracts can be upgraded, or created with different set of rules and methods.
 4. **SDK Documentation**
     The entire documentation for implementing SDK in the given project, will be built using [Docusaurus](https://docusaurus.io/) that leverages JavaScript and TypeScript.
 
 #### Hosting and Infrastructure
 
-All of the code will be open-sourced and available under our organizational repositories address.
+All of the code will be open-source, and available under our organizational repositories address
 
 [Syncra Repositories](https://github.com/orgs/SyncraDAO/repositories)
 
-Frontend application from the MVP part will be available under the address below.
+Frontend application from the MVP part will be available under the address below
 
 [syncra.xyz](https://syncra.xyz/)
 
 Example demo of on-chain automation service is going to be hosted most probably on the [Railway](https://railway.app/) service, and it will connect with one of the instances of Data Base, hosted on the [Atlas MongoDB](https://www.mongodb.com/atlas/database) service. The files stored on IPFS will leverage [Web3 Storage](https://web3.storage/) services.
 
-SDK bundle on the other hand, will be published on the [official npmjs registry](npmjs.com).
+SDK bundle on the other hand, will be published on the [official npmjs registry](npmjs.com)
 
 Documentation will published on the [GH Pages](https://pages.github.com/)
 
@@ -145,11 +145,11 @@ Documentation will published on the [GH Pages](https://pages.github.com/)
 
 There are several known risk that we are aware of, and will try our best to find solutions to prevent those scenarios from happening. Nevertheless, it is worth noticing those potential fields, which could have been improved for better safety.
 
-* Storing Account Private Keys for Off-Chain Automation Relayer - since for writing we need an actual on-chain Address, the seeds for those accounts have to stored somewhere, so that no human interaction is needed to create a signature. In our solution, we have no other option then just store those keys on one of the Cloud services. In such scenarios, there is always a risk for a hacker attack, that could compromise the access to the account, and with it the access to the fund stored for covering gas fees.
+* Storing Account Private Keys for Off-Chain Automation Relayer - since for sending transactions to the Smart Contracts, we need an actual on-chain Address, the seeds for that account, has to be stored somewhere on the Cloud. In this way, no human interaction is needed to create a signature. In our solution, we have no other option then just store those keys on one of the Cloud services. In such scenarios, there is always a risk of a data breach, that could compromise the access to the account, with the access to the funds stored for covering gas fees on it.
 
 * Smart Contracts Security Hole - we expect our Smart Contracts to be initially audited by [Kudelski Security](https://kudelskisecurity.com/) as a part of AlephZero grant. However, there is still a risk that something will not be caught during the audit, and we will also extend those Smart Contracts during this Project as for the purpose of creating OpenZeppelins like standards. During the development, some additional security issues may occur.
 
-* Off-Chain Automation Relayer Operational Failure - Automation relayer work as a centralized service for executing the calls, if for some reasons it will stop operating, the scheduled action may not executed. For that reason, we are considering deploying several instances of this services on multiple services, with multiple accounts. In this way we should minimize the risk of the scheduled action, not being executed due to the relayer's operational failure.
+* Off-Chain Automation Relayer Operational Failure - Automation relayer work as a centralized service for executing the calls, if for some reason, it will stop operating, the scheduled action may not be executed. For that reason, we are considering deploying several instances of this relayer, on multiple services, with multiple accounts. In this way we should minimize the risk of the scheduled action, not being executed due to the relayer's operational failure.
 
 ## Ecosystem Fit
 
@@ -243,8 +243,8 @@ We are currently focusing on legalising the entity, marketing, pitch decks, whit
 | 0b. | Documentation | A clear overview of the software's architecture and components, as well as its main functions and capabilities. Technical details, including programming language, technologies, frameworks, libraries, and services. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an article that introduces to the solution with all the guidelines included. |
-| 1. | DAO Smart Contracts (OpenZeppelins’ like) Governance Standards | Smart Contracts will be refactored and prepared in a modular, customizable way so that anyone can build a new Governance Smart Contract, based on our infrastructure. Both Smart Contracts written in ink! with OpenBrush will be provided, as well as the documentation explaining each part, with the tutorial of creating new custom Governance Smart Contract. |
-| 2. | On-chain Automation Tool | Source code as a Template with the Scheduler, and Smart Contracts caller will be provided. Moreover, as an example at least one instance of such a relayer will be deployed, and ready to test. |
+| 1. | DAO Smart Contracts (OpenZeppelins’ like) Governance Standards | Smart Contracts will be refactored and prepared in a modular, customizable way so that anyone can build a new Governance Smart Contract, based on our infrastructure. Both Smart Contracts written in ink! with OpenBrush will be provided, as well as the documentation explaining each part, with the tutorial of creating a new custom Governance Smart Contract. |
+| 2. | On-chain Automation Tool | Source code as a Template with the Scheduler, and Smart Contracts caller will be provided. Moreover, as an example at least one instance of such a relayer will be deployed, and prepared for testing. |
 
 ### Milestone 2
 
@@ -258,7 +258,7 @@ We are currently focusing on legalising the entity, marketing, pitch decks, whit
 | 0b. | Documentation | A clear overview of the software's architecture and components, as well as its main functions and capabilities. Technical details, including programming language, technologies, frameworks, libraries, and services. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an article that introduces to the solution with all the guidelines included. |
-| 1. | SDK | NPM package with ready wrapped function for creating custom GUI for the DAO platform based on Syncra will be provided. The package will be also published on the NPM service. It will cover the workflow of connecting with our services, and creating the whole workflow from creating the DAO, to adding proposals, and voting on them. |
+| 1. | SDK | NPM package with ready wrapped functions, for creating custom GUI for the DAO platform based on Syncra will be provided. The package will be also published on the NPM registry. It will cover the workflow of connecting with our services, and creating the whole workflow, from creating the DAO, to adding proposals, and voting on them. |
 | 2. | SDK Documentation | Clear overview, instructions, and explanation of each SDK's part will be documented in the documentation that will be available publicly for everyone. |
 
 ## Future Plans
