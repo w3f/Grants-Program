@@ -15,11 +15,16 @@ Our envisioned platform will be a hybrid model that combines smart contract func
 
 The proposed platform will be designed to provide an incentivized system that rewards auditors for submitting comprehensive audit reports on schedule while also punishing those who fail to do so.
 
-Our platform is also envisioned to feature a reputation system that allows auditors to build and maintain their reputations based on their past auditing records. The reputation system will act as a measure of trustworthiness for auditors while facilitating the project creators in the selection process of the right auditors for their projects.Moreover, users who have earned enough reputation will be entitled to the Arbiter role, which allows them to vote in support or against a submitted audit based on whether it meets all of the scope requirements as outlined in the project description for a share of validation fees.
+Our platform is also envisioned to feature a reputation system that allows auditors to build and maintain their reputations based on their past auditing records. The reputation system will act as a measure of trustworthiness for auditors while facilitating the project creators in the selection process of the right auditors for their projects. Moreover, users who have earned enough reputation will be entitled to the Arbiter role, which allows them to vote in support of or against a submitted audit based on whether it meets all of the scope requirements as outlined in the project description for a share of validation fees.
 
 ### Project Details
 
 Technical Proposal:
+
+**Technical Diagram**
+
+![Technical Architecture](https://github-production-user-asset-6210df.s3.amazonaws.com/106224868/241970938-b0e0fda7-83bb-4001-97e2-66546db2eeb5.png)
+
 
 **Pre Script:**
 
@@ -27,151 +32,68 @@ Technical Proposal:
     project, but instead, a basic outline to depict the thinking
     process involved in the proposal.
 
-2)  The mathematical figures mentioned below (Such as platform fees,
-    deadline before the expiration of an accepted offer, Percentage
-    deduction on delayed submission, and more ) are by no means final
-    and will be concluded once the design phase is underway after
-    carefully considering the market situations.
+2)  The mathematical figures are by no means final
+    and will be concluded once the production is underway after
+    carefully considering the market situation.
 
 Here is an envisioned lifecycle of a project on our platform.
 
-1)  An interested party registers on our platform and creates a project,
-    a project in the current context refers to creating a post. A post
-    will comprise of:
 
-    a.  Project Status(Active, Pending, Retrieved, Completed, awaiting
-	validation, or expired, Will be Active by default).
+1. Users will begin their journey on our platform by registering on our sign-up page.
+2. Users can then proceed to our login page and then the dashboard after completing the validation process there.
+3. Users can be broadly classified as :
+   Patrons: Users, generally the owners of big platforms that wish to avail of the auditing services.
+   Auditors: Users that are willing to offer their auditing services on the platform.
+   Arbiters: Trusted community members that will review the auditor’s work and verify the auditor’s claim for rewards.
+4. The dashboard can be used to access all the available Projects offered by patrons on the platform, the user from there can create a post
+   for their project, bid for already existing projects, or switch to the arbiter's dashboard if authorized.
+5. The patron can create a post which will entail:
+   A) Project Status: Whether the project is active, pending, retrieved, completed, awaiting validation, or expired. Will be active by default on creation.
+   B) Type of Audit: Whether it includes Smart Contract Audit or penetration testing or Performance testing. Patrons can choose multiple tags. This will help
+   auditors in sorting through the projects to find the project they wish to assess for auditing.
+   C) Project description: A description of the working of a project by owners/developers to aid auditors, can consist of document links.
+   D) Github link to the Project.
+   E) Offered Amount: The maximum amount offered for a successful audit, value in terms of stablecoins/USD pegged tokens.
+   F) Audit Expectations: Any expectations the project developers/owners might have from the auditors such as including suggestions, checking test coverage/quality,
+   expected deadline, and scope of the audit. Arbiters will evaluate the auditor’s work on its basis.
+6. The Patron will have to add the promised amount to the escrow contract at the very time of posting.
+7. To elaborate on project status, The initial status of any project that will be posted will be active by default and hence, will be open to offers from auditors on the platform.
+   Retrieved would mean that the project was retrieved by the project’s patrons, the status of a project can only be turned to retrieved if it's in active status, and the option of retrieving will be made unavailable in any other status.
+   Pending would mean that an auditor has been commissioned and that the audit is underway.
+   Awaiting Validation would mean, the submitted auditing report is currently being scrutinized by Arbiters to ascertain it meets the pre-defined scope.
+   If for some reason an offer is not met even after two weeks of the expected deadline, the project will be marked expired.
 
-    b.  Type of Project (DEx, NFT Marketplace, ERC20, others, etc. This
-    	will be particularly helpful for auditors to filter through to
-    	the type of smart contracts they wish to work with).
+   ![Project Lifecycle](https://github-production-user-asset-6210df.s3.amazonaws.com/106224868/241969866-5024f3da-94a2-4efc-a436-963c70249fc6.png)
 
-    c.  Project Description(A description of the working of a project by
-    	owners/Developers to aid auditors, can consist of document
-     	links).
+8. An auditor can bid on projects they want to audit. A bid includes a proposed deadline they can complete the project in and an amount they wish to get in exchange for the project.
+   Auditors, just like any user can view all the posts and decide which one they wish to make a bid on. They can filter through the list of projects for a particular range of amounts, or for a specific Audit type.
+9. At a time, a new Auditor can only work on 1 active project. This means that a new user can make multiple bids (Limited to 5 at a time) but once one of them is accepted, his other bids will be retrieved and he cannot bid on other projects until he finishes the active audit.
+10. As the auditor matures on the platform, Their active audit limit will be increased by 1 for every 3rd successful audit they deliver although this will be capped at 7. So an auditor can
+    never have more than 7 simultaneously active audits ongoing at a time.
+11. The Bids made by auditors will be publicly visible and patrons can decide on whom they wish to delegate the job to based on their offers and their profiles.
+12. The user profiles will be stored off-chain in a central database allowing users to edit them as they please and keep their feats and experiences updated. This will include a unique username, a bio where they can mention their previous experiences with auditing, links to their socials, and sample audit reports. An optional KYC can be done to verify identity.
+    This feature will be particularly important for auditors to eliminate identity theft and impersonation threats to reputable security companies and/or well-known individual auditors. Hence helping project creators while deciding on which offer to accept.
+13. Once the project’s patron accepts one of the listed bids, the project is marked pending, and the selected auditor is notified on their profile and their email address about the start of the auditing process.
+    Patron can not withdraw the amount at this stage. The auditor will be given a buffer of 12 hours to accept the job assuming that he has taken that much time to check the mail or website notification.
+14. The auditor commissioned with the project will then have till the proposed deadline to submit a successful audit. They can upload the audit in pdf format to the platform. There will be a penalty
+    for late submission of the audit which will be a certain amount of the decided amount for submission later than the deadline to 1 week and an increased penalty for the second week. After two weeks
+    the project’s status will automatically be turned to expired, The commissioned auditor will be given a negative point, and the project’s patron will be refunded the whole amount.
+15. The submitted Audit report will then be sent to the patron which he can accept, in which case after subtraction of the platform fee, the promised amount will be sent to the auditor.
+16. In case, the patron isn’t satisfied with the audit report, the dispute will then be handled by randomly selected active arbiters who will vote for or against the audit report by judging it against
+    the expectations of the patron specified at the start of the audit.
+17. In case, the submitted project is downvoted by 5 arbiters for the first time, a deadline extension of 1 day will be granted to the auditor at no penalty (for any altercations that can be quickly
+    made to the report), a 6-day extension will be granted the second time around at certain percentage of penalty (for major scope misses). If the audit report is downvoted for the third time, the
+    project status will be marked as expired, and the project creators can retrieve the whole staked amount. The auditor commissioned will be given a negative review on-chain.
+18. If 5 of the arbiters are satisfied with the audit report, then the patron will have no option but to accept the report and the promised amount will be transacted to the auditor after subtracting
+    the platform fee and
+19. The auditors will get platform Points along their profile based on their actions, for every:
+    1 successful audit completion: 1XP point (Increases with more and more audits)
+    1 unsuccessful audit: -3XP points (Adds up)
+20. The point system is designed to help patrons identify reputable members of the community as well as alert them of newcomers and bad elements. Once a user hits a -6XP rating, he cannot bid anymore
+    on the platform.
+21. The proposed platform will charge a certain amount as a platform fee and the arbiter’s commission, the remaining funds will be transferred to the auditor’s wallet address connected to their profile.
 
-    d.  Github link to the smart contracts. (Self-explanatory)
 
-    e.  Offered amount ( the max amount offered for successful audit,
-    	value in terms of Stablecoins/ USD pegged coins ).
-
-    f.  Audit Expectations (Any expectations the project owners might
-      	have from the auditors such as including suggestions, Checking
-      	test cases coverage/quality, expected deadline, and scope of
-     	the audit)
-
-2)  To elaborate on project status, The initial status of any project
-    that will be posted will be active by default and hence, will be
-    open to offers from auditors on the platform. Retrieved would mean
-    that the project was retrieved by the project owners, the status
-    of a project can only be turned to retrieved if it's in active
-    status, and the option of retrieving will be made unavailable in
-    any other status. Pending would mean that an auditor has been
-    commissioned and that the audit is underway. Awaiting Validation
-    would mean, the submitted auditing report is currently being
-    scrutinized by Arbiters to ascertain it meets the pre-defined
-    scope. If for some reason an offer is not met even after two weeks
-    of the expected deadline, the project will be marked expired.
-
-3)  Upon successful submission of a project, The specified Offered
-    amount will be locked in the escrow contract, Project owners can
-    pay in pre-determined stablecoins through Metamask or
-    WalletConnect. Project creators can withdraw all their amounts by
-    turning the project status to retrieved as long as no offer has
-    been accepted by them, it will not be possible in later stages.
-
-4)  Auditors on our platform will see the post in the list of Active
-    Projects and can show their willingness to audit the project by
-    submitting a corresponding offer, An auditor can initially make an
-    offer to only 1 project, this limit, however, will be incremented
-    by 1 after every 3 successful audits completed, The maximum limit
-    will be 5. The offer will comprise of following components:
-
-    a.  Proposed Deadline.
-
-    b.  The proposed cost for audit (can not exceed the maximum amount
-      	offered by Project creators)
-
-5)  The Offers made will be publicly visible to everyone and the project
-    creators can decide upon whom they wish to delegate the job to
-    based on their offers and their profiles.
-
-6)  The user profiles will be stored off-chain allowing users to edit
-    them as they please and keep their feats updated. This will
-    include a unique username, a bio where they can mention their
-    previous experiences with auditing, links to their socials and
-    links to their sample audit reports, and an optional KYC to verify
-    their identity. This feature will be particularly important for
-    auditors as it will eliminate identity theft and impersonation
-    threats to reputable security companies and/or well-known
-    individual auditors. Hence helping project creators while deciding
-    on which offer to accept.
-
-7)  Once Project owners accept one of the listed offers, The project is
-    marked Pending, and the selected auditor is notified on their
-    profile as well as through an email to make sure they are aware of
-    their progress. There will also be an 'Accept Job' link in the
-    attached email leading to their platform profile where they can
-    click on the button to officially accept the commission and begin
-    the timer for the requested audit. The Auditor will have 24 hrs to
-    accept the commission before it expires.
-
-8)  The auditors will also have the option to request project creators
-    for a deadline extension at specified or no rebate stating the
-    cause, however, it's completely up to project owners to accept or
-    decline the request.
-
-9)  The auditor commissioned with the project will then have till the
-    proposed deadline to submit a successful audit. They can upload
-    the Audit in pdf format to the platform. There will be a penalty
-    for late submission of the audit which will be 5% of the decided
-    amount for submission later than 1 day to 1 week after the
-    deadline ends, and 10% for submission later than 1 week to 2 weeks
-    after the deadline. After two weeks the project's status will
-    automatically be turned to expired, The commissioned auditor will
-    be given a negative badge and the project creator will be refunded
-    the whole amount.
-  
-10) In case, the submitted project is downvoted by 5 Arbiters for the
-    first time, a deadline extension of 1 day will be granted to the
-    auditor at no penalty ( For any altercations that can be quickly
-    made to the report ), a 6-day extension will be granted the second
-    time around at 5% penalty (For major scope misses) If the audit
-    report is downvoted for the third time, the project status will be
-    marked as expired, and the project creators can retrieve the whole
-    staked amount. The auditor commissioned will be given a negative
-    badge.
-
-11) The auditors will get platform badges along their profile based on
-    their actions: for example For every offer submitted in multiple
-    of 10 will be given a badge (10 offers made, 20 offers made, 50
-    offers made), For every successfully submitted Audit, a star badge
-    or a count corresponding to their profile. There will also be
-    negative badges for auditors who could not deliver their audits
-    successfully to beware the project owners next time they make an
-    offer. Every positive badge will be minted as NFT consisting of
-    details of audits conducted in its metadata, for every negative
-    badge, a mapping will be updated in the contract corresponding to
-    the auditor's address to save gas.
-
-12) A Voting system will be in place, and only after 5 Arbiters have
-    voted in favor of the audit submitted, will the status be changed
-    to completed. The proposed platform will charge 3% as (a server /
-    Platform Fee ) and 2% Arbiters Commission, the remaining funds
-    will be transferred to the auditor's wallet address connected to
-    their profile.
-
-13) Protocol developers can serve as the Arbiters in the early stages of
-    the platform's deployment and as reliable auditors emerge on the
-    platform who have been actively contributing to the community, The
-    roles can be renounced/granted accordingly. Arbiters will be paid
-    2% of the total commission, distributed among 5 validators for the
-    easy work of scope affirmations.
-
-14) The number of Arbiter roles granted by the platform will depend upon
-    the traffic generated by the platform, more roles can be granted
-    to ensure faster validation in a high-traffic environment and vice
-    versa.
 
 The peripheral components in the above-suggested platform such as user
 profiles, projects posted(not yet completed), and KYC procedure will be
@@ -181,11 +103,50 @@ update their profiles at will whereas, The core functionalities such as
 escrow, auditing achievements, and records will be stored in a
 decentralised manner using smart contracts developed with !ink.
 
+The Data in the model will be stored either in the centralised database
+or on the blockchain and hence no data will be lost even if the server is
+shut for some unforseen reason.
+
+**WireFrames**
+
+![Login Page]( https://github-production-user-asset-6210df.s3.amazonaws.com/106224868/241973709-159cd665-1751-4b89-8ee7-1575c3dc0936 )
+
+---
+
+![SignUp Page]( https://github-production-user-asset-6210df.s3.amazonaws.com/106224868/241973745-820530e5-0976-49b2-8351-efb86314a21c )
+
+---
+
+![OTP Verification Page]( https://github.com/viswatejay/RFP/assets/106224868/ee1ddb45-cc59-4979-b4a1-e3785174b3e2 )
+
+---
+
+![ Dashboard Page ]( https://github.com/viswatejay/RFP/assets/106224868/d1692626-0d1d-412c-9c89-81ccdbcd1a27 )
+
+---
+
+![ Detail Page ]( https://github.com/viswatejay/RFP/assets/106224868/97f9006d-bd76-41a1-89ee-e4fd658bd25f )
+
+---
+
+![ Profile Page ]( https://github.com/viswatejay/RFP/assets/106224868/50450e30-6c6c-41c3-a9bc-9b0f7cf0a838 )
+
+---
+
+![ Profile-MyAudits Page]( https://github.com/viswatejay/RFP/assets/106224868/7508a870-fe4b-4737-a7b6-c2fe3f3d74c9 )
+
+---
+
+![ Profile-PendingAudits Page]( https://github.com/viswatejay/RFP/assets/106224868/532ffb47-a03d-4a0d-b954-5ae4fb54b3be )
+
+---
+
+![ Create Post Page ]( https://github.com/viswatejay/RFP/assets/106224868/132f3a36-d2d9-4bd7-a027-c2201c5843f0 )
 
 ### Ecosystem Fit
 
-  - The escrow smart contract will be developed in a platform agnostic manner which will make it beneficial for future use cases.
-  - The negative badge mapping can be used by other platforms in ecosystem to create a bot blacklist .
+  - The escrow smart contract will be developed in a platform-agnostic manner which will make it beneficial for future use cases.
+  - The negative badge mapping can be used by other platforms in the ecosystem to create a bot blacklist.
   - The platform helps project owners in the ecosystem to find auditors/whitehats and vice versa.
 
 ## Team :busts_in_silhouette:
@@ -217,24 +178,24 @@ Antier solutions entered the blockchain domain in 2016, Back when one bitcoin wa
 to where we stand currently has blessed our organization not only with rewards but also with an abundance of experience.
 Our Smart contract Auditing team is led by some of the most experienced and competitive developers of the organization as well as the ecosystem.
 The team is well-experienced in both the development side as well as the debugging side of an SDLC and has an eye for the bugs as well as respect
-for standards which, we believe, makes us a perfect fit to be the practicioner of this RFP.
+for standards which, we believe, makes us a perfect fit to be the practitioner of this RFP.
 
 Here are some of the feats, achievements our organisation boasts of:
 
-1) Developed validator and nominator apps for substrate based blockchains .
+1) Developed validator and nominator apps for substrate-based blockchains.
 2) Customised default reward mechanism in the staking pal of the substrate chain by integrating the sustainability and
    reliability score of the validators in the current reward system.
-4) Integrated EVM and WASM based virtual machines natively in the substrate chain so the chain could support both EVM(Metamask,
+4) Integrated EVM and WASM-based virtual machines natively in the substrate chain so the chain could support both EVM(Metamask,
    Remix, Web3.js, etc) and WASM(WebAssembly target, INK framework, etc) tooling.
 5) Replicated whole polkadot ecosystem(Relay chain, Parachains, XCM), Where parachains are use case specific chains and communicate
    through XCM protocol with each other.
 6) Developed several NFT Marketplace contracts both decentralized and hybrid across various blockchains such as [Hungama](https://heftyverse.xyz/),
    [SkodaVerse](https://www.skoda-auto.com/world/skodaverse), [Fanverse](https://www.fan-verse.io/) just to name a few.
 7) Developed many DeFi projects across multiple blockchains such as [Shido, Staking](https://dex.shido.io/staking-page), [Shido, Perpetuals](https://perp.shido.io/), [YSL](https://ysl.io/), [Lithium](https://lithium.ventures/) and many more.
-8) We have also developed Asset Tokenization solution based on ERC3643 on EVM, Aptos & Provenance chain for some of the reknowned Financial Institutions. The    
-   asset classes tokenized are Real Estate, Securities, Private Equity, Commodities such as Gold. Can't share the platform details, as we are under strict NDA.
+8) We have also developed an Asset Tokenization solution based on ERC3643 on EVM, Aptos & Provenance chain for some of the renowned Financial Institutions. The    
+   asset classes tokenized are Real Estate, Securities, Private Equity, and commodities such as Gold. Can't share the platform details, as we are under strict NDA.
 9) We are also developing some in-house Web3 solutions such as Relayer Hub for meta-transactions, Decentralized Token Bridge, a multi-sig solution like Gnosis-safe  
-   and we are actively researching and developing in areas such as Multi Party Computation (MPC), Account Abstraction (AA, ERC4337), zk proofs and many more.
+   and we are actively researching and developing in areas such as multi-party Computation (MPC), Account Abstraction (AA, ERC4337), zk proofs and many more.
 
 
 - Our team has also been proactively participating in the Substrate Stack exchange and we ask/answer question related to ink!, Substrate, parachain. We rank in the top 6% people in the Substrate Stack Exchange.
@@ -276,47 +237,41 @@ Awaiting Response.
 ### Overview
 
 - **Total Estimated Duration:** 12-14 weeks
-- **Full-Time Equivalent (FTE):**  7
-- **Total Costs:** 48,700 USD
+- **Full-Time Equivalent (FTE):**  4,5
+- **Total Costs:** 47,520 USD
 
-### Milestone 1 Example — Initial research and design phase
+### Milestone 1 Example — UI/UX designs, Smart Contracts & Backend Services
 
-- **Estimated duration:** 2-3 Weeks
-- **FTE:**  2 One Solution Architect & One Technical Business Analyst
-- **Costs:** 4,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Technical Documentations | We will provide both **Architectural level Documentation** of the code and a **Contract level Documentation** that explains in absolute detail how our proposed project will work.|
-
-
-### Milestone 2 Example — Development of Smart Contracts, APIs & Interactive Front-end
-
-- **Estimated Duration:** 6-7 Weeks
-- **FTE:**  4,5 incuding 2 Smart Contract, 2 Front-end, 2 Back-end developers
-- **Costs:** 30,600 USD
+- **Estimated duration:** 7-8 weeks
+- **FTE:**  5
+- **Costs:** 27,720 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Smart contracts | We will provide all the **smart contracts** as mentioned/discussed in the technical Documentations. |
-| **0c.** | Back-End APIs | We will turn in all the **Node APIs** as mentioned/discussed in the technical Documentations. |
-| **0d.** | Front end builds | We will finish the development of front end and turn it into the interactive **Front-End**. |
+| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1 | UI/UX | We will deliver complete UI/UX designs. |
+| 2 | Smart Contract| We will also deliver the !ink smart contracts designed to serve as escrow for our platform.  |
+| 3 | Node Services | WE will deliver the backend services for login , sign up and 2FA. |
 
-### Milestone 3 Example — Protocol Integration & Testing
 
-- **Estimated Duration:** 4 weeks development + 2 weeks UAT/testing phase
-- **FTE:**  2 Front-end developers
-- **PTE:**  2 Quality analysts
-- **Costs:** 13,600 USD
+### Milestone 2 Example — Application & Deliveries
+
+- **Estimated Duration:** 5-6 weeks
+- **FTE:**  4
+- **Costs:** 19,800 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Smart-contract test scripts | We will finish the e2e testing of smart contracts and turn in the Test Scripts. |
-| **0c.** | Node Test scripts | We will finish the e2e testing of node services and turn in the Test Scripts. |
-| **0d.** | Front end Test Scripts | We will finish the e2e testing of front end and turn in the Test Scripts. |
+| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1 | Front End | We will deliver the completely intigerated and working product. |
+
+
 
 ## Future Plans
 
