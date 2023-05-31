@@ -42,7 +42,7 @@ Here is an envisioned lifecycle of a project on our platform.
    Patrons: Users, generally the owners of big platforms that wish to avail of the auditing services.
    Auditors: Users that are willing to offer their auditing services on the platform.
    Arbiters: Trusted community members that will review the auditor’s work and verify the auditor’s claim for rewards.
-4. The dashboard can be used to access all the available Projects offered by patrons on the platform, the user from there can create a post
+4. The dashboard can be used to access all the available Projects offered by patrons on the platform, the user from there can create a post (Audit Request)
    for their project, bid for already existing projects, or switch to the arbiter's dashboard if authorized.
 5. The patron can create a post which will entail:
    A) Project Status: Whether the project is active, pending, retrieved, completed, awaiting validation, or expired. Will be active by default on creation.
@@ -237,7 +237,7 @@ Awaiting Response.
 - **Full-Time Equivalent (FTE):**  4,5
 - **Total Costs:** 47,520 USD
 
-### Milestone 1 Example — UI/UX designs, Smart Contracts & Backend Services
+### Milestone 1 — UI/UX designs, Smart Contracts & Backend Services
 
 - **Estimated duration:** 7-8 weeks
 - **FTE:**  5
@@ -250,11 +250,14 @@ Awaiting Response.
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1 | UI/UX | We will deliver complete UI/UX designs. |
-| 2 | Smart Contract| We will also deliver the !ink smart contracts designed to serve as escrow for our platform.  |
-| 3 | Node Services | We will deliver the backend services for login , sign up and 2FA. |
+| 2 | Reputation Token Contract| This will be a non-transferrable token smart contract that will serve as auditors' reward and as proof of reputation points after the successful completion of an Audit.  |
+| 3 | Escrow Contract| This will be a master contract where all tokens will be managed by patrons and distributed to the Auditors after the successful closure of the Audit.  |
+| 4 | Audit Directory Contract| This will be a contract that stores all hashes of the audit reports. Which can be retrieved even when the platform goes down.  |
+| 5 | Arbiters Contract| This contract will have specific arbiters for every audit thread where they can participate in the voting.  |
+| 6 | Node Services | We will deliver the backend services for login , sign up, 2FA and Profile creation |
 
 
-### Milestone 2 Example — Application & Deliveries
+### Milestone 2 — Application & Deliveries
 
 - **Estimated Duration:** 5-6 weeks
 - **FTE:**  4
@@ -266,9 +269,9 @@ Awaiting Response.
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1 | Node Services | We will deliver the remaining back end services including Profile creation, Post creation and Bidding system. |
-| 2 | Front End | We will deliver the completely intigerated and working product. |
+| **0e** | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 1 | Node Services | We will deliver the remaining back end services including Post creation and Bidding system. |
+| 2 | Front End | We will deliver the completely functional DApp integrated with the Smart contracts and backend services. The working application will have all the 9 pages as per the wireframes and above mentioned. The application will be deployed on the provided servers. |
 
 
 
