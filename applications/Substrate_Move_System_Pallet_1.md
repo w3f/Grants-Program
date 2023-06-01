@@ -10,12 +10,13 @@ This application is a response to the **[Move Smart Contract Pallet RFP](https:/
 
 ### Overview
 
-<aside>
-📖 Terminology:
-**Substrate Move System Pallet** - A Substrate system pallet that can be used as a building block for substrate-based chains, it exposes interfaces to interact with the Move virtual machine.
-************************Substrate Move************************ - A Move language fork that is Substrate compatible.
+Some terminology first: 
 
-</aside>
+ - **Substrate Move System Pallet** - A Substrate system pallet that can be used as a building block for substrate-based chains, it exposes interfaces to interact with the Move virtual machine.
+
+ - **Substrate Move** - A Move language fork that is Substrate compatible.
+
+Objectives:
 
 - The goal is to provide a Substrate system pallet that allows to deploy and interact with Smart Contracts written in the Move language, by providing a Move Virtual Machine (MoveVM) as a pallet.
 - We plan on exploring a fork of the Move language, so it’s adjusted to work with the Substrate ecosystem, as well as developing a Substrate system pallet that allows the execution of Move smart contracts.
@@ -36,10 +37,7 @@ This is the first phase of a 3-phase development program:
 
 We are basing the core architecture and many of the design decisions on the [Pontem networks developed system pallet for Move VM](https://github.com/pontem-network/pontem/tree/master/pallets/sp-mvm). They had maintained [their own fork of the Diems Move language](https://github.com/pontem-network/sp-move-vm), which was used as the base execution layer for their version. Both of these repositories have not been maintained for a very long time already.
 
-<aside>
 ♻️ We aren't seeking to maintain any of the existing codebase; rather, we aim for a full revival through a new greenfield project. Our rationale for this stems from the substantial advancements made in the Rust, Substrate, and Move ecosystems since Pontem’s latest commits from over a year ago. We believe that handling potential code rot due to the passage of time might be more labor-intensive than starting afresh and drawing upon existing projects for more current guidelines.
-
-</aside>
 
 **Documentation of core components, architecture**
 
@@ -158,19 +156,9 @@ We have not yet started our own development, we are still in the research phase.
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | Content: article that explains all of the research and findings done in the research phase, and how it shapes the project in the future. The research would include: 
-  - analysis of the Pontem Move fork
-  - analysis of the Pontem MoveVM system pallet, evaluating its architecture and design decisions,
-  - analysis of the current Move language restrictions, ABI and understanding if forking the language is still necessary. 
-  - analysis of the potential effects of forking the language and the toolchain if it is deemed necessary
-
-Medium: A markdown design decision document in the repository. |
-| 1. | System Pallet: 
-Substrate Move | We will create a Substrate system pallet that will provide the RPC calls as the initial interfaces for interacting with the Move VM. 
-The Move VM port itself will not be implemented, all of the methods will be empty stubs.
-Solid code practices will be in place: CI/CD, tests, documentation, linting, and publication of the library to http://crates.io. |
-| 1. | Rust crate: Substrate Move | Forking the Move VM if deemed necessary. The alterations would include everything to create the virtual machine Substrate-compatible. 
-We would also provide extensive documentation of how the whole process is designed and how it is to be maintained. |
+| 0e. | Article | Content: article that explains all of the research and findings done in the research phase, and how it shapes the project in the future. The research would include: <ul><li>analysis of the Pontem Move fork,</li><li>analysis of the Pontem MoveVM system pallet, evaluating its architecture and design decisions,</li><li>analysis of the current Move language restrictions, ABI and understanding if forking the language is still necessary,</li><li>analysis of the potential effects of forking the language and the toolchain if it is deemed necessary.</li></ul>Medium: A markdown design decision document in the repository. |
+| 1. | System Pallet: Substrate Move | We will create a Substrate system pallet that will provide the RPC calls as the initial interfaces for interacting with the Move VM. The Move VM port itself will not be implemented, all of the methods will be empty stubs.</br> Solid code practices will be in place: CI/CD, tests, documentation, linting, and publication of the library to http://crates.io. |
+| 1. | Rust crate: Substrate Move | Forking the Move VM if deemed necessary. The alterations would include everything to create the virtual machine Substrate-compatible. We would also provide extensive documentation of how the whole process is designed and how it is to be maintained. |
 
 ## Future Plans
 
