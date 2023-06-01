@@ -1,7 +1,7 @@
 # ParachainPulse
 
 - **Team Name:** CrossChain Labs
-- **Payment Address:** 0x9BddF24e1dd1f165Da3562546165c93EaFCee31A (USDC)
+- **Payment Address:** fiat (USD)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -24,23 +24,23 @@ ParachainPulse is a follow-up project to the previous grant [DotPulse](https://g
 
 By aggregating all the necessary data in one place, ParachainPulse provides a comprehensive view of the open source development activities taking place across the various parachains of Polkadot and Kusama. ParachainPulse will enable users to:
 - track the ecosystem's growth, developer progress, and project advancements within the Polkadot & Kusama and their parachains.
-- facilitate comparisons between different parachains based on their number of developers, active developers, projects, active projects, contributions, and contributions growth over the last 6 months
-- visualize a dedicated webpage for each individual parachain that possesses details on active developers, active projects, monthly contributions made over the past year, recognition of top developers of the month, and the number of active developers out of the total count in the preceding 30-day period.
+- facilitate comparisons between different parachains based on their number of developers, active developers, contributions, and contributions growth over the last 6 months
+- visualize a dedicated webpage for each individual parachain that possesses details on active developers, monthly contributions made over the past year, recognition of top developers of the month, and the number of active developers out of the total count in the preceding 30-day period.
 - to filter and search through developers and their associated projects for each parachain.
 - access information regarding the total number of contributions made by each developer to the parachain's ecosystem, as well as the number of contributions made within the past 30 days.
-- can view the number of projects that a developer has contributed to, and how many of those projects were active during the last 30 days.
+- can track the number of projects that a developer has contributed to.
 
 #### UX/UI Overview: ParachainPulse home page
 
-![Home page group](https://github.com/arctic-ash/Grants-Program/assets/91743348/a05746c9-d8f6-4cf9-812a-56819ccc6f96)
+![Home page](https://github.com/arctic-ash/Grants-Program/assets/91743348/0a43f320-0229-4e77-85b3-63f54fbdc319)
 
 #### UX/UI Overview: ParachainPulse parachain page
 
-![Parachain page group](https://github.com/arctic-ash/Grants-Program/assets/91743348/e08ac88d-9b0a-4aa9-b24c-479b5f8cb8f0)
+![Parachain page](https://github.com/arctic-ash/Grants-Program/assets/91743348/37ff2aeb-2a65-48b4-a544-c2a016d93fbf)
 
 #### UX/UI Overview: Submit new parachain
 
-![Submit parachain group](https://github.com/arctic-ash/Grants-Program/assets/91743348/299af90e-d3d3-42ff-9387-71b39718c080)
+![Submit page](https://github.com/arctic-ash/Grants-Program/assets/91743348/6b1ab94c-3a86-4ec3-bb65-d8bc75b70988)
 
 ### Ecosystem Fit
 
@@ -117,15 +117,15 @@ To obtain a thorough understanding of the data across various parachains, using 
 
 ### Overview
 
-- **Total Estimated Duration:** 12 weeks
+- **Total Estimated Duration:** 9 weeks
 - **Full-Time Equivalent (FTE):**  3 FTE, 1 PTE
-- **Total Costs:** 59,500 USD
+- **Total Costs:** 41,000 USD
 
 ### Milestone 1
 
-- **Estimated duration:** 6 weeks
+- **Estimated duration:** 5 weeks
 - **FTE:**  3.5
-- **Costs:** 30,750 USD
+- **Costs:** 22,800 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -136,10 +136,8 @@ To obtain a thorough understanding of the data across various parachains, using 
 | 0e. | Article | We will publish an article that explains what was achieved as part of the grant and how users can benefit the most from ParachainPulse functionalities. |
 | 1. | Finalize the UX | Brush up all ParachainPulse's design elements
 | 2. | Build the main dashboard | Exhibit the home page's search box that enables user to search for a specific parachain | 
-| 3. | Build the main dashboard | Display the active projects growth over the last 12 months for Polkadot and Kusama |
 | 4. | Build the main dashboard | Display the active developers growth over the last 12 months for Polkadot and Kusama |
 | 5. | Build the main dashboard | Display the contributions growth over the last 12 months for Polkadot and Kusama |
-| 6. | Build the main dashboard | Show the active projects line chart with details on how many monthly active projects are in the Polkadot&Kusama ecosystem |
 | 7. | Build the main dashboard | Show the active developers bar chart with details on how many monthly active developers are in the Polkadot&Kusama ecosystem |
 | 8. | Build the main dashboard | Show the contributions line chart with details on how many monthly contributions are in the Polkadot&Kusama ecosystem |
 | 9. | Build the main dashboard | Enable users to submit a new parachain with details on: name, email
@@ -148,16 +146,13 @@ To obtain a thorough understanding of the data across various parachains, using 
 | 11. | Build the parachains table | Display the logo of the ecosystem (Polkadot or Kusama) that a prachain belongs to |
 | 12. | Build the parachains table | Display the total number of developers that contributed to each parachain |
 | 13. | Build the parachains table | Display the active developers growth during the last 12 months for each parachain |
-| 14. | Build the parachains table | Display the number of projects that belongs to each parachain |
-| 15. | Build the parachains table | Display how many projects are active out of total for each parachain |
 | 16. | Build the parachains table | Display the number of developers that contributed to each parachain |
 | 17. | Build the parachains table | Display the number of contributions made to each parachain |
 | 18. | Build the parachains table | Display the contributions growth during the last 12 months for each parachain |
 | 19. | Build the parachains table | Display the line chart that shows the contributions' evolution over the last 6 months for each parachain |
-| 20. | Build the parachain dashboard | Exhibit the monthly growth (over the last 12 months) section with details on: active developers, active projects and contributions |
+| 20. | Build the parachain dashboard | Exhibit the monthly growth (over the last 12 months) section with details on: active developers and contributions |
 | 21. | Build the parachain dashboard | Show the top developers that contributed to the parachain during the last 30 days |
 | 22. | Build the parachain dashboard | Display the developers pie chart exhibiting how many were active out of total over the last 30 days |
-| 23. | Build the parachain dashboard | Show the active projects line chart |
 | 24. | Build the parachain dashboard | Show the active developers bar chart |
 | 25. | Build the parachain dashboard | Show the contributions line chart |
 | 26. | Build the parachain table | Each text column can be filtered and each numerical column can be sorted |
@@ -166,14 +161,13 @@ To obtain a thorough understanding of the data across various parachains, using 
 | 29. | Build the parachain table | Show how many active contributions made during the last 30 days, out of total |
 | 30. | Build the parachain table | Display the projects name that a developer contributed to |
 | 31. | Build the parachain table | Display the number of projects that a developer contributed to |
-| 32. | Build the parachain table | Exhibit how many projects are active during the last 30 days out of total |
 | 33. | Build  the submit form | Display the submit form that requires info on: parachain name, GitHub logo, Ecosystem (Polkadot or Kusama), email and website (optional) |
 
 ### Milestone 2
 
-- **Estimated duration:** 6 weeks
+- **Estimated duration:** 4 weeks
 - **FTE:**  3.5
-- **Costs:** 28,750 USD
+- **Costs:** 18,200 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -189,10 +183,9 @@ To obtain a thorough understanding of the data across various parachains, using 
 | 5. | Implement Github scraper functionality | Calculate the number of active repositories for each month over the last year for Polkadot & Kusama and each of their parachains |
 | 6. | Implement Github scraper functionality | Calculate the number of active contributors for each month over the last year for Polkadot & Kusama and each of their parachains |
 | 7. | Implement Github scraper functionality | Collect the list of recent commits across all the Polkadot's Github repositories from the last 30 days |
-| 8. | Implement the ParachainPulse APIs required by frontend | Statistics API that returns the number of monthly active projects, monthly active developers and monthly contributions for Polkadot & Kusama |
-| 9. | Implement the ParachainPulse APIs required by frontend | Growth API that returns the active monthly growth for developers, projects and contributions over the last 12 months for Polkadot & Kusama and each of their parachains |
+| 8. | Implement the ParachainPulse APIs required by frontend | Statistics API that returns the number of monthly active developers and monthly contributions for Polkadot & Kusama |
+| 9. | Implement the ParachainPulse APIs required by frontend | Growth API that returns the active monthly growth for developers and contributions over the last 12 months for Polkadot & Kusama and each of their parachains |
 | 10. | Implement the ParachainPulse APIs required by frontend | Developers API that returns the list of contributors, the number of contributors and active contributors for Polkadot & Kusama and each of their parachains |
-| 11. | Implement the ParachainPulse APIs required by frontend | Projects APIs that return the list of projects, the total number projects, the active projects during the last 30 days and during the last 12 months for Polkadot & Kusama and each of their parachains |
 | 12. | Implement the ParachainPulse APIs required by frontend | Contributions API that returns the total number of commits, the number of commits during the last 30 days, and during the last 6 months and commits growth for 12 months for Polkadot & Kusama and each of their parachains |
 | 13. | Implement the ParachainPulse APIs required by frontend | “Submit Parachain” API - is used by the frontend to push the following data to the the database: ‘Parachain name’, ‘GitHub URL’, ‘Logo URL’, ‘Email’. The admin reviews it and, if approved, is added to the parachain list. Additionally, the scraper will retrieve relevant data about the approved parachain and fill in the details automatically |
 
