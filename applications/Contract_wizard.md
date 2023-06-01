@@ -135,7 +135,7 @@ Described in project details.
 ​
 - **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):** 2.5 
-- **Total Costs:** 122.500 U$D
+- **Total Costs:** 87.500 U$D
 ​
 ## Milestones
 ​
@@ -143,7 +143,7 @@ Described in project details.
 ​
 - **Estimated duration:** 2 months
 - **FTE:** 2.5
-- **Costs:** 49000
+- **Costs:** 35000
   
 ​
 | Number | Deliverable | Specification |
@@ -161,7 +161,7 @@ Described in project details.
 ​
 - **Estimated duration:** 3 months
 - **FTE:** 2.5
-- **Costs:** 73500
+- **Costs:** 52500
   
 ​
 | Number | Deliverable | Specification |
