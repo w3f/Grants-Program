@@ -32,7 +32,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [analysis-website-and-data-platform.md](RFPs/Open/analysis-website-and-data-platform.md) | 🟢 | 17.02.2023 |
 | [anti-collusion_infrastructure.md](RFPs/Open/anti-collusion_infrastructure.md) | 🟢 | 29.11.2021 |
 | [appi.md](RFPs/Closed/appi.md) | 🔴 | 20.07.2021 |
-| [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 🟢 | 06.01.2023 |
+| [bpf-contracts.md](RFPs/Closed/bpf-contracts.md) | 🔴 | 01.07.2023 |
 | [candle-auction.md](RFPs/Closed/candle-auction.md) | 🔴 | 02.02.2022 |  
 | [crowdloan_front_end_template.md](RFPs/Closed/crowdloan_front_end_template.md) | 🔴 | 25.04.2023 |  
 | [data_analysis_tools.md](RFPs/Open/data_analysis_tools.md) | 🟢 | 25.01.2023 |
