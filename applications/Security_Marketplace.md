@@ -240,13 +240,13 @@ Awaiting Response.
 
 - **Total Estimated Duration:** 12-14 weeks
 - **Full-Time Equivalent (FTE):**  4,5
-- **Total Costs:** 47,520 USD
+- **Total Costs:** 29,920 USD
 
 ### Milestone 1 — UI/UX designs, Smart Contracts & Backend Services
 
 - **Estimated duration:** 7-8 weeks
 - **FTE:**  5
-- **Costs:** 27,720 USD
+- **Costs:** 19,320 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -266,7 +266,7 @@ Awaiting Response.
 
 - **Estimated Duration:** 5-6 weeks
 - **FTE:**  4
-- **Costs:** 19,800 USD
+- **Costs:** 10,600 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
