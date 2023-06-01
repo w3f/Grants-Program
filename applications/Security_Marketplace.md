@@ -104,6 +104,11 @@ The Data in the model will be stored either in the centralised database
 or on the blockchain and hence no data will be lost even if the server is
 shut for some unforseen reason.
 
+**Proposed TechStack**
+-	BackEnd : NodeJs
+-	FrontEnd : ReactJS using Astar.js
+-	Smart Contracts : !ink
+
 **WireFrames**
 
 ![Login Page]( https://github.com/viswatejay/RFP/assets/106224868/38a52e06-cdf9-4090-8c67-afe8796638ba )
@@ -250,7 +255,7 @@ Awaiting Response.
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1 | UI/UX | We will deliver complete UI/UX designs. |
-| 2 | Reputation Token Contract| This will be a non-transferrable token smart contract that will serve as auditors' reward and as proof of reputation points after the successful completion of an Audit.  |
+| 2 | Reputation Token Contract| This will be a non-transferrable token smart contract(Soul Bound Token) that will serve as auditors' reward and as proof of reputation points after the successful completion of an Audit.  |
 | 3 | Escrow Contract| This will be a master contract where all tokens will be managed by patrons and distributed to the Auditors after the successful closure of the Audit.  |
 | 4 | Audit Directory Contract| This will be a contract that stores all hashes of the audit reports. Which can be retrieved even when the platform goes down.  |
 | 5 | Arbiters Contract| This contract will have specific arbiters for every audit thread where they can participate in the voting.  |
