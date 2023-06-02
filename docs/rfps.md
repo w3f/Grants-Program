@@ -27,8 +27,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [analysis-website-and-data-platform.md](RFPs/Open/analysis-website-and-data-platform.md) | 17.02.2023 |
 | [anti-collusion_infrastructure.md](RFPs/Open/anti-collusion_infrastructure.md) | 29.11.2021 |
 | [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 06.01.2023 |
-| [data_analysis_tools.md](RFPs/Open/data_analysis_tools.md) | 25.01.2023 |
-| [decentralized-security-marketplace.md](RFPs/Open/decentralized-security-marketplace.md) | 23.01.2023 |  
+| [data_analysis_tools.md](RFPs/Open/data_analysis_tools.md) | 25.01.2023 |  
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 07.10.2022 |
 | [grant_management_webapp.md](RFPs/Open/grant_management_webapp.md) | 09.03.2023 |
 | [IDE_for_ink_Smart_Contracts.md](RFPs/Open/IDE_for_ink_Smart_Contracts.md) | 05.04.2023 |
@@ -59,6 +58,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [privacy-enhancement-polkadot-extension.md](RFPs/Under%20Development/privacy-enhancement-polkadot-extension.md) | 27.05.22 |
 | [raft-validators.md](RFPs/Under%20Development/raft-validators.md) | 23.05.2023 |
 | [scale-codec-comparator.md](RFPs/Under%20Development/scale-codec-comparator.md) | 30.05.2022 |
+| [decentralized-security-marketplace.md](RFPs/Under%20Development/decentralized-security-marketplace.md) | 02.06.2023 |  
 | [validator-setup-maintenance.md](RFPs/Under%20Development/validator-setup-maintenance.md) | 27.04.2023 |
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 07.12.2022 |
 | [alternative-polkadot-js-api-console.md](RFPs/Under%20Development/alternative-polkadot-js-api-console.md) | 19.05.2023 |
@@ -85,7 +85,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [wallet-aggregator-library.md](RFPs/Closed/wallet-aggregator-library.md) | 09.03.2023 |
 
 </details>
-
 
 ## 📬 Suggest an RFP
 

@@ -3,6 +3,7 @@
 - **Team Name:** Ideal Labs
 - **Payment Address:** 0xB7E92CCDE85B8Cee89a8bEA2Fd5e5EE417d985Ad (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1365#issuecomment-1564514109)
 
 ## Project Overview :page_facing_up:
 
