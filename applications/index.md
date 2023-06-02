@@ -64,6 +64,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Nikita Orlov PR](https://github.com/stringnick)                         | [Faucet chat based bot](faucet-bot.md)                                                   | [GitHub](https://github.com/stringnick)                              | ☐          |        ☐       |      ☐      |
 | [Societal Labs Ltd.](https://www.sctl.xyz/)                         | [Societal Saas Pricing](societal_saas_pricing.md)                                                   | [GitHub](https://github.com/sctllabs)                              | ☐          |        ☐       |      ☐      |
 | [MASTER UNION LLC.](https://github.com/TheDotflow)                         | [Dotflow](Dotflow.md)                                                   | [GitHub](https://github.com/TheDotflow)                              | ☐          |        ☐       |      ☐      |
+| [Antier Solutions](https://www.antiersolutions.com/)                         | [RFP/securityMarketPlace](Security_Marketplace.md)                                                   | [GitHub](https://github.com/ParthChaudhary31)                              | ☐          |        ☐       |      ☐      |
 
 [🔝](#menu)
 
