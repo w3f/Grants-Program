@@ -2,7 +2,7 @@
 
 - **Team Name:** Antier Solutions Pvt. Ltd.
 - **Payment Address:** 1XhNxALoCmXF86aiwZtdDJspjWZBiRX9UfbJ4jQsWN15eSu (DOT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
@@ -151,15 +151,15 @@ Github provides REST API for a lot of github actions. The link to the API docs i
 
 ### Overview
 
-- **Total Estimated Duration:** 12 weeks
+- **Total Estimated Duration:** 8 weeks
 - **Full-Time Equivalent (FTE):**  3 FTE
-- **Total Costs:** 18,000 USD
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1  — Teams and Projects 
 
-- **Estimated duration:** 6 weeks
+- **Estimated duration:** 8 weeks
 - **FTE:**  3
-- **Costs:** 9000 USD
+- **Costs:** 10000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -169,25 +169,13 @@ Github provides REST API for a lot of github actions. The link to the API docs i
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Frontend | We will provide dashboard and details pages for Projects and Teams with all details |
 | 2. | Backend | Database integrations and data extractor will be implemented. i.e data from the md files on github will be processed and saved to the database using API |
-| 3. | Data Base | DB schema implementation |
+| 3. | Backend | Github API integrations and web hooks will be implemented so that our application can listen to events and make necessary changes in the db |
+| 4. | Data Base | DB schema implementation |
 
-### Milestone 2 Example — Applications and Deliveries
-
-- **Estimated duration:** 6 weeks
-- **FTE:**  3
-- **Costs:** 9000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can navigate through the data and perform github actions |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Frontend | We will provide dashboard and details page for the remaining tabs i.e Applications and Deliveries |
-| 2. | Backend | Github API integrations and web hooks will be implemented so that our application can listen to events and make necessary changes in the db |
 
 ## Future Plans
+
+We plan to deliver the following after receiving the Grants Committee's approval :
 
 Oracle for treasury pallet integration is being researched meanwhile and also looking for decentrallised alternative for github. Upon further discussions with the grants committee we shall go ahead with this
 
