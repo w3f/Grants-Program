@@ -111,10 +111,13 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Development Roadmap :nut_and_bolt:
 
+### Overview
+
 ### Milestone 1 — xNFT Pallet
-- **Estimated duration:** 6 weeks
+
+* **Total Estimated Duration:** 6 weeks
+* **Total Costs:** 9800 USD
 - **FTE:**  2
-- **Costs:** 9800 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
