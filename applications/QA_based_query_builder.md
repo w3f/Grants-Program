@@ -150,7 +150,7 @@ The CLI implementation will be translated to a UI process, using Phoenix LiveVie
 
 ## Future plans
 
-After having completed this first step by building a solid product with basic features and gathering some community feedback, we would like to apply for a follow-up grant which will improve this platform with support for detailed statistics on chosen quantities, DeFi-focused metrics, governance data analysis (as described in another [RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/data_analysis_tools.md)), and educational material, in addition to eventual improvements and bug fixes.
+After having completed this first step by building a solid product with basic features and gathering some community feedback, we would like to apply for a follow-up grant which will improve this platform with support for detailed statistics on chosen quantities, DeFi-focused metrics, governance data analysis (as described in another [RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/data_analysis_tools.md)), and educational material, in addition to eventual improvements and bug fixes. The end result should be a tool essentialy like Dune Analytics.
 
 ## Additional Information
 
