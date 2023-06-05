@@ -17,7 +17,15 @@ The grant management app is a powerful platform that integrates with GitHub to f
 
 - Mockups/designs of any UI components
 
-  Currently, there are no mockups or designs available, but I will be utilizing Tailwind CSS and Next.js to design the user interface (UI). While being aware of various protocol grant systems, I will create a unique UI that differentiates itself from this RFP document. The primary focus will be on simplicity, ensuring that users can access all the necessary information within 2-3 clicks. Although detailed designs are not yet available, I will strive to develop an intuitive and user-friendly interface that provides a seamless experience for users.
+I will create a unique UI that differentiates itself from this RFP document. The primary focus will be on simplicity, ensuring that users can access all the necessary information within 2-3 clicks.
+
+<img width="903" alt="mainpage" src="https://github.com/tolgayayci/Grants-Program/assets/40897846/ea2ef7ee-73a2-41c5-87d9-c2b1181f869a">
+
+Main Page Example with some basic stats
+
+- Technical Scheme
+
+![technical scheme](https://github.com/tolgayayci/Grants-Program/assets/40897846/eb85d098-763b-4e91-a025-6fe2336f2c1e)
 
 - Example API specifications & **API Playground**
 
