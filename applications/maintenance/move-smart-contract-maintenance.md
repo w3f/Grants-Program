@@ -1,4 +1,4 @@
-# Project Code Name (e.g. JsonRPC Tools Maintenance)
+# Move smart contract Pallet Maintainance
 
 - **Team Name:** Ann
 - **Payment Address:** 0x352a7f69df71bda6c51ee7fa938dd76ff2375087 (Ethereum USDC)
