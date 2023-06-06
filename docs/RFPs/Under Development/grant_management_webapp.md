@@ -1,6 +1,6 @@
 # Grant Management Web Application
 
-* **Status:** Open
+* **Status:** Under Development [here](https://github.com/w3f/Grants-Program/pull/1766) as well as [here](https://github.com/w3f/Grants-Program/pull/1765)
 * **Proposer:** [randombishop](https://github.com/randombishop)
 
 
