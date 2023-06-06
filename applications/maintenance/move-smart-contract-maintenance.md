@@ -102,7 +102,7 @@ Our responsibilities:
 
 ### Overview
 
-- **Start Date:** 2023/06/11.
+- **Start Date:** 2023/06/01.
 - **Sprint/Period Duration:** 4 weeks
 - **Total Duration:** 8 weeks
 - **Full-Time Equivalent (FTE):**  1 FTE
