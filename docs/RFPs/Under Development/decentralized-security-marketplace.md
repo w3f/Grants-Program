@@ -1,6 +1,6 @@
 # Decentralized Security Marketplace
 
-* **Status:** Open
+* **Status:** [Under Development](https://github.com/w3f/Grants-Program/pull/1726)
 * **Proposer:** [Matteo Casonato](https://github.com/0xCaso), [Bhargav Batt](https://github.com/bhargavbh)
 
 ## Project Description :page_facing_up: 
