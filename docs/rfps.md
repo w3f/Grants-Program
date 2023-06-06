@@ -29,7 +29,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 06.01.2023 |
 | [data_analysis_tools.md](RFPs/Open/data_analysis_tools.md) | 25.01.2023 |  
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 07.10.2022 |
-| [grant_management_webapp.md](RFPs/Open/grant_management_webapp.md) | 09.03.2023 |
 | [IDE_for_ink_Smart_Contracts.md](RFPs/Open/IDE_for_ink_Smart_Contracts.md) | 05.04.2023 |
 | [ISO_20022.md](RFPs/Open/ISO_20022.md) | 31.05.2022 |
 | [move_smart_contract_pallet.md](RFPs/Open/move_smart_contract_pallet.md) | 22.12.2022 |
@@ -50,6 +49,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | RFP | Last Updated |
 | :-- | :----------: |
 | [alternative_polkadot_host_implementations.md](RFPs/Open/alternative_polkadot_host_implementations.md) | 02.03.2023 |
+| [grant_management_webapp.md](RFPs/Open/grant_management_webapp.md) | 06.06.2023 |
 | [identity-directory.md](RFPs/Under%20Development/identity-directory.md) | 30.05.2022 |
 | [implementation-benchmarking.md](RFPs/Open/implementation-benchmarking.md) | 16.03.2023 |
 | [ink!_smart_contract_block_explorer.md](RFPs/Under%20Development/ink_smart_contract_block_explorer.md) | 05.07.2021 |
