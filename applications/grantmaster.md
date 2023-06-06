@@ -2,7 +2,7 @@
 
 - **Team Name:** Zaniyar Jahany
 - **Payment Address:** 0xFCFDB7351Da159B8f53217be2a671dDa943735fc (DAI)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
@@ -10,7 +10,7 @@ This application is in response to the RFP [Grant Management Web Application](ht
 
 ### Overview
 
-This project aims to create a comprehensive web application for managing grant applications and deliveries for the W3F Grants Program, based on data in the GitHub repositories. I will provide an interactive and user-friendly interface for easier navigation for the W3F grant committee. This includes a crawler for easy extraction and calculation of relevant data, a REST API for accessing said data as well as a web-based frontend with a modern look & feel.
+This project aims to create a comprehensive web application for managing grant applications (and deliveries in a possible follow-up grant) for the W3F Grants Program, based on data in the GitHub repositories. I will provide an interactive and user-friendly interface for easier navigation for the W3F grant committee. This includes a crawler for easy extraction and calculation of relevant data, a REST API for accessing said data as well as a web-based frontend with a modern look & feel.
 
 As a passionate developer in the field of blockchain and decentralized projects, I recognize the value that transparency and organization bring to grant management. I'm excited to create a tool that enhances the process for the Web3 Foundation.
 
@@ -20,7 +20,7 @@ The following components will be included in the GrantMaster:
 
 - Crawler: I will provide an efficient crawler that is resilient to failure and fetches the data from GitHub that is neccessary for the scope of this project.
 - API: I will provide a comprehensive and efficient API.
-- UI/UX components: Detailed designs can be found [here](#wireframes) for Grants Page, Grant Details, Teams, Deliveries, and Stats.
+- UI/UX components: Detailed designs can be found [here](#wireframes) for Grants Page, Grant Details, Teams, and Stats.
 - Tech Stack: The web app will use a React (TypeScript) frontend that comes in [ant design](https://ant.design/docs/react/introduce), Node.js (TypeScript) crawler, Node.js (TypeScript) REST API and a MongoDB database. I'll use Mongoose to enforce the [db schema](#db-schema). For GitHub interaction, I'll use GitHub's REST API.
 
 #### DB Schema
@@ -57,8 +57,8 @@ interface Milestone {
   codeRepos: string[];
   license: string;
   githubPrs: string[];
-  deliveryLink: string;
-  deliveryDoc: string;
+  deliveryLink: string; // Scope: follow-up grant
+  deliveryDoc: string; // Scope: follow-up grant
   evaluations: Evaluation[];
 }
 
@@ -87,6 +87,7 @@ interface TeamMember {
   github?: string;
 }
 
+// Scope: follow-up grant
 interface Evaluation {
   author: string;
   link: string;
@@ -97,7 +98,7 @@ interface Evaluation {
 For the actual implementation of the database the [Mongoose npm package](https://www.npmjs.com/package/mongoose) will be used.
 
 #### Data Synchronization Approach
-The data synchronization is designed to seamlessly update the applications and deliveries, making sure we're always working with the most current information. This process will be executed using a combination of a configurable crawler and GitHub Actions.
+The data synchronization is designed to seamlessly update the applications (and deliveries, as part of a possible follow-up grant), making sure we're always working with the most current information. This process will be executed using a combination of a configurable crawler and GitHub Actions.
 
 **GitHub Actions**
 
@@ -105,7 +106,7 @@ I will deliver a set of GitHub actions that triggers the crawler whenever new co
 
 **Configurable Crawler**
 
-To support and complement the push-based system facilitated by GitHub Actions, I will also employ a configurable crawler. The crawler will be responsible for selectively updating specific applications or deliveries. Furthermore, the crawler will parse the data from GitHub Actions for incremental updates. This ensures a scalable system that doesn't need to process entire datasets for minor updates, enhancing the efficiency of our data synchronization strategy.
+To support and complement the push-based system facilitated by GitHub Actions, I will also employ a configurable crawler. The crawler will be responsible for selectively updating specific applications (or deliveries, as part of a possible follow-up grant). Furthermore, the crawler will parse the data from GitHub Actions for incremental updates. This ensures a scalable system that doesn't need to process entire datasets for minor updates, enhancing the efficiency of our data synchronization strategy.
 
 ### Ecosystem Fit
 
@@ -168,15 +169,15 @@ To get a feeling how the page will look like, I prepared this Hi Fi wireframe. K
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):**  0.5 FTE
-- **Total Costs:** 21,600 USD
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):**  0.6 FTE
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 — Development of API and Grant Frontend
 
 - **Estimated Duration:** 2 months
 - **FTE:**  0.6
-- **Costs:** 10,800 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -192,11 +193,15 @@ To get a feeling how the page will look like, I prepared this Hi Fi wireframe. K
 | 5. | Frontend Module: Teams | This module will present all teams involved in the grants in a concise and searchable manner. |
 | 6. | Frontend Feature: Grants Committee Lense | This feature will allow a user experience that is optimised to a specific grants committee member. The committee member will be able to provide his username (using simple textbox without authentication) and they'll be able to see in which pull requests for grants applications and amendments they've participated and how long it's been since they last commented on it. I think this will be useful for priorizing grant application reviews. |
 
-### Milestone 2 — Development of API and Grant Frontend
+## Future Plans
+
+I'm planning to implement the following milestone as part of a possible follow-up grant.
+
+#### Additional Milestone — Development of API and Grant Frontend
 
 - **Estimated Duration:** 2 months
 - **FTE:**  0.6
-- **Costs:** 10,800 USD
+- **Costs:** 11,600 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -209,10 +214,6 @@ To get a feeling how the page will look like, I prepared this Hi Fi wireframe. K
 | 2. | GitHub Actions Integration | I will integrate GitHub Actions to trigger updates in the application for new comments, pull requests, or PR reviews in the Grant-Milestone-Delivery repository (see [Data Synchronization Approach](#data-synchronization-approach) chapter). |
 | 3. | Frontend Module: Deliveries Page | I will develop a Grant Deliveries Page that will display all the deliveries in a tabular format. They will be searchable by team name, application name as well as full text search. They will be filterable and sortable by pull request status, github label, last updated timestamp. It will include all deliveries - both active and inactive. Also, the deliveries will be included in the team and grant pages that were delivered in M1. |
 | 4. | Frontend Module: Stats | A Stats module will be developed to provide statistics about the grant applications and deliveries. |
-
-## Future Plans
-
-As the sole developer of GrantMaster, I am committed to the continuous improvement and expansion of this project. I understand that needs evolve, and as such, the system should be capable of accommodating new requirements and functionalities.
 
 
 ## Additional Information :heavy_plus_sign:
