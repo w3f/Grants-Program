@@ -67,6 +67,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Antier Solutions](https://www.antiersolutions.com/)                         | [RFP/securityMarketPlace](Security_Marketplace.md)                                                   | [GitHub](https://github.com/ParthChaudhary31)                              | ☐          |        ☐       |      ☐      |
 | [SO/DA zone](https://github.com/mfornos)                         | [Ocelloids Monitoring SDK grant application](ocelloids_monitoring_sdk.md)                                                   | [GitHub](https://github.com/mfornos)                              | ☐          |        ☐       |      ☐      |
 | [Antier Solutions Pvt. Ltd.](https://github.com/kulwindersingh-ant)                         | [Grants webapp](Grant_management_webapp.md)                                                   | [GitHub](https://github.com/kulwindersingh-ant)                              | ☐          |        ☐       |      ☐      |
+| [Zaniyar Jahany](https://github.com/Zaniyar/plant2earn/)                         | [Grantmaster](grantmaster.md)                                                   | [GitHub](https://github.com/Zaniyar/plant2earn/)                              | ☐          |        ☐       |      ☐      |
 
 [🔝](#menu)
 
