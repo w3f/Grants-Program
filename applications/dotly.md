@@ -4,7 +4,7 @@
 - **Payment Address:** [0xf5412558d977915D56d8B4d3773871142d379E74](https://etherscan.io/address/0xf5412558d977915D56d8B4d3773871142d379E74) (USDC, Ethereum (ERC20))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -44,6 +44,30 @@ With DOTLY's intuitive interface, users can understand their account activities 
 
 ---
 
+**Score and Level System**
+
+* The Score and Level functionalities in DOTLY are designed to gamify the account tracking process and provide users with a sense of achievement and progression within their Polkadot account journey.
+
+    - Account Creation: +10 points.
+    - Outgoing Transfer: +3 points for each outgoing transfer.
+    - Incoming Transfer: +2 points for each incoming transfer.
+    - Extrinsics Calls: +1 points for each extrinsic call.
+    - Parachain Interactions: Assign points based on interactions with different parachains.
+    - Governance Participation: +8 points for each vote cast or proposal submitted.
+    - Crowdloans Participation: +5 points for each crowdloan participation.
+    - Proxy Actions: +3 points for each proxy action taken.
+
+Score is accumulated sum of above metrics. As an example, if a user has 3 outgoing, and 2 incoming transfers (and assume nothing else is done in the account), the user will have +10 (from account creation), + 3 x 3 (from outgoing transfer) + 3 x 2 (from incoming transfer) and total of 25 score.
+
+The Level system was developed to resemble MMORPG games.
+
+Level = floor((0.4 x Score Points + 0.4 Achieved Badge Count + 0.2 Quest Completion Count)  / LevelThreshold)
+
+We can determine LevelThreshold values dynamic values or static value like 250.
+
+Note that this calculation and level equation may see changes while implementing the features.
+
+
 <br>
 
 **Technical Stack**
@@ -67,7 +91,7 @@ DOTLY targets a diverse range of individuals within the Polkadot ecosystem, incl
 
 - **Gamification and Motivation**: DOTLY incorporates gamification elements, such as unified scores and level systems, which motivate users to actively participate and explore the Polkadot ecosystem. By gamifying the account tracking process, DOTLY encourages users to complete quests to get a sense of achievement and progression within their account journey.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -110,11 +134,11 @@ Develops ecosystem tools and applications with various tech stacks. AAVE, W3F, F
 
 - <https://www.linkedin.com/in/mertkoklu/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 API scheme, technical stack and mockups are ready for development.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -134,21 +158,26 @@ API scheme, technical stack and mockups are ready for development.
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **set-up** page that explains how a user can run frontend/backend repositories of the project in their local environment. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Backend: Overview Page - Score Widget | Implement an endpoint for score widget that displays account activity score based on activity equation. For example an equation can based on weighted sum of following scores: Outgoing Transfer (+10), Incoming Transfer (+2), Extrinsics Call (+5) and much more.  |
-| 2. | Backend: Overview Page - Level Widget | Implement an endpoint for level widget that displays account level based on account badges and scores. |
-| 3. | Backend: Overview Page - Brief Stats | Implement an endpoint for brief stats widget that displays summaries like, total transfers sent\received, time with Polkadot, extrinsic count, nonce, role, tags, display name, twitter, web, Judgements, email (if these are exists) etc.   |
-| 4. | Backend: Overview Page - Balance Pie | Implement an endpoint for balance pie widget that displays two pie charts. The first pie chart will show distribution of balance like Transferrable balance, Locked balance etc. and the second pie chart will show sub-distribution balance of the first pie chart selection like Election Lock, Democracy Lock, etc. | 
-| 5. | Backend: Overview Page - Weekly Transaction Rate | Implement an endpoint for weekly transaction rate widget that is the number of transactions account have sent over the past 7 days. |
-| 6. | Backend: Stats Page - Balance History | Implement an endpoint for balance history widget that shows DOT balance change over time on account. |
-| 7. | Backend: Stats Page - Transaction History | Implement an endpoint for relationship chart widget that shows relationship with different accounts. It can show most frequent accounts that user has interacts with. |
-| 8. | Backend: Stats Page - Top 5 Senders/Receivers | Implement an endpoint for top 5 senders/receivers widget that lists top 5 senders and receivers (transfers) of the account. |
-| 9. | Backend: Stats Page - Incoming/Outcoming Transfer Widget | Implement an endpoint for top incoming/outcoming transfer widget that lists displays count of incoming/outcoming transfers over time with two line charts. |
-| 10. | Backend: Stats Page - Staking Reward History | Implement an endpoint for staking reward widget that displays count of staking reward over time with a line chart. |
-| 11. | Backend: Extrinsics Page - Extrinsics Count History | Implement an endpoint for extrinsics count history widget that displays count of extrinsics over time with a line chart. |
-| 12. | Backend: Extrinsics Page - Extrinsics Success Rate | Implement an endpoint for extrinsics success rate widget that displays success rate of extrinsics on pie chart. |
-| 13. | Backend: Extrinsics Page - Top Interacted Modules/Calls  | Implement an endpoint for top interacted modules/pallets and calls widget. Top interacted calls will be listed based on selection of module. |
-| 14. | Backend: Extrinsics Page - Action Insight | Implement an endpoint for action insight widget that displays two pie charts and one line chart. The first pie chart will show count distribution of modules user interacte with (such as balances), and the second pie chart will show count distribution of calls (such as transfer, transfer_keep_alive etc.) based on selected module. The line chart will show that call's count over time. |
-| 15. | Backend: Badges Page - Badges | Implement an endpoint for badges widget. It will return all badges that user has achieved and yet to achieve. For example a badge will look like this: "Join the party! - Perform a token transfer". |
+| 1. |  Overview Page - Score Widget | Implement an endpoint for score widget that displays account activity score based on activity equation. For example an equation can based on weighted sum of following scores: Outgoing Transfer (+10), Incoming Transfer (+2), Extrinsics Call (+5) and much more.  |
+| 2. |  Overview Page - Level Widget | Implement an endpoint for level widget that displays account level based on account badges and scores. |
+| 3. |  Overview Page - Brief Stats | Implement an endpoint for brief stats widget that displays summaries like, total transfers sent\received, time with Polkadot, extrinsic count, nonce, role, tags, display name, twitter, web, Judgements, email (if these are exists) etc.   |
+| 4. |  Overview Page - Parachain Balance Pie | Implement an endpoint for balance pie widget that displays **three** pie charts. The first pie chart will show parachain that account address has balance. The second pie displays distribution of balance like Transferrable balance, Locked balance etc. and the third pie chart will show sub-distribution balance of the first pie chart selection like Election Lock, Democracy Lock, etc. | 
+| 4. |  Overview Page - Parachain Balance List | Implement an endpoint for balance list widget that displays list of parachains with respective balance summary of account address. | 
+| 5. |  Overview Page - Weekly Transaction Rate | Implement an endpoint for weekly transaction rate widget that is the number of transactions account have sent over the past 7 days. |
+| 6. |  Stats Page - Balance History | Implement an endpoint for balance history widget that shows DOT balance change over time on account using chart. |
+| 7. |  Stats Page - Transaction History | Implement an endpoint for relationship chart widget that shows relationship with different accounts. It can show most frequent accounts that user has interacts with. |
+| 8. |  Stats Page - Top Senders/Receivers | Implement an endpoint for top senders/receivers widget that lists top senders and receivers (transfer) of the account. |
+| 9. |  Stats Page - Incoming/Outgoing Transfer Widget | Implement an endpoint for top incoming/outgoing transfer widget that displays count of incoming/outgoing transfers over time with two line charts. |
+| 10. | Stats Page - Staking/Pool Reward History | Implement an endpoint for staking/pool reward widget that displays count of staking/pool reward over time with a line chart. |
+| 11. | Extrinsics Page - Extrinsics Count History | Implement an endpoint for extrinsics count history widget that displays count of extrinsics over time with a line chart. |
+| 12. | Extrinsics Page - Extrinsics Success Rate | Implement an endpoint for extrinsics success rate widget that displays success rate of extrinsics on pie chart. |
+| 13. | Extrinsics Page - Top Interacted Modules/Calls  | Implement an endpoint for top interacted modules/pallets and calls widget. Top interacted calls will be listed based on selection of module. |
+| 14. | Extrinsics Page - Action Insight | Implement an endpoint for action insight widget that displays two pie charts and one line chart. The first pie chart will show count distribution of modules user interacte with (such as balances), and the second pie chart will show count distribution of calls (such as transfer, transfer_keep_alive etc.) based on selected module. The line chart will show that call's count over time. |
+| 15. | Badges Page - Badges | Implement an endpoint for badges widget. It will return all badges that user has achieved and yet to achieve. For example a badge will look like this: "Join the party! - Perform a token transfer". |
+| 16. | XCMs Page - Incoming/Outgoing XCM Transfers | Implement an endpoint for XCM transfers widget that display count of incoming/outgoing XCM transfers of Polkadot account over time with two line charts. The chart will only lists DOT transfers for now. |
+| 17. | XCMs Page - XCM Transfers Pie | Implement an endpoint for XCM transfers pie widget that display parachains with their respective transfer count of Polkadot account. |
+| 18. | XCMs Page - XCM Pallet Interaction History | Implement an endpoint for XCM pallet interaction widget that display multi-line chart based on parachain XCM interactions. |
+
 
 
 ### Milestone 2 - Frontend
@@ -159,29 +188,35 @@ API scheme, technical stack and mockups are ready for development.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Frontend: Search Page | Implement a search page that allows users to search for an account by address in Polkadot ecosystem. |
-| 2. | Frontend: Overview Page | Implement an overview page that displays account activity score, account level, brief stats, balance pie, weekly transaction rate widgets. |
-| 3. | Frontend: Stats Page | Implement a stats page that displays balance history, transaction history, top 5 senders/receivers, incoming/outcoming transfer, staking reward history widgets. |
-| 4. | Frontend: Extrinsics Page | Implement an extrinsics page that displays extrinsics count history, extrinsics success rate, top interacted modules/calls, action insight widgets. |
-| 5. | Frontend: Badges Page | Implement a badges page that displays badges widget. |
-| 6. | Frontend: Google Analytics Integration | Integrate Google Analytics to track user interactions. |
-| 7. | Frontend: Feature | Make every widget on the pages shareable. |
+| **0a.** | License | MIT  |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **set-up** page that explains how a user can run frontend/backend repositories of the project in their local environment. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Search Page | Implement search page that allows users to search for an account by address in Polkadot ecosystem. |
+| 2. | Overview Page | Implement overview page that displays account activity score, account level, brief stats, parachain balance pie, parachain balance list, weekly transaction rate widgets. |
+| 3. | Stats Page | Implement stats page that displays balance history, transaction history, top 5 senders/receivers, incoming/outgoing transfer, staking/pool reward history widgets. |
+| 4. | Extrinsics Page | Implement an extrinsics page that displays extrinsics count history, extrinsics success rate, top interacted modules/calls, action insight widgets. |
+| 5. | Badges Page | Implement badges page that displays badges widget. |
+| 6. | XCMs Page | Implement XCM page that displays incoming/outgoing XCM transfers, XCM transfers pie, XCM pallet interaction history widgets. |
+| 7. | Google Analytics Integration | Integrate Google Analytics to track user interactions. |
+| 8. | Share Feature | Make every widget on the pages shareable. |
 
 ## Future Plans
 
-While DOTLY is initially focused on Polkadot, we plan to expand its capabilities to include other networks within the Polkadot ecosystem, such as Kusama and other parachains. This will allow users to track and analyze their activities across multiple interconnected networks, providing a comprehensive view of their participation in the wider Web3 ecosystem.
+Altough DOTLY is initially focused on Polkadot, it offers detailed balance overview on parachains that user has balances and it also offer account's XCM transfer lists/charts widgets between parachains. We plan to expand its capabilities to include other networks within the Polkadot ecosystem, such as Kusama and other parachains. Users can change parachain to see their stats in other parachains as well just like parachain explorers. This will allow users to track and analyze their activities across multiple interconnected networks, providing a comprehensive view of their participation in the wider Web3 ecosystem. After parachain integrations, Proxies and Crowdloans stats/charts will be added as well.
 
-Besides, there are some deeper features that is not included in this proposal. Like using unsupervised learning algorithms to perform segmentation analysis that will unearth insights into how user interact with Polkadot environment. This will show behavioral patterns of users like how they use Polkadot, what they do, what they like, repetitive actions, etc. 
+Also I am planning to add quests that incentivize users to perform certain actions. Altough this is done by badges (for now) that are awarded to users, quests are a bit different. For example we can incentivize users to swap in X protocol, or stake in Y protocol, or provide liquidity in Z protocol. This will be a great way to increase user engagement and participation in the Polkadot ecosystem. The rewards for quests can be DOT, KSM, NFTs, etc. and can be provided from respective X, Y, Z  protocol/tools. This feature is not included in the proposal since it adds complexity to the project and it will take more time to implement. 
 
-Based on above segmentation analysis, we can create a database consists of segmentation analysis of most active wallets to further create a recommendation system that will recommend users to use Polkadot in a better way.
+Besides, there are some deeper features that is not included in this proposal. Like using unsupervised learning algorithms to perform segmentation analysis that will unearth insights into how user interact with Polkadot environment. This will show behavioral patterns of users like how they use Polkadot, what they do, what they like, repetitive actions, etc. Based on these segmentation analysis, we can create a database consists of segmentation analysis of most active wallets to further create a recommendation system that will recommend users to use Polkadot in a better way.
 
 
-## Referral Program (optional) :moneybag
+
+## Referral Program (optional) :moneybag:
 
 - **Referrer:** -
 - **Payment Address:** -
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 
