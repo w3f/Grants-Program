@@ -50,7 +50,9 @@ Also, these are just an option, and the RFP doesn't require building from these.
 
 For example:
 
-![screenshot_grants_page](./img/grants_page.png)
+![screenshot_grants_page](https://github.com/keeganquigley/Grants-Program/assets/1389409/0eda6f0b-071d-4d44-9835-196167479c07)
+
+
 
 
 ### Grants details
@@ -61,7 +63,8 @@ For example:
 - All documents related to the grant and links to their pull requests (application, deliveries and evaluations)
 
 For example:
-![screenshot_grants_details](./img/grants_details.png)
+![screenshot_grants_details](https://github.com/keeganquigley/Grants-Program/assets/1389409/098962a3-249f-4fa5-8c03-9d0dbc7f32eb)
+
 
 
 ### Teams
