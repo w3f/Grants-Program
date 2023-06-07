@@ -109,10 +109,21 @@ We will design and implement the data interface with a developer flow that will 
 * schema mapping and morphing logic
 * any external sources or other parameters
 
-Developers will be able to deploy their new data schemas via git pull requests at the initial stages and, later, in a fully automated fashion, with the new dashboards going live after deployment.
+Developers will be able to deploy their new data schemas via git pull requests at the initial stages and, later, in a fully automated fashion, with the new dashboards going live after deployment. 
+
+Additionally, developers will be able to extend the existing dashboards’ queries and augment them with any new data sources they’d see fit: first, as a Github-based form and purely through the UI at the later milestones.
 
 ![FiDi DotSight Data Interface](https://storage.googleapis.com/fidi-tech-static1/w3f/FiDi%20Data%20Interface.png "FiDi DotSight Data Interface")
 
+
+#### User authentication/authorization ####
+
+To ensure the security and privacy of our users, we will implement wallet-signed authentication as the initial method for contributors to engage with DotSight (See Tier 1). This approach will enable analytics developers to access new dashboards and protocol submissions, which will be reviewed by our team. Data querying and existing dashboard usage will remain public and will not require authentication.
+
+This approach is incremental to our existing connect-the-wallet functionality, does not require any user authentication data stored on FiDi, and overall balances the privacy/security concerns with the user experience best.
+
+In the future milestones and outside of the scope of this proposal, we plan to expand authentication methods to support a more diverse user population and role separation. Our roadmap includes Github OAuth (Tier 2) for dashboards and protocol deployment and other OAuth or verified email (Tier 3) for social functionality.
+![FiDi DotSight Auth Protocol](https://storage.googleapis.com/fidi-tech-static1/w3f/FiDi%20DotSight%20Auth%20Protocol.png "FiDi DotSight Auth Protocol")
 
  #### From 0 to 1 #### 
 
@@ -280,7 +291,7 @@ All infrastructure deliverables belong to the teams’ domains of expertise and 
 - **FTE:**  4
 - **Costs:** 7,500 USD
 
-- Summary: This milestone covers a SQL-powered option for developers/users to productionize new views on FiDi via specific squids on GiantSquid.
+- Summary: This milestone covers a SQL editor as a new option for developers/users to productionize views on FiDi via specific squids on GiantSquid.
 - Success: developer UI supports FiDi SQL-powered views.
 
 | Number | Deliverable | Specification |
@@ -289,8 +300,8 @@ All infrastructure deliverables belong to the teams’ domains of expertise and 
 | **0b.** | Documentation | We will provide documentation on querying methodology, e.g., functions, operators, data types, and statement reference; as well as an educational tutorial explaining the typical way to run the queries, associate them with the views, interpret the data, navigate the developer UI, and share the views. |
 | **0c.** | Testing | Core functions will be fully covered by a unit and integration tests suite to ensure robustness, deployment, and serving times. |
 | **0e.** | Article | We will publish an announcement article capturing the work completed in the grant along with the educational guides and success stories, enabling users to further leverage and expand DotSight’s functionality. |
-| **1.** | FiDi SQL implementation | We will provide a query engine for blockchain data. Initially forked from [TrinoSQL](https://trino.io/) and/or [harmonizer](https://github.com/duneanalytics/harmonizer), we will extend the functionality to support variable views and embed GraphQL upstream queries. We'll simialrly rely on Typescript + Nest + CloudSQL (PGSQL) for the query engine's implementation. |
-| **2.** | SQL View UI | We will augment the no-code view developed in Milestone 2 with SQL functionality allowing users to rehash the existing views as well as create new ones. We'll similarly rely on React + Typescript for the UI's implementation.|
+| **1.** | FiDi SQL implementation | We will provide a query engine for blockchain data. Initially forked from [TrinoSQL](https://trino.io/) and/or [harmonizer](https://github.com/duneanalytics/harmonizer), we will extend the functionality to support variable views and embed GraphQL upstream queries. We'll simialrly rely on Typescript + Nest + CloudSQL (PGSQL) for the query engine's implementation. ![FiDi SQL Engine UI Example](https://storage.googleapis.com/fidi-tech-static1/w3f/FiDi%20SQL%20Engine.png "FiDi SQL Engine UI Example")|
+| **2.** | SQL Editor View UI | We will augment the no-code view developed in Milestone 2 with SQL functionality allowing users to rehash the existing views as well as create new ones. The Editor UI will include the runner log, a tree of dependencies and suggested resources, and the editor interface itself. See the UI direction in the following wireframe:|
 | **3.** | Advanced Querying Documentation | We will provide a comprehensive guide for optimizing the queries, both language- and database-specific, along with real-world examples |
 
 
