@@ -192,6 +192,7 @@ API scheme, technical stack and mockups are ready for development.
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **set-up** page that explains how a user can run frontend/backend repositories of the project in their local environment. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| **0e.** | Article | We will publish an article that explains the charts/widgets in DOTLY and publish it with ecosystem. |	
 | 1. | Search Page | Implement search page that allows users to search for an account by address in Polkadot ecosystem. |
 | 2. | Overview Page | Implement overview page that displays account activity score, account level, brief stats, parachain balance pie, parachain balance list, weekly transaction rate widgets. |
 | 3. | Stats Page | Implement stats page that displays balance history, transaction history, top 5 senders/receivers, incoming/outgoing transfer, staking/pool reward history widgets. |
