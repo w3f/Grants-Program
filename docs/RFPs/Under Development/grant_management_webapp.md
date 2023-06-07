@@ -50,7 +50,7 @@ Also, these are just an option, and the RFP doesn't require building from these.
 
 For example:
 
-![screenshot_grants_page](./img/grants_page.png)
+![screenshot_grants_page](/docs/RFPs/img/grants_page.png)
 
 
 ### Grants details
@@ -61,7 +61,7 @@ For example:
 - All documents related to the grant and links to their pull requests (application, deliveries and evaluations)
 
 For example:
-![screenshot_grants_details](./img/grants_details.png)
+![screenshot_grants_details](/docs/RFPs/img/grants_details.png)
 
 
 ### Teams
