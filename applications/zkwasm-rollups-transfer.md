@@ -111,13 +111,13 @@ Through this grant, we are going to implement the **zkwasm** which supports tran
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
+- **Total Estimated Duration:** 11 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 40,000 USDT
 
 ### Milestone 1 | Crypto Primitive
 
-- **Estimated duration:** 1.5 month
+- **Estimated duration:** 2 month
 - **FTE:**  2
 - **Costs:** 10,000 USDT
 
@@ -136,7 +136,7 @@ In `Milestone 1`, we are going to implement `RedDSA`, optimize `Jubjub` curve an
 
 ### Milestone 2 | Plonk Extension
 
-- **Estimated duration:** 1.5 month
+- **Estimated duration:** 3 month
 - **FTE:**  2
 - **Costs:** 10,000 USDT
 
