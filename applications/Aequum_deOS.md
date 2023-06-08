@@ -102,41 +102,23 @@ BSN also delivers code under successful grants from [FileCoin, Chainlink](https:
 
 ## Development Roadmap :nut_and_bolt:
 
-On this first stage of the project we plan to execute several deliverables in six milestones, the main of which are:
+On this first stage of the project we plan to execute several deliverables in two milestones, the main of which are:
 - an Aequum deOS loader with a bundle assembly tool;
 - an Aequum deOS core & BUS API;
-- libraries and APIs;
-- a windows manager & a task bar;
-- a Substrate pallet.
+- libraries and APIs.
 
-The project will be supported by a team of 3 developers, 1 UI/UX designer, 1 DevOps engineer and 1 QA.
+The project will be supported by a team of 4 developers, 1 UI/UX designer, 1 DevOps engineer and 1 QA.
 
 ### Overview
 
 - **Total Estimated Duration:** 4,5 months
 - **Full-Time Equivalent (FTE):** 12 FTE
-- **Total Costs:** 98,000 USDT
+- **Total Costs:** 74,000 USDT
 
-### Milestone 1 — Design and development of the Aequum deOS loader
+### Milestone 1 — Design and development of the Aequum deOS loader & core
 
-- **Estimated duration:** 1,5 months
-- **FTE:**  3
-- **Costs:** 24,000 USDT
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the developed features work. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure new functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Bundle assembly tool |We will develop a tool (written with JS) that will be used for assembling a dapp/OS into one bundle, that includes all needed resources, libraries, dependencies for correct functionality. We will also deliver a resource extractor (css and images) and html samples compilation to virtual DOM. Aequuum deOS like all other dapps will be packed into one bundle and it’s code will be uploaded to IPFS and a blockchain. On the user side there will be just one light loader that will download the deOS from the blockchain. |
-| 2. | Aequum deOS loader (written with JS) | On this stage of the project deOS loading will be implemented from a local source (via https). After completing the Aequum parachain an ability to download deOS from the blockchain will be added. This deliverable also includes https bundle download in dev mode; Aequum deOS run process (on this stage “a stub” will be run to test the boot & run processes). |
-| 3. | User keys storage| The keys storage (developed with JS) will store user keys and provide API for using these keys by the system and dapps. The API will be implemented on later stages of the project. |
-| 4. | Registration / authorization pages (written in JS) | Authorization page (Aequum deOS login with Polkadot wallet credentials); Registration page (adding new account/wallet). |
-
-### Milestone 2 — Aequum deOS core
-
-- **Estimated duration:** 1,5 months
-- **FTE:**  5
+- **Estimated duration:** 3 months
+- **FTE:**  8
 - **Costs:** 40,000 USDT
 
 | Number | Deliverable | Specification |
@@ -144,13 +126,17 @@ The project will be supported by a team of 3 developers, 1 UI/UX designer, 1 Dev
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the new dapp works. 	|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 1. | Aequum deOS core & BUS API | This deliverable will be developed using JS. We will develop the BUS API that will interconnect all low-level browser APIs like camera or sound card access (through DOM or canvas), etc. BUS API will grant dapps abilities to register any used protocols and methods and thus interact with each other with these protocols. Meanwhile, a user will be able to control all access rights (approve or decline access to APIs for chosen dapps). | 
-| 2. | RUST lib | We will deliver a RUST library, that allows to register protocol handlers and call methods of any protocol. | 
-| 3. | WASM loader | WASM app loader (developed with RUST) to load and run applications from a local source (for “dev” mode). Loading of dapps from a blockchain will be delivered on later stages of the project, after delivering a Substrate parachain pallet and of publishing tools. | 
-| 4. | PROCESS API | We will develop a PROCESS API (written with JS) for process (dapps) management. PROCESS API will be used in the “task manager” app. This deliverable will include: API and it’s documentation; API implementation. | 
-| 5. | KEY API | We will deliver a KEY API (written with JS) that will provide access to user keys, that were used by the user for authentication. This API will be used for wallet dapps. This deliverable will include: API and it’s documentation; API implementation. | 
+| 1. | Bundle assembly tool |We will develop a tool (written with JS) that will be used for assembling a dapp/OS into one bundle, that includes all needed resources, libraries, dependencies for correct functionality. We will also deliver a resource extractor (css and images) and html samples compilation to virtual DOM. Aequuum deOS like all other dapps will be packed into one bundle and it’s code will be uploaded to IPFS and a blockchain. On the user side there will be just one light loader that will download the deOS from the blockchain. |
+| 2. | Aequum deOS loader (written with JS) | On this stage of the project deOS loading will be implemented from a local source (via https). After completing the Aequum parachain an ability to download deOS from the blockchain will be added. This deliverable also includes https bundle download in dev mode; Aequum deOS run process (on this stage “a stub” will be run to test the boot & run processes). |
+| 3. | User keys storage| The keys storage (developed with JS) will store user keys and provide API for using these keys by the system and dapps. The API will be implemented on later stages of the project. |
+| 4. | Registration / authorization pages (written in JS) | Authorization page (Aequum deOS login with Polkadot wallet credentials); Registration page (adding new account/wallet). |
+| 5. | Aequum deOS core & BUS API | This deliverable will be developed using JS. We will develop the BUS API that will interconnect all low-level browser APIs like camera or sound card access (through DOM or canvas), etc. BUS API will grant dapps abilities to register any used protocols and methods and thus interact with each other with these protocols. Meanwhile, a user will be able to control all access rights (approve or decline access to APIs for chosen dapps). | 
+| 6. | RUST lib | We will deliver a RUST library, that allows to register protocol handlers and call methods of any protocol. | 
+| 7. | WASM loader | WASM app loader (developed with RUST) to load and run applications from a local source (for “dev” mode). Loading of dapps from a blockchain will be delivered on later stages of the project, after delivering a Substrate parachain pallet and of publishing tools. | 
+| 8. | PROCESS API | We will develop a PROCESS API (written with JS) for process (dapps) management. PROCESS API will be used in the “task manager” app. This deliverable will include: API and it’s documentation; API implementation. | 
+| 9. | KEY API | We will deliver a KEY API (written with JS) that will provide access to user keys, that were used by the user for authentication. This API will be used for wallet dapps. This deliverable will include: API and it’s documentation; API implementation. | 
 
-### Milestone 3 — Base APIs & test app
+### Milestone 2 — Base APIs & test app
 
 - **Estimated duration:** 1,5 months
 - **FTE:**  4
