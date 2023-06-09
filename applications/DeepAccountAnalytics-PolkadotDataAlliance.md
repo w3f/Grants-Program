@@ -14,7 +14,7 @@ We propse 3-tier solution:
  - Tier 3. _dashboards_: the above indexed data in Apache Superset
 
 This proposal seeks to develop the above solution with the support of a Web3 Foundation grant, but critically addresses 
-future maintainance a [Polkadot Data Alliance Bounty](https://docs.google.com/document/d/1ryC6dxcd9tiQsB7KiCc2BY_TwBJ5jKloGfCyVAGCkKo/edit#heading=h.gjdgxs)
+future maintainance a [Polkadot Data Alliance Bounty](https://docs.google.com/document/d/1fA5ARHy-frzgZC66rniKZ5o7CSbDvCTkS--kWaMzuMs/edit#)
 that can support work on all 3 tiers with _child bounties_ for Polkadot Data Alliance contributors.
 
 ## Project Overview :page_facing_up:
@@ -28,7 +28,7 @@ which seeks to answer deep account analytics questions of:
 * What are the pallets responsible for reserves/holds and locks/freezes on an account?
 
 **Democracy**:
-* Which accounts have delegated OpenGov votes to an account or to which accounts the account in question has delegated their votes to for each track,  taking into account indirect delegations too (e.g. Account A delegates to Account B which delegates to Account C)?
+* Which accounts have delegated OpenGov votes to an account or to which accounts the account in question has delegated their votes to for each track?
 
 **Staking/Nomination Pools**:
 * Who are all the nominators that nominated Validator X in Era N? (an inverse mapping basically of staking.nominators from validator -> nominators)
@@ -67,7 +67,7 @@ Instead, our solution to this problem is to separate the THREE TIERS within a _g
 We consider our approach a _genuinely collaborative_ approach, because anyone can contribute at any of the 3 tiers -- providing raw indexes, deep indexes, or dashboards.  All dataset deliverables are public and the data processing itself is also reproducible in a "ETL" flow.  This should be contrast to a _non-collaborative_ approach where dataset is kept locked away unshared with the community, closed source and thus irreproducible.
  
 However, because all three tiers involve a certain amount of storage, compute and data engineering/data analyst man power, it is critical to not _just_ build the above three tiered solution,
-but recognize that it needs **maintainence**.  The Web3 Foundation supports maintainence, but does not support the considerable cloud computing costs that Tier 1 and 2 require, nor the sort of solution that Tier 3 requires.  We thus propose that the above three tier architecture be situated _in conjunction with_ a [Polkadot Data Alliance bounty](https://docs.google.com/document/d/1ryC6dxcd9tiQsB7KiCc2BY_TwBJ5jKloGfCyVAGCkKo/edit#heading=h.gjdgxs), not just for ourselves at Colorful Notion, but for everyone equally commited to genuine collaboration a Polkadot Data Alliance.  The Polkadot Data Alliance charter will be included [here]()
+but recognize that it needs **maintainence**.  The Web3 Foundation supports maintainence, but does not support the considerable cloud computing costs that Tier 1 and 2 require, nor the sort of solution that Tier 3 requires.  We thus propose that the above three tier architecture be situated _in conjunction with_ a [Polkadot Data Alliance bounty](https://docs.google.com/document/d/1fA5ARHy-frzgZC66rniKZ5o7CSbDvCTkS--kWaMzuMs/edit#), not just for ourselves at Colorful Notion, but for everyone equally commited to genuine collaboration a Polkadot Data Alliance.  
 
 It is believed that this collaborative framework can address many different problems other than deep analytics, and result in a more efficient allocation of Treasury funds and parachain resources: including an industry-wide multichain block explorer, ecosystem-wide XCM indexing, tracing tools, to name a few that our team has explored with some depth of seriousness.
 
@@ -164,7 +164,7 @@ The community dashboard can be used in the same way as Dune Analytics dashboards
 
 While this proposal does not explicitly require collaboration on any of the 3 tiers, our intention is to:
 1. set up a foundation where the Web3 Foundation could ask other teams to contribute datasets (Tier 2) and build dashboards (Tier 3) in the same way.
-2. set up a repeatable model between Web3 Foundation and a Polkadot Data Alliance support data-oriented research (W3F) and ongoing maintenance ([Polkadot Data Bounty](https://docs.google.com/document/d/1ryC6dxcd9tiQsB7KiCc2BY_TwBJ5jKloGfCyVAGCkKo/edit#heading=h.gjdgxs)) with child bounties 
+2. set up a repeatable model between Web3 Foundation and a Polkadot Data Alliance support data-oriented research (W3F) and ongoing maintenance ([Polkadot Data Bounty](https://docs.google.com/document/d/1fA5ARHy-frzgZC66rniKZ5o7CSbDvCTkS--kWaMzuMs/edit#)) with child bounties 
 
 ## Team :busts_in_silhouette:
 
@@ -202,7 +202,7 @@ in [Bayesian learning of verb meaning and causal laws](https://scholar.google.co
 
 * Summer 2022: Released Polkaholic.io, a fully working Substrate-first multichain block explorer.
 * Fall 2022: Increased XCM Transfers Coverage, Improved UI + API based on feedback from users.  Added EVM/WASM support.
-* Winter/Spring 2023: Developed substrate-etl and XCM Global Asset Registry.  Drafted [Polkadot Data Alliance Bounty](https://docs.google.com/document/d/1ryC6dxcd9tiQsB7KiCc2BY_TwBJ5jKloGfCyVAGCkKo/edit).
+* Winter/Spring 2023: Developed substrate-etl and XCM Global Asset Registry.
 * May 2023: Google included Polkadot + Kusama in [Google Public Datasets](https://cloud.google.com/bigquery/public-data).
 
 ## Development Roadmap :nut_and_bolt:
@@ -261,13 +261,14 @@ We will take this opportunity to address the complexity of eras, proxy / stashin
 * Deep Indexing. using the above tables in the views referencing  `storage_staking_*, storage_nominationpools_*` tables
 * Dashboard Publication.  Using the above, we can develop dashboards for Democracy+Staking+Nomination Pools
 
+
 ## Future Plans
 
 Broadly, this proposal sets up a path for the Web3 Foundation to have Polkadot Data Alliance contributors deliver results for the Web3 Foundation itself and the community in the following ways:
 
 1. within the three-tier architecture, Polkadot Data Alliance contibutors can collaborate with Web3 Foundation and others in the Substrate community using raw indexes, published deep indexes, or building and extending dashboards.  Our technical choice for collaboration is BigQuery and Apache Superset but other choices may be equally viable or appropriate, by other teams.  
 
-2. with the [Polkadot Data Alliance Bounty] and the [Web3 Foundation Maintance Grants](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants), there is a clear path to support both software maintainence _and_ hosting / data indexing infrastructure 
+2. with the [Polkadot Data Alliance Bounty](https://docs.google.com/document/d/1fA5ARHy-frzgZC66rniKZ5o7CSbDvCTkS--kWaMzuMs/edit#) and the [Web3 Foundation Maintance Grants](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants), there is a clear path to support both software maintainence _and_ hosting / data indexing infrastructure 
 
 In followup work, we would expect to address the 3 tiers:
 * raw indexing: cover traces on a regular basis defined in child bounties
@@ -281,15 +282,14 @@ We propose a child bounty to host Apache Superset instance at https://analytics.
 ## Additional Information :heavy_plus_sign:
 
 We request suitable Web3 Foundation members be identified as parent
-and child bounty curator candidated, and that the charter for the
+and child bounty curator candidates, and that the charter for the
 Polkadot Data Alliance be developed in a collaboration with Parity.
-The Polkadot Data Alliance charter is forthcoming and will be shared
-accordingly.
+The Polkadot Data Alliance charter is [here](https://docs.google.com/document/d/1fA5ARHy-frzgZC66rniKZ5o7CSbDvCTkS--kWaMzuMs/edit#).
 
 We do not believe our participation (or anyone else's participation)
 in a Polkadot Data Alliance in providing deliverables at any of the
 three tiers eliminates the possibility of doing further data
-processing for other for additional revenue.  Our goal is to be
+processing for other sources of additional revenue.  Our goal is to be
 self-sufficient and not dependent on W3F Grants or Treasury funding,
 but we hope our value and commitment to sharing and collaboration is
 recognized by the community so we can be productive high impact
