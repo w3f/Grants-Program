@@ -12,52 +12,44 @@ The Polkadot Contract Wizard has successfully completed its initial phase, makin
 ​
 In the next phase, we plan to implement the following features:
 ​
-1.- Rename from Polkadot Contract Wizard to just Contract Wizard
+1.- Interaction with deployed contracts through the wizard's UI.
 ​
-2.- Interaction with deployed contracts through the wizard's UI.
+2.- Interaction with smart contracts deployed by the user.
 ​
-3.- Interaction with smart contracts deployed by the user.
+3.- Shareable Contract Interaction Links
 ​
-4.- Shareable Contract Interaction Links
-​
-5.- Support for multiple chains
-​
-6.- Create and publish videotutorials about how to use the tool
+4.- Support for multiple chains
 ​
 These enhancements will allow users to create, modify, deploy and interact with smart contracts on different parachains, making the Contract Wizard an indispensable tool for the community within the Polkadot and Kusama ecosystem.
 ​
 ### Project Details
 ​
-#### <a name="step1"></a> 1. Rename from Polkadot Contract Wizard to be just Contract Wizard
-We belive the naming is very important and we plan to cover the entire ecosystem, that's why we suggest to rename the tool to be Contract Wizard.
-​
-#### <a name="step2"></a> 2. Interact with deployed contracts
+#### <a name="step1"></a> 1. Interact with deployed contracts
 We will create a functionality that enables users to directly interact with their deployed contracts via the user interface of the wizard. This functionality will be generated dynamically according to the metadata of the contracts. With this, users will be able to conveniently and effectively manage their contracts and carry out interactions using the same tool.
 ​
-#### <a name="step3"></a> 3. Interaction with custom smart contracts
+#### <a name="step2"></a> 2. Interaction with custom smart contracts
 Our platform will offer the capability to interact with any contract of their choice. To utilize this feature, they simply need to provide the metadata, network, and address associated with the contract. Once this information is ready, the user interface will automatically generate a customized user-friendly layout for allowing people to easily interact with their custom contracts. 
 ​
-#### <a name="step4"></a> 4. Shareable Contract Interaction Links
+#### <a name="step3"></a> 3. Shareable Contract Interaction Links
 To enhance the user experience and encourage collaboration, we plan to implement a feature for shareable contract interaction links.
 Once a developer deploys a contract or uploads the metadata for interacting with it on our platform, they can generate a unique, shareable link. This link will contain all necessary information for interacting with the contract, essentially encapsulating the contract's ABI (Application Binary Interface) and its address on the blockchain.
 Users receiving this link can interact with the contract directly, without needing to reupload the metadata or know the contract's specifics. This feature not only simplifies the process of contract interaction but also fosters collaboration and sharing within the developer community.
 ​
-#### <a name="step5"></a> 5. Support for multiple chains 
+#### <a name="step4"></a> 4. Support for multiple chains 
 This tool will offer a feature that enables users to connect to parachains implementing the contracts pallet. We will provide a list of some of these parachains in Polkadot, Kusama, and Rococo networks. Additionally, users will have the option to connect to a network that is not listed by specifying the web socket.
 ​
-#### <a name="step6"></a> 6. Create and publish videoturials about how to use the tool 
-To further support the community and enhance user adoption, we will create and publish a series of video tutorials that explain how to use the Contract Wizard effectively. These tutorials will cover various aspects of the tool, including creating and deploying standard contracts, interacting with deployed contracts, editing contracts within the interface, and connecting to multiple chains. By providing easy-to-understand, step-by-step video guides, we will make it even more accessible for users with different levels of technical expertise and contribute to the growth and success of the Polkadot and Kusama ecosystem.
-​
-Incorporating video tutorials will help to:
-​
-- Provide an alternative learning method for users who prefer visual demonstrations over written documentation.
-- Enhance the understanding of the Polkadot Contract Wizard and its features by showcasing real-life examples and use cases.
-- Reach a broader audience and encourage more people to engage with the Polkadot and Kusama ecosystem.
-- Strengthen the community by offering comprehensive resources that help users get started quickly and easily.
-- Boost user confidence in using the tool, promoting greater adoption and utilization of the Polkadot Contract Wizard.
-​
-By creating and publishing video tutorials, we aim to further support the community and facilitate the adoption of the Polkadot Contract Wizard, making it an even more valuable resource for developers and non-developers alike.
-​
+### Tentative Mockups
+
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add_contract_1_720.png)
+
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add%20contract%202.png)
+
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add%20contract%203.png)
+
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/networks%201.png)
+
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/networks%202.png)
+
 ### Ecosystem Fit
 ​
 The Polkadot Contract Wizard aims to streamline the onboarding process and enhance usability within the Polkadot and Kusama ecosystem.
@@ -133,17 +125,17 @@ Described in project details.
 ​
 ### Overview
 ​
-- **Total Estimated Duration:** 5 months
+- **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):** 2.5 
-- **Total Costs:** 87.500 U$D
+- **Total Costs:** 67200 U$D
 ​
 ## Milestones
 ​
 ### Milestone 1 — Initial Enhancements and Feature Development
 ​
-- **Estimated duration:** 2 months
+- **Estimated duration:** 1.5 months
 - **FTE:** 2.5
-- **Costs:** 35000
+- **Costs:** 25200
   
 ​
 | Number | Deliverable | Specification |
@@ -152,16 +144,15 @@ Described in project details.
 | **0b.** | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use the new features. |
 | **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile that allows users to easily run the application. |
-| 1. | Rename to Contract Wizard | The rebrand will be implemented corresponds to [step 1](#step1) of the Project Details section. |
-| 2. | Interaction with deployed contracts | We will create the mockups based on [step 2](#step2) of the Project Details section. |
-| 3. | Interaction with custom smart contracts | We will create the mockups based on [step 3](#step3) of the Project Details section. |
-| 4. | Support for multiple chains | The functionality to be implemented corresponds to [step 5](#step5) of the Project Details section. |
+| 1. | Interaction with deployed contracts | We will create the mockups based on [step 1](#step1) of the Project Details section. |
+| 2. | Interaction with custom smart contracts | We will create the mockups based on [step 2](#step2) of the Project Details section. |
+| 3. | Support for multiple chains | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
 ​
 ### Milestone 2 — Functionallity implementation and Educational Content
 ​
-- **Estimated duration:** 3 months
+- **Estimated duration:** 2.5 months
 - **FTE:** 2.5
-- **Costs:** 52500
+- **Costs:** 42000
   
 ​
 | Number | Deliverable | Specification |
@@ -170,11 +161,9 @@ Described in project details.
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use the new features. |
 | **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile that allows users to easily run the application. |
-| 1. | Interaction with deployed contracts | The functionallity based on the mockups from Milestone 1 [step 2](#step2) of the Project Details section. |
-| 2. | Interaction with custom smart contracts | The functionallity based on the mockups from Milestone 1 [step 3](#step3) of the Project Details section. |
-| 3. | Shareable Contract Interaction Links | The functionallity corresponds to what's described on [step 4](#step4) of the Project Details section. |
-| 4. | Create and publish video tutorials | The functionality to be implemented corresponds to [step 6](#step6) of the Project Details section. |
-| 5. | Finalize documentation | We will ensure that all documentation is up to date and clearly explains how to use all features of the Contract Wizard. |
+| 1. | Interaction with deployed contracts | The functionallity based on the mockups from Milestone 1 [step 1](#step1) of the Project Details section. |
+| 2. | Interaction with custom smart contracts | The functionallity based on the mockups from Milestone 1 [step 2](#step2) of the Project Details section. |
+| 3. | Shareable Contract Interaction Links | The functionallity corresponds to what's described on [step 3](#step3) of the Project Details section. |
 ​
 ​
 ## Future Plans
