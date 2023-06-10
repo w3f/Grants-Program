@@ -2,6 +2,7 @@
 
 - **Team:** ZeroDAO
 - **Payment Address:**  0xEBCDa7c73EB5Dd7a4314cFf395bE07EB1E24c046 (DAI)
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview 📄
 
