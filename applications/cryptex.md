@@ -6,7 +6,11 @@
 
 ## Project Overview :page_facing_up:
 
-This proposal presents a blockchain that uses a modified Aura that seals blocks using identity based signatures (BLS). We then implement an encryption-to-the-future (EtF) scheme, where messages can be encrypted for arbitrary slots and epochs in the future. Our proposal consists of a runtime, which modifies Aura and introduces a new pallet to enable the identity based cryptosystem (IBC), a light client, and an SDK which handles synchronization with the blockchain, slot scheduling, and offchain encryption and decryption functionality. In essence, this presents a simplified flavor of 'timelock encryption', though sacrifices full-decentralization for ease of implementation and feasibility (for the time being). 
+This is an EtF (encryption-to-the-future) network based on Aura. This proposal adds identity based encryption (IBE) in conjunction with a modified version of Aura to enable an EtF network, wherein messages can be encrypted to a slot in the future.
+
+### Overview
+
+This proposal presents a blockchain that uses a modified Aura in which blocks are sealed . We then implement an encryption-to-the-future (EtF) scheme, where messages can be encrypted for arbitrary slots and epochs in the future. Our proposal consists of a runtime, which modifies Aura and introduces a new pallet to enable the identity based cryptosystem (IBC), a light client, and an SDK which handles synchronization with the blockchain, slot scheduling, and offchain encryption and decryption functionality. In essence, this presents a simplified flavor of 'timelock encryption', though sacrifices full-decentralization for ease of implementation and feasibility (for the time being).
 
 Being the first EtF network in the ecosystem, Cryptex introduces several new cryptographic primitives which would be useful to others as well. This proposal lays the foundation for a more robust system later on, using a proof of stake consensus (Sassafras) and more sophisticated cryptographic primitives for EtF, such as [McFly](http://fc23.ifca.ai/preproceedings/189.pdf) or based on [commitment witness encryption](https://eprint.iacr.org/2021/1423.pdf). An EtF network can enable randomness beacons, sealed-bid auctions, non-interactive secret sharing, and many other use cases.
 
@@ -15,13 +19,13 @@ We want to build more extensive and secure decentralized data tools, for which t
 ### Project Details
 
 The major pieces:
-1. [IBS Block Seal](#ibe-block-seal-in-aura)
+1. [IBE Block Seals](#ibe-block-seal-in-aura)
 2. [Encryption-to-Future](#encryption-to-future-slots)
 
 For a more in-depth (informal) look at the mathematics behind this, look at [etf_aura.pdf](https://github.com/ideal-lab5/Grants-Program/blob/ibe/applications/etf_aura.pdf)
 
 #### What this is not
-- this does not use a proof of stake consensus. For the scope of the proposal, we are assuming a static, well defined validator set using PoA consensus based on Aura. 
+- For the scope of the proposal, we are assuming a static, well defined validator set using PoA consensus based on Aura.
 - the proposal does not highlight any specific privacy preserving tools nor does it use threshold signatures or any specific MPC protocols 
 - most of that is scoped for the future though
 
@@ -39,13 +43,9 @@ For the following, assume that we are using curve BLS12-381. As such, we will re
 
   We will use the [Boneh-Franklin identity based encryption scheme](https://crypto.stanford.edu/~dabo/papers/bfibe.pdf) (BF IBE) in this proposal in order to encrypt messages to future slots. 
 
-#### IBS Block Seal in Aura
+#### Block Seals in Aura
 
-The goal of this is to introduce an IBS-BLS block seal in Aura, where each slot has a unique role associated with it that we can encrypt to. In the future, we intend to migrate to [Sassafras](https://eprint.iacr.org/2023/031.pdf). This is the first step to building encryption to the future.
-
-https://docs.rs/sc-consensus-aura/latest/sc_consensus_aura/
-
-We will create a fork of Aura, wherein blocks are sealed using identity based signatures, where each slot has a role associated with it.
+The goal of this is to introduce an IBE-BLS block seal in Aura, where each slot has a unique role associated with it that we can encrypt to. In the future, we intend to migrate to [Sassafras](https://eprint.iacr.org/2023/031.pdf). This is the first step to building encryption to the future.  We will do this by creating a fork of Aura where we create a DLEQ proof of a BLS signature, which is then used to sign the block using a Fiat-Shamir transform.
 
 Assume there is a static set of validators defined on network genesis. In Aura, each validator defined in the validator set authors a block in sequential (round robin) order. More concretely, let $A = \{A_1, ..., A_n\}$ be the well defined set of authorites. For now, we'll assume that this set is static. In Aura slots are divided into discrete slots of $t$ seconds each. For any slot $s$, the winner of the slot is determined by A[s % |A|], where $A$ is the set of authorities defined on genesis. Note that this implies, in most cases, that a validator will author more than one block during an epoch.
 
@@ -70,12 +70,10 @@ Our implementation makes use of the [SessionManager](https://paritytech.github.i
   Each slot in any given epoch has a unique role associated with it, which is calculated from the slot schedule. For any given address, epoch, and slot number, we calculate a unique role by hashing the address, epoch, and slot number. Later on when encrypting, we will use this value to verify signatures. That is, the public key is $\hat{Q}_i = H(ID_i = (A_i || e_k || sl_r))$.
 
 **Block Sealing**
-  The winner of a slot $s$ calculates a secret key corresponding to $Q_i$ and uses it to sign the block. The winner calculates a signature as $S = s_i \hat{Q}_i + r H(M)$ and $T = r P$, where $M$ is the block hash, $s_i$ is the secret distributed by the coordinator, and $r$ is randomly selected from $\mathbb{Z}_p$. We implement this within the Aura client code.
+  The winner of a slot $s$ calculates a secret key corresponding to the slot seed and uses it to sign the block. This operation aligns with the extract phase of the IBE.  We implement this within the Aura client code. This works by computing a DLEQ proof $\pi = (c, r)$ where $r$ is randomly selected from the scalar field and $c = H(R_1, R_2, \hat{Q}_i, S_{slot}, b)$ where $R_1 = r G_1$, $R_2 = r G_2$ (for $G_1$, $G_2$ generators of $\mathbb{G}_1$, $\mathbb{G}_2$ resp.), and $b$ is the block hash. We then use the output to produce a proof of knowledge $pok = c s_i + r$.
 
 **Validation**
-  When other nodes import the block, they validate it by  calculating the ID for the slot and calculating the public key $Q_i$ and verifying the signature. We verify the signature by checking the pairings: $e(S, P) = e(Q_i, P_{pub}) + e(H(M), T)$. This validation logic will be executed each time a new block queued for import is validated.
-
-  Note: See [here](https://www.researchgate.net/publication/334001157_Extending_the_BLS_Scheme_to_Identity_Based_Signatures) for more details and proofs regarding the signatures and verification.
+  When other nodes import the block, they validate it by obtaining the ID for the slot and calculating the public key $Q_i$ and verifying the signature. We verify the signature by using the DLEQ proof to verify that the secret key used to seal the block was constructed by the proper slot winner.
 
 #### Encryption-to-Future-Slots
 
@@ -89,8 +87,7 @@ The high level idea for encrypting to a specific slot is that given a duration o
 
 As can be seen, it will be paramount that all participants agree on the same 'time'.
 
-
-The second type of EtF that we enable uses the threshold scheme setup in the IBS Block seal section to decrypt data. We build this off of the previous result (encryption to a slot). Here, we aggregate the public keys $\hat{Q}$ derived from each authority's identity and use the same BF IBE scheme to encrypt a message for the aggregated public key. Subsequently, using the same decryption approach as BF IBE, once at least at threshold of validators have release their key share, any messages encrypted for $\hat{Q}$ can be decrypted. 
+The second type of EtF that we enable uses the threshold scheme setup in the IBE Block seal section to decrypt data. We build this off of the previous result (encryption to a slot). Here, we aggregate the public keys $\hat{Q}$ derived from each authority's identity and use the same BF IBE scheme to encrypt a message for the aggregated public key. Subsequently, using the same decryption approach as BF IBE, once at least at threshold of validators have release their key share, any messages encrypted for $\hat{Q}$ can be decrypted. 
 
 ##### Implementation Details
 
@@ -115,7 +112,7 @@ When a slot winner's slot is active, they derive a secret key which they then us
 #### High Level Architecture
 
 We propose the architecture of the system at a high level. It consist of three pieces:
-- **blockchain**: The PoA blockchain with IBS block seals. It is a substrate based runtime with a new pallet that enables the identity based cryptosystem along with our modifications to Aura.
+- **blockchain**: The PoA blockchain with modified block sealing as above. It is a substrate based runtime with a new pallet that enables the identity based cryptosystem along with our modifications to Aura.
 - **user-agent: sdk & client**: A user-agent which handles slot scheduling, encryption, and decryption, as well as synchronization with the blockchain.
 - **application + storage layer**: Could be anything, we will use IPFS in conjunction with a smart contract or a pallet to builds apps on the network.
 
@@ -203,7 +200,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 - This proposal is a result of the discussion here: https://github.com/w3f/Grants-Program/pull/1660
-- We have a basic implementation of the BF IBE scheme over BLS12-381 here: [BasicIdent](https://github.com/driemworks/BasicIdent)
+- We have an implementation of BasicIdent over BLS12-381 here: [BasicIdent](https://github.com/driemworks/BasicIdent)
 - There are many protocols that use some form of witness encryption to accomplish something similar, for example [time lock encryption](https://eprint.iacr.org/2015/482.pdf) or [commitment witness encryption](https://eprint.iacr.org/2021/1423). Our design is inspired by these ideas but uses a simpler approach (for now...).
 - [BF IBE](https://crypto.stanford.edu/~dabo/papers/bfibe.pdf)
 - [IBS Overview](https://homepage.ruhr-uni-bochum.de/eike.kiltz/papers/ibschapter.pdf)
@@ -233,19 +230,20 @@ The following items are mandatory for each milestone:
 
 Additionally, outside the scope of the specified milestones, we also intend to formalize the ideas in this proposal within a whitepaper.
 
-### Milestone 1 — IBS Block Seal
+### Milestone 1 — Block Seals
 
 - **Estimated duration:** 1 month
 - **FTE:**  1.5
 - **Costs:** 10,000 USD
 
-Goal: Implement the IBS block seal in Aura. We do this by creating a new pallet to facilitate the identity based cryptosystem, as well as modifying the Aura pallet and client code.
+Goal: Implement the IBE block seal in Aura. We do this by creating a new pallet to facilitate the identity based cryptosystem, as well as modifying the Aura pallet and client code.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Substrate module: IBE Pallet/IBC Setup | We create a new pallet responsible for storing parameters needed for the identity based cryptosystem as detailed above. This includes param generation and distribution of secret shares for the TSS scheme. The outcome of the deliverable is the pallet capable of storing system params for the IBC, including the keygen phase managed by the SessionManager. |
-| 2. | Substrate module: Aura Client | We modify the Aura client to sign blocks with its secret key generated with the identity based cryptosystem as detailed above. We also modify the signature validation phase of consensus to verify the IBS signatures properly. For the sake of ease, the block author will publish its secret along with the block. |
-| 3. | Substrate Module: Validator Rewards | We ensure that validators are rewarded when they participate honestly within the protocol (i.e. publish a secret). We do this by making our token inflationary, where each block author is rewarded in additional tokens when they correctly output a secret. |
+| 1. | Substrate module: IBE Pallet/IBC Setup | We create a new pallet responsible for storing parameters needed for the identity based cryptosystem as detailed above. This includes param generation and distribution of the msk to authorities. The outcome of the deliverable is the pallet capable of storing system params for the IBC, including the keygen phase managed by the SessionManager. |
+| 2. | Substrate module: Aura Pallet | We modify the Aura pallet to be able to calculate epk's for each known session validator. Pubkeys will be calculated *on session planning* and encoded in runtime storage. |
+| 3. | Substrate module: Aura Client | We modify the Aura client to sign blocks with its secret key generated with the identity based cryptosystem as detailed above. We also modify the signature validation phase of consensus to verify the signature/DLEQ proof. For the sake of ease, the block author will publish its secret along with the block. |
+| 4. | Substrate Module: Validator Incentives | We ensure that validators are rewarded when they participate honestly within the protocol (i.e. publish a secret). We do this by making our token inflationary, where each block author is rewarded in additional tokens when they correctly output a secret. |
 
 ### Milestone 2 — Encryption to Future Slots
 
@@ -259,9 +257,9 @@ Goal: We want to enable encryption to future slots, including slot scheduling, e
 | -----: | ----------- | ------------- |
 | 1. | Light Client | We implement a light client (based on smoldot) with the added functionality that it: a. can open connections to specific nodes b. ensure clocks are properly set, otherwise return an error. This is to ensure proper synchronization, so that slot scheduling can be reliable/accurate. |
 | 2 | User Interface: setup | We introduce a user interface which will act as a testbed for integrations between the light client and the SDK. The user interface will be a React project, will connect to the network via the light client, and will interface with IPFS (for storage and retrieval of ciphertexts). This intention is to integrated both light client and SDK and also to ensure that interactions with the chain function as intended. |
-| 3. | SDK: Slot Scheduling | We implement logic to identify a future slot based on some future 'time' and derive its inputs and to calculate the aggregated public keys so we can encrypt 'to an epoch'. |
-| 4. | SDK: Encryption | Using an identity, the user agent will be able to encrypt to a future slot or epoch. Ciphertexts will be stored offchain in IPFS, and we will refer to stored ciphertexts by their CID. |
-| 5. | SDK: Decryption | We implement the BF IBE decryption logic and make it callable from the SDK. |
+| 3. | SDK: Slot Scheduling | We implement slot scheduling logic to identify a future slot based on some future 'time' and derive its inputs. |
+| 4. | SDK: Encryption | Using the output of the slot scheduler, the user agent will be able to encrypt to a future slot or epoch. Ciphertexts will be stored offchain in IPFS, and we will refer to stored ciphertexts by their CID. |
+| 5. | SDK: Decryption | After a block is authored for the specified future slot, we can decrypt the secret by fetching the secret published with the block (if encrypted to a slot)  or a threshold of published secrets (encrypted to epoch) and using it to decrypt the ciphertext created previously. |
  
 ### Milestone 3: Putting it all together - Sealed-Bid NFT Auction PoC
 
