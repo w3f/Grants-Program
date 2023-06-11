@@ -34,7 +34,7 @@ Farmers use the committed space to store blob data and maintain its timeliness. 
 
 #### Lifecycle
 
-![Untitled](https://s3-cn-south-1.qiniucs.com/zxxgs/zerodao/life.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=A3gHOerxzNySO2xG8IP2oSbfb8_4ytkQlBwUd1Ef%2F20230610%2Fcn-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230610T164012Z&X-Amz-Expires=599&X-Amz-Signature=2e5b5cb9aaf4f0f3b23a84e28083347036829100d851d0f0ed01db73b5eb8fcc&X-Amz-SignedHeaders=host)
+![Untitled](https://pic.tom24h.com/zerodao/life.png)
 
 A complete blob transaction includes:
 
