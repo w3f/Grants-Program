@@ -1,6 +1,25 @@
+#### Project Abstract
+
+> We are building a real estate centric lending and asset minting protocol.
+
+#### Grant [level](https://github.com/w3f/Grants-Program#level_slider-levels)
+
+- [ ] **Level 1**:  Up to $10,000, 2 approvals
+
+#### Application Checklist
+
+- [x] The [application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md) has been copied and aptly renamed (`project_name.md`).
+- [x] I have read the [application guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/grant_guidelines_per_category.md).
+- [x] Payment details have been provided (bank details via email _or_ BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) address in the application).
+- [x] The software delivered for this grant will be released under an open-source license specified in the application.
+- [x] The initial PR contains only one commit (squash and force-push if needed).
+- [x] The grant will only be announced once the first milestone [has been accepted](https://github.com/w3f/Grant-Milestone-Delivery#process) (see the [announcement guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/announcement-guidelines.md)).
+- [ ] I prefer the discussion of this application to take place in a private Element/Matrix channel. My username is: `@_______:matrix.org` (change the homeserver if you use a different one)
+
 - **Project Name:** Xcavate
 - **Team Name:** Xcavate
 - **Payment Address:** 5E28NSFGwYB9C39bYdRAQ79UKRsM6shxkJr3LG4hehycwfJc
+- **Total Costs:** $10000 USDT (Polkadot - Statemint)
 
 
 ## Project Overview
@@ -133,13 +152,13 @@ We have been taking time to play with Substrate to form initial local nodes. We 
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  4
-- **Total Costs:** $10000 USDC
+- **Total Costs:** $10000 USDT
 
 ### Milestone 1 — Initial POC of lending protocol
 
 - **Estimated Duration:** 2 months
 - **FTE:**  4
-- **Costs:** $10000 USDC
+- **Costs:** $10000 USDT
 
 We will build on the excellent work we have achieved developing the Real Estate NFT marketplace for the hackerearth.com hackerthon. 
 
