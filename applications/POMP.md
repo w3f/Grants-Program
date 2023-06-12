@@ -18,12 +18,12 @@ The POMP is a decentralized service that combines zero-knowledge technology, use
 
 Here is the basic workflow for generating:
 
-The user connects the Polkadot.js wallet to the POMP website and selects a Polkadot Parachain.
-The POMP website queries the token balance of the user’s address.
-The user generates zero-knowledge proof using Manta wallet and signs the proof by Polkadot.js.
-The POMP service recovers the user’s address from the signature and queries the token balance again to make sure the params passed are correct, and hashing the zero-knowledge proof as an encrypted key. Last, send the encrypted key + balance amount to the ink! contract and stores it on-chain.
-The user downloads the original zero-knowledge proof as a file. It's just like how mnemonic works.
-The user just needs to input the proof key into any third-party website to prove that he is the owner of a specific account in Polkadot Parachain. Because it’s easy to hash the proof key to query the token amount from the ink! smart contract.
+* The user connects the Polkadot.js wallet to the POMP website and selects a Polkadot Parachain.
+* The POMP website queries the token balance of the user’s address.
+* The user generates zero-knowledge proof using Manta wallet and signs the proof by Polkadot.js.
+* The POMP service recovers the user’s address from the signature and queries the token balance again to make sure the params passed are correct, and hashing the zero-knowledge proof as an encrypted key. Last, send the encrypted key + balance amount to the ink! contract and stores it on-chain.
+* The user downloads the original zero-knowledge proof as a file. It's just like how mnemonic works.
+* The user just needs to input the proof key into any third-party website to prove that he is the owner of a specific account in Polkadot Parachain. Because it’s easy to hash the proof key to query the token amount from the ink! smart contract.
 
 Besides generating, the users can also update/burn the encrypted proof key just to follow the same workflow.
 
