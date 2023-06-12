@@ -1,12 +1,11 @@
-#### Project Abstract
+#### Xcavate
 
 > We are building a real estate centric lending and asset minting protocol.
 
-- **Level 1**
-- **Project Name:** Xcavate
 - **Team Name:** Xcavate
 - **Payment Address:** 5E28NSFGwYB9C39bYdRAQ79UKRsM6shxkJr3LG4hehycwfJc
 - **Total Costs:** $10000 USDT (Polkadot - Statemint)
+- **Level:** 1
 
 ## Project Overview
 
