@@ -1,4 +1,7 @@
-#### Xcavate
+
+- **Project Name:** Xcavate
+- **Contact Name:** Richard Houldsworth
+- **Contact Email:** richard@xcavate.io
 
 > We are building a real estate centric lending and asset minting protocol.
 
