@@ -79,11 +79,9 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 * Richard Houldsworth – CTO
 * Alex Ward – COO
-* Jibril Danjuma Gupa - Substrate Developer
 * Ganish Oli - Substrate Developer
 * Rene Hürter - Substrate Developer
 * Neeraj Choubisa - Full Stack Developer
-* Yusuf Muhammad Bashir - Full Stack Developer
 * Victor Chukwonoso - UI/UX Designer
 
 ### Contact
@@ -102,19 +100,15 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 Richard Houldsworth – 10 years in web 2.0 dev space – serial Entrepreneur
 Alex Ward – 25 years in the global property market – serial Entrepreneur
 Ganish Oli - ink! smart contract developer and substrate blockchain developer.
-Kaioh - ink! smart contract developer and substrate blockchain developer.
 Rene Hürter - I am currently studying to become a blockchain developer. Alchemy University Ethereum Bootcamp 11/2022. Scaling Ethereum 2023 Hackathon 11/03/2023. Consensus 2023 Hackathon (Web3athon 2023) 17/04/2023.
 Neeraj Choubisa - A Passionate Full Stack Blockchain Ethereum Based Web Developer, Third-Year student at Indian Institute of Information Technology, Dharwad
-Yusuf Muhammad Bashir - A full stack developer with over 6 years of professional work experience, with great communication skills. Stacks  include: .Net Core, C#, ReactJs, Javascript, Angular, firebase and azure
 
 ### Team Code Repos
 
 https://github.com/xcavateblockchain
 https://github.com/xcavate2022
-https://github.com/gflow33
 https://github.com/ganesh1233456
 https://github.com/Kali-Decoder
-https://www.github.com/yusbash03
 https://github.com/RecrafterH
 
 ### Team LinkedIn Profiles
@@ -123,9 +117,7 @@ https://www.linkedin.com/in/richard-houldsworth/
 https://www.linkedin.com/in/alex-ward-2350a036/
 https://www.linkedin.com/in/ganesh-oli-9285a4163/
 https://www.linkedin.com/in/neeraj-choubisa-a4952b202/
-https://www.linkedin.com/in/yusuf-bashir-50907878/
 https://www.linkedin.com/in/ren%C3%A9-h%C3%BCrter-36084b249
-https://www.linkedin.com/in/jibril-g-562576208/
 
 ## Development Status :open_book:
 
@@ -141,17 +133,17 @@ We have been taking time to play with Substrate to form initial local nodes. We 
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  4
-- **Total Costs:** $30000 USDC
+- **Total Costs:** $10000 USDC
 
 ### Milestone 1 — Initial POC of lending protocol
 
 - **Estimated Duration:** 2 months
 - **FTE:**  4
-- **Costs:** $30000 USDC
+- **Costs:** $10000 USDC
 
 We will build on the excellent work we have achieved developing the Real Estate NFT marketplace for the hackerearth.com hackerthon. 
 
-In the first milestone, the features for the PoC will be implemented and tested by limited users. We will build a pallet that has a unique structure of a central community loan pool that acts as a risk reducer to allow individual loan stakers to lock and unlock native XCAV coins quickly and easily, rather than being committed to the full term of a particular loan. This will provide an attractive low risk investment opportunity and increase community confidence in the network while eliminating any delay in providing the funds to the real estate development project, once all the necessary checks have been completed. This loan pool structure could be applied to many different chains in future projects.
+In the first milestone, the features for the PoC will be implemented and tested by limited users. We will adapt FRAME pallets to create a unique structure of a central community loan pool that acts as a risk reducer to allow individual loan stakers to lock and unlock native XCAV coins quickly and easily, rather than being committed to the full term of a particular loan. This will provide an attractive low risk investment opportunity and increase community confidence in the network while eliminating any delay in providing the funds to the real estate development project, once all the necessary checks have been completed. This loan pool structure could be applied to many different chains in future projects. The execution of various stages of the dApp specific logic will built using ink! smart contracts.
 
 | Number    | Deliverables | Specification
 |:----------|:---------------------------|:------------------------ |
@@ -162,7 +154,7 @@ In the first milestone, the features for the PoC will be implemented and tested 
 | 0e. | Tutorial | We will write a tutorial about how to use Xcavate Network. |
 | 0f. | Article | We will write an article published on media channels. |
 | 1	    | Xcavate Node Repo             	    |  We will create a customized chain node with Substrate 2.0 Framework. |
-| 2        | Xcavate Loan App Repo                | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
+| 2     | Xcavate Loan App Repo               | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
 | 3. | Loan management pallet | * Manage loan application ** Land details' ** Registration * Manage loan interest percentage ** Based on land and experience * Approve/Reject request |
 | 4. | Staking pallet | * User can stake native token * Calculate APR * Distribute payouts |
 | 5. | Verification pallet | * Verification of user identity * Manage users identity * Manage loan request |
