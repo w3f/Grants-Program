@@ -1,7 +1,4 @@
-
-- **Project Name:** Xcavate
-- **Contact Name:** Richard Houldsworth
-- **Contact Email:** richard@xcavate.io
+# Xcavate
 
 > We are building a real estate centric lending and asset minting protocol.
 
@@ -93,9 +90,9 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 ### Contact
 
-* Richard Houldsworth – +44 7798 666 710
-* Alex Ward – +44 7779 885964
-* xcavate.io
+- **Contact Name:** Richard Houldsworth
+- **Contact Email:** richard@xcavate.io
+- **Website:** xcavate.io
 
 ### Legal Structure
 
