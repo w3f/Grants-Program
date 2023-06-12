@@ -69,6 +69,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Antier Solutions Pvt. Ltd.](https://github.com/kulwindersingh-ant)| [Grants webapp](Grant_management_webapp.md)                                     | [GitHub](https://github.com/kulwindersingh-ant)                   | ☐          |        ☐       |      ☐      |
 | [Zaniyar Jahany](https://github.com/Zaniyar/)                      | [Grantmaster](grantmaster.md)                                                   | [GitHub](https://github.com/Zaniyar/plant2earn/)                  | ☐          |        ☐       |      ☐      |
 | [FiDi Tech](https://fidi.tech/)                                    | [FiDi DotSight: Analytics Data Platform for DotSama](fidi-dotsight-analytics.md)| [GitHub](https://github.com/fidi-tech)                            | ☐          |        ☐       |      ☐      |
+| [Ideal Labs](https://www.idealabs.network/)                                    | [Cryptex](cryptex.md)| [GitHub](https://github.com/ideal-lab5)                            | ☐          |        ☐       |      ☐      |
 
 [🔝](#menu)
 
