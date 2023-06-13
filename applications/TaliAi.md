@@ -118,7 +118,7 @@ End state: Production-ready bot ready (once signed off on by DevRel team) to be 
 
 - **Estimated duration:** 2 weeks
 - **FTE:**  2
-- **Costs:** 2500 USD
+- **Costs:** 2,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
