@@ -7,10 +7,6 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
 We propose to build a specialized Discord bot (and or widget that lives on docs page) for Polkadot that will use the latest technology around LLM’s (Large Language Models) to import Polkadot's Github repos, documentation, video content and Discord Q&A’s to provide an interface for Polkadot users/developers to ask questions in natural language.
@@ -20,16 +16,6 @@ The idea is to provide another member to Polkadot's DevRel team, reducing suppor
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
-
 Tali works by ingesting various data sources associated with a project, including documentation, articles, YouTube videos, tutorials, and Q&A's. This data is then stored in a vector database and can be queried against.
 
 When the Tali is asked a question responses typically take between 30-40 seconds, with the timing largely dependent on OpenAI. We're transitioning to a self-hosted approach to bypass any bottlenecks. Our ultimate goal is to reduce the wait time to just 10 seconds. Consider our current process as a funnel: the topmost part is Information Retrieval (IR), followed by several zero-shot prompts that eventually lead to the answer.
@@ -38,8 +24,6 @@ Specifically, we store the document embeddings in a vector database and perform 
 
 
 ### Ecosystem Fit
-
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 The core of technical Web3 projects depends on a healthy ecosystem of developers using the protocols. Developers learn how to use the various projects through inspecting developer docs and Github repositories. As expected, the documentation doesn’t cover everything and a team of people are needed to provide “front line” support to those building / using the protocol.
 
