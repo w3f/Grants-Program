@@ -130,13 +130,11 @@ End state: Production-ready bot ready (once signed off on by DevRel team) to be 
 - **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** $5,000 USD 
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 Example — Test Bot 
 
 - **Estimated duration:** 2 weeks
 - **FTE:**  2
 - **Costs:** 2500 USD
-
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -144,7 +142,7 @@ End state: Production-ready bot ready (once signed off on by DevRel team) to be 
 
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 Example — Production Bot 
 
 - **Estimated Duration:** 2 weeks
 - **FTE:**  2
