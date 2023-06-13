@@ -1,6 +1,6 @@
 # Tali AI - Developer Support Bot 
 
-- **Team Name:** Tali AI 
+- **Team Name:** Tali AI (tryTali.com)
 - **Payment Address:** 0xce6BF74d6B9D998E5f44364899DaBe3cb3bA8497
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
