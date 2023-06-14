@@ -1,4 +1,4 @@
-# Name of your Project
+#Halo
 
 
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
