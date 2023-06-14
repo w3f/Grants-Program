@@ -1,7 +1,7 @@
 # xNFT
 
 - **Team Name:**  Starks
-- **Payment Address:**  0x2492237FA7698B8F3B35F2be4be3B1128439Ec8d USDT
+- **Payment Address:** 0x2492237FA7698B8F3B35F2be4be3B1128439Ec8d (USDC) **
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -45,6 +45,7 @@ The Crosschain NFT Pallet is a unique initiative designed to facilitate the smoo
 
 #### Project does not include:
 - This pallet does not let you create, mint or burn any NFT this just to send them to other chains by making use of the XCM functionality
+- This pallet will not be able to transfer any NFT that is not registered using the NFT pallet for Substrate(i.e NFT deployed as smart contracts).
 
 ### Ecosystem Fit
 
@@ -61,8 +62,9 @@ The Crosschain NFT Pallet is a unique initiative designed to facilitate the smoo
 
 ### Team members
 
-- **Team lead:** [Jatinder Singh](https://github.com/jatinder116?tab=repositories)  
-- **Team member:** [Aqueel Abbas](https://github.com/tur461)
+- **Team lead:** [Aqueel Abbas](https://github.com/tur461)
+- **Team member:** [Jatinder Singh](https://github.com/jatinder116?tab=repositories)  
+
 
 ### Contact
 
@@ -77,6 +79,11 @@ The Crosschain NFT Pallet is a unique initiative designed to facilitate the smoo
 ### Team's experience
 
 We are a skilled and dedicated group of professionals who possess extensive experience working with the Substrate ecosystem. Our team members have successfully completed numerous projects related to Substrate development, including building custom blockchains, implementing governance mechanisms, and designing smart contract for intuitive dApp functionalites. We understand the importance of technical partnerships in fostering innovation and growth within the blockchain industry. We are confident that our knowledge of the Substrate framework and its capabilities will enable us to contribute significantly to the development and expansion of Polka's ecosystem.
+
+Stack exchange profiles of some of our team members:
+1. https://substrate.stackexchange.com/users/3136/wakar-seraj-khan
+2. https://substrate.stackexchange.com/users/406/akash-singh
+3. https://substrate.stackexchange.com/users/4068/upendra-singh
 
 We are the technical partners for [Peer Coin](https://explorer.peer.inc/)
 
@@ -101,11 +108,11 @@ We are the technical partners for [Peer Coin](https://explorer.peer.inc/)
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | xNFT | pallet code to transfer NFT accross chains |
+| 1. | xNFT | We will create a Substrate module that will handle cross-chain NFT transfers using these functions: 1. transferSingle 2. transferMulti 3. transferSingleWithFee 4. transferMultiWithFees   |
 
 ## Future Plans
 
-Currently this project is solely to transfer NFT between Substrate based chains. In future we plan to extend this functionality to non-substrate chains like Ethereum, Solana etc. We also plan to extend the functionality of this pallet to substrate based solo-chains as well(solo to solo).
+Currently this project is solely to transfer NFT between Substrate based chains. In future we plan to extend this functionality to non-substrate chains like Ethereum, Solana etc. We also plan to extend the functionality of this pallet to substrate based solo-chains as well(solo to solo). We will also add support to transfer NFT deployed to the chains as smart contracts.
 
 ## Additional Information :heavy_plus_sign:
 
