@@ -27,6 +27,13 @@ Here is the basic workflow for generating:
 
 Besides generating, the users can also update/burn the encrypted proof key just to follow the same workflow.
 
+The front-end website:
+
+![](https://raw.githubusercontent.com/pomp-money/pomp-documents/main/designs/mint.png)
+![](https://raw.githubusercontent.com/pomp-money/pomp-documents/main/designs/mint-options.png)
+![](https://raw.githubusercontent.com/pomp-money/pomp-documents/main/designs/minted.png)
+
+
 ### Ecosystem Fit
 
 To prove ownership of DOT or other Polkadot Parachain cryptocurrencies, we need to prove that we know the private key. However, we would not want to reveal the private key, as revealing even part of the private key or an image of the private key could put our ownership at risk. By having the private key — or even part of it and then using sophisticated software to attempt to guess the rest of it — hackers can steal your cryptocurrency. 
@@ -80,4 +87,4 @@ We are a decentralized team focusing on the blockchain industry since 2020. We a
 | 0d. | Article | We will publish an **article** that explains what this grant achieved.|
 | 1. | Javascript Library | We will deliver a JS library that will implement the functionality described under the "Workflow" part, including recovering the address from the signature, verifying the asset amount, hashing the ZK proof key, and integrating it with the ink!  smart contract functions.|
 | 2. | ink! Smart contracts | We will deliver a smart contract that will manage the encrypted proof keys and verified crypto assets. Including Add/Update/Query/Burn encrypted proof key. |
-| 3. | PC website | We will deliver a PC website for crypto asset owners to Generate/Update/Burn/Verify encrypted proof keys.
+| 3. | Front-end website | We will deliver a Front-end website for crypto asset owners to Generate/Update/Burn/Verify encrypted proof keys.
