@@ -1,4 +1,4 @@
-#Halo
+# Halo
 
 
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
@@ -12,7 +12,7 @@
 
 Please provide the following:
 
-- This project aims to create a Parachain Development Kit to optimize data throughput and on chain processing capabilities via utilization of hypergraph algorithms
+- This project aims to create a Parachain Development Kit to optimize data throughput and on chain processing capabilities via utilization of hyperchain graph algorithms
 - A brief description of your project.
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 - An indication of why your team is interested in creating this project.
