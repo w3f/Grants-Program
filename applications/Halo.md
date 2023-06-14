@@ -50,20 +50,21 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+Zachary Hayden
+Jason Lobell
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Zachary Hayden
+- **Contact Email:** Zachary0249@gmail.com
+
+- **Contact Name:** Jason Lobell
+- **Contact Email:** jasonlobell123@gmail.com
 
 ### Legal Structure
 
 - **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
-
+- **Registered Legal Entity:** Halo LLC
 ### Team's experience
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
