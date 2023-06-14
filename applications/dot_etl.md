@@ -105,7 +105,7 @@ We are currently in research phase;  Development / coding has not started on thi
 
 ### Overview
 
-- **Total Estimated Duration:** TBD
+- **Total Estimated Duration:** 8 months
 - **Full-Time Equivalent (FTE):**  0.25
 - **Total Costs:** 26,000 USD
 
