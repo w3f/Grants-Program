@@ -16,20 +16,21 @@ We will migrate api,table extension,u256 functions from **aptos** into it.
 
 This project will primary enhance  move smart contract pallet :
 
-1. Add  'GetModuleABI' json string bytes format version RPC APIs,
- 	'GetResource' json string bytes format verion.In order to implement [`build bcs transaction with remote ABI` in aptos](https://github.com/aptos-labs/aptos-core/blob/09359aa961e909699939783bd438e967ca381bdb/ecosystem/typescript/sdk/src/tests/e2e/aptos_client.test.ts#L188).(refer to [aptos-core api](https://github.com/aptos-labs/aptos-core/tree/main/api)).
+1. Add json  RPC APIs
+ 	 - `getModuleABIs`,in order to implement `build bcs transaction with remote ABI`.
+ 	 - `getResources`.
+ 	 - `encodeSubmission`.
  	
-2. Add Table extension( Move language with large-scale storage tables ).
-	 - Add `getTableEntry` get table item json string bytes in Move smart contract pallet[MVM pallet](https://github.com/pontem-network/pontem/blob/master/pallets/sp-mvm/rpc/src/lib.rs).
-    - Add table extension  and writeset code logic in [Pontem sp-move-vm](https://github.com/pontem-network/sp-move-vm.git).(refer to **aptos**).
-    - Add table extension support in [Pontem Dove](https://github.com/pontem-network/dove.git).
-    - Add `table.move` in [Pontem pont-stdlib](https://github.com/pontem-network/pont-stdlib)((migrate from **aptos**).
+2. Add Table extension(Move language with large-scale storage tables ).
+	 - Add `getTableEntry` get table item json string bytes in Move smart contract pallet rpc.
+    - Add table extension  and writeset code logic in sp-move-vm.
+    - Add table extension support in Dove.
+    - Add `table.move` in pont-stdlib.
    
 3. Add U256,U32,U16 support 
-	
-	- Add its code in [Pontem MVM pallet](https://github.com/pontem-network/pontem/tree/master/pallets/sp-mvm)
-	- Add its code in [Pontem sp-move-vm](https://github.com/pontem-network/sp-move-vm.git)
-	- Add its code in [Pontem Move](https://github.com/pontem-network/move/tree/release-1.7.1)
+	- Add its code in Move smart contract pallet.
+	- Add its code in **sp-move-vm**.
+	- Add its code in **Move**.
 
 ### Maintenance list
 
@@ -82,40 +83,84 @@ None
 
 ## Maintenance Responsibilities :nut_and_bolt:
 
-This section should specify what kind of tasks and responsibilities the maintainer team will cover during future development. If you have already outlined a list of issues/bugs or pull requests that need further development - you can specify them here to provide more context on what tasks you will close.
-
-Also, make sure the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it will make more sense for the current owners to transfer the repository to your organization. If you can't get in touch with them, you may, of course, work on a fork).
-
-Below we provide **example maintenance responsibilities**.
-
 Issues we want to fix:
 
-- There's command line paremeter -h conflict issue in [Pontem Dove](https://github.com/pontem-network/dove.git).
-- There's dove command subcommand and parameter issue in build move lib bash script in [Pontem sp-move-vm](https://github.com/pontem-network/sp-move-vm.git).
+- There's command line paremeter -h conflict issue in Dove.
+- There's dove command subcommand and parameter issue in build move lib bash script in sp-move-vm.
 
 Our responsibilities:
 
-- Move [Pontem MVM pallet](https://github.com/pontem-network/pontem/tree/master/pallets/sp-mvm),[Pontem currencies pallet](https://github.com/pontem-network/pontem/tree/master/pallets/currencies),[Pontem groupsign pallet](https://github.com/pontem-network/pontem/tree/master/pallets/groupsign) into   substrate-node-template (https://github.com/substrate-developer-hub/substrate-node-template) as Move contract Node.
-- Add  (get resource,get module abi,get table entry)  rpc  apis (return json string bytes)   in Move smart contract pallet([Pontem MVM pallet](https://github.com/pontem-network/pontem/tree/master/pallets/sp-mvm)).
-- Add Table extension in [Pontem sp-move-vm](https://github.com/pontem-network/sp-move-vm.git) , [Pontem Dove](https://github.com/pontem-network/dove.git).  
-- Add U256,U32,U16 support in [Pontem MVM pallet](https://github.com/pontem-network/pontem/tree/master/pallets/sp-mvm), in [Pontem sp-move-vm](https://github.com/pontem-network/sp-move-vm.git),in [Pontem Move](https://github.com/pontem-network/move.git).
+- Build Move contracts Node that integrates Move smart contract pallet.
+- Add  `getModuleABIs`,`getResources`,`encodeSubmission `,`getTableEntry`  RPC  APIs   in Move smart contract pallet.
+- Add Table extension in sp-move-vm, Dove.  
+- Add U256,U32,U16 support in Move smart contract pallet,in Move.
 
 ### Overview
 
-- **Start Date:** 2023/06/01.
-- **Sprint/Period Duration:** 4 weeks
-- **Total Duration:** 8 weeks
-- **Full-Time Equivalent (FTE):**  1 FTE
-- **Max budget per sprint/period:** 10,000 USD.
-- **Hourly rate:** 150 USD.
+- **Total Estimated Duration:** 2 month
+- **Full-Time Equivalent (FTE):**   1 FTE
+- **Total Costs:**  10,000 USD. 
 
+### Milestone 1  — Move smart contract json rpc
+
+- **Estimated duration:** 1 month
+- **FTE:**  1.5
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 and MIT |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. |'getModuleABIs' rpc method in Move Smart contract pallet rpc | 'GetModuleABIs' rpc method  will implement get move module abi json format version rpc api. It return move module abi json string bytes  |
+| 2. |'getResources' rpc method in Move Smart contract pallet rpc |  'GetResources' rpc method  will implement get move struct resource json format version rpc api. It return move struct resource json string bytes |
+| 3. | 'encodeSubmission' rpc method in Move Smart contract pallet rpc  | 'encodeSubmission' rpc method  will implement move module public script function call transaction data encoded in BCS , makes it possible to submit transaction to the API from languages that do not have library support for BCS |
+| 3. | 'getTableEntry' rpc method in Move Smart contract pallet rpc  | 'getTableEntry' rpc method  will implement move struct table item json string bytes.|
+| 4. | Substrate chain | Modules Move Smart contract of our custom chain will interact in such a way, allowing a user to get move module abi json string bytes and get move contract struct resource json string bytes and get bcs transaction data bytes of given move module public script function paremters and get table item json string bytes of given table handle and id. |
+| 5. | table-extension in sp-move-vm | We will implement the functionality of TableResolver trait and table write set code logic. |
+| 6. | table-extension in dove | We will add table-extension support in dove|
+| 7. | Add table.move in pont-lib | We will add table in pont-lib,and remove older config item in Move.toml in pont-lib|
+| 8. | Remove older config item in Move.toml in move-lib | We will remove older config item in Move.toml in move-lib|
+
+### Milestone 2 — Move smart contract U256 Support
+
+- **Estimated Duration:** 1 month
+- **FTE:**  1
+- **Costs:** 10,000 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 and MIT |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains the usage detail of move contract json rpc api and  table in move contract and view move resource json. |
+| 1. | U256,U32,U16 in Move Contract pallet RPC | We will add a U256 Type support in Move struct parser  |
+| 2. | U256,U32,U16 in sp-move-vm | We will add a U256 Type support in Move VM |
+| 3. | U256,U32,U16 in Move language library | We will add a U256 Type support in Move language library  |
+| 4. | Substrate chain | Modules Move Smart contract of our custom chain will interact in such a way, allowing a user to use U256 in move contract,submit include u256 bcs transaction. |
+| 5. | convert move file name and module name from pascal case to snake case in pont-lib | We will convert file name and module name from pascal case to snake case in pont-lib|
+| 6. | convert move file name and module name from pascal case to snake case in move-lib | We will convert file name and module name from pascal case to snake case in move-lib|
 
 ## Future Plans
 
-- Move contract Examples(migrate from [aptos move examples](https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/move-examples)).
-- Move contract UI (based in [aptos ecosystem typescript sdk](https://github.com/aptos-labs/aptos-core/tree/main/ecosystem/typescript/sdk) and [paritytech contracts-ui](https://github.com/paritytech/contracts-ui.git))
-- BCS Transaction Builder SDK in Python(migrate from [aptos ecosystem python sdk](https://github.com/aptos-labs/aptos-core/tree/main/ecosystem/python/sdk))
-- Move vscode ide plugin/Move playground(based in [move vscode plugin](https://github.com/pontem-network/vscode-move-ide.git))
+
+1. Maintenance Move Smart contract pallet and sp-move-vm
+	 - We will continue maintenance move smart contract pallet and sp-move-vm ,keep  Move VM version accord to common function in **Move language** and **Aptos**  Repo.
+	 - The function of the Move Smart contract pallet will be enhanced mainly based on application requirements, and the version will be updated in a timely manner according to the **Move language** and **Aptos**  Repo.
+2.  Move contract Examples.
+	- Implement  commonly used token standards, DEFI, DAO, governance and other typical move contract examples.
+
+3.  Move contract UI 
+	- Implement deploying move contract modules or packages, testing contract public interface methods, viewing the on-chain status of structures in contracts, and viewing transaction execution events.
+4.  BCS Transaction Builder SDK
+	- Typescript SDK.
+	- Python SDK.
+	- Others based on BCS SDK.
+5.  Move vscode IDE Plugin/Move playground
+	- Committed to implement a simple, convenient editing, compiling, deploying, testing and development move smart contract environment.
 
 
 ## Additional Information :heavy_plus_sign:
