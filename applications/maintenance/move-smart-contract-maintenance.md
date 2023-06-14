@@ -99,7 +99,7 @@ Our responsibilities:
 
 - **Total Estimated Duration:** 2 month
 - **Full-Time Equivalent (FTE):**   1 FTE
-- **Total Costs:**  10,000 USD. 
+- **Total Costs:**  20,000 USD. 
 
 ### Milestone 1  — Move smart contract json rpc
 
