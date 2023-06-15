@@ -124,7 +124,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Decentration](https://www.decentration.org/)                    | [Supersig Phase 2](./supersig_fellowship.md)                                                                        | [GitHub](https://github.com/decentration)                           | ☐          |       ☒        |     ☐     |
 | [Polkadrys Labs](https://github.com/rtomas)                    | [Open Payroll](./openPayroll.md)                                                                        | [GitHub](https://github.com/rtomas)                           | ☐          |       ☐        |     ☐     |
 | [Itering](https://www.itering.io/)                    | [Solidity Verifier Implementation for Accountable Light Client](./solidity-verifier-for-accountable-light-client.md)                                                                        | [GitHub](https://github.com/darwinia-network)                           | ☐          |       ☒        |     ☐     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ## 2022
 
@@ -171,7 +172,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | OCamlMyCaml                                                                    | [PrivaDEX: Cross-Chain DEX Aggregator MVP](PrivaDEX_aggregator.md)                                                                                   | [GitHub](https://github.com/kapilsinha/privadex)                     | ☐          |       ☒        |     ☒     |
 | [Aband-Network](https://a.band/)                                               | [Substrate Parachain PoS Template](substrate-parachain-PoS-template.md)                                                                              | [GitHub](https://github.com/Aband-Network/substrate-parachain-PoS-template) | ☐          |       ☒        |     ☒     |
 | [MangoBOX labs](https://www.mangobox.xyz/)                                     | [MangoSale Protocol](MangoSale_Protocol.md)                                                                                                          | [GitHub](https://github.com/Mangoboxlabs)                            | ☐          |       ☒        |     ☐     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 15 - Q3 2022
 
@@ -216,7 +218,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | ALPHA LABS                                                   | [Binary merkle tree](./binary_merkle_tree.md)                                                 | [GitHub](https://github.com/frisitano)                                 | ☐          |       ☒        |     ☐     |
 | [Standard Protocol](https://standard.tech/)                  | [New Order - a full onchain orderbook dex with indexers](./Standard_Protocol.md)              | [GitHub](https://github.com/standardweb3)                              | ☒          |       ☐        |     ☐     |
 | [hack-ink](https://github.com/hack-ink)                      | [Subalfred](./subalfred.md)                                                                   | [GitHub](https://github.com/hack-ink/subalfred)                        | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 14 - Q2 2022
 
@@ -258,7 +261,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Codelight](https://massbit.io/)                           | [Massbit Route](./massbit_route.md)                                                                     | [GitHub](https://github.com/massbitprotocol/massbitroute)              | ☐          |       ☒        |     ☒     |
 | [Hypha Hashed Partners](https://hypha.earth/)              | [Social Recovery Wallet](./social_recovery_wallet.md)                                                   | [GitHub](https://github.com/hypha-dao)                                 | ☐          |       ☒        |     ☒     |
 | [MangoBOX labs](http://mangobox.xyz/)                      | [MangoBOX Protocol](./MangoBOX-Protocol.md)                                                             | [GitHub](https://github.com/Mangoboxlabs)                              | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 13 - Q1 2022
 
@@ -296,7 +300,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [SaaS3 Lab](https://www.saas3.io)                     | [SaaS3](./SaaS3.md)                                                                     | [GitHub](https://github.com/SaaS3Lab)                                  | ☐          |       ☒        |     ☐     |
 | [NUTS Finance](https://nuts.finance)                  | [DOT-pegged derivative built on top of the stable asset protocol](./tdot.md)    | [GitHub](https://github.com/nutsfinance/)                              | ☒          |       ☒        |     ☐     |
 | [Strategy Object](https://strategyobject.com/)        | [Substrate Client for Java](./substrate_client_java.md)                                 | [GitHub](https://github.com/strategyobject/substrate-client-java)      | ☐          |       ☒        |     ☐     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ## 2021
 
@@ -325,7 +330,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | [A freelancing decentralized application](./universaldot.me.md)                           | [GitHub](https://github.com/UniversalDot)                                  | ☐          |       ☒        |     ☒     |
 | [AdMeta](https://admeta.network/)                          | [A privacy-preserving Ad Platform](./AdMeta.md)                                           | [GitHub](https://github.com/AdMetaNetwork/admeta)                          | ☐          |       ☒        |     ☒     |
 | Crypto Pay Lab (CPL))                                      | [Dotpay a github paid task platform using DOT](./DotPay.md)                               | [GitHub](https://github.com/bytepayment)                                   | ☐          |       ☒        |     ☐     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 11 - Q3 2021
 
@@ -357,7 +363,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [UNI-ARTS](https://app.uniarts.network/)        | [Ruby Substate Client](./rb_substrate_client.md)                                          | [GitHub](https://github.com/uni-arts-chain/sr25519) | ☐          |       ☒        |     ☐     |
 | [Skye Kiwi](https://skye.kiwi/)                 | [SkyeKiwi Protocol](./skyekiwi-protocol.md)                                               | [GitHub](https://github.com/skyekiwi)               | ☐          |       ☒        |     ☒     |
 | [Evercity](https://evercity.io/)                | Sustainable Finance Protocol                                                              | [GitHub](https://github.com/EvercityEcosystem)      | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 10 - Q2 2021
 
@@ -392,7 +399,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Stake Technologies](https://stake.co.jp/)                         | [ZK Plonk Pallet](./zk-plonk.md)                                                                    | [GitHub](https://github.com/PlasmNetwork)                              | ☐          |       ☒        |     ☒     |
 | [CryptoLab](https://www.cryptolab.network)                         | [Staking Reward Collector](./cryptolab-staking-reward-collector-front-end.md)                       | [GitHub](https://github.com/cryptolab-network)                         | ☐          |       ☒        |     ☒     |
 | [Yatima Inc](https://github.com/yatima-inc/yatima)                 | [Lambda-VM and programming language for Substrate](./yatima.md)                                     | [GitHub](https://github.com/yatima-inc/yatima)                         | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 9 - Q1 2021
 
@@ -446,7 +454,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Bit.Country](http://bit.country/)                                      | [A decentralized world - Phase 2](./bit_country_m2.md)                                                                        | [GitHub](https://github.com/bit-country)                                                     | ☐          |       ☒        |     ☒     |
 | [Vera](https://veraprotocol.org/)                                       | [NFT Lending + Exchange](./vera_defi.md)                                                                                      | [GitHub](https://github.com/veraprotocol)                                                    | ☐          |       ☒        |     ☒     |
 | [Parallel Finance](https://parallel.fi/#/)                              | [Decentralized lending/borrowing and staking protocol](./Parallel.md)                                                         | [GitHub](https://github.com/parallel-finance/parallel)                                       | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ## 2020
 
@@ -497,7 +506,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Evanesco](https://evanesco.org/)                                 | [Private network protocol](./evanesco_networks.md)                                                                                                    | [GitHub](https://github.com/Evanesco-Labs)                 | ☐          |       ☒        |     ☒     |
 | [HugoByte](https://hugobyte.com/)                                 | [Project Aurras: Event Manager](./project_aurras_mvp_phase_1.md)                                                                                      | [GitHub](https://github.com/HugoByte)                      | ☐          |       ☒        |     ☒     |
 | [Bounce Protocol](https://bounce.finance/)                        | [Decentralized Auction Protocol](./bounce-protocol.md)                                                                                                | [GitHub](https://github.com/bouncefinance/bounce-network)  | ☐          |       ☐        |     ☐     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 7 - Q3 2020
 
@@ -534,7 +544,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Adoriasoft](https://adoriasoft.com/)                            | Cosmos-SDK Parachain Development Kit Phase 2                                                                                                                                             | [GitHub](https://github.com/adoriasoft/cosmos-sdk)                    | ☐          |       ☒        |     ☒     |
 | [sup](https://github.com/clearloop/sup)                          | [Command line tool for generating or upgrading a Substrate node](./sup.md)                                                                                                               | [GitHub](https://github.com/clearloop/sup)                            | ☐          |       ☒        |     ☒     |
 | [Shard Labs](https://shardlabs.io)                               | [Tip or Donate KSM Embeddable Button](./KSM-embeddable-tip-or-donate-button.md)                                                                                                          | [GitHub](https://github.com/Shard-Labs)                               | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 6 - Q2 2020
 
@@ -573,7 +584,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [FlexDapps](https://flexdapps.com/)                       | Gantree Phase 4                                                                                                                               | [GitHub](https://github.com/flex-dapps)                          | ☐          |       ☐        |     ☐     |
 | [Zondax](http://zondax.ch/)                               | Ledgeracio: A command-line tool and Ledger app designed for staking operations                                                                | [GitHub](https://github.com/paritytech/ledgeracio)               | ☐          |       ☒        |     ☒     |
 | [Dipole Tech](https://www.dipole.tech)                    | [Dipole Oracle: Distributed energy resource management](./DipoleOracle.md)                                                                    | [GitHub](https://github.com/DipoleTech/dipole-oracle)            | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ### 🏄‍♀️ Wave 5 - Q1 2020
 
@@ -616,7 +628,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [SelfKey](https://selfkey.org/)                                                                             | SelfKey DIDs & Claims as Ink! Smart Contracts                                                                                                                                                 | [GitHub](https://github.com/SelfKeyFoundation)                                                   | ☐          |       ☐        |     ☐     |
 | [Lyken](https://lyken.rs/)                                                                                  | [Rust trait system revamp](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/rust_trait_system_revamp.md)                                                          | [GitHub](https://github.com/LykenSol)                                                            | ☐          |       ☒        |     ☐     |
 | [Chorus One](https://chorus.one/)                                                                           | Grandpa light client in Tendermint                                                                                                                                                            | [GitHub](https://github.com/ChorusOne)                                                           | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#menu)
 
 ## 2019
 
@@ -650,6 +663,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Stacktical](https://stacktical.com/)                  | [Performance Management Runtime Modules](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/predictive_performance_management_runtime_module.md) | [GitHub](https://github.com/Stacktical)                          | ☐          |       ☒        |     ☐     |
 | [Sean Young](https://www.mess.org/)                    | Solidity to WASM compiler                                                                                                                                                  | [GitHub](https://github.com/hyperledger-labs/solang)             | ☐          |       ☒        |     ☒     |
 | [Chain Security](https://chainsecurity.com/)           | Tool for validating correctness of Polkadot runtimes                                                                                                                       | [GitHub](https://github.com/ChainSecurity/polpatrol)             | ☐          |      ☒        |     ☒     |
+
 [🔝](#menu)
 
 ### 🏄‍♀️ Wave 3 - Q3 2019
@@ -670,6 +684,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [DappForce](http://dappforce.io)                         | [SubSocial - Substrate module and web UI for decentralized communities](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/Subsocial.md)                  | [GitHub](https://github.com/dappforce/dappforce-subsocial)             | ☐          |       ☒        |     ☒     |
 | [Phala.Network](https://phala.network/)                  | [pLibra, Privacy Bridge between Polkadot and Libra chain](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/pLIBRA.md)                                   | [GitHub](https://github.com/Phala-Network/)                            | ☐          |       ☒        |     ☐     |
 | [Wiv](http://wiv.io/)                                    | Supply chain modules and front-end UI                                                                                                                                               | [GitHub](https://github.com/wivtech)                                   | ☒          |       ☐        |     ☐     |
+
 [🔝](#menu)
 
 ### 🏄‍♀️ Wave 2 - Q2 2019
@@ -688,6 +703,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [HOPR](https://hopr.network/)                 | [Substrate integration with this P2P messaging protocol](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/messaging.md)             | [GitHub](https://github.com/validitylabs/HOPR-PL-Substrate)         | ☐          |       ☒        |     ☒     |
 | [Mailchain](https://mailchain.xyz/)           | a Multi-Blockchain Messaging Application                                                                                                                        | [GitHub](https://github.com/mailchain)                              | ☐          |       ☒        |     ☒     |
 | [Usetech](http://usetech.com/blockchain.html) | [Polkadot C++ API](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/cpp_api.md)                                                     | [GitHub](https://github.com/usetech-llc/polkadot_api_cpp)           | ☐          |       ☒        |     ☒     |
+
 [🔝](#menu)
 
 ### 🏄‍♀️ Wave 1 - Q1 2019
@@ -705,3 +721,4 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Protos](http://protosmanagement.com/)        | Open Source Node Explorer                                                                                                                               | [GitHub](https://github.com/protos-research/polkadot-node-explorer)         | ☒          |       ☒        |     ☐     |
 | [Supercomputing Systems](https://www.scs.ch/) | [Substrate Transaction Privacy using Intel SGX](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/substrate_sgx_proposal.md) | [GitHub](https://github.com/scs/substraTEE)                                 | ☐          |       ☒        |     ☒     |
 
+[🔝](#menu)
