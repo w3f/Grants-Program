@@ -16,7 +16,7 @@ The Polkadot and Kusama ecosystems have nurtured a significant developer communi
 
 Dot-ETL will be similar in functionality to the [Ethereum ETL project](https://ethereum-etl.readthedocs.io/en/latest/). In the same way that the ETH-ETL offering Ethereum transaction data as a Public Dataset from Google has helped to establish higher TVL and adoption of the Ethereum network, the goal is that by making PolkaDot transactional data easily accessible without the majority of data engineering tasks that exist in extracting data in usable form from the blockchain will lead to greater development and interest for the protocol by mainstream users of platforms such as Google Cloud. Once data is supported and provided in this format, there are also other potential use cases that can expand adoption of PolkaDot data by the blockchain industry such as easily being able to host Chainlink oracles for this data and provide it in readily available form for a number of different cross-chain applications. The open nature of the google bigquery dataset would allow anyone to query and extract insights from on-chain activity via SQL, or even build visualizations on thedata. 
 
-Upon successful completion of transaction activity on the Polkadot relay chain, we plan to expand to parachains within the Polkadot ecosystem, with a particular focus on Defi and RWAs.  We believe that providing focus on DeFi activity related to Real World Assets on Google Cloud is the most promising use of public data to attract attention to the ecosystem.
+Upon successful completion of the primary data structures (blocks, extrinsics, events), we plan to provide a framework / pattern to extract extrinsics tailored to specific parachains.  We may explore Defi and RWAs in more depth: we believe that providing focus on DeFi activity related to Real World Assets on Google Cloud is the most promising use of public data to attract attention to the ecosystem.
 
 We also intend to publish guides on how to query and use the dataset (i.e. medium articles, github wikis, gitbook document site).   The source code for Dot-ETL will be made public through the Web3 foundation. 
 
@@ -33,11 +33,11 @@ The design of the ETL will allow for a varied series of output formats.  Users o
 
 The architecture and process of executing airflow pipelines within GCP composer are fairly well-documented.  We expect that the infrastructure / architectural components for Dot-ETL will be similar to standard deployments within GCP composer - we are unlikely to require anything truly bespoke.
 
-The first milestone of the project will focus around blocks and extrinsics in Substrate, and will produce the following tables: blocks, extrinstics/transactions, events, balances.  Subsequent milestones will engage with parachains within the Polkadot / Kusama ecosystem, particularly those with Defi applications and RWAs (Real-World Assets).  **We believe that providing focus on DeFi activity related to Real World Assets on Google Cloud is the most promising use of public data to attract attention to the Polkadot ecosystem.**
+The first milestone of the project will focus around blocks, extrinsics and events in Substrate, and will produce the same base-level tables (blocks, extrinsics, events).  Subsequent milestones will propose a means to extract specific extrinsics / events from particular pallets and parachains, with a possible focus on Defi / RWAs.  **We believe that providing focus on DeFi activity related to Real World Assets on Google Cloud is the most promising use of public data to attract attention to the Polkadot ecosystem.**
 
 We're still investigating the appropriate schema details that will capture data in the most useful /optimal way, but believe that the core tables / schema will be very similar to that of the [Ethereum ETL project](https://ethereum-etl.readthedocs.io/en/latest/).  
 
-There are two main components of the project.  The first is the configuration of the SubQuery managed node that will index the components of Substrate that we are interested in. The second component is the Airflow DAG that will communicate with the SubQuery node via a GraphQL API.  The DAG will write updates to BigQuery tables.  This can be customized and extended further.
+There are two main components of the project.  The first is the configuration of the SubQuery managed node that will index the components of Substrate that we are interested in. The second component is the Airflow DAG that will communicate with the SubQuery node via a GraphQL API.  The DAG will write updates to underlying formats. The initial focus will be on writing to BigQuery tables, but the framework should be written such that other providers / database formats can be accommodated.  While we may not write drivers / handlers for each provider or database type, the framework will be written in such a way that will allow the community to write specific handlers that can be easily plugged into the existing framework.
 
 ### Ecosystem Fit
 
@@ -45,7 +45,7 @@ Questions / Answers on Ecosystem Fit:
 
 **Q: Where and how does your project fit into the ecosystem?**
 
-A: Our aim is to provide a foundational framework and approach to ETLing Substrate data into the GCP BigQuery cloud storage medium.  A robust illustrative example will allow others to build upon / extend the framework, and run and maintain the ETL process for general community use.  By transforming into GCP BigQuery, we hope to drastically lower the friction required for anyone to analyze and produce insights on the data (developers, analysts, investors, enthusiasts).  
+A: Our aim is to provide a foundational framework and approach to ETLing Substrate data into the GCP BigQuery cloud storage medium (+ other mediums as needed).  A robust illustrative example will allow others to build upon / extend the framework, and run and maintain the ETL process for general community use.  By transforming into GCP BigQuery, we hope to drastically lower the friction required for anyone to analyze and produce insights on the data (developers, analysts, investors, enthusiasts).  
 
 **Q: Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?**
 
@@ -123,10 +123,11 @@ We are currently in research phase;  Development / coding has not started on thi
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article and detailed documentation that explains how to set up the basic Dot-ETL (audience: developers, etc).  We will also publish a few articles introducing the public dataset, a repository of queries and tutorials for a broader audience to get running with the public dataset immediately. |
 | 1. | Create SubQuery Managed Node | Utilize SubQuery framework to create a running indexer node on SubQuery's managed services, reading and indexing blocks on the Polkadot network (may involve a few iterations for testing) |
-| 2. | Set up BigQuery Schema to pull data (blocks, extrinsics, events) | Finalize stored format in BigQuery  |
-| 3. | Airflow workflows to read SubQuery updates | Read updates from SubQuery node via GraphQL queries and write to BigQuery on a periodic timeframe|
-| 4. | Deploy Airflow to Google Composer | Staging and Prod deployment pipelines for Airflow to GCP Composer |
-| 5. | Detailed documentation / developer guides | Write dev guides to address how to extend version 1 of this framework |
+| 2. | Define schema to store underlying base data structures (blocks, extrinsics, events) | Finalize stored format  |
+| 3. | Define framework interfaces to allow for extensibility | Multiple underlying storage formats can be extended by community (not just limited to BigQuery) | 
+| 4. | Airflow workflows to read SubQuery updates | Read updates from SubQuery node via GraphQL queries and write to BigQuery on a periodic timeframe|
+| 5. | Deploy Airflow to Google Composer | Staging and Prod deployment pipelines for Airflow to GCP Composer |
+| 6. | Detailed documentation / developer guides | Write dev guides to address how to extend version 1 of this framework |
 
 
 ### Milestone 2 — ETLs for Selected Parachains, Extensions
