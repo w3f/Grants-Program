@@ -123,8 +123,8 @@ We are currently in research phase;  Development / coding has not started on thi
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article and detailed documentation that explains how to set up the basic Dot-ETL (audience: developers, etc).  We will also publish a few articles introducing the public dataset, a repository of queries and tutorials for a broader audience to get running with the public dataset immediately. |
 | 1. | Create SubQuery Managed Node | Utilize SubQuery framework to create a running indexer node on SubQuery's managed services, reading and indexing blocks on the Polkadot network (may involve a few iterations for testing) |
-| 2. | Set up BigQuery Schema to pull transaction data | Finalize stored format in BigQuery (double ledger format) that transactional data will be transformed into |
-| 3. | Airflow workflows to read SubQuery transaction updates | Read updates from SubQuery node via GraphQL queries and write to BigQuery on a periodic timeframe|
+| 2. | Set up BigQuery Schema to pull data (blocks, extrinsics, events) | Finalize stored format in BigQuery  |
+| 3. | Airflow workflows to read SubQuery updates | Read updates from SubQuery node via GraphQL queries and write to BigQuery on a periodic timeframe|
 | 4. | Deploy Airflow to Google Composer | Staging and Prod deployment pipelines for Airflow to GCP Composer |
 | 5. | Detailed documentation / developer guides | Write dev guides to address how to extend version 1 of this framework |
 
