@@ -117,17 +117,17 @@ We are currently in research phase;  Development / coding has not started on thi
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can set up and run the ETL to load data from Dot to offline / queryable formats |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article and detailed documentation that explains how to set up the basic Dot-ETL (audience: developers, etc).  We will also publish a few articles introducing the public dataset, a repository of queries and tutorials for a broader audience to get running with the public dataset immediately. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide code document as well as a basic tutorial / instructions in the form of a README that will explain how a user can set up and run the components of the ETL to extract data to queryable formats |
+| **0c.** | Testing and Testing Guide |  We will have unit tests to ensure functionality. There will be concise instructions on how to run the tests in the guide / readme |
+| **0d.** | Docker | The main infrastructural components, including subquery and airflow, will each be shipped with their own Dockerfile |
+| 0e. | Article | We will publish an article and how-to guide on Medium that will introduce our work and how to set up the basic Dot-ETL (audience: developers).  We will also reference prior work done in the space. |
 | 1. | Create SubQuery Managed Node | Utilize SubQuery framework to create a running indexer node on SubQuery's managed services, reading and indexing blocks on the Polkadot network (may involve a few iterations for testing) |
 | 2. | Define schema to store underlying base data structures (blocks, extrinsics, events) | Finalize stored format  |
 | 3. | Define framework interfaces to allow for extensibility | Multiple underlying storage formats can be extended by community (not just limited to BigQuery) | 
 | 4. | Airflow workflows to read SubQuery updates | Read updates from SubQuery node via GraphQL queries and write to BigQuery on a periodic timeframe|
-| 5. | Deploy Airflow to Google Composer | Staging and Prod deployment pipelines for Airflow to GCP Composer |
-| 6. | Detailed documentation / developer guides | Write dev guides to address how to extend version 1 of this framework |
+| 5. | Deploy Airflow to Google Composer | deploy to google composer as a test / note: we won't be maintaining this going forward  |
+| 6. | Detailed developer guides | Developer-centric guides on how to extend the framework to interoperate with additional database frameworks and cloud platforms. |
 
 
 ### Milestone 2 — ETLs for Selected Parachains, Extensions
@@ -138,14 +138,13 @@ We are currently in research phase;  Development / coding has not started on thi
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish articles 
-| 1. | Outreach to RWA / Defi-focused Parachains | With milestone 1 completed, prioritize parachain data that is related to RWA given the more relevant use of analytics for that data in DeFi applications in order to help further grow interest in the PolkaDot ecosystem |
-| 2. | Expansion on Milestone 1 | Milestone 1 focuses on a select core group of tables.  We plan to expand existing / built work and consume events and calls, the other two types of handlers built for SubQuery.  This includes changes to our managed SubQuery indexers, Airflow / Composer, and BigQuery table modifications. |
-| 3. | Development: Basic Parachain ETL SDK | Create a simple / reference implementation of an SDK that Parachains can build on top of / extend if they wish to utilize the same path to deliver parachain-specific ETLs to GCP BigQuery |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide detailed documentation for work done on this portion of the grant. |
+| **0c.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0d. | Article | We will publish a follow-up (part 2) article on Medium describing the extensions to the original work |
+| 1. | From base tables, extend to parsing 1-2 pallets | With milestone 1 completed and tables create for the core data structures (blocks, extrinsics, events), we can further process those base tables to produce more detailed tables for particular pallets |
+| 2. | Framework / methodology to extend to additional pallets | Create a configurable framework that will allow a more imperative approach to defining more detailed ETLs that can be extended to parsing and creating tables on specific pallets |
+| 3. | Detailed developer guide | Detailed developer guide on using and extending the framework above - goal is to allow developers to utilize the framework to define more sophisticated ETL steps on top of the base tables, all in python (+ orchestrated by airflow). |
 
 ## Future Plans
 
@@ -157,8 +156,6 @@ We intend to partner with / reach out to the following entities on the sponsorsh
 - Blockchain-ETL (related to Google Cloud Team)
 
 We also intend to seek integration for this data within the blockchain industry through potential oracle partnerships with protocols like Chainlink.
-
-In the future we can also investigate the buildout of dashboards on the underlying data. This could involve some of the most widely used applications in the industry such as Dune Analytics and DeFi Llama. We also expect that the community may explore and utilize the data in new and novel ways and can help produce insights for the community.
 
 ## Additional Information :heavy_plus_sign:
 
