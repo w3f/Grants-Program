@@ -2,7 +2,7 @@
 
 - **Team Name:** Colorful Notion, Inc.
 - **Payment Address** `0xEaf3223589Ed19bcd171875AC1D0F99D31A5969c`
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Abstract :page_facing_up:
 
@@ -31,9 +31,8 @@ which seeks to answer deep account analytics questions of:
 * Which accounts have delegated OpenGov votes to an account or to which accounts the account in question has delegated their votes to for each track?
 
 **Staking/Nomination Pools**:
-* Who are all the nominators that nominated Validator X in Era N? (an inverse mapping basically of staking.nominators from validator -> nominators)
+* Who are all the nominators that nominated Validator X? (an inverse mapping basically of staking.nominators from validator -> nominators)
 * Who are the top 10 nominators with the highest APR, and which validators do they have in common?
-* Which eras had the highest number of tokens and accounts unbonding?
 
 We call these _deep analytics_ questions because to answer them requires significant "deep indexing" beyond "raw indexing", which cannot be done without intricate knowledge of Substrate.  Currently, these questions are difficult to answer without going through many pages in a block explorer like Polkaholic.io, and nearly impossible without doing some amount of data engineering.  The answers to the above questions _could_ be treated as new features to be developed in the context of block explorer like Polkaholic, or within special purpose UIs like polkassembly or staking.polkadot.network.
 
@@ -149,7 +148,7 @@ OR
 {"delegating":{"balance":15000000000,"conviction":"Locked4x","delegations":{"capital":0,"votes":0},"prior":[0,0],"target":"15ZvLonEseaWZNy8LDkXXj3Y8bmAjxCjwvpy4pXWSL4nGSBs"}}
 ```
 
-* "Staking" concerning deep indexing about Staking and Nomination Pools, with the added complexity of stashing (proxy) controller/accounts, developed in Milestone 2.
+* "Staking" concerning deep indexing about Staking and Nomination Pools, with the added complexity of stashing controller/accounts, developed in Milestone 2.
 
 It is straightforward to link these dashboards directly to polkaholic.io based the key (accountID/extrinsicID/...) and add filtering on any column present in the table with Apache Superset.
 
@@ -222,8 +221,8 @@ All raw and deep indexing code will be made open source within the polkaholic an
 ### Overview
 
 - **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):**  450 FTE hours [100 USD/hr]
-- **Total Costs:** 45,000 USD
+- **Full-Time Equivalent (FTE):**  300 FTE hours [100 USD/hr]
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 — Three Tier Deep Account Analytics on Account References
 
@@ -235,32 +234,41 @@ All raw and deep indexing code will be made open source within the polkaholic an
 | -----: | ----------- | ------------- |
 | 0a. | License | GNUv3 - polkaholic + substrate-etl repo  |
 | 0b. | Documentation   | Provide README on construction of 1+2+3 |
-| 1.  | Raw Indexing       | substrate-etl:crypto_polkadot.traces0 for 5/1/23 - 8/31/23  |
+| 0c. | Manual Testing Guide | Manual testing guide with steps for using the application, with examples including expected inputs and outputs |
+| 1.  | Raw Indexing       | substrate-etl:crypto_polkadot.traces0 for 7/1/23 - 8/31/23  |
 | 2.  | Deep Indexing      |  substrate-etl:substrate.accountreference0 and supporting datasets  |
 | 3.  | Dashboard Publication | Superset dashboard tab: "Account Reference"  |
 
 We will take this opportunity to deliver raw indexes on traces, deep indexes on account references and a dashboard on Account References hosted at https://analytics.polkaholic.io.
 
+Indexing + Dashboard Publication must be able to support deep analysis of **Account References**:
+* Which transactions/accounts were responsible for the reserved balance in an account?
+* What modules currently depend on consumers, providers, and sufficients reference counters for a certain account, and which transactions introduced/removed those references?
+* What are the pallets responsible for reserves/holds and locks/freezes on an account?
+
 
 ### Milestone 2 — Three Tier Deep Account Analysis of Democracy+Staking+Nomination Pools 
 
 - **Estimated duration:** 8 weeks (ending 10/31/23)
-- **FTE:**  300 FTE hours [100 USD/hr]
-- **Costs:** 30,000 USD
+- **FTE:**  150 FTE hours [100 USD/hr]
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GNUv3 - polkaholic + substrate-etl repo  |
 | 0b. | Documentation   | Document substrate-etl README on 1+2+3  |
-| 1.  | Raw Indexing          | BigQuery Index substrate-etl.crypto_polkadot.traces0 1/1/2023-10/31/23 -- and eras, proxy/stashing accounts |
+| 0c. | Manual Testing Guide | Manual testing guide with steps for using the application, with examples including expected inputs and outputs |
+| 1.  | Raw Indexing          | BigQuery Index substrate-etl.crypto_polkadot.traces0 9/1/2023-10/31/23 -- stashing accounts |
 | 2.  | Deep Indexing         | BigQuery substrate-etl:substrate.democracy_* substrate-etl:substrate.staking_* substrate-etl:substrate.nomination_pools_*  |
 | 3.  | Dashboard Publication | Superset dashboard tabs: "Democracy", "Staking", "Nomination Pools" |
 
-We will take this opportunity to address the complexity of eras, proxy / stashing accounts by:
-* Raw Indexing. adding additional tables to the `crypto_polkadot` dataset: `proxy0`, `era0`
-* Deep Indexing. using the above tables in the views referencing  `storage_staking_*, storage_nominationpools_*` tables
+We will take this opportunity to address the complexity of stashing accounts by:
+* Deep Indexing.  Using the above tables in the views referencing  `storage_staking_*, storage_nominationpools_*` tables
 * Dashboard Publication.  Using the above, we can develop dashboards for Democracy+Staking+Nomination Pools
 
+Indexing + Dashboard Publication must be able to support deep analysis of Democracy and Staking/Nomination Pools pallets:
+* Democracy: Which accounts have delegated OpenGov votes to an account or to which accounts the account in question has delegated their votes to for each track?
+* Staking/Nomination Pools: Who are all the nominators that nominated Validator X? (an inverse mapping basically of staking.nominators from validator -> nominators)  Who are the top 10 nominators with the highest APR, and which validators do they have in common?
 
 ## Future Plans
 
