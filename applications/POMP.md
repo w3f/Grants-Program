@@ -1,4 +1,4 @@
-# POMP (Prove of My Possession)
+# POMP (Proof of My Possession)
 
 - **Team Name:** POMP
 - **Payment Address:** 0xfBa1C39f30d6A1D1C35F9551c0f22a0ec6FD30A5 (Ethereum USDC)
