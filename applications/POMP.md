@@ -10,7 +10,7 @@ Cryptocurrencies are digital coins and tokens that represent real-world value wi
 
 However, it’s not easy to prove that you are the owner of one specific blockchain account. Because you have to import a private key to a wallet and sign a signature to prove that the private key is matching to the account’s public key. Additionally, the more a private key is imported, the more it opens up the threat vector for either intentional or unintentional damage.
 
-Many individuals and companies prefer to have an additional layer of asset proof to keep their privacy. That’s where the POMP(Prove of My Possession) comes to play.
+Many individuals and companies prefer to have an additional layer of asset proof to keep their privacy. That’s where the POMP(Proof of My Possession) comes to play.
 
 ### Project Details
 
