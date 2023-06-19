@@ -21,6 +21,7 @@ Please provide the following:
 - An indication of why your team is interested in creating this project.
 
 ### Project Details
+
 | ----- | ----------- | ------------- |
 |The Whitehat Safe Harbour Constitution | Signature initiative, Legal protection for white hats to rescue funds under active exploit |
 | Attack Simulation | Exercise to strengthen resiliency and collaboration in the most ecosystem critical projects|
