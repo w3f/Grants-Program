@@ -57,7 +57,7 @@ with new functionality.
 
 Instead, our solution to this problem is to separate the THREE TIERS within a _genuinely collaborative_ Polkadot Data Alliance:
 
-* Tier 1: raw indexing results in all blocks, extrinsics, events, traces delivered in Google Bigquery Public Datasets.  In May 2023, Colorful Notion, under the curation of Parity Data, onboarded a complete index of 70+ chains of Polkadot+Kusama into Google Public Datasets.  This is in the "crypto_polkadot" and "crypto_kusama" dataset, which anyone can access with this Analytics Hub link [here]
+* Tier 1: raw indexing results in all blocks, extrinsics, events, traces delivered in Google Bigquery Public Datasets.  In May 2023, Colorful Notion, under the curation of Parity Data, onboarded a complete index of 70+ chains of Polkadot+Kusama into Google Public Datasets.  This is in the "crypto_polkadot" and "crypto_kusama" dataset, which anyone can access with this Analytics Hub link [here](https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/974572213039/locations/us/dataExchanges/substrate_18804f88005/listings/polkadot_188057df28c?project=github-integration-295917) and [here](https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/974572213039/locations/us/dataExchanges/substrate_18804f88005/listings/kusama_1880581b627?project=github-integration-295917).
 
 * Tier 2: deep indexing can then be done by doing some amount of data engineering with the above raw deata, resulting in tables, views or materialized views that can also be shared with new datasets, which can also be shared with Analytics Hub.
 
