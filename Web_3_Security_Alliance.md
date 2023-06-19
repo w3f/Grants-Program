@@ -22,7 +22,7 @@ Please provide the following:
 
 ### Project Details
 
-|The Whitehat Safe Harbour Constitution | Signature initiative, Legal protection for white hats to rescue funds under active exploit
+|The Whitehat Safe Harbour Constitution | Signature initiative, Legal protection for white hats to rescue funds under active exploit |
 | Attack Simulation | Exercise to strengthen resiliency and collaboration in the most ecosystem critical projects|
 | Security Retreat | Social coordination and planning for future common good security initiatives
 
@@ -47,10 +47,10 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
     samczsun (CEO)
 
 - Names of team members
-    Jeanne Bardin (CSO)
-    Hudson Jameson (President)
-    Alice Albl (COO)
-    Kyoko Balda (Communications Director)
+  - Jeanne Bardin (CSO)
+  - Hudson Jameson (President)
+  - Alice Albl (COO)
+  - Kyoko Balda (Communications Director)
     
 
 ### Contact
