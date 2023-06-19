@@ -72,6 +72,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Ideal Labs](https://www.idealabs.network/)                                    | [Cryptex](cryptex.md)| [GitHub](https://github.com/ideal-lab5)                            | ☐          |        ☐       |      ☐      |
 | [Xcavate](https://xcavate.io/)                                    | [Real estate centric lending and asset minting protocol](Xcavate.md)| [GitHub](https://github.com/xcavateblockchain)                            | ☐          |        ☐       |      ☐      |
 | [Syncra](https://syncra.xyz)                                    | [No Code DAO Maker and ZK Powered Private Voting Solution](Syncra.md)| [GitHub](https://github.com/SyncraDAO)                            | ☐          |        ☐       |      ☐      |
+| [P2P.ORG](http://p2p.org/)                                    | [Validator Monitoring Service](Validator_Monitoring_Service.md)| [GitHub](https://github.com/p2p-org/polkadot_monitoring_service)                            | ☐          |        ☐       |      ☐      |
 
 [🔝](#2023)
 
