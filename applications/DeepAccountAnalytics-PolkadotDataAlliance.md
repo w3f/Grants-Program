@@ -57,7 +57,7 @@ with new functionality.
 
 Instead, our solution to this problem is to separate the THREE TIERS within a _genuinely collaborative_ Polkadot Data Alliance:
 
-* Tier 1: raw indexing results in all blocks, extrinsics, events, traces delivered in Google Bigquery Public Datasets.  In May 2023, Colorful Notion, under the curation of Parity Data, onboarded a complete index of 70+ chains of Polkadot+Kusama into Google Public Datasets.  This is in the "crypto_polkadot" and "crypto_kusama" dataset, which anyone can access with this Analytics Hub link [here]()
+* Tier 1: raw indexing results in all blocks, extrinsics, events, traces delivered in Google Bigquery Public Datasets.  In May 2023, Colorful Notion, under the curation of Parity Data, onboarded a complete index of 70+ chains of Polkadot+Kusama into Google Public Datasets.  This is in the "crypto_polkadot" and "crypto_kusama" dataset, which anyone can access with this Analytics Hub link [here]
 
 * Tier 2: deep indexing can then be done by doing some amount of data engineering with the above raw deata, resulting in tables, views or materialized views that can also be shared with new datasets, which can also be shared with Analytics Hub.
 
@@ -98,7 +98,7 @@ as it requires compute time to regenerate.
 Polkaholic.io's indexer, when traces are available from an internal archive node, fetches traces and exposes them in the block explorer.
 For example, here is the trace for [Polkadot Block 15723663](https://polkaholic.io/trace/polkadot/15723663/)
 
-<img src="https://cdn.polkaholic.io/screenshots/polkadot-trace.png">
+<img src="https://cdn.polkaholic.io/screenshots/polkadot-trace.png"/>
 
 The raw keys (e.g. `0x26aa394eea5630e0...f1dbd372bbe532b1f8702b2a7e`) and values (e.g. `0x01ab50050...000000000000`) are decoded using the chains type spec into 
 
@@ -120,7 +120,7 @@ Value: {
 
 and loaded into BigQuery as part of a publicly available [substrate-etl](https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/974572213039/locations/us/dataExchanges/substrate_18804f88005), recently added to Google BigQuery's Public Datasets in May 2023.
 
-<img src="https://cdn.polkaholic.io/screenshots/substrate-etl-trace.png">
+<img src="https://cdn.polkaholic.io/screenshots/substrate-etl-trace.png"/>
 
 In Milestone 1, we will provide a 3 tier solution to deep account analytics on Account References.  Here is how the 3 tiers:
 
@@ -130,7 +130,7 @@ In Milestone 1, we will provide a 3 tier solution to deep account analytics on A
 
 * Tier 3 requires situating the above dataset into an Account Analysis Dashboard of [Apache Superset](https://analytics.polkaholic.io/dashboard/list/).   Here we have a WASM Contract Explorer prototype:
 
-<img src="https://cdn.polkaholic.io/screenshots/deep-account-dashboard.png">
+<img src="https://cdn.polkaholic.io/screenshots/deep-account-dashboard.png"/>
 
 We envision Milestone 1 focussed on Account References and then extended in Milestone 2 to Democracy+Staking deep analysis.  This will result in an Account Analysis Dashboard, with 3 or more account tabs exploring:
 
