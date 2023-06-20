@@ -334,4 +334,4 @@ as possible with the general roadmap of the Datagen network can be beneficial fo
 For all the reasons above, I would like to ask an integration of the amount due for the M2 deliverable of 9K USDC (from 12K to 21K
 USDC), to better reflect the real development costs and speed up the delivery.
 
-Thanks, let please me know your opinions and I am open to questions.
+
