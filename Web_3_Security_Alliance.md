@@ -1,7 +1,8 @@
 # Web3 Security Alliance
 
 - **Team Name:** Open Security Alliance
-- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** 0x1814E339e2bf21C33dcd1D2EbC91F78079838887 (USDC); Fiat [][][][][]
+In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here.
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 
@@ -9,8 +10,6 @@
 
 Please provide the following:
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 - An indication of why your team is interested in creating this project.
 
@@ -18,14 +17,14 @@ The Web3 Security Alliance was created to add tactical and practical value to de
 
 The Alliance is a social coordination layer that sits above its stakeholders (decentralised protocols, security professionals, ethical hackers and bag holders) with the purpose of incentivising & protecting honest actors within the ecosystem. The Alliance is a common good infrastructure that anticipates the expansion of attack vectors to be brought about by cross-chain composability and plans accordingly
 
-The Alliance's signature project, the Whitehat Safe Harbour Constitution came about in our attempt to create a unifying body that advocates on behalf of ethical hackers across chains and counters downside risk and asymmetry associated with this important work.
+The Alliance's signature project, the Whitehat Safe Harbour Constitution is an example of the Alliance acting as a unifying body that advocates on behalf of ethical hackers across chains and counters downside risk and asymmetry associated with this important work. This is one of the projhects we plan to integrate into the Dot/Sama ecosystem
 
 “Downside risk” in the above meaning unfair or unintended liability; “asymmetry” meaning black hats have a disproportionate effect on the system because they only need to find one exploit, once,  whilst a protocol or ethical researcher has to defend against all of them, always, to be considered a success. Thus, we need to empower white hats and give them more leverage.
 
 
 ### Project Details
 
-| ----- | ----------- | ------------- |
+| ----- | ----------- |
 |The Whitehat Safe Harbour Constitution | Signature initiative, Legal protection for white hats to rescue funds under active exploit |
 | Attack Simulation | Exercise to strengthen resiliency and collaboration in the most ecosystem critical projects|
 | Security Retreat | Social coordination and planning for future common good security initiatives
@@ -34,16 +33,16 @@ The Alliance's signature project, the Whitehat Safe Harbour Constitution came ab
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
-The Web
+The speed of maturation of our industry depends much on safety. Over $28 Billion was lost to blockchain hackers in over 800 events to-date. The rate and amounts of these losses are increasing. Only 14% of protocols with the ability to do so initiated pause functions within 24 hrs of a hacking incident: we can and should improve this (and other protections) with automated tooling and better coordination among key gorups. 
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+The Web3 Security Alliance identifies key groups as hackers and the communities driving protocols. Prominent white hats and web3 security specialists have said that the Web3 Security Alliance is very necessary, and urgent. 
+
+Cross-chain composability is coming and represents a widening threat to the decentralised ecosystem. The Dot/Sama ecosystem is one of the premiere staging grounds for these groundbreaking but awesomely powerful possibilities coming with cross-chain composability, implenting the Web3 Security Alliance's projects on its networks early and thoroughly will be a critical measure for the industry.
+
+The Web3 Security Alliance doesn't compete with market players but rather bridges the gap where incentives and competition leave holes. When under attack by regulation, dishonest actors like hackers, or perverse incentive schemes which undermine credibility, coordination in a vast ecosystem like Dot/Sama is paramount. This requires systematic thinking and relational engineering that spans across decentralised ecosystems. Building strategic relationships is one way to prevent competition from deterring all collaboration.
+
+The goal is not to replicate what for-profit market mechanisms (Immunifi, Code4rena, Sherlock, Auditors) can provide, but rather to help them and bridge any gaps which fall into the tragedy of the commons. Whilst it is clearly impossible to completely protect the decentralised ecosystem, some unifying body that advocates on behalf of ethical hackers across chains would bolster our security efforts.
 
 ## Team :busts_in_silhouette:
 
@@ -72,9 +71,17 @@ The Web
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
+| Name | Role | Experience
+| ----- | ----------- | ------------- |
+| samczsun | CEO | |
+| Hudson Jameson | President |  over a decade of experience in the crypto ecosystem and 8 years of experience in the Ethereum ecosystem. In that time, he served as an operational figurehead for the Ethereum Foundation from most of the time he was there (2016-2021). He also had a startup from 2017-2018 where he was the COO and lead Solidity engineer. He has experience setting up and managing corporations (S/C corps), volunteer organization (Ethereum Cat Herders), and multiple grants organizations (Baseline Grants Program & Zcash Grants Program). 
+ |
+| Jeanne Bardin | CSO | |
+| Kyoko Baldin | Communications Director | |
+| Alice Albl | ??? | |
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+
+Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
 
 ### Team Code Repos
 
@@ -127,9 +134,9 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| **0b.** | Documentation | We can provide the documentary portion of our our signature project, the Whitehat Safe Harbor Constitution and written overviews of our other initiatives |
+| **0c.** | Testing and Testing Guide | Eeach initiative is  |
+| **0d.** | Docker | N/A |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
 | 2. | Substrate module: Y | The Y Substrate module will... |
@@ -158,10 +165,10 @@ Please include here
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Personal recommendation
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
 - Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+
+The Web3 Security Alliance has received support from a16z, Paradigm, and LeXpunK. Grants were received by the Web3 Security Alliance from the Ethereum and Filecoin Foundations, and its first donor was Vitalik Buterin.
