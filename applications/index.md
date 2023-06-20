@@ -74,6 +74,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Syncra](https://syncra.xyz)                                    | [No Code DAO Maker and ZK Powered Private Voting Solution](Syncra.md)| [GitHub](https://github.com/SyncraDAO)                            | ☐          |        ☐       |      ☐      |
 | [P2P.ORG](http://p2p.org/)                                    | [Validator Monitoring Service](Validator_Monitoring_Service.md)| [GitHub](https://github.com/p2p-org/polkadot_monitoring_service)                            | ☐          |        ☐       |      ☐      |
 | [Colorful Notion](https://github.com/colorfulnotion)                            | [Deep Account Analytics in Three Tiers for the Polkadot Data Alliance](DeepAccountAnalytics-PolkadotDataAlliance.md)| [GitHub](https://github.com/colorfulnotion/)                            | ☐          |        ☐       |      ☐      |
+| [Dastanbek Samatov](https://dastansam.github.io/)                            | [ISO-8553 PoC implementation](ISO-8583-implementation.md)| [GitHub](https://github.com/dastanbeksamatov)                            | ☐          |        ☐       |      ☐      |
 
 [🔝](#2023)
 
