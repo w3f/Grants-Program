@@ -14,13 +14,14 @@ Please provide the following:
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 - An indication of why your team is interested in creating this project.
 
-The Whitehat Safe Harbour Constitution came about in our attempt to create a unifying body that advocates on behalf of ethical hackers across chains and counters downside risk and asymmetry associated with this important work.
+The Web3 Security Alliance was created to add tactical and practical value to decentralised security. 
 
-“Downside,” meaning unfair or unintended liability. “Asymmetry,” meaning black hats have a disproportionate effect on the system because they only need to find one exploit, once,  whilst a protocol or ethical researcher has to defend against all of them, always, to be considered a success. Thus, we need to empower white hats and give them more leverage.
+The Alliance is a social coordination layer that sits above its stakeholders (decentralised protocols, security professionals, ethical hackers and bag holders) with the purpose of incentivising & protecting honest actors within the ecosystem. The Alliance is a common good infrastructure that anticipates the expansion of attack vectors to be brought about by cross-chain composability and plans accordingly
 
-The Web3 Security Alliance is a social coordination layer that sits above its stakeholders (decentralised protocols, security professionals, ethical hackers and bag holders) with the purpose of incentivising & protecting honest actors within the ecosystem. The Alliance is a common good infrastructure that anticipates the expansion of attack vectors to be brought about by cross-chain composability and plans accordingly. 
+The Alliance's signature project, the Whitehat Safe Harbour Constitution came about in our attempt to create a unifying body that advocates on behalf of ethical hackers across chains and counters downside risk and asymmetry associated with this important work.
 
-The Alliance's goals are to add tactical and practical value to decentralised security. 
+“Downside risk” in the above meaning unfair or unintended liability; “asymmetry” meaning black hats have a disproportionate effect on the system because they only need to find one exploit, once,  whilst a protocol or ethical researcher has to defend against all of them, always, to be considered a success. Thus, we need to empower white hats and give them more leverage.
+
 
 ### Project Details
 
@@ -49,13 +50,13 @@ The Web
 ### Team members
 
 - Name of team leader
-    samczsun (CEO)
+  - Samczsun (CEO)
 
 - Names of team members
   - Jeanne Bardin (CSO)
   - Hudson Jameson (President)
-  - Alice Albl (COO)
   - Kyoko Balda (Communications Director)
+  - Alice Albl (???)
     
 
 ### Contact
@@ -111,8 +112,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
+- **Total Estimated Duration:** Two years
+- **Full-Time Equivalent (FTE):**  3 FTE
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
 ### Milestone 1 Example — Basic functionality
@@ -125,7 +126,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0a.** | Unlicense |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -154,11 +155,6 @@ Please include here
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
-## Referral Program (optional) :moneybag: 
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 
