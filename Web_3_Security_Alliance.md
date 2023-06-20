@@ -4,12 +4,6 @@
 - **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
-> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-## Project Overview :page_facing_up:
-
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
@@ -19,6 +13,14 @@ Please provide the following:
 - A brief description of your project.
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 - An indication of why your team is interested in creating this project.
+
+The Whitehat Safe Harbour Constitution came about in our attempt to create a unifying body that advocates on behalf of ethical hackers across chains and counters downside risk and asymmetry associated with this important work.
+
+“Downside,” meaning unfair or unintended liability. “Asymmetry,” meaning black hats have a disproportionate effect on the system because they only need to find one exploit, once,  whilst a protocol or ethical researcher has to defend against all of them, always, to be considered a success. Thus, we need to empower white hats and give them more leverage.
+
+The Web3 Security Alliance is a social coordination layer that sits above its stakeholders (decentralised protocols, security professionals, ethical hackers and bag holders) with the purpose of incentivising & protecting honest actors within the ecosystem. The Alliance is a common good infrastructure that anticipates the expansion of attack vectors to be brought about by cross-chain composability and plans accordingly. 
+
+The Alliance's goals are to add tactical and practical value to decentralised security. 
 
 ### Project Details
 
@@ -32,6 +34,8 @@ Please provide the following:
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+
+The Web
 
 - Where and how does your project fit into the ecosystem?
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
