@@ -203,7 +203,7 @@ The goal is to achive a fully functional mechanism for the random selection of t
 
 - **Estimated Duration:** 1,5 months
 - **FTE:**  2
-- **Costs:** 12,000 USD
+- **Costs:** 21,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
