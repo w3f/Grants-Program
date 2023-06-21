@@ -176,7 +176,7 @@ The goal is to achive a fully functional mechanism for the random selection of t
 
 - **Total Estimated Duration:** 5 months (starting date - August 2022) _ Update: Because of changes in the development team M2 delivery date will be ≈15th of March 2023, with relative shift of the whole timeline.
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 44,000 USD
+- **Total Costs:** 53,000 USD
 
 ### Milestone 1 — Implement the randomized substrate pallet `pallet_random_node_selector` and `pallet_check_node_computational_work`
 
