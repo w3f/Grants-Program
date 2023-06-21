@@ -125,34 +125,17 @@ Described in project details.
 ​
 ### Overview
 ​
-- **Total Estimated Duration:** 4 months
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 2.5 
-- **Total Costs:** 67200 U$D
+- **Total Costs:** 52500 U$D
 ​
 ## Milestones
 ​
-### Milestone 1 — Initial Enhancements and Feature Development
+### Milestone 1 — Functionality Implementation and Educational Content
 ​
-- **Estimated duration:** 1.5 months
+- **Estimated duration:** 3 months
 - **FTE:** 2.5
-- **Costs:** 25200
-  
-​
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use the new features. |
-| **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile that allows users to easily run the application. |
-| 1. | Interaction with deployed contracts | We will create the mockups based on [step 1](#step1) of the Project Details section. |
-| 2. | Interaction with custom smart contracts | We will create the mockups based on [step 2](#step2) of the Project Details section. |
-| 3. | Support for multiple chains | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
-​
-### Milestone 2 — Functionallity implementation and Educational Content
-​
-- **Estimated duration:** 2.5 months
-- **FTE:** 2.5
-- **Costs:** 42000
+- **Costs:** 52500
   
 ​
 | Number | Deliverable | Specification |
@@ -161,10 +144,10 @@ Described in project details.
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use the new features. |
 | **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile that allows users to easily run the application. |
-| 1. | Interaction with deployed contracts | The functionallity based on the mockups from Milestone 1 [step 1](#step1) of the Project Details section. |
-| 2. | Interaction with custom smart contracts | The functionallity based on the mockups from Milestone 1 [step 2](#step2) of the Project Details section. |
-| 3. | Shareable Contract Interaction Links | The functionallity corresponds to what's described on [step 3](#step3) of the Project Details section. |
-​
+| 1. | Interaction with deployed contracts | The functionallity based on [step 1](#step1) of the Project Details section. |
+| 2. | Interaction with custom smart contracts | The functionality based on [step 2](#step2) of the Project Details section. |
+| 3. | Shareable Contract Interaction Links | The functionality corresponds to what's described on [step 3](#step3) of the Project Details section. |
+​| 4. | Support for multiple chains | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
 ​
 ## Future Plans
 ​
