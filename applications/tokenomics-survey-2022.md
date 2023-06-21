@@ -67,7 +67,7 @@ Each section of the report/working paper will be developed using some subset of 
 
 #### Published articles
 
-The initial source of the published research will be the top-10 articles selected by the grantee, using the commercial research databases available from the State Library of New South Wales by operationalizing the following inquiry, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors". This initial source may be adjusted at the grantees discretion based on his expertise.  The selection process will be fully described and documented.
+The initial source of the published research will be the top-6 articles selected by the grantee, using the commercial research databases available from the State Library of New South Wales by operationalizing the following inquiry, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors". This initial source may be adjusted at the grantees discretion based on his expertise.  The selection process will be fully described and documented.
 
 #### Polkadot Parachain whitepapers
 
@@ -203,7 +203,7 @@ Personal
 - As requested, I have adjusted the source of the research to eliminate myself as the source of bias in the collection of research papers.
 - academic publications relevant to the problem:
   One of the products from this research will be such a listing under these categories:
-  1. Published articles: As requested, to eliminate bias (and constrain budget) in the collection of research papers, the initial source of the published research will be the top-10 articles provided by the State Library of New South Wales information search service in response to the following query, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"
+  1. Published articles: As requested, to eliminate bias (and constrain budget) in the collection of research papers, the initial source of the published research will be the top-6 articles provided by the State Library of New South Wales information search service in response to the following query, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"
   2. Polkadot Parachain whitepapers: These are from projects that are Polkadot-Parachains as at 19 December 2022.
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues:
   - [Tokenomics: Grant models](https://forum.polkadot.network/t/tokenomics-grant-models/1266)
