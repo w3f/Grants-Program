@@ -39,14 +39,60 @@ Dotwise aims to develop a user-friendly platform for on-chain analysis in the Po
   **Core API:** Dotwise Core API will be developed with [Fast API](https://fastapi.tiangolo.com/) and it will be used for core functionalities. It will be used by the frontend and backend services.
 
   **SubQuery API:** SubQuery API will be used for querying the data from the Substrate-based networks.
+  
+  As foundational I can index data with below handlers that SubQuery provides.
+
+  - **Block Handlers:** With block handlers, we can define a function that will be executed for each and every block in the network. The mapping function can extract specific data from the block and perform operations on it, such as filtering, transforming, or aggregating the data. This enables us to index and organize block-related data according to our requirements.
+
+  - **Event Handlers:** Events are occurrences or incidents that happen within the blockchain network, such as a transfer of tokens, a contract creation, or a governance vote. Event handlers allow us to specify filter criteria to match specific events and then execute a mapping function on those events. This enables us to extract relevant information from events and perform additional processing or indexing.
+  
+  - **Call Handlers:** Calls refer to extrinsic actions or transactions that modify the state of the blockchain. With call handlers, we can define filter criteria to match specific extrinsic calls and then execute a mapping function on those calls. This allows us to process and index data related to specific transactions or actions performed on the network.
+
+  **Core steps to index data with SubQuery:**
+
+  1 - Create a GraphQL schema for the Dotwise data model (transactions, governance, etc.)
+  
+  2 - Update the manifest file to include the GraphQL schema
+  
+  3 - Create a mapping function for each handler (block, event, call)
+  
+  4 - Deploy the SubQuery project to a SubQuery Node (local or remote)
+  
+  5 - Query the data using the GraphQL API of the SubQuery Node
+  
+  6 - Save the GraphQL query results to the database (PostgreSQL)
+
+  **Data Types**
+
+  **Transaction Data:** This includes the sender and receiver addresses, transaction value, gas price, timestamp, and more. By indexing all transactions, users can explore historical transaction trends, perform address-specific queries, and analyze gas prices.
+
+  **Governance Data:** This includes the proposal ID, proposal type, proposal status, proposal description, voting results, and more. By indexing all governance proposals, users can explore historical governance trends, perform proposal-specific queries, and analyze voting results.
+
+  **Staking Data:** This includes the staker address, staked amount, staking status, and more. By indexing all staking transactions, users can explore historical staking trends, perform address-specific queries, and analyze staking rewards.
+
+  **NFT Data:** This includes the NFT ID, NFT owner, NFT metadata, and more. By indexing all NFT transactions, users can explore historical NFT trends, perform address-specific queries, and analyze NFT metadata.
 
 - An overview of the technology stack to be used
 
-  ![techstack](https://github.com/tolgayayci/Grants-Program/assets/40897846/21ed9c58-1950-4e8a-bf28-9e484a1eaf4b)
+![overview](https://github.com/tolgayayci/Grants-Program/assets/40897846/14942536-6b29-4e72-a0d6-4f6a5ced7e82)
+
+  **BACKEND**
 
   **Subquery:** Subquery is a tool for building custom data indexes for Polkadot, Kusama, and other Substrate-based networks. It is a great tool for building custom data indexes. It provides a great developer experience with many built-in features such as GraphQL support, TypeScript support, and Substrate support. It also has a great community and ecosystem with many plugins and tools.
 
   **Fast API:** FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints. That is fully compatible with OpenAPI 3.0 (formerly known as Swagger). It is a great tool for building APIs with Python.
+
+  **PostgreSQL:** PostgreSQL is a powerful, open-source object-relational database system. It is a great tool for storing data.
+
+  **FRONTEND**
+
+  Next Js
+  
+  Vercel
+  
+  Tailwind CSS
+  
+  Jest (Testing)
 
 - Documentation of core components, protocols, architecture, etc. to be deployed
   - General Guides & Documentation
@@ -54,7 +100,7 @@ Dotwise aims to develop a user-friendly platform for on-chain analysis in the Po
 
 - What your project is _not_ or will _not_ provide or implement
   - There isn't any support for parachains that SubQuery doesn't support
-  - SQL based queries not supported, only GraphQL
+  - GraphQL based queries not supported, only SQL
 
 ### Ecosystem Fit
 
@@ -136,7 +182,7 @@ This RFP is planned as 2 milestones, it will be completed in three months.
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | I will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | SubQuery Integration | I will integrate SubQuery, into the backend of the project. This will allow users to search, filter, and aggregate data in a more efficient manner. Users just need to select attributes on UI to write a query with SubQuery via Core API. |
-| 2. | Database Integration | I will integrate MongoDB to store queries, visualizations, some stats and so more. |
+| 2. | Database Integration | I will integrate PostgreSQL to store queries, visualizations, some stats and so more. |
 | 4. | Core API | The platform will offer an API that allows to gather, retrieve, and update project-related data. The use of FastAPI will help to ensure high performance and easy integration with other components. |
 | 5. | Analytics | I will integrate monitoring solutions to forecast backend system like Grafana. |
 | 6. | Authentication | Users can authenticate with their wallet or social accounts like Google. |
@@ -160,8 +206,8 @@ This RFP is planned as 2 milestones, it will be completed in three months.
 | 4. | Dashboard Page - **Create Dashboard Module** | Users will be able to create their own dashboards through an intuitive interface. They can add different types of elements (like queries, visualizations, text, images) to the dashboard. |
 | 5. | Dashboard Page - **Edit Dashboard Module** | Users will be able to edit existing dashboards, including adding, removing, or rearranging elements. |
 | 6. | Queries Page - **Details** | The queries page will show detailed information about individual queries, including their results and any visualizations associated with them. |
-| 7. | Queries Page - **GraphQL Editor** | Users will be able to create their own queries using a built-in editor. |
-| 8. | Queries Page - **Create Queries Module** | Users will be able to create their own queries with graphql editor or basic UI who are not experienced with GraphQL. |
+| 7. | Queries Page - **SQL Editor** | Users will be able to create their own queries using a built-in editor. |
+| 8. | Queries Page - **Create Queries Module** | Users will be able to create their own queries with sql editor|
 | 9. | Queries Page - **Edit Queries Module** | Users will be able to edit their existing queries, adjusting parameters or modifying the query itself. |
 | 10. | Profile Page - **Dashboards Showcase Module** | On a user's profile page, their created dashboards will be showcased for other users to view and utilize. |
 | 11. | Profile Page - **Queries Showcase Module** | Similarly, the user's created queries will also be showcased on their profile page. |
