@@ -20,7 +20,7 @@ Melodot introduces the role of farmers by combining PoSpace, alleviating the sys
 
 ### Architecture
 
-#### Erasure Coding and KZG Commitments
+#### Erasure Coding and KZG Commitment
 
 Melodot uses 2D Reed-Solomon for data expansion, providing better sampling efficiency. It generates KZG commitments in the row direction, avoiding fraud proofs, similar to Ethereum's Darksharding. Block headers contain KZG commitments and data locations for different apps, allowing light clients to sample or download only data relevant to themselves.
 
@@ -144,13 +144,13 @@ ZeroDAO previously developed the Ourspace project, which is a reputation system 
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
+- **Total Estimated Duration:** 4.5 months
 - **Full-Time Equivalent (FTE):** 1.5
-- **Total Costs:** 30,000 DAI
+- **Total Costs:** 28,000 DAI
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Erasure coding and KZG
 
-- **Estimated duration:** 3 weeks
+- **Estimated duration:** 1 month
 - **FTE:** 1 
 - **Costs:** 5,000 USD
 
@@ -162,11 +162,11 @@ ZeroDAO previously developed the Ourspace project, which is a reputation system 
 | **0d.** | Docker                    | We will provide Dockerfiles to demonstrate the full functionality of erasure coding and KZG commitments. |
 | 1.      | melo_erasure_coding       | The core part of the system, including 2D erasure coding and KZG commitment-related primitives and common interfaces. |
 
-### Milestone 2 Example — Basic functionality
+### Milestone 2 — Consensus
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 1.5 months
 - **FTE:** 1
-- **Costs:** 9,000 USD
+- **Costs:** 7,000 USD
 
 | Number  | Deliverable                    | Specification                                                |
 | ------- | ------------------------------ | ------------------------------------------------------------ |
@@ -179,7 +179,7 @@ ZeroDAO previously developed the Ourspace project, which is a reputation system 
 | 3.      | Substrate pallet: melo_store   | Pallet for managing apps and submitting data.                |
 | 4.      | melodot-client                 | Fully implemented data availability layer node client.       |
 
-### Milestone 3 Example — Basic functionality
+### Milestone 3 — Sampling
 
 - **Estimated duration:** 1 month
 - **FTE:** 1.5
@@ -195,7 +195,7 @@ ZeroDAO previously developed the Ourspace project, which is a reputation system 
 | 1.      | Light client              | A light client that connects to the network and efficiently performs sampling, stores sampling data, and maintains data availability confidence. |
 | 2.      | melo_sampling             | A decoupled sampling module that provides core functionality related to data sampling. |
 
-### Milestone 4 Example — Basic functionality
+### Milestone 4 — Farmer
 
 - **Estimated duration:** 1 month
 - **FTE:** 2
