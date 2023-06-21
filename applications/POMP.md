@@ -71,7 +71,7 @@ We are a decentralized team focusing on the blockchain industry since 2020. We a
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  3 FTE
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 22,000 USD
 
 ### Milestone 1 — The POMP platform
 
