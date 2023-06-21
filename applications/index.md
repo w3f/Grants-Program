@@ -76,6 +76,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Colorful Notion](https://github.com/colorfulnotion)                            | [Deep Account Analytics in Three Tiers for the Polkadot Data Alliance](DeepAccountAnalytics-PolkadotDataAlliance.md)| [GitHub](https://github.com/colorfulnotion/)                            | ☐          |        ☐       |      ☐      |
 | [Dastanbek Samatov](https://dastansam.github.io/)                            | [ISO-8553 PoC implementation](ISO-8583-implementation.md)| [GitHub](https://github.com/dastanbeksamatov)                            | ☐          |        ☐       |      ☐      |
 | [Eiger](https://www.eiger.co/)                            | [Substrate Move System Pallet, pt. 1](Substrate_Move_System_Pallet_1.md)| [GitHub](https://github.com/eigerco)                            | ☐          |        ☐       |      ☐      |
+| [Davanti](https://github.com/liangjh)                            | [Dot-ETL Project](dot_etl.md)| [GitHub](https://github.com/liangjh)                            | ☐          |        ☐       |      ☐      |
 
 [🔝](#2023)
 
