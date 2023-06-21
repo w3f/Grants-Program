@@ -1,4 +1,4 @@
-# Substrate Tokenomics
+# W3F [Open Web3 Stack](https://github.com/open-web3-stack) Tokenomics
 
 - **Team Name:** Mark Van de Vyver [PhD(Dist)](https://www.student.uwa.edu.au/course/award-verification-service?family=van+de+vyver&family_partial=on&given=mark&search=Search)
 - **Payment Address:** 15WoVugRLfBAogS1FBmhzxVv8WZqZK1z4KKHALijTZfdVcCm (USDC)
@@ -14,21 +14,21 @@ This is a survey, hence limited to topics the existing literature addresses. Wit
 The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent).
 
 - Description:
-  The decision making of Substrate developers (and other stakeholders) is assisted if a hypothetical/proposed token-economy can be described by reference, or analogy, to a known working/successful token-economy. Absent an existing implementation, developers are left to invent a token-economy, try to adapt an existing non-blockchain experience to a blockchain, or try to adapt non-blockchain ideas to a blockchain.
+  The decision making of W3F [Open Web3 Stack](https://github.com/open-web3-stack) developers (and other stakeholders) is assisted if a hypothetical/proposed token-economy can be described by reference, or analogy, to a known working/successful token-economy. Absent an existing implementation, developers are left to invent a token-economy, try to adapt an existing non-blockchain experience to a blockchain, or try to adapt non-blockchain ideas to a blockchain.
 - This project provides a annotated bibliography to help think through various choices and their trade-offs. It does so by reviewing the current state of play, as it is described in: a) published general-blockchain research, b) Polkadot whitepapers. It does not offer the answer to any particular token-economy design question.
-- Substrate integration:
-  With Substrate Token-Economy networks in mind, I aim to provide a annotated bibliography of existing general-blockchain token-economy research.
+- W3F [Open Web3 Stack](https://github.com/open-web3-stack) integration:
+  With the W3F [Open Web3 Stack](https://github.com/open-web3-stack) Token-Economy networks in mind, I aim to provide a annotated bibliography of existing general-blockchain token-economy research.
   Specifically, the central features and concerns across Polkadot Parachain Token-Economy networks will be identified.
   Ultimately, the reader should learn something about those features of the token-economies of Polkadot Parachain  networks and understand how some of the issues raised by the general-blockchain token-economy research are addressed by Polkadot Parachain token-economy designs, while others are not.
   Summary tables will highlight the key differentiating characteristics of different Polkadot Parachain  network token-economies.
 - Motivation:
-  A project we are developing envisions the use of Substrate relay and Parachains in such a manner that our (imagined) token use is, apparently, novel. The state of play in Polkadot Parachain token-economics appears to be a debate [around staking and inflation](https://forum.polkadot.network/t/should-parachains-have-staking-inflation/806). A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This annotated bibliography will provide some of that information.
+  A project we are developing envisions the use of the W3F [Open Web3 Stack](https://github.com/open-web3-stack) relay and Parachains in such a manner that our (imagined) token use is, apparently, novel. The state of play in Polkadot Parachain token-economics appears to be a debate [around staking and inflation](https://forum.polkadot.network/t/should-parachains-have-staking-inflation/806). A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of the W3F [Open Web3 Stack](https://github.com/open-web3-stack) and its pallets, possibly with links to case studies or other resources. This annotated bibliography will provide some of that information.
 
 ## Project Details
 
 ### The problem
 
-A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This annotated bibliography will provide some of that information.  Inclusion of any of this information in Substrate/Polkadot documentation is out of scope.
+A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of the W3F [Open Web3 Stack](https://github.com/open-web3-stack) and its pallets, possibly with links to case studies or other resources. This annotated bibliography will provide some of that information.  Inclusion of any of this information in the W3F [Open Web3 Stack](https://github.com/open-web3-stack)/Polkadot documentation is out of scope.
 
 ### Research questions/hypothesis
 
@@ -123,10 +123,10 @@ The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Rese
 - Game theory, behavioral economics/finance.
 - Empirical inference of token-economy attributes from time-series or cross-sectional regression analysis.
 - A review of the general economic modeling literature i.e. not related to blockchains.
-- Substrate/Polkadot documentation.
+- the W3F [Open Web3 Stack](https://github.com/open-web3-stack) documentation.
 - Verifying the network token-economy has been implemented as specified in the network whitepaper.
 - Verifying the network whitepaper assumptions are a reasonable/plausible description of the network participants.
-- Inclusion of any of this information in Substrate/Polkadot documentation.
+- Inclusion of any of this information in the W3F [Open Web3 Stack](https://github.com/open-web3-stack) documentation.
 
 #### Crypto-Currencies
 
@@ -138,7 +138,7 @@ Equilibria are generally explicitly constructed (which proves existence) using c
 - Where and how does your project fit into the ecosystem?
   - Research into the design of a token-economy and survey of Polkadot token-economies.
 - Who is your target audience?
-  - Polkadot/Substrate Relay and Parachain developers.  Industry analysts/advisors (media and investors).
+  - the W3F [Open Web3 Stack](https://github.com/open-web3-stack) Relay and Parachain developers.  Industry analysts/advisors (media and investors).
 - What need(s) does your project meet?
   Developers and analysts need to understand the relevant literature available when developing their token-economy.
   The literature we canvas both theoretical (refereed articles) and applied (network whitepapers).
@@ -307,7 +307,7 @@ Please include here
 - how you intend to use, enhance, promote and support your project in the short term, and
   - The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent) and the Polkadot forum.
 - the team's long-term plans and intentions in relation to it.
-  - Engage in a more forward-looking/positive analysis of how to design an aspect of the Substrate/Polkadot token-economy that addresses a current need.
+  - W3F Grant Proposal to implement and document one token model as an example/template of building a blockchain on the W3F [Open Web3 Stack](https://github.com/open-web3-stack) having known 'on-paper' coin characteristics.
   - Create RFP's addressing pallet functionality gaps that are identified in the course of the above.
 
 ## Additional Information :heavy_plus_sign:
