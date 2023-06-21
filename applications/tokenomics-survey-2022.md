@@ -251,7 +251,7 @@ Initial flow-chart/decision-tree development that will help developers place the
 
 ### Milestone 2 — Outline Article
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 month
 - **FTE:**  0.2
 - **Costs:** 3,000 USD
 
@@ -268,7 +268,7 @@ Initial flow-chart/decision-tree development that will help developers place the
 
 ### Milestone 3 — Finalize Article
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 2 month
 - **FTE:**  0.2
 - **Costs:** 4,000 USD
 
