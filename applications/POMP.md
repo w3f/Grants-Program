@@ -77,7 +77,7 @@ We are a decentralized team focusing on the blockchain industry since 2020. We a
 
 - **Estimated duration:** 2 month
 - **FTE:**  3
-- **Costs:** 30,000 USD
+- **Costs:** 22,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
