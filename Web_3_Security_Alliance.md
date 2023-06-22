@@ -114,6 +114,8 @@ In collaboration with blockchain cybersecurity development firm Shield3: a serie
 
 An international event convening Web3 security professionals from across the world to collectively envision what is necessary for the industry to become as safe and efficient as possible. Will be a staging ground to proposal, orientation, and refinement of the Web3 Security Alliance's next round of projects and beyond.
 
+# Need more information for the below [][][][][][]
+
 ## Development Roadmap :nut_and_bolt:
 
 This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
