@@ -87,9 +87,6 @@ Please describe the team's relevant experience. If your project involves develop
 
 - https://github.com/<your_organisation>/<project_1>
 - https://github.com/<your_organisation>/<project_2>
-
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
 - https://github.com/<team_member_1>
 - https://github.com/<team_member_2>
 
