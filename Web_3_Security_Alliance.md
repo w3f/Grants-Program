@@ -49,20 +49,20 @@ The goal is not to replicate what for-profit market mechanisms (Immunifi, Code4r
 ### Team members
 
 - Name of team leader
-  - Samczsun (CEO)
+  - Samczsun (Chief Executive Officer)
 
 - Names of team members
-  - Jeanne Bardin (CSO)
+  - Jeanne Bardin (Chief Strategy Officer)
   - Hudson Jameson (President)
   - Kyoko Balda (Communications Director)
-  - Alice Albl (???)
+  - Alice Albl ([][][][][])
     
 
 ### Contact
 
 - **Contact Name:** Alice Albl
 - **Contact Email:** alice@securityalliance.org
-- **Website:** opensecurityalliance.org
+- **Website:** securityalliance.org
 
 ### Legal Structure
 
@@ -73,17 +73,16 @@ The goal is not to replicate what for-profit market mechanisms (Immunifi, Code4r
 
 | Name | Role | Experience
 | ----- | ----------- | ------------- |
-| samczsun | CEO | |
-| Hudson Jameson | President |  over a decade of experience in the crypto ecosystem and 8 years of experience in the Ethereum ecosystem. In that time, he served as an operational figurehead for the Ethereum Foundation from most of the time he was there (2016-2021). He also had a startup from 2017-2018 where he was the COO and lead Solidity engineer. He has experience setting up and managing corporations (S/C corps), volunteer organization (Ethereum Cat Herders), and multiple grants organizations (Baseline Grants Program & Zcash Grants Program). 
- |
-| Jeanne Bardin | CSO | |
-| Kyoko Baldin | Communications Director | |
-| Alice Albl | ??? | |
+| samczsun | Chief Executive Officer | Former security engineering experience with Stripe, Wish and Trail of Bits. Current Head of Security and Research Partner with Paradigm. |
+| Hudson Jameson | President |  Over a decade of experience in the crypto ecosystem and 8 years of experience in the Ethereum ecosystem. In that time, he served as an operational figurehead for the Ethereum Foundation from most of the time he was there (2016-2021). He also had a startup from 2017-2018 where he was the COO and lead Solidity engineer. He has experience setting up and managing corporations (S/C corps), volunteer organization (Ethereum Cat Herders), and multiple grants organizations (Baseline Grants Program & Zcash Grants Program). |
+| Jeanne Bardin | Chief Strategy Officer | Worked on startups for 20 years, former COO/CIO of Flex Dapp$ (Web3 development agency, venture studio & hacker collective), was part of Flex DApp$ efforts including: building major Ethereum Client Lighthouse, Collab.Land and the conference app for the Web3 Summit; creating an official Devcon burner wallet; winning teams at Eth Berlin & Eth New York; and briefing the Australian Treasury on DeFi and provided expert technical witness reports for law firms on issues such as The DAO hack. |
+| Kyoko Baldin | Communications Director | Has ongoing experience handling marketing, founding, creative direction, and product management for SSRWives & other communities in the  crypto space. Double-major of Accounting and Economics at the University of Central Florida. |
+| Alice Albl | [][][][][] | Former compliance experience working with Delphi Digital, New York Cyber Command, and the Brooklyn Law and Innovative Policy Clinic; ongoing operations experience at LeXpunK and the Wall Street Blockchain Alliance. |
 
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
 
-### Team Code Repos
+### Team Code Repos [][][][][][][]
 
 - https://github.com/<your_organisation>/<project_1>
 - https://github.com/<your_organisation>/<project_2>
@@ -109,11 +108,11 @@ The WSHC has been in production for months with its contents, implementation, an
 
 ### Red Team Simulations
 
-In collaboration with 
+In collaboration with blockchain cybersecurity development firm Shield3: a series of hands-on, sophisticated training exercises to improve the capabilities of Web3 security professionals. Slated for launch sometime in July of 2023. 
 
 ### The Paris Retreat
 
-Intended to be for and by the community, the 
+An international event convening Web3 security professionals from across the world to collectively envision what is necessary for the industry to become as safe and efficient as possible. Will be a staging ground to proposal, orientation, and refinement of the Web3 Security Alliance's next round of projects and beyond.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -139,9 +138,9 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Unlicense |
-| **0b.** | Documentation | We can provide the documentary portion of our our signature project, the Whitehat Safe Harbor Constitution and written overviews of our other initiatives |
-| **0c.** | Testing and Testing Guide | Eeach initiative is  |
+| **0a.** | License | No license necessary |
+| **0b.** | Documentation | The documentary portion of the Alliance's signature project, the Whitehat Safe Harbor Constitution can be provided upon request |
+| **0c.** | Testing | Evidence of third parties vetting and critiquing each of the Alliance's signature initiatives is available  |
 | **0d.** | Docker | N/A |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
@@ -174,9 +173,5 @@ Please include here
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Personal recommendation
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
 
 The Web3 Security Alliance has received support from a16z, Paradigm, and LeXpunK. Grants have been received from Gnosis, Filecoin Foundation, and the Ethereum Foundations; its first donor was Vitalik Buterin.
