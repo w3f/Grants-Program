@@ -103,7 +103,17 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Whitehat Safe Harbor Constitution
 
- The Whitehat Safe Harbor Constitution (WSHC) has been in production for months with its contents, implementation, and efficacy vetted in several iterations by 
+Creation of the Whitehat Safe Harbor Constitution (WSHC) was motivated by a historical analysis upon technical (exempting scams and "social engineering") DeFi attacks which revealed a posibility of recovering stolen assets in one-third of attacks; if only timely counteraction had been taken. Investigation into this lack of action further revealed a mix of concerns among capable parties including such regarding legal liability, the possibility of reward, and procedure generally. The WSHC is a framework that responds to these concerns. 
+
+The WSHC has been in production for months with its contents, implementation, and efficacy vetted in several iterations by both legal and technical experts. Intended to act as a failsafe activated in case of a counter-actionable attack, the WSHC provides real liability protections and a guaranteed reward for  rescuers who successfully return stolen assets to an "Asset Recovery Address."
+
+### Red Team Simulations
+
+In collaboration with 
+
+### The Paris Retreat
+
+Intended to be for and by the community, the 
 
 ## Development Roadmap :nut_and_bolt:
 
