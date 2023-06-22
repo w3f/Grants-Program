@@ -101,13 +101,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+### Whitehat Safe Harbor Constitution
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+ The Whitehat Safe Harbor Constitution (WSHC) has been in production for months with its contents, implementation, and efficacy vetted in several iterations by 
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -159,9 +155,11 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 Please include here
 
+### Short Term
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
+### Long Term
 
 ## Additional Information :heavy_plus_sign:
 
@@ -171,4 +169,4 @@ Here you can also add any additional information that you think is relevant to t
 
 - Work you have already done.
 
-The Web3 Security Alliance has received support from a16z, Paradigm, and LeXpunK. Grants were received by the Web3 Security Alliance from the Ethereum and Filecoin Foundations, and its first donor was Vitalik Buterin.
+The Web3 Security Alliance has received support from a16z, Paradigm, and LeXpunK. Grants have been received from Gnosis, Filecoin Foundation, and the Ethereum Foundations; its first donor was Vitalik Buterin.
