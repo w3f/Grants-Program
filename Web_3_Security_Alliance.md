@@ -25,8 +25,8 @@ The Alliance's signature project, the Whitehat Safe Harbour Constitution is an e
 ### Project Details
 
 
-| ----- | ----------- | 
-|The Whitehat Safe Harbour Constitution | Signature initiative, Legal protection for white hats to rescue funds under active exploit |
+| --- | --- | 
+| The Whitehat Safe Harbour Constitution | Signature initiative, Legal protection for white hats to rescue funds under active exploit |
 | Attack Simulation | Exercise to strengthen resiliency and collaboration in the most ecosystem critical projects |
 | Security Retreat | Social coordination and planning for future common good security initiatives |
 
