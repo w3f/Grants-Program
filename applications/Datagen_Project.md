@@ -242,18 +242,18 @@ The goal is to achive a fully functional mechanism for the random selection of t
 
 ## Future Plans
 
-- Short term, while the development team works on the grant proposal, the management team will continue the private sale of our DataGen token (to ensure more financial resources for our project) and increase our available network;
+In- Short term, while the development team works on the grant proposal, the management team will continue the private sale of our DataGen token (to ensure more financial resources for our project) and increase our available network;
 
-- Our long term plan is to access the Substrate Builder's Program and walk the path to obtain a Parachain.
+- Our long-term plan is to access the Substrate Builder's Program and walk the path to obtain a Parachain.
 
-  ## Future Proposal to to amend the amount for the second Milestone from 12K to 21K (9K USDC increase).
+  ## Future Proposal to amend the amount for the second Milestone from 12K to 21K (9K USDC increase).
 
   After an insightful conversation with your colleagues of Parity, Coleman Maher and Richard Casey
 we thought to apply for an integration of the payment for the second Milestone of our ongoing grant.
-We will do a quick recap and we explain why we think it is necessary:
+We will do a quick recap and explain why we think it is necessary:
 
--We applied last summer for the grant. While I have always been personal responsible for the general technical design of th
-e architecture, including the specifics for the grant, the development was done in synergy with @viac92, that, back then, was our lead dev.
+-We applied last summer for the grant. While I have always been personally responsible for the general technical design of th
+e architecture, including the specifics for the grant, the development was done in synergy with @viac92, which, back then, was our lead dev.
 
 -At the time of the grant application @viac92 expertise was mostly solidity and other languages, not rust or the substrate framework.
 For this reason, B-Datagray (the legal entity that is responsible for developing the project) allowed the dev to take some time to be
@@ -264,16 +264,16 @@ The actual development started in September.
 
 -As already explained, the developer that completed the first milestone left us before Christmas 2022.
 
--Due to the bearish market our fundraise with VCs came to a halt in late 2022 and early 2023, preventing us from scaling the team further.
+-Due to the bearish market our fundraising with VCs came to a halt in late 2022 and early 2023, preventing us from scaling the team further.
 
 -We started to work with @cuteolaf in late January, part-time, given the financial constraints.
 
 -@cuteolaf left the development in March for a mix of underestimating the technical complexities from his side and (once he correctly
-assessed the amount of working hours necessary for the development of the Milestone) his unwillingness to develop such a great amount
+assessed the number of working hours necessary for the development of the Milestone) his unwillingness to develop such a great amount
 of working hours for the financial compensation that was possible given the actual Milestone2 payment (the agreement was for him to be
 paid once the Milestone code was approved by W3F committee).
 
--In April we started again to search for substrate devs, but our proposal was totally off market prices for a full-time substrate dev.
+-In April we started again to search for substrate devs, but our proposal was totally off-market prices for a full-time substrate dev.
 The market monthly salary of one full-time senior substrate dev is ≈10 to 20k per month, with 15K being a common benchmark. When we
 asked for the Milestone: 
 1. We underestimated the technical complexity of the milestone;
@@ -284,12 +284,12 @@ dev, both because he was involved in the project with a native token allocation 
 
 -Given the above premises, the search of a new dev in April was very difficult, we both explored the road of dev shops with substrate
 capabilities, mostly with the help of Richard Casey from Parity, and of independent contractors. The pricing to develop the milestone
-was always above 15K. Usually prices of 15K to 20K could buy ≈200h of development, but no guarantee of developing the milestone in case
+was always above 15K. Usually, prices of 15K to 20K could buy ≈200h of development, but no guarantee of developing the milestone in case
 the number of hours was exceeded. While one specific dev shop was ready to contractually guarantee the development, but for 30K.
 
 
--Similarly, it was impossible to hire full time devs, both for the insufficient amount from the milestone and because most devs were
-requesting (for a full-time job) contracts of 6 months to 1year, well beyond the scope of the milestone and, until we can secure more
+-Similarly, it was impossible to hire full-time devs, both for the insufficient amount from the milestone and because most devs were
+requesting (for a full-time job) contracts of 6 months to 1 year, well beyond the scope of the milestone and, until we can secure more
 VC funds, we can’t hire a substrate dev for 6 months;
 
 -At the end of May, we started to work with another senior substrate dev, @ysfkel, for the reasons above, our collaboration is part
@@ -298,11 +298,11 @@ time;
 As so, while the work on the second milestone is progressing, we are aware that we are greatly out of the originally proposed timeline,
 and we fell that a payment integration for the milestone will allow us to speed up the milestone development.
 
-I would also like to do some specification about the deliverable of the second milestone, just to underline the complexity of we
+I would also like to do some specifications about the deliverable of the second milestone, just to underline the complexity of we
 weren’t completely aware when we submitted the original grant proposal.
 
-a) It revolves around the communication between a solo substrate chain and a parachain. Usually in the substrate framework you have a
-Relay Chain and a Parachain speaking with each other (due to the way in which the Polkadot and Kusama ecosystem are built), meaning
+a) It revolves around the communication between a solo substrate chain and a parachain. Usually in the substrate framework, you have a
+Relay Chain and a Parachain speaking with each other (due to the way in which the Polkadot and Kusama ecosystems are built), meaning
 that for the communication between a Parachain and a Solo Chain (which is not its own Relay Chain), the standard XCM method can’t be
 applied;
 
@@ -316,7 +316,7 @@ is not the Parachain’s Relay;
 
 e) This implies more development;
 
-f) This can benefit a plurality of teams in the Polkadot ecosystem: for example it could enable direct communication between a
+f) This can benefit a plurality of teams in the Polkadot ecosystem: for example, it could enable direct communication between a
 Polkadot’s Parachain and Kusama (or viceversa) or any Polkadot’s/ Kusama’s Parachain and any Solochain; it can also enable Parachain’s
 to speak with Solochains which have a different blocktime;
 
@@ -327,11 +327,11 @@ reducing the use of Solochains as a complement for Parachains.
 
 h) Besides the importance of the development of the Milestone itself, we remember that Datagen (https://github.com/Datagen-Project/Whitepaper-2.0 ), as a service blockchain for verification of random computational problems, can greatly benefit the Polkadot
 network, by adding a tool to randomly verify on-chain off-chain computational workloads and to assign workloads in a decentralized way
-(as a long term solution on the vexing problem of having Polkadot’s and Kusama’s validators all hosted by AWS and similar providers
-with censorship capability over the network’s validators); as so, beyond the scope of the Milestone2, we think that progressing as fast
+(as a long-term solution to the vexing problem of having Polkadot’s and Kusama’s validators all hosted by AWS and similar providers
+with censorship capability over the network’s validators); as so, beyond the scope of Milestone2, we think that progressing as fast
 as possible with the general roadmap of the Datagen network can be beneficial for the whole ecosystem.
 
-For all the reasons above, I would like to ask an integration of the amount due for the M2 deliverable of 9K USDC (from 12K to 21K
+For all the reasons above, I would like to ask for an increase of the amount due for the M2 deliverable of 9K USDC (from 12K to 21K
 USDC), to better reflect the real development costs and speed up the delivery.
 
 
