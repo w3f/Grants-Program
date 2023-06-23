@@ -56,7 +56,7 @@ We have made significant progress in integrating TensorFlow's Federated Machine 
 
 **Model Deployment**: Model serving frameworks (e.g., TensorFlow Serving, PyTorch Lightning) for deploying trained models for production usage, including monitoring tools and frameworks for tracking model performance, latency, and resource utilisation.
 
-**Client Interface**: This component acts as a facade providing a universal interface to the deployed models and other aspects of the system for a range of DevTools, SDKs, and User Interfaces.
+**Client Interface**: This component acts as a facade providing a universal interface to the deployed models and other aspects of the system for a range of DevTools, SDKs, and user interfaces.
 
 
 #####  Implementation
@@ -178,7 +178,7 @@ Here are key publications in the field of decentralised federated machine learni
 
 
 
-### Milestone 2 — Collective Economy and Client Interface
+### Milestone 2 — Collective Economy and Client Interface 
 
 - **Estimated duration:** 4 weeks
 - **FTE:** 2.5
