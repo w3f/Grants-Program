@@ -234,16 +234,15 @@ The new [XCM-API](https://github.com/paraspell/xcm-api) is in development and we
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide both readme.md and official docs documentation  |
-| 0c. | Testing and Testing Guide | Testing guide will be mentioned in official docs|
+| 0c. | Testing and Testing Guide | Testing guide will be mentioned in official docs & core unit tests will be provided |
 | 0e. | Create Medium article about development of LightSpell | Add article covering new features & improvements brought with LightSpell |
 | 1.a | Integrate API for XCM functionality | Use Nest.js to integrate core XCM SDK functionality to send XCM messages |
 | 1.b | Integrate API for Asset functionality | Use Nest.js to integrate core XCM SDK functionality to do Asset operations |
 | 1.c | Integrate API for XCM Pallets functionality | Use Nest.js to integrate core XCM SDK functionality to query XCM Pallets of different Parachains |
 | 1.d | Integrate API for HRMP functionality | Use Nest.js to integrate core XCM SDK functionality to open/close HRMP channels |
 | 2. | Integrate token authentification | Integrate token authentification with limited requests to remove the possibility of DDOS (Bigger request limit can be requested for free via email provided in docs)|
-| 3.a | Add core UNIT tests| Add core UNIT tests covering main functionality |
-| 3.b | Add core Integration tests  | Add core Integration tests to ensure everything is working together as expected |
-| 3.c | Add core Endpoint (e2e) tests  | Add core endpoint tests to let the user try to use API without writing any code and also to demonstrate if API works |
+| 3.a | Add core Integration tests  | Add core Integration tests to ensure everything is working together as expected |
+| 3.b | Add core Endpoint (e2e) tests  | Add core endpoint tests to let the user try to use API without writing any code and also to demonstrate if API works |
 | 4. | Integrate LightSpell into ParaSpell docs | Add comprehensive guide for every feature that API will offer [link](https://paraspell.github.io/docs/api/TBA.html) |
 
 ## Future Plans 🔭
