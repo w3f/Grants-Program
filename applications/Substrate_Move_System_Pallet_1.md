@@ -145,6 +145,7 @@ We have not yet started our own development, we are still in the research phase.
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):** 2 FTE
 - **Total Costs:** 48 000 USD
+- **Starting Date:** 10/07/23
 
 ### **In-Depth Exploration and Assessment of MoveVM and Substrate Integration**
 
