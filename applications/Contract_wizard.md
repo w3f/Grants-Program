@@ -147,7 +147,8 @@ Described in project details.
 | 1. | Interaction with deployed contracts | The functionallity based on [step 1](#step1) of the Project Details section. |
 | 2. | Interaction with custom smart contracts | The functionality based on [step 2](#step2) of the Project Details section. |
 | 3. | Shareable Contract Interaction Links | The functionality corresponds to what's described on [step 3](#step3) of the Project Details section. |
-​| 4. | Support for multiple chains | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
+| 4. | Support for multiple chains  | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
+
 ​
 ## Future Plans
 ​
