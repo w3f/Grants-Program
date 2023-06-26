@@ -83,7 +83,7 @@ We have finished our technical research with our research paper, and we have sub
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** $24,000
 
-### Milestone 1 Project Development 
+### Milestone 1 Project Research and Development 
 
 - **Estimated duration:** 3 months
 - **FTE:**  3
@@ -91,10 +91,15 @@ We have finished our technical research with our research paper, and we have sub
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Project source code | The open source code of our project |
-| **0b.** | Project documentation | The core components, protocols, and architecture of our project |
-| **0c.** | High-fidelity prototype | User-friendly interfaces and UI&UX design |
-| **0d.** | Project research report | In-depth theroetical analysis, and innovative solution on blocckhain and AI |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the project works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests to better contribute to the research and development work of our project. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionalities delivered with this milestone |
+| 0e. | Article | We will publish an article and hold a workshop that explains our prjoect development work in English online |
+| 1. | Substrate modules  | We will create Substrate modules that achieve the core functionalites and features of our project listed in the grant proposal |
+| 2. | Substrate chain | We will build a new MEV compatible Substrate chain to load our project |
+| 3. | High-fidelity prototype | We will provide user-friendly interfaces and UI&UX design rationale for users to use our project easily |
+| 4. | Smart contracts | We will deliver a set of ink! smart contracts as the source code of our project |
 
 ### Milestone 2 Project Testing 
 
@@ -104,10 +109,14 @@ We have finished our technical research with our research paper, and we have sub
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Technical testing plan | The detailed parameters and arrangements of our technical testing on testnet |
-| **0b.** | User evaluation plan | Invite community users and business clients to use and give feedback |
-| **0c.** | Testing report | The actual execution results of our testing |
-| **0d.** | Improvement Analysis report | How to further improve our project to make it better according to our testing |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will allow users to participant in the testing of our project. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests to validate and improve our project. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionalities delivered with this milestone |
+| 1. | Substrate modules  | We will create Substrate modules to test the core functionalites and features of our project listed in the grant proposal |
+| 2. | Substrate chain | We will test the new MEV compatible Substrate chain used for loading and running our project |
+| 3. | High-fidelity prototype | We will also test and evaluate the user-friendly interfaces and UI&UX design rationale of our project |
+| 4. | Smart contracts | We will deliver a set of ink! smart contracts as the source code for testing our project |
 
 ### Milestone 3 Project Implementation 
 
@@ -117,11 +126,14 @@ We have finished our technical research with our research paper, and we have sub
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | MVP | Release version of our project |
-| **0b.** | API / SDK | Open our project to third-party ecosystem partners and clients |
-| **0c.** | Use cases | The specific runnable AI applications in different fields of our project on blockchain including data, modelling and computation |
-| **0d.** | Development plan | The sustainable and continuous future development plan of our project in the long-term |
-
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will allow users to participant in the implementation of our project. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests for our project implementation. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to implement all the functionalities delivered with this milestone |
+| 1. | Use cases | We will design and provide specific runnable applications of our project in different fields |
+| 2. | Project report | We will provide our in-depth theroetical analysis and innovative solution on blocckhain and AI to conclude our project |
+| 3. | Development plan | We will provide the sustainable and continuous future development plan of our project in the long-term |
+| 4. | Smart contracts | We will deliver a set of ink! smart contracts as the source code for implementing our project |
 
 ## Future Plans
 
