@@ -23,14 +23,14 @@ In this image, we can see, that ParaSpell saves much time for developers. Just o
 ![img2](https://user-images.githubusercontent.com/55763425/218987583-f5fb10b2-2e0c-4f36-b01c-0d610deab1c6.jpg)
 
 The following extrinsic can be subscribed into and we can check for its events on the front end. ParaSpell provides the front end for testing XCM transactions and XCM called [UI-V2](https://github.com/paraspell/ui-v2). This UI is also deployed on Netlify so users only have to run the local network to start testing. UI also provides the ability to open or close HRMP channels or test out XYK pool functionality that was implemented in collaboration with the HydraDX team. In the picture below we provide an overview of the UI.
-<img width="1654" alt="Screenshot 2023-02-15 at 10 36 01" src="https://user-images.githubusercontent.com/55763425/218989950-acb681e3-b511-452b-bc3a-c9e5049f7dce.png">
+<img width="1654" alt="Screenshot 2023-02-15 at 10 36 01" src="https://user-images.githubusercontent.com/55763425/218989950-acb681e3-b511-452b-bc3a-c9e5049f7dce.png"/>
 
 
 ### Overview 🎨
 
 ParaSpell is split into three main repositories at the moment and one new is being added soon:
 
-- [XCM API - TBA](): Meant to provide much faster response than integrating XCM SDK as well as being easier to integrate than XCM-SDK (No install needed) 
+- XCM API - TBA: Meant to provide much faster response than integrating XCM SDK as well as being easier to integrate than XCM-SDK (No install needed) 
 - [XCM SDK](https://github.com/paraspell/xcm-sdk): Meant to unify cross-chain experience on Substrate. Can serve any dApp developer that wishes to integrate XCM or other pallets support for they app.
 - [UI-V2](https://github.com/paraspell/ui-v2): Allows for launching local network and testing XCM or HRMP channels across that local network
 - [Docs](https://github.com/paraspell/docs): Extensive documentary for overview of ParaSpell, guide for SDK and UI
@@ -64,15 +64,15 @@ UI is used as testing tool for Parachain developers, they can simply add their n
 UI is made to be as simple to use as possible. It is now also deployed on netlify so developers only have to start local network from configuration file provided by ParaSpell which starts network of Relay chain and 3 different Parachains (Bifrost,Karura & Pichiu)
 
 Below are some examples of UI with running network:
-<img width="1341" alt="Screenshot 2023-02-16 at 13 31 06" src="https://user-images.githubusercontent.com/55763425/219366458-8873418e-9487-4762-8327-56c3294accdd.png">
+<img width="1341" alt="Screenshot 2023-02-16 at 13 31 06" src="https://user-images.githubusercontent.com/55763425/219366458-8873418e-9487-4762-8327-56c3294accdd.png"/>
 
 Above we can see open/ close channel screen. It is simple to work with and intuitive. Nodes are pulled from relay chain by query so if network is not running you cannot see any nodes.
 
-<img width="1389" alt="Screenshot 2023-02-16 at 13 31 20" src="https://user-images.githubusercontent.com/55763425/219366638-38ebcdd7-5ff6-4507-8209-fc7f3ccac348.png">
+<img width="1389" alt="Screenshot 2023-02-16 at 13 31 20" src="https://user-images.githubusercontent.com/55763425/219366638-38ebcdd7-5ff6-4507-8209-fc7f3ccac348.png"/>
 
 Above we can observe, that UI contains simple Wallet login with test accounts.
 
-<img width="1389" alt="Screenshot 2023-02-16 at 13 31 33" src="https://user-images.githubusercontent.com/55763425/219366771-be566565-8bf1-477b-b7c8-3eacec6f63a0.png">
+<img width="1389" alt="Screenshot 2023-02-16 at 13 31 33" src="https://user-images.githubusercontent.com/55763425/219366771-be566565-8bf1-477b-b7c8-3eacec6f63a0.png"/>
 
 Above we can see XCM screen which is also very simple to navigate and nodes are pulled from relay chain by query. 
 
@@ -80,23 +80,23 @@ Above we can see XCM screen which is also very simple to navigate and nodes are 
 Docs contain important information regarding SDK, UI and other repositories that are in ParaSpell or ParaSpell contributed to / collaborated with.
 The key areas are:
 - Introduction
-<img width="1530" alt="Screenshot 2023-02-16 at 13 44 58" src="https://user-images.githubusercontent.com/55763425/219368826-2bb5474f-a76f-4828-be15-c3274d9ae10a.png">
+<img width="1530" alt="Screenshot 2023-02-16 at 13 44 58" src="https://user-images.githubusercontent.com/55763425/219368826-2bb5474f-a76f-4828-be15-c3274d9ae10a.png"/>
 - Guide on importing SDK
-<img width="1530" alt="Screenshot 2023-02-16 at 13 45 09" src="https://user-images.githubusercontent.com/55763425/219368879-8bd4fd5a-a1f5-4417-8620-d8b279c99733.png">
+<img width="1530" alt="Screenshot 2023-02-16 at 13 45 09" src="https://user-images.githubusercontent.com/55763425/219368879-8bd4fd5a-a1f5-4417-8620-d8b279c99733.png"/>
 
 - Guide on launching local network and UI
-<img width="1530" alt="Screenshot 2023-02-16 at 13 48 43" src="https://user-images.githubusercontent.com/55763425/219369125-ce0756d7-49ef-437e-98b0-2336aa250137.png">
+<img width="1530" alt="Screenshot 2023-02-16 at 13 48 43" src="https://user-images.githubusercontent.com/55763425/219369125-ce0756d7-49ef-437e-98b0-2336aa250137.png"/>
 
 
 - Guide on executing operations in UI
-<img width="1530" alt="Screenshot 2023-02-16 at 13 45 24" src="https://user-images.githubusercontent.com/55763425/219368943-4115808b-1322-4551-b03a-b693bec285a2.png">
+<img width="1530" alt="Screenshot 2023-02-16 at 13 45 24" src="https://user-images.githubusercontent.com/55763425/219368943-4115808b-1322-4551-b03a-b693bec285a2.png"/>
 
 - Guide on implementing SDK
-<img width="1530" alt="Screenshot 2023-02-16 at 13 46 01" src="https://user-images.githubusercontent.com/55763425/219369060-1c0c1076-65e5-4997-a1c6-b99da9f33bac.png">
+<img width="1530" alt="Screenshot 2023-02-16 at 13 46 01" src="https://user-images.githubusercontent.com/55763425/219369060-1c0c1076-65e5-4997-a1c6-b99da9f33bac.png"/>
 
 
 - Important links
-<img width="1530" alt="Screenshot 2023-02-16 at 13 45 30" src="https://user-images.githubusercontent.com/55763425/219369013-e147d239-28a2-4701-9c16-2614b975d210.png">
+<img width="1530" alt="Screenshot 2023-02-16 at 13 45 30" src="https://user-images.githubusercontent.com/55763425/219369013-e147d239-28a2-4701-9c16-2614b975d210.png"/>
 
 #### Architecture 🏗️
 ##### Old
@@ -187,7 +187,7 @@ Michael Absolon - Student, XCM SDK & XCM API Core Dev. Faculty of Informatics an
 
 ### Team's experience
 -  Dušan is the founder & researcher behind this project and he has successfully presented it at the international conference ICECET2022 held in Prague from which there is an article regarding XCMP & ParaSpell project. It is published by IEEE [link](https://ieeexplore.ieee.org/document/9872938). He also successfully presented it at ICBC 2023 conference held in Dubai. Dušan also studies Blockchain technology and had a bachelor's thesis about cross-blockchain sharing from which this idea was born. Dušan continues research on this idea in his Master's thesis. He is actively working on ParaSpell https://github.com/paraspell full-time & has also participated in other ecosystem projects. Recently he attended Polkadot Blockchain Academy 2023 in Buenos Aires which gave him a lot of insight into the ecosystem and he also graduated from the academy successfully. Here is NFT that was minted as a certificate by Parity - [link](https://singular.app/collectibles/statemine/20/12)
-<img src="https://user-images.githubusercontent.com/55763425/223093342-7d947a57-b114-4260-8999-fd4506adc76e.jpg" width="380" height="280">
+<img src="https://user-images.githubusercontent.com/55763425/223093342-7d947a57-b114-4260-8999-fd4506adc76e.jpg" width="380" height="280"/>
 
 - Michael is a dedicated TypeScript developer with 2 years of full-time experience in the Web2 sphere. Michael's expertise in this field was further solidified in 2019 when he won first place in the Junior Internet Web competition for his online multiplayer game, which was written in JavaScript. In addition to his professional background, Michael also achieved a bachelor's degree in the same computer science University as Dušan and he is currently pursuing a master's degree which focuses on Blockchain. His passion for technology led him to explore Blockchain technology in his free time. He was recently offered the opportunity to work on ParaSpell XCM SDK with Dušan and he delivered many of the key features SDK now offers.
 
