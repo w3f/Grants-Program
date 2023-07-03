@@ -88,13 +88,13 @@ Team members GitHub:
 
 - **Total Estimated Duration:** 2,5 months
 - **Full-Time Equivalent (FTE):**  2 FTE ( full time employees)
-- **Total Costs:** 10,000 USD
+- **Total Costs:** 20,000 USD
 
 ### Milestone 1 
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 5,000 USD
+- **Costs:** 10,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -111,7 +111,7 @@ Team members GitHub:
 
 - **Estimated Duration:** 1,5 month
 - **FTE:**  1,5
-- **Costs:** 5,000 USD
+- **Costs:** 10,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -123,8 +123,7 @@ Team members GitHub:
 | 0e. | Article | |
 | 1. | NFT indexer module | Index all the data that is scanned by the scanner module and pass it to the database layer. |
 | 2. | Design and development of the NFT provenance SDK | A typescript based SDK which consists of API calls to the database to fetch the NFT lifecycle. |
-
-
+| 3. | Technical Documentation for the SDK. |
 
 ## Future Plans
 
