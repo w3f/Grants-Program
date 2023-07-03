@@ -86,7 +86,7 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 * Ganish Oli - Substrate Developer
 * Rene Hürter - Substrate Developer
 * Alan - Full Stack Developer
-* Victor Chukwonoso - UI/UX Designer
+* Victor Chukwonoso - Product Designer
 
 ### Contact
 
