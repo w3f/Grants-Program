@@ -1,9 +1,9 @@
 # Data Analysis Tools for Substrate-based Blockchains
 
-* **Status:** Open
-* **Proposer:** [dsm-w3f](https://github.com/dsm-w3f), [michalisFr](https://github.com/michalisFr)
+- **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/pull/1716), [Under Development 2](https://github.com/w3f/Grants-Program/pull/1768)
+- **Proposer:** [dsm-w3f](https://github.com/dsm-w3f), [michalisFr](https://github.com/michalisFr)
 
-## Project Description :page_facing_up: 
+## Project Description :page_facing_up:
 
 Block Explorers are tools that index blockchain data and allow people to easily exhibit it using a web user interface. Examples of Block Explorers in the Polkadot/Kusama ecosystem are (not exhaustive) Subscan, Calamar, and Statescan. For common users, the features commonly found in block explorers are enough. However, for advanced users, the data analysis involves accessing many screens and following long paths through blockchain data.
 
