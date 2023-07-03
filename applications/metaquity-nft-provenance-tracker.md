@@ -1,8 +1,8 @@
 # NFT PROVENANCE TRACKER SDK
 
-- **Team Name:** [Metaquity limited](metaquity.xyz)
-- **Payment Address:** FREE
-- **Level:** 1
+- **Team Name:** [Metaquity limited](www.metaquity.xyz) (Part of Substrate Builders Program)
+- **Payment Address:** 0x26d5BD3B8AC9c38DfA5E2A29EEAC2573f7b0d10b
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
@@ -64,6 +64,8 @@ Later on we can extend EVM compatibility to this project to make it more versati
 
 - **Abhishek Chatterjee**: Co-founder of Metaquity, 15+ years of product and technical experience. 4+ years of blockchain experience. 
 - **Abhishek Sira Chandrasekhar**: Software developer with 4+ years of experience in development 2+ years in Blockchain working on DID, SSI, VC and ZKP. Prior to Metaquity used to work at Litentry as a mobile developer.
+
+- Metaquity Network is already part of the Substrate Builders Program and working on completing Milestone Level 1. 
 
 
 ### Team Code Repos
