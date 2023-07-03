@@ -18,6 +18,7 @@ Our research indicates that, while there are some solutions for tracking NFT pro
 
 Architecture:
     ![](https://i.ibb.co/TkWNWWK/Screenshot-2023-07-03-at-14-13-35.png)
+    
   A standard asset tracking SDK will be built with the following layers:
   - Blockchain layer: Access to the blockchain data source and crawl through the blocks from genesis block
   - Middleware layer: Contains the crawlers through which we can crawl the blockchain and collect information about NFTs and write into the database and index it using elastic search.
