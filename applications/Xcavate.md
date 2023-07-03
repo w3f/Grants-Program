@@ -85,7 +85,7 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 * Alex Ward – COO
 * Ganish Oli - Substrate Developer
 * Rene Hürter - Substrate Developer
-* Neeraj Choubisa - Full Stack Developer
+* Alan - Full Stack Developer
 * Victor Chukwonoso - UI/UX Designer
 
 ### Contact
@@ -104,23 +104,22 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 Richard Houldsworth – 10 years in web 2.0 dev space – serial Entrepreneur
 Alex Ward – 25 years in the global property market – serial Entrepreneur
 Ganish Oli - ink! smart contract developer and substrate blockchain developer.
-Rene Hürter - I am currently studying to become a blockchain developer. Alchemy University Ethereum Bootcamp 11/2022. Scaling Ethereum 2023 Hackathon 11/03/2023. Consensus 2023 Hackathon (Web3athon 2023) 17/04/2023.
-Neeraj Choubisa - A Passionate Full Stack Blockchain Ethereum Based Web Developer, Third-Year student at Indian Institute of Information Technology, Dharwad
+Rene Hürter - Currently studying to become a blockchain developer. Alchemy University Ethereum Bootcamp 11/2022. Scaling Ethereum 2023 Hackathon 11/03/2023. Consensus 2023 Hackathon (Web3athon 2023) 17/04/2023.
+Alan Ma - Full-Stack developer who likes to work with JavaScript/Typescript (React, Next.js, Redux, Vue.js, Node), Blockchain(Bitcoin, Ethereum, Cosmos, Solidity, Rust), Golang, Python among others. Since I graduated from the university, I’ve joined several companies and dev teams to build web/mobile and web3 apps.
 
 ### Team Code Repos
 
 https://github.com/xcavateblockchain
 https://github.com/xcavate2022
 https://github.com/ganesh1233456
-https://github.com/Kali-Decoder
 https://github.com/RecrafterH
+https://github.com/meanking
 
 ### Team LinkedIn Profiles
 
 https://www.linkedin.com/in/richard-houldsworth/ 
 https://www.linkedin.com/in/alex-ward-2350a036/
 https://www.linkedin.com/in/ganesh-oli-9285a4163/
-https://www.linkedin.com/in/neeraj-choubisa-a4952b202/
 https://www.linkedin.com/in/ren%C3%A9-h%C3%BCrter-36084b249
 
 ## Development Status :open_book:
