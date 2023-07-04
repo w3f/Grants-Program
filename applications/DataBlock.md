@@ -80,12 +80,15 @@ Later on we can extend EVM compatibility to this project to make it more versati
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
+- **Total Estimated Duration:** 6 weeks
+- **Full-Time Equivalent (FTE):**  2.5 FTE
+- **Total Costs:** 9,500 USD
 
 ### Milestone 1 — Blockchain Indexation
 
 
 - **Estimated duration:** 6 weeks
-- **FTE:**  1,5
+- **FTE:**  1.5
 - **Costs:** 9,500 USD
 
 
