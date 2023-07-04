@@ -1,7 +1,7 @@
 # Web3 Security Alliance
 
 - **Team Name:** Open Security Alliance
-- **Payment Address:** 0x1814E339e2bf21C33dcd1D2EbC91F78079838887 (USDC); Fiat [][][][][]
+- **Payment Address:** Fiat [][][][][]
 In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here.
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
@@ -17,7 +17,7 @@ The Web3 Security Alliance was created to add tactical and practical value to de
 
 The Alliance is a social coordination layer that sits above its stakeholders (decentralised protocols, security professionals, ethical hackers and bag holders) with the purpose of incentivising & protecting honest actors within the ecosystem. The Alliance is a common good infrastructure that anticipates the expansion of attack vectors to be brought about by cross-chain composability and plans accordingly
 
-The Alliance's signature project, the Whitehat Safe Harbour Constitution is an example of the Alliance acting as a unifying body that advocates on behalf of ethical hackers across chains and counters downside risk and asymmetry associated with this important work. This is one of the projhects we plan to integrate into the Dot/Sama ecosystem
+The Alliance's signature project, the Whitehat Safe Harbour Constitution is an example of the Alliance acting as a unifying body that advocates on behalf of ethical hackers across chains and counters downside risk and asymmetry associated with this important work. This is one of the projhects we plan to integrate into the Dotsama ecosystem
 
 “Downside risk” in the above meaning unfair or unintended liability; “asymmetry” meaning black hats have a disproportionate effect on the system because they only need to find one exploit, once,  whilst a protocol or ethical researcher has to defend against all of them, always, to be considered a success. Thus, we need to empower white hats and give them more leverage.
 
@@ -39,11 +39,11 @@ The speed of maturation of our industry depends much on safety. Over $28 Billion
 
 The Web3 Security Alliance identifies key groups as hackers and the communities driving protocols. Prominent white hats and web3 security specialists have said that the Web3 Security Alliance is very necessary, and urgent. 
 
-Cross-chain composability is coming and represents a widening threat to the decentralised ecosystem. The Dot/Sama ecosystem is one of the premiere staging grounds for these groundbreaking but awesomely powerful possibilities coming with cross-chain composability, implenting the Web3 Security Alliance's projects on its networks early and thoroughly will be a critical measure for the industry.
+Cross-chain composability is coming and represents a widening threat to the decentralised ecosystem. The Dotsama ecosystem is one of the premiere staging grounds for these groundbreaking but awesomely powerful possibilities coming with cross-chain composability, implenting the Web3 Security Alliance's projects on its networks early and thoroughly will be a critical measure for the industry.
 
-The Web3 Security Alliance doesn't compete with market players but rather bridges the gap where incentives and competition leave holes. When under attack by regulation, dishonest actors like hackers, or perverse incentive schemes which undermine credibility, coordination in a vast ecosystem like Dot/Sama is paramount. This requires systematic thinking and relational engineering that spans across decentralised ecosystems. Building strategic relationships is one way to prevent competition from deterring all collaboration.
+The Web3 Security Alliance doesn't compete with market players but rather bridges the gap where incentives and competition leave holes. When under attack by regulation, dishonest actors like hackers, or perverse incentive schemes which undermine credibility, coordination in a vast ecosystem like Dotsama is paramount. This requires systematic thinking and relational engineering that spans across decentralised ecosystems. Building strategic relationships is one way to prevent competition from deterring all collaboration.
 
-The goal is not to replicate what for-profit market mechanisms (Immunifi, Code4rena, Sherlock, Auditors) can provide, but rather to help them and bridge any gaps which fall into the tragedy of the commons. Whilst it is clearly impossible to completely protect the decentralised ecosystem, some unifying body that advocates on behalf of ethical hackers across chains would bolster our security efforts.
+The goal is not to replicate what for-profit market mechanisms (Immunifi, Code4rena, Sherlock, Auditors) can provide, but rather to help them, collaborate with them, and bridge any gaps which fall into the tragedy of the commons. Whilst it is clearly impossible to completely protect the decentralised ecosystem, some unifying body that advocates on behalf of ethical hackers and security professionals across chains would bolster our security efforts.
 
 ## Team :busts_in_silhouette:
 
@@ -53,17 +53,17 @@ The goal is not to replicate what for-profit market mechanisms (Immunifi, Code4r
   - Samczsun (Chief Executive Officer)
 
 - Names of team members
-  - Jeanne Bardin (Chief Strategy Officer)
+  - Jeanne Bardin (Strategy Lead)
   - Hudson Jameson (President)
-  - Kyoko Balda (Communications Director)
-  - Alice Albl ([][][][][])
+  - Kyoko Balda (Communications Lead)
+  - Alice Albl (Operations Lead)
     
 
 ### Contact
 
 - **Contact Name:** Alice Albl
 - **Contact Email:** alice@securityalliance.org
-- **Website:** securityalliance.org
+- **Website:** securityalliance.org (under development)
 
 ### Legal Structure
 
@@ -76,9 +76,9 @@ The goal is not to replicate what for-profit market mechanisms (Immunifi, Code4r
 | ----- | ----------- | ------------- |
 | samczsun | Chief Executive Officer | Former security engineering experience with Stripe, Wish and Trail of Bits. Current Head of Security and Research Partner with Paradigm. |
 | Hudson Jameson | President |  Over a decade of experience in the crypto ecosystem and 8 years of experience in the Ethereum ecosystem. In that time, he served as an operational figurehead for the Ethereum Foundation from most of the time he was there (2016-2021). He also had a startup from 2017-2018 where he was the COO and lead Solidity engineer. He has experience setting up and managing corporations (S/C corps), volunteer organization (Ethereum Cat Herders), and multiple grants organizations (Baseline Grants Program & Zcash Grants Program). |
-| Jeanne Bardin | Chief Strategy Officer | Worked on startups for 20 years, former COO/CIO of Flex Dapp$ (Web3 development agency, venture studio & hacker collective), was part of Flex DApp$ efforts including: building major Ethereum Client Lighthouse, Collab.Land and the conference app for the Web3 Summit; creating an official Devcon burner wallet; winning teams at Eth Berlin & Eth New York; and briefing the Australian Treasury on DeFi and provided expert technical witness reports for law firms on issues such as The DAO hack. |
-| Kyoko Baldin | Communications Director | Has ongoing experience handling marketing, founding, creative direction, and product management for SSRWives & other communities in the  crypto space. Double-major of Accounting and Economics at the University of Central Florida. |
-| Alice Albl | [][][][][] | Former compliance experience working with Delphi Digital, New York Cyber Command, and the Brooklyn Law and Innovative Policy Clinic; ongoing operations experience at LeXpunK and the Wall Street Blockchain Alliance. |
+| Jeanne Bardin | Strategy Lead | Serial founder, former COO/CIO of Flex Dapp$ (Web3 development agency, venture studio & hacker collective), Flex DApp$ efforts included: building major Ethereum Client Lighthouse, Collab.Land and the conference app for the Web3 Summit; creating an official Devcon burner wallet; winning teams at Eth Berlin & Eth New York; and briefing the Australian Treasury on DeFi and provided expert technical witness reports for law firms on issues such as The DAO hack. |
+| Kyoko Baldin | Communications Lead | Has ongoing experience handling marketing, founding, creative direction, and product management for SSRWives & other communities in the  crypto space. Double-major of Accounting and Economics at the University of Central Florida. |
+| Alice Albl | Operations Lead | Former compliance experience working with Delphi Digital, New York Cyber Command, and the Brooklyn Law and Innovative Policy Clinic; ongoing operations experience at LeXpunK and the Wall Street Blockchain Alliance. |
 
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
@@ -106,11 +106,11 @@ The WSHC has been in production for months with its contents, implementation, an
 
 ### Red Team Simulations
 
-In collaboration with blockchain cybersecurity development firm Shield3: a series of hands-on, sophisticated training exercises to improve the capabilities of Web3 security professionals. Slated for launch sometime in July of 2023. 
+In collaboration with founder of blockchain cybersecurity development firm Shield3, Isaac Patka: a series of hands-on, sophisticated training exercises to improve the capabilities of Web3 security professionals. Slated for launch sometime in July of 2023. 
 
 ### The Paris Retreat
 
-An international event convening Web3 security professionals from across the world to collectively envision what is necessary for the industry to become as safe and efficient as possible. Will be a staging ground to proposal, orientation, and refinement of the Web3 Security Alliance's next round of projects and beyond.
+An invite-only, international event convening elite Web3 security professionals from across the world to collectively envision what is necessary for the industry to become as safe and efficient as possible. Will be a staging ground to proposal, orientation, and refinement of the Web3 Security Alliance's next round of projects and beyond.
 
 # Need more information for the below [][][][][][]
 
