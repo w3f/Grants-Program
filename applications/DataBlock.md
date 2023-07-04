@@ -100,7 +100,7 @@ Later on we can extend EVM compatibility to this project to make it more versati
 | **0d**. | Docker | |
 | **0e**. | Article | |
 | 1. | Data model definition | Designing and defining the architectural overview of the data model for this application using polybase.xyz  |
-| 2. | NFT scanner module | This module will scan the blockchain for any NFT related data from the genesis block and invoke indexer module  for ETH, BNB, POLYGON, POLKADOT. Other chains might be included excluding the 4 mentioned  |
+| 2. | NFT scanner module | This module will scan the blockchain for any NFT related data from the genesis block and invoke indexer module  for ETH, POLKADOT. Other chains might be included excluding the 2 mentioned  |
 
 ## Future Plans
 
