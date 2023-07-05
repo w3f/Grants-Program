@@ -8,16 +8,11 @@ In the case of fiat payment, please share your bank account privately with grant
 
 ### Overview
 
-Please provide the following:
-
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
-
-The Web3 Security Alliance was created to add tactical and practical value to decentralised security. 
+The Web3 Security Alliance has been created to add tactical and practical value to decentralised security. 
 
 The Alliance is a social coordination layer that sits above its stakeholders (decentralised protocols, security professionals, ethical hackers and bag holders) with the purpose of incentivising & protecting honest actors within the ecosystem. The Alliance is a common good infrastructure that anticipates the expansion of attack vectors to be brought about by cross-chain composability and plans accordingly
 
-The Alliance's signature project, the Whitehat Safe Harbour Constitution is an example of the Alliance acting as a unifying body that advocates on behalf of ethical hackers across chains and counters downside risk and asymmetry associated with this important work. This is one of the projhects we plan to integrate into the Dotsama ecosystem
+The Alliance's signature project, the Whitehat Safe Harbour Constitution is an example of the Alliance acting as a unifying body that advocates on behalf of ethical hackers and security actors across chains and counters downside risk and asymmetry associated with this important work. This is one of the projhects we plan to integrate into the Dotsama ecosystem
 
 “Downside risk” in the above meaning unfair or unintended liability; “asymmetry” meaning black hats have a disproportionate effect on the system because they only need to find one exploit, once,  whilst a protocol or ethical researcher has to defend against all of them, always, to be considered a success. Thus, we need to empower white hats and give them more leverage.
 
@@ -35,24 +30,24 @@ The Alliance's signature project, the Whitehat Safe Harbour Constitution is an e
 ### Ecosystem Fit
 
 
-The speed of maturation of our industry depends much on safety. Over $28 Billion was lost to blockchain hackers in over 800 events to-date. The rate and amounts of these losses are increasing. Only 14% of protocols with the ability to do so initiated pause functions within 24 hrs of a hacking incident: we can and should improve this (and other protections) with automated tooling and better coordination among key gorups. 
+The speed of maturation in our industry depends much on safety. Over $28 Billion was lost to blockchain hackers in over 800 events to-date. The rate and amounts of these losses are increasing. Only 14% of protocols with the ability to do so initiated pause functions within 24 hrs of one of these hacking incidentsm: we can and should improve this (and other protections) with automated tooling and better coordination among key gorups. 
 
-The Web3 Security Alliance identifies key groups as hackers and the communities driving protocols. Prominent white hats and web3 security specialists have said that the Web3 Security Alliance is very necessary, and urgent. 
+The Web3 Security Alliance identifies key groups as hackers, security actors, and the communities driving protocols. Prominent white hats and web3 security specialists have said that the Web3 Security Alliance is necessary, and urgent. 
 
-Cross-chain composability is coming and represents a widening threat to the decentralised ecosystem. The Dotsama ecosystem is one of the premiere staging grounds for these groundbreaking but awesomely powerful possibilities coming with cross-chain composability, implenting the Web3 Security Alliance's projects on its networks early and thoroughly will be a critical measure for the industry.
+Cross-chain composability is here and its awesome possibilities bring with them new threats to the decentralised ecosystem. The Dotsama ecosystem is one of the premiere staging grounds for these possibilities, implenting the Web3 Security Alliance's projects on its networks early and thoroughly will be a critical measure for the industry.
 
 The Web3 Security Alliance doesn't compete with market players but rather bridges the gap where incentives and competition leave holes. When under attack by regulation, dishonest actors like hackers, or perverse incentive schemes which undermine credibility, coordination in a vast ecosystem like Dotsama is paramount. This requires systematic thinking and relational engineering that spans across decentralised ecosystems. Building strategic relationships is one way to prevent competition from deterring all collaboration.
 
-The goal is not to replicate what for-profit market mechanisms (Immunifi, Code4rena, Sherlock, Auditors) can provide, but rather to help them, collaborate with them, and bridge any gaps which fall into the tragedy of the commons. Whilst it is clearly impossible to completely protect the decentralised ecosystem, some unifying body that advocates on behalf of ethical hackers and security professionals across chains would bolster our security efforts.
+Our goal is not to replicate what for-profit market mechanisms (Immunifi, Code4rena, Sherlock, Auditors) can provide, but rather to help them, collaborate with them, and bridge any gaps which fall into the tragedy of the commons. Whilst it is clearly impossible to completely protect the decentralised ecosystem, some unifying body that advocates on behalf of ethical hackers and security professionals across chains would bolster our security efforts.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Name of team leader
+- Team leader
   - Samczsun (Chief Executive Officer)
 
-- Names of team members
+- Team Members
   - Jeanne Bardin (Strategy Lead)
   - Hudson Jameson (President)
   - Kyoko Balda (Communications Lead)
@@ -104,13 +99,15 @@ Creation of the Whitehat Safe Harbor Constitution (WSHC) was motivated by a hist
 
 The WSHC has been in production for months with its contents, implementation, and efficacy vetted in several iterations by both legal and technical experts. Intended to act as a failsafe activated in case of a counter-actionable attack, the WSHC provides real liability protections and a guaranteed reward for  rescuers who successfully return stolen assets to an "Asset Recovery Address."
 
+
+
 ### Red Team Simulations
 
-In collaboration with founder of blockchain cybersecurity development firm Shield3, Isaac Patka: a series of hands-on, sophisticated training exercises to improve the capabilities of Web3 security professionals. Slated for launch sometime in July of 2023. 
+Series of hands-on, sophisticated training exercises to improve the capabilities of Web3 security professionals. Built and executed in collaboration with high-profile security actors led by samczsun and Isaac Patka, founder of blockchain cybersecurity development firm Shield3. Slated for launch in July of 2023. 
 
 ### The Paris Retreat
 
-An invite-only, international event convening elite Web3 security professionals from across the world to collectively envision what is necessary for the industry to become as safe and efficient as possible. Will be a staging ground to proposal, orientation, and refinement of the Web3 Security Alliance's next round of projects and beyond.
+An invite-only, international event convening elite Web3 security professionals from across the world to collectively envision what is necessary for the industry to become as safe and efficient as possible. Will be a staging ground to proposal, orientation, and refinement of the Web3 Security Alliance's next round of projects and beyond. Held during July of 2023
 
 # Need more information for the below [][][][][][]
 
