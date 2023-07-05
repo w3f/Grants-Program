@@ -95,12 +95,12 @@ Later on we can extend EVM compatibility to this project to make it more versati
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that run the code, which will show how the new functionality works. |
+| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that run the code, which will show how the new functionality works. PSP34s and EVM-compatible NFTs |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d**. | Docker | |
 | **0e**. | Article | |
-| 1. | Data model definition | Designing and defining the architectural overview of the data model for this application using polybase.xyz  |
-| 2. | NFT scanner module | This module will scan the blockchain for any NFT related data from the genesis block and invoke indexer module  for ETH, POLKADOT. Other chains might be included excluding the 2 mentioned  |
+| 1. | Data model definition | Designing and defining the architectural overview of the data model for this application using polybase.xyz and a graph schema would be provided.   |
+| 2. | NFT scanner module | This module will scan the blockchain for any NFT related data from the genesis block and invoke indexer module  for POLKADOT. Other chains might be included.  |
 
 ## Future Plans
 
