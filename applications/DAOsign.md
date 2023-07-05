@@ -138,13 +138,13 @@ Total Costs: 40,300 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Open Source, TBD |
+| 0a. | License | most likely there will be Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can upload/generate the agreement, add signers/observers and complete the signature process with storing signature proofs either in test or mainnet, which will show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Delivery format | We will provide a website that will include the agreement creation, modification and signing functionality for users with further proofs storing on Polkadot chain.
 | 0e. | Article | We will publish an **article** that explains how does DAOsign users can create agreements and store them in Polkadot test- or mainnet. It will be published in our Medium, Linkedin, Twitter and Discord channels. Apart of that, we will regularly publish grant development status on our social media. 
 | 1. | Smart Contracts | Agreement Contract |
-| 2. | Smart Contracts | EIP712 standard implementation on Ink! |
+| 2. | Smart Contracts | EIP712 standard implementation on Ink! reusing https://github.com/Brushfam/openbrush-contracts|
 | 3. | Smart Contracts | EIP2771 standard implementation on Ink! |
 | 4. | Smart Contracts | Delegate call using EIP2771 |
 
