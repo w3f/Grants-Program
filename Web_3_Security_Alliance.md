@@ -40,12 +40,14 @@ The Web3 Security Alliance doesn't compete with market players but rather bridge
 
 Our goal is not to replicate what for-profit market mechanisms (Immunifi, Code4rena, Sherlock, Auditors) can provide, but rather to help them, collaborate with them, and bridge any gaps which fall into the tragedy of the commons. Whilst it is clearly impossible to completely protect the decentralised ecosystem, some unifying body that advocates on behalf of ethical hackers and security professionals across chains would bolster our security efforts.
 
+The Web3 Security Alliance seeks to serve Dotsama ecosystem
+
 ## Team :busts_in_silhouette:
 
 ### Team members
 
 - Team leader
-  - Samczsun (Chief Executive Officer)
+  - samczsun (Chief Executive Officer)
 
 - Team Members
   - Jeanne Bardin (Strategy Lead)
@@ -80,15 +82,13 @@ Please describe the team's relevant experience. If your project involves develop
 
 ### Team Code Repos [][][][][][][]
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- [samczsun](https://github.com/samczsun)
+- [Hudson Jameson](https://github.com/Souptacular)
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- [Hudson Jameson](https://www.linkedin.com/in/hudsonjameson)
+- [Alice Albl](https://www.linkedin.com/in/alice-albl/)
 
 
 ## Development Status :open_book:
