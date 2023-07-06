@@ -40,7 +40,7 @@ The Web3 Security Alliance doesn't compete with market players but rather bridge
 
 Our goal is not to replicate what for-profit market mechanisms (Immunifi, Code4rena, Sherlock, Auditors) can provide, but rather to help them, collaborate with them, and bridge any gaps which fall into the tragedy of the commons. Whilst it is clearly impossible to completely protect the decentralised ecosystem, some unifying body that advocates on behalf of ethical hackers and security professionals across chains would bolster our security efforts.
 
-The Web3 Security Alliance seeks to serve Dotsama ecosystem
+The Web3 Security Alliance seeks to serve the Dotsama ecosystem by first implementing its signature Whitehat Safe Harbor Constitution program in the space. Funding granted will be devoted towards fitting the program as closely as possible to the unique neeeds of the Dotsama ecosystem.
 
 ## Team :busts_in_silhouette:
 
@@ -77,10 +77,7 @@ The Web3 Security Alliance seeks to serve Dotsama ecosystem
 | Kyoko Baldin | Communications Lead | Has ongoing experience handling marketing, founding, creative direction, and product management for SSRWives & other communities in the  crypto space. Double-major of Accounting and Economics at the University of Central Florida. |
 | Alice Albl | Operations Lead | Former compliance experience working with Delphi Digital, New York Cyber Command, and the Brooklyn Law and Innovative Policy Clinic; ongoing operations experience at LeXpunK and the Wall Street Blockchain Alliance. |
 
-
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
-
-### Team Code Repos [][][][][][][]
+### Team Code Repos 
 
 - [samczsun](https://github.com/samczsun)
 - [Hudson Jameson](https://github.com/Souptacular)
@@ -100,36 +97,28 @@ Creation of the Whitehat Safe Harbor Constitution (WSHC) was motivated by a hist
 The WSHC has been in production for months with its contents, implementation, and efficacy vetted in several iterations by both legal and technical experts. Intended to act as a failsafe activated in case of a counter-actionable attack, the WSHC provides real liability protections and a guaranteed reward for  rescuers who successfully return stolen assets to an "Asset Recovery Address."
 
 
-
 ### Red Team Simulations
 
 Series of hands-on, sophisticated training exercises to improve the capabilities of Web3 security professionals. Built and executed in collaboration with high-profile security actors led by samczsun and Isaac Patka, founder of blockchain cybersecurity development firm Shield3. Slated for launch in July of 2023. 
 
 ### The Paris Retreat
 
-An invite-only, international event convening elite Web3 security professionals from across the world to collectively envision what is necessary for the industry to become as safe and efficient as possible. Will be a staging ground to proposal, orientation, and refinement of the Web3 Security Alliance's next round of projects and beyond. Held during July of 2023
-
-# Need more information for the below [][][][][][]
+An invite-only, international event convening elite Web3 security professionals from across the world to collectively envision what is necessary for the industry to become as safe and efficient as possible. Will be a staging ground for the proposal, orientation, and refinement of the Web3 Security Alliance's next round of projects and beyond. Held during July of 2023.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
 ### Overview
 
-- **Total Estimated Duration:** Two years
-- **Full-Time Equivalent (FTE):**  3 FTE
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
-
-### Milestone 1 Example — Basic functionality
+- **Total Estimated Duration:** Four months 
+- **Full-Time Equivalent (FTE):**  4 FTE
+- **Total Costs:** $10,000 USD equivalent
+- 
+### Milestone 1 — Space Assessment 
 
 - **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:**  4
+- **Costs:** 2,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
@@ -148,13 +137,63 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 Example — Drafting
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:**  4
+- **Costs:** 1,000 USD
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | No license necessary |
+| **0b.** | Documentation | The documentary portion of the Alliance's signature project, the Whitehat Safe Harbor Constitution can be provided upon request |
+| **0c.** | Testing | Evidence of third parties vetting and critiquing each of the Alliance's signature initiatives is available  |
+| **0d.** | Docker | N/A |
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
+| 2. | Substrate module: Y | The Y Substrate module will... |
+| 3. | Substrate module: Z | The Z Substrate module will... |
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+
+### Milestone 3 Example — Vetting
+
+- **Estimated Duration:** 1 month
+- **FTE:**  4
+- **Costs:** 4,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | No license necessary |
+| **0b.** | Documentation | The documentary portion of the Alliance's signature project, the Whitehat Safe Harbor Constitution can be provided upon request |
+| **0c.** | Testing | Evidence of third parties vetting and critiquing each of the Alliance's signature initiatives is available  |
+| **0d.** | Docker | N/A |
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
+| 2. | Substrate module: Y | The Y Substrate module will... |
+| 3. | Substrate module: Z | The Z Substrate module will... |
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+
+### Milestone 4 — Implementation
+
+- **Estimated Duration:** 1 month
+- **FTE:**  4
+- **Costs:** 3,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | No license necessary |
+| **0b.** | Documentation | The documentary portion of the Alliance's signature project, the Whitehat Safe Harbor Constitution can be provided upon request |
+| **0c.** | Testing | Evidence of third parties vetting and critiquing each of the Alliance's signature initiatives is available  |
+| **0d.** | Docker | N/A |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
+| 2. | Substrate module: Y | The Y Substrate module will... |
+| 3. | Substrate module: Z | The Z Substrate module will... |
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
 
 
 ## Future Plans
