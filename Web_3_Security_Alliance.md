@@ -125,16 +125,15 @@ An invite-only, international event convening elite Web3 security professionals 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | No license necessary |
-| **0b.** | Documentation | The documentary portion of the Alliance's signature project, the Whitehat Safe Harbor Constitution can be provided upon request |
-| **0c.** | Testing | Evidence of third parties vetting and critiquing each of the Alliance's signature initiatives is available  |
+| **0b.** | Documentation | Notes of meetings with point people available upon request |
+| **0c.** | Testing | N/A |
 | **0d.** | Docker | N/A |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 1. | Engage technical point  | Engage a technical expert within the Dotsama ecosystem to act as consultant/implementation engineer for the technical aspects of the WSHC |
+| 2. | Engage legal point | Engage a legal expert within the Dotsama ecosystem to act as a consultant regarding the legal needs of the WSHC as applied to the Dotsama ecosystem |
+| 3. | Engage community point | Engage a community leader within the Dotsama ecosystem to act as a guide and advisor in propagating the WSHC within that ecosystem |
+| 4. | Refine Dotsama dossier | Using initial feedback from experts and leaders, refine knowledge and goals regarding the needs of the Dotsama ecosystem relative to the WSHC |
+| 5. | Identify key points of difference | Identify points of difference that are unique or need to be particularly minded for the Dotsama ecosystem |
+| 6. | Create an internal roadmap | based on identified issues and needs, create an interal, situation-accurate, and highly-detailed roadmap for drafting of the Dotsama implementation of the WSHC | 
 
 
 ### Milestone 2 Example — Drafting
@@ -145,16 +144,17 @@ An invite-only, international event convening elite Web3 security professionals 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | No license necessary |
+| **0a.** | License | All drafting work done by third parties is performed on a volunteer basis or under written contract |
 | **0b.** | Documentation | The documentary portion of the Alliance's signature project, the Whitehat Safe Harbor Constitution can be provided upon request |
-| **0c.** | Testing | Evidence of third parties vetting and critiquing each of the Alliance's signature initiatives is available  |
+| **0c.** | Testing | N/A  |
 | **0d.** | Docker | N/A |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 1. | Draft Dotsama version of the main body of the Whitehat Safe Harbor Constitution | Using expert feedback, research, and the roadmap established as part of milestone #1, conform the main body of the WSHC's legal text to the needs of the Dotsama ecosystem |
+| 2. | Draft Dotsama versions of Whitehat Safe Harbor Constitution Adopting Addenda  | Using expert feedback, research, and the roadmap established as part of milestone #1, conform the text of the adopting addenda of the WSHC's legal text to the needs of the Dotsama ecosystem |
+| 3. | Draft Dotsama version of Whitehat Safe Harbor Constitution Risk Disclosures | Using expert feedback, research, and the roadmap established as part of milestone #1, conform the risk disclosures accompanything the WSHC's legal text to the needs of the Dotsama ecosystem |
+| 4. | Draft Dotsama version of Whitehat Safe Harbor Constitution Implementation/User Guides | Using expert feedback, research, and the roadmap established as part of milestone #1, conform the technical guides accompanying the WSHC's legal text to the needs of the Dotsama ecosystem |
+| 5. | Internal Review and Consolidation | Review and consolidate internal perspectives on the reformed WSHC, make adjustments as necessary |
+| 6. | First-wave external, "inner circle" review | Coordinate external review with a group of trusted volunteers, make adjustments as necessary |
+| 7. | Engage implenetation prospects | Use the reformed and reviewed Dotsama version of the WSHC to pitch its implementation with entities in the space |
 
 ### Milestone 3 Example — Vetting
 
@@ -164,16 +164,16 @@ An invite-only, international event convening elite Web3 security professionals 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | No license necessary |
+| **0a.** | License | All review work done by third parties is performed on a volunteer basis or under written contract |
 | **0b.** | Documentation | The documentary portion of the Alliance's signature project, the Whitehat Safe Harbor Constitution can be provided upon request |
-| **0c.** | Testing | Evidence of third parties vetting and critiquing each of the Alliance's signature initiatives is available  |
+| **0c.** | Testing | Evidence of third parties vetting and critiquing each of the WSHC is available  |
 | **0d.** | Docker | N/A |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 1. | External legal review | Engage external legal counsel to review and give feedback on the reformed version of the WSHC |
+| 2. | External technical review | Engage external technical experts to review the reformed technical aspects of the WSHC for the Dotsama ecosystem |
+| 3. | Community presentation | Present and hold a dialogue with the community regardin the utility, efficacy, and implementation of the WSHC |
+| 4. | Final reforms | Adjust the texts and technical aspects of the WHSC as necessary after receiving feedback from experts and the community |
+| 5. | Preparation with implentation prospect(s) | Prepare to laung the first implementation(s) of the WSHC in the Dotsama ecosystem |
+
 
 ### Milestone 4 — Implementation
 
@@ -183,31 +183,31 @@ An invite-only, international event convening elite Web3 security professionals 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | No license necessary |
+| **0a.** | License | All implmenetation work done by third parties is performed on a volunteer basis or under written contract |
 | **0b.** | Documentation | The documentary portion of the Alliance's signature project, the Whitehat Safe Harbor Constitution can be provided upon request |
 | **0c.** | Testing | Evidence of third parties vetting and critiquing each of the Alliance's signature initiatives is available  |
 | **0d.** | Docker | N/A |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 0e. | Article | Publish an **article**/workshop that explains the purpose, use, and deployment of the Whitehat Safe Harbor Constitution |
+| 1. | ARA Buildout | Build out an ARA model useful for the DotSama ecosystem  |
+| 2. | ARA test | Undergo proper testing to ensure that the ARA will function as intended |
+| 3. | Store the WSHC on-chain | House the WSHC permanently and accessibly among the Polkadot parachains |
+| 4. | Deploy WSHC | Deploy all aspects of the WSHC |
 
 
 ## Future Plans
 
-Please include here
+
 
 ### Short Term
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+
+In parallel to implementation of the Whitehat Safe Harbor Constitution, the Web3 Security Alliance plans to deepen social ties with the Dotsama ecosystem and use those to better gauge the space's needs.
 
 ### Long Term
 
+Using experience gained from the implementation of the WSHC, the Web3 Security Alliance aims to create tools andn strategies that will address needs particular to the Dotsama Ecosystem.
+
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Personal recommendation
+**How did you hear about the Grants Program?** Personal recommendation!
 
 The Web3 Security Alliance has received support from a16z, Paradigm, and LeXpunK. Grants have been received from Gnosis, Filecoin Foundation, and the Ethereum Foundations; its first donor was Vitalik Buterin.
