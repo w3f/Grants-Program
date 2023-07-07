@@ -71,7 +71,7 @@ The Web3 Security Alliance seeks to serve the Dotsama ecosystem by first impleme
 
 | Name | Role | Experience
 | ----- | ----------- | ------------- |
-| samczsun | Chief Executive Officer | Former security engineering experience with Stripe, Wish and Trail of Bits. Current Head of Security and Research Partner with Paradigm. |
+| samczsun | Chief Executive Officer | Former security engineering experience with Stripe, Wish and Trail of Bits. Current Head of Security and Research Partner with Paradigm. World-renowned for his leadership in blockchain cybersecurity,  |
 | Hudson Jameson | President |  Over a decade of experience in the crypto ecosystem and 8 years of experience in the Ethereum ecosystem. In that time, he served as an operational figurehead for the Ethereum Foundation from most of the time he was there (2016-2021). He also had a startup from 2017-2018 where he was the COO and lead Solidity engineer. He has experience setting up and managing corporations (S/C corps), volunteer organization (Ethereum Cat Herders), and multiple grants organizations (Baseline Grants Program & Zcash Grants Program). |
 | Jeanne Bardin | Strategy Lead | Serial founder, former COO/CIO of Flex Dapp$ (Web3 development agency, venture studio & hacker collective), Flex DApp$ efforts included: building major Ethereum Client Lighthouse, Collab.Land and the conference app for the Web3 Summit; creating an official Devcon burner wallet; winning teams at Eth Berlin & Eth New York; and briefing the Australian Treasury on DeFi and provided expert technical witness reports for law firms on issues such as The DAO hack. |
 | Kyoko Baldin | Communications Lead | Has ongoing experience handling marketing, founding, creative direction, and product management for SSRWives & other communities in the  crypto space. Double-major of Accounting and Economics at the University of Central Florida. |
@@ -113,7 +113,7 @@ An invite-only, international event convening elite Web3 security professionals 
 - **Total Estimated Duration:** Four months 
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** $10,000 USD equivalent
-- 
+  
 ### Milestone 1 — Space Assessment 
 
 - **Estimated duration:** 1 month
