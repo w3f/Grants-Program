@@ -25,7 +25,7 @@ This project aims to provide:
 
 - A **data-driven research** on the need for one or multiple dispute resolution systems in treasuries.
 - A **technical architecture** for an open jurisdiction stack, which we envision as an open-source system consisting of pallets and smart contracts to be deployed on a Polkadot system chain.
-- A **proof of concept** (POC) for one of the pallets that make up this system, showcasing how the actual development roadmap could look like.
+- A **proof of concept** (POC) based on the Substrate framework for one of the pallets that make up this system, showcasing how the actual development roadmap could look like.
 
 ### Project Details
 
@@ -311,7 +311,7 @@ The team involved has decided to work on a reduced market rate. If market rates 
 | **0c** | **Methodology**             | We will provide a brief documentation of the methodology and process used for the researchThis builds up on the previous milestone. |
 | **0d** | **Infrastructure**          | A technical document and flowchart of how the open jurisdiction stack could look like, provided that the research gives a “go” in terms of feasibilityThis infrastructure will contain details of pallets, smart contracts and other pieces of software that could be built |
 | **0e** | **Articles**                | We will produce three articles around research findings and relevant information to the ecosystem |
-| 1 | **POC**                     | We will build a small POC to showcase how to take the research findings into actual development of the open jurisdiction stack.The code will be open sourced and documented so that anyone can build on top of this in order to expand the stack.We cannot commit to a specific feature set before seeing the results from _Milestone 1_ but our experience suggests that this may involve a registry that holds on-chain data of available Courts in the network (_Court Registry_) |
+| 1 | **POC**                     | We will build a small POC using the Substrate framework to showcase how to take the research findings into actual development of the open jurisdiction stack. The code will be open sourced and documented so that anyone can build on top of this in order to expand the stack. We cannot commit to a specific feature set before seeing the results from _Milestone 1_ but our experience suggests that this may involve a registry that holds on-chain data through a pallet of available Courts in the network (_Court Registry_) |
 | 2  | **Paper RFC**               | We will publish a draft of the research to gather comments and questions on our findings |
 | 2a | **Paper Review**            | We will absorb in the publication any relevant comment received, offering room for divergent opinions eventually submitted |
 | 2b | **Paper Publication**       | We will publish the paper  |
