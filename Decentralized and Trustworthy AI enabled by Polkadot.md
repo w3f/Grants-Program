@@ -1,4 +1,4 @@
-# Enabling Decentralized and Trustworthy AI Services on Polkadot Blockchain
+# Enabling Decentralized and Trustworthy AI Services on Polkadot
 
 - **Team Name:** AI + Blockchain on Polkadot
 - **Payment Address:** 0x9f50E023606420050b8BCe7d9100C7924e88dAB6
@@ -30,6 +30,15 @@ We will use privacy-preserving techniques like zero knowledge proofs to protect 
 To address the bottlenecks of performance on blockchain, we will use the scaling techniques like layer 2 to put the huge workload of AI off-chain and raise the performance of blockchain. We also further optimize the allocation and distribution of AI resources and workload among all nodes on blockchain from data processing, AI modeling and training, to computation and execution.
 
 To give each participant and contributor corresponding returns according to the value they make, we will design an effective incentive mechanism to count and reward the contributions of everyone to the AI on blockchain including data sharing, improvement of algorithms, and computation power. The earnings of AI services will be tracked and distributed among all contributors according to the value of their contributions as incentives.
+
+Specifically our project will having the follwing core functionalites and features:
+
+**1. Decentralized AI modeling and training using privacy-preserving data:** Everyone can contribute their data to AI for modeling and training with corresponding returns as incentives. We will manage the authorization of users, protect the security and verify the integrity of their data in a fully privacy-preserving way.
+
+**2. Public AI improvement, auditing, and consensus:** Everyone can upgrade and improve AI algorithms to optimize their performance, and they will be rewarded according to their their contributions. Everyone can also help correct any bias, discrimination, and mistakes within AI and reach consensus on essential settings and parameters involving public interests to make AI ethical, constitutional and justicial.
+
+**3. Trustworthy verification of AI execution results:** As the intelligence of AI can approach even exceed human beings, people are hard to validate the outputs of AI by themselves. With techniques like ZKML, people can verify the computation results of AI quickly to ensure their correctness and authenticity as expected. With blockchain, everyone can self-verify those AI providing public services and involving public benefits to ensure they are fully reliable and trustworthy.
+
 
 In the project we will also provide the following deliverables:
 
@@ -83,9 +92,9 @@ We have finished our technical research with our research paper, and we have sub
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** $24,000
 
-### Milestone 1 Project Research and Development 
+### Milestone 1 Project Development I
 
-- **Estimated duration:** 3 months
+- **Estimated duration:** 2 months
 - **FTE:**  3
 - **Costs:** 6,000 USD
 
@@ -95,17 +104,35 @@ We have finished our technical research with our research paper, and we have sub
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the project works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests to better contribute to the research and development work of our project. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionalities delivered with this milestone |
-| 0e. | Article | We will publish an article and hold a workshop that explains our prjoect development work in English online |
-| 1. | Substrate modules  | We will create Substrate modules that achieve the core functionalites and features of our project listed in the grant proposal |
-| 2. | Substrate chain | We will build a new MEV compatible Substrate chain to load our project |
-| 3. | High-fidelity prototype | We will provide user-friendly interfaces and UI&UX design rationale for users to use our project easily |
-| 4. | Smart contracts | We will deliver a set of ink! smart contracts as the source code of our project |
+| **0e.** | Article | We will publish an article and hold a workshop that explains our prjoect development work in English online |
+| 1. | Substrate modules  | We will create Substrate modules for the first and second core functionalities listed in Project Component part. We will finish the first functionality "Public AI improvement, auditing, and consensus" and start working on the second one. |
+| 2. | Substrate chain | We will build a new MEV compatible Substrate chain to load our project and match the first and second core functionalities. |
+| 3. | High-fidelity prototype | We will start building user-friendly interfaces and UI&UX design rationale for users to use our project easily |
+| 4. | Smart contracts | We will deliver a set of ink! smart contracts for the first and second core functionalities as the source code of our project |
 
-### Milestone 2 Project Testing 
+### Milestone 2 Project Development II
 
-- **Estimated Duration:** 2 months
+- **Estimated duration:** 2 months
+- **FTE:**  3
+- **Costs:** 6,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the project works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests to better contribute to the research and development work of our project. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionalities delivered with this milestone |
+| **0e.** | Article | We will publish an article and hold a workshop that explains our prjoect development work in English online |
+| 1. | Substrate modules  | We will create Substrate modules for the second and third core functionalities listed in Project Component part. We will finish the second and third functionalities "Decentralized AI modeling and training using privacy-preserving data" and "Trustworthy verification of AI execution results". |
+| 2. | Substrate chain | We will build a new MEV compatible Substrate chain to load our project and match the second and third core functionalities. |
+| 3. | High-fidelity prototype | We will start building user-friendly interfaces and UI&UX design rationale for users to use our project easily |
+| 4. | Smart contracts | We will deliver a set of ink! smart contracts for the second and third core functionalities as the source code of our project |
+
+### Milestone 3 Project Testing 
+
+- **Estimated Duration:** 1 month
 - **FTE:**  4
-- **Costs:** 8,000 USD
+- **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -118,11 +145,11 @@ We have finished our technical research with our research paper, and we have sub
 | 3. | High-fidelity prototype | We will also test and evaluate the user-friendly interfaces and UI&UX design rationale of our project |
 | 4. | Smart contracts | We will deliver a set of ink! smart contracts as the source code for testing our project |
 
-### Milestone 3 Project Implementation 
+### Milestone 4 Project Implementation 
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 1 month
 - **FTE:**  5
-- **Costs:** 10,000 USD
+- **Costs:** 3,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -134,6 +161,23 @@ We have finished our technical research with our research paper, and we have sub
 | 2. | Project report | We will provide our in-depth theroetical analysis and innovative solution on blocckhain and AI to conclude our project |
 | 3. | Development plan | We will provide the sustainable and continuous future development plan of our project in the long-term |
 | 4. | Smart contracts | We will deliver a set of ink! smart contracts as the source code for implementing our project |
+
+### Milestone 5 Project Development 
+
+- **Estimated Duration:** 1 month
+- **FTE:**  5
+- **Costs:** 3,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will allow users to participant in the implementation of our project. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests for our project implementation. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to implement all the functionalities delivered with this milestone |
+| 1. | Use cases | We will continue running and improving our project especially the specifc applications of as our use cases |
+| 2. | Community | We will build and operate our community to attract and preserve users in different media and channels like Discord, Telegram, and Twitter. |
+| 3. | Ecosystem | We will maintain and expand our open and decentralized AI ecosystem to appeal and benefit all kinds of stakeholders in our project including data contributor, algorithm improver, computation power provider, and AI application developer. |
+| 4. | Business | We make our business model, marketing strategies, and operation plan to promote and develop our project in the long term in a profitable, sustainable and competitive way. |
 
 ## Future Plans
 
