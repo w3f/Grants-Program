@@ -182,8 +182,8 @@ Michael Absolon - Student, XCM SDK & XCM API Core Dev. Faculty of Informatics an
 
 ### Legal Structure
 
-- **Registered Address:** TBA later (Switching to the company)
-- **Registered Legal Entity:** TBA later (Switching to the company)
+- **Registered Address:** Tomášovská 453/2, Kalinovo 98501, Slovak Republic
+- **Registered Legal Entity:** Dušan Morháč
 
 ### Team's experience
 -  Dušan is the founder & researcher behind this project and he has successfully presented it at the international conference ICECET2022 held in Prague from which there is an article regarding XCMP & ParaSpell project. It is published by IEEE [link](https://ieeexplore.ieee.org/document/9872938). He also successfully presented it at ICBC 2023 conference held in Dubai. Dušan also studies Blockchain technology and had a bachelor's thesis about cross-blockchain sharing from which this idea was born. Dušan continues research on this idea in his Master's thesis. He is actively working on ParaSpell https://github.com/paraspell full-time & has also participated in other ecosystem projects. Recently he attended Polkadot Blockchain Academy 2023 in Buenos Aires which gave him a lot of insight into the ecosystem and he also graduated from the academy successfully. Here is NFT that was minted as a certificate by Parity - [link](https://singular.app/collectibles/statemine/20/12)
