@@ -35,6 +35,9 @@ Deliveries include DAOsign platform with an ability to:
 Proofs are implemented in the EIP-712 standard and adjusted to !ink ecosystem. Signed using user’s !ink private key. We are supporting this standard in Ink! smart contract to be able to verify the signature. Also, we are implementing an adjusted EIP-2771 standard to allow Agreement Signers gas-free delegation to publish proof on-chain.712 standard will be used for for proofs, adaptation means that user data is converted to a binary bit; we use its hash (serialization vs deserialization)
 And 271 standard - to securely send the proof and receive it.
 So that EVM standards will be adapted to !ink ecosystem requirements. 
+Example (interfaces) of the smart contracts can be found here https://github.com/DAOsign/daosign-smart-contracts  (Solidity version).
+
+
 
 
 Detailed storyboard can be found here: https://consideritdone.storiesonboard.com/m/PUCLDvQC4kKwoRJ8kbm3MA .
@@ -138,7 +141,7 @@ Total Costs: 40,300 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | most likely there will be Apache 2.0 |
+| 0a. | License |  Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can upload/generate the agreement, add signers/observers and complete the signature process with storing signature proofs either in test or mainnet, which will show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Delivery format | We will provide a website that will include the agreement creation, modification and signing functionality for users with further proofs storing on Polkadot chain.
