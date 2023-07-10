@@ -5,7 +5,7 @@
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 - **Team Name:** Myriad Systems LTD.
 - **Payment Address:** 0x89f547Ed40B8e921C566505Ccb71C69F398adbFF (USDT ERC-20)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 ## Project Overview :page_facing_up:
@@ -167,31 +167,30 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 ### Overview
 
 - **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  
+- **Full-Time Equivalent (FTE):**  3
 - **Total Costs:** 30,000 USD
 
 ### Milestone 1 — Parachain setup
 
 - **Estimated duration:** 2 month
 - **FTE:**  3
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | AGPL-3.0 license |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the parachain and migrate an Octopus appchain into the Rococo ecosystem. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the parachain and migrate an Octopus appchain into the Rococo ecosystem.|
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Server | The server pallet that handles logic for registering new server. This module exposes extrinsic calls to: Register, Transfer Owner, Update Name, Unregister, Transfer Admin Key |
-| 2. | Substrate module: Tipping | The tipping mechanism that handles the logic for holding balance of another user in PalletId. This module exposes extrinsic calls to: Send Tip, Claim Tip, Claim Reference|
-| 3. | Substrate chain | The modules we implement during this milestone will interact in such a way that the Myriad Social website works with the same functionality as the current one that lives as an appchain on Octopus Network|
+| 1. | Infrastructure Migration | We will fully migrate the current appchain of the Myriad Social web application running on Octopus Network to Polkadot ecosystem as a parachain in Rococo |
+| 2. | Code Migration and Refactoring | The modules we implement during this milestone will interact in such a way that the Myriad Social website works with the same functionality as the current one that lives as an appchain on Octopus Network|
 | 3. | Data Migration | We will fully migrate the existing data from the Myriad Social web application running on Octopus Network to Polkadot ecosystem|
 
-### Milestone 2 — UI Revamp and Enhancement
+### Milestone 2 — Native Polkadot Currency and Wallet Integration
 
 - **Estimated duration:** 1 month
 - **FTE:**  3
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -199,7 +198,22 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | **0b.** | Documentation | We will provide **documentation** of the app changes and **video guidance** of how to use the new Myriad Social user interface |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Front end: New UI | We will enhance the current interface by making it more intuitive for our users, emphasizing the core features of Myriad. |
+| 1. | Native Currency Integration | We will enable DOT as a way of interacting inside our app for tipping and other upcoming features. |
+| 2. | Wallet Integration | We will update the current wallet requirement to allow polkadot based wallet login into Myriad app.|
+
+### Milestone 3 — UI Revamp and Enhancement
+
+- **Estimated duration:** 1 month
+- **FTE:**  3
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | AGPL-3.0 license |
+| **0b.** | Documentation | We will provide **documentation** of the app changes and **video guidance** of how to use the new Myriad Social user interface |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Front end: New UI | We will enhance the current interface by making it more intuitive for our users, emphasizing the core features of Myriad and aligning with the new Polkadot based ecosystem. |
 | 2. | Back End: Improve Algorithm | We will update our algorithm to provide a better way to get trending timelines and hashtags so that user can discover current popular timelines/posts/tags, rather than those that have been in the spotlight for some time.|
 | 3. | Performance improvemment | We will do code refactoring and optimization in order to enhance app performance, ensuring a faster and smoother user experience.|
 
@@ -211,7 +225,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 ## Referral Program (optional) :moneybag: 
 
 - **Referrer:** Husni Rizal (Polkadot Ambassador)
-- **Payment Address:** -
+- **Payment Address:** 14tcZ9ibPGdMwb7XXE4QChgVuJU1xXTvDFpV3E1HpMajbBsH
 
 ## Additional Information :heavy_plus_sign:
 
