@@ -86,7 +86,6 @@ The committee consists of individuals who know the funding priorities of the Pol
 
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
-- [Nabil Abdellaoui](https://github.com/randombishop)
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
@@ -104,7 +103,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
-- [Nabil Abdellaoui](https://github.com/randombishop)
 - [Matteo Casonato](https://github.com/0xCaso)
 - [David Hawig](https://github.com/Noc2)
 - [Diogo Mendonça](https://github.com/dsm-w3f)
