@@ -1,6 +1,6 @@
 # Analytics Website/Data Platform
 
-* **Status:** Open 
+* **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/pull/1716), [Under Development 2](https://github.com/w3f/Grants-Program/pull/1768) 
 * **Proposer:** [Keegan Quigley](https://github.com/keeganquigley)
 * **Teams/People that could deliver the RFP**: @web3go-xyz
 

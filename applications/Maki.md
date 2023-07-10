@@ -3,7 +3,8 @@
 - **Team Name:** Cyril Carlier (Individual)
 - **Payment Address:** 0x8a0cFA1DE5c26e3Cd553F33Dc560fBfa5267867C (ERC-20 USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
-
+- **Status:** Terminated
+  
 ## Project Overview :page_facing_up:
 
 This application is a response from the [anti-collusion infrastructure RFP](https://github.com/w3f/Grants-Program/blob/master/rfps/open/anti-collusion_infrastructure.md).
