@@ -53,13 +53,17 @@ Creating a trustless marketplace, connecting Creators assets to Projects in high
 ### UI Components
 
 Dashboard is composed of modular widgets that are interactable from the OS desktop, tablet, and mobile
-![Dashboard](https://github.com/Afloat-Network/Grants-Program/assets/114810952/ca48507e-9a06-4cc7-bc3d-efd45bf40603)
+![Dashboard](https://github.com/Afloat-Network/Grants-Program/assets/114810952/3b5a66af-34d4-4337-b3b2-836cd24ef0ea)
+
 Widget OS example: desktop and mobile
-![WidgetShowcase](https://github.com/Afloat-Network/Grants-Program/assets/114810952/c7df0dbc-b54b-43bc-bfec-559cedb1d5f3)
+![WidgetShowcase](https://github.com/Afloat-Network/Grants-Program/assets/114810952/d36218f5-1c52-4b4e-af0c-fd0d05a99d55)
+
 Creator View (advanced)
-![Desktop Creator Asset-View](https://github.com/Afloat-Network/Grants-Program/assets/114810952/59e66dab-79f3-4178-9225-0ab14c35f38b)
+![Desktop Creator Asset-View](https://github.com/Afloat-Network/Grants-Program/assets/114810952/df189627-e96c-4bdd-9624-9a6b63f40f89)
+
 Collector View (simple)
-![Desktop Collector Asset-View](https://github.com/Afloat-Network/Grants-Program/assets/114810952/996fecb9-beed-4bac-af90-0e3e307e126e)
+![Desktop Collector Asset-View](https://github.com/Afloat-Network/Grants-Program/assets/114810952/d5e534e7-29a1-4b3f-b1aa-0190a491a2bb)
+
   
   
 Afloat is not the Metaverse, but rather a hub for creators and projects to come to life.
@@ -107,7 +111,7 @@ Connecting people to tell interactive stories.
 ### Legal Structure
 
 - **Registered Address:** Carlemany 59 AD700 Escaldes Andorra
-- **Registered Legal Entity:** Afloat, SL.
+- **Registered Legal Entity:** AFLOAT, SL.
 
 ### Team's experience
 
