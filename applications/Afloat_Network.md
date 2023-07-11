@@ -152,13 +152,16 @@ Im designing and prototyping the platform in Figma. I am also actively searching
 - **FTE:**  1
 - **Costs:** 10,000 USD
 
+Goal - Full prototype/design of the platform: onboarding, profile, dashboard, marketplace, 3D asset(advanced and simple view), project, collaboration and settings.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| 0e. | Article | We will publish an **article** that goes through the design decisions behind afloat platform |
-| 5. | Library: Afloat Platform | We will deliver a public Figma design prototype |
-
+| **0b.** | Documentation | We will provide a breif documentation for the prototype |
+| **0c.** | Testing and Testing Guide | Figma prototype will be self explanatory, if not we will provide |
+| **0d.** | Docker | There is no code |
+| 0e. | Article | We will publish an **article** that goes through the design decisions behind afloat platform 
+| 1. | Library: Afloat Platform: X | We will deliver a public Figma design prototype |
 
 ## Future Plans
 
