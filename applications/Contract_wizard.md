@@ -24,18 +24,18 @@ These enhancements will allow users to create, modify, deploy and interact with 
 ​
 ### Project Details
 ​
-#### <a name="step1"></a> 1. Interact with deployed contracts
+#### <a name="step1"/></a/> 1. Interact with deployed contracts
 We will create a functionality that enables users to directly interact with their deployed contracts via the user interface of the wizard. This functionality will be generated dynamically according to the metadata of the contracts. With this, users will be able to conveniently and effectively manage their contracts and carry out interactions using the same tool.
 ​
-#### <a name="step2"></a> 2. Interaction with custom smart contracts
+#### <a name="step2"/></a/> 2. Interaction with custom smart contracts
 Our platform will offer the capability to interact with any contract of their choice. To utilize this feature, they simply need to provide the metadata, network, and address associated with the contract. Once this information is ready, the user interface will automatically generate a customized user-friendly layout for allowing people to easily interact with their custom contracts. 
 ​
-#### <a name="step3"></a> 3. Shareable Contract Interaction Links
+#### <a name="step3"/></a/> 3. Shareable Contract Interaction Links
 To enhance the user experience and encourage collaboration, we plan to implement a feature for shareable contract interaction links.
 Once a developer deploys a contract or uploads the metadata for interacting with it on our platform, they can generate a unique, shareable link. This link will contain all necessary information for interacting with the contract, essentially encapsulating the contract's ABI (Application Binary Interface) and its address on the blockchain.
 Users receiving this link can interact with the contract directly, without needing to reupload the metadata or know the contract's specifics. This feature not only simplifies the process of contract interaction but also fosters collaboration and sharing within the developer community.
 ​
-#### <a name="step4"></a> 4. Support for multiple chains 
+#### <a name="step4"/></a/> 4. Support for multiple chains 
 This tool will offer a feature that enables users to connect to parachains implementing the contracts pallet. We will provide a list of some of these parachains in Polkadot, Kusama, and Rococo networks. Additionally, users will have the option to connect to a network that is not listed by specifying the web socket.
 ​
 ### Tentative Mockups
@@ -102,10 +102,10 @@ We are not only a dev shop company, but we create long term partnerships with th
 - https://github.com/protofire/kyber-pool-master-proxy-contract
 ​
 GitHub accounts of team members.
-- https://github.com/alongoni <Agustin Langoni>
-- https://github.com/henrypalacios <Henry Palacios>
-- https://github.com/0xLucca <Luca Auet>
-- https://github.com/GabrielCamba <Gabriel Gonzalez>
+- https://github.com/alongoni <Agustin Langoni/>
+- https://github.com/henrypalacios <Henry Palacios/>
+- https://github.com/0xLucca <Luca Auet/>
+- https://github.com/GabrielCamba <Gabriel Gonzalez/>
 ​
 ### Team LinkedIn Profiles
 ​
