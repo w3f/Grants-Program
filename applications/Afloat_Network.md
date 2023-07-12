@@ -50,6 +50,9 @@ Creating a trustless marketplace, connecting Creators assets to Projects in high
     
 - `Pallet_Project` Manage and create `Project` each project has their own token that they can use to pay for the assets. Project token will reflect the value of the project.
 
+- `IPFS` Will be used for storing the 3D files
+  
+- `ZKP` Zero-knowledge proof will be used for the privacy aspect of user data, 3D assets and projects. As we recognize that many entertainment projects today are being developed privately.
 ### UI Components
 
 Dashboard is composed of modular widgets that are interactable from the OS desktop, tablet, and mobile
@@ -167,7 +170,7 @@ Goal - Full prototype/design of the platform: onboarding, profile, dashboard, ma
 
 Short term: 
 - Once the team is established we will build out the initial version of Afloat
-![roadmap](https://github.com/Afloat-Network/Grants-Program/assets/114810952/570bfcdc-32fa-4e5d-b123-25d7368c214c)
+![roadmap](https://github.com/Afloat-Network/Grants-Program/assets/114810952/c4dde4c4-95ab-4609-ac25-ecdaa45bed93)
 - We want to extend the Pallet_OpenUSD to support Software used to create the asset.
 
 Long-term: 
