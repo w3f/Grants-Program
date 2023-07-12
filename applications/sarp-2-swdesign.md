@@ -95,9 +95,10 @@ The full documentation of our findings can be found [here](https://github.com/sc
 
 ### Overview
 
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** 30,000 USD
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):** 1 FTE
+- **Total Costs:** 30,000 USD
+
 
 ### Milestone 1 Software Design & Bug Fixes
 
