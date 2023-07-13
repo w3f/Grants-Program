@@ -130,50 +130,52 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 
 ## Development Roadmap :nut_and_bolt:
 
-**Overview**
+## Overview
 
-Total Estimated Duration: 2 months
-Full-Time Equivalent (FTE): 2 FTE per month
-Total Costs: 48,100 USD
+* **Total Estimated Duration:** 2 months
+* **Full-Time Equivalent (FTE):** 2 FTE
+* **Total Costs:** 48,100 USD
 
-Milestone 1 - Smartcontracts. 
-Total Costs: 40,300 USD
+### Milestone 1 - Smart Contract Development
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License |  Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can upload/generate the agreement, add signers/observers and complete the signature process with storing signature proofs either in test or mainnet, which will show how the new functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Delivery format | We will provide a website that will include the agreement creation, modification and signing functionality for users with further proofs storing on Polkadot chain.
-| 0e. | Article | We will publish an **article** that explains how does DAOsign users can create agreements and store them in Polkadot test- or mainnet. It will be published in our Medium, Linkedin, Twitter and Discord channels. Apart of that, we will regularly publish grant development status on our social media. 
-| 1. | Smart Contracts | Agreement Contract |
-| 2. | Smart Contracts | EIP712 standard implementation on Ink! reusing https://github.com/Brushfam/openbrush-contracts|
-| 3. | Smart Contracts | EIP2771 standard implementation on Ink! |
-| 4. | Smart Contracts | Delegate call using EIP2771 |
+* **Estimated Duration:** 6 weeks
+* **FTE:**  2
+* **Costs:** 40,300 USD
 
 
+| Number | Deliverable               | Specification                                                                                                                                                                                                                                                             |
+|-------:|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                   | Apache 2.0                                                                                                                                                                                                                                                                |
+|    0b. | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use DAOsign Smart Contract developed in ink! for proof verification.                                                                                              |
+|    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                           |
+|    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                             |
+|    0e. | Article                   | We will publish an **article** that explains what was done as part of the grant. And we will publish a series of articles that explains how DAOsign works from a high-level perspective. The content of the articles will be consistent with the functions at this stage. |
+|     1. | Smart Contracts           | DAOsign Smart Contract repo that includes following components: Agreement Contract, EIP712/EIP2771 standard implementation on Ink!. These smart contracts can be deployed to any substrate chain with ink! pallet.                                                        |                                                                                                                                                                                                                                           |
+|     2. | Gas Relayer               | Off-chain component for transaction relaying                                                                                                                                                                                                                              |
 
 
-Milestone 2 - Application integration. 
-Total Costs: 7,800 USD
+### Milestone 2 - DAOsign Application integration
+
+* **Estimated Duration:** 2 weeks
+* **FTE:**  2
+* **Costs:** 7,800 USD
 
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | TBD |
-| 1. | Application Integration| Application Private Key Management |
-| 2. | Application Integration | DAOsign app integration |
+| Number | Deliverable                     | Specification                                                                                           |
+|-------:|---------------------------------|---------------------------------------------------------------------------------------------------------|
+|    0a. | License                         | Apache 2.0                                                                                              |
+|    0b. | Documentation                   | We will provide both inline documentation of the code and a basic tutorial that explains how a user can |
+|    0c. | Testing Guide                   | Core functions will be fully covered by unit tests to ensure functionality and robustness.              |
+|     1. | DAOsign Ink! JS SDK             | We will publish a npm/yarn package with the logic how to interact with Smart Contract from JS           |
+|     2. | DAOsign Application Integration | Integrate DAOsign application using SDK                                                                 |
 
 
 
 ## Future Plans
 
-Our team plans to contribute to the Polkadot ecosystem through:
+After the `ink!` version of the DAOsign protocol stack is fully tested, we would like to implement a `pallet` version for Polkadot ecosystems. Anyone who is integrating it can communicate with other ecosystems conveniently.
 
-Announcing Early Adopters Program and working closely with DAOs to help them integrate DAOsign.
-Enhance our tutorials and supplementary materials to better support users and developers.
-Expanding DAOsign functionality according to the roadmap.
-
+Add support for multi-chain proof verification using [XCM](https://wiki.polkadot.network/docs/learn-xcm) and [IBC](https://ibcprotocol.org/) protocols. 
 
 
 ## Additional Information :heavy_plus_sign:
