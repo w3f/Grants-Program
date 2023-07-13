@@ -33,12 +33,27 @@ To give each participant and contributor corresponding returns according to the 
 
 Specifically our project will having the follwing core functionalites and features:
 
-**1. Decentralized AI modeling and training using privacy-preserving data:** Everyone can contribute their data to AI for modeling and training with corresponding returns as incentives. We will manage the authorization of users, protect the security and verify the integrity of their data in a fully privacy-preserving way.
+**1. Decentralized AI modeling and training using privacy-preserving data:** Everyone can contribute their data to AI for modeling and training with corresponding returns as incentives. We will manage the authorization of users, protect the security and verify the integrity of their data in a fully privacy-preserving way. Specifically:
 
-**2. Public AI improvement, auditing, and consensus:** Everyone can upgrade and improve AI algorithms to optimize their performance, and they will be rewarded according to their their contributions. Everyone can also help correct any bias, discrimination, and mistakes within AI and reach consensus on essential settings and parameters involving public interests to make AI ethical, constitutional and justicial.
+Data submission: A substrate will be used to allow users to submit their on-chain data and authorize AI to access them and train based on them.
 
-**3. Trustworthy verification of AI execution results:** As the intelligence of AI can approach even exceed human beings, people are hard to validate the outputs of AI by themselves. With techniques like ZKML, people can verify the computation results of AI quickly to ensure their correctness and authenticity as expected. With blockchain, everyone can self-verify those AI providing public services and involving public benefits to ensure they are fully reliable and trustworthy.
+Data verification: A substrate will be used to encrypt data for protecting data privacy. A corresponding zk proof will also be generated so the data validty and integrity can be tracked and verfied on chain.
 
+Data usage: A substrate will be used to enable privacy-preserving data to be used for AI modeling and training, and the contributor will be given corresponding returns as incentives.
+
+**2. Public AI improvement, auditing, and consensus:** Everyone can upgrade and improve AI algorithms to optimize their performance, and they will be rewarded according to their their contributions. Everyone can also help correct any bias, discrimination, and mistakes within AI and reach consensus on essential settings and parameters involving public interests to make AI ethical, constitutional and justicial. Specifically:
+
+AI improvement: A substrate will be used to enable everyone to fork the original AI model, revise it to create better new model, and upload the better one to improve the existing one. It can also record, track and manage different versions.
+
+AI auditing: A substrate will be used to allow everyone to audit and test existing AI algorithms to find out any bugs or vulnerabilities. It's a significant and effective way to maintain the security and validity of AI algorithms. After a correction is submitted, a module will be used for verifying the addressed issues and counting the value of their contributions to reward them the corresponding bug bounty automatically.
+
+AI consensus: A substrate will be used to achieve on-chain governance of public AI services. Everyone staking a certain amount of governance tokens can propose and vote for essential parameters and settings in AI. They can reach consensus to make sure their AI are ethical, accountable and responsible meeting the interests of the majority of stakeholders.
+
+**3. Trustworthy verification of AI execution results:** As the intelligence of AI can approach even exceed human beings, people are hard to validate the outputs of AI by themselves. With techniques like ZKML, people can verify the computation results of AI quickly to ensure their correctness and authenticity as expected. With blockchain, everyone can self-verify those AI providing public services and involving public benefits to ensure they are fully reliable and trustworthy. Specifically:
+
+Proof generation: A substrate will be used to create a zk proof for the computation results of AI services on chain.
+
+Proof verification: A substrate will be used to verify the zk proof for correctness of the computation results of AI services on chain. 
 
 In the project we will also provide the following deliverables:
 
