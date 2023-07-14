@@ -291,8 +291,6 @@ The team involved has decided to work on a reduced market rate. If market rates 
 | **0a** | **Copyrights and Licenses** | CC0 License |
 | **0b** | **Documentation**           | NA |
 | **0c** | **Methodology**             | We will provide a brief documentation of the methodology and process used for the research. This includes an explanation on why before proposing an actual scope of development we feel a thorough analysis phase is the better approach as this involves real world needs (e.g. legal enforcement) and it is not a purely technical delivery |
-| **0d** | **Infrastructure**          | NA |
-| **0e** | **Articles**                | NA |
 | 1  | **Research**                | We will conduct research on a minimum of 20 past grants and proposals, ecosystem prizes and future initiatives to gather some information around jurisdiction needs of the ecosystem. We think this sample should be enough to make informed decisions and make sure that the future technical delivery is supported by data.We will extract common data points, abstracting away the details, on which we will engage with stakeholders in the subsequent activity |
 | 2  | **Interviews**              | We will run a minimum of 20 interviews of about 45 minutes with relevant stakeholders. All the interviews will be following a discussion guide format that aims at understanding the needs that need to be solved by the open jurisdiction stack.Examples of data points we will extract through those interviews are given in the section _The methodology that will be applied._ |
 | 3  | **Shared Folder**           | We will share a folder with contents from interviews, aggregation of data points etc. basically anything that will be eventually part of the published paper |
