@@ -2,7 +2,7 @@
 
 -   **Project Name:** Sirato (Epirus) Substrate Explorer - Phase III
 -   **Team Name:** Web3 Labs Ltd
--   **Payment Address:** 0xc905c448db9942c662fcb1680f3ecfcd0592409c
+-   **Payment Address:** Fiat payment address provided on invoice dated 23/06/2023.
 -   **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview

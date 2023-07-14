@@ -24,18 +24,13 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | RFP | Last Updated |
 | :-- | :----------: |
 | [a-and-v-topology.md](RFPs/Open/a-and-v-topology.md) | 29.11.2021 |
-| [analysis-website-and-data-platform.md](RFPs/Open/analysis-website-and-data-platform.md) | 17.02.2023 |
 | [anti-collusion_infrastructure.md](RFPs/Open/anti-collusion_infrastructure.md) | 29.11.2021 |
 | [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 06.01.2023 |
-| [data_analysis_tools.md](RFPs/Open/data_analysis_tools.md) | 25.01.2023 |  
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 07.10.2022 |
-| [grant_management_webapp.md](RFPs/Open/grant_management_webapp.md) | 09.03.2023 |
-| [IDE_for_ink_Smart_Contracts.md](RFPs/Open/IDE_for_ink_Smart_Contracts.md) | 05.04.2023 |
 | [ISO_20022.md](RFPs/Open/ISO_20022.md) | 31.05.2022 |
 | [move_smart_contract_pallet.md](RFPs/Open/move_smart_contract_pallet.md) | 22.12.2022 |
 | [parachain_validation_conformance_testing.md](RFPs/Open/parachain_validation_conformance_testing.md) | 18.01.2023 |  
 | [polkadot-protocol_conformance_tests.md](RFPs/Open/polkadot-protocol_conformance_tests.md) | 08.05.2023 |
-| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Open/Static-Analysis-for-Runtime-Pallets.md) | 06.02.2023 |  
 | [sub-consensus.md](RFPs/Open/sub-consensus.md) | 23.11.2021 |
 | [uptane-for-substrate-design-and-scope.md](RFPs/Open/uptane-for-substrate-design-and-scope.md) | 04.03.2023 |
 | [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 07.01.2023 |
@@ -50,18 +45,23 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | RFP | Last Updated |
 | :-- | :----------: |
 | [alternative_polkadot_host_implementations.md](RFPs/Open/alternative_polkadot_host_implementations.md) | 02.03.2023 |
+| [alternative-polkadot-js-api-console.md](RFPs/Under%20Development/alternative-polkadot-js-api-console.md) | 19.05.2023 |
+| [analysis-website-and-data-platform.md](RFPs/Under%20Development/analysis-website-and-data-platform.md) | 28.06.2023 |
+| [data_analysis_tools.md](RFPs/Under%20Development/data_analysis_tools.md) | 28.06.2023 |  
+| [decentralized-security-marketplace.md](RFPs/Under%20Development/decentralized-security-marketplace.md) | 02.06.2023 |  
+| [grant_management_webapp.md](RFPs/Under%20Development/grant_management_webapp.md) | 06.06.2023 |
 | [identity-directory.md](RFPs/Under%20Development/identity-directory.md) | 30.05.2022 |
-| [implementation-benchmarking.md](RFPs/Open/implementation-benchmarking.md) | 16.03.2023 |
+| [IDE_for_ink_Smart_Contracts.md](RFPs/Under%20Development/IDE_for_ink_Smart_Contracts.md) | 05.04.2023 |
+| [implementation-benchmarking.md](RFPs/Under%20Development/implementation-benchmarking.md) | 06.06.2023 |
 | [ink!_smart_contract_block_explorer.md](RFPs/Under%20Development/ink_smart_contract_block_explorer.md) | 05.07.2021 |
 | [ISO_8583.md](RFPs/Open/ISO_8583.md) | 31.05.2022 |
 | [multi-chain-block-explorer.md](RFPs/Under%20Development/multi-chain-block-explorer.md) | 23.11.2021 |
 | [privacy-enhancement-polkadot-extension.md](RFPs/Under%20Development/privacy-enhancement-polkadot-extension.md) | 27.05.22 |
 | [raft-validators.md](RFPs/Under%20Development/raft-validators.md) | 23.05.2023 |
 | [scale-codec-comparator.md](RFPs/Under%20Development/scale-codec-comparator.md) | 30.05.2022 |
-| [decentralized-security-marketplace.md](RFPs/Under%20Development/decentralized-security-marketplace.md) | 02.06.2023 |  
+| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Under%20Development/Static-Analysis-for-Runtime-Pallets.md) | 05.07.2023 |  
 | [validator-setup-maintenance.md](RFPs/Under%20Development/validator-setup-maintenance.md) | 27.04.2023 |
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 07.12.2022 |
-| [alternative-polkadot-js-api-console.md](RFPs/Under%20Development/alternative-polkadot-js-api-console.md) | 19.05.2023 |
 
 </details>
 

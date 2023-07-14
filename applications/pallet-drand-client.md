@@ -3,6 +3,7 @@
 - **Team Name:** The Bacon Beacon
 - **Payment Address:** USDC 0x1C9e0bcA759e5Ec09246f4795310789b12F65a59
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1271#issuecomment-1583321519)
 
 ## Project Overview :page_facing_up:
 
