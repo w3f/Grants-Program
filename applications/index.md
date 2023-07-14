@@ -13,70 +13,94 @@ Use this page for an overview of all public grants and their status. Use the sid
 
 
 - [2023](#2023)
-  - [🏄‍♀️ Wave 18 - Q2 2023](#️-wave-18---q2-2023)
-  - [🏄‍♀️ Wave 17 - Q1 2023](#️-wave-17---q1-2023)
+  - [🏄 Wave 19 - Q3 2023](#️-wave-19---q3-2023)
+  - [🏄 Wave 18 - Q2 2023](#️-wave-18---q2-2023)
+  - [🏄 Wave 17 - Q1 2023](#️-wave-17---q1-2023)
 - [2022](#2022)
-  - [🏄‍♀️ Wave 16 - Q4 2022](#️-wave-16---q4-2022)
-  - [🏄‍♀️ Wave 15 - Q3 2022](#️-wave-15---q3-2022)
-  - [🏄‍♀️ Wave 14 - Q2 2022](#️-wave-14---q2-2022)
-  - [🏄‍♀️ Wave 13 - Q1 2022](#️-wave-13---q1-2022)
+  - [🏄 Wave 16 - Q4 2022](#️-wave-16---q4-2022)
+  - [🏄 Wave 15 - Q3 2022](#️-wave-15---q3-2022)
+  - [🏄 Wave 14 - Q2 2022](#️-wave-14---q2-2022)
+  - [🏄 Wave 13 - Q1 2022](#️-wave-13---q1-2022)
 - [2021](#2021)
-  - [🏄‍♀️ Wave 12 - Q4 2021](#️-wave-12---q4-2021)
-  - [🏄‍♀️ Wave 11 - Q3 2021](#️-wave-11---q3-2021)
-  - [🏄‍♀️ Wave 10 - Q2 2021](#️-wave-10---q2-2021)
-  - [🏄‍♀️ Wave 9 - Q1 2021](#️-wave-9---q1-2021)
+  - [🏄 Wave 12 - Q4 2021](#️-wave-12---q4-2021)
+  - [🏄 Wave 11 - Q3 2021](#️-wave-11---q3-2021)
+  - [🏄 Wave 10 - Q2 2021](#️-wave-10---q2-2021)
+  - [🏄 Wave 9 - Q1 2021](#️-wave-9---q1-2021)
 - [2020](#2020)
-  - [🏄‍♀️ Wave 8 - Q4 2020](#️-wave-8---q4-2020)
-  - [🏄‍♀️ Wave 7 - Q3 2020](#️-wave-7---q3-2020)
-  - [🏄‍♀️ Wave 6 - Q2 2020](#️-wave-6---q2-2020)
-  - [🏄‍♀️ Wave 5 - Q1 2020](#️-wave-5---q1-2020)
+  - [🏄 Wave 8 - Q4 2020](#️-wave-8---q4-2020)
+  - [🏄 Wave 7 - Q3 2020](#️-wave-7---q3-2020)
+  - [🏄 Wave 6 - Q2 2020](#️-wave-6---q2-2020)
+  - [🏄 Wave 5 - Q1 2020](#️-wave-5---q1-2020)
 - [2019](#2019)
-  - [🏄‍♀️ Wave 4 - Q4 2019](#️-wave-4---q4-2019)
-  - [🏄‍♀️ Wave 3 - Q3 2019](#️-wave-3---q3-2019)
-  - [🏄‍♀️ Wave 2 - Q2 2019](#️-wave-2---q2-2019)
-  - [🏄‍♀️ Wave 1 - Q1 2019](#️-wave-1---q1-2019)
+  - [🏄 Wave 4 - Q4 2019](#️-wave-4---q4-2019)
+  - [🏄 Wave 3 - Q3 2019](#️-wave-3---q3-2019)
+  - [🏄 Wave 2 - Q2 2019](#️-wave-2---q2-2019)
+  - [🏄 Wave 1 - Q1 2019](#️-wave-1---q1-2019)
 
 ## 2023
 
-### 🏄‍♀️ Wave 18 - Q2 2023
+### 🏄 Wave 19 - Q3 2023
+
+| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :--------- | :------------: | :--------: |
+
+[🔝](#2023)
+
+### 🏄 Wave 18 - Q2 2023
+
+| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :--------- | :------------: | :--------: |
+| [Interstellar](https://www.interstellar.gg/)                       | [Interstellar - Wallet Phase 2](./Interstellar-network2.md)                     | [GitHub](https://github.com/Interstellar-Network)                 | ☐          |        ☐       |      ☐      |
+| [Valletech AB](https://valletech.eu/)                              | [DINFRA](./DINFRA.md)                                                           | [GitHub](https://gitlab.com/polkawatch)                           | ☐          |        ☐       |      ☐      |
+| [DAuth](https://github.com/DAuth-Network)                          | [DAuth](./dauth_network.md)                                                     | [GitHub](https://github.com/DAuth-Network)                        | ☐          |        ☐       |      ☐      |
+| [Galaxy.Do](https://galaxy.do)                                     | [Galaxy: Three-dimensional Web for Polkadot Users](./galaxy.md)                 | [GitHub](https://github.com/7flash)                               | ☐          |        ☒       |      ☐      |
+| [Web3 Labs Ltd](https://www.web3labs.com/)                         | [Sirato (Epirus) Substrate Explorer - Phase III](./sirato_substrate_phase3.md)  | [GitHub](https://github.com/web3labs)                             | ☐          |        ☒       |      ☒      |
+| [Collective Intelligence Labs](https://collectiveintelligence.dev/)| [Omnichain Infrastructure](./CILA-omnichain-infrastructure.md)                  | [GitHub](https://github.com/Collective-Intelligence-Labs)         | ☐          |        ☐       |      ☐      |
+| [TradeLink](https://tradelink.pro/)                                | [Sandox](./sandox.md)                                                           | [GitHub](https://github.com/BEARlogin)                            | ☐          |        ☐       |      ☐      |
+| [Wunderbar Network](https://wunderbar.network/)                    | [Vue.js + TypeScript Substrate Front-End Template](./vue-typescript-substrate-frontend-template.md) | [GitHub](https://github.com/WunderbarNetwork) | ☐          |        ☐       |      ☐      |
+| [Profond.ai](https://www.profond.ai/)                              | [Profond](./Profond.md)                                                         | [GitHub](https://github.com/emarai)                               | ☐          |        ☐       |      ☐      |
+| [727.ventures](https://727.ventures)                               | [Patron](./patron.md)                                                           | [GitHub](https://github.com/727-Ventures)                         | ☐          |        ☐       |      ☐      |
+| [Supercomputing Systems AG](https://www.scs.ch)                    | [SARP - A Static Analysis Tool for Runtime Pallets](./sarp-basic-functionality.md) | [GitHub](https://github.com/scs)                               | ☐          |        ☒       |      ☒      |
+| [Ed Anderson](https://github.com/eca20)                            | [Blockchainia](./blockchainia.md)                                               | [GitHub](https://github.com/eca20)                                | ☐          |        ☐       |      ☐      |
+| [CoinFabrik](https://www.coinfabrik.com/)                          | [ScoutCoinFabrik: Milestone 2](ScoutCoinFabrik_2.md)                            | [GitHub](https://github.com/coinfabrik)                           | ☐          |        ☐       |      ☐      |
+| [Polytope Labs](https://research.polytope.technology/)             | [Interoperable State Machine Protocol](ismp.md)                                 | [GitHub](https://github.com/polytope-labs)                        | ☐          |        ☐       |      ☐      |
+| [Talentica Software](https://www.talentica.com/)                   | [Implementation Benchmarking Milestone 3](ink-pallet-benchmarking-phase-2.md)   | [GitHub](https://github.com/Nikhil-Desai-Talentica)               | ☐          |        ☐       |      ☐      |
+| [Deep Ink Ventures GmbH](https://github.com/deep-ink-ventures)     | [Stylograph](Stylograph.md)                                                     | [GitHub](https://github.com/deep-ink-ventures)                    | ☐          |        ☐       |      ☐      |
+| [Zeeve](https://www.zeeve.io)                                      | [Ink Playground IDE Improvements](ink-playground-ide-improvements.md)           | [GitHub](https://github.com/Zeeve-App)                            | ☐          |        ☐       |      ☐      |
+| [Scio Labs](https://scio.xyz/)                                     | [XCM Domain Name Service](xcm-domain-service.md)                                | [GitHub](https://github.com/scio-labs)                            | ☐          |        ☐       |      ☐      |
+| [Gloslab](https://github.com/smiasojed)                            | [Contracts performance measurement tool proposal](contracts-tool.md)            | [GitHub](https://github.com/smiasojed)                            | ☐          |        ☐       |      ☐      |
+| [Nikita Orlov PR](https://github.com/stringnick)                   | [Faucet chat based bot](faucet-bot.md)                                          | [GitHub](https://github.com/stringnick)                           | ☐          |        ☐       |      ☐      |
+| [Societal Labs Ltd.](https://www.sctl.xyz/)                        | [Societal Saas Pricing](societal_saas_pricing.md)                               | [GitHub](https://github.com/sctllabs)                             | ☐          |        ☐       |      ☐      |
+| [MASTER UNION LLC.](https://github.com/TheDotflow)                 | [Dotflow](Dotflow.md)                                                           | [GitHub](https://github.com/TheDotflow)                           | ☐          |        ☒       |      ☐      |
+| [Antier Solutions](https://www.antiersolutions.com/)               | [RFP/securityMarketPlace](Security_Marketplace.md)                              | [GitHub](https://github.com/ParthChaudhary31)                     | ☐          |        ☐       |      ☐      |
+| [SO/DA zone](https://github.com/mfornos)                           | [Ocelloids Monitoring SDK grant application](ocelloids_monitoring_sdk.md)       | [GitHub](https://github.com/mfornos)                              | ☐          |        ☐       |      ☐      |
+| [Antier Solutions Pvt. Ltd.](https://github.com/kulwindersingh-ant)| [Grants webapp](Grant_management_webapp.md)                                     | [GitHub](https://github.com/kulwindersingh-ant)                   | ☐          |        ☐       |      ☐      |
+| [Zaniyar Jahany](https://github.com/Zaniyar/)                      | [Grantmaster](grantmaster.md)                                                   | [GitHub](https://github.com/Zaniyar/plant2earn/)                  | ☐          |        ☐       |      ☐      |
+| [FiDi Tech](https://fidi.tech/)                                    | [FiDi DotSight: Analytics Data Platform for DotSama](fidi-dotsight-analytics.md)| [GitHub](https://github.com/fidi-tech)                            | ☐          |        ☐       |      ☐      |
+| [Ideal Labs](https://www.idealabs.network/)                                    | [Cryptex](cryptex.md)| [GitHub](https://github.com/ideal-lab5)                            | ☐          |        ☐       |      ☐      |
+| [Xcavate](https://xcavate.io/)                                    | [Real estate centric lending and asset minting protocol](Xcavate.md)| [GitHub](https://github.com/xcavateblockchain)                            | ☐          |        ☐       |      ☐      |
+| [Syncra](https://syncra.xyz)                                    | [No Code DAO Maker and ZK Powered Private Voting Solution](Syncra.md)| [GitHub](https://github.com/SyncraDAO)                            | ☐          |        ☐       |      ☐      |
+| [P2P.ORG](http://p2p.org/)                                    | [Validator Monitoring Service](Validator_Monitoring_Service.md)| [GitHub](https://github.com/p2p-org/polkadot_monitoring_service)                            | ☐          |        ☐       |      ☐      |
+| [Colorful Notion](https://github.com/colorfulnotion)                            | [Deep Account Analytics in Three Tiers for the Polkadot Data Alliance](DeepAccountAnalytics-PolkadotDataAlliance.md)| [GitHub](https://github.com/colorfulnotion/)                            | ☐          |        ☐       |      ☐      |
+| [Dastanbek Samatov](https://dastansam.github.io/)                            | [ISO-8553 PoC implementation](ISO-8583-implementation.md)| [GitHub](https://github.com/dastanbeksamatov)                            | ☐          |        ☐       |      ☐      |
+| [Eiger](https://www.eiger.co/)                            | [Substrate Move System Pallet, pt. 1](Substrate_Move_System_Pallet_1.md)| [GitHub](https://github.com/eigerco)                            | ☐          |        ☐       |      ☐      |
+| [Davanti](https://github.com/liangjh)                            | [Dot-ETL Project](dot_etl.md)| [GitHub](https://github.com/liangjh)                            | ☐          |        ☐       |      ☐      |
+| [ParaSpell](https://github.com/paraspell)                            | [LightSpell: XCM API](LightSpell-proposal.md)| [GitHub](https://github.com/paraspell)                            | ☐          |        ☐       |      ☐      |
+
+[🔝](#2023)
+
+### 🏄 Wave 17 - Q1 2023
 
 | Team                                                               | Project                                                                                                | Link                                                                 | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------------------------------- | :--------- | :------------: | :--------: |
-| [Interstellar](https://www.interstellar.gg/)          | [Interstellar - Wallet Phase 2](./Interstellar-network2.md)                              | [GitHub](https://github.com/Interstellar-Network)                      | ☐          |       ☐         |     ☐      |
-| [Valletech AB](https://valletech.eu/)                 | [DINFRA](./DINFRA.md)                                                           | [GitHub](https://gitlab.com/polkawatch)                                | ☐          |       ☐         |     ☐      |
-| [DAuth](https://github.com/DAuth-Network)                 | [DAuth](./dauth_network.md)                                                           | [GitHub](https://github.com/DAuth-Network)                                | ☐          |       ☐         |     ☐      |
-| [Galaxy.Do](https://galaxy.do)                 | [Galaxy: Three-dimensional Web for Polkadot Users](./galaxy.md)                                                           | [GitHub](https://github.com/7flash)                                | ☐          |       ☒         |     ☐      |
-| [Web3 Labs Ltd](https://www.web3labs.com/)                 | [Sirato (Epirus) Substrate Explorer - Phase III](./sirato_substrate_phase3.md)                                                           | [GitHub](https://github.com/web3labs)                                | ☐          |       ☐         |     ☐      |
-| [Collective Intelligence Labs](https://collectiveintelligence.dev/)                 | [Omnichain Infrastructure](./CILA-omnichain-infrastructure.md)                                                           | [GitHub](https://github.com/Collective-Intelligence-Labs)                                | ☐          |       ☐         |     ☐      |
-| [TradeLink](https://tradelink.pro/)                 | [Sandox](./sandox.md)                                                           | [GitHub](https://github.com/BEARlogin)                                | ☐          |       ☐         |     ☐      |
-| [Wunderbar Network](https://wunderbar.network/)                 | [Vue.js + TypeScript Substrate Front-End Template](./vue-typescript-substrate-frontend-template.md)                                                           | [GitHub](https://github.com/WunderbarNetwork)                                | ☐          |       ☐         |     ☐      |
-| [Profond.ai](https://www.profond.ai/)                 | [Profond](./Profond.md)                                                           | [GitHub](https://github.com/emarai)                                | ☐          |       ☐         |     ☐      |
-| [727.ventures](https://727.ventures)                 | [Patron](./patron.md)                                                           | [GitHub](https://github.com/727-Ventures)                                | ☐          |       ☐         |     ☐      |
-| [Supercomputing Systems AG](https://www.scs.ch)                 | [SARP - A Static Analysis Tool for Runtime Pallets](./sarp-basic-functionality.md)                                                           | [GitHub](https://github.com/scs)                                | ☐          |       ☐         |     ☐      |
-| [Ed Anderson](https://github.com/eca20)                 | [Blockchainia](./blockchainia.md)                                                           | [GitHub](https://github.com/eca20)                                | ☐          |       ☐         |     ☐      |
-| [CoinFabrik](https://www.coinfabrik.com/)                          | [ScoutCoinFabrik: Milestone 2](ScoutCoinFabrik_2.md)                                                   | [GitHub](https://github.com/coinfabrik)                              | ☐          |        ☐       |      ☐      |
-| [Polytope Labs](https://research.polytope.technology/)                          | [Interoperable State Machine Protocol](ismp.md)                                                   | [GitHub](https://github.com/polytope-labs)                              | ☐          |        ☐       |      ☐      |
-| [Talentica Software](https://www.talentica.com/)                          | [Implementation Benchmarking Milestone 3](ink-pallet-benchmarking-phase-2.md)                                                   | [GitHub](https://github.com/Nikhil-Desai-Talentica)                              | ☐          |        ☐       |      ☐      |
-| [Deep Ink Ventures GmbH](https://github.com/deep-ink-ventures)                          | [Stylograph](Stylograph.md)                                                   | [GitHub](https://github.com/deep-ink-ventures)                              | ☐          |        ☐       |      ☐      |
-| [Zeeve](https://www.zeeve.io)                         | [Ink Playground IDE Improvements](ink-playground-ide-improvements.md)                                                   | [GitHub](https://github.com/Zeeve-App)                              | ☐          |        ☐       |      ☐      |
-| [Scio Labs](https://scio.xyz/)                         | [XCM Domain Name Service](xcm-domain-service.md)                                                   | [GitHub](https://github.com/scio-labs)                              | ☐          |        ☐       |      ☐      |
-| [Gloslab](https://github.com/smiasojed)                         | [Contracts performance measurement tool proposal](contracts-tool.md)                                                   | [GitHub](https://github.com/smiasojed)                              | ☐          |        ☐       |      ☐      |
-| [Nikita Orlov PR](https://github.com/stringnick)                         | [Faucet chat based bot](faucet-bot.md)                                                   | [GitHub](https://github.com/stringnick)                              | ☐          |        ☐       |      ☐      |
-
-[🔝](#menu)
-
-### 🏄‍♀️ Wave 17 - Q1 2023
-
-| Team                                                               | Project                                                                                                | Link                                                                 | Terminated | First Delivery | Completed  |
-| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------------------------------- | :--------- | :------------: | :--------: |
-| [Deep Ink Ventures GmbH](http://deep-ink.ventures/)                | [GenesisDAO](GenesisDAO.md)                                                                            | [GitHub](https://github.com/deep-ink-ventures)                       | ☐          |       ☒        |      ☐     |
+| [Deep Ink Ventures GmbH](http://deep-ink.ventures/)                | [GenesisDAO](GenesisDAO.md)                                                                            | [GitHub](https://github.com/deep-ink-ventures)                       | ☐          |       ☒        |      ☒     |
 | [ArtZero](https://artzero.io/)                                     | [ArtZero & InkWhale](ArtZero_InkWhale.md)                                                              | [GitHub](https://github.com/artzero-io)                              | ☐          |       ☒        |      ☐     |
-| [EightFish](https://github.com/eightfish-org/eightfish)                                                          | [EightFish](eightfish.md)                                                                              | [GitHub](https://github.com/miketang84/eightfish)                    | ☐          |       ☒        |      ☒     |
+| [EightFish](https://github.com/eightfish-org/eightfish)            | [EightFish](eightfish.md)                                                                              | [GitHub](https://github.com/miketang84/eightfish)                    | ☐          |       ☒        |      ☒     |
 | [Protofire](https://protofire.io/)                                 | [Polkadot Contract Wizard](polkadot-contract-wizard.md)                                                | [GitHub](https://github.com/protofire/)                              | ☐          |       ☒        |      ☒     |
 | [Runtime Verification](https://runtimeverification.com/)           | [KMIR: the K semantics of MIR](rv-kmir.md)                                                             | [GitHub](https://github.com/runtimeverification)                     | ☐          |        ☒       |      ☐     |
 | [Me Protocol](https://meprotocol.io/)                              | [Me Protocol](MeProtocol.md)                                                                           | [GitHub](https://github.com/Me-Protocol)                             | ☐          |        ☐       |      ☐     |
-| [Comrade Coop](https://comrade.coop/)                              | [Validated Streams](validated-streams.md)                                                              | [GitHub](https://github.com/comrade-coop)                            | ☐          |        ☒       |      ☐     |
-| [Blockcoders](http://blockcoders.io/)                              | [Kuma Cross-chain Wallet](cross-chain-wallet.md)                                                      | [GitHub](https://github.com/blockcoders)                             | ☐          |        ☒       |      ☐     |
+| [Comrade Coop](https://comrade.coop/)                              | [Validated Streams](validated-streams.md)                                                              | [GitHub](https://github.com/comrade-coop)                            | ☐          |        ☒       |      ☒     |
+| [Blockcoders](http://blockcoders.io/)                              | [Kuma Cross-chain Wallet](cross-chain-wallet.md)                                                       | [GitHub](https://github.com/blockcoders)                             | ☐          |        ☒       |      ☐     |
 | [OmniBTC](https://omnibtc.finance/)                                | [Polkadot Smart Chain](psc.md)                                                                         | [GitHub](https://github.com/OmniBTC/PSC)                             | ☐          |        ☒       |      ☒     |
 | [ChainSafe](https://chainsafe.io/)                                 | [Multix - a simple interface to use complex multisigs](Multix-a-simple-UI-for-complex-multisig.md)     | [GitHub](https://github.com/ChainSafe)                               | ☐          |        ☒       |      ☒     |
 | [Composable Finance LTD](https://www.composable.finance/)          | [CosmWasm VM](CosmWasmVM-CoreProduct.md)                                                               | [GitHub](https://github.com/ComposableFi/)                           | ☐          |        ☐       |      ☐     |
@@ -92,17 +116,17 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Mark Van de Vyver PhD(Dist)](https://www.student.uwa.edu.au/course/award-verification-service?family=van+de+vyver&family_partial=on&given=mark&search=Search)              | [Substrate Tokenomics Survey](tokenomics-survey-2022.md) | [GitHub](https://github.com/taqtiqa-mark) | ☐          |        ☒         |      ☐     |
 | [Zeeve](https://www.zeeve.io)                                      | [Parachain deployment zoombienet testing automation](Zeeve_Parachain_deployment_zoombienet_testing_automation.md) | [GitHub](https://github.com/Zeeve-App)                    | ☐          |        ☐       |      ☐     |
 | [Polytope Labs](https://research.polytope.technology/)             | [Trie Verifier Implementation](solidity-trie-verifier.md)                                              | [GitHub](https://github.com/polytope-labs)                           | ☐          |        ☒       |      ☒     |
-| [Off-Narrative Labs](https://github.com/Off-Narrative-Labs)                                                 | [Tuxedo](tuxedo.md)                                                                                    | [GitHub](https://github.com/JoshOrndorff)                            | ☐          |        ☒       |      ☒     |
+| [Off-Narrative Labs](https://github.com/Off-Narrative-Labs)        | [Tuxedo](tuxedo.md)                                                                                    | [GitHub](https://github.com/JoshOrndorff)                            | ☐          |        ☒       |      ☒     |
 | [FuzzLand](https://fuzz.land/)                                     | [FuzzLand](FuzzLand.md)                                                                                | [GitHub](https://github.com/fuzzland)                                | ☐          |        ☐       |      ☐     |
 | [Fuu](https://github.com/ff13dfly/)                                | [Anchor, On-chain Linked List pallet and Name Service](Anchor.md)                                      | [GitHub](https://github.com/ff13dfly/Anchor)                         | ☐          |        ☒       |      ☒     |
-| [hack-ink](https://hack.ink/)                                      | [Slothunter](slothunter.md)                                                                            | [GitHub](https://github.com/hack-ink)                                | ☐          |        ☐       |      ☐     |
+| [hack-ink](https://hack.ink/)                                      | [Slothunter](slothunter.md)                                                                            | [GitHub](https://github.com/hack-ink)                                | ☐          |        ☒       |      ☐     |
 | [Invers Inc](https://invers.tech/)                                 | [Zkwasm Rollups Transfer](zkwasm-rollups-transfer.md)                                                  | [GitHub](https://github.com/zero-network)                            | ☐          |        ☐       |      ☐     |
 | [decentraDOT](https://decentradot.com/)                            | [Cyclops Validator Dashboard](cyclops.md)                                                              | [GitHub](https://github.com/ArthurHoeke?tab=repositories)            | ☐          |        ☒       |      ☒     |
 | [Anwesh Nayak](https://github.com/muddlebee)                       | [Mempool Dashboard - Version 2](polkadot-mempool-explorer-v2.md)                                       | [GitHub](https://github.com/muddlebee)                               | ☐          |        ☐       |      ☐     |
 | [Tellor Inc](https://tellor.io/)                       | [Tellor Oracle Protocol](Tellor.md)                                       | [GitHub](https://github.com/tellor-io/)                               | ☐          |        ☒       |      ☐     |
 | [Jonathan Brown](https://acuity.social/)                       | [Hybrid Explorer](hybrid.md)                                       | [GitHub](https://github.com/acuity-social)                               | ☐          |        ☒       |      ☐     |
 | [ParaSpell](https://github.com/paraspell)                        | [ParaSpell_Follow Up 2](ParaSpell_follow-up2.md)                                       | [GitHub](https://github.com/paraspell)                               | ☐          |        ☒       |      ☒     |
-| [justmert](https://github.com/justmert)                        | [PolkaFlow](polkaflow.md)                                       | [GitHub](https://github.com/justmert)                               | ☐          |        ☐       |      ☐     |
+| [justmert](https://github.com/justmert)                        | [PolkaFlow](polkaflow.md)                                       | [GitHub](https://github.com/justmert)                               | ☐          |        ☒       |      ☒     |
 | [BelSoft](https://www.belsoft.rs)                        | [Diffy messenger](Diffy_chat.md)                                       | [GitHub](https://github.com/1db1)                               | ☐          |        ☒       |      ☐     |
 | [Zkverse](https://github.com/Zkvers)                        | [Zkverse](zkverse.md)                                       | [GitHub](https://github.com/Zkvers/substrate-zk)                               | ☐          |        ☐       |      ☐     |
 | [Taiwan Research-based Biopharmaceutical Manufacturers Association](https://trpma.org.tw/cmn)                        | [Claps Health](Claps.md)                                       | [GitHub](https://github.com/Claps-Health/)                               | ☐          |        ☐       |      ☐     |
@@ -110,16 +134,17 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [gmajor](https://github.com/gmajor-encrypt)                        | [XCM Tools](xcm-tools.md)                                       | [GitHub](https://github.com/gmajor-encrypt/)                               | ☐          |        ☒       |      ☐     |
 | [David Semakula](https://github.com/davidsemakula)                        | [Ink Analyzer](ink-analyzer.md)                                       | [GitHub](https://github.com/ink-analyzer/ink-analyzer)                               | ☐          |        ☒       |      ☐     |
 | [Bright Inventions](https://brightinventions.pl/)      | [High-availability validator setup](High_availability_validator_setup.md)     | [GitHub](https://github.com/bright/)          | ☐          |        ☒       |      ☐     |
-| [DIA Data](https://www.diadata.org/)      | [Bridges Attestation Oracle](DIA_Bridge_Attestation_Oracle.md)     | [GitHub](https://github.com/diadata-org/)          | ☐          |        ☐       |      ☐     |
+| [DIA Data](https://www.diadata.org/)      | [Bridgestate Attestation Oracle](DIA_Bridge_Attestation_Oracle.md)     | [GitHub](https://github.com/diadata-org/)          | ☐          |        ☒       |      ☐     |
 | [TogetherCrew](http://www.togethercrew.com/)      | [Community Health Check](community-health-check.md)     | [GitHub](https://github.com/RnDAO)          | ☐          |        ☐       |      ☐     |
 | [Decentration](https://www.decentration.org/)                    | [Supersig Phase 2](./supersig_fellowship.md)                                                                        | [GitHub](https://github.com/decentration)                           | ☐          |       ☒        |     ☐     |
 | [Polkadrys Labs](https://github.com/rtomas)                    | [Open Payroll](./openPayroll.md)                                                                        | [GitHub](https://github.com/rtomas)                           | ☐          |       ☐        |     ☐     |
-| [Itering](https://www.itering.io/)                    | [Solidity Verifier Implementation for Accountable Light Client](./solidity-verifier-for-accountable-light-client.md)                                                                        | [GitHub](https://github.com/darwinia-network)                           | ☐          |       ☐        |     ☐     |
- [🔝](#menu)
+| [Itering](https://www.itering.io/)                    | [Solidity Verifier Implementation for Accountable Light Client](./solidity-verifier-for-accountable-light-client.md)                                                                        | [GitHub](https://github.com/darwinia-network)                           | ☐          |       ☒        |     ☐     |
+
+[🔝](#2023)
 
 ## 2022
 
-### 🏄‍♀️ Wave 16 - Q4 2022
+### 🏄 Wave 16 - Q4 2022
 
 | Team                                                                           | Project                                                                                                                                              | Link                                                                 | Terminated | First Delivery | Completed |
 | :----------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -152,26 +177,27 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Common Orbit LLC](https://brson.github.io)                                    | [wasm-opt-for-rust maintenance](maintenance/wasm-opt-for-rust.md)                                                                                    | [GitHub](https://github.com/brson/wasm-opt-rs)                       | ☐          |       ☒        |     ☐     |
 | [Salaheldin Soliman](https://github.com/salaheldinsoliman)                     | [Solang developer experience improvements](Solang_developer_experience_improvements.md)                                                              | [GitHub](https://github.com/hyperledger/solang)                      | ☐          |       ☒        |     ☐     |
 | [Optymalizacja AI Grzegorz Miebs](https://github.com/miepsik)                  | [Validator selection](validators_selection.md)                                                                                                       | [GitHub](https://github.com/miepsik)                                 | ☐          |       ☒        |     ☒     |
-| [Applied Blockchain Ltd](https://appliedblockchain.com/)                       | [Silent Data](project_silentdata.md)                                                                                                                 | [GitHub](https://github.com/appliedblockchain)                       | ☐          |       ☐        |     ☐     |
+| [Applied Blockchain Ltd](https://appliedblockchain.com/)                       | [Silent Data](project_silentdata.md)                                                                                                                 | [GitHub](https://github.com/appliedblockchain)                       | ☐          |       ☒        |     ☒     |
 | [Web3Box Labs](https://github.com/web3box-labs)                                | [Web3Box](Web3Box.md)                                                                                                                                | [GitHub](https://github.com/web3box-labs)                            | ☐          |       ☒        |     ☒     |
 | [LimeChain](https://limechain.tech/)                                           | [Research feasibility of Polkadot Host in Java](research-feasibiliy-java-host.md)                                                                    | [GitHub](https://github.com/LimeChain)                               | ☐          |       ☒        |     ☒     |
 | [Blaize.tech](https://blaize.tech/)                                            | [Unified deployment for the collator node](unified_collator_node_deployment.md)                                                                      | [GitHub](https://github.com/babebort-blaize)                         | ☐          |       ☒        |     ☒     |
 | [Odyssey B.V.](https://odyssey.org/)                                           | [Momentum, an open source, metaverse for digital societies](odyssey_momentum.md)                                                                     | [GitHub](https://github.com/momentum-xyz)                            | ☐          |       ☐        |     ☐     |
 | [Bela Supernova](https://bsn.si/)                                              | [Rubeus Keeper Stage 2](Rubeus_keeper_st2.md)                                                                                                        | [GitHub](https://github.com/bsn-si)                                  | ☐          |       ☒        |     ☒     |
-| [Coong Team](https://coong.xyz/)                                               | [Coong Wallet](coong_wallet.md)                                                                                                                      | [GitHub](https://github.com/CoongCrafts)                             | ☐          |       ☒        |     ☐     |
+| [Coong Team](https://coong.xyz/)                                               | [Coong Wallet](coong_wallet.md)                                                                                                                      | [GitHub](https://github.com/CoongCrafts)                             | ☐          |       ☒        |     ☒     |
 | OCamlMyCaml                                                                    | [PrivaDEX: Cross-Chain DEX Aggregator MVP](PrivaDEX_aggregator.md)                                                                                   | [GitHub](https://github.com/kapilsinha/privadex)                     | ☐          |       ☒        |     ☒     |
 | [Aband-Network](https://a.band/)                                               | [Substrate Parachain PoS Template](substrate-parachain-PoS-template.md)                                                                              | [GitHub](https://github.com/Aband-Network/substrate-parachain-PoS-template) | ☐          |       ☒        |     ☒     |
 | [MangoBOX labs](https://www.mangobox.xyz/)                                     | [MangoSale Protocol](MangoSale_Protocol.md)                                                                                                          | [GitHub](https://github.com/Mangoboxlabs)                            | ☐          |       ☒        |     ☐     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 15 - Q3 2022
+[🔝](#2023)
+
+### 🏄 Wave 15 - Q3 2022
 
 | Team                                                         | Project                                                                                       | Link                                                                   | Terminated | First Delivery | Completed |
 | :----------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
-| [QRUCIAL OÜ](https://qrucial.io/)                            | [QRUCIAL DAO](./QRUCIAL_DAO.md)                                                               | [GitHub](https://github.com/Qrucial/QRUCIAL-DAO)                       | ☐          |       ☒        |     ☐     |
+| [QRUCIAL OÜ](https://qrucial.io/)                            | [QRUCIAL DAO](./QRUCIAL_DAO.md)                                                               | [GitHub](https://github.com/Qrucial/QRUCIAL-DAO)                       | ☐          |       ☒        |     ☒     |
 | [Polkadot js plus](http://polkadotjs.plus/)                  | [Polkadot js plus / Social Recovery Wallet](./Plus-social-recovery-wallet.md)                 | [GitHub](https://github.com/Nick-1979/polkadot-Js-Plus-extension/wiki) | ☐          |       ☒        |     ☐     |
 | [Lee](https://github.com/rust-0x0)                           | [Hex Space Social Graph](./hex.md)                                                            | [GitHub](https://github.com/rust-0x0)                                  | ☐          |       ☒        |     ☐     |
-| [Liberland LLC](https://liberland.org/en/)                   | [Liberland Pallets](./liberland.md)                                                           | [GitHub](https://github.com/liberland/liberland_substrate)             | ☐          |       ☒        |     ☐     |
+| [Liberland LLC](https://liberland.org/en/)                   | [Liberland Pallets](./liberland.md)                                                           | [GitHub](https://github.com/liberland/liberland_substrate)             | ☐          |       ☒        |     ☒     |
 | [Standard Protocol](https://standard.tech/)                  | [Signac - a monorepo plugin for developing multiple Parity ink! smart contracts](./signac.md) | [GitHub](https://github.com/standardweb3/signac)                       | ☐          |       ☒        |     ☒     |
 | [B-Datagray](https://www.b-datagray.com/)                    | [Datagen Project](./Datagen_Project.md)                                                       | [GitHub](https://github.com/Datagen-Project)                           | ☐          |       ☒        |     ☐     |
 | [Colorful Notion](https://polkaholic.io/#chains)             | [Polkaholic.io's Multi-Chain Substrate Block Explorer](./Polkaholic.md)                       | [GitHub](https://github.com/colorfulnotion/polkaholic/)                | ☐          |       ☐        |     ☐     |
@@ -192,7 +218,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Uke](https://github.com/Uke-Messaging)                      | [Uke Messaging - PoC - Phase 1](./uke.md)                                                     | [GitHub](https://github.com/Uke-Messaging)                             | ☒          |       ☐        |     ☐     |
 | [Redstone Network](https://github.com/difttt)                | [Redstone Network](./RedStone%20Network.md)                                                   | [GitHub](https://github.com/difttt)                                    | ☐          |       ☒        |     ☐     |
 | [JURIMETRIC TECNOLOGIA LTDA](https://www.jurimetric.com.br/) | [Polkadart](./Polkadart.md)                                                                   | [GitHub](https://github.com/rankanizer/polkadart)                      | ☐          |       ☒        |     ☒     |
-| [Skye Kiwi](https://skye.kiwi/)                              | [Choko Wallet](./choko_wallet.md)                                                             | [GitHub](https://github.com/skyekiwi)                                  | ☐          |       ☒        |     ☐     |
+| [Skye Kiwi](https://skye.kiwi/)                              | [Choko Wallet](./choko_wallet.md)                                                             | [GitHub](https://github.com/skyekiwi)                                  | ☐          |       ☒        |     ☒     |
 | [Popular Coding](https://www.popularcoding.com/)             | [Ventur](./ventur.md)                                                                         | [GitHub](https://github.com/popular_coding)                            | ☐          |       ☒        |     ☒     |
 | [Asylum](https://asylum.space/)                              | [Asylum follow-up 1](./asylum_follow_up_1.md)                                                 | [GitHub](https://gitlab.com/asylum-space/)                             | ☒          |       ☒        |     ☐     |
 | [Cyril Carlier](https://github.com/CrommVardek)              | [Maki](./Maki.md)                                                                             | [GitHub](https://github.com/CrommVardek)                               | ☐          |       ☐        |     ☐     |
@@ -207,9 +233,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | ALPHA LABS                                                   | [Binary merkle tree](./binary_merkle_tree.md)                                                 | [GitHub](https://github.com/frisitano)                                 | ☐          |       ☒        |     ☐     |
 | [Standard Protocol](https://standard.tech/)                  | [New Order - a full onchain orderbook dex with indexers](./Standard_Protocol.md)              | [GitHub](https://github.com/standardweb3)                              | ☒          |       ☐        |     ☐     |
 | [hack-ink](https://github.com/hack-ink)                      | [Subalfred](./subalfred.md)                                                                   | [GitHub](https://github.com/hack-ink/subalfred)                        | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 14 - Q2 2022
+[🔝](#2023)
+
+### 🏄 Wave 14 - Q2 2022
 
 | Team                                                       | Project                                                                                                 | Link                                                                   | Terminated | First Delivery | Completed |
 | :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -228,7 +255,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Kami Ekbatanifard](https://github.com/Nick-1979/)         | [Polkadot js plus / Nomination pools](./Plus-follow-up.md)                                              | [GitHub](https://github.com/Nick-1979/polkadot-Js-Plus-extension/wiki) | ☐          |       ☒        |     ☒     |
 | [Afloat Inc](https://stayafloat.io/#/)                     | [Tax Infrastructure Polkadot Integration](./Afloat.md)                                                  | [GitHub](https://github.com/hashed-io)                                 | ☐          |       ☒        |     ☒     |
 | [gmajor](https://github.com/gmajor-encrypt)                | [SCALE Codec Comparator](./scale-codec-comparator.md)                                                   | [GitHub](https://github.com/gmajor-encrypt)                            | ☐          |       ☒        |     ☒     |
-| [Rusty Crewmates](http://rustycrewmates.com/)              | [Substrate Tutorials](./substrate-tutorials.md)                                                         | [GitHub](https://github.com/rusty-crewmates/substrate-tutorials)       | ☐          |       ☒        |     ☐     |
+| [Rusty Crewmates](http://rustycrewmates.com/)              | [Substrate Tutorials](./substrate-tutorials.md)                                                         | [GitHub](https://github.com/rusty-crewmates/substrate-tutorials)       | ☐          |       ☒        |     ☒     |
 | [Sequester](https://github.com/SequesterChain)             | [A Common-Good Carbon Sink on Polkadot](./sequester.md)                                                 | [GitHub](https://github.com/SequesterChain/pallets)                    | ☐          |       ☒        |     ☒     |
 | [Keysafe Network](https://github.com/keysafe-protocol)     | [A decentralized protocol for private key custody and crypto asset management](./keysafe_network.md)    | [GitHub](https://github.com/keysafe-protocol)                          | ☒          |       ☒        |     ☐     |
 | [Fennel Labs](https://fennellabs.com/)                     | [Whiteflag on Fennel Protocol](./Fennel_Protocol.md)                                                    | [GitHub](https://github.com/fennelLabs)                                | ☐          |       ☒        |     ☒     |
@@ -249,9 +276,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Codelight](https://massbit.io/)                           | [Massbit Route](./massbit_route.md)                                                                     | [GitHub](https://github.com/massbitprotocol/massbitroute)              | ☐          |       ☒        |     ☒     |
 | [Hypha Hashed Partners](https://hypha.earth/)              | [Social Recovery Wallet](./social_recovery_wallet.md)                                                   | [GitHub](https://github.com/hypha-dao)                                 | ☐          |       ☒        |     ☒     |
 | [MangoBOX labs](http://mangobox.xyz/)                      | [MangoBOX Protocol](./MangoBOX-Protocol.md)                                                             | [GitHub](https://github.com/Mangoboxlabs)                              | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 13 - Q1 2022
+[🔝](#2023)
+
+### 🏄 Wave 13 - Q1 2022
 
 | Team                                                  | Project                                                                                 | Link                                                                   | Terminated | First Delivery | Completed |
 | :---------------------------------------------------- | :-------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -287,11 +315,12 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [SaaS3 Lab](https://www.saas3.io)                     | [SaaS3](./SaaS3.md)                                                                     | [GitHub](https://github.com/SaaS3Lab)                                  | ☐          |       ☒        |     ☐     |
 | [NUTS Finance](https://nuts.finance)                  | [DOT-pegged derivative built on top of the stable asset protocol](./tdot.md)    | [GitHub](https://github.com/nutsfinance/)                              | ☒          |       ☒        |     ☐     |
 | [Strategy Object](https://strategyobject.com/)        | [Substrate Client for Java](./substrate_client_java.md)                                 | [GitHub](https://github.com/strategyobject/substrate-client-java)      | ☐          |       ☒        |     ☐     |
- [🔝](#menu)
+
+[🔝](#2023)
 
 ## 2021
 
-### 🏄‍♀️ Wave 12 - Q4 2021
+### 🏄 Wave 12 - Q4 2021
 
 | Team                                                       | Project                                                                                   | Link                                                                       | Terminated | First Delivery | Completed |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -316,9 +345,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | [A freelancing decentralized application](./universaldot.me.md)                           | [GitHub](https://github.com/UniversalDot)                                  | ☐          |       ☒        |     ☒     |
 | [AdMeta](https://admeta.network/)                          | [A privacy-preserving Ad Platform](./AdMeta.md)                                           | [GitHub](https://github.com/AdMetaNetwork/admeta)                          | ☐          |       ☒        |     ☒     |
 | Crypto Pay Lab (CPL))                                      | [Dotpay a github paid task platform using DOT](./DotPay.md)                               | [GitHub](https://github.com/bytepayment)                                   | ☐          |       ☒        |     ☐     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 11 - Q3 2021
+[🔝](#2023)
+
+### 🏄 Wave 11 - Q3 2021
 
 | Team                                            | Project                                                                                   | Link                                                | Terminated | First Delivery | Completed |
 | :---------------------------------------------- | :---------------------------------------------------------------------------------------- | :-------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -348,9 +378,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [UNI-ARTS](https://app.uniarts.network/)        | [Ruby Substate Client](./rb_substrate_client.md)                                          | [GitHub](https://github.com/uni-arts-chain/sr25519) | ☐          |       ☒        |     ☐     |
 | [Skye Kiwi](https://skye.kiwi/)                 | [SkyeKiwi Protocol](./skyekiwi-protocol.md)                                               | [GitHub](https://github.com/skyekiwi)               | ☐          |       ☒        |     ☒     |
 | [Evercity](https://evercity.io/)                | Sustainable Finance Protocol                                                              | [GitHub](https://github.com/EvercityEcosystem)      | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 10 - Q2 2021
+[🔝](#2023)
+
+### 🏄 Wave 10 - Q2 2021
 
 | Team                                                               | Project                                                                                             | Link                                                                   | Terminated | First Delivery | Completed |
 | :----------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -383,9 +414,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Stake Technologies](https://stake.co.jp/)                         | [ZK Plonk Pallet](./zk-plonk.md)                                                                    | [GitHub](https://github.com/PlasmNetwork)                              | ☐          |       ☒        |     ☒     |
 | [CryptoLab](https://www.cryptolab.network)                         | [Staking Reward Collector](./cryptolab-staking-reward-collector-front-end.md)                       | [GitHub](https://github.com/cryptolab-network)                         | ☐          |       ☒        |     ☒     |
 | [Yatima Inc](https://github.com/yatima-inc/yatima)                 | [Lambda-VM and programming language for Substrate](./yatima.md)                                     | [GitHub](https://github.com/yatima-inc/yatima)                         | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 9 - Q1 2021
+[🔝](#2023)
+
+### 🏄 Wave 9 - Q1 2021
 
 | Team                                                                    | Project                                                                                                                       | Link                                                                                         | Terminated | First Delivery | Completed |
 | :---------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -437,11 +469,12 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Bit.Country](http://bit.country/)                                      | [A decentralized world - Phase 2](./bit_country_m2.md)                                                                        | [GitHub](https://github.com/bit-country)                                                     | ☐          |       ☒        |     ☒     |
 | [Vera](https://veraprotocol.org/)                                       | [NFT Lending + Exchange](./vera_defi.md)                                                                                      | [GitHub](https://github.com/veraprotocol)                                                    | ☐          |       ☒        |     ☒     |
 | [Parallel Finance](https://parallel.fi/#/)                              | [Decentralized lending/borrowing and staking protocol](./Parallel.md)                                                         | [GitHub](https://github.com/parallel-finance/parallel)                                       | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#2023)
 
 ## 2020
 
-### 🏄‍♀️ Wave 8 - Q4 2020
+### 🏄 Wave 8 - Q4 2020
 
 | Team                                                              | Project                                                                                                                                               | Link                                                       | Terminated | First Delivery | Completed |
 | :---------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -488,9 +521,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Evanesco](https://evanesco.org/)                                 | [Private network protocol](./evanesco_networks.md)                                                                                                    | [GitHub](https://github.com/Evanesco-Labs)                 | ☐          |       ☒        |     ☒     |
 | [HugoByte](https://hugobyte.com/)                                 | [Project Aurras: Event Manager](./project_aurras_mvp_phase_1.md)                                                                                      | [GitHub](https://github.com/HugoByte)                      | ☐          |       ☒        |     ☒     |
 | [Bounce Protocol](https://bounce.finance/)                        | [Decentralized Auction Protocol](./bounce-protocol.md)                                                                                                | [GitHub](https://github.com/bouncefinance/bounce-network)  | ☐          |       ☐        |     ☐     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 7 - Q3 2020
+[🔝](#2023)
+
+### 🏄 Wave 7 - Q3 2020
 
 | Team                                                             | Project                                                                                                                                                                                  | Link                                                                  | Terminated | First Delivery | Completed |
 | :--------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -525,9 +559,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Adoriasoft](https://adoriasoft.com/)                            | Cosmos-SDK Parachain Development Kit Phase 2                                                                                                                                             | [GitHub](https://github.com/adoriasoft/cosmos-sdk)                    | ☐          |       ☒        |     ☒     |
 | [sup](https://github.com/clearloop/sup)                          | [Command line tool for generating or upgrading a Substrate node](./sup.md)                                                                                                               | [GitHub](https://github.com/clearloop/sup)                            | ☐          |       ☒        |     ☒     |
 | [Shard Labs](https://shardlabs.io)                               | [Tip or Donate KSM Embeddable Button](./KSM-embeddable-tip-or-donate-button.md)                                                                                                          | [GitHub](https://github.com/Shard-Labs)                               | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 6 - Q2 2020
+[🔝](#2023)
+
+### 🏄 Wave 6 - Q2 2020
 
 | Team                                                      | Project                                                                                                                                       | Link                                                             | Terminated | First Delivery | Completed |
 | :-------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -564,9 +599,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [FlexDapps](https://flexdapps.com/)                       | Gantree Phase 4                                                                                                                               | [GitHub](https://github.com/flex-dapps)                          | ☐          |       ☐        |     ☐     |
 | [Zondax](http://zondax.ch/)                               | Ledgeracio: A command-line tool and Ledger app designed for staking operations                                                                | [GitHub](https://github.com/paritytech/ledgeracio)               | ☐          |       ☒        |     ☒     |
 | [Dipole Tech](https://www.dipole.tech)                    | [Dipole Oracle: Distributed energy resource management](./DipoleOracle.md)                                                                    | [GitHub](https://github.com/DipoleTech/dipole-oracle)            | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
 
-### 🏄‍♀️ Wave 5 - Q1 2020
+[🔝](#2023)
+
+### 🏄 Wave 5 - Q1 2020
 
 | Team                                                                                                        | Project                                                                                                                                                                                       | Link                                                                                             | Terminated | First Delivery | Completed |
 | :---------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -607,11 +643,12 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [SelfKey](https://selfkey.org/)                                                                             | SelfKey DIDs & Claims as Ink! Smart Contracts                                                                                                                                                 | [GitHub](https://github.com/SelfKeyFoundation)                                                   | ☐          |       ☐        |     ☐     |
 | [Lyken](https://lyken.rs/)                                                                                  | [Rust trait system revamp](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/rust_trait_system_revamp.md)                                                          | [GitHub](https://github.com/LykenSol)                                                            | ☐          |       ☒        |     ☐     |
 | [Chorus One](https://chorus.one/)                                                                           | Grandpa light client in Tendermint                                                                                                                                                            | [GitHub](https://github.com/ChorusOne)                                                           | ☐          |       ☒        |     ☒     |
- [🔝](#menu)
+
+[🔝](#2023)
 
 ## 2019
 
-### 🏄‍♀️ Wave 4 - Q4 2019
+### 🏄 Wave 4 - Q4 2019
 
 | Team                                                   | Project                                                                                                                                                                    | Link                                                             | Terminated | First Delivery | Completed |
 | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -641,9 +678,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Stacktical](https://stacktical.com/)                  | [Performance Management Runtime Modules](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/predictive_performance_management_runtime_module.md) | [GitHub](https://github.com/Stacktical)                          | ☐          |       ☒        |     ☐     |
 | [Sean Young](https://www.mess.org/)                    | Solidity to WASM compiler                                                                                                                                                  | [GitHub](https://github.com/hyperledger-labs/solang)             | ☐          |       ☒        |     ☒     |
 | [Chain Security](https://chainsecurity.com/)           | Tool for validating correctness of Polkadot runtimes                                                                                                                       | [GitHub](https://github.com/ChainSecurity/polpatrol)             | ☐          |      ☒        |     ☒     |
-[🔝](#menu)
 
-### 🏄‍♀️ Wave 3 - Q3 2019
+[🔝](#2023)
+
+### 🏄 Wave 3 - Q3 2019
 
 | Team                                                     | Project                                                                                                                                                                             | Link                                                                   | Terminated | First Delivery | Completed |
 | :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -661,9 +699,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [DappForce](http://dappforce.io)                         | [SubSocial - Substrate module and web UI for decentralized communities](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/Subsocial.md)                  | [GitHub](https://github.com/dappforce/dappforce-subsocial)             | ☐          |       ☒        |     ☒     |
 | [Phala.Network](https://phala.network/)                  | [pLibra, Privacy Bridge between Polkadot and Libra chain](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/pLIBRA.md)                                   | [GitHub](https://github.com/Phala-Network/)                            | ☐          |       ☒        |     ☐     |
 | [Wiv](http://wiv.io/)                                    | Supply chain modules and front-end UI                                                                                                                                               | [GitHub](https://github.com/wivtech)                                   | ☒          |       ☐        |     ☐     |
-[🔝](#menu)
 
-### 🏄‍♀️ Wave 2 - Q2 2019
+[🔝](#2023)
+
+### 🏄 Wave 2 - Q2 2019
 
 | Team                                          | Project                                                                                                                                                         | Link                                                                | Terminated | First Delivery | Completed |
 | :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------ | :--------- | :------------: | :-------: |
@@ -679,9 +718,10 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [HOPR](https://hopr.network/)                 | [Substrate integration with this P2P messaging protocol](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/messaging.md)             | [GitHub](https://github.com/validitylabs/HOPR-PL-Substrate)         | ☐          |       ☒        |     ☒     |
 | [Mailchain](https://mailchain.xyz/)           | a Multi-Blockchain Messaging Application                                                                                                                        | [GitHub](https://github.com/mailchain)                              | ☐          |       ☒        |     ☒     |
 | [Usetech](http://usetech.com/blockchain.html) | [Polkadot C++ API](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/cpp_api.md)                                                     | [GitHub](https://github.com/usetech-llc/polkadot_api_cpp)           | ☐          |       ☒        |     ☒     |
-[🔝](#menu)
 
-### 🏄‍♀️ Wave 1 - Q1 2019
+[🔝](#2023)
+
+### 🏄 Wave 1 - Q1 2019
 
 | Team                                          | Project                                                                                                                                                 | Link                                                                        | Terminated | First Delivery | Completed |
 | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------- | :--------- | :------------: | :-------: |
@@ -696,3 +736,4 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Protos](http://protosmanagement.com/)        | Open Source Node Explorer                                                                                                                               | [GitHub](https://github.com/protos-research/polkadot-node-explorer)         | ☒          |       ☒        |     ☐     |
 | [Supercomputing Systems](https://www.scs.ch/) | [Substrate Transaction Privacy using Intel SGX](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/substrate_sgx_proposal.md) | [GitHub](https://github.com/scs/substraTEE)                                 | ☐          |       ☒        |     ☒     |
 
+[🔝](#2023)

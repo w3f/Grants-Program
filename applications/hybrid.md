@@ -205,7 +205,7 @@ Development has not started on the project, however the codebase will largely fo
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Event subscription API | The indexer will be updated to service subscription requests via WSS. |
 | 2. | Live dapp | The dapp will be updated so that pages displaying results from event queries will be updated as soon as a new event appears on the chain. |
-| 3. | Full Substrate & Polkadot support | All substrate & polkadot pallets & events supported |
+| 3. | Full Polkadot event indexing | The indexer will be updated to index all Polkadot pallets and the following keys will be indexed in addition to those in Milestone 1: preimage_hash, era_index, session_index. |
 | 4. | Variant index | Additional event index by pallet, variant |
 | 5. | Increased decentralization | Don't store event in db - load events in front end from chain |
 | 6. | Asynchrous block downloading | Blocks will be downloaded as fast as possible for improved indexing speed. |
