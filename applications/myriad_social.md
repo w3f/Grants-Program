@@ -12,35 +12,38 @@
 
 ### Overview
 
-Myriad Social is a decentralized, censorship-resistant social network that enables users to host their own social network without centralized control.
+Myriad Social is a social network that allows users to have their own platform without being controlled by a central authority. It is decentralized and censorship-resistant.
 
-Our application is built on top of the Myriad blockchain (currently as **[an appchain running on Octopus Network](https://oct.network/appchains)**), which gives it a number of advantages. Firstly, it is censorship-resistant, as there is no central point of control. Secondly, it allows sovereign control, as all data is stored within user-hosted instances with freedom to host.
+
+Our app is developed using the Myriad blockchain, specifically as an **[appchain that runs on the Octopus Network](https://oct.network/appchains)**. This provides several benefits. Firstly, it's censorship-resistant since there's no central control point. Secondly, it offers sovereign control as all data is kept in user-hosted instances with the freedom to host.
 
 The product proposition of myriad is as follows:
-- Federated Free Speech: Myriad allows users to host their own social network and be part of the Federation. With self-hosting, users can set up their own server and invite others to join. This makes it possible for anyone to create their own social network, without having to rely on a central service.
+- Myriad, a Federated Free Speech platform, empowers users to host their own social network and be a part of the Federation. By self-hosting, users can create their own server and invite others to join, enabling anyone to establish their own social network without depending on a central service.
 
-- Decentralize Other Social Networks: Current social media posts are centralized. Myriad Social decentralizes them. Myriad Social's crowdsourced mechanism of importing social media posts means that Myriad Social users can follow people on centralized social networks without having an account there.
+- Myriad Social offers a decentralized alternative to current social media platforms. With their crowdsourced method of importing social media posts, users can follow individuals on centralized networks without needing an account on those networks. This allows for greater accessibility and diversity of content.
 
-- Crypto Value Layer: Myriad  gives users the ability to aggregate posts from other social networks like Twitter or Reddit and import them into the blockchain. This effectively turns each post into a tipping wallet, allowing mainstream social media users to receive cryptocurrency for their content.
+- With Myriad's Crypto Value Layer, users can gather posts from various social networks such as Twitter or Reddit and transfer them onto the blockchain. This transforms each post into a tipping wallet, enabling regular social media users to receive cryptocurrency for their content.
 
-- Own the platform: Myriad Social is a self-governing social media platform that is powered by $MYRIA token holders and users. This decentralized structure allows for a more democratic and fair governance system that is not centrally controlled.
+- Myriad Social is a social media platform that is run by both $MYRIA token holders and users, making it self-governing. Unlike traditional platforms, it operates in a decentralized manner, which means that the governance system is more democratic and fair, without being controlled centrally.
 
-Myriad is built to be interoperable. Our blockchain uses Substrate, a blockchain framework behind Polkadot made by Parity Technologies. Using Substrate allows Myriad to be more flexible, because it’s compatible with a multitude of other blockchains such as Octopus, Kusama, and Polkadot.
+- At Myriad Social, our goal is to support the wider community by offering a range of pallets, services, and seamless integration options for federated social technologies. We strive to enhance the overall ecosystem and provide users with a more comprehensive experience.
 
-On top of that, Myriad uses a federated architecture that was built with modularity in mind, meaning that all of the components of Myriad are extensible and treated like a bunch of building blocks that can be assembled any way you’d like.
+At Myriad, we prioritize interoperability. Our blockchain is powered by Substrate, a framework developed by Parity Technologies for Polkadot. This choice allows for greater flexibility, as our blockchain can easily connect with other popular blockchains like Octopus, Kusama, and Polkadot.
 
-Myriad Social has a long term goal of being used as the main decentralized social media platform of the future. Since its launch in early 2022, our team has completed the development of the product's first and second phases and is now live in Octopus Network as an **[appchain](https://oct.network/appchains)**. With the flexibility that the Octopus project offers, appchains can be migrated into a different ecosystem or live as its own blockchain, and Octopus Network supports protocols deciding to **["graduate" from its network.](https://www.financemagnates.com/thought-leadership/octopus-network-poised-to-unleash-web3-gaming-even-in-the-darkest-of-markets/)** As such, Myriad, as Octopus Network's second appchain to go live on their ecosystem, decides to transform and migrate into the Kusama ecosystem to reach a broader audience.
+In addition, Myriad has a federated architecture designed for modularity. This means that its components are extensible and can be treated like building blocks that can be assembled in any desired way.
+
+Our ultimate objective at Myriad Social is to become the primary decentralized social media platform of the future. After launching in early 2022, we have completed the first and second phases of our product's development, and it is now available on Octopus Network as an **[appchain](https://oct.network/appchains)**. The Octopus project offers great flexibility as appchains can be deployed into a different ecosystem or live as their own blockchain. Additionally, Octopus Network supports protocols that **["graduate" from its network.](https://www.financemagnates.com/thought-leadership/octopus-network-poised-to-unleash-web3-gaming-even-in-the-darkest-of-markets/)** As the second appchain to go live on Octopus Network's ecosystem, Myriad has decided to level up and get embedded into the Kusama ecosystem to reach a wider audience.
 
 As a parachain that lives in Kusama/Polkadot/Web3 Ecosystem, Myriad provides:
 - A new decentralized social network with self-governance capability
-- A complete documentation on how to migrate/upgrade an existing Octopus appchain or similar substrate-based chains to any Polkadot Ecosystem
+- A complete documentation on how to upgrade an existing Octopus appchain or similar substrate-based chains to any Polkadot Ecosystem
 - Multi wallet login using various providers
 
 ### Project Details
 
 ##### Architecture
 
-The following is the architecture that has been deployed on Octopus Network as an appchain and will be migrated fully to Kusama as a parachain.
+The following is the architecture that has been deployed on Octopus Network as an appchain and will be deployed fully to Kusama as a parachain.
 
 ![](https://images.squarespace-cdn.com/content/v1/60b2163ddfad756d1d521252/1623264107593-ICJRAFRBW8KPAF614D4T/Tech+Stack-01.jpg?format=1000w)
 
@@ -117,9 +120,9 @@ Myriad solves the problem where social media has become too controlled by big co
 The core team members of Myriad Systems consists of professional blockchain consultants with 6 years of experience building and designing blockchain solutions at Blocksphere Indonesia and BlockchainZoo. Some of the team members (Gilang, Serafica, Irman, Abdul Hakim, and Lydia) hold the Certified Blockchain Professional certification from EC-Council. Irman, Lydia, Neka, Alvin, and Ruben have over 8 years of programming experience, and Abdul Hakim have 3 years of RUST experience. Gilang is an entrepreneur, blockchain developer, researcher, teacher, mentor, with over 12 years of experience, and has a reputable influence in blockchain development communities in Indonesia.
 
 Some interesting projects the team has been involved includes:
-- **[Debio Network](https://www.debio.network/):** Anonymous-first blockchain for medical and bioinformatics services and data
+- **[Debio Network](https://www.debio.network/):** anonymous-first blockchain for medical and bioinformatics services and data
 - **[Realitychain](https://www.realitychain.io/):** a multichain metaverse-as-a-service
-- **[Nester City](https://www.nester.city/):** a multichain metaverse-as-a-service
+- **[Nester City](https://www.nester.city/):** an arcitect-led NFT/metaverse project solving intellectual property and royalty issues of architecture designs
 
 ### Team Code Repos
 
@@ -172,19 +175,24 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Milestone 1 — Parachain setup
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 1 month
 - **FTE:**  3
 - **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | AGPL-3.0 license |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the parachain and migrate an Octopus appchain into the Rococo ecosystem.|
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the parachain and copy an Octopus appchain into the Rococo ecosystem.|
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Infrastructure Migration | We will fully migrate the current appchain of the Myriad Social web application running on Octopus Network to Polkadot ecosystem as a parachain in Rococo |
-| 2. | Code Migration and Refactoring | The modules we implement during this milestone will interact in such a way that the Myriad Social website works with the same functionality as the current one that lives as an appchain on Octopus Network|
-| 3. | Data Migration | We will fully migrate the existing data from the Myriad Social web application running on Octopus Network to Polkadot ecosystem|
+| 1. | Infrastructure Setup | We will fully replicate the current appchain of the Myriad Social web application running on Octopus Network to Polkadot ecosystem as a parachain in Rococo |
+| 2. | Code Refactoring | The modules we implement during this milestone will interact in such a way that the Myriad Social website works with the same functionality as the current one that lives as an appchain on Octopus Network|
+| 3. | Data Upgrade | We will fully upgrade the existing data from the Myriad Social web application running on Octopus Network to Polkadot ecosystem|
+
+Myriad Social will create a parachain on Polkadot while maintaining a foothold in the NEAR ecosystem.
+
+By maintaining the wallet selector for seamless switching between NEAR and Polkadot, we can expose our current community of NEAR users to Polkadot applications and their communities.
+
 
 ### Milestone 2 — Native Polkadot Currency and Wallet Integration
 
@@ -195,11 +203,20 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | AGPL-3.0 license |
-| **0b.** | Documentation | We will provide **documentation** of the app changes and **video guidance** of how to use the new Myriad Social user interface |
+| **0b.** | Documentation | We will provide **documentation** of the app changes and **video guidance** of how to utilize native DOT currency inside the Myriad Social application environment. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Native Currency Integration | We will enable DOT as a way of interacting inside our app for tipping and other upcoming features. |
+| 1. | Native Currency Integration | We will enable DOT as well as other tokens in Polkadot ecosystem as a way of interacting inside our app for tipping and other upcoming features. |
 | 2. | Wallet Integration | We will update the current wallet requirement to allow polkadot based wallet login into Myriad app.|
+
+Myriad Social will utilize DOT within its app environment and incorporate DOT tokenomics, adding to the utility of the DOT native token. 
+
+**Please note that Myriad Social has already enabled DOT as a tipping option within the Myriad application.*
+
+Our additional work product with the granting of this grant would allow us to develop and offer more features for the DOT ecosystem community, such as:
+ 
+- The ability for Myriad Users to unlock a Premium Post within Myriad using DOT.
+- The ability to utilize other Dotsama tokens within the Myriad app.
 
 ### Milestone 3 — UI Revamp and Enhancement
 
@@ -217,10 +234,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 2. | Back End: Improve Algorithm | We will update our algorithm to provide a better way to get trending timelines and hashtags so that user can discover current popular timelines/posts/tags, rather than those that have been in the spotlight for some time.|
 | 3. | Performance improvemment | We will do code refactoring and optimization in order to enhance app performance, ensuring a faster and smoother user experience.|
 
+Optimizing the Myriad Social User and Developer experience for Polkadot standards will allow all Polkadot Ecosystem Users and Developers to enjoy and integrate the Myriad appchain.
+
+
 ## Future Plans
 
-- Myriad social intends to promote the migration process to our community in Telegram, Discord, and other social platforms, as well as working with Octopus to publish the activity in their official channels
-- The team will continue working on the Phase 3 (NFT, Social Token, Chat, etc) in the migrated ecosystem on Kusama
+- Myriad social intends to promote the upgrade process to our community in Telegram, Discord, and other social platforms, as well as working with Octopus to publish the activity in their official channels
+- The team will continue working on the Phase 3 (NFT, Social Token, Chat, etc) in the newly deployed ecosystem on Kusama
 
 ## Referral Program (optional) :moneybag: 
 
@@ -229,6 +249,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** We got the email from a Parity representative to submit a grant proposal.
+**How did you hear about the Grants Program?**
+We received an email invitation from a Parity representative to submit a grant proposal.
 
-Previously Myriad Social have done a fund raising and token sale on the Octopus/Near protocol ecosystem, as well as having the financial contribution from a couple private investors. The token $MYRIA is live on Near ecosystem using their token standard and will be migrated into a substrate token.
+Myriad Social has performed fund raising activities, including a token sale on Skyward Finance in the NEAR Ecosystem, and has received financial backing from a couple private investors.
