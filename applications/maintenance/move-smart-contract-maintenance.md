@@ -11,7 +11,8 @@
 This Project based in [Pontem MVM pallet](https://github.com/pontem-network/pontem/tree/master/pallets/sp-mvm).[Pontem sp-move-vm](https://github.com/pontem-network/sp-move-vm.git).
 In order to  implement Move smart contract Pallet. 
 We will migrate api,table extension,u256 functions from **aptos** into it.
- 
+Our long-term goal is to implement the Substate Move smart contract development library like **openzeppelin** and IDE like  **remix**. We will improve and enhance the functions of the existing move smart contract pallet and move VM.
+
 ### Overview
 
 This project will primary enhance  move smart contract pallet :
@@ -64,8 +65,9 @@ None
 
 ### Team's experience
 
+Aric has 22 years of software development experience and 5 years working in Blockchain developer. Now working as a freelancer. He has 3 years Rust development experience and 5 years NodeJs experience.
 
-
+Zen has 22 years of software development experience and 1 years working in Blockchain developer. He has 1 years Rust development experience .
 ### Team Code Repos
 
 - https://github.com/aric0x02/
@@ -99,13 +101,13 @@ Our responsibilities:
 
 - **Total Estimated Duration:** 2 month
 - **Full-Time Equivalent (FTE):**   1 FTE
-- **Total Costs:**  20,000 USD. 
+- **Total Costs:**  25,000 USD. 
 
 ### Milestone 1  — Move smart contract json rpc
 
 - **Estimated duration:** 1 month
 - **FTE:**  1.5
-- **Costs:** 10,000 USD
+- **Costs:** 12,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -117,17 +119,20 @@ Our responsibilities:
 | 2. |'getResources' rpc method in Move Smart contract pallet rpc |  'GetResources' rpc method  will implement get move struct resource json format version rpc api. It return move struct resource json string bytes |
 | 3. | 'encodeSubmission' rpc method in Move Smart contract pallet rpc  | 'encodeSubmission' rpc method  will implement move module public script function call transaction data encoded in BCS , makes it possible to submit transaction to the API from languages that do not have library support for BCS |
 | 3. | 'getTableEntry' rpc method in Move Smart contract pallet rpc  | 'getTableEntry' rpc method  will implement move struct table item json string bytes.|
-| 4. | Substrate chain | Modules Move Smart contract of our custom chain will interact in such a way, allowing a user to get move module abi json string bytes and get move contract struct resource json string bytes and get bcs transaction data bytes of given move module public script function paremters and get table item json string bytes of given table handle and id. |
+| 4. | Substrate chain | Modules Move Smart contract of our custom chain will interact in such a way, allowing a user to get move module abi json string bytes and get move contract struct resource json string bytes and get bcs transaction data bytes of given move module public script function parameters and get table item json string bytes of given table handle and id. |
 | 5. | table-extension in sp-move-vm | We will implement the functionality of TableResolver trait and table write set code logic. |
 | 6. | table-extension in dove | We will add table-extension support in dove|
 | 7. | Add table.move in pont-lib | We will add table in pont-lib,and remove older config item in Move.toml in pont-lib|
 | 8. | Remove older config item in Move.toml in move-lib | We will remove older config item in Move.toml in move-lib|
+| 9. | BCS transaction builder Typescript SDK| We will implement BCS transaction builder typescript SDK.|
+| 10. | TodoList Move Smart Contract | We will implement todo list move smart contract that demonstrates the use of move table structure in move smart contract.|
+| 11. | TodoList React DApp | We will implement  todo list web DApp that demonstrates the use of move table structure in web app.|
 
 ### Milestone 2 — Move smart contract U256 Support
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1
-- **Costs:** 10,000 USD
+- **Costs:** 13,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -143,6 +148,9 @@ Our responsibilities:
 | 4. | Substrate chain | Modules Move Smart contract of our custom chain will interact in such a way, allowing a user to use U256 in move contract,submit include u256 bcs transaction. |
 | 5. | convert move file name and module name from pascal case to snake case in pont-lib | We will convert file name and module name from pascal case to snake case in pont-lib|
 | 6. | convert move file name and module name from pascal case to snake case in move-lib | We will convert file name and module name from pascal case to snake case in move-lib|
+| 9. | BCS transaction builder Python SDK| We will implement BCS transaction builder Python SDK|
+| 10. | U256/U32/U16 Move Smart Contract | We will implement U256 move smart contract that demonstrates the use of U256/U32/U16  in move smart contract. |
+| 11. | U256/U32/U16 Python Cli App | We will implement  U256/U32/U16 Python cli App that demonstrates the use of U256/U32/U16  in web app.|
 
 ## Future Plans
 
