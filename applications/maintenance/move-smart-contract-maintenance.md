@@ -119,7 +119,7 @@ Our responsibilities:
 | 2. |'getResources' rpc method in Move Smart contract pallet rpc |  'GetResources' rpc method  will implement get move struct resource json format version rpc api. It return move struct resource json string bytes |
 | 3. | 'encodeSubmission' rpc method in Move Smart contract pallet rpc  | 'encodeSubmission' rpc method  will implement move module public script function call transaction data encoded in BCS , makes it possible to submit transaction to the API from languages that do not have library support for BCS |
 | 3. | 'getTableEntry' rpc method in Move Smart contract pallet rpc  | 'getTableEntry' rpc method  will implement move struct table item json string bytes.|
-| 4. | Substrate chain | Modules Move Smart contract of our custom chain will interact in such a way, allowing a user to get move module abi json string bytes and get move contract struct resource json string bytes and get bcs transaction data bytes of given move module public script function parameters and get table item json string bytes of given table handle and id. |
+| 4. | Substrate local Move smart contract Node | Modules Move Smart contract of our local Move smart contract Node will interact in such a way, allowing a user to get move module abi json string bytes and get move contract struct resource json string bytes and get bcs transaction data bytes of given move module public script function parameters and get table item json string bytes of given table handle and id. |
 | 5. | table-extension in sp-move-vm | We will implement the functionality of TableResolver trait and table write set code logic. |
 | 6. | table-extension in dove | We will add table-extension support in dove|
 | 7. | Add table.move in pont-lib | We will add table in pont-lib,and remove older config item in Move.toml in pont-lib|
@@ -145,7 +145,7 @@ Our responsibilities:
 | 1. | U256,U32,U16 in Move Contract pallet RPC | We will add a U256 Type support in Move struct parser  |
 | 2. | U256,U32,U16 in sp-move-vm | We will add a U256 Type support in Move VM |
 | 3. | U256,U32,U16 in Move language library | We will add a U256 Type support in Move language library  |
-| 4. | Substrate chain | Modules Move Smart contract of our custom chain will interact in such a way, allowing a user to use U256 in move contract,submit include u256 bcs transaction. |
+| 4. | Substrate local Move smart contract Node | Modules Move Smart contract of our local Move smart contract Node will interact in such a way, allowing a user to use U256 in move contract,submit include u256 bcs transaction. |
 | 5. | convert move file name and module name from pascal case to snake case in pont-lib | We will convert file name and module name from pascal case to snake case in pont-lib|
 | 6. | convert move file name and module name from pascal case to snake case in move-lib | We will convert file name and module name from pascal case to snake case in move-lib|
 | 9. | BCS transaction builder Python SDK| We will implement BCS transaction builder Python SDK|
@@ -164,8 +164,6 @@ Our responsibilities:
 3.  Move contract UI 
 	- Implement deploying move contract modules or packages, testing contract public interface methods, viewing the on-chain status of structures in contracts, and viewing transaction execution events.
 4.  BCS Transaction Builder SDK
-	- Typescript SDK.
-	- Python SDK.
 	- Others based on BCS SDK.
 5.  Move vscode IDE Plugin/Move playground
 	- Committed to implement a simple, convenient editing, compiling, deploying, testing and development move smart contract environment.
