@@ -28,7 +28,7 @@ With DOTLY's intuitive interface, users can understand their account activities 
 
 ---
 
-<br>
+<br/>
 
 **Technical Scheme**
 
@@ -36,7 +36,7 @@ With DOTLY's intuitive interface, users can understand their account activities 
 
 ---
 
-<br>
+<br/>
 
 **API Scheme**
 
@@ -45,7 +45,7 @@ With DOTLY's intuitive interface, users can understand their account activities 
 ---
 
 
-<br>
+<br/>
 
 **Technical Stack**
 
@@ -76,8 +76,8 @@ DOTLY targets a diverse range of individuals within the Polkadot ecosystem, incl
 ### Contact
 
 - **Contact Name:** Mert Köklü
-- **Contact Email:** <kklumert@gmail.com>
-- **Website:** <https://github.com/justmert>
+- **Contact Email:** kklumert@gmail.com
+- **Website:** https://github.com/justmert
 
 ### Legal Structure
 
@@ -94,21 +94,21 @@ Develops ecosystem tools and applications with various tech stacks. AAVE, W3F, F
 
 ### Team Code Repos
 
-- <https://github.com/justmert/eco-flow-frontend> (PolkaFlow Frontend - <http://polkaflow.xyz/>)
-- <https://github.com/justmert/eco-flow-backend> (PolkaFlow Backend)
-- <https://github.com/justmert/aave-graphql-doc> (Aave GraphQL Documentation Website - <https://www.aaveql.org/> )
-- <https://github.com/justmert/aave-graphql-editor> (Aave GraphQL Editor Website)
-- <https://github.com/justmert/peer-cli> (Peer CLI: Swiss Army Knife for the IPFS)
-- <https://github.com/justmert/Aave-API-Telegram-Bot> (Aave API Telegram Bot)
-- <https://github.com/justmert/chainweb.py> (Kadena Chainweb Python Bindings)
+- https://github.com/justmert/eco-flow-frontend (PolkaFlow Frontend - http://polkaflow.xyz/)
+- https://github.com/justmert/eco-flow-backend (PolkaFlow Backend)
+- https://github.com/justmert/aave-graphql-doc (Aave GraphQL Documentation Website - https://www.aaveql.org/ )
+- https://github.com/justmert/aave-graphql-editor (Aave GraphQL Editor Website)
+- https://github.com/justmert/peer-cli (Peer CLI: Swiss Army Knife for the IPFS)
+- https://github.com/justmert/Aave-API-Telegram-Bot (Aave API Telegram Bot)
+- https://github.com/justmert/chainweb.py (Kadena Chainweb Python Bindings)
 
 **Github Account**
 
-- <https://github.com/justmert>
+- https://github.com/justmert
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/mertkoklu/>
+- https://www.linkedin.com/in/mertkoklu/
 
 ## Development Status :open_book:
 
