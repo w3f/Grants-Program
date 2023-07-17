@@ -12,43 +12,43 @@ The Polkadot Contract Wizard has successfully completed its initial phase, makin
 ​
 In the next phase, we plan to implement the following features:
 ​
-1.- Interaction with deployed contracts through the wizard's UI.
+1. Interaction with deployed contracts through the wizard's UI.
 ​
-2.- Interaction with smart contracts deployed by the user.
+2. Interaction with smart contracts deployed by the user.
 ​
-3.- Shareable Contract Interaction Links
+3. Shareable Contract Interaction Links
 ​
-4.- Support for multiple chains
+4. Support for multiple chains
 ​
 These enhancements will allow users to create, modify, deploy and interact with smart contracts on different parachains, making the Contract Wizard an indispensable tool for the community within the Polkadot and Kusama ecosystem.
 ​
 ### Project Details
 ​
-#### <a name="step1"/></a/> 1. Interact with deployed contracts
+#### <a name="step1"></a> 1. Interact with deployed contracts
 We will create a functionality that enables users to directly interact with their deployed contracts via the user interface of the wizard. This functionality will be generated dynamically according to the metadata of the contracts. With this, users will be able to conveniently and effectively manage their contracts and carry out interactions using the same tool.
 ​
-#### <a name="step2"/></a/> 2. Interaction with custom smart contracts
+#### <a name="step2"></a> 2. Interaction with custom smart contracts
 Our platform will offer the capability to interact with any contract of their choice. To utilize this feature, they simply need to provide the metadata, network, and address associated with the contract. Once this information is ready, the user interface will automatically generate a customized user-friendly layout for allowing people to easily interact with their custom contracts. 
 ​
-#### <a name="step3"/></a/> 3. Shareable Contract Interaction Links
+#### <a name="step3"></a> 3. Shareable Contract Interaction Links
 To enhance the user experience and encourage collaboration, we plan to implement a feature for shareable contract interaction links.
 Once a developer deploys a contract or uploads the metadata for interacting with it on our platform, they can generate a unique, shareable link. This link will contain all necessary information for interacting with the contract, essentially encapsulating the contract's ABI (Application Binary Interface) and its address on the blockchain.
 Users receiving this link can interact with the contract directly, without needing to reupload the metadata or know the contract's specifics. This feature not only simplifies the process of contract interaction but also fosters collaboration and sharing within the developer community.
 ​
-#### <a name="step4"/></a/> 4. Support for multiple chains 
+#### <a name="step4"></a> 4. Support for multiple chains 
 This tool will offer a feature that enables users to connect to parachains implementing the contracts pallet. We will provide a list of some of these parachains in Polkadot, Kusama, and Rococo networks. Additionally, users will have the option to connect to a network that is not listed by specifying the web socket.
 ​
 ### Tentative Mockups
 
-![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add_contract_1_720.png)
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add_contract_1_720.png?raw=true)
 
-![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add%20contract%202.png)
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add%20contract%202.png?raw=true)
 
-![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add%20contract%203.png)
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/add%20contract%203.png?raw=true)
 
-![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/networks%201.png)
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/networks%201.png?raw=true)
 
-![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/networks%202.png)
+![](https://github.com/protofire/assets/blob/c18c2adb8f40c692134bffbb4e92e0a78872744e/networks%202.png?raw=true)
 
 ### Ecosystem Fit
 ​
@@ -100,7 +100,7 @@ We are not only a dev shop company, but we create long term partnerships with th
 - https://github.com/protofire/blockchain-learning-path
 - https://github.com/protofire/omen-exchange
 - https://github.com/protofire/kyber-pool-master-proxy-contract
-​
+
 GitHub accounts of team members.
 - https://github.com/alongoni <Agustin Langoni/>
 - https://github.com/henrypalacios <Henry Palacios/>
@@ -137,7 +137,7 @@ Described in project details.
 - **FTE:** 2.5
 - **Costs:** 52500
   
-​
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
@@ -147,7 +147,7 @@ Described in project details.
 | 1. | Interaction with deployed contracts | The functionallity based on [step 1](#step1) of the Project Details section. |
 | 2. | Interaction with custom smart contracts | The functionality based on [step 2](#step2) of the Project Details section. |
 | 3. | Shareable Contract Interaction Links | The functionality corresponds to what's described on [step 3](#step3) of the Project Details section. |
-| 4. | Support for multiple chains  | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
+| 4. | Support for multiple chains | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
 
 ​
 ## Future Plans
@@ -155,12 +155,12 @@ Described in project details.
 At contractwizard.xyz team in protofire, our mission is to continue innovating and developing our platform to cater to the ever-changing needs of the smart contract community. We recognize the importance of providing our users with a comprehensive tool that enables them to manage all ink! smart contracts, including those they have created custom.
 ​
 As we continue to develop our platform, we understand the importance of building a community around it. We believe that by creating a community of users, we can facilitate the sharing of knowledge, contracts, and different approaches to problem-solving. Through our platform, users will have the ability to share their experiences, ask questions, and engage with others within the community. This will create an environment that fosters innovation and encourages collaboration, leading to the development of new and exciting ideas. Our hope is that our platform will serve as a hub for all things smart contract-related, where users can come together to learn, grow, and innovate.
-​
+
 **Custom contracts**
 - Add the possibility of creating custom contracts, not only with the modifiers but adding the ability to write code using the interface.
 - Compile the generated code and deploy it to different parachains.
 - Following the comments made on the [pull request](https://github.com/w3f/Grants-Program/pull/1413#pullrequestreview-1234970716), our approach will be based on the [ink-playground](https://github.com/paritytech/ink-playground) in order to integrate writing custom code and compiling it.
-​
+
 **Social Interaction**
 - Create an account to store information.
 - Save your created smart contracts.
@@ -169,4 +169,6 @@ As we continue to develop our platform, we understand the importance of building
 ​
 ## Additional Information :heavy_plus_sign:
 ​
-**How did you hear about the Grants Program?** Web3 Foundation Website
+**How did you hear about the Grants Program?** 
+
+Web3 Foundation Website
