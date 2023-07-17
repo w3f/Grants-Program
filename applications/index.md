@@ -47,6 +47,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [ZeroDAO](https://github.com/ZeroDAO)                       | [Melodot](./Melodot.md)                     | [GitHub](https://github.com/ZeroDAO)                 | ☐          |        ☐       |      ☐      |
 | [Starks](https://github.com/tur461)                       | [XCM tool for NFTs](./xNFT.md)                     | [GitHub](https://github.com/tur461)                 | ☐          |        ☐       |      ☐      |
 | [ChainSafe](https://chainsafe.io/)                                 | Polkadot Snap Maintenance   | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot)                               | ☐          |        ☐       |      ☐     |
+| [justmert](https://github.com/justmert)                                 | DOTLY: Revolutionizing Polkadot Account Statistics   | [GitHub](https://github.com/justmert/dotly)                               | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
