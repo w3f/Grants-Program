@@ -1,7 +1,7 @@
 # Decentral ML
 - **Team Name:** Livetree Community Ltd
 - **Payment Address:** 0xC852e933FBB719b607A96D73b033b3523Be04374 (Ethereum USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
