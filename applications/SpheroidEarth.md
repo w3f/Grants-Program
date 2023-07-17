@@ -338,6 +338,28 @@ Our long-term plan is to develop a toolset based on prior development that can b
 
 ![SPE-decetralized-schema.png](https://spe-demo.b-cdn.net/shared/w3f-grants/SPE-decetralized-schema.png)
 
+The exact architecture of the decentralized visual positioning platform is beyond the scope of this application. However, we have initial considerations and foundational ideas on the matter.
+
+We can decompose the platform into three blocks:
+
+- Data collection and computational pipeline to generate a search index and other valuable artifacts, such as location 3D models.
+- Storage of the search index and artifacts.
+- Querying the search index, which may also involve a computational pipeline for localization.
+
+Let's take a closer look at each block.
+
+The process of **Data collection and computational pipeline** involves off-chain interactions that require human resources. For example, an individual may need to use a smartphone to record footage of a local public park. Afterwards, the footage is processed using a powerful machine that runs a computer vision pipeline. However, the number of tasks and footage required is enormous, as entire living areas ultimately need to be covered.
+
+To address this challenge, we'd propose creating a decentralized marketplace for such gigs. This would involve individuals like Mira placing gigs for capturing footage of Central Park for X coins, and others like Alex completing the task. Mira would then approve the quality of the footage, and some automated consensus voting would be implemented to ensure fairness.
+
+The **Storage of the search index and artifacts** is well-suited for a decentralized architecture, such as IPFS-like storage. Several existing solutions can address this issue. It is worth noting that storing the search index and artifacts does not violate privacy because the data is abstract at this point, whether it is point clouds or keypoint descriptors.
+
+The community will benefit from having such an index because it can be used by anyone to perform visual positioning, considering that it is a fully open search database covering the entire planet. Additionally, it has the potential for a very resource-wise storage strategy. For example, some parts of the search index can simply be deprecated and then deleted when no one is willing to allocate coins to store that data, while useful parts remain.
+
+Finally, **Querying the search index** can also benefit from a decentralized approach. For instance, if the organizer of the "Icing Lady" festival aims to deliver a seamless AR and Metaverse experience, it is essential to allocate computational resources for computing search query results. Decentralized protocols make it easy to allocate compute nodes by charging an account a certain amount and specifying the location area from which queries should be processed.
+
+This is our current general vision for a decentralized approach, which may be refined and changed in the future. When designing our initial local-first computational pipeline, data formats, and tools, we consider their compatibility with future decentralized development.
+
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
