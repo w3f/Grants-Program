@@ -80,9 +80,22 @@ The project will consist of 8 microservices, each with a well-defined task.
    
 ![Screenshot_Insert](https://github.com/FedeC87p/TrackingChainGrant/assets/58514549/2e850a3b-1375-4889-a371-8593410b3282)
 
+### **Overview of the technology stack to be used**
+We are planning on using a combination of blockchain technology, cloud services, and front-end development tools to build a performant, secure, and user-friendly platform.
+
+**Blockchain Layer:**
+- **Smart Contracts**: Ink! and Solidity version for store the tracking values.
+
+**Backend Layer:**
+- **.Net**: For our backend services, we'll use C#
+- **Sql Server**: As for the database, we will be using Sql Server. Actually the system is designed to support almost all relational databases. https://learn.microsoft.com/en-us/ef/core/providers
+
+**Frontend Layer:**
+- **Asp.Net MVC**: These libraries will be used for interacting with the API from our frontend application.
+
 ### Ecosystem Fit
 
-Initially, the application will be compatible with EVM smart contracts (C# will be utilized with the Nethereum library https://nethereum.com/ for interaction with compatible EVM networks). Subsequently, I plan to develop a WASM version, integrating the SubstrateGaming https://github.com/SubstrateGaming library developed by Ajuna.
+I plan to develop a WASM version, integrating the SubstrateGaming https://github.com/SubstrateGaming library developed by Ajuna and EVM smart contracts (C# will be utilized with the Nethereum library https://nethereum.com/ for interaction with compatible EVM networks).
 
 To ensure user authenticity, all smart contracts and wallets created on various chains will integrate with Kilt, associating a digital identity with each user utilizing the smart contract to certify data ownership.
 
@@ -121,7 +134,7 @@ I'm working on a project for a censorship-resistant decentralized video platform
 
 ### Overview
 
-- **Total Estimated Duration:** 3 month
+- **Total Estimated Duration:** 4 month
 - **Full-Time Equivalent (FTE):**  1
 - **Total Costs:** 10.000 USD
 
@@ -144,14 +157,13 @@ I'm working on a project for a censorship-resistant decentralized video platform
 | 3. | Tx Generator Worker | The Tx Generator Worker Worker will used to take data from Pool and make a transaction on onchain via smartcontract |
 | 4. | Tx Watcher Worker | The Tx Generator Worker Worker will used to check all Tx waiting for finalized (or failed) status  |
 | 5. | API: Registry | Provide API for check the status of each Tracking request |
-| 6. | EVM Smart contracts | We will deliver a set of EVM smart contracts that will able to track the key values |
-| 7. | Web Application | Simple Asp.Net MVC pages for manage the insert tracking and views |
+| 6. | Web Application | Simple Asp.Net MVC pages for manage the insert tracking and views |
 
 ### Milestone 2 — Monitor and Recovery functionality
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 3.000 USD
+- **Costs:** 1.500 USD
 
 
 | Number | Deliverable | Specification |
@@ -166,6 +178,23 @@ I'm working on a project for a censorship-resistant decentralized video platform
 | 3. | Frontend Transaction Monitor | The monitor to watch all tracking request |
 | 4. | Frontend Registry | The frontend for user frindly graph of specific product tracked onchain |
 
+### Milestone 3 — Smart Contracts
+
+- **Estimated duration:** 1 month
+- **FTE:**  1
+- **Costs:** 1.500 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide a basic **tutorial** that explains how a user can deploy to easily the smartcontract and configure the access list. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains how to use. |
+| 1. | Ink! Smart contracts. | We will deliver a set of Ink! smart contracts that will able to track the key values |
+| 2. | EVM Smart contracts | We will deliver a set of EVM smart contracts that will able to track the key values |
+
 ## Future Plans
 
 - Present the demo to customers and onboard our first major customer.
@@ -173,7 +202,6 @@ I'm working on a project for a censorship-resistant decentralized video platform
 - Participate in events to be able to demonstrate how our demo works, also showing the portfolio of customers who have already chosen to use it.
 - Integration DID with Kilt
 - Continue development of other features
-  - Ink! Smart contracts.
   - Dynamic smart contract data instead of single key-value pairs
   - Support message bus (like RabbitMQ)
   - Use a dedicated database for each individual component
