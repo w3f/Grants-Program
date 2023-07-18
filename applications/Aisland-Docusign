@@ -5,97 +5,167 @@
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
-Please provide the following:
+Aisland Docusign allows to e-sign documents, exchange easily and store permanently on chain as legal proof. 
+POC/MVP is available at [https://docusign.aisland.io](https://docusign.aisland.io)  
+Faucet for testing: [https://testnet.aisland.io:8443](https://testnet.aisland.io:8443)  
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+Aisland Docusign (in short ADC) solves the problem of exchanging signed agreements and storing them permanently with legal validity.  The user can authenticate using his/her own wallet, create a blank document and edit, or clone a public template or upload a document.
+ADC keeps a copy of the different drafts till the first signature is applied.  
+A secret link is generated to request the signing to the counterpart.  
+The workflow provide visibility on the different status of the documents: Draft, Waiting (for signing), Completed (all parties have signed), Rejected (one party rejected it).  
+
+  
+There is no e-signing documents solution in the Polkadot/Kusama echo-system, instead there are all the layers to create something better of commercial services. In the web2 world, https://docusign.com declares about 200 million paying user and > 1 billion users who used their platform. 
+
+[Aisland Dao](https://aisland.io) is an experimental micro-nation with a small territory of 14000 square feet. Aisland is based on a deck barge floating in international waters since 22 December 2022 in the Arabian Gulf.  
+The current small territory can be increased with additional barges properly interconnected.  
+The main purpose of Aisland Dao is to give full sovereignty to the individual and a real place where the wider principles of freedom are  applied.  
+The decentralized e-signing of documents is one of the many tools that every free and sovereign person should have the right to use.  
+
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+The current MVP available at [https://docusign.aisland.io](https://docusign.aisland.io) has a set of basic features:  
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+- Dashboard to manage the workflow
+- Create/Edit a document on-line using the block editor (editor.js).  
+- Clone a public Template and Edit.  
+- Upload a document in different formats.
+- Sign the document.
+- Generate unique link to allow the signing of the counterpart.
+- View on-line the documents
+- Delete the document in drafts
+- Rejects the signature on proposed documents for signing.
+Here the workflow:
+![Workflow](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-workflow.png)
+
+Here a few screenshots:
+![Dashboard](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-dashboard.png)  
+![Operations](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-operations.png)  
+![Blank Document](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-blankdocument.png)
+![Signing](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signing.png)  
 
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+Technology Stack:
+- The blockhain side is based on a custom pallet named [docusign](https://github.com/aisland-dao/aisland-node/tree/main/pallets/docusign).  
+
+- The [Dapp](https://github.com/aisland-dao/docusign) is built on HTML,CSS and vanilla javascript for the client side. It's built with Javascript/Nodejs for the Server component. It's working with Polkdato Extension and Subwallet.
+
+Requirements:  
+- Nodejs  
+- Mariadb Server  
+  
+The solution uses a local mariadb database for the workflow management and stores/retrieve on chain the signatures and the hash of the documents.  
+
+
+### Details of the Proposal
+We wish to take the current POC/MVP to production ready with important features that make the solution comparable to the best web2 services and here is the deliverables list:
+
+** 1) Standard Signature Image ** Manage the setting of the standard signature image, selecting from multiple auto-generated signatures or one uploaded. The Dapp shwillould auto-generate multiple style of signatures starting from a text using cursive fonts.  
+We will use a set of 50 cursive fonts to generate the signature image. A considerable selection of free cursive fonts are available here: [https://www.1001fonts.com/cursive+signature-fonts.html](https://www.1001fonts.com/cursive+signature-fonts.html).  
+The upload of a scanned image in png/jpg/webp or svg format is not a challenge.  
+Here an example from Docusign:
+![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signatureexample.png)  
+
+
+
+** 2) Signature Marker ** We will create a plugin for editor.js to mark the place where the signatures shall be placed. Once the document is signed, the selected signatures will be shown in the document.
+[https://editorjs.io/](https://editorjs.io/) is a free block editor for javascript that is composable by plugins. We used such editor in the current MVP. It save the document in a clean json format.
+
+
+** 3) Encryption ** For enhanced privacy the documents and other metadata shall be encrypted as follows:
+- The files will be encrypted using AES256-GCM and Chacha20 as symmetric cyphers in cascade and a random private key of 512 bit.  The symmetric private key will be encrypted by the asymmetric public key of the user. The user will be able to decrypt using his/her own asymmetric public key.
+- The documents to be signed from the counter part shall be encrypted with a random private key and the same shall be encrypted with the public key of the recipient. The recipient will be able to decrypt using his/her own asymmetric private key.
+- The Dapp must manage the settings of the initial asymmetric public/private keys.
+- The open source library that we will use is libsodium which offers the necessary primitives:  
+[https://doc.libsodium.org/](https://doc.libsodium.org/)  
+[https://www.npmjs.com/package/libsodium](https://www.npmjs.com/package/libsodium)  
+
+** 4) Documents Storage ** We will optionally store on-chain the signed contracts. We wish to give immutability of whole document even if it's little bit more expensive. Actually the MVP is storing only the hash of the document and keeping the document in the server storage. The pallet will be modified to accept the storage of an encrypted binary blob with some limitations in size to be configured in the pallet itself.
+We will add 2 functions to the current pallet: newBlob(id,documentdata), deleteBlob(id)
+
+** 5) Pdf Output ** The dapp should be able to generate a contract with the visual signatures and a QR code to verify on chain the validity of the contract. This is a legal requirement to let use the document in court.
+
+** 6) Link Sharing ** The dapp shall allow the sharing of the signing link by: email, Matrix, Whatsapp, and Telegram.
+
+** 7) Multiple Counter Parties ** The current MVP does support only 2 signing parties, we will refactor the Dapp to manage multiple signing parties.
+
+** 8) Enhanced Templates ** The MVP allows to select a template from a system list. We wish to allow the user to create his/her own private templates. 
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
 - Where and how does your project fit into the ecosystem?
+The proposal creates a general purpose utility for the wide public in using Substrate technology.
+
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+Any web3 user or legala entity have to exchange contracts during the course of life.
 - What need(s) does your project meet?
+E-signing of documents, permanently storage and easy exchange of the same.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+We have not been able to find something similar in the echo system.
   - If so, how is your project different?
   - If not, are there similar projects in related ecosystems?
+  [https://www.sign.co/](https://www.sign.co/)
+  [https://www.jsign.com](https://www.jsign.com)
+  [https://www.cygnature.io](https://www.cygnature.io)
+  [https://www.corposign.net/](https://www.corposign.net/)
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
 - Name of team leader
+Achille Landi
 - Names of team members
+Samuele Landi
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Achille Landi
+- **Contact Email:** admin@aisland.io
+- **Website:** [https://aisland.io](https://aisland.io)
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Arabian Gulf, drifting up and down with the tide.
+- **Registered Legal Entity:** Aisland Dao
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+Achille Landi is the lead developer of Aisland with experience in Rust and Javascript
+Samuele Landi is a long term developer for secure communications and web3 projects.
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- [https://github.com/aisland-dao/aisland-node](https://github.com/aisland-dao/aisland-node)
+- [https://github.com/aisland-dao/dex](https://github.com/aisland-dao/dex)
+- [https://github.com/aisland-dao/docusign](https://github.com/aisland-dao/docusign)
+- [https://github.com/aisland-dao/aisland-store-web-server](https://github.com/aisland-dao/aisland-store-web-server) (private repo we can give access)
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/poseidon-aisland
+- https://github.com/samuelelandi
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- not available
+- not available
 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+We have already developed a POC/MVP with a dedicate pallet on Substrate:  
+[https://github.com/aisland-dao/aisland-node/tree/main/pallets/docusign](https://github.com/aisland-dao/aisland-node/tree/main/pallets/docusign)  
+  
+and a Dapp:  
+[https://github.com/aisland-dao/docusign](https://github.com/aisland-dao/docusign)  
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+An live demo is available at:  
+[https://docusign.aisland.io](https://docusign.aisland.io)  
+
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -107,61 +177,60 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):**  1.5 FTE
+- **Total Costs:** 9000 USD
 
 ### Milestone 1 Example — Basic functionality
 
 - **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:**  1.5
+- **Costs:** 4500 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to start the node and run the Dapp |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. The language will be English and it will be published also in our media channels |
+| 1. | Substrate module: pallet-docusign | We will implement the current pallet-docusign to allow the storage on chain of the documents within certain size limits |
+| 2. | Dapp Feature: Standard Signature Image |We will add the new feature to manage the standard signatures as described at the point 1 of "Details of the Proposal"|
+| 3. | Dapp Feature: Signature Marker | We will create a plugin for editor.js to allow the placing of the signature marker as described at the point 2 of "Details of the Proposal"|
+| 4. | Dapp Feature: Encryption | We will implement the encryption as described at the point 3 of "Details of the Proposal"|
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 - Additional Features
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-...
+- **FTE:**  1.5
+- **Costs:** 4500 USD
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to start the node and run the Dapp |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. The language will be English and it will be published also in our media channels |
+| 1. | Dapp Feature: Pdf Output|We will add the new feature to generate a pdf output as described at the point 5 of "Details of the Proposal"|
+| 2. | Dapp Feature: Link Sharing  | We will add a function to share the link for signature as described at the point 6 of "Details of the Proposal"|
+| 3. | Dapp Feature: Multiple Counter Parties | We will reafactor the Dapp to allow the signature from different parties as described at the point 7 of "Details of the Proposal"|
+| 4. | Dapp Feature: Enhanced Templates | We will add the feature to create/manage private templates into the Dapp as described at the point 8 of "Details of the Proposal"|
 
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+- We will add the possibility to make escrow payments in the execution of the agreements signed.  
+- We will add a decentralized arbitrate service in case of litigatio of the signed agreement.  
+- We wil promote the docusign within the Web3 and Seasteader community. Aisland has signed an agreement with Liberland to develop a bigger floating city from this outpost and we will push to let become docusign the standard method to sign agreements: [https://liberland.org/en/news/434-memorandum-of-understanding-with-aisland](https://liberland.org/en/news/434-memorandum-of-understanding-with-aisland)  
+Aisland Dao will develop other Dapp to help the transiction from web2 to web3.  
 
 ## Referral Program (optional) :moneybag: 
 
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+Not applicable
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+**How did you hear about the Grants Program?** Web3 Foundation Website
