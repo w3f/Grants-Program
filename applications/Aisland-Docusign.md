@@ -66,14 +66,14 @@ We wish to take the current POC/MVP to production ready with important features 
 ** 1) Standard Signature Image ** Manage the setting of the standard signature image, selecting from multiple auto-generated signatures or one uploaded. The Dapp shwillould auto-generate multiple style of signatures starting from a text using cursive fonts.  
 We will use a set of 50 cursive fonts to generate the signature image. A considerable selection of free cursive fonts are available here: [https://www.1001fonts.com/cursive+signature-fonts.html](https://www.1001fonts.com/cursive+signature-fonts.html).  
 The upload of a scanned image in png/jpg/webp or svg format is not a challenge.  
-Here an example from Docusign:
+Here an example from Docusign.com:
 ![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-standardsignatures.png)  
 
 
 
 ** 2) Signature Marker ** We will create a plugin for editor.js to mark the place where the signatures shall be placed. Once the document is signed, the selected signatures will be shown in the document.
 [https://editorjs.io/](https://editorjs.io/) is a free block editor for javascript that is composable by plugins. We used such editor in the current MVP. It save the document in a clean json format.  
-Here an example:  
+Here an example from Docusign.com:  
 ![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signatureexample.png)  
 
 
@@ -172,12 +172,6 @@ An live demo is available at:
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
 - **Total Estimated Duration:** 2 months
@@ -225,7 +219,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 ## Future Plans
 
 - We will add the possibility to make escrow payments in the execution of the agreements signed.  
-- We will add a decentralized arbitrate service in case of litigatio of the signed agreement.  
+- We will add a decentralized arbitration service in case of litigations to be settled.
 - We wil promote the docusign within the Web3 and Seasteader community. Aisland has signed an agreement with Liberland to develop a bigger floating city from this outpost and we will push to let become docusign the standard method to sign agreements: [https://liberland.org/en/news/434-memorandum-of-understanding-with-aisland](https://liberland.org/en/news/434-memorandum-of-understanding-with-aisland)  
 Aisland Dao will develop other Dapp to help the transiction from web2 to web3.  
 
