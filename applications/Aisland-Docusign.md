@@ -63,7 +63,7 @@ The solution uses a local mariadb database for the workflow management and store
 ### Details of the Proposal
 We wish to take the current POC/MVP to production ready with important features that make the solution comparable to the best web2 services and here is the deliverables list:
 
-** 1) Standard Signature Image ** Manage the setting of the standard signature image, selecting from multiple auto-generated signatures or one uploaded. The Dapp shwillould auto-generate multiple style of signatures starting from a text using cursive fonts.  
+1) Standard Signature Image - Manage the setting of the standard signature image, selecting from multiple auto-generated signatures or one uploaded. The Dapp shwillould auto-generate multiple style of signatures starting from a text using cursive fonts.  
 We will use a set of 50 cursive fonts to generate the signature image. A considerable selection of free cursive fonts are available here: [https://www.1001fonts.com/cursive+signature-fonts.html](https://www.1001fonts.com/cursive+signature-fonts.html).  
 The upload of a scanned image in png/jpg/webp or svg format is not a challenge.  
 Here an example from Docusign.com:
@@ -71,14 +71,13 @@ Here an example from Docusign.com:
 
 
 
-** 2) Signature Marker ** We will create a plugin for editor.js to mark the place where the signatures shall be placed. Once the document is signed, the selected signatures will be shown in the document.
+2) Signature Marker - We will create a plugin for editor.js to mark the place where the signatures shall be placed. Once the document is signed, the selected signatures will be shown in the document.
 [https://editorjs.io/](https://editorjs.io/) is a free block editor for javascript that is composable by plugins. We used such editor in the current MVP. It save the document in a clean json format.  
 Here an example from Docusign.com:  
 ![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signatureexample.png)  
 
 
-
-** 3) Encryption ** For enhanced privacy the documents and other metadata shall be encrypted as follows:
+3) Encryption - For enhanced privacy the documents and other metadata shall be encrypted as follows:
 - The files will be encrypted using AES256-GCM and Chacha20 as symmetric cyphers in cascade and a random private key of 512 bit.  The symmetric private key will be encrypted by the asymmetric public key of the user. The user will be able to decrypt using his/her own asymmetric public key.
 - The documents to be signed from the counter part shall be encrypted with a random private key and the same shall be encrypted with the public key of the recipient. The recipient will be able to decrypt using his/her own asymmetric private key.
 - The Dapp must manage the settings of the initial asymmetric public/private keys.
@@ -86,16 +85,16 @@ Here an example from Docusign.com:
 [https://doc.libsodium.org/](https://doc.libsodium.org/)  
 [https://www.npmjs.com/package/libsodium](https://www.npmjs.com/package/libsodium)  
 
-** 4) Documents Storage ** We will optionally store on-chain the signed contracts. We wish to give immutability of whole document even if it's little bit more expensive. Actually the MVP is storing only the hash of the document and keeping the document in the server storage. The pallet will be modified to accept the storage of an encrypted binary blob with some limitations in size to be configured in the pallet itself.
-We will add 2 functions to the current pallet: newBlob(id,documentdata), deleteBlob(id)
+4) Documents Storage - We will optionally store on-chain the signed contracts. We wish to give immutability of whole document even if it's little bit more expensive. Actually the MVP is storing only the hash of the document and keeping the document in the server storage. The pallet will be modified to accept the storage of an encrypted binary blob with some limitations in size to be configured in the pallet itself.
+We will add 2 functions to the current pallet: newBlob(id,documentdata), deleteBlob(id)  
 
-** 5) Pdf Output ** The dapp should be able to generate a contract with the visual signatures and a QR code to verify on chain the validity of the contract. This is a legal requirement to let use the document in court.
-
-** 6) Link Sharing ** The dapp shall allow the sharing of the signing link by: email, Matrix, Whatsapp, and Telegram.
-
-** 7) Multiple Counter Parties ** The current MVP does support only 2 signing parties, we will refactor the Dapp to manage multiple signing parties.
-
-** 8) Enhanced Templates ** The MVP allows to select a template from a system list. We wish to allow the user to create his/her own private templates. 
+5) Pdf Output - The dapp should be able to generate a contract with the visual signatures and a QR code to verify on chain the validity of the contract. This is a legal requirement to let use the document in court.  
+  
+6) Link Sharing - The dapp shall allow the sharing of the signing link by: email, Matrix, Whatsapp, and Telegram.  
+  
+7) Multiple Counter Parties - The current MVP does support only 2 signing parties, we will refactor the Dapp to manage multiple signing parties.  
+  
+8) Enhanced Templates - The MVP allows to select a template from a system list. We wish to allow the user to create his/her own private templates.  
 
 ### Ecosystem Fit
 
