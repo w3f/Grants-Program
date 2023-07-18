@@ -22,7 +22,7 @@ A project goal is to store Agreements Proofs on Polkadot chain using Ink! smart 
 Deliveries include DAOsign platform with an ability to:
 - create agreements including generating using ChatGPT
 - add and remove signers and observers of different levels of anonymity
-- allow signing the documents with further storing of signature proofs on Polkadot blockchain.
+- allow signing the documents with further storing of signature proofs on Astar testnet blockchain.
 
 
 **Core DAOsign components:**
@@ -32,12 +32,13 @@ Deliveries include DAOsign platform with an ability to:
 
 **Technical design:**
 
-Proofs are implemented in the EIP-712 standard and adjusted to !ink ecosystem. Signed using user’s !ink private key. We are supporting this standard in Ink! smart contract to be able to verify the signature. Also, we are implementing an adjusted EIP-2771 standard to allow Agreement Signers gas-free delegation to publish proof on-chain.712 standard will be used for for proofs, adaptation means that user data is converted to a binary bit; we use its hash (serialization vs deserialization)
-And 271 standard - to securely send the proof and receive it.
-So that EVM standards will be adapted to !ink ecosystem requirements. 
+Proofs are implemented in the EIP-712 standard and adjusted to ink! ecosystem. Proofs digned using user’s EVM private key. 
+We are supporting this standard in Ink! smart contract to be able to verify the signature in ink! smart contract. 
+Also, we are implementing an adjusted EIP-2771 standard to allow Agreement Signers gas-free delegation to publish proof on-chain.
+EIP-712 standard will be used for proofs, adaptation means that user data is converted to a binary bit; we use its hash (serialization vs deserialization)
+And EIP-2771 standard - to securely send the proof and receive it.
+So that EVM standards will be adapted to ink! ecosystem requirements. 
 Example (interfaces) of the smart contracts can be found here https://github.com/DAOsign/daosign-smart-contracts  (Solidity version).
-
-
 
 
 Detailed storyboard can be found here: https://consideritdone.storiesonboard.com/m/PUCLDvQC4kKwoRJ8kbm3MA .
