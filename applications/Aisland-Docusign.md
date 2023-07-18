@@ -67,12 +67,15 @@ We wish to take the current POC/MVP to production ready with important features 
 We will use a set of 50 cursive fonts to generate the signature image. A considerable selection of free cursive fonts are available here: [https://www.1001fonts.com/cursive+signature-fonts.html](https://www.1001fonts.com/cursive+signature-fonts.html).  
 The upload of a scanned image in png/jpg/webp or svg format is not a challenge.  
 Here an example from Docusign:
-![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signatureexample.png)  
+![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-standardsignatures.png)  
 
 
 
 ** 2) Signature Marker ** We will create a plugin for editor.js to mark the place where the signatures shall be placed. Once the document is signed, the selected signatures will be shown in the document.
-[https://editorjs.io/](https://editorjs.io/) is a free block editor for javascript that is composable by plugins. We used such editor in the current MVP. It save the document in a clean json format.
+[https://editorjs.io/](https://editorjs.io/) is a free block editor for javascript that is composable by plugins. We used such editor in the current MVP. It save the document in a clean json format.  
+Here an example:  
+![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signatureexample.png)  
+
 
 
 ** 3) Encryption ** For enhanced privacy the documents and other metadata shall be encrypted as follows:
@@ -187,8 +190,6 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **FTE:**  1.5
 - **Costs:** 4500 USD
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
@@ -207,6 +208,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Estimated Duration:** 1 month
 - **FTE:**  1.5
 - **Costs:** 4500 USD
+    
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
