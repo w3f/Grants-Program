@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-Liisa operates as a cross-chain NFT data analytics platform, engineered to empower collectors and investors in making proficient, data-driven decisions. 
+Liisa operates as a multi-chain NFT data analytics platform, engineered to empower collectors and investors in making proficient, data-driven decisions. 
 
 This project consists of the development of a custom-built portfolio tracker, explicitly devised for NFTs within the Polkadot blockchain network, catering to the specificities of NFT investment strategies.
 
