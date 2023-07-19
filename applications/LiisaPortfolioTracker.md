@@ -143,7 +143,7 @@ For further reference
 
 ## Development Status :open_book:
 
-Our team has brought the first iteration of the portfolio tracker mockups to fruition (please see the them below).
+Our team has brought the first iteration of the portfolio tracker mockups to fruition (please see them below in the Mockups section).
 
 In a proactive endeavor to understand and address the data-related challenges of building the MVP, we have exchanged several emails and engaged in meeting with the Parity team. Through these communications, we ensured technical feasibility of the proposed approach and refined the data approach and mockups to better match the ecosystems' needs.
 
