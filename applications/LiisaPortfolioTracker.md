@@ -1,172 +1,267 @@
-# Name of your Project
+# Polkadot NFT Portfolio Tracker by Liisa - MVP 
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-- **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **Team Name:** Liisa
+- **Payment Address:** 0x096a685Bfd75c3998CFC4c70177e17ee6b582B0A
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
+Liisa operates as a cross-chain NFT data analytics platform, engineered to empower collectors and investors in making proficient, data-driven decisions. 
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+This project consists of the development of a custom-built portfolio tracker, explicitly devised for NFTs within the Polkadot blockchain network, catering to the specificities of NFT investment strategies.
 
-### Overview
+Within the Substrate/Kusama/Polkadot/Web 3 ecosystem, Liisa intends to emerge as a central supplier of granular NFT analytics, distinguishing itself with a user interface tailored to meet the specific requirements of NFT investors.
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
-
-### Project Details
-
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+The portfolio tracker is designed to accommodate the diverse needs of a broad user base, ranging from active traders to long-term investors and collectors. It pioneers innovative metrics that drive the NFT infrastructure forward, thereby promoting a robust and data-enriched investment environment.
 
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+
+
+### Architecture
+
+![Architecture](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/354deb7d-b6bf-4dcf-a211-e138f932d2ca)
+
+
+
+### Technologies
+
+#### 1) Node.js
+
+Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. It allows developers to use JavaScript to write command line tools and for server-side scripting, enabling the development of fast and scalable network applications. Node.js is event-driven and non-blocking, which makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
+Within the context of the project, the following packages are used:
+  - Axios: Axios is an npm package for making HTTP requests in Node.js, simplifying API calls.
+  - pg: The "pg" package connects Node.js applications to PostgreSQL databases, enabling efficient data retrieval and manipulation.
+  - Polkadot.js: Polkadot.js simplifies connecting and interacting with the Polkadot ecosystem
+
+#### 2) Bubble.io
+
+Bubble.io is a visual development platform designed to democratize the process of creating web applications. It enables users, even without traditional coding skills, to build complex web applications through a user-friendly interface. Its features include visual programming capabilities, database management tools, a design editor, API integration, and hosting solutions. Essentially, Bubble.io is part of the no-code movement, which allows rapid digital product creation and innovation without requiring deep technical expertise.
+
+### Components
+
+#### 1) Data Sources (Subscan)
+
+Our main data source is Subscan API, providing comprehensive event data and metadata related to NFTs in the Polkadot ecosystem. Within the context of the MVP, we have selected the following EVM-compatible chains with relevant NFT activity: Astar, Basilisk, Efinity, Moonbeam, and Unique Network.
+
+#### 2) Data Enrichment
+
+Our backend serves as a vital nexus between supported blockchain protocols and valuable metrics we generate for user wallets and NFT collections. It involves three key activities: crafting and executing API queries, initiating timed triggers, and developing computational algorithms for metrics computation. We create and execute precise API queries to extract event data from Subscan for protocols such as Astar, Basilisk, Efinity, Moonbeam, and Unique Network. This enables the continuous refresh of our system with recent blockchain events pertinent to the monitored NFT collections and user wallets. 
+
+Our backend employs timed triggers to initiate queries to Subscan at predefined intervals, ensuring we maintain an up-to-date snapshot of relevant blockchain events. Incoming event data, acquired via timed or event-driven triggers, is processed using specially designed computational algorithms. These algorithms generate key performance indicators (KPIs) and metrics for both user wallets and NFT collections, capturing the most essential insights. The calculated metrics are persistently stored in our database, ensuring their continuous availability for subsequent retrieval, analysis, and the provision of comprehensive insights into users' wallets and NFT collections.
+
+All the code for data enrichment will be open-source so that more developers in the ecosystem can leverage our processes for retrieving NFT data from subscan API and wallets, as well as creating NFT metrics.
+
+#### 3) Database 
+
+We will be utilizing PostgreSQL as our database management system to store and manage all data. PostgreSQL is an advanced open-source relational database management system that offers a broad range of powerful features. As our choice of infrastructure provider, we will be deploying PostgreSQL on Amazon Web Services (AWS).
+
+#### 4) Frontend
+
+Within the context of the MVP, we'll utilize bubble.io for frontend development to accelerate development speed and iterate quickly. This approach will help us create a functional product that meets user needs faster. Upon achieving a working product, at a later stage we will transition to react.js for enhanced flexibility and performance.
+
+#### 5) Bubble.io plug-ins
+
+We will develop open-source plug-ins for Bubble.io, enabling connections to the selected wallets: Subwallet, Parity signer, Polkadot-js, Subsquid, Fearless wallet, Nova Wallet, Talisman. Built using Node.js, these plug-ins will allow for the users to log-in to the platform using their wallets, and will facilitate the retrieval of information about the NFTs owned by the user to compute the portfolio metrics. By open-sourcing these plug-ins, we intend to improve access from the growing no-code community to the Polkadot ecosystem.
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+After evaluating existing NFT portfolio tracking solutions in the Polkadot ecosystem, we have found that some platforms have added NFT functionality to their Token and DeFi-focused offerings. However, our specialized solution is designed specifically to cater to the unique needs of NFT investors. By focusing solely on NFTs, we provide a platform dedicated to optimizing the tracking, analysis, and management of NFT portfolios.
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+In the future, we plan to develop collaborations with other NFT-focused parachains (e.g. Unique Network) and NFT marketplaces, to help further expand functionality of the Liisa portfolio tracker (e.g. by integrating off-chain data) and support their offerings by providing custom-made integrations with our analytical products.
+
+#### Similar projects:
+- Nansen Portfolio
+- De.Fi
+- Coinstats
+
+#### What makes us different is:
+- User experience designed specifically for NFT investors and collectors
+- Innovative metrics and KPIs not found elsewhere
+- Multi-chain approach, breaking silos within the NFT ecosystem
+- Established community on Discord of 1000+ NFT investors with feedback and suggestions for product improvement
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Bernardo Silva: Team Leader, Co-Founder & CEO at Liisa
+- Paulo Peixoto: Lead Developer, Full-stack developer, Co-Founder & CTO at Liisa
+- Kerim Caner Tümkaya: Backend developer, Data Engineer at Liisa
+- Guilherme Leitão: Backend developer, Junior Developer at Liisa
+- Alexandre Collignon: UX/UI designer, Head of Marketing & Community at Liisa
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Bernardo Silva
+- **Contact Email:** bernardo@liisa.io
+- **Website:** www.liisa.io
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Rua José Henriques Coelho 3, 6C, 2770-103, Paço de Arcos, Lisboa, Portugal
+- **Registered Legal Entity:** Vírgula Pragmática LDA, VAT: PT517151006
+
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
+#### Bernardo 
+As Liisa's co-founder and CEO, Bernardo Silva leads a pioneering company leveraging big data for insightful NFT investor decisions. His leadership roots back to Deloitte, managing business consultations and cost-saving initiatives. His strategic role in an EU Digital Transformation Project and the launch of Portugal's largest Energy provider's loyalty program spotlight his tech project management prowess. His time at IKEA Portugal birthed a robust in-store capacity planning framework based on predictive analytics. An Industrial and Civil Engineering graduate, his focus lies in data-driven decision making in Web 3, with a proven ability in steering innovative projects and entrepreneurial initiatives.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+#### Paulo
+Paulo Peixoto, Co-founder and CTO of Liisa, is an experienced technical leader with a rich background in full-stack development and specialized proficiency in blockchain data APIs and stream APIs, having experience with EVM NFT data. His expertise has been instrumental in developing Liisa's NFT trading analytics platform, embedding AI into backend processes and extracting and analyzing both real-time and historical NFT data. Formerly at Rainplan, he spearheaded a team to design a unique platform connecting real estate owners with government incentives. His further technical acumen was demonstrated at Updone as a co-founder, where he designed and implemented a custom-made CRM. In his roles at Loxo, Remi, Hardcopy, and MyMedCard, Paulo improved app performance, amplified system analytics, and led solution development. With a CertHE in Banking, Corporate Finance, and Securities from the University of Bedfordshire, Paulo skillfully combines technical mastery with financial knowledge.
+
+#### Kerim
+Kerim Caner Tümkaya is an accomplished Senior Data Scientist at Liisa, specializing in leveraging AI models to extract valuable insights from NFT data. With a profound mastery of data science and a diverse technological skill set, Kerim excels in machine learning, data analysis, and Python programming. Additionally, he possesses advanced cloud engineering skills, effectively utilizing platforms such as Cloudera, GCP, and AWS. Throughout his career, Kerim has made significant contributions in the field of data science. Notably, at Hepsiburada, he applied his expertise in demand and risk modeling, while at Allianz Türkiye, he developed machine learning projects for the banking sector. Kerim's repertoire includes proficiency in Pyspark, Hive, Impala, SQL, R, and GCP, enabling him to tackle complex challenges across various industries.
+
+#### Guilherme
+Guilherme, Junior Backend Developer at Liisa, is a distinguished Computer Science graduate from Instituto Superior Técnico in Lisbon. He stands out with his exceptional academic performance, particularly in areas such as Object-Oriented Programming, Machine Learning, and Distributed Systems. His notable projects include implementing a multi-connection File System, a user-friendly crypto mobile app, and an online currency distributed system, demonstrating profound skills in Python, Java, and C/C++. His contribution to the development of Liisa's NFT trading analytics platform underpins his extensive expertise. Guilherme's versatility, combined with his commitment to every phase of project execution, emphasizes his exceptional technical competence.
+
+#### Alexandre  
+Alexandre Collignon is a professional with expertise in product design and experience in the NFT market. As the Head of Marketing and Community at Liisa, he engages with NFT traders daily and understands their needs and preferences. With a background in digital marketing and experience as a Digital and Technology Consultant at EY and Accenture, Alexandre brings a strategic and innovative approach to product design. He has led the development of AI-enabled platforms, resulting in efficiency gains for major industry players. Alexandre's past experiences in front-end development enhance his ability to create intuitive and engaging designs. With his understanding of the NFT market and experience as a trader, Alexandre aims to elevate Liisa's product design and deliver value to the community.
+
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+Source codes will reside in
+- https://github.com/LiisaNFT
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+For further reference
+- https://github.com/paulogustavopeixoto
+- https://github.com/guilhermeleitao2002
+- https://github.com/kerimtumkaya
+- https://github.com/alexcollignon
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+### Team LinkedIn Profiles 
 
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
-
+- https://www.linkedin.com/in/bernardo-silva-631149161/
+- https://www.linkedin.com/in/pauloassispeixoto/
+- https://www.linkedin.com/in/kerim-caner-tumkaya/
+- https://www.linkedin.com/in/guilherme-leit%C3%A3o-47bb27192/
+- https://www.linkedin.com/in/alexandre-collignon/
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+Our team has brought the first iteration of the portfolio tracker mockups to fruition (please see the them below).
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+In a proactive endeavor to understand and address the data-related challenges of building the MVP, we have exchanged several emails and engaged in meeting with the Parity team. Through these communications, we ensured technical feasibility of the proposed approach and refined the data approach and mockups to better match the ecosystems' needs.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):**  2.25
+- **Total Costs:** 30,000 USDC
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — On-chain data collection, indexing and calculations
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 1.5 months
+- **FTE:**  2.5
+- **Costs:** 17,000 USDC
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+Number | Deliverable               | Specification
+------ | ------------------------- | ----------------------------------------------------------------------------------------------------------
+0a.    | License                   | Apache 2.0
+0b.    | Documentation             | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file
+0c.    | Testing Guide             | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide, we will describe how to run these tests
+0d.    | Docker                    | Provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
+1a.    | Subscan API calls         | Design and implement API queries to extract event data from the Subscan API for the following supported protocols: Astar, Basilisk, Efinity, Moonbeam, and Unique Network
+1b.    | Timed-Triggers            | Establish timed triggers to initiate queries to the Subscan API at predetermined intervals, subsequently refreshing the associated events database with the most recent data.
+1c.    | User-initiated Triggers   | Implement event-driven triggers that are activated upon user interactions with the application, specifically upon insertion of a wallet address. This will initiate Subscan API queries and subsequently update the associated events database with the retrieved data.
+2a.     | Computational algorithms | Design and implement computational algorithms that, upon activation of either event-driven or timed triggers and the consequent receipt of new event data, will produce key performance indicators (KPIs) and metrics for both user wallets and NFT collections. The calculated metrics will subsequently be stored persistently in the database for subsequent analysis and retrieval.
 
 
-### Milestone 2 Example — Additional features
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+### Milestone 2 — Portfolio tracker front-end implementation
 
-...
+- **Estimated Duration:** 1.5 month
+- **FTE:**  2.0
+- **Costs:** 13,000 USD
 
+| Number | Deliverable                    | Specification                                                                                                                                                                                                                                                |
+|-------:|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                        | Apache 2.0                                                                                                                                                                                                                                                  |
+| 0b.    | Documentation                  | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file                                                                                                                                                                  |
+| 0c.    | Testing Guide                  | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide, we will describe how to run these tests                                                                                                              |
+| 0d.    | Docker                         | Provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                        |
+| 0e.    | Article                        | Write a Medium article that explains the work done as part of the grant.                                                                                                                                                                                    |
+| 1a.    | Bubble.io wallet plugins       | Design and engineer custom Bubble.io plugins for the selected wallets. The plugins will be architected to integrate wallet log-in (signature) into our front-end application interface. The plugins will be published on the Bubble.io marketplace and made freely available to the wider developer community. Selected wallets: Subwallet, Parity signer, Polkadot-js, Subsquid, Fearless wallet, Nova Wallet, Talisman |
+| 1b.    | Wallet address transmission    | Implement a front-end authentication module that captures and transmits wallet addresses from the user sign-in process to our backend. The transmission activates event-driven triggers, initiating Subscan API queries for relevant event data retrieval.                                                                                                              |
+| 2a.    | Dashboard Structure Implementation | Utilizing provided mockups as the architectural blueprint, implement the user interface for the application dashboard. This involves arranging key performance indicators (KPIs) and various data visualization elements according to the predefined design.                                                                        |
+| 2b.    | Dynamic Dashboard Values       | Implement a real-time data binding mechanism that retrieves and displays updated portfolio data from the database, activated by event-driven triggers as defined in 1b.                                                                                       |
+
+## Mockups
+
+### Portfolio Overview
+
+The homepage of the portfolio provides a quick and insightful summary of the user's NFT holdings, including key features such as:
+- Overview Metrics: Displaying estimated portfolio value, revenue from NFT sales, spending on NFT purchases, realized profit-and-loss, and unrealized profit-and-loss;
+- Portfolio Scorecard: Assessing liquidity, volatility, and diversification of the NFT portfolio;
+- Portfolio Evolution Chart: Visualizing the historical value evolution of the NFT portfolio;
+- Inventory Chart: Illustrating the relative value distribution of each NFT holding.
+- Collection Highlights: Ranking collections in the user’s wallet based on top gainers, top losers, and recent purchases.
+
+![Portfolio tracker #1 (1)](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/ae122745-4d96-4c2a-86af-a8bc8230f63a)
+
+### NFTs page
+
+The NFTs page offers users a technical and visually engaging interface to view their NFT collection:
+- NFT Images: Displaying artwork and associated metadata for each token;
+- Token Metrics: Showing estimated value, acquisition price, unrealized PNL, and 24-hour sales for each collection;
+- Filtering and Sorting: Allowing users to sort and filter NFTs based on metrics like collection sales and estimated value.
+
+![Portfolio tracker #1 (1)](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/c8b1dde7-d548-4153-92d7-064b4f0f3ada)
+
+
+### Individual item page
+
+The individual item page allows users to delve into the comprehensive details of each NFT from their collection, providing a technical and in-depth analysis of the specific token.
+- NFT Images: Showcasing artwork and associated metadata.
+- Token Metrics: Providing estimated value, last sale price, unrealized PNL, acquisition date, and rarity rank within the collection.
+- Historical Chart: Visualizing sales history and estimated value evolution over different timeframes.
+- Activity Table: Logging all events related to the NFT, including sales, transfers, and minting.
+
+![Portfolio tracker #3 (1)](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/9ce0f425-3e2e-4901-9bd5-d68817afc3b4)
+
+
+### Collections page
+
+The collections page provides users with an aggregated view of their NFT holdings by collection, allowing them to assess collection performance and its impact on their portfolio.
+- Metrics per Collection: Includes NFTs owned, sales floor and % change for a timeframe, total invested value, estimated value, unrealized PNL, and collection volume.
+- Filters and Sort: Users can compare values in native tokens or dollars, select timeframes, and sort the table by various metrics.
+- Search: Quick search bar filters the table dynamically as the user types, facilitating collection analysis.
+- This page offers a concise and efficient way for users to evaluate the performance and contribution of each NFT collection in their portfolio
+
+![Portfolio tracker #4 (1)](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/12288478-21f2-4fab-9269-dfdc20693ed8)
 
 ## Future Plans
 
-Please include here
+Immediate Plans in the timeline includes
+- User testing and improvements to the portfolio tracker
+- Integrating the portfolio tracker as part of the Liisa multi-chain NFT analytics platform
+- Integrate NFTs from the supported protocols in the Liisa multi-chain NFT analytics platform
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
-
-## Referral Program (optional) :moneybag: 
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+Our Roadmap includes
+- User-defined alerts for NFT events
+- Integration with NFT marketplaces for off-chain data querying, specifically marketplace listings and bids
+- Integration of AI models for NFT valuations
+- Development of a mobile application
+- Integration of additional protocols
+- Token tracking
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** From talking to the Parity Team
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+What work has been done so far?
+We have developed and deployed the Liisa NFT analytics platform, currently supporting ETH and MATIC NFTs, including both off-chain and on chain data visualizations and KPIs
+
+Are there are any teams who have already contributed (financially) to the project?
+Yes, our Incubator and VC
+
+Have you applied for other grants so far?
+No
