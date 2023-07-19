@@ -263,4 +263,4 @@ We have developed and deployed the Liisa NFT analytics platform, currently suppo
 Yes, our Incubator and VC
 
 **Have you applied for other grants so far?**
-No
+No 
