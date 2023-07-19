@@ -176,7 +176,7 @@ I'm working on a project for a censorship-resistant decentralized video platform
 | 1. | Tx Recovery Worker | The Tx Recovery Worker will used to managed all transaction in failed status. It takes care of trying to re-process any transactions that have ended in error. in case of a new error, the transaction will be cancelled |
 | 2. | Frontend Admin Tools | The frontend for manage all configuration like smart contract used, wallet used, profile association. |
 | 3. | Frontend Transaction Monitor | The monitor to watch all tracking request. A graphical tool that allows you to display the status of all queues on screen. For example showing how many Triage there are, how many Pending, how many failed transactions. |
-| 4. | Frontend Registry | The frontend for user frindly graph of specific product tracked onchain. For each value Key will be show all dataValues insered and in wich block/time was performed |
+| 4. | Frontend Registry | The frontend for user friendly graph of specific product tracked onchain. For each value Key will be show all data Values insured and in wich block/time was performed |
 
 ### Milestone 3 — Smart Contracts
 
