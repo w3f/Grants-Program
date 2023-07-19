@@ -253,15 +253,14 @@ Our Roadmap includes
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** From talking to the Parity Team
+**How did you hear about the Grants Program?** 
+From talking to the Parity Team
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-What work has been done so far?
+**What work has been done so far?**
 We have developed and deployed the Liisa NFT analytics platform, currently supporting ETH and MATIC NFTs, including both off-chain and on chain data visualizations and KPIs
 
-Are there are any teams who have already contributed (financially) to the project?
+**Are there are any teams who have already contributed (financially) to the project?**
 Yes, our Incubator and VC
 
-Have you applied for other grants so far?
+**Have you applied for other grants so far?**
 No
