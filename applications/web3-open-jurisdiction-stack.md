@@ -43,7 +43,7 @@ The objective of this research and architecture is to create a solution that gua
 
 Every community striving for scalability must possess a mechanism to effectively address and resolve disagreements. By establishing a framework to handle such conflicts, the system can exhibit resilience and withstand challenges that may arise when people and entities do not agree and may fall apart.
 
-There is a glaring concrete example that highlights the issue of treasury management. When a grant is released by the Web3 Foundation, Polkadot, or Kusama Treasury, there is currently no recourse if the recipient fails to deliver or if there is a disagreement between the issuer and recipient regarding KPIs or Service Level Agreements. This problem is just one of many within the same realm and has raised serious concerns in the community for months (as an example, read this [thread](https://twitter.com/0xgoku_/status/1644260018659655680?s=20)). Despite this, as of today, there is still no solution in place to address these issues.
+There is a glaring concrete example that highlights the issue of treasury management. When a grant is released by the Web3 Foundation, Polkadot, or Kusama Treasury, there is currently no recourse if the recipient fails to deliver or if there is a disagreement between the issuer and recipient regarding KPIs or Service Level Agreements. This problem is just one of many within the same realm and has raised serious concerns in the community for months (as an example, read this [thread](https://twitter.com/0xgoku_/status/1644260018659655680?s=20)). Despite this, as of today, there is still no solution in place with regards to treasuries and partially for Web3 Foundation grants to address these issues.
 
 Having a form of Web3 jurisdiction would instil more [confidence](https://twitter.com/ph_lux/status/1646090060784193543?s=20) in investing that treasury, unlocking its growth potential.
 
@@ -53,7 +53,7 @@ These are just a few examples among many that highlight the necessity for every 
 
 **Research questions/hypothesis.**
 
-We aim to conduct a comprehensive assessment of the jurisdictional requirements prevalent throughout the ecosystem (parachains, dApps, etc.). Specifically, we will analyse how Web3 treasuries can benefit from a dispute resolution system. Below, you will find a more detailed explanation of the questions and research outline.
+We aim to conduct a comprehensive assessment of the jurisdictional requirements prevalent throughout the ecosystem (parachains, dApps, etc.). Specifically, we will analyse how Web3 treasuries (e.g. Polkadot Treasury) can benefit from a dispute resolution system. Below, you will find a more detailed explanation of the questions and research outline.
 
 **The methodology that will be applied.**
 
@@ -64,10 +64,12 @@ By taking this approach, we can ensure that the tech stack addresses the actual 
 
 The reason why we think a thorough analysis phase (as per software engineering best practices) is needed in this case is because the impact of the software solution has a real world aspect to it aside from the involvement of several human stakeholders. We strongly advise against going heads down towards development as it is likely to be something of no use if not backed by data collected methodically and actual user interaction.
 
-To give an idea, although the actual questionnaire will be part of the _Milestone 1-1_, the discussion guide will be around questions such as:
+To give an idea, although the creation of the actual questionnaire will be part of the _Milestone 1-1_, here is an example discussion guide and it will include questions such as:
 
-- Do you find the process of applying to grants fair and just?
-- Do you feel protected in case issues do arise while working on a grant?
+Treasury research 
+
+- Do you find the process of applying to the treasury fair and just?
+- Do you feel protected in case issues do arise while working on a proposal?
 - Do you feel there should be a clear process for handling such issues?
 - Do you feel comfortable in allocating funds to entities?
 - Did it ever happen that you felt the outcome of a relationship with a treasury was unfair?
@@ -76,7 +78,16 @@ To give an idea, although the actual questionnaire will be part of the _Mileston
 
 Additionally, we will conduct a comprehensive analysis of grants, focusing on their accountability and the value generated. Notably, when subjective Key Performance Indicators (KPIs) are involved, we anticipate encountering a higher frequency of points of friction.
 
-The goal here will be to analyse in detail 20 grants and engage with involved parties to understand how their experience was. The main focus being:
+A sample discussion guide will be along the following lines:
+
+Grants research
+
+- Do you find the process of applying to grants fair and just?
+- Do you feel protected in case issues do arise while working on a grant?
+- Do you feel there should be a clear process for handling such issues?
+- Are you comfortable with the degree of trust in the Web3 Foundation involved in applying for a grant?
+
+The goal here will be to analyse in detail a minimum of 10 grants and engage with involved parties to understand how their experience was. The main focus being:
 
 - How would you rate your experience?
 - Did you feel you were dependent on your counterparty acting fairly?
@@ -87,15 +98,15 @@ The goal here will be to analyse in detail 20 grants and engage with involved pa
 
 **The data collection and analysis procedures.**
 
-To facilitate data collection and collaboration, treasury data will be documented in a Google spreadsheet. This spreadsheet will predominantly contain publicly available data but will also include anonymized opinions from stakeholders regarding the effectiveness of specific grants.
+To facilitate data collection and collaboration, treasury and grants data will be documented in a Google spreadsheet. This spreadsheet will predominantly contain publicly available data but will also include anonymized opinions from stakeholders regarding the effectiveness of specific grants.
 
 Throughout the discussion guide we aim to leverage NPS and similar metrics to be able to extract readable graphs that can inform the subsequent development of the stack and also to be publicly available references for the community of the work done.
 
 **The expected results and how they would be double-checked by the grants team (reproducibility of the data analysis).**
 
-While we anticipate observing a higher level of dissatisfaction in grants that involve subjective KPIs, we will be judicious in selecting relevant interviewees, adhering to the principle of diminishing returns. Ensuring compliance with legal and ethical standards, we will consider utilising a variation of the Net Promoter Score (NPS) to gauge dissatisfaction with the outcomes.
+While we anticipate observing a higher level of dissatisfaction in proposals and grants that involve subjective KPIs, we will be judicious in selecting relevant interviewees, adhering to the principle of diminishing returns. Ensuring compliance with legal and ethical standards, we will consider utilising a variation of the Net Promoter Score (NPS) to gauge dissatisfaction with the outcomes.
 
-The grants team will have access to all recorded interviews, discussion guides, reports for each interview, spreadsheet with key metrics and graphs that plot the most significant data points from the research (e.g. is a jurisdiction needed? Does it need to be legally binding?)
+The community will have access to all recorded interviews, discussion guides, reports for each interview, spreadsheet with key metrics and graphs that plot the most significant data points from the research (e.g. is a jurisdiction needed? Does it need to be legally binding?)
 
 **Relevant related work.**
 
@@ -162,11 +173,11 @@ We firmly believe that our team is uniquely positioned to tackle this complex pr
 
 **Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?**
 
-In our current research phase, our primary focus lies on the treasuries of relevant foundations and parachains’ within the ecosystem. However, we recognize the potential for this research to expand into a comprehensive examination that encompasses dApps, their use cases, and end-users. Such an undertaking, though, would necessitate significant additional effort and resources.
+In our current research phase, our primary focus lies on the treasuries of relevant foundations and parachains within the ecosystem and secondarily on grants. We recognize the potential for this research to expand into a comprehensive examination that encompasses dApps, their use cases, and end-users. Such an undertaking, though, would necessitate significant additional effort and resources.
 
 **What need(s) does your project meet?**
 
-This project addresses the need for Web3 protocols to have proper systems in place for allocating funds through grants. Currently, there are evident problems in Dotsama, as discussed in various community threads.
+This project addresses the need for Web3 protocols to have proper systems in place for allocating funds through proposals, bounties, and grants. Currently, there are evident problems in Dotsama, as discussed in various community threads.
 
 The proposed project will serve as a crucial component in addressing these needs by establishing efficient, reliable, and effective treasury expenditures in Dotsama.
 
@@ -291,8 +302,8 @@ The team involved has decided to work on a reduced market rate. If market rates 
 | **0a** | **Copyrights and Licenses** | CC0 License |
 | **0b** | **Documentation**           | NA |
 | **0c** | **Methodology**             | We will provide a brief documentation of the methodology and process used for the research. This includes an explanation on why before proposing an actual scope of development we feel a thorough analysis phase is the better approach as this involves real world needs (e.g. legal enforcement) and it is not a purely technical delivery |
-| 1  | **Research**                | We will conduct research on a minimum of 20 past grants and proposals, ecosystem prizes and future initiatives to gather some information around jurisdiction needs of the ecosystem. We think this sample should be enough to make informed decisions and make sure that the future technical delivery is supported by data.We will extract common data points, abstracting away the details, on which we will engage with stakeholders in the subsequent activity |
-| 2  | **Interviews**              | We will run a minimum of 20 interviews of about 45 minutes with relevant stakeholders. All the interviews will be following a discussion guide format that aims at understanding the needs that need to be solved by the open jurisdiction stack.Examples of data points we will extract through those interviews are given in the section _The methodology that will be applied._ |
+| 1  | **Research**                | We will conduct research on a minimum of 10 past proposals and 10 grants, ecosystem prizes and future initiatives to gather some information around jurisdiction needs of the ecosystem. We think this sample should be enough to make informed decisions and make sure that the future technical delivery is supported by data.We will extract common data points, abstracting away the details, on which we will engage with stakeholders in the subsequent activity |
+| 2  | **Interviews**              | We will run a minimum of 20 interviews of about 45 minutes with relevant stakeholders, giving priority to the engagement around treasury proposals but also touching on the grants processes. All the interviews will be following a discussion guide format that aims at understanding the needs that need to be solved by the open jurisdiction stack.Examples of data points we will extract through those interviews are given in the section _The methodology that will be applied._ |
 | 3  | **Shared Folder**           | We will share a folder with contents from interviews, aggregation of data points etc. basically anything that will be eventually part of the published paper |
 
 ### Milestone 2 - POC, Feedback and Publication
