@@ -37,15 +37,39 @@ We need to notify our Smart Contract deployed on **Shiden** (Astar) whenever a *
 
 Creating products using XCM implies a complex journey today. Here is an example between Astar and OAK:
 
-![W3F Grant - XCM Payment Automation](https://github.com/NeoPower-Digital/Grants-Program/assets/107150702/8a6def51-7433-4635-9ac7-7914eadbce81)
+![W3F Grant - XCM Payment Automation](https://i.imgur.com/lrjifU5.png)
 
-We will create a generic project as a public good that teams can use to automate cross-chain transactions:
-- A **Typescript Next.js UI** with abstractions that simplify the most tricky parts for developers such as Accounts connection, Proxy Accounts creation and XCM messages creation.
-- An **ink! Smart Contract** that handles token transfers between Shiden accounts. 
+There are some DX/UX issues while building products with the out-of-the-box approach:
+- The process to enable the connection between chains requires the **configuration of Proxy Accounts** on both chains.
+- Users have to manually **top up their Proxy Accounts** in order to allow them to pay for fees to act on their behalf.
+- **XCM messages are complex** to understand and generate.
+- Managing **on-chain recurring transactions** is always a complex task.
+- **Polkadot.js** is great for low-level development, but **hard to use for user-oriented products.**
 
-For example, the process to enable the connection between Turing and Shiden requires the configuration of Proxy Accounts on both chains. We will provide React hooks and utilities to create and top up Proxy Accounts in a couple of lines of code. 
+#### Our solution
+
+Our deliverable will include a **Next.js UI** and an **ink! smart contract** to create recurring transfers leveraging XCM features.
+
+The included features on the Next.js UI are:
+- ✅ Wallet connection
+- ✅ 1-click proxy accounts setup
+- ✅ Recurring payment creation
+- ✅ Incoming and outgoing payments section
+- ✅ useink() library
+
+For devs:
+- 💻 Useful hooks and reusable abstractions in Typescript to create XCM messages
+- 💻 ink! smart contract example used to trigger payments
+- 💻 Recurring payment data model
+
+This project will be generic and open source to serve the Polkadot builders community as a **public good** that teams can use to **automate transactions** leveraging **cross-chain features**.
 
 **This will make building with XCM fast and simple.**
+
+#### Wireframes
+
+[Wireframe](https://whimsical.com/roloi-grant-ui-UYPjBFT8krc7KHbTUUkgDH)
+
 
 ### Ecosystem Fit
 
@@ -137,7 +161,6 @@ Hernán is part of the Roloi team as CGO to help with the growth, research, and 
 | 1a. | React hooks | We will provide reusable React hooks to facilitate the creation and top-up of Proxy Accounts, and execution of XCM (v3) messages.  |
 | 1b. | Home page | This page will handle the wallet connection and will show the app dashboard. |
 | 1c. | Create a Recurring Payment Page | On this page, the user will be able to create recurring transfers using the previously defined XCM flow. The most tricky part of the process will be transparent for the user. |
-| 1d. | My Payments Page | A page to show all the incoming and outgoing payments of the connected user. |
 
 ### Milestone 2 — Smart Contract and Kusama Connection
 
@@ -152,6 +175,7 @@ Hernán is part of the Roloi team as CGO to help with the growth, research, and 
 | **0c.** | Testing | To guarantee robustness, the main functionality will be covered by unit tests. |
 | **0d.** | Article | We will publish a Medium Article about our development experience with XCM. |
 | **1.** | UI | We will add the connection to the Kusama chains of Astar and OAK. |
+| 1a. | My Payments Page | A page to show all the incoming and outgoing payments of the connected user. |
 | **2.** | Smart Contract | An ink! smart contract that stores all the payment flows and monitors the security of the assets. All the token transfers will occur in Shiden. This enables transfers of non-native tokens. |
 | 2a. | Transaction - Configure new recurring transfer | We will provide a message to configure a new recurring transfer between Shiden accounts. |
 | 2b. | Transaction - Modify the configuration of a recurring transfer | We will provide a message to modify an existing recurring transfer between Shiden accounts. |
