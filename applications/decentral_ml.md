@@ -96,7 +96,7 @@ To our knowledge, there are currently two AI-related projects in the Substrate/P
 
 ### Team members
 - Name of team leader:
-- Ashley Turing
+  - Ashley Turing
 - Names of team members:
 - Dr Jamie Ward
 - Isak Grimsson
