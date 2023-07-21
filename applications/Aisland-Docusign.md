@@ -27,7 +27,8 @@ The decentralized e-signing of documents is one of the many tools that every fre
 
 ### Project Details
 
-The current MVP available at [https://docusign.aisland.io](https://docusign.aisland.io) has a set of basic features:  
+Preface:  
+We have already developed a minimum viable product (MVP) that is available at [https://docusign.aisland.io](https://docusign.aisland.io). The current MVP is offering the following features
 
 - Dashboard to manage the workflow
 - Create/Edit a document on-line using the block editor (editor.js).  
@@ -48,6 +49,17 @@ Here a few screenshots:
 ![Signing](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signing.png)  
 
 
+The project proposal consists in adding a new set of features to make a production ready version comparable to the best WEB2 solution offering like https://docusign.com.  Here is the list of the new features to be added:  
+  
+1) Standard Signatures Management to allow the user to set his own standard signature image.  
+2) Signature Marker, to allow the placing of signatures onthe document for a visual improvement.  
+3) Document Encrytion, to manage the privacy of the documents even when saved on chain.  
+4) PDF outout of the signed agreement with veriable QR code.  
+5) Storage of the encrypted documents on the blockchain.  
+6) Enhanced link sharing, to forward the signing link by different communication channel.
+7) Multiple Counter Parties, to manage the signature of > 2 parties on the same document.
+8) Enhanced templates, to manage also private templates.  
+
 Technology Stack:
 - The blockhain side is based on a custom pallet named [docusign](https://github.com/aisland-dao/aisland-node/tree/main/pallets/docusign).  
 
@@ -57,18 +69,16 @@ Requirements:
 - Nodejs  
 - Mariadb Server  
   
-The solution uses a local mariadb database for the workflow management and stores/retrieve on chain the signatures and the hash of the documents.  
-
+The MARIADB will be used to store only the workflow data and the signed documents will be encrypted and stored on chain for permanent storage.  
 
 ### Details of the Proposal
-We wish to take the current POC/MVP to production ready with important features that make the solution comparable to the best web2 services and here is the deliverables list:
+Here is the list of deliverables in more details:  
 
 1) Standard Signature Image - Manage the setting of the standard signature image, selecting from multiple auto-generated signatures or one uploaded. The Dapp shwillould auto-generate multiple style of signatures starting from a text using cursive fonts.  
 We will use a set of 50 cursive fonts to generate the signature image. A considerable selection of free cursive fonts are available here: [https://www.1001fonts.com/cursive+signature-fonts.html](https://www.1001fonts.com/cursive+signature-fonts.html).  
 The upload of a scanned image in png/jpg/webp or svg format is not a challenge.  
 Here an example from Docusign.com:
 ![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-standardsignatures.png)  
-
 
 
 2) Signature Marker - We will create a plugin for editor.js to mark the place where the signatures shall be placed. Once the document is signed, the selected signatures will be shown in the document.
@@ -96,7 +106,7 @@ We will add 2 functions to the current pallet: newBlob(id,documentdata), deleteB
   
 8) Enhanced Templates - The MVP allows to select a template from a system list. We wish to allow the user to create his/her own private templates.  
 
-### Ecosystem Fit
+### Ecosystem Fit  
 
 - Where and how does your project fit into the ecosystem?
 The proposal creates a general purpose utility for the wide public in using Substrate technology.
