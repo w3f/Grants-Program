@@ -37,7 +37,7 @@ We have made significant progress in integrating TensorFlow's Federated Machine 
 
 2. Improved model quality: By enabling a diverse set of nodes to contribute to the training process, our decentralized approach allows for a wider range of data inputs. This results in better model insights and intelligence that may surpass current centralised models, leading to more accurate, comprehensive and widely available models.
 
-3. Safety and governance: The governance of consensus built within the Polkadot Substrate framework enables open collective voting on crucial aspects such as model weights, jurisdictional usage, costs, and model selection. This provides a transparent and secure environment for the future AI collective society to make informed decisions and ensure the safety and reliability of the models.
+3. Safety and governance: The governance of consensus built within the Polkadot Substrate framework enables open collective voting on crucial aspects such as model weights, jurisdictional usage, costs, and model selection. This provides a transparent and secure environment for the future AI collective society to make informed decisions and ensures the safety and reliability of the models.
 
 
 
