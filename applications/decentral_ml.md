@@ -98,8 +98,8 @@ To our knowledge, there are currently two AI-related projects in the Substrate/P
 - Name of team leader:
   - Ashley Turing
 - Names of team members:
-- Dr Jamie Ward
-- Isak Grimsson
+  - Dr Jamie Ward
+  - Isak Grimsson
 
  We have also made contact with wider related field researchers: 
 [Dr. Philip Treleaven](http://www0.cs.ucl.ac.uk/staff/P.Treleaven/)  | [Dr Jonathan M M Hall](https://drjonathanmmhallfrsa.wordpress.com/) | [Jesse C. Cresswell](https://scholar.google.ca/citations?user=7CwOlvoAAAAJ&hl=en)
