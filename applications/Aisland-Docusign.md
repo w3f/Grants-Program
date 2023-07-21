@@ -28,7 +28,7 @@ The decentralized e-signing of documents is one of the many tools that every fre
 ### Project Details
 
 Preface:  
-We have already developed a minimum viable product (MVP) that is available at [https://docusign.aisland.io](https://docusign.aisland.io). The current MVP is offering the following features
+We have already developed a minimum viable product (MVP) that is available at [https://docusign.aisland.io](https://docusign.aisland.io). The current MVP is offering the following features:
 
 - Dashboard to manage the workflow
 - Create/Edit a document on-line using the block editor (editor.js).  
@@ -48,8 +48,8 @@ Here a few screenshots:
 ![Blank Document](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-blankdocument.png)
 ![Signing](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signing.png)  
 
-
-The project proposal consists in adding a new set of features to make a production ready version comparable to the best WEB2 solution offering like https://docusign.com.  Here is the list of the new features to be added:  
+  
+The project proposal consists in adding a new set of features to make a production ready version, comparable to the best WEB2 solution offering like https://docusign.com.  Here is the list of the new features to be added:  
   
 1) Standard Signatures Management to allow the user to set his own standard signature image.  
 2) Signature Marker, to allow the placing of signatures onthe document for a visual improvement.  
@@ -72,7 +72,7 @@ Requirements:
 The MARIADB will be used to store only the workflow data and the signed documents will be encrypted and stored on chain for permanent storage.  
 
 ### Details of the Proposal
-Here is the list of deliverables in more details:  
+Here is the list of deliverables new features in much more details:  
 
 1) Standard Signature Image - Manage the setting of the standard signature image, selecting from multiple auto-generated signatures or one uploaded. The Dapp shwillould auto-generate multiple style of signatures starting from a text using cursive fonts.  
 We will use a set of 50 cursive fonts to generate the signature image. A considerable selection of free cursive fonts are available here: [https://www.1001fonts.com/cursive+signature-fonts.html](https://www.1001fonts.com/cursive+signature-fonts.html).  
