@@ -12,10 +12,13 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-The main goal of the Paraxiom parachain is to be a trustless oracle system in the Dotsama ecosystem.
+The main goal of the Paraxiom project is to be a trustless oracle chain available to the Dotsama ecosystem.
+
+Paraxiom achieves oracle functionality by providing a set of modules that can be used to register and consume data from a variety of external sources. These are organized in the form of ["feeds"](#feeds).
+
 Essentially, this means:
-- Registering new feeds
-- Consuming data from a registered feeds (aka. sources) via XCM
+- [Registering](#feed-registration) new [feeds](#feeds) (aka. sources)
+- [Consuming data](#feed-consumption) from a registered [feeds](#feeds) via XCM
 - A staking / slashing mechanism to ensure the game-theoretic elements of the process
 
 We are PBA alumni and noticed the lack of oracle primitive in this ecosystem, and then decided to fix that.
@@ -45,6 +48,52 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 - For non-infrastructure projects—deployment and hosting costs, maintenance or audits
 - Business-oriented activities (marketing, business planning), events or outreach
  -->
+
+#### Quick Concepts
+
+##### Feeds
+
+A feed is a source of data. It can be a smart contract, a parachain, a smart contract on another chain, or even a simple script that fetches data from the internet.
+
+##### Feed Registration
+
+A feed can be registered by anyone. The registration process is simple: the client (i.e. actor account creating the feed) provides the following:
+
+1. Feed Topic: an identifier of the feed's context (ex: `dot_usd_price`)
+2. Description (optional)
+3. Source: data location (ex: an HTTP/S URL)
+4. Method: a supported way with which to get the data (ex: Phala Phat Contracts)
+
+> Note: The use of a topic is to allow for multiple feeds to be registered for the same context. For example, there could be multiple feeds for the `dot_usd_price` topic, each with a different source and/or method.
+
+Registering a feed generates a unique key that can be used to consume the feed.
+
+Registering a feed may also require a deposit (stake), which can be used to slash the feed if it is found to be malicious.
+
+##### Feed Consumption
+
+A feed can be consumed via RPC calls currently, however, the addition of an XCM interface is of high priority in the roadmap. 
+
+The consumption process is simple, the client (i.e. actor account consuming the feed) provides the following:
+
+1. Feed Topic: an identifier of the feed's context (ex: `dot_usd_price`)
+2. Feed Key (optional): the ID of the feed to consume from (ex: `...`)
+3. Aggregation (optional): the aggregation method to use (ex: `median`). This can be used to aggregate multiple feeds into a single value.
+
+> Note: Topics are also used to determine if a certain feed is returing values which are out of the expected range. For example, if a feed is returning a value that is too high or too low compared to the median, it can be flagged as invalid. This can be used to prevent malicious actors from manipulating the data and apply slashing.
+
+#### Architecture
+
+The main components of the Paraxiom architecture are:
+
+- **Oracle Pallet**: ...
+- **Feed Registry Pallet**: ...
+- **Oracle Client**: ...
+- **Oracle Offchain Worker**: ...
+- **TEE and Smart Contract Pools**: ...
+
+![Paraxiom Architecture](https://github.com/subslice/Paraxiom/blob/main/images/full-overview.jpg?raw=true)
+
 ### Ecosystem Fit
 
 Paraxiom is going to be a parachain. Specifically, we believe it should become a System Parachain.
