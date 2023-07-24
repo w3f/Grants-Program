@@ -227,7 +227,6 @@ Development has not started on the project, however the codebase will largely fo
 | 1. | Hybrid Indexer Library | Convert hybrid-indexer into a library that can be used by a Substrate chain indexer. Write macros for indexing all standard Substrate pallets. |
 | 2. | Polkadot Indexer | New rust project using hybrid-indexer library to index polkadot, kusama, rococo & westend. |
 | 3. | Chain select | The Hybrid dapp will have a dropdown to switch between the 4 polkadot chains. |
-| 4. | Hosting | hybrid-dapp hosted at https://hybridscan.app supporting polkadot, kusama rococo & westend. |
 
 ## Future Plans
 
