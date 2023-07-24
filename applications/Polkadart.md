@@ -184,9 +184,36 @@ Described above.
 
 ### Milestone 3 — 
 
+- **Estimated duration:** 5 months.
+- **FTE:**  2.
+- **Costs:** 20,000 USD.
+
+|Number|Deliverable|    Specification                   |
+|:---: |  ---      |             ---                    |
+| 0a.  | License          | Apache 2.0                         |
+| 0b.  | Documentation    | We will provide markdown documentation of how to install and use the API. |
+| 0c.  | Testing Guide    | We will provide sample scripts on how to use it. |
+| 0d.  | Docker           | We will provide a Dockerfile(s) that can be used to test the PoC. |
+| 0e.  | Article/Workshop | We will publish an example flutter project using the library to explain what was done and how to use it. |
+| 3a.  | Substrate Uri    | Implement Substrate's standard derivation format that applies to seeds and mnemonics. |
+| 3b.  | Encrypt/Decrypt  | Use Substrate's Bip39 password to encrypt/decrypt seeds and mnemonics. |
+| 3c.  | Ed25519          | Support Ed25519 signatures and key derivation |
+| 3d.  | Ecdsa/Secp256k1  | Support Ecdsa/Secp256k1 signatures and key derivation |
+| 3e.  | Sign & Verify    | Sign and verify messages using ed25519 and ecdsa Keypairs |
+| 3f.  | Substrate Signed Extensions | Support substrate's signed extensions |
+| 3g.  | Statemint Signed Extensions | Support statemint's signed extensions |
+| 3h.  | Transaction Subscriptions   | Support transaction subscription |
+| 3i.  | Event Subscriptions         | Support runtime event subscription |
+| 3j.  | Keyring          | Create a package that manage a set of keys in a consistent environment |
+| 3k.  | Crypto           | Utilities needed for signing, hash and encode/decode messages |
+| 3l.  | Tests            | Unit tests for deliverables above  |
+| 3m.  | Pub.dev          | Publish to pub.dev                 |
+
+### Milestone 4 — 
+
 - **Estimated duration:** 2 months.
-- **FTE:**  4.
-- **Costs:** 15,000 USD.
+- **FTE:**  2.
+- **Costs:** 20,000 USD.
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
@@ -194,11 +221,14 @@ Described above.
 | 0b.  | Documentation | We will provide markdown documentation of how to install and use the API. |
 | 0c.  | Testing Guide | We will provide sample scripts on how to use it. |
 | 0d.  | Docker        | We will provide a Dockerfile(s) that can be used to test the PoC. |
-| 0e.  | Article/Workshop | We will publish an example flutter project using the library to explain what was done and how to use it. |
-| 3a.  | Keyring      | We will port the keyring management     |
-| 3d.  | Crypto       | We will add the utilities needed for signing transactions |
-| 3e.  | Tests     | Unit tests for deliverables above  |
-| 3f.  | Pub.dev   | Publish to pub.dev for V1.0.0      |
+| 4a.  | Rewrite Schnorrkel in Dart | Rewrite [schnorrkel](https://github.com/w3f/schnorrkel) in pure dart |
+| 4b.  | Sign & Verify    | Sign and verify messages using sr25519 Keypair |
+| 4c.  | [New JSON-RPC API Mega](https://forum.polkadot.network/t/new-json-rpc-api-mega-q-a/3048) | Support the new Substrate's JSON-RPC mega |
+| 4d.  | Custom RPC | Support custom RPC methods |
+| 4e.  | Custom Signed Extensions | Support custom signed extensions |
+| 4f.  | Multisig Account | Implement's Substrate's Multisig Account |
+| 4g.  | Tests            | Unit tests for deliverables above  |
+| 4h.  | Pub.dev          | Publish to pub.dev |
 
 ## Future Plans
 
