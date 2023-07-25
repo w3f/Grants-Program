@@ -17,8 +17,8 @@ The main goal of the Paraxiom project is to be a trustless oracle chain availabl
 Paraxiom achieves oracle functionality by providing a set of modules that can be used to register and consume data from a variety of external sources. These are organized in the form of ["feeds"](#feeds).
 
 Essentially, this means:
-- [Registering](#feed-registration) new [feeds](#feeds) (aka. sources)
-- [Consuming data](#feed-consumption) from a registered [feeds](#feeds) via XCM
+- [Registering new feeds](#feed-registration) (aka. sources)
+- [Consuming data](#feed-consumption) from a registered feeds via XCM
 - A staking / slashing mechanism to ensure the game-theoretic elements of the process
 
 We are PBA alumni and noticed the lack of oracle primitive in this ecosystem, and then decided to fix that.
@@ -96,8 +96,13 @@ The main components of the Paraxiom architecture are:
 
 ### Ecosystem Fit
 
-Paraxiom is going to be a parachain. Specifically, we believe it should become a System Parachain.
+We strongly believe that Paraxiom is best applicable as a system chain for the Polkadot ecosystem. There exists a need for a native Oracle solution. Paraxiom aims to fill this gap.
+
 The target audience is the whole ecosystem itself: parachains, smart contracts and individual accounts can register new feeds and request data from them.
+
+While there are pallets and integrations within some Parachains currently (ex: Dia on Astar or Chainlink's pallet), it remains an added complexity for the end user. Paraxiom aims to provide a simple and easy to use solution for all, especially chains within the system.
+
+Paraxiom also aims to provide data aggregation functionality to increase both data quality and security. This is a feature that can make Paraxiom a unique solution.
 
 <!-- Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
