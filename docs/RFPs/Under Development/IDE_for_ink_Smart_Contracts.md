@@ -1,6 +1,6 @@
 # Browser based IDE for ink! Smart Contracts 
 
-* **Status:** Open
+* **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/ink-playground-ide-improvements.md)
 * **Proposer:** [David Hawig](https://github.com/Noc2)
 
 ## Project Description :page_facing_up:  

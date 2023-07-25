@@ -174,7 +174,7 @@ Before applying for the Web3 Foundation Grant, the Zeeve team has built a DevOps
 | 2. | Configuration | Parachain configuration is critical and complicated, we will provide the GUI based pick and choose for genesis parameters and chain configs to start with parachain setup for the desired Zombie-net |
 | 3. | Node type support | Implement setup of all node types including Full node, Validator node and Collator node for the respective relay chain and parachain within the configured Zombie-net. |
 | 4. | Cloud agnostic setup | The larch setup will be cloud agnostic and it can be installed on the choice of cloud, instructions and documentation will be provided for the same. |
-| 5. | User management  | The larch will allow to setup different users with desired permissions and access controls such as add, delete zombie-net, view, delete logs and save, delete templates. |
+| 5. | Network Management  | Implement the larch tool with a user-friendly interface, features for execution info, network deletion, template cloning, and management, along with robust error handling, for seamless setup of networks and templates. |
   
   
 

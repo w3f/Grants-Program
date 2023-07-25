@@ -19,6 +19,6 @@ There are currently two major areas of XCM that are still awaiting to be improve
 
 The scope of the new project count be one of:
 
-- Develop tools to help developer to test XCM-related code
+- Develop tools to help developers to test XCM-related code
 - Develop pallets or utility libraries to better handle the async nature of XCM communication
 - Develop a pallet to handle crosschain transfers of NFTs

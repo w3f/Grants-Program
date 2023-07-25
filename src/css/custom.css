@@ -30,6 +30,16 @@
   margin-right: 0rem;
 }
 
+/* Used on RFP page to minimize tables */
+.alert {
+  background-color: white;
+  --ifm-alert-border-color: rgb(28, 30, 33);
+  color: rgb(28, 30, 33);
+}
+
+.alert a {
+  color: rgb(28, 30, 33);
+}
 
 .footer__link-item {
   text-decoration: none;
