@@ -116,14 +116,14 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 
 #### Team GitHub accounts 🧑‍💻
 
-- https://github.com/vikiival  Viktor Valaštín
-- https://github.com/yangwao  Matej Nemček
+- [Viktor Valaštín](https://github.com/vikiival)
+- [Matej Nemček](https://github.com/yangwao)
 
 
 ### Team LinkedIn Profiles 🧑‍🎓
 
-- [https://linkedin.com/in/mnemcek/](Matej Nemcek)
-- [linkedin.com/in/vikival/](Viktor Valastin)
+- [Matej Nemcek](https://linkedin.com/in/mnemcek/)
+- [Viktor Valastin](https://linkedin.com/in/vikival/)
 
 
 ## Development Status :open_book:
@@ -136,7 +136,7 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 ### AssetHub Indexer Implementation
 
 - **Estimated duration:**  3 months ⌛️
-- **FTE:**  2 FTE
+- **FTE:**  4 FTE
 - **Costs:**  50,000 USD 💰
 
 
