@@ -50,6 +50,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [justmert](https://github.com/justmert)                                 | [DOTLY: Revolutionizing Polkadot Account Statistics](./dotly.md)   | [GitHub](https://github.com/justmert/dotly)                               | ☐          |        ☐       |      ☐     |
 | [Federico Cicciarella](https://www.linkedin.com/in/federicocicciarella/?originalSubdomain=it)                                 | [Tracking Chain](./tracking_chain.md)   | [GitHub](https://github.com/TrackingChains/TrackingChain)                               | ☐          |        ☐       |      ☐     |
 | [TPScore](https://github.com/its-a-setup)                                 | [TPScore](./TPScore.md)   | [GitHub](https://github.com/its-a-setup)                               | ☐          |        ☐       |      ☐     |
+| [Orochi Network](https://www.orochi.network/)                                 | [Research and development MPC ECDSA](./orochi-network-orosign-part1.md)   | [GitHub](https://github.com/orochi-network)                               | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
