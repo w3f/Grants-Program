@@ -62,7 +62,7 @@ A feed can be registered by anyone. The registration process is simple: the clie
 1. Feed Topic: an identifier of the feed's context (ex: `dot_usd_price`)
 2. Description (optional)
 3. Source: data location (ex: an HTTP/S URL)
-4. Method: a supported way with which to get the data (ex: Phala Phat Contracts)
+4. Method: a supported way with which to get the data (ex: Phala Phat Contracts, or any kind of Offchain Worker)
 
 > Note: The use of a topic is to allow for multiple feeds to be registered for the same context. For example, there could be multiple feeds for the `dot_usd_price` topic, each with a different source and/or method.
 
@@ -86,11 +86,11 @@ The consumption process is simple, the client (i.e. actor account consuming the 
 
 The main components of the Paraxiom architecture are:
 
-- **Oracle Pallet**: ...
-- **Feed Registry Pallet**: ...
-- **Oracle Client**: ...
-- **Oracle Offchain Worker**: ...
-- **TEE and Smart Contract Pools**: ...
+- **Oracle Pallet**
+- **Feed Registry Pallet**
+- **Oracle Client**
+- **Oracle Offchain Worker**
+- **TEE and Smart Contract Pools** (optional)
 
 ![Paraxiom Architecture](https://github.com/subslice/Paraxiom/blob/main/images/full-overview.jpg?raw=true)
 
@@ -132,20 +132,23 @@ Paraxiom also aims to provide data aggregation functionality to increase both da
 
 ### Team's experience
 
+- Faisal Al Tameemi has experience with ...
+
+- Arthur Franco Moreira has a mathematical background and 4+ years of software engineering, ranging from implementing portfolio optimization techniques, to backend web development and blockchain development. In the last 1.5 years, Arthur has been working as Rust and Substrate developer, working for a Brazilian payments company that uses a Substrate-based solochain.
+
+As the **Subslice** team, we have partenered after the Polkadot Blockchain Academy to tackle interesting projects for the Dotsama ecosystem. In May 2023 we won the **Astar Challenge for best Wasm dApp** in the _Encode x Polkadot Spring 2023 Hackathon_ with the [GameSlice project](https://github.com/subslice/game-theory).
+
 <!-- Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
 
 If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here. -->
 
 ### Team Code Repos
 
-- https://github.com/subslice/Paraxiom
-
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
+- https://github.com/subslice
 - https://github.com/a-moreira
 - https://github.com/FaisalAl-Tameemi
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
 - https://www.linkedin.com/in/a-moreira
 - https://www.linkedin.com/in/faisalaltameemi/
@@ -154,11 +157,12 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+We have already started implementing our ideas in the [Paraxiom repository](https://github.com/subslice/Paraxiom).
+
+We have a Github project with some of the next steps [here](https://github.com/orgs/subslice/projects/2/views/1).
+
+Our current, but still incipient, improvement proposals are mainly described in the Paraxiom repo itself, along with some notes we have been taking [here](https://github.com/subslice/notes/blob/main/Paraxiom/General%20Notes.md).
+
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -208,7 +212,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ## Future Plans
 
-Please include here
+We believe there is value in making Paraxiom a system (common good) parachain in the Polkadot ecosystem. We would like to work along with Parity to make this come true.
 
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
@@ -221,10 +225,9 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Recommendation from Joshua and Santiago, from The Substrate Builders Program.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+**Additional Information**:
+The initial inspiration for this project came from conversations Sylvain Cormier (previously at KILT), who along with the Phala Network team was thinking of how to use Phat Contracts for oracles.
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+Phala team has initially awarded Sylvain a small amount for his work in the beginning of this, but they are not associated with the project anymore.
