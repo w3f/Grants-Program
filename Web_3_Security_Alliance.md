@@ -16,6 +16,8 @@ The Alliance's signature project, the Whitehat Safe Harbour Constitution is an e
 
 “Downside risk” in the above meaning unfair or unintended liability; “asymmetry” meaning black hats have a disproportionate effect on the system because they only need to find one exploit, once,  whilst a protocol or ethical researcher has to defend against all of them, always, to be considered a success. Thus, we need to empower white hats and give them more leverage.
 
+The Web3 Security Alliance has received support from a16z, Paradigm, and LeXpunK. Grants have been received from Gnosis, Filecoin Foundation, and the Ethereum Foundations; its first donor was Vitalik Buterin.
+
 
 ### Project Details
 
@@ -131,8 +133,8 @@ An invite-only, international event convening elite Web3 security professionals 
 | 1. | Engage technical point  | Engage a technical expert within the Dotsama ecosystem to act as consultant/implementation engineer for the technical aspects of the WSHC |
 | 2. | Engage legal point | Engage a legal expert within the Dotsama ecosystem to act as a consultant regarding the legal needs of the WSHC as applied to the Dotsama ecosystem |
 | 3. | Engage community point | Engage a community leader within the Dotsama ecosystem to act as a guide and advisor in propagating the WSHC within that ecosystem |
-| 4. | Refine Dotsama dossier | Using initial feedback from experts and leaders, refine knowledge and goals regarding the needs of the Dotsama ecosystem relative to the WSHC |
-| 5. | Identify key points of difference | Identify points of difference that are unique or need to be particularly minded for the Dotsama ecosystem |
+| 4. | Refine Polkadot dossier | Using initial feedback from experts and leaders, refine knowledge and goals regarding the needs of the Dotsama ecosystem relative to the WSHC |
+| 5. | Identify key points of difference | Identify points of difference that are unique or need to be particularly minded for the Polkadot ecosystem |
 | 6. | Create an internal roadmap | based on identified issues and needs, create an interal, situation-accurate, and highly-detailed roadmap for drafting of the Dotsama implementation of the WSHC | 
 
 
@@ -210,4 +212,4 @@ Using experience gained from the implementation of the WSHC, the Web3 Security A
 
 **How did you hear about the Grants Program?** Personal recommendation!
 
-The Web3 Security Alliance has received support from a16z, Paradigm, and LeXpunK. Grants have been received from Gnosis, Filecoin Foundation, and the Ethereum Foundations; its first donor was Vitalik Buterin.
+
