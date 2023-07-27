@@ -168,7 +168,7 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 |    0b. | Documentation                   | We will provide both inline documentation of the code and a basic tutorial that explains how a user can                                                           |
 |    0c. | Testing Guide                   | Core functions will be fully covered by unit tests to ensure functionality and robustness.                                                                        |
 |     1. | DAOsign Ink! JS SDK             | We will publish a npm/yarn package with the logic how to interact with Smart Contract from JS                                                                     |
-|     2. | DAOsign Application Integration | Integrate DAOsign application using SDK. DAOsign application will be open sourced as well. DAOsign is written using ReactJS on frontend and Typescript on backend |
+|     2. | DAOsign Application Integration | Integrate DAOsign application using SDK. DAOsign application (which is not part of this grant) will be open sourced as well. DAOsign is written using ReactJS on frontend and Typescript on backend |
 
 
 
