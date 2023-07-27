@@ -102,7 +102,7 @@ This project will be a proof of concept (PoC) to demonstrate a particular use ca
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | MIT |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both readme.md and official docs documentation |
 | **0c.** | Testing and Testing Guide | Testing guide will be mentioned in official docs & core unit tests will be provided |
 | 1. | Data model definition | Designing and defining the architectural overview of the data model for this application  |
@@ -117,7 +117,7 @@ This project will be a proof of concept (PoC) to demonstrate a particular use ca
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | MIT |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation |  We will provide both readme.md and official architectural documentation of the NFT scanner module |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0e.** | Article | Add an article covering how to integrate NFT-SDK in a project. |
