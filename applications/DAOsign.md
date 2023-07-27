@@ -73,7 +73,7 @@ Competitors analysis can be found here: https://docsend.com/view/sbexkxn5su3ahdg
 
 ### Legal Structure
 
-- **Registered Address:** ILLINOIS LIMITED LIABILITY CORPORATION, US
+- **Registered Address:** 2468 Brian Dr. Northbrook, IL 60062
 - **Registered Legal Entity:** DAOSIGN, LLC
 
 ### Team's experience
