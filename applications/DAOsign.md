@@ -53,6 +53,8 @@ Agreement Proof entity represent 3 proofs:
 * Proof of authority
 * Proof of agreement
 
+The detailed Proof Technical Design is [here](https://github.com/w3f/Grants-Program/files/12183424/Proofs.Technical.Design.-.DAOSign.pdf)
+
 **UI Design**
 
 In Milestone 2 we have a frontend delivery. Here list of wireframes/designs with comments:
