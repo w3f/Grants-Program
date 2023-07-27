@@ -30,12 +30,10 @@ Technology stack:
 - Typescript 
 - Elasticsearch
 - JavaScript
-- [Rust-web3](https://github.com/tomusdrw/rust-web3)
-- Nginx, AWS
 
 ### Ecosystem Fit
 
-There are quite a few projects in the Polkadot/Kusama ecosystem that are working with NFTs. And going forward with XCM v4 supporting cross-chain transfer of NFT's, we believe tracking and tracing of the entire lifecycle of an NFT will not only be a need but a must have.
+There are quite a few projects in the Polkadot/Kusama ecosystem which are working with NFTs. And going forward with XCM v4 supporting cross chain transfer of NFT's, we believe tracking and tracing of the entire lifecycle of an NFT will not only be a need but a must-have.
 
 The NFT-Provenance-Tracker SDK built by Metaquity will be a great way for these projects to implement provenance for their projects and will save a lot of time and effort to build this from scratch.
 
@@ -86,6 +84,8 @@ Team members GitHub:
 
 ## Development Roadmap :nut_and_bolt:
 
+This project will be a proof of concept (PoC) to demonstrate particular use case and how NFT-SDK can be leveraged by other projects and parachains in the Polkadot ecosystem. Since this will be an SDK, anyone will be able to integrate this within their application. This acts as an enabler for this particular use case for provenance tracking of NFTs and fractional fungible tokens associated with those NFTs. This can extend to not only digital assets but also real-world assets (which is what is the primary focus of Metaquity Network).
+
 ### Overview
 
 - **Total Estimated Duration:** 2,5 months
@@ -101,10 +101,11 @@ Team members GitHub:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License |   Apache 2.0 |
-| **0b.** | Documentation | Architectural documentation of NFT-scanner |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | We will provide both readme.md and official docs documentation |
+| **0c.** | Testing and Testing Guide | Testing guide will be mentioned in official docs & core unit tests will be provided |
 | 1. | Data model definition | Designing and defining the architectural overview of the data model for this application  |
-| 2. | NFT scanner module | This module will scan the blockchain for any NFT-related data from the genesis block and invoke the indexer module |
+| 2. | NFT scanner module | This module will be in middle layer to scan the blockchain for the blocks containing NFT related data from the genesis block and invoke indexer module (We will be indexing only blocks that has NFT related data.) |
 
 ### Milestone 2 
 
@@ -115,11 +116,13 @@ Team members GitHub:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0  |
-| **0b.** | Documentation | A detailed developer documentation of the SDK (will be in gitbook format) and integration guide for other projects. |
-| 1. | NFT indexer module | Index all the data scanned by the scanner module and pass it to the database layer. |
-| 2. | Design and development of the NFT provenance SDK | A typescript-based SDK which consists of API calls to the database to fetch the NFT lifecycle. |
-| 3. | Technical Documentation for the SDK | We will provide a technical doc outlining integrating the SDK into other projects. |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation |  We will provide both readme.md and official architectural documentation of the NFT scanner module |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0e.** | Article | Add article covering how to integrate NFT-SDK in a project. |
+| 1. | NFT indexer module | Index all the data that is scanned by the scanner module and pass it to the database layer. |
+| 2. | Design and development of the NFT provenance SDK | A typescript based SDK which consists of API calls to the database to fetch the NFT lifecycle. |
+| 3. | Technical Documentation for the SDK | We will provide a technical doc outlining the process of integrating the SDK to other projects. |
 
 ## Future Plans
 
@@ -127,17 +130,12 @@ Team members GitHub:
 - Support wasm based NFTs
 - Adding capabilities for tracking and tracing fractional ownership of NFTs
 - Adding capabilities for tracking locking/unlocking of NFTs
-- 
 
 ## Additional information 
 
  > When you talk about NFTs, do you mean the NFTs pallet, PSP34s, uniques pallet, or EVM-compatible ones?
 
 We will not be focusing currently on the EVM-compatible ones but stick to more Polkadot ecosystem NFT's which are powered mostly by the Uniques Pallet and going forward the NFT's pallet will be used. So this will be a tool for aggregation for NFTs created through both pallets.
-
-> Your tech stack mentions Elasticsearch, AWS, and nginx, but none of your deliverables touches those. How will I be able to replicate your results?
-
-I think there's some confusion related to this point. The deliverables are geared towards building and delivering the individual modules which will eventually be released as an SDK which other projects can integrate. This project will be a proof of concept (PoC) to demonstrate this particular use case and how this can be leveraged by other projects and parachains in the Polkadot ecosystem. Since this will be an SDK, anyone will be able to integrate this within their application. This acts as an enabler for this particular use case for provenance tracking of NFTs and fractional fungible tokens associated with those NFTs. This can extend to not only digital assets but also real-world assets (which is what is the primary focus of Metaquity Network). This grant application is in relation to taking this project to the proof of concept stage. The ancillary tech stack mentioned such as Elasticsearch, AWS, and others shall be implemented when we take this project to the production stage.
 
 > Indexing NFT-related events seem to be a common indexer task. See, for example, https://github.com/emarai/squid-polkadot-psp34-nft-indexing. Why should we fund another, NFT-only indexer?
 
