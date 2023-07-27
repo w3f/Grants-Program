@@ -15,6 +15,7 @@ Traditional methods of signing agreements, such as paper-based systems or legacy
 DAOsign provides publicly verifiable cryptographic proofs; secure, transparent and automated processing of complex Agreements and Policies. 
 
 Furthermore, DAOsign provides robust Governance and Policy Builder platform to provide governance, workflow automation and controls for organization policies and procedures.
+
 ### Project Details
 A project goal is to store Agreements Proofs on Polkadot chain using Ink! smart contracts. 
 
@@ -25,12 +26,12 @@ Deliveries include DAOsign platform with an ability to:
 - allow signing the documents with further storing of signature proofs on Astar testnet blockchain.
 
 
-**Core DAOsign components:**
+**Core DAOsign components**
 
 <img width="902" alt="Screenshot 2023-05-27 at 16 51 43" src="https://github.com/Burmenska/Grants-Program/assets/3983591/e6e3e78d-edf4-4d50-a298-e01210d75963">
 
 
-**Technical design:**
+**Technical design**
 
 Proofs are implemented in the EIP-712 standard and adjusted to ink! ecosystem. Proofs digned using user’s EVM private key. 
 We are supporting this standard in Ink! smart contract to be able to verify the signature in ink! smart contract. 
@@ -43,9 +44,30 @@ Example (interfaces) of the smart contracts can be found here https://github.com
 
 Detailed storyboard can be found here: https://consideritdone.storiesonboard.com/m/PUCLDvQC4kKwoRJ8kbm3MA .
 
-Architectural diagram:
+**Architectural diagram**
 
 <img width="805" alt="Screenshot 2023-05-28 at 23 30 53" src="https://github.com/Burmenska/Grants-Program/assets/3983591/54c8708d-e180-46f3-9a78-b7121de133d3">
+
+Agreement Proof entity represent 3 proofs:
+* Proof of signature
+* Proof of authority
+* Proof of agreement
+
+**UI Design**
+
+In Milestone 2 we have a frontend delivery. Here list of wireframes/designs with comments:
+
+
+1. Adding toggle to allow store Agreement Proof on-chain (toggle above Sign Agreement button)
+![Store proofs 0](https://github.com/w3f/Grants-Program/assets/1008882/40f89bfa-50fc-4944-8a64-af84337b713a)
+
+2. Enable that toggle and select Parity network from dropdown
+
+![Store proofs 1](https://github.com/w3f/Grants-Program/assets/1008882/87894c58-bc30-4e48-b74b-3eabfcad2779)
+
+3. After user click `Sign Agreement` and execute transaction, we show `On-chain Proof` transaction hash on Information panel
+![Store proofs 6](https://github.com/w3f/Grants-Program/assets/1008882/88dfed66-5f88-4658-88b4-8a6198060de9)
+
 
 ### Ecosystem Fit
 
@@ -162,12 +184,12 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 * **Costs:** 7,800 USD
 
 
-| Number | Deliverable                     | Specification                                                                                                                                                     |
-|-------:|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                         | Apache 2.0                                                                                                                                                        |
-|    0b. | Documentation                   | We will provide both inline documentation of the code and a basic tutorial that explains how a user can                                                           |
-|    0c. | Testing Guide                   | Core functions will be fully covered by unit tests to ensure functionality and robustness.                                                                        |
-|     1. | DAOsign Ink! JS SDK             | We will publish a npm/yarn package with the logic how to interact with Smart Contract from JS                                                                     |
+| Number | Deliverable                     | Specification                                                                                                                                                                                       |
+|-------:|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                         | Apache 2.0                                                                                                                                                                                          |
+|    0b. | Documentation                   | We will provide both inline documentation of the code and a basic tutorial that explains how a user can                                                                                             |
+|    0c. | Testing Guide                   | Core functions will be fully covered by unit tests to ensure functionality and robustness.                                                                                                          |
+|     1. | DAOsign Ink! JS SDK             | We will publish a npm/yarn package with the logic how to interact with Smart Contract from JS                                                                                                       |
 |     2. | DAOsign Application Integration | Integrate DAOsign application using SDK. DAOsign application (which is not part of this grant) will be open sourced as well. DAOsign is written using ReactJS on frontend and Typescript on backend |
 
 
