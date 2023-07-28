@@ -42,7 +42,7 @@ We saw some teams that already building such solutions for the RFP and want to d
 
 ### Potential users
 
-We define the users of the platform as data people who generates insights from the data to support data-driven base for decision makers. This people has
+We define the users of the platform as data people who generates insights from the data to support data-driven base for decision makers. These people have:
 
 - tech skills to write SQL queries
 - basic statistics to define calculate and estimate metrics for the business
