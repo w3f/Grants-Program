@@ -22,7 +22,7 @@ Architecture:
 
     
   A standard asset-tracking SDK will be built with the following layers:
-  - Blockchain layer: Access to the blockchain data source and crawl through the blocks from the genesis block
+  - Blockchain layer: Access to the blockchain data source and crawl through the blocks from the genesis block, we will using using existing solution for crawling through the blockchain, Currently we are exploring subscan.
   - Middleware layer: Contains the crawlers through which we can crawl the blockchain and collect information about NFTs and write into the database and index it using elastic search.
   - SDK: This package will have all the necessary functions to fetch details about the NFT asset.
 
@@ -106,7 +106,7 @@ This project will be a proof of concept (PoC) to demonstrate a particular use ca
 | **0b.** | Documentation | We will provide both readme.md and official docs documentation |
 | **0c.** | Testing and Testing Guide | Testing guide will be mentioned in official docs & core unit tests will be provided |
 | 1. | Data model definition | Designing and defining the architectural overview of the data model for this application  |
-| 2. | NFT scanner module | This module will be in the middle layer to scan the blockchain for the blocks containing NFT-related data from the genesis block and invoke the indexer module (We will be indexing only blocks that has NFT related data.) |
+| 2. | NFT scanner module | This module will be in middle layer to scan the blockchain for the blocks containing NFT related data from the genesis block and invoke indexer module (We will be indexing only blocks that has NFT related data.)|
 
 ### Milestone 2 
 
