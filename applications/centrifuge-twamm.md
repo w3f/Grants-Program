@@ -345,7 +345,7 @@ We would like to bring to your attention that we recently presented a similar, a
 | **0b.** | Documentation              | We will provide both **inline documentation** of the code and a basic **tutorial** on how to load any metadata into its own registry of chain types.            |
 | **0c.** | Testing and Testing Guide  | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker                     | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
-|  **1.** | `pallet_twamm` PoC         | Config using `pallet-conversion-rate` as implementor of [`BasicAmm`](#AMM-Traits) trait, [Structs](Structs), [Storage](#Storage) as [above](#pallet_twamm).     |
+|  **1.** | `pallet_twamm`             | Config using `pallet-conversion-rate` as implementor of [`BasicAmm`](#AMM-Traits) trait, [Structs](Structs), [Storage](#Storage) as [above](#pallet_twamm).     |
 |  **2.** | `pallet_twamm` Extrinsics  | [Extrinsics](#Extrinsics) as described [above](#pallet_twamm).                                                                                                  |
 |  **3.** | `pallet_twamm` runtime API | Define trait and expose Claimable proceeds for an order as well as aggregated order data for a given asset.                                                     |
 |  **4.** | Benchmark `pallet_twamm`   | Add required mocks for `Rewards` and `BasicAmm` and do runtime benchmarks.                                                                                      |
