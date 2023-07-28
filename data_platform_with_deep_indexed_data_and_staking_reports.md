@@ -218,8 +218,7 @@ We suggest proposal with 1 milestone to:
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to run indexer locally, set up data base (DWH), and run BI. |
 | 1. | Develop the ETL component | The result of developing ETL component contains the docker with Mbelt (indexer) and Airflow with DAGs to write indexer’s output into DWH (data base). |
-| 2. | Publish DWH data | Our goal for publishing data is: providing raw (indexer’s data) data into public bigQ project with the ability to query and use this data for public users. The chains are Polkadot, Kusama, Moonbeam, Moonriver.
-We would also provide reports about staking on top of raw data in chains above. The additional result is SLI/SLO dashboard of ETL process to provide more transparency for users. |
+| 2. | Publish DWH data | Our goal for publishing data is: providing raw (indexer’s data) data into public bigQ project with the ability to query and use this data for public users. The chains are Polkadot, Kusama, Moonbeam, Moonriver. We would also provide reports about staking on top of raw data in chains above. The additional result is SLI/SLO dashboard of ETL process to provide more transparency for users. |
 | 3. | Forking Superset | Forking Superset will allow us to modify sign-in page to provide new users to join. We will make some changes on UI side to improve user’s experience as well. |
 
 
