@@ -43,7 +43,9 @@ Bubble.io is a visual development platform designed to democratize the process o
 
 #### 1) Data Sources (Subscan)
 
-Our main data source is Subscan API, providing comprehensive event data and metadata related to NFTs in the Polkadot ecosystem. Within the context of the MVP, we have selected the following EVM-compatible chains with relevant NFT activity: Astar, Basilisk, Efinity, Moonbeam, and Unique Network.
+The project aims to create a system to extract and process event data and metadata related to NFTs within the Polkadot ecosystem. The focus is on building flexible and modular data ingestion mechanisms to accommodate different APIs with minimal code changes, using Node.js components for reusability and scalability. 
+
+To expedite development, the team will initially integrate with the Subscan API, a well-documented and robust source that provides extensive data for selected protocols like Astar, Basilisk, Efinity, Moonbeam, and Unique Network. This initial integration will serve two main purposes: to quickly progress towards a working MVP and to serve as a practical example for future developers looking to extend the system with other data sources in the long term.
 
 #### 2) Data Enrichment
 
