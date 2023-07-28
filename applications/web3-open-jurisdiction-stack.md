@@ -299,7 +299,7 @@ The team involved has decided to work on a reduced market rate. If market rates 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a** | **Copyrights and Licenses** | CC0 License |
+| **0a** | **Copyrights and Licenses** | Apache 2.0 |
 | **0b** | **Documentation**           | NA |
 | **0c** | **Methodology**             | We will provide a brief documentation of the methodology and process used for the research. This includes an explanation on why before proposing an actual scope of development we feel a thorough analysis phase is the better approach as this involves real world needs (e.g. legal enforcement) and it is not a purely technical delivery |
 | 1  | **Research**                | We will conduct research on a minimum of 10 past proposals and 10 grants, ecosystem prizes and future initiatives to gather some information around jurisdiction needs of the ecosystem. We think this sample should be enough to make informed decisions and make sure that the future technical delivery is supported by data.We will extract common data points, abstracting away the details, on which we will engage with stakeholders in the subsequent activity |
@@ -315,7 +315,7 @@ The team involved has decided to work on a reduced market rate. If market rates 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a** | **Copyrights and Licenses** | CC0 License |
+| **0a** | **Copyrights and Licenses** | Apache 2.0 |
 | **0b** | **Documentation**           | NA |
 | **0c** | **Methodology**             | We will provide a brief documentation of the methodology and process used for the researchThis builds up on the previous milestone. |
 | **0d** | **Infrastructure**          | A technical document and flowchart of how the open jurisdiction stack could look like, provided that the research gives a “go” in terms of feasibilityThis infrastructure will contain details of pallets, smart contracts and other pieces of software that could be built |
