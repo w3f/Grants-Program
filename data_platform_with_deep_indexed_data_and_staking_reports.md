@@ -210,6 +210,7 @@ We suggest proposal with 1 milestone to:
 - **FTE:** 3.5
 - **Costs:** 20,000 USD
 
+
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | Apache 2.0 |
@@ -219,6 +220,7 @@ We suggest proposal with 1 milestone to:
 | 1. | Develop of ETL component | The result of developing ETL component contains the docker with Mbelt (indexer) and Airflow with DAGs to write indexer’s output into DWH (data base). |
 | 2. | Publish DWH data | Our goal for publishing data is: providing raw (indexer’s data) data into public bigQ project with the ability to query and use this data for public users. The chains are Polkadot, Kusama, Moonbeam, Moonriver.We would also provide reports about staking on top of raw data in chains above.The additional result is SLI/SLO dashboard of ETL process to provide more transparency for users. |
 | 3. | Forking Superset | Forking Superset will allow us to modify sign-in page to provide new users to join. We will make some changes on UI side to improve user’s experience as well. |
+
 
 ## **Future plans**
 
