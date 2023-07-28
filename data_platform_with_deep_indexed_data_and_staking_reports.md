@@ -167,7 +167,7 @@ Public DWH: “p2p-data-platform” in bigQuery you can find in public access th
 
 ### Team's experience
 
-We believe that proposed product can brought not only new user experience for validators and NO managers but provide truly decentralization with the performance improvement. P2P.org has long-term experience in more then 25 blockchains since 2018. We can bring the high level expertise to help new participants perform better by providing recommendations on-top of the core solution.
+We believe that proposed product can bring not only a new user experience for validators and NO managers but also provide true decentralization with the performance improvement. P2P.org has long-term experience in more then 25 blockchains since 2018. We can bring the high level expertise to help new participants perform better by providing recommendations on-top of the core solution.
 
 Our data chapter is successfully implementing data-driven culture in [P2P.org](http://P2P.org) during 2 years. 
 
