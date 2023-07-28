@@ -54,7 +54,7 @@ We believe that in case of mass adoption we will not see this proportion but we 
 
 ![](https://github.com/bigslimdogg/web3_pic/blob/3a0406565507ada022e57797adf8258edf1e50e3/ai_assistant.png)
 
-Our concern that we can attract first users from Polkadot ecosystem which hasn’t been covered by the current data-platforms. After that we are going to provide innovative opportunity to enter in data-driven decisions without SQL skills
+Our concern is that we can first attract users from the Polkadot ecosystem, which hasn’t been covered by the current data-platforms. After that we are going to provide an innovative opportunity to enter in data-driven decisions without SQL skills.
 
 **Free usage**
 
