@@ -52,7 +52,7 @@ Current state of Dune platform (as the Leader of the market) is about 20k users.
 
 We believe that in case of mass adoption we will not see this proportion but we need to involve more people still. Our global vision for this problem is to provide ability to work with the data without SQL knowledge. That is why we develop Kolmo - AI assistant.
 
-![Снимок экрана 2023-06-21 в 18.01.00.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c8881b5e-fd51-41b2-92a9-350afb137467/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-06-21_%D0%B2_18.01.00.png)
+![](https://github.com/bigslimdogg/web3_pic/blob/3a0406565507ada022e57797adf8258edf1e50e3/ai_assistant.png)
 
 Our concern that we can attract first users from Polkadot ecosystem which hasn’t been covered by the current data-platforms. After that we are going to provide innovative opportunity to enter in data-driven decisions without SQL skills
 
@@ -66,7 +66,7 @@ We already mentioned modular architecture as key feature of the solution. The ne
 
 **Modular architecture**
 
-![Снимок экрана 2023-07-24 в 16.51.33.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e9c27998-d456-46cd-8553-38635b0ab2a6/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-07-24_%D0%B2_16.51.33.png)
+![](https://github.com/bigslimdogg/web3_pic/blob/3a0406565507ada022e57797adf8258edf1e50e3/architecture.png)
 
 Indexing & ETL module consist of:
 
@@ -165,8 +165,6 @@ Indexer: [Mbelt](https://github.com/p2p-org/polkadot-profit-transformer/tree/mbe
 
 Public DWH: “p2p-data-platform” in bigQuery you can find in public access though bigQ console
 
-![Снимок экрана 2023-07-19 в 16.32.42.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9fef64ea-b402-4a53-8ffb-bda03ff21064/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-07-19_%D0%B2_16.32.42.png)
-
 ### Team's experience
 
 We believe that proposed product can brought not only new user experience for validators and NO managers but provide truly decentralization with the performance improvement. P2P.org has long-term experience in more then 25 blockchains since 2018. We can bring the high level expertise to help new participants perform better by providing recommendations on-top of the core solution.
@@ -218,10 +216,8 @@ We suggest proposal with 1 milestone to:
 | 0b. | Documentation | We will provide a documentation page about how to launch docker’s files for ETL (indexer + orchestration), DWH connection, launching UI (BI tool). |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to run indexer locally, set up data base (DWH), and run BI. |
-| 1. | Develop of ETL component  | The result of developing ETL component contains the docker with Mbelt (indexer) and Airflow with DAGs to write indexer’s output into DWH (data base). |
-| 2. | Publish DWH data | Our goal for publishing data is: providing raw (indexer’s data) data into public bigQ project with the ability to query and use this data for public users. The chains are Polkadot, Kusama, Moonbeam, Moonriver.
-We would also provide reports about staking on top of raw data in chains above. 
-The additional result is SLI/SLO dashboard of ETL process to provide more transparency for users. |
+| 1. | Develop of ETL component | The result of developing ETL component contains the docker with Mbelt (indexer) and Airflow with DAGs to write indexer’s output into DWH (data base). |
+| 2. | Publish DWH data | Our goal for publishing data is: providing raw (indexer’s data) data into public bigQ project with the ability to query and use this data for public users. The chains are Polkadot, Kusama, Moonbeam, Moonriver.We would also provide reports about staking on top of raw data in chains above.The additional result is SLI/SLO dashboard of ETL process to provide more transparency for users. |
 | 3. | Forking Superset | Forking Superset will allow us to modify sign-in page to provide new users to join. We will make some changes on UI side to improve user’s experience as well. |
 
 ## **Future plans**
