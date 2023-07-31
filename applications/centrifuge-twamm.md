@@ -349,6 +349,7 @@ We would like to bring to your attention that we recently presented a similar, a
 |  **2.** | `pallet_twamm` Extrinsics  | [Extrinsics](#Extrinsics) as described [above](#pallet_twamm).                                                                                                  |
 |  **3.** | `pallet_twamm` runtime API | Define trait and expose Claimable proceeds for an order as well as aggregated order data for a given asset.                                                     |
 |  **4.** | Benchmark `pallet_twamm`   | Add required mocks for `Rewards` and `BasicAmm` and do runtime benchmarks.                                                                                      |
+|  **5.** | TWAMM 2.0 article          | Outline spec and implementation improvements over original version.                                                                                             |
 
 ## Future Plans
 
