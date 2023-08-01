@@ -145,7 +145,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [DIA Data](https://www.diadata.org/)      | [Bridgestate Attestation Oracle](DIA_Bridge_Attestation_Oracle.md)     | [GitHub](https://github.com/diadata-org/)          | ☐          |        ☒       |      ☐     |
 | [TogetherCrew](http://www.togethercrew.com/)      | [Community Health Check](community-health-check.md)     | [GitHub](https://github.com/RnDAO)          | ☐          |        ☒       |      ☐     |
 | [Decentration](https://www.decentration.org/)                    | [Supersig Phase 2](./supersig_fellowship.md)                                                                        | [GitHub](https://github.com/decentration)                           | ☐          |       ☒        |     ☒     |
-| [Polkadrys Labs](https://github.com/rtomas)                    | [Open Payroll](./openPayroll.md)                                                                        | [GitHub](https://github.com/rtomas)                           | ☐          |       ☐        |     ☐     |
+| [Polkadrys Labs](https://github.com/rtomas)                    | [Open Payroll](./openPayroll.md)                                                                        | [GitHub](https://github.com/rtomas)                           | ☐          |       ☒        |     ☐     |
 | [Itering](https://www.itering.io/)                    | [Solidity Verifier Implementation for Accountable Light Client](./solidity-verifier-for-accountable-light-client.md)                                                                        | [GitHub](https://github.com/darwinia-network)                           | ☐          |       ☒        |     ☐     |
 
 [🔝](#2023)
