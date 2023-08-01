@@ -122,11 +122,6 @@ End state: Production-ready bot ready (once signed off on by DevRel team) to be 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-| **0e.** | Article | We will publish an article/workshop that explains how Tali works and how it will server the Polkadot community.|
 | **1.** | Tali Test Bot | Test bot that can be used by the internal Polkadot team to test answers |
 
 ### Milestone 2 Example — Production Bot 
@@ -137,7 +132,12 @@ End state: Production-ready bot ready (once signed off on by DevRel team) to be 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Tali Production Bot | Production bot that can be deployed to the Polkadot discord and/or as a widget on the Polkadot documentation page. (https://wiki.polkadot.network/docs/build-index)|
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how Tali functions and how the bot can be deployed.|
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
+| **0e.** | Article | We will publish an article/workshop that explains how Tali works and how it will serve the Polkadot community.|
+| **1.** | Tali Production Bot | Production bot that can be deployed to the Polkadot discord and/or as a widget on the Polkadot documentation page. (https://wiki.polkadot.network/docs/build-index)|
 
 
 ## Future Plans
