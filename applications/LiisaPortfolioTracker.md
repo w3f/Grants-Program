@@ -163,16 +163,17 @@ In a proactive endeavor to understand and address the data-related challenges of
 - **FTE:**  2.5
 - **Costs:** 17,000 USDC
 
-Number | Deliverable               | Specification
------- | ------------------------- | ----------------------------------------------------------------------------------------------------------
-0a.    | License                   | Apache 2.0
-0b.    | Documentation             | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file
-0c.    | Testing Guide             | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide, we will describe how to run these tests
-0d.    | Docker                    | Provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-1a.    | Subscan API calls         | Design and implement API queries to extract event data from the Subscan API for the following supported protocols: Astar, Basilisk, Efinity, Moonbeam, and Unique Network. This will be developed using Node.js.
-1b.    | Timed-Triggers            | Establish timed triggers to initiate queries to the Subscan API at predetermined intervals, subsequently refreshing the associated events database with the most recent data. This will be developed using Node.js on the main code and will use cronjobs on the cloud to set the triggers.
-1c.    | User-initiated Triggers   | Implement event-driven triggers that are activated upon user interactions with the application, specifically upon insertion of a wallet address. This will initiate Subscan API queries and subsequently update the associated events database with the retrieved data. This will be developed using Node.js.
-2a.     | Computational algorithms | Design and implement computational algorithms that, upon activation of either event-driven or timed triggers and the consequent receipt of new event data, will produce key performance indicators (KPIs) and metrics for both user wallets and NFT collections. The calculated metrics will subsequently be stored persistently in the database for subsequent analysis and retrieval. This will be developed using Node.js.
+| Number | Deliverable               | Specification |
+| ------ | ------------------------- | ------------- |
+| 0a.    | License                   | All code will be open-sourced under Apache 2.0 license. |
+| 0b.    | Documentation             | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file. Documentation on the modular design of Subscan API calls is included. |
+| 0c.    | Testing Guide             | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide, we will describe how to run these tests |
+| 0d.    | Docker                    | Provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1a.    | Modular Subscan API calls | Design and implement API queries to extract event data from the Subscan API for the supported protocols: Astar, Basilisk, Efinity, Moonbeam, and Unique Network. The design will be modular to allow easy replacement with different APIs. This will be developed using Node.js. |
+| 1b.    | Timed-Triggers            | Establish timed triggers to initiate queries to the Subscan API at predetermined intervals, subsequently refreshing the associated events database with the most recent data. This will be developed using Node.js on the main code and will use cronjobs on the cloud to set the triggers. |
+| 1c.    | User-initiated Triggers   | Implement event-driven triggers that are activated upon user interactions with the application, specifically upon insertion of a wallet address. This will initiate Subscan API queries and subsequently update the associated events database with the retrieved data. This will be developed using Node.js. |
+| 2a.    | Open-sourced Computational algorithms | Design and implement computational algorithms that, upon activation of either event-driven or timed triggers and the consequent receipt of new event data, will produce key performance indicators (KPIs) and metrics for both user wallets and NFT collections. The calculated metrics will subsequently be stored persistently in the database for subsequent analysis and retrieval. This code will be open-sourced and developed using Node.js. |
+
 
 
 
