@@ -28,7 +28,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 06.01.2023 |
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 07.10.2022 |
 | [ISO_20022.md](RFPs/Open/ISO_20022.md) | 31.05.2022 |
-| [move_smart_contract_pallet.md](RFPs/Open/move_smart_contract_pallet.md) | 22.12.2022 |
 | [parachain_validation_conformance_testing.md](RFPs/Open/parachain_validation_conformance_testing.md) | 18.01.2023 |  
 | [polkadot-protocol_conformance_tests.md](RFPs/Open/polkadot-protocol_conformance_tests.md) | 08.05.2023 |
 | [sub-consensus.md](RFPs/Open/sub-consensus.md) | 23.11.2021 |
@@ -55,6 +54,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [implementation-benchmarking.md](RFPs/Under%20Development/implementation-benchmarking.md) | 06.06.2023 |
 | [ink!_smart_contract_block_explorer.md](RFPs/Under%20Development/ink_smart_contract_block_explorer.md) | 05.07.2021 |
 | [ISO_8583.md](RFPs/Open/ISO_8583.md) | 31.05.2022 |
+| [move_smart_contract_pallet.md](RFPs/Under%20Development/move_smart_contract_pallet.md) | 02.08.2023 |
 | [multi-chain-block-explorer.md](RFPs/Under%20Development/multi-chain-block-explorer.md) | 23.11.2021 |
 | [privacy-enhancement-polkadot-extension.md](RFPs/Under%20Development/privacy-enhancement-polkadot-extension.md) | 27.05.22 |
 | [raft-validators.md](RFPs/Under%20Development/raft-validators.md) | 23.05.2023 |
