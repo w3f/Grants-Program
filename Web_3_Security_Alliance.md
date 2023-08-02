@@ -211,6 +211,8 @@ Using experience gained from the implementation of the WSHC, the Web3 Security A
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Personal recommendation!
+**How did you hear about the Grants Program?** 
+
+Personal recommendation!
 
 
