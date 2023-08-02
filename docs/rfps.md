@@ -66,7 +66,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 </details>
 
 
-<details><summary><b>🔴 Closed:</b> This RFP is either closed, on hold, or no longer useful. However, if it’s implemented and not maintained, we would be interested in signing a [maintenance grant](maintenance.md).</summary>
+<details><summary><b>🔴 Closed:</b> This RFP is either closed, on hold, or no longer useful. However, if it’s implemented and not maintained, we would be interested in signing a <a href="./maintenance.md">maintenance grant</a>.</summary>
 
 | RFP | Last Updated |
 | :-- | :----------: |
