@@ -293,17 +293,15 @@ We had the following conversations:
 
 ### Overview
 
-- **Total Estimated Duration:**
+- **Total Estimated Duration:** 8.5 months
 
 We expect to conclude the proposed project in 8.5 months
 
-- **Full-Time Equivalent (FTE):**
-
-FTE ≈ 0.85
+- **Full-Time Equivalent (FTE):** 0.85 FTE
 
 Two PhDs each dedicating about 79 days of work (158 days in total) during an 8.5 months project. Considering 22 days of work per month, we have 187 days of work in 8.5 months, with an FTE of approximately 0.85.
 
-- **Total Costs:** 
+- **Total Costs:** 79,500 USD
 
 The total budget requested is US$ 79500 for two PhDs dedicating about 79 days of work during an 8.5 months project. Considering the average PhD daily rate of US$500 to design and develop a project.
 
