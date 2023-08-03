@@ -20,20 +20,24 @@ From time to time, Web3 Foundation and/or Parity organise hackathons to promote 
 
 The best way to find out about upcoming hackathons is by following Polkadot on the various social channels, such as Element or Twitter.
 
-### Other Grant Programs
+### Other Grant or Bounty Programs
 
-Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
+Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
 - [Acala Grants Program](https://acala.network/ecosystem-program)
+- [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program) 
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [ink!ubator](https://use.ink/ubator/)
 - [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
+- [KodaDot Ecosystem Grants](https://github.com/kodadot/grants)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/)
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
+- [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)

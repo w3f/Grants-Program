@@ -28,7 +28,7 @@
   - [Substrate Builders Program](#substrate-builders-program)
   - [Treasury](#treasury)
   - [Hackathons](#hackathons)
-  - [Other Grant Programs](#other-grant-programs)
+  - [Other Grant or Bounty Programs](#other-grant-or-bounty-programs)
 
 ## :wave: Introduction
 
@@ -86,7 +86,6 @@ The committee consists of individuals who know the funding priorities of the Pol
 
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
-- [Nabil Abdellaoui](https://github.com/randombishop)
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
@@ -104,8 +103,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
-- [Nabil Abdellaoui](https://github.com/randombishop)
-- [Matteo Casonato](https://github.com/0xCaso)
 - [David Hawig](https://github.com/Noc2)
 - [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
@@ -148,7 +145,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ## :pencil: Process
 
-> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in fiat, Bitcoin, USDT (on [Statemine/Statemint](https://support.polkadot.network/support/solutions/articles/65000181800-what-is-statemint-and-statemine-and-how-do-i-use-them-)) or USDC/DAI (Ethereum). If you want to apply in **private**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in fiat, Bitcoin, USDT (on the [Polkadot and Kusama Asset Hub](https://support.polkadot.network/support/solutions/articles/65000181800-what-is-statemint-and-statemine-and-how-do-i-use-them-)) or USDC/DAI (Ethereum). If you want to apply in **private**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -157,7 +154,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
    2. In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/applications/application-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**. In the case of a maintenance application, use the maintenance template ([`maintenance template`](applications/maintenance/maintenance-template.md)) instead. In the case of a research application, use the research template ([`research template`](applications/application-template-research.md)) instead.
    3. Name the new file after your project: `project_name.md`.
    4. Fill out the template with the details of your project. The more information you provide, the faster the review. Please refer to our [Grant guidelines for most popular grant categories](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/grant_guidelines_per_category.md) and make sure your deliverables present a similar same level of detail. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
-   5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
+   5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grants-Program). The pull request should only contain _one new file_—the Markdown file you created from the template.
    6. You will see a comment template that contains a checklist. You can leave it as is and tick the checkboxes once the pull request has been created. Please read through these items and check all of them.
    7. Sign off on the [terms and conditions](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/T%26Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
 
@@ -194,7 +191,7 @@ Ideas generally have better chances of being implemented if they're presented in
 2. In the newly created fork, create a copy of the suggestion template ([`RFPs/suggestion-template.md`](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/suggestion-template.md)) inside the [`rfps`](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/docs/RFPs/suggestion-template.md) of the template into the new one, and _do not modify the template file directly._
 3. Name the file after your idea: `project_name.md`.
 4. Fill out the template with the project details. Please include as many details as possible.
-5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
+5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grants-Program/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
 6. You will see the same template as for creating an application. Please replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 7. The RFP will be accepted and merged as soon as it receives three approvals from [W3F Grants Committee](https://github.com/w3f/Grants-Program#w3f-grants-committee) members.
 
@@ -257,9 +254,13 @@ It is **not** a chance to pitch your project, especially since only a small subs
 
 ### Additional Information
 
-| <img src="static/img/web.png?s=50" width="50" /> | <img src="static/img/twitter.png?s=50" width="50" /> | <img src="static/img/medium.png?s=50" width="50" /> | <img src="static/img/like.png?s=50" width="50" /> | <img src="static/img/reddit.png?s=50" width="50" /> | <img src="static/img/youtube-play.png?s=50" width="50" /> |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
+<div align="center">
+
+| <img src="static/img/Web.svg?s=50" width="50"></img> | <img src="static/img/Twitter.svg?s=50" width="50"></img> | <img src="static/img/Learn.svg?s=50" width="50"></img> | <img src="static/img/Wiki.svg?s=50" width="50"></img> | <img src="static/img/Youtube.svg?s=50" width="50"></img> |
+| :-: | :-: | :-: | :-: | :-: |
+| [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
+
+</div>
 
 
 ## :rocket: Alternative Funding Sources
@@ -310,22 +311,26 @@ From time to time, Web3 Foundation and/or Parity organise hackathons to promote 
 
 The best way to find out about upcoming hackathons is by following Polkadot on the various social channels, such as Element or Twitter.
 
-### Other Grant Programs
+### Other Grant or Bounty Programs
 
-Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
+Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
 - [Acala Grants Program](https://acala.network/ecosystem-program)
+- [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program) 
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [ink!ubator](https://use.ink/ubator/)
 - [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
+- [KodaDot Ecosystem Grants](https://github.com/kodadot/grants)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/)
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
+- [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 
 ## :information_source: License<!-- omit in toc -->
