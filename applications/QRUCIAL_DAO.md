@@ -4,8 +4,8 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Team Name:** QRUCIAL OÜ
-- **Payment Address:** BTC - bc1qwr7awq55z2udjvxj0ar7qfeasf70fasee8fxf2
+- **Team Name:** QRUCIAL DAO
+- **Payment Address:** BTC - 32V2Qmk2xNVddNNvwxGPDhdsofLJr6Gcsa
 - **Level:** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -84,25 +84,23 @@ CCTF provides a proven track record of hackers solving challenges and based on t
 ### Team members
 
 - Web3 Architect: six / David Pethes - CTO of QRUCIAL, Founder of CCTF, Polkadot Head Ambassador of Eastern Europe
-- Business Architect: ra33it0 / Sebastian Kraus - CEO of QRUCIAL, EFF member
 - Runtime Developer: Wigy / - Senior Rust developer, Ex-Parity substrate core developer
-- Full-stack Developer: Silur / Ábrahám Endre - Researcher at Hungarian Academy of Sciences (MTA), Ex-Ethereum Foundation developer
-- DevOps Engineer: knockoff / Nico Selby - R&D team manager at QRUCIAL
+- Frontend Developer: kmildi / Ildiko Keleti - Senior Web3 Frontend developer
 
 ### Contact
 
 - **Contact Name:** six / David Pethes
-- **Contact Email:** hello@qrucial.io
+- **Contact Email:** six@cryptoctf.org
 - **Website:** qrucial.io
 
 ### Legal Structure
 
 - **Registered Address:** Harju maakond, Tallinn, Kesklinna linnaosa, Narva mnt 7-652, 10117
-- **Registered Legal Entity:** QRUCIAL OÜ, Registration number: 16357543
+- **Registered Legal Entity:** Crypto CTF OÜ, Registration number: 16156552
 
 ### Team's experience
 
-QRUCIAL OÜ is a web3 security company.
+QRUCIAL is a web3 security DAO.
 
 This is the first time we apply for a grant.
 
@@ -170,7 +168,7 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 
 ### Milestone 2 — Implement Exogenous tooling and hardened node system
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 2 months (final delivery in 2023 June)
 - **FTE:**  0.7 FTE
 - **Costs:** 20,000 USD
 
@@ -188,9 +186,8 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 
 ## Future Plans
 
-- In the short term, we'd like to have the grant, so development goes faster. QRUCIAL as a company will keep funding the project until it becomes self-sustaining (meaning, the governance system keeps the DAO running on its own).
+- In the short term, we'd like to have the grant, so development goes faster. QRUCIAL DAO keeps funding the project on its own.
 - CCTF (cryptoctf.org) is already a partner, helping to bring the best web3 hackers to the system.
-- Elfz'n'Trollz is a marketing partner, so we don't just develop a DAO, but also make it usable and visually acceptable to all audiences.
 - After final milestone, we will start building a larger community for QRUCIAL DAO and improve our partnership with CCTF.
 
 ## Additional Information :heavy_plus_sign:

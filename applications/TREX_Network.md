@@ -231,6 +231,10 @@ In the current stage, our first milestone is to deliver an early demonstration u
 At the next level, our second milestone is integrating the TOCW with our network under our particular consensus and mechanism. We will also implement key splitting as a third milestone to enhance the security and reliability of our system at the next level.
 Finally, our fourth milestone is the implementation of XCMP for cross-chain applications.
 
+### Overview
+
+- **Total Costs:** 10,000 USD
+
 
 ### Milestone 1 — Implement TREX network as a Polkadot para-chain
 

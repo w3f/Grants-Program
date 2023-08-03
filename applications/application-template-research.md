@@ -4,7 +4,7 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 - **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -22,6 +22,7 @@ Please provide the following:
 - A brief description of your project.
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 - An indication of why your team is interested in creating this project.
+- An indication if your project is academic research, i.e., intended to be published in an academic peer-reviewed venue, or a technical one, to be published as a technical report on the internet. 
 
 ### Project Details
 
@@ -99,14 +100,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 If you've already started working on your project or it is part of a larger project, please provide a link and a description of the research here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
+- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
 - academic publications relevant to the problem,
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the research development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories, including research [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the deliverable we should expect in as much detail as possible_, plus how we can verify that deliverable. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+This section should break the research development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories, including research [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the deliverable we should expect in as much detail as possible_, plus how we can verify that deliverable. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
 Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
 
@@ -132,7 +133,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
 | **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
 | **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
-| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.). For level 2 and 3 grants, the article must contain the following statement in an acknowledgments section:  This work was supported by a research grant from the Web3 Foundation.  |
 | 1. | List of academic papers regarding X | We will systematically search the literature about X and deliver a list of papers to read with web links to them |
 | 2. | Data to be extracted from the papers | Data fields with the explanation of each that will be extracted from the papers ... |
 | 3. | Analysis procedures | We gonna describe all the procedures planned for the analysis that will be conducted in the next milestone ... |
@@ -158,7 +159,7 @@ Please include here
 
 You can find more information about the program [here](../README.md#moneybag-referral-program).
 - **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 

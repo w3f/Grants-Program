@@ -1,7 +1,7 @@
 # Substats (The framework of lightweight block explorer)
 
 - **Team Name:** CESS LAB
-- **Payment Address:** 0x41fC582784745Ec6B4860F47808b988a473fcEFc(USDT)
+- **Payment Address:** 0x96a661ee0D829DF7c424D4415a51FFc256EEEd8A(USDC)
 - **Level:** 2
 
 ## Project Overview 

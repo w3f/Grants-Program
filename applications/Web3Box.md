@@ -39,9 +39,9 @@ Web3Box Dashboad Preview
 
 ### Contact
 
-- Contact Name: Andrew 
-- Contact Email: andrew@web3box.cc
-- Website: https://web3box.cc
+- **Contact Name:** Andrew 
+- **Contact Email:** andrew@web3box.cc
+- **Website:** https://web3box.cc
 
 ### Legal Structure
 
@@ -66,6 +66,12 @@ Web3Box has confirmed the overall architecture. And now, Web3Box is confirming t
 - Build tool: Webpack
 
 ## Development Roadmap
+
+### Overview
+
+- **Total Estimated Duration:** 6 weeks
+- **Full-Time Equivalent (FTE):** 2
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 - Dashboard / Multi-chain Wallet
 
