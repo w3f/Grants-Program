@@ -178,11 +178,11 @@ Our current, but still incipient, improvement proposals are mainly described in 
 - **Full-Time Equivalent (FTE):**  1,5 FTE
 - **Total Costs:** 30,000 USD
 
-### Milestone 1 — Basic functionality
+### Milestone 1 - Basic functionality
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 months
 - **FTE:**  1,5
-- **Costs:** 5,000 USD
+- **Costs:** 10,000 USD
 
 <!-- > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.  -->
 
@@ -194,16 +194,14 @@ Most of the work in this milestone has been started and can be seen in the repos
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article / Whitepaper | We will publish an **article** / whitepaper that explains how the oracle system will function autonomously |
-| 1. | Pallet Registry | Pallet responsible for registring and recording relevant information about new feeds |
-| 2. | Pallet Oracle | Pallet that holds main logic for getting feed data, aggregating data and delivering it to end users. |
-| 3. | Pallet Anchor | Pallet that holds logic for interacting with the outside world (offchain workers, Phat contracts, ...) |
-| 4. | Paraxiom chain | Pallets Registry, Oracle and Anchor are the main components of the Paraxiom system chain, as described in the _architecture_ diagram above. |
+| 1. | Article / Whitepaper | We will publish an article / whitepaper that explains how the oracle system will function autonomously |
+| 2. | Pallet Registry | Pallet responsible for registring and recording relevant information about new feeds |
+| 3. | Pallet Oracle | Pallet that holds main logic for getting feed data, aggregating data and delivering it to end users. |
+| 4. | Pallet Anchor | Pallet that holds logic for interacting with the outside world (offchain workers, Phat contracts, ...) |
 
+### Milestone 2 - XCM Integration
 
-### Milestone 2 — Offchain features
-
-The milestone 2 is dedicated to developing the offchain parts.
+The milestone 2 is dedicated to improving the offchain parts and integrating XCM.
 
 - **Estimated Duration:** 2 months
 - **FTE:**  1,5
@@ -211,24 +209,24 @@ The milestone 2 is dedicated to developing the offchain parts.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Offchain worker | |
-| **0b.** | Phat contracts | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0c.** |  |  
-| **0d.** |  |  
+| 1. | Offchain workers | Integrate regular OCW as *one* of the offchain solutions |
+| 2. | Phat contracts | Integrate Phala's Phat Contracts as *one* of the offchain solutions  |
+| 3. | Research more ways to get offchain data |  Research and implement other ways to get data.
+| 4. | E2E tests with RPC calls | We will have E2E tests using RPC calls|
+| 5. | E2E tests with XCM | We will have E2E tests using RPC calls. |
 
 ### Milestone 3 - Staking / Slashing
 The last milestone is dedicated to implementing the staking / slashing mechanism for the oracle system.
  
-- **Estimated Duration:** 3 months
+- **Estimated Duration:** 2 months
 - **FTE:**  1,5
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** |  | |
-| **0b.** |  | |
-| **0c.** |  |  
-| **0d.** |  |  
+| 1.| Aggregation | Research and implement interesting and statistically sound aggregation methods so we can integrate them in the slashing mechanism. |
+| 2. | Design and implement Staking / Slashing mechanism | Research and implement game-theoretic ways of making the oracle system safe. |
+
 
 ## Future Plans
 
