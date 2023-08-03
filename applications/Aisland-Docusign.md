@@ -141,8 +141,8 @@ Samuele Landi
 
 ### Legal Structure
 
-- **Registered Address:** Arabian Gulf, drifting up and down with the tide.
-- **Registered Legal Entity:** Aisland Dao
+- **Registered Address:** Unit No: 1508,DMCC Business Centre, Dubai - United Arab Emirates
+- **Registered Legal Entity:** Samra Consulting dmcc
 
 ### Team's experience
 
