@@ -52,7 +52,7 @@ Here a few screenshots:
 The project proposal consists in adding a new set of features to make a production ready version, comparable to the best WEB2 solution offering like https://docusign.com.  Here is the list of the new features to be added:  
   
 1) Standard Signatures Management to allow the user to set his own standard signature image.  
-2) Signature Marker, to allow the placing of signatures onthe document for a visual improvement.  
+2) Signature Marker, to allow the placing of signatures on the document for a visual improvement.  
 3) Document Encrytion, to manage the privacy of the documents even when saved on chain.  
 4) PDF outout of the signed agreement with veriable QR code.  
 5) Storage of the encrypted documents on the blockchain.  
