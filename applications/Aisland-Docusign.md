@@ -1,4 +1,4 @@
-# Aisland Docusign
+# Aisland Docsig
 
 - **Team Name:** AISLAND DAO
 - **Payment Address:** 0x78A4C8624Ba26dD5fEC90a8Dc9B75B4E3D630035 USDC/Ethereum
@@ -7,11 +7,11 @@
 
 ### Overview
 
-Aisland Docusign allows to e-sign documents, exchange easily and store permanently on chain as legal proof. 
-POC/MVP is available at [https://docusign.aisland.io](https://docusign.aisland.io)  
+Aisland DocSig allows to e-sign documents, exchange easily and store permanently on chain as legal proof. 
+POC/MVP is available at [https://docsig.aisland.io](https://docsig.aisland.io)  
 Faucet for testing: [https://testnet.aisland.io:8443](https://testnet.aisland.io:8443)  
 
-Aisland Docusign (in short ADC) solves the problem of exchanging signed agreements and storing them permanently with legal validity.  The user can authenticate using his/her own wallet, create a blank document and edit, or clone a public template or upload a document.
+Aisland DocSig (in short ADC) solves the problem of exchanging signed agreements and storing them permanently with legal validity.  The user can authenticate using his/her own wallet, create a blank document and edit, or clone a public template or upload a document.
 ADC keeps a copy of the different drafts till the first signature is applied.  
 A secret link is generated to request the signing to the counterpart.  
 The workflow provide visibility on the different status of the documents: Draft, Waiting (for signing), Completed (all parties have signed), Rejected (one party rejected it).  
@@ -28,7 +28,7 @@ The decentralized e-signing of documents is one of the many tools that every fre
 ### Project Details
 
 Preface:  
-We have already developed a minimum viable product (MVP) that is available at [https://docusign.aisland.io](https://docusign.aisland.io). The current MVP is offering the following features:
+We have already developed a minimum viable product (MVP) that is available at [https://docsig.aisland.io](https://docsig.aisland.io). The current MVP is offering the following features:
 
 - Dashboard to manage the workflow
 - Create/Edit a document on-line using the block editor (editor.js).  
@@ -40,13 +40,13 @@ We have already developed a minimum viable product (MVP) that is available at [h
 - Delete the document in drafts
 - Rejects the signature on proposed documents for signing.
 Here the workflow:
-![Workflow](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-workflow.png)
+![Workflow](https://github.com/aisland-dao/docsig/blob/main/img-docs/docusign-workflow.png)
 
 Here a few screenshots:
-![Dashboard](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-dashboard.png)  
-![Operations](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-operations.png)  
-![Blank Document](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-blankdocument.png)
-![Signing](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signing.png)  
+![Dashboard](https://github.com/aisland-dao/docsig/blob/main/img-docs/docusign-dashboard.png)  
+![Operations](https://github.com/aisland-dao/docsig/blob/main/img-docs/docusign-operations.png)  
+![Blank Document](https://github.com/aisland-dao/docsig/blob/main/img-docs/docusign-blankdocument.png)
+![Signing](https://github.com/aisland-dao/docsig/blob/main/img-docs/docusign-signing.png)  
 
   
 The project proposal consists in adding a new set of features to make a production ready version, comparable to the best WEB2 solution offering like https://docusign.com.  Here is the list of the new features to be added:  
@@ -61,9 +61,9 @@ The project proposal consists in adding a new set of features to make a producti
 8) Enhanced templates, to manage also private templates.  
 
 Technology Stack:
-- The blockhain side is based on a custom pallet named [docusign](https://github.com/aisland-dao/aisland-node/tree/main/pallets/docusign).  
+- The blockhain side is based on a custom pallet named [docsign](https://github.com/aisland-dao/aisland-node/tree/main/pallets/docsig).
 
-- The [Dapp](https://github.com/aisland-dao/docusign) is built on HTML,CSS and vanilla javascript for the client side. It's built with Javascript/Nodejs for the Server component. It's working with Polkdato Extension and Subwallet.
+- The [Dapp](https://github.com/aisland-dao/docsig) is built on HTML,CSS and vanilla javascript for the client side. It's built with Javascript/Nodejs for the Server component. It's working with Polkdatot Extension and Subwallet.
 
 Requirements:  
 - Nodejs  
@@ -77,14 +77,14 @@ Here is the list of deliverables new features in much more details:
 1) Standard Signature Image - Manage the setting of the standard signature image, selecting from multiple auto-generated signatures or one uploaded. The Dapp shwillould auto-generate multiple style of signatures starting from a text using cursive fonts.  
 We will use a set of 50 cursive fonts to generate the signature image. A considerable selection of free cursive fonts are available here: [https://www.1001fonts.com/cursive+signature-fonts.html](https://www.1001fonts.com/cursive+signature-fonts.html).  
 The upload of a scanned image in png/jpg/webp or svg format is not a challenge.  
-Here an example from Docusign.com:
-![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-standardsignatures.png)  
+Here is an example:
+![Signature Example](https://github.com/aisland-dao/docsig/blob/main/img-docs/docusign-standardsignatures.png)  
 
 
 2) Signature Marker - We will create a plugin for editor.js to mark the place where the signatures shall be placed. Once the document is signed, the selected signatures will be shown in the document.
 [https://editorjs.io/](https://editorjs.io/) is a free block editor for javascript that is composable by plugins. We used such editor in the current MVP. It save the document in a clean json format.  
-Here an example from Docusign.com:  
-![Signature Example](https://github.com/aisland-dao/docusign/blob/main/img-docs/docusign-signatureexample.png)  
+Here is an example:
+![Signature Example](https://github.com/aisland-dao/docsig/blob/main/img-docs/docusign-signatureexample.png)  
 
 
 3) Encryption - For enhanced privacy the documents and other metadata shall be encrypted as follows:
@@ -153,7 +153,7 @@ Samuele Landi is a long term developer for secure communications and web3 projec
 
 - [https://github.com/aisland-dao/aisland-node](https://github.com/aisland-dao/aisland-node)
 - [https://github.com/aisland-dao/dex](https://github.com/aisland-dao/dex)
-- [https://github.com/aisland-dao/docusign](https://github.com/aisland-dao/docusign)
+- [https://github.com/aisland-dao/docsig](https://github.com/aisland-dao/docsig)
 - [https://github.com/aisland-dao/aisland-store-web-server](https://github.com/aisland-dao/aisland-store-web-server) (private repo we can give access)
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
@@ -170,13 +170,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 ## Development Status :open_book:
 
 We have already developed a POC/MVP with a dedicate pallet on Substrate:  
-[https://github.com/aisland-dao/aisland-node/tree/main/pallets/docusign](https://github.com/aisland-dao/aisland-node/tree/main/pallets/docusign)  
+[https://github.com/aisland-dao/aisland-node/tree/main/pallets/docsig](https://github.com/aisland-dao/aisland-node/tree/main/pallets/docsig)  
   
 and a Dapp:  
-[https://github.com/aisland-dao/docusign](https://github.com/aisland-dao/docusign)  
+[https://github.com/aisland-dao/docsig](https://github.com/aisland-dao/docsig)  
 
 An live demo is available at:  
-[https://docusign.aisland.io](https://docusign.aisland.io)  
+[https://docsig.aisland.io](https://docsig.aisland.io)  
 
 
 ## Development Roadmap :nut_and_bolt:
@@ -200,7 +200,7 @@ An live demo is available at:
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. The language will be English and it will be published also in our media channels |
-| 1. | Substrate module: pallet-docusign | We will implement the current pallet-docusign to allow the storage on chain of the documents within certain size limits |
+| 1. | Substrate module: pallet-docsig | We will implement the current pallet-docsig to allow the storage on chain of the documents within certain size limits |
 | 2. | Dapp Feature: Standard Signature Image |We will add the new feature to manage the standard signatures as described at the point 1 of "Details of the Proposal"|
 | 3. | Dapp Feature: Signature Marker | We will create a plugin for editor.js to allow the placing of the signature marker as described at the point 2 of "Details of the Proposal"|
 | 4. | Dapp Feature: Encryption | We will implement the encryption as described at the point 3 of "Details of the Proposal"|
@@ -229,7 +229,7 @@ An live demo is available at:
 
 - We will add the possibility to make escrow payments in the execution of the agreements signed.  
 - We will add a decentralized arbitration service in case of litigations to be settled.
-- We wil promote the docusign within the Web3 and Seasteader community. Aisland has signed an agreement with Liberland to develop a bigger floating city from this outpost and we will push to let become docusign the standard method to sign agreements: [https://liberland.org/en/news/434-memorandum-of-understanding-with-aisland](https://liberland.org/en/news/434-memorandum-of-understanding-with-aisland)  
+- We wil promote the docsig within the Web3 and Seasteader community. Aisland has signed an agreement with Liberland to develop a bigger floating city from this outpost and we will push to let become DocSig the standard method to sign agreements: [https://liberland.org/en/news/434-memorandum-of-understanding-with-aisland](https://liberland.org/en/news/434-memorandum-of-understanding-with-aisland)  
 Aisland Dao will develop other Dapp to help the transiction from web2 to web3.  
 
 ## Referral Program (optional) :moneybag: 
