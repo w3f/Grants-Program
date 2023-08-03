@@ -206,17 +206,17 @@ By maintaining the wallet selector for seamless switching between NEAR and Polka
 | **0b.** | Documentation | We will provide **documentation** of the app changes and **video guidance** of how to utilize native DOT currency inside the Myriad Social application environment. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Native Currency Integration | We will enable DOT as well as other tokens in Polkadot ecosystem as a way of interacting inside our app for tipping and other upcoming features. |
+| 1. | Native Currency Integration | We will enable tokens native to the Polkadot ecosystem as a way of interacting inside our app for tipping and other upcoming features. |
 | 2. | Wallet Integration | We will update the current wallet requirement to allow polkadot based wallet login into Myriad app.|
 
-Myriad Social will utilize DOT within its app environment and incorporate DOT tokenomics, adding to the utility of the DOT native token. 
+Myriad Social will utilize native tokens within Polkadot ecosystem within its app environment and incorporate their tokenomics, adding to the utility of the native tokens.
 
 **Please note that Myriad Social has already enabled DOT as a tipping option within the Myriad application.*
 
-Our additional work product with the granting of this grant would allow us to develop and offer more features for the DOT ecosystem community, such as:
+Our additional work product with the granting of this grant would allow us to develop and offer more features for the token ecosystem community, such as:
  
-- The ability for Myriad Users to unlock a Premium Post within Myriad using DOT.
-- The ability to utilize other Dotsama tokens within the Myriad app.
+- The ability for Myriad Users to unlock a Premium Post within Myriad using tokens native to the Polkadot ecosystem.
+- The ability to utilize other standard tokens within the Polkadot ecosystem within the Myriad app.
 
 ### Milestone 3 — UI Revamp and Enhancement
 
@@ -234,13 +234,17 @@ Our additional work product with the granting of this grant would allow us to de
 | 2. | Back End: Improve Algorithm | We will update our algorithm to provide a better way to get trending timelines and hashtags so that user can discover current popular timelines/posts/tags, rather than those that have been in the spotlight for some time.|
 | 3. | Performance improvemment | We will do code refactoring and optimization in order to enhance app performance, ensuring a faster and smoother user experience.|
 
-Optimizing the Myriad Social User and Developer experience for Polkadot standards will allow all Polkadot Ecosystem Users and Developers to enjoy and integrate the Myriad appchain.
-
+Optimizing the Myriad Social User and Developer experience for Polkadot standards will allow all Polkadot Ecosystem Users and Developers to enjoy and integrate the Myriad appchain:
+- General security hardening
+- Social Media API update
+- Mobile wallet compatibility 
+- Addition of importing capabilities (maybe there's a couple of social sites in the Polkadot ecosystem we could add?) 
+- Some refactoring for ease of deployment (instances)
 
 ## Future Plans
 
 - Myriad social intends to promote the upgrade process to our community in Telegram, Discord, and other social platforms, as well as working with Octopus to publish the activity in their official channels
-- The team will continue working on the Phase 3 (NFT, Social Token, Chat, etc) in the newly deployed ecosystem on Kusama
+- The team will continue working on the Phase 3 (NFT, Social Token, Chat, etc) in the newly deployed ecosystem
 
 ## Referral Program (optional) :moneybag: 
 
