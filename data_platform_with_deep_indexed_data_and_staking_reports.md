@@ -18,7 +18,7 @@ Dune analytics success and arising 15+ Dune-like platforms are the evidence that
 
 [P2P.org](http://P2P.org) is one of the biggest validators that is participate in more than 40 POS chains. That is why the need of data, monitoring, performance analysis are the core problems in decision making for us. We’ve started to develop our data function from using external platforms such as Dune but soon we found out that there is no such platform or platforms that could help with even the most common challenges according to data needs:
 
-- **data covering**: no Polkadot data and off-chain data about deFi protocols such as Chainlink on Moonriver;
+- **data covering**: no Polkadot data and off-chain data about deFi protocols such as Chainlink;
 - **absent of the streaming** doesn’t allow to receive the data close-to-real time which makes it unacceptable for pro-reactive tasks such as performance monitoring;
 - **threshold for entering analytics**: we have high skilled data analyst who can work with any data but for business people it is impossible to get answer about new metric very quick.
 
@@ -115,7 +115,7 @@ There are two ways to create report based on raw layer:
 
 Second option is for popular/the most important reports which are accepted by admin users (p2p.org DWH team).
 
-Initially the solution will contain reports about staking in Polkadot/Kusama/Moonbeam/Moonriver:
+Initially the solution will contain reports about staking in Polkadot/Kusama/Evm parachains:
 
 - active set of validators per epoch
 - stake amount between nominator and validator for every epoch
@@ -136,9 +136,7 @@ Polkadot SLI (based on history for internal consumption):
 - Blocks processed correctly in first attempt (others are fixed automatically): ~ 99%
 - Staking SLI: 100% (no problems detected)
 
-Kusama and Moonbeam are mostly similar.
-
-Moonriver sli:
+Parachains sli:
 
 - Block processing mean time: 914 msec (min - 81 msec, max- 98 sec)
 - Mean latency between block in RPC node to block in database: ~ 95 сек (min - 12 sec, max 240 sec)
@@ -218,7 +216,7 @@ We suggest proposal with 1 milestone to:
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to run indexer locally, set up data base (DWH), and run BI. |
 | 1. | Develop the ETL component | The result of developing ETL component contains the docker with Mbelt (indexer) and Airflow with DAGs to write indexer’s output into DWH (data base). |
-| 2. | Publish DWH data | Our goal for publishing data is: providing raw (indexer’s data) data into public bigQ project with the ability to query and use this data for public users. The chains are Polkadot, Kusama, Moonbeam, Moonriver. We would also provide reports about staking on top of raw data in chains above. The additional result is SLI/SLO dashboard of ETL process to provide more transparency for users. |
+| 2. | Publish DWH data | Our goal for publishing data is: providing raw (indexer’s data) data into public bigQ project with the ability to query and use this data for public users. The chains are Polkadot, Kusama, EVM parachains. We would also provide reports about staking on top of raw data in chains above. The additional result is SLI/SLO dashboard of ETL process to provide more transparency for users. |
 | 3. | Forking Superset | Forking Superset will allow us to modify sign-in page to provide new users to join. We will make some changes on UI side to improve user’s experience as well. |
 
 
