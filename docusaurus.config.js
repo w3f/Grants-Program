@@ -6,11 +6,11 @@ const mdxMermaid = require('mdx-mermaid');
 module.exports = {
   title: 'Web3 Foundation Grants',
   tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama.',
-  url: 'https://w3f.github.io',
-  baseUrl: '/Grants-Program/',
+  url: 'https://grants.web3.foundation',
+  baseUrl: '/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/Web3Foundation.png',
+  favicon: 'img/favicon-32x32.png',
   organizationName: 'w3f', // Usually your GitHub org/user name.
   trailingSlash: false,
   projectName: 'Grants-Program', // Usually your repo name.
@@ -28,32 +28,34 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Check out <a target="_blank" rel="noopener noreferrer" href="https://web3.bamboohr.com/jobs/">our current job openings</a>!',
+        'Check out our <a target="_blank" rel="noopener noreferrer" href="https://medium.com/web3foundation/web3-foundation-grants-wave-18-recipients-9ce442a88c48">Wave 18 blogpost</a>',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
     },
     navbar: {
-      title: 'W3F Grants Program',
+      title: 'Grants Program',
       logo: {
         alt: 'W3F Grants Program',
-        src: 'img/Web3Foundation.png',
+        src: 'img/w3f_logo.svg',
       },
       items: [
         {
           type: 'doc',
           docId: 'docs/introduction',
+          position: 'right',
           label: 'Introduction',
         },
         {
           type: 'doc',
           docId: 'applications/index',
-          position: 'left',
+          position: 'right',
           label: 'List of Grants',
         },
         {
           type: 'doc',
           docId: 'docs/faq',
+          position: 'right',
           label: 'FAQ',
         },
         {
@@ -61,12 +63,6 @@ module.exports = {
           docId: 'docs/Process/how-to-apply',
           position: 'right',
           label: 'Apply',
-        },
-        {
-          type: 'doc',
-          docId: 'docs/contribute',
-          position: 'right',
-          label: 'Contribute',
         }
       ],
     },

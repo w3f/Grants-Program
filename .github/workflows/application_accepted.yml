@@ -85,7 +85,7 @@ jobs:
                     "",
                     "",
                     "Signed",
-                    "https://github.com/w3f/Open-Grants-Program/pull/${{ github.event.pull_request.number }}",
+                    "https://github.com/w3f/Grants-Program/pull/${{ github.event.pull_request.number }}",
                     "${{ steps.date.outputs.date }}"
                   ]],
                   "worksheetTitle": "Legal",

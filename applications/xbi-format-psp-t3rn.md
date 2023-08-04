@@ -173,7 +173,7 @@ XBI payload lifecycle can be directed by developers using metadata. XBI Executor
 
 ### Ecosystem Fit
 
-t3rn is a cross-chain smart contracts registry that enable smart contracts execution on mulitple blockchians. The XCM-based Interface will come in a form of a FRAME pallet and will be used by t3rn and any other Substrate-based project that wishes to use it.
+t3rn is a cross-chain smart contracts registry that enable smart contracts execution on multiple blockchians. The XCM-based Interface will come in a form of a FRAME pallet and will be used by t3rn and any other Substrate-based project that wishes to use it.
 
 The XBI Format and XBI Executors for cross-chain smart contracts will be tested live in a XCM Environment, such as the Rococo network with other selected Substrate builders.
 
@@ -232,7 +232,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 This is the research-focused grant proposal on XBI which is assumed to be followed up with the grant focused solely on its implementation.
 
-XBI will help contribute to the t3rn vision of a fully connected cross-chain ecosystem, rooted in Polkadot. For the context, t3rn is building a cross-chain smart contract hosting platform that enable smart contracts execution on mulitple blockchians.
+XBI will help contribute to the t3rn vision of a fully connected cross-chain ecosystem, rooted in Polkadot. For the context, t3rn is building a cross-chain smart contract hosting platform that enable smart contracts execution on multiple blockchians.
 
 ## Additional Information :heavy_plus_sign:
 
