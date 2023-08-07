@@ -53,6 +53,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Orochi Network](https://www.orochi.network/)                                 | [Research and development MPC ECDSA](./orochi-network-orosign-part1.md)   | [GitHub](https://github.com/orochi-network)                               | ☐          |        ☐       |      ☐     |
 | [k/factory](https://k-f.co/)                                 | [On-Chain Automated Treasury Management](./centrifuge-twamm.md)   | [GitHub](https://github.com/centrifuge)                               | ☐          |        ☐       |      ☐     |
 | [AISLAND DAO](https://aisland.io)                                 | [Aisland Docsig](./Aisland-DocSig.md)   | [GitHub](https://github.com/aisland-dao)                               | ☐          |        ☐       |      ☐     |
+| [Eiger](https://www.eiger.co/)                                 | [Storage solution on Polkadot](./Eiger_Storage_on_Polkadot_1.md)   | [GitHub](https://github.com/eigerco)                               | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
