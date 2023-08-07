@@ -133,7 +133,7 @@ We validated the idea of the analysis and development described in this applicat
 ### Milestone 2: Execution
 - **Estimated duration:** 4 weeks
 - **FTE:** 2.75
-- **Costs:** U$D27,000
+- **Costs:** 27,000 USD
 
 | Number | Deliverable | Specification |
 | ----- | ----------- | ------------- |
