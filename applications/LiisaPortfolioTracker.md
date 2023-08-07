@@ -215,7 +215,7 @@ The NFTs page offers users a technical and visually engaging interface to view t
 - Token Metrics: Showing estimated value, acquisition price, unrealized PNL, and 24-hour sales for each collection;
 - Filtering and Sorting: Allowing users to sort and filter NFTs based on metrics like collection sales and estimated value.
 
-![Portfolio tracker #1 (1)](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/c8b1dde7-d548-4153-92d7-064b4f0f3ada)
+![Portfolio_tracker_2_1](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/ca77234f-dba4-4ede-8860-981d958ba3fd)
 
 
 ### Individual item page
