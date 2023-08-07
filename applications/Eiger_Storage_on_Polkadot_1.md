@@ -89,19 +89,20 @@ In addition to this research and updating the code, we will also test how XCM co
 
 Two engineers will work together and in parallel to deliver these 3 subcomponents:
 
-1. Update the research done previously to reflect latest tech changes in Polkadot and Substrate
-2. Update the [code delivered in CGS](https://github.com/common-good-storage/parachain) or start fresh, whichever makes most sense
-3. Research and test how XCM can be used
+1. Update the research done previously to reflect latest tech changes in Polkadot and Substrate. We want to figure out what it would take to implement a whole storage solution as a parachain without depending on 3rd part chains and evaluate what components need to be written from scratch and what can be reused. 
+2. Update the [code delivered in CGS](https://github.com/common-good-storage/parachain) or start fresh, whichever makes most sense. The scope of this is to deliver scafolding/template repository with boilerplace and dummy funcitonality. On top of this we can then test the milesone #3 below.
+3. Research and test how XCM can be used. Using the scafolding code from #2 we can test how XCM can be used to access the storage from a different parachain.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | Copyright and Licenses | Apache 2.0 and MIT |
 | **0b.** | Documentation/Tutorial | We will provide both inline documentation of the POC code and a basic tutorial that explains how a user can run the same test. |
 | **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
-| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
+| **0d.** | Infrastructure | We will provide the list of all requirements that can be used to verify the code deliverable with this milestone. This is related to deliverable 0b. Documentation and 0g. Docker |
 | **0e.** | Article | Content: Updated research doc detailing our findings, how the tech has changed and how the solution will look like. |
+| **0f.** | Testing and Testing Guide | We will deliver code that tests how XCM might be used to access this storage parachains. |
+| **0g.** | Docker | Where relevant. we will provide a Dockerfile(s) that can be used to run and test the MVP and the XCM test. |
 | **1.** | Updated CGS code | We will deliver a repositiory with the update MVP code |
-| **2.** | XCM testing | We will deliver code that tests how XCM might be used to access this storage parachain |
 
 
 
