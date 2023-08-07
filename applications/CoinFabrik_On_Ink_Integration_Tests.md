@@ -115,7 +115,7 @@ We validated the idea of the analysis and development described in this applicat
 ### Milestone 1: Analysis
 - **Estimated duration:** 2 weeks
 - **FTE:**  2.75
-- **Costs:** U$D 13,500
+- **Costs:** 13,500 USD
 
 | Number | Deliverable | Specification |
 | ----- | ----------- | ------------- |
