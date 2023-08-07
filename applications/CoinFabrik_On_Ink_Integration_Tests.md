@@ -109,7 +109,7 @@ We validated the idea of the analysis and development described in this applicat
 0.25 Tech Lead,
 1 Full time Sr. Rust Developer,
 1 Full Time SemiSr. Rust Developer)
-- **Total Costs:**  U$D 40,500
+- **Total Costs:**  40,500 USD
 
 
 ### Milestone 1: Analysis
