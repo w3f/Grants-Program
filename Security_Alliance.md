@@ -121,13 +121,13 @@ A bespoke Telegram chatbot which connects users with an assembly of Security All
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** $100,000 USD equivalent
 
-The Security Alliance anticipates 
+Costs per milestone are inclusive of salary/ies for staff to be dedicated full-time to the Security Alliance's efforts for the Polkadot ecosystem and funding to retain/compensate experts in the space.
   
 ### Milestone 1 — Space Assessment 
 
 - **Estimated duration:** 1 month
 - **FTE:**  4
-- **Costs:** 20,000 USD
+- **Costs:** 19,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
@@ -149,7 +149,7 @@ The Security Alliance anticipates
 
 - **Estimated Duration:** 1 month
 - **FTE:**  4
-- **Costs:** 10,000 USD
+- **Costs:** 12,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -169,7 +169,7 @@ The Security Alliance anticipates
 
 - **Estimated Duration:** 1 month
 - **FTE:**  4
-- **Costs:** 30,000 USD
+- **Costs:** 28,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
