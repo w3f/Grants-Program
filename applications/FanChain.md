@@ -6,7 +6,7 @@
 ## Project Overview :page_facing_up:
 ### Overview
 
-FanChain is dedicated to empowering streamers, influencers, and their communities by providing a platform for NFT creation, trading, and community management. By leveraging the power of the Polkadot ecosystem, we aim to create a seamless and secure experience for content creators and their fans.
+FanChain is dedicated to empowering streamers, influencers, and their communities by providing a platform for NFT creation, trading, and community management. By leveraging the power of ink! smart contracts and the Polkadot ecosystem, we aim to create a seamless and secure experience for content creators and their fans.
 
 
 ### Project Details
@@ -18,7 +18,7 @@ FanChain is a platform that enables streamers and influencers to create and issu
 - **Crypto Donations**: Viewers can support their favorite creators by donating cryptocurrency, with donation information displayed during live streams. (Future plan)
 - **Compatibility**: FanChain will be compatible with all Wasm-supporting parachains, including prominent networks such as Astar Network, Phala Network, and more.
 
-Technology Stack: FanChain will be compatible with EVM-supporting parachains, such as Astar Network, Moonbeam, and more, using a combination of NextJS and Node.js for the frontend and backend. The primary smart contract language will be Solidity. For NFT standards, we will use ERC721 and ERC1155 (Future plan), as they are the most widely used NFT standards and are well-supported by EVM-compatible parachains.
+Technology Stack: FanChain will be built using ink! for smart contracts for the underlying blockchain, and a combination of NextJS and Node.js for the frontend and backend.
 
 Architecture Design:
 ![](https://i.imgur.com/cosuZOY.png)
@@ -31,12 +31,13 @@ Tentative Mockups:
 
 ### Ecosystem Fit
 
-The FanChain project will have a significant impact on the Polkadot ecosystem by demonstrating the capabilities and versatility of NFTs in the context of community management.
-- **Increased adoption**: By providing a user-friendly platform for creators to issue NFTs and manage their communities, FanChain will attract more users to the Polkadot ecosystem. This increased adoption will raise awareness of Polkadot potential and versatility for various applications.
-- **Innovation and exploration of new use cases**: The FanChain platform will encourage innovation in the NFT space. This could inspire other projects to leverage Polkadot for their applications, further expanding the ecosystem.
-- **Collaboration and partnerships**: FanChain's potential partnerships with brands and businesses, and its integration with other social media platforms, will create more opportunities for collaboration within Polkadot ecosystem. This can lead to the development of new solutions and further expansion of the ecosystem.
+The FanChain project will have a significant impact on the ink! ecosystem by demonstrating the capabilities and versatility of ink! smart contracts in the context of NFTs and community management.
+- **Increased adoption**: By providing a user-friendly platform for creators to issue NFTs and manage their communities using ink! smart contracts, FanChain will attract more users to the ink! ecosystem. This increased adoption will raise awareness of ink!'s potential and versatility for various applications.
+- **Showcase of ink! smart contracts**: FanChain will serve as an example of how ink! smart contracts can be employed to create secure, efficient, and scalable NFT and community management solutions. This will help establish ink! as a preferred framework for developers working on similar projects.
+- **Innovation and exploration of new use cases**: The FanChain platform will encourage innovation in the NFT space and uncover new use cases for ink! smart contracts. This could inspire other projects to leverage ink! for their applications, further expanding the ecosystem.
+- **Collaboration and partnerships**: FanChain's potential partnerships with brands and businesses, and its integration with other social media platforms, will create more opportunities for collaboration within the ink! ecosystem. This can lead to the development of new ink!-based solutions and further expansion of the ecosystem.
 
-Overall, the FanChain project will not only showcase the capabilities of NFTs but also promote their adoption, interoperability, and innovation within the Polkadot ecosystem. 
+Overall, the FanChain project will not only showcase the capabilities of ink! smart contracts but also promote their adoption, interoperability, and innovation within the Polkadot ecosystem. This will contribute to the growth and expansion of the ink! ecosystem as a whole.
 
 ## Team :busts_in_silhouette:
 
