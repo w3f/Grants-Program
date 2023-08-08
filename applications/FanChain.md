@@ -18,7 +18,7 @@ FanChain is a platform that enables streamers and influencers to create and issu
 - **Crypto Donations**: Viewers can support their favorite creators by donating cryptocurrency, with donation information displayed during live streams. (Future plan)
 - **Compatibility**: FanChain will be compatible with all Wasm-supporting parachains, including prominent networks such as Astar Network, Phala Network, and more.
 
-Technology Stack: FanChain will be compatible with EVM-supporting parachains, such as Astar Network, Moonbeam, and more, using a combination of NextJS and Node.js for the frontend and backend.
+Technology Stack: FanChain will be compatible with EVM-supporting parachains, such as Astar Network, Moonbeam, and more, using a combination of NextJS and Node.js for the frontend and backend. The primary smart contract language will be Solidity. For NFT standards, we will use ERC721 and ERC1155 (Future plan), as they are the most widely used NFT standards and are well-supported by EVM-compatible parachains.
 
 Architecture Design:
 ![](https://i.imgur.com/cosuZOY.png)
@@ -74,7 +74,7 @@ Our Head office is located in Hanoi, with representative offices in Danang. We w
 We have successfully developed the [VAR NFT Generator](https://var-nft-generator.vercel.app/), a platform where users can create and customize their own NFT collections, mint NFTs, and sell them directly. This demonstrates our team's expertise in the NFT space and our ability to build user-friendly tools for creators and collectors. By leveraging our experience and technical skills, we are confident in our ability to deliver the FanChain platform as an innovative solution for content creators and their fans within Polkadot ecosystem.
 ### Team Code Repos
 
-As an outsourcing company, we adhere to strict security and confidentiality policies, and we cannot publicly share our source code on GitHub. However, we can provide code samples or demonstrate our expertise through other means, such as technical discussions, presentations, or anonymized case studies, upon request.
+As an outsourcing company, we adhere to strict security and confidentiality policies, and we cannot publicly share our source code on GitHub. However, we can provide code samples or demonstrate our expertise through other means, such as technical discussions, presentations, or anonymized case studies, upon request. We aware that the delivery needs to be open source and publicly shared for this grants program.
 
 ### Team LinkedIn Profiles (if available)
 
@@ -119,7 +119,8 @@ As an outsourcing company, we adhere to strict security and confidentiality poli
 | 3. | Generative NFTs | Provide tools for creating algorithmically generated NFTs, allowing for unique and diverse collections. |
 | 4. | Membership NFTs | Enable the creation of NFTs that grant access to exclusive content, events, or communities. |
 | 5. | Minting | Implement a user-friendly interface for minting and issuing NFTs, with options for limited editions and timed releases. Users can customize various layers and attributes of the NFTs. |
-| 6. | Search and filtering | implement advanced search and filtering options, allowing users to find specific NFTs based on criteria such as creator, rarity, or price. |
+| 6. | Search and filtering | Implement advanced search and filtering options, allowing users to find specific NFTs based on criteria such as creator, rarity, or price. |
+| 7. | Smart Contract | Implement ERC721 smart contracts for NFT creation and management. These smart contracts will handle minting of the NFTs, transfer of ownership, and other necessary operations. |
 
 ### Milestone 2 - Marketplace
 
