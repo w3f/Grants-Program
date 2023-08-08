@@ -230,16 +230,17 @@ Our additional work product with the granting of this grant would allow us to de
 | **0b.** | Documentation | We will provide **documentation** of the app changes and **video guidance** of how to use the new Myriad Social user interface |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Front end: New UI | We will enhance the current interface by making it more intuitive for our users, emphasizing the core features of Myriad and aligning with the new Polkadot based ecosystem. |
-| 2. | Back End: Improve Algorithm | We will update our algorithm to provide a better way to get trending timelines and hashtags so that user can discover current popular timelines/posts/tags, rather than those that have been in the spotlight for some time.|
+| 1. | Front end: New UI | We will update the UI that has the functionality: Polkadot setup, connection, and use user guide (Step by step tooltips), simplified transaction flow for tipping, and creating/revealing exclusive content), token on-ramp, simplified timeline discovery (Timeline search function, revamped layout, revamped flow), and first step guide for new users (Step by step tooltips) |
+| 2. | B2B Features | We will implement multiuser timelines, multiuser accounts, and multiuser content metrics|
 | 3. | Performance improvemment | We will do code refactoring and optimization in order to enhance app performance, ensuring a faster and smoother user experience.|
+| 4. | Authentication improvement | We will implement Personal Access Token and Single Sign On using Myriad API |
+| 5. | Additional Utility-driven Features| We will implement token-gated timelines, as well as token-gated access to content metrics |
+| 6. | Backend: Mobile Wallet| We will implement Myriad connection to polkadot wallet on mobile (currently can only connect to Near wallet)|
+| 7. | Backend: Improved algorithm| We will improve algorithm such as: Native import of embedding of additional platforms (Youtube, Twitch, web content), and refactoring of popularity ranking for timelines, posts and hashtags|
+| 8. | Backend: Improved federated instance (Self-hosted Myriad Server) deployment| We will create additional, simplified documentation for instance deployment, as well as automated/semi-automated Linode instance deployment |
+| 9. | Additional Clients| We will implement Polkadot integration within the Myriad Telegram bot as well as the Myriad Chrome Extension|
 
-Optimizing the Myriad Social User and Developer experience for Polkadot standards will allow all Polkadot Ecosystem Users and Developers to enjoy and integrate the Myriad appchain:
-- General security hardening
-- Social Media API update
-- Mobile wallet compatibility 
-- Addition of importing capabilities (maybe there's a couple of social sites in the Polkadot ecosystem we could add?) 
-- Some refactoring for ease of deployment (instances)
+
 
 ## Future Plans
 
