@@ -129,8 +129,6 @@ Costs per milestone are inclusive of salary/ies for staff to be dedicated full-t
 - **FTE:**  4
 - **Costs:** 19,000 USD
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | No license necessary |
@@ -179,7 +177,7 @@ Costs per milestone are inclusive of salary/ies for staff to be dedicated full-t
 | **0d.** | Docker | N/A |
 | 1. | External legal review | Engage high-end external legal counsel to review, give feedback on, and underwrite the legal efficacy of the reformed version of the WSHC |
 | 2. | External technical review | Engage external technical experts to review and approve the reformed technical aspects of the WSHC for the Polkadot ecosystem |
-| 3. | Community presentation | Present and hold a dialogue with the community regarding the utility, efficacy, and implementation of the WSHC |
+| 3. | Community presentation | Present the WSHC to and hold a dialogue with the community regarding the utility, efficacy, and implementation of the WSHC |
 | 4. | Final reforms | Adjust the texts and technical aspects of the WHSC as necessary after receiving feedback from experts and the community |
 | 5. | Preparation with implentation prospect(s) | Prepare to laung the first implementation(s) of the WSHC in the Polkadot ecosystem |
 
@@ -201,11 +199,11 @@ Costs per milestone are inclusive of salary/ies for staff to be dedicated full-t
 | 2. | ARA test | Undergo proper testing to ensure that the ARA will function as intended |
 | 3. | Store the WSHC on-chain | House the WSHC permanently and accessibly among the Polkadot parachains |
 | 4. | Deploy WSHC | Deploy all aspects of the WSHC |
-
+| 5. | Awareness Campaign | Arrange and activate communication streams among members and allies of the Security Alliance to promote the Whitehat Safe Harbor Constitution for Polkadot |
 
 ## Future Plans
 
-
+The Security Alliance intends to continue building support for the Polkadot ecosystem into as many of its initiatives as possible.
 
 ### Short Term
 
