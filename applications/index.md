@@ -54,6 +54,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [k/factory](https://k-f.co/)                                 | [On-Chain Automated Treasury Management](./centrifuge-twamm.md)   | [GitHub](https://github.com/centrifuge)                               | ☐          |        ☐       |      ☐     |
 | [AISLAND DAO](https://aisland.io)                                 | [Aisland Docsig](./Aisland-DocSig.md)   | [GitHub](https://github.com/aisland-dao)                               | ☐          |        ☐       |      ☐     |
 | [Eiger](https://www.eiger.co/)                                 | [Storage solution on Polkadot](./Eiger_Storage_on_Polkadot_1.md)   | [GitHub](https://github.com/eigerco)                               | ☐          |        ☐       |      ☐     |
+| [Salaheldin Soliman](https://github.com/salaheldinsoliman)                     | [Solang Playground](Solang_Playground.md)                                                              | [GitHub](https://github.com/salaheldinsoliman)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#2023)
 
