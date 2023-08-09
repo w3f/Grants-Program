@@ -2,7 +2,7 @@
 
 - **Team Name:** Mark Van de Vyver [PhD](https://www.student.uwa.edu.au/course/award-verification-service?family=van+de+vyver&family_partial=on&given=mark&search=Search)
 - **Payment Address:** 15WoVugRLfBAogS1FBmhzxVv8WZqZK1z4KKHALijTZfdVcCm (USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up
 
