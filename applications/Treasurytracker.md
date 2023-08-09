@@ -62,9 +62,9 @@ Figma mock ups of the website
 
 The governance website is built using Node.js for the backend and CakePHP for web application. Data is managed with MySQL or MariaDB, while the front-end utilizes JavaScript libraries like Chart.js and jQuery. 
 
-- ![System Architecture](https://github.com/stake-plus/Grants-Program/blob/master/assets/architecture.png)
 - [Database Specification](https://github.com/stake-plus/Grants-Program/blob/master/assets/database_specification.pdf)
 
+![System Architecture](https://github.com/stake-plus/Grants-Program/blob/master/assets/architecture.png)
 
 ### Ecosystem Fit
 
