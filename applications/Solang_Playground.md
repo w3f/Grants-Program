@@ -181,7 +181,7 @@ There were also talks, via mail, with members from the foundation explaining int
 | ------ | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **0a.** | License                    | Apache 2.0                                                                                                                                                            |
 | **0b.** | Documentation             | - We will provide both **inline documentation** of the client code and a readme that shows the build steps of the language server `.wasm` binary. |
-| **0c.** | Testing and Testing Guide  | - The functionalities of the `.wasm` language server will be tested against the existing test suite of the current language server to ensure robustness.<br>- Evaluators can fire up the docker container locally and try to edit Solidity source files with smarts provided from the language server.|
+| **0c.** | Testing and Testing Guide  | - The functionalities of the `.wasm` language server will be tested against the existing test suite of the current language server to ensure robustness.<br/>- Evaluators can fire up the docker container locally and try to edit Solidity source files with smarts provided from the language server.|
 | **0d.** | Docker                     | A docker image will be provided so that an evaluator can easily set it up an try out the client locally.               |
 | 0e.   | Solang Playground Client |  We will provide a functional web editor in which a developer can edit and save Solidity source files with the help of Solang's language server.(documented code base). |
 
@@ -198,8 +198,8 @@ There were also talks, via mail, with members from the foundation explaining int
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0  |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a `readme` that shows how to run and interact with the actix web server. |
-| **0c.** | Testing and Testing Guide | - Unit tests to be provided to test for the compilation result of the web server. The unit tests will be a part of the server's source code. <br> - Test scripts for the client's compile functionality. |
-| **0d.** | Docker | - A `Docker` container will be provided for the actix web server.  <br> - A `Docker compose` script to be provided to build both the client container and the backend container and set their networking. |
+| **0c.** | Testing and Testing Guide | - Unit tests to be provided to test for the compilation result of the web server. The unit tests will be a part of the server's source code. <br/> - Test scripts for the client's compile functionality. |
+| **0d.** | Docker | - A `Docker` container will be provided for the actix web server.  <br/> - A `Docker compose` script to be provided to build both the client container and the backend container and set their networking. |
 |1. |  Initial skeleton  | - The client  should have a `compile` functionality in which the bytecode and metadata can be viewed. This would be done by the interaction with the backend server implemented in this milestone. |
 
 
@@ -231,7 +231,7 @@ There were also talks, via mail, with members from the foundation explaining int
 | **0c.** | Testing and Testing Guide | The added functionality will be tested against the test suite provided in milestone 4  |
 | **0d.** | Docker | Since this milestone is considered added functionality to the client `(milestone 1)`, the docker provided in the first milestone would be updated and a new container for the client will be provided. |
 |**0e.** | Article | I will share a blog-post on multiple platforms inviting Solidity developers to try out Solidity on Substrate using the IDE.|
-| 1.| IDE Improvements | 1- Call a specific function by the click of a button, alongside with the required parameters. E.G. similar to `contracts UI`. (Only possible on the Substrate side)<br>2- Initializing the work-space with an example contract in a Solang project file structure ready for deployment and interaction.
+| 1.| IDE Improvements | 1- Call a specific function by the click of a button, alongside with the required parameters. E.G. similar to `contracts UI`. (Only possible on the Substrate side)<br/>2- Initializing the work-space with an example contract in a Solang project file structure ready for deployment and interaction.
 
 
 ## Future Plans
