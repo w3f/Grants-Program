@@ -27,11 +27,11 @@ Within the following grant, we plan to implement following two analytics:
 
 A Weekly Cumulative Overview: Tracking New Referenda by Project Categories
 
-![]()
+![1](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%201.png)
 
 A Weekly Overview Of Approved Referenda Relative to Referenda Tracks and Requested DOT Fundings
 
-![]()
+![2](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%202.png)
 
 
 
@@ -42,15 +42,15 @@ The summary table with all relevant data will be available to download in severa
 
 A Weekly Overview Of OpenGov Referenda Status and Referenda Tracks
 
-![]()
+![3](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%203.png)
 
 A Weekly Overview Of OpenGov Referenda Results %
 
-![]()
+![4](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%204.png)
 
 Example of future extended analytics
 
-![]()
+![5](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%205.png)
 
 Figma mock ups of the website
 
@@ -63,7 +63,7 @@ Figma mock ups of the website
 The governance website is built using Node.js for the backend and CakePHP for web application. Data is managed with MySQL or MariaDB, while the front-end utilizes JavaScript libraries like Chart.js and jQuery. 
 
 [System Architecture]()
-[Database Specification]()
+[Database Specification](https://github.com/stake-plus/Grants-Program/blob/master/assets/database_specification.pdf)
 
 
 ### Ecosystem Fit
