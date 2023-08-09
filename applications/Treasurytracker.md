@@ -25,11 +25,11 @@ Mockups have been created to display essential features, including interactive c
 
 Within the following grant, we plan to implement following two analytics:
 
-A Weekly Cumulative Overview: Tracking New Referenda by Project Categories
+- A Weekly Cumulative Overview: Tracking New Referenda by Project Categories
 
 ![1](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%201.png)
 
-A Weekly Overview Of Approved Referenda Relative to Referenda Tracks and Requested DOT Fundings
+- A Weekly Overview Of Approved Referenda Relative to Referenda Tracks and Requested DOT Fundings
 
 ![2](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%202.png)
 
@@ -40,15 +40,15 @@ The following examples are mockups of the future platform functionality and are 
 The summary table with all relevant data will be available to download in several formats.
 
 
-A Weekly Overview Of OpenGov Referenda Status and Referenda Tracks
+- A Weekly Overview Of OpenGov Referenda Status and Referenda Tracks
 
 ![3](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%203.png)
 
-A Weekly Overview Of OpenGov Referenda Results %
+- A Weekly Overview Of OpenGov Referenda Results %
 
 ![4](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%204.png)
 
-Example of future extended analytics
+- Example of future extended analytics
 
 ![5](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/pic%205.png)
 
