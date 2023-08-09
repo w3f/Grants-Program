@@ -27,10 +27,11 @@ Within the following grant, we plan to implement following two analytics:
 
 A Weekly Cumulative Overview: Tracking New Referenda by Project Categories
 
+![]()
 
 A Weekly Overview Of Approved Referenda Relative to Referenda Tracks and Requested DOT Fundings
 
-
+![]()
 
 
 
@@ -39,26 +40,22 @@ The following examples are mockups of the future platform functionality and are 
 The summary table with all relevant data will be available to download in several formats.
 
 
-
 A Weekly Overview Of OpenGov Referenda Status and Referenda Tracks
 
-
+![]()
 
 A Weekly Overview Of OpenGov Referenda Results %
 
-
+![]()
 
 Example of future extended analytics
 
-
+![]()
 
 Figma mock ups of the website
 
-
-
-
-
-
+![Figma1](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/figma1.png)
+![Figma2](https://raw.githubusercontent.com/stake-plus/Grants-Program/master/assets/figma2.png)
 
 
 #### Core Components, protocols, architecture
@@ -68,6 +65,7 @@ The governance website is built using Node.js for the backend and CakePHP for we
 [System Architecture]()
 [Database Specification]()
 
+
 ### Ecosystem Fit
 
 TreasuryTracker fits within the non-core infrastructure category of the Polkadot and Kusama ecosystem, with a specialized focus on OpenGovernance referendums. In particular, the platform focuses on referenda that are seeking funds from the treasury offering automated data collection, analytics, and long-term oversight over treasury activities.
@@ -76,8 +74,8 @@ The target audience for our platform includes token holders interested in the lo
 
 While there are no projects in the ecosystem that address treasury components and provide the same level of analytics as our proposed platform, there are a few with related functionalities:
 
-[doTreasury](https://www.dotreasury.com/dot/)  focuses solely on treasury statistics, lacking the wider analytical range that our project aims to offer
-[Grant Management Web Application RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/grant_management_webapp.md) are focused on the W3F grants UI and are not including the analytics component our platform intends to deliver.
+- [doTreasury](https://www.dotreasury.com/dot/)  focuses solely on treasury statistics, lacking the wider analytical range that our project aims to offer
+- [Grant Management Web Application RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/grant_management_webapp.md) are focused on the W3F grants UI and are not including the analytics component our platform intends to deliver.
 
 
 
