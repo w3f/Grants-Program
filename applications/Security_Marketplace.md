@@ -261,6 +261,7 @@ Awaiting Response.
 | 4 | Node Services | We will deliver the backend services for login , sign up, 2FA and Profile creation |
 
 
+
 ### Milestone 2 — Application & Deliveries
 
 - **Estimated Duration:** 5-6 weeks
@@ -289,4 +290,5 @@ Awaiting Response.
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Through RFP Portal.
+**How did you hear about the Grants Program?**
+Through RFP Portal.

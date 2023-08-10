@@ -98,11 +98,11 @@ We are not on LinkedIn.
 
 We already implemented cryptographic primitives which are compatible with `parity-scale-codec`.
 
-- [zero-crypto](https://github.com/zero-network/zero/tree/master/primitive/crypto) [![crates.io badge](https://img.shields.io/crates/v/zero-crypto.svg)](https://crates.io/crates/zero-crypto)
-- [zero-jubjub](https://github.com/zero-network/zero/tree/master/primitive/jubjub) [![crates.io badge](https://img.shields.io/crates/v/zero-jubjub.svg)](https://crates.io/crates/zero-jubjub)
-- [zero-bls12-381](https://github.com/zero-network/zero/tree/master/primitive/bls12_381) [![crates.io badge](https://img.shields.io/crates/v/zero-bls12-381.svg)](https://crates.io/crates/zero-bls12-381)
-- [zero-elgamal](https://github.com/zero-network/zero/tree/master/primitive/elgamal) [![crates.io badge](https://img.shields.io/crates/v/zero-elgamal.svg)](https://crates.io/crates/zero-elgamal)
-- [zero-pairing](https://github.com/zero-network/zero/tree/master/primitive/pairing) [![crates.io badge](https://img.shields.io/crates/v/zero-pairing.svg)](https://crates.io/crates/zero-pairing)
+- [zero-crypto](https://github.com/KogarashiNetwork/Kogarashi/tree/master/primitive/crypto) [![crates.io badge](https://img.shields.io/crates/v/zero-crypto.svg)](https://crates.io/crates/zero-crypto)
+- [zero-jubjub](https://github.com/KogarashiNetwork/Kogarashi/tree/master/primitive/jubjub) [![crates.io badge](https://img.shields.io/crates/v/zero-jubjub.svg)](https://crates.io/crates/zero-jubjub)
+- [zero-bls12-381](https://github.com/KogarashiNetwork/Kogarashi/tree/master/primitive/bls12_381) [![crates.io badge](https://img.shields.io/crates/v/zero-bls12-381.svg)](https://crates.io/crates/zero-bls12-381)
+- [zero-elgamal](https://github.com/KogarashiNetwork/Kogarashi/tree/master/primitive/elgamal) [![crates.io badge](https://img.shields.io/crates/v/zero-elgamal.svg)](https://crates.io/crates/zero-elgamal)
+- [zero-pairing](https://github.com/KogarashiNetwork/Kogarashi/tree/master/primitive/pairing) [![crates.io badge](https://img.shields.io/crates/v/zero-pairing.svg)](https://crates.io/crates/zero-pairing)
 - [zero-plonk](https://github.com/zero-network/dusk-plonk/tree/acffa2e0af43fdaf40c0f1e4d38b6124c57f5a05) [![crates.io badge](https://img.shields.io/crates/v/zero-plonk.svg)](https://crates.io/crates/zero-plonk)
 
 ## Development Roadmap :nut_and_bolt:
@@ -111,13 +111,13 @@ Through this grant, we are going to implement the **zkwasm** which supports tran
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
+- **Total Estimated Duration:** 11 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 40,000 USDT
 
 ### Milestone 1 | Crypto Primitive
 
-- **Estimated duration:** 1.5 month
+- **Estimated duration:** 2 month
 - **FTE:**  2
 - **Costs:** 10,000 USDT
 
@@ -136,7 +136,7 @@ In `Milestone 1`, we are going to implement `RedDSA`, optimize `Jubjub` curve an
 
 ### Milestone 2 | Plonk Extension
 
-- **Estimated duration:** 1.5 month
+- **Estimated duration:** 3 month
 - **FTE:**  2
 - **Costs:** 10,000 USDT
 
@@ -191,6 +191,15 @@ In `Milestone 4`, we are going to implement rollup node. This can aggregate tran
 | 2. | client transactor implementation | We are going to implement client library to request transfer transactions to rollup node. This is the combination of Redsa wallet and proof generator. |
 | 3. | integrate network | We are going to integrate network. There are four actor mainchain, rollup node and transactor, prover. The transactor generates the transaction and delegate proof generation to prover. The prover generates proof and send it back to transactor. The transactor send transaction to rollup node. The rollup node aggregates these transaction and commit the state to mainchain. |
 
+## Timeline
+
+| Milestone | Deliverable | Estimated Duration (month) | Deadline |
+| -----: | ----------- | ------------- | ------------- |
+| 1 | Crypto Primitive                     |  2  | 2023 7/31 |
+| 2 | Plonk Extension                      |  3  | 2023 10/31 |
+| 3 | Zk Wasm Transfer Prover and Verifier | 1.5 | 2023 12/14 |
+| 4 | Zk Wasm Transfer Rollup Node         | 1.5 | 2024 1/31 |
+
 ## Future Plans
 
 - Fully zkwasm rollup
@@ -209,9 +218,9 @@ In `Milestone 4`, we are going to implement rollup node. This can aggregate tran
     - [zero-elgamal](https://crates.io/crates/zero-elgamal)
     - [zero-pairing](https://crates.io/crates/zero-pairing)
     - [zero-plonk](https://crates.io/crates/zero-plonk)
-    - [pallet-plonk](https://github.com/zero-network/zero/tree/master/pallets/plonk)
-    - [pallet-encrypted-balance](https://github.com/zero-network/zero/tree/master/pallets/encrypted_balance)
-    - [pallet-confidential-transfer](https://github.com/zero-network/zero/tree/master/pallets/confidential_transfer)
+    - [pallet-plonk](https://github.com/KogarashiNetwork/Kogarashi/tree/master/pallets/plonk)
+    - [pallet-encrypted-balance](https://github.com/KogarashiNetwork/Kogarashi/tree/master/pallets/encrypted_balance)
+    - [pallet-confidential-transfer](https://github.com/KogarashiNetwork/Kogarashi/tree/master/pallets/confidential_transfer)
     - [above documentation](https://zero-network.github.io/zero/)
 - Wheter there are any other teams who have already contributed (financially) to the project.
   - No.

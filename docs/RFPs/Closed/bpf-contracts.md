@@ -1,6 +1,6 @@
 # BPF-based ink! smart contracts
 
-* **Status:** Open
+* **Status:** [Closed](https://forum.polkadot.network/t/ebpf-contracts-hackathon/1084/13?u=david)
 * **Proposer:** [takahser](https://github.com/takahser)
 
 ## Project Description :page_facing_up: 

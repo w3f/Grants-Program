@@ -1,6 +1,6 @@
 # Alternative javascript console for Polkadot JS API
 
-* **Status:** Open (anyone is allowed to apply)
+* **Status:** [Under Development](https://w3f.github.io/Grants-Program/applications/sandox)
 * **Proposer:** [muddlebee](https://github.com/muddlebee)
 * **Projects you think this work could be useful for** [optional]: Javascript console at https://polkadot.js.org/apps/#/js
 

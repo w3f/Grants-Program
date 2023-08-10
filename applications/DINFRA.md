@@ -1,7 +1,7 @@
 # DINFRA
 
 - **Team Name:** Valletech AB
-- **Payment Address:** bc1q9rw6km4h7fjgwxv5vwdxhzsnl8s9c8ryfhsu4a (BTC)
+- **Payment Address:** FIAT
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:

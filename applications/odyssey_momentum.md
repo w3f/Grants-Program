@@ -145,7 +145,6 @@ OVERALL ARCHITECT: Anton Starikov (CTO)
 **TOKEN TRACK TEAM**   
 - TRACK LEAD: Dave Hoogendoorn
 - RUST DEVELOPER: Denis Cavalli 
-- RUST DEVELOPER: Raghuvar Vijayakumar
 - WEB3ANALYST: Tim Jansen  
 
 *All team members are solely dedicated to the token Track.*
@@ -170,8 +169,6 @@ OVERALL ARCHITECT: Anton Starikov (CTO)
 
 *Denis Cavalli* is a Senior Rust Software Engineer with a background on embedded systems and R&D. Since 2021 engaged with the WEB3 environment, has experimented on Ethereum/Solidity, Solana and worked professionally with Helium in 2022. Now is focused on building the metaverse that will empower people collaboration on the Dotsama ecosystem, using Substrate as the main framework.
 
-*Raghuvar Vijayakumar* is a Rust Software Engineer with  experience in building Custom Substrate Pallets and  optimizing runtime storage. In addition to this Raghuvar has experience in developing smart contracts using solidity.      
-
 *Tim Jansen* is a Polkadot Ambassador and has been working on crypto and blockchain for over 7 years. He has developed smart contracts on Ethereum, implemented decentralized storage solutions such as swarm and IPFS, consulted on blockchain at [ISO](https://www.iso.org/member/2027.html), audited smart contract code of [TNO](https://www.tno.nl/en/about-tno/), launched several live applications using blockchain for auditing, supply chain and SSI at Visma and has a deep understanding of cryptography including zero knowledge proofs. In his free time he researches and experiments with new crypto technologies.
 
 
@@ -192,7 +189,6 @@ Organisation:
 
 Team:
 - https://www.linkedin.com/in/deniscavalli/
-- https://www.linkedin.com/in/raghuvarvijayakumar/
 - https://www.linkedin.com/in/timjanssen89/
 - https://www.linkedin.com/in/antst/
 - https://www.linkedin.com/in/dhoogendoorn/
@@ -216,8 +212,8 @@ Other channels are [YouTube](https://www.youtube.com/Intobitcoin) and [our found
 
 ### Overview
 
-- **Estimated duration:** 6 Weeks
-- **FTE:**  2,5
+- **Estimated duration:** 15 Weeks
+- **FTE:**  1,5
 - **Costs:** 30,000 USD
 
 _Note: Please follow the disussion [github](https://github.com/w3f/Grants-Program/pull/1221) for details on the costs._   
@@ -225,8 +221,8 @@ _Note: Please follow the disussion [github](https://github.com/w3f/Grants-Progra
 
 ### Milestone 1 Stake Pallet 
 
-- **Estimated duration:** 6 Weeks
-- **FTE:**  2,5
+- **Estimated duration:** 15 Weeks
+- **FTE:**  1,5
 - **Costs:** 30,000 USD
 
 This milestone delivers at least one (but maybe more) pallets to enable staking in Momentum's User Profile, World, Space and Subspace NFTs (or possibly any asset) in order to incentivize the creators/ owners and reward the stakers.
