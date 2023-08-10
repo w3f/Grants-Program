@@ -4,4 +4,4 @@ node_modules
 build
 coverage
 .docusaurus
-applications/xcm-domain-service.md
+applications/xcm-domain-service.md # this doc causes compilation errors, see https://github.com/w3f/Grants-Program/pull/1863/files#r1287257240
