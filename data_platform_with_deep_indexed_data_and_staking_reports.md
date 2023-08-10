@@ -1,5 +1,3 @@
-# Data platform proposal for Web3 fund
-
 # Polkadot Data platform with deep indexed data and staking reports
 
 - **Team Name:** [P2P.ORG](http://p2p.org/) Validator
