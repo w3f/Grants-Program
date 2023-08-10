@@ -46,7 +46,7 @@ From the diagram we can break the major components into off chain agents and on 
 #### Data Models / API Specifications of the Core Functionality 
 
 The core functionality of Ortege includes several key APIs: 
-
+  
 Messaging API: This API allows for the sending and receiving of messages between chains. 
 
 Accounts API: This API enables an account on one chain to make smart contract calls on remote chains. 
@@ -61,7 +61,7 @@ The technology stack for Ortege includes:
 
 Ink!: The smart contract language for building the core functionality. 
 
-Ortege: The interoperability layer that allows for communication between different blockchains. 
+Hyperlane: The interoperability layer that allows for communication between different blockchains. 
 
 Solidity: Will be made compatible with ink! based chains through Ortege. 
 
@@ -131,8 +131,11 @@ In related ecosystems, there are projects like Cosmos' Inter-Blockchain Communic
 - Abdullah Bayraklilar - Product Owner 
 
  ### Contact 
- - **Contact Name:** Christos Salaforis 
-- **Contact Email:** christos@moitessier.io 
+
+ - **Contact Name:** Justin Trollip 
+
+- **Contact Email:** justin@moitessier.io 
+
 - **Website:** https://ortege.io 
 
 ### Legal Structure 
@@ -164,7 +167,6 @@ In related ecosystems, there are projects like Cosmos' Inter-Blockchain Communic
 - https://github.com/SarjuHansaliya 
 - https://github.com/HariSeldon23 
 - https://github.com/bmino 
-- https://github.com/Shungy 
 - https://github.com/prodesert22 
 - https://github.com/josedev-union 
 
@@ -190,8 +192,12 @@ In summary, while there is still work to be done, we are proud of the progress w
 ## Development Roadmap :nut_and_bolt: 
  ### Overview 
 - **Total Estimated Duration:** 5 months 
-- **Full-Time Equivalent (FTE):**  4 FTE 
-- **Total Costs:** $92,000 
+
+- **Full-Time Equivalent (FTE):**  4 FTE (Milestones will be worked on concurrently) 
+
+- **Total Costs:** $95,000 
+
+  
 
 ### Milestone 1 Ink! Smart Contracts 
 
@@ -216,7 +222,6 @@ We will begin by developing smart contracts in the ink! language. These contract
 | **6.** | Smart contract integration testing | All internal testing of the smart contracts and writing of unit tests | 
 
 ### Milestone 2 Agents compatible with Substrate RPC endpoints 
-
  - **Estimated Duration:** 2 month 
 - **FTE:**  2 
 - **Costs:** 22,000 USD 
@@ -236,7 +241,7 @@ We will begin by developing smart contracts in the ink! language. These contract
 ### Milestone 3 Chainlink Proof of Concept 
  - **Estimated Duration:** 2 months 
 - **FTE:**  1 
-- **Costs:** 10,000 USD 
+- **Costs:** 10,000 USD   
 
 | Number | Deliverable | Specification | 
 | ------ | ----------- | ------------- | 
@@ -251,20 +256,12 @@ We will begin by developing smart contracts in the ink! language. These contract
 ## Future Plans 
 As we continue to innovate and expand the capabilities of Ortege, our roadmap is set with ambitious milestones that align with the evolving needs of the blockchain community. 
 
-Deployment to Kusama's ink-based Chains: Recognizing the potential and dynamism of the Kusama network, one of our primary objectives is to deploy Ortege to ink-based chains on Kusama. This strategic move will not only enhance the interoperability within the Kusama ecosystem but also foster a more interconnected and efficient blockchain landscape. By integrating with Kusama's ink-based chains, we aim to bring the benefits of seamless cross-chain communication to a broader audience, further solidifying Ortege's position as a leading cross-chain protocol. 
+Deployment to Kusama's ink-based Chains: Recognizing the potential and dynamism of the Kusama network, one of our primary objectives is to deploy Ortege to ink-based chains on Kusama. This strategic move will not only enhance the interoperability within the Kusama ecosystem but also foster a more interconnected and efficient blockchain landscape. By integrating with Kusama's ink-based chains, we aim to bring the benefits of seamless cross-chain communication to a broader audience, further solidifying Ortege's position as a leading cross-chain protocol.   
 
 Launching Ortege Warp: In our pursuit to bridge the gap between different blockchain ecosystems, we are excited to introduce Ortege Warp. This specialized bridge is designed to facilitate the smooth transfer of ERC20 tokens and NFTs between networks. With the increasing prominence of NFTs and the ubiquity of ERC20 tokens, Ortege Warp will play a pivotal role in ensuring that these digital assets can move freely and securely across chains. This will not only enhance liquidity and accessibility for users but also open up new avenues for cross-chain collaborations and innovations. 
 
-Our commitment to these future endeavors reflects our vision for a more cohesive and integrated blockchain world. Through Ortege and its subsequent developments, we aim to be at the forefront of blockchain interoperability, driving change and setting new standards for cross-chain communication. 
- 
-## Referral Program (optional) :moneybag:  
 
-You can find more information about the program [here](../README.md#moneybag-referral-program). 
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee 
-
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI)) 
-
+Our commitment to these future endeavors reflects our vision for a more cohesive and integrated blockchain world. Through Ortege and its subsequent developments, we aim to be at the forefront of blockchain interoperability, driving change and setting new standards for cross-chain communication.  
 ## Additional Information :heavy_plus_sign: 
 
-**How did you hear about the Grants Program?** Web3 Foundation Website 
+**How did you hear about the Grants Program?** Web3 Foundation Website   
