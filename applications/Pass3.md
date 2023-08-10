@@ -62,6 +62,22 @@ For additional references, please see:
 - https://developers.google.com/identity/passkeys
 - https://www.microsoft.com/en-us/security/blog/2023/05/04/how-microsoft-can-help-you-go-passwordless-this-world-password-day/
 
+**How to Integrate Passkeys**
+
+**Registration and Wallet Creation**
+
+- The user registers with the application using Apple's Passkey system.
+- A private-public key pair (Sr25519 key pair) is derived from the Passkey.
+- The private key is securely stored in the keystores, and the public key is converted to Ss58 format for use in Substrate Networks.
+
+**Authentication and Usage**
+- When the user wants to perform a sensitive operation, such as signing a transaction, they are prompted to authenticate using biometric data (such as a fingerprint or facial recognition).
+- The biometric data is used to unlock access to the private key.
+- Once authenticated, the application can use the private key to sign transactions or other messages within the Polkadot network.
+- The key pair remains encrypted and inaccessible unless the user authenticates with their biometric data.
+
+For additional references, please see: https://wiki.near.org/overview/BOS/fast-auth
+
 **Frontend:** ReactJs
 **Backend:**
 - Typescript
@@ -150,9 +166,10 @@ As previously noted, part of our project aligns with the [Social Recovery Wallet
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the wallet and how it works |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| **0e.** | Article | We will provide an article about how we build a keyless wallet with Passkeys. |
 | 1. | CI/CD | We will provide CI/CD setup files as GitHub Actions for code checking, automated testing, and deployment. |
 | 2. | Infrastructure | We will provide infrastructure code using Terraform, enabling effortless AWS infrastructure bootstrapping. |
-| 3. | Web Application | We will develop a mobile-first web application featuring sign-up, sign-in, and asset management functionalities as outlined in the provided wireframe. |
+| 3. | Web Application | We will develop a mobile-first web application that features registration, authentication, and asset management functionalities, as outlined in the provided wireframe. The registration and authentication functionalities logic is described in project detail section. By using the asset management feature, users can view their balances, deposit, and transfer their assets. This can be done through the [balances pallet](https://github.com/paritytech/substrate/tree/master/frame/balances) for native tokens, and the [assets pallet](https://github.com/paritytech/substrate/tree/master/frame/assets) for managing assets on the Asset Hub.|
 | 4. | Backend Services | We will deliver backend services for sign-up, sign-in, and asset management features. |
 
 
@@ -168,10 +185,10 @@ As previously noted, part of our project aligns with the [Social Recovery Wallet
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the recovery and backup features, how it works and setup guide |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Feature: Social Recovery | We will implement the social recovery setup and management screens as depicted in the above wireframe. |
-| 2. | Feature: Recover Wallet | We will implement recover screens as depicted in the above wireframe. |
-| 3. | Feature: Encrypted Cloud Backup | We will implement feature allow user encrypt and sync the key to the cloud storage|
-| 4. | Feature: Notifications | We will implement email notifications for balance updates and security alerts, such as recovery initiation prompts.  |
+| 1. | Feature: Social Recovery | We will implement the social recovery setup and management screens as depicted in the above wireframe. To implement this feature, we will use [social recovery pallet][https://github.com/paritytech/substrate/tree/master/frame/recovery], which allows users to setup social guards in the case that they lose device access. |
+| 2. | Feature: Recover Wallet | We will implement recover screens as depicted in the above wireframe.|
+| 3. | Feature: Encrypted Cloud Backup | We will implement feature allow user encrypt and sync the backup key to the cloud storage.|
+| 4. | Feature: Notifications | We will implement email notifications for balance updates and security alerts, such as recovery initiation prompts. This will help improve the safety of using the recovery pallet, as mentioned in these [safety considerations](https://github.com/paritytech/substrate/tree/master/frame/recovery#safety-considerations). |
 | 5. | Backend Services | We will implement the backend services for 1, 2, 3, 4 sections  |
 
 
