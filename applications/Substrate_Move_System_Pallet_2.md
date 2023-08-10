@@ -6,7 +6,7 @@
 
 ## Project Overview ****📄****
 
-This application is a response to **[Move Smart Contract Pallet RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/move_smart_contract_pallet.md)** and a follow-up to our [previous work](https://github.com/w3f/Grants-Program/pull/1769) on the RFP**.**
+This application is a response to **[Move Smart Contract Pallet RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/move_smart_contract_pallet.md)** and a follow-up to our [previous work](https://github.com/w3f/Grants-Program/pull/1769) on the RFP.
 
 ### Overview
 
@@ -14,15 +14,13 @@ This application is a response to **[Move Smart Contract Pallet RFP](https://git
 **Substrate Move System Pallet** - A Substrate system pallet that can be used as a building block for substrate-based chains, it exposes interfaces to interact with the Move virtual machine.
 **Substrate Move** - A Move language fork that is Substrate compatible.
 
-
 - The goal is to provide a Substrate system pallet that allows to deploy and interact with Smart Contracts written in the Move language, by providing a Move Virtual Machine (MoveVM) as a pallet.
-- We plan on exploring a fork of the Move language, so it’s adjusted to work with the Substrate ecosystem, as well as developing a Substrate system pallet that allows the execution of Move smart contracts.
 - The project directly improves the growth potential of the Substrate based ecosystem by providing support for one of the most modern smart contract programming languages and VM types out there - Move.
 - We are interested in creating this project because we are firm believers in the modular vision of web3, and only by collaborative efforts on improving and unifying the technology between different chains and the languages, will we get better products as an outcome.
 
 **Goal** - Level up the growth possibilities of the Substrate ecosystem by providing a way to develop and execute Move smart contracts on Substrate.
 
-This is the second phase of a 3-phase development program:
+This is the second phase of a 3-phase development plan:
 
 1. In-Depth Exploration and Assessment of MoveVM and Substrate Integration
 2. **MoveVM compatibility work and Subtrate Pallet development**
@@ -45,9 +43,7 @@ We are basing the core architecture and many of the design decisions on the [Pon
     - `no_std` compatibility: Making it lightweight and suitable for use in Substrate runtimes.
     - `wasm32` target compatibility: Adapting all the VM’s different components to work efficiently and securely on the wasm32 target architecture.
 
-    We plan on creating and maintaining the fork in a manner that would allow us and the community to easily follow and track changes from the upstream, thus making the maintenance and change tracking to be much simpler.
-
-    At the time of writing this application, we suspect that this will be needed because this is what also Pontem had to do to support it in their version. This will be further researched and assessed during the first milestone.
+    We created the fork of Move VM in a manner that allow us and the community to easily follow and track changes from the upstream, thus making the maintenance and change tracking to be much simpler.
 
 2. **Move VM system pallet:**
 
@@ -94,8 +90,8 @@ We concur with this perspective and have actually been actively researching the 
 
 ### Team members
 
-- Roberts Ivanovs ([Github](https://github.com/roberts-ivanovs), [Linkedin](https://www.linkedin.com/in/roberts-ivanovs-3b24b6159/)) is a Rust Software Engineer at Eiger. He has extensive experience using Rust for performance-sensitive backend work, the IoT industry, web development, and Solidity/dApp development.
-- Tomek Piotrowski ([Github](https://github.com/tomekpiotrowski), [Linkedin](https://www.linkedin.com/in/tomasz-piotrowski-17466b4/)) Software Engineer at Eiger, specializing in Rust-based applications. With a strong background in software development, he has spent recent years focusing on the Rust programming language. At Eiger, Tomasz actively contributes to the advancement of Rust-based blockchains and their ecosystems.
+- **Karlo Mardešić** ([GitHub](https://github.com/Rqnsom), [LinkedIn](https://www.linkedin.com/in/karlo-mardesic)) is a Software Engineer at Eiger and has experience with telecommunications and low-level drivers in C/C++. These days his expertise has shifted to blockchain technology and P2P protocols, where he primarily uses Rust to tackle exciting problems.
+- **Piotr Olszewski** ([GitHub](https://github.com/asmie), [LinkedIn](https://www.linkedin.com/in/piotr-olszewski-8a239939)) is a Software Engineer at Eiger, and has over 12 years of professional experience, with a strong academic background in distributed computing. He has a large bag of experiences, ranging from military appliances to embedded platforms. His main tools are C/C++ and Rust.
 
 ### Contact
 
@@ -159,8 +155,8 @@ Goal: Create a customised Move VM solution for the Substrate ecosystem, using th
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Rust crate: Substrate Move | Forking the Move VM if deemed necessary from the research done during the first milestone. The alterations would include everything to create the virtual machine Substrate-compatible.
-We would also provide extensive documentation of how the whole process is designed and how it is to be maintained. |
+| 1. | Rust crate: Substrate Move | Forking the Move VM, as deemed necessary from the research done during the first milestone. The alterations will include everything to create the virtual machine Substrate-compatible.
+We will also provide extensive documentation of how the whole process is designed and how it is to be maintained. |
 | 2. | System Pallet:
 Substrate Move SP adds Move functionality | Integrating the Move VM runtime within the custom pallet, ensuring compatibility with the Substrate blockchain and Move smart contract execution. |
 | 3. | System Pallet:
