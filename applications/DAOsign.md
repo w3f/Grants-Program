@@ -44,6 +44,15 @@ Example (interfaces) of the smart contracts can be found here https://github.com
 
 Detailed storyboard can be found here: https://consideritdone.storiesonboard.com/m/PUCLDvQC4kKwoRJ8kbm3MA .
 
+**Off-chain Relayer**
+
+Relayer is an off-chain component that accepts transaction (with EIP-712 signature from Metamask) from user, 
+signs it and sends to the network. This app will be developed using following technology stack:
+
+* Typescript/NodeJS
+* express.js
+* polkadot.js
+
 **Architectural diagram**
 
 <img width="805" alt="Screenshot 2023-05-28 at 23 30 53" src="https://github.com/Burmenska/Grants-Program/assets/3983591/54c8708d-e180-46f3-9a78-b7121de133d3">
@@ -165,7 +174,7 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 
 * **Estimated Duration:** 6 weeks
 * **FTE:**  2
-* **Costs:** 40,300 USD
+* **Costs:** 36,075 USD
 
 
 | Number | Deliverable               | Specification                                                                                                                                                                                                                                                             |
@@ -183,7 +192,7 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
-* **Costs:** 7,800 USD
+* **Costs:** 12,025 USD
 
 
 | Number | Deliverable                     | Specification                                                                                                                                                                                       |
