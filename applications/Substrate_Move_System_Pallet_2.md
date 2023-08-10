@@ -155,12 +155,9 @@ Goal: Create a customised Move VM solution for the Substrate ecosystem, using th
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Rust crate: Substrate Move | Forking the Move VM, as deemed necessary from the research done during the first milestone. The alterations will include everything to create the virtual machine Substrate-compatible.
-We will also provide extensive documentation of how the whole process is designed and how it is to be maintained. |
-| 2. | System Pallet:
-Substrate Move SP adds Move functionality | Integrating the Move VM runtime within the custom pallet, ensuring compatibility with the Substrate blockchain and Move smart contract execution. |
-| 3. | System Pallet:
-Substrate Move SP APIs to interact with the Move VM | Developing an API that enables developers to interact with the Move VM on Substrate-based chains, allowing them to deploy, execute, and manage Move smart contracts. |
+| 1. | Rust crate: Substrate Move | Forking the Move VM, as deemed necessary from the research done during the first milestone. The alterations will include everything to create the virtual machine Substrate-compatible. We will also provide extensive documentation of how the whole process is designed and how it is to be maintained. |
+| 2. | System Pallet: Substrate Move SP adds Move functionality | Integrating the Move VM runtime within the custom pallet, ensuring compatibility with the Substrate blockchain and Move smart contract execution. |
+| 3. | System Pallet: Substrate Move SP APIs to interact with the Move VM | Developing an API that enables developers to interact with the Move VM on Substrate-based chains, allowing them to deploy, execute, and manage Move smart contracts. |
 
 ## Future Plans
 
