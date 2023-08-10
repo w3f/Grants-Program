@@ -1,7 +1,7 @@
 # polkasearch.xyz
 
 - **Team Name:** Aviraj Khare
-- **Payment Address:** Bitcoin Address: bc1qtr9993ch6zlr29j5c22zzax57h62x5gj24wtxk
+- **Payment Address:** USDC(ERC20) Address: 0x123FfB2efB8D74D10d6B3a882A94531D99234B11
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -25,7 +25,7 @@ Polkasearch.xyz aims to become a discovery platform where users can discover Gra
 #### Tech Stack
 
  - [Django](https://www.djangoproject.com/): We will be using Django as our Web framework.
- - Database: We will be using Postgresql database.
+ - Database: We will be using managed Postgresql database provided by `railway.app` infrastructure.
  - Wallet: We will be using polkadot{JS} extension wallet so that user can signup/login in the website by signing a message.
 
 #### API Schema
@@ -102,7 +102,6 @@ Our project can provide user with earning opportunities, learning material and t
 
 - **Contact Name:** Aviraj Khare
 - **Contact Email:** avirajkhare00@gmail.com
-- **Website:** https://avirajkhare00.com
 
 ### Legal Structure
 
@@ -121,14 +120,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://github.com/avirajkhare00
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles (if available) 
 
 - https://www.linkedin.com/in/avirajkhare00
 
 
 ## Development Status :open_book:
 
-Yet to start the development of the project.
+Currently working on CI(GitHub Actions) of this project to deploy on [Railway infrastructure](https://railway.app).
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -154,9 +153,10 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation | We will provide the documentation on the README of the repository. If needed, we will create `docs` directory that would contain in-depth documentation. |
 | **0c.** | Testing and Testing Guide | Models, Views and Forms will be covered by [`django.test`](https://docs.djangoproject.com/en/4.1/topics/testing/) module which is a sub-module of `unittest`. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Authentication | User can be authenticated either via traditional web2 username/password or via polkadot extension wallet, web3 based. |
-| 2. | CRM for bounties | We will be creating this CRM using Django. Everyone can view a bounty, candidate can apply for bounty and employer can create bounty(ies). |
-| 3. | CRM for jobs | We will be creating this CRM using Django. Everyone can view jobs, candidate can apply for a job or multiple jobs, employer can list a job or multiple jobs. |
+| 1. | Completion of basic CI/CD pipeline | We will be using GitHub Actions to deploy the site in [Railway's infrastructure](https://railway.app/) so that there could be more transparency. We will be creating different integration and production environment for the deployment so that more and more people could contribute in much seamless manner.
+| 2. | Authentication | User can be authenticated either via traditional web2 username/password or via polkadot extension wallet, web3 based. |
+| 3. | CRM for bounties | We will be creating this CRM using Django. Everyone can view a bounty, candidate can apply for bounty and employer can create bounty(ies). |
+| 4. | CRM for jobs | We will be creating this CRM using Django. Everyone can view jobs, candidate can apply for a job or multiple jobs, employer can list a job or multiple jobs. |
 
 ### Milestone 2
 

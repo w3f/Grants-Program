@@ -3,6 +3,7 @@
 - **Team Name:** FuzzLand
 - **Payment Address:** 0x3a2a700d9d822D23D3F0F55F4b097753b5B2FC9A (ERC20 DAI/USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1499#issuecomment-1634849391)
 
 ## Project Overview :page_facing_up:
 
