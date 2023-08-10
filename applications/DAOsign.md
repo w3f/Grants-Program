@@ -55,7 +55,15 @@ signs it and sends to the network. This app will be developed using following te
 
 **Architectural diagram**
 
-<img width="805" alt="Screenshot 2023-05-28 at 23 30 53" src="https://github.com/Burmenska/Grants-Program/assets/3983591/54c8708d-e180-46f3-9a78-b7121de133d3">
+![DAOsign_ Storing proofs using Ink!](https://github.com/Burmenska/Grants-Program/assets/1008882/297093a0-200a-4f78-babb-04ad6314fb35)
+
+**Definitions**:
+* **Creator**: Author of agreement, define agreement content, signers
+* **Signer**: Participant (Signer) of the agreement. Signs and sends transactions to a Relay
+* **Relayer**: Receives signed requests off-chain from Signers and pays gas to turn it into a valid transaction that goes through a Trusted Forwarder
+* **Trusted Forwarder**: A contract trusted by the Recipient to correctly verify signatures before forwarding the request from Signers
+* **AgreementProof**: A contract that holds metadata and proofs for agreement.er
+
 
 Agreement Proof entity represent 3 proofs:
 * Proof of signature
