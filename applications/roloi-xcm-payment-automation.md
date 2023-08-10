@@ -68,8 +68,7 @@ This project will be generic and open source to serve the Polkadot builders comm
 
 #### Wireframes
 
-[Wireframe](https://whimsical.com/roloi-grant-ui-UYPjBFT8krc7KHbTUUkgDH)
-
+![Wireframe](https://i.imgur.com/5hVZWuF.png)
 
 ### Ecosystem Fit
 
