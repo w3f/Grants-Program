@@ -116,12 +116,12 @@ We haven't applied for a web3 grant previously. This is our first Web3 grant. Ou
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the particular functionality that'll be built as part of this milestone |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Dataset Creation | The first month, we're going to focus on finding smart contracts, audit reports and converting them into the required format to train our A.I models, so this stage is basically "Dataset" creation |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Creating Dataset | We will focus on creating a dataset to train / fine-tune A.I models with, the steps for which are listed in detail in the next steps here |
+| **0c.** | Finding Vulnerabilities Lists | We have a 4 stage process and the first stage is finding lists of "categorized" vulnerabilities that other developers or the community may have created, what we then do is find code samples that these vulnerabilities, this means, for each vulnerability we find, we will also find multiple code samples that contain the vulnerability. This will help us prepare a dataset with an input (smart contract) and output (vulnerabilities)|
+| **0d.** | Using existing security tools | This is our second stage of preparing the dataset, what we do here is use existing tools (like slither and manticore exist for solidity) and we input various smart contracts into them, this gives us vulnerabilites that the tools are able to detect, this helps us to add to our dataset with input (smart contract) and output (list of vulnerabilities) |
+| **0e.** | Finding Audit reports | This is the 4th stage of dataset creation, here we will look for audit reprots that exist in the ink! eco-system, we convert PDF data into JSON for some of the sections in the reports, this helps us add to our dataset with input (smart contract) and output (list of vulnerabilities)|
+| **0f.** | Dataset Refinement | By now, we have a solid dataset, comprising of categorized vulnerabilities, output from tools, audit reports so we have a good amout of data for the A.I model, data that will ensure that our A.I tool will go wayyyy beyond a standard tool, because with standard tools, you have to extend the code base, but with an A.I tool, you just need to train it with new data. Now, at this final stage, we clean up the data, ensure it's in the right format based on the category of A.I model, for example, for Alpaca models, you need three fields - input (smart contract with issues), output (list of vulnerabilities) and prompt ("audit this smart contract for me") |
 
 
 ### Milestone 2 Deploying A.I models
