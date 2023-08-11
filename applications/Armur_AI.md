@@ -118,7 +118,7 @@ We haven't applied for a web3 grant previously. This is our first Web3 grant. Ou
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Creating Dataset | We will focus on creating a dataset to train / fine-tune A.I models with, the steps for which are listed in detail in the next steps here |
-| **0c.** | Finding Vulnerabilities Lists | We have a 4 stage process and the first stage is finding lists of "categorized" vulnerabilities that other developers or the community may have created, what we then do is find code samples that these vulnerabilities, this means, for each vulnerability we find, we will also find multiple code samples that contain the vulnerability. This will help us prepare a dataset with an input (smart contract) and output (vulnerabilities)|
+| **0c.** | Finding Vulnerabilities Lists | We have a 4 stage process and the first stage is finding lists of "categorized" vulnerabilities that other developers or the community may have created, what we then do is find code samples that these vulnerabilities, this means, for each vulnerability we find, we will also find multiple code samples that contain the vulnerability. This will help us prepare a dataset with an input (smart contract) and output (vulnerabilities). Our aim is that the system should be able to catch atleast 10 common vulnerabilities initially and we will be creating datasets accordingly.|
 | **0d.** | Using existing security tools | This is our second stage of preparing the dataset, what we do here is use existing tools (like slither and manticore exist for solidity) and we input various smart contracts into them, this gives us vulnerabilites that the tools are able to detect, this helps us to add to our dataset with input (smart contract) and output (list of vulnerabilities) |
 | **0e.** | Finding Audit reports | This is the 4th stage of dataset creation, here we will look for audit reprots that exist in the ink! eco-system, we convert PDF data into JSON for some of the sections in the reports, this helps us add to our dataset with input (smart contract) and output (list of vulnerabilities)|
 | **0f.** | Dataset Refinement | By now, we have a solid dataset, comprising of categorized vulnerabilities, output from tools, audit reports so we have a good amout of data for the A.I model, data that will ensure that our A.I tool will go wayyyy beyond a standard tool, because with standard tools, you have to extend the code base, but with an A.I tool, you just need to train it with new data. Now, at this final stage, we clean up the data, ensure it's in the right format based on the category of A.I model, for example, for Alpaca models, you need three fields - input (smart contract with issues), output (list of vulnerabilities) and prompt ("audit this smart contract for me") |
@@ -132,13 +132,12 @@ We haven't applied for a web3 grant previously. This is our first Web3 grant. Ou
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the particular functionality that'll be built as part of this milestone |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | A.I model selection and deployment | The second month, we're testing multiple A.I models and finding the ones that are most relevant for our usecase. Finally, we will deploy them so that we can train them. This requires A.I engineering and a bit of ML related Ops on the cloud |
-| 2. | Vaildating and refining data sets| The data sets that we created as part of the first milestone, we will be refining them in this milestone before we start training. Refining basically means cleaning up data, ensuring everything is structured so that there are no issues when we train the models in the next milestone. |
+| **0a.** | License | Apache 2.0  |
+| **0b.** | Testing various models | Since we have the dataset ready, our job is now to find the best possible A.I models from the existing open source LLMs out there for our specific use case. When we performed this exercise with solidity, we started with GPT-J, then switched to NEO-X and then Falcon-7B and then finally to Falcon-40B, we're actively trying to find the model that already understands programming really well and needs the least amount of training for best results for the specific use case. But since the A.I world changes really fast and there is LlaMa2 now which has been trained on even more parameters, and we're sure there will be many more till the grant gets approved, we will experiment with the latest ones on the market and find the best for our use case - ink! smart contracts |
+| **0c.** | Sharing learning data | The way to test the models is that we use small samples, not the entire training set and we benchmark accuracy with other models. We will share these learnings as part of this deliverable |
+| **0d.** | Deploying to the Cloud | After trying out various models on our personal cloud machines, we will find the right a.i model and then it's all about deploying it to the cloud and prepare it for training. To be able to finetune/train it, you need optimimum amount of machines so that you can also perform a little bit of parallal training. |
+
+
 
 ### Milestone 3 Training the A.I Models
 
@@ -148,12 +147,9 @@ We haven't applied for a web3 grant previously. This is our first Web3 grant. Ou
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the particular functionality that'll be built as part of this milestone |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Training models | In the previous milestones we have deployed the A.I model and also created datasets, now it's time to train the A.I models, this is a resource intensive undertaking that takes experienced A.I engineers, experience auditors to ensure right human feedback loop to the A.I model |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Training with created datasets | By now we have a structured dataset and also the deployed model which was selected after testing, now it's time to start training / fine-tuning with the datasets we have created. Now that these datasets have "carefully" "labelled" data, it's not un-supervised learning |
+| **0c.** | Human Feedback from auditors | Keeping up with our methodology of supervised learning, we will train the models but also refine the training based on the output from the models, there will be trained auditors to check the output and if there's inaccuracy for a particular vulnerability, this means finding more code examples for this particular vulnerability or this might even mean that the security auditors might need to create some code samples with these vulnerabilities |
 
 ### Milestone 4 Testing the Models and refining output
 
@@ -163,16 +159,13 @@ We haven't applied for a web3 grant previously. This is our first Web3 grant. Ou
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the particular functionality that'll be built as part of this milestone |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Refinement | This milestone is all about ensuring that the A.I models are giving a stable and correct output with good amount of accuracy. We ensure there are less false positives, less hallucination and the tool is in a good shape for public trials. At this stage we're also refining the training process further and even the datasets depending on the accuracy of the A.I model. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Benchmarking | The way we test for improvement is benchmarking the models with an untrained model of the same category, for example - if we had selected Falcon40B we will keep 2 versions - an untrained version and our new trained version and we will compare the results from both to check the ability to detect issues in the smart contract code. |
+| **0c.** | Refinement | Now we check for accuracy, this is done by comparison, for example - let's say we have trained our A.I model to detect 5 vulnerabilities and there's a smart contract that has 5 tagged vulnerabilities by a security expert, then when we run this smart contract through our A.I model, if it's able to detect 5/5, we know accuracy is high. |
+| **0d.** | Check for hallucinations | In newly trained models, the output usually contains issues or text that is not relevant for smart contracts and this affects the accuracy signifcantly, in this stage our aims to check fo hallucinations and fine tune the model further for this. |
+| **0e.** | False Positive refinement | In many cases, there will be issues that don't exist in that particular smart contract, our aim will be here to check for the same, finetune for this or even create "confidence meters" where the model detects issues but with a confidence score.|
 
 ## Future Plans
-
-Please include here
 
 - In the short term- we plan to enable auditors and developers to be able to audit their smart contracts automatically so they can focus more on writing the business logic.
 - In the long term, we intend to make our tool way more advanced so that developers would need manual auditors for very few advanced use cases only and most of the checks can be done by the A.I tool.
@@ -180,4 +173,4 @@ Please include here
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Our Founder, Akhil has been active in the Polkadot ecosystem and also has a 14-chapter course on Substrate on his youtube. We all think Polkadot is the future. A grant seems like the best way forward for us to be involved with the Polkadot community more deeply.
+**How did you hear about the Grants Program?** Our Founder, Akhil has been active in the Polkadot ecosystem and also has a 14-chapter course on Substrate on his youtube. Akhil discussed this project with Dr. Gavin Wood, who referred him to Square One and after that Nico suggested that grant is the best route. We all think Polkadot is the future. A grant seems like the best way forward for us to be involved with the Polkadot community more deeply.
