@@ -21,7 +21,7 @@ A project goal is to store Agreements Proofs on Polkadot chain using Ink! smart 
 
 
 Deliveries include DAOsign platform with an ability to:
-- create agreements including generating using ChatGPT
+- create agreements including generating using ChatGPT (already implemented on our platform, currently available on our [testnet](https://testnet.daosign.org/)
 - add and remove signers and observers of different levels of anonymity
 - allow signing the documents with further storing of signature proofs on Astar testnet blockchain.
 
