@@ -1,4 +1,4 @@
-# Polkadot Data platform with deep indexed data and staking reports
+a# Polkadot Data platform with deep indexed data and staking reports
 
 - **Team Name:** [P2P.ORG](http://p2p.org/) Validator
 - **Payment Address:** 0xE22211Ba98213c866CC5DC8d7D9493b1e7EFD25A (USDC)
@@ -33,7 +33,7 @@ We saw some teams that already building such solutions for the RFP and want to d
 - modular architecture allows you
     - to use any indexer such as Subsquid, Subquery or custom indexer (Mbelt in [P2P.org](http://P2P.org) case)
     - to use any database as a DWH for storing public data (in current RFP we will use BigQuery as DWH)
-    - to customize ETL process for any indexer/DWH solution via Airflow DAGs
+    - to customize ETL process for any indexer/DWH solution via [Airflow](https://airflow.apache.org/) DAGs
     - to customize the solution for real-time data enrichment process via direct streaming to DWH
 - dashboard with sli/slo for data quality of ETL pipeline - we provide transparent and clear data quality metrics to estimate the quality of ETL
 - [P2P.org](http://P2P.org) infrastructure (P2P RPC for indexation)
@@ -90,7 +90,7 @@ UI module consist of forking existing BI tool with the ability:
 | --- | --- | --- | --- | --- |
 | Indexing & ETL | indexer | Mbelt | js | We already develop the indexer for web3 RFP. It can extract all data like Subquery but more over it can extract data about staking process.
 We also share sli/slo for indexer and our experience showed that currently it is the best solution according to data quality and flexible enough to support custom needs like staking. |
-|  | orchestration | airflow | python | flexible, popular ETL orchestration |
+|  | orchestration | [Airflow](https://airflow.apache.org/) | python | flexible, popular ETL orchestration |
 | DWH | raw layer + domain layer | bigQuery | cloud sql | current solution is DWH agnostic but we are using bigQuery |
 | UI | forked BI tool | forking [Superset](https://github.com/apache/superset) | - backend: python
 - frontend: rest | - auth in the box
@@ -213,7 +213,7 @@ We suggest proposal with 1 milestone to:
 | 0b. | Documentation | We will provide a documentation page about how to launch docker’s files for ETL (indexer + orchestration), DWH connection, launching UI (BI tool). |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to run indexer locally, set up data base (DWH), and run BI. |
-| 1. | Develop the ETL component | The result of developing ETL component contains the docker with Mbelt (indexer) and Airflow with DAGs to write indexer’s output into DWH (data base). |
+| 1. | Develop the ETL component | The result of developing ETL component contains the docker with Mbelt (indexer) and [Airflow](https://airflow.apache.org/) with DAGs to write indexer’s output into DWH (data base). |
 | 2. | Publish DWH data | Our goal for publishing data is: providing raw (indexer’s data) data into public bigQ project with the ability to query and use this data for public users. The chains are Polkadot, Kusama, EVM parachains. We would also provide reports about staking on top of raw data in chains above. The additional result is SLI/SLO dashboard of ETL process to provide more transparency for users. |
 | 3. | Forking [Superset](https://github.com/apache/superset) | Forking Superset will allow us to modify sign-in page to provide new users to join. We will make some changes on UI side to improve user’s experience such as: Main page modifications to make it dash-oriented, Dashboard tab & Chart tab modification to provide user-friendly filters, SQL lab tab modification to make it more useful to search for sources, User’s settings modification to exclude useless bottoms  |
 
