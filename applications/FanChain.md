@@ -116,12 +116,12 @@ As an outsourcing company, we adhere to strict security and confidentiality poli
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains the dispute resolution solution. (Content, language and medium should reflect your target audience described above.) |
 | 1. | Customizable NFT templates | Allow streamers and influencers to choose from a variety of templates or create their own unique designs for their NFT collections. |
-| 2. | Metadata management | Enable creators to add and edit metadata for collection, including descriptions, rarity levels, and other attributes. |
-| 3. | Generative NFTs | Provide tools for creating algorithmically generated NFTs, allowing for unique and diverse collections. |
-| 4. | Membership NFTs | Enable the creation of NFTs that grant access to exclusive content, events, or communities. |
+| 2. | Metadata management | Creators will have the ability to add, edit, and manage metadata for their NFT collections. Metadata includes descriptions, rarity levels, and other attributes that provide context and information about the NFTs. |
+| 3. | Generative NFTs | Provide tools for creating algorithmically generated NFTs, allowing for unique and diverse collections.<br> It is a feature located in the creator's dashboard, that allows creating an NFT collection, creating each layer for the NFT, inputting each image for each layer, and then combining it into a complete NFT. |
+| 4. | Membership NFTs | Enable the creation of NFTs that grant access to exclusive content, events, or communities.<br> It is a feature located in the creator's dashboard, that allows creating an NFT collection representing a member card (including details, benefits, deadlines). |
 | 5. | Minting | Implement a user-friendly interface for minting and issuing NFTs, with options for limited editions and timed releases. Users can customize various layers and attributes of the NFTs. |
 | 6. | Search and filtering | Implement advanced search and filtering options, allowing users to find specific NFTs based on criteria such as creator, rarity, or price. |
-| 7. | Smart Contract | Implement ERC721 smart contracts for NFT creation and management. These smart contracts will handle minting of the NFTs, transfer of ownership, and other necessary operations. |
+| 7. | Smart Contract | Implement ERC721 smart contracts for NFT creation and management. These smart contracts will handle minting of the NFTs, transfer of ownership, and other necessary operations.<br>- NFT contract: based on erc721 contract, allowing customizable attributes on minting.<br>- Collection Controller contract: NFT factory, ensures proper minting process, handles fees.<br>- NFT Marketplace contract: enables buying/selling NFTs with ownership transfer, payments, and potential fees|
 
 ### Milestone 2 - Marketplace
 
@@ -136,7 +136,7 @@ As an outsourcing company, we adhere to strict security and confidentiality poli
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains the dispute resolution solution. (Content, language and medium should reflect your target audience described above.) |
-| 1. | Direct sales | Allow users to buy NFTs at fixed prices, with support for multiple cryptocurrencies. |
+| 1. | Direct sales | Allow users to buy NFTs at fixed prices, with support for multiple cryptocurrencies. This is the complete feature of minting process. |
 | 2. | Exchange | Enable users to buy and sell NFTs, with options for reserve prices, time limits, and other customizable settings. |
 | 3. | Activity feed and notifications | Keep users informed about new listings, bids, and sales through an activity feed and customizable notifications. |
 ## Future Plans
