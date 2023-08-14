@@ -19,7 +19,7 @@ Our intention is to `flatten the anvil` of ink! integration testing. With a prop
 
 ### Project Details
 
-As mentioned before, we have already identified a number of E2E functionalities that are not present in integration tests.
+As mentioned before, we have already identified a number of E2E functionalities that are not present in integration tests. 
 
 For example:
 - A different implementation of storage in integration testing vs E2E testing. The same storage limitations present in E2E should also be present in integration testing.
@@ -88,13 +88,15 @@ As well, CoinFabrik has been providing Quality Assurance as a service to develop
 
 ## Development Status :open_book:
 
-We have already identified some improvements to be made in integration tests, with different levels of complexity:
-- Alice and Bob's addresses should match: Feasible.
-- The storage in the integration environment should have the same limitations as in the blockchain environment (end-to-end): Feasible.
-- Delegate call: Ability to use delegate call in integration tests: Complex, yet feasible.
-- Contract-to-contract calls: To be evaluated.
-- Gas usage: To be evaluated.
+We have already identified some improvements to be made in integration tests. We also identified how they are implemented in E2E tests and provide an initial level of complexity / feasibility associated to their development:
 
+| Issue Number | Issue Name | Description | Feasibility | References |
+|--------------|------------|-------------|-------------|------------|
+| 1 | Alice and Bob's addresses | Alice and Bob's addresses should match across integration and E2E tests. | Feasible | Accounts on Integration Tests: [Link](https://github.com/paritytech/ink/blob/c2af39883aab48c71dc09dac5d06583f2e84dc54/crates/env/src/engine/off_chain/test_api.rs#L333) <br> Accounts on E2E tests: Addresses are used from this library [Link](https://github.com/paritytech/substrate/blob/28e906dffcaa91e85f59aff628d953ebeb036ae2/primitives/keyring/src/sr25519.rs#L108C38-L108C38) <br> Account addresses are different for both Alice and Bob. |
+| 2 | Storage Limitations | The storage in the integration environment should have the same limitations as in the blockchain environment (end-to-end). | Feasible | Set_contract_storage is implemented differently in integration tests vs E2E tests. <br> In integration tests, set_contract_storage is implemented this way: [Link](https://github.com/paritytech/ink/blob/c2af39883aab48c71dc09dac5d06583f2e84dc54/crates/env/src/engine/off_chain/impls.rs#L185) <br> In E2E tests, the implementation calls the ext::set_storage function, this function is implemented in a way that checks maximum value lengths: [Link1](https://github.com/paritytech/ink/blob/c2af39883aab48c71dc09dac5d06583f2e84dc54/crates/env/src/engine/on_chain/impls.rs#L215) [Link2](https://github.com/paritytech/substrate/blob/28e906dffcaa91e85f59aff628d953ebeb036ae2/frame/contracts/src/wasm/runtime.rs#L790) <br> The checking of maximum value lengths through the ext::set_storage function is not implemented in integration tests. |
+| 3 | Delegate call | Ability to use delegate calls in integration tests. | Complex, yet feasible. | Not implemented in integration tests: [Link](https://github.com/paritytech/ink/blob/c2af39883aab48c71dc09dac5d06583f2e84dc54/crates/env/src/engine/off_chain/impls.rs#L449) <br> Notice in line 460: “off-chain environment does not support delegated contract invocation" <br> In E2E tests, it is implemented here: [Link](https://github.com/paritytech/substrate/blob/28e906dffcaa91e85f59aff628d953ebeb036ae2/frame/contracts/src/wasm/runtime.rs#L1467) |
+| 4 | Cross contract calls | Ability to perform contract-to-contract calls during integration tests. | To be evaluated. | Not implemented in integration tests: [Link](https://github.com/paritytech/ink/blob/c2af39883aab48c71dc09dac5d06583f2e84dc54/crates/env/src/engine/off_chain/impls.rs#L432) <br> Notice in line 446: “off-chain environment does not support contract invocation" <br> In E2E tests, it is implemented here: [Link](https://github.com/paritytech/substrate/blob/28e906dffcaa91e85f59aff628d953ebeb036ae2/frame/contracts/src/wasm/runtime.rs#L1412) |
+| 5 | Gas usage | Gas usage in the integration environment should have the same limitations as in the blockchain environment (end-to-end). | To be evaluated. | Not implemented in integration tests: [Link](https://github.com/paritytech/ink/blob/c2af39883aab48c71dc09dac5d06583f2e84dc54/crates/engine/src/ext.rs#L404) <br> Notice in line 405: “off-chain environment does not yet support gas_left" <br> In E2E tests, it is implemented here: [Link](https://github.com/paritytech/substrate/blob/28e906dffcaa91e85f59aff628d953ebeb036ae2/frame/contracts/src/wasm/runtime.rs#L1974) |
 
 We validated the idea of the analysis and development described in this application with Sam Ruberti from the ink! Ecosystem and David Hawig from Web3 Foundation, who encouraged us to apply for this grant.
 
@@ -103,37 +105,35 @@ We validated the idea of the analysis and development described in this applicat
 
 ### Overview
 
-- **Total Estimated Duration:** 6 weeks
+- **Total Estimated Duration:** 2 weeks
 - **Full-Time Equivalent (FTE):**  2.5 FTE
 (0.25 Project Manager,
 0.25 Tech Lead,
 1 Full time Sr. Rust Developer,
 1 Full Time SemiSr. Rust Developer)
-- **Total Costs:**  40,500 USD
+- **Total Costs:**  13,500 USD
 
 
 ### Milestone 1: Analysis
 - **Estimated duration:** 2 weeks
-- **FTE:**  2.75
+- **FTE:**  2.5
 - **Costs:** 13,500 USD
 
 | Number | Deliverable | Specification |
 | ----- | ----------- | ------------- |
 | 0a. | License | MIT
-| 0b. | Documentation | Create a comprehensive report that compares the functionalities of integration tests and E2E (End-to-End) tests. The report's focus is to identify what can be accomplished in E2E tests but not in integration tests, as well as any inconsistencies. If applicable, we will provide suggestions that are not covered by either test type.
+| 0b. | Documentation | Create a comprehensive report that compares the functionalities of integration tests and E2E (End-to-End) tests. The report's focus is to identify what can be accomplished in E2E tests but not currently in integration tests, as well as any inconsistencies. If applicable, we will provide suggestions that are not covered by either test type.
 | 0c. | Testing and Testing Guide | No tests will be produced at this stage.
 | 0d. | Docker | Does not apply at this stage.
 | 0e. | Article | We will prepare a summary report and publish it on our blog https://blog.coinfabrik.com/ 
  **1** | Analyze | Study and compare Integration and E2E (End-to-End) tests in ink!.
  **2** | Evaluate | Assign a complexity level to each finding based on the difficulty of implementing the missing or enhanced functionality.
- **3** | Estimate | Indicate which tests shall be developed during the next milestone delivery. If the allocated time for the next milestone is insufficient, we may consider requesting an extension for this grant.
+ **3** | Estimate | Indicate an order of priority under which the missing functionalities shall be developed during the next milestone, where the functionalities are effectively implemented for integration tests.
 
 
+## Future Plans
 
-### Milestone 2: Execution
-- **Estimated duration:** 4 weeks
-- **FTE:** 2.75
-- **Costs:** 27,000 USD
+After finishing Milestone 1: Analysis, and having a good understanding of which missing functionalities in the integration testing environment can be developed, as well as an estimation of the effort required to develop them, we will submit a new grant proposal for a second milestone. The intention of this second milestone is to effectively implement these missing features. We detail in the table bellow its deliverables; its estimated duration is to be defined upon the delivery of the initial Analysis milestone.
 
 | Number | Deliverable | Specification |
 | ----- | ----------- | ------------- |
@@ -145,11 +145,7 @@ We validated the idea of the analysis and development described in this applicat
  **1** | Develop | Build the necessary improvements and missing tests for the identified use cases outlined in the first milestone.
  **2** | Analyze and Estimate | If applicable, suggest additional tests for this or next milestones.
 
-
-
-## Future Plans
-
-We have two projects in mind:
+Moving forward, we have two projects in mind:
 1. Research and develop an advanced testing automation solution for ink! smart contracts.
 2. Improve our open source bug-detection tool [Scout](https://coinfabrik.github.io/scout/)
 ## Referral Program (optional) :moneybag: 
