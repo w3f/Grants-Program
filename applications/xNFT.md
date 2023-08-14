@@ -18,27 +18,36 @@ The Crosschain NFT Pallet is a unique initiative designed to facilitate the smoo
 
 #### The xNFT Pallet provides the following extrinsics (functions):
 
-1. transferSingle(nft_id, dest, dest_weight_limit) —> DispatchResult ; transfer an NFT with the NFT ID 
-    - nft_id — the ID of the NFT being sent.
-    - dest — a multilocation to define the destination address for the tokens being sent via XCM. It supports different address formats, such as 20 or 32-byte addresses (Ethereum or Substrate).
-    - dest_weight_limit — an enum that represents the maximum amount of execution time you want to provide in the destination chain to execute the XCM message being sent.
+1. transferSingleNFT(admin,collection_id, item_id, dest_collection_id, dest_item_id, mint_to, dest) —> DispatchResult ; transfer an NFT with the NFT ID 
+     - admin — the owner of the NFT being sent.
+     - collection_id — the ID of the collection of which the nft is being sent.
+     - item_id — the ID of the NFT being sent.
+     - dest_collection_id — the ID of the collection to which the nft is being sent.
+     - dest_item_id — the ID of the NFT being created.
+     - mint_to — the new owner of the NFT being sent.  
+     - dest — a multilocation to define the destination address for the tokens being sent via XCM. It supports different address formats, such as 20 or 32-byte addresses (Ethereum or Substrate).
+    
 
-2. transferMulti(nfts, dest, dest_weight_limit) —> DispatchResult ; transfer multiple non-fungible tokens, defined by their multilocation
-    - nfts — the IDs of the NFTs being sent.
-    - dest — a multilocation to define the destination address for the tokens being sent via XCM. It supports different address formats, such as 20 or 32-byte addresses (Ethereum or Substrate)
-    - dest_weight_limit — an enum that represents the maximum amount of execution time you want to provide in the destination chain to execute the XCM message being sent.
+2. transferMultiNFT(admin,collection_id, item_id, dest_collection_id, dest_item_id, mint_to, dest) —> DispatchResult ; transfer multiple non-fungible tokens, defined by their multilocation
+     - admin — the owner of the NFT's being sent.
+     - collection_id — the ID of the collection of which the nft is being sent.
+     - item_id — the ID's of the multiple NFT's being sent.
+     - dest_collection_id — the ID of the collection to which the nft is being sent.
+     - dest_item_id — the ID's of the multiple NFT's being created.
+     - mint_to — the new owner of the NFT's being sent. 
+      - dest — a multilocation to define the destination address for the tokens being sent via XCM. It supports different address formats, such as 20 or 32-byte addresses (Ethereum or Substrate)
+     
 
-3. transferSingleWithFee(nft_id, dest_fee, dest, dest_weight_limit) —> DispatchResult ; transfer a non-fungible tokens, but it allows the sender to pay the fee with a different asset, defined by its multilocation
-    - nft_id — the ID of the NFT being sent.
+3. transferCollection(admin,collection_id, dest) —> DispatchResult ; transfer a collection using collection id , defined by its multilocation
+     - admin — the owner of the collection. 
+    - collection_id — the ID of the COLLECTION being sent.
     - dest — a multilocation to define the destination address for the tokens being sent via XCM. It supports different address formats, such as 20 or 32-byte addresses (Ethereum or Substrate).
-    - dest_fee — a multilocation to define the asset used to pay for the XCM execution in the target chain
-    - dest_weight_limit — an enum that represents the maximum amount of execution time you want to provide in the destination chain to execute the XCM message being sent.
-
-4. transferMultiWithFees(nfts, dest_fee, dest, dest_weight_limit) —> DispatchResult ; transfer several non-fingible tokens, but it allows the sender to pay the fee with a different asset, defined by their multilocation
-    - nfts — the IDs of the NFTs being sent.
-    - dest — a multilocation to define the destination address for the tokens being sent via XCM. It supports different address formats, such as 20 or 32-byte addresses (Ethereum or Substrate).
-    - dest_fee — a multilocation to define the asset used to pay for the XCM execution in the target chain
-    - dest_weight_limit — an enum that represents the maximum amount of execution time you want to provide in the destination chain to execute the XCM message being sent.
+ 
+4. transferCollectionOwnership(new_owner,collection_id, dest ) —> DispatchResult ; transfer the collection ownership on another chain, defined by their multilocation
+    - new_owner — the new owner of the COLLECTION being sent.
+    - collection_id — the IDs of the COLLECTION being sent.
+    - dest — a multilocation to define the destination address for the tokens being sent via XCM. It supports different address formats, such as 20 or 32-byte  addresses (Ethereum or Substrate).
+    
 
 #### A feature will be added to the XCM VM for minting NFt on target chain using the encoded data from source chain.
 #### This xNFT pallet will be tightly coupled with the NFT pallet in Substrate
@@ -63,7 +72,8 @@ The Crosschain NFT Pallet is a unique initiative designed to facilitate the smoo
 ### Team members
 
 - **Team lead:** [Aqueel Abbas](https://github.com/tur461)
-- **Team member:** [Jatinder Singh](https://github.com/jatinder116?tab=repositories)  
+- **Team member:** [Ipsa Gupta](https://github.com/Ipsa11?tab=repositories)  
+- **Team member:** [Arunjot Singh](https://github.com/arunjot12?tab=repositories) 
 
 
 ### Contact
@@ -108,7 +118,7 @@ We are the technical partners for [Peer Coin](https://explorer.peer.inc/)
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | xNFT | We will create a Substrate module that will handle cross-chain NFT transfers using these functions: 1. transferSingle 2. transferMulti 3. transferSingleWithFee 4. transferMultiWithFees   |
+| 1. | xNFT | We will create a Substrate module that will handle cross-chain NFT transfers using these functions: 1. transferSingleNFT 2. transferMultiNFT 3. transferCollection 4. transferCollectionOwnership   |
 
 ## Future Plans
 
