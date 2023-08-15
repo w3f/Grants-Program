@@ -130,7 +130,7 @@ N/A yet
 
 ### Team's experience
 
-Coong Crafts is a small team set out with a mission to bring Web3 closer to the world. We previously completed a grant to build [Coong Wallet](https://grants.web3.foundation/applications/coong_wallet) ([PR](https://github.com/w3f/Grants-Program/pull/1387)), a website-based wallet solution to address to inconsistent experience mobile & desktop and bring a new approach to onboard new users to Polkadot & Kusama ecosystem.
+Coong Crafts is a small team set out with a mission to bring Web3 closer to the world. We previously completed a grant to build [Coong Wallet](https://grants.web3.foundation/applications/coong_wallet) ([PR](https://github.com/w3f/Grants-Program/pull/1387)), a website-based wallet solution to address the inconsistent wallet experience on mobile & desktop and bring a new approach to onboard new users to Polkadot & Kusama ecosystem.
 
 ### Team Code Repos
 
