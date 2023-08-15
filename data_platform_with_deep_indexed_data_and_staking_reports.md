@@ -1,4 +1,4 @@
-a# Polkadot Data platform with deep indexed data and staking reports
+# Polkadot Data platform with deep indexed data and staking reports
 
 - **Team Name:** [P2P.ORG](http://p2p.org/) Validator
 - **Payment Address:** 0xE22211Ba98213c866CC5DC8d7D9493b1e7EFD25A (USDC)
