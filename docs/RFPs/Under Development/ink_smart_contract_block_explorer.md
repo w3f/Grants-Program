@@ -1,4 +1,4 @@
-# RFP: Substrate Identity Directory
+# RFP: ink! block explorer
 
 * **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_explorer.md)
 * **Proposer:** [Noc2](https://github.com/Noc2)

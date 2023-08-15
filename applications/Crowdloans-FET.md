@@ -3,6 +3,7 @@
 - **Team Name:** Mutai Solutions
 - **Payment Address:** 0xE27F2E8321Fb4c32525a4ED86d2902dbA63491E4 Ethereum (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1280#issuecomment-1583327825)
 
 ## Project Overview :page_facing_up:
 

@@ -6,6 +6,9 @@
 
 * **Payment Address:**  ERC20(DAI etc.):0x0cE6254832D553590349Ef7a427519d1eb8af70F
 
+* **Status:** [Cancelled]( 
+https://github.com/w3f/Grants-Program/pull/182#issuecomment-1571885497)
+
 > *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:

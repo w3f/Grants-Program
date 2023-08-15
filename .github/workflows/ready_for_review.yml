@@ -1,12 +1,11 @@
 name: Ready for Review notification
 
 on:
-  pull_request:
-    types: [labeled]
+  pull_request_target:
+    types: [ready_for_review]
     
 jobs:
   send_matrix_review_msg:
-    if: github.event.label.name == 'ready for review'
     runs-on: ubuntu-latest
     steps:
     - uses: fadenb/matrix-chat-message@v0.0.6

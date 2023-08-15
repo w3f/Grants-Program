@@ -3,6 +3,7 @@
 * **Team Name:** [SuperColony](https://github.com/Supercolony-net)
 * **Payment Address:** ERC 20 ADDRESS: 0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2, It is follow-up grant for [first grant](https://github.com/w3f/Grants-Program/pull/497).
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/621#issuecomment-1611059800)
 
 ## Project Overview :page_facing_up:
 

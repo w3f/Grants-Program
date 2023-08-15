@@ -1,12 +1,8 @@
-# W3F Grant Proposal
+# MangoSale  Protocol
 
-
-
-- **Project Name:** MangoSale  Protocol
 - **Team Name:** MangoBOX  labs
 - **Payment Address:** 0x33e69715988126eB3653bFAfd338320BE9A10cd0(USDC))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
-
 
 
 ## Project Overview :page_facing_up:
@@ -263,7 +259,7 @@ In the Substrate/Polkadot/Kusama ecosystem,  we have not found any similar produ
 
 ### Contact
 
-- **Contact Name:Jason Zhao** 
+- **Contact Name:** Jason Zhao 
 - **Contact Email:** MangoBOXLabs@gmail.com
 - **Website: mangobox.xyz**
 

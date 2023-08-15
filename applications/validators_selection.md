@@ -1,4 +1,3 @@
-
 # Validators selection
 
 
