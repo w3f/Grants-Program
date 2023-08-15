@@ -91,7 +91,7 @@ We concur with this perspective and have actually been actively researching the 
 ### Team members
 
 - **Karlo Mardešić** ([GitHub](https://github.com/Rqnsom), [LinkedIn](https://www.linkedin.com/in/karlo-mardesic)) is a Software Engineer at Eiger and has experience with telecommunications and low-level drivers in C/C++. These days his expertise has shifted to blockchain technology and P2P protocols, where he primarily uses Rust to tackle exciting problems.
-- **Piotr Olszewski** ([GitHub](https://github.com/asmie), [LinkedIn](https://www.linkedin.com/in/piotr-olszewski-8a239939)) is a Software Engineer at Eiger, and has over 12 years of professional experience, with a strong academic background in distributed computing. He has a large bag of experiences, ranging from military appliances to embedded platforms. His main tools are C/C++ and Rust.
+- **Piotr Olszewski** ([GitHub](https://github.com/asmie), [LinkedIn](https://www.linkedin.com/in/piotr-olszewski-8a239939)) is a Software Engineer at Eiger, and has over 13 years of professional experience, with a strong academic background in distributed computing. He has a large bag of experiences, ranging from military appliances, cryptographic projects, telecommunication software to embedded platforms. During his career, Piotr took different roles, from developer to team and tech leader. His main tools are C/C++ and Rust.
 
 ### Contact
 
@@ -141,7 +141,7 @@ As mentioned in the Teams section, Eiger already has extensive experience develo
 - **Total Costs:** 98 000 USD
 - **Starting Date:** 04/09/23
 
-### **Milestone 1:** MoveVM compatibility work and Subtrate Pallet development
+### Milestone 1 - MoveVM compatibility work and Subtrate Pallet development
 
 - **Estimated Duration:** 2 months
 - **FTE:** 2
