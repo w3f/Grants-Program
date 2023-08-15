@@ -32,7 +32,7 @@ We ran memory profiling for a [NodeJS script](https://github.com/sinzii/delightf
 
 From the results, we can see that the memory consumption from `Metadata` and its type system are relatively high. As we looked into the source code itself, we found out that `@polkadot/api` has its own types and structure for every piece in the metadata, during the decoding process it will create types for all of the pieces in the metadata hierarchy/structure which result in the lot of `Type` objects and a big `Metadata` object ([`PortableRegistry` is a part of the Metadata](https://github.com/polkadot-js/api/blob/319535a1e938e89522ff18ef2d1cef66a5af597c/packages/types/src/interfaces/metadata/v14.ts#L43-L47))
 
-We tried to build a [small proof of concept alternative solution](https://github.com/sinzii/delightfuldot-poc/blob/main/src/poc/delightfuldot.ts) using [`scale-ts`](https://github.com/paritytech/scale-ts) (now `subShape`) for scale-codec encoding/decoding to do the same functionality and the memory consumption has improved noticeably.
+We tried to build a [small proof of concept alternative solution](https://github.com/sinzii/delightfuldot-poc/tree/main/src/poc) using [`scale-ts`](https://github.com/paritytech/scale-ts) (now `subShape`) for scale-codec encoding/decoding to do the same functionality and the memory consumption has improved noticeably.
 <img width="680" alt="image" src="https://github.com/sinzii/w3-grant-draft/assets/6867026/71374ff9-db78-43ce-aef6-b26e44747f22">
 
 Going further, instead of connecting to 1 network, this time we tried to connect to 20, 50, and 100 network endpoints to fetch balances for an account using `@polkadot/api` and our PoC solution for comparison, and as we can see from the [benchmark result](https://github.com/sinzii/delightfuldot-poc#memory-consumption-benchmark-result), the memory consumption of our PoC solution is significantly smaller. More details about the benchmarking could be found in [our PoC repository](https://github.com/sinzii/delightfuldot-poc#benchmark-memory-consumption-when-connecting-to-multiple-network-endpoints).
@@ -143,7 +143,7 @@ Team members
 ## Development Status :open_book:
 
 - We have been in research the `@polkadot/api` project to learn how it works under the hood as well as doing benchmarking & profiling to figure out why it has a high memory consumption.
-- We have been building a [proof-of-concept solution](https://github.com/sinzii/delightfuldot-poc/blob/main/src/poc/delightfuldot.ts) in an attempt to address the memory issue and saw a [clear/good improvement](https://github.com/sinzii/delightfuldot-poc/tree/main#memory-consumption-benchmark-result).
+- We have been building a [proof-of-concept solution](https://github.com/sinzii/delightfuldot-poc/tree/main/src/poc) in an attempt to address the memory issue and saw a [clear/good improvement](https://github.com/sinzii/delightfuldot-poc/tree/main#memory-consumption-benchmark-result).
 
 ## Development Roadmap :nut_and_bolt:
 
