@@ -56,6 +56,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Eiger](https://www.eiger.co/)                                 | [Storage solution on Polkadot](./Eiger_Storage_on_Polkadot_1.md)   | [GitHub](https://github.com/eigerco)                               | ☐          |        ☐       |      ☐     |
 | [Salaheldin Soliman](https://github.com/salaheldinsoliman)                     | [Solang Playground](Solang_Playground.md)                                                              | [GitHub](https://github.com/salaheldinsoliman)                      | ☐          |       ☐        |     ☐     |
 | [P2P.ORG](http://p2p.org/)                    | [P2P data platform](data_platform_with_deep_indexed_data_and_staking_reports.md)                                                              | [GitHub](https://github.com/p2p-org)                      | ☐          |       ☐        |     ☐     |
+| [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests](CoinFabrik_On_Ink_Integration_Tests.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☐        |     ☐     |
+
 
 [🔝](#2023)
 
