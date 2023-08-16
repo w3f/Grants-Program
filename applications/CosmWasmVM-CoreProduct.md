@@ -130,13 +130,13 @@ https://medium.com/supercolony/a-look-into-virtual-machines-and-smart-contract-r
 
 ### Overview
 
-- **Total Estimated Duration:** ~~11 weeks~~ 7 months
+- **Total Estimated Duration:** February 2023 - August 2023
 - **Full-Time Equivalent (FTE):**  1,5 FTE
 - **Total Costs:** 29,700 USD
 
 ### Milestone 1 — Pallet CosmWasm VM
 
-- **Estimated duration:** ~~8 weeks~~
+- **Estimated duration:** 8 weeks
 - **FTE:**  1,5
 - **Costs:** $21,600
 
@@ -152,7 +152,7 @@ https://medium.com/supercolony/a-look-into-virtual-machines-and-smart-contract-r
 
 ### Milestone 2 — PolkadotJS Integration
 
-- **Estimated duration:** ~~3 weeks~~
+- **Estimated duration:** 3 weeks
 - **FTE: 1.5**
 - **$8,100**
 
