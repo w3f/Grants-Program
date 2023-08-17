@@ -53,13 +53,14 @@ The latter option typically provides a better user experience as the user doesn'
 For IDEs, code editors and other development tools that don't have robust LSP client libraries/APIs/modules, extensions/plugins/integrations can either implement their own LSP client middleware or use the semantic analyzer directly.
 
 This stage of the project will improve ink! language support features across all components by adding:
-  - Quick fixes for all existing diagnostic errors and warnings.
-  - ink_e2e macro support (i.e diagnostics, quickfixes, completions, code actions and hover content).
-  - Command for creating an ink! project and code/intent actions for inserting code stubs/snippets for relevant ink! entities.
-  - Go to definition, find references and rename/refactor support for path-based ink! attribute argument values (i.e.  `env` values).
-  - Diagnostics that verify that the value of `env` is `impl Environment` as well as quick fixes and code/intent actions to `impl Environment` for the target item where necessary.
-  - Inlay hints and signature help/parameter hints for ink! attribute arguments.
-  - Code/intent actions for "flattening" ink! attributes.
+
+- Quick fixes for all existing diagnostic errors and warnings.
+- ink_e2e macro support (i.e diagnostics, quickfixes, completions, code actions and hover content).
+- Command for creating an ink! project and code/intent actions for inserting code stubs/snippets for relevant ink! entities.
+- Go to definition, find references and rename/refactor support for path-based ink! attribute argument values (i.e. `env` values for `#[ink_e2e::contract]` and `environment` values for `#[ink_e2e::test]`).
+- Diagnostics that verify that the value of `env` values for `#[ink_e2e::contract]` and `environment` values for `#[ink_e2e::test]` are `impl Environment` as well as quick fixes to `impl Environment` for the target item where necessary.
+- Inlay hints and signature help/parameter hints for ink! attribute arguments.
+- Code/intent actions for "flattening" ink! attributes.
 
 #### Observation
 
