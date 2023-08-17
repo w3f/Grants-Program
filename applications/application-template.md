@@ -1,208 +1,172 @@
 # Name of your Project
 
-EquiBloc Creative Ventures
+> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
+>
+> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
+- **Team Name:** Legal name of your team (e.g. Duo)
+- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
-Team Name: Sirius Africa 
-Payment Address: (Ethereum) : 0xe07767abe76de87C1DbF7D9d281805d7678A0ce6
+> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+## Project Overview :page_facing_up:
 
-Level: 2
+If this application is in response to an RFP, please indicate this on the first line of this section.
 
-OVERVIEW
-Tagline: Transforming Africa's Creative Landscape with Blockchain Innovation
+If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
+### Overview
 
-Description: Sirius Africa is revolutionizing Africa's creative industry by providing a blockchain-powered platform that offers structured equity financing to content creators, bridging the existing funding gap. Our platform accumulates industry data to streamline the process and recommend strategic partnerships, enhancing the entire creative ecosystem.
-Integration with Substrate / Polkadot / Kusama: Sirius Africa envisions integrating with the Substrate framework to leverage the scalability, interoperability, and security features it offers. This integration will enable us to create a robust and scalable blockchain infrastructure tailored to Africa's unique creative landscape.
-Team's Interest: Our team is deeply motivated to address the lack of structured equity financing in Africa's creative industries. We see the transformative potential of blockchain technology in democratizing access to funding and catalyzing growth. With a decade-long commitment to enhancing digital and physical infrastructure in the creative sector, we are driven to pioneer this innovative solution and reshape Africa's creative landscape for the better.
+Please provide the following:
 
-
+- If the name of your project is not descriptive, a tag line (one sentence summary).
+- A brief description of your project.
+- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+- An indication of why your team is interested in creating this project.
 
 ### Project Details
 
-Our project's expected final state is a fully functional blockchain-powered platform that facilitates structured equity financing for Africa's creative industries. This platform will provide creatives with access to funding, streamline the equity financing process, and offer data-driven recommendations for strategic partnerships.
+We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-Patents and Share Screen Video Call:
-Sirius Africa holds several patents poised to revolutionize the creative industry:
-* Patent for novel methods of using blockchain technology to facilitate equity financing.
-* Patent for innovative algorithms or techniques for evaluating and determining the value of equity stakes in creative projects.
-* Patent for new methods of managing and distributing equity financing within a multi-channel network structure.
-I am eager to discuss these patents in detail during a share screen video call session. Unfortunately, I am currently unable to share patent documents due to our ongoing state of development.
-Transition to USDT and Project Deck:
-Excitingly, we've recently embarked on a strategic journey by transitioning from E-naira to USDT, ensuring enhanced stability throughout our progress. To delve into the depth of our ongoing project, I encourage you to explore our current project deck: [Project Deck Link](https://drive.google.com/file/d/1KRadf5yp-LNQo0QOLrXkp9fLEofyrdlp/view).
-Commitment to Industry Infrastructure:
-For over a decade, we've dedicated ourselves to strengthening both digital and physical infrastructure within Africa's creative sectors. To witness a compilation of our initiatives and achievements, I invite you to explore our Data Room: [Data Room Link](https://drive.google.com/drive/u/0/folders/1RcNrptPDYAERe5EVstJNUpAH1SJfzgn_).
-Your exploration of these resources will provide further insight into our vision and commitment to transforming Africa's creative landscape.
+- Mockups/designs of any UI components
+- Data models / API specifications of the core functionality
+- An overview of the technology stack to be used
+- Documentation of core components, protocols, architecture, etc. to be deployed
+- PoC/MVP or other relevant prior work or research on the topic
+- What your project is _not_ or will _not_ provide or implement
+  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
 
-Relevant Submissions:
-
-Data Models/API Specifications: We will provide detailed data models and API specifications outlining how user data, funding transactions, and industry data will be structured and interact within our platform.
-
-Technology Stack: Our technology stack will include blockchain (Substrate), AI (machine learning models), web development frameworks, and cloud infrastructure.
-
-Core Components/Protocols: We will deploy core components such as user authentication, smart contract-based funding, data analytics, and recommendation algorithms.
-
-PoC/MVP: We will present a Proof of Concept (PoC) or Minimum Viable Product (MVP) showcasing essential features like user registration, funding transactions, data accumulation, and basic recommendation functionality.
-
-Clarification on Limitations:
-
-Our project will not provide traditional banking services or investment advice. While we facilitate equity financing, we will not engage in active fund management. Additionally, our platform will not guarantee financial outcomes for users, as investment returns are subject to market dynamics. We will not offer legal advisory services or professional design assistance, as we intend to leverage AI to assist content creators in these areas.
-
+Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+- The (future) tokenomics of your project 
+- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
+- Business-oriented activities (marketing, business planning), events or outreach
 
 ### Ecosystem Fit
 
-Project Positioning:
+Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
-Sirius Africa integrates into the Polkadot/Substrate/Kusama ecosystem as a blockchain-powered platform tailored for Africa's creative industry. Our innovative solution addresses the absence of structured equity financing in the continent's creative sectors. By leveraging blockchain technology, we aim to create a secure, transparent, and accessible ecosystem for funding creative projects.
-
-Target Audience:
-
-Our primary audience includes dApp developers, creators in Africa's creative industries, and potential investors seeking exposure to the region's creative scene. Additionally, our platform opens doors for UI/UX designers, as we emphasize user-friendly experiences for all participants in the ecosystem.
-
-Meeting Key Needs:
-
-Sirius Africa's project addresses the critical need for structured equity financing within Africa's creative sectors. By providing a blockchain-based platform, we empower creators to access funding opportunities that were previously scarce or unavailable. This bridges the gap between creators and investors, fostering growth and innovation within the industry.
-
-Comparison to Similar Projects:
-
-While there are existing projects in related ecosystems, such as blockchain-based financing platforms, there is a dearth of solutions catering specifically to Africa's creative industries. Sirius Africa stands out by focusing on this niche, combining blockchain and AI to transform an underserved sector. Our emphasis on equity financing, industry data accumulation, and tailored recommendations sets us apart.
-
-Differences from Similar Projects:
-
-Unlike projects in related ecosystems that may not be region-specific, Sirius Africa is uniquely poised to cater to Africa's creative landscape. We provide a holistic solution that encompasses equity financing, data-driven insights, and AI-powered recommendations. Our focus on enhancing local industries and addressing challenges specific to Africa sets us apart from more generalized solutions.
-
-
+- Where and how does your project fit into the ecosystem?
+- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+- What need(s) does your project meet?
+- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+  - If so, how is your project different?
+  - If not, are there similar projects in related ecosystems?
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-* Name of team leader - Dazi Ezekiel-Zang 
-* Names of team members 
+- Name of team leader
+- Names of team members
 
-Contact
-* Contact Name: Full name of the contact person in your team- Japheth Jonathan
-* Contact Email: Contact email - japheth.jonathan@pglnigeria.com
-* Website: https://siriusafrica.com/project/
+### Contact
 
+- **Contact Name:** Full name of the contact person in your team
+- **Contact Email:** Contact email (e.g. john@duo.com)
+- **Website:** Your website
 
-Contact
-* Contact Name: Full name of the contact person in your team-  Dazi Ezekiel-Zang
-* Contact Email: Contact email - info#siriusafrica.com
-* Website: https://siriusafrica.com/project/
+### Legal Structure
 
-Contact
-* Contact Name: Full name of the contact person in your team-   Afam Ojemeni
-* Contact Email: Contact email - afamoj@gmail.com
-* Website: https://siriusafrica.com/project/
+- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
+- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
-Contact
-* Contact Name: Full name of the contact person in your team-   Wura Alake
-* Contact Email: Contact email - wuraola007@gmail.com
-* Website: https://siriusafrica.com/project/
+### Team's experience
 
+Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
 
-Legal Structure
-* Registered Address: 1 Ikota Road, Ajah, Lekki, Lagos State, Nigeria. 
-* Registered Legal Entity: Sirius Africa International Ltd. 
+If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
+### Team Code Repos
 
+- https://github.com/<your_organisation>/<project_1>
+- https://github.com/<your_organisation>/<project_2>
 
+Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
+- https://github.com/<team_member_1>
+- https://github.com/<team_member_2>
 
-Team's Experience:
+### Team LinkedIn Profiles (if available)
 
-Our team is uniquely poised to drive the success of this innovation, bringing together a diverse range of expertise to ensure a seamless execution:
-
-Japheth Jonathan, Chief Technology Officer:
-Japheth is a seasoned expert in app, Web3, AI, and blockchain development. With an impressive track record of single-handedly engineering successful blockchain products, his hands-on approach and innovative mindset are instrumental in delivering cutting-edge solutions. Japheth's technical proficiency, coupled with his academic background in Project Management and Computer Science, empowers him to manage projects effectively.
-
-Dazi Ezekiel-Zang, Founder/CEO:
-Dazi is a visionary executive committed to leveraging blockchain technology and AI to revolutionize Africa's creative media industries. His deep understanding of digital and physical infrastructure's potential fuels our mission to create a unified market powered by blockchain innovation. Dazi's strategic insights and visionary leadership guide our organization's direction, ensuring we remain at the forefront of technological advancements.
-
-Afam Ojemeni, Chief Adviser:
-Afam contributes over 15 years of software development experience, particularly in multinational and international government contexts. As an Engineering Manager with Amazon, Afam leads teams in creating solutions that impact millions worldwide. His expertise in scalable software solutions ensures our systems are robust and reliable, driving our technological advancements.
-
-Wura Alake, Chief Marketing Officer:
-Wura's strong background in media/PR, along with her experience with the Lagos State Government, enriches our marketing and communication strategies. As the Founder/CEO of Iwabiwura, she brings valuable insights into effectively reaching and engaging our target audience. Wura's experience in public administration and deep understanding of the African market amplify our organization's ability to connect.
-
-The team's diverse skills, rich experience, and deep market understanding position us for success. With technical prowess, visionary leadership, and strategic marketing acumen, we are ready to navigate challenges and seize opportunities within Africa's creative financing landscape. Our innovative drive ensures that our project thrives and delivers substantial impact.
-
-
-Team Code Repos
-Currently, we do not have any active team code repositories on GitHub. We are in the process of developing our projects and will provide GitHub repositories once they are available. Thank you for your understanding.
-
-
-Team LinkedIn Profiles 
-
-Certainly, here are the LinkedIn profiles of your team members:
-* Afam Ojemeni: https://www.linkedin.com/in/afamoj/
-* Japheth Jonathan: https://ng.linkedin.com/in/japheth-jonathan-8a503920b
-* Dazi Ezekiel-Zang: https://www.linkedin.com/in/dazi-ezekiel-zang-79335279/
-* Wura Alake: https://ng.linkedin.com/in/wuraoladamilolaalake
+- https://www.linkedin.com/<person_1>
+- https://www.linkedin.com/<person_2>
 
 
 ## Development Status :open_book:
 
-Our journey has been a blend of in-house efforts and industry engagement. A significant part of our work has been conducted internally, including feasibility studies that gauge the industry landscape. We've also orchestrated global campaigns that garnered enthusiastic support from creatives in the diaspora, amplifying our project's reach. While detailed write-ups regarding our endeavors can be found in our Data Room, we've been actively engaged in shaping the project's direction and conducting research to underpin its viability. Visit our Data Room to explore the comprehensive documentation that reflects our commitment and progress: https://drive.google.com/drive/u/0/folders/1RcNrptPDYAERe5EVstJNUpAH1SJfzgn_ .
+If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+
+- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
+- academic publications relevant to the problem,
+- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
+- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
+- previous interface iterations, such as mock-ups and wireframes.
+
+## Development Roadmap :nut_and_bolt:
+
+This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+
+Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
+
+> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
+
+### Overview
+
+- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
+- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
+- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+
+### Milestone 1 Example — Basic functionality
+
+- **Estimated duration:** 1 month
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
+
+> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
+| 2. | Substrate module: Y | The Y Substrate module will... |
+| 3. | Substrate module: Z | The Z Substrate module will... |
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
 
 
+### Milestone 2 Example — Additional features
 
+- **Estimated Duration:** 1 month
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
 
-
-Development Roadmap 🔩
-
-Overview:
-
-* 		MVP Development and Launch ($20,000):
-    * Hiring developers and engineers for MVP creation: $10,000
-    * Design and User Experience: $5,000
-    * Quality Assurance and Testing: $3,000
-    * Marketing and Initial User Engagement: $2,000
-* 		Strategic Partnerships and Software Development ($10,000):
-    * Collaboration with Algo Coding Expert for advanced software: $6,000
-    * Engaging Software Development Experts: $3,000
-    * Software Development Planning: $1,000
-* 		Team Building and Technical Expertise Enhancement ($5,000):
-    * Recruitment of Essential Team Members: $3,000
-    * Training and Skill Enhancement: $2,000
-* 		Equity Financing Integration and Growth Strategy ($5,000):
-    * Implementation of Blockchain-Based Equity Financing: $3,000
-    * Outlining Growth Strategy for User Base and Revenue: $2,000
-
-Project Metrics:
-* Total Estimated Duration: 4 months
-* Full-Time Equivalent (FTE): 8 FTE (Average number of full-time employees working throughout the project)
-* Total Costs: $40,000 USD
+...
 
 
 ## Future Plans
 
-Short-Term:
-In the immediate future, our focus is on rapid development and deployment of our MVP. We intend to use the grant funds to hire skilled developers and engineers to create a robust MVP that showcases the core functionality of our blockchain-based equity financing platform. This MVP will serve as the foundation for our platform's launch and user engagement.
-Enhancement is critical to our approach. We plan to continuously refine the user experience based on user feedback and real-world usage. We also aim to establish strategic partnerships, collaborating with experts in algorithmic coding to refine our software's functionality and enhance its efficiency.
-Promotion and user adoption are paramount. Our marketing efforts will be geared towards generating awareness among creatives in Africa's diverse creative industries. We plan to host targeted campaigns, webinars, and engagement events to onboard users and create a vibrant user community.
+Please include here
 
-Long-Term:
-Our long-term vision is to establish EquiBloc Creative Ventures as the go-to platform for equity financing in Africa's creative industries. We envision a comprehensive ecosystem where creatives can seamlessly access funding, network, and receive strategic support for their projects.
-We are committed to staying at the forefront of technological advancements, consistently integrating new AI and blockchain capabilities to enhance our platform's features and security. Our team's ongoing collaboration with experts in software development will drive continuous innovation, ensuring that our platform remains cutting-edge.
-To sustain growth and relevance, we plan to diversify our services to cater to evolving industry needs. This includes expanding our offering to encompass not only equity financing but also additional services such as mentorship, advisory, and talent matchmaking.
-In conclusion, our short-term focus is on developing, enhancing, and promoting the MVP, while our long-term goals involve establishing EquiBloc Creative Ventures as a holistic ecosystem that catalyzes growth, innovation, and financial access within Africa's creative industries.
+- how you intend to use, enhance, promote and support your project in the short term, and
+- the team's long-term plans and intentions in relation to it.
 
+## Referral Program (optional) :moneybag: 
 
-- **Payment Address:**
-- Payment Address (Eth): 0xe07767abe76de87C1DbF7D9d281805d7678A0ce6
+You can find more information about the program [here](../README.md#moneybag-referral-program).
+- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
+- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** I learned about the Grants Program through industry sources and gained further insights from the Web3 Foundation website.
+**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 
-Additional Information :
+Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-Our team has already conducted extensive feasibility studies and global campaigns to gauge industry interest and gather support. While we are not currently able to share patent documents due to our ongoing development, we have three pending patents that will significantly enhance our project's innovation.
-
-We have not received financial contributions from other teams at this stage. This application is our first grant proposal within the Web3 ecosystem.
-
-We have not applied for previous grants related to this specific project. However, our team members have successfully secured private grants and funding for various projects in the past from Belraf Limited and Pompey Residence, showcasing our ability to execute and deliver on our commitments.
-
-Our commitment to filling the void in equity financing within Africa's creative industries has driven us to this point, and we are excited to continue our journey with the support of the Grants Program. Thank you for considering our application.
+- Work you have already done.
+- If there are any other teams who have already contributed (financially) to the project.
+- Previous grants you may have applied for.
