@@ -2,7 +2,7 @@
 
 - **Team Name:** Federico Cicciarella
 - **Payment Address:** 15ofeBpTMQ7MNbqViRRRbkVz2y3eQt8SCgBy6yVVfsTKhMn2 (USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -44,7 +44,7 @@ The application will handle all the necessary infrastructure setup for transacti
 
 ### Project Details
 
-The project will consist of 8 microservices, each with a well-defined task.
+The project will consist of 9 microservices, each with a well-defined task.
 
 ![TrackingChainSchema](https://github.com/FedeC87p/PublicImage/assets/58514549/74186f4f-ac66-4ac6-afc1-90f19c9b479d)  
 
@@ -75,9 +75,12 @@ The project will consist of 8 microservices, each with a well-defined task.
 7. Frontend Registry:
    - Purpose: Provides a user-friendly visualization of all tracked codes with direct links for on-chain verification.
    
-8. Web Application Triage:
+8. Web Application:
    - Purpose: Give the possibility to enter or view the status of onchain traced codes. (it will be fundamental for the demo that will have to lead us users to use the blockchain).
    
+9. Tx Monitor Worker:
+   - Purpose: Monitor the status of transactions to proceed with any automatic actions or to launch alerts in the event of transactions that cannot be managed automatically. 
+    
 ![Screenshot_Insert](https://github.com/FedeC87p/TrackingChainGrant/assets/58514549/2e850a3b-1375-4889-a371-8593410b3282)
 
 ### **Overview of the technology stack to be used**
@@ -124,6 +127,7 @@ I'm working on a project for a censorship-resistant decentralized video platform
 
 - https://github.com/TrackingChains/TrackingChain
 - https://github.com/TrackingChains/EVMTrackingChain
+- https://github.com/TrackingChains/InkTrackingChain
 - https://github.com/FedeC87p
 
 ### Team LinkedIn Profiles (if available)
@@ -134,9 +138,9 @@ I'm working on a project for a censorship-resistant decentralized video platform
 
 ### Overview
 
-- **Total Estimated Duration:** 4 month
+- **Total Estimated Duration:** 6.5 month
 - **Full-Time Equivalent (FTE):**  1
-- **Total Costs:** 10.000 USD
+- **Total Costs:** 16.500 USD
 
 ### Milestone 1 — Basic functionality
 
@@ -161,7 +165,7 @@ I'm working on a project for a censorship-resistant decentralized video platform
 | 7. | Ink! Smart contracts. | We will deliver a set of Ink! smart contracts that will able to track the key values. In particular, it will take care of saving in a dictionary key-value formed by a "Key" byte32 and the "Value" a list of bytes. A get call will also be available, which given a "Key" byte32 returns the entire "Value" list of Bytes saved over time, also providing the block number in which the transaction was carried out. It will also include the C# function that the "Tx Generator Worker" service will have to do to write onchain and the read call that will be used by the "Tx Watcher Worker" service. The implementation will partially reuse the [C# SubstrateGaming library](https://github.com/SubstrateGaming) |
 | 8. | EVM Smart contracts | We will deliver a set of EVM smart contracts that will able to track the key values. In particular, it will take care of saving in a dictionary key-value formed by a "Key" byte32 and the "Value" a list of bytes. A get call will also be available, which given a "Key" byte32 returns the entire "Value" list of Bytes saved over time, also providing the block number in which the transaction was carried out. It will also include the C# function that the "Tx Generator Worker" service will have to do to write onchain and the read call that will be used by the "Tx Watcher Worker" service. The implementation will partially reuse the [C# Nethereum library](https://nethereum.com/) |
 
-### Milestone 2 — Monitor and Recovery functionality
+### Milestone 2 — FrontEnd UI
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
@@ -171,14 +175,50 @@ I'm working on a project for a censorship-resistant decentralized video platform
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide a basic **tutorial** that explains how a user can use a frontend to easily configure profile, watch the transaction status and use recovery tool for failed transactions. |
+| **0b.** | Documentation | We will provide a basic **tutorial** that explains how a user can use a frontend to easily configure profile and usage. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains how to use. |
-| 1. | Tx Recovery Worker | Written in C#, The Tx Recovery Worker will used to managed all transaction in failed status. It takes care of trying to re-process any transactions that have ended in error. in case of a new error, the transaction will be cancelled |
-| 2. | Frontend Admin Tools | Written in Asp.Net MVC, The frontend for manage all configuration like smart contract used, wallet used, profile association. |
-| 3. | Frontend Transaction Monitor | Written in Asp.Net MVC, The monitor to watch all tracking request. A graphical tool that allows you to display the status of all queues on screen. For example showing how many Triage there are, how many Pending, how many failed transactions. |
-| 4. | Frontend Registry | Written in Asp.Net MVC, The frontend for user friendly graph of specific product tracked onchain. For each value Key will be show all data Values insured and in wich block/time was performed |
+| 1. | Frontend Admin Tools | Written in Asp.Net MVC, The frontend for manage all configuration like smart contract used, wallet used, profile association. |
+| 2. | Frontend Transaction Monitor | Written in Asp.Net MVC, The monitor to watch all tracking request. A graphical tool that allows you to display the status of all queues on screen. For example showing how many Triage there are, how many Pending, how many failed transactions. Including the detail of each single Tx within the Triage, Pool, pending and Registry |
+| 3. | Frontend Registry | Written in Asp.Net MVC, The frontend for user friendly graph of specific product tracked onchain. For each value Key will be show all data Values insured and in wich block/time was performed |
+
+### Milestone 3 — Monitor and Recovery functionality
+
+- **Estimated duration:** 1.5 month
+- **FTE:**  1
+- **Costs:** 4.500 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide a basic **tutorial** that explains how watch the transaction status and use recovery tool for failed transactions. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains how to use. |
+| 1. | Tx Generator/Watcher Worker | It will be improved to handle any errors that may arise and to retry the process for a configurable number of times. Once the maximum number has been exceeded, it will go into error status and the Watcher will manage the next phase which may be an attempt to re-enter the transaction again starting from the pool or put it definitively in permanent error status so as to be able to process the subsequent elements that were pending of the completely of the Transaction failed |
+| 2. | Tx Recovery/Monitor Worker | Written in C#, The Tx Recovery/Monitor Worker will used to managed all transaction in failed status. It takes care of trying to re-process any transactions that have ended in error. in case of a new error, the transaction will be cancelled. It will also take care of generating alerts to be sent by email whenever a something goes wrong |
+| 3. | Tx Cleaner Worker | Written in C#, The Tx Cleaner Worker will used to delete all transactions in status Completed from the Triage, PEnding and Pool to make the database lighter, The history will be present in the Registry |
+| 4. | Tx Unlocker Worker | Written in C#, The Tx Unlocker Worker will used to to unlock any transactions left Unlocked due to unhandled errors or system crashes that cause a server restart. (very remote hypothesis but very important to manage in order not to lead to a block of all transactions due to unmanaged Unlocks) |
+| 5. | Frontend Admin Tools | Improvements to decide which failed Tx's to try to reprocess or mark them as permanently failed and possibility of marking as Aborted the Tx present in the Triage but not yet in Pool status |
+
+### Milestone 4 — Ink Generation Call Improvement
+
+- **Estimated duration:** 1 month
+- **FTE:**  1
+- **Costs:** 2.000 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide a basic **tutorial** that explains how configure the transaction with this improvement enable. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains how to use. |
+| 1. | Tx Generator Worker | Improvement to wait for the transaction to be finalized in order to skip the "Tx Watcher Phase" (this mode will be an option present in the configuration) it's will also allow for better support for chains that don't have access to subscans. To achieve this we will listen via socket in order to wait for the finalization of the generated Tx |
+| 2. | Frontend Registry | Improvement that allows you to view not only the data present in the Registry but also to take directly from the data saved in the onchain smart contract |
 
 ## Future Plans
 
@@ -186,6 +226,7 @@ I'm working on a project for a censorship-resistant decentralized video platform
 - Continue meetings with customers interested in entering the web3 and onboard other customers.
 - Participate in events to be able to demonstrate how our demo works, also showing the portfolio of customers who have already chosen to use it.
 - Integration DID with Kilt
+- Resolve all open [issues](https://github.com/TrackingChains/TrackingChain/issues)
 - Continue development of other features
   - Dynamic smart contract data instead of single key-value pairs
   - Support message bus (like RabbitMQ)
@@ -213,3 +254,5 @@ I'm working on a project for a censorship-resistant decentralized video platform
    - No, all "Future Plans" will be covered by new clients or carried forward by me.
 3. Have you applied for other grants so far?
    - No
+
+
