@@ -107,6 +107,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
+- [Nikhil Ranjan](https://github.com/nikw3f)
 - [Seraya Takahashi](https://github.com/takahser)
 
 #### W3F Operations Team<!-- omit in toc -->
