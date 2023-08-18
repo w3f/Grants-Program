@@ -20,8 +20,7 @@ The portfolio tracker is designed to accommodate the diverse needs of a broad us
 
 ### Architecture
 
-![Architecture](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/354deb7d-b6bf-4dcf-a211-e138f932d2ca)
-
+<img width="960" alt="PortoflioTrackerArchitectureNew" src="https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/4990a0db-ea37-4458-b30f-b10b6c464d98">
 
 
 ### Technologies
@@ -39,21 +38,25 @@ Within the context of the project, the following packages are used:
 
 Bubble.io is a visual development platform designed to democratize the process of creating web applications. It enables users, even without traditional coding skills, to build complex web applications through a user-friendly interface. Its features include visual programming capabilities, database management tools, a design editor, API integration, and hosting solutions. Essentially, Bubble.io is part of the no-code movement, which allows rapid digital product creation and innovation without requiring deep technical expertise.
 
+#### 3) React.js
+
+React.js, often simply called React, is an open-source JavaScript library developed by Facebook for building user interfaces. It allows developers to create reusable UI components and manage the state of an application efficiently. React operates on a virtual DOM, which optimizes rendering by minimizing direct manipulation of the actual DOM and by batching multiple changes together. This results in improved performance and a more seamless user experience. React's component-based architecture and its emphasis on declarative programming make it easier to understand, maintain, and scale applications.
+
 ### Components
 
-#### 1) Data Sources (Subscan)
+#### 1) Data Source (Subsquid)
 
 The project aims to create a system to extract and process event data and metadata related to NFTs within the Polkadot ecosystem. The focus is on building flexible and modular data ingestion mechanisms to accommodate different APIs with minimal code changes, using Node.js components for reusability and scalability. 
 
-To expedite development, the team will initially integrate with the Subscan API, a well-documented and robust source that provides extensive data for selected protocols like Astar, Basilisk, Efinity, Moonbeam, and Unique Network. This initial integration will serve two main purposes: to quickly progress towards a working MVP and to serve as a practical example for future developers looking to extend the system with other data sources in the long term.
+To expedite development, the team will initially integrate with the Subsquid API, which is well-documented, robust and  opensource, and provides extensive data for selected protocols like Astar, Moonbeam EVM, Moonriver EVM and Moonsama EVM. This initial integration will serve two main purposes: to quickly progress towards a working MVP and to serve as a practical example for future developers looking to extend the system with other data sources in the long term.
 
 #### 2) Data Enrichment
 
-Our backend serves as a vital nexus between supported blockchain protocols and valuable metrics we generate for user wallets and NFT collections. It involves three key activities: crafting and executing API queries, initiating timed triggers, and developing computational algorithms for metrics computation. We create and execute precise API queries to extract event data from Subscan for protocols such as Astar, Basilisk, Efinity, Moonbeam, and Unique Network. This enables the continuous refresh of our system with recent blockchain events pertinent to the monitored NFT collections and user wallets. 
+Our backend serves as a vital nexus between supported blockchain protocols and valuable metrics we generate for user wallets and NFT collections. It involves three key activities: crafting and executing API queries, initiating timed triggers, and developing computational algorithms for metrics computation. We create and execute precise API queries to extract event data from Subscan for protocols such as Astar, Moonbeam EVM, Moonriver EVM and Moonsama EVM. This enables the continuous refresh of our system with recent blockchain events pertinent to the monitored NFT collections and user wallets. 
 
 Our backend employs timed triggers to initiate queries to Subscan at predefined intervals, ensuring we maintain an up-to-date snapshot of relevant blockchain events. Incoming event data, acquired via timed or event-driven triggers, is processed using specially designed computational algorithms. These algorithms generate key performance indicators (KPIs) and metrics for both user wallets and NFT collections, capturing the most essential insights. The calculated metrics are persistently stored in our database, ensuring their continuous availability for subsequent retrieval, analysis, and the provision of comprehensive insights into users' wallets and NFT collections.
 
-All the code for data enrichment will be open-source so that more developers in the ecosystem can leverage our processes for retrieving NFT data from subscan API and wallets, as well as creating NFT metrics.
+All the code for data enrichment will be opensource so that more developers in the ecosystem can leverage our processes for retrieving NFT data from Subsquid API and wallets, as well as creating NFT metrics.
 
 #### 3) Database 
 
@@ -61,17 +64,17 @@ We will be utilizing PostgreSQL as our database management system to store and m
 
 #### 4) Frontend
 
-Within the context of the MVP, we'll utilize bubble.io for frontend development to accelerate development speed and iterate quickly. This approach will help us create a functional product that meets user needs faster. Upon achieving a working product, at a later stage we will transition to react.js for enhanced flexibility and performance.
+We've chosen React.js for our frontend development, due to its open-source nature, and also with the intention of open-sourcing our own platform. This aligns with our commitment to enriching the Polkadot ecosystem, enabling more developers to leverage, adapt, and expand upon our work. React's component-driven approach ensures efficient and modular development, especially vital for our analytics platform. This decision guarantees adaptability for our MVP phase and scalability for expansive growth
 
 #### 5) Bubble.io plug-ins
 
-We will develop open-source plug-ins for Bubble.io, enabling connections to the selected wallets: Subwallet, Parity signer, Polkadot-js, Subsquid, Fearless wallet, Nova Wallet, Talisman. Built using Node.js, these plug-ins will allow for the users to log-in to the platform using their wallets, and will facilitate the retrieval of information about the NFTs owned by the user to compute the portfolio metrics. By open-sourcing these plug-ins, we intend to improve access from the growing no-code community to the Polkadot ecosystem.
+While our frontend for the Portfolio Traacker MVP will be developed using React.js, we recognize the importance of our broader platform's integration with Bubble.io. Hence, we will develop open-source plug-ins for Bubble.io, enabling connections to the selected wallets: Subwallet, Parity signer, Polkadot-js, Fearless wallet, Nova Wallet, and Talisman. These plug-ins, built using Node.js, will empower users to log in using their wallets and facilitate retrieving NFT ownership data for portfolio metrics computation. By open-sourcing these plug-ins, we aim to enhance the no-code community's access to the Polkadot ecosystem. Regarding the integration of React with Bubble.io plugins: While React itself doesn't natively support Bubble.io plugins, we can create a bridge using APIs or webhooks. 
 
 ### Ecosystem Fit
 
-After evaluating existing NFT portfolio tracking solutions in the Polkadot ecosystem, we have found that some platforms have added NFT functionality to their Token and DeFi-focused offerings. However, our specialized solution is designed specifically to cater to the unique needs of NFT investors. By focusing solely on NFTs, we provide a platform dedicated to optimizing the tracking, analysis, and management of NFT portfolios.
+Upon delving deeper into the NFT portfolio tracking landscape within the Polkadot ecosystem, it's evident that while some platforms have incorporated NFT capabilities, they largely remain as extensions of their primary token and DeFi services. Our solution, on the other hand, is purpose-built for NFTs, offering a dedicated platform tailored for the nuanced requirements of NFT enthusiasts and investors.
 
-In the future, we plan to develop collaborations with other NFT-focused parachains (e.g. Unique Network) and NFT marketplaces, to help further expand functionality of the Liisa portfolio tracker (e.g. by integrating off-chain data) and support their offerings by providing custom-made integrations with our analytical products.
+As we look ahead, we're keen on forging strategic collaborations with NFT-centric parachains, such as Unique Network, and various NFT marketplaces. Such partnerships will not only amplify the Liisa portfolio tracker's functionality—through the integration of off-chain data—but also bolster their services by synergizing with our advanced analytical tools.
 
 #### Similar projects:
 - Nansen Portfolio
@@ -79,10 +82,17 @@ In the future, we plan to develop collaborations with other NFT-focused parachai
 - Coinstats
 
 #### What makes us different is:
-- User experience designed specifically for NFT investors and collectors
-- Innovative metrics and KPIs not found elsewhere
-- Multi-chain approach, breaking silos within the NFT ecosystem
-- Established community on Discord of 1000+ NFT investors with feedback and suggestions for product improvement
+While platforms like Nansen and Coinstats have made significant strides in the broader crypto space, their focus is primarily on tokens, leaving Polkadot NFTs out of their purview. Meanwhile, the De.Fi platform's emphasis in this domain is still emerging. This observation underscores a distinctive opportunity in the Polkadot ecosystem: the need for a specialized NFT portfolio tracker, a niche we are poised to occupy.
+
+In the absence of direct parallels, our differentiation can be better understood when juxtaposed with existing wallet services from a technical perspective.
+
+Technical Differentiation:
+1) Users receive an all-encompassing summary, highlighted by our unique Portfolio Scorecard, which evaluates liquidity, volatility, and NFT diversification.
+2) Our platform goes beyond static visuals, offering dynamic filtering and sorting capabilities based on salient metrics such as sales and estimated value, resulting in a blend of technical robustness and user engagement.
+3) Every NFT token is accompanied by a wealth of insights, ranging from its rarity rank within a collection to a meticulous activity log detailing all related transactions.
+4) An aggregated perspective on NFT assets per collection is provided, supplemented with intuitive search features and dynamic filtering, presenting users with an innovative lens to evaluate collection performance.
+
+In essence, our initiative pioneers novel metrics, visualization techniques, and deep dives into the NFT realm, setting a precedent in the Polkadot ecosystem.
 
 ## Team :busts_in_silhouette:
 
@@ -166,12 +176,12 @@ In a proactive endeavor to understand and address the data-related challenges of
 | Number | Deliverable               | Specification |
 | ------ | ------------------------- | ------------- |
 | 0a.    | License                   | All code will be open-sourced under Apache 2.0 license. |
-| 0b.    | Documentation             | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file. Documentation on the modular design of Subscan API calls is included. |
+| 0b.    | Documentation             | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file. Documentation on the modular design of Subsquid API calls is included. |
 | 0c.    | Testing Guide             | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide, we will describe how to run these tests |
 | 0d.    | Docker                    | Provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1a.    | Modular Subscan API calls | Design and implement API queries to extract event data from the Subscan API for the supported protocols: Astar, Basilisk, Efinity, Moonbeam, and Unique Network. The design will be modular to allow easy replacement with different APIs. This will be developed using Node.js. |
-| 1b.    | Timed-Triggers            | Establish timed triggers to initiate queries to the Subscan API at predetermined intervals, subsequently refreshing the associated events database with the most recent data. This will be developed using Node.js on the main code and will use cronjobs on the cloud to set the triggers. |
-| 1c.    | User-initiated Triggers   | Implement event-driven triggers that are activated upon user interactions with the application, specifically upon insertion of a wallet address. This will initiate Subscan API queries and subsequently update the associated events database with the retrieved data. This will be developed using Node.js. |
+| 1a.    | Modular Subsquid API calls | Design and implement API queries to extract event data from the Subscan API for the supported protocols: Astar, Moonbeam EVM, Moonriver EVM, Moonsama EVM. The design will be modular to allow easy replacement with different APIs. This will be developed using Node.js. |
+| 1b.    | Timed-Triggers            | Establish timed triggers to initiate queries to the Subsquid API at predetermined intervals, subsequently refreshing the associated events database with the most recent data. This will be developed using Node.js on the main code and will use cronjobs on the cloud to set the triggers. |
+| 1c.    | User-initiated Triggers   | Implement event-driven triggers that are activated upon user interactions with the application, specifically upon insertion of a wallet address. This will initiate Subsquid API queries and subsequently update the associated events database with the retrieved data. This will be developed using Node.js. |
 | 2a.    | Open-sourced Computational algorithms | Design and implement computational algorithms that, upon activation of either event-driven or timed triggers and the consequent receipt of new event data, will produce key performance indicators (KPIs) and metrics for both user wallets and NFT collections. The calculated metrics will subsequently be stored persistently in the database for subsequent analysis and retrieval. This code will be open-sourced and developed using Node.js. |
 
 
@@ -190,9 +200,9 @@ In a proactive endeavor to understand and address the data-related challenges of
 | 0c.    | Testing Guide                  | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide, we will describe how to run these tests                                                                                                              |
 | 0d.    | Docker                         | Provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                        |
 | 0e.    | Article                        | Write a Medium article that explains the work done as part of the grant.                                                                                                                                                                                    |
-| 1a.    | Bubble.io wallet plugins       | Design and engineer custom Bubble.io plugins for the selected wallets. The plugins will be architected to integrate wallet log-in (signature) into our front-end application interface. The plugins will be published on the Bubble.io marketplace and made freely available to the wider developer community. Selected wallets: Subwallet, Parity signer, Polkadot-js, Subsquid, Fearless wallet, Nova Wallet, Talisman. This will be developed using Javascript. |
-| 1b.    | Wallet address transmission    | Implement a front-end authentication module that captures and transmits wallet addresses from the user sign-in process to our backend. The transmission activates event-driven triggers, initiating Subscan API queries for relevant event data retrieval. This will be developed using Node.js and Bubble.io.                                                                                                             |
-| 2a.    | Dashboard Structure Implementation | Utilizing provided mockups as the architectural blueprint, implement the user interface for the application dashboard. This involves arranging key performance indicators (KPIs) and various data visualization elements according to the predefined design. This will be developed using Bubble.io.                                                                       |
+| 1a.    | Bubble.io wallet plugins       | Design and engineer custom Bubble.io plugins for the selected wallets. The plugins will be architected to integrate wallet log-in (signature) into our front-end application interface. The plugins will be published on the Bubble.io marketplace and made freely available to the wider developer community. Selected wallets: Subwallet, Parity signer, Polkadot-js, Fearless wallet, Nova Wallet, Talisman. This will be developed using Javascript. |
+| 1b.    | Wallet address transmission    | Implement a front-end authentication module that captures and transmits wallet addresses from the user sign-in process to our backend. The transmission activates event-driven triggers, initiating Subsquid  API queries for relevant event data retrieval. This will be developed using Node.js and React.js.                                                                                                             |
+| 2a.    | Dashboard Structure Implementation | Utilizing provided mockups as the architectural blueprint, implement the user interface for the application dashboard. This involves arranging key performance indicators (KPIs) and various data visualization elements according to the predefined design. This will be developed using React.js.                                                                       |
 | 2b.    | Dynamic Dashboard Values       | Implement a real-time data binding mechanism that retrieves and displays updated portfolio data from the database, activated by event-driven triggers as defined in 1b. This will be achieved using a websocket client connected to our PostgreSQL Database.                                                                                      |
 
 ## Mockups
