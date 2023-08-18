@@ -48,7 +48,6 @@ myself.
 * `LimitedTeleportAssets`
 * `TeleportAssets`
 * `ReserveTransferAssets`
-* `LimitedReserveWithdrawAssets`
 * `Sent`
 
 3. Get the execution result and the block_hash (block_num) of the execution after sending xcm
