@@ -4,8 +4,6 @@
 - **Payment Address:** 0xc450Fb36b509f76657B14B5bEF504AB69F9aC25F (USDT ERC20)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
 ### Overview
 
 BlockAIDS -  a decentralized electronic ecosystem on the blockchain, that allows millions of people living with HIV and key affected populations (drug users, LGBT, sex workers, etc.) to access their records, medicines, goods and services from any place in the world. 
@@ -45,31 +43,34 @@ Under this proposal we are building the following core component: **Loyalty and 
 ![art_03-fe308d](https://github.com/w3f/Grants-Program/assets/59833178/3c522f8c-b38b-4126-82dd-6537c674fae3)
 
 **Mockups/designs of any UI components**
-https://www.figma.com/proto/29XylMDCh2aYfj9HCY9HvD/MedApp?page-id=147%3A6869&type=design&node-id=228-6882&viewport=1322%2C3225%2C0.31&t=hkkgoy6dtfCYyJFH-1&scaling=min-zoom&starting-point-node-id=228%3A6974&mode=design
+- https://www.figma.com/proto/29XylMDCh2aYfj9HCY9HvD/MedApp?page-id=147%3A6869&type=design&node-id=228-6882&viewport=1322%2C3225%2C0.31&t=hkkgoy6dtfCYyJFH-1&scaling=min-zoom&starting-point-node-id=228%3A6974&mode=design
 
 **Data models / API specifications of the core functionality:**
-https://docs.google.com/document/d/1Ns4etjjm6Efolr0h8DGbJVwkmqVHDuiEKwTXAuM3Q6w/edit?usp=sharing
+- https://docs.google.com/document/d/1Ns4etjjm6Efolr0h8DGbJVwkmqVHDuiEKwTXAuM3Q6w/edit?usp=sharing
 
 **An overview of the technology stack to be used**
-Frontend: HTML5, CSS3, BOOTSTRAP, React; Backend: NodeJS, .NET, Postgres; Mobile app: Flutter framework; and Blockchain: Substrate / Polkadot Runtime Environment (PRE), Rust, Cargo, Substrate Identity, Polkadot.js, Substrate/Polkadot.js API, etc.
+- Frontend: HTML5, CSS3, BOOTSTRAP, React;
+- Backend: NodeJS, .NET, Postgres;
+- Mobile app: Flutter framework;
+- Blockchain: Substrate / Polkadot Runtime Environment (PRE), Rust, Cargo, Substrate Identity, Polkadot.js, Substrate/Polkadot.js API, etc.
 
 **Documentation of core components, protocols, architecture, etc. to be deployed**
-The core components of the entire solution can be accessed by the link:
+- The core components of the entire solution can be accessed by the link:
 https://miro.com/app/board/uXjVMMxYpus=/?moveToWidget=3458764559483900546&cot=14
 Under this proposal we are building the following core component: Loyalty and Reward Electronic System (LRES)
 
 **PoC/MVP or other relevant prior work or research on the topic**
-Our team has developed an electronic platform for people living with HIV from Moldova, as a pilot country (web2 version). Our electronic software counts 50k active users and over 1 mln transactions (medical records). You may find below the link to our PoC:
+- Our team has developed an electronic platform for people living with HIV from Moldova, as a pilot country (web2 version). Our electronic software counts 50k active users and over 1 mln transactions (medical records). You may find below the link to our PoC:
 https://app.powerbi.com/view?r=eyJrIjoiZDc4MDk2ZTctYTRmNy00MTdlLWIxNDEtNmQ3ZjE4MWZjNWUxIiwidCI6IjEzY2ZkMmU4LWFhZTktNDk5OS1hZDk0LWFhZmQxMmVjMmRmNiIsImMiOjh9
 
 **What your project is _not_ or will _not_ provide or implement**
-We will not implement solutions that might bring vulnerabilities related to our users: (i) potential users data breaches (ii) fraudulent usage of our rewarding system (iii) other potential vulnerabilities
+- We will not implement solutions that might bring vulnerabilities related to our users: (i) potential users data breaches (ii) fraudulent usage of our rewarding system (iii) other potential vulnerabilities
 
 **The (future) tokenomics of your project** 
-https://docs.google.com/document/d/1UHG-jYM3D4h03lygcmnKRwVMxFYgkQ0nKAAjJi8L7yk/edit?usp=sharing
+- https://docs.google.com/document/d/1UHG-jYM3D4h03lygcmnKRwVMxFYgkQ0nKAAjJi8L7yk/edit?usp=sharing
 
 **For non-infrastructure projects—deployment and hosting costs, maintenance or audits**
-All the costs are mentioned in our Business Plan:
+- All the costs are mentioned in our Business Plan:
 https://docs.google.com/spreadsheets/d/1LQygOcE4_ejOm97zotWRbbxHtpNsevaRYSa8WNyFY_4/edit?usp=sharing
 
 **Business-oriented activities (marketing, business planning), events or outreach**
@@ -195,8 +196,8 @@ https://nft.blockaids.world
 ### Overview
 
 - **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Full-Time Equivalent (FTE):**  4 FTE
+- **Total Costs:** $30000
 
 ### Milestone 1 AIDS Smart Contract (FT minter) and wallet authorization system
 
@@ -212,11 +213,11 @@ https://nft.blockaids.world
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can login and use AIDS tokens |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide Dockerfile and docker image to run the website in one command line, and you can to test those modules |
-| 1. | User Management module development | We will provide login function, so users can login to our web app, using polkadot account |
-| 2. | AIDS token smart contract | We will create AID token smart contract in order to be able to reward users for their activities on our web app |
-| 3. | AIDS token balance display functionality | Users logged in with their wallet will be able to see AIDS token balance |
-| 4. | Tansfer module | Trigger a payment by initiating a transfer, that will transfer AIDS token to other user's wallet | 
-| 5. | Withdraw module | Withdraw the AIDS from our web app to user's own wallet | 
+| 1. | User Management module development | We will provide login function, so users can login to our web app, using polkadot account. Blockchain Framework: Substrate / Polkadot / Kusama. Development Language: Rust/Ink! . User interface development: React.JS. Backend: NestJS |
+| 2. | AIDS token smart contract | We will create AIDS token smart contract in order to be able to reward users for their activities on our web app. Blockchain Framework: Substrate / Polkadot / Kusama. Development Language: Rust/Ink! |
+| 3. | AIDS token balance display functionality | Users logged in with their wallet will be able to see AIDS token balance. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink! |
+| 4. | Tansfer module | Trigger a payment by initiating a transfer, that will transfer AIDS token to other user's wallet. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink!  | 
+| 5. | Withdraw module | Withdraw the AIDS from our web app to user's own wallet. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink! | 
 
 
 ### Milestone 2 Loyalty and Reward Electronic System (LRES)
@@ -234,11 +235,11 @@ https://nft.blockaids.world
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide Dockerfile and docker image to run the website in one command line, and you can to test those modules |
 | **0e.** | Artcile | We will publish an Artcile on Medium describing how to use Loyalty and Reward Electronic System |
-| 1. | Incentives management - Create | Create an incentive by user from predefined list of incentives. When the user completes the task, transfer module will be tiggered in order to transfer tokens, assigned to this task |
-| 2. | Incentives management - Edit | Edit an incentive by user, by adding necessary details: deadline, organization & Specialist to which the incentive is assigned, Status, etc.  |
-| 3. | Incentives management - Delete | Delete an incentive by user from the list of exustent incentives |
-| 4. | Incentives management - Dashboard | An admin panel that allow to manage Loyalty and Reward Electronic System by web app admins | 
-| 5. | Incentives management - Dashboard | A comfortable calendar that allows to view and manage incentives in a calendar view | 
+| 1. | Incentives management - Create | Create an incentive by user from predefined list of incentives. When the user completes the incentive, transfer module will be tiggered in order to transfer tokens, assigned to this task. Ink! smart contracts for implementing the logic of the Loyalty and Reward Electronic System |
+| 2. | Incentives management - Edit | Edit an incentive by user, by adding necessary details: deadline, organization & Specialist to which the incentive is assigned, Status, etc. Ink! smart contracts for implementing the logic of the Loyalty and Reward Electronic System |
+| 3. | Incentives management - Delete | Delete an incentive by user from the list of exustent incentives. Ink! smart contracts for implementing the logic of the Loyalty and Reward Electronic System |
+| 4. | Incentives management - Dashboard | An admin panel that allow to manage Loyalty and Reward Electronic System by web app admins. User interface development: React.JS. Backend: NestJS | 
+| 5. | Incentives management - Calendar | A comfortable calendar that allows to view and manage incentives in a calendar view. User interface development: React.JS. Backend: NestJS | 
 
 ## Additional Information :heavy_plus_sign:
 
