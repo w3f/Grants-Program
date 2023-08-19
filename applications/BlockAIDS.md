@@ -31,7 +31,7 @@ We have currently in our ecosystem:
 ![17 05 2020-3](https://github.com/w3f/Grants-Program/assets/59833178/bd821d36-ca41-401a-b174-08587c36f001)
 
 
-### Project Details
+### Project Details  
 
 Under this proposal we are building the following core component: **Loyalty and Reward Electronic System (LRES)** .
 - The Loyalty and Reward Electronic System (LRES) is a key component of BlockAIDS, designed to incentivize healthy behaviors and preventive measures for individuals living with HIV and high-risk groups. The integration of LRES with the overall ecosystem involves:
