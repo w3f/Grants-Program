@@ -109,8 +109,8 @@ And I have also created new figma wireframes for a DeFi interface: https://www.f
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial**. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Bot setup | The bot should be capable of creating wallets, importing and exporting private keys safely. |
-| 2. | UI | Landing Page that links to the bot. |
+| 1. | Bot setup | Telegram bot in rust should be capable of creating multiple wallets, importing and exporting private keys safely. |
+| 2. | UI | Landing Page in NextJs that links to the telegram bot. |
 
 ### Milestone 2 Example — Additional features
 
@@ -125,8 +125,8 @@ And I have also created new figma wireframes for a DeFi interface: https://www.f
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains how to use TradeCoin and how it was build. |
-| 1. | Network access | We will access Polkadot from our app and process data on the server to make the client as lightweight as possible. |
-| 2. | DeFi integration | We will connect to at least two DeFi protocols and conduct multiple swap trades with just one click. |
+| 1. | Network access | We will access Substrate runtimes from the bot and process live data on the server to make rust client as lightweight as possible. |
+| 2. | DeFi integration | We will connect to at least two DeFi protocols such as Parallel Finance / HydraDX / etc. and conduct multiple trades with just one click. |
 
 ## Future Plans
 
