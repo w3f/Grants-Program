@@ -156,7 +156,7 @@ Comprehensive research has been conducted to understand the needs of the communi
 | 2. | Frontend Development | A CakePHP framework that interacts with database contents rendering some pages and providing API results to portions of the javascript elements for dynamic rendering.  |
 | 3. | Integration and Testing | The final milestone is focused on integrating the backend with the frontend, and conducting extensive testing to ensure everything functions as intended. |
 
-## Features Included
+### Features Included
 
 - Referenda Details: Covering aspects like ID, Proposal Title, Proposer's ID, Address, Origin track, Project Category, Proposal URL, and Status.
 - Financial Insights: Offering information on the Payment Schedule, Requested Amounts (in DOT and USD), Received Amount in USD, and financial variances such as the Difference in USD and Reimbursements.
