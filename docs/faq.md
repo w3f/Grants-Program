@@ -29,7 +29,7 @@ title: 🙋 FAQ
 
 ### When do I get paid?
 
-  Payments are issued once a milestone has been successfully delivered. Successful delivery requires that you have submitted the milestone as per our delivery guidelines _and_ that the Grants team has reviewed _and officially accepted_ your submission.
+  Payments are issued once a milestone has been successfully delivered. Successful delivery requires that you have submitted the milestone as per our delivery guidelines _and_ that the Grants team has reviewed _and officially accepted_ your submission. Payment is made within 14 days after approval.
 
 ### Can I reuse someone else’s open-source code?
 
@@ -65,6 +65,8 @@ title: 🙋 FAQ
 ### How do I apply if I want to keep information private?
 
   For special cases that do not fit the regular grants structure, we provide [a form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). You can provide all application data by submitting this form, or submit the form with a reference to a pull request with data you are willing to make public.
+
+  Our [application template](https://github.com/w3f/Grants-Program/blob/e03a3e760846bfaf44352cb17a6763ff0fcf1a94/.github/pull_request_template.md?plain=1#L21) also offers the possibility to make the application public, but to keep its discussion private.
 
 ## 🥳 After Approval
 
