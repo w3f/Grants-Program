@@ -7,9 +7,13 @@ title: 🙋 FAQ
 
 ## 🧭 General
 
+### How do I apply?
+
+  Please refer to the ["How to Apply" section](Process/how-to-apply.md) in our documentation.
+
 ### How much can I ask for?
 
-  Please refer to the [section on grant levels in our README](Introduction/levels.md) for funding limits.
+  Generally, there is no upper limit to grant amounts. However, the higher the requested amount, the stricter the review. For guidance, please refer to the [grant levels section](Introduction/levels.md) in our documentation.
 
 ### What activities/positions do you fund?
 
@@ -17,15 +21,15 @@ title: 🙋 FAQ
 
 ### Can anyone apply?
 
-  Projects for which a token sale has been or is being conducted are not eligible for a Web3 Foundation grant. Other than that, there are no restrictions.
+  Projects for which a token sale has been or is being conducted are not eligible for a Web3 Foundation grant. Also, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general. See also the [application guidelines](Introduction/intro.md) in our documentation.
 
 ### Can I get an upfront payment?
 
-  No.
+  The W3F Grants Program does not offer upfront payment. If you absolutely require upfront payment, have a look at our list of [alternative funding programs](funding.md), some of which allow upfront payment.
 
 ### When do I get paid?
 
-  Payments are issued once a milestone has been successfully delivered. By ‘successful’, we mean that our Grants team has reviewed _and officially accepted_ your submission.
+  Payments are issued once a milestone has been successfully delivered. Successful delivery requires that you have submitted the milestone as per our delivery guidelines _and_ that the Grants team has reviewed _and officially accepted_ your submission.
 
 ### Can I reuse someone else’s open-source code?
 
@@ -88,7 +92,7 @@ title: 🙋 FAQ
 
 ### How do I submit a milestone?
 
-  For details, please refer to the [milestone delivery guidelines](Support%20Docs/milestone-deliverables-guidelines.md) for the respective grants program. Generally speaking, the most important part of a delivery is a list of **the same deliverables listed in the application** with links to their implementation/realisation (ideally pointing to a specific commit or tag, so you can continue working on your repository without messing up your delivery and complicating our evaluation) and any additional notes you might have. The list of deliverables for each of your milestones should be defined in your grant agreement.
+  For details, please refer to the [milestone delivery guidelines](Support%20Docs/milestone-deliverables-guidelines.md). Generally speaking, the most important part of a delivery is a list of **the same deliverables listed in the application** with links to their implementation/realisation (ideally pointing to a specific commit or tag, so you can continue working on your repository without messing up your delivery and complicating our evaluation) and any additional notes you might have. The list of deliverables for each of your milestones should be defined in your grant agreement.
 
 ### Can I submit two or more milestones at once?
 
