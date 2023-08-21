@@ -152,9 +152,9 @@ Comprehensive research has been conducted to understand the needs of the communi
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains what was done/achieved as part of the grant |
-| 1. | Backend Development | We will create a backend module that can accurately and efficiently read data from the blockchain  to extract relevant data and store it in a PostgreSQL database. The focus of this phase is to establish a robust data pipeline that ensures the integrity and reliability of the data used for analytics.|
-| 2. | Frontend Development | We will create a frontend user interface (UI) that will present the statistics defined in the Project details. This will involve the design and implementation of interactive charts and data tables to display data. The focus is on functionality with the minimum UI design.  |
-| 3. | Integration and Testing | The final milestone is focused on integrating the backend with the frontend, and conducting extensive testing to ensure everything functions as intended. The integration process will involve connecting the UI with the data stored in the database, ensuring smooth data flow and real-time updates. Testing will involve thorough checks for bugs, performance issues, and user experience improvements. This phase will finalize the platform and prepare it for public deployment.|
+| 1. | Backend Development | A node module that allows the CakePHP framework to pull the relevant data directly from the blockchain via WSS/RPC. |
+| 2. | Frontend Development | A CakePHP framework that interacts with database contents rendering some pages and providing API results to portions of the javascript elements for dynamic rendering.  |
+| 3. | Integration and Testing | The final milestone is focused on integrating the backend with the frontend, and conducting extensive testing to ensure everything functions as intended. |
 
 
 
