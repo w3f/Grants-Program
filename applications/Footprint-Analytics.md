@@ -2,7 +2,7 @@
 
 - **Team Name:** Footprint Analytics
 - **Payment Address:** 0x1f0A4eb02d9BEfBd1538E8D230699d4e434CDbEE(USDC)
-- **Level**: 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
