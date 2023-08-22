@@ -150,9 +150,9 @@ As previously noted, part of our project aligns with the [Social Recovery Wallet
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
+- **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
-- **Total Costs:** 60,000 USD
+- **Total Costs:** 40,000 USD
 
 ### Milestone 1 - Core functionalities
 
@@ -164,13 +164,12 @@ As previously noted, part of our project aligns with the [Social Recovery Wallet
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the wallet and how it works |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests and provide CI/CD setup files as GitHub Actions for code checking, automated testing, and deployment.  |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | We will provide an article about how we build a keyless wallet with Passkeys. |
-| 1. | CI/CD | We will provide CI/CD setup files as GitHub Actions for code checking, automated testing, and deployment. |
-| 2. | Infrastructure | We will provide infrastructure code using Terraform, enabling effortless AWS infrastructure bootstrapping. |
-| 3. | Web Application | We will develop a mobile-first web application that features registration, authentication, and asset management functionalities, as outlined in the provided wireframe. The registration and authentication functionalities logic is described in project detail section. By using the asset management feature, users can view their balances, deposit, and transfer their assets. This can be done through the [balances pallet](https://github.com/paritytech/substrate/tree/master/frame/balances) for native tokens, and the [assets pallet](https://github.com/paritytech/substrate/tree/master/frame/assets) for managing assets on the Asset Hub.|
-| 4. | Backend Services | We will deliver backend services for sign-up, sign-in, and asset management features. |
+| 1. | Infrastructure | We will provide infrastructure code using Terraform, enabling effortless AWS infrastructure bootstrapping. |
+| 2. | Web Application | We will develop a mobile-first web application that features registration, authentication, and asset management functionalities, as outlined in the provided wireframe. The registration and authentication functionalities logic is described in project detail section. By using the asset management feature, users can view their balances, deposit, and transfer their assets. This can be done through the [balances pallet](https://github.com/paritytech/substrate/tree/master/frame/balances) for native tokens, and the [assets pallet](https://github.com/paritytech/substrate/tree/master/frame/assets) for managing assets on the Asset Hub.|
+| 3. | Backend Services | We will deliver backend services for sign-up, sign-in, and asset management features. |
 
 
 ### Milestone 2 — Backup and recovery
@@ -187,29 +186,9 @@ As previously noted, part of our project aligns with the [Social Recovery Wallet
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Feature: Social Recovery | We will implement the social recovery setup and management screens as depicted in the above wireframe. To implement this feature, we will use [social recovery pallet][https://github.com/paritytech/substrate/tree/master/frame/recovery], which allows users to setup social guards in the case that they lose device access. |
 | 2. | Feature: Recover Wallet | We will implement recover screens as depicted in the above wireframe.|
-| 3. | Feature: Encrypted Cloud Backup | We will implement feature allow user encrypt and sync the backup key to the cloud storage.|
+| 3. | Feature: Encrypted Cloud Backup | We will implement feature allow user encrypt and sync the backup key to the cloud storage. The back-up key will be encrypted by AES-256 algorithm.|
 | 4. | Feature: Notifications | We will implement email notifications for balance updates and security alerts, such as recovery initiation prompts. This will help improve the safety of using the recovery pallet, as mentioned in these [safety considerations](https://github.com/paritytech/substrate/tree/master/frame/recovery#safety-considerations). |
 | 5. | Backend Services | We will implement the backend services for 1, 2, 3, 4 sections  |
-
-
-### Milestone 3 — Wallet Link
-
-- **Estimated duration:** 2 months
-- **FTE:**  2,5
-- **Costs:** 20,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the wallet link |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Feature: Wallet Link Builder | We will implement a page builder that allows users to create and customize their public wallet profile. |
-| 2. | Feature: Wallet Link Template | We will implement wallet profile templates to enable users to start creating their wallet profiles with minimal configuration. |
-| 3. | Feature: Wallet Link Public Page | We will implement public wallet profile that show pages created by builder in session 1. |
-| 4. | Feature: Payment Link | We will implement a payment page to facilitate the collection of cryptocurrencies from others or for self-deposit, minimizing the risk of errors. |
-| 5. | Backend Services | We will implement the backend services for 1, 2, 3, 4 sections |
-
 
 ## Future Plans
 Our plan is to roll out the product in the Polkadot Ecosystem following each milestone. This will allow us to gather feedback to refine existing features and incorporate additional ones if needed.
