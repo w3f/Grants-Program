@@ -1,4 +1,4 @@
-# Enabling Third-party Smart Contract Account Applications on Polkadot Based on Account Abstraction
+# Enabling Interoperable Third-party Smart Contract Account Applications on Polkadot Based on Account Abstraction (AA) for Demand Abstraction
 
 - **Team Name:** Smarter AA Wallet
 - **Payment Address:** bc1quf6qljy5z07sxlv6fgv04zqzaq0g30z3v47v3u (BTC)
@@ -58,7 +58,7 @@ Based on our standard, AA can better enrich and facilitate user accounts on Polk
 
 - **Contact Name:** Myron Zhang
 - **Contact Email:** zhangzhishun1024@gmail.com
-- **Website:** https://web3-idea.xyz
+- **Website:** https://smarter.web3-idea.xyz
 
 ### Team's experience
 
@@ -111,9 +111,11 @@ We have finished the initial research and design, and we are developing the firs
 | 0e. | Article | We will publish an article that explains how our AA standard works and runs for developers to smoothly provide users with different account applications in their AA accounts. |
 | 1. | User interface | We will design and develop a sample AA wallet for users to have their AA account and equip it with third-party account applications. |
 | 2. | Smart contracts | We will deliver a set of ink! smart contracts to show the specifications of our AA standard supporting third-party account applications. |
+| 3. | Substrate module: transaction execution | We will create a Substrate module to define and achieve the interfaces of executing transactions. |
+| 4. | Substrate module: identity verification | We will create a Substrate module to define and achieve the interfaces of verifying the identity of users. |
 
 
-### Milestone 2 Example — Use Cases of Account applications
+### Milestone 2 — Use Cases of Account applications
 
 - **Estimated duration:** 2 months
 - **FTE:**  3
@@ -128,9 +130,10 @@ We have finished the initial research and design, and we are developing the firs
 | 0e. | Article | We will publish an article that explains how our use cases work and run based on our AA standard to encourage more developers to develop their third-party account applications. |
 | 1. | User interface | We will design and develop two use cases for users to use third-party account applications via our AA standard. One is decentralized universal login as an account management application, and the other one is a decentralized automatic trading bot as an account interaction application. |
 | 2. | Smart contracts | We will deliver a set of ink! smart contracts to show the specifications of our third-party account applications as the use cases of our AA standard supporting any third-party account applications. |
+| 3. | Substrate module: App authorization | We will create a Substrate module to allow users to authorize the corresponding Apps after verification. |
+| 4. | Substrate module: automatic trading | We will create a Substrate module to verify whether the submitted transactions meet the trading strategy. If so, execute the transaction automatically. |
 
-
-### Milestone 2 Example — Demand Abstraction
+### Milestone 3 — Demand Abstraction
 
 - **Estimated duration:** 2 months
 - **FTE:**  3
@@ -145,6 +148,8 @@ We have finished the initial research and design, and we are developing the firs
 | 0e. | Article | We will publish an article that explains how demand abstraction work and run based on our AA standard, third-party account applications. |
 | 1. | User interface | We will design and develop the new way of Web3 user interaction directly based on user demands rather than any specific demands. Users just need to naturally express their specific needs in our user interface, and then the backend system will automatically analyze user demands, find the best solution scheme, and match the corresponding DApps. After the user confirms the solution, the user’s AA account will get the user authorization to execute the solution scheme accordingly across accounts, DApps, and blockchains to meet the demands of users. |
 | 2. | Smart contracts | We will deliver a set of ink! smart contracts to show the specifications of our demand abstraction. |
+| 3. | Substrate module: AI model | We will create a Substrate module to interpret and analyze the demand users express and specify. |
+| 4. | Substrate module: automatic Apps execution | We will create a Substrate module to automatically run the corresponding DApps and account applications for users. |
 
 
 ## Future Plans
