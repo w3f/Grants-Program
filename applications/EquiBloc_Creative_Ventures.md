@@ -222,47 +222,39 @@ IP Whitelisting and Blacklisting: Enhance security with IP whitelisting and blac
 Audit Logs: Maintain audit logs to track user activities and system changes.
 Compliance with Regulations: Ensure compliance with relevant regulations, including data protection and financial regulations.
 
+***
+Our proposal has been revised to be more in tune with the Level 2 grants program.
+
+I've implemented refinements to better align with this grant level. Here's the updated breakdown:
 
 
-#### Development Roadmap 
 
-Overview:
+Project Snapshot and Goals:
 
-•	MVP Development and Launch ($20,000):
+I'll be focusing on the technical aspects that tie into the groove of the Polkadot and Kusama ecosystems.
 
-•	Hiring developers and engineers for MVP creation: $10,000
+#### Software Phases:
 
-•	Design and User Experience: $5,000
+1. MVP Creation and Software Framework - $10,000
+Rationale: This phase revolves around building the foundational minimum viable product (MVP) and crafting the software framework. It's about laying the groundwork for a robust structure.
 
-•	Quality Assurance and Testing: $3,000
+2. Advanced Software Development and Optimization - $10,000
+Rationale: In this stage, we'll be channeling the funds towards advanced software development, intricate coding, and fine-tuning for optimal performance. Think of it as elevating the software's capabilities.
 
-•	Marketing and Initial User Engagement: $2,000
+3. Rigorous Quality Assurance and Testing - $5,000
+Rationale: This milestone involves comprehensive quality assurance testing to validate the software's functionality, stability, and security. It's like subjecting the software to a stringent examination.
 
-•	Strategic Partnerships and Software Development ($10,000):
+4. Comprehensive Documentation and Knowledge Sharing - $5,000
+Rationale: Here, the focus is on creating thorough documentation that facilitates seamless adoption and understanding of the software within the developer community. It's akin to providing a clear user manual.
 
-•	Collaboration with Algo Coding Expert for advanced software: $6,000
+We're fully onboard with Web3's vision for software innovation in the Polkadot and Kusama realms.
 
-•	Engaging Software Development Experts: $3,000
 
-•	Software Development Planning: $1,000
+Grant Level: Level 2
 
-•	Team Building and Technical Expertise Enhancement ($5,000):
-•	Recruitment of Essential Team Members: $3,000
+Total Grant Amount: $30,000 USD
 
-•	Training and Skill Enhancement: $2,000
 
-•			Equity Financing Integration and Growth Strategy ($5,000):
-
-•	Implementation of Blockchain-Based Equity Financing: $3,000
-
-•	Outlining Growth Strategy for User Base and Revenue: $2,000
-
-Project Metrics:
-•	Total Estimated Duration: 4 months
-
-•	Full-Time Equivalent (FTE): 8 FTE (Average number of full-time employees working throughout the project)
-
-•	Total Costs: $40,000 USD
 
 | **Number** | **Deliverable**                      | **Specification**                                                                                                                                                                                                                                                                                                             |
 | ---------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
