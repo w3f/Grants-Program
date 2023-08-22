@@ -158,9 +158,8 @@ By utilizing our Telegram bot, users can easily interact with our monitoring too
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to run events exporter locally, set up Grafana instance, and auto-removing tool. |
 | 1. | Events exporter | We will create an events exporter (all on-chain events) to show events in the dashboard related to the selected validator addresses. This feature will track all on-chain events and present related events in the user's dashboard for their selected validator addresses. |
-| 2. | Improve UX Dashboard | We plan to streamline Grafana's interface by removing surplus controls, enhancing the quality of our charts, and implementing Kiosk mode. We aim to bolster security through provisioning measures, such as enforcing password changes for users. |
+| 2. | Telegram bot UI + support chat upgrades | We aim to rebuild user inference of a bot to add more interaction opportunities with the service. As well as we will improve communication with support. Instead of the current one-message ticket system, we will implement a more interactive conversation mode allowing for multiple messages dialog. |
 | 3. | Create a landing page | We will create a landing page to ease user onboarding to the service. |
-| 4. | Auto-remove instances | We will develop a system that identifies and removes inactive Grafana instances. |
 
 ### Milestone 2 — Expand the functionality
 
@@ -176,8 +175,9 @@ By utilizing our Telegram bot, users can easily interact with our monitoring too
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to self-host the telegram bot and check the functionality.  |
 | 0e. | Article | We will publish an article that explains the user flow of our system and promotes using monitoring for validators operators.  |
 | 1. | Telegram bot adding alerting based on events | We will introduce a feature that allows users to subscribe to specific events. This means users can opt to receive Telegram notifications when their chosen validators receive rewards, are elected into the active set, and more. |
-| 2. | Telegram bot UI + support chat upgrades | We aim to rebuild user inference of a bot to add more interaction opportunities with the service. As well as we will improve communication with support. Instead of the current one-message ticket system, we will implement a more interactive conversation mode allowing for multiple messages dialog. |
+| 2. | Improve UX Dashboard | We plan to streamline Grafana's interface by removing surplus controls, enhancing the quality of our charts, and implementing Kiosk mode. We aim to bolster security through provisioning measures, such as enforcing password changes for users. |
 | 3. | Cover monitoring for parachains | We will add the support of the most popular parachains such as Moonbeam, Moonriver, Acala, Karura, Astar, Shiden  |
+| 4. | Auto-remove instances | We will develop a system that identifies and removes inactive Grafana instances. |
 
 ## **Referral Program (optional) 💰**
 
