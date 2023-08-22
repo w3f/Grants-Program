@@ -56,6 +56,9 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Eiger](https://www.eiger.co/)                                 | [Storage solution on Polkadot](./Eiger_Storage_on_Polkadot_1.md)   | [GitHub](https://github.com/eigerco)                               | ☐          |        ☐       |      ☐     |
 | [Salaheldin Soliman](https://github.com/salaheldinsoliman)                     | [Solang Playground](Solang_Playground.md)                                                              | [GitHub](https://github.com/salaheldinsoliman)                      | ☐          |       ☐        |     ☐     |
 | [P2P.ORG](http://p2p.org/)                    | [P2P data platform](data_platform_with_deep_indexed_data_and_staking_reports.md)                                                              | [GitHub](https://github.com/p2p-org)                      | ☐          |       ☐        |     ☐     |
+| [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests](CoinFabrik_On_Ink_Integration_Tests.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☐        |     ☐     |
+| [Stake Plus Inc](https://stake.plus)                    | [Treasury Tracker](TreasuryTracker.md)                                                              | [GitHub](https://github.com/stake-plus)                      | ☐          |       ☐        |     ☐     |
+
 
 [🔝](#2023)
 
@@ -98,7 +101,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Dastanbek Samatov](https://dastansam.github.io/)                            | [ISO-8553 PoC implementation](ISO-8583-implementation.md)| [GitHub](https://github.com/dastanbeksamatov)                            | ☐          |        ☐       |      ☐      |
 | [Eiger](https://www.eiger.co/)                            | [Substrate Move System Pallet, pt. 1](Substrate_Move_System_Pallet_1.md)| [GitHub](https://github.com/eigerco)                            | ☐          |        ☐       |      ☐      |
 | [Davanti](https://github.com/liangjh)                            | [Dot-ETL Project](dot_etl.md)| [GitHub](https://github.com/liangjh)                            | ☐          |        ☐       |      ☐      |
-| [ParaSpell](https://github.com/paraspell)                            | [LightSpell: XCM API](LightSpell-proposal.md)| [GitHub](https://github.com/paraspell)                            | ☐          |        ☐       |      ☐      |
+| [ParaSpell](https://github.com/paraspell)                            | [LightSpell: XCM API](LightSpell-proposal.md)| [GitHub](https://github.com/paraspell)                            | ☐          |        ☒       |      ☒      |
 
 [🔝](#2023)
 
@@ -199,7 +202,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Coong Team](https://coong.xyz/)                                               | [Coong Wallet](coong_wallet.md)                                                                                                                      | [GitHub](https://github.com/CoongCrafts)                             | ☐          |       ☒        |     ☒     |
 | OCamlMyCaml                                                                    | [PrivaDEX: Cross-Chain DEX Aggregator MVP](PrivaDEX_aggregator.md)                                                                                   | [GitHub](https://github.com/kapilsinha/privadex)                     | ☐          |       ☒        |     ☒     |
 | [Aband-Network](https://a.band/)                                               | [Substrate Parachain PoS Template](substrate-parachain-PoS-template.md)                                                                              | [GitHub](https://github.com/Aband-Network/substrate-parachain-PoS-template) | ☐          |       ☒        |     ☒     |
-| [MangoBOX labs](https://www.mangobox.xyz/)                                     | [MangoSale Protocol](MangoSale_Protocol.md)                                                                                                          | [GitHub](https://github.com/Mangoboxlabs)                            | ☐          |       ☒        |     ☐     |
+| [MangoBOX labs](https://www.mangobox.xyz/)                                     | [MangoSale Protocol](MangoSale_Protocol.md)                                                                                                          | [GitHub](https://github.com/Mangoboxlabs)                            | ☐          |       ☒        |     ☒     |
 
 [🔝](#2023)
 
