@@ -162,6 +162,7 @@ While a number of open-source alternatives have emerged, none of them have suppo
 | 0b. | Documentation | We will provide inline documentation of the code and documentation on how to set up an explorer instance. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the guide. |
 | 0d. | Docker | We will provide a Dockerfile and Docker Compose file(s) to ease the deployment and execution of the system. |
+| 0e. | Programming languages | Rust, Typescript |
 | 1. | Verifications querying microservice | A microservice that will fetch info about verification requests from the persistence layer. |
 | 2. | Updated Explorer UI | We will introduce a new page to display contract verification requests. |
 | 3. | Updated verification service | The service will now make the verification requests persist and will support configuring storage option type for the uploaded artefacts. |
@@ -178,7 +179,8 @@ While a number of open-source alternatives have emerged, none of them have suppo
 | 0b. | Documentation | We will provide inline documentation of the code and documentation on how to set up an explorer instance. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the guide. |
 | 0d. | Docker | We will provide a Dockerfile and Docker Compose file(s) to ease the deployment and execution of the system. |
-| 1. | Updated Explorer UI | We will introduce new page to display statistics in the form of various charts, labels for chain data. |
+| 0e. | Programming languages | Typescript, Shellscript |
+| 1. | Updated Explorer UI | We will introduce new page to display statistics in the form of charts like histograms, pie-charts and numbers (for e.g., total blocks count) for chain data. |
 | 2. | Updated ink verifier image | The ink verifier image will now use the `--verifiable` flag of the cargo-contract tool to build a verifiable contract as well as be able to detect active toolchain version from `config.toml` file. |
 
 ## Team  👥
