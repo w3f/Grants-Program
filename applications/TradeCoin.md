@@ -109,7 +109,9 @@ And I have also created new figma wireframes for a DeFi interface: https://www.f
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial**. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Bot setup | Telegram bot in rust should be capable of creating multiple wallets, importing and exporting private keys safely. |
+| 1a. | Bot setup | Telegram bot in rust. |
+| 1b. | keypairs | The bot should be capable of creating multiple wallets, importing and exporting private keys safely. |
+| 1c. | integrations | The bot integrates with polkadot and solana. |
 | 2. | UI | Landing Page in NextJs that links to the telegram bot. |
 
 ### Milestone 2 Example — Additional features
