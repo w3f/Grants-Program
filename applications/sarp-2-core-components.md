@@ -200,6 +200,8 @@ The annotations generator will generate the needed annotations for the examples 
 
 Once we have a tool with a good feature set and basic usability features, we want to further promote it to auditors and developers.
 
+Alongside the roadmap for substrate pallets, we plan to investigate, if the same approach can be applied to ink! smart contracts.
+
 
 ## Additional Information :heavy_plus_sign:
 
