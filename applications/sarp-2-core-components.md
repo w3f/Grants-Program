@@ -134,14 +134,14 @@ We plan to do a detailed analysis on interesting vulnerabilities in the [future]
 
 With the first milestone we want to do the basic setup of the project, integrate a first set of substrate mocks and deliver a first runnable tool.
 
-| Number | Deliverable                 | Specification                                                                                                                                                                    | 
-|--------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a.    | License                     | MIT                                                                                                                                                                              |
-| 0b.    | User Documentation          | We will provide a basic **tutorial** that explains how the tool can be used on a substrate pallet.                                                                               |
-| 0c.    | Testing and Testing Guide   | 	Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                 |
-| 0d.    | Docker                                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                    |
+| Number | Deliverable                 | Specification                                                                                                                                                                                                       | 
+|--------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                     | MIT                                                                                                                                                                                                                 |
+| 0b.    | User Documentation          | We will provide a basic **tutorial** that shows how the tool can be used on an example pallet, for which we will provide the code.         |
+| 0c.    | Testing and Testing Guide   | 	Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                    |
+| 0d.    | Docker                                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                       |
 | 1.     | Tool                        | A first version of SARP, that runs the above described workflow, without the annotations generator. The tool will cover the described [vulneraribilities](#Vulnerabilities). Annotations need to be added manually. | 
-| 2.     | Engagement                  | Engage with teams at Web3 Foundation and Parity for prioritization.                                                                                                              |
+
 
 ### Milestone 2 - Annotations Generator
 - **Estimated duration:** 1.5 month
@@ -153,11 +153,11 @@ In the second milestone we implement the annotations generator (needed for step 
 | Number | Deliverable                 | Specification                                                                                                                                                                                              | 
 |--------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0a.    | License                     | MIT                                                                                                                                                                                                        |
-| 0b.    | User Documentation          | We will provide a basic **tutorial** that explains how the tool can be used on a substrate pallet.                                                                                                         |
+| 0b.    | User Documentation          | We will provide a basic **tutorial** that shows how the tool can be used on an example pallet, for which we will provide the code.                                                                                                       |
 | 0c.    | Testing and Testing Guide   | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                            |
 | 0d.    | Docker                                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                              |
 | 1.     | Tool                        | We will implement an annotations generator and integrate it in SARP. The annotations generator will cover annotations needed for the described [vulneraribilities](#Vulnerabilities). | 
-| 2.     | Engagement                  | Engage with teams at Web3 Foundation and Parity for prioritization.                                                                                                                                        |
+
 
 ### Milestone 3 - Complete Tool with Documentation
 - **Estimated duration:** 0.5 month
@@ -169,12 +169,12 @@ In the final milestone we finetune the tool, making sure it runs on productive p
 | Number | Deliverable                 | Specification                                                                                                                                                                                                                                                                                                                                      | 
 |--------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0a.    | License                     | MIT                                                                                                                                                                                                                                                                                                                                                |
-| 0b.    | User Documentation          | We will provide a basic **tutorial** that explains how the tool can be used on substrate pallets.                                                                                                                                                                                                                                                  |
+| 0b.    | User Documentation          | We will provide a basic **tutorial** that shows how the tool can be used on an example pallet, for which we will provide the code.                                                                                                                                                                                                                                                  |
 | 0c.    | Testing and Testing Guide   | Each check, that the tool can perform, will be covered by comprehensive unit tests to ensure functionality and robustness. In the testing guide, we will describe how to run these tests.       <br/> The tests will further include running SARP on 5 pallets from the [frame pallets](https://github.com/paritytech/substrate/tree/master/frame) |
 | 0d.    | Docker                                               | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                      |
 | 1.     | Tool                        | We will finetune SARP, with the help of real world examples. The real world examples we will be taken from [substrate's frame pallets](https://github.com/paritytech/substrate/tree/master/frame).                                                                                                                                     | 
 | 2.     | Documentation               | Technical documentation of the tool, incl. reasoning on the design decisions.                                                                                                                                                                                                                                                                      | 
-| 3.     | Engagement                  | Engage with teams at Web3 Foundation and Parity for prioritization.                                                                                                                                                                                                                                                                                |
+
 
 
 ### Limitations
