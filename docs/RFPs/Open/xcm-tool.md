@@ -1,6 +1,6 @@
 # XCM library & tools
 
-* **Status:** [Implemented](https://github.com/keeganquigley/Grants-Program/blob/master/applications/ParaSpell_follow-up2.md), [Under Development 1](https://github.com/keeganquigley/Grants-Program/blob/master/applications/xcm-tools.md), [Under Development 2](https://github.com/keeganquigley/Grants-Program/blob/master/applications/xcm-domain-service.md)
+* **Status:** [Implemented](https://github.com/w3f/Grants-Program/blob/master/applications/ParaSpell_follow-up2.md), [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/xcm-tools.md), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/xcm-domain-service.md)
 * **Proposer:** [Bryan Chen](https://github.com/xlc)
 * **Projects you think this work could be useful for** : Every parachain.
 
