@@ -31,7 +31,9 @@
     "url-loader": "^4.1.1"
   },
   "resolutions": {
-    "semver": "^7.5.4"
+    "semver": "^7.5.4",
+    "trim":"^0.0.3",
+    "got@":"11.8.5"
   },
   "browserslist": {
     "production": [
