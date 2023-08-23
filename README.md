@@ -94,6 +94,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Sebastian Müller](https://github.com/semuelle)
 - [Bill Laboon](https://github.com/laboon)
 - [Keegan Quigley](https://github.com/keeganquigley)
+- [Nikhil Ranjan](https://github.com/nikw3f)
 - [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
