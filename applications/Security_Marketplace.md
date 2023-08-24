@@ -86,7 +86,6 @@ Here is an envisioned lifecycle of a project on our platform.
 19. The auditors will get platform Points along their profile based on their actions, for every:
     1 successful audit completion: 1XP point (Increases with more and more audits)
     1 unsuccessful audit: -3XP points (Adds up)
-20. The Arbiter's voting system will be hosted off chain to facilitate their transactions without any cost.
 21. The point system is designed to help patrons identify reputable members of the community as well as alert them of newcomers and bad elements. Once a user hits a -6XP rating, he cannot bid anymore
     on the platform.
 22. The proposed platform will charge a certain amount as a platform fee and the arbiter’s commission, the remaining funds will be transferred to the auditor’s wallet address connected to their profile.
