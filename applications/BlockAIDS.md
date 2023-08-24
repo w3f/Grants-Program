@@ -199,7 +199,7 @@ https://nft.blockaids.world
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** $30000
 
-### Milestone 1 AIDS Smart Contract (FT minter) and wallet authorization system
+### Milestone 1 Fungible Token Smart Contract (FT minter) and wallet authorization system
 
 - **Estimated duration:** 1.5 month
 - **FTE:**  3
@@ -210,14 +210,14 @@ https://nft.blockaids.world
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License  MIT  |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can login and use AIDS tokens |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can login and use Fungible tokens |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide Dockerfile and docker image to run the website in one command line, and you can to test those modules |
 | 1. | User Management module development | We will provide login function, so users can login to our web app, using polkadot account. Blockchain Framework: Substrate / Polkadot / Kusama. Development Language: Rust/Ink! . User interface development: React.JS. Backend: NestJS |
-| 2. | AIDS token smart contract | We will create AIDS token smart contract in order to be able to reward users for their activities on our web app. Blockchain Framework: Substrate / Polkadot / Kusama. Development Language: Rust/Ink! |
-| 3. | AIDS token balance display functionality | Users logged in with their wallet will be able to see AIDS token balance. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink! |
-| 4. | Tansfer module | Trigger a payment by initiating a transfer, that will transfer AIDS token to other user's wallet. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink!  | 
-| 5. | Withdraw module | Withdraw the AIDS from our web app to user's own wallet. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink! | 
+| 2. | Fungible token smart contract | We will create Fungible token token smart contract in order to be able to reward users for their activities on our web app. Blockchain Framework: Substrate / Polkadot / Kusama. Development Language: Rust/Ink! |
+| 3. | Fungible token token balance display functionality | Users logged in with their wallet will be able to see Fungible token balance. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink! |
+| 4. | Tansfer module | Trigger a payment by initiating a transfer, that will transfer Fungible token to other user's wallet. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink!  | 
+| 5. | Withdraw module | Withdraw the Fungible token from our web app to user's own wallet. User interface development: React.JS. Backend: NestJS. Development Language: Rust/Ink! | 
 
 
 ### Milestone 2 Loyalty and Reward Electronic System (LRES)
