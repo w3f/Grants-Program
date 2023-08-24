@@ -59,7 +59,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests](CoinFabrik_On_Ink_Integration_Tests.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☐        |     ☐     |
 | [Stake Plus Inc](https://stake.plus)                    | [Treasury Tracker](TreasuryTracker.md)                                                              | [GitHub](https://github.com/stake-plus)                      | ☐          |       ☐        |     ☐     |
 | [MOBR Systems](https://www.mobr.ai)                    | [Polkadot Analytics Platform](polkadot_analytics_platform.md)                                                              | [GitHub](https://github.com/mobr-ai)                      | ☐          |       ☐        |     ☐     |
-
+| [Infra3](https://network.infra-3.xyz)                    | [Hyperdot - Powerful data analysis and creations platform](Hyperdot.md)                                                              | [GitHub](https://github.com/Infra3-Network/hyperdot)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#2023)
 
