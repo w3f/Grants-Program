@@ -163,9 +163,9 @@ While a number of open-source alternatives have emerged, none of them have suppo
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the guide. |
 | 0d. | Docker | We will provide a Dockerfile and Docker Compose file(s) to ease the deployment and execution of the system. |
 | 0e. | Programming languages | Rust, Typescript |
-| 1. | Verifications querying microservice | A microservice that will fetch info about verification requests from the persistence layer. |
+| 1. | Verifications querying microservice | A rust microservice that will expose a REST based API to the clients and serve verification requests data from the persistence layer. |
 | 2. | Updated Explorer UI | We will introduce a new page to display contract verification requests. |
-| 3. | Updated verification service | The service will now make the verification requests persist and will support configuring storage option type for the uploaded artefacts. |
+| 3. | Updated verification service | The service will now make the verification requests persist and will support configuring three storage option types for the uploaded artefacts: local file system, an object storage backend such as Amazon S3 and IPFS. A config option will be provided to the deployer of the verification service to pick one of these three storage options. |
 
 ### Milestone 2
 
