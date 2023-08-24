@@ -138,14 +138,14 @@ As mentioned in the Teams section, Eiger already has extensive experience develo
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 98 000 USD
+- **Total Costs:** 96 000 USD
 - **Starting Date:** 04/09/23
 
 ### Milestone 1 - MoveVM compatibility work and Subtrate Pallet development
 
 - **Estimated Duration:** 2 months
 - **FTE:** 2
-- **Costs:** 98 000 USD
+- **Costs:** 96 000 USD
 
 Goal: Create a customised Move VM solution for the Substrate ecosystem, using the knowledge gained during the first milestone. The deliverable will be a pallet capable of receiving, storing and executing Move smart contracts.
 
