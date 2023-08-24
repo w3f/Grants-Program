@@ -81,14 +81,14 @@ We will also host documentation on how to use and participate in the system.
 Our MVP will consist of four main parts:
 1. The pallet providing collateral value that can be integrated by parachains
 2. The documentation of integration
-3. Integration of 3 bridges
+3. Integration of 2 bridges
 4. Guidelines on integrating new bridges
 
 #### Expectations
 
 Team DIA will:
 - Create the framework and open-source the library of this integration.
-- Integrate 3 bridges for initial use. Further integrations will be open for submissions from contributors.
+- Integrate 2 bridges for initial use. Further integrations will be open for submissions from contributors.
 
 We will not:
 - Cover a security audit as a part of MVP design.
@@ -221,7 +221,7 @@ DEX integrations:
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  1.5 FTE
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 26,000 USD
 
 ### Milestone 1 - Core functionality
 
@@ -246,7 +246,7 @@ DEX integrations:
 
 - **Estimated Duration:** 1.5 months
 - **FTE:**  1
-- **Costs:** 12,000 USD
+- **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -254,9 +254,8 @@ DEX integrations:
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can integrate bridges collateralization value, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Bridge Integration: XCM | We will develop a module as part of the proposed solution that retrieves collateral information for assets bridged by the [XCM bridge contracts](https://github.com/paritytech/polkadot/tree/master/xcm). |
-| 2. | Bridge Integration: Multichain | We will develop a module as part of the proposed solution that retrieves collateral information for assets bridged by the [Multichain bridge contracts](https://github.com/anyswap). |
-| 3. | Bridge Integration: Interlay | We will develop a module as part of the proposed solution that retrieves collateral information for assets bridged by the [Interlay bridge contracts](https://github.com/interlay/interbtc). |
+| 1. | Bridge Integration: Multichain | We will develop a module as part of the proposed solution that retrieves collateral information for assets bridged by the [Multichain bridge contracts](https://github.com/anyswap). |
+| 2. | Bridge Integration: Interlay | We will develop a module as part of the proposed solution that retrieves collateral information for assets bridged by the [Interlay bridge contracts](https://github.com/interlay/interbtc). |
 
 
 ## Future Plans

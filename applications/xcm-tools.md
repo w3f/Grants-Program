@@ -42,14 +42,12 @@ myself.
    and [scale.go](https://github.com/itering/scale.go)
 
 2. Send xcm messages between relay chain and parachain and between parachain and parachain, support VMP(UMP & DMP),
-   HRMP,XCMP(XCM V3) and supports the following methods
+   HRMP and supports the following methods
 
 * `LimitedReserveTransferAssets`
 * `LimitedTeleportAssets`
 * `TeleportAssets`
-* `ReserveWithdrawAssets`
-* `LimitedReserveWithdrawAssets`
-* `Execute`
+* `ReserveTransferAssets`
 * `Sent`
 
 3. Get the execution result and the block_hash (block_num) of the execution after sending xcm
@@ -114,7 +112,7 @@ Not yet
 ### Overview
 
 * **Total Estimated Duration:** 4.5 months
-* **Total Costs:** 28500 USDC
+* **Total Costs:** 25000 USDC
 
 ### Milestone 1
 
@@ -140,7 +138,7 @@ and [scale.go](https://github.com/itering/scale.go), support signed & send trans
 
 * **Estimated duration:** 9 week
 * **FTE:**  1
-* **Costs:** 13500 USDC
+* **Costs:** 10000 USDC
 
 | Number | Deliverable               | Specification                                                                                                                                                   |
 |-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -151,7 +149,7 @@ and [scale.go](https://github.com/itering/scale.go), support signed & send trans
 |     1. | Send UMP message          | support [UMP](https://wiki.polkadot.network/docs/learn-xcm-transport#vmp-vertical-message-passing) message send                                                 |  
 |     2. | Send DMP message          | support [DMP](https://wiki.polkadot.network/docs/learn-xcm-transport#vmp-vertical-message-passing) message send                                                 |  
 |     3. | Send HRMP message         | support [HRMP](https://wiki.polkadot.network/docs/learn-xcm-transport#hrmp-xcmp-lite) message send                                                              |  
-|     4. | Send XCMP message(XCM V3) | support [XCMP](https://wiki.polkadot.network/docs/learn-xcm-transport#xcmp-cross-chain-message-passing) message send                                            |  
+
 
 ### Milestone 3
 

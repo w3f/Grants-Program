@@ -223,11 +223,10 @@ Development has not started on the project, however the codebase will largely fo
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can build a chain-specific Hybrid Indexer and use the rudimentary explorer dapp. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Video | We will publish a video that explains and demonstrates all aspects of the explorer. |
-| 1. | Dapp | The dapp will be extended to query block and state via either the Substrate Connect light client, or via direct connect to a full node via WSS. |
-| 2. | Cross-chain UI | When a Tx includes a XCM, it will be easy and intuitive to open the relevant block from the other chain(s). |
-| 3. | Support event schema changes | It will be possible to index old events that have changed their Rust type in a runtime upgrade. |
-| 4. | Per-chain build | Indexer needs to be built for the chain, e.g. hybrid-indexer-polkadot - custom pallets can be indexed. |
+| 0e. | Blog post | We will publish a blog post that explains and demonstrates all aspects of the explorer. |
+| 1. | Hybrid Indexer Library | Convert hybrid-indexer into a library that can be used by a Substrate chain indexer. Write macros for indexing all standard Substrate pallets. |
+| 2. | Polkadot Indexer | New rust project using hybrid-indexer library to index polkadot, kusama, rococo & westend. |
+| 3. | Chain select | The Hybrid dapp will have a dropdown to switch between the 4 polkadot chains. |
 
 ## Future Plans
 
