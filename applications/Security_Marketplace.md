@@ -258,7 +258,8 @@ Awaiting Response.
 | 1 | UI/UX | We will deliver complete UI/UX designs. |
 | 2 | Reputation Token Contract| This will be a non-transferrable token smart contract(Soul Bound Token) that will serve as auditors' reward and as proof of reputation points after the successful completion of an Audit.  |
 | 3 | Escrow Contract| This will be a master contract where all tokens will be managed by patrons and distributed to the Auditors after the successful closure of the Audit.This contract will also store all hashes of the audit reports. Which can be retrieved even when the platform goes down.  |
-| 4 | Node Services | We will deliver the backend services for login , sign up, 2FA and Profile creation |
+| 4 | Arbiter's voting Contract| This contract will have specific arbiters for every audit thread where they can participate in the voting. |
+| 5 | Node Services | We will deliver the backend services for login , sign up, 2FA and Profile creation |
 
 
 
