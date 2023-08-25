@@ -1,6 +1,6 @@
 # RFP: Validator Selection Algorithm
 
-* **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/validators_selection.md)
+* **Status:** [Implemented](https://github.com/w3f/Grants-Program/blob/master/applications/validators_selection.md)
 * **Proposer:** [jonasW3F](https://github.com/jonasW3F)
 
 ## Project Description 
