@@ -3,6 +3,7 @@
 - **Team Name:** LeetCoin
 - **Payment Address:** 0x03e95B0657846cD3dCF500791506947272eE12c8 ETH
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1182#issuecomment-1675270082)
 
 ## Project Overview :page_facing_up:
 
