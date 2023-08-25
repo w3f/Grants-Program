@@ -18,7 +18,7 @@ Our research indicates that, while there are some solutions for tracking NFT pro
 
 Architecture:
 
-![Screenshot 2023-07-20 at 22 52 11](https://github.com/Metaquity-Network/Grants-Program/assets/22363352/b47c0a44-b77b-47aa-abc2-dc9d779c5461)
+<img width="1244" alt="Screenshot 2023-08-25 at 13 06 25" src="https://github.com/Metaquity-Network/Grants-Program/assets/22363352/3f9c7231-c45c-4541-8374-197c5bc33d6b">
 
     
   A standard asset-tracking SDK will be built with the following layers:
