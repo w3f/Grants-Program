@@ -20,11 +20,12 @@ Architecture:
 
 <img width="1244" alt="Screenshot 2023-08-25 at 13 06 25" src="https://github.com/Metaquity-Network/Grants-Program/assets/22363352/3f9c7231-c45c-4541-8374-197c5bc33d6b">
 
-    
+Overview:
   A standard asset-tracking SDK will be built with the following layers:
-  - Blockchain layer: Access to the blockchain data source and crawl through the blocks from the genesis block, we will using using existing solution for crawling through the blockchain, Currently we are exploring subscan.
-  - Middleware layer: Contains the crawlers through which we can crawl the blockchain and collect information about NFTs and write into the database and index it using elastic search.
-  - SDK: This package will have all the necessary functions to fetch details about the NFT asset.
+  - Blockchain layer: Access to the blockchain data source and crawl through the blocks from the genesis block, we will using using existing solution for crawling through the blockchain, Currently we are exploring subscan for this solution and these are self-hosted or we will connect to external RPC nodes for fetching the data.
+  - Middleware layer: Contains the crawlers/plugins through which we can crawl the blockchain and collect information about NFTs and write into the database and index it using elastic search. These indexers can index data based on the common NFR events and platform specific events for better data availability. This module can be a self hosted or SaaS this module can read and index any newer blockchain that adopts `pallet-nft` for the NFTs.
+  - API: This layer helps in fetching details of the blockchain from DB to the SDK, This is a transportation layer where it is fetching information from the DB based on the user commands. This module will also be self-hosted.
+  - SDK: This package will have all the necessary functions to fetch details about the NFT asset. Users will be able to download this package and query for the information of the asset on blockchain by providing various SDK command. This module will be essentially integrated at the client side.
 
 Technology stack: 
 - MongoDB 
