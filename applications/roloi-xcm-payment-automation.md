@@ -58,9 +58,16 @@ The included features on the Next.js UI are:
 - ✅ useink() library
 
 For devs:
-- 💻 Useful hooks and reusable abstractions in Typescript to create XCM messages
+- 💻 Our own useful hooks and reusable abstractions in Typescript to encapsulate tasks such as:
+  - Creating proxy accounts on both sides
+  - Depositing funds into these accounts to cover fees
+  - Wrapping the recurring transaction to be executed via Astar Proxy Account
+  - Transmitting the recurring task configuration via XCM & HRMP
 - 💻 ink! smart contract example used to trigger payments
 - 💻 Recurring payment data model
+
+Some hook examples: 
+![W3F Grant - XCM Payment Automation - Hook examples](https://i.imgur.com/Qfrjp4S.png)
 
 This project will be generic and open source to serve the Polkadot builders community as a **public good** that teams can use to **automate transactions** leveraging **cross-chain features**.
 
@@ -142,14 +149,14 @@ Hernán is part of the Roloi team as CGO to help with the growth, research, and 
 ### Overview
 
 - **Total Estimated Duration:** 2.5 months
-- **Full-Time Equivalent (FTE):**  4
-- **Total Costs:** $ 70,000
+- **Full-Time Equivalent (FTE):**  3
+- **Total Costs:** $ 52,500
 
 ### Milestone 1 - UI on Rococo Testnet
 
 - **Estimated duration:** 1.5 months
-- **FTE:**  4
-- **Costs:** $ 42,000 
+- **FTE:**  3
+- **Costs:** $ 31,500 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -157,15 +164,15 @@ Hernán is part of the Roloi team as CGO to help with the growth, research, and 
 | **0b.** | Documentation | We will provide a general tutorial for the user to understand how to use the dApp and technical documentation of the main functionalities. |
 | **0c.** | Testing | To guarantee robustness, the main functionality will be covered by unit tests. |
 | **1.** | UI | As expressed in the Project Details section, we will provide a **Typescript Next.js Web App** that includes key abstractions to simplify the developers' work when using XCM and connecting parachains. The scope of this UI includes connection to the Rococo Testnets of Astar & OAK and chain native token transfers. Libraries to use: Polkadot.js & useink. |
-| 1a. | React hooks | We will provide reusable React hooks to facilitate the creation and top-up of Proxy Accounts, and execution of XCM (v3) messages.  |
+| 1a. | React XCM tooling | We will provide reusable React hooks, generic components, state management and types to facilitate the creation and top-up of Proxy Accounts, and execution of XCM (v3) messages.  |
 | 1b. | Home page | This page will handle the wallet connection and will show the app dashboard. |
 | 1c. | Create a Recurring Payment Page | On this page, the user will be able to create recurring transfers using the previously defined XCM flow. The most tricky part of the process will be transparent for the user. |
 
 ### Milestone 2 — Smart Contract and Kusama Connection
 
 - **Estimated Duration:** 1 month
-- **FTE:**  4
-- **Costs:** $ 28,000 
+- **FTE:**  3
+- **Costs:** $ 21,000 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
