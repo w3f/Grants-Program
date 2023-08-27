@@ -1,7 +1,7 @@
-# Paraxiom
+# Apophenia (Oracle) Parachain
 
 - **Team Name:** Subslice
-- **Payment Address:** 
+- **Payment Address:** TBD
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -12,13 +12,13 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-The main goal of the Paraxiom project is to be a trustless oracle chain available to the Dotsama ecosystem.
+The main goal of the Apophenia project is to be a trustless oracle chain available to the Dotsama ecosystem.
 
-Paraxiom achieves oracle functionality by providing a set of modules that can be used to register and consume data from a variety of external sources. These are organized in the form of ["feeds"](#feeds).
+Apophenia achieves oracle functionality by providing a set of modules that can be used to register and consume data from a variety of external sources. These are organized in the form of ["feeds"](#feeds).
 
 Essentially, this means:
 - [Registering new feeds](#feed-registration) (aka. sources)
-- [Consuming data](#feed-consumption) from a registered feeds via XCM
+- [Consuming data](#feed-consumption) from a registered feeds via XCM or chain events.
 - A staking / slashing mechanism to ensure the game-theoretic elements of the process
 
 We are PBA alumni and noticed the lack of oracle primitive in this ecosystem, and then decided to fix that.
@@ -53,7 +53,7 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 
 ##### Feeds
 
-A feed is a source of data. It can be a smart contract, a parachain, a smart contract on another chain, or even a simple script that fetches data from the internet.
+A feed is a source of data and is a foundational primative on Apophenia. A feed's metadata includes all the information necessary for an offchain worker to fetch the information over HTTP.
 
 ##### Feed Registration
 
@@ -62,7 +62,8 @@ A feed can be registered by anyone. The registration process is simple: the clie
 1. Feed Topic: an identifier of the feed's context (ex: `dot_usd_price`)
 2. Description (optional)
 3. Source: data location (ex: an HTTP/S URL)
-4. Method: a supported way with which to get the data (ex: Phala Phat Contracts, or any kind of Offchain Worker)
+4. Path: the specific path to parse within the response object
+5. Method: a supported way with which to get the data (ex: TEE Contracts or Offchain Worker)
 
 > Note: The use of a topic is to allow for multiple feeds to be registered for the same context. For example, there could be multiple feeds for the `dot_usd_price` topic, each with a different source and/or method.
 
@@ -84,7 +85,7 @@ The consumption process is simple, the client (i.e. actor account consuming the 
 
 #### Architecture
 
-The main components of the Paraxiom architecture are:
+The main components of the Apophenia architecture are:
 
 - **Oracle Pallet**
 - **Feed Registry Pallet**
@@ -92,17 +93,17 @@ The main components of the Paraxiom architecture are:
 - **Oracle Offchain Worker**
 - **TEE and Smart Contract Pools** (optional)
 
-![Paraxiom Architecture](https://github.com/subslice/Paraxiom/blob/main/images/full-overview.jpg?raw=true)
+![Apophenia Architecture](https://github.com/subslice/oracle-parachain/blob/main/images/Paraxiom%20Pallets%20Overview.png?raw=true)
 
 ### Ecosystem Fit
 
-We strongly believe that Paraxiom is best applicable as a system chain for the Polkadot ecosystem. There exists a need for a native Oracle solution. Paraxiom aims to fill this gap.
+There exists a need for a native Oracle solution within the DotSama ecosystem. Apophenia aims to fill this gap.
 
-The target audience is the whole ecosystem itself: parachains, smart contracts and individual accounts can register new feeds and request data from them.
+The target audience includes parachains, smart contracts and individual accounts can register new feeds and request data from them.
 
-While there are pallets and integrations within some Parachains currently (ex: Dia on Astar or Chainlink's pallet), it remains an added complexity for the end user. Paraxiom aims to provide a simple and easy to use solution for all, especially chains within the system.
+While there are pallets and integrations within some Parachains currently (ex: Dia on Astar or Chainlink's pallet), it remains an added complexity for the end user. Apophenia aims to provide a simple and easy to use solution for all, especially chains within the system.
 
-Paraxiom also aims to provide data aggregation functionality to increase both data quality and security. This is a feature that can make Paraxiom a unique solution.
+Apophenia also aims to provide data aggregation functionality to increase both data quality and security. This is a feature that can make Apophenia a unique solution.
 
 <!-- Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
@@ -127,14 +128,14 @@ Paraxiom also aims to provide data aggregation functionality to increase both da
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** TBD
+- **Registered Legal Entity:** TBD
 
 ### Team's experience
 
-- Faisal Al Tameemi has experience with ...
-
 - Arthur Franco Moreira has a mathematical background and 4+ years of software engineering, ranging from implementing portfolio optimization techniques, to backend web development and blockchain development. In the last 1.5 years, Arthur has been working as Rust and Substrate developer, working for a Brazilian payments company that uses a Substrate-based solochain.
+
+- Faisal Al Tameemi is a Technologist, an Educator, and an Entrepreneur. He is passionate about the intersection of Entrepreneurship, Engineering, and Psychology to craft successful products. Having held various positions, he brings a depth of technical knowledge combined with a business acumen which adds considerable value. Experience in education ensures that the team is always growing and junior members of the team get the support they need. Currently, he is focused on building decentralized systems and applications in web3.
 
 As the **Subslice** team, we have partenered after the Polkadot Blockchain Academy to tackle interesting projects for the Dotsama ecosystem. In May 2023 we won the **Astar Challenge for best Wasm dApp** in the _Encode x Polkadot Spring 2023 Hackathon_ with the [GameSlice project](https://github.com/subslice/game-theory).
 
@@ -157,11 +158,11 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 <!-- If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be: -->
 
-We have already started implementing our ideas in the [Paraxiom repository](https://github.com/subslice/Paraxiom).
+We have already started implementing our ideas in the [Apophenia repository](https://github.com/subslice/Paraxiom) (previously called Paraxiom).
 
 We have a Github project with some of the next steps [here](https://github.com/orgs/subslice/projects/2/views/1).
 
-Our current, but still incipient, improvement proposals are mainly described in the Paraxiom repo itself, along with some notes we have been taking [here](https://github.com/subslice/notes/blob/main/Paraxiom/General%20Notes.md).
+Our current, but still incipient, improvement proposals are mainly described in the Apophenia repo itself, along with some notes we have been taking [here](https://github.com/subslice/notes/blob/main/Apophenia/General%20Notes.md).
 
 
 ## Development Roadmap :nut_and_bolt:
@@ -194,14 +195,13 @@ Most of the work in this milestone has been started and can be seen in the repos
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Article / Whitepaper | We will publish an article / whitepaper that explains how the oracle system will function autonomously |
-| 2. | Pallet Registry | Pallet responsible for registring and recording relevant information about new feeds |
-| 3. | Pallet Oracle | Pallet that holds main logic for getting feed data, aggregating data and delivering it to end users. |
-| 4. | Pallet Anchor | Pallet that holds logic for interacting with the outside world (offchain workers, Phat contracts, ...) |
+| 1. | Litepaper / Whitepaper | We will publish an article / whitepaper that explains how the oracle system will function autonomously |
+| 2. | Pallet Registry | A pallet responsible for registring and recording relevant information about new feeds |
+| 3. | Pallet Oracle | A pallet that holds main logic for getting feed data, aggregating data and delivering it to end users. |
+| 3.a. | Offchain workers | Integrate regular OCW as *one* of the offchain solutions |
+| 4. | Pallet Data Validation | A pallet responsible for outlier detection and ensuring that all nodes are submitting valid data. It will use statistics to determine if one or more of the nodes are bad actors. It will also provide some basic aggregation features. |
 
 ### Milestone 2 - XCM Integration
-
-The milestone 2 is dedicated to improving the offchain parts and integrating XCM.
 
 - **Estimated Duration:** 2 months
 - **FTE:**  1,5
@@ -209,13 +209,13 @@ The milestone 2 is dedicated to improving the offchain parts and integrating XCM
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Offchain workers | Integrate regular OCW as *one* of the offchain solutions |
-| 2. | Phat contracts | Integrate Phala's Phat Contracts as *one* of the offchain solutions  |
-| 3. | Research more ways to get offchain data |  Research and implement other ways to get data.
-| 4. | E2E tests with RPC calls | We will have E2E tests using RPC calls|
-| 5. | E2E tests with XCM | We will have E2E tests using RPC calls. |
+| 1. | XCM request-response model | Use XCM messages as the main interface for requesting and receiving oracle data. |
+| 2. | Research more ways to validate offchain data |  Research and implement ways to ensure that offchain workers are providing valid data and have some level of protection again known attack vectors. |
+| 3. | E2E tests with RPC calls | We will have E2E tests using RPC calls|
+| 4. | E2E tests with XCM | We will have E2E tests using XCM. |
 
 ### Milestone 3 - Staking / Slashing
+
 The last milestone is dedicated to implementing the staking / slashing mechanism for the oracle system.
  
 - **Estimated Duration:** 2 months
@@ -226,11 +226,16 @@ The last milestone is dedicated to implementing the staking / slashing mechanism
 | -----: | ----------- | ------------- |
 | 1.| Aggregation | Research and implement interesting and statistically sound aggregation methods so we can integrate them in the slashing mechanism. |
 | 2. | Design and implement Staking / Slashing mechanism | Research and implement game-theoretic ways of making the oracle system safe. |
+| 3. | Design and research fee structures | Add a fee structure that takes into account all the features mentioned above. |
+| 4. | Tutorials and Showcase | Create online media to showcase the usage of the project as well as prepare in-person presentations for the DotSama community. |
 
 
 ## Future Plans
 
-We believe there is value in making Paraxiom a system (common good) parachain in the Polkadot ecosystem. We would like to work along with Parity to make this come true.
+As Subslice, our primary focus lies within the DotSama ecosystem, where we are actively engaged in various development initiatives. Our core belief centers around our capacity to introduce solutions that can significantly enhance the usability and adoption of Polkadot/Kusama. We intend to achieve this objective by conceiving and executing utility-driven projects, which is why we have a keen interest in developing a native oracle solution within this ecosystem.
+
+In an ideal scenario, oracles should operate with complete autonomy, but attaining this level of autonomy requires a monumental effort. It is worth noting that Polkadot presently boasts one of the most advanced governance systems in the blockchain sphere, which serves as a great source of inspiration for us. In our future plans, we aspire to leverage such governance structures to establish a genuinely decentralized oracle system. While existing solutions like ChainLink are commendable, they still exhibit a significant degree of centralization.
+
 
 <!-- - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it. -->
@@ -244,8 +249,3 @@ You can find more information about the program [here](../README.md#moneybag-ref
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Recommendation from Joshua and Santiago, from The Substrate Builders Program.
-
-**Additional Information**:
-The initial inspiration for this project came from conversations Sylvain Cormier (previously at KILT), who along with the Phala Network team was thinking of how to use Phat Contracts for oracles.
-
-Phala team has initially awarded Sylvain a small amount for his work in the beginning of this, but they are not associated with the project anymore.
