@@ -180,9 +180,9 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 
 ### Milestone 1 - Smart Contract Development
 
-* **Estimated Duration:** 6 weeks
+* **Estimated Duration:** 4 weeks
 * **FTE:**  2
-* **Costs:** 36,075 USD
+* **Costs:** 24,050 USD
 
 
 | Number | Deliverable               | Specification                                                                                                                                                                                                                                                             |
@@ -193,7 +193,6 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 |    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                             |
 |    0e. | Article                   | We will publish an **article** that explains what was done as part of the grant. And we will publish a series of articles that explains how DAOsign works from a high-level perspective. The content of the articles will be consistent with the functions at this stage. |
 |     1. | Smart Contracts           | DAOsign Smart Contract repo that includes following components: Agreement Contract, EIP712/EIP2771 standard implementation on Ink!. These smart contracts can be deployed to any substrate chain with contracts-pallet.                                                   |                                                                                                                                                                                                                                           |
-|     2. | Gas Relayer               | Off-chain component for transaction relaying                                                                                                                                                                                                                              |
 
 
 ### Milestone 2 - DAOsign Application integration
@@ -211,6 +210,22 @@ We are currently working on a tech demo (kind of a pre-beta version) and non-blo
 |    0d. | Docker                          | Dockerfile(s) provided in Milestone 1 will be used to test all the functionality delivered with this milestone.                                                                                     |
 |     1. | DAOsign Ink! JS SDK             | We will publish a npm/yarn package with the logic how to interact with Smart Contract from JS                                                                                                       |
 |     2. | DAOsign Application Integration | Integrate DAOsign application using SDK. DAOsign application (which is not part of this grant) will be open sourced as well. DAOsign is written using ReactJS on frontend and Typescript on backend |
+
+
+### Milestone 3 - Relayer Development
+
+* **Estimated Duration:** 2 weeks
+* **FTE:**  2
+* **Costs:** 12,025 USD
+
+
+| Number | Deliverable   | Specification                                                                                                                                  |
+|-------:|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License       | Apache 2.0                                                                                                                                     |
+|    0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run Relayer and broadcast transactions |
+|    0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness.                                                     |
+|    0d. | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                  |
+|     1. | Gas Relayer   | Off-chain component for relaying transactions. Will be developed on Typescript/NodeJS using polkadot.js library                                |
 
 
 
