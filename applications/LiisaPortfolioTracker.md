@@ -44,7 +44,7 @@ React.js, often simply called React, is an open-source JavaScript library develo
 
 ### Components
 
-#### 1) Data Source (Subsquid)
+#### 1) Data Source (Subsquid) 
 
 The project aims to create a system to extract and process event data and metadata related to NFTs within the Polkadot ecosystem. The focus is on building flexible and modular data ingestion mechanisms to accommodate different APIs with minimal code changes, using Node.js components for reusability and scalability. 
 
