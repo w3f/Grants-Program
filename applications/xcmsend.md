@@ -3,7 +3,7 @@
 **Team Name:**
 *Rust Syndicate x Decentration*
 
-**Payment Address:** (DOT)
+**Payment Address:** (USDT on polkadot)
 15iN8aQnPuX4vjcovenu15EtnYfcwbtiXjeKGRN3KkkzNNtt
 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -212,7 +212,7 @@ https://decentration.org
 
 - **Full-Time Equivalent (FTE):**  2 FTE
 
-- **Total Costs:** 30 000 USD to be converted into DOT(Polkadot)
+- **Total Costs:** 30 000 USD to be converted into USDT(on Polkadot)
 
 **Milestone 1: XCM SEND MVP**
 
