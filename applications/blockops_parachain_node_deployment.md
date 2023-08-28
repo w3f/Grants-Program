@@ -63,6 +63,7 @@ The following are the mockups for high-level application operations, these are s
 
 - Nodejs
 - Reactjs
+- Golang
 - Docker
 - kubernetes
 - Prometheus & Grafana
@@ -76,7 +77,7 @@ The following are the mockups for high-level application operations, these are s
 
 - **What need(s) does your project meet?:** This project will significantly enhance the efficiency and reliability of the development process within the Polkadot ecosystem.
 
-- **Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?:**
+- **Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?:** OnFinality has been a successful and proven model for only single node deployment. However Onfinality doesn't offer bootstrappable node deployments for parachains. There is currently no out of the box advanced analytics and proactive monitoring to ensure a production grade incident management of networks and nodes. From that perspective, we are a unique solution that combines both services and offers additional interests to our users.
 
 ## Team :busts_in_silhouette:
 
@@ -88,13 +89,12 @@ The following are the mockups for high-level application operations, these are s
 
 - Franklin Okpako - Devops & SRE: With over 5 years of experience under his belt, Frank has shown proficiency in the role of a DevOps Engineer. His extensive qualifications include Cloud Native Engineer, CKA, CKS, and AWS Certified DevOps Engineer-Professional.
 
-- Oluwatimilehin Adesoji - Software Engineering Lead: Timilehin is a seasoned software engineer with 10+ years of experience building highly available and scalable systems. He is motivated to drive projects/businesses in every way possible through tech.
+- Calvin Puram - Devops & SRE: Skilled DevOps engineer with a track record of building scalable applications, optimizing systems, and implementing robust monitoring solutions.
 
-- Ebube Ojimadu - Product Lead: As a product manager with a track record of creating exceptional product experiences for businesses, Ebube has worked extensively in the blockchain field, providing value across agile product development, innovation, growth, user experience research, strategy, and product analytics.
+- Oluwatimilehin Adesoji - Software Engineering Lead: Timilehin is a seasoned software engineer with 10+ years of experience building highly available and scalable systems. He is motivated to drive projects/businesses in every way possible through tech.
 
 - John Etokhana - Product Design Lead: As a digital designer across visual identity development, interaction style and cross-platform preparation, John strives to continue his string of successes in the building, testing and refinement of user-centered digital interfaces and experiences.
 
-- Hazel Agoni - Marketing Lead: With a 6-year career across growth marketing, digital marketing, content strategy, marketing automation, and analytics, Hazel successfully pushes the boundaries of B2B growth.
 
 ### Contact
 
@@ -124,15 +124,14 @@ Through our experience with Polkadot, we have developed robust strategies to max
 - Backend -  https://github.com/blockops-sh/api-core-service
 
 
-
 ### Team LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/in/haroldsphinx/
 - https://www.linkedin.com/in/franklin-okpako/
+- https://www.linkedin.com/in/calvin-puram/
 - https://www.linkedin.com/in/oluwatimilehin-adesoji-36ab249a/
-- https://www.linkedin.com/in/ebube-ojimadu/
 - https://www.linkedin.com/in/john-etokhana-497671119/
-- https://www.linkedin.com/in/hazel-agoni/
+
 
 
 ## Development Status :open_book:
@@ -146,7 +145,7 @@ For this proposal we focus on building and streamlining the process of setting u
 ### Overview
 
 - **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):**  14 FTE
+- **Full-Time Equivalent (FTE):**  5 FTE
 - **Total Costs:** 30,000 USD.
 
 ### Milestone 1 Development of full blown parachain deployment feature
@@ -173,7 +172,7 @@ For this proposal we focus on building and streamlining the process of setting u
 ### Milestone 2 Monitoring
 
 - **Estimated Duration:** 1 month
-- **FTE:**  14
+- **FTE:**  5
 - **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
@@ -183,8 +182,7 @@ For this proposal we focus on building and streamlining the process of setting u
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Standalone Executable | Will provide standalone executable that start the GUI service and other corresponding |
 | 0e. | Article | Using our PR channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
-| 1. | Improve UX Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime.
- |
+| 1. | Improve UX Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. |
 | 2. | Setup Dashboard | We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users |
 
 
