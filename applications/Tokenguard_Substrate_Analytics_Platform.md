@@ -244,6 +244,8 @@ Tokenguard is currently developing the following features:
 Our current business model focuses on offering growth analytics solutions for parachains & dApps and allowed us to validate both product and services through collaborations with notable parachains such as Astar and Aleph Zero. We believe that delivering free of charge community analytics will further enhance insights discovery for the whole ecosystem, allowing it to win the race for leader's position in the web3 space.
 
 Teams we cooperate with appreciate the flexibility and professionalism of our team:
+<img src="https://imagizer.imageshack.com/img922/7296/MnyYux.png" height="80" align="left" border="0">*We are happy to use Tokenguard, which offers Aleph Zero comprehensive on-chain user metrics and engagement data. Thanks to their analytics tool, we can make data-driven decisions and provide transparency to our community with easy-to-use dashboards.* <br>
+
 
 
 ## Development Roadmap 🔩
