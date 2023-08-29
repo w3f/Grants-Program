@@ -198,9 +198,9 @@ Tokenguard addresses the need of following audiences:
 
  
 Tokenguard's public features and data are already being used by community users and projects like DotInsights ([https://dotinsights.subwallet.app/polkadot-report-q2-2023-en/](https://dotinsights.subwallet.app/polkadot-report-q2-2023-en/)):
+<img src="https://imagizer.imageshack.com/img922/508/rymrP6.png" width="800" border="0">
 
 
-![](https://t31001708.p.clickup-attachments.com/t31001708/3de1b97f-b66b-477a-a932-b4bb7af89d6c/image.png)
 ## Team 👥
 ### Team members
 
