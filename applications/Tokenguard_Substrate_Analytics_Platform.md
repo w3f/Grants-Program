@@ -141,12 +141,9 @@ We are in the process of working out the most optimal solution with the Parity t
 
 * Using substrate-etl - dependent on the quality and availability of the data. Currently the data has a significant delay, potentially decreasing the usability of the data. Additionally, due to the size of relay chains history, querying the data through BigQuery is extremely expensive.
 
-The best model is yet to be decided with Polkadot Data Alliance and will be a matter of discussion after the PoC is designed.
+The best model is yet to be decided with Polkadot Data Alliance and will be a matter of discussion after the PoC is designed and costs of each solution is known.
 
   
-
-  
-
 ### Other Proposals Comparison
 
   
@@ -234,7 +231,6 @@ Tokenguard’s clients include Swiss Sygnum Bank, [Bitcoin.com](http://bitcoin.c
 ### Team Code Repos
 * [https://github.com/tokenguardio](https://github.com/tokenguardio)
 
-  
 
 ## Development Status 📖
 Tokenguard is currently developing the following features:
@@ -243,6 +239,11 @@ Tokenguard is currently developing the following features:
 * Ecosystem Analytics for [Aleph Zero](https://alephzero.org/) - paying customers
 * Ink! dApp analytics for [AZero ID](https://azero.id/), [ArthSwap](https://app.arthswap.org/), [Panjea](https://panjea.io/), [Interlock](https://www.interlock.network/) and others
 * Partnership with [SubSquid](https://www.subsquid.io/)
+
+### Current Traction & Testimonials ###
+Our current business model focuses on offering growth analytics solutions for parachains & dApps and allowed us to validate both product and services through collaborations with notable parachains such as Astar and Aleph Zero. We believe that delivering free of charge community analytics will further enhance insights discovery for the whole ecosystem, allowing it to win the race for leader's position in the web3 space.
+
+Teams we cooperate with appreciate the flexibility and professionalism of our team:
 
 
 ## Development Roadmap 🔩
