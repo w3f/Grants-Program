@@ -4,7 +4,7 @@
 
 *  **Team Name:** [Tokenguard.io](http://tokenguard.io/) (Block Solutions Sp z o.o.)
 
-*  **Payment Address:** 15LN4SgUiVgavRwC9aKeh2H82gEStwYCsXoy3dzEyzo8qoAt
+*  **Payment Address:** 0xa86d1302695a5e915fc54f2a18200337eacad082 (Ethereum ERC20 USDT)
 
 * [**Level**](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels)**:** 2
 
@@ -104,12 +104,11 @@ Dashboards overview - The overview of currently indexed and supported parachains
 <img src="https://imagizer.imageshack.com/img924/1246/BK6CYe.png" width="800" border="0"><br><br>
 
 Ecosystem metrics dashboards - The on-chain data is visually presented through charts that are categorized into the most significant and essential aspects:<br>
-<img src="https://imagizer.imageshack.com/img924/8639/9qncPN.png" width="800" border="0"><br><br>
-
+<img src="https://imagizer.imageshack.com/img923/2272/10xb78.png" width="800" border="0"><br><br>
 
 
 Filtering - The ability to sort data based on the most useful indicators:<br>
-<img src="https://imagizer.imageshack.com/img923/2272/10xb78.png" width="800" border="0"><br><br>
+<img src="https://imagizer.imageshack.com/img924/8639/9qncPN.png" width="800" border="0"><br><br>
 
 
 Custom dashboard creator - The drag and drop feature allows users to create personalized dashboards tailored to their specific needs.<br>
