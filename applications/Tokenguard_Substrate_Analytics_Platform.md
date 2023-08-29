@@ -228,7 +228,7 @@ Tokenguard's public features and data are already being used by community users 
 ### Team’s experience
 Tokenguard’s clients include Swiss Sygnum Bank, [Bitcoin.com](http://bitcoin.com/), Astar, Aleph Zero and many others recognizable brands. Each of cofounders has tremendous web3 experience - Damian was co-creating DeFi analytics platform Kasuria. Jacob was working at OpenLoyalty, helping web3 projects engage their users and Kamil created web3 security solutions, designing a security monitoring that served 30+ tokens.
 
-### Current Traction & Testimonials ###
+### Current Traction & Business Model ###
 Our current business model focuses on offering growth analytics solutions for parachains & dApps and allowed us to validate both product and services through collaborations with notable parachains such as Astar and Aleph Zero. We believe that **delivering free of charge community analytics will further enhance discovery of growth insights within the whole ecosystem**, allowing it to win the race for leading position in the web3 space.
 
 Teams we cooperate with appreciate the flexibility and professionalism of our team:<br><br>
