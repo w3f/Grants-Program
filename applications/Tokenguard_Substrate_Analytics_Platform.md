@@ -1,172 +1,334 @@
-# Name of your Project
+# Tokenguard
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-- **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+  
 
-> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-## Project Overview :page_facing_up:
+*  **Team Name:** [Tokenguard.io](http://tokenguard.io/) (Block Solutions Sp z o.o.)
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
+*  **Payment Address:** 15LN4SgUiVgavRwC9aKeh2H82gEStwYCsXoy3dzEyzo8qoAt
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+* [**Level**](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels)**:** 2
+
+  
+
+## Project Overview 📄
+
+  
+
+This application is in response to the RFP [https://grants.web3.foundation/docs/RFPs/Under Development/analysis-website-and-data-platform](https://grants.web3.foundation/docs/RFPs/Under%20Development/analysis-website-and-data-platform).
+
+  
 
 ### Overview
 
-Please provide the following:
+  
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+The existing challenge in the Polkadot & Kusama ecosystems is **the absence of a user-friendly on-chain analytics platform**. Currently, querying data through GraphQL and backend services like Subquery and Subsquid requires considerable effort. Creating compelling and visually attractive dashboards is almost impossible due to lack of tools that focus on end user experinece. As a result, power-users and builders face difficulties in interactively accessing high-quality data and creating custom visualizations for easy sharing.
+
+  
+
+  
+
+To address this challenge, we propose an easy-to-use and efficient solution - an advanced data analytics tool designed to cater specifically to the needs of the Polkadot & Kusama ecosystems and related parachains. Our platform offers seamless data querying, simplifying the creation of customized charts and visualizations, **facilitating easy sharing of valuable insights and metrics within the**  **community.**
+
+  
+
+  
+
+With the aim of ensuring extensive accessibility across the Substrate community and optimizing the functionality of our analytical tool, Tokenguard application places **a strong emphasis on refining the UX aspect**. This involves the development of an intuitive user interface (UI) and seamless frontend that effectively facilitates insights discovery.
+
+  
+
+  
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+  
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+To meet the expectations of Polkadot and Kusama community and the suggestions contained in the RFP, we propose a **comprehensive analytics tool consisting of**  **a query builder, visualization creator and dashboard composer for Polkadot & Kusama ecosystems** - the creation of which requires the implementation of the following areas:
+
+  
+
+  
+
+1. Data model:
+	- Creating a RAW data access that would categorize data depending on its depth:
+		1. L0: Relay chains (Polkadot, Kusama)
+		2. L1: Parachains
+		3. L2: dApps & Smart Contracts
+	- Creating a database of pre-transformed, comparable & curated metrics - each of the metric would be a pre-defined SQL query based on RAW data that is curated by Tokenguard team:
+		1. User related metrics
+		2. Activity related metrics
+		3. Conversions related metrics
+2. Metrics 
+	- Creation:
+		1. Allowing users to create their own SQL queries from scratch and save them.
+		2. Allowing users to preview SQL query of each of the existing metrics at Tokenguard.
+		3. Allowing users to copy, edit and save each of the existing metrics.
+	- Collection:
+		1. List of projects on different depths (L0, L1, L2)
+		2. List of RAW tables available for these projects
+		3. List of comparable metrics for these projects
+
+4. Dashboards
+	- Making it possible for people to create & share dashboards with their own metrics as well as Tokenguard curated metrics:
+		1. Allowing for choosing how to display a metric (more than 10 types of visualizations available)
+		2. Allowing for commenting dashboards
+		3. Adding tags to dashboards
+	- Creating a search engine for dashboards
+5. Users
+	- Creating a user subpage with a list of users' dashboards & metrics
+
+  
+
+  
+
+### **Beta Version - existing Tokenguard features**
+
+  
+
+(You can access public version of Tokenguard app at [app.tokenguard.io](http://app.tokenguard.io/))
+
+  
+
+  
+
+Over the course of six months, Tokenguard application was meticulously developed with the objective of creating a user-friendly analytics tool for the Substrate Ecosystem, without requiring any coding or SQL skills. Within this timeframe, we successfully produced a beta version of the app, which now offers essential on-chain analytics for various projects within the Polkadot ecosystem, such as Astar & Aleph Zero - our lovely customers.
+
+  
+
+  
+
+#### **Features and designs:**
+
+  
+
+Dashboards overview - The overview of currently indexed and supported parachains:
+
+  
+
+[![](https://t31001708.p.clickup-attachments.com/t31001708/1000c5d6-2c7c-4516-8b26-9f7c2760c8c5/image.png)](https://imgur.com/wpAd2uR)
+
+  
+
+  
+
+Ecosystem metrics dashboards - The on-chain data is visually presented through charts that are categorized into the most significant and essential aspects:
+
+  
+
+![](https://t31001708.p.clickup-attachments.com/t31001708/1b0f82d2-c472-426e-b0f5-ee3318bbd21a/image.png)
+
+  
+
+  
+
+Filtering - The ability to sort data based on the most useful indicators:
+
+  
+
+[![](https://t31001708.p.clickup-attachments.com/t31001708/019fa1ad-9f85-4493-9c07-68472f8d36bb/image.png)](https://imgur.com/t7uO091)
+
+  
+
+  
+
+Custom dashboard creator - The drag and drop feature allows users to create personalized dashboards tailored to their specific needs.
+
+  
+
+[![](https://t31001708.p.clickup-attachments.com/t31001708/60027168-960b-4d7b-95a3-144128530041/image.png)](https://imgur.com/SN2nZEH)
+
+User activity analytics - A module that allows for an in-depth analysis of user behavior based on metrics such as DAU, MAU, retention or user segments.
+
+![](https://t31001708.p.clickup-attachments.com/t31001708/4d8dbe7a-a39e-48c4-988f-5a59f3b2ee3c/image.png)
+
+**Technology Stack:**
+
+* JavaScript, TypeScript, Python
+* SQL, dbt, Airflow
+* Kubernetes
+* SubSquid
+* BI analytics tools
+* Cloud hosting and scalable infrastructure
+
+### Maintenance
+
+In order to maintain an on-chain analytical tool covering the entire ecosystem, it is necessary to index, store, maintain and process data from relay chains and nearly a hundred parachains with different pallets, the number of which is constantly growing.
 
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+We are in the process of working out the most optimal solution with the Parity team to cover the maintenance costs with the [Polkadot Data Alliance Parent Bounty (WIP)](https://docs.google.com/document/d/1fA5ARHy-frzgZC66rniKZ5o7CSbDvCTkS--kWaMzuMs/edit#), taking into consideration the following solutions:
+
+* Indexing and storing the data in-house - which offers a high quality experience for the end-user due to possibility of pre-aggregating the data and working out the ETL process so that the data is displayed almost real-time.
+
+* Using SubSquid archives - dependent on the SubSquid business model regarding its data distribution model in the future and possibility of accessing RAW data rather than GraphQL endpoint.
+
+* Using substrate-etl - dependent on the quality and availability of the data. Currently the data has a significant delay, potentially decreasing the usability of the data. Additionally, due to the size of relay chains history, querying the data through BigQuery is extremely expensive.
+
+The best model is yet to be decided with Polkadot Data Alliance and will be a matter of discussion after the PoC is designed.
+
+  
+
+  
+
+### Other Proposals Comparison
+
+  
+
+[RFP](https://grants.web3.foundation/docs/RFPs/Under%20Development/analysis-website-and-data-platform) has been partially addressed by other teams in the proposals [#1716](https://github.com/w3f/Grants-Program/pull/1716) [#1768](https://github.com/w3f/Grants-Program/pull/1768) [#1748](https://github.com/w3f/Grants-Program/pull/1748) [#1815](https://github.com/w3f/Grants-Program/pull/1815) and work is underway to solve it. Being aware of how wide and complex the area of data analysis is, in our solution, we wanted to refer to the issues and propose modules that have not yet been built, but will complement the ongoing work.
+
+Compared to the following, Tokenguard in this proposal provides both a user-friendly no-code query editor and SQL query editor; visualization creator and dashboard composer - which UX / UI is designed in an accessible way, reaching a wide audience; sharing feature that allows for efficient sharing of created metrics and better data analysis.
+
+While:
+* [#1716](https://github.com/w3f/Grants-Program/pull/1716) - is an ETL tool that focuses on delivering the Polkadot ecosystem data to a wide audience using Google BigQuery service.
+
+* [#1768](https://github.com/w3f/Grants-Program/pull/1768) - is an ETL tool focused on deep account analytics challenges.
+
+* [#1748](https://github.com/w3f/Grants-Program/pull/1748) - is a data analytics tool that focuses on wallet profiling and tracking its investments and structure.
+
+* [#1815](https://github.com/w3f/Grants-Program/pull/1815) - is a low-level SQL query editor and vizualization creator dedicated for data engineers and data scientists.
+
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+In order to facilitate growth, Substrate ecosystem needs a vast and thriving environment of developers creating parachains, dApps and smart contracts. Each parachain and each smart contract generates thousands of transactions that store important technical and business insights. Each new growing dApp, with its own marketing & growth strategy, **brings in new active users to the ecosystem and venture capital money**. These insights are currently hard to discover and the ecosystem needs infrastructure tools that would make it easy for management teams and developers to uncover them, similarly as it is done in EVM environment with tools like Dune Analytics or Tenderly.
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+Tokenguard addresses the need of following audiences:
 
-## Team :busts_in_silhouette:
 
+**Community:**
+* Transparency & Credibility:
+	* Access to data and on-chain insights is the basis for a community driven blockchain.
+	* The ability to track and verify activity and growth in the parachains reinforces trust.
+* Investment:
+	* A tool that gives access to the performance of individual dApps and DeFi allows for a better assessment of the market situation in terms of investment.
+	* Insights into data on developer activity and TVL allows to attract additional community members who want to invest in the ecosystem.
+* Engagement:
+	* A well-informed community is more likely to be involved in the building programs on a given chain and in ongoing activities.
+	* Access to insights allows the community to actively promote chain in social media, at events and in ordinary media.
+
+**Relay chains, parachains and dApps teams:**
+
+
+* Marketing Improvements:
+	* Off-chain to on-chain data correlation provides a deeper understanding of the marketing and PR efforts that contribute to the network’s growth
+	* Developer engagement tracking allows to identify strategies that in fact encourage web3 creators to build within the ecosystem.
+	* User segmentation and user behavior tracking allows to understand which protocols and dApps generate the most traffic for the network and what type of user affects its growth.
+* More efficient Treasury Spending:
+	* Tracking the KPIs and inflow of new users through dApps and on-chain projects financed through relay chains and parachains treasury grants.
+	* Source of reliable data to support discussion and decisions during treasury votings.
+* Strengthening Operations & Security:
+	* Real-time monitoring and alerts enable the team to respond more effectively in the face of potential threats such as rug pulls.
+	* Thanks to access to on-chain insights, such as a TVL in DeFi or a Smart Contract creation per developer, Tokenguard helps understand how to better optimize the operations of parachains for individual entities.
+
+ 
+Tokenguard's public features and data are already being used by community users and projects like DotInsights ([https://dotinsights.subwallet.app/polkadot-report-q2-2023-en/](https://dotinsights.subwallet.app/polkadot-report-q2-2023-en/)):
+
+
+![](https://t31001708.p.clickup-attachments.com/t31001708/3de1b97f-b66b-477a-a932-b4bb7af89d6c/image.png)
+## Team 👥
 ### Team members
 
-- Name of team leader
-- Names of team members
+  
+
+* Kamil Gorski - CEO ([https://www.linkedin.com/in/gorskikamil/](https://www.linkedin.com/in/gorskikamil/))
+* Jakub Rojek - CTO ([https://www.linkedin.com/in/jakub-rojek-dev/](https://www.linkedin.com/in/jakub-rojek-dev/))
+* Damian Rolek - CDO ([https://www.linkedin.com/in/damianrolek/](https://www.linkedin.com/in/damianrolek/))
+* Matt Saczewski - Business Development Manager ([https://www.linkedin.com/in/msaczewski/](https://www.linkedin.com/in/msaczewski/))
+* Jacob Piorecki - UI/UX Designer ([https://www.linkedin.com/in/jacobpiorecki/](https://www.linkedin.com/in/jacobpiorecki/))
+* Piotr Józefowicz - Backend Developer ([https://www.linkedin.com/in/piotr-jozefowicz-529669220/](https://www.linkedin.com/in/piotr-jozefowicz-529669220/))
+* Adam Król - Backend Developer ([https://www.linkedin.com/in/adam-król-7b3a831b6/](https://www.linkedin.com/in/adam-kr%C3%B3l-7b3a831b6/))
+* Krystian Trepczyński - Frontend Developer ([https://www.linkedin.com/in/krystiantrepczynski/](https://www.linkedin.com/in/krystiantrepczynski/))
+
 
 ### Contact
+*  **Contact Name:** Matt Saczewski
+*  **Contact Email:** [matt@tokenguard.io](mailto:matt@tokenguard.io)
+*  **Website:** [tokenguard.io](http://tokenguard.io/)
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+  
 
 ### Legal Structure
+*  **Registered Address:** Foksal 3/5 St., 00-366 Warsaw, Poland
+*  **Registered Legal Entity:** Block Solutions Sp z o.o.
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
-
-### Team's experience
-
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+### Team’s experience
+Tokenguard’s clients include Swiss Sygnum Bank, [Bitcoin.com](http://bitcoin.com/), Astar, Aleph Zero and many others recognizable brands. Each of cofounders has tremendous web3 experience - Damian was co-creating DeFi analytics platform Kasuria. Jacob was working at OpenLoyalty, helping web3 projects engage their users and Kamil created web3 security solutions, designing a security monitoring that served 30+ tokens.
 
 ### Team Code Repos
+* [https://github.com/tokenguardio](https://github.com/tokenguardio)
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+  
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+## Development Status 📖
+Tokenguard is currently developing the following features:
+* Publicly accessible core analytics for Substrate communities, available at [https://app.tokenguard.io](https://app.tokenguard.io/)
+* Ecosystem Analytics for [Astar](https://astar.network/) - paying customers
+* Ecosystem Analytics for [Aleph Zero](https://alephzero.org/) - paying customers
+* Ink! dApp analytics for [AZero ID](https://azero.id/), [ArthSwap](https://app.arthswap.org/), [Panjea](https://panjea.io/), [Interlock](https://www.interlock.network/) and others
+* Partnership with [SubSquid](https://www.subsquid.io/)
 
 
-## Development Status :open_book:
+## Development Roadmap 🔩
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+Having a lot of experience in building web3 products, our team is aware that there are many challenges behind building a fully functional analytics platform similar to Dune for an ecosystem as vast and diverse as Polkadot & Kusama. We acknowledge the fact that a lot of questions need to be answered and W3F requirements need to be specified to fully estimate the cost of creating such a solution that will be **easily upgradable and basically - fun for users**. We therefore propose to split the work on the project into 2 grants / proposals:
+* PoC and maintenance cost estimation
+* Fully functional platform
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+This proposal is the first part that is solely focused on preparation of the PoC, defining the requirements of the final solution and estimating its production and maintenance costs. As an effect, we will be able to prepare a well thought out second proposal that will include all the expected features and cover all costs to deliver a user-engaging product.
 
-## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
 
 ### Overview
+*  **Total Estimated Duration:** 2 months
+*  **Full-Time Equivalent (FTE):** 1.5 FTE
+*  **Total Costs:** 30,000 USD
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+  
+### Milestone 1: Data and design for PoC
+*  **Estimated duration:** 1 month
+*  **FTE:** 1.5
+*  **Costs:** 15,000 USD
 
-### Milestone 1 Example — Basic functionality
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
 | Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| ---| ---| --- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide inline documentation. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 1.| Data and metrics | Indexing and storage of Polkadot and Kusama data:<br>1. Preparing SubSquid data processors,<br>2. Creating a preliminary design standard of common data model for relay chains and most common pallets,<br>testing tracking and collection of XCM data,<br>3. Creating metrics catalogue and measuring the cost of running it. |
+| 2. | Core features UI | Creating UX / UI designs for core features:<br>1. A reusable frontend design for metrics creation in no-code paradigm,<br>2. A reusable frontend design for query composition using SQL,<br>3. A reusable frontend design for no-code dashboard composition.<br> |
+| 3. | ETL infrastructure | Designing an ETL infrastructure that will allow to:<br>1. Process the relay chain data with low delay for public user access,<br>2. Automatically scale data warehouses responsible for storing user-designed queries and dashboards,<br>3. Semi-automatically modify data models required by relay / parachains updates.<br>Delivered as deployment files for scalable infrastructure in Kubernetes. |
+
+
+### Milestone 2: PoC and maintenance
+*  **Estimated Duration:** 1 month
+*  **FTE:** 1.5
+*  **Costs:** 15,000 USD
+
+| Number | Deliverable | Specification |
+| ---| ---| --- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide inline documentation. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| **0e.** | Article | We will publish a report on the PoC design that will thoroughly showcase all the work done and present a cost estimation of designing and maintaining a tool that has a Dune-like usability (or higher). |
+| 1. | SQL querying and queuing engine PoC | Connecting data model and UI designs with an SQL querying engine allowing to visualize results of the queries in real-time:<br>1. SQL querying engine,<br>2. Queries queuing engine,<br>3. Clickable and fully usable PoC version of the SQL data delivery tool with selected metrics and RAW data available for Polkadot and Kusama.<br> |
+| 2. | Additional features UI | Scaling capabilities discovery and measurement:<br>1. Complex query creation allowing to simultaneously collect data from different relay chains,<br>2. Visualization creator with different visualization types using external BI tools dependency,<br>3. Complex dashboard composer,<br>4. Dashboard sharing feature.<br> |
+| 3. | Report & estimation | Detailed report on the PoC design and cost estimation of all the features mentioned in "Project details" as well as additional features requested by Web3 Foundation.<br><br>Detailed estimation of the maintenance cost of ETL process and backend operations of fully operational solution available for:<br>1. Relay chains<br>2. Parachains<br>3. dApps / tokens<br>With assumption of free access for community users with maximum processing time specified by Web3 Foundation. |
 
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-...
-
+  
+  
+  
 
 ## Future Plans
+### Analytics for Polkadot & Kusama ecosystems
+The module implemented under this proposal lays the foundation for covering the entire Polkadot & Kusama ecosystem with accessible and user-friendly tool for on-chain insights and analysis. PoC of query builder, visualization creator, dashboard composer for Polkadot and Kusama Relay Chains enables further scaling of the analytical tool to the entire ecosystem.
 
-Please include here
+The next steps will consist of a proposal to create a common dataset of metrics for each category of pallets/parachains; creating a more complex query builder, automated/semi-automated process of new parachain inclusion; automated/semi-automated process of user-requested tables aggregation; indexing and maintaining a database for the entire ecosystem (in cooperation with the Parity team).
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+### Making web3 grow
+At the same time, continuing the current activities, Tokenguard will offer its services to provide private dashboards with advanced features to subsequent parachains in order to improve their marketing and operational activities.
 
-## Referral Program (optional) :moneybag: 
+With backing up of well-known web3 investors, Tokenguard is on its path to help web3 ecosystems and dApps understand their user behavior and focus on marketing & product strategies that deliver organic growth.
 
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-
-## Additional Information :heavy_plus_sign:
-
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
