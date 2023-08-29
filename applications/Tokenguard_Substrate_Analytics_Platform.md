@@ -100,22 +100,24 @@ Over the course of six months, Tokenguard application was meticulously developed
 
 #### **Features and designs:**
 
-Dashboards overview - The overview of currently indexed and supported parachains:
-<img src="https://imagizer.imageshack.com/img924/1246/BK6CYe.png" width="800" border="0">
-
+Dashboards overview - The overview of currently indexed and supported parachains:<br>
+<img src="https://imagizer.imageshack.com/img924/1246/BK6CYe.png" width="800" border="0"><br><br>
 
 Ecosystem metrics dashboards - The on-chain data is visually presented through charts that are categorized into the most significant and essential aspects:<br>
-<img src="https://imagizer.imageshack.com/img924/8639/9qncPN.png" width="800" border="0"><br>
+<img src="https://imagizer.imageshack.com/img924/8639/9qncPN.png" width="800" border="0"><br><br>
+
 
 
 Filtering - The ability to sort data based on the most useful indicators:<br>
-<img src="https://imagizer.imageshack.com/img923/2272/10xb78.png" width="800" border="0"><br>
+<img src="https://imagizer.imageshack.com/img923/2272/10xb78.png" width="800" border="0"><br><br>
+
 
 Custom dashboard creator - The drag and drop feature allows users to create personalized dashboards tailored to their specific needs.<br>
-<img src="https://imagizer.imageshack.com/img922/9135/yU5s5a.png" width="800" border="0"><br>
+<img src="https://imagizer.imageshack.com/img922/9135/yU5s5a.png" width="800" border="0"><br><br>
+
 
 User activity analytics - A module that allows for an in-depth analysis of user behavior based on metrics such as DAU, MAU, retention or user segments.<br>
-<img src="https://imagizer.imageshack.com/img924/8259/bLTEVH.png" width="800" border="0"><br>
+<img src="https://imagizer.imageshack.com/img924/8259/bLTEVH.png" width="800" border="0"><br><br>
 
 
 **Technology Stack:**
