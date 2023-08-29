@@ -7,7 +7,7 @@
 ## Project Overview :page_facing_up:
 Blockops Network is a web3 infrastructure startup with a mission to democratize blockchain node infrastructure making it extremely easy for anyone to build decentralized applications in the Polkadot Ecosystem.
 
-Our application seeks to fund the running costs of developing a parachain one-click deployment mechanism that simplifies the process of building on Polkadot and setting up parachains
+Our proposal includes the introduction of a one-click setup feature for bootstrapping parachains and a build-as-a-service platform for Substrate developers, significantly enhancing the efficiency and reliability of the development process within the Polkadot ecosystem.
 
 ### Overview
 
@@ -17,18 +17,19 @@ A major hurdle that developers and projects encounter is the complexity involved
 
 Also, substrate developers often lack efficient and responsive build-as-a-service platforms to help them run faster build and test their smart contract codes effectively. Existing platforms often don't provide access to live networks or dedicated machines specifically optimized for blockchain development and testing. This often results in slower iteration times and less reliable smart contract code, creating a gap between development and deployment phases.
 
+Furthermore, Parachains prefers deploying their infrastructure to Dedicated Servers instead of Public Cloud. However, the complexity and cost associated with this endeavor often pose significant challenges to them.
+
+In the existing ecosystem of the Polkadot network, there is a lack of comprehensive, hassle-free, observability solution designed to track the performance of nodes in the Polkadot and Kusama networks.
+
 At Blockops Network, we've spotted these gaps and we’re set to empower developers & parachains easily setup and manage their nodes operations on Polkadot.
 
-In our journey so far, we have:
+This application involve:
 
-- Launched API Service Beta for Polkadot chains (Polkadot, Kusama and Westend)
-- Launched Dedicated Node Service Private Beta
-- Launched Data service for Polkadot Chains
-- Consistently worked towards reducing costs quarter-to-quarter
-- Launched MVP for one-click deployment feature for Parachains, Node Operators and Networks looking to setup robust Infrastructure on Polkadot.
+- The development of Parachain One-Click deployment for networks building on Polkadot chains to easily bootstrap their entire network and deploy their Parachain Networks on our on-demand Spot VPS.
 
-Our proposal includes the introduction of a one-click setup feature for bootstrapping parachains and a build-as-a-service platform for Substrate developers, significantly enhancing the efficiency and reliability of the development process within the Polkadot ecosystem.
+- On-demand Build-as-a-Service Substrate/Polkadot CI process for developers to run quick build, test, and runtime simulations against live blocks with our Beefy onDemand VPS.
 
+- Ongoing cost of maintaining Public RPC Nodes
 
 ### Project Details
 
@@ -38,18 +39,25 @@ Our proposal includes the introduction of a one-click setup feature for bootstra
 - Link to Blockops UI screenshots [here](https://docs.google.com/document/d/18jH50srFp_p86jeyaAuiO6Rbk2MwBjuiuAXXQHXmrk8/edit#heading=h.o1pb3iw6daw7)
 - Link to MVP already built for Parachain Deployment [here](https://beta-app.blockops.network/login)
 
+We have developed a one-click deployment feature for Parachains, Node Operators and Networks looking to setup robust Infrastructure on Polkadot.
 
-Blockops will provide a one-click setup feature for bootstrapping parachains and a build-as-a-service platform for Substrate developers, with in-depth and flexible configurations in few clicks. This ensures that developers and enterprises can build faster and manage parachains easily.
+This platform provides substrate developers with an effortless solution to easily bootstrap their entire network and deploy their Parachain Networks on a public cloud or Dedicated Servers situated within the geographic regions where the Infrastructure Builders' Programme (IBP) Provider services are available. This ensures that developers and enterprises can build faster and manage parachains easily.
 
-This project in turn will allow the developers and parachain teams to try multiple chain configurations while setting up the parachains, as well as to choose different nodes to try and test for the best possibilities on the parachain.
+The user interface and infrastructure set up for this project are largely complete and ready. To get a glimpse of the minimum viable product (MVP), you can the [website](https://beta-app.blockops.network/login).
 
-This proposal involve:
+**The System Overview**
 
-- The development of Parachain One-Click deployment for networks building on Polkadot chains to easily bootstrap their entire network and deploy their Parachain Networks on our on-demand Spot VPS.
+This project consists of two main system:
+- blockops-coreapi-service
+- blockops-frontend-end
 
-- On-demand Build-as-a-Service Substrate/Polkadot CI process for developers to run quick build, test, and runtime simulations against live blocks with our Beefy onDemand VPS.
+The blockops-coreapi-service built with nodejs and typescript is the backend service which integrates with the infrastructure allowing developers and parachain teams to try multiple chain configurations while setting up the parachains, as well as to choose different nodes to try and test for the best possibilities on the parachain.
 
-- Ongoing cost of maintaining Public RPC Nodes
+The blockops-frontend-end connects to the blockops-coreapi-service and is built using typescript and next.js, creating a modern web dashboard. it provides a unique set of features allowing users to deploy nodes easily and it also provides users with a comprehensive overview of all essential metrics related to their nodes thereby ensuring real-time visibility into the performance nodes.
+
+**System workflow**
+
+This project enables parachains to selectively deploy their infrastructure onto Dedicated Servers situated within the geographic regions where the Infrastructure Builders' Programme (IBP) Provider services are available.
 
 **Mockups and UI components**
 
@@ -59,19 +67,24 @@ The following are the mockups for high-level application operations, these are s
 - Deploy a Parachain
 - User activity and operation history
 
+![](https://ibb.co/9pKwqFs)
+
 **An overview of the technology stack to be used**
 
 - Nodejs
 - Reactjs
+- Typescript
 - Golang
 - Docker
-- kubernetes
+- Kubernetes
+- Pulumi
 - Prometheus & Grafana
 
 
 ### Ecosystem Fit
 
 - **Where and how does your project fit into the ecosystem?:** With the complexity involved in setting up, managing and maintaining parachain networks, this project with enable faster and easier parachain deployment making the technology more accessible and promoting rapid development and also provides dedicated optimized machines for substrate development.
+
 
 - **Who is your target audience?:** Our target audience are dApps developers looking to bootstrap their parachains network and get started quickly and substrate developers substrate developers looking to build and iterate faster as well as test their smart contracts codes against live networks with Beefy built for purpose dedicated machines.
 
@@ -135,7 +148,13 @@ Through our experience with Polkadot, we have developed robust strategies to max
 
 
 ## Development Status :open_book:
-The user interface and infrastructure set up for this project are largely complete and ready. To get a glimpse of the minimum viable product (MVP), you can the [website](https://beta-app.blockops.network/login).
+
+Before applying for the Web3 Foundation Grant, the Blockops team has built a DevOps automation for Polkadot and other substrate chains. In our journey so far, we have:
+
+- Launched API Service Beta for Polkadot chains (Polkadot, Kusama and Westend).
+- Launched Dedicated Node Service Private Beta.
+- Launched Data service for Polkadot Chains.
+- Launched MVP for one-click deployment feature for Parachains, Node Operators and Networks looking to setup robust Infrastructure on Polkadot.
 
 ## Development Roadmap :nut_and_bolt:
 
