@@ -59,8 +59,27 @@ The blockops-frontend-end connects to the blockops-coreapi-service and is built 
 
 The following are the mockups for high-level application operations, these are subject to change during product iterations. UI is purposely designed to be as simple as possible.
 
-- Dashboard
-- Deploy a Parachain
+- Deploy A Parachain
+<a href="https://ibb.co/ryQ57qF"><img src="https://i.ibb.co/BsfTzvc/Parachain-flow01.jpg" alt="Parachain-flow01" border="0"></a>
+
+- Select A Network
+<a href="https://ibb.co/d4VmpR4"><img src="https://i.ibb.co/MktB1mk/Parachain-flow02.jpg" alt="Parachain-flow02" border="0"></a>
+- Create New Project
+<a href="https://ibb.co/CmQwccg"><img src="https://i.ibb.co/Fmzhrr2/Parachain-flow03.jpg" alt="Parachain-flow03" border="0"></a>
+- Select Cloud Provider
+<a href="https://ibb.co/hXBf1Bd"><img src="https://i.ibb.co/1sr6JrX/Parachain-flow04.jpg" alt="Parachain-flow04" border="0"></a>
+
+- Launch Configuration
+<a href="https://ibb.co/3vFVSDX"><img src="https://i.ibb.co/ScmHVhT/Parachain-flow05.jpg" alt="Parachain-flow05" border="0"></a>
+
+- Summary
+<a href="https://ibb.co/3hvZQqF"><img src="https://i.ibb.co/Th13dS0/Parachain-flow06.jpg" alt="Parachain-flow06" border="0"></a>
+
+  <a href="https://ibb.co/64QjQ5m"><img src="https://i.ibb.co/Vv6f68t/Parachain-flow07.jpg" alt="Parachain-flow07" border="0"></a>
+
+- Active Networks
+<a href="https://ibb.co/Y8NgnpH"><img src="https://i.ibb.co/P4rkXwq/Parachain-flow08.jpg" alt="Parachain-flow08" border="0"></a>
+
 - UI Mockups of Blockops Monitoring Implementation
 
   <a href="https://ibb.co/9pKwqFs"><img src="https://i.ibb.co/NFD1L8Z/Monitoring-1.jpg" alt="Monitoring-1" border="0"></a>
