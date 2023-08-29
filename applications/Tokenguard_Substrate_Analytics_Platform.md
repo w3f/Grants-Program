@@ -228,6 +228,14 @@ Tokenguard's public features and data are already being used by community users 
 ### Team’s experience
 Tokenguard’s clients include Swiss Sygnum Bank, [Bitcoin.com](http://bitcoin.com/), Astar, Aleph Zero and many others recognizable brands. Each of cofounders has tremendous web3 experience - Damian was co-creating DeFi analytics platform Kasuria. Jacob was working at OpenLoyalty, helping web3 projects engage their users and Kamil created web3 security solutions, designing a security monitoring that served 30+ tokens.
 
+### Current Traction & Testimonials ###
+Our current business model focuses on offering growth analytics solutions for parachains & dApps and allowed us to validate both product and services through collaborations with notable parachains such as Astar and Aleph Zero. We believe that **delivering free of charge community analytics will further enhance discovery of growth insights within the whole ecosystem**, allowing it to win the race for leading position in the web3 space.
+
+Teams we cooperate with appreciate the flexibility and professionalism of our team:<br><br>
+<img src="https://imagizer.imageshack.com/img923/978/GjfFD0.jpg" height="80" align="left" border="0">*Tokenguard is the missing part for Astar ecosystem. Its analytics and tracking capabilities provide us with the crucial insights needed to understand on-chain activity and user behavior, allowing us to make data-driven decisions and optimize our strategies like never before.* <br>**Maarten Henskens, Head of Foundation, Astar Network**<br><br>
+
+<img src="https://imagizer.imageshack.com/img924/640/oervBt.png" height="80" align="left" border="0">*We are happy to use Tokenguard, which offers Aleph Zero comprehensive on-chain user metrics and engagement data. Thanks to their analytics tool, we can make data-driven decisions and provide transparency to our community with easy-to-use dashboards.* <br>**Antoni Zolciak, CMO, Aleph Zero**<br><br>
+
 ### Team Code Repos
 * [https://github.com/tokenguardio](https://github.com/tokenguardio)
 
@@ -239,15 +247,6 @@ Tokenguard is currently developing the following features:
 * Ecosystem Analytics for [Aleph Zero](https://alephzero.org/) - paying customers
 * Ink! dApp analytics for [AZero ID](https://azero.id/), [ArthSwap](https://app.arthswap.org/), [Panjea](https://panjea.io/), [Interlock](https://www.interlock.network/) and others
 * Partnership with [SubSquid](https://www.subsquid.io/)
-
-### Current Traction & Testimonials ###
-Our current business model focuses on offering growth analytics solutions for parachains & dApps and allowed us to validate both product and services through collaborations with notable parachains such as Astar and Aleph Zero. We believe that **delivering free of charge community analytics will further enhance discovery of growth insights within the whole ecosystem**, allowing it to win the race for leading position in the web3 space.
-
-Teams we cooperate with appreciate the flexibility and professionalism of our team:<br><br>
-<img src="https://imagizer.imageshack.com/img923/978/GjfFD0.jpg" height="80" align="left" border="0">*Tokenguard is the missing part for Astar ecosystem. Its analytics and tracking capabilities provide us with the crucial insights needed to understand on-chain activity and user behavior, allowing us to make data-driven decisions and optimize our strategies like never before.* <br>**Maarten Henskens, Head of Foundation, Astar Network**<br><br>
-
-<img src="https://imagizer.imageshack.com/img924/640/oervBt.png" height="80" align="left" border="0">*We are happy to use Tokenguard, which offers Aleph Zero comprehensive on-chain user metrics and engagement data. Thanks to their analytics tool, we can make data-driven decisions and provide transparency to our community with easy-to-use dashboards.* <br>**Antoni Zolciak, CMO, Aleph Zero**<br><br>
-
 
 ## Development Roadmap 🔩
 
