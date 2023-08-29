@@ -55,20 +55,13 @@ The blockops-coreapi-service built with nodejs and typescript is the backend ser
 
 The blockops-frontend-end connects to the blockops-coreapi-service and is built using typescript and next.js, creating a modern web dashboard. it provides a unique set of features allowing users to deploy nodes easily and it also provides users with a comprehensive overview of all essential metrics related to their nodes thereby ensuring real-time visibility into the performance nodes.
 
-**System workflow**
-
-...
-
-This project enables parachains to selectively deploy their infrastructure onto Dedicated Servers situated within the geographic regions where the Infrastructure Builders' Programme (IBP) Provider services are available.
-
 **Mockups and UI components**
 
 The following are the mockups for high-level application operations, these are subject to change during product iterations. UI is purposely designed to be as simple as possible.
 
 - Dashboard
 - Deploy a Parachain
-- User activity and operation history
-- UI Mockups of Blockops Monitoring implementation
+- UI Mockups of Blockops Monitoring Implementation
 
   <a href="https://ibb.co/9pKwqFs"><img src="https://i.ibb.co/NFD1L8Z/Monitoring-1.jpg" alt="Monitoring-1" border="0"></a>
 
