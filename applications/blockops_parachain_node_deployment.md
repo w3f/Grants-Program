@@ -57,23 +57,29 @@ The blockops-frontend-end connects to the blockops-coreapi-service and is built 
 
 **System workflow**
 
+...
+
 This project enables parachains to selectively deploy their infrastructure onto Dedicated Servers situated within the geographic regions where the Infrastructure Builders' Programme (IBP) Provider services are available.
 
 **Mockups and UI components**
 
-The following are the mockups for high-level application operations, these are subject to change during product iterations.
+The following are the mockups for high-level application operations, these are subject to change during product iterations. UI is purposely designed to be as simple as possible.
 
 - Dashboard
 - Deploy a Parachain
 - User activity and operation history
+- UI Mockups of Blockops Monitoring implementation
 
-![](https://ibb.co/9pKwqFs)
+  <a href="https://ibb.co/9pKwqFs"><img src="https://i.ibb.co/NFD1L8Z/Monitoring-1.jpg" alt="Monitoring-1" border="0"></a>
+
+  <a href="https://ibb.co/CPW1n1b"><img src="https://i.ibb.co/GHFxVxW/Monitoring-2.jpg" alt="Monitoring-2" border="0"></a>
+
+  <a href="https://ibb.co/HKZfyN7"><img src="https://i.ibb.co/XWHrPyX/Monitoring-3.jpg" alt="Monitoring-3" border="0"></a>
 
 **An overview of the technology stack to be used**
 
-- Nodejs
-- Reactjs
-- Typescript
+- Nodejs and Reactjs (backend and frontend framework)
+- TypeSript (frontend and backend scripts)
 - Golang
 - Docker
 - Kubernetes
