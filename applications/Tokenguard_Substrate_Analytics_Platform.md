@@ -106,7 +106,7 @@ Dashboards overview - The overview of currently indexed and supported parachains
 
   
 
-[![](https://t31001708.p.clickup-attachments.com/t31001708/1000c5d6-2c7c-4516-8b26-9f7c2760c8c5/image.png)](https://imgur.com/wpAd2uR)
+[![](https://imagizer.imageshack.com/img924/1246/BK6CYe.png)](https://imagizer.imageshack.com/img924/1246/BK6CYe.png)
 
   
 
@@ -116,17 +116,14 @@ Ecosystem metrics dashboards - The on-chain data is visually presented through c
 
   
 
-![](https://t31001708.p.clickup-attachments.com/t31001708/1b0f82d2-c472-426e-b0f5-ee3318bbd21a/image.png)
+![](https://imagizer.imageshack.com/img924/8639/9qncPN.png)
 
-  
-
-  
 
 Filtering - The ability to sort data based on the most useful indicators:
 
   
 
-[![](https://t31001708.p.clickup-attachments.com/t31001708/019fa1ad-9f85-4493-9c07-68472f8d36bb/image.png)](https://imgur.com/t7uO091)
+[![](https://imagizer.imageshack.com/img923/2272/10xb78.png)]([https://imgur.com/t7uO091](https://imagizer.imageshack.com/img923/2272/10xb78.png))
 
   
 
@@ -136,11 +133,11 @@ Custom dashboard creator - The drag and drop feature allows users to create pers
 
   
 
-[![](https://t31001708.p.clickup-attachments.com/t31001708/60027168-960b-4d7b-95a3-144128530041/image.png)](https://imgur.com/SN2nZEH)
+[![](https://imagizer.imageshack.com/img922/9135/yU5s5a.png)](https://imagizer.imageshack.com/img922/9135/yU5s5a.png)
 
 User activity analytics - A module that allows for an in-depth analysis of user behavior based on metrics such as DAU, MAU, retention or user segments.
 
-![](https://t31001708.p.clickup-attachments.com/t31001708/4d8dbe7a-a39e-48c4-988f-5a59f3b2ee3c/image.png)
+![](https://imagizer.imageshack.com/img924/8259/bLTEVH.png)
 
 **Technology Stack:**
 
