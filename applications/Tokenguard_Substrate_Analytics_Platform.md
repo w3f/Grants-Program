@@ -22,7 +22,7 @@ This application is a response to the RFP by Keegan Quigley: [https://grants.web
 
   
 
-The existing challenge in the Polkadot & Kusama ecosystems is **the absence of a user-friendly on-chain analytics platform**. Currently, querying data through GraphQL and backend services like Subquery and Subsquid requires considerable effort. Creating compelling and visually attractive dashboards is almost impossible due to lack of tools that focus on end user experinece. As a result, power-users and builders face difficulties in interactively accessing high-quality data and creating custom visualizations for easy sharing.
+**Absence of a user-friendly on-chain analytics platform** is an existing challenge of the Polkadot & Kusama ecosystems. Currently, querying data through GraphQL and backend services like Subquery and Subsquid requires considerable effort. Creating compelling and visually attractive dashboards is almost impossible due to lack of tools that focus on end user experinece. As a result, power-users and builders face difficulties in interactively accessing high-quality data and creating custom visualizations for easy sharing.
 
   
 
