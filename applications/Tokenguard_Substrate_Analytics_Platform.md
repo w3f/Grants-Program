@@ -223,7 +223,7 @@ Tokenguard's public features and data are already being used by community users 
   
 
 ### Legal Structure
-*  **Registered Address:** Foksal 3/5 St., 00-366 Warsaw, Poland
+*  **Registered Address:** Foksal 3/5 St., 00-366 Warsaw, Poland, EU VAT ID PL7252284130
 *  **Registered Legal Entity:** Block Solutions Sp z o.o.
 
 ### Team’s experience
