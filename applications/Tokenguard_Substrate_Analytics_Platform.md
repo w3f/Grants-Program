@@ -232,7 +232,7 @@ Tokenguard’s clients include Swiss Sygnum Bank, [Bitcoin.com](http://bitcoin.c
 ### Current Traction & Business Model ###
 Our current business model focuses on offering growth analytics solutions for parachains & dApps and allowed us to validate both product and services through collaborations with notable parachains such as Astar and Aleph Zero. We believe that **delivering free of charge community analytics will further enhance discovery of growth insights within the whole ecosystem**, allowing it to win the race for leading position in the web3 space.
 
-Teams we cooperate with appreciate the flexibility and professionalism of our team:<br><br>
+Teams we cooperate with appreciate our flexibility and user-oriented approach:<br><br>
 <img src="https://imagizer.imageshack.com/img923/978/GjfFD0.jpg" height="80" align="left" border="0">*Tokenguard is the missing part for Astar ecosystem. Its analytics and tracking capabilities provide us with the crucial insights needed to understand on-chain activity and user behavior, allowing us to make data-driven decisions and optimize our strategies like never before.* <br>**Maarten Henskens, Head of Foundation, Astar Network**<br><br>
 
 <img src="https://imagizer.imageshack.com/img924/640/oervBt.png" height="80" align="left" border="0">*We are happy to use Tokenguard, which offers Aleph Zero comprehensive on-chain user metrics and engagement data. Thanks to their analytics tool, we can make data-driven decisions and provide transparency to our community with easy-to-use dashboards.* <br>**Antoni Zolciak, CMO, Aleph Zero**<br><br>
