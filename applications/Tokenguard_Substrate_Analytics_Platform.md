@@ -175,22 +175,23 @@ Tokenguard addresses the need of following audiences:
 	* Access to data and on-chain insights is the basis for a community driven blockchain.
 	* The ability to track and verify activity and growth in the parachains reinforces trust.
 * Investment:
-	* A tool that gives access to the performance of individual dApps and DeFi allows for a better assessment of the market situation in terms of investment.
+	* A tool that gives access to the **performance of individual dApps and DeFi allows for a better investment decisions.**
+	* A tool that gives access to the performance of individual dApps and DeFi** allows for a better assessment of the market situation in terms of investment.
 	* Insights into data on developer activity and TVL allows to attract additional community members who want to invest in the ecosystem.
 * Engagement:
 	* A well-informed community is more likely to be involved in the building programs on a given chain and in ongoing activities.
-	* Access to insights allows the community to actively promote chain in social media, at events and in ordinary media.
+	* **Access to insights allows the community to actively promote chain in social media**, at events and in ordinary media.
 
 **Relay chains, parachains and dApps teams:**
 
 
 * Marketing Improvements:
 	* Off-chain to on-chain data correlation provides a deeper understanding of the marketing and PR efforts that contribute to the network’s growth
-	* Developer engagement tracking allows to identify strategies that in fact encourage web3 creators to build within the ecosystem.
-	* User segmentation and user behavior tracking allows to understand which protocols and dApps generate the most traffic for the network and what type of user affects its growth.
+	* **Developer engagement tracking allows to identify strategies that in fact encourage web3 creators** to build within the ecosystem.
+	* User segmentation and user behavior tracking allows to understand **which protocols and dApps generate the most traffic for the network** and what type of user affects its growth.
 * More efficient Treasury Spending:
-	* Tracking the KPIs and inflow of new users through dApps and on-chain projects financed through relay chains and parachains treasury grants.
-	* Source of reliable data to support discussion and decisions during treasury votings.
+	* Tracking the KPIs and **inflow of new users through dApps and on-chain projects financed through relay chains and parachains treasury grants.**
+	* Source of **reliable data to support discussion and decisions during treasury votings**.
 * Strengthening Operations & Security:
 	* Real-time monitoring and alerts enable the team to respond more effectively in the face of potential threats such as rug pulls.
 	* Thanks to access to on-chain insights, such as a TVL in DeFi or a Smart Contract creation per developer, Tokenguard helps understand how to better optimize the operations of parachains for individual entities.
