@@ -2,10 +2,10 @@
 
 - **Team Name:** Blockops Network
 - **Payment Address:**
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2,
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3,
 
 ## Project Overview :page_facing_up:
-Blockops Network is a web3 infrastructure startup with a mission to democratize blockchain node infrastructure making it extremely easy for anyone to build decentralized applications in the Polkadot Ecosystem.
+Blockops Network is on a mission to enhance the web3 expereince for developers and startups by making it extremely easy and cost-effectve for anyone to setup, maintain and monitor their blockchain node infrastructure.
 
 Our proposal includes the introduction of a one-click setup feature for bootstrapping parachains and a build-as-a-service platform for Substrate developers, significantly enhancing the efficiency and reliability of the development process within the Polkadot ecosystem.
 
@@ -15,13 +15,13 @@ Our proposal includes the introduction of a one-click setup feature for bootstra
 
 A major hurdle that developers and projects encounter is the complexity involved in setting up, managing and maintaining parachain networks outside of just creating Single Node Deployments. The conventional process for bootstrapping parachains is time-consuming and requires a high level of technical expertise. Components like observability, scalability and reliability of their networks are still areas that cause a lot of Parachains pains.
 
-Also, substrate developers often lack efficient and responsive build-as-a-service platforms to help them run faster build and test their smart contract codes effectively. Existing platforms often don't provide access to live networks or dedicated machines specifically optimized for blockchain development and testing. This often results in slower iteration times and less reliable smart contract code, creating a gap between development and deployment phases.
+Also, substrate developers often lack efficient and responsive build-as-a-service or CI platforms to help them run faster build and test their smart contract codes effectively. Existing platforms often don't provide access to live networks or dedicated machines specifically optimized for blockchain development and testing. This often results in slower iteration times and less reliable smart contract code, creating a gap between development and deployment phases.
 
 Furthermore, Parachains prefers deploying their infrastructure to Dedicated Servers instead of Public Cloud. However, the complexity and cost associated with this endeavor often pose significant challenges to them.
 
 In the existing ecosystem of the Polkadot network, there is a lack of comprehensive, hassle-free, observability solution designed to track the performance of nodes in the Polkadot and Kusama networks.
 
-At Blockops Network, we've spotted these gaps and we’re set to empower developers & parachains easily setup and manage their nodes operations on Polkadot.
+At Blockops Network, we've spotted these gaps and we’re set to empower developers & startups easily setup and manage their nodes operations on Polkadot.
 
 This application involve:
 
@@ -30,6 +30,32 @@ This application involve:
 - On-demand Build-as-a-Service Substrate/Polkadot CI process for developers to run quick build, test, and runtime simulations against live blocks with our Beefy onDemand VPS.
 
 - Ongoing cost of maintaining Public RPC Nodes
+
+## Challeneges Developers and Startups faces when building dApps
+- Complexity: Web3 Infrastructure is intrinsically complex. Developers and startups grapple with several complexities
+  - Infrastructure Management: Setting up multi-cloud, multi-region or bare metal environments Infrastructure and ensuring they are updated with new releases is no small feat.
+  - Optimization and Planning: From planning node pools, migrating between cloud vendors, to ensuring the chosen solution is secure, cost-effective, and performant, the task-list is endless.
+  - Network and Protocol Management: Generating new testnets, validating protocol technologies, and shipping new features require extensive resources.
+  - Slashing and Offline Penalties: Blockchain networks penalize nodes for misbehavior or being offline, putting stake assets at risk.
+  - Network Collapse: The potential for an entire blockchain network to fail presents a looming risk.
+  - It is more effective for parachains to deploy their nodes on Dedicated Servers in addition to helping decentralization, however there is no effective way for anyone to deploy their nodes to Dedicated Servers without having to deal with the complexity of setting up bare metal servers
+
+- Zero Observability Solutions: 
+  - There’s little to no observability solutions for monitoring the state of these nodes to enhance better performance.
+  - From setting up databases, caches, streams, orchestrations, alert systems, metrics, and tracking SLAs to managing and maintaining every possible client configuration, OS, and middleware, the workload is immense.
+
+- Engineering Overheads:
+  - The high cost of hiring talented engineers combined with the financial implications of high turnover rates puts additional strain on startups and development projects.
+  - Talent Crunch: There's a limited supply of engineers globally, especially those proficient in blockchain and web3 technologies.
+
+- Expensive: Managing all these resources if not properly done can be a financial wormhole for developers and startups
+
+
+## The Solution Blockops Provides
+
+
+
+
 
 ### Project Details
 
