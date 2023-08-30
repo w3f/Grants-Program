@@ -306,10 +306,10 @@ This proposal is the first part that is solely focused on preparation of the PoC
 ### Analytics for Polkadot & Kusama ecosystems
 The module implemented under this proposal lays the foundation for covering the entire Polkadot & Kusama ecosystem with accessible and user-friendly tool for on-chain insights and analysis. PoC of query builder, visualization creator, dashboard composer for Polkadot and Kusama Relay Chains enables further scaling of the analytical tool to the entire ecosystem.
 
-The next steps will consist of a proposal to create a common dataset of metrics for each category of pallets/parachains; creating a more complex query builder, automated/semi-automated process of new parachain inclusion; automated/semi-automated process of user-requested tables aggregation; indexing and maintaining a database for the entire ecosystem (in cooperation with the Parity team).
+The next steps will consist of a proposal to create a common dataset of metrics for each category of pallets/parachains; creating a more complex query builder, automated/semi-automated process of new parachain & dApp inclusion; automated/semi-automated process of user-requested tables aggregation; indexing and maintaining a database for the entire ecosystem (in cooperation with the Parity team).
 
 ### Making web3 grow
-At the same time, continuing the current activities, Tokenguard will offer its services to provide private dashboards with advanced features to subsequent parachains in order to improve their marketing and operational activities.
+At the same time, continuing the current activities, Tokenguard will offer its services to provide custom dashboards with advanced features to subsequent parachains in order to improve their marketing and operational activities.
 
-With backing up of well-known web3 investors, Tokenguard is on its path to help web3 ecosystems and dApps understand their user behavior and focus on marketing & product strategies that deliver organic growth.
+With backing up of well-known web3 investors, Tokenguard is on its path to help web3 ecosystems and dApps understand their user behavior and focus on product & marketing strategies that deliver organic growth.
 
