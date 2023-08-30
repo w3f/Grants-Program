@@ -72,11 +72,12 @@ To meet the expectations of Polkadot and Kusama community and the suggestions co
 4. Dashboards
 	- Making it possible for people to create & share dashboards with their own metrics as well as Tokenguard curated metrics:
 		1. Allowing for choosing how to display a metric (more than 10 types of visualizations available)
-		2. Allowing for commenting dashboards
+		2. Allowing for adding captions and text in dashboards
 		3. Adding tags to dashboards
 	- Creating a search engine for dashboards
 5. Users
 	- Creating a user subpage with a list of users' dashboards & metrics
+ 	- Displaying user stats
 
   
 
