@@ -93,7 +93,7 @@ To meet the expectations of Polkadot and Kusama community and the suggestions co
 
   
 
-Over the course of six months, Tokenguard application was meticulously developed with the objective of creating a user-friendly analytics tool for the Substrate Ecosystem, without requiring any coding or SQL skills. Within this timeframe, we successfully produced a beta version of the app, which now offers essential on-chain analytics for various projects within the Polkadot ecosystem, such as Astar & Aleph Zero - our lovely customers.
+Over the course of six months, Tokenguard application was meticulously developed with the objective of creating a user-friendly analytics tool for the Substrate Ecosystem, without requiring any coding or SQL skills. Within this timeframe, we successfully produced a beta version of the app, which now offers essential on-chain analytics for various projects within the Polkadot ecosystem, such as Astar, Aleph Zero, Nodle and many others.
 
   
 
