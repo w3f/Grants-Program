@@ -160,7 +160,7 @@ While:
 
 * [#1748](https://github.com/w3f/Grants-Program/pull/1748) - is a data analytics tool that focuses on wallet profiling and tracking its investments and structure.
 
-* [#1815](https://github.com/w3f/Grants-Program/pull/1815) - is a low-level SQL query editor and vizualization creator dedicated for data engineers and data scientists.
+* [#1815](https://github.com/w3f/Grants-Program/pull/1815) - is a low-level SQL query editor and vizualization creator dedicated for data engineers and developers.
 
 
 ### Ecosystem Fit
