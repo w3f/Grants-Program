@@ -14,7 +14,7 @@
 
   
 
-This application is in response to the RFP [https://grants.web3.foundation/docs/RFPs/Under Development/analysis-website-and-data-platform](https://grants.web3.foundation/docs/RFPs/Under%20Development/analysis-website-and-data-platform).
+This application is a response to the RFP by Keegan Quigley: [https://grants.web3.foundation/docs/RFPs/Under Development/analysis-website-and-data-platform](https://grants.web3.foundation/docs/RFPs/Under%20Development/analysis-website-and-data-platform).
 
   
 
