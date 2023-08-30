@@ -187,6 +187,7 @@ Through our experience with Polkadot, we have developed robust strategies to max
 
 - Frontend - https://github.com/blockops-sh/user-dashboard-client
 - Backend -  https://github.com/blockops-sh/api-core-service
+- Infrastructure - https://github.com/orgs/blockopsnetwork/repositories
 
 
 ### Team LinkedIn Profiles (if available)
