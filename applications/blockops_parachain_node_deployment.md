@@ -1,7 +1,7 @@
 # Parachain One-Click Deployment
 
 - **Team Name:** Blockops Network
-- **Payment Address:**
+- **Payment Address:** 15qz4ZLeyXp1i4Jbx7AXiUQVCCLWVXu3dLjcTPHY3v9KGAvL (DOT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3,
 
 ## Project Overview :page_facing_up:
@@ -28,8 +28,6 @@ This application involve:
 - The development of Parachain One-Click deployment for networks building on Polkadot chains to easily bootstrap their entire network and deploy their Parachain Networks on our on-demand Spot VPS.
 
 - On-demand Build-as-a-Service Substrate/Polkadot CI process for developers to run quick build, test, and runtime simulations against live blocks with our Beefy onDemand VPS.
-
-- Ongoing cost of maintaining Public RPC Nodes
 
 ## Challeneges Developers and Startups faces when building dApps
 - Complexity: Web3 Infrastructure is intrinsically complex. Developers and startups grapple with several complexities
