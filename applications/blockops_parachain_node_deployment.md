@@ -53,7 +53,15 @@ This application involve:
 
 ## The Solution Blockops Provides
 
+1. One Click Parachain Deployment
+   - Fully open sourced
+   - Support all chains on Polkadot
+   - Deploy to a Dedicated Servers (IBP inclusive) and Pay as You Use
+   - Connect to multiple nodes instantly powering your blockchain application. 
+   - Multiple instance of a node type running
+   - Faster testing against live networks
 
+2. Fast build-as-a-service for Substrate Developers: This platform would provide dedicated machines optimized for blockchain development, enabling developers to build and iterate their smart contract codes faster and test them against live networks. By enhancing the efficiency and reliability of the development process, this platform would help bridge the gap between development and deployment, facilitating a smoother transition from concept to execution.
 
 
 
