@@ -79,7 +79,14 @@ In a nutshell, XcmSend aims to simplify the process of xcm transaction curation 
 
 -   **Non-biased XCM Transfers**
 
-XCMSend treats all transactions to all chains with the same priority. We do not charge middleman fees and our priority is that the user defined Asset gets properly sent.
+Auto index of open XCM channels and lease slots - Allowing XCMSend to offer a broader section of destination and receiver chain options, unlike previous projects where source and destination chains are limited and cherry-picked by the responsible Team. With XcmSend we are letting the networks decide what the available transaction routes are. Promoting and utilizing the decentralized ecosystem of Dotsama.
+
+-   **A Gateway for everyone into XCM**  
+XCMSend is not only sending an asset cross-chain. It removes complexity from crafting XCM transfers and opens a world of possibilities for high-level/non-technical users, as well developers by being an important building stone for anyone that wants to utilize XCM in a hassle-free and high-level way.  
+
+-   **Empower XCM Adoption**  
+We want to open the doors to XCM for dapp developers, web2 projects and builders in a high-level way.
+
 
 -   **Increase XCM transaction volume**
 
@@ -108,13 +115,27 @@ In summary:
 -   Community owned and OpenSource with MIT License
 
 
-#### What is XcmSend?
+#### What is XCMSend?
 
 XcmSend is a public Xcm asset transfer app that is open source and serverless, which interfaces with blockchains, making it simple for users to send assets between chains.
 
 "Does what it says on the tin". Powered by the XCM protocol, our platform simplifies the process of cross-chain transfers.
 
 Anyone can create their own instance, and XCMSend.com will also host an official instance. 
+
+#### Who will use XCMSend?
+
+-  **(non-technical)Defi users and the average Joe** - Anyone can send one asset from one chain to another using XCMSend in a hassle-free way, allowing access to wide varierty of different assets on different chains.
+
+-  **Web2 businesses and developers** - that want to interact with the dotsama ecosystem throw XcmSend's simplified xcm json api.
+
+-  **Parachain teams** - With our ROC instance parachains that are connected to rococo/ROC will be able to test their xcm recieving implementations, verifying that tokens can be sent and receieved using an open channel.
+
+-  **Third party teams/developers** - XcmSend will be under the MIT license, allowing anyone to clone, customize, deploy and modify XcmSend based on their needs.   
+
+-   **Dapp Builders** - XCMSend empowers dapp developers to interact with a wide varierty of different assets on different connected chains. By providing an easy-to-use interface for XCM transfers, we are contributing to interoperability by allowing dApp developers to seamlessly exchange assets and data between different parachains networks. This can expand the reach and functionality of their dApps.
+
+
 
 ### **Project Details**
 
@@ -233,7 +254,7 @@ Costs: 15000 USD
 | 0d      | Docker  | We will publish a docker image that users can use to test XCMSend locally       |
 | 0e      | Article  | We will publish an article that walks the end user hand in hand on how to use XCMSend       |
 | 1      | XCMSend UI (MVP)  | Build the first version of the XCMSend UI which begins with sending crosschain assets transfers.        |
-| 2      | Polkadot.js browser wallet integration  | Supporting polkadot.js extension wallet       |
+| 2      | Browser wallet integration  | Allowing support for some of the most used wallets in the dotsama ecosystem: Subwallet, Talisman, Polkadot.js and metamask by integrating [Subconnect](https://github.com/Koniverse/SubConnect)       |
 | 3      | Rococo XCM Transfers | We will enable teleporting of assets across chains within the Rococo network. Such as ROC from Rococo to AssetHub.       |
 
 
