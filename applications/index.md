@@ -61,6 +61,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [MOBR Systems](https://www.mobr.ai)                    | [Polkadot Analytics Platform](polkadot_analytics_platform.md)                                                              | [GitHub](https://github.com/mobr-ai)                      | ☐          |       ☐        |     ☐     |
 | [Infra3](https://network.infra-3.xyz)                    | [Hyperdot - Powerful data analysis and creations platform](Hyperdot.md)                                                              | [GitHub](https://github.com/Infra3-Network/hyperdot)                      | ☐          |       ☐        |     ☐     |
 | [David Semakula](https://github.com/davidsemakula)                   | [ink! analyzer (phase 2)](ink-analyzer-phase-2.md)                                                              | [GitHub](https://github.com/ink-analyzer)                      | ☐          |       ☐        |     ☐     |
+| [Myriad Systems LTD.](https://myriad.social/)                   | [Myriad Social](myriad_social.md)                                                              | [GitHub](https://github.com/myriadsocial/myriad-node)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#2023)
 
