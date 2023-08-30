@@ -1,4 +1,4 @@
-# Tokenguard
+# Tokenguard: Ultimate growth & data analytics tool for Substrate
 
   
 
