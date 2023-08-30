@@ -187,10 +187,10 @@ Tokenguard addresses the need of following audiences:
 
 * Marketing Improvements:
 	* Off-chain to on-chain data correlation provides a deeper understanding of the marketing and PR efforts that contribute to the network’s growth
-	* **Developer engagement tracking allows to identify strategies that in fact encourage web3 creators** to build within the ecosystem.
-	* User segmentation and user behavior tracking allows to understand **which protocols and dApps generate the most traffic for the network** and what type of user affects its growth.
+	* **Developer engagement tracking allows to identify strategies that encourage web3 creators** to build within the ecosystem.
+	* User segmentation and user behavior tracking allows to understand **which protocols and dApps generate the most usage in the network** and what type of user affects its growth.
 * More efficient Treasury Spending:
-	* Tracking the KPIs and **inflow of new users through dApps and on-chain projects financed through relay chains and parachains treasury grants.**
+	* Tracking the **inflow of new users through dApps and on-chain projects financed through treasury grants** of relay and parachains allows measuring spending success.
 	* Source of **reliable data to support discussion and decisions during treasury votings**.
 * Strengthening Operations & Security:
 	* Real-time monitoring and alerts enable the team to respond more effectively in the face of potential threats such as rug pulls.
