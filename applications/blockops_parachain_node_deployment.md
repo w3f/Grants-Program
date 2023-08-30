@@ -1,7 +1,7 @@
 # Parachain One-Click Deployment
 
 - **Team Name:** Blockops Network
-- **Payment Address:**
+- **Payment Address:** 15qz4ZLeyXp1i4Jbx7AXiUQVCCLWVXu3dLjcTPHY3v9KGAvL (DOT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3,
 
 ## Project Overview :page_facing_up:
@@ -29,8 +29,6 @@ This application involve:
 
 - On-demand Build-as-a-Service Substrate/Polkadot CI process for developers to run quick build, test, and runtime simulations against live blocks with our Beefy onDemand VPS.
 
-- Ongoing cost of maintaining Public RPC Nodes
-
 ## Challeneges Developers and Startups faces when building dApps
 - Complexity: Web3 Infrastructure is intrinsically complex. Developers and startups grapple with several complexities
   - Infrastructure Management: Setting up multi-cloud, multi-region or bare metal environments Infrastructure and ensuring they are updated with new releases is no small feat.
@@ -53,7 +51,15 @@ This application involve:
 
 ## The Solution Blockops Provides
 
+1. One Click Parachain Deployment
+   - Fully open sourced
+   - Support all chains on Polkadot
+   - Deploy to a Dedicated Servers (IBP inclusive) and Pay as You Use
+   - Connect to multiple nodes instantly powering your blockchain application. 
+   - Multiple instance of a node type running
+   - Faster testing against live networks
 
+2. Fast build-as-a-service for Substrate Developers: This platform would provide dedicated machines optimized for blockchain development, enabling developers to build and iterate their smart contract codes faster and test them against live networks. By enhancing the efficiency and reliability of the development process, this platform would help bridge the gap between development and deployment, facilitating a smoother transition from concept to execution.
 
 
 
@@ -179,6 +185,7 @@ Through our experience with Polkadot, we have developed robust strategies to max
 
 - Frontend - https://github.com/blockops-sh/user-dashboard-client
 - Backend -  https://github.com/blockops-sh/api-core-service
+- Infrastructure - https://github.com/orgs/blockopsnetwork/repositories
 
 
 ### Team LinkedIn Profiles (if available)
