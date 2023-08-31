@@ -209,20 +209,20 @@ Before applying for the Web3 Foundation Grant, the Blockops team has built a Dev
 
 ## Development Roadmap :nut_and_bolt:
 
-For this proposal we focus on building and streamlining the process of setting up parachains through a one-click setup feature. This would dramatically reduce the time and technical expertise required to bootstrap a parachain network, making the technology more accessible to a broader range of users and accelerating the pace of development within the Polkadot ecosystem.
+For this proposal we focus on building and streamlining the process of setting up parachains through a one-click setup dashboard. This would dramatically reduce the time and technical expertise required to bootstrap a parachain network, making the technology more accessible to a broader range of users and accelerating the pace of development within the Polkadot ecosystem.
 
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 30,000 USD.
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):**  6 FTE
+- **Total Costs:** 53,400 USD.
 
 ### Milestone 1 Development of full blown parachain deployment feature
 
-- **Estimated duration:** 1 month
-- **FTE:**  14
-- **Costs:** 53,400 USD
+- **Estimated duration:** 2 month
+- **FTE:**  6
+- **Costs:** 30,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -232,18 +232,20 @@ For this proposal we focus on building and streamlining the process of setting u
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Standalone Executable | Will provide standalone executable that start the GUI service and other corresponding |
 | 0e. | Article | Using our PR channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
-| 1. | Initial Automation | Completion of the initial development phase of the platform. We will build the core GUI driven automation for one-click deployment feature for Parachains, Node Operators and Networks looking to setup robust Infrastructure on Polkadot |
+| 1. | MVP Completion | Development of full blown parachain deployment feature  | Alpha testing | User Centric Sleek Interface Design | Customizable Dashboards for continuous runtime operations
 | 2. | Node type support | Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain |
-| 3. | Bug Fixes | Testing of the application including functional, performance, and security testing  |
+| 3. | Post-Deployment Features | Key Rotation, Updating Deployment Parameters, Performing client upgrades  |
+| 4. | Bug Fixes | Testing of the application including functional, performance, and security testing  | Successful user testing and feedback collection phase. | Release of comprehensive user guides and tutorials.
 
 
 
 
-### Milestone 2 Monitoring
+
+### Milestone 2 Monitoring & Substrate Build as a Service & CI Tooling
 
 - **Estimated Duration:** 1 month
 - **FTE:**  5
-- **Costs:** 8,000 USD
+- **Costs:** 23,400 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -253,16 +255,14 @@ For this proposal we focus on building and streamlining the process of setting u
 | **0d.** | Standalone Executable | Will provide standalone executable that start the GUI service and other corresponding |
 | 0e. | Article | Using our PR channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
 | 1. | Improve UX Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. |
-| 2. | Setup Dashboard | We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users |
+| 2. | Development of MVP for onDemand build-as-a-service using our dedicated servers | Detailed reports on node performance, including usage statistics, latency, and uptime. | Alpha Testing
+| 3. | Integration of live network testing capabilities. |  Successful security and performance audit of the platform |
+| 4. | Setup Dashboard | We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users 
 
 
 
 ## Future Plans
-
-- We will frequently post on social media (Twitter, Medium, Youtube) to provide development news and video tutorials regarding our platform. We will also work with influencers, who can break down complex concepts and provide clear guidance to the mainstream users on how to use our platform.
-
 - Our long term plan is to provide a suite of products that will allow users and enterprises to built and deploy use case or application specific parachains.
-
 
 
 ## Additional Information :heavy_plus_sign:
