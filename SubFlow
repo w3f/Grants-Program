@@ -1,0 +1,91 @@
+# SubFlow: Web3 microblogging smart-service
+
+- **Team Name:** deus4
+- **Payment Address:** 11oj3RchYvUPxLdfRoCa1Q6V6kFTfSikVSAcpe56sk8f8z4 POLKADOT
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+
+## Project Overview :page_facing_up:
+
+
+Empowering Connections on the Decentralised Web: SubFlow, Your Smart Social Network.
+
+### Overview
+
+SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. It will offer a seamless experience for sharing multimedia content, engaging with other users through interactions like likes and comments, and conducting direct token transfers. 
+
+SubFlow will be developed as a set of Smart Services, providing users the ability to interact with other users through communication, as well as interact with other services in the Polkadot ecosystem based on an open API: marketplaces (showcasing, buying, and selling NFTs), DeFi services (buying and exchanging tokens), games (authorisation, messaging), and so on.
+SubFlow will redefine how users connect, communicate and monetise their content while respecting their privacy and ownership rights. 
+
+
+### Project Details
+
+The system consists of two parts:
+-- **The client application (webApp)** -- provides convenient access to the functionality of the system core for the user.
+-- **The system core** -- is a set of smart contracts deployed on the blockchain, which store data and implement rules of user interactions.
+
+The functionality of the system can be divided into three logical user roles:
+
+- Reader functionality
+- Author functionality
+- System administrator functionality
+
+The functionality of the author and system administrator will require user authorisation in the system (administrating functionality will be transfered to the DAO-smart service for the community governance in the future).
+
+![v1](https://github.com/paritytech/polkadot-sdk/assets/21257942/d584e8c9-3aa0-433b-b650-63750014364c)
+
+- ink! Smart Contracts
+- Substrate
+- All code produced will be open-sourced under the MIT license
+- There are no plans for issuing a dedicated token at the moment
+
+
+### Ecosystem Fit
+
+
+## Team :busts_in_silhouette:
+
+### Team members
+
+
+### Contact
+
+
+### Legal Structure
+
+
+
+### Team's experience
+
+
+
+### Team Code Repos
+
+
+
+### Team LinkedIn Profiles (if available)
+
+
+
+
+## Development Roadmap :nut_and_bolt:
+
+
+### Overview
+
+
+### Milestone 1 Example — Basic functionality
+
+
+
+### Milestone 2 Example — Additional features
+
+
+
+
+## Future Plans
+
+
+
+
+## Additional Information :heavy_plus_sign:
+
