@@ -261,25 +261,20 @@ For this proposal we focus on building and streamlining the process of setting u
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up parachains through a one-click setup. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up monitoring on their node using our block-agent. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Standalone Executable | Will provide standalone executable that start the GUI service and other corresponding |
-| 0e. | Article | Using our PR channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
+| **0e** | Article | Using our communication channels, we will publish articles that explains the high-level architecture of our monitoring infrastructure and how users can set them up on their environment 
 | 1. | Improve UX Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. |
 | 2. | Development of MVP for onDemand build-as-a-service using our dedicated servers | Detailed reports on node performance, including usage statistics, latency, and uptime. | Alpha Testing
 | 3. | Integration of live network testing capabilities. |  Successful security and performance audit of the platform |
 | 4. | Setup Dashboard | We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
 
 
-### Milestone 3: Alpha Release, Testing, Bug Fixes & Maintenance
-
-
-
 ## Future Plans
-- Our long term plan is to provide a suite of products that will allow users and enterprises to built and deploy use case or application specific parachains.
-- Fast build-as-a-service for Substrate Developers: This platform would provide dedicated machines optimized for blockchain development, enabling developers to build and iterate their smart contract codes faster and test them against live networks. By enhancing the efficiency and reliability of the development process, this platform would help bridge the gap between development and deployment, facilitating a smoother transition from concept to execution.
+- Our long term plan is to provide a suite of products that will allow users and enterprises to deploy, manage and monitor their node infrastructure for different use cases .
 - More Detailed and Enhanced Observability & Alerting for all Blockchain Networks
 - Make the UI a distrubutable Luuncher across all Operating Systems
+- Fast build-as-a-service for Substrate Developers: This platform would provide dedicated machines optimized for blockchain development, enabling developers to build and iterate their smart contract codes faster and test them against live networks. By enhancing the efficiency and reliability of the development process, this platform would help bridge the gap between development and deployment, facilitating a smoother transition from concept to execution.
 
 
 ## Additional Information :heavy_plus_sign:
