@@ -92,7 +92,7 @@ The project is composed of four primary open-source modules designed to support 
 - node-service:
     Description: This component is pivotal for the automation of the infrastructure components' orchestration, ensuring that the infrastructure is robust and scalable.
     License: Open-source (Apache 2.0)
-- blkops-agent (blockops observability agent)
+- block-agent (blockops observability agent)
     Description: This agent is dedicated to monitoring and forwarding metrics from individual nodes to a centralized server. Either for parachains or node operators, this component is essential for keeping a pulse on the health and performance of the network and provide resource usage graphs and alerting.
     License: Open-Source (Apache 2.0)
 
@@ -195,7 +195,8 @@ Through our experience with Polkadot, we have developed robust strategies to max
 
 - Frontend - https://github.com/blockops-sh/user-dashboard-client
 - Backend -  https://github.com/blockops-sh/api-core-service
-- Infrastructure - https://github.com/orgs/blockopsnetwork/repositories
+- Infrastructure - https://github.com/orgs/blockopsnetwork/node-service
+- block - https://github.com/orgs/blockopsnetwork/block
 
 
 ### Team LinkedIn Profiles (if available)
