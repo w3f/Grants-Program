@@ -64,6 +64,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Myriad Systems LTD.](https://myriad.social/)                   | [Myriad Social](myriad_social.md)                                                              | [GitHub](https://github.com/myriadsocial/myriad-node)                      | ☐          |       ☐        |     ☐     |
 | [Liisa](www.liisa.io)                   | [Polkadot NFT Portfolio Tracker](LiisaPortfolioTracker.md)                                                              | [GitHub](https://github.com/LiisaNFT)                      | ☐          |       ☐        |     ☐     |
 | [NeoPower Digital](https://neopower.digital/)                   | [Roloi - XCM Payment Automation](./roloi-xcm-payment-automation.md)                                                              | [GitHub](https://github.com/NeoPower-Digital)                      | ☐          |       ☐        |     ☐     |
+| [Eiger](https://www.eiger.co/)                                 | [MoveVM Substrate Pallet, part 2](./Substrate_Move_System_Pallet_2.md)   | [GitHub](https://github.com/eigerco)                               | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
