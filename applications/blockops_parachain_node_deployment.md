@@ -81,15 +81,29 @@ The user interface and infrastructure set up for this project are largely comple
 
 **The System Overview**
 
-This project consists of four main system:
-- blockops-coreapi-service
-- blockops-frontend-end
-- blockops-node-service
-- blockops-observability-agent
+The project is composed of four primary open-source modules designed to support node infrastructures:
+
+- coreapi-service: 
+    Description: Developed using Node.js and TypeScript, this backend service interfaces directly with the node-service. It enables developers and parachain teams to experiment with various chain configurations during the parachain setup phase. The flexibility it provides allows for the selection and testing of different nodes, optimizing for the ideal configurations on the parachain.
+    License: Open-source (Apache)
+- ui-service:
+    Description: An interface constructed with TypeScript and Next.js, it provides a user-friendly web dashboard that interfaces seamlessly with the coreapi-service. Its features empower users to deploy nodes with ease, giving them an insightful and real-time perspective on crucial metrics related to their nodes, which aids in optimizing node performance.
+    License: Open-source (Apache)
+- node-service:
+    Description: This component is pivotal for the automation of the infrastructure components' orchestration, ensuring that the infrastructure is robust and scalable.
+    icense: Open-source (Apache)
+- observability-agent
+    Description: This agent is dedicated to monitoring and forwarding metrics from individual nodes to a centralized server. Either for parachains or node operators, this component is essential for keeping a pulse on the health and performance of the network and provide resource usage graphs and alerting.
+    License: Open-Source (Apache)
+
 
 The blockops-coreapi-service built with nodejs and typescript is the backend service which integrates with the infrastructure allowing developers and parachain teams to try multiple chain configurations while setting up the parachains, as well as to choose different nodes to try and test for the best possibilities on the parachain.
 
 The blockops-frontend-end connects to the blockops-coreapi-service and is built using typescript and next.js, creating a modern web dashboard. it provides a unique set of features allowing users to deploy nodes easily and it also provides users with a comprehensive overview of all essential metrics related to their nodes thereby ensuring real-time visibility into the performance nodes.
+
+The node-service is responsbile for automating components that makes up the infrastructure creation
+
+The observability agent is responsbile for pushing metrics from nodes to central server for parachains or node operators
 
 
 
