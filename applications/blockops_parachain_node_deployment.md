@@ -262,7 +262,7 @@ For this proposal we focus on building and streamlining the process of setting u
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up monitoring on their node using our block-agent. |
-| **0c.** | Essential functions of the **block-agent** will be fully covered by unit tests to guarantee functionality and resilience. The guide will outline the steps on how to run these tests. |
+| **0c.** | Testing and Testing Guide | Essential functions of the **block-agent** will be fully covered by unit tests to guarantee functionality and resilience. The guide will outline the steps on how to run these tests. |
 | **0e** | Article | Using our communication channels, we will publish articles that explains the high-level architecture of our monitoring infrastructure and how users can set them up on their environment 
 | 1. | block-agent Architecture	| Design and develop the architecture of the block-agent, ensuring it's modular and scalable. | The agent will efficiently collect vital metrics such as CPU usage, memory consumption, network latency, and other relevant node performance indicators. | 
 | 2. | Improve UX Analytics Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. | Log Dashbooard | Ability to filter logs by different Log Levels | Setup Dashboard: We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
