@@ -63,6 +63,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [David Semakula](https://github.com/davidsemakula)                   | [ink! analyzer (phase 2)](ink-analyzer-phase-2.md)                                                              | [GitHub](https://github.com/ink-analyzer)                      | ☐          |       ☐        |     ☐     |
 | [Myriad Systems LTD.](https://myriad.social/)                   | [Myriad Social](myriad_social.md)                                                              | [GitHub](https://github.com/myriadsocial/myriad-node)                      | ☐          |       ☐        |     ☐     |
 | [Liisa](www.liisa.io)                   | [Polkadot NFT Portfolio Tracker](LiisaPortfolioTracker.md)                                                              | [GitHub](https://github.com/LiisaNFT)                      | ☐          |       ☐        |     ☐     |
+| [NeoPower Digital](https://neopower.digital/)                   | [Roloi - XCM Payment Automation](./roloi-xcm-payment-automation.md)                                                              | [GitHub](https://github.com/NeoPower-Digital)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#2023)
 
