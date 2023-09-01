@@ -38,7 +38,7 @@ This application involve:
   - Network Collapse: The potential for an entire blockchain network to fail presents a looming risk.
   - It is more effective for parachains to deploy their nodes on Dedicated Servers in addition to helping decentralization, however there is no effective way for anyone to deploy their nodes to Dedicated Servers without having to deal with the complexity of setting up bare metal servers
 
-- Zero Observability Solutions: 
+- Zero Observability Solutions:
   - There’s little to no observability solutions for monitoring the state of these nodes to enhance better performance.
   - From setting up databases, caches, streams, orchestrations, alert systems, metrics, and tracking SLAs to managing and maintaining every possible client configuration, OS, and middleware, the workload is immense.
 
@@ -55,7 +55,7 @@ This application involve:
    - Fully open sourced
    - Support all chains on Polkadot
    - Deploy to a Dedicated Servers (IBP inclusive) and Pay as You Use
-   - Connect to multiple nodes instantly powering your blockchain application. 
+   - Connect to multiple nodes instantly powering your blockchain application.
    - Multiple instance of a node type running
    - Faster testing against live networks
 
@@ -99,7 +99,7 @@ The following are the mockups for high-level application operations, these are s
 - Create New Project
 <a href="https://ibb.co/CmQwccg"><img src="https://i.ibb.co/Fmzhrr2/Parachain-flow03.jpg" alt="Parachain-flow03" border="0"></a>
 - Select Cloud Provider
-<a href="https://ibb.co/hXBf1Bd"><img src="https://i.ibb.co/1sr6JrX/Parachain-flow04.jpg" alt="Parachain-flow04" border="0"></a>
+<a href="https://ibb.co/fn9hMbD"><img src="https://i.ibb.co/qWCtBzJ/Screenshot-2023-07-28-at-4-09-31-PM.png" alt="Screenshot-2023-07-28-at-4-09-31-PM" border="0"></a>
 
 - Launch Configuration
 <a href="https://ibb.co/3vFVSDX"><img src="https://i.ibb.co/ScmHVhT/Parachain-flow05.jpg" alt="Parachain-flow05" border="0"></a>
@@ -257,7 +257,7 @@ For this proposal we focus on building and streamlining the process of setting u
 | 1. | Improve UX Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. |
 | 2. | Development of MVP for onDemand build-as-a-service using our dedicated servers | Detailed reports on node performance, including usage statistics, latency, and uptime. | Alpha Testing
 | 3. | Integration of live network testing capabilities. |  Successful security and performance audit of the platform |
-| 4. | Setup Dashboard | We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users 
+| 4. | Setup Dashboard | We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
 
 
 
