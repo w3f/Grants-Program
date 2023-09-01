@@ -59,9 +59,9 @@ This application involve:
    - Faster testing against live networks
 
 2. Central Node Observability: Parachains will have deep insight into all Node Operators running their clients while Node Operators will also have deep out of the box Monitoring solution for all their node fleets
-- Ready-to-use Monitoring: Early warning for node performance drops
-- Web3-focused Insights: Deep view into Polkadot Parachain operations
-- Enhanced Observability: Benchmark node performance; identify system/network issues.
+   - Ready-to-use Monitoring: Early warning for node performance drops
+   - Web3-focused Insights: Deep view into Polkadot Parachain operations
+   - Enhanced Observability: Benchmark node performance; identify system/network issues.
 
 
 
