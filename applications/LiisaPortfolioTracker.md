@@ -20,7 +20,7 @@ The portfolio tracker is designed to accommodate the diverse needs of a broad us
 
 ### Architecture
 
-<img width="960" alt="PortoflioTrackerArchitectureNew" src="https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/4990a0db-ea37-4458-b30f-b10b6c464d98">
+<img width="960" alt="PortoflioTrackerArchitectureNew" src="https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/4990a0db-ea37-4458-b30f-b10b6c464d98"/>
 
 
 ### Technologies
