@@ -2,8 +2,7 @@
 
 - **Team Name:** Blockops Network
 - **Payment Address:** 15qz4ZLeyXp1i4Jbx7AXiUQVCCLWVXu3dLjcTPHY3v9KGAvL (DOT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3,
-
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 ## Project Overview :page_facing_up:
 Blockops Network is on a mission to enhance the web3 expereince for developers and startups by making it extremely easy and cost-effectve for anyone to setup, maintain and monitor their blockchain node infrastructure.
 
