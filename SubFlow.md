@@ -36,7 +36,7 @@ The functionality of the author and system administrator will require user autho
 <br>
 <br>
 
-![v1](https://github.com/paritytech/polkadot-sdk/assets/21257942/d584e8c9-3aa0-433b-b650-63750014364c)
+![v1](https://github.com/w3f/Grants-Program/assets/21257942/77951903-aef0-44bc-a70f-1bb3c3ad2527)
 
 - ink! Smart Contracts
 - Substrate
