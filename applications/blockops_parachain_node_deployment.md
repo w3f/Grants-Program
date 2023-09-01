@@ -81,13 +81,17 @@ The user interface and infrastructure set up for this project are largely comple
 
 **The System Overview**
 
-This project consists of two main system:
+This project consists of four main system:
 - blockops-coreapi-service
 - blockops-frontend-end
+- blockops-node-service
+- blockops-observability-agent
 
 The blockops-coreapi-service built with nodejs and typescript is the backend service which integrates with the infrastructure allowing developers and parachain teams to try multiple chain configurations while setting up the parachains, as well as to choose different nodes to try and test for the best possibilities on the parachain.
 
 The blockops-frontend-end connects to the blockops-coreapi-service and is built using typescript and next.js, creating a modern web dashboard. it provides a unique set of features allowing users to deploy nodes easily and it also provides users with a comprehensive overview of all essential metrics related to their nodes thereby ensuring real-time visibility into the performance nodes.
+
+
 
 **Mockups and UI components**
 
@@ -218,7 +222,7 @@ For this proposal we focus on building and streamlining the process of setting u
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  6 FTE
-- **Total Costs:** 53,400 USD.
+- **Total Costs:** 120,000 USD.
 
 ### Milestone 1 Development of full blown parachain deployment feature
 
