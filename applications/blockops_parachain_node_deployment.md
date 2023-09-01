@@ -271,11 +271,10 @@ For this proposal we focus on building and streamlining the process of setting u
 
 
 ## Future Plans
-- Our long term plan is to provide a suite of products that will allow users and enterprises to deploy, manage and monitor their node infrastructure for different use cases .
-- More Detailed and Enhanced Observability & Alerting for all Blockchain Networks
-- Make the UI a distrubutable Luuncher across all Operating Systems
+- Our long-term plan is to provide a suite of products that will allow users and enterprises to deploy, manage, and monitor their node infrastructure for different use cases.
+- More Detailed and Enhanced Observability & Alerting for all Blockchain Networks.
+- Make the UI a distributable Launcher across all Operating Systems.
 - Fast build-as-a-service for Substrate Developers: This platform would provide dedicated machines optimized for blockchain development, enabling developers to build and iterate their smart contract codes faster and test them against live networks. By enhancing the efficiency and reliability of the development process, this platform would help bridge the gap between development and deployment, facilitating a smoother transition from concept to execution.
-
 
 ## Additional Information :heavy_plus_sign:
 
