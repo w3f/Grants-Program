@@ -4,7 +4,7 @@
 - **Payment Address:** 15qz4ZLeyXp1i4Jbx7AXiUQVCCLWVXu3dLjcTPHY3v9KGAvL (DOT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 ## Project Overview :page_facing_up:
-Blockops Network is on a mission to enhance the web3 expereince for developers and startups by making it extremely easy and cost-effectve for anyone to setup, maintain and monitor their blockchain node infrastructure.
+Blockops Network is on a mission to enhance the web3 experience for developers and startups by making it extremely easy and cost-effective for anyone to set up, maintain, and monitor their blockchain node infrastructure.
 
 Our proposal includes the introduction of a one-click setup feature for bootstrapping parachains and a build-as-a-service platform for Substrate developers, significantly enhancing the efficiency and reliability of the development process within the Polkadot ecosystem.
 
@@ -12,21 +12,21 @@ Our proposal includes the introduction of a one-click setup feature for bootstra
 
 **Why are we building Parachain One-Click Deployment?**
 
-A major hurdle that developers and projects encounter is the complexity involved in setting up, managing and maintaining parachain networks outside of just creating Single Node Deployments. The conventional process for bootstrapping parachains is time-consuming and requires a high level of technical expertise. Components like observability, scalability and reliability of their networks are still areas that cause a lot of Parachains pains.
+A major hurdle that developers and projects encounter is the complexity involved in setting up, managing and monitoring parachain networks especially when moving beyond basic Single Node Deployments. The conventional process for setting up parachains is time-consuming and requires deep technical knowledge. Components like observability, scalability and reliability of their networks continue to be major concerns for numerous Parachains.
 
-Also, substrate developers often lack efficient and responsive build-as-a-service or CI platforms to help them run faster build and test their smart contract codes effectively. Existing platforms often don't provide access to live networks or dedicated machines specifically optimized for blockchain development and testing. This often results in slower iteration times and less reliable smart contract code, creating a gap between development and deployment phases.
+Furthermore, Parachains find it more operationally effective and cheaper to deploy their infrastructure on Dedicated Servers instead of Public Cloud especially for the purpose of performance benchmarking. However, the complexity and cost associated with this endeavor often pose significant challenges to them.
 
-Furthermore, Parachains prefers deploying their infrastructure to Dedicated Servers instead of Public Cloud. However, the complexity and cost associated with this endeavor often pose significant challenges to them.
+In the current Polkadot network ecosystem, there is an absence of an all-inclusive, hassle-free observability solution tailored to monitor node performance within new and existing chain in the Polkadot Ecosystem
 
-In the existing ecosystem of the Polkadot network, there is a lack of comprehensive, hassle-free, observability solution designed to track the performance of nodes in the Polkadot and Kusama networks.
-
-At Blockops Network, we've spotted these gaps and we’re set to empower developers & startups easily setup and manage their nodes operations on Polkadot.
+At Blockops Network, we've identified these gaps and are determined to empower developers & startups to easily set up, manage and monitor their node operations on Polkadot.
 
 This application involve:
 
-- The development of Parachain One-Click deployment for networks building on Polkadot chains to easily bootstrap their entire network and deploy their Parachain Networks on our on-demand Spot VPS.
+- The development of Parachain One-Click deployment for networks building on Polkadot chains to easily bootstrap their entire network and deploy their Parachain Networks on Cloud and Dedicated VPS (either self hosted or by Managed Providers such as the IBP members)
 
-- On-demand Build-as-a-Service Substrate/Polkadot CI process for developers to run quick build, test, and runtime simulations against live blocks with our Beefy onDemand VPS.
+- Central Node Observability Dashboard for Parachains and Node Operators in the Polkadot Ecosystem
+
+
 
 ## Challeneges Developers and Startups faces when building dApps
 - Complexity: Web3 Infrastructure is intrinsically complex. Developers and startups grapple with several complexities
@@ -37,9 +37,9 @@ This application involve:
   - Network Collapse: The potential for an entire blockchain network to fail presents a looming risk.
   - It is more effective for parachains to deploy their nodes on Dedicated Servers in addition to helping decentralization, however there is no effective way for anyone to deploy their nodes to Dedicated Servers without having to deal with the complexity of setting up bare metal servers
 
-- Zero Observability Solutions:
+- Zero Observability Solutions: 
   - There’s little to no observability solutions for monitoring the state of these nodes to enhance better performance.
-  - From setting up databases, caches, streams, orchestrations, alert systems, metrics, and tracking SLAs to managing and maintaining every possible client configuration, OS, and middleware, the workload is immense.
+  - No Real-Time alerting to pre-emptively alerts Node Operators & Parachains based on the performance & issues on relay or parachains
 
 - Engineering Overheads:
   - The high cost of hiring talented engineers combined with the financial implications of high turnover rates puts additional strain on startups and development projects.
@@ -58,7 +58,10 @@ This application involve:
    - Multiple instance of a node type running
    - Faster testing against live networks
 
-2. Fast build-as-a-service for Substrate Developers: This platform would provide dedicated machines optimized for blockchain development, enabling developers to build and iterate their smart contract codes faster and test them against live networks. By enhancing the efficiency and reliability of the development process, this platform would help bridge the gap between development and deployment, facilitating a smoother transition from concept to execution.
+2. Central Node Observability: Parachains will have deep insight into all Node Operators running their clients while Node Operators will also have deep out of the box Monitoring solution for all their node fleets
+- Ready-to-use Monitoring: Early warning for node performance drops
+- Web3-focused Insights: Deep view into Polkadot Parachain operations
+- Enhanced Observability: Benchmark node performance; identify system/network issues.
 
 
 
@@ -219,9 +222,9 @@ For this proposal we focus on building and streamlining the process of setting u
 
 ### Milestone 1 Development of full blown parachain deployment feature
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 3 month
 - **FTE:**  6
-- **Costs:** 30,000 USD
+- **Costs:** 60,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -240,11 +243,11 @@ For this proposal we focus on building and streamlining the process of setting u
 
 
 
-### Milestone 2 Monitoring & Substrate Build as a Service & CI Tooling
+### Milestone 2 Development of Central Node Observability
 
-- **Estimated Duration:** 1 month
-- **FTE:**  5
-- **Costs:** 23,400 USD
+- **Estimated Duration:** 3 month
+- **FTE:**  6
+- **Costs:** 60,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -259,9 +262,14 @@ For this proposal we focus on building and streamlining the process of setting u
 | 4. | Setup Dashboard | We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
 
 
+### Milestone 3: Alpha Release, Testing, Bug Fixes & Maintenance
+
+
 
 ## Future Plans
 - Our long term plan is to provide a suite of products that will allow users and enterprises to built and deploy use case or application specific parachains.
+- Fast build-as-a-service for Substrate Developers: This platform would provide dedicated machines optimized for blockchain development, enabling developers to build and iterate their smart contract codes faster and test them against live networks. By enhancing the efficiency and reliability of the development process, this platform would help bridge the gap between development and deployment, facilitating a smoother transition from concept to execution.
+- More Detailed and Enhanced Observability & Alerting for all Blockchain Networks
 
 
 ## Additional Information :heavy_plus_sign:
