@@ -11,7 +11,7 @@ Empowering Connections on the Decentralised Web: SubFlow, Your Smart Social Netw
 
 ### Overview
 
-SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. It will offer a seamless experience for sharing multimedia content, engaging with other users through interactions like likes and comments, and conducting direct token transfers. 
+SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. It will offer a seamless experience for sharing multimedia content, engaging with other users through such interactions as "likes" and comments, and conducting direct token transfers. 
 
 SubFlow will be developed as a set of Smart Services, providing users the ability to interact with other users through communication, as well as interact with other services in the Polkadot ecosystem based on an open API: marketplaces (showcasing, buying, and selling NFTs), DeFi services (buying and exchanging tokens), games (authorisation, messaging), and so on.
 SubFlow will redefine how users connect, communicate and monetise their content while respecting their privacy and ownership rights. 
