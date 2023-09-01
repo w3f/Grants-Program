@@ -231,7 +231,7 @@ For this proposal we focus on building and streamlining the process of setting u
 
 ### Milestone 1 Development of full blown parachain deployment feature
 
-- **Estimated duration:** 3 month
+- **Estimated duration:** 6 month
 - **FTE:**  6
 - **Costs:** 60,000 USD
 
@@ -252,11 +252,11 @@ For this proposal we focus on building and streamlining the process of setting u
 
 
 
-### Milestone 2 Development of Central Node Observability
+### Milestone 2 Development of Node Observability
 
 - **Estimated Duration:** 3 month
 - **FTE:**  6
-- **Costs:** 60,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
