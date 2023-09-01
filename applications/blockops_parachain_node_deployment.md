@@ -85,16 +85,16 @@ The project is composed of four primary open-source modules designed to support 
 
 - coreapi-service: 
     Description: Developed using Node.js and TypeScript, this backend service interfaces directly with the node-service. It enables developers and parachain teams to experiment with various chain configurations during the parachain setup phase. The flexibility it provides allows for the selection and testing of different nodes, optimizing for the ideal configurations on the parachain.
-    License: Open-source (Apache)
+    License: Open-source (Apache 2.0)
 - ui-service:
     Description: An interface constructed with TypeScript and Next.js, it provides a user-friendly web dashboard that interfaces seamlessly with the coreapi-service. Its features empower users to deploy nodes with ease, giving them an insightful and real-time perspective on crucial metrics related to their nodes, which aids in optimizing node performance.
-    License: Open-source (Apache)
+    License: Open-source (Apache 2.0)
 - node-service:
     Description: This component is pivotal for the automation of the infrastructure components' orchestration, ensuring that the infrastructure is robust and scalable.
-    icense: Open-source (Apache)
-- observability-agent
+    License: Open-source (Apache 2.0)
+- blkops-agent (blockops observability agent)
     Description: This agent is dedicated to monitoring and forwarding metrics from individual nodes to a centralized server. Either for parachains or node operators, this component is essential for keeping a pulse on the health and performance of the network and provide resource usage graphs and alerting.
-    License: Open-Source (Apache)
+    License: Open-Source (Apache 2.0)
 
 
 **Mockups and UI components**
@@ -278,6 +278,7 @@ For this proposal we focus on building and streamlining the process of setting u
 - Our long term plan is to provide a suite of products that will allow users and enterprises to built and deploy use case or application specific parachains.
 - Fast build-as-a-service for Substrate Developers: This platform would provide dedicated machines optimized for blockchain development, enabling developers to build and iterate their smart contract codes faster and test them against live networks. By enhancing the efficiency and reliability of the development process, this platform would help bridge the gap between development and deployment, facilitating a smoother transition from concept to execution.
 - More Detailed and Enhanced Observability & Alerting for all Blockchain Networks
+- Make the UI a distrubutable Luuncher across all Operating Systems
 
 
 ## Additional Information :heavy_plus_sign:
