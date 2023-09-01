@@ -104,7 +104,7 @@ The team plans to release the system sequentially in two versions:<br>
 
 * **Total Estimated Duration:** 3 months
 * **Full-Time Equivalent (FTE):**  2.5 FTE
-* **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+* **Total Costs:** 30,000 USD
 
 
 ### Milestone 1 Example — Basic functionality
