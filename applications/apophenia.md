@@ -196,10 +196,10 @@ Most of the work in this milestone has been started and can be seen in the repos
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Litepaper / Whitepaper | We will publish an article / whitepaper that explains how the oracle system will function autonomously |
-| 2. | Pallet Registry | A pallet responsible for registring and recording relevant information about new feeds |
-| 3. | Pallet Oracle | A pallet that holds main logic for getting feed data, aggregating data and delivering it to end users. |
-| 3.a. | Offchain workers | Integrate regular OCW as *one* of the offchain solutions |
-| 4. | Pallet Data Validation | A pallet responsible for outlier detection and ensuring that all nodes are submitting valid data. It will use statistics to determine if one or more of the nodes are bad actors. It will also provide some basic aggregation features. |
+| 1. | Pallet Registry | A pallet responsible for registring and recording relevant information about new feeds |
+| 2a. | Pallet Oracle | A pallet that holds main logic for getting feed data, aggregating data and delivering it to end users. |
+| 2b. | Offchain workers | Integrate regular OCW as *one* of the offchain solutions |
+| 3. | Pallet Data Validation | A pallet responsible for outlier detection and ensuring that all nodes are submitting valid data. It will use statistics to determine if one or more of the nodes are bad actors. It will also provide some basic aggregation features. |
 
 ### Milestone 2 - XCM Integration
 
@@ -209,6 +209,10 @@ Most of the work in this milestone has been started and can be seen in the repos
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | XCM request-response model | Use XCM messages as the main interface for requesting and receiving oracle data. |
 | 2. | Research more ways to validate offchain data |  Research and implement ways to ensure that offchain workers are providing valid data and have some level of protection again known attack vectors. |
 | 3. | E2E tests with RPC calls | We will have E2E tests using RPC calls|
@@ -224,6 +228,10 @@ The last milestone is dedicated to implementing the staking / slashing mechanism
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1.| Aggregation | Research and implement interesting and statistically sound aggregation methods so we can integrate them in the slashing mechanism. |
 | 2. | Design and implement Staking / Slashing mechanism | Research and implement game-theoretic ways of making the oracle system safe. |
 | 3. | Design and research fee structures | Add a fee structure that takes into account all the features mentioned above. |
