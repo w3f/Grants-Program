@@ -6,7 +6,7 @@
 ## Project Overview :page_facing_up:
 Blockops Network is on a mission to enhance the web3 experience for developers and startups by making it extremely easy and cost-effective for anyone to set up, maintain, and monitor their blockchain node infrastructure.
 
-Our proposal includes the introduction of a one-click setup feature for bootstrapping parachains and a build-as-a-service platform for Substrate developers, significantly enhancing the efficiency and reliability of the development process within the Polkadot ecosystem.
+Our proposal includes the introduction of a one-click setup feature for bootstrapping parachains and out-of-the-box observability dashboard for all Nodes, significantly enhancing the efficiency and reliability of the development process within the Polkadot ecosystem.
 
 ### Overview
 
