@@ -39,7 +39,12 @@ The functionality of the author and system administrator will require user autho
 SubFlow is a fully decentralised application based on SmartSOA (smart service-oriented architecture), it's core smart servies include:
 - **DNS** <br>Maps user names to their corresponding addressed for personal smart services.
 - **Registration Service** <br>Registers new users with DNS and sets up their personalised smart services.
-- **User Smart Services** <br>Maps 
+- **User Smart Services** <br>Store, manage, and enable user data interaction.
+<br>  
+Other Smart-Services provide additional functionality, for example:
+- **Advertising Service** <br>Enables advertisers to create and run campaigns on SubFlow, rewarding users who share their content according to set rules.
+- **Donation Service** <br>Allows system users to financially support content creators they find interesting directly.
+- **NFT Markeplace Service** <br>Facilitates the direct sale of NFTs creaated by authors on SubFlow.
 
 
 ![v1](https://github.com/w3f/Grants-Program/assets/21257942/77951903-aef0-44bc-a70f-1bb3c3ad2527)
