@@ -33,8 +33,14 @@ The functionality of the system can be divided into three logical user roles:
   
 
 The functionality of the author and system administrator will require user authorisation in the system (administrating functionality will be transferred to the DAO-smart service for community governance in the future).
-<br>
-<br>
+
+### Structure 
+
+SubFlow is a fully decentralised application based on SmartSOA (smart service-oriented architecture), it's core smart servies include:
+- **DNS** <br>Maps user names to their corresponding addressed for personal smart services.
+- **Registration Service** <br>Registers new users with DNS and sets up their personalised smart services.
+- **User Smart Services** <br>Maps 
+
 
 ![v1](https://github.com/w3f/Grants-Program/assets/21257942/77951903-aef0-44bc-a70f-1bb3c3ad2527)
 
