@@ -14,7 +14,6 @@ Empowering Connections on the Decentralised Web: SubFlow, Your Smart Social Netw
 SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. It will offer a seamless experience for sharing multimedia content, engaging with other users through such interactions as "likes" and comments, and conducting direct token transfers. 
 
 SubFlow will be developed as a set of Smart Services, providing users the ability to interact with other users through communication, as well as interact with other services in the Polkadot ecosystem based on an open API: marketplaces (showcasing, buying, and selling NFTs), DeFi services (buying and exchanging tokens), games (authorisation, messaging), and so on.
-SubFlow will redefine how users connect, communicate and monetise their content while respecting their privacy and ownership rights. 
 
 
 ### Project Details
@@ -92,7 +91,7 @@ In short (kind of), generally speaking, a decentralised free social network is i
 - **Slava Puganov** <br> Adaptable Full-Stack developer specialising in front-end and back-end development. Expertise in fintech, cyber security and
 software architecture, ensuring robust and secure software solutions.<br>
 
-- **Oliver Fohrmann** <br> Oliver is the team's Rust, ink! and Polkadto development technical advisor.<br> Blockchain and DAG engineer and developer with experience in Ethereum, IOTA and Polkadot. Expertise in cyber security, MedTech and software architecture.<br>
+- **Oliver Fohrmann** <br> Oliver is the team's Rust, ink! and Polkadot development technical advisor.<br> Blockchain and DAG engineer and developer with experience in Ethereum, IOTA and Polkadot. Expertise in cyber security, MedTech and software architecture.<br>
 
 ### Team Code Repos
 
@@ -117,30 +116,45 @@ The team plans to release the system sequentially in two versions:<br>
 
 
 - **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  2.5 FTE
+- **Full-Time Equivalent (FTE):**  3.5 FTE
 - **Total Costs:** 30,000 USD
 
 
-### Milestone 1 — Release Version
+### Milestone 1 — Alpha Release
 
-- **Estimated duration:** 3 months
-- **FTE:**  2.5 FTE
-- **Costs:** 30,000 USD
+- **Estimated duration:** 1.5 months
+- **FTE:**  4 FTE
+- **Costs:** 20,000 USD
 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License |  MIT  |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** on a  website that explains how a user can spin up and use the service, which will show how the functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 0a. | License |  MIT  |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** on a website that explains how a user can spin up and use the service, which will show how the functionality works. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0e. | Article | We will publish an article that explains what was built and how it can benefit other projects |
+| 1. | System design | - |
+| 2. | User registration and user profile | - |
+| 3. | Posting functionality | - |
+| 4. | Interactive posting interactions | Functionaltity for interactions with posts, such as *likes*, *retweets* and comments |
+| 5. | System users interaction | Basic functionality for direct interactions between users, such as *search* and *follow* |
+
+### Milestone 2 — Release Version
+
+- **Estimated duration:** 1.5 months
+- **FTE:**  3 FTE
+- **Costs:** 10,000 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Multimedia posting | Support for images and youtube videos |
+| 2. | Interactive posting interactions II | Adding an author to *favorites* |
+| 3. | Direct token transfer | - |
+| 4. | User statistics | - |
+| 5. | Functionality for the administrator | - |
+| 6. | Updated website | - |
+| 7. | Documentation | - |
 
 
 ## Future Plans
