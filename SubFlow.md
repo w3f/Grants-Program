@@ -130,9 +130,8 @@ The team plans to release the system sequentially in two versions:<br>
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License |  MIT  |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** on a website that explains how a user can spin up and use the service, which will show how the functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0e. | Article | We will publish an article that explains what was built and how it can benefit other projects |
+| 0b. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0c. | Article | We will publish an article that explains what was built and how it can benefit other projects |
 | 1. | System design | - |
 | 2. | User registration and user profile | - |
 | 3. | Posting functionality | - |
