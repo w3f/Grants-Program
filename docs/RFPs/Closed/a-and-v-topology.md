@@ -1,6 +1,6 @@
 # Availability and Validity - Network Topology
 
-* **Status:** Open
+* **Status:** Closed, since research is outdated 
 * **Proposer:** @infinity0, @skalman, @mmagician 
 
 ## Project Description :page_facing_up: 
