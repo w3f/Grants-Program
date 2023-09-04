@@ -108,8 +108,7 @@ The following are the mockups for high-level application operations, these are s
 <a href="https://ibb.co/d4VmpR4"><img src="https://i.ibb.co/MktB1mk/Parachain-flow02.jpg" alt="Parachain-flow02" border="0"></a>
 - Create New Project
 <a href="https://ibb.co/CmQwccg"><img src="https://i.ibb.co/Fmzhrr2/Parachain-flow03.jpg" alt="Parachain-flow03" border="0"></a>
-- Select Cloud Provider
-<a href="https://ibb.co/fn9hMbD"><img src="https://i.ibb.co/qWCtBzJ/Screenshot-2023-07-28-at-4-09-31-PM.png" alt="Screenshot-2023-07-28-at-4-09-31-PM" border="0"></a>
+- Select Cloud or Dedicated Node Provider
 
 - Launch Configuration
 <a href="https://ibb.co/3vFVSDX"><img src="https://i.ibb.co/ScmHVhT/Parachain-flow05.jpg" alt="Parachain-flow05" border="0"></a>
@@ -225,25 +224,24 @@ For this proposal we focus on building and streamlining the process of setting u
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):**  6 FTE
-- **Total Costs:** 120,000 USD.
+- **Total Costs:** 90,000 USD.
 
-### Milestone 1 Development of full blown parachain deployment feature
+### Milestone 1 Development of One Click Parachain Deployment Feature
 
-- **Estimated duration:** 6 month
+- **Estimated duration:** 3 month
 - **FTE:**  6
-- **Costs:** 60,000 USD
+- **Costs:** 30,000 USD
 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up parachains through a one-click setup. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up parachains through a one-click setup non on Cloud Platform like GCP, AWS or Digital Ocean |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Standalone Executable | Will provide standalone executable that start the GUI service and other corresponding |
-| 0e. | Article | Using our PR channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
-| 1. | MVP Completion | Development of full blown parachain deployment feature  | Alpha testing | User Centric Sleek Interface Design | Customizable Dashboards for continuous runtime operations
+| 0e. | Article | Using our communication channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
+| 1. | MVP Completion | Development of One Click Parachain Deployment Feature on GCP | Alpha testing | User Centric Sleek Interface Design | Customizable Dashboards for continuous runtime operations
 | 2. | Node type support | Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain |
 | 3. | Post-Deployment Features | Key Rotation, Updating Deployment Parameters, Performing client upgrades  |
 | 4. | Bug Fixes | Testing of the application including functional, performance, and security testing  | Successful user testing and feedback collection phase. | Release of comprehensive user guides and tutorials.
