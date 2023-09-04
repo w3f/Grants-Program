@@ -1,9 +1,9 @@
-# Name of your Project
+#Marco Polo Technologies - a Web3 infrastructure to power RWAs and bridge traditional finance to digital private markets with Substrate
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-- **Team Name:** Legal name of your team (e.g. Duo)
+- **Team Name:** MPT
 - **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
@@ -11,8 +11,6 @@
 ## Project Overview :page_facing_up:
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
