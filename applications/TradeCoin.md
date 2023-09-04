@@ -30,6 +30,8 @@ Ecosystem: Rust has a rapidly growing ecosystem with a variety of libraries and 
 
 Considering these advantages, Rust is a suitable choice for developing TradeCoin, ensuring high performance, safety, concurrency, and access to a rich ecosystem of libraries and tools.
 
+
+
 ### Ecosystem Fit
 
 We take inspiration from the latest trend in the blockchain ecosystem which we aim to replicate on polkadot.
@@ -83,9 +85,9 @@ No
 
 ## Development Status :open_book:
 
-I have posted updates on [tron dao thread](https://forum.trondao.org/t/overview-of-the-tradecoin-project/16511)
+Researching specification to better fit into polkadot ecosystem.
 
-And I have also created new figma wireframes for a DeFi interface: https://www.figma.com/file/rhOpmDzGZHYr4RoIIgInjj/TradeCoin%5C?type=design&node-id=6%3A353&mode=design&t=qn3JKAKV7rDls0Dr-1
+https://docs.google.com/document/d/1lvy1vcGz_uXYZ3TYdkrk1hZPpuvMrHh13zsgooCKf00/edit?usp=sharing
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -111,10 +113,10 @@ And I have also created new figma wireframes for a DeFi interface: https://www.f
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1a. | Bot setup | Telegram bot in rust. |
 | 1b. | keypairs | The bot should be capable of creating multiple wallets, importing and exporting private keys safely. |
-| 1c. | integrations | The bot integrates with polkadot and solana. |
+| 1c. | integrations | The bot integrates with polkadot and kusama. |
 | 2. | UI | Landing Page in NextJs that links to the telegram bot. |
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Additional features
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1
