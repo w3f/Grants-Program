@@ -22,13 +22,13 @@ At Blockops Network, we've identified these gaps and are determined to empower d
 
 This application involve:
 
-- The development of Parachain One-Click deployment for networks building on Polkadot chains to easily bootstrap their entire network and deploy their Parachain Networks on Cloud and Dedicated VPS (either self hosted or by Managed Providers such as the IBP members)
+- The development of Parachain One-Click deployment for networks building on Polkadot chains to easily bootstrap their entire network and deploy their Parachain Networks on Cloud and Dedicated VPS (either self hosted or by Managed Dedciated Server Providers)
 
 - Central Node Observability Dashboard for Parachains and Node Operators in the Polkadot Ecosystem
 
 
 
-## Challeneges Developers and Startups faces when building dApps
+## Challenges Developers and Startups faces when building dApps
 - Complexity: Web3 Infrastructure is intrinsically complex. Developers and startups grapple with several complexities
   - Infrastructure Management: Setting up multi-cloud, multi-region or bare metal environments Infrastructure and ensuring they are updated with new releases is no small feat.
   - Optimization and Planning: From planning node pools, migrating between cloud vendors, to ensuring the chosen solution is secure, cost-effective, and performant, the task-list is endless.
@@ -53,7 +53,7 @@ This application involve:
 1. One Click Parachain Deployment
    - Fully open sourced
    - Support all chains on Polkadot
-   - Deploy to a Dedicated Servers (IBP inclusive) and Pay as You Use
+   - Deploy to a Dedicated Servers and Pay as You Use
    - Connect to multiple nodes instantly powering your blockchain application.
    - Multiple instance of a node type running
    - Faster testing against live networks
@@ -75,7 +75,7 @@ This application involve:
 
 We have developed a one-click deployment feature for Parachains, Node Operators and Networks looking to setup robust Infrastructure on Polkadot.
 
-This platform provides substrate developers with an effortless solution to easily bootstrap their entire network and deploy their Parachain Networks on a public cloud or Dedicated Servers situated within the geographic regions where the Infrastructure Builders' Programme (IBP) Provider services are available. This ensures that developers and enterprises can build faster and manage parachains easily.
+This platform provides substrate developers with an effortless solution to easily bootstrap their entire network and deploy their Parachain Networks on a public cloud or Dedicated Servers situated within the geographic regions where the Node Providers willing to be provde Dedicated Node Service resides. This ensures that developers and enterprises can build faster and manage parachains easily.
 
 The user interface and infrastructure set up for this project are largely complete and ready. To get a glimpse of the minimum viable product (MVP), you can the [website](https://beta-app.blockops.network/login).
 
