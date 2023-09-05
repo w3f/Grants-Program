@@ -1,4 +1,4 @@
-#Marco Polo Technologies - a Web3 infrastructure to power RWAs and bridge traditional finance to digital private markets with Substrate
+#Marco Polo Technologies - a Web3 infrastructure to power RWAs and bridge traditional finance to digital investments in private markets with Substrate
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
 >
