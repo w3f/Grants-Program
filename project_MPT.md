@@ -12,7 +12,7 @@
 
 ### Overview
 
-#### Tag line: A liquidity protocol for real-world assets (RWAs) to securely and compliantly automate primary and secondary issuance in digital private markets.
+#### A liquidity protocol for real-world assets (RWAs) to securely and compliantly automate primary and secondary token issuance in digital private markets.
 
 #### Description
 
