@@ -22,7 +22,7 @@ Through our infrastructure, businesses can expand into previously underserved ma
 
 #### Marco Polo Technologies, Substrate and Polkadot - A brief description of our project.
 
-Our first layer of infrastructure is built on Rust, and to add a blockchain that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs) in private markets while enabling access to many different investor classes, we chose Substrate as our development framework as a natural addition to our existing technology. By building a liquidity protocol for RWAs on Substrate and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share, among others currently unknown, the following benefits with the Polkadot ecosystem:
+Our first layer of infrastructure is built on Rust, and to add a blockchain that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs) in private markets while enabling access to many different investor classes, we chose _Substrate_ as our development framework as a natural addition to our existing technology. By building a liquidity protocol for RWAs on _Substrate_ and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share, among other future benefits, the following benefits with the Polkadot ecosystem:
 
 - Promoting financial inclusion: We will onboard reliable clients through established social connections, making digital private markets more accessible to a wider range of investors and asset owners.
 - Enhancing asset interoperability: By enabling the seamless transfer and trading of RWAs across the Polkadot network, we will increase liquidity and accessibility for all market participants.
