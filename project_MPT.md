@@ -12,14 +12,28 @@
 
 ### Overview
 
-####Tag line: A liquidity protocol for RWAs to securely and compliantly automate primary and secodary issuance to start digital private markets
+#### Tag line: A liquidity protocol for real-world assets (RWAs) to securely and compliantly automate primary and secondary issuance in digital private markets.
 
-####Description
- 
-####Marco Polo Technologies, Substrate and Polkadot- A brief description of your project.
+#### Description
+
+Marco Polo Technologies bridges the gap between traditional finance and innovative digital solutions, seamlessly connecting real-world assets with digital finance. Our infrastructure serves as a secure and compliant foundation for diverse business models, for companies in turnaround phases and to those seeking a technological edge. With customizable workflows and a range of pre-built and _ad hoc_ functions, businesses can swiftly integrate our solution into existing or offline models. Additionally, we're developing a user-friendly UI architecture, enabling non-tech-savvy clients to create their alternative finance platforms with a close to _drag-and-drop_ experience.
+
+Through our infrastructure, businesses can expand into previously underserved markets, connecting real-world assets to a broader audience. Our ongoing efforts harness the synergy between asset owners, investors, and issuers, facilitating transformative changes within private markets. Our aim is to transform private markets into public-like, frictionless models, injecting liquidity, accessibility, and transparency into digital private market investments, making them more impactful, appealing, and inclusive.
+
+#### Marco Polo Technologies, Substrate and Polkadot- A brief description of your project.
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 
-####Team interest
+Our first layer of infrastructure is built on Rust, and to add a blockchain that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs) in private markets while enabling access to many different investor classes, we chose Substrate as our development framework as a natural addition to our existing technology. By building a liquidity protocol for RWAs on Substrate and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share, among others currently unknown, the following benefits with the Polkadot ecosystem:
+
+- Promoting financial inclusion: We will onboard reliable clients through established social connections, making digital private markets more accessible to a wider range of investors and asset owners.
+- - Enhancing asset interoperability: By enabling the seamless transfer and trading of RWAs across the Polkadot network, we will increase liquidity and accessibility for all market participants.
+- Expanding market access: We will provide a gateway for a diverse range of participants to access private markets and RWAs issuance and trading, enriching the Polkadot ecosystem's financial landscape.
+- Fostering DeFi innovation: We will leverage RWAs within the decentralized finance (DeFi) space, supporting existing possibilities for DeFi applications such as fractional ownership, collateralization, and asset-backed lending. This will attract new clients and assets to the Polkadot ecosystem.
+- Building a robust ecosystem: We will add a layer of financial functionality that complements and strengthens the overall infrastructure of Polkadot. This will attract more platforms and clients to the ecosystem and expand its use cases.
+- Interoperability with other blockchains: We will support a variety of RWAs and facilitate easy trading and investments across the network.
+- Wallet support: Our protocol will be interoperable with other wallets in the Polkadot ecosystem, supporting various fiat currencies. This will make it easier for users to store and manage their RWAs.
+
+#### Team interest
 - An indication of why your team is interested in creating this project.
 
 ### Project Details
