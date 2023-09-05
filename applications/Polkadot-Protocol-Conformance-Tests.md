@@ -1,4 +1,4 @@
-# Polkadot Protocol Conformance Tests Proposal
+# Polkadot Protocol Conformance Tests Research Proposal
 
 - **Team Name:** [LimeChain](https://github.com/LimeChain)
 - **Payment Address:** 15reUHgnkE9QeH9zUoduCVYAbksTmQXvpMd6L95rBhTNFuGw
@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-This proposal is in response to the currently open [Polkadot Protocol Conformance Tests RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/polkadot-protocol_conformance_tests.md).
+This research proposal is in response to the currently open [Polkadot Protocol Conformance Tests RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/polkadot-protocol_conformance_tests.md).
 
 ### Overview
 
