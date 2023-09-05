@@ -3,6 +3,7 @@
 - **Team Name:** Aviraj Khare
 - **Payment Address:** USDC(ERC20) Address: 0x123FfB2efB8D74D10d6B3a882A94531D99234B11
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1872#issuecomment-1694649921)
 
 ## Project Overview :page_facing_up:
 

@@ -28,7 +28,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Check out our <a target="_blank" rel="noopener noreferrer" href="https://medium.com/web3foundation/web3-foundation-grants-wave-18-recipients-9ce442a88c48">Wave 18 blogpost</a>',
+        'Meet us at <a target="_blank" rel="noopener noreferrer" href="https://www.polkadot.network/ecosystem/events/sub0/">sub0</a>!',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
