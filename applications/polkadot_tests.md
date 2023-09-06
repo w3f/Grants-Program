@@ -49,7 +49,7 @@ against current specification since his code has not been updated since February
 Zondax is a growing and distributed team with experience and projects for more than 50 blockchains. 
 Zondax has been contributing to the Substrate ecosystem since 2018-2019. The team has received and completed a large number of W3F grants
 and currently maintains most Ledger apps for the ecosystem. 
-We have recently completed a [grant](https://github.com/w3f/Grants-Program/pull/1324) on the research of an alternative host implementation. 
+We have recently completed a [grant](https://github.com/w3f/Grants-Program/blob/master/applications/hybrid_node_research.md) on the research of an alternative host implementation. 
 
 ## Team :busts_in_silhouette:
 
