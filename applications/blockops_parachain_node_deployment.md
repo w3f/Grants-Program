@@ -37,7 +37,7 @@ This application involve:
   - Network Collapse: The potential for an entire blockchain network to fail presents a looming risk.
   - It is more effective for parachains to deploy their nodes on Dedicated Servers in addition to helping decentralization, however there is no effective way for anyone to deploy their nodes to Dedicated Servers without having to deal with the complexity of setting up bare metal servers
 
-- Zero Observability Solutions: 
+- Zero Observability Solutions:
   - There’s little to no observability solutions for monitoring the state of these nodes to enhance better performance.
   - No Real-Time alerting to pre-emptively alerts Node Operators & Parachains based on the performance & issues on relay or parachains
 
@@ -81,17 +81,15 @@ The user interface and infrastructure set up for this project are largely comple
 
 **The System Overview**
 
-The project is composed of four primary open-source modules designed to support node infrastructures:
+The project is composed of three primary open-source modules designed to support node infrastructures:
 
-- coreapi-service: 
+- coreapi-service:
     Description: Developed using Node.js and TypeScript, this backend service interfaces directly with the node-service. It enables developers and parachain teams to experiment with various chain configurations during the parachain setup phase. The flexibility it provides allows for the selection and testing of different nodes, optimizing for the ideal configurations on the parachain.
     License: Open-source (Apache 2.0)
 - ui-service:
     Description: An interface constructed with TypeScript and Next.js, it provides a user-friendly web dashboard that interfaces seamlessly with the coreapi-service. Its features empower users to deploy nodes with ease, giving them an insightful and real-time perspective on crucial metrics related to their nodes, which aids in optimizing node performance.
     License: Open-source (Apache 2.0)
-- node-service:
-    Description: This component is pivotal for the automation of the infrastructure components' orchestration, ensuring that the infrastructure is robust and scalable.
-    License: Open-source (Apache 2.0)
+
 - block-agent (blockops observability agent)
     Description: This agent is dedicated to monitoring and forwarding metrics from individual nodes to a centralized server. Either for parachains or node operators, this component is essential for keeping a pulse on the health and performance of the network and provide resource usage graphs and alerting.
     License: Open-Source (Apache 2.0)
@@ -192,11 +190,10 @@ Through our experience with Polkadot, we have developed robust strategies to max
 
 ### Team Code Repos
 
-Frontend - https://github.com/blockops-sh/user-dashboard-client
-Backend - https://github.com/blockops-sh/api-core-service
-block - https://github.com/orgs/blockopsnetwork/block
 
-
+- Frontend - https://github.com/blockopsnetwork/user-dashboard-client
+- Backend -  https://github.com/blockopsnetwork/api-core-service
+- Blocks - https://github.com/blockopsnetwork/blocks
 
 ### Team LinkedIn Profiles (if available)
 
@@ -237,9 +234,10 @@ For this proposal we focus on building and streamlining the process of setting u
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up parachains through a one-click setup non on Cloud Platform like GCP, AWS or Digital Ocean |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up parachains through a one-click setup. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+
 | 0e. | Article | Using our communication channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
 | 1. | Completion of the initial development phase of the one-click feature. | Development of One Click Parachain Deployment Feature on GCP, AWS & Digital Ocean | Alpha testing | User Centric Sleek Interface Design |
 | 2. | Node type support | Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain |
@@ -247,8 +245,6 @@ For this proposal we focus on building and streamlining the process of setting u
 | 4. | Docker image support: We'll introduce a feature that allows users to set up nodes using their Docker image |Node type support: Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain | Integration of live network testing capabilities.	
 | 5. | Parachain Node Monitoring Dashboard (Grafana)	 | Customize Alert creation and integration via Email, Slack & Pagerduty |
 | 6. | Bug Fixes | Testing of the application including functional, performance, and security testing  | Successful user testing and feedback collection phase. | Release of comprehensive user guides and tutorials.
-
-
 
 
 
@@ -261,7 +257,7 @@ For this proposal we focus on building and streamlining the process of setting u
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up monitoring on their node using our block-agent. |
 | **0c.** | Testing and Testing Guide | Essential functions of the **block-agent** will be fully covered by unit tests to guarantee functionality and resilience. The guide will outline the steps on how to run these tests. |
 | **0e** | Article | Using our communication channels, we will publish articles that explains the high-level architecture of our monitoring infrastructure and how users can set them up on their environment 
@@ -269,6 +265,7 @@ For this proposal we focus on building and streamlining the process of setting u
 | 2. | Development of One Click Parachain Deployment Feature on Dedicated server | Development of Dedicated Node Provider Marketplace |
 | 3. | Improve UX Analytics Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. | Log Dashbooard | Ability to filter logs by different Log Levels | Setup Dashboard: We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
 | 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  Successful security and performance audit of the platform | 
+
 | 5. | Deployment Guide	 | A detailed guide on how users can deploy the block-agent across various node environments, ensuring compatibility and ease of setup. |
 
 
