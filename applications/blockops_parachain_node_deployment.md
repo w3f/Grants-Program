@@ -190,6 +190,7 @@ Through our experience with Polkadot, we have developed robust strategies to max
 
 ### Team Code Repos
 
+
 - Frontend - https://github.com/blockopsnetwork/user-dashboard-client
 - Backend -  https://github.com/blockopsnetwork/api-core-service
 - Blocks - https://github.com/blockopsnetwork/blocks
@@ -236,14 +237,16 @@ For this proposal we focus on building and streamlining the process of setting u
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up parachains through a one-click setup. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Standalone Executable | Will provide standalone executable that start the GUI service and other corresponding |
-| 0e. | Article | Using our PR channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
-| 1. | Completion of the initial development phase of the one-click feature | Development of One Click Parachain Deployment Feature on GCP, AWS & Digital Ocean  |
-| 2. | Docker image support | We'll introduce a feature that allows users to set up nodes using their Docker image  |
-| 3. | Add support for hardened machine image | We'll add support for hardened machine image with security best practices and measures to reduce vulnerabilities as well as extend the availability of other base images (centOS, Fedora) |
-| 4. | Node type support | Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain.  |
-| 5. | Post-Deployment Features | Key Rotation, Updating Deployment Parameters, Performing client upgrades
-| 6. | Bug Fixes | Testing of the application including functional, performance, and security testing  |
+
+| 0e. | Article | Using our communication channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
+| 1. | Completion of the initial development phase of the one-click feature. | Development of One Click Parachain Deployment Feature on GCP, AWS & Digital Ocean | Alpha testing | User Centric Sleek Interface Design |
+| 2. | Node type support | Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain |
+| 3. | Post-Deployment Features | Dashboard for conitnued maintenance operations like Key Rotation, Updating Deployment Parameters, Performing client upgrades  |
+| 4. | Docker image support: We'll introduce a feature that allows users to set up nodes using their Docker image |Node type support: Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain | Integration of live network testing capabilities.	
+| 5. | Parachain Node Monitoring Dashboard (Grafana)	 | Customize Alert creation and integration via Email, Slack & Pagerduty |
+| 6. | Bug Fixes | Testing of the application including functional, performance, and security testing  | Successful user testing and feedback collection phase. | Release of comprehensive user guides and tutorials.
+
+
 
 
 ### Milestone 2 Development of Node Observability
@@ -257,11 +260,12 @@ For this proposal we focus on building and streamlining the process of setting u
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up monitoring on their node using our block-agent. |
 | **0c.** | Testing and Testing Guide | Essential functions of the **block-agent** will be fully covered by unit tests to guarantee functionality and resilience. The guide will outline the steps on how to run these tests. |
-| **0e** | Article | Using our communication channels, we will publish articles that explains the high-level architecture of our monitoring infrastructure and how users can set them up on their environment
-| 1. | block-agent Architecture	| Design and develop the architecture of the block-agent, ensuring it's modular and scalable. | The agent will efficiently collect vital metrics such as CPU usage, memory consumption, network latency, and other relevant node performance indicators. |
+| **0e** | Article | Using our communication channels, we will publish articles that explains the high-level architecture of our monitoring infrastructure and how users can set them up on their environment 
+| 1. | block-agent Architecture	| Design and develop the architecture of the block-agent, ensuring it's modular and scalable. | The agent will efficiently collect vital metrics such as CPU usage, memory consumption, network latency, and other relevant node performance indicators. | 
 | 2. | Development of One Click Parachain Deployment Feature on Dedicated server | Development of Dedicated Node Provider Marketplace |
 | 3. | Improve UX Analytics Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. | Log Dashbooard | Ability to filter logs by different Log Levels | Setup Dashboard: We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
-| 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  Successful security and performance audit of the platform |
+| 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  Successful security and performance audit of the platform | 
+
 | 5. | Deployment Guide	 | A detailed guide on how users can deploy the block-agent across various node environments, ensuring compatibility and ease of setup. |
 
 

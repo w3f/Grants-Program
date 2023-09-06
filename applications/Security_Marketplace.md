@@ -86,9 +86,9 @@ Here is an envisioned lifecycle of a project on our platform.
 19. The auditors will get platform Points along their profile based on their actions, for every:
     1 successful audit completion: 1XP point (Increases with more and more audits)
     1 unsuccessful audit: -3XP points (Adds up)
-20. The point system is designed to help patrons identify reputable members of the community as well as alert them of newcomers and bad elements. Once a user hits a -6XP rating, he cannot bid anymore
+21. The point system is designed to help patrons identify reputable members of the community as well as alert them of newcomers and bad elements. Once a user hits a -6XP rating, he cannot bid anymore
     on the platform.
-21. The proposed platform will charge a certain amount as a platform fee and the arbiter’s commission, the remaining funds will be transferred to the auditor’s wallet address connected to their profile.
+22. The proposed platform will charge a certain amount as a platform fee and the arbiter’s commission, the remaining funds will be transferred to the auditor’s wallet address connected to their profile.
 
 
 
@@ -256,10 +256,10 @@ Awaiting Response.
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1 | UI/UX | We will deliver complete UI/UX designs. |
 | 2 | Reputation Token Contract| This will be a non-transferrable token smart contract(Soul Bound Token) that will serve as auditors' reward and as proof of reputation points after the successful completion of an Audit.  |
-| 3 | Escrow Contract| This will be a master contract where all tokens will be managed by patrons and distributed to the Auditors after the successful closure of the Audit.  |
-| 4 | Audit Directory Contract| This will be a contract that stores all hashes of the audit reports. Which can be retrieved even when the platform goes down.  |
-| 5 | Arbiters Contract| This contract will have specific arbiters for every audit thread where they can participate in the voting.  |
-| 6 | Node Services | We will deliver the backend services for login , sign up, 2FA and Profile creation |
+| 3 | Escrow Contract| This will be a master contract where all tokens will be managed by patrons and distributed to the Auditors after the successful closure of the Audit.This contract will also store all hashes of the audit reports. Which can be retrieved even when the platform goes down.  |
+| 4 | Arbiter's voting Contract| This contract will have specific arbiters for every audit thread where they can participate in the voting. |
+| 5 | Node Services | We will deliver the backend services for login , sign up, 2FA and Profile creation |
+
 
 
 ### Milestone 2 — Application & Deliveries
@@ -290,4 +290,5 @@ Awaiting Response.
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Through RFP Portal.
+**How did you hear about the Grants Program?**
+Through RFP Portal.

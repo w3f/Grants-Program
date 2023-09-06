@@ -36,7 +36,7 @@ jobs:
           remote-repository-name: grants-cla
           #create-file-commit-message: 'For example: Creating file for storing CLA Signatures'
           #signed-commit-message: 'For example: $contributorName has signed the CLA in $owner/$repo#$pullRequestNo'
-          custom-notsigned-prcomment: 'Thank you for your submission, we really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/T%26Cs.md) before we can accept your contribution.'
+          custom-notsigned-prcomment: 'Thank you for your submission, we really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/T%26Cs.md) before we can accept your contribution. Please submit the following text as a separate comment:'
           custom-pr-sign-comment: 'I have read and hereby sign the Contributor License Agreement.'
           #custom-allsigned-prcomment: 'pull request comment when all contributors has signed, defaults to **CLA Assistant Lite bot** All Contributors have signed the CLA.'
           lock-pullrequest-aftermerge: false # if you don't want this bot to automatically lock the pull request after merging (default - true)
