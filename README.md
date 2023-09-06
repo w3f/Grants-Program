@@ -323,7 +323,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
-- [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
 - [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
 - [KodaDot Ecosystem Grants](https://github.com/kodadot/grants)
@@ -334,6 +334,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)
+- [Pendelum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
 
 ## :information_source: License<!-- omit in toc -->
 
