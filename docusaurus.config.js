@@ -5,12 +5,12 @@ const mdxMermaid = require('mdx-mermaid');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Web3 Foundation Grants',
-  tagline: 'Funding software development and research efforts related to Polkadot, Kusama, Substrate and ink!.',
-  url: 'https://w3f.github.io',
-  baseUrl: '/Grants-Program/',
+  tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama.',
+  url: 'https://grants.web3.foundation',
+  baseUrl: '/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/Web3Foundation.png',
+  favicon: 'img/favicon-32x32.png',
   organizationName: 'w3f', // Usually your GitHub org/user name.
   trailingSlash: false,
   projectName: 'Grants-Program', // Usually your repo name.
@@ -28,52 +28,47 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Check out <a target="_blank" rel="noopener noreferrer" href="https://web3.bamboohr.com/jobs/">our current job openings</a>!',
-      backgroundColor: '#E6007A',
+        'Meet us at <a target="_blank" rel="noopener noreferrer" href="https://www.polkadot.network/ecosystem/events/sub0/">sub0</a>!',
+      backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
     },
     navbar: {
-      title: 'W3F Grants Program',
+      title: 'Grants Program',
       logo: {
         alt: 'W3F Grants Program',
-        src: 'img/Web3Foundation.png',
+        src: 'img/w3f_logo.svg',
       },
       items: [
         {
           type: 'doc',
-          docId: 'Introduction/index',
+          docId: 'docs/introduction',
+          position: 'right',
           label: 'Introduction',
         },
         {
           type: 'doc',
-          docId: 'Applications/index',
-          position: 'left',
+          docId: 'applications/index',
+          position: 'right',
           label: 'List of Grants',
         },
         {
           type: 'doc',
-          docId: 'FAQ',
+          docId: 'docs/faq',
+          position: 'right',
           label: 'FAQ',
         },
         {
           type: 'doc',
-          docId: 'Process/index',
+          docId: 'docs/Process/how-to-apply',
           position: 'right',
           label: 'Apply',
-        },
-        {
-          type: 'doc',
-          docId: 'Contribute',
-          position: 'right',
-          label: 'Contribute',
         }
       ],
     },
     footer: {
       style: 'dark',
       links: [
-
         {
           title: 'More Info',
           items: [
@@ -85,7 +80,13 @@ module.exports = {
               label: 'Website',
               href: 'https://web3.foundation/',
             },
+            {
+              label: 'Privacy Policy',
+              to: 'docs/Support%20Docs/privacy_policy',
+            },
           ],
+        }, 
+        {
           title: 'Connect',
           items: [
             {
@@ -99,11 +100,20 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Web3 Foundation. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Web3 Foundation`,
     },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    algolia: {
+      appId: '9VKKGZO0U1',
+      apiKey: '89d564c771c26d6eb84fe9cf608c128d',
+      indexName: 'grants-program',
+      contextualSearch: true,
+      externalUrlRegex: 'https://w3f.github.io',
+      searchParameters: {},
+      searchPagePath: 'search',
     },
   },
   presets: [
@@ -111,8 +121,9 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: '.',
           routeBasePath: '/', 
-          // editUrl: 'https://github.com/w3f/grants/edit/master/',
+          editUrl: 'https://github.com/w3f/Grants-Program/edit/master/',
           // showLastUpdateAuthor: true,
           // showLastUpdateTime: true,
           sidebarPath: require.resolve('./sidebars.js'),
@@ -126,9 +137,25 @@ module.exports = {
           rehypePlugins: [
           ],
           exclude: [
-            'Applications/application-template.md',
-            'Applications/example-project.md',
-            'rfps/suggestion-template.md'
+            'applications/application-template.md',
+            'applications/example-project.md',
+            'applications/maintenance/maintenance-template.md',
+            'applications/application-template-research.md',
+            'docs/RFPs/suggestion-template.md',
+            '.docusaurus/**',
+            '.github/**',
+            '.vscode/**',
+            'build/**',
+            'node_modules/**',
+            'src/**',
+            'static/**',
+            'babel.config.js',
+            '.gitignore',
+            'LICENSE',
+            'package-lock.json',
+            'package.json',
+            'sidebars.js',
+            'README.md'
           ],
         },
         blog: false,

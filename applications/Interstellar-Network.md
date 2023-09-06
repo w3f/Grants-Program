@@ -263,21 +263,34 @@ We are now multiple security and fintech  entrepreneurs, security researchers, p
 | 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)  |  
 | 1. | Substrate modules Authenticator port in TEE | We will migrate Authenticator in SubstraTEE/IntegriTEE workers. |  
 | 2. | Substrate module Mobile Registry port in TEE | We will migrate a part of the Mobile Registry pallet in SubstraTEE/IntegriTEE workers. |  
-  
-### Milestone 5 — GCF in TEE
 
-- **Estimated Duration:** 1 month
+
+### Milestone 5 — GCF Garbling service part in TEE (amended)
+
+- **Estimated Duration:** 6 weeks
 - **FTE:**  2.2
 - **Costs:** 9,400 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT  |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can manage GCF in IntelSGX/Asylo.  |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can manage GCF garbling service part  in IntelSGX  |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)  |  
-| 1. | GCF external service in TEE | We will migrate GCF service in TEE/Intel SGX with Asylo framework. |
+| 0e. | Article | We will write and share (not officially publish as we are still in stealth mode) an **article** that explains what was done/achieved with the grant. (Content, language and medium should reflect your target audience described above.)  |  
+| 1. | replacement of JustGarble (GPL) with Swanky/Fancy-Garbling (MIT)| In order to use a TEE framework we need a non-GPL garbling scheme code | 
+| 2. | part of GCF external service in TEE | We will migrate the circuit garbling service part in TEE/Intel SGX| 
+| 3. | android client garbled circuit evaluation updated | we will update the evaluator on android with the Fancy-Garbling scheme|
+  
+
+> **notes regarding this change:**
+
+>1: We have decided to let the creation of the Master/Configuration logical circuit part managed by ocwCircuit outside of TEE because api_circuit is not critical from a security standpoint in our use case.So, we have no reason to manage it within a TEE.
+>  
+>2-3: We replaced the GPL code of JustGarble by Fancy-Garbling because we can't use GPL licence with a TEE framework. Fancy-Garbling is a classic garbling scheme using a different circuit file format and mainly design for multi-party-computation use cases. So, the change slightly impacts circuit garbling performance. As a consequence we aim at proposing a slight refactoring of the code to ensure performance optimization in a follow-up grant to achieve performance at least comparable to JustGarble. Potentially adding a permutation based garbling scheme like the one used by JustGarble if required.
+
+
+
 
 ## Future Plans
 

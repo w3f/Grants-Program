@@ -3,6 +3,7 @@
 * **Team Name:** Litentry
 * **Payment Address:** 0x37a45AdBb275d5d3F8100f4cF16977cd4B0f9Fb7 (USDT)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/641#issuecomment-1320286386)
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 

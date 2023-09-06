@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if:  github.repository_owner == 'w3f'
     name: build and deploy
     runs-on: ubuntu-latest
     steps:
@@ -17,10 +18,17 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
       - name: Publish
         run: |
           git config --global user.email "grants-deployer@users.noreply.github.com"
           git config --global user.name "grants-deployer"
           echo "machine github.com login grants-deployer password ${{ secrets.ACCESS_KEY }}" > ~/.netrc
           yarn && yarn build && GIT_USER=grants-deployer PUBLISHING=true yarn deploy
+      - if: ${{ failure() }}
+        uses: fadenb/matrix-chat-message@v0.0.6
+        with:
+          homeserver: 'matrix.web3.foundation'
+          token: ${{ secrets.MATRIX_TOKEN }}
+          channel: ${{ secrets.MATRIX_CHANNEL_ID }}
+          message: |
+            WEBSITE BUILD FAILED: [This](https://github.com/w3f/Grants-Program/commit/${{ github.sha }}) is the last push commit.

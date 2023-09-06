@@ -1,7 +1,7 @@
 # QSTN
 
 - **Team Name:** QSTN
-- **Payment Address:** ETH - 0x7056A5Da7D269B31Eb2E54E5579e41ef283d7D2C
+- **Payment Address:** ETH (USDC) - 0x7056A5Da7D269B31Eb2E54E5579e41ef283d7D2C
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -187,14 +187,14 @@ Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-priv
 
 ### Overview
 
-- **Total Estimated Duration:** 2.5 months
-- **Full-Time Equivalent (FTE):**  6 employees (2 developers, 3 designers, 1 blockchain architect [Orrin])
+- **Total Estimated Duration:** 12 months
+- **Full-Time Equivalent (FTE):**  8 employees (4 developers, 3 designers, 1 blockchain architect [Orrin])
 - **Total Costs:** 10,000 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-- **Estimated duration:** 2.5 months
-- **FTE:**  6 employees
+- **Estimated duration:** 12 months
+- **FTE:**  8 employees
 - **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |

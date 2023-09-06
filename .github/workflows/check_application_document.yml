@@ -1,0 +1,60 @@
+name: Check application document
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  discussion_private:
+    if: |
+        github.event.action == 'opened' &&
+        contains(github.event.pull_request.body, 'Project Abstract') && (
+          !contains(github.event.pull_request.body, '- [ ] I prefer the discussion') || 
+          (
+            contains(github.event.pull_request.body, '- [ ] I prefer the discussion') &&
+            !contains(github.event.pull_request.body, '@_______:matrix.org')
+          )
+        )
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add 'discussion private' label if the application is private
+        uses: actions/github-script@v6
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["discussion private"]
+            })
+
+  get_filename:
+    if: contains(github.event.pull_request.body, 'Project Abstract')
+    runs-on: ubuntu-latest
+    outputs:
+      filename: ${{ steps.files.outputs.added }}
+    steps:
+
+      - name: Get application filename # We assume there's only one
+        id: 'files'
+        uses: Ana06/get-changed-files@v2.0.0
+        with:
+          filter: 'applications/*.md'
+          format: 'csv'
+
+  parse_document:
+    needs: get_filename
+    if: needs.get_filename.outputs.filename
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Parse application file
+        id: grant_parser
+        uses: w3f/parse-grant-application-action@master
+        with:
+          path: "${{ github.workspace }}/${{ needs.get_filename.outputs.filename }}"

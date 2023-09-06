@@ -1,7 +1,7 @@
 # Dante Network
 
 - **Team Name:** Dante Network
-- **Payment Address:** 0xc92314a5f62FA54b272612804C9Ac70AC139F7B0 (Ethereum ERC20 USDT)
+- **Payment Address:** 14yr1tovebKbRbxggduV1vbTPtRQtgzTXh9tdZ34w3pGbc4W (Polkadot (Statemint) USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
