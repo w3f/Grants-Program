@@ -128,13 +128,13 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 
 ## Development Status :open_book:
 
-- [https://github.com/kodadot/stick](https://github.com/kodadot/stick) This is the repo for AssetHub Indexer.
-- [https://github.com/kodadot/uniquery](https://github.com/kodadot/uniquery) This is the repo for SDK.
+- [github.com/kodadot/stick/milestone/1](https://github.com/kodadot/stick/milestone/1) - Milestone 1 track
+- [github.com/kodadot/stick](https://github.com/kodadot/stick) This is the repo for AssetHub Indexer.
+- [github.com/kodadot/uniquery](https://github.com/kodadot/uniquery) This is the repo for SDK.
 
 ## Development Roadmap :nut_and_bolt:
 
-### AssetHub Indexer Implementation
-
+## Milestone 1 - AssetHub Indexer Implementation first part
 - **Estimated duration:**  3 months ⌛️
 - **FTE:**  2 FTE
 - **Costs:**  30,000 USD 💰
