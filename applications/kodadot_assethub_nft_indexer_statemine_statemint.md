@@ -2,7 +2,7 @@
 
 - **Team Name:**  KodaDot
 - **Payment Address:**  1KxzJHoRJHi8EgWVhrGDueeyzg8PyihAvSL3NP6QMcxEve6
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#rooster-level-3):**  3 🐓
+- **[Level](https://github.com/w3f/Grants-Program#baby_chick-level-2):**  2 
 
 ### Overview
 
@@ -136,8 +136,8 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 ### AssetHub Indexer Implementation
 
 - **Estimated duration:**  3 months ⌛️
-- **FTE:**  4 FTE
-- **Costs:**  50,000 USD 💰
+- **FTE:**  2 FTE
+- **Costs:**  30,000 USD 💰
 
 
 | Sequence | Deliverable                                         | Description                                                                                                   |
@@ -158,11 +158,6 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 | 4d.   | NFT Pallet LIST Handler                    | Deployment of a handler for indexing LIST events from the chain.                                              |
 | 4e.   | NFT Pallet SEND Handler                    | Deployment of a handler for indexing SEND events from the chain.                                              |
 | 4f.   | NFT Pallet BURN Event                      | Introduction of a handler to index BURN events from the chain.                                                |
-| 5.      | Atomic Swaps Schema Development       | Creating and designing a GraphQL schema entity to represent Atomic Swaps.                                 |
-| 6a.   | Atomic Swaps CREATE Handler            | Deployment of a handler for indexing creates swap events from the chain.                                       |
-| 6b.   | Atomic Swaps CANCEL Event              | Implement a handler to index cancel swap events from the chain.                                       |
-| 6c.   | Atomic Swaps CLAIM Event                | Development of a handler to index claim swap events from the chain.                                           |
-| 6d.   | Atomic Swaps with Surcharge Handler | creation of an indexing handler for swap events with a surcharge from the chain.                              |
 | 7a.   | On-chain Attributes Schema Design      | Development and design of a GraphQL schema entity representing on-chain attributes.                           |
 | 7b.   | On-chain Attributes CREATE Handler  | Implementing a handler to index the creation of an attribute for collection from the chain.                       |
 | 7c.   | On-chain Attributes CREATE for NFT  | development of a handler to index the creation of an attribute for NFT from the chain.                            |
@@ -183,35 +178,10 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 | 9.      | Metadata Support for Fungible Assets | Implement a handler to add metadata to a fungible asset event from the chain.                          |
 | 9c.   | Fungible Asset Allowlist Setup        |Setting up allows list-based indexing of fungible assets.                                                       |
 | 10a.  | Data Views Development                |Construction of data views for efficient access to indexed data.                                               |
-| 10b.  | Asset Caching Layer                         | Development of a caching layer for faster performance.                                                        |
-| 10c.  | Implementing Metadata Caching Layer |Develop and retry IPFS metadata if un-indexed by 7j.                                                               |
+| 10b.  | Implementing Metadata Caching Layer |Develop and retry IPFS metadata if un-indexed by 7j.                                                               |
 | 11.    | Transfer of Collection Ownership    |Incorporate functionality to transfer collection ownership.                                                    |
-| 12.    | Altering Collection Permissions      |Provide functionality to alter permissions per collection.                                                     |
-| 13a.  | Collection Type Schema Creation     |Design and include support for various collection types (public, holder, issuer) in the GraphQL schema.        |
-| 13b.  | Collection Type Handler Creation     |Develop a handler to incorporate collection type into the collection.                                          |
-| 13c.  | Update Minting Settings                 |Implement functionality for updating minting settings per collection.                                          |
-| 13d.  | Introduction of Standalone Collection Schema | Design and add support for standalone collections (without owner) in the GraphQL schema.                        |
-| 13e.  | Standalone Collection Handler Creation |Deploy a handler to add standalone collections (without owner) per collection.                                  |
-| 14a.  | Allocation of Initial Storage Bandwidth |Provide an initial bandwidth budget for IPFS item fetching (Payment is based on bandwidth scale).               |
-| 14b.  | Initial Storage Budget Allocation     |Allocate initial storage budget of $5,000 (Equivalent to 100GB storage at $5 per GB) for initial items minting, allowing for future data expansion.|
-| 15a. | API Implementation: collectionById       |API to fetch collection using its id.                                                                           |
-| 15b. | API Implementation: collectionListByIssuer |API to fetch collections with a specified address as the issuer (creator).                                      |
-| 15c. | API Implementation: collectionListByName  |API to fetch collections containing the specified name.                                                         |
-| 15d. | API Implementation: collectionListByOwner  |API to fetch collections owned by the specified address.                                                        |
-| 15e. | API Implementation: eventList                   |API that returns all events.                                                                                    |
-| 15f. | API Implementation: eventListByAddress      |API that yields events bound to a specified address.                                                            |
-| 15g. | API Implementation: eventListByCollectionId |API that generates events for NFTs belonging to the specified collection.                                        |
-| 15h. | API Implementation: eventListByInteraction   |API fetching events by specific interaction.                                                                   |
-| 15i. | API Implementation: eventListByItemId         |API that fetches events associated with the specified NFT id.                                                   |
-| 15j. | API Implementation: itemById                       |API that fetches a NFT using its id.                                                                           |
-| 15k. | API Implementation: itemListByCollectionId    |API fetching NFTs from a collection with specified id.                                                         |
-| 15l. | API Implement: itemListByCollectionIdAndOwner |API to fetch NFTs from a collection with a specific id and owned by a specified address.                           |
-| 15m. | API Implement: itemListByCollectionIdList        |API to retrieve a list of NFTs from specified collections.                                                     |
-| 15n. | API Implementation: itemListByIssuer                |API to fetch NFTs where the issuer (creator) is equal to the specified address.                                    |
-| 15o. | API Implementation: itemListByName                    |API to retrieve NFTs containing the specified name.                                                            |
-| 15p. | API Implementation: itemListByMetadataId             |API to fetch NFTs with specified metadata uri.                                                                 |
-| 15r. | API Implement: itemListByMetadataIdMatch             |API to fetch NFTs with metadata matching the provided CID.                                                     |
-| 15s. | API Implementation: itemListByOwner                     |API fetching NFTs owned by the specified address.                                                              |
+| 12a.  | Allocation of Initial Storage Bandwidth |Provide an initial bandwidth budget for IPFS item fetching (Payment is based on bandwidth scale).               |
+| 13b.  | Initial Storage Budget Allocation     |Allocate initial storage budget of $5,000 (Equivalent to 100GB storage at $5 per GB) for initial items minting, allowing for future data expansion.|
 
 ## Future Plans 🔭
 
@@ -229,13 +199,6 @@ Upon the successful deployment of the AssetHub Indexer, our team plans to contin
 10. Maintenance of compatibility with runtime upgrades and changes in the Kusama/Statemine ecosystem.
 11. Regular updates to keep up with Substrate for continuous system enhancement.
 12. Management of upgrades to parachain runtime versions, including indexer enhancements and related costs.
-
-## Future Plans
-
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
 
 ## Additional Information  ➕
 
