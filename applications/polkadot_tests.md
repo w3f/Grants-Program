@@ -2,7 +2,8 @@
 
 - **Team Name:** Zondax AG
 - **Payment Address:** (DAI ERC 20)  0xf50a09731dc32a64431920e10e1e58dce28e6b11 
-- **[Level]**: 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+
 
 ## Project Overview :page_facing_up:
 
