@@ -84,6 +84,10 @@ module.exports = {
               label: 'Privacy Policy',
               to: 'docs/Support%20Docs/privacy_policy',
             },
+            {
+              label: 'Legal Disclosures',
+              to: 'https://web3.foundation/legal-disclosures/',
+            },
           ],
         }, 
         {
