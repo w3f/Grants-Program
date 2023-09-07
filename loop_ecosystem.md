@@ -219,24 +219,11 @@ We are in the early stages of development, focusing on designing the smart contr
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-- **Total Estimated Duration:** The development of Loop is planned over an eight-month period
+- **Total Estimated Duration:** The development of Loop is planned over a seven-month period
 - **Full-Time Equivalent (FTE):**  4 FTE
-- **Total Costs:** The estimated cost of the project is $80,000 USD, covering design and architecture, smart contract development and NFTs implementation, user and merchant interface development, cross-chain compatibility implementation, as well as testing, documentation, and deployment. The project has been broken down into six detailed milestones
-  
-### Milestone 1 — Design & Architecture
-- **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 10,000 USD
+- **Total Costs:** The estimated cost of the project is $80,000 USD, covering design and architecture, smart contract development and NFTs implementation, user and merchant interface development, cross-chain compatibility implementation, as well as testing, documentation, and deployment. The project has been broken down into five detailed milestones
 
-| Number | Deliverable | Specification | Technologies, Languages & Frameworks | 
-| -----: | ----------- | ------------- | ------------------------------------ |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Mapping out the system design and architecture | The first phase of the project will entail mapping out the complete system design and architecture. This involves understanding user requirements, designing data models, defining system specifications, and creating a roadmap for the subsequent development process. The team's focus will be on crafting an architecture that ensures optimal performance, reliability, and scalability, while allowing for seamless integration with various loyalty programs. | N/A |
-
-### Milestone 2 — Smart Contract Development & NFTs Implementation
+### Milestone 1 — Smart Contract Development & NFTs Implementation
 - **Estimated Duration:** 2 month
 - **FTE:**  4
 - **Costs:** 20,000 USD
@@ -249,7 +236,7 @@ We are in the early stages of development, focusing on designing the smart contr
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Smart contracts and NFTs | Once the design and architecture have been established, the team will focus on the development of smart contracts for the loyalty reward ecosystem. This phase will involve creating smart contracts for various operations, including exchange, redemption, and transfer of loyalty points. Also, the team will implement the NFT functionality, which will enable the representation of loyalty points as unique tokens that can be easily tracked and traded across different loyalty programs. | iNK! | 
 
-### Milestone 3 — User Interface Development with Web2 Friendly Solution
+### Milestone 2 — User Interface Development with Web2 Friendly Solution
 - **Estimated Duration:** 2 month
 - **FTE:**  3
 - **Costs:** 20,000 USD
@@ -262,10 +249,10 @@ We are in the early stages of development, focusing on designing the smart contr
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | User Interface | The third phase will involve the development of the user interface (UI). The objective is to create an intuitive, responsive, and user-friendly interface that can be easily navigated by both crypto-savvy and non-crypto users. The team will also ensure the platform is Web2-friendly, enabling users to interact with the platform without the need to have a wallet. This will be achieved by integrating technologies such as Magic.link to provide passwordless login and transactions. | React, CSS, HTML5, Javascript, Magic.link and Django |
 
-### Milestone 4 — Merchant Interface Development
+### Milestone 3 — Merchant Interface Development
 - **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 10,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification | Technologies, Languages & Frameworks | 
 | -----: | ----------- | ------------- | ------------------------------------ |
@@ -275,10 +262,10 @@ We are in the early stages of development, focusing on designing the smart contr
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Merchant Interface | Following the development of the user interface, the team will proceed to develop the merchant interface. This interface will provide merchants with the tools necessary to manage their loyalty programs on the platform, including adding or removing loyalty programs, managing loyalty points, and tracking customer activity. | React, HTML5, Javascript and CSS |
 
-### Milestone 5 — Cross-Chain Compatibility Implementation
+### Milestone 4 — Cross-Chain Compatibility Implementation
 - **Estimated Duration:** 1 month
 - **FTE:**  3
-- **Costs:** 10,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification | Technologies, Languages & Frameworks | 
 | -----: | ----------- | ------------- | ------------------------------------ |
@@ -288,7 +275,7 @@ We are in the early stages of development, focusing on designing the smart contr
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Cross-chain compatibility | In the fifth milestone, the team will work on implementing cross-chain compatibility to allow other blockchain networks to interact with the Loop platform. This is crucial for the scalability of the project, as it allows users to transact with various loyalty programs regardless of the blockchain network they belong to. The team will integrate with networks such as Ethereum, Binance Smart Chain, and other Substrate-based chains. | Python, Substrate, XCM and WebServer (Oracle) |
 
-### Milestone 6 — Testing, Documentation & Deployment
+### Milestone 5 — Testing, Documentation & Deployment
 - **Estimated Duration:** 1 month
 - **FTE:**  2
 - **Costs:** 10,000 USD
