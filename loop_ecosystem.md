@@ -1,7 +1,8 @@
 # Loop
 
 - **Team Name:** Loop Ecosystem Team
-- **Payment Address:** To be defined 
+- **Payment Address:** To be defined
+- Level: 3
 
 ## Project Overview :page_facing_up:
 ### Overview
