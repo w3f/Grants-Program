@@ -47,7 +47,7 @@ Other Smart-Services provide additional functionality, for example:<br>
 <br>  
 
 
-![v1](https://github.com/w3f/Grants-Program/assets/21257942/77951903-aef0-44bc-a70f-1bb3c3ad2527)
+![diagram](https://github.com/pengzhile/cocopilot/assets/21257942/3ff1b52d-6f63-41eb-af52-fa72bc1a7d75)
 
 - ink! Smart Contracts
 - Substrate
