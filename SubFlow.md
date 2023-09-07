@@ -91,7 +91,7 @@ In short (kind of), generally speaking, a decentralised free social network is i
 - **Slava Puganov** <br> Adaptable Full-Stack developer specialising in front-end and back-end development. Expertise in fintech, cyber security and
 software architecture, ensuring robust and secure software solutions.<br>
 
-- **Oliver Fohrmann** <br> Oliver is the team's Rust, ink! and Polkadot development technical advisor.<br> Blockchain and DAG engineer and developer with experience in Ethereum, IOTA and Polkadot. Expertise in cyber security, MedTech and software architecture.<br>
+- **Oliver Fohrmann** <br> Oliver is the team's Rust, ink! and Polkadot development technical advisor.<br> Systems Architect and Engineer with experience in Ethereum, Solana, IOTA and Polkadot. Expertise in cyber security, MedTech and software architecture.<br>
 
 ### Team Code Repos
 
