@@ -38,7 +38,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/)
-- [Picasso / Composable Grants Program](https://grants.composable.finance)
+- [Picasso / Composable Grants Program](https://docs.composable.finance/ecosystem/composable-grants/)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 - [Pendelum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
