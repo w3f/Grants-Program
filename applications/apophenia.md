@@ -128,8 +128,8 @@ Apophenia also aims to provide data aggregation functionality to increase both d
 
 ### Legal Structure
 
-- **Registered Address:** TBD
-- **Registered Legal Entity:** TBD
+- **Registered Address:** Freelancer Hub Floor 1 (FL.H-01819), AFZ Building 1, Ajman, UAE
+- **Registered Legal Entity:** MINDSET LABS - F.Z.E (incorporated and registered in Ajman free zone with license number 32292)
 
 ### Team's experience
 
