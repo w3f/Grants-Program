@@ -1,7 +1,7 @@
 # Apophenia (Oracle) Parachain
 
 - **Team Name:** Subslice
-- **Payment Address:** TBD
+- **Payment Address:** _(DOT - RelayChain)_ 12YJb3uLibc5qGWHncP4A47NYuJ5eDyTSq7iWyNJMmM4NGdN
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
