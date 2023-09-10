@@ -32,6 +32,7 @@ Technology stack:
 - Typescript 
 - Elasticsearch
 - JavaScript
+- Subsquid
 
 ### Ecosystem Fit
 
@@ -94,27 +95,7 @@ This project will be a proof of concept (PoC) to demonstrate a particular use ca
 - **Full-Time Equivalent (FTE):**  2 FTE (full-time employees)
 - **Total Costs:** 20,000 USD
 
-### Milestone 1 
-
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 10,000 USD
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both readme.md and official docs documentation |
-| **0c.** | Testing and Testing Guide | Testing guide will be mentioned in official docs & core unit tests will be provided |
-| 1. | Data model definition | Designing and defining the architectural overview of the data model for this application  |
-| 2. | NFT scanner module | This module will be in middle layer to scan the blockchain for the blocks containing NFT related data from the genesis block and invoke indexer module (We will be indexing only blocks that has NFT related data.)|
-
-### Milestone 2 
-
-- **Estimated Duration:** 1,5 month
-- **FTE:**  1,5
-- **Costs:** 10,000 USD
-
+### Milestone
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -122,9 +103,18 @@ This project will be a proof of concept (PoC) to demonstrate a particular use ca
 | **0b.** | Documentation |  We will provide both readme.md and official architectural documentation of the NFT scanner module |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0e.** | Article | Add an article covering how to integrate NFT-SDK in a project. |
-| 1. | NFT indexer module | Index all the data that is scanned by the scanner module and pass it to the database layer. |
-| 2. | Design and development of the NFT provenance SDK | A typescript-based SDK which consists of API calls to the database to fetch the NFT lifecycle. |
-| 3. | Technical Documentation for the SDK | We will provide a technical doc outlining the process of integrating the SDK to other projects. |
+| 1. | NFT Schema Development | Development of data models for the indexing of the NFT related extrinsic so that users can get compressive information of the NFT lifecycle  |
+| 2. | Collection schema development | Development of NFT-collection schema models |
+| 3. | NFT fractionalization schema development | Development of fractionalization schema models |
+| 4. | NFT lifecycle schema development | Developing schema models for the NFT lifecycle, which includes the ownership, transfer, locking, or fractionalization of NFT |
+| 5. | NFT pallet event indexer  | Development of the module to monitor the latest block generation via subsquid |
+| 6. | Asset pallet event and fractionalization indexer  | Development of the module to monitor the pallet NFT actions and NFT fractionalization pallet actions |
+| 7. | Integration of subsquid  | Using subsquid to get the latest block information  |
+| 8. | Implementation of APIs  | Development of endpoints which can ge used for SDKs request to fetch more details about the NFT lifecycle  |
+| 9. | Implementation of SDK  | Develop SDK to facilitate the users call to actions |
+| 10. | NFT indexer module | Index all the data that is scanned by the scanner module and pass it to the database layer. |
+| 11. | Design and development of the NFT provenance SDK | A typescript-based SDK which consists of API calls to the database to fetch the NFT lifecycle. |
+| 12. | Technical Documentation for the SDK | We will provide a technical doc outlining the process of integrating the SDK to other projects. |
 
 ## Future Plans
 
