@@ -105,6 +105,14 @@ While there are pallets and integrations within some Parachains currently (ex: D
 
 Apophenia also aims to provide data aggregation functionality to increase both data quality and security. This is a feature that can make Apophenia a unique solution.
 
+In regards to alternatives, we have observed that most of the projects under Oracle are inactive. For those that are active, here's a quick comparison:
+
+* interBTC: specialized for Bitcoin quotes, we intend to be a generalized oracle solution instead.
+* DIA: current solution available on Astar as ink! smart contracts. Like Laminar and Chainlink. data is pushed on-chain by centralized (and usually manually verified) offchain services.
+* Bridgestate: focused on collateralization values of bridges.
+* Tellor: a full fledged solution which we are ultimately building towards, however, as it stands the consumer parachains need to be EVM compatible, have smart contracts enabled and install a separate pallet to gain oracle functionality. In our case, simply using XCM queries is sufficient to gain full functionality. We intend to use similar game-theoretic and statistical techniques to validate data across different feeds.
+* Laminar: Data has to be actively pushed from external sources, triggered offchain. Overall it's a pallet to be included. Overall it contains some of the same restrictions as DIA and Chainlink.
+
 <!-- Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
