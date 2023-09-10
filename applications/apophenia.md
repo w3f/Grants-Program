@@ -91,7 +91,7 @@ The main components of the Apophenia architecture are:
 - **Feed Registry Pallet**
 - **Oracle Client**
 - **Oracle Offchain Worker**
-- **TEE and Smart Contract Pools** (optional)
+- **TEE and Smart Contract Pools** (stretch)
 
 ![Apophenia Architecture](https://github.com/subslice/oracle-parachain/blob/main/images/Paraxiom%20Pallets%20Overview.png?raw=true)
 
@@ -135,7 +135,7 @@ Apophenia also aims to provide data aggregation functionality to increase both d
 
 - Arthur Franco Moreira has a mathematical background and 4+ years of software engineering, ranging from implementing portfolio optimization techniques, to backend web development and blockchain development. In the last 1.5 years, Arthur has been working as Rust and Substrate developer, working for a Brazilian payments company that uses a Substrate-based solochain.
 
-- Faisal Al Tameemi is a Technologist, an Educator, and an Entrepreneur. He is passionate about the intersection of Entrepreneurship, Engineering, and Psychology to craft successful products. Having held various positions, he brings a depth of technical knowledge combined with a business acumen which adds considerable value. Experience in education ensures that the team is always growing and junior members of the team get the support they need. Currently, he is focused on building decentralized systems and applications in web3.
+- Faisal Al Tameemi is a Technologist, an Educator, and an Entrepreneur. He is passionate about the intersection of Entrepreneurship, Engineering, and Psychology to craft successful products. Having held various positions, he brings a depth of technical knowledge combined with a business acumen. Currently, he is focused on building decentralized systems and applications in web3.
 
 As the **Subslice** team, we have partenered after the Polkadot Blockchain Academy to tackle interesting projects for the Dotsama ecosystem. In May 2023 we won the **Astar Challenge for best Wasm dApp** in the _Encode x Polkadot Spring 2023 Hackathon_ with the [GameSlice project](https://github.com/subslice/game-theory).
 
