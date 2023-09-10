@@ -105,7 +105,7 @@ While there are pallets and integrations within some Parachains currently (ex: D
 
 Apophenia also aims to provide data aggregation functionality to increase both data quality and security. This is a feature that can make Apophenia a unique solution.
 
-In regards to alternatives, we have observed that most of the projects under Oracle are inactive. For those that are active, here's a quick comparison:
+In regards to alternatives, we have observed that most of the [projects under Oracle are inactive](https://wiki.polkadot.network/docs/build-open-source). For those that are active, here's a quick comparison:
 
 * interBTC: specialized for Bitcoin quotes, we intend to be a generalized oracle solution instead.
 * DIA: current solution available on Astar as ink! smart contracts. Like Laminar and Chainlink. data is pushed on-chain by centralized (and usually manually verified) offchain services.
