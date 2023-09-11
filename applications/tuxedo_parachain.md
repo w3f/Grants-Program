@@ -24,7 +24,8 @@ They are also analogous in that they need additional code to serve as parachain 
 
 The code that allows a FRAME to work as a parachain is a large part of cumulus.
 Specifically, it is in the [Parachain System pallet](https://paritytech.github.io/cumulus/cumulus_pallet_parachain_system/index.html) and the [`generate_validate_block!` macro](https://paritytech.github.io/cumulus/src/cumulus_pallet_parachain_system_proc_macro/lib.rs.html#94-153).
-The first two milestones are devoted to adapting and rewriting these two ipmortant pieces of code in a UTXO-native way.
+The first two milestones are devoted to adapting and rewriting these two important pieces of code in a UTXO-native way.
+
 This is the crux of the parachain support.
 
 This work will be implemented in a crate called `tuxedo-parachain` in the existing [Tuxedo repository](https://github.com/Off-Narrative-Labs/Tuxedo).
@@ -143,7 +144,8 @@ cumulus_pallet_parachain_system::register_validate_block! {
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains the difference between the FRAME based approach and the Tuxedo based approach to this macro |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1.  | Tuxedo Parachain Template | If you crossed the standalone Tuxedo Template with the Cumulus Template. This is the main deliverable for the grant. A working tempalte node for a Tuxedo-based parachain runtime and colaltor node. |
+| 1.  | Tuxedo Parachain Template | If you crossed the standalone Tuxedo Template with the Cumulus Template. This is the main deliverable for the grant. A working template node for a Tuxedo-based parachain runtime and collator node. |
+
 
 ### Milestone 3 — Benchmarking 
 
@@ -172,7 +174,8 @@ We have a vision for a Tuxedo parachain that acts as an Atomic Swap hub for DOT 
 
 The [Farcaster](https://github.com/farcaster-project) provides a Monero Bitcoin atomic swap protocol.
 We intend to extend this protocol to support Tuxedo chains.
-And thanks to Polkadot's XCM, this would allow atomic swaps between other DOT ecosystem asstes and foreign UTXO chains as well.
+And thanks to Polkadot's XCM, this would allow atomic swaps between other DOT ecosystem assets and foreign UTXO chains as well.
+
 
 Following completion of this grant, the path to working Atomic Swaps would be roughly
 
@@ -182,7 +185,8 @@ Following completion of this grant, the path to working Atomic Swaps would be ro
 
 ### Medium Term
 
-Otherdreams we have for Tuxedo include:
+Other dreams we have for Tuxedo include:
+
 
 * Zero-knowledge runtimes a-la zero-cash and zexe.
 * UTXO-native Smart Contracts based on the pi-calculus.
