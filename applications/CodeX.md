@@ -54,7 +54,7 @@
 - **Registered Legal Entity:** A.I WFD Commercial Brokers CO.
 
 ### Team's Experience
-- Andrea Bello (CEO & co Founder): 15+ years of experience in technical industries, including managerial roles at multi-billion-dollar companies.
+- Andrea Bello (CEO & co Founder): 15+ years of experience in technical industries, including managerial as CEO and CTO in serverals start-up
 - Ika Afifah (CMO & co-Founder): Experienced in operations, partnerships, and digital marketing.
 - Achuth Chandran (CFO): Experienced financial consultant with expertise in corporate finance.
 - John Mclean: Seasoned tax and legal expert, currently Tax Director - M&A and Planning at Binance.
