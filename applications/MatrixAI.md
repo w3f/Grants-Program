@@ -321,6 +321,11 @@ No similar projects have been found in the Polkadot ecosystem, and there are no 
 - **Contact Email:** matrixai99@gmail.com
 - **Website:** https://matrixai.cloud/
 
+### Legal Structure
+
+- **Registered Address:** 100 Cyberport Road, Cyberport 3, Hong Kong
+- **Registered Legal Entity:** CONTRACT LAB Ltd.
+
 ### Team's experience
 
 We are a highly skilled professional team with extensive years of experience in AI research and development. Within our team, a majority of members possess profound expertise in fields such as deep learning, privacy computing, and federated learning. We have not only accumulated substantial experience in these cutting-edge technological domains but also consistently stay updated with the latest industry knowledge through ongoing learning and exploration.
@@ -362,10 +367,10 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how the new functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide 1) inline documentation of the code for the deliverables [1.1 MatrixAI-Network] and [1.4-1.5 MatrixAI-Indexing], and 2) a guide on how to deploy deliverables [1.2-1.3 MatrixAI-UI] locally, as well as explaining the meanings of terms and buttons. |
+| 0c. | Testing and Testing Guide | Core functions of deliverable [1.1] will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide Dockerfiles for MatrixAI-Network and MatrixAI-Indexing that can be used to test all the functionality delivered with this milestone. |
 | 1.1. | MatrixAI-Network: pallet-hashrate-market | We will create a Substrate module that will implement the first 8 functions that described in [Component 4](#component-4--matrixai-network). Additionally, this includes completing the corresponding unit tests and benchmark tests. However, since the frontend pages of the application are not yet fully constructed at this time, we can temporarily interact with the application through the block explorer. | 
 | 1.2. | MatrixAI-UI: Computing Power Marketplace | We will implement the web page for the computing power marketplace, aligning the design and detailed functionality description with the part 1 in the [UI Design](#mockups--ui-design). Since the functionality of the other modules is not yet complete, the data displayed on the page at this time should be used for reference only and may not be accurate. |
 | 1.3. | MatrixAI-UI: Share Device | We will implement the web page for the share device, aligning the design and detailed functionality description with the part 3 in the [UI Design](#mockups--ui-design). Since the functionality of the other modules is not yet complete, the data displayed on the page at this time should be used for reference only and may not be accurate. |
@@ -380,10 +385,10 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how the new functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide 1) inline documentation of the code for the deliverables [2.3-2.4 MatrixAI-Indexing] and [2.5 MatrixAI-Client] and 2) a basic tutorial that explains how the new functionality works for deliverable [2.5], and 3) a guide on how to deploy deliverables [2.1-2.2 MatrixAI-UI] locally, as well as explaining the meanings of terms and buttons. |
+| 0c. | Testing and Testing Guide | Core functions of deliverable [2.5] will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide Dockerfiles for MatrixAI-Indexing and MatrixAI-Client that can be used to test all the functionality delivered with this milestone. |
 | 2.1. | MatrixAI-UI: Edit Model | We will implement the web page for the edit model, aligning the design and detailed functionality description with the part 2 in the [UI Design](#mockups--ui-design). Since the functionality of the other modules is not yet complete, the data displayed on the page at this time should be used for reference only and may not be accurate. |
 | 2.2. | MatrixAI-UI: My Orders | We will implement the web page for the my orders, aligning the design and detailed functionality description with the part 4 in the [UI Design](#mockups--ui-design). Since the functionality of the other modules is not yet complete, the data displayed on the page at this time should be used for reference only and may not be accurate. |
 | 2.3. | MatrixAI-Indexing: Blockchain SDK | We will use [GSRPC](https://github.com/centrifuge/go-substrate-rpc-client) to build the blockchain SDK, enabling interactions with the chain, such as reading the required chain states from MatrixAI-Network. |
@@ -398,10 +403,10 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how the new functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide 1) inline documentation of the code for the deliverables [3.1-3.2 MatrixAI-Network], [3.5 MatrixAI-Indexing] and [3.6 MatrixAI-Client] and 2) a basic tutorial that explains how the new functionality works for deliverable [3.6], and 3) a guide on how to deploy deliverable [3.3-3.4 MatrixAI-UI] locally, as well as explaining the meanings of terms and buttons. |
+| 0c. | Testing and Testing Guide | Core functions of deliverable [3.6] will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide Dockerfiles for MatrixAI-Network, MatrixAI-Indexing and MatrixAI-Client that can be used to test all the functionality delivered with this milestone. |
 | 3.1. | MatrixAI-Network: BABE | We will be using the BABE consensus mechanism to replace Aura, preparing for the release of the testnet. |
 | 3.2. | MatrixAI-Network: chain config | We will complete the initialization of the chain, including configuring testnet identifiers, Token identifiers, bootnodes, and startup accounts. Additionally, we support the quick startup of nodes through adding specific flag. | 
 | 3.3. | MatrixAI-UI: Order Details | We will implement the web page for the order details, aligning the design and detailed functionality description with the part 5 in the [UI Design](#mockups--ui-design). Since the functionality of the other modules is not yet complete, the data displayed on the page at this time should be used for reference only and may not be accurate. | 
@@ -417,15 +422,15 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how the new functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide 1) inline documentation of the code for the deliverables [4.1 MatrixAI-Network], [4.5 MatrixAI-Indexing] and [4.6 MatrixAI-Client] and 2) a basic tutorial that explains how the new functionality works for deliverable [4.6], and 3) a guide on how to deploy deliverable [4.2-4.3-4.4 MatrixAI-UI] locally, as well as explaining the meanings of terms and buttons. |
+| 0c. | Testing and Testing Guide | Core functions of deliverables [4.1] and [4.6] will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide Dockerfiles for MatrixAI-Network, MatrixAI-Indexing and MatrixAI-Client that can be used to test all the functionality delivered with this milestone. |
 | 4.1. | MatrixAI-Network: faucet | We will create a Substrate module to initialize the faucet account, allowing anyone to claim test tokens by calling its methods. |
 | 4.2. | MatrixAI-UI: Console | We will implement the web page for the console, aligning the design and detailed functionality description with the part 6 in the [UI Design](#mockups--ui-design). |
 | 4.3. | MatrixAI-UI: Tasking Log | We will implement the web page for the tasking log, aligning the design and detailed functionality description with the part 7 in the [UI Design](#mockups--ui-design). |
 | 4.4. | MatrixAI-UI: Faucet | We will implement the web page for the faucet, aligning the design and detailed functionality description with the part 8 in the [UI Design](#mockups--ui-design). |
-| 4.5. | MatrixAI-Indexing: Log | We will implement the interface 5, 6 outlined in the [Component 2](#component-2--matrixai-indexing). | 
+| 4.5. | MatrixAI-Indexing: Log | We will implement the interface 5, 6 outlined in the [Component 2](#component-2--matrixai-indexing). |
 | 4.6. | MatrixAI-Client: Status Inquiry | We will implement the functionality to query the status of various stages in the model training process, including training in progress, training completed, and training failed, among others. |
 
 ### Milestone 5 Features of PoT
@@ -436,10 +441,10 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how the new functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide 1) inline documentation of the code for the deliverables [5.1 MatrixAI-Network], [5.2 MatrixAI-Validator] and 2) a basic tutorial that explains how the new functionality works for deliverable [5.2]. |
+| 0c. | Testing and Testing Guide | Core functions of deliverables [5.1] and [5.2] will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide Dockerfiles for MatrixAI-Network and MatrixAI-Validator that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains both AI compute demanders and AI compute providers on how to participate in MatrixAI's compute marketplace from their respective perspectives. |
 | 5.1. | MatrixAI-Network: pallet-hashrate-market | We will create a Substrate module that will implement the last 2 functions that described in [Component 4](#component-4--matrixai-network). Additionally, this includes completing the corresponding unit tests and benchmark tests. |
 | 5.2. | MatrixAI-Validator | We will implement a training proof module that can be used to verify whether the trainer has trained the model as per the order requirements. To demonstrate the effectiveness of this algorithm, we will provide at least three example models to showcase that models trained against the requirements cannot pass the algorithm's validation. |
