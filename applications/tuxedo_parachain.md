@@ -103,7 +103,8 @@ We do at some point want to make the wallet more generalizable to be able to cra
 - **FTE:**  1
 - **Costs:** 24,000 USD
 
-The bulk of the logic for handling communication with the relay chain lives in pallet parachain system, and consequently, this is the largest milestone in this grant proposal.
+The bulk of the logic for handling communication with the relay chain lives in [pallet parachain system](https://paritytech.github.io/cumulus/cumulus_pallet_parachain_system/index.html), and consequently, this is the largest milestone in this grant proposal.
+
 We will adapt logic for signaling and enacting runtime upgrades, and providing other [parachain output](https://paritytech.github.io/cumulus/cumulus_primitives_core/relay_chain/struct.CandidateCommitments.html)s.
 We will "handle" incoming and outgoing XCM messages (reminder, full xcm support is out of scope, but we still need to report 0 outbound messages and stub the inbound handling logic to satisfy the protocol).
 Most importantly, we will process the latest [validation data](https://paritytech.github.io/cumulus/cumulus_primitives_core/struct.PersistedValidationData.html) and make it available to Tuxedo pieces in a standard way.
