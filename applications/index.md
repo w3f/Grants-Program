@@ -66,6 +66,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [NeoPower Digital](https://neopower.digital/)                   | [Roloi - XCM Payment Automation](./roloi-xcm-payment-automation.md)                                                              | [GitHub](https://github.com/NeoPower-Digital)                      | ☐          |       ☐        |     ☐     |
 | [Eiger](https://www.eiger.co/)                                 | [MoveVM Substrate Pallet, part 2](./Substrate_Move_System_Pallet_2.md)   | [GitHub](https://github.com/eigerco)                               | ☐          |        ☐       |      ☐     |
 | [Rust Syndicate x Decentration](https://www.decentration.org/)                                 | [XCMSend](./xcmsend.md)   | [GitHub](https://github.com/decentration)                               | ☐          |        ☐       |      ☐     |
+| [Off Narrative Labs](https://github.com/Off-Narrative-Labs)                                 | [Tuxedo Parachain Support](./tuxedo_parachain.md)   | [GitHub](https://github.com/Off-Narrative-Labs)                               | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
