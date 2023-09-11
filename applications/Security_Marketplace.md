@@ -1,7 +1,7 @@
 # Security Marketplace
 
 - **Team Name:** Antier Solutions
-- **Payment Address:** 1XhNxALoCmXF86aiwZtdDJspjWZBiRX9UfbJ4jQsWN15eSu (aUSD)
+- **Payment Address:** Fiat
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
