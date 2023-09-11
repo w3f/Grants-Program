@@ -41,4 +41,4 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Picasso / Composable Grants Program](https://docs.composable.finance/ecosystem/composable-grants/)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)
-- [Pendelum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
+- [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
