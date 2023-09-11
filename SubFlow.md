@@ -44,10 +44,14 @@ Other Smart-Services provide additional functionality, for example:<br>
 - **Advertising Service** <br>Enables advertisers to create and run campaigns on SubFlow, rewarding users who share their content according to set rules.
 - **Donation Service** <br>Allows system users to financially support content creators they find interesting directly.
 - **NFT Markeplace Service** <br>Facilitates the direct sale of NFTs creaated by authors on SubFlow.
-<br>  
+<br>
 
 
-![diagram](https://github.com/pengzhile/cocopilot/assets/21257942/3ff1b52d-6f63-41eb-af52-fa72bc1a7d75)
+![diagram](https://github.com/deus4/KidsNotes/assets/21257942/17f1a838-787d-4a45-bb61-3fe460d5ad85)
+<br>**Use Case Diagram**
+
+![SubFlow_Component](https://github.com/deus4/KidsNotes/assets/21257942/de8c5e64-449d-4bf1-958f-802cd3b64bb3)
+<br>**SunFlow Components**
 
 - ink! Smart Contracts
 - Substrate
