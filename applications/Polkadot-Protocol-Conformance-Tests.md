@@ -1,7 +1,7 @@
 # Polkadot Protocol Conformance Tests Research Proposal
 
 - **Team Name:** [LimeChain](https://github.com/LimeChain)
-- **Payment Address:** 15reUHgnkE9QeH9zUoduCVYAbksTmQXvpMd6L95rBhTNFuGw
+- **Payment Address:** 15reUHgnkE9QeH9zUoduCVYAbksTmQXvpMd6L95rBhTNFuGw (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -139,7 +139,7 @@ Outlined below are the testing scenarios for each Host module that will be the f
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide inline documentation, as well as README file with how the suite can be executed. Additional information will be provided on how to contribute. |
 | 0c. | Testing and Testing Guide | Documentation will be provided that showcases how the testing suite can be executed for different scenarios and hosts. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
