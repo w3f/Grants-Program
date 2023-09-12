@@ -113,7 +113,7 @@ Moreover, Andreas Erwig and Sebastian Faust were in contact with cryptographic r
 
 ### Overview
 
-- **Total Estimated Duration:** 7 months
+- **Total Estimated Duration:** 7.25 months
 - **Full-Time Equivalent (FTE):** 1.25 FTE
 - **Total Costs:** 87,000 USD
 
