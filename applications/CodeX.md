@@ -45,7 +45,9 @@ In summary, CodeX is deeply integrated into the Substrate/Polkadot/Kusama ecosys
 ## Target Audience:
 Our project is dedicated to achieving mass adoption in blockchain by offering a no-code platform that makes blockchain technology accessible to everyone, from non-tech users to seasoned developers. We prioritize inclusivity, multi-chain compatibility, and advanced security mechanisms.Our target audience includes developers of all levels, businesses looking for efficient blockchain solutions, web2 builders transitioning to web3, crypto enthusiasts, blockchain startups, and web3 innovators. We aim to empower a diverse user base to easily create and deploy blockchain applications.
 
-- Project's Purpose:Our project addresses several key needs in the blockchain space:
+## Project's Purpose:
+
+Our project addresses several key needs in the blockchain space:
 
 1. **Accessibility**: Blockchain technology has been traditionally complex and exclusive. We aim to make it accessible to a wider audience, including those without technical backgrounds, by providing a no-code platform.
 
