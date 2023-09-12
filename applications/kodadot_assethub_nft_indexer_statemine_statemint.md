@@ -149,7 +149,6 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 | 1.      | Backward Compatibility Maintenance             | Ensuring backward compatibility with current Uniques v1.                                                      |
 | 1a.   | Collection Schema Development              | Development of a GraphQL schema entity that represents the collection.                                        |
 | 1b.   | NFT Schema Development                       | Formulation and creation of a GraphQL schema entity representing Non-fungible tokens.                         |
-| 2.      | Forward Support Implementation             | Future support included for NFT pallets comprising soulbound NFTs.                                           |
 | 3a.   | Unique v1.1 List Handler                  | Implement a handler to index set pricing from the chain.                                               |
 | 3b.   | Unique v1.1 Buy Event                      | Handler designed to index buy events from the chain.                                                          |
 | 4a.   | NFT Pallet CREATE Handler                  | Handler created for indexing CREATE event from the chain.                                                     |
@@ -180,8 +179,7 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 | 10a.  | Data Views Development                |Construction of data views for efficient access to indexed data.                                               |
 | 10b.  | Implementing Metadata Caching Layer |Develop and retry IPFS metadata if un-indexed by 7j.                                                               |
 | 11.    | Transfer of Collection Ownership    |Incorporate functionality to transfer collection ownership.                                                    |
-| 12a.  | Allocation of Initial Storage Bandwidth |Provide an initial bandwidth budget for IPFS item fetching (Payment is based on bandwidth scale).               |
-| 13b.  | Initial Storage Budget Allocation     |Allocate initial storage budget of $5,000 (Equivalent to 100GB storage at $5 per GB) for initial items minting, allowing for future data expansion.|
+
 
 ## Future Plans 🔭
 
