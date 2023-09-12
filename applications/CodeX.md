@@ -61,7 +61,8 @@ Our project is dedicated to achieving mass adoption in blockchain by offering a 
 
 In summary, our project's purpose is to democratize blockchain, promote multi-chain compatibility, enhance security, foster innovation, and build an inclusive and engaged community within the web3 space.
 
-- Similar Projects: Certainly, in the ecosystem, there's a project called ThirdWeb, which also offers a no-code approach, particularly for smart contracts. However, our project, CodeX, distinguishes itself by providing a comprehensive all-in-one no-code solution for DApps. While ThirdWeb assists with no-code smart contracts, users still need to have some understanding of the underlying technology. CodeX takes a more user-centric approach, allowing individuals and businesses to focus purely on their business ideas and concepts. They don't need to delve into the technical intricacies, as we handle the entire development process, including front-end, back-end, and smart contracts. In essence, we offer a more streamlined and beginner-friendly experience, democratizing blockchain development even further.
+## Similar Projects: 
+ThirdWeb, which also offers a no-code approach, particularly for smart contracts. However, our project, CodeX, distinguishes itself by providing a comprehensive all-in-one no-code solution for DApps. While ThirdWeb assists with no-code smart contracts, users still need to have some understanding of the underlying technology. CodeX takes a more user-centric approach, allowing individuals and businesses to focus purely on their business ideas and concepts. They don't need to delve into the technical intricacies, as we handle the entire development process, including front-end, back-end, and smart contracts. In essence, we offer a more streamlined and beginner-friendly experience, democratizing blockchain development even further.
 
 
 ## Team
