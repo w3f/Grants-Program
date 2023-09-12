@@ -171,7 +171,7 @@ ThirdWeb, which also offers a no-code approach, particularly for smart contracts
    - Prepare for the pre-launch phase.
    - Conduct Mainnet testing to ensure the system's readiness.
 
-### Milestone 1: Basic Functionality
+### Milestone 1: No-Code Name Services Deployment
 
 - **Estimated Duration:** 4 weeks
 - **FTE:** 3
