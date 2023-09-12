@@ -30,9 +30,38 @@
 
 ## Ecosystem Fit
 
-- **Fit in Ecosystem:** CodeX is deeply integrated into the Substrate/Polkadot/Kusama ecosystem. We utilize Substrate, test on Kusama, and aspire to become a parachain on Polkadot. Our commitment to interoperability aligns with the ecosystem's goals.
-- **Target Audience:** Our target audience includes developers of all levels, businesses, crypto enthusiasts, blockchain startups, and web3 innovators.
-- **Project's Purpose:** CodeX aims to democratize blockchain, promote multi-chain compatibility, enhance security, foster innovation, and build an inclusive community within the web3 space.
+Our project, CodeX, is intricately connected to the Substrate/Polkadot/Kusama ecosystem, and it plays a significant role within this thriving blockchain landscape.
+
+1. **Substrate Framework**: We leverage the Substrate framework extensively to build our blockchain infrastructure. Substrate provides us with a robust and flexible foundation, allowing us to customize various features, consensus mechanisms, and governance models to suit the specific needs of our platform.
+
+2. **Kusama for Testing**: Before deploying on the Polkadot network, we use Kusama for testing and experimentation. Kusama serves as an invaluable environment to validate our blockchain's performance and compatibility within the broader Polkadot ecosystem. This testing phase helps us ensure that our blockchain functions seamlessly and meets the high standards of the Polkadot network.
+
+3. **Polkadot Parachain**: Our ultimate goal is to deploy as a parachain on the Polkadot network if it aligns with our project's goals and requirements. Deploying as a parachain on Polkadot offers several advantages. It provides access to Polkadot's interoperability features, enhancing our blockchain's connectivity with other chains and projects within the ecosystem. Additionally, it offers enhanced security through Polkadot's shared security model.
+
+4. **Interoperability**: One of the key strengths of Polkadot is its focus on interoperability between different blockchains. CodeX aims to contribute to this interoperable ecosystem by providing a platform where users can easily create and deploy decentralized applications. Our multi-chain vision aligns perfectly with Polkadot's vision of a heterogeneous multi-chain network.
+
+In summary, CodeX is deeply integrated into the Substrate/Polkadot/Kusama ecosystem. We utilize the Substrate framework for our development, conduct testing on the Kusama network, and aspire to become a parachain on the Polkadot network. Our commitment to interoperability and advanced consensus mechanisms aligns with the overarching goals of this ecosystem, making CodeX a valuable participant in the broader Web3 landscape.
+
+- Target Audience: Our project is dedicated to achieving mass adoption in blockchain by offering a no-code platform that makes blockchain technology accessible to everyone, from non-tech users to seasoned developers. We prioritize inclusivity, multi-chain compatibility, and advanced security mechanisms.Our target audience includes developers of all levels, businesses looking for efficient blockchain solutions, web2 builders transitioning to web3, crypto enthusiasts, blockchain startups, and web3 innovators. We aim to empower a diverse user base to easily create and deploy blockchain applications.
+
+- Project's Purpose:Our project addresses several key needs in the blockchain space:
+
+1. **Accessibility**: Blockchain technology has been traditionally complex and exclusive. We aim to make it accessible to a wider audience, including those without technical backgrounds, by providing a no-code platform.
+
+2. **Interoperability**: With the growing number of blockchain networks, interoperability is vital. Our project focuses on multi-chain compatibility, allowing users to deploy their applications across various blockchains seamlessly.
+
+3. **Security**: Security is a top concern in blockchain. We've integrated advanced consensus mechanisms into our project, enhancing security while ensuring scalability and cost-effectiveness in application development.
+
+4. **Inclusivity**: Our project seeks to break down barriers and include a diverse range of users, from beginners to experts, in the blockchain ecosystem.
+
+5. **Innovation**: By reducing the barriers to entry and offering cost-effective solutions, we aim to encourage innovation and experimentation in the web3 space.
+
+6. **Community Building**: Building a thriving and engaged user community is crucial in the web3 environment. Our project fosters community involvement and profit-sharing.
+
+In summary, our project's purpose is to democratize blockchain, promote multi-chain compatibility, enhance security, foster innovation, and build an inclusive and engaged community within the web3 space.
+
+- Similar Projects: Certainly, in the ecosystem, there's a project called ThirdWeb, which also offers a no-code approach, particularly for smart contracts. However, our project, CodeX, distinguishes itself by providing a comprehensive all-in-one no-code solution for DApps. While ThirdWeb assists with no-code smart contracts, users still need to have some understanding of the underlying technology. CodeX takes a more user-centric approach, allowing individuals and businesses to focus purely on their business ideas and concepts. They don't need to delve into the technical intricacies, as we handle the entire development process, including front-end, back-end, and smart contracts. In essence, we offer a more streamlined and beginner-friendly experience, democratizing blockchain development even further.
+
 
 ## Team
 
@@ -141,31 +170,22 @@
 | 5.     | Substrate module: E      | Substrate Name Services                             |
 | 6.     | Smart contracts.         | Adapt Rust SC to Substrate.                         |
 
-### Milestone 2: Testing and Debugging
+### Milestone 2: Testing and Debugging and Audit
 
-- **Estimated Duration:** 2 weeks
-- **FTE:** 1.5
-- **Costs:** 7.5k
-
-#### Roadmap Achievements
-
-| Number | Deliverable              | Specification                                        |
-| ------ | ------------------------ | ---------------------------------------------------- |
-| 7.     | Testnet Test Coverage    | Run all the environment on TestNet                   |
-| 8.     | SC test coverage.        | Test and fix Smart Contract.                         |
-
-### Milestone 3: Pre-Launch and Mainnet Testing
-
-- **Estimated Duration:** 2 weeks
-- **FTE:** 1.5
-- **Costs:** 7.5k
+- **Estimated Duration:** 4 weeks
+- **FTE:** 2.5
+- **Costs:** 12.5k
 
 #### Roadmap Achievements
 
 | Number | Deliverable              | Specification                                        |
 | ------ | ------------------------ | ---------------------------------------------------- |
-| 9.     | MainNet Test Coverage    | Run all the environment on MainNet                   |
-| 10.    | SC test coverage.        | Test and fix Smart Contract.                         |
+| 1.     | Testnet Test Coverage    | Run all the environment test on TestNet (users feedback)  |
+| 2.     | SC test coverage.        | Test and fix Smart Contract based on feedback        |
+| 3.     | SC audit (3x)            | Audit the main Smart Contract                        |
+| 4.     | Mainet Deployment        | Bounty Program and Security tes                      |
+
+
 
 ## Future Plans
 
@@ -217,9 +237,7 @@ Continuous research and innovation are fundamental to our long-term success. We 
 
 Our mission is to empower individuals and organizations to participate fully in the Polkadot ecosystem by providing accessible, no-code tools for blockchain development. We are committed to realizing this vision through strategic planning, user-centric design, and ongoing collaboration with the blockchain community. Together, we aim to make blockchain technology more accessible and inclusive.
 
-## Referral Program (optional)
 
-- **Referrer:** Nicholas (nicholas@parity.io), Robin (robin.ejsmond-frey@parity.io)
 
 [End of Proposal]
 
