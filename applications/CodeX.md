@@ -13,20 +13,34 @@
 - **Project Name:** CodeX
 - **Tagline:** Building Widely Used WEB3 Applications
 - **Description:** CodeX is a revolutionary platform that makes blockchain development accessible to everyone, whether you're a non-technical user with a groundbreaking idea or a seasoned developer. We offer a hassle-free, no-code approach integrated with EVM and CosmWasm SDK for multi-chain deployment. Supported by a vibrant DAO ecosystem, we aim to make Web3 innovation as easy as saying #ByeCoding.
-- **Relation to Substrate/Polkadot/Kusama:** CodeX will utilize the Substrate framework to develop its infrastructure. Prior to deployment on the Polkadot network, we will conduct testing and experimentation on Kusama. Deploying as a parachain on Polkadot enables our blockchain to harness Polkadot's interoperability features and security.
+- **Relation to Substrate/Polkadot/Kusama:** CodeX will utilize the Substrate framework to develop its infrastructure, encompassing features, consensus mechanisms, and a governance model. Prior to deployment on the Polkadot network, we will conduct thorough testing and experimentation on Kusama. Testing on Kusama allows us to validate the blockchain's performance and ensure compatibility within the Polkadot ecosystem. Upon successful testing, our blockchain will be deployed on the Polkadot network as a parachain, provided it aligns with our project's goals. Deploying as a parachain on Polkadot enables our blockchain to harness Polkadot's interoperability features and security. This approach enables us to leverage the advantages of both Substrate and Polkadot for development and deployment. Additionally, it allows us to take full advantage of Kusama's testing environment to guarantee that our blockchain functions as intended and seamlessly integrates within the broader network.
+- **Why Your Team is Interested:** Our team is dedicated to achieving mass adoption in the blockchain space, with a focus on "no-code implementation" to make blockchain accessible to all, regardless of technical background. We believe in inclusivity, breaking down traditional barriers to blockchain participation.Our vision also includes embracing the multi-chain landscape, allowing users to deploy applications across various chains for flexibility. Security is paramount, and we've integrated advanced consensus mechanisms like Proof of Stake and Proof of Contribution to enhance security, scalability, and cost-effectiveness.In summary, our team is committed to democratizing blockchain, enabling multi-chain compatibility, and prioritizing security through advanced consensus mechanisms. We're passionate about making blockchain accessible and safe for everyone.
+
 
 ### Project Details
 - **UI Mockups/Designs:** [Figma Designs](https://www.figma.com/file/ES5Y4ObZNluGzs0wS5uPdx/codex-design-web?type=design&node-id=4%3A54&mode=design&t=iIgpdpOUj3Lhxu1Y-1)
 - **Documentation:** [Canva Documentation](https://www.canva.com/design/DAFs0erTEWU/S7LP34HZ8iSvLGvjdTCqgg/edit)
 
-#### What Your Project Will Not Implement
-- **Centralization**: Our project is rooted in the principles of decentralization.
-- **Excessive Complexity**: We won't oversimplify to the detriment of innovation.
-- **Inadequate Security Measures**: Security is a top priority.
-- **Exclusivity**: We are dedicated to making blockchain accessible to all.
-- **Lack of Transparency**: We believe in open communication and accountability.
-- **Ignoring User Feedback**: User-centric development is a core principle.
-- **Environmental Irresponsibility**: Sustainability is a consideration in our development process.
+#### What Your Project Will Not Implement: 
+
+While we are ambitious in our goals, it's essential to acknowledge certain limitations and features that our project will not implement:
+
+1. **Centralization**: Our project is rooted in the principles of decentralization, and we will not implement features that compromise this ethos. We believe in the power of blockchain technology to distribute control and decision-making, and we will not adopt centralization practices.
+
+2. **Excessive Complexity**: Although our aim is to simplify blockchain development, we will not oversimplify to the extent that it hampers innovation. Striking the right balance between simplicity and flexibility is crucial, and we will not sacrifice the latter for the former.
+
+3. **Inadequate Security Measures**: Security is a top priority for us, and we will not implement features that compromise the integrity and safety of our platform. We are committed to adopting robust security measures and best practices to protect our users and their projects.
+
+4. **Exclusivity**: Our vision revolves around inclusivity, and we will not implement features that exclude any particular group of users. We are dedicated to making blockchain accessible to all, regardless of their background or experience, and we will not introduce exclusivity measures.
+
+5. **Lack of Transparency**: Transparency is key in the blockchain space, and we will not implement features that hinder transparency or provide insufficient information to our users. We believe in open communication and accountability.
+
+6. **Ignoring User Feedback**: We value user feedback as it helps us improve and evolve. We will not implement features that disregard the input and concerns of our user community. User-centric development is a core principle of our project.
+
+7. **Environmental Irresponsibility**: Blockchain technology has faced criticism for its energy consumption. We will not implement features that disregard environmental responsibility. Sustainability is a consideration in our development process.
+
+In essence, our project is guided by principles of decentralization, security, inclusivity, transparency, and environmental responsibility. We are committed to staying true to these principles and will not implement features that compromise them.
+
 
 ## Ecosystem Fit
 
@@ -188,6 +202,7 @@ ThirdWeb, which also offers a no-code approach, particularly for smart contracts
 | 2.     | SC test coverage.        | Test and fix Smart Contract based on feedback        |
 | 3.     | SC audit (3x)            | Audit the main Smart Contract                        |
 | 4.     | Mainet Deployment        | Bounty Program and Security tes                      |
+| 5.     | Documentation            | Gitbook and users guidance                           |
 
 
 
