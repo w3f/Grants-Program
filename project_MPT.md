@@ -1,4 +1,4 @@
-# Marco Polo Technologies - a Web3 infrastructure to power RWAs and bridge traditional finance to digital investments in private markets with Substrate
+# Marco Polo Technologies - Primary and secondary issuance of RWAs for private markets with Substrate
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
 >
@@ -22,19 +22,19 @@ Through our infrastructure, businesses can expand into previously underserved ma
 
 #### Marco Polo Technologies, Substrate and Polkadot - A brief description of our project.
 
-Our first layer of infrastructure is built on Rust, and to add a blockchain that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs) in private markets while enabling access to many different investor classes, we chose _Substrate_ as our development framework as a natural addition to our existing technology. By building a liquidity protocol for RWAs on _Substrate_ and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share, among other future benefits, the following benefits with the Polkadot ecosystem:
+Our first layer of infrastructure is built on Rust, and to add a blockchain that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs) in private markets while enabling access to many different investor classes, we chose _Substrate_ as our development framework as a natural addition to our existing technology. By building a liquidity protocol for RWAs on _Substrate_ and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share, among the others, the following benefits with the Polkadot ecosystem:
 
-- Promoting financial inclusion: We will onboard reliable clients through established social connections, making digital private markets more accessible to a wider range of investors and asset owners, leveraging our proprietary social network.
-- Enhancing asset interoperability: By enabling the seamless transfer and trading of RWAs across the Polkadot network, we will increase liquidity and accessibility for all market participants.
-- Expanding market access: We will provide a gateway for a diverse range of participants to access private markets and RWAs issuance and trading, enriching the Polkadot ecosystem's financial landscape.
-- Fostering DeFi innovation: We will leverage RWAs within the decentralized finance (DeFi) space, supporting existing possibilities for DeFi applications such as fractional ownership, collateralization, and asset-backed lending. This will attract new clients and assets to the Polkadot ecosystem.
-- Building a robust ecosystem: We will add a layer of financial functionality that complements and strengthens the overall infrastructure of Polkadot. This will attract more platforms and clients to the ecosystem and expand its use cases.
-- Interoperability with other blockchains: We will support a variety of RWAs and facilitate easy trading and investments across the network.
-- Wallet support: Our protocol will be interoperable with other wallets in the Polkadot ecosystem, supporting various fiat currencies. This will make it easier for users to store and manage their RWAs.
+- Promoting financial inclusion: onboarding reliable clients through established social connections, making digital private markets more accessible to a wider range of investors and asset owners, leveraging our proprietary social network.
+- Enhancing asset interoperability: by enabling the seamless transfer and trading of RWAs across the Polkadot network, we will increase liquidity and accessibility for all market participants.
+- Expanding market access: providing a gateway for a diverse range of participants to access private markets and RWAs issuance and trading, enriching the Polkadot ecosystem's financial landscape.
+- Fostering DeFi innovation: leveraging RWAs within the decentralized finance (DeFi) space, supporting existing possibilities for DeFi applications such as fractional ownership, collateralization, and asset-backed lending. This will attract new clients and assets to the Polkadot ecosystem.
+- Building a robust ecosystem: adding a layer of financial functionality that complements and strengthens the overall infrastructure of Polkadot. This will attract more platforms and clients to the ecosystem and expand its use cases.
+- Interoperability with other blockchains: supporting a variety of RWAs and facilitate easy trading and investments across the network.
+- Wallet support: our protocol will be interoperable with other wallets in the Polkadot ecosystem, supporting various fiat currencies. This will make it easier for users to store and manage their RWAs.
 
 #### Team interest
 
-Our team is a small, senior, and resourceful group with expertise in global private markets, investments, and technology. Our project has naturally evolved towards private markets and our current project iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership and exchanges, while breaking down historical barriers such as illiquidity and limited access for smaller investors. We aim to harness the benefits of transparency, immutability, and automated compliance to ownership records by leveraging Substrate and Polkadot's robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and borrowers.
+Our team is a small, senior, and resourceful group with expertise in global private markets, investments, and technology. Our project has naturally evolved towards private markets and our current iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership and exchanges, while breaking down historical barriers such as illiquidity and limited access for smaller investors. We aim to harness the benefits of transparency, immutability, and automated compliance to ownership records by leveraging Substrate and Polkadot's robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and borrowers.
 
 ### Project Details
 
