@@ -130,7 +130,7 @@ https://medium.com/supercolony/a-look-into-virtual-machines-and-smart-contract-r
 
 ### Overview
 
-- **Total Estimated Duration:** February 2023 - August 2023
+- **Total Estimated Duration:** February 2023 - September 2023
 - **Full-Time Equivalent (FTE):**  1,5 FTE
 - **Total Costs:** 29,700 USD
 
