@@ -33,13 +33,13 @@ Our first layer of infrastructure is built on Rust, and to add a blockchain that
 - Wallet support: Our protocol will be interoperable with other wallets in the Polkadot ecosystem, supporting various fiat currencies. This will make it easier for users to store and manage their RWAs.
 
 #### Team interest
-- An indication of why your team is interested in creating this project.
+
+Our team is a small, senior, and resourceful group with expertise in global private markets, investments, and technology. Our project has naturally evolved towards private markets and our current project iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership and exchanges, while breaking down historical barriers such as illiquidity and limited access for smaller investors. We aim to harness the benefits of transparency, immutability, and automated compliance to ownership records by leveraging Substrate and Polkadot's robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and borrowers.
 
 ### Project Details
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-- Mockups/designs of any UI components
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
 - Documentation of core components, protocols, architecture, etc. to be deployed
@@ -47,6 +47,12 @@ We expect the teams to already have a solid idea about your project's expected f
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
+Our intention is to deliver an initial implementation of a liquidity protocol to support assets tokenization in private markets, our first steps for the MVP would be:
+
+- Set up our asset focused blockchain for private markets and develop its initial attributes: specifically designed for issuance and trading of RWAs, whereas priamry issuance would be the focus in this initial phase. ~ 2 months
+- Set up the initial role of the tokens for primary and secondary issuance through smart contracts: creating a token standard that will make it easy for asset owners to
+issue tokens that represent their RWAs, and allow investors to invest in and trade these tokens on decentralized private exchanges. ~ 1 month
+3. Set up the initial wallet functions and a way to interact with multiple users owning multiple assets, including fiat: we aim at creating a wallet that will allow users to store and manage their RWAs. ~ 1 month
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
 - The (future) tokenomics of your project 
