@@ -42,7 +42,8 @@ Our project, CodeX, is intricately connected to the Substrate/Polkadot/Kusama ec
 
 In summary, CodeX is deeply integrated into the Substrate/Polkadot/Kusama ecosystem. We utilize the Substrate framework for our development, conduct testing on the Kusama network, and aspire to become a parachain on the Polkadot network. Our commitment to interoperability and advanced consensus mechanisms aligns with the overarching goals of this ecosystem, making CodeX a valuable participant in the broader Web3 landscape.
 
-- Target Audience: Our project is dedicated to achieving mass adoption in blockchain by offering a no-code platform that makes blockchain technology accessible to everyone, from non-tech users to seasoned developers. We prioritize inclusivity, multi-chain compatibility, and advanced security mechanisms.Our target audience includes developers of all levels, businesses looking for efficient blockchain solutions, web2 builders transitioning to web3, crypto enthusiasts, blockchain startups, and web3 innovators. We aim to empower a diverse user base to easily create and deploy blockchain applications.
+## Target Audience:
+Our project is dedicated to achieving mass adoption in blockchain by offering a no-code platform that makes blockchain technology accessible to everyone, from non-tech users to seasoned developers. We prioritize inclusivity, multi-chain compatibility, and advanced security mechanisms.Our target audience includes developers of all levels, businesses looking for efficient blockchain solutions, web2 builders transitioning to web3, crypto enthusiasts, blockchain startups, and web3 innovators. We aim to empower a diverse user base to easily create and deploy blockchain applications.
 
 - Project's Purpose:Our project addresses several key needs in the blockchain space:
 
