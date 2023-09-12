@@ -15,8 +15,7 @@
 
 ### Project Details
 
-The complete vision of Lastic is a broad and intensive endeavor that involves building on technology that is not yet complete nor wholly available. Our experience in this ecosystem has shown that embarking on such a journey would likely involve costly investments of time and code in technologies are likely to change and make our code irrelevant for the future of coretime and Polkadot as a whole. We believe, for the scope of this Web3 Foundation grant request, that "thinking with the end in mind" is a prudent guiding principle that also has pragmatic utility and therefore would be creating a UI for the system Coretime Parachain. 
-
+The complete vision of Lastic is a broad and intensive endeavor that involves building on technology that is not yet complete nor wholly available. Our experience in this ecosystem has shown that embarking on such a journey would likely involve costly investments of time and code in technologies are likely to change and make our code irrelevant for the future of coretime and Polkadot as a whole. **We believe, for the scope of this Web3 Foundation grant request, that "thinking with the end in mind" is a prudent guiding principle that also has pragmatic utility and therefore would be creating a UI for the system Coretime Parachain.**
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
@@ -24,21 +23,16 @@ We expect the teams to already have a solid idea about your project's expected f
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
 - Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
+- PoC/MVP: A website where users can view the current state of coretime on Polkadot
 - What your project is _not_ or will _not_ provide or implement
-  - The ability for Polkadot users to manipulate cores by slicing them up
+  - The ability for Polkadot users to manipulate cores, for example, by slicing them up
   - The ability to buy or sell coretime on a secondary market like what Lastic intends to provide long-term
 
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
 
 ### Ecosystem Fit
 
 - Lastic fits into the ecosystem by providing users of coretime with an interface to evaluate the current state of cores available, cores purchased/owned, coretime sales opportunities, task assignments, regions created, regions in the instantaneous coretime pool, purchases of instantaneous coretime.
-- Target audience: parachain teams, dapp developers, collators and validators, coretime providers, polkadot analysts and analytics providers.
+- Target audience: parachain teams, dapp developers, collators and validators, coretime providers, polkadot analysts and analytics providers, mev actors, dot holders
 - The Lastic UI will meet the needs of users who want a user-friendly interface for understanding the current state of coretime on Polkadot. Lastic as a whole aims to address the need for a secondary marketplace for blockspace on polkadot by allowing teams with the need for more blockspace to purchase it, as well as teams with a surplus of blockspace to sell it.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - No.
@@ -47,48 +41,68 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Phil Lucsok
+- Aurora Poppyseed
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Phil Lucsok
+- **Contact Email:** hi@lastic.xyz
+- **Website:** lastic.xyz
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Private
+- **Registered Legal Entity:** In progress
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
+**Phil Lucsok**: Phil began his career in web3 as a marketing and communications manager for a Bitcoin startup in Berlin in 2013 called [BitcoinsBerlin](https://web.archive.org/web/20220707055043/https://bitcoinsberlin.com/). There, he created marketing campaigns for multiple products including:
+- [All4BTC](https://all4btc.com/) - a one-stop shop for purchasing anything on Amazon or eBay with bitcoin
+- Bills4BTC (later [Bitwala](https://bitwala.com/), Nuri) - a SEPA-compliant payment method for holders of Bitcoin for regular payments
+- e4BTC - an electronics shop supporting purchases in Bitcoin
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+After this, he worked for 3.5 years at [ResearchGate](https://www.researchgate.net/), a web2 social media platform for scientific researchers, where he learned skills in Product Management, Product Analytics, UX development and copywriting and design, and industry-standard growth practices.
+
+In late 2017, Phil joined Parity Technologies to lead technical communications on Ethereum and Polkadot. There he worked closely with developers to create promotional content for open-source products including Parity Ethereum, Parity Signer, Polkadot.js. It was between 2018 and 2020 where he represented Parity in Ethereum governance to help recover the stuck funds from the November 2017 multisig hack. 
+
+He led the communications team for the first two years, growing the team from 1 to 12, where they created and executed the launch strategies for Polkadot, Kusama and Substrate. After that he joined the Ecosystem Success team to work with parachain teams to improve their communications and act as a liason between Substrate Builders Program teams and Parity.
+
+Phil currently works as a freelancer but is focused on leading [Missing Link](https://www.missing-link.io/)'s marketing, communications and governance strategies. He is also an active participant in Polkadot governance discussions on the Kusamarian and in ChaosDAO.
+
+**Aurora Poppyseed**:
+
+*Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.*
+
+*If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.*
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/LasticXYZ
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+GitHub Accounts:
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/phillux
+- https://github.com/poppyseedDev
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles 
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://www.linkedin.com/in/philiplucsok
+- https://www.linkedin.com/in/auroramakovac
 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+*If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:*
 
+GitHub Repo:
+- https://github.com/LasticXYZ/LasticUI
+
+Blogs:
+- https://medium.com/lastic-marketplace/blog1
+- https://medium.com/lastic-marketplace/blog2
 - links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
+- academic publications relevant to the problem
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
 - previous interface iterations, such as mock-ups and wireframes.
@@ -146,18 +160,13 @@ Please include here
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
-## Referral Program (optional) :moneybag: 
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** 
+
+- Phil's experience working at Parity informed him of the Web3 Grants program.
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+- We have received no financial contributions to Lastic, nor have applied for any other grants
