@@ -170,7 +170,8 @@ ThirdWeb, which also offers a no-code approach, particularly for smart contracts
 - **Tasks:**
    - Prepare for the pre-launch phase.
    - Conduct Mainnet testing to ensure the system's readiness.
-   - 
+ 
+
 ## Milestone
 
 ### Overview
