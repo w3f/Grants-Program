@@ -139,7 +139,44 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **FTE:** 2
 - **Costs:** 20,000 USD
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
+| 2. | Substrate module: Y | The Y Substrate module will... |
+| 3. | Substrate module: Z | The Z Substrate module will... |
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+
+
+### Milestone 2
+
+- **Estimated Duration:** ~1 month
+- **FTE:** 2
+- **Costs:** 20,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
+| 2. | Substrate module: Y | The Y Substrate module will... |
+| 3. | Substrate module: Z | The Z Substrate module will... |
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+
+### Milestone 3
+
+- **Estimated Duration:** ~1 month
+- **FTE:** 2
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -156,19 +193,6 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
 
 
-### Milestone 2
-
-- **Estimated Duration:** ~1 month
-- **FTE:** 2
-- **Costs:** 20,000 USD
-
-### Milestone 3
-
-- **Estimated Duration:** ~1 month
-- **FTE:** 2
-- **Costs:** 20,000 USD
-
-
 ## Future Plans
 
 Please include here
@@ -176,11 +200,6 @@ Please include here
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
-## Referral Program (optional) :moneybag: 
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 
