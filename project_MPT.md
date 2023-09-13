@@ -49,7 +49,7 @@ Our intention is to deliver an initial implementation of a liquidity protocol to
 - Set up the initial role of the tokens for primary and eventually secondary issuance through smart contracts: creating a token standard that will make it simple for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these tokens on decentralized private exchanges.
 - Set up the initial wallet functions and a way to interact with multiple users owning multiple assets: we aim at implementing a wallet that will allow users to store and manage their RWAs.
 
-![](workflows.png)
+![](parity.png)
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
 - The (future) tokenomics of your project 
