@@ -347,6 +347,11 @@ MatrixAI was incubated during the [Polkadot Hackathon 2023 Summer](https://githu
 | MatrixAI-Client | The current version only supports training with fixed models using [PaddlePaddle](https://github.com/PaddlePaddle/Paddle). |
 | MatrixAI-Network | The current version has completed the creation of a Pallet called "hashrate-market," which includes operations and storage related to machines and orders. However, in the future roadmap, there are still many adjustments needed for the existing methods. Additionally, there is a lack of methods related to PoT. |
 
+To more precisely depict what MatrixAI plans to achieve in this proposal, we have organized the information as shown in the diagram below. Each small square in the diagram represents a specific functional module, where gray squares indicate that the functionality has already been implemented and requires no major adjustments or changes; green squares represent modules that exist but require substantial modifications; blue squares denote newly added functional modules.
+
+![status](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/f79004a7-c59a-49bb-8e7c-a796bf5ac3d6)
+
+
 ## Development Roadmap :nut_and_bolt:
 
 This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](notion://www.notion.so/docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
