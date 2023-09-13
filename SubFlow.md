@@ -51,7 +51,7 @@ Other Smart-Services provide additional functionality, for example:<br>
 <br>**Use Case Diagram**
 
 ![SubFlow_Component](https://github.com/deus4/KidsNotes/assets/21257942/de8c5e64-449d-4bf1-958f-802cd3b64bb3)
-<br>**SunFlow Components**
+<br>**SubFlow Components**
 
 - ink! Smart Contracts
 - Substrate
