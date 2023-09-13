@@ -43,12 +43,13 @@ We expect the teams to already have a solid idea about your project's expected f
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
-Our intention is to deliver an initial implementation of a liquidity protocol to support assets tokenization in private markets, our first steps for the MVP would be:
+Our intention is to deliver an initial implementation of a liquidity protocol to support asset tokenization in private markets, our first steps for the MVP would be to:
 
-- Set up our asset focused blockchain for private markets and develop its initial attributes: specifically designed for issuance and trading of RWAs, whereas priamry issuance would be the focus in this initial phase. ~ 2 months
-- Set up the initial role of the tokens for primary and secondary issuance through smart contracts: creating a token standard that will make it easy for asset owners to
-issue tokens that represent their RWAs, and allow investors to invest in and trade these tokens on decentralized private exchanges. ~ 1 month
-3. Set up the initial wallet functions and a way to interact with multiple users owning multiple assets, including fiat: we aim at creating a wallet that will allow users to store and manage their RWAs. ~ 1 month
+- Set up our asset focused blockchain for private markets and develop its initial attributes: specifically designed for issuance and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
+- Set up the initial role of the tokens for primary and eventually secondary issuance through smart contracts: creating a token standard that will make it simple for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these tokens on decentralized private exchanges.
+- Set up the initial wallet functions and a way to interact with multiple users owning multiple assets: we aim at implementing a wallet that will allow users to store and manage their RWAs.
+
+![](workflows.png)
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
 - The (future) tokenomics of your project 
