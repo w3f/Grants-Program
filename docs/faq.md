@@ -7,9 +7,13 @@ title: 🙋 FAQ
 
 ## 🧭 General
 
+### How do I apply?
+
+  Please refer to the ["How to Apply" section](Process/how-to-apply.md) in our documentation.
+
 ### How much can I ask for?
 
-  Please refer to the [section on grant levels in our README](Introduction/levels.md) for funding limits.
+  Generally, there is no upper limit to grant amounts. However, the higher the requested amount, the stricter the review. For guidance, please refer to the [grant levels section](Introduction/levels.md) in our documentation.
 
 ### What activities/positions do you fund?
 
@@ -17,15 +21,15 @@ title: 🙋 FAQ
 
 ### Can anyone apply?
 
-  Projects for which a token sale has been or is being conducted are not eligible for a Web3 Foundation grant. Other than that, there are no restrictions.
+  Projects for which a token sale has been or is being conducted are not eligible for a Web3 Foundation grant. Also, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general. See also the [application guidelines](Introduction/intro.md) in our documentation.
 
 ### Can I get an upfront payment?
 
-  No.
+  The W3F Grants Program does not offer upfront payment. If you absolutely require upfront payment, have a look at our list of [alternative funding programs](funding.md), some of which allow upfront payment.
 
 ### When do I get paid?
 
-  Payments are issued once a milestone has been successfully delivered. By ‘successful’, we mean that our Grants team has reviewed _and officially accepted_ your submission.
+  Payments are issued once a milestone has been successfully delivered. Successful delivery requires that you have submitted the milestone as per our delivery guidelines _and_ that the Grants team has reviewed _and officially accepted_ your submission. Payment is made within 14 days after approval.
 
 ### Can I reuse someone else’s open-source code?
 
@@ -62,6 +66,8 @@ title: 🙋 FAQ
 
   For special cases that do not fit the regular grants structure, we provide [a form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). You can provide all application data by submitting this form, or submit the form with a reference to a pull request with data you are willing to make public.
 
+  Our [application template](https://github.com/w3f/Grants-Program/blob/e03a3e760846bfaf44352cb17a6763ff0fcf1a94/.github/pull_request_template.md?plain=1#L21) also offers the possibility to make the application public, but to keep its discussion private.
+
 ## 🥳 After Approval
 
 ### When can I apply for a follow-up grant?
@@ -74,7 +80,7 @@ title: 🙋 FAQ
 
 ### Can I list the Web3 Foundation as a partner?
 
-  No. Once the grants team has accepted your first milestone, you may display our [grants badge](Support%20Docs/grant-badge-guidelines) in a project-specific context, such as the repository containing the grant project work.
+  No. Once the grants team has accepted your first milestone, you may display our [grants badge](Support%20Docs/grant-badge-guidelines.md) in a project-specific context, such as the repository containing the grant project work.
 
 ### Can you help me advertise my project?
 
@@ -88,7 +94,7 @@ title: 🙋 FAQ
 
 ### How do I submit a milestone?
 
-  For details, please refer to the [milestone delivery guidelines](Support%20Docs/milestone-deliverables-guidelines.md) for the respective grants program. Generally speaking, the most important part of a delivery is a list of **the same deliverables listed in the application** with links to their implementation/realisation (ideally pointing to a specific commit or tag, so you can continue working on your repository without messing up your delivery and complicating our evaluation) and any additional notes you might have. The list of deliverables for each of your milestones should be defined in your grant agreement.
+  For details, please refer to the [milestone delivery guidelines](Support%20Docs/milestone-deliverables-guidelines.md). Generally speaking, the most important part of a delivery is a list of **the same deliverables listed in the application** with links to their implementation/realisation (ideally pointing to a specific commit or tag, so you can continue working on your repository without messing up your delivery and complicating our evaluation) and any additional notes you might have. The list of deliverables for each of your milestones should be defined in your grant agreement.
 
 ### Can I submit two or more milestones at once?
 

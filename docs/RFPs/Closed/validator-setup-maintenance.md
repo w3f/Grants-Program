@@ -1,6 +1,6 @@
 # polkadot-validator-setup maintenance
 
-* **Status:** [See Polkadot Validation Node Ansible Setup](https://github.com/polkachu/polkadot-validator)
+* **Status:** [Closed](https://github.com/polkachu/polkadot-validator)
 * **Teams/People that could deliver the RFP:** @melozo, @pmensik, @tylerztl, @bLd75
 
 ## Project Description :page_facing_up: 
@@ -8,6 +8,7 @@
 One of the more accessible ways of spinning up validator nodes is by using the [`polkadot-validator-setup`](https://github.com/w3f/polkadot-validator-setup) repository, which uses a mix of terraform and ansible tools to create a server, adjust its configuration and install the necessary packages needed for running a substrate node.
 
 This RFP aims at providing maintenance to that repository and add some small features.
+**UPDATE:** This repo has been archived.
 
 ## Deliverables :nut_and_bolt:
 
