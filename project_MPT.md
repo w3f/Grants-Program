@@ -109,7 +109,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-Here you can find some documentation on the research and our preliminary conversation with a Parity team member: [MPT market research](MPT_market_research.pdf) and [Reference of previous conversation with Parity](https://github.com/armo-dio/Grants-Program-MPT/files/12610041/Parity_Marco_Polo_preliminary.pdf)
+Here you can find some documentation on the research and our preliminary conversation with a Parity team member: [MPT market research](MPT_market_research.pdf) and [Reference of previous conversation with Parity](Parity_Marco_Polo_preliminary.pdf).
 
 ## Development Roadmap :nut_and_bolt:
 
