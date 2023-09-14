@@ -64,6 +64,11 @@ Other Smart-Services provide additional functionality, for example:<br>
 Decentralised social networks are resistant to censorship. As the number of regions where internet censorship is a concern is not decreasing (in fact, we see opposite processes going on), we believe that SubFlow as a product will have a possibility to expand the user base of the Polkadot ecosystem.<br>
 In short (kind of), generally speaking, a decentralised free social network is important because it expands the ecosystem's use cases, increases user engagement, highlights cross-chain interoperability, aligns with principles of privacy and data ownership, fosters community and governance, drives innovation in Substrate, and provides a censorship-resistant platform.
 
+## Demo: Web UI ##
+
+![Screenshot1](https://github.com/dappforce/subsocial-starter/assets/21257942/b977518e-c720-4a32-9ec7-6b227ee57538)
+![Screenshot2](https://github.com/dappforce/subsocial-starter/assets/21257942/e7acb8ba-de59-455a-8f84-0f4f561531c4)
+
 ## Team :busts_in_silhouette:
 
 ### Team members
