@@ -28,7 +28,7 @@ Deliveries include DAOsign platform with an ability to:
 
 **Core DAOsign components**
 
-<img width="902" alt="Screenshot 2023-05-27 at 16 51 43" src="https://github.com/Burmenska/Grants-Program/assets/3983591/e6e3e78d-edf4-4d50-a298-e01210d75963">
+<img width="902" alt="Screenshot 2023-05-27 at 16 51 43" src="https://github.com/Burmenska/Grants-Program/assets/3983591/e6e3e78d-edf4-4d50-a298-e01210d75963"/>
 
 
 **Technical design**
