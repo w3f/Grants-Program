@@ -111,7 +111,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-[!](MPT_market_research.pdf)
+![](MPT_market_research.pdf)
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
 
 ## Development Roadmap :nut_and_bolt:
