@@ -152,6 +152,86 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ...
 
+---
+
+### Milestone 1 - Creating a Frontend with basic functionality for the coretime chain
+
+ - **Estimated Duration:** 1 month
+ - **Costs:** 10,000 USD
+
+Publishing 3 articles:
+ - introduction to Gavin's talk about the coretime chain, link YouTube
+ - our thought process on starting the coretime
+ - ___
+
+Creating basic interaction:
+ - exposing interactions with the broker pallet
+
+admin / privledged setup is not included
+
+
+UI functions:
+renew
+/// Renew Bulk Coretime in the ongoing Sale or its prior Interlude Period.
+transfer
+/// Transfer a Bulk Coretime Region to a new owner.
+
+
+When you own region:
+
+partition
+/// Split a Bulk Coretime Region into two non-overlapping Regions at a particular time into the region.
+
+interlace
+/// Split a Bulk Coretime Region into two wholly-overlapping Regions with complementary interlace masks which together make up the original Region's interlace mask.
+
+assign
+/// Assign a Bulk Coretime Region to a task.
+
+pool
+/// Place a Bulk Coretime Region into the Instantaneous Coretime Pool.
+
+claim_revenue
+/// Claim the revenue owed from inclusion in the Instantaneous Coretime Pool.
+
+
+purchase_credit
+/// Purchase credit for use in the Instantaneous Coretime Pool.
+
+drop_region
+/// Drop an expired Region from the chain.
+
+drop_contribution
+/// Drop an expired Instantaneous Pool Contribution record from the chain.
+
+drop_history
+/// Drop an expired Instantaneous Pool History record from the chain.
+
+drop_renewal
+/// Drop an expired Allowed Renewal record from the chain.
+
+request_core_count
+/// Request a change to the number of cores available for scheduling work
+
+
+### expose events
+needs research
+
+### creating a nice user flow diagram UX
+thinking about what functionality comes first user interaction diagram
+
+show an early sketch/ how it looks
+
+### connect with subsquid api
+since coretime chain is not on test net this will be done locally
+
+### testing
+
+
+---
+
+
+
 
 ## Future Plans
 
