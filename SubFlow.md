@@ -68,6 +68,8 @@ In short (kind of), generally speaking, a decentralised free social network is i
 
 ![Screenshot1](https://github.com/dappforce/subsocial-starter/assets/21257942/b977518e-c720-4a32-9ec7-6b227ee57538)
 ![Screenshot2](https://github.com/dappforce/subsocial-starter/assets/21257942/24a972b6-75e8-40f2-95d9-4cd3f7b1c85a)
+![Screenshot3](https://github.com/dappforce/subsocial-starter/assets/21257942/2a6b67ad-f454-49a8-87c9-78fa3e993d1e)
+![Screenshot4](https://github.com/dappforce/subsocial-starter/assets/21257942/eee6a3b3-2763-49a9-816a-c34ade442210)
 
 ## Team :busts_in_silhouette:
 
