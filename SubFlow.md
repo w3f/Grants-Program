@@ -144,11 +144,12 @@ The team plans to release the system sequentially in two versions:<br>
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License |  MIT  |
-| 0b. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0c. | Article | We will publish an article that explains what was built and how it can benefit other projects |
-| 1. | System design | - |
-| 2. | User registration and user profile | - |
-| 3. | Posting functionality | - |
+| 0b. | Documentation |  We will provide the documentation of the code and a basic tutorial, which will show how the functionality works.  |
+| 0c. | Testing and Testing Guide | Core functions will be covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Article | We will publish an article that explains what was built, how it can benefit other projects and what are upcoming development works. |
+| 1. | System design | Definition of the various components of the service will interacting with each other, data  storage, and how users will be able to interact with the system. A detailed technical roadmap for how the systems we build. |
+| 2. | User registration and user profile | Granting user a possibility to set up a profile in the service. |
+| 3. | Posting functionality | Granting user a possibility to share posts with other users. |
 | 4. | Interactive posting interactions | Functionaltity for interactions with posts, such as *likes*, *retweets* and comments |
 | 5. | System users interaction | Basic functionality for direct interactions between users, such as *search* and *follow* |
 
@@ -161,13 +162,16 @@ The team plans to release the system sequentially in two versions:<br>
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License |  MIT  |
+| 0b. | Documentation |  We will provide the documentation of the code and a basic tutorial, which will show how the functionality of the second milestone works.  |
+| 0c. | Testing and Testing Guide | Core functions will be covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Article | We will publish an article that explains what was built in the second milestone, and team's plans for the future. |
 | 1. | Multimedia posting | Support for images and youtube videos |
 | 2. | Interactive posting interactions II | Adding an author to *favorites* |
-| 3. | Direct token transfer | - |
+| 3. | Direct token transfer | Possibility to transfer Polkadot tokens between users without leaving the service. |
 | 4. | User statistics | - |
-| 5. | Functionality for the administrator | - |
-| 6. | Updated website | - |
-| 7. | Documentation | - |
+| 5. | Functionality for the administrator | Interface for users authorised as system administrators. Functionality is designed to ensure optimal system operation and provide convenience for other user roles in the system: reader and author. |
+| 6. | Website | Domain and a Simple UI for users to start using the service |
 
 
 ## Future Plans
