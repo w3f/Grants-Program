@@ -70,6 +70,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [PolyCrypt GmbH](https://polycry.pt)                                 | [Distributed Cryptography for Polkadot Wallets](./distributed_cryptography_for_polkadot_wallets.md)   | [GitHub](https://github.com/perun-network)                               | ☐          |        ☐       |      ☐     |
 | [Open Smart Contract](https://github.com/OpenSmartContract)                                 | [ISO20022 PoC](./ISO20022.md)   | [GitHub](https://github.com/OpenSmartContract)                               | ☐          |        ☐       |      ☐     |
 | [DAOsign](https://daosign.org/)                                 | [DAOsign](./DAOsign.md)   | [GitHub](https://github.com/DAOsign)                               | ☐          |        ☐       |      ☐     |
+| [Zondax AG](https://zondax.ch/)                                 | [PoC Polkadot Conformance Tests](./polkadot_tests.md)   | [GitHub](https://github.com/zondax)                               | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
