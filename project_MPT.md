@@ -109,10 +109,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-[MPT market research](MPT_market_research.pdf)
-[Reference of previous conversation with Parity](https://github.com/armo-dio/Grants-Program-MPT/files/12610041/Parity_Marco_Polo_preliminary.pdf)
+Here you can find some documentation on the research and our preliminary conversation with a Parity team member: [MPT market research](MPT_market_research.pdf) and [Reference of previous conversation with Parity](https://github.com/armo-dio/Grants-Program-MPT/files/12610041/Parity_Marco_Polo_preliminary.pdf)
 
 ## Development Roadmap :nut_and_bolt:
 
