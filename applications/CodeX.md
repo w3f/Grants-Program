@@ -182,29 +182,27 @@ ThirdWeb, which also offers a no-code approach, particularly for smart contracts
 
 ### Milestone 1: No-Code Name Services Deployment
 
-- **Estimated Duration:** 4 weeks
-- **FTE:** 3
-- **Costs:** 15k
+- **Estimated Duration:** 5 weeks
+- **FTE:** 4
+- **Costs:** 20k
 
 #### Roadmap Achievements
 
 
 | Number | Deliverable              | Specification                                       |
 | ------ | ------------------------ | ----------------------------------------------------|
-| 1.     | Substrate module: A      | Develop and implement Substrate module "No-Code Name Services Front End." This module will serve as the user-friendly front-end interface for creating Name Services without any coding requirements. Users will be able to utilize no-code form templates to generate complete Name Services, including front-end functionality. |
-| 2.     | Substrate module: B      | Develop and implement Substrate module "BE Substrate Name Services." This module will encompass the back-end logic required for the Name Services, including API endpoints and data management. It will be seamlessly integrated with the front-end, ensuring a cohesive user experience. |
-| 3.     | Substrate module: C      | Develop and implement Substrate module "No-Code App." This module constitutes the core of our no-code approach. It will provide users with a no-code form template interface, enabling them to design and configure their Name Services. This module will facilitate the generation of the entire Name Services solution, including front-end, back-end, and smart contracts. |
-| 4.     | Substrate module: D      | Complete the development of Substrate module "No-Code Name Services Front End." Ensure that it is fully integrated with the back end and capable of generating functional Name Services based on user configurations. |
-| 5.     | Substrate module: E      | Utilize Substrate to create "Substrate Name Services." This module will be used as a foundation and reference for configuring and adapting our no-code Name Services solution. It will showcase the adaptability and compatibility of our platform within the Substrate framework. |
-| 6.     | Smart contracts.         | Adapt existing Rust-based smart contracts to be compatible with Substrate. These smart contracts will be an integral part of our Name Services solution. This adaptation ensures that they seamlessly integrate into the Substrate ecosystem, allowing for efficient execution and management of Name Services on the blockchain. |
+| 1.     | Front End       | Develop and implement Substrate module "No-Code Name Services Front End." This module will serve as the user-friendly front-end interface for creating Name Services without any coding requirements. Users will be able to utilize no-code form templates to generate complete Name Services, including front-end functionality. This allow users to personalize the graphics, colors and fonts to properly set-up the costumization they prefer. This no-code module allow user to selects parameters and costumize the Dapp to fit with their needs. FE base structure, React, Typescript, Polkadot SCSS |
+| 2.     | Back-End       | Develop and implement Substrate module "BE Substrate Name Services." This module will encompass the back-end logic required for the Name Services, including API endpoints and data management. It will be seamlessly integrated with the front-end, ensuring a cohesive user experience. BE base structure, Node.JS, postgres and redis|
+| 3.     | No-Code Dapp      | Develop and implement Substrate module "No-Code App." This module constitutes the core of our no-code approach. It will provide users with a no-code form template interface, enabling them to design and configure their Name Services. This module will facilitate the generation of the entire Name Services solution, including front-end, back-end, and smart contracts. |
+| 4.     | Smart contracts         | Adapt existing Rust-based smart contracts to be compatible with Substrate. These smart contracts will be an integral part of our Name Services solution. This adaptation ensures that they seamlessly integrate into the Substrate ecosystem, allowing for efficient execution and management of Name Services on the blockchain. The smart contract work with a modular function, where based on the parameter selected, will be implemented the dedicated part of the smart contract. 
 
 
 
 ### Milestone 2: Testing and Debugging and Audit
 
-- **Estimated Duration:** 4 weeks
-- **FTE:** 2.5
-- **Costs:** 12.5k
+- **Estimated Duration:** 2 weeks
+- **FTE:** 1
+- **Costs:** 5k
 
 
 
@@ -214,9 +212,8 @@ ThirdWeb, which also offers a no-code approach, particularly for smart contracts
 | ------ | ------------------------ | ---------------------------------------------------- |
 | 1.     | Testnet Test Coverage    | Execute comprehensive test coverage on the TestNet environment, involving the broader community. We will launch a community bounty program where users actively debug and test our platform. Issues identified and resolved during this phase will be rewarded with tokens, incentivizing community participation and ensuring a robust TestNet environment. The goal is to achieve extensive test coverage and gather valuable user feedback to enhance platform stability.  |
 | 2.     | SC Test Coverage         | Develop a comprehensive smart contract test coverage suite. This suite will encompass various scenarios and edge cases to rigorously test our smart contracts. By doing so, we ensure the reliability and security of our smart contracts, addressing any issues or vulnerabilities that arise from user feedback. Our commitment to robust smart contracts is paramount. |
-| 3.     | SC Audit (3x)            | Conduct a thorough audit of our main smart contract by engaging with reputable auditing firms. This audit will be performed three times to ensure the highest level of security and reliability. Audit reports will be made publicly available, demonstrating our dedication to transparency and security. |
-| 4.     | Mainnet Deployment        | Prepare for the Mainnet deployment phase, including setting up a bounty program focused on identifying and addressing any security vulnerabilities. The bounty program will encourage the community to actively participate in identifying potential security risks, ensuring that our platform is resilient and safe for users. |
-| 5.     | Documentation            | Create comprehensive documentation on Gitbook, providing users with clear and detailed guidance on using our platform. This documentation will serve as a valuable resource for developers and users, promoting ease of adoption and understanding of our ecosystem. Additionally, we will actively engage with the community to gather feedback and improve our documentation based on user needs. |
+| 3.     | Mainnet Deployment        | Prepare for the Mainnet deployment phase, including setting up a bounty program focused on identifying and addressing any security vulnerabilities. The bounty program will encourage the community to actively participate in identifying potential security risks, ensuring that our platform is resilient and safe for users. |
+| 4.     | Documentation            | Create comprehensive documentation on Gitbook, providing users with clear and detailed guidance on using our platform. This documentation will serve as a valuable resource for developers and users, promoting ease of adoption and understanding of our ecosystem. Additionally, we will actively engage with the community to gather feedback and improve our documentation based on user needs. |
 
 
 
