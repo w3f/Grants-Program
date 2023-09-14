@@ -107,11 +107,15 @@ Apophenia also aims to provide data aggregation functionality to increase both d
 
 In regards to alternatives, we have observed that most of the [projects under Oracle are inactive](https://wiki.polkadot.network/docs/build-open-source). For those that are active, here's a quick comparison:
 
-* interBTC: specialized for Bitcoin quotes, we intend to be a generalized oracle solution instead.
-* DIA: current solution available on Astar as ink! smart contracts. Like Laminar and Chainlink. data is pushed on-chain by centralized (and usually manually verified) offchain services.
-* Bridgestate: focused on collateralization values of bridges.
-* Tellor: a full fledged solution which we are ultimately building towards, however, as it stands the consumer parachains need to be EVM compatible, have smart contracts enabled and install a separate pallet to gain oracle functionality. In our case, simply using XCM queries is sufficient to gain full functionality. We intend to use similar game-theoretic and statistical techniques to validate data across different feeds.
-* Laminar: Data has to be actively pushed from external sources, triggered offchain. Overall it's a pallet to be included. Overall it contains some of the same restrictions as DIA and Chainlink.
+* **interBTC**: specialized for Bitcoin quotes, we intend to be a generalized oracle solution instead.
+* **Bridgestate**: focused on collateralization values of bridges.
+* **Tellor**: a full fledged solution which we are ultimately building towards, however, as it stands the consumer parachains need to be EVM compatible, have smart contracts enabled and install a separate pallet to gain oracle functionality. In our case, simply using XCM queries is sufficient to gain full functionality. We intend to use similar game-theoretic and statistical techniques to validate data across different feeds.
+* **Laminar**: Data has to be actively pushed from external sources, triggered offchain. Overall it's a pallet to be included. Overall it contains some of the same restrictions as DIA and Chainlink.
+* **DIA**: current solution available on Astar as ink! smart contracts. Like Laminar, data is pushed on-chain by centralized (and usually manually verified) offchain services.
+* **Acurast**: It's a multi-chain execution layer that is decentralized, that is, it provides a way register and run an arbitrary script on the Acurast network. In that sense, it's more comparable to Phala Network.
+<!-- * **Chainlink**: Only provide pallets to be integrated into other projects, which themselves need to # TODO ... Besides that, seems to be unmaintained for 2 years, and is already outdated in terms of Substrate code. -->
+
+At the end of the day, our goal is to provide a **native** oracle solution to the DotSama ecosystem as a parachain, which can be accessed by any other parachain or account. Many projects mentioned above have a multi-ecosystem goal, while we want to provide the best solution for DotSama.
 
 <!-- Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
@@ -222,7 +226,7 @@ Most of the work in this milestone has been started and can be seen in the repos
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | XCM request-response model | Use XCM messages as the main interface for requesting and receiving oracle data. |
-| 2. | Research more ways to validate offchain data |  Research and implement ways to ensure that offchain workers are providing valid data and have some level of protection again known attack vectors. |
+| 2. | Implement offchain data validation |  Design and implement ways to ensure that offchain workers are providing valid data and have some level of protection again known attack vectors. |
 | 3. | E2E tests with RPC calls | We will have E2E tests using RPC calls|
 | 4. | E2E tests with XCM | We will have E2E tests using XCM. |
 
@@ -240,9 +244,9 @@ The last milestone is dedicated to implementing the staking / slashing mechanism
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1.| Aggregation | Research and implement interesting and statistically sound aggregation methods so we can integrate them in the slashing mechanism. |
+| 1.| Aggregation | Implement statistically sound aggregation methods so we can integrate them in the slashing mechanism. |
 | 2. | Design and implement Staking / Slashing mechanism | Research and implement game-theoretic ways of making the oracle system safe. |
-| 3. | Design and research fee structures | Add a fee structure that takes into account all the features mentioned above. |
+| 3. | Design and implement fee structures | Add a fee structure that takes into account all the features mentioned above. |
 | 4. | Tutorials and Showcase | Create online media to showcase the usage of the project as well as prepare in-person presentations for the DotSama community. |
 
 
