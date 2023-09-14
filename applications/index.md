@@ -69,6 +69,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Off Narrative Labs](https://github.com/Off-Narrative-Labs)                                 | [Tuxedo Parachain Support](./tuxedo_parachain.md)   | [GitHub](https://github.com/Off-Narrative-Labs)                               | ☐          |        ☐       |      ☐     |
 | [PolyCrypt GmbH](https://polycry.pt)                                 | [Distributed Cryptography for Polkadot Wallets](./distributed_cryptography_for_polkadot_wallets.md)   | [GitHub](https://github.com/perun-network)                               | ☐          |        ☐       |      ☐     |
 | [Open Smart Contract](https://github.com/OpenSmartContract)                                 | [ISO20022 PoC](./ISO20022.md)   | [GitHub](https://github.com/OpenSmartContract)                               | ☐          |        ☐       |      ☐     |
+| [DAOsign](https://daosign.org/)                                 | [DAOsign](./DAOsign.md)   | [GitHub](https://github.com/DAOsign)                               | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
