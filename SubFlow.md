@@ -169,7 +169,7 @@ The team plans to release the system sequentially in two versions:<br>
 | 1. | Multimedia posting | Support for images and youtube videos |
 | 2. | Interactive posting interactions II | Adding an author to *favorites* |
 | 3. | Direct token transfer | Possibility to transfer Polkadot tokens between users without leaving the service. |
-| 4. | User statistics | - |
+| 4. | User statistics | Number of posts, replies, likes and followers. |
 | 5. | Functionality for the administrator | Interface for users authorised as system administrators. Functionality is designed to ensure optimal system operation and provide convenience for other user roles in the system: reader and author. |
 | 6. | Website | Domain and a Simple UI for users to start using the service |
 
