@@ -30,7 +30,7 @@ Our first layer of infrastructure is built on Rust, and we chose _Substrate_ as 
 
 #### Team interest
 
-Our team is a small, senior, and resourceful group with expertise in global private markets, investments, and technology. Our project has naturally evolved towards private markets and our current iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership and exchanges, while breaking down historical barriers such as illiquidity and limited access for smaller investors. We aim to harness the benefits of transparency, immutability, and automated compliance to ownership records by leveraging Substrate and Polkadot's robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and borrowers.
+Our team is a small, senior, and resourceful group with expertise in global private markets, investments, and technology. Our project has naturally evolved towards supporting the development of private markets and our current iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership and exchanges, while breaking down historical barriers such as illiquidity and limited access for smaller investors. We aim to harness the benefits of transparency, immutability, automated compliance and ownership records by leveraging Substrate and Polkadot's robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and asset owners.
 
 ### Project Details
 
@@ -43,18 +43,15 @@ We expect the teams to already have a solid idea about your project's expected f
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
-Our intention is to deliver an initial implementation of a liquidity protocol to support asset tokenization in private markets, our first steps for the MVP would be to:
+Our intention is to deliver an initial implementation of a liquidity protocol that focuses on private markets and allows for asset tokenization, to support the build out of alternative finance platforms on top of our infrastructure. Our first steps for the MVP would be to:
 
-- Set up our asset focused blockchain for private markets and develop its initial attributes: specifically designed for issuance and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
-- Set up the initial role of the tokens for primary and eventually secondary issuance through smart contracts: creating a token standard that will make it simple for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these tokens on decentralized private exchanges.
-- Set up the initial wallet functions and a way to interact with multiple users owning multiple assets: we aim at implementing a wallet that will allow users to store and manage their RWAs.
+1) Set up our RWAs focused blockchain for private markets and develop its initial attributes: specifically designed for issuance and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
+2) Set up the initial role of the tokens for primary and eventually secondary issuance through smart contracts: creating a token standard that will make it swift for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these tokens on private exchanges.
+3) Set up the initial wallet functions and a way to interact with multiple users owning multiple assets: we aim at implementing a wallet that will allow users to store and manage their RWAs.
+
+The image below represents the two layers of our infrastructure and how we would be using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
 
 ![](static/img/web3.png)
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
 
 ### Ecosystem Fit
 
