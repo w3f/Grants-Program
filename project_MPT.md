@@ -54,7 +54,7 @@ The image below represents the two layers of our infrastructure and how we would
 ![](static/img/web3.png)
 
 Among the diverse work of our team members, here are some platforms that have been built and deployed in the past ten years, clients vary from boutique adviosry firms to banks:
-- [Professional investment network](www.kobofunds.com)
+- ![Professional investment network](www.kobofunds.com)
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
