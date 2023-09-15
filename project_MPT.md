@@ -12,9 +12,9 @@
 
 #### Description
 
-Marco Polo Technologies is an infrastructure as a service company that bridges the gap between traditional finance and innovative digital solutions, aiming at connecting real-world assets with digital finance. Our infrastructure serves as a secure and compliant foundation to support diverse business models and for companies in turnaround phases seeking a technological edge. With customizable workflows and a range of pre-built and *ad hoc* functions, businesses can integrate our solution into existing digital or offline models. Additionally, we are developing a user-friendly UI architecture, enabling non-tech-savvy clients to swiftly create their alternative finance platforms with a close to *drag-and-drop* experience.
+Marco Polo Technologies is an infrastructure company that bridges the gap between traditional finance and innovative digital solutions, aiming at connecting real-world assets with digital finance within private markets. Our infrastructure serves as a secure and compliant foundation to support diverse business models and for companies in turnaround phases seeking a technological edge; with customizable workflows and a range of pre-built and *ad hoc* functions, businesses can integrate our solution into existing digital or offline models. Additionally, we are developing a user-friendly UI architecture, enabling non-tech-savvy clients to swiftly create their alternative finance platforms with a close to *drag-and-drop* experience.
 
-Moreover, businesses can expand into previously underserved markets, connecting real-world assets to a broader audience. Our ongoing efforts harness the synergy between asset owners, investors, and issuers, facilitating transformative changes within private markets into public-like, frictionless models, injecting liquidity, accessibility, and transparency into digital private market investments, making them more impactful, appealing, and inclusive.
+Moreover, businesses can expand into previously underserved markets, connecting real-world assets to a broader audience; our ongoing efforts harness the synergy between asset owners, investors, and issuers, facilitating transformative changes within private markets into public-like, frictionless models, injecting liquidity, accessibility, and transparency into digital private market investments, making them more impactful, appealing, and inclusive.
 
 #### Marco Polo Technologies, Substrate and Polkadot - A brief description of our project.
 
@@ -34,15 +34,6 @@ Our team is a small, senior, and resourceful group with expertise in global priv
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
-
 Our intention is to deliver an initial implementation of a liquidity protocol that focuses on private markets and allows for asset tokenization, to support the build out of alternative finance platforms on top of our infrastructure. Our first steps for the MVP of this project would be to:
 
 1) Set up our RWAs focused blockchain for private markets and develop its initial attributes: specifically designed for issuance and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
@@ -57,6 +48,7 @@ Among the diverse work of our team members, here are some platforms that have be
 - [Professional investment network](https://www.kobofunds.com/) on our current infrastructure
 - [Global impact investment platform](https://www.convergence.finance/)
 - Real estate platforms: [1](https://www.capitalrise.com/), [2](https://yielders.co.uk/), [3](https://www.galliardhomes.com/), [4](https://www.shojin.co.uk/)
+
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -72,19 +64,20 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Team leader: [Armodio Luigi Corrado](https://www.linkedin.com/in/armodio-luigi-corrado-b10213125/)
+- Team member: [Aleksandar Pikic](https://www.linkedin.com/in/apikic/)
+- Team member: [Matija Galina](https://hr.linkedin.com/in/matija-galina)
+- Team member: [Alan Pavicic](https://hr.linkedin.com/in/alan-pavicic-a2994a55)
+- Team member: [Lauri Laakso](https://vn.linkedin.com/in/lauri-laakso-80b3088)
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Armodio Luigi Corrado
+- **Contact Email:** armodio@mapo.group
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Legal entity:** American Inc. company DBA Marco Polo Technologies
 
 ### Team's experience
 
