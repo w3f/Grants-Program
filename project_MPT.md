@@ -47,6 +47,7 @@ The image below represents the two layers of our infrastructure and how we would
 Among the diverse work of our team members, here are some platforms that have been built and deployed in the past ten years, clients vary from boutique adviosry firms to banks:
 - [Professional investment network](https://www.kobofunds.com/) on our current infrastructure
 - [Global impact investment platform](https://www.convergence.finance/)
+- [APT Systems - Spera coon project](https://www.sperastablecoin.com/)
 - Real estate platforms: [1](https://www.capitalrise.com/), [2](https://yielders.co.uk/), [3](https://www.galliardhomes.com/), [4](https://www.shojin.co.uk/)
 
 ### Ecosystem Fit
@@ -83,8 +84,6 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
-
 ### Team Code Repos
 
 - https://github.com/<your_organisation>/<project_1>
@@ -94,12 +93,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://github.com/<team_member_1>
 - https://github.com/<team_member_2>
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
-
 
 ## Development Status :open_book:
 
