@@ -105,79 +105,65 @@ Here you can find some documentation on the research and our preliminary convers
 
 ## Development Roadmap :nut_and_bolt:
 
-Our team is working on the creation and implementation of other features in the wider context of our infrastructure development, outside of this grant application. We would have the equivalent of two senior engineers working full-time on this project and the intended language of development would be Rust.
+Our team is working on the creation and implementation of other features in the wider context of our infrastructure development that are to be intended outside of this grant application. We would have the equivalent of 2.5 people, cumulatively, contributing full-time to this project and the language of development would be *Rust*.
+
+The below roadmap refers to an initial implementation of a purposely built blockchain for primary and secondary issuance using *Substrate*.
 
 on This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
 
 ### Overview
 
 - **Total Estimated Duration:** ~3 months
-- **Full-Time Equivalent (FTE):**  2 FTE
+- **Full-Time Equivalent (FTE):**  2.5 FTE
 - **Total Costs:** 60,000 USD
 
 ### Milestone 1
 
 - **Estimated duration:** ~1 month
-- **FTE:** 2
+- **FTE:** 2.5
 - **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0a.** | License | MIT|
+| **0b.** | Documentation | We will provide the **inline documentation** of the code that explains how to perform the initial set-up of the private markets MPT blockchain built on Substrate. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
-
+| 1. | Pallet Balances | Setting up a generic way to store and manage balances of fungible assets |
+| 2. | Pallet Assets | Specify how to store and manage tokens and their ownership |
+| 3. | Pallet Uniques | Using unique identifiers to store and manage the token IDs |
+| 4. | MPT chain | The balances, assets and uniques pallets will interact and be used to further define tokens properties and features, their minting and trasferring processes as well as balance queries. |
 
 ### Milestone 2
 
 - **Estimated Duration:** ~1 month
-- **FTE:** 2
+- **FTE:** 2.5
 - **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0a.** |  License | MIT|
+| **0b.** | Documentation | We will provide the **inline documentation** of the code that explains how to perform the initial primary and secondary issuance via smart contracts. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 1. | Pallet Contracts | In order to issue and trade tokens we will need to deploy and execute smart conctrats, private markets have their own set of pre-established rules which we will add a very first implementation on |
+| 2. | Pallet Assets | Balances of assets with their value are stored in executable smart contracts |
+| 3. | MPT chain | The assets and contracts pallets will support the initial test of primary and secodary issuance of tokens related to real world assets with an existing underlying asset |
 
 ### Milestone 3
 
 - **Estimated Duration:** ~1 month
-- **FTE:** 2
+- **FTE:** 2.5
 - **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0a.** | License | MIT|
+| **0b.** | Documentation | We will provide the **inline documentation** of the code that explains how to initially set up a wallets in the context of multiple users owning multiples assets. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 0e. | Article | We will publish an **article** that explains how to set up a blockchain specifically developed to support the creation of digital private markets for private companies that want to represent, issue and exchanged their underlying assets (e.g. SMEs shares, real estate, collectibles, etc.) |
+| 1. | Pallet balances | Store and manage tokens' balances in the wallet |
+| 2. | Pallet assets | Check what assets are represented by the tokens |
+| 3. | MPT chain | Develop APIs to allow users to interact with the wallet for balances and asset |
 | 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
-
 
 ## Future Plans
 
@@ -189,10 +175,4 @@ Please include here
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+**How did you hear about the Grants Program?** Web3 Foundation Website
