@@ -146,7 +146,6 @@ The team plans to release the system sequentially in two versions:<br>
 | 0a. | License |  MIT  |
 | 0b. | Documentation |  We will provide the documentation of the code and a basic tutorial, which will show how the functionality works.  |
 | 0c. | Testing and Testing Guide | Core functions will be covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an article that explains what was built, how it can benefit other projects and what are upcoming development works. |
 | 1. | System design | Definition of the various components of the service will interacting with each other, data  storage, and how users will be able to interact with the system. A detailed technical roadmap for how the systems we build. |
 | 2. | User registration and user profile | The ability to create and customise a user profile, which is one of the core features of the present and future product roadmap. |
 | 3. | Posting functionality | This functionality allows users to write posts that are visible to other users. |
@@ -165,7 +164,7 @@ The team plans to release the system sequentially in two versions:<br>
 | 0a. | License |  MIT  |
 | 0b. | Documentation |  We will provide the documentation of the code and a basic tutorial, which will show how the functionality of the second milestone works.  |
 | 0c. | Testing and Testing Guide | Core functions will be covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an article that explains what was built in the second milestone, and team's plans for the future. |
+| 0d. | Article | We will publish an article that explains what was built, what was done/achieved as part of the grant, and team's development plans for the future. |
 | 1. | Multimedia posting | Support for images and youtube videos. |
 | 2. | Interactive posting interactions II | Adding an author to *favorites*. |
 | 3. | Direct token transfer | The functionality which allows users to transfer Polkadot tokens to other users without leaving the service, as well as to send and receive donations in these tokens. |
