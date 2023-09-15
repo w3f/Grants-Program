@@ -61,6 +61,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - If so, how is your project different?
   - If not, are there similar projects in related ecosystems?
+ 
+Marco Polo Technologies aims at positioning itself as an infrastructure company focused on building fintech specific modules to support private markets
 
 ## Team :busts_in_silhouette:
 
@@ -79,7 +81,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Legal Structure
 
-- **Legal entity:** An American Inc. company, DBA Marco Polo Technologies
+- **Legal entity:** American *Inc.* company, DBA Marco Polo Technologies
 
 ### Team's experience
 
@@ -103,7 +105,7 @@ Here you can find some documentation on the research and our preliminary convers
 
 ## Development Roadmap :nut_and_bolt:
 
-Our team is working on the creation and implementation of other features in the wider context of our infrastructure, outside of this grant application. We would have the equivalent of two senior engineers working full-time on this project and the intended language of development would be Rust.
+Our team is working on the creation and implementation of other features in the wider context of our infrastructure development, outside of this grant application. We would have the equivalent of two senior engineers working full-time on this project and the intended language of development would be Rust.
 
 on This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
