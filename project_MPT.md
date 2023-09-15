@@ -77,7 +77,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Legal Structure
 
-- **Legal entity:** American Inc. company DBA Marco Polo Technologies
+- **Legal entity:** American Inc. company, DBA Marco Polo Technologies
 
 ### Team's experience
 
