@@ -44,10 +44,11 @@ The image below represents the two layers of our infrastructure and how we would
 
 ![](static/img/web3.png)
 
-Among the diverse work of our team members, here are some platforms that have been built and deployed in the past ten years, clients vary from boutique adviosry firms to banks:
+Among the diverse work of our team members, here are some platforms that have been built and deployed in the past decade, clients vary from boutique adviosry firms to publicly traded companies:
+
 - [Professional investment network](https://www.kobofunds.com/) on our current infrastructure
 - [Global impact investment platform](https://www.convergence.finance/)
-- [APT Systems - Spera coon project](https://www.sperastablecoin.com/)
+- [APT Systems - Spera coin project](https://www.sperastablecoin.com/)
 - Real estate platforms: [1](https://www.capitalrise.com/), [2](https://yielders.co.uk/), [3](https://www.galliardhomes.com/), [4](https://www.shojin.co.uk/)
 
 ### Ecosystem Fit
@@ -78,11 +79,13 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Legal Structure
 
-- **Legal entity:** American Inc. company, DBA Marco Polo Technologies
+- **Legal entity:** An American Inc. company, DBA Marco Polo Technologies
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
+Our team has a vast and diverse experience across various industry segments and modern technologies and has been able to go from the initial conceptualization of market needs in the private financial sector, to the delivery of a compliant infrastructure. Our intent has been that of creating building blocks with functions and modules that can be easily assembled to create all sorts of alternative finance platforms, to support the transition of traditionally or off-line ran businesses to the adoption of a fintech focused web3 infrastructure, for private businesses transacting and operating in private markets, enlarging the concept of *sophisticated investors* to continuosly push the boundaries of a legal framework that does not keep up with a modern financial infrastructure.
+
+The team combined experience spaces from software architecture and development in Rust, C/C++, Python, C#, JavaScript, SQL, matehmatical algorithms, mobile and web development, content parsing and filtering, to the recent exploration of WebAssembly and Substrate. Moreover, our team is able to manage and implement complex projects, navigating regulatory requirements and financial processes, to be applied on business cases focused on private markets, as some of the example shown above. More in particular, we aim at being the choice for other technology teams interested to implement their alternative finance soultions with our pre-built components. 
 
 ### Team Code Repos
 
