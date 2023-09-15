@@ -12,13 +12,13 @@
 
 #### Description
 
-Marco Polo Technologies is an infrastructure as a service company that bridges the gap between traditional finance and innovative digital solutions, aiming at connecting real-world assets with digital finance. Our infrastructure serves as a secure and compliant foundation to support diverse business models and for companies in turnaround phases seeking a technological edge. With customizable workflows and a range of pre-built and _ad hoc_ functions, businesses can integrate our solution into existing digital or offline models. Additionally, we are developing a user-friendly UI architecture, enabling non-tech-savvy clients to swiftly create their alternative finance platforms with a close to _drag-and-drop_ experience.
+Marco Polo Technologies is an infrastructure as a service company that bridges the gap between traditional finance and innovative digital solutions, aiming at connecting real-world assets with digital finance. Our infrastructure serves as a secure and compliant foundation to support diverse business models and for companies in turnaround phases seeking a technological edge. With customizable workflows and a range of pre-built and *ad hoc* functions, businesses can integrate our solution into existing digital or offline models. Additionally, we are developing a user-friendly UI architecture, enabling non-tech-savvy clients to swiftly create their alternative finance platforms with a close to *drag-and-drop* experience.
 
 Moreover, businesses can expand into previously underserved markets, connecting real-world assets to a broader audience. Our ongoing efforts harness the synergy between asset owners, investors, and issuers, facilitating transformative changes within private markets into public-like, frictionless models, injecting liquidity, accessibility, and transparency into digital private market investments, making them more impactful, appealing, and inclusive.
 
 #### Marco Polo Technologies, Substrate and Polkadot - A brief description of our project.
 
-Our first layer of the infrastructure is built on Rust, and we chose _Substrate_ as our development framework as a natural addition to our existing technology, in order to add a blockchain layer that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs) in private markets, while enabling access to many different investor classes. By building a liquidity protocol for RWAs on _Substrate_ and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share, among others, the following benefits with the Polkadot ecosystem:
+Our first layer of the infrastructure is built on Rust, and we chose *Substrate* as our development framework as a natural addition to our existing technology, in order to add a blockchain layer that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs) in private markets, while enabling access to many different investor classes. By building a liquidity protocol for RWAs on *Substrate* and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share, among others, the following benefits with the Polkadot ecosystem:
 
 - Promoting financial inclusion on platforms: onboarding reliable clients through established social connections, making digital private markets more accessible to a wider range of investors and asset owners, leveraging our proprietary social network.
 - Enhancing asset interoperability: by enabling the seamless transfer and trading of RWAs across the Polkadot network, we will increase liquidity and accessibility for all market participants.
@@ -54,8 +54,9 @@ The image below represents the two layers of our infrastructure and how we would
 ![](static/img/web3.png)
 
 Among the diverse work of our team members, here are some platforms that have been built and deployed in the past ten years, clients vary from boutique adviosry firms to banks:
-- [Professional investment network](https://www.kobofunds.com/)
-- 
+- [Professional investment network](https://www.kobofunds.com/) on our current infrastructure
+- [Global impact investment platform](https://www.convergence.finance/)
+- Real estate platforms: [1](https://www.capitalrise.com/), [2](https://yielders.co.uk/), [3](https://www.galliardhomes.com/), [4](https://www.shojin.co.uk/)
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
