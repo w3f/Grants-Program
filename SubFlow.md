@@ -29,7 +29,15 @@ The functionality of the system can be divided into three logical user roles:
 - Reader functionality
 - Author functionality
 - System administrator functionality
-  
+<br>
+<p align="center">
+  <img src="https://github.com/deus4/KidsNotes/assets/21257942/17f1a838-787d-4a45-bb61-3fe460d5ad85">
+</p>
+<br> 
+<p align="center">
+<code>Use Case Diagram</code>
+</p>
+<br>
 
 The functionality of the author and system administrator will require user authorisation in the system (administrating functionality will be transferred to the DAO-smart service for community governance in the future).
 
@@ -45,13 +53,14 @@ Other Smart-Services provide additional functionality, for example:<br>
 - **Donation Service** <br>Allows system users to financially support content creators they find interesting directly.
 - **NFT Markeplace Service** <br>Facilitates the direct sale of NFTs creaated by authors on SubFlow.
 <br>
-
-
-![diagram](https://github.com/deus4/KidsNotes/assets/21257942/17f1a838-787d-4a45-bb61-3fe460d5ad85)
-<br>**Use Case Diagram**
-
-![SubFlow_Component](https://github.com/deus4/KidsNotes/assets/21257942/de8c5e64-449d-4bf1-958f-802cd3b64bb3)
-<br>**SubFlow Components**
+<p align="center">
+  <img src="https://github.com/deus4/KidsNotes/assets/21257942/de8c5e64-449d-4bf1-958f-802cd3b64bb3">
+</p>
+<br>
+<p align="center">
+<code>SubFlow Components</code>
+</p>
+<br>
 
 - ink! Smart Contracts
 - Substrate
@@ -66,9 +75,24 @@ In short (kind of), generally speaking, a decentralised free social network is i
 
 ## Demo: Web UI ##
 
-![Screenshot1](https://github.com/dappforce/subsocial-starter/assets/21257942/b977518e-c720-4a32-9ec7-6b227ee57538)
+<br>
+<p align="center">
+  <img width="640" height="625" src="https://github.com/w3f/Grants-Program/assets/21257942/8f388f7f-db2a-4751-8ebc-f722893cf900">
+</p>
 
-![Screenshot2](https://github.com/dappforce/subsocial-starter/assets/21257942/24a972b6-75e8-40f2-95d9-4cd3f7b1c85a)
+<p align="center">
+<code>Feed wall view</code>
+</p>
+<br>
+
+
+<p align="center">
+  <img width="640" height="470" src="https://github.com/dappforce/subsocial-starter/assets/21257942/24a972b6-75e8-40f2-95d9-4cd3f7b1c85a">
+</p>
+<p align="center">
+<code>User page view</code>
+</p>
+<br>
 
 ![Screenshot3](https://github.com/dappforce/subsocial-starter/assets/21257942/2a6b67ad-f454-49a8-87c9-78fa3e993d1e)
 
@@ -136,7 +160,7 @@ The team plans to release the system sequentially in two versions:<br>
 
 ### Milestone 1 — Alpha Release
 
-- **Estimated duration:** 1.5 months
+- **Estimated duration:** 2 months
 - **FTE:**  4 FTE
 - **Costs:** 20,000 USD
 
@@ -148,13 +172,13 @@ The team plans to release the system sequentially in two versions:<br>
 | 0c. | Testing and Testing Guide | Core functions will be covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 1. | System design | Definition of the various components of the service will interacting with each other, data  storage, and how users will be able to interact with the system. A detailed technical roadmap for how the systems we build. |
 | 2. | User registration and user profile | The ability to create and customise a user profile, which is one of the core features of the present and future product roadmap. |
-| 3. | Posting functionality | This functionality allows users to write posts that are visible to other users. |
+| 3. | Posting functionality | This functionality allows users to write and publish posts. |
 | 4. | Interactive posting interactions | Functionaltity for interactions with posts, such as *comments*, *reposts* and *likes*. |
 | 5. | System users interaction | Basic functionality for direct interactions between users, such as *search* and *follow*. |
 
 ### Milestone 2 — Release Version
 
-- **Estimated duration:** 1.5 months
+- **Estimated duration:** 1 months
 - **FTE:**  3 FTE
 - **Costs:** 10,000 USD
 
