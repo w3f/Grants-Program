@@ -132,6 +132,7 @@ This modification will make our ink-verifier-image a lot simpler.
 
 ### Technology Stack
 
+Programming languages: Rust, Typescript, Shellscript.
 We will use rust to build our new querying microservice. The persistence layer will be a Postgres database.
 
 ### Ecosystem Fit
@@ -148,21 +149,20 @@ While a number of open-source alternatives have emerged, none of them have suppo
 
 - Total Estimated Duration: ~4 months
 - Full-Time Equivalent (FTE): 1
-- Total Costs: € 55,000
+- Total Costs: € 50,000
 
 ### Milestone 1
 
 - Total Estimated Duration: 2 months
 - Full-Time Equivalent (FTE): 1
-- Total Costs: €27,500
+- Total Costs: €25,000
 
 | Nº  | Deliverable | Specification
 | :-- | :--         | :--
 | 0a. | Licence | Apache 2.0 |
 | 0b. | Documentation | We will provide inline documentation of the code and documentation on how to set up an explorer instance. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the guide. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the guide. In addition to the unit tests and the accompanying guide, we'll also add video tutorials to demonstrate usage of the functionality. |
 | 0d. | Docker | We will provide a Dockerfile and Docker Compose file(s) to ease the deployment and execution of the system. |
-| 0e. | Programming languages | Rust, Typescript |
 | 1. | Verifications querying microservice | A rust microservice that will expose a REST based API to the clients and serve verification requests data from the persistence layer. |
 | 2. | Updated Explorer UI | We will introduce a new page to display contract verification requests. |
 | 3. | Updated verification service | The service will now make the verification requests persist and will support configuring three storage option types for the uploaded artefacts: local file system, an object storage backend such as Amazon S3 and IPFS. A config option will be provided to the deployer of the verification service to pick one of these three storage options. |
@@ -171,15 +171,15 @@ While a number of open-source alternatives have emerged, none of them have suppo
 
 - Total Estimated Duration: 2 months
 - Full-Time Equivalent (FTE): 1
-- Total Costs: €27,500
+- Total Costs: €25,000
 
 | Nº  | Deliverable | Specification
 | :-- | :--         | :--
 | 0a. | Licence | Apache 2.0 |
 | 0b. | Documentation | We will provide inline documentation of the code and documentation on how to set up an explorer instance. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the guide. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the guide. In addition to the unit tests and the accompanying guide, we'll also add video tutorials to demonstrate usage of the functionality. |
 | 0d. | Docker | We will provide a Dockerfile and Docker Compose file(s) to ease the deployment and execution of the system. |
-| 0e. | Programming languages | Typescript, Shellscript |
+| 0e. | Tutorial | We will add a tutorial document to show how a user can have their already deployed smart contract verified from the UI. |
 | 1. | Updated Explorer UI | We will introduce new page to display statistics in the form of charts like histograms, pie-charts and numbers (for e.g., total blocks count) for chain data. |
 | 2. | Updated ink verifier image | The ink verifier image will now use the `--verifiable` flag of the cargo-contract tool to build a verifiable contract as well as be able to detect active toolchain version from `config.toml` file. |
 
