@@ -158,6 +158,7 @@ software architecture, ensuring robust and secure software solutions.<br>
 - https://github.com/opdev3<br>
 - https://github.com/opdev7<br>
 - https://github.com/vendev1<br>
+- https://github.com/HelixNetwork/pendulum<br>
 
 ### Team LinkedIn Profiles
 
@@ -167,7 +168,7 @@ software architecture, ensuring robust and secure software solutions.<br>
 
 The team plans to release the system sequentially in two versions:<br>
 
-- **Demo Version (Alpha Release):** includes implementation of the main functionality of the system for readers, authors, and system administrators, which will allow functionality testing for each user role and obtaining initial feedback from test users.<br>
+- **Beta Release:** includes implementation of the main functionality of the system for readers, authors, and system administrators, which will allow functionality testing for each user role and obtaining initial feedback from test users.<br>
 
 - **Release Version:** includes enhanced functionality from the alpha release and additional features for all user roles. Administrator functionality will be significantly limited in terms of interaction with user data for reader and author roles.<br>
 
