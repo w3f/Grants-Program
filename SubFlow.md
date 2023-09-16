@@ -50,9 +50,9 @@ SubFlow is a fully decentralised application based on SmartSOA (smart service-or
 
 Other Smart-Services provide additional functionality, for example:<br>  
 - **Advertising Service** <br>Enables advertisers to create and run campaigns on SubFlow, rewarding users who share their content according to set rules.
-- **Donation Service** <br>Allows system users to financially support content creators they find interesting directly.
+- **Donation Service** <br>Allows users to financially support content creators they find interesting directly.
 - **NFT Markeplace Service** <br>Facilitates the direct sale of NFTs created by authors on SubFlow.
-- **Voting Service** <br>Allows system users to participate in voting.
+- **Voting Service** <br>Allows users to participate in voting.
 <br>
 <p align="center">
   <img src="https://github.com/deus4/KidsNotes/assets/21257942/de8c5e64-449d-4bf1-958f-802cd3b64bb3">
