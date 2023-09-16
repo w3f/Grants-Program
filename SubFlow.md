@@ -170,7 +170,7 @@ The team plans to release the system sequentially in two versions:<br>
 
 - **Beta Release:** includes implementation of the main functionality of the system for readers, authors, and system administrators, which will allow functionality testing for each user role and obtaining initial feedback from test users.<br>
 
-- **Release Version:** includes enhanced functionality from the alpha release and additional features for all user roles. Administrator functionality will be significantly limited in terms of interaction with user data for reader and author roles.<br>
+- **Release Version:** includes enhanced functionality from the beta release and additional features for all user roles. Administrator functionality will be significantly limited in terms of interaction with user data for reader and author roles.<br>
 
 ### Overview
 
