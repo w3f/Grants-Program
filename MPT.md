@@ -167,7 +167,13 @@ Please include here
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
-Private markets support to tokenisare SMEs shares and create private ETFs
+Short term: Private markets support to tokenize SMEs shares and create private ETFs/portfolio
+Long term: become the go-to platform powered by Substrate and Polkadot for private companies and digital private markets.
+
+- oracles offline and online
+- onchain KYV/KYB/AML/KYT?!
+- wallet/custodial/wallet to be controlled by advisors only on permissioned tokens vs non custodial? (it must be custodial at least for the infra provider)
+- 
 
 
 ## Additional Information :heavy_plus_sign:
