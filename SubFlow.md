@@ -68,6 +68,7 @@ Other Smart-Services provide additional functionality, for example:<br>
 
 - ink! Smart Contracts
 - Substrate
+- html/css/js for the frontend
 - All code produced will be open-sourced under the MIT license
 - There are no plans for issuing a dedicated token at the moment
 
