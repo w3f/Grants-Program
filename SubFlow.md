@@ -233,11 +233,12 @@ The team plans to release the system sequentially in two versions:<br>
 - Personal service-contract: 
   - Implementing a separate user-specific smart contract to enable decentralised data processing and ownership. Users will have control over their data and can assign roles to others, customising their service according to their needs;
   - This will enhance security and facilitate future feature development.
-- SubSocial and SubSquid support:
-  - Development and launch of API for interacting with other blockchain services such as SubSocial;
-  - Providing easy access to data on the blockchain by supporting the SubQuery.
+ 
+**3. Integrations** <br>
+- New structure will allow development and launch of API for interacting with other blockchain services such as SubSocial and SubSquid (and othrers).
 
-**3. New functionality:** <br>
+
+**4. New functionality:** <br>
 - NFT-posting (possibility to mint NFT-post (text, images, etc.) directly from the user's personal service contract.
 - Extended functionality for token transfers.;
 - Advertising smart service development for the direct interaction between creators and advertisers;
