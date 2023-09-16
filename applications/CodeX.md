@@ -180,40 +180,60 @@ ThirdWeb, which also offers a no-code approach, particularly for smart contracts
 - **Full-Time Equivalent (FTE):**  5.5 FTE
 - **Total Costs:** 27500 USD
 
-### Milestone 1: No-Code Name Services Deployment
+Certainly, here are your milestones with the specified format:
 
-- **Estimated Duration:** 5 weeks
-- **FTE:** 4
-- **Costs:** 20k
-
-#### Roadmap Achievements
-
-
-| Number | Deliverable              | Specification                                       |
-| ------ | ------------------------ | ----------------------------------------------------|
-| 1.     | Front End       | Develop and implement Substrate module "No-Code Name Services Front End." This module will serve as the user-friendly front-end interface for creating Name Services without any coding requirements. Users will be able to utilize no-code form templates to generate complete Name Services, including front-end functionality. This allow users to personalize the graphics, colors and fonts to properly set-up the costumization they prefer. This no-code module allow user to selects parameters and costumize the Dapp to fit with their needs. FE base structure, React, Typescript, Polkadot SCSS |
-| 2.     | Back-End       | Develop and implement Substrate module "BE Substrate Name Services." This module will encompass the back-end logic required for the Name Services, including API endpoints and data management. It will be seamlessly integrated with the front-end, ensuring a cohesive user experience. BE base structure, Node.JS, postgres and redis|
-| 3.     | No-Code Dapp      | Develop and implement Substrate module "No-Code App." This module constitutes the core of our no-code approach. It will provide users with a no-code form template interface, enabling them to design and configure their Name Services. This module will facilitate the generation of the entire Name Services solution, including front-end, back-end, and smart contracts. |
-| 4.     | Smart contracts         | Adapt existing Rust-based smart contracts to be compatible with Substrate. These smart contracts will be an integral part of our Name Services solution. This adaptation ensures that they seamlessly integrate into the Substrate ecosystem, allowing for efficient execution and management of Name Services on the blockchain. The smart contract work with a modular function, where based on the parameter selected, will be implemented the dedicated part of the smart contract. 
-
-
-
-### Milestone 2: Testing and Debugging and Audit
+### Milestone 1: Configuration Module
 
 - **Estimated Duration:** 2 weeks
 - **FTE:** 1
 - **Costs:** 5k
 
+| Number | Deliverable | Specification |
+| ------ | ----------- | ------------- |
+| **0a.** | License | Apply appropriate open-source licenses (e.g., Apache 2.0, GPLv3, MIT) to the project's codebase. |
+| **0b.** | Documentation | Create comprehensive inline documentation for the codebase and a user-friendly tutorial explaining how to set up and use the Configuration Module. |
+| **0c.** | Testing and Testing Guide | Develop unit tests covering core functions and provide a guide on how to run these tests. |
+| **0d.** | Docker | Provide Dockerfile(s) for testing and deployment of the Configuration Module. |
+| 1. | Front-End Configuration Module | Develop a front-end module allowing users to select parameters such as Project Name, Logo, Names for Sale, Sales Price, Sale Strategy (single, collection, clubs), Name Services Options, and Currency to use (stable, chain token, native token). Additionally, provide design options including Colors, Fonts, Design, and Templates. |
+| 2. | API Development | Create API functionalities to read data from the Configuration Module. |
+| 3. | API Endpoint | Generate endpoints and variables for code generation and module options. |
+| 4. | DevNet Setup | Start using a Development Network (DevNet) to test and utilize the Configuration file.
+
+### Milestone 2: Main Dapp
+
+- **Estimated Duration:** 4 weeks
+- **FTE:** 3
+- **Costs:** 15k
+
+| Number | Deliverable | Specification |
+| ------ | ----------- | ------------- |
+| **0a.** | License | Reiterate and confirm the open-source licenses applied to the project's codebase. |
+| **0b.** | Documentation | Enhance inline documentation and the user tutorial to encompass new functionalities. |
+| **0c.** | Testing and Testing Guide | Extend unit tests to cover new features, optimizations, and functionalities. Update the testing guide accordingly. |
+| **0d.** | Docker | Optimize Dockerfile(s) for improved performance and efficiency in testing all functionalities. |
+| 1. | Dapp Front-End | Create the final application front end. The design and functionality will be applied from the Configuration Module, and the design and content will change based on the real data selected. |
+| 2. | Back-End Modular | Develop a modular backend that works seamlessly with the API and smart contract endpoint. This backend will be adaptable based on the selected data in the config file. |
+| 3. | Smart Contract Modular | Create modular smart contracts from existing Rust-based code, working with Pallets. The smart contracts will include core functionality such as Buy Domain, Sale Domain, Trade Domain, Domain Honor, Transfer Domain, Add Subdomain, Domain Primary Key, Create Profile, Edit Profile, and Read Real-Time Price. |
+| 4. | TestNet Set-Up | Begin using a testnet network to test Front-End, Back-End, and Smart Contract communication.
+
+### Milestone 3: Final Assembly and Mainnet
+
+- **Estimated Duration:** 2 weeks
+- **FTE:** 1
+- **Costs:** 5k
+
+| Number | Deliverable | Specification |
+| ------ | ----------- | ------------- |
+| **0a.** | License | Validate and ensure compliance with selected open-source licenses for all components. |
+| **0b.** | Documentation | Enhance documentation with optimization strategies, deployment guidelines, and strategies to engage the community effectively. |
+| **0c.** | Testing and Testing Guide | Finalize and document testing processes, highlighting optimizations made, and ensuring the guide reflects the most up-to-date testing procedures. |
+| **0d.** | Docker | Provide optimized Dockerfile(s) to streamline deployment processes and enhance efficiency. |
+| 1. | Finalize Main Dapp | Merge Dapp Front-End with Backend and Smart Contracts to finalize the full working Dapp for Decentralized Name Services. |
+| 2. | Testnet Test Coverage | Execute comprehensive test coverage on the TestNet environment, identifying and resolving issues to ensure a robust TestNet environment. |
+| 3. | SC Test Coverage | Develop a comprehensive smart contract test coverage suite, covering various scenarios and edge cases to rigorously test the smart contracts for reliability and security. |
+| 4. | Optimization and Performance Enhancement | Optimize the platform for enhanced performance, ensuring a smooth user experience and efficient resource utilization.
 
 
-#### Roadmap Achievements
-
-| Number | Deliverable              | Specification                                        |
-| ------ | ------------------------ | ---------------------------------------------------- |
-| 1.     | Testnet Test Coverage    | Execute comprehensive test coverage on the TestNet environment, involving the broader community. We will launch a community bounty program where users actively debug and test our platform. Issues identified and resolved during this phase will be rewarded with tokens, incentivizing community participation and ensuring a robust TestNet environment. The goal is to achieve extensive test coverage and gather valuable user feedback to enhance platform stability.  |
-| 2.     | SC Test Coverage         | Develop a comprehensive smart contract test coverage suite. This suite will encompass various scenarios and edge cases to rigorously test our smart contracts. By doing so, we ensure the reliability and security of our smart contracts, addressing any issues or vulnerabilities that arise from user feedback. Our commitment to robust smart contracts is paramount. |
-| 3.     | Mainnet Deployment        | Prepare for the Mainnet deployment phase, including setting up a bounty program focused on identifying and addressing any security vulnerabilities. The bounty program will encourage the community to actively participate in identifying potential security risks, ensuring that our platform is resilient and safe for users. |
-| 4.     | Documentation            | Create comprehensive documentation on Gitbook, providing users with clear and detailed guidance on using our platform. This documentation will serve as a valuable resource for developers and users, promoting ease of adoption and understanding of our ecosystem. Additionally, we will actively engage with the community to gather feedback and improve our documentation based on user needs. |
 
 
 
