@@ -180,7 +180,7 @@ The team plans to release the system sequentially in two versions:<br>
 - **Total Costs:** 30,000 USD
 
 
-### Milestone 1 — Alpha Release
+### Milestone 1 — Beta Release
 
 - **Estimated duration:** 2 months
 - **FTE:**  4 FTE
