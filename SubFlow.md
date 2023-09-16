@@ -52,7 +52,7 @@ Other Smart-Services provide additional functionality, for example:<br>
 - **Advertising Service** <br>Enables advertisers to create and run campaigns on SubFlow, rewarding users who share their content according to set rules.
 - **Donation Service** <br>Allows system users to financially support content creators they find interesting directly.
 - **NFT Markeplace Service** <br>Facilitates the direct sale of NFTs creaated by authors on SubFlow.
-- **Voting (DAO) Service**
+- **Voting (DAO) Service** <br>Will allow to store a generated smart contract for voting in another smart contract.
 <br>
 <p align="center">
   <img src="https://github.com/deus4/KidsNotes/assets/21257942/de8c5e64-449d-4bf1-958f-802cd3b64bb3">
