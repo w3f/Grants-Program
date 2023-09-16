@@ -53,20 +53,11 @@ Among the diverse work of our team members, here are some platforms that have be
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+Marco Polo Technologies is building a one-stop shop for private markets participants to develop and launch alternative finance platforms and tokenize real-world assets (RWAs) on Web3, applying the core principles of security, transparency, and compliance to accelerate the adoption of modern finance frameworks in web3. We focus on building finance and operations specific modules and are naturally blending into the *Substrate* and *Polkadot* ecosystems, aiming at leveraging the interoperability between different blockchains, which is essential for the seamless transfer and trading of RWAs across different chains, as well as the flexibility offered by the *Substrate* framework to develop a private market focused blockchain.
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
- 
-Marco Polo Technologies is building a one-stop shop for private markets participants to develop and tokenize real-world assets (RWAs) on Web3, applying the core principles of security, transparency, and compliance to accelerate the adoption of tokenized RWAs. We focus on building finance and operations specific modules and are naturally blending into the *Substrate* and *Polkadot* ecosystems, aiming at leveraging the interoperability between different blockchains, which is essential for the seamless transfer and trading of RWAs across different chains, as well as the flexibility offered by the *Substrate* framework.
+We are aware of other projects in the *Substrate* and the *Polkadot* ecosystems that are working in complimentary areas, such as Centrifuge and Polymesh; however, our work has been focused on creating an infrastructure for issuers and asset owners to connect financial instruments and mechansims to both professional and retail investor classes, via our proprietary social network and a compliant on-boarding and communication processes.
 
-We are aware of other projects in the *Substrate* and the *Polkadot* ecosystems that are working in complimentary areas, such as Centrifuge and Polymesh; however, our work has been focused on creating an infrastructure for issuers and asset owners to connect equity products and finance mechansims to both professional and retail investor classes through our social network function and a compliant on-boarding and communication processes.
-
-Our infrastructure is designed to serve private markets participants (family offices, VCs, PEs, financial managers, etc.) and companies that intend to tokenize and create alternative financing solutions for their businesses, connecting previosuly underserved assets with private liquidity providers, attempting to revolutionize the way that private markets operate by making them more accessible, liquid and inclusive.
+Our infrastructure is designed to be used by technology teams of other busiensses or by less tech-savvy users, to serve private markets participants (family offices, VCs, PEs, financial managers, etc.) and companies that intend to tokenize and create alternative financing solutions for their businesses, connecting previosuly underserved assets with private liquidity providers, attempting to revolutionize the way that private markets operate by making them more accessible, liquid and inclusive.
 
 ## Team :busts_in_silhouette:
 
