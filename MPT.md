@@ -62,7 +62,11 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
   - If so, how is your project different?
   - If not, are there similar projects in related ecosystems?
  
-Marco Polo Technologies aims at positioning itself as an infrastructure company focused on building fintech specific modules to support private markets
+Marco Polo Technologies is building a one-stop shop for private markets participants to develop and tokenize real-world assets (RWAs) on Web3, applying the core principles of security, transparency, and compliance to accelerate the adoption of tokenized RWAs. We focus on building finance and operations specific modules and are naturally blending into the *Substrate* and *Polkadot* ecosystems, aiming at leveraging the interoperability between different blockchains, which is essential for the seamless transfer and trading of RWAs across different chains, as well as the flexibility offered by the *Substrate* framework.
+
+We are aware of other projects in the *Substrate* and the *Polkadot* ecosystems that are working in complimentary areas, such as Centrifuge and Polymesh; however, our work has been focused on creating an infrastructure for issuers and asset owners to connect equity products and finance mechansims to both professional and retail investor classes through our social network function and a compliant on-boarding and communication processes.
+
+Our infrastructure is designed to serve private markets participants (family offices, VCs, PEs, financial managers, etc.) and companies that intend to tokenize and create alternative financing solutions for their businesses, connecting previosuly underserved assets with private liquidity providers, attempting to revolutionize the way that private markets operate by making them more accessible, liquid and inclusive.
 
 ## Team :busts_in_silhouette:
 
@@ -171,6 +175,8 @@ Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
+
+Private markets support to tokenisare SMEs shares and create private ETFs
 
 
 ## Additional Information :heavy_plus_sign:
