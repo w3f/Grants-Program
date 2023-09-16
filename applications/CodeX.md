@@ -176,9 +176,9 @@ ThirdWeb, which also offers a no-code approach, particularly for smart contracts
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):**  5.5 FTE
-- **Total Costs:** 27500 USD
+- **Total Estimated Duration:** 8 weeks
+- **Full-Time Equivalent (FTE):**  5 FTE
+- **Total Costs:** 25000 USD
 
 Certainly, here are your milestones with the specified format:
 
