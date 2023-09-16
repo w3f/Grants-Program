@@ -63,6 +63,9 @@ Other Smart-Services provide additional functionality, for example:<br>
 </p>
 <br>
 
+
+### Technology Stack
+
 - ink! Smart Contracts
 - Substrate
 - All code produced will be open-sourced under the MIT license
