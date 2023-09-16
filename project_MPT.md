@@ -44,7 +44,7 @@ The image below represents the two layers of our infrastructure and how we would
 
 ![](static/img/web3.png)
 
-Among the diverse work of our team members, here are some platforms that have been built and deployed in the past decade, clients vary from boutique adviosry firms to publicly traded companies:
+Among the diverse work of our team members, here are some platforms that have been built and deployed in the past decade, clients vary from boutique advisroy firms to publicly traded companies:
 
 - [Professional investment network](https://www.kobofunds.com/) on our current infrastructure
 - [Global impact investment platform](https://www.convergence.finance/)
