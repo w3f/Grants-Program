@@ -170,6 +170,7 @@ Please include here
 Short term: Private markets support to tokenize SMEs shares and create private ETFs/portfolio
 Long term: become the go-to platform powered by Substrate and Polkadot for private companies and digital private markets.
 
+- build a primary and secondary issuance platform to connect private and isitituonal investors to SMEs wanting to expand and grow in emerging markets where financial infrastructure are lacking
 - oracles offline and online
 - onchain KYV/KYB/AML/KYT?!
 - wallet/custodial/wallet to be controlled by advisors only on permissioned tokens vs non custodial? (it must be custodial at least for the infra provider)
@@ -178,4 +179,6 @@ Long term: become the go-to platform powered by Substrate and Polkadot for priva
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website
+**How did you hear about the Grants Program?**
+
+Web3 Foundation Website
