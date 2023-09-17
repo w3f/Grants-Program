@@ -18,7 +18,7 @@
 
 
 ### Project Details
-- **UI Mockups/Designs:** [Figma Designs](https://www.figma.com/file/ES5Y4ObZNluGzs0wS5uPdx/codex-design-web?type=design&node-id=4%3A54&mode=design&t=iIgpdpOUj3Lhxu1Y-1)
+- **UI Mockups/Designs:** [Figma Designs](https://www.figma.com/file/Pgz3cWSXYukobikJQ5E7gA/CodeX-Prototype?type=design&node-id=793-21690&mode=design&t=ImYQPP60ORHtQtXM-0)
 - **Documentation:** [Canva Documentation](https://www.canva.com/design/DAFs0erTEWU/S7LP34HZ8iSvLGvjdTCqgg/edit)
 
 #### What Your Project Will Not Implement: 
