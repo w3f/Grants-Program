@@ -158,13 +158,30 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 #### Where and how does your project fit into the ecosystem?
 
 - Our project is comparable to WalletConnect, which was also our inspiration.
-When we started making our first prototypes in February, WalletConnect was not available in the Polkadot Ecosystem yet.
+
+##### [WalletConnect](https://walletconnect.com/)
+- When we started making our first prototypes in February, WalletConnect was not available in the Polkadot Ecosystem yet.
 Even thought they have taken a lot of time and had a lot more experience then us, they were unable to make quick and elegant deliveries.
 WalletConnect still is not supported by most of the dApps. We think we can do better. Actually, we already did.
 
 - We made a Plutonication Extension, which already allows you to interact with existing dApps, even though they have not implemented the Plutonication standard directly. This can be a perfect middle ground during the transition of popularizing the Plutonication. Even if the user wanted to use a new niche dApp, they can do so with Plutonication.
 
 - Wallet connect is also only supported in javascript. We want to make Plutonication available in more languages, including a very popular C# language, which is mostly used for game development. We will make web3 gaming possible on game consoles, thanks to the Plutonication.
+
+- WalletConnect's server solution (also known as WalletConnect cloud) is not opensourced. We want to be open to everybody and fully opensourced.
+
+##### [SubConnect](https://github.com/Koniverse/SubConnect)
+- This is a great aggregation of wallets. This certainly improves the UX and simplifies the development for developers. However, it is not trying to do the same thing as Plutonication. Plutonication tries to achieve connection between 2 different platforms (like mobile wallet on Android and dApp on web on Windows).
+
+- It may be certainly a good idea to talk to SubWallet to implement Plutonication into the SubConnect solution. 
+
+##### [Tesseract](https://github.com/tesseract-one/Tesseract.rs)
+
+- Tesseract is a great solution for connecting a wallet and a dApp together on a single device. However, Plutonication allows wallets and dApps to be connected across different devices.
+
+##### [@talismn/connect](https://github.com/TalismanSociety/talisman-connect)
+
+- This is similar to SubConnect. Once again, we try to solve a completely different problem.
 
 #### Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 
@@ -212,7 +229,7 @@ Dušan Jánsky
 
 ### Legal Structure
 
-- **Registered Address:** None
+- **Registered Address:** Píškova 1946/12, 155 00, Prague, Czech republic
 - **Registered Legal Entity:** None
 
 ### Team's experience
@@ -309,7 +326,6 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 1e. | payload_signature | wallet provides an extrinsic payload signature |
 | 1f. | raw_signature | wallet provides a raw message signature |
 | 2. | database requirements | none |
-| 3. | Hosting | hosted on DigitalOcean |
 
 ### Milestone 2 Plutonication C# version
 
@@ -383,7 +399,6 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 1e. | SendRawAsync(..) | Method used for requesting a raw message sign |
 | 1f. | ReceiveSignedRawAsync(..) | Method used for receiving a signed raw message. |
 | 2. | Chrome browser extension | Released to Chrome Web Store |
-| 3. | Mockups | We do not have them, but we have already made MVP instead: https://github.com/RostislavLitovkin/PlutonicationExtension |
 
 ## Future Plans
 
