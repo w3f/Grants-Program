@@ -207,11 +207,9 @@ Most of the work in this milestone has been started and can be seen in the repos
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Litepaper / Whitepaper | We will publish an article / whitepaper that explains how the oracle system will function autonomously |
-| 1. | Pallet Registry | A pallet responsible for registring and recording relevant information about new feeds |
-| 2a. | Pallet Oracle | A pallet that holds main logic for getting feed data, aggregating data and delivering it to end users. |
-| 2b. | Offchain workers | Integrate regular OCW as *one* of the offchain solutions |
-| 3. | Pallet Data Validation | A pallet responsible for outlier detection and ensuring that all nodes are submitting valid data. It will use statistics to determine if one or more of the nodes are bad actors. It will also provide some basic aggregation features. |
+| **1.** | Pallet Registry | A pallet responsible for registring and recording relevant information about new feeds |
+| **2.** | Pallet Oracle | A pallet that holds main logic for getting feed data, aggregating data and delivering it to end users. |
+| **3.** | Offchain workers | Integrate regular OCW as *one* of the offchain solutions. |
 
 ### Milestone 2 - XCM Integration
 
@@ -225,10 +223,12 @@ Most of the work in this milestone has been started and can be seen in the repos
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | XCM request-response model | Use XCM messages as the main interface for requesting and receiving oracle data. |
-| 2. | Implement offchain data validation |  Design and implement ways to ensure that offchain workers are providing valid data and have some level of protection again known attack vectors. |
-| 3. | E2E tests with RPC calls | We will have E2E tests using RPC calls|
-| 4. | E2E tests with XCM | We will have E2E tests using XCM. |
+| **1a.** | XCM request-response model - Part A (request) | Implement `query_feed()` extrinsic which is triggered via an XCM `Transact` instruction. It receives a `feed_key`, `validation_threshold`, `expiry_threshold` as arguments. The metadata of the already registered feed should contain all other details specifying where the data is fetched from. The XCM message sender should also specify a `ReportTransactStatus` instruction. |
+| **1b.** | XCM request-response model - Part B (response) | Send a `QueryResponse` XCM instruction to the data requester containing the fetched or cached data from the specified `feed_key`. The response object will contain a `value` and `validation_threshold`. |
+| **2.** | Implement offchain data validation | Design and implement an anamoly detection algorithm to ensure that offchain workers are providing valid data and protect against malicious or invalid data (known attack vector in off-chain workers). |
+| **3a.** | E2E tests - RPC | We will have E2E tests using RPC calls|
+| **3b.** | E2E tests - XCM | We will have E2E tests using XCM. |
+| **3c.** | E2E tests - Attack Vectors | Create a test suite simulating off-chain workers attach vectors (malicious / invalid data). |
 
 ### Milestone 3 - Staking / Slashing
 
@@ -244,10 +244,10 @@ The last milestone is dedicated to implementing the staking / slashing mechanism
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1.| Aggregation | Implement statistically sound aggregation methods so we can integrate them in the slashing mechanism. |
-| 2. | Design and implement Staking / Slashing mechanism | Research and implement game-theoretic ways of making the oracle system safe. |
-| 3. | Design and implement fee structures | Add a fee structure that takes into account all the features mentioned above. |
-| 4. | Tutorials and Showcase | Create online media to showcase the usage of the project as well as prepare in-person presentations for the DotSama community. |
+| **1**.| Aggregation | Implement statistically sound aggregation methods so we can integrate them in the slashing mechanism. |
+| **2.** | Design and implement Staking / Slashing mechanism | Research and implement game-theoretic ways of making the oracle system safe. |
+| **3.** | Design and implement fee structures | Add a fee structure that takes into account all the features mentioned above. |
+| **4.** | Tutorials and Showcase | Create online media to showcase the usage of the project as well as prepare in-person presentations for the DotSama community. |
 
 
 ## Future Plans
@@ -255,16 +255,6 @@ The last milestone is dedicated to implementing the staking / slashing mechanism
 As Subslice, our primary focus lies within the DotSama ecosystem, where we are actively engaged in various development initiatives. Our core belief centers around our capacity to introduce solutions that can significantly enhance the usability and adoption of Polkadot/Kusama. We intend to achieve this objective by conceiving and executing utility-driven projects, which is why we have a keen interest in developing a native oracle solution within this ecosystem.
 
 In an ideal scenario, oracles should operate with complete autonomy, but attaining this level of autonomy requires a monumental effort. It is worth noting that Polkadot presently boasts one of the most advanced governance systems in the blockchain sphere, which serves as a great source of inspiration for us. In our future plans, we aspire to leverage such governance structures to establish a genuinely decentralized oracle system. While existing solutions like ChainLink are commendable, they still exhibit a significant degree of centralization.
-
-
-<!-- - how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it. -->
-
-<!-- ## Referral Program (optional) :moneybag: 
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI)) -->
 
 ## Additional Information :heavy_plus_sign:
 
