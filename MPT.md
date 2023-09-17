@@ -12,9 +12,9 @@
 
 #### Description
 
-Marco Polo Technologies is an infrastructure company that connects real-world assets to digital finance in private markets. Our infrastructure serves as a secure and compliant foundation for diverse business models and companies in turnaround phases seeking a technological edge. With customizable workflows and a range of pre-built and *ad hoc* functions, businesses can integrate our solution into existing digital or offline models. Additionally, we are developing a user-friendly UI architecture, enabling non-tech-savvy clients to swiftly create their alternative finance platforms with a close to *drag-and-drop* experience.
+Marco Polo Technologies (MPT) is an infrastructure company that provides the foundational elements for alternative finance platforms, instruments, and mechanisms, with a focus on serving participants in private markets. Our modular and secure infrastructure supports global policymakers' priorities, such as investor protection and KYC/AML/KYB requirements, while preventing market manipulation. We are also developing a user-friendly UI architecture to enable non-tech-savvy clients to rapidly create alternative finance platforms through an intuitive *drag-and-drop* experience.
 
-Businesses can expand into new markets that were previously underserved by connecting real-world assets to any investor class. Our ongoing efforts harness the synergy between asset owners, investors, and issuers to facilitate transformative changes within private markets, turning them into public-like, frictionless models. This injects liquidity, accessibility, and transparency into digital private market investments, making them more impactful, appealing, and inclusive.
+MPT infrastructure enables businesses to expand into underserved markets by connecting real-world assets to any investor class and finance managers. Our ongoing efforts harness the synergy between asset owners, investors, and issuers to facilitate transformative changes in private markets, turning them into public-like, frictionless models. MPT bridges the gap between traditional finance, DeFi, and modern web3 infrastructure needed to support the flow of new liquidity from private and offline markets to web3, while increasing the transparency, accessibility, and inclusivity of digital private market investments.
 
 #### Marco Polo Technologies, Substrate and Polkadot - A brief description of our project.
 
@@ -30,7 +30,7 @@ Our first layer of the infrastructure is built with *Rust*, and we chose *Substr
 
 #### Team interest
 
-Our team is a small, senior, and resourceful group with expertise in global private markets, investments, and technology. Our project has naturally evolved towards supporting the development of private markets and our current iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership representation and exchanges, while breaking down historical barriers such as illiquidity and limited access for non-instituional investors. We aim to harness the benefits of transparency, immutability, automated compliance and ownership records by leveraging Substrate and Polkadot's robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and asset owners.
+Our team is a small, senior, and resourceful group with expertise in global private markets, investments, and technology. Our project has naturally evolved towards supporting the development of private markets and our current iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership representation and exchanges, while breaking down historical barriers such as illiquidity and limited access for non-instituional investors. We aim to harness the benefits of transparency, immutability, automated compliance and ownership records by leveraging *Substrate* and *Polkadot*'s robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and asset owners.
 
 ### Project Details
 
