@@ -107,24 +107,15 @@ Apophenia also aims to provide data aggregation functionality to increase both d
 
 In regards to alternatives, we have observed that most of the [projects under Oracle are inactive](https://wiki.polkadot.network/docs/build-open-source). For those that are active, here's a quick comparison:
 
-* **interBTC**: specialized for Bitcoin quotes, we intend to be a generalized oracle solution instead.
-* **Bridgestate**: focused on collateralization values of bridges.
-* **Tellor**: a full fledged solution which we are ultimately building towards, however, as it stands the consumer parachains need to be EVM compatible, have smart contracts enabled and install a separate pallet to gain oracle functionality. In our case, simply using XCM queries is sufficient to gain full functionality. We intend to use similar game-theoretic and statistical techniques to validate data across different feeds.
+* **interBTC**: Specialized for Bitcoin quotes, we intend to be a generalized oracle solution instead.
+* **Bridgestate**: It's focused on collateralization values of bridges.
+* **Tellor**: A full fledged solution which we are ultimately building towards, however, as it stands the consumer parachains need to be EVM compatible, have smart contracts enabled and install a separate pallet to gain oracle functionality. In our case, simply using XCM queries is sufficient to gain full functionality. We intend to use similar game-theoretic and statistical techniques to validate data across different feeds.
 * **Laminar**: Data has to be actively pushed from external sources, triggered offchain. Overall it's a pallet to be included. Overall it contains some of the same restrictions as DIA and Chainlink.
 * **DIA**: current solution available on Astar as ink! smart contracts. Like Laminar, data is pushed on-chain by centralized (and usually manually verified) offchain services.
-* **Acurast**: It's a multi-chain execution layer that is decentralized, that is, it provides a way register and run an arbitrary script on the Acurast network. In that sense, it's more comparable to Phala Network.
-<!-- * **Chainlink**: Only provide pallets to be integrated into other projects, which themselves need to # TODO ... Besides that, seems to be unmaintained for 2 years, and is already outdated in terms of Substrate code. -->
+* **Acurast**: It's a multi-chain decentralized execution layer which provides a way register and run an arbitrary script (in Javascript) on the Acurast network. In that sense, it's more comparable to Phala Network and other TEE generalized solutions. While this can be used to create Oracle, it doesn't solve the problem with a data science approach.
+* **Chainlink Pallet**: It's a pallet to be included in other parachains. It's a good solution, but it's not native to the DotSama ecosystem. Another note to add is that the last commit was 2 years ago.
 
-At the end of the day, our goal is to provide a **native** oracle solution to the DotSama ecosystem as a parachain, which can be accessed by any other parachain or account. Many projects mentioned above have a multi-ecosystem goal, while we want to provide the best solution for DotSama.
-
-<!-- Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems? -->
+Ultimately, our goal is to provide a **native** oracle solution to the DotSama ecosystem as a parachain, which can be accessed by any other parachain or account. Many projects mentioned above have a multi-ecosystem goal, while we want to provide the best solution for DotSama.
 
 ## Team :busts_in_silhouette:
 
