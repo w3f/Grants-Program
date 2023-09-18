@@ -44,7 +44,7 @@ The image below represents the two layers of our infrastructure and how we would
 
 ![](static/img/web3.png)
 
-Among the diverse work of our team members, here are some platforms that have been built and deployed in the past decade, clients vary from boutique advisroy firms to publicly traded companies:
+Among the diverse work of our team members, here are some platforms that have been built and deployed in the past decade, clients vary from boutique advisory firms to publicly traded companies:
 
 - [Professional investment network](https://www.kobofunds.com/) on our current infrastructure
 - [Global impact investment platform](https://www.convergence.finance/)
@@ -57,7 +57,7 @@ Marco Polo Technologies is building a one-stop shop for private markets particip
 
 We are aware of other projects in the *Substrate* and the *Polkadot* ecosystems that are working in complimentary areas, such as Centrifuge and Polymesh; and while they entered the DeFi market in pursuit of liquidity or by building a platform focused for instituional investors, our approach follows the opposite logic in the attempt to capture liquidity and assets in the alternative and private markets segment, that are still off-chain.  We have implemented a unique social network that leverages existing communities and real-life relationships, such approach not only allows us to access a wider customer base but also enables our clients to onboard pre-vetted assets from trusted actors onto our platforms. Furthermore, the social network aspect empowers our clients to add trusted and reliable participants to enhance their clients' offerings while ensuring scalability for users.
 
-Our infrastructure is designed to be used by technology teams of other businesses or by less tech-savvy users, to serve private markets participants (family offices, VCs, PEs, financial managers, etc.) and companies that intend to tokenize and create alternative financing solutions for their businesses; connecting previously undeserved assets with private liquidity providers, attempting to revolutionize the way that private markets operate by making them more accessible, liquid and inclusive.
+Our infrastructure is designed to be used by technology teams or by less tech-savvy users, to serve private markets participants (family offices, VCs, PEs, financial managers, etc.) and companies that intend to tokenize and create alternative financing solutions for their businesses; connecting previously undeserved assets with private liquidity providers, attempting to revolutionize the way that private markets operate by making them more accessible, liquid and inclusive.
 
 ## Team :busts_in_silhouette:
 
@@ -170,7 +170,7 @@ Please include here
 Short term: Private markets support to tokenize SMEs shares and create private ETFs/portfolio
 Long term: become the go-to platform powered by Substrate and Polkadot for private companies and digital private markets.
 
-- build a primary and secondary issuance platform to connect private and isitituonal investors to SMEs wanting to expand and grow in emerging markets where financial infrastructure are lacking
+- build a primary and secondary issuance platform to connect private and institutional investors to SMEs wanting to expand and grow in emerging markets where financial infrastructure are lacking
 - oracles offline and online
 - onchain KYV/KYB/AML/KYT?!
 - wallet/custodial/wallet to be controlled by advisors only on permissioned tokens vs non custodial? (it must be custodial at least for the infra provider)
