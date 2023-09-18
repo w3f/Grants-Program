@@ -120,11 +120,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 | 1. | Basic version of the blockchain | Setting up a generic alternative finance focused blockchain. |
 | 2. | Basic functionalities | Setting up block production, transaction validation, and block finalization. |
 | 3. | Basic attributes | Start to develop MPT chain initial attributes, which may include creating a native token for the MPT chain, configuring a governance model, and deploying the needed pallets. |
-| 4. | MPT chain | Leveraging existing pallets and primitives to implement a consensus mechanism, and a basic use of  assets and transactions. |
-
-Possilbe pallets to be used acros the project are:
-
-- pallet_balances, pallet_assets, pallet_grandpa, pallet_contracts, pallet_identity, pallet_accounts
+| 4. | MPT chain | Leveraging existing pallets and primitives to implement a consensus mechanism, and a basic use of  assets and transactions. Possilbe pallets to be used across the project are: pallet_balances, pallet_assets, pallet_grandpa, pallet_contracts, pallet_identity, pallet_accounts. |
 
 ### Milestone 2
 
