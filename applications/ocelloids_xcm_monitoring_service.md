@@ -8,17 +8,24 @@
 
 This grant proposal is a follow-up to the Ocelloids Monitoring SDK, previously delivered and available here: https://github.com/w3f/Grant-Milestone-Delivery/pull/934
 
-The objective of this grant is to develop an open-source monitoring service using the Ocelloids SDK. This service will monitor XCM transfers across Asset Hub and selected parachains. The primary purpose is to offer exchanges, custodians and other institutions on Asset Hub an efficient means of tracking asset transfers across different parachains. Additionally, we will abstract the underlying pallets responsible for initiating XCM transfers and managing assets, which varies for each parachain. Users will have access to an HTTP API to subscribe to XCM transfers and manage their subscriptions. A Docker image will be provided to facilitate service deployment.
+The objective of this grant is to develop an open-source monitoring service using the Ocelloids SDK. This service will monitor XCM transfers across selected parachains. The primary purpose is to offer service providers integrating with a single chain (Asset Hub as starting point) and monitoring effects on other chains that are connected via HRMP and that use XCM as their message format. The service will support connecting to the configured networks through light clients in order to reduce infrastructure overhead for service providers. Users will have access to a self-hosted HTTP API to subscribe to XCM transfers and manage their subscriptions. A public Docker image will be published to facilitate service deployment.
 
 ## Project Details
 
-This service is designed for use alongside an Asset Hub node deployment and the Asset Transfer API. The goal is to provide exchanges, custodians and institutions with an easily deployable and manageable monitoring solution for tracking their asset flows across parachains. The service will also be available for any user interested in monitoring XCM transfers between Asset Hub and parachains.
+The service will support bidirectional XCM reserve-based transfers between selected parachains.
 
-The service will support bidirectional XCM transfers between Asset Hub and selected parachains. It is not feasible to provide generic support for all Asset Hub-parachain channels due to differences in pallets used for asset management and XCM message initialization. For asset management, some parachains use FRAME `assets` pallet while others use ORML `tokens` pallet. There are also networks, like Equilibrium, who uses their own custom pallet. For XCM messages, some parachains use Polkadot `xcm` pallet while others use ORML `xtokens` pallet. To keep the project manageable, our initial focus will be on supporting Moonbeam, Astar, and Acala. In the future, we plan to expand support to include more channels and XCM protocols.
+The flow of the monitoring will work as follows:
 
-Before using the service, users will need to configure the supported networks and connection providers. An example configuration can be found in the section [Service Configuration](#service-configuration). We will support connections to the network using both RPC clients and light clients, although light client support may be limited due to technical challenges. Further details on supported Substrate clients can be found in the [Supported Substrate Clients](#supported-substrate-clients) section. 
+1. The service will monitor on the origin chain for the event `xcmpqueue.xcmpMessageSent` associated to the extrinsic sent by accounts of interest. The service will extract the XCM message hash from this event.
+3. The service will query the storage in `parachainSystem.hrmpOutboundMessages` at the block of the event to get all outbound messages and filter for recipient chain IDs that are supported. Subsequently it will decode the message data to get the set of XCM instructions to filter for combinations of instructions related to reserve-based transfers (i.e. `ReserveAssetDeposited`, `WithdrawAsset`, and `DepositAsset`). Then, it will get the `blake2-256` hash of the message data to match it with the message hash obtained in Step 1. The service will store a persistent task to be matched in subsequent steps.
+4. At the destination chain, the service will monitor for the events `xcmpqueue.success` and `xcmpqueue.fail`. It will match the message hash extracted from these events with the message hash of the origin.
+5. It will send a notification to the configured webhook to inform of the status of the XCM transfer along with contextual information. See section [Notifications](#notifications) for details.
+
+Before using the service, users will need to configure the supported networks and connection providers. An example configuration can be found in the section [Service Configuration](#service-configuration). We will support connections to the network using both RPC clients and light clients. Further details on supported Substrate clients can be found in the [Supported Substrate Clients](#supported-substrate-clients) section.
 
 The service will expose an HTTP API for users to add subscriptions, specifying the channels they want to monitor and the accounts involved. Users can create multiple subscriptions and modify or delete them as needed. Users can also set up webhook endpoints to receive notifications related to their transfers. Detailed information about the API will be provided in the [Subscriptions API](#subscriptions-api) section.
+
+To keep the project manageable, the current scope includes support for Asset Hub, Astar and Acala. In the future, we plan to expand support to include more chains.
 
 ### Notifications
 
@@ -28,19 +35,11 @@ The following types of notifications correspond to different scenarios:
 
 **XCM Execution Success**
 
-The XCM message sent from the origin chain was received and executed successfully. There are two sub-cases in this scenario:
-
-1. The received asset amount minus fees matches the sent asset amount, and the accounts where assets are deposited correspond to the beneficiary account in the XCM message. In this case, we will send a "XCM Transfer Success" notification, including contextual data such as the XCM message hash, block numbers of the XCM message on the origin and destination chains, sender account, beneficiary account, transferred asset, amount, and fees paid.
-
-2. If either the received asset amount or the deposit account on the destination chain does not match the specified values in the XCM message, a "XCM Transfer Executed with Discrepancies" notification will be sent, providing details of the discrepancy and additional contextual data.
+The XCM message sent from the origin chain was received and executed successfully. In this case, we will send an "XCM Transfer Success" notification, including contextual data such as the XCM message hash, block numbers of the XCM message on the origin and destination chains, sender account, beneficiary account, transferred asset and amount.
 
 **XCM Execution Fail**
 
-The XCM message was received at the destination chain but failed to execute correctly. In this case, a "XCM Transfer Execution Failed" notification will be sent, including the XCM error returned in the event and additional contextual data.
-
-**XCM Message Not Received**
-
-Users can configure a "maxBlock" field in the subscription to specify the interval, in blocks, that the service should wait before triggering a "XCM Message Not Received" notification if the XCM message is not received on the destination chain within the defined time frame. The subscription will continue to monitor the XCM message in case it arrives later than expected.
+The XCM message was received at the destination chain but failed to execute correctly. In this case, an "XCM Transfer Fail" notification will be sent, including the XCM error returned in the event and additional contextual data.
 
 ### Service Configuration
 
@@ -98,7 +97,6 @@ Example request body:
     "destination": {
       "network": "moonbeam"
     },
-    "maxBlocks": 500
   },
   "notification": {
     "type": "webhook",
@@ -155,7 +153,7 @@ During preliminary testing, we identified some limitations:
    
 2. Some runtimes, such as Moonbeam, currently cannot be compiled by the light client. Reference: [Github issue](https://github.com/paritytech/substrate-connect/issues/1543)
 
-Additional issues may arise, so we plan to provide light client support on a best-effort basis.
+We will prioritize chains that are light client ready.
 
 ### Storage
 
@@ -169,7 +167,7 @@ We will implement a mechanism to process missed blocks in case the monitoring se
 
 Since notifications and XCM message matching tasks are stored in the database and retried until success, we will provide a method to clear pending states. This is crucial to prevent indefinite retries of pending tasks. For example, if a webhook endpoint is changed while a notification is pending, it may never succeed.
 
-We will supply a script enabling administrators to inspect and remove XCM messages matching and notification tasks from the database.
+We will supply a script enabling administrators to inspect and remove XCM message matching and notification tasks from the database.
 
 ### Tech Stack
 
@@ -179,10 +177,6 @@ We will supply a script enabling administrators to inspect and remove XCM messag
 - Smoldot
 - [Fastify](https://github.com/fastify/fastify)
 - [Level](https://github.com/Level/level)
-
-### Out of Scope
-
-It is important to note that we will only support XCM transfers originating from an extrinsic of the `polkadotXcm` pallet or `xtokens` pallet. Other forms of sending XCM transfers, such as via an `ethereum.transact` call to an XCM contract, will not be supported in this iteration.
 
 ## Ecosystem Fit
 
@@ -244,8 +238,8 @@ N/A
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic guide that explains how to set up and run the monitoring service. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker        | We will provide a Dockerfile to ease the deployment and execution of the service. |
-| 1. | XCM Monitoring Service | The XCM monitoring service that supports XCM transfers between Asset Hub and the following 3 parachains: Moonbeam, Astar and Acala. The service will feature what was described in [Project Details](#project-details). |
+| **0d.** | Docker        | We will provide a Dockerfile to ease the deployment and execution of the service. A Docker image of the service will be published in Docker Hub and Github Container Repository. |
+| 1. | XCM Monitoring Service | The XCM monitoring service that supports XCM reserve-based transfers between the following parachains: Asset Hub, Astar and Acala. The service will feature what was described in [Project Details](#project-details). |
 | 2. | Management Tools | Administrator scripts to inspect and delete pending XCM messages matching and notification tasks, as described in [Management Tools](#management-tools). |
 
 ## Future Plans
@@ -253,10 +247,12 @@ N/A
 For the XCM monitoring service, we have plans to expand its capabilities and reach which include:
 
 1. **Support for More Networks:** We plan to broaden the range of networks supported by the XCM monitoring service, enabling a more extensive and inclusive monitoring ecosystem.
+  
+2. **Support for More XCM Instructions:** We plan to support more XCM instructions, such as the ones related to asset teleport.
 
-2. **Support for More XCM Protocols:** We will add support for VMP and eventually, XCMP.
+3. **Support for More XCM Protocols:** We will add support for XCMP when ready.
 
-3. **Enhanced Notifications:** Depending on user requirements and community feedback, we will extend our notification capabilities. This may involve providing notifications for asset transfers' initiation, such as when the block containing the XCM transfer is finalized on the origin chain. We are also considering notifications for when XCM messages sent through HRMP are processed on intermediate chains.
+4. **Enhanced Notifications:** Depending on user requirements and community feedback, we will extend our notification capabilities. This may involve providing notifications for asset transfers' initiation, such as when the block containing the XCM transfer is finalized on the origin chain. We are also considering notifications for when XCM messages sent through HRMP are processed on intermediate chains.
 
 Our long-term vision for Ocelloids extends beyond just monitoring XCM transfers. We aim to create a hassle-free, comprehensive monitoring portal for Substrate networks and smart contracts within the ecosystem. This portal will offer a set of advanced features, including:
 
