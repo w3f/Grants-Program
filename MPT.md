@@ -1,4 +1,4 @@
-# Marco Polo Technologies - Primary and secondary issuance of RWAs for private markets with Substrate
+# Marco Polo Technologies - The alternative finance infrastructure to web3
 
 - **Team Name:** Marco Polo Technologies
 - **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
@@ -8,36 +8,36 @@
 
 ### Overview
 
-#### A liquidity protocol for real-world assets (RWAs) to securely and compliantly automate primary and secondary token issuance in digital private markets.
+#### The alternative finance protocol for real-world assets (RWAs) to securely and compliantly automate primary and secondary token issuance.
 
 #### Description
 
 Marco Polo Technologies (MPT) is an infrastructure company that provides the foundational elements for alternative finance platforms, instruments, and mechanisms, with a focus on serving participants in private markets. Our modular and secure infrastructure supports global policymakers' priorities, such as investor protection and KYC/AML/KYB requirements, while preventing market manipulation. We are also developing a user-friendly UI architecture to enable non-tech-savvy clients to rapidly create alternative finance platforms through an intuitive *drag-and-drop* experience.
 
-MPT infrastructure enables businesses to expand into underserved markets by connecting real-world assets to any investor class and finance managers. Our ongoing efforts harness the synergy between asset owners, investors, and issuers to facilitate transformative changes in private markets, turning them into public-like, frictionless models. MPT bridges the gap between traditional finance, DeFi, and modern web3 infrastructure needed to support the flow of new liquidity from private and offline markets to web3, while increasing the transparency, accessibility, and inclusivity of digital private market investments.
+MPT infrastructure enables businesses to expand into underserved markets by connecting real-world assets to any investor class and finance managers. Our ongoing efforts harness the synergy between asset owners, investors, and issuers to facilitate transformative changes in the alternative finance markets, turning them into public-like, frictionless models. MPT bridges the gap between traditional finance, DeFi, and modern web3 infrastructure needed to support the flow of new liquidity from private and offline markets to web3, while increasing the transparency, accessibility, and inclusivity of digital private market investments.
 
 #### Marco Polo Technologies, Substrate and Polkadot - A brief description of our project.
 
-Our first layer of the infrastructure is built with *Rust*, and we chose *Substrate* as our development framework as a natural addition to our existing technology, to add a blockchain layer that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs) in private markets, while enabling access to all investor classes and enabling access to previously unaccesible markets. By building a liquidity protocol for RWAs on Substrate and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share the following benefits with the Polkadot ecosystem:
+Our first layer of the infrastructure is built with *Rust*, and we chose *Substrate* as our development framework as a natural addition to our existing technology, to add a blockchain layer that focuses on the primary and secondary issuance of tokens representing real-world assets (RWAs), while enabling access to all investor classes and enabling access to previously unaccesible markets. By building an alternative finance protocol for RWAs on *Substrate* and connecting it with our comprehensive infrastructure, Marco Polo Technologies (MPT) aims to share the following benefits with the Polkadot ecosystem:
 
 - Promoting financial inclusion on platforms: onboarding reliable clients through established social connections, making digital private markets more accessible to a wider range of investors and asset owners, leveraging our proprietary social network.
-- Enhancing asset interoperability: by enabling the seamless transfer and trading of RWAs across the Polkadot network, we will increase liquidity and accessibility for all market participants.
+- Enhancing asset interoperability: by enabling the seamless transfer and trading of RWAs across the Polkadot network, new liquidity and accessibility for all market participants is enabled.
 - Expanding market access: providing a gateway for a diverse range of participants to access private markets and RWAs issuance and trading, enriching the Polkadot ecosystem's financial landscape.
 - Fostering DeFi innovation: leveraging RWAs within the decentralized finance (DeFi) space, supporting existing possibilities for DeFi applications such as fractional ownership, collateralization, and asset-backed lending, to attract new clients and assets to the Polkadot ecosystem.
 - Building a robust ecosystem: adding a layer of financial functionality that complements and strengthens the overall infrastructure of Polkadot, to attract more platforms and clients to the ecosystem and expand its use cases.
 - Interoperability with other blockchains: supporting a variety of RWAs and facilitate easy trading and investments across the network.
-- Wallet support: our protocol will be interoperable with other wallets in the Polkadot ecosystem, supporting various fiat currencies, to simplify how users can store and manage their RWAs.
+- Wallet support: our protocol will be interoperable with other wallets in the Polkadot ecosystem, supporting various fiat currencies, to simplify how users can buy, store and excahnge their RWAs.
 
 #### Team interest
 
-Our team is a small, senior, and resourceful group with expertise in global private markets, investments, and technology. Our project has naturally evolved towards supporting the development of private markets and our current iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership representation and exchanges, while breaking down historical barriers such as illiquidity and limited access for non-instituional investors. We aim to harness the benefits of transparency, immutability, automated compliance and ownership records by leveraging *Substrate* and *Polkadot*'s robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and asset owners.
+Our team is a small, senior, and resourceful group with expertise in alternative finance, venture investing, and technology. Our project has naturally evolved towards supporting the development of private markets and our current iteration is driven by our goal of tokenizing RWAs, which allows for fractional ownership representation and exchanges, while breaking down historical barriers such as illiquidity and limited access for non-instituional investors. We aim to harness the benefits of transparency, immutability, automated compliance and ownership records by leveraging *Substrate* and *Polkadot*'s robust technologies. These benefits instill trust and reduce friction within the alternative finance market, making it more accessible and appealing to a wider range of investors and asset owners.
 
 ### Project Details
 
-Our intention is to deliver an initial implementation of a liquidity protocol that focuses on private markets and allows for asset tokenization, to support the build out of alternative finance platforms on top of our infrastructure. Our first steps for the MVP of this project would be to:
+Our intention is to deliver an initial implementation of an alternative finance protocol, starting with asset tokenization, to support the build out of platforms on top of our infrastructure. Our first steps for the MVP of this project would be to:
 
-1) Set up our RWAs private markets focused blockchain and develop its initial attributes: specifically designed for issuance, representation and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
-2) Set up the initial role of the tokens for primary and eventually secondary issuance through smart contracts: creating a token standard that will make it swift for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these tokens on private exchanges.
+1) Set up our alternative finance focused blockchain and develop its initial attributes: specifically designed for issuance, representation and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
+2) Set up the initial role of the tokens for primary and eventually secondary issuance through smart contracts: creating a token standard that will make it swift for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these tokenw.
 3) Set up the initial wallet functions to allow for interaction with multiple users owning multiple assets: we aim at implementing a wallet that will allow users to store and manage their RWAs.
 
 The image below represents the two layers of our infrastructure and how we would be using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
@@ -53,11 +53,11 @@ Among the diverse work of our team members, here are some platforms that have be
 
 ### Ecosystem Fit
 
-Marco Polo Technologies is building a one-stop shop for private markets participants to develop and launch alternative finance platforms and tokenize real-world assets (RWAs), applying the core principles of security, transparency, and compliance to accelerate the adoption of modern finance frameworks in web3. We focus on building finance and operations specific modules and are naturally blending into the *Substrate* and *Polkadot* ecosystems, aiming at leveraging the interoperability between different blockchains, which is essential for the seamless transfer and trading of RWAs across different chains, as well as the flexibility offered by the *Substrate* framework to develop a private market focused blockchain.
+Marco Polo Technologies is building a one-stop shop for private markets participants to develop and launch alternative finance platforms and tokenize real-world assets (RWAs), applying the core principles of security, transparency, and compliance to accelerate the adoption of modern finance frameworks in web3. We focus on building finance and operations specific modules and are naturally blending into the *Substrate* and *Polkadot* ecosystems, aiming at leveraging the interoperability between different blockchains, which is essential for the seamless transfer and trading of RWAs across different chains, as well as the flexibility offered by the *Substrate* framework to develop an alternative finance focused blockchain.
 
-We are aware of other projects in the *Substrate* and the *Polkadot* ecosystems that are working in complimentary areas, such as Centrifuge and Polymesh; and while they entered the DeFi market in pursuit of liquidity or by building a platform focused for instituional investors, our approach follows the opposite logic in the attempt to capture liquidity and assets in the alternative and private markets segment, that are still off-chain.  We have implemented a unique social network that leverages existing communities and real-life relationships, such approach not only allows us to access a wider customer base but also enables our clients to onboard pre-vetted assets from trusted actors onto our platforms. Furthermore, the social network aspect empowers our clients to add trusted and reliable participants to enhance their clients' offerings while ensuring scalability for users.
+We are aware of other projects in the *Substrate* and the *Polkadot* ecosystems that are working in complimentary areas, such as Centrifuge and Polymesh; and while they entered the DeFi market in pursuit of liquidity or by building a platform focused for instituional investors, our approach follows the opposite logic in the attempt to capture liquidity and assets in the alternative and private markets segment, that are msotly off-chain.  We have implemented a unique social network that leverages existing communities and real-life relationships, such approach not only allows us to access a wider customer base but also enables our clients to onboard pre-vetted assets from trusted actors onto our platforms. Furthermore, the social network aspect empowers our clients to add trusted and reliable participants to enhance their clients' offerings while ensuring scalability for users.
 
-Our infrastructure is designed to be used by technology teams or by less tech-savvy users, to serve private markets participants (family offices, VCs, PEs, financial managers, etc.) and companies that intend to tokenize and create alternative financing solutions for their businesses; connecting previously undeserved assets with private liquidity providers, attempting to revolutionize the way that private markets operate by making them more accessible, liquid and inclusive.
+Our infrastructure is designed to be used by technology teams or by less tech-savvy users, to serve private markets participants (family offices, VCs, PEs, financial managers, etc.) and companies that intend to tokenize and create alternative financing solutions for their businesses; connecting previously undeserved assets with private liquidity providers, attempting to revolutionize the way private markets operate by making them more accessible, liquid and inclusive.
 
 ## Team :busts_in_silhouette:
 
@@ -80,19 +80,15 @@ Our infrastructure is designed to be used by technology teams or by less tech-sa
 
 ### Team's experience
 
-Our team has a vast and diverse experience across various industry segments and modern technologies and has been able to go from the initial conceptualization of market needs in the private financial sector, to the delivery of a compliant infrastructure. Our intent has been that of creating building blocks with functions and modules that can be easily assembled to create all sorts of alternative finance platforms, to support the transition of traditionally or off-line ran businesses to the adoption of a fintech focused web3 infrastructure, for private businesses transacting and operating in private markets, enlarging the concept of *sophisticated investors* to continuosly push the boundaries of a legal framework that does not keep up with a modern financial infrastructure.
+Our team has a vast and diverse experience across various industry segments and modern technologies and has been able to go from the initial conceptualization of market needs in the private financial sector, to the delivery of a compliant and flexible infrastructure. Our intent has been that of creating building blocks with functions and modules that can be easily assembled to create all sorts of alternative finance platforms, to support the transition of traditionally or off-line ran businesses to the adoption of a fintech focused web3 infrastructure, for private businesses transacting and operating in private markets, enlarging the concept of *sophisticated investors* to continuosly push the boundaries of a legal framework that does not keep up with a modern financial infrastructure.
 
 The team combined experience spaces from software architecture and development in Rust, C/C++, Python, C#, JavaScript, SQL, matehmatical algorithms, mobile and web development, content parsing and filtering, to the recent exploration of WebAssembly and Substrate. Moreover, our team is able to manage and implement complex projects, navigating regulatory requirements and financial processes, to be applied on business cases focused on private markets, as some of the example shown above. More in particular, we aim at being the choice for other technology teams interested to implement their alternative finance soultions with our pre-built components. 
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+MPT is as a private project and its repositories are kept private, we have shared links to some of our current and previous projects within this application.
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+We will be working and updating this repository in the context of the current grant application: https://github.com/MarcoPoloTechnologies/platform-chain
 
 ## Development Status :open_book:
 
@@ -100,7 +96,7 @@ Here you can find documentation on the research and our preliminary conversation
 
 ## Development Roadmap :nut_and_bolt:
 
-Our team is working on the creation and implementation of other features in the wider context of our infrastructure development that are to be intended outside of this grant application. We would have the equivalent of 2.5 people, cumulatively, contributing full-time to this project and the language of development would be *Rust*.
+Our team is working on the creation and implementation of other finance products and mechanisms, as well as compliance aspects,  in the wider context of our infrastructure development that are to be intended outside of this grant application. We would have the equivalent of 2.5 people, cumulatively, contributing full-time to this project and the language of development would be *Rust*.
 
 The below roadmap refers to an initial implementation of a purposely built blockchain for primary and secondary issuance using *Substrate*.
 
