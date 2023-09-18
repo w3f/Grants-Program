@@ -115,12 +115,16 @@ The below roadmap refers to an initial implementation of a purposely built block
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT|
-| **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of the private markets MPT blockchain built on Substrate. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Pallet Balances | Setting up a generic way to store and manage balances of assets |
-| 2. | Pallet Assets | Specify how to store and manage tokens and their ownership |
-| 3. | Pallet Uniques | Using unique identifiers to store and manage the token IDs |
-| 4. | MPT chain | The balances, assets and uniques pallets will interact and be used to further define tokens properties and features, their minting and trasferring processes as well as balance queries. |
+| **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests or it . |
+| 1. | Basic version of the blockchain | Setting up a generic alternative finance focused blockchain. |
+| 2. | Basic functionalities | Setting up block production, transaction validation, and block finalization. |
+| 3. | Basic attributes | Start to develop MPT chain initial attributes, which may include creating a native token for the MPT chain, configuring a governance model, and deploying the needed pallets. |
+| 4. | MPT chain | Leveraging existing pallets and primitives to implement a consensus mechanism, and a basic use of  assets and transactions. |
+
+Possilbe pallets to be used acros the project are:
+
+- pallet_balances, pallet_assets, pallet_grandpa, pallet_contracts, pallet_identity, pallet_accounts
 
 ### Milestone 2
 
@@ -131,11 +135,11 @@ The below roadmap refers to an initial implementation of a purposely built block
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** |  License | MIT|
-| **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial primary and secondary issuance via smart contracts. |
+| **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Pallet Contracts | In order to issue and trade tokens we will need to deploy and execute smart conctrats, private markets have their own set of pre-established rules which we will add a very first implementation on |
-| 2. | Pallet Assets | Balances of assets with their value are stored in executable smart contracts |
-| 3. | MPT chain | The assets and contracts pallets will support us in the creation |
+| 1. | Initial token development | In order to issue and trade tokens we will need to deploy and execute smart contracts; private markets have their own set of pre-established rules, we will implement a basic version of such rules at this stage. |
+| 2. | Assets | Balances of assets and their values are stored in executable smart contracts. |
+| 3. | MPT chain | Issuing and trading of a tokens, storage and management of asset balances, with a smart contract execution. |
 
 ### Milestone 3
 
@@ -149,10 +153,10 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0b.** | Documentation | We will provide the inline documentatioN of the code that explains how to initially set up a wallets in the context of multiple users owning multiples assets. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0e. | Article | We will publish an article that explains how to set up a blockchain specifically developed to support the creation of digital private markets for private companies that want to represent, issue and exchanged their underlying assets (e.g. SMEs shares, real estate, collectibles, etc.) |
-| 1. | Pallet balances | Store and manage tokens' balances in the wallet |
-| 2. | Pallet assets | Check what assets are represented by the tokens |
-| 3. | MPT chain | Develop APIs to allow users to interact with the wallet for balances and asset |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 1. | New accounts and management | Create a new account, transfer funds between accounts, and interact with smart contracts. |
+| 2. | Identity and associated assed | Create and manage accounts' identities, associate identities with accounts, and verify identities. Check what assets are represented by the tokens. |
+| 3. | MPT chain | Develop APIs to allow users to interact with the balances and assets. |
+| 5. | MPT chain repository | We will deliver git-hub repository with the description of our initial implementaiton and its use and potential. |
 
 ## Future Plans
 
