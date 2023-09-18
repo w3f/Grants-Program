@@ -37,7 +37,7 @@ Our team is a small, senior, and resourceful group with expertise in alternative
 Our intention is to deliver an initial implementation of an alternative finance protocol, starting with asset tokenization, to support the build out of platforms on top of our infrastructure. Our first steps for the MVP of this project would be to:
 
 1) Set up our alternative finance focused blockchain and develop its initial attributes: specifically designed for issuance, representation and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
-2) Set up the initial role of the tokens for primary and eventually secondary issuance through smart contracts: creating a token standard that will make it swift for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these tokenw.
+2) Set up the initial role of the tokens for primary and secondary issuance through smart contracts: creating a token standard that will make it swift for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these token.
 3) Set up the initial wallet functions to allow for interaction with multiple users owning multiple assets: we aim at implementing a wallet that will allow users to store and manage their RWAs.
 
 The image below represents the two layers of our infrastructure and how we would be using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
@@ -98,9 +98,7 @@ Here you can find documentation on the research and our preliminary conversation
 
 Our team is working on the creation and implementation of other finance products and mechanisms, as well as compliance aspects,  in the wider context of our infrastructure development that are to be intended outside of this grant application. We would have the equivalent of 2.5 people, cumulatively, contributing full-time to this project and the language of development would be *Rust*.
 
-The below roadmap refers to an initial implementation of a purposely built blockchain for primary and secondary issuance using *Substrate*.
-
-on This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+The below roadmap refers to an initial implementation of a purposely built blockchain for alternative finance generic functions using *Substrate*.
 
 ### Overview
 
@@ -117,9 +115,9 @@ on This section should break the development roadmap down into milestones and de
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT|
-| **0b.** | Documentation | We will provide the **inline documentation** of the code that explains how to perform the initial set-up of the private markets MPT blockchain built on Substrate. |
+| **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of the private markets MPT blockchain built on Substrate. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Pallet Balances | Setting up a generic way to store and manage balances of fungible assets |
+| 1. | Pallet Balances | Setting up a generic way to store and manage balances of assets |
 | 2. | Pallet Assets | Specify how to store and manage tokens and their ownership |
 | 3. | Pallet Uniques | Using unique identifiers to store and manage the token IDs |
 | 4. | MPT chain | The balances, assets and uniques pallets will interact and be used to further define tokens properties and features, their minting and trasferring processes as well as balance queries. |
@@ -133,11 +131,11 @@ on This section should break the development roadmap down into milestones and de
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** |  License | MIT|
-| **0b.** | Documentation | We will provide the **inline documentation** of the code that explains how to perform the initial primary and secondary issuance via smart contracts. |
+| **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial primary and secondary issuance via smart contracts. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 1. | Pallet Contracts | In order to issue and trade tokens we will need to deploy and execute smart conctrats, private markets have their own set of pre-established rules which we will add a very first implementation on |
 | 2. | Pallet Assets | Balances of assets with their value are stored in executable smart contracts |
-| 3. | MPT chain | The assets and contracts pallets will support the initial test of primary and secodary issuance of tokens related to real world assets with an existing underlying asset |
+| 3. | MPT chain | The assets and contracts pallets will support us in the creation |
 
 ### Milestone 3
 
@@ -148,9 +146,9 @@ on This section should break the development roadmap down into milestones and de
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT|
-| **0b.** | Documentation | We will provide the **inline documentation** of the code that explains how to initially set up a wallets in the context of multiple users owning multiples assets. |
+| **0b.** | Documentation | We will provide the inline documentatioN of the code that explains how to initially set up a wallets in the context of multiple users owning multiples assets. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0e. | Article | We will publish an **article** that explains how to set up a blockchain specifically developed to support the creation of digital private markets for private companies that want to represent, issue and exchanged their underlying assets (e.g. SMEs shares, real estate, collectibles, etc.) |
+| 0e. | Article | We will publish an article that explains how to set up a blockchain specifically developed to support the creation of digital private markets for private companies that want to represent, issue and exchanged their underlying assets (e.g. SMEs shares, real estate, collectibles, etc.) |
 | 1. | Pallet balances | Store and manage tokens' balances in the wallet |
 | 2. | Pallet assets | Check what assets are represented by the tokens |
 | 3. | MPT chain | Develop APIs to allow users to interact with the wallet for balances and asset |
@@ -158,20 +156,13 @@ on This section should break the development roadmap down into milestones and de
 
 ## Future Plans
 
-Please include here
+We are committed to developing a secure, compliant, and user-friendly infrastructure that has the potential to revolutionize the way that private markets are financed and operated.
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+In the short term, we plan to develop more features and products for our tokenization layer. In addition to primary and secondary issuance of assets, we will enable the creation of ETFs-like and portfolios of assets in private markets accessible to all investor classes.
 
-Short term: Private markets support to tokenize SMEs shares and create private ETFs/portfolio
-Long term: become the go-to platform powered by Substrate and Polkadot for private companies and digital private markets.
+On more practical terms, we are also embracing a new project for a primary and secondary issuance platform to connect private and institutional investors to growing SMEs wanting to expand in emerging markets, where financial infrastructure is lacking. Finally, we will further advance our KYC/KYB/AML capabilities to provide on-chain verified info, as well as exploring the best route to integrate *oracles* for on and off chain data verification.
 
-- build a primary and secondary issuance platform to connect private and institutional investors to SMEs wanting to expand and grow in emerging markets where financial infrastructure are lacking
-- oracles offline and online
-- onchain KYV/KYB/AML/KYT?!
-- wallet/custodial/wallet to be controlled by advisors only on permissioned tokens vs non custodial? (it must be custodial at least for the infra provider)
-- 
-
+In the long term, we aim to become the go-to parachain for alternative finance products, private companies, and digital private markets in the *Polkadot* environment.
 
 ## Additional Information :heavy_plus_sign:
 
