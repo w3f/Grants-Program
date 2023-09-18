@@ -168,9 +168,9 @@ software architecture, ensuring robust and secure software solutions.<br>
 
 The team plans to release the system sequentially in two versions:<br>
 
-- **Beta Release:** includes implementation of the main functionality of the system for readers, authors, and system administrators, which will allow functionality testing for each user role and obtaining initial feedback from test users.<br>
+- **Beta Release:** Includes implementation of the main functionality of the system for readers, authors, and system administrators, which will allow functionality testing for each user role and obtaining initial feedback from test users.<br>
 
-- **Release Version:** includes enhanced functionality from the beta release and additional features for all user roles. Administrator functionality will be significantly limited in terms of interaction with user data for reader and author roles.<br>
+- **Release Version:** This release will include enhanced functionality from the beta release, with additional features for all user roles. Administrator functionality will be limited in terms of access to user data for the reader and author roles. Full documentation will be provided and the final product will be a fully operational dApp.<br>
 
 ### Overview
 
