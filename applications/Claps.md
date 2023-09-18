@@ -202,7 +202,7 @@ We assure the committee that despite the delay, the quality and scope of the pro
 | 7      | Android apk                        | We will provide android apk for above challenge card data input and functional verification<br>We will provide android apk for user challenge card with wallet to receive rewards                                                                                                                                                                                                               |
 | 8      | Testing                            | Achieve a testing coverage of the functionalities above 90%                                                                                                                                                                                                                                                                                                                                     |
 
-### Milestone 2 - CPatient Engagement and Data Sharing
+### Milestone 2 - Patient Engagement and Data Sharing
 - **Estimated Duration:** 2 month
 - **Developers:** FTE x 4
 - **(Product Design x 1, Dapp Engineer x 1, System Engineer x 1, APP Engineer x 1)**
