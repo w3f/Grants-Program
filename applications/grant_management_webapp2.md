@@ -8,10 +8,11 @@ This application is a follow-up for [Grant Management Webapp](https://github.com
 The Grant Management Web Application is a comprehensive software solution designed to streamline and enhance the process of managing grants. It aims to provide w3f and other grant-making institutions with a centralized platform to efficiently handle grant applications, evaluation, tracking, reporting, and overall administration. By reducing the number of clicks, the web application will enable better navigation of data, better UI, greater ease and effectiveness in the grant management process.
 ### Project Details
 #### Key Features:
-- Organised relevant data.
+- Organised relevant real-time data.
 - Github API integration to carry out relevant actions.
 Technical Architecture
 ![technical_architecture](https://github.com/w3f/Grants-Program/assets/60818312/8dff934c-1bb6-414a-b58e-1dd70b03afd9)
+- A private chatbox for the committee to have discussions will be implemented for every application and delivery. This chatbox will be in the detail page of all the applications and deliveries.
 ### Core Components:
 #### Front-End:
 1. UI:
@@ -30,16 +31,17 @@ Technical Architecture
 - Front-end: HTML5, CSS3, JavaScript (React)
 - Back-end: Node.js (Express.js)
 - Database: MongoDB
-- Authentication and Authorization: Github (github apps)
+- Authentication and Authorization: Github (github oAuth)
 ### Ecosystem Fit
-The W3F grants program is growing by the day. It is quite a hassle for the grants committee to browse the Grant Program Repositories. This application aims to achieve two things: 1. Consolidate releveant information from the Grant Program Repos; 2. Provide Github Actions functionality to deal with the process of the Grant Program within the app itself.
+The W3F grants program is growing by the day. It is quite a hassle for the grants committee to browse the Grant Program Repositories. This application aims to achieve two things: 
+1. Consolidate releveant information from the Grant Program Repos
+2. Provide Github Actions functionality to deal with the process of the Grant Program within the app itself.
 ## Team :busts_in_silhouette:
 ### Team members
 - Rahul Saharan (Team Lead)
 - Jatin Sehgal (Frontend)
 - Shweta Saini (Backend)
 - Shaurya Awasthi (Tester)
-- Amit Kumar Yadav (Blockchain)
 ### Contact
 - **Contact Name:** Karan Chopra
 - **Contact Email:** karan.chopra@antiersolutions.com
@@ -71,13 +73,13 @@ The W3F grants program is growing by the day. It is quite a hassle for the grant
 - [Shweta Saini](https://www.linkedin.com/in/shweta-s-14b613212)
 - [Shaurya Awasthi](https://www.linkedin.com/in/shaurya-awasthi/)
 ## Development Status :open_book:
-- A POC for treasury pallet integration has been made under [this](https://github.com/shweta432/polka_treasury) link.
-- A private chatbox for the committee to have discussions will be implemented for every application and delivery. This chatbox will be in the detail page of all the applications and deliveries.
+- The development has been continued on the same repository as the [previous one](https://github.com/antiers-solutions/gmw-backend/). 
 ## Development Roadmap :nut_and_bolt:
 ### Overview
 - **Total Estimated Duration:** 8 weeks
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** 22000 USD
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
@@ -85,8 +87,12 @@ The W3F grants program is growing by the day. It is quite a hassle for the grant
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Frontend | We will provide dashboard and details pages for Applications and Deliveries with all details |
-| 2. | Backend | Github API integrations and web hooks will be implemented so that our application can listen to events and make necessary changes in the db |
+| 2. | Backend | Github API integrations and web hooks will be implemented so that our application can listen to events and make necessary changes in the db|
 | 3. | Data Base | DB schema implementation |
+
 ## Future Plans
+
+Oracle for treasury pallet integration is being researched meanwhile and also looking for decentrallised alternative for github. Upon further discussions with the grants committee we shall go ahead with this.
+
 ## Additional Information :heavy_plus_sign:
 **How did you hear about the Grants Program?** Grants Portal
