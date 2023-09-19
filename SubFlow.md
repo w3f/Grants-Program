@@ -13,7 +13,7 @@ Empowering Connections on the Decentralised Web: SubFlow, Your Smart Social Netw
 
 With the growth of the Democratic deficit, the rise of autocracy and the total disability of the overgrown bureaucracy all over the world, the same trends are evident in the structure of the internet and today's social media platforms.
 
-SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. The protocol will be distinguished from other platforms (such as Lens protocol) by its foundation of decentralised ownership and censorship resistance. It will offer a seamless experience for sharing multimedia content, engaging with other users through such interactions as "likes" and comments, and conducting direct token transfers. 
+SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. The protocol will be distinguished from other platforms by its foundation of decentralised ownership and censorship resistance. It will offer a seamless experience for sharing multimedia content, engaging with other users through such interactions as "likes" and comments, and conducting direct token transfers. 
 
 SubFlow will be developed as a set of Smart Services, providing users the ability to interact with other users through communication, as well as interact with other services in the Polkadot ecosystem based on an open API: marketplaces (showcasing, buying, and selling NFTs), DeFi services (buying and exchanging tokens), games (authorisation, messaging), and so on.
 
@@ -77,7 +77,7 @@ Other Smart Services provide additional functionality, for example:<br>
 
 ### Ecosystem Fit
 
-Decentralised social networks are resistant to censorship, making them a valuable tool in areas where internet censorship is a concern. The growth of such censorship is concerning, but SubFlow can expand the use cases of the Polkadot ecosystem, increase user engagement, highlight cross-chain interoperability, and support privacy and data ownership.<br>
+Decentralised social networks are resistant to censorship. They are a valuable tool in areas where internet freedom is at risk. The growth of such censorship is concerning, but SubFlow can expand the use cases of the Polkadot ecosystem, increase user engagement, highlight cross-chain interoperability, and support privacy and data ownership.<br>
 
 The SubFlow team has already started working with Subsquid and SubSocial to conduct a deep dive into the Polkadot ecosystem and assess the product fit of SubFlow. We are in constant communication about both corrections to the technological structure of the protocol and updates of this Grants-Program application daily, and these two projects are already part of the SubFlow development plans.<br>
 
