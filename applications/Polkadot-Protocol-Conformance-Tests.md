@@ -98,11 +98,7 @@ No actual development has been made for this RFP. However, the team has spent a 
 
 ## Development Roadmap :nut_and_bolt:
 
-The primary framework under consideration for this research will be Zombienet, as it already provides the groundwork for these types of tests. Each of the steps outlined below will be dedicated to investigating the creation of Zombienet tests for the specified functionalities. Depending on the feasibility of this, the team will either:
-
-- Develop a Proof of Concept (PoC) Zombienet test for the specified functionality.
-    - If certain edge cases cannot be tested using the current version of Zombienet, we will outline the necessary development steps to enable such testing.
-- Document in the research report the development steps required to enable testing of the specified functionality using Zombienet.
+The primary framework under consideration for this research will be Zombienet, as it already provides the groundwork for these types of tests. Each of the steps outlined below will be dedicated to investigating the creation of Zombienet tests for the specified functionalities. The team will also document in the research report the development steps required to enable testing of the specified functionality using Zombienet.
 
 Outlined below are the testing scenarios for each Host module that will be the focus of the research:
 
@@ -127,15 +123,15 @@ Outlined below are the testing scenarios for each Host module that will be the f
 
 ### Overview
 
-- **Total Estimated Duration:** 12 working weeks
+- **Total Estimated Duration:** 10 working weeks
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** $73920
+- **Total Costs:** $61600
 
 ### Milestone 1 — Polkadot Conformance Testing Suite Research
 
-- **Estimated duration:** 12 working weeks
+- **Estimated duration:** 10 working weeks
 - **FTE:** 2
-- **Costs:**  $73920
+- **Costs:**  $61600
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
