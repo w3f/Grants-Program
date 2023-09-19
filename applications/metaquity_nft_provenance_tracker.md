@@ -142,8 +142,3 @@ We have envisioned this project as a more generic use case for our larger projec
 > Please expand the Ecosystem Fit section to explain who your target audience is and how this project compares to similar, existing ones.
 
 Our target audience is basically the parachains and projects in the Polkadot ecosystem who are working with NFTs and possibly refungibility of NFT's to fungible tokens and make their lives simpler by providing an open source tool to track the entire lifecycle of their assets. Also upcoming parachains like Metaquity Network (ours) and others can use this to build these provenance use cases which will eventually give rise to more effective collaborations between the DeX's and the parachains.
-
-
-do we need a docker container to deploy it? if so how do we explain for this 
-https://github.com/w3f/Grants-Program/pull/1832/files#r1315532129
-and https://github.com/w3f/Grants-Program/pull/1832#discussion_r1315531937
