@@ -103,17 +103,13 @@ The primary framework under consideration for this research will be Zombienet, a
 Outlined below are the testing scenarios for each Host module that will be the focus of the research:
 
 1. Host API
-    1. Storage
-    2. Child Storage
-    3. Hashing
-    4. Trie
+    1. Trie
 2. SCALE
     1. SCALE encoding
     2. SCALE decoding
 3. State Trie
     1. Trie encoding
     2. Trie decoding
-    3. Trie proof generation
 4. BABE
     1. Block import
     2. Block validation
@@ -123,15 +119,15 @@ Outlined below are the testing scenarios for each Host module that will be the f
 
 ### Overview
 
-- **Total Estimated Duration:** 10 working weeks
+- **Total Estimated Duration:** 8 working weeks
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** $61600
+- **Total Costs:** $49280
 
 ### Milestone 1 — Polkadot Conformance Testing Suite Research
 
-- **Estimated duration:** 10 working weeks
+- **Estimated duration:** 8 working weeks
 - **FTE:** 2
-- **Costs:**  $61600
+- **Costs:**  $49280
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
