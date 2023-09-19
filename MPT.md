@@ -37,7 +37,7 @@ Our team is a small, senior, and resourceful group with expertise in alternative
 Our intention is to deliver an initial implementation of an alternative finance protocol, starting with asset tokenization, to support the build out of platforms on top of our infrastructure. Our first steps for the MVP of this project would be to:
 
 1) Set up our alternative finance focused blockchain and develop its initial attributes: specifically designed for issuance, representation and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
-2) Set up the initial role of the tokens for primary and secondary issuance through smart contracts: creating a token standard that will make it swift for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade these token.
+2) Set up the initial role of the tokens for primary and secondary issuance through smart contracts: creating a token standard that will make it swift for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade the tokens.
 3) Set up the initial wallet functions to allow for interaction with multiple users owning multiple assets: we aim at implementing a wallet that will allow users to store and manage their RWAs.
 
 The image below represents the two layers of our infrastructure and how we would be using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
