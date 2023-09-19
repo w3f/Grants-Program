@@ -1,4 +1,4 @@
-# SubFlow: Web3 microblogging smart-service
+# SubFlow: Web3 microblogging Smart Service
 
 - **Team Name:** deus4
 - **Payment Address:** 11oj3RchYvUPxLdfRoCa1Q6V6kFTfSikVSAcpe56sk8f8z4 POLKADOT
@@ -46,11 +46,11 @@ The functionality of the author and system administrator will require user autho
 ### Structure 
 
 SubFlow is a fully decentralised application based on SmartSOA (smart service-oriented architecture), it's core smart servies include:
-- **DNS** <br>Maps user names to their corresponding addressed for personal smart services.
-- **Registration Service** <br>Registers new users with DNS and sets up their personalised smart services.
+- **DNS** <br>Maps user names to their corresponding addressed for personal Smart Services.
+- **Registration Service** <br>Registers new users with DNS and sets up their personalised Smart Services.
 - **User Smart Services** <br>Store, manage, and enable user data interaction.
 
-Other Smart-Services provide additional functionality, for example:<br>  
+Other Smart Services provide additional functionality, for example:<br>  
 - **Advertising Service** <br>Enables advertisers to create and run campaigns on SubFlow, rewarding users who share their content according to set rules.
 - **Donation Service** <br>Allows users to financially support content creators they find interesting directly.
 - **NFT Markeplace Service** <br>Facilitates the direct sale of NFTs created by authors on SubFlow.
@@ -228,7 +228,7 @@ The team plans to release the system sequentially in two versions:<br>
 
 ## Future Plans
 
-**1. Registration Smart-service (working title - identikit)** <br>
+**1. Registration Smart Service (working title - identikit)** <br>
 - NFT/SBT user account-profile functionality development;
 - Plug-and-play system development for the purpose of integrating different services within the Polkadot ecosystem;
 - Separating the functionality into a standalone service (working title - “identikit");
@@ -250,5 +250,5 @@ The team plans to release the system sequentially in two versions:<br>
 - New structure will allow development and launch of API for interacting with other blockchain services such as SubSocial and SubSquid (and othrers).
 - Extended functionality for token transfers.
 - Integration of an already existing service in the Polkadot ecosystem for voting.
-- Advertising smart service development for the direct interaction between creators and advertisers.
+- Advertising Smart Service development for the direct interaction between creators and advertisers.
 - User interface web updates.
