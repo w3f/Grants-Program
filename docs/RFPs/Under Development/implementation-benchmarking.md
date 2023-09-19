@@ -7,7 +7,7 @@
 ## Project Description :page_facing_up:
 
 When a new team comes to the ecosystem, they are faced with a decision on how to best implement the logic that they need.
-Traditionally in substrate, this has been a choice between a smart contract vs. runtime module (a.k.a. pallet) and elaborated on [in this StackOverflow question](https://stackoverflow.com/questions/56040779/when-should-i-build-a-substrate-runtime-module-versus-a-substrate-smart-contract) or [this entry in Substrate Developer Hub](https://substrate.dev/docs/en/knowledgebase/smart-contracts/#smart-contracts-vs-runtime-development). The choice has since been augmented by the possibility to deploy solidity contracts to an EVM-compatible chain, or even writing solidity code and compiling it to WASM with the help of a [solang](https://solang.readthedocs.io/en/latest) compiler.
+Traditionally in substrate, this has been a choice between a smart contract vs. runtime module (a.k.a. pallet) and elaborated on [in this StackOverflow question](https://stackoverflow.com/questions/56040779/when-should-i-build-a-substrate-runtime-module-versus-a-substrate-smart-contract) or [this entry in Substrate Developer Hub](https://docs.substrate.io/design/decide-what-to-build/). The choice has since been augmented by the possibility to deploy solidity contracts to an EVM-compatible chain, or even writing solidity code and compiling it to WASM with the help of a [solang](https://solang.readthedocs.io/en/latest) compiler.
 
 As substrate is gaining traction, more and more tools will enable developers to write their logic in their language of choice and deploy on-chain, such as:
 
@@ -17,7 +17,7 @@ As substrate is gaining traction, more and more tools will enable developers to 
 This RFP calls for a benchmarking effort to help inform newcomers about the choice of the best tool for writing application logic.
 Apart from quantifiable metrics, we would like the outcome of this work to be a guide for developers, perhaps expanding on the aforementioned StackOverflow post. Depending on the outcome, the work might get integrated into our READMEs/wikis.
 
-Before starting this effort, it might make sense to take a look at the official [runtime benchmarking docs](https://substrate.dev/docs/en/knowledgebase/runtime/benchmarking) to assess whether it can be leveraged in some way.
+Before starting this effort, it might make sense to take a look at the official [runtime benchmarking docs](https://docs.substrate.io/test/benchmark/) to assess whether it can be leveraged in some way.
 
 ## Deliverables :nut_and_bolt:
 

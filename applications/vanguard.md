@@ -2,7 +2,8 @@
 
 - **Team Name:** Veridise
 - **Payment Address:** Ethereum: 0x0f8a5076a56b7ECD761562551FAd11DF631447B2 (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1069#issuecomment-1693802667)
 
 ## Project Overview :page_facing_up:
 

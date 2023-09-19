@@ -23,7 +23,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 | RFP | Last Updated |
 | :-- | :----------: |
-| [a-and-v-topology.md](RFPs/Open/a-and-v-topology.md) | 29.11.2021 |
 | [anti-collusion_infrastructure.md](RFPs/Open/anti-collusion_infrastructure.md) | 29.11.2021 |
 | [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 06.01.2023 |
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 07.10.2022 |
@@ -69,6 +68,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 | RFP | Last Updated |
 | :-- | :----------: |
+| [a-and-v-topology.md](RFPs/Closed/a-and-v-topology.md) | 04.09.2023 |
 | [appi.md](RFPs/Closed/appi.md) | 20.07.2021 |
 | [candle-auction.md](RFPs/Closed/candle-auction.md) | 02.02.2022 |  
 | [crowdloan_front_end_template.md](RFPs/Closed/crowdloan_front_end_template.md) | 25.04.2023 |  

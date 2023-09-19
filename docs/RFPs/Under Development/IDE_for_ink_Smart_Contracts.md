@@ -11,7 +11,7 @@ The goal of this RFP is to find teams that would like to maintain the browser-ba
 
 **Useful resources:**
 - [ink!](https://use.ink/)
-- [ink-playground](https://ink-playground.substrate.io)
+- ~~[ink-playground](https://ink-playground.substrate.io)~~ (no longer hosted)
 - [GitHub ink-playground](https://github.com/paritytech/ink-playground)
 - [GitHub: ink! Remix plugin](https://github.com/blockchain-it-hr/ink-remix-plugin)
 
