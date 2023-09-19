@@ -22,10 +22,15 @@ Architecture:
 
 Overview:
   A standard asset-tracking SDK will be built with the following layers:
-  - Blockchain layer: Access to the blockchain data source and crawl through the blocks from the genesis block, we will using using existing solution for crawling through the blockchain, Currently we are exploring subscan for this solution and these are self-hosted or we will connect to external RPC nodes for fetching the data.
-  - Middleware layer: Contains the crawlers/plugins through which we can crawl the blockchain and collect information about NFTs and write into the database and index it using elastic search. These indexers can index data based on the common NFR events and platform specific events for better data availability. This module can be a self hosted or SaaS this module can read and index any newer blockchain that adopts `pallet-nft` for the NFTs.
-  - API: This layer helps in fetching details of the blockchain from DB to the SDK, This is a transportation layer where it is fetching information from the DB based on the user commands. This module will also be self-hosted.
-  - SDK: This package will have all the necessary functions to fetch details about the NFT asset. Users will be able to download this package and query for the information of the asset on blockchain by providing various SDK command. This module will be essentially integrated at the client side.
+
+  - Blockchain layer: Access to the blockchain data source and crawl through the blocks from the genesis block, we will use using existing solution for crawling through the blockchain, we are exploring subscan for this solution and these are self-hosted or we will connect to external RPC nodes for fetching the data. We will be looking at subsquid for this solution.
+
+  - Middleware layer: Contains the crawlers/plugins which are written in typescript through which we can crawl the blockchain and collect information about NFTs write into the database and index it using elastic search. These indexers can index data based on the common NFR events and platform-specific events for better data availability. This module can be a self-hosted or SaaS this module can read and index any newer blockchain that adopts `pallet-nft` for the NFTs.
+
+  - API: This layer helps in fetching details of the blockchain from the DB to the SDK, This is a transportation layer where it is fetching information from the DB based on the user commands. This module will also be self-hosted. The API endpoints will be private and accessible through SDK, the API endpoints will be written using node(typescript)
+
+  - SDK: This package will have all the necessary functions to fetch details about the NFT asset. Users will be able to download this package and query for the information of the asset on blockchain by providing various SDK commands. This module will be essentially integrated on the client side. Essentially the SDK will written in typescript and deployed on the NPM marketplace.
+
 
 Technology stack: 
 - MongoDB 
@@ -102,19 +107,20 @@ This project will be a proof of concept (PoC) to demonstrate a particular use ca
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation |  We will provide both readme.md and official architectural documentation of the NFT scanner module |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | Dockerfiles and docker-compose.yml for running a development environment that locally spins up, which will be able to interact with the database to fetch the indexed information locally. |
 | **0e.** | Article | Add an article covering how to integrate NFT-SDK in a project. |
-| 1. | NFT Schema Development | Development of data models for the indexing of the NFT related extrinsic so that users can get compressive information of the NFT lifecycle  |
+| 1. | NFT Schema Development | Development of data models for the indexing of the NFT-related extrinsic so that users can get compressive information of the NFT lifecycle  |
 | 2. | Collection schema development | Development of NFT-collection schema models |
 | 3. | NFT fractionalization schema development | Development of fractionalization schema models |
 | 4. | NFT lifecycle schema development | Developing schema models for the NFT lifecycle, which includes the ownership, transfer, locking, or fractionalization of NFT |
 | 5. | NFT pallet event indexer  | Development of the module to monitor the latest block generation via subsquid |
 | 6. | Asset pallet event and fractionalization indexer  | Development of the module to monitor the pallet NFT actions and NFT fractionalization pallet actions |
 | 7. | Integration of subsquid  | Using subsquid to get the latest block information  |
-| 8. | Implementation of APIs  | Development of endpoints which can ge used for SDKs request to fetch more details about the NFT lifecycle  |
-| 9. | Implementation of SDK  | Develop SDK to facilitate the users call to actions |
+| 8. | Implementation of APIs  | Development of endpoints that can ge used for SDKs request to fetch more details about the NFT lifecycle  |
+| 9. | Implementation of SDK  | Develop SDK to facilitate the user's call to action |
 | 10. | NFT indexer module | Index all the data that is scanned by the scanner module and pass it to the database layer. |
-| 11. | Design and development of the NFT provenance SDK | A typescript-based SDK which consists of API calls to the database to fetch the NFT lifecycle. |
-| 12. | Technical Documentation for the SDK | We will provide a technical doc outlining the process of integrating the SDK to other projects. |
+| 11. | Design and development of the NFT provenance SDK | A typescript-based SDK that consists of API calls to the database to fetch the NFT lifecycle. |
+| 12. | Technical Documentation for the SDK | We will provide a compressive technical document outlining the process of integrating the SDK, available functionality, and data model types of the data that is fetched.  |
 
 ## Future Plans
 
@@ -136,3 +142,8 @@ We have envisioned this project as a more generic use case for our larger projec
 > Please expand the Ecosystem Fit section to explain who your target audience is and how this project compares to similar, existing ones.
 
 Our target audience is basically the parachains and projects in the Polkadot ecosystem who are working with NFTs and possibly refungibility of NFT's to fungible tokens and make their lives simpler by providing an open source tool to track the entire lifecycle of their assets. Also upcoming parachains like Metaquity Network (ours) and others can use this to build these provenance use cases which will eventually give rise to more effective collaborations between the DeX's and the parachains.
+
+
+do we need a docker container to deploy it? if so how do we explain for this 
+https://github.com/w3f/Grants-Program/pull/1832/files#r1315532129
+and https://github.com/w3f/Grants-Program/pull/1832#discussion_r1315531937
