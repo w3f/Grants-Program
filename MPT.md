@@ -1,8 +1,8 @@
 # Marco Polo Technologies - The alternative finance infrastructure on web3
 
 - **Team Name:** Marco Polo Technologies
-- **Payment Address:** network and token address tbd
-- **Level:** 2 or 3
+- **Payment Address:** Network and token address **to be added**
+- **Level:** 2 or 3?
 
 ## Project Overview :page_facing_up:
 
