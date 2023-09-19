@@ -11,7 +11,9 @@ Empowering Connections on the Decentralised Web: SubFlow, Your Smart Social Netw
 
 ### Overview
 
-SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. It will offer a seamless experience for sharing multimedia content, engaging with other users through such interactions as "likes" and comments, and conducting direct token transfers. 
+With the growth of the Democratic deficit, the rise of autocracy and the total disability of the overgrown bureaucracy all over the world, the same trends are evident in the structure of the internet and today's social media platforms.
+
+SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. The protocol will be distinguished from other platforms (such as Lens protocol) by its foundation of decentralised ownership and censorship resistance. It will offer a seamless experience for sharing multimedia content, engaging with other users through such interactions as "likes" and comments, and conducting direct token transfers. 
 
 SubFlow will be developed as a set of Smart Services, providing users the ability to interact with other users through communication, as well as interact with other services in the Polkadot ecosystem based on an open API: marketplaces (showcasing, buying, and selling NFTs), DeFi services (buying and exchanging tokens), games (authorisation, messaging), and so on.
 
@@ -26,8 +28,8 @@ The system consists of two parts:
 
 The functionality of the system can be divided into three logical user roles:
 
-- Reader functionality
 - Author functionality
+- Reader functionality
 - System administrator functionality
 <br>
 <p align="center">
@@ -35,7 +37,7 @@ The functionality of the system can be divided into three logical user roles:
 </p>
 <br> 
 <p align="center">
-<code>Use Case Diagram</code>
+<code>SubFlow: Use Case Diagram</code>
 </p>
 <br>
 
@@ -59,7 +61,7 @@ Other Smart-Services provide additional functionality, for example:<br>
 </p>
 <br>
 <p align="center">
-<code>SubFlow Components</code>
+<code>SubFlow: Component Diagram</code>
 </p>
 <br>
 
@@ -67,10 +69,10 @@ Other Smart-Services provide additional functionality, for example:<br>
 ### Technology Stack
 
 - ink! Smart Contracts
+- Rust
 - Substrate
-- html/css/js for the frontend
-- All code produced will be open-sourced under the MIT license
-- There are no plans for issuing a dedicated token at the moment
+- IPFS
+- html/css/js/frameworks for the frontend
 
 
 ### Ecosystem Fit
@@ -145,7 +147,7 @@ In short (kind of), generally speaking, a decentralised free social network is i
 
 - **German Korjagin** <br>15 years of experience in data science, analytics, software and business development. Expertise in cyber security, digital payments and analytics. Proficient knowledge of blockchains and DAGs.<br>
 
-- **Sergei Pangin** <br>Backend developer from Java's first release (1996). Soon-30 years of experience in legacy software, blockchains and other DLTs like IOTA. Proficient in legacy software and financial services development, with in-depth knowledge of IOTA, Ethereum, and Tezos platforms.
+- **Sergei Pangin** <br>Skilled and qualified software developer with 20+ years of experience and the practice of software design, project management and team leading,  proficient in financial services development, with in-depth knowledge of IOTA, Ethereum, and Tezos platforms.
 
 - **Slava Puganov** <br> Adaptable Full-Stack developer specialising in front-end and back-end development. Expertise in fintech, cyber security and
 software architecture, ensuring robust and secure software solutions.<br>
@@ -221,7 +223,7 @@ The team plans to release the system sequentially in two versions:<br>
 
 ## Future Plans
 
-**1. Registration Smart-service (working title - identikit);** <br>
+**1. Registration Smart-service (working title - identikit)** <br>
 - NFT/SBT user account-profile functionality development;
 - Plug-and-play system development for the purpose of integrating different services within the Polkadot ecosystem;
 - Separating the functionality into a standalone service (working title - “identikit");
@@ -229,20 +231,19 @@ The team plans to release the system sequentially in two versions:<br>
 - Audit of the service;
 - Opensource’ing it all.
 
-**2. New SubFlow structure.** <br>
+**2. New SubFlow structure** <br>
 - Personal service-contract: 
-  - Implementing a separate user-specific smart contract to enable decentralised data processing and ownership. Users will have control over their data and can assign roles to others, customising their service according to their needs;
+  - Implementing a separate user-specific smart contract to enable decentralised data processing and ownership. Users will have control over their data and can assign roles to others, customising their service according to their needs.
   - This will enhance security and facilitate future feature development.
+- NFT-posting (possibility to mint NFT-post (text, images, etc.) directly from the user's personal service contract.
  
 **3. Integrations** <br>
 - New structure will allow development and launch of API for interacting with other blockchain services such as SubSocial and SubSquid (and othrers).
 
 
-**4. New functionality:** <br>
-- NFT-posting (possibility to mint NFT-post (text, images, etc.) directly from the user's personal service contract.
-- Extended functionality for token transfers.;
-- Advertising smart service development for the direct interaction between creators and advertisers;
-- Encrypted direct messaging similar to DMs on Twitter… 
-  - …In case of an apocalypse or failure of conventional messenger servers, a user will still be able to send messages through the decentralised Polkadot blockchain :)
+**4. New functionality and Integrations** <br>
+- New structure will allow development and launch of API for interacting with other blockchain services such as SubSocial and SubSquid (and othrers).
+- Extended functionality for token transfers.
+- Integration of an already existing service in the Polkadot ecosystem for voting.
+- Advertising smart service development for the direct interaction between creators and advertisers.
 - User interface web updates.
-
