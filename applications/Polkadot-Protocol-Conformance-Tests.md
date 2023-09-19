@@ -142,7 +142,6 @@ Outlined below are the testing scenarios for each Host module that will be the f
 | 4. | BABE Research | Research the feasibility of using Zombienet for conducting BABE tests. |
 | 5. | GRANDPA Research | Research the feasibility of using Zombienet as the framework for conducting GRANDPA tests. |
 | 6. | Research Findings | A research document will be delivered documenting the team’s findings, as well as outline a high-level path forward for the conformance testing suite. |
-| 7 | PoC development | Create one test for each module from the previous steps if the research outcome indicates that it’s possible. |
 
 ## Future Plans
 
