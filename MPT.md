@@ -88,7 +88,7 @@ The team combined experience spaces from software architecture and development i
 
 MPT is a private project and its repositories are kept private, we have shared links to some of our current and previous projects within this application.
 
-We will be working and updating this repository in the context of the current grant application: https://github.com/MarcoPoloTechnologies/platform-chain
+We will be providing and updating an _ad hoc_ repository in the context of the current grant application.
 
 ## Development Status :open_book:
 
