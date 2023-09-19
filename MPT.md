@@ -1,7 +1,7 @@
-# Marco Polo Technologies - The alternative finance infrastructure to web3
+# Marco Polo Technologies - The alternative finance infrastructure on web3
 
 - **Team Name:** Marco Polo Technologies
-- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** network and token address tbd
 - **Level:** 2 or 3
 
 ## Project Overview :page_facing_up:
@@ -14,7 +14,7 @@
 
 Marco Polo Technologies (MPT) is an infrastructure company that provides the foundational elements for alternative finance platforms, instruments, and mechanisms, with a focus on serving participants in private markets. Our modular and secure infrastructure supports global policymakers' priorities, such as investor protection and KYC/AML/KYB requirements, while preventing market manipulation. We are also developing a user-friendly UI architecture to enable non-tech-savvy clients to rapidly create alternative finance platforms through an intuitive *drag-and-drop* experience.
 
-MPT infrastructure enables businesses to expand into underserved markets by connecting real-world assets to any investor class and finance managers. Our ongoing efforts harness the synergy between asset owners, investors, and issuers to facilitate transformative changes in the alternative finance markets, turning them into public-like, frictionless models. MPT bridges the gap between traditional finance, DeFi, and modern web3 infrastructure needed to support the flow of new liquidity from private and offline markets to web3, while increasing the transparency, accessibility, and inclusivity of digital private market investments.
+MPT infrastructure enables businesses to expand into underserved markets by connecting real-world assets to any investor class and finance managers. Our ongoing efforts harness the synergy between asset owners, investors, and issuers to facilitate transformative changes in the alternative finance markets, turning them into public-like, frictionless models. MPT bridges the gap between traditional finance, DeFi, and modern web3 infrastructure needed to support the flow of new liquidity from private and offline markets to web3, while increasing the transparency, accessibility, and inclusivity of digital private investments.
 
 #### Marco Polo Technologies, Substrate and Polkadot - A brief description of our project.
 
