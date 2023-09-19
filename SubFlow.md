@@ -77,8 +77,13 @@ Other Smart-Services provide additional functionality, for example:<br>
 
 ### Ecosystem Fit
 
-Decentralised social networks are resistant to censorship. As the number of regions where internet censorship is a concern is not decreasing (in fact, we see opposite processes going on), we believe that SubFlow as a product will have a possibility to expand the user base of the Polkadot ecosystem.<br>
-In short (kind of), generally speaking, a decentralised free social network is important because it expands the ecosystem's use cases, increases user engagement, highlights cross-chain interoperability, aligns with principles of privacy and data ownership, fosters community and governance, drives innovation in Substrate, and provides a censorship-resistant platform.
+Decentralised social networks are resistant to censorship, making them a valuable tool in areas where internet censorship is a concern. The growth of such censorship is concerning, but SubFlow can expand the use cases of the Polkadot ecosystem, increase user engagement, highlight cross-chain interoperability, and support privacy and data ownership.<br>
+
+The SubFlow team has already started working with Subsquid and SubSocial to conduct a deep dive into the Polkadot ecosystem and assess the product fit of SubFlow. We are in constant communication about both corrections to the technological structure of the protocol and updates of this Grants-Program application daily, and these two projects are already part of the SubFlow development plans.<br>
+
+In addition to Subsquid and SubSocial, we have identified several other potential partners for collaboration. We plan to make contact with them shortly because we fully understand and believe that the decentralised future is only possible through the collaboration of decentralised teams and the automation of services. That is why we chose the structure of Smart Services and the Polkadot ecosystem, which is known for its independence, activity, and support of developers.
+
+
 
 ## Demo: Web UI ##
 
