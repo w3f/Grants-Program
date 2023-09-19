@@ -12,14 +12,14 @@ The objective of this grant is to develop an open-source monitoring service usin
 
 ## Project Details
 
-The service will support bidirectional XCM reserve-based transfers between selected parachains.
+The service will support bidirectional XCM transfers, namely asset teleports and reserve-based transfers, between selected parachains.
 
 The flow of the monitoring will work as follows:
 
 1. The service will monitor on the origin chain for the event `xcmpqueue.xcmpMessageSent` associated to the extrinsic sent by accounts of interest. The service will extract the XCM message hash from this event.
-3. The service will query the storage in `parachainSystem.hrmpOutboundMessages` at the block of the event to get all outbound messages and filter for recipient chain IDs that are supported. Subsequently it will decode the message data to get the set of XCM instructions to filter for combinations of instructions related to reserve-based transfers (i.e. `ReserveAssetDeposited`, `WithdrawAsset`, and `DepositAsset`). Then, it will get the `blake2-256` hash of the message data to match it with the message hash obtained in Step 1. The service will store a persistent task to be matched in subsequent steps.
-4. At the destination chain, the service will monitor for the events `xcmpqueue.success` and `xcmpqueue.fail`. It will match the message hash extracted from these events with the message hash of the origin.
-5. It will send a notification to the configured webhook to inform of the status of the XCM transfer along with contextual information. See section [Notifications](#notifications) for details.
+2. The service will query the storage in `parachainSystem.hrmpOutboundMessages` at the block of the event to get all outbound messages and filter for recipient chain IDs that are supported. Subsequently it will decode the message data to get the set of XCM instructions to filter for combinations of instructions related to asset teleports or reserve-based transfers (i.e. `ReserveAssetDeposited`, `ReceiveTeleportedAsset`, `WithdrawAsset`, and `DepositAsset`). Then, it will get the `blake2-256` hash of the message data to match it with the message hash obtained in Step 1. The service will store a persistent task to be matched in subsequent steps.
+3. At the destination chain, the service will monitor for the events `xcmpqueue.success` and `xcmpqueue.fail`. It will match the message hash extracted from these events with the message hash of the origin.
+4. It will send a notification to the configured webhook to inform of the status of the XCM transfer along with contextual information. See section [Notifications](#notifications) for details.
 
 Before using the service, users will need to configure the supported networks and connection providers. An example configuration can be found in the section [Service Configuration](#service-configuration). We will support connections to the network using both RPC clients and light clients. Further details on supported Substrate clients can be found in the [Supported Substrate Clients](#supported-substrate-clients) section.
 
@@ -29,7 +29,7 @@ To keep the project manageable, the current scope includes support for Asset Hub
 
 ### Notifications
 
-As previously mentioned, the monitoring service will accept webhook endpoints for delivering notifications. Initially, notifications will be provided for XCM message reception (or the lack thereof).
+As previously mentioned, the monitoring service will accept webhook endpoints for delivering notifications. Initially, notifications will be provided for XCM message reception.
 
 The following types of notifications correspond to different scenarios:
 
@@ -149,9 +149,9 @@ We will support WebSocket RPC endpoints and light clients. However, please note 
 
 During preliminary testing, we identified some limitations:
 
-1. Using the Smoldot through Subtrate-Connect only support bootnodes configured with secure WebSocket connection. In our exploration, we've seen that only Astar and Acala have bootnodes with secure WebSocket connections. However, it is easy to overcome this limitation since Smoldot supports all the connection types. Reference: [Github issue](https://github.com/smol-dot/smoldot/issues/1152)
-   
-2. Some runtimes, such as Moonbeam, currently cannot be compiled by the light client. Reference: [Github issue](https://github.com/paritytech/substrate-connect/issues/1543)
+1. Using the Smoldot through Subtrate-Connect only support bootnodes configured with secure WebSocket connection. In our exploration, we've seen that only Astar and Acala have bootnodes with secure WebSocket connections. However, it is easy to overcome this limitation since Smoldot supports all the connection types. Reference: [Github issue](https://github.com/paritytech/substrate-connect/issues/1543)
+
+2. Some runtimes, such as Moonbeam, currently cannot be compiled by the light client. Reference: [Github issue](https://github.com/smol-dot/smoldot/issues/1152)
 
 We will prioritize chains that are light client ready.
 
@@ -239,7 +239,7 @@ N/A
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic guide that explains how to set up and run the monitoring service. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker        | We will provide a Dockerfile to ease the deployment and execution of the service. A Docker image of the service will be published in Docker Hub and Github Container Repository. |
-| 1. | XCM Monitoring Service | The XCM monitoring service that supports XCM reserve-based transfers between the following parachains: Asset Hub, Astar and Acala. The service will feature what was described in [Project Details](#project-details). |
+| 1. | XCM Monitoring Service | The XCM monitoring service that supports asset teleports and reserve-based transfers between the following parachains: Asset Hub, Astar and Acala. The service will feature what was described in [Project Details](#project-details). |
 | 2. | Management Tools | Administrator scripts to inspect and delete pending XCM messages matching and notification tasks, as described in [Management Tools](#management-tools). |
 
 ## Future Plans
@@ -248,11 +248,9 @@ For the XCM monitoring service, we have plans to expand its capabilities and rea
 
 1. **Support for More Networks:** We plan to broaden the range of networks supported by the XCM monitoring service, enabling a more extensive and inclusive monitoring ecosystem.
   
-2. **Support for More XCM Instructions:** We plan to support more XCM instructions, such as the ones related to asset teleport.
+2. **Support for More XCM Protocols:** We will add support for XCMP when ready.
 
-3. **Support for More XCM Protocols:** We will add support for XCMP when ready.
-
-4. **Enhanced Notifications:** Depending on user requirements and community feedback, we will extend our notification capabilities. This may involve providing notifications for asset transfers' initiation, such as when the block containing the XCM transfer is finalized on the origin chain. We are also considering notifications for when XCM messages sent through HRMP are processed on intermediate chains.
+3. **Enhanced Notifications:** Depending on user requirements and community feedback, we will extend our notification capabilities. This may involve providing notifications for asset transfers' initiation, such as when the block containing the XCM transfer is finalized on the origin chain. We are also considering notifications for when XCM messages sent through HRMP are processed on intermediate chains.
 
 Our long-term vision for Ocelloids extends beyond just monitoring XCM transfers. We aim to create a hassle-free, comprehensive monitoring portal for Substrate networks and smart contracts within the ecosystem. This portal will offer a set of advanced features, including:
 
