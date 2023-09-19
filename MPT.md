@@ -118,7 +118,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests or it . |
 | 1. | Initial version of the blockchain | Setting up a generic alternative finance focused blockchain. |
-| 2. | Initial functionalities | Setting up block production, transaction validation, and block finalization. |
+| 2. | Initial functionalities | Explore the initial concept of block production, transaction validation, and block finalization in our context. |
 | 3. | Initial attributes | Start to develop MPT chain initial attributes, which may include creating a native token for the MPT chain, configuring a governance model, and deploying the needed pallets. |
 | 4. | MPT chain | Leveraging existing pallets and primitives to implement a consensus mechanism, and a basic use of  assets and transactions. Possible pallets to be used across the project are: pallet_balances, pallet_assets, pallet_grandpa, pallet_contracts, pallet_identity, pallet_accounts. |
 
@@ -133,9 +133,10 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0a.** |  License | MIT|
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Initial token development | In order to issue and trade tokens we will need to deploy and execute smart contracts; private markets have their own set of pre-established rules, we will implement a basic version of such rules at this stage. |
-| 2. | Assets | Balances of assets and their values are stored in executable smart contracts. |
-| 3. | MPT chain | Issuing and trading of a tokens, storage and management of asset balances, with a smart contract execution. |
+| 1. | Initial token development | In order to issue and trade tokens we will explore smart contracts usage; private markets have their own set of pre-established rules, and we will implement a basic version of such rules at this stage. |
+| 2. | Assets | Balances of assets and their values to be stored and managed. |
+| 3. | Fees | Fees exploration to support products' tokenomics. |
+| 3. | MPT chain | Issuing and trading of a tokens, storage and management of asset balances, with smart contract exploration. |
 
 ### Milestone 3
 
@@ -149,8 +150,8 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0b.** | Documentation | We will provide the inline documentatio of the code that explains how to initially set up a wallets in the context of multiple users owning multiples assets. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0e. | Article | We will publish an article that explains how to set up a blockchain specifically developed to support the creation of digital private markets for private companies that want to represent, issue and exchanged their underlying assets (e.g. SMEs shares, real estate, collectibles, etc.) |
-| 1. | New accounts and management | Create a new account, transfer funds between accounts, and interact with smart contracts. |
-| 2. | Identity and associated asset | Create and manage accounts' identities, associate identities with accounts, and verify identities. Check what assets are represented by the tokens. |
+| 1. | Accounts creation and management | Account creation, transfer funds between accounts, and explore smart contracts intractions. |
+| 2. | Identity and associated asset | Associate *Substrate* accounts to perform transactions on tokens. |
 | 3. | MPT chain | Develop APIs to allow users to interact with the balances and assets. |
 | 5. | MPT chain repository | We will deliver git-hub repository with the description of our initial implementation and its use and potential. |
 
