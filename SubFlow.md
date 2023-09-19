@@ -241,12 +241,8 @@ The team plans to release the system sequentially in two versions:<br>
   - Implementing a separate user-specific smart contract to enable decentralised data processing and ownership. Users will have control over their data and can assign roles to others, customising their service according to their needs.
   - This will enhance security and facilitate future feature development.
 - NFT-posting (possibility to mint NFT-post (text, images, etc.) directly from the user's personal service contract.
- 
-**3. Integrations** <br>
-- New structure will allow development and launch of API for interacting with other blockchain services such as SubSocial and SubSquid (and othrers).
 
-
-**4. New functionality and Integrations** <br>
+**3. New functionality and Integrations** <br>
 - New structure will allow development and launch of API for interacting with other blockchain services such as SubSocial and SubSquid (and othrers).
 - Extended functionality for token transfers.
 - Integration of an already existing service in the Polkadot ecosystem for voting.
