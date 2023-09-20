@@ -1,4 +1,4 @@
-# Tokenomics Scoping Review: Annotated Bibliogrphy
+# Tokenomics Scoping Review: Annotated Bibliography
 
 - **Team Name:** Mark Van de Vyver [PhD(Dist)](https://www.student.uwa.edu.au/course/award-verification-service?family=van+de+vyver&family_partial=on&given=mark&search=Search)
 - **Payment Address:** 15WoVugRLfBAogS1FBmhzxVv8WZqZK1z4KKHALijTZfdVcCm (USDC)
@@ -11,7 +11,7 @@
 A annotated bibliography of rational expectations equilibrium (a.k.a. no-arbitrage) economic models used to develop blockchain/token economies, as well as the tokenomics of Polkadot Parachains.
 
 This is a survey, hence limited to topics the existing literature addresses. Within the scope of the deliverables, I am not committing to solving any particular token-economy design question.
-The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent).
+The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [ResearchGate](https://www.researchgate.net/publication/373739562_Tokenomics_Scoping_Review_Annotated_Bibliography).
 
 - Description:
   The decision making of developers (and other stakeholders) is assisted if a hypothetical/proposed token-economy can be described by reference, or analogy, to a known working/successful token-economy. Absent an existing implementation, developers are left to invent a token-economy, try to adapt an existing non-blockchain experience to a blockchain, or try to adapt non-blockchain ideas to a blockchain.
@@ -111,7 +111,7 @@ The grants team, and any reader could reproduce the data analysis by applying th
 
 ### Intended venue for results publication and the timeline for publication
 
-The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent).
+The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [ResearchGate](https://www.researchgate.net/publication/373739562_Tokenomics_Scoping_Review_Annotated_Bibliography).
 
 ### Out of scope
 
@@ -281,7 +281,7 @@ Finalize the flow-chart/decision-tree that will help developers place their toke
 
 Finalize the annotated bibliography.
 Promote the working paper, incorporate feedback.
-The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent).
+The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [ResearchGate](https://www.researchgate.net/publication/373739562_Tokenomics_Scoping_Review_Annotated_Bibliography).
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -296,14 +296,14 @@ The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Rese
 | **0e.4**   |  - Appendix: Methodology  | The research methodology.  Text and tables where relevant/appropriate. |
 | **0e.5**   |  - Section: Summary                | Where are we and where to next? |
 | 1. | Feedback | Collect published, working and network papers, as described in the methodology section above |
-| 2. | Publish | The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent) |
+| 2. | Publish | The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [ResearchGate](https://www.researchgate.net/publication/373739562_Tokenomics_Scoping_Review_Annotated_Bibliography) |
 
 ## Future Plans
 
 Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
-  - The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent) and the Polkadot forum.
+  - The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/),[ResearchGate](https://www.researchgate.net/publication/373739562_Tokenomics_Scoping_Review_Annotated_Bibliography).
 - the team's long-term plans and intentions in relation to it.
   - W3F Grant Proposal to implement and document one token model as an example/template of building a blockchain on the W3F [Open Web3 Stack](https://github.com/open-web3-stack) having known 'on-paper' coin characteristics.
   - Create RFP's addressing pallet functionality gaps that are identified in the course of the above.
