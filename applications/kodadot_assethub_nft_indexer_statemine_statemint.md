@@ -27,7 +27,7 @@ To overcome these challenges, we have developed the AssetHub Indexer. This tool 
 
 Recognizing that many web developers may not have extensive experience with GraphQL, we have also built a TypeScript-based SDK that can be easily imported into any existing project. This SDK simplifies interacting with Uniques and Assets on Statemine, making it more accessible for developers of all skill levels.
 
-The AssetHub Indexer uses TypeScript and leverages the Squid framework for data processing. It interacts with a Postgres database and provides a GraphQL interface for querying data. The project structure includes directories for generated model/server definitions, server extensions, data type definitions, and mapping modules. It also uses environment variables defined in a .env file or supplied by a shell for configuration.
+The AssetHub Indexer uses TypeScript and leverages the Squid framework (ArrowSquid) for data processing. It interacts with a Postgres database and provides a GraphQL interface for querying data. The project structure includes directories for generated model/server definitions, server extensions, data type definitions, and mapping modules. It also uses environment variables defined in a .env file or supplied by a shell for configuration.
 
 Currently, the AssetHub Indexer allows developers to interact with Uniques and Assets on Statemine using GraphQL. The project is designed to be as simple as possible, ensuring all tasks can be done quickly and without extended searching. We aim to reduce the time necessary to query fungible and non-fungible assets on AssetHub, making it easier for developers to build innovative and user-friendly decentralized apps.
 
@@ -37,7 +37,7 @@ The architecture of the AssetHub Indexer is designed with simplicity and efficie
 
 At the core of our architecture is TypeScript, a statically typed superset of JavaScript that adds optional types to the language. TypeScript ensures robustness and reliability in our codebase, allowing us to catch errors early in the development process and write more maintainable code.
 
-To handle data processing, we leverage the Squid framework. Squid is a powerful tool allowing us to process and index blockchain data efficiently. It provides a set of utilities for defining and running data processing tasks, making handling complex data processing requirements easier.
+To handle data processing, we leverage the ArrowSquid framework. ArrowSquid is a powerful tool allowing us to process and index blockchain data efficiently. It provides a set of utilities for defining and running data processing tasks, making handling complex data processing requirements easier.
 
 Our project interacts with a Postgres database, a powerful, open-source object-relational database system that uses and extends the SQL language. Postgres provides us with the robustness, scalability, and performance we need to handle large amounts of data.
 
@@ -61,7 +61,7 @@ The second state-of-the-art is our Client-first SDK called Uniquery. As we can s
 - TypeScript
 - Node.js
 - Docker
-- SubSquid
+- SubSquid (ArrowSquid for Substrate)
 - Postgres
 - GraphQL
   
@@ -137,7 +137,7 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 ## Milestone 1 - AssetHub Indexer Implementation first part
 - **Estimated duration:**  3 months ⌛️
 - **FTE:**  2 FTE
-- **Costs:**  30,000 USD 💰
+- **Costs:**  25,000 USD 💰
 
 
 | Sequence | Deliverable                                         | Description                                                                                                   |
