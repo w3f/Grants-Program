@@ -3,6 +3,7 @@
 - **Team Name:** Fuu
 - **Payment Address:** 13u5kLGrt4n1Smc78ZXtYVedgp1U1LyGAAHtPFtVcv6Z1BtR (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **Status:** On hold
 
 
 ## Project Overview :page_facing_up:
