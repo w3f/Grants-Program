@@ -156,14 +156,15 @@ Working on Rust Telegram bot.
 
 |  Number | Deliverable               | Specification                                                                                                                                                   |
 | ------: | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                   | MIT                                                                                                                                                             |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a **tutorial**.|
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a **tutorial**.|
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-|     1a. | Bot setup | Telegram bot in rust.|
-|     1b. | Generate Sr25519 keypairs | The bot should be capable of creating multiple wallets, importing and exporting private keys safely. Private keys should be protected by a passphrase similar to metamask.|
-|     1c. | RPC connection | The bot integrates with polkadot testnet RPC Rococo.|
-|      2. | Landing Page for SEO| Landing Page in NextJs that links to the telegram bot for the SEO purposes.|
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
+| 1a. | Bot setup | Telegram bot in rust that runs on cloud.|
+| 1b. | Generate Sr25519 keypairs | The bot should be capable of creating multiple wallets, importing and exporting private keys safely.  |
+| 1c. | Encrypt private key and store on cloud | Encrypt the private key using AES-256-CBC encryption with a random Initialization Vector (IV) and a chosen password. |
+| 1d. | RPC connection | The bot integrates with polkadot testnet RPC Rococo.|
+| 2. | Landing Page for SEO | Landing Page in NextJs that links to the telegram bot for the SEO purposes.|
 
 ### Milestone 2 — Additional features
 
@@ -173,13 +174,13 @@ Working on Rust Telegram bot.
 
 |  Number | Deliverable               | Specification                                                                                                                                                   |
 | ------: | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                   | MIT                                                                                                                                                             |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial**.                                                                             |
+| **0a.** | License| MIT |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial**. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-|     0e. | Article | We will publish an **article** that explains how to use TradeCoin and how it was build.|
-|      1a. | Mainnet Network access | We will access mainnet rpc from the bot and process live data on the server to make rust client as lightweight as possible.|
-|      1b. | DeFi integration | We will connect to at least two DeFi protocols such as Parallel Finance / HydraDX / etc. with XCM and conduct multiple trades with just one click.|
+| **0e.** | Article | We will publish an **article** that explains how to use TradeCoin and how it was build.|
+|  1a. | Mainnet Network access | We will access mainnet rpc from the bot and process live data on the server to make rust client as lightweight as possible.|
+|  1b. | DeFi integration | We will connect to at least two DeFi protocols such as Parallel Finance / HydraDX / etc. with XCM and conduct multiple trades with just one click.|
 
 ## Future Plans
 
