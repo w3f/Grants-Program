@@ -265,7 +265,6 @@ For this proposal we focus on building and streamlining the process of setting u
 | 2. | Development of One Click Parachain Deployment Feature on Dedicated server | Development of Dedicated Node Provider Marketplace |
 | 3. | Improve UX Analytics Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. | Log Dashbooard | Ability to filter logs by different Log Levels | Setup Dashboard: We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
 | 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  Successful security and performance audit of the platform | 
-
 | 5. | Deployment Guide	 | A detailed guide on how users can deploy the block-agent across various node environments, ensuring compatibility and ease of setup. |
 
 
