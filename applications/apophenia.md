@@ -126,8 +126,8 @@ Ultimately, our goal is to provide a **native** oracle solution to the DotSama e
 
 ### Contact
 
-- Arthur Franco Moreira: afm2@duck.com
-- Faisal Al Tameemi: faisal.al.tameemi@gmail.com
+- **Contact Name:** Arthur Franco Moreira
+- **Contact Email:** afm2@duck.com
 
 ### Legal Structure
 
