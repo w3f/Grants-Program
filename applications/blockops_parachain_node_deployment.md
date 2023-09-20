@@ -237,7 +237,6 @@ For this proposal we focus on building and streamlining the process of setting u
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up parachains through a one-click setup. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-
 | 0e. | Article | Using our communication channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
 | 1. | Completion of the initial development phase of the one-click feature. | Development of One Click Parachain Deployment Feature on GCP, AWS & Digital Ocean | Alpha testing | User Centric Sleek Interface Design |
 | 2. | Node type support | Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain |
