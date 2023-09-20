@@ -37,12 +37,12 @@ In its current stage, the platform is composed of a knowledge base (KB) and its 
 [4] Polkadot Analytics Platform source code: https://github.com/mobr-ai/PolkadotAnalytics 
 
 
-> An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+**An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.**
 
 The Polkadot Analytics Platform will use the Substrate blockchain framework and Polkadot ecosystem components to extract, store, structure and process data in order to present it in a user-friendly manner. It will leverage the POnto ontology to enable efficient knowledge organization and retrieval. A CNL querying engine will facilitate natural language queries on the ecosystem's data, making it accessible to a broader target audience.
 
 
-> An indication of why your team is interested in creating this project.
+**An indication of why your team is interested in creating this project.**
 
 Our team is committed to research and develop Web3 technologies, supporting the growth of the Polkadot community. By building the Polkadot Analytics Platform, we aim to provide valuable insights, enhance user experience, and enable seamless data exploration for developers, users, and stakeholders. We are enthusiastic about creating user-centric solutions and pushing the boundaries of knowledge-oriented approaches in the blockchain space.
 
@@ -50,7 +50,7 @@ Our team is committed to research and develop Web3 technologies, supporting the 
 
 ### Project Details
 
-> Mockups/designs of any UI components
+**Mockups/designs of any UI components**
 
 Figure 1 presents an overview of how the Polkadot Analytics Platform main components are integrated with its UI and how users can interact with it. 
 
@@ -67,28 +67,29 @@ The platform comprises information extraction processes capable of constructing 
 ![PAP_overview](https://github.com/rbrandao/Grants-Program/assets/779451/f50051f7-4dbe-474d-96b7-8418cd438e7b)
 Figure 1 - Mockup of how the Polkadot Analytics Platform main components are integrated with its UI
 
-> Data models / API specifications of the core functionality
+**Data models / API specifications of the core functionality**
+
 Data model will reflect the POnto structure. Extracted data will be transformed and injected in a triplestore database. 
 
 The API specifications will provide a standardized way for users to interact with the Polkadot Analytics Platform, allowing them to query specific data, create visualizations, and manage their dashboards effectively. The API will be designed to interact with the knowledge base (i.e. underlying triplestore database), allowing users to access and query the data based on the POnto ontology. The endpoints will provide information about ontology entities (e.g., blocks, extrinsics, etc.), querying support, dashboard setup, informative artifacts, and others.
 
 
-> An overview of the technology stack to be used
+**An overview of the technology stack to be used**
 
-**Data processing**: Python and Apache Airflow
+- **Data processing**: Python and Apache Airflow
 
-**Triplestore database**: Apache Jena and Fuseki
+- **Triplestore database**: Apache Jena and Fuseki
 
-**Knowledge representation and querying**: OWL, RDF and SPARQL
+- **Knowledge representation and querying**: OWL, RDF and SPARQL
 
-**Information extraction, NLP, and other backend pipelines**: Python, NLTK
+- **Information extraction, NLP, and other backend pipelines**: Python, NLTK
 
-**UI and client-side integration**: Node.js, JavaScript, and Angular/React
+- **UI and client-side integration**: Node.js, JavaScript, and Angular/React
 
-**Interaction with relay chains and parachains**: Substrate interfaces like Polkadot{.js} 
+- **Interaction with relay chains and parachains**: Substrate interfaces like Polkadot{.js} 
 
 
-> Documentation of core components, protocols, architecture, etc. to be deployed
+**Documentation of core components, protocols, architecture, etc. to be deployed**
 
 
 The platform's architecture (see Figure 2) follows a modular and scalable design to accommodate future expansions and improvements.
@@ -129,7 +130,7 @@ Ecosystem layer
 The Polkadot ecosystem has in its core a decentralized network of interconnected blockchains (aka Parachains), and it consists of multiple components. Each component generates data related to blocks, transactions, events, and other relevant information. The proposed platform will interact with the available tools, libraries and SDK to access and manage ecosystem data.
 
 
-> PoC/MVP or other relevant prior work or research on the topic
+**PoC/MVP or other relevant prior work or research on the topic**
 
 Prior to this application, the team has conducted scientific research to create an ontology  [1, 2, 3, 4] that represents the main concepts and relationships of the Polkadot Ecosystem. This ontology is key to the proposed data analysis platform. The team has also concluded the first stage of this platform [5], building the foundation of the analytics platform with its initial knowledge base. 
 
@@ -144,11 +145,11 @@ Prior to this application, the team has conducted scientific research to create 
 [5] Polkadot Analytics Platform source code: https://github.com/mobr-ai/PolkadotAnalytics 
 
 
-> What your project is _not_ or will _not_ provide or implement
+**What your project is _not_ or will _not_ provide or implement**
 
 This project is not focused on tokenomics, marketing, or business-oriented activities. It will not involve creating tokens or launching a separate business venture.
 
-> This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+**This is a place for you to manage expectations and to clarify any limitations that might not be obvious**
 
 This is the second stage in the roadmap to build the Polkadot Analytics Platform, which comprises a subset of its components. Specifically: 
 
@@ -186,24 +187,24 @@ The Polkadot Analytics Platform will be an analytics tool. While it will provide
 
 ### Ecosystem Fit
 
-> Where and how does your project fit into the ecosystem?
+**Where and how does your project fit into the ecosystem?**
 
 The Polkadot Analytics Platform will fill a critical gap in the ecosystem by providing users with a comprehensive analytics solution. It integrates with Substrate to access blockchain data and aligns it with the POnto ontology. The CNL querying engine enhances user experience by enabling natural language-based queries. The provision of customizable dashboards and informative visualization artifacts enhances data communication, making it easier for users to track key metrics, monitor trends, and construe valuable insights.
 
-> Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+**Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?**
 
 The proposed platform has a broad target audience, including developers, designers, analysts, researchers, and users within the Polkadot ecosystem. We aim to support both technical and non-technical users, providing easy access to meaningful data insights.
 
-> What need(s) does your project meet?
+**What need(s) does your project meet?**
 
 The Polkadot Analytics Platform addresses the need for comprehensive and accessible data within the ecosystem. It enhances data integration, querying, and visualization, enabling users to gain deeper insights into the Polkadot ecosystem.
 
-> Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+**Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?**
 
 To the best of our knowledge, there are no projects in the ecosystem that provide a holistic and human-centered approach to ease data access and analysis similar to our proposed platform. We are aware of three projects tackling the RFP referred to in this proposal ([PR 1716](https://github.com/w3f/Grants-Program/pull/1716/), [PR 1768](https://github.com/w3f/Grants-Program/pull/1768/), [PR 1837](https://github.com/w3f/Grants-Program/pull/1837/)). However, none of them combines in a broad knowledge-oriented approach, a CNL querying engine, and composable informative artifacts as an integrated analytics platform for Polkadot. 
 
 
-> If so, how is your project different?
+**If so, how is your project different?**
 
 The Polkadot Analytics Platform stands out by integrating knowledge-oriented approaches, formal ontology, and natural language querying to provide an intuitive and efficient analytics experience. Its composable informative artifacts enable users to create customized dashboards tailored to their specific analysis needs. The proposed platform enables both technical and non-technical users to access data and perform deep analysis.
 
@@ -212,11 +213,11 @@ The Polkadot Analytics Platform stands out by integrating knowledge-oriented app
 
 ### Team members
 
-> Name of team leader
+**Name of team leader**
 
 **Dr. Marcio Moreno**, marcio@mobr.ai, Co-Founder, Research Scientist and CEO at MOBR Systems (https://www.mobr.ai). 
 
-> Names of team members
+**Names of team members**
 
 **Dr. Rafael Brandao**, rafael@mobr.ai, Co-Founder, Research Scientist and COO at MOBR Systems (https://www.mobr.ai). 
  
@@ -283,18 +284,18 @@ Our personal repos:
 
 ## Development Status :open_book:
 
-> links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
+**links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),**
 
 This proposal is aligned to the [RFP: Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/data_analysis_tools.md). 
 
 Our R&D roadmap was conceived and kick-started before the creation of this RFP, which was presented to us during the course of our previous [research grant](https://github.com/w3f/Grants-Program/pull/1420) and the first stage of the [Polkadot Analytics Platform](https://github.com/w3f/Grants-Program/pull/1883). Nevertheless, we believe the proposed application (Polkadot Analytics Platform) is aligned with the RFP's requirements and main goals. Both aim at providing data analysis in a way that advanced non-technical users can consume, without requiring programming skills. 
 
 
-> academic publications relevant to the problem,
+**academic publications relevant to the problem,**
 
 https://github.com/mobr-ai/POnto/raw/main/deliverables/milestone3/article.pdf
 
-> references to conversations you might have had related to this project with anyone from the Web3 Foundation,
+**references to conversations you might have had related to this project with anyone from the Web3 Foundation,**
 
 Medium publications about the Polkadot Analytics Platform initiative:
 https://medium.com/@mobrsys/unlocking-the-future-of-distributed-ledger-data-analysis-a-step-forward-with-polkadot-4ba21e56bc34 
@@ -374,7 +375,7 @@ The primary objective of this milestone is to structure and develop processing w
 ## Future Plans
 
 
-> how you intend to use, enhance, promote and support your project in the short term, and
+**how you intend to use, enhance, promote and support your project in the short term, and**
 
 The next stages in our roadmap, which are not in the scope of this application grant are:
 
@@ -391,7 +392,7 @@ The Polkadot Analytics Platform will be an analytics tool. While it will provide
 
 ## Additional Information :heavy_plus_sign:
 
-> Work you have already done.
+**Work you have already done.**
 
 Prior to this application, the team has conducted scientific research to create an ontology  [1, 2, 3, 4] that represents the main concepts and relationships of the Polkadot Ecosystem. This ontology will support the building of the proposed data analysis platform. The team has also concluded the first stage of this platform [5], building the foundation of the analytics platform with its initial knowledge base. 
 
@@ -414,7 +415,7 @@ We also previously developed a technology that became widely adopted within IBM 
 
 [7] https://ibm-hyperknowledge.github.io/possibility-link-demo-iswc2022/ 
 
-> Previous grants you may have applied for.
+**Previous grants you may have applied for.**
 
 https://github.com/w3f/Grants-Program/pull/1420
 https://github.com/w3f/Grants-Program/pull/1883
