@@ -240,7 +240,7 @@ For this proposal we focus on building and streamlining the process of setting u
 | 0e. | Article | Using our communication channels, we will publish an article that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
 | 1. | Completion of the initial development phase of the one-click feature. | Development of One Click Parachain Deployment Feature on GCP, AWS & Digital Ocean | Alpha testing | User Centric Sleek Interface Design |
 | 2. | Node type support | Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain |
-| 3. | Post-Deployment Features | Dashboard for conitnued maintenance operations like Key Rotation, Updating Deployment Parameters, Performing client upgrades  |
+| 3. | Post-Deployment Features | Dashboard for continued maintenance operations like Key Rotation, Updating Deployment Parameters, Performing client upgrades  |
 | 4. | Docker image support: We'll introduce a feature that allows users to set up nodes using their Docker image |Node type support: Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain | Integration of live network testing capabilities.	
 | 5. | Parachain Node Monitoring Dashboard (Grafana)	 | Customize Alert creation and integration via Email, Slack & Pagerduty |
 | 6. | Bug Fixes | Testing of the application including functional, performance, and security testing  | Successful user testing and feedback collection phase. | Release of comprehensive user guides and tutorials.
