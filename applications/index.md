@@ -72,6 +72,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [DAOsign](https://daosign.org/)                                 | [DAOsign](./DAOsign.md)   | [GitHub](https://github.com/DAOsign)                               | ☐          |        ☐       |      ☐     |
 | [Zondax AG](https://zondax.ch/)                                 | [PoC Polkadot Conformance Tests](./polkadot_tests.md)   | [GitHub](https://github.com/zondax)                               | ☐          |        ☐       |      ☐     |
 | [SO/DA zone](https://github.com/sodazone)                           | [Ocelloids XCM Transfer Monitoring Service](ocelloids_xcm_monitoring_service.md)       | [GitHub](https://github.com/sodazone)                                 | ☐          |        ☐       |      ☐     |
+| [Moonsong Labs](https://moonsonglabs.com/)                           | [StorageHub](StorageHub.mdd)       | [GitHub](https://github.com/Moonsong-Labs)                                 | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
