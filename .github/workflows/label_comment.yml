@@ -47,3 +47,14 @@ jobs:
           message: > 
             The applicant has requested the discussion of the application to happen in a private chat room. 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  KYC_needed:
+      if: github.event.label.name == 'KYC pending'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@1.0.2
+        with:
+          message: > 
+            Please verify your identity to continue. 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
