@@ -71,6 +71,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Open Smart Contract](https://github.com/OpenSmartContract)                                 | [ISO20022 PoC](./ISO20022.md)   | [GitHub](https://github.com/OpenSmartContract)                               | ☐          |        ☐       |      ☐     |
 | [DAOsign](https://daosign.org/)                                 | [DAOsign](./DAOsign.md)   | [GitHub](https://github.com/DAOsign)                               | ☐          |        ☐       |      ☐     |
 | [Zondax AG](https://zondax.ch/)                                 | [PoC Polkadot Conformance Tests](./polkadot_tests.md)   | [GitHub](https://github.com/zondax)                               | ☐          |        ☐       |      ☐     |
+| [SO/DA zone](https://github.com/sodazone)                           | [Ocelloids XCM Transfer Monitoring Service](ocelloids_xcm_monitoring_service.md)       | [GitHub](https://github.com/sodazone)                                 | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
