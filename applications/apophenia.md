@@ -125,7 +125,7 @@ Ultimately, our goal is to provide a **native** oracle solution to the DotSama e
 - Faisal Al Tameemi: Architect, Rust Engineer, Full Stack Developer
 
 ### Contact
-- Subslice: [subslice.com](https://subslice.com)
+
 - Arthur Franco Moreira: afm2@duck.com
 - Faisal Al Tameemi: faisal.al.tameemi@gmail.com
 
