@@ -77,11 +77,11 @@ Other Smart Services provide additional functionality, for example:<br>
 
 ### Ecosystem Fit
 
-Decentralised social networks are resistant to censorship. They are a valuable tool in areas where internet freedom is at risk. The growth of such censorship is concerning, but SubFlow can expand the use cases of the Polkadot ecosystem, increase user engagement, highlight cross-chain interoperability, and support privacy and data ownership.<br>
+Decentralised social networks are essential for resisting censorship, especially in regions where internet freedom is threatened. The rising trend of such censorship is alarming. However, SubFlow aims to bolster the potential of the Polkadot ecosystem, enhance user engagement, promote cross-chain interoperability, and uphold privacy and data ownership.<br>
 
-The SubFlow team has already started working with Subsquid and SubSocial to conduct a deep dive into the Polkadot ecosystem and assess the product fit of SubFlow. We are in constant communication about both corrections to the technological structure of the protocol and updates of this Grants-Program application daily, and these two projects are already part of the SubFlow development plans.<br>
+The SubFlow team has collaborated with [Subsquid](https://www.subsquid.io/) and [SubSocial](https://subsocial.network/) to gain a deeper understanding of the Polkadot ecosystem and determine SubFlow's compatibility within this space. We maintain regular communication with these partners regarding adjustments to the technological structure of the protocol and updates to the Grants Program application. Both Subsquid and SubSocial are essential to SubFlow's developmental roadmap.<br>
 
-In addition to Subsquid and SubSocial, we have identified several other potential partners for collaboration. We plan to make contact with them shortly because we fully understand and believe that the decentralised future is only possible through the collaboration of decentralised teams and the automation of services. That is why we chose the structure of Smart Services and the Polkadot ecosystem, which is known for its independence, activity, and support of developers.
+In addition to [Subsquid](https://www.subsquid.io/) and [SubSocial](https://subsocial.network/), we've identified other potential collaborators and are eager to begin engaging with them. We're confident that a decentralised future is possible only through the collaboration of decentralised teams and the automation of services. This understanding has driven our commitment to the concept of Smart Services within the Polkadot ecosystem, which is well-known for its autonomy, activity, and support for developers.<br>
 
 
 
