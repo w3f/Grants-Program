@@ -266,7 +266,6 @@ For this proposal we focus on building and streamlining the process of setting u
 | 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  Successful security and performance audit of the platform | 
 | 5. | Deployment Guide	 | A detailed guide on how users can deploy the block-agent across various node environments, ensuring compatibility and ease of setup. |
 
-
 ## Future Plans
 - Our long-term plan is to provide a suite of products that will allow users and enterprises to deploy, manage, and monitor their node infrastructure for different use cases.
 - More Detailed and Enhanced Observability & Alerting for all Blockchain Networks.
