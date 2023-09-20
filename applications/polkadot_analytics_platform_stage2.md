@@ -18,7 +18,7 @@ This is a follow-up grant application for the project [A Knowledge-Oriented Appr
 
 ### Overview
 
-> tag line
+**Tagline:** 
 
 Empowering the Polkadot community with a comprehensive analytics platform that provides natural language querying, supported by formal knowledge representations, and customizable dashboards for holistic data analyses.
 
