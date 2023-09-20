@@ -22,7 +22,7 @@ This is a follow-up grant application for the project [A Knowledge-Oriented Appr
 
 Empowering the Polkadot community with a comprehensive analytics platform that provides natural language querying, supported by formal knowledge representations, and customizable dashboards for holistic data analyses.
 
-> A brief description of your project.
+**A brief description of your project**
 
 The Polkadot Analytics Platform aims at building a comprehensive data analysis and visualization tool for the Polkadot ecosystem. The platform will allow users to retrieve and analyze data from various Polkadot-related sources (e.g., different parachains and components such as browser wallets), aligned with the POnto ontology [1, 2, 3]. Users will be able to specify their queries using a controlled natural language (CNL), and the platform will provide a query engine to process these queries. Additionally, the platform will provide a UI to support constructing queries and visualizing informative artifacts that represent query results. As well as support for composing customizable dashboards using these artifacts. 
 In its current stage, the platform is composed of a knowledge base (KB) and its initial representation with the POnto ontology [4]. The current grant proposal focuses on populating this KB through the creation of semantic ETL pipelines, i.e. information extraction workflows that will extract, reuse and integrate data from different sources, aligning and structuring domain knowledge in the KB. We will create data extraction mechanisms to gather data from various Polkadot-related sources using Substrate interfaces (e.g. using Substrate-ETL), as well as offchain (e.g., using Github API).
