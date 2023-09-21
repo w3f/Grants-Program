@@ -1,6 +1,6 @@
 # Polkadot Protocol Conformance Tests
 
-* **Status:** Open
+* **Status:** [Under Development (Zondax)](https://github.com/w3f/Grants-Program/pull/1956), [Under Development (LimeChain)](https://github.com/w3f/Grants-Program/pull/1950)
 * **Proposer:** [Bhargav Bhatt](https://github.com/bhargavbh), [David Hawig](https://github.com/Noc2)
 * **Objectives:** Create and maintain a comprehensive test-suite for conformance of core functionalities of Polkadot Host.
 
@@ -44,5 +44,3 @@ The goal of the initial grant should be to develop a PoC. The long-term goal sho
 ## Deliverables
 
 The structure of the grant and the milestones depends highly on the project itself and the goal of the initial PoC. It’s therefore up to the applying team to come up with a milestone and delivery structure. 
-
-
