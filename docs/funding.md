@@ -5,6 +5,12 @@ title: 🪙 Alternative Funding
 
 Some funding sources might be more and some less suitable for your project throughout its various stages. We encourage you to explore alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
+:::tip
+
+If you are unsure about what's the best next step for you and your project, consider reaching out to the [Substrate Square One](https://substrate.io/ecosystem/square-one/) team.
+
+:::
+
 ### Treasury
 
 The treasury is a pot of on-chain funds collected through transaction fees, slashing, staking inefficiencies, etc. The funds held in the treasury can be spent on spending proposals. Both [Polkadot](https://polkadot.network/) and [Kusama](https://kusama.network/) offer everyone the opportunity to apply for funding via the treasury. See:
