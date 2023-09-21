@@ -174,13 +174,13 @@ We assure the committee that despite the delay, the quality and scope of the pro
 
 ### Overview
 
-- **Total Estimated Duration:** 4.5 months
+- **Total Estimated Duration:** 8 months (Adjusted from 4.5 months)
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** 30,000 USD
 
 ### Milestone 1 - Patient Identity and Security Framework
 
-- **Estimated Duration:** 2.5 month
+- **Estimated Duration:** 6 months (Adjusted from 2.5 months)
 - **Developers:** FTE x 4
 - **(Product Design x 1, Dapp Engineer x 1, System Engineer x 1, App Engineer x 1)**
 - **Costs:** 20,000 USD
