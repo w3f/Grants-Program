@@ -1,10 +1,9 @@
-# Open Grant Proposal
+# Apron Network
 
-* **Project Name:** Apron Network
 * **Team Name:** Apron Labs
 * **Payment Address:** 15tV6rQSwNgWQ1Z5pim2yJmELLvWNm5D4V
 
-## Project Overview :page_facing_up: 
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -18,27 +17,22 @@ Maybe you are still thinking that it sounds terrible but no one can prove it. Le
 
 **On Nov. 11th, 2020, the API services from infura.io are down, and the idea of Apron Network comes out.**
 
-The Apron Network is built by the Apron Labs powered by Substrate. It provides a Cross-chain Decentralized Infrastructure Services Network that will be used by blockchain node runners, DApp developers, the public chain community, and DApp users. Every DApp developer can discover the proper service provider for a specific blockchain through the decentralized infrastructure market on the Apron Network. The Apron Network can be run as a parachain of Polkadot. 
+The Apron Network is built by the Apron Labs powered by Substrate. It provides a Cross-chain Decentralized Infrastructure Services Network that will be used by blockchain node runners, DApp developers, the public chain community, and DApp users. Every DApp developer can discover the proper service provider for a specific blockchain through the decentralized infrastructure market on the Apron Network. The Apron Network can be run as a parachain of Polkadot.
 
 With the Apron Network,  the DApp developers can find their API endpoint, node runners can provide infrastructure services to get profit and all the infrastructure services will be decentralized on the two-layers infrastructure service network. The Apron Network will guaranty there is no infura.io accident anymore!
-
-
 
 #### Integration
 
 The Apron Network can be run as a parachain on Polkadot, or an independent chain. The Apron Network contains Apron Node and Apron Market. The Apron Node is built with Substrate 2.0 Framework, and the OCW (Off-chain worker) will be included for API manage records. Apron Market consists of Apron Market Contracts and Apron Market Front End. The contracts will be implemented with Ink!, and the front-end will be built with polkadot.js.
 
-
-
 #### Team Interest
 
-Most of the team members are DApp developers who suffer from the lacking of Ethereum API Endpoint and tightly rely on infura.io since we are not able to set up our full node due to funds. As we have known, most of the DApp developers have the same embarrassing situation as us. After shocked by the accident of infura.io, we are willing to build a decentralized infrastructure service network, and we name it the Apron Network. 
+Most of the team members are DApp developers who suffer from the lacking of Ethereum API Endpoint and tightly rely on infura.io since we are not able to set up our full node due to funds. As we have known, most of the DApp developers have the same embarrassing situation as us. After shocked by the accident of infura.io, we are willing to build a decentralized infrastructure service network, and we name it the Apron Network.
 
 With Substrate 2.0 Framework, we are able to build a customized blockchain network easily, and we have the ability to integrate an API Gateway to manage blockchain API services in Apron Node. With the Apron Network, the blockchain node runners can provide Infrastructure service easily and get profit through this decentralized infrastructure services network.
 
+### Project Details
 
-
-### Project Details 
 #### Architecture  
 
 The Apron Network consists of **Apron Node**, **Arpon Market Contracts**, **Decentralized API Market**, and the **Apron SDK**.
@@ -50,42 +44,32 @@ The Apron Network consists of **Apron Node**, **Arpon Market Contracts**, **Dece
 * Decentralized API Market lists all the API services registered and available for developers from the data in smart contracts. DApp developers search the API services according to their needs and choose the one with the proper price.
 * The Apron SDK makes the use of Apron Network easier. DApp developers can integrate this SDK in their app to dynamic switch blockchain entry-point according to their needs.
 
-
-
 #### Substrate / Polkadot Integration
 
-The Apron Network can be run as a para-chain of Polkadot, and also can be run as an independent chain apart from Polkadot. 
+The Apron Network can be run as a para-chain of Polkadot, and also can be run as an independent chain apart from Polkadot.
 
 The whole network is built on top of the Substate 2.0 Framework, and OCW (off-chain worker) is used to report API usage statistics on which the billing relies.
 
 All the contracts will be implemented with Ink!, and the front-end of Decentralized API Market will be on top of polkadot.js.
 
-
-
 #### Scenarios
 
 * Node Runners  
 
-
-
 ![img](https://raw.githubusercontent.com/Apron2050/graphics/main/Apron%20Node.jpg)
 
-The above figure shows the role of each component act from the view of the blockchain node owner. To simply the scenario, we take an example. The para-chain node is running at the beginning, the Apron Node shown above is set up by the owner by staking some **$ANT**, and the Apron Node is accessible on the internet. The owner can configure Apron Node with the RPC entry point of the para-chain node, API access frequency, API access fee, and other limitations. After everything is configured, the Apron Node will be able to call the RPC interface of para-chain, and DApps will call the API through the Apron Node. The Apron Node calculates the API usage statistics of each caller, then stores this data through OCW (off-chain worker) on the chain for further billing. 
-
-
+The above figure shows the role of each component act from the view of the blockchain node owner. To simply the scenario, we take an example. The para-chain node is running at the beginning, the Apron Node shown above is set up by the owner by staking some **$ANT**, and the Apron Node is accessible on the internet. The owner can configure Apron Node with the RPC entry point of the para-chain node, API access frequency, API access fee, and other limitations. After everything is configured, the Apron Node will be able to call the RPC interface of para-chain, and DApps will call the API through the Apron Node. The Apron Node calculates the API usage statistics of each caller, then stores this data through OCW (off-chain worker) on the chain for further billing.
 
 * DApp Developers  
-
-
 
 ![img](https://raw.githubusercontent.com/Apron2050/graphics/main/Apron%20Usage.jpg)
 
 For DApp developers, there are two components that will be used. One is the Decentralized API Market, the other one is the Apron SDK. Firstly, DApp developers search the API services in the API service repositories ( which is part of the Decentralized API Market) on the webpage. After finding the proper API service, the DApp developer will generate an API access key with the help of Apron Market Contracts. Finally, the DApp developer develops the DApp with the API access key to use the related API services. Of course, the DApp developer should pay the fee of using the API services according to the fee addressed by the API service provider.
 
-
 #### Interface Specification
 
 The function provided by the pallet to report API usage statistics data is reportAPIUsage.
+
 ```
 1. reportAPIUsage
 
@@ -94,11 +78,11 @@ The function provided by the pallet to report API usage statistics data is repor
 - return: the calls number
 ```
 
-### Ecosystem Fit 
+### Ecosystem Fit
 
-Infura.io is the typical infrastructure services provider that is totally centralized. 
+Infura.io is the typical infrastructure services provider that is totally centralized.
 
-The Apron Network provides exactly the same API services as infura.io but in a decentralized way, thanks to Substrate 2.0 Framework which let us only focused on the logic on top of blockchain rather than re-develop a new blockchain. In the future, the Apron Network will provide a decentralized infrastructure services network. 
+The Apron Network provides exactly the same API services as infura.io but in a decentralized way, thanks to Substrate 2.0 Framework which let us only focused on the logic on top of blockchain rather than re-develop a new blockchain. In the future, the Apron Network will provide a decentralized infrastructure services network.
 
 ## Team :busts_in_silhouette:
 
@@ -108,51 +92,60 @@ The Apron Network provides exactly the same API services as infura.io but in a d
 * Junjun - Full-stack Developer  
 
 ### Contact
-- https://apron.network
 
-### Legal Structure 
+- <https://apron.network>
+
+### Legal Structure
+
 No Legal Entity
 
 ### Team's experience
 
-Toney   
-   -  Over 13 years of experiences in Software Development   
-   -  Software Engineer in MS   
-   -  Mobile Game Developer  
-   -  Blockchain Game Developer  
-   -  The Chief Tech Officier of the team which wins TRON Accelerator 2018 Game Rewards  
+Toney
 
-Junjun   
-   -  Over 15 years of experiences in Software Development   
-   -  Former Senior Software Engineer in Lucent   
-   -  DApp Developer  
-   -  Full-stack Developer
+* Over 13 years of experiences in Software Development
+* Software Engineer in MS
+* Mobile Game Developer  
+* Blockchain Game Developer  
+* The Chief Tech Officier of the team which wins TRON Accelerator 2018 Game Rewards  
+
+Junjun
+
+* Over 15 years of experiences in Software Development
+* Former Senior Software Engineer in Lucent
+* DApp Developer  
+* Full-stack Developer
 
 ### Team Code Repos
-* Apron Labs: https://github.com/apron-network
+
+* Apron Labs: <https://github.com/apron-network>
 
 ### Team LinkedIn Profiles
+
 * [Toney](https://www.linkedin.com/in/yi-sui-297a9223/)
 
-## Development Roadmap :nut_and_bolt: 
+## Development Roadmap :nut_and_bolt:
+
 ### Overview
+
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 4
 * **Total Costs:** 0.73 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1 Example — Implement Substrate Modules
+
 * **Estimated Duration:** 3 months
 * **Full-time Equivalent (FTE):** 4
-* **Costs:** 0.73 BTC 
+* **Costs:** 0.73 BTC
 
-In the first milestone, the features for the PoC will be implemented and tested by limited users. 
+In the first milestone, the features for the PoC will be implemented and tested by limited users.
 
 The following components will be included:
 
 * Apron Node  
 * Apron Market Contracts  
-* Decentralized API Market / Front End   
-* Apron SDK   
+* Decentralized API Market / Front End
+* Apron SDK
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -167,8 +160,6 @@ The following components will be included:
 | 6. | Article | We will write an article published on media channels. |
 | 7. | DAO | A Apron DAO will be created to handle the governance of the Decentralized API Market. |
 
-
-
 ## Future Plans
 
 Community Plan
@@ -180,8 +171,6 @@ Community Plan
 * Bounty Program.  
 * Publish articles on media channels to expose the Apron Network.  
 
-
-
 Development Plan
 
 * The Apron Network will run as a parachain of the Kusama.  
@@ -191,10 +180,8 @@ Development Plan
 * In phase 3, provide decentralized quick node services.
 * Finally, our goal is to provide the infrastructure services network.
 
-
-
-## Additional Information :heavy_plus_sign: 
+## Additional Information :heavy_plus_sign:
 
 Currently we just start the first design of the Apron Network.
 
-The project repo: https://github.com/apron-network
+The project repo: <https://github.com/apron-network>

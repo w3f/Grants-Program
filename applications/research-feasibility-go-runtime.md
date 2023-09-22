@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Research feasibility of a Go Runtime
 
-- **Project Name:** Research feasibility of a Go Runtime
 - **Team Name:** [LimeChain](https://github.com/LimeChain)
 - **Payment Address:** eth:0x1F7683228Ee9Bc65335374eA5c92B81C74131404 (USDC/USDT/DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3

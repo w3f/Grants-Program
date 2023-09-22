@@ -1,12 +1,11 @@
-# W3F Open Grant Proposal
+# SubDAO Chrome Extension
 
-* **Project Name:** SubDAO Chrome Extension
 * **Team Name:** [SubDAO Labs](https://github.com/subdao-network)
 * **Payment Address:**  3FcJjvzazcpgmJkesdAfx333fyCudxuAe7
 
 ## Project Overview :page_facing_up:
 
-The previous application [SubDAO Network Application - https://github.com/w3f/Grant-Milestone-Delivery/pull/114]
+The previous application [SubDAO Network Application - <https://github.com/w3f/Grant-Milestone-Delivery/pull/114>]
 
 ### Overview
 
@@ -23,7 +22,7 @@ We are the team of SubDAO Labs, and we are trying to build the ecosystem for DAO
 SubDAO Chrome Extension provides several features, such as Polkadot Wallet, Social Network Message, and DAO Management.  
 ![](https://raw.githubusercontent.com/SubDAO-Network/graphics/main/start.png)
 
-**Polkadot Wallet**   
+**Polkadot Wallet**
 A wallet is integrated as an extension of chrome, and it provides wallet management.  
 ![](https://raw.githubusercontent.com/SubDAO-Network/graphics/main/wallet.png)
 
@@ -34,7 +33,6 @@ It supports Twitter and Facebook messages. Thanks to [MaskBook](https://mask.io)
 **DAO Management**  
 The main goal of creating SubDAO Chrome Extension is to help users to manage their DAOs with a better user experience.  
 ![](https://raw.githubusercontent.com/SubDAO-Network/graphics/main/DAO.png)
-
 
 ### Ecosystem Fit
 
@@ -67,7 +65,7 @@ There are no similar projects in the Polkadot ecosystem yet, and even we already
 
 * **Contact Name:** WannaM
 * **Contact Email:** subdao.lab@gmail.com
-* **Website:** https://subdao.network
+* **Website:** <https://subdao.network>
 
 ### Legal Structure
 
@@ -78,41 +76,44 @@ There are no similar projects in the Polkadot ecosystem yet, and even we already
 
 The team is the one who applied SubDAO.
 
-**Qiang**   
-   -  Over 13 years of experiences in Software Development   
-   -  Chief Solution Architect in Tencent   
-   -  Former Team Lead in IBM   
-   -  Core Developer of Smart Cloud / HSLT   
-   -  Code Contributor of KVM   
-   -  Community Contributor in RedHat   
+**Qiang**
 
-**Marvin Tong**   
-   -  Founder and CEO of Phala Network   
-   -  Former Product Manager in Tencent   
-   -  Former Product Manager in DiDi   
+* Over 13 years of experiences in Software Development
+* Chief Solution Architect in Tencent
+* Former Team Lead in IBM
+* Core Developer of Smart Cloud / HSLT
+* Code Contributor of KVM
+* Community Contributor in RedHat
 
-**Dajun**   
+**Marvin Tong**
 
-   -  Over 12 years of experiences in Development   
-   -  Former Senior Software Engineer in Alibaba   
-   -  Core Developer of Wetez and StaFi.io   
+* Founder and CEO of Phala Network
+* Former Product Manager in Tencent
+* Former Product Manager in DiDi
 
-**John Xie**   
+**Dajun**
 
-   -  Full-stack Developer   
-   -  Over 15 years of experiences in Development and Management   
-   -  Has plenty of experience in Software Development and Blockchain Development   
-   -  Currently, focus on Cross-chain technologies   
+* Over 12 years of experiences in Development
+* Former Senior Software Engineer in Alibaba
+* Core Developer of Wetez and StaFi.io
 
-**Tallone**   
-   -  Full-stack Developer   
-   -  Over 20 years of experiences in Product Development and Management   
-   -  Has plenty of experience in Software Architecture   
-   -  Currently focused on  Blockchain Development and Cross-chain Technologies   
+**John Xie**
+
+* Full-stack Developer
+* Over 15 years of experiences in Development and Management
+* Has plenty of experience in Software Development and Blockchain Development
+* Currently, focus on Cross-chain technologies
+
+**Tallone**
+
+* Full-stack Developer
+* Over 20 years of experiences in Product Development and Management
+* Has plenty of experience in Software Architecture
+* Currently focused on  Blockchain Development and Cross-chain Technologies
 
 ### Team Code Repos
 
-* https://github.com/subdao-network
+* <https://github.com/subdao-network>
 
 ### Team LinkedIn Profiles
 
@@ -121,7 +122,7 @@ The team is the one who applied SubDAO.
 
 ## Development Status :open_book:
 
-The DAO-related smart contracts are partially implemented in the SubDAO plan. Those contracts can be found in https://github.com/SubDAO-Network/subDAO-contracts.
+The DAO-related smart contracts are partially implemented in the SubDAO plan. Those contracts can be found in <https://github.com/SubDAO-Network/subDAO-contracts>.
 
 We have already designed some UI/UX as the shown previous section, and the full extension relies on the features provided by SubDAO. Milestone 1 of SubDAO is already finished and accepted.
 
@@ -144,7 +145,7 @@ The Social Network provides the feature to post encrypted messages on Twitter an
 ### Milestone 1  - The first published version
 
 * **Estimated Duration:** 1 month
-* **FTE:**  3 
+* **FTE:**  3
 * **Costs:** 9,000 USD
 
 | Number | Deliverable | Specification |
@@ -167,9 +168,8 @@ The Social Network provides the feature to post encrypted messages on Twitter an
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** 
+**How did you hear about the Grants Program?**
 We get this information from the w3f website.
 
 * We have made the SubDAO Network, and an open grant has been accepted.
 * Thanks to the Maskbook team who builds Mask book.
-

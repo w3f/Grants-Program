@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# ZeroDAO Network
 
-- **Project Name:** ZeroDAO Network
 - **Team Name:** ZeroDAO
 - **Payment Address:** 0xEBCDa7c73EB5Dd7a4314cFf395bE07EB1E24c046
 
@@ -30,11 +29,11 @@ ZeroDAO social network brought us the reputation system and we proposed the TIR 
 
 ![](https://pic.tom24h.com/github/sc.png)
 
--	`Reserve` Reserve the owner's free balance. The percentage can be adjusted by the community.
--	`Share` Transfer to the social currency of users trusted by the owner.
--	`Fee` Analyst's fee.
--	`Burn` Share to all users.
--	`Reward pool` Used to solve the verifier's Dilemma.
+- `Reserve` Reserve the owner's free balance. The percentage can be adjusted by the community.
+- `Share` Transfer to the social currency of users trusted by the owner.
+- `Fee` Analyst's fee.
+- `Burn` Share to all users.
+- `Reward pool` Used to solve the verifier's Dilemma.
 
 #### Reputation System
 
@@ -73,11 +72,11 @@ The algorithm will pick to cheat nodes when the attacker constructs a graph that
 
 ###### Hall of Fame
 
-ZeroDAO uses a simple approach. By electing the Hall of Fame through the community, the distance from the Hall of Fame is added to the seed selection algorithm. The attacker has zero or very little reputation, while users who need more than a certain reputation can participate in the election. The attacker cannot join the Hall of Fame and cannot be seed, and the attack fails. We computed `circles`, a social network with 100,000 on-chain users, which was also subject to sybil attacks. We selected only 20 Hall of Fame users and the algorithm worked well. You can find the calculation results here for [round3 ](https://socircles.info/nonce/3) without the Hall of Fame, and [round4](https://socircles.info/nonce/4) with the Hall of Fame.
+ZeroDAO uses a simple approach. By electing the Hall of Fame through the community, the distance from the Hall of Fame is added to the seed selection algorithm. The attacker has zero or very little reputation, while users who need more than a certain reputation can participate in the election. The attacker cannot join the Hall of Fame and cannot be seed, and the attack fails. We computed `circles`, a social network with 100,000 on-chain users, which was also subject to sybil attacks. We selected only 20 Hall of Fame users and the algorithm worked well. You can find the calculation results here for [round3](https://socircles.info/nonce/3) without the Hall of Fame, and [round4](https://socircles.info/nonce/4) with the Hall of Fame.
 
 #### challenge
 
-The reputation system is implemented through a challenge model. The system has two roles, analyst and validator. The analyst updates the reputation after staking. The validator monitors the correctness of the data and can challenge the result after staking and upload the path. At this point the system still does not compute the path. Other validators, if they find errors in it, only need to point out errors in individual paths. The system verifies the calculations and determines who is correct at this time. The sub-challenge mode significantly improves the efficiency of the system. 
+The reputation system is implemented through a challenge model. The system has two roles, analyst and validator. The analyst updates the reputation after staking. The validator monitors the correctness of the data and can challenge the result after staking and upload the path. At this point the system still does not compute the path. Other validators, if they find errors in it, only need to point out errors in individual paths. The system verifies the calculations and determines who is correct at this time. The sub-challenge mode significantly improves the efficiency of the system.
 
 ![](https://pic.tom24h.com/github/challenge.png)
 
@@ -92,13 +91,13 @@ Collusion only affects social finance and has little to no impact on reputation 
 
 #### Applications
 
-The social finance, reputation system and zero-cost payment will lead to many exciting applications. 
+The social finance, reputation system and zero-cost payment will lead to many exciting applications.
 
 - **Traditional social network transformation**: The ZeroDAO network doesn't care where the Dapp's data is stored, so it is very adaptable and traditional social networks only need to add a `Trust` button to connect to the ZeroDAO network.
 - **Radical Social Network**: Reputation systems and trust relationships make possible a new model of social networking, and we propose a reverse communication social network, where users post content that is not pushed to the feeds of their followers, but to the feeds of their trusted people. This may sound difficult to understand, but if you look at it in detail, you will see that this is an exciting new social network, as explained in more detail in the light white paper.
 - **Governance**: Sybil have been blocked, and now you can safely use the Quadratic Voting (e.g. Quadratic funding platform). You can also go experiment with more interesting modes of governance.
 - **Super Bank**: Super bank is another banking model other than central bank, commercial bank. It runs on blockchain through smart contracts, it has credit financial capability, directly facing users, instantly sensing user behavior, and adjusting interest rate with every transaction. It has deterministic expectations, including a flexible total amount of issuance, deterministic interest rate changes, and therefore can effectively sense the economic crisis. Even in the event of an economic crisis, he possesses deterministic self-recovery. It is finding equilibrium in every transaction, so there is no Minsky moment.
-- **Zero-cost payment**: A payment model where the user didn't pay anything. Especially when the minimum trust number is exceeded. Social finance includes institutional accounts, which do not participate in the calculation of the reputation system and are allocated the amount directly to the free balaner. users have nothing to lose in the payment process, thus increasing the participation rate of the charity. It is very useful in other donations, such as donations to open source communities. However, it is currently limited to payments to trusted institutions, and large-scale commercial use ( e.g. in pay-per-month music applications, decentralized storage payments ) needs to Solving collusion attack. 
+- **Zero-cost payment**: A payment model where the user didn't pay anything. Especially when the minimum trust number is exceeded. Social finance includes institutional accounts, which do not participate in the calculation of the reputation system and are allocated the amount directly to the free balaner. users have nothing to lose in the payment process, thus increasing the participation rate of the charity. It is very useful in other donations, such as donations to open source communities. However, it is currently limited to payments to trusted institutions, and large-scale commercial use ( e.g. in pay-per-month music applications, decentralized storage payments ) needs to Solving collusion attack.
 
 ### Ecosystem Fit
 
@@ -136,7 +135,7 @@ ZeroDAO reputation system is positioned as the core of a on-chain reputation sys
 
 - **Contact Name:** Daqin Lee
 - **Contact Email:** lee@0p0.org
--  [0p0.org](https://www.0p0.org/)
+- [0p0.org](https://www.0p0.org/)
 
 ### Team's experience
 
@@ -146,8 +145,8 @@ Chen Zhidong: Full-stack Developer, Tesla Machine Learning Engineer，[GoHack 20
 
 ### Team Code Repos
 
-- https://github.com/ZeroDAO
-- https://github.com/sillydong
+- <https://github.com/ZeroDAO>
+- <https://github.com/sillydong>
 
 ## Development Status 📖
 
@@ -157,13 +156,13 @@ We built a simple application to validate the algorithm and perform tuning, and 
 
 We computed data at different data sizes several times in our development environment. And a website was deployed to demonstrate how the selection of Hall of Fame users affects the calculation. You can also query the reputation of any user in the application, as well as the shortest path between users. We are still tuning the algorithm, so if you find significant deviations in the data, please contact us.
 
-Website: https://socircles.info
+Website: <https://socircles.info>
 
-Front-end: https://github.com/ZeroDAO/socircles-ui
+Front-end: <https://github.com/ZeroDAO/socircles-ui>
 
-Back-end: https://github.com/ZeroDAO/socircles-backend
+Back-end: <https://github.com/ZeroDAO/socircles-backend>
 
-Management: https://github.com/ZeroDAO/socircles-admin
+Management: <https://github.com/ZeroDAO/socircles-admin>
 
 ### White Paper
 
@@ -189,7 +188,7 @@ We currently have a [light white paper](https://pic.tom24h.com/zerodao/ZeroDAOLi
 | 0b.    | Documentation              | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. And a tutorials on when to use social finance design guidelines. |
 | 0c.    | Testing Guide              | We will provide a full test suite and guide for ZeroDAO node manage |
 | 1.     | Pallet: refresh-reputation | Refresh user's reputation                                    |
-|        | Storage                    | Fees: `StorageMap<_, Twox64Concat, T::AccountId, (u32, Balance), ValueQuery>;`<br>Records: `StorageDoubleMap<_, Twox64Concat, T::AccountId, Twox64Concat, T::AccountId, Record<T::BlockNumber,Balance>, ValueQuery>;`<br> |
+|        | Storage                    | Fees: `StorageMap<_, Twox64Concat, T::AccountId, (u32, Balance), ValueQuery>;`<br />Records: `StorageDoubleMap<_, Twox64Concat, T::AccountId, Twox64Concat, T::AccountId, Record<T::BlockNumber,Balance>, ValueQuery>;`<br /> |
 |        | Struct                     | `pub struct Record<BlockNumber,Balance>`                     |
 |        | Functions                  | `pub fn new_round(origin: OriginFor<T>) -> DispatchResultWithPostInfo`<br/>`pub fn refresh_reputation(origin: OriginFor<T>, user_scores: Vec<(T::AccountId,u32)>) -> DispatchResultWithPostInfo`<br/>`pub fn receiver_all(origin: OriginFor<T>) -> DispatchResultWithPostInfo`<br/> |
 | 2.     | Pallet: reputation         | Maintain the user's reputation for the last two rounds and set reputation system information |

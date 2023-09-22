@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Generic sybil-resistant faucet
 
-- **Project Name:** Generic sybil-resistant faucet
 - **Team Name:** MB Karolio reikalai
 - **Payment Address:** 0xc3e6eFA4D0847203dD4E19B7D114516Eb45840EC (DAI)
 - **Level:** 1

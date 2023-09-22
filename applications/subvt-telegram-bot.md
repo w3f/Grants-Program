@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# SubVT Telegram Bot for Kusama and Polkadot
 
-- **Project Name:** SubVT Telegram Bot for Kusama and Polkadot
 - **Team Name:** Helikon Labs
 - **Payment Address:** `bc1qxjy7sw0ffvpq86t6hj3mmqhnfz2hxt6pk7zdz0` (BTC)
 - **Level:** 🐣 1
@@ -41,7 +40,7 @@ Future upgrades aim for adding support for other proof-of-stake (PoS) Substrate-
 The [1KV Bot](https://github.com/helikon-labs/polkadot-kusama-1kv-telegram-bot) currently serves 221 out of 359 valid nodes on Kusama and 90 out of 129 valid nodes on Polkadot. Relatively high adoption rates (61% on Kusama and 69% on Polkadot) with very little announcement have resulted in our interest in extending the bot's support to all Kusama and Polkadot validators, and other Substrate-based PoS networks in the future.
 
 <p align="center">
-	<img width="750" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/subvt-telegram-bot/applications/subvt-telegram-bot-files/01-overview.jpg">
+ <img width="750" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/subvt-telegram-bot/applications/subvt-telegram-bot-files/01-overview.jpg" />
 </p>
 
 This upgrade consists of migrating the bot to use the [backend services](https://github.com/helikon-labs/subvt-backend) and storage of SubVT (Substrate Validator Toolkit), which is an under-development native mobile application project for iOS and Android phones, tablets and wearables, [supported by](https://kusama.polkassembly.io/treasury/99) the Kusama Treasury.
@@ -63,14 +62,14 @@ The 1KV Bot currently has a number of issues such as:
   - Payouts.
 
 <p align="center">
-	<img width="430" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/subvt-telegram-bot/applications/subvt-telegram-bot-files/02-details_00.jpg"><br/>
+ <img width="430" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/subvt-telegram-bot/applications/subvt-telegram-bot-files/02-details_00.jpg" /><br/>
     <i>Current state of the 1KV Bot</i>
 </p>
 
 [SubVT backend](https://github.com/helikon-labs/subvt-backend), under development for the SubVT mobile applications, is near its first-phase completion and can provide very fast data access required by the current 1KV Bot functionality and more. Below is a diagram of the proposed upgrade for the 1KV bot to utilize the SubVT backend services.
 
 <p align="center">
-	<img width="850" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/subvt-telegram-bot/applications/subvt-telegram-bot-files/02-details_01.jpg"><br/>
+ <img width="850" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/subvt-telegram-bot/applications/subvt-telegram-bot-files/02-details_01.jpg" /><br/>
     <i>Proposed upgrade</i>
 </p>
 
@@ -81,7 +80,7 @@ SubVT backend is being developed in Rust. Proposed upgrade for the bot is going 
 3. Notifier component, which delivers notifications as Telegram messages to the user's phone through the Telegram Bot API.
 
 <p align="center">
-	<img width="350" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/subvt-telegram-bot/applications/subvt-telegram-bot-files/02-details_02.jpg"><br/>
+ <img width="350" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/subvt-telegram-bot/applications/subvt-telegram-bot-files/02-details_02.jpg" /><br/>
     <i>SubVT Telegram Bot components</i>
 </p>
 
@@ -149,7 +148,7 @@ CryptoLab bot is a validator bot with the strength of Telemetry support, yet it'
 
 I am a software developer with a bachelor's degree in Computer Science and 20 years of experience in development and leading. After a series of positions mostly in enterprise software development settings, I focused on native mobile development for iOS and Android between 2012 and 2019, in which year I was introduced to the world of blockchain and cryptocurrencies when I got hired by [Tari](https://tari.com). For a duration of 1 year and 8 months I led the development of [Aurora](https://aurora.tari.com), the Tari cryptocurrency wallet for Android and iOS. The app got received very well by the Tari community thanks to its lean, eye-pleasing design and simple UX. I learned a lot at Tari about how blockchain systems work and the cryptocurrency ecosystem in general. Working with a product management team that’s super-focused on usability and simplification gave me a perspective on the value of good UX and UI in a field that’s notorious for its technical difficulties for the not-so-technical users.
 
-After my time at Tari I got interested in Polkadot and Kusama ecosystems and started running a Kusama validator enrolled in 1KV. I developed the [Kusama 1KV Bot](https://github.com/helikon-labs/polkadot-kusama-1kv-telegram-bot) just to scratch my own itch, then ported it to Polkadot. After experimenting a bit with Substrate storage and RPC interface, I developed the idea of SubVT and prepared a treasury spending proposal for the project, which got accepted by the Kusama council. I have been working with [Klad](https://www.klad.design/), supervising the UX and UI design for the project, which is now complete. I've also been working on the SubVT backend, which is also near completion, bringing SubVT to its second stage: Android and iOS applications development. 
+After my time at Tari I got interested in Polkadot and Kusama ecosystems and started running a Kusama validator enrolled in 1KV. I developed the [Kusama 1KV Bot](https://github.com/helikon-labs/polkadot-kusama-1kv-telegram-bot) just to scratch my own itch, then ported it to Polkadot. After experimenting a bit with Substrate storage and RPC interface, I developed the idea of SubVT and prepared a treasury spending proposal for the project, which got accepted by the Kusama council. I have been working with [Klad](https://www.klad.design/), supervising the UX and UI design for the project, which is now complete. I've also been working on the SubVT backend, which is also near completion, bringing SubVT to its second stage: Android and iOS applications development.
 
 ### Team Code Repos
 
@@ -219,7 +218,7 @@ The original [1KV Bot](https://github.com/helikon-labs/polkadot-kusama-1kv-teleg
 ## Future Plans
 
 - Telemetry integration.
-  - Notifications for peer count and bandwidth thresholds, and possibly others related to the Telemetry data 
+  - Notifications for peer count and bandwidth thresholds, and possibly others related to the Telemetry data
 - `/network-info` command.
   - Displays a summary of the network's status and overall staking data.
 - Support for additional Substrate-based PoS networks.

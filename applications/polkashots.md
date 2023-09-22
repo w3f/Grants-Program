@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# polkashots.io
 
-* **Project:** polkashots.io
 * **Proposer:** Nicolas Ochem
 * **Payment Address:** bc1qu45ws52gkjgmwgu8gmqh2ejkcf4clt93jnnvsm
 

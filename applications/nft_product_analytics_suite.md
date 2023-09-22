@@ -1,10 +1,6 @@
-# Project Overview
+# NFT Product Analytics Suite
 
 ---
-
-## Project Name
-
-NFT Product Analytics Suite
 
 **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/675#issuecomment-961422841)
 
@@ -13,7 +9,9 @@ NFT Product Analytics Suite
 Health Hero
 
 ## Payment Address
+
 0x9CcB0Fb827Aa2418121b6D20FD23c8e2c341b081
+
 ## Overview
 
 ### Introduction
@@ -25,13 +23,13 @@ Over billions of dollars of digital collectibles (NFTs) have been minted and tra
 The NFT Product Analytics Suite will aggregate various data points both off and on chain to provide NFT minters the metrics they need to use to decide how to best serve their target audience. This will include tracking the transfers of the user's minted NFTs, when and how much they are being sold for, and price trends. We will also aggregate the meta data associated with a given NFT to see the effectiveness of various gamification methods. With this data being tracked, you will be able to compare your NFTs to other leading projects and artists to see what the difference is and how to better target end users.
 
 - Data Gathering
-    - Chain Indexer (find the indexer they've funded)
-    - Marketplaces
+  - Chain Indexer (find the indexer they've funded)
+  - Marketplaces
 - Insights
-    - Chain of custody
-    - Price Trends
-    - Revenue Tracking
-    - Insights about projects
+  - Chain of custody
+  - Price Trends
+  - Revenue Tracking
+  - Insights about projects
 
 ---
 
@@ -55,7 +53,7 @@ Are there any other projects similar to yours in the Substrate / Polkadot / Kusa
 
 ## Team
 
-### Team Members:
+### Team Members
 
 Team Leader:
 
@@ -159,7 +157,7 @@ Costs
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache License 2.0 | 
+| 0a. | License | Apache License 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run a local instance and / or fetch metrics using the application. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -186,7 +184,7 @@ Cost
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache License 2.0 | 
+| 0a. | License | Apache License 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run a local instance and / or fetch metrics using the application. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |

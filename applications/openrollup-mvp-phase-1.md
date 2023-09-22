@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Open rollup - MVP - Phase 1
 
-- **Project Name:** Open rollup - MVP - Phase 1
 - **Team Name:** Open rollup
 - **Payment Address:** 0xC1347410Ee2Fc96C4e5a090FF97E3937A8aE158F (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -142,14 +141,14 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):** 1 FTE
+- **Total Estimated Duration:** 7.5 months
+- **Full-Time Equivalent (FTE):** 1.5 FTE
 - **Total Costs:** 30,000 USD.
 
 ### Milestone 1 — Implement Substrate Modules
 
-- **Estimated duration:** 4 month
-- **FTE:**  1
+- **Estimated duration:** 7.5 month
+- **FTE:**  1.5
 - **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |

@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# SubDAO
 
-* **Project:** SubDAO
 * **Proposer:** [SubDAO Labs](https://github.com/subdao-network)
 * **Payment Address:**  3FcJjvzazcpgmJkesdAfx333fyCudxuAe7
 

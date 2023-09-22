@@ -1,7 +1,5 @@
-# W3F Grant Proposal
+# universaldot.me 
 
-
-- **Project Name:** universaldot.me 
 - **Team Name:** UNIVERSALDOT FOUNDATION
 - **Payment Address:**  12atHxpDhW8cU1wbBTLZsGqaKRyoRVZKFs (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3

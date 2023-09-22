@@ -1,24 +1,22 @@
-# W3F Grant Proposal
+# Relation Graph
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-- **Project Name:** Relation Graph
+
 - **Team Name:** Relationlabs
 - **Payment Address:** 0x9fE784bD844C6c7eB7a570467937e6005eEd1C4C   Ethereum (USDT/DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 - **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/569#issuecomment-1299292773)
 
-
-## Project Overview :page_facing_up:  
+## Project Overview :page_facing_up  
 
 ### Overview
+
 `Relation Graph` is a substrate pallet that allows anyone to use GraphDB in [Substrate platform](https://substrate.io/).
 `Relation Graph` provides organizations with ready-to-use GraphDB service for successfully running Dapps on the Substrate.  using `Relation Graph` Dapps builders can focus on bussiness logic by removing the complexities of Substrate.
 
-
 ### Project Details
-
 
 **Relation Graph**
 
@@ -29,9 +27,9 @@
 3、sparql as blockchain.
 
 It supports the following specifications:
-* [SPARQL 1.1 Query](https://www.w3.org/TR/sparql11-query/), [SPARQL 1.1 Update](https://www.w3.org/TR/sparql11-update/), and [SPARQL 1.1 Federated Query](https://www.w3.org/TR/sparql11-federated-query/).
-* [Turtle](https://www.w3.org/TR/turtle/), [TriG](https://www.w3.org/TR/trig/), [N-Triples](https://www.w3.org/TR/n-triples/), and [N-Quads](https://www.w3.org/TR/n-quads/).
-* [SPARQL 1.1 Query Results JSON Format](https://www.w3.org/TR/sparql11-results-json/) and [SPARQL 1.1 Query Results CSV and TSV Formats](https://www.w3.org/TR/sparql11-results-csv-tsv/).
+- [SPARQL 1.1 Query](https://www.w3.org/TR/sparql11-query/), [SPARQL 1.1 Update](https://www.w3.org/TR/sparql11-update/), and [SPARQL 1.1 Federated Query](https://www.w3.org/TR/sparql11-federated-query/).
+- [Turtle](https://www.w3.org/TR/turtle/), [TriG](https://www.w3.org/TR/trig/), [N-Triples](https://www.w3.org/TR/n-triples/), and [N-Quads](https://www.w3.org/TR/n-quads/).
+- [SPARQL 1.1 Query Results JSON Format](https://www.w3.org/TR/sparql11-results-json/) and [SPARQL 1.1 Query Results CSV and TSV Formats](https://www.w3.org/TR/sparql11-results-csv-tsv/).
 
 ![arch.png](https://user-images.githubusercontent.com/91399393/165587783-c55954fe-6d72-4702-95d9-75a4521e980d.png)
 
@@ -60,7 +58,7 @@ INSERT DATA
 
 - Update Data
 
-Changes to existing triples are performed as a delete operation followed by an insert operation in a single update request. 
+Changes to existing triples are performed as a delete operation followed by an insert operation in a single update request.
 The specification refers to this as `DELETE/INSERT`
 
 Sample SPARQL: update age to `36` for person `P001`
@@ -84,6 +82,7 @@ DELETE WHERE
 :P001 ?p ?o .
 }
 ```
+
 Sample SPARQL: delete partial properties of person `P001`
 
 ```sparql
@@ -93,6 +92,7 @@ DELETE WHERE
       :name ?name .
 }
 ```
+
 2. SPARQL Query
 
 Call RPC `sparql_query` with SPARQL for `query` operations.
@@ -102,7 +102,6 @@ curl -H "Content-Type: application/json" \
     -d '{"id":1, "jsonrpc":"2.0", "method": "sparql_query", "params": ["SELECT ?name ?age  WHERE { :P1 :name ?name; :age ?age .}"]}' \
     http://localhost:9933    
 ```
-
 
 ### Ecosystem Fit
 
@@ -123,7 +122,7 @@ curl -H "Content-Type: application/json" \
 
 - **Contact Name:** Joe Guo
 - **Contact Email:** pikajoe@relationlabs.ai
-- **Website:** https://relationlabs.ai/
+- **Website:** <https://relationlabs.ai/>
 
 ### Legal Structure
 
@@ -132,7 +131,7 @@ curl -H "Content-Type: application/json" \
 
 ### Team's experience
 
-- Jessica Chang  Founder 
+- Jessica Chang  Founder
 
 Crypto and commodity trader
 
@@ -150,47 +149,44 @@ Led team of 200+ members AsiaInfo, HP, AWS
 
 - Santry Huang  CMO
 
-Former CMO at Patract Labs 
+Former CMO at Patract Labs
 
 9+ years of marketing and operation and experience
 
 - Ben Zhang  Chief Software Architect
 
-former core development engineer of IBM, AWS and other companies, 
+former core development engineer of IBM, AWS and other companies,
 
 10+ years of back-end development experience, Problem solving Bigdata
 
 - Joe Guo  CPO
 
-former product leader of top blockchain companies, 
+former product leader of top blockchain companies,
 
 6+ years of project experience in finance, logistics, social networking, games products
 
 ### Team Code Repos
 
-- https://github.com/relationlabs
-- https://github.com/gembin
-- https://github.com/bbo268
+- <https://github.com/relationlabs>
+- <https://github.com/gembin>
+- <https://github.com/bbo268>
 
 ### Team LinkedIn Profiles (if available)
 
-- Jessica Chang, Founder, https://www.linkedin.com/in/jessica-chang-a63313235/ 
-- Santry Huang, CMO, https://www.linkedin.com/in/santryhuang/ 
-- Yann， CTO， https://www.linkedin.com/in/yann-ren-361b91235/ 
-- Joe，CPO，https://www.linkedin.com/in/joe-guo-783780ab/
+- Jessica Chang, Founder, <https://www.linkedin.com/in/jessica-chang-a63313235/>
+- Santry Huang, CMO, <https://www.linkedin.com/in/santryhuang/>
+- Yann， CTO， <https://www.linkedin.com/in/yann-ren-361b91235/>
+- Joe，CPO，<https://www.linkedin.com/in/joe-guo-783780ab/>
 
 ## Development Status :open_book:
 
-
-- We have finished a version on Internet computer.It is a graph database written in Rust and deployed on WASM.Ereryone can try it here(https://kziov-eaaaa-aaaag-aaaxa-cai.ic0.app/ic_graph_developer.html).
-
+- We have finished a version on Internet computer.It is a graph database written in Rust and deployed on WASM.Ereryone can try it here(<https://kziov-eaaaa-aaaag-aaaxa-cai.ic0.app/ic_graph_developer.html>).
 
 ## Development Roadmap :nut_and_bolt:
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 30,000 USD
-
 
 ### Milestone 1 — Relation Graph deploy as pallet，contains insert,query,delete and update
 
@@ -204,7 +200,6 @@ former product leader of top blockchain companies,
 | 0b. | Documentation | We will provide inline documentation and a tutorial of use and deploy pallet |
 | 0c. | Testing Guide | We will add unit tests to cover all basic logic.|
 | 1. | wasm package | We will create a wasm package that can deployed as pallet,contains insert,query,delete and update|  
- 
 
 ### Milestone 2— Expand the basic functions of database，contains ACL,OGM and subgraph
 
@@ -238,6 +233,3 @@ former product leader of top blockchain companies,
 ## Future Plans
 
 - Based on Relation Graph, we intend to provide a Web3 social DAPP build on substrate.
-
-
-

@@ -1,11 +1,8 @@
-# Typechain grant #2
+# Typechain-Polkadot Follow-up
 
-# W3F Grant Proposal
-
-- **Project Name:** [Typechain-Polkadot](https://github.com/727-Ventures/typechain-polkadot)
 - **Team Name:** [727.ventures](https://github.com/727-Ventures)
-- **Payment Address:** ERC 20 ADDRESS:
-0xE21fA452De95466367Ee6F002BDa654D8Be6c337
+- **Payment Address:** ERC 20 (DAI):
+0x352F779203202c99699CdA8cc95adF06CcC8abEf
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -20,7 +17,7 @@ Information about how to interact with a contract (methods names, arguments & re
 
 Interaction with blockchain is done with the polkadot.js library, which only has abstract definitions for the contract in use. Thus users' code cannot be typesafe. And Typechain-Polkadot can change it.
 
-This Grant is a follow-up to the previous grant, [W3F Grant Proposal](https://github.com/w3f/Grants-Program/pull/992)..
+This Grant is a follow-up to the previous grant, [Typechain-Polkadot](https://github.com/w3f/Grants-Program/pull/992)..
 We have decided to add a new tool that will help developers easily integrate typechain to their projects. It will also be compatible with Redspot (if redspot was used for compiler projects, you could just leave most of the things).
 We have some updates on our team, so check them out. And also, we did more work on Milestone 1 than we thought, so now it'll be easier to add new features to the project, so we considered to reestimate our time.
 
@@ -76,15 +73,15 @@ No, we are the first project of the kind in the ecosystem. However, in the Solid
 ### Team members
 
 - **Markian Ivanichok** (СEO of 727.ventures)
-- **Toma Sadova** (Product Owner | 727.ventures)
+- **Fedor Lebed** (Head of Operations | 727.ventures)
 - **Green Baneling** (Blockchain Core Rust Engineer | 727.ventures)
 - **Varex Silver** (Blockchain developer | 727.ventures)
 - **Artem Lech** (Blockchain developer | 727.ventures)
 
 ### Contact
 
-- **Contact Name:** Toma Sadova
-- **Contact Email:** [toma@727.ventures](mailto:toma@727.ventures)
+- **Contact Name:** Fedor Lebed
+- **Contact Email:** [fedor.lebed@727.ventures](mailto:feder.lebed@727.ventures)
 - **Website:** [727.ventures](727.ventures)
 
 ### Legal Structure
@@ -98,8 +95,9 @@ Cay II, P. O. Box 2221, Road Town, Tortola, VG1110, British Virgin Islands.
 **Markian Ivanichok**
 CEO of 727.ventures, Blockchain entrepreneur, Software Engineer. Started my engineering career back when I was 15. Since then, I developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps entrepreneurs to move faster.
 
-**Toma Sadova**
-Toma is the Market Growth Lead, Product Owner of OpenBrush, and the main organizer of the [biggest WASM conference](https://wasm-conference.com/). Toma started her career when she was 14. Since then, Toma has gained a lot of experience in IT technologies, management, leadership, and crypto. She switched four career paths and figured out blockchain/crypto is her calling!
+**Fedor Lebed**
+Fedor is the head of operations at Brushfam, a portfolio company of 727. ventures which is developing the ink! Smart contracts tools.
+Fedor invested in mining pools from 15 years old. He has a background in product management, working with international software products for Tier-1 markets.
 
 **Green Baneling**
 Blockchain Core Developer

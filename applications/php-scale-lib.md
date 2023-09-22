@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# PHP Scale Codec
 
-* **Project Name:** PHP Scale Codec
 * **Team Name:** [gmajor](https://github.com/gmajor-encrypt) 
 * **Payment Address:** 0xC3094f0ddce699a1Ad9Ef2621DF68Cd297a4c44F
 

@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Roloi
 
-- **Project Name:** Roloi
 - **Team Name:** NeoPower
 - **Payment Address:** 0x1f5CE2eDdaAAe75ff62729feE50F861bCDC0b62e (ETH Network -> **USDT**)
 - **Level:** 2

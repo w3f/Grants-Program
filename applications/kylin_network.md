@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Kylin Network
 
-* **Project:** Kylin Network
 * **Proposer:** [Kylin Labs](https://github.com/Kylin-network)
 * **Payment Address:** 3FmU9VRXhnMkgBbQVx1cooYUAuDEajdibm
 

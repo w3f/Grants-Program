@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# Pallet for Decentralized Off-Chain Storage on Skynet
 
-- **Project Name:** Pallet for Decentralized Off-Chain Storage on Skynet
 - **Team Name:** Skynet Labs
 - **Payment Address:** ETH `0xa4e14Aa5F82Cd903d97BE09B921c97E7Fc43d909`
 
@@ -17,6 +16,7 @@ Our intention is to build the initial parts needed for an integration with Skyne
 Skynet is a decentralized storage and web application platform built to use the Sia blockchain network for storage, but in a way that's accessible via the web and available to anyone, without concerning themselves with cryptocurrencies or special software. Skynet provides hosting of robust web-app frontends and storage of application data in a way where users retain control over their data and application data is interoperable between applications.
 
 Off-chain storage is an important problem to solve for blockchain applications, and Skynet meets storage needs well on several fronts by providing:
+
 - a decentralized architecture matching the ethos of blockchains themselves
 - strong, cryptographic guarantees on immutable data
 - mutable data using private keys for write access
@@ -52,14 +52,16 @@ _To be more specific on the functionality needing to be built out in Milestone 1
 > Note: This work is implementing interaction with a pre-existing protocol, so much of the work will be porting code from our Javascript SDK to Rust in a way that feels ergonomic for Substrate developers.
 
 #### Authentication & Portal Preference for HTTP Requests
+
 - All below actions requiring interaction with a Skynet portal should be assumed to be interacting only with the preferred portal and using an authentication mechanism. (Currently we support only encrypted JWTs, but may extend to API keys too.)
 - For example, repinning Skylinks requires a simple HTTP request with optional authentication.
 
 #### Immutable Skyfiles
+
 - Skyfile downloads are just HTTP GET requests.
 - Skyfile uploads come in 2 varieties:
-    - Small Files: Simple HTTP POST requests that return a skylink from the portal
-    - Large Files: Orchestrated HTTP requests implementing the `tus` protocol for increasing reliability by retrying failed chunks.
+  - Small Files: Simple HTTP POST requests that return a skylink from the portal
+  - Large Files: Orchestrated HTTP requests implementing the `tus` protocol for increasing reliability by retrying failed chunks.
 
 #### Mutable Registry Entries
 
@@ -114,9 +116,9 @@ Some use cases where we believe Skynet will be useful for Substrate devs:
 
 ### Contact
 
-* **Contact Name:** Daniel Helm, _Developer Evangelist for Skynet Labs_
-* **Contact Email:** daniel@skynetlabs.com
-* **Website:** https://skynetlabs.com/
+- **Contact Name:** Daniel Helm, _Developer Evangelist for Skynet Labs_
+- **Contact Email:** daniel@skynetlabs.com
+- **Website:** <https://skynetlabs.com/>
 
 ### Legal Structure
 
@@ -129,33 +131,34 @@ The Skynet Labs team (recently renamed from Nebulous) was responsible for the de
 
 ### Team Code Repos
 
-- https://gitlab.com/SkynetLabs/skyd
-- https://github.com/SkynetLabs/skynet-webportal
-- https://github.com/SkynetLabs/skynet-js
+- <https://gitlab.com/SkynetLabs/skyd>
+- <https://github.com/SkynetLabs/skynet-webportal>
+- <https://github.com/SkynetLabs/skynet-js>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/david-vorick-6758a66a/
-- https://www.linkedin.com/in/peterjanbrone/
-- https://www.linkedin.com/in/sevey/
-- https://www.linkedin.com/in/dghelm/
+- <https://www.linkedin.com/in/david-vorick-6758a66a/>
+- <https://www.linkedin.com/in/peterjanbrone/>
+- <https://www.linkedin.com/in/sevey/>
+- <https://www.linkedin.com/in/dghelm/>
 
 ## Development Status :open_book:
 
-Preliminary research has been undertaken into the Polkadot ecosystem generally and substrate development specifically for the purposes of writing this proposal, along with coordinating with the Web3Foundation and Parity team member to make sure the the implementation plans and technical details were thorough and sensible. 
+Preliminary research has been undertaken into the Polkadot ecosystem generally and substrate development specifically for the purposes of writing this proposal, along with coordinating with the Web3Foundation and Parity team member to make sure the the implementation plans and technical details were thorough and sensible.
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
+
 * **Total Estimated Duration:** 8 Months
-* **Full-time equivalent (FTE):**  0.1875 FTE ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** $30,000
+- **Full-time equivalent (FTE):**  0.1875 FTE ([see](https://en.wikipedia.org/wiki/Full-time_equivalent))
+- **Total Costs:** $30,000
 
 ### Milestone 1 - Exploratory Skynet Immutable Off-Chain Storage SDK (Immutable Data Functionality)
-* **Estimated Duration:** 8 months
-* **FTE:**  0.1875 FTE
-* **Costs:** $30,000
 
+* **Estimated Duration:** 8 months
+- **FTE:**  0.1875 FTE
+- **Costs:** $30,000
 
 | Number | Deliverable                                       | Specification                                                                                                                                                                                                                                   |
 | ------ | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -179,7 +182,7 @@ Preliminary research has been undertaken into the Polkadot ecosystem generally a
 
 ### Community engagement
 
-Skynet has a very active developer community, and we'll be sure to create various content around the integration, including promotional write-ups and a highlight video as part of our SiaTV YouTube content. 
+Skynet has a very active developer community, and we'll be sure to create various content around the integration, including promotional write-ups and a highlight video as part of our SiaTV YouTube content.
 
 We engage general audiences and developer audiences with our outreach media, and we'd include content for each audience.
 

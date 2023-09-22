@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# Payments Pallet
 
-* **Project Name:** Payments Pallet  
 * **Team Name:** Virto Network
 * **Payment Address:** pvirtoK3FxBxXjxhkH2yZ4C62gjpgPNhCE9HnrGqzyocfBA (kUSD)
 
@@ -35,16 +34,16 @@ API using Matrix as storage backend.
 
 Payments pallet has been reworked to include
 
-- Escrow-like functionality. Payments are frozen in the seller's account until
+* Escrow-like functionality. Payments are frozen in the seller's account until
   a release is triggered, usually when the parties come to an agreement
   off-chain(an end-to-end encrypted Matrix room in Virto)
-- An incentive mechanism to ensure that buyers release/confirm the payment.
-- Dispute system with a configurable *dispute resolver*, a way for users of the
+* An incentive mechanism to ensure that buyers release/confirm the payment.
+* Dispute system with a configurable *dispute resolver*, a way for users of the
   pallet to dynamically assign an account to each payment individually with the
   permissions to resolve conflicts when disagreements arise.
-- A *fee handler* that allows setting up dynamic fees. e.g. in Virto is used to
+* A *fee handler* that allows setting up dynamic fees. e.g. in Virto is used to
   pay a *local tax* to communities and a *market fee* for marketplaces.
-- Payment with remark to add extra metadata to payments. e.g. in Virto is used
+* Payment with remark to add extra metadata to payments. e.g. in Virto is used
   to incentive people buying via Marketplaces as the fee handler can use the
   data to apply discounts.
 
@@ -79,9 +78,9 @@ to the Kusama ecosystem.
 
 ### Contact
 
-* **Contact Name:** Daniel Olano 
+* **Contact Name:** Daniel Olano
 * **Contact Email:** we@virto.team
-* **Website:** https://virto.network
+* **Website:** <https://virto.network>
 
 ### Legal Structure
 
@@ -96,7 +95,7 @@ facilitate seamless fiat to crypto onboarding for users with varied financial
 literacy to combat the plague of hyperinflation across Latin America, but is
 excited to expand to failing fiat economies worldwide. He is currently
 facilitating the first Rust developer workshop in Spanish to increase
-visibility of Substrate and Polkadot to developers across LATAM. 
+visibility of Substrate and Polkadot to developers across LATAM.
 
 **Qian Che** is an Economist based in Berlin with a passion of solving
 problems that concern public welfare. She has research experience in game
@@ -112,27 +111,27 @@ engineer across the stack of programming languages underpinning Web3
 technologies, including Rust, Python, and Solidity. He is currently working as
 a runtime developer part-time with Valibre specializing in cross-chain
 transfers and escrow. Stanly’s passion for distributed systems stems from the
-opportunity it provides to reach everyone by eliminating systemic barriers. 
+opportunity it provides to reach everyone by eliminating systemic barriers.
 
 **David Barinas** is a hacker minded entrepreneur, ex-CTO and co-founder of
 Valiu, a YCombinator startup providing USD pegged accounts and remittances to
 people in Latin-America. Excited to apply his expertise in on&off ramps using
 Virto Network as the decentralized backend infrastructure for
 [*Bloque*](https://www.joinbloque.com)(payments, automation tools and analytics
-for merchants in latam). 
+for merchants in latam).
 
 ### Team Code Repos
 
-* https://github.com/virto-network/ 
+* <https://github.com/virto-network/>
 
 ### Team Github
 
-* **Daniel Olano:** https://github.com/olanod
-* **Qian Che:** https://github.com/cheqian0602
-* **Stanly Johnson:** https://github.com/stanly-johnson
-* **David Barinas:** https://github.com/stanly-johnson
-* **Kenji Phang:** https://github.com/KenjiPcx
-* **Gabriela Azcona:** https://github.com/azconita
+* **Daniel Olano:** <https://github.com/olanod>
+* **Qian Che:** <https://github.com/cheqian0602>
+* **Stanly Johnson:** <https://github.com/stanly-johnson>
+* **David Barinas:** <https://github.com/stanly-johnson>
+* **Kenji Phang:** <https://github.com/KenjiPcx>
+* **Gabriela Azcona:** <https://github.com/azconita>
 
 ## Development Status :open_book:
 
@@ -169,17 +168,17 @@ milestones out of which the first one is already completed.
 | 0a. | Documentation | We will extend the documentation to include example on how to implement custom handlers and configuration of the extra features. |
 | 0b. | Article | We will create an article in virto.network talking about the benefits of the payments pallet and how it can be used by anyone in the ecosystem. |
 | 1. | Stand-alone | Making the pallet generic and without being tight to Virto-only features. Create pull request in ORML repository to have the pallet included |  
-| 2. | Fee processing | Configurable system to allow custom logic to charge extra fees that might be used by merchants. | 
+| 2. | Fee processing | Configurable system to allow custom logic to charge extra fees that might be used by merchants. |
 | 3. | Remarks system | Making payments with metadata to allow custom login react differently based on the payment information. |  
 
 ## Future Plans
 
-- Integrating the payments pallet in the ORML or Substrate repositories to
+* Integrating the payments pallet in the ORML or Substrate repositories to
   serve a bigger audience.
-- Use the payments pallet in an existing Kusama parachain to expedite the
+* Use the payments pallet in an existing Kusama parachain to expedite the
   launch and initial validation of *swap.cash*, Virto's reference use case of
   decentralized on&off-ramps for the Kusama ecosystem.
-- Create a first stable version of
+* Create a first stable version of
   [Valor](https://github.com/virto-network/valor), Virto's runtime that enables
   decentralizable APIs and progressive decentralization.
 

@@ -1,6 +1,5 @@
-# Project Libra
+# Libra - Decentralized Payment Network
 
-- **Project Name:** Libra - Decentralized Payment Network
 - **Team Name:** @Scale Technologies
 - **Payment Address:** 0x77AE9e7c90E6f6137AC3b3cd09A4bdc4654A0fe5 (ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -26,6 +25,7 @@ Resolvers Network leverages the power of blockchain and the community to resolve
 Libra bridges the gap between blockchain and eCommerce to enable all people to exchange value and transact globally, securely, at significantly lower cost, and more inclusively than traditional financial systems allow.  
 
 ### Project Details
+
 The project's scope is to build three core components that define the foundation of Libra Network: LRP protocol, Resolver Networks, and Javascript SDK. From these components, people can easily integrate the cryptocurrencies payment to their business while their customers are protected by Libra Network.
 
 #### LRP protocol
@@ -34,10 +34,10 @@ LRP protocol allows buyer and seller to make a p2p payment while the cryptocurre
 
 ![Project Libra-LRP Protocol](https://user-images.githubusercontent.com/92568442/148349639-145690aa-98c3-4e13-b9a3-ccfa01d55f6a.png)
 
-
 For the LRP protocol, the data model for LRP protocol should be generic and flexible for any use cases. Besides, it should be small to store on-chain but need to provide enough information if needed (e.g. dispute case).
 
 ##### Data model
+
 ```json
 {
   "id": "uuid",
@@ -52,6 +52,7 @@ For the LRP protocol, the data model for LRP protocol should be generic and flex
   "updated_at": 1640761504444
 }
 ```
+
 ##### State transition
 
 ![state-transition](https://user-images.githubusercontent.com/92568442/148345661-fd24292a-389b-44ef-95a5-5d8422f546c6.png)
@@ -69,9 +70,11 @@ This diagram shows the whole dispute process
 ![Project Libra- Dispute process](https://user-images.githubusercontent.com/92568442/148343813-2f581a72-36b7-4065-bf69-cb0d642f25f5.png)
 
 #### SDK
+
 The SDK is indispensable for the product’s adoption. It should be developer-friendly and easy to integrate with a few lines of the code. The interface of the SDK is listed below.
 
 **Install**
+
 ```bash
 npm install libra-sdk
 ```
@@ -81,17 +84,18 @@ import Libra from "@libra-sdk";
 
 const libra = new Libra(config);
 ```
+
 **Checkout**
 
 Create a payment with the SDK
 
 ```jsx
 const payment = libra.createPayment({
-	payee,
-	amount,
-	currency,
-	description,
-	receipt
+ payee,
+ amount,
+ currency,
+ description,
+ receipt
 });
 ```
 
@@ -101,22 +105,23 @@ Cancel a payment (before the seller accept)
 libra.cancelPayment(payment.id)
 ```
 
-Complete a payment 
+Complete a payment
 
 ```jsx
 libra.complePayment(payment.id);
 ```
 
-Dispute a payment 
+Dispute a payment
 
 ```jsx
 libra.dispute({
-	paymentId: payment.id,
-	evidence: {...}
+ paymentId: payment.id,
+ evidence: {...}
 });
 
 libra.escalateDispute(disputeId);
 ```
+
 **Seller’s dashboard**
 
 Get payments
@@ -153,11 +158,11 @@ Setup identity
 
 ```jsx
 libra.setIdentity({
-	displayName,
-	legalName,
-	email,
-	website,
-	...
+ displayName,
+ legalName,
+ email,
+ website,
+ ...
 });
 ```
 
@@ -165,9 +170,9 @@ Apply resolver
 
 ```bash
 libra.apply({
-	role: "resolver",
-	application: {...},
-	deposit: 100000,
+ role: "resolver",
+ application: {...},
+ deposit: 100000,
 });
 ```
 
@@ -175,9 +180,9 @@ Nominate
 
 ```jsx
 libra.nominate({
-	address,
-	amount,
-	...
+ address,
+ amount,
+ ...
 });
 ```
 
@@ -199,11 +204,11 @@ libra.rejectAppeal(disputeId);
 
 ### Ecosystem Fit
 
-- **Where and how does your project fit into the ecosystem?** Libra is built on top of Substrate. Thanks to Substrate's ecosystem, Libra supports all substrate tokens as a payment method by default. 
+- **Where and how does your project fit into the ecosystem?** Libra is built on top of Substrate. Thanks to Substrate's ecosystem, Libra supports all substrate tokens as a payment method by default.
 - **Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?**
 Libra's target audience is sellers/buyers who want a safer, faster, more straightforward solution for online payment using cryptocurrencies. Through Resolvers Network, Libra also brings new jobs and a new way to earn income by solving disputes.  
-- **What need(s) does your project meet?** Libra provides a safe mechanism for both buyers and sellers to transact online 
-- **Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?** As far as we know, Libra, with its unique LRP protocol and Resolvers network, is the first project designed to solve real-world eCommerce transactions. There are no similar projects in the ecosystem yet. 
+- **What need(s) does your project meet?** Libra provides a safe mechanism for both buyers and sellers to transact online
+- **Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?** As far as we know, Libra, with its unique LRP protocol and Resolvers network, is the first project designed to solve real-world eCommerce transactions. There are no similar projects in the ecosystem yet.
 
 ## Team :busts_in_silhouette:
 
@@ -216,37 +221,40 @@ Libra's target audience is sellers/buyers who want a safer, faster, more straigh
 
 - **Contact Name:** Anthony Dong
 - **Contact Email:** anthony@atscale.xyz
-- **Website:** https://atscale.xyz
+- **Website:** <https://atscale.xyz>
 
 ### Legal Structure
+
 (We're in the process of registering the legal entity)
+
 - **Registered Address:** N/A
 - **Registered Legal Entity:** N/A
 
 ### Team's experience
 
-AtScale is a team specialized in blockchain development. We aim to rely on blockchain technologies to solve real-world problems and facilitate blockchain-based products to mass adoption. 
+AtScale is a team specialized in blockchain development. We aim to rely on blockchain technologies to solve real-world problems and facilitate blockchain-based products to mass adoption.
 
-- **Anthony Dong**: Anthony successfully built and exited several internet startups during the last ten years. Anthony was the CTO in his recent company, helping the company bootstrapped from zero to $15 million ARR (Annual Recurring Revenue) in 2 years. 
+- **Anthony Dong**: Anthony successfully built and exited several internet startups during the last ten years. Anthony was the CTO in his recent company, helping the company bootstrapped from zero to $15 million ARR (Annual Recurring Revenue) in 2 years.
 - **Andrew Le**: Andrew was the Lead Researcher at his previous company, specializing in AI/Machine Learning and Blockchain technologies. He led the development to build one of the most accurate body measurement prediction engines in the industry during his past job.
 
 ### Team Code Repos
 
-- https://github.com/atscaletech/<AtScale Technologies>
-- https://github.com/atscaletech/polkadot-hackathon-apac<Hackathon Submission>
+- <https://github.com/atscaletech/> (AtScale Technologies)
+- <https://github.com/atscaletech/polkadot-hackathon-apac> (Hackathon Submission)
 
 ### Team LinkedIn Profiles (if available)
 
 Due to privacy concerns, the team information will provide in private by email if requested.
 
 ## Development Status :open_book:
+
 Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already built a proof of concept application and here is our hackathon submission:
 
-- Pitch video: https://youtu.be/pR4_2nrrJQQ
-- Demo screencast: https://youtu.be/cR7gKSzVoAY
-- Live demo: https://app.libra.atscale.xyz
-- Explorer: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.libra.atscale.xyz#/explorer 
-- Git repository: https://github.com/atscaletech/polkadot-hackathon-apac
+- Pitch video: <https://youtu.be/pR4_2nrrJQQ>
+- Demo screencast: <https://youtu.be/cR7gKSzVoAY>
+- Live demo: <https://app.libra.atscale.xyz>
+- Explorer: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.libra.atscale.xyz#/explorer>
+- Git repository: <https://github.com/atscaletech/polkadot-hackathon-apac>
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -255,7 +263,7 @@ Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already b
 - **Total Estimated Duration:** ~ 4 months
 - **Full-Time Equivalent (FTE):** 1.5 FTE
 - **Total Costs:** 16,000 USD
-	
+
 ### Milestone 1 - LRP Protocol Implementation
 
 - **Estimated duration:** 1 month
@@ -269,7 +277,7 @@ Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already b
 | 0c. | Testing | All of the code will be covered by unit and integration test suites with the testing instruction.  |
 | 0d. | Live testnet | The live testnet with a few nodes and public RPC endpoints to test or connect more nodes. |
 | 1. | Substrate module: LRP pallet | The LRP protocol implementation. |  
-| 2. | Substrate module: Currencies pallet | The extended module of ORML currencies allows creates and manages currencies by bonding some native tokens. |    
+| 2. | Substrate module: Currencies pallet | The extended module of ORML currencies allows creates and manages currencies by bonding some native tokens. |
 | 3. | Substrate based chain | The integration LRP protocol with substrate chain. |  
 
 ### Milestone 2 - Resolvers Network Implementation
@@ -314,11 +322,11 @@ In the short term, we plan to launch the validation and testing phase:
 - **Canary network launch:** At the end of this phase, we plan to join the Kusama para-chain auction and launch the canary network.
 
 For the long term plan, we will:
+
 - Launch Polkadot para-chain
 - Acquire more users and boost the network's GMV (gross merchandise value)
 - Scale up the resolvers networks
 - Develop tools for Libra such as fraud payment detection, API, AI/ML dispute processor, ...
-
 
 ## Additional Information :heavy_plus_sign:
 

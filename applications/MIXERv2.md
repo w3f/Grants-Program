@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Webb Mixer Extended
 
-* **Project Name:** Webb Mixer Extended
 * **Team Name:** Webb
 * **Payment Address:** 0xAC8E9305dc7AC95685c7D52E759c35aCd9eB90Ff
 

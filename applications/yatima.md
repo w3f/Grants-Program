@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# Yatima
 
-* **Project Name:** Yatima
 * **Team Name:** [Yatima Inc](https://github.com/yatima-inc/yatima).
 * **Payment Address:** 3N2bLsFX6UtJ3MXdnVvm87dHaQTPutDiqA
 
@@ -37,7 +36,7 @@ writing high-assurance smart contracts.
 
 Yatima aims to help develop the functional programming ecosystem on Substrate
 and the Polkadot ecosystem. We have developed a graph-based runtime for the Yatima language
-with fully lazy evaluation, sharing, and whole program optimization. This runtime could also 
+with fully lazy evaluation, sharing, and whole program optimization. This runtime could also
 be targeted by other functional languages. The Yatima runtime is
 similar in many respects to Haskell Core, or the [GRIN
 IR](https://grin-compiler.github.io/) but is implemented in deterministic
@@ -59,19 +58,19 @@ to be serialized into IPLD objects and shared over the peer-to-peer IPFS network
 
 #### Deliverables
 
-- A `sp_ipld` crate for interacting with IPFS CID, Multihash and IPLD based on
+* A `sp_ipld` crate for interacting with IPFS CID, Multihash and IPLD based on
   [`ipfs-rust/libipld`](https://github.com/ipfs-rust/libipld), but which is
   Substrate pallet compatible. This is a necessary dependency for Yatima Core,
   but is an independent deliverable that could be useful for many other
   Substrate projects.
 
-- A `sp_im` crate for creating immutable datastructures, based on
+* A `sp_im` crate for creating immutable datastructures, based on
   [`bodil/im-rs`](https://github.com/bodil/im-rs), but which is
   Substrate pallet compatible. This is a necessary dependency for Yatima Core,
   but is an independent deliverable that could be useful for many other
   Substrate projects.
 
-- A `sp_yatima` crate integrated with `sp_ipld`, `sp_im` and `sp_std` that
+* A `sp_yatima` crate integrated with `sp_ipld`, `sp_im` and `sp_std` that
   packages the `yatima_core`
   [crate](https://github.com/yatima-inc/yatima/tree/main/core) and a
   `yatima-node` repository based on the
@@ -79,8 +78,9 @@ to be serialized into IPLD objects and shared over the peer-to-peer IPFS network
   showcasing how `sp_yatima` can be imported into a Substrate Node as a pallet.
 
 This proposal does *not* include in its scope:
-  - Implementing a smart contract eDSL in Yatima.
-  - Integrating "effectful" features like contract deployment, calling or
+
+* Implementing a smart contract eDSL in Yatima.
+* Integrating "effectful" features like contract deployment, calling or
     compatiblity with `pallet_contracts`.
 
 We would plan to propose the above for follow-up work upon satisfactory
@@ -145,17 +145,17 @@ or the graph-reduction runtime.
 ### Team members
 
 * Name of team leader: John Burnham
-* Names of team members 
-  - Gabriel Barreto
-  - Anders Sorby
-  - Sam Burnham
-  - Caden Haustein
+* Names of team members
+  * Gabriel Barreto
+  * Anders Sorby
+  * Sam Burnham
+  * Caden Haustein
 
 ### Contact
 
 * **Contact Name:** John Burnham
 * **Contact Email:** john@yatima.io
-* **Website:** https://github.com/yatima-inc/yatima
+* **Website:** <https://github.com/yatima-inc/yatima>
 
 ### Legal Structure
 
@@ -170,7 +170,7 @@ which was supported by an Ethereum Foundation Grant (which John presented on at 
 
 Prior to that, John worked on Tezos where he created and led initial development
 of the [Morley Framework](https://gitlab.com/morley-framework), as well as
-creating the [TZIP standards process](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-1/tzip-1.md). 
+creating the [TZIP standards process](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-1/tzip-1.md).
 Before that, John cofounded tlon.io. He was a Thiel Fellow in 2011 and dropped out of
 Dartmouth College.
 
@@ -192,19 +192,19 @@ for the summer.
 
 ### Team Code Repos
 
-* https://github.com/yatima-inc
-* https://github.com/yatima-inc/yatima
-* https://github.com/yatima-inc/introit
-* https://github.com/yatima-inc/sp-ipld
-* https://github.com/yatima-inc/yatima-haskell-prototype
+* <https://github.com/yatima-inc>
+* <https://github.com/yatima-inc/yatima>
+* <https://github.com/yatima-inc/introit>
+* <https://github.com/yatima-inc/sp-ipld>
+* <https://github.com/yatima-inc/yatima-haskell-prototype>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* https://github.com/johnchandlerburnham
-* https://github.com/gabriel-barrett
-* https://github.com/Anderssorby
-* https://github.com/samuelburnham
-* https://github.com/brightly-salty
+* <https://github.com/johnchandlerburnham>
+* <https://github.com/gabriel-barrett>
+* <https://github.com/Anderssorby>
+* <https://github.com/samuelburnham>
+* <https://github.com/brightly-salty>
 
 ### Team LinkedIn Profiles (if available)
 
@@ -214,17 +214,17 @@ Please email john@yatima.io for team member CVs.
 
 ### Yatima Rust implementation
 
-* https://github.com/yatima-inc/yatima
+* <https://github.com/yatima-inc/yatima>
 
 The language is still pre-alpha, but is rapidly nearing it's first numbered
 alpha version. A brief overview of the current state of the implementation:
 
 The [`core`](https://github.com/yatima-inc/yatima/tree/main/core) subcrate
 contains the deterministic `no_std` language core:
-- nom parsers for the core syntax
-- A Rust quasiquotation macro that allows yatima to be used as a functional
+* nom parsers for the core syntax
+* A Rust quasiquotation macro that allows yatima to be used as a functional
   eDSL directly in Rust. We implement much of the type-system this way.
-- a typedef syntax sugar for generating raw core self-type lambda-encoded
+* a typedef syntax sugar for generating raw core self-type lambda-encoded
   datatypes. The syntax:
 
   ```
@@ -256,15 +256,15 @@ contains the deterministic `no_std` language core:
   the core language, but it is extremely powerful on a theory level, and is
   what allows Yatima to implement dependent types in a fraction of the
   code length of e.g. the language core of Idris2.
-- the λ-DAG based evaluator, with a typechecking version and a runtime
+* the λ-DAG based evaluator, with a typechecking version and a runtime
   version (where non-runtime relevant type information is erased). This uses
   extensive `unsafe` Rust due its heavy use of raw-pointers, doubly-linked-lists
   ([`core/dll.rs`](https://github.com/yatima-inc/yatima/blob/main/core/src/dll.rs)).
-- The serialization system to embed Yatima terms, definitions and packages into
+* The serialization system to embed Yatima terms, definitions and packages into
   [IPLD](ipld.io). The system is compatible with the `go-ipfs` reference
   implementation so that content-ids (CIDs) computed by the `core` match the
   CIDs once an object is uploaded to ipfs
-- Exposed Rust primitive and operations, such as signed and unsigned ints,
+* Exposed Rust primitive and operations, such as signed and unsigned ints,
   BigInt, Text (from our fork of
   [`ropey`](https://docs.rs/ropey/1.3.0/ropey/index.html) rather than String)
 
@@ -282,14 +282,14 @@ contains a very rough prototype of a web repl.
 
 ### Yatima Standard Library
 
-* https://github.com/yatima-inc/introit
+* <https://github.com/yatima-inc/introit>
 
-The Yatima standard library is in its early stages, but contains definitions for 
+The Yatima standard library is in its early stages, but contains definitions for
 a variety of different datatypes, such as `vector`, `b_tree`, preliminary work
 on theorem proving structures like a propositional equality type
 ([equal.ya](https://github.com/yatima-inc/introit/blob/main/equal.ya)), as well
 as a bare-bones port of the Haskell `megaparsec` parser combinator library
-([parsec.ya](https://github.com/yatima-inc/introit/blob/main/parsec.ya)). 
+([parsec.ya](https://github.com/yatima-inc/introit/blob/main/parsec.ya)).
 
 In `vector.ya` we can see an example of using proofs to show that we can always
 take the head of a non-empty `Vector`:
@@ -327,7 +327,7 @@ Type Error: Type Mismatch from 1:15 to 1:55 in bafk2bzacectxsdnlokzhsmqxklxxc2qm
 
 ### Yatima Haskell prototype
 
-* https://github.com/yatima-inc/yatima-haskell-prototype
+* <https://github.com/yatima-inc/yatima-haskell-prototype>
 
 This is an early experimental version of the language built to test ideas
 around combining self-types with Quantitative Type Theory, and whether the
@@ -341,8 +341,8 @@ mature.
 
 We have prototypes of the `sp_ipld` and `sp_im` repositories here:
 
-* https://github.com/yatima-inc/sp-ipld
-* https://github.com/yatima-inc/sp-im
+* <https://github.com/yatima-inc/sp-ipld>
+* <https://github.com/yatima-inc/sp-im>
 
 These have some initial functionality, but are lacking significant features,
 test-coverage, and documentation. However, what exists is sufficient to
@@ -350,11 +350,12 @@ demonstrate that these libraries can be built in a `no_std` context using the
 `sp_std` library.
 
 ### Relevant Papers and prior art
+
 - Yatima's core reduction machine is based on the λ-DAG technique described in
   [Bottom-up β-reduction](https://www.ccs.neu.edu/home/wand/papers/shivers-wand-10.pdf).
-- Yatima's approach to inductive datatypes is based on [Self Types for Dependently Typed Lambda Encodings](https://homepage.divms.uiowa.edu/~astump/papers/fu-stump-rta-tlca-14.pdf).
-- Yatima's quantitative types are based on [Syntax and Semantics of Quantitative Type Theory](https://bentnib.org/quantitative-type-theory.pdf).
-- Many aspects of the language, particularly its libraries and type-equality
+* Yatima's approach to inductive datatypes is based on [Self Types for Dependently Typed Lambda Encodings](https://homepage.divms.uiowa.edu/~astump/papers/fu-stump-rta-tlca-14.pdf).
+* Yatima's quantitative types are based on [Syntax and Semantics of Quantitative Type Theory](https://bentnib.org/quantitative-type-theory.pdf).
+* Many aspects of the language, particularly its libraries and type-equality
   algorithm, are adapted from the authors' previous work on [The Formality proof language](https://github.com/moonad/Formality-tmp).
 
 ## Development Roadmap :nut_and_bolt:
@@ -412,7 +413,6 @@ demonstrate that these libraries can be built in a `no_std` context using the
 | 1.     | Substrate module: `sp_yatima` | We will create a Substrate module that will allow for parsing, typechecking and evaluating Yatima language expressions                    |
 | 2.     | Repository: `yatima-node`     | We will create a fork of the `substrate-node-template` that imports `sp_yatima`                                                           |
 
-
 ## Future Plans
 
 If this initial project is successful, we plan to apply for a follow-up grant to
@@ -426,7 +426,7 @@ parathread or parachain.
 
 Additionally, we would like to explore other applications of Yatima, including
 developing the web environment further, and exploring frontend application
-development, possibly via a model like https://seed-rs.org/. Another possible
+development, possibly via a model like <https://seed-rs.org/>. Another possible
 area of exploration would be to integrate with the [lunatic
 runtime](https://github.com/lunatic-solutions/lunatic), which uses WASM modules
 to provide Erlang style lightweight processes (green threads). There is some

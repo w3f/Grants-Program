@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Web3 Compatible API for Substrate EVM Chains
 
-* **Project:** Web3 Compatible API for Substrate EVM Chains
 * **Proposer:** https://github.com/PureStake, @dtyoo
 * **Payment Address:** 1EMk3z9VMmXN6y3qwA37s6Qps4xRKGGE9G
 

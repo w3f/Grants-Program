@@ -1,9 +1,9 @@
-# W3F Grant Proposal
+# Polkaholic.io's Multi-Chain Substrate Block Explorer
 
-- **Project Name:** Polkaholic.io's Multi-Chain Substrate Block Explorer
 - **Team Name:** Colorful Notion
 - **Payment Address:** Polkadot 13rTinCWgc38a2wZzme28dFbViQraCowTRjQqFLEWwdMTvFW
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1286#pullrequestreview-1188260010)
 
 ## Project Overview :page_facing_up:
 

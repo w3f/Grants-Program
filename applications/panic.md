@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# PANIC
 
-- **Project Name:** PANIC
 - **Team Name:** Simply VC
 - **Payment Address:** 0x672b62B64abe450F8C6957785fA5c79E33422aEF (ETH/USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

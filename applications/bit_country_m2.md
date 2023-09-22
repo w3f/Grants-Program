@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Bit.Country Milestone 2 (Follow up grant after M1 delivered) by MVP.STUDIO
 
-- **Project:** Bit.Country Milestone 2 (Follow up grant after M1 delivered) by MVP.STUDIO
 - **Proposer:** https://github.com/bit-country
 - **Payment Address:** bc1q8754c69ldnd4w7jwucv4hfyr2kvefxdqcuztge
 

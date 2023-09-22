@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Starry Protocol
 
-* **Project Name:** Starry Protocol
 * **Proposer:** [Starry Network](https://github.com/Starry-Network)
 * **Payment Address:** 0xe29DE8c6088d241647e6456F8b4755a3D0f7c8B1
 

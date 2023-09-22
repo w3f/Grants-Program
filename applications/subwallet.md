@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# subwallet
 
-* **Project:** subwallet
 * **Proposer:** [Faber](https://github.com/yxf)
 * **Payment Address:**  1BHAopuz14S7L58oea1e6eTZpXuzYt8Ap9
 

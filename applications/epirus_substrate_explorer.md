@@ -1,10 +1,8 @@
-# W3F Grant Proposal
+# Epirus Substrate Explorer
 
--   **Project Name:** Epirus Substrate Explorer
--   **Team Name:** Web3 Labs Ltd
--   **Payment Address:** 0xc905c448db9942c662fcb1680f3ecfcd0592409c
--   **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
-    
+- **Team Name:** Web3 Labs Ltd
+- **Payment Address:** 0xc905c448db9942c662fcb1680f3ecfcd0592409c
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -48,7 +46,7 @@ The extension modules are data processors with a function-specific processing sc
  C4<sup>*</sup>| Base Processors   | Components for indexing and decoding the fundamental Substrate data types, i.e. blocks, extrinsics, events and logs.
  C5 | Accounts Module   | Module to index accounts and balances information.<br/>This is a prerequisite for the Contracts module (C6).
  C6 | Contracts Module  | Module to support the contracts pallet and ink! smart contracts.<br/>Features:<br/><ul><li>Support of two step contract deployment</li><li>Detection of contract code uploads and indexing of WASM hashes</li><li>Detection of contract instantiations and indexing of contract accounts</li><li>Basic decoding of contract calls, i.e. 4 bytes selector and unnamed parametersIndexing of contract related calls and events</li></ul>
-    
+
 **Notes**
 <sup>*</sup> Depending on the readiness of the existing ecosystem projects for indexing and GraphQL API building, e.g. Substrate Archive, Subsquid or Subquery, could be used to provide the functionality of the API (C2), Substrate Indexer (C3) and Base Processors (C4).
 
@@ -60,34 +58,38 @@ The user interface will be based on the existing Epirus look & feel:
 
 ![Epirus Look and Feel](https://www.web3labs.com/hubfs/Web3%20Labs%20Theme%20Files/Frame_new.jpg)
 
-
 ### Technology Stack
 
 **Web UI**
--   [Typescript](https://www.typescriptlang.org/) – Strongly typed programming language that builds on JavaScript.
--   [React](https://reactjs.org/) / [Preact](https://preactjs.com/) – JavaScript library for building user interfaces. We will consider using Preact, the fast 3kB alternative to React with the same modern API, to reduce the package size if the bundler tree shaking is not enough.
--   [Tailwind CSS](https://tailwindcss.com/) – A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.
-    
+
+- [Typescript](https://www.typescriptlang.org/) – Strongly typed programming language that builds on JavaScript.
+- [React](https://reactjs.org/) / [Preact](https://preactjs.com/) – JavaScript library for building user interfaces. We will consider using Preact, the fast 3kB alternative to React with the same modern API, to reduce the package size if the bundler tree shaking is not enough.
+- [Tailwind CSS](https://tailwindcss.com/) – A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.
+
 **Data Processing<sup>*</sup>**
--   [Kotlin](https://kotlinlang.org/) – Modern, concise and safe programming language.
--   [Quarkus](https://quarkus.io/) – Kubernetes native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards.
--   [GraalVM](https://www.graalvm.org/) – High-performance JDK distribution. It is designed to accelerate the execution of applications written in Java and other JVM languages while also providing runtimes for JavaScript, Ruby, Python, and a number of other popular languages. GraalVM’s polyglot capabilities make it possible to mix multiple programming languages in a single application while eliminating any foreign language call costs.
--   [PolkaJ](https://github.com/emeraldpay/polkaj) – Java client library to use and access API of Polkadot based networks.
+
+- [Kotlin](https://kotlinlang.org/) – Modern, concise and safe programming language.
+- [Quarkus](https://quarkus.io/) – Kubernetes native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards.
+- [GraalVM](https://www.graalvm.org/) – High-performance JDK distribution. It is designed to accelerate the execution of applications written in Java and other JVM languages while also providing runtimes for JavaScript, Ruby, Python, and a number of other popular languages. GraalVM’s polyglot capabilities make it possible to mix multiple programming languages in a single application while eliminating any foreign language call costs.
+- [PolkaJ](https://github.com/emeraldpay/polkaj) – Java client library to use and access API of Polkadot based networks.
 
 **<sup>*</sup>** _Depending on the maturity of the Substrate JVM ecosystem, we can switch to languages with more mature support for Substrate._
 
 **Web API**
--   [GraphQL](https://graphql.org/) – Query language for APIs and a runtime for fulfilling those queries with your existing data.
--   [PostGraphile](https://www.graphile.org/postgraphile/) – Builds a powerful, extensible and performant GraphQL API from a PostgreSQL schema.
-    
+
+- [GraphQL](https://graphql.org/) – Query language for APIs and a runtime for fulfilling those queries with your existing data.
+- [PostGraphile](https://www.graphile.org/postgraphile/) – Builds a powerful, extensible and performant GraphQL API from a PostgreSQL schema.
+
 **Database**
--   [PostgreSQL](https://www.postgresql.org/) – Powerful open source object-relational database. Provides first-class support for JSON data types.
--   [Citus](https://github.com/citusdata/citus) – PostgreSQL extension that transforms Postgres into a distributed database—so you can achieve high performance at any scale.
+
+- [PostgreSQL](https://www.postgresql.org/) – Powerful open source object-relational database. Provides first-class support for JSON data types.
+- [Citus](https://github.com/citusdata/citus) – PostgreSQL extension that transforms Postgres into a distributed database—so you can achieve high performance at any scale.
 
 **Synergies to Explore**
--   [Substrate Archive](https://github.com/paritytech/substrate-archive) – As a possibility to be evaluated, the Substrate Indexer and Base Processors could be provided by this Substrate blockchain indexing engine.
--   [Subsquid](https://github.com/subsquid/squid) – A query node framework for Substrate-based blockchains. In very simple terms, Subsquid can be thought of as an ETL tool, with a GraphQL server included. It is alpha stage software.
--   [Subquery](https://subquery.network/) - A framework to define your own APIs to expose blockchain indexed data. It is similar to the Graph Network.
+
+- [Substrate Archive](https://github.com/paritytech/substrate-archive) – As a possibility to be evaluated, the Substrate Indexer and Base Processors could be provided by this Substrate blockchain indexing engine.
+- [Subsquid](https://github.com/subsquid/squid) – A query node framework for Substrate-based blockchains. In very simple terms, Subsquid can be thought of as an ETL tool, with a GraphQL server included. It is alpha stage software.
+- [Subquery](https://subquery.network/) - A framework to define your own APIs to expose blockchain indexed data. It is similar to the Graph Network.
 
 ### Ecosystem Fit
 
@@ -95,13 +97,14 @@ Substrate Epirus Explorer, in general, aims to deliver a great user experience w
 
 The scope of this grant includes a baseline implementation of the core mechanisms and an elementary information display for contracts and accounts. The user interface will fulfil the minimum requirements for the prospective customers of the system to deliver a meaningful and fully functional baseline.
 
-#### Audience 
+#### Audience
+
 Name | Usages
 :--|:--
 Developers | <ol><li>Developing backend extension modules</li><li>Developing UI modules</li></ol>
 Service Providers | <ol><li>Running an Explorer instance</li><li>Customising the Explorer look and feel</li></ol>
 End Users | <ol><li>Accessing precise and user-friendly blockchain information</li><li>Verifying ink! smart contracts</li></ol>
-    
+
 #### Existing Projects
 
 There are other Substrate based blockchain explorers, notably Subscan and Polkascan. Both are general Web3 explorers, whilst Subscan provides a better user experience, supports some pre-build pallets (i.e. staking, EVM and parachain) and exposes a REST API.
@@ -110,11 +113,10 @@ We believe that a single provider cannot absorb all the UI experiences tailored 
 
 Epirus Substrate Explorer differentiates itself from the present offering in the following key points:
 
--   Initial focus on smart contracts and ink! with unique and novel features like verification and standards contract identification.
--   Ease of customisation and branding without tech provider lock-in.
--   Aim for end-to-end modularity and extensibility.
--   Aim to avoid duplication and foster synergies leveraging existing projects in the ecosystem, like Subquery or Subsquid.
-    
+- Initial focus on smart contracts and ink! with unique and novel features like verification and standards contract identification.
+- Ease of customisation and branding without tech provider lock-in.
+- Aim for end-to-end modularity and extensibility.
+- Aim to avoid duplication and foster synergies leveraging existing projects in the ecosystem, like Subquery or Subsquid.
 
 #### Potential Synergies
 
@@ -132,17 +134,15 @@ Subquery and Subsquid projects are potential candidates to serve as the indexing
 
 ### Overview
 
--   **Total Estimated Duration:** 2 months
--   **Full-Time Equivalent (FTE):** 2 FTE
--   **Total Costs:** 50,000 EUR
-    
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):** 2 FTE
+- **Total Costs:** 50,000 EUR
 
 ### Milestone 1 - Devnet MVP
 
--   **Estimated duration:** 2 months
--   **FTE:** 2
--   **Costs:** 50,000 EUR
-    
+- **Estimated duration:** 2 months
+- **FTE:** 2
+- **Costs:** 50,000 EUR
 
 | Nº  | Deliverable | Specification
 | :-- | :--         | :--
@@ -155,32 +155,28 @@ Subquery and Subsquid projects are potential candidates to serve as the indexing
 
 For this minimum viable product delivery the following features are out of scope:
 
--   Detection of standard contracts, e.g. Open Brush PSP22, PSP34, etc.
--   Uploading verified ABI metadata
--   Decoding of the contract calls based on ABI metadata
--   Decoding of events based on ABI metadata
--   Processing of "intrinsics", i.e. cross-contract interactions equivalent to Ethereum "internal transactions"
-    
+- Detection of standard contracts, e.g. Open Brush PSP22, PSP34, etc.
+- Uploading verified ABI metadata
+- Decoding of the contract calls based on ABI metadata
+- Decoding of events based on ABI metadata
+- Processing of "intrinsics", i.e. cross-contract interactions equivalent to Ethereum "internal transactions"
 
 ## Team :busts_in_silhouette:
 
 ### Team Members
 
--   Marc Fornós
--   Xueying Wang
-    
+- Marc Fornós
+- Xueying Wang
 
 ### Contact
 
--   **Contact Name:** Conor Svensson
--   **Contact Email:** [conor@web3labs.com](mailto:conor@web3labs.com) 
-    
+- **Contact Name:** Conor Svensson
+- **Contact Email:** [conor@web3labs.com](mailto:conor@web3labs.com)
 
 ### Legal Structure
 
--   **Registered Address:** 7 Bell Yard, London, England, WC2A 2JR
--   **Registered Legal Entity:** Web3 Labs Ltd, CRN 10783824
-    
+- **Registered Address:** 7 Bell Yard, London, England, WC2A 2JR
+- **Registered Legal Entity:** Web3 Labs Ltd, CRN 10783824
 
 ### Team's Experience
 
@@ -190,9 +186,8 @@ Xueying Wang pivoted to software development after completing an MSc. in Aerospa
 
 ### Team Code Repositories
 
--   **Web3 Labs:** [https://github.com/web3labs](https://github.com/web3labs)
--   **Web3j project:** [https://github.com/web3j/](https://github.com/web3j/) 
-    
+- **Web3 Labs:** [https://github.com/web3labs](https://github.com/web3labs)
+- **Web3j project:** [https://github.com/web3j/](https://github.com/web3j/)
 
 ## Future Plans
 
@@ -204,29 +199,29 @@ Down below is an illustrative sketch of the phases that could follow.
 
 ### Phase 2 - Marketable System
 
--   **Estimated duration:** 2 months
--   **FTE:** 2
--   **Costs:** 75,000 EUR
-    
+- **Estimated duration:** 2 months
+- **FTE:** 2
+- **Costs:** 75,000 EUR
+
 **Tentative scope:**
--   Refinement of core abstractions and modules
--   Next increment of the Contract module
--   Ability to display different contract widgets based on contract metadata or standard implementations; e.g. PSP22 and PSP34
--   Support for branded themes
-    
+
+- Refinement of core abstractions and modules
+- Next increment of the Contract module
+- Ability to display different contract widgets based on contract metadata or standard implementations; e.g. PSP22 and PSP34
+- Support for branded themes
 
 ### Phase 3 - Web-Scale System
 
--   **Estimated duration:** 2 months
--   **FTE:** 2
--   **Costs:** 75,000 EUR
-    
+- **Estimated duration:** 2 months
+- **FTE:** 2
+- **Costs:** 75,000 EUR
+
 **Tentative scope:**
--   Ready to support a large number of users and transaction volumes
--   Performance analysis and tuning to cope with high volumes
--   Potentially includes horizontal scalability capabilities, e.g. sharding, batch splitting, distributed processing, etc.
--   Monitoring and scalable deployment infrastructure
-    
+
+- Ready to support a large number of users and transaction volumes
+- Performance analysis and tuning to cope with high volumes
+- Potentially includes horizontal scalability capabilities, e.g. sharding, batch splitting, distributed processing, etc.
+- Monitoring and scalable deployment infrastructure
 
 ### On-Going Support
 
@@ -250,14 +245,10 @@ In order to support ink! and Substrate, parts of Epirus Explorer could be open-s
 
 Details about the existing Epirus offering for EVM chains:
 
--   Epirus Explorer Website: [https://www.web3labs.com/epirus-explorer](https://www.web3labs.com/epirus-explorer)
--   Palm Explorer: [https://palm.epirus.io](https://palm.epirus.io)
-    
+- Epirus Explorer Website: [https://www.web3labs.com/epirus-explorer](https://www.web3labs.com/epirus-explorer)
+- Palm Explorer: [https://palm.epirus.io](https://palm.epirus.io)
 
 Additionally, it is worth mentioning that the team already built a composable data browser prototype for Solid PODs and RDF sources in general.
 
--   Code repository: [https://gitlab.com/omd_public/assemblage](https://gitlab.com/omd_public/assemblage)
--   Assemblage demo video: [https://www.youtube.com/watch?v=hYFEBAdkzmc](https://www.youtube.com/watch?v=hYFEBAdkzmc)
-
-
-
+- Code repository: [https://gitlab.com/omd_public/assemblage](https://gitlab.com/omd_public/assemblage)
+- Assemblage demo video: [https://www.youtube.com/watch?v=hYFEBAdkzmc](https://www.youtube.com/watch?v=hYFEBAdkzmc)

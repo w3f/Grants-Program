@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Tip or Donate KSM Embeddable Button
 
-- **Project:** Tip or Donate KSM Embeddable Button
 - **Proposer:** https://github.com/Shard-Labs
 - **Payment Address:** bc1q5njhr3r0mgd398yvma75nv48g69c590a0f0zcx
 

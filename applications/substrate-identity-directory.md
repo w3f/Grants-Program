@@ -1,12 +1,11 @@
-# Open Grant Proposal
+# Substrate Identity Hub
 
+- **Team Name:** https://github.com/Shard-Labs
+- **Payment Address:** 0x526F2bC9a5fc0839AD4956b06CB6dFf26F9503be
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/255#issuecomment-1014556219)
 
-* **Project Name:** Substrate Identity Hub
-* **Team Name:** https://github.com/Shard-Labs
-* **Payment Address:** 0x526F2bC9a5fc0839AD4956b06CB6dFf26F9503be
-* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/255#issuecomment-1014556219)
+## Project Overview
 
-## Project Overview 
 This application is in response to following RFP https://github.com/w3f/General-Grants-Program/blob/master/rfps/identity-directory.md
 
 ### Overview
@@ -18,33 +17,42 @@ Create a web service to query on-chain identities. The service accepts and reads
 
 
 
-### Project Details 
+### Project Details
+
 A web service would have a way of reading the following links:
-https://identityhub.xyz/polkadot<identity>
-https://identityhub.xyz/kusama<identity>
-Web service would read the <identity> parameter and make a query to the corresponding chain and retrieve identity data of the requested identity. 
+https://identityhub.xyz/polkadot&lt;identity&gt;
+https://identityhub.xyz/kusama&lt;identity&gt;
+Web service would read the &lt;identity&gt; parameter and make a query to the corresponding chain and retrieve identity data of the requested identity.
 Web UI would have two ways of viewing data. A list view and a single page view. A list view would be a way for users to query the chain and display all registered identities on the Kusama and Polkadot chains. This view would be the default view if no specific identity is queried and provided in the URL. By clicking on the specific identity in the list, a user would be redirected to a single page view for the chosen identity. A single page view would be a way for users to query a specific identity data of the on-chain identity. This view would be a way for users to see identity activities indicative of a member’s reputation containing identity card of an on-chain identity along with all the metadata in the identity entry, an avatar if provided, any verifications from registrars in the chain, and buttons that allow you to send tokens directly to the user.
 
 
 
 
-## Team 
+## Team
 
 ### Team members
-* Jakov Buratovic (https://www.linkedin.com/in/jakov-buratovic/)
-* Miljan Milidrag (https://www.linkedin.com/in/miljan-milidrag/)
+
+- Jakov Buratovic (https://www.linkedin.com/in/jakov-buratovic/)
+
+- Miljan Milidrag (https://www.linkedin.com/in/miljan-milidrag/)
 
 ### Contact
-* **Contact Name:** Jakov Buratovic
-* **Contact Email:** jb@shardlabs.io
-* Website https://shardlabs.io
 
-### Legal Structure 
-* **Registered Address:** Kroz Smrdečac 19 Split, Croatia
-* **Registered Legal Entity:** SHARD LABS d.o.o.
+- **Contact Name:** Jakov Buratovic
+
+- **Contact Email:** jb@shardlabs.io
+- Website https://shardlabs.io
+
+### Legal Structure
+
+- **Registered Address:** Kroz Smrdečac 19 Split, Croatia
+
+- **Registered Legal Entity:** SHARD LABS d.o.o.
 
 ### Team's experience
+
 We have experience in several private and open source projects aswell as projects on polkadot ecosystem. Most notable and relatable to the proposal:
+
 - ink! Remix Plugin (https://github.com/Shard-Labs/ink-remix-plugin)
 - ZoKrates (https://github.com/Zokrates/ZoKrates)
 - ZoKrates Remix Plugin (https://github.com/Shard-Labs/zokrates-remix-plugin)
@@ -53,22 +61,27 @@ We have experience in several private and open source projects aswell as project
 
 
 ### Team Code Repos
+
 - https://github.com/Shard-Labs
 - https://github.com/Jakic007
 - https://github.com/milgard91
 
 
-## Development Roadmap 
+## Development Roadmap
 
 ### Overview
-* **Total Estimated Duration:** 12 weeks
-* **Full-time equivalent (FTE):**  3
-* **Total Costs:** 34500 DAI
 
-### Milestone 1 Designing and design implementation for list page / individual identity page. 
-* **Estimated Duration:** 6 weeks
-* **FTE:**  3
-* **Costs:** 14700 DAI
+- **Total Estimated Duration:** 12 weeks
+
+- **Full-time equivalent (FTE):**  3
+- **Total Costs:** 34500 DAI
+
+### Milestone 1 Designing and design implementation for list page / individual identity page.
+
+- **Estimated Duration:** 6 weeks
+
+- **FTE:**  3
+- **Costs:** 14700 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -77,8 +90,8 @@ We have experience in several private and open source projects aswell as project
 | 0c. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1. | Design a list page | Create design mockups in Figma. |
 | 2. | Design an individual identity page | Create design mockups in Figma. |
-| 3. | Implement list page | Build UI components in VueJS used in the identity list page. | 
-| 4. | Implement individual identity page | Build UI components in VueJS used in the individual identity page. 
+| 3. | Implement list page | Build UI components in VueJS used in the identity list page. |
+| 4. | Implement individual identity page | Build UI components in VueJS used in the individual identity page.
 | 5. | Implement query logic for identity data | Implement query logic which will be used to retrieve identity data. |
 
 Mockups:
@@ -87,9 +100,11 @@ Mockups:
 ![Single page view](https://i.imgur.com/7u04sRV.png)
 
 ### Milestone 2 Implementing logic for sending tokens. Support for the offline mode.
-* **Estimated Duration:** 3 weeks
-* **FTE:**  3
-* **Costs:** 10.000 DAI
+
+- **Estimated Duration:** 3 weeks
+
+- **FTE:**  3
+- **Costs:** 10.000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -97,15 +112,18 @@ Mockups:
 | 2. | Make the web service work offline | Web service can be used in offline mode; the user can specify a local node to which will the service connect. |
 
 ### Milestone 3 Index data and query
-#### Requirements for the milestone:
-* https://github.com/paritytech/substrate/pull/8615
-* https://github.com/paritytech/substrate-archive/issues/97
-* https://github.com/paritytech/substrate-archive/issues/111
-* https://github.com/paritytech/substrate-archive/issues/132 
 
-* **Estimated Duration:** 3 weeks
-* **FTE:**  2
-* **Costs:** 9800 DAI
+#### Requirements for the milestone:
+
+- https://github.com/paritytech/substrate/pull/8615
+
+- https://github.com/paritytech/substrate-archive/issues/97
+- https://github.com/paritytech/substrate-archive/issues/111
+- https://github.com/paritytech/substrate-archive/issues/132
+
+- **Estimated Duration:** 3 weeks
+- **FTE:**  2
+- **Costs:** 9800 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -127,9 +145,10 @@ There will be a follow-up for the project that would support a plug-in ecosystem
 ## Additional Information  
 
 Possible additional information to include:
-* What work has been done so far? 
-    - We have created v0 of the design and included them in the application.
-* Are there are any teams who have already contributed (financially) to the project? 
-    - No.
-* Have you applied for other grants so far? 
-    - We have received funding and completed Ink! Remix plugin and Kusama embeddable tipping button.
+
+- What work has been done so far?
+  - We have created v0 of the design and included them in the application.
+- Are there are any teams who have already contributed (financially) to the project?
+  - No.
+- Have you applied for other grants so far?
+  - We have received funding and completed Ink! Remix plugin and Kusama embeddable tipping button.

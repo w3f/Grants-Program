@@ -1,8 +1,7 @@
-# Open Grant Proposal
+# Subscript
 
 **Subscript:** Substrate smart contact written in `AssemblyScript`
 
-* **Project:** Subscript
 * **Proposer:** [synote](https://github.com/synote)
 * **Payment Address:**  bc1qzv5ljrt0sngjjnn25s4jzsu7qtts5d74cq8tz5
 
@@ -30,46 +29,52 @@ The `Subscript` library also add support for contract interaction utilties, incl
 * contract metadata generator
 * basic data structure: dynimic array, map, list,
 * user struct storage layout
-* `account` and  `balance` interface 
+* `account` and  `balance` interface
 * contract call abstraction
 * builtin utility fuctions
 
-The package will provide contract template and intergation tool with substrate node. 
+The package will provide contract template and intergation tool with substrate node.
 
 There is no plan for `EVM Pallet` support.
 
 ### Ecosystem Fit
+
 Some of the function of `Subscript` are similar to LimeChain's work of AssemblyScript Runtime, but they are  made for different scenario. LimeChain AssemblyScript Runtime focus on building substrate runtime with wasm compiled from AssemblyScript. It involves building all the substrate runtime environment entry with AssemblyScript and other basic library. `Subscript` aims to implement all the substrate smart contract low level interface with AssemblyScript. `Subscript` also add support for basic contract lib and project template for easy development.  We may benefit  previous work from LimeChain such as `SCALE`codec, runtime entry implemention.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
+
 * Symon Ho: Fullstack developer Leading consensus R&D and engineering in multichain system. Prior to that, developer of openstack project,  engaged in performance tools and  monitoring  system for cloud platform.
 * Ice Min: 10+ years experience in c/c++ development, real time database products and digital currency transaction platform products expert. Developer of BitCoin and Ethereum wallet.
 
 ### Team Website
-* https://github.com/slickup
+
+* <https://github.com/slickup>
 
 ### Team's experience
 
 We implemented the fruitchain consensus integrated with ethereum, and used pbft to provide finalization in blockchain system.  Fruitchain mainnet launched in 2019 and privide 500+ TPS for transaction validation.
 
-We alse engaged in smart contract tools interaged with vyper for contract audit and testing. 
+We alse engaged in smart contract tools interaged with vyper for contract audit and testing.
 
 ### Team Code Repos
-* https://github.com/slickup/subscript
-* https://github.com/ascontract/subscript
+
+* <https://github.com/slickup/subscript>
+* <https://github.com/ascontract/subscript>
 
 ## Development Roadmap :nut_and_bolt:
 
 We only provide **milestone1**  here for contract runtime api implementation. Full milestones are list in the [general grant repo](https://github.com/slickup/General-Grants-Program/blob/master/grants/speculative/subscript_lang.md)
 
 ### Overview
+
 * **Total Estimated Duration:** 2 month
 * **Full-time equivalent (FTE):**  2
 * **Total Costs:** 2 btc
 
 ### Milestone 1  — Implement smart contract low level api
+
 * **Estimated Duration:** 2 month
 * **FTE:**  2
 * **Costs:** 2 btc

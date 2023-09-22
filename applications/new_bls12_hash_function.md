@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Implementation of the new hash function to BLS12 curves
 
-- **Project Name:** Implementation of the new hash function to BLS12 curves
 - **Team Name:** Dmitrii Koshelev
 - **Payment Address:** 0x050240CB2f5F7f7aA8AA10a5A9AE36c784AEdE49 (ERC20 USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

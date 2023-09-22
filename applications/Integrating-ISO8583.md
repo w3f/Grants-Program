@@ -1,10 +1,9 @@
-# W3F Grant Proposal
+# Integrating ISO-8583
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Integrating ISO-8583 
 - **Team Name:** Stardust Labs Inc.
 - **Payment Address:** 0xF3d5F194D9eF961a85a4d5be05EFda7B2B33005d (DAI, Ethereum Mainet)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -25,28 +24,29 @@ Supporting international standards would smooth the connection between crypto an
 
 - An indication of why your team is interested in creating this project.
 
-I've built credit card infrastructure before during my role as an analyst at Capital One and believe I can bring some experience from traditional finance to this problem. At the very least I can call out the details and complex logistics that others without might miss. 
+I've built credit card infrastructure before during my role as an analyst at Capital One and believe I can bring some experience from traditional finance to this problem. At the very least I can call out the details and complex logistics that others without might miss.
 
 ### Project Details
 
 [ISO-8583](https://en.wikipedia.org/wiki/ISO_8583) is the international standard for card based payments and transactions. It's used everywhere from ATMs to Merchant point of sale terminals. Supporting international standards could help smooth the connection between crypto and traditional financial institutions. [Further simplifying matters is](https://crates.io/crates/iso8583) [that several rust crates exist](https://github.com/rkbalgi/iso8583_rs) [supporting the packing and unpacking of ISO-8583 data streams.](https://docs.rs/i8583/latest/i8583/)
 
 At first glance, it seems like one could easily just integrate these packages to achieve the goals of the RFP, namely:
+
 - (Java) APIs or packages that make it possible for the traditional finance industry to integrate a substrate-based ISO 8583 solution into their existing tech stack.  
 - Proof of concepts, potentially leveraging the unique [Off-Chain Features of Substrate](https://docs.substrate.io/v3/concepts/off-chain-features/) that show the advantages of using ISO 8583 together with Substrate.  
-- Efficient on-chain representation of the ISO 8583 syntax 
+- Efficient on-chain representation of the ISO 8583 syntax
 
 Unfortunately, the logistics of actually implementing ISO-8583 compliant infrastructure on blockchains is unintuitvely complex. At a minimum, 3 major issues exist that must be addressed.
 
 **Security**
-ISO-8583 datastreams [reveal far too much information to ever be publically exposed](https://neapay.com/post/iso8583-atm-pos-crypto-api-integration-coinbase-binance_102.html). Here neapay proposes using ISO-8583 to connect to Coinbase to purchase crypto. However you can see that once the datastream is unpacked, the user's financial details are immediately revealed. Unpacking data is a trivial process that has no security, ISO-8583 data is not encrypted. Of note is the exposed primary account number (F02_PAN: 9876 5000 0030 6082). Most people would recognize this number faster as their credit card number. While it is possible, and implemented in practice, to transfer the data securely between two, trusted centralized servers using [Diffie Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange), research is needed to construct a way to place ISO-8583 data on-chain securely, if it is even possible. There are also laws about retaining this information for a fixed period of time, for example, [Minnesota, a US state mandates that this information is deleted within 48 hours of reciept](https://www.revisor.mn.gov/statutes/cite/325E.64) which is at odds with the enduring, provable structure of a blockchain. 
+ISO-8583 datastreams [reveal far too much information to ever be publically exposed](https://neapay.com/post/iso8583-atm-pos-crypto-api-integration-coinbase-binance_102.html). Here neapay proposes using ISO-8583 to connect to Coinbase to purchase crypto. However you can see that once the datastream is unpacked, the user's financial details are immediately revealed. Unpacking data is a trivial process that has no security, ISO-8583 data is not encrypted. Of note is the exposed primary account number (F02_PAN: 9876 5000 0030 6082). Most people would recognize this number faster as their credit card number. While it is possible, and implemented in practice, to transfer the data securely between two, trusted centralized servers using [Diffie Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange), research is needed to construct a way to place ISO-8583 data on-chain securely, if it is even possible. There are also laws about retaining this information for a fixed period of time, for example, [Minnesota, a US state mandates that this information is deleted within 48 hours of reciept](https://www.revisor.mn.gov/statutes/cite/325E.64) which is at odds with the enduring, provable structure of a blockchain.
 
 **Transaction Reversals**
-Outside of simple purchases, one of the most common messages communicated over ISO-8583 are [chargebacks.](https://en.wikipedia.org/wiki/Chargeback) [About 0.6% of all transactions are ultimately recalled, though it varies by industry.](https://shiftprocessing.com/chargeback-statistics/) ISO-8583 was designed to handle this process seamlessly and has a reserved MTI code for all chargebacks and reversals (x4xx). Unfortunately, modern blockchains by design are irreversible. From the original [introduction of Satoshi Nakamoto's white paper](https://bitcoin.org/bitcoin.pdf). 
+Outside of simple purchases, one of the most common messages communicated over ISO-8583 are [chargebacks.](https://en.wikipedia.org/wiki/Chargeback) [About 0.6% of all transactions are ultimately recalled, though it varies by industry.](https://shiftprocessing.com/chargeback-statistics/) ISO-8583 was designed to handle this process seamlessly and has a reserved MTI code for all chargebacks and reversals (x4xx). Unfortunately, modern blockchains by design are irreversible. From the original [introduction of Satoshi Nakamoto's white paper](https://bitcoin.org/bitcoin.pdf).
 > While the system (traditional finance) works well enough for most transactions, it still suffers from the inherent weaknesses of the trust based model. Completely non-reversible transactions are not really possible, since financial institutions cannot avoid mediating disputes. The cost of mediation increases transaction costs, limiting the minimum practical transaction size and cutting off the possibility for small casual transactions, and there is a broader cost in the loss of ability to make non-reversible payments for nonreversible services. With the possibility of reversal, the need for trust spreads.
 
 Supporting ISO-8583 functionality would require building a new token standard, or making changes to the operation of the blockchain to allow reversible transactions. A solution highlighted in the original bitcoin white paper is automatic escrow accounts, but research would be needed to identify the best way to implement these accounts or if there are better solutions.
- 
+
 **Authorizations and Privilages**
 This leads to another major challenge. In traditional banking, the users are not equal. Certain entites such as the issuing bank or network can make decisions unilaterally without recourse. An example of this would be the aforementioned chargeback or transaction reversals which can be performed by the issuing bank or network for any reason. Blockchains operate on an equivalent peer model, and it is an open question as to how to authorize a super user and who should maintain super user priviliages over the entire network.  
 
@@ -66,7 +66,7 @@ Supporting international standards would smooth the connection between crypto an
 
 - **Contact Name:** Adit Patel
 - **Contact Email:** adit.patel@stardustfunds.com
-- **Website:** https://stardust.finance/
+- **Website:** <https://stardust.finance/>
 
 ### Legal Structure
 
@@ -78,15 +78,15 @@ Adit is a technical expert on cryptography, distributed ledgers, financial marke
 
 ### Team Code Repos
 
-- https://github.com/adit313/
+- <https://github.com/adit313/>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/adit-patel/
+- <https://www.linkedin.com/in/adit-patel/>
 
 ## Development Status :open_book:
 
-- link to RFP: https://github.com/w3f/Grants-Program/blob/master/rfps/open/ISO_8583.md
+- link to RFP: <https://github.com/w3f/Grants-Program/blob/master/rfps/open/ISO_8583.md>
 
 ## Development Roadmap :nut_and_bolt:
 

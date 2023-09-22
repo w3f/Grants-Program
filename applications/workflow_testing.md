@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# DuoSwap Module
 
-* **Project Name:** DuoSwap Module
 * **Team Name:** Duo
 * **Payment Address:** 123mp123
 

@@ -1,9 +1,8 @@
-# W3F Grant Proposal
+# Fennel Protocol
 
-* **Project Name:** Fennel Protocol
-* **Team Name:** Fennel Labs
-* **Payment Address:** 0xF505894841d53AaBDe6EdeA7C5970fFe3A0240b2 (DAI)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Team Name:** Fennel Labs
+- **Payment Address:** 0xF505894841d53AaBDe6EdeA7C5970fFe3A0240b2 (DAI)
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -15,10 +14,10 @@ This grant proposal describes the first step of a long-term plan to develop Fenn
 
 The background of the Whiteflag specification is as follows:
 
-> Current armed conflicts are highly complex, because of the sheer number of parties involved: regular military forces, armed groups, peacekeeping forces, neutral parties such as journalists and non-governmental human-rights and aid organisations, civilians, refugees etc. Even though parties are opposing forces, or neutral organisations that do not want to show any affiliation, they do require to quickly and directly communicate to one or more other parties involved in the conflict in different situations. 
-> <br/> <br/> This is not new. The white flag is the original internationally recognized protective sign of truce or ceasefire, and request for negotiation. A white flag signifies to all that an approaching negotiator is unarmed, with an intent to surrender or a desire to communicate. 
-> <br> <br> This standard for a digital white flag protocol, the Whiteflag Protocol, provides a reliable means for both combatant and neutral parties in conflict zones to digitally communicate pre-defined signs and signals using blockchain technology. These sign and signals can also be used to communicate information about natural and man-made disasters, thus creating shared situational awareness beyond conflicts. 
-> <br/> <br/>  All in all, the protocol forms the basis for a neutral and open network, the Whiteflag Network, for trusted real-time messaging between parties in conflicts and disaster response.
+> Current armed conflicts are highly complex, because of the sheer number of parties involved: regular military forces, armed groups, peacekeeping forces, neutral parties such as journalists and non-governmental human-rights and aid organisations, civilians, refugees etc. Even though parties are opposing forces, or neutral organisations that do not want to show any affiliation, they do require to quickly and directly communicate to one or more other parties involved in the conflict in different situations.
+> <br /> <br /> This is not new. The white flag is the original internationally recognized protective sign of truce or ceasefire, and request for negotiation. A white flag signifies to all that an approaching negotiator is unarmed, with an intent to surrender or a desire to communicate.
+> <br /> <br /> This standard for a digital white flag protocol, the Whiteflag Protocol, provides a reliable means for both combatant and neutral parties in conflict zones to digitally communicate pre-defined signs and signals using blockchain technology. These sign and signals can also be used to communicate information about natural and man-made disasters, thus creating shared situational awareness beyond conflicts.
+> <br /> <br />  All in all, the protocol forms the basis for a neutral and open network, the Whiteflag Network, for trusted real-time messaging between parties in conflicts and disaster response.
 
 One can find more details about the Whiteflag Protocol specification by clicking on these links:
 
@@ -71,109 +70,125 @@ Though applications are planned, they are beyond scope for this proposal.
 
 ### Team members
 
-* Sean Batzel
-* Isaac Adams
-* Andre Vanoncini
-* Fernando Fonseca-Avalos
-* Mateusz Plaza
-* Jan Eberle
+- Sean Batzel
+- Isaac Adams
+- Andre Vanoncini
+- Fernando Fonseca-Avalos
+- Mateusz Plaza
+- Jan Eberle
 
 ### Contact
 
-* **Contact Name:** Fennel Labs Core Team
-* **Contact Email:** info@fennellabs.com
-* **Website:** www.fennellabs.com
+- **Contact Name:** Fennel Labs Core Team
+- **Contact Email:** info@fennellabs.com
+- **Website:** www.fennellabs.com
 
 ### Legal Structure
 
-* **Registered Address:** 1309 Coffeen Avenue Suite 1200, Sheridan, Wyoming 82801
-* **Registered Legal Entity:** Fennel Labs, LLC.
+- **Registered Address:** 1309 Coffeen Avenue Suite 1200, Sheridan, Wyoming 82801
+- **Registered Legal Entity:** Fennel Labs, LLC.
 
 ### Team's experience
 
 #### Sean Batzel
-* Development Team co-lead for Theriak, a project which won the 2020 Odyssey Momentum hackathon's Conflict Prevention track.
-* 2 years as lead and only developer of fEMR OnChain, a modular EMR software targeting eventual decentralization.
-* 10 years of programming and software development experience
-* 5 years of experience as lead/primary developer on expansive projects
-* 2 years experience in remote development team coordination
-* Graduate-level research experience studying blockchain’s uses in high-level information networks
-* Dedicated focus on exploring use cases for blockchain and decentralized consensus beyond cryptocurrency and fusing Web 2 and Web 3 applications in a way that eases the industry’s transition to more decentralized computing
+
+- Development Team co-lead for Theriak, a project which won the 2020 Odyssey Momentum hackathon's Conflict Prevention track.
+
+- 2 years as lead and only developer of fEMR OnChain, a modular EMR software targeting eventual decentralization.
+- 10 years of programming and software development experience
+- 5 years of experience as lead/primary developer on expansive projects
+- 2 years experience in remote development team coordination
+- Graduate-level research experience studying blockchain’s uses in high-level information networks
+- Dedicated focus on exploring use cases for blockchain and decentralized consensus beyond cryptocurrency and fusing Web 2 and Web 3 applications in a way that eases the industry’s transition to more decentralized computing
 
 #### Isaac Adams
-* Succesfully launched [savvi](https://savvi.com) as tech lead and developed the jwt authentication, sign in/out, cart, and checkout features on the application while helping manage other developers working on the project
-* Open source contributions: [added missing rpc method](https://github.com/harmony-one/sdk/pull/82) to harmony-one blockchain's npm package, [json ld transformer](https://github.com/parcel-bundler/parcel/pull/4397) for parcel v2, and extending usage of action-download-artifact to support the [github.ref variable](https://github.com/dawidd6/action-download-artifact/pull/55)
-* Published author for [research](https://www.mdpi.com/2571-6182/1/1/1) on the degradation of antibiotics using a plasma apparatus
-* 4 years of experience development experience on a wide range of projects, including web applications built using react/angular|.net core|SQL, labview applications for lab experiments, and devops/cloud operations
-* 1 year of experience of being tech lead on two successfully launched web projects
-* Graduated from Drexel University with a B.S. in Chemical Engineering
+
+- Succesfully launched [savvi](https://savvi.com) as tech lead and developed the jwt authentication, sign in/out, cart, and checkout features on the application while helping manage other developers working on the project
+
+- Open source contributions: [added missing rpc method](https://github.com/harmony-one/sdk/pull/82) to harmony-one blockchain's npm package, [json ld transformer](https://github.com/parcel-bundler/parcel/pull/4397) for parcel v2, and extending usage of action-download-artifact to support the [github.ref variable](https://github.com/dawidd6/action-download-artifact/pull/55)
+- Published author for [research](https://www.mdpi.com/2571-6182/1/1/1) on the degradation of antibiotics using a plasma apparatus
+- 4 years of experience development experience on a wide range of projects, including web applications built using react/angular|.net core|SQL, labview applications for lab experiments, and devops/cloud operations
+- 1 year of experience of being tech lead on two successfully launched web projects
+- Graduated from Drexel University with a B.S. in Chemical Engineering
 
 #### Andre Vanoncini
-* Working with the Google Tango tablet for my master thesis (C++, first in depth steps for me with git and linux)
-* Developing and implementing a focussing tool and process in C++ with Qt QML GUI
-* Getting Inference working with libtorch (C++) and JNI
-* Understanding compilation of C++ with cmake and being able to compile on the command line instead of the green play buttons
+
+- Working with the Google Tango tablet for my master thesis (C++, first in depth steps for me with git and linux)
+
+- Developing and implementing a focussing tool and process in C++ with Qt QML GUI
+- Getting Inference working with libtorch (C++) and JNI
+- Understanding compilation of C++ with cmake and being able to compile on the command line instead of the green play buttons
 
 #### Fernando Fonseca-Avalos
-* Experience with C/C++, Python, JavaScript
-* Developing proficiency with Rust. 
+
+- Experience with C/C++, Python, JavaScript
+
+- Developing proficiency with Rust.
 
 #### Mateusz Plaza
-* Captain for Theriak, a project which won the 2020 Odyssey Momentum hackathon's Conflict Prevention track.
-* 8 years of experience working in high performance medical units
-* 2 years of experience leading medical humanitarian teams in Central America
-* 2012 Fulbright Research Fellow: completed research project on Poland's Solidarity Movement, exploring methods of self-organization and coordination of social movements that leverage symbols as a form of empowerment and that resist the threat of disinformation/active measures/propaganda.
-* Published blockchain researcher, with a focus on the epistemic significance of decentralized blockchain ledgers, especially in terms of Self Sovereign Identity, Decentralized Autonomous Organization, and AI Ontology. 
+
+- Captain for Theriak, a project which won the 2020 Odyssey Momentum hackathon's Conflict Prevention track.
+
+- 8 years of experience working in high performance medical units
+- 2 years of experience leading medical humanitarian teams in Central America
+- 2012 Fulbright Research Fellow: completed research project on Poland's Solidarity Movement, exploring methods of self-organization and coordination of social movements that leverage symbols as a form of empowerment and that resist the threat of disinformation/active measures/propaganda.
+- Published blockchain researcher, with a focus on the epistemic significance of decentralized blockchain ledgers, especially in terms of Self Sovereign Identity, Decentralized Autonomous Organization, and AI Ontology.
 
 #### Jan Eberle
-* Experience distinguishing misinformation, disinformation, and combatting the infodemic as a Media Analyst 
-* Strong communications & usability experience from linguistic studies 
-* Writing documents for different channels/audiences as a technical writer 
-* Practical peace keeping experience as a swiss guard in the Vatican
+
+- Experience distinguishing misinformation, disinformation, and combatting the infodemic as a Media Analyst
+
+- Strong communications & usability experience from linguistic studies
+- Writing documents for different channels/audiences as a technical writer
+- Practical peace keeping experience as a swiss guard in the Vatican
 
 #### Advisors
-* Andrew Plaza
-* Zbigniew Zielinski
+
+- Andrew Plaza
+
+- Zbigniew Zielinski
 
 ### Team Code Repos
 
-* https://github.com/Romulus10
-* https://github.com/isaacadams
-* https://github.com/vanandre
-* https://github.com/fennelLabs
-* https://github.com/Romulus10/infostratus 
-* https://github.com/Romulus10/blockchain_message
-* https://github.com/fennelLabs/Theriak
+- https://github.com/Romulus10
+- https://github.com/isaacadams
+- https://github.com/vanandre
+- https://github.com/fennelLabs
+- https://github.com/Romulus10/infostratus
+- https://github.com/Romulus10/blockchain_message
+- https://github.com/fennelLabs/Theriak
 
 ### Team LinkedIn Profiles (if available)
 
-* https://www.linkedin.com/in/seanbatzel/
-* https://www.linkedin.com/in/mateusz-p-6b126424/
-* https://www.linkedin.com/in/jan-eberle-553110195/
-* https://www.linkedin.com/in/fernando-fonseca-avalos-a0a516224/
-* https://www.linkedin.com/in/andreva/
-* https://www.linkedin.com/in/isaacdadams/
+- https://www.linkedin.com/in/seanbatzel/
+- https://www.linkedin.com/in/mateusz-p-6b126424/
+- https://www.linkedin.com/in/jan-eberle-553110195/
+- https://www.linkedin.com/in/fernando-fonseca-avalos-a0a516224/
+- https://www.linkedin.com/in/andreva/
+- https://www.linkedin.com/in/isaacdadams/
 
 ### Ecosystem Fit
+
 Fennel Protocol's key and identity management functionality is fine-tuned for decentralized communication that makes use of pre-defined signals and signs;
 for example, the Whiteflag specification uses predefined signals and signs derived from International Humanitarian Law, the CRED Disaster Category Classification, and the OECD Economic Infrastructure Common Reporting Standard Codes.
 Future proposals will build up Fennel Protocol to accomodate the full extent of the Whiteflag Protocol specification.
 Substrate's interoperability will provide the Polkadot ecosystem with a shared conception of Whiteflag Protocol's predefined signals and signs;
-this will allow users to seemlessly send Whiteflag messages across the decentralized Polkadot ecosystem. Critically, an interoperable Whiteflag Network ensures situational awareness is not siloed but is unified in critical use cases. This helps decision makers receive a full picture of the field of operations. 
+this will allow users to seemlessly send Whiteflag messages across the decentralized Polkadot ecosystem. Critically, an interoperable Whiteflag Network ensures situational awareness is not siloed but is unified in critical use cases. This helps decision makers receive a full picture of the field of operations.
 
 #### Whiteflag Section 2.5: Minimally Viable Implementation:
-Fennel Protocol will implement the minimally viable implementation of the Whiteflag functionality that allows for the sending of Whiteflag messages. 
+
+Fennel Protocol will implement the minimally viable implementation of the Whiteflag functionality that allows for the sending of Whiteflag messages.
 We will implement further components of Whiteflag in further proposals. Whiteflag section 2.5 states: any implementation of the Whiteflag Protocol that sends messages on the Whiteflag Network, must implement at a minimum the following functionality:
 
-* The Whiteflag Authentication message with at least one authentication option. At release, both Shared Secret and External Resource Authentication will be fully supported.
+- The Whiteflag Authentication message with at least one authentication option. At release, both Shared Secret and External Resource Authentication will be fully supported.
 
-* The possibility to Recall, Update and Discontinue (Whiteflag Reference Codes 1, 2 and 4) any implemented sign or signal, if such Reference Type is valid i.a.w. Reference options. These will be implemented as low-level Fennel messages through the Sign extrinsic call, effectively creating a specialized transaction subtype for each of these.
+- The possibility to Recall, Update and Discontinue (Whiteflag Reference Codes 1, 2 and 4) any implemented sign or signal, if such Reference Type is valid i.a.w. Reference options. These will be implemented as low-level Fennel messages through the Sign extrinsic call, effectively creating a specialized transaction subtype for each of these.
 
 Fennel Protocol will provide the Substrate infrastructure for two authentication methodologies that abide by Whiteflag Protocol’s specification.
 
-* Method 1, External Resource Authentication: requires the user to declare their identity in some public and trusted place which can be referenced in their activities. This often requires a strong proof, such as a cryptographic signature and public key declaration, that can be verified to prove that a transaction comes from the identity declared.
+- Method 1, External Resource Authentication: requires the user to declare their identity in some public and trusted place which can be referenced in their activities. This often requires a strong proof, such as a cryptographic signature and public key declaration, that can be verified to prove that a transaction comes from the identity declared.
 
-* Method 2, Shared Secret Authentication:  requires an end user to establish a token known only to themselves and some authentication authority, similar to a password in more Web 2.0-oriented authentication.
+- Method 2, Shared Secret Authentication:  requires an end user to establish a token known only to themselves and some authentication authority, similar to a password in more Web 2.0-oriented authentication.
 
 Fennel Protocol will support both of these authentication mechanisms at launch, with shared secrets covered by our encrypted channel mechanism and external resources declared and submitted as public transactions through the Identity Update extrinsic.
 
@@ -195,15 +210,15 @@ Fennel Protocol will also include support for RSA with a minimal key size of 409
 
 ### Overview
 
-* **Total Estimated Duration:** 3 months
-* **Full-Time Equivalent (FTE):**  3 FTE
-* **Total Costs:** 50,000 USD
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):**  3 FTE
+- **Total Costs:** 50,000 USD
 
 ### Milestone 1 — Implement Substrate Modules
 
-* **Estimated duration:** 1 months
-* **FTE:**  3
-* **Costs:** 15,000 USD
+- **Estimated duration:** 1 months
+- **FTE:**  3
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -222,9 +237,9 @@ Fennel Protocol will also include support for RSA with a minimal key size of 409
 
 ### Milestone 2 — Additional features
 
-* **Estimated duration:** 1 months
-* **FTE:**  3
-* **Costs:** 15,000 USD
+- **Estimated duration:** 1 months
+- **FTE:**  3
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -240,9 +255,9 @@ Fennel Protocol will also include support for RSA with a minimal key size of 409
 
 ### Milestone 3 — Additional features
 
-* **Estimated duration:** 1 months
-* **FTE:**  3
-* **Costs:** 20,000 USD
+- **Estimated duration:** 1 months
+- **FTE:**  3
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -266,8 +281,8 @@ identity and signaling applications should be able to easily build on the runtim
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** 
-We heard about the Grants Program from the Web 3 Foundation Website, as well as personal recommendations from Polkadot community members. 
+**How did you hear about the Grants Program?**
+We heard about the Grants Program from the Web 3 Foundation Website, as well as personal recommendations from Polkadot community members.
 
 Thus far, we've ported our Theriak repository to the most recent version of Substrate as of writing of this application.
 Financial contribution has not yet begun for the Fennel Protocol project.

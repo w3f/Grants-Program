@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# On-chain cash exchange
 
-- **Project Name:** On-chain cash exchange
 - **Team Name:** Bela Supernova
 - **Payment Address:** 0xC0d28794eA40Ce9b9F4B62a1B2Bb42FD34b7d305 (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

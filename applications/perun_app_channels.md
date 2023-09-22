@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Perun App Channels
 
-- **Project Name:** Perun App Channels
 - **Team Name:** [Perun](https://perun.network)@[PolyCrypt](https://polycry.pt)
 - **Payment Address:**  0x308Ca526B009e10Ef0482C38A3370BFb44A32908 (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3

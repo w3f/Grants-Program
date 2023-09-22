@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Pontem Network (VM).
 
-- **Project Name:** Pontem Network (VM).
 - **Team Name:** Dfinance (Wings Stiftung).
 - **Payment Address:** 32AAAxmKJ9XxCsGSwt11oAuovCUHbgsgfY.
 

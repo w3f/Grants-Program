@@ -1,10 +1,8 @@
-# W3F Grant Proposal
+# Perun Channels - Integration with go-perun
 
-* **Project Name:** Perun Channels - Integration with go-perun
 * **Team Name:** PolyCrypt/Perun
 * **Payment Address:** 0x308Ca526B009e10Ef0482C38A3370BFb44A32908 (DAI)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
-
 
 ## Project Overview :page_facing_up:
 
@@ -26,7 +24,6 @@ Currently, we have an Ethereum backend and we recently implemented the on-chain 
 
 **Proposal.** To reach the goal of a full Polkadot backend for _go-perun_, we propose to provide a backend connector that connects the Polkadot on-chain logic with the client protocol logic contained in go-perun, thereby making Perun channels on Polkadot usable via the go-perun client interface.
 We propose to release this work open-source under the Apache 2.0 license.
-
 
 **Outlook.** We currently focus on two-party single-asset payment channels between users on the same Polkadot chain.
 For the future, we consider adding state channel functionality, multi-asset support, multi-party support, and cross-chain functionality for establishing channels between two Polkadot chains.
@@ -58,42 +55,42 @@ Concretely, we will provide Polkadot-specific implementations of the Wallet abst
 In particular, we provide a translation middleware between the abstract adjudication logic of _go-perun_ and the concrete smart contract logic running on a Polkadot chain.
 The Polkadot on-chain component has been the subject of a preceding Web3 Foundation Grant and is available at [perun-polkadot-pallet](https://github.com/perun-network/perun-polkadot-pallet).
 
-- **Wallet abstraction**: Provides tools for account management and signature generation. Implemented using [go-subkey](https://github.com/vedhavyas/go-subkey) and [go-substrate-rpc-client](https://github.com/centrifuge/go-substrate-rpc-client).
-  - [`type Wallet interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/wallet/wallet.go#L21): Represents a set of accounts.
-    - `func Unlock(Address) (Account, error)`: Unlocks a wallet account.
-  - [`type Account interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/wallet/account.go#L18)
-    - `func Address() Address`: Returns the account address.
-    - `func SignData(data []byte) ([]byte, error)`: Signs a byte array.
-  - [`type Address interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/wallet/address.go#L29): Represents an account address.
-    - `func Encode(io.Writer) error`: Encodes the address.
-    - `func Decode(io.Reader) error`: Decodes an address.
-  - [`type Backend interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/wallet/backend.go#L26): Provides utilities for the wallet abstraction.
-    - `func DecodeAddress(io.Reader) (Address, error)`: Decodes an address.
-    - `func DecodeSig(io.Reader) (Sig, error)`: Decodes a signature.
-    - `func VerifySignature(msg []byte, sign Sig, a Address) (bool, error)`: Verifies a signature.
-- **Channel abstraction**: Represents the middleware between the abstract adjudication logic of _go-perun_ and the smart contract logic running on the blockchain. Implemented using [go-substrate-rpc-client](https://github.com/centrifuge/go-substrate-rpc-client).
-  - [`type Backend interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/channel/backend.go#L29): Provides utilities for the channel abstraction.
-    - `func CalcID(*Params) ID`: Calculates the channel identifier from the parameters.
-    - `func Sign(wallet.Account, *Params, *State) (wallet.Sig, error)`: Creates a signature for a given channel state.
-    - `func Verify(addr wallet.Address, params *Params, state *State, sig wallet.Sig) (bool, error)`: Verifies a signature for a given channel state.
-    - `func DecodeAsset(io.Reader) (Asset, error)`: Decodes an asset identifier.
-  - [`type Adjudicator interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/channel/adjudicator.go#L38): Provides functionality for calling the on-chain adjudication logic.
-    - `func Register(context.Context, AdjudicatorReq, []SignedState) error`: Registers channel state on-chain.
-    - `func Withdraw(context.Context, AdjudicatorReq, StateMap) error`: Withdraws channel funds on-chain.
-    - `func Subscribe(context.Context, *Params) (AdjudicatorSubscription, error)`: Creates an on-chain event subscription.
-  - [`type AdjudicatorSubscription interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/channel/adjudicator.go#L105): Provides functionality for consuming relevant on-chain events.
-    - `func Next() AdjudicatorEvent`: Reads the next event.
-    - `func Err() error`: Returns a subscription error.
-    - `func Close() error`: Closes the subscription.
-  - [`type Funder interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/channel/funder.go#L27): Provides functionality for on-chain channel funding.
-    - `func Fund(context.Context, FundingReq) error`: Transfers funds to a given channel on-chain.
+* **Wallet abstraction**: Provides tools for account management and signature generation. Implemented using [go-subkey](https://github.com/vedhavyas/go-subkey) and [go-substrate-rpc-client](https://github.com/centrifuge/go-substrate-rpc-client).
+  * [`type Wallet interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/wallet/wallet.go#L21): Represents a set of accounts.
+    * `func Unlock(Address) (Account, error)`: Unlocks a wallet account.
+  * [`type Account interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/wallet/account.go#L18)
+    * `func Address() Address`: Returns the account address.
+    * `func SignData(data []byte) ([]byte, error)`: Signs a byte array.
+  * [`type Address interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/wallet/address.go#L29): Represents an account address.
+    * `func Encode(io.Writer) error`: Encodes the address.
+    * `func Decode(io.Reader) error`: Decodes an address.
+  * [`type Backend interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/wallet/backend.go#L26): Provides utilities for the wallet abstraction.
+    * `func DecodeAddress(io.Reader) (Address, error)`: Decodes an address.
+    * `func DecodeSig(io.Reader) (Sig, error)`: Decodes a signature.
+    * `func VerifySignature(msg []byte, sign Sig, a Address) (bool, error)`: Verifies a signature.
+* **Channel abstraction**: Represents the middleware between the abstract adjudication logic of _go-perun_ and the smart contract logic running on the blockchain. Implemented using [go-substrate-rpc-client](https://github.com/centrifuge/go-substrate-rpc-client).
+  * [`type Backend interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/channel/backend.go#L29): Provides utilities for the channel abstraction.
+    * `func CalcID(*Params) ID`: Calculates the channel identifier from the parameters.
+    * `func Sign(wallet.Account, *Params, *State) (wallet.Sig, error)`: Creates a signature for a given channel state.
+    * `func Verify(addr wallet.Address, params *Params, state *State, sig wallet.Sig) (bool, error)`: Verifies a signature for a given channel state.
+    * `func DecodeAsset(io.Reader) (Asset, error)`: Decodes an asset identifier.
+  * [`type Adjudicator interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/channel/adjudicator.go#L38): Provides functionality for calling the on-chain adjudication logic.
+    * `func Register(context.Context, AdjudicatorReq, []SignedState) error`: Registers channel state on-chain.
+    * `func Withdraw(context.Context, AdjudicatorReq, StateMap) error`: Withdraws channel funds on-chain.
+    * `func Subscribe(context.Context, *Params) (AdjudicatorSubscription, error)`: Creates an on-chain event subscription.
+  * [`type AdjudicatorSubscription interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/channel/adjudicator.go#L105): Provides functionality for consuming relevant on-chain events.
+    * `func Next() AdjudicatorEvent`: Reads the next event.
+    * `func Err() error`: Returns a subscription error.
+    * `func Close() error`: Closes the subscription.
+  * [`type Funder interface`](https://github.com/hyperledger-labs/go-perun/blob/1fc30ba43eaae379ed5c566bdcf79edafc598b88/channel/funder.go#L27): Provides functionality for on-chain channel funding.
+    * `func Fund(context.Context, FundingReq) error`: Transfers funds to a given channel on-chain.
 
 The following aspects are **out of scope** of the current proposal and subject to future applications:
 
-- App channels, i.e., channels with arbitrary and enforceable transaction logic.
-- Multi-asset channels, i.e., channels that hold a variety of asset types.
-- N-party channels, i.e., channels with an arbitrary number of participants.
-- Sub-channels or virtual-channels, i.e., channels that are funded off-chain from other channels.
+* App channels, i.e., channels with arbitrary and enforceable transaction logic.
+* Multi-asset channels, i.e., channels that hold a variety of asset types.
+* N-party channels, i.e., channels with an arbitrary number of participants.
+* Sub-channels or virtual-channels, i.e., channels that are funded off-chain from other channels.
 
 In the further future we plan to enable channels between Polkadot chains, and to explore the possibility of establishing channels to users on other networks.
 
@@ -119,14 +116,14 @@ We target the following user groups:
 
 #### Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
-We are aware of *cChannel-substrate*, which is a channel project on Polkadot by Celer. We differentiate ourselves from cChannel-substrate as follows:
+We are aware of _cChannel-substrate_, which is a channel project on Polkadot by Celer. We differentiate ourselves from cChannel-substrate as follows:
 
-1) *cChannel-substrate*: does not include a client implementation.
-This means that the whole off-chain protocol implementation is still to be done on their side. *go-perun*: Thanks to the unique blockchain-agnostic design of _go-perun_, _go-perun_ features an abstract implementation of the off-chain protocols and only the blockchain-specific parts of the client need to be implemented.
-2) *cChannel-substrate*: focuses on payment channels.
-*go-perun*: provides generalized state channel functionality.
-3) *cChannel-substrate*: does not allow transactions across chains.
-*go-perun*: is designed for enabling cross-chain transactions in the future.
+1) _cChannel-substrate_: does not include a client implementation.
+This means that the whole off-chain protocol implementation is still to be done on their side. _go-perun_: Thanks to the unique blockchain-agnostic design of _go-perun_, _go-perun_ features an abstract implementation of the off-chain protocols and only the blockchain-specific parts of the client need to be implemented.
+2) _cChannel-substrate_: focuses on payment channels.
+_go-perun_: provides generalized state channel functionality.
+3) _cChannel-substrate_: does not allow transactions across chains.
+_go-perun_: is designed for enabling cross-chain transactions in the future.
 
 ## Team :busts_in_silhouette:
 
@@ -151,7 +148,7 @@ The PolyCrypt/Perun team consists of leading academic researchers in the off-cha
 
 * **Contact Name:** Sebastian Stammler, Matthias Geihs
 * **Contact Email:** seb@perun.network, matthias@perun.network
-* **Website:** https://polycry.pt/, https://perun.network/
+* **Website:** <https://polycry.pt/>, <https://perun.network/>
 
 ### Legal Structure
 
@@ -165,24 +162,24 @@ Furthermore, our team includes experienced developers. Our team members are the 
 
 ### Team Code Repos
 
-A collection of our repositories can be found at https://github.com/perun-network/.
+A collection of our repositories can be found at <https://github.com/perun-network/>.
 
-Since mid 2020, the Perun Framework is a Hyperledger Labs project. The _go-perun_ library is available at https://github.com/hyperledger-labs/go-perun and the Ethereum smart contracts are available at https://github.com/hyperledger-labs/perun-eth-contracts.
+Since mid 2020, the Perun Framework is a Hyperledger Labs project. The _go-perun_ library is available at <https://github.com/hyperledger-labs/go-perun> and the Ethereum smart contracts are available at <https://github.com/hyperledger-labs/perun-eth-contracts>.
 
-The on-chain component of Perun Channels on Polkadot is available at https://github.com/perun-network/perun-polkadot-pallet.
+The on-chain component of Perun Channels on Polkadot is available at <https://github.com/perun-network/perun-polkadot-pallet>.
 
 ### Team LinkedIn Profiles
 
-Our company LinkedIn profile is available at https://www.linkedin.com/company/perun-network/.
+Our company LinkedIn profile is available at <https://www.linkedin.com/company/perun-network/>.
 
 ## Development Status :open_book:
 
 **Research:**
-The foundation for Perun State Channels was laid in “Perun: Virtual Payment Hubs over Cryptocurrencies”, published at IEEE S&P 2019, https://ieeexplore.ieee.org/document/8835315, also available at  https://eprint.iacr.org/2017/635. This is one of the most prestigious academic conferences in IT Security.
-An overview and summary of the research results is given in our white paper at https://perun.network/pdf/Perun2.0.pdf.
+The foundation for Perun State Channels was laid in “Perun: Virtual Payment Hubs over Cryptocurrencies”, published at IEEE S&P 2019, <https://ieeexplore.ieee.org/document/8835315>, also available at  <https://eprint.iacr.org/2017/635>. This is one of the most prestigious academic conferences in IT Security.
+An overview and summary of the research results is given in our white paper at <https://perun.network/pdf/Perun2.0.pdf>.
 
-**Software:** 
-The main repository of the _go-perun_ library is at https://github.com/hyperledger-labs/go-perun.
+**Software:**
+The main repository of the _go-perun_ library is at <https://github.com/hyperledger-labs/go-perun>.
 It currently features an Ethereum blockchain backend and supports generalized state channels on a single backend.
 In 2020, we joined the hyperledger foundation together with our industry partner BOSCH, with the goal of growing an open-source community around the Perun project.
 
@@ -204,8 +201,7 @@ In 2020, we joined the hyperledger foundation together with our industry partner
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | Wallet abstraction | We provide an implementation of the wallet abstraction for Polkadot. The details are given in *Project Details*. |
-
+| 1. | Wallet abstraction | We provide an implementation of the wallet abstraction for Polkadot. The details are given in _Project Details_. |
 
 ### Milestone 2 — Channel Abstraction
 
@@ -218,8 +214,7 @@ In 2020, we joined the hyperledger foundation together with our industry partner
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | Channel abstraction | We provide an implementation of the channel abstraction for Polkadot. The details are given in *Project Details*. |
-
+| 1. | Channel abstraction | We provide an implementation of the channel abstraction for Polkadot. The details are given in _Project Details_. |
 
 ### Milestone 3 — End-to-end tests
 
@@ -233,7 +228,6 @@ In 2020, we joined the hyperledger foundation together with our industry partner
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 1. | End-to-end tests | We provide end-to-end tests that test the interplay between the new components. |
-
 
 ### Milestone 4 — Improve Pallet
 
@@ -249,7 +243,6 @@ In 2020, we joined the hyperledger foundation together with our industry partner
 | 1. | Weight estimation | Currently, [perun-polkadot-pallet](https://github.com/perun-network/perun-polkadot-pallet) functions have a dummy constant weight. We will provide reasonable weight estimations, e.g., using [benchmarking](https://substrate.dev/docs/en/knowledgebase/runtime/benchmarking). This will require adapting our test setup. |
 | 2. | Code Coverage | We provide code coverage results and add a code coverage badge to [perun-polkadot-pallet](https://github.com/perun-network/perun-polkadot-pallet). |
 
-
 ### Milestone 5 — CLI Demo
 
 * **Estimated Duration:** 1 month
@@ -264,13 +257,11 @@ In 2020, we joined the hyperledger foundation together with our industry partner
 | 0e. | Article | We will publish an article or workshop that explains what was done as part of the grant. |
 | 1. | CLI Demo | We provide a Perun Polkadot CLI Demo similar to [perun-eth-demo](https://github.com/perun-network/perun-eth-demo). The demo  lets users experiment with the technology and send payments between each other via a Perun Channel on Polkadot. |
 
-
 ## Future Plans
 
 * **Open source.** We are working on building an open-source community around the project. For this, we joined the Hyperledger foundation with Bosch as our enterprise partner.
 * **Collaboration.** We are looking to extend our collaborations. As our library is written in Go, we envision that it is suitable for resource constrained devices in the IoT space and for high-performance applications.
 * **Perun Network.** We consider building a liquidity network that enables fast and cheap asset swaps across a variety of blockchains.
-
 
 ## Additional Information :heavy_plus_sign:
 

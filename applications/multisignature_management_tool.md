@@ -1,6 +1,5 @@
-## Open Grant Proposal
+## Multi-signature_Management_Tool
 
-- **Project:** Multi-signature_Management_Tool
 - **Proposer:** [Hong Tao](https://github.com/carlhong)
 - **Payment Address:** 3P1DGw78xgkQ2pTPT1hcwmzozY1T93gmTB
 

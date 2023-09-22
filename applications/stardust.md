@@ -1,10 +1,9 @@
-# W3F Grant Proposal
+# Derivative Powered Uncollateralized Stablecoin Research and Design
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Derivative Powered Uncollateralized Stablecoin Research and Design
 - **Team Name:** Stardust Labs Inc.
 - **Payment Address:** 0xF3d5F194D9eF961a85a4d5be05EFda7B2B33005d (DAI, Ethereum Mainet)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -13,13 +12,13 @@
 
 ## Project Overview :page_facing_up:
 
-This proposal is in response to an RFP for an Uncollateralized Stablecoin (Specifically: https://github.com/w3f/Grants-Program/blob/master/rfps/uncollateralized-stablecoin.md).
+This proposal is in response to an RFP for an Uncollateralized Stablecoin (Specifically: <https://github.com/w3f/Grants-Program/blob/master/rfps/uncollateralized-stablecoin.md>).
 
 ### Overview
 
 - A brief description of your project.
 
-We are proposing a functionally different approach for an uncollateralized stablecoin. Extant uncollateralized stablecoin solutions are based on creating and burning an ERC20-style token. By monitoring exchange rates and managing the token supply, these uncollateralized stablecoins seek to balance supply and demand to peg the exchange rate to a reference currency. To date, none have achieved commercial success and the inherent limitations and flaws of this architecture are quickly becoming apparent even with a theoretically perfect implementation. This paper dives deeper into the current challenges (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952045), the first of which is a baseline support level of demand for operational stability which this RFP seeks to address.
+We are proposing a functionally different approach for an uncollateralized stablecoin. Extant uncollateralized stablecoin solutions are based on creating and burning an ERC20-style token. By monitoring exchange rates and managing the token supply, these uncollateralized stablecoins seek to balance supply and demand to peg the exchange rate to a reference currency. To date, none have achieved commercial success and the inherent limitations and flaws of this architecture are quickly becoming apparent even with a theoretically perfect implementation. This paper dives deeper into the current challenges (<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952045>), the first of which is a baseline support level of demand for operational stability which this RFP seeks to address.
 
 Stardust Labs is proposing a fundamentally different approach that uses financial derivatives to programmatically and algorithmically generate a "synthetic" derivatives-based stablecoin that can be originated or settled on demand.
 
@@ -29,7 +28,7 @@ Our proposal is to utilize the latest advancements in decentralized finance to i
 
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 
-What we are proposing is relatively unprecedented but there are promising signs. Angle Labs launched on Ethereum last year as an ERC20 token in order to provide a stablecoin pegged to the Euro. They term themselves "the first decentralized, capital efficient and over-collateralized stablecoin protocol" (https://www.angle.money/). Angle Lab's stablecoin is collateralized with Ethereum and more specifically over-collateralized to ensure safety. In July of 2021 they published a whitepaper indicating that they were going to deploy self-minted perpetual contracts as a tool to bring in additional collateral and protection against large price moves. These perpetuals provide additional outsourcing of risk in addition to directly increasing ETH collateral. 5 months ago, they raised $5M from a16z and others to explore the technology. Our proposed architecture would bring that attention and innovation to the Polkadot network. More importantly for the Polkadot ecosystem, our proposal is decentralized and truly uncollateralized as it manages risks entirely through derivatives, and can generate synthetic stablecoins between any arbitrary pairs provided there is a perpetual contract market with sufficient liquidity.
+What we are proposing is relatively unprecedented but there are promising signs. Angle Labs launched on Ethereum last year as an ERC20 token in order to provide a stablecoin pegged to the Euro. They term themselves "the first decentralized, capital efficient and over-collateralized stablecoin protocol" (<https://www.angle.money/>). Angle Lab's stablecoin is collateralized with Ethereum and more specifically over-collateralized to ensure safety. In July of 2021 they published a whitepaper indicating that they were going to deploy self-minted perpetual contracts as a tool to bring in additional collateral and protection against large price moves. These perpetuals provide additional outsourcing of risk in addition to directly increasing ETH collateral. 5 months ago, they raised $5M from a16z and others to explore the technology. Our proposed architecture would bring that attention and innovation to the Polkadot network. More importantly for the Polkadot ecosystem, our proposal is decentralized and truly uncollateralized as it manages risks entirely through derivatives, and can generate synthetic stablecoins between any arbitrary pairs provided there is a perpetual contract market with sufficient liquidity.
 
 - An indication of why your team is interested in creating this project.
 
@@ -45,17 +44,17 @@ The challenge with the former is that a user is implicitly trusting the centrali
 
 Stardust labs recommends a fundamentally different approach. The primary utility of any stablecoin is mitigating the risk of future price movements. The past year has seen strong developments in decentralized financial markets and powerful tools for de-risking in the form of options and perpetual contracts. We can use these products and financial engineering to create a synthetic financial instrument that replicates the performance of a stablecoin on demand. As long as the underlying asset can reach a sufficiently liquid options pair, we can combine products to create a stable structure that ultimately results in a fixed future return in the pegged currency at the risk free rate thanks to put-call parity. If this relationship is broken, that mathematically means that a profitable risk-free arbitrage opportunity exists which should be very short-lived in efficient, open financial markets.
 
-Defirate has a good in-depth explanation of both how perpetual contracts work and how they can be hedged to earn the nominal interest at the risk-free funding rate. (https://defirate.com/perpetual-contracts/)
+Defirate has a good in-depth explanation of both how perpetual contracts work and how they can be hedged to earn the nominal interest at the risk-free funding rate. (<https://defirate.com/perpetual-contracts/>)
 
 Ultimately, our proposed stablecoin isn't a managed token or backed by an underlying asset. Instead, the stablecoin smart contract purchases and returns a tokenized, engineered bundle of options and perpetual contracts that, combined, ensure a stable price relative to the pegged currency in the future. We term this type of asset a 'synthetic' stablecoin, termed because it is the exact same process as building a synthetic option. In addition, this process is similar to securitization whereby several financial products are pooled to yield a purchasable interest-bearing security with a different risk-reward curve.
 
-The astute reader will observe that constructing these synthetic options will incur a cost. However, the advent of flash loans and depository institutions like AAVE allow the capital in the smart contracts to be deployed to generate risk-free interest, allowing the stablecoin contract to offset the cost of purchasing these options. We envision the smart contract assessing either a transaction fee for origination or a penalty for early withdrawals where users have not held the synthetic stablecoin long enough for the interest to offset the contract purchase fees and transaction costs. Though it varies dramatically, Bitcoin futures seem to have a 3.69% risk-free rate (https://quantpedia.com/what-is-the-bitcoins-risk-free-interest-rate/), the risk free rates at Binance for Perpetual contracts (the funding rate) is 0.01% every 8 hours (or an annualized rate of 11.57%). Meanwhile, the fee to enter a perpetual ranges from 0.05%(dxdy) - 0.02% (Binance) so it is likely that these fees would be entirely covered by the interest payments on the overall stabilized value.
+The astute reader will observe that constructing these synthetic options will incur a cost. However, the advent of flash loans and depository institutions like AAVE allow the capital in the smart contracts to be deployed to generate risk-free interest, allowing the stablecoin contract to offset the cost of purchasing these options. We envision the smart contract assessing either a transaction fee for origination or a penalty for early withdrawals where users have not held the synthetic stablecoin long enough for the interest to offset the contract purchase fees and transaction costs. Though it varies dramatically, Bitcoin futures seem to have a 3.69% risk-free rate (<https://quantpedia.com/what-is-the-bitcoins-risk-free-interest-rate/>), the risk free rates at Binance for Perpetual contracts (the funding rate) is 0.01% every 8 hours (or an annualized rate of 11.57%). Meanwhile, the fee to enter a perpetual ranges from 0.05%(dxdy) - 0.02% (Binance) so it is likely that these fees would be entirely covered by the interest payments on the overall stabilized value.
 
 ### Why Now & Risks
 
 Ultimately this is only possible today thanks to both the recent advancements in decentralized finance, and more importantly the liquidity in the market. One of the outstanding risks to this stable coin is if liquidity quickly dries up. An example of the impact of liquidity shocks on securitized financial derivatives is best seen by the 2008 financial crisis. Unlike traditional financial markets however, positions are monitored in real-time and can be forcefully liquidated, preventing direct losses. However, there are fundamental limits on how much stability this construct or any uncollateralized stablecoin could absorb. One of the key outstanding questions, and the main exogenous risk that is currently unknown, is the strength of correlation between overall crypto prices, volatility, and its impact on the liquidity of decentralized financial markets.
 
-One of the primary anticipated challenges is the lack of regulatory oversight in the markets and the ability of individual companies to offer arbitrary leverage ratios. For example, Binance is offering 125x leverage meaning some perpetual contracts are at risk of being forcibly liquidated even with less than a 1% price movement. (https://bitcoinist.com/binance-125x-leverage-sparks-criticism-from-community/) Our smart contract can simply repurchase another perpetual contract during liquidation, however a risk exists that market liquidity would dry up during periods of unprecedented volatility such as a major market crash. Without liquid markets with leveraged counter-parties willing to absorb the risk, the synthetic stablecoin would be forced to return the money to the user in the underlying currency at the price of the stable peg, having done its job, but at the same time being unable to offer continued stability.
+One of the primary anticipated challenges is the lack of regulatory oversight in the markets and the ability of individual companies to offer arbitrary leverage ratios. For example, Binance is offering 125x leverage meaning some perpetual contracts are at risk of being forcibly liquidated even with less than a 1% price movement. (<https://bitcoinist.com/binance-125x-leverage-sparks-criticism-from-community/>) Our smart contract can simply repurchase another perpetual contract during liquidation, however a risk exists that market liquidity would dry up during periods of unprecedented volatility such as a major market crash. Without liquid markets with leveraged counter-parties willing to absorb the risk, the synthetic stablecoin would be forced to return the money to the user in the underlying currency at the price of the stable peg, having done its job, but at the same time being unable to offer continued stability.
 
 Due to the use of options, perpetuals, and lack of human intervention, our proposed system is able to absorb far more volatility than algorithmically managed uncollateralized stablecoins. These implementations have strong negative feedback loops during periods of decreasing demand and, as of date, no robust solution for reducing supply. These struggles have caused many to fail even under benign conditions and these challenges will be dramatically amplified in the type of major market crash where liquidity in financial markets begins to dry up. At that point, the only efficient solution would be custodied collateralized assets by trustworthy centralized entities.
 
@@ -76,7 +75,7 @@ The primary target demographic and audience would be decentralized financial app
 
 - **Contact Name:** Theresa Garcia
 - **Contact Email:** theresa@stardustfunds.com
-- **Website:** https://stardust.finance/
+- **Website:** <https://stardust.finance/>
 
 ### Legal Structure
 
@@ -90,27 +89,27 @@ Theresa has a particularly deep knowledge on the current dynamics, consumer sent
 
 Both Adit and Theresa are also full stack developers who have successfully deployed a crypto wealth management mobile to building their own blockchain binary.
 
-Stardust Wealth iOS App: https://stardust.finance/app
-Our test blockchain network: https://explorer.stardust.finance/
+Stardust Wealth iOS App: <https://stardust.finance/app>
+Our test blockchain network: <https://explorer.stardust.finance/>
 
 ### Team Code Repos
 
-- https://github.com/adit313/ (primary developer)
-- https://github.com/enteraether
+- <https://github.com/adit313/> (primary developer)
+- <https://github.com/enteraether>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/adit-patel/
-- https://www.linkedin.com/in/the-theresa-garcia/
+- <https://www.linkedin.com/in/adit-patel/>
+- <https://www.linkedin.com/in/the-theresa-garcia/>
 
 ## Development Status :open_book:
 
-- link to RFP: https://github.com/w3f/Grants-Program/blob/master/rfps/uncollateralized-stablecoin.md
+- link to RFP: <https://github.com/w3f/Grants-Program/blob/master/rfps/uncollateralized-stablecoin.md>
 
-- academic publications relevant to the problem: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952045
+- academic publications relevant to the problem: <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952045>
 
-- Information on put-call parity: https://en.wikipedia.org/wiki/Put%E2%80%93call_parity
-  https://www.investopedia.com/terms/p/putcallparity.asp
+- Information on put-call parity: <https://en.wikipedia.org/wiki/Put%E2%80%93call_parity>
+  <https://www.investopedia.com/terms/p/putcallparity.asp>
 
 ## Development Roadmap :nut_and_bolt:
 

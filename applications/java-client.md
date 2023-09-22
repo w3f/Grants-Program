@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# polkadot-java-client
 
-* **Project:** polkadot-java-client
 * **Proposer:** splix
 * **Payment Address:**  bc1qce0nvef6txyahe9xvrdjavvw7qemzvhyp4ux55
 

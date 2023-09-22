@@ -1,5 +1,5 @@
-# Open Grant Proposal
-* **Project:** NuLink
+# NuLink
+
 * **Proposer:**  Pawn
 * **Payment Address:**  0xf7410438ead9e89EEd5ca6e61a11E862C297ca0e
 

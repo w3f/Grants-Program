@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Polkastats
 
-* **Project:** [Polkastats](https://polkastats.io)
 * **Proposer:** Colm3na
 * **Payment Address:** BTC : 3982fvdPfs1hHUF7BYc2GbaU3LdfN4Ruzg
 

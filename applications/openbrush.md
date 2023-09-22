@@ -1,35 +1,38 @@
-# W3F Open Grant Proposal
+# OpenBrush
 
-* **Project Name:** [OpenBrush](https://github.com/Supercolony-net/openbrush-contracts)
 * **Team Name:** [SuperColony](https://github.com/Supercolony-net)
 * **Payment Address:** ERC 20 ADDRESS:
 0x112C9eDB60D16f9Cf501721b03B9D0F275682213
 
 ## Project Overview :page_facing_up:
-Standard proposal - https://github.com/w3f/PSPs/pull/22
+
+Standard proposal - <https://github.com/w3f/PSPs/pull/22>
 
 ### Overview
+
 Our mission within this project is to make ink! usable, and achieve its wide adoption.
 
-In order to be successful with this mission, we have outlined several steps that need to be taken. 
+In order to be successful with this mission, we have outlined several steps that need to be taken.
+
 1. OpenBrush is an open source library for secure smart-contract development on ink! as
 [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts) on Solidity.
 
-2. Openbrush should serve as a starting point for every developer entering a Polkadot(ink!) ecosystem. 
+2. Openbrush should serve as a starting point for every developer entering a Polkadot(ink!) ecosystem.
 3. In addition to having a standard implementation, Openbrush should also have macroses to simplify and abstract up applications(smart contracts) development.
 4. In order for Openbrush to work and fulfill it's purpose, several changes must be made/several blockers overcome in `ink!` and substrate's `contract-pallet`. We are commited to do that in the context of this project.
 
-This project is important to us as it's our strategic goal to accelerate Polkadot ecosystem development. Applications on Ink! are a huge part of it. 
+This project is important to us as it's our strategic goal to accelerate Polkadot ecosystem development. Applications on Ink! are a huge part of it.
 
 ### Project Details
-The open brush should be the starting point for smart contract developers from Ethereum. 
-It will contain the same folder structure as openzeppelin and documentation that describes the differences 
-between ink! and Solidity, how developers should change their mindset, how to design their project, 
+
+The open brush should be the starting point for smart contract developers from Ethereum.
+It will contain the same folder structure as openzeppelin and documentation that describes the differences
+between ink! and Solidity, how developers should change their mindset, how to design their project,
 how to deploy contract and test them, etc.
 
-The library will provide the default implementation of standard contracts, which 
-can be customized by developers. Also, the library will provide additional 
-features which are not available in ink!(and our team will try to integrate them into ink! later), 
+The library will provide the default implementation of standard contracts, which
+can be customized by developers. Also, the library will provide additional
+features which are not available in ink!(and our team will try to integrate them into ink! later),
 but which can be useful for development.
 
 Our team aims to improve the smart-contract development experience,
@@ -39,7 +42,7 @@ and wants to improve ink!, make it more user-friendly and to popularize it.
 
 * Where and how does your project fit into the ecosystem?
 
-The necessity of a solution like this seemed rather urgent to us when we started to work with ink!. We quikcly realized that we strategically would like to become the company that builds in the ecosystem. We decided that we want to commit and help ink! become widespread and used. Right now usability of ink! is very low. Openbrush is dedicated to change that. 
+The necessity of a solution like this seemed rather urgent to us when we started to work with ink!. We quikcly realized that we strategically would like to become the company that builds in the ecosystem. We decided that we want to commit and help ink! become widespread and used. Right now usability of ink! is very low. Openbrush is dedicated to change that.
   
 * Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 
@@ -51,16 +54,16 @@ Our project is the starting point for smart contract developers, coming from oth
 
 * Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   
-We are only aware about one project [metis](https://github.com/patractlabs/metis). We partnered with them to collaborate on the ecosystem as we have the same commmon end goal. 
+We are only aware about one project [metis](https://github.com/patractlabs/metis). We partnered with them to collaborate on the ecosystem as we have the same commmon end goal.
 
 * If so, how is your project different?
 
 Our project isn't restricted to only providing the base implementation of contracts.
 Objectively speaking based on what we know, and what was listed in their proposal here are key differences:
-- At the moment, Openbrush is in far more advanced stage, Developer Experience of our library is significantly higher
-- Openbrush aims to propose and take care of standards for ink! (We've already created [PSP](https://github.com/w3f/PSPs/pull/22) for fungible tokens and we plan to cotinue doing so)
-- Openbrush aims to be a starting point for a smart contract developer, provide documentation.
-- Contribute to ink! and substrate `contract-pallet` to improve the smart-contract development experience(add new features, fix bugs, etc).
+* At the moment, Openbrush is in far more advanced stage, Developer Experience of our library is significantly higher
+* Openbrush aims to propose and take care of standards for ink! (We've already created [PSP](https://github.com/w3f/PSPs/pull/22) for fungible tokens and we plan to cotinue doing so)
+* Openbrush aims to be a starting point for a smart contract developer, provide documentation.
+* Contribute to ink! and substrate `contract-pallet` to improve the smart-contract development experience(add new features, fix bugs, etc).
 
 ## Team :busts_in_silhouette:
 
@@ -84,7 +87,7 @@ Objectively speaking based on what we know, and what was listed in their proposa
 
 ### Legal Structure
 
-* **Registered Address:** Dubai Silicon Oasis, DDP, Building A2, Dubai, UAE. 
+* **Registered Address:** Dubai Silicon Oasis, DDP, Building A2, Dubai, UAE.
 * **Registered Legal Entity:** Mempool Ventures FZCO, operating under Supercolony brand
 
 ### Team's experience
@@ -92,12 +95,11 @@ Objectively speaking based on what we know, and what was listed in their proposa
 **Markian Ivanichok**  
 CEO of Supercolony,
 Blockchain enterpreneur, Software Engineer.
-Started my engineering carrer back when I was 15. Since then, I developed and got a lot of experience in engineerig and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps enterpreneers to move faster. 
+Started my engineering carrer back when I was 15. Since then, I developed and got a lot of experience in engineerig and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps enterpreneers to move faster.
 Since the beginning of this year, co-founded and led Supercolony, a Polkadot venture studio that is dedicated to building and creating of Polkadot’s ecosystem.
 
 **Hartej Sawhney**  
 Co-Founder and President of Hosho, the leading blockchain, and security company that conducts smart contract audits and penetration testing of exchanges and blockchain protocols. He is an advisor at crypto hedge fund, Pink Sky Capital, Krypto.io, and BlitzPredict.io.
-
 
 **Dmitry Kryshtal**  
 Head of Marketing and BD  
@@ -121,7 +123,7 @@ Software engineer with prod experience since 2015. Master degree Information Sec
 
 **Vasyl Novak**  
 Researcher
-BS in economics, MS in Quantitative Finance & Actuarial Science, experienced in, operations management,  IB, financial and stratedy consulting, including crypto, passed CFA II level 
+BS in economics, MS in Quantitative Finance & Actuarial Science, experienced in, operations management,  IB, financial and stratedy consulting, including crypto, passed CFA II level
 
 **Lera Laricheva**  
 Creative Designer  
@@ -129,29 +131,28 @@ Creative Designer
 
 ### Team Code Repos
 
-* https://github.com/Supercolony-net
-
+* <https://github.com/Supercolony-net>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* https://github.com/VargSupercolony
-* https://github.com/sventime
-* https://github.com/xgreenx
-* https://github.com/PierreOssun
+* <https://github.com/VargSupercolony>
+* <https://github.com/sventime>
+* <https://github.com/xgreenx>
+* <https://github.com/PierreOssun>
 
 ### Team LinkedIn Profiles (if available)
 
-* https://www.linkedin.com/in/mivanichok/
-* https://www.linkedin.com/in/ian-arden/
-* https://www.linkedin.com/in/hartej/
-* https://www.linkedin.com/in/dmitry-kryshtal/
-* https://www.linkedin.com/in/valeria-laricheva/
+* <https://www.linkedin.com/in/mivanichok/>
+* <https://www.linkedin.com/in/ian-arden/>
+* <https://www.linkedin.com/in/hartej/>
+* <https://www.linkedin.com/in/dmitry-kryshtal/>
+* <https://www.linkedin.com/in/valeria-laricheva/>
 
 ## Development Status :open_book:
 
 [The project](https://github.com/Supercolony-net/openbrush-contracts) is already in a solid pre-release state.
 
-PSP - https://github.com/w3f/PSPs/pull/22
+PSP - <https://github.com/w3f/PSPs/pull/22>
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -183,8 +184,7 @@ The first milestone already has been done. Funds for the next milestones will be
 | 2a.    | AccessControl                    | We will implement reusable [AccessControl](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControl.sol) analog on ink!                                                                                                         |
 | 2b.    | Ownable                          | We will implement reusable [Ownable](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol) analog on ink!                                                                                     |
 
-
-#### Milestone 2 - Simplify usage of library. Add a new features which extend ink!. Provide macroses that will allow creation of your own base implementation.
+#### Milestone 2 - Simplify usage of library. Add a new features which extend ink!. Provide macroses that will allow creation of your own base implementation
 
 * **Estimated duration:** 7 weeks
 * **FTE:**  2.5
@@ -204,7 +204,7 @@ The first milestone already has been done. Funds for the next milestones will be
 
 ### Future work
 
-#### Milestone 3. Pre-release - Standardization of tokens contracts. Implement extensions for contracts. Documentation.
+#### Milestone 3. Pre-release - Standardization of tokens contracts. Implement extensions for contracts. Documentation
 
 * **Estimated Duration:** 3 weeks(+ time for PSP approving)
 * **FTE:**  2.5
@@ -219,7 +219,7 @@ The first milestone already has been done. Funds for the next milestones will be
 | 2.     | Implement extensions for tokens                          | We will implement extensions for Erc20, Erc721 and Erc1155 tokens.              |
 | 3.     | Create Proposal for Non Fungible token and Multi token   | We will create proposals for NFT and multi token, when proposal for FT token will be approved. Based on the decisions of these approves, we will update implementation in library. |
 
-#### Milestone 4. Release - Contribution to ink!
+#### Milestone 4. Release - Contribution to ink
 
 * **Estimated Duration:** 4 weeks(time depends on conversations in ink! repository)
 * **FTE:**  2
@@ -253,20 +253,19 @@ The first milestone already has been done. Funds for the next milestones will be
 ## Future Plans
 
 We're going to make strong impact on the community, making ink! simple and convenient for developers.
-- Expertise sharing
-   - Covering all crypto-related news websites, creating workshops online, handling all relevant forums and social networks
-- Becoming an entry point for a developer starting in ink!/Wasm
-   - Nonstop updating our FAQ and knowledge base, creating educational content (text\video)
-- Marketing and PR strategy  
-   - Organizing hackathons, Developing growthhacking strategy for involving developers from different channels
-
+* Expertise sharing
+  * Covering all crypto-related news websites, creating workshops online, handling all relevant forums and social networks
+* Becoming an entry point for a developer starting in ink!/Wasm
+  * Nonstop updating our FAQ and knowledge base, creating educational content (text\video)
+* Marketing and PR strategy  
+  * Organizing hackathons, Developing growthhacking strategy for involving developers from different channels
 
 ## Additional Information :heavy_plus_sign:
-So far we have taken it upon ourselves to fund this project. 
+
+So far we have taken it upon ourselves to fund this project.
 In the roadmap you can see what was already done, currently we're on the 2-rd milestone.  
 
 We haven’t applied for any other grant programs.
-
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 

@@ -1,10 +1,9 @@
-# W3F Grant Proposal
+# cScale
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-* **Project Name:** cScale
 * **Team Name:** Matthew Darnell (Individual)
 * **Payment Address:** `15ssDeS9peN9a3rDwFrV19YJ8oRffmphaE` (BTC)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -36,8 +35,9 @@
 * Some limitations and caveats:
   * C does not support `uint128_t` types. Possible options are to introduce a 3rd party dependency or consume `u128` values encoded as `char*` strings. GCC does provide a `uint128_t` extension but I'm not sure how universal this is and C does not support sufficiently long literal int values. Currently I am able to encode from a hex-represented `u128` but could consume decimal represented `char*` strings if required.
   * Enumerations are tricky to implement as they are user-defined. I am able to construct a `struct` which generates a custom enum type by consuming an array of strings of different types, e.g. `[Int, Bool]`, but I am not sure how to make this very clean for the user.
-  * A lack of templating and type inference makes encoding/decoding user-defined `struct` values a little difficult. I am able to achieve this by defining a custom `struct` which contains a `serialize` as well as `deserialize` function pointer. The user will be able to include this `struct ` in his data structure and assign his own custom function. This works fine, but again, it is a little more in depth for the end user than ideal.
+  * A lack of templating and type inference makes encoding/decoding user-defined `struct` values a little difficult. I am able to achieve this by defining a custom `struct` which contains a `serialize` as well as `deserialize` function pointer. The user will be able to include this `struct` in his data structure and assign his own custom function. This works fine, but again, it is a little more in depth for the end user than ideal.
   * With each of these, I would love feedback from others on how to improve the library!
+
 ### Ecosystem Fit
 
 * The target audience are Desktop C/C++ developers who would like to be able to encode and decode Substrate API data
@@ -59,8 +59,8 @@
 
 ### Team Code Repos
 
-* https://github.com/MatthewDarnell/iota-simplewallet -- IOTA C library
-* https://github.com/MatthewDarnell/redis_orderbook -- Order matching engine in Rust
+* <https://github.com/MatthewDarnell/iota-simplewallet> -- IOTA C library
+* <https://github.com/MatthewDarnell/redis_orderbook> -- Order matching engine in Rust
 
 ## Development Status :open_book:
 
@@ -69,6 +69,7 @@ Currently have a basic working implementation. Generating a testing app, a basic
 Some examples:
 
 #### Fixed Int
+
 ```c
 scale_fixed_int fixed = { 0 };
 encode_int_to_fixed_int_scale(&fixed, (uint16_t)42);
@@ -84,6 +85,7 @@ printf(" --- %u\n", output);
 ```
 
 Prints:
+
 ```shell
 2A00 --- 42
 ```
@@ -105,10 +107,10 @@ Prints:
 ```
 
 Prints:
+
 ```shell
 SCALE=<1501> --- Hex=<45> --- Decoded=<69>
 ```
-
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -146,15 +148,14 @@ SCALE=<1501> --- Hex=<45> --- Decoded=<69>
 | 0b. | Documentation | I will add several useful structs to the docs folder which represent actual Substrate data with their respective serialization functions. (AccountInfo, AccountData) |
 | 1. | Tests | I will work to provide more tests, preferably utilizing Rust FFI to compare against parity-scale-code results. This may or may not require some assistance as I have never used Rust FFI. |  
 
-
 ## Future Plans
 
 * I am writing this library to use in my own personal desktop wallet application
 * I see a real need for it to allow the Substrate community to grow and I hope it makes it on the official list of [Scale Implementations](https://substrate.dev/docs/en/knowledgebase/advanced/codec#implementations)
-* Long term I would be interested in improving this library to keep current with a possibly-evolving SCALE standard as well as getting help from other C devs making pull requests, which would be most welcome. 
+* Long term I would be interested in improving this library to keep current with a possibly-evolving SCALE standard as well as getting help from other C devs making pull requests, which would be most welcome.
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Shawn Tabrizi
 
-* This started as a personal project and I would like to assist in expanding the Substrate ecosystem by providing a critical element of its infrastructure in C 
+* This started as a personal project and I would like to assist in expanding the Substrate ecosystem by providing a critical element of its infrastructure in C

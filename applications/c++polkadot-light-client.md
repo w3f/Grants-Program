@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Polkadot Light Client in C++
 
-- **Project Name:** Polkadot Light Client in C++
 - **Team Name:** Equilibrium
 - **Payment Address:** 0x4126272BA14F7a124b1B98633678e0e5F87Ec478
 - **[Level](https://github.com/w3f/Grants-Program/tee/master#level_slider-levels):** 2
@@ -17,8 +16,7 @@ On a high level, the C++ Light Client will allow users (via JSON-RPC) to:
 
 ### Project Details
 
-We will extend the [Polkadot specification](https://spec.polkadot.network/) with Light Client requirements\* and deliver a detailed specification for the implementation based on the research done in the time frame specified in this proposal.
-The actual implementation will be performed in the next phase.
+We will deliver a detailed specification of a light client for the implementation based on the research done in the time frame specified in this proposal. The actual implementation will be performed in the next phase.
 
 The specification includes:
 
@@ -114,9 +112,8 @@ This proposal is only for Phase 0 and will culminate with the delivery of a deta
 |    0c. | Published     | GitHub, GitHub Pages                                  |
 |    1. | Cryptography | security advantages over connecting to 3rd-party node, limitations compared to full client  |
 |    2. | Runtime environment requirements | for browser and Node.js |
-|    3. | Multichain support | use cases for cross-chain communication |
-|    4. | JSON-RPC APIs | minimal run-time access interface |
-|    5. | Dependencies | libraries for cryptography, networking, build |
+|    3. | JSON-RPC APIs | minimal run-time access interface |
+|    4. | Dependencies | libraries for cryptography, networking, build |
 
 
 ## Future Plans

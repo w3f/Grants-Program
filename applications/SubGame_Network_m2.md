@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# SubGame Network m2
 
-* **Project Name:** SubGame Network m2
 * **Team Name:** [SubGame-Network](https://github.com/SubGame-Network)
 * **Payment Address:** 3CK6HN4y2ZEKX7JMfdegds7B7GrUSmv65c
 

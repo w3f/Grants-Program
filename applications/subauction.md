@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# Subauction
 
-- **Project:** Subauction
 - **Team name:** Subauction
 - **BTC address:** 387RAYPUGkQuyeqcj3Quw1ErH5a7Hria6N (BTC)
 
@@ -26,6 +25,7 @@ What we already accomplished:
 - NFT and funds locking on the network, exchange of those funds
 
 #### English Auction type
+
 The most common type of auction is where the participants bid against each other and the highest offer wins. Auction will reach its end when one of the criterias are met, there is a countdown and when the auction is concluded, the highest bidder wins.
 An auction can have a time period between the bids. So for example if nobody made a better bid than the last one in 10 minutes, auction is concluded and the last bidder wins.
 An auctioneer can even end the auction in any moment he chooses (usually when he is satisfied with the price).
@@ -42,6 +42,7 @@ As stated in the project overview, we're strong believers in the quality over qu
 We plan to leverage most of the governance features available on Polkadot. The first cornerstone of governance will be the council who will be voted on and will be deciding in referenda on the shape of the application - its modules, features, and functionality. The second cornerstone will be voted content curators who will be delegated from the council to approve or reject public proposals from the community, manage auctions and provide the optimal level of content safety and creativity.
 
 ## Governance
+
 We will introduce council that will basically “own” the entire project and any member of community who proves himself can become a part of it.
 Council will be able to set fees, fund interesting activities from the treasury or create proposals/referendums for the community.
 Council can elect curators that will manage platforms content.
@@ -50,30 +51,38 @@ It is expected that council will drive the project towards more interesting and 
 There are several approaches to implementing the actual governance module.
 
 ### Part of the auction pallet
-This makes the most sense at the first sight because we can utilize the power of Substrate to implement governance via collectives, democracy and voting pallets. However, our plan is to make the auction pallet really flexible and introducing governance can pollute auctions with unnecessary complexity regarding the governance (and thus make it less re-usable for anybody who would like to implement another system on top of our pallet). Also, there are plans for having multiple instances of the auction pallet on chains supporting NFTs so it's also a question how we would keep only single instance of governance in this case. 
+
+This makes the most sense at the first sight because we can utilize the power of Substrate to implement governance via collectives, democracy and voting pallets. However, our plan is to make the auction pallet really flexible and introducing governance can pollute auctions with unnecessary complexity regarding the governance (and thus make it less re-usable for anybody who would like to implement another system on top of our pallet). Also, there are plans for having multiple instances of the auction pallet on chains supporting NFTs so it's also a question how we would keep only single instance of governance in this case.
 
 ### Separate pallet
+
 This seems like an ideal solution because it has a benefit of using Substrate but factors out all governance functionality to a separate pallet. Downside would be that each NFT platform where we plan to integrate our auction-pallet would have to integrate two pallets instead of one to their runtime.
 
 ### Smart contract
-Smart contract approach has following advantages
- - Factoring our governance while keeping only one pallet at the same time
- - Easy integration of our auctions to multiple NFT chains since the only connection to the governance is reference to our smart contract. Thus we end up with only instance of governance while having multiple auction instances sitting on different chains
 
-However, downside is obviously not exploiting great capabilities that Substrate offers and having to implement a lot of stuff by reinventing the wheel. 
+Smart contract approach has following advantages
+
+- Factoring our governance while keeping only one pallet at the same time
+- Easy integration of our auctions to multiple NFT chains since the only connection to the governance is reference to our smart contract. Thus we end up with only instance of governance while having multiple auction instances sitting on different chains
+
+However, downside is obviously not exploiting great capabilities that Substrate offers and having to implement a lot of stuff by reinventing the wheel.
 
 ### Token
+
 We have decided to use Basilisk as the home chain so the auctions will leverage Basilisk's fungible as well as non-fungible tokens for transfers and governance. As it uses FRAME's Uniques pallet it will be possible to easily migrate and reuse the solution on other Substrate based chains.
 
 ### Curatorship
-Curatorship is closely tied to the governance since only approved members can have elevated privileges over the system (e.g. vote on removal of inappropriate content). Any user can report offensive content to the curators. Curators then remove the content or reject the report. We will probably run a Discord/Telegram channel to open a discussion about a right way to do the curatorship and what kind of stuff is acceptable for public auctioning and what is not 
+
+Curatorship is closely tied to the governance since only approved members can have elevated privileges over the system (e.g. vote on removal of inappropriate content). Any user can report offensive content to the curators. Curators then remove the content or reject the report. We will probably run a Discord/Telegram channel to open a discussion about a right way to do the curatorship and what kind of stuff is acceptable for public auctioning and what is not
 
 ## Content curation
 
 ### Positive motivation
+
 Users will be incentivized to provide a good quality content by either getting tips from the council for a good catch or fullfilling bounties which were announced by other uses. As an example, there can be a user who wants to own a digital art collectible but is not able to or does not have time to search for it. If another user provides such a collectible to the marketplace, they can be rewarded not only by the collectible price but a bounty on top of it.
 
 ### Negative motivation
+
 On the other hand, we're aware the content needs to be moderated to some extent because of possible unsolicited character. In the first place we aim to combat this by starting with VIP auctions that will be pre-approved by the council before public launch. Eventually we plan to open the auction creation process a bit more and start to allow create auctions without council approvement based on gaining reputation by using our platform without violation of rules. Once our solution starts to offer these kind of public auctions for almost anyone to create, we want to introduce a penalty system to control that unsolicited content will be removed and the person who advertises it will be punished depending on the level of severity. The slash might be taken from a security deposit at the time user creates the auction.
 
 |Offence level|Content property|Example|Punishment|
@@ -81,7 +90,6 @@ On the other hand, we're aware the content needs to be moderated to some extent 
 |1|Inappropriate|Pornography|Slash up to 50% of the reserved funds for a specific purpose (e.g. auction) + up to 10% of total funds|
 |2|Offensive|Explicit brutal content like violence/accidents|Slash up to 100% of the reserved funds for a specific purpose (e.g. auction) + up to 20% of total funds|
 |3|Harmful|Child porn/Women abuse|Slash up to 100% of the total funds|
-
 
 #### Business Model Mechanics
 
@@ -108,7 +116,7 @@ UPDATE 2021-09-28: The solution has been migrated from ORML to FRAME's Uniques p
 
 ### Team Website
 
-- https://polkadotters.medium.com
+- <https://polkadotters.medium.com>
 
 ### Legal structure
 
@@ -122,12 +130,12 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 
 ### Team Code Repo
 
-- https://github.com/galacticcouncil/Basilisk-node/tree/feat/auctions/pallets
+- <https://github.com/galacticcouncil/Basilisk-node/tree/feat/auctions/pallets>
 
 ### Team LinkedIn Profiles
 
-- https://www.linkedin.com/in/jindrich-zeleny
-- https://www.linkedin.com/in/valery-gantchev-20a03971/
+- <https://www.linkedin.com/in/jindrich-zeleny>
+- <https://www.linkedin.com/in/valery-gantchev-20a03971/>
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -138,6 +146,7 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 - **Total Costs:** ~12,000 USD
 
 ### Technologies used
+
 - Built as a standalone auction module using **Rust** and **Substrate**
 - Integrated with **ORML NFT** pallet from day 1
 - Integrated with IPFS
@@ -152,9 +161,9 @@ See [Auction Type Generalization](#auction-type-generalization) for definitions.
 - **FTE:** 2
 - **Costs:** $6,000
 - Implement Auction Type Generalisation from the currently developed type of English auction
-    - redefine traits and add more of them (these are interfaces to handle various types of auctions), current solution has only one
-    - add handlers/methods for events that operate auctions
-    - add structs to keep on-chain data about auctions
+  - redefine traits and add more of them (these are interfaces to handle various types of auctions), current solution has only one
+  - add handlers/methods for events that operate auctions
+  - add structs to keep on-chain data about auctions
 - Deliver docker-compose file to run node
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
@@ -193,9 +202,9 @@ Our progress will be regularly published on social media to gain enough attentio
 
 Our channels
 
-- https://polkadotters.medium.com
-- https://twitter.com/Polkadotters1
-- https://www.facebook.com/groups/232197797602358/
+- <https://polkadotters.medium.com>
+- <https://twitter.com/Polkadotters1>
+- <https://www.facebook.com/groups/232197797602358/>
 
 ## Future Plans
 

@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Sequester
 
-- **Project Name:** Sequester
 - **Team Name:** Sequester
 - **Payment Address:** bc1quup4v5el5s7m6szh24d6sn6cl25yjvr8mlymnt
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -31,7 +30,7 @@ This grant addresses step 1. Specifically, we will implement a pallet that will 
 
 Sequester is building the infrastructure to allow any chain in Dotsama to donate a portion of their transaction fees towards buying and retiring carbon-backed assets.  We aim to provide parachain developers a simple way to integrate Sequester’s functionalities into their chain.  We hope to lead the charge in implementing Polkadot’s environmental strategy. With the widespread adoption of Sequester across its growing ecosystem, Polkadot has the potential to be one of the largest carbon-offsetting entities worldwide. We visualize and explain this process in the diagram below:
 
-<img alt="High-Level Diagram Detailing Sequester’s Role in the Polkadot Ecosystem" src="https://user-images.githubusercontent.com/16585653/167210224-2c3692f0-ec2c-47d5-b7ae-b4df1a1bee11.png" style="display:block;margin-left:auto;margin-right:auto;width:80%">
+<img alt="High-Level Diagram Detailing Sequester’s Role in the Polkadot Ecosystem" src="https://user-images.githubusercontent.com/16585653/167210224-2c3692f0-ec2c-47d5-b7ae-b4df1a1bee11.png" style={{display:"block", "margin-left":"auto", "margin-right":"auto", width:"80%"}} />
 
 ## Team
 

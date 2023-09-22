@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Pallet-dPoS for Parachain Staking
 
-* **Project:** Pallet-dPoS for Parachain Staking
 * **Proposer:** [Moonbeam Network](https://github.com/PureStake/moonbeam)
 * **Payment Address:** 0x9a66721302d9f30a9d11cf48a09c7ef1a842b5c8
 

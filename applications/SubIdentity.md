@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# SubIdentity
 
-- **Project Name:** SubIdentity
 - **Team Name:** [TDSoftware](https://www.tdsoftware.de/)
 - **Payment Address:** 0x8Db0972d9F40357526B879A002d60CCf6B4a8882
 - **Level:** 2

@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# BrightTreasury
 
-* **Project Name:** BrightTreasury
 * **Team Name:** Bright Inventions
 * **Payment Address:** 0xC1bE52Df4d34f86594cFaF69D374e2C48194d1cC
 

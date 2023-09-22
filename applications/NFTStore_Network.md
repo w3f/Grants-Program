@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# NFTStore
 
-* **Project:** NFTStore
 * **Proposer:** [NFTT Studio](https://github.com/NFTT-studio)
 * **Payment Address:**  1AeR4htoGwDRMpw7S2TTrzjJxeGLZsopiE
 

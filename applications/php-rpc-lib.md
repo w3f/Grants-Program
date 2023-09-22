@@ -1,7 +1,5 @@
-# W3F Grant Proposal
+# PHP RPC Lib
 
-
-* **Project Name:** PHP RPC Lib
 * **Team Name:** [gmajor](https://github.com/gmajor-encrypt)
 * **Payment Address:** 0xC3094f0ddce699a1Ad9Ef2621DF68Cd297a4c44F(Dai)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 

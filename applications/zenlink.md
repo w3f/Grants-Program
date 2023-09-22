@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Zenlink
 
-* **Project:** Zenlink
 * **Proposer:** [Victory Van](https://github.com/v-van)
 * **Payment Address:** 3FyMZ4Y6wFXkaSzdBPetizppR5bD6BVLUy
 

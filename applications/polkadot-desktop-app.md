@@ -1,8 +1,7 @@
-# Open Grant Proposal
+# Polkadot.{js} Desktop Application
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** Polkadot.{js} Desktop Application
 * **Proposer:** [EthWorks](https://github.com/EthWorks/)
 * **Payment Address:** 37hdwwNqXHMrni1WGHruwWVzUy5kmsEfJs
 
@@ -11,6 +10,7 @@
 [Polkadot.{js}](https://polkadot.js.org/apps/) web application is now widely used to interact with Polkadot-based networks (Kusama, Alexander etc.). Soon it will also be a go-to app for the Polkadot Mainnet.
 
 There are two problems which we’d like to address with this development effort:
+
 1. So far, this application is feature-rich, but hard to use, especially for beginners.
 2. The default way of holding the account secrets is browser’s local storage. It’s not a safe way to hold user’s private keys
 
@@ -23,8 +23,8 @@ Our team worked previously on Polkadot.{js} Browser Extension. We already have a
 
 * **Members:** Krzysztof, Natalia, Bartek, Ivan, optionally other developers at Ethworks
 * **LinkedIn Profiles:** [Krzysztof](https://www.linkedin.com/in/krzysztofjelski/), [Natalia](https://www.linkedin.com/in/nkirejczyk/), [Bartek](https://www.linkedin.com/in/bart%C5%82omiej-rutkowski-958751118/), [Ivan](https://www.linkedin.com/in/ivan-rukhavets-904ba7146/)
-* **Code Repos:** https://github.com/polkadot-js/apps (the repo we want to contribute to)
-* **Website:**	https://ethworks.io
+* **Code Repos:** <https://github.com/polkadot-js/apps> (the repo we want to contribute to)
+* **Website:** <https://ethworks.io>
 * **Legal Structure:**<br/>
     Ethworks sp z o.o.<br/>
     VAT ID: PL7010771665.<br/>
@@ -42,6 +42,7 @@ For our clients we have developed numerous customer-facing dApps. We not only kn
 Additionally members of Ethworks are building Universal Login, a tool for storing funds and connecting to Ethereum applications, aiming to simplify on-boarding of new users.
 
 In a previous [grant from W3F](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/polkadot_js_chrome_extension.md), we did an UX-overhaul of Polkadot.{js} extension and extended it with useful features.
+
 ## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 3 months
@@ -95,8 +96,7 @@ The following two designs are a result of our re-thinking of the user onboarding
 | 1. | Accounts design | Design of [Accounts](https://polkadot.js.org/apps/#/accounts) application, including sidebar and visual components (in Figma). |
 | 2. | Updated UX flow for Account creation | Implement redesigned account creation flow. Password validation improvements. |
 | 3. | Initial Style Guide | Document containing color palette and UI components for the application. |
-| 4. | Implement new style | Implement parts of the new designs, including consistent font usage, new navigation, minor improvements of layout and dark mode. | 
-
+| 4. | Implement new style | Implement parts of the new designs, including consistent font usage, new navigation, minor improvements of layout and dark mode. |
 
 ### Milestone 3
 
@@ -109,6 +109,7 @@ The following two designs are a result of our re-thinking of the user onboarding
 In this Milestone we'll tackle usability issues with [Accounts](https://polkadot.js.org/apps/#/accounts).
 
 Currently, users face following difficulties:
+
 * cannot see at a glance the totals of their balances across all accounts
 * account names cannot be edited
 * accounts list default sort is not intuitive and cannot be changed by the user
@@ -134,9 +135,11 @@ For a more detailed preliminary backlog, consult [this list](https://workflowy.c
 ## Additional Information :heavy_plus_sign:
 
 ### Work done so far
+
 * [Preliminary designs](https://www.figma.com/proto/5NAICV06SHNbbIoYhrUS3u/PolkaDot?node-id=763%3A81&viewport=-213%2C-44%2C0.2232329249382019&scaling=min-zoom)
 
 ### Have you applied for other grants so far?
+
 We have successfully applied for a grant on [Polkadot.{js} Extension](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/polkadot_js_chrome_extension.md). We are now awaiting acceptance of the last milestone of this grant.
 
 ### Similar projects

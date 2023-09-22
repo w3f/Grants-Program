@@ -1,7 +1,6 @@
 # Dot Marketplace v2
 
 - **Status:** Open
-- **Project Name:** Dot Marketplace
 - **Team Name:** Wow Labz
 - **Payment Address:** 0xF13001401396AA866E8012f31fD939C7E83B8601 (USDT - ERC20)
 - **Level:** 2
@@ -11,6 +10,7 @@
 ### **Overview**
 
 This is phase 2 of Dot Marketplace, which is a general-purpose decentralized marketplace created as a Substrate pallet.
+
 - Here's a link to the [approved grant proposal for the first phase.](https://github.com/w3f/Grants-Program/blob/master/applications/dot_marketplace.md)
 
 - Dot Marketplace can be used by any decentralized project to float tasks and invite their community members to execute them for a reward. Its POC was developed during the Polkadot India Buildathon (2021).
@@ -28,17 +28,15 @@ The current scope of work involves implementing a **decentralized court system**
 - Then the final jurors can nominate themselves to be part of the jury for a specific job after accepting the proposal
 - All court cases are time-bound and are given 3 days (43,000 slots) in total
 - The 3 days are divided into 2 parts:
-    - Jury acceptance period (14,400 slots/1 day) - This is the period for the potential jurors to accept the jury duty
-    - Voting period (28,800 slots/2 days) - This is the time for the jurors to cast their vote. One juror gets only one vote which can be in favor of the customer or service provider (worker)
+  - Jury acceptance period (14,400 slots/1 day) - This is the period for the potential jurors to accept the jury duty
+  - Voting period (28,800 slots/2 days) - This is the time for the jurors to cast their vote. One juror gets only one vote which can be in favor of the customer or service provider (worker)
 - After concluding, all the jurors who participated in the case get a commission, which is based on the total cost of the entire task.
 - In case of a tie or if no juror votes, the voting is carried out by the super juror, who will cast a vote based on the work submitted.
 - A user can call the court on the unsatisfactory rating provided by either the customer or the worker.
 
 The flow of the tasking pallet with decentralized court implementation
 
-
 ![Tasking-Court-Flow4 drawio](https://user-images.githubusercontent.com/58659064/154290137-741e7fb6-5aea-40dc-8b3b-71304e08ba79.svg)
-
 
 Dot Marketplace is being built as a Substrate pallet. It would include boilerplate code that para-chain teams can customize as per their requirements. We believe this project has the potential to transform community participation, engagement, and governance in decentralized projects.
 
@@ -145,17 +143,16 @@ Dot Marketplace POC was conceptualized and developed during the Polkadot India h
 
 ****Overview****
 
-* **Total Estimated Duration:** 3 Weeks
-* **Full-Time Equivalent (FTE):**  3.36
-* **Total Costs:** 24,305 USD
-
+- **Total Estimated Duration:** 3 Weeks
+- **Full-Time Equivalent (FTE):**  3.36
+- **Total Costs:** 24,305 USD
 
 ### **Milestone 1**
 
-* **Estimated duration:** 1 week
-* **FTE:**  2
-* **PTE:**  2
-* **Costs:**  8,325 USD  
+- **Estimated duration:** 1 week
+- **FTE:**  2
+- **PTE:**  2
+- **Costs:**  8,325 USD  
 
 The main deliverable for this milestone will be to migrate the existing application to substrate frame v2 and include the chat feature as a pallet for communication between a customer and a service provider to have a one-on-one conversation over the deliverables and timelines. The entire milestone covers the Rust/Substrate code implementation.
 
@@ -170,11 +167,10 @@ The main deliverable for this milestone will be to migrate the existing applicat
 
 ### **Milestone 2**
 
-* **Estimated duration:** 2 weeks
-* **FTE:**  2
-* **PTE:**  2
-* **Costs:**  15,900 USD  
-
+- **Estimated duration:** 2 weeks
+- **FTE:**  2
+- **PTE:**  2
+- **Costs:**  15,900 USD  
 
 In continuation to previous work, this milestone involves the creation of an on-chain decentralized court to handle dispute resolution. Being a juror is one of the user incentives that can be achieved thanks to the rating module mentioned in the first phase of dot marketplace. The entire milestone covers the Rust/Substrate code implementation. The court process can be called at any one of the instances mentioned from points 1a to 1c below. The dispute logic is a function which will be called from two extrinsic. The additional dispute function for 1c will cover one case (at the moment- for example, the customer is not closing the task due to some reason. The worker gets the functionality to raise a dispute for this particular case). There can be more cases as such, which can be consumed and utilized for any use case. The functions for jury, which are court summon, dispute resolution time and other helpers, can be configured and managed for each use case.
 
@@ -193,14 +189,13 @@ In continuation to previous work, this milestone involves the creation of an on-
 | 4 | Escrow  | Single account for storing all the funds for transfer/exchange. Account for creating task, bidding for the task, transferring juror fees (if the court is summoned), transferring winner fees. |
 | 5 | Scheduler | Custom event scheduler built based on block number to facilitate the waiting periods for jury acceptance and juror voting. |
 
-
-
 ### **Additional Project Details**
 
-* Technology stack being used
-  * Rust, Substrate, React, Python, centralised cloud storage
+- Technology stack being used
+  - Rust, Substrate, React, Python, centralised cloud storage
 
-### **Future Plans** 
+### **Future Plans**
+
 Future releases of the Dot Marketplace include:
 
 | Phase | Feature | Description |
@@ -212,6 +207,6 @@ Future releases of the Dot Marketplace include:
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website, Polkadot India Buildathon 
+**How did you hear about the Grants Program?** Web3 Foundation Website, Polkadot India Buildathon
 
-* We have been working on this roadmap since we applied for the Web3 grant
+- We have been working on this roadmap since we applied for the Web3 grant

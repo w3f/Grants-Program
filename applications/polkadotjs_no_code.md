@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Polkadot.js NoCode Plugin
 
-- **Project Name:** Polkadot.js NoCode Plugin
 - **Team Name:** EzCode
 - **Payment Address:** (USDT) 0x9DF3B01aeE76D0eDcC48873667f6F05B4F94A288
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

@@ -48,7 +48,7 @@ Anyone who wants to create Smart Contracts on top of Ink are our target users.
 
 ### Team Code Repos
 
-* https://github.com/nerdsince98
+* https://github.com/avirajkhare00/ink-boxes
 
 ## Development Roadmap :nut_and_bolt:
 

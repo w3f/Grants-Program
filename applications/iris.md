@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Iris
 
-- **Project Name:** Iris
 - **Team Name:** Iridium
 - **Payment Address:** 0x6ec0D6c005797a561f6F3b46Ca4Cf43df3bF7888 (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

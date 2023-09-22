@@ -1,9 +1,8 @@
-## W3F Open Grant Proposal
+# Prosopo
 
-* Project Name: Prosopo
-* Team Name: Prosopo Limited
-* Payment Address: 0xb13BBd9C9777CACF397e1C083BbB1531E6fDe990 (ETH/DAI)
-* [Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels): 2
+- Team Name: Prosopo Limited
+- Payment Address: 0xb13BBd9C9777CACF397e1C083BbB1531E6fDe990 (ETH/DAI)
+- [Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels): 2
 
 ## 1 Project Overview :page_facing_up:
 
@@ -19,13 +18,11 @@ We envisage Prosopo benefiting the NFT smart contract marketplace, in which ther
 
 #### 1.1.1 Problems with existing solutions
 
+- Captchas are free for a reason - existing captcha services, such as reCaptcha and hCaptcha, are geared towards creating a workforce of human labourers to label training data for AI. This strategy places the AI Researcher as the most important client. Whereas, while Prosopo’s captchas can involve labelling tasks,  it is not a necessity. The overarching priority will be authenticating humanlike behaviour in the easiest possible way for humans.
+- In traditional captcha systems, such as reCaptcha, user reputation scores are hidden from view on centralised servers. There is no way for a user to identify why they have been blocked from a website or why they are having to fill in captchas. Prosopo will make user reputation scores transparent to all.
+- As AI progresses, captchas will become harder and harder for humans to complete. Eventually, the format will be redundant. Prosopo will prepare for this by implementing a self-referential system in which existing accounts of high reputation can directly influence the reputation of new unknown accounts, if the accounts are related.
 
-* Captchas are free for a reason - existing captcha services, such as reCaptcha and hCaptcha, are geared towards creating a workforce of human labourers to label training data for AI. This strategy places the AI Researcher as the most important client. Whereas, while Prosopo’s captchas can involve labelling tasks,  it is not a necessity. The overarching priority will be authenticating humanlike behaviour in the easiest possible way for humans.
-* In traditional captcha systems, such as reCaptcha, user reputation scores are hidden from view on centralised servers. There is no way for a user to identify why they have been blocked from a website or why they are having to fill in captchas. Prosopo will make user reputation scores transparent to all.
-* As AI progresses, captchas will become harder and harder for humans to complete. Eventually, the format will be redundant. Prosopo will prepare for this by implementing a self-referential system in which existing accounts of high reputation can directly influence the reputation of new unknown accounts, if the accounts are related.
-
-#### 1.1.2 How Prosopo relates to / integrates into Substrate / Polkadot / Kusama.
-
+#### 1.1.2 How Prosopo relates to / integrates into Substrate / Polkadot / Kusama
 
 Initially, most DApps will be deployed on smart contract parachains that utilise pallet-contracts, such as [Edgeware](https://edgewa.re/). The Prosopo verification service must respond to these DApps relatively quickly in order to be useful. Deploying the Prosopo smart contract on each parachain should allow the lowest response times when communicating with DApp smart contracts.
 
@@ -33,7 +30,7 @@ The alternative would be to run a separate parachain exclusively for Prosopo. Th
 
 Therefore, Prosopo will first be deployed per parachain in order to achieve acceptable latency times. The contract can later be migrated to its own parachain if the volume becomes too large.
 
-#### 1.1.3 An indication of why your team is interested in creating this project.
+#### 1.1.3 An indication of why your team is interested in creating this project
 
 There is currently a race to develop identity mechanisms for the blockchain that depend on real world credentials, such as self-sovereign identity. Although we agree that real world identity is necessary for some applications, it is also excessive for many. Signing up with credentials is a deterrent to using a service, especially if the service is low value, such as a poll. In order for Polkadot and blockchain to be as widespread as the internet, they need to be at least as usable, and we want to help make this happen by creating a human verification system that places humans first.
 
@@ -50,7 +47,6 @@ The Prosopo system aims to create a low-trust Captcha service allowing dapps in 
 **Dapp Operator** - this is the organisation that manages the dapp. It could be a commercial or non-commercial company, an on-chain DAO or other form of on-chain governance system. The dapp is a blockchain application on a Polkadot parachain which users want access to. Dapp operators will set up the infrastructure so that people can access their dapp and will integrate with the Prosopo system allowing their dapp to scalably prevent bots from accessing their system.
 
 **Prosopo Operator** - This is the organisation that manages the Prosopo system. This will be the team set out in this proposal, with the vision to move to a more open on-chain governance model in future. The Prosopo Operator will create the infrastructure allowing Providers, Dapp Users and Dapp Operators to interact within the Prosopo system.
-
 
 ### 2.2 Design goals
 
@@ -118,18 +114,15 @@ The captcha system will be completely undermined if the solutions are viewable b
 
 Providers must submit data that is compatible with one of a number of captcha templates so that many Providers can serve a single DApp.
 
-
 #### 2.2.2 Non-functional requirements
 
 ##### 2.2.2.1 Scalability
 
 The Prosopo system must be able to to scale to the required onboarding throughput that is expected for or all of the dapps that it services. We expect that for the launch we would need to be able to handle 100 user onboardings / second and would need to scale up significantly to meet the demands of the network. As each substrate parachain in the Polkadot ecosystem has a limited vertical scalability of several hundred/thousand on-chain tx/s, the Prosopo system could be deployed on each parachain to meet the demands of the dapps and be able to adequately scale to this level.
 
-
 ##### 2.2.2.2 Privacy
 
 No personal user information should ever be stored on the blockchain. In reality, the Prosopo captcha system does not require any personal information whatsoever. The only known user information is the blockchain account address and public keys.
-
 
 ##### 2.2.2.3 Usability
 
@@ -342,7 +335,6 @@ The below diagram shows the primary fluid that the app users will undertake when
 ![Shows the flow of a user through the captcha process](https://www.prosopo.io/img/maincaptchaflow.jpg "Main Captcha Flow")
 \
 
-
 An extended technical version of this flow can be found here:
 
 [https://drive.google.com/file/d/1LaXZNJiFKhiQ2ylu_TqehvUlzdc3tlZi/view?usp=sharing](https://drive.google.com/file/d/1LaXZNJiFKhiQ2ylu_TqehvUlzdc3tlZi/view?usp=sharing)
@@ -351,7 +343,6 @@ An extended technical version of this flow can be found here:
 
 The set-up phase allows the different actors in the system to register and deposit stakes required to use the system. This is a requirement for the Providers and Dapp Operators. Dapp Users are not required to register or stake before completing captchas. \
 
-
 1. The Provider registers to provide captchas and deposits a token stake. They will register with their contact details and the domain of their server that runs the Prosopo service attached to the captcha data. The token stake is used as a guarantee of behaviour, and can be deducted if the Provider is proved to be using fake or poor quality data, providing false answers to users, or running the system so they can create bots. All these attacks are cryptographically provable and will result in the stake being slashed. \
 
 2. The Provider submits a merkle tree root hash of the captcha dataset they will use in the system. Each new data set will require a new proof. The proof is 32 bytes in size, no matter how large the data set (it could be terabytes). This merkle tree contains a leaf for each captcha including an id, the solution (if known) and a salt. This is the primary material used to derive proofs by users that allows them to automatically detect and prove malicious behaviour in disputes. The salt is used to remove the possibility of a dictionary attack on the hash of the leaf data. \
@@ -359,7 +350,6 @@ The set-up phase allows the different actors in the system to register and depos
 3. Dapp operators also need to register their dapp contract’s address on the Prosopo smart contract and the client domain used for the dapp. They are required to pay for the service upfront which covers the cost of the service as well as the reimbursements of the user fees when they use the service to prove their identity.
 
 Low-trust user verification \
-
 
 4. The first step to login a Dapp User is for the User or Dapp Client to check whether they meet the anti-bot requirements of the Dapp they want to use. This is a query of the blockchain which will tell them their current reputation and what requirements the Dapp has. If they meet the requirements they can start using the Dapp immediately (step 14), otherwise they will need to complete a captcha proof. \
 
@@ -396,12 +386,11 @@ Several edge cases exist where disputes may be created by different actors in th
 
 At launch, the governance of the Prosopo system will be managed by the Prosopo Operators (founding team), however the final vision is for an open governance model.
 
-
 #### 2.6.1 Governance Economic Model
 
-Governance will[ not feature in the MVP](#28-deliverables-summary) so the exact incentivisation scheme is not decided. However, the following economic model outlines the governance approach.
+Governance will[not feature in the MVP](#28-deliverables-summary) so the exact incentivisation scheme is not decided. However, the following economic model outlines the governance approach.
 
-**Providers **are incentivised to accurately verify humans by either
+**Providers**are incentivised to accurately verify humans by either
 
 1. Being paid by the **Dapp Operators** for their service in the default parachain token
 2. Benefiting from data labelling
@@ -413,8 +402,6 @@ This will be reflected by the fee the **Provider** charges per _n_ captchas. A z
 **Prosopo Operators** will initially be limited to team members listed in this document and by invite only. Eventually there will be an open signup process for **Prosopo Operators** allowing anyone to join.
 
 **Prosopo Operators** are incentivised to vote fairly by staking crypto on their preferred vote, only receiving their crypto back and the governance fee if they sided with the majority. This is described below.
-
-
 
 1. Dispute raised by **Dapp User** against **Provider**
 2. **Dapp User** pays **tx fee** to raise dispute and **stakes** TOKEN in favour of themselves
@@ -467,7 +454,6 @@ Note that this process is not automatable, so a person making this type of attac
 
 We will still recommend to Dapp Operators that they infrequently create Captcha check requirements for their users, based on their needs. This is similar to existing Captcha systems that require infrequent challenges. This could be automated by their Dapp contracts (perhaps with a random timer), or manually triggered by the Dapp Operator if they see strange behaviour. We expect that, because your Prosopo reputation is portable across all Dapps, that users will need to be challenged less throughout their Polkadot experience compared to existing closed Captcha systems.
 
-
 ### 2.7 Detailed specifications
 
 #### 2.7.1 Captcha Client
@@ -499,7 +485,6 @@ The SDK can be consumed in two ways:
 2. Developers can implement the underlying library functions into existing API routes with additional functionality (note they will still need to conform to the REST API specifications to interact with the protocol)
 
    [https://github.com/prosopo-io/prosopo/blob/master/captcha-provider-service/prosopo/prosopo.d.ts#L35](https://github.com/prosopo-io/planning/blob/master/captcha-provider-service/prosopo/prosopo.d.ts#L35)
-
 
 The provided SDK will not provide a fully functional server by itself, and developers will be expected to run a nodejs server and consume the SDK to create the node. That said, it is likely that a reference implementation of a fully functional server will be created and can be copied by developers who are just getting started.
 
@@ -533,10 +518,10 @@ The Dapp will make either of the following calls in the Prosopo smart contract w
 
 This is the main smart contract which manages the Prosopo system on the Polkadot parachain. This will host the on-chain data about the Providers, Captcha Datasets, Dapps, Dapp Users and Prosopo Operators. It exposes functions to allow
 
-* Providers to register their account, Captcha data and service endpoints and depositing stakes
-* Dapp Operators to register their account and pay fees
-* Dapp Users to commit to solutions and interact with Providers in a low-trust way and gain identity reputation
-* Users and Prosopo Operators to interact with the governance features for disputes resolution
+- Providers to register their account, Captcha data and service endpoints and depositing stakes
+- Dapp Operators to register their account and pay fees
+- Dapp Users to commit to solutions and interact with Providers in a low-trust way and gain identity reputation
+- Users and Prosopo Operators to interact with the governance features for disputes resolution
 
 [https://github.com/prosopo-io/prosopo/blob/master/prosopo-contract/lib.rs](https://github.com/prosopo-io/planning/blob/master/prosopo-contract/lib.rs)
 
@@ -549,7 +534,6 @@ After the release of the MVP we expect to develop a custom governance token to c
 ### 2.8 Deliverables summary
 
 The below table outlines the functionalities of each software component that will be delivered as part of the MVP release, which is covered by the W3F grant. We have also outlined future features we would expect to include in these components. These are provided to show our vision but are not part of the delivery.
-
 
 <table>
   <tr>
@@ -580,14 +564,14 @@ The below table outlines the functionalities of each software component that wil
   </tr>
   <tr>
    <td>User portal
-<p>
+<br />
 (closed source - not part of delivery)
    </td>
    <td>
 <ul>
 
 <li>Provider setup
-
+</li>
 <li>Dapp Operator setup
 </li>
 </ul>
@@ -596,7 +580,7 @@ The below table outlines the functionalities of each software component that wil
 <ul>
 
 <li>Dapp User reputation viewer
-
+</li>
 <li>Disputes management
 </li>
 </ul>
@@ -604,7 +588,7 @@ The below table outlines the functionalities of each software component that wil
   </tr>
   <tr>
    <td>Operator portal
-<p>
+<br />
 (closed source - not part of delivery)
    </td>
    <td><em>Not included</em>
@@ -613,7 +597,7 @@ The below table outlines the functionalities of each software component that wil
 <ul>
 
 <li>Aggregate analytics viewer
-
+</li>
 <li>Disputes management
 </li>
 </ul>
@@ -633,7 +617,7 @@ The below table outlines the functionalities of each software component that wil
 <ul>
 
 <li>Java, Go, C++, Python
-
+</li>
 <li>SQL databases
 </li>
 </ul>
@@ -666,7 +650,7 @@ The below table outlines the functionalities of each software component that wil
 <ul>
 
 <li>Disputes features
-
+</li>
 <li>Open governance model
 </li>
 </ul>
@@ -680,13 +664,12 @@ The below table outlines the functionalities of each software component that wil
    <td>
 <ul>
 
-<li>Governance token 
+<li>Governance token
 </li>
 </ul>
    </td>
   </tr>
 </table>
-
 
 The above software components include documentation required to run them, publishing to public repositories when appropriate and basic partial coverage (~80%) unit tests.
 
@@ -710,10 +693,10 @@ DApp developers
 
 ![Flow displaying bot protection for smart contracts using Prosopo](https://user-images.githubusercontent.com/3264264/127276073-5de03cde-fc35-4f55-ac5f-5b294dfe77f3.png "Bot protection")
 
-* Providing methods for DApp developers to restrict their audiences to human accounts, anonymously.
-* Open Provider marketplace.
-* Portability and re-usability of reputation across Dapps.
-* Ability for smart contracts to block bots with minimal trust assumptions.
+- Providing methods for DApp developers to restrict their audiences to human accounts, anonymously.
+- Open Provider marketplace.
+- Portability and re-usability of reputation across Dapps.
+- Ability for smart contracts to block bots with minimal trust assumptions.
 
 #### 2.9.4 Similar projects in the Substrate / Polkadot / Kusama ecosystem?
 
@@ -743,8 +726,8 @@ Proof of Humanity (or PoH) is an **opt-in**, social identity verification system
 
 Verification is achieved via:
 
-* Video including speech and an Ethereum address linked to your profile clearly shown (yes deepfakes are getting better but this particular method is still hard to falsify),
-* User vouching with one verification from registered profiles required.
+- Video including speech and an Ethereum address linked to your profile clearly shown (yes deepfakes are getting better but this particular method is still hard to falsify),
+- User vouching with one verification from registered profiles required.
 
 ##### 2.9.4.1 How is your project different?
 
@@ -763,7 +746,6 @@ A review of existing solutions is provided below.
 ##### 2.9.4.2 Comparison against previous solutions
 
 Comparison with other data labelling and captcha service providers:
-
 
 <table>
   <tr>
@@ -862,44 +844,44 @@ Idena is similar in that it requires users to complete CAPTCHAs to prove their h
 
 ### 3.1 Team members
 
-* Chris Taylor (Prosopo)
-* Jack Tanner (Gimly)
-* Blockchain Developer (_Pending_)
-* Jesse Szepieniec (Gimly)
-* Caspar Roelofs (Gimly)
+- Chris Taylor (Prosopo)
+- Jack Tanner (Gimly)
+- Blockchain Developer (_Pending_)
+- Jesse Szepieniec (Gimly)
+- Caspar Roelofs (Gimly)
 
 ### 3.2 Contact
 
-* Contact Name: Chris Taylor
-* Contact Email: chris@prosopo.io
-* Website: https://prosopo.io
+- Contact Name: Chris Taylor
+- Contact Email: chris@prosopo.io
+- Website: <https://prosopo.io>
 
 ### 3.3 Legal Structure
 
-* Registered Address: PROSOPO LIMITED 130 OLD STREET, LONDON, ENGLAND, EC1V 9BD
-* Registered Legal Entity: Prosopo Limited
-* [Gimly](https://gimly.io) is partnering with Prosopo Limited in the development of Prosopo
+- Registered Address: PROSOPO LIMITED 130 OLD STREET, LONDON, ENGLAND, EC1V 9BD
+- Registered Legal Entity: Prosopo Limited
+- [Gimly](https://gimly.io) is partnering with Prosopo Limited in the development of Prosopo
 
 ### 3.4 Team's experience
 
 #### 3.4.1 Chris Taylor | Architecture and Development
 
-* 14 years product & technology experience across a variety of companies including several startups in advertising and tech
-* Early blockchain user and investor with strong knowledge of distributed tech
-* Full stack developer from an analytics and mathematics background
-* Previously responsible for a team of 6 developers as a Business Analyst delivering a rewrite of an existing system
-* Developer of [Chrome Extension](https://chrome.google.com/webstore/detail/search-and-replace/bldchfkhmnkoimaciljpilanilmbnofo?hl=en-GB) with 50k+ installs
-* Spent 1 year researching Natural Language Processing solutions for captcha development
-* Technologies: Python, Cython, JavaScript, Angular, React, Docker, PostgreSQL, MongoDB, Ink, Redspot
+- 14 years product & technology experience across a variety of companies including several startups in advertising and tech
+- Early blockchain user and investor with strong knowledge of distributed tech
+- Full stack developer from an analytics and mathematics background
+- Previously responsible for a team of 6 developers as a Business Analyst delivering a rewrite of an existing system
+- Developer of [Chrome Extension](https://chrome.google.com/webstore/detail/search-and-replace/bldchfkhmnkoimaciljpilanilmbnofo?hl=en-GB) with 50k+ installs
+- Spent 1 year researching Natural Language Processing solutions for captcha development
+- Technologies: Python, Cython, JavaScript, Angular, React, Docker, PostgreSQL, MongoDB, Ink, Redspot
 
-* Latest projects:
-    * Job schedule analyser for major UK bank (Private)
-    * Natural language processing research for captcha (Private)
-    * Bin days react app for City of Edinburgh ([https://github.com/forgetso/bindays](https://github.com/forgetso/bindays))
-    * Youtube metadata downloader ([https://github.com/forgetso/youtubemeta](https://github.com/forgetso/youtubemeta))
-    * Crypto arbitrage bot ([https://github.com/forgetso/arb](https://github.com/forgetso/arb))
-* [Linkedin](https://www.linkedin.com/in/chris-taylor-6272032a/)
-* [Github](https://github.com/forgetso)
+- Latest projects:
+  - Job schedule analyser for major UK bank (Private)
+  - Natural language processing research for captcha (Private)
+  - Bin days react app for City of Edinburgh ([https://github.com/forgetso/bindays](https://github.com/forgetso/bindays))
+  - Youtube metadata downloader ([https://github.com/forgetso/youtubemeta](https://github.com/forgetso/youtubemeta))
+  - Crypto arbitrage bot ([https://github.com/forgetso/arb](https://github.com/forgetso/arb))
+- [Linkedin](https://www.linkedin.com/in/chris-taylor-6272032a/)
+- [Github](https://github.com/forgetso)
 
 #### 3.4.2 Blockchain Developer (Pending)
 
@@ -907,12 +889,12 @@ Idena is similar in that it requires users to complete CAPTCHAs to prove their h
 
 #### 3.4.3 Caspar Roelofs | Partner & Advisor
 
-* Founder at Gimly Projects + Partnerships
-* Blockchain Netherlands - partnering founder
-* Xurux - Blockchain Concept and Business Developer
-* University of Groningen - PhD researcher and lecturer in Science, Technology and Innovation
-* Graduated from Consensys Academy - Blockchain Foundations and Use Cases
-* [LinkedIn](https://www.linkedin.com/in/caspar-roelofs)
+- Founder at Gimly Projects + Partnerships
+- Blockchain Netherlands - partnering founder
+- Xurux - Blockchain Concept and Business Developer
+- University of Groningen - PhD researcher and lecturer in Science, Technology and Innovation
+- Graduated from Consensys Academy - Blockchain Foundations and Use Cases
+- [LinkedIn](https://www.linkedin.com/in/caspar-roelofs)
 
 ### 3.5 Contributors
 
@@ -920,40 +902,40 @@ The following people have contributed significantly to this application but do n
 
 #### 3.5.1 Jack Tanner | Architecture
 
-* Experienced blockchain developer and entrepreneur with background in computer science and a zest for distributed governance systems.
-* Heavily involved in the blockchain industry since 2015
-* Public contributor (development, content and opinions) to the EOSIO and Ethereum blockchain ecosystems
-* Teacher at 11 blockchain developer bootcamps in London and The Netherlands
-* Panelist and presenter at 20 blockchain conferences and events
-* Technical influencer in the blockchain space, large developer network
-* 2021 Paper: [Technology Review of Blockchain Data Privacy Solutions](https://arxiv.org/abs/2105.01316)
-* Technologies: Javascript, Nodejs, Ethereum, Solidity, EOSIO, EOS, Smart contracts, Blockchain, Bitcoin, MongoDB and SQL, AWS management and DevOps using CI pipelines, C++
-* Latest projects:
-    * [https://docs.google.com/spreadsheets/d/1luYLBlLQ9AuExOgBlUyqWBT-Sds0Ce4L4eNs_hbtijo](https://docs.google.com/spreadsheets/d/1luYLBlLQ9AuExOgBlUyqWBT-Sds0Ce4L4eNs_hbtijo)
-* [LinkedIn](https://www.linkedin.com/in/jack-tanner/)
-* [Github](https://github.com/theblockstalk)
+- Experienced blockchain developer and entrepreneur with background in computer science and a zest for distributed governance systems.
+- Heavily involved in the blockchain industry since 2015
+- Public contributor (development, content and opinions) to the EOSIO and Ethereum blockchain ecosystems
+- Teacher at 11 blockchain developer bootcamps in London and The Netherlands
+- Panelist and presenter at 20 blockchain conferences and events
+- Technical influencer in the blockchain space, large developer network
+- 2021 Paper: [Technology Review of Blockchain Data Privacy Solutions](https://arxiv.org/abs/2105.01316)
+- Technologies: Javascript, Nodejs, Ethereum, Solidity, EOSIO, EOS, Smart contracts, Blockchain, Bitcoin, MongoDB and SQL, AWS management and DevOps using CI pipelines, C++
+- Latest projects:
+  - [https://docs.google.com/spreadsheets/d/1luYLBlLQ9AuExOgBlUyqWBT-Sds0Ce4L4eNs_hbtijo](https://docs.google.com/spreadsheets/d/1luYLBlLQ9AuExOgBlUyqWBT-Sds0Ce4L4eNs_hbtijo)
+- [LinkedIn](https://www.linkedin.com/in/jack-tanner/)
+- [Github](https://github.com/theblockstalk)
 
 #### 3.5.2 Jesse Szepieniec | UX Design
 
-* Product Manager & UX Lead at Gimly Blockchain Projects
-* Product agency owner
-* Built and launched 10+ products
-* Worked with premium brands, operating in international markets as well as niche products and local markets.
-* [LinkedIn](https://www.linkedin.com/in/jszepieniec/)
+- Product Manager & UX Lead at Gimly Blockchain Projects
+- Product agency owner
+- Built and launched 10+ products
+- Worked with premium brands, operating in international markets as well as niche products and local markets.
+- [LinkedIn](https://www.linkedin.com/in/jszepieniec/)
 
 ### 3.6 Team Code Repos
 
 Development of a prototype contract and command line Provider service has begun with the following items:
 
-* Ink smart contract
-* Ink smart contract unit tests
-* [Redspot](https://github.com/patractlabs/redspot) deployment script
-* [Redspot](https://github.com/patractlabs/redspot) contract tests
+- Ink smart contract
+- Ink smart contract unit tests
+- [Redspot](https://github.com/patractlabs/redspot) deployment script
+- [Redspot](https://github.com/patractlabs/redspot) contract tests
 
 The code can be viewed at the following links _with permission_. Please request this from [chris@prosopo.io](mailto:chris@prosopo.io).
 
-* [https://github.com/prosopo-io](https://github.com/prosopo-io)
-* [https://github.com/prosopo-io/prosopo](https://github.com/prosopo-io/prosopo)
+- [https://github.com/prosopo-io](https://github.com/prosopo-io)
+- [https://github.com/prosopo-io/prosopo](https://github.com/prosopo-io/prosopo)
 
 ## 4 Development Status :open_book:
 
@@ -963,12 +945,12 @@ We have discussed the project and have the following clients and stakeholders ex
 
 Clients:
 
-* A Dapp NFT marketplace who want to restrict the number of items per human account
-* A Dapp who run airdrops and have problems with bots claiming tokens
+- A Dapp NFT marketplace who want to restrict the number of items per human account
+- A Dapp who run airdrops and have problems with bots claiming tokens
 
 Providers:
 
-* The creator of WaveAlert, an app for detecting the number of surfers on beaches from live webcam feeds.
+- The creator of WaveAlert, an app for detecting the number of surfers on beaches from live webcam feeds.
 
 We expect this list to grow as we develop and deploy our marketing strategy.
 
@@ -976,9 +958,9 @@ We expect this list to grow as we develop and deploy our marketing strategy.
 
 ### 5.1 Overview
 
-* Total Estimated Duration: 5 months
-* Full-Time Equivalent (FTE): 2 FTE
-* Total Costs: 20475 DAI
+- Total Estimated Duration: 5 months
+- Full-Time Equivalent (FTE): 2 FTE
+- Total Costs: 20475 DAI
 
 The phases of the project are as follows.
 
@@ -991,7 +973,6 @@ The phases of the project are as follows.
 4. Delivery - undertaking security audits and various other measures of software quality assurance, deploying to a
    demoable substrate test network and packaging and releasing software components
 
-
 Not all the work outlined in this implementation plan is part of our W3F grant request. We have outlined software that
 will not be included in this grant in [Section 2.8](#28-deliverables-summary). As we will be concurrently developing our
 own software and the grant software, we can provide our entire project development plan for your understanding and to set
@@ -1001,10 +982,10 @@ All our schedules assume two full time equivalent software developers / designer
 
 ### 5.2 Milestone 1 - Prosopo Contract and Provider Service Development
 
-* Estimated duration: 10 weeks
-* FTE: 2
-* Grant ask: 546 hours
-* Grant cost: 13650 DAI
+- Estimated duration: 10 weeks
+- FTE: 2
+- Grant ask: 546 hours
+- Grant cost: 13650 DAI
 
 <table>
    <thead>
@@ -1076,13 +1057,12 @@ All our schedules assume two full time equivalent software developers / designer
 </tbody>
 </table>
 
-
 ### 5.3 Milestone 2 - Prosopo Client SDK & Delivery
 
-* Estimated duration: 8 weeks
-* FTE: 2
-* Grant ask: 273 hours
-* Grant cost: 6825 DAI
+- Estimated duration: 8 weeks
+- FTE: 2
+- Grant ask: 273 hours
+- Grant cost: 6825 DAI
 
 <table>
    <thead>
@@ -1205,7 +1185,6 @@ Prosopo will be ported to other Polkadot contact parachains such as the [Moonbea
 The team is committed to contributing to the Prosopo governing body in the long term and fostering community involvement.
 
 Ultimately, we would like to see innovations in bot detection in the blockchain space and believe that a marketplace for human verification methods is an optimal solution. Whilst captchas are currently the focus, future verification may involve grading the humanness of accounts based on account activity and connections. The Prosopo smart contract and Provider service will be flexible enough to accommodate these new formats.
-
 
 ## 7 Additional Information :heavy_plus_sign:
 

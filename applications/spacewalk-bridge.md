@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Spacewalk: a Stellar bridge
 
-- **Project Name:** Spacewalk: a Stellar bridge
 - **Team Name:** Pendulum
 - **Payment Address:** [0x41826C59a853969DA6B819130E1c32A9fd7c94ba](https://etherscan.io/address/0x41826C59a853969DA6B819130E1c32A9fd7c94ba#tokentxns) (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1

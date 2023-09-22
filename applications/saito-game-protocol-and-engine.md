@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Saito Gaming Protocol and Library
 
-* **Project:** Saito Gaming Protocol and Library
 * **Proposer:** @trevelyan (David Lancashire)
 * **Payment Address:** bc1qvx6wzyxsjw5yza5f7qj4mprzj4hl49q9js0d46
 

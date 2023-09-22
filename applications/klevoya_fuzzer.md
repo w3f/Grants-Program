@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# Klevoya - Substrate WASM Smart Contract Fuzzer
 
-* **Project Name:** Klevoya - Substrate WASM Smart Contract Fuzzer
 * **Team Name:** Klevoya
 * **Payment Address:** DAI 0x31840be5bf48811ffa35512735de0a53b4ba230d
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/420#issuecomment-1017430431)
@@ -8,7 +7,9 @@
 ## Project Overview :page_facing_up:
 
 ### Overview
+
 #### Background
+
 The novelty and complexity of smart contracts, in addition to their role in managing potentially high-value digital assets, requires a high degree of attention to be paid to their security. Yet to date it is estimated that hundreds of millions of dollars have been lost to hackers who have exploited vulnerabilities in smart contracts.
 
 Currently blockchain developers mainly check their smart contracts using manually written tests and source inspection by internal and external audit teams. However security auditing is a highly specialised skill (and may even be more so for Substrate chains which are based on relatively new software technologies such as Rust and WebAssembly). Further, the growing complexity of smart contracts and their composable nature makes it difficult to scale manual methods.
@@ -22,11 +23,11 @@ From experience with other blockchain ecosystems we have observed that the major
 This project builds on Klevoya’s previous work developing byte-code fuzzers for other WASM based smart contract chains.
 
 **_Benefits of fuzzers:_**
+
 1. In comparison to static analysis, fuzzers dynamically execute the code and therefore tend to give results that have fewer false positives/negatives than comparable static analysis techniques,
 2. Bugs found by a fuzzer are easily reproducible as the inputs needed to recreate a bug are a by-product of the fuzzing process,
 3. Fuzzing at the byte-code level means that we are agnostic to the smart contract programming language, whether that is ink! or some other future smart contract language, and,
 4. In comparison to formal verification techniques, it is relatively easier to set up a fuzzing campaign as it does not require training and expertise in formal methods.
-
 
 ### Project Details
 
@@ -39,6 +40,7 @@ We have already developed a generic, coverage guided WASM binary smart contract 
 The faster one can fuzz, then the more program paths that can be explored; therefore a key design feature of the fuzzer is its ability to execute many fuzz cases per seconds (we have benchmarked it executing several million fuzz cases/sec on a 16-core CPU with WASM binaries of a moderate size).
 
 There are two main ways we achieve this high fuzz case throughput:
+
 1. Efficient compilation of WASM bytecode to optimised machine code: WASM bytecode naturally doesn’t run on the processor. Modern compilers can generate high quality optimised code, but can take a long time to compile. However the compilation result can be cached, and reused between execution instances which leads to an ideal position of “compile once - run many”. To get optimised machine code we leverage existing tooling, namely Cranelift JIT to lift WASM bytecode to Cranelift IR, then transpile to C++ whilst adding instrumentation that allows gathering of coverage statistics. (This multi-stage process is necessary as existing WASM JIT compilers are fast to generate machine code, but the code they do generate is of poor quality - performance wise.) The transpiled C++ is then compiled to machine code with the Clang compiler.
 
 ![transpiler](https://user-images.githubusercontent.com/8709186/118856899-580e3800-b8cf-11eb-9a61-4927f9253bcc.png)
@@ -47,20 +49,19 @@ There are two main ways we achieve this high fuzz case throughput:
 
 #### Scope
 
-In this grant we will only focus on fuzzing of WASM smart contracts. 
+In this grant we will only focus on fuzzing of WASM smart contracts.
 
 In the future we plan to expand the fuzzer to include fuzzing of custom (i.e. developed by third-party developers) Substrate Runtimes; we plan to seek a separate grant for that activity.
 
 **_In scope:_**
-- Implementation of a Substrate Smart contract model for integration with our generic WASM bytecode fuzzer. The model will be API compatible with the Contracts pallet with the underlying logic being mocked as much as possible (in order to reduce the maintenance of the model in response to future changes to the Contracts pallet)
-- Development of scheme to detect simple logic bugs
-- Finetune performance of fuzzing engine
+* Implementation of a Substrate Smart contract model for integration with our generic WASM bytecode fuzzer. The model will be API compatible with the Contracts pallet with the underlying logic being mocked as much as possible (in order to reduce the maintenance of the model in response to future changes to the Contracts pallet)
+* Development of scheme to detect simple logic bugs
+* Finetune performance of fuzzing engine
 
 **_Out of scope:_**
-- No fuzzing of the Substrate Contracts pallet
-- No Substrate Runtime fuzzing
-- No fuzzing of non-WASM smart contracts (e.g. smart contracts that target the Substrate EVM Pallet)
-
+* No fuzzing of the Substrate Contracts pallet
+* No Substrate Runtime fuzzing
+* No fuzzing of non-WASM smart contracts (e.g. smart contracts that target the Substrate EVM Pallet)
 
 ### Ecosystem Fit
 
@@ -70,8 +71,8 @@ The results of this project will be used by smart contract developers to verify 
 
 **_Similar work in this or other ecosystems_**
 
-- A previous Web3 grant was awarded to a team to perform [WASM Runtime Fuzzing](https://github.com/w3f/Open-Grants-Program/pull/9). However in that grant they specifically sought to fuzz the wasmi/wasmtime to identify errors in those components, whereas in this grant we seek to fuzz smart contracts not the runtime.
-- The greatest amount of similar work has been done in the Ethereum ecosystem where several blockchain security related organisations have developed fuzzers for Ethereum smart contracts. For example the [Echidna](https://github.com/crytic/echidna) fuzzer (by [TrailOfBits](https://www.trailofbits.com/)) and [MythX](https://mythx.io/) (by [Consensys](https://consensys.net/)) which is a security suite that includes a smart contract fuzzer. Those works are not applicable here as they fuzz smart contracts that run on the Ethereum Virtual Machine (EVM) whereas we specifically target fuzzing of WASM smart contracts running on Substrate's Contract pallet.
+* A previous Web3 grant was awarded to a team to perform [WASM Runtime Fuzzing](https://github.com/w3f/Open-Grants-Program/pull/9). However in that grant they specifically sought to fuzz the wasmi/wasmtime to identify errors in those components, whereas in this grant we seek to fuzz smart contracts not the runtime.
+* The greatest amount of similar work has been done in the Ethereum ecosystem where several blockchain security related organisations have developed fuzzers for Ethereum smart contracts. For example the [Echidna](https://github.com/crytic/echidna) fuzzer (by [TrailOfBits](https://www.trailofbits.com/)) and [MythX](https://mythx.io/) (by [Consensys](https://consensys.net/)) which is a security suite that includes a smart contract fuzzer. Those works are not applicable here as they fuzz smart contracts that run on the Ethereum Virtual Machine (EVM) whereas we specifically target fuzzing of WASM smart contracts running on Substrate's Contract pallet.
 
 In conclusion: we are not aware of any teams in the Polkadot/Kusama ecosystem that are currently pursuing a similar project.
 
@@ -83,12 +84,11 @@ In conclusion: we are not aware of any teams in the Polkadot/Kusama ecosystem th
 * Fuzzer Developer: David Morgan
 * Blockchain Engineer: Christoph Michel
 
-
 ### Contact
 
 * **Contact Name:** Moti Tabulo
 * **Contact Email:** moti.tabulo@klevoya.com
-* **Website:** https://klevoya.com
+* **Website:** <https://klevoya.com>
 
 ### Legal Structure
 
@@ -105,20 +105,20 @@ The team is composed of members with many years of experience in general + block
 
 ### Team Code Repos
 
-* Team Repo: https://github.com/klevoya/
-* Inspect static analyser: https://github.com/klevoya/inspect-analysis2
-* Maintainer of EOSIO Smart Contract Weakness Registry: https://github.com/klevoya/eosio-wcr-registry
+* Team Repo: <https://github.com/klevoya/>
+* Inspect static analyser: <https://github.com/klevoya/inspect-analysis2>
+* Maintainer of EOSIO Smart Contract Weakness Registry: <https://github.com/klevoya/eosio-wcr-registry>
 
 ### Team LinkedIn Profiles
 
-* https://www.linkedin.com/in/moti-tabulo/
-* https://www.linkedin.com/in/daveemorgan/
-* https://www.linkedin.com/in/christoph-michel-dev/
-
+* <https://www.linkedin.com/in/moti-tabulo/>
+* <https://www.linkedin.com/in/daveemorgan/>
+* <https://www.linkedin.com/in/christoph-michel-dev/>
 
 ## Development Status :open_book:
 
 As described in the project prior work section above, we are currently developing a generic WebAssembly bytecode fuzzer. The code is currently closed source (let us know in case you would like to arrange a private session to review it).
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
@@ -144,7 +144,6 @@ As described in the project prior work section above, we are currently developin
 | 2. | Fuzzer: Input generation | Generate smart contract calls with appropriate inputs |  
 | 3. | Fuzzer: Seed mutation | Mutate seed corpus to allow efficient exploration of the smart contract with the aim of increasing code coverage |  
 
-
 ### Milestone 2: Substrate logic bugs
 
 * **Estimated Duration:** 1.5 months
@@ -162,18 +161,16 @@ As described in the project prior work section above, we are currently developin
 | 2. | Fuzzer: implement logic bug | Implement logic bug checks within fuzzer |  
 | 3. | Testing against ecosystem smart contracts | Conduct testing of the developed fuzzer against several in-development (and live where possible) Substrate WASM smart contracts from the Polkadot ecosystem to verify the performance of the fuzzer and its efficacy in identifying bugs. We will summarise the results |  
 
-
 ## Future Plans
 
 Our vision is to provide a fuzzer that can identify security issues across the range of Substrate pallet functionality.
 
 Future development:
+
 * Extend the fuzzer to allow fuzzing of Substrate runtimes.
 * Implement fuzzer for EVM pallets
 * Integrate and fuzz Substrate runtimes that include either WASM or EVM smart contract pallets
 * Investigate feasibility of adding compiler engine as a backend to [sp_sandbox](https://crates.io/crates/sp-sandbox) to reduce maintenance overhead of fuzzer model
-
-
 
 ## Additional Information :heavy_plus_sign:
 

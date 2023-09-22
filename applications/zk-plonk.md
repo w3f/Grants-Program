@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# zk plonk
 
-* **Project Name:** zk plonk
 * **Team Name:** Plasm Network (Shinsaku Ashizawa, Sota Watanabe)
 * **Payment Address:** 0xb82EdE43D03fD23dcdb2d066720b3E77F3bedf6d
 
@@ -28,8 +27,8 @@ The following diagram is the libraries we are going to implement.
 ### Ecosystem Fit
 
 According to Web3 Foundation, there are at least 2 different teams that work on ZK technologies.
-- [Zeropool](https://github.com/zeropoolnetwork)
-- [Glacier](https://github.com/gbctech)
+* [Zeropool](https://github.com/zeropoolnetwork)
+* [Glacier](https://github.com/gbctech)
 
 Glacier is building a Distaff VM for zk-STARK proof generation and verification that are used to make  private smart contracts and private credential verifications. The difference between us is that we are making a zkSNARK pallet and they are making a VM which supports STARKs. In terms of Zeropool, they are making private transactions contract pallet using bellman groth16 protocal and we are making zkSNARK libray using plonk.
 
@@ -55,28 +54,30 @@ We believe zkSNARK with plonk will be core technology of next blockchain area. T
 * Address: 63 Chulia Street Singapore
 
 ### Team's experience
+
 We have been making Plasm Network, a scalable multi-virtual machines smart contract platform on Polkadot supporting cutting edge layer2 solutions. Curretly, another team at Stake techologies is working on the Optimistic Virtual Machine, an unification for all layer2 solutions and a subset of Optimistic Rollup. We have already delivered 4 milestones out of 6. In addition to that, we have already delivered several grants such as Plasma, ECDSA, and ink! playground.
 
-- [Plasma](https://github.com/stakedtechnologies/Plasm)
-- [ECDSA](https://github.com/polkadot-js/common/tree/master/packages/util-crypto/src/secp256k1)
-- [ink! playground](https://github.com/staketechnologies/ink-playground)
+* [Plasma](https://github.com/stakedtechnologies/Plasm)
+* [ECDSA](https://github.com/polkadot-js/common/tree/master/packages/util-crypto/src/secp256k1)
+* [ink! playground](https://github.com/staketechnologies/ink-playground)
 
 We are also participating in Substrate Builders Program and Substrate Delivery Partners and we have done some PoCs with clients.
-- [“Plasm Network” is Adopted as a Blockchain Platform for Payment System by Satsudra HD and DataGateway](https://stake.co.jp/news/20201020english/)
-- [Bitpoint and Stake Technologies Collaboration Announcement.](https://stake.co.jp/news/bitpoint_en/)
+* [“Plasm Network” is Adopted as a Blockchain Platform for Payment System by Satsudra HD and DataGateway](https://stake.co.jp/news/20201020english/)
+* [Bitpoint and Stake Technologies Collaboration Announcement.](https://stake.co.jp/news/bitpoint_en/)
 iously, please list the name of the project and legal entity here.
 
 ### Team Code Repos
 
-* https://github.com/PlasmNetwork
+* <https://github.com/PlasmNetwork>
 
 ### Team LinkedIn Profiles
 
-* https://www.linkedin.com/in/sota-watanabe-b962b3110/
+* <https://www.linkedin.com/in/sota-watanabe-b962b3110/>
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Summary
+
 We plan to provide a `plonk` pallet that allows Substrate-based blockchain to execute plonk-based zkSNARK.
 
 ### Overview
@@ -102,9 +103,9 @@ We plan to provide a `plonk` pallet that allows Substrate-based blockchain to ex
 
 This zkSNARK plonk is based on [dusk-network plonk](https://github.com/dusk-network/plonk) library.
 This zkSNARK plonk pallet provides us following function.
-- Building circuits
-- Creating proofs
-- Verifying proofs
+* Building circuits
+* Creating proofs
+* Verifying proofs
 
 ## Future Plans
 
@@ -112,8 +113,9 @@ This zkSNARK plonk pallet provides us following function.
 * private transfer protocol
 
 ## Additional Information :heavy_plus_sign:
+
 - [web site](https://www.plasmnet.io/)
-- [document](https://docs.plasmnet.io/)
-- [Twitter](https://twitter.com/Plasm_Network)
-- [Medium](https://medium.com/stake-technologies)
-- [GitHub](https://github.com/PlasmNetwork)
+* [document](https://docs.plasmnet.io/)
+* [Twitter](https://twitter.com/Plasm_Network)
+* [Medium](https://medium.com/stake-technologies)
+* [GitHub](https://github.com/PlasmNetwork)

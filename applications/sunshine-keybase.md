@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Sunshine Keybase
 
-* **Project:** Sunshine Keybase
 * **Proposer:** [`4meta5`](https://github.com/4meta5)
 * **Payment Address:** 16uCivZhPAy4RiK5ZA1TEMo6Xq5pGTh4BA
 

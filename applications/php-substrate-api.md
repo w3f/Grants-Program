@@ -1,13 +1,12 @@
-# W3F Grant Proposal
+# php substrate api
 
-* **Project Name:** php substrate api
 * **Team Name:** Nitor Infotech
 * **Payment Address:** We are doing this free to contribute to Blockchain community
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
-https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md
+<https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md>
 
 ### Overview
 
@@ -22,18 +21,21 @@ Substrate RCP end points are implemented in Go, Ruby, Python, C++ etc. We are ad
 This project will help to avail substrate features in applications/platforms build using PHP language.
 
 ### Code repo
-https://github.com/nitor-infotech-oss/parity-substrate-interface
+<https://github.com/nitor-infotech-oss/parity-substrate-interface>
 
 ### component structure
+
 ![](https://grantimage.blob.core.windows.net/images/php-substrate-rpc-component.jpg)
 
 ### Technology involved
+
 * PHP
 * php_curl
 * composer
 * substrate RPC
 
 ### Ecosystem Fit
+
 * This helps in making RPC endpoints available for applications build in PHP
 * It is adding a lib to client integration section of substrate
 * Any PHP application that want to have a substrate blockchain capability.
@@ -51,14 +53,14 @@ https://github.com/nitor-infotech-oss/parity-substrate-interface
 
 * **Contact Name:** Kapil Joshi
 * **Contact Email:** Kapil.joshi@nitorinfotech.com
-* **Website:** https://www.nitorinfotech.com/
+* **Website:** <https://www.nitorinfotech.com/>
 
 ### Legal Structure
 
 * **Registered Address:** Rhine, Block 1.5, Embassy Tech Zone,
 Rajiv Gandhi Infotech Park, Hinjewadi
 Phase- II, Pune – 411057
-phone +91-20-66940100 
+phone +91-20-66940100
 * **Registered Legal Entity:** Nitor Infotech Pvt. Ltd.
 
 ### Team's experience
@@ -79,41 +81,44 @@ Arati Bongale is a Software engineer. She is an enthusiastic developer. Eager to
 
 ### Team Code Repos
 
-* https://github.com/nitor-infotech-oss
-* https://github.com/nitor-infotech-oss/rust-webassembly
-* https://github.com/nitor-infotech-oss/blockchain-property-transfer
-* https://github.com/nitor-infotech-oss/substrate-demo
-* https://github.com/nitor-infotech-oss/rust-library-mgmt
+* <https://github.com/nitor-infotech-oss>
+* <https://github.com/nitor-infotech-oss/rust-webassembly>
+* <https://github.com/nitor-infotech-oss/blockchain-property-transfer>
+* <https://github.com/nitor-infotech-oss/substrate-demo>
+* <https://github.com/nitor-infotech-oss/rust-library-mgmt>
 
-* https://github.com/tejbahadursingh
-* https://github.com/KapilJoshiNitor
-* https://github.com/neha0921
-* https://github.com/aratibongale95
+* <https://github.com/tejbahadursingh>
+* <https://github.com/KapilJoshiNitor>
+* <https://github.com/neha0921>
+* <https://github.com/aratibongale95>
 
 ### Team LinkedIn Profiles (if available)
 
-* https://www.linkedin.com/in/tejbahadur-singh-ba705121/
-* https://www.linkedin.com/in/neha-reddy-0b0024119
-* https://www.linkedin.com/in/arati-bongale-2213511a1
+* <https://www.linkedin.com/in/tejbahadur-singh-ba705121/>
+* <https://www.linkedin.com/in/neha-reddy-0b0024119>
+* <https://www.linkedin.com/in/arati-bongale-2213511a1>
 
 ## Development Status :open_book:
 
 For implementing the library class to make RPC endpoint call is being created. Work on initialisation of properties and methids is going on. Deliverables as comply to rfp are in progress.
 
-* https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md,
+* <https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md>,
 
 ## Development Roadmap :nut_and_bolt:
 
 A class which can be instantiated in an application to use endpoints
+
 ```php
 $testClass = new SubstrateInterface("http_url");
 echo $testClass->rpc->system->name();
 ```
 
 once RPC endpoints are consumed package it and make it usable for other applications to integrate it.
+
 ```bash
 composer require neha0921/substrate-interface-package
 ```
+
 ### Overview
 
 * **Total Estimated Duration:** 15 days
@@ -133,7 +138,6 @@ composer require neha0921/substrate-interface-package
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 1. | substrate RPC enpoint integration | Integrate all substrate RPC endpoints in PHP to make them available in other PHP applications |  
 
-
 ### Milestone 2 Example — Additional features
 
 * **Estimated Duration:** 5 days
@@ -143,19 +147,18 @@ composer require neha0921/substrate-interface-package
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 1.  | packaging application for integration | make packagist of this integration to enable composer installation | 
-| 2.  | integration and use | an example of how to use this package in PHP application | 
+| 1.  | packaging application for integration | make packagist of this integration to enable composer installation |
+| 2.  | integration and use | an example of how to use this package in PHP application |
 
 ## Future Plans
 
-* Substrate is continuasly changin, to support it's functionality and working with changes, we are planning to provide lifetime support. 
+* Substrate is continuasly changin, to support it's functionality and working with changes, we are planning to provide lifetime support.
 * We are workging on Blockchain as well, so we want to be involved in it's development with multichain connectivity and future development.
 * With this we are involved in rust development as well. In future looking to work on development/issue fixing of Substrate.
-
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** We got a suggestion of Gautam from parity about start with some grant
 
-* We have already build a lib for invoking the RPC endpoints. 
+* We have already build a lib for invoking the RPC endpoints.
 * We have implemented some RPC endpoints as well.

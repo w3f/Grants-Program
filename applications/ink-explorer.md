@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Ink Explorer
 
-- **Project Name:** [Ink Explorer](https://github.com/w3f/Grants-Program/blob/master/rfps/under_development/ink!_smart_contract_block_explorer.md)
 - **Team Name:** Blockcoders
 - **Payment Address:** Ethereum (USDT/USDC/DAI) 0x0B7144E7960Ac666A6AD6B38Fe65C2fe96E65994
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 

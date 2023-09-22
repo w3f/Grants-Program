@@ -1,28 +1,23 @@
-# W3F Open Grant Proposal
+# PolkaJ Android Support
 
-
-* **Project Name:** PolkaJ Android Support
 * **Team Name:** Nathan Schwermann
 * **Payment Address:** 0x454cfAa623A629CC0b4017aEb85d54C42e91479d
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/301#issuecomment-1168484070)
 
+## Project Overview :page_facing_up:
 
-## Project Overview :page_facing_up: 
-
-
-
-This proposal is a follow-up to the PolkaJ grant https://github.com/w3f/Open-Grants-Program/pull/12 
-I am not affiliated with the original team, but I have spoken with them about this propoal and they have encouraged me to submit it. 
+This proposal is a follow-up to the PolkaJ grant <https://github.com/w3f/Open-Grants-Program/pull/12>
+I am not affiliated with the original team, but I have spoken with them about this propoal and they have encouraged me to submit it.
 
 ### Overview
 
 The PolkaJ java client is built using Java 11 APIs and native x86 code which can not run on Android.
 This project proposal will make the necessary changes to support the Android platform as well as provide examples.
 
-
-### Project Details 
+### Project Details
 
 We will make the following changes and additions to the PolkaJ project in order to support Android versions 7 and up.
+
 * Build script changes to also compile the rust code to ARM in addition to x86 based on the target
 * Make necessary changes to JNI code to support ARM when needed and remove Java 9 dependency
 * Add `RpcCallAdapter` and `SubscriptionCallAdapter` to client Builder interface
@@ -36,44 +31,51 @@ We will make the following changes and additions to the PolkaJ project in order 
 * Fix broken balance example on OSX
 * Add new artifacts polkaj-schnorrkel_android.jar, polkaj-okhttp.jar
 
+### Ecosystem Fit
 
-### Ecosystem Fit 
 This is an improvement and addition to an existing project.
-
 
 ## Team :busts_in_silhouette:
 
 ### Team members
+
 * Nathan Schwermann
 
 ### Contact
+
 * **Contact Name:** Nathan Schwermann
 * **Contact Email:** schwiz@gmail.com
 
-### Legal Structure 
+### Legal Structure
+
 Individual / Sole Proprietor
 
 ### Team's experience
+
 I have ten years of experience in Android client development in the telecom and payment industries. I have led and maintained development on applications with millions of monthly active users.
 
 ### Team Code Repos
-* https://github.com/nschwermann
+
+* <https://github.com/nschwermann>
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/in/nathanschwermann/
+
+* <https://www.linkedin.com/in/nathanschwermann/>
 
 ## Development Status :open_book:
+
 * I have completed parts 1, 1b, 2a, 5, 90% complete 3a and 50% 4a from milestone 1.
 
-
-## Development Roadmap :nut_and_bolt: 
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
+
 * **Total Estimated Duration:** 3 Months
 * **Full-time equivalent (FTE):**  1
 * **Total Costs:** 21,000 DAI
 
 ### Milestone 1 Client refactoring
+
 * **Estimated Duration:** 1 month (2 weeks left after re-approval of milestone delivery)
 * **FTE:**  1
 * **Costs:** 7,000 DAI
@@ -94,6 +96,7 @@ I have ten years of experience in Android client development in the telecom and 
 | 5   | examples | Fix Balance example not working on OSX|
 
 ### Milestone 2 OkHttp / Java 8 Compatible
+
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 7,000 DAI
@@ -108,6 +111,7 @@ I have ten years of experience in Android client development in the telecom and 
 | 3. | schnorrkel module Android Compatibility | Will build RUST code for ARM adds new artifact polkaj-schnorrkel_android.jar |  
 
 ### Milestone 3 Android and Kotlin
+
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 7,000 DAI
@@ -120,7 +124,6 @@ I have ten years of experience in Android client development in the telecom and 
 | 1. | polkaj-ktx module | Will include support for Kotlin coroutines and additional kotlin convenience methods|  
 | 2a. | Example | Will port desktop examples into an Android app with a simple GUI to select each example and allow user input where possible|  
 | 2b. | Example blog| Will write blog post and submit to medium explaining new changes to PolkaJ made to support Android and a walk through guide how to integrate PolkaJ into your Android project. |  
-
 
 ## Future Plans
 

@@ -1,5 +1,5 @@
-# Open Grant Proposal
-* **Project Name:** Polkadot UI Web Identicon + Angular Identicon
+# Polkadot UI Web Identicon + Angular Identicon
+
 * **Team Name:** RidOne Technologies
 * **Payment Address:** DAI  0xfA34F566bDDcA92Dc656310F08AC5aE64fC46456
 ## Project Overview 
