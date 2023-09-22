@@ -141,8 +141,10 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 2. | User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
 
  - creating a starting point for nice visual diagrams
+ - whitepaper creation
+ - multiple articles
 
-### Milestone 2 - Creating a Frontend connecting the quering the database
+### Milestone 2 - Creating a Frontend quering the blockchain
 
 - **Estimated duration:** 1 month
 - **FTE:** 1.5
@@ -156,6 +158,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
  - all this functionality will be done with running up a local devnet
  - So some questions: Can we test populate the local devnet with some data?
  - It would be nice to do a pricing simulation, can this be one of the milestones in the UI, or is this a separate issue?
+ - Technical documentation?
+ - Maybe create some fake data so people can play around with it.
 
 ### Milestone 3 - Creating a Frontend connecting the quering the database
 
