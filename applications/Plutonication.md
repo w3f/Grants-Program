@@ -391,7 +391,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0c.** | Testing and Testing Guide | All of the functions will be end-to-end tested with a sample dApp (https://polkadot.js.org/apps/) and a sample Wallet (PlutoWallet) |
 | **0d.** | Docker | We will not provide a docker file |
 | **0e.** | Article | We will publish an article that explains what was done as part of the grant. We will mention how Plutonication is ground-breaking and can be used by anyone. |  
-| 1. | Plutonication Extension | This is a __polkadot.js extension__ compatible browser extension for Plutonication. |
+| 1. | Plutonication Extension | This is a [polkadot.js extension](https://github.com/polkadot-js/extension) compatible browser extension for Plutonication. |
 | 1a. | Inject(..) | Injects the browser extension into the polkadot.js dApp. |
 | 1b. | ReceiveAddress(..) | Handles the receiving of SS58 encoded address |
 | 1c. | SendPayloadAsync(..) | Method used for requesting an extrinsic payload sign |
@@ -422,6 +422,8 @@ You can find more information about the program [here](../README.md#moneybag-ref
 - **Referrer:** https://github.com/topmonks
 - **Payment Address:** 32NoFbB4x8bZ7YNvjra1DUYcje2B2XQwP3 (BTC)
 
+- They are a grants alumni.
+
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** - personal recommendation
@@ -443,3 +445,38 @@ Here you can also add any additional information that you think is relevant to t
 #### Previous grants you may have applied for.
 
 - None yet.
+
+#### Why are you focusing on C#? Do you have any relation to Ajuna?
+
+- I was a c# developer and I still like it to this day. It is probably the best option for game development and in my opinion also the best way to develop mobile applications.
+Originally, I wanted to create a mobile dApp with c# frontend, so I did my research and that is how I discovered Ajuna and their [Substrate.NetApi](https://github.com/SubstrateGaming/Substrate.NET.API).
+It was an excellent tool to get started and without it, I would have probably gave up and moved on. I still noticed that few of the important features were missing, like these:
+    - how to securely connect a foreign wallet to a c# dApp.
+    - how to efficiently query NFT data.
+    - how to elegantly interact with smart contracts (namely ink! contracts) from c#.
+
+- So I started addressing them one by one.
+    - First is Plutonication.
+    - Second is https://github.com/rostislavlitovkin/uniquery.net (this one is already production ready)
+    - Third was just brainstormed during PBA. It might be my next project in the future.
+
+- Regarding Ajuna, I am currently in a very close relationship with them. We discuss a lot of the potential changes and updates made to the Substrate.NetApi.
+They are very supportive to me.
+Last week, I had a chance to represent Ajuna at the Token2049. So, I was showing off all of the projects that have built on the Substrate.NetApi so far ^^.
+
+#### Is Plutonication made just for PlutoWallet?
+
+- Although the name may suggest it, it is not true. The name came from the hackathon, so we figured out a combination of __Pluto + Comunication =__ **Plutonication**. Once we figure out a better name, we will rename it to something more generic. It is totally meant to be used by anyone. We are willing to write a good documentation to make it simple for any developers to use.
+
+#### Can you share some user numbers or other metrics that show adoption of PlutoWallet?
+
+- It is in an MVP stage currently, meaning it works quite well, suports all of the important features, can be run on any platform and demonstrates well the idea of customizable layouts. It is on a good track to get released by the end of this year.
+
+#### Regarding deliverable 4.1, you mean polkadot.js apps, not the extension, correct?
+
+- I truly meant [polkadot.js extension](https://github.com/polkadot-js/extension) (https://polkadot.js.org/docs/extension/usage/).
+This Polkadot.js extension is implemented in polkadot.js.org/apps, which means, that it will also work with polkadot.js apps.
+
+- Also on the demo video, it already works with polkadot.js.org/apps ^^
+
+- What I am trying to say is that it is not just limited to polkadot.js.org/apps, but it can work with any dApp that implements the extension package, which most of the dApps did.
