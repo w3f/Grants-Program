@@ -74,7 +74,7 @@ Jonathan Brown
 
 ### Legal Structure
 
-- **Registered Address:** n/a
+- **Registered Address:** (shared privately)
 - **Registered Legal Entity:** n/a
 
 ### Team's experience
