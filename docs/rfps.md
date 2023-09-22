@@ -40,7 +40,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 | RFP | Last Updated |
 | :-- | :----------: |
-| [alternative_polkadot_host_implementations.md](RFPs/Open/alternative_polkadot_host_implementations.md) | 02.03.2023 |
+| [alternative_polkadot_host_implementations.md](RFPs/Under%20Development/alternative_polkadot_host_implementations.md) | 02.03.2023 |
 | [alternative-polkadot-js-api-console.md](RFPs/Under%20Development/alternative-polkadot-js-api-console.md) | 19.05.2023 |
 | [analysis-website-and-data-platform.md](RFPs/Under%20Development/analysis-website-and-data-platform.md) | 21.09.2023 |
 | [data_analysis_tools.md](RFPs/Under%20Development/data_analysis_tools.md) | 21.09.2023 |  
