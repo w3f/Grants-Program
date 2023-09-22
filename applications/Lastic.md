@@ -121,11 +121,12 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
-### Milestone 1 Example — Basic functionality
+
+### Milestone 1 - Creating a Frontend with basic functionality for the coretime chain
 
 - **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:** 1.5
+- **Costs:** 10,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
@@ -135,83 +136,74 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 0e. | Article Publishing | We will publish 3 **articles**: 1) Introduction to Gavin's talk about the coretime chain with a link to YouTube. 2) Our thought process on starting the coretime. 3) ... (TBD) |
+| 1. | Basic Interaction Creation | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. |
+| 2. | User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
+| ... | ... | ... |
 
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-...
-
----
 
 ### Milestone 1 - Creating a Frontend with basic functionality for the coretime chain
 
- - **Estimated Duration:** 1 month
- - **Costs:** 10,000 USD
+- **Estimated duration:** 1 month
+- **FTE:** 1.5
+- **Costs:** 10,000 USD
 
-Publishing 3 articles:
- - introduction to Gavin's talk about the coretime chain, link YouTube
- - our thought process on starting the coretime
- - ___
-
-Creating basic interaction:
- - exposing interactions with the broker pallet
-
-admin / privledged setup is not included
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 3. | Subquery Storage | We will work on querying the storage with Subquery. |
 
 
-UI functions:
-renew
-/// Renew Bulk Coretime in the ongoing Sale or its prior Interlude Period.
-transfer
-/// Transfer a Bulk Coretime Region to a new owner.
+---
 
+### Look Up Section
 
-When you own region:
+#### UI extrinsic functions:
 
-partition
-/// Split a Bulk Coretime Region into two non-overlapping Regions at a particular time into the region.
+*Note: Functions with system admin privilege are not included here and will not be included in the UI.*
 
-interlace
-/// Split a Bulk Coretime Region into two wholly-overlapping Regions with complementary interlace masks which together make up the original Region's interlace mask.
+| Function Name | Description |
+|---------------|-------------|
+| renew | Renew Bulk Coretime in the ongoing Sale or its prior Interlude Period. |
+| transfer | Transfer a Bulk Coretime Region to a new owner. |
+| partition | Split a Bulk Coretime Region into two non-overlapping Regions at a particular time into the region. |
+| interlace | Split a Bulk Coretime Region into two wholly-overlapping Regions with complementary interlace masks which together make up the original Region's interlace mask. |
+| assign | Assign a Bulk Coretime Region to a task. |
+| pool | Place a Bulk Coretime Region into the Instantaneous Coretime Pool. |
+| claim_revenue | Claim the revenue owed from inclusion in the Instantaneous Coretime Pool. |
+| purchase_credit | Purchase credit for use in the Instantaneous Coretime Pool. |
+| drop_region | Drop an expired Region from the chain. |
+| drop_contribution | Drop an expired Instantaneous Pool Contribution record from the chain. |
+| drop_history | Drop an expired Instantaneous Pool History record from the chain. |
+| drop_renewal | Drop an expired Allowed Renewal record from the chain. |
+| request_core_count | Request a change to the number of cores available for scheduling work. |
 
-assign
-/// Assign a Bulk Coretime Region to a task.
+#### UI constants:
 
-pool
-/// Place a Bulk Coretime Region into the Instantaneous Coretime Pool.
+| Constant Name | Description |
+|---------------|-------------|
+| PalletId | Identifier from which the internal Pot is generated. |
+| TimeslicePeriod | Number of Relay-chain blocks per timeslice. |
+| MaxLeasedCores | Maximum number of legacy leases. |
+| MaxReservedCores | Maximum number of system cores. |
 
-claim_revenue
-/// Claim the revenue owed from inclusion in the Instantaneous Coretime Pool.
+#### UI storage to query:
 
+| Storage Item | Description |
+|--------------|-------------|
+| Configuration | The current configuration of this pallet. |
+| Reservations | The Polkadot Core reservations (generally tasked with the maintenance of System Chains). |
+| Leases<T> | The Polkadot Core legacy leases. |
+| Status<T> | The current status of miscellaneous subsystems of this pallet. |
+| SaleInfo<T> | The details of the current sale, including its properties and status. |
+| AllowedRenewals<T> | Records of allowed renewals. |
+| Regions<T> | The current (unassigned) Regions. |
+| Workplan<T> | The work we plan on having each core do at a particular time in the future. |
+| Workload<T> | The current workload of each core. This gets updated with workplan as timeslices pass. |
+| InstaPoolContribution<T> | Record of a single contribution to the Instantaneous Coretime Pool. |
+| InstaPoolIo<T> | Record of Coretime entering or leaving the Instantaneous Coretime Pool. |
+| InstaPoolHistory<T> | Total InstaPool rewards for each Timeslice and the number of core parts which contributed. |
 
-purchase_credit
-/// Purchase credit for use in the Instantaneous Coretime Pool.
-
-drop_region
-/// Drop an expired Region from the chain.
-
-drop_contribution
-/// Drop an expired Instantaneous Pool Contribution record from the chain.
-
-drop_history
-/// Drop an expired Instantaneous Pool History record from the chain.
-
-drop_renewal
-/// Drop an expired Allowed Renewal record from the chain.
-
-request_core_count
-/// Request a change to the number of cores available for scheduling work
+---
 
 
 ### expose events
@@ -229,8 +221,6 @@ since coretime chain is not on test net this will be done locally
 
 
 ---
-
-
 
 
 ## Future Plans
