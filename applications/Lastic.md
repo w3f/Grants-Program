@@ -139,19 +139,34 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 0e. | Article Publishing | We will publish 3 **articles**: 1) Introduction to Gavin's talk about the coretime chain with a link to YouTube. 2) Our thought process on starting the coretime. 3) ... (TBD) |
 | 1. | Basic Interaction Creation | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. |
 | 2. | User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
-| ... | ... | ... |
 
+ - creating a starting point for nice visual diagrams
 
-### Milestone 1 - Creating a Frontend with basic functionality for the coretime chain
+### Milestone 2 - Creating a Frontend connecting the quering the database
 
 - **Estimated duration:** 1 month
 - **FTE:** 1.5
 - **Costs:** 10,000 USD
+- 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 3. | Subquery Storage | We will work on querying the storage with Subquery. |
 
+ - all this functionality will be done with running up a local devnet
+ - So some questions: Can we test populate the local devnet with some data?
+ - It would be nice to do a pricing simulation, can this be one of the milestones in the UI, or is this a separate issue?
+
+### Milestone 3 - Creating a Frontend connecting the quering the database
+
+- **Estimated duration:** ? month - delivery should probably incompase here also mainnet
+- **FTE:** 1.5
+- **Costs:** 10,000 USD
+- **When we can start working on it**: When Parity publishes their branch to test-net and when there will be some data so we can start testing real functionality, approx time: 4 months + when submission to mainnet 3-6 months after test net
+
+ - testing
+ - changing the subquery storage to work with the provided testnet
+ - when time comes publish the features on main net
 
 ---
 
