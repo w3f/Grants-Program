@@ -177,7 +177,7 @@ The team plans to release the system sequentially in two versions:<br>
 
 - **Beta Release:** Includes implementation of the main functionality of the system for readers, authors, and system administrators, which will allow functionality testing for each user role and obtaining initial feedback from test users.<br>
 
-- **Release Version:** This release will include enhanced functionality from the beta release, with additional features for all user roles. Administrator functionality will be limited in terms of access to user data for the reader and author roles. Full documentation will be provided and the final product will be a fully operational dApp.<br>
+- **Release Version:** This release will include enhanced functionality from the beta release, with additional features for all user roles. Administrator functionality will be limited in terms of access to user data for the reader and author roles. Full documentation will be provided together with a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.<br>
 
 ### Overview
 
@@ -187,7 +187,7 @@ The team plans to release the system sequentially in two versions:<br>
 - **Total Costs:** 30,000 USD
 
 
-### Milestone 1 — Beta Release
+### Milestone 1 — Basic Functionality
 
 - **Estimated duration:** 2 months
 - **FTE:**  4 FTE
@@ -205,7 +205,7 @@ The team plans to release the system sequentially in two versions:<br>
 | 4. | Interactive posting interactions | Functionaltity for interactions with posts, such as *comments*, *reposts* and *likes*. |
 | 5. | System users interaction | Basic functionality for direct interactions between users, such as *search* and *follow*. |
 
-### Milestone 2 — Release Version
+### Milestone 2 — Advanced Functionality
 
 - **Estimated duration:** 1 months
 - **FTE:**  3 FTE
@@ -217,13 +217,13 @@ The team plans to release the system sequentially in two versions:<br>
 | 0a. | License |  MIT  |
 | 0b. | Documentation |  We will provide the documentation of the code and a basic tutorial, which will show how the functionality of the second milestone works.  |
 | 0c. | Testing and Testing Guide | Core functions will be covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an article that explains what was built, what was done/achieved as part of the grant, and team's development plans for the future. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0е. | Article | We will publish an article that explains what was built, what was done/achieved as part of the grant, and team's development plans for the future. |
 | 1. | Multimedia posting | Support for images and youtube videos. |
 | 2. | Interactive posting interactions II | Adding an author to *favorites*. |
 | 3. | Direct token transfer | The functionality which allows users to transfer Polkadot tokens to other users without leaving the service, as well as to send and receive donations in these tokens. |
 | 4. | User statistics | Number of posts, replies, likes, followers etc. |
-| 5. | Functionality for the administrator | Interface for users authorised as system administrators. Functionality is designed to ensure optimal system operation and provide convenience for other user roles in the system: reader and author. |
-| 6. | Website | Domain and a simple UI for users to start using the service. |
+| 4. | Functionality for the administrator | Interface for users authorised as system administrators. Functionality is designed to ensure optimal system operation and provide convenience for other user roles in the system: reader and author. |
 
 
 ## Future Plans
