@@ -163,7 +163,7 @@ Working on Rust Telegram bot.
 | 1a. | Bot setup | Telegram bot in rust that runs on cloud.|
 | 1b. | Generate Sr25519 keypairs | The bot should be capable of creating multiple wallets, importing and exporting private keys safely.  |
 | 1c. | Encrypt private key and store on cloud | Encrypt the private key using AES-256-CBC encryption with a random Initialization Vector (IV) and a chosen password. |
-| 1d. | RPC connection | The bot integrates with polkadot testnet RPC Rococo.|
+| 1d. | RPC connection | The bot integrates with polkadot testnet RPC Westend.|
 | 2. | Landing Page for SEO | Landing Page in NextJs that links to the telegram bot for the SEO purposes.|
 
 ### Milestone 2 — Additional features
