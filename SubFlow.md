@@ -33,7 +33,7 @@ The functionality of the system can be divided into three logical user roles:
 - System administrator functionality
 <br>
 <p align="center">
-  <img src="https://github.com/deus4/KidsNotes/assets/21257942/17f1a838-787d-4a45-bb61-3fe460d5ad85">
+  <img src="https://github.com/w3f/Grants-Program/assets/21257942/a0e78106-4a1c-4061-a5ee-3a23e7625e5b">
 </p>
 <br> 
 <p align="center">
@@ -223,7 +223,7 @@ The team plans to release the system sequentially in two versions:<br>
 | 2. | Interactive posting interactions II | Adding an author to *favorites*. |
 | 3. | Direct token transfer | The functionality which allows users to transfer Polkadot tokens to other users without leaving the service, as well as to send and receive donations in these tokens. |
 | 4. | User statistics | Number of posts, replies, likes, followers etc. |
-| 4. | Functionality for the administrator | Interface for users authorised as system administrators. Functionality is designed to ensure optimal system operation and provide convenience for other user roles in the system: reader and author. |
+| 5. | Functionality for the administrator | Interface for users authorised as system administrators. Functionality is designed to ensure optimal system operation and provide convenience for other user roles in the system: reader and author. |
 
 
 ## Future Plans
