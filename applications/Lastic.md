@@ -139,17 +139,18 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 0e. | Article Publishing | We will publish 3 **articles**: 1) Introduction to Gavin's talk about the coretime chain with a link to YouTube. 2) Our thought process on starting the coretime. 3) ... (TBD) |
 | 1. | Basic Interaction Creation | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. |
 | 2. | User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
+| 3. | UX Figma Design | Creating and finishing the UX design of the marketplace (without professional designer) |
 
  - creating a starting point for nice visual diagrams
  - whitepaper creation
  - multiple articles
 
-### Milestone 2 - Creating a Frontend quering the blockchain
+![Instantanious coretime sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/f8ecbca8-1b8a-4214-a0a0-5281e880c4de)
+![Primary market bulk sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/d1b65609-c763-449d-bdba-e2c92f0387ec)
 
-- **Estimated duration:** 1 month
-- **FTE:** 1.5
-- **Costs:** 10,000 USD
-- 
+### Future work - Creating a Frontend quering the blockchain
+
+- **When we can start working on it**: When Parity publishes their branch to test-net and when there will be some data so we can start testing real functionality, approx time: 4 months + when submission to mainnet 3-6 months after test net
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -160,17 +161,12 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
  - It would be nice to do a pricing simulation, can this be one of the milestones in the UI, or is this a separate issue?
  - Technical documentation?
  - Maybe create some fake data so people can play around with it.
-
-### Milestone 3 - Creating a Frontend connecting the quering the database
-
-- **Estimated duration:** ? month - delivery should probably incompase here also mainnet
-- **FTE:** 1.5
-- **Costs:** 10,000 USD
-- **When we can start working on it**: When Parity publishes their branch to test-net and when there will be some data so we can start testing real functionality, approx time: 4 months + when submission to mainnet 3-6 months after test net
-
  - testing
  - changing the subquery storage to work with the provided testnet
  - when time comes publish the features on main net
+
+![Secondary market bulk sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/19b1cff8-ac16-4cea-81e5-385a29ee46f6)
+
 
 ---
 
