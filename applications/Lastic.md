@@ -46,9 +46,9 @@ We expect the teams to already have a solid idea about your project's expected f
 
 ### Contact
 
-- **Contact Name:** Phil Lucsok
-- **Contact Email:** hi@lastic.xyz
-- **Website:** lastic.xyz
+- **Contact Name:** Phil Lucsok, Aurora Poppyseed
+- **Contact Email:** hi@lastic.xyz, aurora.makovac@gmail.com
+- **Website:** [lastic.xyz](https://www.lastic.xyz/)
 
 ### Legal Structure
 
@@ -74,11 +74,11 @@ Phil currently works as a freelancer but is focused on leading [Missing Link](ht
 #### **Aurora Poppyseed**:
 Aurora's journey in the technological sphere stands out for her innovative approach and unwavering determination. With a foundation in Physics and Electrical Engineering, she transitioned into roles as varied as a Solutions Architect, focusing on electronics and low-level programming, to a Frontend Developer with a commitment to clean code and scalable frontend architectures. 
 
-At **Instrumentation Technologies** in Nova Gorica, Slovenia, she led the design of intuitive GUIs for advanced measurement devices in particle accelerators and streamlined future development with a standardized Vue CLI-based web GUI framework. Her contribution as a Frontend Developer at **Block Analitica** involved engineering the frontend framework for the **Ajna project** initiated by the **MakerDAO team**, ensuring clean coding practices and an organized project structure for future open-source contributions.
+At [**Instrumentation Technologies**](https://www.i-tech.si/) in Nova Gorica, Slovenia, she led the design of intuitive GUIs for advanced measurement devices in particle accelerators and streamlined future development with a standardized Vue CLI-based web GUI framework. Her contribution as a Frontend Developer at [**Block Analitica**](https://blockanalitica.com/) involved engineering the frontend framework for the [**Ajna project**](https://www.ajna.finance/) initiated by the **MakerDAO team**, ensuring clean coding practices and an organized project structure for future open-source contributions.
 
-Aurora attended and graduated from the **Polkadot Blockchain Academy** at UC Berkeley (engineering track), learning about the fundamentals of blockchain from leaders in this domain. Further enhancing her mark in the blockchain domain, Aurora offered her expertise to **KodaDot**, a prominent multi-chain NFT marketplace, developing developer documentation and crafting both technical and non-technical articles to amplify the platform's presence.
+Aurora attended and graduated from the [**Polkadot Blockchain Academy**](https://www.polkadot.network/development/academy/) at UC Berkeley (engineering track), learning about the fundamentals of blockchain from leaders in this domain. Further enhancing her mark in the blockchain domain, Aurora offered her expertise to [**KodaDot**](https://kodadot.xyz/), a prominent multi-chain NFT marketplace, developing developer documentation and crafting both technical and non-technical articles to amplify the platform's presence.
 
-In the realm of community engagement and organization, Aurora co-organized the **Polkadot Bled mini-conference** and more recently, orchestrated a breakfast as a side event at sub0 aimed at **women in Polkadot** in collaboration with **H.E.R. Dao**. This gathering aimed to empower and bring together women leaders and enthusiasts in the Polkadot ecosystem. Furthermore, she's a staunch supporter of **SubWork**, a tech-centric coworking hub in the scenic Bled region and one of the pioneer **Polkadot hubs**.
+In the realm of community engagement and organization, Aurora co-organized the [**Polkadot Bled mini-conference**](https://www.meetup.com/subwork/events/292274713) and more recently, orchestrated a breakfast as a side event at sub0 aimed at [**women in Polkadot** in collaboration with **H.E.R. Dao**](https://lu.ma/dzuqx5nw). This gathering aimed to empower and bring together women leaders and enthusiasts in the Polkadot ecosystem. Furthermore, she's a staunch supporter of [**SubWork**](https://subwork.xyz/), a tech-centric coworking hub in the scenic Bled region and one of the pioneer **Polkadot hubs**.
 
 Now a freelance blockchain developer, Aurora champions women's representation in Polkadot and ardently supports community-driven blockchain initiatives.
 
@@ -105,7 +105,7 @@ GitHub Accounts:
 
 Our main GitHub Repository were the majority of the work for this grant is going to be submitted is going to be done in the repository [**github.com/LasticXYZ/LasticUI**](https://github.com/LasticXYZ/LasticUI). This code features starter code forked as a template from [substrate frontend template](https://github.com/substrate-developer-hub/substrate-front-end-template).
 
-The frontend will be developed by spinning up substrate locally and by connecting the frontend to it. The instructions on how to do this are already available in the [README.md file]().
+The frontend will be developed by spinning up substrate locally and by connecting the frontend to it. The instructions on how to do this are already available in the [README.md file](https://github.com/LasticXYZ/LasticUI/blob/main/README.md).
 
 [Lastic](https://github.com/LasticXYZ/Lastic) features a private repository. This repository will be made public. Here are featured internal discussions as well as notes for creating the whitepaper.
 
@@ -143,7 +143,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
+| **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a **tutorial/article** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -151,8 +151,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 1. | Whitepaper creation | We will create a whitepaper for Lastic |
 | 2a. | Design - User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
 | 2b. | Design - UX Figma Design | Creating and finishing the UX design of the marketplace (without professional designer) |
-| 3a. | Basic Interaction Creation | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. |
-| 3b. | Implementing tge | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. |
+| 3a. | Basic Interaction Creation | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. Look at expansion 3.a |
+| 3b. | Frontend development - Basic mock up frontend implementation with fake data | Look at expansion 3.b |
 
 ---
 
