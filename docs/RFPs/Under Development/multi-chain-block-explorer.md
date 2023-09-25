@@ -1,6 +1,6 @@
 # Multi-chain Block Explorer
 
-* **Status:** Open
+* **Status:** [Implemented 1](https://github.com/colorfulnotion/polkaholic), [Implemented 2](https://polkadot.subscan.io/)
 * **Teams/People that could deliver the RFP:** @clearloop, @carlhong
 
 ## Project Description :page_facing_up: 
