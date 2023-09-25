@@ -12,7 +12,7 @@ If you want to apply in **private**, you can do so [:arrow_right: here](https://
 
 :::info
 
-Payments can be made in fiat, Bitcoin, USDT (on Kusama or Polkadot) or USDC/DAI (Ethereum). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7).
+Payments can be made in fiat, Bitcoin, USDT (Polkadot), or USDC/DAI (Ethereum). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7).
 
 :::
 
