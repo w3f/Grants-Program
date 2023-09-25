@@ -167,9 +167,7 @@ In the first milestone, the features for the PoC will be implemented and tested 
 | 2   | Xcavate Loan App Repo   | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
 | 3. | Loan management pallet | * Manage loan application ** Land details' ** Registration * Manage loan interest percentage ** Based on land and experience * Approve/Reject request |
 | 4. | Staking pallet | * User can stake native token * Calculate APR * Distribute payouts |
-| 5. | Verification pallet | * We need to remove this deliverable because it is reliant on the Acurast Oracle Pallet which is struggling due to Substrate dependency issues |
-| 6. | DAO | The PoC will have a basic voting structure to ensure rewards can be given to the real estate build stage checkers (As we progress in to the MVP stage this will be expanded to form a full governance structure). |
-| 7. | Decentralized Developer Loan dApp / Front End Repo | We are struggling to interact through the frontend dApp so wish to remove this as a deliverable, however interacting through polkadot.js is fine. |
+| 5. | DAO | The PoC will have a basic voting structure to ensure rewards can be given to the real estate build stage checkers (As we progress in to the MVP stage this will be expanded to form a full governance structure). |
 
 ## Future Plans
 
