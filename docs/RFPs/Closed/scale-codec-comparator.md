@@ -5,7 +5,7 @@
 
 ## Project Description :page_facing_up:
 
-To date, there are [9 published](https://substrate.dev/docs/en/knowledgebase/advanced/codec#implementations) implementations of the SCALE Codec. Since each is implemented by a different team & [the reference implementation](https://github.com/paritytech/parity-scale-codec) still introduces small fixes, it would be beneficial to compile a table of feature-completeness.
+To date, there are [9 published](https://docs.substrate.io/reference/scale-codec/) implementations of the SCALE Codec. Since each is implemented by a different team & [the reference implementation](https://github.com/paritytech/parity-scale-codec) still introduces small fixes, it would be beneficial to compile a table of feature-completeness.
 This would provide (some) assurance that the implementation in a given language is safe & sound to use.
 
 One approach would be to provide wrappers to the Rust reference implementation, like in [scale.rb](https://github.com/itering/scale.rb/blob/develop/src/lib.rs) and using the Foreign Function Interface (e.g. [here](https://github.com/itering/scale.rb/blob/develop/spec/ffi_helper.rb)) to call these directly from within the library.
