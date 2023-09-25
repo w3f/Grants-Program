@@ -157,9 +157,9 @@ This is the second stage in the roadmap to build the Polkadot Analytics Platform
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **1** | Substrate-ETL extraction scripts | Extraction scripts to gather data from Substrate-ETL. |
-| **2** | Polkadot Data extraction scripts | Extraction scripts to gather polkadot related data not available on Substrate-ETL. |
-| **3** | GitHub Data extraction scripts | Extraction scripts to gather data from GitHub, which will be used to support queries relating to network engagement and innovation. |
+| **1** | Substrate-ETL extraction scripts | Extraction scripts to gather data from all the SQL tables specified in the Substrate-ETL. |
+| **2** | Polkadot Data extraction scripts | Extraction scripts to gather polkadot related data not available on Substrate-ETL. We will explore APIs like the ones used in the [Polkassembly](https://github.com/polkassembly/polkassembly/tree/main) to extract OpenGov data to answer the queries specified in the RFP |
+| **3** | GitHub Data extraction scripts | Extraction scripts to gather data from GitHub, which will be used to support queries relating to network engagement and innovation. We will use github APIs to extract data from the repositories related to the Polkadot Ecosystem, aiming at answering questions regarding dev-community engagement. E.g.: which parachain had more PR in a specific time interval. |
 
 - On Milestone 2:
 
@@ -335,7 +335,7 @@ Considering 22 working days on average per month, in three months we have approx
 
 ### Milestone 1 — Data extraction mechanisms
 
-The main goal of this milestone is to ... 
+The main goal of this milestone is to structure and develop mechanisms to gather raw data from the Polkadot Ecosystem, which is key to creating the individuals in the knowledge base in milestone 2.
 
 - **Estimated Duration:** 1 month
 - **FTE:**  0.91
@@ -344,17 +344,17 @@ The main goal of this milestone is to ...
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | Copyright and Licenses | Apache 2.0 |
-| **0b.** | Documentation/Tutorial | Detailed documentation of the data extraction mechanisms. |
+| **0b.** | Documentation/Tutorial | Documentation of the Python code using pdoc3. The tutorial will be a jupyter notebook explaining the use of endpoints and the extraction mechanisms |
 | **0c.** | Testing and Testing Guide | Tests and a guide on how to verify the correctness of data extraction mechanisms. |
 | **0d.** | Docker | Docker images for the data extraction mechanisms. |
-| **1** | Substrate-ETL extraction scripts | Extraction scripts to gather data from Substrate-ETL. |
-| **2** | Polkadot Data extraction scripts | Extraction scripts to gather polkadot related data not available on Substrate-ETL. |
-| **3** | GitHub Data extraction scripts | Extraction scripts to gather data from GitHub, which will be used to support queries relating to network engagement and innovation. |
+| **1** | Substrate-ETL extraction scripts | Extraction scripts to gather data from all the SQL tables specified in the Substrate-ETL. |
+| **2** | Polkadot Data extraction scripts | Extraction scripts to gather polkadot related data not available on Substrate-ETL. We will explore APIs like the ones used in the [Polkassembly](https://github.com/polkassembly/polkassembly/tree/main) to extract OpenGov data to answer the queries specified in the RFP |
+| **3** | GitHub Data extraction scripts | Extraction scripts to gather data from GitHub, which will be used to support queries relating to network engagement and innovation. We will use github APIs to extract data from the repositories related to the Polkadot Ecosystem, aiming at answering questions regarding dev-community engagement. E.g.: which parachain had more PR in a specific time interval. |
 
 
 ### Milestone 2 — Semantic ETL pipelines
 
-The primary objective of this milestone is to structure and develop processing workflows to gather data using the data extraction mechanisms developed on milestone 1. The knowledge base will dynamically maintain a formal representation of extracted data aligned with the POnto ontology. 
+The primary objective of this milestone is to structure extracted data and develop processing workflows to dynamically inject and maintain a knowledge base with a formal representation of the extracted data aligned with the POnto ontology.
 
 - **Estimated Duration:** 2 months
 - **FTE:**  0.91
@@ -363,7 +363,7 @@ The primary objective of this milestone is to structure and develop processing w
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | Copyright and Licenses | Apache 2.0 |
-| **0b.** | Documentation/Tutorial | Detailed documentation of the ETL process workflows.  |
+| **0b.** | Documentation/Tutorial | Documentation of the Python code using pdoc3. The tutorial will be a jupyter notebook explaining the use of the implemented semantic ETL workflows |
 | **0c.** | Testing and Testing Guide | Testing the information ETL process. A guide on how to verify the correctness of injected knowledge. |
 | **0d.** | Docker | Docker images for the ETL workflows. |
 | **0e.** | Article | We will write a medium post with an overview of semantic ETL workflows and their tasks. |
