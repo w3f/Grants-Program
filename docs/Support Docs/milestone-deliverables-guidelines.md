@@ -29,9 +29,7 @@ Since all code developed under a grant must be open source, it is necessary to p
 If your delivery comprises multiple repositories, make sure to include the license in each of them.
 
 :::danger
-
 You should also verify that the code you submit doesn't violate any other licenses, as a failure to comply with the license of reused code will result in an immediate rejection of the milestone and termination of the grant.
-
 :::
 
 ### Documentation
@@ -95,9 +93,7 @@ Each item in the list should include a link to the deliverable itself, e.g.:
 - a link to a specific commit, pull request or issue in a public repository.
 
 :::tip
-
 **Please highlight anything that deviates from the contract** and include further information that you think is relevant to the deliverable, either alongside the appropriate deliverable or under [Additional Information](#additional-information).
-
 :::
 
 | Number | Deliverable | Link | Notes |
