@@ -4,7 +4,7 @@
 
 - **Team Name:** Xcavate
 - **Payment Address:** 5E28NSFGwYB9C39bYdRAQ79UKRsM6shxkJr3LG4hehycwfJc
-- **Total Costs:** $10000 USDT (Polkadot - Statemint)
+- **Total Costs:** $8500 USDT (Polkadot - Statemint)
 - **Level:** 1
 
 ## Project Overview
@@ -143,13 +143,13 @@ We have been taking time to play with Substrate to form initial local nodes. We 
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  4
-- **Total Costs:** $10000 USDT
+- **Total Costs:** $8500 USDT
 
 ### Milestone 1 — Initial POC of lending protocol
 
 - **Estimated Duration:** 2 months
 - **FTE:**  4
-- **Costs:** $10000 USDT
+- **Costs:** $8500 USDT
 
 We will build on the excellent work we have achieved developing the Real Estate NFT marketplace for the hackerearth.com hackerthon. 
 
@@ -160,16 +160,16 @@ In the first milestone, the features for the PoC will be implemented and tested 
 | 0a.	    | License	                            |  Apache 2.0 |
 | 0b.	    | Documentation                     |  The documentation will be provided to show the whole architecture of the Xcavate Network. |
 | 0c.	    | Testing and Testing Guide            |  The testing guide will be provided to test each component. |
-| 0d. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 0d. | VS Code Instructions | We have struggled to create docker images and a container, which allows interaction between the frontend, backend & node however VS code is working as expected. |
 | 0e. | Tutorial | We will write a tutorial about how to use Xcavate Network. |
 | 0f. | Article | We will write an article published on media channels. |
-| 1	    | Xcavate Node Repo             	    |  We will create a customized chain node with Substrate 2.0 Framework. |
-| 2     | Xcavate Loan App Repo               | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
+| 1    | Xcavate Node Repo   |  We will create a customized chain node with Substrate 2.0 Framework. |
+| 2   | Xcavate Loan App Repo   | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
 | 3. | Loan management pallet | * Manage loan application ** Land details' ** Registration * Manage loan interest percentage ** Based on land and experience * Approve/Reject request |
 | 4. | Staking pallet | * User can stake native token * Calculate APR * Distribute payouts |
-| 5. | Verification pallet | * Verification of user identity * Manage users identity * Manage loan request |
-| 6. | DAO | The PoC will have a basic DAO structure that will be created using the OpenGov pallet to ensure rewards can be given to the real estate build stage checkers (As we progress in to the MVP stage this will be expanded to form a full governance structure). |
-| 7. | Decentralized Developer Loan dApp / Front End Repo | It's a webpage working with Xcavate Network, it's implemented based on polkadot.js as planned. |
+| 5. | Verification pallet | * We need to remove this deliverable because it is reliant on the Acurast Oracle Pallet which is struggling due to Substrate dependency issues |
+| 6. | DAO | The PoC will have a basic voting structure to ensure rewards can be given to the real estate build stage checkers (As we progress in to the MVP stage this will be expanded to form a full governance structure). |
+| 7. | Decentralized Developer Loan dApp / Front End Repo | We are struggling to interact through the frontend dApp so wish to remove this as a deliverable, however interacting through polkadot.js is fine. |
 
 ## Future Plans
 
