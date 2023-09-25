@@ -374,19 +374,38 @@ The primary objective of this milestone is to structure extracted data and devel
 
 ## Future Plans
 
-
-**how you intend to use, enhance, promote and support your project in the short term, and**
-
 The next stages in our roadmap, which are not in the scope of this application grant are:
 
-Stage 3: Controlled Natural Language (CNL) Engine
+**Stage 3: Controlled Natural Language (CNL) Engine**
+
 In this stage, the roadmap foresees a controlled natural language (CNL) specification to leverage the POnto ontology. CNL is a simplified form of natural language designed to be easily understood by both humans and machines. The CNL specification will allow users to interact with the Polkadot Analytics Platform using natural language queries, making the platform more user-friendly and accessible.
 
-Stage 4: Query Engine
+- Current Estimated Duration: 2 months
+
+- FTE: 0.91
+
+- Costs: 20,000 USD
+
+**Stage 4: Query Engine**
+
 This stage will focus on the development of a query engine to support the execution of CNL-based queries on the knowledge base. The query engine will be responsible for processing user queries, retrieving relevant data from the knowledge base, and providing users with query results.
 
-Stage 5: Visualization
+- Current Estimated Duration: 6 weeks
+
+- FTE: 0.91
+
+- Costs: 15,000 USD
+
+
+**Stage 5: Visualization**
+
 The final stage focuses on delivering a UI where users will be able to integrate multiple informative artifacts to compose their custom dashboards, facilitating personalized data exploration and analysis.
+
+- Current Estimated Duration: 2 months
+
+- FTE: 0.91
+
+- Costs: 20,000 USD
 
 The Polkadot Analytics Platform will be an analytics tool. While it will provide valuable data insights, it is not designed to be used as a trading tool and will not offer financial advice or recommend investment strategies.
 
