@@ -103,10 +103,12 @@ GitHub Accounts:
 
 ## Development Status :open_book:
 
-*If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:*
+Our main GitHub Repository were the majority of the work for this grant is going to be submitted is going to be done in the repository [**github.com/LasticXYZ/LasticUI**](https://github.com/LasticXYZ/LasticUI). This code features starter code forked as a template from [substrate frontend template](https://github.com/substrate-developer-hub/substrate-front-end-template).
 
-GitHub Repo:
-- https://github.com/LasticXYZ/LasticUI
+The frontend will be developed by spinning up substrate locally and by connecting the frontend to it. The instructions on how to do this are already available in the [README.md file]().
+
+[Lastic](https://github.com/LasticXYZ/Lastic) features a private repository. This repository will be made public. Here are featured internal discussions as well as notes for creating the whitepaper.
+
 
 Blogs:
 - https://medium.com/lastic-marketplace/blog1
@@ -131,7 +133,6 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
-
 ### Milestone 1 - Creating a Frontend with basic functionality for the coretime chain
 
 - **Estimated duration:** 1 month
@@ -142,45 +143,20 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a **tutorial/article** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article Publishing | We will publish 3 **articles**: 1) Introduction to Gavin's talk about the coretime chain with a link to YouTube. 2) Our thought process on starting the coretime. 3) ... (TBD) |
-| 1. | Basic Interaction Creation | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. |
-| 2. | User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
-| 3. | UX Figma Design | Creating and finishing the UX design of the marketplace (without professional designer) |
-
- - creating a starting point for nice visual diagrams
- - whitepaper creation
- - multiple articles
-
-![Instantanious coretime sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/f8ecbca8-1b8a-4214-a0a0-5281e880c4de)
-![Primary market bulk sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/d1b65609-c763-449d-bdba-e2c92f0387ec)
-
-### Future work - Creating a Frontend quering the blockchain
-
-- **When we can start working on it**: When Parity publishes their branch to test-net and when there will be some data so we can start testing real functionality, approx time: 4 months + when submission to mainnet 3-6 months after test net
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 3. | Subquery Storage | We will work on querying the storage with Subquery. |
-
- - all this functionality will be done with running up a local devnet
- - So some questions: Can we test populate the local devnet with some data?
- - It would be nice to do a pricing simulation, can this be one of the milestones in the UI, or is this a separate issue?
- - Technical documentation?
- - Maybe create some fake data so people can play around with it.
- - testing
- - changing the subquery storage to work with the provided testnet
- - when time comes publish the features on main net
-
-![Secondary market bulk sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/19b1cff8-ac16-4cea-81e5-385a29ee46f6)
-
+| **0e.** | Article Publishing | We will publish 3 **articles**: 1) Our view on Polkadot 2.0 - A summary of Dr. Gavin's Wood talk at Polkadot Decoded 2) Our thought process on starting the coretime. 3)  |
+| 1. | Whitepaper creation | We will create a whitepaper for Lastic |
+| 2a. | Design - User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
+| 2b. | Design - UX Figma Design | Creating and finishing the UX design of the marketplace (without professional designer) |
+| 3a. | Basic Interaction Creation | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. |
+| 3b. | Implementing tge | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. |
 
 ---
 
-### Look Up Section
+### Expansion of 3.a - Basic Interaction Creation
 
 #### UI extrinsic functions:
 
@@ -228,24 +204,14 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | InstaPoolIo<T> | Record of Coretime entering or leaving the Instantaneous Coretime Pool. |
 | InstaPoolHistory<T> | Total InstaPool rewards for each Timeslice and the number of core parts which contributed. |
 
----
 
+### Expansion of 3.b - Basic Interaction Creation
 
-### expose events
-needs research
+This mockup/UI design features the design of the page Instantanious Coretime sales.
+![Instantanious coretime sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/f8ecbca8-1b8a-4214-a0a0-5281e880c4de)
 
-### creating a nice user flow diagram UX
-thinking about what functionality comes first user interaction diagram
-
-show an early sketch/ how it looks
-
-### connect with subsquid api
-since coretime chain is not on test net this will be done locally
-
-### testing
-
-
----
+This mockup/UI design features the design of the page primary market for the Bulk sales.
+![Primary market bulk sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/d1b65609-c763-449d-bdba-e2c92f0387ec)
 
 
 ## Future Plans
@@ -255,13 +221,33 @@ Please include here
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
+### Future work - Creating a Frontend quering the blockchain
+
+- **When we can start working on it**: When Parity publishes their branch to test-net and when there will be some data so we can start testing real functionality, approx time: 4 months + when submission to mainnet 3-6 months after test net
+
+ - quering the storage with Subquery
+ - pricing simulation
+ - making the thing work with testnet and then devnet,
+ - creating a secondary market place 
+
+ - Maybe create some fake data so people can play around with it.
+ - testing
+ - changing the subquery storage to work with the provided testnet
+ - when time comes publish the features on main net
+
+![Secondary market bulk sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/19b1cff8-ac16-4cea-81e5-385a29ee46f6)
+
+
+### connect with subsquid api
+since coretime chain is not on test net this will be done locally
+
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** 
 
 - Phil's experience working at Parity informed him of the Web3 Grants program.
+- Aurora has learned about the Web3 Grants program during her time working at KodaDot.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
+Additional information:
 - We have received no financial contributions to Lastic, nor have applied for any other grants
