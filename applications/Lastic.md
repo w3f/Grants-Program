@@ -135,10 +135,10 @@ Blogs:
 | **0d.** | Error logging | In the event of an error, we will ensure the UI writes the error details to an event viewer or log file for later review. |
 | **0e.** | Article Publishing | We will publish 3 **articles**: 1) Our view on Polkadot 2.0 - A summary of Dr. Gavin's Wood talk at Polkadot Decoded 2) Our story on starting the coretime marketplace. 3) How Agile Coretime works and what it provides 4.) Further Coretime developments based on Gavin's talk at Protocol Berg (Corejam, Coreplay) 5. The Lastic Roadmap, including our future long-term vision of Lastic |
 | 1. | Whitepaper creation | We will create a whitepaper for Lastic |
-| 2a. | Design - User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
-| 2b. | Design - UX Figma Design | Creating and finishing the UX design of the marketplace (without professional designer) |
-| 3a. | Basic Interaction Creation | We will create basic interactions exposing interactions with the broker pallet, including UI extrinsic functions, UI constants, and UI storage to query. Look at expansion 3.a |
-| 3b. | Frontend development - Basic mock up frontend implementation with fake data | Look at expansion 3.b |
+| 2a. | Design - User Flow Diagram | We will design and create a basic user flow detailing how users will interact with the platform. This diagram will follow a user first principle and will incorporate the design principles as described in RFC for the coretime chain and broker pallet. The scope of this user flow incorporates only the instantaneous coretime sales and the primary market coretime sales (secondary market is not included). The deliverables for 2a. will be able to be viewed as a link in the README.md file of the LasticUI repository. |
+| 2b. | Design - UI Figma Design | We will create the UI design in Figma of the coretime chain (this step will be done without a professional designer). The design will feature a creation of the frontend for Instananious Coretime sales and the primary market coretime sales (secondary market is not included). This mock ups for this step are already partially done and can be viewed as an expansion of 3.b section. The deliverables for 2.b will be able to be viewed as a link in the README.md file of the LasticUI repository. |
+| 3a. | Frontend Development - Linking Basic Interaction | We will expose basic interactions that are featured within the broker pallet. A list of all possible interactable features of the broker pallet can be viewed in the expansion of 3.a. The deliverables of 3. are exposing all UI extrinsic functions listed, UI constants, and some of the UI storage to query. For further information look at expansion 3.a |
+| 3b. | Frontend development - Basic mock up frontend implementation | Look at expansion 3.b |
 
 ---
 
