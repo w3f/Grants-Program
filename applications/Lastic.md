@@ -10,21 +10,17 @@
 ### Overview
 
 - Lastic is a blockspace marketplace built on Polkadot.
-- The core idea behind Lastic is to make Polkadot blockspace more accessible and cost-effective for its users. We aim to create a marketplace for buying and selling 'coretime,' which will in turn stabilize pricing for offer user-friendly payment models, and even introduce subscription or futures options for projects. Imagine a world where launching or extending a project on Polkadot is as simple as flipping a switch - that's what Lastic strives for.
+- The core idea behind Lastic is to make Polkadot blockspace more accessible and cost-effective for its users. We aim to create a marketplace for buying and selling 'Coretime,' which will in turn stabilize pricing for offer user-friendly payment models, and even introduce subscription or futures options for projects. Imagine a world where launching or extending a project on Polkadot is as simple as flipping a switch - that's what Lastic strives for.
 - We believe the coretime model is positioning Polkadot as a leader of providing quality and modular blockspace, and in order to provide a blockspace marketplace for *any* application, Polkadot's technology is best equipped for this inevitable future. This is why we're choosing to build on Polkadot.
 
 ### Project Details
 
 The complete vision of Lastic is a broad and intensive endeavor that involves building on technology that is not yet complete nor wholly available. Our experience in this ecosystem has shown that embarking on such a journey would likely involve costly investments of time and code in technologies are likely to change and make our code irrelevant for the future of coretime and Polkadot as a whole. **We believe, for the scope of this Web3 Foundation grant request, that "thinking with the end in mind" is a prudent guiding principle that also has pragmatic utility and therefore would be creating a UI for the system Coretime Parachain.**
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+For the scope of this grant: 
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
 - PoC/MVP: A website where users can view the current state of coretime on Polkadot
-- What your project is _not_ or will _not_ provide or implement
+- What Lastic is _not_ or will _not_ provide or implement in the scope of this grant
   - The ability for Polkadot users to manipulate cores, for example, by slicing them up
   - The ability to buy or sell coretime on a secondary market like what Lastic intends to provide long-term
 
@@ -32,7 +28,7 @@ We expect the teams to already have a solid idea about your project's expected f
 ### Ecosystem Fit
 
 - Lastic fits into the ecosystem by providing users of coretime with an interface to evaluate the current state of cores available, cores purchased/owned, coretime sales opportunities, task assignments, regions created, regions in the instantaneous coretime pool, purchases of instantaneous coretime.
-- Target audience: parachain teams, dapp developers, collators and validators, coretime providers, polkadot analysts and analytics providers, mev actors, dot holders
+- Target audience: parachain teams, dapp developers, smart contract developers, collators and validators, coretime providers, polkadot analysts and analytics providers, mev actors, dot holders
 - The Lastic UI will meet the needs of users who want a user-friendly interface for understanding the current state of coretime on Polkadot. Lastic as a whole aims to address the need for a secondary marketplace for blockspace on polkadot by allowing teams with the need for more blockspace to purchase it, as well as teams with a surplus of blockspace to sell it.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - No.
@@ -41,7 +37,7 @@ We expect the teams to already have a solid idea about your project's expected f
 
 ### Team members
 
-- Phil Lucsok
+- Phil Lucsok (aka Asynchronous Phil)
 - Aurora Poppyseed
 
 ### Contact
@@ -71,6 +67,8 @@ He led the communications team for the first two years, growing the team from 1 
 
 Phil currently works as a freelancer but is focused on leading [Missing Link](https://www.missing-link.io/)'s marketing, communications and governance strategies. He is also an active participant in Polkadot governance discussions on the Kusamarian and in ChaosDAO.
 
+*Note: Phil Lucsok has not previously applied for a grant at the Web3 Foundation.*
+
 #### **Aurora Poppyseed**:
 Aurora's journey in the technological sphere stands out for her innovative approach and unwavering determination. With a foundation in Physics and Electrical Engineering, she transitioned into roles as varied as a Solutions Architect, focusing on electronics and low-level programming, to a Frontend Developer with a commitment to clean code and scalable frontend architectures. 
 
@@ -82,7 +80,7 @@ In the realm of community engagement and organization, Aurora co-organized the [
 
 Now a freelance blockchain developer, Aurora champions women's representation in Polkadot and ardently supports community-driven blockchain initiatives.
 
-*To note, Aurora Poppyseed has not previously applied for a grant at the Web3 Foundation.*
+*Note: Aurora Poppyseed has not previously applied for a grant at the Web3 Foundation.*
 
 ---
 
@@ -100,7 +98,6 @@ GitHub Accounts:
 - https://www.linkedin.com/in/philiplucsok
 - https://www.linkedin.com/in/auroramakovac
 
-
 ## Development Status :open_book:
 
 Our main GitHub Repository were the majority of the work for this grant is going to be submitted is going to be done in the repository [**github.com/LasticXYZ/LasticUI**](https://github.com/LasticXYZ/LasticUI). This code features starter code forked as a template from [substrate frontend template](https://github.com/substrate-developer-hub/substrate-front-end-template).
@@ -111,32 +108,21 @@ The frontend will be developed by spinning up substrate locally and by connectin
 
 
 Blogs:
-- https://medium.com/lastic-marketplace/blog1
-- https://medium.com/lastic-marketplace/blog2
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+- https://medium.com/lastic-marketplace/the-genesis-of-lastic-a-coretime-marketplace-for-polkadot-9dc851fa365f
+- https://medium.com/lastic-marketplace/polkadot-2-0-a-new-era-of-decentralization-d5626a6e63e5
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Estimated duration:** 1 month
+- **FTE:** 2
+- **Costs:** 10,000 USD
 
 ### Milestone 1 - Creating a Frontend with basic functionality for the coretime chain
 
 - **Estimated duration:** 1 month
-- **FTE:** 1.5
+- **FTE:** 2
 - **Costs:** 10,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
@@ -144,10 +130,10 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a **tutorial/article** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **0e.** | Article Publishing | We will publish 3 **articles**: 1) Our view on Polkadot 2.0 - A summary of Dr. Gavin's Wood talk at Polkadot Decoded 2) Our thought process on starting the coretime. 3)  |
+| **0b.** | Documentation | WWe will provide both inline documentation of the code and a complete wiki documentation of the UI that explains how a user can (for example) interact with the UI and understand the terms such as “coretime” and “assignments” that are critical to understanding the page. The wiki will contain near-exhaustive details of coretime and its components, and how the core functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive UI testing framework to ensure functionality and robustness. UI Testing involves making sure all functionality works as intended, and from different browsers, OSs and platforms. On MacOS, Linux, and Windows, we will test browsers including, but not limited to: Chrome, Firefox, Safari, Edge, Brave and Safari for iOS and Chrome on Android. We will test for consistency across platforms and browsers, ensuring all navigational elements work, all graphics are rendered correctly, all data is updated in a timely fashion, for mobile responsiveness, and that there are no unintended results. |
+| **0d.** | Error logging | In the event of an error, we will ensure the UI writes the error details to an event viewer or log file for later review. |
+| **0e.** | Article Publishing | We will publish 3 **articles**: 1) Our view on Polkadot 2.0 - A summary of Dr. Gavin's Wood talk at Polkadot Decoded 2) Our story on starting the coretime marketplace. 3) How Agile Coretime works and what it provides 4.) Further Coretime developments based on Gavin's talk at Protocol Berg (Corejam, Coreplay) 5. The Lastic Roadmap, including our future long-term vision of Lastic |
 | 1. | Whitepaper creation | We will create a whitepaper for Lastic |
 | 2a. | Design - User Flow | We will design and create a basic user flow detailing how users will interact with the platform. |
 | 2b. | Design - UX Figma Design | Creating and finishing the UX design of the marketplace (without professional designer) |
@@ -213,17 +199,23 @@ This mockup/UI design features the design of the page Instantanious Coretime sal
 This mockup/UI design features the design of the page primary market for the Bulk sales.
 ![Primary market bulk sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/d1b65609-c763-449d-bdba-e2c92f0387ec)
 
+**** We will create a frontend for allowing users to see the current state of Coretime on Polkadot, including, but not limited to: Number of cores available, Number of cores assigned, Number of legacy cores assigned, Number of blocks in the Instantaneous Pool, Number of Cores parititioned, etc. Note: this will be made using dummy data. |
+
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+- Lastic aims to become a secondary marketplace for blockspace on Polkadot using its new Agile Coretime model
+- We intend to first build out a UI for the community to gather, assess, and analyze the state of Coretime including its availability and sales
+- After Agile Coretime is enabled on Rococo, we will plug in our UI so that it can become useful to the community right away
+- Lastic will support Rococo, Kusama and Polkadot
+- Users will be able to purchase coretime in the 'default' methods of bulk and instantaneous via Lastic
+- Users will be able to use Lastic as a way to view, paritition, resell, purchase, and trade coretime in various ways
+- The long-term vision for Lastic is that it will be the one place for ANY user to buy and sell blockspace on Polkadot, regardless of the state machine or smart contract or application they have.
+- Lastic aims to support features for the upcoming roadmap laid out in the RFCs, for example Coreplay and Corejam
 
 ### Future work - Creating a Frontend quering the blockchain
 
-- **When we can start working on it**: When Parity publishes their branch to test-net and when there will be some data so we can start testing real functionality, approx time: 4 months + when submission to mainnet 3-6 months after test net
+- **When we can start working on it**: When W3F publishes their branch to the Rococo testnet and when there will be some data so we can start testing real functionality, approx time: 4 months + when submission to mainnet 3-6 months after testnet
 
  - quering the storage with Subquery
  - pricing simulation
@@ -237,10 +229,8 @@ Please include here
 
 ![Secondary market bulk sales](https://github.com/LasticXYZ/Grants-Program/assets/30662672/19b1cff8-ac16-4cea-81e5-385a29ee46f6)
 
-
 ### connect with subsquid api
-since coretime chain is not on test net this will be done locally
-
+Since the Coretime Chain is not on testnet this will be done locally
 
 ## Additional Information :heavy_plus_sign:
 
