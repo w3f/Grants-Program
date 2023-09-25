@@ -24,7 +24,7 @@ Stage 2: To take this a step further, a GitHub action could be integrated to run
 * **FTE:**  1
 * **Costs:** ~ 10,000 DAI
 
-For each library listed on [substrate.dev](https://substrate.dev/docs/en/knowledgebase/advanced/codec#implementations):
+For each library listed on [substrate.dev](https://docs.substrate.io/reference/scale-codec/):
 * Create a PR, providing a FFI to Rust's reference implementation.
 * Ensure feature completeness, by ensuring there are comprehensive unit tests for each data type.
 
