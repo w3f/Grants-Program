@@ -24,12 +24,11 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | RFP | Last Updated |
 | :-- | :----------: |
 | [anti-collusion_infrastructure.md](RFPs/Open/anti-collusion_infrastructure.md) | 21.09.2023 |
-| [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 06.01.2023 |
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 07.10.2022 |
-| [ISO_20022.md](RFPs/Open/ISO_20022.md) | 31.05.2022 |
+| [ISO_20022.md](RFPs/Open/ISO_20022.md) | 20.09.2023 |
 | [parachain_validation_conformance_testing.md](RFPs/Open/parachain_validation_conformance_testing.md) | 18.01.2023 |  
 | [polkadot-protocol_conformance_tests.md](RFPs/Open/polkadot-protocol_conformance_tests.md) | 21.09.2023 |
-| [sub-consensus.md](RFPs/Open/sub-consensus.md) | 23.11.2021 |
+| [sub-consensus.md](RFPs/Open/sub-consensus.md) | 23.02.2022 |
 | [uptane-for-substrate-design-and-scope.md](RFPs/Open/uptane-for-substrate-design-and-scope.md) | 04.03.2023 |
 | [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 07.01.2023 |
 | [xcm-tool.md](RFPs/Open/xcm-tool.md) | 21.09.2023 |
@@ -44,30 +43,30 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [alternative-polkadot-js-api-console.md](RFPs/Under%20Development/alternative-polkadot-js-api-console.md) | 19.05.2023 |
 | [analysis-website-and-data-platform.md](RFPs/Under%20Development/analysis-website-and-data-platform.md) | 21.09.2023 |
 | [data_analysis_tools.md](RFPs/Under%20Development/data_analysis_tools.md) | 21.09.2023 |  
-| [decentralized-security-marketplace.md](RFPs/Under%20Development/decentralized-security-marketplace.md) | 02.06.2023 |  
-| [grant_management_webapp.md](RFPs/Under%20Development/grant_management_webapp.md) | 06.06.2023 |
-| [identity-directory.md](RFPs/Under%20Development/identity-directory.md) | 30.05.2022 |
-| [IDE_for_ink_Smart_Contracts.md](RFPs/Under%20Development/IDE_for_ink_Smart_Contracts.md) | 05.04.2023 |
-| [implementation-benchmarking.md](RFPs/Under%20Development/implementation-benchmarking.md) | 06.06.2023 |
-| [ink!_smart_contract_block_explorer.md](RFPs/Under%20Development/ink_smart_contract_block_explorer.md) | 05.07.2021 |
-| [ISO_8583.md](RFPs/Under%20Development/ISO_8583.md) | 31.05.2022 |
+| [decentralized-security-marketplace.md](RFPs/Under%20Development/decentralized-security-marketplace.md) | 25.09.2023 |  
+| [grant_management_webapp.md](RFPs/Under%20Development/grant_management_webapp.md) | 25.09.2023 |
+| [identity-directory.md](RFPs/Under%20Development/identity-directory.md) | 20.09.2023 |
+| [IDE_for_ink_Smart_Contracts.md](RFPs/Under%20Development/IDE_for_ink_Smart_Contracts.md) | 20.09.2023 |
+| [implementation-benchmarking.md](RFPs/Under%20Development/implementation-benchmarking.md) | 20.09.2023 |
+| [ink!_smart_contract_block_explorer.md](RFPs/Under%20Development/ink_smart_contract_block_explorer.md) | 20.09.2023 |
+| [ISO_8583.md](RFPs/Under%20Development/ISO_8583.md) | 20.09.2023 |
 | [move_smart_contract_pallet.md](RFPs/Under%20Development/move_smart_contract_pallet.md) | 02.08.2023 |
 | [multi-chain-block-explorer.md](RFPs/Under%20Development/multi-chain-block-explorer.md) | 23.11.2021 |
 | [privacy-enhancement-polkadot-extension.md](RFPs/Under%20Development/privacy-enhancement-polkadot-extension.md) | 27.05.22 |
 | [raft-validators.md](RFPs/Under%20Development/raft-validators.md) | 23.05.2023 |
 | [scale-codec-comparator.md](RFPs/Under%20Development/scale-codec-comparator.md) | 30.05.2022 |
-| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Under%20Development/Static-Analysis-for-Runtime-Pallets.md) | 05.07.2023 |  
-| [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 07.12.2022 |
+| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Under%20Development/Static-Analysis-for-Runtime-Pallets.md) | 05.07.2023 |
 
 </details>
 
 
-<details><summary><b>🔴 Closed:</b> This RFP is either closed, on hold, or no longer useful. However, if it’s implemented and not maintained, we would be interested in signing a <a href="./maintenance.md">maintenance grant</a>.</summary>
+<details><summary><b>🔴 Closed:</b> This RFP is either closed, on hold, or no longer useful. However, if it’s implemented and not maintained, we might be interested in signing a <a href="./maintenance.md">maintenance grant</a>.</summary>
 
 | RFP | Last Updated |
 | :-- | :----------: |
 | [a-and-v-topology.md](RFPs/Closed/a-and-v-topology.md) | 04.09.2023 |
 | [appi.md](RFPs/Closed/appi.md) | 20.07.2021 |
+| [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 06.01.2023 |
 | [candle-auction.md](RFPs/Closed/candle-auction.md) | 02.02.2022 |  
 | [crowdloan_front_end_template.md](RFPs/Closed/crowdloan_front_end_template.md) | 25.04.2023 |  
 | [epassport-zk-validation.md](RFPs/Closed/epassport-zk-validation.md) | 21.03.2023 |
@@ -79,6 +78,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [social-recovery-wallet.md](RFPs/Closed/social-recovery-wallet.md) | 03.03.2023 |
 | [staking-rewards-collector-front-end.md](RFPs/Closed/staking-rewards-collector-front-end.md) | 20.07.2021 |  
 | [uncollateralized-stablecoin-research.md](RFPs/Closed/uncollateralized-stablecoin-research.md) | 01.01.2023 |
+| [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 25.09.2023 |
 | [validator-setup-maintenance.md](RFPs/Closed/validator-setup-maintenance.md) | 24.08.2023 |
 | [wallet-aggregator-library.md](RFPs/Closed/wallet-aggregator-library.md) | 09.03.2023 |
 
