@@ -57,7 +57,8 @@ We expect the teams to already have a solid idea about your project's expected f
 
 ### Team's experience
 
-**Phil Lucsok**: Phil began his career in web3 as a marketing and communications manager for a Bitcoin startup in Berlin in 2013 called [BitcoinsBerlin](https://web.archive.org/web/20220707055043/https://bitcoinsberlin.com/). There, he created marketing campaigns for multiple products including:
+#### **Phil Lucsok**: 
+Phil began his career in web3 as a marketing and communications manager for a Bitcoin startup in Berlin in 2013 called [BitcoinsBerlin](https://web.archive.org/web/20220707055043/https://bitcoinsberlin.com/). There, he created marketing campaigns for multiple products including:
 - [All4BTC](https://all4btc.com/) - a one-stop shop for purchasing anything on Amazon or eBay with bitcoin
 - Bills4BTC (later [Bitwala](https://bitwala.com/), Nuri) - a SEPA-compliant payment method for holders of Bitcoin for regular payments
 - e4BTC - an electronics shop supporting purchases in Bitcoin
@@ -70,11 +71,20 @@ He led the communications team for the first two years, growing the team from 1 
 
 Phil currently works as a freelancer but is focused on leading [Missing Link](https://www.missing-link.io/)'s marketing, communications and governance strategies. He is also an active participant in Polkadot governance discussions on the Kusamarian and in ChaosDAO.
 
-**Aurora Poppyseed**:
+#### **Aurora Poppyseed**:
+Aurora's journey in the technological sphere stands out for her innovative approach and unwavering determination. With a foundation in Physics and Electrical Engineering, she transitioned into roles as varied as a Solutions Architect, focusing on electronics and low-level programming, to a Frontend Developer with a commitment to clean code and scalable frontend architectures. 
 
-*Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.*
+At **Instrumentation Technologies** in Nova Gorica, Slovenia, she led the design of intuitive GUIs for advanced measurement devices in particle accelerators and streamlined future development with a standardized Vue CLI-based web GUI framework. Her contribution as a Frontend Developer at **Block Analitica** involved engineering the frontend framework for the **Ajna project** initiated by the **MakerDAO team**, ensuring clean coding practices and an organized project structure for future open-source contributions.
 
-*If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.*
+Aurora attended and graduated from the **Polkadot Blockchain Academy** at UC Berkeley (engineering track), learning about the fundamentals of blockchain from leaders in this domain. Further enhancing her mark in the blockchain domain, Aurora offered her expertise to **KodaDot**, a prominent multi-chain NFT marketplace, developing developer documentation and crafting both technical and non-technical articles to amplify the platform's presence.
+
+In the realm of community engagement and organization, Aurora co-organized the **Polkadot Bled mini-conference** and more recently, orchestrated a breakfast as a side event at sub0 aimed at **women in Polkadot** in collaboration with **H.E.R. Dao**. This gathering aimed to empower and bring together women leaders and enthusiasts in the Polkadot ecosystem. Furthermore, she's a staunch supporter of **SubWork**, a tech-centric coworking hub in the scenic Bled region and one of the pioneer **Polkadot hubs**.
+
+Now a freelance blockchain developer, Aurora champions women's representation in Polkadot and ardently supports community-driven blockchain initiatives.
+
+*To note, Aurora Poppyseed has not previously applied for a grant at the Web3 Foundation.*
+
+---
 
 ### Team Code Repos
 
