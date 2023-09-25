@@ -97,38 +97,39 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Milestone 1: Initial Setup and Smart Contract Development
 
-**Duration**: 2 months
-**FTE**: 1
-**Costs**: 15,000 USD
+- **Estimated duration:** 2 months
+- **FTE:** 2
+- **Costs:** 15,000 USD
 
-**Tasks**:
-- Setting up the development environment for Dexel.
-- Development and initial deployment of the User Management Contract (UMC) on Polkadot testnet.
-- Development of the Content Management Contract (CMC) with features for saving, categorizing, and reading content.
-- Initial frontend interface development using React and Next.js, integrating with the developed smart contracts.
-
-**Deliverables**:
-- Fully functional development environment.
-- Initial versions of UMC and CMC deployed on a testnet.
-- Basic frontend interface with smart contract integration and Polkadot wallet connectivity.
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | Both **inline documentation** of the code and a basic **tutorial** explaining how users can interact with Dexel, save content, and customize their reading environment will be provided. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. A guide will be provided to detail how to run these tests. |
+| **0d.** | Docker | A Dockerfile will be provided to test all the functionality delivered in this milestone. |
+| 1. | Development Environment | Setting up the development environment for Dexel. |
+| 2. | User Management Contract (UMC) | Development and initial deployment of the UMC on Polkadot testnet. |
+| 3. | Content Management Contract (CMC) | Development of the CMC with features for saving, categorizing, and reading content. |
+| 4. | Frontend Interface | Initial frontend interface development using React and Next.js, integrating with the developed smart contracts. |
 
 ### Milestone 2: Frontend Development, Integration, and Testing
 
-**Duration**: 2 months
-**FTE**: 1
-**Costs**: 15,000 USD
+- **Estimated duration:** 2 months
+- **FTE:** 2
+- **Costs:** 15,000 USD
 
-**Tasks**:
-- Comprehensive frontend development, emphasizing user experience, customization features, and content management.
-- Integration of the frontend with the smart contracts, ensuring seamless user interactions.
-- Development of user personalization features, allowing adjustments to reading environments.
-- Comprehensive testing of the entire platform, including smart contract interactions, frontend functionalities, and user workflows.
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will extend the documentation to cover new features and updates. A detailed user guide on how to seamlessly interact with the platform, manage content, and customize the reading experience will also be provided. |
+| **0c.** | Testing and Testing Guide | The second phase will involve rigorous testing of the entire platform. We will add more unit tests, and integration tests will ensure the frontend and smart contracts work in tandem. A guide detailing the extended test scenarios will be provided. |
+| **0d.** | Docker | An updated Dockerfile will be provided to test the full functionality of Dexel, including the new features and improvements. |
+| **0e.** | Article | At the end of this milestone, we will publish an article detailing the journey of Dexel, the challenges faced, and how it stands out in the decentralized ecosystem. |
+| 5. | Comprehensive Frontend Development | A complete frontend development ensuring a seamless user experience, with features like content customization and management. |
+| 6. | Frontend and Smart Contract Integration | Ensuring that the frontend perfectly interacts with the smart contracts, providing users with real-time feedback and updates. |
+| 7. | User Personalization Features | Development of features that allow users to adjust their reading environments, ensuring a personalized reading experience. |
+| 8. | Platform Testing | Comprehensive testing of the platform to ensure all features work as expected, and the platform is ready for launch. |
 
-**Deliverables**:
-- Fully developed and interactive frontend interface.
-- Seamless integration between the frontend and smart contracts.
-- A platform that allows users to save, categorize, and customize their reading experience.
-- Thoroughly tested Dexel platform ready for deployment.
 
 ### Smart Contract Architecture
 
