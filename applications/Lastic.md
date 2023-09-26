@@ -19,12 +19,12 @@ The complete vision of Lastic is a broad and intensive endeavor that involves bu
 This grant's goal is to create a UI within the limitations of `the broker pallet` being still in development and not deployed as a testnet yet. Concurrently, we will devise a **static mockup**, with simulated data, illustrating user interactions with the future coretime chain.
 
 Grant Objectives:
- - Construct a UI dedicated to the broker pallet.
- - Envision limited interactivity based on features presently available in the broker pallet. This is contingent on the running the pallet's local as a substrate node locally.
- - PoC/MVP: Design a platform enabling users to observe Polkadot's coretime status.
+ - Construct a UI mockup dedicated for future interactivity with the Coretime chain.
+ - Envision limited interactivity based on features presently available in the `broker pallet`. This is contingent on the running the pallet as a substrate node locally.
 
 Exclusions for this grant:
  - Real-time data derived via indexers on cores acquired historically.
+ - Interaction beyond the limited functionality within the scope of this grant.
  - Functionalities allowing Polkadot users to alter cores, such as fragmentation.
  - The capability for buying or selling coretime on secondary markets, which remains Lastic's long-term vision.
 
