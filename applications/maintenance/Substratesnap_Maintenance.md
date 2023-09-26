@@ -21,11 +21,11 @@
 
 
 - The SubstrateSnap (plugin) enables support for the Polkadot and Kusama network inside of Metamask and by doing so enables Polkadot dApps easy integration with Metamask.
-- ChainSafe believes that Snaps are vital to fostering increased adoption of web3 systems and as such consider the maitainance of the ChainSafe SubstrateSnap a strategic priority.     
+- ChainSafe believes that Snaps are vital to fostering increased adoption of web3 systems and as such consider the maintenance of the ChainSafe SubstrateSnap a strategic priority.     
 
 ### Project Details
 
-This is a maitainance proposal for a project that has already been developed. The initial development was originally funded through a [W3F grant](https://github.com/w3f/General-Grants-Program/pull/244). The project is open-source and its repository and Wiki page can be located using the following links:
+This is a maintenance proposal for a project that has already been developed. The initial development was originally funded through a [W3F grant](https://github.com/w3f/General-Grants-Program/pull/244). The project is open-source and its repository and Wiki page can be located using the following links:
 
 https://github.com/ChainSafe/metamask-snap-polkadot
 https://github.com/ChainSafe/metamask-snap-polkadot/wiki 
