@@ -124,9 +124,9 @@ Described above.
 
 ## Overview
 
-- **Total Estimated Duration:** 7 months.
+- **Total Estimated Duration:** 15 months.
 - **Full-Time Equivalent (FTE):** 4.
-- **Total Costs:** 50,000 USD.
+- **Total Costs:** 75,000 USD.
 
 ### Milestone 1 — Completed
 
