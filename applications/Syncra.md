@@ -16,7 +16,7 @@ Syncra simplifies this process. We're working on a no-code solution to create, m
 
 ![](https://i.imgur.com/Pe1Z26r.png)
 
-Transparency is inherent in blockchain technology, but many situations require privacy, especially in DAOs when it comes to tough decisions. Also in times when connecting particular wallet address to a person or entity can by relatively easy, or even required (KYC, ID verification, Identity providers). With Syncra, we want to provide a solution for confidential voting where votes are hidden by default, but everything happens on-chain. Leveraging a modular approach, we want to enhance privacy, provide an easy way for treasury management, and offer on-chain automation, ultimately providing this service for the entire Substrate ecosystem.
+Transparency is inherent in blockchain technology, but many situations require privacy, especially in DAOs when it comes to tough decisions. Also in times when connecting particular wallet address to a person or entity can be relatively easy, or even required (KYC, ID verification, Identity providers). With Syncra, we want to provide a solution for confidential voting where votes are hidden by default, but everything happens on-chain. Leveraging a modular approach, we want to enhance privacy, provide an easy way for treasury management, and offer on-chain automation, ultimately providing this service for the entire Substrate ecosystem.
 
 Having Syncra in the PolkaDOT ecosystem is a necessary piece of the puzzle. Just as Tally, Aragon, and Snapshot exist on EVM, Syncra exists on Substrate.
 
@@ -47,7 +47,7 @@ Modular-dao is a set of traits with default implementations built using [ink!](h
 
 ### How does it work?
 
-The traits with default implementations consists of:
+The traits with default implementations consist of:
 
 - **Votes** - trait that provides 3 basic methods that allow to get voting power for of an address and delegate votes. The default implementation is done with combination of PSP22 token. However, **Votes** can represent any type of the "strategy" (for example PSP34-based).
 - **Governor** - extends **Votes** and **AccessControl**. The base for the DAO. Provides proposal creation and execution functionalities.
@@ -78,7 +78,7 @@ Known drawbacks are the security concerns, related with storing private keys on 
 
 ### Data Model
 
-Syncra uses IPFS as well as MongoDB for storing additional data about DAOs, proposals, and user stats. The purpose is to minimise the data footprint on the blockchain itself, as storing data onchain is costly, and not very performant. Only the critical data is stored inside of the the DAO Smart Contract’s. 
+Syncra uses IPFS as well as MongoDB for storing additional data about DAOs, proposals, and user stats. The purpose is to minimise the data footprint on the blockchain itself, as storing data onchain is costly, and not very performant. Only the critical data is stored inside of the DAO Smart Contract’s. 
 
 DAOs, Proposals titles, and descriptions are stored on the IPFS, and then corresponding IPFS hashes are set on the DAO contract's storage. In this way, users can be sure that the data about the given DAO or Proposal won’t be modified, nor fade-away if the server ever goes down. The same applies to storing images, as we use web3 storage for image upload.
 
@@ -90,7 +90,7 @@ In the scope of this grant, several core parts will be implemented, as the exten
 
 ### MVP (Pre-Grant)
 
-The MVP of the Syncra Platform, that we are going to start with, will consist the following parts:
+The MVP of the Syncra Platform, that we are going to start with, will consist of the following parts:
 
 1. Frontend Application with the connection to Wallet, Smart Contracts, and Backend
 2. Set of Smart Contracts based on PSP22 voting strategy
@@ -145,9 +145,9 @@ Documentation will published on the [GH Pages](https://pages.github.com/)
 
 #### Risks
 
-There are several known risk that we are aware of, and will try our best to find solutions to prevent those scenarios from happening. Nevertheless, it is worth noticing those potential fields, which could have been improved for better safety.
+There are several known risks that we are aware of, and will try our best to find solutions to prevent those scenarios from happening. Nevertheless, it is worth noticing those potential fields, which could have been improved for better safety.
 
-* Storing Account Private Keys for Off-Chain Automation Relayer - since for sending transactions to the Smart Contracts, we need an actual on-chain Address, the seeds for that account, has to be stored somewhere on the Cloud. In this way, no human interaction is needed to create a signature. In our solution, we have no other option then just store those keys on one of the Cloud services. In such scenarios, there is always a risk of a data breach, that could compromise the access to the account, with the access to the funds stored for covering gas fees on it.
+* Storing Account Private Keys for Off-Chain Automation Relayer - since for sending transactions to the Smart Contracts, we need an actual on-chain Address, the seeds for that account, has to be stored somewhere on the Cloud. In this way, no human interaction is needed to create a signature. In our solution, we have no other option than just store those keys on one of the Cloud services. In such scenarios, there is always a risk of a data breach, that could compromise the access to the account, with the access to the funds stored for covering gas fees on it.
 
 * Smart Contracts Security Hole - we expect our Smart Contracts to be initially audited by [Kudelski Security](https://kudelskisecurity.com/) as a part of AlephZero grant. However, there is still a risk that something will not be caught during the audit, and we will also extend those Smart Contracts during this Project as for the purpose of creating OpenZeppelins like standards. During the development, some additional security issues may occur.
 
@@ -157,7 +157,7 @@ There are several known risk that we are aware of, and will try our best to find
 
 Given the importance of scalable, and customisable DAO infrastructure, which many protocols needs, we want to introduce Syncra. As a easy to use, modular, reliable, and customisable platform we believe, that is crucial element of the ecosystem. Leveraging undisclosed voting, treasury management, on-chain automation, and many others we might bring a real value.
 
-Our project aim to be the ecosystem standard for DAOs on Polkadot, Kusama, Aleph Zero and any Subsrate based ecosystem.
+Our project aims to be the ecosystem standard for DAOs on Polkadot, Kusama, Aleph Zero and any Substrate based ecosystem.
 
 ## Team
 
