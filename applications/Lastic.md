@@ -131,13 +131,13 @@ Our secondary [Lastic Repository](https://github.com/LasticXYZ/Lastic) is curren
 
 - **Estimated duration:** 1 month
 - **FTE:** 2
-- **Costs:** 10,000 USD
+- **Total Costs:** 10000 USD
 
 ### Milestone 1 - Creating a Frontend with basic functionality for the coretime chain
 
 - **Estimated duration:** 1 month
 - **FTE:** 2
-- **Costs:** 10,000 USD
+- **Costs:** 10000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
@@ -203,7 +203,7 @@ _Note: Not all storage to query listed here will be implented in the scope of th
 | Workload<T> | The current workload of each core. This gets updated with workplan as timeslices pass. |
 | InstaPoolContribution<T> | Record of a single contribution to the Instantaneous Coretime Pool. |
 | InstaPoolIo<T> | Record of Coretime entering or leaving the Instantaneous Coretime Pool. |
-| InstaPoolHistory<T> | Total InstaPool rewards for each Timeslice and the number of core parts which contributed. |
+| InstaPoolHistory<T> |  InstaPool rewards for each Timeslice and the number of core parts which contributed. |
 
 
 ### Expansion of 3.b - Basic Interaction Creation
