@@ -29,7 +29,7 @@ Application in its current alpha version provides the following features:
 
 **This application is to fund the building of the first major version of Chainviz**, with the following features/visualizations:
 
-- Complete rebuild of the the existing functionality with improved UI/UX and WebGL models and animations
+- Complete rebuild of the existing functionality with improved UI/UX and WebGL models and animations
 - Additional support for Polkadot
 - New visualizations
   - Parachains
@@ -290,7 +290,7 @@ We have successfully [delivered](https://github.com/w3f/Grant-Milestone-Delivery
 
 **Awards Received**
 
-Some of the recent design awards that the design team have received:
+Some of the recent design awards that the design team has received:
 
 1. CSS Design awards ([link](https://www.cssdesignawards.com/sites/klad-syndicate/41871/))
 2. Awwwards ([link](https://www.awwwards.com/Klad/))
