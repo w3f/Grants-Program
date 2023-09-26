@@ -20,7 +20,7 @@ Depends on Treasury Recurring Payouts: https://github.com/paritytech/substrate/i
 
 ## Overview
 
-The payout, approved by a Council motion for a specific pool of nodes would go to the the [payout script](#payout-script) (identified as an address), then the pool would distribute the funds based on the [database](#database).
+The payout, approved by a Council motion for a specific pool of nodes would go to the [payout script](#payout-script) (identified as an address), then the pool would distribute the funds based on the [database](#database).
 
 ## Deliverables :nut_and_bolt:
 
@@ -32,7 +32,7 @@ E.g. if a node is running with some RPC endpoints off, it should not share a poo
 
 The Load Balancer should monitor for node **freshness** via [LB Daemon](LB-Daemon) and log penalties into the [Database](#Database) if a node is offline (not reporting a ping for more than 30 seconds) or not fresh (a node's latest and best block lag behind the best in the pool by more than 10 blocks).
 
-A penalized node should enter an initial cooldown of 1 minute, and issue another check after the cooldown expires. After every check, if the offense is still on-going, the duration of the last cooldown doubles. When a node's cooldown exceeds 17 hours, the node is permanently removed from the pool (automatically removed from the whitelist).
+A penalized node should enter an initial cooldown of 1 minute, and issue another check after the cooldown expires. After every check, if the offense is still ongoing, the duration of the last cooldown doubles. When a node's cooldown exceeds 17 hours, the node is permanently removed from the pool (automatically removed from the whitelist).
 
 An LB operator can define the following settings:
 
