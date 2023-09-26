@@ -116,7 +116,7 @@ Our responsibilities:
 - Submit PRs to upgrade `wasm-opt` in `cargo-contract` and `wasm-builder`
   when new versions are published.
 - Fix reported bugs if possible and within budget.
-- Implement minor feature requests if disirable and within budget.
+- Implement minor feature requests if desirable and within budget.
 
 Issues we want to fix:
 
@@ -149,7 +149,7 @@ The monthly budget is calculated based on the following:
 
 - 10 hours to upgrade Binaryen
 - 300 USD / hour
-- x2 for unforseen obstacles
+- x2 for unforeseen obstacles
 
 This implies that a particularly difficult upgrade could exceed the monthly budget.
 In such a case the work would spill over across multiple months,
