@@ -13,7 +13,7 @@ Empowering Connections on the Decentralised Web: SubFlow, Your Smart Social Netw
 
 With the growth of the Democratic deficit, the rise of autocracy and the total disability of the overgrown bureaucracy all over the world, the same trends are evident in the structure of the internet and today's social media platforms.
 
-SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. The protocol will be distinguished from other platforms by its foundation of decentralised ownership and censorship resistance. It will offer a seamless experience for sharing multimedia content, engaging with other users through such interactions as "likes" and comments, and conducting direct token transfers. 
+SubFlow aims to develop a decentralised social media platform that empowers users with control over their data and interactions. The protocol will be distinguished from other platforms by its foundation of decentralised ownership and data access, and censorship resistance. It will offer a seamless experience for sharing multimedia content, engaging with other users through such interactions as "likes" and comments, and conducting direct token transfers. 
 
 SubFlow will be developed as a set of Smart Services, providing users the ability to interact with other users through communication, as well as interact with other services in the Polkadot ecosystem based on an open API: marketplaces (showcasing, buying, and selling NFTs), DeFi services (buying and exchanging tokens), games (authorisation, messaging), and so on.
 
@@ -46,8 +46,8 @@ The functionality of the author and system administrator will require user autho
 ### Structure 
 
 SubFlow is a fully decentralised application based on SmartSOA (smart service-oriented architecture), it's core smart servies include:
-- **DNS** <br>Maps user names to their corresponding addressed for personal Smart Services.
-- **Registration Service** <br>Registers new users with DNS and sets up their personalised Smart Services.
+
+- **Registration Service** <br>Registers new users and sets up their personalised Smart Services.
 - **User Smart Services** <br>Store, manage, and enable user data interaction.
 
 Other Smart Services provide additional functionality, for example:<br>  
@@ -57,11 +57,22 @@ Other Smart Services provide additional functionality, for example:<br>
 - **Voting Service** <br>Allows users to participate in voting.
 <br>
 <p align="center">
-  <img src="https://github.com/deus4/KidsNotes/assets/21257942/de8c5e64-449d-4bf1-958f-802cd3b64bb3">
+  <img src="https://github.com/w3f/Grants-Program/assets/21257942/f17a2afe-66b3-4e46-8edb-ac77fa6a8e50">
 </p>
 <br>
 <p align="center">
 <code>SubFlow: Component Diagram</code>
+</p>
+<br>
+Interactions example of different components for some business processes can be seen from the Sequence Diagram<br>
+<br>
+
+<p align="center">
+  <img src="https://github.com/w3f/Grants-Program/assets/21257942/27868531-9981-465f-a03e-898778645059">
+</p>
+<br>
+<p align="center">
+<code>SubFlow: Sequence Diagram</code>
 </p>
 <br>
 
@@ -229,6 +240,7 @@ The team plans to release the system sequentially in two versions:<br>
 ## Future Plans
 
 **1. Registration Smart Service (working title - identikit)** <br>
+- DNS user names mapping and comparsion to their corresponding addressed for personal Smart Services.
 - NFT/SBT user account-profile functionality development;
 - Plug-and-play system development for the purpose of integrating different services within the Polkadot ecosystem;
 - Separating the functionality into a standalone service (working title - “identikit");
