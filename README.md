@@ -147,13 +147,7 @@ The W3F Grants Program offers different grant levels to help you best, depending
 
 ## :pencil: Process
 
-:::tip
-If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
-:::
-
-:::info
-Payments can be made in USDT and USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets), Bitcoin and fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7).
-:::
+> **:loudspeaker:** Payments can be made in USDT and USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets), Bitcoin, and fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
