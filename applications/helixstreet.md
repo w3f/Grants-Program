@@ -10,7 +10,7 @@
 
 ### Overview
 
-helixstreet is a project to extend the use of Blockchain technology to genomics. helixstreet chose substrate as technology to implement a pallet to store a Merkle tree hash of genomic raw sequencing data. Relationsships ( ancestry ) can be documented in the blockchain based on relationships between genomic data. Currently we are planning to implement helixstreet as parathread.
+helixstreet is a project to extend the use of Blockchain technology to genomics. helixstreet chose substrate as technology to implement a pallet to store a Merkle tree hash of genomic raw sequencing data. Relationships ( ancestry ) can be documented in the blockchain based on relationships between genomic data. Currently we are planning to implement helixstreet as parathread.
 
 Ancestry data and personal genomic relationships are today stored centralized. helixstreet's approach allows the representation of ancestry data in a decentralized manner.
 
@@ -21,7 +21,7 @@ The project is in this stage just a pallet.
 
 ### Ecosystem Fit
 
-The project extends the use of Polkadot ( or Kusama ) to a whole new use case. helixstreet would be an application specific parathread. It solves the problem of ownership of genomic data and the the human desire to conduct genealogical research without a central authority.
+The project extends the use of Polkadot ( or Kusama ) to a whole new use case. helixstreet would be an application specific parathread. It solves the problem of ownership of genomic data and the human desire to conduct genealogical research without a central authority.
 
 ## Team :busts_in_silhouette:
 
@@ -82,7 +82,7 @@ N/A
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. The docker image will not include sequencing data. |
 | 0e. | Article | We will publish an **article**/workshop that explains what was achieved as part of the grant. |
 | 1. | Substrate module: genomics | We will create a Substrate module that will store the merkle hash of genomic sequencing raw data. | 
-| 2. | Program to generate Hashtree | We will creates a hash tree for all reads of the DNA probe. The script should calculate for every Read of every Chromosome a hash and create a Merkle tree to reduce storage. Furthermore the script should store a vector ( or the main root ) of the root hashes automatically in the Blockchain assigned to the private key. A flag is needed to distinguish between entries made by a machine ( e.g. Sequel II ) or by the identified owner of the DNA raw data ( the private key of the human being represented by the sequencing data ). The program will be realized in rust. | 
+| 2. | Program to generate Hashtree | We will create a hash tree for all reads of the DNA probe. The script should calculate for every Read of every Chromosome a hash and create a Merkle tree to reduce storage. Furthermore the script should store a vector ( or the main root ) of the root hashes automatically in the Blockchain assigned to the private key. A flag is needed to distinguish between entries made by a machine ( e.g. Sequel II ) or by the identified owner of the DNA raw data ( the private key of the human being represented by the sequencing data ). The program will be realized in rust. | 
 
 
 
