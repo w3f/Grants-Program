@@ -23,7 +23,7 @@ oracle consumer smart contracts deployed on the same EVM parachain will use the 
 while oracle consumer parachains will interact with the controller contracts via XCM. EVM/WASM smart contracts on any other smart contract parachain could also consume oracle data via the oracle pallet once installed there.
 
 The controller smart contracts will interact with the oracle pallet via Solidity precompiles, precompiled contracts which handle the call translation from Solidity to native Substrate pallets, and XCM. 
-The XCM pallets then handle cross-chain messaging, effectively enabling the smart contracts to invoke dispatchable functions within the oracle pallet installed on other parachains, as well as allow the pallet to invoke functions available within the controller smart contracts.
+The XCM pallets then handle cross-chain messaging, effectively enabling the smart contracts to invoke dispatchable functions within the oracle pallet installed on other parachains, as well as allowing the pallet to invoke functions available within the controller smart contracts.
 
 ### Project Details
 
@@ -58,7 +58,7 @@ This smart contract is responsible for the creation and funding of data feeds by
 This functionality will need to be ported to a native Substrate pallet, so that an oracle consumer parachain can create and fund feeds as well as pay reporters locally using its own token. A reporter will earn local staking rewards based on their percentage of the overall parachain stake locked in the Oracle contract.
 
 **Consumer (Using Tellor) Contract**
-The Using Tellor contract is incorporated into consumer smart contracts to access reported oracle data.The functionality and APIs exposed here will need to be ported to a native Substrate pallet, so that a parachain can make use of available oracle data stored within its own chain state.
+The Using Tellor contract is incorporated into consumer smart contracts to access reported oracle data. The functionality and APIs exposed here will need to be ported to a native Substrate pallet, so that a parachain can make use of available oracle data stored within its own chain state.
 
 **Parachain Integration Contract**
 A new lightweight smart contract to handle parachain registration and ease parachain integration from the Oracle and Governance contracts. Registration provides parachain-specific configuration and ensures that sensitive functionality can only be called by the corresponding consumer parachain ‘owner’ accounts. Helper functions will abstract the necessary call encodings for remote execution, keeping cross-chain messaging functionality separate from oracle and governance logic.
@@ -201,8 +201,8 @@ Details:  A new Substrate pallet will be required which includes the core oracle
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1 | Substrate Oracle pallet design and integration | We will provide the Substrate oracle pallet |
-| 2 | Tests and a guide for testing functionallity of the the pallet with integration of a mock project on selected parachains| We will provide tests and a guide to test cross functionality of the system for interactions between the EVM chain and consumer chain and oracle pallet (meaning test the functinallity between milestone 1 and 2 delivarable 1 -  solidity contracts, pallet, XCM)|
-| 3 | Documentation/ Usage Examples| We will provide documenatation and usage examples for the system.                                                                                               |
+| 2 | Tests and a guide for testing functionality of the pallet with integration of a mock project on selected parachains| We will provide tests and a guide to test cross functionality of the system for interactions between the EVM chain and consumer chain and oracle pallet (meaning test the functionality between milestone 1 and 2 deliverable 1 -  solidity contracts, pallet, XCM)|
+| 3 | Documentation/ Usage Examples| We will provide documentation and usage examples for the system.                                                                                               |
 
 
 
