@@ -179,7 +179,7 @@ Described above.
 | 3c.  | Ed25519          | Support Ed25519 signatures and key derivation |
 | 3e.  | Sign & Verify    | Sign and verify messages using ed25519 keypairs |
 | 3f.  | Substrate Signed Extensions | Support substrate's signed extensions |
-| 3g.  | Statemint Signed Extensions | Support statemint's signed extensions |
+| 3g.  | AssetHub Signed Extensions | Support AssetHub's signed extensions |
 | 3h.  | Transaction Subscriptions   | Support transaction subscription |
 | 3i.  | Event Subscriptions         | Support runtime event subscription |
 | 3j.  | Keyring          | Create a package that manage a set of keys in a consistent environment |
