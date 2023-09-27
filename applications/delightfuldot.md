@@ -156,7 +156,7 @@ Team members
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to install `delightfuldot` and interact with Substrate-based networks. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Core functionalities | We'll build the following features for the library:<br/> - New type system built on top of `scale-ts` <br/> - A Metadata parser for the Substrate Metadata V14 <br/> - RPC APIs: Support default RPC APIs for Polkadot and Kusama networks & ability to add custom RPC APIs <br/> - APIs to inspect pallets' constants <br/> - APIs to execute so pallets' storage queries <br/> - APIs to inspect pallets' events & errors |
+| 1. | Core functionalities | We'll build the following features for the library:<br/> - New type system built on top of `scale-ts` <br/> - A Metadata parser for the Substrate Metadata V14 <br/> - RPC APIs: Support default RPC APIs for Polkadot and Kusama networks & ability to add custom RPC APIs <br/> - APIs to inspect pallets' constants <br/> - APIs to execute pallets' storage queries <br/> - APIs to inspect pallets' events & errors |
 | 2. | Publish to npm | We'll package and publish the library to npm, so developers can install and start using it.
 
 
