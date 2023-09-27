@@ -49,6 +49,7 @@ SubFlow is a fully decentralised application based on SmartSOA (smart service-or
 
 - **Registration Service** <br>Registers new users and sets up their personalised Smart Services.
 - **User Smart Services** <br>Store, manage, and enable user data interaction.
+- **Message Service** <br>Messaging interactions.
 
 Other Smart Services provide additional functionality, for example:<br>  
 - **Advertising Service** <br>Enables advertisers to create and run campaigns on SubFlow, rewarding users who share their content according to set rules.
@@ -212,9 +213,17 @@ The team plans to release the system sequentially in two versions:<br>
 | 0c. | Testing and Testing Guide | Core functions will be covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 1. | System design | Definition of the various components of the service will interacting with each other, data  storage, and how users will be able to interact with the system. A detailed technical roadmap for how the systems we build. |
 | 2. | User registration and user profile | The ability to create and customise a user profile, which is one of the core features of the present and future product roadmap. |
+| 2.1. | User registration and user profile (Smart Contract) | Development of User profile structure, implementation of API for registration and profile management as Registration and User components features. |
+| 2.2. | User registration and user profile (Web App) | Implementation of UI together with the corresponding client-side logic for user registration and user profile editing. |
 | 3. | Posting functionality | This functionality allows users to write and publish posts. |
+| 3.1. | Posting functionality (Smart Contract) | Development of the message structure and implementation of API to store messages as the Messages component. |
+| 3.2. | Posting functionality (Web App) | Implementation of UI and the corresponding client-side logic for creating messages. |
 | 4. | Interactive posting interactions | Functionaltity for interactions with posts, such as *comments*, *reposts* and *likes*. |
+| 4.1. | Interactive posting interactions (Smart Contract) | *Comment* and *repost* features will be added to the Message component. API for the *like*-feature will be implemented as a Likes component. |
+| 4.2. | Interactive posting interactions (Web App) | Implementation of UI and the corresponding client-side logic for user interaction with posts. |
 | 5. | System users interaction | Basic functionality for direct interactions between users, such as *search* and *follow*. |
+| 5.1. | System users interaction (Smart Contract) | Development of the user-following structure and implemetation of API for the *follow*-feature as *Following* components. |
+| 5.2. | System users interaction (Web App) | Implementation of the corresponding client-side logic to provide the *follow*-feature, an indexer API for the *search*-feature will be used to get user data. |
 
 ### Milestone 2 — Advanced Functionality
 
@@ -231,10 +240,18 @@ The team plans to release the system sequentially in two versions:<br>
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0е. | Article | We will publish an article that explains what was built, what was done/achieved as part of the grant, and team's development plans for the future. |
 | 1. | Multimedia posting | Support for images and youtube videos. |
-| 2. | Interactive posting interactions II | Adding an author to *favorites*. |
+| 1.1. | Multimedia posting (Smart Contract) | Update of the message structure for the advanced message data support. |
+| 1.2. | Multimedia posting (Web App) | Implementation of the corresponding client-side logic and UI for adding images and videos to user messages. |
+| 2. | Interactive posting interactions II | Adding the message to *favorites*. |
+| 2.1. | Interactive posting interactions II (Smart Contract) | Development of the *favorite* structure, implementation of API to collect posts. |
+| 2.2. | Interactive posting interactions II (Web App) | Implementation of UI and the corresponding client-side logic for adding messages to users' *favourites* as well as a list of *favourite* messages. |
 | 3. | Direct token transfer | The functionality which allows users to transfer Polkadot tokens to other users without leaving the service, as well as to send and receive donations in these tokens. |
+| 3.1. | Direct token transfer (Web App) | Implementation of the corresponding client-side logic and the UI for token transfers. |
 | 4. | User statistics | Number of posts, replies, likes, followers etc. |
+| 4.1. | User statistics (Smart Contract) | Adds stats fields to structures and implements the corresponding functionality. |
+| 4.2. | User statistics (Web App) | Display authors and messages stats for users. |
 | 5. | Functionality for the administrator | Interface for users authorised as system administrators. Functionality is designed to ensure optimal system operation and provide convenience for other user roles in the system: reader and author. |
+| 5.1. | Functionality for the administrator (Smart Contract) | Implementation of some admin features in the contract configuration parameters (e.g. username and message length, maximum number of followers, etc.) that will make SubFlow optimal and user-friendly. |
 
 
 ## Future Plans
