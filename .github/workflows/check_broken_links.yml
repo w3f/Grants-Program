@@ -17,6 +17,8 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        with:
+          args: --verbose --no-progress !./applications/*
 
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
