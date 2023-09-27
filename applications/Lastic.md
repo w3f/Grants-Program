@@ -1,7 +1,7 @@
 # Lastic
 
 - **Team Name:** Lastic
-- **Payment Address:** 13yjZyoefWxwTGezvp39sbkPqDa9c559L2X7vDxN3C1YWwWe (DOT)
+- **Payment Address:** bc1q0d6pkmsvncshyeqvzzlcfjc7lkf4fuku7nsen7 (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
