@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-This application is in response to the RFP [Grant Management Web Application](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/grant_management_webapp.md).
+This application is in response to the RFP [Grant Management Web Application](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/grant_management_webapp.md).
 
 ### Overview
 
@@ -146,7 +146,7 @@ Zaniyar Jahany is a Senior science associate at ZHAW (university of applied scie
 
 ## Development Status :open_book:
 
-This application is in reply to the RFP [Grant Management Web Application](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/grant_management_webapp.md).
+This application is in reply to the RFP [Grant Management Web Application](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/grant_management_webapp.md).
 
 
 ### Wireframes

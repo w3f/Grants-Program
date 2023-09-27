@@ -5,7 +5,7 @@
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
-The proposal is in response to the  RFP : [Decentralised Security marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/decentralized-security-marketplace.md).
+The proposal is in response to the  RFP : [Decentralised Security marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/decentralized-security-marketplace.md).
 
 ### Overview
 

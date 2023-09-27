@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-This application is in response to the open RFP [xcm-tools](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/xcm-tool.md)
+This application is in response to the open RFP [xcm-tools](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/xcm-tool.md)
 
 ### Overview
 
@@ -99,7 +99,7 @@ We are the technical partners for [Peer Coin](https://explorer.peer.inc/)
 
 ## Development Status :open_book:
 
-[xcm-tools](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/xcm-tool.md)
+[xcm-tools](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/xcm-tool.md)
 
 ## Development Roadmap :nut_and_bolt:
 

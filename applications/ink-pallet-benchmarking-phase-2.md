@@ -5,7 +5,7 @@
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :
-Proposal for Milestone 2 in the RFP titled [implementation-benchmarking](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/implementation-benchmarking.md).
+Proposal for Milestone 2 in the RFP titled [implementation-benchmarking](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/implementation-benchmarking.md).
 
 ### Overview
 
@@ -41,7 +41,7 @@ This will help new developers to decide the best tool to implement the logic.
 
 ### Team's experience
 
-We have already worked on [implementation-benchmarking](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/implementation-benchmarking.md) and delivered Milestones 1 and 2.
+We have already worked on [implementation-benchmarking](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/implementation-benchmarking.md) and delivered Milestones 1 and 2.
 
 ### Team Code Repos
 
@@ -119,4 +119,4 @@ We are planning to submit another grant application towards Milestone 4 where we
 ## Additional Information :heavy_plus_sign:
 
 Gautam Dhameja told us about the Grants program and encouraged us to apply to the same.
-We have already applied for and delivered Milestones 1 and 2 against [implementation-benchmarking](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/implementation-benchmarking.md)
+We have already applied for and delivered Milestones 1 and 2 against [implementation-benchmarking](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/implementation-benchmarking.md)

@@ -6,7 +6,7 @@
 
 ## Project Overview 📄
 
-This is a response for the [Analytics Website/Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/analysis-website-and-data-platform.md) RFP.
+This is a response for the [Analytics Website/Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/analysis-website-and-data-platform.md) RFP.
 
 ### Overview
 
