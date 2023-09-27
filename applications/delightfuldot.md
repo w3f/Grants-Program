@@ -1,8 +1,8 @@
 # DelightfulDOT
 
 - **Team Name:** Coong Crafts (formerly Coong Team)
-- **Payment Address:** 15GJvMYDXXU5Xr795kP5VdsfccWS7Hcug5smWjN6gEELvWaT (USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **Payment Address:** 15GJvMYDXXU5Xr795kP5VdsfccWS7Hcug5smWjN6gEELvWaT (AssetHub - USDT)
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -72,11 +72,9 @@ One drawback of this approach is that access speed to storage would be a bit slo
 
 We set a vision for `delightfuldot` to become an essential part of Polkadot & Kusama ecosystem, so dapps can leverage its utilities to connect to and interact with hundreds of networks quickly and smoothly without having to think about memory consumption.
 
-This proposal is asking for a grant to support the first development phase of `delightfuldot` for the foundational modules with core functionalities and compatibility layer with `@polkadot/api`. More details are in the upcoming section.
+This proposal is asking for a grant to support the first development phase of `delightfuldot` for the foundational modules with core functionalities. More details are in the upcoming section.
 
-**2.4. What to build**
-
-_**2.4.a. Foundational modules with core functionalities**_
+**2.4. Foundational modules with core functionalities**
 
 This step, we aim to lay out all the necessary foundational pieces of the library and put all of them together to form the core functionalities, including:
 
@@ -93,12 +91,6 @@ This step, we aim to lay out all the necessary foundational pieces of the librar
     - Execute pallet’s storage queries
     - Inspect pallet’s events & errors
     - Sign and submit extrinsics
-
-_**2.4.b. Compatibility layer with `@polkadot/api`**_
-
-This is a layer built on top of the foundational modules to allow `delightfuldot` to easily switch between `@polkadot/api`'s type system and its own type system while at the same time can maintain the usage at a low memory consumption. 
-
-With the similar API style and ability to use the `@polkadot/api`'s type system, this would help the migration process from `@polkadot/api` to `delightfuldot` easily and smoothly and open access to the already built custom types for parachains & other custom Substrate-based chains and all the helpful derived APIs from [`api-derive`](https://github.com/polkadot-js/api/tree/master/packages/api-derive) package.
 
 **2.5. Tech Stacks**
 - TypeScript
@@ -149,44 +141,42 @@ Team members
 
 ### Overview
 
-- **Total Estimated Duration:** 4.5 months
+- **Total Estimated Duration:** 3.5 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 45,000 USD
-- **Start Date:** Sep 01 2023
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 — Foundational modules with core functionalities
 
-- **Estimated duration:** 2.5 month
+- **Estimated duration:** 2 months
 - **FTE:**  2
-- **Costs:** 25,000 USD
+- **Costs:** 17,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to install `delightfuldot` and interact with Substrate-based networks. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Core functionalities | We'll build the following features for the library (Ref: 2.4.a):<br/> - New type system built on top of `scale-ts` <br/> - A Metadata parser for the Substrate Metadata V14 <br/> - Execute RPC APIs: support default APIs for Polkadot and Kusama networks & ability to add custom RPC APIs <br/> - Execute Runtime APIs: support default APIs for Polkadot and Kusama networks & ability to add custom Runtime APIs <br/> - APIs to inspect pallets' constants <br/> - APIs to inspect pallets' events & errors <br/> - APIs to execute so pallets' storage queries |
+| 1. | Core functionalities | We'll build the following features for the library:<br/> - New type system built on top of `scale-ts` <br/> - A Metadata parser for the Substrate Metadata V14 <br/> - RPC APIs: Support default RPC APIs for Polkadot and Kusama networks & ability to add custom RPC APIs <br/> - APIs to inspect pallets' constants <br/> - APIs to execute so pallets' storage queries <br/> - APIs to inspect pallets' events & errors |
 | 2. | Publish to npm | We'll package and publish the library to npm, so developers can install and start using it.
 
 
-### Milestone 2 - More core functionalities and `@polkadot/api` compatibility layer
+### Milestone 2 - More core functionalities
 
-- **Estimated Duration:** 2 month
+- **Estimated Duration:** 1.5 months
 - **FTE:**  2
-- **Costs:** 20,000 USD
+- **Costs:** 13,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to sign & submit extrinsics via `delightfuldot` and the migration process from `@polkadot/api` to `delightfuldot`  |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | More core functionalities | We'll add APIs to creating Extrinsics payload, sign and submit Extrinsics as well as the ability to keep watching for Extrinsic status after submission. (Ref: 2.4.a)
-| 2. | `@polkadot/api` compatibility layer | We'll add a layer on top of `delightfuldot` to allow switching to use `@polkadot/api` type system or the builtin `delightfuldot` type system. (Ref: 2.4.b)
+| 1. | More core functionalities | We'll continue to build core functionalities for the library: <br/> - APIs to create Extrinsics payload, sign and submit Extrinsics as well as the ability to keep watching for Extrinsic status after submission. <br/> - Runtime APIs: Support default runtime APIs for Polkadot and Kusama networks & ability to add custom Runtime APIs
 
 ## Future Plans
 
 Next steps for `delightfuldot` are:
 - Support APIs to interact with Smart Contract
-- Support older versions of Metadata (if necessary)
+- Support older/newer versions of Metadata
 - Support more [RPC](https://polkadot.js.org/docs/substrate/rpc) and [Runtime](https://polkadot.js.org/docs/substrate/runtime) APIs
 - XCM utilities
