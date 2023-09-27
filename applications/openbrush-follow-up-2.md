@@ -308,9 +308,9 @@ PSP37 - <https://github.com/w3f/PSPs/pull/37>
 
 #### Milestone 8. `UniquePallet`/`RMRKPallet` chain extension
 
-* **Estimated Duration:** 7 weeks
+* **Estimated Duration:** 8 weeks
 * **FTE:**  2.5
-* **Costs:** 52 500 USD
+* **Costs:** 55 300 USD
 
 | Number | Deliverable                                                  | Specification                                                                                                                                                                                                                                                                                                                                |
 |--------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -322,6 +322,7 @@ PSP37 - <https://github.com/w3f/PSPs/pull/37>
 | 4.     | Implement NFT contract via chain extensions                  | OpenBrush will provide a default implementation of contracts that are implemented via according chains extensions.                                                                                                                                                                                                                           |
 | 5.     | Refactoring of trait system in the ink!                      | Refactoring of trait system in the ink! to support default implementation inside of traits. It should improve the developer's experience with traits and simplify its usage.                                                                                                                                                                 |
 | 6.     | Marketing - Create 4 educational video for OpenBrush/ink!    | We are going to work on educational video materials for OpenBrush and ink! Community. We see a huge gap in knowledge, understanding, and vision for the whole community in that sphere. Moreover, 727.ventures team will promote it in Twitter, Medium etc. We will create a lower entry threshold for newcomers by this educational program. |
+| 7.     | ink! storage docs    | There is no documentation with clear description of how the storage works within ink!. As our team was the one doing the refactoring of ink! storage, we will create a comprehensive documentation on how the storage works in ink! 4, as well as detailed comparison on what was changed in comparison to ink! 3 storage, including examples of usage. |
 
 #### Milestone 9. Multi token chain extension
 

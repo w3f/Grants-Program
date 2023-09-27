@@ -6,11 +6,11 @@ const mdxMermaid = require('mdx-mermaid');
 module.exports = {
   title: 'Web3 Foundation Grants',
   tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama.',
-  url: 'https://w3f.github.io',
-  baseUrl: '/Grants-Program/',
+  url: 'https://grants.web3.foundation',
+  baseUrl: '/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/Web3Foundation.png',
+  favicon: 'img/favicon-32x32.png',
   organizationName: 'w3f', // Usually your GitHub org/user name.
   trailingSlash: false,
   projectName: 'Grants-Program', // Usually your repo name.
@@ -28,45 +28,41 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Check out <a target="_blank" rel="noopener noreferrer" href="https://web3.bamboohr.com/jobs/">our current job openings</a>!',
+        'Watch our <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=8Na99WRGypY">sub0 presentation on Support in the Polkadot Ecosystem</a>!',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
     },
     navbar: {
-      title: 'W3F Grants Program',
+      title: 'Grants Program',
       logo: {
         alt: 'W3F Grants Program',
-        src: 'img/Web3Foundation.png',
+        src: 'img/w3f_logo.svg',
       },
       items: [
         {
           type: 'doc',
-          docId: 'introduction',
+          docId: 'docs/introduction',
+          position: 'right',
           label: 'Introduction',
         },
         {
           type: 'doc',
           docId: 'applications/index',
-          position: 'left',
+          position: 'right',
           label: 'List of Grants',
         },
         {
           type: 'doc',
-          docId: 'faq',
+          docId: 'docs/faq',
+          position: 'right',
           label: 'FAQ',
         },
         {
           type: 'doc',
-          docId: 'Process/how-to-apply',
+          docId: 'docs/Process/how-to-apply',
           position: 'right',
           label: 'Apply',
-        },
-        {
-          type: 'doc',
-          docId: 'contribute',
-          position: 'right',
-          label: 'Contribute',
         }
       ],
     },
@@ -86,7 +82,11 @@ module.exports = {
             },
             {
               label: 'Privacy Policy',
-              href: './Support%20Docs/privacy_policy',
+              to: 'docs/Support%20Docs/privacy_policy',
+            },
+            {
+              label: 'Legal Disclosures',
+              to: 'https://web3.foundation/legal-disclosures/',
             },
           ],
         }, 
@@ -125,8 +125,9 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: '.',
           routeBasePath: '/', 
-          // editUrl: 'https://github.com/w3f/grants/edit/master/',
+          editUrl: 'https://github.com/w3f/Grants-Program/edit/master/',
           // showLastUpdateAuthor: true,
           // showLastUpdateTime: true,
           sidebarPath: require.resolve('./sidebars.js'),
@@ -140,9 +141,25 @@ module.exports = {
           rehypePlugins: [
           ],
           exclude: [
-            'Applications/application-template.md',
-            'Applications/example-project.md',
-            'RFPs/suggestion-template.md'
+            'applications/application-template.md',
+            'applications/example-project.md',
+            'applications/maintenance/maintenance-template.md',
+            'applications/application-template-research.md',
+            'docs/RFPs/suggestion-template.md',
+            '.docusaurus/**',
+            '.github/**',
+            '.vscode/**',
+            'build/**',
+            'node_modules/**',
+            'src/**',
+            'static/**',
+            'babel.config.js',
+            '.gitignore',
+            'LICENSE',
+            'package-lock.json',
+            'package.json',
+            'sidebars.js',
+            'README.md'
           ],
         },
         blog: false,

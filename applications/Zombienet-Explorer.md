@@ -1,8 +1,7 @@
-# W3F Grant Proposal
+# Zombienet Explorer: Multi-Chain Substrate Block Explorer (based on Polkaholic.io)
 
-- **Project Name:** Zombienet Explorer: Multi-Chain Substrate Block Explorer (based on Polkaholic.io)
 - **Team Name:** Colorful Notion
-- **Payment Address:** Polkadot 5D58imQFuMXDTknQS2D14gDU2duiUC18MGxDnTKajjJS9F3g [USDT]
+- **Status:** Terminated
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:

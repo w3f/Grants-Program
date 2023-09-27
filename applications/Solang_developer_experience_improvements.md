@@ -4,9 +4,9 @@
 
 - **Contributor Name:** Salaheldin Soliman
 
-- **Payment Details:** USDT (ERC20)
+- **Payment Details:** DAI (ERC20)
 
-- **Address**: 0xf19d225a4b7dc1fcc53fbdad5a3d87bce53af3c6
+- **Address**: 0x9036b20920ddf473e796d24afd0fe04d4dde0b68
 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 

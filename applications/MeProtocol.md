@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Me Protocol
 
-- **Project Name:** Me Protocol
 - **Team Name:** My AI
 - **Payment Address:** Ethereum: 0xB35da2E7380a2580Acdc0ca5DEa9e2B152155e84 (USDC)
 - **Level:** 2 
