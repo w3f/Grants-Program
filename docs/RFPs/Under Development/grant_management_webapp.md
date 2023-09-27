@@ -10,23 +10,18 @@ Web3 Foundation manages grant applications and deliveries in two github reposito
 * [Grants](https://github.com/w3f/Grants-Program)
 * [Deliveries](https://github.com/w3f/Grant-Milestone-Delivery)
 
-All the grant applications, approvals, deliveries and evaluations are pushed into github as PRs and documents, 
-so that all processes are public and transparent.
+All the grant applications, approvals, deliveries and evaluations are pushed into GitHub as PRs and Markdown documents, so that all processes are public and transparent.
 
-You can find all the details about how applications and deliveries are submitted in the [Grants Program Website](https://w3f.github.io/Grants-Program/),
-or by browsing the two repositories above.
-
+You can find all the details about how applications and deliveries are submitted in the [Grants Program Website](https://w3f.github.io/Grants-Program/), or by browsing the two repositories above.
 
 ## Project Description :page_facing_up: 
 
 The objective of this RFP is a web application that publishes all the information contained in 
-the W3F grants repositories in a way that facilitates easier navigation for the grants committee. Though the software would initially be used for the W3F Grants Program, any interested third parties would ideally be able to utilize the application for their own grants program. 
+the W3F grants repositories in a way that facilitates easier navigation for the grants committee. Though the software would initially be used for the W3F Grants Program, any interested third parties should ideally be able to utilize the application for their own purposes. 
 
-By providing an API, it will also allow for pulling the data in a structured way in order to make it easy to calculate statistics or track different metrics.
+By providing an API, it will also allow for pulling the data in a structured way in order to make it easy to calculate statistics, track different metrics and publish data.
 
-The Web3 Foundation Grants Program is unique in that everything is openly and transparently published on GitHub. As a result of this RFP, we hope the W3F Grants Program can set an example of how other grant programs can leverage a simple yet powerful process to manage their grants.
-Therefore, the web application and the structure of our repositories can be re-used by other grant programs.
-
+The Web3 Foundation Grants Program is unique in that everything is openly and transparently published on GitHub. As a result of this RFP, we hope the W3F Grants Program can set an example of how other grant programs can leverage a simple yet powerful process to manage their grants. Therefore, the web application and the structure of our repositories should be reusable by other grant programs.
 
 ## Existing prototype
 
@@ -34,11 +29,9 @@ A quick and dirty prototype already exists for the application:
 - [Backend](https://github.com/w3f/w3f_grants_backend)
 - [Frontend](https://github.com/w3f/w3f_grants_frontend)
 
-These examples are just an initial experiment to test how the app could work, and are completely undocumented, 
-but please feel free to contact [us](grants@web3.foundation) if you need help trying them out or simply discuss.
+These examples are just an initial experiment to test how the app could work, and are completely undocumented, but please feel free to [contact us](mailto:grants@web3.foundation) if you need help trying them out or to simply discuss.
 
-Also, these are just an option, and the RFP doesn't require building from these. Proposers are free to propose the framework and approach of their choice.
-
+Also, using these is completely optional and the RFP doesn't require building from these. Proposers are free to propose the framework and approach of their choice.
 
 ## Deliverables :nut_and_bolt:
 
@@ -53,8 +46,6 @@ For example:
 ![screenshot_grants_page](https://github.com/keeganquigley/Grants-Program/assets/1389409/0eda6f0b-071d-4d44-9835-196167479c07)
 
 
-
-
 ### Grants details
 
 - Shows the grant information
@@ -66,13 +57,11 @@ For example:
 ![screenshot_grants_details](https://github.com/keeganquigley/Grants-Program/assets/1389409/098962a3-249f-4fa5-8c03-9d0dbc7f32eb)
 
 
-
 ### Teams
 
 - Provide a view at the team level.
 - Contact information.
 - Grants and applications, and their current status.
-
 
 ### Applications
 
@@ -99,13 +88,11 @@ For example:
 - The web app should ideally separate frontend from backend logic, and publish an API to fetch the structured data.
 
 
-
 ## Additional Notes
 
-- The features proposed above represent an opinion on what the grant management webapp should do and look like,
-but are neither exhaustive nor strict requirements. Teams are welcome to propose their own design and vision for this product.
+- The features proposed above represent an _suggestion_ on what the grant management webapp should do and look like, but are neither exhaustive nor strictly required. Teams are welcome to propose their own design and vision for this product.
 
-- Web3 Foundation's grants program should be just an example/first step. 
+- The Web3 Foundation's Grants Program should be just an example/first step. 
 Ideally, the tool (combining GitHub + website) can benefit other grant programs and on-chain treasuries.
 
 - Long term goals: 

@@ -1,6 +1,6 @@
 # RFP: Substrate Identity Directory
 
-* **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/SubIdentity.md), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/substrate-identity-directory.md)
+* **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/SubIdentity.md), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/Dotflow.md)
 * **Proposer:** swader
 * **Projects you think this work could be useful for**: Kusama, Polkadot, Substrate chains
 

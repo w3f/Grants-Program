@@ -22,5 +22,8 @@ The milestones below are just an initial draft. The milestones can be structured
 | 1. | Anti-collusion | Implement a mechanism to prevent bribery and collusion, leveraging encrypting votes (ZKPs) potentially via [Minimum Anti-Collusion Infrastructure (MACI)](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413) |  
 | 2.  | Voting Example | Integrate a basic voting example that lets you test the mechanism | 
 
+### Previous grant applications
 
-
+- [Maki](https://github.com/w3f/Grants-Program/pull/1144)
+- [pallet-maci](https://github.com/w3f/Grants-Program/pull/232)
+- [Infimum](https://github.com/w3f/Grants-Program/pull/1948)
