@@ -28,7 +28,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Meet us at <a target="_blank" rel="noopener noreferrer" href="https://www.polkadot.network/ecosystem/events/sub0/">sub0</a>!',
+        'Watch our <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=8Na99WRGypY">sub0 presentation on Support in the Polkadot Ecosystem</a>!',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
