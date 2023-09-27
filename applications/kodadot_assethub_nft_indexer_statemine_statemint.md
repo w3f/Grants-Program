@@ -153,9 +153,9 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 | 0b.   | Documentation                                       | Comprehensive inline code documentation and an explicit README file to guide the project setup and execution.|
 | 0c.   | Test Guidelines                                      | Testing will cover major functionality with unit tests and provide a guide for executing these tests.|
 | 0d.   | Docker Integration                                   | A Dockerfile will enable the project to run within a Docker container.                          |
-| 1.    | Backward Compatibility Maintenance             | Ensuring backward compatibility with current Uniques v1.                                                      |
-| 1a.   | Collection Schema Development              | Development of a GraphQL schema entity that represents the collection.                                        |
-| 1b.   | NFT Schema Development                       | Formulation and creation of a GraphQL schema entity representing Non-fungible tokens.                         |
+| 1a.    | Backward Compatibility Maintenance             | Ensuring backward compatibility with current Uniques v1.                                                      |
+| 1b.   | Collection Schema Development              | Development of a GraphQL schema entity that represents the collection.                                        |
+| 1c.   | NFT Schema Development                       | Formulation and creation of a GraphQL schema entity representing Non-fungible tokens.                         |
 | 2.    | Unique v1.1 Handlers                  | Implement a handlers to index buy, set_price events from the chain.                                               |
 | 3.   | NFT Pallet Handlers                 | Handler created for indexing create, mint, buy, set_price, transfer, burn events from the chain.           |
 | 4a.   | On-chain Attributes Schema Design      | Development and design of a GraphQL schema entity representing on-chain attributes.                           |
@@ -172,11 +172,11 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 | 7c.      | Fungible Assets CREATE Event          |An event handler for indexing the creation of a fungible event from a chain, such as (RMRK/USDT) will be developed.|
 | 7d.      | Metadata Support for Fungible Assets | Implement a handler to add metadata to a fungible asset event from the chain.                          |
 | 7e.   | Fungible Asset Allowlist Setup        |Setting up allows list-based indexing of fungible assets.                                                       |
-| 10a.  | Data Views Development                |Construction of data views for efficient access to indexed data.                                               |
-| 10b.  | Implementing Metadata Caching Layer |Develop and retry IPFS metadata if un-indexed by Metadata IPFS Integration Handler.                                                               |
-| 11a.    | Transfer of Collection Ownership    |Incorporate functionality to transfer collection ownership.                                                    |
-| 12a.    | Collection settings Schema Design    | Development and design of a GraphQL schema entity representing Collection settings     |
-| 12b.    | Collection settings handler    | Implement a handler to add collection settings into data                                                  |
+| 8a.  | Data Views Development                |Construction of data views for efficient access to indexed data.                                               |
+| 8b.  | Implementing Metadata Caching Layer |Develop and retry IPFS metadata if un-indexed by Metadata IPFS Integration Handler.                                                               |
+| 9.    | Transfer of Collection Ownership    |Incorporate functionality to transfer collection ownership.                                                    |
+| 10a.    | Collection settings Schema Design    | Development and design of a GraphQL schema entity representing Collection settings     |
+| 10b.    | Collection settings handler    | Implement a handler to add collection settings into data                                                  |
 
 
 ## Future Plans 🔭
@@ -189,9 +189,9 @@ Upon the successful deployment of the AssetHub Indexer, our team plans to contin
 4. Establishment of user profiles to enable personalized user interfaces.
 5. Incorporation of constituent elements for individual NFT representation.
 6. Implement action components for functionalities like LIST, SEND, BUY, MINT, BURN, and Atomic Swap.
-6. Development of comprehensive statistical representations and analytics mechanisms.
+7. Development of comprehensive statistical representations and analytics mechanisms.
 8. Introduction of rankings to highlight top-performing users, collections, or items.
-7. Personalization of the user interface to enhance the user experience.
+9. Personalization of the user interface to enhance the user experience.
 10. Maintenance of compatibility with runtime upgrades and changes in the Kusama/Statemine ecosystem.
 11. Regular updates to keep up with Substrate for continuous system enhancement.
 12. Management of upgrades to parachain runtime versions, including indexer enhancements and related costs.
