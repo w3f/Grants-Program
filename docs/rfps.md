@@ -51,11 +51,8 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [ink!_smart_contract_block_explorer.md](RFPs/ink_smart_contract_block_explorer.md) | 20.09.2023 |
 | [ISO_8583.md](RFPs/ISO_8583.md) | 20.09.2023 |
 | [move_smart_contract_pallet.md](RFPs/move_smart_contract_pallet.md) | 02.08.2023 |
-| [multi-chain-block-explorer.md](RFPs/multi-chain-block-explorer.md) | 23.11.2021 |
-| [privacy-enhancement-polkadot-extension.md](RFPs/privacy-enhancement-polkadot-extension.md) | 27.05.22 |
 | [raft-validators.md](RFPs/raft-validators.md) | 23.05.2023 |
-| [scale-codec-comparator.md](RFPs/scale-codec-comparator.md) | 30.05.2022 |
-| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Static-Analysis-for-Runtime-Pallets.md) | 05.07.2023 |
+| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Static-Analysis-for-Runtime-Pallets.md) | 27.09.2023 |
 
 </details>
 
@@ -71,10 +68,13 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [crowdloan_front_end_template.md](RFPs/crowdloan_front_end_template.md) | 25.04.2023 |  
 | [epassport-zk-validation.md](RFPs/epassport-zk-validation.md) | 21.03.2023 |
 | [ksm-tipping-button.md](RFPs/ksm-tipping-button.md) | 20.07.2021 |  
+| [multi-chain-block-explorer.md](RFPs/multi-chain-block-explorer.md) | 27.09.2023 |
 | [on-chain-quadratic-funding.md](RFPs/on-chain-quadratic-funding.md) | 29.03.2022 |  
 | [php-api.md](RFPs/php-api.md) | 27.05.2022 |  
 | [php-scale.md](RFPs/php-scale.md) | 23.11.2022 |  
 | [polkadot-collator-setup.md](RFPs/polkadot-collator-setup.md) | 22.03.2023 |
+| [privacy-enhancement-polkadot-extension.md](RFPs/privacy-enhancement-polkadot-extension.md) | 27.09.2023 |
+| [scale-codec-comparator.md](RFPs/scale-codec-comparator.md) | 27.09.2023 |
 | [social-recovery-wallet.md](RFPs/social-recovery-wallet.md) | 03.03.2023 |
 | [staking-rewards-collector-front-end.md](RFPs/staking-rewards-collector-front-end.md) | 20.07.2021 |  
 | [uncollateralized-stablecoin-research.md](RFPs/uncollateralized-stablecoin-research.md) | 01.01.2023 |
