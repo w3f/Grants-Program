@@ -8,7 +8,7 @@
 
 ### Overview
 
-This proposal is in response to the following RFP:  [Analysis Website and Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/analysis-website-and-data-platform.md)
+This proposal is in response to the following RFP:  [Analysis Website and Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/analysis-website-and-data-platform.md)
 
 The goal of the Dot-ETL project is to lower the friction required to conduct fine-grained and aggregated analysis of transactions on Polkadot network, via a framework to extract Polkadot transaction-level data to various offline formats: e.g. CSV / delimited, relational, columnar.  Furthermore, we intend to develop a framework to ETL Substrate to [Google BigQuery](https://cloud.google.com/bigquery), orchestrated via [Google Cloud Composer](https://cloud.google.com/composer).  
 

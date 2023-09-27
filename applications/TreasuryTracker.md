@@ -75,7 +75,7 @@ The target audience for our platform includes token holders interested in the lo
 While there are no projects in the ecosystem that address treasury components and provide the same level of analytics as our proposed platform, there are a few with related functionalities:
 
 - [doTreasury](https://www.dotreasury.com/dot/)  focuses solely on treasury statistics, lacking the wider analytical range that our project aims to offer
-- [Grant Management Web Application RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/grant_management_webapp.md) are focused on the W3F grants UI and are not including the analytics component our platform intends to deliver.
+- [Grant Management Web Application RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/grant_management_webapp.md) are focused on the W3F grants UI and are not including the analytics component our platform intends to deliver.
 
 
 

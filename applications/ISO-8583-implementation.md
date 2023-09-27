@@ -4,7 +4,7 @@
 - **Payment Address:** 0xc42D0562BB4e53f5e9D888df35e1B91eA0f19cC3 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-This application is in response to the [ISO-8583 RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/ISO_8583.md).
+This application is in response to the [ISO-8583 RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/ISO_8583.md).
 
 ### Overview
 
@@ -111,7 +111,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-This application is in response to the [ISO-8583 RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/ISO_8583.md).
+This application is in response to the [ISO-8583 RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/ISO_8583.md).
 
 The implementation is inspired from the previous [research](https://github.com/adit313/ISO8583-Blockchain-Integration-Plan) project for this RFP.
 

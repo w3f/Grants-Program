@@ -6,7 +6,7 @@
 
 ## Abstract :page_facing_up:
 
-This proposal addresses outstanding [deep account analytics problems for the Web3 Foundation](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/data_analysis_tools.md).
+This proposal addresses outstanding [deep account analytics problems for the Web3 Foundation](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/data_analysis_tools.md).
 We propse 3-tier solution:
 
  - Tier 1. _raw indexing_: Google BigQuery Public Datasets
@@ -19,7 +19,7 @@ that can support work on all 3 tiers with _child bounties_ for Polkadot Data All
 
 ## Project Overview :page_facing_up:
 
-This proposal is in response to the RFP [Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/data_analysis_tools.md)
+This proposal is in response to the RFP [Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/data_analysis_tools.md)
 which seeks to answer deep account analytics questions of:
 
 **Account References**:

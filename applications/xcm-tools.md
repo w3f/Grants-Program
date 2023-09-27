@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-RFPs [https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/xcm-tool.md](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/xcm-tool.md)
+RFPs [https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/xcm-tool.md](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/xcm-tool.md)
 
 ### Overview
 

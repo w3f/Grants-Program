@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-Current proposal is the solution from [P2P.org](http://P2P.org) for the problem described in [Analytics Website/Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/analysis-website-and-data-platform.md) RFP.
+Current proposal is the solution from [P2P.org](http://P2P.org) for the problem described in [Analytics Website/Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/analysis-website-and-data-platform.md) RFP.
 
 ### Overview and Ecosystem Fit
 
