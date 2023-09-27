@@ -65,6 +65,7 @@ Users have the opportunity to provide feedback or refine their queries based on 
 The platform comprises information extraction processes capable of constructing the knowledge base with Polkadot’s ecosystem data, aligned with the POnto ontology. The platform architecture and its components are detailed in the next sections.
 
 ![PAP_overview](https://github.com/rbrandao/Grants-Program/assets/779451/f50051f7-4dbe-474d-96b7-8418cd438e7b)
+
 Figure 1 - Mockup of how the Polkadot Analytics Platform main components are integrated with its UI
 
 **Data models / API specifications of the core functionality**
@@ -92,9 +93,11 @@ The API specifications will provide a standardized way for users to interact wit
 **Documentation of core components, protocols, architecture, etc. to be deployed**
 
 
-The platform's architecture (see Figure 2) follows a modular and scalable design to accommodate future expansions and improvements.
+The platform's architecture (see Figure 2) follows a modular and scalable design to accommodate future expansions and improvements. The orange boxes highlight the components that we will develop in the current application.
 
-![qe_arch_wbg](https://github.com/rbrandao/Grants-Program/assets/779451/e308d3f1-53a9-402d-a270-770f322aea37)
+
+![architecture-v2](https://github.com/rbrandao/Grants-Program/assets/779451/03d15de1-a87a-456a-99ac-bed34c2fcfd6)
+
 Figure 2 - Polkadot Analytics Platform architecture.
 
 The architecture includes the following core components:
@@ -363,7 +366,7 @@ The primary objective of this milestone is to structure extracted data and devel
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | Copyright and Licenses | Apache 2.0 |
-| **0b.** | Documentation/Tutorial | Documentation of the Python code using pdoc3. The tutorial will be a jupyter notebook explaining the use of the implemented semantic ETL workflows |
+| **0b.** | Documentation/Tutorial | Documentation of the Python code using pdoc3. The tutorial will be a jupyter notebook explaining the use of the implemented semantic ETL workflows. In addition, this tutorial will demo how the results of this grant will be used in the future. |
 | **0c.** | Testing and Testing Guide | Testing the information ETL process. A guide on how to verify the correctness of injected knowledge. |
 | **0d.** | Docker | Docker images for the ETL workflows. |
 | **0e.** | Article | We will write a medium post with an overview of semantic ETL workflows and their tasks. |
