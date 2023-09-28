@@ -36,8 +36,8 @@ This will help new developers to decide the best tool to implement the logic.
 
 ### Legal Structure
 
-- **Registered Address:** B-7/8, Anmol Pride, Baner Road, Baner, Pune, Maharashtra 411045, India
-- **Registered Legal Entity:** Talentica Software India Pvt. Ltd.
+- **Registered Address:** Talentica Software Inc., 6200, Stoneridge Mall Road, Pleasanton, California 94588, USA.
+- **Registered Legal Entity:** Talentica Software Inc.
 
 ### Team's experience
 
