@@ -149,15 +149,38 @@ New project
 
 ## Development Roadmap :nut_and_bolt:
 
+### Amendment - Timeline Extension (Sep, 18 2023)
+
+Due to unforeseen challenges and to ensure the quality of our deliverables, we are proposing an extension to the project timeline. 
+
+Original Estimated End Date: *End of the 4.5 months from April 2023*  
+Revised Estimated End Date: **December 2023**
+
+**Reasons for Extension:**  
+- *Thank you for supporting Claps Health and granting us the opportunity to bring this vision to life. Since initiating the project in April 2023 (approved by middle of March), we've faced unforeseen challenges in the Rust and Substrate Technology learning curve. While we've onboarded experienced Substrate professionals to address this, the Item 3 related to zk-proof still to be develop.*
+  
+- *Milestone 1: Patient Identity and Security Framework
+Status: Delayed due to zk-proof
+Estimated Completion Date: Oct 30, 2023*
+- *Milestone 2: Patient Engagement and Data Sharing
+Status: Delayed due to Milestone 1
+Estimated Completion Date: Dec 30, 2023*
+
+**Technical Specification amendment:**
+- *Patient ID creation - Develop the patient ID creation tool in Javascript. Changed to Develop the patient ID creation tool in Dart.*
+- *Patient ID on-chain authentication	- zkSNARKs Groth16 based on Non-Interactive Zero-Knowledge Proof (NIZKP) developed by !ink Smart Contract. Changed to Patient ID on-chain authentication	- zkSNARKs Groth16 based on Non-Interactive Zero-Knowledge Proof (NIZKP) developed by xcm, runtime module or !ink smart contract.*
+
+We assure the committee that despite the delay, the quality and scope of the project will remain consistent with our initial proposal.
+
 ### Overview
 
-- **Total Estimated Duration:** 4.5 months
+- **Total Estimated Duration:** 8 months (Adjusted from 4.5 months)
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** 30,000 USD
 
 ### Milestone 1 - Patient Identity and Security Framework
 
-- **Estimated Duration:** 2.5 month
+- **Estimated Duration:** 6 months (Adjusted from 2.5 months)
 - **Developers:** FTE x 4
 - **(Product Design x 1, Dapp Engineer x 1, System Engineer x 1, App Engineer x 1)**
 - **Costs:** 20,000 USD
@@ -169,16 +192,16 @@ New project
 | 0c.    | Testing and Testing Guide          | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                                                 |
 | 0d.    | Docker                             | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                                                                   |
 | 0e.    | Article                            | We will post an article on Twitter and Meta(Facebook) for English and Mandarin speakers communities.                                                                                                                                                                                                                                                                                            |
-| 1      | Patient ID creation                | \- Develop the patient ID creation tool in Javascript.<br/>\- Generate a new ID on client-side for the patient based on BIP39. (12 words passphrase)<br/>\- Encrypted key store(private key) by patient user’s password (AES-256 GCM mode)<br/>\- Implement the decentralized design using public key cryptography. (Client signed by private key)                                                 |
+| 1      | Patient ID creation                | \- Develop the patient ID creation tool in Dart.<br/>\- Generate a new ID on client-side for the patient based on BIP39. (12 words passphrase)<br/>\- Encrypted key store(private key) by patient user’s password (AES-256 GCM mode)<br/>\- Implement the decentralized design using public key cryptography. (Client signed by private key)                                                 |
 | 2      | Patient profile management module  | \- Patient profile off-chain management tools developed by JAVA<br/>\- Support AWS S3 storage<br/>\- Updating of patient profile<br/>\- ECIES end-to-end data encryption to secure profile data transfer.                                                                                                                                                                                          |
-| 3      | Patient ID on-chain authentication | \- zkSNARKs Groth16 based on Non-Interactive Zero-Knowledge Proof (NIZKP) developed by !ink Smart Contract<br/>\- Receive credential by trust issuer (token file)<br/>\- Zero-knowledge proof for on-chain authentication to prove patient ID without private information                                                                                                                         |
+| 3      | Patient ID on-chain authentication | \- zkSNARKs Groth16 based on Non-Interactive Zero-Knowledge Proof (NIZKP) developed by xcm or runtime module or !ink Smart Contract<br/>\- Receive credential by trust issuer (token file)<br/>\- Zero-knowledge proof for on-chain authentication to prove patient ID without private information                                                                                                                         |
 | 4      | Challenge card dapp module         | Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Dapp developed in ink! smart contract.<br/><br/>\- Add challenge card<br/>\- Add personalized mission<br/>\- Delete challenge card<br/>\- Receive daily mission<br/>\- Receive rewards by mission completed<br/>\- Receive rewards by challenge completed<br/>\- Rewards by fungible tokens |
 | 5      | Create database                    | Create a docker container to start a mySQL database to store all the information, define the models to store and create tables and indexes.                                                                                                                                                                                                                                                     |
 | 6      | Database encryption module         | We will implement a database encryption AES-256 GCM module of all stored and transmitted data to prevent unauthorized access or tampering. Developed by JAVA.                                                                                                                                                                                                                                   |
 | 7      | Android apk                        | We will provide android apk for above challenge card data input and functional verification<br/>We will provide android apk for user challenge card with wallet to receive rewards                                                                                                                                                                                                               |
 | 8      | Testing                            | Achieve a testing coverage of the functionalities above 90%                                                                                                                                                                                                                                                                                                                                     |
 
-### Milestone 2 - CPatient Engagement and Data Sharing
+### Milestone 2 - Patient Engagement and Data Sharing
 - **Estimated Duration:** 2 month
 - **Developers:** FTE x 4
 - **(Product Design x 1, Dapp Engineer x 1, System Engineer x 1, APP Engineer x 1)**

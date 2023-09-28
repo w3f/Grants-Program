@@ -8,8 +8,8 @@
 ## Project Overview :page_facing_up:
 
 This application is in response to two RFPs:
-- Multi-chain Block Explorer https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/multi-chain-block-explorer.md
-- ink! smart contract block explorer. https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/ink_smart_contract_block_explorer.md
+- Multi-chain Block Explorer https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/multi-chain-block-explorer.md
+- ink! smart contract block explorer. https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/ink_smart_contract_block_explorer.md
 
 
 ### Overview

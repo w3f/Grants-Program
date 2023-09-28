@@ -8,7 +8,7 @@
 
 ## Project Overview :page_facing_up:
 
-This proposal is aligned to the [RFP: Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/data_analysis_tools.md). 
+This proposal is aligned to the [RFP: Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/data_analysis_tools.md). 
 
 Our R&D roadmap was conceived and kick-started before the creation of this RFP, which was presented to us during the course of our previous [research grant](https://github.com/w3f/Grants-Program/pull/1420). Nevertheless, we believe the proposed application (Polkadot Analytics Platform) is aligned with the RFP's requirements and main goals. Both aim at providing data analysis in a way that advanced non-technical users can consume, without requiring programming skills. 
 
@@ -235,7 +235,7 @@ Our personal repos:
 
 > links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
 
-This proposal is aligned to the [RFP: Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/data_analysis_tools.md). 
+This proposal is aligned to the [RFP: Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/data_analysis_tools.md). 
 
 Our R&D roadmap was conceived and kick-started before the creation of this RFP, which was presented to us during the course of our previous [research grant](https://github.com/w3f/Grants-Program/pull/1420). Nevertheless, we believe the proposed application (Polkadot Analytics Platform) is aligned with the RFP's requirements and main goals. Both aim at providing data analysis in a way that advanced non-technical users can consume, without requiring programming skills. 
 
@@ -278,7 +278,7 @@ The total budget requested is US$ 10000 for two PhDs dedicating about 10 days of
 
 ### Milestone 1 — Knowledge-Base bootstrap
 
-In this milestone, the focus is on constructing the foundation of the analytics platform by creating a knowledge base. The goal is to define and implement the base components for the dev environment that will be the basis for the proposed platform. This includes evolving with POnto to address queries from the [Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Under%20Development/data_analysis_tools.md) RFP and the Substrate-ETL project. An initial KB component (including triplestore database and basic API endpoint) will be developed to handle operations over POnto entities.
+In this milestone, the focus is on constructing the foundation of the analytics platform by creating a knowledge base. The goal is to define and implement the base components for the dev environment that will be the basis for the proposed platform. This includes evolving with POnto to address queries from the [Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/data_analysis_tools.md) RFP and the Substrate-ETL project. An initial KB component (including triplestore database and basic API endpoint) will be developed to handle operations over POnto entities.
 
 
 - **Estimated Duration:** 1 month

@@ -6,7 +6,7 @@
 
 ## Project Overview ****📄****
 
-This application is a response to **[Move Smart Contract Pallet RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/move_smart_contract_pallet.md)** and a follow-up to our [previous work](https://github.com/w3f/Grants-Program/pull/1769) on the RFP.
+This application is a response to **[Move Smart Contract Pallet RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/move_smart_contract_pallet.md)** and a follow-up to our [previous work](https://github.com/w3f/Grants-Program/pull/1769) on the RFP.
 
 ### Overview
 
@@ -126,7 +126,7 @@ As mentioned in the Teams section, Eiger already has extensive experience develo
 
 ## Development Status **📖**
 
-- This application is a direct response to [this RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/move_smart_contract_pallet.md)
+- This application is a direct response to [this RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/move_smart_contract_pallet.md)
 - [Move language Github](https://github.com/move-language/move/tree/main/language)
 - [Pontem MoveVM fork](https://github.com/pontem-network/sp-move-vm)
 - [Pontem MoveVM system pallet](https://github.com/pontem-network/pontem/tree/master/pallets/sp-mvm)
