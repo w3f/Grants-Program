@@ -13,14 +13,14 @@ const FeatureList = [
     ),
   },
   {
-    title: 550,
+    title: 600,
     description: (
       <>projects funded
       </>
     ),
   },
   {
-    title: 50,
+    title: 54,
     description: (
       <>countries
       </>
