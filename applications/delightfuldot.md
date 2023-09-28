@@ -12,7 +12,7 @@ Dapps have always been a very important part of any blockchain ecosystem, it is 
 `@polkadot/api` has done a great job in helping applications connect to networks in an easy and effortless way by abstracting away all the complexities of connecting with a Substrate-based blockchain and scale-codec serialization process under the hood. But through development experience, benchmarking and profiling, we found out that `@polkadot/api` has a relatively high memory consumption, which might not be problematic for dapps that only connect to one or a few networks, but for dapps that need to connect to dozens or even hundreds of networks at the same time, it’s a problem which might create a great impact on the overall user experience (e.g: a wallet app or portfolio app needs to connect to a large number of networks to fetch users’ balances & assets or to listen to on-chain events).
 
 - If we enable all 100+ Substrate networks on SubWallet, it could increase the memory consumption to over a GB of RAM.
-<img width="680" alt="subwallet-high-memory-consumption" src="https://github.com/sinzii/Grants-Program/assets/6867026/bc517115-9f49-44c4-ba86-434f48cece84">
+<img width="680" alt="subwallet-high-memory-consumption" src="https://github.com/sinzii/Grants-Program/assets/6867026/bc517115-9f49-44c4-ba86-434f48cece84" />
 
 - Talisman is having their own solution for connecting to networks and fetching balances effectively without relying on `@polkadot/api` ([@talismn/balances](https://github.com/TalismanSociety/talisman/tree/dev/packages/balances)**,** [@talismn/api](https://github.com/TalismanSociety/api)).
 - We ran [a NodeJS script](https://github.com/sinzii/delightfuldot-poc/blob/main/src/benchmarks/benchmark_connect_multiple_endpoints.ts) that connects to 100 substrate-based network endpoints to fetch balances for an account using `@polkadot/api`, and the average memory consumption is over 800MB. More details about the benchmark results could be found [here](https://github.com/sinzii/delightfuldot-poc/tree/main#memory-consumption-benchmark-result).
@@ -25,15 +25,15 @@ As we’re heading toward a multi-chain future, there will absolutely be more pa
 
 We ran memory profiling for a [NodeJS script](https://github.com/sinzii/delightfuldot-poc#profiling) to connect to Polkadot network to see how much memory `@polkadot/api` consume during the bootstrapping process (initialization). Below are captures of the results:
 - Result of `Allocation sampling` profiling via Google Dev Tools
-<img width="680" alt="image" src="https://github.com/sinzii/Grants-Program/assets/6867026/455221f4-2dfb-459d-9186-12df5e4745fc">
+<img width="680" alt="image" src="https://github.com/sinzii/Grants-Program/assets/6867026/455221f4-2dfb-459d-9186-12df5e4745fc" />
 
 - Result of `Allocation instrumentation on timeline` profiling via Google Dev Tools
-<img width="680" alt="image" src="https://github.com/sinzii/Grants-Program/assets/6867026/8f259f40-42b0-452a-8fb8-ff86fbce1e9a">
+<img width="680" alt="image" src="https://github.com/sinzii/Grants-Program/assets/6867026/8f259f40-42b0-452a-8fb8-ff86fbce1e9a" />
 
 From the results, we can see that the memory consumption from `Metadata` and its type system is relatively high. As we looked into the source code itself, we found out that `@polkadot/api` has its own types and structure for every piece in the metadata, during the decoding process it will create types for all of the pieces in the metadata hierarchy/structure which result in the lot of `Type` objects and a big `Metadata` object ([`PortableRegistry` is a part of the Metadata](https://github.com/polkadot-js/api/blob/319535a1e938e89522ff18ef2d1cef66a5af597c/packages/types/src/interfaces/metadata/v14.ts#L43-L47))
 
 We tried to build a [small proof of concept alternative solution](https://github.com/sinzii/delightfuldot-poc/tree/main/src/poc) using [`scale-ts`](https://github.com/paritytech/scale-ts) (now `subShape`) for scale-codec encoding/decoding to do the same functionality and the memory consumption has improved noticeably.
-<img width="680" alt="image" src="https://github.com/sinzii/Grants-Program/assets/6867026/dd6940e0-84a0-49cb-a4ee-9a055356bcba">
+<img width="680" alt="image" src="https://github.com/sinzii/Grants-Program/assets/6867026/dd6940e0-84a0-49cb-a4ee-9a055356bcba" />
 
 Going further, instead of connecting to 1 network, this time we tried to connect to 20, 50, and 100 network endpoints to fetch balances for an account using `@polkadot/api` and our PoC solution for comparison, and as we can see from the [benchmark result](https://github.com/sinzii/delightfuldot-poc#memory-consumption-benchmark-result), the memory consumption of our PoC solution is significantly smaller. More details about the benchmarking could be found in [our PoC repository](https://github.com/sinzii/delightfuldot-poc#benchmark-memory-consumption-when-connecting-to-multiple-network-endpoints).
 
