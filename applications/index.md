@@ -6,13 +6,11 @@ layout: applications
 Use this page for an overview of all public grants and their status. Use the sidebar to navigate directly to a specific grant application document.
 
 :::info
-
 This page provides an overview of accepted grant applications, their progress and a link to their GitHub repositories. In cases where the link points to an organization, you should be aware that the grant application itself **is often an independent project unrelated to other work done by the teams**.
 
 Furthermore, the page lists terminations which happened due to a breach of the terms of the grants programs. Additionally, teams might have decided to stop working on the grant—though not necessarily on the project itself—for various reasons, which is not reflected on this sheet.
 
 Besides, **there is a clear difference between an application being accepted and the successful delivery of the respective project**, and only teams that have successfully delivered a milestone are allowed to make public announcements on the matter or to use our [badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). The badge can also never be used as a general endorsement for a team. Violations to this policy can be reported [here](mailto:grants@web3.foundation).
-
 :::
 
 - [2023](#2023)
@@ -106,7 +104,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Nikita Orlov PR](https://github.com/stringnick)                   | [Faucet chat based bot](faucet-bot.md)                                          | [GitHub](https://github.com/stringnick)                           | ☐          |        ☒       |      ☒      |
 | [Societal Labs Ltd.](https://www.sctl.xyz/)                        | [Societal Saas Pricing](societal_saas_pricing.md)                               | [GitHub](https://github.com/sctllabs)                             | ☐          |        ☒       |      ☒      |
 | [MASTER UNION LLC.](https://github.com/TheDotflow)                 | [Dotflow](Dotflow.md)                                                           | [GitHub](https://github.com/TheDotflow)                           | ☐          |        ☒       |      ☒      |
-| [Antier Solutions](https://www.antiersolutions.com/)               | [RFP/securityMarketPlace](Security_Marketplace.md)                              | [GitHub](https://github.com/ParthChaudhary31)                     | ☐          |        ☐       |      ☐      |
+| [Antier Solutions](https://www.antiersolutions.com/)               | [RFP/securityMarketPlace](Security_Marketplace.md)                              | [GitHub](https://github.com/ParthChaudhary31)                     | ☐          |        ☒       |      ☐      |
 | [SO/DA zone](https://github.com/mfornos)                           | [Ocelloids Monitoring SDK grant application](ocelloids_monitoring_sdk.md)       | [GitHub](https://github.com/mfornos)                              | ☐          |        ☒       |      ☒      |
 | [Antier Solutions Pvt. Ltd.](https://github.com/kulwindersingh-ant)| [Grants webapp](Grant_management_webapp.md)                                     | [GitHub](https://github.com/kulwindersingh-ant)                   | ☐          |        ☒       |      ☒      |
 | [Zaniyar Jahany](https://github.com/Zaniyar/)                      | [Grantmaster](grantmaster.md)                                                   | [GitHub](https://github.com/Zaniyar/plant2earn/)                  | ☐          |        ☐       |      ☐      |
