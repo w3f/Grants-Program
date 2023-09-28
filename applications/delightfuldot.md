@@ -87,10 +87,12 @@ This step, we aim to lay out all the necessary foundational pieces of the librar
     - Similar to RPCs, each substrate-based blockchain has its own list of supported Runtime APIs, so in the scope of this grant, we plan to implement the supported Runtime APIs of [Polkadot](https://polkadot.js.org/docs/polkadot/runtime) and [Kusama](https://polkadot.js.org/docs/kusama/runtime) networks.
     - Support registering custom Runtime APIs
 - With the format of Metadata V14, on-chain functionalities are exposed through pallet’s definitions including pallet’s constants, storage entries, extrinsic calls, events & errors. We plan to support abilities to:
-    - Inspect pallet’s constants
-    - Execute pallet’s storage queries
-    - Inspect pallet’s events & errors
-    - Sign and submit extrinsics
+    - Inspect pallet’s constants (similar to `@polkadot/api` APIs to inspect [constants](https://polkadot.js.org/docs/polkadot/constants))
+    - Inspect pallet’s events & errors (similar to `@polkadot/api` APIs to inspect [events](https://polkadot.js.org/docs/polkadot/events) & [errors](https://polkadot.js.org/docs/polkadot/errors))
+    - Execute pallet’s storage queries (similar to `@polkadot/api` APIs to execute [storage queries](https://polkadot.js.org/docs/polkadot/storage))
+    - Sign and submit extrinsics (similar to `@polkadot/api` APIs to [sign & submit extrinsics](https://polkadot.js.org/docs/polkadot/extrinsics))
+
+The work will be focused on building APIs to facilitate interactions with Substrate-based blockchain nodes, therefore we'll leverage existing solutions for creating, managing & signing keys in `@polkadot/keyring` package as well as other cryptography & utility functions in `@polkadot/util-crypto`, `@polkadot/util`.
 
 **2.5. Tech Stacks**
 - TypeScript
