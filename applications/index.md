@@ -76,6 +76,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Moonsong Labs](https://moonsonglabs.com/)                           | [StorageHub](./StorageHub.md)       | [GitHub](https://github.com/Moonsong-Labs)                                 | ☐          |        ☐       |      ☐     |
 | [Jonathan Brown](https://acuity.social/)                       | [Hybrid Explorer Phase 2](hybrid2.md)                                       | [GitHub](https://github.com/hybrid-explorer)                                 | ☐          |        ☐       |      ☐     |
 | [Coong Crafts](https://coongcrafts.io/)                       | [DelightfulDOT](delightfuldot.md)                                       | [GitHub](https://github.com/CoongCrafts)                                 | ☐          |        ☐       |      ☐     |
+| [Lastic](https://www.lastic.xyz/)                       | [Lastic](Lastic.md)                                       | [GitHub](https://github.com/LasticXYZ)                                 | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
