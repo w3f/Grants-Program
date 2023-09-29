@@ -194,16 +194,16 @@ _Note: Not all storage to query listed here will be implented in the scope of th
 |--------------|-------------|
 | Configuration | The current configuration of this pallet. |
 | Reservations | The Polkadot Core reservations (generally tasked with the maintenance of System Chains). |
-| Leases<T> | The Polkadot Core legacy leases. |
-| Status<T> | The current status of miscellaneous subsystems of this pallet. |
-| SaleInfo<T> | The details of the current sale, including its properties and status. |
-| AllowedRenewals<T> | Records of allowed renewals. |
-| Regions<T> | The current (unassigned) Regions. |
-| Workplan<T> | The work we plan on having each core do at a particular time in the future. |
-| Workload<T> | The current workload of each core. This gets updated with workplan as timeslices pass. |
-| InstaPoolContribution<T> | Record of a single contribution to the Instantaneous Coretime Pool. |
-| InstaPoolIo<T> | Record of Coretime entering or leaving the Instantaneous Coretime Pool. |
-| InstaPoolHistory<T> |  InstaPool rewards for each Timeslice and the number of core parts which contributed. |
+| Leases | The Polkadot Core legacy leases. |
+| Status | The current status of miscellaneous subsystems of this pallet. |
+| SaleInfo | The details of the current sale, including its properties and status. |
+| AllowedRenewals | Records of allowed renewals. |
+| Regions | The current (unassigned) Regions. |
+| Workplan | The work we plan on having each core do at a particular time in the future. |
+| Workload | The current workload of each core. This gets updated with workplan as timeslices pass. |
+| InstaPoolContribution | Record of a single contribution to the Instantaneous Coretime Pool. |
+| InstaPoolIo | Record of Coretime entering or leaving the Instantaneous Coretime Pool. |
+| InstaPoolHistory |  InstaPool rewards for each Timeslice and the number of core parts which contributed. |
 
 
 ### Expansion of 3.b - Basic Interaction Creation
