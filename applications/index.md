@@ -75,6 +75,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [SO/DA zone](https://github.com/sodazone)                           | [Ocelloids XCM Transfer Monitoring Service](ocelloids_xcm_monitoring_service.md)       | [GitHub](https://github.com/sodazone)                                 | ☐          |        ☐       |      ☐     |
 | [Moonsong Labs](https://moonsonglabs.com/)                           | [StorageHub](./StorageHub.md)       | [GitHub](https://github.com/Moonsong-Labs)                                 | ☐          |        ☐       |      ☐     |
 | [Jonathan Brown](https://acuity.social/)                       | [Hybrid Explorer Phase 2](hybrid2.md)                                       | [GitHub](https://github.com/hybrid-explorer)                                 | ☐          |        ☐       |      ☐     |
+| [Coong Crafts](https://coongcrafts.io/)                       | [DelightfulDOT](delightfuldot.md)                                       | [GitHub](https://github.com/CoongCrafts)                                 | ☐          |        ☐       |      ☐     |
 
 [🔝](#2023)
 
