@@ -20,16 +20,17 @@ Our team is driven by a common goal to bring more equitable and efficient financ
 #### Mockups/designs of any UI components
 The following mockups were designed with an AMM in mind. Ssal will be implemented as a mobile app, initially with no AMM features. This means that the marketplace will consist of an organized collection of specific contracts. 
 [Check out our repo!](https://github.com/AlejandroSoumah/riso-front-end)
-- Home Page 1
+##### Home Page 1
 ![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss01.png)
-- Home Page 2
+##### Home Page 2
 ![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss02.png)
-- Home Page 3
+##### Home Page 3
 ![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss03.png)
-- Marketplace: 
+##### Marketplace
 ![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss04.png)
-- Purchase Contract: this page allows one to add a contract to their cart. It assumes that there is an enderlying AMM which is why one can purchase a broad category of rice at a fixed price rather than sifting through individual contracts. 
+##### Purchase Contract
 ![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss05.png)
+This page allows one to add a contract to their cart. It assumes that there is an enderlying AMM which is why one can purchase a broad category of rice at a fixed price rather than sifting through individual contracts. 
 
 #### An overview of the technology stack to be used
 Frontend: React JS  
