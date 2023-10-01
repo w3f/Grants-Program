@@ -209,7 +209,7 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 | 1. | Smart Contracts | We will write the requisite ink! smart contracts to create, buy, and sell commodities contracts, testing them on Shibuya testnet. |
 | 2. | Frontend | We will deliver a simple user interface tailored for mobile devices. At this stage, it will remain disconnected from any blockchain functions. |
 
-### Milestone 2 Example — Connect Smart Contracts to Frontend & User Testing
+### Milestone 2 — Connect Smart Contracts to Frontend & User Testing
 
 - **Estimated Duration:** 1 month
 - **FTE:**  2,3
