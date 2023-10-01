@@ -1,7 +1,7 @@
 # Protico
 
 - **Team Name:** Tico, Inc.
-- **Payment Address:** 0x6e5964a1562a7a8c2d19a72797a831787186788F (USDT)
+- **Payment Address:** (Private)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
