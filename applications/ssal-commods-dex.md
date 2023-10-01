@@ -194,7 +194,7 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 - **Full-Time Equivalent (FTE):** 3
 - **Total Costs:** 30,000 USD
 
-### Milestone 1 Example — Basic Smart Contracts and UI
+### Milestone 1 — Basic Smart Contracts and UI
 
 - **Estimated duration:** 1 months
 - **FTE:**  2,3
