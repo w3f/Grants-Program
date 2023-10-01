@@ -222,7 +222,7 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 | 3. | CI/CD | Setup pipeline for CI/CD in order to expedite development on field as much as possible in the next month. We will use a mixture of selenium tests with sentry to catch and handle errors as quickly they crop up. |
 
 
-### Milestone 3 Example — Implementation and Improvements On-Field
+### Milestone 3 — Implementation and Improvements On-Field
 
 - **Estimated Duration:** 1 month
 - **FTE:**  4,5
