@@ -12,13 +12,18 @@ Ssal, a blockchain-based commodities exchange, is a new version of our product c
 
 Ssal is a blockchain-based commodities exchange platform which leverages the power of distributed ledger technology to address the challenge of transparency and trust in commodity trading while also lowering the barrier to entry for producers and consumers to enter the market. The platform will target burgeoning markets that do not have the advantage of a commodities exchange to hedge crop prices and/or cannot trade at the volumes which traditional exchanges require. 
 
-We built the original version of this project, Riso, on Substrate, but realized that architecting a fully fledged parachain goes out of scope for the purposes of our application. Our team is looking for a grant to build Ssal using smart contracts running on Substrate-based chains. We believe that the technology is ready to be applied to a practical, real-world application. We intend to use the grant money to travel on-site in Ivory Coast this winter and set up a trial exchange between a local farmer and distributor whom we have been in contact with. In short, we would like to provide the ecosystem with a user-facing, commercial product, and hopefully, by documenting our process, we can inspire others to do the same.
+We built the original version of this project, Riso, on Substrate, but realized that architecting a fully fledged parachain goes out of scope for the purposes of our application. Our team is looking for a grant to build Ssal using smart contracts running on Substrate-based chains. We believe that the technology is ready to be applied to a practical, real-world application. In short, we would like to provide the ecosystem with a user-facing, commercial product, and hopefully, by documenting our process, we can inspire others to do the same.
 
-Our team is driven by a common goal to bring more equitable and efficient financial services to the economies that need them most. Our founding team has varied professional experience in blockchain development, financial technologies, and hotel management, while our unifying factor is a strong academic background studying mathematics, data science, and computer science. We have strong ties to the region of West Africa, and a vested interest in its success and the success of web3 technologies as a whole. For us, this project is a perfect marriage between our moral ambition with our technical skills. 
+Our team is driven by a common goal to bring more equitable and efficient financial services to the economies that need them most. We have varied professional experience in blockchain development, financial technologies, and hotel management. Our unifying factor is a strong academic background studying mathematics, data science, and computer science. We have strong ties to the region of West Africa, and a vested interest in its success and the success of web3 technologies as a whole. For us, this project is a perfect marriage between our moral ambition with our technical skills. 
 
 ### Project Details
 #### Mockups/designs of any UI components
 https://github.com/AlejandroSoumah/riso-front-end
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss01.png)
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss02.png)
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss03.png)
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss04.png)
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss05.png)
 
 #### An overview of the technology stack to be used
 Frontend: React JS  
