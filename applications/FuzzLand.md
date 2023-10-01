@@ -273,7 +273,7 @@ Downstream DeFis, including insurance, using the auditing intermediate informati
 
 Other projects can reuse the components of FuzzLand platforms. For example, the optimistic rollups pallet can be used by Layer 2 solutions. Collaborative manual auditing projects can also use the audit pallet or our chain by replacing the rollups pallet with consensus pallets. 
 
-[Decentralized Security Marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/decentralized-security-marketplace.md) is a related RFP. [QRUCIAL DAO](https://github.com/w3f/Grants-Program/pull/989) is a related project in Substrate ecosystem. QRUCIAL DAO and FuzzLand both reach consensus about the auditing result. The fundamental differences are:
+[Decentralized Security Marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/decentralized-security-marketplace.md) is a related RFP. [QRUCIAL DAO](https://github.com/w3f/Grants-Program/pull/989) is a related project in Substrate ecosystem. QRUCIAL DAO and FuzzLand both reach consensus about the auditing result. The fundamental differences are:
 * FuzzLand harnesses the computation power of the crowd to perform compute-intensive dynamic program analysis, resulting in fast and highly accurate auditing. Yet, QRUCIAL DAO's analysis is performed by rerunning a same set of fast static analysis tools on multiple nodes, of which the requirement of multiple nodes is solely for reaching consensus. 
 * We support all LLVM targets, including Substrate pallet, ink!, Solidity, Move, Rust, C/C++, etc. projects while QRUCIAL DAO is tailored for smart contract auditing. 
 * We use optimistic rollups to efficiently reach consensus while QRUCIAL DAO uses the governance pallet. 
