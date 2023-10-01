@@ -84,7 +84,7 @@ The beta product is released and with over 50+ brands onboard.
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  3 FTE
 - **Total Costs:** 30,000 USDT
 
