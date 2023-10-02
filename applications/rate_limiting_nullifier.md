@@ -5,9 +5,7 @@
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 - **Team Name:** Bilinearity
 
-- - **Payment Address:** 
-    - Justin: 5EhDGkJAh1ZMPVXwzyAWYwnXqczTNyWyirsth2Hyq8wKAPMb(USDC on Polkadot)
-    - Vivek: 0x6f140f64FC13482F2209eB1cCF9c2bf633409B78  (USDC (ERC20) on Ethereum)
+- **Payment Address:** 5EhDGkJAh1ZMPVXwzyAWYwnXqczTNyWyirsth2Hyq8wKAPMb(USDC on Polkadot)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
