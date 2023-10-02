@@ -24,7 +24,7 @@ Currently, Octan production has **5 major components** as follows:
 - *Reputation Ranking System:* the key component of Octan Network, implemented adaptive Pagerank algorithms to initiate directed graph and compute reputation score from transactional data. Reputation scores and ranking list of onchain addresses are stored at reputation DB (as a warehouse) for query and analytical purposes later.
 - *Reputation Board:* an interface for users to search onchain addresses (and/or dapps), their reputation scores & ranking, onchain statistics.
 - *Analytics platform:* an interface for customers to query reputation scores, onchain statistics, visualize and analyze them, to extract social insights and segment users. The platform also provides an interface to label onchain entities, classify contracts and dapps into different categories (e.g. DeFi, NFT, DAO, socialfi, gamefi, etc), making onchain entities much easier to understand and analyze.
-- *1ID & soulbound token:* an wallet management tool, allowing users to mint soulbound token carrying their reputation score as a proof of trust and contribution onchain. Octan 1ID also offers interface for users to track their onchain activities.
+- *1ID & Soulbound:* an wallet management tool, allowing users to mint soulbound token carrying their reputation score as a proof of trust and contribution onchain. Octan 1ID also offers interface for users to track their onchain activities.
 
 Current **Architecture Overview** of Octan Network
 
@@ -124,49 +124,45 @@ Herein, we focus on constructing a roadmap of developing Octan Reputation Rankin
 - **Full-Time Equivalent (FTE):**  6 (implying 18 man months throughout the project's duration) 
 - **Total Costs:** $30,000 USD.
 
-### Milestone 1: data pipeline on EVM-parachains of Polkadot
+### Milestone 1: data pipeline on EVM-parachains of Polkadot and onchain Reputation Ranking for Frontier/EVM-parachains of Polkadot
 
-- **Estimated duration:** 1 month
-- **FTE:**  5
-- **Costs:** $10,000 USD
+- **Estimated duration:** 2 months
+- **FTE:**  12
+- **Costs:** $20,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0a.** | License | Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains the onchain reputation concept and how a user can use the reputation board. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1a. | Crawl raw data | We will build module for indexing onchain transactions, extrinsics, events from archive node |
-| 1b. | Setup warehouse slot | We will setup data warehouse slot and structure for query onchain performance related metrics |
-
-
-### Milestone 2: onchain Reputation Ranking for Frontier/EVM-parachains of Polkadot
-
-- **Estimated Duration:** 1 month
-- **FTE:**  8
-- **Costs:** $12,000 USD
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- 
-| 2a. | Apply reputation ranking algorithms | We will push the data onto object storage and use graph engines to execute reputation ranking algorithms, then produce reputation scores of onchain entities. |
-| 2b. | Label | We will create new slot for labels regarding the targeted chains. |
-| 2c. | Deploy soulbound token on testnet | We will deploy soulbound token on the testnet of the targeted chains |
+| 0e. | Article | We will publish an **article**/workshop that explains the concept of onchain reputation and the vision of Octan Network. |
+| 1a. | Crawling raw data | We will build module for indexing onchain transactions, extrinsics, events from archive node |
+| 1b. | Data Warehouse slot | We will setup data warehouse slot and structure for query onchain performance related metrics |
+| 2a. | Reputation ranking algorithms | We will complete and publish a (scientific) research article about onchain reputation ranking algorithms on blockchain-based transaction datasets. |
+| 2b. | Onchain reputation ranking | We will push the data onto object storage and use graph engines to execute reputation ranking algorithms, then produce reputation scores of onchain entities. |
+| 3 | Labeling onchain entities | We will create new slot for labeling onchain contracts/dapps and other entities of the targeted chains. |
+| 4 | Soulbound token | We will implement a soulbound standard on the testnets of the targeted chains |
 
 ### Milestone 3: Soulbound token and onchain analytics for Frontier/EVM-parachains of Polkadot
 
 - **Estimated Duration:** 1 month
-- **FTE:**  5
-- **Costs:** $8,000 USD
+- **FTE:**  6
+- **Costs:** $10,000 USD
 
 
 | Number | Deliverable | Specification |
-| -----: | ----------- | ------------- 
-| 3a  | Release BI interface | We will verify and clean the data before release on-chain reputation and data analytics and/or we will produce analytical reports about onchain reputation and performance for the targeted chains. |
-| 3b  | Deploy soulbound token on mainnet | We will deploy soulbound token on the mainnet of the targeted chains. |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains the onchain reputation concept and how a user can use the reputation board and analytics (BI) interface, mint soulbound token to carry reputation scores. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains the concept of onchain reputation and the vision of Octan Network. |
+| 1  | Analytics (BI) interface | We will build an BI interface, allowing researchers to query reputation scores, labels and annotations of onchain entities, then conduct in-depth onchain analysis and extract social insights & user persona. |
+| 2  | Onchain analytical reports | We will publish analytical reports extracting onchain reputation, performance, social insights & individual persona of the the targeted parachains on Polkadot.
+| 3  | Soulbound UI | We will implement an UI for users to mint soulbound tokens and update their reputation scores. |
 
 
 ## Future Plans
