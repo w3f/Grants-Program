@@ -143,7 +143,7 @@ Herein, we focus on constructing a roadmap of developing Octan Reputation Rankin
 | 1b. | Data Warehouse slot | We will setup data warehouse slot and structure for query onchain performance related metrics |
 | 2a. | Reputation ranking algorithms | We will complete and publish a (scientific) research article about onchain reputation ranking algorithms on blockchain-based transaction datasets. |
 | 2b. | Onchain reputation ranking | We will push the data onto object storage and develop a graph engines to execute reputation ranking algorithms, then compute reputation scores of onchain entities on Polkadot. |
-| 3 | Labeling onchain entities | We will build a slot for labeling onchain contracts/dapps and other entities of the targeted chains. |
+| 3 | Labeling onchain entities | We will build an interface for labeling onchain contracts/dapps and other entities of the targeted chains. |
 | 4 | Soulbound token | We will implement a soulbound standard on the testnets of the targeted parachains. |
 
 ### Milestone 2: Soulbound token and onchain analytics for Frontier/EVM-parachains of Polkadot
