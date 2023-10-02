@@ -50,7 +50,7 @@ See **current designed UIs** of Octan Network (released MVP):
 
 - **Targeted customers:** Octan Network targets all existing/future users and developers on the entire Kusama & Polkadot. We also serve investors/researchers/marketers who are interested at the ecosystem and its dapps. 
  - **Market needs:** Octan Network meets all the needs of exploring reputation scores and onchain statistics, identifying onchain entities, analyzing and evaluating parachains & dapps, finding social insights and user persona, demographic and segmentation. Further, Octan offers a methods for users and dapps to build their trust and credibility by their own onchain activities and contributions. Onchain reputation is a critical problem in Web3 [being requested by Coinbase Venture](https://www.coinbase.com/blog/request-for-builders-startups-i-would-build-today?).
-- **Competitors & USP:** [Web3Go](https://github.com/w3f/Grants-Program/blob/master/applications/Web3Go.md) is an onchain analytics project, granted by Web3 Foundation, successfully raised $4M in seed round led by Binance Labs. Existing onchain analytics firms (e.g. Chanalysis, Messari Nansen, Dune Analytics, Arkham, Web3Go, etc) focuses on tracking cash-flow, smart-money and onchain statistics dashboards, visualization. Octan Network, distinguished among all others, focuses on extracting reputation, social insights & inter-relationships, individual persona and user segmentation, then establish trust & credibility natively onchain without compromising privacy & autonomy. This is all done by Octan's innovative & unique solutions (i.e. reputation ranking & scoring, labeling onchain entities, soulbound token) which are unique selling points and competitive advantages of Octan Network.
+- **Competitors & USP:** [Web3Go](https://github.com/w3f/Grants-Program/blob/master/applications/Web3Go.md) is an onchain analytics project, granted by Web3 Foundation, successfully raised $4M in seed round led by Binance Labs. Existing onchain analytics firms (e.g. Chanalysis, Messari Nansen, Dune Analytics, Arkham, Web3Go, etc) focuses on tracking cash-flow, smart-money and onchain statistics dashboards, visualization. Octan Network, distinguished among all others, focuses on extracting reputation, social insights & inter-relationships, individual persona and user segmentation, then establish trust & credibility natively onchain without compromising privacy & autonomy. This is all done by Octan's **innovative & unique solutions** (i.e. *reputation ranking & scoring*, *labeling onchain entities*, *soulbound token*) which are unique selling points and competitive advantages of Octan Network.
 
 ## Team :busts_in_silhouette:
 
@@ -124,7 +124,7 @@ Herein, we focus on constructing a roadmap of developing Octan Reputation Rankin
 - **Full-Time Equivalent (FTE):**  6 (implying 18 man months throughout the project's duration) 
 - **Total Costs:** $30,000 USD.
 
-### Milestone 1: data pipeline on EVM-parachains of Polkadot and onchain Reputation Ranking for Frontier/EVM-parachains of Polkadot
+### Milestone 1: data pipeline, Soulbound on EVM-parachains of Polkadot and onchain Reputation Ranking for Frontier/EVM-parachains of Polkadot
 
 - **Estimated duration:** 2 months
 - **FTE:**  12
@@ -142,11 +142,11 @@ Herein, we focus on constructing a roadmap of developing Octan Reputation Rankin
 | 1a. | Crawling raw data | We will build module for indexing onchain transactions, extrinsics, events from archive node |
 | 1b. | Data Warehouse slot | We will setup data warehouse slot and structure for query onchain performance related metrics |
 | 2a. | Reputation ranking algorithms | We will complete and publish a (scientific) research article about onchain reputation ranking algorithms on blockchain-based transaction datasets. |
-| 2b. | Onchain reputation ranking | We will push the data onto object storage and use graph engines to execute reputation ranking algorithms, then produce reputation scores of onchain entities. |
-| 3 | Labeling onchain entities | We will create new slot for labeling onchain contracts/dapps and other entities of the targeted chains. |
-| 4 | Soulbound token | We will implement a soulbound standard on the testnets of the targeted chains |
+| 2b. | Onchain reputation ranking | We will push the data onto object storage and develop a graph engines to execute reputation ranking algorithms, then compute reputation scores of onchain entities on Polkadot. |
+| 3 | Labeling onchain entities | We will build a slot for labeling onchain contracts/dapps and other entities of the targeted chains. |
+| 4 | Soulbound token | We will implement a soulbound standard on the testnets of the targeted parachains. |
 
-### Milestone 3: Soulbound token and onchain analytics for Frontier/EVM-parachains of Polkadot
+### Milestone 2: Soulbound token and onchain analytics for Frontier/EVM-parachains of Polkadot
 
 - **Estimated Duration:** 1 month
 - **FTE:**  6
@@ -162,7 +162,7 @@ Herein, we focus on constructing a roadmap of developing Octan Reputation Rankin
 | 0e. | Article | We will publish an **article**/workshop that explains the concept of onchain reputation and the vision of Octan Network. |
 | 1  | Analytics (BI) interface | We will build an BI interface, allowing researchers to query reputation scores, labels and annotations of onchain entities, then conduct in-depth onchain analysis and extract social insights & user persona. |
 | 2  | Onchain analytical reports | We will publish analytical reports extracting onchain reputation, performance, social insights & individual persona of the the targeted parachains on Polkadot.
-| 3  | Soulbound UI | We will implement an UI for users to mint soulbound tokens and update their reputation scores. |
+| 3  | Soulbound UI | We will develop an UI for users to mint soulbound tokens and update their reputation scores. |
 
 
 ## Future Plans
