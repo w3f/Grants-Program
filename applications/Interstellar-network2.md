@@ -1,4 +1,4 @@
-# Interstellar - Wallet Phase 2
+# Interstellar - Wallet Phase 2 (amended)
 
 
 - **Team Name:** Interstellar
@@ -170,9 +170,8 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 | ------: | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **0a.** | License                      | APACHE 2                                                                                                                                                                                                                     |
 | **0b.** | Documentation                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
-| **0d.** | Docker                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
-|      1. | Garble Circuit pallet update | We will rewrite the garbled circuit evaluation scheme to target at least **60 fps** through parralelization, caching and likely with an efficient [1.permutation-based garbling scheme: see 4.5](https://www.cs.fsu.edu/~tvhoang/thesis.pdf) optimized for performance or a [2.new garbling scheme](https://www.esat.kuleuven.be/cosic/publications/article-3351.pdf) that could potentially require lower computation cost per gate|
+| **0c.** | Testing and Testing Guide    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|  |  |  |
+|      1. | Garble Circuit pallet update | We will rewrite the garbled circuit evaluation scheme to target at least **60 fps**  through parralelization, caching and likely with an efficient [1.permutation-based garbling scheme: see 4.5](https://www.cs.fsu.edu/~tvhoang/thesis.pdf) optimized for performance or a [2.new garbling scheme](https://www.esat.kuleuven.be/cosic/publications/article-3351.pdf) that could potentially require lower computation cost per gate|
 
 
 
@@ -189,7 +188,7 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 | **0a.** | License                      | APACHE 2                                                                                                                                                                                                                     |
 | **0b.** | Documentation                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                              |
-| **0d.** | Docker                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                |  |  |  |
+   |  |  |  |
 |      1. | Display Circuit update       | We will modify the current display circuit to enable a more comfortable user experience by decreasing the cognitive load needed for the user to read the screen. - likely by adding specific sub-circuits to manage a set of probabilities of displaying segments for each frame, then fine tuned segments ON/OFF per frame to improve readbility
 |      2. | Light security screen     | We will provide a less secure but very comfortable to read secure screen version using fading with less blinking (link)  - this  non-screenshot proof version will be used later with our adaptive security framework                                                                      |
 
