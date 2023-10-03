@@ -3,7 +3,7 @@
 - **Team Name:** ALPHA LABS FZCO
 - **Payment Address:** 0x503b14fCcbAD63A1d6054D07f8B4685dCf5db7c3 (USDT ERC20)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
-
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1179#issuecomment-1742345375)
 
 ## Project Overview :page_facing_up:
 
