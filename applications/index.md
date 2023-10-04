@@ -46,6 +46,7 @@ Besides, **there is a clear difference between an application being accepted and
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :--------- | :------------: | :--------: |
 | [Livetree Community Ltd](https://github.com/livetreetech/)                       | [DecentralML](./decentral_ml.md)                     | [GitHub](https://github.com/livetreetech/)                 | ☐          |        ☐       |      ☐      |
+| [LimeChain](https://github.com/LimeChain)                       | [Polkadot Protocol Conformance Tests Research](./Polkadot-Protocol-Conformance-Tests.md)                     | [GitHub](https://github.com/LimeChain)                 | ☐          |        ☐       |      ☐      |
 
 ### 🏄 Wave 19 - Q3 2023
 
