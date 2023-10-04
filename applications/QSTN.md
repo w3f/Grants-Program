@@ -187,13 +187,13 @@ Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-priv
 
 ### Overview
 
-- **Total Estimated Duration:** 12 months
+- **Total Estimated Duration:** 15 months
 - **Full-Time Equivalent (FTE):**  8 employees (4 developers, 3 designers, 1 blockchain architect [Orrin])
 - **Total Costs:** 10,000 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-- **Estimated duration:** 12 months
+- **Estimated duration:** 15 months
 - **FTE:**  8 employees
 - **Costs:** 10,000 USD
 
