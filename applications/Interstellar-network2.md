@@ -192,6 +192,14 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 |      1. | Display Circuit update       | We will modify the current display circuit to enable a more comfortable user experience by decreasing the cognitive load needed for the user to read the screen. - likely by adding specific sub-circuits to manage a set of probabilities of displaying segments for each frame, then fine tuned segments ON/OFF per frame to improve readbility
 |      2. | Light security screen     | We will provide a less secure but very comfortable to read secure screen version using fading with less blinking (link)  - this  non-screenshot proof version will be used later with our adaptive security framework                                                                      |
 
+**Additional information (reason for amendment):**
+
+As we prioritize the user experience and aim to showcase the FPS improvement and overall viusal improvement for the user compared to the previous milestone, there is no need for a Docker here. Instead, we provide an offline demo app to simplify the evaluation.
+
+However, if you'd like to test the full pipeline for this milestone, we can provide you with both a Docker and an online version of the app and the related demo tutorial.
+
+
+
 
 
 
