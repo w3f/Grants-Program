@@ -13,7 +13,7 @@
 	
 At QSTN, we aim to revolutionize the data collection landscape by addressing key challenges faced by traditional survey platforms. We understand that user engagement is essential for successful data collection, which is why we offer a gamified experience to incentivize users and boost response rates. Through our platform, businesses can easily fund surveys using digital tokens or NFTs, streamlining payment processes and ensuring faster and more efficient transactions.
 
-One of the most significant concerns in data collection is data privacy and security. We prioritize user trust and confidence by providing our proprietary data wallet, Cubby, which allows users to maintain full control over their data. This secure environment ensures that users' personal information remains private, making them more willing to share valuable insights. Additionally, we equip businesses with AI-assisted survey creation and advanced data analytics tools, enabling them to derive meaningful insights from survey responses and make data-driven decisions. Our strategic partnerships with prominent blockchain projects like NEAR and Stellar further enhance our platform's capabilities and foster interoperability within the Web3 ecosystem. Through these solutions, we aim to create a compelling and user-centric data collection platform that empowers businesses and individuals alike.
+One of the most significant concerns in data collection is data privacy and security. We prioritize user trust and confidence by providing our data wallet, Cubby, which allows users to maintain full control over their data. This secure environment ensures that users' personal information remains private, making them more willing to share valuable insights. Additionally, we equip businesses with AI-assisted survey creation and advanced data analytics tools, enabling them to derive meaningful insights from survey responses and make data-driven decisions. Our strategic partnerships with prominent blockchain projects like NEAR and Stellar further enhance our platform's capabilities and foster interoperability within the Web3 ecosystem. Through these solutions, we aim to create a compelling and user-centric data collection platform that empowers businesses and individuals alike.
 
 Demo: NEAR Protocol
 https://drive.google.com/file/d/1P2NRbIx2VZhfIQ6FHKO5_YOyhFZHjbfW/view?usp=sharing
@@ -29,25 +29,11 @@ For scope, QSTN can be broken down into two different user experiences:
 
 We want to bring both experiences to the DOT ecosystem and allow businesses to fund, track and engage users via their own surveys with the assistance of AI. 
 
-- Orrin Campbell, CEO: A marketing graduate from NYU, Orrin is an influential figure in the entertainment industry with millions of streams and followers. His media presence has been showcased on platforms like Dr. Phil, and his degree in marketing adds valuable insights to QSTN's growth strategy.
-
-Anibal Suriel, Chief Legal Officer: An NYU alum with a remarkable legal career, Anibal has worked for prestigious firms like KARM and R3. He possesses extensive legal expertise and is admitted to the bar in three states: New York, Florida, and Washington DC.
-
-Brigitte Pinewiski, Chief Partnership Officer & Web3 Physician: An author of "Wealthcare: Demystifying Web3 and the Rise of Personal Data Economies," Brigitte is also a Healthcare Advisor, Nex Cubed member, and TiE Board and Charter Member. Her expertise in Web3 and AI adds a unique perspective to the team, aligning with QSTN's focus on innovation in the healthcare realm. 
-
-Carlos Guiamaraes, CTO & Lead Developer: Carlos brings a strong technical acumen to QSTN. As a skilled developer for over 15 years, his contributions are integral to the back-end architecture and tool integration, ensuring a seamless and efficient platform.
-
-Eduardo Gomes, Junior Developer: A promising talent, Eduardo contributes to QSTN's development efforts. With his skills and passion for identity, he adds value to the KYC and verification of users within the QSTN platform.
-
-Melanie Zhang, Creative Director: An NYU graduate with a keen eye for design and user experience, Melanie's artistic vision enriches the platform's aesthetics and fosters engagement with QSTN's users.
-
-Daniel Fadely, Financial Analyst: An NYU alum with a strong finance and investment background, Daniel's involvement in opening and running the investment club at NYU, along with experience in managing various portfolios, enhances the financial planning and analysis for QSTN.
-
 ### Project Details
 
 ### Ecosystem Fit
 
-- QSTN is an innovative Web3 survey platform that combines blockchain, gamification, and AI to revolutionize data collection. Businesses can easily fund surveys using digital tokens or NFTs, offering users enticing rewards for their participation. Our proprietary data wallet, Cubby, ensures users maintain full control over their data, ensuring privacy and security.
+- QSTN is an innovative Web3 survey platform that combines blockchain, gamification, and AI to revolutionize data collection. Businesses can easily fund surveys using digital tokens or NFTs, offering users enticing rewards for their participation. Our data wallet, Cubby, ensures users maintain full control over their data, ensuring privacy and security.
 
 To ensure this vision becomes a reality, we're harnessing the power of Safe's decentralized custody protocol and collective asset management platform. Users signing up on QSTN have their email addresses utilized to create individualized Safe vaults, powered by Web3 authentication. This integration enables users to complete surveys, earn zero-knowledge proofs, and subsequently claim their rewards directly within their EVM wallet. 
 
@@ -114,6 +100,20 @@ We see a market opportunity to use this model for data aggregation, gamifying ma
 ## Team :busts_in_silhouette:
 
 ### Team members
+
+- Orrin Campbell, CEO: A marketing graduate from NYU, Orrin is an influential figure in the entertainment industry with millions of streams and followers. His media presence has been showcased on platforms like Dr. Phil, and his degree in marketing adds valuable insights to QSTN's growth strategy.
+
+Anibal Suriel, Chief Legal Officer: An NYU alum with a remarkable legal career, Anibal has worked for prestigious firms like KARM and R3. He possesses extensive legal expertise and is admitted to the bar in three states: New York, Florida, and Washington DC.
+
+Brigitte Pinewiski, Chief Partnership Officer & Web3 Physician: An author of "Wealthcare: Demystifying Web3 and the Rise of Personal Data Economies," Brigitte is also a Healthcare Advisor, Nex Cubed member, and TiE Board and Charter Member. Her expertise in Web3 and AI adds a unique perspective to the team, aligning with QSTN's focus on innovation in the healthcare realm. 
+
+Carlos Guiamaraes, CTO & Lead Developer: Carlos brings a strong technical acumen to QSTN. As a skilled developer for over 15 years, his contributions are integral to the back-end architecture and tool integration, ensuring a seamless and efficient platform.
+
+Eduardo Gomes, Junior Developer: A promising talent, Eduardo contributes to QSTN's development efforts. With his skills and passion for identity, he adds value to the KYC and verification of users within the QSTN platform.
+
+Melanie Zhang, Creative Director: An NYU graduate with a keen eye for design and user experience, Melanie's artistic vision enriches the platform's aesthetics and fosters engagement with QSTN's users.
+
+Daniel Fadely, Financial Analyst: An NYU alum with a strong finance and investment background, Daniel's involvement in opening and running the investment club at NYU, along with experience in managing various portfolios, enhances the financial planning and analysis for QSTN.
 
 - Orrin Campbell – QSTN CEO 
 Twitter - https://twitter.com/realorrin
