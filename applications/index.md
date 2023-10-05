@@ -6,14 +6,15 @@ layout: applications
 Use this page for an overview of all public grants and their status. Use the sidebar to navigate directly to a specific grant application document.
 
 :::info
-This page provides an overview of accepted grant applications, their progress and a link to their GitHub repositories. In cases where the link points to an organization, you should be aware that the grant application itself **is often an independent project unrelated to other work done by the teams**.
+This page provides an overview of accepted grant applications, their progress, and a link to their GitHub repositories. In cases where the link points to an organization, you should be aware that the grant application itself **is often an independent project unrelated to other work done by the teams**.
 
-Furthermore, the page lists terminations which happened due to a breach of the terms of the grants programs. Additionally, teams might have decided to stop working on the grant—though not necessarily on the project itself—for various reasons, which is not reflected on this sheet.
+Furthermore, the page lists terminations that happened due to a breach of the terms of the grants programs. Additionally, teams might have decided to stop working on the grant—though not necessarily on the project itself—for various reasons, which is not reflected on this sheet.
 
 Besides, **there is a clear difference between an application being accepted and the successful delivery of the respective project**, and only teams that have successfully delivered a milestone are allowed to make public announcements on the matter or to use our [badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). The badge can also never be used as a general endorsement for a team. Violations to this policy can be reported [here](mailto:grants@web3.foundation).
 :::
 
 - [2023](#2023)
+  - [🏄 Wave 20 - Q4 2023](#️-wave-20---q4-2023)
   - [🏄 Wave 19 - Q3 2023](#️-wave-19---q3-2023)
   - [🏄 Wave 18 - Q2 2023](#️-wave-18---q2-2023)
   - [🏄 Wave 17 - Q1 2023](#️-wave-17---q1-2023)
@@ -39,6 +40,13 @@ Besides, **there is a clear difference between an application being accepted and
   - [🏄 Wave 1 - Q1 2019](#️-wave-1---q1-2019)
 
 ## 2023
+
+### 🏄 Wave 20 - Q4 2023
+
+| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :--------- | :------------: | :--------: |
+| [Livetree Community Ltd](https://github.com/livetreetech/)                       | [DecentralML](./decentral_ml.md)                     | [GitHub](https://github.com/livetreetech/)                 | ☐          |        ☐       |      ☐      |
+| [LimeChain](https://github.com/LimeChain)                       | [Polkadot Protocol Conformance Tests Research](./Polkadot-Protocol-Conformance-Tests.md)                     | [GitHub](https://github.com/LimeChain)                 | ☐          |        ☐       |      ☐      |
 
 ### 🏄 Wave 19 - Q3 2023
 
@@ -84,7 +92,7 @@ Besides, **there is a clear difference between an application being accepted and
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :--------- | :------------: | :--------: |
-| [Interstellar](https://www.interstellar.gg/)                       | [Interstellar - Wallet Phase 2](./Interstellar-network2.md)                     | [GitHub](https://github.com/Interstellar-Network)                 | ☐          |        ☐       |      ☐      |
+| [Interstellar](https://www.interstellar.gg/)                       | [Interstellar - Wallet Phase 2](./Interstellar-network2.md)                     | [GitHub](https://github.com/Interstellar-Network)                 | ☐          |        ☒       |      ☐      |
 | [Valletech AB](https://valletech.eu/)                              | [DINFRA](./DINFRA.md)                                                           | [GitHub](https://gitlab.com/polkawatch)                           | ☐          |        ☒       |      ☐      |
 | [DAuth](https://github.com/DAuth-Network)                          | [DAuth](./dauth_network.md)                                                     | [GitHub](https://github.com/DAuth-Network)                        | ☐          |        ☐       |      ☐      |
 | [Galaxy.Do](https://galaxy.do)                                     | [Galaxy: Three-dimensional Web for Polkadot Users](./galaxy.md)                 | [GitHub](https://github.com/7flash)                               | ☐          |        ☒       |      ☐      |
@@ -92,7 +100,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Collective Intelligence Labs](https://collectiveintelligence.dev/)| [Omnichain Infrastructure](./CILA-omnichain-infrastructure.md)                  | [GitHub](https://github.com/Collective-Intelligence-Labs)         | ☐          |        ☒       |      ☐      |
 | [TradeLink](https://tradelink.pro/)                                | [Sandox](./sandox.md)                                                           | [GitHub](https://github.com/BEARlogin)                            | ☐          |        ☒       |      ☐      |
 | [Wunderbar Network](https://wunderbar.network/)                    | [Vue.js + TypeScript Substrate Front-End Template](./vue-typescript-substrate-frontend-template.md) | [GitHub](https://github.com/WunderbarNetwork) | ☐          |        ☐       |      ☐      |
-| [Profond.ai](https://www.profond.ai/)                              | [Profond](./Profond.md)                                                         | [GitHub](https://github.com/emarai)                               | ☐          |        ☐       |      ☐      |
+| [Profond.ai](https://www.profond.ai/)                              | [Profond](./Profond.md)                                                         | [GitHub](https://github.com/emarai)                               | ☐          |        ☒       |      ☐      |
 | [727.ventures](https://727.ventures)                               | [Patron](./patron.md)                                                           | [GitHub](https://github.com/727-Ventures)                         | ☐          |        ☒       |      ☒      |
 | [Supercomputing Systems AG](https://www.scs.ch)                    | [SARP - A Static Analysis Tool for Runtime Pallets](./sarp-basic-functionality.md) | [GitHub](https://github.com/scs)                               | ☐          |        ☒       |      ☒      |
 | [Ed Anderson](https://github.com/eca20)                            | [Blockchainia](./blockchainia.md)                                               | [GitHub](https://github.com/eca20)                                | ☐          |        ☐       |      ☐      |
