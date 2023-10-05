@@ -86,6 +86,7 @@ The project is composed of three primary open-source modules designed to support
 - coreapi-service:
     Description: Developed using Node.js and TypeScript, this backend service interfaces directly with the node-service. It enables developers and parachain teams to experiment with various chain configurations during the parachain setup phase. The flexibility it provides allows for the selection and testing of different nodes, optimizing for the ideal configurations on the parachain.
     License: Open-source (Apache 2.0)
+
 - ui-service:
     Description: An interface constructed with TypeScript and Next.js, it provides a user-friendly web dashboard that interfaces seamlessly with the coreapi-service. Its features empower users to deploy nodes with ease, giving them an insightful and real-time perspective on crucial metrics related to their nodes, which aids in optimizing node performance.
     License: Open-source (Apache 2.0)
@@ -244,6 +245,15 @@ For this proposal we focus on building and streamlining the process of setting u
 | 4. | Docker image support: We'll introduce a feature that allows users to set up nodes using their Docker image |Node type support: Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain | Integration of live network testing capabilities.	
 | 5. | Parachain Node Monitoring Dashboard (Grafana)	 | Customize Alert creation and integration via Email, Slack & Pagerduty |
 | 6. | Bug Fixes | Testing of the application including functional, performance, and security testing  | Successful user testing and feedback collection phase. | Release of comprehensive user guides and tutorials.
+
+### Current Status
+-  Completed Development of One Click Parachain Deployment Feature on GCP ✅
+-  Alpha Testting Started ✅
+-  Beta Testing Started with beta parachains ✅
+-  Completed Node type support & Implementing setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain ✅
+-  Completed Docker Support ✅
+-  Completed Parachain Node Monitoring Dashboard (Grafana) ✅
+-  Bug Fixes (In-Progress)
 
 
 
