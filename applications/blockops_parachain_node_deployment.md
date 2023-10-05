@@ -263,7 +263,7 @@ For this proposal we focus on building and streamlining the process of setting u
 | 1. | block-agent Architecture	| Design and develop the architecture of the block-agent, ensuring it's modular and scalable. | The agent will efficiently collect vital metrics such as CPU usage, memory consumption, network latency, and other relevant node performance indicators. |
 | 2. | Development of One Click Parachain Deployment Feature on Dedicated server | Development of Dedicated Node Provider Marketplace |
 | 3. | Improve UX Analytics Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. | Log Dashbooard | Ability to filter logs by different Log Levels | Setup Dashboard: We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
-| 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  Successful security and performance audit of the platform | 
+| 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  
 | 5. | Deployment Guide	 | A detailed guide on how users can deploy the block-agent across various node environments, ensuring compatibility and ease of setup. |
 
 ## Future Plans
