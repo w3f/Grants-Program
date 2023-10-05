@@ -134,10 +134,17 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 
 ## Development Roadmap :nut_and_bolt:
 
+### Overview
+
+- **Estimated duration:**  3 months ⌛️
+- **FTE:**  2 FTE
+- **Costs:**  30,000 USD 💰
+
+
 ## Milestone 1 - AssetHub Indexer Implementation first part
 - **Estimated duration:**  3 months ⌛️
 - **FTE:**  2 FTE
-- **Costs:**  25,000 USD 💰
+- **Costs:** 30,000 USD 💰
 
 
 | Sequence | Deliverable                                         | Description                                                                                                   |
@@ -146,39 +153,30 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 | 0b.   | Documentation                                       | Comprehensive inline code documentation and an explicit README file to guide the project setup and execution.|
 | 0c.   | Test Guidelines                                      | Testing will cover major functionality with unit tests and provide a guide for executing these tests.|
 | 0d.   | Docker Integration                                   | A Dockerfile will enable the project to run within a Docker container.                          |
-| 1.      | Backward Compatibility Maintenance             | Ensuring backward compatibility with current Uniques v1.                                                      |
-| 1a.   | Collection Schema Development              | Development of a GraphQL schema entity that represents the collection.                                        |
-| 1b.   | NFT Schema Development                       | Formulation and creation of a GraphQL schema entity representing Non-fungible tokens.                         |
-| 3a.   | Unique v1.1 List Handler                  | Implement a handler to index set pricing from the chain.                                               |
-| 3b.   | Unique v1.1 Buy Event                      | Handler designed to index buy events from the chain.                                                          |
-| 4a.   | NFT Pallet CREATE Handler                  | Handler created for indexing CREATE event from the chain.                                                     |
-| 4b.   | NFT Pallet MINT Event                      | Implement a handler to index MINT events from the chain.                                              |
-| 4c.   | NFT Pallet BUY Event                       | Development of an indexing handler for BUY events from the chain.                                             |
-| 4d.   | NFT Pallet LIST Handler                    | Deployment of a handler for indexing LIST events from the chain.                                              |
-| 4e.   | NFT Pallet SEND Handler                    | Deployment of a handler for indexing SEND events from the chain.                                              |
-| 4f.   | NFT Pallet BURN Event                      | Introduction of a handler to index BURN events from the chain.                                                |
-| 7a.   | On-chain Attributes Schema Design      | Development and design of a GraphQL schema entity representing on-chain attributes.                           |
-| 7b.   | On-chain Attributes CREATE Handler  | Implementing a handler to index the creation of an attribute for collection from the chain.                       |
-| 7c.   | On-chain Attributes CREATE for NFT  | development of a handler to index the creation of an attribute for NFT from the chain.                            |
-| 7d.   | On-chain Attributes CLEAR Handler    | Developing a handler to index clearance of the attribute for the collection from the chain.                   |
-| 7e.   | On-chain Attributes CLEAR for NFT    | Implementation of the indexing handler to clear an attribute for NFT from the chain.                          |
-| 7f.   | Metadata CREATE Handler                    | Deployment of an indexing handler to set metadata for the collection from the chain.                          |
-| 7g.   | Metadata CREATE for NFT                     | Creating an indexing handler to set metadata for NFT from the chain.                                          |
-| 7h.   | Metadata CLEAR Handler                      | Developing a handler to index clearance of metadata for the collection from the chain.                        |
-| 7i.   | Metadata CLEAR for NFT                       | Introducing a handler for indexing clearance of metadata for NFT from the chain.                              |
-| 7j.   | Metadata IPFS Integration Handler     | Design a handler to retrieve IPFS Metadata from the IPFS network.                                                 |
-| 7l.   | Metadata Schema Development                | Creating and designing a GraphQL schema entity representing metadata.                                     |
-| 8a.   | NFT Royalties Schema Integration      |Design and include royalty support within the GraphQL schema.                                                  |
-| 8b.   | NFT Royalties Addition Handler        | Implement a handler to add royalty into NFT.                                                 |
-| 8c.   | NFT Royalties PAYOUT Handler           |Creation of handler to index royalty payout events from the chain.                                             |
-| 9.      | Fungible Assets Schema Creation      |Design and formulation of a GraphQL schema entity representing fungible assets.                                |
-| 9.      | Fungible Assets Force Creation        |Handlers will be developed to add system tokens like KSM/DOT into fungible assets.                             |
-| 9.      | Fungible Assets CREATE Event          |An event handler for indexing the creation of a fungible event from a chain, such as (RMRK/USDT) will be developed.|
-| 9.      | Metadata Support for Fungible Assets | Implement a handler to add metadata to a fungible asset event from the chain.                          |
-| 9c.   | Fungible Asset Allowlist Setup        |Setting up allows list-based indexing of fungible assets.                                                       |
-| 10a.  | Data Views Development                |Construction of data views for efficient access to indexed data.                                               |
-| 10b.  | Implementing Metadata Caching Layer |Develop and retry IPFS metadata if un-indexed by 7j.                                                               |
-| 11.    | Transfer of Collection Ownership    |Incorporate functionality to transfer collection ownership.                                                    |
+| 1a.    | Backward Compatibility Maintenance             | Ensuring backward compatibility with current Uniques v1.                                                      |
+| 1b.   | Collection Schema Development              | Development of a GraphQL schema entity that represents the collection.                                        |
+| 1c.   | NFT Schema Development                       | Formulation and creation of a GraphQL schema entity representing Non-fungible tokens.                         |
+| 2.    | Unique v1.1 Handlers                  | Implement a handlers to index buy, set_price events from the chain.                                               |
+| 3.   | NFT Pallet Handlers                 | Handler created for indexing create, mint, buy, set_price, transfer, burn events from the chain.           |
+| 4a.   | On-chain Attributes Schema Design      | Development and design of a GraphQL schema entity representing on-chain attributes.                           |
+| 4b.   | On-chain Attributes Handlers        | Implementing a four handlers to index the creation and deletion of metadata set for collection and NFT from the chain. |
+| 5a.   | Metadata Schema Development                | Creating and designing a GraphQL schema entity representing metadata.                                     |
+| 5b.   | Metadata Handlers                   | Implementing a four handlers to index the creation and deletion of an attribute for collection and NFT from the chain.  |
+| 5c.   | Metadata IPFS Integration Handler     | Design a handler to retrieve IPFS Metadata from the IPFS network.                                                 |
+| 5d.   | Metadata IPFS Unification Handler     | Design and integrate the library to uniform IPFS metadata into one format (OpenSea,TZIP-16,ERC-5773, FXhash)    |
+| 6a.   | NFT Royalties Schema Integration      | Design and include royalty support within the GraphQL schema.                                                  |
+| 6b.   | NFT Royalties Addition Handler        | Implement a handler to add royalty into NFT.                                                 |
+| 6c.   | NFT Royalties PAYOUT Handler           |Creation of handler to index royalty payout events from the chain.                                             |
+| 7a.      | Fungible Assets Schema Creation      |Design and formulation of a GraphQL schema entity representing fungible assets.                                |
+| 7b.      | Fungible Assets Force Creation        |Handlers will be developed to add system tokens like KSM/DOT into fungible assets.                             |
+| 7c.      | Fungible Assets CREATE Event          |An event handler for indexing the creation of a fungible event from a chain, such as (RMRK/USDT) will be developed.|
+| 7d.      | Metadata Support for Fungible Assets | Implement a handler to add metadata to a fungible asset event from the chain.                          |
+| 7e.   | Fungible Asset Allowlist Setup        |Setting up allows list-based indexing of fungible assets.                                                       |
+| 8a.  | Data Views Development                |Construction of data views for efficient access to indexed data.                                               |
+| 8b.  | Implementing Metadata Caching Layer |Develop and retry IPFS metadata if un-indexed by Metadata IPFS Integration Handler.                                                               |
+| 9.    | Transfer of Collection Ownership    |Incorporate functionality to transfer collection ownership.                                                    |
+| 10a.    | Collection settings Schema Design    | Development and design of a GraphQL schema entity representing Collection settings     |
+| 10b.    | Collection settings handler    | Implement a handler to add collection settings into data                                                  |
 
 
 ## Future Plans 🔭
@@ -191,7 +189,7 @@ Upon the successful deployment of the AssetHub Indexer, our team plans to contin
 4. Establishment of user profiles to enable personalized user interfaces.
 5. Incorporation of constituent elements for individual NFT representation.
 6. Implement action components for functionalities like LIST, SEND, BUY, MINT, BURN, and Atomic Swap.
-6. Development of comprehensive statistical representations and analytics mechanisms.
+7. Development of comprehensive statistical representations and analytics mechanisms.
 8. Introduction of rankings to highlight top-performing users, collections, or items.
 9. Personalization of the user interface to enhance the user experience.
 10. Maintenance of compatibility with runtime upgrades and changes in the Kusama/Statemine ecosystem.
