@@ -255,8 +255,9 @@ Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-priv
 | 1. | Survey pallet | We will create a Substrate module that will allow users to complete a survey, earn a zero knowledge proof upon completion and then connect their Polkadot JS wallet in order to withdraw the pre-defined reward amount by interacting with the pallet. 
 | 2. | Survey pallet | We will create a Substrate module that will allow business to create a survey and then connect their Polkadot JS wallet in order to fund the pallet for respondents. 
 | 3. | Survey pallet UI | We will create a new UI for DOT users to be able to connect their Polkadot JS wallet, interact with the pallet to withdraw or fund survey rewards and mint their respective NFT media onto a local substrate chain. 
-| 4. | Substrate chain | The survey pallet of our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, withdraw DOT and then mint media on a local substrate chain [1.] and these transactions take place within our new UI [3.] with proof recorded by our ZKP [5] after being funded by the business [2] 
+| 4. | Substrate chain | The survey pallet of our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, withdraw DOT and then mint media on a local substrate chain [1.] and these transactions take place within our new UI [3.] with proof recorded by our ZKP [5] after being funded by the business [2] and recorded in the data wallet [6] 
 | 5. | ZKP Proof Generation | We will create an API for the Cubby data wallet to generate zero knowledge proofs upon survey completion on the Substrate chain - this ZKP will be the "receipt" to verify users are eligible to connect their wallet and withdraw rewards from a particular survey contract. 
+| 6. | Data Wallet | We will open source our data wallet which is an authorizathion layer within QSTN allowing users to interact and generate zero knowledge proofs upon survey completion on DOT - this wallet interacts with the pallets deployed by our local substrate node through our API. 
 
 ...
 
