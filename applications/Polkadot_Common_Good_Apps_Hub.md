@@ -269,7 +269,7 @@ Currently, our team has delved into certain facets of FRAME and XCM development 
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide a user tutorial to visualize the random value generated from the pallet. |
 | 1. | Randmoness Pallet | Develop the specifications and details described in the pallet randomness section. |
-| 2. | Dummy Random Pallet | A testing pallet for retrieving the random value will be developed. This pallet will test mostly the Randmoness trait implementaion. |
+| 2. | Dummy Random Testing Pallet | A testing pallet for reading the random value generated form the randomness pallet. This pallet will test mostly the Randmoness trait implementaion. |
 
 ## Future Plans
 
