@@ -1,7 +1,7 @@
 # Polkadot Common Good Apps Hub
 
 - **Team Name:** Polkadot Common Good Apps Hub
-- **Payment Address:** 15TYKbQYR7FC8wWf4f4eSSDunZg6PDGGVTw6G1WVtQCF3xN2 (Polkadot network / DOT)
+- **Payment Address:** 16a9hgY6qv2U8UkwKeerosoNzFhwN1Tp3B6HYy6JcRbXxT7R (Polkadot AssetHub / USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
