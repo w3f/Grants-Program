@@ -1,13 +1,9 @@
 # Plutonication
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 - **Team Name:** Plutonication
 - **Payment Address:** 1WmPE1X9Ykpb7QcVamPtUSRjEZy2GMDeTm5N72DyXYiqMCo (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 ## Project Overview :page_facing_up:
 
 ### Overview
@@ -233,8 +229,6 @@ Dušan Jánsky
 - **Registered Legal Entity:** None
 
 ### Team's experience
-
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
 
 #### [Rostislav Litovkin](http://rostislavlitovkin.pythonanywhere.com/aboutme)
 - Alumnus at Polkadot Blockchain Academy 2023 in Berkeley
@@ -480,3 +474,24 @@ This Polkadot.js extension is implemented in polkadot.js.org/apps, which means, 
 - Also on the demo video, it already works with polkadot.js.org/apps ^^
 
 - What I am trying to say is that it is not just limited to polkadot.js.org/apps, but it can work with any dApp that implements the extension package, which most of the dApps did.
+
+#### Wallet Connect does have both a [Dapp integration guide](https://docs.walletconnect.com/advanced/multichain/polkadot/dapp-integration-guide) and a [wallet integration guide](https://docs.walletconnect.com/advanced/multichain/polkadot/wallet-integration-guide) for Polkadot. Can you compare to this and what is missing that your solution would provide?
+
+- WalletConnect for Polkadot is not available for c#.
+
+- WalletConnect also is not optimised for use with Substrate.NetApi.
+This is very important because all of the c# projects currently building on Polkadot ecosystem are using Substrate.NetApi.
+
+#### You point out that the only way to connect a mobile wallet to a Dapp is through Substrate Connect or Vault, but afaik mobile wallets such as Talisman and Fearless will also let you connect.
+
+- Substrate Connect / Vault are not very elegant and do not work on any device. The device needs to have access to a camera, which for example consoles do not have. Desktops also do not come with webcam out of the box. Smartwatches also do not have access to camera.
+
+- Talisman is not a mobile wallet. Sorry, I do not understand the second part of the question.
+
+#### How do you plan to get developers to use your solution?
+
+- The developers want to provide secure and easy to use dApps. If they do not have to deal about key management, they can focus on other parts of development.
+
+- For users, it is very risky to expose the private key. This way, they never expose their private key. The developers should recognize this risk and solve it with this easy to use solution.
+
+- As far as I know, this is the only solution so far for c# that allows the users to connect their wallet to a Substrate.NetApi dApp.
