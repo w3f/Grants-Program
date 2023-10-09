@@ -8,62 +8,76 @@
 
 ### Overview
 
-- QSTN is a web application where users participate in surveys, quizzes and short questionnaires to earn virtual credit. 
-- QSTN is a blockchain enabled market research portal where users answer questions, earn credit and spend these rewards in our digital marketplace for tokenized goods (e.g. NFTs, metaverse wearables). 
+- QSTN is a Web3 survey marketplace where businesses fund surveys, reward participants, and uphold user privacy through our data wallet-driven profiles.
+- QSTN is a cutting-edge platform that combines AI-driven surveys with a secure data wallet. Our solution empowers users to earn digital rewards from surveys while maintaining privacy. We're revolutionizing data monetization in the digital age.
 	
-When we agree to terms and conditions, most of the time, our data gets sold and commodified without permission or compensation. QSTN acts as an “interface” for consumers to pay gate their information towards businesses.
+At QSTN, we aim to revolutionize the data collection landscape by addressing key challenges faced by traditional survey platforms. We understand that user engagement is essential for successful data collection, which is why we offer a gamified experience to incentivize users and boost response rates. Through our platform, businesses can easily fund surveys using digital tokens or NFTs, streamlining payment processes and ensuring faster and more efficient transactions.
 
-By compensating users for their data, we provide incentive for rich and meaningful insights. This information is then sold and accessed by our partners for market research purposes.
+One of the most significant concerns in data collection is data privacy and security. We prioritize user trust and confidence by providing our data wallet, Cubby, which allows users to maintain full control over their data. This secure environment ensures that users' personal information remains private, making them more willing to share valuable insights. Additionally, we equip businesses with AI-assisted survey creation and advanced data analytics tools, enabling them to derive meaningful insights from survey responses and make data-driven decisions. Our strategic partnerships with prominent blockchain projects like NEAR and Stellar further enhance our platform's capabilities and foster interoperability within the Web3 ecosystem. Through these solutions, we aim to create a compelling and user-centric data collection platform that empowers businesses and individuals alike.
 
-Since winning the Octopus Network Star Prize, we realize the importance of interoperability and the low transactional fees offered by Substrate due to their sharded blockchain mechanism; Octopus Network is supporting our app-chain. 
-			
--  Building on this, we would like Polkadot to be the next blockchain we implement; allowing its users to answer questionnaires, earn virtual credit and spend it for digital rewards minted and issued on Polkadot (e.g. NFTs). 
+Demo: NEAR Protocol
+https://drive.google.com/file/d/1P2NRbIx2VZhfIQ6FHKO5_YOyhFZHjbfW/view?usp=sharing
+
+-  Building on this, we would like Polkadot to be the next blockchain we implement; allowing its users to answer questionnaires, earn DOT rewards and mint NFTs upon completion.  
 
 The key to our platform is allowing users to monetize their personal information in a low gas, scalable environment and Polkadot meets both of these requirements. By supporting this initiative, the Web3 Foundation is investing in data infrastructure for the entire DOT ecosystem as well as creating a new “Play-to-Earn” model for data aggregation.
 
-For scope, QSTN can be broken down into three different user experiences:
-			1. User experience - general users create an account, complete on-boarding process and then have the ability to answer 5 daily questions in return for credit which can be spent within our NFT marketplace
+For scope, QSTN can be broken down into two different user experiences:
 
-			2. Business experience - businesses and corporate entities (e.g. DAOs and protocols) can establish an account to create their own questionnaire portal, reward users for their participation and track response rate 
+1. User experience - users create an account and then have the ability to complete 3 daily surveys in return for DOT tokens and NFTs
+2. Business experience - businesses create an account and build their own survey, rewarding users for their participation in DOT tokens and NFTs
 
-			3. Commission experience - businesses and corporate entities can pay a fee to have their questions slipped into the "User View" rotation and glean insights from our daily, active audience for their own market research purposes
-			
-We want to bring all three user experiences to the DOT ecosystem, supporting the general user in scope 1, businesses and protocols who want to manage their own questionnaire in scope 2 and the opportunity for more traditional Web2 businesses to collect market research from Web3 audiences in scope 3.
-
-- Founded by NYU graduate Orrin Campbell, QSTN was birthed by a recorded conversation with astrophysicist Neil deGrasse Tyson. During the interview, Neil argued that even if software is ‘free’, companies still profit from the sale, transfer, and storage of our information. 
-
-For example, did you know Google makes almost $120 million dollars a day in advertising revenue (e.g. targeted ads, placements)? Orrin thought about how to creatively address this problem and deliver his “promise to save the world.”
-
-Orrin has released NFTs with Mintbase, spoken on Cryptovoxels and Somnium panels as well as created a large social following behind his afrofuturistic aesthetic. 
-
-Completing the QSTN team triad are the Suriel brothers, who Orrin met at NYU. Jose Suriel is an NYU graduate who handles project management at Forge AI — bringing this expertise to assisting the development and timeline of the QSTN marketplace.
-
-Anibal Suriel is Jose’s twin brother and our head of legal, he is registered in New York and Miami; leveraging his time at KARM to create the legal framework and guidelines around data, compliance, and overall best practices.
-
-With a desire to build meaningful products and experiences, Orrin founded QSTN with the aim to empower internet users and provide alternative means of passive income, aided by the invaluable expertise of the notorious Suriel duo.
+We want to bring both experiences to the DOT ecosystem and allow businesses to fund, track and engage users via their own surveys with the assistance of AI. 
 
 ### Project Details
 
 ### Ecosystem Fit
 
-- QSTN is Web3 infrastructure to accelerate the adoption of data monetization. Since users can earn with or without a Web3 wallet, but have the option to create one, shows we are designed to be a Web2 on-ramp into the world of Web3.
+- QSTN is an innovative Web3 survey platform that combines blockchain, gamification, and AI to revolutionize data collection. Businesses can easily fund surveys using digital tokens or NFTs, offering users enticing rewards for their participation. Our data wallet, Cubby, ensures users maintain full control over their data, ensuring privacy and security.
 
-We aim to do this by taking advantage of the low gas, scalable environment offered on DOT to allow users to earn credits, mint NFTs and transfer assets without exorbitant transactional fees. 
+To ensure this vision becomes a reality, we're harnessing the power of Safe's decentralized custody protocol and collective asset management platform. Users signing up on QSTN have their email addresses utilized to create individualized Safe vaults, powered by Web3 authentication. This integration enables users to complete surveys, earn zero-knowledge proofs, and subsequently claim their rewards directly within their EVM wallet. 
 
-Our design is a centralized system “wrapped” with Web3 extensions so that users can sign up using Twitter or Facebook but still earn credits and NFTs once they decide to create a wallet. 
+SAFE is a non-custodial solution by Consensys (https://safe.global/), it facilitates wallet creation utilizing email addresses. Currently, SAFE lacks support for Polkadot. Given this, we will enable users to interact directly with the pallet, easing the reward redemption process post-survey completion. The wallet we will use is Polkadot JS wallet. 
+
+We aim to take advantage of the low gas, scalable environment offered on DOT to allow users to earn DOT, mint NFTs and transfer assets without exorbitant transactional fees. 
 
 - Right now, our target audience can be broken down in the following groups:
-1. Data privacy enthusiasts (Web2 and Web3)
-2. High school and college students seeking additional income 
-3. Web3 DAOs and Protocols which need to capture market research (e.g. DAO governance) 
-4. Web2 users wishing to matriculate to Web3 but no upfront capital or resources to get into the space
 
-Currently, we have over 3,000 sign-ups for the waitlist, confirmed private test sessions with Encode Club, Octopus Network and a couple projects on NEAR Protocol.
+A. Agencies 
+* Marketing agencies 
 
-Since we also have a desire to partner with Web2 organizations to help demonstrate the value of our platform, we are currently in talks with the following educational institutions to run private sessions.
-- Jack & Jill of America, Inc.
-- New York University
-- The Gray Matter Experience
+*Target agencies to use for experiential campaigns + source to relevant clients 
+
+B. Brands
+* Airline 
+* Beauty brands
+* Food delivery 
+* Record labels 
+
+*Target customer experience, customer success and marketing team 
+
+C. Educational institutions 
+* Colleges 
+* Universities  
+
+*Target professors, teachers and researchers
+
+D. Web3 
+* Analytics firms - Addressable, Chainalysis, Dune Analytics, Kaiko, Messari, Nansen, Pantera Capital, QuickNode, Solidus Labs 
+* DAOs 
+* Foundations 
+* NFT communities 
+* Exchanges 
+
+*Target marketing, community outreach and developer support 
+
+Here are some notable milestones we've achieved since inception:
+
+1. Secured a position in Outlier Venture's NEAR Base Camp, successfully closing our pre-seed round.
+2. Developed a data wallet feature, now generating zero-knowledge proofs upon survey completion.
+3. Integrated AI to assist businesses in crafting surveys and evaluating authenticity of responses through a "credibility" score.
+4. Garnered preliminary interest from notable entities like NYU, Estée Lauder, and L'Oréal for potential test partnerships, in collaboration with the NEAR Foundation.
+5. Were honored with acceptance into the Polkadot Blockchain Academy, although a visit was precluded due to visa constraints.
 			
 - Our platform is able to act as a Web3 on-ramp because our design easily onboards novice, less experienced internet users. This is important because in our initial feedback, we learned a lot of internet users want to get into blockchain but do not have the capital, resources or know where to start.
 
@@ -77,7 +91,7 @@ QSTN builds on their concept by offering more exciting, engaging rewards, increa
 
 Our unique offering is the ability for Web2 users to answer questions, earn credits and buy NFTs within a "gas-less" environment but having the option to connect their wallet and mint once familiar with the technology.
 
-We spent the past year participating in over 5 accelerators to help drive the brand awareness within the Web3 space and ensure we become the "go-to" market research portal in blockchain. 
+We spent the past year participating in over 7 accelerators to help drive the brand awareness within the Web3 space and ensure we become the "go-to" market research portal in blockchain. 
 
   - There has been an increase in the “Play-to-Earn” model and a couple players who are making noise in the space would include Rabbit Hole (educational), NEAR Crowd (micro task), Axie Infinity (gaming), Pi (validation), and Sweat Coin (exercise). 
 
@@ -87,27 +101,43 @@ We see a market opportunity to use this model for data aggregation, gamifying ma
 
 ### Team members
 
-- Orrin Campbell – QSTN founder, CEO and blockchain architect who will be designing the workflow and user experience **team leader**
+- Orrin Campbell, CEO: A marketing graduate from NYU, Orrin is an influential figure in the entertainment industry with millions of streams and followers. His media presence has been showcased on platforms like Dr. Phil, and his degree in marketing adds valuable insights to QSTN's growth strategy.
 
-Twitter - https://twitter.com/realorrin
+Anibal Suriel, Chief Legal Officer: An NYU alum with a remarkable legal career, Anibal has worked for prestigious firms like KARM and R3. He possesses extensive legal expertise and is admitted to the bar in three states: New York, Florida, and Washington DC.
 
-Instagram - https://instagram.com/realorrin
+Brigitte Pinewiski, Chief Partnership Officer & Web3 Physician: An author of "Wealthcare: Demystifying Web3 and the Rise of Personal Data Economies," Brigitte is also a Healthcare Advisor, Nex Cubed member, and TiE Board and Charter Member. Her expertise in Web3 and AI adds a unique perspective to the team, aligning with QSTN's focus on innovation in the healthcare realm. 
 
-Linkedin - https://linkedin.com/in/realorrin
+Carlos Guiamaraes, CTO & Lead Developer: Carlos brings a strong technical acumen to QSTN. As a skilled developer for over 15 years, his contributions are integral to the back-end architecture and tool integration, ensuring a seamless and efficient platform.
 
-GitHub - https://github.com/@qstnus
-			
-- Anibal Suriel - QSTN Head of Legal **team member**
-			
-Linkedin - https://linkedin.com/in/anibal-suriel-esq
+Eduardo Gomes, Junior Developer: A promising talent, Eduardo contributes to QSTN's development efforts. With his skills and passion for identity, he adds value to the KYC and verification of users within the QSTN platform.
 
-Lafi Raed – QSTN Lead Developer **team member** 
+Melanie Zhang, Creative Director: An NYU graduate with a keen eye for design and user experience, Melanie's artistic vision enriches the platform's aesthetics and fosters engagement with QSTN's users.
 
-GitHub - https://github.com/shadow111 
+Daniel Fadely, Financial Analyst: An NYU alum with a strong finance and investment background, Daniel's involvement in opening and running the investment club at NYU, along with experience in managing various portfolios, enhances the financial planning and analysis for QSTN.
 
-Phillip Coleman - Entreprenuer In Residence **team member**
-			
-Linkedin - https://www.linkedin.com/in/phillip-coleman-791b1475
+- Orrin Campbell – QSTN CEO 
+Twitter - https://twitter.com/realorrin
+Instagram - https://instagram.com/realorrin
+Linkedin - https://linkedin.com/in/realorrin
+GitHub - https://github.com/@qstnus
+
+Anibal Suriel - QSTN CLO 
+Linkedin - https://linkedin.com/in/anibal-suriel-esq
+
+Brigitte Piniewski - QSTN CPO
+LinkedIn - https://www.linkedin.com/in/brigittepiniewski/ 
+
+Carlos Guiamaraes – QSTN CTO & Lead Developer 
+GitHub - https://github.com/sekmet
+
+Eduardo Gomes - QSTN Junior Developer 
+GitHub - https://github.com/Eduardogbg 
+
+Melanie Zhang - Creative Director 
+LinkedIn - https://www.linkedin.com/in/melanie-y-zhang/ 
+
+Daniel Fadely - Financial Analyst 
+LinkedIn - https://www.linkedin.com/in/daniel-f-436377203/ 
 	
 ### Contact
 
@@ -139,11 +169,30 @@ https://medium.com/oct-network/spring-2022-octopus-accelerator-star-prize-winner
 5. QSTN is 1 of 5 teams to receive the official Star Prize
 https://www.youtube.com/watch?v=72QqZ6MIxeo
 
-Orrin Campbell
-	Along with his entrepreneurial pursuits in Web3, Orrin has a large following in entertainment due to his national television appearance on Dr. Phil during an hour long episode about his experience as a "cyborg from the future."
-			
-	In an attempt to build on this platform, Orrin has amassed a large following on social media who follow his advice and input on topics ranging from music, fashion, entertainment and technology (Web3). 
-			
+6. QSTN is featured on XFounders -
+https://youtu.be/35Mv9rt5KHQ 
+
+7. QSTN wins the Parsiq unicornization contest -
+https://hub.parsiq.net/unicornization 
+
+8. QSTN participates in the Mintbase Demo Day -  
+https://blog.mintbase.xyz/wrapping-up-mintbases-demo-day-f13fd192c8fc
+
+9. QSTN presents at the Mastercard x NEAR Demo Day - 
+https://youtu.be/TkfHLgsBxiE
+
+Orrin Campbell (Founder bio) - 
+
+Orrin is a multi-faceted entrepreneur and entertainer, renowned for his innovative strides in the fintech and entertainment sectors. As the founder of QSTN, Orrin combines his passion for technology and entertainment to revolutionize data monetization through gamification.
+
+A recent graduate of NYU Stern School of Business, Orrin's journey is anything but ordinary. Before delving into fintech, he made waves as an entertainer, amassing millions of streams on Spotify. His charisma and talent led him to a highly publicized appearance on Dr. Phil's national television show, which catapulted him to social media stardom with 250,000 followers on TikTok, 15,000 on Instagram, and 40,000 on YouTube.
+
+Leveraging his newfound audience and background in entertainment, Orrin ventured into fintech with a vision to empower individuals to take control of their data. He founded QSTN, a groundbreaking platform that bridges the gap between data collection and user engagement through gamification and rewards.
+
+In just two years, Orrin’s leadership and innovation at QSTN have been recognized with wins in two blockchain competitions. He has also been an active participant in prestigious accelerators, including Verizon, GitHub, and NYU Future Labs. Orrin’s visionary approach has piqued the interest of giants like L'Oréal and Estée Lauder, with whom discussions are ongoing for potential collaborations. Additionally, NYU, his alma mater, is among the entities showing interest in QSTN. The platform has already garnered the attention of over 3,000 test users, marking a promising start.
+
+Orrin's combination of entertainment flair and technological acumen positions him as a trailblazer in the fintech space. Through QSTN, he is not just transforming data collection but reshaping the very fabric of user engagement and empowerment in the digital age.
+		
 Dr. Phil episode - 
 https://www.youtube.com/watch?v=ReRddYVYfHU
 			
@@ -156,16 +205,15 @@ https://tiktok.com/@realorrin (250,000 followers)
 https://instagram.com/realorrin (18,000 followers) 
 https://youtube.com/c/realorrin (41,000 followers) 
 
-
 ### Team Code Repos
 
 - https://github.com/qstnus
-- https://github.com/qstn-ansr 
-- https://github.com/shadow111 
+- [https://github.com/qstn-ansr ](https://github.com/orgs/QSTN-US/repositories)
+- [https://github.com/shadow111 ](https://github.com/sekmet)
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/shadow111
+- [https://github.com/shadow111](https://github.com/sekmet)
 
 ### Team LinkedIn Profiles (if available)
 
@@ -187,13 +235,13 @@ Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-priv
 
 ### Overview
 
-- **Total Estimated Duration:** 12 months
+- **Total Estimated Duration:** 15 months
 - **Full-Time Equivalent (FTE):**  8 employees (4 developers, 3 designers, 1 blockchain architect [Orrin])
 - **Total Costs:** 10,000 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-- **Estimated duration:** 12 months
+- **Estimated duration:** 15 months
 - **FTE:**  8 employees
 - **Costs:** 10,000 USD
 
@@ -204,22 +252,22 @@ Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-priv
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a Medium article that documents our transition to Polkadot and details how users of QSTN can connect their DOT wallet to our application, mint & transfer purchased media onto the DOT blockchain as well as save their survey ID on-chain on a local substrate chain. 
-| 1. | Survey pallet | We will create a Substrate module that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
-| 2. | Survey pallet UI | We will create a new UI for DOT users to be able to ask questions, receive credit and screenshot their response on-chain; these design assets will include landing pages and layouts which we will open source to the DOT community 
-| 3. | Substrate chain | The survey pallet of our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, mint media on a local substrate chain as well as create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [1.] and then save the completed survey ID on-chain as proof of completion [1.] these transactions take place within our new UI [2.]
+| 1. | Survey pallet | We will create a Substrate module that will allow users to complete a survey, earn a zero knowledge proof upon completion and then connect their Polkadot JS wallet in order to withdraw the pre-defined reward amount by interacting with the pallet. 
+| 2. | Survey pallet | We will create a Substrate module that will allow business to create a survey and then connect their Polkadot JS wallet in order to fund the pallet for respondents. 
+| 3. | Survey pallet UI | We will create a new UI for DOT users to be able to connect their Polkadot JS wallet, interact with the pallet to withdraw or fund survey rewards and mint their respective NFT media onto a local substrate chain. 
+| 4. | Substrate chain | The survey pallet of our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, withdraw DOT and then mint media on a local substrate chain [1.] and these transactions take place within our new UI [3.] with proof recorded by our ZKP [5] after being funded by the business [2] and recorded in the data wallet [6] 
+| 5. | ZKP Proof Generation | We will create an API for the Cubby data wallet to generate zero knowledge proofs upon survey completion on the Substrate chain - this ZKP will be the "receipt" to verify users are eligible to connect their wallet and withdraw rewards from a particular survey contract. 
+| 6. | Data Wallet | We will open source our data wallet which is an authorizathion layer within QSTN allowing users to interact and generate zero knowledge proofs upon survey completion on DOT - this wallet interacts with the pallets deployed by our local substrate node through our API. 
 
 ...
 
-
 ## Future Plans
 
-- In the short term, we are competing in hackathons to better our understanding of Web3 products and services we can use to scale out the QSTN market research portal. 
-
-Particularly, we will be participating in the Filecoin Sustainable Blockchain Summit Hackathon, Encode x Chainlink Hackathon and submitting for a couple accelerator programs which include VC pitching. 
-
-In conjunction with our hacking and education, we will be testing our existing application privately with different companies ranging from Encode Club, Filecoin, Octopus Network, NEAR Protocol to Ocean Protocol. 
-
-- Looking towards the future, we are excited to host our first NFT launch event on NEAR Protocol (October) and work with more traditional Web2 businesses in music, entertainment and market research to onboard the next million users into Web3
+- As QSTN, our major product milestones for the next 6 months include:
+1. Developing the Cubby Data Wallet, which will replace user profiles, enabling users to authorize data requests directly from a Chrome extension wallet. This feature enhances user control over their data and streamlines the authorization process.
+2. Creating the Cubby File Storing Platform, a decentralized storage solution powered by Filecoin. Users and businesses can securely store their files, with the owner holding the only decryption key, ensuring privacy and exclusive access.
+3. Collaborating with NYU, L'Oréal, and Estée Lauder to test and refine our platform by incentivizing their respective communities, helping us gather valuable insights and optimize our offerings.
+4. Expanding our clientele beyond web3 startups to include larger legacy brands and marketing agencies. Our goal is to establish QSTN as the "go-to" self-service marketing tool for a diverse range of businesses seeking innovative and effective solutions.
 
 ## Additional Information :heavy_plus_sign:
 
@@ -227,6 +275,6 @@ In conjunction with our hacking and education, we will be testing our existing a
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Please request a private invite to our repo (https://github.com/qstn-ansr) for our existing prototype on NEAR Protocol 
+- Please request a private invite to our repo ([https://github.com/qstn-ansr](https://github.com/QSTN-US) for our existing prototype on NEAR Protocol 
 - If there are any other teams who have already contributed (financially) to the project.
 - NEAR Foundation (grants program)  
