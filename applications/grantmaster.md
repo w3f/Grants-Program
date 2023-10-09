@@ -169,13 +169,13 @@ To get a feeling how the page will look like, I prepared this Hi Fi wireframe. K
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
+- **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):**  0.6 FTE
 - **Total Costs:** 10,000 USD
 
 ### Milestone 1 — Development of API and Grant Frontend
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 5 months
 - **FTE:**  0.6
 - **Costs:** 10,000 USD
 
