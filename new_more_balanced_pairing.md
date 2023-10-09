@@ -1,4 +1,4 @@
-# New more balanced pairing with a view toward acceleration of the aggregate BLS signature scheme
+# New more balanced pairing with a view toward acceleration of the BLS multi-signature scheme
 
 - **Team Name:** Dmitrii Koshelev
 - **Payment Address:** This information will be given later.
