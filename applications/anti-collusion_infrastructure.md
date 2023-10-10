@@ -6,32 +6,43 @@
 
 ## Project Overview
 
+This application is a response from the [anti-collusion infrastructure RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/anti-collusion_infrastructure.md).
+
 ### Overview
 
-A lot of blockchain applications that involve some kind of voting, like on-chain quadratic funding, can potentially be exploited via collusion and bribery (see [Vitalik’s post about collusion](https://vitalik.ca/general/2019/04/03/collusion.html)). So project is focused to implement an example on substrate blockchain of MACI.
+Aims to be a simple MACI implementation for the Polkadot eco-system, similar to the existing one on Ethereum ([MACI](https://github.com/privacy-scaling-explorations/maci))
+Project is following this specification [specifications](https://github.com/privacy-scaling-explorations/maci/tree/9b1b1a631090ee89d2bc12f4bcef7763e42caef0/specs) and derived from [this ethresearch post](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413). This means that most of the project details are based on the researches done on [MACI](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413).
 
-[Noc2 RFP proposal](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/anti-collusion_infrastructure.md)
+As explained in the RFP, the smart contract aims to allow users to vote on a quadratic voting and avoid/minimize the risk of collusion, keep the votes anonymous and allow the users to change their votes until the voting process ends.
+
+Other developers can use this example, to use quadratic voting, also to implement zk-snark functionality in their own
+projects based on this example.
 
 ### Project Details
 
-I dont expected final version of an project with all alghorithms, but project architecture is looks like:
-* implementing an substrate pallet, where we can create a new poll
-* implement tool to call substrate pallet and create poll, to calculate result and provide result to substrate pallet using zk-snark
-* implement tool for verification of calculation of pool author using zk-snark toolchain
-  
+Following the specifications of MACI as linked above, here is an overview of the architecture and core functionalities of project. 
+
+MACI is a substrate pallet that allow its users to vote while making collusion among participant difficult (if the operator is honest) and retain censorship resistance, correct execution and anonymity of votes. 
+
+MACI has two kind of users: one **operator** and 0..n **voter(s)** (also called user here under). 
+
+The operator role is to create a poll (and publish his public key, known by all), start the sign-up period, process all the voters commands, generate the result of each commands, tally the votes and generate a zk-SNARK proof that the result is valid. 
+
+The voter role is to sign-up for a vote and then vote. 
+
+Secrecy of the votes are possible by using cryptographic operations. As described in the MACI specs, each users and the coordinator have a key-pair used to publish encrypted messages and for the coordinator to decrypt those messages.
+
 Approximate scheme of architecture:
 
 ![MACI Scheme](https://github.com/zrowdev/substrate-maci/blob/main/arch.jpg?raw=true)
 
-Coordinator will use MACI Pallet to create a new poll, then coordinator will use voting tool to create a new poll, generate keypair, sign up user in pallet, cast a vote, calculate batch of vote, tallying result of poll, verify tallied result of vote and provide result to substrate pallet using zk-snark.
-So coordinator cant censorship, all users can verify result of poll.
-
 ### Ecosystem Fit
 
-  * Our project fit to ecosystem by an example of using an a online voting application, that is realised in many blockchains with a resistant to bribery and collisions.
-  * Target audience is developers/dapps
-  * Our project is a part of substrate ecosystem, so we will use substrate pallets and substrate stack.
-  * Different developers can use it as example to use quad vote tallying in their projects, how they can use zk-snark in their projects and etc.
+MACI can be used by any blockchain that based on a substrate, in next milestone i want to implement also ink! smart contract, that will be support by any blockchain with ink!.
+
+It can be reused - as provided or modified - by any blockchain, dApp, infrastructures, ... that wishes to provide a way to make quadratic votes for its users. 
+
+I'm not aware of any similar project on Substrate that a quadratic, provable, anonymous and anti-collusion voting system.
   
 ## Team :busts_in_silhouette:
 
