@@ -70,7 +70,7 @@ After the conclusion of each agreement, participants can review their counterpar
 
 ## Architecture Overview
 
-![arch](https://github.com/Deitos-Network/Grants-Program/assets/71947919/fc8b7fb4-8918-488a-91db-a3d9f9444ef9)
+![msg1154506685-35640](https://github.com/Deitos-Network/Grants-Program/assets/1779865/ee89f33b-3e35-47af-a3fc-059417dad702)
 
 ### Network Components
 
