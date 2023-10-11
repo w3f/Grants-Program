@@ -68,7 +68,7 @@ Our design philosophy is rooted in user-centricity and simplicity. With a clean 
 
 Our team brings a wealth of experience from the Polkadot ecosystem. Here are some highlights of our contributions:
 
-- **DotForDummies.com**: A significant portion of our team has been instrumental in the development and management of [dotfordummies.com](http://dotfordummies.com), further showcasing our deep involvement with Polkadot-related projects.
+- **DotForDummies**: A significant portion of our team has been instrumental in the development and management of [dotfordummies.co](http://dotfordummies.co), further showcasing our deep involvement with Polkadot-related projects.
   
 - **Localization Initiatives**: We've actively contributed to broadening Polkadot's global reach by working on Hindi translations for the Polkadot website. This not only showcases our technical prowess but also our commitment to making Polkadot more accessible to non-English speaking communities.
   
@@ -133,9 +133,83 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Smart Contract Architecture
 
-Our smart contract architecture is built using the Ink! framework tailored for the Polkadot ecosystem. The UMC handles user registration, login, and profile management, ensuring data privacy and security. The CMC focuses on content management, including saving URLs, categorizing them, and ensuring data is retrievable in a user-friendly format. Both contracts work in tandem, providing a holistic solution for users to manage their reading experience on Dexel seamlessly.
+Our smart contract architecture is built using the Ink! framework. Our goal is to build a modular contract system where each module (or contract) will handle specific functionalities, allowing for better scalability, manageability, and upgradability.
 
-By leveraging the benefits of Polkadot's interoperability and scalability, our smart contracts ensure efficient operations, reduced gas fees, and enhanced security.
+- **User Management Contract (UMC)**
+- **Content Management Contract (CMC)**
+- **Customization & Preferences Contract (CPC)**
+
+#### 2. Data Flows and Interactions
+
+**2.1 User Authenticationn**
+
+- User interacts with the frontend and opts to authenticate.
+- The frontend communicates with the UMC to initiate the process.
+- UMC interacts with the user's Polkadot wallet for authentication.
+- Upon successful authentication, UMC stores user-specific keys and other necessary data on-chain.
+
+**2.2 Saving Content**
+
+- User pastes a URL on the frontend to be saved.
+- Frontend communicates with the CMC to process this request.
+- CMC fetches content linked to the URL, categorizes it, and stores the content reference (and metadata) on the Crust Network.
+- The reference (or content ID) from Crust Network is then saved on-chain within the CMC, linked to the user's ID.
+
+**2.3 Reading Content**
+
+- User requests to read saved content via the frontend.
+- Frontend communicates with the CMC to fetch the content reference for the user.
+- The content itself is fetched from the Crust Network using the reference.
+- Any customization preferences (like font, background) are fetched from the CPC.
+- The content is then presented to the user as per their customization preferences.
+
+**2.4 Setting Customization Preferences**
+
+- User sets their reading preferences on the frontend.
+- These preferences are then communicated to the CPC.
+- CPC stores these preferences on-chain linked to the user's ID.
+
+
+#### 3. Contract Interactions
+
+**UMC**:
+
+- Interacts with the user's Polkadot wallet for authentication.
+- Stores user-specific details on-chain.
+
+**CMC**:
+
+- Responsible for content categorization.
+- Interacts with the Crust Network for content storage and retrieval.
+- Maintains on-chain references to content stored on the Crust Network.
+
+**CPC**:
+
+- Stores user customization preferences on-chain.
+- Provides these preferences when requested.
+
+
+#### 4. Security Mechanisms
+
+Given the nature of the application, certain security mechanisms are crucial:
+
+- **Rate Limiting**: Prevent any spam or DDoS attacks on the contract functions.
+- **Data Validation**: Ensure that any data (like URLs) provided to the contracts is valid and safe.
+- **Upgradability**: Design contracts such that they can be upgraded in the future without data loss or major disruptions.
+
+This architecture and data flow provide a robust and scalable foundation for Dexel's functionalities. However, as with all technical designs, it's essential to undergo thorough testing, including unit tests, integration tests, and security audits, especially given the decentralized and financial nature of the platform.
+
+By leveraging the benefits of Polkadot's interoperability and scalability, our smart contracts would ensure efficient operations, reduced gas fees, and enhanced security.
+
+### Testing Strategy
+
+- **Unit Tests**: 
+  - **Contracts**: We'll use the built-in testing framework that comes with the Ink! platform to ensure each function behaves as expected.
+  - **UI**: We'll employ `Jest` combined with `React Testing Library` to test individual components and their interactions.
+
+- **Integration Tests**: These tests will ensure the frontend and smart contracts work seamlessly together, providing users with real-time feedback and updates.
+
+- **End-to-End (E2E) Tests**: We're considering using `Cypress` for real user scenarios from start to finish, ensuring the entire application works correctly.
 
 
 ## Future Plans :rocket:
