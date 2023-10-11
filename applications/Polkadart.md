@@ -1,7 +1,7 @@
 # Polkadart
 
-- **Team Name:** JURIMETRIC TECNOLOGIA LTDA
-- **Payment Address:** 0xF9310880F753a2327146dD19EC2207E6bA482A19 (USDC)
+- **Team Name:** EXPERIO S M LTDA
+- **Payment Address:** 0x67a341f26A9c6211773Bf315B6226105cd1b2F24 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -12,7 +12,7 @@
 
 - Development of a library that allows users to connect to Polkadot/Substrate’s nodes on Flutter platform. 
 
-- Our team is developing a ranking-based voting system based on the Substrate's based blockchain and for that, we need to create the Dart-substrate library. Today, there are multiple mobile applications built on Flutter and, until now, there is no possibility to connect to Substrate's nodes.
+- The library is already used in a few production environments to decode the storage and extrinsics from Substrate based chains. Today, there are multiple mobile applications built on Flutter and together with React Native it is one of the most popular frameworks to develop multi-platform mobile applications, but until now, there was no possibility to fully interact with Substrate's node.
 
 ### Project Details
 
@@ -22,7 +22,7 @@ This library will be written purely in Dart technology from scratch.
 ```
 - Documentation of core components, protocols, architecture, etc. to be deployed:
 ```
-We will follow Polkadot specifications and, as a license for PolkaDart library, we will use Apache 2.0.
+We will follow Polkadot specifications and, as a license for Polkadart library, we will use Apache 2.0.
 ```
 - What your project is _not_ or will _not_ provide or implement:
 ```
@@ -51,51 +51,36 @@ Pocket4 was similar to PolkaDart but it was discontinued for lack of progress an
 
 ### Team members
 
-- Lohann Ferreira, Lead Blockchain Architect
 - Leonardo Custodio, Blockchain Engineer
-- Hanna Coutinho, iOS Developer
+- Lohann Ferreira, Lead Blockchain Architect
 - Kawaljeet Singh, Flutter Developer
-- Luiza Adena Engers, Product Manager
-- Fabio Binder, Blockchain Engineer
 - Gabriel Okura, Flutter Developer
 - Bruno Pastre, Senior Flutter Developer
 
 ### Contact
 
-- **Contact Name:** Luiza Adena Engers
-- **Contact Email:** luiza@jurimetric.com.br
-- **Website:** www.jurimetric.com.br
+- **Contact Name:** Leonardo Garcia Custodio
+- **Contact Email:** leonardo@custodio.me
+- **Website:** https://www.linkedin.com/in/leogcustodio/
 
 ### Legal Structure
 
-- **Registered Address:** Rua Monsenhor Celso, 154, Centro, Curitiba-Paraná, Brasil.
-- **Registered Legal Entity:** Jurimetric Tecnologia Ltda.
+- **Registered Address:** Rua Capitao Souza Franco, 350 - Ap 22 - Curitiba/PR - Brasil
+- **Registered Legal Entity:** Experio S M Ltda
 
 ### Team's experience
+
+**Leonardo Custodio**
+
+Leonardo has being working with Polkadot/Substrate stack for the past 27 months. At his current position he makes SDKs that allows game developers to work easily with Substrate based chain. Before that he was the Lead Mobile Developer of Inovatso where he has created multiple applications for the general public like picPics and other entreprise applications using Flutter.
 
 **Lohann Ferreira**
 
 Lohann have a deep understanding of Polkadot/Substrate stack amongst other blockchain technologies. Previously worked at [First Foundry](https://www.firstfoundry.co/) as Senior Software Engineer. Founder and lead engineer at [Jurimetric](https://jurimetric.com.br/). Co-founder of [Veever](https://veever.global/), which through the combination of beacons, a web platform, and a mobile app aims to assist people with visual impairment to easily get around and interact with the urban environment. He is focused on solving big problems with simple ambitious solutions.
 
-**Leonardo Custodio**
-
-Leonardo has being working with Polkadot/Substrate stack for the past 14 months. At his current position he makes SDKs that allows game developers to work easily with substrate based chain. Before that he was the Lead Mobile Developer of Inovatso where he has created multiple applications for the general public like picPics and other entreprise applications using Flutter.
-
-**Fábio Binder**
-
-Binder has over 25 years of experience with development. Currently, he is the Program Head at PUCPR of the [Apple Developer Academy](https://www.linkedin.com/company/apple-developer-academy-pucpr/mycompany/). He was recognized as an Apple Distinguished Educator in 2019, for doing amazing things with Apple technology in and out of the classroom. He joined Jurimetric because he wants to be a part of the Web 3 movement as a hands-on developer of blockchain technology.
-
-**Hanna Coutinho**
-
-Currently working as an iOS developer at Snowman Labs. She's a scholarship student at [Apple Developer Academy](https://www.linkedin.com/company/apple-developer-academy-pucpr/mycompany/) and is pursuing a Bachelor's Degree in Computer Information Systems, at PUCPR (Paraná, Brazil). Hanna's biggest dream is to work at a tech company where she can bring positive social impacts to minorities. A fun fact about her, she's also a Lawyer, but she found a true passion in technology, programming, and design.
-
 **Kawaljeet Singh**
 
 Before starting to work as a full-time flutter developer at Rankanizer, Kawal was working as a freelance Flutter Developer at Inovatso and on other projects. In his free time, he loves to create open-source tools and plugins in dart to help the Flutter community. He is a blockchain enthusiast and is super dedicated to learning and bringing ideas to life.
-
-**Luiza Adena**
-
-Luiza is Jurimetric's Product Manager. She founded a legal tech called Arbi-ON and has experience with problem-solving through creative thinking. Luiza aims to make society more just and she believes Rankanizer has the potential to empower people equally.
 
 **Gabriel Okura**
 
@@ -111,21 +96,15 @@ He is fascinated about writing scalable, testable and maintainable code and has 
 - https://github.com/rankanizer/polkadart
 - https://github.com/Lohann
 - https://github.com/leonardocustodio
-- https://github.com/binderman
-- https://github.com/hannapcf
 - https://github.com/justkawal
-- https://github.com/LuizaJurimetric
 - https://github.com/gabrielokura
 - https://github.com/pastre
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/lohannferreira
 - https://www.linkedin.com/in/leogcustodio
-- https://www.linkedin.com/in/binder
-- https://www.linkedin.com/in/hannapcf
+- https://www.linkedin.com/in/lohannferreira
 - https://www.linkedin.com/in/kawal74153
-- https://www.linkedin.com/in/luizaadenaengers
 - https://www.linkedin.com/in/gabriel-motelevicz-okura-aa95491b6
 - https://www.linkedin.com/in/bpastre
 
@@ -145,11 +124,11 @@ Described above.
 
 ## Overview
 
-- **Total Estimated Duration:** 7 months.
+- **Total Estimated Duration:** 15 months.
 - **Full-Time Equivalent (FTE):** 4.
-- **Total Costs:** 50,000 USD.
+- **Total Costs:** 75,000 USD.
 
-### Milestone 1 — 
+### Milestone 1 — Completed
 
 - **Estimated duration:** 4 months.
 - **FTE:**  4.
@@ -166,7 +145,7 @@ Described above.
 | 1c.  | Tests         | Unit tests for deliverables above  |
 
 
-### Milestone 2 — 
+### Milestone 2 — Completed
 
 - **Estimated duration:** 1 month.
 - **FTE:**  4.
@@ -182,23 +161,54 @@ Described above.
 | 2b.  | Websockets | We will add websockets support to the above. |
 | 2e.  | Tests     | Unit tests for deliverables above  |
 
-### Milestone 3 — 
+### Milestone 3 — Ongoing
 
-- **Estimated duration:** 2 months.
-- **FTE:**  4.
-- **Costs:** 15,000 USD.
+- **Estimated duration:** 6 months
+- **FTE:**  2.
+- **Costs:** 20,000 USD.
 
+|Number|Deliverable|    Specification                   |
+|:---: |  ---      |             ---                    |
+| 0a.  | License          | Apache 2.0                         |
+| 0b.  | Documentation    | We will provide markdown documentation of how to install and use the API. |
+| 0c.  | Testing Guide    | We will provide sample scripts on how to use it. |
+| 0d.  | Docker           | We will provide a Dockerfile(s) that can be used to test the PoC. |
+| 0e.  | Article/Workshop | We will publish an example flutter project using the library to explain what was done and how to use it. |
+| 3a.  | Substrate Uri    | Implement Substrate's standard derivation format that applies to seeds and mnemonics. |
+| 3b.  | Encrypt/Decrypt  | Use Substrate's Bip39 password to encrypt/decrypt seeds and mnemonics. |
+| 3c.  | Ed25519          | Support Ed25519 signatures and key derivation |
+| 3e.  | Sign & Verify    | Sign and verify messages using ed25519 keypairs |
+| 3f.  | Substrate Signed Extensions | Support substrate's signed extensions |
+| 3g.  | AssetHub Signed Extensions | Support AssetHub's signed extensions |
+| 3h.  | Transaction Subscriptions   | Support transaction subscription |
+| 3i.  | Event Subscriptions         | Support runtime event subscription |
+| 3j.  | Keyring          | Create a package that manage a set of keys in a consistent environment |
+| 3k.  | Crypto           | Utilities needed for signing, hash and encode/decode messages |
+| 3l.  | Tests            | Unit tests for deliverables above  |
+| 3m.  | Pub.dev          | Publish to pub.dev                 |
+
+### Milestone 4 — 
+
+- **Estimated duration:** 4 months
+- **FTE:**  2.
+- **Costs:** 20,000 USD
+  
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
 | 0a.  | License       | Apache 2.0                         |
 | 0b.  | Documentation | We will provide markdown documentation of how to install and use the API. |
 | 0c.  | Testing Guide | We will provide sample scripts on how to use it. |
 | 0d.  | Docker        | We will provide a Dockerfile(s) that can be used to test the PoC. |
-| 0e.  | Article/Workshop | We will publish an example flutter project using the library to explain what was done and how to use it. |
-| 3a.  | Keyring      | We will port the keyring management     |
-| 3d.  | Crypto       | We will add the utilities needed for signing transactions |
-| 3e.  | Tests     | Unit tests for deliverables above  |
-| 3f.  | Pub.dev   | Publish to pub.dev for V1.0.0      |
+| 4a¹.  | Research sr25519 | More research needs to be done to decide what is the best path forward to support sr25519, one of the following might be done |
+| 4a².  | Rewrite Schnorrkel in Dart | Rewrite [schnorrkel](https://github.com/w3f/schnorrkel) in pure dart |
+| 4a³.  | Use rust schnorrkel | Make dart wrappers to use rust bindings to use schnorrkel lib |
+| 4b.  | Ecdsa/Secp256k1  | Support Ecdsa/Secp256k1 signatures and key derivation |
+| 4c.  | Sign & Verify    | Sign and verify messages using sr25519 and ecdsa keypairs |
+| 4e.  | Custom RPC | Support custom RPC methods |
+| 4f.  | Custom Signed Extensions | Support custom signed extensions |
+| 4g.  | Multisig Account | Implement's Substrate's Multisig Account |
+| 4h.  | Tests            | Unit tests for deliverables above  |
+| 4i.  | Pub.dev          | Publish to pub.dev |
 
 ## Future Plans
 

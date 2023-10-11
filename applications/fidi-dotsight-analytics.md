@@ -7,7 +7,7 @@
 - **Payment Address:** 14fptYf88mjarGJ3gAjhd8YH3Cefdgx4C8Jb6chvJXFszb2i (USDT / Polkadot)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-This project is a response to Keegan Quigley’s [RFP #1539](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/analysis-website-and-data-platform.md) inspired by Rob Habermeier’s Polkadot forum [post](https://forum.polkadot.network/t/dune-analytics-style-data-service-for-polkadot-kusama/271).
+This project is a response to Keegan Quigley’s [RFP #1539](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/analysis-website-and-data-platform.md) inspired by Rob Habermeier’s Polkadot forum [post](https://forum.polkadot.network/t/dune-analytics-style-data-service-for-polkadot-kusama/271).
 
 ### Overview
 

@@ -8,7 +8,7 @@ Unless instructed otherwise, please submit all your milestones via PR to the [Gr
 
 ## Invoice
 
-Although a milestone needs to be reviewed and accepted, you can submit your invoice alongside your delivery pull request through [this form](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform).
+After a milestone is reviewed and accepted, you can submit your invoice alongside your delivery pull request through [this form](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform).
 
 ## Content
 

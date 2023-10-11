@@ -167,3 +167,10 @@ a:hover.navbar__item{
   border-left: 5px solid rgb(0, 0, 0);
   background-color: rgba(0, 255, 0, 0.15);
 }
+
+/* Border around details */
+details {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 10px;
+}

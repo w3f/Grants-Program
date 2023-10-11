@@ -5,7 +5,7 @@
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :
-Proposal for the RFP titled [ink!/pallet/solidity performance benchmarking](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/implementation-benchmarking.md).
+Proposal for the RFP titled [ink!/pallet/solidity performance benchmarking](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/implementation-benchmarking.md).
 
 ### Overview
 There are multiple ways to implement the logic in substrate i.e using pallets or ink smart contracts, or even writing solidity code and compiling it to WASM with the help of a solang compiler. We have to benchmark the performance metrics of the logic implemented using each of the above methods. This will help new developers to decide the best tool to implement the logic.
