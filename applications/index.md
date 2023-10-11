@@ -48,6 +48,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Livetree Community Ltd](https://github.com/livetreetech/)                       | [DecentralML](./decentral_ml.md)                     | [GitHub](https://github.com/livetreetech/)                 | ☐          |        ☐       |      ☐      |
 | [LimeChain](https://github.com/LimeChain)                       | [Polkadot Protocol Conformance Tests Research](./Polkadot-Protocol-Conformance-Tests.md)                     | [GitHub](https://github.com/LimeChain)                 | ☐          |        ☐       |      ☐      |
 | [KodaDot](https://kodadot.xyz/)                       | [AssetsHub NFT indexer](./kodadot_assethub_nft_indexer_statemine_statemint.md)                     | [GitHub](https://github.com/kodadot)                 | ☐          |        ☐       |      ☐      |
+| [Apollos Collective](https://rhys.tech)                       | [Infimum](./infimum.md)                     | [GitHub](https://github.com/rhysbalevicius)                 | ☐          |        ☐       |      ☐      |
 
 ### 🏄 Wave 19 - Q3 2023
 
