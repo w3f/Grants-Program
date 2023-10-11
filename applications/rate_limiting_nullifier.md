@@ -6,7 +6,7 @@
 - **Team Name:** Bilinearity
 
 - **Payment Address:** 5EhDGkJAh1ZMPVXwzyAWYwnXqczTNyWyirsth2Hyq8wKAPMb(USDC on Polkadot)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 ## Project Overview :page_facing_up:
@@ -176,13 +176,13 @@ Only investigation into available proof systems, example circuits, and on-chain 
 
 - **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
 - **Full-Time Equivalent (FTE):**  6 FTE
-- **Total Costs:** $10,000
+- **Total Costs:** $20,000
 
 ### Milestone 1 Semaphore Pallet
 
 - **Estimated duration: 1 Month** 
 - **FTE:** 1.5
-- **Costs:** $2500 USD
+- **Costs:** $5000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -200,7 +200,7 @@ Only investigation into available proof systems, example circuits, and on-chain 
 
 - **Estimated Duration: 1 Month** 
 - **FTE:** 1.5
-- **Costs:** $2500 USD
+- **Costs:** $5000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -209,15 +209,15 @@ Only investigation into available proof systems, example circuits, and on-chain 
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Rate-limiting Nullifier Circuit | We will implement a a circuit for generating proofs conformant to Rate Limiting Nullifier(with Semaphore circuit as a starting point) |
-| 2. | Rate-Limiting Nullfiier verifier Pallet | We will implement a Substrate pallet which will allow for verification of Rate-Limiting Nullifier  zk proofs. |
-| 3. | Rate-Limiting Nullfiier verifier Pallet | The Y Substrate pallet will allow registering new "groups", or anonymous sets of users.  |
-| 4. | Rate-Limiting Nullfiier verifier Pallet | The Substrate pallet will allow updating existing "groups" with additional anonymous users |
+| 2. | Rate-Limiting Nullifier verifier Pallet | We will implement a Substrate pallet which will allow for verification of Rate-Limiting Nullifier  zk proofs. |
+| 3. | Rate-Limiting Nullifier verifier Pallet | The Y Substrate pallet will allow registering new "groups", or anonymous sets of users.  |
+| 4. | Rate-Limiting Nullifier verifier Pallet | The Substrate pallet will allow updating existing "groups" with additional anonymous users |
 
 ### Milestone 3 RLN Example application: Private P2P Multiwriter event feed Pallet
 
 - **Estimated Duration:** 1 Month
 - **FTE:** 1
-- **Costs:** $2000 USD
+- **Costs:** $4000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -233,7 +233,7 @@ Only investigation into available proof systems, example circuits, and on-chain 
 
 - **Estimated Duration:** 2 Months
 - **FTE:** 2
-- **Costs:** $3000 USD
+- **Costs:** $6000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
