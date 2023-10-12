@@ -1,5 +1,9 @@
 # XCM library & tools
 
+:::caution
+This Request for Proposals is currently considered **under development**, meaning one or more grants have been signed to address the topic. We might be interested in additional implementations, but it’s better to double check this with the grants team.
+:::
+
 * **Status:** [Implemented](https://github.com/w3f/Grants-Program/blob/master/applications/ParaSpell_follow-up2.md), [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/xcm-tools.md), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/xcm-domain-service.md)
 * **Proposer:** [Bryan Chen](https://github.com/xlc)
 * **Projects you think this work could be useful for** : Every parachain.

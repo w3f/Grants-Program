@@ -24,13 +24,11 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | RFP | Last Updated |
 | :-- | :----------: |
 | [anti-collusion_infrastructure.md](RFPs/anti-collusion_infrastructure.md) | 21.09.2023 |
-| [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 07.10.2022 |
-| [ISO_20022.md](RFPs/ISO_20022.md) | 20.09.2023 |
+| [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 12.10.2023 |
+| [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |
 | [parachain_validation_conformance_testing.md](RFPs/parachain_validation_conformance_testing.md) | 18.01.2023 |  
 | [sub-consensus.md](RFPs/sub-consensus.md) | 23.02.2022 |
-| [uptane-for-substrate-design-and-scope.md](RFPs/uptane-for-substrate-design-and-scope.md) | 04.03.2023 |
 | [user-account-access-analysis.md](RFPs/user-account-access-analysis.md) | 07.01.2023 |
-| [xcm-tool.md](RFPs/xcm-tool.md) | 21.09.2023 |
 
 </details>
 
@@ -39,11 +37,9 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | RFP | Last Updated |
 | :-- | :----------: |
 | [alternative_polkadot_host_implementations.md](RFPs/alternative_polkadot_host_implementations.md) | 02.03.2023 |
-| [alternative-polkadot-js-api-console.md](RFPs/alternative-polkadot-js-api-console.md) | 19.05.2023 |
 | [analysis-website-and-data-platform.md](RFPs/analysis-website-and-data-platform.md) | 21.09.2023 |
 | [data_analysis_tools.md](RFPs/data_analysis_tools.md) | 21.09.2023 |  
 | [decentralized-security-marketplace.md](RFPs/decentralized-security-marketplace.md) | 25.09.2023 |  
-| [grant_management_webapp.md](RFPs/grant_management_webapp.md) | 25.09.2023 |
 | [identity-directory.md](RFPs/identity-directory.md) | 20.09.2023 |
 | [IDE_for_ink_Smart_Contracts.md](RFPs/IDE_for_ink_Smart_Contracts.md) | 20.09.2023 |
 | [implementation-benchmarking.md](RFPs/implementation-benchmarking.md) | 20.09.2023 |
@@ -53,6 +49,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [polkadot-protocol_conformance_tests.md](RFPs/polkadot-protocol_conformance_tests.md) | 21.09.2023 |
 | [raft-validators.md](RFPs/raft-validators.md) | 23.05.2023 |
 | [Static-Analysis-for-Runtime-Pallets.md](RFPs/Static-Analysis-for-Runtime-Pallets.md) | 27.09.2023 |
+| [xcm-tool.md](RFPs/xcm-tool.md) | 21.09.2023 |
 
 </details>
 
@@ -62,11 +59,13 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | RFP | Last Updated |
 | :-- | :----------: |
 | [a-and-v-topology.md](RFPs/a-and-v-topology.md) | 04.09.2023 |
+| [alternative-polkadot-js-api-console.md](RFPs/alternative-polkadot-js-api-console.md) | 19.05.2023 |
 | [appi.md](RFPs/appi.md) | 20.07.2021 |
 | [bpf-contracts.md](RFPs/bpf-contracts.md) | 06.01.2023 |
 | [candle-auction.md](RFPs/candle-auction.md) | 02.02.2022 |  
 | [crowdloan_front_end_template.md](RFPs/crowdloan_front_end_template.md) | 25.04.2023 |  
 | [epassport-zk-validation.md](RFPs/epassport-zk-validation.md) | 21.03.2023 |
+| [grant_management_webapp.md](RFPs/grant_management_webapp.md) | 25.09.2023 |
 | [ksm-tipping-button.md](RFPs/ksm-tipping-button.md) | 20.07.2021 |  
 | [multi-chain-block-explorer.md](RFPs/multi-chain-block-explorer.md) | 27.09.2023 |
 | [on-chain-quadratic-funding.md](RFPs/on-chain-quadratic-funding.md) | 29.03.2022 |  
@@ -78,6 +77,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [social-recovery-wallet.md](RFPs/social-recovery-wallet.md) | 03.03.2023 |
 | [staking-rewards-collector-front-end.md](RFPs/staking-rewards-collector-front-end.md) | 20.07.2021 |  
 | [uncollateralized-stablecoin-research.md](RFPs/uncollateralized-stablecoin-research.md) | 01.01.2023 |
+| [uptane-for-substrate-design-and-scope.md](RFPs/uptane-for-substrate-design-and-scope.md) | 04.03.2023 |
 | [validator-selection-algorithm.md](RFPs/validator-selection-algorithm.md) | 25.09.2023 |
 | [validator-setup-maintenance.md](RFPs/validator-setup-maintenance.md) | 24.08.2023 |
 | [wallet-aggregator-library.md](RFPs/wallet-aggregator-library.md) | 09.03.2023 |
