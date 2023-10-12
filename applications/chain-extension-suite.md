@@ -1,4 +1,3 @@
-
 # Chain Extension Suite
 
 - **Team Name:** Deep Ink Ventures GmbH
