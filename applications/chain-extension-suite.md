@@ -186,6 +186,10 @@ Addressing this gap, the Chain Extension Suite, in harmony with the [Hookpoints 
 
 ### Legal Structure
 
+Registered Address: Solmsstraße 11 10961 Berlin - Kreuzberg
+Registered Legal Entity: Deep Ink Ventures GmbH
+
+
 - Deep Ink Ventures GmbH, registered with the commercial register at the local court of Berlin, HRB 247342
 
 
