@@ -2,7 +2,7 @@
 
 - **Team Name:** Apenotic DID Wallet
 - **Payment Address:** 0x33fb2c2a76427A128D2Cd63f9fD21Ee553250dDb (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -19,6 +19,7 @@ Apenotic's integration with Polkadot, along with protocols like Kilt and Litentr
 1. **Kilt Protocol Integration:** By integrating with Kilt Protocol, we leverage its capabilities in handling verifiable, revocable, and privacy-preserving credentials. This integration enhances the security and privacy features of Apenotic's DID platform. Users can benefit from the advanced credential management and privacy-preserving functionalities offered by Kilt Protocol, ensuring a more robust and user-centric digital identity experience within our ecosystem.
 2. **Litentry Integration:** Litentry is known for its focus on aggregated identity data, reputation, and user-centric identity management. By integrating with Litentry, Apenotic can tap into its rich identity-related data sources. This integration enables our platform to provide users with a comprehensive and accurate representation of their digital identities, enhancing trust and transparency in the Web3 environment.
 3. **Polkadot Ecosystem:** As part of the Polkadot ecosystem, Apenotic benefits from the inherent interoperability and scalability of Polkadot's parachain infrastructure. This integration enables seamless communication and data sharing between Apenotic and other projects within Polkadot. Users can leverage their decentralized identities across various applications and services within the broader Polkadot network, ensuring a cohesive and versatile digital identity experience.
+4. **Future Integration with Hyperledger:** Apenotic has plans to further enhance interoperability by integrating with the Hyperledger ecosystem using the Cacti - Polkadot Connector. This integration not only aims to further enhance interoperability but also aligns with our vision to collaborate with enterprise-grade blockchain solutions. Hyperledger is often associated with enterprise blockchain solutions and has a strong emphasis on addressing business needs, including identity management, supply chain, and financial services. This integration will open up opportunities for collaboration between Apenotic and Hyperledger projects, bridging the gap between different blockchain ecosystems and expanding the reach of our decentralized identity solutions.
 
 In summary, Apenotic's integration with protocols like Kilt and Litentry, within the context of the Polkadot ecosystem, is a strategic move to provide users with a secure, privacy-centric, and interoperable digital identity solution. This collaborative approach aligns with the principles of decentralized identity in the Web3 era, empowering users to take control of their digital identities and seamlessly interact with a wide range of decentralized applications and services.
 
@@ -54,7 +55,7 @@ In summary, our team's passion for Apenotic arises from a desire to address crit
 
 **Pitch Deck**
 
-- Pitch Deck (PDF): https://shorturl.at/yMQ04
+- Pitch Deck: https://shorturl.at/yMQ04
 
 **Core Functionality / Features**
 
@@ -161,6 +162,7 @@ Apenotic, on the other hand, sets itself apart by offering a comprehensive decen
 ### Team members
 
 - Phelipe Mestre Peres | Founder & Product Designer
+- Shadman Hossain | Consultant
 - Deepak Chaudhary | Web3 Substrate/Rust Engineer
 - Cleber Silva | Full Stack Engineer
 - Paulo Vinicius Pachiani de Mello | Full Stack Engineer
@@ -185,6 +187,12 @@ None
 - 7 years | Front-end Developer: Mobile, Desktop, Kiosk, POS, and ATM
 - 2 years | Design Experience on Web3 related projects: WAX Blockchain (Crypto Wallet, WAX DeFi, WAX vIRL Marketplace), and Layerr.xyz (NFT Launch Pad for Creators)
 - Experience with Figma, XD, Sketch, Prototype, Wireframe, AB Testing and User Flow
+
+**Shadman Hossain**
+
+- 8 years | Hands-on Programming Experience.
+- 5 years | Blockchain Engineering Experience on expansive blockchain ecosystems such as Hyperledger, Cosmos, Ethereum, Solana, and Polkadot related projects: Crowdfunding and Parachain-Staking
+- Experience with Solidity, Python, Rust, Substrate, C/C++, Javascript, and ReactJS
 
 **Deepak Chaudhary**
 
@@ -211,13 +219,15 @@ None
 **Team GitHub accounts of all team members**
 
 - https://github.com/phemestre
+- https://github.com/Shadmoney
 - https://github.com/Aideepakchaudhary
 - https://github.com/CleberSilva93
 - https://github.com/PauloMello99
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
 - https://www.linkedin.com/in/phemestre/
+- https://www.linkedin.com/in/shadman-hossain/
 - https://www.linkedin.com/in/deepak--chaudhary/
 - https://www.linkedin.com/in/cleberaugustz/
 - https://www.linkedin.com/in/paulo-mello-266408154/
@@ -236,77 +246,64 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 
 ## Development Roadmap :nut_and_bolt:
 
-### **Overview**
+**Overview**
 
-- **Total Estimated Duration:** 6 months
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 3 FTE
-- **Total Costs:** $50,000 USD
+- **Total Costs:** $30,000 USD
 
-### **Milestone 1: Core Functionality Development**
+### **Milestone 1: UI Development**
 
-- **Estimated Duration:** 2 months
-- **FTE:** 1.5
-- **Costs:** $25,000 USD
-
-### Deliverables
-
-| Number | Deliverable | Specification |
-| --- | --- | --- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | Provide inline documentation and a basic tutorial explaining how to create a decentralized identity (DID) on Apenotic's platform. Include instructions on managing blockchain assets securely. |
-| 0c. | Testing and Testing Guide | Implement comprehensive unit tests to validate core functions. Provide a guide detailing how to run these tests. |
-| 0d. | Docker | Create Dockerfiles for testing Apenotic's core functionality. |
-| 0e. | Article | Publish an article/workshop explaining the development of Apenotic's core functionality, targeting blockchain enthusiasts. |
-| 1. | Substrate module: DID Generation | Develop DID generation and management in Substrate module. |
-| 2. | Substrate module: Decentralized Profiles | Implement decentralized profiles in Substrate module. |
-| 3. | Substrate module: Identity Verification | Enable decentralized identity verification in Substrate module. |
-| 4. | Substrate chain Integration | Create the Apenotic Substrate chain integrating modules. |
-| 5. | Library: DID Management | Deliver a JavaScript library (Library: ABC) for managing DIDs and credentials. |
-| 6. | Smart contracts: Credential Management | Begin work on ink! smart contracts for secure credential management. |
-
-### **Milestone 2: Additional Features and Interoperability**
-
-- **Estimated Duration:** 2 months
-- **FTE:** 1.5
-- **Costs:** $25,000 USD
-
-### Deliverables
-
-| Number | Deliverable | Specification |
-| --- | --- | --- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | Update documentation to include new features and enhanced functionality. |
-| 0c. | Testing and Testing Guide | Expand test coverage to validate new features and provide an updated testing guide. |
-| 0d. | Docker | Update Dockerfiles to reflect new features and functionalities. |
-| 0e. | Article | Publish an article/workshop showcasing additional features and interoperability improvements. |
-| 1. | Substrate module: Enhanced DID Management | Enhance DID management and interoperability in Substrate module. |
-| 2. | Substrate module: Extended Decentralized Profiles | Extend decentralized profile capabilities in Substrate module. |
-| 3. | Substrate module: Improved Identity Verification | Improve decentralized identity verification in Substrate module. |
-| 4. | Interoperability | Implement compatibility with multiple DID methods. |
-| 5. | Wallet Integration | Begin integration with additional blockchain wallets. |
-| 6. | Smart contracts: Credential Management | Continue work on ink! smart contracts for credential management. |
-
-### **Milestone 3: User Interface and Accessibility**
-
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 1 month
 - **FTE:** 1
-- **Costs:** $15,000 USD
+- **Costs:** $10,000 USD
 
 ### Deliverables
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | Update documentation to include UI usage instructions. |
-| 0c. | Testing and Testing Guide | Test UI components thoroughly and provide a guide on how to conduct UI testing. |
-| 0d. | Docker | Update Dockerfiles to reflect UI enhancements. |
-| 0e. | Article | Publish an article/workshop introducing the user interface and its accessibility features. |
-| 1. | User Interface Development | Develop the user-friendly interface for Apenotic's platform. |
-| 2. | Accessibility | Ensure accessibility for non-technical users. |
-| 3. | User Testing | Conduct user testing to refine the UI. |
-| 4. | Multichain Wallet Support | Implement a multichain wallet support feature. |
-| 5. | dApp Integration | Integrate Apenotic with select decentralized applications (dApps). |
-| 6. | Smart contracts: Credential Management | Progress on ink! smart contracts for secure credential management. |
+| 0b. | Initial UI | Develop the initial user-friendly interface for Apenotic's platform. |
+| 0c. | Documentation | Provide initial documentation for the UI. |
+| 0d. | Testing and Testing Guide | Implement basic testing and provide a guide on how to run these tests for the UI. |
+| 0e. | Docker | Create Dockerfiles for testing the UI components. |
+| 0f. | Article | Publish an introductory article explaining the UI development within the Polkadot ecosystem. |
+
+### **Milestone 2: Kilt Protocol Integration**
+
+- **Estimated Duration:** 1 month
+- **FTE:** 1
+- **Costs:** $10,000 USD
+
+### Deliverables
+
+| Number | Deliverable | Specification |
+| --- | --- | --- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Kilt Protocol Integration | Integrate Kilt Protocol into the Apenotic platform, enabling advanced credential management and privacy-preserving functionalities. |
+| 0c. | Documentation | Update documentation to include Kilt Protocol integration details. |
+| 0d. | Testing and Testing Guide | Perform testing and provide a guide on how to test the Kilt Protocol integration. |
+| 0e. | Docker | Update Dockerfiles to reflect integration enhancements. |
+| 0f. | Article | Publish an article explaining the Kilt Protocol integration within Apenotic and its benefits. |
+
+### **Milestone 3: Testing, Bug Fixes, and Improvements**
+
+- **Estimated Duration:** 1 month
+- **FTE:** 1
+- **Costs:** $10,000 USD
+
+### Deliverables
+
+| Number | Deliverable | Specification |
+| --- | --- | --- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Testing and Bug Fixes | Conduct comprehensive testing of the integrated UI and Kilt Protocol components, identify and fix bugs and issues. |
+| 0c. | Documentation | Update and expand documentation to include usage instructions, developer guides, and best practices for Apenotic's platform. |
+| 0d. | Testing Guide | Provide a guide on how to conduct testing for the entire platform. |
+| 0e. | Docker | Update Dockerfiles to reflect the latest testing configurations. |
+| 0f. | Article | Publish an article/workshop explaining the progress made in testing, bug fixes, and improvements. |
+
+With this adjustment, the roadmap now includes a total of 3 FTEs and aligns with your specified duration and budget. Each milestone retains a one-month duration.
 
 Apenotic's development roadmap outlines the evolution of our DID wallet, focusing on security, usability, and market expansion over an 6-month period. Each milestone represents a significant step toward achieving our goal of providing a user-centric decentralized identity solution for the Web3 era.
 
