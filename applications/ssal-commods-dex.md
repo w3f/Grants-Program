@@ -219,7 +219,7 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Fully Connected App | We will deliver the fully integrated app. Smart contracts will be deployed to Astar, user interface will be connected to the blockchain backend, and the app itself will be made available to a testing group. |
+| 1. | Fully Connected App | We will deliver the fully integrated app. The user interface will be connected to the blockchain backend, and the app itself will be made available to a testing group. |
 | 2. | Collect User Feedback | Compile user feedback from advisors and potential clients. Revise contracts and UI and re-deploy. The deliverable will be organized as a GitHub page where each person's relevant feedback is described along with the related amendments made to the application. Each section will describe what changes were made, how they were made, and why they are an improvement on what was previously there.   |
 | 3. | CI/CD | Setup pipeline for CI/CD in order to expedite development on field as much as possible in the next month. We will use a mixture of selenium tests with sentry to catch and handle errors as quickly they crop up. |
 
