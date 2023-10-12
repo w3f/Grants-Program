@@ -1,6 +1,10 @@
 # Anti-Collusion Infrastructure
 
-* **Status:** Open
+:::caution
+This Request for Proposals is currently considered **under development**, meaning one or more grants have been signed to address the topic. We might be interested in additional implementations, but it’s better to double check this with the grants team.
+:::
+
+* **Status:** [Under Development](https://grants.web3.foundation/applications/infimum)
 * **Proposer:** [Noc2](https://github.com/Noc2)
 
 ## Project Description :page_facing_up: 
