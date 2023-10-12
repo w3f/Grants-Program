@@ -48,13 +48,14 @@ Besides, **there is a clear difference between an application being accepted and
 | [Livetree Community Ltd](https://github.com/livetreetech/)                       | [DecentralML](./decentral_ml.md)                     | [GitHub](https://github.com/livetreetech/)                 | ☐          |        ☐       |      ☐      |
 | [LimeChain](https://github.com/LimeChain)                       | [Polkadot Protocol Conformance Tests Research](./Polkadot-Protocol-Conformance-Tests.md)                     | [GitHub](https://github.com/LimeChain)                 | ☐          |        ☐       |      ☐      |
 | [KodaDot](https://kodadot.xyz/)                       | [AssetsHub NFT indexer](./kodadot_assethub_nft_indexer_statemine_statemint.md)                     | [GitHub](https://github.com/kodadot)                 | ☐          |        ☐       |      ☐      |
+| [Apollos Collective](https://rhys.tech)                       | [Infimum](./infimum.md)                     | [GitHub](https://github.com/rhysbalevicius)                 | ☐          |        ☐       |      ☐      |
 
 ### 🏄 Wave 19 - Q3 2023
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
 | [Protofire](https://protofire.io/)                       | [Contract Wizard](./Contract_wizard.md)                     | [GitHub](https://github.com/protofire/polkadot-contract-wizard/)                 | ☐          |        ☐       |      ☐      |
-| [ZeroDAO](https://github.com/ZeroDAO)                       | [Melodot](./Melodot.md)                     | [GitHub](https://github.com/ZeroDAO)                 | ☐          |        ☒       |      ☐      |
+| [ZeroDAO](https://github.com/ZeroDAO)                       | [Melodot](./Melodot.md)                     | [GitHub](https://github.com/ZeroDAO)                 | ☐          |        ☒       |      ☒      |
 | [Starks](https://github.com/tur461)                       | [XCM tool for NFTs](./xNFT.md)                     | [GitHub](https://github.com/tur461)                 | ☐          |        ☐       |      ☐      |
 | [ChainSafe](https://chainsafe.io/)                                 | Polkadot Snap Maintenance   | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot)                               | ☐          |        ☐       |      ☐     |
 | [justmert](https://github.com/justmert)                                 | [DOTLY: Revolutionizing Polkadot Account Statistics](./dotly.md)   | [GitHub](https://github.com/justmert/dotly)                               | ☐          |        ☐       |      ☐     |
