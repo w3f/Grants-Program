@@ -12,13 +12,25 @@ Ssal, a blockchain-based commodities exchange, is a new version of our product c
 
 Ssal is a blockchain-based commodities exchange platform which leverages the power of distributed ledger technology to address the challenge of transparency and trust in commodity trading while also lowering the barrier to entry for producers and consumers to enter the market. The platform will target burgeoning markets that do not have the advantage of a commodities exchange to hedge crop prices and/or cannot trade at the volumes which traditional exchanges require. 
 
-We built the original version of this project, Riso, on Substrate, but realized that architecting a fully fledged parachain goes out of scope for the purposes of our application. Our team is looking for a grant to build Ssal using smart contracts running on Substrate-based chains. We believe that the technology is ready to be applied to a practical, real-world application. We intend to use the grant money to travel on-site in Ivory Coast this winter and set up a trial exchange between a local farmer and distributor whom we have been in contact with. In short, we would like to provide the ecosystem with a user-facing, commercial product, and hopefully, by documenting our process, we can inspire others to do the same.
+We built the original version of this project, Riso, on Substrate, but realized that architecting a fully fledged parachain goes out of scope for the purposes of our application. Our team is looking for a grant to build Ssal using smart contracts running on Substrate-based chains. We believe that the technology is ready to be applied to a practical, real-world application. In short, we would like to provide the ecosystem with a user-facing, commercial product, and hopefully, by documenting our process, we can inspire others to do the same.
 
-Our team is driven by a common goal to bring more equitable and efficient financial services to the economies that need them most. Our founding team has varied professional experience in blockchain development, financial technologies, and hotel management, while our unifying factor is a strong academic background studying mathematics, data science, and computer science. We have strong ties to the region of West Africa, and a vested interest in its success and the success of web3 technologies as a whole. For us, this project is a perfect marriage between our moral ambition with our technical skills. 
+Our team is driven by a common goal to bring more equitable and efficient financial services to the economies that need them most. We have varied professional experience in blockchain development, financial technologies, and hotel management. Our unifying factor is a strong academic background studying mathematics, data science, and computer science. We have strong ties to the region of West Africa, and a vested interest in its success and the success of web3 technologies as a whole. For us, this project is a perfect marriage between our moral ambition with our technical skills. 
 
 ### Project Details
 #### Mockups/designs of any UI components
-https://github.com/AlejandroSoumah/riso-front-end
+The following mockups were designed with an AMM in mind. Ssal will be implemented as a mobile app, initially with no AMM features. This means that the marketplace will consist of an organized collection of specific contracts. 
+[Check out our repo!](https://github.com/AlejandroSoumah/riso-front-end)
+##### Home Page 1
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss01.png)
+##### Home Page 2
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss02.png)
+##### Home Page 3
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss03.png)
+##### Marketplace
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss04.png)
+##### Purchase Contract
+![dmp](https://github.com/MatteoPerona/riso-concept-files/blob/main/riso-frontend-ss05.png)
+This page allows one to add a contract to their cart. It assumes that there is an enderlying AMM which is why one can purchase a broad category of rice at a fixed price rather than sifting through individual contracts. 
 
 #### An overview of the technology stack to be used
 Frontend: React JS  
@@ -77,8 +89,6 @@ The lockup model adds a layer of security for buyers. It freezes the buyer's fun
 The open-lockup model provides an open-ended model for creating commodity contracts which can act as options, futures, spot deals, and any permutation of the three. It also provides an economic model which disincentivizes fraudulent actors from misappropriating the product. 
 
 In future iterations of this project, we intend on adding a governance system so that transaction participants can call a trial when they have a dispute. The trial would use a random sample of jurors presented with each participant's case to decide whether the locked funds should be sent back to the buyer or transferred to the seller.  
-
- 
 
 **3 Implementation**
 Ssal will start as a very simple application utilizing three core functions:
