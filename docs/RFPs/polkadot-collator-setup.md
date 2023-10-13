@@ -20,7 +20,7 @@ I understand it might be tricky to bundle all the parachain launch setups into o
 1. Have a single collator ansible role, and each branch would correspond to a specific parachain
 2. Have multiple ansible roles, and the main.yml in the project root to coordinate which roles get deployed.
 
-I would lean towards the second option. While it might lead to large repo size due to multiple collator setups (and multiple networks - the setup might be different on Kusama or Polkadot), it gives more flexibility to spin up multiple collators for independant chains without meddling with git branching too much.
+I would lean towards the second option. While it might lead to large repo size due to multiple collator setups (and multiple networks - the setup might be different on Kusama or Polkadot), it gives more flexibility to spin up multiple collators for independent chains without meddling with git branching too much.
 
 ## Deliverables :nut_and_bolt:
 

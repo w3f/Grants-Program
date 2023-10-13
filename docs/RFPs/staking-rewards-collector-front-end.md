@@ -14,7 +14,7 @@ This Request for Proposals is _closed_, meaning we are not looking for any more 
 
 The [staking-rewards-collector](https://github.com/w3f/staking-rewards-collector) is a tool to gather staking rewards for given addresses and cross-reference those with daily price data. This is a very useful tool for every validator and nominator in the ecosystem. However, since it has currently a CLI and requires some technical knowledge to set up (git, nodejs, yarn). A front-end hosted on a website could help many users getting access to this tool and enjoy the benefits. 
 
-The backend is already written in javascript, this should make it quite easy to host as a website and develope a front-end. 
+The backend is already written in javascript, this should make it quite easy to host as a website and develop a front-end. 
 
 ## Deliverables :nut_and_bolt:
 
