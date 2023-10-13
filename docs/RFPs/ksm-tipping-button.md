@@ -23,7 +23,7 @@ The tip begins its closing process (a countdown) when more than a half of counci
 
 ## Proposal
 
-The Kusama Tip Button sould be a standalone embeddable snippet of HTML and JS code. When added to a website, a "Tip or Donate KSM" button should show, text customizable by website owner.
+The Kusama Tip Button should be a standalone embeddable snippet of HTML and JS code. When added to a website, a "Tip or Donate KSM" button should show, text customizable by website owner.
 
 Before the user interacts with the button, the button's embedded code should:
 

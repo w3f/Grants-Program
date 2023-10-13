@@ -59,6 +59,6 @@ The milestones below are just an initial draft. The milestones can be structured
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Implement PoC| Implement the previous reasearch as ink! Smart contract or pallets |  
+| 1. | Implement PoC| Implement the previous research as ink! Smart contract or pallets |  
 | 2. | UI (optional) | Implement a basic UI that can be used for testing | 
 
