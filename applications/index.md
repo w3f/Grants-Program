@@ -13,31 +13,33 @@ Furthermore, the page lists terminations that happened due to a breach of the te
 Besides, **there is a clear difference between an application being accepted and the successful delivery of the respective project**, and only teams that have successfully delivered a milestone are allowed to make public announcements on the matter or to use our [badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). The badge can also never be used as a general endorsement for a team. Violations to this policy can be reported [here](mailto:grants@web3.foundation).
 :::
 
+<a id="top"></a>
+
 - [2023](#2023)
-  - [🏄 Wave 20 - Q4 2023](#️-wave-20---q4-2023)
-  - [🏄 Wave 19 - Q3 2023](#️-wave-19---q3-2023)
-  - [🏄 Wave 18 - Q2 2023](#️-wave-18---q2-2023)
-  - [🏄 Wave 17 - Q1 2023](#️-wave-17---q1-2023)
+  - [🏄 Wave 20 - Q4 2023](#-wave-20---q4-2023)
+  - [🏄 Wave 19 - Q3 2023](#-wave-19---q3-2023)
+  - [🏄 Wave 18 - Q2 2023](#-wave-18---q2-2023)
+  - [🏄 Wave 17 - Q1 2023](#-wave-17---q1-2023)
 - [2022](#2022)
-  - [🏄 Wave 16 - Q4 2022](#️-wave-16---q4-2022)
-  - [🏄 Wave 15 - Q3 2022](#️-wave-15---q3-2022)
-  - [🏄 Wave 14 - Q2 2022](#️-wave-14---q2-2022)
-  - [🏄 Wave 13 - Q1 2022](#️-wave-13---q1-2022)
+  - [🏄 Wave 16 - Q4 2022](#-wave-16---q4-2022)
+  - [🏄 Wave 15 - Q3 2022](#-wave-15---q3-2022)
+  - [🏄 Wave 14 - Q2 2022](#-wave-14---q2-2022)
+  - [🏄 Wave 13 - Q1 2022](#-wave-13---q1-2022)
 - [2021](#2021)
-  - [🏄 Wave 12 - Q4 2021](#️-wave-12---q4-2021)
-  - [🏄 Wave 11 - Q3 2021](#️-wave-11---q3-2021)
-  - [🏄 Wave 10 - Q2 2021](#️-wave-10---q2-2021)
-  - [🏄 Wave 9 - Q1 2021](#️-wave-9---q1-2021)
+  - [🏄 Wave 12 - Q4 2021](#-wave-12---q4-2021)
+  - [🏄 Wave 11 - Q3 2021](#-wave-11---q3-2021)
+  - [🏄 Wave 10 - Q2 2021](#-wave-10---q2-2021)
+  - [🏄 Wave 9 - Q1 2021](#-wave-9---q1-2021)
 - [2020](#2020)
-  - [🏄 Wave 8 - Q4 2020](#️-wave-8---q4-2020)
-  - [🏄 Wave 7 - Q3 2020](#️-wave-7---q3-2020)
-  - [🏄 Wave 6 - Q2 2020](#️-wave-6---q2-2020)
-  - [🏄 Wave 5 - Q1 2020](#️-wave-5---q1-2020)
+  - [🏄 Wave 8 - Q4 2020](#-wave-8---q4-2020)
+  - [🏄 Wave 7 - Q3 2020](#-wave-7---q3-2020)
+  - [🏄 Wave 6 - Q2 2020](#-wave-6---q2-2020)
+  - [🏄 Wave 5 - Q1 2020](#-wave-5---q1-2020)
 - [2019](#2019)
-  - [🏄 Wave 4 - Q4 2019](#️-wave-4---q4-2019)
-  - [🏄 Wave 3 - Q3 2019](#️-wave-3---q3-2019)
-  - [🏄 Wave 2 - Q2 2019](#️-wave-2---q2-2019)
-  - [🏄 Wave 1 - Q1 2019](#️-wave-1---q1-2019)
+  - [🏄 Wave 4 - Q4 2019](#-wave-4---q4-2019)
+  - [🏄 Wave 3 - Q3 2019](#-wave-3---q3-2019)
+  - [🏄 Wave 2 - Q2 2019](#-wave-2---q2-2019)
+  - [🏄 Wave 1 - Q1 2019](#-wave-1---q1-2019)
 
 ## 2023
 
@@ -50,6 +52,8 @@ Besides, **there is a clear difference between an application being accepted and
 | [KodaDot](https://kodadot.xyz/)                       | [AssetsHub NFT indexer](./kodadot_assethub_nft_indexer_statemine_statemint.md)                     | [GitHub](https://github.com/kodadot)                 | ☐          |        ☐       |      ☐      |
 | [Apollos Collective](https://rhys.tech)                       | [Infimum](./infimum.md)                     | [GitHub](https://github.com/rhysbalevicius)                 | ☐          |        ☐       |      ☐      |
 
+[🔝](#top)
+
 ### 🏄 Wave 19 - Q3 2023
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
@@ -57,7 +61,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Protofire](https://protofire.io/)                       | [Contract Wizard](./Contract_wizard.md)                     | [GitHub](https://github.com/protofire/polkadot-contract-wizard/)                 | ☐          |        ☐       |      ☐      |
 | [ZeroDAO](https://github.com/ZeroDAO)                       | [Melodot](./Melodot.md)                     | [GitHub](https://github.com/ZeroDAO)                 | ☐          |        ☒       |      ☒      |
 | [Starks](https://github.com/tur461)                       | [XCM tool for NFTs](./xNFT.md)                     | [GitHub](https://github.com/tur461)                 | ☐          |        ☐       |      ☐      |
-| [ChainSafe](https://chainsafe.io/)                                 | Polkadot Snap Maintenance   | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot)                               | ☐          |        ☐       |      ☐     |
+| [ChainSafe](https://chainsafe.io/)                                 | [Polkadot Snap Maintenance](./maintenance/Substratesnap_Maintenance.md)   | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot)                               | ☐          |        ☐       |      ☐     |
 | [justmert](https://github.com/justmert)                                 | [DOTLY: Revolutionizing Polkadot Account Statistics](./dotly.md)   | [GitHub](https://github.com/justmert/dotly)                               | ☐          |        ☐       |      ☐     |
 | [Federico Cicciarella](https://www.linkedin.com/in/federicocicciarella/?originalSubdomain=it)                                 | [Tracking Chain](./tracking_chain.md)   | [GitHub](https://github.com/TrackingChains/TrackingChain)                               | ☐          |        ☒       |      ☐     |
 | [TPScore](https://github.com/its-a-setup)                                 | [TPScore](./TPScore.md)   | [GitHub](https://github.com/its-a-setup)                               | ☐          |        ☒       |      ☒     |
@@ -88,7 +92,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Coong Crafts](https://coongcrafts.io/)                       | [DelightfulDOT](delightfuldot.md)                                       | [GitHub](https://github.com/CoongCrafts)                                 | ☐          |        ☐       |      ☐     |
 | [Lastic](https://www.lastic.xyz/)                       | [Lastic](Lastic.md)                                       | [GitHub](https://github.com/LasticXYZ)                                 | ☐          |        ☐       |      ☐     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 18 - Q2 2023
 
@@ -131,7 +135,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Davanti](https://github.com/liangjh)                            | [Dot-ETL Project](dot_etl.md)| [GitHub](https://github.com/liangjh)                            | ☐          |        ☐       |      ☐      |
 | [ParaSpell](https://github.com/paraspell)                            | [LightSpell: XCM API](LightSpell-proposal.md)| [GitHub](https://github.com/paraspell)                            | ☐          |        ☒       |      ☒      |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 17 - Q1 2023
 
@@ -184,7 +188,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Polkadrys Labs](https://github.com/rtomas)                    | [Open Payroll](./openPayroll.md)                                                                        | [GitHub](https://github.com/rtomas)                           | ☐          |       ☒        |     ☐     |
 | [Itering](https://www.itering.io/)                    | [Solidity Verifier Implementation for Accountable Light Client](./solidity-verifier-for-accountable-light-client.md)                                                                        | [GitHub](https://github.com/darwinia-network)                           | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ## 2022
 
@@ -232,7 +236,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Aband-Network](https://a.band/)                                               | [Substrate Parachain PoS Template](substrate-parachain-PoS-template.md)                                                                              | [GitHub](https://github.com/Aband-Network/substrate-parachain-PoS-template) | ☐          |       ☒        |     ☒     |
 | [MangoBOX labs](https://www.mangobox.xyz/)                                     | [MangoSale Protocol](MangoSale_Protocol.md)                                                                                                          | [GitHub](https://github.com/Mangoboxlabs)                            | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 15 - Q3 2022
 
@@ -278,7 +282,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Standard Protocol](https://standard.tech/)                  | [New Order - a full onchain orderbook dex with indexers](./Standard_Protocol.md)              | [GitHub](https://github.com/standardweb3)                              | ☒          |       ☐        |     ☐     |
 | [hack-ink](https://github.com/hack-ink)                      | [Subalfred](./subalfred.md)                                                                   | [GitHub](https://github.com/hack-ink/subalfred)                        | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 14 - Q2 2022
 
@@ -321,7 +325,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Hypha Hashed Partners](https://hypha.earth/)              | [Social Recovery Wallet](./social_recovery_wallet.md)                                                   | [GitHub](https://github.com/hypha-dao)                                 | ☐          |       ☒        |     ☒     |
 | [MangoBOX labs](http://mangobox.xyz/)                      | [MangoBOX Protocol](./MangoBOX-Protocol.md)                                                             | [GitHub](https://github.com/Mangoboxlabs)                              | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 13 - Q1 2022
 
@@ -360,7 +364,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [NUTS Finance](https://nuts.finance)                  | [DOT-pegged derivative built on top of the stable asset protocol](./tdot.md)    | [GitHub](https://github.com/nutsfinance/)                              | ☒          |       ☒        |     ☐     |
 | [Strategy Object](https://strategyobject.com/)        | [Substrate Client for Java](./substrate_client_java.md)                                 | [GitHub](https://github.com/strategyobject/substrate-client-java)      | ☐          |       ☒        |     ☐     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ## 2021
 ### 🏄 Wave 12 - Q4 2021
@@ -391,7 +395,7 @@ Besides, **there is a clear difference between an application being accepted and
 
 
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 11 - Q3 2021
 
@@ -424,7 +428,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Skye Kiwi](https://skye.kiwi/)                 | [SkyeKiwi Protocol](./skyekiwi-protocol.md)                                               | [GitHub](https://github.com/skyekiwi)               | ☐          |       ☒        |     ☒     |
 | [Evercity](https://evercity.io/)                | Sustainable Finance Protocol                                                              | [GitHub](https://github.com/EvercityEcosystem)      | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 10 - Q2 2021
 
@@ -460,7 +464,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [CryptoLab](https://www.cryptolab.network)                         | [Staking Reward Collector](./cryptolab-staking-reward-collector-front-end.md)                       | [GitHub](https://github.com/cryptolab-network)                         | ☐          |       ☒        |     ☒     |
 | [Yatima Inc](https://github.com/yatima-inc/yatima)                 | [Lambda-VM and programming language for Substrate](./yatima.md)                                     | [GitHub](https://github.com/yatima-inc/yatima)                         | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 9 - Q1 2021
 
@@ -481,7 +485,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [SEOR](https://www.seor.io)                                             | [Multi-chain smart contract development platform](./SEOR-code-less-smart-contract-platform.md)                                | [GitHub](https://github.com/SealSC)                                                          | ☐          |       ☒        |     ☐     |
 | [Polkastarter](https://polkastarter.com/)                               | [Crowdloan UI](./polkastarter.md)                                                                                             | [GitHub](https://github.com/polkastarter)                                                    | ☒          |       ☐        |     ☐     |
 | [Equilibrium.io](https://equilibrium.io/en)                             | [Curve AMM Pallet](./curve_amm.md)                                                                                            | [GitHub](https://github.com/equilibrium-eosdt)                                               | ☐          |       ☒        |     ☒     |
-| [Zondax](https://zondax.ch/)                                            | [Ledger maintenance + recovery extensions + support](./Zondax-Support.md)                                                     | [GitHub](https://github.com/Zondax)                                                          | ☐          |       ☒        |     ☒     |
+| [Zondax](https://zondax.ch/)                                            | [Ledger maintenance + recovery extensions + support](./maintenance/Zondax-Support.md)                                                     | [GitHub](https://github.com/Zondax)                                                          | ☐          |       ☒        |     ☒     |
 | [Nuclei Studio](https://nuclei.studio/)                                 | [Voting Pallets](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/nuclei_governance_os_voting.md) | [GitHub](https://github.com/NucleiStudio)                                                    | ☐          |       ☒        |     ☒     |
 | [RAMP DEFI](https://app.rampdefi.com/#/)                                | [Polkakeeper - A Community-Led Value Assurance Protocol](./polkakeeper.md)                                                    | [GitHub](https://github.com/RAMP-DEFI)                                                       | ☐          |       ☐        |     ☐     |
 | [Stone](https://stonedefi.io)                                           | [Index project which aims to track the portfolio of multiple digital assets](./stone-index-on-substrate.md)                   | [GitHub](https://github.com/stonedefi/)                                                      | ☐          |       ☒        |     ☒     |
@@ -515,7 +519,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Vera](https://veraprotocol.org/)                                       | [NFT Lending + Exchange](./vera_defi.md)                                                                                      | [GitHub](https://github.com/veraprotocol)                                                    | ☐          |       ☒        |     ☒     |
 | [Parallel Finance](https://parallel.fi/#/)                              | [Decentralized lending/borrowing and staking protocol](./Parallel.md)                                                         | [GitHub](https://github.com/parallel-finance/parallel)                                       | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ## 2020
 
@@ -567,7 +571,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [HugoByte](https://hugobyte.com/)                                 | [Project Aurras: Event Manager](./project_aurras_mvp_phase_1.md)                                                                                      | [GitHub](https://github.com/HugoByte)                      | ☐          |       ☒        |     ☒     |
 | [Bounce Protocol](https://bounce.finance/)                        | [Decentralized Auction Protocol](./bounce-protocol.md)                                                                                                | [GitHub](https://github.com/bouncefinance/bounce-network)  | ☐          |       ☐        |     ☐     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 7 - Q3 2020
 
@@ -605,7 +609,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [sup](https://github.com/clearloop/sup)                          | [Command line tool for generating or upgrading a Substrate node](./sup.md)                                                                                                               | [GitHub](https://github.com/clearloop/sup)                            | ☐          |       ☒        |     ☒     |
 | [Shard Labs](https://shardlabs.io)                               | [Tip or Donate KSM Embeddable Button](./KSM-embeddable-tip-or-donate-button.md)                                                                                                          | [GitHub](https://github.com/Shard-Labs)                               | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 6 - Q2 2020
 
@@ -645,7 +649,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Zondax](http://zondax.ch/)                               | Ledgeracio: A command-line tool and Ledger app designed for staking operations                                                                | [GitHub](https://github.com/paritytech/ledgeracio)               | ☐          |       ☒        |     ☒     |
 | [Dipole Tech](https://www.dipole.tech)                    | [Dipole Oracle: Distributed energy resource management](./DipoleOracle.md)                                                                    | [GitHub](https://github.com/DipoleTech/dipole-oracle)            | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 5 - Q1 2020
 
@@ -689,7 +693,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Lyken](https://lyken.rs/)                                                                                  | [Rust trait system revamp](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/rust_trait_system_revamp.md)                                                          | [GitHub](https://github.com/LykenSol)                                                            | ☐          |       ☒        |     ☐     |
 | [Chorus One](https://chorus.one/)                                                                           | Grandpa light client in Tendermint                                                                                                                                                            | [GitHub](https://github.com/ChorusOne)                                                           | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ## 2019
 
@@ -722,9 +726,9 @@ Besides, **there is a clear difference between an application being accepted and
 | [HashQuark](https://www.hashquark.io/)                 | Validator Dashboard                                                                                                                                                        | [GitHub](https://github.com/hashquark-io)                        | ☐          |       ☒        |     ☒     |
 | [Stacktical](https://stacktical.com/)                  | [Performance Management Runtime Modules](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/predictive_performance_management_runtime_module.md) | [GitHub](https://github.com/Stacktical)                          | ☐          |       ☒        |     ☐     |
 | [Sean Young](https://www.mess.org/)                    | Solidity to WASM compiler                                                                                                                                                  | [GitHub](https://github.com/hyperledger-labs/solang)             | ☐          |       ☒        |     ☒     |
-| [Chain Security](https://chainsecurity.com/)           | Tool for validating correctness of Polkadot runtimes                                                                                                                       | [GitHub](https://github.com/ChainSecurity/polpatrol)             | ☐          |      ☒        |     ☒     |
+| [Chain Security](https://chainsecurity.com/)           | Tool for validating correctness of Polkadot runtimes                                                                                                                       | [GitHub](https://github.com/ChainSecurity/polpatrol)             | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 3 - Q3 2019
 
@@ -745,7 +749,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Phala.Network](https://phala.network/)                  | [pLibra, Privacy Bridge between Polkadot and Libra chain](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/pLIBRA.md)                                   | [GitHub](https://github.com/Phala-Network/)                            | ☐          |       ☒        |     ☐     |
 | [Wiv](http://wiv.io/)                                    | Supply chain modules and front-end UI                                                                                                                                               | [GitHub](https://github.com/wivtech)                                   | ☒          |       ☐        |     ☐     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 2 - Q2 2019
 
@@ -764,7 +768,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Mailchain](https://mailchain.xyz/)           | a Multi-Blockchain Messaging Application                                                                                                                        | [GitHub](https://github.com/mailchain)                              | ☐          |       ☒        |     ☒     |
 | [Usetech](http://usetech.com/blockchain.html) | [Polkadot C++ API](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/cpp_api.md)                                                     | [GitHub](https://github.com/usetech-llc/polkadot_api_cpp)           | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
 
 ### 🏄 Wave 1 - Q1 2019
 
@@ -781,4 +785,4 @@ Besides, **there is a clear difference between an application being accepted and
 | [Protos](http://protosmanagement.com/)        | Open Source Node Explorer                                                                                                                               | [GitHub](https://github.com/protos-research/polkadot-node-explorer)         | ☒          |       ☒        |     ☐     |
 | [Supercomputing Systems](https://www.scs.ch/) | [Substrate Transaction Privacy using Intel SGX](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/substrate_sgx_proposal.md) | [GitHub](https://github.com/scs/substraTEE)                                 | ☐          |       ☒        |     ☒     |
 
-[🔝](#2023)
+[🔝](#top)
