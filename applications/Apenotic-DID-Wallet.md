@@ -246,22 +246,25 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 
 ## Development Roadmap :nut_and_bolt:
 
-**Overview**
+### **Overview**
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs:** $30,000 USD
 
-### **Milestone 1: UI Development**
+### **Milestone 1: User Interface Development**
 
 - **Estimated Duration:** 1 month
-- **FTE:** 1
+- **FTE:** 1.5
 - **Costs:** $10,000 USD
 
 ### Deliverables
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | The documentation will be provided to show the whole architecture of the Apron Network. |
+| 0c. | Testing Guide | The testing guide will be provided to test each component. |
 | 1. | User Interface Development | Develop the user-friendly interface for Apenotic's platform. |
 | 2. | Accessibility | Ensure accessibility for non-technical users. |
 | 3. | User Testing | Conduct user testing to refine the UI. |
@@ -278,6 +281,9 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | The documentation will be provided to show the whole architecture of the Apron Network. |
+| 0c. | Testing Guide | The testing guide will be provided to test each component. |
 | 1. | Kilt Protocol Integration | Integrate with Kilt Protocol to generate and manage decentralized identity (DID) accounts. |
 | 2. | DID Account Generation | Implement the functionality for users to generate DID accounts within the Apenotic platform. |
 | 3. | Documentation | Update documentation to include details on the integration with Kilt Protocol and DID account generation. |
@@ -293,6 +299,9 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | The documentation will be provided to show the whole architecture of the Apron Network. |
+| 0c. | Testing Guide | The testing guide will be provided to test each component. |
 | 1. | Kilt Protocol Integration (Vault - Credentials) | Continue the integration with Kilt Protocol to enable secure storage and management of credentials within the Apenotic platform. |
 | 2. | Credential Vault Implementation | Develop the credential vault functionality, allowing users to securely store and manage their credentials. |
 | 3. | Documentation | Update documentation to include details on the credential vault implementation and usage. |
