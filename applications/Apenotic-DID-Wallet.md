@@ -262,50 +262,41 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Initial UI | Develop the initial user-friendly interface for Apenotic's platform. |
-| 0c. | Documentation | Provide initial documentation for the UI. |
-| 0d. | Testing and Testing Guide | Implement basic testing and provide a guide on how to run these tests for the UI. |
-| 0e. | Docker | Create Dockerfiles for testing the UI components. |
-| 0f. | Article | Publish an introductory article explaining the UI development within the Polkadot ecosystem. |
+| 1. | User Interface Development | Develop the user-friendly interface for Apenotic's platform. |
+| 2. | Accessibility | Ensure accessibility for non-technical users. |
+| 3. | User Testing | Conduct user testing to refine the UI. |
+| 4. | Multichain Wallet Support | Implement a multichain wallet support feature. |
+| 5. | dApp Integration | Integrate Apenotic with select decentralized applications (dApps). |
 
-### **Milestone 2: Kilt Protocol Integration**
+### **Milestone 2: Integration with Kilt Protocol (Generate DID Accounts)**
 
 - **Estimated Duration:** 1 month
-- **FTE:** 1
+- **FTE:** 1.5
 - **Costs:** $10,000 USD
 
 ### Deliverables
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Kilt Protocol Integration | Integrate Kilt Protocol into the Apenotic platform, enabling advanced credential management and privacy-preserving functionalities. |
-| 0c. | Documentation | Update documentation to include Kilt Protocol integration details. |
-| 0d. | Testing and Testing Guide | Perform testing and provide a guide on how to test the Kilt Protocol integration. |
-| 0e. | Docker | Update Dockerfiles to reflect integration enhancements. |
-| 0f. | Article | Publish an article explaining the Kilt Protocol integration within Apenotic and its benefits. |
+| 1. | Kilt Protocol Integration | Integrate with Kilt Protocol to generate and manage decentralized identity (DID) accounts. |
+| 2. | DID Account Generation | Implement the functionality for users to generate DID accounts within the Apenotic platform. |
+| 3. | Documentation | Update documentation to include details on the integration with Kilt Protocol and DID account generation. |
+| 4. | Testing and Bug Fixes | Thoroughly test the integration and resolve any identified issues. |
 
-### **Milestone 3: Testing, Bug Fixes, and Improvements**
+### **Milestone 3: Integration with Kilt Protocol (Vault - Credentials)**
 
 - **Estimated Duration:** 1 month
-- **FTE:** 1
+- **FTE:** 1.5
 - **Costs:** $10,000 USD
 
 ### Deliverables
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Testing and Bug Fixes | Conduct comprehensive testing of the integrated UI and Kilt Protocol components, identify and fix bugs and issues. |
-| 0c. | Documentation | Update and expand documentation to include usage instructions, developer guides, and best practices for Apenotic's platform. |
-| 0d. | Testing Guide | Provide a guide on how to conduct testing for the entire platform. |
-| 0e. | Docker | Update Dockerfiles to reflect the latest testing configurations. |
-| 0f. | Article | Publish an article/workshop explaining the progress made in testing, bug fixes, and improvements. |
-
-With this adjustment, the roadmap now includes a total of 3 FTEs and aligns with your specified duration and budget. Each milestone retains a one-month duration.
-
-Apenotic's development roadmap outlines the evolution of our DID wallet, focusing on security, usability, and market expansion over an 6-month period. Each milestone represents a significant step toward achieving our goal of providing a user-centric decentralized identity solution for the Web3 era.
+| 1. | Kilt Protocol Integration (Vault - Credentials) | Continue the integration with Kilt Protocol to enable secure storage and management of credentials within the Apenotic platform. |
+| 2. | Credential Vault Implementation | Develop the credential vault functionality, allowing users to securely store and manage their credentials. |
+| 3. | Documentation | Update documentation to include details on the credential vault implementation and usage. |
+| 4. | Testing and Bug Fixes | Thoroughly test the credential vault and resolve any identified issues. |
 
 ## **Future Plans**
 
