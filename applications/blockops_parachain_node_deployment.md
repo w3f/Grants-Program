@@ -224,13 +224,13 @@ For this proposal we focus on building and streamlining the process of setting u
 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):**  6 FTE
-- **Total Costs:** 90,000 USD.
+- **Total Costs:** 60,000 USD.
 
 ### Milestone 1 Development of One Click Parachain Deployment Feature
 
 - **Estimated duration:** 3 month
 - **FTE:**  6
-- **Costs:** 45,000 USD
+- **Costs:** 30,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -262,7 +262,7 @@ For this proposal we focus on building and streamlining the process of setting u
 
 - **Estimated Duration:** 3 month
 - **FTE:**  6
-- **Costs:** 45,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
