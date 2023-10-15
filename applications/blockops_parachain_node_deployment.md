@@ -244,7 +244,8 @@ For this proposal we focus on building and streamlining the process of setting u
 | 3. | Post-Deployment Features | Dashboard for continued maintenance operations like Key Rotation, Updating Deployment Parameters, Performing client upgrades  |
 | 4. | Docker image support: We'll introduce a feature that allows users to set up nodes using their Docker image |Node type support: Implement setup of all node types including Full node, Validator node, Boot node and Collator node for the respective relay chain and parachain | Integration of live network testing capabilities.	
 | 5. | Parachain Node Monitoring Dashboard (Grafana)	 | Customize Alert creation and integration via Email, Slack & Pagerduty |
-| 6. | Bug Fixes | Testing of the application including functional, performance, and security testing  | Successful user testing and feedback collection phase. | Release of comprehensive user guides and tutorials.
+| 6. | Package and Export UI Dashboard as Launcher | Package and Distribute UI Dashboard as a Launcher on Macos & Linux  | Ability to Deploy Parachain using an installed Launcher on MacOS and Ubuntu | Release of dmg and deb packages for MacOS and Ubuntu respectively. |
+| 7. | Bug Fixes | Testing of the application including functional, performance, and security testing  | Successful user testing and feedback collection phase. | Release of comprehensive user guides and tutorials. |
 
 ### Current Status
 -  Completed Development of One Click Parachain Deployment Feature on GCP ✅
