@@ -1,5 +1,9 @@
 # Sub-consensus mechanism
 
+:::tip
+This Request for Proposal is currently _open_, meaning we are actively looking for (additional) teams to apply for it.
+:::
+
 * **Status:** Open
 * **Proposer:** mmagician, laboon
 * **Projects you think this work could be useful for:** All parachains

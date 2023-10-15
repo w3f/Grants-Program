@@ -1,10 +1,10 @@
 # Alternative javascript console for Polkadot JS API
 
-:::caution
-This Request for Proposals is currently considered **under development**, meaning one or more grants have been signed to address the topic. We might be interested in additional implementations, but it’s better to double check this with the grants team.
+:::danger
+This Request for Proposals is _closed_, meaning we are not looking for any more proposals on this topic at the moment.
 :::
 
-* **Status:** [Under Development](https://w3f.github.io/Grants-Program/applications/sandox)
+* **Status:** Closed
 * **Proposer:** [muddlebee](https://github.com/muddlebee)
 * **Projects you think this work could be useful for** [optional]: Javascript console at https://polkadot.js.org/apps/#/js
 
