@@ -1,7 +1,7 @@
 # Parachain One-Click Deployment
 
 - **Team Name:** Blockops Network
-- **Payment Address:** HLsQZEMMN2cDN1cZBgMc48E2v1XergevtDZQ6Nueue7x2F9 (DOT)
+- **Payment Address:** 0x560F1c2111dcf9D48762c02F1463B45D612d696c (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 ## Project Overview :page_facing_up:
 Blockops Network is on a mission to enhance the web3 experience for developers and startups by making it extremely easy and cost-effective for anyone to set up, maintain, and monitor their blockchain node infrastructure.
