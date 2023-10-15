@@ -1,0 +1,303 @@
+# Name of your Project
+
+> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`).
+>
+> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
+
+- **Team Name:** Vane-Network
+- **Payment Address:** 14uNH42NjxS3c4VSxVyHjZYea5ZyJEYWYxjRzmxKQB75pdRB (AssetHub - USDT)
+- **[2](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 
+
+> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+
+## Project Overview :page_facing_up:
+
+
+### Overview
+
+
+
+Vane is a parachain that act as an extension product and safety layer for Polkadot and AssetHub which provides services to help trust and growth on social commerce business and introducing transaction safety in web3.
+
+
+Vane-network consist of the following functionalities
+
+ - Confirmation and reversible transactions
+ - Customizable and trustless transactions for social-commerce business
+ - Native token-less parachain enabling usage of DOT, USDT & USDT for all interactions via XCM
+ - Extensible and hybrid chain, providing a permissioned smart contract feature which help tailored developers to build services for social-commerce eg, Notion template marketplace.
+
+
+ - Vane-network will be a Tanssi appchain
+
+ **Why are we building vane-network**
+
+ - We are building vane-network due to lack of safety when using web3 services. Both of us have suffered loss of funds and from our survey users are afraid of trying web3 based services due to non recoverable losses associated with personal mistakes.
+
+ But apart from that we discovered that social-commerce is a trillion dollar market and we believe that blockchain technology can improve and grow businesses in this sector by improving customer and retailer interactions and introducing negotiable controll and unparalled safety.
+
+**Vane as part of Polkadot/Substrate/Web3 ecosystem**
+  - Can be used as a defacto system to handle safe and risk free transactions for institutions and indivuals 
+  -  
+
+### Project Details
+
+We are not a team of UI designers so the design is not final in terms of UI.
+
+[Video demo](https://youtu.be/4pChQvPc4us)
+
+[vane landing page](https://vane.framer.ai/)
+
+[Vane website](https://vane-network.vercel.app/)
+- Data models / API specifications of the core functionality
+
+![](https://github.com/2-5-Foundation/vane/blob/main/artifacts/VaneOverallArcitecture.jpeg?raw=true)
+
+ Implemented the first iteration of risk free transfer system. Components involved are;
+
+  - XCM tiggered based transfer model
+  
+A reactive based xcm message transfer system based on multi-sig signature confirmation
+
+  - Pallet asset trait components for asset conversion and deposit.
+
+![](https://github.com/2-5-Foundation/vane/blob/main/artifacts/Vane-Overall-for-risk-free-transfer.jpeg?raw=true)
+
+![](https://github.com/2-5-Foundation/vane/blob/main/artifacts/VanePrimitivesChart.jpeg?raw=true)
+
+
+**To be implemented on the grant application**
+
+ - Vane custom pallet asset to handle automatic creation of xcm based deposited assets
+
+ - A safety non delivered xcm transaction handler
+
+
+
+![](https://github.com/2-5-Foundation/vane/blob/main/artifacts/VaneComponents%20for%20grant.jpeg?raw=true)
+
+
+
+
+
+*NOTE* vane-network is not building an sdk, it will be a fully fledged ready to use product
+
+### Ecosystem Fit
+
+Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+
+**Where and how does your project fit into the ecosystem?**
+
+  - This project is a clear demonstration on how XCM can be used to introduce safety and improve UX in web3 ecosystem.
+
+  - And XCM can be used to add a sort of extension layer ontop of existing network and introduce a product layer.
+
+**Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?**
+   - Crypto users for transactions
+   - Social commerce entrepreneurs
+
+**What need(s) does your project meet?**
+  - Introducing safety for web3 mass adoption
+  - Bridging and using web3 based technology to grow online businesses.
+
+**Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?**
+  
+  - No, but ENS and Naing services try to solve the issue of ensuring wrong address mistakes are resolved. But Vane ensures this product to work just outside the box without purchasing any name , just existig addressbut introducing confirmation and reverting system ontop of existing networks.
+
+  - And for other product, No any other project.
+  Vane will be using existing USDT on AssetHub to settle business social-commerce transactions.
+
+## Team :busts_in_silhouette:
+
+### Team members
+
+- Mrisho Lukamba
+- Shankar Rao Mata
+- Vijyanedra Gaur
+
+### Contact
+
+- **Contact Name:** Mrisho Lukamba
+- **Contact Email:** MrishoLukamba@proton.me
+### Legal Structure
+
+- **Registered Address:** Not yet registered
+- **Registered Legal Entity:** Not yet registered
+
+### Team Code Repos
+
+[Github](https://github.com/2-5-Foundation/vane)
+
+[Front End Repo](https://github.com/2-5-Foundation/VF)
+
+### Team's experience
+
+**Mrisho Lukamba**
+
+Participated in regional and Country Maths Competitions and had numerous major achievements such as third position in regional maths competition & best in country in world scholars cup organized by Yale University while he was in secondary school. Started working with substrate and blockchain engineering for nearly 2+ years.Raised over 120K in the project which he worked on and contributes to substrate repo occasionaly.
+He is currently working as a blockchain engineer at TONOMUUS.NEOM ( A saudia arabia company building the digital future).
+
+**Shankar Rao**
+
+5+ years experience working with smart contract technologies starting with Solidity and
+web3js and then later worked on rust and substrate
+
+
+**Vijayendra Gaur** 
+
+Vijayendra has more than 7.5 years of experience in Mobile Development using Native Android and Cross Platforms such as React Native and Xamarin.
+He also has 1.5 years of Rust and Blockchain development experience and 1 year exposure in the Substrate / Polkadot ecosystem.
+
+
+
+Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+
+- Mrisho Lukamba https://github.com/MrishoLukamba
+- Vijayendra Gaur https://github.com/vjgaur
+- Shankar Rao https://github.com/mshankarrao
+
+### Team LinkedIn Profiles (if available)
+
+- Mrisho Lukamba https://www.linkedin.com/in/mrisho-lukamba/
+
+- Shankar Rao https://www.linkedin.com/in/mshankarrao/
+
+- Vijayendra Gaur https://www.linkedin.com/in/vijendr/
+
+
+## Development Status :open_book:
+
+[video]()
+
+![](https://github.com/2-5-Foundation/vane/blob/main/artifacts/Vane-Overall-for-risk-free-transfer.jpeg?raw=true)
+
+![](https://github.com/2-5-Foundation/vane/blob/main/artifacts/VanePrimitivesChart.jpeg?raw=true)
+
+
+
+## Development Roadmap :nut_and_bolt:
+
+
+### Overview
+
+- **Total Estimated Duration:** 2.6 months
+- **Full-Time Equivalent (FTE):** 2.25
+- **Total Costs:** 30,000 USD
+
+### Milestone 1 — Implement Transaction delivery tracking system with XCM query
+
+- **Estimated duration:** 0.8 month
+- **FTE:**  1,75
+- **Costs:** 7,000 USD
+
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Video tutorial | We will publish an workshop on X/Twitter that explains [...] (what was done/achieved as part of the grant and how the product should be used) |
+| 1. | vane xcm transfer pallet | We will create a Substrate module that will handle cross chain transactions after confirmation and reverting of transactions |
+| 2. | Substrate chain | the pallet xcm transfer will be keeping track of cross chain transaction lifecycle on a storage item to make sure transaction safety is achieved |
+| 3. | A web application | We will implement a Next Js and a backend application to showcase in action what has been built and for user to interact with |
+
+
+
+
+
+
+
+### Milestone 2 — Implement vane custom pallet asset for handling xcm based derived asset & a multi-sig managed asset for confirmation of transaction,
+ 
+
+- **Estimated duration:** 1 month
+- **FTE:**  2.25
+- **Costs:** 11,500 USD
+
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Video tutorial | We will publish an workshop on X/Twitter that explains [...] (what was done/achieved as part of the grant and how the product should be used) |
+| 1. | vane custom pallet | We will create a Substrate module that will enable users to transfer their Tokens from Polkadot | AssetHub (USDT) and automatically create a multisig account in Vane parachain so that they can handle condfirmation of the sender and receiver. The pallet will have OnReceive, OnConfirmed traits hooks for handling different lifecycle of the transaction |
+| 2. | Substrate chain | Pallet vane xcm transfer and vane custom asset will interact on handling foreign allowed tokens, allowing users to have only 2 steps when sending transactions ( sending & confirming)|
+| 3. | A web application | We will implement a Next Js and a backend application to showcase in action what has been built and for user to interact with |
+
+
+
+
+
+
+### Milestone 3 - PalletTransactionClaimResolving pallet for resolving transaction failed due to XCM delivery issues.
+
+### Pallet contract & chain extensions for Risk free transfer system
+
+
+- **Estimated duration:** 1 month
+- **FTE:**  2.25
+- **Costs:** 11,500 USD
+
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Video tutorial | We will publish an workshop on X/Twitter that explains [...] (what was done/achieved as part of the grant and how the product should be used) |
+| 1. | pallet transaction claim resolver | We will create a Substrate module that will handle failed transaction based on XCM delivery issues. Allowing users to claim their incomplete transactions|
+| 2. | pallet contract & chain extensions | a permissioned wasm contract pallet and chain exensions for vane risk free transfer system to be used to extend Vane product services |
+| 3. | Substrate chain | pallet transaction claim resolver will work together with pallet asset & pallet xcm transfer to complete vane risk free remote transaction |
+| 4. | A web application | We will implement a Next Js and a backend application to showcase in action what has been built and for user to interact with |
+
+
+
+## Future Plans
+
+
+**How you intend to use, enhance, promote and support your project in the short term.**
+
+ - Reach out to solopreneurs and social-commerce business owners in X/Twitter and have them a free trial and web3 market access
+
+ - Telegram and Discord existing ecosystem reach out. As this product introduces safety for everyone and. It is something people need.
+ Existing Polkadot and USDT users can benefit alot.
+
+**The team's long-term plans and intentions in relation to it.**
+
+  - We intend to raise only initial funding as we believe the product will be self sufficient. As we will be tapping into existing Polkadot users hence sharing profits with Polkadot and we do not introduce any new token thus enabling better UX.
+
+  - Integrating Meta and X/Twitter accounts into vane-client and enabling entrepreneuers to expand their businesses.
+
+  - A simplistic approach and a mobile application for better security and UX
+
+  - 70% of revenue will be in USDT/stablecoin and 30% in alt index. The realized revenue from alt index will be directed into supporting teams that want to extend Vane products and Polkadot ecosystem teams for research on cross chain messaging and infra.
+
+
+## Additional Information :heavy_plus_sign:
+
+**How did you hear about the Grants Program?**
+
+I have good experience in Polkadot ecosystem, alos I am member in ChaosDao. I heard aboyt the grant program from Web3 Foundation Website
+
+ 
+
+**Work you have already done.**
+ - [Exhibited in Sub0 2023](https://events.polkadot.network/event/sub0-europe-2023/exhibitor/RXhoaWJpdG9yXzE0MjYzNDU=)
+  - [Vane Strategic Memo](https://mrisho-lukamba.notion.site/Vane-Strategic-Memo-d0004cdc07104da8833759404ee2fceb?pvs=4)
+  - Accepted into Tanssi Appchain pioneers program
+  - [Twitter](https://twitter.com/vane_network_)
+
+**If there are any other teams who have already contributed (financially) to the project.**
+
+No
+
+**Previous grants you may have applied for.**
+
+No
