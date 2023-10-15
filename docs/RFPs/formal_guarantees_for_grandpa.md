@@ -1,4 +1,9 @@
 # Formal Guarantees for GRANDPA Finality Gadget
+
+:::tip
+This Request for Proposal is currently _open_, meaning we are actively looking for (additional) teams to apply for it.
+:::
+
 * **Status:** Open
 * **Proposer:** [Bhargav Bhatt](https://github.com/bhargavbh),  [David Hawig](https://github.com/Noc2)
 
@@ -13,7 +18,7 @@ We are open to any reasonable formal methods approach that rigorously proves the
 - interactive theorem proving (in Isabelle/HOL, Coq, verdi)
 - Any other temporal property verification tool for distributed systems
 
-We envision the project to prove both safety and liveness properties of GRANDPA which interacts with a Block Production mechanism (like [BABE](https://research.web3.foundation/en/latest/polkadot/block-production/Babe.html) or [Sassafras](https://research.web3.foundation/en/latest/polkadot/block-production/SASSAFRAS.html)) by assuming an abstract interface. 
+We envision the project to prove both safety and liveness properties of GRANDPA which interacts with a Block Production mechanism (like [BABE](https://research.web3.foundation/Polkadot/protocols/block-production/Babe) or [Sassafras](https://research.web3.foundation/Polkadot/protocols/block-production/SASSAFRAS)) by assuming an abstract interface. 
 
 ## Deliverables
 

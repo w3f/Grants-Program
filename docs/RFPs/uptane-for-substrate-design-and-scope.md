@@ -1,6 +1,10 @@
 # Designing Upchain: A framework for securing Substrate software update systems
 
-* **Status:** Open
+:::danger
+This Request for Proposals is _closed_, meaning we are not looking for any more proposals on this topic at the moment.
+:::
+
+* **Status:** Closed
 * **Proposer:** taqtiqa-mark
 * **Your Project(s):** N.A.
 * **Projects you think this work could be useful for** [Substrate runtime upgrades](https://docs.substrate.io/build/upgrade-the-runtime/) and [Substrate network upgrades](https://docs.substrate.io/tutorials/get-started/upgrade-a-running-network/)
