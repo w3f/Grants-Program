@@ -277,6 +277,8 @@ For this proposal we focus on building and streamlining the process of setting u
 | 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  
 | 5. | Deployment Guide	 | A detailed guide on how users can deploy the block-agent across various node environments, ensuring compatibility and ease of setup. |
 
+
+
 ### Current Status
 -  Completed block-agent Architecture ✅
 
