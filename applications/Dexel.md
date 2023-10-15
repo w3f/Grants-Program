@@ -93,7 +93,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Total Estimated Duration:** 4 Months
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 25,000 USD
 
 ### Milestone 1: Initial Setup and Smart Contract Development
 
@@ -116,7 +116,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated duration:** 2 months
 - **FTE:** 2
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
