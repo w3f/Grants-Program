@@ -131,7 +131,7 @@ Aside of creating our own extrinsics, here a list of exstrinsics to be potential
 - `unfreeze_asset`: Unfreeze an asset token, allowing transfers again.
 - `set_asset_metadata`: Set the metadata for an asset token, such as its name, symbol, and description
 
-Moreover, aside of our MPT pallet that we are creating, we will potentially be using the following existing pallets:
+Moreover, together with the MPT pallet we are creating, we will potentially be using parts of the following existing pallets:
 
 - `pallet_assets`: To provide functionality for managing assets life cycle, as well as set and manage asset metadata.
 - `pallet_balances`: To provide functionality for handling accounts and balances, as well as to store and manage the balances of the native token and other assets.
@@ -140,23 +140,23 @@ Moreover, aside of our MPT pallet that we are creating, we will potentially be u
 - `pallet_identity`: To provide functionality for managing user identities, track asset ownership and associate accounts with identities.
 - `pallet_democracy`: To provides a basic on-chain governance system, to allow token holders to vote on proposals related to the  platform.
 
-Possible workflow:
+Possible workflow for deliverables:
 
-d1: Define the core features of the MPT pallet, such as asset creation, issuance, transfer, and management.
-d2: Design the pallet architecture and define the interfaces between the pallet and other Substrate pallets.
-d3: Implement the pallet logic, including the extrinsics for asset creation, issuance, transfer, and management.
-d4: Test the pallet to ensure that it is functioning correctly.
-d5: Identify the extrinsics from existing Substrate pallets that are needed to support the core features of the MPT pallet.
-d6: Implement the custom extrinsics that are needed to support the specific features of the MPT pallet.
-d7: Test the extrinsics to ensure that they are functioning correctly.
-d8: Define the properties of the native token, such as its name, symbol, supply, and initial distribution.
-d9: Implement the logic for creating and issuing the native token.
-d10: Define the governance model for the MPT chain. This could include defining how token holders can participate in decision-making, such as voting on proposals to change the platform's parameters.
-d12: Implement the governance model on the MPT chain.
-d13: Deploy the MPT pallet, the extrinsics, and the native token to the MPT chain.
-d14: Implement the logic for creating, issuing, transferring, and managing assets on the MPT chain.
-d15: Implement the logic for sending and receiving transactions on the MPT chain.
-d16: Deploy a consensus mechanism to the MPT chain.
+- d1: Define the core features of the MPT pallet, such as asset creation, issuance, transfer, and management.
+- d2: Design the pallet architecture and define the interfaces between the pallet and other Substrate pallets.
+- d3: Implement the pallet logic, including the extrinsics for asset creation, issuance, transfer, and management.
+- d4: Test the pallet to ensure that it is functioning correctly.
+- d5: Identify the extrinsics from existing Substrate pallets that are needed to support the core features of the MPT pallet.
+- d6: Implement the custom extrinsics that are needed to support the specific features of the MPT pallet.
+- d7: Test the extrinsics to ensure that they are functioning correctly.
+- d8: Define the properties of the native token, such as its name, symbol, supply, and initial distribution.
+- d9: Implement the logic for creating and issuing the native token.
+- d10: Define the governance model for the MPT chain. This could include defining how token holders can participate in decision-making, such as voting on proposals to change the platform's parameters.
+- d11: Implement the governance model on the MPT chain.
+- d12: Deploy the MPT pallet, the extrinsics, and the native token to the MPT chain.
+- d13: Implement the logic for creating, issuing, transferring, and managing assets on the MPT chain.
+- d14: Implement the logic for sending and receiving transactions on the MPT chain.
+- d15: Deploy a consensus mechanism to the MPT chain.
 
 ### Milestone 2
 
