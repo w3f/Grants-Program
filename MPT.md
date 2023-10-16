@@ -131,15 +131,6 @@ The below roadmap refers to an initial implementation of a purposely built block
 - `unfreeze_asset`: Unfreeze an asset token, allowing transfers again.
 - `set_asset_metadata`: Set the metadata for an asset token, such as its name, symbol, and description.
 
-#### Moreover, together with the MPT pallet we are creating, we will potentially be using parts of the following existing pallets:
-
-- `pallet_assets`: To provide functionality for managing assets life cycle, as well as set and manage asset metadata.
-- `pallet_balances`: To provide functionality for handling accounts and balances, as well as to store and manage the balances of the native token and other assets.
-- `pallet_transactions`: To provide functionality for processing transactions and use it to implement the logic for creating, submitting, and validating transactions.
-- `pallet_grandpa`: Chosen for safety, scalability and energy-efficiency.
-- `pallet_identity`: To provide functionality for managing user identities, track asset ownership and associate accounts with identities.
-- `pallet_democracy`: To provides a basic on-chain governance system, to allow token holders to vote on proposals related to the  platform.
-
 #### Possible course of action for deliverables:
 
 - d1: Define the core features of the MPT pallet, such as asset creation, issuance, transfer, and management.
@@ -174,7 +165,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 | 3. | Define tokenomics | Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed. |
 | 4. | MPT chain | Issuing and trading of tokens, storage and management of asset balances, and smart contract exploration to determine best fit within the newly created pallet. |
 
-#### Aside of creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
+#### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
 
 - `create_token`: Create a new token, specifying its name, symbol, supply, and other metadata.
 - `issue_token`: Issue new units of an existing token.
@@ -208,11 +199,49 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0b.** | Documentation | We will provide the inline documentatio of the code that explains how to initially set up a wallets in the context of multiple users owning multiples assets. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0e. | Article | We will publish an article that explains how to set up a blockchain specifically developed to support the creation of digital private markets for private companies that want to represent, issue and exchanged their underlying assets (e.g. SMEs shares, real estate, collectibles, etc.) |
-| 1. | Accounts creation and management | Account creation, transfer funds between accounts, and explore smart contracts intractions. |
-| 2. | Identity and associated asset | Associate *Substrate* accounts to perform transactions on tokens. |
-| 3. | MPT chain | Develop APIs to allow users to interact with the balances and assets. |
-| 4. | MPT chain repository | We will deliver git-hub repository with the description of our initial implementation and its use and potential. |
+| 1. | Accounts creation and management | Account creation, transfer funds between accounts, and explore smart contracts interactions. Implement the logic for creating, updating, and deleting accounts and for transferring funds between accounts. |
+| 2. | Identity and associated asset | Associate *Substrate* accounts to perform transactions on tokens. Design and implement a mechanism for associating *Substrate* accounts with identity and asset management capabilities and implement the logic for authorizing *Substrate* accounts to perform transactions on tokens.|
+| 3. | MPT chain | Design and implement APIs for creating, issuing, transferring, and managing assets and for for viewing account balances and asset holdings. |
+| 4. | MPT chain repository | Deliver a git-hub repository with the description of our initial implementation and its use and potential. |
 
+#### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
+
+- `create_account`: Create a new account.
+- `update_account`: Update the details of an existing account.
+- `delete_account`: Delete an existing account.
+- `transfer_funds`: Transfer funds from one account to another.
+- `associate_account_with_identity`: Associate a Substrate account with an identity.
+- `get_account_balance`: Get the balance of an account.
+- `get_asset_holdings`: Get the asset holdings of an account.
+- `create_asset`: Create a new asset.
+- `issue_asset`: Issue new units of an existing asset.
+- `transfer_asset`: Transfer assets from one account to another.
+- `freeze_asset`: Freeze an asset, preventing transfers.
+- `unfreeze_asset`: Unfreeze an asset, allowing transfers again.
+- `set_asset_metadata`: Set the metadata for an asset, such as its name, symbol, and description.
+
+#### Possible course of action for deliverables:
+
+- d1: Design and implement a system for account creation, management, and transfer.
+- d2: Implement the extrinsics for creating, updating, deleting accounts, and transferring funds.
+- d3: Design and implement a mechanism for associating Substrate accounts with identity and asset management capabilities.
+- d4: Implement the extrinsics for associating Substrate accounts with identity and asset management capabilities, and for authorizing Substrate accounts to perform transactions on tokens.
+- d5: Design and implement APIs for creating, issuing, transferring, and managing assets.
+- d6: Design and implement APIs for viewing account balances and asset holdings.
+- d7: Implement the APIs for creating, issuing, transferring, and managing assets, and for viewing account balances and asset holdings.
+- d8: Document the initial implementation of the accounts, identity, and asset management system.
+- d9: Provide examples of how the system can be used to implement real-world applications.
+- d10: Discuss the potential of the system to be used in the development of future financial products and services.
+- d11: Create a GitHub repository with the documentation and examples.
+
+#### Moreover, together with the MPT pallet we are creating, we will potentially be using parts of the following existing pallets:
+
+- `pallet_assets`: To provide functionality for managing assets life cycle, as well as set and manage asset metadata.
+- `pallet_balances`: To provide functionality for handling accounts and balances, as well as to store and manage the balances of the native token and other assets.
+- `pallet_transactions`: To provide functionality for processing transactions and use it to implement the logic for creating, submitting, and validating transactions.
+- `pallet_grandpa`: Chosen for safety, scalability and energy-efficiency.
+- `pallet_identity`: To provide functionality for managing user identities, track asset ownership and associate accounts with identities.
+- `pallet_democracy`: To provides a basic on-chain governance system, to allow token holders to vote on proposals related to the  platform.
 
 ## Future Plans
 
