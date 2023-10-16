@@ -102,7 +102,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 ### Overview
 
-- **Total Estimated Duration:** ~5 months
+- **Total Estimated Duration:** ~4 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
 - **Total Costs:** 75,000 USD
 
@@ -118,18 +118,29 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests or it . |
 | 1. | Design and implement the first version of the MPT pallet for alternative finance with a focus on RWAs | The pallet is designed to be extensible and modular, to be able to add new features easily in the future.|
-| 2. | Implement extrinsics for the new pallet, including both extrinsics from existing Substrate pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of Substrate, such as accounts, balances, and transactions, while the custom extrinsics will allow MPT to implement the specific features of our alternative finance system.|
-| 3. | Create a native token for the MPT chain supported by a governance model | Start to develop MPT chain initial attributes, which may include creating a native token for the MPT chain and define how token holders can participate in decision-making for the MPT generated chains. |
-| 4. | Implement the MPT chain with a basic use of assets and transactions and a consensus mechanism | Test the creation, issuing and transfer of assets, as well as sending and receiving transactions. |
+| 2. | Implement extrinsics for the MPT pallet, including both extrinsics from existing Substrate pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of Substrate, such as accounts, balances, and transactions, while the custom extrinsics will allow MPT to implement the specific features of the alternative finance system.|
+| 3. | Create a native token for the MPT chain supported by a governance model | Initial development of the MPT chain and its attributes, which may include creating a native token for the MPT chain and define how token holders can participate in decision-making for the MPT generated chains. |
+| 4. | Implement the MPT chain with the basic use of assets, transactions and consensus mechanism. | Test the creation, issuing and transfer of assets, as well as sending and receiving transactions. In the initial phase the MPT chain will be permissioned, given the focus to power alternative finance and digital private markets for a wide variety of market participants.  |
 
 #### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
 
-- `create_asset`: Create a new asset token, specifying its name, symbol, and other metadata.
-- `issue_asset`: Issue new units of an existing asset token.
-- `transfer_asset`: Transfer asset tokens from one account to another.
-- `freeze_asset`: Freeze an asset token, preventing transfers.
-- `unfreeze_asset`: Unfreeze an asset token, allowing transfers again.
-- `set_asset_metadata`: Set the metadata for an asset token, such as its name, symbol, and description.
+- `force_create`: Creates a new asset class without taking any deposit.
+- `force_set_metadata`: Set the metadata of an asset class.
+- `force_clear_metadata`: Remove the metadata of an asset class.
+- `force_asset_status`: Alter an asset class’s attributes.
+- `force_cancel_approval`: Rescind a previous approval.
+- `destroy`: Destroys an entire asset class; called by the asset class’s Owner.
+- `mint`: Increases the asset balance of an account; called by the asset class’s Issuer.
+- `burn`: Decreases the asset balance of an account; called by the asset class’s Admin.
+- `force_transfer`: Transfers between arbitrary accounts; called by the asset class’s Admin.
+- `freeze`: Disallows further transfers from an account; called by the asset class’s Freezer.
+- `thaw`: Allows further transfers to and from an account; called by the asset class’s Admin.
+- `transfer_ownership`: Changes an asset class’s Owner; called by the asset class’s Owner.
+- `set_team`: Changes an asset class’s Admin, Freezer and Issuer; called by the asset class’s Owner.
+- `set_metadata`: Set the metadata of an asset class; called by the asset class’s Owner.
+- `clear_metadata`: Remove the metadata of an asset class; called by the asset class’s Owner.
+- `touch_other`: Create an asset account for specified account. Caller must place a deposit; called by the asset class’s Freezer or Admin.
+- `block`: Disallows further transfers to and from an account; called by the asset class’s Freezer.
 
 #### Possible course of action for deliverables:
 
@@ -151,7 +162,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 ### Milestone 2
 
-- **Estimated Duration:** ~1.5 month
+- **Estimated Duration:** ~1 month
 - **FTE:** 2.5
 - **Costs:** 25,000 USD
 
@@ -189,7 +200,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 ### Milestone 3
 
-- **Estimated Duration:** ~1.5 month
+- **Estimated Duration:** ~1 month
 - **FTE:** 2.5
 - **Costs:** 25,000 USD
 
