@@ -117,10 +117,46 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0a.** | License | MIT|
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests or it . |
-| 1. | Initial version of the blockchain | Setting up a generic alternative finance focused blockchain. |
-| 2. | Initial functionalities | Explore the initial concept of block production, transaction validation, and block finalization in our context. |
-| 3. | Initial attributes | Start to develop MPT chain initial attributes, which may include creating a native token for the MPT chain, configuring a governance model, and deploying the needed pallets. |
-| 4. | MPT chain | Leveraging existing pallets and primitives to implement a consensus mechanism, and a basic use of  assets and transactions. Possible pallets to be used across the project are: pallet_balances, pallet_assets, pallet_grandpa, pallet_contracts, pallet_identity, pallet_accounts. |
+| 1. | Design and implement the first version of an MPT pallet for alternative finance with a focus on RWAs | The pallet is designed to be extensible and modular, to be able to add new features easily in the future.|
+| 2. | Implement extrinsics for the new pallet, including both extrinsics from existing Substrate pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of Substrate, such as accounts, balances, and transactions, while the custom extrinsics will allow MPT to implement the specific features of our alternative finance system.|
+| 3. | Create a native token for the MPT chain supported by a governance model | Start to develop MPT chain initial attributes, which may include creating a native token for the MPT chain and define how token holders can participate in decision-making for the MPT generated chains. |
+| 4. | Implement the MPT chain with a basic use of assets and transactions and a consensus mechanism | Test the creation, issuing and transfer of assets, as well as sending and receiving transactions. |
+
+Aside of creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
+
+- `create_asset`: Create a new asset token, specifying its name, symbol, and other metadata.
+- `issue_asset`: Issue new units of an existing asset token.
+- `transfer_asset`: Transfer asset tokens from one account to another.
+- `freeze_asset`: Freeze an asset token, preventing transfers.
+- `unfreeze_asset`: Unfreeze an asset token, allowing transfers again.
+- `set_asset_metadata`: Set the metadata for an asset token, such as its name, symbol, and description
+
+Moreover, aside of our MPT pallet that we are creating, we will potentially be using the following existing pallets:
+
+- `pallet_assets`: To provide functionality for managing assets life cycle, as well as set and manage asset metadata.
+- `pallet_balances`: To provide functionality for handling accounts and balances, as well as to store and manage the balances of the native token and other assets.
+- `pallet_transactions`: To provide functionality for processing transactions and use it to implement the logic for creating, submitting, and validating transactions.
+- `pallet_grandpa`: Chosen for safety, scalability and energy-efficiency.
+- `pallet_identity`: To provide functionality for managing user identities, track asset ownership and associate accounts with identities.
+- `pallet_democracy`: To provides a basic on-chain governance system, to allow token holders to vote on proposals related to the  platform.
+
+Possible workflow:
+
+d1: Define the core features of the MPT pallet, such as asset creation, issuance, transfer, and management.
+d2: Design the pallet architecture and define the interfaces between the pallet and other Substrate pallets.
+d3: Implement the pallet logic, including the extrinsics for asset creation, issuance, transfer, and management.
+d4: Test the pallet to ensure that it is functioning correctly.
+d5: Identify the extrinsics from existing Substrate pallets that are needed to support the core features of the MPT pallet.
+d6: Implement the custom extrinsics that are needed to support the specific features of the MPT pallet.
+d7: Test the extrinsics to ensure that they are functioning correctly.
+d8: Define the properties of the native token, such as its name, symbol, supply, and initial distribution.
+d9: Implement the logic for creating and issuing the native token.
+d10: Define the governance model for the MPT chain. This could include defining how token holders can participate in decision-making, such as voting on proposals to change the platform's parameters.
+d12: Implement the governance model on the MPT chain.
+d13: Deploy the MPT pallet, the extrinsics, and the native token to the MPT chain.
+d14: Implement the logic for creating, issuing, transferring, and managing assets on the MPT chain.
+d15: Implement the logic for sending and receiving transactions on the MPT chain.
+d16: Deploy a consensus mechanism to the MPT chain.
 
 ### Milestone 2
 
