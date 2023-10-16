@@ -9,7 +9,7 @@
 
 ## Project Overview :page_facing_up:
 
-Response to an RFP [validator-selection-algorithm](https://github.com/w3f/Grants-Program/blob/master/docs/rfps/Open/validator-selection-algorithm.md "validator-selection-algorithm.md").
+Response to an RFP [validator-selection-algorithm](https://github.com/w3f/Grants-Program/blob/master/docs/rfps/validator-selection-algorithm.md "validator-selection-algorithm.md").
 
 ### Overview
 

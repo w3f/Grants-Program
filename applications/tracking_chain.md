@@ -46,9 +46,9 @@ The application will handle all the necessary infrastructure setup for transacti
 
 The project will consist of 9 microservices, each with a well-defined task.
 
-![TrackingChainSchema](https://github.com/FedeC87p/PublicImage/assets/58514549/74186f4f-ac66-4ac6-afc1-90f19c9b479d)  
+![TrackingChainSchema](https://github.com/TrackingChains/TrackingChain/assets/58514549/919aebe1-c0d6-4cbf-bb02-097920863a37)  
 
-![StepTracking](https://github.com/FedeC87p/PublicImage/assets/58514549/7f535c65-fc16-4cdb-a34a-b3b9cac13bea)
+![StepTracking](https://github.com/TrackingChains/TrackingChain/assets/58514549/f8f4c074-7bb3-4231-8a02-367b7e781b89)
 
 1. Triage API:
    - Purpose: Receives tracking requests, consults the registry, and associates a destination smart contract with each request based on a Profile.
@@ -80,8 +80,6 @@ The project will consist of 9 microservices, each with a well-defined task.
    
 9. Tx Monitor Worker:
    - Purpose: Monitor the status of transactions to proceed with any automatic actions or to launch alerts in the event of transactions that cannot be managed automatically. 
-    
-![Screenshot_Insert](https://github.com/FedeC87p/TrackingChainGrant/assets/58514549/2e850a3b-1375-4889-a371-8593410b3282)
 
 ### **Overview of the technology stack to be used**
 We are planning on using a combination of blockchain technology, cloud services, and front-end development tools to build a performant, secure, and user-friendly platform.
@@ -140,7 +138,7 @@ I'm working on a project for a censorship-resistant decentralized video platform
 
 - **Total Estimated Duration:** 6.5 month
 - **Full-Time Equivalent (FTE):**  1
-- **Total Costs:** 16.500 USD
+- **Total Costs:** 16.200 USD
 
 ### Milestone 1 — Basic functionality
 
@@ -205,9 +203,9 @@ I'm working on a project for a censorship-resistant decentralized video platform
 
 ### Milestone 4 — Ink Generation Call Improvement
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 3 weeks
 - **FTE:**  1
-- **Costs:** 2.000 USD
+- **Costs:** 1.700 USD
 
 
 | Number | Deliverable | Specification |
@@ -218,11 +216,10 @@ I'm working on a project for a censorship-resistant decentralized video platform
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains how to use. |
 | 1. | Tx Generator Worker | Improvement to wait for the transaction to be finalized in order to skip the "Tx Watcher Phase" (this mode will be an option present in the configuration) it's will also allow for better support for chains that don't have access to subscans. To achieve this we will listen via socket in order to wait for the finalization of the generated Tx |
-| 2. | Frontend Registry | Improvement that allows you to view not only the data present in the Registry but also to take directly from the data saved in the onchain smart contract |
 
 ## Future Plans
 
-- Pres ent the demo to customers and onboard our first major customer.
+- Present the demo to customers and onboard our first major customer.
 - Continue meetings with customers interested in entering the web3 and onboard other customers.
 - Participate in events to be able to demonstrate how our demo works, also showing the portfolio of customers who have already chosen to use it.
 - Integration DID with Kilt
@@ -254,5 +251,3 @@ I'm working on a project for a censorship-resistant decentralized video platform
    - No, all "Future Plans" will be covered by new clients or carried forward by me.
 3. Have you applied for other grants so far?
    - No
-
-
