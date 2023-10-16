@@ -2,7 +2,7 @@
 
 - **Team Name:** Marco Polo Technologies
 - **Payment Address:** Network and token address **to be added**
-- **Level:** 2 or 3?
+- **Level:** 3
 
 ## Project Overview :page_facing_up:
 
@@ -102,13 +102,13 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 ### Overview
 
-- **Total Estimated Duration:** ~3 months
+- **Total Estimated Duration:** ~5 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
 - **Total Costs:** 75,000 USD
 
 ### Milestone 1
 
-- **Estimated duration:** ~1 month
+- **Estimated duration:** ~2 months
 - **FTE:** 2.5
 - **Costs:** 25,000 USD
 
@@ -151,7 +151,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 ### Milestone 2
 
-- **Estimated Duration:** ~1 month
+- **Estimated Duration:** ~1.5 month
 - **FTE:** 2.5
 - **Costs:** 25,000 USD
 
@@ -189,7 +189,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 ### Milestone 3
 
-- **Estimated Duration:** ~1 month
+- **Estimated Duration:** ~1.5 month
 - **FTE:** 2.5
 - **Costs:** 25,000 USD
 
