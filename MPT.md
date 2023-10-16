@@ -104,13 +104,13 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 - **Total Estimated Duration:** ~3 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
-- **Total Costs:** 60,000 USD
+- **Total Costs:** 75,000 USD
 
 ### Milestone 1
 
 - **Estimated duration:** ~1 month
 - **FTE:** 2.5
-- **Costs:** 20,000 USD
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -122,16 +122,16 @@ The below roadmap refers to an initial implementation of a purposely built block
 | 3. | Create a native token for the MPT chain supported by a governance model | Start to develop MPT chain initial attributes, which may include creating a native token for the MPT chain and define how token holders can participate in decision-making for the MPT generated chains. |
 | 4. | Implement the MPT chain with a basic use of assets and transactions and a consensus mechanism | Test the creation, issuing and transfer of assets, as well as sending and receiving transactions. |
 
-Aside of creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
+#### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
 
 - `create_asset`: Create a new asset token, specifying its name, symbol, and other metadata.
 - `issue_asset`: Issue new units of an existing asset token.
 - `transfer_asset`: Transfer asset tokens from one account to another.
 - `freeze_asset`: Freeze an asset token, preventing transfers.
 - `unfreeze_asset`: Unfreeze an asset token, allowing transfers again.
-- `set_asset_metadata`: Set the metadata for an asset token, such as its name, symbol, and description
+- `set_asset_metadata`: Set the metadata for an asset token, such as its name, symbol, and description.
 
-Moreover, together with the MPT pallet we are creating, we will potentially be using parts of the following existing pallets:
+#### Moreover, together with the MPT pallet we are creating, we will potentially be using parts of the following existing pallets:
 
 - `pallet_assets`: To provide functionality for managing assets life cycle, as well as set and manage asset metadata.
 - `pallet_balances`: To provide functionality for handling accounts and balances, as well as to store and manage the balances of the native token and other assets.
@@ -140,7 +140,7 @@ Moreover, together with the MPT pallet we are creating, we will potentially be u
 - `pallet_identity`: To provide functionality for managing user identities, track asset ownership and associate accounts with identities.
 - `pallet_democracy`: To provides a basic on-chain governance system, to allow token holders to vote on proposals related to the  platform.
 
-Possible workflow for deliverables:
+#### Possible course of action for deliverables:
 
 - d1: Define the core features of the MPT pallet, such as asset creation, issuance, transfer, and management.
 - d2: Design the pallet architecture and define the interfaces between the pallet and other Substrate pallets.
@@ -162,23 +162,45 @@ Possible workflow for deliverables:
 
 - **Estimated Duration:** ~1 month
 - **FTE:** 2.5
-- **Costs:** 20,000 USD
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** |  License | MIT|
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Initial token development | In order to issue and trade tokens we will explore smart contracts usage; private markets have their own set of pre-established rules, and we will implement a basic version of such rules at this stage. |
-| 2. | Assets | Balances of assets and their values to be stored and managed. |
-| 3. | Fees | Fees exploration to support products' tokenomics. |
-| 3. | MPT chain | Issuing and trading of a tokens, storage and management of asset balances, with smart contract exploration. |
+| 1. | Initial token development and asset management | Includes defining the different types of tokens that will be issued, their supply, and how they will be used, design and implement a system for issuing and trading tokens, exploring the use of smart contracts to implement custom rules and logic, such as common rules used for private markets. |
+| 2. | Assets | Balances of assets and their values to be stored, tracked and managed. |
+| 3. | Define tokenomics | Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed. |
+| 4. | MPT chain | Issuing and trading of tokens, storage and management of asset balances, and smart contract exploration to determine best fit within the newly created pallet. |
+
+#### Aside of creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
+
+- `create_token`: Create a new token, specifying its name, symbol, supply, and other metadata.
+- `issue_token`: Issue new units of an existing token.
+- `transfer_token`: Transfer tokens from one account to another.
+- `freeze_token`: Freeze a token, preventing transfers.
+- `unfreeze_token`: Unfreeze a token, allowing transfers again.
+- `set_token_metadata`: Set the metadata for a token, such as its name, symbol, and description.
+
+#### Possible course of action for deliverables:
+
+- d1: Define the different types of tokens that will be issued, their supply, and how they will be used.
+- d2: Identify the requirements for issuing and trading tokens in private markets.
+- d3: Design and implement the architecture for the primary and secondary token issuance.
+- d4: Explore the use of smart contracts to implement custom rules and logic, such as common rules used for private markets.
+- d5: Implement the extrinsics necessary for issuing and exchange tokens.
+- d6: Implement the logic for enforcing pre-established rules for private markets and/or alternative finance instruments.
+- d7: Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed.
+- d8: Test the smart contracts to ensure that they are working correctly.
+- d9: Test the pallet to ensure that it is working correctly.
+- d10: Review and update the tokenomics definition, based on the findings from d4.
 
 ### Milestone 3
 
 - **Estimated Duration:** ~1 month
 - **FTE:** 2.5
-- **Costs:** 20,000 USD
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -189,7 +211,8 @@ Possible workflow for deliverables:
 | 1. | Accounts creation and management | Account creation, transfer funds between accounts, and explore smart contracts intractions. |
 | 2. | Identity and associated asset | Associate *Substrate* accounts to perform transactions on tokens. |
 | 3. | MPT chain | Develop APIs to allow users to interact with the balances and assets. |
-| 5. | MPT chain repository | We will deliver git-hub repository with the description of our initial implementation and its use and potential. |
+| 4. | MPT chain repository | We will deliver git-hub repository with the description of our initial implementation and its use and potential. |
+
 
 ## Future Plans
 
