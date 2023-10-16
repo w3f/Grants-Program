@@ -234,7 +234,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 - d10: Discuss the potential of the system to be used in the development of future financial products and services.
 - d11: Create a GitHub repository with the documentation and examples.
 
-#### Moreover, together with the MPT pallet we are creating, we will potentially be using parts of the following existing pallets:
+#### Moreover, together with the MPT pallet we are creating, we will be using parts of the following existing pallets:
 
 - `pallet_assets`: To provide functionality for managing assets life cycle, as well as set and manage asset metadata.
 - `pallet_balances`: To provide functionality for handling accounts and balances, as well as to store and manage the balances of the native token and other assets.
