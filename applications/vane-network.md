@@ -1,4 +1,4 @@
-# Name of your Project
+# vane-network
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`).
 >
@@ -6,7 +6,7 @@
 
 - **Team Name:** Vane-Network
 - **Payment Address:** 14uNH42NjxS3c4VSxVyHjZYea5ZyJEYWYxjRzmxKQB75pdRB (AssetHub - USDT)
-- **[2](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
