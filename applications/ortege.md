@@ -195,9 +195,7 @@ In summary, while there is still work to be done, we are proud of the progress w
 
 - **Full-Time Equivalent (FTE):**  4 FTE (Milestones will be worked on concurrently) 
 
-- **Total Costs:** $95,000 
-
-  
+- **Total Costs:** $90,000 
 
 ### Milestone 1 Ink! Smart Contracts 
 
@@ -214,8 +212,8 @@ We will begin by developing smart contracts in the ink! language. These contract
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | 
 | **0e.** | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). | 
-| **1.** | Ink! Contract: MerkleTree | We will create an ink! MerkleTree implementation and will submit to OpenBrush for inclusion in their standards | 
-| **2.** | Ink! Contract: Interchain security module | The ISM contract will provide modular security for the Ortege system, accommodating use-case-specific security requirements. | 
+| **1.** | Ink! Contract: MerkleTree | We will create an ink! MerkleTree implementation | 
+| **2.** | Ink! Contract: Interchain security module | The ISM contract will provide modular security for the Ortege system, accommodating use-case-specific security requirements. For this scope we will add the Interface and multisig functionality | 
 | **3.** | Ink! Contract: Mailbox | The Mailbox contract will facilitate the sending and receiving of messages between chains. | 
 | **4.** | Ink! Contract: Interchain Gas Paymaster | This contract will store exchange rates between gas tokens, thus ensuring enough gas for successful message execution. | 
 | **5.** | Ink! Contract: Chainlink ISM and Price Aggregator | These are the smart contracts that will allow dApp developers to query Chainlink’s prices and also cover the security of the queries | 
@@ -224,7 +222,7 @@ We will begin by developing smart contracts in the ink! language. These contract
 ### Milestone 2 Agents compatible with Substrate RPC endpoints 
  - **Estimated Duration:** 2 month 
 - **FTE:**  2 
-- **Costs:** 22,000 USD 
+- **Costs:** 20,000 USD 
 
 | Number | Deliverable | Specification | 
 | ------ | ----------- | ------------- | 
@@ -233,10 +231,9 @@ We will begin by developing smart contracts in the ink! language. These contract
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | 
 | **0e.** | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). | 
-| **1.** | Substrate Connect | We will add a Substrate Connect client to our Helm and Kubernetes backend | 
-| **2.** | Agent: Validator | We will adjust our validator in order to validate and confirm Merkle tree’s created in inK!| 
-| **3.** | Agent: Relayer | We will adjust our relayers so that they are able to send messages from ink! Based chains to EVM chains and vice versa | 
-| **6.** | Full End 2 End Integration testing | Writing the full E2E integration tests | 
+| **1.** | Agent: Validator | We will adjust our validator in order to validate and confirm Merkle tree’s created in inK!| 
+| **2.** | Agent: Relayer | We will adjust our relayers so that they are able to send messages from ink! Based chains to EVM chains and vice versa | 
+| **3.** | Full End 2 End Integration testing | Writing the full E2E integration tests | 
 
 ### Milestone 3 Chainlink Proof of Concept 
  - **Estimated Duration:** 2 months 
