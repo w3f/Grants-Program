@@ -182,6 +182,21 @@ This multifaceted approach caters to teams across the Polkadot and Kusama ecosys
 
 As integrating the novel Coretime concept into Polkadot unfolds, we remain vigilant, anticipating potential competitors in this emerging space.
 
+[Lastic](https://github.com/w3f/Grants-Program/pull/2008) is a project in the Polkadot ecosystem with similar goals to ours. However, as per their proposal, Lastic has only made claims to develop Coretime UI and has no clear vision for technical details or implementations of the market. For the following features that we will implement during this proposal and future ones, we believe comparing Corego's vision, capabilities, and technical details with Lastic is not suitable, even considering the price discrepancies. Corego aims to implement the following:
+
+- Simulated environment before the Coretime chain is implemented
+- Coretime Market
+- xcRegions Functionality
+- Region Derivation with NLP capabilities
+- Dynamic Pricing based on a bit-level
+- Alerts and Reporting
+- Data Dashboard
+- Developer Console
+- Identity and Access Management
+- ML advisor
+- Team KPIs
+- Gamification
+
 ## Team :busts_in_silhouette:
 
 ### Team members
