@@ -104,23 +104,22 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 - **Total Estimated Duration:** ~4 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
-- **Total Costs:** 75,000 USD
+- **Total Costs:** 80,000 USD
 
 ### Milestone 1
 
-- **Estimated duration:** ~2 months
+- **Estimated duration:** ~1.5 months
 - **FTE:** 2.5
-- **Costs:** 25,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT|
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests or it . |
-| 1. | Design and implement the first version of the MPT pallet for alternative finance with a focus on RWAs | The pallet is designed to be extensible and modular, to be able to add new features easily in the future.|
-| 2. | Implement extrinsics for the MPT pallet, including both extrinsics from existing Substrate pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of Substrate, such as accounts, balances, and transactions, while the custom extrinsics will allow MPT to implement the specific features of the alternative finance system.|
-| 3. | Create a native token for the MPT chain supported by a governance model | Initial development of the MPT chain and its attributes, which may include creating a native token for the MPT chain and define how token holders can participate in decision-making for the MPT generated chains. |
-| 4. | Implement the MPT chain with the basic use of assets, transactions and consensus mechanism. | Test the creation, issuing and transfer of assets, as well as sending and receiving transactions. In the initial phase the MPT chain will be permissioned, given the focus to power alternative finance and digital private markets for a wide variety of market participants.  |
+| 1. | Design the first version of the MPT pallet for alternative finance with a focus on RWAs. | The pallet is designed to be extensible and modular, and to be able to add new features easily in the future.|
+| 2. | Implement extrinsics for the MPT pallet, including both extrinsics from existing *Substrate* pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of Substrate, such as accounts, balances, and transactions, while the custom extrinsics will allow MPT to implement the specific features of the alternative finance system.|
+| 3. | Implement the MPT chain with the basic use of assets, transactions and consensus mechanism. | Test the creation, issuing and transfer of assets, as well as sending and receiving transactions. In the initial phase the MPT chain will be permissioned, given the focus to power alternative finance and digital private markets for a wide variety of market participants. |
 
 #### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
 
@@ -144,37 +143,33 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 #### Possible course of action for deliverables:
 
-- d1: Define the core features of the MPT pallet, such as asset creation, issuance, transfer, and management.
-- d2: Design the pallet architecture and define the interfaces between the pallet and other Substrate pallets.
-- d3: Implement the pallet logic, including the extrinsics for asset creation, issuance, transfer, and management.
-- d4: Test the pallet to ensure that it is functioning correctly.
-- d5: Identify the extrinsics from existing Substrate pallets that are needed to support the core features of the MPT pallet.
+- d1: Define the core features of the MPT pallet, such as asset creation, issuance, transfer, and management: defining the types of assets that will be supported, the different roles that users can have in the system, and the operations that users will be able to perform on assets.
+- d2: Design the pallet architecture and define the interfaces between the pallet and other *Substrate* pallets: defining the pallet's data structures and functions, as well as how the pallets will interact with other *Substrate* pallets, such as the accounts pallet, balances pallet, and transactions pallet.
+- d3: Implement the pallet logic, including the extrinsics for asset creation, issuance, transfer, and management. Creating the logic for each extrinsic, as well as the necessary checks and balances to ensure that the extrinsics are used correctly.
+- d4: Test the pallet to ensure that it is functioning correctly. Testing the extrinsics to ensure that they perform as expected, as well as testing the overall functionality of the pallet.
+- d5: Identify the extrinsics from existing *Substrate* pallets that are needed to support the core features of the MPT pallet. Identifying the extrinsics that are needed for basic operations such as account creation, balance transfers, and transaction fees.
 - d6: Implement the custom extrinsics that are needed to support the specific features of the MPT pallet.
 - d7: Test the extrinsics to ensure that they are functioning correctly.
-- d8: Define the properties of the native token, such as its name, symbol, supply, and initial distribution.
-- d9: Implement the logic for creating and issuing the native token.
-- d10: Define the governance model for the MPT chain. This could include defining how token holders can participate in decision-making, such as voting on proposals to change the platform's parameters.
-- d11: Implement the governance model on the MPT chain.
-- d12: Deploy the MPT pallet, the extrinsics, and the native token to the MPT chain.
-- d13: Implement the logic for creating, issuing, transferring, and managing assets on the MPT chain.
-- d14: Implement the logic for sending and receiving transactions on the MPT chain.
-- d15: Deploy a consensus mechanism to the MPT chain.
+- d8: Deploy the MPT pallet, the extrinsics, and the native token to the MPT chain: compiling the pallet and extrinsics into a *Substrate* runtime, and then deploying the runtime to a *Substrate* node.
+- d9: Implement the logic for creating, issuing, transferring, and managing assets on the MPT chain.
+- d10: Implement the logic for sending and receiving transactions on the MPT chain.
+- d11: Deploy a consensus mechanism to the MPT chain.
 
 ### Milestone 2
 
-- **Estimated Duration:** ~1 month
+- **Estimated Duration:** ~1.5 month
 - **FTE:** 2.5
-- **Costs:** 25,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** |  License | MIT|
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Initial token development and asset management | Includes defining the different types of tokens that will be issued, their supply, and how they will be used, design and implement a system for issuing and trading tokens, exploring the use of smart contracts to implement custom rules and logic, such as common rules used for private markets. |
-| 2. | Assets | Balances of assets and their values to be stored, tracked and managed. |
+| 1. | Create a native token for the MPT chain supported by a governance model. | Includes defining the different types of tokens that will be issued, their supply, and how they will be used. |
+| 2. | Token development and asset management | Balances of assets and their values to be stored, tracked and managed. |
 | 3. | Define tokenomics | Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed. |
-| 4. | MPT chain | Issuing and trading of tokens, storage and management of asset balances, and smart contract exploration to determine best fit within the newly created pallet. |
+| 4. | MPT chain | Issuing and trading of tokens, storage and management of asset balances, and exploring the use of smart contracts to implement custom rules and logic, such as common rules used for private markets. |
 
 #### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
 
@@ -187,22 +182,25 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 #### Possible course of action for deliverables:
 
-- d1: Define the different types of tokens that will be issued, their supply, and how they will be used.
+- d1: Define the token properties, and how they will be issued, how to determine their supply, and how they will be used and distributed.
 - d2: Identify the requirements for issuing and trading tokens in private markets.
 - d3: Design and implement the architecture for the primary and secondary token issuance.
-- d4: Explore the use of smart contracts to implement custom rules and logic, such as common rules used for private markets.
-- d5: Implement the extrinsics necessary for issuing and exchange tokens.
-- d6: Implement the logic for enforcing pre-established rules for private markets and/or alternative finance instruments.
-- d7: Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed.
-- d8: Test the smart contracts to ensure that they are working correctly.
-- d9: Test the pallet to ensure that it is working correctly.
-- d10: Review and update the tokenomics definition, based on the findings from d4.
+- d4: Implement the logic for creating and issuing the native token.
+- d5: Define the governance model for the MPT chain. This could include defining how token holders can participate in decision-making, such as voting on proposals to change the platform's parameters.
+- d6: Implement the governance model on the MPT chain.
+- d7: Explore the use of smart contracts to implement custom rules and logic, such as common rules used for private markets.
+- d8: Implement the extrinsics necessary for issuing and exchange tokens.
+- d9: Implement the logic for enforcing pre-established rules for private markets and/or alternative finance instruments.
+- d10: Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed.
+- d11: Test the smart contracts to ensure that they are working correctly.
+- d12: Test the pallet to ensure that it is working correctly.
+- d13: Review and update the tokenomics definition, based on the findings from d4.
 
 ### Milestone 3
 
 - **Estimated Duration:** ~1 month
 - **FTE:** 2.5
-- **Costs:** 25,000 USD
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
