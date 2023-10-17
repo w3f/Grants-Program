@@ -167,34 +167,16 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 : 4 Months
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 
-: individual (1) 
+: 1 FTE
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
 : 4000 USD
 
-### Milestone 1 Public Mint
+### Milestone 1 Mint Dapp V1
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 4 month
 - **FTE:**  1
-- **Costs:** 1,000 USD
-
-### Milestone 1 Free Mint
-
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** 1,000 USD
-
-### Milestone 1 Whitelist Mint
-
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** 1,000 USD
-
-### Milestone 1 Reaveable Mint ( Set Metadata once Mint has completed )
-
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** 1,000 USD
+- **Costs:** 4,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
 
