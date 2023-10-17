@@ -34,7 +34,6 @@ Third party pr's that are waiting for JsonRpsee to support socks5:
 On 4th of September of 2022 a [pr was created](https://github.com/paritytech/jsonrpsee/issues/870) to start the process of adding socks5 support for JsonRpsee.  
 Noone has had time to fix this issue and implement this feature, therefor this RFP. 
 
-Bitcoind has been the default node software for Bitcoin for several years and it comes out of the box with 
 
 ## Motivation:  
 -  Enable client libraries to connect to .onion rpc nodes.   
