@@ -143,9 +143,9 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 #### Possible course of action for deliverables:
 
-- d1: Define the core features of the MPT pallet, such as asset creation, issuance, transfer, and management: defining the types of assets that will be supported, the different roles that users can have in the system, and the operations that users will be able to perform on assets.
-- d2: Design the pallet architecture and define the interfaces between the pallet and other *Substrate* pallets: defining the pallet's data structures and functions, as well as how the pallets will interact with other *Substrate* pallets, such as the accounts pallet, balances pallet, and transactions pallet.
-- d3: Implement the pallet logic, including the extrinsics for asset creation, issuance, transfer, and management. Creating the logic for each extrinsic, as well as the necessary checks and balances to ensure that the extrinsics are used correctly.
+- d1: Define the core features of the MPT pallet, such as user permissions, asset creation, issuance, transfer, and management: defining the types of assets that will be supported, the different roles that users can have in the system, and the operations that users will be able to perform on assets.
+- d2: Design the pallet architecture and storage schema: defining the pallet's data structures and functions, as well as how the MPT pallet will interact with other *Substrate* pallets, such as the accounts pallet, balances pallet, and transactions pallet.
+- d3: Implement the pallet logic, including the extrinsics for asset creation, issuance, transfer, and management. Creating the logic for each extrinsic, as well as the necessary checks and balances to ensure that the extrinsics are used correctly: users cannot create assets without the necessary permissions, and that users cannot transfer assets that they do not own.
 - d4: Test the pallet to ensure that it is functioning correctly. Testing the extrinsics to ensure that they perform as expected, as well as testing the overall functionality of the pallet.
 - d5: Identify the extrinsics from existing *Substrate* pallets that are needed to support the core features of the MPT pallet. Identifying the extrinsics that are needed for basic operations such as account creation, balance transfers, and transaction fees.
 - d6: Implement the custom extrinsics that are needed to support the specific features of the MPT pallet.
@@ -182,16 +182,16 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 #### Possible course of action for deliverables:
 
-- d1: Define the token properties, and how they will be issued, how to determine their supply, and how they will be used and distributed.
-- d2: Identify the requirements for issuing and trading tokens in private markets.
+- d1: Define the tokens properties: in this first version we will be focusing on ownership representation, and how such tokens will be issued, how to determine their supply, and how they will be used and distributed. We will address how other tokens will be used to grant access to services, or to vote on governance proposals, after our initial implementation of tokens representing ownership and the exploration of offchain and on-chain Oracles directly connected to RWAs.
+- d2: Identify the requirements for issuing and trading tokens in private markets: consider how to verify the identities of investors and how to prevent fraud.
 - d3: Design and implement the architecture for the primary and secondary token issuance.
-- d4: Implement the logic for creating and issuing the native token.
-- d5: Define the governance model for the MPT chain. This could include defining how token holders can participate in decision-making, such as voting on proposals to change the platform's parameters.
-- d6: Implement the governance model on the MPT chain.
+- d4: Implement the logic for creating and issuing the token to investors or community members.
+- d5: Define the governance model for the MPT chain. This could include defining how token holders can participate in decision-making, such as voting on proposals to change the platform's parameters, naturally focusing on transparency and fairness.
+- d6: Implement the governance model on the MPT chain: create a mechanism for submitting and voting on proposals to change the platform's parameters.
 - d7: Explore the use of smart contracts to implement custom rules and logic, such as common rules used for private markets.
-- d8: Implement the extrinsics necessary for issuing and exchange tokens.
-- d9: Implement the logic for enforcing pre-established rules for private markets and/or alternative finance instruments.
-- d10: Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed.
+- d8: Implement the extrinsics necessary for issuing, exchanging and transferring tokens between different accounts and for exchanging tokens for other assets.
+- d9: Implement the logic for enforcing pre-established rules for private markets and/or alternative finance instruments, such as KYC/AML checks and investment limits.
+- d10: Define the multiple fees to support client platforms tokenomics, and how fees are generated, used, collected and distributed.
 - d11: Test the smart contracts to ensure that they are working correctly.
 - d12: Test the pallet to ensure that it is working correctly.
 - d13: Review and update the tokenomics definition, based on the findings from d4.
@@ -231,17 +231,14 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 #### Possible course of action for deliverables:
 
-- d1: Design and implement a system for account creation, management, and transfer.
-- d2: Implement the extrinsics for creating, updating, deleting accounts, and transferring funds.
-- d3: Design and implement a mechanism for associating Substrate accounts with identity and asset management capabilities.
+- d1: Design and implement a system for account permissions, creation, management, and transfer.
+- d2: Implement the extrinsics for creating, updating, freezing, unfreezing, deleting accounts, and transferring funds.
+- d3: Design and implement a mechanism for associating *Substrate* accounts with real world identities and asset management capabilities.
 - d4: Implement the extrinsics for associating Substrate accounts with identity and asset management capabilities, and for authorizing Substrate accounts to perform transactions on tokens.
-- d5: Design and implement APIs for creating, issuing, transferring, and managing assets.
-- d6: Design and implement APIs for viewing account balances and asset holdings.
-- d7: Implement the APIs for creating, issuing, transferring, and managing assets, and for viewing account balances and asset holdings.
-- d8: Document the initial implementation of the accounts, identity, and asset management system.
-- d9: Provide examples of how the system can be used to implement real-world applications.
-- d10: Discuss the potential of the system to be used in the development of future financial products and services.
-- d11: Create a GitHub repository with the documentation and examples.
+- d5: Design and implement APIs for creating, issuing, transferring, and managing assets, and for getting the list of all assets on the chain and the metadata for a specific asset.
+- d6: Design and implement APIs for viewing account balances and asset holdings, and for getting the current price of an asset.
+- d7: Document the initial implementation of the accounts, identity, and asset management system.
+- d8: Create a GitHub repository with the documentation and examples.
 
 #### Moreover, together with the MPT pallet we are creating, we will be using parts of the following existing pallets:
 
@@ -260,7 +257,7 @@ In the short term, we plan to develop more features and products for our tokeniz
 
 On more practical terms, we are also embracing a new project for a primary and secondary issuance platform to connect private and institutional investors to growing SMEs wanting to expand in emerging markets, where financial infrastructure is lacking. Finally, we will further advance our KYC/KYB/AML capabilities to provide on-chain verified info, as well as exploring the best route to integrate *oracles* for on and off chain data verification.
 
-In the long term, we aim to become the go-to parachain for alternative finance products, private companies, and digital private markets in the *Polkadot* environment.
+In the long term, we aim to become the go-to parachain for alternative finance products, private companies, and digital private markets in the *Polkadot* environment, focusing on creating and implement more complex financial products and services, as well as taking into account the legal and regulatory implications of developing and deploying decentralized financial applications.
 
 ## Additional Information :heavy_plus_sign:
 
