@@ -71,5 +71,5 @@ Please add additional milestones in the same way:
 | 2.  | Socks5 support |enable a jsonrpsee client to proxy connections using a socks5 proxy |   
 
 
-#### Demonstrations:  
+#### Demonstrations
 -  Connect to a .onion rpc node with jsonrpsee.  
