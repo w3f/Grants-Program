@@ -7,7 +7,7 @@
 
 [JsonRpsee](https://github.com/paritytech/jsonrpsee) is an opensource Rust library used by several para and relay chain client libraries to connect to chains over ws or rpc. 
 
-## Background story:  
+## Background story
 
 Tor is a anonymization project that has been active for several years. By utilizing a traffic obfusication protocol to route data, it enables users to anonymize their internet traffic. Several blockchain projects leverage this technology to allow users to connect to nodes over tor, inputting the .onion address of the rpc provider.  
 
