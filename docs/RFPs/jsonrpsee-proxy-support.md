@@ -35,7 +35,7 @@ On 4th of September of 2022 a [pr was created](https://github.com/paritytech/jso
 Noone has had time to fix this issue and implement this feature, therefor this RFP. 
 
 
-## Motivation:  
+## Motivation
 -  Enable client libraries to connect to .onion rpc nodes.   
 
 
