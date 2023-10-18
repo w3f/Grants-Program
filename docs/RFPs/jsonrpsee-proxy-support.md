@@ -9,7 +9,7 @@
 
 ## Background story:  
 
-Tor is a anonymization project that has been active for several years. By utilizing a traffic obfusication protocol to route data, it enables users to anonymize their internet traffic. Several blockchain projects leverage this technology to allow users to connect to nodes over tor, inputing the .onion address of the rpc provider.  
+Tor is a anonymization project that has been active for several years. By utilizing a traffic obfusication protocol to route data, it enables users to anonymize their internet traffic. Several blockchain projects leverage this technology to allow users to connect to nodes over tor, inputting the .onion address of the rpc provider.  
 
 By providing a .onion address for a rpc/ws node, we can allow users to have more privacy by masking the origination of the request(senders ip address).   
 
