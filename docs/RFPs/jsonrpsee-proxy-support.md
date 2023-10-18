@@ -14,7 +14,7 @@ Tor is a anonymization project that has been active for several years. By utiliz
 By providing a .onion address for a rpc/ws node, we can allow users to have more privacy by masking the origination of the request (the sender's ip address).   
 
 
-Gavin Wood mentioning onion-routing as an important future on Decoded 2023:
+Gavin Wood mentioned onion-routing as an important future feature on Decoded 2023:
 ![](https://lh4.googleusercontent.com/jVXYOtm4ORONGqAdtpj3tS4RUgpNJP3lAST_7byZOaT2FKzzGdvdVQOqf-2v1bhvWdniWuJDN2qBxkjYvMByqKXc9v6odzULbWla-sflQlEITA1hC34vCiumr3FKtpuaLo0xwfJNH_j9G-1O1RWki8k)
 
 [In february 2023](https://forum.polkadot.network/t/privhost-public-polkadot-kusama-and-edgeware-nodes-with-tor-v3-onion-support/2093), a small public rpc provider was launched in order to provide .onion rpc endpoints for handful of chains in the ecosystem.     
