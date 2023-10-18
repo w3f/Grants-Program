@@ -39,7 +39,7 @@ Noone has had time to fix this issue and implement this feature, therefor this R
 -  Enable client libraries to connect to .onion rpc nodes.   
 
 
-### Ecosystem projects that rely on JsonRpsee:   
+### Ecosystem projects that rely on JsonRpsee
 -  [Subxt](https://github.com/paritytech/subxt)   
 -  [Substrate](https://github.com/paritytech/substrate)  
 -  [Subwasm](https://github.com/chevdor/subwasm)  
