@@ -27,9 +27,9 @@ In order to connect to a .onion site, a user must pass it's connection through a
 Several ecosystem projects want to add support for connecting to .onion, but are blocked due to JsonRpsee not having support for sock5 proxy.    
 
 
-Third party pr's that are waiting for JsonRpsee to support socks5:  
-[Fedimint #391](https://github.com/fedimint/fedimint/issues/391#issuecomment-1643878929)  
-[Uptest #15](https://github.com/uptest-sc/uptest/issues/15)   
+Third party pr's that are waiting for JsonRpsee to support socks5:
+- [Fedimint #391](https://github.com/fedimint/fedimint/issues/391#issuecomment-1643878929)  
+- [Uptest #15](https://github.com/uptest-sc/uptest/issues/15)   
 
 On 4th of September of 2022 a [pr was created](https://github.com/paritytech/jsonrpsee/issues/870) to start the process of adding socks5 support for JsonRpsee.  
 Noone has had time to fix this issue and implement this feature, therefor this RFP. 
