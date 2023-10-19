@@ -21,7 +21,7 @@ The Signer is capable of signing not only Polkadot and Kusama extrinsics but als
 
 ### Project Details
 
-We've prepared a [demo video](https://youtu.be/rclCgIFql7U), showcasing how Polkadot.js Apps seamlessly connects with MetaMask using the Polkagate Signer Snap. This Snap flawlessly signs transactions, enhancing the user experience.
+We've prepared two demo videos [1](https://youtu.be/rclCgIFql7U) and [2](https://youtu.be/Ykil4x8d-dM), showcasing how Polkadot.js Apps an Staking dashboard are seamlessly connected with MetaMask using the Polkagate Signer Snap. This Snap flawlessly signs transactions, enhancing the user experience.
 
 Our project primarily utilizes JavaScript and TypeScript for development, ensuring accessibility and extendability for developers interested in contributing fresh ideas.
 
@@ -45,7 +45,7 @@ Polkamask addresses the need for seamless integration between MetaMask and Subst
 
 Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
-There are existing projects in the Polkadot ecosystem that aim to enhance the user experience and accessibility. One example is the Polkadot wallet Snap. However, it primarily supports Polkadot, Kusama, and Westend based on their codebase on GitHub. An important distinction is that integrating with this wallet Snap often requires dApps to undergo modifications to utilize the Snap, which can be a significant barrier to integration.
+There are existing projects in the Polkadot ecosystem that aim to enhance the user experience and accessibility. One example is the Polkadot wallet Snap developed by ChainSafe. However, it primarily supports Polkadot, Kusama, and Westend based on their codebase on GitHub. An important distinction is that integrating with this wallet Snap often requires dApps to undergo modifications to utilize the Snap, which can be a significant barrier to integration.
 
 In contrast, Polkamask differentiates itself by introducing the Polkagate Signer Snap. This Snap offers seamless integration with MetaMask, providing a user-friendly experience and eliminating the need for dApps to make code modifications. This ease of use and the ability to connect to Substrate-based chains without requiring code changes make Polkamask a unique and valuable addition to the ecosystem.
 
@@ -138,7 +138,7 @@ These packages serve as initial contributions to our project and provide a found
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Our documentation will include both inline code explanations and a comprehensive tutorial to guide users on how to work with the Polkagate Signer and MetaMask Snaps. This tutorial will effectively showcase the functionality of Polkamask.|
+| **0b.** | Documentation | Our documentation will include both inline code explanations and a comprehensive tutorial to guide users on how to work with the Polkagate Signer and MetaMask Snaps. This tutorial will effectively showcase the functionality of Polkamask.|
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
