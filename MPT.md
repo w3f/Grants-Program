@@ -34,9 +34,9 @@ Comprising a compact yet seasoned group of practitioners and professionals, our 
 
 ### Project Details
 
-Our intention is to deliver an initial implementation of an alternative finance protocol, starting with asset tokenization, to support the build out of platforms on top of our infrastructure. Our first steps for the MVP of this project would be to:
+Our primary objective is to pioneer an alternative finance protocol, emphasizing asset tokenization as the cornerstone for subsequent platform development atop our infrastructure. The illustrative depiction below encapsulates our dual-layered design:
 
-1) Set up our alternative finance focused blockchain and develop its initial attributes: specifically designed for issuance, representation and trading of RWAs, whereas primary issuance would be the focus in the initial phase.
+1) Layer Overview: Using Substrate as our primary framework, our intention is to deliver an initial implementation of our alternative finance protocol. This protocol will focus on asset tokenization, specifically tailored for issuance, representation, and trading of real-world assets (RWAs). The spotlight in the initial phase will be on primary issuance.
 2) Set up the initial role of the tokens for primary and secondary issuance through smart contracts: creating a token standard that will make it swift for asset owners to issue tokens that represent their RWAs, and allow investors to invest in and trade the tokens.
 3) Set up the initial wallet functions to allow for interaction with multiple users owning multiple assets: we aim at implementing a wallet that will allow users to store and manage their RWAs.
 
