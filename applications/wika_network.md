@@ -3,7 +3,7 @@
 - **Team Name:** Web Registry DAO
 - **Payment Address:** 0xBfc8cDb5617eE0F83794156ABD7465730E125cE3 (USDT)
 - **Level:** 2
-
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/682#issuecomment-1443835696)
 
 ## Project Overview :page_facing_up:
 

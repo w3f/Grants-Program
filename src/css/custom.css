@@ -14,6 +14,8 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-navbar-link-color: #000;
+  --ifm-color-black: #fff;
   --ifm-code-font-size: 95%;
   font-family: SuisseIntl,sans-serif;
 }
@@ -22,6 +24,22 @@
   font-size: 4rem;
 }
 
+.navbar__logo {
+  flex: 0 0 auto;
+  height: 48px;
+  margin-right: 0rem;
+}
+
+/* Used on RFP page to minimize tables */
+.alert {
+  background-color: white;
+  --ifm-alert-border-color: rgb(28, 30, 33);
+  color: rgb(28, 30, 33);
+}
+
+.alert a {
+  color: rgb(28, 30, 33);
+}
 
 .footer__link-item {
   text-decoration: none;
@@ -50,6 +68,14 @@
 
 .footer--dark {
   --ifm-footer-background-color: #000;
+  background-image: url("https://web3.foundation/static/fa2e2556a97b02fb8186cceaa6999d78/24754/research-large.avif");
+  background-size: cover;
+}
+
+.footer__copyright {
+  color: #7F7F7F;
+  font-size: 14px;
+  text-align: right;
 }
 
 .docusaurus-highlight-code-line {
@@ -74,4 +100,77 @@ a {
 /* All other links should not be underlined */
 .button, .menu__link, .navbar__brand, .navbar__item, .pagination-nav__link, .table-of-contents__link {
   text-decoration: none;
+}
+
+/* Divider for sidebar */
+.sidebar-divider {
+  border-top: 1px solid var(--ifm-color-gray-200);
+  display: block;
+  margin: 0.5rem 0 0.25rem 1rem;
+}
+
+/* Title for sidebar */
+.sidebar-title {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ifm-color-gray-600);
+}
+
+/* Link styling */
+.navbar__item {
+  padding: 0px;
+  margin: 4px 12px;
+}
+
+a.navbar__item{
+  background:
+    linear-gradient(
+      to right,
+      #fff,
+      #fff
+    ),
+    linear-gradient(
+      to right,
+      #000,
+      #000,
+      #000
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover.navbar__item{
+  background-size: 0 3px, 100% 3px;
+}
+
+/* More prominent admonitions */
+.theme-admonition-danger {
+  border-left: 5px solid rgb(0, 0, 0);
+  background-color: rgba(255, 0, 0, 0.15);
+}
+
+.theme-admonition-info {
+  border-left: 5px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.theme-admonition-caution {
+  border-left: 5px solid rgb(0, 0, 0);
+  background-color: rgba(255, 255, 0, 0.15);
+}
+
+.theme-admonition-tip {
+  border-left: 5px solid rgb(0, 0, 0);
+  background-color: rgba(0, 255, 0, 0.15);
+}
+
+/* Border around details */
+details {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 10px;
 }

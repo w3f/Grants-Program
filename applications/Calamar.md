@@ -67,28 +67,33 @@ As we are gathering feedback, one of the most important features for the users s
 - searchable by public key or chain-specific address
 - display
   - account's name if set
-  - owned assets and their statuses from all listed chains, including dollar values and graphs for visualization.
+  - owned assets accross all listed chains, including dollar values and graphs for visualization.
   - list all chain-specific addresses
-  - list all related transfers, cross-chain messages, calls and all extrinsics
+  - list all related transfers, extrinsics and calls
 
-![Account page](https://res.cloudinary.com/topmonks/image/upload/v1661767600/calamar/account.png)
+![Account page](https://res.cloudinary.com/topmonks/image/upload/v1672668761/calamar/account3.png)
 
 #### Chain dashboards
 
 Each chain will have own dashboard with statistics and listing of latest blocks, latest transfers, top holders, etc. It makes the explorer more useful even for users who are not searching for specific items.
 
-![Statistics page](https://res.cloudinary.com/topmonks/image/upload/v1661765199/calamar/statistics.png)
+![Statistics page](https://res.cloudinary.com/topmonks/image/upload/v1697542484/calamar/statistics2.png)
 
-#### Cross-chain transfers
-Important feature is to create good UI for displaying information about XCM teleports and other cross-chain transfers where you can easily see all involved sides (chains, accounts) and other useful data.
+#### Metadata explorer
 
-- XCM transfer detail
+The runtime metadata of each chain are still evolving and changing but it is not so easy to display them in a structured and human-readable way. There is e.g. a tool https://wiki.polkadot.network/docs/metadata which displays them but only latest version and supports only a few networks. The metadata explorer we are going to implement will support all the networks and also historical versions of the runtime spec.
 
-![XCM transfer page](https://res.cloudinary.com/topmonks/image/upload/v1662492906/calamar/xcm-transfer-detail.png)
+![Metadata explorer](https://res.cloudinary.com/topmonks/image/upload/v1672668761/calamar/metadata_explorer.png)
 
-- in transfers table
+#### Item metadata
 
-![Transfers table](https://res.cloudinary.com/topmonks/image/upload/v1662492938/calamar/xcm-transfers-list.png)
+The metadata information will be deeply integrated into whole Calamar so we can display it in the detail pages of the items. E.g. in extrinsic's detail page we will show info for the call name, error, parameters and link to the metadata explorer for more info.
+
+![Extrinsic metadata](https://res.cloudinary.com/topmonks/image/upload/v1672668761/calamar/extrinsic_metadata.png)
+
+#### Search input autocomplete for call and event names
+
+Thanks to the metadata we can also autocomplete and suggest the call and event names when typing into the search input.
 
 ### Technology stack
 
@@ -203,33 +208,42 @@ Even though we have the already working application, there are still many things
 | 10. | Website polishing | Add useful information to the website (footer with team logos, contact information, terms, etc.). |
 | 11. | Polkadot.js integration | Create a PR to integrate links to the Calamar Explorer into Polkadot.js app. |
 
-### Milestone 2 - Account detail & Cross-chain transfers
+### Milestone 2 - Account detail & Chain dashboards
 
 - **Estimated duration:** 4 weeks
 - **FTE:** 1
 - **Costs:** $10,000
 
-Here we want to implement the most requested features, the [account detail](#account-detail) overview and [cross-chain transfers](#cross-chain-transfers)
+In this milestone we are going to improve [account detail](#account-detail) page and replace latest extrinsics page with proper [dashboard](#chain-dashboards) page for each chain.
+
+*Subsquid (data provider) might not support each feature for all chains at the time of the implementation, so the features will be implemented universally to support each chain whenever the data are provided in the future.*
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide inline documentation of the code where necessary  and tutorials on how to use new features. |
+| 0b. | Documentation | We will provide inline documentation of the code where necessary and user documentation for new features. |
 | 0c. | Testing Guide | We will provide end-to-end tests covering UI functionality. |
 | 0d. | Docker | *N/A - will be provided by the first milestone.* |
 | 0e. | Article | We will publish an article that explains what was done as part of the grant |
-| 1. | Account detail | Current account detail shows only list of extrinsics signed by that account. Improve account detail page as specified in [Account detail](#account-detail) section. |
-| 2. | XCM transfers and teleports | Detect cross-chain transfers and display relevant information of involved chains and accounts: from chain, to chain, relayed at chain (reserve), sender, beneficiary, etc. See [Cross-chain transfers](#cross-chain-transfers) for more. |
+| 1. | Account / Balance overview | Overview of owned assets accross all listed chains with chain specific addresses, including dollar values |
+| 2. | Account / Balance charts | Chart visualization of balance by assets and by type (reserved, tranferable, ...), including dollar values |
+| 3. | Account / Transfers list | Add account's transfers list table |
+| 4. | Account / Calls list | Add account's calls list table |
+| 5. | Account / Identity info | Add account's identity information if set (name, twitter, ...) |
+| 6. | Chain dashboard / Stats | Show chain's stats (blocks count, signed extrinsics count, total issuence, transfers count, holders count, total issuence, staked value, inflation rate, validators count) including USD values |
+| 7. | Chain dashboard / Asset value chart | Chart visualization of asset value by type (staked, circulating, other) |
+| 8. | Chain dashboard / Latest blocks | Add latest blocks list table |
+| 9. | Chain dashboard / Latest transfers | Add latest transfers list table |
+| 10. | Chain dashboard / Top holders | Add top holders list table |
 
-### Milestone 3 - Universal search & Chain dashboards
 
-- **Estimated duration:** 3 weeks
-- **FTE:** 1
+### Milestone 3 - Universal search & Metadata explorer
+
+- **Estimated duration:** 8 weeks
+- **FTE:** 0.375
 - **Costs:** $7,500
 
-There are two things which can highly improve the usefulness of the explorer.
-
-The fist is the [universal search](#universal-search) and the next big thing is [dashboards for chains](#chain-dashboards).
+In this milestone we are going to implement [universal search](#universal-search) and one of the most requested features: [cross-chain transfers](#cross-chain-transfers) detection.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -239,11 +253,15 @@ The fist is the [universal search](#universal-search) and the next big thing is 
 | 0d. | Docker | *N/A - will be provided by the first milestone.* |
 | 0e. | Article | We will publish an article that explains what was done as part of the grant |
 | 1. | Universal search | Search items through all the chains without the knowledge where it belongs. See [Universal search](#universal-search). |
-| 2. | Chain dashboard | Create dashboard with stats, charts and item listings for each chain. See [Chain dashboards](#chain-dashboards). |
+| 2. | Metadata explorer | UI interface for exploring metadata retrieved from network's latest and historical  versions of runtime spec. See [Metadata explorer](#metadata-explorer).
+| 3. | Show related runtime metadata in items' detail | Show related metadata information directly in detail pages of individual items and interlink to metadata explorer. See [Item metadata](#item-metadata).
+| 4. | Search input autocomplete | Autocomplete extrinsic and event name in the search input. See [Search input autocomplete for call and event names](#search-input-autocomplete-for-call-and-event-names).
 
 ## Future Plans
 
 There is a huge potential for future improvements which the Polkadot's community can benefit from.
+
+We would like to definitely display information about XCM transfers and teleports.
 
 As developers of most parachains implement their own custom modules/pallets it opens the opportunity to cooperate and customize Calamar explorer with UI/UX components and logic tailored to their needs.
 
