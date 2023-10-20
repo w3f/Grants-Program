@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-[Polkagate](polkagate.xyz) is a dedicated team of Polkadot enthusiasts, actively involved in various aspects of community development. Our multifaceted contributions encompass the development of the Polkagate extension, as well as the efficient management of Polkagate's Polkadot and Kusama pools. Today, we are excited to present our latest initiative aimed at further enriching the Polkadot ecosystem.
+[Polkagate](https://polkagate.xyz) is a dedicated team of Polkadot enthusiasts, actively involved in various aspects of community development. Our multifaceted contributions encompass the development of the Polkagate extension, as well as the efficient management of Polkagate's Polkadot and Kusama pools. Today, we are excited to present our latest initiative aimed at further enriching the Polkadot ecosystem.
 
 Introducing a revolutionary project with the vision of bridging the gap between the Polkadot ecosystem and the vast user base of Metamask, which boasts over 30 million users. We are committed to creating a seamless connection between these two vibrant communities, opening up new possibilities and opportunities for all involved.
 
