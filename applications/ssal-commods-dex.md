@@ -193,13 +193,13 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 ## Development Roadmap :nut_and_bolt:
 ### Overview
 - **Total Estimated Duration:** 3 Months
-- **Full-Time Equivalent (FTE):** 3
-- **Total Costs:** 30,000 USD
+- **Full-Time Equivalent (FTE):** 2.5
+- **Total Costs:** 20,000 USD
 
 ### Milestone 1 Example — Basic Smart Contracts and UI
 
 - **Estimated duration:** 1 months
-- **FTE:**  2,3
+- **FTE:**  2,5
 - **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
@@ -214,28 +214,19 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 ### Milestone 2 Example — Connect Smart Contracts to Frontend & User Testing
 
 - **Estimated Duration:** 1 month
-- **FTE:**  2,3
+- **FTE:**  2,5
 - **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** in our web documentation that explains how a user can interact with our smart contracts through CLI. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article** covering everything the team has built and learned. It will act as a compilation of our learnings trying to apply our blockchain application.|
 | 1. | Fully Connected App | We will deliver the fully integrated app. The user interface will be connected to the blockchain backend, and the app itself will be made available to a testing group. |
 | 2. | Collect User Feedback | Compile user feedback from advisors and potential clients. Revise contracts and UI and re-deploy. The deliverable will be organized as a GitHub page where each person's relevant feedback is described along with the related amendments made to the application. Each section will describe what changes were made, how they were made, and why they are an improvement on what was previously there.   |
 | 3. | CI/CD | Setup pipeline for CI/CD in order to expedite development on field as much as possible in the next month. We will use a mixture of selenium tests with sentry to catch and handle errors as quickly they crop up. |
-
-
-### Milestone 3 Example — Implementation and Improvements On-Field
-
-- **Estimated Duration:** 1 month
-- **FTE:**  4,5
-- **Costs:** 10,000 USD
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0e. | Article | We will publish an **article** covering everything the team has built and learned on site. It will act as a compilation of our learnings trying to apply our blockchain application to a real life scenario. Hopefully by publicizing our victories and mistakes others will be able to learn and improve upon our methods. |
-| 1. | On Site Integration | The team will prove the technology using a real-world buyer and seller. We will document the process in our article. The deliverable will be necessarily conceptual/anecdotal other than the data created and manipulated on-chain.   |
-| 2. | Continuous Improvement | Compile a file with improvements that need to be made. Make urgent changes on site and deploy quickly using the pipeline built last month. We will compile another GitHub page, like before, describing each change we made, the source issue we were addressing, and the improvement that change brought to the application.   |
 
 
 ## Future Plans
