@@ -54,7 +54,7 @@ Vane-network consist of the following functionalities
 
 We are not a team of UI designers so the design is not final in terms of UI.
 
-[Video demo](https://youtu.be/4pChQvPc4us)
+[video demo](https://www.youtube.com/watch?v=bGiraQBNPDY)
 
 [vane landing page](https://vane.framer.ai/)
 
@@ -177,7 +177,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-[video](https://www.youtube.com/watch?v=bGiraQBNPDY)
 
 ![](https://github.com/2-5-Foundation/vane/blob/main/artifacts/Vane-Overall-for-risk-free-transfer.jpeg?raw=true)
 
