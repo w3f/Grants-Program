@@ -14,82 +14,41 @@
 ![Candy Mint](https://github.com/AshutoshSingh00001/Grants-Program/assets/138657449/5ee14d58-09ad-4bf0-bcfb-30c9e7496b38)
 
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-: no
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
-: no
-
-
 ### Overview
 
-Please provide the following:
+ Candy Mint
+ 
+ Candy Mint is a tool built for Asset Hub for building scalable nft mint dapps built with the use polkadot-js/api and react-js
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
+ Candy Mint is Deployed with the use of React-js and @polkadot/api within Aseet Hubs of Polkadot and Kusama
 
-: Candy Mint
-- A brief description of your project.
-
-: Candy Mint is a tool built for Asset Hub for building scalable nft mint dapps built with the use polkadot-js/api and react-js
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-
-: Candy Mint is Deployed with the use of React-js and @polkadot/api within Aseet Hubs of Polkadot and Kusama
-- An indication of why your team is interested in creating this project.
-
-: We're intrested in building this project because the new Asset Hub parachain provides multiple different functionalities for nfts like public minting of nfts which can be very useful when it comes to the deployment of mint dapp without writing smart contract we all have tried ethereum based nft mint dapps so we wanted to build the same thing on Polkadot-Asset-Hub with some extra functionality
+ We're intrested in building this project because the new Asset Hub parachain provides multiple different functionalities for nfts like public minting of nfts which can be very useful when it comes to the deployment of mint dapp without writing smart contract we all have tried ethereum based nft mint dapps so we wanted to build the same thing on Polkadot-Asset-Hub with some extra functionality
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-- Mockups/designs of any UI components
+ ![Candy Mint UI](https://github.com/AshutoshSingh00001/Grants-Program/assets/138657449/90790d44-b115-4917-b8b2-562a5c2d5e82)
 
-: ![Candy Mint UI](https://github.com/AshutoshSingh00001/Grants-Program/assets/138657449/90790d44-b115-4917-b8b2-562a5c2d5e82)
+ @polkadot/api for nft mint by the user and for setting minted nft metadata and chain state for identifying next item id
 
-- Data models / API specifications of the core functionality
+ React-js + @polkadot/api + firebase (firebase will be replaced by polkadot chain state fetch api for collection next item id data)
 
-: @polkadot/api for nft mint by the user and for setting minted nft metadata and chain state for identifying next item id
-- An overview of the technology stack to be used
-
-: React-js + @polkadot/api + firebase (firebase will be replaced by polkadot chain state fetch api for collection next item id data)
-- Documentation of core components, protocols, architecture, etc. to be deployed
-
-: ![Components](https://github.com/AshutoshSingh00001/Grants-Program/assets/138657449/d5a0bd0a-f121-4f5d-abfb-984298cedc26)
-
-- PoC/MVP or other relevant prior work or research on the topic
-
-: ![poc](https://github.com/AshutoshSingh00001/Grants-Program/assets/138657449/87319be8-2ea3-4493-9581-a1376b348bbc)
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
-: public mint , free mint , whitelist mint , content metadata revealable after mint
+ ![Components](https://github.com/AshutoshSingh00001/Grants-Program/assets/138657449/d5a0bd0a-f121-4f5d-abfb-984298cedc26)
 
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+ ![poc](https://github.com/AshutoshSingh00001/Grants-Program/assets/138657449/87319be8-2ea3-4493-9581-a1376b348bbc)
+ public mint , free mint , whitelist mint , content metadata revealable after mint are the limitations 
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+ Creating Mint Dapp on Asse Hub for Creating nft mint dapps easily with different functionality
 
-- Where and how does your project fit into the ecosystem?
+  For Developers , artits
 
-: on Asse Hub for Creating nft mint dapps easily with different functionality
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+ Building a Pre built Tools for nfts
 
-: developers , artits
-- What need(s) does your project meet?
-
-: Pre built Tools for nfts
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-
-: Kodadot Drops but it cannot be customised and dosent supports different mint functionality plus Mint dapp page creation isn't quick you'll need to submit form to host mint
-  - If not, are there similar projects in related ecosystems?
+ Kodadot Drops is the similar project but it cannot be customised and dosent supports different mint functionality plus Mint dapp page creation isn't quick you'll need to submit form to host mint
 
 ## Team :busts_in_silhouette:
 
