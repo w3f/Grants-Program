@@ -222,6 +222,6 @@ Here you can also add any additional information that you think is relevant to t
 
 - Work you have already done.
 
-: Polkadot Punks Mint dapp
+: Polkadot Punks NFT Mint dapp
 - If there are any other teams who have already contributed (financially) to the project.
 - Previous grants you may have applied for.
