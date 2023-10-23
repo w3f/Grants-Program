@@ -236,7 +236,7 @@ As there are no XCM Routers currently in the ecosystem, this challenging task mo
 
 - **Estimated duration:** 3 months ⌛️
 - **FTE:**  1
-- **Costs:** 15 000 USD 💰️
+- **Costs:** 12 000 USD 💰️
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -246,18 +246,14 @@ As there are no XCM Routers currently in the ecosystem, this challenging task mo
 | 0e. | Create Medium article about development of early Router | Add article covering early XCM Router version |
 | 1.a | Integrate early version of XCM Router I| This version will contain additional detail about exchange Parachain (XCM Router will not select exchange automatically yet, the developer has to select from a provided list). The first version will feature functions like patterns to create calls. [See an example of function pattern](https://paraspell.github.io/docs/sdk/xcmPallet.html#function-pattern-xcm-call-from-relay-chain-to-parachain) |
 | 1.b | Integrate early version of XCM Router II| Compared to the first version, this version will feature a Builder pattern to enhance the developer experience. [See an example of builder pattern](https://paraspell.github.io/docs/sdk/xcmPallet.html#builder-pattern-xcm-call-from-relay-chain-to-parachain) |
-|2.a| Prepare monorepo in XCM SDK repo|Prepare [monorepo developed earlier](https://github.com/paraspell/xcm-sdk/tree/beta-monorepo) for combining all three tools into one repository.|
-|2.b| Move LightSpell XCM API into Monorepo|Move LightSpell XCM API tool into monorepo created in XCM SDK repo|
-|2.c| Move SpellRouter XCM Router into Monorepo|Move SpellRouter tool into monorepo created in XCM SDK repo|
-| 3.a | Update docs to cover change to monorepo | Add comprehensive statement and information covering changes to monorepo |
-| 3.b | Update docs to cover early XCM Router version| Add comprehensive guide that covers usage of early XCM Router version|
-|4.|Create unit tests for XCM Router|Create unit tests for core features in XCM Router|
+| 2. | Update docs to cover early XCM Router version| Add comprehensive guide that covers usage of early XCM Router version|
+|3.|Create unit tests for XCM Router|Create unit tests for core features in XCM Router|
 
 ### Milestone 2 - Enhance XCM Router and feature automatic tool updating
 
 - **Estimated duration:** 2.5 months ⌛️
 - **FTE:**  1
-- **Costs:** 12 000 USD 💰️
+- **Costs:** 10 000 USD 💰️
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -265,14 +261,13 @@ As there are no XCM Routers currently in the ecosystem, this challenging task mo
 | 0b. | Documentation | We will provide both readme.md and official docs documentation  |
 | 0c. | Testing and Testing Guide | Testing guide will be mentioned in official docs|
 | 0e. | Create Medium article about development of latest XCM Router | Add article covering new features & improvements brought with SpellRouter☄️ |
-| 1. | Integrate automatic selection into XCM Router | Integrate automatic exchange chain selection into the router (If the user wishes they can manually insert it otherwise Router will select automatically). XCM Router will try to select an exchange with the best pool/price. |
-| 2. | Integrate XCM Router into LightSpell XCM API | Integrate XCM Router into LightSpell XCM API |
-| 3. | Create Automatic Updating for XCM API and XCM Router| Automatically update ParaSpell XCM SDK in XCM API and XCM Router if a new version is released. (Only for non-breaking updates 0.x.x. If there is a breaking change update, XCM SDK will have to be updated manually in both XCM API and XCM Router) |
-|4.a| Update unit tests for new XCM Router functionalities| Update unit tests for new XCM Router functionalities|
-|4.b| Create integration tests for XCM Router|Create integration tests for core features in XCM Router|
-|4.c| Update integration, unit and e2e tests for LightSpell XCM API| Add new integration,unit & e2e tests for core LightSpell XCM API XCM Router integration|
-| 5.a | Cover latest automatic selection in XCM Router section (Docs) | Add comprehensive guide covering automatic selection in XCM Router section |
-| 5.b | Cover XCM Router integration in XCM API  section (Docs) | Cover XCM Router integration in LightSpell XCM API Section |
+| 1. | Integrate automatic exchange chain selection into XCM Router | Integrate automatic exchange chain selection into the router (If the user wishes they can manually insert it otherwise Router will select automatically). XCM Router will try to select an exchange with the best pool/price. To see the difference between automatic and manual selection feel free to see the [following image](https://user-images.githubusercontent.com/55763425/277431789-cc3892dc-4452-49e1-a201-19edbc6f20d8.png)|
+| 2. | Integrate XCM Router into LightSpell XCM API | Integrate core functionality of XCM Router into LightSpell XCM API |
+|3.a| Update unit tests for new XCM Router functionalities| Update unit tests for new XCM Router functionalities|
+|3.b| Create integration tests for XCM Router|Create integration tests for core features in XCM Router|
+|3.c| Update integration, unit and e2e tests for LightSpell XCM API| Add new integration,unit & e2e tests for core LightSpell XCM API XCM Router integration|
+| 4.a | Cover latest automatic exchange chain selection in XCM Router section (Docs) | Add comprehensive guide covering automatic selection in XCM Router section |
+| 4.b | Cover XCM Router integration in XCM API  section (Docs) | Cover XCM Router integration in LightSpell XCM API Section |
 
 ## Future Plans 🔭
 - We wish to implement XCM v3 NFT transfer support 
