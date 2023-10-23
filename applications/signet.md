@@ -153,6 +153,14 @@ Talisman uses a blended rate for grants and proposals (see previously funded ini
 
 We have modeled our substrate login functionality (Sign in with Substrate - SIWS) on Sign in with Ethererum, and we hope this can catalyze the development of applications that build upon Substrate keypairs. We will extract the work that we have in integrating the login with Signet into an independent package that can be integrated by any team, provide website and documentation around the package, and set this on the road to becoming a standard.
 
+Authenticating a user with a Substrate key was initially developed as part of Signet, however we believe it should have a number of improvements before it can be released as a service or component ready for use by third parties:
+
+1. The version as implemented uses the JSON format with minimal payload data and only supports the server-side nonce check. We should augment this by supporting a string field that can contain information such as a welcome message or the terms of service of the dapp. 
+2. We will implement both text and JSON formats for the message to be signed, for both the presentation of the message client-side, and verification of the message server-side.
+3. We will implement a field for expressing time validity/expiration of the signature, as well as the corresponding server-side check.
+
+We’d like to address these improvements in the course of packaging Sign in With Substrate (SIWS) as a releasable component.
+
 - **Estimated duration:** 0,5 month
 - **FTE:**  1,5
 - **Costs:** 15,000 USD
@@ -165,8 +173,12 @@ We have modeled our substrate login functionality (Sign in with Substrate - SIWS
 | **0c.** | Testing and Testing Guide | We will include documentation on verifying your SIWS integration is performing correctly. |
 | **0d.** | Docker | This component will need to be integrated into a dapp before being deployed, so Docker is not applicable. |
 | 0e. | Article | We will publish an article that explains how the service works, the work done for this grant, and direction on how to integrate SIWS into other apps |
-| 1. | Service: Sign in with Substrate | We will extract our Substrate sign-in service into an independent component that is hostable and easily integratable into other projects |
-| 2. | Public Docs: Sign in with Substrate | We will create a public documentation site/landing page for Sign in with Substrate, in order to catalyze adoption by other projects, as well as eventual standardization. |
+| 1. | JS Package: Sign in with Substrate | We will extract our Substrate sign-in service into an independent javascript package that is hostable and easily integratable into other projects |
+| 2. | Feature: Custom message | We will add the ability to specify a custom message with the payload that can, for example, function as a welcome message from the dapp or specify the terms of service for the dapp |
+| 3. | Feature: Expiration | We will add the ability for the front end to specify an expiration time for the signed message |
+| 4. | Feature: Message Formats | We will add the ability to create the message payload both as a human-readable string, in addition to the existing JSON format |
+| 5. | Feature: Message Verification | We will add the ability to verify the signed message payload in either string or JSON format |
+| 6. | Public Docs: Sign in with Substrate | We will create a public documentation site/landing page for Sign in with Substrate, in order to catalyze adoption by other projects, as well as eventual standardization. |
 
 ### Milestone 2  — Signet Staking Module Improvements re: Validator Selection & Rotation UI
 
@@ -188,9 +200,9 @@ We would like to improve the use cases (a.k.a. modules) enabled by Signet, by en
 | **0c.** | Testing and Testing Guide | We run end to end tests on the application. |
 | **0d.** | Docker | We support deployment from git at this point in time, and will have instructions on this in the repository. |
 | 0e. | Article | We will publish an article that explains Signet and the work done for this grant |
-| 1. | Front End Module: Nom Pool Validator Selection | This module will enable an intuitive UX around selection of validators for a nomination pool. |
-| 2. | Front End Module: Staking Stash Validator Selection | This module will enable an intuitive UX around the selection of validators for a pure proxy stash. |
-| 3. | Front End Module: Staking Pure Proxy Validator Selection | This module will enable an intuitive UX around selection of validators for a staking proxy which is a pure proxy backed by a multisig |
+| 1. | Feature: Nom Pool Validator Selection | This feature enables an intuitive UX around viewing currently selected validators, as well as updating the validators for a nomination pool, using the nominationPools.nominate extrinsic |
+| 2. | Feature: Staking Stash Validator Selection | This will build upon the feature above to present an intuitive UX around the selection of validators for a pure proxy stash, using the staking.nominate extrinsic |
+| 3. | Feature: Staking Pure Proxy Validator Selection | This will build upon the above features to present an intuitive UX around selection of validators for a staking proxy which is a pure proxy backed by a multisig, using proxy.proxy and staking.nominate extrinsics |
 
 ## Future Plans
 
