@@ -1,7 +1,7 @@
 # CoinFabrik On Ink Integration Tests 2
 - **Team Name:** CoinFabrik (Nektra S.A)
 - **Payment Address:** 0xf488039EDe6B38D7689fDCC6A9FC2dd0EF39D54e (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -75,7 +75,7 @@ We have identified 24 functions exposed for their usage in integration and E2E t
 
 
 **Table 1: Status of functions exposed in integration and e2e testing environments.**
-| Issue Number | Function    	| Implemented Integration Tests | Integration E2E Tests | Status                                                                                     	|
+| Issue Number | Function    	| Implemented Integration Tests | Implemented Integration E2E Tests | Status                                                                                     	|
 |--------------|-----------------------------|-------------------------------|------------------------|------------------------------------------------------------------------------------------------|
 | 1        	| default_accounts()        	| Yes                       	| Yes                	| Implementation Difference.                                                                 	|
 | 2        	| set_contract_storage()  	| Yes                       	| Yes                	| Missing limitation on Integration Testing.                                                  	|
@@ -108,7 +108,7 @@ For these two sets of functions, with explicit implementation plans and pending 
 - QA: Adding tests to integrate the functions we add or modify to the [ink! project repository](https://github.com/paritytech/ink)  following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md).
 - Report Describing our Contribution.
 
-Considering the dependency of several functions on the implementation of `instantiate_contract()`,  we propose to split the work above into two milestones. Before implementing `instantiate_contract()`, we will also make modifications to the way accounts work in integration tests in order for them to be consistent with behavior in e2e. All these implementations or modifications will be pushed into the [ink! project repository](https://github.com/paritytech/ink ) following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md).
+Considering the dependency of several functions on the implementation of `instantiate_contract()`,  we propose to split the work above into two milestones. All these implementations or modifications will be pushed into the [ink! project repository](https://github.com/paritytech/ink ) following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md).
 
 We have also identified a bug in the e2e tests. When contracts are in a workspace with dependencies defined in `Cargo.toml`, and these dependencies are inherited in contracts, the e2e tests fail to compile. However, manually specifying dependencies in each contract resolves the issue. We've logged this bug on GitHub [Issue #1919](https://github.com/paritytech/ink/issues/1919) and will be addressing it as part of our work in Milestone 1.
 
@@ -116,14 +116,14 @@ We have also identified a bug in the e2e tests. When contracts are in a workspac
 
 ### Overview
 
-- **Total Estimated Duration:** 8 weeks
+- **Total Estimated Duration:** 4 weeks
 - **Full-Time Equivalent (FTE):**  4 FTE
 (0.50 Project Manager,
 0.50 Tech Lead,
 1 Full time Sr Rust Developer,
 1 Full Time SemiSr Rust Developer,
 1 Full Time QA Specialist)
-- **Total Costs:**  60,000 USD
+- **Total Costs:**  30,000 USD
 
 ### Milestone 1: Execution and Further Analysis
 - **Estimated duration:** 4 weeks
@@ -133,36 +133,44 @@ We have also identified a bug in the e2e tests. When contracts are in a workspac
 | Number | Deliverable | Specification |
 | ----- | ----------- | ------------- |
 | 0a. | License | MIT
-| 0b. | Documentation | We will write a comprehensive report that compares the functionalities of integration tests and E2E (End-to-End) tests. This report will focus on the functions to be implemented/corrected in this milestone, corresponding to issues 1-default_accounts(), 2-set_contract_storage() and 3-instantiate_contract().<br><br>Documentation and test cases will be provided for the 13 functions with remaining analysis. If implementation differences are found in these functions, an estimate for their correction and an implementation idea will also be provided in our report.<br><br>If applicable, we will suggest additional tests outside of the scope of this milestone. Particularly, for functions declared outside of the env_access.rs file, but that could be related to integration or e2e testing.
+| 0b. | Documentation | We will write a comprehensive report that compares the functionalities of integration tests and E2E (End-to-End) tests. This report will focus on the functions to be implemented/corrected in this milestone, corresponding to issues 1-default_accounts(), 2-set_contract_storage() and 7-instantiate_contract().<br><br>Documentation and test cases will be provided for the 13 functions with remaining analysis. If implementation differences are found in these functions, an estimate for their correction and an implementation idea will also be provided in our report.<br><br>If applicable, we will suggest additional tests outside of the scope of this milestone. Particularly, for functions declared outside of the env_access.rs file, but that could be related to integration or e2e testing.
 | 0c. | Testing and Testing Guide | The newly developed functionalities will be documented and tested following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md). A testing guide will be included. 
 | 0d. | Docker | Does not apply at this stage.
 | 0e. | Article | We will publish an updated report summary in our blog at https://blog.coinfabrik.com/.
- **1** | Develop | We will develop the missing functionalities or correct implementation differences for functions 1-default_accounts(), 2-set_contract_storage() and 3-instantiate_contract(). All these implementations or modifications will be pushed into the [ink! project repository](https://github.com/paritytech/ink) following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md).<br><br>If applicable, we will develop additional tests or make ad hoc improvements to the ink codebase necessary for the completion of this milestone. Particularly for functions declared outside the env_access.rs file that might be related to integration or end-to-end testing.
+ **1** | Develop | We will develop the missing functionalities or correct implementation differences for functions 1-default_accounts(), 2-set_contract_storage() and 7-instantiate_contract(). All these implementations or modifications will be pushed into the [ink! project repository](https://github.com/paritytech/ink) following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md).<br><br>If applicable, we will develop additional tests or make ad hoc improvements to the ink codebase necessary for the completion of this milestone. Particularly for functions declared outside the env_access.rs file that might be related to integration or end-to-end testing.
  **2** | Review and Estimate | We will review the remaining 13 unanalysed functions, which are implemented both for integration and e2e tests. For these functions we will provide documentation, a test case and an implementation estimation if applicable. These correspond to functions issue numbers 12 through 24.
- **3** | Quality Assurance | We will adhere to existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md) and add necessary tests to integrate the new implemented or corrected functions to the  [ink! project repository](https://github.com/paritytech/ink). 
+ **3** | Quality Assurance | We will adhere to existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md) and add necessary tests to integrate the new implemented or corrected functions to the  [ink! project repository](https://github.com/paritytech/ink).
 
-### Milestone 2: Execution
-- **Estimated duration:** 4 weeks
-- **FTE:** 4
-- **Costs:** 30,000 USD
-
-| Number | Deliverable | Specification |
-| ----- | ----------- | ------------- |
-| 0a. | License | MIT
-| 0b. | Documentation | We will write a comprehensive report that compares the functionalities of integration tests and E2E (End-to-End) tests. This report will focus on the the functions to be implemented in this milestone, corresponding to issues 4-code_hash(), 6-own_code_hash(), 7-invoke_contract(), 8-invoke_contract_delegate(), 9-caller_is_origin(), 10-set_code_hash().<br><br>Our report will also document the implementation of any missing functionalities, or correct implementation differences, for the 13 functions with issues 12 through 24. For this group, we will document any additional work that was required in order to ensure consistency between integration and e2e tests.<br><br>If applicable, we will suggest additional tests outside of the scope of this milestone. Particularly, for functions declared outside of the env_access.rs file, but that could be related to integration or e2e testing.
-| 0c. | Testing and Testing Guide | The newly developed functionalities will be documented and tested following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md). A testing guide will be included. 
-| 0d. | Docker | Does not apply at this stage.
-| 0e. | Article | We will publish an updated report summary in our blog at https://blog.coinfabrik.com/.
- **1** | Development | We will implement the missing functionalities or resolve implementation differences for function issues 4-code_hash(), 6-own_code_hash(), 7-invoke_contract(), 8-invoke_contract_delegate(), 9-caller_is_origin() and 10-set_code_hash).<br><br>We will implement any missing functionalities, or correct implementation differences, for the 13 functions with issues 12 through 24. For this group, we will document any additional work required in order to ensure consistency between integration and e2e tests.<br><br>All these implementations or modifications will be pushed into the [ink! project repository](https://github.com/paritytech/ink)  following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md).<br><br>If applicable, we will develop additional tests or make ad hoc improvements to the ink codebase necessary for the completion of this milestone. Particularly for functions declared outside the env_access.rs file that might be related to integration or end-to-end testing.
-**2** | Quality Assurance| We will adhere to existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md) and add necessary tests to integrate the new implemented or corrected functions to the  [ink! project repository](https://github.com/paritytech/ink). 
 
 
 ## Future Plans
 
-We have two projects in mind:
+After finishing the Milestone 1: Execution and Further Analysis, we will submit a new grant proposal to continue with the implementation of the remaining functions. We will include specific references to developments associated with the estimations resulting from the further analysis of functions issue numbers 12 through 24.
+
+### Next Milestone: Execution
+- **Estimated duration:** 4 weeks
+- **FTE:** 4
+- **Costs:** 30,000 USD
+
+
+
+| Number | Deliverable | Specification |
+| ----- | ----------- | ------------- |
+| 0a. | License | MIT
+| 0b. | Documentation | We will write a comprehensive report that compares the functionalities of integration tests and E2E (End-to-End) tests. This report will focus on the the functions to be implemented in this milestone, corresponding to issues 3-invoke_contract_delegate(), 4-invoke_contract(), 6-set_code_hash(), 8-caller_is_origin(),  9-code_hash(), 10-own_code_hash().<br><br>Our report will also document the implementation of any missing functionalities, or correct implementation differences, for the 13 functions with issues 12 through 24. For this group, we will document any additional work that was required in order to ensure consistency between integration and e2e tests.<br><br>If applicable, we will suggest additional tests outside of the scope of this milestone. Particularly, for functions declared outside of the env_access.rs file, but that could be related to integration or e2e testing.
+| 0c. | Testing and Testing Guide | The newly developed functionalities will be documented and tested following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md). A testing guide will be included. 
+| 0d. | Docker | Does not apply at this stage.
+| 0e. | Article | We will publish an updated report summary in our blog at https://blog.coinfabrik.com/.
+ **1** | Development | We will implement the missing functionalities or resolve implementation differences for function issues 3-invoke_contract_delegate(), 4-invoke_contract(), 6-set_code_hash(), 8-caller_is_origin(),  9-code_hash(), 10-own_code_hash().<br><br>We will implement any missing functionalities, or correct implementation differences, for the 13 functions with issues 12 through 24. For this group, we will document any additional work required in order to ensure consistency between integration and e2e tests.<br><br>All these implementations or modifications will be pushed into the [ink! project repository](https://github.com/paritytech/ink)  following existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md).<br><br>If applicable, we will develop additional tests or make ad hoc improvements to the ink codebase necessary for the completion of this milestone. Particularly for functions declared outside the env_access.rs file that might be related to integration or end-to-end testing.
+**2** | Quality Assurance| We will adhere to existing [contribution guidelines](https://github.com/paritytech/ink/blob/master/CONTRIBUTING.md) and add necessary tests to integrate the new implemented or corrected functions to the  [ink! project repository](https://github.com/paritytech/ink).
+
+
+Moving forward, we have two projects in mind:
 
 - Research and develop an advanced testing automation solution for ink! smart contracts.
-- Improve our open source bug-detection tool Scout (https://coinfabrik.github.io/scout/ )
+- Improve our open source bug-detection tool [Scout](https://coinfabrik.github.io/scout/ ).
+
+
    
 ## Referral Program (optional) :moneybag: 
 
