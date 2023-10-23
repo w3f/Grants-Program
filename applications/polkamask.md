@@ -129,7 +129,7 @@ These packages serve as initial contributions to our project and provide a found
 ### Overview
 
 - **Total Estimated Duration:**  3 months
-- **Full-Time Equivalent (FTE):**  1
+- **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** 30,000 USD 
 
 ### Milestone 1 - Create PolkaMask
