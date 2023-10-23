@@ -3,7 +3,7 @@
 - **Team Name:** Deitos Network
 - **Payment Method:** USDT (ID 1984) / Polkadot Assethub
 - **Payment Address:** 12DrpztfgAKVubPVv1KcichaW5L4YJutmLGz665xwmbaicrM 
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -228,9 +228,9 @@ Elements related to data consumption or querying, as well as the inclusion of ot
 
 ### Overview
 
-- **Total Estimated Duration:** 16 weeks (4 months).
+- **Total Estimated Duration:** 12 weeks (3 months).
 - **Full-Time Equivalent (FTE):**  3 FTE
-- **Total Costs:** 40.000 USD
+- **Total Costs:** 30.000 USD
 
 ### Milestone 1 — Initial setup and infrastructure provider pallet.
 
@@ -241,13 +241,14 @@ Elements related to data consumption or querying, as well as the inclusion of ot
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | The project will utilize the Apache 2.0 license. |
-| **0b.** | Documentation | Given that this milestone doesn’t encompass a UI or client interface, comprehensive user guidelines will be provided. These guidelines will detail how to initiate the network and interact with the modules developed in this milestone. |
+| **0b.** | Documentation | All the functionalities developed in this milestone will contain the corresponding inline code documentation. In addition, all the configuration for the services included in the Infrastructure Provider will be documented. |
+| **0c.** | Testing and Testing Guide | 1) All the different pallets and functionalities will contain their own unit testing contained in the `test.rs` files including the inline documentation for each test purpose. 2) Comprehensive testing guide for interacting with all the functionalities from the  `pallet-deitos`. 3) User guide to start the Docker file provided in the delivery item **0d.**|
+| **0d.** | Docker file | 1) Provision of a Docker file encapsulating all essential services. 2) Streamlined deployment of services: Hadoop, Spark, Hive, YARN, Llama v2, and the substrate node. 3) A docker-compose file to simplify onboarding and integration for providers. |
 | 1. | Substrate Node with BABE consensus | 1) Reconfiguration of the node to employ the BABE consensus protocol in place of the Aura consensus. 2) Integration of the respective VRF setup for BABE consensus. 3) Proper configurations on the node side like integrating the `BabeBlockImport`, initiating BABE workers, and setting inherents from `sp_consensus_babe` on the node service.rs file beyond just embedding the pallet-babe in the runtime|
 | 2. | Pallet Deitos foundation (pallet-deitos) | 1) Introduction of foundational elements of the pallet, incorporating storage items for cataloging Provider data, the specifics of agreements between Providers and Consumers, the reputation system and the data integrity protocol. 2) Framework scaffolding for future enhancements. 3) Groundwork for the data integrity protocol to be executed by this pallet's off-chain worker. |
 | 3. | Registration of Infrastructure Provider (pallet-deitos) | 1) Mechanism for infrastructure provider registration within the pallet-deitos. 2) Requirement of reserving a certain amount of funds. 3) Groundwork for attestation process initiation for new entrants. This will be completed in the next milestone with the data integrity protocol. |
 | 4. | Agreements Module (pallet-deitos) | 1) Functionality to define agreements between users and infrastructure providers. 2) Outline of storage quotas and its duration based on block by block reward dynamics. 3) Introduction of pertinent extrinsics, storage components, and events for agreements. 4) Mechanism where the consumer reserves a value based on the agreement's terms, leveraging either the ReservedCurrency trait from pallet-balances or the MutateHold trait from Fungibles depending of the pallet-balances migration status.  |
 | 5. | Agreements termination and on-chain reputation (pallet-deitos) | 1) Termination agreement procedure where consumer's data and corresponding resources get free from the infrastructure provider. 2) Data Integrity protocol clean up. 3) On chain reputation module based on feedback from the other party.  |
-| 6. | Docker file | 1) Provision of a comprehensive Docker file encapsulating all essential services. 2) Streamlined deployment of services: Hadoop, Spark, Hive, YARN, Llama v2, and the substrate node. 3) A docker-compose file to simplify onboarding and integration for providers. |
 
 ### Milestone 2 — Proxy, file uploader and data integrity protocol.
 
@@ -258,32 +259,19 @@ Elements related to data consumption or querying, as well as the inclusion of ot
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | The project will utilize the Apache 2.0 license. |
-| **0b.** | Documentation | Building upon the documentation provided in the first milestone, this milestone will introduce a new set of user guidelines. These guidelines will detail the steps necessary to interact with the modules introduced in this phase. |
+| **0b.** | Documentation | Building upon the documentation provided in the first milestone, this milestone will introduce a new set of user guidelines. As the grant approaches its conclusion and all implementation details are settled, we will provide thorough protocol documentation. |
+| **0c.** | Testing and Testing Guide | 1) All the different pallets and functionalities will contain their own unit testing contained in the `test.rs` files including the inline documentation for each test purpose. 2) This milestone will deliver the necessary tools to establish a local testing environment, allowing for comprehensive testing of all functionalities. |
+| **0d.** | Docker | As we plan to deliver the software to infrastructures providers (IP) in docker images, all the protocol services will be configured and delivered in the  IP Docker image. |
+| **0e.** | Articles | For the grant conclusion we will create two Medium articles: The first one will be a project introduction targeting a more general and wide audience. Some of the content will include: 1) Deitos Network introduction and network offering, 2) Roles and protocol functioning, 3) Design decisions. On the second article, we will delve into more technical information where the development aspect of this grant will be discussed. The audience for this second article will be more technical and the following items will be discussed: 1) Architecture in depths, 2) Substrate pallets descriptions, 3) Internal functioning of each module.   |
 | 1. | Proxy Development | 1) Complete development and deployment of the described proxy ensuring interaction between infrastructure providers, consumers and the substrate node. 2) Mechanism to reserve resources on the infrastructure provider for a consumer upon agreement commitment. 3) A system focused on storage where user segmentation is achieved through dynamic users generated on Hadoop. 4) Authentication derived from a signed transaction initiated by the pallet-deitos pallet. 5) Development of a module to validate consumer signatures and commit actions upon successful verification, ensuring no traditional passwords are stored in the system. |
 | 2. | File Uploads (Client Interface) | 1) Delivery of a client interface to facilitate file content splitting and hash calculation. 2) Creation of a generic algorithm to uniformly split files and calculate segment hashes. 3) Mechanism for producing and publishing signed transactions reflecting the computed results.|
 | 3. | File Upload Verification (Provider Side) | 1) Using the previously generic algorithm to uniformly split files and calculate segment hashes for each file or part upon receiving the consumer's signed transaction. Files are marked as 'verified' post successful hash validation. 3) Constant monitoring of blocks to detect unverified files, triggering an OCW for hash verification based on consumer transactions. |
 | 4. | Data Integrity Protocol | 1) Comprehensive development and deployment of the Data Integrity Protocol. 2) Utilizing BABE-generated randomness to select files/parts, directing infrastructure providers to create and validate respective hashes. 3) In case of hash mismatches during the data integrity protocol, a system to penalize the provider by reducing their staked amount. |
 
-### Milestone 3 — Disputes resolving and protocol documentation.
-
-- **Estimated duration:** 4 weeks
-- **FTE:**  3
-- **Costs:** 10,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | The project will utilize the Apache 2.0 license. |
-| **0b.** | Documentation | As the grant approaches its conclusion and all implementation details are settled, we will provide thorough protocol documentation. |
-| 1. | Dispute Resolution Committee | 1) Use pallet-collectives to establish a specific collective for the resolution committee. 2) Introduce a candidate proposal mechanism for community voting and selection. 3) Onboard and remove committee members based on voting outcomes. |
-| 2. | Dispute Triggers (pallet-disputes) | 1) Enable providers/consumers to initiate disputes. 2) Implement a system to adjudicate disputes. |
-| 3. | Dispute Resolution (pallet-disputes) | 1) Introduce a voting system for the committee to resolve disputes in favor of or against the prevailing party. 2) Develop mechanisms for punishments and rewards based on dispute resolution outcomes. 3) Establish a reward system to compensate the committee for their efforts in handling the case. |
-| 4. | Benchmarking | 1) Establish benchmarks for all the extrinsics in all the pallets. |
-| 5. | Testing and Testing Guide | This milestone will deliver the necessary tools to establish a local testing environment, allowing for comprehensive testing of all functionalities. |
-
-
 ## Mid-Term Plans
 
 - Further development of the network's roadmap, which includes:
+  - Deliver a on-chain dispute resolving module in case of disagreements between consumers and infrastructure providers. 
   - Introducing data consumption processes, such as querying or interacting with the model.
   - Implementing security mechanisms around the infrastructure provider to ensure the environment remains free from dishonest manipulations.
   - Incorporating privacy primitives, like ZK proofs, to bolster data integrity and query processes.
