@@ -146,7 +146,7 @@ Techstack:
 - Data indexing: indexing cli written in python index into clickhouse warehouse and s3-compatible object storage
 - Labeling engine: writing in node.js, with GraphQL interface, and React for the UI
 
-Reproducable assets:
+Reproducible assets:
 - Data indexing python CLI and docker container
 - Labeling: docker container
 
@@ -172,7 +172,7 @@ Techstack:
 - Reputation ranking algorithm: written in python, implement as jupyter notebook and deploy on GraphScope engine, we use open source BI tool called superset to export charts.
 - Onchain soulbound token and UI: written in solidity, and use React for UI
 
-Reproducable assets:
+Reproducible assets:
 - Reputation ranking algorithm: jupyter notebook and test data
 - Onchain soulbound token and UI: Deployed smart contract on chain with interface
 
