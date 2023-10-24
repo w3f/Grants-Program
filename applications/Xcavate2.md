@@ -134,40 +134,40 @@ We have been taking time to play with Substrate to form initial local nodes. We 
 ### Overview
 
 - **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):**  2.5
+- **Full-Time Equivalent (FTE):**  4
 - **Total Costs:** $30000 USDT
 
 ### Milestone 2 — MVP of lending & asset tokenisation protocol
 
 - **Estimated Duration:** 2 months
-- **FTE:**  2.5
+- **FTE:**  4
 - **Costs:** $30000 USDT
 
 We will build on the excellent work we have achieved developing the initial milestone.
 
 In the second milestone, we will bring all of the functionality together so the process of taking out a real estate development loan, loan staking and loan repayment through the sale of property NFTs can be all initiated and managed through a react.js based frontend to the Xcavate substrate protocol.
 
-Figma designs:
-![](https://xcavate.io/W3F/1-landing.jpg)
-![](https://xcavate.io/W3F/2-roles.jpg)
-![](https://xcavate.io/W3F/3-loan_application.jpg)
-![](https://xcavate.io/W3F/4-loan_management.jpg)
-![](https://xcavate.io/W3F/5-property.jpg)
+-Figma designs:
+-![Landing Page](https://xcavate.io/W3F/1-landing.jpg)
+-![User Role Selection](https://xcavate.io/W3F/2-roles.jpg)
+-![Loan Application](https://xcavate.io/W3F/3-loan_application.jpg)
+-![Loan Management](https://xcavate.io/W3F/4-loan_management.jpg)
+-![Property Details](https://xcavate.io/W3F/5-property.jpg)
 
 
 | Number | Deliverables | Specification
 |:-------|:---------------------------|:------------------------ |
-| 0a. | License |  Apache 2.0 |
-| 0b. | Documentation |  The documentation will be provided to show the whole architecture of the Xcavate Network. |
-| 0c. | Testing and Testing Guide     |  The testing guide will be provided to test each component. |
-| 0d. | Docker / VS Code Instructions | Used to aid testing of all of the components. |
-| 0e. | Tutorial | We will write a tutorial about how to use Xcavate Network. |
-| 0f. | Article | We will write an article published on media channels. |
-| 1. | Xcavate dApp Frontend  |  User interface to connect wallet and interact with dApp - See Figma Designs
+| 0a. | License |  Apache 2.0
+| 0b. | Documentation |  The documentation will be provided to show the whole architecture of the Xcavate Network.
+| 0c. | Testing and Testing Guide     |  The testing guide will be provided to test each component.
+| 0d. | Docker / VS Code Instructions | Used to aid testing of all of the components.
+| 0e. | Tutorial | We will write a tutorial about how to use Xcavate Network.
+| 0f. | Article | We will write an article published on media channels.
+| 1. | Xcavate dApp Frontend  |  User interface to connect wallets (Sporran/Subwallet/Pluto Wallet) and interact with dApp - See Figma Designs
 | 2. | Xcavate dApp Backend   |  Connects dApp to substrate node
-| 3. | Community Loan Pallet v2.0 | Changing/Adding functionality regarding the loan process, higher dependency on voting and implementing the previous smart contract functionality into to the loan pallet for greater security and performance. |
-| 4. | NFT Marketplace Pallet | Has restricted functionality to list NFTs on marketplace only once ownership and price checks have been successfully completed. |
-| 5. | Governance Functionality v2.0 | Implementing greater democracy into the loan pallet so that our loan technical committee can vote on milestones, loan proposals and be able to delete the loan when loan has been repaid. |
+| 3. | Community Loan Pallet v2.0 | Changing/Adding functionality regarding the loan process, higher dependency on voting and implementing the previous smart contract functionality into to the loan pallet for greater security and performance.
+| 4. | NFT Marketplace Pallet | Has restricted functionality to list NFTs on marketplace only once ownership and price checks have been successfully completed.
+| 5. | Governance Functionality v2.0 | Implementing greater democracy into the loan pallet so that our loan technical committee can vote on milestones, loan proposals and be able to delete the loan when loan has been repaid.
 
 ## Future Plans
 
