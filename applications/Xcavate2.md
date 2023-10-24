@@ -148,6 +148,7 @@ We will build on the excellent work we have achieved developing the initial mile
 In the second milestone, we will bring all of the functionality together so the process of taking out a real estate development loan, loan staking and loan repayment through the sale of property NFTs can be all initiated and managed through a react.js based frontend to the Xcavate substrate protocol.
 
 -Figma designs:
+-
 -![Landing Page](https://xcavate.io/W3F/1-landing.jpg)
 -![User Role Selection](https://xcavate.io/W3F/2-roles.jpg)
 -![Loan Application](https://xcavate.io/W3F/3-loan_application.jpg)
@@ -165,9 +166,8 @@ In the second milestone, we will bring all of the functionality together so the 
 | 0f. | Article | We will write an article published on media channels.
 | 1. | Xcavate dApp Frontend  |  User interface to connect wallets (Sporran/Subwallet/Pluto Wallet) and interact with dApp - See Figma Designs
 | 2. | Xcavate dApp Backend   |  Connects dApp to substrate node
-| 3. | Community Loan Pallet v2.0 | Changing/Adding functionality regarding the loan process, higher dependency on voting and implementing the previous smart contract functionality into to the loan pallet for greater security and performance.
+| 3. | Community Loan Pallet v2.0 | Changing/Adding functionality regarding the loan process, higher dependency on voting and implementing the previous smart contract functionality into to the loan pallet for greater security and performance. Implementing greater democracy into the loan pallet so that our loan technical committee can vote on milestones, loan proposals and be able to delete the loan when loan has been repaid.
 | 4. | NFT Marketplace Pallet | Has restricted functionality to list NFTs on marketplace only once ownership and price checks have been successfully completed.
-| 5. | Governance Functionality v2.0 | Implementing greater democracy into the loan pallet so that our loan technical committee can vote on milestones, loan proposals and be able to delete the loan when loan has been repaid.
 
 ## Future Plans
 
