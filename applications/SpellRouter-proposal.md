@@ -230,7 +230,7 @@ As there are no XCM Routers currently in the ecosystem, this challenging task mo
 
 - **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):** 1 FTE
-- **Total Costs:** 27 000 USD
+- **Total Costs:** 22 000 USD
 
 ### Milestone 1 - Create XCM Router and move all three tools into Monorepo
 
