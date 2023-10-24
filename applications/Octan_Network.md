@@ -4,7 +4,7 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 - **Team Name:** Octan Labs
-- **Payment Address:** Ethereum address (DAI) 0xC0e09A112Ae45d87597CD78c11b7D95a55aCC5F0
+- **Payment Address:** Polkadot address (USDC) 5CaXCTaz8DP9Fe47w1mDrfGxfDPujVqsL27UVnijFGB4onNf
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -69,8 +69,8 @@ See **current designed UIs** of Octan Network (released MVP):
 
 ### Legal Structure
 
-- **Registered Address:** unregistered
-- **Registered Legal Entity:** unregistered [Octan Labs]
+- **Registered Address:** 37 Nguyen Thi Dinh st, Trung Hoa ward. Cau Giay dist, Hanoi, Vietnam
+- **Registered Legal Entity:** [Octan Labs]
 
 ### Team's experience
 
@@ -139,7 +139,7 @@ Herein, we focus on constructing a roadmap of developing Octan Reputation Rankin
 | 0e. | Workshop | We will publish an workshop that explains the concept of onchain reputation and the vision of Octan Network. |
 | 1. | Crawling raw data | We will build module for indexing onchain transactions, extrinsics, events from archived node |
 | 2. | Labeling onchain entities | We will build an interface for labeling onchain contracts/dapps and other entities of the targeted chains. |
-| 3. | Research paper | We will conduct a scientific research paper investigating ranking algorithms to compute reputation scores from onchain transactions. |
+| 3. | Research paper | We will conduct a research paper investigating ranking algorithms to compute reputation scores from onchain transactions. |
 | 4. | Reputation board | We build a reputation board interface for users to browse reputation ranks/scores of onchain entities. | 
 
 Techstack:
@@ -164,7 +164,6 @@ Reproducible assets:
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains the onchain reputation concept and how a user can use the reputation board and analytics (BI) interface, mint soulbound token to carry reputation scores. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains the concept of onchain reputation and the vision of Octan Network. |
 | 1  | Onchain analytical reports | We will publish analytical reports (in form of articles and pdf) extracting onchain reputation, performance, social insights & individual persona of the the targeted parachains on Polkadot. |
 | 2a  | Onchain soulbound token | Smart contract written in solidity, have interface of ERC721 to have a link to result of ranking algorithm as metadata  link. |
 | 2b  | Soulbound UI | We will develop an UI for users to mint soulbound tokens (SBTs) and update their reputation scores onchain. |
