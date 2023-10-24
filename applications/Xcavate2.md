@@ -158,16 +158,17 @@ In the second milestone, we will bring all of the functionality together so the 
 
 | Number | Deliverables | Specification
 |:-------|:---------------------------|:------------------------ |
-| 0a. | License |  Apache 2.0
-| 0b. | Documentation |  The documentation will be provided to show the whole architecture of the Xcavate Network.
-| 0c. | Testing and Testing Guide     |  The testing guide will be provided to test each component.
-| 0d. | Docker / VS Code Instructions | Used to aid testing of all of the components.
-| 0e. | Tutorial | We will write a tutorial about how to use Xcavate Network.
-| 0f. | Article | We will write an article published on media channels.
-| 1. | Xcavate dApp Frontend  |  User interface to connect wallets (Sporran/Subwallet/Pluto Wallet) and interact with dApp - See Figma Designs
-| 2. | Xcavate dApp Backend   |  Connects dApp to substrate node
-| 3. | Community Loan Pallet v2.0 | Changing/Adding functionality regarding the loan process, higher dependency on voting and implementing the previous smart contract functionality into to the loan pallet for greater security and performance. Implementing greater democracy into the loan pallet so that our loan technical committee can vote on milestones, loan proposals and be able to delete the loan when loan has been repaid.
-| 4. | NFT Marketplace Pallet | Has restricted functionality to list NFTs on marketplace only once ownership and price checks have been successfully completed.
+| 0a. | License |  Apache 2.0 |
+| 0b. | Documentation |  The documentation will be provided to show the whole architecture of the Xcavate Network. |
+| 0c. | Testing and Testing Guide     |  The testing guide will be provided to test each component. |
+| 0d. | Docker / VS Code Instructions | Used to aid testing of all of the components. |
+| 0e. | Tutorial | We will write a tutorial about how to use Xcavate Network. |
+| 0f. | Article | We will write an article published on media channels. |
+| 1. | Xcavate dApp Frontend  |  User interface to connect wallets (Sporran/Subwallet/Pluto Wallet) and interact with dApp - See Figma Designs |
+| 2. | Xcavate dApp Backend   |  Connects dApp to substrate node |
+| 3. | Community Loan Pallet v2.0 | Changing/Adding functionality regarding the loan process, higher dependency on voting and implementing the previous smart contract functionality into to the loan pallet for greater security and performance. Implementing greater democracy into the loan pallet so that our loan technical committee can vote on milestones, loan proposals and be able to delete the loan when loan has been repaid. |
+| 4. | NFT Marketplace Pallet | Has restricted functionality to list NFTs on marketplace only once ownership and price checks have been successfully completed. |
+
 
 ## Future Plans
 
