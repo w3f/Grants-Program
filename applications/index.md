@@ -52,6 +52,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [KodaDot](https://kodadot.xyz/)                       | [AssetsHub NFT indexer](./kodadot_assethub_nft_indexer_statemine_statemint.md)                     | [GitHub](https://github.com/kodadot)                 | ☐          |        ☐       |      ☐      |
 | [Apollos Collective](https://rhys.tech)                       | [Infimum](./infimum.md)                     | [GitHub](https://github.com/rhysbalevicius)                 | ☐          |        ☐       |      ☐      |
 | [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests 2](CoinFabrik_On_Ink_Integration_Tests_2.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☐        |     ☐     |
+| [Plutonication](https://github.com/cisar2218/Plutonication)                    | [Plutonication](Plutonication.md)                                                              | [GitHub](https://github.com/cisar2218/Plutonication)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
