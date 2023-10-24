@@ -128,15 +128,13 @@ There are no similar projects in polkadot as well as other blockchains as of now
 
 - **Total Estimated Duration:**  weeks
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:**  ~ 1 BTC
-
-Upfront ask - We have a minimal upfront ask of 0.049 BTC for our resource utilization in research phase. (or the amount to be added after accomplishing milestone 1) 
+- **Total Costs:**  BTC equivalent to 30,000 USD
 
 ### Milestone 1 - Pallet Contract Update
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:** 0.23 BTC
+- **Costs:** BTC equivalent to 7,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -149,7 +147,7 @@ Upfront ask - We have a minimal upfront ask of 0.049 BTC for our resource utiliz
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  3
-- **Costs:** 0.31
+- **Costs:** BTC equivalent to 10,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -162,26 +160,28 @@ Upfront ask - We have a minimal upfront ask of 0.049 BTC for our resource utiliz
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:**  0.23 BTC 
+- **Costs:**  BTC equivalent to 7,000 USD
 
 | Number |        Deliverable        | Specification   |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | 0a.    | License                   | MIT license   |
 | 0b.    | Documentation             | Inline documentation of the code and a external contract documentation |
 | 0c.    | Testing and Testing Guide | Unit testing with our validator reward ink! contract |
+| 1    | Contract development | Design and implement a validator reward contract. (i.e Co-ordinator contract for rewarding) |
 
 
 ### Milestone 4 — Final Tests, Results and Documentation
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:**  0.16 BTC
+- **Costs:**  BTC equivalent 6,000 USD
 
 | Number| Deliverable |     Specification  |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | Documentation             | End to end tutorial and external documentation for the entire consensus. <br>Standalone yellow paper |
-| 0b.    | Testing and Testing Guide |Alpha testing and analyzation  |
-| 0c. | Article | We will publish an article/workshop that explains inner workings of PoCS and developer guide to build a PoCS enabled Substrate chain
+| 0a.    | Documentation             | End to end tutorial and external documentation for the entire consensus. |
+| 0b. | Article | We will publish an article/workshop that explains inner workings of PoCS and developer guide to build a PoCS enabled Substrate chain
+| 1. | Alpha testing and publish paper | Alpha testing of entire consensus. Since it is a new consensus design, we have a separate milestone for analyzation of results over conducting an end to end test of the protocol <br><br>Standalone yellow paper|
+
             
 ## Future Plans
 
