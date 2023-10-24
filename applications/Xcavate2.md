@@ -147,13 +147,14 @@ We will build on the excellent work we have achieved developing the initial mile
 
 In the second milestone, we will bring all of the functionality together so the process of taking out a real estate development loan, loan staking and loan repayment through the sale of property NFTs can be all initiated and managed through a react.js based frontend to the Xcavate substrate protocol.
 
--Figma designs:
--
--![Landing Page](https://xcavate.io/W3F/1-landing.jpg)
--![User Role Selection](https://xcavate.io/W3F/2-roles.jpg)
--![Loan Application](https://xcavate.io/W3F/3-loan_application.jpg)
--![Loan Management](https://xcavate.io/W3F/4-loan_management.jpg)
--![Property Details](https://xcavate.io/W3F/5-property.jpg)
+**Figma designs:**
+
+![Landing Page](https://xcavate.io/W3F/1-landing.jpg)
+![User Role Selection](https://xcavate.io/W3F/2-roles.jpg)
+![Loan Application](https://xcavate.io/W3F/3-loan_application.jpg)
+![Loan Management](https://xcavate.io/W3F/4-loan_management.jpg)
+![Property Details](https://xcavate.io/W3F/5-property.jpg)
+
 
 
 | Number | Deliverables | Specification
