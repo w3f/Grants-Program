@@ -66,7 +66,7 @@ WeTEE's technological approach is an all-encompassing solution incorporating a n
 
 #### Documentations
 
-- WeTEE Product PPT: [PPT Link](https://drive.google.com/file/d/15Ix-9TS1oEITxMf4opVCuBsYOVxBhUkq/view)  
+- WeTEE Product PPT: [PPT Link](https://raw.githubusercontent.com/wetee-dao/chain/f01744e08489b3c9ac6c9c61c0c3cc3e396a3302/docs/deck/weteeBP%20(%20ENG%20).pdf)  
 
 WeTEE has streamlined the development of blockchain applications, reduced the complexity of development, and expedited the transition from Web2 to Web3.  
 
