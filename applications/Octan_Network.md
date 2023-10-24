@@ -31,7 +31,7 @@ Current **Architecture Overview** of Octan Network
 ![Current Architecture Overview of Octan Network](https://github.com/Octan-Labs/Grants-Program/assets/45308207/9cade4e3-989f-485f-8ce5-5cd82611b1a9)  
 
 Technical Architecture Overview of Data processing
-![Technical Architecture Overview of Data processing](https://github.com/Octan-Labs/pipeline/blob/e96540adfe0d8d1b6536d60f83d66865b8e196e4/docs/architecture.png)  
+![Technical Architecture Overview of Data processing](https://github.com/Octan-Labs/Grants-Program/assets/19373324/774972f6-c878-4e9b-9ab1-1531893bdf0a) 
 Data Processing Flows
 ![image](https://github.com/Octan-Labs/Grants-Program/assets/45308207/2d49f49f-d43f-43f1-955a-4337dd45b989)  
 
@@ -140,11 +140,15 @@ Herein, we focus on constructing a roadmap of developing Octan Reputation Rankin
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains the concept of onchain reputation and the vision of Octan Network. |
 | 1a. | Crawling raw data | We will build module for indexing onchain transactions, extrinsics, events from archive node |
-| 1b. | Data Warehouse slot | We will setup data warehouse slot and structure for query onchain performance related metrics |
-| 2a. | Reputation ranking algorithms | We will complete and publish a (scientific) research article about onchain reputation ranking algorithms on blockchain-based transaction datasets. |
-| 2b. | Onchain reputation ranking | We will push the data onto object storage and develop a graph engines to execute reputation ranking algorithms, then compute reputation scores of onchain entities on Polkadot. |
-| 3 | Labeling onchain entities | We will build an interface for labeling onchain contracts/dapps and other entities of the targeted chains. |
-| 4 | Soulbound token | We will implement a soulbound standard on the testnets of the targeted parachains. |
+| 1b. | Labeling onchain entities | We will build an interface for labeling onchain contracts/dapps and other entities of the targeted chains. |
+
+Techstack:
+- Data indexing: indexing cli written in python index into clickhouse warehouse and s3-compatible object storage
+- Labeling engine: writing in node.js, with GraphQL interface, and React for the UI
+
+Reproducable assets:
+- Data indexing python CLI and docker container
+- Labeling: docker container
 
 ### Milestone 2: Soulbound token and onchain analytics for Frontier/EVM-parachains of Polkadot
 
@@ -160,10 +164,17 @@ Herein, we focus on constructing a roadmap of developing Octan Reputation Rankin
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains the concept of onchain reputation and the vision of Octan Network. |
-| 1  | Analytics (BI) interface | We will build an BI interface, allowing researchers to query reputation scores, labels and annotations of onchain entities, then conduct in-depth onchain analysis and extract social insights & user persona. |
-| 2  | Onchain analytical reports | We will publish analytical reports extracting onchain reputation, performance, social insights & individual persona of the the targeted parachains on Polkadot.
-| 3  | Soulbound UI | We will develop an UI for users to mint soulbound tokens and update their reputation scores. |
+| 1  | Onchain analytical reports | We will publish analytical reports (in form of articles and pdf) extracting onchain reputation, performance, social insights & individual persona of the the targeted parachains on Polkadot.
+| 2a  | Onchain soulbound token | Smart contract written in solidity, have interface of ERC721 to have a link to result of ranking algorithm as metadata  link
+| 2b  | Soulbound UI | We will develop an UI for users to mint soulbound tokens and update their reputation scores. |
 
+Techstack:
+- Reputation ranking algorithm: written in python, implement as jupyter notebook and deploy on GraphScope engine, we use open source BI tool called superset to export charts.
+- Onchain soulbound token and UI: written in solidity, and use React for UI
+
+Reproducable assets:
+- Reputation ranking algorithm: jupyter notebook and test data
+- Onchain soulbound token and UI: Deployed smart contract on chain with interface
 
 ## Future Plans
 
