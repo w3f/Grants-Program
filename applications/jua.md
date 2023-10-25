@@ -4,10 +4,10 @@
 * **Status:** Level 1
 ## Project Overview :page_facing_up: 
 ### Overview
-​JUA is building the easiest gateway for Africans into web3 through our onramp and offramp solution. We are building an EVM and subrate solution that will allow anyone in Africa to be able to buy, sell, and convert polkadot to any fiat currency using our jua escrow smart contracts. We aim to create the easiest way for any developer to be able to buy, sell, store and utilize polkadot in AFRICA.  
-So far jua managed to build an application that is in beta in 5 African countries on with over 1000 users on EVM. On this project we want to leverage polkadot parachain Aster that can enable us to convert our EVM platform to interact with Polkadot ecosystem and make it available to our 1000 users. 
+​JUA is building the easiest gateway for Africans into web3 through our onramp and offramp solution. We are building an EVM and substrate solution that will allow anyone in Africa to be able to buy, sell, and convert polkadot to any fiat currency using our jua escrow smart contracts. We aim to create the easiest way for any developer to be able to buy, sell, store and utilize Polkadot in AFRICA.  
+So far jua managed to build an application that is in beta in 5 African countries on with over 1000 users on EVM. On this project we want to leverage Polkadot parachain Aster that can enable us to convert our EVM platform to interact with Polkadot ecosystem and make it available to our 1000 users. 
 **Deployment**
-The first phase of the project will be built and deployed on the Astar parachain that will enable us deploy EVM smart contracts t faciliate the burnt and mint mechanism from Polkadot to wrapped polkatdot on the different networks and also the escrow transactions during onramping and offramping of assets. 
+The first phase of the project will be built and deployed on the Astar parachain that will enable us to deploy EVM smart contracts t faciliate the burnt and mint mechanism from Polkadot to wrapped polkatdot on the different networks and also the escrow transactions during onramping and offramping of assets. 
 **Polkadot Ecosystem Benefits**
 JUA escrow smart contract exchange protocol built on the Polkadot blockchain can contribute to the growth and development of the Polkadot ecosystem in several ways:
 1. Increased Adoption: By providing a user-friendly platform for buying and selling cryptocurrencies, the exchange can attract new users to the Polkadot ecosystem. This can drive increased adoption of the Polkadot network and its native token.
