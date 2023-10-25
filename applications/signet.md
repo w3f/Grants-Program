@@ -144,10 +144,10 @@ We have spoken briefly to David Hawig at the W3F to introduce the project, as we
 ### Overview
 
 - **Total Estimated Duration:** 1 month
-- **Full-Time Equivalent (FTE):**  1,5 FTE
+- **Full-Time Equivalent (FTE):**  1,7 FTE
 - **Total Costs:** 30,000 USDC
 
-Talisman uses a blended rate for grants and proposals (see previously funded initiatives [here](https://docs.google.com/document/d/192asiQ13s4EAfXFFDFgKm_W3cqBVPPPxB5VNAig7keE/edit?usp=sharing),  [here](https://docs.google.com/document/d/1OlJB4a2kcgWe-TZTC4ZR5cU9ZEIk8IoC85IJv2_2rdc/edit?usp=sharing) and [here](https://docs.google.com/document/d/1KohKDEYypNw_KJING2_uHXnC0LJwUxpPHMzBRfrH68M/edit?usp=sharing)). This allows us to ensure the needed resources can be allocated to product development as well as running the company, including, as needed, to supplement the FTEs with the expertise of senior Talisman members as needed, with the goal of executing at our product quality standards. In order to hit the desired impact for the target developers/users, this proposal requires a "Talisman" level of fit and finish in both developer experience and user experience.
+Talisman uses a blended rate for grants and proposals (see previously funded initiatives [here](https://docs.google.com/document/d/192asiQ13s4EAfXFFDFgKm_W3cqBVPPPxB5VNAig7keE/edit?usp=sharing),  [here](https://docs.google.com/document/d/1OlJB4a2kcgWe-TZTC4ZR5cU9ZEIk8IoC85IJv2_2rdc/edit?usp=sharing) and [here](https://docs.google.com/document/d/1KohKDEYypNw_KJING2_uHXnC0LJwUxpPHMzBRfrH68M/edit?usp=sharing)). This allows us to ensure the needed resources can be allocated to product development as well as running the company, including, as needed, to supplement the FTEs with the expertise of senior Talisman members as needed, with the goal of executing at our product quality standards. In this case, due to the value added program provided by the W3F and to show our support for the W3F mission in helping to bring new products and technologies into existence, we are applying a reduced rate.
 
 ### Milestone 1  — Sign in with Substrate (SIWS) Release
 
@@ -162,7 +162,7 @@ Authenticating a user with a Substrate key was initially developed as part of Si
 We’d like to address these improvements in the course of packaging Sign in With Substrate (SIWS) as a releasable component.
 
 - **Estimated duration:** 0,5 month
-- **FTE:**  1,5
+- **FTE:**  1,7
 - **Costs:** 15,000 USD
 - **Relevant Chains:** Polkadot & Kusama
 
@@ -189,7 +189,7 @@ We would like to improve the use cases (a.k.a. modules) enabled by Signet, by en
 3. Selection/rotation of validators where the staking proxy is a pure proxy controlled by a multisig.
 
 - **Estimated duration:** 0,5 month
-- **FTE:**  1,5
+- **FTE:**  1,7
 - **Costs:** 15,000 USD
 - **Relevant Chains:** Polkadot, Kusama, AssetHub Polkadot, AssetHub Kusama
 
