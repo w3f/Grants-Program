@@ -162,7 +162,7 @@ Authenticating a user with a Substrate key was initially developed as part of Si
 We’d like to address these improvements in the course of packaging Sign in With Substrate (SIWS) as a releasable component.
 
 - **Estimated duration:** 0,5 month
-- **FTE:**  1,7
+- **FTE:**  1,5
 - **Costs:** 15,000 USD
 - **Relevant Chains:** Polkadot & Kusama
 
