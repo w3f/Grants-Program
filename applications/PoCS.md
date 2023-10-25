@@ -56,6 +56,13 @@ Every newly deployed contract will have three extra storage fields:
 In the context of Substrate, the integration of Babe and Grandpa protocols, alongside the Staking Pallet, complements the PoCS mechanism 
 *  Babe's deterministic block production process aligns with PoCS's commitment to security. Validators with higher reputation and weight history, as determined by the scarcity mapping, are incentivized to actively participate in proposing and validating blocks
 * Staking Pallet (Validator Selection): The Staking Pallet integrates with PoCS as validators selected based on their scarcity scores, are entrusted with the responsibility of proposing and validating blocks. This delegation ensures that validators with a proven track record of actively participating in the network are granted the authority to contribute to the consensus process.
+* Validator Reward Contract : Validator reward contract will act as a general middleware contract, which could be reusable across different apps/chains built over PoCS. We will build a validator contract which will not be a definitive but a reference contract which can be modified with a custom logic to implement custom reward distribution mechanisms.<br>
+Outline of some basic functionalities:
+    1. Claim Rewards: `claimRewards(address devAddress)`
+This function allows a developer to claim their rewards from the Validator Reward. For this it will verify that the caller is the owner of the contract calling the function and ensure that the contract is delegated to the validator.
+    2. Calculate Reward Percentage: `calculateRewardPercentage(address contractAddress)`: This function calculates the percentage of rewards that the developer is eligible to claim based on the stake score of the associated contract.
+    3. Transfer Rewards: `transferRewards(address devAddress, uint256 rewardAmount)`
+: This function transfers the calculated rewards to the developer from the contract. It ensures that the reward amount is valid and available in the contract.
 
 
 <b> Protocol design </b> <br>
@@ -167,7 +174,7 @@ There are no similar projects in polkadot as well as other blockchains as of now
 | 0a.    | License                   | MIT license   |
 | 0b.    | Documentation             | Inline documentation of the code and a external contract documentation |
 | 0c.    | Testing and Testing Guide | Unit testing with our validator reward ink! contract |
-| 1    | Contract development | Design and implement a validator reward contract. (i.e Co-ordinator contract for rewarding) |
+| 1    | Contract development | Design and implement a validator reward contract. (i.e Co-ordinator contract for rewarding). <br>Integrate it with PoCS consensus |
 
 
 ### Milestone 4 — Final Tests, Results and Documentation
@@ -186,7 +193,8 @@ There are no similar projects in polkadot as well as other blockchains as of now
 ## Future Plans
 
 Once completed with this grant milestones, 
-- Further research and moving towards testnet launch as a sister chain to Polkadot. Since it is first of its kind we will be actively discussing our future plans and research directions with the community.
+- Further research on democracy and validator penalty conditions
+- Moving towards testnet launch as a sister chain to Polkadot. Since it is first of its kind we will be actively discussing our future plans and research directions with the community.
 - We will be focussing more on making PoCS pallets interoperable with current popular Substrate pallets.
 
 ## Referral Program :moneybag: 
