@@ -144,8 +144,8 @@ We have spoken briefly to David Hawig at the W3F to introduce the project, as we
 ### Overview
 
 - **Total Estimated Duration:** 1 month
-- **Full-Time Equivalent (FTE):**  1,7 FTE
-- **Total Costs:** 30,000 USDC
+- **Full-Time Equivalent (FTE):**  1,5 FTE
+- **Total Costs:** 26,400 USDC
 
 Talisman uses a blended rate for grants and proposals (see previously funded initiatives [here](https://docs.google.com/document/d/192asiQ13s4EAfXFFDFgKm_W3cqBVPPPxB5VNAig7keE/edit?usp=sharing),  [here](https://docs.google.com/document/d/1OlJB4a2kcgWe-TZTC4ZR5cU9ZEIk8IoC85IJv2_2rdc/edit?usp=sharing) and [here](https://docs.google.com/document/d/1KohKDEYypNw_KJING2_uHXnC0LJwUxpPHMzBRfrH68M/edit?usp=sharing)). This allows us to ensure the needed resources can be allocated to product development as well as running the company, including, as needed, to supplement the FTEs with the expertise of senior Talisman members as needed, with the goal of executing at our product quality standards. In this case, due to the value added program provided by the W3F and to show our support for the W3F mission in helping to bring new products and technologies into existence, we are applying a reduced rate.
 
