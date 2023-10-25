@@ -138,32 +138,5 @@ Our trajectory, shaped by the insights and progress from the Level 1 grant and g
   - A list of on-going and historical proposals
   - A general treasury overview for the network represented by categorized pie chart of spending and general treasury and democracy information
 
-### Milestone 2 - UI Improvements 
-
-- **Total Estimated Duration:** 4 month
-- **Full-Time Equivalent (FTE):**  1.0
-- **Total Costs:** 15,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the application and its various features. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | UI Improvements | The UI Improvements deliverable will introduce a more intuitive design, streamlining user interactions and enhancing data visualization for a refined user experience on TreasuryTracker. |
-
-#### Milestone 2 Feature Deliverables
-- Improved Overview Page
-  - Section showing supported chain information
-  - Section showing news and information
-  - Section showing new proposals
-  - Section highlighting current social media
-- Improved Analytics Page
-  - Revamped responsive UI
-  - A single control panel that allows users to select which features they want to dynamically generate charts
-- Improved Referenda and Referendum pages
-  - Various design element improvements giving the site a more production like feel
-- Responsive framework so UI is viewable and accessible across multiple platforms (mobile, tablet, laptop, desktop)
-
 ## Additional Information :heavy_plus_sign:
 **How did you hear about the Grants Program?** Web3 Foundation Website and personal recommendation 
