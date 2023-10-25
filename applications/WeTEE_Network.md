@@ -1,7 +1,5 @@
 # WeTEE Network
 
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
 - **Team Name:** WeTEE DAO
 - **Payment Address:** 13Zsmt8cKKVLWTBLHC68d6jNG5cpi7ghFPGgG35gmpwqaxrz(USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
