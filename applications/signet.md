@@ -163,7 +163,7 @@ We’d like to address these improvements in the course of packaging Sign in Wit
 
 - **Estimated duration:** 0,5 month
 - **FTE:**  1,5
-- **Costs:** 15,000 USD
+- **Costs:** 13,200 USD
 - **Relevant Chains:** Polkadot & Kusama
 
 | Number | Deliverable | Specification |
@@ -190,7 +190,7 @@ We would like to improve the use cases (a.k.a. modules) enabled by Signet, by en
 
 - **Estimated duration:** 0,5 month
 - **FTE:**  1,7
-- **Costs:** 15,000 USD
+- **Costs:** 13,200 USD
 - **Relevant Chains:** Polkadot, Kusama, AssetHub Polkadot, AssetHub Kusama
 
 | Number | Deliverable | Specification |
