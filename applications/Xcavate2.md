@@ -137,7 +137,7 @@ We have been taking time to play with Substrate to form initial local nodes. We 
 - **Full-Time Equivalent (FTE):**  4.5 (3x0.5 + 3x1)
 - **Total Costs:** $30000 USDT
 
-### Milestone 2 — MVP of lending & asset tokenisation protocol
+### Milestone 1 — Phase 2 MVP of lending & asset tokenisation protocol
 
 - **Estimated Duration:** 2 months
 - **FTE:**  4.5 (3x0.5 + 3x1)
