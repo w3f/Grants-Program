@@ -112,6 +112,12 @@ Our trajectory, shaped by the insights and progress from the Level 1 grant and g
 
 ## Milestones
 
+### Overview
+
+- **Total Estimated Duration:** 2-4 Months
+- **Full-Time Equivalent (FTE):**  1
+- **Total Costs:** 15,000 USD
+
 ### Milestone 1 - Adding Governance 1.0 Support
 
 - **Total Estimated Duration:** 2 month
