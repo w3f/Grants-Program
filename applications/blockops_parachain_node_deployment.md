@@ -257,31 +257,6 @@ For this proposal we focus on building and streamlining the process of setting u
 -  Bug Fixes (In-Progress)
 
 
-
-
-### Milestone 2 Development of Node Observability
-
-- **Estimated Duration:** 3 month
-- **FTE:**  6
-- **Costs:** 30,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) set up monitoring on their node using our block-agent. |
-| **0c.** | Testing and Testing Guide | Essential functions of the **block-agent** will be fully covered by unit tests to guarantee functionality and resilience. The guide will outline the steps on how to run these tests. |
-| **0e** | Article | Using our communication channels, we will publish articles that explains the high-level architecture of our monitoring infrastructure and how users can set them up on their environment
-| 1. | block-agent Architecture	| Design and develop the architecture of the block-agent, ensuring it's modular and scalable. | The agent will efficiently collect vital metrics such as CPU usage, memory consumption, network latency, and other relevant node performance indicators. |
-| 2. | Development of One Click Parachain Deployment Feature on Dedicated server | Development of Dedicated Node Provider Marketplace |
-| 3. | Improve UX Analytics Dashboard | Detailed reports on node performance, including usage statistics, latency, and uptime. | Log Dashbooard | Ability to filter logs by different Log Levels | Setup Dashboard: We will setup both standalone and customize dashboards that will log and give insight on operations perform by the different users
-| 4. | Package blocks-cli tool for deployment Docker, MacOS and Ubuntu |  
-| 5. | Deployment Guide	 | A detailed guide on how users can deploy the block-agent across various node environments, ensuring compatibility and ease of setup. |
-
-
-
-### Current Status
--  Completed block-agent Architecture ✅
-
 ## Future Plans
 - Our long-term plan is to provide a suite of products that will allow users and enterprises to deploy, manage, and monitor their node infrastructure for different use cases.
 - More Detailed and Enhanced Observability & Alerting for all Blockchain Networks.
