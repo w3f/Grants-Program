@@ -202,10 +202,11 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 | ------: | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **0a.** | License                      | APACHE 2                                                              
 | **0b.** | Documentation                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                         
-| **0d.** | Docker    |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. 
-|      **1.** | NFC Recovery | We will develop a pallet to handle NFC recovery with a day-to-day NFC device like contacless payment or transportation cards
-
+| **0c.** | Testing and Testing Guide    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.        
+| **0d.** | Docker    |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
+|  **1.** | Extended Recovery pallet (NFC) | We will develop a pallet to handle NFC recovery with a day-to-day NFC device like contactless payment or transportation cards 
+|  **2.** | Extended Recovery integration | We will integrate the new pallet in the integritee-worker; and expose the required calls to the Cli 
+|  **3.** | NFC Recovery updated app | We will add a new Recovery UI to the app; and add NFC tag handling to our library. 
 
 
 
@@ -223,7 +224,9 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 | **0b.** | Documentation                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up our stack and send test transactions, which will show how the new functionality works.
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.
 | **0d.** | Docker    |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-|      **1.** | Recovery File Token | We will develop a pallet to handle  recovery with a recovery file token based on garbled circuits |
+|  **1.** | Extended Recovery pallet (Recovery File Token) | We will update the pallet to handle to handle recovery with a recovery file token based on garbled circuits 
+|  **2.** | Extended Recovery integration | We will integrate the new pallet in the integritee-worker; and expose the required calls to the Cli 
+|  **3.** | Recovery File Token updated app | We will modify the Recovery UI to handle the new “File Token” option 
 
 
 
