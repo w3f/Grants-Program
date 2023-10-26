@@ -3,6 +3,7 @@
 - **Team Name:** Syncra
 - **Payment Address:** 15Geo1RfLLM1PmPsD4uggts1Ht5LrWUChBDruLPqt5EgFKPB (PolkaDOT - USDT)
 - **Level:** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1762#issuecomment-1769273868)
 
 ## Project Overview
 

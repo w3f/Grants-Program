@@ -26,6 +26,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [anti-collusion_infrastructure.md](RFPs/anti-collusion_infrastructure.md) | 21.09.2023 |
 | [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 12.10.2023 |
 | [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |
+| [jsonrpsee-proxy-support.md](RFPs/jsonrpsee-proxy-support.md) | 19.10.2023 |
 | [parachain_validation_conformance_testing.md](RFPs/parachain_validation_conformance_testing.md) | 18.01.2023 |  
 | [sub-consensus.md](RFPs/sub-consensus.md) | 23.02.2022 |
 | [user-account-access-analysis.md](RFPs/user-account-access-analysis.md) | 07.01.2023 |
