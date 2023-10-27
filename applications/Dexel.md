@@ -3,7 +3,7 @@
 
 - **Team Name:** Awsmdot
 - **Payment Address:** [0xa55f7149feb9d375045674449cfdb917c63bbbb1](USDC, Ethereum (ERC20))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
@@ -95,7 +95,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):** 2
 - **Total Costs:** 25,000 USD
 
-### Milestone 1: Initial Setup and Smart Contract Development
+### Milestone 1: Initial Setup, Smart Contract Development With Proof of Concept
 
 - **Estimated duration:** 2 months
 - **FTE:** 2
@@ -110,13 +110,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 1. | Development Environment | Setting up the development environment for Dexel. |
 | 2. | User Management Contract (UMC) | Development and initial deployment of the UMC on Polkadot testnet. |
 | 3. | Content Management Contract (CMC) | Development of the CMC with features for saving, categorizing, and reading content. |
-| 4. | Frontend Interface | Initial frontend interface development using React and Next.js, integrating with the developed smart contracts. |
+| 4. | POC Interface | Frontend interface development using React and Next.js, integrating with the developed smart contracts and provide a deployed POC |
 
 ### Milestone 2: Frontend Development, Integration, and Testing
 
 - **Estimated duration:** 2 months
 - **FTE:** 2
-- **Costs:** 10,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -125,8 +125,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | **0c.** | Testing and Testing Guide | The second phase will involve rigorous testing of the entire platform. We will add more unit tests, and integration tests will ensure the frontend and smart contracts work in tandem. A guide detailing the extended test scenarios will be provided. |
 | **0d.** | Docker | An updated Dockerfile will be provided to test the full functionality of Dexel, including the new features and improvements. |
 | **0e.** | Article | At the end of this milestone, we will publish an article detailing the journey of Dexel, the challenges faced, and how it stands out in the decentralized ecosystem. |
-| 5. | Comprehensive Frontend Development | A complete frontend development ensuring a seamless user experience, with features like content customization and management. |
-| 6. | Frontend and Smart Contract Integration | Ensuring that the frontend perfectly interacts with the smart contracts, providing users with real-time feedback and updates. |
+| 5. | E2E Frontend Development | Build on POC and make a fully fledged frontend ensuring a seamless user experience, with features like content customization and management. |
+| 6. | Smart Contract Integration | Ensuring that the frontend perfectly interacts with the smart contracts, providing users with real-time feedback and updates. |
 | 7. | User Personalization Features | Development of features that allow users to adjust their reading environments, ensuring a personalized reading experience. |
 | 8. | Platform Testing | Comprehensive testing of the platform to ensure all features work as expected, and the platform is ready for launch. |
 
