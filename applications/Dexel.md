@@ -99,7 +99,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated duration:** 2 months
 - **FTE:** 2
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
