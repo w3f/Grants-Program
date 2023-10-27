@@ -32,7 +32,7 @@ The same call can also be reproduced with the latest addition to our tool pack -
 
 ParaSpell is currently split into three main repositories at the moment. XCM Router, XCM API and XCM SDK will be merged into one monorepo package with the intention of sharing types and saving code:
 
-- [XCM ROUTER - TBA](): Meant to give developers the ability to exchange and transfer assets in one call in a seamless way that allows them to lift complexity from users.
+- XCM ROUTER - TBA: Meant to give developers the ability to exchange and transfer assets in one call in a seamless way that allows them to lift complexity from users.
 - [XCM SDK](https://github.com/paraspell/xcm-sdk): Meant to unify cross-chain experience on Polkadot and become a layer 2 protocol that allows for seamless integration of XCM into your dApps.
 - [XCM API](https://github.com/paraspell/xcm-api): Meant to ease the integration of XCM interoperability into your dApp, offload your dApp from heavy computing and save you costs.
 - [Docs](https://github.com/paraspell/docs): Extensive documentation for an overview of ParaSpell, a guide for SDK and API
@@ -145,7 +145,7 @@ Why we chose NestJS for XCM API:
 By choosing Nest.js as our backend HTTP REST API framework, we can harness the power of Node.js, leverage TypeScript's benefits, ensure maintainability through its modular architecture, and take advantage of its extensive community support. This enabled us to build a reliable, scalable, and well-documented XCM API that seamlessly integrates with the existing XCM SDK. In addition, Nest.js offers a powerful code generation feature that allows us to quickly scaffold boilerplate code for controllers, services, modules, and more. By utilizing the Nest.js code generator, we can significantly reduce development time and effort, ensuring rapid prototyping and efficient implementation of the XCM API endpoints. Compared to other TypeScript frameworks, Nest.js stands out with its modular architecture, seamless integration with Node.js, and strong community support, offering developers a scalable and maintainable solution.
 
 As API is now fully implemented we can observe its metrics for the first month it is deployed:
-<img width="1186" alt="Screenshot 2023-10-16 at 21 42 53" src="https://user-images.githubusercontent.com/55763425/275632474-3508207d-884a-4751-8527-7db02cfa5d3d.png">
+<img width="1186" alt="Screenshot 2023-10-16 at 21 42 53" src="https://user-images.githubusercontent.com/55763425/275632474-3508207d-884a-4751-8527-7db02cfa5d3d.png"/>
 
 We can see, that API serves between 500 to 1000 requests in a day. API uptime is 100%. API is completely free for everyone to use, implement or privately deploy.
 It now features various error prevention mechanisms (Valid wallet address check) and analytic tools to report errors that are not handled by API or report API usage (Strictly without collecting any sensitive user data). 
@@ -174,7 +174,7 @@ We are currently in talks with several Parachain teams that like the idea of uni
 Our target audiences are Web3 projects and starting/current blockchain developers.
 
 As SDK is also fully developed and its metrics are available to the public we can see, that it is still used a lot by developers in the ecosystem (Even after the API release).
-<img width="1182" alt="Screenshot 2023-10-16 at 18 50 37" src="https://user-images.githubusercontent.com/55763425/275785456-199b04dc-6423-49c7-a2ac-5fa6b5106426.png">
+<img width="1182" alt="Screenshot 2023-10-16 at 18 50 37" src="https://user-images.githubusercontent.com/55763425/275785456-199b04dc-6423-49c7-a2ac-5fa6b5106426.png"/>
 
 ## Team :busts_in_silhouette:
 
@@ -200,7 +200,7 @@ Michael Absolon - Student, XCM SDK & XCM API Core Dev. Faculty of Informatics an
 
 And here is a certificate in physical form:
 
-<img width="400" alt="certificate" src="https://user-images.githubusercontent.com/55763425/275783335-140792ac-80dd-4e48-92ce-fa630c3f390b.png">
+<img width="400" alt="certificate" src="https://user-images.githubusercontent.com/55763425/275783335-140792ac-80dd-4e48-92ce-fa630c3f390b.png"/>
 
 - Michael is a dedicated TypeScript developer with 2 years of full-time experience in the Web2 sphere. Michael's expertise in this field was further solidified in 2019 when he won first place in the Junior Internet Web competition for his online multiplayer game, which was written in JavaScript. In addition to his professional background, Michael also achieved a bachelor's degree in the same computer science University as Dušan and he is currently pursuing a master's degree which focuses on Blockchain. His passion for technology led him to explore Blockchain technology in his free time. He was recently offered the opportunity to work on ParaSpell XCM SDK & LightSpell XCM API with Dušan and he delivered many of the key features SDK & API now offer.
 ### Team Code Repos
