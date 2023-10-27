@@ -150,8 +150,9 @@ In `Milestone 2`, we are going to implement [Nova folding scheme](https://eprint
 | 0d. | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article/tutorial/workshop that explains |
 | 1. | `pasta` implementation | We are going to implement fully Polkadot compatible `pasta` curve for efficient verifier encoder by [cycle of curves](https://eprint.iacr.org/2023/969.pdf).|
-| 2. | `recursive proof` implementation | We are going to implement `recursive proof` with Nova folding scheme. `recursive proof` allows us to compress multiple statements to prove.|
-| 3. | `Nova pallet` implementation | We are going to implement `Nova folding pallet`. `Nova folding pallet` allows us to verify Nova recursive proof which proves multiple statements with a single proof.|
+| 2. | `groth16` implementation | We are going to implement fully Polkadot compatible `groth16` for recursive Snarks verifier circuit.|
+| 3. | `recursive proof` implementation | We are going to implement `recursive proof` with Nova folding scheme. `recursive proof` allows us to compress multiple statements to prove.|
+| 4. | `Nova pallet` implementation | We are going to implement `Nova folding pallet`. `Nova folding pallet` allows us to verify Nova recursive proof which proves multiple statements with a single proof.|
 
 ## Timeline
 
