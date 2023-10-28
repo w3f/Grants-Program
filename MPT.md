@@ -42,7 +42,7 @@ Our primary objective is to pioneer an alternative finance protocol, emphasizing
 
 The image below represents the two layers of our infrastructure and how we would be using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
 
-![](static/img/web3.png)
+![](static/img/MPTarchitecture.png)
 
 Among the diverse work of our team members, here are some platforms that have been built and deployed in the past decade, clients vary from boutique advisory firms to publicly traded companies:
 
