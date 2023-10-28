@@ -1,7 +1,7 @@
 # Orochi Network's proposal for research and development MPC ECDSA
 
 - **Team Name:** Orochi Network
-- **Payment Address:** 0x2d309e09149259bD2b9a8C88985581B724d058b2 (ETH)
+- **Payment Address:** 167Zj4mv1jBTzJimSe7LngcRS7SBixsx3ZSCFr45Eo1SjWCY (USDT Polkadot)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
