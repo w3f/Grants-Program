@@ -111,9 +111,9 @@ Through this grant, we are going to implement the **zkwasm** which supports tran
 
 ### Overview
 
-- **Total Estimated Duration:** 11 months
+- **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 40,000 USDT
+- **Total Costs:** 20,000 USDT
 
 ### Milestone 1 | Crypto Primitive
 
