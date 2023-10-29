@@ -292,14 +292,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
   - A simplistic approach and a mobile application for better security and UX
 
-  - 70% of revenue will be in USDT/stablecoin and 30% in alt index. The realized revenue from alt index will be directed into supporting teams that want to extend Vane products and Polkadot ecosystem teams for research on cross chain messaging and infra.
+  - 70% of revenue will be in USDT/stablecoin and 30% in alt-coin index. The realized revenue from alt index will be directed into supporting teams that want to extend Vane products and Polkadot ecosystem teams for research on cross chain messaging and infrastructure.
 
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 
-I have good experience in Polkadot ecosystem, alos I am member in ChaosDao. I heard aboyt the grant program from Web3 Foundation Website
+I have good experience in Polkadot ecosystem, also I am member in ChaosDao. I heard about the grant program from Web3 Foundation Website
 
  
 
