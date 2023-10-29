@@ -8,7 +8,7 @@
 
 ### Overview
 
-#### The alternative finance protocol for tokenizing real-world assets (RWAs) to ensure secure and compliant processes for both primary and secondary token issuance, at everyone's fingertips.
+#### The alternative finance protocol for real-world assets (RWAs) tokenization to ensure secure and compliant processes for both primary and secondary token issuance, at everyone's fingertips.
 
 #### Description
 
