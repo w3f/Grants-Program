@@ -76,7 +76,7 @@ Our infrastructure is designed to be used by technology teams and by less tech-s
 
 ### Legal Structure
 
-- **Legal entity:** American *Inc.* company, DBA Marco Polo Technologies
+- **Legal entity:** American *Inc.* or EU *LLC* entity, DBA Marco Polo Technologies
 
 ### Team's experience
 
