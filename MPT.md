@@ -125,16 +125,16 @@ The below roadmap refers to an initial implementation of a purposely built block
 - d1.1: Draft a blueprint of the MPT protocol capturing key features.
 - d1.2: Define the architecture of the MPT pallet.
 - d1.3: Identify and incorporate necessary extensions for future scalability.
-
 - d2.1: Integrate core *Substrate* extrinsics for account management, balances, and transactions.
-- d2.2: Design and develop custom extrinsics tailored for RWAs and alternative finance.
+- d2.2: Design and develop custom extrinsics tailored for RWAs and alternative finance:
+      - TokenizeAsset: This extrinsic would allow users or organizations to tokenize their real-world assets. It would require details of the asset, proof of ownership, and the amount to be tokenized.
+      - IssueRWATokens: Once an asset is tokenized, this extrinsic can be used to issue the corresponding RWA tokens to the asset holder.
+      - TransferRWATokens: A custom function tailored for the transfer of RWA tokens, incorporating any regulatory or compliance checks necessary for such assets.
 - d2.3: Test and validate the integrated extrinsics for seamless operations.
-
 - d3.1: Establish the MPT chain infrastructure.
 - d3.2: Implement asset management functionalities - creation, issuance, and transfer.
 - d3.3: Integrate transaction processing capabilities.
 - d3.4: Conduct initial testing to validate the chain's core functions
-
 - d4.1: Decide on the initial set of trusted validators for the PoA mechanism.
 - d4.2: Integrate PoA into the MPT chain, ensuring validators can produce blocks.
 - d4.3: Implement mechanisms for validator management - addition, removal, and rotation.
