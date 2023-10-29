@@ -127,9 +127,9 @@ The below roadmap refers to an initial implementation of a purposely built block
 - d1.3: Identify and incorporate necessary extensions for future scalability.
 - d2.1: Integrate core *Substrate* extrinsics for account management, balances, and transactions.
 - d2.2: Design and develop custom extrinsics tailored for RWAs and alternative finance:
-- `TokenizeAsset`: This extrinsic would allow users or organizations to tokenize their real-world assets. It would require details of the asset, proof of ownership, and the amount to be tokenized.
-- `IssueRWATokens`: Once an asset is tokenized, this extrinsic can be used to issue the corresponding RWA tokens to the asset holder.
-- `TransferRWATokens`: A custom function tailored for the transfer of RWA tokens, incorporating any regulatory or compliance checks necessary for such assets.
+  - `tokenize_asset`: This extrinsic would allow users or organizations to tokenize their real-world assets. It would require details of the asset, proof of ownership, and the amount to be tokenized.
+  - `issue_tokens`: Once an asset is tokenized, this extrinsic can be used to issue the corresponding RWA tokens to the asset holder.
+  - `transfer_tokens`: A custom function tailored for the transfer of RWA tokens, incorporating any regulatory or compliance checks necessary for such assets.
 - d2.3: Test and validate the integrated extrinsics for seamless operations.
 - d3.1: Establish the MPT chain infrastructure.
 - d3.2: Implement asset management functionalities - creation, issuance, and transfer.
