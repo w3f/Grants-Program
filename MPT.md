@@ -118,23 +118,27 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests or it . |
 | 1. | Design the first version of the MPT protocol and pallet for alternative finance with a focus on RWAs. | The pallet is designed to be extensible and modular, and to be able to add new features easily in the future.|
-    d1.1: Draft a blueprint of the MPT protocol capturing key features.
-    d1.2: Define the architecture of the MPT pallet.
-    d1.3: Identify and incorporate necessary extensions for future scalability.
 | 2. | Implement extrinsics for the MPT pallet, including both extrinsics from existing *Substrate* pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of *Substrate*, such as accounts, balances, and transactions, while the custom extrinsics will facilitate the integration of unique features of the alternative finance system. |
-    d2.1: Integrate core *Substrate* extrinsics for account management, balances, and transactions.
-    d2.2: Design and develop custom extrinsics tailored for RWAs and alternative finance.
-    d2.3: Test and validate the integrated extrinsics for seamless operations.
 | 3. | Set up the MPT chain focusing on the basic functionalities of assets, transactions, and consensus mechanism. | Testing the creation, issuing, and transfer of assets, along with transaction processing. Given the platform's initial phase, the MPT chain will operate in a permissioned manner, emphasizing its role in alternative finance and digital private markets for a diverse set of market participants. |
-    d3.1: Establish the MPT chain infrastructure.
-    d3.2: Implement asset management functionalities - creation, issuance, and transfer.
-    d3.3: Integrate transaction processing capabilities.
-    d3.4: Conduct initial testing to validate the chain's core functions.
 | 4. | Design and Implement a consensus mechanism. | Choose and integrate a consensus algorithm that aligns with the permissioned nature of the MPT chain and ensures transaction and data integrity. This will be vital for trustworthiness and reliability of the platform.|
-    d4.1: Decide on the initial set of trusted validators for the PoA mechanism.
-    d4.2: Integrate PoA into the MPT chain, ensuring validators can produce blocks.
-    d4.3: Implement mechanisms for validator management - addition, removal, and rotation.
-    d4.4: Conduct thorough testing to confirm the effective functioning of the PoA consensus within the MPT chain environment.
+
+- d1.1: Draft a blueprint of the MPT protocol capturing key features.
+- d1.2: Define the architecture of the MPT pallet.
+- d1.3: Identify and incorporate necessary extensions for future scalability.
+
+- d2.1: Integrate core *Substrate* extrinsics for account management, balances, and transactions.
+- d2.2: Design and develop custom extrinsics tailored for RWAs and alternative finance.
+- d2.3: Test and validate the integrated extrinsics for seamless operations.
+
+- d3.1: Establish the MPT chain infrastructure.
+- d3.2: Implement asset management functionalities - creation, issuance, and transfer.
+- d3.3: Integrate transaction processing capabilities.
+- d3.4: Conduct initial testing to validate the chain's core functions
+
+- d4.1: Decide on the initial set of trusted validators for the PoA mechanism.
+- d4.2: Integrate PoA into the MPT chain, ensuring validators can produce blocks.
+- d4.3: Implement mechanisms for validator management - addition, removal, and rotation.
+- d4.4: Conduct thorough testing to confirm the effective functioning of the PoA consensus within the MPT chain environment.
 
 ### Milestone 2
 
