@@ -122,14 +122,16 @@ The below roadmap refers to an initial implementation of a purposely built block
 | 3. | Set up the MPT chain focusing on the basic functionalities of assets, transactions, and consensus mechanism. | Testing the creation, issuing, and transfer of assets, along with transaction processing. Given the platform's initial phase, the MPT chain will operate in a permissioned manner, emphasizing its role in alternative finance and digital private markets for a diverse set of market participants. |
 | 4. | Design and Implement a consensus mechanism. | Choose and integrate a consensus algorithm that aligns with the permissioned nature of the MPT chain and ensures transaction and data integrity. This will be vital for trustworthiness and reliability of the platform.|
 
+#### Possible course of action for deliverables:
+
 - d1.1: Draft a blueprint of the MPT protocol capturing key features.
 - d1.2: Define the architecture of the MPT pallet.
 - d1.3: Identify and incorporate necessary extensions for future scalability.
 - d2.1: Integrate core *Substrate* extrinsics for account management, balances, and transactions.
 - d2.2: Design and develop custom extrinsics tailored for RWAs and alternative finance:
-  - `tokenize_asset`: This extrinsic would allow users or organizations to tokenize their real-world assets. It would require details of the asset, proof of ownership, and the amount to be tokenized.
-  - `issue_tokens`: Once an asset is tokenized, this extrinsic can be used to issue the corresponding RWA tokens to the asset holder.
-  - `transfer_tokens`: A custom function tailored for the transfer of RWA tokens, incorporating any regulatory or compliance checks necessary for such assets.
+  - `tokenize_asset`: this extrinsic would allow users or organizations to tokenize their real-world assets. It would require details of the asset, proof of ownership, and the amount to be tokenized.
+  - `issue_tokens`: once an asset is tokenized, this extrinsic can be used to issue the corresponding RWA tokens to the asset holder.
+  - `transfer_tokens`: a custom function tailored for the transfer of RWA tokens, incorporating any regulatory or compliance checks necessary for such assets.
 - d2.3: Test and validate the integrated extrinsics for seamless operations.
 - d3.1: Establish the MPT chain infrastructure.
 - d3.2: Implement asset management functionalities - creation, issuance, and transfer.
@@ -154,32 +156,22 @@ The below roadmap refers to an initial implementation of a purposely built block
 | 1. | Create a native token for the MPT chain supported by a governance model. | Includes defining the different types of tokens that will be issued, their supply, and how they will be used. |
 | 2. | Token development and asset management | Balances of assets and their values to be stored, tracked and managed. |
 | 3. | Define tokenomics | Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed. |
-| 4. | MPT chain | Issuing and trading of tokens, storage and management of asset balances, and exploring the use of smart contracts to implement custom rules and logic, such as common rules used for private markets. |
-
-#### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
-
-- `create_token`: Create a new token, specifying its name, symbol, supply, and other metadata.
-- `issue_token`: Issue new units of an existing token.
-- `transfer_token`: Transfer tokens from one account to another.
-- `freeze_token`: Freeze a token, preventing transfers.
-- `unfreeze_token`: Unfreeze a token, allowing transfers again.
-- `set_token_metadata`: Set the metadata for a token, such as its name, symbol, and description.
+| 4. | MPT chain | Issuing and trading of tokens, storage and management of asset balances, and implement runtime logic to embed custom rules and procedures that mirror standard protocols for private markets. |
 
 #### Possible course of action for deliverables:
 
-- d1: Define the tokens properties: in this first version we will be focusing on ownership representation, and how such tokens will be issued, how to determine their supply, and how they will be used and distributed. We will address how other tokens will be used to grant access to services, or to vote on governance proposals, after our initial implementation of tokens representing ownership and the exploration of offchain and on-chain Oracles directly connected to RWAs.
-- d2: Identify the requirements for issuing and trading tokens in private markets: consider how to verify the identities of investors and how to prevent fraud.
-- d3: Design and implement the architecture for the primary and secondary token issuance.
-- d4: Implement the logic for creating and issuing the token to investors or community members.
-- d5: Define the governance model for the MPT chain. This could include defining how token holders can participate in decision-making, such as voting on proposals to change the platform's parameters, naturally focusing on transparency and fairness.
-- d6: Implement the governance model on the MPT chain: create a mechanism for submitting and voting on proposals to change the platform's parameters.
-- d7: Explore the use of smart contracts to implement custom rules and logic, such as common rules used for private markets.
-- d8: Implement the extrinsics necessary for issuing, exchanging and transferring tokens between different accounts and for exchanging tokens for other assets.
-- d9: Implement the logic for enforcing pre-established rules for private markets and/or alternative finance instruments, such as KYC/AML checks and investment limits.
-- d10: Define the multiple fees to support client platforms tokenomics, and how fees are generated, used, collected and distributed.
-- d11: Test the smart contracts to ensure that they are working correctly.
-- d12: Test the pallet to ensure that it is working correctly.
-- d13: Review and update the tokenomics definition, based on the findings from d4.
+- d1.1: Utilize the balances pallet to initiate the creation of the native token.
+- d1.2: Establish parameters such as token supply, transfer fees, and minting/burning rules.
+- d1.3: Deploy a governance model using either the democracy or collective pallets to allow stakeholders to make decisions about the token and platforms' direction.
+- d2.1: Integrate the assets pallet for handling multiple asset types.
+- d2.2: Set up mechanisms for asset value tracking and management.
+- d2.3: Define the protocols for asset transfers, trades, and liquidations.
+- d3.1: Design the fee structure for transactions and operations on the platform.
+- d3.2: Establish the process for fee collection and distribution.
+- d3.3: Lay out the utility and incentives associated with the fees.
+- d4.1: Lay down the foundation for token issuance using runtime logic, specifying rules and procedures.
+- d4.2: Implement functionalities for token trading and transfers using runtime.
+- d4.3: Design and implement runtime logic that emulates protocols common in private markets.
 
 ### Milestone 3
 
