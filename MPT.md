@@ -1,4 +1,4 @@
-# Marco Polo Technologies - Empowering alternative finance platforms on web3
+# Marco Polo Technologies - Powering alternative finance platforms on web3
 
 - **Team Name:** Marco Polo Technologies
 - **Payment Address:** Network and token address **to be added**
