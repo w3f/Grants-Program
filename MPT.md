@@ -120,7 +120,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 | 1. | Design the first version of the MPT protocol and pallet for alternative finance with a focus on RWAs. | The pallet is designed to be extensible and modular, and to be able to add new features easily in the future.|
 | 2. | Implement extrinsics for the MPT pallet, including both extrinsics from existing *Substrate* pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of *Substrate*, such as accounts, balances, and transactions, while the custom extrinsics will facilitate the integration of unique features of the alternative finance system. |
 | 3. | Set up the MPT chain focusing on the basic functionalities of assets, transactions, and consensus mechanism. | Testing the creation, issuing, and transfer of assets, along with transaction processing. Given the platform's initial phase, the MPT chain will operate in a permissioned manner, emphasizing its role in alternative finance and digital private markets for a diverse set of market participants. |
-| 4. | Design and Implement a consensus mechanism. | Choose or build and integrate a consensus algorithm that aligns with the permissioned nature of the MPT chain and ensures transaction and data integrity. This will be vital for trustworthiness and reliability of the platform.|
+| 4. | Design and implement a consensus mechanism. | Choose or build and integrate a consensus algorithm that aligns with the permissioned nature of the MPT chain and ensures transaction and data integrity. This will be vital for trustworthiness and reliability of the platform.|
 
 #### Possible course of action for deliverables:
 
