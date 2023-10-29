@@ -120,7 +120,7 @@ The below roadmap refers to an initial implementation of a purposely built block
 | 1. | Design the first version of the MPT protocol and pallet for alternative finance with a focus on RWAs. | The pallet is designed to be extensible and modular, and to be able to add new features easily in the future.|
 | 2. | Implement extrinsics for the MPT pallet, including both extrinsics from existing *Substrate* pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of *Substrate*, such as accounts, balances, and transactions, while the custom extrinsics will facilitate the integration of unique features of the alternative finance system. |
 | 3. | Set up the MPT chain focusing on the basic functionalities of assets, transactions, and consensus mechanism. | Testing the creation, issuing, and transfer of assets, along with transaction processing. Given the platform's initial phase, the MPT chain will operate in a permissioned manner, emphasizing its role in alternative finance and digital private markets for a diverse set of market participants. |
-| 4. | Design and Implement a consensus mechanism. | Choose and integrate a consensus algorithm that aligns with the permissioned nature of the MPT chain and ensures transaction and data integrity. This will be vital for trustworthiness and reliability of the platform.|
+| 4. | Design and Implement a consensus mechanism. | Choose or build and integrate a consensus algorithm that aligns with the permissioned nature of the MPT chain and ensures transaction and data integrity. This will be vital for trustworthiness and reliability of the platform.|
 
 #### Possible course of action for deliverables:
 
@@ -137,10 +137,10 @@ The below roadmap refers to an initial implementation of a purposely built block
 - d3.2: Implement asset management functionalities - creation, issuance, and transfer.
 - d3.3: Integrate transaction processing capabilities.
 - d3.4: Conduct initial testing to validate the chain's core functions
-- d4.1: Decide on the initial set of trusted validators for the PoA mechanism.
-- d4.2: Integrate PoA into the MPT chain, ensuring validators can produce blocks.
+- d4.1: Decide on the initial set of trusted validators for the consensus mechanism.
+- d4.2: Integrate consensus into the MPT chain, ensuring validators can produce blocks.
 - d4.3: Implement mechanisms for validator management - addition, removal, and rotation.
-- d4.4: Conduct thorough testing to confirm the effective functioning of the PoA consensus within the MPT chain environment.
+- d4.4: Conduct thorough testing to confirm the effective functioning of the chosen consensus mechanism within the MPT chain environment.
 
 ### Milestone 2
 
@@ -160,12 +160,12 @@ The below roadmap refers to an initial implementation of a purposely built block
 
 #### Possible course of action for deliverables:
 
-- d1.1: Utilize the balances pallet to initiate the creation of the native token.
+- d1.1: Initiate the creation of the native token.
 - d1.2: Establish parameters such as token supply, transfer fees, and minting/burning rules.
-- d1.3: Deploy a governance model using either the democracy or collective pallets to allow stakeholders to make decisions about the token and platforms' direction.
-- d2.1: Integrate the assets pallet for handling multiple asset types.
+- d1.3: Deploy a governance model using to allow stakeholders to make decisions about the token and platforms' direction.
+- d2.1: Handling multiple asset types.
 - d2.2: Set up mechanisms for asset value tracking and management.
-- d2.3: Define the protocols for asset transfers, trades, and liquidations.
+- d2.3: Define the protocol initial rules for asset transfers, trades, and liquidations.
 - d3.1: Design the fee structure for transactions and operations on the platform.
 - d3.2: Establish the process for fee collection and distribution.
 - d3.3: Lay out the utility and incentives associated with the fees.
@@ -190,51 +190,42 @@ The below roadmap refers to an initial implementation of a purposely built block
 | 3. | MPT chain | Design and implement APIs for creating, issuing, transferring, and managing assets and for for viewing account balances and asset holdings. |
 | 4. | MPT chain repository | Deliver a git-hub repository with the description of our initial implementation and its use and potential. |
 
-#### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
-
-- `create_account`: Create a new account.
-- `update_account`: Update the details of an existing account.
-- `delete_account`: Delete an existing account.
-- `transfer_funds`: Transfer funds from one account to another.
-- `associate_account_with_identity`: Associate a Substrate account with an identity.
-- `get_account_balance`: Get the balance of an account.
-- `get_asset_holdings`: Get the asset holdings of an account.
-- `create_asset`: Create a new asset.
-- `issue_asset`: Issue new units of an existing asset.
-- `transfer_asset`: Transfer assets from one account to another.
-- `freeze_asset`: Freeze an asset, preventing transfers.
-- `unfreeze_asset`: Unfreeze an asset, allowing transfers again.
-- `set_asset_metadata`: Set the metadata for an asset, such as its name, symbol, and description.
-
 #### Possible course of action for deliverables:
 
-- d1: Design and implement a system for account permissions, creation, management, and transfer.
-- d2: Implement the extrinsics for creating, updating, freezing, unfreezing, deleting accounts, and transferring funds.
-- d3: Design and implement a mechanism for associating *Substrate* accounts with real world identities and asset management capabilities.
-- d4: Implement the extrinsics for associating Substrate accounts with identity and asset management capabilities, and for authorizing Substrate accounts to perform transactions on tokens.
-- d5: Design and implement APIs for creating, issuing, transferring, and managing assets, and for getting the list of all assets on the chain and the metadata for a specific asset.
-- d6: Design and implement APIs for viewing account balances and asset holdings, and for getting the current price of an asset.
-- d7: Document the initial implementation of the accounts, identity, and asset management system.
-- d8: Create a GitHub repository with the documentation and examples.
+- d1.1: Integrate fundamental account management features.
+- d1.2: Facilitate fund transfers between accounts.
+- d1.3: Design runtime procedures for account management operations such as updates and deletions.
+- d2.1: Associate accounts with distinct identities.
+- d2.2: Design mechanisms within the runtime to link identities to specific assets and their management abilities.
+- d2.3: Establish protocols to grant or revoke token transaction permissions to these identities.
+- d3.1: Develop APIs for asset creation, leveraging the functionalities of the assets pallet.
+- d3.2: Implement APIs for asset issuance, transfer, and general management.
+- d3.3: Offer insights into account balances and asset allocations through API functionalities.
+- d4.1: Set up the GitHub repository for MPT chain.
+- d4.2: Populate the repository with relevant documentation, codebase, and implementation details.
+- d4.3: Offer comprehensive user guidelines, FAQs, and potential use cases to guide stakeholders.
 
-#### Moreover, together with the MPT pallet we are creating, we will be using parts of the following existing pallets:
+#### Moreover, together with the MPT pallet we are creating, we might be using extrinsics of the following existing pallets:
 
-- `pallet_assets`: To provide functionality for managing assets life cycle, as well as set and manage asset metadata.
-- `pallet_balances`: To provide functionality for handling accounts and balances, as well as to store and manage the balances of the native token and other assets.
-- `pallet_transactions`: To provide functionality for processing transactions and use it to implement the logic for creating, submitting, and validating transactions.
-- `pallet_grandpa`: Chosen for safety, scalability and energy-efficiency.
-- `pallet_identity`: To provide functionality for managing user identities, track asset ownership and associate accounts with identities.
-- `pallet_democracy`: To provides a basic on-chain governance system, to allow token holders to vote on proposals related to the  platform.
+- `pallet_assets`
+- `pallet_balances`
+- `pallet_timestamp`
+- `pallet_aura`
+- `pallet_transaction_payment`
+- `pallet_grandpa`
+- `pallet_identity`
+- `pallet_democracy`
+- `pallet_sudo`
 
 ## Future Plans
 
-We are committed to developing a secure, compliant, and user-friendly infrastructure that has the potential to revolutionize the way that private markets are financed and operated.
+We are committed to developing a secure, compliant, and user-friendly infrastructure that redefines private market financing and operations for everyone.
 
 In the short term, we plan to develop more features and products for our tokenization layer. In addition to primary and secondary issuance of assets, we will enable the creation of ETFs-like and portfolios of assets in private markets accessible to all investor classes.
 
-On more practical terms, we are also embracing a new project for a primary and secondary issuance platform to connect private and institutional investors to growing SMEs wanting to expand in emerging markets, where financial infrastructure is lacking. Finally, we will further advance our KYC/KYB/AML capabilities to provide on-chain verified info, as well as exploring the best route to integrate *oracles* for on and off chain data verification.
+On more practical terms, we are also embracing a new project for a primary and secondary issuance platform to connect private and institutional investors to growing SMEs wanting to expand in emerging markets, where financial infrastructure is lacking. Finally, we will further advance our KYC/KYB/AML capabilities to provide on-chain verified info, as well as exploring the best route to integrate *off-chain workers* for data verification.
 
-In the long term, we aim to become the go-to parachain for alternative finance products, private companies, and digital private markets in the *Polkadot* environment, focusing on creating and implement more complex financial products and services, as well as taking into account the legal and regulatory implications of developing and deploying decentralized financial applications.
+In the long term, we aim to become the go-to parachain for alternative finance products for private companies in the *Polkadot* environment, focusing on creating and implementing more complex financial products and services, as well as taking into account the legal and regulatory implications of developing and deploying decentralized financial applications.
 
 ## Additional Information :heavy_plus_sign:
 
