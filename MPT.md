@@ -12,9 +12,9 @@
 
 #### Description
 
-Marco Polo Technologies (MPT) stands as a pioneering entity in the web3 space of infrastructure solutions, dedicated to reshaping alternative finance platforms, instruments, and mechanisms. Our primary objective centers around facilitating seamless interactions within private markets and alternative investments. MPT is designed to align with global regulatory standards, emphasizes investor protection, enforces rigorous KYC/AML/KYB protocols, and implements mechanisms to deter market manipulation. Alongside our commitment to security and compliance, we are building an intuitive user interface (UI) architecture, which enables businesses, especially those less familiar with technology, to effortlessly create alternative finance platforms using a streamlined drag-and-drop interface.
+Marco Polo Technologies (MPT) stands as a pioneering entity in the web3 space of infrastructure solutions, dedicated to disrupt alternative finance, financial instruments and mechanisms. Our primary objective centers around facilitating seamless interactions within private markets and alternative investments. MPT is designed to align with global regulatory standards, emphasizes investor protection, enforces rigorous KYC/AML/KYB protocols, and implements mechanisms to deter market manipulation. Alongside our commitment to security and compliance, we are building an intuitive user interface (UI) architecture, which enables businesses, especially those less familiar with technology, to effortlessly create alternative finance platforms using a streamlined drag-and-drop interface.
 
-MPT assists businesses in  reaching untapped markets by connecting real-world assets with a diverse range of investors and finance experts. By fostering collaborations between asset owners, investors, and issuers, we aim to revolutionize the landscape of alternative finance and bridge the gap between traditional finance, DeFi, and the latest web3 technologies. Our primary aim is to channel more investments from traditional and private sectors into the digital web3 realm, fostering more inclusive and transparent markets for all participants.
+MPT assists businesses in  reaching untapped markets by connecting real-world assets with a diverse range of investors and finance experts. By fostering collaborations between asset owners, investors, and issuers, we aim to revolutionize the landscape of alternative finance and bridge the gap between traditional finance, DeFi, and the latest web3 technologies. Our primary aim is to channel more investments from traditional and private sectors into the digital web3 realm, fostering more inclusive, liquid and transparent markets for all participants.
 
 #### Marco Polo Technologies, Substrate and Polkadot - A brief description of our project.
 
@@ -34,11 +34,11 @@ Comprising a compact yet seasoned group of practitioners and professionals, our 
 
 ### Project Details
 
-Our primary objective is to design a comprehensive alternative finance protocol, serving as a foundational blueprint to validate and onboard real-world assets (RWAs) to the blockchain. Our aim is to establish this process as a pioneering standard, bridging the traditional finance sector with the emerging decentralized finance ecosystem. Central to our approach is the versatile pallet wer are developing, designed to tackle the unique challenges of the global alternative finance landscape. Together, our protocol, pallet, and features will ensure that alternative finance platforms can seamlessly integrate, harnessing advanced features for RWAs and beyond, as illustrated in our architecture (in the image below):
+Our primary objective is to design a comprehensive alternative finance protocol, serving as a foundational blueprint to validate and onboard real-world assets (RWAs) to the blockchain, and share its benefits with market participants that have had no access to it so far. We are focusing on bridging the traditional finance sector with the emerging decentralized finance ecosystem and central to our approach is the versatile pallet we are developing, designed to tackle the unique challenges and requirements of the global alternative finance landscape. Together, our protocol, pallet, and features will ensure that alternative finance platforms can seamlessly integrate, harnessing advanced features for RWAs and beyond, as illustrated in our architecture (in the image below):
 
-1) Unified protocol design: leveraging the *Substrate* framework, we are introducing a comprehensive alternative finance protocol tailored for RWAs. This protocol goes beyond just asset tokenization; it guarantees the seamless primary and secondary issuance of RWAs. Additionally, we are committed to facilitating both the onboarding and tracking of these assets, ensuring an optimized experience for every client.
-2) Advanced token mechanics: our protocol presents an innovative and efficient token standard, designed to challenge traditional financial processes. Our focus is to empower asset owners to tokenize their RWAs with ease, while simultaneously offering investors a fluid environment for investing and trading.
-3) Asset Storage and exchange: our infrastructure is fortified and ready to support an array of functions aimed at streamlining the custody and management of RWAs. Clients can confidently store and effortlessly trade their tokenized assets, capitalizing on our clients' platforms dynamic environments and an array of financial instruments.
+1) Unified protocol design: leveraging the *Substrate* framework, we are introducing a comprehensive alternative finance protocol tailored for RWAs. This protocol goes beyond asset tokenization and guarantees the seamless primary and secondary issuance of RWAs. Additionally, we are committed to facilitating both the onboarding and tracking of these assets, ensuring an optimized experience for every client.
+2) Advanced token mechanics: our protocol will present an innovative and efficient token standard, designed to challenge traditional financial processes, supporting asset owners to directly tokenize their RWAs with ease, while simultaneously offering investors a fluid environment for investing and trading.
+3) Asset Storage and exchange: our infrastructure supports an array of functions aimed at streamlining the custody and management of RWAs. Clients and finance managers can confidently store and effortlessly trade their tokenized assets, capitalizing on our clients' platforms dynamic environments and a vast set of financial instruments.
 
 The image below represents the two layers of our infrastructure and how we would be using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
 
@@ -96,7 +96,7 @@ Here you can find documentation on the research and our preliminary conversation
 
 ## Development Roadmap :nut_and_bolt:
 
-Our team is working on the creation and implementation of other finance products and mechanisms, as well as compliance aspects,  in the wider context of our infrastructure development that are to be intended outside of this grant application. We would have the equivalent of 2.5 people, cumulatively, contributing full-time to this project and the language of development would be *Rust*.
+Our team is working on the creation and implementation of other finance products and mechanisms, as well as compliance aspects,  in the wider context of our infrastructure development that are to be intended outside of this grant application. We would have the equivalent of 2.5 people, cumulatively, contributing full-time to this project and the tech stack for development would be comprised of *Rust*, *WebAssembly (Wasm)*, *Substrate*, *AuroraDB*, along with AWS services such as S3, EC2, Route53, and SNS.
 
 The below roadmap refers to an initial implementation of a purposely built blockchain for alternative finance generic functions using *Substrate*.
 
@@ -117,43 +117,24 @@ The below roadmap refers to an initial implementation of a purposely built block
 | **0a.** | License | MIT|
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests or it . |
-| 1. | Design the first version of the MPT pallet for alternative finance with a focus on RWAs. | The pallet is designed to be extensible and modular, and to be able to add new features easily in the future.|
-| 2. | Implement extrinsics for the MPT pallet, including both extrinsics from existing *Substrate* pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of Substrate, such as accounts, balances, and transactions, while the custom extrinsics will allow MPT to implement the specific features of the alternative finance system.|
-| 3. | Implement the MPT chain with the basic use of assets, transactions and consensus mechanism. | Test the creation, issuing and transfer of assets, as well as sending and receiving transactions. In the initial phase the MPT chain will be permissioned, given the focus to power alternative finance and digital private markets for a wide variety of market participants. |
-
-#### Aside from creating our own extrinsics, here a list of exstrinsics to be potentially used in the above implementation:
-
-- `force_create`: Creates a new asset class without taking any deposit.
-- `force_set_metadata`: Set the metadata of an asset class.
-- `force_clear_metadata`: Remove the metadata of an asset class.
-- `force_asset_status`: Alter an asset class’s attributes.
-- `force_cancel_approval`: Rescind a previous approval.
-- `destroy`: Destroys an entire asset class; called by the asset class’s Owner.
-- `mint`: Increases the asset balance of an account; called by the asset class’s Issuer.
-- `burn`: Decreases the asset balance of an account; called by the asset class’s Admin.
-- `force_transfer`: Transfers between arbitrary accounts; called by the asset class’s Admin.
-- `freeze`: Disallows further transfers from an account; called by the asset class’s Freezer.
-- `thaw`: Allows further transfers to and from an account; called by the asset class’s Admin.
-- `transfer_ownership`: Changes an asset class’s Owner; called by the asset class’s Owner.
-- `set_team`: Changes an asset class’s Admin, Freezer and Issuer; called by the asset class’s Owner.
-- `set_metadata`: Set the metadata of an asset class; called by the asset class’s Owner.
-- `clear_metadata`: Remove the metadata of an asset class; called by the asset class’s Owner.
-- `touch_other`: Create an asset account for specified account. Caller must place a deposit; called by the asset class’s Freezer or Admin.
-- `block`: Disallows further transfers to and from an account; called by the asset class’s Freezer.
-
-#### Possible course of action for deliverables:
-
-- d1: Define the core features of the MPT pallet, such as user permissions, asset creation, issuance, transfer, and management: defining the types of assets that will be supported, the different roles that users can have in the system, and the operations that users will be able to perform on assets.
-- d2: Design the pallet architecture and storage schema: defining the pallet's data structures and functions, as well as how the MPT pallet will interact with other *Substrate* pallets, such as the accounts pallet, balances pallet, and transactions pallet.
-- d3: Implement the pallet logic, including the extrinsics for asset creation, issuance, transfer, and management. Creating the logic for each extrinsic, as well as the necessary checks and balances to ensure that the extrinsics are used correctly: users cannot create assets without the necessary permissions, and that users cannot transfer assets that they do not own.
-- d4: Test the pallet to ensure that it is functioning correctly. Testing the extrinsics to ensure that they perform as expected, as well as testing the overall functionality of the pallet.
-- d5: Identify the extrinsics from existing *Substrate* pallets that are needed to support the core features of the MPT pallet. Identifying the extrinsics that are needed for basic operations such as account creation, balance transfers, and transaction fees.
-- d6: Implement the custom extrinsics that are needed to support the specific features of the MPT pallet.
-- d7: Test the extrinsics to ensure that they are functioning correctly.
-- d8: Deploy the MPT pallet, the extrinsics, and the native token to the MPT chain: compiling the pallet and extrinsics into a *Substrate* runtime, and then deploying the runtime to a *Substrate* node.
-- d9: Implement the logic for creating, issuing, transferring, and managing assets on the MPT chain.
-- d10: Implement the logic for sending and receiving transactions on the MPT chain.
-- d11: Deploy a consensus mechanism to the MPT chain.
+| 1. | Design the first version of the MPT protocol and pallet for alternative finance with a focus on RWAs. | The pallet is designed to be extensible and modular, and to be able to add new features easily in the future.|
+    d1.1: Draft a blueprint of the MPT protocol capturing key features.
+    d1.2: Define the architecture of the MPT pallet.
+    d1.3: Identify and incorporate necessary extensions for future scalability.
+| 2. | Implement extrinsics for the MPT pallet, including both extrinsics from existing *Substrate* pallets and custom extrinsics. | The extrinsics from existing pallets will allow MPT to interact with the core functionalities of *Substrate*, such as accounts, balances, and transactions, while the custom extrinsics will facilitate the integration of unique features of the alternative finance system. |
+    d2.1: Integrate core *Substrate* extrinsics for account management, balances, and transactions.
+    d2.2: Design and develop custom extrinsics tailored for RWAs and alternative finance.
+    d2.3: Test and validate the integrated extrinsics for seamless operations.
+| 3. | Set up the MPT chain focusing on the basic functionalities of assets, transactions, and consensus mechanism. | Testing the creation, issuing, and transfer of assets, along with transaction processing. Given the platform's initial phase, the MPT chain will operate in a permissioned manner, emphasizing its role in alternative finance and digital private markets for a diverse set of market participants. |
+    d3.1: Establish the MPT chain infrastructure.
+    d3.2: Implement asset management functionalities - creation, issuance, and transfer.
+    d3.3: Integrate transaction processing capabilities.
+    d3.4: Conduct initial testing to validate the chain's core functions.
+| 4. | Design and Implement a consensus mechanism. | Choose and integrate a consensus algorithm that aligns with the permissioned nature of the MPT chain and ensures transaction and data integrity. This will be vital for trustworthiness and reliability of the platform.|
+    d4.1: Decide on the initial set of trusted validators for the PoA mechanism.
+    d4.2: Integrate PoA into the MPT chain, ensuring validators can produce blocks.
+    d4.3: Implement mechanisms for validator management - addition, removal, and rotation.
+    d4.4: Conduct thorough testing to confirm the effective functioning of the PoA consensus within the MPT chain environment.
 
 ### Milestone 2
 
