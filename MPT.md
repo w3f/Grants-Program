@@ -38,7 +38,7 @@ Our primary objective is to design a comprehensive alternative finance protocol,
 
 1) Unified protocol design: leveraging the *Substrate* framework, we are introducing a comprehensive alternative finance protocol tailored for RWAs. This protocol goes beyond asset tokenization and guarantees the seamless primary and secondary issuance of RWAs. Additionally, we are committed to facilitating both the onboarding and tracking of these assets, ensuring an optimized experience for every client.
 2) Advanced token mechanics: our protocol will present an innovative and efficient token standard, designed to challenge traditional financial processes, supporting asset owners to directly tokenize their RWAs with ease, while simultaneously offering investors a fluid environment for investing and trading.
-3) Asset storage and exchange: our infrastructure supports an array of functions aimed at streamlining the custody and management of RWAs. Clients and finance managers can confidently store and effortlessly trade their tokenized assets, capitalizing on our clients' platforms dynamic environments and a vast set of financial instruments.
+3) Asset storage and exchange: our infrastructure supports an array of functions aimed at streamlining the custody and management of RWAs. Clients and finance managers can confidently store and effortlessly trade their tokenized assets, capitalizing on our clients platforms' dynamic environments and a vast set of financial instruments.
 
 The image below represents the two layers of our infrastructure and how we would be using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
 
