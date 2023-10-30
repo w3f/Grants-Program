@@ -216,7 +216,7 @@ In addition, these Web 2.5 applications are potential catalysts for introducing 
 
 We have accomplished the implementation of organization accounts and decentralized governance features based on Substrate-supported smart contracts. These accounts and governance functions accommodate tasks such as the management of organizational assets and voting-based decision making. Consequently, this establishes a transparent and verifiable method of governance for organizations.  
 
-At this phase, we are keenly focused on constructing the Proof of Concept (PoC) prototype for our project. In this endeavor, we are developing a module designed for the seamless integration and deployment of programs that operate both on-chain and off-chain. With the employment of technologies related to Docker and Kubernetes, this module can automate the procedure of deploying smart contracts and backend services into the blockchain environment, simultaneously utilizing the computational resources of decentralized servers.  
+At the current stage, we are focused on establishing the first version of the on-chain cloud deployment platform for the project. Through Docker and Kubernetes related technologies, this module can automatically deploy smart contracts and back-end services to the blockchain with one click and invoke the computing resources of decentralized servers.
 
 ## Development Roadmap :nut_and_bolt:
 
