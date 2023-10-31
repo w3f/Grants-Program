@@ -55,6 +55,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Plutonication](https://github.com/cisar2218/Plutonication)                    | [Plutonication](Plutonication.md)                                                              | [GitHub](https://github.com/cisar2218/Plutonication)                      | ☐          |       ☐        |     ☐     |
 | [gmajor](https://github.com/gmajor-encrypt)                    | [JsonRpsee socks5 proxy](JsonRpsee-socks5-proxy.md)                                                              | [GitHub](https://github.com/gmajor-encrypt)                      | ☐          |       ☐        |     ☐     |
 | [ParaSpell](https://github.com/paraspell)                    | [SpellRouter](SpellRouter-proposal.md)                                                              | [GitHub](https://github.com/paraspell)                      | ☐          |       ☐        |     ☐     |
+| [Paraverse Foundation](https://talisman.xyz)                    | [Signet - Talisman](signet.md)                                                              | [GitHub](https://github.com/TalismanSociety)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
