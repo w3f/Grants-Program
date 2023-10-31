@@ -72,7 +72,7 @@
 
  AI developer **Miguel Monares** is an outstanding blockchain and AI developer majoring in Mathematics and Computer Science @ UC San Diego. He was an AI researcher and software engineer @ Intel Corporation and a blockchain research assistant @ National University of Singapore. 
 
- We are all very thrilled about this project and fully devote ourselves to working on it. We hope to build our project based on Partisia because we all think Partisia is a very cutting-edge and promising blockchain, so we can not wait to develop our project with Partisia. We know each other well and we have worked together for a long time, so we will deliver our qualified and punctual outcomes in a highly reliable and efficient way. We also won the prize to attend Polkadot Blockchain Academy.
+ We are all very thrilled about this project and fully devote ourselves to working on it. We hope to build our project based on Polkadot because we all think Polkadot is a very cutting-edge and promising blockchain, so we can not wait to develop our project with Polkadot. We know each other well and we have worked together for a long time, so we will deliver our qualified and punctual outcomes in a highly reliable and efficient way. We also won the prize to attend Polkadot Blockchain Academy.
 
  ### Team Code Repos
 
