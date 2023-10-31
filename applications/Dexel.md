@@ -91,9 +91,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-- **Total Estimated Duration:** 4 Months
+- **Total Estimated Duration:** 2Months
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** 25,000 USD
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1: Initial Setup, Smart Contract Development With Proof of Concept
 
@@ -112,25 +112,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 3. | Content Management Contract (CMC) | Development of the CMC with features for saving, categorizing, and reading content. |
 | 4. | POC Interface | Frontend interface development using React and Next.js, integrating with the developed smart contracts and provide a deployed POC |
 
-### Milestone 2: Frontend Development, Integration, and Testing
-
-- **Estimated duration:** 2 months
-- **FTE:** 2
-- **Costs:** 15,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will extend the documentation to cover new features and updates. A detailed user guide on how to seamlessly interact with the platform, manage content, and customize the reading experience will also be provided. |
-| **0c.** | Testing and Testing Guide | The second phase will involve rigorous testing of the entire platform. We will add more unit tests, and integration tests will ensure the frontend and smart contracts work in tandem. A guide detailing the extended test scenarios will be provided. |
-| **0d.** | Docker | An updated Dockerfile will be provided to test the full functionality of Dexel, including the new features and improvements. |
-| **0e.** | Article | At the end of this milestone, we will publish an article detailing the journey of Dexel, the challenges faced, and how it stands out in the decentralized ecosystem. |
-| 5. | E2E Frontend Development | Build on POC and make a fully fledged frontend ensuring a seamless user experience, with features like content customization and management. |
-| 6. | Smart Contract Integration | Ensuring that the frontend perfectly interacts with the smart contracts, providing users with real-time feedback and updates. |
-| 7. | User Personalization Features | Development of features that allow users to adjust their reading environments, ensuring a personalized reading experience. |
-| 8. | Platform Testing | Comprehensive testing of the platform to ensure all features work as expected, and the platform is ready for launch. |
-
-
 ### Smart Contract Architecture
 
 Our smart contract architecture is built using the Ink! framework. Our goal is to build a modular contract system where each module (or contract) will handle specific functionalities, allowing for better scalability, manageability, and upgradability.
@@ -139,23 +120,23 @@ Our smart contract architecture is built using the Ink! framework. Our goal is t
 - **Content Management Contract (CMC)**
 - **Customization & Preferences Contract (CPC)**
 
-#### 2. Data Flows and Interactions
+#### 1. Data Flows and Interactions
 
-**2.1 User Authenticationn**
+**1.1 User Authenticationn**
 
 - User interacts with the frontend and opts to authenticate.
 - The frontend communicates with the UMC to initiate the process.
 - UMC interacts with the user's Polkadot wallet for authentication.
 - Upon successful authentication, UMC stores user-specific keys and other necessary data on-chain.
 
-**2.2 Saving Content**
+**1.2 Saving Content**
 
 - User pastes a URL on the frontend to be saved.
 - Frontend communicates with the CMC to process this request.
 - CMC fetches content linked to the URL, categorizes it, and stores the content reference (and metadata) on the Crust Network.
 - The reference (or content ID) from Crust Network is then saved on-chain within the CMC, linked to the user's ID.
 
-**2.3 Reading Content**
+**1.3 Reading Content**
 
 - User requests to read saved content via the frontend.
 - Frontend communicates with the CMC to fetch the content reference for the user.
@@ -163,14 +144,14 @@ Our smart contract architecture is built using the Ink! framework. Our goal is t
 - Any customization preferences (like font, background) are fetched from the CPC.
 - The content is then presented to the user as per their customization preferences.
 
-**2.4 Setting Customization Preferences**
+**1.4 Setting Customization Preferences**
 
 - User sets their reading preferences on the frontend.
 - These preferences are then communicated to the CPC.
 - CPC stores these preferences on-chain linked to the user's ID.
 
 
-#### 3. Contract Interactions
+#### 2. Contract Interactions
 
 **UMC**:
 
@@ -189,7 +170,7 @@ Our smart contract architecture is built using the Ink! framework. Our goal is t
 - Provides these preferences when requested.
 
 
-#### 4. Security Mechanisms
+#### 3. Security Mechanisms
 
 Given the nature of the application, certain security mechanisms are crucial:
 
@@ -214,7 +195,20 @@ By leveraging the benefits of Polkadot's interoperability and scalability, our s
 
 ## Future Plans :rocket:
 
-Post the initial launch and deployment of Dexel, we have a strategic vision to ensure its sustained growth and relevance in the decentralized web ecosystem:
+After the proof of concept, we intend to work on the second milestone.
+
+### Milestone 2: Frontend Development, Integration, and Testing
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | E2E Frontend Development | Build on POC and make a fully fledged frontend ensuring a seamless user experience, with features like content customization and management. |
+| 2. | Smart Contract Integration | Ensuring that the frontend perfectly interacts with the smart contracts, providing users with real-time feedback and updates. |
+| 3. | User Personalization Features | Development of features that allow users to adjust their reading environments, ensuring a personalized reading experience. |
+| 4. | Platform Testing | Comprehensive testing of the platform to ensure all features work as expected, and the platform is ready for launch. |
+
+
+Post the deployment of Dexel, we have a strategic vision to ensure its sustained growth and relevance in the decentralized web ecosystem:
 
 1. **Community Building**: Engage with our users through feedback sessions, ensuring the platform evolves based on their needs and preferences.
   
