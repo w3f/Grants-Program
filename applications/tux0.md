@@ -110,7 +110,7 @@ He will not be directly involved in the development of this project, but he will
 - https://github.com/muraca
 - https://github.com/Gorzorg
 
-The eventual code and documentation will be published on the Libeccio Labs GitHub organization:
+The eventual code and documentation will be published in the Libeccio Labs GitHub organization:
 - https://github.com/LibeccioLabs
 
 ### Team LinkedIn Profiles
@@ -145,8 +145,8 @@ We also started sketching out some code for a Tuxedo piece, but nothing worth me
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** on our GitHub blog that explains our research process, the results, and why we decided to proceed with a certain protocol. |
-| 1. | Benchmarking | We will develop a program that will automatically run benchmarks and export the results in a readable format, like JSON. |
-| 2. | Data Visualization | We will provide a tool to easily visualize and compare the benchmark results. |
+| 1. | Benchmarking | We will develop a Rust program that will automatically run benchmarks and export the results in a readable format, like JSON. |
+| 2. | Data Visualization | We will provide a single page webapp to easily visualize and compare the benchmark results, using [C3.js](https://c3js.org/) or a similar library. The core part of this page will be embedded in the article as well. |
 
 
 ### Milestone 2 — Development phase
@@ -161,8 +161,8 @@ We also started sketching out some code for a Tuxedo piece, but nothing worth me
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how Tux0 can be included in a Tuxedo runtime, and how to interact with it, using Tuxedo's Template Wallet. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Tux0 | We will develop a Tuxedo piece that manages a DAP token using zero knowledge proofs. |
-| 2. | Tuxedo Wallet Extension | We will extend the Tuxedo Template Wallet to support Tux0 balances and to send Tux0 transactions. |
+| 1. | Tux0 | We will develop a Tuxedo piece that manages a DAP token using zero knowledge proofs. It will be written in Rust, and it will leverage the library identified in the first milestone. |
+| 2. | Tuxedo Wallet Extension | We will extend the Tuxedo Template Wallet to support Tux0 balances and to send Tux0 transactions. This will also be written in Rust. |
 
 ## Future Plans
 
