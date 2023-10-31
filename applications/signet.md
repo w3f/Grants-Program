@@ -159,6 +159,22 @@ Authenticating a user with a Substrate key was initially developed as part of Si
 2. We will implement both text and JSON formats for the message to be signed, for both the presentation of the message client-side, and verification of the message server-side.
 3. We will implement a field for expressing time validity/expiration of the signature, as well as the corresponding server-side check.
 
+We will also create an example “boilerplate” NextJS Dapp that integrates SIWS.
+
+On the frontend: We will prepare 3 pages to demonstrate how SIWS works can protect an app’s data:
+
+- Sign in page with SIWS button to trigger sign in flow
+- Signed in page that fetches a secret message from backend
+- Unauthorized page that does not have access to get the secret message.
+
+On the backend: We expose 3 API endpoints:
+
+- /api/nonce: To generate a nonce for user to sign on the frontend
+- /api/verify: To verify that the signed message is valid and issue a JWT
+- /api/secret: A protected endpoint that returns a secret text only if the JWT is valid
+
+The demo app will be in a configuration that enables developers to easily deploy it on Vercel.
+
 We’d like to address these improvements in the course of packaging Sign in With Substrate (SIWS) as a releasable component.
 
 - **Estimated duration:** 0,5 month
@@ -178,7 +194,9 @@ We’d like to address these improvements in the course of packaging Sign in Wit
 | 3. | Feature: Expiration | We will add the ability for the front end to specify an expiration time for the signed message |
 | 4. | Feature: Message Formats | We will add the ability to create the message payload both as a human-readable string, in addition to the existing JSON format |
 | 5. | Feature: Message Verification | We will add the ability to verify the signed message payload in either string or JSON format |
-| 6. | Public Docs: Sign in with Substrate | We will create a public documentation site/landing page for Sign in with Substrate, in order to catalyze adoption by other projects, as well as eventual standardization. |
+| 6. | Example: Integrate SIWS into Signet | We will integrate the newly created SIWS package back into Signet, replacing the initial implementation from before. This will allow Signet to function as a reference implementation for SIWS, including a front-end and back-end. |
+| 7. | Example: Create example dapp for SIWS | We will create an example “boilerplate” NextJS Dapp that integrates SIWS, including a frontend with login functionality and a backend that can verify the login and return data to logged in users. |
+| 8. | Public Docs: Sign in with Substrate | We will create a public documentation site/landing page for Sign in with Substrate, in order to catalyze adoption by other projects, as well as eventual standardization. |
 
 ### Milestone 2  — Signet Staking Module Improvements re: Validator Selection & Rotation UI
 
