@@ -154,9 +154,9 @@ The below roadmap refers to an initial implementation of a purposely built proto
 | **0b.** | Documentation | We will provide the inline documentation of the code that explains how to perform the initial set-up of of MPT blockchain and our git-hub repository. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 1. | Create a native token for the MPT chain supported by a governance model. | Includes defining the different types of tokens that will be issued, their supply, and how they will be used. |
-| 2. | Token development and asset management | Balances of assets and their values to be stored, tracked and managed. |
-| 3. | Define tokenomics | Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed. |
-| 4. | MPT chain | Issuing and trading of tokens, storage and management of asset balances, and implement runtime logic to embed custom rules and procedures that mirror standard protocols for private markets. |
+| 2. | Token development and asset management. | Balances of assets and their values to be stored, tracked and managed. |
+| 3. | Define tokenomics. | Define the multiple fees to support client platforms tokenomics, and how fees are generated, used and distributed. |
+| 4. | MPT chain. | Issuing and trading of tokens, storage and management of asset balances, and implement runtime logic to embed custom rules and procedures that mirror standard protocols for private markets. |
 
 #### Possible course of action for deliverables:
 
