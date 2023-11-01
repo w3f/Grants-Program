@@ -60,7 +60,8 @@ As well, CoinFabrik has been providing Quality Assurance as a service to develop
 
 ### Team Code Repos
 
-- https://github.com/CoinFabrik 
+- https://github.com/CoinFabrik
+- https://github.com/CoinFabrik/on-ink_implementations
 - https://github.com/CoinFabrik/on-ink-integration-tests 
 - https://github.com/CoinFabrik/scout  
 - https://github.com/CoinFabrik/web3-grant 
