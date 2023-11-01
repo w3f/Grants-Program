@@ -2,7 +2,7 @@
 - **Team Name:** Mansa Capital
 - **Product Name:** Ssal
 - **Payment Address:** 15JQDAHWTbWju9RWQfP7EQvNV9skCvm5xh69Mb5J5YMxY8Hm (USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
@@ -192,9 +192,9 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 
 ## Development Roadmap :nut_and_bolt:
 ### Overview
-- **Total Estimated Duration:** 3 Months
+- **Total Estimated Duration:** 1 Months
 - **Full-Time Equivalent (FTE):** 2.5
-- **Total Costs:** 20,000 USD
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 Example — Basic Smart Contracts and UI
 
@@ -208,30 +208,13 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** in our web documentation that explains how a user can interact with our smart contracts through CLI. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article** covering everything the team has built and learned. It will act as a compilation of our learnings trying to apply our blockchain application.|
 | 1. | Smart Contracts | We will write the requisite ink! smart contracts to create, buy, and sell commodities contracts. **Storage:** The contract storage struct will contain a packed mapping of balances for users on the network and an unpacked mapping containing vecs storing each commodity contract’s data. Additionally, it will store a contract count (u64) and an account id representing an intermediary account used to lock up funds from the buyer after the finality date has passed. **Functions:** The exposed functions will include, buy, create, and finalize. Buy takes a contract index and sender. It transfers the requisite funds from the buyer (sender) to the seller specified on the contract vec in storage. Then, it writes the sender’s account id to the storage vec for the contract. Create takes in all the required commodity contract specifications and stores the data as a vec in the unpacked mapping mentioned above. Finalize can only be called by a buyer for an active contract which they have purchased. It transfers the final price of the contract from the buyer’s account to the seller’s account. In addition to these three functions, another function, lockup, will call at the beginning of each new block. It finds all contracts whose finality date corresponds with the current block and transfers the respective buyer’s funds to the intermediary account. If finalize is called after lockup was called the funds are transferred from the lockup account instead of the buyer’s.|
 | 2. | Frontend | We will deliver a simple user interface tailored for mobile devices using React Native. At this stage, it will remain disconnected from any blockchain functions. **Components:** (1) Marketplace view, where users filter through individual contracts displayed as interactable cards. It will also include a menu button which opens the togglable sidebar menu. (2) The menu contains the user’s profile button, contract creation button, and the marketplace button. (3) The purchase view pops up when a contract card is tapped. It displays all contract specifications and allows the user to purchase the given contract. (4) The profile view displays the username, email, and public key for the user along with any active contracts they have bought or sold. (5) The contract creation view opens when the contract creation button is clicked from the menu. This view contains input fields for each contract specification. When finished the user taps a button at the bottom to publish their contract.|
-
-### Milestone 2 Example — Connect Smart Contracts to Frontend & User Testing
-
-- **Estimated Duration:** 1 month
-- **FTE:**  2,5
-- **Costs:** 10,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** in our web documentation that explains how a user can interact with our smart contracts through CLI. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** covering everything the team has built and learned. It will act as a compilation of our learnings trying to apply our blockchain application.|
-| 1. | Fully Connected App | We will deliver the fully integrated app. The user interface will be connected to the blockchain backend, and the app itself will be made available to a testing group. |
-| 2. | Collect User Feedback | Compile user feedback from advisors and potential clients. Revise contracts and UI and re-deploy. The deliverable will be organized as a GitHub page where each person's relevant feedback is described along with the related amendments made to the application. Each section will describe what changes were made, how they were made, and why they are an improvement on what was previously there.   |
-| 3. | CI/CD | Setup pipeline for CI/CD in order to expedite development on field as much as possible in the next month. We will use a mixture of selenium tests with sentry to catch and handle errors as quickly they crop up. |
 
 
 ## Future Plans
 - Improve infrastructures for continuous integration and maintenance
-- Set up a reliable income streams to fund a more permanent maintenance team
 - Add a customizable AMM to make buying and selling contracts easier for clients
 - Add a governance system to resolve disputes between contract participants
 
