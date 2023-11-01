@@ -244,7 +244,7 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 
 - XD Prototype (Mobile): https://shorturl.at/eir89
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap 🛠️
 
 ### **Overview**
 
@@ -263,13 +263,13 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | The documentation will be provided to show the whole architecture of the Apron Network. |
-| 0c. | Testing Guide | The testing guide will be provided to test each component. |
-| 1. | User Interface Development | Develop the user-friendly interface for Apenotic's platform. |
-| 2. | Accessibility | Ensure accessibility for non-technical users. |
-| 3. | User Testing | Conduct user testing to refine the UI. |
-| 4. | Multichain Wallet Support | Implement a multichain wallet support feature. |
-| 5. | dApp Integration | Integrate Apenotic with select decentralized applications (dApps). |
+| 0b. | Documentation | Provide documentation, links, and snapshots from Figma showcasing the component library and design system used for Apenotic's platform development. |
+| 0c. | Testing Guide | Share links to the Figma prototype of the Apenotic platform, comprehensively covering each component for quality assurance. |
+| 1. | User Interface Development | Craft a user-friendly interface for the Apenotic platform, aligning it with the updated Figma designs which will serve as the core architecture to implement future integrations like Kilt Protocol. |
+| 2. | Dark Mode | Incorporate the option for a dark mode into the User Interface, enhancing user experience. |
+| 3. | Accessibility | Perform an accessibility audit and make necessary enhancements to ensure compliance with standards like WCAG 2.0 or 2.1. |
+| 4. | User Testing | Strategize and conduct user testing sessions involving a diverse user group to identify usability issues, gather feedback, and refine the UI. |
+| 5. | Web Presence | Design and deploy a website presence for the Apenotic platform at http://apenotic.io/, providing comprehensive team and product information with updated snapshots. |
 
 ### **Milestone 2: Integration with Kilt Protocol (Generate DID Accounts)**
 
@@ -282,12 +282,12 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | The documentation will be provided to show the whole architecture of the Apron Network. |
-| 0c. | Testing Guide | The testing guide will be provided to test each component. |
-| 1. | Kilt Protocol Integration | Integrate with Kilt Protocol to generate and manage decentralized identity (DID) accounts. |
-| 2. | DID Account Generation | Implement the functionality for users to generate DID accounts within the Apenotic platform. |
-| 3. | Documentation | Update documentation to include details on the integration with Kilt Protocol and DID account generation. |
-| 4. | Testing and Bug Fixes | Thoroughly test the integration and resolve any identified issues. |
+| 0b. | Documentation | Furnish documentation showcasing the integration of the Kilt Protocol for DID Accounts into the Apenotic platform. |
+| 0c. | Testing Guide | Provide a testing guide for validating and running a version of the Apenotic platform integrated with the Kilt Protocol. |
+| 1. | Kilt Protocol Integration | Seamlessly integrate with the Kilt Protocol to enable the generation and management of decentralized identity (DID) accounts within the Apenotic platform. |
+| 2. | DID Account Generation | Implement functionality allowing users to securely generate DID accounts directly within the Apenotic platform. |
+| 3. | Multiple Account Management | Develop features enabling users to efficiently manage multiple accounts within the Apenotic platform. |
+| 4. | Testing and Bug Fixes | Conduct rigorous testing of the integration, addressing and resolving any identified issues or bugs. |
 
 ### **Milestone 3: Integration with Kilt Protocol (Vault - Credentials)**
 
@@ -300,12 +300,11 @@ Out team has achieved remarkable strides in developing our MVP dApp, creating a 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | The documentation will be provided to show the whole architecture of the Apron Network. |
-| 0c. | Testing Guide | The testing guide will be provided to test each component. |
-| 1. | Kilt Protocol Integration (Vault - Credentials) | Continue the integration with Kilt Protocol to enable secure storage and management of credentials within the Apenotic platform. |
-| 2. | Credential Vault Implementation | Develop the credential vault functionality, allowing users to securely store and manage their credentials. |
-| 3. | Documentation | Update documentation to include details on the credential vault implementation and usage. |
-| 4. | Testing and Bug Fixes | Thoroughly test the credential vault and resolve any identified issues. |
+| 0b. | Documentation | Present documentation illustrating the implementation of the Kilt Protocol for Credentials within the Apenotic platform. |
+| 0c. | Testing Guide | Supply a testing guide for validating and running a version of the Apenotic platform integrated with the credential vault. |
+| 1. | Kilt Protocol Integration (Vault - Credentials) | Advance the integration with the Kilt Protocol to empower users with the ability to import, share, securely store, and manage their credentials within the Apenotic platform. |
+| 2. | Credential Vault Implementation | Develop the credential vault functionality, ensuring users can confidently and securely store and manage their valuable credentials. |
+| 3. | Testing and Bug Fixes | Conduct exhaustive testing of the credential vault, addressing and resolving any identified issues or bugs, ensuring a robust and secure user experience. |
 
 ## **Future Plans**
 
