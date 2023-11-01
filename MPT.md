@@ -136,7 +136,7 @@ The below roadmap refers to an initial implementation of a purposely built proto
 - d3.1: Establish the MPT chain structure.
 - d3.2: Implement asset management functionalities - creation, issuance, and transfer.
 - d3.3: Integrate transaction processing capabilities.
-- d3.4: Conduct initial testing to validate the chain's core functions
+- d3.4: Conduct initial testing to validate the chain's core functions.
 - d4.1: Decide on the initial set of trusted validators for the consensus mechanism.
 - d4.2: Integrate consensus into the MPT chain, ensuring validators can produce blocks.
 - d4.3: Implement mechanisms for validator management - addition, removal, and rotation.
