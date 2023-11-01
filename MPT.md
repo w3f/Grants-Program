@@ -162,7 +162,7 @@ The below roadmap refers to an initial implementation of a purposely built proto
 
 - d1.1: Initiate the creation of the native token.
 - d1.2: Establish parameters such as token supply, transfer fees, and minting/burning rules.
-- d1.3: Deploy a governance model using to allow stakeholders to make decisions about the token and platforms' direction.
+- d1.3: Deploy a governance model to allow stakeholders to make decisions about the token and platforms' direction.
 - d2.1: Handling multiple asset types.
 - d2.2: Set up mechanisms for asset value tracking and management.
 - d2.3: Define the protocol initial rules for asset transfers, trades, and liquidations.
