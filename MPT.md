@@ -133,7 +133,7 @@ The below roadmap refers to an initial implementation of a purposely built proto
   - `issue_tokens`: once an asset is tokenized, this extrinsic can be used to issue the corresponding RWA tokens to the asset holder.
   - `transfer_tokens`: a custom function tailored for the transfer of RWA tokens, incorporating any regulatory or compliance checks necessary for such assets.
 - d2.3: Test and validate the integrated extrinsics for seamless operations.
-- d3.1: Establish the MPT chain infrastructure.
+- d3.1: Establish the MPT chain structure.
 - d3.2: Implement asset management functionalities - creation, issuance, and transfer.
 - d3.3: Integrate transaction processing capabilities.
 - d3.4: Conduct initial testing to validate the chain's core functions
