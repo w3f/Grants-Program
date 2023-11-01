@@ -98,7 +98,7 @@ Here you can find documentation on the research and our preliminary conversation
 
 Our team is working on the creation and implementation of other finance products and mechanisms, as well as compliance aspects,  in the wider context of our infrastructure development that are to be intended outside of this grant application. We would have the equivalent of 2.5 people, cumulatively, contributing full-time to this project and the tech stack for development would be comprised of *Rust*, *WebAssembly (Wasm)*, *Substrate*, *AuroraDB*, along with AWS services such as S3, EC2, Route53, and SNS.
 
-The below roadmap refers to an initial implementation of a purposely built blockchain for alternative finance generic functions using *Substrate*.
+The below roadmap refers to an initial implementation of a purposely built protocol for alternative finance generic functions using *Substrate*.
 
 ### Overview
 
