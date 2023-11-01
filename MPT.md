@@ -40,7 +40,7 @@ Our primary objective is to design a comprehensive alternative finance protocol,
 2) Advanced token mechanics: our protocol will present an innovative and efficient token standard, designed to challenge traditional financial processes, supporting asset owners to directly tokenize their RWAs with ease, while simultaneously offering investors and managers an environment for investing and trading, leveraging alternative finance in the digital space.
 3) Asset storage and exchange: we are adding an array of functions to our infrastructure aimed at streamlining the custody and management of RWAs. Clients and finance managers can confidently store and effortlessly trade their tokenized assets, capitalizing on our clients platforms' dynamic environments and a vast set of financial instruments.
 
-The image below represents the two layers of our infrastructure and how we would be using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
+The image below represents the two layers of our infrastructure and how we started using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
 
 ![](static/img/MPTarchitecture.png)
 
