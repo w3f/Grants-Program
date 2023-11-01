@@ -24,7 +24,7 @@ However, the objective of this project is not to develop a production-ready modu
 
 ### Project Details
 
-**Research phase**
+#### Research phase
 
 The first part of the project will involve a research on zero knowledge protocols, with the objective of finding out a protocol that can potentially be used in a parachain runtime. We're particularly interested in non-interactive protocols that don't require a trusted setup, use succinct proofs, are fast to verify.  
 Some potential candidates are:
@@ -38,10 +38,53 @@ The zero knowledge protocol used in the second phase will be chosen based on thi
 - security, if the library is production-ready;
 - ease of use, for example high level languages to write circuits.
 
+Proof construction performance and proof size will be measured by running the construction function on a set of pre-generated inputs, and measuring the average time it takes to construct each proof. The prover will be tested in both native and WASM, as the wallet is currently only available as a native binary, but we think it would make sense to have a library that can be used in-browser as well.
+
+Verification performance will be measured by running the verification function on the previously generated proofs, and measuring the average time it takes to verify each proof. The verifier will need to be compiled to WASM, since it will be used in a Substrate runtime.  
+The execution times of some real-world FRAME extrinsics will be measured and included as well, as we hope to find a protocol with comparable execution times.
+
 We are aware that the results might not be as good as expected. If we fail to identify a protocol that can be used in a Substrate runtime, then we would still proceed with developing the final product, using custom host functions.  
 However, since some of these protocols are already used in other blockchains, we're confident this phase will be a success.
 
-**Development phase**
+###### Benchmarking program architecture
+
+There will be a sovereign trait to be implemented for each protocol one wants to benchmark.  
+One can also extend the trait to add more test cases to the benchmarking program.
+Something along the lines of:
+```rust
+pub type Proof = Vec<u8>;
+
+pub trait Protocol {
+    /// Build a proof for the sum of two numbers
+    fn sum_build_proof(a: i64, b: i64, sum: i64) -> Proof;
+    /// Verify a proof for the sum of two numbers
+    fn sum_verify_proof(proof: Proof) -> bool;
+
+    /// Build a proof for a Sudoku
+    fn sudoku_build_proof(sudoku: Sudoku) -> Proof;
+    /// Verify a proof for a Sudoku
+    fn sudoku_verify_proof(proof: Proof) -> bool;
+
+    // ... other tests ...
+
+    pub fn run_benchmarks() -> Vec<BenchmarkingResult> {
+        let sum_proof = Self::sum_build_proof(2, 1, 3);
+        // ... run all the benchmarks ...
+    }
+}
+```
+We will implement a `run_benchmarks` method for every type that implements the Protocol trait, and we will provide a blanket implementation of Protocol for tuple of types that implements Protocol.  
+```rust
+type Protocols = (Halo2, Plonky2, Kimchi);
+
+fn main() {
+    let benchmarking_results = Protocols.run_benchmarks();
+    // ... export the results ...
+}
+```
+With this system, integrating new protocols will be as easy as implementing the Protocol trait for them, and adding a new item to the Protocols type.
+
+#### Development phase
 
 The final product will be a Tuxedo piece, written in Rust, which can be used in any Tuxedo runtime for private token transactions. The code will be stored in a public GitHub repository, along with an example on how to use it in a Tuxedo runtime. The documentation will be generated from Rustdocs and hosted on GitHub pages.  
 We will also develop an extension for Tuxedo's wallet, to be able to retrieve the balance for a certain address, build zero knowledge proofs and send transactions.  
@@ -96,7 +139,7 @@ Matteo and Alberto were the first hires at NFT Chain, and worked there until its
 Matteo successfully graduated at the second cohort of the Polkadot Blockchain Academy in Buenos Aires, after which he started contributing to the Polkadot SDK, and lately to Tuxedo as well. At NFT Chain, he was one of the core developers for a parachain to handle custom non-fungible assets with formal constraints.    
 Alberto holds a Master's Degree in Mathematics at ETH Zurich. At NFT Chain, along his core team duties, he was responsible for prototyping a protocol that leverages zero knowledge proofs to facilitate the verification of formal constraints on-chain. 
 
-Unfortunately, all the work done at NFT Chain is private, in the hands of the company owner, and cannot be shared.  
+Unfortunately, all the work done at NFT Chain is private, and we're legally obliged to not share it.  
 However, we presented some working prototypes at Sub0 2022, and the project has been accepted as part of the Substrate Builders Program.
 
 
@@ -141,13 +184,13 @@ We also started sketching out some code for a Tuxedo piece, but nothing worth me
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can add a new testcase, run the benchmarks, and verify the results. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can add a new protocol, run the benchmarks, and verify the results. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** on our GitHub blog that explains our research process, the results, and why we decided to proceed with a certain protocol. |
-| 1. | Benchmarking | We will develop a Rust program that will automatically run benchmarks and export the results in a readable format, like JSON. |
-| 2. | Data Visualization | We will provide a single page webapp to easily visualize and compare the benchmark results, using [C3.js](https://c3js.org/) or a similar library. The core part of this page will be embedded in the article as well. |
-
+| 1. | Benchmarking program | We will develop a Rust program that will automatically run zk protocols benchmarks and export the results in a readable format, like JSON. |
+| 2. | Protocols integration | We will provide an integration of at least 3 protocols for the benchmarking program, which will be used to produce the results. We will document the reasons for the choice of these protocols rather than other potential candidates. |
+| 3. | Data Visualization tool | We will provide a single page webapp to easily visualize and compare the benchmark results, using [C3.js](https://c3js.org/) or a similar library. The core of this page will be embedded in the article as well. |
 
 ### Milestone 2 — Development phase
 
@@ -168,6 +211,8 @@ We also started sketching out some code for a Tuxedo piece, but nothing worth me
 
 We intend to continue to maintain Tux0 at least until a proper release of Tuxedo's parachain support - which might even come before the delivery of this grant.  
 We are interested in testing the zero-knowledge protocol we chose for Tux0 in a parachain environment.
+
+Bader [@CrackTheCode016](https://github.com/CrackTheCode016) suggested we could deploy a Tux0 parathread on Rococo, which would be a huge step forward for Tuxedo as well.
 
 ## Referral Program (optional) :moneybag:
 
