@@ -34,17 +34,37 @@ Considering that the entire project is built upon the ideas presented in the Agi
 
 - **Regions Dashboard** will serve as a central hub for users, allowing them to browse all of the regions they own. The regions will be presented as UI card components containing all relevant metadata and actions that users can perform on their region.
 
+<p align="center">
+    <img width="800" src="https://i.postimg.cc/bYk1D15p/Frame-11.jpg"/>
+</p>
+
 - **Partitioning UI** will offer users a convenient method for splitting their region. The UI will visually represent the region as a timeline, highlighting all potential pivotal points available for partitioning.
 
   The Partitioning UI visualizes the region as a timeline and divides it into the selected TIME UNIT. This allows the user to easily determine the pivot point.
 
+<p align="center">
+    <img width="800" src="https://i.postimg.cc/GtWMQrCt/Frame-18.jpg"/>
+</p>
+
 - **Interlacing UI** will also allow users to easily interlace the region they own. The user will have the option to specify the region core mask as a fraction.
+
+<p align="center">
+    <img width="800" src="https://i.postimg.cc/RFMx77Ty/Frame-17.jpg"/>
+</p>
 
 - **Naming Regions & Tasks**: Users will have the option to assign names to their regions and tasks, making it simple to differentiate them.
 
 - **Assignment UI** will make it straightforward for users to allocate a task to their owned regions. The UI will display a dropdown menu containing all the tasks that the user has published to the relay chain, simplifying the selection process.
 
+<p align="center">
+    <img width="800" src="https://i.postimg.cc/7ZFx2Jdr/Frame-16.jpg"/>
+</p>
+
 - **Transfer** UI will offer a straightforward modal for users to perform transfers.
+
+<p align="center">
+    <img width="800" src="https://i.postimg.cc/9058PCVM/Frame-19.jpg"/>
+</p>
 
 #### Secondary Market
 
