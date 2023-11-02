@@ -187,7 +187,7 @@ The below roadmap refers to an initial implementation of a purposely built proto
 | 0e. | Article | We will publish an article that explains how to set up a blockchain specifically developed to support the creation of digital private markets for private companies that want to represent, issue and exchange their underlying assets (e.g. SMEs shares, real estate, collectibles, etc.) |
 | 1. | Accounts management | Implement the logic for representing and updating accounts and for transferring tokens between accounts. |
 | 2. | Identity and associated asset | Design and implement a mechanism for associating *Substrate* accounts with identity and asset management capabilities and implement the logic for authorizing *Substrate* accounts to perform transactions on tokens.|
-| 3. | MPT chain | Design and implement APIs for creating, issuing, transferring, and managing assets and for viewing account balances and asset holdings. |
+| 3. | MPT chain | Design and implement APIs for tokenizing, issuing, transferring, and managing assets and for viewing account balances and asset holdings. |
 | 4. | MPT chain repository | Deliver a git-hub repository with the description of our initial implementation and its use and potential. |
 
 #### Possible course of action for deliverables:
