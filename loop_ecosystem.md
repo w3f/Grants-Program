@@ -219,14 +219,14 @@ We are in the early stages of development, focusing on designing the smart contr
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-- **Total Estimated Duration:** The development of Loop is planned over a seven-month period
+- **Total Estimated Duration:** The development of Loop is planned over a eight-month period
 - **Full-Time Equivalent (FTE):**  4 FTE
-- **Total Costs:** The estimated cost of the project is $80,000 USD, covering design and architecture, smart contract development and NFTs implementation, user and merchant interface development, cross-chain compatibility implementation, as well as testing, documentation, and deployment. The project has been broken down into five detailed milestones
+- **Total Costs:** The estimated cost of the project is $80,000, covering design and architecture, smart contract development, NFTs implementation and cashback functionalities, user and merchant interface development, cross-chain compatibility implementation, as well as testing and documentation. The project has been broken down into five detailed milestones
 
-### Milestone 1 — Smart Contract Development & NFTs Implementation
-- **Estimated Duration:** 2 month
+### Milestone 1 — Smart Contract Development, NFTs Implementation & Cashback Functionalities
+- **Estimated Duration:** 3 month
 - **FTE:**  4
-- **Costs:** 20,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification | Technologies, Languages & Frameworks | 
 | -----: | ----------- | ------------- | ------------------------------------ |
@@ -234,7 +234,7 @@ We are in the early stages of development, focusing on designing the smart contr
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Smart contracts and NFTs | Once the design and architecture have been established, the team will focus on the development of smart contracts for the loyalty reward ecosystem. This phase will involve creating smart contracts for various operations, including exchange, redemption, and transfer of loyalty points. Also, the team will implement the NFT functionality, which will enable the representation of loyalty points as unique tokens that can be easily tracked and traded across different loyalty programs. We'd like to emphasize that while fungible and non-fungible tokens are integral parts of our platform, they aren't the entirety. The uniqueness of our platform stems from the integration of these tokens into a cohesive loyalty rewards system, which is innovative and not just another run-of-the-mill token implementation.| iNK! | 
+| 1. | Smart contracts, NFTs and Cashback funtionalities | In this first milestone the team will focus on the development of smart contracts for the loyalty reward ecosystem. This phase will involve creating smart contracts for various operations, including exchange, redemption, and transfer of loyalty points. Also, the team will implement the NFT functionality, which will enable the representation of loyalty points as unique tokens that can be easily tracked and traded across different loyalty programs. Within this milestone we will also deliver the cashback internal and external functionalities. We'd like to emphasize that while fungible and non-fungible tokens are integral parts of our platform, they aren't the entirety. The uniqueness of our platform stems from the integration of these tokens into a cohesive loyalty rewards system, which is innovative and not just another run-of-the-mill token implementation.| iNK! | 
 
 ### Milestone 2 — User Interface Development with Web2 Friendly Solution
 - **Estimated Duration:** 2 month
@@ -252,7 +252,7 @@ We are in the early stages of development, focusing on designing the smart contr
 ### Milestone 3 — Merchant Interface Development
 - **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification | Technologies, Languages & Frameworks | 
 | -----: | ----------- | ------------- | ------------------------------------ |
@@ -265,7 +265,7 @@ We are in the early stages of development, focusing on designing the smart contr
 ### Milestone 4 — Cross-Chain Compatibility Implementation
 - **Estimated Duration:** 1 month
 - **FTE:**  3
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification | Technologies, Languages & Frameworks | 
 | -----: | ----------- | ------------- | ------------------------------------ |
@@ -275,7 +275,7 @@ We are in the early stages of development, focusing on designing the smart contr
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Cross-chain compatibility | In the fourth milestone, the team will work on implementing cross-chain compatibility to allow other blockchain networks to interact with the Loop platform. This is crucial for the scalability of the project, as it allows users to transact with various loyalty programs regardless of the blockchain network they belong to. The team will integrate with networks such as Ethereum, Binance Smart Chain, and other Substrate-based chains. | Python, Substrate, XCM and WebServer (Oracle) |
 
-### Milestone 5 — Testing, Documentation & Deployment
+### Milestone 5 — Testing & Documentation
 - **Estimated Duration:** 1 month
 - **FTE:**  2
 - **Costs:** 10,000 USD
@@ -287,7 +287,7 @@ We are in the early stages of development, focusing on designing the smart contr
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains what where the steps followed to develop and deploy the Loop Ecosystem. |
-| 1. | Testing, Documentation and Deployment | The final phase will involve testing all components of the system, documenting the system's design and operation, and finally deploying the system to the Polkadot/Substrate mainnet. Rigorous testing will be performed to ensure system integrity and the secure operation of smart contracts. Comprehensive user guides and API documentation will be provided for users and developers, respectively. The successful deployment of the platform will be the culmination of this eight-month development journey, marking the official launch of Loop. | Jest, Sphinx and Docker |
+| 1. | Testing and Documentation | The final phase will involve testing all components of the system, documenting the system's design and operation, making it ready for deployment to the Polkadot/Substrate mainnet. Rigorous testing will be performed to ensure system integrity and the secure operation of smart contracts. Comprehensive user guides and API documentation will be provided for users and developers, respectively. The successful deployment of the platform will be the culmination of this eight-month development journey, marking the official launch of Loop. | Jest, Sphinx and Docker |
 
 Our goal with this initial phase of Loop is to establish it as a proof of concept. We firmly believe that this approach will effectively demonstrate the utility and innovation behind Loop to our potential merchants and brands, convincing them of the transformative potential of our platform. Once this foundation is solidified, and we've garnered sufficient interest and feedback, our intent is to initiate the migration of Loop to a parachain infrastructure, enabling more advanced features, cross-chain compatibility, and enhanced scalability.
 
