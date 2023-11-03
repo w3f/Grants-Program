@@ -60,6 +60,43 @@ The DID is a identifier that enables the construction of a mathematical structur
 
 The ring is deemed finite due to its having a finite number of elements.
 
+###### **Rings DID and DHT**
+
+In the Rings Network, we base our system on the [W3C's DID proposal](https://www.w3.org/TR/did-core/), mapping arbitrary resources to DIDs. A DID can represent services, data, a certain computational process, a message in transit, and of course, the most common representation is an external elliptic curve public key.
+
+For data-type DIDs, we generate its DID through hash(data); for services-type DIDs, we generate its DID through hash(services_name); and for the elliptic curve public key-type DIDs, we generate its DID through hash(public key).
+
+In the Rings Network, a DID is defined as a 2^160 bit number (n=160), and each DID represents a point on the Rings DHT. Since these points mathematically constitute a Finite Rings, the Rings Network can use the Chord algorithm for searching and routing these DIDs.
+
+The Chord algorithm is one of the well-known implementations of a DHT algorithm, similar to others like libp2p, Polkadot, and Ethereum's KAD (Kademlia). However, unlike KAD which uses `XOR` for lookups, Chord's lookup is algebraic in nature.
+
+![img](https://github.com/RingsNetwork/asserts/blob/main/imgs/chord.png?raw=true "Chord")
+
+As shown in the diagram for a finite Ring of `n=5`, `when DID(8)` searches for `DID(54)`, it will directly approximate on the Finite Ring through the additive operator, that is the first step lookup `DID=8+2^5` near the point, obtaining `DID(42)`, then 42 searches for the closest point to `DID=42 + 2^3`, obtaining `DID(51)`, and from 51 continues to search, reaching `DID(56)`.
+
+It is apparent that the essence of Chord DHT is to conduct a binary search on a finite Ring, making full use of the algebraic properties of DID. The Rings Network takes this a step further; for example, when the Rings Network needs to mark an anonymous message sent to DID(n), it will use the method of sending to `DID(n – random(0, 1000))`. This is equivalent to sending to a masked DID address, and since 2^160 is an immensely large space, in practice, only `DID(n)` will be able to successfully receive this message, while the destination of the message is not exposed.
+
+###### **Rings Account and External ECC Account**
+
+The Rings Network supports mapping all resources to DIDs, which includes any method of authentication. This encompasses support for arbitary elliptic curve algorithms on any blockchain. This includes the well-known ECDSA-secp256k1 used by Bitcoin, EdDSA-ed25519 used by Polkadot, and the ECDSA-secp256r1 defined by the [web crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API), as well as various variants of these methods. This feature is inseparable from the Account mechanism of the Rings Network.
+
+A Rings Account is a type of DID capable of signing, encrypting, and sending/receiving messages. Its DID is the hash of the external elliptic curve public key it represents, for example, hash(ed25519-pk), hash(secp256k1-pk). When using an Account, the Rings Network will generate a temporary ECDSA-secp256k1 private key and perform a delegated signature with the external private key it represents, a mechanism similar to the session key in traditional Web2, which has an expiration and can be revoked at any time.
+
+We aim to ensure the security of external private keys in this manner and to reduce the frequency of required external private key signatures as much as possible to make the network easier to use.
+When using the Rings Network in a browser environment, delegated signing becomes even simpler. We only need the user to sign a specified string through a browser extension, such as polkadot.js, to complete the authorization to access the Rings Network.
+
+
+###### **Rings Account and ElGamal Encryption**
+
+The Rings Network supports using the Elgamal algorithm for encryption, which encrypts using the public key of the message's target and can be decrypted with the private key by the message's target. The Elgamal encryption algorithm is semi-homomorphic, and its property can be described as:
+
+```
+Decrypt(Encrypt(m1) + Encrypt(m2)) = Decrypt(Encrypt(m1+m2))
+```
+
+We can use such properties to implement very interesting functions for the Rings Network and the networks it connects to, such as encrypted sharing based on SSSS (Shamir’s Secret Sharing Scheme), and so on.
+
+
 ##### Application Layer
 
 The nucleus of Rings Network is similar to the Actor Model, and it requires that each message type possess a Handler Trait. This allows for the separation of processing system messages, network messages, internal messages, and application-layer messages.
@@ -75,6 +112,7 @@ The [Rings Document](https://rings.gitbook.io/) presents a basic manual of Rings
 The [Rings Node API Doc](https://docs.rs/rings-node/latest/rings_node/) presents APIs and details of the Rings Network implementation, which focuses on the application layer, including message handlers and customized callbacks.
 
 The [Rings Core API Doc](https://docs.rs/rings-core/latest/rings_core/) presents APIs and Details of Rings Internal implementation, which is related on Rings DHT, WebRTC Transport, Rings Swarm, and Rings Message Handler.
+
 
 
 #### Implementation & PoC
