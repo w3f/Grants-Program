@@ -189,13 +189,13 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 2.5
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 25,000 USD
 
 ### Milestone 1 — NFC Recovery
 
 - **Estimated duration:** 4 weeks
 - **FTE:** 2.5
-- **Costs:** 15,000 USD
+- **Costs:** 12,500 USD
 
 
 |  Number | Deliverable                  | Specification                                                                                                                                                                                                                |
@@ -215,7 +215,7 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 
 - **Estimated duration:** 4 weeks
 - **FTE:** 2.5
-- **Costs:** 15,000 USD
+- **Costs:** 12,500 USD
 
 
 |  Number | Deliverable                  | Specification                                                                                                                                                                                                                |
