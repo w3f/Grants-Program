@@ -19,6 +19,7 @@ Please provide the following:
 - Rings Network is designed for heterogeneous cross-chains and supports arbitrary signature algorithms as sign-in methods, such as secp256k1, secp256r1, ed25519, etc. It also makes cross-chain instant messaging super easy, whether it's from a Substrate-based chain to an Ethereum-based chain or from one Substrate-based chain to another.
 - I believe that web3 aims to create a truly decentralized web. However, at present, all implementations are centralized, requiring front-end development and centralized oracle servers. This issue is related to the "waste of internet," which stems from the centralized DNS-IP protocol. Therefore, I have decided to create a new type of network that does not rely on centralized DNS and IP systems. All nodes, services, and data will be based on a distributed DHT, and all nodes can run inside web browsers.
 
+
 ### Project Details
 
 #### Architecture & Tech Stack
@@ -227,7 +228,7 @@ The [DRank Paper](https://raw.githubusercontent.com/RingsNetwork/whitepaper/mast
 | 0e. | Article | We will publish an **article**/workshop that explains The status of rings development, and what was done/achieved as part of the grant.  |
 | 1. | Web extension | We will create a web extension with a user-friendly user interface, visualized status, and aim to publish it on the Chrome Web Store.) |
 | 2. | Rings CLI | Continuously improve the availability and user-friendliness of nodes, including providing better TCPProxy tools, dweb tools.|
-| 3. | Substrate integration | Substrate integration means that we will support users to sign in using any Substrate-based blockchain and allow them to communicate with other public blockchains.|
+| 3. | Substrate integration | Substrate integration means that we will support users to sign in using any Substrate-based blockchain and allow them to communicate with users signing in with different signature methods (like ECDSA-secp256k1, or WebCrypto).|
 
 
 
