@@ -130,40 +130,61 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Full-Time Equivalent (FTE):**  4 Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** 100,000 Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 - Push for Mainnet
 
 - **Estimated duration:** 3
 - **FTE:**  4
 - **Costs:** 30,000
 
-Push for mainnet launch, already on testnet, developing a wasm smart contract for polkadot. Push for filing of money transmitter license.
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| **0a.** |  Unlicense |
+| **0b.** | Documentation | All our of documentation is currently at https://kaladin.gitbook.io/api-docs/quick-start as well as 
+| **0c.** | Testing and Testing Guide | Our test are within our private library for our backend servers but the website is up and running on swap.kaladin.com and kaladin.com incase you would like to try and test it out
+| **0d.** | Docker | No Docker file
+| 1. | We are currently aiming to push for a main net launch.
+| 2. | We are currently developing a wasm smart contract for polkadot.
+| 3. | We will push to file for a money transmitter license starting in Arkansas.
+| 6. | Smart contracts: Our smartcontracts are here https://github.com/Kaladinn/stormLibrary and we are aiming to run security audits for our smart contracts
 
+Push for mainnet launch, already on testnet, developing a wasm smart contract for polkadot. Push for filing of money transmitter license.
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Additional features and Push for licensing
 
 - **Estimated Duration:** 3
 - **FTE:**  4
 - **Costs:** 40000
 
-Finish up algorand and start development test wasm chains. Start deployment to watch tower, add more order types, work on advanced trading UI.
+| **0a.** |  Unlicense |
+| **0b.** | Documentation | All our of documentation is currently at https://kaladin.gitbook.io/api-docs/quick-start as well as 
+| **0c.** | Testing and Testing Guide | Our test are within our private library for our backend servers but the website is up and running on swap.kaladin.com and kaladin.com incase you would like to try and test it out
+| **0d.** | Docker | No Docker file
+| 0e. | Article | We will publish an **article**/workshop that explains Kaladin.
+| 1. | We want to create an advanced trading platform once we make sure main net is completely stable.
+| 2. | Finish up on polkadot and attempt to put on other chains. 
+| 3. | We will push to file for a money transmitter license for other states.
+| 6. | Smart contracts: Our smartcontracts are here https://github.com/Kaladinn/stormLibrary and we are aiming to run security audits for our smart contracts
 
+Finish up polkadot and start development test wasm chains. Start deployment to watch tower, add more order types, work on advanced trading UI.
 
+### Milestone 2 — Trading Platform + mainnet swap launch
+
+- **Estimated Duration:** 3-6
+- **FTE:**  4
+- **Costs:** 40000
+
+| **0a.** |  Unlicense |
+| **0b.** | Documentation | All our of documentation is currently at https://kaladin.gitbook.io/api-docs/quick-start as well as 
+| **0c.** | Testing and Testing Guide | Our test are within our private library for our backend servers but the website is up and running on swap.kaladin.com and kaladin.com incase you would like to try and test it out
+| **0d.** | Docker | No Docker file
+| 0e. | Article | We will publish an **article**/workshop that explains Kaladin.
+| 1. | Finish up other small features such as LP trades.
+| 2. | Launch Trading platform
+| 3. | Have money transmitter license for most if not all states.
+| 6. | Smart contracts: Our smartcontracts are here https://github.com/Kaladinn/stormLibrary and hope the entire yearly audit will be good.
 
 
 ## Future Plans
@@ -172,6 +193,8 @@ Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
+
+We intend to push for a money transmitter license in all states and would hope to be able to run internationally and be self sufficient. We aim to push for large adoption by exchanges and banks as well as users as we believe that this will create a safer future for crypto.
 
 ## Referral Program (optional) :moneybag:
 
