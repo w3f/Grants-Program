@@ -1,6 +1,10 @@
 # Socks5 proxy support for JsonRpsee 
 
-* **Status:** Open 
+:::caution
+This Request for Proposals is currently considered **under development**, meaning one or more grants have been signed to address the topic. We might be interested in additional implementations, but it’s better to double check this with the grants team.
+:::
+
+* **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/jsonrpsee-proxy-support.md) 
 * **Proposer:** flipchan   
 
 ## Project Description :page_facing_up: 
