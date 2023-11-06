@@ -69,8 +69,8 @@ Orosign project utilize cryptographic primitives and Multiparty Computation (MPC
 
 ### Legal Structure
 
-- **Registered Address:** OROCHI NETWORK PTE. LTD,68 CIRCULAR ROAD , #02-01 , SINGAPORE (049422)
-- **Registered Legal Entity:** OROCHI NETWORK PTE. LTD,68 CIRCULAR ROAD , #02-01 , SINGAPORE (049422)
+- **Registered Address:** Orochi Network LLC, Suite 305, Griffith Corporate Centre, Beachmont, Kingstown, Saint Vincent and the Grenadines (Postal code: VC0284)
+- **Registered Legal Entity:** Orochi Network LLC (ID: 1416 LLC 2021)
 
 ### Team's experience
 
