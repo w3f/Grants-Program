@@ -1,176 +1,219 @@
-# Name of your Project
+# Nighthawk anti-phishing browser extension
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
+- **Team Name:**  Phishfort
 
-- **Team Name:** Legal name of your team (e.g. JsonCorp)
-- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the Polkadot (for USDC & USDT) or Bitcoin payment address. Please also specify the currency. (e.g. 0x8920... (USDC))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **Payment Address:** 0x714a5b8Cd830B8a6FBf320d5678B30EF8C0fF365 (USDC)
 
-> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
+Phishing is the biggest security challenge that end users face in crypto, period. We are in desperate need for *crypto centric* solutions to our security issues in the space and phishing is no different. From fake Vitalik giveaways on Twitter to phishing streams from the EF on youtube to good old fashioned phishing emails, we have a challenge on our hands when it comes to keeping our users safe. Users need to know:
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+1. That when they interact with websites, social media accounts, social media posts, that they are in fact interacting with the person(s) they think they are (authenticity).
+
+2. That as far as is possible, they are not interacting with malicious content online.
+
+NightHawk addresses both of these problems using a clean UI and UX for the end user.
+
+Phishing is far more than just a security threat to the ecosystem. It's regularly cited by both newcomers and experienced users as one of their biggest fears and hurdles to adoption in the space. Phishing is *a hurdle to adoption*. We put forward this project as a positive step towards keeping users safe online in our industry.
+
+  
 
 ### Overview
 
-Please provide the following:
+  
+Nighthawk is a free anti-phishing browser extension offering safe browsing in the web3 field. 
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+The plugin is 100% open source, privacy focused and does nothing to store users browsing history or anything else privacy compromising on our servers. It is almost completely serverless with all activity happening in the browser for the user.
+
+It's widely known that the crypto space, including the Polkadot community, is consistently under the threat of scams. While quantifying the exact losses is challenging, phishing attacks have resulted in the loss of hundreds of millions of dollars across the crypto ecosystem. PhishFort is embarking on a significant initiative by creating a consumer-oriented, community-driven, free, and efficient solution to combat this problem. While our primary business involves providing B2B services to various industry communities, this project is our way of giving back to the entire crypto industry without commercial interests.
+
+Our motivation to undertake this endeavor stems from our deep understanding of the crypto landscape and the severe damage inflicted by phishing attacks in a matter of minutes. What has been missing in this fight against phishing is a swift response mechanism driven by the community. Although we take pride in promptly removing malicious content from the internet, we recognize the need to offer real-time protection to end users if we are to collectively address this problem. Nighthawk has been designed to serve this exact purpose.
+
+For too long, end users have been easy prey for scammers, but we aim to change this dynamic. By allowing users to report scams and disseminate these reports to the entire userbase for near real-time protection, we aspire to transform potential victims into proactive responders.
+
 - An indication of why your team is interested in creating this project.
+
+  
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+  The MVP of the project has been successfully deployed to the Chrome Store and Add-ons Store, available here: 
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+https://chrome.google.com/webstore/detail/nighthawk-by-phishfort/bdiohckpogchppdldbckcdjlklanhkfc
 
+https://addons.mozilla.org/en-US/firefox/addon/nighthawk_plugin/
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+Project architecture is available here: https://lucid.app/lucidchart/5bd2f714-60b0-4737-9350-aae8c7fdc754/edit?viewport_loc=-1255%2C-90%2C5345%2C3933%2C0_0&invitationId=inv_6045a213-7e87-4273-9a79-0e31d4bf19df
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+The stack is mostly TypeScript based, with React for most front end components and GCP cloud provider to facilitate the sharing of threat intel with the extension.
+
+As a next step, we aspire to integrate auto-classification and rule-generation engine into the plugin.
+
+Here are three steps to this:
+
+1. Heuristic engine development
+2. Rule generation engine implementation
+3. Auto-classification engine implementation
+
+This technology will be operating locally without sending any browsing data to us.
+
+The general overview is available here: https://docs.google.com/presentation/d/1wRe9HADBgxuqN5fjf98OYCxV-7XVe4cVmglCFUSQ_78/edit?usp=sharing
+  
+
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+  We want Nighthawk to be an absolute no-brainer for every single crypto user in the world. None is immune to the damage that phishing causes, from seasoned crypto veterans to newcomers who are still learning the ropes. We believe that the polkadot community as a whole will be a fantastic fit with high engagement levels, vulnerable users and a desire from the community leaders within the ecosystem to combat this problem.
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+There are some current answers to this problem on the market, most notably EAL by the crime fighting superstar Harry Denley. While we not only endorse but financially contribute to communtiy initiatives that combat phishing in the industry, PhishFort has become one of if not the major anti-phisihng provider in the space. This means that the all important _backend_ infratstructe - a constantly updated feed of newly discovered attacks, a team of trained and professional anti-phishing anaylsts, and experience being in the trenches daily fighting this problem as a company are needed to bolster a community facing solution to this problem.
+
+There are some other commercial solutions to this problem which both charge money, and are structured in such a way as to compromise the fundamental privacy of a users browsing experience. We personally have a strong aversion to compromises on user privacy and although we understand the need to charge for such a plugin, prefer answers to this problem that are transparent and accessible to anyone, anywhere in the world irrespective of their ability to afford such a solution.
+
+  
 
 ## Team :busts_in_silhouette:
 
+  
+
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Team Lead: Valentyn
+-  23  team  members  at  PhishFort  all  of  whom  will  contribute to this in various ways, from engineering to analysis of reports, to the design of the  project.
+- One additional engineer to be hired pending funds.
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Valentyn Markushev
+
+- **Contact Email:** Valentyn.markushev ( at ) phishfort.com
+
+- **Website:** https://nighthawk.phishfort.com/
+  https://www.phishfort.com/
+
+  
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
+  
+
+- **Registered Address:** 160  Robinson  Road, #14-04 Singapore  Business Federation Centre, Singapore
+
 - **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+
+  
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
+  PhishFort is an anti-phishing security team dedicated to fighting phishing in the crypto world. We've been working in the space for 4 years now, building quietly and helping some of the biggest web3 and crypto companies in the world execute an anti-phishing strategy with us. We detect and shut down scams in the space and we're proud of the work we've done and continue to do to date. EF will know many of our partners (wallets, DEXs, dApps etc) who we work with in the space to keep safer.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+The above is shared to say that above all else, we as a team do nothing but fight phishing in the crypto space, 24/7.
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+Public repo of the project:
+https://github.com/phishfort/nighthawk-extension
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
-
+https://github.com/phishfort
+Most of our codebase is backend and closed source, so we don't have much to publicly point to unfortunately. However, where we have open sourced data, including some of our threat intelligence you can find it on the link above.
+  
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+  
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+Currently, we are working on some minor UI/UX changes based on the given feedback, mostly frontend.
+
+There is currently no development taking place on the rule generation initiative that we can share.
+
+
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+  
 
-### Milestone 1 Example — Basic functionality
+- **Total Estimated Duration:** 9 month
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Full-Time Equivalent (FTE):** 5
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+- **Total Costs:** $30,000
+  
+
+### Milestone 1 — Heuristic engine
+
+  
+
+- **Estimated duration:** 4 month
+
+- **FTE:** 6
+
+- **Costs:** 12,000 USD
+
 
 | Number | Deliverable | Specification |
+
 | -----: | ----------- | ------------- |
+
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
 
+| 1. | Talent acquisition | Bringing  on the right  people that we need on the team to  compliment the resources  that  we have already in the team |
 
-### Milestone 2 Example — Additional features
+| 2. | Research | Conduct a final research on set of rules to start off with |
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
+| 3. | Write rules | Create a set of rules for the first heuristic engine |
+
+| 4. | False positive avoidance  | Test all the possible scenarios to avoid any false-positives |
+
+### Milestone 2  — Rule generation
+  
+
+- **Estimated Duration:** 3 month
+
+- **FTE:** 5
+
+- **Costs:** 10,000 USD
+
+  
+| 1. | Rule engine | Advance rule engine with user submitting rules  |
+
+| 2. | False positive check | False positive auto check for community rules |
+
+| 3. | UI for notifications| Create a set of notifications for users that submitted rules |
+
+### Milestone 3  — Auto-classification
+
+- **Estimated Duration:** 2 month
+
+- **FTE:** 5
+
 - **Costs:** 8,000 USD
+  
+| 1. | LLM  | Implement LLM based rule generation to achieve auto-classification |
 
-...
+| 2. | Final false positive check | Conduct testing of the LLM engine |
 
+| 3. | Public announcement | Make a public announcement through our social media |
+
+  
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
-
-## Referral Program (optional) :moneybag:
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+  
+We are a team of security professionals who will battle phishing to make web3 space as secure as possible for everyone. We believe that auto-classification would bring anti-phishing protection to a new level. In addition, crypto communities is a crucial part of our venture, thus we want to foster a strong sense of collaboration, transparency, and innovation within these communities to drive the success of our project and contribute to the broader growth of the cryptocurrency ecosystem.  .
+  
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+- Previous grants you may have applied for - last year we acquired a grant from Coinbase to build the MVP. Unfortunately, their grant program is closed this year. Thus, we are actively seeking fresh prospects to enhance Nighthawk further.
