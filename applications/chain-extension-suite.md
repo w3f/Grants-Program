@@ -2,7 +2,7 @@
 
 - **Team Name:** Deep Ink Ventures GmbH
 - **Payment Address:** Ethereum Mainnet, 0x918a4363C35156c8F85F86795a79189e5A1ef557, USDC
-- **Level:** 3
+- **Level:** 2
 
 ## Overview
 
@@ -10,10 +10,10 @@ Through our work with `pallet_hookpoints`, we've gathered substantial insights i
 
 To address these challenges, we are developing a CLI (Command-Line Interface) tool designed to allow per-pallet configuration of chain extensions. This tool will automate the generation of both the Substrate-side chain extension and the corresponding `ink!`-side implementation. This initiative will not only simplify the process of implementing chain extensions but also contribute to a more standardized and developer-friendly environment within the Substrate ecosystem.
 
-In addition, we propose introducing ready-to-ship chain extensions for selected FRAME pallets, adhering to standards like `PSP-22` for `pallet_assets` and `PSP-34` for `pallet_nft` in `ink!`. This approach aims to reduce boilerplate code and promote standardization.
+In addition, we propose introducing ready-to-ship chain extensions for selected FRAME pallets, adhering to standards like `PSP-22` for `pallet_assets` in `ink!`. This approach aims to reduce boilerplate code and promote standardization.
 
 <p align="center">
-  <img src="https://github.com/deep-ink-ventures/Grants-Program/assets/120174523/0f2a0ffd-0a8b-4096-91ac-79ca8cfd61a2">
+  <img src="https://github.com/deep-ink-ventures/Grants-Program/assets/120174523/3e94a4f1-4cfa-4c2f-a399-8d3254c68d5b">
   <i>Overview of the components involved in this grant</i>
 </p>
 
@@ -116,6 +116,63 @@ impl PSP22 for AssetContract {
 
 The elaborated flow aims to provide a glimpse into the comprehensive code structure generated through the CLI Extension tool. This automated setup significantly simplifies the interaction between the Substrate runtime and ink! contract environments. By referring to the demonstrated approach in the [Genesis DAO Chain Link extension](https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/chain-extensions/pallet-dao-assets/src/lib.rs), one can further grasp the level of automation and streamlined code management that we aim to achieve with this tool.
 
+## Ecosystem Fit
+
+ink! has been carving out its space within the blockchain community as an adept smart contracting language. Its ease of use, coupled with the familiar Rust domain-specific language (DSL), makes it a favorable choice for developers venturing into the Substrate-based blockchain development.
+
+However, despite its growing popularity, developers often find themselves entangled in the intricacies of low-level communication when integrating ink! into their runtimes. This level of complexity could potentially deter or slow down developers, especially those new to the Substrate ecosystem. The lack of higher-level abstractions and streamlined tooling often necessitates a deeper dive into the underlying communication protocols between the runtime and smart contracts, which could be quite daunting.
+
+Addressing this gap, the Chain Extension Suite, in harmony with the [Hookpoints Suite](https://github.com/deep-ink-ventures/pallet_hookpoints), is envisioned to significantly ease the developer's journey. By abstracting away the low-level communication and boilerplate code, these suites allow developers to focus more on the business logic and less on the underlying plumbing. The auto-generating CLI tool within the Chain Extension Suite is particularly aimed at simplifying the process of exposing runtime methods to smart contracts, thereby accelerating the development process. Together, these suites aim to foster a more developer-friendly ecosystem, enabling developers to kickstart their projects swiftly, and contribute to the flourishing Substrate ecosystem with lesser hurdles.
+
+
+## Team
+
+### Contact
+
+- **Contact Name:** Jakob Drzazga
+- **Contact Email:** 	admin@deep-ink.ventures
+
+### Legal Structure
+
+Registered Address: Solmsstraße 11 10961 Berlin - Kreuzberg
+Registered Legal Entity: Deep Ink Ventures GmbH
+
+
+- Deep Ink Ventures GmbH, registered with the commercial register at the local court of Berlin, HRB 247342
+
+
+## Development Roadmap
+
+### Overview
+
+- **Total Estimated Duration:** 2-3 month
+- **Full-Time Equivalent (FTE):**  2 FTE
+- **Total Costs:** $ 30,000
+
+
+## Development Status :open_book:
+
+### Milestone 1
+
+- **Estimated Duration:** 2 month
+- **FTE:** 3
+- **Costs:** $30,000
+
+
+| Number | Deliverable          | Specification |
+| ------ | -------------------- | ------------- |
+| **0a.**| License              | Apache 2.0    |
+| **0b.**| Documentation        | Comprehensive documentation covering the CLI Extension tool, its features, and how to use it for generating chain extensions. |
+| **0c.**| Testing Guide        | A detailed guide on how to run the test suites for the CLI Extension tool and a demonstration of the testing coverage. |
+| **1.** | CLI Extension Tool - Part 1: Setup   | Establishing the CLI tool to inspect the Substrate runtime and enable code generation capabilities. |
+| **2.** | CLI Extension Tool - Part 2: Substrate-side Chain Extensions Generation | Auto-generation of the Substrate-side chain extension code based on the inspected runtime methods. |
+| **3.** | CLI Extension Tool - Part 3: ink!-side Chain Extension Traits Generation | Auto-generation of ink!-side chain extension traits to facilitate communication with the generated Substrate-side chain extensions. |
+| **4.** | CLI Extension Tool - Part 4: Reference Smart Contract Generation | Generation of a reference smart contract in ink! that interacts with the generated chain extension traits and Substrate-side chain extensions. |
+| **5.** | Medium Article | A Medium article detailing and announcing the CLI Extension tool, explaining how it simplifies the generation of chain extensions and enhances the developer experience within the Substrate ecosystem. |
+
+## Future Outlook
+If this grant is successfully implemented and received well by the community, we plan to add the following features:
+
 ### `pallet_assets_extensions` and `pallet_nft_extensions`
 
 The Substrate framework's FRAME provides `pallet_assets` for fungible tokens and `pallet_nft` for non-fungible tokens (NFTs), aligning with the prevalent token standards in the blockchain domain. On the smart contract side, ink! adheres to PSP-22 for fungible tokens and PSP-34 for NFTs.
@@ -167,74 +224,4 @@ The forthcoming release of ink! v5 is anticipated to bring about enhanced featur
 
 Additionally, this grant encompasses the upgrade of `pallet_hookpoints` to be compatible with ink! v5. This proactive upgrade signifies a commitment to keeping the toolset current and aligned with the latest advancements in the ink! ecosystem.
 
-## Ecosystem Fit
-
-ink! has been carving out its space within the blockchain community as an adept smart contracting language. Its ease of use, coupled with the familiar Rust domain-specific language (DSL), makes it a favorable choice for developers venturing into the Substrate-based blockchain development.
-
-However, despite its growing popularity, developers often find themselves entangled in the intricacies of low-level communication when integrating ink! into their runtimes. This level of complexity could potentially deter or slow down developers, especially those new to the Substrate ecosystem. The lack of higher-level abstractions and streamlined tooling often necessitates a deeper dive into the underlying communication protocols between the runtime and smart contracts, which could be quite daunting.
-
-Addressing this gap, the Chain Extension Suite, in harmony with the [Hookpoints Suite](https://github.com/deep-ink-ventures/pallet_hookpoints), is envisioned to significantly ease the developer's journey. By abstracting away the low-level communication and boilerplate code, these suites allow developers to focus more on the business logic and less on the underlying plumbing. The auto-generating CLI tool within the Chain Extension Suite is particularly aimed at simplifying the process of exposing runtime methods to smart contracts, thereby accelerating the development process. Together, these suites aim to foster a more developer-friendly ecosystem, enabling developers to kickstart their projects swiftly, and contribute to the flourishing Substrate ecosystem with lesser hurdles.
-
-
-## Team
-
-### Contact
-
-- **Contact Name:** Jakob Drzazga
-- **Contact Email:** 	admin@deep-ink.ventures
-
-### Legal Structure
-
-Registered Address: Solmsstraße 11 10961 Berlin - Kreuzberg
-Registered Legal Entity: Deep Ink Ventures GmbH
-
-
-- Deep Ink Ventures GmbH, registered with the commercial register at the local court of Berlin, HRB 247342
-
-
-## Development Roadmap
-
-### Overview
-
-- **Total Estimated Duration:** 5-6 month
-- **Full-Time Equivalent (FTE):**  3 FTE
-- **Total Costs:** $ 100,000
-
-
-## Development Status :open_book:
-
-### Milestone 1
-
-- **Estimated Duration:** 2 month
-- **FTE:** 3
-- **Costs:** $35,000
-
-| Number | Deliverable          | Specification |
-| ------ | -------------------- | ------------- |
-| **0a.**| License              | Apache 2.0    |
-| **0b.**| Documentation        | Comprehensive documentation for each pallet extension and the upgrade, including tutorials and guides on how to integrate and utilize the extensions. |
-| **0c.**| Testing Guide        | A detailed guide on how to run the test suites for each extension and the upgraded pallet_hookpoints, along with a demonstration of the testing coverage. |
-| **1.** | `pallet_nft_extensions` | Development and implementation of the `pallet_nft_extensions`, providing chain extension functionality for `pallet_nft` in both ink! and EVM ecosystems. |
-| **2.** | `pallet_assets_extension` | Development and implementation of the `pallet_assets_extension`, providing chain extension functionality for `pallet_assets` in both ink! and EVM ecosystems. |
-| **3.** | `pallet_hookpoints` v5 extension | Upgrading `pallet_hookpoints` to be compatible with ink! v5, ensuring its functionality aligns with the latest advancements in ink!. |
-| **4.** | Medium Article | A Medium article detailing and announcing the new pallet extensions and the upgrade of `pallet_hookpoints` to ink! v5. |
-
----
-
-### Milestone 2
-
-- **Estimated Duration:** 3-4 month
-- **FTE:**  3
-- **Costs:** $65,000
-
-| Number | Deliverable          | Specification |
-| ------ | -------------------- | ------------- |
-| **0a.**| License              | Apache 2.0    |
-| **0b.**| Documentation        | Comprehensive documentation covering the CLI Extension tool, its features, and how to use it for generating chain extensions. |
-| **0c.**| Testing Guide        | A detailed guide on how to run the test suites for the CLI Extension tool and a demonstration of the testing coverage. |
-| **1.** | CLI Extension Tool - Part 1: Setup   | Establishing the CLI tool to inspect the Substrate runtime and enable code generation capabilities. |
-| **2.** | CLI Extension Tool - Part 2: Substrate-side Chain Extensions Generation | Auto-generation of the Substrate-side chain extension code based on the inspected runtime methods. |
-| **3.** | CLI Extension Tool - Part 3: ink!-side Chain Extension Traits Generation | Auto-generation of ink!-side chain extension traits to facilitate communication with the generated Substrate-side chain extensions. |
-| **4.** | CLI Extension Tool - Part 4: Reference Smart Contract Generation | Generation of a reference smart contract in ink! that interacts with the generated chain extension traits and Substrate-side chain extensions. |
-| **5.** | Medium Article | A Medium article detailing and announcing the CLI Extension tool, explaining how it simplifies the generation of chain extensions and enhances the developer experience within the Substrate ecosystem. |
 
