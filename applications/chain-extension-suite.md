@@ -154,8 +154,8 @@ Registered Legal Entity: Deep Ink Ventures GmbH
 
 ### Milestone 1
 
-- **Estimated Duration:** 2 month
-- **FTE:** 3
+- **Estimated Duration:** 3 month
+- **FTE:** 2
 - **Costs:** $30,000
 
 
