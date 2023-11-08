@@ -89,7 +89,7 @@ This bit-based valuation means that the total value of the Coretime owned by the
 3.  The user pays the price, the seller receives the paid amount, and the buyer receives the region.
 
 If a user doesn't want to buy the entire region but only a part of it, the buyer will need to specify which parts of the region they want and provide the steps to create a region with the properties they desire. This way, the user pays only for the portion of the region they wish to acquire.
-We refer to this feature as **Region Derivation**. It will give buyers more options when purchasing Coretime, making it easier to meet their specific needs.
+We refer to this feature as **Region Derivation**. It will give buyers more options when purchasing Coretime, making it easier to meet their specific needs. This feature is not implemented as part of this milestone, but is part of our future plans.
 
 **Defining the price of Coretime**
 
@@ -108,56 +108,6 @@ This approach allows us to easily calculate the price of the region the buyer in
 
 **Formula to calculate the price when interlacing:**
 `price = bit_price * active_bits`
-
-**Region Derivation**
-As demonstrated in the previous example, buyers have the option to acquire only a portion of a region, which is achieved by the buyer submitting a set of instructions to generate the desired region. A high-level description of how this will work: 
-
-1. User will transfer a deposit that is equal to `region_price + bit_price * DERIVATION_DURATION_LIMIT`.
-2. The contract will transfer the entire region to the user and will write a record in the 'pending_derivations' mapping.
-3. The region will be transferred to the Coretime parachain, and the instructions will be executed on the region.
-4. The newly created regions will be transferred back to the contracts chain.
-5. The regions that the user doesn't need will be returned to the market, and the user will receive a partial refund of their deposit. The rest of the deposit goes to the seller
-6. The regions received by the market are relisted for sale under the original seller.
-
-In the event that the buyer doesn't return the regions before `DERIVATION_DURATION_LIMIT` elapses, the seller is entitled to claim the entire deposit.
-
-```rust
-/// The duration limit of a derivation.
-///
-/// The buyer will only receive a refund when returning the expected regions before the 
-/// derivation duration limit is reached.
-//
-// NOTE: The value of the duration limit will be adjusted.
-const DERIVATION_DURATION_LIMIT: BlockNumber = 15;
-
-struct RegionInfo {
-    core_index: u16,
-    begin: Timeslice,
-    end: Timeslice,
-    mask: CoreMask,
-    bit_price: Balance,
-}
-
-struct DerivationInfo {
-    /// All the regions that are expected to be returned from the buyer for a refund.
-    expected_regions: Vec<RegionInfo>,
-    /// The amount of refund the buyer can receive.
-    refund: Balance,
-    /// The block number when the buyer purchased the region for derivation.
-    derivation_timestamp: BlockNumber,
-}
-
-#[ink(storage)]
-struct CoretimeMarket {
-	/* ... */
-	/// The `AccountId` represents the buyer.
-	pending_derivations: Mapping<AccountId, DerivationInfo>
-}
-```
-
-However, manually specifying these instructions can be a challenging task for users.
-
-The approach we aim to adopt here is to enable users to describe the desired characteristics of the region they require. Using all the provided input, the frontend will determine whether the specified region can be generated from any of the regions listed on the market. If a match is found, the user will be presented with a price for their region. Future iterations of this feature may include Natural Language Processing (NLP) to describe the region's characteristics.
 
 **Market Architecture**
 
@@ -238,13 +188,13 @@ Github profiles of team mebers:
 
 - **Total Estimated Duration:** 4 months
 - **FTE:** 2
-- **Total Costs:** 47,000 USD
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 - Coretime UI & xcRegions
 
 - **Estimated duration:** 1 month
 - **FTE:** 2
-- **Costs:** 13,000 USD
+- **Costs:** 12,000 USD
 
 |  Number | Deliverable                     | Specification                                                                                                                                                                                                                                                                              |
 | ------: | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -263,7 +213,7 @@ Github profiles of team mebers:
 
 - **Estimated duration:** 1.5 month
 - **FTE:** 2
-- **Costs:** 19,000 USD
+- **Costs:** 18,000 USD
 
 |  Number | Deliverable                    | Specification                                                                                                                                                                                                                                                                 |
 | ------: | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -273,32 +223,19 @@ Github profiles of team mebers:
 | **0d.** | Docker                         | We will provide Dockerfiles for the ink! smart contracts that will set up the environment and execute the contract tests. Additionally, we will offer a Dockerfile that will configure and run the RegionX UI.                                                                 |
 |     0e. | Article                        | We will compose a Medium article to offer a high-level explanation of the project's architecture. Within this article, we will clarify the significance of cross-chain region transfers and their crucial role in the Coretime market.                                                                                                                                                                                                                                                              |
 |      1. | Cross-chain Transfer UI        | We will create the UI for transferring the region NFTs from the Coretime parachain to the contracts parachain and vice versa.                                                                                                                                                 |
-|      2. | Coretime Market Dashboard UI        | In this milestone, we will also develop the Coretime Market dashboard UI. This section will be similar to the 'My Regions' dashboard, with the difference that it will display all the valid regions from the market instead of the regions owned by the user. Additionally, it will provide users with relevant information such as the cost of each region. |
+|      2. | Coretime Market Dashboard UI        | In this milestone, we will also develop the Coretime Market dashboard UI. This section will be similar to the 'My Regions' dashboard, with the difference that it will display all the valid regions from the market instead of the regions owned by the user. Additionally, it will provide users with relevant information such as the cost of each region. The UI will also provide the option to buy or sell a region on the market. |
 |      3. | Coretime Market contract   | We will develop the Coretime market as an ink! smart contract, as described above in the _Secondary Market_ section. This contract will use the xcRegions contract developed in the previous milestone. It will introduce listing functionality, enabling sellers to set the price for their regions. The contract will implement a bit-level pricing model, which will gradually reduce the cost of regions over time as the region remains unused. When a buyer acquires a listed region, they will only be charged for the Coretime they are going to receive thanks to the dynamic pricing model. |
 |      4. | Coretime Market developer documentation         | We will create documentation to explain how to easily integrate the market contract developed in this milestone. Our goal is to enable many teams in the future to integrate the contracts that are developed as part of this proposal. |
-
-### Milestone 3 - Coretime Market UI & Region derivation
-
-- **Estimated duration:** 1.5 months
-- **FTE:** 2
-- **Costs:** 15,000 USD
-
-|  Number | Deliverable                | Specification                                                                                                                                                                                                                                                           |
-| ------: | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                    | GPLv3                                                                                                                                                                                                                                                                |
-| **0b.** | Documentation              | The ink! smart contracts will be well-written and documented. We will also create documentation that thoroughly explains all aspects of the UI. Our goal is to design the UI to be as intuitive as possible, so users require minimal familiarization with the project. |
-| **0c.** | Testing and Testing Guide  | The ink! smart contracts will undergo thorough testing, including ink! integration and end-to-end tests, to ensure maximum correctness. All UI interactions will undergo comprehensive testing to guarantee a seamless experience for users when using the RegionX UI.   |
-| **0d.** | Docker                     | We will provide Dockerfiles for the ink! smart contracts that will set up the environment and execute the contract tests. Additionally, we will offer a Dockerfile that will configure and run the RegionX UI.                                                           |
-|     0e. | Article                    | We will write a Medium article that elaborates on the significance of a secondary Coretime market and the substantial benefits it offers. The article will delve into our dynamic pricing model, ensuring users have a clear understanding that unused Coretime essentially goes to waste. Additionally, we will provide a brief overview of how the region derivation feature functions.                                                                                                                                                                                                                                                                   |
-|      1. | Region derivation        | We will implement region derivation as described in the project details section. This feature will be used by the Coretime market to enable users to buy only a chunk of a listed region. This essentially works by requiring the buyer to place a deposit covering the full price of the entire region, even if they intend to purchase only a portion. The region will be transferred to the buyer, allowing them to partition and interlace it on the Coretime chain. Using the two price formulas described above, the contract can calculate the actual charge for the buyer and refund the remaining deposit.                                                                                                                             |
-|      2. | Coretime Market UI         | We will create the UI for interacting with all the functionality exposed by the Coretime market contract. The UI will also offer an intuitive design that allows the buyer to describe their desired region. Given that the Coretime Market dashboard is part of the previous milestone, the remaining components for this stage include: implementing Buy/Sell functionality, creating a user-friendly method for users to specify the regions they are searching for, and offering an intuitive interface for users to perform region derivation.                                                       |
-|      3. | Region derivation developer documentation         | We will create documentation to explain how to easily integrate and use the region derivation feature which is developed as part of this milestone. Our goal is to enable many teams in the future to integrate the contracts that are developed as part of this proposal. |
 
 ## Future Plans
 
 As mentioned at the beginning of the project details, this project consists of two other parts that are not developed as part of this application. The next describes the future plans categorized into these components.
 
 ### Coretime Market
+
+As mentioned in the proposal we intend to further implement the **Region Derivation** feature. This will allow users to buy only a portion of the region that is being listed on sale.
+
+We also plan to finish the Coretime market UI, which will include more user-friendly region search and the ability to purchase portions of listed regions directly through the UI.
 
 Our plan is to have the market contract used by many other projects in the future. Since it would be highly beneficial for greater liquidity to utilize the same contract and not have many deployed, we plan to incorporate an economic model that incentivizes each of the projects using the same Coretime market contract.
 
