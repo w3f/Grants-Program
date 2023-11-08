@@ -43,7 +43,8 @@ The MatrixAI protocol's Polkadot-related construction components are as follows:
 
 #### *System architecture*
 
-![System architecture](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/7b822eda-e59f-4136-a4fe-3d9666cdeca8)
+![System architecture](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/1cf8d2fa-3fec-492b-8fdb-d5ad1cd397dd)
+
 
 The system architecture of MatrixAI is shown in the diagram above, and the entities involved are introduced as follows:
 
@@ -56,7 +57,8 @@ The system architecture of MatrixAI is shown in the diagram above, and the entit
 
 Matrix-UI is a web frontend application designed for users to access and navigate the computing power marketplace, as well as place orders online. The UI design of Matrix-UI can be found in [this section](#mockups--ui-design) and includes features such as wallet login and [light client](https://github.com/smol-dot/smoldot) capabilities. The diagram below illustrates the architectural design.
 
-![architecture for ui](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/bcca2fec-46b4-4e7e-8b59-a042c1ae3c2b)
+![architecture for ui](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/8f664c65-00ab-45bb-b1fe-5217acdef0a5)
+
 
 #### *Component 2 — MatrixAI-Indexing*
 
@@ -79,7 +81,8 @@ Here is an introduction to the key API interfaces for the Indexing:
 
 The database table structure is designed as follows, primarily centered around orders and training machines:
 
-![architecture for indexing](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/3318e1b9-5481-4189-8ac1-4c77e78fef12)
+![architecture for indexing](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/e686999a-18ee-41af-889a-6846953a047b)
+
 
 
 #### *Component 3 — MatrixAI-Client*
@@ -88,7 +91,8 @@ The client is a crucial component for trainers. Trainers simply need to deploy t
 
 The client can be divided into three modules: Device Share, Task Match, and Status Inquiry, as illustrated in the diagram below.
 
-![arch for client](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/92e1b0a6-f9d8-4d99-a5f0-32fb63247480)
+![arch for client](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/4a003c71-817b-414d-9714-e9a46a88c3f2)
+
 
 
 - _Device Share_：Performing an initial performance assessment on new devices and obtaining fundamental hardware information. This assessment is carried out by training a model specifically designed for testing. Once the training is completed, the training results and hardware information are reported back to the MatrixAI network.
@@ -214,7 +218,7 @@ We aim to provide users with a seamless model training experience, and therefore
 We have currently completed the prototype design and a majority of the UI design. Moving forward, we will continue to enhance interactions and event feedback within the pages. The main pages that have been completed are showcased as follows:
 
 1. _Computing Power Marketplace_
-   ![image](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/534884da-16dd-4bb8-a04f-fec8af88e14d)
+   ![image](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/286179cb-590b-4e19-b75d-58909ad7e7d1)
 
 
 - Users can query the device information and pricing of computing power providers on this page.
@@ -222,46 +226,52 @@ We have currently completed the prototype design and a majority of the UI design
 - Display the reliability of each miner and the device performance index.
 
 2. _Edit Model_
-   ![image2](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/ff7b4c86-8bb5-4078-a47d-5aa808b5c215)
+   ![image2](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/68cf0481-0e94-4389-9868-ee1b330e3db3)
 
 
 - Users utilize this page to submit orders for the usage of computing power devices.
 - After defining the task content, dataset, and parameters for model training, the next step involves automatically estimating the duration of the training process.
 
 3. _Share Device_
-   ![image3](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/0974dbb6-a91a-46b2-a544-a796ba6c6da0)
+   ![image3](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/28062d5d-6900-479a-b664-b5a9346709dd)
+
 
 
 - Once computing power providers run the MatrixAI client on their servers, the device information will be displayed on this page.
 - Display device information and the current status of the device.
 
 4. _My Orders_
-   ![image4](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/21361abc-38c3-4f23-b039-415489cbddce)
+   ![image4](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/ea3bc8dc-5672-4b87-9b83-702abfaacf5f)
+
 
 
 - Display current and historical orders.
 - Display the status of orders. For incomplete orders, users can perform actions on the model training tasks.
 
 5. _Order Details_
-   ![image5](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/ea590615-fb4b-4025-a2b4-b045ab1c2024)
+   ![image5](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/b14ed58b-daa4-45f0-9065-513135273c8c)
+
 
 
 - Display detailed information about orders, including device information, task details, and information from the blockchain.
 
 6. _Console_
-   ![image6](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/7cc0418f-4341-4f89-add4-4b79f37c9b9f)
+   ![image6](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/4a63ff96-e27b-404d-b62c-e770bbfbef00)
+
 
 
 - Users can optimize model training parameters.
 
 7. _Tasking Log_
-   ![image7](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/82d6ac3b-82e4-4860-8c84-5bd2570bfa09)
+   ![image7](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/9b889185-a969-4406-9359-15dbcf157b39)
+
 
 
 - Display logs of model training tasks.
 
 8. _Faucet_
-   ![image8](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/c01a44cc-2b22-465e-90e9-26cd4ed1b402)
+   ![image8](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/c176ebef-d875-4d72-8c1b-012095dedc1e)
+
 
 
 - Provide some free testing token for users.
@@ -355,7 +365,7 @@ MatrixAI was incubated during the [Polkadot Hackathon 2023 Summer](https://githu
 
 To more precisely depict what MatrixAI plans to achieve in this proposal, we have organized the information as shown in the diagram below. Each small square in the diagram represents a specific functional module, where gray squares indicate that the functionality has already been implemented and requires no major adjustments or changes; green squares represent modules that exist but require substantial modifications; blue squares denote newly added functional modules.
 
-![status](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/7c25f4bb-ddbd-4a8f-90da-9dc4985cd9e6)
+![status](https://github.com/MatrixAI-Lab/Grants-Program/assets/141611559/1edda35c-b213-47c5-bad8-69c8054ecd87)
 
 
 
