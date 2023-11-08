@@ -2,7 +2,7 @@
 
 - **Team Name:**  Phishfort
 
-- **Payment Address:** 0x714a5b8Cd830B8a6FBf320d5678B30EF8C0fF365 (USDC)
+- **Payment Address:** 0x689874C41A979082EEd74ca880Ca3487aF85710D (USDC)
 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
@@ -33,13 +33,11 @@ Our motivation to undertake this endeavor stems from our deep understanding of t
 
 For too long, end users have been easy prey for scammers, but we aim to change this dynamic. By allowing users to report scams and disseminate these reports to the entire userbase for near real-time protection, we aspire to transform potential victims into proactive responders.
 
-- An indication of why your team is interested in creating this project.
 
-  
 
 ### Project Details
 
-  The MVP of the project has been successfully deployed to the Chrome Store and Add-ons Store, available here: 
+The MVP of the project has been successfully deployed to the Chrome Store and Add-ons Store, available here: 
 
 https://chrome.google.com/webstore/detail/nighthawk-by-phishfort/bdiohckpogchppdldbckcdjlklanhkfc
 
@@ -80,7 +78,7 @@ There are some other commercial solutions to this problem which both charge mone
 ### Team members
 
 - Team Lead: Valentyn
--  23  team  members  at  PhishFort  all  of  whom  will  contribute to this in various ways, from engineering to analysis of reports, to the design of the  project.
+-  6 team  members  at  PhishFort  all  of  whom  will  contribute to this in various ways, from engineering to analysis of reports, to the design of the  project.
 - One additional engineer to be hired pending funds.
 
 ### Contact
@@ -115,9 +113,6 @@ The above is shared to say that above all else, we as a team do nothing but figh
 Public repo of the project:
 https://github.com/phishfort/nighthawk-extension
 
-
-https://github.com/phishfort
-Most of our codebase is backend and closed source, so we don't have much to publicly point to unfortunately. However, where we have open sourced data, including some of our threat intelligence you can find it on the link above.
   
 
 ## Development Status :open_book:
