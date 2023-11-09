@@ -118,7 +118,7 @@ Updated December 2022
 
 ## IX. Access to the Privacy Policy
 
-1. The User can access, download, save or print this Privacy Policy in its' current/updated version at any time under the following address [https://web3.foundation/privacy-and-cookies/](https://web3.foundation/privacy-and-cookies).
+1. The User can access, download, save or print this Privacy Policy in its current/updated version at any time under the following address [https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/privacy_policy.md](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/privacy_policy.md).
 
 ## X. Definitions and legal references
 
