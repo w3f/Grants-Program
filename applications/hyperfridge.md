@@ -157,12 +157,14 @@ We are in touch with [Risc-Zero](https://risczero) team who will support us with
 
 ### Contact
 
-- **Walter Strametz**, walter.strametz@element36.io, https://element36.io
+- **Contact Name:** Walter Strametz
+- **Contact Email:** walter.strametz@element36.io
+- **Website:** https://element36.io
 
 ### Legal Structure 
 
-- **element36**, Bahnmatt 25, CH-6340 Baar, Zug,Switzerland
-- **element36 AG, [CHE-180.390.659](https://zg.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-180.390.659)**
+- **Registered Address:** Bahnmatt 25, CH-6340 Baar, Zug,Switzerland
+- **Registered Legal Entity:** element36 AG, [CHE-180.390.659](https://zg.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-180.390.659)
 
 ### Team's experience
 
