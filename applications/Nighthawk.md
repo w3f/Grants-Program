@@ -29,15 +29,17 @@ The plugin is 100% open source, privacy focused and does nothing to store users 
 
 It's widely known that the crypto space, including the Polkadot community, is consistently under the threat of scams. While quantifying the exact losses is challenging, phishing attacks have resulted in the loss of hundreds of millions of dollars across the crypto ecosystem. PhishFort is embarking on a significant initiative by creating a consumer-oriented, community-driven, free, and efficient solution to combat this problem. While our primary business involves providing B2B services to various industry communities, this project is our way of giving back to the entire crypto industry without commercial interests.
 
-Our motivation to undertake this endeavor stems from our deep understanding of the crypto landscape and the severe damage inflicted by phishing attacks in a matter of minutes. What has been missing in this fight against phishing is a swift response mechanism driven by the community. Although we take pride in promptly removing malicious content from the internet, we recognize the need to offer real-time protection to end users if we are to collectively address this problem. Nighthawk has been designed to serve this exact purpose.
+Our motivation to undertake this endeavour stems from our deep understanding of the crypto landscape and the severe damage inflicted by phishing attacks in a matter of minutes. What has been missing in this fight against phishing is a swift response mechanism driven by the community. Although we take pride in promptly removing malicious content from the internet, we recognise the need to offer real-time protection to end users if we are to collectively address this problem. Nighthawk has been designed to serve this exact purpose.
 
-For too long, end users have been easy prey for scammers, but we aim to change this dynamic. By allowing users to report scams and disseminate these reports to the entire userbase for near real-time protection, we aspire to transform potential victims into proactive responders.
+For too long, end users have been easy prey for scammers, but we aim to change this dynamic. By allowing users to report scams and disseminate these reports to the entire user-base for near real-time protection, we aspire to transform potential victims into proactive responders.
 
+- An indication of why your team is interested in creating this project.
 
+  
 
 ### Project Details
 
-The MVP of the project has been successfully deployed to the Chrome Store and Add-ons Store, available here: 
+  The MVP of the project has been successfully deployed to the Chrome Store and Add-ons Store, available here: 
 
 https://chrome.google.com/webstore/detail/nighthawk-by-phishfort/bdiohckpogchppdldbckcdjlklanhkfc
 
@@ -52,10 +54,28 @@ As a next step, we aspire to integrate auto-classification and rule-generation e
 Here are three steps to this:
 
 1. Heuristic engine development
-2. Rule generation engine implementation
-3. Auto-classification engine implementation
+2. Rule generation and integrating submitting rules suggested by the community
+3. LLM based rule generation
 
-This technology will be operating locally without sending any browsing data to us.
+#### Stage 1 : heuristic engine development
+
+- There are number of basic heuristic engines that can be used to detect phishing
+- These let you find the URLs which are not on the blacklists anywhere in the world
+- For instance, if a title of the Kusama is the same, but it hosted on a different domain - it may indicate phishing
+- Another example is if CSS of the website has tried to copy look and feel of Kusama - it also may indicate phishing
+- Simple, but effective
+- Rules are very important and we need to create engine first to start setting up the rules
+
+#### Stage 2 : Rule generation and integrating submitting rules suggested by the community
+
+- Need rules for the heuristic engine 
+- Create rules ourselves + integrating rules suggested by the community
+
+#### Stage 3 : LLM based rule generation[There is where the magic happens 🪄]
+
+- user generated rules are great, but we need faster detection
+- train/fine-tune LLM can generate rules for phishing kits that are not discovered by anyone
+- This is powerful - automated phishing detector that will protect the web3 community from bad actors
 
 The general overview is available here: https://docs.google.com/presentation/d/1wRe9HADBgxuqN5fjf98OYCxV-7XVe4cVmglCFUSQ_78/edit?usp=sharing
   
@@ -65,7 +85,7 @@ The general overview is available here: https://docs.google.com/presentation/d/1
 
   We want Nighthawk to be an absolute no-brainer for every single crypto user in the world. None is immune to the damage that phishing causes, from seasoned crypto veterans to newcomers who are still learning the ropes. We believe that the polkadot community as a whole will be a fantastic fit with high engagement levels, vulnerable users and a desire from the community leaders within the ecosystem to combat this problem.
 
-There are some current answers to this problem on the market, most notably EAL by the crime fighting superstar Harry Denley. While we not only endorse but financially contribute to communtiy initiatives that combat phishing in the industry, PhishFort has become one of if not the major anti-phisihng provider in the space. This means that the all important _backend_ infratstructe - a constantly updated feed of newly discovered attacks, a team of trained and professional anti-phishing anaylsts, and experience being in the trenches daily fighting this problem as a company are needed to bolster a community facing solution to this problem.
+There are some current answers to this problem on the market, most notably EAL by the crime fighting superstar Harry Denley. While we not only endorse but financially contribute to community initiatives that combat phishing in the industry, PhishFort has become one of if not the major anti-phishing provider in the space. This means that the all important _backend_ infrastructure - a constantly updated feed of newly discovered attacks, a team of trained and professional anti-phishing analysts, and experience being in the trenches daily fighting this problem as a company are needed to bolster a community facing solution to this problem.
 
 There are some other commercial solutions to this problem which both charge money, and are structured in such a way as to compromise the fundamental privacy of a users browsing experience. We personally have a strong aversion to compromises on user privacy and although we understand the need to charge for such a plugin, prefer answers to this problem that are transparent and accessible to anyone, anywhere in the world irrespective of their ability to afford such a solution.
 
@@ -78,7 +98,7 @@ There are some other commercial solutions to this problem which both charge mone
 ### Team members
 
 - Team Lead: Valentyn
--  6 team  members  at  PhishFort  all  of  whom  will  contribute to this in various ways, from engineering to analysis of reports, to the design of the  project.
+-  23  team  members  at  PhishFort  all  of  whom  will  contribute to this in various ways, from engineering to analysis of reports, to the design of the  project.
 - One additional engineer to be hired pending funds.
 
 ### Contact
@@ -98,7 +118,7 @@ There are some other commercial solutions to this problem which both charge mone
 
 - **Registered Address:** 160  Robinson  Road, #14-04 Singapore  Business Federation Centre, Singapore
 
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Legal Entity:** PROTAKEDOWN  PTE.
 
   
 
@@ -113,6 +133,9 @@ The above is shared to say that above all else, we as a team do nothing but figh
 Public repo of the project:
 https://github.com/phishfort/nighthawk-extension
 
+
+https://github.com/phishfort
+Most of our codebase is backend and closed source, so we don't have much to publicly point to unfortunately. However, where we have open sourced data, including some of our threat intelligence you can find it on the link above.
   
 
 ## Development Status :open_book:
@@ -143,35 +166,42 @@ There is currently no development taking place on the rule generation initiative
 
   
 
-- **Estimated duration:** 4 month
+- **Estimated duration:** 2 month
 
 - **FTE:** 6
 
-- **Costs:** 12,000 USD
+- **Costs:** 8,000 USD
 
 
 | Number | Deliverable | Specification |
-
 | -----: | ----------- | ------------- |
-
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-
+| **0a.** | License | MIT |
+| **0b.** | Documentation |FAQ and Onboarding for the user to explain how the extension works |
+| **0c.** | Testing and Security | In addition to automated testing, our infrastructure has and will continue to undergo security audits by iosiro.com for major releases. |
 | 1. | Talent acquisition | Bringing  on the right  people that we need on the team to  compliment the resources  that  we have already in the team |
-
 | 2. | Research | Conduct a final research on set of rules to start off with |
-
-| 3. | Write rules | Create a set of rules for the first heuristic engine |
-
-| 4. | False positive avoidance  | Test all the possible scenarios to avoid any false-positives |
+| 3. | Design heuristic engine and rule structure | Finalise the architecture and rule definition   |
+| 4. | Create initial rule sets | For the first milestone we'll be handcrafting and manually assessing the initial set of rules |
+| 5. | Accuracy modelling and testing  | Run initial rules in controlled environment and minimise false positives and assess performance|
 
 ### Milestone 2  — Rule generation
   
+
+- **Estimated Duration:** 4 month
+
+- **FTE:** 5
+
+- **Costs:** 12,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Functionality for accepting rules from users | Add UI/UX, testing, evaluation and distribution of users' submitted rules |
+| 2. | False positive check | False positive auto check for community rules |
+| 3. | Performance feedback for users' rule| Run a test of the users' rules on sample websites and report performance back to users |
+| 4. | Data collection| Search, sort and pack subsets of data sets for model training for Milestone 3|
+
+
+### Milestone 3  — Auto-classification
 
 - **Estimated Duration:** 3 month
 
@@ -179,33 +209,21 @@ There is currently no development taking place on the rule generation initiative
 
 - **Costs:** 10,000 USD
 
-  
-| 1. | Rule engine | Advance rule engine with user submitting rules  |
-
-| 2. | False positive check | False positive auto check for community rules |
-
-| 3. | UI for notifications| Create a set of notifications for users that submitted rules |
-
-### Milestone 3  — Auto-classification
-
-- **Estimated Duration:** 2 month
-
-- **FTE:** 5
-
-- **Costs:** 8,000 USD
-  
-| 1. | LLM  | Implement LLM based rule generation to achieve auto-classification |
-
-| 2. | Final false positive check | Conduct testing of the LLM engine |
-
-| 3. | Public announcement | Make a public announcement through our social media |
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Model configuration | Group rule datasets and relevant training data for LLM processing |
+| 2. | Model training | Apply insights to the data using human and machine-assisted activities and expose the model to a vast amount of data. Research to be conducted on performance of RAG/fine-tune/PEFT and choose an appropriate mechanism|
+| 3. | Model performance evaluation | Determine the effectiveness of the data within the model and adjusting pre-trained parameters to improve its performance|
+| 4. | Alpha testing | Test the model within small group of volunteers and team|
+| 5. | Open beta | After bug fixing and mitigating issues, open testing to a wider audience |
+| 6. | Release | Public release |
 
   
 
 ## Future Plans
 
   
-We are a team of security professionals who will battle phishing to make web3 space as secure as possible for everyone. We believe that auto-classification would bring anti-phishing protection to a new level. In addition, crypto communities is a crucial part of our venture, thus we want to foster a strong sense of collaboration, transparency, and innovation within these communities to drive the success of our project and contribute to the broader growth of the cryptocurrency ecosystem.  .
+We are a team of security professionals who will battle phishing to make web3 space as secure as possible for everyone. We believe that auto-classification would bring anti-phishing protection to a new level. In addition, crypto communities is a crucial part of our venture, thus we want to foster a strong sense of collaboration, transparency, and innovation within these communities to drive the success of our project and contribute to the broader growth of the cryptocurrency ecosystem. 
   
 
 ## Additional Information :heavy_plus_sign:
