@@ -57,6 +57,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [ParaSpell](https://github.com/paraspell)                    | [SpellRouter](SpellRouter-proposal.md)                                                              | [GitHub](https://github.com/paraspell)                      | ☐          |       ☐        |     ☐     |
 | [Paraverse Foundation](https://talisman.xyz)                    | [Signet - Talisman](signet.md)                                                              | [GitHub](https://github.com/TalismanSociety)                      | ☐          |       ☐        |     ☐     |
 | [Libeccio Labs](https://github.com/LibeccioLabs)                    | [Tux0](tux0.md)                                                              | [GitHub](https://github.com/LibeccioLabs)                      | ☐          |       ☐        |     ☐     |
+| [PolkaGate](https://polkagate.xyz)                    | [PolkaMask](polkamask.md)                                                              | [GitHub](https://github.com/PolkaGate)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
