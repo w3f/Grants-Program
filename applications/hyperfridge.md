@@ -2,7 +2,7 @@
 
 - **Team Name:** element36 AG
 - **Payment Address:** 0x56788E08C97d2677DAdED801e69bfE5D33ddACD5 (DAI)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slder-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -213,7 +213,7 @@ Repos:
 
 ## Development Roadmap :nut_and_bolt:
 
-### Overview Roadmap
+### Overview
 
 - **Total Estimated Duration:** 6 months, 5 milestones
 - **Full-Time Equivalent (FTE):**  1.5 FTE
