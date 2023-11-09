@@ -192,13 +192,13 @@ ADB Sustainable Development Working Paper Series https://www.adb.org/sites/defau
 
 ## Development Roadmap :nut_and_bolt:
 ### Overview
-- **Total Estimated Duration:** 1 Months
+- **Total Estimated Duration:** 2 Months
 - **Full-Time Equivalent (FTE):** 2.5
 - **Total Costs:** 10,000 USD
 
 ### Milestone 1 Example — Basic Smart Contracts and UI
 
-- **Estimated duration:** 1 months
+- **Estimated duration:** 2 months
 - **FTE:**  2,5
 - **Costs:** 10,000 USD
 
