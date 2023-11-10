@@ -200,6 +200,9 @@ In the realm of data storage and processing, two notable projects are making str
 
 - **Cess**: Positioned as a Large-Scale Decentralized Cloud Data Solution, CESS's Decentralized Cloud Network is fine-tuned for processing high-frequency dynamic data. It facilitates real-time data sharing while ensuring the protection of users' data ownership, privacy, and assets.
 
+- **Arweave**: A decentralized storage network designed to offer permanent data storage.
+
+While Deitos Network shares similarities with platforms such as Crust, Arweave, and IPFS, Deitos primary focus is distinct. The network emphasizes the processing, structuring, and utilization of data. The direction leans more towards Big Data and AI functionalities than acting as a descentralized storage service.
 
 ## Relevant prior work and research on the topic
 
