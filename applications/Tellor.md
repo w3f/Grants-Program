@@ -3,6 +3,7 @@
 - **Team Name:** Tellor Inc
 - **Payment Address:** Ethereum 0x1B8E06E7133B89ea5A799Bf2bF0221aE71959190 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1532#issuecomment-1781959568)
 
 ## Project Overview :page_facing_up:
 
