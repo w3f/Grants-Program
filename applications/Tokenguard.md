@@ -269,14 +269,14 @@ This proposal is the first part that is solely focused on preparation of the das
 
 
 
-| Number | Deliverable | Specification |
-| ---| ---| --- |
-| <br>**0a.**<br> | License | MIT |
-| <br>**0b.**<br> | Documentation | We will provide inline documentation. |
-| <br>**0c.**<br> | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. |
-| <br>**0d.**<br> | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| <br>1.<br> | Metrics visualisation<br> | Allowing visualisation from RAW data:<br>1. Data selection interface for user including axis and scale setup,<br>2. Creating a preliminary visaulisation design standard of common data types,<br>3. Preparing 5 customisable visualisation types which include linechart, barchart, piechart, multiline chart, stacked barchart.<br>4. Creating a mechanism to customize the visualisations for differently branded projects |
-| <br>2.<br> | Dashboard layout | Creating a dashboard composer which allows:<br>1. Creating, saving, modifying and deleting new and existing dashboards,<br>2. Populating a dashboard with visualised metrics with drag & drop method,<br>3. Modifying the dashboard layout - changing the positions of charts, resizing and deleting them.<br>4. Enriching the dashboard with captions, titles and links. |
+| Number | Deliverable | Specification | TechStack |
+| ---| ---| --- | --- |
+| <br>**0a.**<br> | License | MIT | --- |
+| <br>**0b.**<br> | Documentation | We will provide inline documentation. | --- |
+| <br>**0c.**<br> | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. | --- |
+| <br>**0d.**<br> | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. | --- |
+| <br>1.<br> | Metrics visualisation<br> | Allowing visualisation from RAW data:<br>1. Data selection interface for user including axis and scale setup,<br>2. Creating a preliminary visaulisation design standard of common data types,<br>3. Preparing 5 customisable visualisation types which include linechart, barchart, piechart, multiline chart, stacked barchart.<br>4. Creating a mechanism to customize the visualisations for differently branded projects | ReactJS, MongoDB, Apache ECharts |
+| <br>2.<br> | Dashboard layout | Creating a dashboard composer which allows:<br>1. Creating, saving, modifying and deleting new and existing dashboards,<br>2. Populating a dashboard with visualised metrics with drag & drop method,<br>3. Modifying the dashboard layout - changing the positions of charts, resizing and deleting them.<br>4. Enriching the dashboard with captions, titles and links. | ReactJS, React Grid Layout, MongoDB |
 
 
 
@@ -285,14 +285,14 @@ This proposal is the first part that is solely focused on preparation of the das
 *  **FTE:** 1.5
 *  **Costs:** 10,000 USD
 
-| Number | Deliverable | Specification |
-| ---| ---| --- |
-| <br>**0a.**<br> | License | MIT |
-| <br>**0b.**<br> | Documentation | We will provide inline documentation. |
-| <br>**0c.**<br> | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. |
-| <br>**0d.**<br> | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| <br>1.<br> | API reading mechanism | Connecting frontend visualisations with underlying data through an API:<br>1. Description and schema for an API response,<br>2. Saving and modifying visualisation related data,<br>3. Saving and modifying dashboard related data,<br> 4. Collecting user data in relation to dashboard and chosen metrics.  |
-| <br>3.<br> | Report & estimation | Detailed report on the dashboard composer design and cost estimation of all the features mentioned in "Project details" as well as additional features requested by Web3 Foundation.|
+| Number | Deliverable | Specification | TechStack |
+| ---| ---| --- | --- |
+| <br>**0a.**<br> | License | MIT | --- |
+| <br>**0b.**<br> | Documentation | We will provide inline documentation. | --- |
+| <br>**0c.**<br> | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. | --- |
+| <br>**0d.**<br> | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | --- |
+| <br>1.<br> | API reading mechanism | Connecting frontend visualisations with underlying data through an API:<br>1. Description and schema for an API response,<br>2. Saving and modifying visualisation related data,<br>3. Saving and modifying dashboard related data,<br> 4. Collecting user data in relation to dashboard and chosen metrics.  | NodeJS, Express, OpenAPI, MongoDB |
+| <br>3.<br> | Report & estimation | Detailed report on the dashboard composer design and cost estimation of all the features mentioned in "Project details" as well as additional features requested by Web3 Foundation.| --- |
 
 
 
