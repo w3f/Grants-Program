@@ -125,13 +125,19 @@ The team consists of computer science academics and software engineers, includin
 
 - <https://github.com/livetreetech/DecentralML>
 
+- <https://github.com/ThiasTux>
+
 - <https://github.com/IsakGrimsson>
+
+
 
 ### Team LinkedIn Profiles (if available)
 
 - <https://www.linkedin.com/in/ashley-turing/> Ashley Turing
 
 - <https://www.linkedin.com/in/jamieward/> Jaime Ward
+
+- <https://www.linkedin.com/in/mciliberto/> Mathias Ciliberto
 
 - <https://www.linkedin.com/in/isakgrimsson/> Isak Grimsson
 
