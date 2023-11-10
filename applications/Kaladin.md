@@ -32,13 +32,6 @@ We expect the teams to already have a solid idea about your project's expected f
 - Python, Javascript, HTML, CSS, Solidity
 https://kaladin.gitbook.io/api-docs/quick-start
 
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
-
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -51,8 +44,6 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - What need(s) does your project meet?
   Our project meets the needs of cross chain swaps without having to trust an exchange or brokerage.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
     No, lightning would be closest but they are bitcoin only.
 
 ## Team :busts_in_silhouette:
@@ -74,8 +65,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 17661 vista ave, Monte Sereno, CA 95030
+- **Registered Legal Entity:** Kaladin Inc.
 
 ### Team's experience
 
@@ -114,21 +105,11 @@ https://www.kaladin.com/Kaladin_Whitepaper.pdf
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
 - previous interface iterations, such as mock-ups and wireframes.
 
-
-
-## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** 2 years, 6 months duration left. 
+- **Total Estimated Duration:** 2 years, 6-12 months duration left. 
 - **Full-Time Equivalent (FTE):**  4 Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** 100,000 Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Costs:** 110,000
 
 ### Milestone 1 - Push for Mainnet
 
@@ -145,10 +126,12 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation | All our of documentation is currently at https://kaladin.gitbook.io/api-docs/quick-start as well as 
 | **0c.** | Testing and Testing Guide | Our test are within our private library for our backend servers but the website is up and running on swap.kaladin.com and kaladin.com incase you would like to try and test it out
 | **0d.** | Docker | No Docker file
-| 1. | We are currently aiming to push for a main net launch.
-| 2. | We are currently developing a wasm smart contract for polkadot.
-| 3. | We will push to file for a money transmitter license starting in Arkansas.
-| 6. | Smart contracts: Our smartcontracts are here https://github.com/Kaladinn/stormLibrary and we are aiming to run security audits for our smart contracts
+| 1. | Deployment of application and smart contract onto the main net.
+| 2. | We support moonbeam and are live on moonbase alpha with smart contracts implemented in Solidity, but we're also looking to building out an ink! smart contract to support additional parachains. Smart contract development can be broadly split into 3 main stages: 
+- Building out the library for the smart contracts, which would include creating and removing channels as well as other basic functionalities such as adding and removing funds fromt he contract.
+- Specifying the arbitration process and implmenting both the start dispute, trump and reveal hash secret functions
+- To add in updateChannelBalances which would update adding and removal of funds in channels without destroying the channels
+| 3. | Smart contracts: Our Solidity smartcontracts are here https://github.com/Kaladinn/stormLibrary and we have completed smart contract audits on these contracts with Certik.
 
 Push for mainnet launch, already on testnet, developing a wasm smart contract for polkadot. Push for filing of money transmitter license.
 
@@ -162,15 +145,13 @@ Push for mainnet launch, already on testnet, developing a wasm smart contract fo
 | **0b.** | Documentation | All our of documentation is currently at https://kaladin.gitbook.io/api-docs/quick-start as well as 
 | **0c.** | Testing and Testing Guide | Our test are within our private library for our backend servers but the website is up and running on swap.kaladin.com and kaladin.com incase you would like to try and test it out
 | **0d.** | Docker | No Docker file
-| 0e. | Article | We will publish an **article**/workshop that explains Kaladin.
-| 1. | We want to create an advanced trading platform once we make sure main net is completely stable.
+| 1. | Creation and deployment of our advanced trading platform once main net is stable.
 | 2. | Finish up on polkadot and attempt to put on other chains. 
-| 3. | We will push to file for a money transmitter license for other states.
-| 6. | Smart contracts: Our smartcontracts are here https://github.com/Kaladinn/stormLibrary and we are aiming to run security audits for our smart contracts
+| 3. | Smart contracts: Our Solidity smartcontracts are here https://github.com/Kaladinn/stormLibrary and we have completed smart contract audits on these contracts with Certik.
 
 Finish up polkadot and start development test wasm chains. Start deployment to watch tower, add more order types, work on advanced trading UI.
 
-### Milestone 2 — Trading Platform + mainnet swap launch
+### Milestone 3 — Trading Platform + mainnet swap launch
 
 - **Estimated Duration:** 3-6
 - **FTE:**  4
@@ -180,11 +161,10 @@ Finish up polkadot and start development test wasm chains. Start deployment to w
 | **0b.** | Documentation | All our of documentation is currently at https://kaladin.gitbook.io/api-docs/quick-start as well as 
 | **0c.** | Testing and Testing Guide | Our test are within our private library for our backend servers but the website is up and running on swap.kaladin.com and kaladin.com incase you would like to try and test it out
 | **0d.** | Docker | No Docker file
-| 0e. | Article | We will publish an **article**/workshop that explains Kaladin.
+| 0e. | Article | We will publish an arcticle that explains Kaladin.
 | 1. | Finish up other small features such as LP trades.
 | 2. | Launch Trading platform
-| 3. | Have money transmitter license for most if not all states.
-| 6. | Smart contracts: Our smartcontracts are here https://github.com/Kaladinn/stormLibrary and hope the entire yearly audit will be good.
+| 3. | Smart contracts: Our Solidity smartcontracts are here https://github.com/Kaladinn/stormLibrary and we have completed smart contract audits on these contracts with Certik.
 
 
 ## Future Plans
@@ -194,24 +174,15 @@ Please include here
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
-We intend to push for a money transmitter license in all states and would hope to be able to run internationally and be self sufficient. We aim to push for large adoption by exchanges and banks as well as users as we believe that this will create a safer future for crypto.
 
-## Referral Program (optional) :moneybag:
+ We aim to push for large adoption by exchanges and banks as well as users as we believe that this will create a safer future for crypto.
 
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
 - **Payment Address:** 
 0x06293bA89A49bD5279705250F16b2c72ef4a1600 for ETH or USDT on ERC20
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-medium article
+We originally heard about this Grants program from a medium article which refered us to the Web3 Foundation Website.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+We were selected as part of the Bridge Bounty program for the Stellar Development Foundation, and we have been working on this project for approximately 2 years. We have completed implementations of our protocol in Solidity, Bitcoin Scripts and Stellar opcodes, and we are looking to expand to other ecosystems.
