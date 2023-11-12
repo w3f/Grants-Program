@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-This application is in response to the [Alternative javascript console for Polkadot JS API RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/alternative-polkadot-js-api-console.md).
+This application is in response to the [Alternative javascript console for Polkadot JS API RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/alternative-polkadot-js-api-console.md).
 
 ### Overview
 
@@ -33,7 +33,7 @@ Till then files and settings storage will be local and user’s code will be run
 
 ### Ecosystem Fit
 
-According to the [RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/alternative-polkadot-js-api-console.md) current polkadot js API console has some limitations, which we offer to overcome by creating the SanDOx IDE.
+According to the [RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/alternative-polkadot-js-api-console.md) current polkadot js API console has some limitations, which we offer to overcome by creating the SanDOx IDE.
 
 ## Team :busts_in_silhouette:
 

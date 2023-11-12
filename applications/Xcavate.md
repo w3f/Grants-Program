@@ -4,7 +4,7 @@
 
 - **Team Name:** Xcavate
 - **Payment Address:** 5E28NSFGwYB9C39bYdRAQ79UKRsM6shxkJr3LG4hehycwfJc
-- **Total Costs:** $10000 USDT (Polkadot - Statemint)
+- **Total Costs:** $8500 USDT (Polkadot - Statemint)
 - **Level:** 1
 
 ## Project Overview
@@ -85,6 +85,8 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 * Alex Ward – COO
 * Ganish Oli - Substrate Developer
 * Rene Hürter - Substrate Developer
+* Alan - Full Stack Developer
+* Victor Chukwonoso - Product Designer
 * Neeraj Choubisa - Full Stack Developer
 * Victor Chukwonoso - UI/UX Designer
 
@@ -104,6 +106,8 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 Richard Houldsworth – 10 years in web 2.0 dev space – serial Entrepreneur
 Alex Ward – 25 years in the global property market – serial Entrepreneur
 Ganish Oli - ink! smart contract developer and substrate blockchain developer.
+Rene Hürter - Currently studying to become a blockchain developer. Alchemy University Ethereum Bootcamp 11/2022. Scaling Ethereum 2023 Hackathon 11/03/2023. Consensus 2023 Hackathon (Web3athon 2023) 17/04/2023.
+Alan Ma - Full-Stack developer who likes to work with JavaScript/Typescript (React, Next.js, Redux, Vue.js, Node), Blockchain(Bitcoin, Ethereum, Cosmos, Solidity, Rust), Golang, Python among others. Since I graduated from the university, I’ve joined several companies and dev teams to build web/mobile and web3 apps.
 Rene Hürter - I am currently studying to become a blockchain developer. Alchemy University Ethereum Bootcamp 11/2022. Scaling Ethereum 2023 Hackathon 11/03/2023. Consensus 2023 Hackathon (Web3athon 2023) 17/04/2023.
 Neeraj Choubisa - A Passionate Full Stack Blockchain Ethereum Based Web Developer, Third-Year student at Indian Institute of Information Technology, Dharwad
 
@@ -112,6 +116,8 @@ Neeraj Choubisa - A Passionate Full Stack Blockchain Ethereum Based Web Develope
 https://github.com/xcavateblockchain
 https://github.com/xcavate2022
 https://github.com/ganesh1233456
+https://github.com/RecrafterH
+https://github.com/meanking
 https://github.com/Kali-Decoder
 https://github.com/RecrafterH
 
@@ -137,13 +143,13 @@ We have been taking time to play with Substrate to form initial local nodes. We 
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  4
-- **Total Costs:** $10000 USDT
+- **Total Costs:** $8500 USDT
 
 ### Milestone 1 — Initial POC of lending protocol
 
 - **Estimated Duration:** 2 months
 - **FTE:**  4
-- **Costs:** $10000 USDT
+- **Costs:** $8500 USDT
 
 We will build on the excellent work we have achieved developing the Real Estate NFT marketplace for the hackerearth.com hackerthon. 
 
@@ -154,16 +160,14 @@ In the first milestone, the features for the PoC will be implemented and tested 
 | 0a.	    | License	                            |  Apache 2.0 |
 | 0b.	    | Documentation                     |  The documentation will be provided to show the whole architecture of the Xcavate Network. |
 | 0c.	    | Testing and Testing Guide            |  The testing guide will be provided to test each component. |
-| 0d. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 0d. | VS Code Instructions | We have struggled to create docker images and a container, which allows interaction between the frontend, backend & node however VS code is working as expected. |
 | 0e. | Tutorial | We will write a tutorial about how to use Xcavate Network. |
 | 0f. | Article | We will write an article published on media channels. |
-| 1	    | Xcavate Node Repo             	    |  We will create a customized chain node with Substrate 2.0 Framework. |
-| 2     | Xcavate Loan App Repo               | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
+| 1    | Xcavate Node Repo   |  We will create a customized chain node with Substrate 2.0 Framework. |
+| 2   | Xcavate Loan App Repo   | All smart contracts will be written in Ink! to handle all the on chain runtime events related pallet functions such as; 1) Assess loan application criteria 2) Creation and management of multisig wallet 3) Minting and transfer of LAND NFTs 4) Defining and executing the loan APR structure 5) Monitor and execute real estate build stage checks 5) Deliver tranches of loan amounts to wallets 6) Manage the loan repayment and NFT transfer. |
 | 3. | Loan management pallet | * Manage loan application ** Land details' ** Registration * Manage loan interest percentage ** Based on land and experience * Approve/Reject request |
 | 4. | Staking pallet | * User can stake native token * Calculate APR * Distribute payouts |
-| 5. | Verification pallet | * Verification of user identity * Manage users identity * Manage loan request |
-| 6. | DAO | The PoC will have a basic DAO structure that will be created using the OpenGov pallet to ensure rewards can be given to the real estate build stage checkers (As we progress in to the MVP stage this will be expanded to form a full governance structure). |
-| 7. | Decentralized Developer Loan dApp / Front End Repo | It's a webpage working with Xcavate Network, it's implemented based on polkadot.js as planned. |
+| 5. | DAO | The PoC will have a basic voting structure to ensure rewards can be given to the real estate build stage checkers (As we progress in to the MVP stage this will be expanded to form a full governance structure). |
 
 ## Future Plans
 
