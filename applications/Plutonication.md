@@ -310,7 +310,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
 | **0b.** | Documentation | We will provide both **in code documentation for individual methods**. We will also provide a tutorial on how to run the Plutonication Server locally and in cloud. |
-| **0c.** | Testing and Testing Guide | All of the functions will be end-to-end tested with a sample dApp written in typescript (with Plutonication and Polkadot.js api) and a sample Wallet (PlutoWallet) |
+| **0c.** | Testing and Testing Guide | ~~All of the functions will be end-to-end tested with a sample dApp written in typescript (with Plutonication and Polkadot.js api) and a sample Wallet (PlutoWallet)~~ Unit tests for all of the functions |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone and for running the server in production. |
 | 1. | PlutonicationServerFlask | A Python server with Flask and Flask-SocketIO used for establishing a stable websocket connection between the dApp and Wallet. Use of server is crucial for reliable establishing of connection. |
 | 1a. | create_room | dApp creates room |
@@ -321,7 +321,32 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 1f. | raw_signature | wallet provides a raw message signature |
 | 2. | database requirements | none |
 
-### Milestone 2 Plutonication C# version
+### Milestone 2 Plutonication Typescript version
+
+- **Estimated Duration:** 1 month
+- **FTE:**  0.5
+- **Costs:** 7500 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide both **in code documentation for individual methods** and a **tutorial** explaining how to integrate Plutonication into a javascript/typescript dApp. |
+| **0c.** | Testing and Testing Guide | All of the functions will be end-to-end tested with a sample dApp written in typescript (with Plutonication and Polkadot.js api) and a sample Wallet (PlutoWallet) |
+| **0d.** | Docker | We will provide a Dockerfile for a sample dApp that can be used to test all the functionality delivered with this milestone. |
+| 1. | PlutonicationDAppClient | This would be a series of methods tailored for use with dApps. We will make sure that it is compatible with polkadot.js api |
+| 1a. | Initialize(AccessCredentials ac) -> void | Method used for initializing the PlutonicationDAppClient |
+| 1b. | ReceiveAddress() -> Address | Handles the receiving of SS58 encoded address |
+| 1c. | SendPayloadAsync(Payload payload) -> void | Method used for requesting an extrinsic payload sign |
+| 1d. | SendRawAsync(Bytes rawMessage) -> void | Method used for requesting a raw message sign |
+| 2. | PlutonicationWalletClient | This would be a series of methods tailored for use with wallets. |
+| 2a. | SendAddress(Address address) -> void | Sends the SS58 encoded address of the account in the wallet |
+| 2b. | SendSignedPayloadAsync(Payload signedPayload) -> void | Method used for sending a signed extrinsic payload back to the dApp. The signed extrinsic payload will then be added to the extrinsic and submitted to chain. |
+| 2c. | SendSignedRawAsync(bytes signedRaw) -> void | Method used for sending a signed raw message back to the dApp. |
+| 3. | QR code pop-up | We will provide a function that would embed an HTML qr code popup into a dApp. The QR code is used for establishing a connection. |
+| 4. | NPM package | We will provide an NPM package, which is commonly used it javascript/typescript development. |
+| 5. | Sample dApp | We will make a sample typescript console dApp (with Plutonication and Polkadot.js api) published to a public github repo. |
+
+### Milestone 3 Plutonication C# version
 
 - **Estimated duration:** 1 month
 - **FTE:**  0.5
@@ -346,31 +371,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 2c. | SendSignedRawAsync(bytes signedRaw) -> void | Method used for sending a signed raw message back to the dApp. |
 | 3. | NuGet package | We will provide a NuGet package, which is commonly used it c# development. It is comparable to NPM packages in Javascript world. |
 | 4. | Sample dApp | We will make a sample C# console dApp (with Plutonication and Substrate.NetApi) published to a public github repo. |
-
-### Milestone 3 Plutonication Typescript version
-
-- **Estimated Duration:** 1 month
-- **FTE:**  0.5
-- **Costs:** 7500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both **in code documentation for individual methods** and a **tutorial** explaining how to integrate Plutonication into a javascript/typescript dApp. |
-| **0c.** | Testing and Testing Guide | All of the functions will be end-to-end tested with a sample dApp written in typescript (with Plutonication and Polkadot.js api) and a sample Wallet (PlutoWallet) |
-| **0d.** | Docker | We will provide a Dockerfile for a sample dApp that can be used to test all the functionality delivered with this milestone. |
-| 1. | PlutonicationDAppClient | This would be a series of methods tailored for use with dApps. We will make sure that it is compatible with polkadot.js api |
-| 1a. | Initialize(AccessCredentials ac) -> void | Method used for initializing the PlutonicationDAppClient |
-| 1b. | ReceiveAddress() -> Address | Handles the receiving of SS58 encoded address |
-| 1c. | SendPayloadAsync(Payload payload) -> void | Method used for requesting an extrinsic payload sign |
-| 1d. | SendRawAsync(Bytes rawMessage) -> void | Method used for requesting a raw message sign |
-| 2. | PlutonicationWalletClient | This would be a series of methods tailored for use with wallets. |
-| 2a. | SendAddress(Address address) -> void | Sends the SS58 encoded address of the account in the wallet |
-| 2b. | SendSignedPayloadAsync(Payload signedPayload) -> void | Method used for sending a signed extrinsic payload back to the dApp. The signed extrinsic payload will then be added to the extrinsic and submitted to chain. |
-| 2c. | SendSignedRawAsync(bytes signedRaw) -> void | Method used for sending a signed raw message back to the dApp. |
-| 3. | QR code pop-up | We will provide a function that would embed an HTML qr code popup into a dApp. The QR code is used for establishing a connection. |
-| 4. | NPM package | We will provide an NPM package, which is commonly used it javascript/typescript development. |
-| 5. | Sample dApp | We will make a sample typescript console dApp (with Plutonication and Polkadot.js api) published to a public github repo. |
+| 5. | Testing moved from milestone 1 | All of the functions will be end-to-end tested with a sample dApp written in typescript (with Plutonication and Polkadot.js api) and a sample Wallet (PlutoWallet) |
 
 ### Milestone 4 Plutonication extension
 
