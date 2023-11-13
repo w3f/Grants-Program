@@ -1,5 +1,4 @@
-
-# Nighthawk anti-phishing browser extension
+# Nighthawk
 
 - **Team Name:** PhishFort
 
