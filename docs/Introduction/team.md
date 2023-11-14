@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## W3F Grants Committee
 
-The committee consists of individuals who know the funding priorities of the Polkadot ecosystem, and is responsible for evaluating grant applications and providing feedback on these.
+The committee consists of individuals who know the funding priorities of the Polkadot ecosystem and is responsible for evaluating grant applications and providing feedback on these.
 
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
@@ -14,11 +14,9 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
 - [David Hawig](https://github.com/Noc2)
-- [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Bill Laboon](https://github.com/laboon)
 - [Keegan Quigley](https://github.com/keeganquigley)
-- [Nikhil Ranjan](https://github.com/nikw3f)
 - [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
@@ -29,10 +27,8 @@ In cases where a niche expert opinion is desirable, one of the committee members
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
 - [David Hawig](https://github.com/Noc2)
-- [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
-- [Nikhil Ranjan](https://github.com/nikw3f)
 - [Seraya Takahashi](https://github.com/takahser)
 
 ## W3F Operations Team
@@ -40,5 +36,4 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 The Operations Team takes care of legal documents, invoicing and remittances.
 
 - [Melanie Diener](https://github.com/meldien)
-- [Federica Dubbini](https://github.com/fededubbi)
 - [Rouven Pérez](https://github.com/RouvenP)

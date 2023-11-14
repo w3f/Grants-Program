@@ -4,15 +4,16 @@ sidebar_position: 1
 
 # Guidelines
 
-Anyone is welcome to apply for a grant. Projects funded through our program are broad in scope, but our focus lies on projects with a strong **technical** focus that add value to the ecosystem. Furthermore, you should be able to demonstrate a solid, long-term roadmap, be it through the project's significance to the community (such as for research-oriented projects) or an in-depth market analysis (for business-oriented projects).
+Anyone is welcome to apply for a grant. Projects funded through our program are broad in scope, but our focus lies on projects with a strong **technical** focus that add value to the Polkadot ecosystem. Furthermore, you should be able to demonstrate a solid, long-term roadmap, be it through the project's significance to the community (such as for research-oriented projects) or an in-depth market analysis (for business-oriented projects).
 
 Generally, your project will have better chances to be accepted if:
 
 - it presents a **well-researched** or tested concept, for which ideally you are able to show some prior work;
+- you have tangible proof how and to what extent the project is a **benefit to the Polkadot ecosystem** and its users;
 - you can demonstrate that the project will be **maintained** after completion of the grant, be it through an obvious commitment to the technology from your side, additional funding sources, or an existing business model;
 - your team has **proven experience** with the relevant languages and technologies and/or a strong technical background. You will be asked to provide the GitHub profiles of your team members as part of your application, which we will examine for past activity and code quality. Naturally, you can also link to projects on other platforms;
 - your application is **rich in technical details** and well-defined;
-- you can present how your project stands out among competitors or implements technology that doesn't exist in the ecosystem yet.
+- you can present how your project stands out among competitors or implements technology that **doesn't exist** in the ecosystem yet.
 
 Additionally, it must fulfill the following requirements:
 
