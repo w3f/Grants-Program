@@ -57,6 +57,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [ParaSpell](https://github.com/paraspell)                    | [SpellRouter](SpellRouter-proposal.md)                                                              | [GitHub](https://github.com/paraspell)                      | ☐          |       ☐        |     ☐     |
 | [Paraverse Foundation](https://talisman.xyz)                    | [Signet - Talisman](signet.md)                                                              | [GitHub](https://github.com/TalismanSociety)                      | ☐          |       ☐        |     ☐     |
 | [Libeccio Labs](https://github.com/LibeccioLabs)                    | [Tux0](tux0.md)                                                              | [GitHub](https://github.com/LibeccioLabs)                      | ☐          |       ☐        |     ☐     |
+| [PolkaGate](https://polkagate.xyz)                    | [PolkaMask](polkamask.md)                                                              | [GitHub](https://github.com/PolkaGate)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
@@ -67,7 +68,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Protofire](https://protofire.io/)                       | [Contract Wizard](./Contract_wizard.md)                     | [GitHub](https://github.com/protofire/polkadot-contract-wizard/)                 | ☐          |        ☐       |      ☐      |
 | [ZeroDAO](https://github.com/ZeroDAO)                       | [Melodot](./Melodot.md)                     | [GitHub](https://github.com/ZeroDAO)                 | ☐          |        ☒       |      ☒      |
 | [Starks](https://github.com/tur461)                       | [XCM tool for NFTs](./xNFT.md)                     | [GitHub](https://github.com/tur461)                 | ☐          |        ☐       |      ☐      |
-| [ChainSafe](https://chainsafe.io/)                                 | [Polkadot Snap Maintenance](./maintenance/Substratesnap_Maintenance.md)   | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot)                               | ☐          |        ☐       |      ☐     |
+| [ChainSafe](https://chainsafe.io/)                                 | [Polkadot Snap Maintenance](./maintenance/Substratesnap_Maintenance.md)   | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot)                               | ☐          |        ☒       |      ☐     |
 | [justmert](https://github.com/justmert)                                 | [DOTLY: Revolutionizing Polkadot Account Statistics](./dotly.md)   | [GitHub](https://github.com/justmert/dotly)                               | ☐          |        ☒       |      ☒     |
 | [Federico Cicciarella](https://www.linkedin.com/in/federicocicciarella/?originalSubdomain=it)                                 | [Tracking Chain](./tracking_chain.md)   | [GitHub](https://github.com/TrackingChains/TrackingChain)                               | ☐          |        ☒       |      ☐     |
 | [TPScore](https://github.com/its-a-setup)                                 | [TPScore](./TPScore.md)   | [GitHub](https://github.com/its-a-setup)                               | ☐          |        ☒       |      ☒     |
@@ -96,7 +97,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Moonsong Labs](https://moonsonglabs.com/)                           | [StorageHub](./StorageHub.md)       | [GitHub](https://github.com/Moonsong-Labs)                                 | ☐          |        ☐       |      ☐     |
 | [Jonathan Brown](https://acuity.social/)                       | [Hybrid Explorer Phase 2](hybrid2.md)                                       | [GitHub](https://github.com/hybrid-explorer)                                 | ☐          |        ☒       |      ☐     |
 | [Coong Crafts](https://coongcrafts.io/)                       | [DelightfulDOT](delightfuldot.md)                                       | [GitHub](https://github.com/CoongCrafts)                                 | ☐          |        ☐       |      ☐     |
-| [Lastic](https://www.lastic.xyz/)                       | [Lastic](Lastic.md)                                       | [GitHub](https://github.com/LasticXYZ)                                 | ☐          |        ☐       |      ☐     |
+| [Lastic](https://www.lastic.xyz/)                       | [Lastic](Lastic.md)                                       | [GitHub](https://github.com/LasticXYZ)                                 | ☐          |        ☒       |      ☒     |
 
 [🔝](#top)
 
