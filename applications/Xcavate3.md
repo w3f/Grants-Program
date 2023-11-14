@@ -82,13 +82,13 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 ### Team's experience
 
-> Richard Houldsworth – 11 years in web 2.0 dev space – serial Entrepreneur & Alumni of the Polkadot Blockchain Academy Founders Track (Berkeley UC).
-> Alex Ward – 25 years in the global property market – serial Entrepreneur
-> Yury Yukhananov - Alumni of the Polkadot Blockchain Academy (Buenos Aires).
-> Ganish Oli - ink! smart contract developer and substrate blockchain developer.
-> Rene Hürter - ink! smart contract developer and substrate blockchain developer.
-> Alan Ma - Full-Stack developer who likes to work with JavaScript/Typescript (React, Next.js, Redux, Vue.js, Node), Blockchain (Bitcoin, Ethereum, Cosmos, Solidity, Rust), Golang, Python among others. Since I graduated from the university, I’ve joined several companies and dev teams to build web/mobile and web3 apps.
-> Victor Chukwononso - Product Designer & Expert in Figma.
+- Richard Houldsworth – 11 years in web 2.0 dev space – serial Entrepreneur & Alumni of the Polkadot Blockchain Academy Founders Track (Berkeley UC).
+- Alex Ward – 25 years in the global property market – serial Entrepreneur
+- Yury Yukhananov - Alumni of the Polkadot Blockchain Academy (Buenos Aires).
+- Ganish Oli - ink! smart contract developer and substrate blockchain developer.
+- Rene Hürter - ink! smart contract developer and substrate blockchain developer.
+- Alan Ma - Full-Stack developer who likes to work with JavaScript/Typescript (React, Next.js, Redux, Vue.js, Node), Blockchain (Bitcoin, Ethereum, Cosmos, Solidity, Rust), Golang, Python among others. Since I graduated from the university, I’ve joined several companies and dev teams to build web/mobile and web3 apps.
+- Victor Chukwononso - Product Designer & Expert in Figma.
 
 ### Team Code Repos
 
