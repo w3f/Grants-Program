@@ -92,23 +92,23 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 ### Team Code Repos
 
-https://github.com/xcavateblockchain
-https://github.com/xcavate2022
-https://github.com/Retamogordo
-https://github.com/ganesh1233456
-https://github.com/RecrafterH
-https://github.com/meanking
-https://github.com/RecrafterH
+- https://github.com/xcavateblockchain
+- https://github.com/xcavate2022
+- https://github.com/Retamogordo
+- https://github.com/ganesh1233456
+- https://github.com/RecrafterH
+- https://github.com/meanking
+- https://github.com/RecrafterH
 
 ### Team LinkedIn Profiles
 
-https://www.linkedin.com/in/richard-houldsworth/ 
-https://www.linkedin.com/in/alex-ward-2350a036/
-https://www.linkedin.com/in/yury-yukhananov-b20b5781/
-https://www.linkedin.com/in/ganesh-oli-9285a4163/
-https://www.linkedin.com/in/ren%C3%A9-h%C3%BCrter-36084b249
-https://www.linkedin.com/in/alan-ma-god/
-https://www.linkedin.com/in/chukwunonso-v-2b2193131/
+- Richard Houldsworth[https://www.linkedin.com/in/richard-houldsworth/]
+- Alex Award[https://www.linkedin.com/in/alex-ward-2350a036/]
+- Yury Yukhananov[https://www.linkedin.com/in/yury-yukhananov-b20b5781/]
+- Ganish Oli[https://www.linkedin.com/in/ganesh-oli-9285a4163/]
+- Rene Hürter[https://www.linkedin.com/in/ren%C3%A9-h%C3%BCrter-36084b249]
+- Alan Ma[https://www.linkedin.com/in/alan-ma-god/]
+- Victor Chukwononso[https://www.linkedin.com/in/chukwunonso-v-2b2193131/]
 
 ## Development Status :open_book:
 
