@@ -16,7 +16,7 @@ The ETF Network (“encryption to the future”) is a substrate-based blockchain
 - Non-interactive: participants only need to submit a delayed transaction and wait for its execution, with no further participation required (e.g. no commit-reveal style interactions would be needed)
 - Trustless and Predictable: Users can schedule transactions for the future, enabling use cases where they can rely on specific transaction executions as promised
 
-The network uses identity-based encryption and DLEQ proofs to implement a “proof-of-extract” consensus mechanism, wherein validators leak IBE secret keys with each block produced. In our initial grant, we delivered a proof of authority version of our consensus mechanism, along with rust and typescript libraries for enabling timelock encryption in standalone libraries and in the browser, along with a proof-of-concept auction application. In this followup grant, we aim to ensure the security and scalability of the network by implementing a proof-of-stake version of the network using `dynamic-committee proactive secret sharing`. Additionally we implement a mechanism to use timelock encryption to delay transactions for future blocks by introducing a new type of proxy account, the `Future` proxy. We will revisit the sealed bid auction developed in our previous grant, using delayed transactions rather than timelocked bids. As a result, this demonstrates the ability to participate in non-interactive, trustless MPC protocols via smart contracts, or rather, for enabling MPC-as-a-Service. We will also develop browser-based tools (etf.js and a transaction manager dapp) that allows users to easily construct, manage, and monitor delayed transactions and a user's status as a Future proxy. Additionally, we aim to move one step closer to be a parachain by ensuring Cumulus compatibility and deploying our testnet to rococo, along with our auction platform.
+The network uses identity-based encryption and DLEQ proofs to implement a “proof-of-extract” consensus mechanism, wherein validators leak IBE secret keys with each block produced. In our initial grant, we delivered a proof of authority version of our consensus mechanism, along with rust and typescript libraries for enabling timelock encryption in standalone libraries and in the browser, along with a proof-of-concept auction application. In this followup grant, we aim to ensure the security and scalability of the network by implementing a proof-of-stake version of the network using `dynamic-committee proactive secret sharing`. Additionally we implement a mechanism to use timelock encryption to delay transactions for future blocks by introducing a new type of proxy account, the `Future` proxy. We will revisit the sealed bid auction developed in our previous grant, using delayed transactions rather than timelocked bids. As a result, this demonstrates the ability to participate in non-interactive, trustless MPC protocols via smart contracts, or rather, for enabling MPC-as-a-Service. We will also develop browser-based tools (etf.js and a transaction manager dapp) that allows users to easily construct, manage, and monitor delayed transactions and a user's status as a Future proxy.
 
 ### Project Details
 
@@ -25,7 +25,6 @@ This is a followup to our previous grant, in which we built the foundational lay
 1. Implementation of a PoS version of consensus using Dynamic-Committee Proactive Secret Sharing
 2. Development of Delayed Transactions and Timelock Auction V2.0
 3. Delayed Transaction Explorer/Manager
-4. Cumulus Compatibility and Rococo Deploy
 
 #### Stake-Backed Proof of Extract with PSS
 
@@ -65,8 +64,6 @@ The implementation will work by first modifying the scheduler pallet to incorpor
 The diagram below depicts the general flow, where Alice, as a future proxy to Alice/0, signs Alice/0’s runtime call which will be executed by the scheduler at a future block k.
 
 ![delay-tx](https://raw.githubusercontent.com/ideal-lab5/Grants-Program/etf_network/static/img/delay_tx.png)
-
-
 
 #### Timelock Auction Version 2: using timelocked transactions
 
@@ -164,12 +161,11 @@ With an eye on the future and a strong curiosity to comprehend the technologies 
 
 The intended repos for this project are (but possibly subject to name change): 
 
-https://github.com/ideal-lab5/etf-node
-https://github.com/ideal-lab5/etf-consensus 
-https://github.com/ideal-lab5/etf-sdk
-https://github.com/ideal-lab5/etf.js
-https://github.com/ideal-lab5/etf-auction-ui
-https://github.com/ideal-lab5/contracts
+- https://github.com/ideal-lab5/etf
+- https://github.com/ideal-lab5/etf-sdk
+- https://github.com/ideal-lab5/etf.js
+- https://github.com/ideal-lab5/etf-auction-ui
+- https://github.com/ideal-lab5/contracts
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -192,22 +188,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-- **Total Estimated Duration:** 16 weeks
+- **Total Estimated Duration:** 12 weeks
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** 90,000
-
-
-The following items are mandatory for each milestone:
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **0e.** | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-
-It should also be acknowledged that we will strive for > 80% code coverage on all new lines of code. It should be assumed that each deliverable in each milestone, unless otherwise stated, include development, testing, and documentation of the deliverable.
+- **Total Costs:** 75,000
 
 ### Milestone 1 — PoS version of consensus
 
@@ -220,10 +203,15 @@ Goal: To implement a direct proof of stake version of our consensus mechanism us
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Implement DPSS | We implement a dynamic committee proactive secret sharing scheme. This will be an open source implementation based on [this paper](https://eprint.iacr.org/2022/971.pdf). We implement this using Arkworks, and will experiement with replacing the paillier encryption + ZKP construction with el gamal + DLEQ proofs. We do this as part of the etf-crypto-primtives code base, which is part of the etf-sdk. |
-| 2. | Substrate module: Babe integration | We integrate the DPSS scheme into Babe in order to perform a handoff of keys to new committees (authority sets) as epochs change. |
-| 3. | ETF-SDK Timelock encryption | We update our timelock encryption scheme to account for the change as part of (1) and (2). Here, we need to ensure the correct public keys are used when encrypting messages. |
-| 4. | Substrate TEE | We ensure that validator nodes must run in a TEE. We do this to ensure the confidentiality of the generation of secret shares. |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and update our documentation at **etf.idealabs.network** to include the most up-to-date detailed, technical information regarding the implementation of the DPSS scheme as well as its integration into Babe. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. This includes unit tests for the DPSS impl, its integration into Babe, the timelock-encryption modifications, and code modifications needed to run within a TEE. We will use the cargo tarpauling tool to ensure > 80% coverage on all new lines of code. We will also perform benchmarking of the DPSS implementation, as well as its integration in to Babe, and ensure any performance issues are well-documented if unabel to be entirely resolved. |
+| **0d.** | Docker | We will provide a Dockerfile(s) for a node which uses the consensus mechanism build as part of deliverable (2). |
+| **0e.** | Article | We will publish a substack article detailing the deliverables, accomplish, and issues encountered during the implementation of this milestone. |
+| **1.** | Implement DPSS | We implement a dynamic committee proactive secret sharing scheme using rust. This will be an open source implementation based on [this paper](https://eprint.iacr.org/2022/971.pdf). We implement this using Arkworks, and will experiement with replacing the paillier encryption + ZKP construction with el gamal + DLEQ proofs. We do this as part of the etf-crypto-primtives code base, which is part of the etf-sdk. We also perform benchmarking of our construction. |
+| **2.** | Substrate module: Babe integration | We integrate the DPSS scheme into the existing Babe implementation in order to perform a handoff of keys to new committees (authority sets) as epochs change. We also enable ETF consensus by modifying block author logic to calculate slot secrets and block import logic to verify the secrets. |
+| **3.** | ETF-SDK Timelock encryption | We update our timelock encryption scheme to account for the change as part of (1) and (2). Here, we need to ensure the correct public keys are used when encrypting messages. |
+| **4.** | Substrate Moddule: TEE integration | We modify block authoring logic to ensure that slot secrets are calculated in a TEE. We also revisit the DPSS scheme, specifically the setup phase where participants generate random polynomials, in order to perform this calculation within a TEE as well. |
 
 ### Milestone 2 — Delayed Transactions
 
@@ -235,41 +223,36 @@ Goal: Implement a mechanism to delay transactions for K blocks with a delay enfo
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Substrate Module: Create Future proxy | We create a new flavor of proxy, the Future proxy, as outlined above. Only the future proxy can submit delayed transactions.|
-| 2. | Substrate Module: Scheduler Pallet | We modify the scheduler pallet to be able to decrypt transaction data and execute it. Additionally, we provide extrinsics to cancel or update scheduled delayed transactions.  |
-| 3. | ETF.js proxy management and tx wrapper | We enhance the etf.js library to enable proxy management, including creating soft-derived accounts, managing proxy status, preparing proxied transactions, and utilities to ensure invalid delayed transactions are submitted. We also build a tx-wrapper library (txwrapper-etf) in order to properly build runtime calls. |
-| 4. | Timelock Auction Version 2 | Update the auction platform to use delayed transactions instead of timelocked bids, making it a non-interactive process. |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and update our documentation at **ideal-lab5.github.io** to include the most up-to-date detailed, technical information regarding the implementation of delayed transactions, including detailed information on the modified scheduler pallet, future proxies, usage of the SDK, as well as a guide on how to participate in the Timelock Auction V2.0. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In addition, we will perform benchmarks for the scheduler pallet and ensure proper weight for all new extrinsics. As before, we will use cargo tarpauling to ensure > 80% coverage on new code. In addition, we modify the existing ink! contract tests to account for changes to the contracts (mostly the 'orhestrator' contract). We will use jest in order to test the etf.js library and the timelock auction interface. We will attempt to perform tests using zombienet as well. |
+| **0d.** | Docker | We will provide a Dockerfile(s) for a node which allows for delayed transactions. |
+| **0e.** | Article | We will publish a substack article detailing the deliverables, accomplish, and issues encountered during the implementation of this milestone. |
+| **1.** | Substrate Module: Future proxy | We create a new flavor of proxy, the Future proxy, as outlined above, configuring our runtime ProxyType's InstanceFilter to ensure only the proxy can be used to schedule delayed transactions. |
+| **2.** | Substrate Module: Scheduler Pallet | We modify the scheduler pallet to be able to decrypt transaction data and execute it within the `on_initialize` hook. Additionally, we provide extrinsics to cancel or update scheduled delayed transactions. |
+| **3.** | ETF.js proxy management and txwrapper-etf | We enhance the etf.js library (typescript) to enable proxy management, including creating soft-derived accounts, managing proxy status, preparing proxied transactions, and utilities to ensure invalid delayed transactions are submitted. We also build a tx-wrapper library (txwrapper-etf) in order to properly build runtime calls. |
+| **4.** | Timelock Auction Version 2 | We update our ink! auction contracts suite to use delayed transactions instead of timelocked bids, making it a non-interactive process. This will include updates to the auction 'orchestrator' and VickreyAuction contracts, as well as updates to the etf-auction-ui (next.js), which will need to be modified in order to construct proxy-wrapped delayed transactions. |
 
-
-### Milestone 3: Cumulus integration + Rococo Deploy
-
-- **Estimated Duration:** 4 weeks
-- **FTE:** 2
-- **Costs:** 15,000 USD
-
-Goal: We prepare our chain to be cumulus compatible and become a parachain on rococo. In addition we set up robust monitoring and alerting tools. 
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1. | Cumulus Compatibility | We make our node compatible with cumulus |
-| 2. | Acquire testnet slot + Deploy to Rococo | We acquire a testnet slot and become a parachain on rococo. |
-| 3. | Monitoring and Telemetry | We monitor the testnet for performance and any other issues that arise during execution. We also enhance our existing telemetry (prometheus, grafana) to more closely monitor the network. |
-| 4. | Deploy Auction | We deploy the auction v2 to our network on rococo. We will also implement some type of public faucet to allow users to easily participate in auctions. |
-
-### Milestone 4: Delayed Tx Manager
+### Milestone 3: Delayed Tx Manager
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  3
 - **Costs:** 25,000 USD
 
-Goal: Dapp for scheduling and monitoring delayed transactions. The product will provide a way of handling derivation of accounts and managing proxy status.
+Goal: We build a dapp for scheduling and monitoring delayed transactions. The product will provide a way of handling derivation of accounts and managing proxy status. Likely the delayed transactions manager will be a typescript application, likely a Next.js application though we have not committed to that specific framework yet. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Future Proxy Manager | account derivation, proxy management (set self as future)|
-| 2. | Scheduler UI | Visual tool for defining a chain of delayed transactions |
-| 3. | Explorer UI | User interface to monitor the status of scheduled transactions and to access execution details|
-| 4. | Hosting | Host the UI (IPFS) |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the delayed tx manager's features to manage proxy status and to use and monitor delayed transactions. We will deliver a comprehensive video demonstration which details all features of the dapp. |
+| **0c.** | Testing and Testing Guide | We will test using the jest framework to ensure proper functionality of the dapp. We will also strive to use the jasmine testing framework to ensure e2e functionality of the application. |
+| **0d.** | Docker | We will provide a Dockerfile of the delayed tx manager which allows for easy deployments and local testing. |
+| **0e.** | Article | We will publish a substack article detailing the deliverables, accomplish, and issues encountered during the implementation of this milestone. |
+| **1.** | Future Proxy Manager | We implement a future proxy manager component as the initial piece. This component includes account derivation and  proxy management (set self as future) capabilities. This will rely on the proxy utilities developed in the etf.js library during milestone (2). |
+| **2.** | Scheduler UI | We develop a visual tool for defining a chain of delayed transactions. This component builds transactions using the txwrapper-etf, encrypts messages with the etf.js encryption functions, and signs transactions using polkadotjs. |
+| **3.** | Explorer UI | We build a user interface to monitor the status of scheduled transactions and to access execution details. This interface will heavily rely on events emitted by the network. In addition, we explore the usage of tools such as Subquery to enhance and streamline this experience. |
+
+Note: We intend to host the UI on IPFS and also on Vercel to ensure decentralization of the application. Specifically, we will host our build on IPFS Infura.
 
 
 ## Future Plans
