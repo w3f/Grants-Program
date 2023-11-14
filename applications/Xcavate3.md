@@ -10,6 +10,7 @@
 ## Project Overview
 
 Total global Real Estate was valued at over $378.7 trillion at the end of 2022 (Source: Savills Research, and Savills Research using World Bank, Bank for International Settlements, World Federation of Exchanges, World Gold Council). This eye watering sum remains the largest store of wealth across all sectors. Yet only 1.1% of the global population own nearly half of the world’s total wealth (Source: Credit Suisse Global Wealth Databook 2021). Due to the complex nature of real estate investment and the traditional need for trusted intermediaries, many real estate investment opportunities are not possible for the average person.
+
 Nearly 40% of global carbon dioxide emissions come from the real estate sector (Source: Forbes article by David Carlin Apr 5, 2022). Approximately 70% are produced by building operations, while the remaining 30% comes from construction.
 
 An estimated 150 million people are homeless globally, though the real number is probably higher (Source: The World Economic Forum website article by Patrick Henry Oct 2021).
@@ -67,7 +68,7 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 * Ganish Oli - Substrate Developer
 * Rene Hürter - Substrate Developer
 * Alan Ma - Full Stack Developer
-* Victor Chukwononso - Product Designer
+* Victor Chukwunonso - Product Designer
 
 ### Contact
 
@@ -82,13 +83,13 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 ### Team's experience
 
-- Richard Houldsworth – 11 years in web 2.0 dev space – serial Entrepreneur & Alumni of the Polkadot Blockchain Academy Founders Track (Berkeley UC).
-- Alex Ward – 25 years in the global property market – serial Entrepreneur
-- Yury Yukhananov - Alumni of the Polkadot Blockchain Academy (Buenos Aires).
-- Ganish Oli - ink! smart contract developer and substrate blockchain developer.
-- Rene Hürter - ink! smart contract developer and substrate blockchain developer.
-- Alan Ma - Full-Stack developer who likes to work with JavaScript/Typescript (React, Next.js, Redux, Vue.js, Node), Blockchain (Bitcoin, Ethereum, Cosmos, Solidity, Rust), Golang, Python among others. Since I graduated from the university, I’ve joined several companies and dev teams to build web/mobile and web3 apps.
-- Victor Chukwononso - Product Designer & Expert in Figma.
+> Richard Houldsworth – 11 years in web 2.0 dev space – serial Entrepreneur & Alumni of the Polkadot Blockchain Academy Founders Track (Berkeley UC).
+> Alex Ward – 25 years in the global property market – serial Entrepreneur
+> Yury Yukhananov - Alumni of the Polkadot Blockchain Academy (Buenos Aires).
+> Ganish Oli - ink! smart contract developer and substrate blockchain developer.
+> Rene Hürter - ink! smart contract developer and substrate blockchain developer.
+> Alan Ma - Full-Stack developer who likes to work with JavaScript/Typescript (React, Next.js, Redux, Vue.js, Node), Blockchain (Bitcoin, Ethereum, Cosmos, Solidity, Rust), Golang, Python among others. Since I graduated from the university, I’ve joined several companies and dev teams to build web/mobile and web3 apps.
+> Victor Chukwunonso - Product Designer & Expert in Figma.
 
 ### Team Code Repos
 
@@ -98,7 +99,7 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 - Ganish Oli (https://github.com/ganesh1233456)
 - Rene Hürter (https://github.com/RecrafterH)
 - Alan Ma (https://github.com/meanking)
-- Victor Chukwononso (https://github.com/RecrafterH)
+- Victor Chukwunonso (https://github.com/cn-victor)
 
 ### Team LinkedIn Profiles
 
@@ -113,6 +114,7 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 ## Development Status :open_book:
 
 We have been heavily involved in learning all things associated with the Polkadot & Kusama Ecosystem. This has been coupled with the idea of bringing illiquid assets like land and property from its current state into the web3 ecosystem. We have met top-level industry leads, government officials, real estate developers and retail investors to deliver a protocol that will provide a real benefit to broad range of users.
+
 Robin Ejsmond-Frey, Nico Morgan, Clif, Joshua Cheong from Parity have been a tremendous help by supporting us with information about the W3F grant application process and recommendations to attend Hackathons, Polkadot Decoded & Sub0 Events. As well as as number of forums to help our substrate development knowledge.
 
 We have been taking time to play with Substrate to form initial local nodes. We have developed the initial POC for this project and are developing using the Rococco test environment. We have additional engaged with the Tanssi network to test their appchain launching network.
@@ -163,6 +165,8 @@ In the second milestone, we will bring all of the functionality together so the 
 
 **Figma designs:**
 
+![XCAV Bonding Page](https://xcavate.io/W3F/realX-XCAV-bonding.jpg)
+
 
 | Number | Deliverables | Specification
 |:-------|:---------------------------|:------------------------ |
@@ -176,7 +180,7 @@ In the second milestone, we will bring all of the functionality together so the 
 
 ## Future Plans
 
-We are launching our project on the Polimec platform in Jan 2024 to raise funds to secure a Parachain slota and launch mainet around end of Q1 2024. We have recently attended the Relayers Incubator Program and have applied to the Substrate builder program. We are planning to launch our project on the Polimec platform to raise awareness and much needed funds at the end of 2023.
+We have recently attended the Relayers Incubator Program and have applied to the Substrate builder program. We are launching our project on the Polimec platform in Jan 2024 to raise funds to secure a Parachain slota and launch mainet around end of Q1 2024.
 
 
 ## Additional Information :heavy_plus_sign:
