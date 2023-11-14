@@ -190,13 +190,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Total Estimated Duration:** 12 weeks
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** 75,000
+- **Total Costs:** 69,000
 
 ### Milestone 1 — PoS version of consensus
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:** 25,000 USD
+- **Costs:** 23,000 USD
 
 Goal: To implement a direct proof of stake version of our consensus mechanism using DPSS. This enhances the security and scalability of the system, ensuring proper randomness used when performing the IBE Extract step and economic incentive for validators to behave honestly.  
 
@@ -217,14 +217,14 @@ Goal: To implement a direct proof of stake version of our consensus mechanism us
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  3
-- **Costs:** 25,000 USD
+- **Costs:** 23,000 USD
 
 Goal: Implement a mechanism to delay transactions for K blocks with a delay enforced via timelock encryption.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and update our documentation at **ideal-lab5.github.io** to include the most up-to-date detailed, technical information regarding the implementation of delayed transactions, including detailed information on the modified scheduler pallet, future proxies, usage of the SDK, as well as a guide on how to participate in the Timelock Auction V2.0. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and update our documentation at **etf.idealabs.network** to include the most up-to-date detailed, technical information regarding the implementation of delayed transactions, including detailed information on the modified scheduler pallet, future proxies, usage of the SDK, as well as a guide on how to participate in the Timelock Auction V2.0. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In addition, we will perform benchmarks for the scheduler pallet and ensure proper weight for all new extrinsics. As before, we will use cargo tarpauling to ensure > 80% coverage on new code. In addition, we modify the existing ink! contract tests to account for changes to the contracts (mostly the 'orhestrator' contract). We will use jest in order to test the etf.js library and the timelock auction interface. We will attempt to perform tests using zombienet as well. |
 | **0d.** | Docker | We will provide a Dockerfile(s) for a node which allows for delayed transactions. |
 | **0e.** | Article | We will publish a substack article detailing the deliverables, accomplish, and issues encountered during the implementation of this milestone. |
@@ -237,7 +237,7 @@ Goal: Implement a mechanism to delay transactions for K blocks with a delay enfo
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  3
-- **Costs:** 25,000 USD
+- **Costs:** 23,000 USD
 
 Goal: We build a dapp for scheduling and monitoring delayed transactions. The product will provide a way of handling derivation of accounts and managing proxy status. Likely the delayed transactions manager will be a typescript application, likely a Next.js application though we have not committed to that specific framework yet. 
 
