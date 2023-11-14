@@ -64,7 +64,6 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 * Richard Houldsworth – CTO
 * Alex Ward – COO
-* Yury Yukhananov - Substrate Engineer
 * Ganish Oli - Substrate Developer
 * Rene Hürter - Substrate Developer
 * Alan Ma - Full Stack Developer
@@ -83,19 +82,17 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 ### Team's experience
 
-> Richard Houldsworth – 11 years in web 2.0 dev space – serial Entrepreneur & Alumni of the Polkadot Blockchain Academy Founders Track (Berkeley UC).
-> Alex Ward – 25 years in the global property market – serial Entrepreneur
-> Yury Yukhananov - Alumni of the Polkadot Blockchain Academy (Buenos Aires).
-> Ganish Oli - ink! smart contract developer and substrate blockchain developer.
-> Rene Hürter - ink! smart contract developer and substrate blockchain developer.
-> Alan Ma - Full-Stack developer who likes to work with JavaScript/Typescript (React, Next.js, Redux, Vue.js, Node), Blockchain (Bitcoin, Ethereum, Cosmos, Solidity, Rust), Golang, Python among others. Since I graduated from the university, I’ve joined several companies and dev teams to build web/mobile and web3 apps.
-> Victor Chukwunonso - Product Designer & Expert in Figma.
+- Richard Houldsworth – 11 years in web 2.0 dev space – serial Entrepreneur & Alumni of the Polkadot Blockchain Academy Founders Track (Berkeley UC).
+- Alex Ward – 25 years in the global property market – serial Entrepreneur
+- Ganish Oli - ink! smart contract developer and substrate blockchain developer.
+- Rene Hürter - ink! smart contract developer and substrate blockchain developer.
+- Alan Ma - Full-Stack developer who likes to work with JavaScript/Typescript (React, Next.js, Redux, Vue.js, Node), Blockchain (Bitcoin, Ethereum, Cosmos, Solidity, Rust), Golang, Python among others. Since I graduated from the university, I’ve joined several companies and dev teams to build web/mobile and web3 apps.
+- Victor Chukwunonso - Product Designer & Expert in Figma.
 
 ### Team Code Repos
 
 - https://github.com/xcavateblockchain
 - https://github.com/xcavate2022
-- Yury Yukhananov (https://github.com/Retamogordo)
 - Ganish Oli (https://github.com/ganesh1233456)
 - Rene Hürter (https://github.com/RecrafterH)
 - Alan Ma (https://github.com/meanking)
@@ -105,7 +102,6 @@ Integrate DID's and Real Estae NFTs in to the their wallet to improve the UI/UX
 
 - Richard Houldsworth [https://www.linkedin.com/in/richard-houldsworth/])
 - Alex Award [https://www.linkedin.com/in/alex-ward-2350a036/]
-- Yury Yukhananov [https://www.linkedin.com/in/yury-yukhananov-b20b5781/]
 - Ganish Oli [https://www.linkedin.com/in/ganesh-oli-9285a4163/]
 - Rene Hürter [https://www.linkedin.com/in/ren%C3%A9-h%C3%BCrter-36084b249]
 - Alan Ma [https://www.linkedin.com/in/alan-ma-god/]
