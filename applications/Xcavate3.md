@@ -107,6 +107,7 @@ https://www.linkedin.com/in/alex-ward-2350a036/
 https://www.linkedin.com/in/yury-yukhananov-b20b5781/
 https://www.linkedin.com/in/ganesh-oli-9285a4163/
 https://www.linkedin.com/in/ren%C3%A9-h%C3%BCrter-36084b249
+https://www.linkedin.com/in/alan-ma-god/
 https://www.linkedin.com/in/chukwunonso-v-2b2193131/
 
 ## Development Status :open_book:
