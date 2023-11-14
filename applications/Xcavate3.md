@@ -31,7 +31,7 @@ Milestone 1 = Creating the realXchange feeless NFT marketplace dApp consists of 
 Milestone 2 = Enabling XCAV token holders to be able to bond their tokens to a particular realXchange project, so that project gets that amount of funds (delivered from fees generated from Xcavate and other related dApps).
 
 ![](https://xcavate.io/CustomPallets.jpg)
-![](https://xcavate.io/realXchangeNFTmarketplacedApp.jpg)
+![](https://xcavate.io/W3F/realXchangeNFTmarketplacedApp.jpg)
 
 ### Technology Stack
 
