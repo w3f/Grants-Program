@@ -16,7 +16,7 @@ The ETF Network (“encryption to the future”) is a substrate-based blockchain
 - Non-interactive: participants only need to submit a delayed transaction and wait for its execution, with no further participation required (e.g. no commit-reveal style interactions would be needed)
 - Trustless and Predictable: Users can schedule transactions for the future, enabling use cases where they can rely on specific transaction executions as promised
 
-The network uses identity-based encryption and DLEQ proofs to implement a “proof-of-extract” consensus mechanism, wherein validators leak IBE secret keys with each block produced. In our initial grant, we delivered a proof of authority version of our consensus mechanism, along with rust and typescript libraries for enabling timelock encryption in standalone libraries and in the browser, along with a proof-of-concept auction application. In this followup grant, we aim to ensure the security and scalability of the network by implementing a proof-of-stake version of the network using `dynamic-committee proactive secret sharing`. Additionally we implement a mechanism to use timelock encryption to delay transactions for future blocks by introducing a new type of proxy account, the `Future` proxy. We will revisit the sealed bid auction developed in our previous grant, using delayed transactions rather than timelocked bids. As a result, this demonstrates the ability to participate in non-interactive, trustless MPC protocols via smart contracts, or rather, for enabling MPC-as-a-Service. We will also develop browser-based tools (etf.js and a transaction manager dapp) that allows users to easily construct, manage, and monitor delayed transactions and a user's status as a Future proxy. Additionally, we aim to move one step closer to be a parachain by ensuring Cumulus compatibility and deploying our testnet to rococo, along with our auction platform.
+The network uses identity-based encryption and DLEQ proofs to implement a “proof-of-extract” consensus mechanism, wherein validators leak IBE secret keys with each block produced. In our initial grant, we delivered a proof of authority version of our consensus mechanism, along with rust and typescript libraries for enabling timelock encryption in standalone libraries and in the browser, along with a proof-of-concept auction application. In this followup grant, we aim to ensure the security and scalability of the network by implementing a proof-of-stake version of the network using `dynamic-committee proactive secret sharing`. Additionally we implement a mechanism to use timelock encryption to delay transactions for future blocks by introducing a new type of proxy account, the `Future` proxy. We will revisit the sealed bid auction developed in our previous grant, using delayed transactions rather than timelocked bids. As a result, this demonstrates the ability to participate in non-interactive, trustless MPC protocols via smart contracts, or rather, for enabling MPC-as-a-Service. We will also develop browser-based tools (etf.js and a transaction manager dapp) that allows users to easily construct, manage, and monitor delayed transactions and a user's status as a Future proxy.
 
 ### Project Details
 
@@ -25,7 +25,6 @@ This is a followup to our previous grant, in which we built the foundational lay
 1. Implementation of a PoS version of consensus using Dynamic-Committee Proactive Secret Sharing
 2. Development of Delayed Transactions and Timelock Auction V2.0
 3. Delayed Transaction Explorer/Manager
-4. Cumulus Compatibility and Rococo Deploy
 
 #### Stake-Backed Proof of Extract with PSS
 
@@ -65,8 +64,6 @@ The implementation will work by first modifying the scheduler pallet to incorpor
 The diagram below depicts the general flow, where Alice, as a future proxy to Alice/0, signs Alice/0’s runtime call which will be executed by the scheduler at a future block k.
 
 ![delay-tx](https://raw.githubusercontent.com/ideal-lab5/Grants-Program/etf_network/static/img/delay_tx.png)
-
-
 
 #### Timelock Auction Version 2: using timelocked transactions
 
@@ -192,9 +189,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-- **Total Estimated Duration:** 16 weeks
+- **Total Estimated Duration:** 12 weeks
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** 90,000
+- **Total Costs:** 75,000
 
 ### Milestone 1 — PoS version of consensus
 
@@ -237,27 +234,7 @@ Goal: Implement a mechanism to delay transactions for K blocks with a delay enfo
 | **3.** | ETF.js proxy management and txwrapper-etf | We enhance the etf.js library (typescript) to enable proxy management, including creating soft-derived accounts, managing proxy status, preparing proxied transactions, and utilities to ensure invalid delayed transactions are submitted. We also build a tx-wrapper library (txwrapper-etf) in order to properly build runtime calls. |
 | **4.** | Timelock Auction Version 2 | We update our ink! auction contracts suite to use delayed transactions instead of timelocked bids, making it a non-interactive process. This will include updates to the auction 'orchestrator' and VickreyAuction contracts, as well as updates to the etf-auction-ui (next.js), which will need to be modified in order to construct proxy-wrapped delayed transactions. |
 
-
-### Milestone 3: Cumulus integration + Rococo Deploy
-
-- **Estimated Duration:** 4 weeks
-- **FTE:** 2
-- **Costs:** 15,000 USD
-
-Goal: We prepare our chain to be cumulus compatible and become a parachain on rococo. In addition we set up robust monitoring and alerting tools. 
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and update our documentation at **ideal-lab5.github.io** to include the most up-to-date detailed, technical information regarding connecting to the network, including the chainspec, configurations, etc., as well as a detailed guide on becoming a validator. |
-| **0c.** | Testing and Testing Guide | We ensure our cumulus-integrated application has sufficient test coverage through unit and e2e tests (likely zombienet). |
-| **0d.** | Article | We will publish a substack article detailing the deliverables, accomplish, and issues encountered during the implementation of this milestone. |
-| **1.** | Cumulus Compatibility | We make our node compatible with cumulusz |
-| **2.** | Acquire testnet slot + Deploy to Rococo | We acquire a testnet slot and become a parachain on rococo. |
-| **3.** | Monitoring and Telemetry | We monitor the testnet for performance and any other issues that arise during execution. We also enhance our existing telemetry (prometheus, grafana) to more closely monitor the network. More specifically, this will be the building of more sophisticated grafana templates along with monitoring, alerts, and alarms for our hosted nodes as well as from grafana. |
-| **4.** | Deploy Auction | We deploy the auction v2 to our network on rococo. We will also implement some type of public faucet to allow users to easily participate in auctions. We intend to deploy to either GCP or AWS, but have not yet committed to a specific provider. |
-
-### Milestone 4: Delayed Tx Manager
+### Milestone 3: Delayed Tx Manager
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  3
