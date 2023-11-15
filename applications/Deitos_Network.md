@@ -206,7 +206,7 @@ While Deitos Network shares similarities with platforms such as Crust, Arweave, 
 
 - **DecentralML**: A Polkadot protocol for decentralised federated machine learning and collective governance.
 
-Based on the grant information from DecentralML, it appears there are parallels in terms of decentralizing machine learning model training, where rewards are based on data model training contributions and parameter adjustments by governance.
+Based on the grant information from [DecentralML](https://github.com/w3f/Grants-Program/blob/master/applications/decentral_ml.md), it appears there are parallels in terms of decentralizing machine learning model training, where rewards are based on data model training contributions and parameter adjustments by governance.
 
 Deitos approach, however, adopts a distinct architecture and game theory strategy. It focuses on infrastructure providers offering private services, competing to deliver optimal solutions to consumers. In future developments, these providers may also engage in maintaining and utilizing a shared public dataset, rewarded for hosting this data and processing consumer requests. (Section added from application's feedback).
 
