@@ -279,7 +279,7 @@ Elements related to data consumption or querying, as well as the inclusion of ot
 
 ## Mid-Term Plans
 
-### High Overview roadmap.
+### High-Level Overview roadmap.
 
 1) Development of the storage layer and data model foundations, which is the current grant's focus.
 2) Addition of the execution aspects for agreements and the dispute resolution mechanism.
