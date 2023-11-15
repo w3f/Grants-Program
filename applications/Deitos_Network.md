@@ -204,6 +204,12 @@ In the realm of data storage and processing, two notable projects are making str
 
 While Deitos Network shares similarities with platforms such as Crust, Arweave, and IPFS, Deitos primary focus is distinct. The network emphasizes the processing, structuring, and utilization of data. The direction leans more towards Big Data and AI functionalities than acting as a descentralized storage service.
 
+- **DecentralML**: A Polkadot protocol for decentralised federated machine learning and collective governance.
+
+Based on the grant information from DecentralML, it appears there are parallels in terms of decentralizing machine learning model training, where rewards are based on data model training contributions and parameter adjustments by governance.
+
+Deitos approach, however, adopts a distinct architecture and game theory strategy. It focuses on infrastructure providers offering private services, competing to deliver optimal solutions to consumers. In future developments, these providers may also engage in maintaining and utilizing a shared public dataset, rewarded for hosting this data and processing consumer requests. (Section added from application's feedback).
+
 ## Relevant prior work and research on the topic
 
 Some of the following topics/reads were analyzed and processed:
@@ -273,14 +279,19 @@ Elements related to data consumption or querying, as well as the inclusion of ot
 
 ## Mid-Term Plans
 
+### High Overview roadmap.
+
+1) Development of the storage layer and data model foundations, which is the current grant's focus.
+2) Addition of the execution aspects for agreements and the dispute resolution mechanism.
+3) Implementation of security measures such as infrastructure provider attestation to ensure execution integrity and reliability.
+
 - Further development of the network's roadmap, which includes:
-  - Deliver a on-chain dispute resolving module in case of disagreements between consumers and infrastructure providers. 
-  - Introducing data consumption processes, such as querying or interacting with the model.
-  - Implementing security mechanisms around the infrastructure provider to ensure the environment remains free from dishonest manipulations.
-  - Incorporating privacy primitives, like ZK proofs, to bolster data integrity and query processes.
+  - Deliver a on-chain dispute resolving module in case of disagreements between consumers and infrastructure providers (Stage 2).
+  - Introducing data consumption processes, such as querying or interacting with the model (Stage 2).
+  - Implementing security mechanisms around the infrastructure provider to ensure the environment remains free from dishonest manipulations (Stage 3).
+  - Incorporating privacy primitives, like ZK proofs, to bolster data integrity and query processes (Stage 3).
 - The aforementioned roadmap can be viewed as the essential MVP (Minimum Viable Product) for launching a test network, facilitating initial iterations.
 - As we transition to a production phase, our plan is to secure core time, positioning us to join the Polkadot network as a parachain.
-
 
 ## Additional Information :heavy_plus_sign:
 
