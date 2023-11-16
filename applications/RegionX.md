@@ -2,7 +2,7 @@
 
 - **Team Name:** RegionX
 - **Payment Address:** 0x1e86CD18E4443B5f57b0133077954Cd84896964d (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3 🐓
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
