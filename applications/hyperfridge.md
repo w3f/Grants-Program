@@ -21,7 +21,7 @@ The aim of Hyperfridge is to create a trustless bridge between traditional banki
 
 Through the utilisation of zero-knowledge proofs, we establish a trustless oracle that validates and verifies transactions and activities associated with the "plugged" bank accounts. This technology facilitates secure settlements for purchasing or selling tokens in fiat, while extending its functionality to encompass a broader range of applications beyond mere transactions: Any smart contract can effortlessly trigger payments and respond to new transactions, essentially automating traditional fiat transactions on the blockchain. Our mission is to eliminate the need of centralised exchanges as intermediaries, providing users with the ability to leverage smart contracts without forcing users to convert their funds into cryptocurrencies. This will remove a barrier of adoption - many use cases would appreciate the finality of a ledger but can not expose themselves to the risk which comes with handling cryptocurrencies and private keys. In the end, hyperfridge works as a simple library which secures and transports information from a standardised banking API trustlessly onto the chain.
 
-Our backend-APIs are built upon highly standardised banking protocols ([Ebics](https://ebics.org), [SEPA](https://www.ecb.europa.eu/paym/integration/retail/sepa/html/index.en.html), [ISO20022](https://www.iso20022.org/) messages), making it easy to connect seamlessly with banking networks. Many applications, including bookkeeping, already utilise these APIs, often available at no cost or minimal fees from many banks. Hyperfridge embraces these standardised APIs, ensuring a user-friendly and cost-effective integration process available for free to Polkadot programmers.
+Our backend-APIs are built upon highly standardised banking protocols ([Ebics](https://ebics.org), [SEPA](https://www.ecb.europa.eu/paym/integration/retail/sepa/html/index.en.html), [ISO20022](https://www.iso20022.org/) messages), making it easy to connect seamlessly with banking networks. Many applications, including bookkeeping, already utilise these APIs, often available at no cost or minimal fees from many banks. Hyperfridge embraces these standardised APIs, ensuring a user-friendly and cost-effective integration process available for free to Polkadot programmers. Noteworthy is that some banks are already supporting immediate settlement, which will likely become mandatory in the SEPA area for all banks. Hyperfridge would then be able to support interactive scenarios - e.g. enabling Fiat/Crypto Swaps in one go.
 
 Hyerfridge aims to be available as a free and open sourced library - and not just as a service or platform as it is today. Hyperfridge would further allow any project to run its own business logic to span both crypto and traditional finance, which we think would be unique. Crypto applications would not depend on intermediaries like Stripe or Crypto Exchanges to connect with traditional finance.
 
@@ -80,7 +80,7 @@ A wrapped Z53 document containing the daily statement showing 30191.23 as CHF ba
   </BkToCstmrStmt>
 ```
 
-The hash of the (zipped) Z53 documents needs to be validated with the data given in the ebicsRequest. "X002" refers to RSA signature key with a key length of 2048 bits, "E002" defines RSA algorithm for encryption using  ECB (Electronic Codebook) and PKCS#1 v1.5 padding ([Also see here](https://www.ibm.com/docs/en/b2b-integrator/5.2?topic=eckf-managing-certificates-keys-users)) or talke a look at standardisation page on [Ebics](https://www.ebics.org/en/home) and [ISO20022](https://www.iso20022.org/) or a better readable [national page](https://www.six-group.com/dam/download/banking-services/standardization/ebics/market-practice-guidelines-ebics3.0-v1.2-en.pdf). Remark: A typical question is "what is the difference between Ebics and ISO20022?" An analogy might be that EBICS is to ISO20022 what HTTP is to HTML; that is, EBICS serves as the communication protocol while ISO20022 defines the message format structure.
+The hash of the (zipped) Z53 documents needs to be validated with the data given in the ebicsRequest. "X002" refers to RSA signature key with a key length of 2048 bits, "E002" defines RSA algorithm for encryption using  ECB (Electronic Codebook) and PKCS#1 v1.5 padding ([Also see here](https://www.ibm.com/docs/en/b2b-integrator/5.2?topic=eckf-managing-certificates-keys-users)) or take a look at standardization page on [Ebics](https://www.ebics.org/en/home) and [ISO20022](https://www.iso20022.org/) or a better readable [national page](https://www.six-group.com/dam/download/banking-services/standardization/ebics/market-practice-guidelines-ebics3.0-v1.2-en.pdf). Remark: A typical question is "what is the difference between Ebics and ISO20022?" An analogy might be that EBICS is to ISO20022 what HTTP is to HTML; that is, EBICS serves as the communication protocol while ISO20022 defines the message format structure.
 
 We use zero-knowledge proofs (circuits) to check signatures so that we do not have to publish bank statements, because this would reveal identities of transactions in clear-text. This allows us to veryfiy the data and its claim (a certain balance in our case). It is trustless to the extend that we use both secrets of the bank and the account owner to generate the proof (MPC - multi-party-computation).
 
@@ -97,7 +97,7 @@ For this grant we would aim at implementing *step &alpha;* of the [whitepaper](h
 As a library we will use [Risk-Zero](https://www.risczero.com/). Reasons are:
 
 - The risc0-verifier got [formally](https://www.github.com/risc0/risc0-lean4) verified.
-- It allowes complex computing (e.g. unzipping files) with existing libraries using its Risc-5 architecture. It would be much harder to use a [Rank-1 constraint system](https://www.zeroknowledgeblog.com/index.php/the-pinocchio-protocol/r1cs) like [Circom](https://docs.circom.io/).
+- It allows complex computing (e.g. unzipping files) with existing libraries using its Risc-5 architecture. It would be much harder to use a [Rank-1 constraint system](https://www.zeroknowledgeblog.com/index.php/the-pinocchio-protocol/r1cs) like [Circom](https://docs.circom.io/).
 - Its an actual ZKP library written in Rust and supporting 'no_std'.
 - It is based on STARKs (not SNARKs as the Hyperfridge paper suggests). SNARKs are cheap to validate (therefore good for EVM based systems) but the of STARKs be can automated (non-interactive). As we use Off-Chain-Workers the disadvantages of SNARKs do not matter for us and we can benefit from an easy setup to reach a "trustless" state.
 - But Risk-Zero provided a framework to wrap the STARK in a SNARK which can be validated with EVM based Smart Contracts.
@@ -149,7 +149,7 @@ The same principles can extend to the Financial Information eXchange protocol [(
 ### Team members
 
 * Leader: Walter Strametz, CTO Sygnum Bank, founder element36.io: Worked on roughly a dozen blockchain projects in Switzerland - among them building world's first digital asset bank ([Sygnum AG](https://sygnum.com)).
-* Dastanbek Samatov: Senior Rust Engineer with 3 years of experience in Substrate. Worked as a core developer in couple of parachain teams and was part of multiple Web3 Foundation grants. See more in [Team's Experience](#teams-experience) section.
+* Dastanbek Samatov: Senior Rust Engineer with 3 years of experience in Substrate. Worked as a core developer in a couple of parachain teams and was part of multiple Web3 Foundation grants. See more in [Team's Experience](#teams-experience) section.
 * Vladimir Nicolic, Full Stack Developer: Javascript Senior, worked on decentral identity, large parts of the element36 modules and the Dapp for the exchange and compliance-administration.
 * Nicolas Le Bel, Cryptograph: Working full-time on zero-knowledge systems and once peer with Walter at Sygnum bank. He is advising us on architectural decisions especially regarding the proof system.
 
@@ -228,13 +228,14 @@ Repos:
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will add both inline documentation of the code and a markdown description of the proof system. |
+| 0b. | Documentation | We will provide both inline documentation of the code, a basic tutorial and a markdown description of the proof system. |
 | 0c. | Testing Guide | Provide unit tests of core functions and test data to ensure functionality. In the guide, we will describe how to run these tests. |
-| 1a. | risc0 "Method" | Code and compiled  ELF library (circuit) to generate the proof, later used by the proving system. |
-| 1b. | Generate Receipt | Generate receipt (proof).  |
-| 1c. | Validate | Validate receipt - with edge cases.   |
-| 1d. | risc0 proving system | The create for create and validate recipes (ZKPs) |
-| 2. | Unit Tests | We will add unit tests and test data for creating and validating proofs.  |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1a. | risc0 Guest Program | Code (circuit) to generate the proof, later used by the proving system. Secret input of [Guest Program](https://dev.risczero.com/terminology#guest-program): Ebics envelope as XML and Z53/Camt53 file(s) as ZIP binary - see XML examples above. The Public input is: Public Certificate of the Bank or name of bank, bank account number, balance and date. The [journal](https://dev.risczero.com/terminology#journal) will contain balance, currency, timestamp in the ebics-envelope, timestamp of the proof, client-account-number, Bank-ID and sequence number of the bank-statement. The circuit will check the hash of the (zipped) Z53 documents and compares it with the data given in the ebicsRequest. It checks the signature of the Ebics request and the signed hash of the ZIP file using crypto standards X002 and E002. "X002" refers to RSA signature key with a key length of 2048 bits, "E002" defines RSA algorithm for encryption using  ECB (Electronic Codebook) and PKCS#1 v1.5 padding.|
+| 1b. | Generate Receipt | Generate [receipt](https://dev.risczero.com/terminology#receipt) which proves that the computation (e.g. balance) is correct and signed by the bank.  |
+| 1c. | Validator | Code to validate the receipt. |
+| 1d. | Hyperfridge Crate | The crate to create and validate recipes (ZKPs), wrapping the functionality.  |
+| 2. | Unit Tests | We will add unit tests and test data for creating and validating proofs which includes edge cases like wrong balance claims or faulty signature of the bank. |
 | 3. | Performance Benchmark | Present a table with performance metrics, so that hyperfride proofing times can be interpolated with data from [risc-zero](https://dev.risczero.com/datasheet.pdf). |
 
 
@@ -247,16 +248,16 @@ Repos:
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will adapt both inline documentation of the code and a basic tutorial that explains the FIAT-bridge which creates zero-knowledge proof based on ISO20022 messages from the backend.|
-| 0c. | Swagger | Provide Swagger docu for the backend |
-| 0d. | Testing Guide | Adapt unit tests of core functions and test data to ensure functionality and robustness of overall system (bridge and proofs). In the guide, we will describe how to run these tests. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can start the backend and send test transactions, which will show how the new functionality works.|
+| 0c. | Testing Guide | Adapt unit tests of core functions and test data to ensure functionality and robustness of the overall system (bridge and proofs). In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Generate Receipt | Retrieve data form backend and generate receipt (proof) using the proving system.  |
-| 2. | Provide API | Add recipe data in the [backend API] (http://w.e36.io:8093/ebics/swagger-ui/?url=/ebics/v2/api-docs/#/) '/ebics/api-v1/bankstatements'. |
+| 2. | Provide API | We will provide an application based on Spring-Boot that will contain `getBankstatements():Statement[]` (which includes account balance),  `createOrder (OutgoingPayment)` and `simulatePayment(Payment)`  as a REST interface as [described](#b-bank-account-rest-api). The recipe data is added in the [backend API](http://w.e36.io:8093/ebics/swagger-ui/?url=/ebics/v2/api-docs/#/) `/ebics/api-v1/bankstatements`` with two new fields in the top level of the JSON-response: `risc0Recipe:base64` and `risc0Hash:base64` as its hash so that clients can use a public verifier. |
 | 3. | Provide Banking-UI | Show a UI to see the status of banking backend (show accounts, transactions etc). We will use [LibEuFin](https://github.com/element36-io/ebics-java-service/blob/main/docs/SANDBOX.md) - same as in our first grant. |
 | 4. | Unit Tests | We will adapt unit tests and test data to cover creating and validating proofs.  |
 | 5. | Repository | Repository will be the existing repo [ebics-java-service](https://github.com/element36-io/ebics-java-service)  |
-| 6. | Docker | Provide docker-compose images for setting up banking API wrapper, LibEuFin proxy for banking-API. Set up test data in the backend via script and run tests which include the proving system.  |
-
+| 6. | Backend-Docker | Provide docker-compose images for setting up banking API wrapper, LibEuFin proxy for banking-API. Set up test data in the backend via script and run tests which include the proving system.  |
+| 7. | Swagger | Provide Swagger docu for the backend. |
 
 
 ### Milestone 3 - Integration into fiat-ramp pallet
@@ -268,13 +269,13 @@ Repos:
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will adapt both inline documentation of the code and a basic tutorial that explains the rust crate. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can integrate hyperfridge and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Adapt unit tests of core functions and test data to ensure functionality and robustness of overall system (bridge and proofs). In the guide, we will describe how to run these tests. |
-| 1a. | Integrate Receipt | Code to integrate the ELF library of the circuit when synchronising.  |
-| 1b. | Validate | Validate receipt in the OCW - block processing if receipt can not be validated. As validator either own code or - if available - [universal rollup](https://dev.risczero.com/litepaper#solution) and Bonsai validator.   |
-| 2. | fiat-ramp pallet | Code will be found in [fiat-pallet](https://github.com/element36-io/ocw-ebics/tree/main/pallets/fiat-ramps)  |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Integrate Receipt | Code to integrate the validitator in the Off-Chain Worker: when synchronising using following steps: a) poll the bank account for incoming (new) bank transactions and initiate `mint` transactions accordingly if proof validades. b) Listen for burn-events for stablecoins on our substrate chain to initiate outgoing transactions on our bank account. c) Use local storage to map between bank account and wallet or contract address for the mint and burn. Enter a "suspended" state if validation fails until a valid proof arrives. As validator either use own code or - if available - [universal rollup](https://dev.risczero.com/litepaper#solution) and Bonsai validator .   |
+| 2. | fiat-ramp pallet | Code will be found in [fiat-pallet](https://github.com/element36-io/ocw-ebics/tree/main/pallets/fiat-ramps). |
 | 3. | Unit Tests | We will adapt unit tests and test data to cover creating and validating proofs.  |
-| 4. | Docker | Provide docker images to synchronise with the backend and test data of Milestone 2.  |
+
 
 ### Milestone 4 - Node with stable-coin application
 
@@ -286,14 +287,14 @@ Repos:
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will adapt both inline documentation of the code and a basic tutorial that explains the rust crate. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can  spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Adapt unit tests of core functions and test data to ensure functionality and robustness of overall system (bridge and proofs). In the guide, we will describe how to run these tests. |
-| 1. | Stablecoin App | Change stablecoin implementation, Aad validating the proof for mint, burn and updates on the FIAT-bridge. Failed validating leads to breaking operations issuing a "validation failed" events.  |
-| 2. | fiat-ramp node | Code will be found in [fiat-node](https://github.com/element36-io/ocw-ebics/tree/main/node) part of the repo.  |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Stablecoin App | Change stablecoin implementation include validating the proof for mint, burn and updates on the FIAT-bridge. Failed validating leads to breaking operations issuing a "validation failed" events.  |
+| 2. | fiat-ramp node | Code will be found in [fiat-node](https://github.com/element36-io/ocw-ebics/tree/main/node) part of the repo. |
 | 3. | Unit Tests | We will adapt unit tests and test data to cover creating and validating proofs.  |
-| 4. | Docker | Provide docker images to synchronise stablecoins with the backend and test data of Milestone 2.  |
-| 5. | Whitepaper| Update the hyperfridge whitepaper with new learnings and description of the implementation. |
-| 6. | Real API| Update the hyperfridge whitepaper with new learnings and description of the implementation. |
+| 4. | Whitepaper| Update the hyperfridge whitepaper with new learnings and description of the implementation. |
+| 5. | API| Update the hyperfridge whitepaper with new learnings and description of the implementation. |
 
 
 ### Milestone 5 Demo-UI with stable-coin application
@@ -304,20 +305,24 @@ Repos:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | Apache 2.0  |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can start the UI and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Adapt unit tests of core functions and test data to ensure functionality and robustness of overall system (bridge and proofs). In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article that explains the hyperfridge. |
 | 1a. | Buy me a coffee dApp | Same as in our first grant, but with ZKPs: DApp where users can accept donations in stablecoin or via bank transfer, making receipts available for self-validation. This will consist of a frontend app in React which serves as an interface for interacting with the chain. Users will be able to link their on-chain `AccountId` to their bank account details (IBAN, balance, etc.), withdraw on-chain balance to their bank account and transfer funds in the bank account via on-chain extrinsic. |
 | 1b. | Proof-Download | UI will provide Proof data and instructions, so that anyone can check the proofs offline by themselves, without UI. |
-| 2. | Docker-Compose: node & Dapp | We will add the Dapp to the docker-compose file of Milestone 2 to demonstrate the full functionality of our chain, the ocw, including a proxy for the FIAT Rest Interface developed in Milestone 1 and the "buy me a coffee" Dapp. We will not provide end-to-end tests based on the demo-UI. |
+| 2. | Docker-Compose: node & Dapp | We will add the Dapp to the docker-compose file of previous Milestones to demonstrate the full functionality of our chain, the ocw, including a proxy for the FIAT Rest Interface.  |
 
 
 ## Future Plans
 
-In the short term, our primary focus is on the challenging task of implementing and refining the Zero-Knowledge Proofs (ZKPs). As immetiate follow-up we see:
+In the short term, our primary focus is on the challenging task of implementing and refining the Zero-Knowledge Proofs (ZKPs). As immediate follow-up we see:
 
-- If needed (smaller proofs), snarking the Risc0 Stark of this grant for on-chain verfication.
-- Adding proofs for *transaction inclusion*, as discussed in the whitepaper. Risc0 is finalizing its work on ["sub-proofs"](https://www.risczero.com/news/continuations) which will likely allow an efficient implementation for generating a separate proof for each transaction.
+- If needed (smaller proofs), snarking the Risc0 Stark of this grant for on-chain verification.
+- Adding proofs for *transaction inclusion*, as discussed in the whitepaper. Risc0 is finalising its work on ["sub-proofs"](https://www.risczero.com/news/continuations) which will likely allow an efficient implementation for generating a separate proof for each transaction.
 - Risc0 is working on a general on-chain validator and an ecosystem to make it easy for applications to integrate.
-- Having above features we see a compelling case for a para-chain.
+- Having the above features we see a compelling case for a para-chain.
 
 <!-- A note to *transaction inclusion* - the focus on the grant is only on *step &alpha;* as referred in the whitepaper. Transaction inclusion is a very powerful extension and would allow a zero-trust FIAT bridge on a transaction level. Besides the balance of an account (basic case for a stablecoin) we would be able to create smart contracts which interact with bank-accounts in a trustless manner (e.g. proof-of-reserve, for payments or cross-chain-bridges having FIAT on the other end). -->
 
