@@ -8,7 +8,7 @@
 - **Payment Address:** 14uNH42NjxS3c4VSxVyHjZYea5ZyJEYWYxjRzmxKQB75pdRB (AssetHub - USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 - **Email:** MrishoLukamba@proton.me || abdulrazzaqlukamba@gmail.com || vane-network@protonmail.com
-- **Address** Tanzania, Dar es salaam, Postcode:14125
+
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
@@ -123,8 +123,21 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 ### Team members
 
 - Mrisho Lukamba
+  
+  **Address**
+  - Tanzania,
+  -  Dar es salaam,
+  -   Postcode:14125
+    
 - Shankar Rao Mata
+  
 - Vijyanedra Gaur
+  
+  **Address**
+  -  India, Maharashtra,
+  -  Pune
+  -  G-302, Sylvania
+  -  Postcode: 411013
 
 ### Contact
 
