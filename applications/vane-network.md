@@ -127,9 +127,15 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
   **Address**
   - Tanzania,
   -  Dar es salaam,
+  -  House No; LNGL/BNJ/516
   -   Postcode:14125
     
 - Shankar Rao Mata
+
+  **Address**
+  - India, Telengana,
+  - Hyderabad,
+  - Plot no 123&124 Sampada Homes, Rajiv Gruha Kalpa
   
 - Vijyanedra Gaur
   
