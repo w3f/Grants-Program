@@ -59,6 +59,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Libeccio Labs](https://github.com/LibeccioLabs)                    | [Tux0](tux0.md)                                                              | [GitHub](https://github.com/LibeccioLabs)                      | ☐          |       ☐        |     ☐     |
 | [PolkaGate](https://polkagate.xyz)                    | [PolkaMask](polkamask.md)                                                              | [GitHub](https://github.com/PolkaGate)                      | ☐          |       ☐        |     ☐     |
 | [Mansa Capital](https://mansacapital.us/)                    | [Ssal](ssal-commods-dex.md)                                                              | [GitHub](https://github.com/MatteoPerona/Riso)                      | ☐          |       ☐        |     ☐     |
+| [Deitos Network](https://github.com/Deitos-Network)                    | [Deitos Network](Deitos_Network.md)                                                              | [GitHub](https://github.com/Deitos-Network)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
