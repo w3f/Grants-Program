@@ -1,7 +1,7 @@
 # Coretime Sale Price Calculator by Lastic
 
 - **Team Name:** Lastic
-- **Payment Address:** [USD-T Address]
+- **Payment Address:** 0x406FCE28194155A223bE3bF1F149D2Ee09c5E272 [USD-T Address]
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview
