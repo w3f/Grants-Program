@@ -1,5 +1,4 @@
 
-
 # TuxedoDapp
 
 - **Team Name:** MLabs
@@ -13,9 +12,9 @@ Develop a Tuxedo Web Wallet and Dapp
 ### Overview
 
 Unlike traditional account-based systems, UTXO-based systems treat each transaction output as a distinct entity, introducing advantages in parallel processing and state transition simplicity. 
-The Tuxedo project endeavors to demonstrate the flexibility and interoperability of Polkadot by implementing UTXO as one of its paradigms. MLabs, with expertise in the Cardano ecosystem utilizing UTXO as its core model, sees an opportunity to contribute to Tuxedo's success, address identified issues, and engage in future collaborative activities.
+The Tuxedo project endeavours to demonstrate the flexibility and interoperability of Polkadot by implementing UTXO as one of its paradigms. MLabs, with expertise in the Cardano ecosystem utilizing UTXO as its core model, sees an opportunity to contribute to Tuxedo's success, address identified issues, and engage in future collaborative activities.
 
-Our current goal is showcasing the potential of Polkadot with the UTXO paradigm for the end user. The project will consist of two key stages:
+Our current goal is to showcase the potential of Polkadot with the UTXO paradigm for the end user. The project will consist of two key stages:
 
 - Stage 1: Simple Web Wallet Creation
 - Stage 2: Simple Dapp Development
@@ -24,27 +23,27 @@ Our current goal is showcasing the potential of Polkadot with the UTXO paradigm 
 
 - Stage 1: Simple Web Wallet Creation
 
-Develop a user-friendly web wallet that allows users to manage their UTXOs on the Tuxedo-based Polkadot network which is similar to polkadot.js which will get the chain info(genesisHash, runtimeMetadata,chain runtime version,API version) , block info ,.
+Develop a user-friendly web wallet that allows users to manage their UTXOs on the Tuxedo-based Polkadot network which is similar to polkadot.js which will get the chain info(genesisHash, runtime metadata, chain runtime version, API version), block info
 Focus on simplicity, security, and ease of use to provide a seamless experience for users interacting with UTXOs.
 
 **Technical Requirements** 
  
- **Security:** : Private key storage:
-Web-based wallet will provide a secure method for private key storage on the client side, such as browser's secure storage or hardware wallets.
+**Security:** : Private key storage:
+Web-based wallet will provide a secure method for private key storage on the client side, such as a browser's secure storage or hardware wallets.
 
 **Functionality**: 
 1. Feature Parity Between Web-Based and CLI Wallets
 The web-based wallet will be designed to mirror the core functionality of the CLI wallet, offering seamless UTXO synchronization and token handling, ensuring that users have an equivalent experience across both interfaces 
 
-2. Issues Fix in web based wallet :(issues/62)
-Current implementation of cli based wallet allows sending inputs from multiple owners in a single transaction, but it only supports a single recipient for all specified outputs.
+2. Issues Fix in web-based wallet :(issues/62)
+The current implementation of a cli based wallet allows sending inputs from multiple owners in a single transaction, but it only supports a single recipient for all specified outputs.
 
 3. Browser compatibility:
-Web-based wallet will ensure compatibility with various browsers(Chrome,firefox,edge).
+Web-based wallet will ensure compatibility with at least one browser (Chrome, Firefox or Edge).
 
 **Blockchain Integration**:
 Web-based wallet will connect to the blockchain node to fetch relevant data.
-We will check if there any lib such as the one used by "https://polkadot.js.org/" to interact with the Tuxedo based blockchain for easy integration. 
+We will check if there is any lib such as the one used by "https://polkadot.js.org/" to interact with the Tuxedo based blockchain for easy integration. 
 
 **Transactions**:
 web-based wallet will implement transaction creation and signing on the client side.
@@ -60,7 +59,7 @@ Vue.js with Vuex and the Vue Router
 TypeScript
 webpack
 Babel - for backwards compatibility in older Browsers
-Localdatabase : IndexedDB or WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
+Local database: IndexedDB or WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
 
 - Stage 2: Dapp Development
 
@@ -76,14 +75,14 @@ This dapp is intended for educational purposes only, and not for production use.
 **Functionality**:
 Pet Creation with NFTs:
 Represent each pet as a unique NFT on the Tuxedo blockchain.
-Use Tuxedo runtime pieces i.e kitties . to handle NFT-based pet creation transactions.
+Use Tuxedo runtime pieces i.e. kitties. to handle NFT-based pet creation transactions.
 
 1. **Breeding and NFT Ownership**:
-Dapp ensure NFT ownership is transferred correctly during breeding transactions.
+Dapp ensures NFT ownership is transferred correctly during breeding transactions.
 Leverage NFT attributes to determine genetics and other breeding-related factors.
 
 2. **Trading NFTs**:
-Dapp enable a marketplace for trading pets (NFTs) between users.
+Dapp enables a marketplace for trading pets (NFTs) between users.
 Implement an offer system for users to make and accept NFT-based offers for pet transactions.
 
 **Blockchain Integration**:
@@ -95,7 +94,7 @@ Dapp implements transaction handling logic in the web application to initiate UT
 Provide feedback to users on transaction status and confirmations.
 
 **Event Handling**:
-Dapp Listen for UTXO and NFT-related events to update the user interface in real-time.
+Dapp Listen for UTXO and NFT-related events to update the user interface in real time.
 Utilize event-driven programming to respond to changes in the UTXO set and NFT ownership.
 
 **Transaction Confirmation**:
@@ -116,9 +115,9 @@ webpack
 - TuxedoDapp seeks to propel the Tuxedo project forward by addressing its current limitations and showcasing the capabilities of Polkadot with the UTXO paradigm. By developing a user-friendly web wallet and a simple Dapp, we aim to provide a valuable use case for users of this ecosystem with limited experience in UTXO.
 
 **Who is your target audience?**
--  **Developers and Enthusiasts from other blockchains:** Developers interested in experimenting with another paradigm but also developers from other ecosystem more "bitcoin-based" that want to try Polkadot.
+- **Developers and Enthusiasts from other blockchains:** Developers interested in experimenting with another paradigm but also developers from other ecosystem more "bitcoin-based" that want to try Polkadot.
     
--   **New Learners in Blockchain Development:** Individuals who are new to blockchain development and want to learn by engaging with the Tuxedo framework. The Tuxedo Web Wallet and Dapp can serve as educational tools, providing a practical environment for learners to understand and experiment with UTXO-based blockchain concepts.
+- **New Learners in Blockchain Development:** Individuals who are new to blockchain development and want to learn by engaging with the Tuxedo framework. The Tuxedo Web Wallet and Dapp can serve as educational tools, providing a practical environment for learners to understand and experiment with UTXO-based blockchain concepts.
 
 **Are there any other projects similar to yours in the Substrate/Polkadot/Kusama ecosystem?**
 
@@ -130,7 +129,6 @@ webpack
 
 - Mario Altimari
 - Amit Nadiger
-- Karan Dev Sapra
 
 ### Contact
 
@@ -140,7 +138,7 @@ webpack
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. MLabs LTD,1st floor Citibase Millbank Tower,21-24 Millbank,LONDON SW1P 4QP,United Kingdom
+- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. MLabs LTD, 1st-floor Citibase Millbank Tower,21-24 Millbank, LONDON SW1P 4QP, United Kingdom
 - **Registered Legal Entity:** MLabs LTD
 
 ### Team's experience
@@ -153,22 +151,19 @@ He has successfully implemented advanced practices, including Prometheus and Gra
 Additionally, Amit has hands-on experience in Ink-based SmartContract development and deployment using a web interface in Substrate Blockchain, demonstrating his versatility in running nodes with different roles, such as Validator/Author and Full node, and configuring Aura and Grandpa through chain specification updates in customSpec.json.
 His diverse skill set showcases a comprehensive understanding of blockchain technologies and their practical applications.
 Amit has more than 100 technical blogs in Blockchain specifically in Substrate, Polkadot and Rust language, Wasm: https://www.linkedin.com/pulse/consolidated-article-categorization-amit-nadiger/
-- Karan is a senior Rust/Substrate Engineer
 
-Noboby applied for a Web3 Foundation grants before.
+Nobody applied for a Web3 Foundation grant before.
 
 
 ### Team Code Repos
 
 - Mario Altimari [https://github.com/AltiMario](https://github.com/AltiMario)
 - Amit Nadiger [https://github.com/NadigerAmit](https://github.com/NadigerAmit) 
-- Karan Dev Sapra [https://github.com/aang114](https://github.com/aang114) 
 
 ### Team LinkedIn Profiles (if available)
 
 - Mario Altimari https://www.linkedin.com/in/altimario/
 - Amit Nadiger https://www.linkedin.com/in/amit-nadiger-94a7224/
-- Karan Dev Sapra https://www.linkedin.com/in/karandevsapra/ 
 
 
 ## Development Status :open_book:
@@ -179,39 +174,39 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):**  1.5 FTE (Mario, Amit and Karan will work part-time on different areas)
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):**  2 FTE 
 - **Total Costs:** $30000 (USD)
 
 ### Milestone 1  — Stage 1: Simple Web Wallet Creation 
 
-- **Estimated duration:** 1.5 month
-- **FTE:**  *1.5*
+- **Estimated duration:** 1 month
+- **FTE:**  *1*
 - **Costs:** $10000 (USD)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the web wallet app for tuxedo(Privite key configuration, local uri to be used to connect to blockchain) and send test transactions, tuxedo balance, which will show how the new functionality works. |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the web wallet app for Tuxedo (Private key configuration, local URI to be used to connect to blockchain) and send test transactions, tuxedo balance, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article**/workshop that explains how to use the web based wallet which can be used to configure the users private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account based blockchain. |
-| 0e. | Web based wallet | We will create a web based wallet which will have functionalities like: Storing the private key of user,(send and receive) Transaction support, Basically all the functionalities provided by the CLI based wallet (AmoebaDemo,VerifyCoin,SpendCoins,InsertKey,GenerateKey,ShowKeys,RemoveKey,ShowBalance,ShowAllOutputs) |
+| 0d. | Article | We will publish an **article**/workshop that explains how to use the web-based wallet which can be used to configure the user private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account-based blockchain. |
+| 0e. | Web-based wallet | We will create a web-based wallet which will have functionalities like Storing the private key of the user,(send and receive) Transaction support, Basically all the functionalities provided by the CLI-based wallet (AmoebaDemo, VerifyCoin, SpendCoins, InsertKey, GenerateKey, ShowKeys, RemoveKey, ShowBalance, ShowAllOutputs) |
 
 
 
 ### Milestone 2 — Stage 2: Simple Dapp Development
 
-- **Estimated Duration:** 2.5 month
-- **FTE:**  1.5
+- **Estimated Duration:** 2 months
+- **FTE:**  2
 - **Costs:** $20000 (USD)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the Dapp app for breed pets, trade pets , view and manage the pets using Tuxedo blockchain and personal dashboard |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the Dapp app to breed pets, trade pets, view and manage the pets using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|**0d.** | Article | We will publish an **article**/workshop that explains how to use the Dapp which can be used to "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading and also how use the Dashboard |
-| **0e.** | Dapp | We will create a web based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading. |
+|**0d.** | Article | We will publish an **article**/workshop that explains how to use the Dapp which can be used to "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading and also how to use the Dashboard |
+| **0e.** | Dapp | We will create a web-based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading. |
 | **0f.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based pet collections. Display detailed information about each NFT, including ownership history and transaction history |
 ...
 
@@ -226,7 +221,7 @@ When we implement the authentication backend server is required to handle user a
 **Encrypting the local database:** 
 We will consider encrypting sensitive data stored in the local database, especially private keys.
 **Piece development**: 
-We would like to develop undeveloped and required pieces which are equivalent to pallets in substrate framework which are built using FRAME . Ex: Babe , Sudo , System , membership ,etc .
+We would like to develop undeveloped and required pieces which are equivalent to pallets in Substrate framework which are built using FRAME. Ex: Babe, Sudo, System, membership, etc.
 
 
 ## Referral Program (optional) :moneybag:
