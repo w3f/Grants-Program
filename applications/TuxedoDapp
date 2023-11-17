@@ -14,14 +14,14 @@ Develop a Tuxedo Web Wallet and Dapp
 Unlike traditional account-based systems, UTXO-based systems treat each transaction output as a distinct entity, introducing advantages in parallel processing and state transition simplicity. 
 The Tuxedo project endeavours to demonstrate the flexibility and interoperability of Polkadot by implementing UTXO as one of its paradigms. MLabs, with expertise in the Cardano ecosystem utilizing UTXO as its core model, sees an opportunity to contribute to Tuxedo's success, address identified issues, and engage in future collaborative activities.
 
-Our current goal is to showcase the potential of Polkadot with the UTXO paradigm for the end user. The project will consist of two key stages:
+Our goal is to showcase the potential of Polkadot using the UTXO paradigm for the end user, leveraging Tuxedo. The project will consist of two key stages:
 
-- Stage 1: Simple Web Wallet Creation
-- Stage 2: Simple Dapp Development
+- Stage 1: Developing a simple Web Wallet
+- Stage 2: Developing a basic Dapp
 
 ### Project Details
 
-- Stage 1: Simple Web Wallet Creation
+- Stage 1: Developing a simple Web Wallet
 
 Develop a user-friendly web wallet that allows users to manage their UTXOs on the Tuxedo-based Polkadot network which is similar to polkadot.js which will get the chain info(genesisHash, runtime metadata, chain runtime version, API version), block info
 Focus on simplicity, security, and ease of use to provide a seamless experience for users interacting with UTXOs.
@@ -178,7 +178,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 - **Full-Time Equivalent (FTE):**  2 FTE 
 - **Total Costs:** $30000 (USD)
 
-### Milestone 1  — Stage 1: Simple Web Wallet Creation 
+### Milestone 1  — Stage 1: Developing a simple Web Wallet 
 
 - **Estimated duration:** 1 month
 - **FTE:**  *1*
@@ -194,7 +194,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 
 
-### Milestone 2 — Stage 2: Simple Dapp Development
+### Milestone 2 — Stage 2: Developing a basic Dapp
 
 - **Estimated Duration:** 2 months
 - **FTE:**  2
@@ -230,6 +230,3 @@ We would like to develop undeveloped and required pieces which are equivalent to
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Meeting with the Web3 Foundation team at the beautiful Sub0 conference in Lisbon
-
-[@AltiMario](https://github.com/AltiMario)
-[@NadigerAmit](https://github.com/NadigerAmit)
