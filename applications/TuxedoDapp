@@ -73,13 +73,6 @@ This dapp is intended for educational purposes only, and not for production use.
 
 **Technical Requirements** 
 
-**Peiece_contracts(Rust)**:
-In order to support the smart contract on Tuxedo runtime, we need develop a piece (based on UTXO) which is similar to "pallet_contracts" which needs to be integrated in to Tuxedo runtime, incorporating UTXO-based logic.
-
-**Smart contracts**: 
-We need develop smart contracts using the Ink language and "Peiece_contracts: developed earlier to support the smart contract on Tuxedo.
-Smart contracts are used to create and manage NFTs, allowing each pet to have its own distinct identity, ownership, transfer of ownserships  and properties ,etc.
-
 **Functionality**:
 Pet Creation with NFTs:
 Represent each pet as a unique NFT on the Tuxedo blockchain.
@@ -113,8 +106,6 @@ We will develop a personal dashboard for users to view and manage their NFT-base
 Display detailed information about each NFT, including ownership history and transaction history.
 
 Tech Stack:
-Smart Contracts using INK language 
-Peiece_contracts to be developed using Rust 
 IPFS (InterPlanetary File System) for storage 
 TypeScript
 webpack
@@ -220,10 +211,8 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the Dapp app for breed pets, trade pets , view and manage the pets using Tuxedo blockchain and personal dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |**0d.** | Article | We will publish an **article**/workshop that explains how to use the Dapp which can be used to "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading and also how use the Dashboard |
-| **0e.** | piece_contract  | We will create a Piece_contract which is similar to pallet_contract(built using FRAME) which is required for running the smart contract on Tuxedo blockchain|
-| **0f.** | Smart Contrcat | We will create a smart contract using the INK language which are used to create and manage NFTs, allowing each pet to have its own distinct identity, ownership, transfer of ownerships and properties,etc. |
-| **0g.** | Dapp | We will create a web based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading. |
-| **0h.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based pet collections. Display detailed information about each NFT, including ownership history and transaction history |
+| **0e.** | Dapp | We will create a web based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading. |
+| **0f.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based pet collections. Display detailed information about each NFT, including ownership history and transaction history |
 ...
 
 
