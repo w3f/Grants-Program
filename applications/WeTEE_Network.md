@@ -273,15 +273,37 @@ At the current stage, we are focused on establishing the first version of the on
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.) |
-| 01. | Worker remote attestation as proof of work | Remote attestation module, users can use it to check the confidential running status of the application in real time. The module will automatically generate workers and synchronize the hash of remote proof files to the chain. Users or challengers can verify the verification status of the worker through proof files.<br>1. Worker cluster remote attestation service <br> 2. Worker upload remote attestation as proof of work |
+| 01. | Remote attestation module, users can use it to check the confidential running status of the application in real time. The module will automatically generate worker proof and synchronize the hash of the remote proof file to the chain. Users or challengers can verify the verification status of the worker through the proof file.<br>1. Worker cluster remote attestation service <br> 2. Worker upload remote attestation as proof of work |
 | 02. | Worker log as proof of work | Synchronize the log of application running through libos to worker, and synchronize the hash file to the chain to prove the correctness and stability of program execution, users can view the application log to determine the status of program execution.<br>1. Worker cluster upload app log of app as proof of work |
 | 03. | Worker monitoring as proof of work |Through libos, synchronize the resource usage status of the application to the worker, and synchronize the hash and resource usage data of the file to the chain. The chain will calculate the resources of the application and issue rewards for the worker.<br>1. Worker cluster upload app monitoring of app as proof of work |
 
 ## Future Plans
+When you express interest in the future development of WeTEE, our team is deeply encouraged, as your support leads us to believe that our code and products will achieve meaningful and valuable results.
 
-With the completion of the current grant, we have built a proof of concept for the project. Moving forward, we will develop the DApp UI and onboard it to polkadot ecosystem through blockspace.  
+This grant will allow us to focus on developing core features, laying a reliable business foundation for WeTEE. Upon reviewing the outcomes of our submitted grant, you will be able to easily verify WeTEE's core business using the documentation guidance and Docker examples provided by WeTEE.
 
-In the future, we will support more confidential computing solutions, such as TDX, SEV, etc. We will also support TEE oracle functions, adding on-chain to off-chain and then back to on-chain interaction channels.  
+The R&D of WeTEE can be divided into three major stages, each of which contains several small R&D stages or iterative cycles:
+• Core R&D stage
+• User experience optimization stage
+• Ecosystem construction stage
+
+During the current core development stage, WeTEE will concentrate all research and development resources on WeTEE's own development, including on-chain workers, apps, tasks, as well as K3S/K8S operators relevant to physical servers, app deployment models, task deployment models, and worker attestation models.
+
+Once this part is completed, WeTEE will spend a small amount of time to reorganizing the code and conducting a retrospective on the completed work, after which the development will move into the next phase of core research and development.
+
+At this stage, the R&D content mainly includes the WeTEE test/main network, the WeTEE Dapp SDK, accessing the Polkadot mainnet using CoreTime, as well as the WeTEE monitoring system and the WeTEE Web user interface.
+
+After completing this stage of development, WeTEE will invite seed users to conduct usability testing and user acceptance testing, and operational work will be carried out in accordance with the requirements of WeTEE DAO. Following initial user feedback, targeted fixes and optimizations will be implemented to address any issues within WeTEE.
+
+The following will enter the third phase of core R&D, which is also the last core R&D phase in the current planning. In this phase, WeTEE will dynamically allocate R&D resources to the ‘blockchain-related’ or ‘hardware-related’ fields based on user and market feedback.
+• Blockchain-related:
+    ◦ Integrate https://github.com/paritytech/frontier and support wallet applications such as Metamask
+    ◦ Improve the multi-language version of the SDK to help users better integrate accounts and business between Web2 apps and Web3 DApps
+    ◦ Improve the decentralized collaboration system of WeTEE, allowing WeTEE users to view the status of application clusters and application deployment events at any time
+• Hardware-related:
+    ◦ Compatibility with AMD SEV confidential solution
+    ◦ Compatibility with Intel TDX confidential solution
+    ◦ Performance optimization of confidential computing, distributed storage, and network for server K3S/K8S.
 
 ## Additional Information :heavy_plus_sign:
 
