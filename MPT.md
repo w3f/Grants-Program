@@ -20,13 +20,13 @@ MPT assists businesses in  reaching untapped markets by connecting real-world as
 
 At Marco Polo Technologies, we have constructed the foundational layer of our infrastructure using *Rust* and opted for *Substrate* as our blockchain development framework. This decision enables us to integrate a blockchain layer tailored specifically for the primary and secondary token issuance of real-world assets. As dedicated practitioners, we persistently work with modern frameworks to democratize access for all investor classes and help unlock previously unreachable markets. By crafting our alternative finance protocol for real-world assets on *Substrate* and seamlessly integrating it with our existing infrastructure, Marco Polo Technologies aims to share and create the following benefits with the Polkadot ecosystem:
 
-- Financial Inclusivity: We are on a mission to streamline onboarding by leveraging our unique social network to connect with reliable clientele, thereby expanding the digital private markets' reach to a broader spectrum of investors and asset owners.
-- Asset Interoperability: Our integration will ensure effortless transfers and trades of real-world assets across the Polkadot network, expanding liquidity and accessibility for all participants.
+- Financial inclusivity: We are on a mission to streamline onboarding by leveraging our unique social network to connect with reliable clientele, thereby expanding the digital private markets' reach to a broader spectrum of investors and asset owners.
+- Asset interoperability: Our integration will ensure effortless transfers and trades of real-world assets across the Polkadot network, expanding liquidity and accessibility for all participants.
 - Expanding market access: We provide a gateway for diverse participants to delve into private markets and real-world asset issuance, enriching the Polkadot ecosystem's financial landscape.
 - Fostering DeFi innovation: We actively incorporate real-world assets within the decentralized finance space, reinforcing potential DeFi applications like fractional ownership, collateralization, and asset-backed lending, to attract new clients and assets to the Polkadot ecosystem.
 - Building a robust ecosystem: We add a strategic financial component to augment the inherent infrastructure of Polkadot, attracting a wider range of platforms and users and diversifying its applications.
-- Blockchain Synergy: We emphasize the support for diverse real-world assets and guarantee seamless trading and investment opportunities throughout the network.
-- Wallet Compatibility: Our protocol is geared towards aligning with various wallets within the Polkadot ecosystem, simplifying the procedures of buying, storing, and exchanging real-world assets for every investor class.
+- Blockchain synergy: We emphasize the support for diverse real-world assets and guarantee seamless trading and investment opportunities throughout the network.
+- Wallet compatibility: Our protocol is geared towards aligning with various wallets within the Polkadot ecosystem, simplifying the procedures of buying, storing, and exchanging real-world assets for every investor class.
 
 #### Team interest
 
