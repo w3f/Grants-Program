@@ -76,7 +76,7 @@ Our infrastructure is designed to be used by technology teams and by less tech-s
 
 ### Legal Structure
 
-- **Legal entity:** _US Inc._ entity
+- **Legal entity:** _Inc._ american company
 
 ### Team's experience
 
