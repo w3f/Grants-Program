@@ -1,7 +1,7 @@
 # Marco Polo Technologies - Powering alternative finance platforms on web3
 
 - **Team Name:** Marco Polo Technologies
-- **Payment Address:** Fiat 11.20.2023, 03:25 PM Time Zone Asia/Riyadh
+- **Payment Address:** Fiat 11.20.2023, 04:53 PM AST
 - **Level:** 3
 
 ## Project Overview :page_facing_up:
