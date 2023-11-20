@@ -76,7 +76,7 @@ Our infrastructure is designed to be used by technology teams and by less tech-s
 
 ### Legal Structure
 
-- **Legal entity:** American *Inc.* or EU *LLC* entity, DBA Marco Polo Technologies
+- **Legal entity:** _US Inc._ entity
 
 ### Team's experience
 
@@ -104,13 +104,13 @@ The below roadmap refers to an initial implementation of a purposely built proto
 
 - **Total Estimated Duration:** ~4 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
-- **Total Costs:** 80,000 USD
+- **Total Costs:** 60,000 USD
 
 ### Milestone 1
 
 - **Estimated duration:** ~1.5 months
 - **FTE:** 2.5
-- **Costs:** 30,000 USD
+- **Costs:** 22,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -146,7 +146,7 @@ The below roadmap refers to an initial implementation of a purposely built proto
 
 - **Estimated Duration:** ~1.5 month
 - **FTE:** 2.5
-- **Costs:** 30,000 USD
+- **Costs:** 22,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -177,7 +177,7 @@ The below roadmap refers to an initial implementation of a purposely built proto
 
 - **Estimated Duration:** ~1 month
 - **FTE:** 2.5
-- **Costs:** 20,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
