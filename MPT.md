@@ -1,7 +1,7 @@
 # Marco Polo Technologies - Powering alternative finance platforms on web3
 
 - **Team Name:** Marco Polo Technologies
-- **Payment Address:** USDT on Polygon network - Address: `0x73dAB67D57816117f7C157b9343425fF88f95b2c`
+- **Payment Address:** Fiat 11.20.2023, 03:25 PM Time Zone Asia/Riyadh
 - **Level:** 3
 
 ## Project Overview :page_facing_up:
@@ -76,7 +76,7 @@ Our infrastructure is designed to be used by technology teams and by less tech-s
 
 ### Legal Structure
 
-- **Legal entity:** _Inc._ american company
+- **Legal entity:**  _Private limited company, OÜ_
 
 ### Team's experience
 
