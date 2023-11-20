@@ -1,7 +1,7 @@
 # Marco Polo Technologies - Powering alternative finance platforms on web3
 
 - **Team Name:** Marco Polo Technologies
-- **Payment Address:** Network and token address **to be added**
+- **Payment Address:** USDT on Polygon network - Address: 0x73dAB67D57816117f7C157b9343425fF88f95b2c
 - **Level:** 3
 
 ## Project Overview :page_facing_up:
