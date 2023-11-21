@@ -125,7 +125,7 @@ A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and o
    - Paul Oamen (CTO)
    - Pius Onobhayedo
    - John Chimaobi
-   - Samuel Anthony
+   - Ayomide Adebara
    - Boluwatife Oguntoyinbo
    - Nwele Uchenna
   
