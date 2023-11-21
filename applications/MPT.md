@@ -42,7 +42,7 @@ Our primary objective is to design a comprehensive alternative finance protocol,
 
 The image below represents the two layers of our infrastructure and how we started using the _Substrate_ layer to support all sorts of alternative finance platform implementations. 
 
-![](static/img/MPTarchitecture.png)
+[MPT architecture](https://drive.google.com/file/d/1Ev53UFTpIXOItnsM-RedIu_vGhYBdMh1/view?usp=sharing)
 
 Among the diverse work of our team members, here are some platforms that have been built and deployed in the past decade, clients vary from boutique advisory firms to publicly traded companies:
 
@@ -92,7 +92,7 @@ We will be providing and updating an _ad hoc_ repository in the context of the c
 
 ## Development Status :open_book:
 
-Here you can find documentation on the research and our preliminary conversation with a Parity team member: [MPT market research](MPT_market_research.pdf) and [Reference of previous conversation with Parity](Parity_Marco_Polo_preliminary.pdf).
+Here you can find documentation on the research and our preliminary conversation with a Parity team member: [MPT market research](https://drive.google.com/file/d/1b5Dx-7wqnL9iUNC76-SgUovMRMKu62UM/view?usp=sharing) and [Reference of previous conversation with Parity](https://drive.google.com/file/d/15JU9j7_YAJB1CQbulkxYnspKnpQuDCKd/view?usp=sharing).
 
 ## Development Roadmap :nut_and_bolt:
 
