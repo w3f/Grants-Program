@@ -1,8 +1,8 @@
 # daos
 
 * **Team Name:** daos-org
-* **Payment Address:** 0x08A7876db92b07057E12fAF29AA3CCF33b5aAe3D (USDT ERC20)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+* **Payment Address:** 0x4cEB9d2FF10145D67a24BA814580Ce80b24c94d3 (USDT ERC20)
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Overview
 
@@ -101,9 +101,9 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 
 ### Overview
 
-* **Total Estimated Duration:** 2 months
-* **Full-Time Equivalent (FTE):** 6FTE
-* **Total Costs:** 8.5k USD
+* **Total Estimated Duration:** 4 months
+* **Full-Time Equivalent (FTE):** 17FTE
+* **Total Costs:** 18.5k USD
 ### Milestone 1 — Implement Create-Dao, Agency, DoAS, Square, and Sudo Modules
 
 * **Estimated duration:** 1 month
@@ -136,8 +136,30 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 |0b. | Testing                     | Write unit tests for all modules                                                                                                 |
 |0c. | Docuemnt                    | Complete all module documentation                                                                                                |
 |0d. | Benchmarking                | Write Benchmarking code and generate weight.rs for each module                                                                   |
-|1.       | Substrate Module: Emergency | When dao cannot run normally for some reason, such as wrong parameter settings, it can be adjusted through democracy and council |
+|1.       | Substrate Module: mergency | When dao cannot run normally for some reason,E such as wrong parameter settings, it can be adjusted through democracy and council |
 |2. | DAO Template Development Manual | Provide a detailed development manual docs so that developers can quickly develop their own DAO templates based on daos          |
+
+### Milestone 3 - Smart Contract. (Reconstructed based on ink)
+
+* **Estimated duration:** 2 month
+* **FTE:** 8
+* **Costs:** 10000 USD
+
+| Number | Deliverable | Specification                                                                                                                                               |
+|-------:|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+|      1 | create-dao  | Users can create their own DAO based on the DAO template provided by the developer.                                                                         |
+|      2 | agency      | Similar to the function of the collective module, it can make some decisions for DAO more quickly. It can also decide what origin corresponds to each call. |
+|      3 | doas        | Execute voting results via doas.                                                                                                                            |
+|      4 | square      | The highest authority, everyone has the right to vote.                                                                                                      |
+|      5 | sudo        | There is no supreme authority before decentralization. Proposals can be executed directly.                                                                  |
+|      6 | emergency   | When the DAO fails to function properly for some reason, voting can be performed outside the DAO to restore it.                                             |
+|      7 | example     | A code example using daos contract.                                                                                                                         |
+
+
 
 ## Future Plans
 
