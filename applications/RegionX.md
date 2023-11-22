@@ -131,6 +131,20 @@ Our sole assumption is that the concepts outlined in the Agile Coretime RFC are 
 
 To create a marketplace on a contracts parachain, we'll need an NFT region contract. We'll use the [Openbrush](https://openbrush.brushfam.io/) psp34 contract as a starting point for the code we develop.
 
+**Market UI**
+
+This section outlines the design of the Coretime market developed as part of this proposal. If additional relevant data is identified, we will expand upon the design.
+
+- The main market dashboard allows users to browse and filter, making it easier for them to find the region they are looking for:
+<p align="center">
+    <img width="800" src="https://i.postimg.cc/tJvtLjDv/Frame-20-1.jpg"/>
+</p>
+
+- The UI for performing cross-chain region transfers which will be utilized when transferring regions between the Coretime chain and the smart contract chain where RegionX is deployed, or vice versa.
+<p align="center">
+    <img width="800" src="https://i.postimg.cc/TYqCRz1w/Frame-21.jpg"/>
+</p>
+
 ### Ecosystem Fit
 
 RegionX will offer a Coretime market and a suite of tools, making it easy for teams to develop their projects on Polkadot or Kusama. This project will empower smaller teams by providing flexible options to purchase regions from the market.
