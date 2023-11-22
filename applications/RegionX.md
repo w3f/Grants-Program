@@ -131,18 +131,28 @@ Our sole assumption is that the concepts outlined in the Agile Coretime RFC are 
 
 To create a marketplace on a contracts parachain, we'll need an NFT region contract. We'll use the [Openbrush](https://openbrush.brushfam.io/) psp34 contract as a starting point for the code we develop.
 
-**Market UI**
+**Coretime Market UI**
 
 This section outlines the design of the Coretime market developed as part of this proposal. If additional relevant data is identified, we will expand upon the design.
 
-- The main market dashboard allows users to browse and filter, making it easier for them to find the region they are looking for:
+- The main market dashboard allows users to browse and filter, making it easier for them to find the region they are looking for.
+
+	Users will have the flexibility to choose a time unit for inputting values, which will serve as the basis for region filtering. The maximum time unit available will be a day, allowing users to input values using a calendar input field. For other durations, users can simply provide numeric input in a designated field.
+
+	The Core ownership field will be represented as a percentage range of the total Coretime ownership that the region has on a specific core.
+
 <p align="center">
-    <img width="800" src="https://i.postimg.cc/tJvtLjDv/Frame-20-1.jpg"/>
+    <img width="800" src="https://i.postimg.cc/50yHKvcM/Frame-20-3.jpg"/>
 </p>
 
 - The UI for performing cross-chain region transfers which will be utilized when transferring regions between the Coretime chain and the smart contract chain where RegionX is deployed, or vice versa.
 <p align="center">
     <img width="800" src="https://i.postimg.cc/TYqCRz1w/Frame-21.jpg"/>
+</p>
+
+- The UI for selling regions will become accessible to users once they choose one of their regions from the Region Dashboard. Any region listed for sale must be located on the smart contract parachain where RegionX is situated. In situations where the region is on the Coretime chain, users should first utilize the Cross-Chain UI for transferring the region.
+<p align="center">
+    <img width="800" src="https://i.postimg.cc/DzJQmtZG/Frame-22.jpg"/>
 </p>
 
 ### Ecosystem Fit
