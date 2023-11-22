@@ -209,45 +209,28 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):** 7.3
-- **Total Costs:** 30,000 USD
+- **Total Estimated Duration:** 2.9 months
+- **Full-Time Equivalent (FTE):** 5.15
+- **Total Costs:** 20,000 USD
 
   ### Preamble
   The following pallets and components implementation are structured in a way that the prior implementation will be depended by the post implementation. And the first milestone is the improvemnet on how we implement the POC.
   The POC implemented most of things in customized existing pallets but they seemed too rigid and did not fit vane implementation vision, so that is why there is vane custom pallet asset. And other pallets are totally unique.
 
-### Milestone 1 — Implementation of pallet_vane_relay_asset
+  Note that we removed our initial first milestone, we will implement that without any cost. We strongly believe after the funding of Vane from web3 foundation we will be rady to go the market and prove our case by action that users need safety in their day to day crypto interactions ( transactions ) and blockchain can be used in social-commerce.
 
-- **Estimated duration:** 0.8 months
-- **FTE:**  2
-- **Costs:** 7,000 USD
-
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Video tutorial | We will publish an workshop on X/Twitter that explains what was done/achieved as part of the grant and how the product should be used and invite one user to try out the feature implemented and get the impression |
-| 1. | vane_relay_asset   |The pallet_vane_relay_asset will have the following unique feature implementation.<br><br> **Vane token abstraction for fees handling**<br><br>This functionality will enable users of vane-network solution to just use their existing DOT, USDT, USDC tokens and not being introduced with any   foreign native token. This will improve UX and enable more people to use the solution.<br><br> This pallet will interact with pallet_alances to handle fees,token depositing and withdrawing based on deposited balance in the relay chain vane para account.<br> Pallet balances native token will not be liquid to end users as the required amount of fees to handle DOS attack will be handled automatically after the initialization of transaction. Hence token abstraction and native token-less approach as for now.<br><br> **Map only supported asset**<br>This functionality will enable existing users to transfer their DOT, USDT, USDC tokens only in a risk free system with confirmation and reversibility of the transaction. This functionality will interact with the following traits, EnsureOriginWithArg, MultiCurrencyAsset, ContainsPair. The multilocations which will be allowed and handled are, {parent:1,parachain:1000}, {parent:0, Here}.<br><br>**On Deposit & OnConfirmed trait introduction and implementation**<br>On Deposit - This trait will handle creation of Multi-Signature account and depositing of funds to the multi-id. It will interact with TransactAsset to handle this implementation on XCM message execution ( DepositReserveAssets).<br>OnConfirmed - This trait will handle the submission of custom XCM messages to relay chain/assethub for transaction asset to the beneficiary post confirmation, updating transactionStatus to handle failed transaction claims later if anything goes wrong on the delivery of XCM message.<br>
-| 2. | Backend (Nest JS)  | All chain ( vane, polkadot/rococo, assethub) api interaction implementation, wallet-less signin ( for easier onboarding users for testing the prodduct) not production ready |
-| 3. | FrontEnd | A front end prototype in Figma, A front end interaction for implemented feature hosted in vercel which will be only for wide screen ( no responsiveness ) as later on (not this grant ) we will implement a mobile application |
+  We have already deployed into Tanssi DanceBox testnet. 
 
 
 
 
 
-
-
-### Milestone 2 — Trasanction Delivery Tracking System with XCM & Pallet Tansaction Claim.
+### Milestone 1 — Trasanction Delivery Tracking System with XCM & Pallet Tansaction Claim.
  
 
-- **Estimated duration:** 1 month
-- **FTE:**  2.65
-- **Costs:** 11,500 USD
+- **Estimated duration:** 0.7 month
+- **FTE:**  2.5
+- **Costs:** 9,000 USD
 
 
 
@@ -268,14 +251,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 
 
-### Milestone 3 - Pallet contract & chain extensions for extending vane-product services.
+### Milestone 2 - Pallet contract & chain extensions for extending vane-product services.
 
 ### Notion templates marketplace as a POC
 
 
 - **Estimated duration:** 1.2 month
 - **FTE:**  2.65
-- **Costs:** 11,500 USD
+- **Costs:** 11,000 USD
 
 
 
