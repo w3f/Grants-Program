@@ -61,6 +61,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Mansa Capital](https://mansacapital.us/)                    | [Ssal](ssal-commods-dex.md)                                                              | [GitHub](https://github.com/MatteoPerona/Riso)                      | ☐          |       ☐        |     ☐     |
 | [Deitos Network](https://github.com/Deitos-Network)                    | [Deitos Network](Deitos_Network.md)                                                              | [GitHub](https://github.com/Deitos-Network)                      | ☐          |       ☐        |     ☐     |
 | [Lastic](https://www.lastic.xyz/)                    | [Coretime Sale Price Calculator](lastic-price-simulation-2.md)                                                              | [GitHub](https://github.com/LasticXYZ/price-simulation)                      | ☐          |       ☐        |     ☐     |
+| [Tokenguard.io](http://tokenguard.io/)                   | [Tokenguard](Tokenguard.md)                                                              | [GitHub](https://github.com/tokenguardio)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
