@@ -25,12 +25,20 @@ jobs:
     if: needs.get_filename.outputs.filename
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Parse application file
         id: grant_parser
         uses: w3f/parse-grant-application-action@master
         with:
           path: "${{ github.workspace }}/${{ needs.get_filename.outputs.filename }}"
+      - name: label-as-new
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["to-check"]
+            })
