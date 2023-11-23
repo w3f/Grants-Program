@@ -62,6 +62,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Deitos Network](https://github.com/Deitos-Network)                    | [Deitos Network](Deitos_Network.md)                                                              | [GitHub](https://github.com/Deitos-Network)                      | ☐          |       ☐        |     ☐     |
 | [Lastic](https://www.lastic.xyz/)                    | [Coretime Sale Price Calculator](lastic-price-simulation-2.md)                                                              | [GitHub](https://github.com/LasticXYZ/price-simulation)                      | ☐          |       ☐        |     ☐     |
 | [Tokenguard.io](http://tokenguard.io/)                   | [Tokenguard](Tokenguard.md)                                                              | [GitHub](https://github.com/tokenguardio)                      | ☐          |       ☐        |     ☐     |
+| [element36 AG](https://element36.io)                   | [Hyperfridge](hyperfridge.md)                                                              | [GitHub](https://github.com/element36-io)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
