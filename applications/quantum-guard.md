@@ -27,8 +27,8 @@ QuantumGuard is a project that aims to create a safe quantum-resistant parachain
 
 The current Grant application will focus on enabling quantum-safe cryptography for address generation and signing transaction in a Substrate-based blockchain. In order to achieve this, the development will focus on two objectives:
 
-- Customization of Substrate crypto pallet in order to use CRYSTALS-Dilithium for addresses generation and signing transaction;
-- A custom version of browser wallet extension (Polkadot.js or Talisman) which allows to store keyparis and sign transaction using CRYSTALS-Dilithium cryptography. 
+- Customization of Substrate crypto pallet in order to use CRYSTALS-Dilithium for addresses generation and signing transaction: in order to achieve this, it'll be used the Rust integration of CRYSTALS-dilithium algorithm as published in the following Github repository: https://github.com/pq-crystals/dilithium under Apache 2.0 License;
+- A custom version of browser wallet extension (Polkadot.js or Talisman) which allows to store keyparis and sign transaction using CRYSTALS-Dilithium cryptography: this will be developed using the Javascript version of the CRYSTALS-dilithium algorithm published as npm package https://www.npmjs.com/package/dilithium-crystals under MIT License, adapting it for the use with a Hierarchical Deterministic wallet.
 
 ### Ecosystem Fit
 
@@ -52,7 +52,13 @@ The ultimate goal of the project is to provide a full parachain that will act as
 
 ### Team's experience
 
-Andrea Di Franco is a senior software developer and blockchain specialist, working in R&D for several EU-funded research projects involving blockchain, cryptography and digital identity.
+Andrea Di Franco is a senior software developer and blockchain specialist, working in R&D for several EU-funded research projects involving blockchain, cryptography and digital identity. He's been working for 4 years in a European company deeply involved in digital transformation, 
+studying and applying many different cryptographic algorithms such as:
+- Hashing functions SHA-2, SHA-3;
+- RSA asymmetric cryptography applied to digital identity and PKI infrastructure;
+- Elliptic curve cryptography algorithms, applied to different blockchains, such as SECP256K1, ED25519;
+- Ring signature schemes;
+- Omomorphic encryption.
 
 ### Team Code Repos
 
