@@ -16,6 +16,8 @@ Zooper Corp's Node Red Client for Polkadot is a project aimed at bridging the ga
 - **Documentation:** Comprehensive documentation of core components and Node Red usage page
 - **Prior Work:** https://flows.nodered.org/node/node-red-contrib-polkadot
 - **Project Limitations:** Client supports Substrate only
+- **Total Costs:** 25,000 DAI
+- **Total Milestones:** 1
 
 ### Ecosystem Fit
 
