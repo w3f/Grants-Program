@@ -33,13 +33,14 @@ Web-based wallet will provide a secure method for private key storage on the cli
 
 **Functionality**: 
 1. Feature Parity Between Web-Based and CLI Wallets
-The web-based wallet will be designed to mirror the core functionality of the CLI wallet, offering seamless UTXO synchronization and token handling, ensuring that users have an equivalent experience across both interfaces 
+The web-based wallet will be designed to mirror the core functionality of the CLI wallet, offering seamless UTXO synchronization and token handling, ensuring that users have an equivalent experience across both interfaces
+Note : Feature Parity: Means web-based and command-line interface (CLI) wallets, have the same set of features and functionalities and both versions provide an equivalent or identical user experience by offering the same core capabilities, options.
 
-2. Issues Fix in web-based wallet :(issues/62)
+3. Issues Fix in web-based wallet :(issues/62)
 The current implementation of a cli based wallet allows sending inputs from multiple owners in a single transaction, but it only supports a single recipient for all specified outputs.
 
-3. Browser compatibility:
-Web-based wallet will ensure compatibility with at least one browser (Chrome, Firefox or Edge).
+4. Browser compatibility:
+Web-based wallet will ensure compatibility with Chrome, Firefox and Edge.
 
 **Blockchain Integration**:
 Web-based wallet will connect to the blockchain node to fetch relevant data.
@@ -103,8 +104,28 @@ Dapp implements a transaction confirmation mechanism to ensure that users are in
 **Personal Dashboard**:
 We will develop a personal dashboard for users to view and manage their NFT-based pet collections.
 Display detailed information about each NFT, including ownership history and transaction history.
+Manage NFT means , it icludes below :
+1. Viewing NFTs:
+   Users should be able to see a comprehensive list or visual representation of all the NFTs (pets) they own.
+   Display detailed information about each NFT, including attributes such as species, color, pattern, eyes, ears, tail, etc.
+2. Ownership History:
+   Show the ownership history of each NFT, indicating when it was created, bred, or traded.
+   Provide transparency on how the ownership of each pet has changed over time.
+3. Transaction History:
+   Display a record of all transactions involving each NFT, such as creation, breeding, and trading.
+   Include details like transaction timestamps, involved parties, and any fees associated with the transactions.
+4. Breed and Trade Options:
+    User should be able to initiate breeding and trading directly from the dashboard.
+    Include options to send breeding requests, accept offers, and initiate trades.
+5. Naming and Customization:
+   Enable users to customize and name their pets directly from the dashboard.
+   Allow for a personalized touch, letting users give distinct identities to their NFTs.
+6. Transfer and Ownership Management:
+   Provide options for transferring ownership of NFTs to other users within the platform.
+7. Interactivity:
+   Make dashboard interactive, allowing users to click on individual NFTs to access more detailed information or initiate specific actions.
 
-Tech Stack:
+**Tech Stack:**
 IPFS (InterPlanetary File System) for storage 
 TypeScript
 webpack
@@ -206,7 +227,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the Dapp app to breed pets, trade pets, view and manage the pets using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |**0d.** | Article | We will publish an **article**/workshop that explains how to use the Dapp which can be used to "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading and also how to use the Dashboard |
-| **0e.** | Dapp | We will create a web-based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading. |
+| **0e.** | Dapp | We will create a web-based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading.(Meaning of "Managment of NFT" is mentioned above in Dashboard  ) |
 | **0f.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based pet collections. Display detailed information about each NFT, including ownership history and transaction history |
 ...
 
