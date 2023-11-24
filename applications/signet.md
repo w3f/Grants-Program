@@ -187,8 +187,7 @@ We’d like to address these improvements in the course of packaging Sign in Wit
 | **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up a SIWS service and authenticate wallets, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | We will include documentation on verifying your SIWS integration is performing correctly. |
-| **0d.** | Docker | This component will need to be integrated into a dapp before being deployed, so Docker is not applicable. |
-| 0e. | Article | We will publish an article that explains how the service works, the work done for this grant, and direction on how to integrate SIWS into other apps |
+| 0d. | Article | We will publish an article that explains how the service works, the work done for this grant, and direction on how to integrate SIWS into other apps |
 | 1. | JS Package: Sign in with Substrate | We will extract our Substrate sign-in service into an independent javascript package that is hostable and easily integratable into other projects |
 | 2. | Feature: Custom message | We will add the ability to specify a custom message with the payload that can, for example, function as a welcome message from the dapp or specify the terms of service for the dapp |
 | 3. | Feature: Expiration | We will add the ability for the front end to specify an expiration time for the signed message |
@@ -216,7 +215,7 @@ We would like to improve the use cases (a.k.a. modules) enabled by Signet, by en
 | **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up Signet, including the feature improvements here, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | We run end to end tests on the application. |
-| **0d.** | Docker | We support deployment from git at this point in time, and will have instructions on this in the repository. |
+| **0d.** | Git Deployment | We support deployment from git at this point in time, and will have instructions on this in the repository. |
 | 0e. | Article | We will publish an article that explains Signet and the work done for this grant |
 | 1. | Feature: Nom Pool Validator Selection | This feature enables an intuitive UX around viewing currently selected validators, as well as updating the validators for a nomination pool, using the nominationPools.nominate extrinsic |
 | 2. | Feature: Staking Stash Validator Selection | This will build upon the feature above to present an intuitive UX around the selection of validators for a pure proxy stash, using the staking.nominate extrinsic |
