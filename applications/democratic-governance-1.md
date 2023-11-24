@@ -163,6 +163,8 @@ You can find the PR with the current state of the pallet [here](https://github.c
 | **0a.** | License | GPLv3
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article** in the Encointer book that explains the functionality of the democracy module.|
 | 1. | Democracy Pallet | We will implement the above described tasks in the Encointer democracy pallet. |
 | 3. | CLI and Integration Tests | We will implement the above described tasks in the CLI and extend the existing integration tests. |
 
