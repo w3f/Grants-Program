@@ -1,4 +1,3 @@
-
 # TuxedoDapp
 
 - **Team Name:** MLabs
@@ -7,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-Develop a Tuxedo Web Wallet and Dapp
+Develop a Tuxedo Web Wallet and DApp
 
 ### Overview
 
@@ -17,7 +16,7 @@ The Tuxedo project endeavours to demonstrate the flexibility and interoperabilit
 Our goal is to showcase the potential of Polkadot using the UTXO paradigm for the end user, leveraging Tuxedo. The project will consist of two key stages:
 
 - Stage 1: Developing a simple Web Wallet
-- Stage 2: Developing a basic Dapp
+- Stage 2: Developing a basic DApp
 
 ### Project Details
 
@@ -36,7 +35,7 @@ Web-based wallet will provide a secure method for private key storage on the cli
 The web-based wallet will be designed to mirror the core functionality of the CLI wallet, offering seamless UTXO synchronization and token handling, ensuring that users have an equivalent experience across both interfaces
 Note : Feature Parity: Means web-based and command-line interface (CLI) wallets, have the same set of features and functionalities and both versions provide an equivalent or identical user experience by offering the same core capabilities, options.
 
-3. Issues Fix in web-based wallet :(issues/62)
+3. Issues Fix in web-based wallet (https://github.com/Off-Narrative-Labs/Tuxedo/issues/62)
 The current implementation of a cli based wallet allows sending inputs from multiple owners in a single transaction, but it only supports a single recipient for all specified outputs.
 
 4. Browser compatibility:
@@ -62,14 +61,14 @@ webpack
 Babel - for backwards compatibility in older Browsers
 Local database: IndexedDB or WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
 
-- Stage 2: Dapp Development
+- Stage 2: DApp Development
 
 Create a simple decentralized application to demonstrate the viability and maturity of the Tuxedo framework, as required by this opened ticket  "Full Tuxedo App Implementation" https://github.com/Off-Narrative-Labs/Tuxedo/issues/76
 Showcase the unique features of UTXO-based transactions on Polkadot, emphasizing scalability and robustness.
 Address identified gaps and limitations in the current Tuxedo product to enhance overall functionality.
-We think that a successful showcase of a dapp is Cryptokitties which is also used as an example in Tuxedo wardrobe https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties
+We think that a successful showcase of a DApp is Cryptokitties which is also used as an example in Tuxedo wardrobe https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties
 We want to use this concept and extend the wardrobe codebase implementing a basic web interface and allowing the trading of generated pets between users.
-This dapp is intended for educational purposes only, and not for production use. The web-wallet previously developed will be used for this Dapp.
+This DApp is intended for educational purposes only, and not for production use. The web-wallet previously developed will be used for this DApp.
 
 **Technical Requirements** 
 
@@ -79,27 +78,27 @@ Represent each pet as a unique NFT on the Tuxedo blockchain.
 Use Tuxedo runtime pieces i.e. kitties. to handle NFT-based pet creation transactions.
 
 1. **Breeding and NFT Ownership**:
-Dapp ensures NFT ownership is transferred correctly during breeding transactions.
+DApp ensures NFT ownership is transferred correctly during breeding transactions.
 Leverage NFT attributes to determine genetics and other breeding-related factors.
 
 2. **Trading NFTs**:
-Dapp enables a marketplace for trading pets (NFTs) between users.
+DApp enables a marketplace for trading pets (NFTs) between users.
 Implement an offer system for users to make and accept NFT-based offers for pet transactions.
 
 **Blockchain Integration**:
 Tuxedo Runtime pieces.(wardrobe/kitties ):
-We need Leverage Tuxedo runtime pieces for implementing specific Dapp functionalities in the UTXO model, with a focus on NFTs, if some modification is required or if some new functionality is required we need customize runtime logic to suit the requirements of the UTXO-based pet trading Dapp.
+We need Leverage Tuxedo runtime pieces for implementing specific DApp functionalities in the UTXO model, with a focus on NFTs, if some modification is required or if some new functionality is required we need customize runtime logic to suit the requirements of the UTXO-based pet trading DApp.
 
 **Transaction Handling**:
-Dapp implements transaction handling logic in the web application to initiate UTXO-based transactions, including NFT-related transactions, on the Tuxedo blockchain.
+DApp implements transaction handling logic in the web application to initiate UTXO-based transactions, including NFT-related transactions, on the Tuxedo blockchain.
 Provide feedback to users on transaction status and confirmations.
 
 **Event Handling**:
-Dapp Listen for UTXO and NFT-related events to update the user interface in real time.
+DaAp Listen for UTXO and NFT-related events to update the user interface in real time.
 Utilize event-driven programming to respond to changes in the UTXO set and NFT ownership.
 
 **Transaction Confirmation**:
-Dapp implements a transaction confirmation mechanism to ensure that users are informed about the progress and finalization of UTXO and NFT-based transaction
+DApp implements a transaction confirmation mechanism to ensure that users are informed about the progress and finalization of UTXO and NFT-based transaction
 
 **Personal Dashboard**:
 We will develop a personal dashboard for users to view and manage their NFT-based pet collections.
@@ -133,16 +132,16 @@ webpack
 ### Ecosystem Fit
 
 **Where and how does your project fit into the ecosystem?** 
-- TuxedoDapp seeks to propel the Tuxedo project forward by addressing its current limitations and showcasing the capabilities of Polkadot with the UTXO paradigm. By developing a user-friendly web wallet and a simple Dapp, we aim to provide a valuable use case for users of this ecosystem with limited experience in UTXO.
+- TuxedoDApp seeks to propel the Tuxedo project forward by addressing its current limitations and showcasing the capabilities of Polkadot with the UTXO paradigm. By developing a user-friendly web wallet and a simple DApp, we aim to provide a valuable use case for users of this ecosystem with limited experience in UTXO.
 
 **Who is your target audience?**
 - **Developers and Enthusiasts from other blockchains:** Developers interested in experimenting with another paradigm but also developers from other ecosystem more "bitcoin-based" that want to try Polkadot.
     
-- **New Learners in Blockchain Development:** Individuals who are new to blockchain development and want to learn by engaging with the Tuxedo framework. The Tuxedo Web Wallet and Dapp can serve as educational tools, providing a practical environment for learners to understand and experiment with UTXO-based blockchain concepts.
+- **New Learners in Blockchain Development:** Individuals who are new to blockchain development and want to learn by engaging with the Tuxedo framework. The Tuxedo Web Wallet and DApp can serve as educational tools, providing a practical environment for learners to understand and experiment with UTXO-based blockchain concepts.
 
 **Are there any other projects similar to yours in the Substrate/Polkadot/Kusama ecosystem?**
 
-- Tuxedo is unique and we are not aware of any implemented Dapp as of today.
+- Tuxedo is unique and we are not aware of any implemented DApp as of today.
 
 ## Team :busts_in_silhouette:
 
@@ -215,7 +214,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 
 
-### Milestone 2 — Stage 2: Developing a basic Dapp
+### Milestone 2 — Stage 2: Developing a basic DApp
 
 - **Estimated Duration:** 2 months
 - **FTE:**  2
@@ -224,10 +223,10 @@ We have had conversations with the W3F team to validate the idea and find a star
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the Dapp app to breed pets, trade pets, view and manage the pets using the dashboard |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the DApp app to breed pets, trade pets, view and manage the pets using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|**0d.** | Article | We will publish an **article**/workshop that explains how to use the Dapp which can be used to "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading and also how to use the Dashboard |
-| **0e.** | Dapp | We will create a web-based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading.(Meaning of "Managment of NFT" is mentioned above in Dashboard  ) |
+|**0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading and also how to use the Dashboard |
+| **0e.** | DApp | We will create a web-based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading.(Meaning of "Managment of NFT" is mentioned above in Dashboard section ) |
 | **0f.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based pet collections. Display detailed information about each NFT, including ownership history and transaction history |
 ...
 
