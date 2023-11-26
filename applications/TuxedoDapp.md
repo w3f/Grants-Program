@@ -106,26 +106,18 @@ Display detailed information about each NFT, including ownership history and tra
 Manage NFT means , it icludes below :
 1. Viewing NFTs:
    Users should be able to see a comprehensive list or visual representation of all the NFTs (pets) they own.
-   Display detailed information about each NFT, including attributes such as species, color, pattern, eyes, ears, tail, etc.
-2. Ownership History:
-   Show the ownership history of each NFT, indicating when it was created, bred, or traded.
-   Provide transparency on how the ownership of each pet has changed over time.
-3. Transaction History:
-   Display a record of all transactions involving each NFT, such as creation, breeding, and trading.
-   Include details like transaction timestamps, involved parties, and any fees associated with the transactions.
-4. Breed and Trade Options:
-    User should be able to initiate breeding and trading directly from the dashboard.
-    Include options to send breeding requests, accept offers, and initiate trades.
-5. Naming and Customization:
-   Enable users to customize and name their pets directly from the dashboard.
-   Allow for a personalized touch, letting users give distinct identities to their NFTs.
-6. Transfer and Ownership Management:
-   Provide options for transferring ownership of NFTs to other users within the platform.
-7. Interactivity:
+   Display detailed information about each NFT, including attributes such as below :
+   parents(mom and dad)
+   free_breedings(numbers)
+   dna(H256 Hash value)
+   num_breedings(number)
+   Status(Ready for raring ,Tired(Only for dad) , Had birth recenty(only for Mom)) .
+3. Breed :
+    User should be able to initiate breeding directly from the dashboard.
+4. Interactivity:
    Make dashboard interactive, allowing users to click on individual NFTs to access more detailed information or initiate specific actions.
 
 **Tech Stack:**
-IPFS (InterPlanetary File System) for storage 
 TypeScript
 webpack
 
@@ -226,7 +218,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the DApp app to breed pets, trade pets, view and manage the pets using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |**0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading and also how to use the Dashboard |
-| **0e.** | DApp | We will create a web-based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading.(Meaning of "Managment of NFT" is mentioned above in Dashboard section ) |
+| **0e.** | DApp | We will create a web-based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and showing info.(Meaning of "Managment of NFT" is mentioned above in Dashboard section ) |
 | **0f.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based pet collections. Display detailed information about each NFT, including ownership history and transaction history |
 ...
 
