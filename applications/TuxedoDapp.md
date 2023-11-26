@@ -1,4 +1,4 @@
-# TuxedoDapp
+# TuxedoDApp
 
 - **Team Name:** MLabs
 - **Payment Address:** FIAT
@@ -66,46 +66,39 @@ Local database: IndexedDB or WebSQL, or any lightweight client-side database to 
 Create a simple decentralized application to demonstrate the viability and maturity of the Tuxedo framework, as required by this opened ticket  "Full Tuxedo App Implementation" https://github.com/Off-Narrative-Labs/Tuxedo/issues/76
 Showcase the unique features of UTXO-based transactions on Polkadot, emphasizing scalability and robustness.
 Address identified gaps and limitations in the current Tuxedo product to enhance overall functionality.
-We think that a successful showcase of a DApp is Cryptokitties which is also used as an example in Tuxedo wardrobe https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties
-We want to use this concept and extend the wardrobe codebase implementing a basic web interface and allowing the trading of generated pets between users.
+We think that a successful showcase of a DApp is Cryptokitties which is provided  in Tuxedo warvia pieces in "https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties".
+We want to use this concept and extend the wardrobe codebase implementing a basic web interface and allowing breeding of kitties from the users.
 This DApp is intended for educational purposes only, and not for production use. The web-wallet previously developed will be used for this DApp.
 
 **Technical Requirements** 
 
 **Functionality**:
-Pet Creation with NFTs:
-Represent each pet as a unique NFT on the Tuxedo blockchain.
-Use Tuxedo runtime pieces i.e. kitties. to handle NFT-based pet creation transactions.
+Kitties Creation with NFTs:
+Represent each kitty as a unique NFT on the Tuxedo blockchain.
+Use Tuxedo runtime pieces i.e. kitties. to handle NFT-based kitties creation transactions.
 
-1. **Breeding and NFT Ownership**:
+**Breeding and NFT Ownership**:
 DApp ensures NFT ownership is transferred correctly during breeding transactions.
 Leverage NFT attributes to determine genetics and other breeding-related factors.
 
-2. **Trading NFTs**:
-DApp enables a marketplace for trading pets (NFTs) between users.
-Implement an offer system for users to make and accept NFT-based offers for pet transactions.
 
 **Blockchain Integration**:
 Tuxedo Runtime pieces.(wardrobe/kitties ):
-We need Leverage Tuxedo runtime pieces for implementing specific DApp functionalities in the UTXO model, with a focus on NFTs, if some modification is required or if some new functionality is required we need customize runtime logic to suit the requirements of the UTXO-based pet trading DApp.
+We need Leverage Tuxedo runtime pieces for implementing specific DApp functionalities in the UTXO model, with a focus on NFTs, if some modification is required or if some new functionality is required we may need customize runtime logic to suit the requirements of the UTXO-based DApp.(For this scope we plan not to modify the kitties pieces code as much as possible, since the scope is only DApp)
 
 **Transaction Handling**:
 DApp implements transaction handling logic in the web application to initiate UTXO-based transactions, including NFT-related transactions, on the Tuxedo blockchain.
 Provide feedback to users on transaction status and confirmations.
 
-**Event Handling**:
-DaAp Listen for UTXO and NFT-related events to update the user interface in real time.
-Utilize event-driven programming to respond to changes in the UTXO set and NFT ownership.
-
 **Transaction Confirmation**:
 DApp implements a transaction confirmation mechanism to ensure that users are informed about the progress and finalization of UTXO and NFT-based transaction
 
 **Personal Dashboard**:
-We will develop a personal dashboard for users to view and manage their NFT-based pet collections.
+We will develop a personal dashboard for users to view and manage their NFT-based Kitties collections.
 Display detailed information about each NFT, including ownership history and transaction history.
 Manage NFT means , it icludes below :
 1. Viewing NFTs:
-   Users should be able to see a comprehensive list or visual representation of all the NFTs (pets) they own.
+   Users should be able to see a comprehensive list or visual representation of all the NFTs (kitties) they own.
    Display detailed information about each NFT, including attributes such as below :
    parents(mom and dad)
    free_breedings(numbers)
@@ -215,11 +208,11 @@ We have had conversations with the W3F team to validate the idea and find a star
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the DApp app to breed pets, trade pets, view and manage the pets using the dashboard |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the DApp app to breed kitties,  view the kitties using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|**0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and Trading and also how to use the Dashboard |
-| **0e.** | DApp | We will create a web-based Daap to support functionality such as "create the pet as NFT", managing the ownership of NFT/Pet, Breeding of pets and showing info.(Meaning of "Managment of NFT" is mentioned above in Dashboard section ) |
-| **0f.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based pet collections. Display detailed information about each NFT, including ownership history and transaction history |
+|**0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the kitty as NFT", Breeding of kitties and also how to use the Dashboard |
+| **0e.** | DApp | We will create a web-based Daap to support functionality such as "create the kitty as NFT", managing the ownership of NFT/Kitties, Breeding of kitties and showing info.(Meaning of "Managment of NFT" is mentioned above in Dashboard section ) |
+| **0f.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based kitty collections. Display detailed information about each NFT, including ownership and other details such as parents , dna ,etc  |
 ...
 
 
