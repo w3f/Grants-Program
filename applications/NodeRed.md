@@ -1,7 +1,7 @@
 # Node Red Client for Polkadot
 
 - **Team Name:** Zooper Corp
-- **Payment Address:** 123VwdDkJeUd8K1g9gS5rZHKy1vQg1N64ZNcYYBk2J5ZEkfs (DOT)
+- **Payment Address:** 0x4776bbE1896D517BB81466b28D88e8dEd80ed110 (DAI) / 123VwdDkJeUd8K1g9gS5rZHKy1vQg1N64ZNcYYBk2J5ZEkfs (DOT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -16,14 +16,14 @@ Zooper Corp's Node Red Client for Polkadot is a project aimed at bridging the ga
 - **Documentation:** Comprehensive documentation of core components and Node Red usage page
 - **Prior Work:** https://flows.nodered.org/node/node-red-contrib-polkadot
 - **Project Limitations:** Client supports Substrate only
-- **Total Costs:** 25,000 DAI
+- **Total Costs:** 25,000 DAI / 5,000 DOT
 - **Total Milestones:** 2
 
 ### Milestone 1 — Basic Functionality
 
-- **Estimated Duration:** None
+- **Estimated Duration:** None (delivered)
 - **FTE:**  1
-- **Costs:** 2000 DOT
+- **Costs:** 5000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -32,11 +32,57 @@ Zooper Corp's Node Red Client for Polkadot is a project aimed at bridging the ga
 | **0c.** | Testing Guide | Comprehensive unit tests for core functions. |
 | **1.** | Node Red Integration | Development of basic Node Red nodes for Polkadot interaction. |
 
-### Milestone 2 — Maintenance, additional features and fixes
+### Milestone 2 — Documentation and Base Examples
 
-- **Estimated Duration:** 12 months
+- **Estimated Duration:** 2 months
 - **FTE:**  0.5
-- **Costs:** 3000 DOT
+- **Costs:** 2500 DAI
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **2a.** | Documentation | Development of inline code documentation and basic tutorials. |
+| **2b.** | Examples | Creation of base examples and screens to illustrate plugin usage. |
+
+### Milestone 3 — Issue Fixes and EVM Chain Support
+
+- **Estimated Duration:** 2 months
+- **FTE:**  0.5
+- **Costs:** 2500 DAI
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **3a.** | Bug Fixes | Addressing and resolving issues in the current release (es big int / human convertions). |
+| **3b.** | EVM Support | Adding support for EVM based chains, like Moonbeam. |
+
+### Milestone 4 — Metadata Loading and Chain Info
+
+- **Estimated Duration:** 2 months
+- **FTE:**  0.5
+- **Costs:** 2500 DAI
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **4a.** | Metadata Loading | Implementing automatic metadata loading and basic chain information (e.g., decimals, token). |
+
+### Milestone 5 — Block Event Subscription Node
+
+- **Estimated Duration:** 2 months
+- **FTE:**  0.5
+- **Costs:** 2500 DAI
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **5a.** | Block Event Node | Development of a new node for subscribing to block events. |
+
+### Milestone 6 — Pallet/Function Selection and Payload Input
+
+- **Estimated Duration:** 2 months
+- **FTE:**  0.5
+- **Costs:** 2500 DAI
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **6a.** | Pallet/Function Node | Creating a node allowing users to select pallets/functions and input payload, similar to the JS client. |
 
 ### Ecosystem Fit
 
