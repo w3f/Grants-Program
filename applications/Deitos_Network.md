@@ -139,6 +139,7 @@ While it may seem evident, it's essential to note that checking the integrity of
 
 ### Team members
 
+- **Hector Bulgarini**: Senior Software Developer and Team Lead
 - **Hernan Borelli**: Product & Project Manager
 - **Ramón Valera**: Data Sciense specialist & Senior Software Developer
 - **Alexander Kalankhodzhaev**: Senior Blockchain and protocol Engineer
@@ -156,6 +157,8 @@ While it may seem evident, it's essential to note that checking the integrity of
 
 ### Team's Experience
 
+**Hector**: With over 15 years in the technology sector, Hector focused on blockchain and Polkadot tech stack evidenced by his work at Parity and the graduation from the first Cambridge cohort of the Polkadot Academy. Hector also have founded and led multiple startups showing a strong entrepreneurial spirit. 
+
 **Hernan**: Hernan holds a degree in project management and development. Since 2020, he has been deeply involved in promoting and developing the Polkadot ecosystem in Spanish-speaking countries.
 
 **Ramon**: Ramon is a software engineer with 18 years of experience in a wide range of work areas and applications. His professional career has ranged from the design and development of large-scale enterprise and web applications, to document and database systems management, in addition to application integration and Big Data solutions. In recent years, he has specialized in solving challenges related to Big Data and Application Integration, facing problems of nature and volume of data, as well as performance and efficiency for optimal results.
@@ -170,11 +173,13 @@ Additionally, he currently maintains GO-LINQ, a language integrated query (LINQ)
 - [Deitos network](https://github.com/Deitos-Network) 
 - Ramon: https://github.com/rvalera
 - Alex: https://github.com/kalaninja
+- Hector: https://github.com/hbulgarini
 
 ### Team LinkedIn Profiles
 
 **Linkedin profiles**
-- Ramon: https://www.linkedin.com/in/ramonvalera 
+- Hector: https://www.linkedin.com/in/hector-esteban-bulgarini-0791147
+- Ramon: https://www.linkedin.com/in/ramonvalera
 - Hernan: https://www.linkedin.com/in/hernan-borelli-62296261
 - Alex: https://www.linkedin.com/in/kalaninja/
 
