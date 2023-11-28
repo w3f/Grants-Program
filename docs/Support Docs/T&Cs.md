@@ -23,8 +23,6 @@ The terms defined in this section whenever used in these Terms and Conditions sh
 
 "Affiliate" has the meaning with respect to any person, any other person directly or indirectly controlling, controlled by or under common control with such person;  
 
-"BTC" means the blockchain tokens native to the Bitcoin Network;
-
 "Change of control" means any change in Your ownership or control or of a legal entity directly or indirectly owning or controlling You, whether by merger, consolidation, reorganization, take-over, change in the ownership of the share capital or otherwise;
 
 "Development Work"  means any and all development activities related to the Software and undertaken by You. For the avoidance of doubt, any development activities undertaken before the Effective Date in relation to the Software are deemed to constitute Development Work and to form part of the deliverables to be provided by You and be subject to the terms of these Terms and Conditions;
@@ -75,7 +73,7 @@ To apply for the Web 3.0 Foundation Grants Program, your application shall fulfi
 
 - it shall be a research or software-based project, which contributes to the advancement of the Polkadot ecosystem;
 - the Software shall be released under the Apache license version 2.0.;
-- You must accept payment in USDT or USDC/DAI on Polkadot AssetHub, fiat or BTC;
+- You must accept payment in USDT or USDC on Polkadot AssetHub or fiat;
 - You will need to submit the application and deliver the milestones according to the process specified below;
 
 The grants process consists of five parts, each of them described in more detail below:
@@ -123,7 +121,7 @@ As soon as one evaluator approves the pull request, the delivery is officially a
 
 **(v)  Payment process:**
 
-The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the bank account, Bitcoin or Polkadot AssetHub (for USDT and USDC) address specified in the initial application.
+The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the bank account or Polkadot AssetHub (for USDT and USDC) address specified in the initial application.
 
 ## 5.  Scope of these Terms and Conditions
 

@@ -1,5 +1,9 @@
 # User Account Access Security Analysis for Wallets
 
+:::tip
+This Request for Proposal is currently _open_, meaning we are actively looking for (additional) teams to apply for it.
+:::
+
 * **Status:** Open
 * **Proposer:** [Bhargav Bhatt](https://github.com/bhargavbh), [David Hawig](https://github.com/Noc2)
 * **Objectives** Security analysis of the user interface of Polkadot Wallets, particularly account access and recovery.

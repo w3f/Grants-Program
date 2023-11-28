@@ -15,4 +15,4 @@ The SCALE codec is the de-factor encoding method in Substrate-based chains. It i
 
 The deliverable should be a standalone SCALE codec package, hosted on Packagist. It can (but does not have to) depend on existing Base58 packages already present on Packagist.org.
 
-The package *can* also be delivered as a companion PHP **extension** but the extension should be exclusivley a performance upgrade to the existing package. In other words, the Packagist-installable library should work on its own, but can be improved by also downloading the (optional) PHP extension. If the applicant decides to also create the extension, they should submit it as a separate milestone.
+The package *can* also be delivered as a companion PHP **extension** but the extension should be exclusively a performance upgrade to the existing package. In other words, the Packagist-installable library should work on its own, but can be improved by also downloading the (optional) PHP extension. If the applicant decides to also create the extension, they should submit it as a separate milestone.

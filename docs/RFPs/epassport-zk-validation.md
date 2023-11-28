@@ -52,6 +52,6 @@ Later, the proof is uploaded on-chain, and the chain logic performs verification
 * **Estimated Duration:** 1 month
 * **Costs:** 20,000 kUSD
 
-The Master List is expected to, albeit unfrequently, receive updates as new countries join the PKD or as they update their certificates periodically. Furhtermore, countries are expected to publish the revocations of any compromised certificates.
+The Master List is expected to, albeit unfrequently, receive updates as new countries join the PKD or as they update their certificates periodically. Furthermore, countries are expected to publish the revocations of any compromised certificates.
 
 It is important that both prover and verifier circuits are updated accordingly - else the proof won't match.
