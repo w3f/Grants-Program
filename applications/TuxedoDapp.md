@@ -61,6 +61,8 @@ webpack
 Babel - for backwards compatibility in older Browsers
 Local database: IndexedDB or WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
 
+Wireframes:https://drive.google.com/file/d/1NX8IlwDh-CwdMg2qLAlC--VSyiZgQOPY/view?usp=sharing
+
 - Stage 2: DApp Development
 
 Create a simple decentralized application to demonstrate the viability and maturity of the Tuxedo framework, as required by this opened ticket  "Full Tuxedo App Implementation" https://github.com/Off-Narrative-Labs/Tuxedo/issues/76
@@ -83,14 +85,14 @@ Leverage NFT attributes to determine genetics and other breeding-related factors
 
 **Trading of kitties between users**:
 DApp ensures Kitties can be traded between the users.
-Ensure ownerships is transferred successfully once trading is completed.
+Ensure ownership is transferred successfully once trading is completed.
 
 **Updating the kitty details**:
-DApp ensures Kitties details such as name, tradable status(Yes or No), Price can updated.
+DApp ensures Kitties details such as name, tradable status(Yes or No), Price can be updated.
 
 **Search kitties owned by other users**:
-DApp helps to serach the kitties owned by other users based on uer publick key.
-This displayes the list of kitties ownsed by other user with all details required for trading such as Gender, Tradable status, Price , Parents , etc.
+DApp helps to search the kitties owned by other users based on the user 's public key.
+This displays the list of kitties owned by other users with all details required for trading such as Gender, Tradable status, Price , Parents , etc.
 
 **Blockchain Integration**:
 Tuxedo Runtime pieces.(wardrobe/kitties ):
@@ -137,6 +139,8 @@ TypeScript
 webpack
 IPFS for strong meta data of kitty such as Name , Trading status , Price ,etc.
 
+Wireframe:https://drive.google.com/file/d/1pLnz2rzjG2fU30rdXeBpnT6A4DvjPxhy/view?usp=sharing
+
 ### Ecosystem Fit
 
 **Where and how does your project fit into the ecosystem?** 
@@ -149,7 +153,7 @@ IPFS for strong meta data of kitty such as Name , Trading status , Price ,etc.
 
 **Are there any other projects similar to yours in the Substrate/Polkadot/Kusama ecosystem?**
 
-- Tuxedo is unique and we are not aware of any implemented DApp as of today.
+- Tuxedo is unique and we are not aware of any DApp implemented as of today.
 
 ## Team :busts_in_silhouette:
 
@@ -217,8 +221,8 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the web wallet app for Tuxedo (Private key configuration, local URI to be used to connect to blockchain) and send test transactions, tuxedo balance, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Article | We will publish an **article**/workshop that explains how to use the web-based wallet which can be used to configure the user private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account-based blockchain. |
-| **0e.** | Docker image containing any changes/issue fix in Tuxedo core  | Will provide the dockr image containing any changes or issue fix in Tuxedo core for wallet implementation |
+| **0d.** | Article | We will publish an **article**/workshop that explains how to use the web-based wallet which can be used to configure the user's private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account-based blockchain. |
+| **0e.** | Docker image containing any changes/issue fix in Tuxedo core  | Will provide the docker image containing any changes or issue fix in Tuxedo core for wallet implementation |
 | **0f.** | Web-based wallet | We will create a web-based wallet which will have functionalities like Storing the private key of the user,(send and receive) Transaction support, Basically all the functionalities provided by the CLI-based wallet (AmoebaDemo, VerifyCoin, SpendCoins, InsertKey, GenerateKey, ShowKeys, RemoveKey, ShowBalance, ShowAllOutputs) |
 
 
@@ -252,7 +256,7 @@ When we implement the authentication backend server is required to handle user a
 **Encrypting the local database:** 
 We will consider encrypting sensitive data stored in the local database, especially private keys.
 **Piece development**: 
-We would like to develop undeveloped and required pieces which are equivalent to pallets in Substrate framework which are built using FRAME. Ex: Babe, Sudo, System, membership, etc.
+We would like to develop undeveloped and required pieces which are equivalent to pallets in the Substrate framework which are built using FRAME. Ex: Babe, Sudo, System, membership, etc.
 
 
 ## Referral Program (optional) :moneybag:
