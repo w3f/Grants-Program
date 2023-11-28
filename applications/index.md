@@ -64,6 +64,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Tokenguard.io](http://tokenguard.io/)                   | [Tokenguard](Tokenguard.md)                                                              | [GitHub](https://github.com/tokenguardio)                      | ☐          |       ☐        |     ☐     |
 | [element36 AG](https://element36.io)                   | [Hyperfridge](hyperfridge.md)                                                              | [GitHub](https://github.com/element36-io)                      | ☐          |       ☐        |     ☐     |
 | [RegionX](https://regionx.tech)                   | [RegionX](RegionX.md)                                                              | [GitHub](https://github.com/RegionX-Labs)                      | ☐          |       ☐        |     ☐     |
+| [WeTEE DAO](https://www.wetee.app)                   | [WeTEE Network](WeTEE_Network.md)                                                              | [GitHub](https://github.com/wetee-dao)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
