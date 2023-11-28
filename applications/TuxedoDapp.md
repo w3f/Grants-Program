@@ -210,7 +210,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  2 FTE 
-- **Total Costs:** $30000 (USD)
+- **Total Costs:** $24000 (USD)
 
 ### Milestone 1  — Stage 1: Developing a simple Web Wallet 
 
