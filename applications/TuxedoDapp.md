@@ -61,7 +61,7 @@ webpack
 Babel - for backward compatibility in older Browsers
 Local database: IndexedDB, WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
 
-Wireframes:https://drive.google.com/file/d/1NX8IlwDh-CwdMg2qLAlC--VSyiZgQOPY/view?usp=sharing
+Wireframes: https://drive.google.com/file/d/1sJ2eIvTEMzmwdEPkipes0OGU57OsUblH/view?usp=sharing
 
 - Stage 2: DApp Development
 
