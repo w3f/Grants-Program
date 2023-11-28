@@ -231,7 +231,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 - **Estimated Duration:** 2 months
 - **FTE:**  2
-- **Costs:** $20000 (USD)
+- **Costs:** $14000 (USD)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
