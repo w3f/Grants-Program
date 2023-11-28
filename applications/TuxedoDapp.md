@@ -43,7 +43,7 @@ Web-based wallet will ensure compatibility with Chrome, Firefox and Edge.
 
 **Blockchain Integration**:
 Web-based wallet will connect to the blockchain node to fetch relevant data.
-We will check if there is any lib such as the one used by "https://polkadot.js.org/" to interact with the Tuxedo based blockchain for easy integration.
+We will check if there is any lib such as the one used by "https://polkadot.js.org/" to interact with the Tuxedo-based blockchain for easy integration.
 
 **Transactions**:
 web-based wallet will implement transaction creation and signing on the client side.
@@ -58,8 +58,8 @@ polkadot{.js}  - We will try to re-use as much as possible
 Vue.js with Vuex and the Vue Router
 TypeScript
 webpack
-Babel - for backwards compatibility in older Browsers
-Local database: IndexedDB or WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
+Babel - for backward compatibility in older Browsers
+Local database: IndexedDB, WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
 
 Wireframes:https://drive.google.com/file/d/1NX8IlwDh-CwdMg2qLAlC--VSyiZgQOPY/view?usp=sharing
 
@@ -70,7 +70,7 @@ Showcase the unique features of UTXO-based transactions on Polkadot, emphasizing
 Address identified gaps and limitations in the current Tuxedo product to enhance overall functionality.
 We think that a successful showcase of a DApp is Cryptokitties which is provided in Tuxedo warvia pieces in "https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties".
 We want to use this concept and extend the wardrobe codebase by implementing a basic web interface and allowing breeding, trading, searching, and updating the kitty features such as name, price and tradable status of kitties.
-This DApp is intended for educational purposes only, and not for production use. The web-wallet previously developed will be used for this DApp.
+This DApp is intended for educational purposes only, and not for production use. The web wallet previously developed will be used for this DApp.
 
 **Technical Requirements**
 
@@ -88,10 +88,10 @@ DApp ensures Kitties can be traded between the users.
 Ensure ownership is transferred successfully once trading is completed.
 
 **Updating the kitty details**:
-DApp ensures Kitties details such as name, tradable status(Yes or No) and Price can be updated.
+DApp ensures Kittie's details such as name, tradable status(Yes or No) and Price can be updated.
 
 **Search kitties owned by other users**:
-DApp helps to search the kitties owned by other users based on the user's public key.
+DApp helps search the kitties other users own based on the user's public key.
 This displays the list of kitties owned by other users with all details required for trading such as Gender, Tradable status, Price, Parents, etc.
 
 **Blockchain Integration**:
@@ -238,11 +238,10 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the DApp app to breed kitties,  view the kitties using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the kitty as NFT", Breeding of kitties and also how to use the Dashboard |
+| **0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the kitty as NFT", Breeding of kitties, and also how to use the Dashboard |
 | **0e.** | Kitties Pieces: Docker image |Docker image containing the kitties which support new features such as "Mint kitty without mom and dad, Trade kitty, change ownership of kitty and search kitties" |
-| **0f.** | DApp | We will create a web-based Daap to support functionality such as "create the kitty as NFT", managing the ownership of NFT/Kitties, Breeding, Trading kitties and showing info (meaning of "Management of NFT" is mentioned above in Dashboard section ) |
+| **0f.** | DApp | We will create a web-based Daap to support functionality such as "create the kitty as NFT", managing the ownership of NFT/Kitties, Breeding, Trading kitties, and showing info (meaning of "Management of NFT" is mentioned above in Dashboard section ) |
 | **0g.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based kitty collections. Display detailed information about each NFT, including ownership and other details such as parents, dna, Tradable status, Price, etc  |
-...
 
 ## Future Plans
 
