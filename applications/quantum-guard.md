@@ -91,10 +91,10 @@ The development will start with the approval of the Grant application.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | Documentation includes: Code Documentation, Configuration Documentation, and a basic **tutorial** that explains how a user can start a node and send test transactions. |
-| **0c.** | The code will have unit-test coverage  to ensure functionality; in the guide we will describe how to run the tests |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | Documentation includes: Code Documentation, Configuration Documentation, and a basic **tutorial** that explains how a user can start a node and send test transactions. |
+| 0c. | The code will have unit-test coverage  to ensure functionality; in the guide we will describe how to run the tests |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Substrate module: CRYSTALS-crypto | We will create a Substrate module that will enable the use of CRYSTALS-Dilithium as a cryptography algorithm for generating keypairs valid in the blockchain. |
 | 2. | Substrate chain | The new Substrate module enabling CRYSTALS-Dilithium cryptography will be used to scaffold a node of a new quantum-safe chain. |
 
@@ -109,7 +109,8 @@ The development will start with the approval of the Grant application.
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes: Code Documentation, Extension Documentation, Readme file |
 | 0c. | Testing Guide | The guide will explain how to install the extension and how to use it in order to send transactions |
-| 0d. | Article | A Medium article will be written, in order to explain the work done as part of the grant. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | A Medium article will be written, in order to explain the work done as part of the grant. |
 | 1. | Custom extension: X | We will create a custom version of crypto wallet as a browser extension, in order to be able to generate, store and use quantum-safe keypairs. |
 
 ## Future Plans
