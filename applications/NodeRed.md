@@ -16,73 +16,55 @@ Zooper Corp's Node Red Client for Polkadot is a project aimed at bridging the ga
 - **Documentation:** Comprehensive documentation of core components and Node Red usage page
 - **Prior Work:** https://flows.nodered.org/node/node-red-contrib-polkadot
 - **Project Limitations:** Client supports Substrate only
-- **Total Costs:** 25,000 DAI / 5,000 DOT
+- **Total Costs:** 25,000 DAI
 - **Total Milestones:** 2
 
 ### Milestone 1 — Basic Functionality
 
-- **Estimated Duration:** None (delivered)
+- **Estimated Duration:** 3 months
 - **FTE:**  1
-- **Costs:** 5000 DAI
+- **Costs:** 10000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | Inline code documentation and a basic tutorial. |
-| **0c.** | Testing Guide | Comprehensive unit tests for core functions. |
-| **1.** | Node Red Integration | Development of basic Node Red nodes for Polkadot interaction. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the nodes with examples for each single node and screenshots. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
+| 1. | Node Red Integration | Development of basic Node Red nodes for Polkadot interaction. |
+| 2. | Address issues | Assign, triage or address any pending issue on the github repo. |
 
-### Milestone 2 — Documentation and Base Examples
+### Milestone 2 — Metadata and EVM Chain Support
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 3 months
 - **FTE:**  0.5
-- **Costs:** 2500 DAI
+- **Costs:** 5000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **2a.** | Documentation | Development of inline code documentation and basic tutorials. |
-| **2b.** | Examples | Creation of base examples and screens to illustrate plugin usage. |
+| 1. | EVM Support | Adding support for EVM based chains, like Moonbeam. |
+| 2. | Metadata Loading | Implementing automatic metadata loading and basic chain information (e.g., decimals, token). |
+| 3. | Metadata Node | Implementing basic metadata node that provides chain info. |
 
-### Milestone 3 — Issue Fixes and EVM Chain Support
+### Milestone 3 — Block Event Subscription Node
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 3 months
 - **FTE:**  0.5
-- **Costs:** 2500 DAI
+- **Costs:** 5000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **3a.** | Bug Fixes | Addressing and resolving issues in the current release (es big int / human convertions). |
-| **3b.** | EVM Support | Adding support for EVM based chains, like Moonbeam. |
+| 1. | Block Event Node | Development of a new node for subscribing to block events with extrinsic or address filtering. This could be very useful to use Node Red to be notified for a given transaction|
 
-### Milestone 4 — Metadata Loading and Chain Info
+### Milestone 4 — Pallet/Function Selection and Payload Input
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 3 months
 - **FTE:**  0.5
-- **Costs:** 2500 DAI
+- **Costs:** 5000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **4a.** | Metadata Loading | Implementing automatic metadata loading and basic chain information (e.g., decimals, token). |
+| 1. | Pallet/Function Node | Creating a node allowing users to query chain by selecting pallets/functions and input payload, similar to the JS client. |
 
-### Milestone 5 — Block Event Subscription Node
-
-- **Estimated Duration:** 2 months
-- **FTE:**  0.5
-- **Costs:** 2500 DAI
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **5a.** | Block Event Node | Development of a new node for subscribing to block events. |
-
-### Milestone 6 — Pallet/Function Selection and Payload Input
-
-- **Estimated Duration:** 2 months
-- **FTE:**  0.5
-- **Costs:** 2500 DAI
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **6a.** | Pallet/Function Node | Creating a node allowing users to select pallets/functions and input payload, similar to the JS client. |
 
 ### Ecosystem Fit
 
