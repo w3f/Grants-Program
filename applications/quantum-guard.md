@@ -17,8 +17,8 @@ In order to be considered quantum-resistant, a blockchain must have the followin
 On August 28th, 2023, the National Institute of Standards and Technology (NIST) issued an official document stating that 4 algorithms will be standardized as official PQC.
 [NIST Document available here](https://www.federalregister.gov/d/2023-18197/p-12)
 Among the selected algorithms, the document cites:
--CRYSTALS-KYBER algorithm for key exchange;
--CRYSTALS-Dilithium for asymmetric cryptography.
+  - CRYSTALS-KYBER algorithm for key exchange;
+  - CRYSTALS-Dilithium for asymmetric cryptography.
 
 QuantumGuard is a project that aims to create a safe quantum-resistant parachain in the Polkadot environment, based on NIST-selected quantum-safe cryptographic algorithms. The parachain will enable the use of NIST-standardized quantum-safe algorithms for every crucial cryptographic operation, such as key generation, signing transactions and communication between nodes.
 
