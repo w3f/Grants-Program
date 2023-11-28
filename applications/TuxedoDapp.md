@@ -33,7 +33,7 @@ Web-based wallet will provide a secure method for private key storage on the cli
 **Functionality**: 
 1. Feature Parity Between Web-Based and CLI Wallets
 The web-based wallet will be designed to mirror the core functionality of the CLI wallet, offering seamless UTXO synchronization and token handling, ensuring that users have an equivalent experience across both interfaces
-Note : Feature Parity: Means web-based and command-line interface (CLI) wallets, have the same set of features and functionalities and both versions provide an equivalent or identical user experience by offering the same core capabilities, options.
+Note: _Feature Parity_ means Means web-based and command-line interface (CLI) wallets, have the same set of features and functionalities, both versions provide an equivalent or identical user experience by offering the same core capabilities and options.
 
 3. Issues Fix in web-based wallet (https://github.com/Off-Narrative-Labs/Tuxedo/issues/62)
 The current implementation of a cli based wallet allows sending inputs from multiple owners in a single transaction, but it only supports a single recipient for all specified outputs.
@@ -67,7 +67,7 @@ Create a simple decentralized application to demonstrate the viability and matur
 Showcase the unique features of UTXO-based transactions on Polkadot, emphasizing scalability and robustness.
 Address identified gaps and limitations in the current Tuxedo product to enhance overall functionality.
 We think that a successful showcase of a DApp is Cryptokitties which is provided  in Tuxedo warvia pieces in "https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties".
-We want to use this concept and extend the wardrobe codebase implementing a basic web interface and allowing breeding of kitties from the users.
+We want to use this concept and extend the wardrobe codebase implementing a basic web interface and allowing breeding,trading,searching, updating the kitty features such as name , price,tradable status of kitties.
 This DApp is intended for educational purposes only, and not for production use. The web-wallet previously developed will be used for this DApp.
 
 **Technical Requirements** 
@@ -75,39 +75,61 @@ This DApp is intended for educational purposes only, and not for production use.
 **Functionality**:
 Kitties Creation with NFTs:
 Represent each kitty as a unique NFT on the Tuxedo blockchain.
-Use Tuxedo runtime pieces i.e. kitties. to handle NFT-based kitties creation transactions.
+Use Tuxedo runtime pieces i.e. kitties to handle NFT-based kitties creation transactions.
 
 **Breeding and NFT Ownership**:
 DApp ensures NFT ownership is transferred correctly during breeding transactions.
 Leverage NFT attributes to determine genetics and other breeding-related factors.
 
+**Trading of kitties between users**:
+DApp ensures Kitties can be traded between the users.
+Ensure ownerships is transferred successfully once trading is completed.
+
+**Updating the kitty details**:
+DApp ensures Kitties details such as name, tradable status(Yes or No), Price can updated.
+
+**Search kitties owned by other users**:
+DApp helps to serach the kitties owned by other users based on uer publick key.
+This displayes the list of kitties ownsed by other user with all details required for trading such as Gender, Tradable status, Price , Parents , etc.
 
 **Blockchain Integration**:
 Tuxedo Runtime pieces.(wardrobe/kitties ):
-We need Leverage Tuxedo runtime pieces for implementing specific DApp functionalities in the UTXO model, with a focus on NFTs, if some modification is required or if some new functionality is required we may need customize runtime logic to suit the requirements of the UTXO-based DApp.(For this scope we plan not to modify the kitties pieces code as much as possible, since the scope is only DApp)
+We need Leverage Tuxedo runtime pieces for implementing specific DApp functionalities in the UTXO model, with a focus on NFTs, if some modification is required or if some new functionality is required we may need customize runtime logic to suit the requirements of the UTXO-based DApp.
+For this scope we plan to modify the kitties' pieces code for supporting below features:
+1. Generating the kitty without parent when user inserts the new key in the wallet.(Basically 1 kitty is provided for free as an onboarding process)
+2. Implementing the Trading of kitties between users
+3. Searching kitties owned by other users
+4. Adding/Updating more details of kitties such as Gender, Tradable status , Price and Name.
 
 **Transaction Handling**:
 DApp implements transaction handling logic in the web application to initiate UTXO-based transactions, including NFT-related transactions, on the Tuxedo blockchain.
 Provide feedback to users on transaction status and confirmations.
 
 **Transaction Confirmation**:
-DApp implements a transaction confirmation mechanism to ensure that users are informed about the progress and finalization of UTXO and NFT-based transaction
+DApp implements a transaction confirmation mechanism to ensure that users are informed about the progress and finalization of UTXO and NFT-based transaction such as Trade, Breed.
 
 **Personal Dashboard**:
 We will develop a personal dashboard for users to view and manage their NFT-based Kitties collections.
 Display detailed information about each NFT, including ownership history and transaction history.
-Manage NFT means , it icludes below :
+Manage NFT means , it includes below :
 1. Viewing NFTs:
    Users should be able to see a comprehensive list or visual representation of all the NFTs (kitties) they own.
    Display detailed information about each NFT, including attributes such as below :
+   Name
    parents(mom and dad)
    free_breedings(numbers)
    dna(H256 Hash value)
    num_breedings(number)
-   Status(Ready for raring ,Tired(Only for dad) , Had birth recenty(only for Mom)) .
+   Tradable(yes or No)
+   Price
+   Status(Ready for raring ,Tired(Only for dad) , Had birth recently(only for Mom)) .
+2. Trade :
+    Users should be able to buy the kitty from other users via search kitty screen or directly from Trade Kitty screen by inputting the kitty & owner details.
 3. Breed :
-    User should be able to initiate breeding directly from the dashboard.
-4. Interactivity:
+    Users should be able to initiate breeding directly from the dashboard.
+4. Update :
+    Users should be able to update features such as Tradable status, price and name from the dashboard by clicking on any cell which will navigate to update the kitty screen.
+5. Interactivity:
    Make dashboard interactive, allowing users to click on individual NFTs to access more detailed information or initiate specific actions.
 
 **Tech Stack:**
@@ -194,8 +216,9 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the web wallet app for Tuxedo (Private key configuration, local URI to be used to connect to blockchain) and send test transactions, tuxedo balance, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article**/workshop that explains how to use the web-based wallet which can be used to configure the user private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account-based blockchain. |
-| 0e. | Web-based wallet | We will create a web-based wallet which will have functionalities like Storing the private key of the user,(send and receive) Transaction support, Basically all the functionalities provided by the CLI-based wallet (AmoebaDemo, VerifyCoin, SpendCoins, InsertKey, GenerateKey, ShowKeys, RemoveKey, ShowBalance, ShowAllOutputs) |
+| **0d.** | Article | We will publish an **article**/workshop that explains how to use the web-based wallet which can be used to configure the user private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account-based blockchain. |
+| **0e.** | Docker image containing any changes/issue fix in Tuxedo core  | Will provide the dockr image containing any changes or issue fix in Tuxedo core for wallet implementation |
+| **0f.** | Web-based wallet | We will create a web-based wallet which will have functionalities like Storing the private key of the user,(send and receive) Transaction support, Basically all the functionalities provided by the CLI-based wallet (AmoebaDemo, VerifyCoin, SpendCoins, InsertKey, GenerateKey, ShowKeys, RemoveKey, ShowBalance, ShowAllOutputs) |
 
 
 
@@ -211,8 +234,9 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the DApp app to breed kitties,  view the kitties using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |**0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the kitty as NFT", Breeding of kitties and also how to use the Dashboard |
-| **0e.** | DApp | We will create a web-based Daap to support functionality such as "create the kitty as NFT", managing the ownership of NFT/Kitties, Breeding of kitties and showing info.(Meaning of "Managment of NFT" is mentioned above in Dashboard section ) |
-| **0f.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based kitty collections. Display detailed information about each NFT, including ownership and other details such as parents , dna ,etc  |
+|**0e.** | Kitties Pieces: Docker image |Docker image containing the kitties which supports new features such as "Mint kitty without mom and dad , Trade kitty , change ownership of kitty and search keitties" |
+| **0f.** | DApp | We will create a web-based Daap to support functionality such as "create the kitty as NFT", managing the ownership of NFT/Kitties, Breeding,Trading kitties and showing info.(Meaning of "Management of NFT" is mentioned above in Dashboard section ) |
+| **0g.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based kitty collections. Display detailed information about each NFT, including ownership and other details such as parents, dna,Tradable status, Price, etc  |
 ...
 
 
@@ -220,6 +244,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 Please include here
 
+**Dynamic Wallet**: Make the wallet dynamic by using standard metadata format like FRAME between wallet and the Blockchain , so that any newly created pieces can be tested without extra modification.
 **Authentication**: Web-based wallet will consider multi-factor authentication for enhanced security if required
 **Backend Development**: 
 When we implement the authentication backend server is required to handle user authentication and manage connections to the blockchain node. 
