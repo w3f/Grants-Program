@@ -135,6 +135,7 @@ Manage NFT means , it includes below :
 **Tech Stack:**
 TypeScript
 webpack
+IPFS for strong meta data of kitty such as Name , Trading status , Price ,etc.
 
 ### Ecosystem Fit
 
