@@ -14,6 +14,7 @@ Quantum computation is one of the biggest threats to every cryptographic system 
 In order to be considered quantum-resistant, a blockchain must have the following characteristics:
 - Rely on quantum-resistant cryptographic primitives for every event that requires digital signatures, such as signing transactions;
 - Use a quantum-resistant communication protocol between nodes.
+
 On August 28th, 2023, the National Institute of Standards and Technology (NIST) issued an official document stating that 4 algorithms will be standardized as official PQC.
 [NIST Document available here](https://www.federalregister.gov/d/2023-18197/p-12)
 Among the selected algorithms, the document cites:
