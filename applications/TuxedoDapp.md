@@ -69,7 +69,7 @@ Create a simple decentralized application to demonstrate the viability and matur
 Showcase the unique features of UTXO-based transactions on Polkadot, emphasizing scalability and robustness.
 Address identified gaps and limitations in the current Tuxedo product to enhance overall functionality.
 We think that a successful showcase of a DApp is Cryptokitties which is provided  in Tuxedo warvia pieces in "https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties".
-We want to use this concept and extend the wardrobe codebase implementing a basic web interface and allowing breeding,trading,searching, updating the kitty features such as name , price,tradable status of kitties.
+We want to use this concept and extend the wardrobe codebase implementing a basic web interface and allowing breeding,trading,searching, updating the kitty features such as name, price,tradable status of kitties.
 This DApp is intended for educational purposes only, and not for production use. The web-wallet previously developed will be used for this DApp.
 
 **Technical Requirements** 
@@ -92,7 +92,7 @@ DApp ensures Kitties details such as name, tradable status(Yes or No), Price can
 
 **Search kitties owned by other users**:
 DApp helps to search the kitties owned by other users based on the user 's public key.
-This displays the list of kitties owned by other users with all details required for trading such as Gender, Tradable status, Price , Parents , etc.
+This displays the list of kitties owned by other users with all details required for trading such as Gender, Tradable status, Price, Parents, etc.
 
 **Blockchain Integration**:
 Tuxedo Runtime pieces.(wardrobe/kitties ):
@@ -101,7 +101,7 @@ For this scope we plan to modify the kitties' pieces code for supporting below f
 1. Generating the kitty without parent when user inserts the new key in the wallet.(Basically 1 kitty is provided for free as an onboarding process)
 2. Implementing the Trading of kitties between users
 3. Searching kitties owned by other users
-4. Adding/Updating more details of kitties such as Gender, Tradable status , Price and Name.
+4. Adding/Updating more details of kitties such as Gender, Tradable status, Price and Name.
 
 **Transaction Handling**:
 DApp implements transaction handling logic in the web application to initiate UTXO-based transactions, including NFT-related transactions, on the Tuxedo blockchain.
@@ -113,7 +113,7 @@ DApp implements a transaction confirmation mechanism to ensure that users are in
 **Personal Dashboard**:
 We will develop a personal dashboard for users to view and manage their NFT-based Kitties collections.
 Display detailed information about each NFT, including ownership history and transaction history.
-Manage NFT means , it includes below :
+Manage NFT means, it includes below :
 1. Viewing NFTs:
    Users should be able to see a comprehensive list or visual representation of all the NFTs (kitties) they own.
    Display detailed information about each NFT, including attributes such as below :
@@ -124,7 +124,7 @@ Manage NFT means , it includes below :
    num_breedings(number)
    Tradable(yes or No)
    Price
-   Status(Ready for raring ,Tired(Only for dad) , Had birth recently(only for Mom)) .
+   Status(Ready for raring,Tired(Only for dad), Had birth recently(only for Mom)) .
 2. Trade :
     Users should be able to buy the kitty from other users via search kitty screen or directly from Trade Kitty screen by inputting the kitty & owner details.
 3. Breed :
@@ -137,7 +137,7 @@ Manage NFT means , it includes below :
 **Tech Stack:**
 TypeScript
 webpack
-IPFS for strong meta data of kitty such as Name , Trading status , Price ,etc.
+IPFS for storing meta data of kitty such as Name, Trading status, Price, etc.
 
 Wireframe:https://drive.google.com/file/d/1pLnz2rzjG2fU30rdXeBpnT6A4DvjPxhy/view?usp=sharing
 
@@ -239,7 +239,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the DApp app to breed kitties,  view the kitties using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |**0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the kitty as NFT", Breeding of kitties and also how to use the Dashboard |
-|**0e.** | Kitties Pieces: Docker image |Docker image containing the kitties which supports new features such as "Mint kitty without mom and dad , Trade kitty , change ownership of kitty and search keitties" |
+|**0e.** | Kitties Pieces: Docker image |Docker image containing the kitties which supports new features such as "Mint kitty without mom and dad, Trade kitty, change ownership of kitty and search keitties" |
 | **0f.** | DApp | We will create a web-based Daap to support functionality such as "create the kitty as NFT", managing the ownership of NFT/Kitties, Breeding,Trading kitties and showing info.(Meaning of "Management of NFT" is mentioned above in Dashboard section ) |
 | **0g.** | Personalized Dashboard | We will create a personal dashboard for users to view and manage their NFT-based kitty collections. Display detailed information about each NFT, including ownership and other details such as parents, dna,Tradable status, Price, etc  |
 ...
@@ -249,7 +249,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 Please include here
 
-**Dynamic Wallet**: Make the wallet dynamic by using standard metadata format like FRAME between wallet and the Blockchain , so that any newly created pieces can be tested without extra modification.
+**Dynamic Wallet**: Make the wallet dynamic by using standard metadata format like FRAME between wallet and the Blockchain, so that any newly created pieces can be tested without extra modification.
 **Authentication**: Web-based wallet will consider multi-factor authentication for enhanced security if required
 **Backend Development**: 
 When we implement the authentication backend server is required to handle user authentication and manage connections to the blockchain node. 
