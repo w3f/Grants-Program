@@ -117,6 +117,8 @@ There are no similar projects in polkadot as well as other blockchains as of now
 
 - **Joby Reuben**: Joby is a the research lead. He is a dedicated researcher and has been delving deep in blockchains for over 2 years. He has profound understanding of Layer 1 protocols and is passionate to design Layer 1 consensus protocols. Currently he rewriting Ethereum yellow paper for developers as an open contribution. His elaborate research experience and realization of current shortcomings of blockchain has led to the idea of developing first developer incentivising consensus which we look forward to bring into reality.
 
+Overall we are a team of 6 members, 3 of which are core developers as mentioned above, one assists on basis of task and other 2 handle the non-technical work.
+
 ### Team Code Repos
 
 - https://github.com/Purva-Chaudhari
@@ -134,13 +136,13 @@ There are no similar projects in polkadot as well as other blockchains as of now
 ### Overview
 
 - **Total Estimated Duration:**  weeks
-- **Full-Time Equivalent (FTE):**  3
-- **Total Costs:**  BTC equivalent to 30,000 USD
+- **Full-Time Equivalent (FTE):**  3-3.5
+- **Total Costs:**  BTC equivalent to 25,000 USD
 
 ### Milestone 1 - Pallet Contract Update
 
 - **Estimated duration:** 4 weeks
-- **FTE:**  3
+- **FTE:**  3-3.5
 - **Costs:** BTC equivalent to 7,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
@@ -153,7 +155,7 @@ There are no similar projects in polkadot as well as other blockchains as of now
 ### Milestone 2 — Pallet staking Update
 
 - **Estimated duration:** 6 weeks
-- **FTE:**  3
+- **FTE:**  3-3.5
 - **Costs:** BTC equivalent to 10,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
@@ -163,31 +165,19 @@ There are no similar projects in polkadot as well as other blockchains as of now
 | 0c.    | Testing and Testing Guide | Unit testing and testing tutorial|
 | 1.     | Modify pallet staking for PoCS   | Add custom functions and modify some existing functions of pallet staking and pallet contract to implement our attributes and make the pallets interact accordingly  |
 
-### Milestone 3 — Validator Reward Contract
+### Milestone 3 — Validator Reward Contract, Testing and Documentation
 
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 5 weeks
 - **FTE:**  3
-- **Costs:**  BTC equivalent to 7,000 USD
+- **Costs:**  BTC equivalent to 8,000 USD
 
 | Number |        Deliverable        | Specification   |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | 0a.    | License                   | MIT license   |
-| 0b.    | Documentation             | Inline documentation of the code and a external contract documentation |
+| 0b.    | Documentation             | Inline documentation of the code and a external contract documentation <br> We will publish an article/workshop that explains inner workings of PoCS and developer guide to build a PoCS enabled Substrate chain|
 | 0c.    | Testing and Testing Guide | Unit testing with our validator reward ink! contract |
 | 1    | Contract development | Design and implement a validator reward contract. (i.e Co-ordinator contract for rewarding). <br>Integrate it with PoCS consensus |
-
-
-### Milestone 4 — Final Tests, Results and Documentation
-
-- **Estimated duration:** 4 weeks
-- **FTE:**  3
-- **Costs:**  BTC equivalent 6,000 USD
-
-| Number| Deliverable |     Specification  |
-|--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | Documentation             | End to end tutorial and external documentation for the entire consensus. |
-| 0b. | Article | We will publish an article/workshop that explains inner workings of PoCS and developer guide to build a PoCS enabled Substrate chain
-| 1. | Alpha testing and publish paper | Alpha testing of entire consensus. Since it is a new consensus design, we have a separate milestone for analyzation of results over conducting an end to end test of the protocol <br><br>Standalone yellow paper|
+| 2. | Alpha testing and publish paper | Alpha testing of entire consensus. Since it is a new consensus design, we have a separate milestone for analyzation of results over conducting an end to end test of the protocol <br><br>Standalone yellow paper|
 
             
 ## Future Plans
