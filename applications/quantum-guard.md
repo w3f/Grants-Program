@@ -3,7 +3,7 @@
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
 - **Team Name:** Andrea Di Franco
-- **Payment Address:** ETH (USDC) 0x5300Bc7Fd2554E11408BcD9b340447F90535FA9f
+- **Payment Address:** Polkadot Asset Hub (USDC) 13jYU81g4FjBWX4ZMW2o42JCeneqB7xEHfs2muhPfW3RYkq
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
