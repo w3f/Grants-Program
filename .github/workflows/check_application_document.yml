@@ -25,6 +25,10 @@ jobs:
     if: needs.get_filename.outputs.filename
     runs-on: ubuntu-latest
     steps:
+      - name: add admin-review label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: admin-review
       - name: Checkout
         uses: actions/checkout@v2
       - name: Parse application file
@@ -32,7 +36,3 @@ jobs:
         uses: w3f/parse-grant-application-action@master
         with:
           path: "${{ github.workspace }}/${{ needs.get_filename.outputs.filename }}"
-      - name: add admin-review label
-        uses: actions-ecosystem/action-add-labels@v1
-        with:
-          labels: admin-review
