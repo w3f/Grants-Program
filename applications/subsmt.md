@@ -122,6 +122,7 @@ And many zero-knowledge proofs use languages similar to rust or use rust directl
 |      3. | Smart contracts(ink): SMT | We will deliver a set of ink! smart contracts that will will verify Merkle root.                                                                                                                                                              
 |      4. | backend                   | backend, used for permanent storage(based on rocksdb) of off-chain data and provision of rpc services.                                                                                                                                        |
 |      5. | network                   | A basic network with SMT pallet and contract pallet for testing smart contracts and SMT pallet functions.                                                                                                                                     | 
+> It also includes some changes to the hash algorithm and the selection of data serialization and deserialization algorithms, as well as the testing of these parts, which do not need to be included in the milestone work because some of them have been completed before.
 
 ### Milestone 2 - backend base on parity-db and common backend.
 - **Estimated Duration:** 1 month
