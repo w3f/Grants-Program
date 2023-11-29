@@ -19,8 +19,10 @@ This project will do just that.
 - Sparse Merkle trees are widely used in blockchain technology solutions and can be used to store data and verify data integrity, 
 reducing the computing and storage pressure of the chain. We noticed that there is currently only the MMT solution in substrate, 
 and sparse Merkle trees should also be provided to allow community developers to have more choices and avoid repeated development.
-The sparse Merkle tree follows a strict and complete binary path, which can better obtain the root in advance when the data has not been updated. 
-This is very useful to prevent off-chain data inconsistency after the blockchain transaction is rolled back. 
+The sparse Merkle tree follows a strict and complete binary path, which can better obtain the root in advance when the data has not been updated
+(This is very useful to prevent off-chain data inconsistency after the blockchain transaction is rolled back),
+and verify the non-existence of data, and the structure of the Merkle tree rarely changes when data is updated, and related operations are all log(n), etc. 
+It has almost perfect balance and stability, allowing more possibilities in algorithms and providing more functions.
 It is a Merkle tree solution that is well worth adopting.
 
 ### Project Details
@@ -49,7 +51,7 @@ SubSMT serves projects that require off-chain storage and then on-chain verifica
 This project is suitable for teams that want to use sparse Merkel trees and is also the best choice. 
 In the Polkadot ecosystem, the only implementation of Merkle tree is MMT. This is an urgent need for sparse Merkle trees with a large user base. 
 With this unified solution, community tools are further improved and the development ecosystem is further prosperous, 
-which greatly helps developers spend more time. 
+which greatly helps developers save more time. 
 
 Our goal is to create a Polkadot eco-friendly sparse Merkle tree solution based on rust, substrate and ink, not other languages. Developing 
 based on rust will be beneficial to the use of ecological projects because it has greater compatibility. 
