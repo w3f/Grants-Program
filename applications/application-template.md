@@ -57,6 +57,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ## Team :busts_in_silhouette:
 
+> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
+
 ### Team members
 
 - Name of team leader

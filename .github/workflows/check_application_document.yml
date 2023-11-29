@@ -25,10 +25,12 @@ jobs:
     if: needs.get_filename.outputs.filename
     runs-on: ubuntu-latest
     steps:
-
+      - name: add admin-review label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: admin-review
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Parse application file
         id: grant_parser
         uses: w3f/parse-grant-application-action@master
