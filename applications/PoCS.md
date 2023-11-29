@@ -71,7 +71,7 @@ This function allows a developer to claim their rewards from the Validator Rewar
 </p>
 
 #### What your project is not or will not provide or implement
-We have structured our implementation into 4 milestones. In this grant our focus is to develop a first version which would implement pallet-contract to calculate the  staking score in simplistic yet efficient way with above mentioned fields. It would handle 
+We have structured our implementation into 3 milestones. In this grant our focus is to develop a first version which would implement pallet-contract to calculate the  staking score in simplistic yet efficient way with above mentioned fields. It would handle 
 * Stake score update when deployer deploys contract 
 * Stake score update when a user calls contract function or other contracts call the contract function
 * Integration with proof of stake in substrate.
