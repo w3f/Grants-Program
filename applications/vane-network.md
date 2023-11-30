@@ -6,8 +6,9 @@
 
 - **Team Name:** Vane-Network
 - **Payment Address:** 14uNH42NjxS3c4VSxVyHjZYea5ZyJEYWYxjRzmxKQB75pdRB (AssetHub - USDT)
+- **Beneficiary** Mrisho Lukamba
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
-- **Email:** MrishoLukamba@proton.me || abdulrazzaqlukamba@gmail.com || vane-network@protonmail.com
+- **Email:** MrishoLukamba@proton.me || abdulrazzaqlukamba@gmail.com ||
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
