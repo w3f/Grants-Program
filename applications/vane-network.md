@@ -6,7 +6,6 @@
 
 - **Team Name:** Vane-Network
 - **Payment Address:** 14uNH42NjxS3c4VSxVyHjZYea5ZyJEYWYxjRzmxKQB75pdRB (AssetHub - USDT)
-- **Beneficiary** Mrisho Lukamba
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 - **Email:** MrishoLukamba@proton.me || abdulrazzaqlukamba@gmail.com ||
 
@@ -17,6 +16,8 @@
 
 ### Overview
 
+- **Beneficiary** Mrisho Lukamba
+  
 
 
 Vane is a parachain that act as an extension product and safety layer for Polkadot and AssetHub which provides services to help trust and growth on social commerce business and introducing transaction safety in web3.
@@ -132,20 +133,9 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
   -   Postcode:14125
     
 - Shankar Rao Mata
-
-  **Address**
-  - India, Telengana,
-  - Hyderabad,
-  - Plot no 123&124 Sampada Homes, Rajiv Gruha Kalpa
   
 - Vijyanedra Gaur
   
-  **Address**
-  -  India, Maharashtra,
-  -  Pune
-  -  G-302, Sylvania
-  -  Postcode: 411013
-
 ### Contact
 
 - **Contact Name:** Mrisho Lukamba
