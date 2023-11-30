@@ -66,12 +66,12 @@ And many zero-knowledge proofs use languages similar to rust or use rust directl
 
 ### Contact
 
-- **Contact Name:** YanOctavian
-- **Contact Email:** farcloud@proton.me
+- **Contact Name:** octavei
+- **Contact Email:** octavei@proton.me
 
 ### Legal Structure
 
-- **Registered Address:** Shore Residence, Tower C2, Sunrise Dr. FLOOR 17, Sea View, Pasay, Philippines
+- **Registered Address:** No. 6, Jiusi Team, Renlian Village, Laren Town, Du'an Yao Autonomous County, Guangxi, China.
 - **Registered Legal Entity:** N/A
 
 ### Team's experience
