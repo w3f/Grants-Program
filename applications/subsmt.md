@@ -63,7 +63,6 @@ And many zero-knowledge proofs use languages similar to rust or use rust directl
 
 * YanOctavian
 * octavei
-* linkdrone1
 
 ### Contact
 
@@ -77,8 +76,9 @@ And many zero-knowledge proofs use languages similar to rust or use rust directl
 
 ### Team's experience
 * `YanOctavian` worked in the Ethereum L2 cross-chain bridge Orbiter team, responsible for decentralized sequencer development and decentralized client submitter development. He has 3 years of rust development experience and 5 years of blockchain smart contract development experience.
-* `octavei` development engineer of Aband Network, with 4 years experience in substrate development. Familiar with Ethereum and EOS smart contracts. Have done many blockchain projects.
-* `linkdrone1` Core developer and leader of the Ethereum L2 cross-chain bridge Orbiter team.
+* `octavei` 4 years experience in substrate development. Familiar with Ethereum and EOS smart contracts. Have done many blockchain projects.
+> There are also some people whose identities are not disclosed and who do not participate in development, but will provide basic help, such as contract security reviews and technical opinions. At the same time, they will not benefit from the grant of this project. They all have extensive experience in blockchain contracts. Thank them here.
+
 ### Team Code Repos
 
 - https://github.com/farcloud-labs/submitter
@@ -87,7 +87,6 @@ And many zero-knowledge proofs use languages similar to rust or use rust directl
 
 ***
 - https://github.com/YanOctavian
-- https://github.com/linkdrone
 - https://github.com/Octavei
 
 
