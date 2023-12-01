@@ -106,7 +106,7 @@ Here is an excerpt of the connection of the backend server to the Moonbeam smart
 Our team already developed a UI mockup in the OpenAI platform for our PolkaAirdrops GPT. 
 This is shown in the figure below.
 
- ![overview of GPTs in the OpenAI platform](https://github.com/AI-Agents-Lab/PolkaAirdrops/blob/main/OpenAI_GPTs.png)
+ ![Overview of GPTs in the OpenAI platform](https://github.com/AI-Agents-Lab/PolkaAirdrops/blob/main/OpenAI_GPTs.png)
 
 
 As you can see in the figure, the users will see our PolkaAirdrops GPT where they can manage the airdrop campaign and also claim the NFT airdrops. 
@@ -115,7 +115,7 @@ The PolkaAirdrops GPT is a specific GPT that is viewed and directly accessible b
 
 Once users have installed the PolkaAirdrops GPT, they will see the PolkaAirdrop UI as seen in the figure below. 
 
-![overview of GPTs in the OpenAI platform](https://github.com/AI-Agents-Lab/PolkaAirdrops/blob/main/OpenAI_Polka.png)
+![Overview of the PolkaAirdrop GPT](https://github.com/AI-Agents-Lab/PolkaAirdrops/blob/main/OpenAI_Polka.png)
 
 The figure shows at the bottom the user's main actions that will trigger the interaction with the PolkaAirdrop GPT:  
 * _How do I create an airdrop for my project?_. In this action the GPT will guide through the different steps to set up the airdrop such as defining the project manager address, the project prompt NFT, the requisites for ambassadors to get rewarded the NFT, duration of the airdrop, among other configurations. 
