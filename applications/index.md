@@ -67,6 +67,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [WeTEE DAO](https://www.wetee.app)                   | [WeTEE Network](WeTEE_Network.md)                                                              | [GitHub](https://github.com/wetee-dao)                      | ☐          |       ☐        |     ☐     |
 | [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests 3](CoinFabrik_On_Ink_Integration_Tests_3.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☐        |     ☐     |
 | [Andrea Di Franco](https://github.com/andredif)                    | [QuantumGuard](quantum-guard.md)                                                              | [GitHub](https://github.com/andredif)                      | ☐          |       ☐        |     ☐     |
+| [Solidbit GmbH](https://solid-bit.com)                    | [Democratic Governance](democratic-governance-1.md)                                                              | [GitHub](https://github.com/encointer)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
