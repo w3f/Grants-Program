@@ -65,6 +65,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [element36 AG](https://element36.io)                   | [Hyperfridge](hyperfridge.md)                                                              | [GitHub](https://github.com/element36-io)                      | ☐          |       ☐        |     ☐     |
 | [RegionX](https://regionx.tech)                   | [RegionX](RegionX.md)                                                              | [GitHub](https://github.com/RegionX-Labs)                      | ☐          |       ☐        |     ☐     |
 | [WeTEE DAO](https://www.wetee.app)                   | [WeTEE Network](WeTEE_Network.md)                                                              | [GitHub](https://github.com/wetee-dao)                      | ☐          |       ☐        |     ☐     |
+| [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests 3](CoinFabrik_On_Ink_Integration_Tests_3.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
 
