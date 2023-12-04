@@ -12,7 +12,7 @@ Zooper Corp's Node Red Client for Polkadot is a project aimed at bridging the ga
 
 ### Project Details
 
-- **Technology Stack:** NodeRed, JavaScript, Web3 technologies.
+- **Technology Stack:** NodeRed, JavaScript
 - **Documentation:** Comprehensive documentation of core components and Node Red usage page
 - **Prior Work:** https://flows.nodered.org/node/node-red-contrib-polkadot
 - **Project Limitations:** Client supports Substrate only
@@ -30,7 +30,8 @@ Zooper Corp's Node Red Client for Polkadot is a project aimed at bridging the ga
 | **0a.** | License | MIT |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the nodes with examples for each single node and screenshots. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
-| 1. | Node Red Integration | Development of basic Node Red nodes for Polkadot interaction. |
+| **0d.** |	Docker | We will provide a modified Node Red Docker image that includes the plugin plus a few flows to quickly test the application. |
+| 1. | Node Red Integration | Development of Node Red plugin that will provide visual "nodes" to connect to substrate based chains and perform basic interactions, initially plugin will support the following "nodes": configuration client (with sr25519 support only), raw chain storage query in the form of pallet.method(params...), chain info with decimals and runtime version, balance transfer and balance reading, raw trasaction in the form of pallet.method(params...) |
 | 2. | Address issues | Assign, triage or address any pending issue on the github repo. |
 
 ### Milestone 2 — Metadata and EVM Chain Support
@@ -41,9 +42,9 @@ Zooper Corp's Node Red Client for Polkadot is a project aimed at bridging the ga
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | EVM Support | Adding support for EVM based chains, like Moonbeam. |
-| 2. | Metadata Loading | Implementing automatic metadata loading and basic chain information (e.g., decimals, token). |
-| 3. | Metadata Node | Implementing basic metadata node that provides chain info. |
+| 1. | EVM Support | Adding support for EVM and ed25519 based chains, like Moonbeam. |
+| 2. | Metadata Loading | Implementing automatic metadata loading and chain information inluding pallets and methods. |
+| 3. | Proxy support | Add proxy support to transfer and transact nodes. |
 
 ### Milestone 3 — Block Event Subscription Node
 
