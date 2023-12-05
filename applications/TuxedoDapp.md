@@ -28,7 +28,7 @@ Focus on simplicity, security, and ease of use to provide a seamless experience 
 **Technical Requirements**
  
 **Security:** : Private key storage:
-Web-based wallet will provide a secure method for private key storage on the client side, such as a browser's secure storage or hardware wallets.
+The web-based wallet will provide a secure method for private key storage on the client side, such as a browser's secure storage or hardware wallets.
 
 **Functionality**: 
 1. Feature Parity Between Web-Based and CLI Wallets
@@ -102,7 +102,7 @@ For this scope, we plan to modify the kitties' pieces code to support below feat
 1. Generating the kitty without the parent when the user inserts the new key in the wallet (basically, 1 kitty is provided for free as an onboarding process)
 2. Implementing the Trading of kitties between users
 3. Searching kitties owned by other users
-4. Adding/Updating more details of kitties such as Gender, Tradable status, Price and Name.
+4. Adding/Updating more details of kitties such as Gender, Tradable status, Price, and Name.
 
 **Transaction Handling**:
 DApp implements transaction handling logic in the web application to initiate UTXO-based transactions, including NFT-related transactions, on the Tuxedo blockchain.
@@ -128,18 +128,21 @@ Manage NFT means, it includes below :
    Price
    Status (Ready for Raring, Tired (only for Dad), Had birth recently(only for Mom)).
 2. Trade :
-    Users should be able to buy the kitty from other users via the search kitty screen or directly from Trade Kitty screen by inputting the kitty & owner details.
+    Users should be able to buy the kitty from other users via the search kitty screen or directly from the Trade Kitty screen by inputting the kitty & owner details.
 3. Breed :
     Users should be able to initiate breeding directly from the dashboard.
 4. Update :
-    Users should be able to update features such as Tradable status, price and name from the dashboard by clicking on any cell which will navigate to update the kitty screen.
+    Users should be able to update features such as Tradable status, price, and name from the dashboard by clicking on any cell which will navigate to update the kitty screen.
 5. Interactivity:
    Make the dashboard interactive, allowing users to click on individual NFTs to access more detailed information or initiate specific actions.
 
 **Tech Stack:**
-TypeScript
-webpack
-IPFS for strong metadata of kitty such as Name, Trading status, Price, etc.
+ React Framework(React + Redux + React Router) OR Vue Framework(Vue.js with Vuex and the Vue Router)
+ Polkadot-JS APIs such as API for getting block data 
+ TypeScript 
+ Babel - for backward compatibility in older Browsers 
+ Local database: IndexedDB
+ IPFS for strong metadata of kitty such as Name, Trading status, Price, etc.
 
 Wireframes: https://drive.google.com/file/d/1pLnz2rzjG2fU30rdXeBpnT6A4DvjPxhy/view?usp=sharing
 
@@ -183,7 +186,7 @@ Wireframes: https://drive.google.com/file/d/1pLnz2rzjG2fU30rdXeBpnT6A4DvjPxhy/vi
 - Amit is a seasoned software professional with over 18 years of extensive experience in the industry.
 His expertise spans a variety of programming languages, including C, C++, Java, Kotlin, and Rust, as well as diverse technologies such as Blockchain, Android app development, and AOSP (Android Open Source Project) development.
 In the blockchain space, Amit has showcased his proficiency in Pallet Development.
-He has successfully implemented advanced practices, including Prometheus and Grafana for metrics and telemetry, forkless upgrades of runtime and pallets using polkadot.js.org.
+He has successfully implemented advanced practices, including Prometheus and Grafana for metrics and telemetry, forkless upgrades of runtime, and pallets using polkadot.js.org.
 Additionally, Amit has hands-on experience in Ink-based SmartContract development and deployment using a web interface in Substrate Blockchain, demonstrating his versatility in running nodes with different roles, such as Validator/Author and Full node, and configuring Aura and Grandpa through chain specification updates in customSpec.json.
 His diverse skill set showcases a comprehensive understanding of blockchain technologies and their practical applications.
 Amit has more than 100 technical blogs in Blockchain specifically in Substrate, Polkadot and Rust language, Wasm: https://www.linkedin.com/pulse/consolidated-article-categorization-amit-nadiger/
