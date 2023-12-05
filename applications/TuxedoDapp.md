@@ -53,15 +53,15 @@ We will consider using libraries that support the specific blockchain's transact
 web-based wallet will consider using databases for storing non-sensitive user data.
 Local database (e.g., IndexedDB, WebSQL, or a lightweight client-side database) to store relevant wallet data locally on the user's device.
 
-**Technology Stack**:
-polkadot{.js}  - We will try to re-use as much as possible
-Vue.js with Vuex and the Vue Router
-TypeScript
-webpack
-Babel - for backward compatibility in older Browsers
-Local database: IndexedDB, WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
+**Tech Stack**:
+- polkadot{.js}  - We will try to re-use as much as possible
+- Vue.js with Vuex and the Vue Router
+- TypeScript
+- webpack
+- Babel for backward compatibility in older Browsers
+- Local database: IndexedDB, WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
 
-Wireframes: -- work in progress --
+Wallet Wireframes: [![Wallet wireframes](https://lh3.googleusercontent.com/d/1XxslvAv3H5BbjVa2sEYMSV3tjYpdKTbi=w3692-h1932-iv1)](https://drive.google.com/file/d/1XxslvAv3H5BbjVa2sEYMSV3tjYpdKTbi/view?usp=sharing)
 
 - Stage 2: DApp Development
 
