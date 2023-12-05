@@ -12,7 +12,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
-- [Gautam Dhameja](https://github.com/gautamdhameja)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Bill Laboon](https://github.com/laboon)
