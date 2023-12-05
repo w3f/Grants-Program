@@ -315,6 +315,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Acala Grants Program](https://acala.network/ecosystem-program)
 - [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
+- [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Decentralized Futures Program](https://futures.web3.foundation/) 
