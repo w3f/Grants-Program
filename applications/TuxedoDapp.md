@@ -62,7 +62,7 @@ Local database (e.g., IndexedDB, WebSQL, or a lightweight client-side database) 
 - IndexedDB for Local database
 - Jest as JavaScript testing framework
 
-Wallet Wireframes: ![Wallet wireframes](https://lh3.google.com/u/0/d/1nzE2_uqK5V4IwUJJPb92Q_WJk3RDR9UL=w3692-h1932-iv2)
+Wallet Wireframes: [![Wallet wireframes](https://lh3.googleusercontent.com/d/1nzE2_uqK5V4IwUJJPb92Q_WJk3RDR9UL=-h1932-iv2)](https://drive.google.com/file/d/1nzE2_uqK5V4IwUJJPb92Q_WJk3RDR9UL/view?usp=sharing)
 
 - Stage 2: DApp Development
 
@@ -146,7 +146,8 @@ Manage NFT means, it includes below :
 - IPFS for storing metadata related to the kitty such as Name, Trade status, Price, etc.
 - Jest as JavaScript testing framework
 
-DApp Wireframes: ![DApp wireframes](https://lh3.google.com/u/0/d/1dCr5Wwi0L-fGPdwAQGFPDhmTeBQYPDy1=w3692-h1932-iv1)
+DApp Wireframes: [![Wallet wireframes](https://lh3.googleusercontent.com/d/1dCr5Wwi0L-fGPdwAQGFPDhmTeBQYPDy1=w3692-h1932-iv1)](https://drive.google.com/file/d/1dCr5Wwi0L-fGPdwAQGFPDhmTeBQYPDy1/view?usp=sharing)
+
 
 ### Ecosystem Fit
 
