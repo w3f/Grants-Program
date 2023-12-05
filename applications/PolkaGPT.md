@@ -1,12 +1,12 @@
 # PolkaGPT - All about Polka-lover 
 
 - **Team Name:** Eul
-- **Payment Address:** Polkadot 
+- **Payment Address:** ETH :  0xb210Ed16Dbcb2C08b9216DD62Eaa64F7FF2eDF4B
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
-`PolkaGPT` is an application tool for the `LLM` model designed for developers, researchers, and users to search for documents, suggest code, hint at bug solutions, and more. Additionally, the Polkadot-loving open-source community can contribute to the data repository so that PolkaGPT can be updated continuously
+`PolkaGPT` is an application tool for the `LLM (Large Language Model)` model designed for developers, researchers, and users to search for documents, suggest code, hint at bug solutions, and more. Additionally, the Polkadot-loving open-source community can contribute to the data repository so that PolkaGPT can be updated continuously
 
 1. **In-Depth Content:**
 
@@ -48,19 +48,26 @@ To illustrate how `PolkaGPT` works:
 
 ### Team members / Contact
 
-- **Contact Name:** Dustin Ho
-- **Contact Email:** hodinhdung1997@gmail.com
+- **Contact Name:** Dung Ho Dinh (Dustin) / Nhat Cuong / Dzung Doan / Tinh Do Pham Phuc 
+- **Contact Email:** hodinhdung1997@gmail.com / vonhatcuongyy@gmail.com / doanvietdung273@gmaiil.com / dpptinh@gmail.com
 
 
 ### Team's experience
 
-+ Dustin is Blockchain Developer. He has 3+ years of experience in Smart Contract like: Solidity language programming (EVM-based) in ETH, BSC,... or Rust in NEAR, Polkadot. And He also have worked in Rust/Substrate in the Polkadot ecosystem
++ Dustin is Blockchain Developer. He has 3+ years of experience in Smart Contract like: Solidity language programming (EVM-based) in ETH, BSC,... or Rust in NEAR, Polkadot. And He also have worked in Rust/Substrate in the Polkadot ecosystem.
+
++ Nhat Cuong is currently working in Research and Development at VBI Academy with 2 years of experience in the field of artificial intelligence. He is currently researching the application of LLMs in educational systems. Additionally, he has experience in Rust and DevOps.
+
++ Dzung is an AI/Blockchain Developer with over 5 years of expertise in the AI sector, contributing to the development of diverse products including eKYC, Chatbots, and Recommendation systems. Additionally, he possesses proficiency as a blockchain developer, demonstrating familiarity with Solidity and Rust. His portfolio includes on-chain projects like Nearlend protocol, DinoLand, and Mechmaster
+
++ Tinh's major is Data Science at University of Information Technology, VNU-HCM. He is interested in natural language processing, especially question answering and conversation AI (chatbot)
 
 
 ### Team Code Repos
 
 - https://github.com/CocDap
-
+- https://github.com/vonhatcuong
+- https://github.com/Vietdung113
 
 ## Development Status :open_book:
 `PolkaGPT` stops at the level of ideas and is currently implementing a complete MVP
@@ -73,12 +80,13 @@ To illustrate how `PolkaGPT` works:
 ### Overview
 
 - **Total Estimated Duration:** 8 weeks
-- **Full-Time Equivalent (FTE):** 2.0 FTE
+- **Full-Time Equivalent (FTE):** 1.0 FTE
 - **Total Costs:** 10,000 USD.
 
 
 ## Future Plans
- 
++ Optimize Backend Service
++ Optimize AI prompt  
 
 ## Additional Information :heavy_plus_sign:
 
