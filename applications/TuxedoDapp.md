@@ -61,7 +61,7 @@ webpack
 Babel - for backward compatibility in older Browsers
 Local database: IndexedDB, WebSQL, or any lightweight client-side database to store relevant wallet data locally on the user's device.
 
-Wireframes: https://drive.google.com/file/d/1sJ2eIvTEMzmwdEPkipes0OGU57OsUblH/view?usp=sharing
+Wireframes: -- work in progress --
 
 - Stage 2: DApp Development
 
@@ -137,14 +137,14 @@ Manage NFT means, it includes below :
    Make the dashboard interactive, allowing users to click on individual NFTs to access more detailed information or initiate specific actions.
 
 **Tech Stack:**
- React Framework(React + Redux + React Router) OR Vue Framework(Vue.js with Vuex and the Vue Router)
- Polkadot-JS APIs such as API for getting block data 
- TypeScript 
- Babel - for backward compatibility in older Browsers 
- Local database: IndexedDB
- IPFS for strong metadata of kitty such as Name, Trading status, Price, etc.
+ - React Framework(React + Redux + React Router) OR Vue Framework(Vue.js with Vuex and the Vue Router)
+ - Polkadot-JS APIs such as API for getting block data 
+ - TypeScript 
+ - Babel - for backward compatibility in older Browsers 
+ - Local database: IndexedDB
+ - IPFS for strong metadata of kitty such as Name, Trading status, Price, etc.
 
-Wireframes: https://drive.google.com/file/d/1pLnz2rzjG2fU30rdXeBpnT6A4DvjPxhy/view?usp=sharing
+Wireframes: -- work in progress --
 
 ### Ecosystem Fit
 
@@ -223,7 +223,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT |
+| **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the web wallet app for Tuxedo (Private key configuration, local URI to be used to connect to blockchain) and send test transactions, tuxedo balance, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Article | We will publish an **article**/workshop that explains how to use the web-based wallet which can be used to configure the user's private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account-based blockchain. |
@@ -238,7 +238,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT |
+| **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the DApp app to breed kitties,  view the kitties using the dashboard |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Article | We will publish an **article**/workshop that explains how to use the DApp which can be used to "create the kitty as NFT", Breeding of kitties, and also how to use the Dashboard |
