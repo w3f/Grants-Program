@@ -228,7 +228,7 @@ We have had conversations with the W3F team to validate the idea and find a star
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Article | We will publish an **article**/workshop that explains how to use the web-based wallet which can be used to configure the user's private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account-based blockchain. |
 | **0e.** | Docker image containing any changes/issue fix in Tuxedo core  | Will provide the docker image containing any changes or issue fix in Tuxedo core for wallet implementation |
-| **0f.** | Web-based wallet | We will create a web-based wallet that will have functionalities like Storing the private key of the user,(send and receive) Transaction support, all the functionalities provided by the CLI-based wallet (AmoebaDemo, VerifyCoin, SpendCoins, InsertKey, GenerateKey, ShowKeys, RemoveKey, ShowBalance, ShowAllOutputs) |
+| **0f.** | Web-based wallet | We will create a web-based wallet that will have functionalities like Storing the private key of the user,(send and receive) Transaction support, all the functionalities provided by the CLI-based wallet (VerifyCoin, SpendCoins, InsertKey, GenerateKey, ShowKeys, RemoveKey, ShowBalance, ShowAllOutputs) |
 
 ### Milestone 2 — Stage 2: Developing a basic DApp
 
