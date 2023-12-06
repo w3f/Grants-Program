@@ -58,12 +58,11 @@ D --> K
 G[(Vector Database)] --> E
 
 ```
-
-
-
 #### Demonstration 
+![Image 1](https://polkagpt.infura-ipfs.io/ipfs/QmYhGEVDJpvn6Spnzrf82DomMiY2UTHYQFHVhmnWoWsfMF)
 
-Link Demostration: 
+![Image 2](https://polkagpt.infura-ipfs.io/ipfs/QmTviZGs8MB9RqifkYP4sRzvcvBgXGPjiHUq26rVdstfpd)
+
 ### Ecosystem Fit
 
 `PolkaGPT` will help new developers or users in easily and quickly accessing the **Polkadot** ecosystem. The system will provide user-friendly information surrounding **Polkadot**, offering valuable and in-depth insights. Therefore, the information provided is highly useful and specialized. **`BUT POLKAGPT MAY MAKE MISTAKES, SO IT'S NECESSARY TO DOUBLE-CHECK THE INFORMATION`**
@@ -112,6 +111,5 @@ Link Demostration:
 ## Future Plans
 + Optimize Backend Service
 + Optimize AI prompt  
-
-## Additional Information :heavy_plus_sign:
++ `Trustworthy Data` based on Blockchain Technology ( In Researching)
 
