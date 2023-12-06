@@ -1,6 +1,6 @@
 # PolkaGPT - All about Polka-lover 
 
-- **Team Name:** Eul
+- **Team Name:** OraSci
 - **Payment Address:** ETH :  0xb210Ed16Dbcb2C08b9216DD62Eaa64F7FF2eDF4B
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
@@ -89,9 +89,7 @@ G[(Vector Database)] --> E
 
 ### Team Code Repos
 
-- https://github.com/CocDap
-- https://github.com/vonhatcuong
-- https://github.com/Vietdung113
+- https://github.com/OraSci-Lab/polkaGPT
 
 ## Development Status :open_book:
 `PolkaGPT` stops at the level of ideas and is currently implementing a complete MVP
