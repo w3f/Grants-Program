@@ -99,17 +99,50 @@ G[(Vector Database)] --> E
 
 ## Development Roadmap :nut_and_bolt:
 
-
-
 ### Overview
 
 - **Total Estimated Duration:** 8 weeks
 - **Full-Time Equivalent (FTE):** 1.0 FTE
 - **Total Costs:** 10,000 USD.
 
+### Milestone 1
+
+- **Estimated duration:** 1 month
+- **FTE:**  1
+- **Costs:** 3,000 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | Documents containing the description of whole architecture for PolkaGPT including AI prompt, Backend|
+| **0c.** | Testing Guide | Providing a full test suite and guide for POC |
+| **1a.** | AI prompt | Researching and implementing about features in PolkaGPT: retrieval tools, search tools, interaction with user, ... |
+| **1b.** | Backend Service | Design and implement backend service for AI model |
+
+| **2.** | Frontend | POC backend for chatbot PolkaGPT and refer docs to users |
+| **3.** | Docker | Dockerise backend service and automatically trained AI model |
+
+
+
+### Milestone 2
+
+- **Estimated Duration:** 1 month
+- **FTE:**  1
+- **Costs:** 7,000 USD
+
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **1a.** | Backend | Apply Redis and microservice  technologyto enhance response quickly, accurately |
+| **1b.** | AI Prompt |  Optimize AI model   |
+| **1c.** | Blockchain | Apply Trustworthy data based on blockchain technolgy to train model -> more precise and robustness |
+
 
 ## Future Plans
 + Optimize Backend Service
 + Optimize AI prompt  
-+ `Trustworthy Data` based on Blockchain Technology ( In Researching)
++ `Trustworthy Data` based on `Polkadot`` Technology ( In Researching)
+
 
