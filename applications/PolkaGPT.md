@@ -36,9 +36,34 @@ To illustrate how `PolkaGPT` works:
 
 #### Architecture
 
+```mermaid
+flowchart LR
+subgraph Backend_Service
+A[(Multiple Database)] -->C
+B[User]-->C{Answer in database?}
+end
+C --> |False| D[LLM Agent Validation Service]
+subgraph LLM_Agent_Model
+E[Document Search] --> H[LLM]
+F[Youtube Search Agent] --> I((List Link))
+
+end
+
+C --> |True|E
+C --> |True|F
+I --> L((Answer))
+H --> L
+L --> K((Final Answer))
+D --> K
+G[(Vector Database)] --> E
+
+```
+
+
 
 #### Demonstration 
 
+Link Demostration: 
 ### Ecosystem Fit
 
 `PolkaGPT` will help new developers or users in easily and quickly accessing the **Polkadot** ecosystem. The system will provide user-friendly information surrounding **Polkadot**, offering valuable and in-depth insights. Therefore, the information provided is highly useful and specialized. **`BUT POLKAGPT MAY MAKE MISTAKES, SO IT'S NECESSARY TO DOUBLE-CHECK THE INFORMATION`**
