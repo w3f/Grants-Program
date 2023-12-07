@@ -68,6 +68,10 @@ title: 🙋 FAQ
 
   Our [application template](https://github.com/w3f/Grants-Program/blob/e03a3e760846bfaf44352cb17a6763ff0fcf1a94/.github/pull_request_template.md?plain=1#L21) also offers the possibility to make the application public, but to keep its discussion private.
 
+### What is KYC/KYB and why do I have to provide this data?
+
+  In order to comply with regulations, the Web3 Foundation is required to perform KYC (Know Your Customer) checks on individuals and KYB (Know Your Business) checks on entities applying for a grant in order to verify their identity. For these checks, we ask you to provide information about yourself and/or the entity you are representing through our provider [Sumsub](https://sumsub.com/). If you have any problems with or concerns about this process, please [reach out to us](mailto:grants@web3.foundation).
+
 ## 🥳 After Approval
 
 ### When can I apply for a follow-up grant?

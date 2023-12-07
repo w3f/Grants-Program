@@ -18,10 +18,11 @@ Generally, your project will have better chances to be accepted if:
 Additionally, it must fulfill the following requirements:
 
 - All code produced as part of a grant must be **open-sourced**, and it must also not rely on closed-source software for full functionality. We prefer Apache 2.0, but GPLv3, MIT, or Unlicense are also acceptable.
-- We do not award grants for projects that have been the object of a successful token sale.
-- Applications must not mention a specific token. Furthermore, the focus of the application should lie on the software that is being implemented/research being carried out as part of the grant and less on your project/venture/operation. For the purpose of the application and delivery, think about how others might also benefit from your work.
-- As a general rule, teams are asked to finish a grant before applying for another one.
-- Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering, or criminal activities in general.
+- We do not award grants for projects that have been the object of a successful **token sale**.
+- Applications must not mention a specific **token**. Furthermore, the focus of the application should lie on the **software** that is being implemented/research being carried out as part of the grant and less on your project/venture/operation. For the purpose of the application and delivery, think about how others might also benefit from your work.
+- As a general rule, teams are asked to **finish a grant** before applying for another one.
+- Lastly, we **do not fund** projects that actively encourage gambling, illicit trade, money laundering, or criminal activities in general.
+- The benficiaries of the grant must successfully go through a **KYC/KYB check** during the application phase in order to be eligible.
 
 In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](../Support%20Docs/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product.
 

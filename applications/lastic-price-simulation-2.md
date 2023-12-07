@@ -39,11 +39,12 @@ Our engagement with the community, as evidenced by the [Polkadot forum discussio
 
 - Phil Lucsok (aka Asynchronous Phil)
 - Aurora Makovac (aka Aurora Poppyseed)
+- Pierina Ponce
 
 ### Contact
 
-- **Contact Name:** Phil Lucsok, Aurora Poppyseed
-- **Contact Email:** plucsok@gmail.coml, aurora.makovac@gmail.com
+- **Contact Name:** Phil Lucsok, Aurora Poppyseed, Pierina Ponce
+- **Contact Email:** plucsok@gmail.coml, aurora.makovac@gmail.com, pierinaponce1993@gmail.com
 - **Website:** [lastic.xyz](https://www.lastic.xyz/)
 
 ### Legal Structure
@@ -67,7 +68,7 @@ He led the communications team for the first two years, growing the team from 1 
 
 Phil currently works as a freelancer but is focused on leading [Missing Link](https://www.missing-link.io/)'s marketing, communications and governance strategies. He is also an active participant in Polkadot governance discussions on the Kusamarian and in ChaosDAO.
 
-*Note: Phil Lucsok has not previously applied for a grant at the Web3 Foundation.*
+*Note: Phil Lucsok has previously applied at the Web3 Foundation and has successfully completed Lastic Grant 1.*
 
 #### **Aurora Poppyseed**:
 Aurora's journey in the technological sphere stands out for her innovative approach and unwavering determination. With a foundation in Physics and Electrical Engineering, she transitioned into roles as varied as a Solutions Architect, focusing on electronics and low-level programming, to a Frontend Developer with a commitment to clean code and scalable frontend architectures. 
@@ -80,7 +81,22 @@ In the realm of community engagement and organization, Aurora co-organized the [
 
 Now a freelance blockchain developer, Aurora champions women's representation in Polkadot and ardently supports community-driven blockchain initiatives.
 
-*Note: Aurora Poppyseed has not previously applied for a grant at the Web3 Foundation.*
+*Note: Aurora Poppyseed has previously applied at the Web3 Foundation and has successfully completed Lastic Grant 1.*
+
+### **Pierina Ponce**:
+
+In the dynamic landscape of technology, Pierina Ponce emerges as a versatile force, seamlessly transitioning from a background in health informatics to a burgeoning career in blockchain development.
+
+Pierina's academic journey commenced with a foundation in medicine, culminating in 2018. The pivotal moment occurred during her master's degree in health informatics from 2020 to 2022, where she discovered a profound interest in technology and programming. Eager to explore this newfound passion, Pierina took the leap and enrolled in the computer science program at the Universidad de Palermo in Buenos Aires.
+
+The year 2023 marked Pierina's initiation into the world of blockchain. Driven by a curiosity to delve deeper into this transformative technology, she sought knowledge and practical skills through the [Polkadot Blockchain Academy](https://polkadot.network/development/blockchain-academy/) at UC Berkeley. The immersive experience equipped her with the fundamentals of blockchain, setting the stage for her journey into the vibrant blockchain ecosystem.
+
+Pierina's enthusiasm for blockchain manifested in her active participation in hackathons. Notably, she contributed to the success of the [Women of Polkadot](https://twitter.com/WomenOfPolkadot) team in the encode ink! hackathon, where they secured victory by implementing a groundbreaking PSP34 smart contract. This achievement not only showcased her technical acumen but also underscored her commitment to fostering diversity and inclusion within the blockchain community.
+
+Currently employed as a data professional at [Ixpantia](https://www.linkedin.com/company/ixpantia/), a consulting Costa Rican business specializing in data science and data engineering projects, Pierina has become a catalyst for community growth. 
+Pierina's unique trajectory blends her expertise in health informatics with her burgeoning skills in blockchain development. As a data professional, she brings a valuable perspective to the intersection of technology and healthcare, embodying the spirit of a true interdisciplinary innovator.
+
+*Note:  Pierina Ponce has not previously applied for a grant at the Web3 Foundation.*
 
 ---
 

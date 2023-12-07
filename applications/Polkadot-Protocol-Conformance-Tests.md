@@ -1,7 +1,7 @@
 # Polkadot Protocol Conformance Tests Research Proposal
 
 - **Team Name:** [LimeChain](https://github.com/LimeChain)
-- **Payment Address:** 15reUHgnkE9QeH9zUoduCVYAbksTmQXvpMd6L95rBhTNFuGw (USDT)
+- **Payment Address:** 14dut6zGgdVmKijePZzrQAy2gZ6FmMDmzzp7VqjzPV9E4ujR (USDT on Polkadot AssetHub)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
