@@ -26,7 +26,7 @@
   Current Web3.0 applications are primarily based on the smart contract model on the blockchain, which has very limited application scenarios:
     1. Performance Bottlenecks of Smart Contracts: Taking Ethereum as an example, the current TPS (transactions per second) of Ethereum is only about 30. This means that only about 30 transactions can be processed per second, which is unacceptable for most web2.0 applications.
     2. Web3.0 applications implemented with blockchain-based smart contracts face bottlenecks in storage and retrieval. Although there are now some relatively mature storage-oriented chains, such as Filecoin, Arweave, and Crust from the Polkadot ecosystem, access and retrieval of data on these chains are still hard to achieve in real-time due to the performance bottlenecks and design patterns inherent in blockchain technology.
-    3. The Development Threshold of Smart Contracts: Currently, the development of smart contracts is mainly based on specific languages, such as Ethereum's Solidity language, which undoubtedly increases the learning cost for developers and raises the threshold for development. Moreover, the development model of smart contracts is entirely different from the traditional web2.0 application development model, which is also unacceptable for most web2.0 developers.
+    3. The Development Threshold of Smart Contracts: Currently, the development of smart contracts is mainly based on specific languages, such as ink! which undoubtedly increases the learning cost for developers and raises the threshold for development. Moreover, the development model of smart contracts is entirely different from the traditional web2.0 application development model, which is also unacceptable for most web2.0 developers.
     4. The Account Model of Current Web3.0: The account model of current smart contracts is primarily based on a public-private key system, which requires users to safeguard their private keys or mnemonic phrases. This is difficult for most web2.0 users to accept.
     5. Whether it's a blockchain operating on a Proof of Stake (PoS) or Proof of Work (PoW) consensus mechanism, finalizing a block always requires a certain amount of time. This means that the user experience of Web3.0 applications cannot compete with that of Web2.0 applications, which is a primary reason why current Web3.0 applications struggle to attract more users.
 
@@ -84,7 +84,9 @@
 ### Project Details
 
 - Project Progress
- The development of the DC network start at the end of 2019. It has now entered the final debugging stage, and we plan to release the public test network at the End of December 2023.
+  
+   1. The development of the DC network start at the end of 2019. The core functionality section without Incentive Model has entered the debugging phase.
+   2. The auxiliary component has just started development.
 
 - Introduction to Key Features
   - Design of account login patterns with Web2.0 experience:  
@@ -240,7 +242,7 @@ Goal: Fully open source the code repositories for dcchain, dcstorage, dcmanager,
 | **0b.** | Documentation | We will provide online help manuals for different participants, including node maintenance manuals, Dapp developer operation manuals, end-user account maintenance manuals, as well as economic whitepapers, technical whitepapers, etc. The node maintenance manual mainly includes the following functions: 1. How to start a cloud service node, 2. How to start a validator node, 3. How to track and maintain cloud service nodes and validator nodes on a daily basis; The Dapp developer operation manual mainly includes the following functions: 1. Explanation of the process of developing Dapps, 2. Interface definition documents for the DC network, 3. Dapp development SDK usage manual, 4. Setting up a local debugging environment for the DC network, 5. How to switch from the debugging network to the DC network after Dapp deployment; The end-user operation manual mainly introduces the user system of the DC network and the subscription and consumption process of cloud service space for users; The economic whitepaper mainly introduces the economic model of the DC network, including introductions to various participants, the network's inflation model, and the profit model of participants; The technical whitepaper mainly elaborates on the implementation method, security strategy, and the network's evolutionary direction of the DC network.|
 | **0c.** | Testing and Testing Guide |Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker |1. We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. 2. Our node deployment, including functions such as dcstorage and dcchain, is based on Docker.|
-| 1. | DC network | The DC network has entered the public testing phase, and anyone can participate.|
+| 1. | DC network | At the end of this phase, we will set up a test network that can be validated.|
 | 2. | Open source | All DC network-related code will be open-sourced, including DCChain, DCStorage, DCManager, DappSDK, DCUpgrade, and Demo DAPP. |
 | 3. | Debug_env | Release the developer debugging environment. |
 
