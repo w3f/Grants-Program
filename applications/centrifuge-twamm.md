@@ -335,6 +335,8 @@ We would like to bring to your attention that we recently presented a similar, a
 
 ### Milestone 1 - TWAMM Pallet
 
+We anticipate the project's inception to be in the second quarter of 2024.
+
 - **Estimated duration:** 7.5 weeks (286 hours)
 - **FTE:**  1.5
 - **Costs:** 75,000 USD
