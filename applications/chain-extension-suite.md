@@ -175,7 +175,7 @@ If this grant is successfully implemented and received well by the community, we
 
 ### `pallet_assets_extensions` and `pallet_nfts_extensions`
 
-The Substrate framework's FRAME provides `pallet_assets` for fungible tokens and `pallet_nft` for non-fungible tokens (NFTs), aligning with the prevalent token standards in the blockchain domain. On the smart contract side, ink! adheres to PSP-22 for fungible tokens and PSP-34 for NFTs.
+The Substrate framework's FRAME provides `pallet_assets` for fungible tokens and `pallet_nfts` for non-fungible tokens (NFTs), aligning with the prevalent token standards in the blockchain domain. On the smart contract side, ink! adheres to PSP-22 for fungible tokens and PSP-34 for NFTs.
 
 Within the objective of this grant we develop `pallet_assets_extensions` and `pallet_nft_extensions`. These extensions aim to expose chain extension functionality for `pallet_assets` and `pallet_nft`, thereby creating a bridge for enhanced interaction between the Substrate runtime and the smart contract environment of ink!.
 
