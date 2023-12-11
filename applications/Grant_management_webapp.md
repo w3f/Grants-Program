@@ -1,12 +1,12 @@
 # Grant Management Webapp
 
 - **Team Name:** Antier Solutions Pvt. Ltd.
-- **Payment Address:** 1XhNxALoCmXF86aiwZtdDJspjWZBiRX9UfbJ4jQsWN15eSu (DOT)
+- **Payment Address:** Fiat
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
-This application is in response to the open RFP: https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/grant_management_webapp.md
+This application is in response to the open RFP: https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/grant_management_webapp.md
 
 ### Overview
 

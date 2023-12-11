@@ -1,0 +1,30 @@
+name: Check for private discussion
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  discussion_private:
+    if: |
+        contains(github.event.pull_request.body, 'Project Abstract') && (
+          !contains(github.event.pull_request.body, '- [ ] I prefer the discussion') || 
+          (
+            contains(github.event.pull_request.body, '- [ ] I prefer the discussion') &&
+            !contains(github.event.pull_request.body, '@_______:matrix.org')
+          )
+        )
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add 'discussion private' label if the application is private
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["discussion private"]
+            })

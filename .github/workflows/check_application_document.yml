@@ -6,29 +6,6 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  discussion_private:
-    if: |
-        github.event.action == 'opened' &&
-        contains(github.event.pull_request.body, 'Project Abstract') && (
-          !contains(github.event.pull_request.body, '- [ ] I prefer the discussion') || 
-          (
-            contains(github.event.pull_request.body, '- [ ] I prefer the discussion') &&
-            !contains(github.event.pull_request.body, '@_______:matrix.org')
-          )
-        )
-    runs-on: ubuntu-latest
-    steps:
-      - name: Add 'discussion private' label if the application is private
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.issues.addLabels({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ["discussion private"]
-            })
-
   get_filename:
     if: contains(github.event.pull_request.body, 'Project Abstract')
     runs-on: ubuntu-latest
@@ -48,10 +25,12 @@ jobs:
     if: needs.get_filename.outputs.filename
     runs-on: ubuntu-latest
     steps:
-
+      - name: add admin-review label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: admin-review
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Parse application file
         id: grant_parser
         uses: w3f/parse-grant-application-action@master

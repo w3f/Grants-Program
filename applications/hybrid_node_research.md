@@ -4,7 +4,7 @@
 
 ## Project Overview :page_facing_up:
 
-This grant application falls under this RFP https://github.com/w3f/Grants-Program/blob/master/docs/rfps/Open/alternative_polkadot_host_implementations.md and it is meant as a previous research work analysis before the actual rework of the host implementation. 
+This grant application falls under this RFP https://github.com/w3f/Grants-Program/blob/master/docs/rfps/alternative_polkadot_host_implementations.md and it is meant as a previous research work analysis before the actual rework of the host implementation. 
 
 ### Overview
 
