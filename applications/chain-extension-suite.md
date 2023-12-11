@@ -8,7 +8,7 @@
 
 Through our work with `pallet_hookpoints`, we've gathered substantial insights into `pallet_contracts` and boilerplate code generation. We also implemented chain extensions in our runtimes, and the process uncovered the repetitive and cumbersome nature of opening extrinsics and custom logic to `ink!` due to a lack of standardization and a significant boilerplate code requirement for doing so.
 
-To address these challenges, we are developing a CLI (Command-Line Interface) tool designed to allow per-pallet configuration of chain extensions. This tool will automate the generation of both the Substrate-side chain extension and the corresponding `ink!`-side implementation. This initiative will not only simplify the process of implementing chain extensions but also contribute to a more standardized and developer-friendly environment within the Substrate ecosystem.
+To address these challenges, we are developing a CLI (Command-Line Interface) tool designed to allow per-pallet configuration off-chain extensions. This tool will automate the generation of both the Substrate-side chain extension and the corresponding `ink!`-side implementation. This initiative will not only simplify the process of implementing chain extensions but also contribute to a more standardized and developer-friendly environment within the Substrate ecosystem.
 
 In addition, we propose introducing ready-to-ship chain extensions for selected FRAME pallets, adhering to standards like `PSP-22` for `pallet_assets` in `ink!`. This approach aims to reduce boilerplate code and promote standardization.
 
