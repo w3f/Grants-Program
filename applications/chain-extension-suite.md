@@ -173,7 +173,7 @@ Registered Legal Entity: Deep Ink Ventures GmbH
 ## Future Outlook
 If this grant is successfully implemented and received well by the community, we plan to add the following features:
 
-### `pallet_assets_extensions` and `pallet_nft_extensions`
+### `pallet_assets_extensions` and `pallet_nfts_extensions`
 
 The Substrate framework's FRAME provides `pallet_assets` for fungible tokens and `pallet_nft` for non-fungible tokens (NFTs), aligning with the prevalent token standards in the blockchain domain. On the smart contract side, ink! adheres to PSP-22 for fungible tokens and PSP-34 for NFTs.
 
