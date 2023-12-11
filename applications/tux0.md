@@ -171,14 +171,29 @@ We also started sketching out some code for a Tuxedo piece, but nothing worth me
 
 ### Overview
 
-- **Total Estimated Duration:** 12 weeks
-- **Full-Time Equivalent (FTE):**  1,5 FTE
-- **Total Costs:** 18,000 USD
+- **Total Estimated Duration:** 20 weeks
+- **Full-Time Equivalent (FTE):** 1.5 FTE
+- **Total Costs:** 30,000 USD
 
-### Milestone 1 — Research phase
+### Milestone 1 — Research phase, part 1
+
+- **Estimated duration:** 8 weeks
+- **FTE:** 1.5
+- **Costs:** 12,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run the proofs. |
+| **0c.** | Testing and Testing Guide | The circuits will be tested with valid and invalid witness values. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Demo proofs | We will implement 2 zero knowledge proofs ([_Sudoku_](https://en.wikipedia.org/wiki/Sudoku) and [_Factorial_](https://en.wikipedia.org/wiki/Factorial)) for 2 protocols. These proofs will be later integrated in the benchmarking program defined in milestone 2. |
+| 2. | Articles on protocols | We will publish two **articles** on our GitHub blog, one for each protocol, documenting our development journey, highliting pros and cons, along with general comments about usability and suggestions for developers who want to use them. |
+
+### Milestone 2 — Research phase, part 2
 
 - **Estimated duration:** 6 weeks
-- **FTE:**  1,5
+- **FTE:** 1.5
 - **Costs:** 9,000 USD
 
 | Number | Deliverable | Specification |
@@ -187,15 +202,17 @@ We also started sketching out some code for a Tuxedo piece, but nothing worth me
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can add a new protocol, run the benchmarks, and verify the results. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** on our GitHub blog that explains our research process, the results, and why we decided to proceed with a certain protocol. |
-| 1. | Benchmarking program | We will develop a Rust program that will automatically run zk protocols benchmarks and export the results in a readable format, like JSON. |
-| 2. | Protocols integration | We will provide an integration of at least 3 protocols for the benchmarking program, which will be used to produce the results. We will document the reasons for the choice of these protocols rather than other potential candidates. |
-| 3. | Data Visualization tool | We will provide a single page webapp to easily visualize and compare the benchmark results, using [C3.js](https://c3js.org/) or a similar library. The core of this page will be embedded in the article as well. |
+| 1. | Demo proofs | We will implement 2 zero knowledge proofs ([_Sudoku_](https://en.wikipedia.org/wiki/Sudoku) and [_Factorial_](https://en.wikipedia.org/wiki/Factorial)) for a third protocol. |
+| 2. | Article on protocol | We will publish an **article** on our GitHub blog documenting our development journey with the third protocol, highliting pros and cons, along with general comments about usability and suggestions for developers who want to use them. |
+| 3. | Benchmarking program | We will develop a Rust program that will automatically run and benchmark a predetermined set of zero knowledge proofs (at least a _Sudoku_ and a _Factorial_) and export the results in a readable format, like JSON. |
+| 4. | Protocols integration | We will provide an integration of the 3 protocols and the previously developed Demo Proofs for the benchmarking program, which will be used to produce the results. |
+| 5. | Data Visualization tool | We will provide a single page webapp to easily visualize and compare the benchmark results, using [C3.js](https://c3js.org/) or a similar library. |
+| 6. | Article on results | We will publish an **article** on our GitHub blog that explains our research process, the results, and why we decided to proceed with a certain protocol. |
 
-### Milestone 2 — Development phase
+### Milestone 3 — Development phase
 
 - **Estimated Duration:** 6 weeks
-- **FTE:**  1,5
+- **FTE:** 1.5
 - **Costs:** 9,000 USD
 
 | Number | Deliverable | Specification |
