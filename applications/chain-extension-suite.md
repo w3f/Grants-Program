@@ -182,7 +182,7 @@ Within the objective of this grant we develop `pallet_assets_extensions` and `pa
 The envisioned extensions will include ready-to-go contracts for the ink! ecosystems, facilitating a seamless integration and interaction between the substrate runtime and smart contracts, adhering to the respective token standards. This initiative seeks to automate and standardize the chain extension process for fungible and non-fungible tokens within the Substrate ecosystem, thereby fostering an environment of ease and efficiency for developers working across these platforms.
 
 It specifically includes:
-- **PSP22 & PSP34 chain extensions** for `pallet_asset` and `pallet_nft`, ready to add to the `pallet_contract` runtime config type `ChainExtension`.
+- **PSP22 & PSP34 chain extensions** for `pallet_asset` and `pallet_nfts`, ready to add to the `pallet_contract` runtime config type `ChainExtension`.
 - **PSP22 & PSP34 traits** written in ink.
 - **An asset and an NFT chain-extension** for ink! satisfying the full feature set of the respective standard alongside with actual implementation of the smart contracts in ink!.
 
