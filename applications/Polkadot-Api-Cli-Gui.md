@@ -64,7 +64,7 @@ We will use electron-store to store in-app information. In this way, relevant da
   
 **Documentation of core components, protocols, architecture, etc. to be deployed**
 
-You can review the detailed documentation of project implementation here: ![Documentation](https://drive.google.com/file/d/1eHzPStpB5eNqPJ67bWWQDvikFDHt2RsV/view?usp=sharing)
+You can review the detailed documentation of project implementation here: [Documentation](https://drive.google.com/file/d/1eHzPStpB5eNqPJ67bWWQDvikFDHt2RsV/view?usp=sharing)
   
 **What your project is *not* or will *not* provide or implement**
 
