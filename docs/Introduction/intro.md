@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Guidelines
 
-Anyone is welcome to apply for a grant. Projects funded through our program are broad in scope, but our focus lies on projects with a strong **technical** focus that add value to the Polkadot ecosystem. Furthermore, you should be able to demonstrate a solid, long-term roadmap, be it through the project's significance to the community (such as for research-oriented projects) or an in-depth market analysis (for business-oriented projects).
+Anyone is welcome to apply for a grant. Projects funded through our program are broad in scope, but our focus lies on projects with a strong **technical** focus that add value to the Polkadot ecosystem. Furthermore, you should be able to demonstrate a solid, long-term roadmap, be it through evidence of the project's significance to the community (such as for research-oriented projects), an in-depth market analysis (for business-oriented projects) or demonstrated experience in building communities around open-source projects.
 
 Generally, your project will have better chances to be accepted if:
 

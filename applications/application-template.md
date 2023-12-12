@@ -51,9 +51,11 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Where and how does your project fit into the ecosystem?
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 - What need(s) does your project meet?
+- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies or raw data.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+  - If not, please indicate why such a project might not have been possible, successful or attempted. 
+- Are there any projects similar to yours in related ecosystems? 
 
 ## Team :busts_in_silhouette:
 
@@ -157,7 +159,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 Please include here
 
-- how you intend to use, enhance, promote and support your project in the short term, and
+- how you intend to finance the project's long-term maintenance and development,
+- how you intend to use, enhance and promote your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
 ## Referral Program (optional) :moneybag:
