@@ -4,7 +4,11 @@ sidebar_position: 1
 
 # Guidelines
 
-Anyone is welcome to apply for a grant. Projects funded through our program are broad in scope, but our focus lies on projects with a strong **technical** focus that add value to the Polkadot ecosystem. Furthermore, you should be able to demonstrate a solid, long-term roadmap, be it through evidence of the project's significance to the community (such as for research-oriented projects), an in-depth market analysis (for business-oriented projects) or demonstrated experience in building communities around open-source projects.
+While applications are open to all, the W3F grants program prioritizes projects with a **strong technical focus** that demonstrably add value to the Polkadot ecosystem. Furthermore, successful applicants will be expected to present a solid and compelling long-term roadmap, supported by evidence of the project's significance to the community. This could include:
+
+- Research-oriented projects: Demonstrated significance to the community and potential impact through academic publications or community engagement metrics.
+- Business-oriented projects: A comprehensive market analysis documenting target audience, market size, competitive landscape, and go-to-market strategy.
+- Open-source projects: Proven experience in building strong communities, evidenced by user adoption, active development contributions, and community engagement initiatives.
 
 Generally, your project will have better chances to be accepted if:
 
