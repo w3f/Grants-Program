@@ -1,6 +1,6 @@
 # Name of your Project
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`).
+> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
@@ -14,13 +14,13 @@
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
 Please provide the following:
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
+- If the name of your project is not descriptive, a tagline (one sentence summary).
 - A brief description of your project.
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 - An indication of why your team is interested in creating this project.
@@ -35,7 +35,7 @@ We expect the teams to already have a solid idea about your project's expected f
 - Documentation of core components, protocols, architecture, etc. to be deployed
 - PoC/MVP or other relevant prior work or research on the topic
 - What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
 
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
@@ -51,9 +51,11 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Where and how does your project fit into the ecosystem?
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 - What need(s) does your project meet?
+- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
+  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
+- Are there any projects similar to yours in related ecosystems? 
 
 ## Team :busts_in_silhouette:
 
@@ -113,7 +115,7 @@ This section should break the development roadmap down into milestones and deliv
 
 Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
 
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
+> :exclamation: If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
 
 ### Overview
 
@@ -135,7 +137,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
 | 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
 | 2. | Substrate module: Y | The Y Substrate module will... |
 | 3. | Substrate module: Z | The Z Substrate module will... |
@@ -157,7 +159,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 Please include here
 
-- how you intend to use, enhance, promote and support your project in the short term, and
+- how you intend to finance the project's long-term maintenance and development,
+- how you intend to use, enhance, and promote your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
 
 ## Referral Program (optional) :moneybag:
