@@ -37,7 +37,7 @@ Vane-network consist of the following functionalities
 
 **Vane as part of Polkadot/Substrate/Web3 ecosystem**
   - Can be used as a defacto system to handle safe and risk free transactions for institutions and indivuals 
-  -  Can be used to enable social-commerce enterpreneuers to tap into polkadot ecosystem behind the scene and grow their business, thi will make Polkadot actually serve the need of a big market ( social commerce market).
+  -  Can be used to enable social-commerce entrepreneurs to tap into polkadot ecosystem behind the scenes and grow their business, this will make Polkadot actually serve the need of a big market (social commerce market).
 
 ### Technologies used
   - Substrate
