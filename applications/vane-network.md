@@ -111,7 +111,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 **Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?**
   
-  - No, but ENS and Naing services try to solve the issue of ensuring wrong address mistakes are resolved. But Vane ensures this product to work just outside the box without purchasing any name , just existig addressbut introducing confirmation and reverting system ontop of existing networks.
+  - No, but ENS and Naing services try to solve the issue of ensuring wrong address mistakes are resolved. But Vane ensures this product to work just outside the box without purchasing any name, just existing address but introducing confirmation and reverting system on top of existing networks.
 
   - And for other product, No any other project.
   Vane will be using existing USDT on AssetHub to settle business social-commerce transactions.
