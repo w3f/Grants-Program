@@ -59,7 +59,7 @@ We are not a team of UI designers so the design is not final in terms of UI.
 
 [video demo](https://www.youtube.com/watch?v=bGiraQBNPDY)
 
-[vane landing page](https://vane.framer.ai/)
+[vane landing page](https://vane.network/)
 
 [Vane website](https://vane-network.vercel.app/)
 - Data models / API specifications of the core functionality
