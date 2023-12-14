@@ -135,7 +135,7 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 
 ### Overview
 
-- **Total Estimated Duration:**  weeks
+- **Total Estimated Duration:**  15 weeks
 - **Full-Time Equivalent (FTE):**  3-3.5
 - **Total Costs:**  BTC equivalent to 25,000 USD
 
@@ -149,7 +149,9 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | 0a.    | License                   | Apache 2.0 |
 | 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial to test out the additions |
-| 0c.    | Testing | Unit testing and testing tutorial                               |                                                                                                                   |
+| 0c.    | Testing | Unit testing and testing tutorial                               |     
+| 0d.    | Docker | Create docker image with updated pallets   
+| 0e.    | Article | Publish article for  delineating the additions and workflow of consensus |                                                                                                                   |
 | 1.     | Modified Substrate pallet-contracts for PoCS   |  1. Try tight coupling of pallet-contracts with pallet-staking for interoperability of the pallets for PoCS consensus. <br> 2. Add attributes to PoCS pallet and derive them. (eg: Contract scarcity struct, its related mappings etc )                                         |
 
 ### Milestone 2 — Pallet staking Update
@@ -163,6 +165,8 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 | 0a.    | License                   | Apache 2.0     |
 | 0b.    | Documentation             | Inline documentation of the code and a basic tutorial |
 | 0c.    | Testing and Testing Guide | Unit testing and testing tutorial|
+| 0d.    | Docker | Create docker image with updated pallets   
+| 0e.    | Article | Publish article for integrations and additions of new pallet logic|  
 | 1.     | Modify pallet staking for PoCS   | Add custom functions and modify some existing functions of pallet staking and pallet contract to implement our attributes and make the pallets interact accordingly  |
 
 ### Milestone 3 — Validator Reward Contract, Testing and Documentation
@@ -176,6 +180,8 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 | 0a.    | License                   | MIT license   |
 | 0b.    | Documentation             | Inline documentation of the code and a external contract documentation <br> We will publish an article/workshop that explains inner workings of PoCS and developer guide to build a PoCS enabled Substrate chain|
 | 0c.    | Testing and Testing Guide | Unit testing with our validator reward ink! contract |
+| 0d.    | Docker | Create docker image for entire consensus  
+| 0e.    | Article | Publish lite paper for the consensus |  
 | 1    | Contract development | Design and implement a validator reward contract. (i.e Co-ordinator contract for rewarding). <br>Integrate it with PoCS consensus |
 | 2. | Alpha testing and publish paper | Alpha testing of entire consensus. Since it is a new consensus design, we have a separate milestone for analyzation of results over conducting an end to end test of the protocol <br><br>Standalone yellow paper|
 
