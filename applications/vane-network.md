@@ -33,7 +33,7 @@ Vane-network consist of the following functionalities
 
  - We are building vane-network due to lack of safety when using web3 services. Both of us have suffered loss of funds and from our survey users are afraid of trying web3 based services due to non recoverable losses associated with personal mistakes.
 
- But apart from that we discovered that social-commerce is a trillion dollar market and we believe that blockchain technology can improve and grow businesses in this sector by improving customer and retailer interactions and introducing negotiable controll and unparalled safety.
+ But apart from that we discovered that social-commerce is a trillion dollar market and we believe that blockchain technology can improve and grow businesses in this sector by improving customer and retailer interactions and introducing negotiable control and unparalled safety.
 
 **Vane as part of Polkadot/Substrate/Web3 ecosystem**
   - Can be used as a defacto system to handle safe and risk free transactions for institutions and indivuals 
