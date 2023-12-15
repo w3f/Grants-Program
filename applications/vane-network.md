@@ -206,8 +206,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
   Note that we removed our initial first milestone, we will implement that without any cost. We strongly believe after the funding of Vane from web3 foundation we will be rady to go the market and prove our case by action that users need safety in their day to day crypto interactions ( transactions ) and blockchain can be used in social-commerce.
 
-  We have already deployed into Tanssi DanceBox testnet. 
+  We have already deployed into Tanssi DanceBox testnet.
 
+
+  ### Note:
+  As per requirement of web3 grant deliverables is to submit an article. But as we do believe the purpose of the article is to communicate with users/community and we do think a video might communicate much better than an article, hence we will be providing a video containing a workshop, user experience usage and our experience in the web3 foundation grant. We do believe videos get better engagements and if we want to be heard, its better we do that.
 
 
 
