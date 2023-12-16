@@ -19,7 +19,7 @@
 - Depositors can choose not to earn APY (simply staying insured).
   - This way, they provide liquidity to the protocol, but APR and APY cancels out. 
 
-- As per Kings 3:16-28, liquidations take [half](https://twitter.com/QuidMint/status/1735926977683406950) the borrower's initial collateral.
+- As per [Kings](https://www.youtube.com/clip/UgkxdnVd64u0q6nPNlaVrG36GLug-5MHKyCc) 3:16-28, liquidations take [half](https://twitter.com/QuidMint/status/1735926977683406950) the borrower's initial collateral.
   - If borrowers pay double APR they are still able to claim back the half.
   - All the collateral accumulated on leverage (not owned by borrower to begin with) is claimed. 
 - There is no recovery mode (unlike Liquity), and absorption of losses is deferred.
