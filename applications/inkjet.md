@@ -24,7 +24,7 @@ Our team's motivation for the project is twofold. First, we are supporters of de
 
 We are opting for a simplistic UI for ease of use. The tool will be a single-page application, where the left side of the page is an in-browser IDE for the `ink!` smart contract being worked on. The right side is a Chat History where the user can interact with the LLM. Code generations in responses will be automatically populated in the left IDE. 
 
-We provide a dropdown menu of code templates to choose from. The History button will keep a edit history of the smart contract if the user needs to revert to a previous version. The Analyze button will break the code down into chunks (such as its individual functions) and provide feedback for each chunk. The feedback will replace the Chat History, and can be closed once it is read to resume editing.
+We provide a dropdown menu of code templates to choose from. The History button will keep a edit history of the smart contract if the user needs to revert to a previous version. The Analyze button will break the code down into chunks (such as its individual functions) and provide feedback for each chunk. The code will also be run through CoinFabrik Scout, and the result returned. The feedback will replace the Chat History, and can be closed once it is read to resume editing.
 
 Users are provided parameters to adjust with their prompts, and can modify the temperature and number of retrieval documents from the vectorstore.
 
@@ -34,19 +34,25 @@ Users are provided parameters to adjust with their prompts, and can modify the t
 
 ![architecture](https://jyu.llc/inkjet_arch.png)
 
+We are using Docker for containerization of the platform. When a user initiates the application, a new Docker image is started, which houses the RAG-LLM pipeline and a Rust environment. When the smart contract is run or scanned with CoinFabrik, the code is sent to the Rust environment and compiled. The result is returned to the user in the web interface. Single user containerization also prevents code interferences between concurrent users.
+
+For running the smart contract itself, the console responses will be returned for the user to see, such as errors. For vulnerability testing, CoinFabrik Scout offer JSON format for their output, which we will retrieve and return to the user.
+
 #### Stack
 
 We will be using the following technologies:
 - Python for RAG-LLM pipeline
  - LlamaIndex and LangChain libraries for data loading, processing, embedding
  - LlamaIndex and LangChain libraries for vectorstore retrieval and LLM interaction with retrieval results
-- Pinecone for Vectorstore
+- Pinecone for Vectorstore (with ChromaDB option)
 - OpenAI text-embedding-ada-002 Model for Embeddings
 - OpenAI for LLM (GPT-4-32k, GPT-4-1106-preview)
 - ink!/Rust for Smart Contracts
+- CoinFabrik Scout for Vulnerabiity Detection
 - React.js for Front-End Application
 - Docker for Containerization
-- Vercel for Hosting
+- Rust for Development Environment within the Container
+- Heroku for Hosting
 
 #### Relevant Work
 
@@ -148,7 +154,9 @@ We aim to create an alternative system and while replicating their efficacy impr
 
 - [https://arxiv.org/abs/2309.09826](https://arxiv.org/abs/2309.09826)
 
-This publication fine-tunes a GPT-J model on 2 million smart contracts, and tests if performance increases on writing code without security issues. While their methodology involved directly fine-tuning the model and updating the weights, and ours focuses on adding context through retrieval, the underlying concept of providing learning examples to improve performance remains similar. After the original fine-tuning, they find that insecure code was an issue in up to 70% of generations. After additional fine-tuning on vulnerable examples with vulnerability-constrained decoding, they were able to avoid insecure code generation up to 67% of the time. We have taken these findings into consideration, and will implement labeled vulnerable examples in our dataset. This allows our system to identify vulnerabilities if present in the user's smart contract, and also avoid generation of them in code responses.
+This publication fine-tunes a GPT-J model on 2 million smart contracts, and tests if performance increases on writing code without security issues. While their methodology involved directly fine-tuning the model and updating the weights, and ours focuses on adding context through retrieval, the underlying concept of providing learning examples to improve performance remains similar. After the original fine-tuning, they find that insecure code was an issue in up to 70% of generations. After additional fine-tuning on vulnerable examples with vulnerability-constrained decoding, they were able to avoid insecure code generation up to 67% of the time. 
+
+We have taken these findings into consideration, and will ensure that the contracts in our dataset are functional. CoinFabrik Scout will be utilized to mitigate vulnerabilities. Use of this tool prevents the need for cross-contamination of our functional smart contracts with vulnerable ones in the vectorstore, the separation of which would have required heavy manual code annotations and metadata tagging.
 
 In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/audit.me) studying the efficacy of vulnerability testing through RAG integrated LLMs on Ethereum Solidity smart contracts. In this study, we built a LangChain RAG-LLM pipeline, and created a vectorstore of 830 vulnerable Solidity smart contracts for retrieval. Results were promising, showing a 1.5x increased efficacy compared to [current literature](https://arxiv.org/abs/2306.12338). Using this as a proof of concept of RAG-LLM with smart contract data, we look to rebuild the pipeline towards the use case of authoring ink! smart contracts. We will construct a new pipeline from scratch, utilize LlamaIndex alongside LangChain, change the data processing and embedding methodology, and implement a much broader ink! smart contract dataset.
 
