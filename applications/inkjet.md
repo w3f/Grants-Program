@@ -14,7 +14,7 @@ This application is *not* in response to an RFP nor a follow-up grant.
 
 `Ink!jet` is a platform designed to use augmented generative AI with the intent of improving the development lifecycle of `ink!` smart contracts within the Polkadot ecosystem. Recognizing the technically intricate nature of smart contracts and the high level of expertise they demand, our project aims to simplify these complexities, thereby democratizing the creation process.
 
-Existing generative AI have limitations in both the amount of `Rust` and `ink!` code in their training data. Our platform uses a retrieval-augmented generation pipeline with datasets of existing `ink!` smart contracts to bridge this knowledge gap. Injecting vectorstore retrieved code into prompts, this system utilizes in-context learning to improve response quality. Our goal is to enhance the productivity of existing developers through bootstrapping and assisted code interation, while simultaneously lowering the barrier of entry for new developers.
+Existing generative AI have limitations in both the amount of `Rust` and `ink!` code in their training data. Our platform uses a retrieval-augmented generation pipeline with datasets of collected and generated `ink!` smart contracts to bridge this knowledge gap. Injecting vectorstore retrieved code into prompts, this system utilizes in-context learning to improve response quality. Our platform also offers an in-browswer IDE that users can use without the complications of setting up a local environment. Our goal is to enhance the productivity of existing developers through bootstrapping and assisted code interation, while simultaneously lowering the barrier of entry for new developers.
 
 Our team's motivation for the project is twofold. First, we are supporters of decentralized technology and its potential to redefine the digital landscape. We believe that the future of blockchain depends on cross-chain interoperability, which places Polkadot at the center of this emerging need. Second, we are deeply intrigued by the potential of generative AI in software engineering. Our aim is to push the boundaries of what these AI models can achieve in novel contexts, such as the `ink!` programming language, and to explore solutions that empower developers to build within the decentralized ecosystem.
 
@@ -28,6 +28,8 @@ We provide a dropdown menu of code templates to choose from. The History button 
 
 Users are provided parameters to adjust with their prompts, and can modify the temperature and number of retrieval documents from the vectorstore.
 
+We also plan to incorporate a terminal window, either below the main UI or in a collapsable window.
+
 ![ui-mockup](https://jyu.llc/inkjet_mockupui.png)
 
 #### Data Model / Architecture
@@ -36,7 +38,7 @@ Users are provided parameters to adjust with their prompts, and can modify the t
 
 We are using Docker for containerization of the platform. When a user initiates the application, a new Docker image is started, which houses the RAG-LLM pipeline and a Rust environment. When the smart contract is run or scanned with CoinFabrik, the code is sent to the Rust environment and compiled. The result is returned to the user in the web interface. Single user containerization also prevents code interferences between concurrent users.
 
-For running the smart contract itself, the console responses will be returned for the user to see, such as errors. For vulnerability testing, CoinFabrik Scout offer JSON format for their output, which we will retrieve and return to the user.
+For running the smart contract itself, the console responses will be returned for the user to see, such as errors. For vulnerability testing, CoinFabrik Scout offers JSON format for their output, which we will retrieve, parse, and return to the user.
 
 #### Stack
 
@@ -44,15 +46,26 @@ We will be using the following technologies:
 - Python for RAG-LLM pipeline
  - LlamaIndex and LangChain libraries for data loading, processing, embedding
  - LlamaIndex and LangChain libraries for vectorstore retrieval and LLM interaction with retrieval results
-- Pinecone for Vectorstore (with ChromaDB option)
+- Pinecone for Vectorstore
 - OpenAI text-embedding-ada-002 Model for Embeddings
 - OpenAI for LLM (GPT-4-32k, GPT-4-1106-preview)
 - ink!/Rust for Smart Contracts
 - CoinFabrik Scout for Vulnerabiity Detection
+- Monaco Editor for In-Browser IDE
 - React.js for Front-End Application
 - Docker for Containerization
 - Rust for Development Environment within the Container
-- Heroku for Hosting
+- Vercel for Hosting
+
+#### ink! Smart Contract Vectorstore:
+
+For our vectorstore dataset, we will source from a variety of areas. We will scrape the source code from verified contracts on ink!/WASM enabled chains, such as Astar and Aleph Zero. Github repos of example contracts will be scraped, such as [paritytech](https://github.com/paritytech/ink-examples/tree/main), [Astar WASM Showcase](https://github.com/AstarNetwork/wasm-showcase-dapps/tree/main), [Metis](https://github.com/patractlabs/metis), and others.
+
+To compliment these examples, we will also scrape all ink! documentations available from the [ink! docs](https://use.ink/), [Substrate docs](https://docs.substrate.io/tutorials/smart-contracts/develop-a-smart-contract/), and others.
+
+Additionally, we will use a barebones RAG-LLM pipeline with only documentation loaded to create generated examples through guided prompts. We divide our approach into categories and subcategories of smart contract purposes, including payments, transfers, lending, borrowing, vesting, escrow, NFTs, tokens, supply chain management, invoicing, real estate ownership, DAOs, decentralized identity, gaming mechanics, auctions, reputation systems, etc.
+
+For each subcategory, we will generate at least 100 distinct examples, which should be sufficient for a diverse representation of the general purposes of smart contracts. Before adding each smart contract to the dataset, we will run, compile, test with CoinFabrik, and deploy to a local or testnet node to ensure functionality and security.
 
 #### Relevant Work
 
@@ -80,7 +93,7 @@ Acknowledging these technical barriers, our tool aims to facilitate an easier tr
 
 At this point in time, current LLMs provide limited assistance due to the scarcity of Rust and specifically ink! code in their training data, and we aim to bridge this gap through our approach.
 
-To the best of our knowledge, there are no existing projects that are similar at this time.
+To the best of our knowledge, there are no existing projects that are similar at this time. In sole terms of in-browser ink! IDE's we identify the [ink! playground](https://github.com/paritytech/ink-playground) project, however we note that the deployment is not live.
 
 ## Team :busts_in_silhouette:
 
@@ -197,7 +210,7 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0b.** | Documentation | Code comments. Documentation on the vectorization of newly collected smart contracts and updating the vector database. |
 |  **0c.** | Testing Guide | Unit tests for changes to loading and vectorization. Testing guide included for running these tests. |
 |  **0d.** | Docker | `Dockerfile` updated to reflect any changes in RAG system and data pipeline deployment. |
-|       1. | Data Expansion | Collection, categorization, and metadata tagging of `ink!` smart contracts to complete the dataset. Rigorous code commentation in the smart contracts to provide semantic context before vectorization. |
+|       1. | Data Expansion | Collection and generation, categorization, and metadata tagging of `ink!` smart contracts to complete the dataset. Smart contracts will be locally compiled, tested with CoinFabrik Scout, and deployed to a local or testnet node to ensure functionality. Rigorous code commentation in the smart contracts to provide semantic context before vectorization. |
 |       2. | Embedding Model | Replace default sentence embedding. Implement OpenAI's `text-embedding-ada-002` model, compatible with natural language and code processing. |
 |       3. | Vector Database | Update the `Pinecone` vector database to house the code-based embeddings of the complete dataset. |
 
