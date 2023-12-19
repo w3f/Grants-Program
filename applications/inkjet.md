@@ -46,7 +46,7 @@ We will be using the following technologies:
 - Python for RAG-LLM pipeline
  - LlamaIndex and LangChain libraries for data loading, processing, embedding
  - LlamaIndex and LangChain libraries for vectorstore retrieval and LLM interaction with retrieval results
-- Pinecone for Vectorstore
+- Milvus and Weaviate for Vectorstore
 - OpenAI text-embedding-ada-002 Model for Embeddings
 - OpenAI for LLM (GPT-4-32k, GPT-4-1106-preview)
 - ink!/Rust for Smart Contracts
@@ -193,10 +193,10 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0b.** | Documentation | Code comments. Documentation for the prototype architecture and the setup process, explaining how a user can run a local instance of the prototype RAG system with our initial data. |
 |  **0c.** | Testing Guide | Unit tests will be provided for the prototype, with a testing guide explaining how to run them. |
 |  **0d.** | Docker | We will include a `Dockerfile` that enables easy deployment and testing of the RAG system. |
-|       1. | Initial Prototype | Development of a basic LlamaIndex RAG system prototype integrated with `GPT-4`, using sentence embeddings. User can interact with the pipeline through the command line, interfacing with `GPT-4` with fetched documents from `Pinecone`|
+|       1. | Initial Prototype | Development of a basic LlamaIndex RAG system prototype integrated with `GPT-4`, using sentence embeddings. User can interact with the pipeline through the command line, interfacing with `GPT-4` with fetched documents from `Milvus and Weaviate`|
 |       2. | Data Collection | Collection of a small set of `ink!` smart contracts for initial embedding and retrieval testing. Smart contracts will be converted from `.rs` files to `JSON`, with identifying metadata. |
 |       3. | Loading and Embedding Pipeline | Pipeline for loading in `ink!` smart contracts as `JSON` files, and generating embeddings to build the initial vector database. |
-|       4. | Vector Database | `Pinecone` database will be used to store embeddings from processed `ink!` smart contracts. |
+|       4. | Vector Database | `Milvus and Weaviate` database will be used to store embeddings from processed `ink!` smart contracts. |
 
 ### Milestone 2 — Smart Contract Dataset, Embeddings for Vector Database
 
@@ -212,7 +212,7 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0d.** | Docker | `Dockerfile` updated to reflect any changes in RAG system and data pipeline deployment. |
 |       1. | Data Expansion | Collection and generation, categorization, and metadata tagging of `ink!` smart contracts to complete the dataset. Smart contracts will be locally compiled, tested with CoinFabrik Scout, and deployed to a local or testnet node to ensure functionality. Rigorous code commentation in the smart contracts to provide semantic context before vectorization. |
 |       2. | Embedding Model | Replace default sentence embedding. Implement OpenAI's `text-embedding-ada-002` model, compatible with natural language and code processing. |
-|       3. | Vector Database | Update the `Pinecone` vector database to house the code-based embeddings of the complete dataset. |
+|       3. | Vector Database | Update the `Milvus and Weaviate` vector database to house the code-based embeddings of the complete dataset. |
 
 
 ### Milestone 3 — RAG System Integration
