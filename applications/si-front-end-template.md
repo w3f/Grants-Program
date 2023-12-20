@@ -2,7 +2,7 @@
 
 
 - **Team Name:** BinaryMinds
-- **Payment Address:** Fiat 20.12.2023
+- **Payment Address:** Fiat 20.12.2023, 16.32
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 
@@ -63,7 +63,7 @@ The proposed project to rewrite the [substrate-front-end-template](https://githu
 
 Igor is Software Architect, currently based in Eindhoven, The Netherlands. Born in Macedonia, finished undergraduate studies in USA. Worked for large multinational organizations such as Philips, Signify, TYMLEZ and BearingPoint. 
 
-Igor Stojanov is also the founder of UniversalDot Foundation which aims to create software applications for the decentralized internet. As such, the UniversalDot Foundation is recipient of [WEB3 Grant)(https://github.com/w3f/Grants-Program/pull/714) previously. 
+Igor Stojanov is also the founder of UniversalDot Foundation which aims to create software applications for the decentralized internet. As such, the UniversalDot Foundation is recipient of [WEB3 Grant](https://github.com/w3f/Grants-Program/pull/714) previously. 
 
 The team that was previously assembled is no longer active, and this grant is to be completed as private person.
 
@@ -100,7 +100,7 @@ https://www.linkedin.com/in/igor-stojanov-96364ba/
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code |
+| **0b.** | Documentation | We will provide **inline documentation** of the code |
 | **0c.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Figma Design | Figma Design of the new front-end using Material Design UI Elements |
 | 2. | Menu Header | UI element that replaces existing menu items |
@@ -119,12 +119,12 @@ https://www.linkedin.com/in/igor-stojanov-96364ba/
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code |
+| **0b.** | Documentation | We will provide **inline documentation** of the code |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Cards | Implement dashboard cards with basic statistics about the chain. |
-| 2. | Table| Add table that holds Account balances that can be loaded from Polkadot Extension |
+| 1. | Cards Module | Implement dashboard cards with basic statistics about the blockchain. |
+| 2. | Table Module| Add table that holds Account balances that can be loaded from Polkadot Extension |
 | 3. | Transfer Module | Simple module to transfer tokens from one acount to another |
 | 4. | Upgrade Runtime Module| EEnsure users can upload wasm File from the UI |
 | 5. | Pallet Interactor | Module that allows interaction with extrinsics and queries |
