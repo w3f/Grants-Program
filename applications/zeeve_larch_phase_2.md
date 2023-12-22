@@ -1,7 +1,7 @@
 # Zeeve Larch
 
 - **Team Name:** [Zeeve](https://www.zeeve.io)
-- **Payment Address:** `0x5E1257E928aa42E3D0cd9E2A7537E37D108D811B` Ethereum (USDT/USDC) 
+- **Payment Address:** `0x5E1257E928aa42E3D0cd9E2A7537E37D108D811B` Ethereum (USDT/USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -18,8 +18,8 @@ The following work will improve and add more capabilities to the existing tool m
 
 ### Project Details
 
-**Zeeve Larch** is currently can do a deployment of with main configurations but still lacks many other configuration parameters that was introduced during the previous development cycle and guided declarative testing input.
-The following development will result in rich configuration parameters and guided declarative testing input, along with Monitoring support in Kubernetes based deployments.  
+**Zeeve Larch** can currently can do a deployment with main configurations but still lacks many other configuration parameters that were introduced during the previous development cycle and guided declarative testing input.
+The following development will result in rich configuration parameters and guided declarative testing input, along with Monitoring support in Kubernetes based deployments.
 
 **Mocks**
 
@@ -146,11 +146,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):**  4
 - **Total Costs:** 24,000 USD
 
-### Milestone 1 — Monitoring Support for K8 deployments
+### Milestone 1 — Monitoring Support for K8 deployments & Global config
 
-- **Estimated duration:** 25 Days
+- **Estimated duration:** 45 Days
 - **FTE:**  4
-- **Costs:** 4500 USD
+- **Costs:** 7,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -158,26 +158,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | **0b.** | Documentation | We will provide the **tutorial** to that explains how a user can create a network configuration and start the network |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 1. | Monitoring for k8 based deployment | We will add Monitoring support to kubernetes based deployment |
-| 2. | In App docs update | Update in app docs to reflect the features added in the current milestone |
-| 3. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
+| 2. | Zombienet global parameters support | Add All possible Global parameters in template creation corresponding to the supported Zombienet version [settings](https://paritytech.github.io/zombienet/network-definition-spec.html#settings) |
+| 3. | In App docs update | Update in app docs to reflect the features added in the current milestone |
+| 4. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
 
-
-### Milestone 2 — Zombienet global parameters support
-
-- **Estimated duration:** 20 Days
-- **FTE:**  4
-- **Costs:** 3000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide the **tutorial** to that explains how a user can create a network configuration and start the network |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Zombienet global parameters support | Add All possible Global parameters in template creation corresponding to the supported Zombienet version [settings](https://paritytech.github.io/zombienet/network-definition-spec.html#settings) |
-| 2. | In App docs update | Update in app docs to reflect the features added in the current milestone |
-| 3. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
-
-### Milestone 3 — Export & Import of config
+### Milestone 2 — Export & Import of config and Parachain & Relaychain config 
 
 - **Estimated duration:** 40 Days
 - **FTE:**  4
@@ -188,41 +173,26 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide the **tutorial** to that explains how a user can create a network configuration and start the network |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Zombienet config import & Export | We will add Zombienet config import & export support of the template |
-| 2. | Zombienet Parachain and Relaychain node group config support | Add All possible Parachain (not collator & collator groups) and node group config in template creation corresponding to the supported Zombienet version [Parachains](https://paritytech.github.io/zombienet/network-definition-spec.html#parachains) & [node_groups](https://paritytech.github.io/zombienet/network-definition-spec.html#relaychain) |
+| 1. | Zombienet config import & export | We will add Zombienet config import & export support of the template, for example config import as shown in the **Upload Config to template (Mock)** and **Config Download (Mock)**. The while uploading the config it will validate the config and prefill the template UI to perform further modification through UI on existing config. |
+| 2. | Zombienet Parachain and Relaychain node group config support | Add All possible Parachain (not collator & collator groups) and node group config in template creation corresponding to the supported Zombienet version [Parachains](https://paritytech.github.io/zombienet/network-definition-spec.html#parachains) & [node_groups](https://paritytech.github.io/zombienet/network-definition-spec.html#relaychain) as shown in the **Node Groups (Mock)** |
 | 3. | In App docs update | Update in app docs to reflect the features added in the current milestone |
 | 4. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
 
+### Milestone 3 — Zombienet `zndsl` guided setup and Collator config support
 
-### Milestone 4 — Collator and Collator NodeGroup config
-
-- **Estimated duration:** 20 Days
+- **Estimated duration:** 50 Days
 - **FTE:**  4
-- **Costs:** 3,000 USD
+- **Costs:** 8,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide the **tutorial** to that explains how a user can create a network configuration and start the network |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Zombienet Collator and Collator NodeGroup config support | Add All possible Collator and Collator NodeGroup config in template creation corresponding to the supported Zombienet version [collator_groups](https://paritytech.github.io/zombienet/network-definition-spec.html#parachains) & [collator](https://paritytech.github.io/zombienet/network-definition-spec.html#parachains) |
-| 2. | In App docs update | Update in app docs to reflect the features added in the current milestone |
-| 3. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
-
-### Milestone 5 — Zombienet `zndsl` guided setup
-
-- **Estimated duration:** 30 Days
-- **FTE:**  4
-- **Costs:** 5,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide the **tutorial** to that explains how a user can create a network configuration and start the network |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Zombienet `zndsl` guided setup | We will implement guided input for Zombienet `zndsl` testing config based on `zndsl` spec: [Testing DSL spec - 🧟🧟🧟 ZombieNet 🧟🧟🧟](https://paritytech.github.io/zombienet/cli/test-dsl-definition-spec.html) |
-| 2. | In App docs update | Update in app docs to reflect the features added in the current milestone |
-| 3. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
+| 1. | Zombienet `zndsl` guided setup | We will implement guided input for Zombienet `zndsl` testing config based on `zndsl` spec: [Testing DSL spec - 🧟🧟🧟 ZombieNet 🧟🧟🧟](https://paritytech.github.io/zombienet/cli/test-dsl-definition-spec.html) as shown in the **`zndsl` UI design** mock |
+| 2. | Zombienet Collator and Collator NodeGroup config support | Add All possible Collator and Collator NodeGroup config in template creation corresponding to the supported Zombienet version [collator_groups](https://paritytech.github.io/zombienet/network-definition-spec.html#parachains) & [collator](https://paritytech.github.io/zombienet/network-definition-spec.html#parachains) |
+| 3. | In App docs update | Update in app docs to reflect the features added in the current milestone |
+| 4. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
 
 ## Future Plans
 
@@ -230,6 +200,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - We will spread the project in Zeeve's developer and client community of 27K+
 - We will also work closely with the developers and clients of the Parity ecosystem for getting feedback and refine our project.
 - Our long-term plan is to make the tool become one of the default Parachain tools for the Parity ecosystem.
+- We will maintain the Larch by fixing reported bugs, feature requests and adding new configuration & feature updates as Zombienet evolves. We will be applying for Maintenance Grant via either treasury funding or [Decentralized Futures program](https://futures.web3.foundation/) based on the suggestions of the w3f team.
 
 ## Additional Information :heavy_plus_sign:
 
