@@ -52,11 +52,11 @@ Every newly deployed contract will have three extra storage fields:
     * `recent_blockheight` (BlockNumberFor) - This is introduced to prevent vulnerabilities like DDoS attack
 
 
-2. Staking mechanism: <br>
+2. Staking mechanism: <br />
 In the context of Substrate, the integration of Babe and Grandpa protocols, alongside the Staking Pallet, complements the PoCS mechanism 
 *  Babe's deterministic block production process aligns with PoCS's commitment to security. Validators with higher reputation and weight history, as determined by the scarcity mapping, are incentivized to actively participate in proposing and validating blocks
 * Staking Pallet (Validator Selection): The Staking Pallet integrates with PoCS as validators selected based on their scarcity scores, are entrusted with the responsibility of proposing and validating blocks. This delegation ensures that validators with a proven track record of actively participating in the network are granted the authority to contribute to the consensus process.
-* Validator Reward Contract : Validator reward contract will act as a general middleware contract, which could be reusable across different apps/chains built over PoCS. We will build a validator contract which will not be a definitive but a reference contract which can be modified with a custom logic to implement custom reward distribution mechanisms.<br>
+* Validator Reward Contract : Validator reward contract will act as a general middleware contract, which could be reusable across different apps/chains built over PoCS. We will build a validator contract which will not be a definitive but a reference contract which can be modified with a custom logic to implement custom reward distribution mechanisms.<br />
 Outline of some basic functionalities:
     1. Claim Rewards: `claimRewards(address devAddress)`
 This function allows a developer to claim their rewards from the Validator Reward. For this it will verify that the caller is the owner of the contract calling the function and ensure that the contract is delegated to the validator.
@@ -65,9 +65,9 @@ This function allows a developer to claim their rewards from the Validator Rewar
 : This function transfers the calculated rewards to the developer from the contract. It ensures that the reward amount is valid and available in the contract.
 
 
-<b> Protocol design </b> <br>
+<b> Protocol design </b> <br />
 <p align="center">
-  <img src="https://jobyreuben.in/assets/pocs/pocs.jpeg">
+  <img src="https://jobyreuben.in/assets/pocs/pocs.jpeg" />
 </p>
 
 #### What your project is not or will not provide or implement
@@ -152,7 +152,7 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 | 0c.    | Testing | Unit testing and testing tutorial                               |     
 | 0d.    | Docker | Create docker image with updated pallets   
 | 0e.    | Article | Publish article for  delineating the additions and workflow of consensus |                                                                                                                   |
-| 1.     | Modified Substrate pallet-contracts for PoCS   |  1. Try tight coupling of pallet-contracts with pallet-staking for interoperability of the pallets for PoCS consensus. <br> 2. Add attributes to PoCS pallet and derive them. (eg: Contract scarcity struct, its related mappings etc )                                         |
+| 1.     | Modified Substrate pallet-contracts for PoCS   |  1. Try tight coupling of pallet-contracts with pallet-staking for interoperability of the pallets for PoCS consensus. <br /> 2. Add attributes to PoCS pallet and derive them. (eg: Contract scarcity struct, its related mappings etc )                                         |
 
 ### Milestone 2 — Pallet staking Update
 
@@ -178,12 +178,12 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 | Number |        Deliverable        | Specification   |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | 0a.    | License                   | MIT license   |
-| 0b.    | Documentation             | Inline documentation of the code and a external contract documentation <br> We will publish an article/workshop that explains inner workings of PoCS and developer guide to build a PoCS enabled Substrate chain|
+| 0b.    | Documentation             | Inline documentation of the code and a external contract documentation <br /> We will publish an article/workshop that explains inner workings of PoCS and developer guide to build a PoCS enabled Substrate chain|
 | 0c.    | Testing and Testing Guide | Unit testing with our validator reward ink! contract |
 | 0d.    | Docker | Create docker image for entire consensus  
 | 0e.    | Article | Publish lite paper for the consensus |  
-| 1    | Contract development | Design and implement a validator reward contract. (i.e Co-ordinator contract for rewarding). <br>Integrate it with PoCS consensus |
-| 2. | Alpha testing and publish paper | Alpha testing of entire consensus. Since it is a new consensus design, we have a separate milestone for analyzation of results over conducting an end to end test of the protocol <br><br>Standalone yellow paper|
+| 1    | Contract development | Design and implement a validator reward contract. (i.e Co-ordinator contract for rewarding). <br />Integrate it with PoCS consensus |
+| 2. | Alpha testing and publish paper | Alpha testing of entire consensus. Since it is a new consensus design, we have a separate milestone for analyzation of results over conducting an end to end test of the protocol <br /><br />Standalone yellow paper|
 
             
 ## Future Plans
