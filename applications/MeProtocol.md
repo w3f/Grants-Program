@@ -1,7 +1,7 @@
 # Me Protocol
 
 - **Team Name:** My AI
-- **Payment Address:** Ethereum: 0xA2db450Da91c1ab0bF3e247F0413541568bDdDaa (USDC)
+- **Payment Address:** POLKADOT: 14K4XzpMBxGp8NiCKMWAwzjFMLcAKjakXooqHtVEC6WoaeTq (DOT)
 - **Level:** 2 
 
 
