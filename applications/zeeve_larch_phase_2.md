@@ -1,7 +1,7 @@
 # Zeeve Larch
 
 - **Team Name:** [Zeeve](https://www.zeeve.io)
-- **Payment Address:** `0x5E1257E928aa42E3D0cd9E2A7537E37D108D811B` Ethereum (USDT/USDC)
+- **Payment Address:** `1zhukWzj6pTskKUhDmyCaoJLuaHp5AVMDn5uLoNXTrw2gDR` USDC (Polkadot Asset Hub)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
