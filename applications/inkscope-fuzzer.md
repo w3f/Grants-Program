@@ -1,7 +1,7 @@
 # Inkscope Fuzzer
 
 - **Team Name:** Inkscope
-- **Payment Address:** 0x93DFaD38e90A7F3c293eE93ce98F9dE96B9227Db (USDC - Ethereum network)
+- **Payment Address:**  13mMCgidf4fdevVBCENS4U3pdQKLzcFQiZEMjuGTVrTJg1tE (USDC on Asset Hub)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
