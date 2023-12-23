@@ -1,7 +1,7 @@
 # FrontRevamp: A Material Design Makeover for Substrate Front-End Template
 
 
-- **Team Name:** BinaryMinds
+- **Team Name:** IgorStojanov
 - **Payment Address:** Fiat 20.12.2023, 16.32
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
@@ -22,6 +22,10 @@ The project will leverage the latest technologies and frameworks compatible with
 
 ![Material Kit](https://i.imgur.com/PSQgjHE.png)
 ![Material Kit](https://i.imgur.com/1PqKkbO.png)
+
+####  Mockup
+
+![Material Kit](https://i.imgur.com/vRgon2y.jpg)
 
 ### Ecosystem Fit
 
@@ -57,7 +61,7 @@ The proposed project to rewrite the [substrate-front-end-template](https://githu
 ### Legal Structure
 
 - **Registered Address:** N/A
-- **Registered Legal Entity:** N/A
+- **Registered Legal Entity:** Individual
 
 ### Team's experience
 
@@ -102,7 +106,6 @@ https://www.linkedin.com/in/igor-stojanov-96364ba/
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide **inline documentation** of the code |
 | **0c.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Figma Design | Figma Design of the new front-end using Material Design UI Elements |
 | 2. | Menu Header | UI element that replaces existing menu items |
 | 3. | Footer | New Element for implementing a new UI Element footer |
 | 4. | Polkadot Extension| Ensure working connection with Polkadot extension |
