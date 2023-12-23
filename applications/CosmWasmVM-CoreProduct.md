@@ -83,8 +83,8 @@ We are the only team in the Substrate/Polkadot/Kusama ecosystem implementing Cos
 
 ### Team members
 
-- Name of team leader: Hussein Ait-Lahcen
-- Names of team members: Cor Pruijs, Abduallah Eryuzlu
+- Name of team leader: Blas Rodriguez
+- Names of team members: Dzmitry Lahoda, Kostya Kastsevich
 
 ### Contact
 
@@ -105,9 +105,9 @@ We are the only team in the Substrate/Polkadot/Kusama ecosystem implementing Cos
 
 ### Team's experience
 
-- Hussein Ait Lahcen: Principal Blockchain engineer at Composable Finance
-- Abdullah Eryuzlu: Substrate Rust engineer at Composable Finance
-- Cor Pruijs: Software engineer at Composable Finance
+- Blas Rodriguez: CTO at Composable Finance
+- Dzmitry Lahoda: Senior staff engineer at Composable Finance
+- Kostya Kastsevich: Parachain Lead at Composable Finance
 
 ### Team Code Repos
 
@@ -115,15 +115,13 @@ We are the only team in the Substrate/Polkadot/Kusama ecosystem implementing Cos
 
 GitHub accounts of all team members:
 
-- https://github.com/hussein-aitlahcen
-- https://github.com/aeryz
-- https://github.com/cor
+- https://github.com/blasrodri
+- https://github.com/dzmitry-lahoda
+- https://github.com/kkast
 
 ### Team LinkedIn Profiles (if available)
 
-- https://tr.linkedin.com/in/abdullah-eryuzlu-675611182
-- https://fr.linkedin.com/in/hussein-a-967810a7
-- https://nl.linkedin.com/in/corpruijs
+- https://ar.linkedin.com/in/blas-rodriguez-irizar
 
 ## Development Status :open_book:
 https://medium.com/supercolony/a-look-into-virtual-machines-and-smart-contract-runtimes-313cd7d494e3
@@ -132,7 +130,7 @@ https://medium.com/supercolony/a-look-into-virtual-machines-and-smart-contract-r
 
 ### Overview
 
-- **Total Estimated Duration:** 11 Weeks
+- **Total Estimated Duration:** February 2023 - September 2023
 - **Full-Time Equivalent (FTE):**  1,5 FTE
 - **Total Costs:** 29,700 USD
 

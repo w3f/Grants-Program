@@ -1,4 +1,4 @@
-# ChainViz v1
+# Chainviz v1
 
 - **Team Name:** Helikon Labs
 - **Payment Address:** `bc1qxjy7sw0ffvpq86t6hj3mmqhnfz2hxt6pk7zdz0` (BTC)
@@ -8,9 +8,13 @@
 
 ### Overview
 
-ChainViz Alpha web application, available at [alpha.chainviz.app](https://alpha.chainviz.app), is an [open-source](https://github.com/helikon-labs/chainviz) real-time 3D visualization of the Kusama relay chain block production process.
+Chainviz web application alpha version, available at [alpha.chainviz.app](https://alpha.chainviz.app), is an [open-source](https://github.com/helikon-labs/chainviz) real-time 3D visualization of the Kusama relay chain block production process.
 
-![](https://raw.githubusercontent.com/helikon-labs/chainviz/development/readme_files/screenshot_01.png)
+<p align="center">
+ <img width="800" src="https://raw.githubusercontent.com/helikon-labs/chainviz/development/readme_files/screenshot_01.png" />
+    <br />
+    <i>Chainviz alpha version</i>
+</p>
 
 Application in its current alpha version provides the following features:
 
@@ -23,9 +27,9 @@ Application in its current alpha version provides the following features:
 - Active validator list and search over identity/address
 - Validator details panel upon click on a validator in the 3D model, or the validator list
 
-**This application is to fund the building of the first major version of ChainViz**, with the following features/visualizations:
+**This application is to fund the building of the first major version of Chainviz**, with the following features/visualizations:
 
-- Complete rebuild of the the existing functionality with improved UI/UX and WebGL models, shaders and animations
+- Complete rebuild of the the existing functionality with improved UI/UX and WebGL models and animations
 - Additional support for Polkadot
 - New visualizations
   - Parachains
@@ -33,22 +37,22 @@ Application in its current alpha version provides the following features:
     - XCM messages between parachains, or from parachains to relay chains
   - Block content
     - Author
-    - Extrinsics and arguments
-    - Events and arguments
+    - Extrinsics
+    - Events
 
-With these additional features, ChainViz is going to become a **complete real-time visualization** of the Polkadot and Kusama relay chains and their parachains.
+With these additional features, Chainviz is going to become a **complete real-time visualization** of the Polkadot and Kusama relay chains and their parachains.
 
 ### Project Details
 
 #### Organization
 
-ChainViz v1 upgrade is a collaboration between [Helikon Labs](https://helikon.io) and [Klad](https://klad.design), carried out under the management of Helikon Labs.
+Chainviz v1 upgrade is a collaboration between [Helikon Labs](https://helikon.io) and [Klad](https://klad.design), carried out under the management of Helikon Labs.
 
 #### System Architecture
 
 ##### Current System
 
-ChainViz Alpha currently utilizes [SubVT backend services](https://github.com/helikon-labs/subvt-backend) and Polkadot JS API as follows.
+Chainviz alpha version currently utilizes [SubVT backend services](https://github.com/helikon-labs/subvt-backend) and Polkadot JS API as follows.
 
 - SubVT active validator list [service](https://github.com/helikon-labs/subvt-backend/tree/development/subvt-validator-list-server)
   - List of all active validators
@@ -70,54 +74,46 @@ ChainViz Alpha currently utilizes [SubVT backend services](https://github.com/he
     - Utilized to display the block production animation
     - Identify uncle blocks and visualize them
 
-Current ChainViz Alpha system architecture can be illustrated as follows.
+Current Chainviz alpha version system architecture can be illustrated as follows.
 
 <p align="center">
- <img width="400" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/01-chainviz_alpha_system_architecture.png" />
+ <img width="400" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-amendment-files/applications/chainviz-files/01-chainviz_alpha_system_architecture.png" />
     <br />
-    <i><b>Figure 1</b> ChainViz Alpha system architecture</i>
+    <i><b>Figure 1</b> Chainviz alpha system architecture</i>
 </p>
 
 ##### Proposed Upgrade
 
 Proposed upgrade to the first major version requires the following additional data:
 
-- Block details
-  - Extrinsic list and parameters
-    - XCM messages (`XcmPallet` extrinsics)
-  - Event list and parameters
-- Validator details
+- Block content
+  - Extrinsic list
+  - Event list
+- Parachains
+- XCM messages
 
 Proposed system architecture for the upgrade can be illustrated as follows.
 
 <p align="center">
- <img width="600" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/02-chainviz_v1_system_architecture.png" />
+ <img width="600" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-amendment-files/applications/chainviz-files/02-chainviz_v1_system_architecture.png" />
     <br />
-    <i><b>Figure 2</b> ChainViz v1 proposed system architecture</i>
+    <i><b>Figure 2</b> Chainviz v1 proposed system architecture</i>
 </p>
 
-Upgraded system utilizes the **to-be-developed** SubVT `Block Details Service` to access the block content (i.e. extrinsics and events), and the **existing** SubVT `Validator Details Service` for any necessary validator data that is not available through the validator list service.
+Upgraded system utilizes:
 
-##### Block Details Service
-
-A new addition to the [SubVT Backend](https://github.com/helikon-labs/subvt-backend), `Block Details Service` is going to be a websockets subscription service that pushes in JSON format at every new block to a subscribed client:
-
-- Block hash, parent block hash
-- Block number
-- Block author and its on-chain identity (if exists)
-- Block contents
-  - Extrinsics, their module names and arguments
-  - Events, their module names and arguments
-
-This service is going to be utilized in both displaying the block contents and cross-chain messages as extracted from the `XcmPallet` extrinsics and events.
+- Polkadot JS API to access block content and parachains, and subscriptions for new and finalized block headers
+- SubVT Polkadot and Kusama `Active Validator List Service`s for the list and summary data for active validators
+- SubVT Polkadot and Kusama `Network Status Service`s for live network data
+- [Polkaholic XCM API](https://docs.polkaholic.io/#xcm) for the live display of XCM messages and their summaries
 
 #### UI/UX Upgrades
 
-We're going to implement a number of UI/UX upgrades, as explained below.
+We're going to implement a number of UI/UX upgrades, as follows:
 
 - Improvement of the overall aesthetics and visual coherence of the application
-- A better depiction of the block production process that's easier to comprehend for a wider range of users from the technically informed to the newly-introduced
-- Display of block contents (i.e. hash, number, author, extrinsics and events) on hover and click
+- A better depiction of the block production process that is easier to comprehend for a wider range of users from the technically informed to the newly-introduced
+- Display of block contents (i.e. hash, number, author, extrinsics and events) on click
 - Responsive design for a range of screen sizes
 - A better utilization of the 3D space to allow for parachain visualization and preparation for future upgrades
 - Display of parachains, their assigned validators and the cross-chain messaging process
@@ -126,23 +122,23 @@ UI/UX upgrade implementation consists of 3 core components:
 
 - Visual guidelines
 - Application UI/UX upgrades
-- WebGL graphics development, shaders and motion design upgrades
+- WebGL graphics development and motion design upgrades
 
-Development of the **visual guidelines** aims to bring visual coherency to ChainViz. From a functional perspective, this component serves as a core visual guide and foundation for all future UI/UX components and 3D graphics development.
+Development of the **visual guidelines** aims to bring visual coherency to Chainviz. From a functional perspective, this component serves as a core visual guide and foundation for all future UI/UX components and 3D graphics development.
 
 **UI/UX upgrades** aim to elevate the project from a draft look to an efficient, performant, user-appealing, scalable web application. Visually, it will be based on the current project aesthetics while ensuring its responsiveness and accessibility. Through this work, we aim to increase usability and ensure application scalability in terms of functionality growth.
 
-Third component of the visual upgrades, the development of the **upgraded WebGL graphics, shaders and motion**, faces a set of challenges that we aim to solve, including effective visualization of the block production and cross-chain messaging process. When we use the term effective visualization, we primarily mean one that:
+Third component of the visual upgrades, the development of the **upgraded WebGL graphics and motion**, faces a set of challenges that we aim to solve, including effective visualization of the block production and cross-chain messaging process. When we use the term effective visualization, we primarily mean one that:
 
 - Can show the depicted processes in a simple yet systematic manner
 - Can be engaging and valuable for users with different levels of expertise
 
 ### Ecosystem Fit
 
-There is currently no direct match in the Dotsama ecosystem of the features offered by ChainViz. ChainViz Alpha got [shared on Twitter](https://twitter.com/gavofyork/status/1491480880245874708) by Gavin Wood upon initial release, and received a lot of praise from various Dotsama ecosystem members.
+There is currently no direct match in the Dotsama ecosystem of the features offered by Chainviz. Chainviz Alpha got [shared on Twitter](https://twitter.com/gavofyork/status/1491480880245874708) by Gavin Wood upon initial release, and received a lot of praise from various Dotsama ecosystem members.
 
 <p align="center">
- <img width="400" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/03-chainviz_alpha_gavin_wood_twitter.png" />
+ <img width="500" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-amendment-files/applications/chainviz-files/03-chainviz_alpha_gavin_wood_twitter.png" />
 </p>
 
 There are currently two other projects that visualize certain aspects of the Dotsama blockspace:
@@ -150,7 +146,7 @@ There are currently two other projects that visualize certain aspects of the Dot
 1. [Kusamaverse by Odyssey](https://odyssey.org/kusamaverse), which is closer to a metaverse space for Kusama, focuses more on the interaction of the actors in the ecosystem.
 2. [XCM Dashboard](https://polkadot.subscan.io/xcm_dashboard) by the Subscan team, which is a fairly static visualization of the active cross-chain messaging channels between parachains.
 
-ChainViz is unique in that it focuses on a very clear real-time visualization of the internals of the Dotsama machine. As we're going to explain in the Future Plans section, it also has the potential to have educational, entertainment and functional value through future development.
+Chainviz is unique in that it focuses on a very clear real-time visualization of the internals of the Dotsama machine. As we're going to explain in the Future Plans section, it also has the potential to have educational, entertainment and functional value through future development.
 
 ## Team :busts_in_silhouette:
 
@@ -186,18 +182,18 @@ A crypto-native software development company based in Istanbul. Founded by [Kuts
     - [SubVT Backend](https://github.com/helikon-labs/subvt-backend)
     - [SubVT Data Swift](https://github.com/helikon-labs/subvt-data-swift)
     - [SubVT Data Android](https://github.com/helikon-labs/subvt-data-android)
-  - Alpha Testing
-    - [SubVT iOS](https://github.com/helikon-labs/subvt-ios)
+    - [SubVT iOS](https://subvt.io) ([source](https://github.com/helikon-labs/subvt-ios))
   - Under Development
     - [SubVT Android](https://github.com/helikon-labs/subvt-ios)
 - [Received](https://github.com/w3f/Grants-Program/blob/master/applications/subvt-telegram-bot.md) and [delivered](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/subvt_telegram_bot-milestones-1-and-2.md) a W3F Level-1 Open Grant for the [SubVT Telegram Bot](https://github.com/helikon-labs/subvt-backend/tree/development/subvt-telegram-bot) for [Kusama](https://t.me/subvt_kusama_bot) and [Polkadot](https://t.me/subvt_polkadot_bot).
 - Member of both Polkadot and Kusama Thousand Validators programs.
 - Running two Kusama validators, and one Polkadot validator on owned hardware in a colocation center in Istanbul.
 - Active governance participation.
+- Professional member of the [Infrastructure Builders Program (IBP)](https://ibp.network).
 
 #### Kutsal Kaan Bilgin
 
-Founder of Helikon Labs. Software developer with a BS in Computer Science and 20 years of experience in software development and leadership in diverse fields such as fintech, defense industry, interactive art installations and GIS. Focusing on user-friendly, aesthetically pleasing and creative blockchain application development since late 2019. Dotsama native since early 2021. Developer of SubVT (please see above), [ChainViz Alpha](https://alpha.chainviz.app) and [ChainSynth Alpha](https://alpha.chainsynth.app). Presenter of a Substrate Seminar [episode](https://www.youtube.com/watch?v=e-o_hTj3UFk&t=6119s&ab_channel=ParityTech) on blockchain UI application development.
+Founder of Helikon Labs. Software developer with a BS in Computer Science and 20 years of experience in software development and leadership in diverse fields such as fintech, defense industry, interactive art installations and GIS. Focusing on user-friendly, aesthetically pleasing and creative blockchain application development since late 2019. Dotsama native since early 2021. Developer of SubVT (please see above), [Chainviz Alpha](https://alpha.chainviz.app) and [ChainSynth Alpha](https://alpha.chainsynth.app). Presenter of a Substrate Seminar [episode](https://www.youtube.com/watch?v=e-o_hTj3UFk&t=6119s&ab_channel=ParityTech) on blockchain UI application development.
 
 #### Egor Zmaznev
 
@@ -219,16 +215,16 @@ Ksenia is a co-founder and leading UI/UX designer at Klad. She has 15 years of e
 
 Lena is a co-founder and 3D & motion designer at Klad. She has over seven years of experience and has participated in various crypto projects providing supporting 3D materials, including interactive validator 3D models for SubVT. Lena brings volume and movement to brands, allowing for spectacular immersive digital experiences.
 
-### Team Code Repos
+### Team Code Repositories
 
 - [Helikon Labs](https://github.com/helikon-labs)
-  - [ChainViz](github.com/helikon-labs/chainviz)
-  - [ChainSynth](github.com/helikon-labs/chainsynth)
-  - [SubVT Backend](github.com/helikon-labs/subvt-backend)
-  - [SubVT iOS](github.com/helikon-labs/subvt-ios)
-  - [SubVT Android](github.com/helikon-labs/subvt-android)
-  - [SubVT Data - Swift](github.com/helikon-labs/subvt-data-swift)
-  - [SubVT Data - Android](github.com/helikon-labs/subvt-data-android)
+  - [Chainviz](https://github.com/helikon-labs/chainviz)
+  - [ChainSynth](https://github.com/helikon-labs/chainsynth)
+  - [SubVT Backend](https://github.com/helikon-labs/subvt-backend)
+  - [SubVT iOS](https://github.com/helikon-labs/subvt-ios)
+  - [SubVT Android](https://github.com/helikon-labs/subvt-android)
+  - [SubVT Data - Swift](https://github.com/helikon-labs/subvt-data-swift)
+  - [SubVT Data - Android](https://github.com/helikon-labs/subvt-data-android)
 - Team Members
   - Kutsal Kaan Bilgin [@kukabi](https://github.com/kukabi)
   - Egor Zmaznev [@Zmaznevegor](https://github.com/Zmaznevegor)
@@ -247,47 +243,31 @@ Lena is a co-founder and 3D & motion designer at Klad. She has over seven years 
 
 ## Development Status :open_book:
 
-[Alpha version](https://alpha.chainviz.app) of ChainViz has been live since February 2022 as detailed under the Project Details section. There hasn't been any development for the first major version proposed by this document.
+[Alpha version](https://alpha.chainviz.app) of Chainviz has been live since February 2022 as detailed under the Project Details section. There hasn't been any development for the first major version proposed by this document.
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):**  1.0
+- **Total Estimated Duration:** 8 months
+- **Full-Time Equivalent (FTE):**  0.2
 - **Total Costs:** 22,000 USD
 
-### Milestone 1 — Block Details WS Service, Implementation of Upgrades for Existing Functionality  
+### Milestone 1 — Complete Web Application Implementation
 
-- **Estimated duration:** 1 month
-- **FTE:**  1.0
-- **Costs:** 11,000 USD
+- **Estimated duration:** 8 months
+- **FTE:**  0.2
+- **Costs:** 22,000 USD
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
-| 0b. | Documentation | Milestone progress report and inline code documentation. GitHub README that explains how to run an instance of the application. |
-| 0c. | Testing Guide | Separate markdown in the GitHub repository that documents the complete backend test cases for the Block Details WS Service and the application Typescript code and how to run them. |
-| 0d. | Docker | Necessary Docker/compose files necessary to run the backend services and the application. |
-| 0e. | Video Article | A YouTube video accompanied by an article on Helikon website or another blog site that documents the milestone development/design process and the outcome. |
-| 0f. | Block Details WS Service Specification | Complete specification of the websockets service. |
-| 1. | Block Details WS Service | Implementation of the service as part of [SubVT Backend](https://github.com/helikon-labs/subvt-backend), deployed and available on the SubVT test server. |
-| 2. | Complete Upgrade of the Existing Functionality Available at [chainviz.app](https://chainviz.app) | Implementation of UI/UX upgrades for validator space and models, block production, network status panel, validator list panel and validator details panel.  |
-
-### Milestone 2 - Rest of the Application Features: Block Details, Parachains, Paravalidators, XCM
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1.0
-- **Costs:** 11,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
-| 0b. | Documentation | Milestone progress report and inline code documentation. GitHub README that explains how to run an instance. |
-| 0c. | Testing Guide | Separate markdown in the GitHub repository that documents the complete application test cases and how to run them. |
-| 0d. | Docker | Necessary Docker/compose files necessary to run the backend services and the application. |
-| 0e. | Video Article | A YouTube video accompanied by an article on Helikon website or another blog site that documents the milestone development/design process and the outcome. |
-| 1. | Complete Web Application with New Features | Web application live at [chainviz.app](https://chainviz.app), with additional real-time visualizations as documented above: complete block details on hover or click, parachains, parachain validator groups and their assignments, cross-chain messages. |
+| Number | Deliverable                                       | Specification                                                                                                                                                                                                                                       |
+|-------:|---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                                           | GPLv3                                                                                                                                                                                                                                               |
+|    0b. | Documentation                                     | Milestone delivery report and inline code documentation. Separate markdown document that explains how to run an instance of the application.                                                                                                        |
+|    0c. | Testing Guide                                     | Markdown document in the GitHub repository that documents the complete list of test cases for application Typescript code and how to run them.                                                                                                      |
+|    0d. | Docker                                            | Necessary Docker/compose files necessary to run the application.                                                                                                                                                                                    |
+|    0e. | Video Article                                     | A YouTube video accompanied by an article on Helikon website or another blog site that documents the milestone development/design process and the outcome.                                                                                          |
+|    1a. | Web Application Source Code                       | Complete source code of the application available at the Chainviz GitHub repository. Documentation delivered as part of `0b` is going to have the simple instructions to run the software.                                                          |
+|    1b. | Web Application Live Deployment with New Features | Web application live at [chainviz.app](https://chainviz.app), with additional real-time visualizations as documented above: complete block details on hover or click, parachains, parachain validators and their assignments, cross-chain messages. |
 
 ## Future Plans
 
@@ -295,7 +275,7 @@ Lena is a co-founder and 3D & motion designer at Klad. She has over seven years 
   - Replayable voice recordings attached to the various components and processes for the users who would like to learn more about the internals of the Dotsama machine.
   - Text and visual augmentation.
   - Animated explainers and hints that give better understanding of the technology and processes.
-- Validator spaces and staking through ChainViz. Support for validators to claim and update their spaces.
+- Validator spaces and staking through Chainviz. Support for validators to claim and update their spaces.
 - iOS and Android phone, table and watch applications.
 - Exploration of VR and AR possibilities.
 - Creating a wiki for validator operators, supporting pull requests.

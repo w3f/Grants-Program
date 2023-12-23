@@ -28,7 +28,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Check out our <a target="_blank" rel="noopener noreferrer" href="https://medium.com/web3foundation/web3-foundation-grants-program-reaches-500-projects-milestone-bf314727b2f9">500 GRANTS blogpost</a>!',
+        'Check out our newly created <a target="_blank" rel="noopener noreferrer" href="https://futures.web3.foundation/">Decentralized Futures Program</a>!',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
@@ -83,6 +83,10 @@ module.exports = {
             {
               label: 'Privacy Policy',
               to: 'docs/Support%20Docs/privacy_policy',
+            },
+            {
+              label: 'Legal Disclosures',
+              to: 'https://web3.foundation/legal-disclosures/',
             },
           ],
         }, 

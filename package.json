@@ -14,8 +14,8 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.2.0",
-    "@docusaurus/preset-classic": "^2.2.0",
+    "@docusaurus/core": "^2.4.1",
+    "@docusaurus/preset-classic": "^2.4.1",
     "@mdx-js/react": "^1.6.22",
     "@svgr/webpack": "^7.0.0",
     "clsx": "^1.1.1",
@@ -29,6 +29,11 @@
     "react-countup": "^6.4.0",
     "react-dom": "^18.2.0",
     "url-loader": "^4.1.1"
+  },
+  "resolutions": {
+    "semver": "^7.5.4",
+    "trim":"^0.0.3",
+    "got":"13.0.0"
   },
   "browserslist": {
     "production": [

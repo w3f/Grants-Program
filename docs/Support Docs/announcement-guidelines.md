@@ -31,16 +31,17 @@ We also cross-promote the most recent projects and their milestones on Twitter o
 3. Why you chose to build on this tech stack
    - Illustrate the rationale for the relationship - why did you decide to work with Web3 Foundation?
    - Describe the benefits of building on Polkadot, Kusama etc. (shared security, ease of use, ease of deployment, ease of interchain communication, decentralized,
-  trusted, etc.) and why it was it important to have these features for your project.
+  trusted, etc.) and why it was important to have these features for your project.
 4. Quote
    - Your CEO / CTO / Founder may want to include a quote of why they picked Web3 Foundation to help gain more visibility and traction in the market.
 5. Description of Web3 Foundation
    - If you wish to mention W3F or Polkadot within the body of your text we recommend the following or similar:
-     - "Web3 Foundation funds research and development teams building the
-technology stack of the decentralized web. It was established in Zug, Switzerland by Ethereum co-founder and former CTO Gavin Wood. Polkadot is the Foundation's flagship project."
-     - "Polkadot is a scalable sharded chain and the first protocol that provides a secure environment for cross-chain composability across multiple shards. Polkadot also introduces a highly advanced, open governance system that will allow the network to innovate and grow at a much faster pace than legacy networks. Applications from DeFi to energy to gaming will thrive on Polkadot, challenging the centralized platforms of Web 2.0."
+     > "Web3 Foundation funds research and development teams building the technology stack of the decentralized web. It was established in Zug, Switzerland by Ethereum co-founder and former CTO Gavin Wood. Polkadot is the Foundation's flagship project."
+
+     > "Polkadot is a scalable sharded chain and the first protocol that provides a secure environment for cross-chain composability across multiple shards. Polkadot also introduces a highly advanced, open governance system that will allow the network to innovate and grow at a much faster pace than legacy networks. Applications from DeFi to energy to gaming will thrive on Polkadot, challenging the centralized platforms of Web 2.0."
 6. Social connections
-   - The following text regarding Web3 Foundation's social presence can be added at the end of your article: "Learn more about Web3 Foundation by visiting their [website](https://web3.foundation/), and stay up to date with the latest developments by following them on [Medium](https://medium.com/web3foundation) or [Twitter](https://twitter.com/web3foundation)."
+   - The following text regarding Web3 Foundation's social presence can be added at the end of your article:
+     > "Learn more about Web3 Foundation by visiting their [website](https://web3.foundation/), and stay up to date with the latest developments by following them on [Medium](https://medium.com/web3foundation) or [Twitter](https://twitter.com/web3foundation)."
   
 ## Recommended language
   

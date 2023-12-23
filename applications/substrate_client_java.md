@@ -1,6 +1,6 @@
 # Substrate Client for Java
 
-- **Team Name:** Doken  
+- **Team Name:** Seals  
 - **Payment Address:** Information provided in the "W3F Technical Grant Application Form"  
 
 ## Project Overview :page_facing_up:
@@ -54,11 +54,11 @@ The best approach to reach project’s goals is to use annotations and code gene
     - [x] `@RpcEncoder`;
     - [x] `@RpcDecoder`;
 
-- [ ] Pallet
-    - [ ] `@Pallet`;
+- [x] Pallet
+    - [x] `@Pallet`;
     - [ ] `@Transaction`;
-    - [ ] `@Query`;
-    - [ ] `@EventHandler`.
+    - [x] `@Storage`;
+    - [x] `@Event`.
 
 These allow the generation of scale serializers, deserializers, RPC methods, code for interaction with pallet, etc.
 In the next sections you will find further examples.
@@ -234,41 +234,41 @@ Our solution targets Substrate instead of Polkadot, and is implemented with code
 
 ### Team members
 
-- Alexander Kalankhodzhaev, Team Leader
-- Maria Manchovska, Product Manager
-- Vadim Nabiev, Senior Developer
+- Vadim Nabiev, Team Leader
+- Arame Bandari, Product Manager
+- Vahram Kobelyan, Senior Developer
 - Plamen Uzunov, Senior Java developer
-- Teodor Georgiev, Software developer 
-- Maria Kostadinova, Information Designer 
+- Teodor Georgiev, Software developer
 
 ### Contact
 
-- **Contact Name:** Alexander Kalankhodzhaev
-- **Contact Email:** Alexander.Kalankhodzhaev@strategyobject.com
+- **Contact Name:** Vadim Nabiev
+- **Contact Email:** vadim.nabiev@strategyobject.com
 - **Website:** www.strategyobject.com
 
 Grateful if you could also copy the email address doken.network@gmail.com in all official communications.
 
 ### Legal Structure
 
-- **Registered Address:** ul. "Tsaribrodska" 70, 1309 Sveta Troitsa, Sofia, Bulgaria
-- **Registered Legal Entity:** Strategy Object EOOD
+- **Registered Address:** Dubai Media City, Al Thuraya Tower 1 - Al Sufouh - Al Sufouh 2 - Dubai, United Arab Emirates
+- **Registered Legal Entity:** Strategy Object FZ-LLC
 
 ### Team's experience
 
-Alexander has over 14 years of experience as a software engineer and 3 years as a blockchain tech lead. Vadim has over 10 years as a software enfgineer and 2 years as Rust developer. Plamen is a Senior Engineer with over 15 years experience in particular in Java and cryptography. Teodor is a junior developer who recently joined the team, with a particular focus in Java development.
+Vadim has over 10 years of experience as as a software enfgineer and 3 years as Rust developer. Plamen is a Senior Engineer with over 15 years experience in particular in Java and cryptography. Vahram is a Senior Engineer with over 7 years experience in particular in Java. Teodor is a junior developer who recently joined the team, with a particular focus in Java development.
 
 ### Team Code Repos
 
-- [Strategy Object](https://github.com/orgs/strategyobject/)
-- [Alexander](https://github.com/kalaninja/)
-- [Vadim](https://github.com/vnabiev/)
-- [Plamen](https://github.com/PapiUzunov/)
+- [Strategy Object](https://github.com/strategyobject)
+- [Vadim](https://github.com/vnabiev)
+- [Vahram](https://github.com/VahramKobelyan)
+- [Plamen](https://github.com/PapiUzunov)
 
 ### Team LinkedIn Profiles (if available)
 
-- [Alexander](https://www.linkedin.com/in/kalaninja/)
 - [Vadim](https://www.linkedin.com/in/nabiev-v-r/)
+- [Vahram](https://www.linkedin.com/in/kobelyan/)
+- [Arame](https://www.linkedin.com/in/aramebandari/)
 - [Plamen](https://www.linkedin.com/in/plamen-uzunov-2761b47/)
 - [Teodor](https://www.linkedin.com/in/teodor-georgiev-248914192/)
 
@@ -283,7 +283,7 @@ The current version of the substrate-client-java is available at https://github.
 
 ### Overview
 
-- **Total Estimated Duration:** 7 months
+- **Total Estimated Duration:** 24 months
 - **Full-Time Equivalent (FTE):**  2.9 FTE
 - **Total Costs:** Information provided in the "W3F Technical Grant Application Form"
 
@@ -321,7 +321,7 @@ Implement a query api similar to the one of polkadot-js.
 
 Implement a transactions api similar to `api.tx` of polkadot-js.
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 months
 - **FTE:**  3 FTE
 - **Costs:** Information provided in the "W3F Technical Grant Application Form"
 
@@ -331,27 +331,11 @@ Implement a transactions api similar to `api.tx` of polkadot-js.
 | 1. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can submit transactions. |
 | 2. | Testing | Core functions will be fully covered by unit and integration tests to ensure functionality and robustness. |
 | 3. | Wiki | We will publish a wiki page that explains the details of the implementation for transactions within the substrate-client-java library. |
-| 4. | Transactions API | We will add transactions capabilities to the substrate-client-java. | 
+| 4. | Transactions API | We will add transactions capabilities to the substrate-client-java. |  
 
-### Milestone 4 — RPC sections and methods
+### Milestone 4 — Handling of Metadata
 
-Implement RPC sections and methods that remained unimplemented from the previous steps.
-
-- **Estimated duration:** 1 month
-- **FTE:**  3 FTE
-- **Costs:** Information provided in the "W3F Technical Grant Application Form"
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 1. | Documentation | We will provide **inline documentation** of the declared RPC sections and methods. |
-| 2. | Testing | Core functions will be fully covered by integration tests to ensure functionality and robustness. |
-| 3. | Wiki | We will publish a wiki page that explains the details of the implementation for RPC sections and methods within the substrate-client-java library. |
-| 4. | RPC methods | We will add missing RPC sections and methods to the substrate-client-java. | 
-
-### Milestone 5 — Handling of Metadata
-
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 months
 - **FTE:**  3 FTE
 - **Costs:** Information provided in the "W3F Technical Grant Application Form"
 
@@ -363,9 +347,25 @@ Implement RPC sections and methods that remained unimplemented from the previous
 | 3. | Wiki | We will publish a wiki page that explains the details of metadata handling within the substrate-client-java library. |
 | 4. | Metadata support | We will add metadata capabilities to the substrate-client-java. | 
 
+### Milestone 5 — RPC sections and methods
+
+Implement RPC sections and methods that remained unimplemented from the previous steps.
+
+- **Estimated duration:** 2 months
+- **FTE:**  3 FTE
+- **Costs:** Information provided in the "W3F Technical Grant Application Form"
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 1. | Documentation | We will provide **inline documentation** of the declared RPC sections and methods. |
+| 2. | Testing | Core functions will be fully covered by integration tests to ensure functionality and robustness. |
+| 3. | Wiki | We will publish a wiki page that explains the details of the implementation for RPC sections and methods within the substrate-client-java library. |
+| 4. | RPC methods | We will add missing RPC sections and methods to the substrate-client-java. |
+
 ### Milestone 6 — ED25519
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 months
 - **FTE:**  2.5 FTE
 - **Costs:** Information provided in the "W3F Technical Grant Application Form"
 
@@ -381,7 +381,7 @@ Implement RPC sections and methods that remained unimplemented from the previous
 
 Implement Constants API similar to `api.consts` of polkadot-js that allows access to the runtime constants.
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 months
 - **FTE:**  2.5 FTE
 - **Costs:** Information provided in the "W3F Technical Grant Application Form"
 
