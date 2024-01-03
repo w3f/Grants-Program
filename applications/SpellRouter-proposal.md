@@ -1,7 +1,7 @@
 # SpellRouter - XCM Router by ParaSpell✨
 
 - **Team Name:** ParaSpell✨
-- **Payment Address:** bc1qa7m3f5cm5pcyh7m8f899kx59m93w496ld8nyux BTC
+- **Payment Address:** FIAT (Shared 22.Dec.2023 14:56 via contact email mentioned in the application)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 🐤
 
 ## Project Overview :page_facing_up:
