@@ -1,6 +1,6 @@
 # Decentral ML
 - **Team Name:** Seed Intelligence Limited
-- **Payment Address:** FIAT (USD$ at@livetree.com)
+- **Payment Address:** Fiat 03.01.2024, 04:04
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
