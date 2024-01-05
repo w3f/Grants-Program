@@ -1,6 +1,6 @@
-# Title of the RFP Proposal
+# Action Research for OpenGov
 
-* **Status:** Open (anyone is allowed to apply) / Closed (invited respondents only) / Implemented (finished)
+* **Status:** Open (anyone is allowed to apply) 
 * **Proposer:** GitHub username
 * **Your Project(s):** [optional]: Link(s)
 * **Projects you think this work could be useful for** [optional]: Link(s)
