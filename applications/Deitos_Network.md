@@ -254,7 +254,7 @@ Elements related to data consumption or querying, as well as the inclusion of ot
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | The project will utilize the Apache 2.0 license. |
+| **0a.** | License | The project will utilize the GNU General Public License v3 (GPLv3) license. |
 | **0b.** | Documentation | All the functionalities developed in this milestone will contain the corresponding inline code documentation. In addition, all the configuration for the services included in the Infrastructure Provider will be documented. |
 | **0c.** | Testing and Testing Guide | 1) All the different pallets and functionalities will contain their own unit testing contained in the `test.rs` files including the inline documentation for each test purpose. 2) Comprehensive testing guide for interacting with all the functionalities from the  `pallet-deitos`. 3) User guide to start the Docker file provided in the delivery item **0d.**|
 | **0d.** | Docker file | 1) Provision of a Docker file encapsulating all essential services. 2) Streamlined deployment of services: Hadoop, Spark, Hive, YARN, Llama v2, and the substrate node. 3) A docker-compose file to simplify onboarding and integration for providers. |
@@ -272,7 +272,7 @@ Elements related to data consumption or querying, as well as the inclusion of ot
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | The project will utilize the Apache 2.0 license. |
+| **0a.** | License | The project will utilize the GNU General Public License v3 (GPLv3) license. |
 | **0b.** | Documentation | Building upon the documentation provided in the first milestone, this milestone will introduce a new set of user guidelines. As the grant approaches its conclusion and all implementation details are settled, we will provide thorough protocol documentation. |
 | **0c.** | Testing and Testing Guide | 1) All the different pallets and functionalities will contain their own unit testing contained in the `test.rs` files including the inline documentation for each test purpose. 2) This milestone will deliver the necessary tools to establish a local testing environment, allowing for comprehensive testing of all functionalities. |
 | **0d.** | Docker | As we plan to deliver the software to infrastructures providers (IP) in docker images, all the protocol services will be configured and delivered in the  IP Docker image. |
