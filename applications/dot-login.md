@@ -8,19 +8,19 @@
 
 ### Overview
 
-DOT Login is poised to bridge the gap between Web2 and Web3 by simplifying access to blockchain technology through familiar OAuth2 protocols. Our project is not merely about creating another wallet; it's about crafting a portal that will open the Web3 ecosystem to the masses, starting with a focus on USD-backed stablecoins available on Polkadot's Asset Hub, such as USDT and USDC. While the overarching vision includes a payment app to revolutionize global transactions, this grant application centers on the core technology that will lay the foundation for this future: a wallet creation and transaction flow built on the back of well-known OAuth2 providers like Google, Twitter, Facebook, and Microsoft.
+DOT Login is poised to bridge the gap between Web2 and Web3 by simplifying access to blockchain technology through familiar web2-native OAuth2 protocols which are [arguably](https://oauth.net/2/) the industry standard for web-based authorization. The Substrate pallets to be developed as part of this grant will allow any parachain that adds them to their runtime to onboard Web2 users through this familiar interface. The web-based wallet, specified in Milestone 3, will serve as the user interface for this integration.
 
-The DOT Login initiative will enable individuals, even those without prior blockchain experience, to enter the Polkadot and Kusama ecosystems with ease, using accounts they already trust and use daily. This grant application will focus on developing the underlying infrastructure to support this seamless transition, ensuring that while the long-term vision includes a comprehensive payment application, the current scope is dedicated to creating the technological core and user interface that will serve as the bedrock for future developments.
+In the project's second phase, we plan to launch a parachain to act as a hub connecting other parachains (if they opt out of integrating our pallets) with the Web2 environment. Furthermore, our overarching vision includes developing a payment app to transform global transactions. This will enable individuals, even those without prior blockchain experience, to enter the Polkadot and Kusama ecosystems with ease, using accounts they already trust and use daily. This grant application, however, is primarily focused on establishing the foundational technology: a OAuth2-compatible wallet and the runtime pallets that make this integration possible, while leveraging well-known OAuth2 providers such as Google, Twitter, Facebook, and Microsoft.
 
 ### Project Details
 
-This project is structured into three main parts: the wallet creation flow, the transaction sending flow, and the UI development. Each part addresses a core aspect of integrating OAuth2 authentication with Substrate, facilitating an accessible entry point into the Web3 space for Web2 users.
+This grant is structured into three main parts: the wallet creation flow, the transaction sending flow, and the UI development. Each part addresses a core aspect of integrating OAuth2 authentication with Substrate, facilitating an accessible entry point into the Web3 space for Web2 users.
 
 - **Wallet Creation Flow:** This process involves the user generating an ephemeral key pair through the wallet and authenticating with an OAuth2 provider (e.g. Gmail). The `zkEphemeralKeys` pallet then registers the public key, encapsulated with a zero-knowledge proof to ensure privacy. The wallet address is derived from this ephemeral public key, ensuring a secure link between the user's identity as authenticated by the OAuth2 provider and their on-chain presence.
 
 - **Transaction Sending Flow:** For transaction processing, the `zkEphemeralKeys` pallet again plays a pivotal role. It employs an internal mechanism to verify transaction signatures made with the ephemeral keys. Upon successful verification, it executes the transfer using a custom extrinsic that mimics the core functionality of the vanilla `pallet_balances`, ensuring that the core logic of existing Substrate modules remains untouched.
 
-- **UI Development:** The user interface is built using ReactJS and the Polkadot.js/API or PAPI library, combined with RxJS for reactive programming. The UI will provide a seamless experience for creating wallets, viewing balances, and sending transactions. The design prioritizes ease of use to encourage adoption by users less familiar with blockchain technologies.
+- **Wallet Development:** The user interface is built using ReactJS and the Polkadot.js/API or PAPI library, combined with RxJS for reactive programming. The UI will provide a seamless experience for creating wallets, viewing balances, and sending transactions. The design prioritizes ease of use to encourage adoption by users less familiar with blockchain technologies.
 
 **Architectural Overview**
 
@@ -50,8 +50,24 @@ Below is a comparative overview of our immediate project goals for the scope of 
 
 | Aspect             | This Grant                                                                 | Macro Vision                                                                      |
 |--------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| **Target Audience** | New and existing Web2 users transitioning to Web3, developers looking for user-friendly authentication methods. | Global user base with a focus on financial inclusion, merchants, and consumers seeking low-cost, efficient payment solutions. Eventually allow merchands and retail users to use the currency of their choice for payments and savings. This can be useful especially for countries that experience currency crisises or go to a time of high inflation. |
+| **Target Audience** | New and existing Web2 users transitioning to Web3, developers looking for user-friendly authentication methods. | - Other parachains that are interested to onboard Web2 users will be able to connect to our parachain through XCM. <br /> - Global user base with a focus on financial inclusion, merchants, and consumers seeking low-cost, efficient payment solutions. Eventually allow merchands and retail users to use the currency of their choice for payments and savings. This can be useful especially for countries that experience currency crisises or go to a time of high inflation. |
 | **Needs Met**       | Simplifying the transition from Web2 to Web3 and enhancing user experience in the Polkadot/Kusama ecosystem. | Providing a stable, reliable, and accessible payment network using blockchain technology to facilitate financial transactions worldwide with a focus on stablecoins. The goal is to deliver an user experience that doesn't require users to know how blockchain works.  |
+
+While it's difficult to pinpoint the exact number of active users on OAuth2-compatible networks, they should go well into the billions, if we assume that the available statistics on these providers are remotely accurate (which we think is a fair guess to make). We've condensed some stats here that illustrate that we're covering a wide range of age groups and markets while showing that most users access these networks using mobile devices. While these networks include a lot of gen z users alrady, we're planning to integrate providers where gen z are the largest age group, such as Twitch or TikTok.
+
+| OAuth2 Provider | Active Users | Top Age Group | Smartphone Share | Top 3 Markets     |
+|-----------------|--------------|---------------|------------------|-------------------|
+| Google          | 1.8 billion  | 25-34 years   | 75%              | US, India, Brazil |
+| Twitter         | 528 million  | 25-34 years   | 80% (2015)       | US, Japan, India  |
+| Facebook        | 3 billion    | 30-49 years   | 98.5%            | India, US, Indonesia |
+
+Sources
+
+- https://marketsplash.com/gmail-statistics/
+- https://www.searchlogistics.com/learn/statistics/twitter-user-statistics/
+- https://www.statista.com/chart/1520/number-of-monthly-active-twitter-users/
+- https://backlinko.com/facebook-users
+- https://www.demandsage.com/twitch-users/#:~:text=As%%20the%20latest%20data,7.12%20million%20In%20July%202023.
 
 ## Team :busts_in_silhouette:
 
@@ -172,3 +188,11 @@ This vision also includes hedging opportunities against domestic currency crises
 **How did you hear about the Grants Program?**
 
 - We've been following the Dotsama ecosystem for a while now, but we had been hesitant to build on it in the past, because the relatively high costs to secure a parachain slot discouraged us. However, with the advent of agile coretime the situation changes as leveraging the shared security paradigm becomes more viable for projects that are just starting off. Through the W3F's twitter account we've learned about this program and decided to apply.
+
+**Why did you decide to apply to the Grants Program, rather than the Decentralized Futures Program?**
+
+- While we do have a solid track record in web2 tech projects, TradFi, FinTech, e-commerce and entrepreneurism overall, we currently haven't implemented a major web3 project yet. Due to the transparent nature of the grants program we believe this is a good chance to build a solid reputation within the ecosystem, by living up to our promises and delivering solid open-source components that are beneficial to the overall ecosystem.
+- We appreciate the ongoing efforts of the decentralised futures program to make significant impact in the ecosystem, however, in our research we haven't found any project yet that has been accepted. Our current situation is that we've reserved this month for setting up our businesses to be less reliant on us, so we can start focusing on the implementation of DOT Login from February. Hence, we choose to pick the grants program, since we've seen that good applications can be approved within weeks (recent examples include Democratic Governance, QuantumGuard, Lastic).
+- We're not yet going to be profitable after completion of this grant, which we believe is a precondition for the futures program, quote from the [webpage](https://futures.web3.foundation/) (also, we're not a non-profit venture):
+  >  Funding is available for Polkadot-focused organizations that aim to generate profit, as well as for non-profit ventures that have a strategy to secure ongoing financing through Polkadot's on-chain treasury system beyond 2024.
+- We do see the scope of this grant as a very useful addition to the ecosystem that will enable mainstream web2 people to access the Dotsama ecosystem. While parachain teams will be able to reuse our pallets on their chain, we are envisioning to become the web2 entrypoint for the masses, allowing parachains to integrate with us through XCM, to onboard web2 users. In addition to that, as mentioned in the proposal our long term plan includes the implementation and launch of a global payment network that leverages our parachain under the hood.
