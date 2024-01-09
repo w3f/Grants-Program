@@ -154,6 +154,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 Participated in regional and Country Maths Competitions and had numerous major achievements such as third position in regional maths competition & best in country in world scholars cup organized by Yale University while he was in secondary school. Started working with substrate and blockchain engineering for nearly 2+ years.Raised over 120K in the project which he worked on and contributes to substrate repo occasionaly.
 He is currently working as a blockchain engineer at TONOMUUS.NEOM ( A saudia arabia company building the digital future).
 
+A Polkadot Blockchain Academy Dev student
+
 **Shankar Rao**
 
 5+ years experience working with smart contract technologies starting with Solidity and
@@ -184,6 +186,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
+Please consider the notion doc below:
+[Development status](https://mrisho-lukamba.notion.site/Roadmap-9443a048446646eb91b852c51f158811?pvs=4)
 
 ![](https://github.com/2-5-Foundation/vane/blob/main/artifacts/Vane-Overall-for-risk-free-transfer.jpeg?raw=true)
 
