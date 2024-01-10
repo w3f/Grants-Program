@@ -129,7 +129,7 @@ https://www.linkedin.com/in/igor-stojanov-96364ba/
 | 1. | Cards Module | Implement dashboard cards with basic statistics about the blockchain. |
 | 2. | Table Module| Add table that holds Account balances that can be loaded from Polkadot Extension |
 | 3. | Transfer Module | Simple module to transfer tokens from one acount to another |
-| 4. | Upgrade Runtime Module| EEnsure users can upload wasm File from the UI |
+| 4. | Upgrade Runtime Module| Ensure users can upload a wasm File from the UI that allows them to upgrade their runtime |
 | 5. | Pallet Interactor | Module that allows interaction with extrinsics and queries |
 | 6. | Event Module | Displaying latest events that happens on-chain
 
