@@ -108,7 +108,7 @@ https://www.linkedin.com/in/igor-stojanov-96364ba/
 | **0c.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 2. | Menu Header | UI element that replaces existing menu items |
 | 3. | Footer | New Element for implementing a new UI Element footer |
-| 4. | Polkadot Extension| Ensure working connection with Polkadot extension |
+| 4. | Polkadot Extension | Ensure working connection with Polkadot extension |
 | 5. | Light/Dark Mode| Enable styling switch to dark and light mode |
 
 
