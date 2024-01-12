@@ -157,4 +157,12 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 ## Additional Information :heavy_plus_sign:
 
+### Differences between [LimeChain's solution](https://polkadot.polkassembly.io/motion/389) and ours:
+
+The most significant difference is that LimeChain's solution implements a 'PVF configurable mock,' which is used to inject WebAssembly (WASM). In contrast, we plan to create multiple example implementations and share their codebase. WASM injection appears to be a time-consuming and complex solution; we opt for easier-to-understand tests, the code for which will be publicly available.
+
+The testing scenarios will be quite similar since we share the common goal of identifying test cases and implementing conformance tests for the execution of the Parachain Validation Function (PVF) across different node implementations.
+
+Additionally, we plan to develop a CLI that will allow for easy integration, either by wrapping it in a Docker container, using it directly from the terminal, or integrating it into a CI/CD pipeline. In our opinion, developing a CLI in a popular library is easier to maintain and is more likely to be developed by the community than WASM injectors.
+
 **How did you hear about the Grants Program?** We work together with Aleph Zero on the [SmartBeaver](smartbeaver.io) project
