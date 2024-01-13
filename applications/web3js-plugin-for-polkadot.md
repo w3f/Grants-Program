@@ -18,7 +18,7 @@ Note: The project was initially developed for the Polkadot Hackathon Winter 2023
 
 Web3.js Plugin for Polkadot ([`web3-plugin-polkadot`](https://www.npmjs.com/package/@conx3/web3-plugin-polkadot)) currently enables the basic interactions by supporting RPC methods calls. You can check [its details at the npm registry](https://www.npmjs.com/package/@conx3/web3-plugin-polkadot) or at [its repository readme file](https://github.com/conx3/web3-plugin-polkadot). However, it is currently very basic and needs more work to become more useful.
 
-In this grant request, I propose to first focus on improving documentation, testing in CI/CD, Docker files, and branding and website content to popularize the current functionality. The details of this foundational work can be checked in the 1st milestone below. After that, I propose to work on support for subscribing/unsubscribing to blockchain events as the next functionality to be added. And in preparation for the next step, an analysis will also be made on how Polkadot, Kusama, and Substrate accounts could be integrated into web3.js inside this plugin.
+In this grant request, I propose to work on support for subscribing/unsubscribing to blockchain events as the next functionality to be added.
 
 Polkadot, Kusama, and Substrate nodes provide subscription in a way that differs from Ethereum, which has only 2 endpoints for all subscriptions: `'eth_subscribe'` and `'eth_unsubscribe'`. Therefore, the proposal is to work on inheriting and modifying the `SubscriptionManager` that is developed by web3.js so it handles subscription using the methods:
 
@@ -45,14 +45,12 @@ Polkadot, Kusama, and Substrate nodes provide subscription in a way that differs
 'unsubscribe_newHead',
 ```
 
-And regarding the accounts, analyzing how Polkadot, Kusama, and Substrate accounts could be integrated into web3.js inside this plugin is important. Next to that, I would apply for a grant or ask for sponsorship for the analyzed and estimated work. However, some modification might need to be done at web3.js to facilitate this. Therefore, I will analyze the work to be done there in order to open an MR for it if it makes sense to propose some modifications.
-
 ### Ecosystem Fit
 
 The target audience of this package are JavaScript and TypeScript developers creating tools or dApps for Polkadot, Kusama, and Substrate. There are 3 key benefits to this:
 
 #### Development Experience and Learning Curve
-Developers already familiar with web3.js would be able to quickly start comunicating with Polkadot and Substrate nodes with fewer new concepts to learn. All they need to do is link web3.js with a Polkadot, Kusama, or Substrate provider, register the plugin, and start working as usual with slight adjustments.
+Developers already familiar with web3.js would be able to quickly start communicating with Polkadot and Substrate nodes with fewer new concepts to learn. All they need to do is link web3.js with a Polkadot, Kusama, or Substrate provider, register the plugin, and start working as usual with slight adjustments.
 
 #### Code Portability
 Existing Ethereum DApp code using web3.js could be adapted with relative ease to work with Polkadot and Substrate. Only a few changes to current code would be needed. This means developers may use the same codebase for interacting with both Ethereum-based nodes and Substrate nodes, with some custom handling.
@@ -110,34 +108,15 @@ The initial version of the library has been developed during Polkadot Hackathon 
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):** 0.25+ (will utilize professional paid work, in addition to 0.25 FTE, especially for design and content-related tasks)
-- **Total Costs:** 5,000 USD
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):** 0.20
+- **Total Costs:** 2,000 USD
 
-### Milestone 1 — Misc tasks on the current functionality
-
-Work on documentation, testing in the CI/CD, Docker files, and the popularization of the current functionality.
+### Milestone 1 (out of 1) — Support Subscribing/Unsubscribing to blockchain events
 
 - **Estimated duration:** 1 month
-- **FTE:** 0.25+
-- **Costs:** 2,500 USD
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Keep using MIT but add a license comment to every file header |
-| **0b.** | Documentation | Review the code to ensure providing enough **inline documentation**. However, 2 **tutorials** will be written as in '0e' that has been listed in the next 2 rows. |
-| **0c.** | Testing and Testing Guide | There is already 100% test coverage for the current code. And in the readme file, it is already mentioned how to run those tests. However, I will setup and fix the GitHub Actions that should run the tests successfully on every commit.  |
-| **0d.** | Docker | Provide a Dockerfile(s) that can be used to test all the functionality that has been already provided by the plugin. |
-| 0e. | Tutorials | Write a tutorial, and possibly a publish a video, that explains registering and using the plugin to call RPC methods. And another tutorial, and possibly a video, that explains how to work with a substrate node, which has a customized list of RPC methods.|
-| 0f. | Branding | Reconsider the current website branding, adopt identity colors and use a logo and a better banner.|
-| 0g. | Website content | Put helpful content at the website https://web3polka.com/ that is currently almost empty.|
-
-### Milestone 2 — Support Subscribing/Unsubscribing to blockchain events
-
-- **Estimated duration:** 1 month
-- **FTE:** 0.25+
-- **Costs:** 2,500 USD
+- **FTE:** 0.20
+- **Costs:** 2,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -145,14 +124,13 @@ Work on documentation, testing in the CI/CD, Docker files, and the popularizatio
 | **0b.** | Documentation | Provide both **inline documentation** of the code and a basic **tutorial**, and possibly a video, that explains how a user can use the plugin to subscribe/unsubscribe to events. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | Provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | Publish an **article** that explains what had been im implemented in this grant featuring the work on the subscription and the playground. |
+| 0e. | Article | Publish an **article** that explains what had been im implemented in this grant featuring the use of subscriptions. |
 | 1. | Support subscribe/unsubscribe | Polkadot, Kusama and Substrate nodes provide subscription in a way the differs a bit from Ethereum that has only 2 endpoints for all subscriptions: `'eth_subscribe'` and `'eth_unsubscribe'`. For that, work on inheriting and modifying the `SubscriptionManager` developed by web3.js to handle subscription using the RPC methods available on Polkadot, Kusama and Substrate nodes |
-| 2. | In-browser playground | Add a playground that can be used in the browser to try the plugin.|
-| 3. | Analyze integrating Accounts with web3.js (in the next plugin version) | Analyze how Polkadot, Kusama and Substrate accounts could be integrated into web3.js inside this plugin. (Next to that, apply for a grant or asking for sponsoring the analyzed and estimated work.). However, there could be some modification to be done at web3.js to ease this. And so analze the work to be done there in order to open an MR for it.|
 
 ## Future Plans
 
 - Implement additional functionalities, such as accounts handling and smart contract interactions. There will be subsequent grant requests for these and other functionalities.
+- Work on the complementary stuff like the plugin identity design and website content, the CD/CI integration in GitHub and an in-browser playground...
 - Popularize the library through tutorials, illustrative videos, workshops, and sponsoring bounties at hackathons.
 - Develop more plugins for the Polkadot ecosystem.
 
