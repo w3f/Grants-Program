@@ -36,9 +36,13 @@ We also plan to incorporate a terminal window, either below the main UI or in a 
 
 ![architecture](https://jyu.llc/inkjet_arch.png)
 
-We are using Docker for containerization of the platform. When a user initiates the application, a new Docker image is started, which houses the RAG-LLM pipeline and a Rust environment. When the smart contract is run or scanned with CoinFabrik, the code is sent to the Rust environment and compiled. The result is returned to the user in the web interface. Single user containerization also prevents code interferences between concurrent users.
+We are using Docker for containerization. We will host the React app and RAG-LLM pipeline in a container, which will serve the front-end of web application and its interactions with the model. When the user interacts with the model, an API call is made to the vectorstore (Milvus/Weaviate) and OpenAI, and the result is provided to the user.
 
-For running the smart contract itself, the console responses will be returned for the user to see, such as errors. For vulnerability testing, CoinFabrik Scout offers JSON format for their output, which we will retrieve, parse, and return to the user.
+We will have a second Docker container for our Rust environment, where users of the React application can send their code to be compiled and run through CoinFabrik Scout. The result is returned to the React application to the user.
+
+Since we anticipate multiple concurrent users, we need a way to handle multiple requests to compile and check code to our second Docker container. We will use a RabbitMQ queue within the second Docker container to keep order of requests as they come in. The queue will keep track of the order of requests, and which user to return them to.
+
+For scaling, if the demand is high enough that our second container cannot handle the requests in a timely manner, we can scale horizontally. More Rust environment Docker containers can be added, and a load balancer added to distribute requests between them.
 
 #### Stack
 
@@ -53,9 +57,10 @@ We will be using the following technologies:
 - CoinFabrik Scout for Vulnerabiity Detection
 - Monaco Editor for In-Browser IDE
 - React.js for Front-End Application
+- RabbitMQ for Queue
 - Docker for Containerization
 - Rust for Development Environment within the Container
-- Vercel for Hosting
+- Heroku for Hosting
 
 #### ink! Smart Contract Vectorstore:
 
@@ -229,9 +234,10 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0d.** | Docker | `Dockerfile` updated with any changes in deployment. |
 |       1. | RAG Integration | Integration of the new dataset and vector database with the prototype RAG system for improved retrieval. Modifiable parameters for queries, including temperature, top-k documents in retrieval, and token context size. |
 |       2. | Query Handling | Updated query parsing and processing using new embedding model to improve smart contract code retrieval. Prompt rewriting of plaintext in user request to improve semantic search. |
-|       3. | System Testing | Testing of RAG retrieval functionality with the updated dataset. Testing of output quality of RAG system. |
+|       3. | Testing Dataset | Create a dataset of prompts to test the output quality of RAG system, and if it generates vulnerabilities. |
+|       4. | System Testing | Testing of RAG retrieval functionality with the testing dataset. Evalaute performance and efficacy for vulnerability-free code. |
 
-### Milestone 4 — UI/UX Development and Front-End Implementation
+### Milestone 4 — UI/UX, Front-End, Cloud Architecture
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
@@ -242,10 +248,12 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0a.** | License | Open-sourced under Apache 2.0. |
 |  **0b.** | Documentation | Code comments. UI/UX design documentation and front-end codebase documentation, including setup and deployment procedures. |
 |  **0c.** | Testing Guide | Guide on how to run tests on the `React.js` application. |
-|  **0d.** | Docker | Updated `Dockerfile` to include the `React.js` application and associated dependencies. |
+|  **0d.** | Docker 1 | Updated `Dockerfile` to serve as front-end, with the `React.js` application, RAG-LLM and associated dependencies. |
+|  **0d.** | Docker 2 | Created `Dockerfile` for backend application with Rust environment and CoinFabrik Scout. |
 |       1. | UI/UX Design | Design and development of user interface for the RAG system. |
 |       2. | React.js Application | Development of `React.js` front-end for the RAG system. Code implementation of the UI/UX design. |
 |       3. | Front-End Testing | Comprehensive testing to ensure the front-end application is responsive and stable. |
+|       4. | Containerization | Creation of second Docker container for Rust environment in production. Creation of RabbitMQ queueing system for requests. |
 
 ### Milestone 5 — Additional Features
 
@@ -258,13 +266,13 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0a.** | License | Open-sourced under Apache 2.0. |
 |  **0b.** | Documentation | Code comments. Documentation of additional features, including use cases and integration into the existing system. |
 |  **0c.** | Testing Guide | Updated testing guide that includes all features of the application. |
-|  **0d.** | Docker | Finalized `Dockerfile` for the complete system with all features included. |
+|  **0d.** | Docker | Finalized `Dockerfile`s for the complete system with all features included. |
 |  **0e.** | Article | We will publish an **article** that showcases the development process, application use cases, application demo, and usage of the grant throughout the project cycle. |
 |       1. | UI/UX Updates | Updated `React.js` components to serve additional features in the application. |
 |       2. | Templates | Development of a template system for users to easily bootstrap building smart contracts. User can pick from a list of common use cases, and be provided a template smart contract to start with. |
 |       3. | Smart Contract Analysis | A feature to break down smart contracts into chunks, scanning each for functionality and errors, and suggest improvements or fixes. Contract will be broken down into parts, such as its functions, and each will be analyzed by the LLM. |
 |       4. | Final Application Testing | System-wide testing of all features, ensuring full integration and operational stability. |
-
+|       5. | Deployment | Cloud deployment of system, with front-end and back-end containers. Testing to ensure users can access it through a public URL. Requests between containers tested. |
 
 ## Future Plans
 
