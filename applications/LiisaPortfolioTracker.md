@@ -1,7 +1,7 @@
 # Polkadot NFT Portfolio Tracker by Liisa - MVP 
 
 - **Team Name:** Liisa
-- **Payment Address:** 0x096a685Bfd75c3998CFC4c70177e17ee6b582B0A
+- **Payment Address:** Fiat 04.01.2024, 11:55 PM GMT
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
