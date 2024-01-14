@@ -1,7 +1,7 @@
 # Futur & Fusion Protocols
 
 - **Team Name:** Relai Network
-- **Payment Address:** 0xfA34F566bDDcA92Dc656310F08AC5aE64fC46456 (USDT)
+- **Payment Address:** 15ZybdjAomB2gYWzY9mC1iPCK72zKCuJ14jZmjQ8FsFXphmV (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -81,7 +81,7 @@ The target audience for the Relai Network is diverse and includes:
 - Mobile App/Games Users
 - Users of Mobile Apps and Dapps
 
-Here is an architectural diagram
+Here is a diagram of the project
 
 ![Figure 1-1](https://raw.githubusercontent.com/RELAI-Network/docs/main/archi/architechture.jpg?raw=true)
 
@@ -126,18 +126,12 @@ The project is splitted into phases:
 2. Phase 2: Building
 3. Phase 3: Expansion
 
-This current application focuses on putting in place the foundational components for FuturStore and the Fusion protocol and the integration the components wich are: 
+This current application focuses on putting in place the Futur Protocol which comprised of: 
 
 - **Futur Protocol Runtime Modules**
 - **Futur Console**
 - **FuturStore Mobile app**
-
-- **Fusion Protocol Runtime Modules**
-- **Fusion Console**
-- **Fusion Marketplace**
-
 - **SAST/DAST Module**
-
 - **Storage Layer**
 
 
@@ -145,15 +139,15 @@ This current application focuses on putting in place the foundational components
 
 ### Overview
 
-- **Total Estimated Duration:** 3 Months
+- **Total Estimated Duration:** 1,5 Months
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 10,000 USD
+- **Total Costs:** 7,000 USD
 
 ### Milestone 1 — Futur Protocol
 
 - **Estimated duration:** 1,5 month
 - **FTE:**  1
-- **Costs:** 6,000 USD
+- **Costs:** 7,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -179,38 +173,11 @@ This current application focuses on putting in place the foundational components
 | 4 | Futur Console | Web portal for app developers for app submission and management (similar to google play console); **Angular or Flutter Web** |
 
 
-### Milestone 2 — Fusion Protocol
-
-- **Estimated duration:** 1,5 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a **gituhb repo readmes** that explains how to deploy mobile app on the FuturStore. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
-| 0d. | Articles |Articles explaining the Fusion Protocol stack will be published. There will guides for Future OEM partners. |
-| 1. | FusionProtocol Runtime modules | Suite of pallets that will contain the logic of the FusionProtocol. Assets Pallet or ORML Modules (NFT) might be integrated |
-| 1.a | OEM Registry Pallet | Handle Interaction By and With OEM Partners from the protocol   |
-|  | - |  RegisterOEM : extrinsic |
-|  | - |  ValidateOEM : extrinsic |
-|  | - |  UnregisterOEM : extrinsic |
-|  | - |  SubmitPhoneListing : extrinsic (Validated asynchronously first) |
-| 1.b | Fusion Marketplace Pallet |   Handle interactions with the Marketplace.  phone model, target number, device price, bootstrap threshold (threshold required to start production,... Prices at this stage set on trotocol token.|
-|  | - |  CreateCampain: extrinsics -  Creating Bootstrapping Campain (upon successfully submitted phone with SubmitPhoneListing). If production started nft will be minted for early backers. |
-|  | - |  BuyFromCampain  : extrinsic - Users can Buy devices from a created campain that reached a bootstrap threshold |
-|  | - |  DirectSell : extrinsic - OEMs can also directly start selling (upon successfully submitted phone with SubmitPhoneListing) on marketplace without initiating a Bootstraping Campaign |
-|  | - |  DirectBuy : extrinsic |
-| 2 | Fusion Console | Web Portal for OEM partners for interacting with the protocol; **Angular or Flutter Web**|
-| 3 | Fusion Marketplace | Web Marketplace for users to participate to bootstraping campains and also buy phones onchain; **Angular or Flutter Web** |
-
 
 
 ## Future Plans
 
-Upon achieving the aforementioned milestones, the phase 1 Foundations serves as the bedrock for initiating governance features, fortifying the codebase,  expanding the community. This will also set the stage for a range of advancements and expansions that are on RELAI Network roadmap such as: 
+The next step will be the Fusion protocol and after achieving those 2 milestones representing the  foundations and  serving as the bedrock for initiating governance features, fortifying the codebase,  expanding the community. This will also set the stage for a range of advancements and expansions that are on RELAI Network roadmap such as: 
 
 * Decentralized Computing and Storage:
 * White-Labeling and Private Enterprise Stores:
