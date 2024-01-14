@@ -69,6 +69,33 @@ Sources
 - https://backlinko.com/facebook-users
 - https://www.demandsage.com/twitch-users/#:~:text=As%%20the%20latest%20data,7.12%20million%20In%20July%202023.
 
+#### Similar Projects
+
+As highlighted by @keeganquigley, there are some overlaps between DOT Login and the [DAuth](https://grants.web3.foundation/applications/dauth_network#decentralized-oauth) project.
+
+DAuth utilizes Trusted Execution Environments (TEEs) to enhance privacy during the authentication process. In contrast, DOT Login employs a combination of zk-SNARKs, ephemeral keypairs, and a nonce for OAuth2 authentication to ensure user privacy. This approach avoids the reliance on hardware, potentially reducing risks associated with hardware vulnerabilities.
+
+Our research into DAuth's integration with Polkadot technology (such as Polkadot SDK or ink! smart contracts) yielded limited results:
+
+- DAuth appears to be developed on [Alchemy](https://www.alchemy.com/dapps/dauth-network), rather than the Polkadot SDK or ink!.
+- Their "start building" CTA leads to the [dauth-provider](https://github.com/DAuth-Network/dauth/tree/main/packages/dauth-provider) package, which is a UI library for facilitating a GitHub login. Its capability to interact with Polkadot Tech remains unclear.
+- We encountered difficulties in comprehending their detailed architecture and components, including any use of Polkadot SDK or ink! smart contracts, due to:
+  - Inactive links in their grant application (e.g., [demo](http://demo.dauth.network/auth), [project overview PPT](https://grants.web3.foundation/applications/.com/view/fem479hkgc9hc5ck)).
+  - An empty [README](https://github.com/DAuth-Network/dauth/blob/535f82b7145dbf4ab8e7307559644f8aa9bd4a32/README.md) in their dauth provider repo.
+  - Solidity smart contracts found [here](https://github.com/DAuth-Network/Contracts/tree/55deb4c82328a406e4b974922c01a14f698e2a9c/DAuth-Solidity/contracts), suggesting an EVM-focus.
+  - Challenges in running their demo app due to dependency issues.
+- Their Twitter activity suggests a build on EVM rather than the Polkadot SDK:
+  ![DAuth Twitter Activity](https://github.com/w3f/Grants-Program/assets/6782362/b258f9a8-ece7-4ff5-96be-967a55031ca6)
+
+In summary, key differences between DOT Login and DAuth include:
+
+- **Data Storage**: While DAuth appears to store user data (mail ↔ address mapping) within a TEE, DOT Login does not store any Personally Identifiable Information (PID) off-chain or on-chain.
+- **Integration with Polkadot Technology**: The integration of DAuth with Polkadot Tech remains unclear, whereas DOT Login is specifically designed to provide OAuth2-derived accounts to parachain users, using reusable Substrate pallets without necessitating changes to core technologies like `pallet_balances`.
+- **Architectural Simplicity**: We believe that the DOT Login architecture is simpler and more streamlined.
+- **Focus Areas**: DAuth also focuses on email messaging, a feature not present in DOT Login.
+
+Please note that above comparison is based on our current understanding and research of the DAuth project. We aimed for an objective analysis and acknowledge that there may be aspects of DAuth not fully covered. Our intent is to provide information for clarity and not to discredit or critique DAuth.
+
 ## Team :busts_in_silhouette:
 
 ### Team members
@@ -116,7 +143,7 @@ Sources
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 2,17 FTE
-- **Total Costs:** 44200 USD
+- **Total Costs:** 34000 USD
 
 ### Milestone 1 — Wallet Creation Flow
 - **Estimated Duration:** 1 month
@@ -136,7 +163,13 @@ Sources
 | 5. | Off-Chain worker | Off-chain worker that queries the JWK registry endpoints of OAuth providers continuously and integrates with `JWK Registry` pallet. |
 | 6. | OAuth Integrations | Integrate Google, Twitter, Facebook, and Microsoft OAuth providers with `JWK Registry` pallet. |
 
-### Milestone 2 — Transaction Creation Flow
+### Milestone 2 — Transaction Creation Flow + Wallet (Extension)
+
+- **Estimated Duration:** 2 month
+- **FTE:** 1.75
+- **Costs:** 13600 USD
+
+#### 2a - Transaction Creation Flow
 
 - **Estimated Duration:** 1 month
 - **FTE:** 2
@@ -153,13 +186,15 @@ Sources
 | 2. | Implement `execute_transfer` Extrinsic | Develop the `execute_transfer` extrinsic within the `zkEphemeralKeys`` pallet. It will  accept all necessary parameters for a transfer, including an ephemeral key signature. |
 | 3. | `zkEphemeralKeys`-internal Transfer Functionality | Develop an internal function within the `zkEphemeralKeys` pallet to handle the actual token transfer. This function will replicate the essential checks and logic of the balances pallet’s transfer mechanism and has to be updated, if the the balances pallet changes. While this dependency is not perfect, we think that's the best trade-off, because the alternative would be to change the balances pallet which is something we'd like to avoid. We might propose a change on the balances pallet at a later stage, to make this more flexible. Note that this deliverable will also include the handling and emitting of events to broadcast the success or failure of the transfer. |
 
-### Milestone 3 — Wallet
+#### 2b - Wallet (Extension)
 
-The goal of this milestone is to implement a web-based wallet that allows users to create addresses, receive and send transactions to other dot-login users as well as web3-native wallets in the ecosystem.
+The goal of this milestone is to implement a web-based wallet OR a wallet extension that allows users to create addresses, receive and send transactions to other dot-login users as well as web3-native wallets in the ecosystem.
+
+We've decided to cover this milestone by ourselves.
 
 - **Estimated Duration:** 1 month
 - **FTE:** 1.5
-- **Costs:** 10200 USD
+- **Costs:** 0 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -169,7 +204,7 @@ The goal of this milestone is to implement a web-based wallet that allows users 
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | Article that covers the implementation of the wallet, how to use it, how this development is significant for the ecosystem and mainstream adoption as well as our long-term vision for this project. |
 | 1. | dot login TypeScript library | Implement a reactive, TypeScript-based library that encapsulates the functionality specific to dot login, such as creating ephemeral keypairs, sending any supported transactions to extrinsics implemented in M1 & M2 and generating zk-SNARKs. |
-| 2. | web-based ui | Implement a web-based UI that supports the following basic wallet actions: derive and display addresses, use QR codes to request payments, show balances and past transactions (cached in web storage for the first stage), send transactions, receive transactions, in-browser notifications for transactions. |
+| 2. | web-based ui OR wallet extension | Implement either our custom web-based UI or implement an integration with any of the existing wallets, such as polkadot.js, Talisman, Subwallet or Metamask (using the Polkadot SNAP plugin). It will support the following basic wallet actions: derive and display addresses, use QR codes to request payments, show balances and past transactions (might be cached in web storage for the first stage), send transactions, receive transactions, in-browser notifications for transactions. |
 
 ## Future Plans
 
