@@ -157,7 +157,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide the **tutorial** to that explains how a user can create a network configuration and start the network |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Monitoring for k8 based deployment | We will add Monitoring support to kubernetes based deployment |
+| 1. | Monitoring for k8 based deployment | We will add Monitoring support to kubernetes based deployment. Monitoring will include basic k8 cluster resources and Polkadot parachains, collators and relay-chains metrics visualization |
 | 2. | Zombienet global parameters support | Add All possible Global parameters in template creation corresponding to the supported Zombienet version [settings](https://paritytech.github.io/zombienet/network-definition-spec.html#settings) |
 | 3. | In App docs update | Update in app docs to reflect the features added in the current milestone |
 | 4. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
@@ -173,7 +173,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide the **tutorial** to that explains how a user can create a network configuration and start the network |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Zombienet config import & export | We will add Zombienet config import & export support of the template, for example config import as shown in the **Upload Config to template (Mock)** and **Config Download (Mock)**. The while uploading the config it will validate the config and prefill the template UI to perform further modification through UI on existing config. |
+| 1. | Zombienet config import & export | We will add Zombienet config import & export support of the template, for example config import as shown in the **Upload Config to template (Mock)** and **Config Download (Mock)**. While uploading the config application will validate the config format and prefill the template UI to perform further modification on existing config. `toml` and `json` formats will be supported for importing the config and `json` format will be supported for exporting the config. |
 | 2. | Zombienet Parachain and Relaychain node group config support | Add all possible Parachain (not collator & collator groups) and node group configs in template creation corresponding to the supported Zombienet version [Parachains](https://paritytech.github.io/zombienet/network-definition-spec.html#parachains) & [node_groups](https://paritytech.github.io/zombienet/network-definition-spec.html#relaychain) as shown in the **Node Groups (Mock)** |
 | 3. | In App docs update | Update in app docs to reflect the features added in the current milestone |
 | 4. | Update Zombienet version | Update supported Zombienet version to latest stable version at the time of release |
