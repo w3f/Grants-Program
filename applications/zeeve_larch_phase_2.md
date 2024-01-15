@@ -72,7 +72,7 @@ The proposed work will implement utility functions like import/export of configu
 ### Ecosystem Fit
 
 - Where and how does your project fit into the ecosystem?
-  - **Zeeve Larch** improves the Polkadot/Substrate based network testing done by Zombienet by providing GUI layer to the it.
+  - **Zeeve Larch** improves the Polkadot/Substrate-based network testing done by Zombienet by providing a GUI layer to it.
 - Target Audience
   - Parachain developers, Polkadot/Substrate based Network Deployment teams
 - **Zeeve Larch** resolves the need for GUI layer for Zombienet project.
