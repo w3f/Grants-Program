@@ -2,7 +2,7 @@
 
 - **Team Name:** DOT Login
 - **Payment Address:** FIAT (provided privately)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
