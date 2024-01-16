@@ -18,9 +18,9 @@ This grant is structured into three main parts: the wallet creation flow, the tr
 
 - **Wallet Creation Flow:** This process involves the user generating an ephemeral key pair through the wallet and authenticating with an OAuth2 provider (e.g. Gmail). The `zkEphemeralKeys` pallet then registers the public key, encapsulated with a zero-knowledge proof to ensure privacy. The wallet address is derived from this ephemeral public key, ensuring a secure link between the user's identity as authenticated by the OAuth2 provider and their on-chain presence.
 
-- **Transaction Sending Flow:** For transaction processing, the `zkEphemeralKeys` pallet again plays a pivotal role. It employs an internal mechanism to verify transaction signatures made with the ephemeral keys. Upon successful verification, it executes the transfer using a custom extrinsic that mimics the core functionality of the vanilla `pallet_balances`, ensuring that the core logic of existing Substrate modules remains untouched.
+- **Transaction Sending Flow (planned for M2/future grant):** For transaction processing, the `zkEphemeralKeys` pallet again plays a pivotal role. It employs an internal mechanism to verify transaction signatures made with the ephemeral keys. Upon successful verification, it executes the transfer using a custom extrinsic that mimics the core functionality of the vanilla `pallet_balances`, ensuring that the core logic of existing Substrate modules remains untouched.
 
-- **Wallet Development:** The user interface is built using ReactJS and the Polkadot.js/API or PAPI library, combined with RxJS for reactive programming. The UI will provide a seamless experience for creating wallets, viewing balances, and sending transactions. The design prioritizes ease of use to encourage adoption by users less familiar with blockchain technologies.
+- **Wallet Development (planned for M3/future grant):** The user interface is built using ReactJS and the Polkadot.js/API or PAPI library, combined with RxJS for reactive programming. The UI will provide a seamless experience for creating wallets, viewing balances, and sending transactions. The design prioritizes ease of use to encourage adoption by users less familiar with blockchain technologies.
 
 **Architectural Overview**
 
@@ -32,12 +32,14 @@ There are two key architectural diagrams that define the project's structure:
 
 ![zkMoku-wallet-creation drawio](https://github.com/singkeo/Grants-Program/assets/6782362/770f5492-6e47-4629-82e9-51ab78f1d5ff)
 
-**Transaction Sending Flow:** This flow details the steps from the user's initiation of a transaction to the verification of signatures and the execution of token transfers on-chain. It emphasizes the importance of the `zkEphemeralKeys` pallet in ensuring secure transactions without altering the core Balances pallet.
+**Transaction Sending Flow (out of scope for this grant):** This flow details the steps from the user's initiation of a transaction to the verification of signatures and the execution of token transfers on-chain. It emphasizes the importance of the `zkEphemeralKeys` pallet in ensuring secure transactions without altering the core Balances pallet.
 
 ![zkMoku-tx-creation drawio](https://github.com/singkeo/Grants-Program/assets/6782362/3f8dd94c-8d16-482a-82ce-5b343e8f35aa)
 
-- **Technology Stack:**
+- **Technology Stack (current grant):**
     - Rust for Substrate pallets,
+
+- **Additional Tech used (planned for M2 & M3/future grant):**
     - TypeScript/ReactJS for the wallet logic,
     - A Material Design lib for the wallet UI/UX,
     - OAuth2 integration libraries,
@@ -141,9 +143,9 @@ Please note that above comparison is based on our current understanding and rese
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):** 2,17 FTE
-- **Total Costs:** 34000 USD
+- **Total Estimated Duration:** 1 months
+- **Full-Time Equivalent (FTE):** 3 FTE
+- **Total Costs:** 20400 USD
 
 ### Milestone 1 — Wallet Creation Flow
 - **Estimated Duration:** 1 month
@@ -163,17 +165,16 @@ Please note that above comparison is based on our current understanding and rese
 | 5. | Off-Chain worker | Off-chain worker that queries the JWK registry endpoints of OAuth providers continuously and integrates with `JWK Registry` pallet. |
 | 6. | OAuth Integrations | Integrate Google, Twitter, Facebook, and Microsoft OAuth providers with `JWK Registry` pallet. |
 
-### Milestone 2 — Transaction Creation Flow + Wallet (Extension)
+## Future Plans
 
-- **Estimated Duration:** 2 month
-- **FTE:** 1.75
-- **Costs:** 13600 USD
+As [suggested](https://github.com/w3f/Grants-Program/pull/2175#pullrequestreview-1822032181) by @semuelle, we're planning to apply to the decentralized futures program, once Milestone 1 has been delivered successfully.
 
-#### 2a - Transaction Creation Flow
+The planned milestones include:
+
+#### Milestone 2 - Transaction Creation Flow
 
 - **Estimated Duration:** 1 month
 - **FTE:** 2
-- **Costs:** 13600 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -186,7 +187,7 @@ Please note that above comparison is based on our current understanding and rese
 | 2. | Implement `execute_transfer` Extrinsic | Develop the `execute_transfer` extrinsic within the `zkEphemeralKeys`` pallet. It will  accept all necessary parameters for a transfer, including an ephemeral key signature. |
 | 3. | `zkEphemeralKeys`-internal Transfer Functionality | Develop an internal function within the `zkEphemeralKeys` pallet to handle the actual token transfer. This function will replicate the essential checks and logic of the balances pallet’s transfer mechanism and has to be updated, if the the balances pallet changes. While this dependency is not perfect, we think that's the best trade-off, because the alternative would be to change the balances pallet which is something we'd like to avoid. We might propose a change on the balances pallet at a later stage, to make this more flexible. Note that this deliverable will also include the handling and emitting of events to broadcast the success or failure of the transfer. |
 
-#### 2b - Wallet (Extension)
+#### 3 - Wallet (Extension)
 
 The goal of this milestone is to implement a web-based wallet OR a wallet extension that allows users to create addresses, receive and send transactions to other dot-login users as well as web3-native wallets in the ecosystem.
 
@@ -194,7 +195,6 @@ We've decided to cover this milestone by ourselves.
 
 - **Estimated Duration:** 1 month
 - **FTE:** 1.5
-- **Costs:** 0 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -205,8 +205,6 @@ We've decided to cover this milestone by ourselves.
 | 0e. | Article | Article that covers the implementation of the wallet, how to use it, how this development is significant for the ecosystem and mainstream adoption as well as our long-term vision for this project. |
 | 1. | dot login TypeScript library | Implement a reactive, TypeScript-based library that encapsulates the functionality specific to dot login, such as creating ephemeral keypairs, sending any supported transactions to extrinsics implemented in M1 & M2 and generating zk-SNARKs. |
 | 2. | web-based ui OR wallet extension | Implement either our custom web-based UI or implement an integration with any of the existing wallets, such as polkadot.js, Talisman, Subwallet or Metamask (using the Polkadot SNAP plugin). It will support the following basic wallet actions: derive and display addresses, use QR codes to request payments, show balances and past transactions (might be cached in web storage for the first stage), send transactions, receive transactions, in-browser notifications for transactions. |
-
-## Future Plans
 
 With the foundational technology established through this grant, DOT Login will forge a path for a seamless Web2 to Web3 transition. Our OAuth2-compatible payment framework consisting of Substrate pallets and a web-based wallet will be designed with a deep understanding of user experience, serving as an inviting gateway into blockchain ecosystems.
 
