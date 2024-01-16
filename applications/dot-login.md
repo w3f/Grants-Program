@@ -50,7 +50,7 @@ There are two key architectural diagrams that define the project's structure:
 
 Below is a comparative overview of our immediate project goals for the scope of this grant versus our longer term macro vision:
 
-| Aspect             | This Grant                                                                 | Macro Vision                                                                      |
+| Aspect             | This Grant + M2 + M3                                                         | Macro Vision                                                                      |
 |--------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | **Target Audience** | New and existing Web2 users transitioning to Web3, developers looking for user-friendly authentication methods. | - Other parachains that are interested to onboard Web2 users will be able to connect to our parachain through XCM. <br /> - Global user base with a focus on financial inclusion, merchants, and consumers seeking low-cost, efficient payment solutions. Eventually allow merchands and retail users to use the currency of their choice for payments and savings. This can be useful especially for countries that experience currency crisises or go to a time of high inflation. |
 | **Needs Met**       | Simplifying the transition from Web2 to Web3 and enhancing user experience in the Polkadot/Kusama ecosystem. | Providing a stable, reliable, and accessible payment network using blockchain technology to facilitate financial transactions worldwide with a focus on stablecoins. The goal is to deliver an user experience that doesn't require users to know how blockchain works.  |
@@ -187,7 +187,7 @@ The planned milestones include:
 | 2. | Implement `execute_transfer` Extrinsic | Develop the `execute_transfer` extrinsic within the `zkEphemeralKeys`` pallet. It will  accept all necessary parameters for a transfer, including an ephemeral key signature. |
 | 3. | `zkEphemeralKeys`-internal Transfer Functionality | Develop an internal function within the `zkEphemeralKeys` pallet to handle the actual token transfer. This function will replicate the essential checks and logic of the balances pallet’s transfer mechanism and has to be updated, if the the balances pallet changes. While this dependency is not perfect, we think that's the best trade-off, because the alternative would be to change the balances pallet which is something we'd like to avoid. We might propose a change on the balances pallet at a later stage, to make this more flexible. Note that this deliverable will also include the handling and emitting of events to broadcast the success or failure of the transfer. |
 
-#### 3 - Wallet (Extension)
+#### Milestone 3 - Wallet (Extension)
 
 The goal of this milestone is to implement a web-based wallet OR a wallet extension that allows users to create addresses, receive and send transactions to other dot-login users as well as web3-native wallets in the ecosystem.
 
@@ -206,9 +206,11 @@ We've decided to cover this milestone by ourselves.
 | 1. | dot login TypeScript library | Implement a reactive, TypeScript-based library that encapsulates the functionality specific to dot login, such as creating ephemeral keypairs, sending any supported transactions to extrinsics implemented in M1 & M2 and generating zk-SNARKs. |
 | 2. | web-based ui OR wallet extension | Implement either our custom web-based UI or implement an integration with any of the existing wallets, such as polkadot.js, Talisman, Subwallet or Metamask (using the Polkadot SNAP plugin). It will support the following basic wallet actions: derive and display addresses, use QR codes to request payments, show balances and past transactions (might be cached in web storage for the first stage), send transactions, receive transactions, in-browser notifications for transactions. |
 
-With the foundational technology established through this grant, DOT Login will forge a path for a seamless Web2 to Web3 transition. Our OAuth2-compatible payment framework consisting of Substrate pallets and a web-based wallet will be designed with a deep understanding of user experience, serving as an inviting gateway into blockchain ecosystems.
+#### Milestone 4+
 
-Our immediate goal is to integrate everyday Web2 users into the Dotsama ecosystem through a familiar and trusted authentication process, enabling a low-friction entry point into decentralized technologies. This includes assuring compatibility between the DOT Login parachain with other parachains and especially the Asset Hub common good chain through XCM.
+With the foundational technology established through M1, M2 and M3, DOT Login will forge a path for a seamless Web2 to Web3 transition. Our OAuth2-compatible payment framework consisting of Substrate pallets and a web-based wallet will be designed with a deep understanding of user experience, serving as an inviting gateway into blockchain ecosystems.
+
+Our goal for M1-M3 is to integrate everyday Web2 users into the Dotsama ecosystem through a familiar and trusted authentication process, enabling a low-friction entry point into decentralized technologies. This includes assuring compatibility between the DOT Login parachain with other parachains and especially the Asset Hub common good chain through XCM.
 
 In the longer term, we intend to build a payment framework that will integrate with DOT Login, serving as the technical foundation for a global payment network that prioritizes financial inclusion. We aim to empower merchants and consumers worldwide with a system that supports transactions using stablecoins, in particular USDT and USDC that are already present on Polkadot's Asset Hub, without the need for traditional financial intermediaries.
 
