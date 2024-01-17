@@ -105,13 +105,13 @@ We are currently in research phase;  Development / coding has not started on thi
 
 ### Overview
 
-- **Total Estimated Duration:** 8 months (from start of implementation)
+- **Total Estimated Duration:** 8 months (start: June 2024)
 - **Full-Time Equivalent (FTE):**  0.25
 - **Total Costs:** 26,000 USD
 
 ### Milestone 1 — ETL of Relay Chain + Google BigQuery Integration
 
-- **Estimated duration:** 3-4 months (from start of implementation)
+- **Estimated duration:** 3-4 months (start: June 2024)
 - **FTE:**  1
 - **Costs:** 8,000 USD
 
@@ -132,7 +132,7 @@ We are currently in research phase;  Development / coding has not started on thi
 
 ### Milestone 2 — ETLs for Selected Parachains, Extensions
 
-- **Estimated Duration:** 3-4 months
+- **Estimated Duration:** 3-4 months (start: Oct 2024)
 - **FTE:**  1
 - **Costs:** 18,000 USD
 
