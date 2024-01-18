@@ -50,7 +50,7 @@ Besides, **there is a clear difference between an application being accepted and
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
-| [MLabs](https://mlabs.city/)                       | [SubSMT](./TuxedoDapp.md)                     | [GitHub](https://github.com/mlabs-haskell)                 | ☐          |        ☐       |      ☐      |
+| [MLabs](https://mlabs.city/)                       | [TuxedoDapp](./TuxedoDapp.md)                     | [GitHub](https://github.com/mlabs-haskell)                 | ☐          |        ☐       |      ☐      |
 ## 2023
 
 ### 🏄 Wave 20 - Q4 2023
