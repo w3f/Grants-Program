@@ -41,6 +41,14 @@ Besides, **there is a clear difference between an application being accepted and
   - [🏄 Wave 2 - Q2 2019](#-wave-2---q2-2019)
   - [🏄 Wave 1 - Q1 2019](#-wave-1---q1-2019)
 
+
+## 2024
+
+### 🏄 Wave 21 - Q1 2021
+
+| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
+| [MLabs](https://mlabs.city/)                       | [SubSMT](./TuxedoDapp.md)                     | [GitHub](https://github.com/mlabs-haskell)                 | ☐          |        ☐       |      ☐      |
 ## 2023
 
 ### 🏄 Wave 20 - Q4 2023
