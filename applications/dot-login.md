@@ -145,12 +145,12 @@ Please note that above comparison is based on our current understanding and rese
 
 - **Total Estimated Duration:** 1 months
 - **Full-Time Equivalent (FTE):** 3 FTE
-- **Total Costs:** 20400 USD
+- **Total Costs:** 17000 USD (2.5 FTE covered)
 
 ### Milestone 1 — Wallet Creation Flow
 - **Estimated Duration:** 1 month
 - **FTE:** 3
-- **Costs:** 20400 USD
+- **Costs:** 17000 USD (2.5 FTE covered)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
