@@ -174,39 +174,23 @@ His expertise in Rust and functional programming, combined with a passion for wr
 
 ### Milestones
 
-#### Milestone 1 — Research, Design and MVP
-- Retroactive Milestone
-- Duration: 16 weeks
-- FTE: 0.1875
-- Total Costs: 7200 USD
+#### Milestone 1 — Disassembler GUI Core Development
 
-|  Number | Deliverable            | Specification                                                                                                  |
-|--------:|------------------------|---------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                | The project will be dual-licensed under both Apache 2.0 and MIT to ensure broad compatibility with the open-source community. |
-| 0b.      | Research    | Conduct research on the koute/polkavm library to determine its applicability in developing the graphical interface for our disassembler. Select technology stack accordingly. |
-| 0c.      | Write a Blog Post      | Compose [a blog post](https://kusamaxi.com/post/polkavm-runs-doom) that provides an overview of PolkaVM, its objectives, and benchmarks. |
-| 0d.      | Design UI structure | Research and design the UI structure for the disassembler. |
-| 0e.      | Design Backend structure | Research and design the backend structure for the disassembler run on browser utilizing client-side API's like File API, IndexedDB and Web Workers. |
-| 0f.      | Build a MVP  | Construct a Minimum Viable Product (MVP) for the disassembler GUI, featuring file upload capabilities, memory dump (offset, hex, ascii), and a graphical representation of disassembled instructions.  [@polka.run](https://polka.run/disassembler) |
-
-#### Milestone 2 — Disassembler GUI Core Development
-
-- **Estimated Duration:** 8 weeks
+- **Estimated Duration:** 7.5 weeks
 - **FTE:** 1
-- **Costs:** $19,200 USD
+- **Costs:** $18,000 USD
 
 |  Number | Deliverable | Specification |
 |--------:|-------------|---------------|
 | **0a.** | License | Dual-licensed under Apache 2.0 and MIT for maximum compatibility with the open-source ecosystem. |
 | **0b.** | Documentation | Comprehensive documentation including development setup, architecture overview, and user guide. Hosted on GitHub and project website. |
 | **0c.** | Testing Framework | Implementation of a robust testing framework covering unit tests for all major components and end-to-end integration tests. |
-| **0d.** | Automated Deployment | Setup of automated deployment for seamless updates and releases, including CI/CD pipelines. |
-| **0e.** | Core Disassembler Engine | Development of a core disassembler engine for .polkavm files, with capabilities to handle files up to 4MB. Integration of web storage for session persistence and efficient data paging for optimized performance. |
-| **0f.** | User Interface Implementation | Creation of a user-friendly GUI with a functioning menu, lazy-loaded scrolling for memory and disassembly data, and interactive data linkage. Emphasis on responsive design for desktop users. |
-| **0g.** | Client-Side Processing | Implementation of client-side processing with WebAssembly and HTML5's File API for secure file handling. Use of IndexedDB for local storage and data retrieval, enhancing privacy and security. |
-| **0h.** | Interactive Master Scroll UI | Development of an interactive master scroll UI to enable users to navigate and jump to specific data points within a 1MB blob. Implementation of `OffsetScrollState` for synchronized data loading across multiple views. |
-| **0i.** | Data Management and Optimization | Setup of efficient IndexedDB data management strategies. Implementation of chunk-based processing with Web Workers and optimization for smooth, responsive data loading and rendering. |
-| **0j.** | Maintenance Plan | Development of a maintenance plan detailing regular updates, security patches, and support strategies. Includes workflows for building and releasing code. |
+| **0d.** | Core Disassembler Engine | Development of a core disassembler engine for .polkavm files, with capabilities to handle files up to 4MB. Integration of web storage for session persistence and efficient data paging for optimized performance. |
+| **0e.** | User Interface Implementation | Creation of a user-friendly GUI with a functioning menu, lazy-loaded scrolling for memory and disassembly data, and interactive data linkage. Emphasis on responsive design for desktop users. |
+| **0f.** | Client-Side Processing | Implementation of client-side processing with WebAssembly and HTML5's File API for secure file handling. Use of IndexedDB for local storage and data retrieval, enhancing privacy and security. |
+| **0g.** | Interactive Master Scroll UI | Development of an interactive master scroll UI to enable users to navigate and jump to specific data points within a 1MB blob. Implementation of `OffsetScrollState` for synchronized data loading across multiple views. |
+| **0h.** | Data Management and Optimization | Setup of efficient IndexedDB data management strategies. Implementation of chunk-based processing with Web Workers and optimization for smooth, responsive data loading and rendering. |
+| **0i.** | Maintenance Plan | Development of a maintenance plan detailing regular updates, security patches, and support strategies. |
 
 ## Future Plans
 
