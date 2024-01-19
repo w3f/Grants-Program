@@ -1,7 +1,7 @@
 # Lastic - Grant 3 - Indexing Coretime Chain with Subsquid and Graph Implementation
 
 - **Team Name:** Lastic
-- **Payment Address:** bc1q0d6pkmsvncshyeqvzzlcfjc7lkf4fuku7nsen7 (BTC)
+- **Payment Address:** 16Jbt5zru6XdUx1jYRV8AZtGk76ujtUNdd1UVWVVkVvGZ31L (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
