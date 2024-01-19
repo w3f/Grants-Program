@@ -1,7 +1,8 @@
 # polka.run - PolkaVM Disassembler
 
-* **Proposers:** [Rotko Networks](https://rotko.net)
-* **Payment Address:** 1Qrotkokp6taAeLThuwgzR7Mu3YQonZohwrzixwGnrD1QDT
+- **Team Name:** [Rotko Networks](https://rotko.net)
+- **Payment Address:** 1Qrotkokp6taAeLThuwgzR7Mu3YQonZohwrzixwGnrD1QDT (USDC on Asset Hub)
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview
 
@@ -54,15 +55,61 @@ files into human-readable formats.
   - [web_sys](https://rustwasm.github.io/wasm-bindgen/api/web_sys/) - wasm bindings for browser API's
   - [rexie](https://) - IndexedDB wrapper
 
-### Development Plan
+### Ecosystem Fit
 
-#### [x] Phase 1: Research and Design
+PolkaVM, with its deterministic execution, stellar performance, and robust security, has emerged
+as a strong contender to WASM in the virtual machine space, particularly for smart contracts and
+extending to broader applications such as parachain verified functions.  
+
+Our focus is on developing tools that not only enhance the learning experience but also lower the
+entry barrier for new developers, enabling them to efficiently create both host and guest functions
+within the PolkaVM ecosystem.  
+
+
+## Team :busts_in_silhouette:
+
+### Team Members
+
+- [Tommi](https://github.com/hitchhooker): UI Developer
+- [Dan](https://github.com/d-r): Backend Developer
+
+### Contact
+
+- **Contact Name:** Tommi Niemi
+- **Contact Email:** hq@rotko.net
+- **Website:** https://rotko.net
+
+### Legal Structure
+
+- **Registered Address:** Akadeemia tee 21-4, Tallinn, 12618 Estonia
+- **Registered Legal Entity:** Rotko Networks OÜ (16740319)
+
+### Team's Experience
+
+Team is spearheaded by seasoned professionals, each bringing a wealth of knowledge and experience to the table.  
+
+Tommi, ecosystem validator for around 3 years and IBP infrabuilder for South East Asia at [Rotko Networks](https://rotko.net/docs/introduction.html), is a full-stack developer. Maintains open Proxmox Ansible rolebooks for running blockchains([Unlabored](https://github.com/rotkonetworks/unlabored)).
+
+Dan is a seasoned veteran in the field of programming, boasting over 20 years of experience.
+He began his journey in the 90s programming with C, drawing inspiration from the music demoscene.
+His expertise in Rust and functional programming, combined with a passion for writing clear and efficient code.  
+
+### Team Code Repos
+
+- [polka.run master](https://github.com/rotkonetworks/polka.run)
+- [polka.run dev(Milestone II worked here)](https://github.com/rotkonetworks/polka.run/compare/master...dev)
+- [Unlabored - Proxmox Ansible infrastructure for blockchains](https://github.com/rotkonetworks/unlabored)
+
+
+## Development Status :open_book:
+
+### [x] Phase 1: Research and Design
 
 - **Research on PolkaVM Bytecode:** Conduct an in-depth study of PolkaVM bytecode specifications to understand the technical requirements.
 - **Tech Stack Selection:** Choose the appropriate technology stack based on research findings and project needs.
 - **GUI Design:** Design a user-friendly and functional Graphical User Interface (GUI), drawing inspiration from PE-bear’s structure to enhance usability.
 
-#### [x] Phase 2: Development of prototype
+### [x] Phase 2: Development of prototype
 
 - **Prototype Development:** Build a prototype to test the core functionalities including:
    - Integration of the upstream PolkaVM to parse for assembly instructions.
@@ -70,7 +117,7 @@ files into human-readable formats.
    - Implementation of UI to show memorydump in offset, HEX and ASCII. 
    - Development of a graphical representation of disassembled instructions with offset and HEX.
 
-#### Phase 3: Backend Development (Client-Side Data Management and Processing)
+### Phase 3: Backend Development (Client-Side Data Management and Processing)
 
 1. **Setup and Dependencies:**
    - Integrate Rexie for efficient IndexedDB interactions, setting up a robust
@@ -88,7 +135,7 @@ files into human-readable formats.
    - Dynamically determine segment sizes for optimized processing and store processed data
      in IndexedDB for quick retrieval.
 
-#### Phase 4: Frontend Development (User Interface and Interaction)
+### Phase 4: Frontend Development (User Interface and Interaction)
 
 In Phase 4, we're focusing on advancing the user interface and interaction,
 utilizing Rust and Leptos framework, and leveraging leptos-use utilities for
@@ -119,58 +166,13 @@ efficient data handling:
      in offset calculations and data loading responsiveness.
    - Test across various scenarios and data volumes for maximum reliability and accuracy.
 
-### Ecosystem Fit
-
-PolkaVM, with its deterministic execution, stellar performance, and robust security, has emerged
-as a strong contender to WASM in the virtual machine space, particularly for smart contracts and
-extending to broader applications such as parachain verified functions.  
-
-Our focus is on developing tools that not only enhance the learning experience but also lower the
-entry barrier for new developers, enabling them to efficiently create both host and guest functions
-within the PolkaVM ecosystem.  
-
-## Team
-
-### Team Members
-
-- [Tommi](https://github.com/hitchhooker): UI Developer
-- [Dan](https://github.com/d-r): Backend Developer
-
-
-### Contact
-
-- **Contact Name:** Tommi Niemi
-- **Contact Email:** hq@rotko.net
-- **Website:** https://rotko.net
-
-### Legal Structure
-
-- **Registered Address:** Akadeemia tee 21-4, Tallinn, 12618 Estonia
-- **Registered Legal Entity:** Rotko Networks OÜ (16740319)
-
-### Team's Experience
-
-Team is spearheaded by seasoned professionals, each bringing a wealth of knowledge and experience to the table.  
-
-Tommi, ecosystem validator for around 3 years and IBP infrabuilder for South East Asia at [Rotko Networks](https://rotko.net/docs/introduction.html), is a full-stack developer. Maintains open Proxmox Ansible rolebooks for running blockchains([Unlabored](https://github.com/rotkonetworks/unlabored)).
-
-Dan is a seasoned veteran in the field of programming, boasting over 20 years of experience.
-He began his journey in the 90s programming with C, drawing inspiration from the music demoscene.
-His expertise in Rust and functional programming, combined with a passion for writing clear and efficient code.  
-
-### Team Code Repos
-
-- [polka.run master](https://github.com/rotkonetworks/polka.run)
-- [polka.run dev(Milestone II worked here)](https://github.com/rotkonetworks/polka.run/compare/master...dev)
-- [Unlabored - Proxmox Ansible infrastructure for blockchains](https://github.com/rotkonetworks/unlabored)
-
-## Development Roadmap
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Duration:** 24 weeks
-- **FTE:** 0.458
-- **Total Costs:** 26400 USD
+- **Duration:** 7.5 weeks
+- **FTE:** 1
+- **Total Costs:** $18,000 USD
 
 ### Milestones
 
