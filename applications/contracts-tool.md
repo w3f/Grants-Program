@@ -135,13 +135,13 @@ Work has been started, smart bench has been updated with new libraries and is ab
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  0.5
+- **Total Estimated Duration:** 7 months
+- **Full-Time Equivalent (FTE):**  0.3
 - **Total Costs:** 15000 EUR
 
 ### Milestone 1 Smart-bench updated — Basic functionality
 
-- **Estimated duration:** 5 weeks
+- **Estimated duration:** 10 weeks
 - **FTE:**  0.5
 - **Costs:** 6500 EUR
 
@@ -158,8 +158,8 @@ Work has been started, smart bench has been updated with new libraries and is ab
 
 ### Milestone Smart-bench in CI/CD flow — Additional features
 
-- **Estimated Duration:** 7 weeks
-- **FTE:**  0,5
+- **Estimated Duration:** 23 weeks
+- **FTE:**  0,25
 - **Costs:** 8500 EUR
 
 | Number | Deliverable | Specification |
@@ -172,6 +172,7 @@ Work has been started, smart bench has been updated with new libraries and is ab
 | 1. | Github Actions benchmark jobs | Create workflow and implement a job to utilize Dockerized benchmarking for generating results and uploading them to repository. |
 | 2. | Results processing tools | Implementation of tooling to translate smart-bench output format to format of InfluxDB. |
 | 3. | Github Actions workflow | Create complete workflow running parallel jobs based on matrix strategy for all missing measurements. |
+| 4. | Updated smart-bench | We will update the tool to use new subxt crate |
 
 
 ...

@@ -1,7 +1,7 @@
 # Me Protocol
 
 - **Team Name:** My AI
-- **Payment Address:** Ethereum: 0xB35da2E7380a2580Acdc0ca5DEa9e2B152155e84 (USDC)
+- **Payment Address:** POLKADOT: 14K4XzpMBxGp8NiCKMWAwzjFMLcAKjakXooqHtVEC6WoaeTq (DOT)
 - **Level:** 2 
 
 
@@ -125,7 +125,7 @@ A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and o
    - Paul Oamen (CTO)
    - Pius Onobhayedo
    - John Chimaobi
-   - Samuel Anthony
+   - Ayomide Adebara
    - Boluwatife Oguntoyinbo
    - Nwele Uchenna
   
@@ -168,7 +168,7 @@ GitHub accounts of team members
 - https://github.com/codemobii
 - https://github.com/piosystems
 - https://github.com/Teepheh-Git
-- https://github.com/thellecodes
+- https://github.com/Adebara123
 
 ### Team LinkedIn Profiles (if available)
 
@@ -181,8 +181,8 @@ GitHub accounts of team members
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):**  2400 hrs
+- **Total Estimated Duration:** 5 months
+- **Full-Time Equivalent (FTE):**  2600 hrs
 - **Total Costs:** 29600 USD
 
 ### Milestone 1  — Implement the Core Parts of the Protocol
@@ -208,8 +208,8 @@ GitHub accounts of team members
 
 ### Milestone 2 — Adding the Protocol Peheripherals and Kickstarting the Frontend and Backend services
 
-- **Estimated Duration:** 1 month
-- **FTE:**  800hrs (5 persons)
+- **Estimated Duration:** 2 months
+- **FTE:**  900hrs (3 persons)
 - **Costs:** 8,550 USD
 
 | Number | Deliverable | Specification |
@@ -231,8 +231,8 @@ GitHub accounts of team members
 
 ### Milestone 3  — Rounding Up with the APP MVP and Integrating the Protocol with the APP
 
-- **Estimated Duration:** 1 month
-- **FTE:**  800hrs (5 persons)
+- **Estimated Duration:** 2 months
+- **FTE:**  900hrs (3 persons)
 - **Costs:** 8,550 USD
 
 | Number | Deliverable | Specification |

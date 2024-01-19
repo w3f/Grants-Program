@@ -14,7 +14,8 @@
 
 - [x] The [application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md) has been copied and aptly renamed (`project_name.md`).
 - [ ] I have read the [application guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/grant_guidelines_per_category.md).
-- [ ] Payment details have been provided (bank details via email _or_ Polkadot (USDC & USDT) or BTC address in the application).
+- [ ] Payment details have been provided (bank details via email _or_ Polkadot (USDC & USDT) address in the application).
+- [ ] I am aware that, in order to receive a grant, I (and the entity I represent) have to successfully complete a KYC/KYB check.
 - [ ] The software delivered for this grant will be released under an open-source license specified in the application.
 - [ ] The initial PR contains only one commit (squash and force-push if needed).
 - [ ] The grant will only be announced once the first milestone [has been accepted](https://github.com/w3f/Grant-Milestone-Delivery#process) (see the [announcement guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/announcement-guidelines.md)).

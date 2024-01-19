@@ -6,30 +6,6 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  discussion_private:
-    if: |
-        github.event.action == 'opened' &&
-        contains(github.event.pull_request.body, 'Project Abstract') && (
-          !contains(github.event.pull_request.body, '- [ ] I prefer the discussion') || 
-          (
-            contains(github.event.pull_request.body, '- [ ] I prefer the discussion') &&
-            !contains(github.event.pull_request.body, '@_______:matrix.org')
-          )
-        )
-    runs-on: ubuntu-latest
-    steps:
-      - name: Add 'discussion private' label if the application is private
-        uses: actions/github-script@v6
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            github.rest.issues.addLabels({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ["discussion private"]
-            })
-
   get_filename:
     if: contains(github.event.pull_request.body, 'Project Abstract')
     runs-on: ubuntu-latest
@@ -44,15 +20,29 @@ jobs:
           filter: 'applications/*.md'
           format: 'csv'
 
+  add_label:
+    needs: get_filename
+    if: needs.get_filename.outputs.filename
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: add admin-review label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: admin-review
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
   parse_document:
     needs: get_filename
     if: needs.get_filename.outputs.filename
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
     steps:
-
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Parse application file
         id: grant_parser
         uses: w3f/parse-grant-application-action@master

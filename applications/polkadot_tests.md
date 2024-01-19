@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-This grant application falls under this [RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/polkadot-protocol_conformance_tests.md) and it aims
+This grant application falls under this [RFP](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/polkadot-protocol_conformance_tests.md) and it aims
 to develop a comprehensive test suite dedicated to assessing the compliance of Host implementations against the official Polkadot Protocol Specification.
 
 ### Overview

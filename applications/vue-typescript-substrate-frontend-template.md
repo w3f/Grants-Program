@@ -3,6 +3,7 @@
 - **Team Name:** Wunderbar Network
 - **Payment Address:** 0x6F76BED39E9B9D57cAb4d9b81D65d2fa088cB68E (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1601#issuecomment-1758669016) 
 
 ## Project Overview :page_facing_up:
 

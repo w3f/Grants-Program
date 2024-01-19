@@ -105,7 +105,7 @@ Our current approach rests on off-chain data. Other community analytics dashboar
 
 Looking at on-chain community analysis, Chainverse is similar in terms of methodology (network analysis). However, they are currently solely focusing on on-chain data and are adopting a knowledge graph methodology.
 
-There is a [RFP for website and on-chain data analysis ](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/analysis-website-and-data-platform.md). The RFP is about creating an "easy-to-use front-end with sharable customized dashboards" and thus broader than our proposal. 
+There is a [RFP for website and on-chain data analysis ](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/analysis-website-and-data-platform.md). The RFP is about creating an "easy-to-use front-end with sharable customized dashboards" and thus broader than our proposal. 
 
 
 ## Team :busts_in_silhouette:

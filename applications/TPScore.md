@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-This application is in response to the RFP [Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/data_analysis_tools.md)
+This application is in response to the RFP [Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/data_analysis_tools.md)
 
 ### Overview
 
@@ -117,7 +117,7 @@ As of the time of this application, no tools exist for checking TPS across the P
 
 ## Development Status :open_book:
 
-This project is a response to RFP [Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/data_analysis_tools.md)
+This project is a response to RFP [Data Analysis Tools for Substrate-based Blockchains](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/data_analysis_tools.md)
 
 Up until now, our primary focus has revolved around two key objectives:
 1. Finding product-market fit
