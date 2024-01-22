@@ -14,6 +14,133 @@ MLabs has extensive experience in formal verification processes gained through m
 
 ## Project Details
 
+### **_The Model Checker TLC_**
+
+We can try to support the formal verification of GRANDPA Finality Gadget using TLA+ and TLC model checker. TLA+, short for Temporal Logic of Actions, is a powerful tool for designing, modelling, documenting, and verifying software systems, particularly those featuring concurrency and distributed nature. Here's a quick overview:
+
+### What it is
+
+**A formal specification language:** It allows you to precisely define the desired behaviour of a system in mathematical terms.
+
+**Exhaustively-testable pseudocode:** Think of it as drawing detailed blueprints for software, enabling thorough testing before a single line of code is written.
+Combines set theory and temporal logic: This unique combination lets you define both safety (preventing bad things) and liveness (ensuring good things happen eventually).
+
+### What it's used for
+
+**Designing reliable systems:** Minimize bugs and unexpected behaviour by catching errors early in the design phase.
+
+**Formal verification:** Use automated tools (model checkers) to prove that your system's specifications are indeed met by its implementation.
+
+**Clear documentation:** TLA+ specifications serve as precise and unambiguous references for developers and stakeholders.
+
+**Property driven development (PDD):** The idea of PDD is that you should decide precisely what a program should do before writing the code that describes how the program does it.  These are the properties the program's output should satisfy.
+
+### Key features
+
+**Expressive:** Define complex system behaviour with ease.
+
+**Modular:** Break down specifications into manageable pieces.
+
+**Scalable:** Handle systems of varying sizes and complexity.
+
+### Limitations
+
+**Convergence:** If the state-space of the model is too large, then it can take a lot of time to get a proof or disproof for that model.
+
+A system specification consists of a lot of ordinary mathematics glued together with a tiny bit of temporal logic. Using TLA+ to implement the specification can be cumbersome. TLA+ toolbox accepts the language PlusCal, which is very intuitive for coders. TLA+ toolbox can compile the PlusCal code to TLA+ code on the fly. Thus making it easy to use TLC model checker to check the properties. There are two different types of properties that we can provide in PlusCal:
+Precondition: This condition is used to restrict the possible inputs of the design under test (DUT), to check the DUT only for valid inputs. This is also known as assumptions.
+
+**Postcondition:** This condition is used to check the correctness of the DUT. This is where we express the behaviours (lemmas, theorems) that should be satisfied by the DUT.
+
+When the properties fail, the model checker generates a counter-example. This counter-example helps to debug the specification and understand the reason for the failure.
+
+### Formal Verification Plan using Model Checker TLC
+
+Formal verification has two stages, in the first stage, we try to encode the specification in a modelling language. Then in the second stage we write properties that should be valid according to the specification.
+
+#### Modelling in TLA+/PlusCal
+
+This is the first step to apply model checking i.e., creating the model from the specification. In the following steps we will run the model checker (TLC in this case) on this model. TLA+/PlusCal is very algorithmic in nature, so we use the following specification of the finality to get the pseudocode of the algorithms. This works as a blueprint. For example, I list the algorithms and the expected time required to code them in TLA+/PlusCal.
+
+Initiate GRANDPA:
+
+![Initiate GRANDPA](https://lh3.googleusercontent.com/d/16Cs-jaz2wxpCg5dTkaatQSkGw-QivZSO=w1247-h1097-iv1 "Initiate GRANDPA")
+
+This represents the initial state of the finality protocol. Note that this algorithm calls the function Play-GRANDPA-round. Which is our next algorithm as shown below.
+
+Play GRANDPA-round:
+
+![Play GRANDPA-round](https://lh3.googleusercontent.com/d/15eJeB-0woALj_63vmQ108CYxpJDBsJYu=w1247-h1097-iv1 "Play GRANDPA-round")
+
+This is the main algorithm to encode in the PlusCal.
+
+Derive-Primary:
+
+![Derive-Primary](https://lh3.googleusercontent.com/d/1qqG3QSbKfrBppGYi1zBsPSnqm98uou-B=w1802-h1097-iv1 "Derive-Primary")
+
+This is the algorithm that chooses the primary voter in each round.
+
+Best Final Candidate:
+
+![Best Final Candidate](https://lh3.googleusercontent.com/d/1YElV6MyGJN0GJEcSopZu1l7tQr6g9iJL=w1247-h1097-iv1 "Best Final Candidate")
+
+This algorithm finds the best final candidate.
+
+GRANDPA-Ghost:
+
+![GRANDPA-Ghost](https://lh3.googleusercontent.com/d/1CH5_UyicbG8XSfq0FA6zs3nhRHflH8jf=w1247-h1097-iv1 "GRANDPA-Ghost")
+
+This algorithm implements the GRANDPA-Ghost algorithm.
+
+Best pre-Vote Candidate:
+
+![Best pre-Vote Candidate](https://lh3.googleusercontent.com/d/1KLWaEt5TLDNTw_YTt9cR971GP0slPIos=w1247-h1097-iv1 "Best pre-Vote Candidate")
+
+Algorithm to choose the best pre-vote candidate.
+
+Attempt to Finalize at Round:
+
+![Attempt to Finalize at Round](https://lh3.googleusercontent.com/d/10ZMhnjhviyl3Dd3uerTGLxn82fdpFWTv=w1247-h1097-iv1 "Attempt to Finalize at Round")
+
+This algorithm attempts to finalize a round.
+
+Finalizable:
+
+![Finalizable](https://lh3.googleusercontent.com/d/1n5eE50sFufTobwk3dsU9aVxlYYYHY4mU=w1247-h1097-iv1 "Finalizable")
+
+The final algorithm that finalizes? This should check the conditions of completability.
+
+Process-Catchup Request:
+
+![Process-Catchup Request](https://lh3.googleusercontent.com/d/1CnQuCsPJTZ3ZiODySANeaWBChcJea9Of=w1247-h1097-iv1 "Process-Catchup Request")
+
+Process catchup request algorithm to be encoded in TLA+/PlusCal.
+
+Process-Catchup Response:
+
+![Process-Catchup Response](https://lh3.googleusercontent.com/d/18i_lFPXmWBiQn2heGPGUh8VB82lJ7Zhe=w1247-h1097-iv1 "Process-Catchup Response")
+
+Similarly, the Process-Catchup-Response should be encoded in TLA+/PlusCal.
+
+#### Property Verification
+
+To formally verify the specification, we need to properly encode the properties that we want to check on these models. These properties can be of different types. Based on the properties, the model checker may or may not converge. When a property fails, there are four possible reasons,
+
+1. There is an error in the specification,
+2. The properties we wrote are not correct
+3. We are allowing some behavior that is not allowed as per the specification
+4. We are not modelling it properly.
+
+That is why when we face a failure we must debug very carefully to find what is going wrong. Normally, the time required to debug a property failure is the same or more than the time required to code the model.
+
+Note that convergence issues can become very complicated quickly. Based on the parameters (variables) the state space of the specification can grow really quickly and soon it can go out of the scope of the model checker. Here we try different techniques to help the model checker. Some of the techniques are,
+
+1. Partitioning the model/ properties so that the individual parts can be formally verified easily
+2. Reducing the state space by reducing the size of the parameters
+3. Adding lemmas that help to cut down the state space
+
+## Project Details of the Alternative Approach
+
 ### **_The proof approach_**
 
 When mathematicians write proofs with 'pen and paper', they need to review them by themselves multiple times before they share them with the mathematical community. Even then they need to pass the scrutiny of multiple pairs before the proofs can be accepted. Although this process exists and is followed rigorously, mistakes can happen, and invalid results can reach the public, in those cases, mathematicians usually offer new proofs of statements and in very rare cases they retract the results.
@@ -330,133 +457,6 @@ This is the last proof and most of the lemmas and theorems are already done, the
 
 We expect that some intermediate lemmas for this section or previous ones are already open, this task is to complete as many of them as possible. There must already exist a hierarchy of priorities for those lemmas. As a guide, we shouldn’t leave open the non-technical lemmas, but we may leave without proof of some technical lemmas.
 
-## Project Details of the Alternative Approach
-
-### **_The Model Checker TLC_**
-
-Apart from the theorem-proving aspect, we can try to support the formal verification of GRANDPA Finality Gadget using TLA+ and TLC model checker. TLA+, short for Temporal Logic of Actions, is a powerful tool for designing, modelling, documenting, and verifying software systems, particularly those featuring concurrency and distributed nature. Here's a quick overview:
-
-### What it is
-
-**A formal specification language:** It allows you to precisely define the desired behaviour of a system in mathematical terms.
-
-**Exhaustively-testable pseudocode:** Think of it as drawing detailed blueprints for software, enabling thorough testing before a single line of code is written.
-Combines set theory and temporal logic: This unique combination lets you define both safety (preventing bad things) and liveness (ensuring good things happen eventually).
-
-### What it's used for
-
-**Designing reliable systems:** Minimize bugs and unexpected behaviour by catching errors early in the design phase.
-
-**Formal verification:** Use automated tools (model checkers) to prove that your system's specifications are indeed met by its implementation.
-
-**Clear documentation:** TLA+ specifications serve as precise and unambiguous references for developers and stakeholders.
-
-**Property driven development (PDD):** The idea of PDD is that you should decide precisely what a program should do before writing the code that describes how the program does it.  These are the properties the program's output should satisfy.
-
-### Key features
-
-**Expressive:** Define complex system behaviour with ease.
-
-**Modular:** Break down specifications into manageable pieces.
-
-**Scalable:** Handle systems of varying sizes and complexity.
-
-### Limitations
-
-**Convergence:** If the state-space of the model is too large, then it can take a lot of time to get a proof or disproof for that model.
-
-A system specification consists of a lot of ordinary mathematics glued together with a tiny bit of temporal logic. Using TLA+ to implement the specification can be cumbersome. TLA+ toolbox accepts the language PlusCal, which is very intuitive for coders. TLA+ toolbox can compile the PlusCal code to TLA+ code on the fly. Thus making it easy to use TLC model checker to check the properties. There are two different types of properties that we can provide in PlusCal:
-Precondition: This condition is used to restrict the possible inputs of the design under test (DUT), to check the DUT only for valid inputs. This is also known as assumptions.
-
-**Postcondition:** This condition is used to check the correctness of the DUT. This is where we express the behaviours (lemmas, theorems) that should be satisfied by the DUT.
-
-When the properties fail, the model checker generates a counter-example. This counter-example helps to debug the specification and understand the reason for the failure.
-
-### Formal Verification Plan using Model Checker TLC
-
-Formal verification has two stages, in the first stage, we try to encode the specification in a modelling language. Then in the second stage we write properties that should be valid according to the specification.
-
-#### Modelling in TLA+/PlusCal
-
-This is the first step to apply model checking i.e., creating the model from the specification. In the following steps we will run the model checker (TLC in this case) on this model. TLA+/PlusCal is very algorithmic in nature, so we use the following specification of the finality to get the pseudocode of the algorithms. This works as a blueprint. For example, I list the algorithms and the expected time required to code them in TLA+/PlusCal.
-
-Initiate GRANDPA:
-
-![Initiate GRANDPA](https://lh3.googleusercontent.com/d/16Cs-jaz2wxpCg5dTkaatQSkGw-QivZSO=w1247-h1097-iv1 "Initiate GRANDPA")
-
-This represents the initial state of the finality protocol. Note that this algorithm calls the function Play-GRANDPA-round. Which is our next algorithm as shown below.
-
-Play GRANDPA-round:
-
-![Play GRANDPA-round](https://lh3.googleusercontent.com/d/15eJeB-0woALj_63vmQ108CYxpJDBsJYu=w1247-h1097-iv1 "Play GRANDPA-round")
-
-This is the main algorithm to encode in the PlusCal.
-
-Derive-Primary:
-
-![Derive-Primary](https://lh3.googleusercontent.com/d/1qqG3QSbKfrBppGYi1zBsPSnqm98uou-B=w1802-h1097-iv1 "Derive-Primary")
-
-This is the algorithm that chooses the primary voter in each round.
-
-Best Final Candidate:
-
-![Best Final Candidate](https://lh3.googleusercontent.com/d/1YElV6MyGJN0GJEcSopZu1l7tQr6g9iJL=w1247-h1097-iv1 "Best Final Candidate")
-
-This algorithm finds the best final candidate.
-
-GRANDPA-Ghost:
-
-![GRANDPA-Ghost](https://lh3.googleusercontent.com/d/1CH5_UyicbG8XSfq0FA6zs3nhRHflH8jf=w1247-h1097-iv1 "GRANDPA-Ghost")
-
-This algorithm implements the GRANDPA-Ghost algorithm.
-
-Best pre-Vote Candidate:
-
-![Best pre-Vote Candidate](https://lh3.googleusercontent.com/d/1KLWaEt5TLDNTw_YTt9cR971GP0slPIos=w1247-h1097-iv1 "Best pre-Vote Candidate")
-
-Algorithm to choose the best pre-vote candidate.
-
-Attempt to Finalize at Round:
-
-![Attempt to Finalize at Round](https://lh3.googleusercontent.com/d/10ZMhnjhviyl3Dd3uerTGLxn82fdpFWTv=w1247-h1097-iv1 "Attempt to Finalize at Round")
-
-This algorithm attempts to finalize a round.
-
-Finalizable:
-
-![Finalizable](https://lh3.googleusercontent.com/d/1n5eE50sFufTobwk3dsU9aVxlYYYHY4mU=w1247-h1097-iv1 "Finalizable")
-
-The final algorithm that finalizes? This should check the conditions of completability.
-
-Process-Catchup Request:
-
-![Process-Catchup Request](https://lh3.googleusercontent.com/d/1CnQuCsPJTZ3ZiODySANeaWBChcJea9Of=w1247-h1097-iv1 "Process-Catchup Request")
-
-Process catchup request algorithm to be encoded in TLA+/PlusCal.
-
-Process-Catchup Response:
-
-![Process-Catchup Response](https://lh3.googleusercontent.com/d/18i_lFPXmWBiQn2heGPGUh8VB82lJ7Zhe=w1247-h1097-iv1 "Process-Catchup Response")
-
-Similarly, the Process-Catchup-Response should be encoded in TLA+/PlusCal.
-
-#### Property Verification
-
-To formally verify the specification, we need to properly encode the properties that we want to check on these models. These properties can be of different types. Based on the properties, the model checker may or may not converge. When a property fails, there are four possible reasons,
-
-1. There is an error in the specification,
-2. The properties we wrote are not correct
-3. We are allowing some behavior that is not allowed as per the specification
-4. We are not modelling it properly.
-
-That is why when we face a failure we must debug very carefully to find what is going wrong. Normally, the time required to debug a property failure is the same or more than the time required to code the model.
-
-Note that convergence issues can become very complicated quickly. Based on the parameters (variables) the state space of the specification can grow really quickly and soon it can go out of the scope of the model checker. Here we try different techniques to help the model checker. Some of the techniques are,
-
-1. Partitioning the model/ properties so that the individual parts can be formally verified easily
-2. Reducing the state space by reducing the size of the parameters
-3. Adding lemmas that help to cut down the state space
-
 ### Ecosystem Fit
 
 Application in response to the RFP "Formal Guarantees for GRANDPA Finality Gadget"
@@ -506,7 +506,32 @@ We have had conversations with the W3F team, planning to start a collaboration i
 
 ## Development Roadmap :nut_and_bolt:
 
-### Estimate for **_The proof approach_**
+### Estimate for **_The Model Checker TLC_**
+
+|Description of the algorithm|Encoding effort|Verification effort|Combined|
+|----------------------------|---------------|-------------------|--------|
+|Initiate GRANDPA|2h|2h|4h|
+|Play GRANDPA-round|24h|24h|48h|
+|Derive-Primary|1h|1h|2h|
+|Best Final Candidate|4h|4h|8h|
+|GRANDPA Ghost|4h|4h|8h|
+|Best pre-Vote Candidate|2h|2h|4h|
+|Attempt to Finalize at Round|4h|4h|8h|
+|Finalizable|8h|8h|16h|
+|Process Catchup Request|8h|8h|16h|
+|Process Catchup Response|8h|8h|16h|
+|TOTAL|||130h
+
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):**  1.5 FTE
+- **Total Costs:** $13000 (USD)
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Verification | We will provide encoding and property verification using TLA+ as described in detail|
+
+### Estimate for the Alternative Approach **_The proof approach_**
 
 |Description of the activity |Min effort expected |Max effort expected|
 |----------------------------|--------------------|-------------------|
@@ -544,36 +569,12 @@ We have had conversations with the W3F team, planning to start a collaboration i
 | **0b.** | Documentation | We will provide Proof of Lemmas, Theorem, Corollary as described in detail |
 | **0c.** | Statements | We will provide statements proved using COQ as described in detail|
 
-### Estimate for the Alternative Approach **_The Model Checker TLC_**
-
-|Description of the algorithm|Encoding effort|Verification effort|Combined|
-|----------------------------|---------------|-------------------|--------|
-|Initiate GRANDPA|2h|2h|4h|
-|Play GRANDPA-round|24h|24h|48h|
-|Derive-Primary|1h|1h|2h|
-|Best Final Candidate|4h|4h|8h|
-|GRANDPA Ghost|4h|4h|8h|
-|Best pre-Vote Candidate|2h|2h|4h|
-|Attempt to Finalize at Round|4h|4h|8h|
-|Finalizable|8h|8h|16h|
-|Process Catchup Request|8h|8h|16h|
-|Process Catchup Response|8h|8h|16h|
-|TOTAL|||130h
-
-- **Total Estimated Duration:** 1 month
-- **Full-Time Equivalent (FTE):**  1.5 FTE
-- **Total Costs:** $13000 (USD)
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Verification | We will provide encoding and property verification using TLA+ as described in detail|
-
 ## Future Plans
 
 ## Referral Program (optional) :moneybag:
 
 ## Additional Information :heavy_plus_sign:
-**Multiple grant applications** I understand that your policy is to limit the number of grants per team, but we believe that this project is crucial for the development of the ecosystem and we have the resources and expertise to execute it well because we are a large size team. Therefore, we decided to apply for this grant despite the restriction and we hope you will consider our proposal favorably.
-**How did you hear about the Grants Program?** Meeting with the Web3 Foundation team at the beautiful Sub0 conference in Lisbon
 
+**Multiple grant applications** I understand that your policy is to limit the number of grants per team, but we believe that this project is crucial for the development of the ecosystem and we have the resources and expertise to execute it well because we are a large size team. Therefore, we decided to apply for this grant despite the restriction and we hope you will consider our proposal favorably.
+
+**How did you hear about the Grants Program?** Meeting with the Web3 Foundation team at the beautiful Sub0 conference in Lisbon
