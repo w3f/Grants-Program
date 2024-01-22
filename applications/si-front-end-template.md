@@ -110,6 +110,7 @@ https://www.linkedin.com/in/igor-stojanov-96364ba/
 | 3. | Footer | New Element for implementing a new UI Element footer |
 | 4. | Polkadot Extension| Ensure working connection with Polkadot extension |
 | 5. | Light/Dark Mode| Enable styling switch to dark and light mode |
+| 6. | Typescript Migration | Migration of current Javascript implementation to Typescript |
 
 
 
