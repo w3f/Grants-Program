@@ -3,6 +3,7 @@
 - **Team Name:** Davanti
 - **Payment Address:** 16m9eMpB3BuPSXwjvdCY6z63pTuvdnv8FjmmH33ZkYPCr9XC
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2178#issuecomment-1906276565)
 
 ## Project Overview :page_facing_up:
 
