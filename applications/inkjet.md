@@ -10,9 +10,9 @@ This application is *not* in response to an RFP nor a follow-up grant.
 
 ### Overview
 
-**One liner:** Platform for Generative AI Assisted Smart Contract Development with Retrieval Augmented Generation
+**One liner:** VS Code Extension for Generative AI Assisted Smart Contract Development with Retrieval Augmented Generation
 
-`Ink!jet` is a platform designed to use augmented generative AI with the intent of improving the development lifecycle of `ink!` smart contracts within the Polkadot ecosystem. Recognizing the technically intricate nature of smart contracts and the high level of expertise they demand, our project aims to simplify these complexities, thereby democratizing the creation process.
+`Ink!jet` is a VS Code extension designed to use augmented generative AI with the intent of improving the development lifecycle of `ink!` smart contracts within the Polkadot ecosystem. Recognizing the technically intricate nature of smart contracts and the high level of expertise they demand, our project aims to simplify these complexities, thereby democratizing the creation process.
 
 Existing generative AI have limitations in both the amount of `Rust` and `ink!` code in their training data. Our platform uses a retrieval-augmented generation pipeline with datasets of collected and generated `ink!` smart contracts to bridge this knowledge gap. Injecting vectorstore retrieved code into prompts, this system utilizes in-context learning to improve response quality. Our platform also offers an in-browswer IDE that users can use without the complications of setting up a local environment. Our goal is to enhance the productivity of existing developers through bootstrapping and assisted code interation, while simultaneously lowering the barrier of entry for new developers.
 
@@ -20,34 +20,34 @@ Our team's motivation for the project is twofold. First, we are supporters of de
 
 ### Project Details
 
-#### UI Mockup:
+#### UI:
 
-We are opting for a simplistic UI for ease of use. The tool will be a single-page application, where the left side of the page is an in-browser IDE for the `ink!` smart contract being worked on. The right side is a Chat History where the user can interact with the LLM. Code generations in responses will be automatically populated in the left IDE. 
+![Extension](https://github.com/yu-jeffy/ink-jet/blob/main/inkjet_extension.png)
 
-We provide a dropdown menu of code templates to choose from. The History button will keep a edit history of the smart contract if the user needs to revert to a previous version. The Analyze button will break the code down into chunks (such as its individual functions) and provide feedback for each chunk. The code will also be run through CoinFabrik Scout, and the result returned. The feedback will replace the Chat History, and can be closed once it is read to resume editing.
+The extension will be displayed in the primary/left sidebar of the VS Code window, replacing the file explorer when open. It will have vertically stacked sections, featuring a chat, chat settings, analysis, and templates. These will be resizable if the user wishes to view a certain section in a larger space.
 
-Users are provided parameters to adjust with their prompts, and can modify the temperature and number of retrieval documents from the vectorstore.
+The chat will be similar to the Copilot Chat feature, where the user can converse with our model, and have their prompts enhanced through the RAG pipeline. They can ask questions about documentation or general software engineering by directly messaging the model.
 
-We also plan to incorporate a terminal window, either below the main UI or in a collapsable window.
+In order to provide coding suggestions, the user can select code within an open file and then ask a question to the model with the `@selected` keyword in the prompt. This will provide the question and the selected code to the model.
 
-![ui-mockup](https://jyu.llc/inkjet_mockupui.png)
+The response will be populated in the chat window. After the response is returned, the user will be asked if they wish for the response to be populated into their file. If they respond yes, the extension will replace the selected code with the response. We want to maintain asking permission in case the user wishes to retain their previous code, or code it themselves.
 
-#### Data Model / Architecture
+For the chat settings, we are opting to have them within the extension UI instead of in a separate settings tab. The settings may need to be adjusted many times for the user to find what works best, so we are prioritizing ease of access. This includes model temperature, top-k results from the RAG retrieval, and other OpenAI parameters.
+
+Analysis will have a button and results. The button will take the current smart contract (must be open in VS Code current tab), and run it through CoinFabrik's Scout. If Scout is not installed, it will notify the user, and install it if they wish. After the vulnerability analysis is ran, the results will be displayed in the results part of this section.
+
+Templates will have a simple dropdown, where the user can select a template to use. There will be a "Create" button, where when clicked, a new `.rs` file will be initiated in the current file directory with the template contract within it.
+
+
+#### RAG - LLM Architecture
 
 ![architecture](https://jyu.llc/inkjet_arch.png)
-
-We are using Docker for containerization. We will host the React app and RAG-LLM pipeline in a container, which will serve the front-end of web application and its interactions with the model. When the user interacts with the model, an API call is made to the vectorstore (Milvus/Weaviate) and OpenAI, and the result is provided to the user.
-
-We will have a second Docker container for our Rust environment, where users of the React application can send their code to be compiled and run through CoinFabrik Scout. The result is returned to the React application to the user.
-
-Since we anticipate multiple concurrent users, we need a way to handle multiple requests to compile and check code to our second Docker container. We will use a RabbitMQ queue within the second Docker container to keep order of requests as they come in. The queue will keep track of the order of requests, and which user to return them to.
-
-For scaling, if the demand is high enough that our second container cannot handle the requests in a timely manner, we can scale horizontally. More Rust environment Docker containers can be added, and a load balancer added to distribute requests between them.
 
 #### Stack
 
 We will be using the following technologies:
-- Python for RAG-LLM pipeline
+- Typescript/JS and Node.js (Electron Framework) for VS Code Extension
+- Javascript for RAG-LLM pipeline
  - LlamaIndex and LangChain libraries for data loading, processing, embedding
  - LlamaIndex and LangChain libraries for vectorstore retrieval and LLM interaction with retrieval results
 - Milvus and Weaviate for Vectorstore
@@ -55,12 +55,6 @@ We will be using the following technologies:
 - OpenAI for LLM (GPT-4-32k, GPT-4-1106-preview)
 - ink!/Rust for Smart Contracts
 - CoinFabrik Scout for Vulnerabiity Detection
-- Monaco Editor for In-Browser IDE
-- React.js for Front-End Application
-- RabbitMQ for Queue
-- Docker for Containerization
-- Rust for Development Environment within the Container
-- Heroku for Hosting
 
 #### ink! Smart Contract Vectorstore:
 
@@ -186,7 +180,7 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 - **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs:** 30,000 USD
 
-### Milestone 1 — Prototype, Initial RAG System and Data Pipeline
+### Milestone 1 — Core RAG-LLM Functionality
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
@@ -197,13 +191,13 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0a.** | License | Open-sourced under Apache 2.0. |
 |  **0b.** | Documentation | Code comments. Documentation for the prototype architecture and the setup process, explaining how a user can run a local instance of the prototype RAG system with our initial data. |
 |  **0c.** | Testing Guide | Unit tests will be provided for the prototype, with a testing guide explaining how to run them. |
-|  **0d.** | Docker | We will include a `Dockerfile` that enables easy deployment and testing of the RAG system. |
+|  **0d.** | Docker | N/A |
 |       1. | Initial Prototype | Development of a basic LlamaIndex RAG system prototype integrated with `GPT-4`, using sentence embeddings. User can interact with the pipeline through the command line, interfacing with `GPT-4` with fetched documents from `Milvus and Weaviate`|
 |       2. | Data Collection | Collection of a small set of `ink!` smart contracts for initial embedding and retrieval testing. Smart contracts will be converted from `.rs` files to `JSON`, with identifying metadata. |
 |       3. | Loading and Embedding Pipeline | Pipeline for loading in `ink!` smart contracts as `JSON` files, and generating embeddings to build the initial vector database. |
 |       4. | Vector Database | `Milvus and Weaviate` database will be used to store embeddings from processed `ink!` smart contracts. |
 
-### Milestone 2 — Smart Contract Dataset, Embeddings for Vector Database
+### Milestone 2 — ink! Smart Contract Dataset
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
@@ -214,13 +208,13 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0a.** | License | Open-sourced under Apache 2.0. |
 |  **0b.** | Documentation | Code comments. Documentation on the vectorization of newly collected smart contracts and updating the vector database. |
 |  **0c.** | Testing Guide | Unit tests for changes to loading and vectorization. Testing guide included for running these tests. |
-|  **0d.** | Docker | `Dockerfile` updated to reflect any changes in RAG system and data pipeline deployment. |
+|  **0d.** | Docker | N/A |
 |       1. | Data Expansion | Collection and generation, categorization, and metadata tagging of `ink!` smart contracts to complete the dataset. Smart contracts will be locally compiled, tested with CoinFabrik Scout, and deployed to a local or testnet node to ensure functionality. Rigorous code commentation in the smart contracts to provide semantic context before vectorization. |
 |       2. | Embedding Model | Replace default sentence embedding. Implement OpenAI's `text-embedding-ada-002` model, compatible with natural language and code processing. |
 |       3. | Vector Database | Update the `Milvus and Weaviate` vector database to house the code-based embeddings of the complete dataset. |
 
 
-### Milestone 3 — RAG System Integration
+### Milestone 3 — RAG-LLM Integration with Dataset, Efficacy Testing
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
@@ -231,13 +225,13 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0a.** | License | Open-sourced under Apache 2.0. |
 |  **0b.** | Documentation | Code comments. Documentation provided for the integration process, and usage instructions provided for the updated RAG system. |
 |  **0c.** | Testing Guide | Unit tests updated to reflect changes in RAG system. Guide for testing the updated RAG system. |
-|  **0d.** | Docker | `Dockerfile` updated with any changes in deployment. |
+|  **0d.** | Docker | N/A |
 |       1. | RAG Integration | Integration of the new dataset and vector database with the prototype RAG system for improved retrieval. Modifiable parameters for queries, including temperature, top-k documents in retrieval, and token context size. |
 |       2. | Query Handling | Updated query parsing and processing using new embedding model to improve smart contract code retrieval. Prompt rewriting of plaintext in user request to improve semantic search. |
 |       3. | Testing Dataset | Create a dataset of prompts to test the output quality of RAG system, and if it generates vulnerabilities. |
 |       4. | System Testing | Testing of RAG retrieval functionality with the testing dataset. Evalaute performance and efficacy for vulnerability-free code. |
 
-### Milestone 4 — UI/UX, Front-End, Cloud Architecture
+### Milestone 4 — VS Code Extension Core Functionality
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
@@ -246,14 +240,12 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  Number  | Deliverable | Specification |
 | -------: | ----------- | ------------- |
 |  **0a.** | License | Open-sourced under Apache 2.0. |
-|  **0b.** | Documentation | Code comments. UI/UX design documentation and front-end codebase documentation, including setup and deployment procedures. |
-|  **0c.** | Testing Guide | Guide on how to run tests on the `React.js` application. |
-|  **0d.** | Docker 1 | Updated `Dockerfile` to serve as front-end, with the `React.js` application, RAG-LLM and associated dependencies. |
-|  **0d.** | Docker 2 | Created `Dockerfile` for backend application with Rust environment and CoinFabrik Scout. |
-|       1. | UI/UX Design | Design and development of user interface for the RAG system. |
-|       2. | React.js Application | Development of `React.js` front-end for the RAG system. Code implementation of the UI/UX design. |
-|       3. | Front-End Testing | Comprehensive testing to ensure the front-end application is responsive and stable. |
-|       4. | Containerization | Creation of second Docker container for Rust environment in production. Creation of RabbitMQ queueing system for requests. |
+|  **0b.** | Documentation | Code comments. VS Code Extension UI components and functionality documented. Instructions for use documented. |
+|  **0c.** | Testing Guide | Guide on how to run tests on the VS Code extension. |
+|  **0d.** | Docker 1 | N/A |
+|       1. | UI/UX Design | Design and development of UI for VS Code extension. Extension will reside in primary sidebar, with multiple resizable sections. |
+|       2. | VS Code Extension | Creation of the core VS Code extension functionality, including integration with our RAG-LLM pipeline, code selection access, and local file system access. This includes Chat and Chat Settings functionality. Analysis and Templates functionality will be scaffolded (see Milestone 5). |
+|       3. | Usage Testing | Comprehensive testing to ensure the VS Code extension is responsive and stable. All parts of functionality will be tested. |
 
 ### Milestone 5 — Additional Features
 
@@ -266,13 +258,13 @@ In terms of related work, we have [ongoing work](https://github.com/yu-jeffy/aud
 |  **0a.** | License | Open-sourced under Apache 2.0. |
 |  **0b.** | Documentation | Code comments. Documentation of additional features, including use cases and integration into the existing system. |
 |  **0c.** | Testing Guide | Updated testing guide that includes all features of the application. |
-|  **0d.** | Docker | Finalized `Dockerfile`s for the complete system with all features included. |
+|  **0d.** | Docker | NA |
 |  **0e.** | Article | We will publish an **article** that showcases the development process, application use cases, application demo, and usage of the grant throughout the project cycle. |
-|       1. | UI/UX Updates | Updated `React.js` components to serve additional features in the application. |
+|       1. | UI/UX Updates | Updated VS Code Extension to serve additional features in the application. Analysis and template section finished. Overall UI appearance polished. |
 |       2. | Templates | Development of a template system for users to easily bootstrap building smart contracts. User can pick from a list of common use cases, and be provided a template smart contract to start with. |
-|       3. | Smart Contract Analysis | A feature to break down smart contracts into chunks, scanning each for functionality and errors, and suggest improvements or fixes. Contract will be broken down into parts, such as its functions, and each will be analyzed by the LLM. |
+|       3. | Smart Contract Analysis | A feature to run CoinFabrik Scout on the contract currently open in the IDE. Will install Scout if it is not installed locally. |
 |       4. | Final Application Testing | System-wide testing of all features, ensuring full integration and operational stability. |
-|       5. | Deployment | Cloud deployment of system, with front-end and back-end containers. Testing to ensure users can access it through a public URL. Requests between containers tested. |
+|       5. | Publishing | VS Code extension published to extension marketplace. |
 
 ## Future Plans
 
