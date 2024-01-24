@@ -52,6 +52,7 @@ Besides, **there is a clear difference between an application being accepted and
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
 | [MLabs](https://mlabs.city/)                       | [TuxedoDapp](./TuxedoDapp.md)                     | [GitHub](https://github.com/mlabs-haskell)                 | ☐          |        ☐       |      ☐      |
 | [Lastic](https://www.lastic.xyz/)                       | [Coretime Indexer + Visualizations](./lastic-grant3.md)                     | [GitHub](https://github.com/LasticXYZ)                 | ☐          |        ☐       |      ☐      |
+| [IgorStojanov](https://igorstojanov.com/)                       | [Material Design Makeover for Substrate Front-End Template](./lsi-front-end-template.md)                     | [GitHub](https://github.com/stojanov-igor)                 | ☐          |        ☐       |      ☐      |
 ## 2023
 
 ### 🏄 Wave 20 - Q4 2023
