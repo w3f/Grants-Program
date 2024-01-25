@@ -29,6 +29,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Seraya Takahashi](https://github.com/takahser)
+- [Piet Wolff](https://github.com/PieWol)
 
 ## W3F Operations Team
 
