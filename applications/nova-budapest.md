@@ -16,12 +16,6 @@
 
 ### Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
 
 Our application is both about a subverse and a game project, taking place in Nova Budapest, which is a future cyberpunk imaginary megacity in Europe, after an imaginary nuclear war. 
 
