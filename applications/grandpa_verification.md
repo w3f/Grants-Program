@@ -139,6 +139,36 @@ Note that convergence issues can become very complicated quickly. Based on the p
 2. Reducing the state space by reducing the size of the parameters
 3. Adding lemmas that help to cut down the state space
 
+
+### Modeling techniques in TLA+
+TLA+ offers a powerful toolkit for formal modeling and verification of concurrent systems. Here are some key TLA+ modeling techniques commonly used:
+* Structure and Organization:
+	* Modules: Divide your model into smaller, manageable parts with clear dependencies and interactions.
+	* Processes: Represent independent entities with their own state and actions, mimicking actors in the system.
+	* Variables: Capture system state properties using sets, records, and functions.
+	* Channels: Model communication between processes as asynchronous message passing.
+* Logic and Specification:
+	* Temporal logic: Express temporal properties like "eventually x will happen" or "never will y happen" using `[]` and `<>` operators.
+	* Invariants: Specify properties that should always hold throughout a model's execution.
+	* Next-state relation: Define how the system state can change in each step using set comprehensions and logical expressions.
+ 	* Temporal operators: Utilize features like WF (weak fairness) and EF (exists eventually) to express complex liveness properties.
+* Verification and Analysis:
+	* Model checking: Use tools like TLC (TLA+ model checker) to exhaustively explore all possible system states and verify properties hold true.
+	* Proofs: Construct formal proofs within TLA+ to mathematically demonstrate specific properties hold for any valid execution.
+	* Compositionality: Leverage modularity and invariants to reason about larger systems by verifying individual components and their interactions.
+* Advanced Techniques:
+	* Abstraction: Hide irrelevant details to focus on specific aspects of the system.
+	* Refinement: Incrementally improve the model's accuracy and detail.
+Parameterized specifications: Design models that can be generic and apply to multiple systems with parameter variations.
+	* Counterexamples: Analyze model checking results to understand potential violations and refine your model.
+* Choosing the Right Technique:
+The best TLA+ modeling techniques depend on your specific needs:
+	* System complexity: Larger systems benefit from modularity and abstraction.
+	* Verification goals: Model checking helps verify safety properties, while proofs are suitable for liveness properties.
+	* Development stage: Early stages might use simpler models, while more detailed specifications come later.
+	
+Effective TLA+ modeling requires a mix of understanding the system, choosing appropriate techniques, and iteratively refining model for accuracy and verification success.
+In the final deliverable we will give proper comments and discussion on the abstraction techniques used.
 ## Project Details of the Alternative Approach
 
 ### **_The proof approach_**
