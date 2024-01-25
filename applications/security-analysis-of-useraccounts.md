@@ -2,7 +2,7 @@
 
 
 - **Team Name:** Zime
-- **Payment Address:** Fiat Jan 23, 2024, 11:15 AM EST
+- **Payment Address:** Fiat (Jan 23, 2024, 11:15 AM EST)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
@@ -98,8 +98,8 @@ By safeguarding the gateways to user assets, this project strengthens the very f
 
 ### Legal Structure
 
-- **Registered Address:**  No registered entity
-- **Registered Legal Entity:**   No registered entity
+- **Registered Address:**  (provided privately)
+- **Registered Legal Entity:**   (provided privately)
 
 ### Team's experience
 
@@ -173,13 +173,6 @@ Not Commenced.
 ## Future Plans
 
 Our long-term vision extends beyond securing individual wallets. We aim to evolve into a comprehensive security resource for the entire Polkadot ecosystem, where we will research about emerging threats in smart contracts, cross-chain interactions, and beyond.
-
-## Referral Program (optional) :moneybag:
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-
-- **Referrer:** N/A
-- **Payment Address:** N/A
 
 ## Additional Information :heavy_plus_sign:
 
