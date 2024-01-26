@@ -54,7 +54,8 @@ Users gain more options for securely interacting with decentralized applications
 
 - **Storage Layer:** The layer dedicated to storing validated APKs securely.
 
-- **SAST/DAST Module:** A component for Static and Dynamic Analysis, conducting security scans on submitted APKs, initially interfacing with the MobSF: Mobile Security Framework Web API.
+- **SAST/DAST Module:** Static and Dynamic Analysis component for scanning submited apks for checking security (initially interfacing with
+ [MobSF: Mobile Security Framework](https://github.com/MobSF/Mobile-Security-Framework-MobSF) Web API).
 
 - **Fusion Protocol:** A suite of pallets integral to the Fusion Protocol, focusing on managing OEMs or Device Manufacturer partners associated with the protocol.
 
@@ -63,10 +64,6 @@ Users gain more options for securely interacting with decentralized applications
 - **Fusion Marketplace:** The marketplace dedicated to the Fusion protocol, facilitating interactions and transactions within the ecosystem.
 
 - **OS Catalog:** A repository consolidating references to open-source, privacy-focused Operating Systems intended for use by protocol partners. This includes "De-Googled Android AOSP" variants (such as GrapheneOS, /e/ Foundation, LineageOS), "Linux Phone OS" options (Ubuntu Touch, PostmarketOS, PureOS)
-
-- **SAST/DAST Module:** Static and Dynamic Analysis component for scanning submited apks for checking security (initially interfacing with
- [MobSF: Mobile Security Framework](https://github.com/MobSF/Mobile-Security-Framework-MobSF) Web API).
-
 
 
 ### Ecosystem Fit
@@ -84,6 +81,8 @@ The target audience for the Relai Network is diverse and includes:
 Here is a diagram of the project
 
 ![Figure 1-1](https://raw.githubusercontent.com/RELAI-Network/docs/main/archi/architechture.jpg?raw=true)
+
+[Future Console Wireframes](https://docs.google.com/presentation/d/1UsVMwi_ibrn2op3FutWle7QkK2pP060usgEyvBv9PiQ)
 
 ## Team :busts_in_silhouette:
 
