@@ -15,6 +15,8 @@ Besides, **there is a clear difference between an application being accepted and
 
 <a id="top"></a>
 
+- [2024](#2024)
+  - [🏄 Wave 21 - Q1 2024](#-wave-21---q1-2024)
 - [2023](#2023)
   - [🏄 Wave 20 - Q4 2023](#-wave-20---q4-2023)
   - [🏄 Wave 19 - Q3 2023](#-wave-19---q3-2023)
@@ -41,6 +43,16 @@ Besides, **there is a clear difference between an application being accepted and
   - [🏄 Wave 2 - Q2 2019](#-wave-2---q2-2019)
   - [🏄 Wave 1 - Q1 2019](#-wave-1---q1-2019)
 
+
+## 2024
+
+### 🏄 Wave 21 - Q1 2024
+
+| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
+| [MLabs](https://mlabs.city/)                       | [TuxedoDapp](./TuxedoDapp.md)                     | [GitHub](https://github.com/mlabs-haskell)                 | ☐          |        ☐       |      ☐      |
+| [Lastic](https://www.lastic.xyz/)                       | [Coretime Indexer + Visualizations](./lastic-grant3.md)                     | [GitHub](https://github.com/LasticXYZ)                 | ☐          |        ☐       |      ☐      |
+| [IgorStojanov](https://igorstojanov.com/)                       | [Material Design Makeover for Substrate Front-End Template](./lsi-front-end-template.md)                     | [GitHub](https://github.com/stojanov-igor)                 | ☐          |        ☐       |      ☐      |
 ## 2023
 
 ### 🏄 Wave 20 - Q4 2023
@@ -55,7 +67,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests 2](CoinFabrik_On_Ink_Integration_Tests_2.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☒        |     ☒     |
 | [Plutonication](https://github.com/cisar2218/Plutonication)                    | [Plutonication](Plutonication.md)                                                              | [GitHub](https://github.com/cisar2218/Plutonication)                      | ☐          |       ☒        |     ☐     |
 | [gmajor](https://github.com/gmajor-encrypt)                    | [JsonRpsee socks5 proxy](JsonRpsee-socks5-proxy.md)                                                              | [GitHub](https://github.com/gmajor-encrypt)                      | ☐          |       ☐        |     ☐     |
-| [ParaSpell](https://github.com/paraspell)                    | [SpellRouter](SpellRouter-proposal.md)                                                              | [GitHub](https://github.com/paraspell)                      | ☐          |       ☐        |     ☐     |
+| [ParaSpell](https://github.com/paraspell)                    | [SpellRouter](SpellRouter-proposal.md)                                                              | [GitHub](https://github.com/paraspell)                      | ☐          |       ☒        |     ☒     |
 | [Paraverse Foundation](https://talisman.xyz)                    | [Signet - Talisman](signet.md)                                                              | [GitHub](https://github.com/TalismanSociety)                      | ☐          |       ☒        |     ☐     |
 | [Libeccio Labs](https://github.com/LibeccioLabs)                    | [Tux0](tux0.md)                                                              | [GitHub](https://github.com/LibeccioLabs)                      | ☐          |       ☐        |     ☐     |
 | [PolkaGate](https://polkagate.xyz)                    | [PolkaMask](polkamask.md)                                                              | [GitHub](https://github.com/PolkaGate)                      | ☐          |       ☐        |     ☐     |
@@ -68,7 +80,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [WeTEE DAO](https://www.wetee.app)                   | [WeTEE Network](WeTEE_Network.md)                                                              | [GitHub](https://github.com/wetee-dao)                      | ☐          |       ☐        |     ☐     |
 | [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests 3](CoinFabrik_On_Ink_Integration_Tests_3.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☒        |     ☒     |
 | [Andrea Di Franco](https://github.com/andredif)                    | [QuantumGuard](quantum-guard.md)                                                              | [GitHub](https://github.com/andredif)                      | ☐          |       ☐        |     ☐     |
-| [Solidbit GmbH](https://solid-bit.com)                    | [Democratic Governance](democratic-governance-1.md)                                                              | [GitHub](https://github.com/encointer)                      | ☐          |       ☐        |     ☐     |
+| [Solidbit GmbH](https://solid-bit.com)                    | [Democratic Governance](democratic-governance-1.md)                                                              | [GitHub](https://github.com/encointer)                      | ☐          |       ☒        |     ☒     |
 | [Auguth Tech](https://github.com/auguth)                    | [Proof of Contract Stake (Pallet)](PoCS.md)                                                              | [GitHub](https://github.com/auguth/pocs)                      | ☐          |       ☐        |     ☐     |
 
 [🔝](#top)
@@ -93,7 +105,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests](CoinFabrik_On_Ink_Integration_Tests.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☒        |     ☒     |
 | [Stake Plus Inc](https://stake.plus)                    | [Treasury Tracker](TreasuryTracker.md)                                                              | [GitHub](https://github.com/stake-plus)                      | ☐          |       ☒        |     ☒     |
 | [MOBR Systems](https://www.mobr.ai)                    | [Polkadot Analytics Platform](polkadot_analytics_platform.md)                                                              | [GitHub](https://github.com/mobr-ai)                      | ☐          |       ☒        |     ☐     |
-| [Infra3](https://network.infra-3.xyz)                    | [Hyperdot - Powerful data analysis and creations platform](Hyperdot.md)                                                              | [GitHub](https://github.com/Infra3-Network/hyperdot)                      | ☐          |       ☒        |     ☐     |
+| [Infra3](https://network.infra-3.xyz)                    | [Hyperdot - Powerful data analysis and creations platform](Hyperdot.md)                                                              | [GitHub](https://github.com/Infra3-Network/hyperdot)                      | ☐          |       ☒        |     ☒     |
 | [David Semakula](https://github.com/davidsemakula)                   | [ink! analyzer (phase 2)](ink-analyzer-phase-2.md)                                                              | [GitHub](https://github.com/ink-analyzer)                      | ☐          |       ☒        |     ☐     |
 | [Myriad Systems LTD.](https://myriad.social/)                   | [Myriad Social](myriad_social.md)                                                              | [GitHub](https://github.com/myriadsocial/myriad-node)                      | ☐          |       ☒        |     ☐     |
 | [Liisa](www.liisa.io)                   | [Polkadot NFT Portfolio Tracker](LiisaPortfolioTracker.md)                                                              | [GitHub](https://github.com/LiisaNFT)                      | ☐          |       ☐        |     ☐     |
@@ -294,7 +306,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Web3 Labs Ltd](https://www.web3labs.com/epirus-explorer)    | [Epirus Substrate Explorer - Phase 2](./epirus_substrate_phase_2.md)                          | [GitHub](https://github.com/web3labs)                                  | ☐          |       ☒        |     ☒     |
 | [Uke](https://github.com/Uke-Messaging)                      | [Uke Protocol PoC & App (revised)](./uke-protocol.md)                                         | [GitHub](https://github.com/Uke-Messaging)                             | ☐          |       ☒        |     ☒     |
 | [727.ventures](https://727.ventures/)                        | [Typechain Phase 2](./typechain-polkadot-follow-up.md)                                        | [GitHub](https://github.com/727-Ventures/typechain-polkadot)           | ☐          |       ☒        |     ☒     |
-| [QSTN](https://qstn.us/)                                     | [QSTN](./QSTN.md)                                                                             | [GitHub](https://github.com/qstnus)                                    | ☐          |       ☐        |     ☐     |
+| [QSTN](https://qstn.us/)                                     | [QSTN](./QSTN.md)                                                                             | [GitHub](https://github.com/qstnus)                                    | ☐          |       ☒        |     ☒     |
 | [CESS LAB](https://www.cess.cloud/)                          | [Substats (The framework of lightweight block explorer)](./substats.md)                       | [GitHub](https://github.com/CESSProject)                               | ☐          |       ☒        |     ☒     |
 | [Polket](https://toearn.fun)                                 | [ToEarnFun](./polket_toearnfun.md)                                                            | [GitHub](https://github.com/polketio/polket-node)                      | ☐          |       ☒        |     ☒     |
 | ALPHA LABS                                                   | [Binary merkle tree](./binary_merkle_tree.md)                                                 | [GitHub](https://github.com/frisitano)                                 | ☐          |       ☒        |     ☐     |
