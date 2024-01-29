@@ -1,7 +1,7 @@
 # User Account Access Security Analysis for Wallets
 
 - **Team Name:** Zondax AG
-- **Payment Address:** (DAI ERC 20) 0xf50a09731dc32a64431920e10e1e58dce28e6b11
+- **Payment Address:** We prefer a payment in fiat. Bank details will be provided by email. 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -22,7 +22,14 @@ This project will serve as the basis for the Bachelor Thesis of [Carlo Sala](htt
 
 The proposed research involves expanding the framework outlined in the _User Account Access Graphs_ ([paper](https://people.inf.ethz.ch/rsasse/pub/AccountAccessGraphs-CCS19.pdf)) to accommodate the unique features of blockchain technology, with a specific focus on the Polkadot ecosystem. 
 
-This expansion entails incorporating the distinct aspects of Polkadot, such as multisignature (multisig) accounts, stashing (a mechanism for securing assets), proxy accounts (which allow one account to act on behalf of another), and the use of hardware wallets (physical devices that store private keys). The objective is to adapt and refine the account access graph model to accurately represent and analyze the complex and varied ways in which users can interact with and access their assets within the Polkadot blockchain environment. This adaptation will consider the intricate security and operational dynamics of Polkadot's features, ensuring that the model remains relevant and effective in this advanced blockchain context.
+This expansion entails incorporating the distinct aspects of Polkadot, such as multisignature (multisig) accounts, stashing (a mechanism for securing assets), proxy accounts (which allow one account to act on behalf of another), the use of hardware wallets (physical devices that store private keys), and [recovery pallet](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/recovery). The objective is to adapt, refine and extend the account access graph model to accurately represent and analyze the complex and varied ways in which users can interact with and access their assets within the Polkadot blockchain environment. This adaptation will consider the intricate security and operational dynamics of Polkadot's features, ensuring that the model remains relevant and effective in this advanced blockchain context.
+
+The main goal of the project will be to deliver an academic paper allowing anyone interested to extend on our work.
+
+This research will be assisted by a professor from the [Mathematics Department of Universitat Autònoma de Barcelona](https://www.uab.cat/web/maths-department-1210142393255.html), in the area of Discrete Mathematics.
+
+The planned work will contain specially Graphs, used to model the Account Access, among other fields of Discrete Mathematics.
+
 
 #### 2. Access Security analysis and evaluation
 
@@ -104,26 +111,23 @@ Not initiated.
 - **Total Estimated Workload:** 16 weeks
 - **Delivery Time:** 18 to 22 weeks
 - **Full-Time Equivalent (FTE):** 0.5
-- **Total Costs:** 25'600 DAI
+- **Total Costs:** 24,000 CHF
 
 ### Milestone 1 — User Account Access Security Analysis for Wallets
 
 - **Total Estimated Workload:** 16 weeks
 - **Delivery Time:** 18 to 22 weeks
 - **Full-Time Equivalent (FTE):** 0.5
-- **Total Costs:** 25'600 DAI
+- **Total Costs:** 24,000 CHF
 
-|  Number | Deliverable                                                       | Specification                                                                                                                                      |
-| ------: | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                                                           | Apache 2.0                                                                                                                                         |
-| **0b.** | Documentation                                                     | Document describing the threat model, scope of the analysis, and description of the approach/methodology used.                                     |
-| **1a.** | Analysis report: detection of unauthorized access vulnerabilities | Find (if any) vulnerabilities present in any wallet analyzed across all layers of investigation: account generation, restoring mechanisms, etc |
-| **1b.** | Analysis report: minimal counterexamples for potential exploits   | Provide (if any) minimal reproducible examples of all errors found in (2a).                                                                        |
-| **1c.** | Analysis report: user lockout risk assessment                     | Find (if any) potential lockout risk and describe strategies to minimize them.                                                                     |
-| **1d.** | Analysis report: non-critical improvements                        | Find (if any) potential improvements in user experience without compromising security.                                                             |
-| **2a.** | Research paper                                                    | Paper defining and describing all models used to analyse User Account Access Security.                                                             |
-| **2b.** | Code                                                              | By the end of the project, we'll make any code used public allowing anyone to use/extend our work.                                                 |
-
+|  Number | Deliverable                                                       | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------: | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                                                           | Apache 2.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **0b.** | Documentation                                                     | Document describing the threat model, scope of the analysis, and description of the approach/methodology used.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|  **1.** | Research paper                                                    | Academic paper defining and describing User Account Access models used to assess Access Security in next deliverables. It'll include sound proofs for all elements deducted. This will be the main research objective since it'll allow anyone to use and extend our work for other wallets or any other relevant entity to this purpose. We'll build on top of [UAAG paper](https://people.inf.ethz.ch/rsasse/pub/AccountAccessGraphs-CCS19.pdf)                                                                                                                                             |
+| **2a.** | Analysis report: detection of unauthorized access vulnerabilities | Applying (1), find (if any) vulnerabilities present in any wallet analyzed across all layers of investigation: account generation, authentication, and restoring mechanisms (we might extend layers of investigation based on prelimiary findings). We'll provide as well minimal reproducible examples for any potential exploit. If no vulnerabilities were to be found, we'll provide sound proofs of it. We'll provide as well a comprehensive study regarding user lockout risk; it'll comprise temporal lockout (eg. time to approve human recovery mechanisms) and definitive lockout. |
+| **2b.** | Analysis report: non-critical improvements                        | Applying (1), find (if any) possible improvements in user experience. For example, redundancies in social recovery methods would fit here. If we don't find any improvement, we'll document as well what was assessed.                                                                                                                                                                                                                                                                                                                                                                        |
+|  **3.** | Code                                                              | By the end of the project, we'll make any code used public allowing anyone to use/extend our work in combination with (1). NB: this deliverable is optional, since investigation is not yet defined if it'll be automatic and/or manual. In any case, we'll make everything used public.                                                                                                                                                                                                                                                                                                      |
 ## Future Plans
 
 Zondax long-term vision will always be to investigate and improve every layer of Polkadot ecosystem.
