@@ -218,9 +218,9 @@ The state of the Pendzl atm:
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  1,66
-- **Total Costs:** $90,000
+- **Total Costs:** $30,000
 
-### Milestone 1 Example — Functionality stated in the Project Details
+### Milestone 1 Library
 
 - **Estimated duration:** 1 month
 - **FTE:**  2,5
@@ -236,10 +236,9 @@ The state of the Pendzl atm:
 | 2. | Smart contract implementation | We will write our own smart contract implementations that are more customizable and allow developers for much more! |
 | 3. | ink 5.0.0-rc support | We will make the library work with ink 5.0.0-RC (and with ink 5.0.0 if it will be already released) |
 | 4. | Event emission | Our smart contract implementations will, by default, emit appropriate events |
-| 5. | Examples | We will provide examples of usage. |
 
 
-### Milestone 2 Example — Consultations
+### Milestone 2 Examples and Finalization
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1,5
@@ -252,10 +251,8 @@ The state of the Pendzl atm:
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains what Pendzl is, how it benefits the Polkadot ecosystem, how it improves the developer experience, and how it accelerates the onboarding of new projects. |
-| 1. | Developer Consultation | We will conduct consultations with ink smart contracts developers. We will ask them how they would like us to improve the first iteration of Pendzl. |
-| 2. | Ecosystem Consultation | We will conduct a consultation with the Ink! team, Aleph Zero, Acala, and other notable players in the field. We will seek their input on how to enhance the initial iteration of Pendzl. |
-| 3. | Applying results of consultations | We will integrate the feedback and insights obtained from consultations into the development process. |
-| 4. | Finalizing code | We will meticulously refine the codebase to meet state-of-the-art standards, ensuring it is audit-ready. |
+| 1. | Examples | We will provide examples of usage. |
+| 2. | Finalizing code | We will meticulously refine the codebase to meet state-of-the-art standards, ensuring it is audit-ready. |
 
 
 ## Future Plans
