@@ -73,6 +73,8 @@ Sources
 
 #### Similar Projects
 
+**DAuth**
+
 As highlighted by @keeganquigley, there are some overlaps between DOT Login and the [DAuth](https://grants.web3.foundation/applications/dauth_network#decentralized-oauth) project.
 
 DAuth utilizes Trusted Execution Environments (TEEs) to enhance privacy during the authentication process. In contrast, DOT Login employs a combination of zk-SNARKs, ephemeral keypairs, and a nonce for OAuth2 authentication to ensure user privacy. This approach avoids the reliance on hardware, potentially reducing risks associated with hardware vulnerabilities.
@@ -96,7 +98,24 @@ In summary, key differences between DOT Login and DAuth include:
 - **Architectural Simplicity**: We believe that the DOT Login architecture is simpler and more streamlined.
 - **Focus Areas**: DAuth also focuses on email messaging, a feature not present in DOT Login.
 
-Please note that above comparison is based on our current understanding and research of the DAuth project. We aimed for an objective analysis and acknowledge that there may be aspects of DAuth not fully covered. Our intent is to provide information for clarity and not to discredit or critique DAuth.
+**zkLogin**
+
+As indicated by @Noc2, [zkLogin](https://github.com/pioneersprize/Polkadot-Pioneers-Prize/blob/main/applications/zklogin-Reclaim-protocol.md) and DOT Login have some technical overlaps (OAuth2, zk circuits).
+
+ZkLogin is the Polkadot SDK-implementation of the [EVM-based reclaim protocol](https://github.com/reclaimprotocol/solidity-sdk/blob/main/contracts/Reclaim.sol). It focuses on proof of personhood use cases and enhanced bot protection, while DOT Login focuses on a web2-derived wallet. It depends on an off-chain, attestation-based architecture that introduces additional trust assumptions, since the dApps have no way to verify whether the attestor accurately observes, validates, and attests the data exchanges between the dApp and the on-chain components. In contrary to that, DOT Login doesn't introduce any additional trust assumptions in addition to the relience on the OAuth2 providers which both projects equally share. As outlined in the [project details](#project-details) section, our architecture allows for verification of the OAuth2 providers' signatures by bridging the JWK endpoints to the OCW to bring their public keys on-chain. We believe this process to be more transparent and to require no additional trust. Another major distinction is zkLogin's dependence on an additional app to generate the proofs (see their [demo](https://www.loom.com/share/b88ab8bb90ff498c8cbd486bdb4a42a4)) which might be an even higher barrier than simply using a browser-based wallet to log into a dApp (a trade-off that might be accepted by dApps that rely on proof of personhood use cases, such as a DAO voting system). Our solution, however, is aiming for a web2-native experience that requires no additional components - not even a browser extension.
+
+To summarise, the key differences between DOT Login and zkLogin are:
+
+- **Focus**: zkLogin focuses on proof of personhood and enhanced bot protection while DOT Login focuses on a wallet targeting web2 users
+- **Bot Protection**: although zkLogin provides enhanced bot protection, DOT Login's relience on reputable OAuth2 providers allows us to benefit from their bot protection measures
+- **UX**: zkLogin relies on a mobile app while DOT Login is browser-native, i.e. it doesn't require any components not previously known to web2 users to generate a wallet (not even a browser extension)
+- **Trust assumptions & security**: zkLogin seems to introduce additional trust assumptions (attestors have to be trusted which might represent a game-theoretical security limitation) while DOT Login's trust assumptions are limited to trusting OAuth2 providers (a trust assumption shared with zkLogin)
+
+Finally, we'd like to highlight the fact that DOT Login is pursuing a Polkadot SDK-first approach, while zkLogin represents the expansion of an existing protocol native to another ecosystem.
+
+**Disclaimer**
+
+Please note that above comparisons are based on our current understanding and research of the DAuth and zkLogin projects. We aimed for objective analyses and acknowledge that there may be aspects of DAuth/zkLogin not fully covered. Our intent is to provide information for clarity and not to discredit or critique DAuth/zkLogin.
 
 ## Team :busts_in_silhouette:
 
