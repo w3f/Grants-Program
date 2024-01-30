@@ -10,11 +10,9 @@
 
 ### Overview
 
-Cyborg Network is developing a DePIN based marketplace for edge computing servers is aimed at pioneering a novel approach to decentralized cloud computing within the Polkadot Ecosystem by establishing a marketplace that harnesses crowdsourced infrastructure. As a premier venture of this nature in the Polkadot landscape, our network effortlessly allows providers to integrate their machines, rewarding them for their invaluable participation.
+Cyborg Network is developing a DePIN based marketplace for edge computing servers to help AI and IoT companies boost their performance while curbing the cloud operations cost, all without necessitating a shift from their current cloud setups. Our vision is to act as a crucial middleware on the network's edge, managing specific low-latency tasks and reduce the costs associated with cloud operations, all the while complementing existing cloud services. As a premier venture of this nature in the Polkadot landscape, our network effortlessly allows providers to integrate their machines, rewarding them for their invaluable contribution.
 
-We actively oversee the provider machines, leveraging them as servers to cater to diverse customer demands, ensuring their specifications are met seamlessly.
-
-Our primary focus rests on delivering bespoke service packages, each meticulously crafted for different deployment scenarios. Our objective is to offer users a service experience reminiscent of the Web 2.0 era. While our foundation is anchored in decentralized cloud solutions, our long-term vision is set on transitioning towards a decentralized edge, especially as we delve into the flourishing AI and IoT age.
+We establish connections with small to medium-sized data centers to address the demands of enterprise-level clients, ensuring that their requirements are fully met. Our primary emphasis lies in delivering tailored service packages, meticulously designed for diverse deployment scenarios. Our overarching goal is to provide users with a service experience reminiscent of the Web 2.0 era.
 
 We are embarking on an ambitious mission to establish ourselves as a Polkadot and Kusama parachain. Our decision is anchored in several key reasons:
 
@@ -52,17 +50,13 @@ These solutions are designed to address real-world challenges while harnessing t
 
 ### Ecosystem Fit
 
-Cyborg Network augments the Polkadot ecosystem by ushering in decentralized cloud and edge computing, crucial for the burgeoning Web3 and blockchain landscapes. By primarily catering to Web2 application providers, we're paving the way for a fresh wave of users to engage with the Polkadot ecosystem, fueling its expansion.
+Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge computing, crucial for the growing demand of ai and iot applications. By primarily catering to Web2 application providers, we're paving the way for a fresh wave of users to engage with the Polkadot ecosystem, fueling its expansion.
 
-Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized cloud computing within the Polkadot/Kusama environment, our technical paths are distinct. Phala leans towards off-chain computation, anchored by a fortified smart contract platform. Our perspective suggests Phala may resonate more with traditional sectors, like health tech, aiming to harness blockchain's innovation. Conversely, our insights show that off-chain computation finds favor with Web2-centric applications. Hence, rather than viewing Phala as a direct rival, we consider them as a complementary entity, even if occasional market overlaps arise.
+Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala leans towards off-chain computation, anchored by a fortified smart contract platform. Our perspective suggests Phala may resonate more with traditional sectors, like health tech, aiming to harness blockchain's innovation. Conversely, our insights show that off-chain computation finds favor with Web2-centric applications. Hence, rather than viewing Phala as a direct rival, we consider them as a complementary entity.
 
-Our ultimate ambition is to evolve into a comprehensive decentralized edge computing network, thereby unlocking novel markets, especially in real-time data management for edgeAI and edge IoT devices.
+Our ultimate ambition is to become a decentralized edge computing network, thereby unlocking novel markets, especially in real-time computation for edgeAI and edge IoT devices.
 
-For instance, we've been in discussions with a firm operating security cameras monitoring vehicular compliance, like adherence to seatbelt regulations and lane discipline. Their operations grapple with latency challenges attributed to the tangible distance separating cloud data centers and the cameras. Our solution addresses this by offering proximate edge instances hosted by local entities but ensuring utmost security through a protected computing environment, a feature we're actively developing.
-
-The technological landscape sees a plethora of competitors, each carving their niche with unique technical and market strategies. Renowned names include [SONM](https://sonm.com/), [Aleph.im](https://aleph.im/), [Akash Network](https://akash.network/), [Golem](https://www.golem.network/) and [Cudos](https://www.cudos.org/) among others. The vast spectrum of contenders across diverse ecosystems underscores our mission's gravity. To maintain its edge, Polkadot must foster a spectrum of cloud computing initiatives, directly rivaling centralized Web2 behemoths like AWS and Google Cloud, thereby consolidating its position against formidable adversaries.
-
-It's worth highlighting that the Solana ecosystem, discerning the nuances between different cloud computing models, endorses both in-chain (Akash) and off-chain (Aleph.im) decentralized projects. Such a discerning approach grants Solana a competitive edge in the decentralized cloud computing domain.
+The technological landscape sees a plethora of competitors, each carving their niche with unique technical and market strategies. Renowned names include [Akash Network](https://akash.network/), and [Golem](https://www.golem.network/) .
 
 ## Team :busts_in_silhouette:
 
@@ -80,11 +74,11 @@ It's worth highlighting that the Solana ecosystem, discerning the nuances betwee
 
 ### Team's experience
 
-- [Barath Kanna](https://www.linkedin.com/in/barath-kanna-23a23a172) - A developer with a specialization in Rust and blockchain technology. His experience is rooted in designing blockchain infrastructure solutions. Notably, he is an alumni of the Polkadot Blockchain Academy's third cohort at UC Berkeley (July - Aug 2023)
+- [Barath Kanna](https://www.linkedin.com/in/barath-kanna-23a23a172) - A developer with a specialization in Rust and blockchain technology. His experience is rooted in designing blockchain infrastructure solutions. Notably, he is an alumni of the Polkadot Blockchain Academy's third cohort at UC Berkeley (Jul - Aug 2023)
 
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) ( Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
 
-- [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - She has been involved in operations for Web3 projects and has taken initiatives in the blockchain community. One of her contributions is the establishment of [Indi Verse DAO](https://www.linkedin.com/company/indi-verse-dao), a web 3.0 community with a focus on blockchain education in India. Additionally, she is the candidate of the Polkadot Ambassador Program.
+- [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - She has been involved in operations for Web3 projects and has taken initiatives in the blockchain community. One of her contributions is the establishment of [Indi Verse DAO](https://www.linkedin.com/company/indi-verse-dao), a web 3.0 community in India. Additionally, she is the candidate of the Polkadot Ambassador Program. She is also a graduate from the Polkadot Blockchain Academy's Founders Track at Hong Kong (Jan - Feb 2024)
 
 ### Team Code Repos
 
