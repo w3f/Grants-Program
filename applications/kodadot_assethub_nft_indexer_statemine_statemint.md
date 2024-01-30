@@ -1,7 +1,7 @@
 # AssetHub NFT Indexer
 
 - **Team Name:**  KodaDot
-- **Payment Address:**  1KxzJHoRJHi8EgWVhrGDueeyzg8PyihAvSL3NP6QMcxEve6
+- **Payment Address:**  FIAT (as per email communcation on 29th January 2024 at 15:03 CET)
 - **[Level](https://github.com/w3f/Grants-Program#baby_chick-level-2):**  2 
 
 ### Overview
