@@ -1,6 +1,6 @@
 # Decentral ML
-- **Team Name:** Livetree Community Ltd
-- **Payment Address:** 0xC852e933FBB719b607A96D73b033b3523Be04374 (Ethereum USDC)
+- **Team Name:** Seed Intelligence Limited
+- **Payment Address:** Fiat 03.01.2024, 04:04
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -100,6 +100,7 @@ To our knowledge, there are currently two AI-related projects in the Substrate/P
 - Names of team members:
   - Dr Jamie Ward
   - Isak Grimsson
+  - Mathias Ciliberto
 
  We have also made contact with wider related field researchers: 
 [Dr. Philip Treleaven](http://www0.cs.ucl.ac.uk/staff/P.Treleaven/)  | [Dr Jonathan M M Hall](https://drjonathanmmhallfrsa.wordpress.com/) | [Jesse C. Cresswell](https://scholar.google.ca/citations?user=7CwOlvoAAAAJ&hl=en)
@@ -114,8 +115,8 @@ To our knowledge, there are currently two AI-related projects in the Substrate/P
 
 ### Legal Structure
 
-- **Registered Address:** 301 Kingsland Rd, Haggerston, London, E8 4DS, UK
-- **Registered Legal Entity:** Livetree Community Ltd
+- **Registered Address:** Freda St, London, UK
+- **Registered Legal Entity:** Seed Intelligence Limited
 
 ### Team's experience
 The team consists of computer science academics and software engineers, including Dr. Jamie Ward, a senior lecturer in machine learning at Goldsmith's University, Isak Grimson, a computer science graduate specialising in machine learning research, and Ashley Turing, an experienced computer software engineer with expertise in blockchain technologies.
@@ -127,11 +128,14 @@ The team consists of computer science academics and software engineers, includin
 
 - <https://github.com/IsakGrimsson>
 
+
+
 ### Team LinkedIn Profiles (if available)
 
 - <https://www.linkedin.com/in/ashley-turing/> Ashley Turing
 
 - <https://www.linkedin.com/in/jamieward/> Jaime Ward
+
 
 - <https://www.linkedin.com/in/isakgrimsson/> Isak Grimsson
 
