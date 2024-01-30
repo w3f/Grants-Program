@@ -1,8 +1,8 @@
-# Cyborg Network - Decentralized Computing paradigms for web 3.0
+# Cyborg Network - Empowering Decentralized Edge Networks
 
 - **Team Name:** Cyborg Network
-- **Payment Address:** 14zZ3LXmJRHRZKU7cQYKxjXGJtoZN1peazo79YmsRp6AA6i4 (DOT)
-- **Level:** 2
+- **Payment Address:** 0x40722FC6D12f79E62Cd2C857F40E82850bB24586 (USDT on Ethereum)
+- **Level:** 1
 
 ## Project Overview :page_facing_up:
 
@@ -10,7 +10,7 @@
 
 ### Overview
 
-Cyborg Network is aimed at pioneering a novel approach to decentralized cloud computing within the Polkadot Ecosystem by establishing a marketplace that harnesses crowdsourced infrastructure. As a premier venture of this nature in the Polkadot landscape, our network effortlessly allows providers to integrate their machines, rewarding them for their invaluable participation.
+Cyborg Network is developing a DePIN based marketplace for edge computing servers is aimed at pioneering a novel approach to decentralized cloud computing within the Polkadot Ecosystem by establishing a marketplace that harnesses crowdsourced infrastructure. As a premier venture of this nature in the Polkadot landscape, our network effortlessly allows providers to integrate their machines, rewarding them for their invaluable participation.
 
 We actively oversee the provider machines, leveraging them as servers to cater to diverse customer demands, ensuring their specifications are met seamlessly.
 
