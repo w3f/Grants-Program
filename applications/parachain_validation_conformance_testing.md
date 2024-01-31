@@ -15,7 +15,6 @@ Each Polkadot host implementation seeking to participate in consensus must incor
 
 The project's scope encompasses the creation of tests to validate compliant wasm files. Additionally, we will implement multiple PVF tests designed to exceed specified limits. Furthermore, we will conduct fuzzing tests on various PVF permutations to assess their behavior across multiple constraints.
 The tests will be encapsulated within a Command Line Interface (CLI), providing the flexibility to execute them manually or seamlessly integrate them into a CI/CD pipeline.
----
 As BlockyDevs, our introduction to the Polkadot ecosystem began with active participation in numerous hackathons. Subsequently, our team members initiated the [SmartBeaver](https://smartbeaver.io/) project, a PSP wizard designed to generate PSP-compliant contracts in pure ink! This project is currently under our maintenance and development. In addition to our own endeavors, we have extended our assistance to various projects in constructing solutions on the Polkadot platform.
 
 As a team, our continuous pursuit is to enhance our skills and knowledge. Engaging in these projects will afford us the opportunity to delve deeper into understanding the limits of the Polkadot ecosystem and make meaningful contributions to its ongoing growth.
