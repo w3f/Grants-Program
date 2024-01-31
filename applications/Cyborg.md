@@ -28,9 +28,7 @@ Lastly, the substrate framework stands out as the premier tool for crafting bloc
 
 The core of our computing solution relies on both off-chain components and substrate pallets that work harmoniously with each other.
 
-![IoT Devices (1920 × 1250 px)](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/84f62d3a-d53a-4531-af86-498acaf6cbba)
-
-Our system invites users to download and run our Cyborg Smart Client (CSC) binary as a root, allowing them to become a provider within our network seamlessly. Upon activation, the CSC immediately establishes a WebSocket connection with CyberHub—our sophisticated backend server and event handler. CyberHub not only serves as an oracle for our substrate blockchain but also links to a dedicated database containing all crucial business data. While these components start off centralized, we're strategically planning to transition them to decentralized structures after ensuring our business model operates flawlessly in such an environment.
+Our system invites compute providers to download and run our Cyborg Smart Client (CSC) binary as a root, allowing them to become a provider within our network seamlessly. Upon activation, the CSC immediately establishes a subxt connection with the substrate blockchain. 
 
 We've embedded all operational logic within our pallets. Through the Cyborg Connect platform Dapp, which is integrated with our blockchain, customers have direct access to enact actions on the hosted machine. Both providers and customers can utilize our platform to view detailed analytics and metrics pertaining to their instances.
 
