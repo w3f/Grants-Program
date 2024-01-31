@@ -11,8 +11,6 @@ Response to [Parachain Validation Conformance Testing RFP](https://github.com/w3
 The project aims to develop a Command Line Interface (CLI) featuring Parachain Validation Conformance Tests. The CLI can be executed either manually or seamlessly integrated into a CI/CD pipeline.
 ### Overview
 
-Please provide the following:
-
 Each Polkadot host implementation seeking to participate in consensus must incorporate the Parachains protocol. An integral component of the Parachains protocol is the execution of the Parachain Validation Function (PVF). The PVF is a WebAssembly (wasm) blob mandated to furnish the validate_block function, accepting a fixed set of arguments, including proof of validity from a collator. This function validates the proof and, upon success, returns relevant information to the Polkadot host implementation. The PVF operates as a black box for the Polkadot node, exclusively utilizing the validate_block function. It is imperative to maintain limits on the execution of these PVFs to ensure consensus across diverse node implementations, versions, hardware configurations, and OS setups.
 
 The project's scope encompasses the creation of tests to validate compliant wasm files. Additionally, we will implement multiple PVF tests designed to exceed specified limits. Furthermore, we will conduct fuzzing tests on various PVF permutations to assess their behavior across multiple constraints.
