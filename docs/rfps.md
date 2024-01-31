@@ -25,8 +25,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | :-- | :----------: |
 | [anti-collusion_infrastructure.md](RFPs/anti-collusion_infrastructure.md) | 21.09.2023 |
 | [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 12.10.2023 |
-| [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |
-| [parachain_validation_conformance_testing.md](RFPs/parachain_validation_conformance_testing.md) | 18.01.2023 |  
+| [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |  
 | [sub-consensus.md](RFPs/sub-consensus.md) | 23.02.2022 |
 | [user-account-access-analysis.md](RFPs/user-account-access-analysis.md) | 07.01.2023 |
 
@@ -69,7 +68,8 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [grant_management_webapp.md](RFPs/grant_management_webapp.md) | 25.09.2023 |
 | [ksm-tipping-button.md](RFPs/ksm-tipping-button.md) | 20.07.2021 |  
 | [multi-chain-block-explorer.md](RFPs/multi-chain-block-explorer.md) | 27.09.2023 |
-| [on-chain-quadratic-funding.md](RFPs/on-chain-quadratic-funding.md) | 29.03.2022 |  
+| [on-chain-quadratic-funding.md](RFPs/on-chain-quadratic-funding.md) | 29.03.2022 | 
+| [parachain_validation_conformance_testing.md](RFPs/parachain_validation_conformance_testing.md) | 31.01.2024 |
 | [php-api.md](RFPs/php-api.md) | 27.05.2022 |  
 | [php-scale.md](RFPs/php-scale.md) | 23.11.2022 |  
 | [polkadot-collator-setup.md](RFPs/polkadot-collator-setup.md) | 22.03.2023 |
