@@ -1,10 +1,10 @@
 # High-availability validator setup
 
-:::caution
-This Request for Proposals is currently considered **under development**, meaning one or more grants have been signed to address the topic. We might be interested in additional implementations, but it’s better to double check this with the grants team.
+:::danger
+This Request for Proposals is _closed_, meaning we are not looking for any more proposals on this topic at the moment.
 :::
 
-* **Status:** [Implemented](https://github.com/w3f/Grants-Program/blob/master/applications/High_availability_validator_setup.md)
+* **Status:** [Closed](https://github.com/w3f/Grants-Program/blob/master/applications/High_availability_validator_setup.md)
 * **Proposer:** mmagician
 * **Projects you think this work could be useful for:** Polkadot & Kusama Validators
 
