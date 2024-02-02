@@ -52,7 +52,7 @@ Users gain more options for securely interacting with decentralized applications
 
 - **Futur Store Console:** A web application portal facilitating app submission and lifecycle management within the Futur Store ecosystem.
 
-- **Storage Layer:** The layer dedicated to storing validated APKs securely.
+- **Storage Layer:** Layer dedicated to storing validated APKs and IPAs(for iOS). IPFS and/or [Crust Network](https://www.crust.network/). Crust integrate IPFS and have pinning features and also is a parachain in the Polkadot ecosystem.
 
 - **SAST/DAST Module:** Static and Dynamic Analysis component for scanning submited apks for checking security (initially interfacing with
  [MobSF: Mobile Security Framework](https://github.com/MobSF/Mobile-Security-Framework-MobSF) Web API).
@@ -148,6 +148,7 @@ This current application focuses on putting in place the Futur Protocol which co
 - **FTE:**  1
 - **Costs:** 7,000 USD
 
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
@@ -156,21 +157,23 @@ This current application focuses on putting in place the Futur Protocol which co
 | 0d. | Articles |Articles explaining the FuturStore stack will be published. There will be article for FuturStore users and also for App developers wanting to submit apps on the store. |
 | 1. | FuturStore Mobile app | A **Flutter** mobile app store, displays catalog of  published apps. Users can browse and install available apps. |
 | 2. | Futur Protocol Runtime modules | Suite of pallets that will contain the logic of the Futurstore |
-| 2.a | DevRegistry Pallet | Manages the registration of developers with functionnalities like: RegisterDev,... |
-|  | - |  RegisterDev : extrinsic |
-| 2.b | AppRegistry Pallet | functionnalities: Submit, Publish, Unpublish, Update, Download, Review and SetStoreRegistrationFee.**metadata** :title, description, category, tags, free/paid, price,apk location, metadata links|
-|  | - |  DownloadApp : extrinsic |
-|  | - |  SubmitApp : extrinsic |
-|  | - |  PublishApp : extrinsic |
-|  | - |  UnPublishApp : extrinsic|
-|  | - |  DeleteApp  : extrinsic |
-|  | - |  ReviewApp : extrinsic |
-|  | - |  SetStoreRegistrationFee : extrinsic |
-|  | - |  SubmitScan : function - off-chain worker (communicate with **SAST/DAST Module**)|
-|  | - |  FetchScanResults : function - off-chain worker (communicate with **SAST/DAST Module**)|
-| 3 | SAST/DAST Module | [MobSF: Mobile Security Framework](https://github.com/MobSF/Mobile-Security-Framework-MobSF) web API for Static and Dynamic Analysis module for scanning submitted apps. Integrated through off-chain workers. If no issues found the app get's published to the app store |
+| 2.a | **DevRegistry Pallet** | Manages the registration of developers with functionnalities like: RegisterDev,... |
+|  | RegisterDev | Extrinsic called by app developer from the console to register a developer account  (address and other metadata) and pay the registration fee (akin to paying the 25$ developer registration fee in Google Playstore or 99$ Apple app store fee).|
+|  | UnRegisterDev |  Unregister a developer account )|
+| 2.b | **AppRegistry Pallet** | functionnalities: Submit, Publish, Unpublish, Update, BuyApp, Review and SetStoreRegistrationFee.**metadata** |
+|  | BuyApp |   Extrinsic called **app user** from the mobile app using the app integrated wallet to buy the app. |
+|  | SubmitApp | Extrinsic called by **app developer** from console to submit app metadata. |
+|  | PublishApp | Extrinsic called by **app developer** from console to publish a submited app. An app can be submited and be unpublished (like in other stores, a developer can unpublish an app) |
+|  | UnPublishApp | Extrinsic  called by **app developer** from console to unpublish a submited app.|
+|  | DeleteApp | Extrinsic called by **app developer** to remove the app from it's catalog |
+|  | SetStoreRegistrationFee | Extrinsic called by **sudo or collective** for setting developer registration fee |
+|  | - |  VerifyAppReview : function - The backend server queues up these off-chain review requests. Off-chain worker on the Substrate node periodically checks this queue and grabs review requests.It uses the public key and signature to verify the review signature matches. This proves the review came from that user and then will be stored on-chain|
+|  | - |  SubmitScan : function - called by off-chain worker and (communicate with **SAST/DAST Module** ) |
+|  | - |  FetchScanResults : function - off-chain worker to communicate with **SAST/DAST Module** and according to the scan results if an app is qualified it will be published, if not the app developer will receive a notification on the console to take action accordingly |
+| 3 | SAST/DAST Module |  Static and Dynamic Analysis component for scanning submited apks for checking security (initially interfacing with [MobSF: Mobile Security Framework](https://github.com/MobSF/Mobile-Security-Framework-MobSF) Web API initially. Coordinating with the backend and off-chain workers. |
 | 4 | Futur Console | Web portal for app developers for app submission and management (similar to google play console); **Angular or Flutter Web** |
-
+| 5 | Backend Server|  Serving as the API endpoint and also help in off-chain tasks, ex: Queuing and verifying off-chain review signatures before ingesting them on-chain via the off-chain worker,... |
+| 6 | Storage Layer |  IPFS and/or Crust Network ( or Rocky Crust Testnet) in development phase|
 
 
 
