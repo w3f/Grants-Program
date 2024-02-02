@@ -28,7 +28,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Check out our newly created <a target="_blank" rel="noopener noreferrer" href="https://futures.web3.foundation/">Decentralized Futures Program</a>!',
+        'Check out our announcements of the most recent <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Web3foundation">Decentralized Futures grants recipients</a>!',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,

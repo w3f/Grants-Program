@@ -3,6 +3,7 @@
 - **Team Name:** Odyssey B.V.
 - **Payment Address:** 0x826fde427152d9fc0bf045dd858baa2de06b383b (USDC) 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1221#issuecomment-1921327886)
 
 ## Project Overview :page_facing_up:
 

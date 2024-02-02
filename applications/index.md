@@ -53,6 +53,8 @@ Besides, **there is a clear difference between an application being accepted and
 | [MLabs](https://mlabs.city/)                       | [TuxedoDapp](./TuxedoDapp.md)                     | [GitHub](https://github.com/mlabs-haskell)                 | ☐          |        ☐       |      ☐      |
 | [Lastic](https://www.lastic.xyz/)                       | [Coretime Indexer + Visualizations](./lastic-grant3.md)                     | [GitHub](https://github.com/LasticXYZ)                 | ☐          |        ☐       |      ☐      |
 | [IgorStojanov](https://igorstojanov.com/)                       | [Material Design Makeover for Substrate Front-End Template](./lsi-front-end-template.md)                     | [GitHub](https://github.com/stojanov-igor)                 | ☐          |        ☐       |      ☐      |
+| DOT Login                       | [DOT Login](./dot-login.md)                     | [GitHub](https://github.com/singkeo)                 | ☐          |        ☐       |      ☐      |
+
 ## 2023
 
 ### 🏄 Wave 20 - Q4 2023
@@ -72,7 +74,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Libeccio Labs](https://github.com/LibeccioLabs)                    | [Tux0](tux0.md)                                                              | [GitHub](https://github.com/LibeccioLabs)                      | ☐          |       ☐        |     ☐     |
 | [PolkaGate](https://polkagate.xyz)                    | [PolkaMask](polkamask.md)                                                              | [GitHub](https://github.com/PolkaGate)                      | ☐          |       ☐        |     ☐     |
 | [Mansa Capital](https://mansacapital.us/)                    | [Ssal](ssal-commods-dex.md)                                                              | [GitHub](https://github.com/MatteoPerona/Riso)                      | ☐          |       ☐        |     ☐     |
-| [Deitos Network](https://github.com/Deitos-Network)                    | [Deitos Network](Deitos_Network.md)                                                              | [GitHub](https://github.com/Deitos-Network)                      | ☐          |       ☐        |     ☐     |
+| [Deitos Network](https://github.com/Deitos-Network)                    | [Deitos Network](Deitos_Network.md)                                                              | [GitHub](https://github.com/Deitos-Network)                      | ☐          |       ☒        |     ☐     |
 | [Lastic](https://www.lastic.xyz/)                    | [Coretime Sale Price Calculator](lastic-price-simulation-2.md)                                                              | [GitHub](https://github.com/LasticXYZ/price-simulation)                      | ☐          |       ☒        |     ☒     |
 | [Tokenguard.io](http://tokenguard.io/)                   | [Tokenguard](Tokenguard.md)                                                              | [GitHub](https://github.com/tokenguardio)                      | ☐          |       ☐        |     ☐     |
 | [element36 AG](https://element36.io)                   | [Hyperfridge](hyperfridge.md)                                                              | [GitHub](https://github.com/element36-io)                      | ☐          |       ☐        |     ☐     |
@@ -81,7 +83,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests 3](CoinFabrik_On_Ink_Integration_Tests_3.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☒        |     ☒     |
 | [Andrea Di Franco](https://github.com/andredif)                    | [QuantumGuard](quantum-guard.md)                                                              | [GitHub](https://github.com/andredif)                      | ☐          |       ☐        |     ☐     |
 | [Solidbit GmbH](https://solid-bit.com)                    | [Democratic Governance](democratic-governance-1.md)                                                              | [GitHub](https://github.com/encointer)                      | ☐          |       ☒        |     ☒     |
-| [Auguth Tech](https://github.com/auguth)                    | [Proof of Contract Stake (Pallet)](PoCS.md)                                                              | [GitHub](https://github.com/auguth/pocs)                      | ☐          |       ☐        |     ☐     |
+| [Auguth Tech](https://github.com/auguth)                    | [Proof of Contract Stake (Pallet)](PoCS.md)                                                              | [GitHub](https://github.com/auguth/pocs)                      | ☐          |       ☒        |     ☐     |
 
 [🔝](#top)
 
@@ -116,11 +118,11 @@ Besides, **there is a clear difference between an application being accepted and
 | [PolyCrypt GmbH](https://polycry.pt)                                 | [Distributed Cryptography for Polkadot Wallets](./distributed_cryptography_for_polkadot_wallets.md)   | [GitHub](https://github.com/perun-network)                               | ☐          |        ☐       |      ☐     |
 | [Open Smart Contract](https://github.com/OpenSmartContract)                                 | [ISO20022 PoC](./ISO20022.md)   | [GitHub](https://github.com/OpenSmartContract)                               | ☐          |        ☒       |      ☒     |
 | [DAOsign](https://daosign.org/)                                 | [DAOsign](./DAOsign.md)   | [GitHub](https://github.com/DAOsign)                               | ☐          |        ☐       |      ☐     |
-| [Zondax AG](https://zondax.ch/)                                 | [PoC Polkadot Conformance Tests](./polkadot_tests.md)   | [GitHub](https://github.com/zondax)                               | ☐          |        ☐       |      ☐     |
+| [Zondax AG](https://zondax.ch/)                                 | [PoC Polkadot Conformance Tests](./polkadot_tests.md)   | [GitHub](https://github.com/zondax)                               | ☐          |        ☒       |      ☒     |
 | [SO/DA zone](https://github.com/sodazone)                           | [Ocelloids XCM Transfer Monitoring Service](ocelloids_xcm_monitoring_service.md)       | [GitHub](https://github.com/sodazone)                                 | ☐          |        ☒       |      ☒     |
 | [Moonsong Labs](https://moonsonglabs.com/)                           | [StorageHub](./StorageHub.md)       | [GitHub](https://github.com/Moonsong-Labs)                                 | ☐          |        ☒       |      ☐     |
 | [Jonathan Brown](https://acuity.social/)                       | [Hybrid Explorer Phase 2](hybrid2.md)                                       | [GitHub](https://github.com/hybrid-explorer)                                 | ☐          |        ☒       |      ☐     |
-| [Coong Crafts](https://coongcrafts.io/)                       | [DelightfulDOT](delightfuldot.md)                                       | [GitHub](https://github.com/CoongCrafts)                                 | ☐          |        ☐       |      ☐     |
+| [Coong Crafts](https://coongcrafts.io/)                       | [DelightfulDOT](delightfuldot.md)                                       | [GitHub](https://github.com/CoongCrafts)                                 | ☐          |        ☒       |      ☐     |
 | [Lastic](https://www.lastic.xyz/)                       | [Lastic](Lastic.md)                                       | [GitHub](https://github.com/LasticXYZ)                                 | ☐          |        ☒       |      ☒     |
 
 [🔝](#top)

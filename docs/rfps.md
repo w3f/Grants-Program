@@ -25,8 +25,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | :-- | :----------: |
 | [anti-collusion_infrastructure.md](RFPs/anti-collusion_infrastructure.md) | 21.09.2023 |
 | [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 12.10.2023 |
-| [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |
-| [parachain_validation_conformance_testing.md](RFPs/parachain_validation_conformance_testing.md) | 18.01.2023 |  
+| [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |  
 | [sub-consensus.md](RFPs/sub-consensus.md) | 23.02.2022 |
 | [user-account-access-analysis.md](RFPs/user-account-access-analysis.md) | 07.01.2023 |
 
@@ -45,10 +44,8 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [implementation-benchmarking.md](RFPs/implementation-benchmarking.md) | 20.09.2023 |
 | [ink!_smart_contract_block_explorer.md](RFPs/ink_smart_contract_block_explorer.md) | 20.09.2023 |
 | [ISO_8583.md](RFPs/ISO_8583.md) | 20.09.2023 |
-| [jsonrpsee-proxy-support.md](RFPs/jsonrpsee-proxy-support.md) | 06.11.2023 |
 | [move_smart_contract_pallet.md](RFPs/move_smart_contract_pallet.md) | 02.08.2023 |
 | [polkadot-protocol_conformance_tests.md](RFPs/polkadot-protocol_conformance_tests.md) | 21.09.2023 |
-| [raft-validators.md](RFPs/raft-validators.md) | 23.05.2023 |
 | [Static-Analysis-for-Runtime-Pallets.md](RFPs/Static-Analysis-for-Runtime-Pallets.md) | 27.09.2023 |
 | [xcm-tool.md](RFPs/xcm-tool.md) | 21.09.2023 |
 
@@ -67,13 +64,16 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [crowdloan_front_end_template.md](RFPs/crowdloan_front_end_template.md) | 25.04.2023 |  
 | [epassport-zk-validation.md](RFPs/epassport-zk-validation.md) | 21.03.2023 |
 | [grant_management_webapp.md](RFPs/grant_management_webapp.md) | 25.09.2023 |
+| [jsonrpsee-proxy-support.md](RFPs/jsonrpsee-proxy-support.md) | 31.01.2024 |
 | [ksm-tipping-button.md](RFPs/ksm-tipping-button.md) | 20.07.2021 |  
 | [multi-chain-block-explorer.md](RFPs/multi-chain-block-explorer.md) | 27.09.2023 |
-| [on-chain-quadratic-funding.md](RFPs/on-chain-quadratic-funding.md) | 29.03.2022 |  
+| [on-chain-quadratic-funding.md](RFPs/on-chain-quadratic-funding.md) | 29.03.2022 | 
+| [parachain_validation_conformance_testing.md](RFPs/parachain_validation_conformance_testing.md) | 31.01.2024 |
 | [php-api.md](RFPs/php-api.md) | 27.05.2022 |  
 | [php-scale.md](RFPs/php-scale.md) | 23.11.2022 |  
 | [polkadot-collator-setup.md](RFPs/polkadot-collator-setup.md) | 22.03.2023 |
 | [privacy-enhancement-polkadot-extension.md](RFPs/privacy-enhancement-polkadot-extension.md) | 27.09.2023 |
+| [raft-validators.md](RFPs/raft-validators.md) | 31.01.2024 |
 | [scale-codec-comparator.md](RFPs/scale-codec-comparator.md) | 27.09.2023 |
 | [social-recovery-wallet.md](RFPs/social-recovery-wallet.md) | 03.03.2023 |
 | [staking-rewards-collector-front-end.md](RFPs/staking-rewards-collector-front-end.md) | 20.07.2021 |  
