@@ -1,7 +1,7 @@
 # Proof of Contract Stake (Pallet)
 
 - **Team Name:** Auguth Tech
-- **Payment Address:** BTC (bc1qdajpxy5wc6kcsdaaa4e760977nd03g86khay9g)
+- **Payment:** FIAT 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ## Project Overview :page_facing_up:
@@ -137,13 +137,13 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 
 - **Total Estimated Duration:**  15 weeks
 - **Full-Time Equivalent (FTE):**  3-3.5
-- **Total Costs:**  BTC equivalent to 25,000 USD
+- **Total Costs:**  25,000 USD
 
 ### Milestone 1 - Pallet Contract Update
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3-3.5
-- **Costs:** BTC equivalent to 7,000 USD
+- **Costs:** 7,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -158,7 +158,7 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  3-3.5
-- **Costs:** BTC equivalent to 10,000 USD
+- **Costs:** 10,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -173,7 +173,7 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 
 - **Estimated duration:** 5 weeks
 - **FTE:**  3
-- **Costs:**  BTC equivalent to 8,000 USD
+- **Costs:** 8,000 USD
 
 | Number |        Deliverable        | Specification   |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
