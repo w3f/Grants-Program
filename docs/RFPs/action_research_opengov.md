@@ -1,10 +1,9 @@
 # Action Research for OpenGov
 
 * **Status:** Open (anyone is allowed to apply) 
-* **Proposer:** GitHub username
-* **Your Project(s):** [optional]: Link(s)
-* **Projects you think this work could be useful for** [optional]: Link(s)
-* **Teams/People that could deliver the RFP** [optional]: Link(s)
+* **Proposer:**  [Anaelle | Parity](https://github.com/anaelleparity)
+* **Projects you think this work could be useful for** [optional]: [OpenGov](https://wiki.polkadot.network/docs/learn-polkadot-opengov-index)
+* **Teams/People that could deliver the RFP** [optional]: [The Web4 initiative](https://forum.polkadot.network/t/the-web4-initiative-decentralizing-user-powers-and-controls/4202/3), [Address Labs](https://polkadot.polkassembly.io/referenda/450), [Metagov](https://polkadot.polkassembly.io/post/1777), and other blockchain ecosystem contributors with academic/analyst backgrounds.
 
 ## Project Description :page_facing_up: 
 
@@ -14,9 +13,8 @@ Please describe exactly why you are proposing this RFP. Make sure to point out w
 
 Please list the deliverables of the project in as much detail as possible. Please also estimate the amount of work required and try to divide the project into meaningful milestones.
 
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Amount of time (in days) required for a single person to complete this project ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in USD for the whole project. 
+* **Total Estimated Duration:** 3-6 months
+
 ### Milestone 1
 
 Please add additional milestones in the same way: 
