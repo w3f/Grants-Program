@@ -57,6 +57,37 @@ The planned feasibility study aims to determine whether it is both possible and 
 In terms of utilizing quantum entropy, our goal is to advance beyond the RanDao-like application of entropy, focusing instead on its use in the initialization of Verifiable Random Functions. Additionally, we plan to investigate the use of remote quantum entropy sources, such as those accessible through API3 services, where we already provide quantum entropy (see **[API3 Quantum Entropy Providers](https://docs.api3.org/reference/qrng/providers.html)**). We will also consider local sources of quantum entropy, employing devices that we have designed and manufactured.
 
 
+## How our current application differs from our previous works
+
+ We started developing Quantum Secured Blockchains theoretically. Our two key papers are listed below ["The key papers"](#the-key-papers-are) section.
+
+ Our first project was a generic blockchain model in TypeScript for node.js, aiming to explore the application of quantum cryptographic primitives in a basic setting. Details of that project can be found here: ["Quantum Blockchain’s „QKDBase” – the first QKD and QRNG based 
+quantum blockchain mode"](https://www.quantumblockchains.io/reports/QKDBase.pdf).
+
+The project that commenced later, already utilizing Substrate, was funded through our own resources, derived from a pre-seed investment by ["LT Capital VC"](https://ltcapital.vc/). 
+The outcomes of this work are detailed in our whitepaper.
+
+The main differences between that work and this proposal is:
+
+### PQC Algorithms: 
+As stated above, we aim to evaluate, optimize and assess our existing implementation, which hasn't yet undergone rigorous security evaluation much needed for serious deployments. We also plan to integrate the KYBER algorithm; previously, we only implemented Dilithium.
+
+### HD Wallets: 
+We intend to develop HD Wallets based on Post-Quantum algorithms, a task we haven't tackled before. Designing and implementing these in a Post-Quantum context is notably challenging as lattice based PQC algorithms behave differently than e.g. classical EC based ones.
+
+### Quantum Entropy: 
+Our prior work only involved a RanDao-like scheme and some minor use of randomness. In this application, we aim to enhance and elevate its use, potentially incorporating VRFs, a task that is both complex and non-trivial.
+
+### P2P Communication: 
+We plan to employ Post-Quantum KEMs (Key Exchange Mechanisms) for peer-to-peer communication, a feature not present in our earlier work.
+
+### Evaluation of QKD Paradigm feasibility: 
+Here we propose a feasibility study on future use of the QKD (Quantum Key Distribution) paradigm for PUBLIC blockchains. Our previous project, QSB, was a private/permissioned chain. The focus here is on feasibility, as actual development would surpass the available funding. It aims at answering the dilemma if such advanced quantum communication paradigms have sense for blockchains.
+
+### Performance and Resource Utilization Analysis: 
+This is a new and crucial area we plan to explore. We didn't conduct such analysis in our previous work. Given the significantly longer key lengths in the post-quantum world, understanding the performance and resource implications for running public blockchains is vital for the future of quantum-resistant blockchains.
+
+
 ### Ecosystem Fit
 
 
@@ -139,8 +170,9 @@ We have implemented some elements of the project as described in the page: **[QS
 
 As for academic work leading to our project we have them all listed in ["our papers"](https://www.quantumblockchains.io/our-papers/) section of our site.
 
-The key papers are:
+#### The key papers are:
 
+- ["A Simple Voting Protocol on Quantum Blockchain"](https://doi.org/10.1007/s10773-018-3929-6)
 - ["Towards Quantum-Secured Permissioned Blockchain: Signature, Consensus, and Logic"](https://doi.org/10.3390/e21090887)
 - ["Time-Bin CKA as a tool for blockchain technology"](https://doi.org/10.48550/arXiv.2308.16289)
 
