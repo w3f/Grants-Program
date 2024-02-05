@@ -1,7 +1,7 @@
 # XCM Tools follow-up
 
 * **Team Name:** [gmajor](https://github.com/gmajor-encrypt)
-* **Payment Address:** 0xC3094f0ddce699a1Ad9Ef2621DF68Cd297a4c44F(USDC)
+* **Payment Address:** 12ENNVUJwkoGvdq45jLaMgNv8e3oBd5asaUFL4GjdYHnAVm3(AssetHub USDC)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -96,7 +96,7 @@ Not yet
 
 | Number | Deliverable               | Specification                                                                                                                                                   |
 |-------:|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                   | MIT or Apache 2.0                                                                                                                                               |
+|    0a. | License                   | MIT                                                                                                                                                             |
 |    0b. | Documentation             | Simple documentation on how to use and how to test                                                                                                              |
 |    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
