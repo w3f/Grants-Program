@@ -73,7 +73,7 @@ To apply for the Web 3.0 Foundation Grants Program, your application shall fulfi
 
 - it shall be a research or software-based project, which contributes to the advancement of the Polkadot ecosystem;
 - the Software shall be released under the Apache license version 2.0.;
-- You must accept payment in USDT or USDC on Polkadot AssetHub or fiat;
+- You must accept payment in DOT as well as USDT or USDC on Polkadot AssetHub or fiat;
 - You will need to submit the application and deliver the milestones according to the process specified below;
 
 The grants process consists of five parts, each of them described in more detail below:
@@ -121,7 +121,7 @@ As soon as one evaluator approves the pull request, the delivery is officially a
 
 **(v)  Payment process:**
 
-The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the bank account or Polkadot AssetHub (for USDT and USDC) address specified in the initial application.
+The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the bank account or Polkadot AssetHub (for DOT, USDT and USDC) address specified in the initial application.
 
 ## 5.  Scope of these Terms and Conditions
 
@@ -166,6 +166,10 @@ Web 3.0. shall grant You, as compensation for the delivery of the Software and t
 The Parties agree that the Grant is a lump-sum payment and that no additional compensation is due for the actual development costs incurred.
 
 The Grant is paid as milestone payments for the accomplishment of the Milestones during several phases of the Development Work as indicated in the main readme file on Github (<https://github.com/w3f/Grants-Program>).
+
+The Grantee accepts and acknowledges that the Grant is a combination of a lump-sum cash payment (the “Cash Grant”) and a DOT component (the “Locked DOT Grant”), together hereinafter referred to as the "Grant", and that no additional compensation is due for the actual development costs incurred. The Grant is structured as milestone payments for the accomplishment of work during several phases of the Services Delivery as indicated in Annex 1 (the "Milestones").
+
+The Locked DOT Grant is subject to a "vested transfer" mechanism, wherein the DOTs will be locked and inaccessible for disposal by the Grantee for a specific period of time. The Locked DOT Grant will be initially locked in the Grantee’s wallet and will vest proportionately over a period of twenty-four (24) months. The full amount of the Locked DOT Grant will be completely unlocked within twenty-four (24) months from the date of the DOT transfer to the Grantee’s wallet address. The Grantee acknowledges and agrees that until the full vesting period is completed, it will not be able to dispose of the entire Locked DOT Grant in any manner. The Grantee acknowledges that, despite the vesting mechanism, it assumes all ownership and risk associated with the Locked DOT Grant from the date of transfer, including compliance with any applicable tax obligations relating to the Grant. The Foundation shall not be responsible for any fluctuations in the value of the DOT during the vesting period. In the event of early termination of this Agreement, the Grantee forfeits the unvested portion of the Locked DOT Grant.
 
 You shall not be entitled to an increase in compensation, even if you have had more work or greater expenses than anticipated. An increase in compensation is also excluded if extraordinary circumstances which could not have been foreseen prevent the completion of the Software or make it excessively difficult.
 
