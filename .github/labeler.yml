@@ -1,10 +1,11 @@
-admin-review:
+"admin-review":
 - changed-files:
   - any-glob-to-any-file: applications/**
 
 "update docs":
 - changed-files:
-  - any-glob-to-any-file: ['docs/**', '!docs/RFPs/**']
+  - any-glob-to-any-file: 'docs/**'
+  - all-globs-to-all-files: '!docs/RFPs/**'
 
 "rfp":
 - changed-files:
