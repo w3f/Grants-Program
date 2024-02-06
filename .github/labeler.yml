@@ -3,10 +3,9 @@
   - any-glob-to-any-file: applications/**
 
 "update docs":
-- all:
-  - changed-files:
-    - any-glob-to-any-file: 'docs/**'
-    - all-globs-to-all-files: '!docs/RFPs/**'
+- changed-files:
+  - any-glob-to-any-file: 'docs/**'
+  - all-globs-to-all-files: '!docs/RFPs/**'
 
 "rfp":
 - changed-files:
