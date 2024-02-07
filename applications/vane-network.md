@@ -57,6 +57,8 @@ We are not a team of UI designers so the design is not final in terms of UI.
 
 [vane landing page](https://vane.network/)
 
+[wireframes](https://www.figma.com/file/BN7EMvPncvEUyhZGyDNApF/Vane?type=design&node-id=111-6&mode=design&t=Mhw9Tr8pcm6aelpQ-0)
+
 [Vane website](https://vane-network.vercel.app/)
 - Data models / API specifications of the core functionality
 
