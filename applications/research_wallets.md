@@ -111,14 +111,14 @@ Not initiated.
 - **Total Estimated Workload:** 16 weeks
 - **Delivery Time:** 18 to 22 weeks
 - **Full-Time Equivalent (FTE):** 0.5
-- **Total Costs:** 24,000 CHF
+- **Total Costs:** 20,800 CHF
 
 ### Milestone 1 — User Account Access Security Analysis for Wallets
 
 - **Total Estimated Workload:** 16 weeks
 - **Delivery Time:** 18 to 22 weeks
 - **Full-Time Equivalent (FTE):** 0.5
-- **Total Costs:** 24,000 CHF
+- **Total Costs:** 20,800 CHF
 
 |  Number | Deliverable                                                       | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ------: | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -130,8 +130,9 @@ Not initiated.
 |  **3.** | Code                                                              | By the end of the project, we'll make any code used public allowing anyone to use/extend our work in combination with (1). NB: this deliverable is optional, since investigation is not yet defined if it'll be automatic and/or manual. In any case, we'll make everything used public.                                                                                                                                                                                                                                                                                                      |
 ## Future Plans
 
-Zondax long-term vision will always be to investigate and improve every layer of Polkadot ecosystem.
+Zondax long-term vision will always be to investigate and improve every layer of Polkadot ecosystem. 
+Upon completion of the project, we are willing to submit the final article for peer review, aiming for publication in a reputable journal.
 
 ## Additional Information :heavy_plus_sign:
 
-This project will conform the Bachelor Thesis in Mathematics of Carlo Sala.
+This project will conform the Bachelor Thesis in Mathematics of Carlo Sala. 
