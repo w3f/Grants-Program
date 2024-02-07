@@ -76,7 +76,7 @@ By safeguarding the gateways to user assets, this project strengthens the very f
 
 We are a team of two talented full-stack web3 developers and have been in the web3 ecosystem for the past 3 years. Our main domain is privacy & security and we have been developing solutions for enhancing privacy for decentralized solutions since a while. 
 
-Arsalaan is a sophomore at university studying computer science & math and is a  fullstack web3 developer, programmer, cybersec enthusiast & also aspires to get into academia. Arsalaan has been building & contributing to projects in web3 for the last 3 years. He has participated in over 30 hackathons and won 20 of them. 
+[Arsalaan](https://www.arsalaan.bio/) is a freshman at university studying computer science & math and is a fullstack web3 developer, programmer, cybersec enthusiast & also aspires to get into academia. Arsalaan has been building & contributing to projects in web3 for the last 3 years. He has participated in over 30 hackathons and won 20 of them. 
 .Krish is a full-time storage & data security engineer by profession. We both have a lot of full-time experience of development and programming. 
 
 The paper would serve as the bachelor thesis of Arsalaan Alam and would be advised by Krish and [math & cryptography professors at Plaksha University](https://plaksha.edu.in/faculty-details/dr-tapas-pandit).
@@ -102,14 +102,14 @@ Not Commenced.
 ### Overview
 
 - **Total Estimated Duration:** ~3 Months (paper to be submitted to CCS by April 28th)
-- **Full-Time Equivalent (FTE):**  0.75
-- **Total Costs:** 22,000 USD
+- **Full-Time Equivalent (FTE):**  1.25
+- **Total Costs:** 20,000 USD
 
 ### Milestone 1 
 
 - **Estimated duration:**  ~3 Months
-- **FTE:**  0.75
-- **Costs:** 22,000 USD
+- **FTE:**  1.25
+- **Costs:** 20,000 USD
 
 
 | Number | Deliverable | Specification |
