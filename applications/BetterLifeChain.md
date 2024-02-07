@@ -75,7 +75,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-We have conducted [this research]([Feasibility Research](https://docs.google.com/document/d/1M1RqySo8iiPawGbLKjdB3uyvB8R9hqj5LfqMac9Oj1M/edit?usp=sharing)) primarily to determine the feasibility of the project.
+We have conducted [this research](https://docs.google.com/document/d/1M1RqySo8iiPawGbLKjdB3uyvB8R9hqj5LfqMac9Oj1M/edit?usp=sharing) primarily to determine the feasibility of the project.
 
 ## Development Roadmap :nut_and_bolt:
 
