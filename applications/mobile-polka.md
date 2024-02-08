@@ -24,9 +24,13 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 Blockchain Overview:
 #### Block Analysis:
 **Block detail**: Identify and display blocks containing transactions, allowing users to explore the details of specific blocks.
+
 **Block Height**: Show the height of each block, aiding users in tracking the blockchain's structural integrity.
+
 **Block Extrinsics and Events**: Highlight the blocks with the Extrinsics and Events activity, offering insights into network variability.
+
 **Block History**: Provide a historical record of blocks, enabling users to analyze the blockchain's evolution over time.
+
 2. Transaction Analysis:
 Circulating Supply: Real-time information on the total supply of USDT in circulation, contributing to a comprehensive understanding of the market.
 Transactions Amount in USDT: Display the total value of transactions in USDT for the current epoch, aiding in the assessment of network activity.
