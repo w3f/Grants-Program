@@ -130,9 +130,9 @@ Our project will be dependent on the official Polkadot Explorer site or related 
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Esubalew Amenu
+- **Contact Email:** esubalew.a2009@gmail.com
+- **Website:** [DataScience plc](https://datascienceplc.com)
 
 ### Legal Structure
 
