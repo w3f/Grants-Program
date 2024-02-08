@@ -22,7 +22,7 @@ Our team is passionate about blockchain technology and its potential to revoluti
 
 Our solution, the Polkadot Explorer mobile app, is designed to provide a holistic and user-friendly exploration of the Polkadot blockchain. It encompasses a range of features catering to various aspects of blockchain analysis:
 Blockchain Overview:
-1. Block Analysis:
+## Block Analysis:
 **Block detail**: Identify and display blocks containing transactions, allowing users to explore the details of specific blocks.
 **Block Height**: Show the height of each block, aiding users in tracking the blockchain's structural integrity.
 **Block Extrinsics and Events**: Highlight the blocks with the Extrinsics and Events activity, offering insights into network variability.
