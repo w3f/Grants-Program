@@ -29,15 +29,16 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Block History**: Provide a historical record of blocks, enabling users to analyze the blockchain's evolution over time.
 
 ##### Transaction Analysis:
-Circulating Supply: Real-time information on the total supply of USDT in circulation, contributing to a comprehensive understanding of the market.
-Transactions Amount in USDT: Display the total value of transactions in USDT for the current Event, aiding in the assessment of network activity.
-Fees: Showcase transaction fees incurred during the Event, providing transparency on the cost of network transactions.
-Transactions: Present the total number of transactions conducted within the Event, giving users an indication of network throughput.
+- **Circulating Supply**: Real-time information on the total supply of DOT in circulation within block, contributing to a comprehensive understanding of the market.
+- **Transactions Amount in DOT**: Display the total value of transactions in DOT, aiding in the assessment of network activity.
+- **Attributes**: Showcase transaction attributes incurred during the transfer, providing transparency of the network transactions.
+- **Transactions**: Present the total number of transactions conducted within the Block, giving users an indication of network throughput.
 ##### Event Information:
 - **Event Number**: Display the current Event number, providing users with real-time information on the current state of the blockchain.
 - **Event Extrinsic Number**: Show the extrinsic number within the Event, aiding users in understanding the blockchain's temporal progression.
 - **Runtime ID**: Display the runtime number, allowing users to track the blockchain's activity at a granular level.
 - **Event History**: Provide a historical overview of past events, enabling users to analyze trends and patterns.
+
 Stakeholder and Pool Metrics:
 Event Stake: Showcase the total stake for the current Event, providing insights into the network's overall staking activity.
 Active Stake: Display the stake actively participating in the network, distinguishing it from inactive or dormant stake.
