@@ -207,12 +207,13 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | Comprehensive Documentation covering: - Configuration setup for Postman environment - Detailed descriptions of each API endpoint and its purpose - Instructions for using environment variables and dynamic configurations - Explanation of request headers, authentication methods, and other parameters - Testing guide with step-by-step instructions for validating API requests |
+| **0b.** | Documentation | Comprehensive Documentation covering: - Configuration setup for Postman environment - Detailed descriptions of each API endpoint and its purpose - Instructions for using environment variables and dynamic configurations - Explanation of request headers, authentication methods, and other parameters |
 | **0c.** | Testing and Testing Guide | Testing guide to ensure the functionality and reliability of API requests: - Step-by-step instructions for conducting manual tests within Postman environment - Criteria for validating responses and verifying data accuracy - Instructions for setting up automated tests if applicable - Guidelines for handling and reporting issues or discrepancies encountered during testing |
 | **0d.** | Docker | There will be no dockerfile at this stage, we will share the postman collection instead that can be used to test all the endpoints delivered with this milestone. |
 | 1. | Configuration | Set up Postman environment - Define configuration for API endpoints including environment variables - Specify configurations for each API endpoint including chain endpoint sections and methods, authentication keys, and other necessary parameters. |
 | 2. | Polkadot API Integration | Implement Polkadot API integration in Postman - Set up requests for accessing Polkadot blockchain data including blocks, transactions, accounts, and other relevant information. |
 | 3. | Documentation | Document API specifications, including request and response formats - Include detailed descriptions of each API endpoint, parameters, and expected outputs.
+
 
 ### Milestone 2 — Core Feature Development and Alpha Release
 
@@ -232,6 +233,27 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 2. | Internal Testing and QA | Conduct thorough testing of newly developed core features - Ensure functionality, usability, and performance meet project requirements - Identify and resolve any bugs or issues encountered during testing. |
 | 3. | Alpha Release Preparation | Prepare the Polkadot Explorer mobile app for alpha release on Google Play Store: - Compile the app build with newly developed core features integrated - Set up alpha testing environment on Google Play Developer Console - Perform internal testing of the alpha build to ensure stability and functionality. |
 | 4. | Alpha Release Deployment | Deploy the alpha version of the Polkadot Explorer mobile app on Google Play Store for limited community testing: - Submit the alpha build to Google Play Developer Console - Configure alpha testing settings and permissions - Notify selected testers and provide access instructions. 
+
+
+### Milestone 3 — Feature Refinement, Validation, and Beta Version Development
+
+- **Estimated duration:** 2 weeks
+- **FTE:**  1.5
+- **Costs:** x,000 USD
+
+> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | Updated Documentation covering: - Additions to the existing documentation from previous milestones - Detailed descriptions of refined features based on feedback - Instructions for accessing and testing the beta version within the Polkadot Explorer mobile app |
+| **0c.** | Testing and Testing Guide | Updated Testing guide to ensure the functionality and reliability of refined features: - Step-by-step instructions for conducting manual tests within the Polkadot Explorer mobile app - Criteria for validating responses and verifying data accuracy for refined features - Instructions for setting up automated tests if applicable - Guidelines for handling and reporting issues or discrepancies encountered during testing |
+| **0d.** | Docker | There will be no dockerfile at this stage, we will share the documentation how users can test it on emulator or on their mobile phone. |
+| 1. | Feature Refinement | - Refine core features based on feedback from alpha testing: - Address any bugs or issues reported by alpha testers - Implement usability improvements based on user feedback - Optimize performance and stability of core features. |
+| 2. | Data Validation Tools | Develop and implement tools for validating blockchain data accuracy: - Implement validation checks for blockchain data obtained through the Stable Platform API - Ensure accuracy and consistency of data displayed within the Polkadot Explorer mobile app - Address any discrepancies or inaccuracies identified during the validation process. |
+| 3. | Beta Version Development | Develop additional features and enhancements for the beta version of the Polkadot Explorer mobile app: - Implement stake pool analytics features - Add educational content and resources for users - Integrate additional blockchain analysis tools and metrics - Ensure seamless integration of new features with existing app architecture. |
+| 4. | Beta Release Preparation | Prepare the Polkadot Explorer mobile app for beta release on Google Play Store: - Compile the app build with refined features and additional enhancements integrated - Set up beta testing environment on Google Play Developer Console |
+| 5. | Beta Release Deployment | Deploy the beta version of the Polkadot Explorer mobile app on Google Play Store for wider community testing: - Submit the beta build to Google Play Developer Console - Configure beta testing settings and permissions - Notify selected testers and provide access instructions. 
 
 
 
