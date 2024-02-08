@@ -114,15 +114,14 @@ The evolution from product to product as a service is the end goal for EdgeSnap.
 ### **Overview**
 
 - **Total Estimated Duration:** 3 Months
-- **Full-Time Equivalent (FTE):** 2.4
+- **Average Full-Time Equivalent (FTE):** 3.9 
 - **Total Costs:** 120,000 USDT
-- **Upfront** : 18,000 USDT
 
 ### **Milestone 1 | Complete Back-end Flow**
 
 - **Estimated duration:** 1 Month
-- **FTE:** 2.4
-- **Costs:** 45,000 USDT
+- **FTE:** 4.5 {6 contributors x 5 hours x 6 days / 40, Considering 1 FTE = 40 hours}
+- **Costs:** 45000 USDT
 
 This implementation will showcase the working dynamics and final UI for a limited number of chains, providing users with a complete overview of the anticipated end product. We will also evaluate the UX flow and make iterative improvements based on the feedback received through different channels.
 
@@ -143,8 +142,8 @@ This implementation will showcase the working dynamics and final UI for a limite
 ### **Milestone 2 | First batch Integration**
 
 - **Estimated Duration:** 1 month
-- **FTE:** 1.8
-- **Costs:** 28,500 USDT
+- **FTE:** 3.6 {6 contributors x 4 hours x 6 days / 40, Considering 1 FTE = 40 hours}
+- **Costs:** 37500 USDT
 
 In milestone 2, we are looking to achieve seamless integration of approximately half of the total Substrate chains.
 
@@ -164,8 +163,8 @@ In milestone 2, we are looking to achieve seamless integration of approximately 
 ### **Milestone 3 | Final batch Integration**
 
 - **Estimated Duration:** 1 month
-- **FTE:** 1.8
-- **Costs:** 28,500 USDT
+- **FTE:** 3.6 {6 contributors x 4 hours x 6 days / 40, Considering 1 FTE = 40 hours}
+- **Costs:** 37500 USDT
 
 In milestone 3 we are looking to complete integration for all of the Substrate chains.
 
