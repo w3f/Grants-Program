@@ -27,7 +27,7 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Block Information**: Show block information in detail. The information includes but not limited to block id, timestamp, hash, parent hash, state root, extrinsics root, extrinsics count, events count, and runtime.
 - **Block Height**: Show the height of each block, aiding users in tracking the blockchain's structural integrity.
 - **Block Extrinsics**: Highlight the blocks with the Extrinsics Module and Call, offering insights into extrinsics variability.
-- **Block Events**: Highlight the blocks with the Events list, offering insights into the each event.
+- **Block Events**: Highlight the blocks with the Events list, offering insights into each event.
 - **Block History**: Provide a historical record of blocks, enabling users to analyze the blockchain's evolution over time.
 
 ##### Transaction Analysis:
@@ -46,6 +46,31 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Event History**: Provide a historical overview of past events, enabling users to analyze trends and patterns.
 - **Search Events**: Show events in order by Date range, Block start, Block end, and Account.
 
+##### Extrinsics Analysis:
+- **Extrinsics list**: Identify and display extrinsics list, allowing users to explore the details of specific extrinsics.
+- **Extrinsics Information**: Show extrinsics information in detail. The information includes but not limited to extrinsics id, timestamp, block, pallet, call, and signed status.
+- **Extrinsics Events**: Highlight the extrinsics with the Events list with event id, pallet and event name data's, offering insights into events in detail.
+- **extrinsics History**: Provide a historical record of extrinsics, enabling users to analyze the extrinsicschain's evolution over time.
+- **Filter Extrinsics**: Show extrinsics in order by Date range, Block start, Block end, and Account.
+
+
+
+#### Account and Address Analysis:
+##### General Information:
+- **Balance**: Display the current balance of DOT associated with the account, allowing users to quickly assess the account's financial status.
+- **Balance Status**: Display Total, Free, Transferable, Locked, Reserved, Redeemable, Bonded and Unbonding balance of the account.
+- **Events**: Provide a breakdown of the various events held in the account, contributing to a comprehensive overview of the user's portfolio.
+- **Transactions List**: Showcase the list of transactions conducted by the account, indicating its historical activity.
+- **Signed Extrinsics**: Highlight the signed extrinsics of the account's recorded activity, offering insights into its inception.
+- **Last Activity**: Display the date of the account's most recent activity, aiding users in tracking recent engagement.
+
+##### Rewards Information:
+- **Earned Rewards**: Show the total rewards earned by the account over its history, providing a measure of its overall contribution to the network.
+- **Unspent Rewards**: Display the rewards that have not yet been claimed or spent, contributing to an understanding of the account's financial choices.
+- **First Rewards**: Identify the block when the account first started earning rewards, allowing users to track its participation from inception.
+- **Latest Rewards**: Display the block of the account's most recent rewards, indicating ongoing engagement.
+- **Reward Amount in DOT**: Display the rewarded value of staking in DOT, aiding in the assessment of network activity.
+
 Stakeholder and Pool Metrics:
 Event Stake: Showcase the total stake for the current Event, providing insights into the network's overall staking activity.
 Active Stake: Display the stake actively participating in the network, distinguishing it from inactive or dormant stake.
@@ -59,7 +84,7 @@ Max Block Size and Min Block Size: Highlight blocks with the maximum and minimum
 Sum Block Size: Display the total size of blocks within the Event, contributing to an understanding of overall network load.
 Blocks with Transactions: Identify blocks containing transactions, allowing users to focus on periods of heightened activity.
 
-Token Explorer:
+Runtime Explorer:
 Token Policy:
 Policy Information: Display details about the token's policy, including its parameters and rules governing its creation and distribution.
 Policy Met USDTta: Provide additional met USDTta associated with the token policy, contributing to a more comprehensive understanding of its purpose.
@@ -74,20 +99,6 @@ First Transaction: Identify the initial transaction involving the token, indicat
 First Transaction Time: Display the timestamp of the token's first transaction, allowing users to trace its historical activity.
 Last Transaction: Highlight the most recent transaction involving the token, providing insights into its recent usage.
 Last Transaction Time: Present the timestamp of the token's last transaction, aiding users in tracking recent engagement.
-
-#### Account and Address Analysis:
-##### General Information:
-- **Balance**: Display the current balance of DOT associated with the account, allowing users to quickly assess the account's financial status.
-- **Balance Status**: Display Total, Free, Transferable, Locked, Reserved, Redeemable, Bonded and Unbonding balance of the account.
-- **Events**: Provide a breakdown of the various events held in the account, contributing to a comprehensive overview of the user's portfolio.
-- **Transactions List**: Showcase the list of transactions conducted by the account, indicating its historical activity.
-- **Signed Extrinsics**: Highlight the signed extrinsics of the account's recorded activity, offering insights into its inception.
-Last Activity: Display the date of the account's most recent activity, aiding users in tracking recent engagement.
-##### Rewards Information:
-- **Earned Rewards**: Show the total rewards earned by the account over its history, providing a measure of its overall contribution to the network.
-- **Unspent Rewards**: Display the rewards that have not yet been claimed or spent, contributing to an understanding of the account's financial choices.
-- **First Rewards**: Identify the block when the account first started earning rewards, allowing users to track its participation from inception.
-- **Latest Rewards**: Display the block of the account's most recent rewards, indicating ongoing engagement.
 
 Unique Aspects:
 Live Data Updates: Real-time updates ensure users have access to the latest information, reflecting the dynamic nature of the Polkadot blockchain.
