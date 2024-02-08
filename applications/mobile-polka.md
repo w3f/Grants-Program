@@ -101,6 +101,10 @@ Supply Information:
 Our solution strives to create a comprehensive Polkadot Explorer mobile app that goes beyond standard functionalities, catering to the diverse needs of the Polkadot community and blockchain enthusiasts at larg
 
 
+### Dependency
+
+Our project will be dependent on the official Polkadot Explorer site or related sites for API. The dependency on this API is essential for obtaining real-time and accurate blockchain data, which is crucial for the functionality and success of our Polkadot Explorer mobile app. We acknowledge the significance of this external resource and will ensure compliance with any usage terms and conditions set by the platforms.
+
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
