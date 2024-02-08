@@ -134,7 +134,14 @@ Our project will be dependent on the official Polkadot Explorer site or related 
 - **Contact Email:** Contact email (e.g. john@duo.com)
 - **Website:** Your website
 
-### Our Capability:
+### Legal Structure
+
+- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
+- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+
+### Team's experience
+
+#### Our Capability:
 - **Track Record**: Our previous mobile app projects showcase our proficiency, with successful applications boasting high download numbers (100,000+) and active user engagement(50,000+).
 - **Collaboration**: We've established a reputation for collaboration, evident in our partnerships with industry leaders. We have been recognized by prominent entities, aligning with our commitment to excellence in software development. Our project has joined Microsoft for Startups Founders Hub with a mix of 38 technical benefits and business resources.
 
@@ -144,24 +151,10 @@ In-depth understanding of blockchain technologies, particularly tailored to Polk
 - **Open Source Engagement**: Active contributors to open-source projects, showcasing our dedication to collaborative development and knowledge sharing within the developer community.
 - **Project Management Skills**: Proven project management capabilities demonstrated by the successful development and deployment of impactful systems.
 Our project is led by individuals holding BSc, MSc, and BA degrees, along with recognized certifications.
-### Feasibility Validation:
-#### Technical Prototyping:
-Initiated the development of a technical prototype, providing a tangible demonstration of key features for the proposed Polkadot Explorer and Analytics app.
-#### API Integration Tests:
-Conducting rigorous integration tests with relevant APIs to ensure seamless real-time data retrieval, contributing to the reliability of our solution.
-#### Continuous Evaluation and adaptation:
-Implementing an iterative approach to development, allowing us to continuously adapt the solution based on real-time user feedback and evolving technology trends.
-
-### Legal Structure
-
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
-
-### Team's experience
-
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+#### Feasibility Validation:
+- **Technical Prototyping**:Initiated the development of a technical prototype, providing a tangible demonstration of key features for the proposed Polkadot Explorer and Analytics app.
+- **API Integration Tests**:Conducting rigorous integration tests with relevant APIs to ensure seamless real-time data retrieval, contributing to the reliability of our solution.
+- **Continuous Evaluation and adaptation**:Implementing an iterative approach to development, allowing us to continuously adapt the solution based on real-time user feedback and evolving technology trends.
 
 ### Team Code Repos
 
