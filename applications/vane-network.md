@@ -156,18 +156,19 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 Participated in regional and Country Maths Competitions and had numerous major achievements such as third position in regional maths competition & best in country in world scholars cup organized by Yale University while he was in secondary school. Started working with substrate and blockchain engineering for nearly 2+ years.Raised over 120K in the project which he worked on and contributes to substrate repo occasionaly.
 He is currently working as a blockchain engineer at TONOMUUS.NEOM ( A saudia arabia company building the digital future).
 
-A Polkadot Blockchain Academy Dev student
-
-**Shankar Rao**
-
-5+ years experience working with smart contract technologies starting with Solidity and
-web3js and then later worked on rust and substrate
+A Polkadot Blockchain Academy Dev Alumni
 
 
-**Vijayendra Gaur** 
+** Abdelrahman Soliman **
 
-Vijayendra has more than 7.5 years of experience in Mobile Development using Native Android and Cross Platforms such as React Native and Xamarin.
-He also has 1.5 years of Rust and Blockchain development experience and 1 year exposure in the Substrate / Polkadot ecosystem.
+Ex-Booking.com core infrastructure engineer, currently working at Hopper. 
+having 10 years of experience in developing payment systems and leading engineering teams.
+A Polkadot Blockchain Academy Dev Alumni
+
+** Madiyar Ismagulov **
+
+Designer - worked with big brands such as HBO Max, Pepsi, Lenovo…
+and a framer designer.
 
 
 
@@ -264,7 +265,7 @@ Please consider the notion doc below:
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Video tutorial | We will publish an workshop on X/Twitter that explains [...] (what was done/achieved as part of the grant and how the product should be used) |
+| 0e. | Video tutorial | We will publish an workshop on X/Twitter that explains what was done/achieved as part of the grant and how the product should be used |
 | 1. | pallet transaction claim resolver | We will create a Substrate module that will handle failed transaction based on XCM delivery issues. Allowing users to claim their incomplete transactions|
 | 2. | permissioned pallet contract & chain extensions | A permissioned wasm contract pallet and chain exensions for vane risk free transfer system to be used to extend Vane product services. Account who intend to extend vane product services must apply to be whitelisted to deploy the contract.<br><br>**Chain extensions**<br> This will be limited to vane specific pallets extrinsics only, which includes, pallet_vane_xcm_transfer, pallet_vane_relay_asset, pallet_transfer_claim |
 | 3. | Notion template marketplace contract| The marketplace will showcase how we can enable transaction customization for social-commerce business and foster growth. It will contain, listing of notion templates, securely limiting access of the notion template, buying of the template, Order placement and tracking.|
