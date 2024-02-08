@@ -128,10 +128,11 @@ This implementation will showcase the working dynamics and final UI for a limite
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| --- | --- | --- |
-| **0b.** | Documentation | Publish detailed tech as well as non-tech docs along with beginner-friendly video walkthroughs. |
-| **0c.** | Article | Publish 2 **articles, one** explaining the EdgeSnap in a nutshell and the other one explaining why we decided to evolve the EdgeSnap to the broader substrate ecosystem. We will also host a weekly public Cohort program inviting the maintainers of different Polkadot ecosystem dApps to add Snap compatibility. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use EdgeSnap portal to install snap app of their preferred chain(s) and how/where they can use it. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Articles & Cohort | We will publish 2 **articles**, one explaining the EdgeSnap in a nutshell and the other one explaining why we decided to evolve the EdgeSnap to the broader substrate ecosystem. We will also host a weekly public Cohort program inviting the maintainers of different Polkadot ecosystem dApps to add Snap compatibility. |
 | 1. | Custom npm packages | Develop substrate-snaps, metamask-substrate-adapter and metamask-substrate-types based on current Polkadot&Kusama-only implementation by ChainSafe. |
 | 2. | Compilation flow changes | Add support to compile individual chains' snap apps alongside the default Universal Snap app. The Snap Store is already ready to link the precompiled individual Snap apps to corresponding chains. While in the current MVP all Install buttons are linked to the Universal Snap app temporarily. |
 | 3. | UI changes | Add an RPC switcher element corresponding to each chain under Snap Store. This will need the individual Snap apps to be precompiled in parallel for all the added RPCs. |
@@ -149,9 +150,11 @@ In milestone 2, we are looking to achieve seamless integration of approximately 
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| --- | --- | --- |
-| **0b.** | UpdateDocumentation | Update the docs with newly added chains' info. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide **inline documentation** for newly integrated chains. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Cohort | We will continue hosting a weekly public Cohort program inviting the maintainers of different Polkadot ecosystem dApps to add Snap compatibility. |
 | 1. | Chains' Integration | Do integration for approx half (45-55) of the total chains. {Only the relaychains, parachains and solochains available on polkadot-js will be integrated.} |
 | 2. | Weekly Dev Cohort | Public process of adding Snap compatibility in different Polkadot ecosystem dApps. Can be hosted on Discord or any platform with similar functionalities. |
 | 3. | Feedback collection & analysis | Collect feedback from different devs and users to improve the UI/UX flow further. |
@@ -170,9 +173,11 @@ This will also follow up with 9 months of maintenance and assistance to ecosyste
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| --- | --- | --- |
-| **0b.** | UpdateDocumentation | Update the docs with newly added chains' info. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide **inline documentation** for newly integrated chains. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article & Cohort | We will publish an **article** explaining the full-fledged functionalities of EdgeSnap along side the elaboration on the milestones of this W3F grant. We will also continue hosting a weekly public Cohort program inviting the maintainers of different Polkadot ecosystem dApps to add Snap compatibility. |
 | 1. | Chains' Integration | Do integration for the rest half of the total chains. {Only the relaychains, parachains and solochains available on polkadot-js will be integrated.} |
 | 2. | Weekly Dev Cohort | Public process of adding Snap compatibility in different Polkadot ecosystem dApps. Can be hosted on Discord or any platform with similar functionalities. |
 | 3. | Feedback collection & analysis | Collect feedback from different devs and users to improve the UI/UX flow further. |
