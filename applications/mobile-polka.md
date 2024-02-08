@@ -71,6 +71,21 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Latest Rewards**: Display the block of the account's most recent rewards, indicating ongoing engagement.
 - **Reward Amount in DOT**: Display the rewarded value of staking in DOT, aiding in the assessment of network activity.
 
+
+
+#### Runtime Explorer:
+##### General Information:
+- **Runtime Lists**: Display list of runtimes, including its name, version, number of pallets, events, call functions storage functions and constants.
+- **Runtime Pallets List**: Provide additional informations associated with the runtime, contributing to a more comprehensive understanding.
+#### Pallet Details:
+- **Pallet Name**: Present the human readable name assigned to the pallet, aiding users in quickly identifying and referencing the pallet.
+- **Pallet Call Functions**: Display list of name, lookup and arguments of call functions of the pallet, offering a unique identifier for technical purposes.
+- **Pallet Events**: Display list of name, lookup and arguments of events of the pallet, offering a unique identifier for technical purposes.
+- **Pallet Storage Functions**: Display list of name, and type of storage functions of the pallet.
+- **Pallet Constants**: Display list of name, type, and value of constants of the pallet.
+Supply Information:
+- **Pallet Error Messages**: Display list of name, index, and documentation of error messages of the pallet for technical purposes.
+
 Stakeholder and Pool Metrics:
 Event Stake: Showcase the total stake for the current Event, providing insights into the network's overall staking activity.
 Active Stake: Display the stake actively participating in the network, distinguishing it from inactive or dormant stake.
@@ -83,22 +98,6 @@ Block Size Analysis:
 Max Block Size and Min Block Size: Highlight blocks with the maximum and minimum sizes, providing insights into the network's capacity and variability.
 Sum Block Size: Display the total size of blocks within the Event, contributing to an understanding of overall network load.
 Blocks with Transactions: Identify blocks containing transactions, allowing users to focus on periods of heightened activity.
-
-Runtime Explorer:
-Token Policy:
-Policy Information: Display details about the token's policy, including its parameters and rules governing its creation and distribution.
-Policy Met USDTta: Provide additional met USDTta associated with the token policy, contributing to a more comprehensive understanding of its purpose.
-Asset Details:
-Asset Name: Present the human-re USDTble name assigned to the token, aiding users in quickly identifying and referencing the token.
-Asset Name Hex: Display the hexadecimal representation of the asset name, offering a unique identifier for technical purposes.
-Supply Information:
-Token Supply: Showcase the total supply of the token in circulation, providing insights into its overall distribution and scarcity.
-Circulating Supply: Display the portion of the token supply actively in circulation, helping users understand the market dynamics.
-Transaction History:
-First Transaction: Identify the initial transaction involving the token, indicating its inception and the address where it was first sent or received.
-First Transaction Time: Display the timestamp of the token's first transaction, allowing users to trace its historical activity.
-Last Transaction: Highlight the most recent transaction involving the token, providing insights into its recent usage.
-Last Transaction Time: Present the timestamp of the token's last transaction, aiding users in tracking recent engagement.
 
 Unique Aspects:
 Live Data Updates: Real-time updates ensure users have access to the latest information, reflecting the dynamic nature of the Polkadot blockchain.
