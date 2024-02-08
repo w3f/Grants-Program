@@ -196,7 +196,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Full-Time Equivalent (FTE):** 5
 - **Total Costs:** 10,000 USD
 
-### Milestone 1 Example — API Endpoint Preparation
+### Milestone 1 — API Endpoint Preparation
 
 - **Estimated duration:** 2 weeks
 - **FTE:**  1.5
@@ -207,17 +207,13 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
-
+| **0b.** | Documentation | - Comprehensive Documentation covering: - Configuration setup for Postman environment - Detailed descriptions of each API endpoint and its purpose - Instructions for using environment variables and dynamic configurations - Explanation of request headers, authentication methods, and other parameters - Testing guide with step-by-step instructions for validating API requests |
+| **0c.** | Testing and Testing Guide | - Testing guide to ensure the functionality and reliability of API requests: - Step-by-step instructions for conducting manual tests within Postman environment - Criteria for validating responses and verifying data accuracy - Instructions for setting up automated tests if applicable - Guidelines for handling and reporting issues or discrepancies encountered during testing |
+| **0d.** | Docker | There will be no dockerfile at this stage, we will share the postman collection instead that can be used to test all the endpoints delivered with this milestone. |
+| 1. | API Endpoint Preparation: Configuration | - Set up Postman environment - Define configuration for API endpoints including environment variables - Specify configurations for each API endpoint including chain endpoint sections and methods, authentication keys, and other necessary parameters. |
+| 2. | API Endpoint Preparation: Polkadot API Integration | - Implement Polkadot API integration in Postman - Set up requests for accessing Polkadot blockchain data including blocks, transactions, accounts, and other relevant information. |
+| 3. | API Endpoint Preparation: Documentation | - Document API specifications, including request and response formats - Include detailed descriptions of each API endpoint, parameters, and expected outputs. |
+| 4. | API Endpoint Preparation: Testing | - Conduct testing of API endpoints within Postman environment - Ensure compatibility and functionality of API requests with the Polkadot blockchain.
 
 ### Milestone 2 Example — Additional features
 
