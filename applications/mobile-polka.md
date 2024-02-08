@@ -24,15 +24,19 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 #### Blockchain Overview:
 ##### Block Analysis:
 - **Block detail**: Identify and display blocks containing transactions, allowing users to explore the details of specific blocks.
+- **Block Information**: Show block information in detail. The information includes but not limited to block id, timestamp, hash, parent hash, state root, extrinsics root, extrinsics count, events count, and runtime.
 - **Block Height**: Show the height of each block, aiding users in tracking the blockchain's structural integrity.
-- **Block Extrinsics and Events**: Highlight the blocks with the Extrinsics and Events activity, offering insights into network variability.
+- **Block Extrinsics**: Highlight the blocks with the Extrinsics Module and Call, offering insights into extrinsics variability.
+- **Block Events**: Highlight the blocks with the Events list, offering insights into the each event.
 - **Block History**: Provide a historical record of blocks, enabling users to analyze the blockchain's evolution over time.
 
 ##### Transaction Analysis:
-- **Circulating Supply**: Real-time information on the total supply of DOT in circulation within block, contributing to a comprehensive understanding of the market.
+- **Transfer Detail**: Real-time information on the transfer of DOT in circulation, contributing to a comprehensive understanding of the market.
 - **Transactions Amount in DOT**: Display the total value of transactions in DOT, aiding in the assessment of network activity.
 - **Attributes**: Showcase transaction attributes incurred during the transfer, providing transparency of the network transactions.
 - **Transactions**: Present the total number of transactions conducted within the Block, giving users an indication of network throughput.
+- **Search Transfers**: Show transfers in order by Date range, Block start, Block end, and Account.
+
 ##### Event Information:
 - **Event Number**: Display the current Event number, providing users with real-time information on the current state of the blockchain.
 - **Event Extrinsic Number**: Show the extrinsic number within the Event, aiding users in understanding the blockchain's temporal progression.
