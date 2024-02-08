@@ -22,25 +22,25 @@ Our team is passionate about blockchain technology and its potential to revoluti
 
 Our solution, the Polkadot Explorer mobile app, is designed to provide a holistic and user-friendly exploration of the Polkadot blockchain. It encompasses a range of features catering to various aspects of blockchain analysis:
 Blockchain Overview:
-Epoch Information:
-Epoch Number: Display the current epoch number, providing users with real-time information on the current state of the blockchain.
-Epoch Slot Number: Show the current slot number within the epoch, aiding users in understanding the blockchain's temporal progression.
+1. Block Analysis:
+**Block detail**: Identify and display blocks containing transactions, allowing users to explore the details of specific blocks.
+**Block Height**: Show the height of each block, aiding users in tracking the blockchain's structural integrity.
+**Block Extrinsics and Events**: Highlight the blocks with the Extrinsics and Events activity, offering insights into network variability.
+**Block History**: Provide a historical record of blocks, enabling users to analyze the blockchain's evolution over time.
+2. Transaction Analysis:
+Circulating Supply: Real-time information on the total supply of USDT in circulation, contributing to a comprehensive understanding of the market.
+Transactions Amount in USDT: Display the total value of transactions in USDT for the current epoch, aiding in the assessment of network activity.
+Fees: Showcase transaction fees incurred during the epoch, providing transparency on the cost of network transactions.
+Transactions: Present the total number of transactions conducted within the epoch, giving users an indication of network throughput.
+2. Epoch Information:
+* Epoch Number: Display the current epoch number, providing users with real-time information on the current state of the blockchain.
+* Epoch Slot Number: Show the current slot number within the epoch, aiding users in understanding the blockchain's temporal progression.
 Slot Number: Display the current slot number, allowing users to track the blockchain's activity at a granular level.
 Epoch History: Provide a historical overview of past epochs, enabling users to analyze trends and patterns.
 Stakeholder and Pool Metrics:
 Epoch Stake: Showcase the total stake for the current epoch, providing insights into the network's overall staking activity.
 Active Stake: Display the stake actively participating in the network, distinguishing it from inactive or dormant stake.
 Pools with Stake: List stake pools along with their respective stake, giving users an overview of the distribution of staking across different pools.
-Transaction and Block Details:
-Circulating Supply: Real-time information on the total supply of USDT in circulation, contributing to a comprehensive understanding of the market.
-Transactions Amount in USDT: Display the total value of transactions in USDT for the current epoch, aiding in the assessment of network activity.
-Fees: Showcase transaction fees incurred during the epoch, providing transparency on the cost of network transactions.
-Transactions: Present the total number of transactions conducted within the epoch, giving users an indication of network throughput.
-Block Analysis:
-Block with Transactions: Identify and display blocks containing transactions, allowing users to explore the details of specific blocks.
-Block Height: Show the height of each block, aiding users in tracking the blockchain's structural integrity.
-Max Block and Min Block: Highlight the blocks with the maximum and minimum transactional activity, offering insights into network variability.
-Block History: Provide a historical record of blocks, enabling users to analyze the blockchain's evolution over time.
 Additional Block Metrics:
 Max Block Epoch: Identify the epoch with the maximum block production, helping users understand periods of heightened blockchain activity.
 Min Block Epoch: Identify the epoch with the minimum block production, contributing to an understanding of network stability.
