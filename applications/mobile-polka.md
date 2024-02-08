@@ -77,7 +77,7 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 ##### General Information:
 - **Runtime Lists**: Display list of runtimes, including its name, version, number of pallets, events, call functions storage functions and constants.
 - **Runtime Pallets List**: Provide additional informations associated with the runtime, contributing to a more comprehensive understanding.
-#### Pallet Details:
+##### Pallet Details:
 - **Pallet Name**: Present the human readable name assigned to the pallet, aiding users in quickly identifying and referencing the pallet.
 - **Pallet Call Functions**: Display list of name, lookup and arguments of call functions of the pallet, offering a unique identifier for technical purposes.
 - **Pallet Events**: Display list of name, lookup and arguments of events of the pallet, offering a unique identifier for technical purposes.
@@ -210,18 +210,29 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation | Comprehensive Documentation covering: - Configuration setup for Postman environment - Detailed descriptions of each API endpoint and its purpose - Instructions for using environment variables and dynamic configurations - Explanation of request headers, authentication methods, and other parameters - Testing guide with step-by-step instructions for validating API requests |
 | **0c.** | Testing and Testing Guide | Testing guide to ensure the functionality and reliability of API requests: - Step-by-step instructions for conducting manual tests within Postman environment - Criteria for validating responses and verifying data accuracy - Instructions for setting up automated tests if applicable - Guidelines for handling and reporting issues or discrepancies encountered during testing |
 | **0d.** | Docker | There will be no dockerfile at this stage, we will share the postman collection instead that can be used to test all the endpoints delivered with this milestone. |
-| 1. | API Endpoint Preparation: Configuration | - Set up Postman environment - Define configuration for API endpoints including environment variables - Specify configurations for each API endpoint including chain endpoint sections and methods, authentication keys, and other necessary parameters. |
-| 2. | API Endpoint Preparation: Polkadot API Integration | Implement Polkadot API integration in Postman - Set up requests for accessing Polkadot blockchain data including blocks, transactions, accounts, and other relevant information. |
-| 3. | API Endpoint Preparation: Documentation | Document API specifications, including request and response formats - Include detailed descriptions of each API endpoint, parameters, and expected outputs. |
-| 4. | API Endpoint Preparation: Testing | Conduct testing of API endpoints within Postman environment - Ensure compatibility and functionality of API requests with the Polkadot blockchain.
+| 1. | Configuration | Set up Postman environment - Define configuration for API endpoints including environment variables - Specify configurations for each API endpoint including chain endpoint sections and methods, authentication keys, and other necessary parameters. |
+| 2. | Polkadot API Integration | Implement Polkadot API integration in Postman - Set up requests for accessing Polkadot blockchain data including blocks, transactions, accounts, and other relevant information. |
+| 3. | Documentation | Document API specifications, including request and response formats - Include detailed descriptions of each API endpoint, parameters, and expected outputs.
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Core Feature Development and Alpha Release
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 2 weeks
+- **FTE:**  1.5
+- **Costs:** x,000 USD
 
-...
+> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | Updated Documentation covering: - Additions to the existing documentation from Milestone 1 - Detailed descriptions of newly developed core features - Instructions for using and accessing new features within the Polkadot Explorer mobile app - Testing guide updated to include testing procedures for newly added features |
+| **0c.** | Testing and Testing Guide | Updated Testing guide to ensure the functionality and reliability of newly developed core features: - Step-by-step instructions for conducting manual tests within the Polkadot Explorer mobile app - Criteria for validating responses and verifying data accuracy - Instructions for setting up automated tests if applicable - Guidelines for handling and reporting issues or discrepancies encountered during testing |
+| **0d.** | Docker | There will be no dockerfile at this stage, we will share the documentation how users can test it on emulator or on their mobile phone. |
+| 1. | Core Feature Development | - Implement core features identified in the project proposal: - Blockchain overview functionalities, Account and Address Analysis functionalities, and Runtime Explorer - Ensure seamless integration of features with the Polkadot Explorer mobile app architecture. |
+| 2. | Internal Testing and QA | Conduct thorough testing of newly developed core features - Ensure functionality, usability, and performance meet project requirements - Identify and resolve any bugs or issues encountered during testing. |
+| 3. | Alpha Release Preparation | Prepare the Polkadot Explorer mobile app for alpha release on Google Play Store: - Compile the app build with newly developed core features integrated - Set up alpha testing environment on Google Play Developer Console - Perform internal testing of the alpha build to ensure stability and functionality. |
+| 4. | Alpha Release Deployment | Deploy the alpha version of the Polkadot Explorer mobile app on Google Play Store for limited community testing: - Submit the alpha build to Google Play Developer Console - Configure alpha testing settings and permissions - Notify selected testers and provide access instructions. 
+
 
 
 ## Future Plans
