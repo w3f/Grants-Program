@@ -107,16 +107,17 @@ Our project will be dependent on the official Polkadot Explorer site or related 
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+- **Where and How**: Our project, the Polkadot Explorer mobile app, fits into the Polkadot ecosystem by providing a mobile interface for users to explore and analyze blockchain data. It integrates with Substrate technology to access real-time data from the Polkadot network, offering a comprehensive view of network activities.
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
+- **Target Audience**: Our target audience includes blockchain enthusiasts, investors, developers, and stakeholders within the Polkadot community. Additionally, it targets users seeking accessible and user-friendly tools for exploring blockchain data on their mobile devices.
+
+- **Meeting Needs**: Our project meets the need for accessible and user-friendly tools for blockchain analysis on mobile platforms. This need was identified through discussions within the Polkadot community, feedback from users seeking mobile solutions, and observations of the increasing demand for mobile access to blockchain data.
+
+- **Differentiation**: While there are existing projects in the Polkadot ecosystem that provide blockchain analysis tools, our project stands out by focusing specifically on mobile accessibility and user experience. Other projects may offer similar functionalities, but our emphasis on intuitive design, real-time updates, and comprehensive features sets us apart.
+
+- **Similar Projects**: There are indeed other projects in the Polkadot ecosystem offering blockchain analysis tools, such as desktop applications and web platforms. However, our project distinguishes itself by catering specifically to mobile users, filling a gap in the market for on-the-go access to blockchain data. In related ecosystems, there may be similar projects, but our focus on Polkadot and mobile accessibility makes us unique in our niche.
+
+- **Availability**: The Polkadot Explorer mobile app will be published on Google Play, ensuring widespread accessibility to Android users. This platform choice aligns with our goal of reaching a broad audience and making blockchain exploration convenient for mobile users.
 
 ## Team :busts_in_silhouette:
 
