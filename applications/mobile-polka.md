@@ -38,10 +38,13 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Search Transfers**: Show transfers in order by Date range, Block start, Block end, and Account.
 
 ##### Event Information:
+- **Event list**: Identify and display events list, allowing users to explore the details of specific events.
+- **Event Information**: Show event information in detail. The information includes but not limited to event id, timestamp, extrinsic, pallet, and event name.
 - **Event Number**: Display the current Event number, providing users with real-time information on the current state of the blockchain.
 - **Event Extrinsic Number**: Show the extrinsic number within the Event, aiding users in understanding the blockchain's temporal progression.
 - **Runtime ID**: Display the runtime number, allowing users to track the blockchain's activity at a granular level.
 - **Event History**: Provide a historical overview of past events, enabling users to analyze trends and patterns.
+- **Search Events**: Show events in order by Date range, Block start, Block end, and Account.
 
 Stakeholder and Pool Metrics:
 Event Stake: Showcase the total stake for the current Event, providing insights into the network's overall staking activity.
