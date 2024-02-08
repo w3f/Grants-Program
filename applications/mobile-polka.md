@@ -86,30 +86,18 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 Supply Information:
 - **Pallet Error Messages**: Display list of name, index, and documentation of error messages of the pallet for technical purposes.
 
-Stakeholder and Pool Metrics:
-Event Stake: Showcase the total stake for the current Event, providing insights into the network's overall staking activity.
-Active Stake: Display the stake actively participating in the network, distinguishing it from inactive or dormant stake.
-Pools with Stake: List stake pools along with their respective stake, giving users an overview of the distribution of staking across different pools.
-Additional Block Metrics:
-Max Block Event: Identify the Event with the maximum block production, helping users understand periods of heightened blockchain activity.
-Min Block Event: Identify the Event with the minimum block production, contributing to an understanding of network stability.
-Avg Block: Present the average block production per Event, aiding users in assessing the network's baseline performance.
-Block Size Analysis:
-Max Block Size and Min Block Size: Highlight blocks with the maximum and minimum sizes, providing insights into the network's capacity and variability.
-Sum Block Size: Display the total size of blocks within the Event, contributing to an understanding of overall network load.
-Blocks with Transactions: Identify blocks containing transactions, allowing users to focus on periods of heightened activity.
+### Unique Aspects:
+- **Live Data Updates**: Real-time updates ensure users have access to the latest information, reflecting the dynamic nature of the Polkadot blockchain.
+- **User-Friendly Interface**: The app prioritizes an intuitive design, making blockchain data accessible to users with varying levels of expertise.
+### Benefits:
+- **Comprehensive Analysis**: Users can perform detailed analyses of events, blocks, transactions, accounts, and addresses, fostering a deeper understanding of the Polkadot ecosystem.
+- **User Empowerment**: The app empowers users, developers, and stakeholders by providing a robust set of tools for blockchain exploration and analysis.
+- **Community Engagement**: Features such as reward detail analytics encourage community engagement, supporting Polkadot's decentralized and collaborative ethos.
+### Impact Demonstration:
+- **Usage Metrics**: Monitor user engagement with different features to understand which aspects of the blockchain are most relevant to the community.
+- **Feedback Channels**: Establish channels for community feedback, ensuring continuous improvement based on user suggestions and preferences.
 
-Unique Aspects:
-Live Data Updates: Real-time updates ensure users have access to the latest information, reflecting the dynamic nature of the Polkadot blockchain.
-User-Friendly Interface: The app prioritizes an intuitive design, making blockchain data accessible to users with varying levels of expertise.
-Educational Resources: Embedded educational content provides insights into blockchain concepts, enhancing user understanding.
-Benefits:
-Comprehensive Analysis: Users can perform detailed analyses of events, blocks, transactions, accounts, addresses, and stake pools, fostering a deeper understanding of the Polkadot ecosystem.
-User Empowerment: The app empowers users, developers, and stakeholders by providing a robust set of tools for blockchain exploration and analysis.
-Community Engagement: Features such as stake pool analytics encourage community engagement, supporting Polkadot's decentralized and collaborative ethos.
-Impact Demonstration:
-Usage Metrics: Monitor user engagement with different features to understand which aspects of the blockchain are most relevant to the community.
-Feedback Channels: Establish channels for community feedback, ensuring continuous improvement based on user suggestions and preferences.
+
 Our solution strives to create a comprehensive Polkadot Explorer mobile app that goes beyond standard functionalities, catering to the diverse needs of the Polkadot community and blockchain enthusiasts at larg
 
 
