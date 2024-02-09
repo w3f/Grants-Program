@@ -265,19 +265,19 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Team's Long-term Plans and Intentions**: Our team is committed to the long-term success and sustainability of the Polkadot Explorer mobile app. We envision continued development and iteration of the app to incorporate new features, support emerging blockchain technologies, and address evolving user needs. Furthermore, we aim to establish the app as the go-to platform for blockchain exploration and analysis within the Polkadot ecosystem.
 
 
-## Referral Program (optional) :moneybag:
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDT/USDC) payment address. Please also specify the currency. (e.g. 0x8920... (USDT))
-
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+### Work Already Done:
+We have extensive experience in developing mobile applications. Our team has successfully delivered several high-quality mobile apps with a focus on user experience, performance, and scalability. Some of our notable projects include:
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+- **1-12 textbooks App**: Developed a user-friendly app for high school and university students. with successful applications boasting high download numbers (100,000+) and active user engagement(50,000+).
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+- **ExpertsWay App**: ExpertsWay is a comprehensive guide to mastering blockchain. Whether users are novice eager to explore the fundamentals or a seasoned developer looking to enhance your skills, the app offers a diverse range of blockchain related courses and tutorials to cater to users need.
+
+### Financial Contributions from Other Teams:
+
+At this stage, we have not received financial contributions from other teams for this project. However, we are open to collaboration and partnership opportunities with organizations or teams that share our vision and goals for the Polkadot Explorer mobile app.
+
+### Previous Grants and Funding:
+
+While we have not applied for specific grants related to the Polkadot Explorer mobile app, our team has successfully secured funding and grants for previous projects in the mobile app development space. We have a track record of effectively utilizing grant funds to drive innovation, accelerate development, and deliver impactful solutions to our users.
