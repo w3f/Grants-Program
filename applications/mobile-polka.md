@@ -214,7 +214,7 @@ We've begun preparing a Postman collection to streamline API endpoint integratio
 ### Milestone 1 — API Endpoint Preparation
 
 - **Estimated duration:** 2 weeks
-- **FTE:**  1.5
+- **FTE:**  2
 - **Costs:** 2,000 USD
 
 | Number | Deliverable | Specification |
