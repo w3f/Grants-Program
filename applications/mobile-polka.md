@@ -202,7 +202,7 @@ Our project is led by individuals holding BSc, MSc, and BA degrees, along with r
 ## Development Status :open_book:
 
 We've begun preparing a Postman collection to streamline API endpoint integration, facilitating smooth development.
-![](https://drive.google.com/file/d/1LGekBSpsI2DsZCOGoB050OIsMPLNQd8v/view?usp=drive_link)
+![](https://drive.google.com/uc?export=view&id=1LGekBSpsI2DsZCOGoB050OIsMPLNQd8v)
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -279,7 +279,7 @@ We've begun preparing a Postman collection to streamline API endpoint integratio
 
 ### Work Already Done:
 Initiated preparation of the Postman API collection for streamlined development processes.
-![](https://drive.google.com/file/d/1LGekBSpsI2DsZCOGoB050OIsMPLNQd8v/view?usp=drive_link)
+![](https://drive.google.com/uc?export=view&id=1LGekBSpsI2DsZCOGoB050OIsMPLNQd8v)
 
 ### Financial Contributions from Other Teams:
 
