@@ -117,12 +117,13 @@ Our project will be dependent on the official Polkadot Explorer site or related 
 
 ## Team :busts_in_silhouette:
 
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
-
 ### Team members
 
-- Name of team leader
-- Names of team members
+- **Esubalew Amenu**: BSc in Computer Science, MSc in Software Engineering, BA in Management. Over 8 years of experience in blockchain and fintech industries. Successfully led multiple projects from conception to implementation, ensuring timely delivery and client satisfaction.
+- **Eyasu Bihanu**: Has a strong background in blockchain applications.
+- **Minilik Eshetu**: Experienced backend developer proficient in building robust and scalable systems for blockchain applications.
+- **Khalid Abdurahiman**: Skilled mobile app developer adept at creating intuitive and feature-rich applications for various platforms, specializing in blockchain solutions.
+- **Tadesse Duressa**:Talented UI/UX designer with a focus on crafting engaging and intuitive user experiences for blockchain applications, ensuring seamless navigation and user satisfaction.
 
 ### Contact
 
