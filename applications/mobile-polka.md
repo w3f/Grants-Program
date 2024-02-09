@@ -1,7 +1,7 @@
 # MobilePolka: Unveiling Polkadot's Depths on the Go
 
 - **Team Name:** Datascience computing plc
-- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the Polkadot (for USDC & USDT) payment address. Please also specify the currency. (e.g. 0x8920... (USDC))
+- **Payment Address:** 144DdTtMC5mymcowKrrDy2iCUb5f2VUatBwNrmzXMjkAFJuG (USDT - Polkadot Network)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
