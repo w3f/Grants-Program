@@ -142,7 +142,7 @@ Our project will be dependent on the official Polkadot Explorer site or related 
 
 ### Team members
 
-- **Esubalew Amenu**: BSc in Computer Science, MSc in Software Engineering, BA in Management. Co-founder of DataScience and Herma computing plc. Over 8 years of experience in blockchain and fintech industries. Successfully led multiple projects from conception to implementation, ensuring timely delivery and client satisfaction.
+- **Esubalew Amenu**: (Team leader) BSc in Computer Science, MSc in Software Engineering, BA in Management. Co-founder of DataScience and Herma computing plc. Over 8 years of experience in blockchain and fintech industries. Successfully led multiple projects from conception to implementation, ensuring timely delivery and client satisfaction.
 - **Eyasu Bihanu**: Has a strong background in blockchain applications.
 - **Minilik Eshetu**: Experienced backend developer proficient in building robust and scalable systems for blockchain applications.
 - **Khalid Abdurahiman**: Skilled mobile app developer adept at creating intuitive and feature-rich applications for various platforms, specializing in blockchain solutions.
