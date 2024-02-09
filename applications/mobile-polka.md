@@ -202,6 +202,7 @@ Our project is led by individuals holding BSc, MSc, and BA degrees, along with r
 ## Development Status :open_book:
 
 We've begun preparing a Postman collection to streamline API endpoint integration, facilitating smooth development.
+![](https://drive.google.com/file/d/1LGekBSpsI2DsZCOGoB050OIsMPLNQd8v/view?usp=drive_link)
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -277,11 +278,8 @@ We've begun preparing a Postman collection to streamline API endpoint integratio
 ## Additional Information :heavy_plus_sign:
 
 ### Work Already Done:
-We have extensive experience in developing mobile applications. Our team has successfully delivered several high-quality mobile apps with a focus on user experience, performance, and scalability. Some of our notable projects include:
-
-- **[1-12 textbooks App](https://play.google.com/store/apps/details?id=com.herma.apps.textbooks)**: Developed a user-friendly app for high school and university students. with successful applications boasting high download numbers (100,000+) and active user engagement(50,000+).
-
-- **[ExpertsWay App](https://play.google.com/store/apps/details?id=com.herma.apps.expertsway)**: ExpertsWay is a comprehensive guide to mastering blockchain. Whether users are novice eager to explore the fundamentals or a seasoned developer looking to enhance your skills, the app offers a diverse range of blockchain related courses and tutorials to cater to users need.
+Initiated preparation of the Postman API collection for streamlined development processes.
+![](https://drive.google.com/file/d/1LGekBSpsI2DsZCOGoB050OIsMPLNQd8v/view?usp=drive_link)
 
 ### Financial Contributions from Other Teams:
 
