@@ -119,11 +119,6 @@ Supply Information:
 
 Our solution strives to create a comprehensive Polkadot Explorer mobile app that goes beyond standard functionalities, catering to the diverse needs of the Polkadot community and blockchain enthusiasts at larg
 
-
-### Dependency
-
-Our project will be dependent on the official Polkadot Explorer site or related sites for API. The dependency on this API is essential for obtaining real-time and accurate blockchain data, which is crucial for the functionality and success of our Polkadot Explorer mobile app. We acknowledge the significance of this external resource and will ensure compliance with any usage terms and conditions set by the platforms.
-
 ### Ecosystem Fit
 
 - **Where and How**: Our project, the Polkadot Explorer mobile app, fits into the Polkadot ecosystem by providing a mobile interface for users to explore and analyze blockchain data. It integrates with Substrate technology to access real-time data from the Polkadot network, offering a comprehensive view of network activities.
@@ -276,6 +271,10 @@ We've begun preparing a Postman collection to streamline API endpoint integratio
 
 
 ## Additional Information :heavy_plus_sign:
+
+### Dependency
+
+Our project will be dependent on the official Polkadot Explorer site or related sites for API. The dependency on this API is essential for obtaining real-time and accurate blockchain data, which is crucial for the functionality and success of our Polkadot Explorer mobile app. We acknowledge the significance of this external resource and will ensure compliance with any usage terms and conditions set by the platforms.
 
 ### Work Already Done:
 Initiated preparation of the Postman API collection for streamlined development processes.
