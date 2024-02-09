@@ -230,9 +230,9 @@ We've begun preparing a Postman collection to streamline API endpoint integratio
 
 ### Milestone 2 — Core Feature Development and Alpha Release
 
-- **Estimated duration:** 2 weeks
-- **FTE:**  1.5
-- **Costs:** x,000 USD
+- **Estimated duration:** 6 weeks
+- **FTE:**  3
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -248,9 +248,9 @@ We've begun preparing a Postman collection to streamline API endpoint integratio
 
 ### Milestone 3 — Feature Refinement, Validation, and Beta Version Development
 
-- **Estimated duration:** 2 weeks
-- **FTE:**  1.5
-- **Costs:** x,000 USD
+- **Estimated duration:** 4 weeks
+- **FTE:**  3
+- **Costs:** 3,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
