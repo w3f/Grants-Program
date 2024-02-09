@@ -127,9 +127,10 @@ Our project will be dependent on the official Polkadot Explorer site or related 
 
 ### Contact
 
-- **Contact Name:** Esubalew Amenu
-- **Contact Email:** esubalew.a2009@gmail.com
-- **Website:** [DataScience plc](https://datascienceplc.com)
+- **Contact Name**: Esubalew Amenu
+- **Contact Email**: esubalew.a2009@gmail.com
+- **Website**: [DataScience plc](https://datascienceplc.com)
+- **Google play**: [ETH Developers](https://play.google.com/store/apps/developer?id=ETH+Developers), [Herma computing](https://play.google.com/store/apps/developer?id=Herma+plc)
 
 ### Legal Structure
 
