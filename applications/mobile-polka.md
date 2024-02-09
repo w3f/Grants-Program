@@ -249,6 +249,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation | Updated Documentation covering: - Additions to the existing documentation from previous milestones - Detailed descriptions of refined features based on feedback - Instructions for accessing and testing the beta version within the Polkadot Explorer mobile app |
 | **0c.** | Testing and Testing Guide | Updated Testing guide to ensure the functionality and reliability of refined features: - Step-by-step instructions for conducting manual tests within the Polkadot Explorer mobile app - Criteria for validating responses and verifying data accuracy for refined features - Instructions for setting up automated tests if applicable - Guidelines for handling and reporting issues or discrepancies encountered during testing |
 | **0d.** | Docker | There will be no dockerfile at this stage, we will share the documentation how users can test it on emulator or on their mobile phone. |
+| **0e.** | Article | We will write a Medium article that explains the work done as part of the grant.|
 | 1. | Feature Refinement | - Refine core features based on feedback from alpha testing: - Address any bugs or issues reported by alpha testers - Implement usability improvements based on user feedback - Optimize performance and stability of core features. |
 | 2. | Data Validation Tools | Develop and implement tools for validating blockchain data accuracy: - Implement validation checks for blockchain data obtained through the Stable Platform API - Ensure accuracy and consistency of data displayed within the Polkadot Explorer mobile app - Address any discrepancies or inaccuracies identified during the validation process. |
 | 3. | Beta Version Development | Develop additional features and enhancements for the beta version of the Polkadot Explorer mobile app: - Implement stake pool analytics features - Add educational content and resources for users - Integrate additional blockchain analysis tools and metrics - Ensure seamless integration of new features with existing app architecture. |
@@ -259,11 +260,10 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ## Future Plans
 
-Please include here
+- **Long-term Maintenance and Development Financing**: We plan to sustain the project's long-term maintenance and development through a combination of revenue streams and strategic partnerships. This includes exploring opportunities for app monetization such as premium features, subscription models, and partnerships with blockchain projects for sponsored content.
+- **Short-term Utilization, Enhancement, and Promotion**: In the short term, we aim to leverage the beta release of the Polkadot Explorer mobile app to gather user feedback, refine features, and enhance usability. We will actively engage with the Polkadot community through social media, forums, and developer meetups to promote the app and encourage adoption.
+- **Team's Long-term Plans and Intentions**: Our team is committed to the long-term success and sustainability of the Polkadot Explorer mobile app. We envision continued development and iteration of the app to incorporate new features, support emerging blockchain technologies, and address evolving user needs. Furthermore, we aim to establish the app as the go-to platform for blockchain exploration and analysis within the Polkadot ecosystem.
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
 
 ## Referral Program (optional) :moneybag:
 
