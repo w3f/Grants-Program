@@ -119,7 +119,7 @@ Our project will be dependent on the official Polkadot Explorer site or related 
 
 ### Team members
 
-- **Esubalew Amenu**: BSc in Computer Science, MSc in Software Engineering, BA in Management. Over 8 years of experience in blockchain and fintech industries. Successfully led multiple projects from conception to implementation, ensuring timely delivery and client satisfaction.
+- **Esubalew Amenu**: BSc in Computer Science, MSc in Software Engineering, BA in Management. Co-founder of DataScience and Herma computing plc. Over 8 years of experience in blockchain and fintech industries. Successfully led multiple projects from conception to implementation, ensuring timely delivery and client satisfaction.
 - **Eyasu Bihanu**: Has a strong background in blockchain applications.
 - **Minilik Eshetu**: Experienced backend developer proficient in building robust and scalable systems for blockchain applications.
 - **Khalid Abdurahiman**: Skilled mobile app developer adept at creating intuitive and feature-rich applications for various platforms, specializing in blockchain solutions.
@@ -155,18 +155,23 @@ Our project is led by individuals holding BSc, MSc, and BA degrees, along with r
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/EsubalewAmenu/Android_Text_Books
+- https://github.com/Herma-Computing/ExpertsWay
+
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/esubalewAmenu
+- https://github.com/eyasubirhanu
+- https://github.com/MilaBooot
+- https://github.com/khalinoid
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://www.linkedin.com/in/esubalew-amenu/
+- https://www.linkedin.com/in/eyasu-birhanu-4665701a3
+- https://www.linkedin.com/in/menilik-eshetu-22b094198
+- https://www.linkedin.com/in/khalid-abdurahman-247157222
 
 
 ## Development Status :open_book:
