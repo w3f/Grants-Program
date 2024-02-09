@@ -165,6 +165,7 @@ Our project will be dependent on the official Polkadot Explorer site or related 
 #### Our Capability:
 - **Track Record**: Our previous mobile app projects showcase our proficiency, with successful applications boasting high download numbers (100,000+) and active user engagement(50,000+).
 - **Collaboration**: We've established a reputation for collaboration, evident in our partnerships with industry leaders. We have been recognized by prominent entities, aligning with our commitment to excellence in software development. Our project has joined Microsoft for Startups Founders Hub with a mix of 38 technical benefits and business resources.
+![](https://drive.google.com/uc?export=view&id=1exlnsCUpFD_m0wvlEL_tqp1oYeehQk-e)
 
 - **Software Development Expertise**: Our team comprises skilled professionals experienced in blockchain, mobile app, and web system development.
 Demonstrated success in delivering diverse technical projects with positive user outcomes.
