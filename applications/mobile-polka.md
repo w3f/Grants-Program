@@ -160,7 +160,7 @@ Our project is led by individuals holding BSc, MSc, and BA degrees, along with r
 - https://github.com/Herma-Computing/ExpertsWay
 
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+### Team members GitHub account
 
 - https://github.com/esubalewAmenu
 - https://github.com/eyasubirhanu
