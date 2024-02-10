@@ -54,23 +54,29 @@ The technological landscape sees a plethora of competitors, each carving their n
 
 ### Team members
 
-- [Barath Kanna](https://www.linkedin.com/in/barath-kanna-23a23a172) - Founder & CEO
+- [Barath Kanna](https://www.linkedin.com/in/barath-kanna) - Founder & CEO
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - Co-Founder & CTO
-- [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - Co-Founder & COO
+- [Megha Varshini](https://www.linkedin.com/in/megha-varshini-t) - Co-Founder & COO
+- [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - Senior Substrate Developer
+- [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Rust Substrate Developer
 
 ### Contact
 
-- **Contact Name:** Kresna Sucandra
-- **Contact Email:** kresnasucandra@gmail.com
+- **Contact Name:** Barath Kanna
+- **Contact Email:** barathkannaofficial@gmail.com
 - **Website:** https://cyborgnetwork.io
 
 ### Team's experience
 
-- [Barath Kanna](https://www.linkedin.com/in/barath-kanna-23a23a172) - A developer with a specialization in Rust and blockchain technology. His experience is rooted in designing blockchain infrastructure solutions. Notably, he is an alumni of the Polkadot Blockchain Academy's third cohort at UC Berkeley (Jul - Aug 2023)
+- [Barath Kanna](https://www.linkedin.com/in/barath-kanna) - A developer with a specialization in Rust and blockchain technology. His experience is rooted in designing blockchain infrastructure solutions. Notably, he is an alumni of the Polkadot Blockchain Academy's third cohort at UC Berkeley (Jul - Aug 2023)
 
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) ( Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
 
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - She has been involved in operations for Web3 projects and has taken initiatives in the blockchain community. One of her contributions is the establishment of [Indi Verse DAO](https://www.linkedin.com/company/indi-verse-dao), a web 3.0 community in India. Additionally, she is the candidate of the Polkadot Ambassador Program. She is also a graduate from the Polkadot Blockchain Academy's Founders Track at Hong Kong (Jan - Feb 2024)
+
+- [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - Exeperienced Senior Rust and Substrate Developer with experience working for projects like [Bitgreen](https://bitgreen.org/).
+
+- [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Aspiring Rust systems engineer who is also a PBA alumni from Developer Track at Berkeley Cohort.
 
 ### Team Code Repos
 
@@ -84,6 +90,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://github.com/beekay2706
 - https://github.com/SHA888
+- https://github.com/ashi20192020
+- https://github.com/dheeraj07
 - https://github.com/Megha2712
 
 ### Team LinkedIn Profiles (if available)
