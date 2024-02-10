@@ -84,7 +84,7 @@ Project GitHub repositories.
 
 - https://github.com/Cyborg-Network - Organization
 - https://github.com/Cyborg-Network/cyborg-node
-- https://github.com/Cyborg-Network/cyberhub [still private]
+- https://github.com/Cyborg-Network/Cyborg-smart-client
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -102,33 +102,32 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-We have completed the functional side of Cyborg Smart Client (CSC) and we have lite versions of  CyberHub and Pallet Edge Connect that are configured to work with off chain workers as a PoC and we also have a demo video demonstrating the same.
+We have successfully developed a Rust WebSocket client with a low-key profile, ensuring a seamless connection with our blockchain through off-chain workers. Additionally, we created a proof of concept based on this client. Our initial plan was to proceed with this development. However, based on the Web3 Foundation's recommendation to eliminate centralized entities from our architecture and establish a fully decentralized system from the ground up, we embarked on several research iterations.
 
-[Cyborg Network PoC 1 Demo](https://www.youtube.com/watch?v=sSNg0Q_DJyk)
+Through this process, we identified the potential to establish a decentralized bridge between our smart client and the Substrate blockchain. Leveraging the Parity Bridges repository as a foundation. Once this significant milestone is achieved, our team will shift focus to building custom pallets outlined in the technical architecture to steer our way through to become a parachain on Kusama and eventually on Polkadot.
 
-Currently we are migrating the configs from off chain worker to oracle support based on advice from Sacha Lansky during a Hackadot 2023 office hours. We also took development advice from Jimmy Chu during an online mentorship event.
+As part of our transition, we are migrating from WebSockets to utilizing Libp2p as the core connection protocol. Furthermore, Subxt will serve as the standard communication protocol facilitating interaction between the Substrate chain and the off-chain domain. This strategic shift aligns with our commitment to adopting decentralized principles and enhancing the robustness of our system architecture.
 
-At PBA, Barath Kanna (CEO) was able to communicate the idea of Cyborg Network to various people from Parity and web3 foundation viz: Joshua Cheong, Radha Dasari, Shawn Tabrizi, Rae Deng, Clifton Yeo, Tim Dobie, Max Wegman, Bharghav Bhatt etc. and sought valuable feedback that has greatly improved our approach towards our product.
+We have created a UX demo for a potential user and the development for this grant will look very similar this [Cyborg Network UX demo](https://drive.google.com/file/d/1zrN4TRMDd5ON2xH9F00upcyK-3ofwV4r/view?usp=drivesdk)
 
-We have been interacting closely with the square one team at Parity (Nico Morgan and Joshua Cheong) as a part of our application process for the substrate Builder’s program chains track, our application to this grant is based on their recommendation.
 
 ## Development Roadmap :nut_and_bolt:
 
 We will be developing our MVP as a part for this grant.
 
-The goal is to achieve a functional system capable of hosting predefined static instances like blockchain nodes.
+The goal is to achieve a functional system that is capable of scheduling and verifying a batch process ( Shell Script or Docker container) that was executed in an off - chain entity.
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):** 4 ( 2 Full time Developers at 0.5 FTE/month)
-- **Total Costs:** 30,000 USD
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):** 3 ( 3 Full time Developers at 0.5 FTE/month)
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 - Basic functionality (MVP)
 
-- **Estimated duration:** 4 month
-- **FTE:**  4
-- **Costs:** 30,000 USD
+- **Estimated duration:** 2 months
+- **FTE:**  3
+- **Costs:** 10,000 USD
 
 #### **Deliverables:**
 
@@ -151,7 +150,5 @@ The goal is to achieve a functional system capable of hosting predefined static 
 - **Long term plans:** We intend to build Cyborg Network into a comprehensive decentralized edge computing network, thereby unlocking novel markets, especially in real-time data management for edgeAI and edge IoT devices. We also plan to support additional features like edge server monetization, server hardware management and upgrades over time.
 
 ## Additional Information :heavy_plus_sign:
-
-We are applying for this grant based on the recommendation from the Square One team at Parity as a part of our application to the Substrate Builders Program (SBP).
 
 Kresna (CTO) has also contributed to the **InvArch's Web3 Foundation Grant** [Milestone 1](https://github.com/w3f/Grant-Milestone-Delivery/blob/7932b07cc38150701ba8ed034723193f66002975/deliveries/InvArch_M1.md) that has been completed successfully. He also contributed to the  [Chocolate Network](https://substrate.io/ecosystem/projects/chocolate/) as a Substrate developer for their Substrate Builder Program (SBP) Milestone 1 delivery which has been completed successfully.
