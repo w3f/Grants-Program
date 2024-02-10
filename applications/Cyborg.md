@@ -40,12 +40,6 @@ We've embedded all operational logic within our pallets. Through the Cyborg Conn
 
 Initially, our goal is to configure the system to support predefined static instances, notably blockchain nodes. Our vision then expands to embracing custom deployments for applications and storage. By evolving in this manner, we aspire to establish ourselves as the premier decentralized computing hub for Polkadot ecosystem projects. Leveraging this infrastructure, we intend to develop transformative products such as:
 
-- A Decentralized Postgres Database
-- Decentralized CDN
-- Decentralized Personal Drive Storage
-
-These solutions are designed to address real-world challenges while harnessing the security inherent to blockchain technology.
-
 ### Ecosystem Fit
 
 Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge computing, crucial for the growing demand of ai and iot applications. By primarily catering to Web2 application providers, we're paving the way for a fresh wave of users to engage with the Polkadot ecosystem, fueling its expansion.
