@@ -77,7 +77,7 @@ The following items could be the initial deliverables of the project. These are 
 | -----: | ----------- | ------------- |
 | 0a.| License | Apache 2.0
 | 0b.| Article | We will write an article or public-facing announcement explaining our intentions to the community.
-| 1. | Codebase Assessment | We will conduct a thorough review of the codebase, docs, and testing infrastructure. We will look to identify any critical bugs or outdated dependencies. |
+| 1. | Codebase Assessment | We will conduct a thorough review of the codebase, docs, and testing infrastructure. We will look to identify any critical bugs or outdated dependencies. The results will be listed and analyzed in a public report. |
 | 2. | Updates | We will address any issues related to breaking changes, and prioritize tasks. |
 | 3. | Polkadot-JS API | For the initial phase, we will focus on bug fixes, documentation updates, and minor improvements. |
 
