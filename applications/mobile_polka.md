@@ -145,8 +145,8 @@ Our solution strives to create a comprehensive Polkadot Explorer mobile app that
 
 ### Contact
 
-- **Contact Name**: Esubalew Amenu
-- **Contact Email**: esubalew.a2009@gmail.com
+- **Contact Name:** Esubalew Amenu
+- **Contact Email:** esubalew.a2009@gmail.com
 - **Website**: [DataScience plc](https://datascienceplc.com)
 - **Google play**: [ETH Developers](https://play.google.com/store/apps/developer?id=ETH+Developers), [Herma computing](https://play.google.com/store/apps/developer?id=Herma+plc)
 
