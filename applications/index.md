@@ -55,6 +55,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [IgorStojanov](https://igorstojanov.com/)                       | [Material Design Makeover for Substrate Front-End Template](./lsi-front-end-template.md)                     | [GitHub](https://github.com/stojanov-igor)                 | ☐          |        ☐       |      ☐      |
 | DOT Login                       | [DOT Login](./dot-login.md)                     | [GitHub](https://github.com/singkeo)                 | ☐          |        ☐       |      ☐      |
 | [gmajor-encrypt](https://github.com/gmajor-encrypt)                       | [XCM Tools follow-up](./xcm-tools-follow-up.md)                     | [GitHub](https://github.com/gmajor-encrypt/xcm-tools)                 | ☐          |        ☐       |      ☐      |
+| [inkscope.xyz](https://inkscope.xyz/)                       | [Inkscope Fuzzer](./inkscope-fuzzer.md)                     | [GitHub](https://github.com/inkscopexyz)                 | ☐          |        ☐       |      ☐      |
 
 ## 2023
 
