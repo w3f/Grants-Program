@@ -200,8 +200,9 @@ Our project is led by individuals holding BSc, MSc, and BA degrees, along with r
 
 ## Development Status :open_book:
 
-We've begun preparing a Postman collection to streamline API endpoint integration, facilitating smooth development.
+- We've begun preparing a Postman collection to streamline API endpoint integration, facilitating smooth development.
 ![](https://drive.google.com/uc?export=view&id=1LGekBSpsI2DsZCOGoB050OIsMPLNQd8v)
+- [Figma design](https://www.figma.com/file/ZtWv6MjWyRwnSK1AeDdAdo/MobilePolka?type=design&node-id=4511-5204&mode=design&t=JMvJoxSMtniCEgdc-0) is started
 
 ## Development Roadmap :nut_and_bolt:
 
