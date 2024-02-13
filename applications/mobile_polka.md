@@ -26,9 +26,9 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Block Events**: Highlight the blocks with the Events list, offering insights into each event.
 - **Block History**: Provide a historical record of blocks, enabling users to analyze the blockchain's evolution over time.
 
-![](https://drive.google.com/uc?export=view&id=1VHtU0hzhBEF63SxXFTXAhGbr-iKeq8pt)
+![](https://drive.google.com/uc?export=view&id=1Y1Uvy74xaNiMB7QQ3ucLzNYsQspDaBR3)
 
-![](https://drive.google.com/uc?export=view&id=1f-9tgb1NsPSzlfNxmmqpDDqLVfo9cCe2)
+![](https://drive.google.com/uc?export=view&id=1DxLA__kq3RphjruQP4pvQTYL99EeiugX)
 
 ##### Transaction Analysis:
 - **Transfer Detail**: Real-time information on the transfer of DOT in circulation, contributing to a comprehensive understanding of the market.
