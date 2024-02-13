@@ -48,7 +48,9 @@ Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge
 
 Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala leans towards off-chain computation, anchored by a fortified smart contract platform. Our perspective suggests Phala may resonate more with traditional sectors, like health tech, aiming to harness blockchain's innovation. Conversely, our insights show that off-chain computation finds favor with Web2-centric applications. Hence, rather than viewing Phala as a direct rival, we consider them as a complementary entity.
 
-Our ultimate ambition is to become a decentralized edge computing network, thereby unlocking novel markets, especially in real-time computation for edgeAI and edge IoT devices.
+Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture. However, Cyborg leverages software-level privacy mechanisms such as Full Homomorphic Encryption (FHE), providing us with the capability to deploy containerized instances even on non-TEE CPU architectures. We are developing products for a validated market that has already attracted interest from various AI applications and data center providers to join the network once it goes live.
+
+Our ultimate goal is to establish a decentralized edge computing network capable of executing targeted low-latency tasks to enhance system performance and efficiency. This approach aims to reduce cloud expenses without necessarily replacing cloud services, thereby opening up new markets, particularly in real-time computation for edge AI and edge IoT devices.
 
 The technological landscape sees a plethora of competitors, each carving their niche with unique technical and market strategies. Renowned names include [Akash Network](https://akash.network/), and [Golem](https://www.golem.network/) .
 
