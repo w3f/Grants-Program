@@ -30,6 +30,8 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 
 ![](https://drive.google.com/uc?export=view&id=1DxLA__kq3RphjruQP4pvQTYL99EeiugX)
 
+![](https://drive.google.com/uc?export=view&id=1ai0ZLk1w1z3k85WwgVWuKmhM0g-rdjxX)
+
 ##### Transaction Analysis:
 - **Transfer Detail**: Real-time information on the transfer of DOT in circulation, contributing to a comprehensive understanding of the market.
 - **Transactions Amount in DOT**: Display the total value of transactions in DOT, aiding in the assessment of network activity.
@@ -37,9 +39,7 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Transactions**: Present the total number of transactions conducted within the Block, giving users an indication of network throughput.
 - **Search Transfers**: Show transfers in order by Date range, Block start, Block end, and Account.
 
-![](https://drive.google.com/uc?export=view&id=1hcWMfG2JRrbfZpsEC3I9dqd6SO9Wx37w)
-
-![](https://drive.google.com/uc?export=view&id=1YC4BJ89CFoHPzrDw5e3SqQeZDjWwaAGo)
+![](https://drive.google.com/uc?export=view&id=1u5R9RxrbbitP1k13X4-b3V6KK2UVo66C)
 
 ##### Event Information:
 - **Event list**: Identify and display events list, allowing users to explore the details of specific events.
@@ -50,8 +50,9 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Event History**: Provide a historical overview of past events, enabling users to analyze trends and patterns.
 - **Search Events**: Show events in order by Date range, Block start, Block end, and Account.
 
-![](https://drive.google.com/uc?export=view&id=1n7AV2-NBvwkNUqxLMhb33MuH5_I97GEZ)
-![](https://drive.google.com/uc?export=view&id=1iGwjax5bQLg4E09Ou39aF4J_HDJxfgYa)
+![](https://drive.google.com/uc?export=view&id=1a96cU9zIsqffHM8uhkMsqO2Lc6L8W3ED)
+
+![](https://drive.google.com/uc?export=view&id=1yEpGFvLXhqqG3-jP1Ds1cHe9Jjkakj5Z)
 
 ##### Extrinsics Analysis:
 - **Extrinsics list**: Identify and display extrinsics list, allowing users to explore the details of specific extrinsics.
@@ -60,8 +61,9 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **extrinsics History**: Provide a historical record of extrinsics, enabling users to analyze the extrinsicschain's evolution over time.
 - **Filter Extrinsics**: Show extrinsics in order by Date range, Block start, Block end, and Account.
 
-![](https://drive.google.com/uc?export=view&id=164ZcJ2p-le3qHF4uIjpX7MfstrlRS_xW)
-![](https://drive.google.com/uc?export=view&id=1y-PXkBxXBFUIXI3DlpkDnIsy0u03uEo1)
+![](https://drive.google.com/uc?export=view&id=1WFt7R2O69kekp7YHdYFOiVbc2d3XYw4B)
+
+![](https://drive.google.com/uc?export=view&id=10yheMpKNqXz0B5vNGdBcbK2YUl8Qkg4H)
 
 #### Account and Address Analysis:
 ##### General Information:
@@ -72,8 +74,11 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Signed Extrinsics**: Highlight the signed extrinsics of the account's recorded activity, offering insights into its inception.
 - **Last Activity**: Display the date of the account's most recent activity, aiding users in tracking recent engagement.
 
-![](https://drive.google.com/uc?export=view&id=13tclYRPkL258sIVi5zW8p_I7vd3YBqKv)
-![](https://drive.google.com/uc?export=view&id=1yu0jWXrI2Un2-zkALB3C8eJoENiwvoEJ)
+![](https://drive.google.com/uc?export=view&id=1Cc31uFpbKvcgtnXuMW4Y3OLbQ_lK8wp8)
+![](https://drive.google.com/uc?export=1fwm-IuKu5QsQNJ5vHbUP7RzJCcgdDFg5)
+![](https://drive.google.com/uc?export=view&id=1MfWYBTxzRAWPobBumlft8CEj-g1m4sYF)
+![](https://drive.google.com/uc?export=view&id=1Yk6JlXqJ0qr8tbPPqy66MNGxqt8BILs5)
+![](https://drive.google.com/uc?export=view&id=1gRRFQQnbwQhQAItLQs-zFhG2nmUGCqDo)
 
 ##### Rewards Information:
 - **Earned Rewards**: Show the total rewards earned by the account over its history, providing a measure of its overall contribution to the network.
@@ -82,16 +87,15 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Latest Rewards**: Display the block of the account's most recent rewards, indicating ongoing engagement.
 - **Reward Amount in DOT**: Display the rewarded value of staking in DOT, aiding in the assessment of network activity.
 
-![](https://drive.google.com/uc?export=view&id=1MsshD6hYLWyH7mU-5VhIXJ7hk-c_fCZS)
-![](https://drive.google.com/uc?export=view&id=1uRZ3hiQRhF5wl7sqlvm6P2M556v35KQQ)
+
 
 #### Runtime Explorer:
 ##### General Information:
 - **Runtime Lists**: Display list of runtimes, including its name, version, number of pallets, events, call functions storage functions and constants.
 - **Runtime Pallets List**: Provide additional informations associated with the runtime, contributing to a more comprehensive understanding.
 
-![](https://drive.google.com/uc?export=view&id=1--XWsrd9CX9p64fWVQN9K0XYxw0hpuTw)
-![](https://drive.google.com/uc?export=view&id=16pZdVBUD8IT1fZGHt2r3ZeLT8UEl3cSp)
+![](https://drive.google.com/uc?export=view&id=19-icPoqb9XZbMSajghHKAO_WntFIt6wc)
+![](https://drive.google.com/uc?export=view&id=1rCUhhBN5x2mxF-X6SjoCHfczolwfFtw1)
 
 ##### Pallet Details:
 - **Pallet Name**: Present the human readable name assigned to the pallet, aiding users in quickly identifying and referencing the pallet.
@@ -102,7 +106,7 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 Supply Information:
 - **Pallet Error Messages**: Display list of name, index, and documentation of error messages of the pallet for technical purposes.
 
-![](https://drive.google.com/uc?export=view&id=1VmCeErO6YTLBnABJe2dCbaVLje1CnVsT)
+![](https://drive.google.com/uc?export=view&id=1FxoBmMVE23slHy1BZ8sHNBb8OkcrV9mW)
 
 
 ### Unique Aspects:
