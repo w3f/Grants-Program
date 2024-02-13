@@ -28,11 +28,19 @@ Lastly, the substrate framework stands out as the premier tool for crafting bloc
 
 The core of our computing solution relies on both off-chain components and substrate pallets that work harmoniously with each other.
 
-Our system invites compute providers to download and run our Cyborg Smart Client (CSC) binary as a root, allowing them to become a provider within our network seamlessly. Upon activation, the CSC immediately establishes a subxt connection with the substrate blockchain. 
+Cyborg is a fusion of a blockchain network and numerous computing clusters, collaborating to offer an effective decentralized solution for verifiable off-chain computing.
 
-We've embedded all operational logic within our pallets. Through the Cyborg Connect platform Dapp, which is integrated with our blockchain, customers have direct access to enact actions on the hosted machine. Both providers and customers can utilize our platform to view detailed analytics and metrics pertaining to their instances.
+Our initial technological goal is to develop a system capable of validating computational outcomes from one off-chain cluster by re-executing them in another using pallet logic.
 
-Initially, our goal is to configure the system to support predefined static instances, notably blockchain nodes. Our vision then expands to embracing custom deployments for applications and storage. By evolving in this manner, we aspire to establish ourselves as the premier decentralized computing hub for Polkadot ecosystem projects. Leveraging this infrastructure, we intend to develop transformative products such as:
+the Substrate blockchain primarily serves as the framework for deploying containered tasks and facilitating smart contracts related to billing functions.
+
+Once the docker container is deployed, its workload will be protected by hardware measures to prevent data leakage.
+
+It seamlessly integrates with the current cloud-native toolchain for developers, typically avoiding the need for code changes.
+ 
+Developers can monitor details such as resource utilization and application health status through the Cyborg Connect application dashboard.
+
+![dashboard](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/90f160c6-5cef-408b-8db2-c3e550fdb6a8)
 
 ### Ecosystem Fit
 
