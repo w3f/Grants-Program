@@ -71,7 +71,7 @@ The workflow of integrating a Bitcoin light client into a chain encompasses the 
 
 ## Development Status :open_book:
 
-The team has not yet started implementing the project. There is a drafted design document for this pallet.
+The team has not yet started implementing the project. There is a drafted [Pallet-Bitcoin Design Document](https://liuchengxu.notion.site/Pallet-Bitcoin-Design-Document-d7f688a550844159a700fe1a00dd4907) for this pallet.
 
 ## Development Roadmap :nut_and_bolt:
 
