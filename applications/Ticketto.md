@@ -37,6 +37,49 @@ As part of our prior research (previous to formal protocol documentation), a moc
 
 We believe in use cases that drive adoption to the community, while being able to be used on similar use cases.
 
+#### The needs behind this solution
+
+As part of the initial research for formulating this solution proposal, we interviewed small event organizers and ticket sellers
+(event promoters, mainly) in Colombia. As a result of those, we've come to some initial conclusions:
+
+- Access to existing ticketing systems, implies **tying to** a SaaS-like solution (with upfront issuance costs) that usually have
+  organizers incurring in high comission fees (sometimes up to 15%~20%), due to the intermeditation; way beyond the bare infrastructure
+  costs, and
+- **Delegating selling on third-parties** (like event promoters) was not easy.
+
+By not using these services, they still have to rely on third-parties to expand selling channels, thus:
+
+- **Organizers lose connection** with their audience, thus hardening conditions to invite them to follow up and create community.
+- Also, in practice, **they lose control over selling parameters** (like minimum and maximum prices, or even control against overselling).
+  They can try controlling some of those via agreements with the third parties, but these agreements are still prone to fail.
+
+In conclusion, stakeholders are interested in a model that allows them to incur almost no upfront costs (except deposits and fees).
+
+We also found out that, as distribution/selling channels event organizers generally use social networks (i.e. WhatsApp, Instagram), event promoters and some
+*"official selling points"*. While distribution is successfully achieved via these channels, this means organizers have to print tickets (incurring initial
+costs), to mitigate overselling, but end up:
+
+- Being vulnerable to fraudulent reselling and tickets forging.
+
+When discussing the benefits of using our proposed solution with them, some organizers showed interest in the potential for attendees to resell on a secondary market
+safely and how the reduction in fraud can improve their reputation, as well as the ease of handling the access to the event via a mobile application.
+  
+#### Intent of use
+
+Kippu is underway a Proof of Concept implementing web2-based solutions to better understand the integration with the process organizers and sellers
+have, while using Web3 components (like wallet accounts and signed transactions). After this, we expect to have even more insights to better understand
+how these actors might use a Web3 solution and how to reduce the hassle of onboarding them through a decentralised protocol like *Ticketto*.
+
+#### Previous Solutions
+  
+We know about another project [Grants-Program#690][gh:grant-690] with a similar idea in the Polkadot ecosystem. However, we're unsure whether they're still active,
+nor have they released much information that leads us to learn.
+
+In other ecosystems, we've seen other projects working with a similar approaches<sup>[[1]][eco:1] [[2]][eco:2] [[3]][eco:3]</sup>, from which we've taken inspiration
+for some desired features on a roadmap (like access with memberships, or crowdfunding for event organizers).
+
+For technical details, we've inspired on OSS, such as [Pretix][link:pretix].
+
 As part of the future roadmap (beyond this project, that'll help us to build a nice MVP and validate the protocol itself), we've seen potential to build a pallet extension for `pallet-nfts` so system chains (such as Asset Hub) and other parachains as well can benefit from extended use cases, such as: buying and selling using `fungibles` assets, and extend the model for auctions (that can be included in future versions of the protocol).
 
 ## Team :busts_in_silhouette:
@@ -130,6 +173,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 [img:kippu_mockups_events]: https://bafkreicwzh7sgstewgxuhs3igd5vfj2o4dsavivyyanuunp46d6gkxv7q4.ipfs.nftstorage.link/
 [img:kippu_mockups_ticket]: https://bafkreib5jinu2ryw436brwcxlbnwerm2mwcsowukz3pksw6but6otrxdni.ipfs.nftstorage.link/
 [img:kippu_mockups_qr]: https://bafkreierdwzq5tj4u32n3elvzlyl7ux5izuqknfpscqdhxltulucpltwpe.ipfs.nftstorage.link/
+
+[gh:grant-690]: https://github.com/w3f/Grants-Program/pull/690
+[eco:1]: https://nfticket.pe/
+[eco:2]: https://www.seatlabnft.com/
+[eco:3]: https://astronea.co/
+[link:pretix]: https://pretix.eu/about/en/
+
 [gh:virto]: https://github.com/virto-network
 [gh:virto_sdk]: https://github.com/virto-network/virto-sdk
 [gh:virto_valor]: https://github.com/virto-network/valor
