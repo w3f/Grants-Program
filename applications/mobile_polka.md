@@ -11,6 +11,8 @@
 Our project aims to develop the Polkadot Explorer mobile app, providing users with a seamless and intuitive platform to explore and analyze the Polkadot blockchain. With comprehensive features spanning from Event information to stake pool analytics, our app enhances accessibility and understanding of blockchain data.
 
 Our project integrates deeply with the Polkadot ecosystem, leveraging Substrate technology to access and analyze blockchain data. By providing a mobile interface for exploring Polkadot's blockchain, we contribute to the ecosystem's accessibility and usability.
+    
+While there may not be options available specifically tailored to the Polkadot ecosystem, there are numerous mobile app explorer examples across various blockchain networks. Notable examples for Ethereum network include [Ethereum Block Explorer](https://play.google.com/store/apps/details?id=nl.approvedapps.ethexplorer&hl=en&gl=US), [Blockchain explorer for Ethereum](https://bankex-scan.en.aptoide.com/app), [Ethereum Block Explorer ERC20](https://apps.apple.com/us/app/ethereum-block-explorer-erc20/id1261772749), and [Blockchair: Block Explorer](https://play.google.com/store/apps/details?id=com.bdc.blockchair.app&hl=en&gl=US). Our research indicates a mobile explorer app is essential for the Polkadot network, and we aim to address this need.
 
 Our team is passionate about blockchain technology and its potential to revolutionize various industries. We believe in the vision of decentralized networks like Polkadot and are excited to contribute to its growth by providing users with powerful tools for exploring and understanding blockchain data on the go.
 
