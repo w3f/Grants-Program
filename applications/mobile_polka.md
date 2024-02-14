@@ -31,9 +31,7 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Block History**: Provide a historical record of blocks, enabling users to analyze the blockchain's evolution over time.
 
 ![](https://drive.google.com/uc?export=view&id=1Y1Uvy74xaNiMB7QQ3ucLzNYsQspDaBR3)
-
 ![](https://drive.google.com/uc?export=view&id=1DxLA__kq3RphjruQP4pvQTYL99EeiugX)
-
 ![](https://drive.google.com/uc?export=view&id=1ai0ZLk1w1z3k85WwgVWuKmhM0g-rdjxX)
 
 ##### Transaction Analysis:
@@ -55,7 +53,6 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Search Events**: Show events in order by Date range, Block start, Block end, and Account.
 
 ![](https://drive.google.com/uc?export=view&id=1a96cU9zIsqffHM8uhkMsqO2Lc6L8W3ED)
-
 ![](https://drive.google.com/uc?export=view&id=1yEpGFvLXhqqG3-jP1Ds1cHe9Jjkakj5Z)
 
 ##### Extrinsics Analysis:
@@ -66,7 +63,6 @@ Our solution, the Polkadot Explorer mobile app, is designed to provide a holisti
 - **Filter Extrinsics**: Show extrinsics in order by Date range, Block start, Block end, and Account.
 
 ![](https://drive.google.com/uc?export=view&id=1WFt7R2O69kekp7YHdYFOiVbc2d3XYw4B)
-
 ![](https://drive.google.com/uc?export=view&id=10yheMpKNqXz0B5vNGdBcbK2YUl8Qkg4H)
 
 #### Account and Address Analysis:
@@ -206,7 +202,7 @@ Our project is led by individuals holding BSc, MSc, and BA degrees, along with r
 
 - We've begun preparing a Postman collection to streamline API endpoint integration, facilitating smooth development.
 ![](https://drive.google.com/uc?export=view&id=1LGekBSpsI2DsZCOGoB050OIsMPLNQd8v)
-- [Figma design](https://www.figma.com/file/ZtWv6MjWyRwnSK1AeDdAdo/MobilePolka?type=design&node-id=4511-5204&mode=design&t=JMvJoxSMtniCEgdc-0) is started
+- We have initiated the [Figma design](https://www.figma.com/file/ZtWv6MjWyRwnSK1AeDdAdo/MobilePolka?type=design&node-id=4511-5204&mode=design&t=JMvJoxSMtniCEgdc-0) phase.
 
 ## Development Roadmap :nut_and_bolt:
 
