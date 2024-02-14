@@ -16,7 +16,7 @@ We establish connections with small to medium-sized data centers to address the 
 
 We are embarking on an ambitious mission to establish ourselves as a Polkadot and Kusama parachain. Our decision is anchored in several key reasons:
 
-First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem.
+First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem. we have already initiated talks with a few ecosystem teams like [Peaq](https://www.peaq.network/), [Tanssi](https://www.tanssi.network/), [Oak Network](https://oak.tech/) for potential integrations
 
 Second, the unparalleled ecosystem and technical support provided by Polkadot and Kusama have been instrumental in our development, and we've had the privilege of closely collaborating with them over the years.
 
@@ -41,6 +41,12 @@ It seamlessly integrates with the current cloud-native toolchain for developers,
 Developers can monitor details such as resource utilization and application health status through the Cyborg Connect application dashboard.
 
 ![dashboard](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/90f160c6-5cef-408b-8db2-c3e550fdb6a8)
+
+### Work Verification System
+
+For this grant application we are developing a decentralized task verification mechnaism to incorporate a on chain validation system for a containered tasks executed in an offchain environment. The main componenets will include the Cyborg appchain that will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), An Oracle and a testing suite.
+
+The objective is to upload a docker container along with a publicly available dataset such as IPFS and execute the container over the IPFS dataset inside one of the nodes of the k3s cluster, the executed compuation result will be pushed to the oracle which will feed to the Cyborg substrate chain, Now the verification pallet will initiate task execution on another connected cluster to reverify the result. If the initial result and verified result are the same the chain will approve the computation and add it to the block.
 
 ### Ecosystem Fit
 
