@@ -10,7 +10,7 @@ If you want to apply in **private**, you can do so [:arrow_right: here](https://
 
 :::info
 
-Payments are made in DOT (30%) and USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) or fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L8). 
+Payments are made in DOT (30%, linearly vesting over 2 years) and USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) or fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L8). 
 :::
 
 

@@ -121,7 +121,7 @@ As soon as one evaluator approves the pull request, the delivery is officially a
 
 **(v)  Payment process:**
 
-The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the bank account or Polkadot AssetHub (for DOT, USDT and USDC) address specified in the initial application.
+The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the bank account and/or Polkadot AssetHub (for DOT, USDT and USDC) address specified in the initial application.
 
 ## 5.  Scope of these Terms and Conditions
 
