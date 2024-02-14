@@ -8,7 +8,7 @@
 
 ### Overview
 
-Our project aims to develop the Polkadot Explorer mobile app, providing users with a seamless and intuitive platform to explore and analyze the Polkadot blockchain. With comprehensive features spanning from Event information to stake pool analytics, our app enhances accessibility and understanding of blockchain data.
+Our project aims to develop the Polkadot Explorer mobile app, providing users with a seamless and intuitive platform to explore and analyze the Polkadot blockchain. With comprehensive features spanning from Event information to account analytics, our app enhances accessibility and understanding of blockchain data.
 
 Our project integrates deeply with the Polkadot ecosystem, leveraging Substrate technology to access and analyze blockchain data. By providing a mobile interface for exploring Polkadot's blockchain, we contribute to the ecosystem's accessibility and usability.
     
