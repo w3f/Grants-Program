@@ -32,6 +32,8 @@ Cyborg is a fusion of a blockchain network and numerous computing clusters, coll
 
 Our initial technological goal is to develop a system capable of validating computational outcomes from one off-chain cluster by re-executing them in another using pallet logic.
 
+![photo_2024-02-14_23-43-17](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/d50e7582-8f0f-461a-8668-10a828089404)
+
 the Substrate blockchain primarily serves as the framework for deploying containered tasks and facilitating smart contracts related to billing functions.
 
 Once the docker container is deployed, its workload will be protected by hardware measures to prevent data leakage.
@@ -44,9 +46,9 @@ Developers can monitor details such as resource utilization and application heal
 
 ### Work Verification System
 
-For this grant application we are developing a decentralized task verification mechnaism to incorporate a on chain validation system for a containered tasks executed in an offchain environment. The main componenets will include the Cyborg appchain that will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), An Oracle and a testing suite.
+For this grant application, we are developing a decentralized task verification mechanism to incorporate an on-chain validation system for containerized tasks executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), an Oracle, and a testing suite.
 
-The objective is to upload a docker container along with a publicly available dataset such as IPFS and execute the container over the IPFS dataset inside one of the nodes of the k3s cluster, the executed compuation result will be pushed to the oracle which will feed to the Cyborg substrate chain, Now the verification pallet will initiate task execution on another connected cluster to reverify the result. If the initial result and verified result are the same the chain will approve the computation and add it to the block.
+The objective is to upload a Docker container along with a publicly available dataset such as IPFS and execute the container over the IPFS dataset inside one of the nodes of the K3s cluster. The executed computation result will be pushed to the Oracle, which will then feed it to the Cyborg substrate chain. Subsequently, the verification pallet will initiate task execution on another connected cluster to reverify the result. If the initial result and verified result are the same, the chain will approve the computation and add it to the block.
 
 ### Ecosystem Fit
 
@@ -123,20 +125,20 @@ We have created a UX demo for a potential user and the development for this gran
 
 ## Development Roadmap :nut_and_bolt:
 
-We will be developing our MVP as a part for this grant.
+We will be developing a PoC as a part for this grant.
 
 The goal is to achieve a functional system that is capable of scheduling and verifying a batch process ( Shell Script or Docker container) that was executed in an off - chain entity.
 
 ### Overview
 
 - **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):** 3 ( 3 Full time Developers at 0.5 FTE/month)
+- **Full-Time Equivalent (FTE):** 2 ( 1 Full time Developers at 1 FTE/month and 2 part time developers each at 0.5 FTE/month)
 - **Total Costs:** 10,000 USD
 
-### Milestone 1 - Basic functionality (MVP)
+### Milestone 1 - Task Verification System
 
 - **Estimated duration:** 2 months
-- **FTE:**  3
+- **FTE:**  4
 - **Costs:** 10,000 USD
 
 #### **Deliverables:**
@@ -147,12 +149,12 @@ The goal is to achieve a functional system that is capable of scheduling and ver
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Pallet Edge Connect | This Substrate module will facilitate uninterrupted communication between edge servers managed by providers and the Cyborg's Substrate-based blockchain. The primary role of this pallet is to broadcast events that populate the database with server information. Additionally, it sporadically broadcasts events to verify the connectivity of all servers, updating the outcome in the pallet's reward mechanism to adjust incentives accordingly.|
-| 2. | Pallet Rewards v1 | This Substrate module will offer foundational incentives to providers for maintaining consistent network connectivity. Rewards are recalculated hourly in the database based on random connectivity assessments by the edge connect pallet, with daily payout distribution. |
-| 3. | Database v1 | This component will be a streamlined database instance dedicated to capturing details about diverse client connections. Its primary function is to facilitate optimal server selection for customers, tailored to their specifications, geographic location, and other criteria. The CyberHub will dynamically retrieve data in response to blockchain events. |
-| 4. | CyberHub | CyberHub will be a hybrid backend server in Rust that serves multiple purposes: it routes messages among all connected clients, queries the database, manages events triggered by the blockchain, and submits real-world data to the blockchain, acting as an oracle. The CSC promptly establishes a WebSocket connection with the CyberHub. |
-| 5. | Substrate chain | Pallet Edge Connect and Pallet Rewards v1 as the part of on-chain component of our chain runtime will interact with & CyberHub in such a way that it updates the database with the latest server connectivity information and reward distribution. |
+| 1. | Working Demo | We will provide video documentation to help developers understand the process of deploying containered tasks with and without sample datasets.|
+| 2. | Task Examples | We will provide example containers and data sets to help programmers understand and execute batch processes. Currently we provide Examples for Docker, Bash, Terraform etc.. |
+| 3. | Pallet Rewards v1 | This Substrate module will offer foundational incentives to providers for maintaining consistent network connectivity. Rewards are recalculated hourly in the database based on random connectivity assessments by the edge connect pallet, with daily payout distribution. |
+| 4. | Database v1 | This component will be a streamlined database instance dedicated to capturing details about diverse client connections. Its primary function is to facilitate optimal server selection for customers, tailored to their specifications, geographic location, and other criteria. The CyberHub will dynamically retrieve data in response to blockchain events. |
+| 5. | CyberHub | CyberHub will be a hybrid backend server in Rust that serves multiple purposes: it routes messages among all connected clients, queries the database, manages events triggered by the blockchain, and submits real-world data to the blockchain, acting as an oracle. The CSC promptly establishes a WebSocket connection with the CyberHub. |
+
 
 ## Future Plans
 
