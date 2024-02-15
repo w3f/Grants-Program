@@ -48,8 +48,7 @@ Developers can monitor details such as resource utilization and application heal
 
 For this grant application, we are developing a decentralized task verification mechanism to incorporate an on-chain validation system for containerized tasks executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), an Oracle, and a testing suite.
 
-<img alt="Screenshot 2024-02-15 at 1 09 56 PM" src="https://github.com/Cyborg-Network/Grants-Program/assets/93442895/7254b656-af86-4950-b3a6-1ffb82bbc6f0">
-
+<img alt="Screenshot 2024-02-15 at 1 09 56 PM" src="https://github.com/Cyborg-Network/Grants-Program/assets/93442895/add65d92-0bf6-40df-a3fb-715fc0efce54">
 
 The objective is to upload a Docker container along with a publicly available dataset such as IPFS and execute the container over the IPFS dataset inside one of the nodes of the K3s cluster. The executed computation result will be pushed to the Oracle, which will then feed it to the Cyborg substrate chain. Subsequently, the verification pallet will initiate task execution on another connected cluster to reverify the result. If the initial result and verified result are the same, the chain will approve the computation and add it to the block.
 
