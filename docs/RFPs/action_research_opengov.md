@@ -5,9 +5,7 @@
 * **Projects you think this work could be useful for** [optional]: [OpenGov](https://wiki.polkadot.network/docs/learn-polkadot-opengov-index)
 * **Teams/People that could deliver the RFP** [optional]: [The Web4 initiative](https://forum.polkadot.network/t/the-web4-initiative-decentralizing-user-powers-and-controls/4202/3), [Address Labs](https://polkadot.polkassembly.io/referenda/450), [Metagov](https://polkadot.polkassembly.io/post/1777), [Polkalytics](https://polkadot.polkassembly.io/referenda/459), and other blockchain ecosystem contributors with academic/analyst backgrounds.
 
-## Project Description :page_facing_up: 
-
-Please describe exactly why you are proposing this RFP. Make sure to point out why it’s potentially useful for your project or other projects in the ecosystem.  
+## Project Description :page_facing_up:   
 
 **Context:**
 
@@ -39,19 +37,72 @@ There is the need for more encompassing, neutral, practical, and actionable case
 
 ## Deliverables :nut_and_bolt:
 
-Please list the deliverables of the project in as much detail as possible. Please also estimate the amount of work required and try to divide the project into meaningful milestones.
-
 * **Total Estimated Duration:** 3-6 months
+* **Total Costs:** TBC. 
+* **Note:** All the items mentioned within each milestone are only starting points for the reflection and analysis. Proposers are invited to expand on these generic topics in as much breadth and depth as they see fit.
 
-### Milestone 1
+### Milestone 1: Report: OpenGov as a model for decentralised decision-making.
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | What was the rationale for OpenGov?  
+| 2. | What were the objectives of OpenGov? 
+| 3. | When and how was OpenGov deployed? 
+| 4. | When and how were OpenGov communications/resources relayed/disseminated?
+| 5. | How was OpenGov perceived/received?
+| 6. | Which ongoing challenges/setbacks exist within OpenGov?
+| 7. | Which future opportunities/avenues exist within OpenGov?
+| 8. | Other theoretical/practical observations
+| 9. | Recommendations for further research or roadmap developments
+| 10. | Notes on the methodology/ies adopted in the course of this review
+| 11. | Appendices of all materials and resources used in the course of this review
 
-Please add additional milestones in the same way: 
-* **Estimated Duration:** Duration of milestone 1 
-* **FTE:**  Amount of time (in days) required for a single person to complete this milestone
-* **Costs:** Amount of Payment in USD for milestone 1
 
+### Milestone 2: Report: OpenGov as a decentralised executive system.
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Title of the deliverable | Please describe the deliverable here as detailed as possible |  
-| 2.  | ... |...| 
+| 1. | What are the key specifications of OpenGov?  
+| 2. | How do these specifications align with the objectives of OpenGov? 
+| 3. | What is the process for getting OpenGov specifications revised/updated? 
+| 4. | How often are OpenGov specifications revised/updated?
+| 5. | Who is in charge of delivering/implementing OpenGov revisions?
+| 6. | Which ongoing challenges/setbacks exist in revising/updating OpenGov specifications?
+| 7. | Which future opportunities/avenues exist for revising/updating OpenGov specifications?
+| 8. | Other theoretical/practical observations
+| 9. | Recommendations for further research or protocol improvements
+| 10. | Notes on the methodology/ies adopted in the course of this review
+| 11. | Appendices of all materials and resources used in the course of this review
+
+
+### Milestone 3: An analysis of Governance participation on OpenGov implementations. 
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | What does participation in OpenGov look like?
+| 2. | Are there incentives for OpenGov participation?
+| 3. | Are there obstacles to OpenGov participation?
+| 4. | What are the profiles of OpenGov participants?
+| 5. | What are the motivations of OpenGov participants?
+| 6. | Are there trends in off-chain debates?
+| 7. | Are there patterns in on-chain voting?
+| 8. | Other practical observations
+| 9. | Recommendations for further research or initiatives
+| 10. | Notes on the methodology/ies adopted in the course of this analysis
+| 11. | Appendices of all materials and resources used in the course of this analysis
+
+
+### Milestone 4: A review of the Treasury funding allocation in OpenGov.
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | How is Treasury funding allocated under OpenGov?
+| 2. | What are the profiles of Treasury funding applicants? 
+| 3. | What are the categories of Treasury funding requests?
+| 4. | How are Treasury funding applications impacting OpenGov?
+| 5. | How are Treasury funding allocations reviewed/monitored?
+| 6. | How are Treasury funding allocations impacting the ecosystem?
+| 7. | Other practical observations
+| 8. | Recommendations for further research or initiatives
+| 9. | Notes on the methodology/ies adopted in the course of this analysis
+| 10. | Appendices of all materials and resources used in the course of this analysis
+
