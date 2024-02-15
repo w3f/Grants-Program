@@ -54,7 +54,7 @@ The objective is to upload a Docker container along with a publicly available da
 
 ### Ecosystem Fit
 
-Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge computing, crucial for the growing demand of ai and iot applications. By primarily catering to Web2 application providers, we're paving the way for a fresh wave of users to engage with the Polkadot ecosystem, fueling its expansion.
+Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge computing, crucial for the growing demand of AI and IoT applications. By primarily catering to Web2 application providers, we're paving the way for a fresh wave of users to engage with the Polkadot ecosystem, fueling its expansion.
 
 Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala leans towards off-chain computation, anchored by a fortified smart contract platform. Our perspective suggests Phala may resonate more with traditional sectors, like health tech, aiming to harness blockchain's innovation. Conversely, our insights show that off-chain computation finds favor with Web2-centric applications. Hence, rather than viewing Phala as a direct rival, we consider them as a complementary entity.
 
@@ -84,11 +84,11 @@ The technological landscape sees a plethora of competitors, each carving their n
 
 - [Barath Kanna](https://www.linkedin.com/in/barath-kanna) - A developer with a specialization in Rust and blockchain technology. His experience is rooted in designing blockchain infrastructure solutions. Notably, he is an alumni of the Polkadot Blockchain Academy's third cohort at UC Berkeley (Jul - Aug 2023)
 
-- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) ( Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
+- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) (Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
 
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - She has been involved in operations for Web3 projects and has taken initiatives in the blockchain community. One of her contributions is the establishment of [Indi Verse DAO](https://www.linkedin.com/company/indi-verse-dao), a web 3.0 community in India. Additionally, she is the candidate of the Polkadot Ambassador Program. She is also a graduate from the Polkadot Blockchain Academy's Founders Track at Hong Kong (Jan - Feb 2024)
 
-- [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - Exeperienced Senior Rust and Substrate Developer with experience working for projects like [Bitgreen](https://bitgreen.org/).
+- [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - A Senior Rust and Substrate Developer with experience working for projects like [Bitgreen](https://bitgreen.org/).
 
 - [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Aspiring Rust systems engineer who is also a PBA alumni from Developer Track at Berkeley Cohort.
 
@@ -122,14 +122,14 @@ Through this process, we identified the potential of using connected clusters th
 
 As part of our transition, we are migrating from WebSockets to utilizing Libp2p as the core connection protocol. Furthermore, Subxt will serve as the standard communication protocol facilitating interaction between the Substrate chain and the off-chain domain. This strategic shift aligns with our commitment to adopting decentralized principles and enhancing the robustness of our system architecture.
 
-We have created a UX demo for a potential user and the development for this grant will look very similar this [Cyborg Network UX demo](https://drive.google.com/file/d/1zrN4TRMDd5ON2xH9F00upcyK-3ofwV4r/view?usp=drivesdk)
+We have created a UX demo for a potential user and the development for this grant will look very similar to this [Cyborg Network UX demo](https://drive.google.com/file/d/1zrN4TRMDd5ON2xH9F00upcyK-3ofwV4r/view?usp=drivesdk)
 
 
 ## Development Roadmap :nut_and_bolt:
 
 We will be developing a PoC as a part for this grant.
 
-The goal is to achieve a functional system that is capable of scheduling and verifying a batch process ( Shell Script or Docker container) that was executed in an off - chain entity.
+The goal is to achieve a functional system that is capable of scheduling and verifying a batch process (Shell Script or Docker container) that was executed in an off - chain entity.
 
 ### Overview
 
