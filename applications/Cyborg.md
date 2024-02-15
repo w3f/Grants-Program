@@ -48,6 +48,8 @@ Developers can monitor details such as resource utilization and application heal
 
 For this grant application, we are developing a decentralized task verification mechanism to incorporate an on-chain validation system for containerized tasks executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), an Oracle, and a testing suite.
 
+<img width="852" alt="Screenshot 2024-02-15 at 1 09 56 PM" src="https://github.com/Cyborg-Network/Grants-Program/assets/93442895/55dc0f22-f7f0-4185-8609-f1c41668d261">
+
 The objective is to upload a Docker container along with a publicly available dataset such as IPFS and execute the container over the IPFS dataset inside one of the nodes of the K3s cluster. The executed computation result will be pushed to the Oracle, which will then feed it to the Cyborg substrate chain. Subsequently, the verification pallet will initiate task execution on another connected cluster to reverify the result. If the initial result and verified result are the same, the chain will approve the computation and add it to the block.
 
 ### Ecosystem Fit
@@ -114,9 +116,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-We have successfully developed a Rust WebSocket client with a low-key profile, ensuring a seamless connection with our blockchain through off-chain workers. Additionally, we created a proof of concept based on this client. Our initial plan was to proceed with this development. However, based on the Web3 Foundation's recommendation to eliminate centralized entities from our architecture and establish a fully decentralized system from the ground up, we embarked on several research iterations.
+We initially developed a Rust WebSocket client with a low-key profile, ensuring a seamless connection with our blockchain through off-chain workers. Additionally, we created a proof of concept based on this client. Our initial plan was to proceed with this development. However, based on the recommendation from the W3F grants team during our [previous application](https://github.com/w3f/Grants-Program/pull/1933) to eliminate centralized entities from our architecture and establish a fully decentralized system from the ground up, we embarked on several research iterations.
 
-Through this process, we identified the potential to establish a decentralized bridge between our smart client and the Substrate blockchain. Leveraging the Parity Bridges repository as a foundation. Once this significant milestone is achieved, our team will shift focus to building custom pallets outlined in the technical architecture to steer our way through to become a parachain on Kusama and eventually on Polkadot.
+Through this process, we identified the potential of using connected clusters than indivdual instances for better management efficiency, We are currently building an on chain work verifcation system. Our team will shift focus to building custom pallets outlined in the technical architecture to steer our way through to become a parachain on Kusama and eventually on Polkadot.
 
 As part of our transition, we are migrating from WebSockets to utilizing Libp2p as the core connection protocol. Furthermore, Subxt will serve as the standard communication protocol facilitating interaction between the Substrate chain and the off-chain domain. This strategic shift aligns with our commitment to adopting decentralized principles and enhancing the robustness of our system architecture.
 
@@ -151,10 +153,10 @@ The goal is to achieve a functional system that is capable of scheduling and ver
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Working Demo | We will provide video documentation to help developers understand the process of deploying containered tasks with and without sample datasets.|
 | 2. | Task Examples | We will provide example containers and data sets to help programmers understand and execute batch processes. Currently we provide Examples for Docker, Bash, Terraform etc.. |
-| 3. | Pallet Rewards v1 | This Substrate module will offer foundational incentives to providers for maintaining consistent network connectivity. Rewards are recalculated hourly in the database based on random connectivity assessments by the edge connect pallet, with daily payout distribution. |
-| 4. | Database v1 | This component will be a streamlined database instance dedicated to capturing details about diverse client connections. Its primary function is to facilitate optimal server selection for customers, tailored to their specifications, geographic location, and other criteria. The CyberHub will dynamically retrieve data in response to blockchain events. |
-| 5. | CyberHub | CyberHub will be a hybrid backend server in Rust that serves multiple purposes: it routes messages among all connected clients, queries the database, manages events triggered by the blockchain, and submits real-world data to the blockchain, acting as an oracle. The CSC promptly establishes a WebSocket connection with the CyberHub. |
-
+| 3. | Substrate Module: Verification | This pallet will be responsible for assign the task to a secondary cluster for result verification. Once verifed the accepted result will be added to the block. |
+| 4. | Substrate Module: Edge Connect| This pallet will posses the logic for schedluing tasks to a specific cluster that matches the required specifications|
+| 5. | Worker K8S Operator | The k8s worker acts as a trusted controller. It securely stores deployment states, including manifests and defined secrets. Based on the manifests, the Worker uses remote attestation to authenticate the task exceution process.. |
+| 6. | Worker logs | The execution logs of the deployed container to serve as a proof of work. |
 
 ## Future Plans
 
