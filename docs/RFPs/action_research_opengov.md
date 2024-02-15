@@ -10,6 +10,7 @@
 Please describe exactly why you are proposing this RFP. Make sure to point out why it’s potentially useful for your project or other projects in the ecosystem.  
 
 **Context:**
+
 OpenGov was introduced as a new governance system for the Polkadot ecosystem in November 2022 on Kusama, before being deployed on Polkadot in June 2023. It pioneered the transition from a centralised decision-making model to a more decentralised executive system. 
 From the previous Gov1 model, OpenGov has altered some specifications (i.e. conviction voting, vote delegation) and removed others (i.e. proposal endorsements, representative bodies). As a new model, it has introduced original on-chain processes (i.e. origins and tracks, proposals whitelisting) and integrated a unique on-chain operator (i.e. Polkadot Technical Fellowship).
 
@@ -19,16 +20,20 @@ This is a missed opportunity for the entire ecosystem. Without an all-round refl
 There have been numerous discussions touching on OpenGov posted on Polkassembly, Subsquare, and the Polkadot Forum. However, these perspectives are often fragmented (i.e focusing exclusively on Treasury funding metrics/outcomes), highly detailed (i.e promoting specific technical/configuration changes), disjointed (i.e debating private/quadratic voting), and biased (i.e campaigning against validators/whales’ participation). 
 There is the need for more encompassing, neutral, practical, and actionable case studies of OpenGov’s implementations, which can help establish a feedback mechanism and prioritise future developments for OpenGov.
 
+
 **Project objectives:**
-Analyse OpenGov as the new model for on-chain governance in the ecosystem
-Review current implementations of OpenGov in the ecosystem
-Evaluate the impact of OpenGov in the ecosystem
-Propose a tentative roadmap for future OpenGov developments
+
+- Analyse OpenGov as the new model for on-chain governance in the ecosystem
+- Review current implementations of OpenGov in the ecosystem
+- Evaluate the impact of OpenGov in the ecosystem
+- Propose a tentative roadmap for future OpenGov developments
+
 
 **Project outcomes:**
-2 reports on the state of OpenGov (value proposition, strengths, limitations)
-3 case studies of OpenGov implementations (Kusama, Polkadot, and Bifrost)
-5+ recommendations for improvements to the OpenGov decentralised system
+
+- 2 reports on the state of OpenGov (value proposition, strengths, limitations)
+- 3 case studies of OpenGov implementations (Kusama, Polkadot, and Bifrost)
+- 5+ recommendations for improvements to the OpenGov decentralised system
 
 
 
