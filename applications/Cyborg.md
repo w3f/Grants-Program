@@ -16,7 +16,7 @@ We establish connections with small to medium-sized data centers to address the 
 
 We are embarking on an ambitious mission to establish ourselves as a Polkadot and Kusama parachain. Our decision is anchored in several key reasons:
 
-First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem. we have already initiated talks with a few ecosystem teams like [Peaq](https://www.peaq.network/), [Tanssi](https://www.tanssi.network/), [Oak Network](https://oak.tech/) for potential integrations
+First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem. We have already initiated talks with a few ecosystem teams like [Peaq](https://www.peaq.network/), [Tanssi](https://www.tanssi.network/), [Oak Network](https://oak.tech/) for potential integrations
 
 Second, the unparalleled ecosystem and technical support provided by Polkadot and Kusama have been instrumental in our development, and we've had the privilege of closely collaborating with them over the years.
 
@@ -34,7 +34,7 @@ Our initial technological goal is to develop a system capable of validating comp
 
 ![photo_2024-02-14_23-43-17](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/d50e7582-8f0f-461a-8668-10a828089404)
 
-the Substrate blockchain primarily serves as the framework for deploying containered tasks and facilitating smart contracts related to billing functions.
+The Substrate blockchain primarily serves as the framework for deploying containered tasks and facilitating smart contracts related to billing functions.
 
 Once the docker container is deployed, its workload will be protected by hardware measures to prevent data leakage.
 
