@@ -69,8 +69,8 @@ The technological landscape sees a plethora of competitors, each carving their n
 ### Team members
 
 - [Barath Kanna](https://www.linkedin.com/in/barath-kanna) - Founder & CEO
+- [Megha Varshini](https://www.linkedin.com/in/megha-varshini-t) - Founder & COO
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - Co-Founder & CTO
-- [Megha Varshini](https://www.linkedin.com/in/megha-varshini-t) - Co-Founder & COO
 - [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - Senior Substrate Developer
 - [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Rust Substrate Developer
 
@@ -160,9 +160,15 @@ The goal is to achieve a functional system that is capable of scheduling and ver
 
 ## Future Plans
 
-- **Short term plans:** We intend to use the grant to develop the core functionality of Cyborg Network and to establish ourselves as a Polkadot and Kusama parachain. We will also use the grant to develop our dApp platform and to promote our project in the Polkadot ecosystem.
+- **Short term plans:** We intend to use the grant to develop the core functionality of Cyborg Network and also be encouraged to develop this product further to an MVP that can address latency issues in applications that work on real time data processing.
 - **Long term plans:** We intend to build Cyborg Network into a comprehensive decentralized edge computing network, thereby unlocking novel markets, especially in real-time data management for edgeAI and edge IoT devices. We also plan to support additional features like edge server monetization, server hardware management and upgrades over time.
 
 ## Additional Information :heavy_plus_sign:
+
+Cyborg Network was a part of the [Polkadot Relayers Incubator 2023](https://www.polkadotglobalseries.com/incubator/) and [Polkadot Encode Accelerator 2023](https://www.encode.club/encode-polkadot-accelerator-2023).
+
+We won the [web3hackx](https://www.hkweb3month.com/hackathon) Hackathon - Hong Kong (Nov 2023) in the Infrastructure track and Polkadot Bounty.
+
+Megha Varshini (COO) - represented Cyborg Network at the Finals (Top 7 teams) of the PBA pitch Contest in Hong Kong (Feb 2024)
 
 Kresna (CTO) has also contributed to the **InvArch's Web3 Foundation Grant** [Milestone 1](https://github.com/w3f/Grant-Milestone-Delivery/blob/7932b07cc38150701ba8ed034723193f66002975/deliveries/InvArch_M1.md) that has been completed successfully. He also contributed to the  [Chocolate Network](https://substrate.io/ecosystem/projects/chocolate/) as a Substrate developer for their Substrate Builder Program (SBP) Milestone 1 delivery which has been completed successfully.
