@@ -42,6 +42,7 @@ There is the need for more encompassing, neutral, practical, and actionable case
 * **Note:** All the items mentioned within each milestone are only starting points for the reflection and analysis. Proposers are invited to expand on these generic topics in as much breadth and depth as they see fit.
 
 ### Milestone 1: Report: OpenGov as a model for decentralised decision-making.
+
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1. | What was the rationale for OpenGov?  
@@ -91,7 +92,7 @@ There is the need for more encompassing, neutral, practical, and actionable case
 | 11. | Appendices of all materials and resources used in the course of this analysis
 
 
-### Milestone 4: A review of the Treasury funding allocation in OpenGov.
+### Milestone 4: A review of Treasury funding management in OpenGov.
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
