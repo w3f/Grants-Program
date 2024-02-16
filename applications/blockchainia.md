@@ -3,6 +3,7 @@
 - **Team Name:** Blockchainia
 - **Payment Address:** 0xf246aede3d892234b52c9bb6f246ab0ac8c0491d (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1562#issuecomment-1921826477)
 
 ## Project Overview
 
