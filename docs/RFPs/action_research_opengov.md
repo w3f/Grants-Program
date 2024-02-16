@@ -104,6 +104,6 @@ There is the need for more encompassing, neutral, practical, and actionable case
 | 6. | How are Treasury funding allocations impacting the ecosystem?
 | 7. | Other practical observations
 | 8. | Recommendations for further research or initiatives
-| 9. | Notes on the methodology/ies adopted in the course of this analysis
-| 10. | Appendices of all materials and resources used in the course of this analysis
+| 9. | Notes on the methodology/ies adopted in the course of this review
+| 10. | Appendices of all materials and resources used in the course of this review
 
