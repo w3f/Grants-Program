@@ -63,11 +63,9 @@ b - Backend development:
 
 c - Blockchain Integration:
 
-- Smart Contracts: Solidity (for Ethereum blockchain integration)
+- Smart Contracts: INK!
 
-- Blockchain Infrastructure: EVM-chain
-
-- Web3 Library: Web3.js for interacting with smart contracts
+- Blockchain Infrastructure: Target to build custom substrate-chain
 
 d - External Data Integration:
 
@@ -175,15 +173,18 @@ Top 1 in Klaytn ideathon
 | 2. | Portfolio Creation and Blockchain Integration | - Design and develop the core functionality for creating and customizing investment portfolios. - Integrate blockchain technology for secure and transparent record-keeping of portfolio data. - Implement smart contracts for portfolio-related transactions and interactions.|
 | 3. | Social Interaction Features | - Implement real-time communication features using WebSocket for instant updates. - Develop commenting, liking, and sharing functionalities for portfolios. - Enable users to follow and interact with each other's portfolios.|
 | 4. | Integration with External Data Sources | - Connect the platform with relevant APIs for real-time market data. - Implement scraping tools or APIs for financial news and analysis. - Ensure seamless integration with external data sources for comprehensive market insights.|
-| 5. | Beta Testing and User Feedback | - Release a beta version of the platform to gather user feedback. - Address issues and make necessary improvements based on user testing. - Iterate on features and functionalities for a more polished user experience.|
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2  — Additional features
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1,5
 - **Costs:** 3,000 USD
 
+| Number | Deliverable | Specification |
+| -----: | ----------- | --- |
+| 1. | Notification | Users can set price alerts for specific assets. When the price of an asset reaches a predefined threshold, a notification is sent to the user, allowing them to stay informed about market movements. |
+| 2 | Market News | Notifications about significant market events, news, or changes in financial regulations can be sent to users, helping them make informed decisions. |
 
 ## Future Plans
 
