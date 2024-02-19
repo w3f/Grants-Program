@@ -64,9 +64,9 @@ There is the need for more encompassing, neutral, practical, and actionable case
 | ------------- | ------------- | ------------- |
 | 1. | What are the key specifications of OpenGov?  
 | 2. | How do these specifications align with the objectives of OpenGov? 
-| 3. | What is the process for getting OpenGov specifications revised/updated? 
-| 4. | How often are OpenGov specifications revised/updated?
-| 5. | Who is in charge of delivering/implementing OpenGov revisions?
+| 3. | What is the current process for getting OpenGov specifications revised/updated? 
+| 4. | How often have OpenGov specifications been revised/updated over the past year?
+| 5. | Which specific teams/individuals have been/were/are in charge of delivering/implementing OpenGov revisions/updates?
 | 6. | Which ongoing challenges/setbacks exist in revising/updating OpenGov specifications?
 | 7. | Which future opportunities/avenues exist for revising/updating OpenGov specifications?
 | 8. | Other theoretical/practical observations
