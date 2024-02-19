@@ -1,7 +1,7 @@
 # Sub-consensus mechanism
 
 - **Team Name:** Massa Labs
-- **Payment Address:** 13zRBDBEYWGBZAiCeqMqefPCZ7cXS4GCmizt93NqWoTattpZ
+- **Payment Address:** 13zRBDBEYWGBZAiCeqMqefPCZ7cXS4GCmizt93NqWoTattpZ (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -113,6 +113,10 @@ Léonard Lys: https://scholar.google.com/citations?hl=en&authuser=1&user=NdEcgP8
 ## Development Status :open_book:
 
 While we familiarized ourselves with the current polkadot architecture and related mechanisms, we have not yet started the research phase for this project.
+We haven't discussed our approach with others. We have examined:
+
+- The current implementation of the Collator protocol
+- Various research related to BFT / PoS based consensus algorithms
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -131,10 +135,15 @@ While we familiarized ourselves with the current polkadot architecture and relat
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | MIT |
-| 0b. | Documentation | At the end of our research, we will provide a detailed document outlying: the specifications of any pallet, the modification of the polkadot / cumulus repositories, security analysis of the proposed solution, a guide for parachain teams to easily implement our solution. |
+| 0b. | Documentation | We will document the limitations of the current approach. |
 | 0c. | Testing and Testing Guide | This research will not lead to any testing. |
 | 0d. | Docker | We do not plan to modify the existing deployment infrastructure. |
 | 0e. | Article | We will write an article that explains our research and the defined specifications |
+| 1. | Technical specifications | We will provide a document containing: an overview of the architecture changes, functional specifications for new pallets, and functional specifications for changes on the polkadot/cumulus repositories. |
+| 2. | Security analysis | We will provide a security report containing: detailed hypotheses on the different actors (underlying hypotheses on the Relay Chain), risk/reward analysis to break the underlying choosen consensus mechanism, and impact on the expected usage for parachains. |
+| 3. | Implementation guide for parachains | We will provide a guide containing: a brief overview of our solution and general guidelines of what the parachain will have to adopt our solution |
+
+The research outlined in deliverables 1. and 2. will be reviewed by the Polkadot team, and any concerns raised by the team will be taken into account.
 
 ## Future Plans
 
@@ -143,7 +152,7 @@ We plan to apply to the second milestone once this research phase is validated.
 
 In this case, we would actively develop The detailed specifications of the planned Proof of Concept will depend on the results of the research phase, but would include the implementation of the sub consensus mechanism for at least one existing parachain, along with testing and benchmarks.
 
-More generally, once the team is more familiar with the Polkadot ecosystem, we could provide additionnal assistance in core development on other subjects.
+More generally, once the team is more familiar with the Polkadot ecosystem, we could provide additional assistance in core development on other subjects.
 
 ## Additional Information :heavy_plus_sign:
 
