@@ -23,7 +23,7 @@ There is the need for more encompassing, neutral, practical, and actionable case
 
 - Analyse OpenGov as the new model for on-chain governance in the ecosystem
 - Review current implementations of OpenGov in the ecosystem
-- Evaluate the impact of OpenGov in the ecosystem
+- Evaluate the impact of OpenGov on the growth of the ecosystem
 - Propose a tentative roadmap for future OpenGov developments
 
 
