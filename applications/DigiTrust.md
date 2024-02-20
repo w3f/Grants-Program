@@ -8,6 +8,8 @@
 ### Overview
 **DigiTrust** pioneers a revolutionary approach to digital asset management through its cutting-edge Decentralized Asset Management Protocol (DAMP) embedded within a decentralized social network. This innovative framework seamlessly integrates blockchain technology, user-centric principles, and decentralized governance to redefine the landscape of digital content ownership and interaction.
 
+Mockup application: https://digitrust.vercel.app/
+
 #### 1- Empowering Digital Ownership:
 **DigiTrust** protocol ensures users hold true ownership of their digital assets, offering unprecedented control over how their content is shared, accessed, and monetized. By leveraging blockchain technology, users experience enhanced security and transparency, reducing reliance on centralized entities for asset management.
 #### 2 - Seamless Interoperability:
@@ -75,6 +77,26 @@ d - External Data Integration:
 **Wireframe:** https://www.figma.com/file/bef5GTKA7IzYH6QcefZFG6/Digitrust_UI?type=design&node-id=3%3A2&mode=design&t=cOc5xxLAPM8AJfOB-1 
 
 **Stage 2:** Building automatic funding allocation as the on-chain transaction
+
+**Automatic Funding Allocation:**
+- Diversified Portfolios: Automatic funding allocation algorithms can diversify investments across different assets, reducing risk and potentially enhancing returns.
+- Rebalancing Strategies: The system may periodically rebalance portfolios based on market conditions or predefined triggers to maintain the desired asset allocation.
+
+**Notification:**
+- Transaction Updates: Users would receive notifications about any transactions or changes related to their decentralized assets. This could include incoming transfers, withdrawals, or any other activities affecting their assets.
+- Portfolio Changes: Users might be notified when there are changes in the value of their investment portfolio or if there are new investment opportunities matching their criteria.
+
+**Tech Stack:**
+
+a -  Automatic Funding Allocation:
+
+- DeFi Protocols: Uniswap, Sushiswap (DEX), Compound (Lending), ...
+- Oracles: Pyth, ChainLink
+
+b - Notification:
+
+- WebSocket libraries (e.g., Socket.IO): WebSockets provide a bidirectional communication channel between clients and servers. They can be used to deliver real-time notifications to users.
+- Firebase Cloud Messaging (FCM), OneSignal: Integrate with push notification services to send notifications to mobile devices even when the application is not actively running.
 
 ### Ecosystem Fit
 
@@ -183,6 +205,9 @@ Top 1 in Klaytn ideathon
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | --- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both technical document of the code and a basic **tutorial** that explains how a user can use notification for tracking investment portfolio |
+| **0c.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Notification | Users can set price alerts for specific assets. When the price of an asset reaches a predefined threshold, a notification is sent to the user, allowing them to stay informed about market movements. |
 | 2 | Market News | Notifications about significant market events, news, or changes in financial regulations can be sent to users, helping them make informed decisions. |
 
