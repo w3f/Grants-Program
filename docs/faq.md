@@ -17,7 +17,7 @@ title: 🙋 FAQ
 
 ### What does it mean for payments to be 30% DOT?
 
-  Every milestone payment will have two parts: 70% in the currency of your choosing (see the application template for options) and 30% in DOT, vesting linearly over two years. For this, we need two invoices, one for the currency part, one for the DOT part. Our [invoice form](https://docs.google.com/forms/d/18BdmYEt8gvcC-5f7TMHdJftBr9dEeA2_lUfIqkH7it8/viewform) will walk you through the process.
+  Every milestone payment will have two parts: 70% in the currency of your choosing (see the application template for options) and 30% in DOT, vesting linearly over two years. For this, we need a Polkadot AssetHub address in the grant agreement (if you haven't already provided it for USDC/USDT payments or you prefer a separate address) and, when it comes to milestone payments, two invoices: one for the currency part, one for the DOT part. Our [invoice form](https://docs.google.com/forms/d/18BdmYEt8gvcC-5f7TMHdJftBr9dEeA2_lUfIqkH7it8/viewform) will walk you through the process.
 
 ### What activities/positions do you fund?
 
