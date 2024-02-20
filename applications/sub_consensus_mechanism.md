@@ -106,17 +106,28 @@ GitHub accounts of all team members:
 
 ### Team academic publications
 
+We have academic researchers with blockchain publications in the team, and all are familiar with BFT consensus algorithms:
+
 Léo Besançon: https://scholar.google.com/citations?user=NmXfn2cAAAAJ&hl=en&authuser=1&oi=ao
 
 Léonard Lys: https://scholar.google.com/citations?hl=en&authuser=1&user=NdEcgP8AAAAJ
 
+But also, as part of the Massa team:
+
+- https://scholar.google.com/citations?user=OUeoziEAAAAJ
+- https://scholar.google.com/citations?user=kWScejIAAAAJ
+
 ## Development Status :open_book:
 
-While we familiarized ourselves with the current polkadot architecture and related mechanisms, we have not yet started the research phase for this project.
-We haven't discussed our approach with others. We have examined:
+While we familiarized ourselves with the current polkadot architecture and related mechanisms, we have not yet started the research phase for this project. While we haven't discussed our approach with others, we have examined:
 
 - The current implementation of the Collator protocol
-- Various research related to BFT / PoS based consensus algorithms
+- Various research related to BFT / PoS based consensus algorithms, in particular with Léonard Lys PhD Thesis: https://theses.hal.science/tel-03847642/file/LYS_Leonard_2022.pdf. We have thoroughly studied consensus algorithms and we have even imagined, designed, theorized, proven and implemented our own innovative PoS consensus algorithm from scratch that is now running in production: https://arxiv.org/pdf/1803.09029.pdf.
+- We are also familiar with Substrate. For example we have worked in collaboration with Starknet on substantially modifying the Substrate runtime for their purposes in the Madara sequencer: https://twitter.com/Starknet/status/1755267691890225356 (in particular the second link).
+
+We will familiarize ourselves with the particularities of Polkadot in order to ensure that our implementation is correctly integrated to the rest of the codebase. We are quick learners in that regard, but if you have references of Polkadot core developers that might provide guidance and review, it will accelerate the process further.
+
+We are very confident in our ability to tackle this topic, and our track record will show you that we thrive at complex tasks.
 
 ## Development Roadmap :nut_and_bolt:
 
