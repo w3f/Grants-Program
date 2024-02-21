@@ -28,7 +28,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Check out our announcements of the most recent <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Web3foundation">Decentralized Futures grants recipients</a>!',
+        'We are introducing DOT payments to all future grants.<a target="_blank" rel="noopener noreferrer" href="http://localhost:3000/docs/faq#what-does-it-mean-for-payments-to-be-30-dot">See our FAQ for details.</a>!',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
