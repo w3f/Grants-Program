@@ -57,6 +57,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [gmajor-encrypt](https://github.com/gmajor-encrypt)                       | [XCM Tools follow-up](./xcm-tools-follow-up.md)                     | [GitHub](https://github.com/gmajor-encrypt/xcm-tools)                 | ☐          |        ☐       |      ☐      |
 | [inkscope.xyz](https://inkscope.xyz/)                       | [Inkscope Fuzzer](./inkscope-fuzzer.md)                     | [GitHub](https://github.com/inkscopexyz)                 | ☐          |        ☐       |      ☐      |
 | [Relai Network](https://relai.network/)                       | [Futur & Fusion Protocols](./FuturFusion.md)                     | [GitHub](https://github.com/RELAI-Network)                 | ☐          |        ☐       |      ☐      |
+| [Zondax AG](https://zondax.ch/)                       | [User Account Access Security Analysis](./research_wallets.md)                     | [GitHub](https://github.com/zondax)                 | ☐          |        ☐       |      ☐      |
 
 ## 2023
 
