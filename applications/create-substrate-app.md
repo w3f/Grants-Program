@@ -111,7 +111,7 @@ There's already an [existing template](https://github.com/substrate-developer-hu
 | 2. | JavaScript Vue Front-End Template     | Create a JavaScript version of Vue Front-End Template                                                                                                           |
 | 3. | TypeScript Vue Front-End Template     | Create a TypeScript version of Vue Front-End Template                                                                                                           |
 | 4. | JavaScript Angular Front-End Template | Create a JavaScript version of Angular Front-End Template                                                                                                       |
-| 5. | TypeScript Angular Front-End Template | Create a TypeScript version of Vue Front-End Template                                                                                                           |
+| 5. | TypeScript Angular Front-End Template | Create a TypeScript version of Angular Front-End Template                                                                                                           |
 | 6. | Published Global CLI command          | Publish the CLI command to npm registry                                                                                                                         |                                                                                                      
 
 
