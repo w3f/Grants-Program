@@ -148,7 +148,7 @@ pub fn create_supersig(
 
 **Submit a call to a specific supersig**
 
-`submit_call` will create a proposal on the supersig, that members can approve. This will lock an amount that depend on the lenght of the encoded call, to prevent spam. The dispatch origin for this call must be `Signed`, and the origin must be a supersig member.
+`submit_call` will create a proposal on the supersig, that members can approve. This will lock an amount that depend on the length of the encoded call, to prevent spam. The dispatch origin for this call must be `Signed`, and the origin must be a supersig member.
 
 ```rust
 pub fn submit_call(
