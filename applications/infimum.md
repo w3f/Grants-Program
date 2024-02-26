@@ -39,14 +39,12 @@ The goal of this system is to deincentivize collusion between participants given
         1. Facilitates transparency and provenance of poll interactions and outcome. Users can register as either coordinators or participants, create polls, and interact with polls. On-chain verification of zero-knowledge proofs (which have been generated off-chain) that establish the correctness of the poll tallying computations (which have been performed off-chain) must occur prior to the acceptance of, and publishing of poll outcome. 
     2. Public methods 
         1. `registerAsCoordinator` Permits the caller to create polls, and stores their (public) keys. 
-        2. `rotatePublicKey` Permits a coordinator to rotate their public,private keypair. Rejected if called during an ongoing poll.
-        3. `rotateVerifyKey` Permits a coordinator to rotate their verification key. Rejected if called during an ongoing poll.
-        4. `registerAsParticipant` Permits a user to participate in a poll. Rejected if called after voting period. 
-        5. `createPoll` Instantiates a new poll object with the caller as the designated coordinator. Emits an event with the poll data.
-        6. `interactWithPoll` Inserts a message into the message tree for future processing by the coordinator. Valid messages include: a vote, and a key rotation. Rejected if sent outside of the timeline specified by the poll config. Participants may secretly call this method (i.e. from a different address) to override their vote, thereby deincentivizing bribery.
-        7. `mergePollState` Used by the coordinator to compute roots of message state tree, which is used as a commitment value by the proof verification logic. Rejected if called prior to poll end.
-        8. `commitProcessedMessages` Verifies the proof that the current batch of messages have been correctly processed and, if successful, updates the current verification state. Rejected if called prior to the merge of poll state.
-        9. `commitTallyResult` Verifies the proof that the current batch of votes has been correctly tallied and, if successful, updates the current verification state. On verification of the final batch the poll result is recorded in storage and an event is emitted containing the result. Rejected if called before messages have been processed.
+        2. `rotateKeys` Permits a coordinator to rotate their keys used for verification and voting process. Rejected if called during an ongoing poll.
+        3. `registerAsParticipant` Permits a user to participate in a poll. Rejected if called after voting period. 
+        4. `createPoll` Instantiates a new poll object with the caller as the designated coordinator. Emits an event with the poll data.
+        5. `interactWithPoll` Inserts a message into the message tree for future processing by the coordinator. Valid messages include: a vote, and a key rotation. Rejected if sent outside of the timeline specified by the poll config. Participants may secretly call this method (i.e. from a different address) to override their vote, thereby deincentivizing bribery.
+        6. `mergePollState` Used by the coordinator to compute roots of message state tree, which is used as a commitment value by the proof verification logic. Rejected if called prior to poll end.
+        7. `commitOutcome` Verifies batches of proofs corresponding to the correctness of message processing and vote tally in order. Once every proof has been successfully verified the outcome is committed to storage and a `PollOutcome` event is emitted containing the result of the vote. Rejected if called prior to `mergePollState`.
     3. Runtime storage 
         1. Public key store: mapping between coordinators and their public keys (which are used by participants to encrypt their votes)
         2. Verifying key store: mapping between coordinators and their verifying keys used in the on-chain verification of proofs
@@ -128,11 +126,7 @@ Rhys also has previous experience in research and development, and some of this 
 
 ### Team Code Repos
 
-The majority of Rhys’ work has been client-based work and is closed-source. His interest in other projects has led him to also contribute to various open-source projects, some of which can be found here: 
-
-- [https://github.com/cytoscape/cytoscape.js](https://github.com/cytoscape/cytoscape.js)
-- [https://github.com/rhysbalevicius/huh](https://github.com/rhysbalevicius/huh)
-- [https://github.com/rhysbalevicius/lipsync](https://github.com/rhysbalevicius/lipsync)
+The majority of Rhys’ work has been client-based work and is closed-source. His interest in other projects has led him to also contribute to various open-source projects.
 
 GitHub profile: [https://github.com/rhysbalevicius](https://github.com/rhysbalevicius)
 
