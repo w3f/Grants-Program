@@ -108,7 +108,7 @@ There's already an [existing template](https://github.com/substrate-developer-hu
 |     0e. | Article                               | We will publish an **article**/workshop that explains how to run the CLI (what was done/achieved as part of the grant).                                         |
 |      1. | TypeScript React Front-End Template   | Create a modified version of React template with TypeScript                                                                                                     |
 |      2. | TypeScript Vue Front-End Template     | Create a TypeScript version of Vue Front-End Template                                                                                                           |
-|      3. | TypeScript Angular Front-End Template | Create a TypeScript version of Vue Front-End Template                                                                                                           |
+|      3. | TypeScript Angular Front-End Template | Create a TypeScript version of Angular Front-End Template                                                                                                       |
 |      4. | Published Global CLI command          | Publish the CLI command to npm registry                                                                                                                         |                                                                                                      
 
 
