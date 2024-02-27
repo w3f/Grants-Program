@@ -98,7 +98,7 @@ There's already an [existing template](https://github.com/substrate-developer-hu
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 5,000 USD
+- **Costs:** 3,500 USD
 
 |  Number | Deliverable                           | Specification                                                                                                                                                   |
 |--------:|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
