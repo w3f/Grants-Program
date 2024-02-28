@@ -92,7 +92,7 @@ There's already an [existing template](https://github.com/substrate-developer-hu
 
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 5,000 USD
+- **Total Costs:** 3,500 USD
 
 ### Milestone 1 - Full CLI functionality
 
