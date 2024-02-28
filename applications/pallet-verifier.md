@@ -152,7 +152,7 @@ the [`Rvalue::Cast(CastKind, Operand<'tcx>, Ty<'tcx>)`][Rvalue-cast] variant, an
 
 Then, for the identified narrowing and lossy conversions, pallet-verifier will add [MIRAI `verify!`][MIRAI-verify] 
 annotations with predicates that bound the operand within the range of the final type of the cast expression 
-(e.g. for a `u16` to `u8` conversion, the predicate would be [`val < u8::MAX`][u8-MAX] where `val` represents 
+(e.g. for a `u16` to `u8` conversion, the predicate would be [`val <= u8::MAX`][u8-MAX] where `val` represents 
 the operand of the type cast operation).
 
 [MIR-visitor]: https://rustc-dev-guide.rust-lang.org/mir/visitor.html
