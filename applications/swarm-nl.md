@@ -59,7 +59,7 @@ After some research, here are the features we decided to focus on.
 
 
 #### What is not included in SwarmNL
-SwarmNL will not be involved in providing a storage solution. Because SwarmNL will be generic over the networking layer, it will be possible to easily plug in any storage interface in a flexible and configurable way.
+SwarmNL will not be involved in providing a storage solution. Because SwarmNL will be generic over the storage layer, it will be possible to easily plug in any storage interface in a flexible and configurable way.
 
 Storage maintained by the library will mostly be in memory with the exception of config files and other node state keeping data.
 
