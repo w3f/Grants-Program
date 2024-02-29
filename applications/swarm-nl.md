@@ -9,7 +9,7 @@
 
 SwarmNL is a configurable P2P networking layer designed to be used in distributed system architectures that require data transfer solutions for off-chain communication in a scalable way.
 
-It's goal is to provide a lightweight and configurable P2P networking layer for web applications designed to interact with on-chain data.
+Its goal is to provide a lightweight and configurable P2P networking layer for web applications designed to interact with on-chain data.
 
 ### Project Details
 
