@@ -196,7 +196,7 @@ Once completed with this grant milestones,
 ## Referral Program :moneybag: 
 
 - **Referrer:** muddlebee(Anwesh)
-- **Payment Address:** 0x92c856ef2e7c8c443030e2cc9e1739662ed3e8b1
+- **Payment Address:** 14btqGNtzVpfwW9y5xYrcK7uSfgjGZKxcYAG3fJo6ujHUVS (Polkadot Asset Hub)
 
 ## Additional Information :heavy_plus_sign:
 
