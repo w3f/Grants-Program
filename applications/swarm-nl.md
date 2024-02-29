@@ -66,6 +66,7 @@ Storage maintained by the library will mostly be in memory with the exception of
 ### Ecosystem Fit
 - Where and how does your project fit into the ecosystem?
     - SwarmNL can be used by applications or projects that require a bespoke decentralized communication layer for transporting and exchanging off-chain data.
+    - Examples could include Content Delivery Networks (CDNs); distributed storage systems; IoT (Internet of Things); multiplayer online games; and file hosting and sharing systems
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
     - Our priority is to build this for [SamaritanDB](https://github.com/thewoodfish/samaritan-db). However, SwarmNL will be generic enough to be used by any developer in the ecosystem that would require a primitive networking layer
 - What need(s) does your project meet?
