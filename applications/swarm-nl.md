@@ -89,8 +89,8 @@ Storage maintained by the library will mostly be in memory with the exception of
 
 ### Legal Structure
 
-- **Registered Address:** 254 CHAPMAN RD STE 209, NEWARK, DE.
-- **Registered Legal Entity:** Algorealm, Inc.
+- **Registered Address:** n/a
+- **Registered Legal Entity:** n/a
 
 ### Team's experience
 
