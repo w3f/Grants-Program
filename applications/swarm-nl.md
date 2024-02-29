@@ -35,7 +35,12 @@ After some research, here are the features we decided to focus on.
         * Protocol specification and handlers.
         * Event handlers for network events and logging.
 
-    * **Gossiping** -- SwarmNL will implement the [Gossipsub 1.1](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md) protocol, specified by the [libp2p spec](https://github.com/libp2p/specs). This would be easily configurable to accommodate varying and peculiar network conditions.
+    * **Gossiping** -- SwarmNL will implement the [Gossipsub 1.1](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md) protocol, specified by the [libp2p spec](https://github.com/libp2p/specs). This would be easily configurable to accommodate varying and peculiar network conditions. We will achieve this by leveraging and enhancing exiting gossipsub libp2p strategies for more specialized use cases. 
+    While libp2p handles liveness through mechanisms like ping/heartbeat/keep-alive, our library extends this by offering additional strategies to address scenarios beyond mere liveness detection. For instance, consider the following use cases:
+    
+        - Node Failure Handling: In the event of a node going down, SwarmNL provides customizable options for developers to define reconnection strategies, automatic peer discovery, and failover mechanisms. This ensures that the network can gracefully adapt to failures without compromising overall system performance.
+        - Sharding Support: For scenarios where nodes are dedicated to specific shards or portions of the network, our library will offer functionality to seamlessly integrate and manage such specialised nodes. This allows for more fine-grained control over the network's structure, enabling efficient scaling and resource allocation.
+        - Replication Nodes: In cases where replication nodes are required for data redundancy, our library facilitates the addition of nodes dedicated solely to replication tasks. This ensures that data is appropriately distributed and replicated across the network.
         
 * **Scaling** -- SwarmNL needs to efficiently handle a growing (or shrinking) number of nodes while maintaining performance and reliability. Here's what we plan to implement to this effect:
     * **Sharding** -- implementation of a flexible generic sharding protocol that allows application specify configurations like sharding hash functions and locations for shards.
