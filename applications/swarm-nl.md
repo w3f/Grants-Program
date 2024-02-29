@@ -1,6 +1,6 @@
 # SwarmNL
 - **Team Name:** Algorealm, Inc.
-- **Payment Address:** TBA
+- **Payment Address:** 15APyDmWBwwv8LEW8rvFpiYAUCu7u4nxKBd7oGp4JR6nSrnE (Polkadot AssetHub)
 - **Level:** 2
 
 ## Project Overview :page_facing_up:
