@@ -23,8 +23,8 @@ Our team worked previously on Polkadot.{js} Browser Extension. We already have a
 
 * **Members:** Krzysztof, Natalia, Bartek, Ivan, optionally other developers at Ethworks
 * **LinkedIn Profiles:** [Krzysztof](https://www.linkedin.com/in/krzysztofjelski/), [Natalia](https://www.linkedin.com/in/nkirejczyk/), [Bartek](https://www.linkedin.com/in/bart%C5%82omiej-rutkowski-958751118/), [Ivan](https://www.linkedin.com/in/ivan-rukhavets-904ba7146/)
-* **Code Repos:** <https://github.com/polkadot-js/apps> (the repo we want to contribute to)
-* **Website:** <https://ethworks.io>
+* **Code Repos:** https://github.com/polkadot-js/apps (the repo we want to contribute to)
+* **Website:** https://ethworks.io
 * **Legal Structure:**<br/>
     Ethworks sp z o.o.<br/>
     VAT ID: PL7010771665.<br/>

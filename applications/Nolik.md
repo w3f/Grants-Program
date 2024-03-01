@@ -417,16 +417,16 @@ Rust experience: 3+ months, but moving fast.
 
 ### Team Code Repos
 
-- <https://github.com/chainify>
-- <https://github.com/chainify/nolik>
+- https://github.com/chainify
+- https://github.com/chainify/nolik
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/amrbz>
+- https://github.com/amrbz
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/amrbz>
+- https://www.linkedin.com/in/amrbz
 
 ## Development Status :open_book:
 
@@ -502,5 +502,5 @@ This milestone will allow the usage of CLI tools, which are going to be written 
 
 **How did you hear about the Grants Program?**
 Personal recommendation of my friends:
-- <https://github.com/kmadorin>
-- <https://github.com/CryptoBadBoy> W3F grant program alumni (Fratcapp)
+- https://github.com/kmadorin
+- https://github.com/CryptoBadBoy W3F grant program alumni (Fratcapp)

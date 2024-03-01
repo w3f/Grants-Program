@@ -53,14 +53,14 @@ This is the end user facing component to utilize the workflow. This component co
 
 We have identified many great teams had to build their own implementation of event listeners/monitoring tools. We intend to make this aspect easier for the community to avoid most of the boilerplate so that they can just focus on workflow actions/tasks which are related to their project.
 
-* <https://github.com/playproject-io/datdot-service>
-* <https://github.com/open-web3-stack/guardian>
+* https://github.com/playproject-io/datdot-service
+* https://github.com/open-web3-stack/guardian
 
 Similar projects
 
-* <https://github.com/PipedreamHQ/pipedream>
-* <https://github.com/snakemake/snakemake>
-* <https://github.com/aelassas/Wexflow>
+* https://github.com/PipedreamHQ/pipedream
+* https://github.com/snakemake/snakemake
+* https://github.com/aelassas/Wexflow
 
 What makes us different is
 
@@ -85,7 +85,7 @@ We will be hiring one Rust Developer
 
 * **Contact Name:** Muhammed Irfan K
 * **Contact Email:** muhammedirfan@hugobyte.com
-* <https://hugobyte.com>
+* https://hugobyte.com
 
 ### Legal Structure
 
@@ -112,19 +112,19 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 
 Source codes will reside in
 
-* <https://github.com/hugobyte>
+* https://github.com/hugobyte
 
 Repos for further reference
 
-* <https://github.com/i7326/hackusama> ([Hackusama Submission](https://devpost.com/software/contact-tracing-chain))
-* <https://github.com/MuhammedIrfan>
-* <https://github.com/HanumantappaBudihal>  
+* https://github.com/i7326/hackusama ([Hackusama Submission](https://devpost.com/software/contact-tracing-chain))
+* https://github.com/MuhammedIrfan
+* https://github.com/HanumantappaBudihal  
 
 ### Team Profiles
 
-* Dr. C. Pethuru Raj Ph.D - <https://sweetypeterdarren.wixsite.com/pethuru-raj-books>  
-* Muhammed Irfan K - <https://www.linkedin.com/in/muhammed-irfan-k>  
-* Hanumantappa Budihal - <https://www.linkedin.com/in/hanumantappa-budihal/>  
+* Dr. C. Pethuru Raj Ph.D - https://sweetypeterdarren.wixsite.com/pethuru-raj-books  
+* Muhammed Irfan K - https://www.linkedin.com/in/muhammed-irfan-k  
+* Hanumantappa Budihal - https://www.linkedin.com/in/hanumantappa-budihal/  
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -194,7 +194,7 @@ Repos for further reference
 
 ## Future Plans
 
-We have planned immediate grant as second phase of our development (Draft with Complete deliverables can be found here <https://github.com/MuhammedIrfan/Open-Grants-Program/blob/master/applications/project_aurras_mvp.md>)
+We have planned immediate grant as second phase of our development (Draft with Complete deliverables can be found here https://github.com/MuhammedIrfan/Open-Grants-Program/blob/master/applications/project_aurras_mvp.md)
 
 Immediate Plans in the timeline Includes
 

@@ -35,7 +35,7 @@ Shanghai Yitaiyuan Tech
 
 ## Team Website
 
-<https://www.subscan.io/>
+https://www.subscan.io/
 
 ## Team's experience
 
@@ -45,9 +45,9 @@ But our focus has always been Subscan blockchain explorer, which keeps it update
 
 ## Team Code Repos
 
-<https://github.com/itering/subscan>
+https://github.com/itering/subscan
 
-<https://github.com/itering/subscan_ui>
+https://github.com/itering/subscan_ui
 
 ## Development Roadmap
 

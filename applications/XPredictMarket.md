@@ -188,15 +188,15 @@ We have completed the planning of the product prototype, the design of the UI di
 
 Documents about the technical architecture can be viewed at the following link：
 
-<https://github.com/XPredictMarket/docs/blob/master/Technial.md>
+https://github.com/XPredictMarket/docs/blob/master/Technial.md
 
 For product UI diagrams, you can check the following links:
 
-<https://github.com/XPredictMarket/docs/tree/master/ui>
+https://github.com/XPredictMarket/docs/tree/master/ui
 
 White paper link：
 
-<https://x-predict.com/X_Predict_market_Whitepaper_en.pdf?v=1.0>
+https://x-predict.com/X_Predict_market_Whitepaper_en.pdf?v=1.0
 
 ## Development Roadmap :nut_and_bolt:
 

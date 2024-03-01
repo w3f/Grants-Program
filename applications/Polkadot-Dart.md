@@ -82,8 +82,8 @@ We have created `Polkadot-Dart`, which, combined with Flutter framework, can gre
 
 ### Team Website 
 
-* <https://pocket4d.io> (In progress)
-* <https://firestack.one>
+* https://pocket4d.io (In progress)
+* https://firestack.one
 
 ### Legal Structure
 
@@ -96,7 +96,7 @@ SHANGHAI NIEPAN INFORMATION TECHNOLOGY CO., LTD., a startup company focusing on 
 
 ### Team Code Repos
 
-* <https://github.com/Pocket4D/p4d-rust-binding> (Will be renamed after proposal is accepted)
+* https://github.com/Pocket4D/p4d-rust-binding (Will be renamed after proposal is accepted)
 
 ### Team LinkedIn Profiles
 
@@ -168,7 +168,7 @@ None.
 
 ### Community Engagement
 
-We are buiding our community on <https://www.yuque.com/?language=en-us> and newsletters will be regularly updated soon.
+We are buiding our community on https://www.yuque.com/?language=en-us and newsletters will be regularly updated soon.
 
 ## What has been done so far?
 

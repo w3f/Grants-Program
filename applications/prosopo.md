@@ -854,7 +854,7 @@ Idena is similar in that it requires users to complete CAPTCHAs to prove their h
 
 - Contact Name: Chris Taylor
 - Contact Email: chris@prosopo.io
-- Website: <https://prosopo.io>
+- Website: https://prosopo.io
 
 ### 3.3 Legal Structure
 

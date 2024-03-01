@@ -131,23 +131,23 @@ Shaun Wang has been contributing to several Polkadot ecosystem open source libra
 
 ### Team Code Repos
 
-* SDK: <https://github.com/AcalaNetwork/bodhi.js>
-* EVM: <https://github.com/AcalaNetwork/Acala/tree/master/modules/evm>
+* SDK: https://github.com/AcalaNetwork/bodhi.js
+* EVM: https://github.com/AcalaNetwork/Acala/tree/master/modules/evm
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/bryan-chen-1ba8ba52/>
-* <https://www.linkedin.com/in/bette-chen/>
-* <https://www.linkedin.com/in/shaopeng-wang/>
-* <https://www.linkedin.com/in/ermal-kaleci-98445287/>
+* https://www.linkedin.com/in/bryan-chen-1ba8ba52/
+* https://www.linkedin.com/in/bette-chen/
+* https://www.linkedin.com/in/shaopeng-wang/
+* https://www.linkedin.com/in/ermal-kaleci-98445287/
 
 ### Team Github
 
-* Bryan: <https://github.com/orgs/laminar-protocol/people/xlc>
-* Bette: <https://github.com/orgs/laminar-protocol/people/bette7>
-* Shaun: <https://github.com/orgs/laminar-protocol/people/shaopengw>
-* Ermal: <https://github.com/orgs/laminar-protocol/people/ermalkaleci>
-* Nantian: <https://github.com/orgs/laminar-protocol/people/aniiantt>
+* Bryan: https://github.com/orgs/laminar-protocol/people/xlc
+* Bette: https://github.com/orgs/laminar-protocol/people/bette7
+* Shaun: https://github.com/orgs/laminar-protocol/people/shaopengw
+* Ermal: https://github.com/orgs/laminar-protocol/people/ermalkaleci
+* Nantian: https://github.com/orgs/laminar-protocol/people/aniiantt
 
 ## Development Roadmap :nut_and_bolt:
 

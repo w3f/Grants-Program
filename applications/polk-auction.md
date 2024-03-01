@@ -151,22 +151,22 @@ Here is an overview of different relevant project I've worked / working on at my
 
 ### Team Code Repos
 
-* <https://github.com/CrommVardek>
+* https://github.com/CrommVardek
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/cyril-carlier/>
+* https://www.linkedin.com/in/cyril-carlier/
 
 ## Development Status :open_book:
 
 ### Polk-auction-core (started)
 
-<https://github.com/CrommVardek/polk-auction-core>
-<https://github.com/CrommVardek/polkot-api> (Polkadot client (WebSocket) in kotlin, to be used in polk-auction-core)
+https://github.com/CrommVardek/polk-auction-core
+https://github.com/CrommVardek/polkot-api (Polkadot client (WebSocket) in kotlin, to be used in polk-auction-core)
 
 ### Polk-auction-ui (started)
 
-<https://github.com/CrommVardek/polk-auction-ui>
+https://github.com/CrommVardek/polk-auction-ui
 
 See overview section for the mock-up
 

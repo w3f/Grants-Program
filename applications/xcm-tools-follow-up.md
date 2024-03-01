@@ -58,7 +58,7 @@ practicability of this package further and increase support for xcm v3 and ether
 
 * **Contact Name:** gmajor
 * **Contact Email:** gmajorencrypt@gmail.com
-* **Website:** <https://github.com/gmajor-encrypt>
+* **Website:** https://github.com/gmajor-encrypt
 
 ### Legal Structure
 

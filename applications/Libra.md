@@ -221,7 +221,7 @@ Libra's target audience is sellers/buyers who want a safer, faster, more straigh
 
 - **Contact Name:** Anthony Dong
 - **Contact Email:** anthony@atscale.xyz
-- **Website:** <https://atscale.xyz>
+- **Website:** https://atscale.xyz
 
 ### Legal Structure
 
@@ -239,8 +239,8 @@ AtScale is a team specialized in blockchain development. We aim to rely on block
 
 ### Team Code Repos
 
-- <https://github.com/atscaletech/> (AtScale Technologies)
-- <https://github.com/atscaletech/polkadot-hackathon-apac> (Hackathon Submission)
+- https://github.com/atscaletech/ (AtScale Technologies)
+- https://github.com/atscaletech/polkadot-hackathon-apac (Hackathon Submission)
 
 ### Team LinkedIn Profiles (if available)
 
@@ -250,11 +250,11 @@ Due to privacy concerns, the team information will provide in private by email i
 
 Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already built a proof of concept application and here is our hackathon submission:
 
-- Pitch video: <https://youtu.be/pR4_2nrrJQQ>
-- Demo screencast: <https://youtu.be/cR7gKSzVoAY>
-- Live demo: <https://app.libra.atscale.xyz>
-- Explorer: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.libra.atscale.xyz#/explorer>
-- Git repository: <https://github.com/atscaletech/polkadot-hackathon-apac>
+- Pitch video: https://youtu.be/pR4_2nrrJQQ
+- Demo screencast: https://youtu.be/cR7gKSzVoAY
+- Live demo: https://app.libra.atscale.xyz
+- Explorer: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.libra.atscale.xyz#/explorer
+- Git repository: https://github.com/atscaletech/polkadot-hackathon-apac
 
 ## Development Roadmap :nut_and_bolt:
 

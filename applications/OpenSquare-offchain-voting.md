@@ -59,7 +59,7 @@ You can see our team with this [link](https://www.opensquare.network/team/).
 
 * **Contact Name:** Yongfeng Li
 * **Contact Email:** wliyongfeng@gmail.com
-* **Website:** <https://www.opensquare.network>
+* **Website:** https://www.opensquare.network
 
 ### Legal Structure
 
@@ -76,15 +76,15 @@ We have more than 3 years experience with Substrate/Polkadot related tech stack.
 We are honored that either dotreasury or statescan get support from kusama or polkadot treasury, and our work about bounties is granted by w3f previously. We are confident to deliver a high quality and usable off-chain voting site.
 
 ### Team Code Repos
-<https://github.com/opensquare-network/>
+https://github.com/opensquare-network/
 
 Team members github accounts:
 
-* <https://github.com/wliyongfeng>
-* <https://github.com/hyifeng>
-* <https://github.com/qiyisi>
-* <https://github.com/YoshiyukiSakura>
-* <https://github.com/Popoulosss>
+* https://github.com/wliyongfeng
+* https://github.com/hyifeng
+* https://github.com/qiyisi
+* https://github.com/YoshiyukiSakura
+* https://github.com/Popoulosss
 
 ## Development Roadmap :nut_and_bolt:
 

@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-<https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md>
+https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md
 
 ### Overview
 
@@ -21,7 +21,7 @@ Substrate RCP end points are implemented in Go, Ruby, Python, C++ etc. We are ad
 This project will help to avail substrate features in applications/platforms build using PHP language.
 
 ### Code repo
-<https://github.com/nitor-infotech-oss/parity-substrate-interface>
+https://github.com/nitor-infotech-oss/parity-substrate-interface
 
 ### component structure
 
@@ -53,7 +53,7 @@ This project will help to avail substrate features in applications/platforms bui
 
 * **Contact Name:** Kapil Joshi
 * **Contact Email:** Kapil.joshi@nitorinfotech.com
-* **Website:** <https://www.nitorinfotech.com/>
+* **Website:** https://www.nitorinfotech.com/
 
 ### Legal Structure
 
@@ -81,28 +81,28 @@ Arati Bongale is a Software engineer. She is an enthusiastic developer. Eager to
 
 ### Team Code Repos
 
-* <https://github.com/nitor-infotech-oss>
-* <https://github.com/nitor-infotech-oss/rust-webassembly>
-* <https://github.com/nitor-infotech-oss/blockchain-property-transfer>
-* <https://github.com/nitor-infotech-oss/substrate-demo>
-* <https://github.com/nitor-infotech-oss/rust-library-mgmt>
+* https://github.com/nitor-infotech-oss
+* https://github.com/nitor-infotech-oss/rust-webassembly
+* https://github.com/nitor-infotech-oss/blockchain-property-transfer
+* https://github.com/nitor-infotech-oss/substrate-demo
+* https://github.com/nitor-infotech-oss/rust-library-mgmt
 
-* <https://github.com/tejbahadursingh>
-* <https://github.com/KapilJoshiNitor>
-* <https://github.com/neha0921>
-* <https://github.com/aratibongale95>
+* https://github.com/tejbahadursingh
+* https://github.com/KapilJoshiNitor
+* https://github.com/neha0921
+* https://github.com/aratibongale95
 
 ### Team LinkedIn Profiles (if available)
 
-* <https://www.linkedin.com/in/tejbahadur-singh-ba705121/>
-* <https://www.linkedin.com/in/neha-reddy-0b0024119>
-* <https://www.linkedin.com/in/arati-bongale-2213511a1>
+* https://www.linkedin.com/in/tejbahadur-singh-ba705121/
+* https://www.linkedin.com/in/neha-reddy-0b0024119
+* https://www.linkedin.com/in/arati-bongale-2213511a1
 
 ## Development Status :open_book:
 
 For implementing the library class to make RPC endpoint call is being created. Work on initialisation of properties and methids is going on. Deliverables as comply to rfp are in progress.
 
-* <https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md>,
+* https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md,
 
 ## Development Roadmap :nut_and_bolt:
 

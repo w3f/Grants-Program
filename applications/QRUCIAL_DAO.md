@@ -117,16 +117,16 @@ knockoff is linux system administrator and junior rust developer.
 
 ### Team Code Repos
 
-- <https://github.com/Qrucial/QRUCIAL-DAO>
-- <https://github.com/Qrucial/Hacking_Substrate_with_Chaos_Pallet>
-- <https://github.com/Qrucial/SafuDot>
-- <https://github.com/Qrucial/QRUCIAL_Audits>
+- https://github.com/Qrucial/QRUCIAL-DAO
+- https://github.com/Qrucial/Hacking_Substrate_with_Chaos_Pallet
+- https://github.com/Qrucial/SafuDot
+- https://github.com/Qrucial/QRUCIAL_Audits
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/smilingSix>
-- <https://github.com/wigy-opensource-developer>
-- <https://github.com/Silur>
+- https://github.com/smilingSix
+- https://github.com/wigy-opensource-developer
+- https://github.com/Silur
 
 ### Team LinkedIn Profiles (if available)
 

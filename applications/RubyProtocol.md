@@ -102,7 +102,7 @@ There are several different ways of implementing an MPC protocol: threshold homo
 
 ### Team Website
 
-- <http://rubyprotocol.com/>
+- http://rubyprotocol.com/
 
 ### Legal Structure
 
@@ -124,7 +124,7 @@ Dylan Dewdney is a longtime crypto enthusiast (2011). In 2017 he co-founded Harb
 
 ### Team Code Repos
 
-- <https://github.com/Ruby-Protocol>
+- https://github.com/Ruby-Protocol
 
 ### Team Linkedin Profiles
 
@@ -216,10 +216,10 @@ Finally, our goal is to provide an essential open API and SDK from a high-level 
 [B2017] Bourse, F. (2017). Functional encryption for inner-product evaluations (Doctoral dissertation).
 
 [B2018] Vitalik Buterin,
-<https://ethresear.ch/t/on-chain-scaling-to-potentially-500-tx-sec-through-mass-tx-validation/3477>,
+https://ethresear.ch/t/on-chain-scaling-to-potentially-500-tx-sec-through-mass-tx-validation/3477,
 2018.
 
-[BCTV2013] Eli Ben-Sasson, Alessandro Chiesa, Eran Tromer, and Madars Virza. Succinct non-interactive zero knowledge for a von Neumann architecture. In Proceedings of the 23rd USENIX Security Symposium, Security '14. Available at <http://eprint.iacr.org/2013/879>.
+[BCTV2013] Eli Ben-Sasson, Alessandro Chiesa, Eran Tromer, and Madars Virza. Succinct non-interactive zero knowledge for a von Neumann architecture. In Proceedings of the 23rd USENIX Security Symposium, Security '14. Available at http://eprint.iacr.org/2013/879.
 
 [BMEB2016] Bataineh, A. S., Mizouni, R., El Barachi, M., & Bentahar, J. (2016, June). Monetizing Personal Data: A Two-Sided Market Approach. In ANT/SEIT (pp. 472-479).
 

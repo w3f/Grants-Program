@@ -14,9 +14,9 @@ This project aim to improve security and resilience of WebAssembly runtimes and 
 ## Team :busts_in_silhouette:
 
 * **Members:** Patrick Ventuzelo
-* **LinkedIn Profiles:** <https://www.linkedin.com/in/patrick-ventuzelo/>
-* **Code Repos:** <https://github.com/pventuzelo/wasm_runtimes_fuzzing>
-* **Website:** <https://webassembly-security.com/>
+* **LinkedIn Profiles:** https://www.linkedin.com/in/patrick-ventuzelo/
+* **Code Repos:** https://github.com/pventuzelo/wasm_runtimes_fuzzing
+* **Website:** https://webassembly-security.com/
 * **Legal Structure:** Patrick Ventuzelo, 113 grande rue, 91290 Arpajon, FRANCE
 * **Team's Experience:**
 

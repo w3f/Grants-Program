@@ -263,7 +263,7 @@ We are not aware of any other projects that are focusing on housing and/or real 
 
 - **Contact Name:** Ilhan Unlu
 - **Contact Email:** ilhan@fair-squares.nl
-- **Website:** <https://fair-squares.nl>
+- **Website:** https://fair-squares.nl
 
 ### Legal Structure
 
@@ -285,26 +285,26 @@ Part of the team together has only ideating and been working on Fair squares and
 
 ### Team Code Repos
 
-- <https://github.com/Fair-squares>  - Github Organisation
-- <https://github.com/Fair-Squares/fair-squares> - substrate node-software
-- <https://github.com/Fair-Squares/fair-square-front-end>- front-end for FS
+- https://github.com/Fair-squares  - Github Organisation
+- https://github.com/Fair-Squares/fair-squares - substrate node-software
+- https://github.com/Fair-Squares/fair-square-front-end- front-end for FS
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/ilhanu>
-- <https://github.com/ndkazu>
-- <https://github.com/letodunc>
-- <https://github.com/toosolid2003>
-- <https://github.com/cuteolaf>
+- https://github.com/ilhanu
+- https://github.com/ndkazu
+- https://github.com/letodunc
+- https://github.com/toosolid2003
+- https://github.com/cuteolaf
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/ilhan-%C3%BCnl%C3%BC-blocklab/>
-- <https://www.linkedin.com/in/kazunobu-ndong-469313170/>
-- <https://www.linkedin.com/in/stephen-meyo-193109a/>
-- <https://www.linkedin.com/in/mahirozdemir/>
-- <https://www.linkedin.com/in/thibautsegura/>
-- <https://www.linkedin.com/in/oliver-lim-2215a8235/>
+- https://www.linkedin.com/in/ilhan-%C3%BCnl%C3%BC-blocklab/
+- https://www.linkedin.com/in/kazunobu-ndong-469313170/
+- https://www.linkedin.com/in/stephen-meyo-193109a/
+- https://www.linkedin.com/in/mahirozdemir/
+- https://www.linkedin.com/in/thibautsegura/
+- https://www.linkedin.com/in/oliver-lim-2215a8235/
 
 ## Development Status :open_book:
 

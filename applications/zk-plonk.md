@@ -68,11 +68,11 @@ iously, please list the name of the project and legal entity here.
 
 ### Team Code Repos
 
-* <https://github.com/PlasmNetwork>
+* https://github.com/PlasmNetwork
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/sota-watanabe-b962b3110/>
+* https://www.linkedin.com/in/sota-watanabe-b962b3110/
 
 ## Development Roadmap :nut_and_bolt:
 

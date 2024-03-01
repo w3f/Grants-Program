@@ -36,7 +36,7 @@ In Russia there are about 15 million pupils at schools. If we assume that all te
 Substrate gives about 1000 transactions per second per chain. Thus we need at least 9 chains only for Russia to make this blockchain work. One can argue that in Russia there are different time zones and transaction load will be lowered by this means. But don't forget that on Earth we have about 50x more pupils than in Russia. \
 Thus no single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue. As we need a lot of parachains to make the system work it's unlikely to include all of them in Polkadot or Kusama directly. Instead we plan to use our own relay chain with our parachains. [Our relay chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fwss1.slonigiraf.org#/explorer) can be connected to Polkadot or Kusama with bridges. We’ve already launched our own relay chain and it’s active from 12 April 2021.
 - We've built PoC/MVP product on Java Vaadin framework that can be used via
-  link: <https://slon-i-giraf.ru/app/work?language=ENG>
+  link: https://slon-i-giraf.ru/app/work?language=ENG
 - What needs to be completed: datastore, penalizing capability, letter validity lookup, tests, documentation,
   example integration to parachain template, example UI.
 
@@ -58,7 +58,7 @@ Thus no single chain can process transactions if all pupils in Russia will use o
 
 - **Contact Name:** Denis Reshetov
 - **Contact Email:** reshetovdenis@gmail.com
-- **Website:** <https://www.slonigiraf.org/>
+- **Website:** https://www.slonigiraf.org/
 
 ### Legal Structure
 
@@ -75,16 +75,16 @@ bioinformatics](https://pubmed.ncbi.nlm.nih.gov/?term=reshetov+d&filter=simsearc
 
 Company:
 
-- <https://github.com/slonigiraf>
+- https://github.com/slonigiraf
 
 Team leader:
 
-- <https://github.com/reshetovdenis>
-- <https://github.com/slonigiraf/slon-token>
+- https://github.com/reshetovdenis
+- https://github.com/slonigiraf/slon-token
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://ru.linkedin.com/in/reshetovdenis>
+- https://ru.linkedin.com/in/reshetovdenis
 
 ## Development Status :open_book:
 

@@ -155,7 +155,7 @@ or the graph-reduction runtime.
 
 * **Contact Name:** John Burnham
 * **Contact Email:** john@yatima.io
-* **Website:** <https://github.com/yatima-inc/yatima>
+* **Website:** https://github.com/yatima-inc/yatima
 
 ### Legal Structure
 
@@ -192,19 +192,19 @@ for the summer.
 
 ### Team Code Repos
 
-* <https://github.com/yatima-inc>
-* <https://github.com/yatima-inc/yatima>
-* <https://github.com/yatima-inc/introit>
-* <https://github.com/yatima-inc/sp-ipld>
-* <https://github.com/yatima-inc/yatima-haskell-prototype>
+* https://github.com/yatima-inc
+* https://github.com/yatima-inc/yatima
+* https://github.com/yatima-inc/introit
+* https://github.com/yatima-inc/sp-ipld
+* https://github.com/yatima-inc/yatima-haskell-prototype
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* <https://github.com/johnchandlerburnham>
-* <https://github.com/gabriel-barrett>
-* <https://github.com/Anderssorby>
-* <https://github.com/samuelburnham>
-* <https://github.com/brightly-salty>
+* https://github.com/johnchandlerburnham
+* https://github.com/gabriel-barrett
+* https://github.com/Anderssorby
+* https://github.com/samuelburnham
+* https://github.com/brightly-salty
 
 ### Team LinkedIn Profiles (if available)
 
@@ -214,7 +214,7 @@ Please email john@yatima.io for team member CVs.
 
 ### Yatima Rust implementation
 
-* <https://github.com/yatima-inc/yatima>
+* https://github.com/yatima-inc/yatima
 
 The language is still pre-alpha, but is rapidly nearing it's first numbered
 alpha version. A brief overview of the current state of the implementation:
@@ -282,7 +282,7 @@ contains a very rough prototype of a web repl.
 
 ### Yatima Standard Library
 
-* <https://github.com/yatima-inc/introit>
+* https://github.com/yatima-inc/introit
 
 The Yatima standard library is in its early stages, but contains definitions for
 a variety of different datatypes, such as `vector`, `b_tree`, preliminary work
@@ -327,7 +327,7 @@ Type Error: Type Mismatch from 1:15 to 1:55 in bafk2bzacectxsdnlokzhsmqxklxxc2qm
 
 ### Yatima Haskell prototype
 
-* <https://github.com/yatima-inc/yatima-haskell-prototype>
+* https://github.com/yatima-inc/yatima-haskell-prototype
 
 This is an early experimental version of the language built to test ideas
 around combining self-types with Quantitative Type Theory, and whether the
@@ -341,8 +341,8 @@ mature.
 
 We have prototypes of the `sp_ipld` and `sp_im` repositories here:
 
-* <https://github.com/yatima-inc/sp-ipld>
-* <https://github.com/yatima-inc/sp-im>
+* https://github.com/yatima-inc/sp-ipld
+* https://github.com/yatima-inc/sp-im
 
 These have some initial functionality, but are lacking significant features,
 test-coverage, and documentation. However, what exists is sufficient to
@@ -426,7 +426,7 @@ parathread or parachain.
 
 Additionally, we would like to explore other applications of Yatima, including
 developing the web environment further, and exploring frontend application
-development, possibly via a model like <https://seed-rs.org/>. Another possible
+development, possibly via a model like https://seed-rs.org/. Another possible
 area of exploration would be to integrate with the [lunatic
 runtime](https://github.com/lunatic-solutions/lunatic), which uses WASM modules
 to provide Erlang style lightweight processes (green threads). There is some

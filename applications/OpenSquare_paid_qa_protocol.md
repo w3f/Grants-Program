@@ -95,7 +95,7 @@ You can see our team [here](https://www.opensquare.network/team/).
 
 * **Contact Name:** Yongfeng Li
 * **Contact Email:** wliyongfeng@gmail.com
-* **Website:** <https://www.opensquare.network>
+* **Website:** https://www.opensquare.network
 
 ### Legal Structure
 
@@ -119,15 +119,15 @@ include:
 
 ### Team Code Repos
 
-<https://github.com/opensquare-network/>
+https://github.com/opensquare-network/
 
 Team members github accounts:
 
-* <https://github.com/wliyongfeng>
-* <https://github.com/hyifeng>
-* <https://github.com/qiyisi>
-* <https://github.com/YoshiyukiSakura>
-* <https://github.com/Popoulosss>
+* https://github.com/wliyongfeng
+* https://github.com/hyifeng
+* https://github.com/qiyisi
+* https://github.com/YoshiyukiSakura
+* https://github.com/Popoulosss
 
 ## Development Roadmap :nut_and_bolt:
 

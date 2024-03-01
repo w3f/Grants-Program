@@ -88,7 +88,7 @@ In conclusion: we are not aware of any teams in the Polkadot/Kusama ecosystem th
 
 * **Contact Name:** Moti Tabulo
 * **Contact Email:** moti.tabulo@klevoya.com
-* **Website:** <https://klevoya.com>
+* **Website:** https://klevoya.com
 
 ### Legal Structure
 
@@ -105,15 +105,15 @@ The team is composed of members with many years of experience in general + block
 
 ### Team Code Repos
 
-* Team Repo: <https://github.com/klevoya/>
-* Inspect static analyser: <https://github.com/klevoya/inspect-analysis2>
-* Maintainer of EOSIO Smart Contract Weakness Registry: <https://github.com/klevoya/eosio-wcr-registry>
+* Team Repo: https://github.com/klevoya/
+* Inspect static analyser: https://github.com/klevoya/inspect-analysis2
+* Maintainer of EOSIO Smart Contract Weakness Registry: https://github.com/klevoya/eosio-wcr-registry
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/moti-tabulo/>
-* <https://www.linkedin.com/in/daveemorgan/>
-* <https://www.linkedin.com/in/christoph-michel-dev/>
+* https://www.linkedin.com/in/moti-tabulo/
+* https://www.linkedin.com/in/daveemorgan/
+* https://www.linkedin.com/in/christoph-michel-dev/
 
 ## Development Status :open_book:
 

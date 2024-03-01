@@ -78,7 +78,7 @@ And BDWallet pioneered the shared staking model. When user A invites user B to p
 
 * BD wallet cloud version code base: https://github.com/bdwallet/wallet-app
 - Bd-wallet-core code base: https://github.com/bdwallet/bd-wallet-core
-- A redux framework for TypeScript: <https://github.com/redux-model/redux-model>
+- A redux framework for TypeScript: https://github.com/redux-model/redux-model
 
 ### Team experience
 

@@ -80,7 +80,7 @@ to the Kusama ecosystem.
 
 * **Contact Name:** Daniel Olano
 * **Contact Email:** we@virto.team
-* **Website:** <https://virto.network>
+* **Website:** https://virto.network
 
 ### Legal Structure
 
@@ -122,16 +122,16 @@ for merchants in latam).
 
 ### Team Code Repos
 
-* <https://github.com/virto-network/>
+* https://github.com/virto-network/
 
 ### Team Github
 
-* **Daniel Olano:** <https://github.com/olanod>
-* **Qian Che:** <https://github.com/cheqian0602>
-* **Stanly Johnson:** <https://github.com/stanly-johnson>
-* **David Barinas:** <https://github.com/stanly-johnson>
-* **Kenji Phang:** <https://github.com/KenjiPcx>
-* **Gabriela Azcona:** <https://github.com/azconita>
+* **Daniel Olano:** https://github.com/olanod
+* **Qian Che:** https://github.com/cheqian0602
+* **Stanly Johnson:** https://github.com/stanly-johnson
+* **David Barinas:** https://github.com/stanly-johnson
+* **Kenji Phang:** https://github.com/KenjiPcx
+* **Gabriela Azcona:** https://github.com/azconita
 
 ## Development Status :open_book:
 

@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-This proposal is a follow-up to the PolkaJ grant <https://github.com/w3f/Open-Grants-Program/pull/12>
+This proposal is a follow-up to the PolkaJ grant https://github.com/w3f/Open-Grants-Program/pull/12
 I am not affiliated with the original team, but I have spoken with them about this propoal and they have encouraged me to submit it.
 
 ### Overview
@@ -56,11 +56,11 @@ I have ten years of experience in Android client development in the telecom and 
 
 ### Team Code Repos
 
-* <https://github.com/nschwermann>
+* https://github.com/nschwermann
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/nathanschwermann/>
+* https://www.linkedin.com/in/nathanschwermann/
 
 ## Development Status :open_book:
 
