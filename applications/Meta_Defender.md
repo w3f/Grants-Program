@@ -183,7 +183,7 @@ When a policy is generated, we record its lastProviderIndex and ΔaccSPS. When i
 
 <p align="center"><img  src="https://user-images.githubusercontent.com/86153748/180449348-4a26d62c-9a31-4adc-8b19-bd0b67dbd812.png" /></p>
 
-​When calculating an underwriter's shadow, it is necessary to first determine the relationship between his index and latestUnfrozenIndex. When index<=latestUnfrozenIndex, it means that the capital being released already has the part of the underwriter’s frozen capital. His shadow will be calculated by:
+​When calculating an underwriter's shadow, it is necessary to first determine the relationship between his index and latestUnfrozenIndex. When index\<=latestUnfrozenIndex, it means that the capital being released already has the part of the underwriter’s frozen capital. His shadow will be calculated by:
 
 <p align="center"><img  src="https://user-images.githubusercontent.com/86153748/180449456-6baae64f-786f-4012-9e95-37be2179461f.png" /></p>
 
@@ -223,7 +223,7 @@ sTokenAmount_P*（accSPS_P - accSPSDown）------- ②;
 
 Obviously, at this point ②>=①.
 
-Thereafter, the Meta Defender protocol monitors for changes in ②. As the earlier policies gradually expire and are cancelled as well as the capital is unfrozen, the value of ② gradually decreases (of course, the relationship between index and latestUnfrozenIndex is taken into account, and ② is really reduced when index <= latestUnfrozenIndex.
+Thereafter, the Meta Defender protocol monitors for changes in ②. As the earlier policies gradually expire and are cancelled as well as the capital is unfrozen, the value of ② gradually decreases (of course, the relationship between index and latestUnfrozenIndex is taken into account, and ② is really reduced when index \<= latestUnfrozenIndex.
 
 When ② < ①, the difference between ① and ② is the capital of P being unfrozen. P extracts it, updates the value of ① to ②, and waits for the next unfrozen part.
 

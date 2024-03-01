@@ -42,7 +42,7 @@ The rating system will initially be run as a callable serverless function. Passi
 * / Request All By Project ID
 * / Submit By Project ID
 
-**Smart Contract <–> Jamstack bridge** – Serverless functions
+**Smart Contract \<–\> Jamstack bridge** – Serverless functions
 // Matches above smart contract requests to be stored in a real-time database – removing the need for individual users to continually interact with the blockchain cientside.
 Scheduled tasks to run and submit ESG rating calculations
 

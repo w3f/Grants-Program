@@ -159,7 +159,7 @@ All the APIs in the examples are tested to be achievable with the mock objects. 
 ### Contact
 
 - **Contact Name:** Daniel Leping
-- **Contact Email:** <daniel@tesseract.one>
+- **Contact Email:** daniel@tesseract.one
 - **Website:** https://github.com/tesseract-one/
 
 ### Legal Structure

@@ -410,7 +410,7 @@ We also have been working on fundamental research and development of a framework
 
 We've analyzed the most popular consensus algorithms (PoW, PoS, dPoS BFT, etc.) and blockchain platforms (Bitcoin, Ethereum, Cordana, Ripple, Waves, Hashgraph, etc.).
 
-I also was fortunate to be a speaker and moderator of technical panel discussions at Blockchain Economic Forum in Singapore and San-Francisco (cross-chain communication, mining, security, scalability, etc.) and to work with the Moscow blockchain community as head of educational Chain{Dev} project.
+I also was fortunate to be a speaker and moderator of technical panel discussions at Blockchain Economic Forum in Singapore and San-Francisco (cross-chain communication, mining, security, scalability, etc.) and to work with the Moscow blockchain community as head of educational Chain\{Dev} project.
 
 Full-stack web developer, Python, JS, Docker, SQL, Blockchain.
 Rust experience: 3+ months, but moving fast.

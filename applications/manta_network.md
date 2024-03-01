@@ -19,9 +19,9 @@ Manta Network is the first privacy-preserving DeFi stack powered by zkSNARK. It 
 The cryptographic construction paper can be found [here](https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf). Below is the Manta architecture:
 
     ----------------------------------------------------
-    | Decentralzied Anonymous eXchange (DAX)           |  <---- Future plan
+    | Decentralzied Anonymous eXchange (DAX)           |  \<---- Future plan
     ----------------------------------------------------
-    | Decentralized Anonymous Payment (DAP)            |  <---- This grant
+    | Decentralized Anonymous Payment (DAP)            |  \<---- This grant
     ----------------------------------------------------
     | Polkadot and Parachain Assets (e.g stable coins) |
     ----------------------------------------------------
