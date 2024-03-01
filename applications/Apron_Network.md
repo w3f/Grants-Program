@@ -93,7 +93,7 @@ The Apron Network provides exactly the same API services as infura.io but in a d
 
 ### Contact
 
-- <https://apron.network>
+- https://apron.network
 
 ### Legal Structure
 
@@ -118,7 +118,7 @@ Junjun
 
 ### Team Code Repos
 
-* Apron Labs: <https://github.com/apron-network>
+* Apron Labs: https://github.com/apron-network
 
 ### Team LinkedIn Profiles
 
@@ -184,4 +184,4 @@ Development Plan
 
 Currently we just start the first design of the Apron Network.
 
-The project repo: <https://github.com/apron-network>
+The project repo: https://github.com/apron-network

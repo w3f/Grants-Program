@@ -216,23 +216,23 @@ A few crypto wallets outside of the Polkadot ecosystem are a little bit similar 
 
 Please describe the team's relevant experience.  If the project involves development work, we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
 
-The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a major problem. He initially tried to solve the dilemma using blockchain but realized that the existing blockchain technologies were far too slow to be practical. He then decided to add the root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to provide secure computing services to client blockchains without requiring specialized CPU features such as Phala's (TEE) Intel SGX CPU or Bitcoin's ASIC CPU. Besides the Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better, so they started the Gluon. The full story of the project can be found here: [Sweeping Monk Medium Blog] (<https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338>)
+The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a major problem. He initially tried to solve the dilemma using blockchain but realized that the existing blockchain technologies were far too slow to be practical. He then decided to add the root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to provide secure computing services to client blockchains without requiring specialized CPU features such as Phala's (TEE) Intel SGX CPU or Bitcoin's ASIC CPU. Besides the Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better, so they started the Gluon. The full story of the project can be found here: [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
 
 ### Team Code Repos
 
-* <https://github.com/tearust/Gluon_Actor>
-* <https://github.com/tearust/Gluon_Pellet>
-* <https://github.com/tearust/gluon-docs>
-* <https://github.com/tearust/tea-docs>
+* https://github.com/tearust/Gluon_Actor
+* https://github.com/tearust/Gluon_Pellet
+* https://github.com/tearust/gluon-docs
+* https://github.com/tearust/tea-docs
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/kevingzhang/>
-* <https://www.linkedin.com/in/zhijun/>
-* <https://www.linkedin.com/in/jacky-li-4039747b/>
-* <https://www.linkedin.com/in/mingzhi-yan-7544b9203/>
-* <https://www.linkedin.com/in/zehua-jiang-7494a8203/>
-* <https://www.linkedin.com/in/lex-pablo-a638941ba/>
+* https://www.linkedin.com/in/kevingzhang/
+* https://www.linkedin.com/in/zhijun/
+* https://www.linkedin.com/in/jacky-li-4039747b/
+* https://www.linkedin.com/in/mingzhi-yan-7544b9203/
+* https://www.linkedin.com/in/zehua-jiang-7494a8203/
+* https://www.linkedin.com/in/lex-pablo-a638941ba/
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -310,7 +310,7 @@ To assist you in defining it, we created a document with examples for some grant
 * **FTE:**  2.5 FTE
 * **Costs:** 5.6k USD
 Prerequisites:
-This milestone require Schnorrkel threshold signature issue <https://github.com/w3f/schnorrkel/issues/11> completes.
+This milestone require Schnorrkel threshold signature issue https://github.com/w3f/schnorrkel/issues/11> completes.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |

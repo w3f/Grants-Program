@@ -238,9 +238,9 @@ We will be pleased to offer specific information in private.
 
 ### Team Code Repos
 
-<https://github.com/bytepayment>
+https://github.com/bytepayment
 
-<https://github.com/bytepayment/bytepay>  
+https://github.com/bytepayment/bytepay
 
 ### Team LinkedIn Profiles
 
@@ -291,7 +291,7 @@ We will provid in private through Google Form.
 
 ## Development Status
 
-<https://github.com/bytepayment/bytepay>
+https://github.com/bytepayment/bytepay
 
 We have developed the webhook event processing module.
 The following is a brief description of what the repository contains:
