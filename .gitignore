@@ -66,4 +66,3 @@ node_modules
 # docusaurus
 build/
 .docusaurus/
-link-edit-script.zsh
