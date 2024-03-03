@@ -131,8 +131,8 @@ Luca's Contributions:
 
 GitHub accounts of team members.
 
-- https://github.com/feliam <Felipe Manzano/>
-- https://github.com/0xLucca <Luca Auet/>
+- https://github.com/feliam Felipe Manzano
+- https://github.com/0xLucca Luca Auet
 
 ### Team LinkedIn Profiles
 
