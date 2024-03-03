@@ -342,18 +342,18 @@ and then implementing a [MIR visitor][MIR-visitor] that finds [`Terminator`s][Te
 the `DefId` of a dispatchable function.
 
 Then, the concrete types and argument values used in the discovered "specialized" dispatchable function calls 
-will be used construct/generate tractable entry points (i.e. definitions of minimal public functions that 
+will be used to construct/generate tractable entry points (i.e. definitions of minimal public functions that 
 make dispatchable calls similar to [this "hybrid" entry point from the previous research deliverable][scs-entrypoint]).
 
 Note that, at this point we can emit a warning for any dispatchable functions for which no "specialized" call 
 could be found (i.e. presumably because no unit tests are defined for it), or even abort with an error message, 
-if no specialized functions are found for any of the dispatchable functions.
+if no "specialized" calls are found for any of the dispatchable functions.
 
 [HIR-body-owners]: https://doc.rust-lang.org/nightly/nightly-rustc/rustc_middle/hir/map/struct.Map.html#method.body_owners
 [Terminator]: https://doc.rust-lang.org/nightly/nightly-rustc/rustc_middle/mir/terminator/struct.Terminator.html
 [Terminator-call]: https://doc.rust-lang.org/nightly/nightly-rustc/rustc_middle/mir/syntax/enum.TerminatorKind.html#variant.Call
 
-Switching our focus back to generated tractable entry points, one challenge here is that we'll need [`DefId`s][DefId] 
+Switching our focus back to the generated tractable entry points, one challenge here is that we'll need [`DefId`s][DefId] 
 for these generated tractable entry points (inorder to pass them to MIRAI for analysis), but `DefId`s are created 
 during [HIR (High-Level Intermediate Representation)][HIR] lowering ([see also][HIR-lower]).
 
@@ -395,7 +395,7 @@ some of MIRAI's "normal" mechanisms for [reducing false positives][MIRAI-false-+
 [MIRAI-diag-level]: https://github.com/facebookexperimental/MIRAI/blob/a94a8c77a453e1d2365b39aa638a4f5e6b1d4dc3/checker/src/options.rs#L32
 [MIRAI-false-+]: https://github.com/facebookexperimental/MIRAI/blob/main/documentation/Overview.md#reducing-false-positives
 
-Additionally, by examining the reported diagnostic from [the previous research delivery][scs-research-delivery] 
+However, by examining the reported diagnostic from [the previous research delivery][scs-research-delivery] 
 (see image below), we can make a few important observations:
 - The primary span/location for the diagnostic is pointing to the [`frame_support` pallet][FRAME-support], 
   and specifically the [`frame_support::storage::with_storage_layer` function][FRAME-support-with-store], 
@@ -463,6 +463,21 @@ when pallet-verifier already knows the relevant `DefId` and so can just call
 
 [MIRAI-find-def-id]: https://github.com/facebookexperimental/MIRAI/blob/a94a8c77a453e1d2365b39aa638a4f5e6b1d4dc3/checker/src/crate_visitor.rs#L84-L132
 [MIRAI-analyze-body]: https://github.com/facebookexperimental/MIRAI/blob/main/checker/src/crate_visitor.rs#L174
+
+Lastly, another lever for reducing false positives (i.e. irrelevant warnings) related to 
+[incomplete analysis due to missing MIR bodies][MIRAI-incomplete] for ["foreign functions"][MIRAI-foreign-fns] 
+(e.g. standard library functions that aren't inlined, and system calls), is to add 
+["summaries/foreign contracts"][MIRAI-contracts] for these ["foreign functions"][MIRAI-foreign-fns], 
+thus making the analysis more precise. While this part of MIRAI is not that well documented, 
+it's not that hard to figure out how to add these ["summaries/foreign contracts"][MIRAI-contracts] 
+from the [existing examples][MIRAI-contracts] and [related utilities][MIRAI-contract-util], 
+which actually show that these ["summaries/foreign contracts" can be defined outside MIRAI][MIRAI-summary-util], 
+which certainly gives us more flexibility without having to modify MIRAI itself.
+
+[MIRAI-incomplete]: https://github.com/facebookexperimental/MIRAI/blob/main/documentation/Overview.md#incomplete-analysis
+[MIRAI-contracts]: https://github.com/facebookexperimental/MIRAI/blob/main/standard_contracts/src/foreign_contracts.rs
+[MIRAI-contract-util]: https://github.com/facebookexperimental/MIRAI/blob/main/checker/src/utils.rs#L402-L413
+[MIRAI-summary-util]: https://github.com/facebookexperimental/MIRAI/blob/main/checker/src/utils.rs#L373-L376
 
 ##### Other considerations
 
