@@ -211,6 +211,7 @@ Please include here
 - how you intend to use, enhance, and promote your project in the short term, and
     - Internal community testing and once production ready offering giveaway DOTs/NFTs to incentivise early users to use the project
 - the team's long-term plans and intentions in relation to it.
+    - Security audit
     - Comprehensive historical data and analytics platform for pools and validators.
     - Explore liquid staking options.
 
