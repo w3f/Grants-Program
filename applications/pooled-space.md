@@ -12,7 +12,7 @@
 
 ### Overview
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ffe4f315-d829-4674-8d43-26cc3be8ab65/0390258b-549c-4a73-93eb-cbead4d304c6/Untitled.png)
+![image](https://github.com/muddlebee/w3f-Grants-Program/assets/8139783/4056dd2a-0721-4a97-a6ef-c348bd9cae4c)
 
 Solo staking (nominating) on Polkadot is technically complex and nominating often requires a high minimum investment and knowledge, creating a barrier for new users. The task of choosing validators is not simple, as it should take into account nominator reward and risk preferences and regularly keeping track of nominated validators which is hectic.
 
@@ -28,7 +28,8 @@ Pools eliminate the complexities of nominating. In pools you must ensure that th
 - **Targeting Newcomers:** The 1 DOT staking feature provides an accessible entry point for individuals hesitant about larger investments.
 - **Frictionless Onboarding:** Simplify complex staking processes. Streamlined pool selection and daily returns tracking encourage increased participation.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ffe4f315-d829-4674-8d43-26cc3be8ab65/ba2f6dd7-2c65-4cc6-840a-ebf4f8e6cb32/Untitled.png)
+![image](https://github.com/muddlebee/w3f-Grants-Program/assets/8139783/44a292ff-9b07-43be-bfac-1ee4231274e0)
+
 
  **Key Features**
 
@@ -38,33 +39,11 @@ Pools eliminate the complexities of nominating. In pools you must ensure that th
   - Easy pool joining, user balance display, and daily rewards.
   - Lock period warnings.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ffe4f315-d829-4674-8d43-26cc3be8ab65/b6a77133-d9b2-43ac-b417-076d44679ec3/Untitled.png)
-
-
-
-### Ecosystem Fit
-
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-    - nomination pools staking for Polkadot. 1 DOT staking feature offers a compelling entry point for DOT holders.
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-    - newcomers to the polkadot ecosystem
-    - existing users of polkadot who don’t stake due to complexities
-- What need(s) does your project meet? How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-    - I am Polkadot community manager/moderator at the Official Discord. We get lot of queries around staking which highlights the technical complexities behind it. So I gained interesting insights around the pain points of staking which led me to this idea.
-    - [research-data](./pooled/research-charts.md) stats and charts around huge scope of growth for nomination pools.
-    - [community insights](./pooled/community-insights.md) around the technical complexities of staking and the need for a user friendly platform from the Polkadot discord.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-    - https://staking.polkadot.network/
-    - [competitive analysis](./pooled/competitive-analysis.md) of staking.polkadot.network and other wallets which provide staking pools and how we are different from them.
-
+![image](https://github.com/muddlebee/w3f-Grants-Program/assets/8139783/91e427dc-1213-4c6b-a651-168058ad1a20)
 
 
 ## Development Roadmap :nut_and_bolt:
 
-
-Most of the functionalities which https://staking.polkadot.network/ offers for nomination pools, except for lifecycle for creation of nomination pools.
 
 **Nomination pools extrinsics**
 
@@ -101,9 +80,29 @@ Features not supported in this milestone
     - It provides easy API access to data which is emitted through events. So rather than running a custom indexer, its convenient to use subscan API, [staking.polkadot.network](http://staking.polkadot.network) partly uses subscan APIs.
 
 
+### Ecosystem Fit
+
+Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+
+- Where and how does your project fit into the ecosystem?
+    - nomination pools staking for Polkadot. 1 DOT staking feature offers a compelling entry point for DOT holders.
+- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+    - newcomers to the polkadot ecosystem
+    - existing users of polkadot who don’t stake due to complexities
+- What need(s) does your project meet? How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
+    - I am Polkadot community manager/moderator at the Official Discord. We get lot of queries around staking which highlights the technical complexities behind it. So I gained interesting insights around the pain points of staking which led me to this idea.
+    - [research-data](./pooled/research-charts.md) stats and charts around huge scope of growth for nomination pools.
+    - [community insights](./pooled/community-insights.md) around the technical complexities of staking and the need for a user friendly platform from the Polkadot discord.
+- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+    - https://staking.polkadot.network/
+    - [competitive analysis](./pooled/competitive-analysis.md) of staking.polkadot.network and other wallets which provide staking pools and how we are different from them.
+
+
+
+
 ### Milestone 1 Example — Basic functionality
 
-- **Estimated duration:** 3-3.5 months
+- **Estimated duration:** 3-3.5 months, April onwards (due to prior engagement in March for one of the devs, we will start this from April 2024 onwards)
 - **FTE:**  1.5
 - **Costs:** 10,000 USD
 
@@ -171,7 +170,7 @@ Features not supported in this milestone
 ### Team's experience
 
   
-I have around 5 years of experience in full stack development. Previously worked as a tech lead at B2B fintech firm. Also a polkadot ambassador and the community moderator of the official polkadot/kusama discord. I have been contributing to the ecosystem since 2  years. Also participated in Thousand Contributors Programme by w3f and have been adding suggestions/improvements across the w3f github projects(polkodot-wiki).
+I have around 5 years of experience in full stack development. Previously worked as a tech lead at B2B fintech firm. Also a polkadot ambassador and the community manager/moderator of the official polkadot/kusama discord. I have been contributing to the ecosystem since 2 years. Also participated in Thousand Contributors Programme by w3f and have been adding suggestions/improvements across the w3f github projects(polkodot-wiki).
 
 Also wrote a comprehensive tutorial to get started with Polkadot using the polkadot-js API (https://polkadotjs-developer-hub.gitbook.io/)
 
@@ -230,7 +229,7 @@ Please include here
 #### Previous grants you may have applied for.
 - mempool-v2, applied and grants got approved but pulled out due to some internal issues.
 
-**Why pooled.space?**
+#### Why pooled.space?
 
 - **Addresses a clear market need** evident from community feedback.
 - **Drives Polkadot adoption** by lowering the entry barrier with minimum 1 DOT.
