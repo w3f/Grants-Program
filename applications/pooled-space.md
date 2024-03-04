@@ -143,22 +143,42 @@ Also wrote a comprehensive tutorial to get started with Polkadot using the polka
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+### TODO mark all the md here
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
+
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
 - previous interface iterations, such as mock-ups and wireframes.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
+Most of the functionalities which https://staking.polkadot.network/ offers for nomination pools, except for lifecycle for creation of nomination pools.
 
-> :exclamation: If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
+**Nomination pools extrinsics**
 
+- join a pool
+- increase your bond in pool
+- withdraw/unbond your staked pool funds
+
+**Nomination pools dashboard**
+
+- better selection criteria based on total funds staked, no of pool members, total rewards disbursed, effective APR % etc
+- specific pools overview like
+    - pool commission
+    - total rewards disbursed/claimed etc
+
+**Stats Dashboard of network and pools**
+
+- total no of pools, total no of active pools
+- total no of users staked in pools
+- min to create a pool
+- average rewards rate
+- total staked %
+
+Features not supported in this milestone
+
+- Creation and management of nomination pools by pool owner
 
 ### Milestone 1 Example — Basic functionality
 
