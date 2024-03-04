@@ -58,6 +58,8 @@ Besides, **there is a clear difference between an application being accepted and
 | [inkscope.xyz](https://inkscope.xyz/)                       | [Inkscope Fuzzer](./inkscope-fuzzer.md)                     | [GitHub](https://github.com/inkscopexyz)                 | ☐          |        ☐       |      ☐      |
 | [Relai Network](https://relai.network/)                       | [Futur & Fusion Protocols](./FuturFusion.md)                     | [GitHub](https://github.com/RELAI-Network)                 | ☐          |        ☐       |      ☐      |
 | [Zondax AG](https://zondax.ch/)                       | [User Account Access Security Analysis](./research_wallets.md)                     | [GitHub](https://github.com/zondax)                 | ☐          |        ☐       |      ☐      |
+| [Philoniare Team](https://github.com/philoniare/)                       | [create-substrate-app](./create-substrate-app.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☐       |      ☐      |
+
 
 ## 2023
 
