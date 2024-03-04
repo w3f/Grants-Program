@@ -3,7 +3,7 @@
 
 
 - **Team Name:** CoreBlocks
-- **Payment Address:** Fiat
+- **Payment Address:** Fiat 5.03.2024(5 March), 12:43 AM
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 
@@ -40,14 +40,6 @@ Pools eliminate the complexities of nominating. In pools you must ensure that th
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ffe4f315-d829-4674-8d43-26cc3be8ab65/b6a77133-d9b2-43ac-b417-076d44679ec3/Untitled.png)
 
-**APIs**
-
-- Polkadot JS API
-    - Storage for pools https://polkadot.js.org/docs/substrate/storage/#nominationpools
-    - Extrinsics for pools https://polkadot.js.org/docs/substrate/extrinsics/#nominationpools
-- Subscan APIs
-    - https://support.subscan.io/
-    - It provides easy API access to data which is emitted through events. So rather than running a custom indexer, its convenient to use subscan API, [staking.polkadot.network](http://staking.polkadot.network) partly uses subscan APIs.
 
 
 ### Ecosystem Fit
@@ -61,11 +53,81 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
     - existing users of polkadot who don’t stake due to complexities
 - What need(s) does your project meet? How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
     - I am Polkadot community manager/moderator at the Official Discord. We get lot of queries around staking which highlights the technical complexities behind it. So I gained interesting insights around the pain points of staking which led me to this idea.
-    - <charts.md>
-
+    - [research-data](./pooled/research-charts.md) stats and charts around huge scope of growth for nomination pools.
+    - [community insights](./pooled/community-insights.md) around the technical complexities of staking and the need for a user friendly platform from the Polkadot discord.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
     - https://staking.polkadot.network/
-    - <compet-analysis.md>
+    - [competitive analysis](./pooled/competitive-analysis.md) of staking.polkadot.network and other wallets which provide staking pools and how we are different from them.
+
+
+
+## Development Roadmap :nut_and_bolt:
+
+
+Most of the functionalities which https://staking.polkadot.network/ offers for nomination pools, except for lifecycle for creation of nomination pools.
+
+**Nomination pools extrinsics**
+
+- join a pool
+- increase your bond in pool
+- withdraw/unbond your staked pool funds
+
+**Nomination pools dashboard**
+
+- better selection criteria based on total funds staked, no of pool members, total rewards disbursed, effective APR % etc
+- specific pools overview like
+    - pool commission
+    - total rewards disbursed/claimed etc
+
+**Stats Dashboard of network and pools**
+
+- total no of pools, total no of active pools
+- total no of users staked in pools
+- min to create a pool
+- average rewards rate
+- total staked %
+
+Features not supported in this milestone
+
+- Creation and management of nomination pools by pool owner
+
+**APIs**
+
+- Polkadot JS API
+    - Storage for pools https://polkadot.js.org/docs/substrate/storage/#nominationpools
+    - Extrinsics for pools https://polkadot.js.org/docs/substrate/extrinsics/#nominationpools
+- Subscan APIs
+    - https://support.subscan.io/
+    - It provides easy API access to data which is emitted through events. So rather than running a custom indexer, its convenient to use subscan API, [staking.polkadot.network](http://staking.polkadot.network) partly uses subscan APIs.
+
+
+### Milestone 1 Example — Basic functionality
+
+- **Estimated duration:** 3-3.5 months
+- **FTE:**  1.5
+- **Costs:** 10,000 USD
+
+> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) start the application and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide |  In the guide, how to test the functionalities manually |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |.
+
+
+...
+
+
+## Development Status :open_book:
+
+- [figma designs](https://www.figma.com/file/VdQgkFofvNNR9IZdHM7Z2V/Pooled-Space?type=design&node-id=0%3A1&mode=design&t=DFZgu2hjec7YnQTn-1) for the project
+- [research-data](./pooled/research-charts.md)
+- [community insights](./pooled/community-insights.md)
+- [competitive analysis](./pooled/competitive-analysis.md) 
+
+
 
 
 
@@ -124,7 +186,6 @@ Also wrote a comprehensive tutorial to get started with Polkadot using the polka
 ### Team Code Repos
 
   
-
   
 ### Team LinkedIn Profiles (if available)
 
@@ -140,63 +201,6 @@ Also wrote a comprehensive tutorial to get started with Polkadot using the polka
 - <https://www.linkedin.com/in/dikhyantkrishnadalai/> Dikhyant Krishna
 
   
-
-## Development Status :open_book:
-
-### TODO mark all the md here
-
-
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
-
-## Development Roadmap :nut_and_bolt:
-
-
-Most of the functionalities which https://staking.polkadot.network/ offers for nomination pools, except for lifecycle for creation of nomination pools.
-
-**Nomination pools extrinsics**
-
-- join a pool
-- increase your bond in pool
-- withdraw/unbond your staked pool funds
-
-**Nomination pools dashboard**
-
-- better selection criteria based on total funds staked, no of pool members, total rewards disbursed, effective APR % etc
-- specific pools overview like
-    - pool commission
-    - total rewards disbursed/claimed etc
-
-**Stats Dashboard of network and pools**
-
-- total no of pools, total no of active pools
-- total no of users staked in pools
-- min to create a pool
-- average rewards rate
-- total staked %
-
-Features not supported in this milestone
-
-- Creation and management of nomination pools by pool owner
-
-### Milestone 1 Example — Basic functionality
-
-- **Estimated duration:** 3-3.5 months
-- **FTE:**  1.5
-- **Costs:** 10,000 USD
-
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) start the application and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide |  In the guide, how to test the functionalities manually |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |.
-
-
-...
 
 
 ## Future Plans

@@ -1,6 +1,8 @@
 ### Community insights highlighting the needs for better staking experience.
  <br /> 
 
+ Below are the screenshots of the conversations from the Polkadot Discord server where the community members have expressed their concerns and pain points around staking.
+
 
 ![image](https://github.com/muddlebee/w3f-Grants-Program/assets/8139783/06912209-5b39-4d86-b74e-b9348098555d)
 
