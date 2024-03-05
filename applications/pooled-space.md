@@ -103,7 +103,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 ### Milestone 1 — Basic functionality
 
 - **Estimated duration:** 3-3.5 months, April onwards (due to prior engagement in March for one of the devs, we will start this from April 2024 onwards)
-- **FTE:**  1.5
+- **FTE:**  2
 - **Costs:** 10,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
@@ -122,7 +122,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 ## Development Status :open_book:
 
 - [figma designs](https://www.figma.com/file/VdQgkFofvNNR9IZdHM7Z2V/Pooled-Space?type=design&node-id=0%3A1&mode=design&t=DFZgu2hjec7YnQTn-1) for the project
-- [research-data](./pooled/research-charts.md)
+- [research data](./pooled/research-charts.md)
 - [community insights](./pooled/community-insights.md)
 - [competitive analysis](./pooled/competitive-analysis.md) 
 
