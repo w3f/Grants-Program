@@ -100,7 +100,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Basic functionality
 
 - **Estimated duration:** 3-3.5 months, April onwards (due to prior engagement in March for one of the devs, we will start this from April 2024 onwards)
 - **FTE:**  1.5
