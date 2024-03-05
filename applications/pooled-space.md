@@ -18,7 +18,7 @@ Solo staking (nominating) on Polkadot is technically complex and nominating ofte
 
 Pools eliminate the complexities of nominating. In pools you must ensure that the pool is earning rewards and nominating the validators that match your preferences. Participating in pools is more of a set-and-forget action than nominating by yourself. The pool operator maintains the list of validators nominated by the pool, and so, in a way, you are trusting the pool operator to act in your best interests, so basically you delegate much of the hectic work to the pool operator. 
 
-**Pooled.space** offers a user-friendly platform allowing staking with as little as 1 DOT. This will attract newcomers, strengthen the Polkadot network, and extend its reach.
+**Pooled.space** offers a user-friendly platform allowing staking with as little as 1 DOT. This will attract newcomers and help expand the user base of Polkadot.
 
 
 ### Project Details
