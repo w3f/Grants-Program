@@ -1,6 +1,6 @@
 # Proof of Contract Stake (Pallet)
 
-- **Team Name:** Auguth Tech
+- **Team Name:** Auguth Research Foundation
 - **Payment:** FIAT 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
@@ -106,8 +106,8 @@ There are no similar projects in polkadot as well as other blockchains as of now
 
 ### Legal Structure
 
-- **Registered Address:** Tamil Nadu, India - 624619
-- **Registered Legal Entity:** Auguth Tech Pvt Ltd (CIN : U72900TZ2019PTC033024)
+- **Registered Address:** Bangalore, India - 560016
+- **Registered Legal Entity:** Auguth Research Foundation (CIN : U88900KA2024NPL185633)
 
 ### Team's experience
 
