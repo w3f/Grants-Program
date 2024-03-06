@@ -33,7 +33,7 @@ The second milestone will focus on the implementation of a sophisticated attack 
 - Milestone 3: Academic Paper Composition
 The culmination of our research efforts will be the drafting of an academic paper. This document will encapsulate our findings, methodologies, and proposed solutions to the security vulnerabilities identified in the previous milestones. The paper aims to contribute valuable insights to the broader academic and technological communities, fostering awareness and prompting further innovation in blockchain security.
 
-Our project will produce three key deliverables:
+Our project will produce the following key deliverables:
 - Development of code to simulate the identified attack vectors.
 - A comprehensive report detailing the vulnerability of widely-used wallets and dApps in the Polkadot framework to these security threats.
 - A suite of recommendations aimed at fortifying against these vulnerabilities.
@@ -160,9 +160,15 @@ Akshay Pillai, Vishal Saraswat & Arunkumar V.R.
 - Design and execute attacks based on identified vulnerabilities, such as spoofing wallet providers, injecting malicious scripts, or exploiting protocol weaknesses.
 
 **Deliverables:**
-- A detailed report of each designed attack, including the methodology, tools used, and the vulnerability exploited.
-- A set of recommendations for mitigating identified security threats, tailored for both wallet developers and dApp developers within the Polkadot ecosystem.
-- A repository of code for the simulated attacks, available for community review and educational purposes.
+
+| Number | Deliverable | Specification |
+| ------ | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide a detailed report of each designed attack, including methodology, tools used, and vulnerability exploited. |
+| **0c.** | Testing and Testing Guide | We will provide a comprehensive testing guide for replicating the attacks in a controlled environment. |
+| **0d.** | Docker | We will provide a Docker environment setup for running and testing the attack simulations. |
+| **1.** | Attack Simulation Code Repository | We will deliver a repository of code for the simulated attacks, demonstrating vulnerabilities, available for community review and educational purposes. |
+| **2.** | Security Recommendations Report | We will deliver a report highlighting a set of recommendations for mitigating identified security threats, tailored for both wallet developers and dApp developers within the Polkadot ecosystem. |
 
 
 ### Milestone 2 - Privacy
@@ -178,8 +184,14 @@ Akshay Pillai, Vishal Saraswat & Arunkumar V.R.
 - Evaluate the impact of such privacy breaches on users and the broader ecosystem.
 
 **Deliverables:**
-- Proof-of-concept code for the rogue wallet extension, along with a testing guide to help developers and researchers replicate and understand the attack.
-- A report detailing the rogue wallet attack and the implications for users, including a set of privacy-enhancing recommendations and best practices for wallet and dApp developers to prevent eavesdropping and safeguard user data.
+
+| Number | Deliverable | Specification |
+| ------ | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide a report detailing the rogue wallet attack and the implications for users, including a set of privacy-enhancing recommendations and best practices for wallet and dApp developers to prevent eavesdropping and safeguard user data. |
+| **0c.** | Testing and Testing Guide | We will provide a comprehensive testing guide to help developers and researchers replicate and understand the privacy attack using the provided rogue wallet extension prototype. |
+| **0d.** | Docker | We will provide a Docker environment setup to facilitate the testing of the rogue wallet extension and its impact on privacy. |
+| **1.** | Rogue Wallet Prototype | We will deliver a code repository containing proof-of-concept code for the rogue wallet extension. |
 
 ### Milestone 3 - Academic Paper
 
@@ -195,19 +207,14 @@ Akshay Pillai, Vishal Saraswat & Arunkumar V.R.
 - Draft the paper, incorporating feedback from team members, project supervisors, and possibly external reviewers for accuracy and relevance.
 
 **Deliverables:**
-- An academic paper, and its submission to a peer-reviewed conference focusing on blockchain technology, security, and privacy.
-- Supplementary materials, including datasets, code repositories, and attack simulations, made available under the MIT open-source license to encourage community engagement and feedback.
-
-### Deliverables Summary
-
-
 | Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | MIT  |
-| **0b.** | Documentation | We will provide all documentation about the attacks and issue recommendations to mitigate them. |
-| **0c.** | Testing and Testing Guide | We plan to test whether the main Polkadot Wallets and main dApps are vulnerable to these attacks. |
-| **0d.** | Docker | We will provide a Docker setup to run the attacks. |
-| 0e. | Article | We will publish our results in an academic peer-reviewed conference publication. |
+| ------ | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide Documentation of the research findings, methodologies, and proposed solutions, prepared for academic publication. |
+| **0c.** | Testing and Testing Guide | We will provide a testing guide which includes a description of the methodologies used for research, including how the findings can be replicated or tested by others. |
+| **0d.** | Docker | We will provide a Docker environment setup for any simulations or tests related to the academic research, if seen fit. |
+| **0e.** | Academic Paper | We will deliver an academic paper suitable for submission to a peer-reviewed conference focusing on blockchain technology. This paper will explore the project's findings, and focus on security and privacy considerations. |
+
 
 ## Future Plans
 
