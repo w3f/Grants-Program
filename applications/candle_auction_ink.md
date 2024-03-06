@@ -37,9 +37,9 @@ Main **design considerations** to date are following:
 - The *winning sample* (i.e. in which candle "went out") will be randomly selected retrospectively after Ending period ends.  
 - Bids are made by transferring an amount to increment current bidder's balance which effectively equals her top bid at any point of time.  
   > E.g. Alice making calls:  
-  > 1. `bid()` with `101` `<Balance>` <- Alice' top bid is 101   
+  > 1. `bid()` with `101` `<Balance>` \<- Alice' top bid is 101   
   > some time later, she calls 
-  > 2. `bid()` again, with `1000` `<Balance>` <- Alice' top bid now is 1101 (*not 1000*)
+  > 2. `bid()` again, with `1000` `\<Balance\>` \<- Alice' top bid now is 1101 (*not 1000*)
 
 
 See current project status [below](#development-status-open_book).

@@ -7,7 +7,7 @@
 
 This is a follow-up grant proposal aiming to reduce the integration barriers of the mobile dApp/Wallet integration protocol built during the [previous grant](https://github.com/w3f/Grants-Program/pull/508).
 
-Tesseract dApp/Wallet integration protocol implemented in our [previously finished grant](https://github.com/w3f/Grants-Program/pull/508) provides excellent UX enhancement capabilities to the Polkadot Substrate ecosystem. Its current version allows native mobile applications to request public keys and transaction signatures through seamless integration with any Tesseract-compatible wallet installed on the same smartphone. You can see the **Polkadoot dApp interacting with a wallet** demo here: <https://www.youtube.com/watch?v=0AlDYB3Qglc>.
+Tesseract dApp/Wallet integration protocol implemented in our [previously finished grant](https://github.com/w3f/Grants-Program/pull/508) provides excellent UX enhancement capabilities to the Polkadot Substrate ecosystem. Its current version allows native mobile applications to request public keys and transaction signatures through seamless integration with any Tesseract-compatible wallet installed on the same smartphone. You can see the **Polkadoot dApp interacting with a wallet** demo here: https://www.youtube.com/watch?v=0AlDYB3Qglc.
 
 The version released during the previous grant is an excellent achievement for Tesseract. It is the first step toward implementing Tesseract’s full potential. Ultimately, we aim to make Tesseract a universal go-to dApp/Wallet integration solution capable of handling any scenario using the shortest peer-to-peer communication path. You can read more about it in detail in one of our articles: [Why do we need better dApp/Wallet connectors?](https://medium.com/@dileping/why-do-we-need-better-dapp-wallet-connectors-and-how-did-we-come-up-with-the-tesseract-protocol-987ce0e8a1ab)
 
@@ -159,8 +159,8 @@ All the APIs in the examples are tested to be achievable with the mock objects. 
 ### Contact
 
 - **Contact Name:** Daniel Leping
-- **Contact Email:** <daniel@tesseract.one>
-- **Website:** <https://github.com/tesseract-one/>
+- **Contact Email:** daniel@tesseract.one
+- **Website:** https://github.com/tesseract-one/
 
 ### Legal Structure
 
@@ -179,22 +179,22 @@ The team has a 10-year history of working together, delivering various solutions
 
 ### Team Code Repos
 
-- <https://github.com/tesseract-one> - current main repo
+- https://github.com/tesseract-one - current main repo
 
 #### Notable past open-source repos
 
-- <https://github.com/crossroadlabs/Express>
-- <https://github.com/reactive-swift>
+- https://github.com/crossroadlabs/Express
+- https://github.com/reactive-swift
 
 #### Teams' github profiles
 
-- <https://github.com/dileping>
-- <https://github.com/ypopovych>
+- https://github.com/dileping
+- https://github.com/ypopovych
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/danielleping/>
-- <https://www.linkedin.com/in/yehor-popovych/>
+- https://www.linkedin.com/in/danielleping/
+- https://www.linkedin.com/in/yehor-popovych/
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -300,9 +300,9 @@ Thanks to the support of the Web3 Foundation, the first version of the Tesseract
 
 ## Some links for reference
 
-- Github: <https://github.com/tesseract-one/>
-- Original grant proposal: <https://github.com/w3f/Grants-Program/blob/master/applications/mobile_dapp_connection.md>
-- Demo video: <https://www.youtube.com/watch?v=0AlDYB3Qglc>
+- Github: https://github.com/tesseract-one/
+- Original grant proposal: https://github.com/w3f/Grants-Program/blob/master/applications/mobile_dapp_connection.md
+- Demo video: https://www.youtube.com/watch?v=0AlDYB3Qglc
 
-- Developer wallet (for Tesseract-compatible dApps testing): <https://github.com/tesseract-one/dev-wallet>
-- Polkadot dApp example: <https://github.com/tesseract-one/polkachat.rs>
+- Developer wallet (for Tesseract-compatible dApps testing): https://github.com/tesseract-one/dev-wallet
+- Polkadot dApp example: https://github.com/tesseract-one/polkachat.rs

@@ -65,7 +65,7 @@ Documentation of core components, protocols and architecture to be deployed can 
 
 - PoC/MVP or other relevant prior work or research on the topic
 
-Silent Data News: <https://silentdata.com/news>
+Silent Data News: https://silentdata.com/news
 
 ### Ecosystem Fit
 
@@ -108,46 +108,46 @@ Future implementations will apply not only to Instagram and NFT’s, but also to
 
 **Adi Ben-Ari** is the founder & CEO at Applied Blockchain. Prior to starting the company Adi spent 20 years as a developer, technical lead and solution architect in telecoms, insurance and banking.
 
-LinkedIn: <https://www.linkedin.com/in/adibenari/>
+LinkedIn: https://www.linkedin.com/in/adibenari/
 
 **Francesco Canessa** is the CTO at Applied Blockchain. Francesco is a seasoned technology expert and a serial hackathon winner, with a decade of experience in software development and four years within building blockchain applications. Francesco has worked on large-scale enterprise projects and with startups, building solutions for Sky TV Italia, 5Apps, and Quill Content to name a few. He has also developed tools and libraries for Ethereum and Bitcoin. Francesco is a fan of reading, writing and talking about software development, and is an open source enthusiast. When he’s not looking at code, Francesco builds and rides electric skateboards.
 
-LinkedIn: <https://www.linkedin.com/in/makevoid/>
+LinkedIn: https://www.linkedin.com/in/makevoid/
 
-**Mario Gemoll** leads R&D at Applied Blockchain. Mario studied Computer Science (BSc TU Munich, MSc Oxford) and has several years of experience as a software engineer. He joined Applied Blockchain in 2017. At the company, Mario has led research into blockchain protocols, advanced cryptography and hardware secure enclaves, as well as leading design and development of a major NFT platform. Mario leads the research and development of Silent Data for privacy-preserving proofs of off-chain data using Intel SGX secure enclave technology. Prior to Silent Data, Mario led development of the K0 blockchain protocol bringing transactional data privacy to existing smart contract blockchains using zero-knowledge proofs. Mario also led research and developed a secure multi-party computation protocol for privacy-preserving price discovery in trading environments. LinkedIn: <https://www.linkedin.com/in/mariogemoll/>
+**Mario Gemoll** leads R&D at Applied Blockchain. Mario studied Computer Science (BSc TU Munich, MSc Oxford) and has several years of experience as a software engineer. He joined Applied Blockchain in 2017. At the company, Mario has led research into blockchain protocols, advanced cryptography and hardware secure enclaves, as well as leading design and development of a major NFT platform. Mario leads the research and development of Silent Data for privacy-preserving proofs of off-chain data using Intel SGX secure enclave technology. Prior to Silent Data, Mario led development of the K0 blockchain protocol bringing transactional data privacy to existing smart contract blockchains using zero-knowledge proofs. Mario also led research and developed a secure multi-party computation protocol for privacy-preserving price discovery in trading environments. LinkedIn: https://www.linkedin.com/in/mariogemoll/
 
 **Ricardo Seromenho** is a full stack developer at Applied Blockchain. He is a Node.js application/services certified developer with a degree in Information Technology and 7 years experience. He is a hands-on software engineer with a big passion for best practices and reusable patterns and proficient in a wide range of technologies.
 
-LinkedIn: <https://www.linkedin.com/in/rseromenho/>
+LinkedIn: https://www.linkedin.com/in/rseromenho/
 
-GitHub: <https://github.com/seromenho>
+GitHub: https://github.com/seromenho
 
 **Thomas Brooks** is one of the core developers on the Silent Data platform at Applied Blockchain. He joined the company after completing a doctorate in high energy particle physics, developing software and machine learning algorithms for 3D particle interaction reconstruction. Thomas has a broad range of experience in software development, from creating open source visualisation and analysis tools used by world leading biology labs to writing Ethereum smart contracts for DeFi applications.
 
-LinkedIn: <https://www.linkedin.com/in/tom-brooks-a940a9a7/>
+LinkedIn: https://www.linkedin.com/in/tom-brooks-a940a9a7/
 
-GitHub: <https://github.com/tgrbrooks>
+GitHub: https://github.com/tgrbrooks
 
 **Andrew Campbell** is the Head of Product at Applied Blockchain. He previously worked as solution architect with over 10 years of development experience including over 6 years industry experience. He has spent the last 6 years working with a range of London based startups. As an architect he has designed solutions for a range of enterprises including Shell, Vodafone, UN - World Food Programme, SITA. He has been the architect of tens of blockchain and advanced cryptography projects and many of his architectures have been taken into production.
 
-LinkedIn: <https://www.linkedin.com/in/andylnd/>
+LinkedIn: https://www.linkedin.com/in/andylnd/
 
 ### Team Code Repos
 
-- <https://github.com/appliedblockchain>
-- <https://github.com/appliedblockchain/silentdata-defi-core> (The SGX components)
-- <https://github.com/appliedblockchain/silentdata-defi-app> (The web app components)
+- https://github.com/appliedblockchain
+- https://github.com/appliedblockchain/silentdata-defi-core (The SGX components)
+- https://github.com/appliedblockchain/silentdata-defi-app (The web app components)
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/seromenho>
-- <https://github.com/tgrbrooks>
+- https://github.com/seromenho
+- https://github.com/tgrbrooks
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/adibenari/>
-- <https://www.linkedin.com/in/andylnd/>
-- <https://www.linkedin.com/in/tgrbrooks/>
+- https://www.linkedin.com/in/adibenari/
+- https://www.linkedin.com/in/andylnd/
+- https://www.linkedin.com/in/tgrbrooks/
 
 ## Development Status :open_book:
 
@@ -173,7 +173,7 @@ Silent Data Architecture: [Silent Data Architecture](https://docs.google.com/doc
 | 0c.     | Docker                         | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.
 | 0d.     | Testing and Testing Guide      | The testnet examples will be shared with Polkadot developers to integrate Silent Data into their dapps and parachains.
 | 0e.     | Article                        | We will publish an article/workshop that explains what was done/achieved in the extension and deployment of Silent Data confidential computing oracle.
-| 1.      | Extension                      | We will extend the Silent Data confidential computing oracle to generate proofs verifiable by ink! smart contracts by adding support for the sr25519 signature scheme and the polkadot{.js} wallet extension. 
+| 1.      | Extension                      | We will extend the Silent Data confidential computing oracle to generate proofs verifiable by ink! smart contracts by adding support for the sr25519 signature scheme and the polkadot\{.js} wallet extension. 
 | 2.      | Library                        | We will develop a JavaScript/TypeScript library to enable Node.JS backends to interact with the Silent Data API. The library will allow DApp creators to generate new proof certificate requests and fetch the results of checks.
 | 3.      | Smart Contract                 | We will develop an example ink! smart contract for verifying Silent Data proof certificates and extracting the verified proof data. The smart contract will take a signed certificate and signature as input verify either an sr25519 or ed25519 signature with a fixed enclave public key stored in the contract. The contract will then parse the [CBOR](https://cbor.io/) encoded certificate data to extract the verified key-value pairs and optionally store them on chain. We will deploy the smart contract to a Polkadot testnet and provide an example DApp to demonstrate the flow of generating Instagram account verification certificates with Silent Data and verifying them in a smart contract.|
 

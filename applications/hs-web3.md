@@ -12,9 +12,9 @@ It's my personal project. It was started as Ethereum client library but recently
 ## Team :busts_in_silhouette:
 
 * **Members:** Aleksandr Krupenkin
-* **LinkedIn Profiles:** <https://www.linkedin.com/in/krupenkin>
-* **Code Repos:** <https://github.com/airalab/hs-web3>
-* **Website:** <https://hs-web3.readthedocs.io>
+* **LinkedIn Profiles:** https://www.linkedin.com/in/krupenkin
+* **Code Repos:** https://github.com/airalab/hs-web3
+* **Website:** https://hs-web3.readthedocs.io
 * **Legal Structure:** individual
 * **Team's Experience:** Haskell Web3 library created on 2016. During development was fully implemented account abstractions, Solidity ABI codecs, JSON-RPC API and ECDSA cryptography.
 

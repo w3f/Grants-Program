@@ -5,15 +5,15 @@
 
 ## Project Overview :page_facing_up:
 
-This application is in response to <https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md>
+This application is in response to https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md
 
 ### Overview
 
-The Staking Rewards Collector requests us to make a front-end UI so that non-technical-background people can utilize the tool in a simple way. As the requested features are quite similar to what we have done recently, We intend to implement the requests from the rfps on <https://www.cryptolab.network>.
+The Staking Rewards Collector requests us to make a front-end UI so that non-technical-background people can utilize the tool in a simple way. As the requested features are quite similar to what we have done recently, We intend to implement the requests from the rfps on https://www.cryptolab.network.
 
 ### Project Details
 
-We plan to utilize the current Staking Reward webpage (<https://www.cryptolab.network/tools/dotSR>) on CryptoLab as the design base. However, we will change the data source from our DB to Staking Rewards Collector, retrieving rewards from the subscan because the subscan stores all rewards data.
+We plan to utilize the current Staking Reward webpage (https://www.cryptolab.network/tools/dotSR) on CryptoLab as the design base. However, we will change the data source from our DB to Staking Rewards Collector, retrieving rewards from the subscan because the subscan stores all rewards data.
 
 * Mockup UI
 
@@ -70,7 +70,7 @@ The staking-rewards-collector is a tool for gathering staking rewards for given 
 
 * **Contact Name:** Yu-kai Tseng
 * **Contact Email:** tanistseng@gmail.com
-* **Website:** <https://www.cryptolab.network>
+* **Website:** https://www.cryptolab.network
 
 ### Legal Structure
 
@@ -83,14 +83,14 @@ We have already developed the [Cryptolab.Network](https://www.cryptolab.network)
 
 ### Team Code Repos
 
-* <https://github.com/cryptolab-network/polkadot-staking-site>
-* <https://github.com/cryptolab-network/cryptolab-web-server>
-* <https://github.com/cryptolab-network/chain-data-collector>
+* https://github.com/cryptolab-network/polkadot-staking-site
+* https://github.com/cryptolab-network/cryptolab-web-server
+* https://github.com/cryptolab-network/chain-data-collector
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* <https://github.com/yktseng>
-* <https://github.com/iisaint>
+* https://github.com/yktseng
+* https://github.com/iisaint
 
 ### Team LinkedIn Profiles (if available)
 

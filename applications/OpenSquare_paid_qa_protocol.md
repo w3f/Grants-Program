@@ -95,7 +95,7 @@ You can see our team [here](https://www.opensquare.network/team/).
 
 * **Contact Name:** Yongfeng Li
 * **Contact Email:** wliyongfeng@gmail.com
-* **Website:** <https://www.opensquare.network>
+* **Website:** https://www.opensquare.network
 
 ### Legal Structure
 
@@ -119,15 +119,15 @@ include:
 
 ### Team Code Repos
 
-<https://github.com/opensquare-network/>
+https://github.com/opensquare-network/
 
 Team members github accounts:
 
-* <https://github.com/wliyongfeng>
-* <https://github.com/hyifeng>
-* <https://github.com/qiyisi>
-* <https://github.com/YoshiyukiSakura>
-* <https://github.com/Popoulosss>
+* https://github.com/wliyongfeng
+* https://github.com/hyifeng
+* https://github.com/qiyisi
+* https://github.com/YoshiyukiSakura
+* https://github.com/Popoulosss
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -146,7 +146,7 @@ Milestone 1 — Implement the paid QA businesses
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Code-1 | Code will be open source, most organized in one monorepo by [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), hosted on [OpenSquare github account](https://github.com/opensquare-network/). It will be implemented in JavaScript, [React](https://reactjs.org/) for fronted, [koa](https://koajs.com/) for backend. Either fronted and backed will depend on polkadot.js, while fronted will also depend on [extension-dapp](https://github.com/polkadot-js/extension/tree/master/packages/extension-dapp) to interact with polkadot{.js} extension. |
+| 0b. | Code-1 | Code will be open source, most organized in one monorepo by [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), hosted on [OpenSquare github account](https://github.com/opensquare-network/). It will be implemented in JavaScript, [React](https://reactjs.org/) for fronted, [koa](https://koajs.com/) for backend. Either fronted and backed will depend on polkadot.js, while fronted will also depend on [extension-dapp](https://github.com/polkadot-js/extension/tree/master/packages/extension-dapp) to interact with polkadot\{.js} extension. |
 | 0c. | Code-2 | Scan scripts will be hosted under one of the packages which track blocks and extract the [qa-spec](https://github.com/opensquare-network/qa-spec) interactions into structured business data and save them to DB. |
 | 0d. | Code-3 | IPFS related functions which fetch content from IPFS and upload content to IPFS will be hosted under another package. These functions will be called when 1. Scan script finds spec interactions and we have to fetch the corresponding topic/answer from IPFS. 2. When a user creates a topic or gives an answer, IPFS functions will be called to upload the data to IPFS. 3. A background job which uploads content to IPFS in batch may also call these functions.|
 | 0e. | Code-4 | There will be another package which hosts background jobs. The jobs upload the topics/answers to IPFS in a batch and submit the `ANSWER` interactions in a batch to blockchain. |

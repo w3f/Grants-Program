@@ -168,10 +168,10 @@ entrepreneurship. 🚀
 
 ### Team Code Repos
 
-- InvArch Github: <https://github.com/InvArch>
-- InvArch Node <https://github.com/InvArch/InvArch-node>
-- InvArch Frames : <https://github.com/InvArch/InvArch-Frames>
-- InvArch INV4 FRAME : <https://github.com/InvArch/InvArch-Frames/tree/main/INV4>
+- InvArch Github: https://github.com/InvArch
+- InvArch Node https://github.com/InvArch/InvArch-node
+- InvArch Frames : https://github.com/InvArch/InvArch-Frames
+- InvArch INV4 FRAME : https://github.com/InvArch/InvArch-Frames/tree/main/INV4
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -217,7 +217,7 @@ Goal - Develop Substrate Pallets that fully realize Git-level composability for 
 | 0b. | Documentation | Documents containing the description of the whole architecture design for InvArch, an introduction video, and appropriate `README.md` files will be included. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | Node Repo | Complete the deployment of the InvArch chain (<https://github.com/InvArch/InvArch>) |
+| 1. | Node Repo | Complete the deployment of the InvArch chain (https://github.com/InvArch/InvArch) |
 | 2a. | Pallet_ips | Complete the development of [pallet_ips](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ips) and realize the IP Sets standard. |
 | 2b. | Pallet_ipf | Complete the development of [pallet_ipf](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ipt) and realize the IP Token Standard. |
 | 3. | Article |  We will write an **article** that explains the work done as part of the grant. |

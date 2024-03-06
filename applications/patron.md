@@ -9,7 +9,7 @@
 
 Patron is your one stop smart contract manager for Polkadot ecosystem.
 
-Patron's tech stack consists of Rust (with [`axum`](https://docs.rs/axum) being used as an HTTP server), TypeScript (React, Next.js, polkadot{.js}), PostgreSQL.
+Patron's tech stack consists of Rust (with [`axum`](https://docs.rs/axum) being used as an HTTP server), TypeScript (React, Next.js, polkadot\{.js}), PostgreSQL.
 
 ### Overview
 

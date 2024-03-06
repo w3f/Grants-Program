@@ -55,11 +55,11 @@ The recoverers then just click on the recovery link.
 
 #### Sign and Broadcast
 
-In addition to social recovery, we will also migrate our Sign and Broadcast feature. It scans the QR code provided by polkadot.{js}, signs it, and broadcasts it to the network.
+In addition to social recovery, we will also migrate our Sign and Broadcast feature. It scans the QR code provided by polkadot.\{js}, signs it, and broadcasts it to the network.
 
 #### Improvement on Parity Signer
 
-Parity Signer scans QR codes that are produced by polkadot.{js}. Parity Signer is a fully airgapped wallet, so the payload is signed on the device and the signed QR code is scanned back into browser plugin to be broadcast.
+Parity Signer scans QR codes that are produced by polkadot.\{js}. Parity Signer is a fully airgapped wallet, so the payload is signed on the device and the signed QR code is scanned back into browser plugin to be broadcast.
 
 Our wallet will scan the same QR codes, but broadcast it to skip the step of having to scan the QR back in. Scanning QR codes from mobile back into a webcam is an extra step. It is the most time consuming part because you have to align the phone over the webcam correctly, and it always takes another second or two to focus on the QR code.
 
@@ -205,7 +205,7 @@ https://www.youtube.com/watch?v=Vpb8IbHvcNU
 | 0c. | Testing Guide | Business logic functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests. |
 | 0d. | App Binaries | We will provide an APK for Android and deliver the app on both Android and iOS platforms via the respective testing tracks in the Google Play and Apple App stores. |
 | 0e. | Video | We will record and publish a video explainer and demonstration of all features. |
-| 1. | QR Code Format | Flutter library for scanning polkadot.{js} QR codes |  
+| 1. | QR Code Format | Flutter library for scanning polkadot.\{js} QR codes |  
 | 2. | Node Selector | User can configure which network they are connecting to |  
 | 3. | Sign and Broadcast | Integrate Sign and Broadcast for Flutter |  
 | 4. | Deployment | Wallet deployed to iOS and Android app stores |  

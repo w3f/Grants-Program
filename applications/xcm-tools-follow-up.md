@@ -58,7 +58,7 @@ practicability of this package further and increase support for xcm v3 and ether
 
 * **Contact Name:** gmajor
 * **Contact Email:** gmajorencrypt@gmail.com
-* **Website:** <https://github.com/gmajor-encrypt>
+* **Website:** https://github.com/gmajor-encrypt
 
 ### Legal Structure
 
@@ -101,7 +101,7 @@ Not yet
 |    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
 |     1. | Xcm V3 support            | Tracing transaction update, support message topicId                                                                                                             |  
-|     2. | Bridge Tracing support    | Support tracing Ethereum <=> substrate bridge message sent result                                                                                               |  
+|     2. | Bridge Tracing support    | Support tracing Ethereum \<=\> substrate bridge message sent result                                                                                               |  
 |     3. | Send bridge message       | Support assetHub send to ethereum through bridgeHub                                                                                                             |
 |     4. | Cli support               | Add command line tool to send message from polkadot => Ethereum                                                                                                 |
 

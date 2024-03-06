@@ -110,7 +110,7 @@ To our knowledge, there are currently two AI-related projects in the Substrate/P
 
 - **Contact Name:** Ashley Turing
 - **Contact Email:** at@livetree.com
-- **Livetree App:** <https://livetree.page.link/8jP9>
+- **Livetree App:** https://livetree.page.link/8jP9
 
 
 ### Legal Structure
@@ -124,20 +124,20 @@ The team consists of computer science academics and software engineers, includin
 
 ### Team Code Repos
 
-- <https://github.com/livetreetech/DecentralML>
+- https://github.com/livetreetech/DecentralML
 
-- <https://github.com/IsakGrimsson>
+- https://github.com/IsakGrimsson
 
 
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/ashley-turing/> Ashley Turing
+- https://www.linkedin.com/in/ashley-turing/ Ashley Turing
 
-- <https://www.linkedin.com/in/jamieward/> Jaime Ward
+- https://www.linkedin.com/in/jamieward/ Jaime Ward
 
 
-- <https://www.linkedin.com/in/isakgrimsson/> Isak Grimsson
+- https://www.linkedin.com/in/isakgrimsson/ Isak Grimsson
 
 
 ## Development Status :open_book:

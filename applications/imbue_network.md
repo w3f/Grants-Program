@@ -48,7 +48,7 @@ We believe we are solving a real problem in the polkadot ecosystem, and cannot t
 
 We do not consider IDO platforms as a solution to this problem. There is also the governance aspect which is also missing from the space but is also needed
 
-However, <https://aragon.org/> is something similar that is built on top of Etherum. We believe our USP is the funds being unlocked in stages and allowing funders to vote on those milestones
+However, https://aragon.org/ is something similar that is built on top of Etherum. We believe our USP is the funds being unlocked in stages and allowing funders to vote on those milestones
 
 ## Team :busts_in_silhouette:
 
@@ -85,26 +85,26 @@ Aala is a multidisciplinary designer specializing in branding and publication de
 
 ### Team Code Repos
 
-- <https://github.com/ImbueNetwork>
+- https://github.com/ImbueNetwork
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/samelamin>
-- <https://github.com/aalavanthan18>
+- https://github.com/samelamin
+- https://github.com/aalavanthan18
 
 ## Development Status :open_book:
 
 We are still at the early stage of development, getting our website out in the next week or two. We do have some wireframes around how people will be able to propose/vote for project which can be found below
 
-- <https://github.com/ImbueNetwork/website-assets/blob/main/templates/new-project.jpg>
-- <https://github.com/ImbueNetwork/website-assets/blob/main/templates/project-details-page.jpg>
-- <https://github.com/ImbueNetwork/website-assets/blob/main/templates/projects.jpg>
+- https://github.com/ImbueNetwork/website-assets/blob/main/templates/new-project.jpg
+- https://github.com/ImbueNetwork/website-assets/blob/main/templates/project-details-page.jpg
+- https://github.com/ImbueNetwork/website-assets/blob/main/templates/projects.jpg
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/samelamin/>
-- <https://www.linkedin.com/in/kanthan-segaran-5783708b/>
-- <https://www.linkedin.com/in/aala-sharfi-90b35a95/>
+- https://www.linkedin.com/in/samelamin/
+- https://www.linkedin.com/in/kanthan-segaran-5783708b/
+- https://www.linkedin.com/in/aala-sharfi-90b35a95/
 
 ## Development Roadmap :nut_and_bolt:
 

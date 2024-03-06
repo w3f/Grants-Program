@@ -337,17 +337,17 @@ will move to a separate github repo once grant is approved
 
   
 
-- <https://www.linkedin.com/in/anweshnayak/> Anwesh Nayak
+- https://www.linkedin.com/in/anweshnayak/ Anwesh Nayak
 
   
 
   
 
-- <https://www.linkedin.com/in/arnav-nayak-321595141/> Arnav Nayak
+- https://www.linkedin.com/in/arnav-nayak-321595141/ Arnav Nayak
 
   
 
-- <https://www.linkedin.com/in/dikhyantkrishnadalai/> Dikhyant Krishna
+- https://www.linkedin.com/in/dikhyantkrishnadalai/ Dikhyant Krishna
 
   
 

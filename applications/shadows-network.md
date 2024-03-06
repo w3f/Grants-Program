@@ -113,9 +113,9 @@ Most of the members of our team come from Polkadot (China) Technology Alliance. 
 We expect that the entire project will be split into two grants. The first grant includes the development of parachains and the implementation of core modules. But only documents, test cases and api are provided. But through the API, you can already participate in the casting and trading of synthetic assets. The second grant will include the development of a complete user interface, dapp, and wallet. It will be a complete product that can be experienced by then. Users can directly experience the functions without knowing the technical details.
 
     -----------------------------------------------------------
-    | Substrate chain with MintX & Ingester & Exchange module  |  <---- This grant
+    | Substrate chain with MintX & Ingester & Exchange module  |  \<---- This grant
     -----------------------------------------------------------
-    | User interface with Dapp & Wallet                        |  <---- Future grant
+    | User interface with Dapp & Wallet                        |  \<---- Future grant
     -----------------------------------------------------------
     | More synthetic Assets (e.g S&P500, TSLA)                 |
     -----------------------------------------------------------

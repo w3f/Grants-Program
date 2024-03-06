@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-Standard proposal - <https://github.com/w3f/PSPs/pull/22>
+Standard proposal - https://github.com/w3f/PSPs/pull/22
 
 ### Overview
 
@@ -131,28 +131,28 @@ Creative Designer
 
 ### Team Code Repos
 
-* <https://github.com/Supercolony-net>
+* https://github.com/Supercolony-net
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* <https://github.com/VargSupercolony>
-* <https://github.com/sventime>
-* <https://github.com/xgreenx>
-* <https://github.com/PierreOssun>
+* https://github.com/VargSupercolony
+* https://github.com/sventime
+* https://github.com/xgreenx
+* https://github.com/PierreOssun
 
 ### Team LinkedIn Profiles (if available)
 
-* <https://www.linkedin.com/in/mivanichok/>
-* <https://www.linkedin.com/in/ian-arden/>
-* <https://www.linkedin.com/in/hartej/>
-* <https://www.linkedin.com/in/dmitry-kryshtal/>
-* <https://www.linkedin.com/in/valeria-laricheva/>
+* https://www.linkedin.com/in/mivanichok/
+* https://www.linkedin.com/in/ian-arden/
+* https://www.linkedin.com/in/hartej/
+* https://www.linkedin.com/in/dmitry-kryshtal/
+* https://www.linkedin.com/in/valeria-laricheva/
 
 ## Development Status :open_book:
 
 [The project](https://github.com/Supercolony-net/openbrush-contracts) is already in a solid pre-release state.
 
-PSP - <https://github.com/w3f/PSPs/pull/22>
+PSP - https://github.com/w3f/PSPs/pull/22
 
 ## Development Roadmap :nut_and_bolt:
 

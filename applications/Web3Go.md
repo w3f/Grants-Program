@@ -64,10 +64,10 @@ We have found several successful data analysis projects in the Ethereum ecosyste
 
 Similar projects
 
-* <https://www.nansen.ai/>
-* <https://duneanalytics.com/>
-* <https://0xtracker.com/>
-* <https://debank.com/>
+* https://www.nansen.ai/
+* https://duneanalytics.com/
+* https://0xtracker.com/
+* https://debank.com/
   
 What makes us different is,as a part of Web 3 community and Polkadot ecosystem:
 
@@ -90,7 +90,7 @@ What makes us different is,as a part of Web 3 community and Polkadot ecosystem:
 
 * **Contact Name:** Hao Ding
 * **Contact Email:** hao.ding@litentry.com
-* **Website:** <https://web3go.xyz>
+* **Website:** https://web3go.xyz
 
 ### Legal Structure
 
@@ -101,31 +101,31 @@ What makes us different is,as a part of Web 3 community and Polkadot ecosystem:
 
 All team members of Web3Go are from Litentry. Litentry is a DID (distributed identity) solution provider in the Polkadot ecosystem. Litentry has been granted a grant from the Web3 Foundation.
 
-Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and Minqi Wang are responsible for the development of Litentry's parachain (<https://github.com/litentry/litentry-parachain>), Hao ding and Yunjian Bian are responsible for the on-chain data indexing And front-end and back-end development. (<https://github.com/litentry/data-analysis>)
+Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and Minqi Wang are responsible for the development of Litentry's parachain (https://github.com/litentry/litentry-parachain), Hao ding and Yunjian Bian are responsible for the on-chain data indexing And front-end and back-end development. (https://github.com/litentry/data-analysis)
 
 ### Team Code Repos
 
-* <https://github.com/web3go-xyz> Web3Go official repository
-* <https://github.com/web3go-xyz/web3go>  Backend and UI of web3go
-* <https://github.com/web3go-xyz/Indexer> Indexer of Moonriver staking
+* https://github.com/web3go-xyz Web3Go official repository
+* https://github.com/web3go-xyz/web3go  Backend and UI of web3go
+* https://github.com/web3go-xyz/Indexer Indexer of Moonriver staking
 
-* <https://github.com/h4n0> Han Zhao
-* <https://github.com/bianyunjian> Yunjian Bian
-* <https://github.com/Satoshi-Kusumoto> Yifei Wu
-* <https://github.com/wangminqi> Minqi Wang
-* <https://github.com/Moehringen> Hao Ding
+* https://github.com/h4n0 Han Zhao
+* https://github.com/bianyunjian Yunjian Bian
+* https://github.com/Satoshi-Kusumoto Yifei Wu
+* https://github.com/wangminqi Minqi Wang
+* https://github.com/Moehringen Hao Ding
 
 ### Team LinkedIn Profiles (if available)
 
-* <https://www.linkedin.com/in/zhaohan6/> Han Zhao
-* <https://www.linkedin.com/in/%E4%BA%91%E5%81%A5-%E5%8D%9E-5a2b9112a/> Yunjian Bian
-* <https://www.linkedin.com/in/john-wu-72960586/> Yifei Wu
-* <https://www.linkedin.com/in/minqi-wang-53b5b19b/> Minqi Wang
-* <https://www.linkedin.com/in/hao-ding-msc-pmp-64411193/> Hao Ding
+* https://www.linkedin.com/in/zhaohan6/ Han Zhao
+* https://www.linkedin.com/in/%E4%BA%91%E5%81%A5-%E5%8D%9E-5a2b9112a/ Yunjian Bian
+* https://www.linkedin.com/in/john-wu-72960586/ Yifei Wu
+* https://www.linkedin.com/in/minqi-wang-53b5b19b/ Minqi Wang
+* https://www.linkedin.com/in/hao-ding-msc-pmp-64411193/ Hao Ding
 
 ## Development Status :open_book:
 
-* [WebSite](https://www.web3go.xyz): visit this url:   <https://www.web3go.xyz> can take a look at the current developement progress of  the website.
+* [WebSite](https://www.web3go.xyz): visit this url:   https://www.web3go.xyz can take a look at the current developement progress of  the website.
 * [Data board-Karura CDP](https://web3go.xyz/#/CDPProfiler): This data board tracks and visualizes the real-time CDP information of Karura, and provides the historical analytics and real-time CDP status of each participant.
 * [Data board-KSM crowdloan](https://web3go.xyz/#/ParaChainProfiler): This data board tracks and visualizes the real-time Kusama crowdloan on each lease, including the total amount of each project, address, and amount of each contribution.
 * [Data board-ERC20 Token](http://106.52.138.224:8080/#/WalletProfiler?data=%7B%22type%22%3A%22ERC20%22,%22name%22%3A%22LIT%20Analysis%22,%22description%22%3A%22Sample%20Analysis%20For%20LIT%20To%20View%20The%20Details%20And%20Trends%22,%22created%22%3A%22Litentry%20Offical%20Team%22,%22data%22%3A%7B%22contractAddress%22%3A%220xb59490ab09a0f526cc7305822ac65f2ab12f9723%22%7D%7D): This data board tracks and visualizes the real-time and historical transactions, amounts,  and addresses of ERC20 tokens including LIT, ATA, and POLS with analysis.

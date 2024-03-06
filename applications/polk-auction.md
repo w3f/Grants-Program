@@ -62,28 +62,28 @@ Details about the UI (that I cannot render on paper) :
 
 *End-points*
 
-* GET /current-auction/{chain}
+* GET /current-auction/\{chain}
 
-Returns an Auction object (json) containing information about the current state of the auction and the list of parachain candidates of the chain {chain}.
+Returns an Auction object (json) containing information about the current state of the auction and the list of parachain candidates of the chain \{chain}.
 
-* GET /current-crowdloan/{chain}
+* GET /current-crowdloan/\{chain}
 
-Returns a Crowdloan object (json) containing information about the current state of the crowdloan and the list of parachains of the chain {chain}.
+Returns a Crowdloan object (json) containing information about the current state of the crowdloan and the list of parachains of the chain \{chain}.
 
-* GET /parachains/{chain}
+* GET /parachains/\{chain}
 
-Returns a list of the existing Parachain objects (json) of the chain {chain}.
+Returns a list of the existing Parachain objects (json) of the chain \{chain}.
 
-* GET /parachains/{chain}/{paraId}
+* GET /parachains/\{chain}/\{paraId}
 
-Returns a Parachain object (json) of the chain {chain} with details.
+Returns a Parachain object (json) of the chain \{chain} with details.
 
 Field details :
 
 | Field | Type | Description |
 | -----: | ----------- | ------------- |
 | chain | string | Name of the relay-chain (values supported are [Kusama, Polkadot])  |
-| paraId | integer | Id of the parachain within the {chain}  |
+| paraId | integer | Id of the parachain within the \{chain}  |
 
 *Other*
 
@@ -151,22 +151,22 @@ Here is an overview of different relevant project I've worked / working on at my
 
 ### Team Code Repos
 
-* <https://github.com/CrommVardek>
+* https://github.com/CrommVardek
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/cyril-carlier/>
+* https://www.linkedin.com/in/cyril-carlier/
 
 ## Development Status :open_book:
 
 ### Polk-auction-core (started)
 
-<https://github.com/CrommVardek/polk-auction-core>
-<https://github.com/CrommVardek/polkot-api> (Polkadot client (WebSocket) in kotlin, to be used in polk-auction-core)
+https://github.com/CrommVardek/polk-auction-core
+https://github.com/CrommVardek/polkot-api (Polkadot client (WebSocket) in kotlin, to be used in polk-auction-core)
 
 ### Polk-auction-ui (started)
 
-<https://github.com/CrommVardek/polk-auction-ui>
+https://github.com/CrommVardek/polk-auction-ui
 
 See overview section for the mock-up
 

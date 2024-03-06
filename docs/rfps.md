@@ -19,7 +19,10 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 ## 📜 List of RFPs
 
-<details><summary><b>🟢 Open:</b> We are looking for (additional) teams to implement this.</summary>
+<details>
+  <summary>
+    <b>🟢 Open:</b> We are looking for (additional) teams to implement this.
+  </summary>
 
 | RFP | Last Updated |
 | :-- | :----------: |
@@ -30,7 +33,10 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 </details>
 
-<details><summary><b>🟡 Under Development:</b> One or more teams are working on this. We might be interested in additional implementations, but it’s better to double check this with the grants team.</summary>
+<details>
+  <summary>
+    <b>🟡 Under Development:</b> One or more teams are working on this. We might be interested in additional implementations, but it’s better to double check this with the grants team.
+  </summary>
 
 | RFP | Last Updated |
 | :-- | :----------: |
@@ -51,7 +57,11 @@ If you find an open RFP here that you think you can address, feel free to [submi
 </details>
 
 
-<details><summary><b>🔴 Closed:</b> This RFP is either closed, on hold, or no longer useful. However, if it’s implemented and not maintained, we might be interested in signing a <a href="./maintenance.md">maintenance grant</a>.</summary>
+<details>
+  <summary>
+    <b>🔴 Closed:</b> This RFP is either closed, on hold, or no longer useful. However, if it’s implemented and not maintained, we might be interested in signing a 
+    <a href="./maintenance.md">maintenance grant</a>.
+  </summary>
 
 | RFP | Last Updated |
 | :-- | :----------: |

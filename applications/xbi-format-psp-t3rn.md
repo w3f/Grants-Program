@@ -188,7 +188,7 @@ The XBI Format and XBI Executors for cross-chain smart contracts will be tested 
 
 - **Contact Name:** Jacob Kowalewski
 - **Contact Email:** jacob@t3rn.io, maciej@t3rn.io (CC)
-- **Website:** <https://www.t3rn.io/>
+- **Website:** https://www.t3rn.io/
 
 ### Legal Structure
 
@@ -201,17 +201,17 @@ t3rn team - succesfully completed one Web3 Foundation grant to establish and imp
 
 ### Team Code Repos
 
-- <https://github.com/t3rn>
+- https://github.com/t3rn
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/MaciejBaj>
+- https://github.com/MaciejBaj
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/maciej-baj/>
-- <https://www.linkedin.com/in/pauletscheit/>
-- <https://www.linkedin.com/in/jacobkowalewski/>
+- https://www.linkedin.com/in/maciej-baj/
+- https://www.linkedin.com/in/pauletscheit/
+- https://www.linkedin.com/in/jacobkowalewski/
 - select members of the [t3rn team](https://www.linkedin.com/company/t3rn-io) - TBD
 
 ## Development Roadmap :nut_and_bolt:

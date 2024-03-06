@@ -141,7 +141,7 @@ In this application, the deliverables are the micropayment pallet, the client co
 
 ### What work has been done so far?
 
-1. Code is open source at <https://github.com/deeper-chain/deeper-chain>
+1. Code is open source at https://github.com/deeper-chain/deeper-chain
 2. MVP is developed for core features: micropayments(master branch), light node(master branch), delegated proof of credit(master branch).
 
 ### Have you applied for other grants so far?

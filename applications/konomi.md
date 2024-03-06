@@ -156,7 +156,7 @@ There are several DeFi projects in the ecosystem at the moment but we believe th
 
 ### Team Website 
 
-* <http://konomi.network/>
+* http://konomi.network/
 
 ### Legal Structure
 
@@ -164,7 +164,7 @@ KONOMI FOUNDATION LTD.
 
 ### Team's experience
 
-Shengmu has more than 5 years entrepreneur experience in tech startups. Before Konomi Network, he started his career in big data analytics at Shopee, a leading ecommerce platform in SEA. He then moved to a healthcare startup as the lead software engineer where he designed software product for million-dollar worth projects. He has deep enthusiasm in machine learning and also a veteran in tech project management. His publication was included in the IEEE <https://ieeexplore.ieee.org/document/7476392>
+Shengmu has more than 5 years entrepreneur experience in tech startups. Before Konomi Network, he started his career in big data analytics at Shopee, a leading ecommerce platform in SEA. He then moved to a healthcare startup as the lead software engineer where he designed software product for million-dollar worth projects. He has deep enthusiasm in machine learning and also a veteran in tech project management. His publication was included in the IEEE https://ieeexplore.ieee.org/document/7476392
 
 Ariel Ho has 7 years entrepreneur experience in tech startups. Before Konomi Network, she founded High Mall Indoor Navigation, an indoor navigation solution provider based on iBeacon Tech, served for Singapore largest chain supermarket NTUC Fairprice. She was the early investor of crypto since 2017. Her expertise in fundraising, strategy management and leadership is valuable to this project.
 
@@ -178,14 +178,14 @@ We have already built a working preliminary swap module with a multi-asset modul
 
 ### Team Code Repos
 
-* <https://github.com/konomi-network/konomi-node>
+* https://github.com/konomi-network/konomi-node
 It is currently a private repo, please contact us for access.
 
 ### Team LinkedIn Profiles
 
-* <http://linkedin.com/in/ariel-ho-8b5aa01ba>
-* <https://www.linkedin.com/in/yuqing-zhao-1201b6120/>
-* <http://linkedin.com/in/xingmo-liu-7b0823140>
+* http://linkedin.com/in/ariel-ho-8b5aa01ba
+* https://www.linkedin.com/in/yuqing-zhao-1201b6120/
+* http://linkedin.com/in/xingmo-liu-7b0823140
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -212,7 +212,7 @@ It is currently a private repo, please contact us for access.
 
 ### Community engagement
 
-<https://konomi-network.medium.com/>
+https://konomi-network.medium.com/
 We have been documenting the project progress and also our understanding of the DOT ecosystem in our blog.
 
 ## Future Plans
@@ -222,4 +222,4 @@ After delivery, we will start to explore cross-chain lending senario and will fi
 ## Additional Information :heavy_plus_sign:
 
 Possible additional information to include:
-<https://medium.com/konomi>
+https://medium.com/konomi

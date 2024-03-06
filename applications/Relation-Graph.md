@@ -122,7 +122,7 @@ curl -H "Content-Type: application/json" \
 
 - **Contact Name:** Joe Guo
 - **Contact Email:** pikajoe@relationlabs.ai
-- **Website:** <https://relationlabs.ai/>
+- **Website:** https://relationlabs.ai/
 
 ### Legal Structure
 
@@ -167,20 +167,20 @@ former product leader of top blockchain companies,
 
 ### Team Code Repos
 
-- <https://github.com/relationlabs>
-- <https://github.com/gembin>
-- <https://github.com/bbo268>
+- https://github.com/relationlabs
+- https://github.com/gembin
+- https://github.com/bbo268
 
 ### Team LinkedIn Profiles (if available)
 
-- Jessica Chang, Founder, <https://www.linkedin.com/in/jessica-chang-a63313235/>
-- Santry Huang, CMO, <https://www.linkedin.com/in/santryhuang/>
-- Yann， CTO， <https://www.linkedin.com/in/yann-ren-361b91235/>
-- Joe，CPO，<https://www.linkedin.com/in/joe-guo-783780ab/>
+- Jessica Chang, Founder, https://www.linkedin.com/in/jessica-chang-a63313235/
+- Santry Huang, CMO, https://www.linkedin.com/in/santryhuang/
+- Yann， CTO， https://www.linkedin.com/in/yann-ren-361b91235/
+- Joe，CPO，https://www.linkedin.com/in/joe-guo-783780ab/
 
 ## Development Status :open_book:
 
-- We have finished a version on Internet computer.It is a graph database written in Rust and deployed on WASM.Ereryone can try it here(<https://kziov-eaaaa-aaaag-aaaxa-cai.ic0.app/ic_graph_developer.html>).
+- We have finished a version on Internet computer.It is a graph database written in Rust and deployed on WASM.Ereryone can try it here(https://kziov-eaaaa-aaaag-aaaxa-cai.ic0.app/ic_graph_developer.html).
 
 ## Development Roadmap :nut_and_bolt:
 
