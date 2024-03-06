@@ -3,10 +3,10 @@ title: Accepted Grant Applications
 layout: applications
 ---
 
-Use this page for an overview of all public grants and their status. Use the sidebar to navigate directly to a specific grant application document.
+Use this page for an overview of all public grants and their status. Each row links to a project's website, their grant application document and code repository.
 
 :::info
-This page provides an overview of accepted grant applications, their progress, and a link to their GitHub repositories. In cases where the link points to an organization, you should be aware that the grant application itself **is often an independent project unrelated to other work done by the teams**.
+This page provides an overview of accepted grant applications and their progress. In cases where the link points to an organization, you should be aware that the grant application itself **is often an independent project unrelated to other work done by the teams**.
 
 Furthermore, the page lists terminations that happened due to a breach of the terms of the grants programs. Additionally, teams might have decided to stop working on the grant—though not necessarily on the project itself—for various reasons, which is not reflected on this sheet.
 
