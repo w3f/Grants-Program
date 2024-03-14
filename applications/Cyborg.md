@@ -36,7 +36,7 @@ Our initial technological goal is to develop a system capable of validating comp
 
 The Substrate blockchain primarily serves as the framework for deploying containered tasks and facilitating smart contracts related to billing functions.
 
-Once the docker container is deployed, its workload will be protected by hardware measures to prevent data leakage.
+Once the docker container is deployed, its workload will be protected by software based measures to prevent data leakage.
 
 It seamlessly integrates with the current cloud-native toolchain for developers, typically avoiding the need for code changes.
  
@@ -50,7 +50,7 @@ For this grant application, we are developing a decentralized task verification 
 
 <img alt="Screenshot 2024-02-15 at 1 09 56 PM" src="https://github.com/Cyborg-Network/Grants-Program/assets/93442895/add65d92-0bf6-40df-a3fb-715fc0efce54">
 
-The objective is to upload a Docker container along with a publicly available dataset such as IPFS and execute the container over the IPFS dataset inside one of the nodes of the K3s cluster. The executed computation result will be pushed to the Oracle, which will then feed it to the Cyborg substrate chain. Subsequently, the verification pallet will initiate task execution on another connected cluster to reverify the result. If the initial result and verified result are the same, the chain will approve the computation and add it to the block.
+The objective is to upload a Docker config file along with a publicly available dataset such as IPFS and deploy the container over the IPFS dataset inside one of the nodes of the K3s cluster. The executed computation result will be pushed to the Oracle, which will then feed it to the Cyborg substrate chain. Subsequently, the verification pallet will initiate task execution on another connected cluster to reverify the result. If the initial result and verified result are the same, the chain will approve the computation and add it to the block.
 
 ### Ecosystem Fit
 
