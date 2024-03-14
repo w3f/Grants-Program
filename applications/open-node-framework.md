@@ -92,7 +92,7 @@ The project serves standalone the Substrate blockchain, parachain, and relay cha
 
 * **Contact Name:** Hang Yin
 * **Contact Email:** hangyin@phala.network
-* **Website:** <https://phala.network>
+* **Website:** https://phala.network
 
 ### Legal Structure
 
@@ -105,14 +105,14 @@ Open Node Framework is an open source project initiated by core members of [Phal
 
 ### Team Code Repos
 
-* Open Node development repo: <https://github.com/Phala-Network/open-node-deployer>
-* Open Node MVP: <https://github.com/Tenet-X>
-* Phala Network team repo: <https://github.com/Phala-Network>
+* Open Node development repo: https://github.com/Phala-Network/open-node-deployer
+* Open Node MVP: https://github.com/Tenet-X
+* Phala Network team repo: https://github.com/Phala-Network
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/hang-yin-167012a7/>
-* <https://www.linkedin.com/in/jun-jiang-5b9b4153/>
+* https://www.linkedin.com/in/hang-yin-167012a7/
+* https://www.linkedin.com/in/jun-jiang-5b9b4153/
 
 ## Development Status :open_book:
 

@@ -40,11 +40,11 @@ We will run Bounce chain as standalone chain first, then join in Kusama/Polkadot
   * **Blockchain**: Rust/Substrate/Cumulus/Docker
   * **Frontend**: Javascript/React/polkadot.js
 * Documentation of core components, protocols, architecture etc. to be deployed
-  * **Fixed Swap Auction**: <https://docs.bounce.finance/bounce-auction-types/fixed-swap-auction>
-  * **Sealed Bid Auction**: <https://docs.bounce.finance/bounce-auction-types/sealed-bid-auction>
-  * **Dutch Auction**: <https://docs.bounce.finance/bounce-auction-types/dutch-auction>
+  * **Fixed Swap Auction**: https://docs.bounce.finance/bounce-auction-types/fixed-swap-auction
+  * **Sealed Bid Auction**: https://docs.bounce.finance/bounce-auction-types/sealed-bid-auction
+  * **Dutch Auction**: https://docs.bounce.finance/bounce-auction-types/dutch-auction
 * PoC/MVP or other relevant prior work or research on the topic
-  * Our products have launched on Ethereum and Binance Smart Chain: <https://app.bounce.finance/>
+  * Our products have launched on Ethereum and Binance Smart Chain: https://app.bounce.finance/
 
 ### Ecosystem Fit
 
@@ -61,7 +61,7 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 
 * **Contact Name:** Jack Lu
 * **Contact Email:** jack@bounce.community
-* Website: <https://bounce.finance>
+* Website: https://bounce.finance
 
 ### Legal Structure
 
@@ -74,7 +74,7 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 
 ### Team Code Repos
 
-* <https://github.com/bouncefinance/bounce-network>
+* https://github.com/bouncefinance/bounce-network
 
 ## Development Roadmap :nut_and_bolt:
 

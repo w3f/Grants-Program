@@ -141,31 +141,31 @@ PR&Marketing specialist with global brands work experience since 2018. Master de
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* <https://github.com/xgreenx>
-* <https://github.com/varex83>
-* <https://github.com/Artemka374>
-* <https://github.com/coreggon11>
-* <https://github.com/o-tsaruk>
+* https://github.com/xgreenx
+* https://github.com/varex83
+* https://github.com/Artemka374
+* https://github.com/coreggon11
+* https://github.com/o-tsaruk
 
 ### Team LinkedIn Profiles (if available)
 
-* <https://www.linkedin.com/in/mivanichok/>
-* <https://www.linkedin.com/in/fedor-lebed-b8520b1a8/>
-* <https://www.linkedin.com/in/aostesymskyi/>
-* <https://www.linkedin.com/in/bogdan-ogorodniy/>
-* <https://www.linkedin.com/in/artem-fomiuk-31249b226/>
-* <https://www.linkedin.com/in/dominik-krizo/>
-* <https://www.linkedin.com/in/tsaruk-olexandr/>
+* https://www.linkedin.com/in/mivanichok/
+* https://www.linkedin.com/in/fedor-lebed-b8520b1a8/
+* https://www.linkedin.com/in/aostesymskyi/
+* https://www.linkedin.com/in/bogdan-ogorodniy/
+* https://www.linkedin.com/in/artem-fomiuk-31249b226/
+* https://www.linkedin.com/in/dominik-krizo/
+* https://www.linkedin.com/in/tsaruk-olexandr/
 
 ## Development Status :open_book:
 
 [The project](https://github.com/727-Ventures/openbrush-contracts) is already in release `1.6.0`.
 
-PSP22 - <https://github.com/w3f/PSPs/pull/25>
+PSP22 - https://github.com/w3f/PSPs/pull/25
 
-PSP34 - <https://github.com/w3f/PSPs/pull/34>
+PSP34 - https://github.com/w3f/PSPs/pull/34
 
-PSP37 - <https://github.com/w3f/PSPs/pull/37>
+PSP37 - https://github.com/w3f/PSPs/pull/37
 
 ## Development Roadmap :nut_and_bolt:
 

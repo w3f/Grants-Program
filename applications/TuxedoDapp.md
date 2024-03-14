@@ -54,7 +54,7 @@ web-based wallet will consider using databases for storing non-sensitive user da
 Local database (e.g., IndexedDB, WebSQL, or a lightweight client-side database) to store relevant wallet data locally on the user's device.
 
 **Tech Stack**:
-- polkadot{.js} trying to re-use it if possible
+- polkadot\{.js} trying to re-use it if possible
 - React Framework(React + Redux + React Router) OR Vue Framework (Vue.js with Vuex and the Vue Router)
 - TypeScript
 - webpack

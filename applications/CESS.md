@@ -78,7 +78,7 @@ Compared to the similar projects in the Polkadot ecosystem including Ocean, Data
 
 - **Contact Name:** Jessie Dai
 - **Contact Email:** jessie@cess.cloud
-- **Website:** <http://cess.cloud>
+- **Website:** http://cess.cloud
 
 ### Legal Structure
 
@@ -105,8 +105,8 @@ Jinghong Zeng served more than 20 years with a global telecommunications coopera
 
 ### Team Code Repos
 
-- <https://github.com/Cumulus2021/CumulusSystem>
-- <https://github.com/Cumulus2021/Whitepaper>
+- https://github.com/Cumulus2021/CumulusSystem
+- https://github.com/Cumulus2021/Whitepaper
 
 ## Development Roadmap :nut_and_bolt:
 

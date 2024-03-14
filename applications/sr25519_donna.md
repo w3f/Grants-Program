@@ -22,10 +22,10 @@ Please provide the following:
 ## Team :busts_in_silhouette:
 
 * **Members: Terence Ge
-* **LinkedIn Profiles:** <https://www.linkedin.com/in/terence-ge-4a146185/>
-* **Code Repos:** <https://github.com/TerenceGe/sr25519-donna>
+* **LinkedIn Profiles:** https://www.linkedin.com/in/terence-ge-4a146185/
+* **Code Repos:** https://github.com/TerenceGe/sr25519-donna
 * **Legal Structure:** Individual
-* **Team's Experience:** Working in blockchain industry since 2013, author of BitPortal wallet (<https://bitportal.io/>), former BTCC exchange engineer, have rich experence of buiding crypto currency exchange and wallet.
+* **Team's Experience:** Working in blockchain industry since 2013, author of BitPortal wallet (https://bitportal.io/), former BTCC exchange engineer, have rich experence of buiding crypto currency exchange and wallet.
 * **Team's previous work links:** [cryptoolkit](https://github.com/TerenceGe/cryptoolkit), [bitportal-wallet](https://github.com/TerenceGe/bitportal-wallet)
 
 ## Development Roadmap :nut_and_bolt:
@@ -66,7 +66,7 @@ Any additional information that you think is relevant to this application that h
 Possible additional information to include:
 
 * What work has been done so far?
-There are some features already implemented, although need some improvement, you can check the repo here <https://github.com/TerenceGe/sr25519-donna>
+There are some features already implemented, although need some improvement, you can check the repo here https://github.com/TerenceGe/sr25519-donna
 * Are there any other projects similar to yours? If so, how is your project different?
-Sr25519_port Implementation by usetech-llc - which only have the sign/verify features. <https://github.com/usetech-llc/sr25519>
+Sr25519_port Implementation by usetech-llc - which only have the sign/verify features. https://github.com/usetech-llc/sr25519
 We will support all the features the rust version have, including HDKD, VRF and MulSig.

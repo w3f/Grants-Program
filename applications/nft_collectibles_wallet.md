@@ -13,7 +13,7 @@ The `NFT Collectibles Wallet` is a multi-chain non-custodial mobile wallet which
 
 ### Overview
 
-The reason we are creating the NFT Collectibles Wallet is to allow users of GamePower Network (<https://www.gamepower.network>) to claim NFTs from games published on the platform. We could have made the wallet closed sourced such as other projects (Enjin Wallet), but we decided since we are the new kids on the block, it is better for us to contribute to the Substrate/Polkadot/Kusama community. That is what excites us so much about this project.
+The reason we are creating the NFT Collectibles Wallet is to allow users of GamePower Network (https://www.gamepower.network) to claim NFTs from games published on the platform. We could have made the wallet closed sourced such as other projects (Enjin Wallet), but we decided since we are the new kids on the block, it is better for us to contribute to the Substrate/Polkadot/Kusama community. That is what excites us so much about this project.
 
 Our team is very passionate about gaming and NFTs. We believe the use case for NFTs in gaming is one of the most valuable in crypto right now. The problem we see with NFTs is that explaining NFTs to the general consumer and giving them a streamlined and friendly place to use those NFTs is lacking. We want to solve this with the NFT Collectibles Wallet.
 
@@ -33,7 +33,7 @@ A mockup of our mobile wallet UI. This mockup outlines the wallet creation, QR s
 
 * **Substrate Pallet Details:**
 
-The `nft-wallet-pallet` will use ORML (open runtime modules library: <https://github.com/open-web3-stack/open-runtime-module-library>) which will provide us with some underlying NFT code. The pallet will also talk to the balances pallet to handle any minting and consuming which is needed since each NFT is minted with a type of currency native to the blockchain it is on.
+The `nft-wallet-pallet` will use ORML (open runtime modules library: https://github.com/open-web3-stack/open-runtime-module-library) which will provide us with some underlying NFT code. The pallet will also talk to the balances pallet to handle any minting and consuming which is needed since each NFT is minted with a type of currency native to the blockchain it is on.
 
 Substrate Stack:
 * Substrate
@@ -72,7 +72,7 @@ Mockup of the admin frontend.
 
 The NFT Collectibles Wallet provides the ecosystem with a streamlined and standard way to create, manage and exchange NFTs. By allowing the wallet to connect to any substrate based chain, users can freely move around the ecosystem without downloading multiple wallets for each chain, while still having a wallet that focuses specifically on collectibles.
 
-The NFT Wallet uses the RMRK NFT standard (<https://rmrk.app/#standards>). However the NFT Wallet project can potentially support other standards such as the new Enjin initiative on the Polkadot ecosystem.
+The NFT Wallet uses the RMRK NFT standard (https://rmrk.app/#standards). However the NFT Wallet project can potentially support other standards such as the new Enjin initiative on the Polkadot ecosystem.
 
 Our target audience is 3-fold: The everyday consumer that wants to manage their NFTs, The Substrate blockchain developer that wants to connect to the NFT Collectibles Wallet to offer NFTs on their blockchain and finally Dapp developers who want to offer their users NFTs through QR codes.
 
@@ -91,7 +91,7 @@ The most similar project to the NFT Collectibles Wallet is the Enjin Wallet. How
 
 * **Contact Name:** Micheal Huntington
 * **Contact Email:** dev@gamepower.network
-* **Website:** <https://gamepower.network>
+* **Website:** https://gamepower.network
 
 ### Legal Structure
 
@@ -106,17 +106,17 @@ The most similar project to the NFT Collectibles Wallet is the Enjin Wallet. How
 
 ### Team Code Repos
 
-* <https://github.com/GamePowerNetwork>
-* <https://github.com/MikeHuntington>
+* https://github.com/GamePowerNetwork
+* https://github.com/MikeHuntington
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/Mike-Huntington>
-* <https://www.linkedin.com/in/Michael-Rochester>
+* https://www.linkedin.com/in/Mike-Huntington
+* https://www.linkedin.com/in/Michael-Rochester
 
 ## Development Status :open_book:
 
-Currently, work for the NFT Collectibles Wallet has not started, but the team has started initial work on GamePower Network (<https://www.gamepower.network>) which will be the first project to implement the NFT Collectibles Wallet. The wallet was actually conceived because of the GamePower project. The need for the NFT wallet was very important and we decided to open the project up to anyone in the ecosystem that has the same need.
+Currently, work for the NFT Collectibles Wallet has not started, but the team has started initial work on GamePower Network (https://www.gamepower.network) which will be the first project to implement the NFT Collectibles Wallet. The wallet was actually conceived because of the GamePower project. The need for the NFT wallet was very important and we decided to open the project up to anyone in the ecosystem that has the same need.
 
 ## Development Roadmap :nut_and_bolt:
 

@@ -12,7 +12,7 @@ MolochDAO is the mostly used venture DAO template so far, hosting major venture 
 
 MolochDAO was conceived after the fail of The DAO -- the first pioneering effort to support Ethereum ecosystem projects. After The DAO failed, MolochDAO revived the idea of The DAO but with simplicity and security. The MolochDAO itself is a minimum viable DAO, which implemented a concise set of mechanisms including proposal submission, voting, and ragequit. It has been operating safely for some time, and currently hosting more than $6 Million to support Ethereum ecosystem projects with grants.
 
-The open-source approach of MolochDAO has encouraged many other efforts. For example, The LAO (<https://www.thelao.io/>) and MetaCartel Ventures are using Moloch as an infrastructure to build DAO venture funds. Together, they are managing more than $50 Million worth of assets at this moment of writing. DAOhaus, on the other hand, creates a platform to create DAOs based on Moloch. It allows different types of organizations to create Moloch-like DAOs on Ethereum to manage its funds. The Open Law team is also developing a MolochV3 codebase (<https://github.com/openlawteam/molochv3-contracts>), which aims to break Moloch main contract into smaller smart contracts, and bring modularity to Moloch.
+The open-source approach of MolochDAO has encouraged many other efforts. For example, The LAO (https://www.thelao.io/) and MetaCartel Ventures are using Moloch as an infrastructure to build DAO venture funds. Together, they are managing more than $50 Million worth of assets at this moment of writing. DAOhaus, on the other hand, creates a platform to create DAOs based on Moloch. It allows different types of organizations to create Moloch-like DAOs on Ethereum to manage its funds. The Open Law team is also developing a MolochV3 codebase (https://github.com/openlawteam/molochv3-contracts), which aims to break Moloch main contract into smaller smart contracts, and bring modularity to Moloch.
 
 Currently, there are two mature versions of MolochDAO that are widely accepted -- the MolochDAO v1 and the MolochDAO v2. MolochV2 has some major features on top of MolochV1, including 1) multiple tokens in guild bank; 2) loot and shares; 3) guildkick.
 
@@ -24,9 +24,9 @@ Dora Factory and DoraHacks team is building tools and infrastructures to incenti
 
 The MolochDAO is an open source project.
 
-MolochDAO v1 codebase can be found here: <https://github.com/MolochVentures/moloch/tree/master/v1_contracts>
+MolochDAO v1 codebase can be found here: https://github.com/MolochVentures/moloch/tree/master/v1_contracts
 
-The current MolochDAO (V2) codebase can be found here: <https://github.com/MolochVentures/moloch>
+The current MolochDAO (V2) codebase can be found here: https://github.com/MolochVentures/moloch
 
 This project will implement MolochDAO v1 and v2 in two milestones. The first milestone is to create a Substrate pallet that implements MolochV1, and the second milestone is to create a Substrate pallet that implements MolochV2.
 
@@ -62,7 +62,7 @@ Supporting on-chain governance and open source ventures is an important task in 
 
 ### Team members
 
-* Dora Factory & DoraHacks Dev Team -- a team of developers who has built HackerLink.io/en, now hosting quadratic funding grants, bounties, and hackathons for BSC, Filecoin, HECO, Solana, etc. The team also implemented a quadratic funding Substrate pallet (<https://github.com/w3f/Grant-Milestone-Delivery/pull/104>).
+* Dora Factory & DoraHacks Dev Team -- a team of developers who has built HackerLink.io/en, now hosting quadratic funding grants, bounties, and hackathons for BSC, Filecoin, HECO, Solana, etc. The team also implemented a quadratic funding Substrate pallet (https://github.com/w3f/Grant-Milestone-Delivery/pull/104).
 
 ### Contact
 
@@ -76,8 +76,8 @@ Supporting on-chain governance and open source ventures is an important task in 
 
 ### Team Code Repos
 
-* <https://github.com/DoraFactory>
-* <https://github.com/zhangjiannan/QFgrant>
+* https://github.com/DoraFactory
+* https://github.com/zhangjiannan/QFgrant
 
 ## Development Roadmap
 

@@ -9,7 +9,7 @@
 Liberland is a country established in 2015, on a noman’s land (_terranullius_) between
 Croatia and Serbia. Liberland’s founders are blockchain and liberty enthusiasts.
 Liberland’s State project could be summarized by two concepts: Minimal state and distributive governance.
-We want to build and enable all e-government services (to be available to our citizens and others) using our substrate-based blockchain (<https://github.com/liberland/liberland_substrate>).
+We want to build and enable all e-government services (to be available to our citizens and others) using our substrate-based blockchain (https://github.com/liberland/liberland_substrate).
 During this process we aim to provide the community with the substrate pallets needed to run a nation state on-chain. Besides Liberland, we aim at a wider adoption by blockchain States, metaverse States and real-life States. The pallets, though initially adapted to our constitution, to provide a strong use-case, will be easy to adapt to virtually any modern State-system.
 
 We aim to provide the substrate ecosystem with a number of pallets that can be customized in a modular design pattern. The aim is to build blockchains that have the main purpose of serving nation states and other highly security oriented entities like the enterprise sector; and on-chain governance. These entities have unique requirements which make them currently gravitate towards private blockchains. We see this as an opportunity on the public blockchain market we aim to answer.
@@ -96,7 +96,7 @@ We will be the first chain to roll out politics supported by on-chain assets.
 #### Time-Based Minting
 
 The LLM pallet allows delays in the minting process using a regular DateTime format. LLM pre-calculates time based on block time, allowing us to postpone the execution of issuing tokens. This functionality does not currently exist in the substrate ecosystem.
-LLM will be minted over a timeframe of 48 years, allowing inflation to get fixed (being able to pre-calculate future inflation percentages) and controlled over time. Ninety-five per cent of all LLM get minted on behalf of the Treasury. Still, most of the Tokens typically don't stay there for long - they will be distributed into politics using the Members of Congress by a system described below. Please see the details here: <https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=0>.
+LLM will be minted over a timeframe of 48 years, allowing inflation to get fixed (being able to pre-calculate future inflation percentages) and controlled over time. Ninety-five per cent of all LLM get minted on behalf of the Treasury. Still, most of the Tokens typically don't stay there for long - they will be distributed into politics using the Members of Congress by a system described below. Please see the details here: https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=0.
 
 #### Senate approved transfers
 
@@ -172,7 +172,7 @@ We will build NFT-fuelled registers of many kinds of entities, starting with vir
 #### Judiciary
 
 We intend to form an on-chain judiciary system, working to resolve conflicts both on-chain and in Liberland. You can find more information as to this topic here:
-<https://docs.google.com/document/d/1UpfN6T3LqfOjUZYGJHvFe2dDahNALzy1qWAQNk9sbGE/edit?usp=sharing>
+https://docs.google.com/document/d/1UpfN6T3LqfOjUZYGJHvFe2dDahNALzy1qWAQNk9sbGE/edit?usp=sharing
 
 We will build the judiciary around Q1 2023. It is to be more traditional than other blockchain-based justice systems, as we want to follow the expectations of our adopters and their citizens. We also see that innovation and preferring mathematical innovation before tried-and-tested solutions can be detrimental, as seen by the low adoption of blockchain judiciaries in the real world.
 
@@ -181,18 +181,18 @@ We will build the judiciary around Q1 2023. It is to be more traditional than ot
 #### Team Members
 
 - Dorian Stern-Vukotic, Frontend developer
-- Filip Kalebo, Rust substrate Team leader and developer; Github: <https://github.com/flipchan>;
-- Max Gravit, expert advisor on nPoS substrate blockchains; Github: <https://github.com/3yekn>;
+- Filip Kalebo, Rust substrate Team leader and developer; Github: https://github.com/flipchan;
+- Max Gravit, expert advisor on nPoS substrate blockchains; Github: https://github.com/3yekn;
 - Abel Yañez, expert advisor on design patterns and substrate technology;
-- Balazs Magyar, Quality Assurance Engineer with a background in web-development and security audits for crypto projects. Github: <https://github.com/balazs091>
+- Balazs Magyar, Quality Assurance Engineer with a background in web-development and security audits for crypto projects. Github: https://github.com/balazs091
 - As a backup and to provide a second opinion, we have the possibility of asking a second experienced team of developers, which has a great track record in the development of crypto related projects. Please see their earlier work here:
-<https://www.mantleblockchain.com/>
-<https://www.masscrypto.io>
-<https://www.hglobal.io>
-<https://www.nftytoken.io>
+https://www.mantleblockchain.com/
+https://www.masscrypto.io
+https://www.hglobal.io
+https://www.nftytoken.io
 
 ### Team’s Website
-<https://github.com/liberland/liberland>
+https://github.com/liberland/liberland
 
 #### Legal Structure
 
@@ -205,16 +205,16 @@ The team has a strong background in Rust and frontend development. On the adviso
 Filip has been working with the substrate for nine months. He was one of the first members and builders of what we know today as the Picasso para chain, has a background in IT security and has been working on various enterprise applications in Rust. Holds a strong knowledge in information security and devops.
 
 #### Team linkedin Profiles
-<https://www.linkedin.com/in/djstern>
-<https://se.linkedin.com/in/filip-k%C3%A4lebo-479314115>
+https://www.linkedin.com/in/djstern
+https://se.linkedin.com/in/filip-k%C3%A4lebo-479314115
 
 #### Team Code Repositories
-<https://github.com/liberland/liberland_backend>
-<https://github.com/liberland/liberland_frontend>
-<https://github.com/liberland/liberland_substrate>
-<https://github.com/liberland/docs/blob/master/Blockchain%20Strategy.md>  
-<https://github.com/flipchan>
-<https://github.com/3yekn>  
+https://github.com/liberland/liberland_backend
+https://github.com/liberland/liberland_frontend
+https://github.com/liberland/liberland_substrate
+https://github.com/liberland/docs/blob/master/Blockchain%20Strategy.md  
+https://github.com/flipchan
+https://github.com/3yekn  
 
 ### Contact
 
@@ -233,8 +233,8 @@ We have reliable means of communication and social media by which we will inform
 
 We have already started to develop our chain, links:
 
-- <https://github.com/liberland/liberland_substrate> | Our current chain repository
-- <https://testnet.liberland.org> | Our public frontend with support for the polkadot.js wallet
+- https://github.com/liberland/liberland_substrate | Our current chain repository
+- https://testnet.liberland.org | Our public frontend with support for the polkadot.js wallet
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -253,7 +253,7 @@ We also aim to enrolled in substrate's builders program.
 - **Costs:** 20 000 USD
 
 The first milestone aims to provide all citizens with the functionality to have different roles depending on the account, take part of voting for elections and law proposals. We are also implementing the LLM(Liberland Merit) based on a predefined inflation curve that can be found here:
-<https://docs.google.com/spreadsheets/d/1Q5DnVI4WuQWncMY985xuQ30HB7-bJz6X6EZFr2Vzr38/edit>
+https://docs.google.com/spreadsheets/d/1Q5DnVI4WuQWncMY985xuQ30HB7-bJz6X6EZFr2Vzr38/edit
 
 | Number | Specification | Deliverable |
 | -----: | ----------- | ------------- |
@@ -265,7 +265,7 @@ The first milestone aims to provide all citizens with the functionality to have 
 | 1. | LLM Pallet | LLM is a pallet customized to serve custom functionality for onchain Assets managed by the treasury |  
 | 2. | Congress Pallet | We are building a substrate pallet handling a tokenized direct democracy; we test it in limited conditions and then deploy it in the production environment |  
 | 3. | Voting with on-chain assets | We will create a pallet that will be tailored to serve the voting and approval logic for governance for Nation States using on-chain assets to vote.   |  
-| 4. | Liberland Identity Pallet | We set up a substrate pallet that will allow accounts to have different roles. Liberland's on-chain governance is tailored to serve a nation state, therefore we need functionality for users to be citizens, e-residence, assembly members, ministers, and so on. In order to implement user role checks and adopt our chain after <https://github.com/liberland/liberland_substrate/blob/main/docs/liberland/identity.md> |
+| 4. | Liberland Identity Pallet | We set up a substrate pallet that will allow accounts to have different roles. Liberland's on-chain governance is tailored to serve a nation state, therefore we need functionality for users to be citizens, e-residence, assembly members, ministers, and so on. In order to implement user role checks and adopt our chain after https://github.com/liberland/liberland_substrate/blob/main/docs/liberland/identity.md |
 
 ### Milestone 2: Land and Company registration
 
@@ -288,7 +288,7 @@ This milestone will allow citizens to register companies using our company regis
 
 ### Current Development Status
 
-The current Development status of all the pallets and our main chain, can be found here: <https://github.com/liberland/liberland_substrate>.
+The current Development status of all the pallets and our main chain, can be found here: https://github.com/liberland/liberland_substrate.
 
 ### Ecosystem Fit
 
@@ -305,7 +305,7 @@ Current blockchains want to be great projects for the Web3 community first, and 
 - E-government, APIs, the realization that governments use many tools; and
 - not wanting to be the Swiss Army Knife which nobody needs but a set of sharp, specialized projects integrated into a whole;
 We are following along with Polkadot's future vision of hosting decentralized nation-states:
-<https://wiki.polkadot.network/docs/build-pdk#digital-nation-states>
+https://wiki.polkadot.network/docs/build-pdk#digital-nation-states
 As builders of the infrastructure to support a country's digitization, we want to utilize the performance and security of the Rust programming. Parity's vision for substrate aligns with our vision of providing e-services for our citizens.
 
 ### Funds Required
@@ -336,7 +336,7 @@ The pallet will use pallet-assets combined with custom functionality to keep an 
 #### Merging the Real and the Virtual
 
 Many marketplaces for digital items are currently available on blockchains (primarily the Ethereum blockchain), such as;
-<http://rarible.com>, <https://opensea.io> and <http://marketplace.decentraland.org/>.
+http://rarible.com, https://opensea.io and http://marketplace.decentraland.org/.
 We will build tools to establish API connections with popular online marketplaces as an integral part of our project.
 We will ensure that users can apply objects to other objects and that, combining those objects, effects that somewhat resemble what one might expect in real life.
 

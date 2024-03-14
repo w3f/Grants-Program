@@ -4,7 +4,7 @@
 This Request for Proposals is currently considered **under development**, meaning one or more grants have been signed to address the topic. We might be interested in additional implementations, but it’s better to double check this with the grants team.
 :::
 
-- **Status:** [Under Development 1](https://github.com/LimeChain/java-host-research), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/hybrid_node_research.md)
+- **Status:** Under Development
 - **Proposer:** [Noc2](https://github.com/Noc2)
 
 ## Project Description :page_facing_up:
@@ -21,6 +21,11 @@ Currently the following implementations are under development:
 - [Kagome - C++ implementation of Polkadot Host](https://github.com/soramitsu/kagome)
 - [Polkadot Node Implementation in Rust](https://github.com/paritytech/polkadot)
 - [Smoldot - A Lightweight Substrate and Polkadot client in Rust](https://github.com/paritytech/smoldot)
+- [Zondax: Mayon - C/C++ implementation of the Polkadot Host](https://github.com/Zondax/mayon)
+
+Research has been completed for:
+
+- [LimeChain - Java](https://github.com/LimeChain/java-host-research)]
 
 ## Deliverables :nut_and_bolt:
 

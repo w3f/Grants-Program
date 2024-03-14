@@ -308,23 +308,23 @@ When a Node or Gateway joins Massbit, it needs to go through different states be
 
 ### Team Code Repos
   
-- Massbit Core: <https://github.com/massbitprotocol/massbitroute>
-- Fisherman: <https://github.com/massbitprotocol/massbitroute_fisherman>
-- Gateway: <https://github.com/massbitprotocol/massbitroute_gateway>
-- Node: <https://github.com/massbitprotocol/massbitroute_node>
-- Stat: <https://github.com/massbitprotocol/massbitroute_stat>
-- Session: <https://github.com/massbitprotocol/massbitroute_session>
-- Gateway Manager: <https://github.com/massbitprotocol/massbitroute_gwman>
-- Massbit Chain: <https://github.com/massbitprotocol/massbitchain>
+- Massbit Core: https://github.com/massbitprotocol/massbitroute
+- Fisherman: https://github.com/massbitprotocol/massbitroute_fisherman
+- Gateway: https://github.com/massbitprotocol/massbitroute_gateway
+- Node: https://github.com/massbitprotocol/massbitroute_node
+- Stat: https://github.com/massbitprotocol/massbitroute_stat
+- Session: https://github.com/massbitprotocol/massbitroute_session
+- Gateway Manager: https://github.com/massbitprotocol/massbitroute_gwman
+- Massbit Chain: https://github.com/massbitprotocol/massbitchain
 
 ### Team LinkedIn Profiles (if available)
 
-- Tran Thanh Vu: <https://www.linkedin.com/in/baysao/>
-- Vu Viet Tai: <https://www.linkedin.com/in/viet-tai-vu-b83a1057/>
-- Nguyen Anh Huy: <https://www.linkedin.com/in/anhhuy-nguyen/>
-- Nguyen Manh Dat: <https://www.linkedin.com/in/nguyenmanhdat/>
-- Nguyen Thien Tuong: <https://www.linkedin.com/in/tuong-nguyen-thien-83a33a194/>
-- Bui Tran Huy Hoang: <https://www.linkedin.com/in/hoangtbui/>
+- Tran Thanh Vu: https://www.linkedin.com/in/baysao/
+- Vu Viet Tai: https://www.linkedin.com/in/viet-tai-vu-b83a1057/
+- Nguyen Anh Huy: https://www.linkedin.com/in/anhhuy-nguyen/
+- Nguyen Manh Dat: https://www.linkedin.com/in/nguyenmanhdat/
+- Nguyen Thien Tuong: https://www.linkedin.com/in/tuong-nguyen-thien-83a33a194/
+- Bui Tran Huy Hoang: https://www.linkedin.com/in/hoangtbui/
 
 ## Development Status :open_book:
 

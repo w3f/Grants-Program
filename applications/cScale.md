@@ -59,8 +59,8 @@
 
 ### Team Code Repos
 
-* <https://github.com/MatthewDarnell/iota-simplewallet> -- IOTA C library
-* <https://github.com/MatthewDarnell/redis_orderbook> -- Order matching engine in Rust
+* https://github.com/MatthewDarnell/iota-simplewallet -- IOTA C library
+* https://github.com/MatthewDarnell/redis_orderbook -- Order matching engine in Rust
 
 ## Development Status :open_book:
 

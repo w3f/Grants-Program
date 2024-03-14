@@ -1,7 +1,7 @@
 # Proof of Contract Stake (Pallet)
 
-- **Team Name:** Auguth Tech
-- **Payment Address:** BTC (bc1qdajpxy5wc6kcsdaaa4e760977nd03g86khay9g)
+- **Team Name:** Auguth Research Foundation
+- **Payment:** FIAT 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ## Project Overview :page_facing_up:
@@ -106,8 +106,8 @@ There are no similar projects in polkadot as well as other blockchains as of now
 
 ### Legal Structure
 
-- **Registered Address:** Tamil Nadu, India - 624619
-- **Registered Legal Entity:** Auguth Tech Pvt Ltd (CIN : U72900TZ2019PTC033024)
+- **Registered Address:** Bangalore, India - 560016
+- **Registered Legal Entity:** Auguth Research Foundation (CIN : U88900KA2024NPL185633)
 
 ### Team's experience
 
@@ -137,13 +137,13 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 
 - **Total Estimated Duration:**  15 weeks
 - **Full-Time Equivalent (FTE):**  3-3.5
-- **Total Costs:**  BTC equivalent to 25,000 USD
+- **Total Costs:**  25,000 USD
 
 ### Milestone 1 - Pallet Contract Update
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3-3.5
-- **Costs:** BTC equivalent to 7,000 USD
+- **Costs:** 7,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -158,7 +158,7 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  3-3.5
-- **Costs:** BTC equivalent to 10,000 USD
+- **Costs:** 10,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -173,7 +173,7 @@ Overall we are a team of 6 members, 3 of which are core developers as mentioned 
 
 - **Estimated duration:** 5 weeks
 - **FTE:**  3
-- **Costs:**  BTC equivalent to 8,000 USD
+- **Costs:** 8,000 USD
 
 | Number |        Deliverable        | Specification   |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -196,7 +196,7 @@ Once completed with this grant milestones,
 ## Referral Program :moneybag: 
 
 - **Referrer:** muddlebee(Anwesh)
-- **Payment Address:** 0x92c856ef2e7c8c443030e2cc9e1739662ed3e8b1
+- **Payment Address:** 14btqGNtzVpfwW9y5xYrcK7uSfgjGZKxcYAG3fJo6ujHUVS (Polkadot Asset Hub)
 
 ## Additional Information :heavy_plus_sign:
 

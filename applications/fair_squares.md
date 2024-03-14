@@ -22,7 +22,7 @@ To achieve the above, we rely on bringing assets on-chain and verifiable by real
 
 The substrate framework allows us to configure runtime to the custom needs to create a protocol that works to onboard assets and rent them out. The already open-sourced frame pallets and other teams building blocks are helping us to achieve our goal. 
 
-For our social mission to be succesful, we require several actions on-chain, such as voting, selection of funds, governing and reccuring payments. We are looking to build a feeless parachain while getting the security from the relay-chain. We believe that the parachain functiunality collaboration is crucial to our mission by using other multi-chain services for DIDs, stablecoins and storage protocols within the substrate web3 ecosystem.
+For our social mission to be successful, we require several actions on-chain, such as voting, selection of funds, governing and reccuring payments. We are looking to build a feeless parachain while getting the security from the relay-chain. We believe that the parachain functiunality collaboration is crucial to our mission by using other multi-chain services for DIDs, stablecoins and storage protocols within the substrate web3 ecosystem.
 
 - Our motivation.
 
@@ -263,7 +263,7 @@ We are not aware of any other projects that are focusing on housing and/or real 
 
 - **Contact Name:** Ilhan Unlu
 - **Contact Email:** ilhan@fair-squares.nl
-- **Website:** <https://fair-squares.nl>
+- **Website:** https://fair-squares.nl
 
 ### Legal Structure
 
@@ -285,26 +285,26 @@ Part of the team together has only ideating and been working on Fair squares and
 
 ### Team Code Repos
 
-- <https://github.com/Fair-squares>  - Github Organisation
-- <https://github.com/Fair-Squares/fair-squares> - substrate node-software
-- <https://github.com/Fair-Squares/fair-square-front-end>- front-end for FS
+- https://github.com/Fair-squares  - Github Organisation
+- https://github.com/Fair-Squares/fair-squares - substrate node-software
+- https://github.com/Fair-Squares/fair-square-front-end- front-end for FS
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/ilhanu>
-- <https://github.com/ndkazu>
-- <https://github.com/letodunc>
-- <https://github.com/toosolid2003>
-- <https://github.com/cuteolaf>
+- https://github.com/ilhanu
+- https://github.com/ndkazu
+- https://github.com/letodunc
+- https://github.com/toosolid2003
+- https://github.com/cuteolaf
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/ilhan-%C3%BCnl%C3%BC-blocklab/>
-- <https://www.linkedin.com/in/kazunobu-ndong-469313170/>
-- <https://www.linkedin.com/in/stephen-meyo-193109a/>
-- <https://www.linkedin.com/in/mahirozdemir/>
-- <https://www.linkedin.com/in/thibautsegura/>
-- <https://www.linkedin.com/in/oliver-lim-2215a8235/>
+- https://www.linkedin.com/in/ilhan-%C3%BCnl%C3%BC-blocklab/
+- https://www.linkedin.com/in/kazunobu-ndong-469313170/
+- https://www.linkedin.com/in/stephen-meyo-193109a/
+- https://www.linkedin.com/in/mahirozdemir/
+- https://www.linkedin.com/in/thibautsegura/
+- https://www.linkedin.com/in/oliver-lim-2215a8235/
 
 ## Development Status :open_book:
 
@@ -426,9 +426,9 @@ Milestone:2
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Also there will be integration tests covering the pallets and modules of milestone 1,2 and 3. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the bidding mechanism, what purpose it serves and why it's necessary. Furthermore in the artcile we will expand on the timer module and the flow of the bidding mechanism. The effects of the scenario's we will run through.
-| 1. | **pallet-bidding** | The bidding mechanism is a big part of what makes FS fair, the bidding pallets job is calculating the allocations from the `housing_fund` it will assemble different investors according to the fair rule-set, which will be be configurable on-chain. The Rules are as follows: _1._ First come, first serve (blocknr) based on deposit _2._ If a share of the contribution is taken out the user will drop in the ranking (points ranking) _3._ No more than X% share per participant and no more than X participants. _4._ The housing fund is programmed to make a bid, but has to adhere to the above rules, then a bid can be placed. When a bid is made, the set of investors are known, if the bid is succesful this is taken along with the fractional share investors get based on the price.|
+| 1. | **pallet-bidding** | The bidding mechanism is a big part of what makes FS fair, the bidding pallets job is calculating the allocations from the `housing_fund` it will assemble different investors according to the fair rule-set, which will be be configurable on-chain. The Rules are as follows: _1._ First come, first serve (blocknr) based on deposit _2._ If a share of the contribution is taken out the user will drop in the ranking (points ranking) _3._ No more than X% share per participant and no more than X participants. _4._ The housing fund is programmed to make a bid, but has to adhere to the above rules, then a bid can be placed. When a bid is made, the set of investors are known, if the bid is successful this is taken along with the fractional share investors get based on the price.|
 | 3. | Module: **timer** | The timer is the on-chain mechanism that checks every X hours (session) if new and old assets are available and it can bid on assets, if it has enough funds in housing fund. If already a bid took place it takes no action. If the housing-fund doesn't have the funds, it's doesn't bid. All events are registered.
-| 4. | Module: **fractioning** | When the bidding-pallet has assembled the set of investors and the bid is succesful. This is passed along to the fractionalizing module that fractions the assets purchase price with the  the investors and gives them a share of the unique-asset.|
+| 4. | Module: **fractioning** | When the bidding-pallet has assembled the set of investors and the bid is successful. This is passed along to the fractionalizing module that fractions the assets purchase price with the  the investors and gives them a share of the unique-asset.|
 | 5. | Substrate chain _M3_ | The combination of the previous milestones and this one, with **pallet-bidding** gives us automation that FS can bid on a asset (house) based on the funds it has on-chain. In a still a simplified flow, however with the next milestone more on-chain verificaton is added based on verified roles in the off-chain world. **Note**: _for this milestone we will take a shortcut with finalizing the sale, the next milestone we will focus on making it more secure the interaction with the off-chain world._ |  
 
 ```mermaid
@@ -479,7 +479,7 @@ style B fill:#f9f,stroke:#333,stroke-width:4px
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Also there will be integration tests covering the pallets and modules of milestone 1,2,3,4 . In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the the usage of the functionality in additon to the previous milestones. The article will emphasize why finalization of the asset acquirement is required, why a representative is needed and what it's role is. How other previous stakeholders interact with the new functions and roles.|
-| 1. | **pallet-finalizer** | Before the house title can be transfered to the fractional new owners when the sale of an asset is succesful there needs to be checks done by the appointed notary. This is the authority, also in the current finalization of the title transfers. Notaries make sure the new buyers are aware of what they are buing and the notary makes sure no one else can write the asset on their name. In FS's case this swap is done by the blockchain, but the notary would give the green light. The finalization will be it's own pallet and functionality will be expanded in the future. The roles will be set in **pallet-roles**, which gives the notary and the land registry users rights to let the exchange pass. The transfer titles need to be proofs, the proof for now will be simplified random hashes, but only the notary role should be allowed to and sigantures by the notary roles |
+| 1. | **pallet-finalizer** | Before the house title can be transfered to the fractional new owners when the sale of an asset is successful there needs to be checks done by the appointed notary. This is the authority, also in the current finalization of the title transfers. Notaries make sure the new buyers are aware of what they are buing and the notary makes sure no one else can write the asset on their name. In FS's case this swap is done by the blockchain, but the notary would give the green light. The finalization will be it's own pallet and functionality will be expanded in the future. The roles will be set in **pallet-roles**, which gives the notary and the land registry users rights to let the exchange pass. The transfer titles need to be proofs, the proof for now will be simplified random hashes, but only the notary role should be allowed to and sigantures by the notary roles |
 | 2. | Module: **representative** | When the sale of an asset is finalized, the new fractionalized owners are to be assigned a representative. The representative of the owners finds a tenant from the pools of tenants registered on-chain. The representatitive has to find the match based on region, total inhabitants and costs. The tenant will have to provide all this information. that will represent the house owners and find a tenant. |
 | 3. | pallet: **asset-management** | With the sale being finalized the new asset-owners can vote in a representative, vote over improvements, lay-down a representative if it doesn't perform or represent the best interest of the owners. This module is created in the **pallet-roles** and **pallet-voting** |
 | 4. | FS-chain | In milestones we build the functionality further with the **pallet-finalizer** the finalizer, gives us the certainty that a legal entity is able to finalize the sale of the asset and fractional owners receive their shares. With the asset-management voting, we can give the shareholders of a house a say in who get's to be the representative. So the matching of a tentant can be handled.|

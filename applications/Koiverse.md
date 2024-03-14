@@ -1,6 +1,6 @@
 # Koi Metaverse
 
-* **Proposer:** <https://github.com/KoiMetaverse>
+* **Proposer:** https://github.com/KoiMetaverse
 * **Payment Address:** 0xfADc3c36E41D36796ca05B4D55b148725c804cE0
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/678#issuecomment-1204360469)
 
@@ -141,8 +141,8 @@ The gaming NFT protocols and Dapp consists of:
 
 * Implement web front-end based on react.js and polkadot.js. Modules include: NFT Lottery Draw, NFT Auction Sale, NFT Minting, Fish and Fish Tank.
 * Implement web front-end based on react.js, polkadot.js and pixi.js. Game functions include Fishing Mining, Fish Breeding, Pictorial Book Mining.
-* UI mockups: <https://www.figma.com/file/0uuKT3XxB6hbzyFxLnzfAr/Koi-Metaverse?node-id=0%3A1>
-* Fish Gene and Images: <https://drive.google.com/drive/folders/1R4EoaDhoPkpxd9vchh7KLs-jx94pKad1?usp=sharing>
+* UI mockups: https://www.figma.com/file/0uuKT3XxB6hbzyFxLnzfAr/Koi-Metaverse?node-id=0%3A1
+* Fish Gene and Images: https://drive.google.com/drive/folders/1R4EoaDhoPkpxd9vchh7KLs-jx94pKad1?usp=sharing
 
 ### Ecosystem Fit
 
@@ -238,113 +238,21 @@ Hongfeng Liu
 * FTE: 4 FTE.
 * Costs: 12,000 DAI
 
-<table>
-  <tr>
-   <td>
-<strong>Number</strong>
-   </td>
-   <td><strong>Deliverable</strong>
-   </td>
-   <td><strong>Specification</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>0a.
-   </td>
-   <td>License
-   </td>
-   <td>Apache 2.0
-   </td>
-  </tr>
-  <tr>
-   <td>0b.
-   </td>
-   <td>Documentation
-   </td>
-   <td>We will provide inline documentation, video, medium articles & start creating the lightpaper of the project.
-   </td>
-  </tr>
-  <tr>
-   <td>0c.
-   </td>
-   <td>Testing Guide
-   </td>
-   <td>The code will have proper unit-test and guid coverage for Koi Metaverse modules
-   </td>
-  </tr>
-  <tr>
-   <td>1
-   </td>
-   <td>smart contract: NFT Lottery Draw
-   </td>
-   <td>NFT lottery contract include: lottery function implemented by ink
-   </td>
-  </tr>
-  <tr>
-   <td>2
-   </td>
-   <td>smart contract: NFT Auction Sale
-   </td>
-   <td>NFT auction contract include: fishList, fishGeneList, bid, refreshFishList, getMyFish functions implemented by ink
-   </td>
-  </tr>
-  <tr>
-   <td>3.
-   </td>
-   <td>smart contract: NFT Minting
-   </td>
-   <td>NFT minting contract include: myNft, getNft, earned, stakeNft, withdrawNft, withdrawNftAll, getReward functions implemented by ink
-   </td>
-  </tr>
-  <tr>
-   <td>4.
-   </td>
-   <td>smart contract: Fish
-   </td>
-   <td>fish contract include: gene, birthday, power, reproduction, growth implemented by ink
-   </td>
-  </tr>
-  <tr>
-   <td>5.
-   </td>
-   <td>smart contract: Fish Tank
-   </td>
-   <td>fish tank contract include: capacity, totalPower, fishList implemented by ink
-   </td>
-  </tr>
-  <tr>
-   <td>6a.
-   </td>
-   <td>UI mock-ups
-   </td>
-   <td>The UI design of product frontend and product workflow.
-   </td>
-  </tr>
-  <tr>
-   <td>6b.
-   </td>
-   <td>Fish Genes and Images
-   </td>
-   <td>The UI design and gene system of fish NFTs.
-   </td>
-  </tr>
-  <tr>
-   <td>7.
-   </td>
-   <td>Front end
-   </td>
-   <td>Implement web front-end based on react.js and polkadot.js. Modules include: NFT Lottery Draw, NFT Auction Sale, NFT Minting, Fish and Fish Tank. Fish Mining, Fish Breeding.
-   </td>
-  </tr>
-  <tr>
-   <td>8.
-   </td>
-   <td>Test
-   </td>
-   <td>We will provide a dockerfile to demonstrate the usage of our modules.
-   </td>
-  </tr>
-</table>
+| Number | Deliverable              | Specification                                                                                             |
+|--------|--------------------------|-----------------------------------------------------------------------------------------------------------|
+| 0a.    | License                  | Apache 2.0                                                                                                |
+| 0b.    | Documentation            | We will provide inline documentation, video, medium articles & start creating the lightpaper of the project. |
+| 0c.    | Testing Guide            | The code will have proper unit-test and guid coverage for Koi Metaverse modules                           |
+| 1      | smart contract: NFT Lottery Draw | NFT lottery contract include: lottery function implemented by ink                                         |
+| 2      | smart contract: NFT Auction Sale | NFT auction contract include: fishList, fishGeneList, bid, refreshFishList, getMyFish functions implemented by ink |
+| 3.     | smart contract: NFT Minting | NFT minting contract include: myNft, getNft, earned, stakeNft, withdrawNft, withdrawNftAll, getReward functions implemented by ink |
+| 4.     | smart contract: Fish     | fish contract include: gene, birthday, power, reproduction, growth implemented by ink                     |
+| 5.     | smart contract: Fish Tank | fish tank contract include: capacity, totalPower, fishList implemented by ink                             |
+| 6a.    | UI mock-ups               | The UI design of product frontend and product workflow.                                                   |
+| 6b.    | Fish Genes and Images    | The UI design and gene system of fish NFTs.                                                               |
+| 7.     | Front end                 | Implement web front-end based on react.js and polkadot.js. Modules include: NFT Lottery Draw, NFT Auction Sale, NFT Minting, Fish and Fish Tank. Fish Mining, Fish Breeding. |
+| 8.     | Test                      | We will provide a dockerfile to demonstrate the usage of our modules.                                     |
+
 
 ## Community Engagement
 

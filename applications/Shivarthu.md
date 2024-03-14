@@ -20,7 +20,7 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 Shivarthu: The blockchain-based decentralized governance system. Democracy is about fair and equal treatment of everyone in a country. But it becomes unrealistic to achieve when political parties have their conflict of interest, and leaders don’t have the expertise to make evidence-based policies and neither have the skill and manpower for solving problems that surround our society and ecosystem. The new fair democracy provides an elegant way of governance that separates the representative responsibility according to their specialization and can grow into any complexity. The governance is divided into various departments, and each department is supervised by representatives with expertise in the field. Voters are rational and need to have enough knowledge about the departments and the department problems, in order to vote for the selecting representatives of a department. The selection process of representatives is “difficult in and easy out”,
 which allows only utilitarian actors to hold the responsibility, weeding out frivolous ones.  
 
-<https://shivarthu.reaudito.com/paper/Shivarthu_whitepaper.pdf>
+https://shivarthu.reaudito.com/paper/Shivarthu_whitepaper.pdf
 
 Shivarthu will be build on Substrate.
 
@@ -28,7 +28,7 @@ Our democracy has many challenges, blockchain can provide a way to tackle those 
 
 ### Project Details
 
-Project Github link: <https://github.com/amiyatulu/shivarthu>
+Project Github link: https://github.com/amiyatulu/shivarthu
 
 #### Departments
 
@@ -45,14 +45,14 @@ Their experience is evaluated by schelling game.
 In this project, the Schelling game is used for experise evaluation and review of projects. We use a modification of Schelling game named score Schelling game for fund distribution of projects.
 Juror applies for making a decision like whether the required experience can be accepted or review quality of projects is acceptable. The probability of being drawn as a juror is proportional to the amount of tokens a juror stakes. The higher the amount of tokens he stakes, the higher the probability that he will be drawn as a juror. Also, jurors are drawn randomly. This protects the system from sybil attacks.
 We will use the substrate randomness trait for generating a random number.
-<https://substrate.dev/recipes/randomness.html>
+https://substrate.dev/recipes/randomness.html
 Then jurors will vote for their decision using the commit and reveal scheme. In the commit phase, they submit the hash of the vote string. Then, in the reveal phase, they submit the hash and the vote string. If the vote string matches with the hash, then the vote is accepted.
 If a juror's vote is coherent (more than 51% of other jurors agree) then they receive incentives, otherwise, incentives are deducted from the stake of the juror.
 
 #### Voting for selection of representatives
 
 The election is multi-winner approval.  We will use seq-phragmen of the substrate to select the representatives. Here, we will keep vote weight as reputation score (instead of stake), the amount of score they obtained through the participation of network.
-<https://substrate.dev/rustdocs/v3.0.0/sp_npos_elections/fn.seq_phragmen.html>
+https://substrate.dev/rustdocs/v3.0.0/sp_npos_elections/fn.seq_phragmen.html
 Approval Voting:
 <img src="https://raw.githubusercontent.com/amiyatulu/shivarthu_mockups/main/Approval%20Voting.svg" alt="Approval Voting" height="600"/>
 Winners:
@@ -103,14 +103,14 @@ e.g. If the total funding pool has $50000, you can’t assign a value larger tha
 2) Then, we will have a percentage Schelling game to predict the price. That is, you can predict whether to increase or decrease the funding amount in percentage. Remember, it can’t be larger than (Total funding pool amount)^(4/5). Score values will remain from -10 to +10, -10 means 100% decrease, +10 means 100% increase
 The range of -10 to +10 has a problem because the mean works best without extreme values. So, if someone gives -10, and others give 1, the mean result can get screwed due to the -10 outlier. So the trick is to remove outliers by computing the standard deviation. Remove all values more than one standard deviation away from the mean. Then, we calculate the new mean of the left values (it consists of 68.27% data of the set).
 Code to calculate new mean:
-<https://gateway.ipfs.io/ipfs/QmdgL7ytRPSE8vyp5KBffaAjmhGRLusiPcEbt9VWFkgMjf>
+https://gateway.ipfs.io/ipfs/QmdgL7ytRPSE8vyp5KBffaAjmhGRLusiPcEbt9VWFkgMjf
 
 <img src="https://raw.githubusercontent.com/amiyatulu/shivarthu_mockups/main/Project%20score%20schelling%20game.svg" alt="Score Schelling Game" height="600"/>  
 
 3) Then, we will do quality score voting Schelling game that checks the project meets the quality guidelines. The score range is 0-5
 4) The amount of funding will be directly proportional to (Predicted Price) * (Quality Score/5*2)
 Code:
-<https://gateway.ipfs.io/ipfs/QmcPfQFJKzozLMHFkAesDQc9n2CaEh6M8M4VWdsozgWRB9>
+https://gateway.ipfs.io/ipfs/QmcPfQFJKzozLMHFkAesDQc9n2CaEh6M8M4VWdsozgWRB9
 The algorithm tries to meet the values of teal organization through reduced compensation inequality
 
 ### Ecosystem Fit
@@ -131,7 +131,7 @@ Other projects similar to it is gitcoin, but its not in Substrate / Polkadot / K
 
 * **Contact Name:**  Amiya Behera
 * **Contact Email:** amiyatulu@gmail.com
-* **Website:** <https://shivarthu.reaudito.com/#/>
+* **Website:** https://shivarthu.reaudito.com/#/
 
 ### Legal Structure
 
@@ -145,9 +145,9 @@ Soumya Ranjan Behera is also a full stack developer with experience in reactjs, 
 
 ### Team Code Repos
 
-* <https://github.com/amiyatulu>
-* <https://github.com/soumyababu>
-* <https://github.com/amiyatulu/shivarthu>
+* https://github.com/amiyatulu
+* https://github.com/soumyababu
+* https://github.com/amiyatulu/shivarthu
 
 ## Development Roadmap :nut_and_bolt:
 

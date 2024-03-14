@@ -48,7 +48,7 @@ Below is a list of the configuration parameters input into the factory contract 
 
 1. **T** Token Weight : Weight of Token in the Pool
     - Tokens:  **T**. Assume there are **n** type of tokens in one liquidity pool, we denote them as **(T1,T2,... Tn)**.
-    - weight parameter: **Wi(0<=Wi<=1)** is the parameter of token **i** in our model, which is a constant defined when creating the pool. We always assume **the sum of Wi =1**.
+    - weight parameter: **Wi(0&lt;=Wi&lt;=1)** is the parameter of token **i** in our model, which is a constant defined when creating the pool. We always assume **the sum of Wi =1**.
     - initial balance: **(x1,x2,...,xn)**  are the initial amounts a liquidity provider puts into a liquidity pool.
 2. **epsilon** Fees : Liquidity Provider and Protocol Fees
 3. **beta** Depth : Depth of Pool before slippage occurs

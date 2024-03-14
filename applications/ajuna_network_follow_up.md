@@ -14,7 +14,7 @@ We believe that the promising substrate blockchain technology enables us to brin
 
 #### Introduction (A brief description of the project.)
 
-This is a follow up grant, on <https://github.com/w3f/Open-Grants-Program/pull/265>, of which all milestone have been submitted.
+This is a follow up grant, on https://github.com/w3f/Open-Grants-Program/pull/265, of which all milestone have been submitted.
 
 * Milestone 1 [LINK](https://github.com/w3f/Grant-Milestone-Delivery/pull/102) - [Evaluation](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/dotmog_1_alxs.md)
 * Milestone 2 [LINK](https://github.com/w3f/Grant-Milestone-Delivery/pull/161) - [Evaluation](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/dotmog_2_Noc2.md)
@@ -51,7 +51,7 @@ This is our current Dev GUI, from our running alpha release, we will extract it 
 
 #### API specifications of the core functionality
 
-<https://github.com/dotmog/SubstrateNetApi>
+https://github.com/dotmog/SubstrateNetApi
 
 #### An overview of the technology stack to be used
 
@@ -59,7 +59,7 @@ This is our current Dev GUI, from our running alpha release, we will extract it 
 
 #### Documentation of core components, protocols, architecture etc. to be deployed
 
-* <https://github.com/ajuna-network> All components for the Generic Gaming Blockchain and the UnitySDK will be provided under the organisation Ajuna Network.
+* https://github.com/ajuna-network All components for the Generic Gaming Blockchain and the UnitySDK will be provided under the organisation Ajuna Network.
 
 **Generic Game Pallets**<br/>
 Generic Game Pallets, build special features used in games, they are fully supported in the UnitySDk<br/>
@@ -84,7 +84,7 @@ The service Layer project can be deployed to a server as DOTNet application offe
 
 #### PoC/MVP or other relevant prior work or research on the topic
 
-Our alpha game is already running, check out our webpage (<https://dotmog.com/>).
+Our alpha game is already running, check out our webpage (https://dotmog.com/).
 
 The basic part of the open-grant has been developed as framework for our flagship game, as we where focusing on the game it self the API lakes inline comments and might be a little complicated to jump in with out a good documentation or tutorials.
 
@@ -126,39 +126,39 @@ In past projects the team has already worked together on different projects one 
 
 ### Team Code Repos
 
-* <https://github.com/dotmog/SubstrateNetApi>
-* <https://github.com/dotmog/pallet-dotmog> (dotmog pallet)
-* <https://github.com/dotmog/DOTMogCore> (GameEngine, currently private)
-* <https://github.com/dotmog/DOTMogClient> (Unity3D Client, currently private)
-* <https://github.com/darkfriend77/Unity3DExample>
-* <https://github.com/dotmog/SubstrateUnityWalletSimple>
+* https://github.com/dotmog/SubstrateNetApi
+* https://github.com/dotmog/pallet-dotmog (dotmog pallet)
+* https://github.com/dotmog/DOTMogCore (GameEngine, currently private)
+* https://github.com/dotmog/DOTMogClient (Unity3D Client, currently private)
+* https://github.com/darkfriend77/Unity3DExample
+* https://github.com/dotmog/SubstrateUnityWalletSimple
 
 Other projects lead and maintained by the teammembers
 
-* <https://github.com/HearthSim/SabberStone>
-* <https://github.com/WorldOfMogwais/WoMNetCore>
-* <https://github.com/WorldOfMogwais/WoM-Releases/releases>
-* <https://github.com/mogwaicoin/mogwai>
-* <https://github.com/mogwaicoin/NeoScryptCSharp>
-* <https://github.com/rwindegger/RabbitExpress>
-* <https://github.com/rwindegger/UnityMainThreadDispatcher>
-* <https://github.com/darkfriend77/CoinMillions>
+* https://github.com/HearthSim/SabberStone
+* https://github.com/WorldOfMogwais/WoMNetCore
+* https://github.com/WorldOfMogwais/WoM-Releases/releases
+* https://github.com/mogwaicoin/mogwai
+* https://github.com/mogwaicoin/NeoScryptCSharp
+* https://github.com/rwindegger/RabbitExpress
+* https://github.com/rwindegger/UnityMainThreadDispatcher
+* https://github.com/darkfriend77/CoinMillions
 
 Adding a polkadot related commit here ..
-<https://github.com/usetech-llc/polkadot_api_dotnet/pull/10>
+https://github.com/usetech-llc/polkadot_api_dotnet/pull/10
 
 Active organisations of the teammebers
 
-* <https://github.com/ajuna-network>
-* <https://github.com/dotmog>
+* https://github.com/ajuna-network
+* https://github.com/dotmog
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/cedric-decoster-3a004510b/>
-* <https://www.xing.com/profile/Andre_Schneider90>
-* <https://www.linkedin.com/in/renewindegger/>
-* <https://www.linkedin.com/in/2much/>
-* <https://www.linkedin.com/in/tim-kramarz-80345aba/>
+* https://www.linkedin.com/in/cedric-decoster-3a004510b/
+* https://www.xing.com/profile/Andre_Schneider90
+* https://www.linkedin.com/in/renewindegger/
+* https://www.linkedin.com/in/2much/
+* https://www.linkedin.com/in/tim-kramarz-80345aba/
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -192,7 +192,7 @@ SubstrateNetApi is the base API and it needs a dedicated documentation to allow 
 | 2b. | Schnorrkel | Implement SR25519, similar to ED25519 in SubstrateNetApi |
 | 3. | Mnemonic | Add mnemonic seed, in SubstrateNetApi |
 | 3a. | Mnemonic | Add mnemonic seed, recovery on lost password or wallet file |
-| 6. | Documentation | Documentation referencing prev. milestone 1 <https://github.com/w3f/Grant-Milestone-Delivery/pull/102#issuecomment-795929390>  |
+| 6. | Documentation | Documentation referencing prev. milestone 1 https://github.com/w3f/Grant-Milestone-Delivery/pull/102#issuecomment-795929390  |
 | 6a. | Inline Documentation | Add inline documentation to make code more understandable |
 | 6b. | Wiki | Add a structured wiki, include components and workflows, ex. updateing blockchain metadata, implementing custom pallets, implementing custom types .... |
 | 6c. | Types | Wiki documentation on workflow for adding types and maintaining the api |
@@ -257,7 +257,7 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 | 1b. | Unity | Template with On chain GameEvent and Pallet Matchmaker, where User can queue up to a match and animations that are executed on on chain game events |
 | 1c. | Unity | Template example for Event handlin, balance changed, sending extrinsic in Unity |
 | 2. | Unity | Tutorial for building and connecting with Unity including connection, wallet decription and balance in Unity |
-| 3. | Asset | Asset Documentation like (<https://assetstore.unity.com/packages/tools/utilities/blockchain-sdk-by-enjin-124133>) |
+| 3. | Asset | Asset Documentation like (https://assetstore.unity.com/packages/tools/utilities/blockchain-sdk-by-enjin-124133) |
 | 3a. | Asset | Tutorial video on implementing a new chain and accessing it with unity |
 | 3b. | Asset | Tutorial video on adding a custom pallet and accessing it in unity |
 | 3c. | Asset | Integration Guide of adding a new function in a pallet, adding it as custom pallet function to SubstrateNetApi, adding custom storage access to Service Layer, and adding access in game engine to the new function for unity |

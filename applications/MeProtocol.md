@@ -1,7 +1,7 @@
 # Me Protocol
 
 - **Team Name:** My AI
-- **Payment Address:** POLKADOT: 14K4XzpMBxGp8NiCKMWAwzjFMLcAKjakXooqHtVEC6WoaeTq (DOT)
+- **Payment Address:** Fiat 05.02.2024, 10:41 (CET)
 - **Level:** 2 
 
 

@@ -20,19 +20,6 @@ jobs:
           filter: 'applications/*.md'
           format: 'csv'
 
-  add_label:
-    needs: get_filename
-    if: needs.get_filename.outputs.filename
-    runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-    steps:
-      - name: add admin-review label
-        uses: actions-ecosystem/action-add-labels@v1
-        with:
-          labels: admin-review
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          
   parse_document:
     needs: get_filename
     if: needs.get_filename.outputs.filename

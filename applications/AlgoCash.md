@@ -174,7 +174,7 @@ Gang is now working as a freelancer. He is a full stack developer proficient in 
 
 ### Team Code Repos
 
-* <https://github.com/ReserveLabs/AlgoCash>
+* https://github.com/ReserveLabs/AlgoCash
 
 ### Team LinkedIn Profiles
 

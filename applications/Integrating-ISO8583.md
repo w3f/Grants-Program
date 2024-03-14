@@ -66,7 +66,7 @@ Supporting international standards would smooth the connection between crypto an
 
 - **Contact Name:** Adit Patel
 - **Contact Email:** adit.patel@stardustfunds.com
-- **Website:** <https://stardust.finance/>
+- **Website:** https://stardust.finance/
 
 ### Legal Structure
 
@@ -78,15 +78,15 @@ Adit is a technical expert on cryptography, distributed ledgers, financial marke
 
 ### Team Code Repos
 
-- <https://github.com/adit313/>
+- https://github.com/adit313/
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/adit-patel/>
+- https://www.linkedin.com/in/adit-patel/
 
 ## Development Status :open_book:
 
-- link to RFP: <https://github.com/w3f/Grants-Program/blob/master/rfps/open/ISO_8583.md>
+- link to RFP: https://github.com/w3f/Grants-Program/blob/master/rfps/open/ISO_8583.md
 
 ## Development Roadmap :nut_and_bolt:
 

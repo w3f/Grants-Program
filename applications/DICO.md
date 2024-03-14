@@ -122,7 +122,7 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 
 * **Contact Name:** gogomath
 * **Contact Email:** gogomath@outlook.com
-* **Website:** <https://dico.io/>
+* **Website:** https://dico.io/
 
 ### Legal Structure
 
@@ -147,11 +147,11 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 
 ### Team Code Repos
 
-* <https://github.com/DICO-TEAM/dico-chain>
+* https://github.com/DICO-TEAM/dico-chain
 
 ## Development Status :open_book:
 
-*interface iterations and resource*: <https://github.com/DICO-TEAM/resources>
+*interface iterations and resource*: https://github.com/DICO-TEAM/resources
 
 ## Development Roadmap :nut_and_bolt:
 

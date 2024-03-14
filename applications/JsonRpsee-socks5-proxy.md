@@ -47,7 +47,7 @@ This proposal is to develop a JsonRpsee [socks5](https://datatracker.ietf.org/do
 
 * **Contact Name:** gmajor
 * **Contact Email:** gmajorencrypt@gmail.com
-* **Website:** <https://github.com/gmajor-encrypt>
+* **Website:** https://github.com/gmajor-encrypt
 
 ### Legal Structure
 

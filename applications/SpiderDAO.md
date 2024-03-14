@@ -2,7 +2,7 @@
 
 ![](https://i.imgur.com/zlw9lZ3.png)
 
-* **Proposer:** [SpiderDAO] (<https://github.com/SpiderDAO>)
+* **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
 * **Document Version:** Version 2.4
 * **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/129#issuecomment-1011987896)
@@ -117,7 +117,7 @@ We will also be in constant contact with the growing SpiderDAO community and the
 
 ### Team Website
 
-* <https://spiderdao.io>
+* https://spiderdao.io
 
 ### Legal Structure
 
@@ -167,18 +167,18 @@ We will also be in constant contact with the growing SpiderDAO community and the
 
 ### Team Code Repos
 
-* <https://github.com/spiderdao>
-* <https://github.com/painfull30>
-* <https://github.com/flisko>
+* https://github.com/spiderdao
+* https://github.com/painfull30
+* https://github.com/flisko
 
 ### Team LinkedIn Profiles
 
-* **Nathan Varty** <https://www.linkedin.com/in/nathan-varty-b07235162/>
-* **Žiga Flis** <https://www.linkedin.com/in/%C5%BEiga-flis-3112896b/>
-* **Anas Sayed** <https://www.linkedin.com/in/anas-sayed-34a99b73/>
-* **Alexy Petrunin** <https://www.linkedin.com/in/alexey-petrunin-aa06807a/>
-* **Dr. Alfie Zhao** <https://www.linkedin.com/in/jianbin-zhao-2b04567/>
-* **Pierre Laurent** <https://www.linkedin.com/in/pierrelaurent789/>
+* **Nathan Varty** https://www.linkedin.com/in/nathan-varty-b07235162/
+* **Žiga Flis** https://www.linkedin.com/in/%C5%BEiga-flis-3112896b/
+* **Anas Sayed** https://www.linkedin.com/in/anas-sayed-34a99b73/
+* **Alexy Petrunin** https://www.linkedin.com/in/alexey-petrunin-aa06807a/
+* **Dr. Alfie Zhao** https://www.linkedin.com/in/jianbin-zhao-2b04567/
+* **Pierre Laurent** https://www.linkedin.com/in/pierrelaurent789/
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -199,7 +199,7 @@ We will also be in constant contact with the growing SpiderDAO community and the
 | 2.  | DAO framework | We are going to build our DAO framework using Ink! Smart Contracts for this milestone. |
 | 3.  | Discord Communication | Write a substrate faucet to establish communication between SpiderConnect Hardware Router & discord server allowing contribution to SpiderDAO by allowing users to send the token needed for the vote, Initiate voting, pass on the vote for the voting process that would be operated through our discord server.   |
 | 4.  | Build TestNet | The testnet will be based on Substrate framework for this milestone. |
-| 5.  | Test SpiderDAO | Successfully connect DAO entities (individual voters) to Spider routers. This will include one use case to show the connection is established correctly using Discord communications. We will be using Python with the help of <https://github.com/polkascan/py-substrate-interface> library. |
+| 5.  | Test SpiderDAO | Successfully connect DAO entities (individual voters) to Spider routers. This will include one use case to show the connection is established correctly using Discord communications. We will be using Python with the help of https://github.com/polkascan/py-substrate-interface library. |
 | 6. | Medium Article | Create a medium article to announce all deliveries to the community once passed evaluation. |
 | 7.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
 | 8.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone |

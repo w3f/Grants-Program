@@ -119,16 +119,16 @@ From July 2018 to the present, he has been serving as a product manager for Pind
 He joined Pinduoduo Inc.（listed on NASDAQ）in 2018 and became a full-time front-end development engineer. Responsible for the maintenance of the website promotion page, maintenance and development of the weChat applet architecture Project deployment and launch, development of productivity tools.
 He has three years of development experience, is familiar with project deployment and front-end technology stack, and is keen on Polkadot ecological technology trends.  
 
-Personal Code Repos：<https://github.com/dianluyuanli-wp>
+Personal Code Repos：https://github.com/dianluyuanli-wp
 
 ### Team Code Repos
 
-- <https://github.com/ChainBridgeNetworkTeam/Doter>
+- https://github.com/ChainBridgeNetworkTeam/Doter
 
 ### Team LinkedIn Profiles
 
-Guan Yu：<https://www.linkedin.com/in/yu-guan-482624155/>  
-Gao Jianli：<https://www.linkedin.com/in/jianli-gao-6785a1140/>
+Guan Yu：https://www.linkedin.com/in/yu-guan-482624155/  
+Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 
 ## Development Roadmap
 
@@ -186,7 +186,7 @@ The following is a list of functions that have been implemented
 
 ## Community engagement
 
-This is a tutorial posted on medium：<https://chainbridgenetwork.medium.com/polkadots-browser-extension-wallet-doter-ac8cd91a5bf3>
+This is a tutorial posted on medium：https://chainbridgenetwork.medium.com/polkadots-browser-extension-wallet-doter-ac8cd91a5bf3
 
 ## Future Plans
 

@@ -27,7 +27,7 @@ Polkasearch.xyz aims to become a discovery platform where users can discover Gra
 
  - [Django](https://www.djangoproject.com/): We will be using Django as our Web framework.
  - Database: We will be using managed Postgresql database provided by `railway.app` infrastructure.
- - Wallet: We will be using polkadot{JS} extension wallet so that user can signup/login in the website by signing a message.
+ - Wallet: We will be using polkadot\{JS} extension wallet so that user can signup/login in the website by signing a message.
 
 #### API Schema
 
