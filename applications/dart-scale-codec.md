@@ -22,7 +22,7 @@ We are building **Jadewallet** with Flutter, although there are Rust, C++ implem
 
 ### Team Website 
 
-* <https://www.nbltrust.com/#/en/team>
+* https://www.nbltrust.com/#/en/team
 
 ### Legal Structure
 
@@ -41,8 +41,8 @@ Tuolian provides a full range of custody services for well-known companies or or
 
 ### Team Code Repos
 
-* <https://github.com/nbltrust>
-* <https://github.com/alexxuyang>
+* https://github.com/nbltrust
+* https://github.com/alexxuyang
 
 ## Development Roadmap :nut_and_bolt:
 

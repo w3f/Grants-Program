@@ -88,7 +88,7 @@ OAK Foundation
 
 * **Contact Name:** [Chris Li](https://www.linkedin.com/in/chrisli2046/)
 * **Contact Email:** chris@oak.tech
-* **Website:** <https://oak.tech>
+* **Website:** https://oak.tech
 
 ### Legal Structure
 
@@ -108,13 +108,13 @@ My strongest programing languages are C++ & C#, and have been ramping up on Rust
 
 ### Team Code Repos
 
-* <https://github.com/OAK-Foundation/OAK-blockchain> (Blockchain in development)
-* <https://github.com/OAK-Foundation/OAK-docs> (Developer documentation)
-* <https://github.com/OAK-Foundation/quadratic-funding-pallet> (Quadratic Funding pallet)
-* <https://github.com/OAK-Foundation/quadratic-funding-test> (E2E Quadratic Funding test cases using Polkadot.js)
-* <https://github.com/OAK-Foundation/quadratic-funding-webapp> (The web application of Quadratic Funding)
-* <https://github.com/OAK-Foundation/extension> (Open-source contribution to Polkadot.js extension)
-* <https://github.com/OAK-Foundation/hackathon-2021-spring> (The demo project for Parity hackathon in Shanghai 2021)
+* https://github.com/OAK-Foundation/OAK-blockchain (Blockchain in development)
+* https://github.com/OAK-Foundation/OAK-docs (Developer documentation)
+* https://github.com/OAK-Foundation/quadratic-funding-pallet (Quadratic Funding pallet)
+* https://github.com/OAK-Foundation/quadratic-funding-test (E2E Quadratic Funding test cases using Polkadot.js)
+* https://github.com/OAK-Foundation/quadratic-funding-webapp (The web application of Quadratic Funding)
+* https://github.com/OAK-Foundation/extension (Open-source contribution to Polkadot.js extension)
+* https://github.com/OAK-Foundation/hackathon-2021-spring (The demo project for Parity hackathon in Shanghai 2021)
 
 ### Update 2: UI Examples
 
@@ -122,7 +122,7 @@ UI demos of the team's previous work, which includes
 * rWallet iOS app: production screenshots and example sketch source file
 * RSK website: finalized design image and example sketch source file
 * Forge Labs website: production screenshot
-<https://drive.google.com/drive/folders/1nZPg4PmWSBxbfHuMyuAlw8UVXSybjTHG?usp=sharing>
+https://drive.google.com/drive/folders/1nZPg4PmWSBxbfHuMyuAlw8UVXSybjTHG?usp=sharing
 
 ### Team LinkedIn Profiles
 

@@ -5,7 +5,7 @@
 
 ## Project Overview :page_facing_up:
 
-The previous application [SubDAO Network Application - <https://github.com/w3f/Grant-Milestone-Delivery/pull/114>]
+The previous application [SubDAO Network Application - https://github.com/w3f/Grant-Milestone-Delivery/pull/114]
 
 ### Overview
 
@@ -65,7 +65,7 @@ There are no similar projects in the Polkadot ecosystem yet, and even we already
 
 * **Contact Name:** WannaM
 * **Contact Email:** subdao.lab@gmail.com
-* **Website:** <https://subdao.network>
+* **Website:** https://subdao.network
 
 ### Legal Structure
 
@@ -113,7 +113,7 @@ The team is the one who applied SubDAO.
 
 ### Team Code Repos
 
-* <https://github.com/subdao-network>
+* https://github.com/subdao-network
 
 ### Team LinkedIn Profiles
 
@@ -122,7 +122,7 @@ The team is the one who applied SubDAO.
 
 ## Development Status :open_book:
 
-The DAO-related smart contracts are partially implemented in the SubDAO plan. Those contracts can be found in <https://github.com/SubDAO-Network/subDAO-contracts>.
+The DAO-related smart contracts are partially implemented in the SubDAO plan. Those contracts can be found in https://github.com/SubDAO-Network/subDAO-contracts.
 
 We have already designed some UI/UX as the shown previous section, and the full extension relies on the features provided by SubDAO. Milestone 1 of SubDAO is already finished and accepted.
 

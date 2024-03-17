@@ -3,7 +3,7 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Proposer:** <https://github.com/ianhe8x>
+* **Proposer:** https://github.com/ianhe8x
 * **Payment Address:** bc1qmm3esqr57farn2dextdvhjs962wx08fecsxs90
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
@@ -85,7 +85,7 @@ The differences:
 
 ### Team Website 
 
-* <https://onfinality.io>
+* https://onfinality.io
 
 ### Legal Structure
 
@@ -101,14 +101,14 @@ Ian He led a team and won 2nd price in the substrate hackathon in Hangzhou 2019.
 
 ### Team Code Repos
 
-* <https://github.com/onfinality-io>
+* https://github.com/onfinality-io
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/sam-zou-5b8169a/>
-* <https://www.linkedin.com/in/yin-he-7a266345/>
-* <https://www.linkedin.com/in/qiang-ji-58aab276/>
-* <https://www.linkedin.com/in/james-bayly/>
+* https://www.linkedin.com/in/sam-zou-5b8169a/
+* https://www.linkedin.com/in/yin-he-7a266345/
+* https://www.linkedin.com/in/qiang-ji-58aab276/
+* https://www.linkedin.com/in/james-bayly/
 
 ## Development Roadmap :nut_and_bolt:
 

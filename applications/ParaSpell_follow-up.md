@@ -190,7 +190,7 @@ Viktor Valaštín - Supervisor, founder of  [KodaDot](https://kodadot.xyz/). Fac
 | 0d. | Docker | Docker file that allows to test ParaSpell SDK through ParaSpell UI will be provided. |
 | 1. | Add support for checking data that does not change | There are things that do not change, such as base token configuration (Polkadot, DOT token, 10 decimals), (Astar, ASTR, 18 decimals) This can be imported from  `@polkadot/network` library to have better support for different transfer scenarios|
 | 2. | Rewrite SDK to builder pattern | Best thing we can do to support multiple pallets and make it simplier for developers would be a Builder pattern functionality would look like: `import { Builder } as ‘@paraspell/sdk’` and then building of call would be something in sence: `const call = Builder(api).from(‘bsx’).to(‘ksm’).teleportTokens(‘KSM’).addr('destinationAddr').sum(currencySum).asV3().build()`|
-| 3. | Make a map of compatible <chain, pallet> | Before each SDK release there should be a script that connects to the compatible nodes, checks all relevant available pallets `xTokens`, `polkadotXCM`, `asset pallets`, `HRMP` pallets) and saves them to the map.|
+| 3. | Make a map of compatible \<chain, pallet\> | Before each SDK release there should be a script that connects to the compatible nodes, checks all relevant available pallets `xTokens`, `polkadotXCM`, `asset pallets`, `HRMP` pallets) and saves them to the map.|
 | 4. | Use [turborepo](https://turborepo.org/) | Remake package into `monorepo` for easier importing and cleaner use |
 
 ### Milestone 3 - Improve ParaSpell UI 2/2 & ParaSpell SDK 3/3

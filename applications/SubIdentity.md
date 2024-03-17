@@ -33,7 +33,7 @@ The detailed identity view contains available data of an on-chain identity in a 
 ![](https://tdsoftware-dev.de/subidentity/profile-details.png)
 
 #### Technology Stack 
-- polkadot{.js}
+- polkadot\{.js}
 - Vue.js with Vuex and the Vue Router
 - TypeScript
 - webpack

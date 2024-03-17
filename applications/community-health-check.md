@@ -105,7 +105,7 @@ Our current approach rests on off-chain data. Other community analytics dashboar
 
 Looking at on-chain community analysis, Chainverse is similar in terms of methodology (network analysis). However, they are currently solely focusing on on-chain data and are adopting a knowledge graph methodology.
 
-There is a [RFP for website and on-chain data analysis ](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/analysis-website-and-data-platform.md). The RFP is about creating an "easy-to-use front-end with sharable customized dashboards" and thus broader than our proposal. 
+There is a [RFP for website and on-chain data analysis ](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/analysis-website-and-data-platform.md). The RFP is about creating an "easy-to-use front-end with sharable customized dashboards" and thus broader than our proposal. 
 
 
 ## Team :busts_in_silhouette:
@@ -242,11 +242,11 @@ Milestone 1 will be focused on research. Hence, we're not going to deliver the f
 | 0a. | License | The results will be published open-access using an Apache 2.0, GPLv3, or MIT license. We will decide later which one is most suitable for the written document. |
 | 0e. | Article| We will publish an article (technical document) describing the metrics, the insights (so-what), and limitations. This article will also explain how the Twitter community is build (e.g., who are nodes, when there is an edge between two people, who is excluded/included and why). We will build a directed network, where nodes are always Twitter users. From a network assembly perspective, we will not differentiate between accounts representing people and those representing communities or organizations. The edges between an user profiles are either a reply, quote, mention, retweets, or likes. Thus, a tie from user A to user B exists if (1) user A replies to user B, user A quotes user B, user A mentions user B, user A retweets user B, or user A likes user B's tweet. At this moment, we will created weighted edges, not making a conceptual difference between the interaction type (reply, quote, mention, retweets and likes).The article will not be behind a paywall. The article will be written for an audience comfortable with data analysis. |
 
-### Milestone 2 — Twitter community health dashboard
+### Milestone 2 — Twitter API (dashboard backend)
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  5
-- **Costs:** 10 000 USDC
+- **Costs:** 9 000 USDC
 
 This milestone implements the work from the previous milestone by building the dashboard. It will be build using the Twitter API v2. This comes with the following rate limits: 
 - 900 tweet lookups/user/15-minute time window
@@ -259,17 +259,30 @@ Given the rate limit, we will see how users will be able to combine different ac
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide a tutorial for users to understand how to run the health checks themselves. Our current version will be updated to include recent development.|
+| 0b. | Documentation | We will provide a basic tutorial for how to run the file to receive the Twitter data and analyse it. The user has to have their own Twitter API.|
 | 0c. | Testing and Testing Guide | Running the data pipeline and analyzing the data will be covered by tests to ensure functionality. We will describe how to run the tests|.
 | 0d. | Docker | We will deliver a docker file to tests the functionality. |
-| 0e. | Article | In addition to the dashboard, we write a handout. This is a walkthrough of the dashboard, explaining each metric, if the score is good or bad, and a list of recommendations.  |
 | 1. | Twitter data pipeline | We will create a data pipeline fetching data from Twitter using their API. The user will enter one or a few twitter handles. The data pipeline is build using Python. We have already a data flow for Discord visible in the following repos: [Discord bot](https://github.com/RnDAO/tc-botComm), [interactions with db](https://github.com/RnDAO/tc-dbComm), and [interactions between front-end and db](https://github.com/RnDAO/tc-serverComm). |
-| 2. | Twitter dashboard | We will extend our dashboard to include a page with Twitter community health data. The dashboard is build using Typescript. Our current dashbaord, build on Discord data, is available in this [github](https://github.com/RnDAO/tc-uiComm). We will add the Twitter metrics to this dashboard.  |
-| 3. | Workshop/call | We will hold a workshop/ call to answer any questions about the dashboard and handout.  |
+
+### Milestone 3 — Twitter community health dashboard (front end)
+
+- **Estimated duration:** 3 weeks
+- **FTE:**  1
+- **Costs:** 1 000 USDC
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide a basic tutorial for users to understand how to install the app.|
+| 0c. | Testing and Testing Guide | Running the data pipeline and analyzing the data will be covered by tests to ensure functionality. We will describe how to run the tests|.
+| 0d. | Docker | We will deliver a docker file to tests the functionality. |
+| 0e. | Article | We will write a short walkthrough of the dashboard, explaining each metric, if the score is good or bad, and a list of recommendations.  |
+| 1. | Twitter dashboard | We will extend our dashboard to include a page with Twitter community health data. The dashboard is build using Typescript. Our current dashbaord, build on Discord data, is available in this [github](https://github.com/RnDAO/tc-uiComm). We will add the Twitter metrics to this dashboard.  |
+| 2. | Workshop/call | We will hold a workshop/ call to answer any questions about the dashboard and handout. This is optional and up to the community.  |
 
 ## Future Plans: 
 
-We have three workstreams for our future: New metrics, new integrations, new analytical methods. 
+We have three workstreams for our future: New metrics, new integrations, new analytical methods. Given the changes to Twitter's API, the direction of the Twitter analytics dashboard will depend on a throughout cost-benefit analysis. 
 
 ### New Metrics and Integrations
 New metrics and new integrations will provide incremental improvements of the dashboard and will largely be driven by scientiic research for new metrics and user research for new integrations. 

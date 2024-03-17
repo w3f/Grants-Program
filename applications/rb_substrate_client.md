@@ -46,7 +46,7 @@ Through this grant, we hope to
 
 ### Similar projects
 
-<https://github.com/polkascan/py-substrate-interface>
+https://github.com/polkascan/py-substrate-interface
 
 ## Team :busts_in_silhouette:
 
@@ -75,8 +75,8 @@ The team is familiar with Ethereum and Substrate development.
 
 ### Team Code Repos
 
-* <https://github.com/uni-arts-chain/sr25519>
-* <https://github.com/uni-arts-chain/rb_substrate_client>
+* https://github.com/uni-arts-chain/sr25519
+* https://github.com/uni-arts-chain/rb_substrate_client
 
 ## Development Status :open_book:
 

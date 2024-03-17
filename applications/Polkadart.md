@@ -1,7 +1,7 @@
 # Polkadart
 
 - **Team Name:** EXPERIO S M LTDA
-- **Payment Address:** 0x67a341f26A9c6211773Bf315B6226105cd1b2F24 (USDC)
+- **Payment Address:** 167QS6UiF1ZJBkHtngCBoHTSbLm4Rokc2ehfFBEniEGQXB4k (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -161,7 +161,7 @@ Described above.
 | 2b.  | Websockets | We will add websockets support to the above. |
 | 2e.  | Tests     | Unit tests for deliverables above  |
 
-### Milestone 3 — Ongoing
+### Milestone 3 — Completed
 
 - **Estimated duration:** 6 months
 - **FTE:**  2.
@@ -187,7 +187,7 @@ Described above.
 | 3l.  | Tests            | Unit tests for deliverables above  |
 | 3m.  | Pub.dev          | Publish to pub.dev                 |
 
-### Milestone 4 — 
+### Milestone 4 — Completed
 
 - **Estimated duration:** 4 months
 - **FTE:**  2.

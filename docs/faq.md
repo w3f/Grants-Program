@@ -15,6 +15,10 @@ title: 🙋 FAQ
 
   Generally, there is no upper limit to grant amounts. However, the higher the requested amount, the stricter the review. For guidance, please refer to the [grant levels section](Introduction/levels.md) in our documentation.
 
+### What does it mean for payments to be 30% DOT?
+
+  Every milestone payment will have two parts: 70% in the currency of your choice (see the application template for options) and the remaining 30% in DOT, vesting linearly over two years. For this, we need a Polkadot AssetHub address in the grant agreement (if you haven't already provided it for USDC/USDT payments or you prefer a separate address) and, when it comes to milestone payments, two invoices: one for the currency part, one for the DOT part. Our [invoice form](https://docs.google.com/forms/d/18BdmYEt8gvcC-5f7TMHdJftBr9dEeA2_lUfIqkH7it8/viewform) will walk you through the process.
+
 ### What activities/positions do you fund?
 
   The Web3 Foundation's Grants Program aims to fund software development and research activities that are beneficial for the ecosystem as a whole. As such, we don't usually fund tangential costs such as business-oriented activities (marketing, business planning), events or outreach, and—for non-infrastructure projects—deployment and hosting costs, maintenance or audits. We also expect you to have a good understanding of the technologies you are planning to use, meaning that we don't fund time spent learning how to use Substrate or how to write ink! smart contracts.
@@ -67,6 +71,10 @@ title: 🙋 FAQ
   For special cases that do not fit the regular grants structure, we provide [a form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). You can provide all application data by submitting this form, or submit the form with a reference to a pull request with data you are willing to make public.
 
   Our [application template](https://github.com/w3f/Grants-Program/blob/e03a3e760846bfaf44352cb17a6763ff0fcf1a94/.github/pull_request_template.md?plain=1#L21) also offers the possibility to make the application public, but to keep its discussion private.
+
+### What is KYC/KYB and why do I have to provide this data?
+
+  In order to comply with regulations, the Web3 Foundation is required to perform KYC (Know Your Customer) checks on individuals and KYB (Know Your Business) checks on entities applying for a grant in order to verify their identity. For these checks, we ask you to provide information about yourself and/or the entity you are representing through our provider [Sumsub](https://sumsub.com/). If you have any problems with or concerns about this process, please [reach out to us](mailto:grants@web3.foundation).
 
 ## 🥳 After Approval
 

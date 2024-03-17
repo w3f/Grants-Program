@@ -57,9 +57,9 @@ The jSETT will be multi-collateral and pegged to the SETT, so you can mint jSETT
 Setheum also offers a Central Bank type of monetary regime to issue it's elastic stablecoins, but unlike the Central banks, SERP-TES is decentralized and it distributes the new supply of stablecoins as discounts and cashback when users pay with SettPay. SettCard will soon be offered.
 
 * The documentation here could help about SERP-TES and the STP258
-<https://github.com/Setheum-Labs/Setheum-Labs-White-Papers/blob/main/Setheum%20White%20Paper%203.0-%20Muhammad%20jibril(1).pdf>
+https://github.com/Setheum-Labs/Setheum-Labs-White-Papers/blob/main/Setheum%20White%20Paper%203.0-%20Muhammad%20jibril(1).pdf
 
-<https://github.com/Setheum-Labs/Setheum-Labs-White-Papers/blob/main/Setheum%20Tokenomics%20White%20Paper(3).pdf>
+https://github.com/Setheum-Labs/Setheum-Labs-White-Papers/blob/main/Setheum%20Tokenomics%20White%20Paper(3).pdf
 
 ## Team :busts_in_silhouette:
 
@@ -78,7 +78,7 @@ Setheum also offers a Central Bank type of monetary regime to issue it's elastic
 
 ### Team Website 
 
-* <https://setheum.xyz>
+* https://setheum.xyz
 
 ### Legal Structure
 

@@ -138,21 +138,21 @@ Previous roles include designing and executing IT systems for multi-billion-doll
 
 ### Team Code Repos
 
-- <https://github.com/popular_coding>
+- https://github.com/popular_coding
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/Gryczka>
-- <https://github.com/GinSiuCheng>
-- <https://github.com/maciekzielonka>
-- <https://github.com/d-z-o>
+- https://github.com/Gryczka
+- https://github.com/GinSiuCheng
+- https://github.com/maciekzielonka
+- https://github.com/d-z-o
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/gryczka/>
-- <https://www.linkedin.com/in/ginsiucheng/>
-- <https://www.linkedin.com/in/maciej-zielonka-b83b7a230/>
-- <https://www.linkedin.com/in/joseph-murawski/>
+- https://www.linkedin.com/in/gryczka/
+- https://www.linkedin.com/in/ginsiucheng/
+- https://www.linkedin.com/in/maciej-zielonka-b83b7a230/
+- https://www.linkedin.com/in/joseph-murawski/
 
 ## Development Status :open_book:
 

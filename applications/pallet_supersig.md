@@ -39,7 +39,7 @@ Or [here](https://github.com/rusty-crewmates/pallet_dorg/blob/e702f1a1b3fc5361dc
 - Documentation of core components, protocols, architecture, etc. to be deployed: pallet_supersig [Trello ticket](https://trello.com/c/qi4Nf2YT)
   - - PoC/MVP or other relevant prior work or research on the topic. As a small team we have:
   - launched [Kabocha crowdloan](https://github.com/kabocha-network/parachain/)
-  - developed pallet_mint: where funding proposals that are approved mint new coins, instead of from a treasury. <https://github.com/kabocha-network/parachain/pull/6>
+  - developed pallet_mint: where funding proposals that are approved mint new coins, instead of from a treasury. https://github.com/kabocha-network/parachain/pull/6
   - (upcoming) planning on-chain proposal system called "pallet_proposals" which will begin as a level 2 grant.
   - maintaining a community run Rococo fork called [Pop-Art](https://apps.decentration.org/?rpc=wss%3A%2F%2Fpopart1.jelliedowl.com#/explorer)
   - Maintaining and upgrading [Substrate Recipes](https://trello.com/c/YPOPV5U8) for the benefit of the Substrate community.
@@ -71,7 +71,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 - **Contact Name:** Ramsey Ajram
 - **Contact Email:** ramsey@decentration.org
-- **Website:** <https://kabocha.network>
+- **Website:** https://kabocha.network
 
 ### Legal Structure
 
@@ -89,32 +89,32 @@ Nathan Gardet-Derc (erudyx) - Substrate / Rust Engineer, contributor to Kabocha,
 
 Jan Kraus - Full stack deveveloper - Javascript / Typescript / React / Node.js / Next.js / Gatsby / Ruby on Rails
 
-Elio Prfiti - Substrate Engineer - Kabocha - Upgraded Substrate Recipes... <https://wiki.kabocha.network/recipes>
+Elio Prfiti - Substrate Engineer - Kabocha - Upgraded Substrate Recipes... https://wiki.kabocha.network/recipes
 
 Richard Wells - Decent Partners, Kabocha founding steward, key stakeholder and communicator.
 
 ### Team Code Repos
 
-- <https://github.com/kabocha-network/parachain/tree/kab-release-v0.1.3>
-- <https://github.com/rusty-crewmates/substrate-tutorials>
+- https://github.com/kabocha-network/parachain/tree/kab-release-v0.1.3
+- https://github.com/rusty-crewmates/substrate-tutorials
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/decentration>
-- <https://github.com/gdnathan>
-- <https://github.com/tdelabro>
-- <https://github.com/johny>
-- <https://github.com/herou>
+- https://github.com/decentration
+- https://github.com/gdnathan
+- https://github.com/tdelabro
+- https://github.com/johny
+- https://github.com/herou
 
 ### Team LinkedIn Profiles (if available)
 
 ## Development Status :open_book:
 
 pallet started here:
-<https://github.com/kabocha-network/pallet_supersig/tree/polkadot-v0.9.16>
+https://github.com/kabocha-network/pallet_supersig/tree/polkadot-v0.9.16
 
 Description in trello ticket:
-<https://trello.com/c/qi4Nf2YT>
+https://trello.com/c/qi4Nf2YT
 
 *We are now working on the Supersig pallet (pallet_supersig). This pallet will benefit multisig users of Substrate based chains.
 
@@ -148,7 +148,7 @@ pub fn create_supersig(
 
 **Submit a call to a specific supersig**
 
-`submit_call` will create a proposal on the supersig, that members can approve. This will lock an amount that depend on the lenght of the encoded call, to prevent spam. The dispatch origin for this call must be `Signed`, and the origin must be a supersig member.
+`submit_call` will create a proposal on the supersig, that members can approve. This will lock an amount that depend on the length of the encoded call, to prevent spam. The dispatch origin for this call must be `Signed`, and the origin must be a supersig member.
 
 ```rust
 pub fn submit_call(

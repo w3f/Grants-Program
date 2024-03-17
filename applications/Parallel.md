@@ -31,8 +31,8 @@ Our project utilizes substrate framework and is built on top of polkadot paracha
 
 ##### MVP links
 
-- Testnet demo: <https://parallel.fi/#/>
-- Video demo: <https://youtu.be/lgQX9rELpL8>
+- Testnet demo: https://parallel.fi/#/
+- Video demo: https://youtu.be/lgQX9rELpL8
 
 #### Mockups and UI components
 
@@ -112,17 +112,17 @@ The lending protocol was inspired by compound protocol and our blockchain soluti
 
 ### Team Code Repos
 
-- Backend: <https://github.com/parallel-finance/parallel>
-- Frontend: <https://github.com/parallel-finance/hackathon-2021-spring/tree/main/teams/22-Parallel/src/parallel-dapp>
+- Backend: https://github.com/parallel-finance/parallel
+- Frontend: https://github.com/parallel-finance/hackathon-2021-spring/tree/main/teams/22-Parallel/src/parallel-dapp
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/yubo-ruan/>
-- <https://www.linkedin.com/in/remigai/>
-- <https://www.linkedin.com/in/cheng-jiang-2a414020a/>
-- <https://www.linkedin.com/in/haiyi-zhong-6274108b/?originalSubdomain=ca>
-- <https://www.linkedin.com/in/zhulipai/>
-- <https://www.linkedin.com/in/yz89/>
+- https://www.linkedin.com/in/yubo-ruan/
+- https://www.linkedin.com/in/remigai/
+- https://www.linkedin.com/in/cheng-jiang-2a414020a/
+- https://www.linkedin.com/in/haiyi-zhong-6274108b/?originalSubdomain=ca
+- https://www.linkedin.com/in/zhulipai/
+- https://www.linkedin.com/in/yz89/
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -207,13 +207,13 @@ Other:
 
 - We are a team that met and formed during the March 2021 Polkadot Hackathon in Shanghai. Our team members are both in the US and China, and come from a strong engineering background (crypto/blockchain, startup, traditional tech company), product management and financial background (venture capital, Defi). We were able to deliver our proof of concept within a month, and earned third place at the Hackathon.
 
-- We are currently still in the process of creating our white paper, but you can find more details about our documentation on our gitbook: <https://docs.parallel.fi/>.
+- We are currently still in the process of creating our white paper, but you can find more details about our documentation on our gitbook: https://docs.parallel.fi/.
 
 - Email: team@parallel.fi
 - Website: parallel.fi
-- Twitter: <https://twitter.com/ParallelFi>
-- Medium: <https://medium.com/@parallelfinance>
-- LinkedIn: <https://www.linkedin.com/company/parallel-finance/>
-- Unofficial white paper: <https://docs.parallel.fi/>
-- Testnet demo: <https://parallel.fi/#/app>
-- Video demo (Hackathon March 2021): <https://youtu.be/lgQX9rELpL8>
+- Twitter: https://twitter.com/ParallelFi
+- Medium: https://medium.com/@parallelfinance
+- LinkedIn: https://www.linkedin.com/company/parallel-finance/
+- Unofficial white paper: https://docs.parallel.fi/
+- Testnet demo: https://parallel.fi/#/app
+- Video demo (Hackathon March 2021): https://youtu.be/lgQX9rELpL8

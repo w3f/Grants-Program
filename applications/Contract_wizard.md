@@ -102,10 +102,10 @@ We are not only a dev shop company, but we create long term partnerships with th
 - https://github.com/protofire/kyber-pool-master-proxy-contract
 
 GitHub accounts of team members.
-- https://github.com/alongoni <Agustin Langoni/>
-- https://github.com/henrypalacios <Henry Palacios/>
-- https://github.com/0xLucca <Luca Auet/>
-- https://github.com/GabrielCamba <Gabriel Gonzalez/>
+- https://github.com/alongoni Agustin Langoni
+- https://github.com/henrypalacios Henry Palacios
+- https://github.com/0xLucca Luca Auet
+- https://github.com/GabrielCamba Gabriel Gonzalez
 ​
 ### Team LinkedIn Profiles
 ​

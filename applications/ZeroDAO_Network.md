@@ -145,8 +145,8 @@ Chen Zhidong: Full-stack Developer, Tesla Machine Learning Engineer，[GoHack 20
 
 ### Team Code Repos
 
-- <https://github.com/ZeroDAO>
-- <https://github.com/sillydong>
+- https://github.com/ZeroDAO
+- https://github.com/sillydong
 
 ## Development Status 📖
 
@@ -156,13 +156,13 @@ We built a simple application to validate the algorithm and perform tuning, and 
 
 We computed data at different data sizes several times in our development environment. And a website was deployed to demonstrate how the selection of Hall of Fame users affects the calculation. You can also query the reputation of any user in the application, as well as the shortest path between users. We are still tuning the algorithm, so if you find significant deviations in the data, please contact us.
 
-Website: <https://socircles.info>
+Website: https://socircles.info
 
-Front-end: <https://github.com/ZeroDAO/socircles-ui>
+Front-end: https://github.com/ZeroDAO/socircles-ui
 
-Back-end: <https://github.com/ZeroDAO/socircles-backend>
+Back-end: https://github.com/ZeroDAO/socircles-backend
 
-Management: <https://github.com/ZeroDAO/socircles-admin>
+Management: https://github.com/ZeroDAO/socircles-admin
 
 ### White Paper
 

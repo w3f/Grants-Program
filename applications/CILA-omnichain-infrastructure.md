@@ -3,6 +3,7 @@
 - **Team Name:** Collective Intelligence Labs
 - **Payment Address:**  bc1qff0kjc6pyjkneyt3pctm5nahjpd9f774avz55x (BTC)
 - **Level:** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1679#issuecomment-1823419675)
 
 ## Project Overview :page_facing_up:
 

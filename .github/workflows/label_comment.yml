@@ -21,7 +21,7 @@ jobs:
             [section on project details](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-details)
             in the application template is a good reference as to what type of information
             we expect applicants to provide, and these
-            [category-specific requirements](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/grant_guidelines_per_category.md)
+            [category-specific requirements](https://grants.web3.foundation/docs/Support%20Docs/grant_guidelines_per_category)
             contain more precise guidelines depending on what type of software you're building.<br/>
 
             An area of the application that we often find to be insufficiently elaborated are the
@@ -31,7 +31,7 @@ jobs:
             by other teams and in most cases not already present in the ecosystem. If they are,
             you will need to provide a comparison to existing implementations and explain why
             it makes sense to fund your approach. Also see our
-            [FAQ](https://github.com/w3f/Grants-Program/blob/master/docs/faq.md#-general)
+            [FAQ](https://grants.web3.foundation/docs/faq#what-activitiespositions-do-you-fund)
             for a breakdown of what we fund and what we don't.<br/>
 
             Let us know as soon as you're done with your changes, and we'll give your application another look!

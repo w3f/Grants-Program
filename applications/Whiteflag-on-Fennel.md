@@ -144,19 +144,19 @@ Whiteflag operates with a lexicon of message codes indicating the purpose and in
 
 ### Team Code Repos
 
-* <https://github.com/Romulus10>
-* <https://github.com/isaacadams>
-* <https://github.com/fennelLabs>
-* <https://github.com/Romulus10/infostratus>
-* <https://github.com/Romulus10/blockchain_message>
-* <https://github.com/fennelLabs/Theriak>
+* https://github.com/Romulus10
+* https://github.com/isaacadams
+* https://github.com/fennelLabs
+* https://github.com/Romulus10/infostratus
+* https://github.com/Romulus10/blockchain_message
+* https://github.com/fennelLabs/Theriak
 
 ### Team LinkedIn Profiles (if available)
 
-* <https://www.linkedin.com/in/seanbatzel/>
-* <https://www.linkedin.com/in/mateusz-p-6b126424/>
-* <https://www.linkedin.com/in/isaacdadams/>
-* <https://www.linkedin.com/in/ed-hertzog-ms-a855213/>
+* https://www.linkedin.com/in/seanbatzel/
+* https://www.linkedin.com/in/mateusz-p-6b126424/
+* https://www.linkedin.com/in/isaacdadams/
+* https://www.linkedin.com/in/ed-hertzog-ms-a855213/
 
 ### Ecosystem Fit
 

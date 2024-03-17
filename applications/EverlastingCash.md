@@ -85,12 +85,12 @@ When LR is lower than 0.3, the ELC system mints amounts of ELCs and rELPs, in ex
 
 When LR is higher than 0.3, the ELC system mints amount of rELPs only, in exchange for amount of ELPs.
 △Amount(rELP) = p(ELP) * △Amount(ELP) /p(rELP)
-When ELC is higher than 102% of ELCaim and LR <= 0.7, the ELC system issues amount of ELC to rELP holders (95% of issued ELC) and the pool (5% of issued ELC).
+When ELC is higher than 102% of ELCaim and LR &lt;= 0.7, the ELC system issues amount of ELC to rELP holders (95% of issued ELC) and the pool (5% of issued ELC).
 
 When ELC is higher than 102% of ELCaim, if the multifunction pool has ELC, it swaps amount of ELCs for amount of ELPs, decreasing ELC supply.
 When ELC is lower  than 98% of ELCaim, the multifuncitonal pool swaps amount of ELPs for amount of ELCs.
 
-When ELC is higher than 102% of ELCaim and LR is <= 0.7, when min (weighted average price of ELC 24 hours, weighted average price of ELC 1 hour) > $1, additional ELCs are issued,  additional ELC will allocate to rELP liquidity provider (95% of issued ELC) and the multifunction pool (5% of issued ELC).
+When ELC is higher than 102% of ELCaim and LR is &lt;= 0.7, when min (weighted average price of ELC 24 hours, weighted average price of ELC 1 hour) > $1, additional ELCs are issued,  additional ELC will allocate to rELP liquidity provider (95% of issued ELC) and the multifunction pool (5% of issued ELC).
 
 Number of additional ELCs for the day = min (weighted average price of ELCs 24 hours before monitoring point, weighted average price of ELCs 1 hour before monitoring point) /100 * number of ELCs before additional issuance.
 

@@ -43,7 +43,7 @@ The design of the underlying functional encryption scheme, where the private key
 
 There exist several functional encryption schemes with constant key size such as the one presented in [SC2017,CRH2015, RDGBP2019,B2017,MSHBM2019]. General predicate encryption allows the data owner to encrypt the raw data items tagged with various attributes, and a data purchaser to query different parts of the data repository using a function key corresponding to a predicate. Inner product predicate encryption [CGW2015] is a special kind of predicate encryption, where the data purchaser could retrieve the data records if the inner product of their attribute vector `y` and the predicate vector `x` specified by the data purchaser is equal to 0. For instance, the data purchaser could potentially ask for the data records corresponding to a conjunctive predicate such as “Age”AND“gender”AND“Income” from a personal data repository. One of the most efficient inner product encryption schemes [CGW2015] has a private key consisting of four elliptic curve group elements, and its key generation is dominated by four modular exponentiations.
 
-While the predicate encryption allows the data purchaser to retrieve different parts of a database based on a predefined predicate, a more general functional encryption allows the data purchaser to calculate an arbitrary function over the input `x`. This project will focus on a slightly narrow set of functional encryption schemes: inner product encryption and quadratic polynomial function encryption [MSHBM2019]. In an inner product encryption scheme, for encryption of a vector `x`, the data purchaser with a private key corresponding to another vector `y` will be able to compute the inner product between `x` and `y`. On the other hand, in a quadratic polynomial functional encryption scheme, the data owner will encrypt two vectors `v_1 \in \mathbb{Z}_n` and `v_2 \in \mathbb{Z}_n`, a data purchaser with a secret key corresponding to a matrix `H \in \mathbb{Z}^{n*n}` is allowed to decrypt the quadratic product of `x_1, x_2`, and `H`, i.e., `x_1^T\cdot H \cdot x_2`. Both inner product encryption and quadratic polynomial functional encryption can support sophisticated privacy-preserving machine learning tasks, such as classification [LCFS2017,SGP2018] and neural networks [RDGBP2019].
+While the predicate encryption allows the data purchaser to retrieve different parts of a database based on a predefined predicate, a more general functional encryption allows the data purchaser to calculate an arbitrary function over the input `x`. This project will focus on a slightly narrow set of functional encryption schemes: inner product encryption and quadratic polynomial function encryption [MSHBM2019]. In an inner product encryption scheme, for encryption of a vector `x`, the data purchaser with a private key corresponding to another vector `y` will be able to compute the inner product between `x` and `y`. On the other hand, in a quadratic polynomial functional encryption scheme, the data owner will encrypt two vectors `v_1 \in \mathbb\{Z}_n` and `v_2 \in \mathbb\{Z}_n`, a data purchaser with a secret key corresponding to a matrix `H \in \mathbb\{Z}^\{n*n}` is allowed to decrypt the quadratic product of `x_1, x_2`, and `H`, i.e., `x_1^T\cdot H \cdot x_2`. Both inner product encryption and quadratic polynomial functional encryption can support sophisticated privacy-preserving machine learning tasks, such as classification [LCFS2017,SGP2018] and neural networks [RDGBP2019].
 
 The benchmark results for various inner product encryption and quadratic polynomial function encryption schemes can be found in [MSHBM2019]. The private key of inner product encryption consists of one elliptic curve group element, which is of 256 bits under 128-bit level security. The key generation for a vector of 100 elements takes 0.4149s, and the encryption time for the data owner is around 0.2103s for a vector of the same size. The private key of quadratic polynomial functional encryption also only consists of one elliptic curve group element. The average key generation and encryption time for each coordinate of the message vector is 0.001s and 0.025s.
 
@@ -102,7 +102,7 @@ There are several different ways of implementing an MPC protocol: threshold homo
 
 ### Team Website
 
-- <http://rubyprotocol.com/>
+- http://rubyprotocol.com/
 
 ### Legal Structure
 
@@ -124,7 +124,7 @@ Dylan Dewdney is a longtime crypto enthusiast (2011). In 2017 he co-founded Harb
 
 ### Team Code Repos
 
-- <https://github.com/Ruby-Protocol>
+- https://github.com/Ruby-Protocol
 
 ### Team Linkedin Profiles
 
@@ -211,15 +211,15 @@ Finally, our goal is to provide an essential open API and SDK from a high-level 
 
 [GKPVZ13] Goldwasser, S., Kalai, Y., Popa, R. A., Vaikuntanathan, V., & Zeldovich, N. (2013, June). Reusable garbled circuits and succinct functional encryption. In Proceedings of the forty-fifth annual ACM symposium on Theory of computing (pp. 555-564).
 
-[ALS2016] Agrawal, S., Libert, B., Stehle, D.: Fully secure functional encryption for inner products, from standard assumptions. In: Annual International Cryptology Conference. pp. 333{362. Springer (2016).
+[ALS2016] Agrawal, S., Libert, B., Stehle, D.: Fully secure functional encryption for inner products, from standard assumptions. In: Annual International Cryptology Conference. pp. 333-362. Springer (2016).
 
 [B2017] Bourse, F. (2017). Functional encryption for inner-product evaluations (Doctoral dissertation).
 
 [B2018] Vitalik Buterin,
-<https://ethresear.ch/t/on-chain-scaling-to-potentially-500-tx-sec-through-mass-tx-validation/3477>,
+https://ethresear.ch/t/on-chain-scaling-to-potentially-500-tx-sec-through-mass-tx-validation/3477,
 2018.
 
-[BCTV2013] Eli Ben-Sasson, Alessandro Chiesa, Eran Tromer, and Madars Virza. Succinct non-interactive zero knowledge for a von Neumann architecture. In Proceedings of the 23rd USENIX Security Symposium, Security '14. Available at <http://eprint.iacr.org/2013/879>.
+[BCTV2013] Eli Ben-Sasson, Alessandro Chiesa, Eran Tromer, and Madars Virza. Succinct non-interactive zero knowledge for a von Neumann architecture. In Proceedings of the 23rd USENIX Security Symposium, Security '14. Available at http://eprint.iacr.org/2013/879.
 
 [BMEB2016] Bataineh, A. S., Mizouni, R., El Barachi, M., & Bentahar, J. (2016, June). Monetizing Personal Data: A Two-Sided Market Approach. In ANT/SEIT (pp. 472-479).
 

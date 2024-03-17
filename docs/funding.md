@@ -6,7 +6,7 @@ title: 🪙 Alternative Funding
 Some funding sources might be more and some less suitable for your project throughout its various stages. We encourage you to explore alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
 :::tip
-If you are unsure about what's the best next step for you and your project, consider reaching out to the [Substrate Square One](https://substrate.io/ecosystem/square-one/) team.
+If you are unsure about what's the best next step for you and your project, consider signing up for the [Polkadot Alpha Program](https://polkadot.network/development/alpha/).
 :::
 
 ### Treasury
@@ -31,8 +31,10 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Acala Grants Program](https://acala.network/ecosystem-program)
 - [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program) 
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
+- [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
+- [Decentralized Futures Program](https://futures.web3.foundation/) 
 - [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
@@ -43,6 +45,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/)
 - [Picasso / Composable Grants Program](https://docs.composable.finance/ecosystem/composable-grants/)
+- [Polkadot Assurance Legion](https://polkadotassurance.com/)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)

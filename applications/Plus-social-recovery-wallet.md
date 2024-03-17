@@ -10,7 +10,7 @@
  This is a proposal for the RFP titled [Social Recovery Wallet](https://github.com/w3f/Grants-Program/blob/master/rfps/open/social-recovery-wallet.md), and in other words a follow-up grant for providing Social Recovey in "[Plus:Polkadot js Plus Extension](https://github.com/w3f/Grants-Program/pull/778)"
 
 
-# ![polkadot{.js} plus extension intro](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/intro.png)
+# ![polkadot\{.js} plus extension intro](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/intro.png)
 
 ### Overview
 
@@ -36,11 +36,11 @@ Based on the [Social Recovery Wallet](https://github.com/w3f/Grants-Program/blob
 
 With the new functionality the token holders will be able to make their accounts Recoverable. Almost all required information will be saved on-chain, utilizing Substrate/Recovery-Pallet.
 
-# ![polkadot{.js} plus extension make recoverable](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/makeRecoverable.png)
+# ![polkadot\{.js} plus extension make recoverable](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/makeRecoverable.png)
 
 
 and when you open the accounts page, a green shield icon indicates which account is already recoverable.
-# ![polkadot{.js} plus extension recoverable icon](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/accountPage.png)
+# ![polkadot\{.js} plus extension recoverable icon](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/accountPage.png)
 
       
 Ther following features will be available as Social recovery wallet:
@@ -55,26 +55,26 @@ Ther following features will be available as Social recovery wallet:
 
 After an account holder determined their friends and set recovery delay and threshold, can make the account recoverable by confirming it using the account password:
 
-# ![polkadot{.js} plus extension confirm making recoverable](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/confirmMakeRecoverable.png)
+# ![polkadot\{.js} plus extension confirm making recoverable](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/confirmMakeRecoverable.png)
 
 
 Similarly the user can remove recovery for a recoverable account using remove recovery tab:
-# ![polkadot{.js} plus extension remove recovery](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/removeRecovery.png)
+# ![polkadot\{.js} plus extension remove recovery](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/removeRecovery.png)
 
 To rescue a lost account, we have two identities, a rescuer and the lost account's friends, who can help to rescue the lost account:
-# ![polkadot{.js} plus extension rescue tab](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/recoverTab.png)
+# ![polkadot\{.js} plus extension rescue tab](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/recoverTab.png)
 
 A rescuer should start by intiating the recovery process, but usually when you lost your account you hardly remember the acount Id, hence, it should be possible to find the lost account using it's on-chain identity:
 
-# ![polkadot{.js} plus extension iniTiate recovery](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/initiateRecovery.png)
+# ![polkadot\{.js} plus extension iniTiate recovery](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/initiateRecovery.png)
 
 When a malicious rescuer initiates the recovery for a lost account, we need to set an alert for the lost account, as can be seen below as a beating red shield . 
 
-# ![polkadot{.js} plus extension red alert](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/accoutPageWithRedAlert.png)
+# ![polkadot\{.js} plus extension red alert](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/accoutPageWithRedAlert.png)
 
 Therfore, the lost account can close the recovery to protect their account. 
 
-# ![polkadot{.js} plus extension close recovery](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/closeRecovery.png)
+# ![polkadot\{.js} plus extension close recovery](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/closeRecovery.png)
 
 
 

@@ -83,7 +83,7 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 
 - **Contact Name:** Daniel Stockhaus
 - **Contact Email:** daniel@polkastarter.com
-- **Website:** <https://www.polkastarter.com/>
+- **Website:** https://www.polkastarter.com/
 
 ### Legal Structure
 
@@ -108,20 +108,20 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 
 ### Team Code Repos
 
-- <https://github.com/polkastarter>
-- <https://gitlab.com/polkastarter> (DAPP Source Code. Can grant access when requested.)
-- <https://github.com/tiagom87>
-- <https://github.com/Ruiub3i>
-- <https://github.com/miguelcma>
-- <https://github.com/hcaiano>
+- https://github.com/polkastarter
+- https://gitlab.com/polkastarter (DAPP Source Code. Can grant access when requested.)
+- https://github.com/tiagom87
+- https://github.com/Ruiub3i
+- https://github.com/miguelcma
+- https://github.com/hcaiano
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/danielstockhaus/>
-- <https://www.linkedin.com/in/temmartins/>
-- <https://www.linkedin.com/in/rui-dos-santos-teixeira/>
-- <https://www.linkedin.com/in/henriquecaiano/>
-- <https://www.linkedin.com/in/miguelcma/>
+- https://www.linkedin.com/in/danielstockhaus/
+- https://www.linkedin.com/in/temmartins/
+- https://www.linkedin.com/in/rui-dos-santos-teixeira/
+- https://www.linkedin.com/in/henriquecaiano/
+- https://www.linkedin.com/in/miguelcma/
 
 ## Development Roadmap :nut_and_bolt:
 

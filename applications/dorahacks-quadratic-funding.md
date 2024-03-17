@@ -9,7 +9,7 @@ We would like to bring quadratic funding grants to Polkadot and Kusama ecosystem
 
 ### Overview
 
-Quadratic Funding was proposed in Vitalik Buterin's paper Quadratic Payments <https://vitalik.ca/general/2019/12/07/quadratic.html>. It's now been proven as an effective way to encourage grass-root innovation from the developer community and a unique mechanism to allow community contributors to directly support early-stage projects. Currently, GitCoin's ETH Grant and HackerLink's BSC Grant are already practicing this idea.
+Quadratic Funding was proposed in Vitalik Buterin's paper Quadratic Payments https://vitalik.ca/general/2019/12/07/quadratic.html. It's now been proven as an effective way to encourage grass-root innovation from the developer community and a unique mechanism to allow community contributors to directly support early-stage projects. Currently, GitCoin's ETH Grant and HackerLink's BSC Grant are already practicing this idea.
 
 This project develops a substrate pallet that implements the quadratic funding process. The pallet will be tested on a local substrate node, and a simple frontend interface will be created based on Substrate Frontend Template.
 
@@ -25,9 +25,9 @@ Here is a detailed explanation of HackerLink quadratic funding (use DOT as examp
 
 ![Polkadot Quadratic Funding Grant.jpeg](https://ssimg.frontenduse.top/article/2021/01/26/3e4af1509b0450e838d2bb6efbbfa026.jpeg)
 
-The on-going BSC quadratic funding grant can be accessed here: <https://hackerlink.io/en/grant>
+The on-going BSC quadratic funding grant can be accessed here: https://hackerlink.io/en/grant
 
-A Chinese version to explain Quadratic Funding can be found here: <https://matataki.io/p/6113>
+A Chinese version to explain Quadratic Funding can be found here: https://matataki.io/p/6113
 
 ### Ecosystem Fit
 
@@ -51,7 +51,7 @@ It's also exciting to implement quadratic funding as an on-chain governance modu
 
 ### Team Code Repos
 
-* <https://github.com/dorahacksglobal/BSCQuadraticFundingGrant>
+* https://github.com/dorahacksglobal/BSCQuadraticFundingGrant
 
 ## Development Roadmap
 
@@ -96,8 +96,8 @@ Eventually, we hope to run KSM and DOT quadratic funding grants on a regular bas
 
 ## Additional Information
 
-DoraHacks' blockchain developer platform HackerLink is currently hosting the Binance Smart Chain Quadratic Funding Grant Round-1. The BSC foundation donated $50,000 to this round to support BSC-based developer projects. This grant can be accessed at <https://hackerlink.io/en/grant>.
+DoraHacks' blockchain developer platform HackerLink is currently hosting the Binance Smart Chain Quadratic Funding Grant Round-1. The BSC foundation donated $50,000 to this round to support BSC-based developer projects. This grant can be accessed at https://hackerlink.io/en/grant.
 
-There is a smart contract deployed on the BSC mainnet to process all quadratic voting and funding activities, and the smart contract has been audited by Certik. <https://github.com/dorahacksglobal/BSCQuadraticFundingGrant>
+There is a smart contract deployed on the BSC mainnet to process all quadratic voting and funding activities, and the smart contract has been audited by Certik. https://github.com/dorahacksglobal/BSCQuadraticFundingGrant
 
 DoraHacks is an active hackathon organizer and developer community in the blockchain space. DoraHacks has been organizing blcokchain hackathons and developer communities in 8 countries and ~20 cities around the world (Boston, SF, San Jose, Beijing, Hangzhou, Bangalore, Berlin, Oxford, Tokyo, Seoul... etc.)

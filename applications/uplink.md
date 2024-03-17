@@ -118,9 +118,9 @@ UpLink is targeted at the following audiences:
 
 Other similar projects can be identified, namely:
 
-* <https://www.helium.com/>
-* <https://gotenna.com/>
-* <https://nodle.io/>
+* https://www.helium.com/
+* https://gotenna.com/
+* https://nodle.io/
 
 UpLink can be distinguished from those projects because:
 
@@ -144,7 +144,7 @@ UpLink can be distinguished from those projects because:
 
 * **Contact Name:** Carlos Lei Santos
 * **Contact Email:** cl@hypelabs.io
-* **Website:** <https://hypelabs.io>
+* **Website:** https://hypelabs.io
 
 ### Legal Structure
 
@@ -165,10 +165,10 @@ UpLink can be distinguished from those projects because:
 
 ### Team LinkedIn Profiles
 
-* Carlos Santos (<https://www.linkedin.com/in/carlosleisantos/>)
-* André Francisco (<https://www.linkedin.com/in/andr%C3%A9-francisco-6662b696/>)
-* Damaris Valero (<https://www.linkedin.com/in/damaris-valero-23711619/>)
-* Aldrin D'souza (<https://www.linkedin.com/in/aldrin-dsouza/>)
+* Carlos Santos (https://www.linkedin.com/in/carlosleisantos/)
+* André Francisco (https://www.linkedin.com/in/andr%C3%A9-francisco-6662b696/)
+* Damaris Valero (https://www.linkedin.com/in/damaris-valero-23711619/)
+* Aldrin D'souza (https://www.linkedin.com/in/aldrin-dsouza/)
 
 ## Development Status :open_book:
 

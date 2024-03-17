@@ -123,8 +123,8 @@ The names of these extrinsics are tentative, but the basic functions we expose t
 ##### The Iris-Assets runtime module extrinsics
 
 - Permissionless Functions
-  - create: called by a node to request that some {CID, MultiAddr} combination be added to Iris
-  - request_bytes: request that some content identified by {CID, Owner}
+  - create: called by a node to request that some \{CID, MultiAddr} combination be added to Iris
+  - request_bytes: request that some content identified by \{CID, Owner}
   - insert_pin_request: request that your own ipfs node pin some cid, note that this is only possible if you are a validator node
 - Permissioned Functions
   - mint: mint assets from some owned asset class

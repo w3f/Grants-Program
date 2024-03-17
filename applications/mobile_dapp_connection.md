@@ -31,9 +31,9 @@ let rpcUrl = "https://mainnet.infura.io/v3/{API-KEY}"
 let web3 = Tesseract.Ethereum.Web3(rpcUrl: rpcUrl)
 ```
 
-For more information, please check: <https://github.com/tesseract-one/Tesseract.swift>
+For more information, please check: https://github.com/tesseract-one/Tesseract.swift
 
-Our current implementation of the reference wallet for iOS, supporting Ethereum can be found here: <https://apps.apple.com/us/app/tesseract-wallet/id1459505103>. We plan to approach Tesseract supporting Polkadot wallet with a consequent separate proposal. It’s either going to be a reference wallet implementation or integration with some existing Polkadot wallets.
+Our current implementation of the reference wallet for iOS, supporting Ethereum can be found here: https://apps.apple.com/us/app/tesseract-wallet/id1459505103. We plan to approach Tesseract supporting Polkadot wallet with a consequent separate proposal. It’s either going to be a reference wallet implementation or integration with some existing Polkadot wallets.
 
 ### How is Tesseract different?
 
@@ -50,7 +50,7 @@ To demonstrate the advantages of our approach, let’s first briefly cover the o
 * **Centralized signing relays** - allows a mobile wallet to sign transactions using centralized servers as connection relays. Usually works together with a deep-linking handshake, inheriting its issues and behavior (iOS routing issues, app switching UX). Also, such a solution can’t be considered optimal, due to the fact that two apps running on the same device have to communicate through a server somewhere on the internet. Examples: WalletConnect, WalletLink
 * **Decentralized signing relays** - this approach works similarly to Centralized signing relays, except that p2p mesh is used instead of a centralized relay server. Examples: Beacon
 
-In contrast, Tesseract’s transport on smartphones is based on another technology, deeply integrated into the underlying OS - inter-process communication (IPC). This way we have managed to achieve a convenient UX. The behavior is centered around modal screens, which are quite widely used in various applications (please, check our demo: <https://drive.google.com/file/d/17YMdJS9CH6SXqP-YPUMKbm0BWdAE2Rx3/view>). There is no central authority and the data goes through the shortest route - communication is done point to point between two processes running on the same device. It works equally well on both iOS and Android without any dApp/Wallet routing issues (the user can pick the wallet to use for a signature). As for security - after extensive testing, we have not found any ways to hijack a transaction so far.
+In contrast, Tesseract’s transport on smartphones is based on another technology, deeply integrated into the underlying OS - inter-process communication (IPC). This way we have managed to achieve a convenient UX. The behavior is centered around modal screens, which are quite widely used in various applications (please, check our demo: https://drive.google.com/file/d/17YMdJS9CH6SXqP-YPUMKbm0BWdAE2Rx3/view). There is no central authority and the data goes through the shortest route - communication is done point to point between two processes running on the same device. It works equally well on both iOS and Android without any dApp/Wallet routing issues (the user can pick the wallet to use for a signature). As for security - after extensive testing, we have not found any ways to hijack a transaction so far.
 
 The table below summarises our comparison considerations, demonstrating why we have decided to utilize the IPC protocol instead of something else:
 
@@ -103,7 +103,7 @@ The Swift API library from our first proposal was an essential step for us, as S
 
 ## Team Website
 
-<https://tesseract.one>
+https://tesseract.one
 
 ## Team's experience
 
@@ -117,20 +117,20 @@ The team has a 10-year history of working together, delivering various solutions
 
 ## Team Code Repos
 
-* <https://github.com/tesseract-one>
-* <https://github.com/crossroadlabs/Express>
-* <https://github.com/reactive-swift>
+* https://github.com/tesseract-one
+* https://github.com/crossroadlabs/Express
+* https://github.com/reactive-swift
 
 ## Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/danielleping/>
-* <https://www.linkedin.com/in/yehor-popovych/>
+* https://www.linkedin.com/in/danielleping/
+* https://www.linkedin.com/in/yehor-popovych/
 
 ## Tesseract Overview
 
 The main goal of the Tesseract protocol is to enable dApp developers to provide a smooth and easy-to-understand user experience without compromising privacy and decentralization. Being a protocol that allows dApps to run without having access to the user's private key, Tesseract facilitates communication with the Wallets to request transaction and data signatures, thus providing a possibility to get rid of private key handling and having a look and feel of a “normal” application.
 
-Before digging into the technical details, we want to share the “feel” of how the Tesseract-based dApps work: <https://drive.google.com/file/d/17YMdJS9CH6SXqP-YPUMKbm0BWdAE2Rx3/view>.
+Before digging into the technical details, we want to share the “feel” of how the Tesseract-based dApps work: https://drive.google.com/file/d/17YMdJS9CH6SXqP-YPUMKbm0BWdAE2Rx3/view.
 
 Such a user experience is achieved by having a seamless connection between the dApp and the wallet via Tesseract protocol.
 
@@ -194,7 +194,7 @@ In the future, we plan to implement protocols that allow inter-device communicat
 
 The implementation of Tesseract, pretty much like any other protocol, is a set of libraries that allow applications to communicate through it. In the case of Tesseract, there are two sets of libraries: one for the dApps (allows querying the wallets) and one for the Wallet (allows replying to the signing requests).
 
-Currently, Tesseract has a partial implementation in Swift and works on iOS: <https://github.com/tesseract-one/Tesseract.swift>.
+Currently, Tesseract has a partial implementation in Swift and works on iOS: https://github.com/tesseract-one/Tesseract.swift.
 
 For the sake of having a single cross-platform implementation (fewer bugs, single codebase), we propose to implement it in Rust and add language-specific wrappers in the future (i.e. Swift, Java, ReactNative, etc.).
 
@@ -265,10 +265,10 @@ The long-term vision for Tesseract is to be a safe, secure, and user-friendly wa
 At the moment, though, we want to bring the details about the next short-term steps, that we believe are essential for the project to start bringing traction.
 
 The next immediate step is making the use of Tesseract protocol easy for the Polkadot developers, which requires integration with the ecosystem. Specifically integration with:
-* Swift SDK (our library from the previous proposal: <https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/swift_api.md>): <https://github.com/tesseract-one/Substrate.swift>
+* Swift SDK (our library from the previous proposal: https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/swift_api.md): https://github.com/tesseract-one/Substrate.swift
 * Java SDK (we’ve found two options so far):
-	* <https://github.com/polkadot-java/api>
-	* <https://github.com/emeraldpay/polkaj>
+	* https://github.com/polkadot-java/api
+	* https://github.com/emeraldpay/polkaj
 
 This will enable Mobile developers to start using Tesseract without any additional tools switching. Just adding a couple of lines of code for initialization.
 
@@ -282,14 +282,14 @@ Tesseract was designed with the idea that it’s not enough to solve one of the 
 
 ## Some links for reference:
 
-Tesseract’s Github: <https://github.com/tesseract-one/>
+Tesseract’s Github: https://github.com/tesseract-one/
 
-Tesseract’s implementation in Swift: <https://github.com/tesseract-one/Tesseract.swift>
+Tesseract’s implementation in Swift: https://github.com/tesseract-one/Tesseract.swift
 
-Tesseract’s reference wallet: <https://apps.apple.com/us/app/tesseract-wallet/id1459505103>
+Tesseract’s reference wallet: https://apps.apple.com/us/app/tesseract-wallet/id1459505103
 
-Demo video: <https://drive.google.com/file/d/17YMdJS9CH6SXqP-YPUMKbm0BWdAE2Rx3/view>
+Demo video: https://drive.google.com/file/d/17YMdJS9CH6SXqP-YPUMKbm0BWdAE2Rx3/view
 
-Our previous proposal (Substrate/Polkadot Swift API): <https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/swift_api.md>
+Our previous proposal (Substrate/Polkadot Swift API): https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/swift_api.md
 
-Our previous proposal codebase: <https://github.com/tesseract-one/Substrate.swift>
+Our previous proposal codebase: https://github.com/tesseract-one/Substrate.swift

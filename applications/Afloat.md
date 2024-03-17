@@ -135,7 +135,7 @@ Louise Reed is scheduled to speak at the following Certified Public Accountant S
 
 - **Contact Name:** Louise Reed
 - **Contact Email:** louise@stayafloat.io
-- **Website:** <https://stayafloat.io/#/>
+- **Website:** https://stayafloat.io/#/
 
 ### Legal Structure
 
@@ -154,12 +154,12 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 
 ### Relevant profile links
 
-- Louise Reed CPA website: <https://louisereedcpa.com/>
-- Louise Reed LinkedIn: <https://www.linkedin.com/in/louisewreed/>
-- Abel on Github: <https://github.com/amatsonkali>
-- Jose Maria on Github: <https://github.com/jmgayosso> and Gitlab: <https://gitlab.com/jmgayosso>
-- Hashed website: <https://hashed.io/>
-- Erick on GitHub: <https://github.com/tlacloc>
+- Louise Reed CPA website: https://louisereedcpa.com/
+- Louise Reed LinkedIn: https://www.linkedin.com/in/louisewreed/
+- Abel on Github: https://github.com/amatsonkali
+- Jose Maria on Github: https://github.com/jmgayosso and Gitlab: https://gitlab.com/jmgayosso
+- Hashed website: https://hashed.io/
+- Erick on GitHub: https://github.com/tlacloc
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -309,4 +309,4 @@ Blockchain Friendly State Breakdown
 
 ![Image](https://user-images.githubusercontent.com/7217054/160020643-84313880-4e0b-4942-8b1a-7278eb7aa219.png)
 
-<https://www.investopedia.com/news/majority-us-states-are-still-acknowledge-cryptocurrencies/>
+https://www.investopedia.com/news/majority-us-states-are-still-acknowledge-cryptocurrencies/

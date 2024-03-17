@@ -4,7 +4,7 @@
 This Request for Proposals is currently considered **under development**, meaning one or more grants have been signed to address the topic. We might be interested in additional implementations, but it’s better to double check this with the grants team.
 :::
 
-* **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/ink-playground-ide-improvements.md), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/sandox.md)
+* **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/ink-playground-ide-improvements.md), [Implemented](https://github.com/sandoxio/sandox)
 * **Proposer:** [David Hawig](https://github.com/Noc2)
 
 ## Project Description :page_facing_up:  
@@ -16,7 +16,7 @@ The goal of this RFP is to find teams that would like to maintain the browser-ba
 **Useful resources:**
 - [ink!](https://use.ink/)
 - ~~[ink-playground](https://ink-playground.substrate.io)~~ (no longer hosted)
-- [GitHub ink-playground](https://github.com/paritytech/ink-playground)
+- ~~[GitHub ink-playground](https://github.com/paritytech/ink-playground)~~ (no longer hosted)
 - [GitHub: ink! Remix plugin](https://github.com/blockchain-it-hr/ink-remix-plugin)
 
 ## Deliverables

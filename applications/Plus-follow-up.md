@@ -10,7 +10,7 @@
 This is an application for a follow-up grant for providing POOL STAKING in "[Plus:Polkadot js Plus Extension](https://github.com/w3f/Grants-Program/pull/778)".
 
 
-# ![polkadot{.js} plus extension intro](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/packages/extension-plus/docs/intro.png)
+# ![polkadot\{.js} plus extension intro](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/packages/extension-plus/docs/intro.png)
 
 ### Overview
 
@@ -35,9 +35,9 @@ Recently, Parity Technologies staking team released a new pallet, named **"Nomin
 
 With the new functionality the stakers on Kusama/Polkadot will have two options to stake their tokens, hence when click on easy staking in Polkadot js plus extension, solo or pool staking can be chosen.
 
-# ![polkadot{.js} plus extension accounts](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/accounts.png)
+# ![polkadot\{.js} plus extension accounts](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/accounts.png)
 
-# ![polkadot{.js} plus extension staking index](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/stakingIndex.png)
+# ![polkadot\{.js} plus extension staking index](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/stakingIndex.png)
 
 With Pool staking, stakers (delegators) with a small amount of tokens (e.g., 1 DOT) can pool their funds together and act as a single nominator. The earnings of the pool are split pro rata to a delegator's stake in the bonded pool.
         
@@ -50,21 +50,21 @@ Ther following features will be available in pool staking:
 
 Where a delegator can easily contribute in pool staking automatically, and confirm it by entering the account password:
 
-# ![polkadot{.js} plus extension pool stake](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/poolStake.png)
+# ![polkadot\{.js} plus extension pool stake](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/poolStake.png)
 
-# ![polkadot{.js} plus extension pool stake confirm](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/confirmPoolStake.png)
+# ![polkadot\{.js} plus extension pool stake confirm](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/confirmPoolStake.png)
 
 Similarly unstaking can be done, where unlocking bonds will be redeemable after a while depending on the chain:
-# ![polkadot{.js} plus extension pool unstake confirm](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/confirmPoolUnstake.png)
+# ![polkadot\{.js} plus extension pool unstake confirm](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/confirmPoolUnstake.png)
 
 Pools information along with its roles and accounts can be presented in pooltab:
-# ![polkadot{.js} plus extension pool staking pool tab](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/poolStakingPoolTab.png)
+# ![polkadot\{.js} plus extension pool staking pool tab](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/poolStakingPoolTab.png)
 
 The account(s) with root and nominator role can nominated validators for the deligated stashId, the nominated validators can be depicted in the nominations tab:
-# ![polkadot{.js} plus extension pool staking nominations tab](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/poolStakingNominationsTab.png)
+# ![polkadot\{.js} plus extension pool staking nominations tab](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/poolStakingNominationsTab.png)
 
 The general information that every staker/deligators needs to know can be summarized in info tab:
-# ![polkadot{.js} plus extension pool staking info tab](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/poolStakingInfoTab.png)
+# ![polkadot\{.js} plus extension pool staking info tab](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/poolStakingInfoTab.png)
 
 
 There would be also modules for manual pool selection/creation, manual validator selection, pool details information including pool's members' information, etc.

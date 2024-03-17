@@ -26,7 +26,7 @@ Future proposals will be made for the above. Below we'll explain the work in its
 **About Polywrap:**
 Polywrap is a dev toolchain that enables easy integration of Web3 protocols into any application. It makes it possible for software on any device, written in any language, to read and write data to Web3 protocols.
 
-<https://polywrap.io/#/>
+https://polywrap.io/#/
 
 ### Project Details
 
@@ -73,7 +73,7 @@ Project heavily relies on the Polywrap toolchain and Polywrap team support.
 
 - **Contact Name:** Marin Petrunić
 - **Contact Email:** marin@chainsafe.io
-- **Website:** <https://chainsafe.io/>
+- **Website:** https://chainsafe.io/
 
 ### Legal Structure
 
@@ -88,11 +88,11 @@ ChainSafe rounds out their deep Web 3.0 portfolio with undertakings into product
 
 ### Team Code Repos
 
-- <https://github.com/ChainSafe>
-- <https://github.com/ChainSafe/gossamer>
-- <https://github.com/ChainSafe/PINT>
-- <https://github.com/ChainSafe/chainlink-polkadot>
-- <https://github.com/polywrap>
+- https://github.com/ChainSafe
+- https://github.com/ChainSafe/gossamer
+- https://github.com/ChainSafe/PINT
+- https://github.com/ChainSafe/chainlink-polkadot
+- https://github.com/polywrap
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 

@@ -3,6 +3,7 @@
 * **Team Name:** [gmajor](https://github.com/gmajor-encrypt)
 * **Payment Address:** 0xC3094f0ddce699a1Ad9Ef2621DF68Cd297a4c44F(USDC)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2068#issuecomment-1840145149) 
 
 ## Project Overview :page_facing_up:
 
@@ -46,7 +47,7 @@ This proposal is to develop a JsonRpsee [socks5](https://datatracker.ietf.org/do
 
 * **Contact Name:** gmajor
 * **Contact Email:** gmajorencrypt@gmail.com
-* **Website:** <https://github.com/gmajor-encrypt>
+* **Website:** https://github.com/gmajor-encrypt
 
 ### Legal Structure
 

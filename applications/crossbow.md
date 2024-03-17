@@ -19,9 +19,9 @@ Of course, there are already a bunch of promising game engine projects, but they
 
 ### Maintenance list
 
-- <https://github.com/dodorare/crossbow>
-- <https://github.com/dodorare/android-manifest-rs>
-- <https://github.com/dodorare/apple-bundle-rs>
+- https://github.com/dodorare/crossbow
+- https://github.com/dodorare/android-manifest-rs
+- https://github.com/dodorare/apple-bundle-rs
 
 > ⚠️ *Note that we may move some libraries to separate repositories for more convenient maintenance in the future.*
 
@@ -39,7 +39,7 @@ Of course, there are already a bunch of promising game engine projects, but they
 
 - **Contact Name:** David Knyshenko
 - **Contact Email:** info@dodorare.com
-- **Website:** <https://dodorare.com>
+- **Website:** https://dodorare.com
 
 ### Legal Structure
 
@@ -56,20 +56,20 @@ Of course, there are already a bunch of promising game engine projects, but they
 
 ### Team Code Repos
 
-- <https://github.com/dodorare>
+- https://github.com/dodorare
 
 GitHub accounts of all team members:
 
-- <https://github.com/enfipy>
-- <https://github.com/olvyko>
-- <https://github.com/Heezay>
-- <https://github.com/Adoka3710>
-- <https://github.com/rodrigocam>
+- https://github.com/enfipy
+- https://github.com/olvyko
+- https://github.com/Heezay
+- https://github.com/Adoka3710
+- https://github.com/rodrigocam
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/ackerman-david/>
-- <https://www.linkedin.com/in/oleksii-knyshenko/>
+- https://www.linkedin.com/in/ackerman-david/
+- https://www.linkedin.com/in/oleksii-knyshenko/
 
 ## Development Roadmap :nut_and_bolt:
 

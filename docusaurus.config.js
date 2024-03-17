@@ -1,6 +1,9 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const mdxMermaid = require('mdx-mermaid');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+// needed for LaTeX compatibility
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -9,12 +12,16 @@ module.exports = {
   url: 'https://grants.web3.foundation',
   baseUrl: '/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon-32x32.png',
   organizationName: 'w3f', // Usually your GitHub org/user name.
   trailingSlash: false,
   projectName: 'Grants-Program', // Usually your repo name.
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
@@ -28,7 +35,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Watch our <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=8Na99WRGypY">sub0 presentation on Support in the Polkadot Ecosystem</a>!',
+        'We are introducing DOT payments to all future grants.<a target="_blank" rel="noopener noreferrer" href="https://grants.web3.foundation/docs/faq#what-does-it-mean-for-payments-to-be-30-dot">See our FAQ for details</a>!',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
@@ -136,9 +143,10 @@ module.exports = {
           beforeDefaultRemarkPlugins: [
           ],
           remarkPlugins: [
-            mdxMermaid
+            math,
           ],
           rehypePlugins: [
+            katex,
           ],
           exclude: [
             'applications/application-template.md',

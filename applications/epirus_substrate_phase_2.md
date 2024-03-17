@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-This is an application for a follow-up grant for the [Epirus Substrate Explorer](https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_explorer.md) that has been completed in the following delivery: <https://github.com/w3f/Grant-Milestone-Delivery/pull/527>
+This is an application for a follow-up grant for the [Epirus Substrate Explorer](https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_explorer.md) that has been completed in the following delivery: https://github.com/w3f/Grant-Milestone-Delivery/pull/527
 
 ### Overview
 
@@ -25,7 +25,7 @@ The Metadata Registry is a standalone service exposing a web-based API to be use
 
 #### **Source Code Verification**
 
-Block explorers supporting EVM smart contracts typically allow contract owners to upload source code for their contracts. Having the source code for a smart contract offers users insights into what the smart contract is doing under the hood, thus increasing transparency. However, the uploaded source code needs verification to ensure that no purposefully misleading source code is uploaded. In order to support this verification process, the ink! development team is implementing reproducible builds in ink! smart contracts (<https://github.com/paritytech/cargo-contract/issues/525>).
+Block explorers supporting EVM smart contracts typically allow contract owners to upload source code for their contracts. Having the source code for a smart contract offers users insights into what the smart contract is doing under the hood, thus increasing transparency. However, the uploaded source code needs verification to ensure that no purposefully misleading source code is uploaded. In order to support this verification process, the ink! development team is implementing reproducible builds in ink! smart contracts (https://github.com/paritytech/cargo-contract/issues/525).
 
 After discussions with the ink! team, we have determined that the process for verifying ink! smart contract source codes will be as follows:
 
@@ -177,7 +177,7 @@ The same team has worked on the delivery of the [first grant](https://github.com
 
 ### Team Code Repos
 
-- <https://github.com/web3labs/epirus-substrate>
+- https://github.com/web3labs/epirus-substrate
 
 ## Future Plans
 

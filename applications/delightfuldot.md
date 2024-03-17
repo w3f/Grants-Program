@@ -143,13 +143,13 @@ Team members
 
 ### Overview
 
-- **Total Estimated Duration:** 3.5 months
+- **Total Estimated Duration:** 4.5 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 30,000 USD
 
 ### Milestone 1 — Foundational modules with core functionalities
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 3 months
 - **FTE:**  2
 - **Costs:** 17,000 USD
 

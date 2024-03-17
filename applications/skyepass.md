@@ -134,7 +134,7 @@ We have not included all popular ones. These are just ones we have actually used
 
 ### Team members
 
-* Song Zhou (Full stack developer) <https://github.com/RoyTimes>
+* Song Zhou (Full stack developer) https://github.com/RoyTimes
 * Zoe Sun (Lead Designer)
 * ... More to be hired
 
@@ -152,7 +152,7 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 
 ### Team Code Repos
 
-* <https://github.com/skyekiwi/skyepass>
+* https://github.com/skyekiwi/skyepass
 
 ## Development Roadmap :nut_and_bolt:
 

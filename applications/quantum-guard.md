@@ -79,13 +79,17 @@ The development will start with the approval of the Grant application.
 ### Overview
 
 * **Description** Development of QuantumGuard - MVP - Phase 0.5
+
 * **Total Estimated Duration:** 32 Person Weeks
+
 * **Full-time equivalent (FTE):**  1
 * **Total Costs:** 9,800 USDC
 
 ### Milestone 1 — Quantum-safe cryptographic algorithms for keypairs
 
+
 - **Estimated duration:** 24 weeks
+
 - **FTE:**  1
 - **Costs:** 5,000 USDC
 
@@ -100,7 +104,9 @@ The development will start with the approval of the Grant application.
 
 ### Milestone 2 — Custom browser extension using quantum-safe keypairs
 
+
 - **Estimated Duration:** 8 weeks
+
 - **FTE:**  1
 - **Costs:** 4,800 USD
 

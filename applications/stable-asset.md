@@ -86,12 +86,12 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 
 ### Team Code Repos
 
-* <https://github.com/nutsfinance>
+* https://github.com/nutsfinance
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/joeztang>
-* <https://www.linkedin.com/in/terry-lam-80a71927>
+* https://www.linkedin.com/in/joeztang
+* https://www.linkedin.com/in/terry-lam-80a71927
 
 ## Development Roadmap :nut_and_bolt:
 

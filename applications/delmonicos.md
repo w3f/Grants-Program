@@ -88,7 +88,7 @@ The following schema describes the overall architecture of the project.
   developing a blockchain front-end similar to substrate-node-ui-template.
 * Documentation of core components, protocols, architecture etc. to be deployed
 * PoC/MVP or other relevant prior work or research on the topic. Current work is located
-  at <https://github.com/lumena-tech/delmonicos>
+  at https://github.com/lumena-tech/delmonicos
   
 #### Data Management
 
@@ -129,7 +129,7 @@ we be successful in the current phase.
 
 * **Contact Name:** Fabrice CROISEAUX
 * **Contact Email:** fabrice.croiseaux@lumena.tech
-* Website: <https://www.lumena.tech>
+* Website: https://www.lumena.tech
 
 ### Legal Structure
 
@@ -140,10 +140,10 @@ we be successful in the current phase.
 
 * Fabrice CROISEAUX is CEO of InTech, a company dedicated to software development, and a subsidiary of POST
   Luxembourg. Fabrice is chairman of [Infrachain](https://infrachain.com/) and is involved into multiple projects
-  based on blockchain. Among them : <https://tokeny.com/>, <https://ibisa.network/>, <https://www.fundsdlt.net/>, or
-  <https://en.mysardines.com/>. He acts as a technology and/or strategy advisor, but also as architect or developer.
-  Here is a small personal project he has recently developed in Rust : <https://github.com/fcroiseaux/icsmerge>.
-  More information on this page : <https://fabrice.io>
+  based on blockchain. Among them : https://tokeny.com/, https://ibisa.network/, https://www.fundsdlt.net/, or
+  https://en.mysardines.com/. He acts as a technology and/or strategy advisor, but also as architect or developer.
+  Here is a small personal project he has recently developed in Rust : https://github.com/fcroiseaux/icsmerge.
+  More information on this page : https://fabrice.io
 * Michel ONFRAY is Managing Director of is own business: "La Compagnie du Diamantaire", he advises high-potential
   technology
   company project leaders on the road to success. He also assists Grand Nancy Innovation in structuring its
@@ -152,8 +152,8 @@ we be successful in the current phase.
 * Antoine DETANTE is a former employee of InTech and has started his own business as a freelance Software Architect and
   Developer. He is an experienced Blockchain architect, mainly on Ethereum, but he as also already "played" with
   Substrate. He is the lead architect and developer of the above mentioned project Ibisa and My Sardine. Here are
-  some sample public repos : <https://github.com/adetante/deconz-sp>, <https://github.com/adetante/explorer-besu-plugin>,
-  <https://github.com/intech-id/collexi-rollup>.
+  some sample public repos : https://github.com/adetante/deconz-sp, https://github.com/adetante/explorer-besu-plugin,
+  https://github.com/intech-id/collexi-rollup.
 * Franck LEGARDEUR is the founder and president of ZEENCO (Zero Emission ENergy COmpany), and has a solid experience
   in the EV infrastructure. He was the Managing Director of France & South of Europe of [EVBox](https://evbox.com/fr-fr/)
   before becoming Managing Director of [ZeBorne](https://zeborne.com/fr-fr/accueil). He is now deploying solution
@@ -161,14 +161,14 @@ we be successful in the current phase.
 
 ### Team Code Repos
 
-* <https://github.com/Delmonicos/charger-node>
+* https://github.com/Delmonicos/charger-node
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/fcroiseaux/>
-* <https://www.linkedin.com/in/michel-onfray-464918b7/>
-* <https://www.linkedin.com/in/adetante/>
-* <https://www.linkedin.com/in/franck-legardeur-a05577/>
+* https://www.linkedin.com/in/fcroiseaux/
+* https://www.linkedin.com/in/michel-onfray-464918b7/
+* https://www.linkedin.com/in/adetante/
+* https://www.linkedin.com/in/franck-legardeur-a05577/
 
 ## Development Roadmap :nut_and_bolt:
 

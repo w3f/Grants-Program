@@ -1,11 +1,11 @@
 # Polkadot NFT Portfolio Tracker by Liisa - MVP 
 
 - **Team Name:** Liisa
-- **Payment Address:** 0x096a685Bfd75c3998CFC4c70177e17ee6b582B0A
+- **Payment Address:** Fiat 04.01.2024, 11:55 PM GMT
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up: 
 
 Liisa operates as a multi-chain NFT data analytics platform, engineered to empower collectors and investors in making proficient, data-driven decisions. 
 
@@ -20,7 +20,7 @@ The portfolio tracker is designed to accommodate the diverse needs of a broad us
 
 ### Architecture
 
-<img width="960" alt="PortoflioTrackerArchitectureNew" src="https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/4990a0db-ea37-4458-b30f-b10b6c464d98"/>
+![Architecture New](https://github.com/LiisaNFT/W3F-Grants-Program/assets/139144686/5ded60b3-0409-44fb-a619-b47c0c6e7de7)
 
 
 ### Technologies
@@ -49,11 +49,11 @@ React.js, often simply called React, is an open-source JavaScript library develo
 
 The project aims to create a system to extract and process event data and metadata related to NFTs within the Polkadot ecosystem. The focus is on building flexible and modular data ingestion mechanisms to accommodate different APIs with minimal code changes, using Node.js components for reusability and scalability. 
 
-To expedite development, the team will initially integrate with the Subsquid API, which is well-documented, robust and  opensource, and provides extensive data for selected protocols like Astar (ERC721, ERC1155, PSP34, PSP37), Basilisk (Uniques pallet), Efinity (ERC-721, ERC-1155), Moonbeam (ERC-721, ERC-1155), Unique Network (Native NFTs), Moonriver (ERC-721, ERC-1155) and Moonsama (ERC-721, ERC-1155). This initial integration will serve two main purposes: to quickly progress towards a working MVP and to serve as a practical example for future developers looking to extend the system with other data sources in the long term.
+To expedite development, the team will initially integrate with the Subsquid API, which is well-documented, robust and  opensource, and provides extensive data for selected protocols like Astar (ERC721, ERC1155, PSP34, PSP37), Basilisk (Uniques pallet), Efinity (ERC-721, ERC-1155), Moonbeam (ERC-721, ERC-1155) and Moonriver (ERC-721, ERC-1155). This initial integration will serve two main purposes: to quickly progress towards a working MVP and to serve as a practical example for future developers looking to extend the system with other data sources in the long term.
 
 #### 2) Data Enrichment
 
-Our backend serves as a vital nexus between supported blockchain protocols and valuable metrics we generate for user wallets and NFT collections. It involves three key activities: crafting and executing API queries, initiating timed triggers, and developing computational algorithms for metrics computation. We create and execute precise API queries to extract event data from Subsquid for protocols such as Astar (ERC721, ERC1155, PSP34, PSP37), Basilisk (Uniques pallet), Efinity (ERC-721, ERC-1155), Moonbeam (ERC-721, ERC-1155), Unique Network (Native NFTs), Moonriver (ERC-721, ERC-1155) and Moonsama (ERC-721, ERC-1155). This enables the continuous refresh of our system with recent blockchain events pertinent to the monitored NFT collections and user wallets. 
+Our backend serves as a vital nexus between supported blockchain protocols and valuable metrics we generate for user wallets and NFT collections. It involves three key activities: crafting and executing API queries, initiating timed triggers, and developing computational algorithms for metrics computation. We create and execute precise API queries to extract event data from Subsquid for protocols such as Astar (ERC721, ERC1155, PSP34, PSP37), Basilisk (Uniques pallet), Efinity (ERC-721, ERC-1155), Moonbeam (ERC-721, ERC-1155), and Moonriver (ERC-721, ERC-1155). This enables the continuous refresh of our system with recent blockchain events pertinent to the monitored NFT collections and user wallets. 
 
 Our backend employs timed triggers to initiate queries to Subsquid at predefined intervals, ensuring we maintain an up-to-date snapshot of relevant blockchain events. Incoming event data, acquired via timed or event-driven triggers, is processed using specially designed computational algorithms. These algorithms generate key performance indicators (KPIs) and metrics for both user wallets and NFT collections, capturing the most essential insights. The calculated metrics are persistently stored in our database, ensuring their continuous availability for subsequent retrieval, analysis, and the provision of comprehensive insights into users' wallets and NFT collections.
 
@@ -61,7 +61,7 @@ All the code for data enrichment will be opensource so that more developers in t
 
 #### 3) Database 
 
-We will be utilizing PostgreSQL as our database management system to store and manage all data. PostgreSQL is an advanced open-source relational database management system that offers a broad range of powerful features. As our choice of infrastructure provider, we will be deploying PostgreSQL on Amazon Web Services (AWS).
+We will be utilizing PostgreSQL as our database management system to store and manage all data. PostgreSQL is an advanced open-source relational database management system that offers a broad range of powerful features. As our choice of infrastructure provider, we will be deploying PostgreSQL on Google Cloud Platform (GCP).
 
 #### 4) Frontend
 
@@ -164,13 +164,13 @@ In a proactive endeavor to understand and address the data-related challenges of
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):**  2.25
 - **Total Costs:** 30,000 USDC
 
 ### Milestone 1 — On-chain data collection, indexing and calculations
 
-- **Estimated duration:** 1.5 months
+- **Estimated duration:** 2.5 months
 - **FTE:**  2.5
 - **Costs:** 17,000 USDC
 
@@ -180,7 +180,7 @@ In a proactive endeavor to understand and address the data-related challenges of
 | 0b.    | Documentation             | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file. Documentation on the modular design of Subsquid API calls is included. |
 | 0c.    | Testing Guide             | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide, we will describe how to run these tests |
 | 0d.    | Docker                    | Provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1a.    | Modular Subsquid API calls | Design and implement API queries to extract event data from the Subsquid API for the supported protocols and the respective token standards and/or pallets: Astar (ERC721, ERC1155, PSP34, PSP37), Basilisk (Uniques pallet), Efinity (ERC-721, ERC-1155), Moonbeam (ERC-721, ERC-1155), Unique Network (Native NFTs), Moonriver (ERC-721, ERC-1155) and Moonsama (ERC-721, ERC-1155). The design will be modular to allow easy replacement with different APIs. This will be developed using Node.js. |
+| 1a.    | Modular Subsquid API calls | Design and implement API queries to extract event data from the Subsquid API for the supported protocols and the respective token standards and/or pallets: Astar (ERC721, ERC1155, PSP34, PSP37), Basilisk (Uniques pallet), Efinity (ERC-721, ERC-1155), Moonbeam (ERC-721, ERC-1155) and Moonriver (ERC-721, ERC-1155). The design will be modular to allow easy replacement with different APIs. This will be developed using Node.js. |
 | 1b.    | Timed-Triggers            | Establish timed triggers to initiate queries to the Subsquid API at predetermined intervals, subsequently refreshing the associated events database with the most recent data. This will be developed using Node.js on the main code and will use cronjobs on the cloud to set the triggers. |
 | 1c.    | User-initiated Triggers   | Implement event-driven triggers that are activated upon user interactions with the application, specifically upon insertion of a wallet address. This will initiate Subsquid API queries and subsequently update the associated events database with the retrieved data. This will be developed using Node.js. |
 | 2a.    | Open-sourced Computational algorithms | Design and implement computational algorithms that, upon activation of either event-driven or timed triggers and the consequent receipt of new event data, will produce key performance indicators (KPIs) and metrics for both user wallets and NFT collections. The calculated metrics will subsequently be stored persistently in the database for subsequent analysis and retrieval. This code will be open-sourced and developed using Node.js. |
@@ -190,7 +190,7 @@ In a proactive endeavor to understand and address the data-related challenges of
 
 ### Milestone 2 — Portfolio tracker front-end implementation
 
-- **Estimated Duration:** 1.5 month
+- **Estimated Duration:** 2.5 month
 - **FTE:**  2.0
 - **Costs:** 13,000 USD
 

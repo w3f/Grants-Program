@@ -101,7 +101,7 @@ There are some existing projects which can be related to the Starks Network. In 
 
 ### Team Website
 
-* <http://www.gbctech.cn/>
+* http://www.gbctech.cn/
 
 ### Legal Structure
 
@@ -121,17 +121,17 @@ Glacier Blockchain Technology is a company registered in Yantai, Shandong, P. R.
 
 ### Team Code Repos
 
-* Starks Network Node: <https://github.com/gbctech/starks-node>
-* Glacier Blockchain: <https://github.com/gbctech>
-* Xiao Zhang: <https://github.com/xz-cn>
-* Xinran Chan: <https://github.com/Lawliet-Chan>
-* Jinjiao Yin: <https://github.com/inoutcode>
-* Linjun Lu: <https://github.com/lulinjun1111>
+* Starks Network Node: https://github.com/gbctech/starks-node
+* Glacier Blockchain: https://github.com/gbctech
+* Xiao Zhang: https://github.com/xz-cn
+* Xinran Chan: https://github.com/Lawliet-Chan
+* Jinjiao Yin: https://github.com/inoutcode
+* Linjun Lu: https://github.com/lulinjun1111
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/xzhangcn/>
-* <https://www.linkedin.com/in/%E6%98%95%E7%87%83-%E9%99%88-b41b26187/>
+* https://www.linkedin.com/in/xzhangcn/
+* https://www.linkedin.com/in/%E6%98%95%E7%87%83-%E9%99%88-b41b26187/
 
 ## Development Roadmap :nut_and_bolt:
 

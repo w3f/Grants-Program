@@ -33,9 +33,9 @@ Please provide the following:
 ## Team :busts_in_silhouette:
 
 * **Members:** Jordan Bibla, Fabian Weber, + 3 engineers, 1 ecosystem developer, 1 designer
-* **LinkedIn Profiles:** <https://www.linkedin.com/in/jbibla>, <https://www.linkedin.com/in/fabian-weber-04100a37>
-* **Code Repos:** <https://github.com/luniehq>
-* **Website:** <https://lunie.io>
+* **LinkedIn Profiles:** https://www.linkedin.com/in/jbibla, https://www.linkedin.com/in/fabian-weber-04100a37
+* **Code Repos:** https://github.com/luniehq
+* **Website:** https://lunie.io
 * **Legal Structure:** Lunie International Software Systems Inc., 60 Atlantic Avenue, Suite 200, Toronto, Ontario, Canada M6K 1X9
 * **Team's Experience:** Jordan and Fabian helped launch the Cosmos Network as employees of Tendermint Inc. They have spent the last two and a half years building, researching, and designing proof of stake experiences together. The Lunie team has also recently completed staking integrations for Kusama.
 

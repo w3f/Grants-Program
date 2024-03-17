@@ -125,7 +125,7 @@ The difference that YieldScan provides is:
 
 * **Contact Name:** Saumya Karan
 * **Contact Email:** [karan@yieldscan.app](mailto:karan@yieldscan.app)
-* **Website:** <https://yieldscan.app/>
+* **Website:** https://yieldscan.app/
 
 ### Legal Structure
 
@@ -138,7 +138,7 @@ We've been building within the Polkadot ecosystem for the past 1 year understand
 
 ### Team Code Repos
 
-* <https://github.com/yieldscan>
+* https://github.com/yieldscan
 
 ### Team LinkedIn Profiles
 
@@ -148,10 +148,10 @@ We've been building within the Polkadot ecosystem for the past 1 year understand
 
 ## Development Status :open_book:
 
-* **Current live version:** <https://yieldscan.app/>
-* **Current codebase:** <https://github.com/yieldscan>
-* **Lo-fi designs:** (for new additions) <https://www.figma.com/file/VnzlrH54Bosh9UR8xQy8Dj/Panda-Finance---Project-YieldScan---Low-fi?node-id=1%3A10087>
-* **Recommendation System Documentation** - <https://docs.google.com/document/d/1ynmx3c_2hKoUXueJ5MT-gZ3ghFYJvynU6U4F_QRgHH8/edit#heading=h.gjdgxs>
+* **Current live version:** https://yieldscan.app/
+* **Current codebase:** https://github.com/yieldscan
+* **Lo-fi designs:** (for new additions) https://www.figma.com/file/VnzlrH54Bosh9UR8xQy8Dj/Panda-Finance---Project-YieldScan---Low-fi?node-id=1%3A10087
+* **Recommendation System Documentation** - https://docs.google.com/document/d/1ynmx3c_2hKoUXueJ5MT-gZ3ghFYJvynU6U4F_QRgHH8/edit#heading=h.gjdgxs
 
 ## Development Roadmap :nut_and_bolt:
 
