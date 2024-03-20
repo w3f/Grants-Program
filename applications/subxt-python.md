@@ -1,6 +1,6 @@
 # `subxt-python`
 
-- **Team Name:** Philoniare Team
+- **Team Name:** Tuguldur Baigalmaa
 - **Payment Address:** 14AZk92CKjovm4tDvzE9XsjGz3HNeeV2tmnbYitAqyweWoRp (UDSC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
