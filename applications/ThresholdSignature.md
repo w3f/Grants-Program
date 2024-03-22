@@ -248,13 +248,13 @@ Other than that, we have not found any integration of a FROST based protocol in 
 
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 10,000 USD
+- **Total Costs:** 15,000 USD
 
 ### Milestone 1 - Olaf Library Integration into [Schnorrkel repository](https://github.com/w3f/schnorrkel)
 
 - **Estimated duration:** 0.5 month
 - **FTE:** 1
-- **Costs:** 5,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
