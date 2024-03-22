@@ -31,7 +31,7 @@ As previously mentioned, the Olaf protocol is composed of two subprotocols:
 
 The high level flow of the FROST protocol is the following:
 1. There is a preprocessing stage where each participant commits to $n$ pairs of nonces and broadcasts them to the remaining participants. Each pair will be used for one signing, so this can be done for each signing, but the preprocessing of multiple pairs ahead of time makes the process more efficient.
-2. The Signature Aggregator (SA) (also called Coordinator or Combiner), which can be any of the participants, constructs the message and an ordered list containing all participant's nonce commitments and broadcasts them to the other participants, that verify them.
+2. The Signature Aggregator (SA) (also called Coordinator or Combiner), which can be any of the participants, broadcasts the message and the product of the nonce commitments to the other participants.
 3. Each participant computes the partial signature using its private signing share and sends it to the SA.
 4. The SA verifies the partial signatures, and uses them to form the final signature.
 
