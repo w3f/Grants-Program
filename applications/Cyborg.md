@@ -56,7 +56,7 @@ The objective is to upload a Docker config file along with a publicly available 
 
 Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge computing, crucial for the growing demand of AI and IoT applications. By primarily catering to Web2 application providers, we're paving the way for a fresh wave of users to engage with the Polkadot ecosystem, fueling its expansion.
 
-Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala leans towards off-chain computation, anchored by a fortified smart contract platform. Our perspective suggests Phala may resonate more with traditional sectors, like health tech, aiming to harness blockchain's innovation. Conversely, our insights show that off-chain computation finds favor with Web2-centric applications. Hence, rather than viewing Phala as a direct rival, we consider them as a complementary entity.
+Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala Network provides off-chain compute infrastructure for smart contract-based applications by enabling users to integrate 'phat' contracts with their existing smart contract logic. While Cyborg is focused on creating utility for web2 applications.
 
 Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture. However, Cyborg leverages software-level privacy mechanisms such as Full Homomorphic Encryption (FHE), providing us with the capability to deploy containerized instances even on non-TEE CPU architectures. We are developing products for a validated market that has already attracted interest from various AI applications and data center providers to join the network once it goes live.
 
@@ -172,3 +172,5 @@ We won the [web3hackx](https://www.hkweb3month.com/hackathon) Hackathon - Hong K
 Megha Varshini (COO) - represented Cyborg Network at the Finals (Top 7 teams) of the PBA pitch Contest in Hong Kong (Feb 2024)
 
 Kresna (CTO) has also contributed to the **InvArch's Web3 Foundation Grant** [Milestone 1](https://github.com/w3f/Grant-Milestone-Delivery/blob/7932b07cc38150701ba8ed034723193f66002975/deliveries/InvArch_M1.md) that has been completed successfully. He also contributed to the  [Chocolate Network](https://substrate.io/ecosystem/projects/chocolate/) as a Substrate developer for their Substrate Builder Program (SBP) Milestone 1 delivery which has been completed successfully.
+
+Cyborg Network has been inducted into the [Polkadot Alpha Builder's Program](https://polkadot.network/development/alpha/) in March 2024.
