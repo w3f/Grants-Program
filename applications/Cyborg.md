@@ -58,7 +58,9 @@ Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge
 
 Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala Network provides off-chain compute infrastructure for smart contract-based applications by enabling users to integrate 'phat' contracts with their existing smart contract logic. While Cyborg is focused on creating utility for web2 applications.
 
-Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture. However, Cyborg leverages software-level privacy mechanisms such as Full Homomorphic Encryption (FHE), providing us with the capability to deploy containerized instances even on non-TEE CPU architectures. We are developing products for a validated market that has already attracted interest from various AI applications and data center providers to join the network once it goes live.
+Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture. However, Cyborg leverages software-level privacy mechanisms such as Full Homomorphic Encryption (FHE), providing us with the capability to deploy containerized instances even on non-TEE CPU architectures. We are developing products for a validated market that has already attracted interest from various AI applications and 50 small data center providers to join the network once it goes live.
+
+![Write here](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/a09109d1-e8f7-4ae5-8f4c-2eafc4b6ef6a)
 
 Our ultimate goal is to establish a decentralized edge computing network capable of executing targeted low-latency tasks to enhance system performance and efficiency. This approach aims to reduce cloud expenses without necessarily replacing cloud services, thereby opening up new markets, particularly in real-time computation for edge AI and edge IoT devices.
 
