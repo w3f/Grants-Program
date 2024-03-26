@@ -150,7 +150,7 @@ Baarerstrasse 86,
 ### Founders' experiences
 
 - [Dakota Barnett](https://www.linkedin.com/in/dakotasb97) has experience succesfully directing and leading multi-national teams, overseeing and directing
-succesful project management strategies, and scaling large operations. He's a seasoned developer, programming in JavaScript (3yrs), Node.js (2yrs),
+successful project management strategies, and scaling large operations. He's a seasoned developer, programming in JavaScript (3yrs), Node.js (2yrs),
 React.js (2yrs), Python (2yrs), Rust (1yr), and the Substrate framework (1yr). Past work includes private projects for previous employers focused on machine learning, task automation, and website development. 💡
 
 - [Gabriel Facco de Arruda](https://github.com/arrudagates) has experience as a Rust Developer, programming for the past 3 years, and as a developer in
