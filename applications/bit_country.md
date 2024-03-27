@@ -203,7 +203,7 @@ Juanita Strydom
 * Managed the international tech edu for 7 years
 
 Kai Zhang (Technical Advisory)
-* CTO of a succesful startup Saas company
+* CTO of a successful startup Saas company
 * Led the team and created a billing solution processing $20m per year
 
 Alan Liang (Technical Advisory)
