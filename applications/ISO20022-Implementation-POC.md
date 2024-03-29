@@ -22,7 +22,7 @@ The goal of this project will be to implement a fully functional minimal viable 
 This MVP will consist of the following components:
 
 ##### 1. Substrate Pallet
-The first component is a pallet that will be resopnsible for storing hashed ISO20022 messages and handeling interbank payment settlements as well as a payment reversal mechanism.
+The first component is a pallet that will be responsible for storing hashed ISO20022 messages and handling interbank payment settlements as well as a payment reversal mechanism.
 1. **Account management for banks:** Banks create an account and transfer some DOT to it.
 2. **Transaction management:** Banks can submit a hashed (and salted) ISO20022 message along with the receiving bank account and DOT amount to the pallet in order to transfer a certain amount of DOT to the receiving bank.
 3. **Payment reversal mechanism:** Banks will be able to revert payments in order to be compliant with ISO20022 messages such as pain.007.001.11 (CustomerPaymentReversalV11) or pacs.007.001.12 (FIToFIPaymentReversalV12).
