@@ -1,9 +1,9 @@
 # Dfinnwallet - Non-custodial wallet solution for the Substrate and EVM Blockchains
 
- ####Team Name: Dfinn Developers
- ####Payment Address: 0x3e587387040c464C7e0c62c58980577CB666800A(USDT/USDC/DOT/DAI)
+ #### Team Name: Dfinn Developers
+ #### Payment Address: 0x3e587387040c464C7e0c62c58980577CB666800A (USDT/USDC/DOT/DAI)
                        1WGriQJiTNParkt61Rpd888W3DuW6dSSFh77PcpYWYKT2nQ (DOT)
- ####Level: 2
+ #### Level: 2
 
 ## Project Overview 📄
 
