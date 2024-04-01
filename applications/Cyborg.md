@@ -1,7 +1,8 @@
 # Cyborg Network - Empowering Decentralized Edge Networks
 
 - **Team Name:** Cyborg Network
-- **Payment Address:** 0x40722FC6D12f79E62Cd2C857F40E82850bB24586 (USDT on Ethereum)
+- **Payment Address:** 15VNtavdKpRmSvGmjKevMaYvtifjNDrSSp4Bv9E2sVsVcnjg (DOT) 
+- **DOT Vesting Address:** 15p7mTm9uKt1w7GF3AU1TNPWm4eAHgieTjtfsVVEtqHazpaY
 - **Level:** 1
 
 ## Project Overview :page_facing_up:
@@ -50,7 +51,9 @@ For this grant application, we are developing a decentralized task verification 
 
 <img alt="Screenshot 2024-02-15 at 1 09 56 PM" src="https://github.com/Cyborg-Network/Grants-Program/assets/93442895/add65d92-0bf6-40df-a3fb-715fc0efce54">
 
-The objective is to upload a Docker config file along with a publicly available dataset such as IPFS and deploy the container over the IPFS dataset inside one of the nodes of the K3s cluster. The executed computation result will be pushed to the Oracle, which will then feed it to the Cyborg substrate chain. Subsequently, the verification pallet will initiate task execution on another connected cluster to reverify the result. If the initial result and verified result are the same, the chain will approve the computation and add it to the block.
+The objective is to upload a Docker configuration file and deploy the container inside one of the worker nodes of the K3s cluster. Before deploying the user's Docker image, the system will run a simulation to check for compilation failures or any startup runtime issues. If there are none, we will then proceed with the deployment.
+
+Deployment will follow this pattern: The system will submit the job to 'N' clusters, with 'N' being selectable by the user. However, we will set a minimum value for 'N' to ensure a baseline of accuracy and high fault tolerance. Users can increase the value of 'N' if they desire greater accuracy and fault tolerance. Among the chosen 'N' clusters, 40-50% will be highly trusted nodes, with the remainder being general/new nodes. This strategy ensures that customers receive a valid output. Despite this, the executed computation results will be pushed to the Oracle, which will then feed it to the Cyborg substrate chain. Subsequently, if the baseline accuracy is achieved, the result will be added to the block, and if the output does not match or there are deployment failures, the system will attempt to re-execute the job from the beginning, with a maximum of 'X' retries. The value of 'X' will be adjusted based on the cost calculations for each execution, which are yet to be determined. If the job continues to fail even after 'X' retries, the system will notify the user of the failure by providing detailed logs and request them to assess the reason for the failure. In case of deployment failures, we will assess whether the issue is due to missed edge cases, configuration issues, network instability, or hardware limitations. Based on this assessment, the system will reassign the job to different workers
 
 ### Ecosystem Fit
 
@@ -58,11 +61,11 @@ Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge
 
 Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala Network provides off-chain compute infrastructure for smart contract-based applications by enabling users to integrate 'phat' contracts with their existing smart contract logic. While Cyborg is focused on creating utility for web2 applications.
 
-Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture. However, Cyborg leverages software-level privacy mechanisms such as Full Homomorphic Encryption (FHE), providing us with the capability to deploy containerized instances even on non-TEE CPU architectures. We are developing products for a validated market that has already attracted interest from various AI applications and 50 small data center providers to join the network once it goes live.
+Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture utilizing TEEs to safeguard user privacy. However, their specific market focus is currently untraceable. We are developing products for a validated market that has already attracted interest from various AI applications and 50 small data center providers to join the network once it goes live.
 
 ![Write here](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/a09109d1-e8f7-4ae5-8f4c-2eafc4b6ef6a)
 
-Our ultimate goal is to establish a decentralized edge computing network capable of executing targeted low-latency tasks to enhance system performance and efficiency. This approach aims to reduce cloud expenses without necessarily replacing cloud services, thereby opening up new markets, particularly in real-time computation for edge AI and edge IoT devices.
+Our ultimate goal is to establish a decentralized edge computing network capable of executing targeted low-latency tasks to enhance system performance and efficiency. This approach aims to reduce the overall cloud footprint by providing an edge-to-cloud continuum, allowing users to augment our services with their existing cloud deployments. This, in turn, opens up new markets, particularly in real-time computation for edge AI and edge IoT devices.
 
 The technological landscape sees a plethora of competitors, each carving their niche with unique technical and market strategies. Renowned names include [Akash Network](https://akash.network/), and [Golem](https://www.golem.network/) .
 
@@ -72,7 +75,7 @@ The technological landscape sees a plethora of competitors, each carving their n
 
 - [Barath Kanna](https://www.linkedin.com/in/barath-kanna) - Founder & CEO
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-t) - Founder & COO
-- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - Co-Founder & CTO
+- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - Co-Founder & CIO
 - [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - Senior Substrate Developer
 - [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Rust Substrate Developer
 
@@ -86,9 +89,9 @@ The technological landscape sees a plethora of competitors, each carving their n
 
 - [Barath Kanna](https://www.linkedin.com/in/barath-kanna) - A developer with a specialization in Rust and blockchain technology. His experience is rooted in designing blockchain infrastructure solutions. Notably, he is an alumni of the Polkadot Blockchain Academy's third cohort at UC Berkeley (Jul - Aug 2023)
 
-- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) (Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
-
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - She has been involved in operations for Web3 projects and has taken initiatives in the blockchain community. One of her contributions is the establishment of [Indi Verse DAO](https://www.linkedin.com/company/indi-verse-dao), a web 3.0 community in India. Additionally, she is the candidate of the Polkadot Ambassador Program. She is also a graduate from the Polkadot Blockchain Academy's Founders Track at Hong Kong (Jan - Feb 2024)
+  
+- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) (Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
 
 - [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - A Senior Rust and Substrate Developer with experience working for projects like [Bitgreen](https://bitgreen.org/).
 
@@ -150,10 +153,10 @@ The goal is to achieve a functional system that is capable of scheduling and ver
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | GPLv3 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can (for example) deploy docker images using our interface. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Working Demo | We will provide video documentation to help developers understand the process of deploying containered tasks with and without sample datasets.|
+| 1. | Working Demo | We will provide video documentation to help developers understand the process of deploying containered tasks.|
 | 2. | Task Examples | We will provide example containers and data sets to help programmers understand and execute batch processes. Currently we provide Examples for Docker, Bash, Terraform etc.. |
 | 3. | Substrate Module: Verification | This pallet will be responsible for assign the task to a secondary cluster for result verification. Once verifed the accepted result will be added to the block. |
 | 4. | Substrate Module: Edge Connect| This pallet will posses the logic for schedluing tasks to a specific cluster that matches the required specifications|
