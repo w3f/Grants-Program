@@ -92,7 +92,7 @@ There's already an [existing template](https://github.com/substrate-developer-hu
 
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 3,500 USD
+- **Total Costs:** 4,550 USD
 
 ### Milestone 1 - Full CLI functionality
 
@@ -102,14 +102,23 @@ There's already an [existing template](https://github.com/substrate-developer-hu
 
 |  Number | Deliverable                           | Specification                                                                                                                                                   |
 |--------:|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                               | Apache 2.0                                                                                                                                                      |
-| **0b.** | Documentation                         | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) call the CLI                      |
-| **0c.** | Testing and Testing Guide             | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|     0e. | Article                               | We will publish an **article**/workshop that explains how to run the CLI (what was done/achieved as part of the grant).                                         |
+|  **0.** | License                               | Apache 2.0                                                                                                                                                      |
 |      1. | TypeScript React Front-End Template   | Create a modified version of React template with TypeScript                                                                                                     |
 |      2. | TypeScript Vue Front-End Template     | Create a TypeScript version of Vue Front-End Template                                                                                                           |
-|      3. | TypeScript Angular Front-End Template | Create a TypeScript version of Angular Front-End Template                                                                                                       |
-|      4. | Published Global CLI command          | Publish the CLI command to npm registry                                                                                                                         |                                                                                                      
+|      3. | TypeScript Angular Front-End Template | Create a TypeScript version of Angular Front-End Template                                                                                                       | 
+
+### Milestone 2 - Global npm command
+
+- **Estimated duration:** 1 month
+- **FTE:**  1
+- **Costs:** 1,050 USD
+
+|  Number | Deliverable                           | Specification                                                                                                                                                   |
+|--------:|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | Documentation Site                    | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) call the CLI                      |
+| **0b.** | Testing and Testing Guide             | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0c.** | Article                               | We will publish an **article**/workshop that explains how to run the CLI (what was done/achieved as part of the grant).                                         |
+|      1. | Published Global CLI command          | Publish the CLI command to npm registry                                                                                                                         |                                                                                                      
 
 
 ## Additional Information :heavy_plus_sign:
