@@ -1,7 +1,7 @@
 # Ssal: Ink Commodities Exchange
 - **Team Name:** Mansa Capital
 - **Product Name:** Ssal
-- **Payment Address:** 15JQDAHWTbWju9RWQfP7EQvNV9skCvm5xh69Mb5J5YMxY8Hm (USDT)
+- **Payment Address:** Fiat 15.03.2024, 15:30
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
