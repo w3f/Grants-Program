@@ -146,7 +146,7 @@ Any Substrate developer will end up using those at some point.
 | 1. | Exercise `genesis_config` | We will add a pallet that will teach users how to create a genesis config for their pallets |  
 | 2. | Exercise `mocks` | We will add a pallet that will teach users how to mock a pallet in order to test it without overhead |  
 | 3. | Exercise `weight` | We will add a pallet that will teach users how to weights to their extrinsics by runing runtime benchmarks |  
-| 4. | Exercise `hooks` | We will add a pallet that will teach users how to add usefull hooks to a pallet |  
+| 4. | Exercise `hooks` | We will add a pallet that will teach users how to add useful hooks to a pallet |  
 | 5. | Exercise `imbalances` | We will add a pallet that will teach users about a recuring feature of Substrate's architecture, imbalance. They will understand its role and get familiar with the associated functions |  
 | 6. | Exercise `external_workers` | We will add a pallet that will teach users how to make use of external workers |
 
