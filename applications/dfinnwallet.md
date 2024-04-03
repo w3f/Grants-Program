@@ -3,7 +3,7 @@
  #### Team Name: Dfinn Developers
  #### Payment Address: 0x3e587387040c464C7e0c62c58980577CB666800A (USDT/USDC/DOT/DAI)
                        1WGriQJiTNParkt61Rpd888W3DuW6dSSFh77PcpYWYKT2nQ (DOT)
- #### Level: 2
+ #### Level: 1
 
 ## Project Overview 📄
 
@@ -101,11 +101,11 @@ https://www.quickcompany.in/directors/08805150-bharath-billavara-ramesh
 ### Overview
 
 ##### Total Estimated Duration: 2 Months
-##### Total Costs:  11500 USD
+##### Total Costs:  6000 USD
 
 ##### Milestone 1 — New Feature Implementation 
 
-- ##### Estimated Duration:- Estimated Duration: -1.5 month
+- ##### Estimated Duration:- Estimated Duration: 2 months
 - #####  Costs: 6000
 
 This milestone focuses on implementing basic features within the wallet app. In today's AI-driven era, we can streamline the process of adding these features efficiently. My goal for this milestone is to onboard high-quality developers onto the team. I've already tested some of these features using JavaScript, making it easier for new developers to implement with clear references.
@@ -124,13 +124,6 @@ This milestone focuses on implementing basic features within the wallet app. In 
 |6.  |Web3Inbox Setup  | Integrating the Web3Inbox feature using the official WalletConnect SDK and other decentralized mail/chat providers. |
 
 
-#####  Milestone 2 — Wallet Audit
- 
-##### Estimated Duration :  Less than 2 weeks
-##### Costs:  5500 USD
-
-
-This milestone is exclusively focused on conducting thorough wallet audits to bolster the security of our application. We have taken the initiative to obtain quotes from a highly regarded audit firm to ensure the integrity and safety of our platform.
 
 ## Future Plans
 
