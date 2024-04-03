@@ -11,6 +11,8 @@
 
 ### Overview
 
+This application is a follow up from our previous [grant application](https://github.com/w3f/Grants-Program/pull/1933)
+
 Cyborg Network is developing a DePIN based marketplace for edge computing servers to help AI and IoT companies boost their performance while curbing the cloud operations cost, all without necessitating a shift from their current cloud setups. Our vision is to act as a crucial middleware on the network's edge, managing specific low-latency tasks and reduce the costs associated with cloud operations, all the while complementing existing cloud services. As a premier venture of this nature in the Polkadot landscape, our network effortlessly allows providers to integrate their machines, rewarding them for their invaluable contribution.
 
 We establish connections with small to medium-sized data centers to address the demands of enterprise-level clients, ensuring that their requirements are fully met. Our primary emphasis lies in delivering tailored service packages, meticulously designed for diverse deployment scenarios. Our overarching goal is to provide users with a service experience reminiscent of the Web 2.0 era.
@@ -84,6 +86,11 @@ The technological landscape sees a plethora of competitors, each carving their n
 - **Contact Name:** Barath Kanna
 - **Contact Email:** barathkannaofficial@gmail.com
 - **Website:** https://cyborgnetwork.io
+
+### Legal Structure
+
+- **Registered Address:** 1111b South Governors Avenue, Dover, DE 19904 US
+- **Registered Legal Entity:** ResoluteX Labs, Inc.
 
 ### Team's experience
 
