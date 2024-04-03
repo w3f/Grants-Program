@@ -76,6 +76,10 @@ GitHub accounts of team members:
 
 - https://www.linkedin.com/in/sergefdrv/en/
 
+### Google Scholar Profiles
+
+- https://scholar.google.com/citations?user=ugXwOr0AAAAJ
+
 ## Development Status :open_book:
 
 The project is in early (research) stages, namely [state-of-the-art exploration](https://github.com/replica-io/replica-io/issues/7). The first phase of the exploration was about exploring some notable implementations of distributed protocols; it has been recently concluded with a [long-read blog post](https://replica-io.dev/blog/2024/03/04/on-implementation-of-distributed-prtocols) (and a [companion video](https://youtu.be/Q6wW8NqtpGw)).
@@ -115,13 +119,13 @@ For each of the explored frameworks, the findings will be summarized in an overv
 - **FTE:**  1.0
 - **Costs:** 19,500 USD
 
-|  Number | Deliverable               | Specification                                                                                                                                                                                                                                             |
-| ------: | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                   | CC-BY-4.0 (docs) / Apache 2.0 (code)                                                                                                                                                                                                                      |
-| **0b.** | Documentation             | For each of the explored frameworks, the findings will be summarized in an overview and added to the [project's wiki on GitHub](https://github.com/replica-io/replica-io/wiki/State-of-the-art-exploration).                                              |
-| **0c.** | Testing and Testing Guide | N/A                                                                                                                                                                                                                                                       |
-| **0d.** | Docker                    | N/A                                                                                                                                                                                                                                                       |
-|     0e. | Article & Video           | The final conclusions will be published in a detailed blog post with a companion video on the project's website. (It will be similar to [the one for the first phase](https://replica-io.dev/blog/2024/03/04/on-implementation-of-distributed-prtocols).) |
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | Copyright and Licenses | CC BY 4.0 / Apache 2.0 |
+| **0b.** | Documentation/Tutorial | For each of the explored frameworks, the findings will be summarized in an overview and added to the [project's wiki on GitHub](https://github.com/replica-io/replica-io/wiki/State-of-the-art-exploration). |
+| **0c.** | Methodology | The final article will describe the methodology used in the exploration. |
+| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. |
+| **0e.** | Article | The final conclusions will be published in a detailed blog post with a companion video (in English) on the project's website. (It will be similar to [the one for the first phase](https://replica-io.dev/blog/2024/03/04/on-implementation-of-distributed-prtocols).) The article will contain the following statement in an acknowledgments section:  _This work was supported by a research grant from the Web3 Foundation_. |
 
 ## Future Plans
 
