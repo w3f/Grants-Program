@@ -149,9 +149,9 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 - **Contact Name:** Phalgun Shenoy
 
 - **Contact Email:** shenoy@polkamusic.io
-- **Website:** <https://polkamusic.io> / <https://bitcoinmusic.org>
+- **Website:** https://polkamusic.io / https://bitcoinmusic.org
 - **Telegram:** @polkashenoy
-- **LinkedIn:** <https://www.linkedin.com/in/shenoyphalgun/>
+- **LinkedIn:** https://www.linkedin.com/in/shenoyphalgun/
 
 ### Legal Structure
 
@@ -169,7 +169,7 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 - 4 years of experience in designing blockchain architecture & microeconomy.
 - A content creator on YouTube with 20+ million views.
 - B.E. Computer Science
-- Founder of <https://bitcoinmusic.org>, an industrial grade NFT protocol for the industry.
+- Founder of https://bitcoinmusic.org, an industrial grade NFT protocol for the industry.
 
 ### John Fortner
 
@@ -207,23 +207,23 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 
 ### Team Code Repos
 
-- PolkaMusic -> <https://github.com/polkamusic/PolkaMusic>
+- PolkaMusic -> https://github.com/polkamusic/PolkaMusic
 
-- BitcoinMusic -> <https://github.com/bitcoinmusicorg/bitcoinmusic-core>
+- BitcoinMusic -> https://github.com/bitcoinmusicorg/bitcoinmusic-core
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/shenoyphalgun/>
+- https://www.linkedin.com/in/shenoyphalgun/
 
-- <https://www.linkedin.com/in/johnfortner/>
-- <https://www.linkedin.com/in/s5k0651/>
-- <https://www.linkedin.com/in/rastogipranshu/>
-- <https://www.linkedin.com/in/david-hidalgo-gato/>
-- <https://www.linkedin.com/in/amit-dua-97348415/>
+- https://www.linkedin.com/in/johnfortner/
+- https://www.linkedin.com/in/s5k0651/
+- https://www.linkedin.com/in/rastogipranshu/
+- https://www.linkedin.com/in/david-hidalgo-gato/
+- https://www.linkedin.com/in/amit-dua-97348415/
 
 ## Development Status :open_book:
 
-- Our reference Smart Streaming Platform front-end is live on <https://polkamusic.io>
+- Our reference Smart Streaming Platform front-end is live on https://polkamusic.io
 - PolkaMusic substrate testnet is currently being run for development
 - The Rights Management Pallet is in the process of being built and public on [PolkaMusic Repo](https://github.com/polkamusic/PolkaMusic/blob/master/pallets/rmp/src/lib.rs)
 
@@ -287,9 +287,9 @@ We plan to make PolkaMusic the go-to protocol for music businesses wanting to ad
 
 In the immediate short term, we have the following 3rd party SSPs/blockchains integrating into PolkaMusic once we are live:
 
-- <https://OneMusic.space> - Works similar to soundcloud, tokenized via ONEM tokens.
-- <https://kuting.club> - A Chinese Smart Streaming Platform with KUTING tokens.
-- <https://BitcoinMusic.org> - An industrial grade NFT platform for the Music industry, connecting to PolkaMusic to leverage PolkaBTC.
+- https://OneMusic.space - Works similar to soundcloud, tokenized via ONEM tokens.
+- https://kuting.club - A Chinese Smart Streaming Platform with KUTING tokens.
+- https://BitcoinMusic.org - An industrial grade NFT platform for the Music industry, connecting to PolkaMusic to leverage PolkaBTC.
 
 The long term features would include:
 

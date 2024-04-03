@@ -77,11 +77,11 @@ Hyungsuk is Plasm network's core developer. He developed Subswap, AMM in substra
 
 ### Team Code Repos
 
-* <https://github.com/digitalnativeinc/standard-substrate>
+* https://github.com/digitalnativeinc/standard-substrate
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/hyungsukkang>
+* https://www.linkedin.com/in/hyungsukkang
 
 ## Development Roadmap :nut_and_bolt:
 

@@ -3,12 +3,13 @@
 - **Team Name:** Davanti
 - **Payment Address:** 16m9eMpB3BuPSXwjvdCY6z63pTuvdnv8FjmmH33ZkYPCr9XC
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2178#issuecomment-1906276565)
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-This proposal is in response to the following RFP:  [Analysis Website and Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/analysis-website-and-data-platform.md)
+This proposal is in response to the following RFP:  [Analysis Website and Data Platform](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/analysis-website-and-data-platform.md)
 
 The goal of the Dot-ETL project is to lower the friction required to conduct fine-grained and aggregated analysis of transactions on Polkadot network, via a framework to extract Polkadot transaction-level data to various offline formats: e.g. CSV / delimited, relational, columnar.  Furthermore, we intend to develop a framework to ETL Substrate to [Google BigQuery](https://cloud.google.com/bigquery), orchestrated via [Google Cloud Composer](https://cloud.google.com/composer).  
 

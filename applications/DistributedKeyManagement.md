@@ -68,15 +68,15 @@ Jett Hays is the President of the Carnegie Mellon blockchain club where he helps
 
 ### Team Code Repos
 
-- <https://github.com/KryptikApp>
-- <https://github.com/KryptikApp/kryptikwebapp>
-- <https://github.com/KryptikApp/kryptik-seedloop>
+- https://github.com/KryptikApp
+- https://github.com/KryptikApp/kryptikwebapp
+- https://github.com/KryptikApp/kryptik-seedloop
 
-- <https://github.com/jettblu>
+- https://github.com/jettblu
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/jett-hays-491b541b7/>
+- https://www.linkedin.com/in/jett-hays-491b541b7/
 
 ## Development Status :open_book:
 

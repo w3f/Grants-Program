@@ -535,141 +535,16 @@ After the release of the MVP we expect to develop a custom governance token to c
 
 The below table outlines the functionalities of each software component that will be delivered as part of the MVP release, which is covered by the W3F grant. We have also outlined future features we would expect to include in these components. These are provided to show our vision but are not part of the delivery.
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td><strong>MVP functionality</strong>
-   </td>
-   <td><strong>Future features</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Captcha client
-   </td>
-   <td>
-<ul>
+| Component                                     | MVP functionality                                                 | Future features                                            |
+|-----------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------|
+| **Captcha client**                            | - Prosopo client SDK (javascript, html, css)                      | - iOS, Android, React Native and Flutter implementations   |
+| **User portal** <br /> (closed source - not part of delivery) | - Provider setup <br /> - Dapp Operator setup                    | - Dapp User reputation viewer <br /> - Disputes management |
+| **Operator portal** <br /> (closed source - not part of delivery) | *Not included*                                                    | - Aggregate analytics viewer <br /> - Disputes management  |
+| **Provider Service**                          | - Prosopo Captcha Service SDK in javascript supporting Mongodb database | - Java, Go, C++, Python <br /> - SQL databases             |
+| **Dapp Smart Contract**                       | - Prosopo Dapp Substrate external reputation interface            |                                                            |
+| **Prosopo Smart Contract**                    | - Prosopo Smart Contract                                          | - Disputes features <br /> - Open governance model         |
+| **Token Smart Contract**                      | *Not included*                                                    | - Governance token                                         |
 
-<li>Prosopo client SDK (javascript, html, css)
-</li>
-</ul>
-   </td>
-   <td>
-<ul>
-
-<li>iOS, Android, React Native and Flutter implementations
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>User portal
-<br />
-(closed source - not part of delivery)
-   </td>
-   <td>
-<ul>
-
-<li>Provider setup
-</li>
-<li>Dapp Operator setup
-</li>
-</ul>
-   </td>
-   <td>
-<ul>
-
-<li>Dapp User reputation viewer
-</li>
-<li>Disputes management
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Operator portal
-<br />
-(closed source - not part of delivery)
-   </td>
-   <td><em>Not included</em>
-   </td>
-   <td>
-<ul>
-
-<li>Aggregate analytics viewer
-</li>
-<li>Disputes management
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Provider Service
-   </td>
-   <td>
-<ul>
-
-<li>Prosopo Captcha Service SDK in javascript supporting Mongodb database
-</li>
-</ul>
-   </td>
-   <td>
-<ul>
-
-<li>Java, Go, C++, Python
-</li>
-<li>SQL databases
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Dapp Smart Contract
-   </td>
-   <td>
-<ul>
-
-<li>Prosopo Dapp Substrate external reputation interface
-</li>
-</ul>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Prosopo Smart Contract
-   </td>
-   <td>
-<ul>
-
-<li>Prosopo Smart Contract
-</li>
-</ul>
-   </td>
-   <td>
-<ul>
-
-<li>Disputes features
-</li>
-<li>Open governance model
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Token Smart Contract
-   </td>
-   <td><em>Not included</em>
-   </td>
-   <td>
-<ul>
-
-<li>Governance token
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
 
 The above software components include documentation required to run them, publishing to public repositories when appropriate and basic partial coverage (~80%) unit tests.
 
@@ -747,92 +622,15 @@ A review of existing solutions is provided below.
 
 Comparison with other data labelling and captcha service providers:
 
-<table>
-  <tr>
-   <td><strong>Feature</strong>
-   </td>
-   <td><strong>Google recaptcha</strong>
-   </td>
-   <td><strong>hCaptcha</strong>
-   </td>
-   <td><strong>Effect AI</strong>
-   </td>
-   <td><strong>Prosopo</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Decentralized
-   </td>
-   <td>❌
-   </td>
-   <td>Partially
-   </td>
-   <td>✔️
-   </td>
-   <td>✔️
-   </td>
-  </tr>
-  <tr>
-   <td>Portable reputation
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>✔️
-   </td>
-  </tr>
-  <tr>
-   <td>Anonymous
-   </td>
-   <td>✔️
-   </td>
-   <td>✔️
-   </td>
-   <td>❌
-   </td>
-   <td>✔️
-   </td>
-  </tr>
-  <tr>
-   <td>Open human verification marketplace
-   </td>
-   <td>❌
-   </td>
-   <td>✔️
-   </td>
-   <td>❌
-   </td>
-   <td>✔️
-   </td>
-  </tr>
-  <tr>
-   <td>Low-trust smart contract bot prevention
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>✔️
-   </td>
-  </tr>
-  <tr>
-   <td>Prioritises human verification over data labelling
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>✔️
-   </td>
-  </tr>
-</table>
+| Feature                                       | Google recaptcha | hCaptcha  | Effect AI | Prosopo |
+|-----------------------------------------------|------------------|-----------|-----------|---------|
+| Decentralized                                 | ❌               | Partially | ✔️        | ✔️      |
+| Portable reputation                           | ❌               | ❌        | ❌        | ✔️      |
+| Anonymous                                     | ✔️               | ✔️        | ❌        | ✔️      |
+| Open human verification marketplace           | ❌               | ✔️        | ❌        | ✔️      |
+| Low-trust smart contract bot prevention       | ❌               | ❌        | ❌        | ✔️      |
+| Prioritises human verification over data labelling | ❌       | ❌        | ❌        | ✔️      |
+
 
 ##### 2.9.4.3 Similar projects in related ecosystems
 
@@ -854,7 +652,7 @@ Idena is similar in that it requires users to complete CAPTCHAs to prove their h
 
 - Contact Name: Chris Taylor
 - Contact Email: chris@prosopo.io
-- Website: <https://prosopo.io>
+- Website: https://prosopo.io
 
 ### 3.3 Legal Structure
 
@@ -987,75 +785,19 @@ All our schedules assume two full time equivalent software developers / designer
 - Grant ask: 546 hours
 - Grant cost: 13650 DAI
 
-<table>
-   <thead>
-      <tr>
-         <td>Number</td>
-         <td>Deliverable</td>
-         <td>Specification</td>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>0a.</td>
-         <td>License</td>
-         <td>GPLv3</td>
-      </tr>
-      <tr>
-         <td>0b.</td>
-         <td>Documentation</td>
-         <td>We will provide both inline documentation of the code and a basic tutorial that explains a user can use the Contract docker image and Provider Service docker image. This will demonstrate how to register as a Provider from the command line and host and serve captcha data with a local Substrate Chain (Substrate Contracts Node).</td>
-      </tr>
-      <tr>
-         <td>0c.</td>
-         <td>Testing Guide</td>
-         <td>Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the project READMEs.</td>
-      </tr>
-      <tr>
-         <td>0d.</td>
-         <td>Docker</td>
-         <td>We will provide two Dockerfile(s) that can be used to test all the functionality delivered with this milestone.</td>
-      </tr>
-      <tr>
-         <td>0e.</td>
-         <td>Article</td>
-         <td>We will publish an article that introduces Prosopo and the service it will provide. The contract features will be described in the README.md along with details how to run.  (Content, language and medium should reflect your target audience described above.)</td>
-      </tr>
-      <tr>
-         <td>1</td>
-         <td>Prosopo Contract Development</td>
-         <td>
-            <ul>
-               <li>Contract containing all set / get functions for Prosopo captcha service written in ink!</li>
-               <li>ink! Unit Tests for Prosopo Contract (80% coverage)</li>
-               <li>External ink! contract containing function to check DApp User reputation in Prosopo Contract</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td>2</td>
-         <td>Prosopo Provider Service</td>
-         <td>
-            <ul>
-               <li>Command line interface for Providers to:</li>
-                  <ul>
-                     <li>store a local captcha database (MongoDB)</li>
-                     <li>serve captchas to users</li>
-                     <li>check captcha solutions</li>
-                     <li>interact with the Prosopo Contract</li>
-                  </ul>
-               <li>Written in TypeScript</li>
-               <li>TypeScript unit tests (80% coverage)</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td>2</td>
-         <td>External Contract</td>
-         <td>External contract containing function to check DApp User reputation in Prosopo Contract</td>
-      </tr>
-</tbody>
-</table>
+| Number | Deliverable                    | Specification |
+|--------|--------------------------------|---------------|
+| 0a.    | License                        | GPLv3         |
+| 0b.    | Documentation                  | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use the Contract docker image and Provider Service docker image. This will demonstrate how to register as a Provider from the command line and host and serve captcha data with a local Substrate Chain (Substrate Contracts Node). |
+| 0c.    | Testing Guide                  | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the project READMEs. |
+| 0d.    | Docker                         | We will provide two Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e.    | Article                        | We will publish an article that introduces Prosopo and the service it will provide. The contract features will be described in the README.md along with details how to run. |
+| 1      | Prosopo Contract Development   | Contract containing all set / get functions for Prosopo captcha service written in ink!. ink! Unit Tests for Prosopo Contract (80% coverage). External ink! contract containing function to check DApp User reputation in Prosopo Contract 
+| 2      | Prosopo Provider Service       | - Command line interface for Providers to: store a local captcha database (MongoDB), serve captchas to users, check captcha solutions, interact with the Prosopo Contract written in TypeScript. TypeScript unit tests (80% coverage) |
+| 2      | External Contract              | External contract containing function to check DApp User reputation in Prosopo Contract |
+
+
+
 
 ### 5.3 Milestone 2 - Prosopo Client SDK & Delivery
 
@@ -1064,66 +806,17 @@ All our schedules assume two full time equivalent software developers / designer
 - Grant ask: 273 hours
 - Grant cost: 6825 DAI
 
-<table>
-   <thead>
-      <tr>
-         <td>Number</td>
-         <td>Deliverable</td>
-         <td>Specification</td>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>0a.</td>
-         <td>License</td>
-         <td>GPLv3</td>
-      </tr>
-      <tr>
-         <td>0b.</td>
-         <td>Documentation</td>
-         <td>We will documentation that explains how to include the Captcha Client in a DApp website and smart contract. All previous documentation will be reviewed and finalised.</td>
-      </tr>
-      <tr>
-         <td>0c.</td>
-         <td>Testing Guide</td>
-         <td>Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the project README.</td>
-      </tr>
-      <tr>
-         <td>0d.</td>
-         <td>Docker</td>
-         <td>We will provide Dockerfile(s) that can be used to test all the functionality delivered with this milestone. These come as a single docker-compose file for all three services (Prosopo Client SDK, Provider Service SDK, Prosopo Contract)</td>
-      </tr>
-      <tr>
-         <td>0e.</td>
-         <td>Article</td>
-         <td>We will create a demo website on GitHub pages that shows how to implement the Captcha Client and create an accompanying article about this.</td>
-      </tr>
-      <tr>
-         <td>1</td>
-         <td>Prosopo Client SDK</td>
-         <td>This is a frontend JavaScript client presented to a DApp User that will:
-         <ul>
-            <li>check account status</li>
-            <li>request captchas from the Prosopo Provider Service</li>
-            <li>submit solutions</li>
-            <li>validate captcha data with on-chain commitment from Provider</li>
-            <li>validate solution was approved on-chain</li>
-         </ul>
-         Unit tests will be provided. The client will be written in TypeScript.
-         </td>
-      </tr>
-      <tr>
-         <td>2</td>
-         <td>Demo Website</td>
-         <td>We will create a demo website on GitHub pages that shows how to implement the Captcha Client.</td>
-      </tr>
-      <tr>
-         <td>3</td>
-         <td>Integration Repository</td>
-         <td>Scrips to run all components in developer environment</td>
-      </tr>
-</tbody>
-</table>
+| Number | Deliverable           | Specification                                                                                                                                                                                                                   |
+|--------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License               | GPLv3                                                                                                                                                                                                                            |
+| 0b.    | Documentation         | We will documentation that explains how to include the Captcha Client in a DApp website and smart contract. All previous documentation will be reviewed and finalised.                                                           |
+| 0c.    | Testing Guide         | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the project README.                                                                         |
+| 0d.    | Docker                | We will provide Dockerfile(s) that can be used to test all the functionality delivered with this milestone. These come as a single docker-compose file for all three services (Prosopo Client SDK, Provider Service SDK, Prosopo Contract) |
+| 0e.    | Article               | We will create a demo website on GitHub pages that shows how to implement the Captcha Client and create an accompanying article about this.                                                                                      |
+| 1      | Prosopo Client SDK    | This is a frontend JavaScript client presented to a DApp User that will check account status, request captchas from the Prosopo Provider Service, submit solutions, validate captcha data with on-chain commitment from Provider, validate solution was approved on-chain. Unit tests will be provided. The client will be written in TypeScript. |
+| 2      | Demo Website          | We will create a demo website on GitHub pages that shows how to implement the Captcha Client.                                                                                                                                     |
+| 3      | Integration Repository| Scripts to run all components in developer environment                                                                                                                                                                            |
+
 
 ## 6 Future Plans
 

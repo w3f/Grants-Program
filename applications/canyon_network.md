@@ -27,7 +27,7 @@ There is no doubt that the infrastructure, providing a secure, highly available,
 
 - **Contact Name:** Liu-Cheng Xu
 - **Contact Email:** xuliuchengxlc@gmail.com
-- **Website:** <https://canyon-network.io>
+- **Website:** https://canyon-network.io
 
 ### Legal Structure
 
@@ -43,17 +43,17 @@ There is no doubt that the infrastructure, providing a secure, highly available,
 
 ### Team Code Repos
 
-- <https://github.com/canyon-network>
-- <https://github.com/canyon-network/canyon>
-- <https://github.com/canyon-network/canyon-cli>
+- https://github.com/canyon-network
+- https://github.com/canyon-network/canyon
+- https://github.com/canyon-network/canyon-cli
 
 The GitHub accounts of all team members:
 
-- <https://github.com/liuchengxu>
+- https://github.com/liuchengxu
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/liucheng-xu-2a639b116/>
+- https://www.linkedin.com/in/liucheng-xu-2a639b116/
 
 ## Development Status :open_book:
 
@@ -80,7 +80,7 @@ Currently, we already have a skeleton substrate [canyon](https://github.com/cany
 |    0c. | Testing Guide            | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                                                                                      |
 |    0d. | Docker                   | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                                                                                          |
 |    0e. | Article                  | We will publish an **article** that explains the implementaion details of PoA consensus. We will update our paper with more SPoRA technical details and analysis.                                                                                                                                                                                                                                                      |
-|     1. | Node: `cc-rpc`           | We will create a crate that will provides two RPCs: `permastore_submit` and `permastore_retrieve` for storing the data(<=10MiB) respectively                                                                                                                                                                                                                                                                           |
+|     1. | Node: `cc-rpc`           | We will create a crate that will provides two RPCs: `permastore_submit` and `permastore_retrieve` for storing the data(&lt;=10MiB) respectively                                                                                                                                                                                                                                                                           |
 |     2. | Node: `cc-database`      | We will create a crate that will provide the feature of persistent transaction data storage on the top of offchain storage.                                                                                                                                                                                                                                                                                            |
 |     3. | Node: `cc-consensus-poa` | We will create a crate that will implement the core algorithm of PoA illustrated in the white paper. This crate will also implement the function of inherent data provider to inject a `DigestItem::Seal` entry providing the proof of access into the block header. We will verify the `DigesteItem::Seal(PoA)` item in the block header by wrapping a poa import queue component into the current babe block import. |
 |     4. | Node: `pallet-poa`       | We will create a pallet that will implement `ProvideInherent` to make use of the inherent data created in step 3, create an inherent extrinsic `update_storage_capacity` recording the storage capacity of block author on-chain.                                                                                                                                                                                      |
@@ -91,12 +91,12 @@ Currently, we already have a skeleton substrate [canyon](https://github.com/cany
 - `permastore_submit`
 
   - `fn submit(value: Bytes) -> Result<H256>`
-  - user can send arbitray data bytes(<=10MiB) to the node, the chunk root will be returned once stored successfully.
+  - user can send arbitray data bytes(&lt;=10MiB) to the node, the chunk root will be returned once stored successfully.
 
 - `permastore_retrieve`
 
   - `fn retrieve(key: Bytes) -> Result<Option<Bytes>>`
-  - user can retrieve the data(<=10MiB) directly using this PRC, the key is the chunk root of the data.
+  - user can retrieve the data(&lt;=10MiB) directly using this PRC, the key is the chunk root of the data.
 
 ## Future Plans
 

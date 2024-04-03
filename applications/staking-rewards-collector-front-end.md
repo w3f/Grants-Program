@@ -50,7 +50,7 @@ The [staking-rewards-collector](https://github.com/w3f/staking-rewards-collector
 
 * **Contact Name:** Jackson Harris III
 * **Contact Email:** jackson.harris3@gmail.com
-* **Website:** <https://www.linkedin.com/in/jacksonharris3/>
+* **Website:** https://www.linkedin.com/in/jacksonharris3/
 
 ### Legal Structure
 
@@ -63,11 +63,11 @@ Jackson Harris: Software Engineer 3 years, Digital Marketing/Business Developmen
 
 ### Team Code Repos
 
-* <https://github.com/jackson-harris-iii/staking-rewards-viewer>
+* https://github.com/jackson-harris-iii/staking-rewards-viewer
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/jacksonharris3/>
+* https://www.linkedin.com/in/jacksonharris3/
 
 ## Development Status :open_book:
 

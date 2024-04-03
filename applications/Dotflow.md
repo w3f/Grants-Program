@@ -194,7 +194,7 @@ Our future plan is to expand our core functionality and add more features so tha
 - Route tokens based on the amount, sender and/or the token itself
 - Split the transferred amount to multiple addresses
 
-An exciting feature we would like to build in the future is enable token transfers between blockchains that are not part of the Polkadot network(e.g. Polkadot<->Ethereum).
+An exciting feature we would like to build in the future is enable token transfers between blockchains that are not part of the Polkadot network(e.g. Polkadot\<-\>Ethereum).
 
 ## Additional Information :heavy_plus_sign:
 

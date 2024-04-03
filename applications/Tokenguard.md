@@ -100,32 +100,32 @@ Over the course of six months, Tokenguard application was meticulously developed
 
 #### **Features and designs:**
 
-Dashboards overview - The overview of currently indexed and supported parachains:<br>
-<img src="https://imagizer.imageshack.com/img924/1246/BK6CYe.png" width="800" border="0"><br><br>
 
-Ecosystem metrics dashboards - The on-chain data is visually presented through charts that are categorized into the most significant and essential aspects:<br>
-<img src="https://imagizer.imageshack.com/img923/2272/10xb78.png" width="800" border="0"><br><br>
+Dashboards overview - The overview of currently indexed and supported parachains:<br />
+<img src="https://imagizer.imageshack.com/img924/1246/BK6CYe.png" width="800" border="0" /><br /><br />
 
-
-Filtering - The ability to sort data based on the most useful indicators:<br>
-<img src="https://imagizer.imageshack.com/img924/8639/9qncPN.png" width="800" border="0"><br><br>
+Ecosystem metrics dashboards - The on-chain data is visually presented through charts that are categorized into the most significant and essential aspects:<br />
+<img src="https://imagizer.imageshack.com/img923/2272/10xb78.png" width="800" border="0" /><br /><br />
 
 
+Filtering - The ability to sort data based on the most useful indicators:<br />
+<img src="https://imagizer.imageshack.com/img924/8639/9qncPN.png" width="800" border="0" /><br /><br />
 
 
-User activity analytics - A module that allows for an in-depth analysis of user behavior based on metrics such as DAU, MAU, retention or user segments:<br>
-<img src="https://imagizer.imageshack.com/img924/8259/bLTEVH.png" width="800" border="0"><br><br>
+User activity analytics - A module that allows for an in-depth analysis of user behavior based on metrics such as DAU, MAU, retention or user segments:<br />
+<img src="https://imagizer.imageshack.com/img924/8259/bLTEVH.png" width="800" border="0" /><br /><br />
 
 #### **Proposal mockups - new standalone features:**
 
 
-Dashboard creator - The drag and drop feature allows users to add metrics onto the dashboard:<br>
-<img src="https://imagizer.imageshack.com/img922/9135/yU5s5a.png" width="800" border="0"><br><br>
+
+Dashboard creator - The drag and drop feature allows users to add metrics onto the dashboard:<br />
+<img src="https://imagizer.imageshack.com/img922/9135/yU5s5a.png" width="800" border="0" /><br /><br />
 
 Layout composer - Allowing for an easy modification of the dashboard's layout:
-<img src="https://imagizer.imageshack.com/img922/9879/LgeThz.png" width="800" border="0"><br><br>
+<img src="https://imagizer.imageshack.com/img922/9879/LgeThz.png" width="800" border="0" /><br /><br />
 
-<img src="https://imagizer.imageshack.com/img923/5586/pAvjqF.png" width="800" border="0"><br><br>
+<img src="https://imagizer.imageshack.com/img923/5586/pAvjqF.png" width="800" border="0" /><br /><br />
 
 
 **Technology Stack:**
@@ -196,6 +196,7 @@ Tokenguard's public features and data are already being used by community users 
 <img src="https://imagizer.imageshack.com/img922/508/rymrP6.png" width="800" border="0">
 
 
+
 ## Team 👥
 ### Team members
 
@@ -228,10 +229,11 @@ Tokenguard’s clients include Swiss Sygnum Bank, [Bitcoin.com](http://bitcoin.c
 ### Current Traction & Business Model ###
 Our current business model focuses on offering growth analytics solutions for parachains & dApps and allowed us to validate both product and services through collaborations with notable parachains such as Astar and Aleph Zero. We believe that **delivering free of charge community analytics will further enhance discovery of growth insights within the whole ecosystem**, allowing it to win the race for leading position in the web3 space.
 
-Teams we cooperate with appreciate our flexibility and user-oriented approach:<br><br>
-<img src="https://imagizer.imageshack.com/img923/978/GjfFD0.jpg" height="80" align="left" border="0">*Tokenguard is the missing part for Astar ecosystem. Its analytics and tracking capabilities provide us with the crucial insights needed to understand on-chain activity and user behavior, allowing us to make data-driven decisions and optimize our strategies like never before.* <br>**Maarten Henskens, Head of Foundation, Astar Network**<br><br>
 
-<img src="https://imagizer.imageshack.com/img924/640/oervBt.png" height="80" align="left" border="0">*We are happy to use Tokenguard, which offers Aleph Zero comprehensive on-chain user metrics and engagement data. Thanks to their analytics tool, we can make data-driven decisions and provide transparency to our community with easy-to-use dashboards.* <br>**Antoni Zolciak, CMO, Aleph Zero**<br><br>
+Teams we cooperate with appreciate our flexibility and user-oriented approach:<br /><br />
+<img src="https://imagizer.imageshack.com/img923/978/GjfFD0.jpg" height="80" align="left" border="0" />*Tokenguard is the missing part for Astar ecosystem. Its analytics and tracking capabilities provide us with the crucial insights needed to understand on-chain activity and user behavior, allowing us to make data-driven decisions and optimize our strategies like never before.* <br />**Maarten Henskens, Head of Foundation, Astar Network**<br /><br />
+
+<img src="https://imagizer.imageshack.com/img924/640/oervBt.png" height="80" align="left" border="0" />*We are happy to use Tokenguard, which offers Aleph Zero comprehensive on-chain user metrics and engagement data. Thanks to their analytics tool, we can make data-driven decisions and provide transparency to our community with easy-to-use dashboards.* <br />**Antoni Zolciak, CMO, Aleph Zero**<br /><br />
 
 ### Team Code Repos
 * [https://github.com/tokenguardio](https://github.com/tokenguardio)
@@ -271,12 +273,12 @@ This proposal is the first part that is solely focused on preparation of the das
 
 | Number | Deliverable | Specification | TechStack |
 | ---| ---| --- | --- |
-| <br>**0a.**<br> | License | MIT | --- |
-| <br>**0b.**<br> | Documentation | We will provide inline documentation. | --- |
-| <br>**0c.**<br> | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. | --- |
-| <br>**0d.**<br> | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. | --- |
-| <br>1.<br> | Metrics visualisation<br> | Allowing visualisation from RAW data:<br>1. Data selection interface for user including axis and scale setup,<br>2. Creating a preliminary visaulisation design standard of common data types,<br>3. Preparing 5 customisable visualisation types which include linechart, barchart, piechart, multiline chart, stacked barchart.<br>4. Creating a mechanism to customize the visualisations for differently branded projects | ReactJS, MongoDB, Apache ECharts |
-| <br>2.<br> | Dashboard layout | Creating a dashboard composer which allows:<br>1. Creating, saving, modifying and deleting new and existing dashboards,<br>2. Populating a dashboard with visualised metrics with drag & drop method,<br>3. Modifying the dashboard layout - changing the positions of charts, resizing and deleting them.<br>4. Enriching the dashboard with captions, titles and links. | ReactJS, React Grid Layout, MongoDB |
+| <br />**0a.**<br /> | License | MIT | --- |
+| <br />**0b.**<br /> | Documentation | We will provide inline documentation. | --- |
+| <br />**0c.**<br /> | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. | --- |
+| <br />**0d.**<br /> | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. | --- |
+| <br />1.<br /> | Metrics visualisation<br /> | Allowing visualisation from RAW data:<br />1. Data selection interface for user including axis and scale setup,<br />2. Creating a preliminary visaulisation design standard of common data types,<br />3. Preparing 5 customisable visualisation types which include linechart, barchart, piechart, multiline chart, stacked barchart.<br />4. Creating a mechanism to customize the visualisations for differently branded projects | ReactJS, MongoDB, Apache ECharts |
+| <br />2.<br /> | Dashboard layout | Creating a dashboard composer which allows:<br />1. Creating, saving, modifying and deleting new and existing dashboards,<br />2. Populating a dashboard with visualised metrics with drag & drop method,<br />3. Modifying the dashboard layout - changing the positions of charts, resizing and deleting them.<br />4. Enriching the dashboard with captions, titles and links. | ReactJS, React Grid Layout, MongoDB |
 
 
 
@@ -287,12 +289,12 @@ This proposal is the first part that is solely focused on preparation of the das
 
 | Number | Deliverable | Specification | TechStack |
 | ---| ---| --- | --- |
-| <br>**0a.**<br> | License | MIT | --- |
-| <br>**0b.**<br> | Documentation | We will provide inline documentation. | --- |
-| <br>**0c.**<br> | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. | --- |
-| <br>**0d.**<br> | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | --- |
-| <br>1.<br> | API reading mechanism | Connecting frontend visualisations with underlying data through an API:<br>1. Description and schema for an API response,<br>2. Saving and modifying visualisation related data,<br>3. Saving and modifying dashboard related data,<br> 4. Collecting user data in relation to dashboard and chosen metrics.  | NodeJS, Express, OpenAPI, MongoDB |
-| <br>3.<br> | Report & estimation | Detailed report on the dashboard composer design and cost estimation of all the features mentioned in "Project details" as well as additional features requested by Web3 Foundation.| --- |
+| <br />**0a.**<br /> | License | MIT | --- |
+| <br />**0b.**<br /> | Documentation | We will provide inline documentation. | --- |
+| <br />**0c.**<br /> | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will describe how to run these tests. | --- |
+| <br />**0d.**<br /> | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | --- |
+| <br />1.<br /> | API reading mechanism | Connecting frontend visualisations with underlying data through an API:<br />1. Description and schema for an API response,<br />2. Saving and modifying visualisation related data,<br />3. Saving and modifying dashboard related data,<br /> 4. Collecting user data in relation to dashboard and chosen metrics.  | NodeJS, Express, OpenAPI, MongoDB |
+| <br />3.<br /> | Report & estimation | Detailed report on the dashboard composer design and cost estimation of all the features mentioned in "Project details" as well as additional features requested by Web3 Foundation.| --- |
 
 
 

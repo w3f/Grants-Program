@@ -196,7 +196,7 @@ This table compares our project to similar projects in other ecosystems.
 
 - **Contact Name:** Zhiquan Mai
 - **Contact Email:** zhiquan911@gmail.com
-- **Website**: <https://toearn.fun>
+- **Website**: https://toearn.fun
 
 ### Legal Structure
 
@@ -211,11 +211,11 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 
 ### Team Code Repos
 
-- <https://github.com/blocktree>
-- <https://github.com/zhiquan911>
-- <https://github.com/godaddy-x>
-- <https://github.com/fanyinghao>
-- <https://github.com/Brochao>
+- https://github.com/blocktree
+- https://github.com/zhiquan911
+- https://github.com/godaddy-x
+- https://github.com/fanyinghao
+- https://github.com/Brochao
 
 ## Development Status :open_book:
 

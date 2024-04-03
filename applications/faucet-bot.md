@@ -14,7 +14,7 @@ Sybil-resistant faucet is a generic chat bot based faucet solution that can be u
 
 #### Mockup
 
-    bot that handle all messages like /request {wallet_public_address}, and trying to send tokens if it eligible
+    bot that handle all messages like /request \{wallet_public_address}, and trying to send tokens if it eligible
 
 #### Technology stack
 

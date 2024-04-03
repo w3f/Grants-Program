@@ -78,7 +78,7 @@ Following are other use cases of the Garbled Circuit Factory:
 
 #### Garbled Circuit Factory **previous work**
 
-The team has already developed a strong authentication solution with circuits based on JustGarble implementation <https://cseweb.ucsd.edu/groups/justgarble/> that we customized with Free XOR and Half Gates and other specific improvements for our needs (pre-computation of our Visual Cryptography Circuits).
+The team has already developed a strong authentication solution with circuits based on JustGarble implementation https://cseweb.ucsd.edu/groups/justgarble/ that we customized with Free XOR and Half Gates and other specific improvements for our needs (pre-computation of our Visual Cryptography Circuits).
 We achieved a production ready platform with significant performance on the logic circuit and garbled circuit production with AES-NI. The whole pipeline uses optimized memory management and avoids serialization/deserialization of the different circuit formats: HDL->non-garbled->garbled.
 
 ------------
@@ -155,7 +155,7 @@ We think that we could bring a better user experience, security and performance,
 
 - **Contact Name:** Jean-Luc Leleu
 - **Contact Email:** jeanluc.leleu@protonmail.com
-- **Website:** <https://www.interstellar.gg/>
+- **Website:** https://www.interstellar.gg/
 
 ### Legal Structure
 
@@ -170,23 +170,23 @@ We are now multiple security and fintech  entrepreneurs, security researchers, p
 
 ### Team Code Repos
 
-- <https://github.com/Interstellar-Network>
+- https://github.com/Interstellar-Network
 
-- <https://github.com/nathanprat>
+- https://github.com/nathanprat
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/jlleleu/> Jean-Luc Leleu
+- https://www.linkedin.com/in/jlleleu/ Jean-Luc Leleu
 
-- <https://www.linkedin.com/in/nathan-prat/> Nathan Part
+- https://www.linkedin.com/in/nathan-prat/ Nathan Part
 
-- <https://www.linkedin.com/in/eliotjfl/> Eliot Leleu
+- https://www.linkedin.com/in/eliotjfl/ Eliot Leleu
 
-- <https://www.linkedin.com/in/jlhoenen/> Jean-Louis Hoenen
+- https://www.linkedin.com/in/jlhoenen/ Jean-Louis Hoenen
 
-- <https://www.linkedin.com/in/aude-bourdouxhe-40656b28/> Aude Bourdouxhe
+- https://www.linkedin.com/in/aude-bourdouxhe-40656b28/ Aude Bourdouxhe
 
-- <https://www.linkedin.com/in/philippesalats/> Philippe Salats (advisor)
+- https://www.linkedin.com/in/philippesalats/ Philippe Salats (advisor)
 
 ## Development Roadmap :nut_and_bolt:
 

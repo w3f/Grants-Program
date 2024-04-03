@@ -48,7 +48,7 @@ Interface Stack:
 
 - **Substrate Pallet Details:**
 
-The `site-pallet` and the `note-pallet` will leverage code from the ORML (open runtime modules library: <https://github.com/open-web3-stack/open-runtime-module-library>) which will provide us with some underlying community managed and reviewed code. The `site-pallet` and `name-service-pallet` will leverage some existing code and ideas from Substrate Names(<https://github.com/xaya/substrate-names>) and ENS on Substrate(<https://github.com/hskang9/substrate-name-service>).
+The `site-pallet` and the `note-pallet` will leverage code from the ORML (open runtime modules library: https://github.com/open-web3-stack/open-runtime-module-library) which will provide us with some underlying community managed and reviewed code. The `site-pallet` and `name-service-pallet` will leverage some existing code and ideas from Substrate Names(https://github.com/xaya/substrate-names) and ENS on Substrate(https://github.com/hskang9/substrate-name-service).
 
 Substrate Stack:
 
@@ -125,7 +125,7 @@ We looked at the system.remark call, while we found system.remark would allow fo
 
 - **Contact Name:** David Rhodus
 - **Contact Email:** david@yibanchen.com
-- **Website:** <https://yibanchen.com>
+- **Website:** https://yibanchen.com
 
 ### Legal Structure
 
@@ -134,20 +134,20 @@ We looked at the system.remark call, while we found system.remark would allow fo
 
 ### Team's experience
 
-`David Rhodus` has been a software developer and development manager for 20 years. David has created multiple startups, worked at Amazon AWS via startup acquisition, Consensys on Ethereum data market research project(<https://www.youtube.com/watch?v=l1xJC8d3g5E>), and has been involved full time with blockchain since 2017. David has been studying rust for the past two years and substrate/polkadot development for one year.
+`David Rhodus` has been a software developer and development manager for 20 years. David has created multiple startups, worked at Amazon AWS via startup acquisition, Consensys on Ethereum data market research project(https://www.youtube.com/watch?v=l1xJC8d3g5E), and has been involved full time with blockchain since 2017. David has been studying rust for the past two years and substrate/polkadot development for one year.
 
 `Max Rosenburg` is a developer focused on full stack web development and machine learning. Max has a degree in Computer Science from Reed College.
 
 ### Team Code Repos
 
-- <https://github.com/YibanChen/>
-- <https://github.com/davidrhodus>
-- <https://github.com/maxrosenb>
+- https://github.com/YibanChen/
+- https://github.com/davidrhodus
+- https://github.com/maxrosenb
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/davidrhodus/>
-- <https://www.linkedin.com/in/-max-rosenberg>
+- https://www.linkedin.com/in/davidrhodus/
+- https://www.linkedin.com/in/-max-rosenberg
 
 ## Development Status :open_book:
 

@@ -126,7 +126,7 @@ I studied software engineering at the University of Glasgow, I currently have 5 
 - Contributions to the Shapeshift Web App & related KeepKey hardware wallet features. - https://github.com/shapeshift/web/commits?author=brymut
 - Integrating price data for Superfluid tokens into the Gnosis Safe web app backend - https://github.com/safe-global/safe-eth-py/pull/381
 - Added support for Zora NFTs viewing & the Celo blockchain onto the Mask.io browser plugin - https://github.com/DimensionDev/Maskbook/commit/810999f38a09df8d5cefb490b4ca475b837458bc & https://github.com/DimensionDev/Maskbook/commit/c5cfdf393baf6cf7997f66cbabc5e5952dc8cb4d
-- Github Page: [https://github.com/<team_member_1>](https://github.com/brymut/)
+- Github Page: [https://github.com/team_member_1](https://github.com/brymut/)
 
 ### Team LinkedIn Profiles
 

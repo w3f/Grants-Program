@@ -22,7 +22,7 @@ Sybil-resistant faucet is a generic browser-based faucet solution that can be us
 - TypeScript
 - Tailwind
 - Redis
-- @polkadot{.js}
+- @polkadot\{.js}
 
 #### Architecture
 

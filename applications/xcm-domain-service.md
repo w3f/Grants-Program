@@ -38,7 +38,7 @@ Find below a list of research questions we have identified. This list is not fin
 	
 	* To what extent is it possible to make XCM calls via ink! smart contracts at the moment, and what will improve in the foreseeable future?
 	
-	* Does XCM support calls between different smart contract languages? Like ink! <> Solidity.
+	* Does XCM support calls between different smart contract languages? Like between ink! &lt;&gt; Solidity.
 		
 	* What does a cross-chain domain service via XCM actually mean?
 	

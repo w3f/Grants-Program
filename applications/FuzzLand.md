@@ -273,7 +273,7 @@ Downstream DeFis, including insurance, using the auditing intermediate informati
 
 Other projects can reuse the components of FuzzLand platforms. For example, the optimistic rollups pallet can be used by Layer 2 solutions. Collaborative manual auditing projects can also use the audit pallet or our chain by replacing the rollups pallet with consensus pallets. 
 
-[Decentralized Security Marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/decentralized-security-marketplace.md) is a related RFP. [QRUCIAL DAO](https://github.com/w3f/Grants-Program/pull/989) is a related project in Substrate ecosystem. QRUCIAL DAO and FuzzLand both reach consensus about the auditing result. The fundamental differences are:
+[Decentralized Security Marketplace](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/decentralized-security-marketplace.md) is a related RFP. [QRUCIAL DAO](https://github.com/w3f/Grants-Program/pull/989) is a related project in Substrate ecosystem. QRUCIAL DAO and FuzzLand both reach consensus about the auditing result. The fundamental differences are:
 * FuzzLand harnesses the computation power of the crowd to perform compute-intensive dynamic program analysis, resulting in fast and highly accurate auditing. Yet, QRUCIAL DAO's analysis is performed by rerunning a same set of fast static analysis tools on multiple nodes, of which the requirement of multiple nodes is solely for reaching consensus. 
 * We support all LLVM targets, including Substrate pallet, ink!, Solidity, Move, Rust, C/C++, etc. projects while QRUCIAL DAO is tailored for smart contract auditing. 
 * We use optimistic rollups to efficiently reach consensus while QRUCIAL DAO uses the governance pallet. 
@@ -299,7 +299,7 @@ Yiqi Hu (Core Dev)
 
 - **Contact Name:** Jeff Liu
 - **Contact Email:** jeff@fuzz.land
-- **Website:** <https://fuzz.land/>
+- **Website:** https://fuzz.land/
 
 ### Legal Structure
 
@@ -320,26 +320,26 @@ Jeff is the founding engineer and PM at VMware Cloud Infra org and has founded m
 
 ### Team Code Repos
 
-- <https://github.com/fuzzland/chain>
-- <https://github.com/fuzzland/oracle>
+- https://github.com/fuzzland/chain
+- https://github.com/fuzzland/oracle
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/shouc> Chaofan Shou
-- <https://github.com/shangyint> Shangying Tan
-- <https://github.com/benjaminfong> Ben Fong
-- <https://github.com/YiqiHu> Yiqi Hu
+- https://github.com/shouc Chaofan Shou
+- https://github.com/shangyint Shangying Tan
+- https://github.com/benjaminfong Ben Fong
+- https://github.com/YiqiHu Yiqi Hu
 
 ### Team LinkedIn Profiles (if available)
 
 
 ## Development Status :open_book:
 
-- <https://github.com/fuzzland/chain> This is the Substrate chain implementation. We have just started to work on it. 
-- <https://github.com/fuzzland/ityfuzz> (Private for now, can share upon requests) This is our fuzz testing tool that can conduct DPA as described before. Supports for partitioning programs and conduct DPA on subprograms are WIP. Will be moved to `oracle` repo. 
-- <https://github.com/fuzzland/protocol_v1> We have built a simple FuzzLand protocol PoC for EVM-compatible chain in Solidity. However, due to high gas fee, low throughput, and hard to customize the chain, we decide to switch to implement a Substrate chain. Frontend and telemetry API in this repo will be reused. 
-- <https://github.com/AFLplusplus/LibAFL/pull/557> Adds the necessary analysis datasource for partition plan generation to the fuzzing library. 
-- <https://dev.fuzz.land/> We also have the first version of our website.
+- https://github.com/fuzzland/chain This is the Substrate chain implementation. We have just started to work on it. 
+- https://github.com/fuzzland/ityfuzz (Private for now, can share upon requests) This is our fuzz testing tool that can conduct DPA as described before. Supports for partitioning programs and conduct DPA on subprograms are WIP. Will be moved to `oracle` repo. 
+- https://github.com/fuzzland/protocol_v1 We have built a simple FuzzLand protocol PoC for EVM-compatible chain in Solidity. However, due to high gas fee, low throughput, and hard to customize the chain, we decide to switch to implement a Substrate chain. Frontend and telemetry API in this repo will be reused. 
+- https://github.com/AFLplusplus/LibAFL/pull/557 Adds the necessary analysis datasource for partition plan generation to the fuzzing library. 
+- https://dev.fuzz.land/ We also have the first version of our website.
 
 
 #### Related Papers

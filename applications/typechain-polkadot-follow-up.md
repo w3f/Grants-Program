@@ -157,7 +157,7 @@ We have decided to describe a full roadmap of a Typechain here, with estimates. 
 | ------ | ----------- | ------------- |
 | 0a     | License  | MIT |
 | 0b     | Documentation | We will provide TypeScript code examples of this package in use, inline documentation, JSDoc, and the description of its features. |
-| 1 | TS Types | We will research & match types from ABI to TypeScript, compatible with polkadot{.js} v8 library. Separately, for methods' arguments and return values. Files with types definition will be generated. | 
+| 1 | TS Types | We will research & match types from ABI to TypeScript, compatible with polkadot\{.js} v8 library. Separately, for methods' arguments and return values. Files with types definition will be generated. | 
 | 2 | Runtime Code | Prepare output(its draft can be seen in [technical specification](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#generated-code-draft)) of runtime code with contracts' methods implementation. At this point we have minimal viable coverage of the ABI types, original methods' names, and general types for methods' options, without specifics for contract's namespaces.
 | 3 | Testing | Minimal coverage of PSP22 contract with integration tests. We will be testing correctness of the derived types of the arguments and return values. |
 | 4 | NPM Packaging | Prepare the repository to work through CLI as a package. In TypeScript, as is, without translation to JavaScript. We will publish the package to NPM repository and provide set-up instructions (i.e. for installation, input & output). |

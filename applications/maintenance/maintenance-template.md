@@ -5,7 +5,7 @@
 > See the [Maintenance Grants Process](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants) on how to submit a proposal.
 
 - **Team Name:** Legal name of your team (e.g. JsonCorp)
-- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. Otherwise, provide the BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** For USDC/USDT and DOT payments, please provide the Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of fiat payment, please _also_ share your bank account privately with grants@web3.foundation via your contact email (see below) and enter the date when you shared the information with us (e.g. Fiat 24.12.1971, 11:59) here. 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -30,9 +30,9 @@ Please provide the following:
 
 Please provide a list of the repo(s) that need maintenance and further development:
 
-- https://github.com/<project_organisation_1>/<project_1>
-- https://github.com/<project_organisation_2>/<project_2>
-- https://github.com/<project_organisation_3>/<project_3>
+- https://github.com/{project_organisation_1}/{project_1}
+- https://github.com/{project_organisation_2}/{project_2}
+- https://github.com/{project_organisation_3}/{project_3}
 
 ## Team :busts_in_silhouette:
 
@@ -60,19 +60,19 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/{your_organisation}
+- https://github.com/{your_organisation}/{project_1}
+- https://github.com/{your_organisation}/{project_2}
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/{team_member_1}
+- https://github.com/{team_member_2}
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://www.linkedin.com/{person_1}
+- https://www.linkedin.com/{person_2}
 
 ## Development Status :open_book:
 
@@ -112,7 +112,7 @@ Our responsibilities:
 - **Sprint/Period Duration:** Duration of the sprint/period (e.g. 4 weeks)
 - **Total Duration:** Duration of the entire maintenance contract (e.g. 1 year)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Max budget per sprint/period:** Requested max budget in USD per sprint/period (e.g. 7,000 USD). Cost for each period need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Max budget per sprint/period:** Requested max budget in USD per sprint/period (e.g. 7,000 USD).
 - **Hourly rate:** Amount of budget per hour, since it’s unlikely that the maintenance of the project requires the exact same workload each sprint.
 
 > ⚠️ *Note that you will need to provide a comprehensive report of the work done at the end of each month, including the list of issues/bugs/pull requests worked on, time spent on each of these, & finally, the associated cost. The time allocation & price will likely vary from month to month, depending on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. W3F will make the payments only after the successful merge of each individual report.*

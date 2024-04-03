@@ -3,6 +3,7 @@
 - **Team Name:** Verida PTE LTD
 - **Payment Address:** 0x1596525C44f68b45CDd53db49b03A390e2687331 (USDC)
 - **Level:** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/887#issuecomment-1719349723)
 
 ## Project Overview :page_facing_up:
 

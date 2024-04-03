@@ -42,7 +42,7 @@ The rating system will initially be run as a callable serverless function. Passi
 * / Request All By Project ID
 * / Submit By Project ID
 
-**Smart Contract <–> Jamstack bridge** – Serverless functions
+**Smart Contract \<–\> Jamstack bridge** – Serverless functions
 // Matches above smart contract requests to be stored in a real-time database – removing the need for individual users to continually interact with the blockchain cientside.
 Scheduled tasks to run and submit ESG rating calculations
 
@@ -51,7 +51,7 @@ Scheduled tasks to run and submit ESG rating calculations
 The Bldging app MVP uses the jamstack style architecture. A pre-rendered SPA served via Netlify. We use Google Firebase real-time database for data storage, Firebase authentication for ease-of-use Oauth and serverless functions where necessary.
 The front-end is powered by Nuxt.js
 
-We’ll provide documentation, examples and source code via github (<https://github.com/BLDG-BLOX/>) for the following.
+We’ll provide documentation, examples and source code via github (https://github.com/BLDG-BLOX/) for the following.
 
 * Polkadot parachain based smart contract for Submitting/Reading Project based ESG rating values
 * Serverless functions for bridging data from on-chain to off-chain database
@@ -77,7 +77,7 @@ We believe this to be a unique opportunity to transition our current and new use
 
 * **Contact Name:** Micheal Lee
 * **Contact Email:** micheal@bldgblox.io
-* Website: <https://bldg.app/>
+* Website: https://bldg.app/
 
 ### Legal Structure
 
@@ -87,7 +87,7 @@ We believe this to be a unique opportunity to transition our current and new use
 ### Team's experience
 
 * Our team has 5 years of experience with blockchain program development and creative programming. Interest and development in blockchain began with the Steem protocol, initially launching the Sndbox Incubator as a foundational program for global participants to launch social enterprises through the various tools available on Steem.
-* Our flagship project included Steem Park (<https://youtu.be/TChGLKaspFk>), the first public design project launched through blockchain, with a 10,000USD grant support from the Steem Foundation.
+* Our flagship project included Steem Park (https://youtu.be/TChGLKaspFk), the first public design project launched through blockchain, with a 10,000USD grant support from the Steem Foundation.
 * Over the years, our office has support several blockchain companies with creative and community development including Cryptokitties, Blockade Games, the TQ Tezos, and other. Sample projects can be found on thecreativecrypto.com.
 
 ### Team Code Repos
@@ -154,7 +154,7 @@ Sam Billingham:  [https://www.linkedin.com/in/sambillingham/](https://www.linked
 ## Additional Information :heavy_plus_sign:
 
 * What work has been done so far?
-    – The Bldg App MVP is live – <http://bldg.app/>
+    – The Bldg App MVP is live – http://bldg.app/
 * Are there are any teams who have already contributed (financially) to the project?
     – No
 * Have you applied for other grants so far?

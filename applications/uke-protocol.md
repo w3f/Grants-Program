@@ -148,9 +148,9 @@ Some notable projects include:
 5. A supply chain tracking system in which crop from the US was tracked to Japan over a private NEM blockchain
 instance.
 
-In his spare time, he also wrote many articles centered around using blockchain in practical and real world scenarios, which you may find here: <https://iodlt.com/iodlt-blog/>
+In his spare time, he also wrote many articles centered around using blockchain in practical and real world scenarios, which you may find here: https://iodlt.com/iodlt-blog/
 
-He is also published on Hackernoon, with articles gaining some traction (plans to write more!): <https://hackernoon.com/u/crackTheCode>
+He is also published on Hackernoon, with articles gaining some traction (plans to write more!): https://hackernoon.com/u/crackTheCode
 
 If any more proof / material is needed, then it will be provided!
 
@@ -158,13 +158,13 @@ If any more proof / material is needed, then it will be provided!
 
 The eventual code regarding uke will reside in the following repository:
 
-- <https://github.com/Uke-Messaging>
+- https://github.com/Uke-Messaging
 
-- Bader Youssef - <https://github.com/CrackTheCode016>
+- Bader Youssef - https://github.com/CrackTheCode016
 
 ### Team LinkedIn Profiles (if available)
 
-- Bader Youssef - <https://www.linkedin.com/in/bader-youssef-975914159>
+- Bader Youssef - https://www.linkedin.com/in/bader-youssef-975914159
 
 ## Development Status
 

@@ -50,7 +50,7 @@ Some of the function of `Subscript` are similar to LimeChain's work of AssemblyS
 
 ### Team Website
 
-* <https://github.com/slickup>
+* https://github.com/slickup
 
 ### Team's experience
 
@@ -60,8 +60,8 @@ We alse engaged in smart contract tools interaged with vyper for contract audit 
 
 ### Team Code Repos
 
-* <https://github.com/slickup/subscript>
-* <https://github.com/ascontract/subscript>
+* https://github.com/slickup/subscript
+* https://github.com/ascontract/subscript
 
 ## Development Roadmap :nut_and_bolt:
 

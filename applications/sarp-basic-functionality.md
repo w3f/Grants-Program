@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-This application is a response to the RFP [Static Analysis for Runtime Pallets](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/Static-Analysis-for-Runtime-Pallets.md)
+This application is a response to the RFP [Static Analysis for Runtime Pallets](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Static-Analysis-for-Runtime-Pallets.md)
 
 ### Overview
 
@@ -78,7 +78,7 @@ Github accounts of the team members
 
 ## Development Status :open_book:
 
-We will base our work on [MIRAI](https://github.com/facebookexperimental/MIRAI) and the RFP [Static Analysis for Runtime Pallets](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Open/Static-Analysis-for-Runtime-Pallets.md)
+We will base our work on [MIRAI](https://github.com/facebookexperimental/MIRAI) and the RFP [Static Analysis for Runtime Pallets](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/Static-Analysis-for-Runtime-Pallets.md)
 
 We have not started to work on this.
 

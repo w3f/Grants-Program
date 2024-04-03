@@ -17,8 +17,8 @@ Right now you must do much boilerplate code around your testing framework (mocha
 
 * **Members:** Wintex
 * **LinkedIn Profiles:** -
-* **Code Repos:** <https://github.com/orgs/halva-suite>
-* **Website:** <https://wintex.pro/en/>
+* **Code Repos:** https://github.com/orgs/halva-suite
+* **Website:** https://wintex.pro/en/
 * **Legal Structure:** individual
 * **Team's Experience:**
 

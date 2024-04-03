@@ -38,7 +38,7 @@ Our frontend app needs some changes in order for Jaco to accept it into the offi
   - - PoC/MVP or other relevant prior work or research on the topic. Decentration has:
     - delivered [Supersig v1](https://github.com/kabocha-network/pallet_supersig). 
     - launched [Kabocha crowdloan](https://github.com/kabocha-network/parachain/)
-     - developed pallet_mint: where funding proposals that are approved mint new coins, instead of from a treasury. <https://github.com/kabocha-network/parachain/pull/6>
+     - developed pallet_mint: where funding proposals that are approved mint new coins, instead of from a treasury. https://github.com/kabocha-network/parachain/pull/6
   
 - What your project is *not* or will *not* provide or implement
   - In this grant proposal we are focussing on making iterations to the minimimal viable version of the pallet to make it less prone to bloat due to unbounded call data in the storage, we won't be creating a new pallet. 
@@ -67,7 +67,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 - **Contact Name:** Ramsey Ajram
 - **Contact Email:** ramsey@decentration.org
-- **Website:** <https://decentration.org>
+- **Website:** https://decentration.org
 
 ### Legal Structure
 
@@ -86,21 +86,21 @@ Tsubasa Mori (KingdomParadise) - Full stack developer - Javascript / Typescript 
 
 ### Team Code Repos
 
-- <https://github.com/decentration/apps/tree/supersig-v1.0.0>
-- <https://github.com/kabocha-network/pallet_supersig>
+- https://github.com/decentration/apps/tree/supersig-v1.0.0
+- https://github.com/kabocha-network/pallet_supersig
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/decentration>
-- <https://github.com/KingdomParadise>
-- <https://github.com/gdnathan>
+- https://github.com/decentration
+- https://github.com/KingdomParadise
+- https://github.com/gdnathan
 
 ### Team LinkedIn Profiles (if available)
 
 ## Development Status :open_book:
 
 pallet started here:
-<https://github.com/kabocha-network/pallet_supersig/tree/polkadot-v0.9.37>
+https://github.com/kabocha-network/pallet_supersig/tree/polkadot-v0.9.37
 
 *Supersig is functional, accessible and usable for developers to integrate and for their end users. 
 

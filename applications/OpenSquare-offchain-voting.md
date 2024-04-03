@@ -59,7 +59,7 @@ You can see our team with this [link](https://www.opensquare.network/team/).
 
 * **Contact Name:** Yongfeng Li
 * **Contact Email:** wliyongfeng@gmail.com
-* **Website:** <https://www.opensquare.network>
+* **Website:** https://www.opensquare.network
 
 ### Legal Structure
 
@@ -76,15 +76,15 @@ We have more than 3 years experience with Substrate/Polkadot related tech stack.
 We are honored that either dotreasury or statescan get support from kusama or polkadot treasury, and our work about bounties is granted by w3f previously. We are confident to deliver a high quality and usable off-chain voting site.
 
 ### Team Code Repos
-<https://github.com/opensquare-network/>
+https://github.com/opensquare-network/
 
 Team members github accounts:
 
-* <https://github.com/wliyongfeng>
-* <https://github.com/hyifeng>
-* <https://github.com/qiyisi>
-* <https://github.com/YoshiyukiSakura>
-* <https://github.com/Popoulosss>
+* https://github.com/wliyongfeng
+* https://github.com/hyifeng
+* https://github.com/qiyisi
+* https://github.com/YoshiyukiSakura
+* https://github.com/Popoulosss
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -99,12 +99,12 @@ Milestone 1 — Implement Basic off-chain voting/polls logic for Polkadot & Kusa
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Code | Code will be open source, organized in one monorepo by [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), hosted on [OpenSquare github account](https://github.com/opensquare-network/). It will be implemented in JavaScript, [React](https://reactjs.org/) for fronted, [koa](https://koajs.com/) for backend. Either fronted and backed will depend on polkadot.js, while fronted will also depend on [extension-dapp](https://github.com/polkadot-js/extension/tree/master/packages/extension-dapp) to interact with polkadot{.js} extension. |
+| 0b. | Code | Code will be open source, organized in one monorepo by [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), hosted on [OpenSquare github account](https://github.com/opensquare-network/). It will be implemented in JavaScript, [React](https://reactjs.org/) for fronted, [koa](https://koajs.com/) for backend. Either fronted and backed will depend on polkadot.js, while fronted will also depend on [extension-dapp](https://github.com/polkadot-js/extension/tree/master/packages/extension-dapp) to interact with polkadot\{.js} extension. |
 | 0c. | Documentation | We will provide a documentation site to explain necessary concepts, how this site work, and some user workflows. |
 | 0d. | Test cases | Core functions will be covered by unit tests to ensure functionality and robustness. They will could be verified in simple npm scripts. |
 | 1. | User story 1 | Alice opens OpenSquare.io(domain not finally decided) and she can see spaces at least include polkadot and kusama. She can see a closed and ongoing proposal list after clicking a space. |  
 | 2. | User story 2 | Alice will see the proposal description, votes records and the final result or analysis/distribution on a closed proposal page. |  
-| 3. | User story 3 | Alice votes yes on an ongoing proposal with polkadot{.js} extension, she can see her vote and re-vote to override the previous one. The reason that she changed her vote is that she checked the discussion and found some related news. |  
+| 3. | User story 3 | Alice votes yes on an ongoing proposal with polkadot\{.js} extension, she can see her vote and re-vote to override the previous one. The reason that she changed her vote is that she checked the discussion and found some related news. |  
 | 4. | User story 4 | Alice created a proposal with the title “Should there be a specified UI for the society features?” and some description, and there are 2 choices: yes and no. She chose the voter balance as the final result strategy, while she can also choose sqrt balance as the strategy. With a very high sumed balance vote yes to Alice’s proposal, she now is very confident to seek more support to go on with following actions. |  
 | 5. | User story 5 | Bob wanted to create a proposal at kusama height 1000, but failed, because his account has 0 balance. Anybody can create a proposal, but the minimum requirement is having at least 10 KSM at the target height. |  
 

@@ -52,22 +52,22 @@ We love the way we can materialize our ideas. Our small team consists of game an
 
 #### Mockups/designs of any UI components
 
-<https://dotmog.com/gallery/>
+https://dotmog.com/gallery/
 
 ![Mogwai Life-Cylce](https://lucid.app/publicSegments/view/54cde0fa-754d-4472-96b0-d7ae32f8d41a/image.png)
 
 #### API specifications of the core functionality
 
-<https://github.com/dotmog/SubstrateNetApi>
+https://github.com/dotmog/SubstrateNetApi
 
 #### An overview of the technology stack to be used
 
 ![Application Architecture](https://i.imgur.com/fSkrw46.png)
 
-* <https://github.com/dotmog/SubstrateNetApi>
-* <https://github.com/dotmog/substrate/tree/dotmog/bin/node/pallets/dotmog>
-* <https://github.com/dotmog/DOTMogCore> (GameEngine, currently private)
-* <https://github.com/dotmog/DOTMogClient> (Unity3D Client, currently private)
+* https://github.com/dotmog/SubstrateNetApi
+* https://github.com/dotmog/substrate/tree/dotmog/bin/node/pallets/dotmog
+* https://github.com/dotmog/DOTMogCore (GameEngine, currently private)
+* https://github.com/dotmog/DOTMogClient (Unity3D Client, currently private)
 
 #### Documentation of core components, protocols, architecture etc. to be deployed
 
@@ -77,7 +77,7 @@ We differentiate the gamelogic into two parts, base logic which is not heavy com
 
 #### PoC/MVP or other relevant prior work or research on the topic
 
-Our alpha MVP is already running, check out our webpage (<https://dotmog.com/>).
+Our alpha MVP is already running, check out our webpage (https://dotmog.com/).
 
 A lot of our previous work on the World of Mogwais is being used as PoC for the current project, the game logic we created [WoMNetCore](https://github.com/WorldOfMogwais/WoMNetCore) is reused where it makes sense or refactored to match better, here an [old PoC](https://github.com/WorldOfMogwais/WoM-Releases/releases). We used the CryptoKitties on Substrate as our first crash course into Rust and luckily it had a theme in common with our vision from 2017 [old whitepaper](https://github.com/mogwaicoin/mogwai-doc/raw/master/doc/Mogwai_Whitepaper.pdf).
 
@@ -116,40 +116,40 @@ In past projects the team has already worked together on different projects one 
 
 ### Team Code Repos
 
-* <https://github.com/dotmog/SubstrateNetApi>
-* <https://github.com/dotmog/substrate/tree/dotmog_v3.0.0> (dotmog pallet)
-* <https://github.com/dotmog/DOTMogCore> (GameEngine, currently private)
-* <https://github.com/dotmog/DOTMogClient> (Unity3D Client, currently private)
-* <https://github.com/darkfriend77/Unity3DExample>
+* https://github.com/dotmog/SubstrateNetApi
+* https://github.com/dotmog/substrate/tree/dotmog_v3.0.0 (dotmog pallet)
+* https://github.com/dotmog/DOTMogCore (GameEngine, currently private)
+* https://github.com/dotmog/DOTMogClient (Unity3D Client, currently private)
+* https://github.com/darkfriend77/Unity3DExample
 
 Other projects lead and maintained by the teammembers
 
-* <https://github.com/HearthSim/SabberStone>
-* <https://github.com/WorldOfMogwais/WoMNetCore>
-* <https://github.com/WorldOfMogwais/WoM-Releases/releases>
-* <https://github.com/mogwaicoin/mogwai>
-* <https://github.com/mogwaicoin/NeoScryptCSharp>
-* <https://github.com/rwindegger/RabbitExpress>
-* <https://github.com/rwindegger/UnityMainThreadDispatcher>
-* <https://github.com/darkfriend77/CoinMillions>
+* https://github.com/HearthSim/SabberStone
+* https://github.com/WorldOfMogwais/WoMNetCore
+* https://github.com/WorldOfMogwais/WoM-Releases/releases
+* https://github.com/mogwaicoin/mogwai
+* https://github.com/mogwaicoin/NeoScryptCSharp
+* https://github.com/rwindegger/RabbitExpress
+* https://github.com/rwindegger/UnityMainThreadDispatcher
+* https://github.com/darkfriend77/CoinMillions
 
 Adding a polkadot related commit here ..
-<https://github.com/usetech-llc/polkadot_api_dotnet/pull/10>
+https://github.com/usetech-llc/polkadot_api_dotnet/pull/10
 
 Active organisations of the teammebers
 
-* <https://github.com/dotmog>
-* <https://github.com/WorldOfMogwais>
-* <https://github.com/mogwaicoin>
-* <https://github.com/HearthSim>
+* https://github.com/dotmog
+* https://github.com/WorldOfMogwais
+* https://github.com/mogwaicoin
+* https://github.com/HearthSim
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/cedric-decoster-3a004510b/>
-* <https://www.xing.com/profile/Andre_Schneider90>
-* <https://www.linkedin.com/in/renewindegger/>
-* <https://www.linkedin.com/in/2much/>
-* <https://www.linkedin.com/in/tim-kramarz-80345aba/>
+* https://www.linkedin.com/in/cedric-decoster-3a004510b/
+* https://www.xing.com/profile/Andre_Schneider90
+* https://www.linkedin.com/in/renewindegger/
+* https://www.linkedin.com/in/2much/
+* https://www.linkedin.com/in/tim-kramarz-80345aba/
 
 ## Development Roadmap :nut_and_bolt:
 
