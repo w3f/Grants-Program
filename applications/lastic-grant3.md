@@ -227,7 +227,7 @@ Now a freelance blockchain developer, Aurora champions women's representation in
 | **0d.** | Article Publishing | Publication of an article elaborating on Lastic's current development. |
 | **1.** | Functional Visualizations | Development of visualizations for Polkadot and Kusama. This includes auction history, a timer view of the auction process, a list of all connected parachains and parathreads, and detailed information on different PARA IDs. Includes steps 1a. - 1d. |
 | **1a.** | Auction History | Includes visualizations and a list detailing the teams who won the slot over time, the duration of that slot, and other relevant information. |
-| **1b.** | Timer View | A visualization showing the current status and timeline of ongoing of ongoing sales of coretime. |
+| **1b.** | Timer View | A visualization showing the current status and timeline of ongoing sales of coretime. |
 | **1c.** | Parachain Connectivity | List and visualization of all connected parachains, parathreads, and registered PARA IDs. |
 | **1d.** | PARA ID Details | Information on which PARA ID is connected to which parachain. |
 | **2.** | Functional code for various features | Implement functional code for various features such as personal wallet/address page, core-specific pages, the core buying process, and network selection. |
