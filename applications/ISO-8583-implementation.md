@@ -159,7 +159,7 @@ The implementation is inspired from the previous [research](https://github.com/a
 | 3. | ERC-20R Pallet  | I will create a pallet that implements the `ERC-20R` interface. It will be responsible for processing incoming message from the offchain-worker and PCIDSS compliant oracles. It will perform security checks, maintain the ledger and control the issuance of the tokens. |
 | 4. | Integration tests | I will add end-to-end tests in Rust to illustrate full lifecycle of ISO-8583 transactions. |
 | 5. | PCIDSS Oracle Gateway | I will enhance PCIDSS Oracle Gateway services to make it work with Substrate chain. This is essentially adding new service that monitors and reacts to certain events from Substrate chain. |
-| 5. | Makefile | I will create a Makefile that will provide commands to ease testing, running and maintaining the project |
+| 6. | Makefile | I will create a Makefile that will provide commands to ease testing, running and maintaining the project |
 
 ## Future Plans
 
