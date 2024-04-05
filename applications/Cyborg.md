@@ -109,8 +109,8 @@ The technological landscape sees a plethora of competitors, each carving their n
 Project GitHub repositories.
 
 - https://github.com/Cyborg-Network - Organization
-- https://github.com/Cyborg-Network/cyborg-node
-- https://github.com/Cyborg-Network/Cyborg-smart-client
+- https://github.com/Cyborg-Network/cyborg-chain
+- https://github.com/Cyborg-Network/Worker
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
