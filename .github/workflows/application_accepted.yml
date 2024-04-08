@@ -42,7 +42,7 @@ jobs:
 
       - name: Checkout
         if: ${{ !env.ACT }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Parse application file
         if: ${{ !env.ACT }}
