@@ -1,7 +1,7 @@
 # `subxt-python`
 
 - **Team Name:** Tuguldur Baigalmaa
-- **Payment Address:** 14AZk92CKjovm4tDvzE9XsjGz3HNeeV2tmnbYitAqyweWoRp (UDSC)
+- **Payment Address:** 14AZk92CKjovm4tDvzE9XsjGz3HNeeV2tmnbYitAqyweWoRp (UDSC - Asset Hub), 14AZk92CKjovm4tDvzE9XsjGz3HNeeV2tmnbYitAqyweWoRp (DOT - Polkadot)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
