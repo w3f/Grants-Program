@@ -17,6 +17,7 @@ Besides, **there is a clear difference between an application being accepted and
 
 - [2024](#2024)
   - [🏄 Wave 21 - Q1 2024](#-wave-21---q1-2024)
+  - [🏄 Wave 22 - Q2 2024](#-wave-22---q2-2024)
 - [2023](#2023)
   - [🏄 Wave 20 - Q4 2023](#-wave-20---q4-2023)
   - [🏄 Wave 19 - Q3 2023](#-wave-19---q3-2023)
@@ -46,6 +47,12 @@ Besides, **there is a clear difference between an application being accepted and
 
 ## 2024
 
+### 🏄 Wave 22 - Q2 2024
+
+| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
+| [Tuguldur Baigalmaa](https://github.com/philoniare/)                       | [subxt-python](./subxt-python.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☐       |      ☐      |
+
 ### 🏄 Wave 21 - Q1 2024
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
@@ -62,7 +69,6 @@ Besides, **there is a clear difference between an application being accepted and
 | [David Semakula](https://davidsemakula.com)                       | [pallet-verifier](./pallet-verifier.md)                     | [GitHub](https://github.com/davidsemakula)                 | ☐          |        ☐       |      ☐      |
 | [Algorealm](https://github.com/algorealminc)                       | [pallet-verifier](./swarm-nl.md)                     | [GitHub](https://github.com/algorealminc)                 | ☐          |        ☐       |      ☐      |
 | [Rui Morais](https://github.com/fiono11)                       | [Threshold Signature Implementation](./ThresholdSignature.md)                     | [GitHub](https://github.com/fiono11)                 | ☐          |        ☐       |      ☐      |
-| [Tuguldur Baigalmaa](https://github.com/philoniare/)                       | [subxt-python](./subxt-python.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☐       |      ☐      |
 
 
 ## 2023
