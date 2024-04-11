@@ -100,14 +100,14 @@ Within the scope of this milestone, I plan to complete the second phase of the s
 
 I plan to accomplish the following tasks (tracked on GitHub in [this umbrella issue](https://github.com/replica-io/replica-io/issues/7)):
 
- - [#19](https://github.com/replica-io/replica-io/issues/19): Explore Mir, a framework for implementing, debugging, and analyzing distributed protocols; summarize the findings (~1w, already in progress)
- - [#30](https://github.com/replica-io/replica-io/issues/30): Explore Atlas, a modular framework for building BFT/CFT protocols and applications; summarize the findings (~1w)
- - [#20](https://github.com/replica-io/replica-io/issues/20): Explore Babel, a Java framework for developing distributed protocols; summarize the findings (~1w)
- - [#40](https://github.com/replica-io/replica-io/issues/40): Explore DiStaL, a DSL framework for implementing fault-tolerant distributed algorithms; summarize the findings (~1w)
- - [#41](https://github.com/replica-io/replica-io/issues/41): Explore PSync, a framework for writing and verifying high-level implementations of fault-tolerant distributed algorithms; summarize the findings (~1w)
- - [#22](https://github.com/replica-io/replica-io/issues/22): Explore Disel, a framework for implementation and compositional verification of distributed systems and their clients in Coq; summarize the findings (~1w)
- - [#23](https://github.com/replica-io/replica-io/issues/23): Explore Verdi, a Coq framework to implement and formally verify distributed systems; summarize the findings (~1w)
- - [#28](https://github.com/replica-io/replica-io/issues/28): Conclude exploration of frameworks for developing distributed protocols; publish a blog post (with a companion video) sharing all the observations and conclusions in detail (~2w)
+ - [x] [#19](https://github.com/replica-io/replica-io/issues/19): Explore Mir, a framework for implementing, debugging, and analyzing distributed protocols; summarize the findings (~1w)
+ - [x] [#30](https://github.com/replica-io/replica-io/issues/30): Explore Atlas, a modular framework for building BFT/CFT protocols and applications; summarize the findings (~1w)
+ - [x] [#20](https://github.com/replica-io/replica-io/issues/20): Explore Babel, a Java framework for developing distributed protocols; summarize the findings (~1w)
+ - [ ] [#40](https://github.com/replica-io/replica-io/issues/40): Explore DiStaL, a DSL framework for implementing fault-tolerant distributed algorithms; summarize the findings (~1w)
+ - [ ] [#41](https://github.com/replica-io/replica-io/issues/41): Explore PSync, a framework for writing and verifying high-level implementations of fault-tolerant distributed algorithms; summarize the findings (~1w)
+ - [ ] [#22](https://github.com/replica-io/replica-io/issues/22): Explore Disel, a framework for implementation and compositional verification of distributed systems and their clients in Coq; summarize the findings (~1w)
+ - [ ] [#23](https://github.com/replica-io/replica-io/issues/23): Explore Verdi, a Coq framework to implement and formally verify distributed systems; summarize the findings (~1w)
+ - [ ] [#28](https://github.com/replica-io/replica-io/issues/28): Conclude exploration of frameworks for developing distributed protocols; publish a blog post (with a companion video) sharing all the observations and conclusions in detail (~2w)
 
 The main objective is to analyze the existing frameworks in order to understand how to create a better, more practical one. Of particular interest are the matters of structure and notation supporting composability in concurrency and communication mechanisms, as well as controlling nondeterminism.
 
