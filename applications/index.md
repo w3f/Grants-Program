@@ -16,8 +16,8 @@ Besides, **there is a clear difference between an application being accepted and
 <a id="top"></a>
 
 - [2024](#2024)
-  - [🏄 Wave 21 - Q1 2024](#-wave-21---q1-2024)
   - [🏄 Wave 22 - Q2 2024](#-wave-22---q2-2024)
+  - [🏄 Wave 21 - Q1 2024](#-wave-21---q1-2024)
 - [2023](#2023)
   - [🏄 Wave 20 - Q4 2023](#-wave-20---q4-2023)
   - [🏄 Wave 19 - Q3 2023](#-wave-19---q3-2023)
