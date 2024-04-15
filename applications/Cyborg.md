@@ -1,7 +1,7 @@
 # Cyborg Network - Empowering Decentralized Edge Networks
 
 - **Team Name:** Cyborg Network
-- **Payment Address:** 15VNtavdKpRmSvGmjKevMaYvtifjNDrSSp4Bv9E2sVsVcnjg (DOT) 
+- **Payment Address:** 12Enn321pZSZkNtBwsTRxxZTKS9DsGpk8PTkZsnsMjTzrtFa (AssetHub USDT) 
 - **DOT Vesting Address:** 15p7mTm9uKt1w7GF3AU1TNPWm4eAHgieTjtfsVVEtqHazpaY
 - **Level:** 1
 
