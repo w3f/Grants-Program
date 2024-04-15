@@ -47,7 +47,9 @@ To simplify testing and operation of the Polkadot validator, Dotnix provides eas
 We have gathered a large list of of references for software projects that fullfil similar objectives that we are trying to achieve.
 
 #### What your project is *not* or will *not* provide or implement
-
+Dotnix is a tool to deploy reproducible declarative and hardened validators to the following targets:
+Baremetal, VM, Docker
+Nothing more nothing less.
 
 ### Ecosystem Fit
 
@@ -162,7 +164,8 @@ We have started designing the architecture and the interfaces between the differ
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our `Polkadot` nodes and send test transactions, which will demonstrate how the new functionality works. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **quick start guide**  of how to go from 0 to a running validator that can perform the basic functions up until making a test transaction.
+The guide will be focused on how to set up the dotnix validator and other administrative topics. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) built with `nix` that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | We will publish an article explaining why we believe this project is a step in the right direction and what benefits we hope to bring to the polkadot and general staking services. |
@@ -183,7 +186,7 @@ We have started designing the architecture and the interfaces between the differ
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Polkadot nodes and send test transactions, which will show how the new functionality works. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and  extend the guide to cover the new functions of implemented in M2 like keyrotate and our runtime CLI tool. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) built with `nix` that can be used to test all the functionality delivered with this milestone. |
 | 1. | Audit trail | Integrate an audit trail dependency within the validator module to record a detailed and tamper-evident log of all operations, providing transparency and facilitating accountability. |
@@ -231,7 +234,13 @@ After having a constructive discussion with Gavin Wood at protocol berg, he kind
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
 **Work you have already done.**
+Our team's effort has been to research the viability of a tool like dotnix.
+
 
 **If there are any other teams who have already contributed (financially) to the project.**
+No other teams contributed to this project.
 
 **Previous grants you may have applied for.**
+I have worked the following w3f granted projects in the past: https://github.com/Qrucial/QRUCIAL-DAO
+
+
