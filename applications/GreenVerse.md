@@ -1,7 +1,7 @@
 # Name of your Project
 
 - **Team Name:** GreenVerse
-- **Payment Address:** 1n1fdMMS2YDx2uXoHKJAcoCy8FXsfF2oMtetZRTqam1hev8(USDT)
+- **Payment Address:** 13K7ob6hDeSgUHLR9z7HLffTmyBoDc1tugSKxcSUdd2osoCa(USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
 ## Project Overview :page_facing_up:
@@ -58,11 +58,11 @@ There has so far been no similar project found within the Polkadot ecosystem. On
 
 ### Team members
 
-- Name of team leader
-* Yvonne Tse 
-- Names of team members
-* Aaron C
-* Will Z
+- Name of team leader: 
+Yvonne Tse 
+- Names of team members:
+Aaron C, 
+Will Z
 
 ### Contact
 
@@ -72,8 +72,8 @@ There has so far been no similar project found within the Polkadot ecosystem. On
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Will provide privately
+- **Registered Legal Entity:** Will provide privately
 
 ### Team's experience
 
@@ -98,13 +98,11 @@ https://github.com/GreenVerseNetwork/greenverse-app
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+- We've started to build the GreenVerse Substrate node after we did some investigation of the possible obstacles of our blockchain implementation. We use the official node template to get started.
+- We also created a Flutter repo as our mobile apps code base, to build the single source of both iOS and Android apps. We checked the relevant libs from Flutter and had an general idea that our milestones are technically doable.
+- Also we built our website to demonstrate our ideas.
+
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -180,8 +178,3 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 **How did you hear about the Grants Program?**  Personal recommendation 
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
