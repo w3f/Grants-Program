@@ -77,7 +77,7 @@ There has so far been no similar project found within the Polkadot ecosystem. On
 
 ### Team's experience
 
-Yvonne 
+Yvonne brings profound experience in the renewable power industry, where she has played a pivotal role in establishing and strengthening global brand images across diverse international markets. With a deep-rooted passion for sustainability and a keen understanding of the renewable energy landscape, Yvonne has dedicated her career to making a tangible impact in the sustainability sector.
 
 Aaron used to be founding protocol developer at Litentry, and he participated the design and implementation of Litentry parachain from scratch. Litentry is an identity aggregation focused company in Polkadot ecosystem, and has got the Web3 Foundation grant since 2019.
 
