@@ -62,7 +62,8 @@ There has so far been no similar project found within the Polkadot ecosystem. On
 Yvonne Tse 
 - Names of team members:
 Aaron C, 
-Will Z
+Will Z,
+Shawn W
 
 ### Contact
 
@@ -83,7 +84,9 @@ Aaron used to be founding protocol developer at Litentry, and he participated th
 
 Aaron is also the main developer of AdMeta, the decentralized advertising protocol, which has received and completed the Web3 Foundation grant since 2022.
 
-Will used to be a full stack developer at Litentry, and currently studying at the University of Melbourne.
+Will used to be a backend developer at Litentry, and currently studying at the University of Melbourne. He has over 5 years of Web3 and finance related development experience.
+
+Shawn is a full stack developer at Litentry, and he has over 6 years experience of Web3 frontend and smart contract development.
 
 
 ### Team Code Repos
@@ -94,7 +97,7 @@ https://github.com/GreenVerseNetwork/greenverse-app
 - https://github.com/hermione6
 - https://github.com/h4n0
 - https://github.com/Shihao66 
-
+- https://github.com/wxd56987
 
 ## Development Status :open_book:
 
@@ -115,7 +118,7 @@ https://github.com/GreenVerseNetwork/greenverse-app
 ### Milestone 1 — Basic functionality
 
 - **Estimated duration:** 3 month
-- **FTE:**  2
+- **FTE:**  3
 - **Costs:** 12,000 USD
 
 | Number | Deliverable | Specification |
@@ -138,7 +141,7 @@ https://github.com/GreenVerseNetwork/greenverse-app
 ### Milestone 2 — Additional features
 
 - **Estimated Duration:** 4 month
-- **FTE:**  2
+- **FTE:**  3
 - **Costs:** 14,000 USD
 
 
