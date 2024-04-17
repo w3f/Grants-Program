@@ -59,7 +59,7 @@ There has so far been no similar project found within the Polkadot ecosystem. On
 ### Team members
 
 - Name of team leader: 
-Yvonne Tse 
+Yvonne 
 - Names of team members:
 Aaron C, 
 Will Z,
@@ -67,7 +67,7 @@ Shawn W
 
 ### Contact
 
-- **Contact Name:** Yvonne Tse
+- **Contact Name:** Yvonne
 - **Contact Email:** yvonne@greenverse.network 
 - **Website:** https://www.greenverse.network/
 
