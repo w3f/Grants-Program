@@ -11,15 +11,15 @@
 
 GreenVerse partners with eco-conscious brands to gamefy green actions, rewarding users with tokens to truly incentivize sustainability engagement.
 
-GreenVerse is an innovative platform that combines gamification with sustainability, empowering users to take tangible actions towards a greener future. By offering diverse eco-friendly challenges, a rewarding point system, and a vibrant community of like-minded individuals, GreenVerse makes it fun and rewarding for users to adopt sustainable habits and celebrate their environmental achievements. With educational resources, impact tracking features, and strategic partnerships with environmental organizations and eco-conscious brands, GreenVerse provides users with the tools and support they need to make a real difference in the world. 
-
-GreenVerse introduces a new business model where collaboration with brands committed to genuine environmental impact drives user engagement through token incentives—a pioneering approach in the sustainability realm. By partnering with brands aligned with our mission, we offer users tangible rewards in the form of tokens for eco-friendly actions, setting a new standard for incentivizing environmental stewardship. This model not only fosters meaningful partnerships but also empowers users to make a real difference while earning rewards. 
-
-We decide to construct our blockchain using Substrate due to its adaptable and modular design, which aligns perfectly with the requirements of the GreenVerse blockchain. Specifically, in terms of on-chain logic design and module interactions, we believe Substrate offers the ideal solution for implementing the entire protocol. Furthermore, integrating Polkadot wallets into our mobile apps is essential, and we're pleased to find existing solutions available, sparing us the effort of building everything from the ground up.
+GreenVerse is an innovative platform that combines gamification with sustainability, empowering users to take tangible actions towards a greener future. By offering diverse eco-friendly challenges, a rewarding point system, and a vibrant community of like-minded individuals, GreenVerse makes it rewarding for users to adopt sustainable habits and celebrate their environmental achievements. With impact tracking features and strategic partnerships with environmental organizations and eco-conscious brands, GreenVerse provides users with the tools and support they need to make a real difference in the world. 
 
 Our team is deeply passionate about this project due to our co-founders' extensive background in both the renewable energy sector and Web3 technologies. With a wealth of experience in renewable energy and a deep understanding of the potential of Web3, we recognize the transformative power of combining these realms and also we are uniquely positioned to drive meaningful change in sustainability engagement. 
 
 ### Project Details
+
+GreenVerse introduces a new business model where collaboration with brands committed to genuine environmental impact drives user engagement through token incentives, a pioneerring approach in the sustainability realm. By partnering with brands aligned with our mission, we offer users tangible rewards in the form of tokens for eco-friendly actions, setting a new standard for incentivizing environmental stewardship. This model not only fosters meaningful partnerships but also empowers users to make a real difference while earning rewards. 
+
+We decide to construct our blockchain using Substrate due to its adaptable and modular design, which aligns perfectly with the requirements of the GreenVerse blockchain. Specifically, in terms of on-chain logic design and module interactions, we believe Substrate offers the ideal solution for implementing the entire protocol. Furthermore, integrating Polkadot wallets into our mobile apps is essential, and we're pleased to find existing solutions available, sparing us the effort of building everything from the ground up.
 
 #### Architecture
 
@@ -42,7 +42,7 @@ Our roadmap includes expanding support for a variety of environmentally friendly
 
 ### Ecosystem Fit
 
-GreenVerse will be built on Substrate and later planned to onboard Polkadot/Kusama parachain. As a sustainable gaming platform, GreenVerse leverages the interoperability and scalability features of Substrate and the Polkadot ecosystem to allow existing users and projects to interact and collaborate with us easily.
+GreenVerse will be built on Substrate and later plan to onboard Polkadot/Kusama parachain. As a sustainable gaming platform, GreenVerse leverages the interoperability and scalability features of Substrate and the Polkadot ecosystem to allow existing users and projects to interact and collaborate with us easily.
 
 Target audience:
 - Eco-conscious individual users in Polkadot ecosystem
@@ -112,7 +112,7 @@ https://github.com/GreenVerseNetwork/greenverse-app
 ### Overview
 
 - **Total Estimated Duration:**  7 months
-- **Full-Time Equivalent (FTE):**  2 FTE
+- **Full-Time Equivalent (FTE):**  3 FTE
 - **Total Costs:**  26,000 USD
 
 ### Milestone 1 — Basic functionality
