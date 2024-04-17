@@ -1,4 +1,4 @@
-# Name of your Project
+# GreenVerse
 
 - **Team Name:** GreenVerse
 - **Payment Address:** 13K7ob6hDeSgUHLR9z7HLffTmyBoDc1tugSKxcSUdd2osoCa(USDT)
