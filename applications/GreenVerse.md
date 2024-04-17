@@ -42,17 +42,17 @@ Our roadmap includes expanding support for a variety of environmentally friendly
 
 ### Ecosystem Fit
 
+GreenVerse will be built on Substrate and later planned to onboard Polkadot/Kusama parachain. As a sustainable gaming platform, GreenVerse leverages the interoperability and scalability features of Substrate and the Polkadot ecosystem to allow existing users and projects to interact and collaborate with us easily.
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+Target audience:
+- Eco-conscious individual users in Polkadot ecosystem
+- Polkadot native projects and Web2 brands who cares about sustainability 
+- Environmental organizations
+- 3rd party green data providers
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
+For eco-conscious users, there is a significant need for encouragement to maintain green actions as part of their daily routine. GreenVerse provides incentives and rewards to motivate users and reinforce sustainable behaviors, turning eco-friendly practices into engaging and rewarding experiences. For brands, there is a lack of effective means to incentivize individuals to adopt green behaviors and showcase their environmental initiatives. GreenVerse offers brands a platform to promote their green ambitions, engage with a community of environmentally conscious consumers, and integrate web3 technology into their sustainability efforts, providing a novel and impactful way to drive positive change.
+
+There has so far been no similar project found within the Polkadot ecosystem. One project in other eco-system that shares similarities is StepN, which incentivizes users to adopt healthy lifestyle habits through gamification and rewards. While StepN focuses on physical activity and health, GreenVerse distinguishes itself by addressing environmental sustainability specifically. GreenVerse gamifies eco-friendly behaviors and engages users in environmental conservation efforts through partnerships with brands, organizations, and community-driven initiatives.
 
 ## Team :busts_in_silhouette:
 
