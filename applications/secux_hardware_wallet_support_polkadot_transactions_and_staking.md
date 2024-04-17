@@ -1,7 +1,9 @@
 # SecuX Hardware Wallet supports Polkadot transactions and staking
 
 - **Team Name:** SecuX Technology Inc.
-- **Payment Address:** 
+- **Payment Address:**
+  - **DOT**: 14NNA8HqzMgdcNiGC1Susz4xQayGDHKCt8yLeNKBSmfaKmuT
+  - **Payment**: FIAT
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
