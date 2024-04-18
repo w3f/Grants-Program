@@ -168,7 +168,14 @@ For collaboration and code review processes with the Polkadot team, our develope
 
 - **Estimated duration:** 3 months
 - **FTE:**  5 FTE
-- **Costs:** 30,000 USDT
+- **Costs:** 30,000 USD
+
+|  Number | Deliverable               | Specification                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------: | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                   | Apache 2.0                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **0b.** | Documentation             | We will deliver a comprehensive "How It Works" guide covering three critical aspects of interacting with the Polkadot network: generating a Polkadot address, confirming a transaction, and engaging in staking. This guide will provide users with step-by-step instructions, ensuring they have a clear understanding of each process, which is essential for secure and effective participation in the Polkadot ecosystem. |
+| **0c.** | Testing and Testing Guide | We will  supply a detailed testing guide along with a SecuX hardware wallet to thoroughly verify the new functionalities. This approach will ensure that all features are tested under real-world conditions, providing users with reliable and secure solutions within the ecosystem.                                                                                                                                        |
+|     0e. | Article                   | We will create and publish an in-depth article that explores the various supports and functionalities of the Polkadot network. Additionally, we will enhance the article's reach through a co-marketing initiative on social media with Polkadot. This strategic partnership will not only educate our audience about Polkadot's capabilities but also amplify our content's visibility and engagement across platforms.      |
 
 | Number | Description                                             | Timeline |
 | -----: | ------------------------------------------------------- | -------- |
