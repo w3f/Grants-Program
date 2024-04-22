@@ -38,10 +38,15 @@ The goal here will be to integrate our changes with typechain-compiler, make it 
 #### Improve Result/Error handling
 As for now usage of contract query call result is cumbersome. We will perform developers community consultations and attempt to make it more intuitive.
 
+#### Generate Enums for events
+We will generate enums for events to make it easier to work with them in the code - seemed always like a crucial feature that was missing when working with event listening in typescript.
 
 #### Handle other bugs & issues
 We will address all the issues and bugs we encounter on our way.
     Additionally we'll fix as many issues as possible from the current issue tracker - https://github.com/Brushfam/typechain-polkadot/issues.
+
+#### Incorporate docker build into typechain
+We will make a possibility for typechain to use docker image instead of local environment for build process. This will make it easier for developers to use typechain without the need to install all the dependencies as well as produce verifiable builds.
 
 ### Ecosystem Fit
 
@@ -119,10 +124,14 @@ Our team developed the Pendzl library.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Update to support ink! 5 |  Typechain-polkadot library will work with smart-contracts built using ink! 5 producing completely valid, usable output |
-| **0b.** | Remove ReturnNumber | We will remove ReturnNumber class, clean up the code and replace it with a more reliable solution. |
-| **0c.** | Testing and Testing Guide | We will update existing tests and provide additional ones to ensure proper behavior. In the guide, we will describe how to run these tests. |
-| **0d.** | Update Typechain-compiler | We will update typechain compiler according to project details description. |
+| **0a.** | License | MIT  |
+| **0b.** | Documentation | We will cover the changes and newly added features in documentation and usage examples. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **1.** | Update to support ink! 5 |  Typechain-polkadot library will work with smart-contracts built using ink! 5 producing completely valid, usable output |
+| **2.** | Remove ReturnNumber | We will remove ReturnNumber class, clean up the code and replace it with a more reliable solution. |
+| **3.** | Testing and Testing Guide | We will update existing tests and provide additional ones to ensure proper behavior. In the guide, we will describe how to run these tests. |
+| **4.** | Update Typechain-compiler | We will update typechain compiler according to project details description. |
+| **5.** | Generate Enums for events | We will generate enums for events to make the work with event listening in typescript more intuitive. |
 
 
 ### Milestone 2 Additional Updates
@@ -133,9 +142,15 @@ Our team developed the Pendzl library.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | SC Deployment code | We will have simplified & enhanced usage of deployment classes. Code's API will be consulted with the community to ensure it fits its needs. |
-| **0b.** | Improve Result/Error handling | We will perform a research & consulations on how to make the DX better & implement the solution. |
-| **0c.** | Handle bugs & issues | We will address all the issues and bugs we encounter on our way. Additionally we'll fix as many issues as possible from the current issue tracker. The goal is to have all of them addressed. |
+| 0a. | License | MIT | 
+| 0b. | Documentation | We will cover the changes and newly added features in documentation and usage examples. | 
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
+| 0d. | Docker (optional) | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | 
+| 0e. | Article | We will publish an article that will explain improvements, reasonings behind them as well as overall DX benefits. | 
+| **1** | SC Deployment code | We will have simplified & enhanced usage of deployment classes. Code's API will be consulted with the community to ensure it fits its needs. |
+| **2** | Improve Result/Error handling | We will perform a research & consulations on how to make the DX better & implement the solution. |
+| **3** | Handle bugs & issues | We will address all the issues and bugs we encounter on our way. Additionally we'll fix as many issues as possible from the current issue tracker. The goal is to have all of them addressed. |
+| **4** | Incorporate docker build into typechain | Will make a possibility for typechain to use docker image instead of local environment for build process |
 
 
 ## Future Plans
