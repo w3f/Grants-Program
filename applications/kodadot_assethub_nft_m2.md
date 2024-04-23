@@ -47,14 +47,14 @@ Our project interacts with a Postgres database, a powerful, open-source object-r
 On the architectural level, we have a few layers, as described in the picture above.
 We need to obtain the data for the correct function of our indexer. AssetHub indexer combines the SubSquid archive (the pre-indexed storage) and RPC node for the new data. When the indexer obtains a new event, it is automatically processed by the defined handler. As previously mentioned, we processed data stored in the Postgres DB.
 
-How do we imagine the Database model? The diagram below represents a database schema with six entities: `CollectionEntity`, `NFTEntity`, `TokenEntity`, `MetadataEntity`, `Swap`, and `Offer`. As `CollectionEntity` and `NFTEntity` are well-known entities from Milestone 1, there are new entities that are going to be implemented.`TokenEntity` represents a list of `NFTEntity` grouped by the same `MetadataEntity`. Grouping NFTs allows developers to perform search operations effectively. Next are `Swap` and `Offer` that will represent Atomic Swaps and Offers built on top of the Atomic Swaps? Why decide to make it as two separate entities? As with the effective implementation, we would offload the heavy logic, and it would make it easier for presentations to implement it.
+How do we imagine the Database model? The diagram below represents a database schema with six entities: `CollectionEntity`, `NFTEntity`, `TokenEntity`, `MetadataEntity`, `SwapEntity`, and OfferEntity. As `CollectionEntity` and `NFTEntity` are well-known entities from Milestone 1, there are new entities that are going to be implemented.`TokenEntity` represents a list of `NFTEntity` grouped by the same `MetadataEntity`. Grouping NFTs allows developers to perform search operations effectively. Next are `SwapEntity` and `OfferEntity` that will represent Atomic Swaps and Offers built on top of the Atomic Swaps? Why decide to make it as two separate entities? As with the effective implementation, we would offload the heavy logic, and it would make it easier for presentations to implement it.
 
 ```mermaid
 erDiagram
     CollectionEntity ||--o{ NFTEntity : "nfts"
     CollectionEntity ||--|| MetadataEntity : "meta"
-    CollectionEntity ||--o{ Swap : "swaps"
-    CollectionEntity ||--o{ Offer : "offers"
+    CollectionEntity ||--o{ SwapEntity : "swaps"
+    CollectionEntity ||--o{ OfferEntity : "offers"
 
     TokenEntity ||--o{ NFTEntity : "nfts"
     TokenEntity ||--|| MetadataEntity : "meta"
@@ -63,8 +63,8 @@ erDiagram
     NFTEntity ||--|| MetadataEntity : "meta"
     NFTEntity ||--|| TokenEntity : "token"
     NFTEntity ||--|| CollectionEntity : "collection"
-    NFTEntity ||--o{ Swap : "swaps"
-    NFTEntity ||--o{ Offer : "offers"
+    NFTEntity ||--o{ SwapEntity : "swaps"
+    NFTEntity ||--o{ OfferEntity : "offers"
 ```
 
 To expose the data to clients, we provide a GraphQL interface. GraphQL is a query language for APIs and a runtime to execute those queries with our existing data. It allows clients to ask for exactly what they need and nothing more, making it easier to evolve and enabling powerful developer tools.
