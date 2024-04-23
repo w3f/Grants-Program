@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-applications/sub_consensus_mechanism" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.1">
+<title data-rh="true">Sub-consensus mechanism | Web3 Foundation Grants</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://grants.web3.foundation/applications/sub_consensus_mechanism"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Sub-consensus mechanism | Web3 Foundation Grants"><meta data-rh="true" name="description" content="- Team Name: Massa Labs"><meta data-rh="true" property="og:description" content="- Team Name: Massa Labs"><link data-rh="true" rel="icon" href="/img/favicon-32x32.png"><link data-rh="true" rel="canonical" href="https://grants.web3.foundation/applications/sub_consensus_mechanism"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/sub_consensus_mechanism" hreflang="en"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/sub_consensus_mechanism" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://9VKKGZO0U1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Web3 Foundation Grants" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.7c81f13b.css">
+<script src="/assets/js/runtime~main.5996135f.js" defer="defer"></script>
+<script src="/assets/js/main.ef15d7f4.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" style="background-color:#000;color:#ffffff" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">Did you know that we offer <a target="_blank" rel="noopener noreferrer" href="https://grants.web3.foundation/docs/help#office-hours">Ecosystem Funding Office Hours</a>?</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/w3f_logo.svg" alt="W3F Grants Program" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/w3f_logo.svg" alt="W3F Grants Program" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Grants Program</b></a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/docs/introduction">Introduction</a><a class="navbar__item navbar__link" href="/applications">List of Grants</a><a class="navbar__item navbar__link" href="/docs/faq">FAQ</a><a class="navbar__item navbar__link" href="/docs/Process/how-to-apply">Apply</a><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Sub-consensus mechanism</h1>
+<ul>
+<li><strong>Team Name:</strong> Massa Labs</li>
+<li><strong>Payment Address:</strong> 13zRBDBEYWGBZAiCeqMqefPCZ7cXS4GCmizt93NqWoTattpZ (USDT)</li>
+<li><strong><a href="https://github.com/w3f/Grants-Program/tree/master#level_slider-levels" target="_blank" rel="noopener noreferrer">Level</a>:</strong> 2</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-overview-page_facing_up">Project Overview <!-- -->📄<a href="#project-overview-page_facing_up" class="hash-link" aria-label="Direct link to project-overview-page_facing_up" title="Direct link to project-overview-page_facing_up">​</a></h2>
+<p>This application is in response to the first milestone of the following RFP: <a href="https://grants.web3.foundation/docs/RFPs/sub-consensus" target="_blank" rel="noopener noreferrer">Sub-consensus mechanism</a>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
+<p>This project is focused on conducting research to develop the specifications for an advanced, speculative consensus mechanism specifically designed for the collators within a Parachain context.
+As noted in the related RFP, a significant challenge facing parachain dApps is the prolonged confirmation times, which are a direct consequence of the time it takes for the Relay Chain to complete on-chain verification of parachain blocks.
+Our initiative is directed at introducing an opt-in based, probabilistic sub-consensus mechanism aimed at offering parachain users a more efficient option.</p>
+<p>At Massa Labs, we position ourselves at the cutting edge of blockchain technological advancement.
+Our team is comprised of individuals who are not only proficient in Rust and blockchain technologies but also include academic professionals recognized in blockchain research, demonstrating an ability to solve complex challenges and improve blockchain functionality significantly.
+With a profound interest in the Polkadot/Parachains landscape, this initial response to the RFP represents our formal introduction to the ecosystem, underscoring our commitment to contributing towards ongoing efforts to augment the network&#x27;s usability and effectiveness.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="project-details">Project Details<a href="#project-details" class="hash-link" aria-label="Direct link to Project Details" title="Direct link to Project Details">​</a></h3>
+<p>In our research, we intend to present a framework whereby collators within a parachain may opt to engage with this consensus mechanism
+Blocks identified through this mechanism would be quickly quasi-finalized, although they remain subject to discard in the event that subsequent relay chain finalizations necessitate a parachain reorganization (reorg).
+Consequently, applications leveraging this functionality should not depend on quasi-finalized blocks for critical operations without incorporating safeguards against potential reorg scenarios.</p>
+<p>The deliverable will be a comprehensive document covering the following aspects:</p>
+<ul>
+<li>An examination of the present technical framework and its constraints.</li>
+<li>A detailed technical proposal that includes a complete specification of any required pallets, along with any necessary modifications to the upstream Substrate/Cumulus repositories.</li>
+<li>A security assessment of the proposed approach.</li>
+<li>A set of guidelines for any parachain team working with Cumulus to implement this sub-consensus mechanism.</li>
+</ul>
+<p>Furthermore, our solution is anticipated to:</p>
+<ul>
+<li>Introduce a runtime module responsible for managing the sub-consensus logic, encompassing staking, block selection, and slashing protocols.</li>
+<li>Necessitate adjustments to Cumulus to define the sub-consensus parameters for a specific parachain.</li>
+<li>Exert minimal, if any, influence on the existing Collator protocol.</li>
+</ul>
+<p>This project is not aimed at delivering a Proof of Concept (PoC) or a Minimum Viable Product (MVP). Our proposal is strictly limited to achieving the objectives set out in the first milestone of the RFP.
+Additionally, our team will not account for possible constraints within the current Collator Protocol framework, such as differences between synchronous or asynchronous backing processes.
+Therefore, our approach will not presuppose the causes of parachain reorganizations.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ecosystem-fit">Ecosystem Fit<a href="#ecosystem-fit" class="hash-link" aria-label="Direct link to Ecosystem Fit" title="Direct link to Ecosystem Fit">​</a></h3>
+<ul>
+<li><strong>Where and how does your project fit into the ecosystem?</strong>
+<ul>
+<li>Our project seeks to enhance the flexibility of parachains by introducing a mechanism that achieves rapid quasi-finality within parachains, thereby enabling the emergence of new use cases.</li>
+</ul>
+</li>
+<li><strong>Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp&#x27;s userbase, yourself)?</strong>
+<ul>
+<li>Our primary target audience consists of parachain developers.</li>
+</ul>
+</li>
+<li><strong>What need(s) does your project meet?</strong>
+<ul>
+<li>We address the critical need for a swift pseudo-consensus mechanism within parachains, as the current finality times hinder certain applications.</li>
+</ul>
+</li>
+<li><strong>How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.</strong>
+<ul>
+<li>This need was identified in line with the RFP’s mention that parachain dApps experience delayed confirmation times due to the relay chain’s verification process. Data from <a href="https://telemetry.polkadot.io/" target="_blank" rel="noopener noreferrer">https://telemetry.polkadot.io</a> indicates that block finalization may take several seconds.</li>
+</ul>
+</li>
+<li><strong>Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?</strong>
+<ul>
+<li>In the current ecosystem, parachain consensus mechanisms are dependent on the Polkadot Relay Chain for finality, thereby lacking in rapid finality solutions. They mainly serve to submit block candidates for relay chain validation, resulting in inherent delays.</li>
+<li>The <code>collator-selection</code> pallet offered by Cumulus aims at managing collator coordination to prevent collation congestion. However, this pallet is not designed as a robust consensus mechanism but rather as a coordination tool for collators to enhance efficiency.</li>
+<li>Our project proposes a supplementary consensus mechanism designed to facilitate fast quasi-finality. This means creating a system where actors are economically discouraged from initiating  reorgs, thereby expecting a reduction in their occurrence if collators are adequately motivated to maintain honesty.</li>
+</ul>
+</li>
+<li><strong>Are there any projects similar to yours in related ecosystems?</strong>
+<ul>
+<li>No, this is a pioneering research project aimed directly at addressing core functionalities within the Polkadot ecosystem.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="team-busts_in_silhouette">Team <!-- -->👥<a href="#team-busts_in_silhouette" class="hash-link" aria-label="Direct link to team-busts_in_silhouette" title="Direct link to team-busts_in_silhouette">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-members">Team members<a href="#team-members" class="hash-link" aria-label="Direct link to Team members" title="Direct link to Team members">​</a></h3>
+<ul>
+<li>Name of team leader: Aurélien Foucault</li>
+<li>Names of team members: Aurélien Foucault, Léo Besançon PhD, Léonard Lys PhD</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contact">Contact<a href="#contact" class="hash-link" aria-label="Direct link to Contact" title="Direct link to Contact">​</a></h3>
+<ul>
+<li><strong>Contact Name:</strong> Aurélien Foucault (Lead of Development Partnership and Team leader)</li>
+<li><strong>Contact Email:</strong> <a href="mailto:af@massa.net" target="_blank" rel="noopener noreferrer">af@massa.net</a></li>
+<li><strong>Website:</strong> <a href="https://massa.net/" target="_blank" rel="noopener noreferrer">https://massa.net/</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="legal-structure">Legal Structure<a href="#legal-structure" class="hash-link" aria-label="Direct link to Legal Structure" title="Direct link to Legal Structure">​</a></h3>
+<ul>
+<li><strong>Registered Address:</strong> 226 BD VOLTAIRE 75011 PARIS, FRANCE</li>
+<li><strong>Registered Legal Entity:</strong> MASSA LABS</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="teams-experience">Team&#x27;s experience<a href="#teams-experience" class="hash-link" aria-label="Direct link to Team&#x27;s experience" title="Direct link to Team&#x27;s experience">​</a></h3>
+<p>Our team&#x27;s expertise is grounded in the successful development of Massa, a fully decentralized, Rust-built Layer 1 blockchain. This platform has been rigorously audited by Certik, highlighting our emphasis on security and reliability. It currently operates in Mainnet with over 1500 active nodes participating in network security through staking, underscoring the robustness and community trust in our system.</p>
+<p>The breadth of experience within Massa Labs spans both academic research and practical application in blockchain technology. Aurélien Foucault, a developer specialized in Rust, has been instrumental in the construction of our Layer 1 blockchain, demonstrating our team&#x27;s capability in developing high-performance blockchain infrastructure.
+Furthermore, Dr. Léo Besançon and Dr. Léonard Lys, both holding PhDs in blockchain technology, enrich our team with a profound theoretical understanding and research capacity.
+Their academic and research achievements are complemented by tangible contributions to significant blockchain projects, including Starknet (<a href="https://github.com/keep-starknet-strange/bonsai-trie" target="_blank" rel="noopener noreferrer">https://github.com/keep-starknet-strange/bonsai-trie</a>),  illustrating our team&#x27;s ability to contribute valuable innovations to the blockchain community.</p>
+<p>This combination of hands-on development experience, academic insight, and a demonstrable commitment to advancing blockchain technology makes Massa Labs a suitable candidate to undertake the Polkadot Foundation&#x27;s project. We are dedicated to delivering a sub-consensus system that not only meets the current requirements of the Polkadot ecosystem but is also designed with foresight into its future evolution.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-code-repos">Team Code Repos<a href="#team-code-repos" class="hash-link" aria-label="Direct link to Team Code Repos" title="Direct link to Team Code Repos">​</a></h3>
+<p>Relevant team code repos:</p>
+<ul>
+<li><a href="https://github.com/massalabs/massa" target="_blank" rel="noopener noreferrer">https://github.com/massalabs/massa</a></li>
+</ul>
+<p>GitHub accounts of all team members:</p>
+<ul>
+<li><a href="https://github.com/AurelienFT" target="_blank" rel="noopener noreferrer">https://github.com/AurelienFT</a></li>
+<li><a href="https://github.com/Leo-Besancon" target="_blank" rel="noopener noreferrer">https://github.com/Leo-Besancon</a></li>
+<li><a href="https://github.com/leoloco" target="_blank" rel="noopener noreferrer">https://github.com/leoloco</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-linkedin-profiles">Team LinkedIn Profiles<a href="#team-linkedin-profiles" class="hash-link" aria-label="Direct link to Team LinkedIn Profiles" title="Direct link to Team LinkedIn Profiles">​</a></h3>
+<ul>
+<li><a href="https://www.linkedin.com/in/aurelien-foucault/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/aurelien-foucault/</a></li>
+<li><a href="https://www.linkedin.com/in/leo-besancon/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/leo-besancon/</a></li>
+<li><a href="https://www.linkedin.com/in/leonard-lys-0033a486/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/leonard-lys-0033a486/</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-academic-publications">Team academic publications<a href="#team-academic-publications" class="hash-link" aria-label="Direct link to Team academic publications" title="Direct link to Team academic publications">​</a></h3>
+<p>We have academic researchers with blockchain publications in the team, and all are familiar with BFT consensus algorithms:</p>
+<p>Léo Besançon: <a href="https://scholar.google.com/citations?user=NmXfn2cAAAAJ&amp;hl=en&amp;authuser=1&amp;oi=ao" target="_blank" rel="noopener noreferrer">https://scholar.google.com/citations?user=NmXfn2cAAAAJ&amp;hl=en&amp;authuser=1&amp;oi=ao</a></p>
+<p>Léonard Lys: <a href="https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=NdEcgP8AAAAJ" target="_blank" rel="noopener noreferrer">https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=NdEcgP8AAAAJ</a></p>
+<p>But also, as part of the Massa team:</p>
+<ul>
+<li><a href="https://scholar.google.com/citations?user=OUeoziEAAAAJ" target="_blank" rel="noopener noreferrer">https://scholar.google.com/citations?user=OUeoziEAAAAJ</a></li>
+<li><a href="https://scholar.google.com/citations?user=kWScejIAAAAJ" target="_blank" rel="noopener noreferrer">https://scholar.google.com/citations?user=kWScejIAAAAJ</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-status-open_book">Development Status <!-- -->📖<a href="#development-status-open_book" class="hash-link" aria-label="Direct link to development-status-open_book" title="Direct link to development-status-open_book">​</a></h2>
+<p>While we familiarized ourselves with the current polkadot architecture and related mechanisms, we have not yet started the research phase for this project. While we haven&#x27;t discussed our approach with others, we have examined:</p>
+<ul>
+<li>The current implementation of the Collator protocol</li>
+<li>Various research related to BFT / PoS based consensus algorithms. In particular, one of our team members thoroughly analyzed consensus algorithms in the context of a thesis on cross-chain interoperability, with a brief focus on polkadot network: <a href="https://theses.hal.science/tel-03847642/file/LYS_Leonard_2022.pdf" target="_blank" rel="noopener noreferrer">https://theses.hal.science/tel-03847642/file/LYS_Leonard_2022.pdf</a>. We have thoroughly studied consensus algorithms and we have even imagined, designed, theorized, proven and implemented our own innovative PoS consensus algorithm from scratch that is now running in production: <a href="https://arxiv.org/pdf/1803.09029.pdf" target="_blank" rel="noopener noreferrer">https://arxiv.org/pdf/1803.09029.pdf</a>. We also designed a hybrid BFT and Nakamoto pseudo-consensus algorithm to improve the security of our original proposal: <a href="https://arxiv.org/abs/2302.10009" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2302.10009</a>.</li>
+<li>We are also familiar with Substrate. For example we have worked in collaboration with Starknet on substantially modifying the Substrate runtime for their purposes in the Madara sequencer: <a href="https://twitter.com/Starknet/status/1755267691890225356" target="_blank" rel="noopener noreferrer">https://twitter.com/Starknet/status/1755267691890225356</a> (in particular the second link).</li>
+</ul>
+<p>We will familiarize ourselves with the particularities of Polkadot in order to ensure that our implementation is correctly integrated to the rest of the codebase. We are quick learners in that regard, but if you have references of Polkadot core developers that might provide guidance and review, it will accelerate the process further.</p>
+<p>We are very confident in our ability to tackle this topic, and our track record will show you that we thrive at complex tasks.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-roadmap-nut_and_bolt">Development Roadmap <!-- -->🔩<a href="#development-roadmap-nut_and_bolt" class="hash-link" aria-label="Direct link to development-roadmap-nut_and_bolt" title="Direct link to development-roadmap-nut_and_bolt">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview-1">Overview<a href="#overview-1" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
+<ul>
+<li><strong>Total Estimated Duration:</strong> 2 months</li>
+<li><strong>Full-Time Equivalent (FTE):</strong> 1</li>
+<li><strong>Total Costs:</strong> 20,000 USD</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-1---research-and-technical-specification">Milestone 1 <strong>- Research and technical specification</strong><a href="#milestone-1---research-and-technical-specification" class="hash-link" aria-label="Direct link to milestone-1---research-and-technical-specification" title="Direct link to milestone-1---research-and-technical-specification">​</a></h3>
+<ul>
+<li><strong>Estimated duration:</strong> 2 months</li>
+<li><strong>FTE:</strong> 1</li>
+<li><strong>Costs:</strong> 20,000 DAI</li>
+</ul>
+<table><thead><tr><th>Number</th><th>Deliverable</th><th>Specification</th></tr></thead><tbody><tr><td>0a.</td><td>License</td><td>MIT</td></tr><tr><td>0b.</td><td>Documentation</td><td>We will document the limitations of the current approach.</td></tr><tr><td>0c.</td><td>Testing and Testing Guide</td><td>This research will not lead to any testing.</td></tr><tr><td>0d.</td><td>Docker</td><td>We do not plan to modify the existing deployment infrastructure.</td></tr><tr><td>0e.</td><td>Article</td><td>We will write an article that explains our research and the defined specifications</td></tr><tr><td>1.</td><td>Technical specifications</td><td>We will provide a document containing: an overview of the architecture changes, functional specifications for new pallets, and functional specifications for changes on the polkadot/cumulus repositories.</td></tr><tr><td>2.</td><td>Security analysis</td><td>We will provide a security report containing: detailed hypotheses on the different actors (underlying hypotheses on the Relay Chain), risk/reward analysis to break the underlying choosen consensus mechanism, and impact on the expected usage for parachains.</td></tr><tr><td>3.</td><td>Implementation guide for parachains</td><td>We will provide a guide containing: a brief overview of our solution and general guidelines of what the parachain will have to adopt our solution</td></tr></tbody></table>
+<p>The research outlined in deliverables 1. and 2. will be reviewed by the Polkadot team, and any concerns raised by the team will be taken into account.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="future-plans">Future Plans<a href="#future-plans" class="hash-link" aria-label="Direct link to Future Plans" title="Direct link to Future Plans">​</a></h2>
+<p>In this application, we only focus on the first milestone of the linked RFP, in order to familiarize ourselves with the Polkadot ecosystem.
+We plan to apply to the second milestone once this research phase is validated.</p>
+<p>In this case, we would actively develop The detailed specifications of the planned Proof of Concept will depend on the results of the research phase, but would include the implementation of the sub consensus mechanism for at least one existing parachain, along with testing and benchmarks.</p>
+<p>More generally, once the team is more familiar with the Polkadot ecosystem, we could provide additional assistance in core development on other subjects.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-information-heavy_plus_sign">Additional Information <!-- -->➕<a href="#additional-information-heavy_plus_sign" class="hash-link" aria-label="Direct link to additional-information-heavy_plus_sign" title="Direct link to additional-information-heavy_plus_sign">​</a></h2>
+<p>N/A</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/w3f/Grants-Program/edit/master/applications/sub_consensus_mechanism.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#project-overview-page_facing_up" class="table-of-contents__link toc-highlight">Project Overview 📄</a><ul><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#project-details" class="table-of-contents__link toc-highlight">Project Details</a></li><li><a href="#ecosystem-fit" class="table-of-contents__link toc-highlight">Ecosystem Fit</a></li></ul></li><li><a href="#team-busts_in_silhouette" class="table-of-contents__link toc-highlight">Team 👥</a><ul><li><a href="#team-members" class="table-of-contents__link toc-highlight">Team members</a></li><li><a href="#contact" class="table-of-contents__link toc-highlight">Contact</a></li><li><a href="#legal-structure" class="table-of-contents__link toc-highlight">Legal Structure</a></li><li><a href="#teams-experience" class="table-of-contents__link toc-highlight">Team&#39;s experience</a></li><li><a href="#team-code-repos" class="table-of-contents__link toc-highlight">Team Code Repos</a></li><li><a href="#team-linkedin-profiles" class="table-of-contents__link toc-highlight">Team LinkedIn Profiles</a></li><li><a href="#team-academic-publications" class="table-of-contents__link toc-highlight">Team academic publications</a></li></ul></li><li><a href="#development-status-open_book" class="table-of-contents__link toc-highlight">Development Status 📖</a></li><li><a href="#development-roadmap-nut_and_bolt" class="table-of-contents__link toc-highlight">Development Roadmap 🔩</a><ul><li><a href="#overview-1" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#milestone-1---research-and-technical-specification" class="table-of-contents__link toc-highlight">Milestone 1 <strong>- Research and technical specification</strong></a></li></ul></li><li><a href="#future-plans" class="table-of-contents__link toc-highlight">Future Plans</a></li><li><a href="#additional-information-heavy_plus_sign" class="table-of-contents__link toc-highlight">Additional Information ➕</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">More Info</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/w3f/Grants-Program" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://web3.foundation/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/Support Docs/privacy_policy">Privacy Policy</a></li><li class="footer__item"><a href="https://web3.foundation/legal-disclosures/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Legal Disclosures</a></li></ul></div><div class="col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/Web3foundation" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&amp;via=matrix.org&amp;via=matrix.parity.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">Grants Community Matrix Channel<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2024 Web3 Foundation</div></div></div></footer></div>
+</body>
+</html>
