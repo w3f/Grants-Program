@@ -1,7 +1,9 @@
 # AssetHub NFT Indexer (M2)
 
 - **Team Name:** KodaDot
-- **Payment Address:** FIAT
+- **Payment Details:**
+  - **DOT**: 15BZFbMsCR1ki59mJHo8iAjgAozGJaYHR3oVRPQWNnoEZiL9
+  - **Payment**: FIAT
 - **[Level](https://github.com/w3f/Grants-Program#baby_chick-level-2):** 2
 
 Previously delivered:
@@ -47,7 +49,7 @@ Our project interacts with a Postgres database, a powerful, open-source object-r
 On the architectural level, we have a few layers, as described in the picture above.
 We need to obtain the data for the correct function of our indexer. AssetHub indexer combines the SubSquid archive (the pre-indexed storage) and RPC node for the new data. When the indexer obtains a new event, it is automatically processed by the defined handler. As previously mentioned, we processed data stored in the Postgres DB.
 
-How do we imagine the Database model? The diagram below represents a database schema with six entities: `CollectionEntity`, `NFTEntity`, `TokenEntity`, `MetadataEntity`, `SwapEntity`, and OfferEntity. As `CollectionEntity` and `NFTEntity` are well-known entities from Milestone 1, there are new entities that are going to be implemented.`TokenEntity` represents a list of `NFTEntity` grouped by the same `MetadataEntity`. Grouping NFTs allows developers to perform search operations effectively. Next are `SwapEntity` and `OfferEntity` that will represent Atomic Swaps and Offers built on top of the Atomic Swaps? Why decide to make it as two separate entities? As with the effective implementation, we would offload the heavy logic, and it would make it easier for presentations to implement it.
+How do we imagine the Database model? The diagram below represents a database schema with six entities: `CollectionEntity`, `NFTEntity`, `TokenEntity`, `MetadataEntity`, `SwapEntity`, and `OfferEntity`. As `CollectionEntity` and `NFTEntity` are well-known entities from Milestone 1, there are new entities that are going to be implemented.`TokenEntity` represents a list of `NFTEntity` grouped by the same `MetadataEntity`. Grouping NFTs allows developers to perform search operations effectively. Next are `SwapEntity` and `OfferEntity` that will represent Atomic Swaps and Offers built on top of the Atomic Swaps. Why decide to make it as two separate entities? As with the effective implementation, we would offload the heavy logic, and it would make it easier for presentations to implement it.
 
 ```mermaid
 erDiagram
@@ -202,18 +204,16 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 
 Upon successful implementation of Milestone 2, the team plans to focus on further enhancing the AssetHub Indexer's capabilities based on community feedback, including improving the user interface, introducing additional functionalities for NFT management, and expanding the project's reach within the Polkadot ecosystem. We have outlined several key enhancements and upgrades that we aim to implement:
 
-1. Development of an explorer to facilitate navigation within the NFT ecosystem.
-2. Introduction of collections functionality for systematic organization of NFTs.
-3. Creation of view modules to visually present NFT details.
-4. Establishment of user profiles to enable personalized user interfaces.
-5. Incorporation of constituent elements for individual NFT representation.
-6. Implement action components for functionalities like LIST, SEND, BUY, MINT, BURN, and Atomic Swap.
-7. Development of comprehensive statistical representations and analytics mechanisms.
-8. Introduction of rankings to highlight top-performing users, collections, or items.
-9. Personalization of the user interface to enhance the user experience.
-10. Maintenance of compatibility with runtime upgrades and changes in the Kusama/Polkadot ecosystem.
-11. Regular updates to keep up with Substrate for continuous system enhancement.
-12. Management of upgrades to parachain runtime versions, including indexer enhancements and related costs.
+1. Development of an explorer to facilitate navigation within the Atomic Swaps ecosystem.
+2. Introduction of atomic swap pages functionality for systematic organization of Atomic swaps.
+3. Creation of view modules to visually present Offers details.
+4. Establishment of user profiles to enable personalized user offers.
+5. Incorporation of constituent elements for individual Offers representation.
+6. Implement action components for functionalities like CREATE, CANCEL, CLAIM for Atomic Swap.
+7. Development of comprehensive statistical representations and analytics mechanisms for Atomic Swaos.
+8. Maintenance of compatibility with runtime upgrades and changes in the Kusama/AssetHub ecosystem.
+9. Regular updates to keep up with Substrate for continuous system enhancement.
+10. Management of upgrades to parachain runtime versions, including indexer enhancements and related costs.
 
 ## Additional Information ➕
 
