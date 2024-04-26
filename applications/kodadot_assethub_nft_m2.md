@@ -158,7 +158,7 @@ Matej and Viktor are strongly committed to the Polkadot ecosystem and have demon
 - **FTE:** 2 FTE
 - **Costs:** 30,000 USD 💰
 
-## Milestone 2 - AssetHub Indexer Swaps, Offers and Tokens Implementation
+## Milestone 1 - AssetHub Indexer Swaps, Offers and Tokens Implementation
 
 - **Estimated duration:** 3 months ⌛️
 - **FTE:** 2 FTE
