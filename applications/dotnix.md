@@ -2,7 +2,7 @@
 
 - **Team Name:** Sporyon Technologies OÜ
 
-- **Payment Address:** In the case of fiat payment, please share your bank account privately with grants@web3.foundation  Fiat 25.03.2024, 15:18
+- **Payment Address:** Fiat 25.03.2024, 15:18
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview 📄
