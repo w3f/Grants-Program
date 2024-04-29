@@ -164,8 +164,7 @@ We have started designing the architecture and the interfaces between the differ
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **quick start guide**  of how to go from 0 to a running validator that can perform the basic functions up until making a test transaction.
-The guide will be focused on how to set up the dotnix validator and other administrative topics. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **quick start guide**  of how to go from 0 to a running validator that can perform the basic functions up until making a test transaction. The guide will be focused on how to set up the dotnix validator and other administrative topics. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) built with `nix` that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | We will publish an article explaining why we believe this project is a step in the right direction and what benefits we hope to bring to the polkadot and general staking services. |
