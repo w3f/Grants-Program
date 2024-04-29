@@ -61,7 +61,7 @@ erDiagram
     TokenEntity ||--o{ NFTEntity : "nfts"
     TokenEntity ||--|| MetadataEntity : "meta"
 
-    NFTEntity ||--o{ Event : "events"
+    NFTEntity ||--o{ EventEntity : "events"
     NFTEntity ||--|| MetadataEntity : "meta"
     NFTEntity ||--|| TokenEntity : "token"
     NFTEntity ||--|| CollectionEntity : "collection"
