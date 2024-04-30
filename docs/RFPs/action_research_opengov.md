@@ -29,22 +29,23 @@ There is the need for more encompassing, neutral, practical, and actionable case
 
 **Project outcomes:**
 
-- 2 reports on the state of OpenGov (value proposition, strengths, limitations)
-- 3 case studies of OpenGov implementations (Kusama, Polkadot, and Bifrost)
-- 5+ recommendations for improvements to the OpenGov decentralised system
+- Reports on the state of OpenGov (value proposition, strengths, limitations)
+- Case studies of OpenGov implementations (Kusama, Polkadot, and Bifrost)
+- Recommendations for improvements to the OpenGov decentralised system
 
 
 
-## Deliverables :nut_and_bolt:
+## Suggestions for deliverables :nut_and_bolt:
 
-* **Total Estimated Duration:** 3-6 months
+* **Total Estimated Duration:** up to 12 months
 * **Total Costs:** TBC. 
-* **Note:** All the items mentioned within each milestone are only starting points for the reflection and analysis. Proposers are invited to expand on these generic topics in as much breadth and depth as they see fit.
+* **Note:** Proposers are invited to expand on the generic topics suggested below in as much breadth and depth as they see fit in the course of their reflections and analyses.
 
-### Milestone 1: Report: OpenGov as a model for decentralised decision-making.
 
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
+### Example outcome 1: A report on OpenGov as a model for decentralised decision-making.
+
+| Number | Example objectives |  
+| ------------- | ------------- |
 | 1. | What was the rationale for OpenGov?  
 | 2. | What were the objectives of OpenGov? 
 | 3. | When and how was OpenGov deployed? 
@@ -58,10 +59,10 @@ There is the need for more encompassing, neutral, practical, and actionable case
 | 11. | Appendices of all materials and resources used in the course of this review
 
 
-### Milestone 2: Report: OpenGov as a decentralised executive system.
+### Example outcome 2: A report on OpenGov as a decentralised executive system.
 
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
+| Number | Example objectives | 
+| ------------- | ------------- |
 | 1. | What are the key specifications of OpenGov?  
 | 2. | How do these specifications align with the objectives of OpenGov? 
 | 3. | What is the current process for getting OpenGov specifications revised/updated? 
@@ -75,10 +76,10 @@ There is the need for more encompassing, neutral, practical, and actionable case
 | 11. | Appendices of all materials and resources used in the course of this review
 
 
-### Milestone 3: An analysis of Governance participation on OpenGov implementations. 
+### Example outcome 3: An analysis of Governance participation on OpenGov implementations. 
 
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
+| Number | Example objectives | 
+| ------------- | ------------- |
 | 1. | What does participation in OpenGov look like?
 | 2. | Are there incentives for OpenGov participation?
 | 3. | Are there obstacles to OpenGov participation?
@@ -92,10 +93,10 @@ There is the need for more encompassing, neutral, practical, and actionable case
 | 11. | Appendices of all materials and resources used in the course of this analysis
 
 
-### Milestone 4: A review of Treasury funding management in OpenGov.
+### Example outcome 4: A review of Treasury funding management in OpenGov.
 
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
+| Number | Example objectives | 
+| ------------- | ------------- |
 | 1. | How is Treasury funding allocated under OpenGov?
 | 2. | What are the profiles of Treasury funding applicants? 
 | 3. | What are the categories of Treasury funding requests?
