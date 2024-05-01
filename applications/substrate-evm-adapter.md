@@ -138,7 +138,7 @@ Team members:
 
 ### Overview
 
-- **Total Estimated Duration:** 3.5 months
+- **Total Estimated Duration:** 15 weeks
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 30,000 USDT
 
@@ -157,7 +157,7 @@ Team members:
 | 1. | ETH-RPC Adapter | We will create a generic ETH-RPC Adapter service for Substrate chains. It will support the most essential ETH RPC calls to make it work with the existing tools. Main goals here will be ability to connect to Metamask, `web3.js`, read Substrate chain's pallets' state and support subscriptions. Adapter will have option of running local `smoldot` instance or connecting to remote RPC node. |
 | 2. | Deno module | We will create a Deno module that can connect to Substrate chain as an ETH-RPC adapter + light client. |
 | 3. | Javascript package | We will provide a javascript package that can connect to Substrate chain as an ETH-RPC adapter + light client. |
-| 4. | Unit tests | We will provide comprehensive unit tests for the adapter. |
+| 4. | End-to-end tests | We will provide comprehensive end-to-end tests for the adapter. |
 
 ### Milestone 2 — EVM Adapter Pallet
 
@@ -169,18 +169,17 @@ Team members:
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit and integration tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | I will publish an article that explains the complete lifecycle and future plans of the project |
 | 1. | EVM Adapter Pallet | We will create a pallet that will be responsible for bridging the gap between the ETH RPC adapter and the Substrate chain. It will have the ability to dispatch FRAME calls, opt-in possibility to execute EVM bytecode, and handle account mapping. Another main responsibility of the pallet will be handling signature verification. Some parts of this pallet can be inspired from `frontier`'s pallet `pallet-ethereum` but needs refinement and some modification. |
 | 2. | Substrate Node | We will create a Substrate node that has two runtimes: with and without the `pallet-evm`. Both will contain `evm-adapter` pallet, but only the one with `pallet-evm` will be able to execute EVM bytecode. This will demonstrate two main use-cases of this pallet. |
-| 3. | Unit tests | We will provide comprehensive unit tests for the pallet. |
-| 4. | MVP Demo DApp | We will provide a small EVM DApp that demonstrates the integration of the pallet and RPC adapter. This will be a basic web page that can sign and send custom extrinsic with Metamask, read the state of Substrate pallets. |
-| 5. | `docker-compose` | We will provide a `docker-compose` file that will run the whole project. |
+| 3. | MVP Demo DApp | We will provide a small EVM DApp that demonstrates the integration of the pallet and RPC adapter. This will be a basic web page that can sign and send custom extrinsic with Metamask, read the state of Substrate pallets. |
+| 4. | `docker-compose` | We will provide a `docker-compose` file that will run the whole project. |
 
 ## Future Plans
 
-In the future, we plan to explore if we can completely remove the adapter pallet and have the account mapping and transaction converting logic completely in the RPC adapter. This will allow us to have even more lightweight and generic solution, however could present more challenges. A minimal metamask snap that can share the keyring with the adapter could be one of the solutions, but needs more research.
+In the future, we plan to explore if we can make the adapter pallet optional and have the account mapping and transaction converting logic completely in the RPC adapter. This will allow us to have even more lightweight and generic solution, however could present more challenges. We will explore the ways of securely sharing the same private key for two chains without sacrificing any benefits that the `evm-adapter` pallet offers, but this needs time for research.
 
 ## Additional Information
 
