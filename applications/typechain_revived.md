@@ -29,7 +29,7 @@ Update Typechain to work with ink! 5 - specifically to handle the way events are
 
 #### Simplify & enhance usage of deployment classes
 The current design of Typechain generated code induces runtime errors due to improper handling of ABI. Our goal is to make the code runtime-safe and more intuitive.
-    Additinally we will add a possibility to upload code without instantiating the contract. (Corresponding issue)[https://github.com/Brushfam/typechain-polkadot/issues/106]
+    Additinally we will add a possibility to upload code without instantiating the contract. [Corresponding issue](https://github.com/Brushfam/typechain-polkadot/issues/106)
 
 #### Fix/improve typechain-complier
 Typechain-compiler has never worked for us reliably and we had to develop our own solution. 
