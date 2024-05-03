@@ -121,7 +121,7 @@ We are in active conversations with some of the teams we met there, and continuo
 
 - **Contact Name:** Jean-Luc Leleu
 - **Contact Email:** jll@interstellar.gg
-- **Website:** <https://www.interstellar.gg/>
+- **Website:** https://www.interstellar.gg/
 
 
 ### Legal Structure
@@ -135,20 +135,20 @@ We are now multiple security and fintech entrepreneurs, security researchers, pa
 
 ### Team Code Repos
 
-- <https://github.com/Interstellar-Network>
+- https://github.com/Interstellar-Network
 
-- <https://github.com/nathanprat>
+- https://github.com/nathanprat
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/jlleleu/> Jean-Luc Leleu
+- https://www.linkedin.com/in/jlleleu/ Jean-Luc Leleu
 
-- <https://www.linkedin.com/in/nathan-prat/> Nathan Part
+- https://www.linkedin.com/in/nathan-prat/ Nathan Part
 
-- <https://www.linkedin.com/in/eliotjfl/> Eliot Leleu
+- https://www.linkedin.com/in/eliotjfl/ Eliot Leleu
 
 
-- <https://www.linkedin.com/in/philippesalats/> Philippe Salats (advisor)
+- https://www.linkedin.com/in/philippesalats/ Philippe Salats (advisor)
 
 
 ## Development Roadmap :nut_and_bolt:

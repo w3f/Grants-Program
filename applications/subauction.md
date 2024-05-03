@@ -116,7 +116,7 @@ UPDATE 2021-09-28: The solution has been migrated from ORML to FRAME's Uniques p
 
 ### Team Website
 
-- <https://polkadotters.medium.com>
+- https://polkadotters.medium.com
 
 ### Legal structure
 
@@ -130,12 +130,12 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 
 ### Team Code Repo
 
-- <https://github.com/galacticcouncil/Basilisk-node/tree/feat/auctions/pallets>
+- https://github.com/galacticcouncil/Basilisk-node/tree/feat/auctions/pallets
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/jindrich-zeleny>
-- <https://www.linkedin.com/in/valery-gantchev-20a03971/>
+- https://www.linkedin.com/in/jindrich-zeleny
+- https://www.linkedin.com/in/valery-gantchev-20a03971/
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -202,9 +202,9 @@ Our progress will be regularly published on social media to gain enough attentio
 
 Our channels
 
-- <https://polkadotters.medium.com>
-- <https://twitter.com/Polkadotters1>
-- <https://www.facebook.com/groups/232197797602358/>
+- https://polkadotters.medium.com
+- https://twitter.com/Polkadotters1
+- https://www.facebook.com/groups/232197797602358/
 
 ## Future Plans
 

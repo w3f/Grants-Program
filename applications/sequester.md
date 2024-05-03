@@ -57,18 +57,18 @@ Sequester is building the infrastructure to allow any chain in Dotsama to donate
 
 ### Team Github Repos
 
-- Code for the pallet will live here: <https://github.com/SequesterChain/pallets>
-- Code for the Sequester chain will live here: <https://github.com/SequesterChain/Sequester-node>
+- Code for the pallet will live here: https://github.com/SequesterChain/pallets
+- Code for the Sequester chain will live here: https://github.com/SequesterChain/Sequester-node
 
 ### Individual Github Repos
 
-- Brendan: <https://github.com/brendanedelson>
-- Ethan: <https://github.com/esbrown>
+- Brendan: https://github.com/brendanedelson
+- Ethan: https://github.com/esbrown
 
 ### Team LinkedIn Profiles (if available)
 
-- Brendan: ​​<https://www.linkedin.com/in/brendanedelson/>
-- Ethan: <https://www.linkedin.com/in/ethanbrown2/>
+- Brendan: ​​https://www.linkedin.com/in/brendanedelson/
+- Ethan: https://www.linkedin.com/in/ethanbrown2/
 
 ## Development Status
 

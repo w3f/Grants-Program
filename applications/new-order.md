@@ -114,7 +114,7 @@ Singapore
 
 ### Team Code Repos
 
-* Standard Protocol's team Github: <https://github.com/digitalnativeinc>
+* Standard Protocol's team Github: https://github.com/digitalnativeinc
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 

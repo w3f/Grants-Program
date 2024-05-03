@@ -59,7 +59,7 @@ once we complete the aforementioned improvements and build upon to provide maint
 - **Website:** www.zeeve.io
 
 ### Legal Structure
-- **Registered Address:** 1603 Capitol Ave Ste 310, Cheyenne 82001, WY
+- **Registered Address:** 300 Spectíum Centeí Dí. Suite 400 Iívine, CA 92618 United States
 - **Registered Legal Entity:** Zeeve Inc.
 
 ### Team's experience

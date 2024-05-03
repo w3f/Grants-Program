@@ -70,7 +70,7 @@ The API specifications will provide a standardized way for users to interact wit
 **Knowledge representation and querying**: OWL, RDF and SPARQL
 **Information extraction, NLP, and other backend pipelines**: Python, NLTK
 **UI and client-side integration**: Node.js, JavaScript, and Angular/React
-**Interaction with relay chains and parachains**: Substrate interfaces like Polkadot{.js} 
+**Interaction with relay chains and parachains**: Substrate interfaces like Polkadot\{.js} 
 
 
 > Documentation of core components, protocols, architecture, etc. to be deployed

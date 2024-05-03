@@ -263,7 +263,7 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 | --- | --- |
 | License | All code will be open-sourced under the MIT license and shared in Github or Gitlab. We welcome contribution and reuse. |
 | Source code | Public source code repository containing a Rust codebase based on the Substrate Node Template would be set up. Pallets implemented using Rust, using the Substrate Framework. |
-| Source code | Vault, Liquidator and MockLiquidatorAdaptor pallets implemented with initial (<30%) unit test coverage. |
+| Source code | Vault, Liquidator and MockLiquidatorAdaptor pallets implemented with initial (\<30%) unit test coverage. |
 | Source code | Include a Reference runtime for testing locally. |
 | Source code | React project for the User Interface Functionality: Feature complete for local execution, with basic documentation on how to run it locally and contribute. Basic layout/styling. |
 | Tooling | Docker container build setup that allows developers to get started quickly |

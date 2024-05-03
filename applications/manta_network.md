@@ -19,9 +19,9 @@ Manta Network is the first privacy-preserving DeFi stack powered by zkSNARK. It 
 The cryptographic construction paper can be found [here](https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf). Below is the Manta architecture:
 
     ----------------------------------------------------
-    | Decentralzied Anonymous eXchange (DAX)           |  <---- Future plan
+    | Decentralzied Anonymous eXchange (DAX)           |  \<---- Future plan
     ----------------------------------------------------
-    | Decentralized Anonymous Payment (DAP)            |  <---- This grant
+    | Decentralized Anonymous Payment (DAP)            |  \<---- This grant
     ----------------------------------------------------
     | Polkadot and Parachain Assets (e.g stable coins) |
     ----------------------------------------------------
@@ -110,9 +110,9 @@ Detailed experience see **Team's experience section**.
 
 ### Team Website
 
-- Website: <https://www.manta.network/>
+- Website: https://www.manta.network/
 
-- Whitepaper: <https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf>
+- Whitepaper: https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf
 
 ### Legal Structure
 
@@ -140,15 +140,15 @@ Manta Network Ltd., a British Virgin Islands corporation
 
 ### Team Code Repos
 
-- <https://github.com/Manta-Network/Manta>
+- https://github.com/Manta-Network/Manta
 
 ### Team LinkedIn Profiles
 
-- <https://www.linkedin.com/in/shumo-chu-a1722416/>
+- https://www.linkedin.com/in/shumo-chu-a1722416/
 
-- <https://www.linkedin.com/in/canghai-victor-ji-cpa-37688a5b/>
-- <https://www.linkedin.com/in/kennymuli>
-- <https://www.linkedin.com/in/qiudong-xia-2935761aa>
+- https://www.linkedin.com/in/canghai-victor-ji-cpa-37688a5b/
+- https://www.linkedin.com/in/kennymuli
+- https://www.linkedin.com/in/qiudong-xia-2935761aa
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -244,16 +244,16 @@ We finished the cryptographic scheme design of Manta, see [Manta White Paper](ht
 
 Email: contact@manta.network
 
-Website: <https://manta.network/>
+Website: https://manta.network/
 
-Whitepaper: <https://github.com/Manta-Network/Manta-Whitepaper>
+Whitepaper: https://github.com/Manta-Network/Manta-Whitepaper
 
-Github: <https://github.com/Manta-Network>
+Github: https://github.com/Manta-Network
 
-Twitter: <https://twitter.com/mantanetwork?s=21>
+Twitter: https://twitter.com/mantanetwork?s=21
 
-Medium: <https://medium.com/@mantanetwork>
+Medium: https://medium.com/@mantanetwork
 
-Telegram: <https://t.me/mantanetwork>
+Telegram: https://t.me/mantanetwork
 
 WeChat Public Account: MantaNetwork

@@ -66,20 +66,20 @@ Bette Chen has more than a decade product/program/project management experience 
 
 ### Team Code Repos
 
-* xtokens: <https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xtokens>
-* xcm-support: <https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xcm-support>
+* xtokens: https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xtokens
+* xcm-support: https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xcm-support
 
 ### Team Github
 
-* Shaun: <https://github.com/orgs/laminar-protocol/people/shaopengw>
-* Bryan: <https://github.com/orgs/laminar-protocol/people/xlc>
-* Bette: <https://github.com/orgs/laminar-protocol/people/bette7>
+* Shaun: https://github.com/orgs/laminar-protocol/people/shaopengw
+* Bryan: https://github.com/orgs/laminar-protocol/people/xlc
+* Bette: https://github.com/orgs/laminar-protocol/people/bette7
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/bryan-chen-1ba8ba52/>
-* <https://www.linkedin.com/in/bette-chen/>
-* <https://www.linkedin.com/in/shaopeng-wang/>
+* https://www.linkedin.com/in/bryan-chen-1ba8ba52/
+* https://www.linkedin.com/in/bette-chen/
+* https://www.linkedin.com/in/shaopeng-wang/
 
 ## Development Roadmap :nut_and_bolt:
 

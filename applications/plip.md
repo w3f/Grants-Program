@@ -65,7 +65,7 @@ We empower exisiting projects to progressively decentralized without completely 
 * **Contact Email:** daniel@valibre.org
   * stanly@valibre.org
   * samantha@valibre.org
-* **Website:** <https://valibre.org>
+* **Website:** https://valibre.org
 
 ### Legal Structure
 
@@ -81,17 +81,17 @@ We are a registered LLC in the United States.
 
 ### Team Code Repos
 
-* <https://github.com/valibre-org/>
+* https://github.com/valibre-org/
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* **Daniel Olano:** <https://github.com/olanod>
-* **Stanly Johnson:** <https://github.com/stanly-johnson>
+* **Daniel Olano:** https://github.com/olanod
+* **Stanly Johnson:** https://github.com/stanly-johnson
 
 ### Team LinkedIn Profiles (if available)
 
-* **Stanly Johnson:** <https://www.linkedin.com/in/stanlyj/>
-* **Samantha Robertson** <https://www.linkedin.com/in/samantharobertsonreal/>
+* **Stanly Johnson:** https://www.linkedin.com/in/stanlyj/
+* **Samantha Robertson** https://www.linkedin.com/in/samantharobertsonreal/
 
 ## Development Status :open_book:
 

@@ -128,7 +128,7 @@ The PolyCrypt/Perun team consists of leading academic researchers in the off-cha
 
 * **Contact Name:** Sebastian Stammler, Matthias Geihs
 * **Contact Email:** seb@perun.network, matthias@perun.network
-* **Website:** <https://polycry.pt/>, <https://perun.network/>
+* **Website:** https://polycry.pt/, https://perun.network/
 
 ### Legal Structure
 
@@ -142,22 +142,22 @@ Furthermore, our team includes experienced developers. Our team members are the 
 
 ### Team Code Repos
 
-A collection of our repositories can be found at <https://github.com/perun-network/>.
+A collection of our repositories can be found at https://github.com/perun-network/.
 
-Since mid 2020, the Perun Framework is a Hyperledger Labs project. The _go-perun_ library is available at <https://github.com/hyperledger-labs/go-perun> and the Ethereum smart contracts are available at <https://github.com/hyperledger-labs/perun-eth-contracts>.
+Since mid 2020, the Perun Framework is a Hyperledger Labs project. The _go-perun_ library is available at https://github.com/hyperledger-labs/go-perun and the Ethereum smart contracts are available at https://github.com/hyperledger-labs/perun-eth-contracts.
 
 ### Team LinkedIn Profiles
 
-Our company LinkedIn profile is available at <https://www.linkedin.com/company/perun-network/>.
+Our company LinkedIn profile is available at https://www.linkedin.com/company/perun-network/.
 
 ## Development Status :open_book:
 
 **Research:**
-The foundation for Perun State Channels was laid in “Perun: Virtual Payment Hubs over Cryptocurrencies”, published at IEEE S&P 2019, <https://ieeexplore.ieee.org/document/8835315>, also available at  <https://eprint.iacr.org/2017/635>. This is one of the most prestigious academic conferences in IT Security.
-An overview and summary of the research results is given in our white paper at <https://perun.network/pdf/Perun2.0.pdf>.
+The foundation for Perun State Channels was laid in “Perun: Virtual Payment Hubs over Cryptocurrencies”, published at IEEE S&P 2019, https://ieeexplore.ieee.org/document/8835315, also available at  https://eprint.iacr.org/2017/635. This is one of the most prestigious academic conferences in IT Security.
+An overview and summary of the research results is given in our white paper at https://perun.network/pdf/Perun2.0.pdf.
 
 **Software:**
-The main repository of the _go-perun_ library is at <https://github.com/hyperledger-labs/go-perun>.
+The main repository of the _go-perun_ library is at https://github.com/hyperledger-labs/go-perun.
 It currently features an Ethereum blockchain backend and supports generalized state channels on a single backend.
 In 2020, we joined the hyperledger foundation together with our industry partner BOSCH, with the goal of growing an open-source community around the Perun project.
 

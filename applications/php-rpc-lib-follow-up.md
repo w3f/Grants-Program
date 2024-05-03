@@ -67,7 +67,7 @@ CIt can help PHP language developers easily access the substrate (polkadot) ecol
 
 * **Contact Name:** gmajor
 * **Contact Email:** gmajorencrypt@gmail.com
-* **Website:** <https://github.com/gmajor-encrypt>
+* **Website:** https://github.com/gmajor-encrypt
 
 ### Legal Structure
 
@@ -80,13 +80,13 @@ with PHP, GOLANG, PYTHON, Nodejs, Rust
 
 ### Team Code Repos
 
-<https://github.com/gmajor-encrypt/php-scale-codec>
+https://github.com/gmajor-encrypt/php-scale-codec
 
-<https://github.com/gmajor-encrypt/php-substrate-api>
+https://github.com/gmajor-encrypt/php-substrate-api
 
-<https://github.com/gmajor-encrypt/sr25519-bindings>
+https://github.com/gmajor-encrypt/sr25519-bindings
 
-<https://github.com/gmajor-encrypt/scale-codec-comparator>
+https://github.com/gmajor-encrypt/scale-codec-comparator
 
 ## Development Status :open_book:
 

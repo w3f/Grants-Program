@@ -93,7 +93,7 @@ Setheum is different in its core governance principle such that it serves as a H
 
 - **Contact Name:** Muhammad-Jibril B.A.
 - **Contact Email:** jbashir52@gmail.com
-- **Website:** <https://setheum.xyz>
+- **Website:** https://setheum.xyz
 
 ### Legal Structure
 
@@ -108,15 +108,15 @@ I have previously applied for this grant about 10 months ago (then TERMINATED, t
 
 ### Team Code Repos
 
-- <https://github.com/Setheum-Labs>
-- <https://github.com/Setheum-Labs/Setheum>
-- <https://github.com/Setheum-Labs/launchpad-crowdsales>
+- https://github.com/Setheum-Labs
+- https://github.com/Setheum-Labs/Setheum
+- https://github.com/Setheum-Labs/launchpad-crowdsales
 
-- <https://github.com/JBA-Khalifa>
+- https://github.com/JBA-Khalifa
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/muhammad-jibril>
+- https://www.linkedin.com/in/muhammad-jibril
 
 ## Development Status :open_book:
 

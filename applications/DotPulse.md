@@ -55,7 +55,7 @@ There are many benefits of getting the DotPulse project up and running:
 
 - **Contact Name:** Andreea Stefan  
 - **Contact Email:** andreea.stefan@crosschainlabs.tech
-- **Website:** <https://www.crosschainlabs.tech/>
+- **Website:** https://www.crosschainlabs.tech/
 
 ### Legal Structure
 
@@ -64,32 +64,32 @@ There are many benefits of getting the DotPulse project up and running:
 
 ### Team's experience
 
-We’re CrossChain Labs, a team of of designer and software developers with hands-on experience on blockchain technology and development of decentralised applications, with previous experience as ConsenSys employees. Some of the latest dev-grants were for projects from Filecoin (<https://filmarket.io/>) and NEAR protocol (NEAR registrar, Audit Registry, near.link, Developer Dashboard) with tech stack: IPFS, Arweave, rust, react, go and javascript.
+We’re CrossChain Labs, a team of of designer and software developers with hands-on experience on blockchain technology and development of decentralised applications, with previous experience as ConsenSys employees. Some of the latest dev-grants were for projects from Filecoin (https://filmarket.io/) and NEAR protocol (NEAR registrar, Audit Registry, near.link, Developer Dashboard) with tech stack: IPFS, Arweave, rust, react, go and javascript.
 We're creative, experienced, responsible, organised and do our best to make high quality work and bring ideas to life.
 
 ### Team Code Repos
 
-- <https://github.com/CrossChainLabs>
-- <https://github.com/CrossChainLabs/near-registrar>
-- <https://github.com/CrossChainLabs/audit-registry>
-- <https://github.com/CrossChainLabs/near-dns>
-- <https://github.com/CrossChainLabs/near-api-go>
-- <https://github.com/CrossChainLabs/coredns-near>
-- <https://github.com/CrossChainLabs/near-link>
-- <https://github.com/CrossChainLabs/filmarket-contract>
+- https://github.com/CrossChainLabs
+- https://github.com/CrossChainLabs/near-registrar
+- https://github.com/CrossChainLabs/audit-registry
+- https://github.com/CrossChainLabs/near-dns
+- https://github.com/CrossChainLabs/near-api-go
+- https://github.com/CrossChainLabs/coredns-near
+- https://github.com/CrossChainLabs/near-link
+- https://github.com/CrossChainLabs/filmarket-contract
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/yellow-cube>
-- <https://github.com/arctic-ash>
-- <https://github.com/aliasccl>
+- https://github.com/yellow-cube
+- https://github.com/arctic-ash
+- https://github.com/aliasccl
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/andreea-stefan-66740b20/>
-- <https://www.linkedin.com/in/cristina-varteniuc-6b3121224/>
-- <https://www.linkedin.com/in/catalin-vlad-48b828229/>
-- <https://ro.linkedin.com/in/florin-gradinaru-73891bb>
+- https://www.linkedin.com/in/andreea-stefan-66740b20/
+- https://www.linkedin.com/in/cristina-varteniuc-6b3121224/
+- https://www.linkedin.com/in/catalin-vlad-48b828229/
+- https://ro.linkedin.com/in/florin-gradinaru-73891bb
 
 ## Development Status :open_book:
 

@@ -211,15 +211,15 @@ There is few solution combine the OAuth and self-custody wallet, and no such sol
 
 ### Team Code Repos
 
-* <https://github.com/litentry>
-* <https://github.com/litentry/litentry-parachain>
-* <https://github.com/litentry/litentry-app>
+* https://github.com/litentry
+* https://github.com/litentry/litentry-parachain
+* https://github.com/litentry/litentry-app
 
 Github accounts:
 
-* <https://github.com/hanwencheng>
-* <https://github.com/bianyunjian>
-* <https://github.com/jingleizhang>
+* https://github.com/hanwencheng
+* https://github.com/bianyunjian
+* https://github.com/jingleizhang
 
 ## Development Status :open_book:
 

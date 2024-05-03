@@ -136,27 +136,27 @@ We expect that the project will be useful for the Web3 community.
 
 **Tech lead, backend:** Andrew Skurlatov
 
-<https://www.linkedin.com/in/andrew-skurlatov/>
+https://www.linkedin.com/in/andrew-skurlatov/
 
 **Head of product:** Mike Manko
 
-<https://www.linkedin.com/in/mikhail-manko-97a491a2/>
+https://www.linkedin.com/in/mikhail-manko-97a491a2/
 
 **Product design:** Anuar Zhumaev
 
-<https://www.linkedin.com/in/yxorama/>
+https://www.linkedin.com/in/yxorama/
 
 **DevOps:** Ivan Podcebnev
 
-<https://www.linkedin.com/in/naykip/>
+https://www.linkedin.com/in/naykip/
 
 **Data Science:** Constantine Czerniak
 
-<https://www.linkedin.com/in/%D1%81czerniak/>
+https://www.linkedin.com/in/%D1%81czerniak/
 
 **Frontend:** Nikita Velko
 
-<https://www.linkedin.com/in/nikichv/>
+https://www.linkedin.com/in/nikichv/
 
 ### Contact
 
@@ -178,24 +178,24 @@ Team range of experience begins from developing small scaled websites up to comp
 
 ### Team Code Repos
 
-<http://github.com/andskur/>
+http://github.com/andskur/
 
-<http://github.com/uddugteam/>
+http://github.com/uddugteam/
 
 ### Commits
-<https://github.com/uddugteam/thc-node/commits/master>
+https://github.com/uddugteam/thc-node/commits/master
 
 ### Related domain
-<https://thc.uddug.com/>
+https://thc.uddug.com/
 
 ## Development Status :open_book:
 
 We have already developed the pre-alfa pallet for **Trusted Health Council** [(https://github.com/uddugteam/thc-node)](https://github.com/uddugteam/thc-node).
 
-Link to initial pull request (<https://github.com/uddugteam/General-Grants-Program/blob/master/grants/speculative/trusted_health_consul.md>).
+Link to initial pull request (https://github.com/uddugteam/General-Grants-Program/blob/master/grants/speculative/trusted_health_consul.md).
 
 Link to 2nd pull request
-(<https://github.com/uddugteam/Open-Grants-Program/blob/master/applications/ML-as-a-service.md>).
+(https://github.com/uddugteam/Open-Grants-Program/blob/master/applications/ML-as-a-service.md).
 
 ## Development Roadmap :nut_and_bolt:
 

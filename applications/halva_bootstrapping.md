@@ -13,8 +13,8 @@ We want to automate the process of bootstrapping a new project using the Halva f
 
 * **Members:** Wintex
 * **LinkedIn Profiles:** -
-* **Code Repos:** <https://github.com/orgs/halva-suite>
-* **Website:** <https://wintex.pro/en/>
+* **Code Repos:** https://github.com/orgs/halva-suite
+* **Website:** https://wintex.pro/en/
 * **Legal Structure:** individual
 * **Team's Experience:** Our team develops software about 10+ years and decentralized applications since 2017. We have a great experience with typescript, node.js, and testing frameworks.
 

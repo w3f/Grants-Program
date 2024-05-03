@@ -164,7 +164,7 @@ We hope that the simplicity of the UTXO model will allow performance increases, 
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the example node and transfer tokens |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1.  | Benchmark Report | Full report of throughput for {Transfer, Remark} transactions in {FRAME, Tuxedo} runtimes operated in {Standalone, Parachain} contexts. |
+| 1.  | Benchmark Report | Full report of throughput for \{Transfer, Remark} transactions in \{FRAME, Tuxedo} runtimes operated in \{Standalone, Parachain} contexts. |
 
 
 ## Future Plans

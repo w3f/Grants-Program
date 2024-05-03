@@ -201,7 +201,7 @@ Team github accounts
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article and a tutorial that explains the work done as part of the grant.|
 | 1. | ink! DAO smart contract | we create a smart contract specifically designed for DAO, which includes the following functions: 1. RoadMap Target Management 2. DAO Share Management 3. Core Team, Association Management 4. Workflow Management (board/task) 5. Financial Management 6. Task reward management 7. Hot-plug voting management 8. Contribution Value, Medal Management 9. Hierarchical Management |
-| 2. | flutter DAPP rendeing | we create a engine run DAPP on Flutter natively,it is Compatible with Polkadot {. js} extension api |
+| 2. | flutter DAPP rendeing | we create a engine run DAPP on Flutter natively,it is Compatible with Polkadot \{. js} extension api |
 | 3. | Compatible with Polkadot ecological top20 project | 1. Compatibility of governance tools 2. Blockchain status monitoring 3. Smart contract deployment and operation|
 
 

@@ -177,15 +177,15 @@ Because we don't want to make this application separate from the frontend and ba
 
 * [hotwired](https://hotwired.dev/), it is tool set to help build a rich & fast first-load pages.
 * [bootstrap](https://getbootstrap.com/) 5
-* <https://github.com/ChainSafe/web3.js>
+* https://github.com/ChainSafe/web3.js
 
 ##### backend
 
 * [ruby lang](https://www.ruby-lang.org/) 2.7
 * [ruby on rails](https://rubyonrails.org/) 6.1, web framework
-* <https://github.com/itering/scale.rb>
-* <https://github.com/tomusdrw/rust-web3>
-* <https://github.com/ChainSafe/web3.js>
+* https://github.com/itering/scale.rb
+* https://github.com/tomusdrw/rust-web3
+* https://github.com/ChainSafe/web3.js
 * [Sidekiq](https://github.com/mperham/sidekiq) 6, for background job processing
 * Web/Application server: Nginx & [Puma](https://puma.io/)
 
@@ -199,7 +199,7 @@ Potential users of the NFT browser include NFT collectors, NFT creators, NFT spe
 
 ### Similar projects
 
-<https://nft.kodadot.xyz/rmrk/gallery>
+https://nft.kodadot.xyz/rmrk/gallery
 
 Kodadot gallery is a rmrk nfts gallery.
 
@@ -241,14 +241,14 @@ Uniscan is a team dedicated to create an unified NFT explorer. We have the abili
 
 ### Team Code Repos
 
-* <https://github.com/wuminzhe>
-* <https://github.com/tuminfei>
+* https://github.com/wuminzhe
+* https://github.com/tuminfei
 
 ## Development Status :open_book:
 
 * I try to use rust to query the evm log by address and topic, this is part of the research.
 
-  <https://github.com/wuminzhe/evm-log-tracker>
+  https://github.com/wuminzhe/evm-log-tracker
 
 ## Development Roadmap :nut_and_bolt:
 

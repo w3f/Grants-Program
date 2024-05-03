@@ -112,7 +112,7 @@ Summary: The LB should be able to read the database from milestone 1 and route R
 
 ### Milestone 3: Payout Script
 
-See [Payout Script](#Payout-script) and [Payment Calculation](#Payment-calculation) for details.
+See [Payout Script](#Payout-script) and [Payout Calculation](#payout-calculation) for details.
 
 Summary: The Payout script should be callable externally and be able to distribute payments from a single stash of tokens to multiple addresses in a single call, using a provided data file of ratios provided by the caller.
 

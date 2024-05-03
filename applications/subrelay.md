@@ -163,7 +163,7 @@ Ref: workflow_log.id > task_log.workflow_log_id
     ]
 ```
 
-##### ***GET** /chains/{chain_uuid}/events*
+##### ***GET** /chains/\{chain_uuid}/events*
 
 - Response
 
@@ -188,7 +188,7 @@ Ref: workflow_log.id > task_log.workflow_log_id
 ```
 
 
-##### ***GET** /chains/{chain_uuid}/events/{event_id}*
+##### ***GET** /chains/\{chain_uuid}/events/\{event_id}*
 
 - Response
 
@@ -385,7 +385,7 @@ Ref: workflow_log.id > task_log.workflow_log_id
 }
 ```
 
-##### ***DELETE** /workflows/{workflow_id}*
+##### ***DELETE** /workflows/\{workflow_id}*
 
 ##### ***GET** /workflow/logs*
 

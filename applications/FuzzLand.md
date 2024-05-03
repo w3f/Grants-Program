@@ -299,7 +299,7 @@ Yiqi Hu (Core Dev)
 
 - **Contact Name:** Jeff Liu
 - **Contact Email:** jeff@fuzz.land
-- **Website:** <https://fuzz.land/>
+- **Website:** https://fuzz.land/
 
 ### Legal Structure
 
@@ -320,26 +320,26 @@ Jeff is the founding engineer and PM at VMware Cloud Infra org and has founded m
 
 ### Team Code Repos
 
-- <https://github.com/fuzzland/chain>
-- <https://github.com/fuzzland/oracle>
+- https://github.com/fuzzland/chain
+- https://github.com/fuzzland/oracle
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- <https://github.com/shouc> Chaofan Shou
-- <https://github.com/shangyint> Shangying Tan
-- <https://github.com/benjaminfong> Ben Fong
-- <https://github.com/YiqiHu> Yiqi Hu
+- https://github.com/shouc Chaofan Shou
+- https://github.com/shangyint Shangying Tan
+- https://github.com/benjaminfong Ben Fong
+- https://github.com/YiqiHu Yiqi Hu
 
 ### Team LinkedIn Profiles (if available)
 
 
 ## Development Status :open_book:
 
-- <https://github.com/fuzzland/chain> This is the Substrate chain implementation. We have just started to work on it. 
-- <https://github.com/fuzzland/ityfuzz> (Private for now, can share upon requests) This is our fuzz testing tool that can conduct DPA as described before. Supports for partitioning programs and conduct DPA on subprograms are WIP. Will be moved to `oracle` repo. 
-- <https://github.com/fuzzland/protocol_v1> We have built a simple FuzzLand protocol PoC for EVM-compatible chain in Solidity. However, due to high gas fee, low throughput, and hard to customize the chain, we decide to switch to implement a Substrate chain. Frontend and telemetry API in this repo will be reused. 
-- <https://github.com/AFLplusplus/LibAFL/pull/557> Adds the necessary analysis datasource for partition plan generation to the fuzzing library. 
-- <https://dev.fuzz.land/> We also have the first version of our website.
+- https://github.com/fuzzland/chain This is the Substrate chain implementation. We have just started to work on it. 
+- https://github.com/fuzzland/ityfuzz (Private for now, can share upon requests) This is our fuzz testing tool that can conduct DPA as described before. Supports for partitioning programs and conduct DPA on subprograms are WIP. Will be moved to `oracle` repo. 
+- https://github.com/fuzzland/protocol_v1 We have built a simple FuzzLand protocol PoC for EVM-compatible chain in Solidity. However, due to high gas fee, low throughput, and hard to customize the chain, we decide to switch to implement a Substrate chain. Frontend and telemetry API in this repo will be reused. 
+- https://github.com/AFLplusplus/LibAFL/pull/557 Adds the necessary analysis datasource for partition plan generation to the fuzzing library. 
+- https://dev.fuzz.land/ We also have the first version of our website.
 
 
 #### Related Papers

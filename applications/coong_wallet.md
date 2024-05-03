@@ -30,7 +30,7 @@ With that inspiration, we propose to build Coong, a website-based multi-chain wa
     - We believe a wallet should not only be easy to use but also can keep users’ information safe and secure. Coong is a non-custodial wallet, users’ private keys & seed phrase will be encrypted and stored in `localStorage` of the browsers, and can only be decrypted by users’ wallet password.
 
 #### Account Creation
-Coong is a hierarchical deterministic (HD) wallet following the idea of [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), which only requires users to back up only one seed phrase upon setting up the wallet, new accounts will be created by deriving from the setup seed and an account index number as the derivation path (`//{index}`), `index` number will be started from `0` and increased one by one as new accounts are created. The first account will be created without derivation path, this is to be compatible with the Polkadot{.js} wallet.
+Coong is a hierarchical deterministic (HD) wallet following the idea of [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), which only requires users to back up only one seed phrase upon setting up the wallet, new accounts will be created by deriving from the setup seed and an account index number as the derivation path (`//\{index}`), `index` number will be started from `0` and increased one by one as new accounts are created. The first account will be created without derivation path, this is to be compatible with the Polkadot\{.js} wallet.
 
 Coong also supports import accounts by private keys, but those accounts cannot be recovered by the setup seed phrase, so they will be labeled as `Imported Account`.
 

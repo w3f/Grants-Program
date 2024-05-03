@@ -24,8 +24,7 @@
   - [Office Hours](#office-hours)
   - [Additional Information](#additional-information)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
-  - [Substrate Builders Program vs Treasury vs Web3 Grants](#substrate-builders-program-vs-treasury-vs-web3-grants)
-  - [Substrate Builders Program](#substrate-builders-program)
+  - [Treasury vs Web3 Grants](#treasury-vs-web3-grants)
   - [Treasury](#treasury)
   - [Hackathons](#hackathons)
   - [Other Grant or Bounty Programs](#other-grant-or-bounty-programs)
@@ -74,7 +73,7 @@ If you have a **good concept of the technical challenges** that your idea entail
 
 ### Support
 
-The scope of our Grants Programs consists of funding and feedback on delivered milestones. This means that we do not provide hands-on support as part of a grant, but if you face specific issues during development, we will do our best and try to direct you to the correct resources. If this sounds like something you would like however, you may also want to apply to Parity's [Substrate Builders Program](https://www.substrate.io/builders-program/), which provides hands-on technical, ecosystem, and strategical long-term support and access to extensive resources. You can find general documentation and more information on Substrate on the [Substrate Developer Hub](https://substrate.dev/), and we encourage you to join the [community](https://substrate.dev/en/community) in order to get help with specific issues or to stay up to date with the most recent developments.
+The scope of our Grants Programs consists of funding and feedback on delivered milestones. This means that we do not provide hands-on support as part of a grant, but if you face specific issues during development, we will do our best and try to direct you to the correct resources. You can find general documentation and more information on Substrate on the [Substrate Developer Hub](https://substrate.dev/), and we encourage you to join the [community](https://substrate.dev/en/community) in order to get help with specific issues or to stay up to date with the most recent developments.
 
 For questions about the grants program itself, see our [FAQ](docs/faq.md#frequently-asked-questions).
 
@@ -95,6 +94,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
+- [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
 
 #### W3F Grants Evaluators<!-- omit in toc -->
@@ -105,6 +105,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Seraya Takahashi](https://github.com/takahser)
+- [Piet Wolff](https://github.com/PieWol) 
 
 #### W3F Operations Team<!-- omit in toc -->
 
@@ -116,7 +117,7 @@ The Operations Team takes care of legal documents, invoicing, and remittances.
 
 ## :level_slider: Levels
 
-The W3F Grants Program offers different grant levels to help you best, depending on your current stage.
+The W3F Grants Program offers different grant levels to help you best, depending on your current stage. 30% of any grant is paid out in vested DOT.
 
 ### :hatching_chick: Level 1 (= InstaGrants)<!-- omit in toc -->
 
@@ -130,7 +131,7 @@ The W3F Grants Program offers different grant levels to help you best, depending
 - **Target:** Small teams/start-ups
 - **Amount:** Up to $30,000
 - **Requirements:** 3 approvals
-- **Benefits:** All of the above + [co-promotion](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/announcement-guidelines.md), [Grants Program badge](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/grant-badge-guidelines.md), fast track to [Substrate Builders Program](https://www.substrate.io/builders-program/)
+- **Benefits:** All of the above + [co-promotion](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/announcement-guidelines.md), [Grants Program badge](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/grant-badge-guidelines.md)
 
 ### :rooster: Level 3<!-- omit in toc -->
 
@@ -141,7 +142,7 @@ The W3F Grants Program offers different grant levels to help you best, depending
 
 ## :pencil: Process
 
-> **:loudspeaker:** Payments can be made in USDT and USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) and fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** 30% of each milestone payment is made in DOT (linearly vesting over 2 years). The remaining 70% is paid in_either_ USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) _or_ fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -263,9 +264,9 @@ It is **not** a chance to pitch your project, especially since only a small subs
 
 We encourage you to explore the alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
-### Substrate Builders Program vs Treasury vs Web3 Grants
+### Treasury vs Web3 Grants
 
-The following flowchart gives a rough, oversimplified view of how the W3F Grants Program, the Polkadot and Kusama treasuries and Parity's Substrate Builders Program relate, and where your project might fit best. Note that this diagram does not include any of the [parachain-specific grants/builders programs](#other-grant-programs) other organisations are offering.  
+The following flowchart gives a rough, oversimplified view of how the W3F Grants Program, the Polkadot and Kusama treasuries relate, and where your project might fit best. Note that this diagram does not include any of the [parachain-specific grants/builders programs](#other-grant-programs) other organisations are offering.  
 
 ```mermaid
 flowchart LR
@@ -276,7 +277,6 @@ flowchart LR
     B -->|Existing POC| E[Goal of the Application]
     B -->|No POC| F[Grants Program]
     E -->|Funding| G[Treasury or Grants Program]
-    E -->|Support| H[Substrate Builders Program]
     style C stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style D stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style F stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
@@ -285,12 +285,7 @@ flowchart LR
     click C "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
     click D "https://polkadot.network/treasury" "https://polkadot.network/treasury/" _blank
     click F "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
-    click H "https://www.substrate.io/builders-program/" "https://www.substrate.io/builders-program/" _blank
 ```
-
-### Substrate Builders Program
-
-The [Substrate Builders Program](https://substrate.io/ecosystem/substrate-builders-program/) directly supports you by connecting you with Parity’s extensive resources.
 
 ### Treasury
 

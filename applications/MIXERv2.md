@@ -105,7 +105,7 @@ Definitions: Secret Key(S), Public key(P), Nullifier (N), Leaf(L), Hash function
     - Relation: H(S, N)=L
 - Proof of membership: User submits the path in zero knowledge
     - Public: R
-    - Private: MP - Vec<(Scalar, u8)>
+    - Private: MP - Vec\<(Scalar, u8)>
     - Relation: compute_root(H(S,N), MP) = R
 - Verify:
     - User submits N, ZKP

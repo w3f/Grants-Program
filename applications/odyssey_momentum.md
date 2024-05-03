@@ -3,6 +3,7 @@
 - **Team Name:** Odyssey B.V.
 - **Payment Address:** 0x826fde427152d9fc0bf045dd858baa2de06b383b (USDC) 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1221#issuecomment-1921327886)
 
 ## Project Overview :page_facing_up:
 
@@ -122,7 +123,7 @@ This project will not produce a parachain nor any of the non-token related or vi
 
 
 ### Ecosystem Fit
-We received two grants of the KSM treasury to build ([1](https://kusama.polkassembly.io/motion/436)) and after succesful launch expand ([2](https://kusama.polkassembly.io/motion/499)) the [Kusamaverse](https://kusama.momentum.xyz/). The Kusamaverse functions as a town hall for the Dotsama ecosystem. **Momentum is the embodiment of an overarching vision** enabling different worlds, activities and people to come together, without the need for a middleman or land sales. Momentum is co-created, governed and owned by its users.
+We received two grants of the KSM treasury to build ([1](https://kusama.polkassembly.io/motion/436)) and after successful launch expand ([2](https://kusama.polkassembly.io/motion/499)) the [Kusamaverse](https://kusama.momentum.xyz/). The Kusamaverse functions as a town hall for the Dotsama ecosystem. **Momentum is the embodiment of an overarching vision** enabling different worlds, activities and people to come together, without the need for a middleman or land sales. Momentum is co-created, governed and owned by its users.
   
 - Momentum is using Kusama (and optionally Polkadot) as its primary digital public infrastructure
 - Momentum will be launched as a parachain on Kusama (and optionally Polkadot in a later stage)

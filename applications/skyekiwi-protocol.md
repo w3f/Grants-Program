@@ -109,7 +109,7 @@ Moreover, SkyeKiwi will take the SkyeKiwi Protocol and built into the SkyeKiwi N
 
 * ### Team members
 
-  * Song Zhou ( Developer ) <https://github.com/RoyTimes>
+  * Song Zhou ( Developer ) https://github.com/RoyTimes
   * Zoe Sun ( Designer/COO )
   * ... More to be hired
 
@@ -129,9 +129,9 @@ Moreover, SkyeKiwi will take the SkyeKiwi Protocol and built into the SkyeKiwi N
 
 We have implemented a very very drafty version of the SkyeKiwi Protocol as part of our previous application to [SkyePass](https://github.com/w3f/Grants-Program/pull/212). Under our discussion in [LINK](https://github.com/w3f/Grants-Program/pull/553) we are now extracting the SkyeKiwi Protocol development out from the original grant application and port our previous work on this new application.
 
-* Code base: <https://github.com/skyekiwi/skyekiwi-protocol> AND <https://github.com/skyekiwi/contract-demo> for smart contract examples
-* Our contribution to Polkadot.js: <https://github.com/polkadot-js/common/pull/1070>
-* Documentation Site: <https://cdocs.skye.kiwi/> (might not be 100% synced with development)
+* Code base: https://github.com/skyekiwi/skyekiwi-protocol AND https://github.com/skyekiwi/contract-demo for smart contract examples
+* Our contribution to Polkadot.js: https://github.com/polkadot-js/common/pull/1070
+* Documentation Site: https://cdocs.skye.kiwi/ (might not be 100% synced with development)
 
 ## Development Roadmap :nut_and_bolt:
 

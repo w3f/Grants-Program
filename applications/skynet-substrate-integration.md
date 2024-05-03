@@ -118,7 +118,7 @@ Some use cases where we believe Skynet will be useful for Substrate devs:
 
 - **Contact Name:** Daniel Helm, _Developer Evangelist for Skynet Labs_
 - **Contact Email:** daniel@skynetlabs.com
-- **Website:** <https://skynetlabs.com/>
+- **Website:** https://skynetlabs.com/
 
 ### Legal Structure
 
@@ -131,16 +131,16 @@ The Skynet Labs team (recently renamed from Nebulous) was responsible for the de
 
 ### Team Code Repos
 
-- <https://gitlab.com/SkynetLabs/skyd>
-- <https://github.com/SkynetLabs/skynet-webportal>
-- <https://github.com/SkynetLabs/skynet-js>
+- https://gitlab.com/SkynetLabs/skyd
+- https://github.com/SkynetLabs/skynet-webportal
+- https://github.com/SkynetLabs/skynet-js
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/david-vorick-6758a66a/>
-- <https://www.linkedin.com/in/peterjanbrone/>
-- <https://www.linkedin.com/in/sevey/>
-- <https://www.linkedin.com/in/dghelm/>
+- https://www.linkedin.com/in/david-vorick-6758a66a/
+- https://www.linkedin.com/in/peterjanbrone/
+- https://www.linkedin.com/in/sevey/
+- https://www.linkedin.com/in/dghelm/
 
 ## Development Status :open_book:
 

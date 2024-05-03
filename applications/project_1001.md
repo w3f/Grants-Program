@@ -83,10 +83,10 @@ Alex, is the fullstack technical engineer, he has 7 year of software development
 
 ### Team Code Repos
 
-* <https://github.com/uniwrap-protocal>
-* <https://github.com/softlipaschara>
-* <https://github.com/buildtrust>
-* <https://github.com/captainalexyz>
+* https://github.com/uniwrap-protocal
+* https://github.com/softlipaschara
+* https://github.com/buildtrust
+* https://github.com/captainalexyz
 
 ## Development Roadmap :nut_and_bolt:
 

@@ -41,7 +41,7 @@ CBI is the interface between Fractapp and your chat-bots. It can be summarized i
 4. Chat-bot processes the user's request by the trigger name.. If the user doesn't need to make a choice then the service returns the transaction which the user will sign.
 5. User signs or cancels transactions.
 
-Example, Decentralized Exchange Bot (exchange DOT <-> KSM):
+Example, Decentralized Exchange Bot (exchange DOT \<-\> KSM):
 
 1. User sends a request to start.
 2. Chat-Bot returns response with 2 buttons: DOT, KSM
@@ -63,7 +63,7 @@ Therefore, we ask the teams to submit (where relevant):
 
 * Mockups/designs of any UI components
 
-<https://elshandzhafarov326555.invisionapp.com/overview/Fractapp---cryptocurrency-wallet-with-messenger-ckeyvvuh70t3j01bx5mg6e7b0>
+https://elshandzhafarov326555.invisionapp.com/overview/Fractapp---cryptocurrency-wallet-with-messenger-ckeyvvuh70t3j01bx5mg6e7b0
 
 * An overview of the technology stack to be used
 
@@ -84,7 +84,7 @@ We are creating a messenger with a cryptocurrency wallet. This will help the use
 
 ### Team Website 
 
-* <https://fractapp.com>
+* https://fractapp.com
 
 ### Legal Structure
 
@@ -94,10 +94,10 @@ personal address will be provided via the invoice form
 
 Elshan Dzhafarov:
 
-* Ex CTO at Ventuary DAO. Ventuary DAO received a grant from the Wave Platform. (<https://medium.com/waves-lab/waves-grants-recipients-progress-2ade081d4ca0>)
-* Ex CTO at Neutrino Protocol. Neutrino Protocol is a protocol for creating the stablecoin. Neutrino USD is the most popular DApp on the Waves Platform. (<https://neutrino.at> / <https://github.com/ventuary-lab/neutrino-contract>)
-* Co-author gravity protocol. (<https://arxiv.org/abs/2007.00966>)
-* Open-source contributor gravity protocol. (<https://github.com/Gravity-Tech>)
+* Ex CTO at Ventuary DAO. Ventuary DAO received a grant from the Wave Platform. (https://medium.com/waves-lab/waves-grants-recipients-progress-2ade081d4ca0)
+* Ex CTO at Neutrino Protocol. Neutrino Protocol is a protocol for creating the stablecoin. Neutrino USD is the most popular DApp on the Waves Platform. (https://neutrino.at / https://github.com/ventuary-lab/neutrino-contract)
+* Co-author gravity protocol. (https://arxiv.org/abs/2007.00966)
+* Open-source contributor gravity protocol. (https://github.com/Gravity-Tech)
 * Winner of the hackathon "My country and blockchain", "Hack Moscow" in nomination from Health Nexus, "Spring Hack" in nomination from QIWI Blockchain. Prize-winner "Unblock Hackathon" and "Blockchain Founder Hackathon".
 
 Anastasiya Strashnikova:
@@ -106,12 +106,12 @@ Anastasiya Strashnikova:
 
 ### Team Code Repos
 
-* <https://github.com/fractapp>
-* <https://github.com/cryptobadboy>
+* https://github.com/fractapp
+* https://github.com/cryptobadboy
 
 ### Team LinkedIn Profiles
 
-* <https://www.linkedin.com/in/elshan-dzhafarov/>
+* https://www.linkedin.com/in/elshan-dzhafarov/
 
 ## Development Roadmap :nut_and_bolt:
 

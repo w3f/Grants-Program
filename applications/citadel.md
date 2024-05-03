@@ -115,7 +115,7 @@ Furthermore, we integrated the fiat gateway and instant cryptocurrency exchange 
 
 ### **Team Website**
 
-<https://citadel.one/>
+https://citadel.one/
 
 ### **Legal Structure**
 
@@ -140,10 +140,10 @@ From our side, we are ready to make the part associated specifically with Polkad
 - Alex Falko - [https://www.linkedin.com/in/alex-falko-a3b79289/](https://www.linkedin.com/in/alex-falko-a3b79289/)
 - Gregory Shabalov - [https://www.linkedin.com/in/shabalov/](https://www.linkedin.com/in/shabalov/)
 - Pavel Khivintsev - [https://www.linkedin.com/in/pavel-khivintsev-89667072/](https://www.linkedin.com/in/pavel-khivintsev-89667072/)
-- Petr Lapin - <https://github.com/lapinlapin>
-- Iurii Dorofeev - <http://www.linkedin.com/in/otopba>
+- Petr Lapin - https://github.com/lapinlapin
+- Iurii Dorofeev - http://www.linkedin.com/in/otopba
 - Nikita Pashkov - [https://github.com/Krewedk0](https://github.com/Krewedk0)
-- Yeskendir Sarinov - <https://github.com/sarinov>
+- Yeskendir Sarinov - https://github.com/sarinov
 - Sofia Peremotina - [https://www.linkedin.com/in/sofia-peremotina-a021901ab/](https://www.linkedin.com/in/sofia-peremotina-a021901ab/)
 - Dmitry Sidorov - [http://linkedin.com/in/sidorov-dmitry](http://linkedin.com/in/sidorov-dmitry)
 - Dmitrii Shehovtsov - [https://www.linkedin.com/in/dmitrii-shekhovtsov-bba673189/](https://www.linkedin.com/in/dmitrii-shekhovtsov-bba673189/)
@@ -157,8 +157,8 @@ From our side, we are ready to make the part associated specifically with Polkad
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | The described requirements fully cover the use cases and user interaction with the system.  [1. Create and import an address](https://paradigmcitadel.atlassian.net/wiki/external/1741783055/ZWI4NGNjMzgwNTNkNGMxN2EzZjJlOWE0NTQyZjE0MTY)  [2. Integration of staking](https://paradigmcitadel.atlassian.net/wiki/external/1742372869/YjE0ZmE5ZmRmM2VmNDU5NjhkYjViNjVhODZjY2YxMmM?atlOrigin=eyJpIjoiMTBiYWFhMzc3NGIyNGMxNDg1MGYzNzkwYjdmYmI5MTMiLCJwIjoiYyJ9) [3. Integration of transfers](https://paradigmcitadel.atlassian.net/wiki/external/1742209311/ODM1YTc1MGFjNTQ1NGI4Y2FjMDdlOWYyNTg5YmIwZWU?atlOrigin=eyJpIjoiMDRmZDk2ZWFhMjRiNGM1Mzk5NGIzM2IyYzU0YzRjNTkiLCJwIjoiYyJ9) [4. Price and market performance information](https://paradigmcitadel.atlassian.net/wiki/external/1741553682/MGQxZmI1NWIzMmVjNDc4M2ExNDA2OTJiMDk2MWUzNDA?atlOrigin=eyJpIjoiZTU0NzNkMzJhNzI1NGRlZDliNmVlZDY0YzQ5YTRhYjEiLCJwIjoiYyJ9) [5. Integration of transaction](https://paradigmcitadel.atlassian.net/wiki/external/1745387542/Njk0NWRiNWUyOGY1NDlhZWFjYTYxZDA0OWQ3MzkwZDY?atlOrigin=eyJpIjoiMGNjMzU2NjU1ZGJkNDYzNzk5ZjU3NDVhYWJjMTk2NGIiLCJwIjoiYyJ9)|
 | 0c. | Testing Guide | Each epic describes testing opportunities.  [1. Create and import an address](https://paradigmcitadel.atlassian.net/wiki/external/1741783055/ZWI4NGNjMzgwNTNkNGMxN2EzZjJlOWE0NTQyZjE0MTY)  [2. Integration of staking](https://paradigmcitadel.atlassian.net/wiki/external/1742372869/YjE0ZmE5ZmRmM2VmNDU5NjhkYjViNjVhODZjY2YxMmM?atlOrigin=eyJpIjoiMTBiYWFhMzc3NGIyNGMxNDg1MGYzNzkwYjdmYmI5MTMiLCJwIjoiYyJ9) [3. Integration of transfers](https://paradigmcitadel.atlassian.net/wiki/external/1742209311/ODM1YTc1MGFjNTQ1NGI4Y2FjMDdlOWYyNTg5YmIwZWU?atlOrigin=eyJpIjoiMDRmZDk2ZWFhMjRiNGM1Mzk5NGIzM2IyYzU0YzRjNTkiLCJwIjoiYyJ9) [4. Price and market performance information](https://paradigmcitadel.atlassian.net/wiki/external/1741553682/MGQxZmI1NWIzMmVjNDc4M2ExNDA2OTJiMDk2MWUzNDA?atlOrigin=eyJpIjoiZTU0NzNkMzJhNzI1NGRlZDliNmVlZDY0YzQ5YTRhYjEiLCJwIjoiYyJ9) [5. Integration of transaction](https://paradigmcitadel.atlassian.net/wiki/external/1745387542/Njk0NWRiNWUyOGY1NDlhZWFjYTYxZDA0OWQ3MzkwZDY?atlOrigin=eyJpIjoiMGNjMzU2NjU1ZGJkNDYzNzk5ZjU3NDVhYWJjMTk2NGIiLCJwIjoiYyJ9) |
-| 0d. | Docker | Polkadot Network is integrated into Citadel.one - <https://app.citadel.one/> |
-| 0e. | Article |  Press release will be prepared a few weeks before the official rollout of the network. <https://medium.com/citadel-one/polkadot-overview-f7c4f06208ec> |
+| 0d. | Docker | Polkadot Network is integrated into Citadel.one - https://app.citadel.one/ |
+| 0e. | Article |  Press release will be prepared a few weeks before the official rollout of the network. https://medium.com/citadel-one/polkadot-overview-f7c4f06208ec |
 
 | **Number** | **Step** | **Specification** | **Detailed description** | **Team members involved** |
 | --- | --- | --- | --- | --- |
