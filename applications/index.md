@@ -54,6 +54,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Tuguldur Baigalmaa](https://github.com/philoniare/)                       | [subxt-python](./subxt-python.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☐       |      ☐      |
 | [Cyborg Network](https://cyborgnetwork.io/)                       | [Cyborg Network - Empowering Decentralized Edge Networks](./Cyborg.md)                     | [GitHub](https://github.com/Cyborg-Network)                 | ☐          |        ☐       |      ☐      |
 | [Massa Labs](https://massa.net/)                       | [Sub-consensus mechanism](./sub_consensus_mechanism.md)                     | [GitHub](https://github.com/massalabs/)                 | ☐          |        ☐       |      ☐      |
+| [Sporyon Technologies](https://sporyon.io)                       | [Dotnix](./dotnix.md)                     |                  | ☐          |        ☐       |      ☐      |
 
 ### 🏄 Wave 21 - Q1 2024
 
