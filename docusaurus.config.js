@@ -35,7 +35,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'We now have a dedicated page for projects supported through the Decentralized Futures Program. <a target="_blank" rel="noopener noreferrer" href="https://grants.web3.foundation/docs/help#office-hours">Have a look!</a>',
+        'We now have a dedicated page for projects supported through the Decentralized Futures Program. <a target="_blank" rel="noopener noreferrer" href="https://futures.web3.foundation/supported-projects">Have a look!</a>',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
