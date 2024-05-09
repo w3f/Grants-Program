@@ -164,7 +164,7 @@ For collaboration and code review processes with the Polkadot team, our develope
 - **Full-Time Equivalent (FTE):**  5 FTE
 - **Total Costs:** 30,000 USDT
 
-### Milestone 1 Example — Basic functionality & Staking
+### Milestone 1 — Basic functionality & Staking
 
 - **Estimated duration:** 3 months
 - **FTE:**  5 FTE
