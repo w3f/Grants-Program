@@ -33,8 +33,8 @@ Overall, our project will help create a vibrant and engaged community filled wit
 - Linda Mohamadova
 
 ### Contact
-- **Contact Name:** Linda Mohamadova
-- **Contact Email:** luu.kodadot@gmail.com
+- **Contact Name:** Linda Mohamadova, Aurora Makovac
+- **Contact Email:** luu.kodadot@gmail.com, aurora.makovac@gmail.com
 - **Other contact details:** [Linktree](https://linktr.ee/just_luuuu)
 - **Website:** [womenpolkadot.xyz](https://www.womenpolkadot.xyz)
 
@@ -43,9 +43,19 @@ Overall, our project will help create a vibrant and engaged community filled wit
 - **Registered Legal Entity:** In progress
 
 ### Team's Experience
+**Linda Mohamadova**
+
 Linda Mohamadova is an experienced community organizer and has not previously applied for a grant from the Web3 Foundation. With a master's degree in International Management, she gained experience from studies abroad and various work experiences in the economic field. Early in 2022, she started to actively engage with the Polkadot ecosystem by working with the [KodaDot](https://kodadot.xyz/) team as a part of the operations team and later became Head of Artists Relations. During this time, she organized or co-organized many Polkadot events, thanks to which she became Polkadot ambassador and later senior ambassador. Many of these contributions can be seen in her senior ambassador [application form](https://docs.google.com/document/d/1hNggtTZPedkrg3Ux6RoFQIdTu12TZKZs1X1oKtJGemQ/edit). Linda is an active member of the community, attending many blockchain conferences to represent our ecosystem, and is strongly focused on connecting people and bringing more value to Polkadot. 
 
 She is also part of the initiative [uniFires](https://discord.gg/Zn4F9JKhEt), a cross-chain collaboration between the Cardano and Polkadot ecosystems. The initiative funded by [Project Catalyst](https://projectcatalyst.io/) focuses on three main areas: Web3 adoption, open governance, and cross-chain interoperability knowledge sharing. Linda is the lead of the Web3 adoption group, where she organizes workshops with people from both ecosystems to discuss the challenges and opportunities that lie between the two ecosystems. 
+
+**Aurora Makovac**
+
+Aurora is the Co-founder of [Lastic](https://www.lastic.xyz/), a coretime marketplace for Polkadot Coretime. She is a graduate of the Polkadot Blockchain Academy at UC Berkeley and has made significant contributions to the blockchain space, including developing documentation for KodaDot, a multi-chain NFT marketplace.
+
+With a background in Physics and Electrical Engineering, Aurora has transitioned from Solutions Architect to Frontend Developer to Technical Co-founder, consistently emphasizing clean code and scalable architectures. She founded the Women of Polkadot initiative and actively supports SubWork, a tech-centric coworking hub in Bled, a pioneering Polkadot hub.
+
+---
 
 The idea of Women of Polkadot started as a way to connect with women in the ecosystem, but after many discussions and opportunities to chat with women in the ecosystem, it was decided that it would be useful to have a proper platform. 
 
@@ -60,15 +70,15 @@ During the Encode x Polkadot hackathon November 2023 we won prizes in 3 cathegor
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-- **Estimated Duration:** 3 months
+- **Estimated Duration:** 2.5 months
 - **Full-Time Equivalent (FTE):** 1.5
-- **Total Cost:** $25,000
+- **Total Cost:** $22,000
 
 ### Milestone 1
-- **Duration:** 3 months
+- **Duration:** 2.5 months
 - **FTE:** 1.5
 
-- **Cost:** $25,000
+- **Cost:** $22,000
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
@@ -77,19 +87,18 @@ During the Encode x Polkadot hackathon November 2023 we won prizes in 3 cathegor
 | **0a.** | License                             | The project will be released under the GPL v3 license to ensure open-source compliance and community contribution. |
 | **0b.** | Documentation                       | Comprehensive documentation will be provided, including in-line code comments, setup guides, user manuals, and a detailed project wiki for developer and user support. |
 | **0d.** | Error Logging                       | The application will incorporate advanced error logging mechanisms, capturing detailed error outputs in a log file for troubleshooting and maintenance, accessible via an admin panel. |
-| **0e.** | Article Publishing                  | We will publish four detailed articles discussing our development progress, community engagement strategies, and future plans. These will be aimed at keeping the community informed and engaged. |
+| **0e.** | Article Publishing                  | We will publish an article discussing our development progress for the women of polkadot. These will be aimed at keeping the community informed and engaged. |
 | **1.**  | Community Website                   | Development of a central hub website for Women of Polkadot, featuring sections such as events, news, and resource downloads designed to foster community engagement. |
 | **2.**  | Articles Repository                 | A dedicated section on the website will organize and display all project-related articles, including imports of all previous publications from platforms like Medium. |
-| **3.**  | Promotional Video                   | Creation of a compelling promotional video to highlight the benefits and opportunities within the Women of Polkadot community, aimed at increasing membership and visibility. |
-| **4.**  | Merchandise E-commerce Shop         | Setup of an online store to sell exclusive merchandise. Special discounts and products will be available for Women of Polkadot NFT holders. |
-| **5.**  | Membership Registration System      | Implementation of an intuitive registration system on the website, enabling new users to join the community easily and efficiently, with instant verification processes. |
-| **6.**  | NFT Minting Functionality           | Integration of NFT minting on our platform, possibly in collaboration with KodaDot. This will include user interface design and backend integration for seamless NFT creation and management. |
-| **7.**  | NFT Showcase                        | A dynamic display on the website showcasing all minted NFTs, updated in real-time, enhancing user interaction and engagement with visual previews and detailed metadata. |
-| **8.**  | NFT-Gated Backend Access            | Restrictive backend access controlled by NFT ownership, ensuring exclusive content is available to verified members only. Includes sections from 8a. - 8d. |
-| **8a.** | NFT Authentication                   | Backend access will require NFT authentication, ensuring data privacy and secure access to sensitive information by validating NFT ownership. |
-| **8b.** | Secure Data Storage                 | Securely store detailed user profiles, including location, employment, and biographical data, ensuring compliance with data protection regulations. |
-| **8c.** | Event Info Center                   | A comprehensive event info center on the website for users to see future planned events, so they will be able to participate in the organizational details or at the event itself. |
-| **8d.** | NFT-secured Event Media Access      | Exclusive access to event media, such as photographs and videos, protected by NFT ownership, ensuring privacy and control over content distribution. |
+| **3.**  | Merchandise E-commerce Shop         | Setup of an online store to sell exclusive merchandise. Special discounts and products will be available for Women of Polkadot NFT holders. |
+| **4.**  | Membership Registration System      | Implementation of an intuitive registration system on the website, enabling new users to join the community easily and efficiently, with instant verification processes. |
+| **5.**  | NFT Minting Functionality           | Integration of NFT minting on our platform, possibly in collaboration with KodaDot. This will include user interface design and backend integration for seamless NFT creation and management. |
+| **6.**  | NFT Showcase                        | A dynamic display on the website showcasing all minted NFTs, updated in real-time, enhancing user interaction and engagement with visual previews and detailed metadata. |
+| **7.**  | NFT-Gated Backend Access            | Restrictive backend access controlled by NFT ownership, ensuring exclusive content is available to verified members only. Includes sections from 7a. - 7d. |
+| **7a.** | NFT Authentication                   | Backend access will require NFT authentication, ensuring data privacy and secure access to sensitive information by validating NFT ownership. |
+| **7b.** | Secure Data Storage                 | Securely store detailed user profiles, including location, employment, and biographical data, ensuring compliance with data protection regulations. |
+| **7c.** | Event Info Center                   | A comprehensive event info center on the website for users to see future planned events, so they will be able to participate in the organizational details or at the event itself. |
+| **7d.** | NFT-secured Event Media Access      | Exclusive access to event media, such as photographs and videos, protected by NFT ownership, ensuring privacy and control over content distribution. |
 
 ## Future Plans
 - Be the first to establish a hub for women in the Polkadot ecosystem.
