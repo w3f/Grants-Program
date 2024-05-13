@@ -1,14 +1,14 @@
 # Announcement Guidelines
 
-> Guidelines updated August 2021
+> Guidelines updated May 2024
 
 Web3 Foundation (W3F) supports many teams and organizations throughout the ecosystem. We often receive requests to participate in project announcements. Unfortunately, due to the high volume of requests, we rarely do joint announcements and do not provide quotes.
 
-In the context of the grants programs, we ask teams not to make any announcements before **the first milestone has been accepted**. This is in order to protect the community from projects that only intend to use the grant announcement to raise funds and/or interest but don't intend to deliver on the application, which has unfortunately happened in the past. For this reason, we reserve the right to terminate grants if this rule is not observed.
+In the context of the Grants Program, we ask teams not to make any announcements before **the first milestone has been accepted**. This is in order to protect the community from projects that only intend to use the grant announcement to raise funds and/or interest but don't intend to deliver on the application, which has unfortunately happened in the past. For this reason, we reserve the right to terminate grants if this rule is not observed.
 
-Once you have completed your milestone, we can help by reviewing and proofreading your blogpost. When you have drafted your announcement, send it to grantsPR@web3.foundation and add grants@web3.foundation in cc. Please allow 1-3 working days where possible for proofreading articles and wait until the milestone has been accepted to publish it.
+Once you have completed your milestone, we will help you by reviewing and proofreading your blog post. When you have drafted your announcement article, send it to grantsPR@web3.foundation and add grants@web3.foundation in cc. Allow for 2-3 working days for proofreading articles. Please wait until the milestone has been accepted by the assigned Grants evaluator and the article has been approved by Grants PR before publishing it.
 
-We also cross-promote the most recent projects and their milestones on Twitter on the second Monday of every month, so please keep us updated and send us the links to your published tweets regarding your announcements.
+We also cross-promote the most recent projects and their milestones on X on a regular basis, so please keep us updated and send us the links to your published tweets regarding your announcements. Please note that we will only feature projects that have been approved by Grants PR ahead of posting.
 
 ## We recommend the following guidelines when writing your post
 
