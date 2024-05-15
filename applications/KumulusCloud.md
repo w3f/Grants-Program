@@ -127,7 +127,8 @@ Another diagram of who Kumulus will serve
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a **gituhb repo readmes** that explains how to deploy mobile app on the FuturStore. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
-| 0d. | Articles |Articles explaining the Kumulus stack will be published. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Articles |Articles explaining the Kumulus stack will be published. |
 | 1. | Kumulus Runtime Runtime modules | Suite of pallets that will contain the logic of the Kumulus Cloud Marketplace |
 | 1.a | **Resource Management Pallet** | Manage the listings of compute resources by providers.|
 |  | `create_listing(resource_details)` |Allows a provider to list a new resource with details such as compute capacity, lease duration options, and pricing. |
