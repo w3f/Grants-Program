@@ -156,9 +156,10 @@ The implementation is inspired from the previous [research](https://github.com/a
 | **0e.** | Article | I will publish an article that explains the complete lifecycle and future plans of the project |
 | 1. | Substrate Chain | I will create a Substrate chain forked from `substrate-node-template`. |
 | 2. | Offchain Worker | I will write an offchain worker logic that queries PCIDSS compliant gateway for ISO-8583 messages, processes them and dispatches extrinsics to the chain. |
-| 3. | ERC-20R Pallet  | I will create a pallet that implements the `ERC-20R` interface. It will be responsible for processing incoming message from the offchain-worker. It will perform security checks, maintain the ledger and control the issuance of the tokens. |
-| 4. | Integration tests | I will add end-to-end tests with Javascript and `zombienet` |
-| 5. | Makefile | I will create a Makefile that will provide commands to ease testing, running and maintaining the project |
+| 3. | ERC-20R Pallet  | I will create a pallet that implements the `ERC-20R` interface. It will be responsible for processing incoming message from the offchain-worker and PCIDSS compliant oracles. It will perform security checks, maintain the ledger and control the issuance of the tokens. |
+| 4. | Integration tests | I will add end-to-end tests in Rust to illustrate full lifecycle of ISO-8583 transactions. |
+| 5. | PCIDSS Oracle Gateway | I will enhance PCIDSS Oracle Gateway services to make it work with Substrate chain. This is essentially adding new service that monitors and reacts to certain events from Substrate chain. |
+| 6. | Makefile | I will create a Makefile that will provide commands to ease testing, running and maintaining the project |
 
 ## Future Plans
 

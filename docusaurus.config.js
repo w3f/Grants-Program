@@ -35,7 +35,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'We are introducing DOT payments to all future grants.<a target="_blank" rel="noopener noreferrer" href="https://grants.web3.foundation/docs/faq#what-does-it-mean-for-payments-to-be-30-dot">See our FAQ for details</a>!',
+        'We now have a dedicated page for projects supported through the Decentralized Futures Program. <a target="_blank" rel="noopener noreferrer" href="https://futures.web3.foundation/supported-projects">Have a look!</a>',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,

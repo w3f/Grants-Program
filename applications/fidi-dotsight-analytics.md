@@ -63,7 +63,7 @@ The key components include, i.e., from the user side to the data provider:
 
 **Technical Stack Overview**
 - Frontend (Web):  we currently rely on [React](https://react.dev/) and [Typescript](https://www.typescriptlang.org/) and will look into transitioning to [Next.js](https://nextjs.org/) as a part of this proposal
-- Backend: we currently leverage Typescript, Express, and [PostgreSQL](https://www.postgresql.org/). By Milestone 4, we'll also consider leveraging [Nest](https://nestjs.com/) if it fits the project's needs
+- Backend: we currently leverage Typescript, Express, and [PostgreSQL](https://www.postgresql.org/). By Milestone 3, we'll also consider leveraging [Nest](https://nestjs.com/) if it fits the project's needs
 - Data Layer: [GraphQL](https://graphql.org/) and RPC for upstream providers, PostgreSQL elsewhere
 - Application Layer: [App Engine](https://cloud.google.com/appengine)
 - Database Layer: GCP [CloudSQL](https://cloud.google.com/sql) and [BQ](https://cloud.google.com/bigquery)
@@ -217,7 +217,7 @@ All infrastructure deliverables belong to the teams’ domains of expertise and 
 
 - **Total Estimated Duration:** 4.5mos (~3.5mos left)
 - **Full-Time Equivalent (FTE):**  3.5 FTE
-- **Total Costs:** 25,000 USD
+- **Total Costs:** 17,500 USD
 
 ### Milestone 1 — Data Interface
 
@@ -284,26 +284,6 @@ All infrastructure deliverables belong to the teams’ domains of expertise and 
 | **2b.** | Automated and ad-hoc deployment | We will decouple the existing infrastructure to support ad-hoc and scheduled deployments for newly created views. The CI/CD and automation for 2a-b will rely on scheduled App Engine workers. |
 | **2c.** | Data interface: view construction | We will provide developers with the ability to select a desired analytical dashboard from the pre-selected collection (see five views explained in the architecture section; fully customizable views will make it to future milestones). These UI components will also be implemented via React and Typescript.|
 | **2d.** | Data interface: Deployment | We will provide developers with the ability to schedule their customer view’s deployment (automatically at recurring times in the future milestones). The deployment action will be a UI module, and the propagation/consensus will occur via GitHub at first and via a PGSQL query in future milestones.|
-
-
-### Milestone 4 — Interactive SQL Query Engine for Views
-
-- **Estimated Duration:** 1.5mos
-- **FTE:**  4
-- **Costs:** 7,500 USD
-
-- Summary: This milestone covers a SQL editor as a new option for developers/users to productionize views on FiDi via specific squids on GiantSquid.
-- Success: developer UI supports FiDi SQL-powered views.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0
-| **0b.** | Documentation | We will provide documentation on querying methodology, e.g., functions, operators, data types, and statement reference; as well as an educational tutorial explaining the typical way to run the queries, associate them with the views, interpret the data, navigate the developer UI, and share the views. |
-| **0c.** | Testing | Core functions will be fully covered by a unit and integration tests suite to ensure robustness, deployment, and serving times. |
-| **0e.** | Article | We will publish an announcement article capturing the work completed in the grant along with the educational guides and success stories, enabling users to further leverage and expand DotSight’s functionality. |
-| **1.** | FiDi SQL implementation | We will provide a query engine for blockchain data. Initially forked from [TrinoSQL](https://trino.io/) and/or [harmonizer](https://github.com/duneanalytics/harmonizer), we will extend the functionality to support variable views and embed GraphQL upstream queries. We'll simialrly rely on Typescript + Nest + CloudSQL (PGSQL) for the query engine's implementation. ![FiDi SQL Engine UI Example](https://storage.googleapis.com/fidi-tech-static1/w3f/FiDi%20SQL%20Engine.png "FiDi SQL Engine UI Example")|
-| **2.** | SQL Editor View UI | We will augment the no-code view developed in Milestone 2 with SQL functionality allowing users to rehash the existing views as well as create new ones. The Editor UI will include the runner log, a tree of dependencies and suggested resources, and the editor interface itself. See the UI direction in the following wireframe:|
-| **3.** | Advanced Querying Documentation | We will provide a comprehensive guide for optimizing the queries, both language- and database-specific, along with real-world examples |
 
 
 ## Future Plans

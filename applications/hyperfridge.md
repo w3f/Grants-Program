@@ -277,7 +277,7 @@ Repos:
 | 3. | Unit Tests | We will adapt unit tests and test data to cover creating and validating proofs.  |
 
 
-### Milestone 4 - Node with stable-coin application
+### Milestone 4 - Hyperfridge Parachain
 
 
 - **Estimated duration:** 1 month
@@ -290,12 +290,11 @@ Repos:
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can  spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Adapt unit tests of core functions and test data to ensure functionality and robustness of overall system (bridge and proofs). In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Stablecoin App | Change stablecoin implementation include validating the proof for mint, burn and updates on the FIAT-bridge. Failed validating leads to breaking operations issuing a "validation failed" events.  |
-| 2. | fiat-ramp node | Code will be found in [fiat-node](https://github.com/element36-io/ocw-ebics/tree/main/node) part of the repo. |
-| 3. | Unit Tests | We will adapt unit tests and test data to cover creating and validating proofs.  |
-| 4. | Whitepaper| Update the hyperfridge whitepaper with new learnings and description of the implementation. |
-| 5. | API| Update the hyperfridge whitepaper with new learnings and description of the implementation. |
-
+| 1. | Stablecoin Parachain | Convert the current solochain into parachain. We will adjust client, runtime configurations, tests and documentation. |
+| 2. | AssetHub Connection | Stablecoin asset is registered in the AssetHub, controlled through XCM, i.e minting and burning is on AssetHub. |
+| 3. | Zombienet | We will provide a Zombienet configuration that will launch a parachain with a local relay chain. |
+| 4. | E2e Tests | We will provide end to end tests that demonstrate the basic operations and use cases. |
+| 5. | Whitepaper| Update the hyperfridge whitepaper with new learnings and description of the implementation, if any. |
 
 ### Milestone 5 Demo-UI with stable-coin application
 

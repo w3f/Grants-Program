@@ -94,6 +94,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
+- [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
 
 #### W3F Grants Evaluators<!-- omit in toc -->
@@ -104,6 +105,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Seraya Takahashi](https://github.com/takahser)
+- [Piet Wolff](https://github.com/PieWol) 
 
 #### W3F Operations Team<!-- omit in toc -->
 

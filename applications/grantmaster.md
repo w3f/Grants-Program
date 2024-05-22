@@ -1,7 +1,7 @@
 # GrantMaster: Web3 Grants Management Application
 
 - **Team Name:** Zaniyar Jahany
-- **Payment Address:** 0xFCFDB7351Da159B8f53217be2a671dDa943735fc (DAI)
+- **Payment Address:** 1YXxtnTF119WBAnZbKT7ecyQHLNXZhaaqho1Xu99HTG2LYh (ASSETHUB USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
