@@ -72,7 +72,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Zondax AG](https://zondax.ch/)                       | [User Account Access Security Analysis](./research_wallets.md)                     | [GitHub](https://github.com/zondax)                 | ☐          |        ☐       |      ☐      |
 | [Philoniare Team](https://github.com/philoniare/)                       | [create-substrate-app](./create-substrate-app.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☒       |      ☒      |
 | [David Semakula](https://davidsemakula.com)                       | [pallet-verifier](./pallet-verifier.md)                     | [GitHub](https://github.com/davidsemakula)                 | ☐          |        ☐       |      ☐      |
-| [Algorealm](https://github.com/algorealminc)                       | [pallet-verifier](./swarm-nl.md)                     | [GitHub](https://github.com/algorealminc)                 | ☐          |        ☐       |      ☐      |
+| [Algorealm](https://github.com/algorealminc)                       | [SwarmNL](./swarm-nl.md)                     | [GitHub](https://github.com/algorealminc)                 | ☐          |        ☒       |      ☐      |
 | [Rui Morais](https://github.com/fiono11)                       | [Threshold Signature Implementation](./ThresholdSignature.md)                     | [GitHub](https://github.com/fiono11)                 | ☐          |        ☐       |      ☐      |
 
 
