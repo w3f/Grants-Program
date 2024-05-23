@@ -39,7 +39,7 @@ The web-based wallet allows core functionality of the CLI wallet, offering seaml
 
 The Web-based wallet Talisman to allow transactions of the DApp.
 
-3. Issues Fix to support transactions to multiple recipients (<https://github.com/Off-Narrative-Labs/Tuxedo/issues/62>)
+3. Issues Fix to support transactions to multiple recipients (https://github.com/Off-Narrative-Labs/Tuxedo/issues/62)
 
 The current implementation of a CLI-based wallet allows sending inputs from multiple owners in a single transaction, but it only supports a single recipient for all specified outputs.
 
