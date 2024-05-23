@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">TuxedoDApp | Web3 Foundation Grants</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://grants.web3.foundation/applications/TuxedoDapp"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="TuxedoDApp | Web3 Foundation Grants"><meta data-rh="true" name="description" content="- Team Name: MLabs"><meta data-rh="true" property="og:description" content="- Team Name: MLabs"><link data-rh="true" rel="icon" href="/img/favicon-32x32.png"><link data-rh="true" rel="canonical" href="https://grants.web3.foundation/applications/TuxedoDapp"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/TuxedoDapp" hreflang="en"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/TuxedoDapp" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://9VKKGZO0U1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Web3 Foundation Grants" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.7c81f13b.css">
-<script src="/assets/js/runtime~main.25d4fbe2.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.1aa5db6d.js" defer="defer"></script>
 <script src="/assets/js/main.acadd4cc.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -15,140 +15,127 @@
 <li><strong><a href="https://github.com/w3f/Grants-Program/tree/master#level_slider-levels" target="_blank" rel="noopener noreferrer">Level</a>:</strong> 2</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-overview-page_facing_up">Project Overview <!-- -->📄<a href="#project-overview-page_facing_up" class="hash-link" aria-label="Direct link to project-overview-page_facing_up" title="Direct link to project-overview-page_facing_up">​</a></h2>
-<p>Develop a Tuxedo Web Wallet and DApp</p>
+<p>Develop a Tuxedo DApp, extend the CLI-Wallet and integrate Talisman</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
-<p>Unlike traditional account-based systems, UTXO-based systems treat each transaction output as a distinct entity, introducing advantages in parallel processing and state transition simplicity.
-The Tuxedo project endeavours to demonstrate the flexibility and interoperability of Polkadot by implementing UTXO as one of its paradigms. MLabs, with expertise in the Cardano ecosystem utilizing UTXO as its core model, sees an opportunity to contribute to Tuxedo&#x27;s success, address identified issues, and engage in future collaborative activities.</p>
+<p>Unlike traditional account-based systems, UTXO-based systems treat each transaction output as a distinct entity, introducing advantages in parallel processing and state transition simplicity.</p>
+<p>The Tuxedo project endeavours to demonstrate the flexibility and interoperability of Polkadot by implementing UTXO as one of its paradigms. MLabs, with expertise in the Cardano ecosystem utilizing UTXO as its core model, sees an opportunity to contribute to Tuxedo&#x27;s success, address identified issues, and engage in future collaborative activities.</p>
 <p>Our goal is to showcase the potential of Polkadot using the UTXO paradigm for the end user, leveraging Tuxedo. The project will consist of two key stages:</p>
 <ul>
-<li>Stage 1: Developing a simple Web Wallet</li>
-<li>Stage 2: Developing a basic DApp</li>
+<li>Stage 1: Extend the CLI-wallet and integrate Talisman</li>
+<li>Stage 2: Developing a basic CryptoKitties DApp</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="project-details">Project Details<a href="#project-details" class="hash-link" aria-label="Direct link to Project Details" title="Direct link to Project Details">​</a></h3>
 <ul>
-<li>Stage 1: Developing a simple Web Wallet</li>
+<li>Stage 1: Extend the CLI-wallet and integrate Talisman</li>
 </ul>
-<p>Develop a user-friendly web wallet that allows users to manage their UTXOs on the Tuxedo-based Polkadot network which is similar to polkadot.js which will get the chain info(genesisHash, runtime metadata, chain runtime version, API version), block info
-Focus on simplicity, security, and ease of use to provide a seamless experience for users interacting with UTXOs.</p>
-<p><strong>Technical Requirements</strong></p>
-<p><strong>Security:</strong> : Private key storage:
-The web-based wallet will provide a secure method for private key storage on the client side, such as a browser&#x27;s secure storage or hardware wallets.</p>
+<p>We start by extending the CLI-wallet to allow all the functionalities required by the DApp.</p>
+<p>We had the idea to build a basic web wallet ad hoc for Tuxedo-based app, however, a better approach for helping Tuxedo to expand was to make an integration with Talisman, a well-known Polkadot web wallet. Talisman doesn&#x27;t support UTXO, overcoming this limitation is the biggest challenge.</p>
+<p>We want to ensure users can perform the same actions on the CLI and the Web wallet.</p>
 <p><strong>Functionality</strong>:</p>
 <ol>
-<li>
-<p>Feature Parity Between Web-Based and CLI Wallets
-The web-based wallet will be designed to mirror the core functionality of the CLI wallet, offering seamless UTXO synchronization and token handling, ensuring that users have an equivalent experience across both interfaces
-Note: <em>Feature Parity</em> means Means web-based and command-line interface (CLI) wallets, have the same set of features and functionalities, both versions provide an equivalent or identical user experience by offering the same core capabilities and options.</p>
-</li>
-<li>
-<p>Issues Fix in web-based wallet (<a href="https://github.com/Off-Narrative-Labs/Tuxedo/issues/62" target="_blank" rel="noopener noreferrer">https://github.com/Off-Narrative-Labs/Tuxedo/issues/62</a>)
-The current implementation of a CLI-based wallet allows sending inputs from multiple owners in a single transaction, but it only supports a single recipient for all specified outputs.</p>
-</li>
-<li>
-<p>Browser compatibility:
-Web-based wallet will ensure compatibility with Chrome, Firefox and Edge.</p>
-</li>
+<li>Feature parity between Web-Based and CLI wallets</li>
 </ol>
-<p><strong>Blockchain Integration</strong>:
-Web-based wallet will connect to the blockchain node to fetch relevant data.
-We will check if there is any lib such as the one used by &quot;<a href="https://polkadot.js.org/" target="_blank" rel="noopener noreferrer">https://polkadot.js.org/</a>&quot; to interact with the Tuxedo-based blockchain for easy integration.</p>
-<p><strong>Transactions</strong>:
-web-based wallet will implement transaction creation and signing on the client side.
-We will consider using libraries that support the specific blockchain&#x27;s transaction format for Tuxedo with UTXO instead of accounts.</p>
-<p><strong>Local Database</strong>:
-web-based wallet will consider using databases for storing non-sensitive user data.
-Local database (e.g., IndexedDB, WebSQL, or a lightweight client-side database) to store relevant wallet data locally on the user&#x27;s device.</p>
-<p><strong>Tech Stack</strong>:</p>
+<p>The web-based wallet allows core functionality of the CLI wallet, offering seamless UTXO synchronization and token handling, ensuring that users have an equivalent experience across both interfaces.</p>
+<ol start="2">
+<li>Talisman integration:</li>
+</ol>
+<p>The Web-based wallet Talisman to allow transactions of the DApp.</p>
+<ol start="3">
+<li>Issues Fix to support transactions to multiple recipients (<a href="https://github.com/Off-Narrative-Labs/Tuxedo/issues/62" target="_blank" rel="noopener noreferrer">https://github.com/Off-Narrative-Labs/Tuxedo/issues/62</a>)</li>
+</ol>
+<p>The current implementation of a CLI-based wallet allows sending inputs from multiple owners in a single transaction, but it only supports a single recipient for all specified outputs.</p>
+<p><strong>Blockchain Integration</strong>:</p>
+<p>Web-based and CLI wallet to connect with the blockchain node and fetch data.</p>
 <ul>
-<li>polkadot{.js} trying to re-use it if possible</li>
-<li>React Framework(React + Redux + React Router) OR Vue Framework (Vue.js with Vuex and the Vue Router)</li>
-<li>TypeScript</li>
-<li>webpack</li>
-<li>Babel for backward compatibility in older Browsers</li>
-<li>IndexedDB for Local database</li>
-<li>Jest as JavaScript testing framework</li>
-</ul>
-<p>Wallet Wireframes: <a href="https://drive.google.com/file/d/1nzE2_uqK5V4IwUJJPb92Q_WJk3RDR9UL/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/d/1nzE2_uqK5V4IwUJJPb92Q_WJk3RDR9UL=-h1932-iv2" alt="Wallet wireframes" class="img_ev3q"></a></p>
-<ul>
-<li>Stage 2: DApp Development</li>
+<li>Stage 2: Developing a basic CryptoKitties DApp</li>
 </ul>
 <p>Create a simple decentralized application to demonstrate the viability and maturity of the Tuxedo framework, as required by this opened ticket  &quot;Full Tuxedo App Implementation&quot; <a href="https://github.com/Off-Narrative-Labs/Tuxedo/issues/76" target="_blank" rel="noopener noreferrer">https://github.com/Off-Narrative-Labs/Tuxedo/issues/76</a>
 Showcase the unique features of UTXO-based transactions on Polkadot, emphasizing scalability and robustness.
 Address identified gaps and limitations in the current Tuxedo product to enhance overall functionality.
 We think that a successful showcase of a DApp is Cryptokitties which is provided in Tuxedo via pieces in &quot;<a href="https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties" target="_blank" rel="noopener noreferrer">https://github.com/Off-Narrative-Labs/Tuxedo/tree/main/wardrobe/kitties</a>&quot;.
 We want to use this concept and extend the wardrobe codebase by implementing a basic web interface and allowing breeding, trading, searching, and updating the kitty features such as name, price and tradable status of kitties.
-This DApp is intended for educational purposes only, and not for production use. The web wallet previously developed will be used for this DApp.</p>
+This DApp is intended for educational purposes only, and not for production use. The integrated Talisman will be used for this DApp.</p>
 <p><strong>Technical Requirements</strong></p>
-<p><strong>Functionality</strong>:
-Kitties Creation with NFTs:
+<p><strong>Functionality</strong>:</p>
+<p>Kitties Creation with NFTs:
 Represent each kitty as a unique NFT on the Tuxedo blockchain.
 Use Tuxedo runtime pieces i.e. kitties to handle NFT-based kitties creation transactions.</p>
-<p><strong>Breeding and NFT Ownership</strong>:
-DApp ensures NFT ownership is transferred correctly during breeding transactions.
+<p><strong>Breeding and NFT Ownership</strong>:</p>
+<p>DApp ensures NFT ownership is transferred correctly during breeding transactions.
 Leverage NFT attributes to determine genetics and other breeding-related factors.</p>
-<p><strong>Trading of kitties between users</strong>:
-DApp ensures Kitties can be traded between the users.
+<p><strong>Trading of kitties between users</strong>:</p>
+<p>DApp ensures Kitties can be traded between the users.
 Ensure ownership is transferred successfully once trading is completed.</p>
-<p><strong>Updating the kitty details</strong>:
-DApp ensures Kittie&#x27;s details such as name, tradable status(Yes or No) and Price can be updated.</p>
-<p><strong>Search kitties owned by other users</strong>:
-DApp helps search the kitties other users own based on the user&#x27;s public key.
+<p><strong>Updating the kitty details</strong>:</p>
+<p>DApp ensures Kittie&#x27;s details such as name, tradable status(Yes or No) and Price can be updated.</p>
+<p><strong>Search kitties owned by other users</strong>:</p>
+<p>DApp helps search the kitties other users own based on the user&#x27;s public key.
 This displays the list of kitties owned by other users with all details required for trading such as Gender, Tradable status, Price, Parents, etc.</p>
-<p><strong>Blockchain Integration</strong>:
-Tuxedo Runtime pieces.(wardrobe/kitties ):
-We need Leverage Tuxedo runtime pieces for implementing specific DApp functionalities in the UTXO model, with a focus on NFTs, if some modification is required or if some new functionality is required we may need to customize runtime logic to suit the requirements of the UTXO-based DApp.
-For this scope, we plan to modify the kitties&#x27; pieces code to support below features:</p>
+<p><strong>Blockchain Integration</strong>:</p>
+<p>Tuxedo Runtime pieces (wardrobe/kitties):
+We need to leverage Tuxedo runtime pieces for implementing specific DApp functionalities in the UTXO model, with a focus on NFTs, if some modification is required or if some new functionality is required we may need to customize runtime logic to suit the requirements of the UTXO-based DApp.
+For this scope, we plan to modify the kitties&#x27; pieces code to support the below features:</p>
 <ol>
 <li>Generating the kitty without the parent when the user inserts the new key in the wallet (basically, 1 kitty is provided for free as an onboarding process)</li>
 <li>Implementing the Trading of kitties between users</li>
 <li>Searching kitties owned by other users</li>
 <li>Adding/Updating more details of kitties such as Gender, Tradable status, Price, and Name.</li>
 </ol>
-<p><strong>Transaction Handling</strong>:
-DApp implements transaction handling logic in the web application to initiate UTXO-based transactions, including NFT-related transactions, on the Tuxedo blockchain.
+<p><strong>Transaction Handling</strong>:</p>
+<p>DApp implements transaction handling logic in the web application to initiate UTXO-based transactions, including NFT-related transactions, on the Tuxedo blockchain.
 Provide feedback to users on transaction status and confirmations.</p>
-<p><strong>Transaction Confirmation</strong>:
-DApp implements a transaction confirmation mechanism to ensure that users are informed about the progress and finalization of UTXO and NFT-based transactions such as Trade and Breed.</p>
-<p><strong>Personal Dashboard</strong>:
-We will develop a personal dashboard for users to view and manage their NFT-based Kitties collections.
+<p><strong>Personal Dashboard</strong>:</p>
+<p>We will develop a personal dashboard for users to view and manage their NFT-based Kitties collections.
 Display detailed information about each NFT, including ownership history and transaction history.
 Manage NFT means, it includes below :</p>
 <ol>
-<li>Viewing NFTs:
-Users should be able to see a comprehensive list or visual representation of all the NFTs (kitties) they own.
-Display detailed information about each NFT, including attributes such as below :
-Name
-parents(mom and dad)
-free_breedings(numbers)
-dna(H256 Hash value)
-num_breedings(number)
-Tradable(yes or No)
-Price
-Status (Ready for Raring, Tired (only for Dad), Had birth recently(only for Mom)).</li>
-<li>Trade :
-Users should be able to buy the kitty from other users via the search kitty screen or directly from the Trade Kitty screen by inputting the kitty &amp; owner details.</li>
-<li>Breed :
-Users should be able to initiate breeding directly from the dashboard.</li>
-<li>Update :
-Users should be able to update features such as Tradable status, price, and name from the dashboard by clicking on any cell which will navigate to update the kitty screen.</li>
-<li>Interactivity:
-Make the dashboard interactive, allowing users to click on individual NFTs to access more detailed information or initiate specific actions.</li>
+<li>
+<p>Viewing NFTs:</p>
+<p>Users should be able to see a comprehensive list or visual representation of all the NFTs (kitties) they own.
+Display detailed information about each NFT, including attributes such as below:</p>
+<ul>
+<li>Name</li>
+<li>parents (mom and dad)</li>
+<li>free_breedings (numbers)</li>
+<li>DNA (H256 Hash value)</li>
+<li>num_breedings (number)</li>
+<li>Tradable (yes or No)</li>
+<li>Price</li>
+<li>Status (Ready for Raring, Tired (only for Dad), Had birth recently (only for Mom))</li>
+</ul>
+</li>
+<li>
+<p>Trade:</p>
+<p>Users should be able to buy the kitty from other users via the search kitty screen or directly from the Trade Kitty screen by inputting the kitty &amp; owner details</p>
+</li>
+<li>
+<p>Breed:</p>
+<p>Users should be able to initiate breeding directly from the dashboard</p>
+</li>
+<li>
+<p>Update:</p>
+<p>Users should be able to update features such as Tradable status, price, and name from the dashboard by clicking on any cell which will navigate to update the kitty screen</p>
+</li>
+<li>
+<p>Interactivity:</p>
+<p>Make the dashboard interactive, allowing users to click on individual NFTs to access more detailed information or initiate specific actions</p>
+</li>
 </ol>
 <p><strong>Tech Stack:</strong></p>
 <ul>
-<li>Polkadot-JS APIs for getting block data</li>
-<li>React Framework(React + Redux + React Router) OR Vue Framework (Vue.js with Vuex and the Vue Router)</li>
+<li>React Framework (React + Redux + React Router)</li>
 <li>TypeScript</li>
-<li>Babel for backward compatibility in older Browsers</li>
-<li>IndexedDB for Local database</li>
-<li>IPFS for storing metadata related to the kitty such as Name, Trade status, Price, etc.</li>
-<li>Jest as JavaScript testing framework</li>
+<li>Babel (for backward compatibility in older browsers)</li>
+<li>Jest (JavaScript Testing Framework)</li>
+<li>Rust</li>
+<li>Axum (Rust Web Application Framework)</li>
+<li>Sled (embedded database)</li>
 </ul>
-<p>DApp Wireframes: <a href="https://drive.google.com/file/d/1dCr5Wwi0L-fGPdwAQGFPDhmTeBQYPDy1/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/d/1dCr5Wwi0L-fGPdwAQGFPDhmTeBQYPDy1=w3692-h1932-iv1" alt="Wallet wireframes" class="img_ev3q"></a></p>
+<p>DApp Wireframes: <a href="https://drive.google.com/file/d/1dCr5Wwi0L-fGPdwAQGFPDhmTeBQYPDy1/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/d/1dCr5Wwi0L-fGPdwAQGFPDhmTeBQYPDy1=w3692-h1932-iv1" alt="DApp Wireframes" class="img_ev3q"></a></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="ecosystem-fit">Ecosystem Fit<a href="#ecosystem-fit" class="hash-link" aria-label="Direct link to Ecosystem Fit" title="Direct link to Ecosystem Fit">​</a></h3>
 <p><strong>Where and how does your project fit into the ecosystem?</strong></p>
 <ul>
-<li>TuxedoDApp seeks to propel the Tuxedo project forward by addressing its current limitations and showcasing the capabilities of Polkadot with the UTXO paradigm. By developing a user-friendly web wallet and a simple DApp, we aim to provide a valuable use case for users of this ecosystem with limited experience in UTXO.</li>
+<li>TuxedoDApp seeks to propel the Tuxedo project forward by addressing its current limitations and showcasing the capabilities of Polkadot with the UTXO paradigm. By developing a simple DApp and integrating the Talisman wallet, we aim to provide a valuable use case for users of this ecosystem with limited experience in UTXO.</li>
 </ul>
 <p><strong>Who is your target audience?</strong></p>
 <ul>
@@ -156,7 +143,7 @@ Make the dashboard interactive, allowing users to click on individual NFTs to ac
 <p><strong>Developers and Enthusiasts from other blockchains:</strong> Developers interested in experimenting with another paradigm but also developers from other ecosystems more &quot;bitcoin-based&quot; that want to try Polkadot.</p>
 </li>
 <li>
-<p><strong>New Learners in Blockchain Development:</strong> Individuals who are new to blockchain development and want to learn by engaging with the Tuxedo framework. The Tuxedo Web Wallet and DApp can serve as educational tools, providing a practical environment for learners to understand and experiment with UTXO-based blockchain concepts.</p>
+<p><strong>New Learners in Blockchain Development:</strong> Individuals who are new to blockchain development and want to learn by engaging with the Tuxedo framework. The Tuxedo DApp and the Talisman integration can serve as educational tools, providing a practical environment for learners to understand and experiment with UTXO-based blockchain concepts.</p>
 </li>
 </ul>
 <p><strong>Are there any other projects similar to yours in the Substrate/Polkadot/Kusama ecosystem?</strong></p>
@@ -211,24 +198,24 @@ Amit has more than 100 technical blogs in Blockchain specifically in Substrate, 
 <li><strong>Full-Time Equivalent (FTE):</strong>  2 FTE</li>
 <li><strong>Total Costs:</strong> $24000 (USD)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-1---stage-1-developing-a-simple-web-wallet">Milestone 1  — Stage 1: Developing a simple Web Wallet<a href="#milestone-1---stage-1-developing-a-simple-web-wallet" class="hash-link" aria-label="Direct link to Milestone 1  — Stage 1: Developing a simple Web Wallet" title="Direct link to Milestone 1  — Stage 1: Developing a simple Web Wallet">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-1---extend-the-cli-wallet-and-integrate-talisman">Milestone 1  — Extend the CLI-wallet and integrate Talisman<a href="#milestone-1---extend-the-cli-wallet-and-integrate-talisman" class="hash-link" aria-label="Direct link to Milestone 1  — Extend the CLI-wallet and integrate Talisman" title="Direct link to Milestone 1  — Extend the CLI-wallet and integrate Talisman">​</a></h3>
 <ul>
 <li><strong>Estimated duration:</strong> 1 month</li>
 <li><strong>FTE:</strong>  <em>1</em></li>
 <li><strong>Costs:</strong> $10000 (USD)</li>
 </ul>
-<table><thead><tr><th style="text-align:right">Number</th><th>Deliverable</th><th>Specification</th></tr></thead><tbody><tr><td style="text-align:right"><strong>0a.</strong></td><td>License</td><td>Apache 2.0</td></tr><tr><td style="text-align:right"><strong>0b.</strong></td><td>Documentation</td><td>We will provide both <strong>inline documentation</strong> of the code and a basic <strong>tutorial</strong> that explains how a user can use the web wallet app for Tuxedo (Private key configuration, local URI to be used to connect to blockchain) and send test transactions, tuxedo balance, which will show how the new functionality works.</td></tr><tr><td style="text-align:right"><strong>0c.</strong></td><td>Testing and Testing Guide</td><td>Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.</td></tr><tr><td style="text-align:right"><strong>0d.</strong></td><td>Article</td><td>We will publish an <strong>article</strong>/workshop that explains how to use the web-based wallet which can be used to configure the user&#x27;s private key and also get the information from the tuxedo based blockchain, how to do the transactions based on UTXO instead of account-based blockchain.</td></tr><tr><td style="text-align:right"><strong>0e.</strong></td><td>Docker image containing any changes/issue fix in Tuxedo core</td><td>Will provide the docker image containing any changes or issue fix in Tuxedo core for wallet implementation</td></tr><tr><td style="text-align:right"><strong>0f.</strong></td><td>Web-based wallet</td><td>We will create a web-based wallet that will have functionalities like Storing the private key of the user,(send and receive) Transaction support, all the functionalities provided by the CLI-based wallet (VerifyCoin, SpendCoins, InsertKey, GenerateKey, ShowKeys, RemoveKey, ShowBalance, ShowAllOutputs)</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-2--stage-2-developing-a-basic-dapp">Milestone 2 — Stage 2: Developing a basic DApp<a href="#milestone-2--stage-2-developing-a-basic-dapp" class="hash-link" aria-label="Direct link to Milestone 2 — Stage 2: Developing a basic DApp" title="Direct link to Milestone 2 — Stage 2: Developing a basic DApp">​</a></h3>
+<table><thead><tr><th style="text-align:right">Number</th><th>Deliverable</th><th>Specification</th></tr></thead><tbody><tr><td style="text-align:right"><strong>0a.</strong></td><td>License</td><td>Apache 2.0</td></tr><tr><td style="text-align:right"><strong>0b.</strong></td><td>Documentation</td><td>We will provide a basic <strong>video</strong> that shows how a user can use Talisman to send test tuxedo transactions, together with other videos showing how to do the same with the CLI-wallet interface. We will publish information in a wiki format about: how to build and run the project, the APIs, libs, etc.</td></tr><tr><td style="text-align:right"><strong>0c.</strong></td><td>Testing and Testing Guide</td><td>The extension of the CLI-wallet will be fully covered by unit tests. Documentation about how to test will be provided</td></tr><tr><td style="text-align:right"><strong>0d.</strong></td><td>Article</td><td>We will publish information about the DApp specification, the talisman integration and the extended CLI-wallet functionalities</td></tr><tr><td style="text-align:right"><strong>0e.</strong></td><td>Docker image containing any changes/issue fix in Tuxedo core</td><td>If the tuxedo core need changes due the Talimans integration and/or the CLI wallet, we will provide the docker image containing the changes</td></tr><tr><td style="text-align:right"><strong>0f.</strong></td><td>CLI-wallet extended and Talisman wallet integration</td><td>The CLI-wallet will be extended to support the new functionalities of the DApp. We will integrate Talisman web-based wallet to support all the transactions of the DApp.</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-2--stage-2-developing-a-basic-cryptokitties-dapp">Milestone 2 — Stage 2: Developing a basic CryptoKitties DApp<a href="#milestone-2--stage-2-developing-a-basic-cryptokitties-dapp" class="hash-link" aria-label="Direct link to Milestone 2 — Stage 2: Developing a basic CryptoKitties DApp" title="Direct link to Milestone 2 — Stage 2: Developing a basic CryptoKitties DApp">​</a></h3>
 <ul>
 <li><strong>Estimated Duration:</strong> 2 months</li>
 <li><strong>FTE:</strong>  2</li>
 <li><strong>Costs:</strong> $14000 (USD)</li>
 </ul>
-<table><thead><tr><th style="text-align:right">Number</th><th>Deliverable</th><th>Specification</th></tr></thead><tbody><tr><td style="text-align:right"><strong>0a.</strong></td><td>License</td><td>Apache 2.0</td></tr><tr><td style="text-align:right"><strong>0b.</strong></td><td>Documentation</td><td>We will provide both <strong>inline documentation</strong> of the code and a basic <strong>tutorial</strong> that explains how a user can use the DApp app to breed kitties,  view the kitties using the dashboard</td></tr><tr><td style="text-align:right"><strong>0c.</strong></td><td>Testing and Testing Guide</td><td>Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.</td></tr><tr><td style="text-align:right"><strong>0d.</strong></td><td>Article</td><td>We will publish an <strong>article</strong>/workshop that explains how to use the DApp which can be used to &quot;create the kitty as NFT&quot;, Breeding of kitties, and also how to use the Dashboard</td></tr><tr><td style="text-align:right"><strong>0e.</strong></td><td>Kitties Pieces: Docker image</td><td>Docker image containing the kitties which support new features such as &quot;Mint kitty without mom and dad, Trade kitty, change ownership of kitty and search kitties&quot;</td></tr><tr><td style="text-align:right"><strong>0f.</strong></td><td>DApp</td><td>We will create a web-based Daap to support functionality such as &quot;create the kitty as NFT&quot;, managing the ownership of NFT/Kitties, Breeding, Trading kitties, and showing info (meaning of &quot;Management of NFT&quot; is mentioned above in Dashboard section )</td></tr><tr><td style="text-align:right"><strong>0g.</strong></td><td>Personalized Dashboard</td><td>We will create a personal dashboard for users to view and manage their NFT-based kitty collections. Display detailed information about each NFT, including ownership and other details such as parents, dna, Tradable status, Price, etc</td></tr></tbody></table>
+<table><thead><tr><th style="text-align:right">Number</th><th>Deliverable</th><th>Specification</th></tr></thead><tbody><tr><td style="text-align:right"><strong>0a.</strong></td><td>License</td><td>Apache 2.0</td></tr><tr><td style="text-align:right"><strong>0b.</strong></td><td>Documentation</td><td>We will provide a basic <strong>video</strong> that shows how a user can use the DApp to breed and trades kitties</td></tr><tr><td style="text-align:right"><strong>0c.</strong></td><td>Testing and Testing Guide</td><td>Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.</td></tr><tr><td style="text-align:right"><strong>0d.</strong></td><td>Article</td><td>We will publish information in a wiki format about: the APIs built, the DApp specification, the frontend libs used, the game design, the wireframes of the DApp</td></tr><tr><td style="text-align:right"><strong>0e.</strong></td><td>DApp</td><td>We will create a web-based DApp to support functionality such as &quot;create the kitty as NFT&quot;, managing the ownership of NFT/Kitties, Breeding, Trading kitties, and showing info (meaning of &quot;Management of NFT&quot; is mentioned above in Dashboard section )</td></tr><tr><td style="text-align:right"><strong>0f.</strong></td><td>Personalized Dashboard</td><td>We will create a personal dashboard for users to view and manage their NFT-based kitty collections. Display detailed information about each NFT, including ownership and other details such as parents, dna, Tradable status, Price, etc</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="future-plans">Future Plans<a href="#future-plans" class="hash-link" aria-label="Direct link to Future Plans" title="Direct link to Future Plans">​</a></h2>
-<p><strong>Dynamic Wallet</strong>: Making the wallet dynamic by using a standard metadata format such in FRAME, between the wallet and the blockchain, so that any newly created pieces can be tested without extra modification. For this priority activity, we expect not less than 3 months of work with a budget estimation under $30k</p>
+<p><strong>Indexer and caching</strong>: Implement an indexer that listens to the Tuxedo blockchain and captures relevant events and data related to kitties, enabling fast data retrieval. Introduce a caching layer to further optimize data retrieval and reduce database lookup lag.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="referral-program-optional-moneybag">Referral Program (optional) <!-- -->💰<a href="#referral-program-optional-moneybag" class="hash-link" aria-label="Direct link to referral-program-optional-moneybag" title="Direct link to referral-program-optional-moneybag">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-information-heavy_plus_sign">Additional Information <!-- -->➕<a href="#additional-information-heavy_plus_sign" class="hash-link" aria-label="Direct link to additional-information-heavy_plus_sign" title="Direct link to additional-information-heavy_plus_sign">​</a></h2>
-<p><strong>How did you hear about the Grants Program?</strong> Meeting with the Web3 Foundation team at the beautiful Sub0 conference in Lisbon</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/w3f/Grants-Program/edit/master/applications/TuxedoDapp.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#project-overview-page_facing_up" class="table-of-contents__link toc-highlight">Project Overview 📄</a><ul><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#project-details" class="table-of-contents__link toc-highlight">Project Details</a></li><li><a href="#ecosystem-fit" class="table-of-contents__link toc-highlight">Ecosystem Fit</a></li></ul></li><li><a href="#team-busts_in_silhouette" class="table-of-contents__link toc-highlight">Team 👥</a><ul><li><a href="#team-members" class="table-of-contents__link toc-highlight">Team members</a></li><li><a href="#contact" class="table-of-contents__link toc-highlight">Contact</a></li><li><a href="#legal-structure" class="table-of-contents__link toc-highlight">Legal Structure</a></li><li><a href="#teams-experience" class="table-of-contents__link toc-highlight">Team&#39;s experience</a></li><li><a href="#team-code-repos" class="table-of-contents__link toc-highlight">Team Code Repos</a></li><li><a href="#team-linkedin-profiles-if-available" class="table-of-contents__link toc-highlight">Team LinkedIn Profiles (if available)</a></li></ul></li><li><a href="#development-status-open_book" class="table-of-contents__link toc-highlight">Development Status 📖</a></li><li><a href="#development-roadmap-nut_and_bolt" class="table-of-contents__link toc-highlight">Development Roadmap 🔩</a><ul><li><a href="#overview-1" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#milestone-1---stage-1-developing-a-simple-web-wallet" class="table-of-contents__link toc-highlight">Milestone 1  — Stage 1: Developing a simple Web Wallet</a></li><li><a href="#milestone-2--stage-2-developing-a-basic-dapp" class="table-of-contents__link toc-highlight">Milestone 2 — Stage 2: Developing a basic DApp</a></li></ul></li><li><a href="#future-plans" class="table-of-contents__link toc-highlight">Future Plans</a></li><li><a href="#referral-program-optional-moneybag" class="table-of-contents__link toc-highlight">Referral Program (optional) 💰</a></li><li><a href="#additional-information-heavy_plus_sign" class="table-of-contents__link toc-highlight">Additional Information ➕</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">More Info</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/w3f/Grants-Program" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://web3.foundation/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/Support Docs/privacy_policy">Privacy Policy</a></li><li class="footer__item"><a href="https://web3.foundation/legal-disclosures/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Legal Disclosures</a></li></ul></div><div class="col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/Web3foundation" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&amp;via=matrix.org&amp;via=matrix.parity.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">Grants Community Matrix Channel<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2024 Web3 Foundation</div></div></div></footer></div>
+<p><strong>How did you hear about the Grants Program?</strong> Meeting with the Web3 Foundation team at the beautiful Sub0 conference in Lisbon</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/w3f/Grants-Program/edit/master/applications/TuxedoDapp.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#project-overview-page_facing_up" class="table-of-contents__link toc-highlight">Project Overview 📄</a><ul><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#project-details" class="table-of-contents__link toc-highlight">Project Details</a></li><li><a href="#ecosystem-fit" class="table-of-contents__link toc-highlight">Ecosystem Fit</a></li></ul></li><li><a href="#team-busts_in_silhouette" class="table-of-contents__link toc-highlight">Team 👥</a><ul><li><a href="#team-members" class="table-of-contents__link toc-highlight">Team members</a></li><li><a href="#contact" class="table-of-contents__link toc-highlight">Contact</a></li><li><a href="#legal-structure" class="table-of-contents__link toc-highlight">Legal Structure</a></li><li><a href="#teams-experience" class="table-of-contents__link toc-highlight">Team&#39;s experience</a></li><li><a href="#team-code-repos" class="table-of-contents__link toc-highlight">Team Code Repos</a></li><li><a href="#team-linkedin-profiles-if-available" class="table-of-contents__link toc-highlight">Team LinkedIn Profiles (if available)</a></li></ul></li><li><a href="#development-status-open_book" class="table-of-contents__link toc-highlight">Development Status 📖</a></li><li><a href="#development-roadmap-nut_and_bolt" class="table-of-contents__link toc-highlight">Development Roadmap 🔩</a><ul><li><a href="#overview-1" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#milestone-1---extend-the-cli-wallet-and-integrate-talisman" class="table-of-contents__link toc-highlight">Milestone 1  — Extend the CLI-wallet and integrate Talisman</a></li><li><a href="#milestone-2--stage-2-developing-a-basic-cryptokitties-dapp" class="table-of-contents__link toc-highlight">Milestone 2 — Stage 2: Developing a basic CryptoKitties DApp</a></li></ul></li><li><a href="#future-plans" class="table-of-contents__link toc-highlight">Future Plans</a></li><li><a href="#referral-program-optional-moneybag" class="table-of-contents__link toc-highlight">Referral Program (optional) 💰</a></li><li><a href="#additional-information-heavy_plus_sign" class="table-of-contents__link toc-highlight">Additional Information ➕</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">More Info</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/w3f/Grants-Program" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://web3.foundation/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/Support Docs/privacy_policy">Privacy Policy</a></li><li class="footer__item"><a href="https://web3.foundation/legal-disclosures/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Legal Disclosures</a></li></ul></div><div class="col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/Web3foundation" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&amp;via=matrix.org&amp;via=matrix.parity.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">Grants Community Matrix Channel<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2024 Web3 Foundation</div></div></div></footer></div>
 </body>
 </html>
