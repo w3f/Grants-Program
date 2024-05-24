@@ -79,7 +79,7 @@ Known drawbacks are the security concerns, related with storing private keys on 
 
 ### Data Model
 
-Syncra uses IPFS as well as MongoDB for storing additional data about DAOs, proposals, and user stats. The purpose is to minimise the data footprint on the blockchain itself, as storing data onchain is costly, and not very performant. Only the critical data is stored inside of the the DAO Smart Contract’s. 
+Syncra uses IPFS as well as MongoDB for storing additional data about DAOs, proposals, and user stats. The purpose is to minimise the data footprint on the blockchain itself, as storing data onchain is costly, and not very performant. Only the critical data is stored inside of the DAO Smart Contract’s. 
 
 DAOs, Proposals titles, and descriptions are stored on the IPFS, and then corresponding IPFS hashes are set on the DAO contract's storage. In this way, users can be sure that the data about the given DAO or Proposal won’t be modified, nor fade-away if the server ever goes down. The same applies to storing images, as we use web3 storage for image upload.
 

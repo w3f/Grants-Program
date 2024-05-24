@@ -205,7 +205,7 @@ Goal - Integrate with one existing Ethereum project
 
 ## Future Plans
 
-Our vision is to provide a composable and innovative stack for EVM on Substrate. We've seen the power of composibility in DeFi on Ethereum, and it's not limited to one domain. Meanwhile we also want to break-free from Ethereum constraints, and offer innovative economic models, fight scams, and improve usability. We're determined to make this next level unified experience happen on Substrate, through the the Project Bodhi stack. We are going to eat our own dog food to use it for Acala. And we believe it will be useful for most domain-specific parachains/parathreads who have custom runtime and also want to leverage smart contracts.
+Our vision is to provide a composable and innovative stack for EVM on Substrate. We've seen the power of composibility in DeFi on Ethereum, and it's not limited to one domain. Meanwhile we also want to break-free from Ethereum constraints, and offer innovative economic models, fight scams, and improve usability. We're determined to make this next level unified experience happen on Substrate, through the Project Bodhi stack. We are going to eat our own dog food to use it for Acala. And we believe it will be useful for most domain-specific parachains/parathreads who have custom runtime and also want to leverage smart contracts.
 
 Future development
 

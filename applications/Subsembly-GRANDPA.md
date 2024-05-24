@@ -112,7 +112,7 @@ The team already spend time on implementing GRANDPA, by updating the Subsembly C
 
 ## Development Roadmap :nut_and_bolt:
 
-Described below is a practical approach to the implementation of the GRANDPA module along with the the other auxiliary modules that are required.
+Described below is a practical approach to the implementation of the GRANDPA module along with the other auxiliary modules that are required.
 
 1. Session
     1. Implement session period configuration (`n` number of blocks)

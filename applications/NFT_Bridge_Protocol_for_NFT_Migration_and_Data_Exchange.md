@@ -136,7 +136,7 @@ This process is NOT a fully decentralized trustless process itself in order to a
 - If after a time-limit, either of those acknowledgement are missing, the migration is reverted : the original token can be withdrawn freely by the sender, and the migrated token is burned.
 - Checked migrations need to be possible for either EVM => EVM, *=> EVM or EVM =>* migrations.
 - Checked migrations need to allow any third party to "check" the migration and publish a standardized signed message that the migration did indeed happen.
-- NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
+- NB : This only cover the migration of NFTs to a new universe, not the redemption of the NFT back to it's origin universe.
 - Licensed under the [Unlicense](https://unlicense.org)
 
 *The main purpose of this migration process is for NFT publishers to allow their users to effortlessly migrate their tokens with the least amount of efforts required. NFT publishers could offer users to do the whole migration with a single gas spending approve() from an NFT owner and the rest trough meta-transactions by the publisher. The publisher would then sign the migration as properly done after having minted and transferred the token on the destination blockchain. By essence, most NFTs are not trustless assets as their publishers own real world IP rights to them, and it is hence acceptable to use said publishers as relayers. This is standardizing a process that would otherwise require the publisher to update their original NFT smart contracts or NFT owners to burn their original NFT token in order to get a new one minted on the destination universe.*
@@ -155,7 +155,7 @@ We will write up the ‘Trustless Migration’ process which is designed to be u
 
 - Snowfork is already building a substrate module allowing specifically for Ethereum Smart contract reading. If a Substrate-built parachain implement those reading capacities, then implementation of this process should be straightforward.
 - In the case of EVM => EVM ERC-721 migration without trustless reading, Chainbridge already exist. However, their contracts requires administrator input for new contract registration as well as lacking features that are NFT specific, such as preventing minting technically correct but legally counterfeit tokens.
-- NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
+- NB : This only cover the migration of NFTs to a new universe, not the redemption of the NFT back to it's origin universe.
 - Licensed under the [Unlicense](https://unlicense.org)
 
 ### Milestone 4 — Standard and Documentation for Cross-universe Migration

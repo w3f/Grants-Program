@@ -173,7 +173,7 @@ We’ve published a tasting version of the dev SDK for multi-chain DApp develope
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3  |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the the SDK of Dante smart contract developed in ink! to build their own Omnichain DApps. At this stage, the tutorial will cover how to make message communications and contract invocations between Polkadot’s smart contract parachains and other chains(like Ethereum).|
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the SDK of Dante smart contract developed in ink! to build their own Omnichain DApps. At this stage, the tutorial will cover how to make message communications and contract invocations between Polkadot’s smart contract parachains and other chains(like Ethereum).|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was done as part of the grant. And we will publish a series of articles that explains how Dante Protocol Stack works from a high-level perspective. The content of the articles will be consistent with the functions at this stage.
 | 1. | (ink!)smart contracts: Service expression layer | Development and testing of Service expression layer on some of Polkadot’s smart contract parachains (Astar/Edgeware); Demos for communication and interoperation between one of Polkadot’s smart contract platforms and Ethereum, Near, Avalanche.|
@@ -192,7 +192,7 @@ We’ve published a tasting version of the dev SDK for multi-chain DApp develope
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the the SDK of Dante smart contract developed in ink! to build their own Omnichain DApps. At this stage, the tutorial will cover how to use SQoS to balance security and scalability when making multi-chain operations. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the SDK of Dante smart contract developed in ink! to build their own Omnichain DApps. At this stage, the tutorial will cover how to use SQoS to balance security and scalability when making multi-chain operations. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains what was done as part of the grant. And we will publish a series of articles that explains how Dante Protocol Stack works from a high-level perspective. The content of the articles will be consistent with the functions at this stage.
