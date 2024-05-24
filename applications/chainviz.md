@@ -29,7 +29,7 @@ Application in its current alpha version provides the following features:
 
 **This application is to fund the building of the first major version of Chainviz**, with the following features/visualizations:
 
-- Complete rebuild of the the existing functionality with improved UI/UX and WebGL models and animations
+- Complete rebuild of theexisting functionality with improved UI/UX and WebGL models and animations
 - Additional support for Polkadot
 - New visualizations
   - Parachains

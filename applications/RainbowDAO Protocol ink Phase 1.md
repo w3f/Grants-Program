@@ -284,7 +284,7 @@ The following are the details of the : RainbowDao protocol:
    
    - #####  3.DAO User Management System
    
-    It’s about the the member management of the entire RainbowDAO protocol. This management pattern can be employed in all independent DAOs, they can choose one or more parts of the system and they can combine these parts for their own use. Currently, there’re merely some simple functions there. We will develop more sophisticated ones based on the reality of RainbowDAO protocol. 
+    It’s about themember management of the entire RainbowDAO protocol. This management pattern can be employed in all independent DAOs, they can choose one or more parts of the system and they can combine these parts for their own use. Currently, there’re merely some simple functions there. We will develop more sophisticated ones based on the reality of RainbowDAO protocol. 
    
    - #####  4.DCV Management System
    

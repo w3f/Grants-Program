@@ -144,7 +144,7 @@ The Skynet Labs team (recently renamed from Nebulous) was responsible for the de
 
 ## Development Status :open_book:
 
-Preliminary research has been undertaken into the Polkadot ecosystem generally and substrate development specifically for the purposes of writing this proposal, along with coordinating with the Web3Foundation and Parity team member to make sure the the implementation plans and technical details were thorough and sensible.
+Preliminary research has been undertaken into the Polkadot ecosystem generally and substrate development specifically for the purposes of writing this proposal, along with coordinating with the Web3Foundation and Parity team member to make sure theimplementation plans and technical details were thorough and sensible.
 
 ## Development Roadmap :nut_and_bolt:
 

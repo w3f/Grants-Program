@@ -24,7 +24,7 @@ Depends on Treasury Recurring Payouts: https://github.com/paritytech/substrate/i
 
 ## Overview
 
-The payout, approved by a Council motion for a specific pool of nodes would go to the the [payout script](#payout-script) (identified as an address), then the pool would distribute the funds based on the [database](#database).
+The payout, approved by a Council motion for a specific pool of nodes would go to the[payout script](#payout-script) (identified as an address), then the pool would distribute the funds based on the [database](#database).
 
 ## Deliverables :nut_and_bolt:
 

@@ -213,4 +213,4 @@ We plan to provide the corresponding off-chain functionality written Go in the c
 After Dieter Fishbein joined the Web3 Foundation, he reached out to Sebastian Stammler in June 2020 regarding grants, finally resulting in this application.
 
 **Other project funding.**
-The project is partially supported by the the German Ministry of Education and Science (BMBF) through a Startup Secure grant.
+The project is partially supported by theGerman Ministry of Education and Science (BMBF) through a Startup Secure grant.

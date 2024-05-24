@@ -50,7 +50,7 @@ The crowdloan page display the ongoing crowdlending campaigns as a list. The use
 Current parachains page :
 ![](https://i.imgur.com/0bdQ0xH.jpg)
 
-The parachains page display the running parachains of the selected chain as a list. This page gathers the on-chain details of the selected parachain with some extra information, such as a link the the official website, a link to the github repository of the blockchain, etc.
+The parachains page display the running parachains of the selected chain as a list. This page gathers the on-chain details of the selected parachain with some extra information, such as a link theofficial website, a link to the github repository of the blockchain, etc.
 
 Details about the UI (that I cannot render on paper) :
 
