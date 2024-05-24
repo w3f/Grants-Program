@@ -1,10 +1,10 @@
-# Name of your Project
+# Vanity Bunny NFTs
 
 > This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Team Name:** Legal name of your team (e.g. JsonCorp)
+- **Team Name:** TeamRavisi (e.g. JsonCorp)
 - **Payment Details:**
   - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
   - **Payment**: In case of payment in **USDC or USDT**, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of **fiat** payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and list here the date and time of your email (e.g. Fiat 24.12.1971, 11:59). 
@@ -14,7 +14,7 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
+First-ever PFP NFT Collection Empowering Women, representing Inclusion & Diversity, Creating Social Reform by advocating CrueltyFree Cosmetics in the Beauty sector
 
 If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
 
@@ -22,10 +22,10 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 Please provide the following:
 
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
+- Vanity Bunny- A humanitarian NFT collection embracing a stylish aesthetic (one sentence summary).
+- Vanity Bunny is an NFT collection, with a bunny. A bunny holds diverse meanings. It is synonymous with the Beauty Industry, represents a commitment to ethical choices, symbolizes playfulness, support to animal welfare, is iconic, glamorous and popular with women. I wish to collaborate with brands whose mission and values align with the NFT collection. It can reinforce their ethical brand image, offer creative market opportunities for promotions by creating phygital products/ mascots which help in community building, offer a compelling narrative for storytelling, provide a USP that differentiates the brand & a positive PR.
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+- Tapping into the beauty, fashion and the lifestyle sector is something that's really intrigued me as an artist. 
 
 ### Project Details
 
@@ -65,25 +65,23 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
+- Manavi Singhal, Artist & Founder
 - Names of team members
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Manavi Singhal** Full name of the contact person in your team
+- **manavi@ravisi.ms** Contact email (e.g. john@duo.com)
+- **[Website:](https://ravisi.ms/)** Your website
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Ravisi Ltd, Office 7 35-37 Ludgate Hill, London, United Kingdom, EC4M 7JN** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
+- **Ravisi Ltd** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+My involvement spans the entire project life cycle, from business development, client engagement, pitching, conceptualization of artworks to deliverables. If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
 ### Team Code Repos
 
@@ -97,7 +95,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
+- https://www.linkedin.com/in/manavisinghal
 - https://www.linkedin.com/{person_2}
 
 
@@ -121,7 +119,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
+- **6 months** Duration of the whole project (e.g. 2 months)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
 
@@ -161,8 +159,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 Please include here
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
+- From my own pocket, grants
+- I am looking to collaborate with brands and organisations with a similar mission and objectives  
 - the team's long-term plans and intentions in relation to it.
 
 ## Referral Program (optional) :moneybag:
@@ -174,7 +172,7 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**Twitter** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
