@@ -4,7 +4,7 @@
 This Request for Proposals is closed, meaning we are not looking for any more proposals on this topic at the moment. 
 :::
 
-* **Status:** Open
+* **Status:** Closed
 * **Proposer:** mmagician, laboon
 * **Projects you think this work could be useful for:** All parachains
 

@@ -1,8 +1,10 @@
 # Solang Playground
 
 
-- **Team Name:** Salaheldin Soliman
-- **Payment Address:** 0x9036b20920ddf473e796d24afd0fe04d4dde0b68
+- **Team Name:** Salaheldin Soliman and Tarek Elsayed
+- **Payment Address:** 
+    - Salaheldin Soliman: 0x9036b20920ddf473e796d24afd0fe04d4dde0b68 
+    - Tarek Elsayed: 0xA91584056eEB860147158c7cC90818D3f5039014
 - **Payment Details:** DAI (ERC20)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
@@ -121,35 +123,39 @@ As a matter of fact, I investigated integrating Solang to Ink! playground, but t
 
 
 
-## Contributer :busts_in_silhouette:
+## Team :busts_in_silhouette:
 
+### Team members
 
-### Contact
-
-- **Contact Name:** Salaheldin Soliman
-- **Contact Email:** salaheldin_sameh@aucegypt.edu
+- **Salaheldin Soliman**:
+    - **Contact Email:** salaheldin_sameh@aucegypt.edu
+    - **Github Handle:** https://github.com/salaheldinsoliman
+    - **LinkedIn Profile:** https://www.linkedin.com/in/salaheldinsoliman/
+- **Tarek Elsayed**:
+    - **Contact Email:** tareknaser360@gmail.com
+    - **Github Handle:** https://github.com/tareknaser
+    - **LinkedIn Profile:** https://www.linkedin.com/in/tareknasser360/
 
 
 ### Relevant experience
 
-1- Worked on Solang as part of the [Hyperledger Mentorship Program](https://wiki.hyperledger.org/display/INTERN).
+#### Salaheldin Soliman
 
-a. Implemented [array bounds checks optimization](https://solang.readthedocs.io/en/latest/code_gen_options.html#array-bound-checks-optimization).
-b. Implemented [multiplication overflow detection during runtime](https://github.com/hyperledger/solang/pull/988).
-c. Implemented [constant overflow detection during compilation](https://github.com/hyperledger/solang/pull/1024#ref-commit-baaa425).
-d. Improved [Solang's parser resilience](https://github.com/hyperledger/solang/pull/1068).
+1. Worked on Solang as part of the [Hyperledger Mentorship Program](https://wiki.hyperledger.org/display/INTERN).
+    - Implemented [array bounds checks optimization](https://solang.readthedocs.io/en/latest/code_gen_options.html#array-bound-checks-optimization).
+    - Implemented [multiplication overflow detection during runtime](https://github.com/hyperledger/solang/pull/988).
+    - Implemented [constant overflow detection during compilation](https://github.com/hyperledger/solang/pull/1024#ref-commit-baaa425).
+    - Improved [Solang's parser resilience](https://github.com/hyperledger/solang/pull/1068).
 
 
 2- Worked on Solang as part of a previous W3F [grant](https://github.com/w3f/Grants-Program/blob/master/applications/Solang_developer_experience_improvements.md). 
 
-### Github Handle
 
-- https://github.com/salaheldinsoliman
+#### Tarek Elsayed
 
-
-### LinkedIn Profile
-
-- https://www.linkedin.com/in/salaheldinsoliman/
+1. Worked on Solang as part of the [Hyperledger Mentorship Program](https://wiki.hyperledger.org/display/INTERN).
+    - Refactored extrinsics operations from `cargo contract`, creating a dedicated crate for extrinsics. ([cargo-contract#1181](https://github.com/use-ink/cargo-contract/pull/1181), [cargo-contract#1213](https://github.com/use-ink/cargo-contract/pull/1213))
+    - Developed [Solang Aqd](https://github.com/hyperledger/solang-aqd), a CLI tool for interacting with smart contracts on chain.
 
 
 ## Development Status :open_book:

@@ -94,6 +94,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
+- [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
 
 #### W3F Grants Evaluators<!-- omit in toc -->
@@ -104,6 +105,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Seraya Takahashi](https://github.com/takahser)
+- [Piet Wolff](https://github.com/PieWol) 
 
 #### W3F Operations Team<!-- omit in toc -->
 
@@ -306,21 +308,14 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 
 - [Acala Grants Program](https://acala.network/ecosystem-program)
 - [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program)
-- [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
-- [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Decentralized Futures Program](https://futures.web3.foundation/) 
-- [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
-- [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
-- [KodaDot Ecosystem Grants](https://github.com/kodadot/grants)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
-- [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/)
-- [Picasso / Composable Grants Program](https://docs.composable.finance/ecosystem/composable-grants/)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)

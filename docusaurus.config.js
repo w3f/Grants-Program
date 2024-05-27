@@ -35,7 +35,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'We are introducing DOT payments to all future grants.<a target="_blank" rel="noopener noreferrer" href="https://grants.web3.foundation/docs/faq#what-does-it-mean-for-payments-to-be-30-dot">See our FAQ for details</a>!',
+        'Do you want to help build <a target="_blank" rel="noopener noreferrer" href="https://graypaper.com/">JAM</a>? Checkout the <a target="_blank" rel="noopener noreferrer" href="https://jam.web3.foundation/">JAM Prize!</a>',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
