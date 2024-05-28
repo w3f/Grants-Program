@@ -1,7 +1,7 @@
 # Lastic - Grant 3 - Indexing Coretime Chain with Subsquid and Graph Implementation
 
 - **Team Name:** Lastic
-- **Payment Address:** 16Jbt5zru6XdUx1jYRV8AZtGk76ujtUNdd1UVWVVkVvGZ31L (USDT)
+- **Payment Address:** Fiat (EUR)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -46,18 +46,17 @@ For this grant, we will concentrate on the following key areas:
 
 - Phil Lucsok (aka Asynchronous Phil)
 - Aurora Makovac (aka Aurora Poppyseed)
-- Pierina Ponce
 
 ### Contact
 
-- **Contact Name:** Phil Lucsok, Aurora Poppyseed, Pierina Ponce
-- **Contact Email:** plucsok@gmail.coml, aurora.makovac@gmail.com, pierinaponce1993@gmail.com
+- **Contact Name:** Phil Lucsok, Aurora Poppyseed
+- **Contact Email:** plucsok@gmail.coml, aurora.makovac@gmail.com
 - **Website:** [lastic.xyz](https://www.lastic.xyz/)
 
 ### Legal Structure
 
 - **Registered Address:** Private
-- **Registered Legal Entity:** In progress
+- **Registered Legal Entity:** Private
 
 ### Team's experience
 
@@ -138,13 +137,13 @@ Now a freelance blockchain developer, Aurora champions women's representation in
 
 - **Estimated Duration:** 3.5 months
 - **FTE:** 1.5
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 30,000 EUR
 
 ### Milestone 1 - Indexing Coretime Chain with Subsquid / Functioning Indexer + Basic Visualization
 
 - **Estimated Duration:** 2 months
 - **FTE:** 2
-- **Costs:** 15,000 USD
+- **Costs:** 15,000 EUR
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -217,7 +216,7 @@ Now a freelance blockchain developer, Aurora champions women's representation in
 
 - **Estimated Duration:** 1 months
 - **FTE:** 1.5
-- **Costs:** 15,000 USD
+- **Costs:** 15,000 EUR
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
