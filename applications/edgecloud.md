@@ -77,9 +77,9 @@ The technological landscape sees a plethora of competitors, each carving their n
 
 - [Barath Kanna](https://www.linkedin.com/in/barath-kanna) - Founder & CEO
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-t) - Founder & COO
-- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - Co-Founder & CIO
-- [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - Senior Substrate Developer
+- [Calvin Sze](https://www.linkedin.com/in/calvin-sze/) - Lead Fullstack Developer
 - [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Rust Substrate Developer
+- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - Substrate Advisor
 
 ### Contact
 
@@ -98,11 +98,9 @@ The technological landscape sees a plethora of competitors, each carving their n
 
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - She has been involved in operations for Web3 projects and has taken initiatives in the blockchain community. One of her contributions is the establishment of [Indi Verse DAO](https://www.linkedin.com/company/indi-verse-dao), a web 3.0 community in India. Additionally, she is the candidate of the Polkadot Ambassador Program. She is also a graduate from the Polkadot Blockchain Academy's Founders Track at Hong Kong (Jan - Feb 2024)
   
-- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) (Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
-
-- [Ashi Mishra](https://www.linkedin.com/in/ashi-m-10a692273/) - A Senior Rust and Substrate Developer with experience working for projects like [Bitgreen](https://bitgreen.org/).
-
 - [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Aspiring Rust systems engineer who is also a PBA alumni from Developer Track at Berkeley Cohort.
+
+- [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) (Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
 
 ### Team Code Repos
 
@@ -115,8 +113,6 @@ Project GitHub repositories.
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
 - https://github.com/beekay2706
-- https://github.com/SHA888
-- https://github.com/ashi20192020
 - https://github.com/dheeraj07
 - https://github.com/Megha2712
 
