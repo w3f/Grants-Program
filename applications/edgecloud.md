@@ -3,7 +3,7 @@
 - **Team Name:** Cyborg Network
 - **Payment Address:** 12Enn321pZSZkNtBwsTRxxZTKS9DsGpk8PTkZsnsMjTzrtFa (AssetHub USDT) 
 - **DOT Vesting Address:** 15p7mTm9uKt1w7GF3AU1TNPWm4eAHgieTjtfsVVEtqHazpaY
-- **Level:** 1
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
@@ -11,7 +11,7 @@
 
 ### Overview
 
-This application is a follow up from our previous [grant application](https://github.com/w3f/Grants-Program/pull/1933)
+This application is a follow up from our successful grant delivery [grant application](https://github.com/w3f/Grants-Program/blob/master/applications/Cyborg.md)
 
 Cyborg Network is developing a DePIN based marketplace for edge computing servers to help AI and IoT companies boost their performance while curbing the cloud operations cost, all without necessitating a shift from their current cloud setups. Our vision is to act as a crucial middleware on the network's edge, managing specific low-latency tasks and reduce the costs associated with cloud operations, all the while complementing existing cloud services. As a premier venture of this nature in the Polkadot landscape, our network effortlessly allows providers to integrate their machines, rewarding them for their invaluable contribution.
 
