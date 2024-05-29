@@ -137,13 +137,13 @@ Now a freelance blockchain developer, Aurora champions women's representation in
 
 - **Estimated Duration:** 3.5 months
 - **FTE:** 1.5
-- **Total Costs:** 30,000 EUR
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 - Indexing Coretime Chain with Subsquid / Functioning Indexer + Basic Visualization
 
 - **Estimated Duration:** 2 months
 - **FTE:** 2
-- **Costs:** 15,000 EUR
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -216,7 +216,7 @@ Now a freelance blockchain developer, Aurora champions women's representation in
 
 - **Estimated Duration:** 1 months
 - **FTE:** 1.5
-- **Costs:** 15,000 EUR
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
