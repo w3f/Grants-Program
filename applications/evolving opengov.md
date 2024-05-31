@@ -55,100 +55,16 @@ People, cultures and projects fit into different phases at different times.
 
 As an example, let’s try and break this down:
 
-
-<table>
-  <tr>
-   <td><strong>Phase</strong>
-   </td>
-   <td><strong>Concept</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Process</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>1a
-   </td>
-   <td>R&D
-   </td>
-   <td>Independent
-   </td>
-   <td>Researchers (individuals or groups) are inspired to follow their own interests - researching, questioning and contributing to an established or emerging subject area in ways that may benefit the wider collective.
-   </td>
-  </tr>
-  <tr>
-   <td>1b
-   </td>
-   <td>R&D
-   </td>
-   <td>Supported
-   </td>
-   <td>Independent researchers attract patrons who appreciate their efforts and seek to support their endeavours in some way. This support can be cultural (sharing output), support (non-financial) or financial (donations). Patrons ask for nothing in return.
-   </td>
-  </tr>
-  <tr>
-   <td>1c
-   </td>
-   <td>R&D
-   </td>
-   <td>Directed
-   </td>
-   <td>Independent researchers, who may or may not have patrons, are recruited by research organisations to continue their work in a more formal setting, with some oversight. Researchers are selected based on perceived alignments with an organisation’s values, mission or operations. Researchers sacrifice some independence, but gain greater support - primarily financial. They will be managed in some way, with their work assessed and valued by relevant committees. This form of R&D is most commonly found within universities, governments and highly specialised or experimental industries. For many researchers a combination of support, alongside highly prized access to proprietary resources and proximity to other researchers whose work they find interesting leads their decision making. Generally this work also maps to gaining valuable qualifications or certifications such as a phD and producing cited work in relevant publications that establishes status amongst peers.
-   </td>
-  </tr>
-  <tr>
-   <td>1d
-   </td>
-   <td>R&D
-   </td>
-   <td>Applied
-   </td>
-   <td>Researchers in the previous groups leverage their insights to make direct impact in active projects, turning theoretical concepts into applied environments, using feedback from these systems to inform the next phase of research and then into application. This feedback loop is the beginning of the productisation of theoretical research into concepts that have a path towards commercial exploitation. .
-   </td>
-  </tr>
-  <tr>
-   <td>2a
-   </td>
-   <td>Product
-   </td>
-   <td>Reference implementation
-   </td>
-   <td>When applied research crosses from theoretical to practical, often a reference implementation will be created, to see whether the idea ‘can work’ even at its most rudimentary. Vitalik created the Ethereum Whitepaper which was a research paper whilst Gavin Wood created the Yellow Paper and a reference implementation of the concept.
-   </td>
-  </tr>
-  <tr>
-   <td>2b
-   </td>
-   <td>Product
-   </td>
-   <td>Proof of concept
-   </td>
-   <td>When a reference implementation works, it becomes a proof of concept. The basic functions of a system operate as intended in an explicitly limited capacity. For outside observers without a peculiar specialisation, proof of concepts look no different from failures. It may take a number of reference implementations to reach a working proof of concept. This may also be called an Alpha release.
-   </td>
-  </tr>
-  <tr>
-   <td>2c
-   </td>
-   <td>Product
-   </td>
-   <td>Minimum Viable Product
-   </td>
-   <td>More recently startup culture has made the MVP famous. MVP’s differ from Reference Implementations and Proof of Concepts given they are an explicit attempt to kickstart some commercial demand for a product or service from a nascent market. This is where we have moved fully from open ended research and into a commercial focus. We now move away from donations and public funding into the preserve of venture capital. This may also be called a Beta release.
-   </td>
-  </tr>
-  <tr>
-   <td>3a
-   </td>
-   <td>Product
-   </td>
-   <td>Commercial venture
-   </td>
-   <td>When an MVP moves into practical application focused on a core set of paying users it becomes a commercial venture that must sustain itself and return value to those involved in the project through whatever terms have been agreed during the establishment of a company with involved parties.
-   </td>
-  </tr>
-</table>
-
+| **Phase** | **Concept** | **Type** | **Process** |
+| --- | --- | --- | --- |
+| 1a | R&D | Independent | Researchers (individuals or groups) are inspired to follow their own interests - researching, questioning and contributing to an established or emerging subject area in ways that may benefit the wider collective. |
+| 1b | R&D | Supported | Independent researchers attract patrons who appreciate their efforts and seek to support their endeavours in some way. This support can be cultural (sharing output), support (non-financial) or financial (donations). Patrons ask for nothing in return. |
+| 1c | R&D | Directed | Independent researchers, who may or may not have patrons, are recruited by research organisations to continue their work in a more formal setting, with some oversight. Researchers are selected based on perceived alignments with an organisation’s values, mission or operations. Researchers sacrifice some independence, but gain greater support - primarily financial. They will be managed in some way, with their work assessed and valued by relevant committees. This form of R&D is most commonly found within universities, governments and highly specialised or experimental industries. For many researchers a combination of support, alongside highly prized access to proprietary resources and proximity to other researchers whose work they find interesting leads their decision making. Generally this work also maps to gaining valuable qualifications or certifications such as a PhD and producing cited work in relevant publications that establishes status amongst peers. |
+| 1d | R&D | Applied | Researchers in the previous groups leverage their insights to make direct impact in active projects, turning theoretical concepts into applied environments, using feedback from these systems to inform the next phase of research and then into application. This feedback loop is the beginning of the productisation of theoretical research into concepts that have a path towards commercial exploitation. |
+| 2a | Product | Reference Implementation | When applied research crosses from theoretical to practical, often a reference implementation will be created, to see whether the idea ‘can work’ even at its most rudimentary. Vitalik created the Ethereum Whitepaper which was a research paper whilst Gavin Wood created the Yellow Paper and a reference implementation of the concept. |
+| 2b | Product | Proof of Concept | When a reference implementation works, it becomes a proof of concept. The basic functions of a system operate as intended in an explicitly limited capacity. For outside observers without a peculiar specialisation, proof of concepts look no different from failures. It may take a number of reference implementations to reach a working proof of concept. This may also be called an Alpha release. |
+| 2c | Product | Minimum Viable Product | More recently startup culture has made the MVP famous. MVPs differ from Reference Implementations and Proof of Concepts given they are an explicit attempt to kickstart some commercial demand for a product or service from a nascent market. This is where we have moved fully from open ended research and into a commercial focus. We now move away from donations and public funding into the preserve of venture capital. This may also be called a Beta release. |
+| 3a | Product | Commercial Venture | When an MVP moves into practical application focused on a core set of paying users it becomes a commercial venture that must sustain itself and return value to those involved in the project through whatever terms have been agreed during the establishment of a company with involved parties. |
 
 This initial paper aims to be the first in a series of structured documents - and will focus on a strategic foundation for incubating an innovation culture, therefore it will remain fairly high level. 
 
@@ -421,67 +337,16 @@ Previous paper on Decred.
     ❗ **The default deliverables 0a-0e below are mandatory for all milestones**.
 
 
-<table>
-  <tr>
-   <td>
-<strong>Number</strong>
-   </td>
-   <td><strong>Deliverable</strong>
-   </td>
-   <td><strong>Specification</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>0a.</strong>
-   </td>
-   <td>Copyright and Licenses
-   </td>
-   <td>CC0 / CC BY 4.0 / Apache 2.0 / GPLv3 / MIT / Unlicense
-   </td>
-  </tr>
-  <tr>
-   <td><strong>0b.</strong>
-   </td>
-   <td>Documentation/Tutorial
-   </td>
-   <td>We will provide both <strong>artifacts documentation</strong> of the deliverables and a basic <strong>tutorial</strong> that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>0c.</strong>
-   </td>
-   <td>Methodology
-   </td>
-   <td>Detailed explanation of how the results were achieved and how to reproduce/verify the results.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>0d.</strong>
-   </td>
-   <td>Infrastructure
-   </td>
-   <td>We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>0e.</strong>
-   </td>
-   <td>Article
-   </td>
-   <td>We will send an <strong>article</strong> or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.). For level 2 and 3 grants, the article must contain the following statement in an acknowledgments section: This work was supported by a research grant from the Web3 Foundation.
-   </td>
-  </tr>
-  <tr>
-   <td>1.
-   </td>
-   <td>Write paper
-   </td>
-   <td>Aggregate existing and emerging work into a single paper.
-   </td>
-  </tr>
-</table>
-
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | Copyright and Licenses | CC0 / CC BY 4.0 / Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
+| **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
+| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
+| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.). For level 2 and 3 grants, the article must contain the following statement in an acknowledgments section:  This work was supported by a research grant from the Web3 Foundation.  |
+| 1. | Consolidate information | Aggregate existing research |
+| 2. | Structure document | Outline the structure of the paper |
+| 3. | Complete paper | Bring together the research into the paper |
 
 ## **Future Plans**
 
