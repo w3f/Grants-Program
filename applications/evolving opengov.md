@@ -379,10 +379,10 @@ Links to relevant work
 [Polkadot forum](https://forum.polkadot.network/u/rich/summary) (all posts).
 
 
-    [The State of DotSama](https://forum.polkadot.network/t/the-state-of-dotsama/676)
+[The State of DotSama](https://forum.polkadot.network/t/the-state-of-dotsama/676)
 
 
-    [Kabocha parachain](https://forum.polkadot.network/t/introducing-kabocha-an-experimental-kusama-parachain-incubated-by-the-edgeware-community/327)
+[Kabocha parachain](https://forum.polkadot.network/t/introducing-kabocha-an-experimental-kusama-parachain-incubated-by-the-edgeware-community/327)
 
 On-chain proposals:
 
