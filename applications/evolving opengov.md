@@ -1,10 +1,5 @@
 # **Evolving OpenGov**
 
-
-    See the[ Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
-
-
 * **Team Name:** Decent Partners Ltd
 * **Payment Address:** 14MY5bH76Yxi8s3Ujgpgehh7aadfyKL4eW98gZgXYDZGgpLX (USDC)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
