@@ -51,7 +51,7 @@ module.exports = {
           type: 'doc',
           docId: 'docs/introduction',
           position: 'right',
-          label: 'Introduction',
+          label: 'Docs',
         },
         {
           type: 'doc',
