@@ -142,7 +142,7 @@ Personal
 
 ### Team LinkedIn Profiles (if available)
 
-- <https://www.linkedin.com/in/tatiqa/>
+- <https://www.linkedin.com/in/taqtiqa/>
 
 #### Scope of the Project
 
