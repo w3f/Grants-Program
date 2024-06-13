@@ -98,6 +98,8 @@ The technological landscape sees a plethora of competitors, each carving their n
 
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - She has been involved in operations for Web3 projects and has taken initiatives in the blockchain community. One of her contributions is the establishment of [Indi Verse DAO](https://www.linkedin.com/company/indi-verse-dao), a web 3.0 community in India. Additionally, she is the candidate of the Polkadot Ambassador Program. She is also a graduate from the Polkadot Blockchain Academy's Founders Track at Hong Kong (Jan - Feb 2024)
   
+- [Calvin Sze](https://www.linkedin.com/in/calvin-sze/) - Full Stack Blockchain Developer with 5 plus years of experience in blockchain development. He is a PBA alumni from Berkeley.
+
 - [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Aspiring Rust systems engineer who is also a PBA alumni from Developer Track at Berkeley Cohort.
 
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) (Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
@@ -108,19 +110,22 @@ Project GitHub repositories.
 
 - https://github.com/Cyborg-Network - Organization
 - https://github.com/Cyborg-Network/cyborg-chain
+- https://github.com/Cyborg-Network/cyborg-connect
 - https://github.com/Cyborg-Network/Worker
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
 - https://github.com/beekay2706
+- https://github.com/ZCalz
 - https://github.com/dheeraj07
 - https://github.com/Megha2712
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/barath-kanna-23a23a172 
+- https://www.linkedin.com/in/barath-kanna
+- https://www.linkedin.com/in/megha-varshini-t
+- https://www.linkedin.com/in/calvin-sze/
 - https://www.linkedin.com/in/kresna-sucandra
-- https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212
 
 ## Development Status :open_book:
 
