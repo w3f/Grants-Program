@@ -244,7 +244,7 @@ In `Milestone 3`, we are going to implement `wallet` which provides the user to 
   - Announcement by another team
 - Work you have already done.
   - [plonk pallet](https://github.com/PlasmNetwork/plonk)
-- Wheter there are any other teams who have already contributed (financially) to the project.
+- Whether there are any other teams who have already contributed (financially) to the project.
   - No.
 - Previous grants you may have applied for.
   - [zk-rollup](https://github.com/w3f/Grants-Program/blob/master/applications/zk-rollups.md)

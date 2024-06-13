@@ -182,7 +182,7 @@ In `Milestone 2`, we are going to implement [Nova folding scheme](https://eprint
     - [pallet-encrypted-balance](https://github.com/KogarashiNetwork/Kogarashi/tree/master/pallets/encrypted_balance)
     - [pallet-confidential-transfer](https://github.com/KogarashiNetwork/Kogarashi/tree/master/pallets/confidential_transfer)
     - [above documentation](https://zero-network.github.io/zero/)
-- Wheter there are any other teams who have already contributed (financially) to the project.
+- Whether there are any other teams who have already contributed (financially) to the project.
   - No.
 - Previous grants you may have applied for.
   - [zk-rollup](https://github.com/w3f/Grants-Program/blob/master/applications/zk-rollups.md)

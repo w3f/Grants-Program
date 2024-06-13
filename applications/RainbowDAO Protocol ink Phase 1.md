@@ -717,7 +717,7 @@ For the second milestone, we focused on the development of DAO factory contract 
 
 Through the official website of the Web3 Foundation.
 
-- Wheter there are any other teams who have already contributed (financially) to the project.
+- Whether there are any other teams who have already contributed (financially) to the project.
 
 This project is independently developed by our team.
 

@@ -228,7 +228,7 @@ We are following a grant-matching processes to spread the risk among different c
 
 Research social network metrics that are viable to measure the health of a community on Twitter, and how they integrate with our existing community health framework. This will build on our existing framework, extending it to metrics that have been tested and used in Twitter communities. For example, we will look into approaches to build the network, virality and clustering/fragmentation of very large online communities. 
 
-Note: We have done an evaluation to decide wheter Reddit or Twitter would be a better option. In the discussion we had with other communities, we were more often asked about an integration with Twitter than with Reddit. Hence, from a scaling perspective, we decided that focusing first on Twitter makes more sense with us.
+Note: We have done an evaluation to decide whether Reddit or Twitter would be a better option. In the discussion we had with other communities, we were more often asked about an integration with Twitter than with Reddit. Hence, from a scaling perspective, we decided that focusing first on Twitter makes more sense with us.
 
 That being said, we realize that Twitter is undergoing a lot of changes, and we might have to do a last minute pivot to another platform. We are building our analytical scripts in such a way that they can easily be used for other platforms. Therefore, the only thing that has to be changed in the milestones is the name of the platform. 
 

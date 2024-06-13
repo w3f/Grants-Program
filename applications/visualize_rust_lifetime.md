@@ -224,7 +224,7 @@ We applied the bug detection component of the prototype to Substrate, Polkadot, 
 
 [PR-3] https://github.com/paritytech/parity-common/pull/396
 
-- Wheter there are any other teams who have already contributed (financially) to the project.
+- Whether there are any other teams who have already contributed (financially) to the project.
 
 No
 

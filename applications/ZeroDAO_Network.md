@@ -236,7 +236,7 @@ We currently have a [light white paper](https://pic.tom24h.com/zerodao/ZeroDAOLi
 
 **How did you hear about the Grants Program?**  Announcement by another team.
 
-- Wheter there are any other teams who have already contributed (financially) to the project.
+- Whether there are any other teams who have already contributed (financially) to the project.
   - No
 - Previous grants you may have applied for.
   - No
