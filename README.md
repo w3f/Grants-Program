@@ -21,8 +21,7 @@
 - [:moneybag: Referral Program](#moneybag-referral-program)
 - [:bulb: Help](#bulb-help)
   - [Real-time Conversation](#real-time-conversation)
-  - [Office Hours](#office-hours)
-  - [Additional Information](#additional-information)
+  - [Ecosystem Funding Office Hours](#ecosystem-funding-office-hours)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury vs Web3 Grants](#treasury-vs-web3-grants)
   - [Treasury](#treasury)
@@ -233,31 +232,21 @@ We also have Matrix/Element channels for real-time discussions on Web3 and Polka
 - [Polkadot Space](https://matrix.to/#/#polkadot:web3.foundation)
 - [Kusama Space](https://matrix.to/#/#kusama:web3.foundation)
 
-### Office Hours
+### Ecosystem Funding Office Hours
 
-Web3 Foundation Grants Office Hours are a chance to ask the grants team questions regarding a specific (potential) grant application. It offers
+Ecosystem Funding Office Hours are a chance to ask the W3F Ecosystem Funding team questions regarding a specific project or (potential) grant application. It offers
 
-- general guidance regarding the grants program,
+- general guidance regarding the various grants programs and prizes,
 - some quick initial feedback and
 - help how to navigate the ecosystem.
 
 Apply for Office Hours if you
 
-- need feedback before submitting an application,
-- want to find out what kind of support there might be available or
-- need help finding the resources you need.
+- want to find out what kind of support there might be available for your needs,
+- need feedback before submitting an application or
+- look for help finding other resources you might need.
 
-It is **not** a chance to pitch your project, especially since only a small subset of the committee will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
-
-### Additional Information
-
-<div align="center">
-
-| <img src="static/img/Web.svg?s=50" width="50"></img> | <img src="static/img/Twitter.svg?s=50" width="50"></img> | <img src="static/img/Learn.svg?s=50" width="50"></img> | <img src="static/img/Wiki.svg?s=50" width="50"></img> | <img src="static/img/Youtube.svg?s=50" width="50"></img> |
-| :-: | :-: | :-: | :-: | :-: |
-| [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
-
-</div>
+It is **not** a chance to _pitch_ your project, especially since only the various programs and prizes have different evaluation criteria and decision makers and only a small subset of the Grants team will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
 
 
 ## :rocket: Alternative Funding Sources
@@ -308,21 +297,14 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 
 - [Acala Grants Program](https://acala.network/ecosystem-program)
 - [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program)
-- [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
-- [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Decentralized Futures Program](https://futures.web3.foundation/) 
-- [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
-- [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
-- [KodaDot Ecosystem Grants](https://github.com/kodadot/grants)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
-- [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/)
-- [Picasso / Composable Grants Program](https://docs.composable.finance/ecosystem/composable-grants/)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)

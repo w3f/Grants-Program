@@ -10,7 +10,7 @@ If you want to apply in **private**, you can do so [:arrow_right: here](https://
 
 :::info
 
-30% of each milestone payment is made in DOT (linearly vesting over 2 years). The remaining 70% is paid in_either_ USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) _or_ fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L8). 
+30% of each milestone payment is made in DOT (linearly vesting over 2 years). The remaining 70% is paid in _either_ USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) _or_ fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L8). 
 :::
 
 

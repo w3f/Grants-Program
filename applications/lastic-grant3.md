@@ -1,7 +1,7 @@
 # Lastic - Grant 3 - Indexing Coretime Chain with Subsquid and Graph Implementation
 
 - **Team Name:** Lastic
-- **Payment Address:** 16Jbt5zru6XdUx1jYRV8AZtGk76ujtUNdd1UVWVVkVvGZ31L (USDT)
+- **Payment Address:** Fiat (EUR)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -46,18 +46,17 @@ For this grant, we will concentrate on the following key areas:
 
 - Phil Lucsok (aka Asynchronous Phil)
 - Aurora Makovac (aka Aurora Poppyseed)
-- Pierina Ponce
 
 ### Contact
 
-- **Contact Name:** Phil Lucsok, Aurora Poppyseed, Pierina Ponce
-- **Contact Email:** plucsok@gmail.coml, aurora.makovac@gmail.com, pierinaponce1993@gmail.com
+- **Contact Name:** Phil Lucsok, Aurora Poppyseed
+- **Contact Email:** plucsok@gmail.coml, aurora.makovac@gmail.com
 - **Website:** [lastic.xyz](https://www.lastic.xyz/)
 
 ### Legal Structure
 
 - **Registered Address:** Private
-- **Registered Legal Entity:** In progress
+- **Registered Legal Entity:** Private
 
 ### Team's experience
 
@@ -89,22 +88,6 @@ In the realm of community engagement and organization, Aurora co-organized the [
 Now a freelance blockchain developer, Aurora champions women's representation in Polkadot and ardently supports community-driven blockchain initiatives.
 
 *Note: Aurora Poppyseed has previously applied at the Web3 Foundation and has successfully completed Lastic Grant 1. and 2. *
-
-### **Pierina Ponce**:
-
-In the dynamic landscape of technology, Pierina Ponce emerges as a versatile force, seamlessly transitioning from a background in health informatics to a burgeoning career in blockchain development.
-
-Pierina's academic journey commenced with a foundation in medicine, culminating in 2018. The pivotal moment occurred during her master's degree in health informatics from 2020 to 2022, where she discovered a profound interest in technology and programming. Eager to explore this newfound passion, Pierina took the leap and enrolled in the computer science program at the Universidad de Palermo in Buenos Aires.
-
-The year 2023 marked Pierina's initiation into the world of blockchain. Driven by a curiosity to delve deeper into this transformative technology, she sought knowledge and practical skills through the [Polkadot Blockchain Academy](https://polkadot.network/development/blockchain-academy/) at UC Berkeley. The immersive experience equipped her with the fundamentals of blockchain, setting the stage for her journey into the vibrant blockchain ecosystem.
-
-Pierina's enthusiasm for blockchain manifested in her active participation in hackathons. Notably, she contributed to the success of the [Women of Polkadot](https://twitter.com/WomenOfPolkadot) team in the encode ink! hackathon, where they secured victory by implementing a groundbreaking PSP34 smart contract. This achievement not only showcased her technical acumen but also underscored her commitment to fostering diversity and inclusion within the blockchain community.
-
-Currently employed as a data professional at [Ixpantia](https://www.linkedin.com/company/ixpantia/), a consulting Costa Rican business specializing in data science and data engineering projects, Pierina has become a catalyst for community growth. 
-Pierina's unique trajectory blends her expertise in health informatics with her burgeoning skills in blockchain development. As a data professional, she brings a valuable perspective to the intersection of technology and healthcare, embodying the spirit of a true interdisciplinary innovator.
-
-*Note: Pierina Ponce has previously applied at the Web3 Foundation and has successfully completed Lastic Grant 2.*
-
 ---
 
 ### Team's Repository & Online Presence
@@ -160,7 +143,7 @@ Pierina's unique trajectory blends her expertise in health informatics with her 
 
 - **Estimated Duration:** 2 months
 - **FTE:** 2
-- **Costs:** 18,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -169,16 +152,13 @@ Pierina's unique trajectory blends her expertise in health informatics with her 
 | **0c.** | Error Logging | Implementation of error logging mechanisms. In the event of an error, the application will record detailed error information to an event viewer or log file for diagnostics and troubleshooting. |
 | **0d.** | Article Publishing | Publication of an article elaborating on Lastic's current development. |
 | **0e.** | Dockerfile | Dockerfile that allows for you to set up an indexer |
-| **1.** | A functioning indexer that provides accurate and efficient data retrieval of the `broker pallet events, extrinsics and constants on the Coretime Parachain. | Consists of steps 1a. - 1e. Note 1: 1e. is conditional on the broker pallet being configured and deployed on Roccoco by January 20th. Note 2: storage will not be indexed directly since it doesn't allow for cost effective retrieval of data, other methods such as indexing the `broker pallet events and calls are better for that. |
-| **1a.** | Set up and configuration of Subsquid with running the substrate chain locally | Setup and configuration of Subsquid with the locally running substrate node that contains the `broker pallet` that will be on the Coretime Chain and starting the indexing process |
+| **1.** | A functioning indexer that provides accurate and efficient data retrieval of the `broker pallet events and extrinsics on the Coretime Parachain. | Consists of steps 1a. - 1c. Note 2: storage will not be indexed directly since it doesn't allow for cost effective retrieval of data, other methods such as indexing the `broker pallet events and calls are better for that. |
+| **1a.** | Set up and configuration of Subsquid with Roccoco | Setup and configuration of Subsquid with Roccoco and indexing it. |
 | **1b.** | The `broker pallet` is able to index all events in that are present in the `broker pallet` | Check list of such events in section #1b. List of all events in `broker pallet` |
-| **1c.** | The `broker pallet` is able to index all events in that are present in the `broker pallet` | Check list of such events in section #1c. List of all calls in `broker pallet` |
-| **1d.** | The `broker pallet` is able to index all events in that are present in the `broker pallet` | Check list of such events in section #1d. List of all events in `broker pallet` |
-| **1e.** | Set up and configuration of Subsquid with Roccoco | Setup and configuration of Subsquid with Roccoco and indexing it. |
-| **2.** | Indexer on the Roccoco Relay Chain | A functioning indexer that provides accurate and efficient data retrieval of the events, extrinsics and constants on the Relay Chain, that are related to the Coretime parachain. Events and Calls are listed in 2a. and 2b. The events listed will be most likely subject to change. |
-| **3.** | Connecting the indexer with the frontend | Creating an SDK that will generate GraphQL calls for the frontend to call. |
-| **4.** | Connecting SDK extrinsic features with the SDK + frontend | Integrating the extrinsics with which you are able to interact into the SDK and then within the frontend. |
-| **5.** | Visualization of bulk coretime prices over time | A very crude visualization of bulk coretime price trends over time.. |
+| **1c.** | The `broker pallet` is able to index all calls in that are present in the `broker pallet` | Check list of such events in section #1c. List of all calls in `broker pallet` |
+| **2.** | Connecting the indexer with the frontend | Creating an SDK that will generate GraphQL calls for the frontend to call. |
+| **3.** | Connecting SDK extrinsic features with the SDK + frontend | Integrating the extrinsics with which you are able to interact into the SDK and then within the frontend. |
+| **4.** | Visualization of bulk coretime prices over time | A very crude visualization of bulk coretime price trends over time.. |
 
 #### 1b. List of all `broker pallet` events on Coretime Chain:
     TransferEvent,
@@ -232,42 +212,11 @@ Pierina's unique trajectory blends her expertise in health informatics with her 
     DropRenewalCall,
     RequestCoreCountCall
 
-#### 1d. List of all `broker pallet` constants on Coretime Chain:
-    palletId,
-    timeslicePeriod,
-    maxLeasedCores,
-    maxReservedCores
-
-### 2a. List of all events related to the Coretime chain - on the Roccoco relay chain:
-onDemandAssignmnetProvider:
-
-    paraIdAffinity
-    onDemandQueue
-    palletVersion
-    spotTraffic
-    
-coretimeAssignmentProvider
-
-    coreDescriptions
-    coreSchedules
-    palletVersion
-
-### 2b. List of all calls related to the Coretime Chain - on the Roccoco relay chain:
-onDemandAssignmnetProvider
-
-    placeOrderAllowDeath
-    placeOrderKeepAlive
-    
-coretime
-
-    assignCore
-    requestCoreCount
-
 ### Milestone 2 - Visualizations + Added Interactivity
 
 - **Estimated Duration:** 1 months
 - **FTE:** 1.5
-- **Costs:** 12,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -275,20 +224,19 @@ coretime
 | **0b.** | Documentation | Comprehensive documentation will be provided, including inline code comments for clarity. This will be complemented by a detailed guide on [Lastic's Docs](https://docs.lastic.xyz/), covering usage, configurations, and setup procedures. |
 | **0c.** | Error Logging | Implementation of error logging mechanisms. In the event of an error, the application will record detailed error information to an event viewer or log file for diagnostics and troubleshooting. |
 | **0d.** | Article Publishing | Publication of an article elaborating on Lastic's current development. |
-| **1.** | Subscan Visualizations | Development of visualizations for Polkadot and Kusama. This includes auction history, a timer view of the auction process, a list of all connected parachains and parathreads, and detailed information on different PARA IDs. Includes steps 1a. - 1d. |
+| **1.** | Functional Visualizations | Development of visualizations for Polkadot and Kusama. This includes auction history, a timer view of the auction process, a list of all connected parachains and parathreads, and detailed information on different PARA IDs. Includes steps 1a. - 1d. |
 | **1a.** | Auction History | Includes visualizations and a list detailing the teams who won the slot over time, the duration of that slot, and other relevant information. |
-| **1b.** | Timer View | A visualization showing the current status and timeline of ongoing auctions. |
+| **1b.** | Timer View | A visualization showing the current status and timeline of ongoing sales of coretime. |
 | **1c.** | Parachain Connectivity | List and visualization of all connected parachains, parathreads, and registered PARA IDs. |
 | **1d.** | PARA ID Details | Information on which PARA ID is connected to which parachain. |
-| **2.** | Figma Designs in Code | Implementing Figma designs into functional code for various features such as personal wallet/address page, core-specific pages, the core buying process, and network selection. |
+| **2.** | Functional code for various features | Implement functional code for various features such as personal wallet/address page, core-specific pages, the core buying process, and network selection. |
 | **2a.** | Personal Wallet/Address Page | Development of the user interface for personal wallet or address management. |
 | **2b.** | Core Page | Interface specific to individual cores, detailing core-specific information. |
 | **2c.** | Core Buying Process | User interface for the process of purchasing cores. |
-| **2d.** | Network Selection | Feature to choose between different networks like Roccoco, Kusama, and Polkadot. |
 | **3.** | Additional Features | Implementation of extra functionalities such as the teleport asset feature and creation of a foldable sidebar. |
 | **3a.** | Teleport Asset Functionality | Enabling users to teleport assets within the platform. |
 | **3b.** | Foldable Sidebar | Development of a user-friendly, foldable sidebar for better navigation. |
-| **3c.** | Connect to Different Networks | Feature allowing users to switch between different blockchain networks seamlessly. |
+| **3c.** | Connect to Different Networks | Feature allowing users to switch between different blockchain networks seamlessly. Feature to choose between different networks like Roccoco, Kusama, and Polkadot. |
 
 ## Additional Information :heavy_plus_sign:
 
