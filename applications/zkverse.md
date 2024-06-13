@@ -3,6 +3,7 @@
 - **Team Name:** Zkverse
 - **Payment Address:** 0x8554fff69177C2cf470fA276b0C65dB58b5EfEE5(DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1563#issuecomment-2118322126)
 
 ## Project Overview :page_facing_up:
 
