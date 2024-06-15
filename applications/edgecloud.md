@@ -1,4 +1,4 @@
-# Cyborg Network - Empowering Decentralized Edge Networks
+# Cyborg Network - Empowering Distributed Edge Networks
 
 - **Team Name:** Cyborg Network
 - **Payment Address:** 12Enn321pZSZkNtBwsTRxxZTKS9DsGpk8PTkZsnsMjTzrtFa (AssetHub USDT) 
@@ -16,6 +16,8 @@ This application is a follow up from our successful grant delivery [grant applic
 Cyborg Network is developing a DePIN based marketplace for edge computing servers to help AI and IoT companies boost their performance while curbing the cloud operations cost, all without necessitating a shift from their current cloud setups. Our vision is to act as a crucial middleware on the network's edge, managing specific low-latency tasks and reduce the costs associated with cloud operations, all the while complementing existing cloud services. As a premier venture of this nature in the Polkadot landscape, our network effortlessly allows providers to integrate their machines, rewarding them for their invaluable contribution.
 
 We establish connections with small to medium-sized data centers to address the demands of enterprise-level clients, ensuring that their requirements are fully met. Our primary emphasis lies in delivering tailored service packages, meticulously designed for diverse deployment scenarios. Our overarching goal is to provide users with a service experience reminiscent of the Web 2.0 era.
+
+We will also a be launching a line of pre-configured edge server range from [simply NUC](https://simplynuc.com/), who will be our hardware partner.
 
 We are embarking on an ambitious mission to establish ourselves as a Polkadot and Kusama parachain. Our decision is anchored in several key reasons:
 
