@@ -185,6 +185,27 @@ the grant delivery will have 2 distinct parts split into three milestones
 | 5. | Worker K8S Operator | The k8s worker acts as a trusted controller. It securely stores deployment states, including manifests and defined secrets. Based on the manifests, the Worker uses remote attestation to authenticate the task exceution process.|
 | 6. | Worker logs | The execution logs of the deployed container to serve as a proof of work. |
 
+### Milestone 2 - Task Distribution system - 1
+
+- **Estimated duration:** 2 months
+- **FTE:**  4
+- **Costs:** 10,000 USD
+
+#### **Deliverables:**
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can (for example) deploy docker images using our interface. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Working Demo | We will provide video documentation to help developers understand the process of deploying containered tasks.|
+| 2. | Task Examples | We will provide example containers and data sets to help programmers understand and execute batch processes.|
+| 3. | Substrate Module: Payments | This pallet will be responsible for estimating the costs for executing a task based on server specifications and time. |
+| 4. | Front end App: Cyborg Connect | The UI for accessing the features with a substrate wallet address |
+| 5. | Worker K8S Operator | The k8s worker acts as a trusted controller. It securely stores deployment states, including manifests and defined secrets. Based on the manifests, the Worker uses remote attestation to authenticate the task exceution process.|
+| 6. | Worker logs | The execution logs of the deployed container to serve as a proof of work. |
+
 ## Future Plans
 
 - **Short term plans:** We intend to use the grant to develop the core functionality of Cyborg Network and also be encouraged to develop this product further to an MVP that can address latency issues in applications that work on real time data processing.
