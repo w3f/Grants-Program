@@ -25,7 +25,7 @@ We will also be launching a line of pre-configured edge servers in partnership w
 
 We are on a mission to establish Cyborg Network as a Polkadot parachain. Our decision is anchored in several key reasons:
 
-First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem. We have already initiated talks with a few ecosystem teams like [Peaq](https://www.peaq.network/), [Tanssi](https://www.tanssi.network/), [Oak Network](https://oak.tech/) for potential integrations
+First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem. We have already initiated talks with a few ecosystem teams like [Peaq](https://www.peaq.network/), [Tanssi](https://www.tanssi.network/), [Ava Protocol](https://avaprotocol.org/) for potential integrations
 
 Second, the unparalleled ecosystem and technical support provided by Polkadot and Kusama have been instrumental in our development, and we've had the privilege of closely collaborating with them over the years.
 
@@ -55,21 +55,21 @@ Developers can monitor details such as resource utilization and application heal
 
 ### Task Distribution System
 
-For this grant application, we are developing a decentralized task distribution system to incorporate an on-chain load balancing system for containerized tasks executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), an Oracle, and a testing suite.
+For this grant application, We will improvise our previous submission to make it live on Rococo and then proceed with developing a decentralized task distribution system to incorporate an on-chain load balancing system for containerized tasks executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), an Oracle, and a testing suite.
 
-![Screenshot 2024-02-15 at 1 09 56 PM](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/add65d92-0bf6-40df-a3fb-715fc0efce54)
+The objective is to deploy a multi-container Docker application into our K3s cluster and manage task distribution across various worker nodes in different geographical locations based on user requirements. The Substrate blockchain will establish secure communication with the K3s master node to issue commands for load balancing and task distribution.
 
-The objective is to upload a Docker configuration file and deploy the container inside one of the worker nodes of the K3s cluster. Before deploying the user's Docker image, the system will run a simulation to check for compilation failures or any startup runtime issues. If there are none, we will then proceed with the deployment.
+We will define a new Substrate node configuration for the Cyborg worker nodes, which users can rent on demand from the pool of available worker nodes.
 
-Deployment will follow this pattern: The system will submit the job to 'N' clusters, with 'N' being selectable by the user. However, we will set a minimum value for 'N' to ensure a baseline of accuracy and high fault tolerance. Users can increase the value of 'N' if they desire greater accuracy and fault tolerance. Among the chosen 'N' clusters, 40-50% will be highly trusted nodes, with the remainder being general/new nodes. This strategy ensures that customers receive a valid output. Despite this, the executed computation results will be pushed to the Oracle, which will then feed it to the Cyborg substrate chain. Subsequently, if the baseline accuracy is achieved, the result will be added to the block, and if the output does not match or there are deployment failures, the system will attempt to re-execute the job from the beginning, with a maximum of 'X' retries. The value of 'X' will be adjusted based on the cost calculations for each execution, which are yet to be determined. If the job continues to fail even after 'X' retries, the system will notify the user of the failure by providing detailed logs and request them to assess the reason for the failure. In case of deployment failures, we will assess whether the issue is due to missed edge cases, configuration issues, network instability, or hardware limitations. Based on this assessment, the system will reassign the job to different workers
+The system will initially consist of 1 master node and 1 worker node. The application will run on the worker node initially, and users can add additional worker nodes in different locations as needed. Users will update YAML files on each server based on their requirements. The system will provide logs and usage metrics to users for monitoring and optimization purposes.
 
 ### Ecosystem Fit
 
-Cyborg Network augments the Polkadot ecosystem by ushering in decentralized edge computing, crucial for the growing demand of AI and IoT applications. By primarily catering to Web2 application providers, we're paving the way for a fresh wave of users to engage with the Polkadot ecosystem, fueling its expansion.
+Cyborg Network enhances the Polkadot ecosystem with decentralized edge computing, addressing the increasing demand for AI and IoT applications. We focus on Web2 application providers, opening doors for new users to join the Polkadot ecosystem and support its growth.We are also integrating enterprises that operate edge data centers into the Polkadot ecosystem. Some of our potential partners include [Edge Centres](https://edgecentres.com/), [Deep Green](https://deepgreen.energy/) , [Heata](https://www.heata.co/) etc.
 
 Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala Network provides off-chain compute infrastructure for smart contract-based applications by enabling users to integrate 'phat' contracts with their existing smart contract logic. While Cyborg is focused on creating utility for web2 applications.
 
-Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture utilizing TEEs to safeguard user privacy. However, their specific market focus is currently untraceable. We are developing products for a validated market that has already attracted interest from various AI applications and 50 small data center providers to join the network once it goes live.
+Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture utilizing TEEs to safeguard user privacy. However, their specific market focus is currently untraceable. We are developing products for a validated market that has already attracted interest from various AI applications and 50 edge data center providers to join the network once it goes live.
 
 ![Write here](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/a09109d1-e8f7-4ae5-8f4c-2eafc4b6ef6a)
 
