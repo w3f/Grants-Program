@@ -119,14 +119,14 @@ Project GitHub repositories.
 - https://github.com/Cyborg-Network/cyborg-connect
 - https://github.com/Cyborg-Network/Worker
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+Team Github Handles.
 
 - https://github.com/beekay2706
 - https://github.com/ZCalz
 - https://github.com/dheeraj07
 - https://github.com/Megha2712
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
 - https://www.linkedin.com/in/barath-kanna
 - https://www.linkedin.com/in/megha-varshini-t
