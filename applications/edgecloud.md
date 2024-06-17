@@ -39,7 +39,7 @@ The core of our computing solution relies on both off-chain components and subst
 
 Cyborg is a fusion of a blockchain network and numerous computing clusters, collaborating to offer an effective decentralized solution for verifiable off-chain computing.
 
-Our initial technological goal is to develop a system capable of validating computational outcomes from one off-chain cluster by re-executing them in another using pallet logic.
+Our current goal is to leverage the potential of Substrate to enable coherence among geographically isolated worker nodes. This will create a blockchain-governed task distribution system based on load in different locations globally.
 
 ![photo_2024-02-14_23-43-17](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/d50e7582-8f0f-461a-8668-10a828089404)
 
@@ -53,9 +53,9 @@ Developers can monitor details such as resource utilization and application heal
 
 ![dashboard](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/90f160c6-5cef-408b-8db2-c3e550fdb6a8)
 
-### Work Verification System
+### Task Distribution System
 
-For this grant application, we are developing a decentralized task verification mechanism to incorporate an on-chain validation system for containerized tasks executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), an Oracle, and a testing suite.
+For this grant application, we are developing a decentralized task distribution system to incorporate an on-chain load balancing system for containerized tasks executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), an Oracle, and a testing suite.
 
 ![Screenshot 2024-02-15 at 1 09 56 PM](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/add65d92-0bf6-40df-a3fb-715fc0efce54)
 
