@@ -155,19 +155,20 @@ the grant delivery will have 2 distinct parts split into three milestones
 2. Development of EdgeCloud:
 
 * Create a functional system capable of managing one application across geographically isolated servers.
+* Cyborg Worker Node defintion and Configuration.
 * Implement efficient task and load distribution with low latency.
 
 ### Overview
 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):** 2 ( 1 Full time Developers at 1 FTE/month and 2 part time developers each at 0.5 FTE/month)
-- **Total Costs:** 10,000 USD
+- **Total Costs:** 29,000 USD
 
-### Milestone 1 - Task Verification System
+### Milestone 1 - Cyborg Testnet Launch
 
 - **Estimated duration:** 2 months
 - **FTE:**  4
-- **Costs:** 10,000 USD
+- **Costs:** 9,000 USD
 
 #### **Deliverables:**
 
@@ -178,10 +179,10 @@ the grant delivery will have 2 distinct parts split into three milestones
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Working Demo | We will provide video documentation to help developers understand the process of deploying containered tasks.|
-| 2. | Task Examples | We will provide example containers and data sets to help programmers understand and execute batch processes. Currently we provide Examples for Docker, Bash, Terraform etc.. |
-| 3. | Substrate Module: Verification | This pallet will be responsible for assign the task to a secondary cluster for result verification. Once verifed the accepted result will be added to the block. |
-| 4. | Substrate Module: Edge Connect| This pallet will posses the logic for schedluing tasks to a specific cluster that matches the required specifications|
-| 5. | Worker K8S Operator | The k8s worker acts as a trusted controller. It securely stores deployment states, including manifests and defined secrets. Based on the manifests, the Worker uses remote attestation to authenticate the task exceution process.. |
+| 2. | Task Examples | We will provide example containers and data sets to help programmers understand and execute batch processes.|
+| 3. | Substrate Module: Payments | This pallet will be responsible for estimating the costs for executing a task based on server specifications and time. |
+| 4. | Front end App: Cyborg Connect | The UI for accessing the features with a substrate wallet address |
+| 5. | Worker K8S Operator | The k8s worker acts as a trusted controller. It securely stores deployment states, including manifests and defined secrets. Based on the manifests, the Worker uses remote attestation to authenticate the task exceution process.|
 | 6. | Worker logs | The execution logs of the deployed container to serve as a proof of work. |
 
 ## Future Plans
