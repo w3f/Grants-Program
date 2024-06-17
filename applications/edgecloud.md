@@ -200,6 +200,7 @@ the grant delivery will have 2 distinct parts split into three milestones
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can (for example) deploy apps using yaml files through our interface |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| **0e.** | Article | We will publish an article texplaining how to deploy containered apps and batch processses |
 | 1. | Working Demo | We will provide video documentation to help developers understand the process of deploying apps across different edge servers.|
 | 2. | Task Examples | We will provide sample apps and data sets to help programmers understand and execute apps across various locations.|
 | 3. | Substrate Module: Payments | This pallet will be responsible for estimating the costs for executing a task based on server specifications and time. |
