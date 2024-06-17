@@ -1,4 +1,4 @@
-# Cyborg Network - Empowering Distributed Edge Networks
+# EdgeCloud - Distribute AI Workloads Globally with Ease
 
 - **Team Name:** Cyborg Network
 - **Payment Address:** 12Enn321pZSZkNtBwsTRxxZTKS9DsGpk8PTkZsnsMjTzrtFa (AssetHub USDT) 
@@ -13,13 +13,17 @@
 
 This application is a follow up from our successful grant delivery [grant application](https://github.com/w3f/Grants-Program/blob/master/applications/Cyborg.md)
 
-Cyborg Network is developing a DePIN based marketplace for edge computing servers to help AI and IoT companies boost their performance while curbing the cloud operations cost, all without necessitating a shift from their current cloud setups. Our vision is to act as a crucial middleware on the network's edge, managing specific low-latency tasks and reduce the costs associated with cloud operations, all the while complementing existing cloud services. As a premier venture of this nature in the Polkadot landscape, our network effortlessly allows providers to integrate their machines, rewarding them for their invaluable contribution.
+Cyborg Network is developing a DePIN-based marketplace for edge computing servers to help latency-dependent applications scale globally with ease. Users can offload specific low-latency workloads to edge locations while keeping their main deployment in the cloud. Our vision is to act as a crucial middleware on the network's edge, managing these tasks to reduce cloud operation costs while complementing existing cloud services. Since our business focus is enterprise-driven, we prioritize onboarding infrastructure providers who can comply with regulations like SLAs and data privacy laws.
 
 We establish connections with small to medium-sized data centers to address the demands of enterprise-level clients, ensuring that their requirements are fully met. Our primary emphasis lies in delivering tailored service packages, meticulously designed for diverse deployment scenarios. Our overarching goal is to provide users with a service experience reminiscent of the Web 2.0 era.
 
-We will also a be launching a line of pre-configured edge server range from [simply NUC](https://simplynuc.com/), who will be our hardware partner.
+As part of our previous application, we delivered CyberDock, a product line focused on helping users deploy dockerized containers into our edge server network. We are now focusing on expanding this approach to a new product line called EdgeCloud, which will enable AI apps to distribute workloads based on performance requirements.
 
-We are embarking on an ambitious mission to establish ourselves as a Polkadot and Kusama parachain. Our decision is anchored in several key reasons:
+A real-time application for EdgeCloud can be found in our [Edge Computing Case Study Draft](https://docs.google.com/document/d/1Dv7xsiFeFKk4Z3_N0cOPn_pMkXtxraCZlygVMO7PdqM/edit?usp=drive_link), which also highlights the significance of the solution.
+
+We will also be launching a line of pre-configured edge servers in partnership with [Simply NUC](https://simplynuc.com/), our hardware partner. Interested community members in high-demand locations will have the opportunity to purchase and operate these servers either in a co-location data center (recommended) or in their private facility (beta). They will be incentivized based on uptime guarantees and the work contributed to the network, similar to mining in PoW chains.
+
+We are on a mission to establish Cyborg Network as a Polkadot parachain. Our decision is anchored in several key reasons:
 
 First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem. We have already initiated talks with a few ecosystem teams like [Peaq](https://www.peaq.network/), [Tanssi](https://www.tanssi.network/), [Oak Network](https://oak.tech/) for potential integrations
 
