@@ -135,14 +135,13 @@ Team Github Handles.
 
 ## Development Status :open_book:
 
-We initially developed a Rust WebSocket client with a low-key profile, ensuring a seamless connection with our blockchain through off-chain workers. Additionally, we created a proof of concept based on this client. Our initial plan was to proceed with this development. However, based on the recommendation from the W3F grants team during our [previous application](https://github.com/w3f/Grants-Program/pull/1933) to eliminate centralized entities from our architecture and establish a fully decentralized system from the ground up, we embarked on several research iterations.
+We completed development of an on-chain task verification system under CyberDock as a part of our previous grant application, it contained four parts - Substrate pallets, Oracle implementation, Front end app and k3s worker configuration. While task verification made more sense for batch files, we also developed log streaming to provide work proofs for continously running applications.
 
-Through this process, we identified the potential of using connected clusters than indivdual instances for better management efficiency, We are currently building an on chain work verifcation system. Our team will shift focus to building custom pallets outlined in the technical architecture to steer our way through to become a parachain on Kusama and eventually on Polkadot.
+Through this process, we identified the potential of using connected clusters than indivdual instances for better management efficiency, We are currently building an on chain task distribution system. Our team will shift focus to building custom pallets outlined in the technical architecture to steer our way through to become a parachain on Polkadot.
 
-As part of our transition, we are migrating from WebSockets to utilizing Libp2p as the core connection protocol. Furthermore, Subxt will serve as the standard communication protocol facilitating interaction between the Substrate chain and the off-chain domain. This strategic shift aligns with our commitment to adopting decentralized principles and enhancing the robustness of our system architecture.
+We are also working concurrently on integrations with Peaq Network (DID pallet) and [Flostream](https://flo.stream/) (for a decentralized storage product called CyStore). Additionally, we have garnered interest from Peaq to open an HRMP channel for XCM interactions between our chains once we are live
 
 We have created a UX demo for a potential user and the development for this grant will look very similar to this [Cyborg Network UX demo](https://drive.google.com/file/d/1zrN4TRMDd5ON2xH9F00upcyK-3ofwV4r/view?usp=drivesdk)
-
 
 ## Development Roadmap :nut_and_bolt:
 
