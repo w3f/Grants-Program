@@ -145,13 +145,21 @@ We have created a UX demo for a potential user and the development for this gran
 
 ## Development Roadmap :nut_and_bolt:
 
-We will be developing a PoC as a part for this grant.
+the grant delivery will have 2 distinct parts split into three milestones
 
-The goal is to achieve a functional system that is capable of scheduling and verifying a batch process (Shell Script or Docker container) that was executed in an off - chain entity.
+1. Enhance CyberDock for Testnet Release:
+
+* Develop a price estimation system based on server specifications.
+* Integrate Peaq DID pallet and incorporate server selection feature.
+
+2. Development of EdgeCloud:
+
+* Create a functional system capable of managing one application across geographically isolated servers.
+* Implement efficient task and load distribution with low latency.
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
+- **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):** 2 ( 1 Full time Developers at 1 FTE/month and 2 part time developers each at 0.5 FTE/month)
 - **Total Costs:** 10,000 USD
 
