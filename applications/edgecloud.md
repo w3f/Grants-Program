@@ -192,3 +192,5 @@ Megha Varshini (COO) - represented Cyborg Network at the Finals (Top 7 teams) of
 Kresna (CTO) has also contributed to the **InvArch's Web3 Foundation Grant** [Milestone 1](https://github.com/w3f/Grant-Milestone-Delivery/blob/7932b07cc38150701ba8ed034723193f66002975/deliveries/InvArch_M1.md) that has been completed successfully. He also contributed to the  [Chocolate Network](https://substrate.io/ecosystem/projects/chocolate/) as a Substrate developer for their Substrate Builder Program (SBP) Milestone 1 delivery which has been completed successfully.
 
 Cyborg Network has been inducted into the [Polkadot Alpha Builder's Program](https://polkadot.network/development/alpha/) in March 2024.
+
+In June 2024, we secured 3rd place in the [Polkadot Global Series: North America Hackathon](https://www.polkadotglobalseries.com/north-america/) and 2nd place in the [Polkadot Prodigy Hackathon](https://www.polkadotprodigy.com/) for the Web3 & Tooling track.
