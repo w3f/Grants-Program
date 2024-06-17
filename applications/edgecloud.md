@@ -65,7 +65,7 @@ The system will initially consist of 1 master node and 1 worker node. The applic
 
 ### Ecosystem Fit
 
-Cyborg Network enhances the Polkadot ecosystem with decentralized edge computing, addressing the increasing demand for AI and IoT applications. We focus on Web2 application providers, opening doors for new users to join the Polkadot ecosystem and support its growth.We are also integrating enterprises that operate edge data centers into the Polkadot ecosystem. Some of our potential partners include [Edge Centres](https://edgecentres.com/), [Deep Green](https://deepgreen.energy/) , [Heata](https://www.heata.co/) etc.
+Cyborg Network enhances the Polkadot ecosystem with decentralized edge computing, addressing the increasing demand for AI and IoT applications. We focus on Web2 application providers, opening doors for new users to join the Polkadot ecosystem and support its growth. We are also integrating enterprises that operate edge data centers into the Polkadot ecosystem. Some of our potential partners include [Edge Centres](https://edgecentres.com/) , [Deep Green](https://deepgreen.energy/) , [Heata](https://www.heata.co/) etc.
 
 Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala Network provides off-chain compute infrastructure for smart contract-based applications by enabling users to integrate 'phat' contracts with their existing smart contract logic. While Cyborg is focused on creating utility for web2 applications.
 
