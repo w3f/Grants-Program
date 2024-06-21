@@ -16,14 +16,14 @@ XCM (Cross-Consensus Message) is a messaging format and language used to communi
 
 In the past two proposals, support for ordinary DMP, UMP, HRMP, XCM V3/V4, and snowBridge (Ethereum bridge) has been completed. This proposal is a continuation of the previous proposals.
 
-1. Add direct support for the Polkadot <=> Kusama bridge, including support for message sending and message tracking.
+1. Add feature for the Polkadot <=> Kusama bridge(https://wiki.polkadot.network/docs/learn-guides-dot-ksm-bridge), including  message sending and message tracking.
 2. Message tracking needs to be adjusted after the recent messageQueue pallet upgrade, and this proposal will also adjust message tracking.
 3. Update the mainnet configuration of the Ethereum Bridge.
 
 ### Project Details
 
-1. Add support for the Polkadot <=> Kusama bridge, including cross-chain transfers of native tokens and foreign tokens, as well as message tracking. Message tracking includes tracking messages from the initiating chain and the receiving chain.
-2. Due to the removal of the dmpQueue and xcmpQueue pallets, message tracking needs to be adjusted. This proposal will adjust message tracking accordingly.
+1. Add feature for the Polkadot <=> Kusama bridge(https://wiki.polkadot.network/docs/learn-guides-dot-ksm-bridge), including cross-chain transfers of native tokens and foreign tokens, as well as message tracking. Message tracking includes tracking messages from the initiating chain and the receiving chain.
+2. Due to the removal of the **dmpQueue** and **xcmpQueue** pallets, message tracking needs to be adjusted. This proposal will adjust message tracking accordingly.
 3. The Ethereum Bridge has opened the Polkadot <=> Ethereum bridge in runtime [1002004](https://bridgehub-polkadot.subscan.io/runtime?version=1002004). This proposal will update the configuration of this bridge.
 
 ### Ecosystem Fit
