@@ -104,7 +104,7 @@ And many zero-knowledge proofs use languages similar to rust or use rust directl
 
 ### Milestone 1 - SMT pallet, SMT ink smart contract, and backend base on rocksdb.
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 1 month (From July 1st to August 1st)
 - **FTE:**  2
 - **Costs:** 7,000 USD
 
@@ -124,7 +124,7 @@ And many zero-knowledge proofs use languages similar to rust or use rust directl
 > It also includes some changes to the hash algorithm and the selection of data serialization and deserialization algorithms, as well as the testing of these parts, which do not need to be included in the milestone work because some of them have been completed before.
 
 ### Milestone 2 - backend base on parity-db and common backend.
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 1 month (From August 15th to September 15th)
 - **FTE:**  1
 - **Costs:** 3,000 USD
 
