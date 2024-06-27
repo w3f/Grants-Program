@@ -12,7 +12,7 @@ This project aims to develop a prototype of a Bitcoin full node in Rust using th
 
 **Relevance to Substrate & Polkadot**
 
-This project showcases the versatility of Substrate as a leading blockchain development framework. With Substrate, small teams and even individuals can create production-level blockchain software efficiently. Developers within the Substrate/Polkadot ecosystem, particularly those interested in Bitcoin-related applications, stand to benefit from the tools and insights produced by this project. 
+This project showcases the versatility of Substrate as a leading blockchain development framework. With Substrate, small teams and even individuals can create production-level blockchain software efficiently. Developers within the Substrate/Polkadot ecosystem, particularly those interested in Bitcoin-related applications, stand to benefit from the tools and insights produced by this project. Specifically, the Bitcoin bridge projects can integrate the subcoin-network into their nodes to talk to the Bitcoin network directly instead of relying on the external relayers which are suffered from the single point of failure practically.
 
 **Motivation**
 
@@ -25,10 +25,10 @@ I’m personally planning on some ideas on Bitcoin. This project may be a good s
 **Key Deliverables**
 
 - crate `pallet-bitcoin`: This crate implements the core logic of Bitcoin protocol, handling the transaction processing and UTXO set management.
-- crate `runtime`: A lean Bitcoin specialized Substrate runtime integrating only two pallets frame-system and pallet-bitcoin.
+- crate `subcoin-runtime`: A lean Bitcoin specialized Substrate runtime integrating only two pallets frame-system and pallet-bitcoin.
 - crate `sc-consensus-nakamoto`: This crate offers an import queue for Bitcoin block import and full block verification.
-- crate `bitcoin-network`: This crate is responsible for basic Bitcoin P2P network functionalities, facilitating initial block download from other nodes.
-- crate `node`: This crate orchestrates the integration of all components mentioned above, providing a binary `subcoin` for running a fully functional Bitcoin node.
+- crate `subcoin-network`: This crate is responsible for basic Bitcoin P2P network functionalities, facilitating initial block download from other nodes.
+- crate `subcoin-node`: This crate orchestrates the integration of all components mentioned above, providing a binary `subcoin` for running a fully functional Bitcoin node.
 
 **Non-Goals**
 
@@ -93,13 +93,13 @@ This project is planned as 3 milestones, completed in three months.
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | MIT |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes, which will show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | `pallet-bitcoin` | This pallet is used to process the Bitcoin transaction and manage the state of the UTXO set. |
-| 2. | `bitcoin-runtime` | This is a minimal Substrate runtime specialized for Bitcoin, consisting of frame-system and pallet-bitcoin. |
-| 3. | `sc-consensus-nakamoto` | This crate provides the function of importing a Bitcoin block BitcoinBlockImport into the node, assuming the block has been checked. |
-| 4. | `node` | This crate will wire up the runtime and a Substate client with necessary components to build a Bitcoin node, which is able to import the Bitcoin blocks from the bitcoind database. |
+| 2. | `subcoin-runtime` | This is a minimal Substrate runtime specialized for Bitcoin, consisting of frame-system and pallet-bitcoin. |
+| 3. | `sc-consensus-nakamoto` | This crate provides the function of importing Bitcoin blocks into the node, assuming the blocks have been checked. |
+| 4. | `subcoin-node` | This crate will wire up the runtime and a Substate client with necessary components to build a Bitcoin node, which is able to import the Bitcoin blocks from the bitcoind database. |
 
 ### Milestone 2
 
@@ -125,12 +125,12 @@ This project is planned as 3 milestones, completed in three months.
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | 0a. | License | MIT |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes, which will show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. |	Article | We will publish an article that explains what was done/achieved as part of the grant. |
-| 1. | Fast sync | A bootstrap node will be run so that the new subcoin nodes can sync to the tip of the Bitcoin network very quickly using the built-in advanced syncing strategy (e.g., light state sync) in Substrate. |
-| 2 | `bitcoin-rpc` | We will introduce an initial version of RPC layer compatible with Bitcore Core based on available functions (primarily the blockchain command group) and CLI exposing the same RPC interfaces. |
+| 1. | Fast sync | A bootstrap node will be deployed so that the new subcoin nodes can sync to the tip of the Bitcoin network very quickly using the built-in advanced syncing strategy (e.g., light state sync) in Substrate. |
+| 2 | Bitcoin Transaction Broadcasting | We will add an RPC call for broadcasting a Bitcoin transaction to the Bitcoin network from polkadot.js.org. |
 
 ## Future Plans
 
