@@ -16,6 +16,7 @@ Besides, **there is a clear difference between an application being accepted and
 <a id="top"></a>
 
 - [2024](#2024)
+  - [🏄 Wave 23 - Q3 2024](#-wave-23---q3-2024)
   - [🏄 Wave 22 - Q2 2024](#-wave-22---q2-2024)
   - [🏄 Wave 21 - Q1 2024](#-wave-21---q1-2024)
 - [2023](#2023)
@@ -47,6 +48,13 @@ Besides, **there is a clear difference between an application being accepted and
 
 ## 2024
 
+### 🏄 Wave 23 - Q3 2024
+
+| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
+
+[🔝](#top)
+
 ### 🏄 Wave 22 - Q2 2024
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
@@ -58,6 +66,8 @@ Besides, **there is a clear difference between an application being accepted and
 | [Dastanbek Samatov](https://dastansam.github.io/)                       | [Substrate EVM Adapter](./substrate-evm-adapter.md)                     | [GitHub](https://github.com/dastanbeksamatov) | ☐          |        ☐       |      ☐      |
 | [KodaDot](https://kodadot.xyz/)                       | [AssetHub NFT Indexer (M2)](./kodadot_assethub_nft_m2.md)                     | [GitHub](https://github.com/kodadot) | ☐          |        ☐       |      ☐      |
 | C Forge                       | [Improve & Update Typechain Polkadot](./typechain_revived.md)                     |  | ☐          |        ☐       |      ☐      |
+
+[🔝](#top)
 
 ### 🏄 Wave 21 - Q1 2024
 
@@ -76,6 +86,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Algorealm](https://github.com/algorealminc)                       | [SwarmNL](./swarm-nl.md)                     | [GitHub](https://github.com/algorealminc)                 | ☐          |        ☒       |      ☒      |
 | [Rui Morais](https://github.com/fiono11)                       | [Threshold Signature Implementation](./ThresholdSignature.md)                     | [GitHub](https://github.com/fiono11)                 | ☐          |        ☐       |      ☐      |
 
+[🔝](#top)
 
 ## 2023
 
