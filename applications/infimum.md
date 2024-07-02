@@ -166,8 +166,8 @@ Development status will be found over at [https://github.com/rhysbalevicius/infi
 
 ### Milestone 2 — On-chain verification logic and circuits
 
-- **Estimated Duration:** 2 months
-- **FTE:**  0,5
+- **Estimated Duration:** 6 months
+- **FTE:**  0,1
 - **Costs:** 9,000 USD
 
 | Number | Deliverable | Specification |
@@ -181,8 +181,8 @@ Development status will be found over at [https://github.com/rhysbalevicius/infi
 
 ### Milestone 3 — CLI tool and docsite
 
-- **Estimated Duration:** 2 months
-- **FTE:**  0,5
+- **Estimated Duration:** 3 months
+- **FTE:**  0,25
 - **Costs:** 9,000 USD
 
 | Number | Deliverable | Specification |
