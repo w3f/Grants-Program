@@ -32,11 +32,10 @@ In the production-ready version, Dazhbog will integrate with other features on t
 - In related ecosystems like Ethereum, projects such as dYdX and GMX Protocol offer decentralized perpetual futures trading. However, on Polkadot, there are no competitors that provide the advanced functionalities of Dazhbog. Our platform is designed to integrate with the well-established Hydration parachain, which boasts the highest TVL in the Polkadot DeFi ecosystem.
 
 <p align="center">
-  <img src="https://github.com/Ceres-Blockchain-Solutions/Grants-Program/assets/16464173/d5802381-5a34-4da8-b4d5-6678fae4bea8" />
+  <img src="https://github.com/Ceres-Blockchain-Solutions/W3F-Grants-program/assets/16464173/9ff920dc-583f-4ab0-a545-f3abf330f77e" />
 </p>
 
 - Our long-term vision for Dazhbog is to become a leading platform for decentralized perpetual futures trading within the Polkadot ecosystem. We aim to continuously enhance the platform by integrating new features, such as additional trading pairs, advanced analytics tools, and improved security measures. To ensure the platform's sustainability and growth, we will build a strong community of users and developers, fostering collaboration and innovation. Ultimately, our goal is to contribute significantly to the DeFi space, providing a reliable and advanced trading platform that meets the evolving needs of the global financial community.
-
 
 ## Team :busts_in_silhouette:
 ### Team members
