@@ -50,13 +50,9 @@ In the production-ready version, Dazhbog will integrate with other features on t
 
 ### Contact
 
-- Contact Name: Rastko Misulic
-- Contact Email: rastko@ceresblockchain.solutions
-- Website: https://ceresblockchain.solutions
-<br/><br/>
-- Contact Name: Danijel Radulovic
-- Contact Email: danijel@ceresblockchain.solutions
-- Website: https://ceresblockchain.solutions
+- **Contact Name:** Danijel Radulovic
+- **Contact Email:** danijel@ceresblockchain.solutions
+- **Website:** https://ceresblockchain.solutions
 
 ### Legal Structure
 
