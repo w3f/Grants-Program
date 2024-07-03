@@ -126,14 +126,16 @@ Not started
 |  0b.   | Documentation      | Documentation into the package repository                                      |
 |  0c.   | Examples           | Some simple examples of how to use it                                          |
 |  0b.   | Test               | Unit tests for the package created                                             |
-|  1a.   | ABI                | Encodes & decodes ABI, contract metadata v0, v1,v2,v3,v4                       |
-|  1b.   | Deploy contract    | Implements method into Polkadart API to deploy WASM smart contracts            |
-|  2b.   | Read contract      | Methods to read the contract values and decode them into human-readable values |
-|  3b.   | Write contract     | Create methods to send transactions to a contract                              |
+|  1a.   | Offline Signer     | Adds support for CheckMetadata extension                                       |
+|  1b.   | ABI                | Encodes & decodes ABI, contract metadata v0, v1,v2,v3,v4                       |
+|  1c.   | Deploy contract    | Implements method into Polkadart API to deploy WASM smart contracts            |
+|  2d.   | Read contract      | Methods to read the contract values and decode them into human-readable values |
+|  3e.   | Write contract     | Create methods to send transactions to a contract                              |
 |  4a.   | Pub.dev            | Publish the new package in Pub.dev                                             |
-|  5a.   | Document Contracts | Adds extensive documentation on the website from milestone 1                   |
-|  6a.   | Examples Contracts | Adds multiple examples and different approaches to doing contract interactions |
-|  7a.   | FAQ Contracts      | Adds extensive FAQ of unhappy paths and troubleshooting                        |
+|  5a.   | Document Signer    | Documents offline signer                                                       |
+|  6a.   | Document Contracts | Adds extensive documentation on the website from milestone 1                   |
+|  7a.   | Examples Contracts | Adds multiple examples and different approaches to doing contract interactions |
+|  8a.   | FAQ Contracts      | Adds extensive FAQ of unhappy paths and troubleshooting                        |
 
 
 ## Future Plans
