@@ -3,6 +3,7 @@
 - **Team Name:** Libeccio Labs
 - **Payment Address:** 12poSUQPtcF1HUPQGY3zZu2P8emuW9YnsPduA4XG3oCEfJVp (USDT on Asset Hub)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 🐤
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2071#issuecomment-2212310184)
 
 ## Project Overview :page_facing_up:
 
