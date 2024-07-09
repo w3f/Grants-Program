@@ -52,6 +52,7 @@ Besides, **there is a clear difference between an application being accepted and
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
+| [gmajor](https://github.com/gmajor-encrypt)                       | [subxt-python](./subxt-python.md)                     | [GitHub](https://github.com/gmajor-encrypt/xcm-tools)                 | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
@@ -59,7 +60,7 @@ Besides, **there is a clear difference between an application being accepted and
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
-| [Tuguldur Baigalmaa](https://github.com/philoniare/)                       | [subxt-python](./subxt-python.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☐       |      ☐      |
+| [Tuguldur Baigalmaa](https://github.com/philoniare/)                       | [XCM Tools follow-up-2](./xcm-tools-follow-up-2.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☐       |      ☐      |
 | [Cyborg Network](https://cyborgnetwork.io/)                       | [Cyborg Network - Empowering Decentralized Edge Networks](./Cyborg.md)                     | [GitHub](https://github.com/Cyborg-Network)                 | ☐          |        ☐       |      ☐      |
 | [Massa Labs](https://massa.net/)                       | [Sub-consensus mechanism](./sub_consensus_mechanism.md)                     | [GitHub](https://github.com/massalabs/)                 | ☐          |        ☐       |      ☐      |
 | [Sporyon Technologies](https://sporyon.io)                       | [Dotnix](./dotnix.md)                     | [GitHub](https://github.com/sporyon/dotnix) | ☐          |        ☒       |      ☒      |
