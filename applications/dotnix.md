@@ -3,6 +3,7 @@
 - **Team Name:** Sporyon Technologies OÜ
 
 - **Payment Address:** Fiat 25.03.2024, 15:18
+- **DOT:** 1Z765yAFnVpzYT7Vk2wKaePoP1YGdYQ5yUw3nVEyu2DYju8
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview 📄
