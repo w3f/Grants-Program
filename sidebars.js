@@ -51,6 +51,10 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id:'docs/office-hours'
+    },
+    {
+      type: 'doc',
       id:'docs/faq'
     },
     {
