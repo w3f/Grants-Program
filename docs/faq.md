@@ -15,9 +15,9 @@ title: 🙋 FAQ
 
   Generally, there is no upper limit to grant amounts. However, the higher the requested amount, the stricter the review. For guidance, please refer to the [grant levels section](Introduction/levels.md) in our documentation.
 
-### What does it mean for payments to be 30% DOT?
+### What does it mean for payments to be at least 50% DOT?
 
-  Every milestone payment will have two parts: 70% in the currency of your choice (see the application template for options) and the remaining 30% in DOT, vesting linearly over two years. For this, we need a Polkadot address in the grant agreement. It has to be a native Polkadot address as this is the only way to receive vested DOT that can be staked. This wouldn't be possible with DOT paid on AssetHub. For the milestone payment, please submit two invoices: one for the currency part, one for the DOT part. Since the grant agreements are denominated in USD, we ask for invoices denominated in USD; we will convert the 30% to DOT at the day of payment based on the previous day's closing price on [CoinMarketCap](https://coinmarketcap.com). Our [invoice form](https://docs.google.com/forms/d/18BdmYEt8gvcC-5f7TMHdJftBr9dEeA2_lUfIqkH7it8/viewform) will walk you through the process.
+  Every milestone payment will have two parts: one in DOT, vesting linearly over two years. The percentage of your grant paid in DOT ranges from 50 to 100% and will be negotiated during the application phase. For this, we need a Polkadot address in the grant agreement. It has to be a native Polkadot address as this is the only way to receive vested DOT that can be staked. The remaining percentage of the payment is in the currency of your choice (see the application template for options). For the payment, please submit two invoices: one for the currency part (if applicable), one for the DOT part. Since the grant agreements are denominated in USD, we ask for invoices denominated in USD; we will convert the agreed upon percentage to DOT at the day of payment based on the previous day's closing price on [CoinMarketCap](https://coinmarketcap.com). Our [invoice form](https://docs.google.com/forms/d/18BdmYEt8gvcC-5f7TMHdJftBr9dEeA2_lUfIqkH7it8/viewform) will walk you through the process.
 
 ### What activities/positions do you fund?
 
