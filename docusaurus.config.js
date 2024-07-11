@@ -35,7 +35,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Do you want to help build <a target="_blank" rel="noopener noreferrer" href="https://graypaper.com/">JAM</a>? Checkout the <a target="_blank" rel="noopener noreferrer" href="https://jam.web3.foundation/">JAM Prize!</a>',
+        '<a target="_blank" rel="noopener noreferrer" href="https://events.polkadot.network/event/polkadot-decoded-2024/exhibitor/RXhoaWJpdG9yXzE2OTAxNDA=">Meet us at Polkadot Decoded!</a>',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
