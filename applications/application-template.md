@@ -124,6 +124,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
+- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (>= 50%)
 
 ### Milestone 1 Example — Basic functionality
 
