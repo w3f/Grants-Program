@@ -53,6 +53,7 @@ Besides, **there is a clear difference between an application being accepted and
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
 | [gmajor](https://github.com/gmajor-encrypt)                       | [subxt-python](./subxt-python.md)                     | [GitHub](https://github.com/gmajor-encrypt/xcm-tools)                 | ☐          |        ☐       |      ☐      |
+| [Liu-Cheng Xu](https://github.com/liuchengxu)                       | [Subcoin](./Subcoin.md)                     | [GitHub](https://github.com/subcoin-project/subcoin)                 | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
