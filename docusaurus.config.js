@@ -8,7 +8,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Web3 Foundation Grants',
-  tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama.',
+  tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama',
   url: 'https://grants.web3.foundation',
   baseUrl: '/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
@@ -35,7 +35,8 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        '<a target="_blank" rel="noopener noreferrer" href="https://events.polkadot.network/event/polkadot-decoded-2024/exhibitor/RXhoaWJpdG9yXzE2OTAxNDA=">Meet us at Polkadot Decoded!</a>',
+        // 'Looking for advice on how to fund your project? Apply for Office Hours <a target="_blank" rel="noopener noreferrer" href="https://grants.web3.foundation/docs/office-hours">here!</a>',
+        'Looking for advice on how to fund your project? Apply for Office Hours <a href="https://grants.web3.foundation/docs/office-hours">here!</a>',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,

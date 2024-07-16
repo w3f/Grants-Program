@@ -21,7 +21,7 @@ title: 🙋 FAQ
 
 ### What activities/positions do you fund?
 
-  The Web3 Foundation's Grants Program aims to fund software development and research activities that are beneficial for the ecosystem as a whole. As such, we don't usually fund tangential costs such as business-oriented activities (marketing, business planning), events or outreach, and—for non-infrastructure projects—deployment and hosting costs, maintenance or audits. We also expect you to have a good understanding of the technologies you are planning to use, meaning that we don't fund time spent learning how to use Substrate or how to write ink! smart contracts.
+  The Web3 Foundation's Grants Program aims to fund software development and research activities that are beneficial for the ecosystem as a whole. As such, we don't usually fund tangential costs such as business-oriented activities (marketing, business planning), events, outreach, hosting costs or audits. We also expect you to have a good understanding of the technologies you are planning to use, meaning that we don't fund time spent learning how to use Substrate or how to write ink! smart contracts.
 
 ### Can anyone apply?
 
