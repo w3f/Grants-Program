@@ -1,7 +1,7 @@
 # Crypto Aegis
 
 - **Team Name:** Athena Intelligence
-- **Payment Address:** We wish not to communicate our IBAN or bank details on Github. Feel free to reach out directly to us to obtain more information. 
+- **Payment Address:** Wallet: 14i9EFH8PFE6fk3UrriguyegrqSs5hpxXJ6mvtW3Ci5qzfS8  in USDT specifically for Polkadot 
 - **Level:** 3
 
 ## Project Overview :page_facing_up:
@@ -10,17 +10,20 @@
 
 **Crypto Aegis: Present and defend legitimate and favourable crypto and blockchain projects.**
 
-With Crypto Aegis' Due Diligence service, our experts detect any red flags regarding a project's team, company history, assets, legal aspects, finances and reputation. This service includes an in-depth analysis of the project's token or coin offering. You will then receive a detailed report that will enable you to make the necessary changes to bring the project up to an exemplary standard. Once these changes have been made, official certification is granted so that the project can prove and justify its claims to current and potential stakeholders, including investors.
+As the crypto world enters a new bull market, it has to far been dominated by meme coin and by fraudulent projects on the Solana blockchain. Such projects are undermining the credibility of the crypto and blockchain ecosystems. We propose to help Polkadot in its positioning as the trusted blockchain for serious and credible projects.
+We will do so by conducting ten professional due diligence on the 10 largest projects (by marketcap) that are exclusively on the Polkadot chain. These reports will then be distributed throughout our network and can also be distributed through your network. 
 
-Our project will be an asset for Substrate, Polkadot and Kusama, as it will enable them to assess the reliability and security of projects that are grafted onto it. The solidity and level of security of the IT infrastructure must be verified. Finally, the certification provided by Crypto Aegis is designed to boost user confidence in the blockchain.
+With Crypto Aegis' Due Diligence service, our experts detect any red flags regarding a project's team, company history, assets, legal aspects, finances and reputation. This service includes an in-depth analysis of the project's token or coin offering. You will then receive a detailed report that will enable you to make the necessary changes to bring the project up to an exemplary standard. Once these changes have been made, official certification is granted so that the project can prove and justify its claims to current and potential future stakeholders, including investors.
 
-Our mission is to become the trusted, independent, global standard in this young, unregulated market, and to help it realise its full potential. In our view, this can only be achieved if its players are highly credible and trustworthy. Through world-class due diligence and cybersecurity services, our aim is to help legitimate and deserving crypto projects build a reputation and attract investment. In turn, we enable investors to make intelligent and informed decisions by empowering them with unparalleled information and knowledge.
+Our project will be an asset for Substrate, Polkadot and Kusama, as it will enable them to assess the reliability and security of projects that are grafted onto it. Finally, the certification provided by Crypto Aegis is designed to boost user confidence in the blockchain.
+
+Our mission is to help Polkadot and the projects that are on its blockchain to be perceived by current and future investors as the blockchain of choices for credible, serious and reliable projects.
 
 Some of our reports are available on our official website : https://cryptoaegis.io/
 
 ### Project Details
 
-Crypto Aegis aims to boost user confidence in crypto-currency by clarifying the crypto world through substantiated and comprehensive analyses. The aim is to make information about crypto-currency projects highly visible and obvious.
+Crypto Aegis aims to enhance user confidence in blockchain projects by delivering essential information, ensuring investors have access to accurate data. Our work is centered on providing factual information and does not serve as financial advisory services.
 
 ### Guidelines for conducting due diligence on projects
 
@@ -94,28 +97,32 @@ The due diligence process begins with a comprehensive data collection phase, whi
 
 Once the data has been collected, an in-depth analysis is carried out to check the accuracy and reliability of the information. Background checks are carried out on team members to confirm their educational and professional qualifications and to check for any criminal records. Legal compliance is assessed by examining registration documents and certificates of compliance, and checking that there are no legal disputes or financial problems. Asset verification ensures that the project's physical and digital assets are legitimate and properly accounted for. Financial analysis includes reviewing audited financial statements, assessing revenue streams, funding sources and investor credibility. Finally, reputation assessment includes analysis of community feedback, incident history and overall market perception to provide a comprehensive assessment of the project's viability and risks.
 
-To ensure accuracy, the grants team will double-check the results through independent verification, where separate team members re-examine key data sources and findings. Additionally, the results will undergo a peer review process within the team, ensuring multiple layers of scrutiny and validation. This rigorous approach ensures the reliability and reproducibility of the data analysis, maintaining high standards of due diligence.
-
+To ensure accuracy, the team will double-check the results through independent verification, where separate team members re-examine key data sources and findings. Additionally, the results will undergo a peer review process within the team, ensuring multiple layers of scrutiny and validation. This rigorous approach ensures the reliability and reproducibility of the data analysis, maintaining high standards of due diligence.
 
 ### Relevant related work
 
-Some of our reports are available on our official website: https://cryptoaegis.io/
+Some of our reports are available on our official website: https://cryptoaegis.io/. 
+
+Here are a few examples: 
+- https://cryptoaegis.io/audits/Due%20Diligence%20-%20VEGS%20-%202024-01-19.pdf
+- https://cryptoaegis.io/audits/Due%20Diligence%20-%20Blockchain%20Capital%20-%202023-05-25.pdf
+- https://cryptoaegis.io/audits/Due%20Diligence%20-%20Sphere%20Finance%20-%202022-05-13.pdf 
+
+You can also see a few example of press mention that our work has generated:  
 
 ### Intended venue for results publication and the timeline for publication
 
-We plan to publish our report on our Crypto Aegis website (https://cryptoaegis.io/). We believe that one or two reports per month, as appropriate, would be a good frequency of publication.  
+We plan to publish our report on our Crypto Aegis website (https://cryptoaegis.io/). We believe that two reports per month would be a good frequency of publication. 
 
 ### What your project is *not* or will *not* provide or implement
 
-Our reports are extensive investigations into specific cases. As stated on our website, the advice and recommendations presented in the reports are neither a guarantee of future results on the part of Athena Intelligence SA, nor an insurance against risk. Indeed, our research and analysis represents Athena Intelligence SA's best judgement and is based solely on information that was publicly available at the time of writing. However, we insist that this is not financial advice and readers are invited to carry out their own research.
+Our reports are not financial advice nor an insurance against risk. The advice and recommendations presented in the reports are neither a guarantee of future results on the part of Athena Intelligence SA, nor an insurance against risk. Indeed, our research and analysis represents Athena Intelligence SA's best judgement and is based solely on information that was publicly available at the time of writing. However, we insist that this is not financial advice and readers are invited to carry out their own research. 
 
 ## Ecosystem Fit
 
 ### Where and how does your project fit into the ecosystem?
 
-Crypto Aegis fits into the ecosystem by providing a critical service that enhances the reliability, transparency, and security of crypto and blockchain projects within the Substrate, Polkadot, and Kusama networks. Our due diligence service meticulously investigates various aspects of a project. By offering detailed reports and certification, we help legitimate and deserving projects build a trustworthy reputation, thereby attracting investment and user confidence.
-
-Our service acts as a bridge between project developers and investors, ensuring that the projects meet high standards of credibility and security. This contributes to the overall health and stability of the blockchain environment, fostering a more secure and trustworthy market. Through rigorous evaluation and certification, Crypto Aegis plays a pivotal role in upholding the integrity and growth of the ecosystem, benefiting both project developers and the wider crypto community.
+Crypto Aegis would mainly fit in the governance aspect of Polkadot, offering precise details about crypto projects, Parachains and Bridges for the whole ecosystem to make informed choices. This is turn, would also give full transparency on projects in the Polkadot ecosystem.
 
 ### Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 
@@ -123,23 +130,13 @@ Our target audience is broad and inclusive, aimed at anyone involved in the cryp
 
 ### What need(s) does your project meet?
 
-Crypto Aegis addresses several critical needs within the crypto and blockchain ecosystem. Firstly, it meets the need for enhanced security and transparency by providing thorough due diligence on crypto projects. In a space often marred by scams and fraudulent activities, our service offers a reliable way for investors and stakeholders to verify the legitimacy and credibility of projects. This significantly reduces the risk of financial loss and increases overall confidence in the market.
-
-Secondly, Crypto Aegis fulfills the need for comprehensive information and informed decision-making. Our detailed reports and analyses equip investors, developers, and community members with the insights necessary to make educated choices. This empowers them to discern between high-quality projects and those that may pose potential risks, fostering a more informed and judicious investment environment.
-
-Additionally, our project meets the need for standardization and credibility within the crypto industry. By providing certification for projects that meet rigorous standards, we help establish a benchmark for quality and reliability. This not only aids in attracting legitimate projects to the ecosystem but also builds a foundation of trust and integrity that is essential for the industry's long-term growth and stability.
-
-Lastly, Crypto Aegis supports the need for education and protection of the general public. In an industry that can be complex and daunting for newcomers, our services offer a safeguard against falling victim to untrustworthy projects. By making credible information accessible, we help both new and experienced participants navigate the crypto landscape safely and confidently.
-
-In summary, Crypto Aegis meets the crucial needs of security, transparency, informed decision-making, standardization, and public education, thereby enhancing the overall health and trustworthiness of the crypto ecosystem.
+In the blockchain industry, project backgrounds often lack transparency, creating opportunities for fraud and scams. Our services aim to counter this by providing clear insights into project backgrounds, enhancing transparency and mitigating risks. 
 
 ### Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   
 To our knowledge, there is currently no project in the Substrate, Polkadot or Kusama ecosystems that offers a full due diligence service like Crypto Aegis. While there are many projects focused on security, auditing and providing various types of support for blockchain development, none seem to combine the detailed investigation approach and certification process that we provide.
 
 Crypto Aegis stands out for its holistic and in-depth approach to due diligence. Our service goes beyond basic security audits by conducting in-depth investigations into a project's team, company history, assets, legal aspects, finances and reputation.
-
-There are a number of projects in related ecosystems that offer elements of what Crypto Aegis offers. For example, platforms such as Chainalysis and Elliptic focus on blockchain analysis and compliance, while companies such as CertiK and Quantstamp offer security audits and verification services. However, these projects generally focus on specific aspects such as transaction monitoring, compliance or smart contract security. Crypto Aegis differentiates itself by offering a more comprehensive due diligence service that covers a wider range of factors, providing a more complete assessment of a project's overall credibility and potential for success.
 
 By addressing a broader spectrum of due diligence needs and integrating them into a single, cohesive service, Crypto Aegis fills a unique niche within the Substrate, Polkadot and Kusama ecosystems, contributing to a more secure and trustworthy environment for all participants.
 
@@ -178,17 +175,17 @@ Our team comprises seasoned experts in due diligence and investigation, bringing
 
 Crypto Aegis is an established project dedicated to improving transparency, security and trust in the crypto and blockchain sectors through comprehensive due diligence and analysis. Our aim is to continually evolve and expand our methodologies to address the dynamic and complex landscape of the crypto world.
 
-Our project has been featured by various media outlets since its inception. You can read our press articles on our press page (https://cryptoaegis.io/index.php?page=press). 
+Our project has been featured by various media outlets since its inception. You can read our press articles on our press page (https://cryptoaegis.io/index.php?page=press).
 
 Our detailed reports on various crypto and blockchain projects highlight our rigorous approach to due diligence. These reports are available on our reports page (https://cryptoaegis.io/index.php?page=reports), highlighting our expertise and impact.
 
-Crypto Aegis is committed to developing, refining and multiplying its services with the help of the grant we are applying for. Its ongoing development will help us continue to support the growth and integrity of the crypto ecosystem, enabling investors, developers and other stakeholders to navigate this complex field with confidence. 
+Crypto Aegis is committed to developing, refining and multiplying its services with the help of the grant we are applying for. Its ongoing development will help us continue to support the growth and integrity of the crypto ecosystem, enabling investors, developers and other stakeholders to navigate this complex field with confidence.
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** 1 years renewable
+- **Total Estimated Duration:** 8 months renewable
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 100,000 USD
 
@@ -283,8 +280,8 @@ We plan to publish our reports on the Crypto Aegis website (https://cryptoaegis.
 
 ## Referral Program (optional) :moneybag:
 
-- **Referrer:** ...
-- **Payment Address:** ...
+- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee.
+- **Payment Address:** Polkadot/Kusama (USDT) payment address. Please also specify the currency. (e.g. 15oF4... (USDC))
 
 ## Additional Information :heavy_plus_sign:
 
