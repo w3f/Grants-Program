@@ -180,9 +180,8 @@ Please note that above comparisons are based on our current understanding and re
 | 1. | `zkEphemeralKeys` Pallet | Substrate pallet for ephemeral key registration with zk-SNARKs proof validation. |
 | 2. | `address` Pallet | Substrate pallet for deriving wallet addresses from OAuth2 JWT. |
 | 3. | `jwtValidation` Pallet | Substrate pallet for JWT validation. |
-| 4. | `JWK Registry` Pallet | Pallet that stores JWK registries of supported OAuth2 providers continuously. |
-| 5. | Off-Chain worker | Off-chain worker that queries the JWK registry endpoints of OAuth providers continuously and integrates with `JWK Registry` pallet. |
-| 6. | OAuth Integrations | Integrate Google, Twitter, Facebook, and Microsoft OAuth providers with `JWK Registry` pallet. |
+| 4. | `JWK Registry` Pallet | Pallet that stores a hard-coded list of public keys from supported OAuth2 providers. |
+| 5. | Client and OAuth Integrations | A rust-based client that allows the user to log into their gmail account, receive a JWT, paste the JWT to the client CLI, generate the ephemeral public/private keypair, generate the salt, generate the ZK proof using (jwt, public key, salt) as an input, and send it to the collator by calling the appropriate extrinsic. Integrate the Google OAuth provider with the `JWK Registry` pallet. |
 
 ## Future Plans
 
