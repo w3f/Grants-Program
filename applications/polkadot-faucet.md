@@ -126,7 +126,7 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 - **Full-Time Equivalent (FTE):** 1,5 FTE
 - **Total Costs:** 12,000 USD
 
-### Milestone 1 — Research, Requirements Engineering, and Design
+### Milestone 1 — Research and Requirements Engineering
 
 - **Estimated duration:** 2 weeks
 - **FTE:** 1,5
@@ -137,8 +137,6 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 |    0a. | License         | Apache 2.0                                                                                                                |
 |    0b. | Documentation   | The designs and requirements will be documented.                                                                          |
 |    0c. | Testing Guide   | Core functionality will be covered by unit tests to ensure robustness.                                                    |
-|    0d. | Article         | We will publish an **article** that explains how the faucet works, why it was created, and how it can be used by anyone.  |
-|     1. | Design Document | A detailed description of the frontend design as well as an architecture diagram will be used to develop the blokkFaucet. |
 |     2. | Authentication  | I will create a module for OAuth user authentication that will uniquely identify users and make faucet sybil-resistant.   |
 |     3. | User status     | I will create a module for checking whether user is eligible to receive free tokens.                                      |
 |     4. | Faucet drip     | I will create a module that will send user free tokens if eligible.                                                       |
@@ -154,7 +152,6 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 |    0a. | License         | Apache 2.0                                                                                                               |
 |    0b. | Documentation   | The architecture and the designs will be documented.                                                                     |
 |    0c. | Testing Guide   | Core functionality will be covered by unit tests to ensure robustness.                                                   |
-|    0d. | Article         | We will publish an **article** that explains how the faucet works, why it was created, and how it can be used by anyone. |
 |     1. | Authentication  | There will be an authentication flow to several OAuth providers implemented.                                             |
 |     2. | Game            | We will implement a browser based game, which allows the user to receive free tokens by time or level achievement.       |
 |     3. | User status     | We will build an API which checks if the user is allowed to receive free tokens.                                         |
@@ -171,7 +168,6 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 |    0a. | License         | Apache 2.0                                                                                                               |
 |    0b. | Documentation   | The architecture and the designs will be documented.                                                                     |
 |    0c. | Testing Guide   | Core functionality will be covered by unit tests to ensure robustness.                                                   |
-|    0d. | Article         | We will publish an **article** that explains how the faucet works, why it was created, and how it can be used by anyone. |
 |     1. | Modules testing | The core modules of the api will be unit tested to guarantee functionality and robustness.                               |
 |     2. | Smoke tests     | We will smoke test the application to ensure the application works as expected.                                          |
 |     3. | Load test       | We will also load test the application to ensure it is secured agains overload.                                          |
@@ -187,7 +183,6 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 |    0a. | License            | Apache 2.0                                                                                                               |
 |    0b. | Documentation      | The architecture and the designs will be documented.                                                                     |
 |    0c. | Testing Guide      | Core functionality will be covered by unit tests to ensure robustness.                                                   |
-|    0d. | Article            | We will publish an **article** that explains how the faucet works, why it was created, and how it can be used by anyone. |
 |     1. | Tech documentation | Architecture and implementation will be documented inline as well as in a documentation file.                            |
 |     2. | Usage documentaton | There will be a documentation how to use the faucet and game.                                                            |
 
@@ -200,6 +195,7 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 | Number | Deliverable   | Specification                                                                                                            |
 | -----: | ------------- | ------------------------------------------------------------------------------------------------------------------------ |
 |    0a. | License       | Apache 2.0                                                                                                               |
+|    0b. | Article            | We will publish an **article** that explains how the faucet works, why it was created, and how it can be used by anyone. |
 |    0c. | Content Creation | Develop engaging content like a blog post and a tutorial how to use the faucet and its benefits. Share this content across various platforms.                                                 |
 
 
