@@ -193,8 +193,6 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 
 ### Milestone 5 — Community Engagement
 
-**@stufi add the community engagement**
-
 - **Estimated duration:** 0,5 weeks
 - **FTE:** 1,5
 - **Costs:** 1,200 USD
@@ -202,9 +200,8 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 | Number | Deliverable   | Specification                                                                                                            |
 | -----: | ------------- | ------------------------------------------------------------------------------------------------------------------------ |
 |    0a. | License       | Apache 2.0                                                                                                               |
-|    0b. | Documentation | The architecture and the designs will be documented.                                                                     |
-|    0c. | Testing Guide | Core functionality will be covered by unit tests to ensure robustness.                                                   |
-|    0d. | Article       | We will publish an **article** that explains how the faucet works, why it was created, and how it can be used by anyone. |
+|    0c. | Content Creation | Develop engaging content like a blog post and a tutorial how to use the faucet and its benefits. Share this content across various platforms.                                                 |
+
 
 ## Future Plans
 
