@@ -125,6 +125,8 @@ Our team boasts a robust blend of blockchain and web development expertise. Rém
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 1,5 FTE
 - **Total Costs:** 12,000 USD
+- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (50%-100%)
+
 
 ### Milestone 1 — Research and Requirements Engineering
 
