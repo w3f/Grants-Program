@@ -3,7 +3,7 @@
 - **Team Name:** blokk by Apps with love AG
 - **Payment Details:**
   - **DOT**: 13BXrKJVAamJwVYaKcHXvnUG24hpTtbAMbaPphTsEVsFi9Bh
-- **Level:** 1
+- **Level:** 2
 
 ## Project Overview
 
