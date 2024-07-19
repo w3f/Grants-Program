@@ -21,8 +21,8 @@ Polkadot faucet which provides a browser game secured by several OAuth providers
 
 #### Figma Mockups
 
-![Fruit Ninja](https://github.com/user-attachments/assets/e42507ca-094d-4bd0-9ab5-72e74013c89d)
-![Mining](https://github.com/user-attachments/assets/f0789d45-4186-4981-9a69-f6c377f526ca)
+![Fruit Ninja](https://raw.githubusercontent.com/blokk-studio/w3f-Grants-Program-blokk/blokk-polkadot-faucet/static/fruit-ninja-mock.png)
+![Choose a Game](https://github.com/blokk-studio/w3f-Grants-Program-blokk/blob/blokk-polkadot-faucet/static/choose-a-game-mock.png)
 
 See [all screen mocks in Figma](https://www.figma.com/design/6C57eHkcYOL3gmOhg9Skv0/POW-Faucet-Game?node-id=1%3A27&t=QqnRK1Y0J9lNYL6o-1).
 
@@ -39,7 +39,9 @@ You can access a [clickable Figma prototype](https://www.figma.com/proto/6C57eHk
 
 ### Architecture Diagram
 
-![Architecture](https://github.com/blokk-studio/w3f-grants-program/assets/137090776/e295f4a5-b953-4141-9958-f9f34a5bbb33)
+![Architecture](https://raw.githubusercontent.com/blokk-studio/w3f-Grants-Program-blokk/blokk-polkadot-faucet/static/architecture-draft.png)
+
+
 
 ### Ecosystem Fit
 
