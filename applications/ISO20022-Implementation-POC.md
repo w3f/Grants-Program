@@ -17,7 +17,7 @@ ISO20022 is the future standard of financial transactions of all kinds including
 ### Project Details
 
 If Polkadot wants to become compatible with the traditional finance industry, an ISO20022 integration will be the right place to start.
-The goal of this project is to get an overview of how other blockchain ecosystmes approach the ISO20022 integration, outline challenges and opprotunities of such an integration and provide technical designs of how Polkadot could become ISO20022 compatible.
+The goal of this project is to get an overview of how other blockchain ecosystems approach the ISO20022 integration, outline challenges and opportunities of such an integration and provide technical designs of how Polkadot could become ISO20022 compatible.
 
 ## Team :busts_in_silhouette:
 
