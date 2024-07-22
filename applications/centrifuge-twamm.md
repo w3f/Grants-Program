@@ -3,6 +3,7 @@
 - **Team Name:** k/factory (former Centrifuge Development Team)
 - **Payment Address:** Ethereum(USDC) - 0x2B8A956BF807E22d858dc9AD2eFc30cccc3Ea676
 - **Level:** 🐓 3
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1813#issuecomment-2237748467)
 
 ## Project Overview :page_facing_up:
 
