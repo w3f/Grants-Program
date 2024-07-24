@@ -33,6 +33,15 @@ function HomepageHeader() {
             </Link>
             <Link
               className="button button--secondary button--lg"
+              to="./docs/office-hours"
+              style={{
+                marginLeft: "10px",
+                marginBottom: "5px"
+              }}>
+              Office Hours
+            </Link>
+            <Link
+              className="button button--secondary button--lg"
               to="./docs/rfps"
               style={{
                 marginLeft: "10px",
