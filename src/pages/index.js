@@ -27,7 +27,9 @@ function HomepageHeader() {
               to="./docs/Process/how-to-apply"
               style={{
                 marginLeft: "10px",
-                marginBottom: "5px"
+                marginBottom: "5px",
+                backgroundColor: "rgb(0, 0, 0)",
+                color: "rgb(250, 250, 250)"
               }}>
               Apply
             </Link>
