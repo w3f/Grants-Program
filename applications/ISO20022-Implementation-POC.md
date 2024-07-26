@@ -147,7 +147,9 @@ This project has not started yet, but there has been some previous related work 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0e. | Article | We will publish an **article** that outlines the current state of other blockchain's ISO20022 development as well as technical designs how to solve this for Polkadot.|
+| **0c.** | Methodology | Description of how the information was sourced. |
+| **0e.** | Bibliography | List of sources |
+| 1. | Article | We will publish an **article** that outlines the current state of other blockchain's ISO20022 development as well as technical designs how to solve this for Polkadot.|
 
 ## Future Plans
 
