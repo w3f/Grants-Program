@@ -187,6 +187,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Estimated Duration:** 1.5 month
 - **FTE:**  2,5
 - **Costs:** 12,000 USD
+
 | Number | Deliverable   | Specification |   
 | -----: | ----------| ----------------|
 |      1 | Burve API for Trading Routing| Launch the Burve API for trading routing on Polkadot.  |
