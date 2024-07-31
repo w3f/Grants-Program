@@ -55,6 +55,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [gmajor](https://github.com/gmajor-encrypt)                       | [subxt-python](./subxt-python.md)                     | [GitHub](https://github.com/gmajor-encrypt/xcm-tools)                 | ☐          |        ☐       |      ☐      |
 | [Liu-Cheng Xu](https://github.com/liuchengxu)                       | [Subcoin](./Subcoin.md)                     | [GitHub](https://github.com/subcoin-project/subcoin)                 | ☐          |        ☒       |      ☐      |
 | [Experio S M](https://www.linkedin.com/in/leogcustodio/)                       | [Polkadart Follow-up](./polkadart_extension.md)                     | [GitHub](https://github.com/leonardocustodio/polkadart)                 | ☐          |        ☐       |      ☐      |
+| [Solidbit GmbH](https://solid-bit.com/)                       | [ISO20022 Ecosystem Research and Technical Design](./ISO20022-Implementation-POC.md)                     | [GitHub](https://github.com/SolidbitGmbH)                 | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
