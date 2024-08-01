@@ -47,7 +47,7 @@ The following items could be the initial deliverables of the project. Of course,
 
 - Initial research:
   - study how the current javascript console is developed at https://polkadot.js.org/apps/#/js
-  - understand the libaries currently integrated from [polkadot JS API docs](https://polkadot.js.org/docs/)
+  - understand the libraries currently integrated from [polkadot JS API docs](https://polkadot.js.org/docs/)
 
 - Development:
   - design a new UI/UX with better experience than current javascript console with features like

@@ -96,7 +96,7 @@ Currently a number of node operators are using other tools, such as [Grafana](ht
 
 For a more in-depth review of the team’s past experiences, go to the team’s [LinkedIn profiles](#Team-LinkedIn-Profiles) section.
 
-Dylan Galea has been involved in the development of [PANIC for Polkadot](https://github.com/SimplyVC/panic_polkadot) in both frontend and backend work. He has been part of the backend team during the implementation of the [Polkadot API server](https://github.com/SimplyVC/polkadot_api_server) and [PANIC for Cosmos](https://github.com/SimplyVC/panic_cosmos) and helped in the fulfilment of technical reviews for [PANIC for Oasis](https://github.com/SimplyVC/panic_oasis).
+Dylan Galea has been involved in the development of [PANIC for Polkadot](https://github.com/SimplyVC/panic_polkadot) in both frontend and backend work. He has been part of the backend team during the implementation of the [Polkadot API server](https://github.com/SimplyVC/polkadot_api_server) and [PANIC for Cosmos](https://github.com/SimplyVC/panic_cosmos) and helped in the fulfillment of technical reviews for [PANIC for Oasis](https://github.com/SimplyVC/panic_oasis).
 
 Guilherme Zimmermann was previously a full stack developer on the [blog](https://www.betsson.com/en/blog/) and [promotions platform](https://www.betsson.com/en/promotions) of Betsson Group. He was also involved in the [public billing module](https://www.philips.ae/healthcare/resources/landing/tasy) of Philips Healthcare as a full stack developer. His efforts are now focused on the PANIC UI together with the development of Simply VC’s open source [UI Kit](https://www.npmjs.com/package/@simply-vc/uikit).
 
