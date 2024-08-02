@@ -179,7 +179,6 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 |      3. | HODL Mode Support  | Implement HODL mode allowing users to set tokens’ linear or exponential curve parameters for token launch. |
 |      4. | Features Implementation | Integrate key features into the smart contract, including pre-mint, scheduled trading option, selectable anchor tokens (DOT, USDT, and proposed anchor tokens by Polkadot users), community FOMO or FUD vote, and fixed/adaptive max supply setting option. |
 |      5. | Factory and Bonding Curve Smart Contracts | Develop factory smart contract and bonding curve smart contract for Polkadot's parachain.|
-|      6. | Security Audits  | Conduct 2x third-party security audits to ensure the smart contract's reliability and security.|
 
 
 ### Milestone 2 Product Feature Enhancement and Growth
@@ -190,9 +189,9 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 | Number | Deliverable   | Specification |   
 | -----: | ----------| ----------------|
-|      1 | Burve API for Trading Routing| Launch the Burve API for trading routing on Polkadot.  |
-|      2 | LOL Mode Support | Implement LOL mode where users do not need to set parameters; once a $33k market cap is reached, the token will automatically migrate to popular DEX(s) on Polkadot to create an LP and achieve a 3x to 5x price increase. |
-|      3 | TG Bot Integration  | Develop a TG bot for tracking and managing token launches, sales, and purchases in Polkadot. |
+|      1. | Burve API for Trading Routing| Launch the Burve API for trading routing on Polkadot.  |
+|      2. | LOL Mode Support | Implement LOL mode where users do not need to set parameters; once a $33k market cap is reached, the token will automatically migrate to popular DEX(s) on Polkadot to create an LP and achieve a 3x to 5x price increase. |
+|      3. | TG Bot Integration  | Develop a TG bot for tracking and managing token launches, sales, and purchases in Polkadot. |
 
 
 ## Future Plans
