@@ -198,7 +198,7 @@ This brings us to total estimation of 10 weeks with a 1.5 FTE. With hourly rates
 | **0b.** | Documentation | We will provide both **inline documentation** of all new code and basic guides that explain how a user can add new nodes to SwarmNL and showcase API usage for different network configurations. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness.|
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Research | Reserch on decentralized fault-tolerant, coordination and sharding algorithms for large scale networks. |
+| 1. | Research | Research on decentralized fault-tolerant, coordination and sharding algorithms for large scale networks. |
 | 2. | Scaling | Implementation of sharding, data-forwarding and fault-tolerant algorithms into SwarmNL. |
 | 3. | IPFS integration | Implementation of interfaces to upload, download and pin IPFS files. |
 | 4. | Extendability of library | Implementation of interfaces to POST arbitrary data to remote servers. |
