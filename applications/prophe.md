@@ -246,49 +246,45 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  3FTE
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 28,500 USD
 - **DOT %:** 50%
 
-### Milestone 1  — Mobile design & Development and Framework Setup
+### Milestone 1  — Frontend Development and Framework Setup
 
 - **Estimated duration:** 3 weeks
 - **FTE:**  2
-- **Costs:** 8,000 USD
-
+- **Costs:** 6,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | MOBILE VIEW DESIGN  |  Updates will be found here https://www.figma.com/design/4SiGenSrJg9JQ0amn4HWMv/PROPHE.P?node-id=2809-11652&t=ShjSrann25tsdoBl-0
-| **0b.** | Frontend Implementation | We will ensure both mobile and desktop views are fully functional and responsive.
-| **0c.** | Testing and Testing Guide | Quality assurance and A/B testing will be done and dashboard will be available at www.app.prophe.xyz
+| **0a.** | License | MIT 
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can add smart contract or wallet address they wish to monitor.
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the ReadME file, we will describe how to run these tests as well as quality assurance and A/B testing will be done and dashboard will be available at www.app.prophe.xyz.
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Frontend Implementation | We will ensure both mobile and desktop views are fully functional and responsive.
 
 
+### Milestone 2  —  Data Indexing, Visualization and Infrastructure setup
 
-### Milestone 2  —  Data Indexing and Visualization
-
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 2 months
 - **FTE:**  2
-- **Costs:** 12,000 USD
+- **Costs:** 22,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Database design  | Set up of schemas on convexDB for efficient storage and retrieval of contract or wallet data
-| **0b.** | Data Indexing Framework | We will develop a comprehensive framework for analyzing smart contracts or wallets deployed on  polkadot/substrate and ensure the framework / Database  meets project requirements and provides actionable insights. .
-| **0c.** | Smart Contract/Wallet Analysis Framework |  Implement tools and use Indexing services (Subquery or Subsquid) for assessing real-time data, performance, and functionality of smart contracts.
+| **0a.** | License | MIT 
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user canadd smart contract or wallet address they wish to monitor.
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the ReadME file, we will describe how to run these tests as well as quality assurance and A/B testing will be done and dashboard will be available at www.app.prophe.xyz.
+| **0d.** | Docker | We will provide a Dockerfile(s) that will include CI/CD pipelines for seamless integration and deployment that can be used to test all the functionality delivered with this milestone.
+| 0e. | Article | We will publish an **article**/workshop that explains the database architecture and a system architecture on how data is being fetched and returned offchain .
+| **1.** | Database design  | Set up of schemas on convexDB for efficient storage and retrieval of contract or wallet data
+| **2.** | Data Indexing Framework | We will develop a comprehensive framework for analyzing smart contracts or wallets deployed on  polkadot/substrate and ensure the framework / Database  meets project requirements and provides actionable insights. .
+| **3.** | Smart Contract/Wallet Analysis Framework |  Implement tools and use Indexing services (Subquery or Subsquid) for assessing real-time data, performance, and functionality of smart contracts.
+| **4.** | Lambda functions |  Develop and deploy Lambda functions for an alert system focused on email delivery.
 
 
 
-### Milestone 2  — CI/CD and Infrastructure Setup
 
-- **Estimated Duration:** 1 month
-- **FTE:**  2
-- **Costs:** 10,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Load balancer | Use cloud-based service a load balancer to manage incoming traffic and ensure system stability.
-| **0b.** | Docker|  We will  Implement CI/CD pipelines for seamless integration and deployment and provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. 
-| **0c.** | Lambda functions |  Develop and deploy Lambda functions for an alert system focused on email delivery.
 
 
 ## Future Plans
