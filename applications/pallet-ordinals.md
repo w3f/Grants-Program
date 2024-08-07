@@ -88,7 +88,7 @@ We are friends and we both previously worked for a commercial bank in China. Unf
 - https://github.com/subbitlab/pallet-ordinals
 - https://github.com/subbitlab/substrate-ord-template
 
-- https://github.com/Arraon-rgb
+- https://github.com/aa3ron
 - https://github.com/TsunodaSony
 
 ### Team LinkedIn Profiles (if available)
