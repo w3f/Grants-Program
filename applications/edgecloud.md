@@ -1,4 +1,4 @@
-# EdgeCloud - Distribute AI Workloads Globally with Ease
+# NueroZK - Empowering AI at the edge with zero-knowledge proofs.
 
 - **Team Name:** Cyborg Network
 - **Payment Address:** 12Enn321pZSZkNtBwsTRxxZTKS9DsGpk8PTkZsnsMjTzrtFa (AssetHub USDT) 
