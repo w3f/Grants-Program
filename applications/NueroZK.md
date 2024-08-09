@@ -13,15 +13,11 @@
 
 This application is a follow up from our successful grant delivery [grant application](https://github.com/w3f/Grants-Program/blob/master/applications/Cyborg.md)
 
-Cyborg Network is developing a DePIN-based marketplace for edge computing servers to help latency-dependent applications scale globally with ease. Users can offload specific low-latency workloads to edge locations while keeping their main deployment in the cloud. Our vision is to act as a crucial middleware on the network's edge, managing these tasks to reduce cloud operation costs while complementing existing cloud services. Since our business focus is enterprise-driven, we prioritize onboarding infrastructure providers who can comply with regulations like SLAs and data privacy laws.
+Cyborg Network is developing a DePIN-based marketplace for edge computing resources, enabling latency-sensitive applications to scale globally with ease. Users can seamlessly offload specific low-latency workloads to edge locations while maintaining their core deployment in the cloud. Our vision is to serve as essential middleware at the network edge, orchestrating these tasks to reduce cloud operational costs and enhance existing cloud services. In response to user demand and recognizing the growing importance of distributed AI inference infrastructure, we are prioritizing the development of a decentralized AI compute platform leveraging ZK proofs as our go-to-market strategy.
 
-We establish connections with small to medium-sized data centers to address the demands of enterprise-level clients, ensuring that their requirements are fully met. Our primary emphasis lies in delivering tailored service packages, meticulously designed for diverse deployment scenarios. Our overarching goal is to provide users with a service experience reminiscent of the Web 2.0 era.
+As part of our previous application, we delivered CyberDock, a product line focused on helping users deploy dockerized containers into our edge server network. We are now focusing on expanding this approach to a new product line called NueroZK, which will enable AI apps to run Inference Engines backed by ZK proofs.
 
-As part of our previous application, we delivered CyberDock, a product line focused on helping users deploy dockerized containers into our edge server network. We are now focusing on expanding this approach to a new product line called EdgeCloud, which will enable AI apps to distribute workloads based on performance requirements.
-
-A real-time application for EdgeCloud can be found in our [Edge Computing Case Study Draft](https://docs.google.com/document/d/1Dv7xsiFeFKk4Z3_N0cOPn_pMkXtxraCZlygVMO7PdqM/edit?usp=drive_link), which also highlights the significance of the solution.
-
-We will also be launching a line of pre-configured edge servers in partnership with [Simply NUC](https://simplynuc.com/), our hardware partner. Interested community members in high-demand locations will have the opportunity to purchase and operate these servers either in a co-location data center (recommended) or in their private facility (beta). They will be incentivized based on uptime guarantees and the work contributed to the network, similar to mining in PoW chains.
+Users can easily run GPU based inference engines in our crowdsoruced GPU network, with compute integrity verified using a ZK SNARK proof that proves that the inference algorithm was executed with 100% accuracy without revealing the actual inference algorithm nor the query or result data.
 
 We are on a mission to establish Cyborg Network as a Polkadot parachain. Our decision is anchored in several key reasons:
 
@@ -30,6 +26,9 @@ First, we're enticed by their advanced interoperable features, such as shared se
 Second, the unparalleled ecosystem and technical support provided by Polkadot and Kusama have been instrumental in our development, and we've had the privilege of closely collaborating with them over the years.
 
 Lastly, the substrate framework stands out as the premier tool for crafting blockchains from the ground up in today's landscape. Our commitment to excellence aligns with the capabilities it offers.
+
+We will also be launching a line of pre-configured edge servers in partnership with [Simply NUC](https://simplynuc.com/), our hardware partner. Interested community members in high-demand locations will have the opportunity to purchase and operate these servers either in a co-location data center (recommended) or in their private facility (beta). They will be incentivized based on uptime guarantees and the work contributed to the network, similar to mining in PoW chains.
+
 
 ### Project Details
 
@@ -53,15 +52,14 @@ Developers can monitor details such as resource utilization and application heal
 
 ![dashboard](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/90f160c6-5cef-408b-8db2-c3e550fdb6a8)
 
-### Task Distribution System
+### ZK Snark proof verification 
 
-For this grant application, We will improvise our previous submission to make it live on Rococo and then proceed with developing a decentralized task distribution system to incorporate an on-chain load balancing system for containerized tasks executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, the client interface (K3s worker system), an Oracle, and a testing suite.
+For this grant application, We will improvise our previous submission to make it live on Paseo and then proceed with developing a decentralized proof verification system to incorporate an on-chain ZK Snark system for verifying AI infernece models executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, The Cyborg Worker node (A custom node implementation to manage running offchain tasks and streaming proofs into pallets for verification), an Oracle, and a testing suite.
 
-The objective is to deploy a multi-container Docker application into our K3s cluster and manage task distribution across various worker nodes in different geographical locations based on user requirements. The Substrate blockchain will establish secure communication with the K3s master node to issue commands for load balancing and task distribution.
+The objective is to deploy a pre trained AI inference model in servers at different geographical locations based on user requirements. The Substrate blockchain will establish secure communication with worker nodes to issue commands for deploying, testing and verifying model executions.
 
 We will define a new Substrate node configuration for the Cyborg worker nodes, which users can rent on demand from the pool of available worker nodes.
 
-The system will initially consist of 1 master node and 1 worker node. The application will run on the worker node initially, and users can add additional worker nodes in different locations as needed. Users will update YAML files on each server based on their requirements. The system will provide logs and usage metrics to users for monitoring and optimization purposes.
 
 ### Ecosystem Fit
 
@@ -84,7 +82,9 @@ The technological landscape sees a plethora of competitors, each carving their n
 - [Barath Kanna](https://www.linkedin.com/in/barath-kanna) - Founder & CEO
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-t) - Founder & COO
 - [Calvin Sze](https://www.linkedin.com/in/calvin-sze/) - Lead Fullstack Developer
-- [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Rust Substrate Developer
+- [Noor Mohammed](https://www.linkedin.com/in/noormohammedb/) - Substrate and Backend Developer
+- [O Wahyudi](https://www.linkedin.com/in/sgid8t2c/) - Senior Backend Engineer
+- [Tom Bleek](https://www.linkedin.com/in/tom-bleek-a7332b182/) - Front End Developer
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - Substrate Advisor
 
 ### Contact
@@ -105,8 +105,6 @@ The technological landscape sees a plethora of competitors, each carving their n
 - [Megha Varshini](https://www.linkedin.com/in/megha-varshini-tamilarasan-b1247a212) - She has been involved in operations for Web3 projects and has taken initiatives in the blockchain community. One of her contributions is the establishment of [Indi Verse DAO](https://www.linkedin.com/company/indi-verse-dao), a web 3.0 community in India. Additionally, she is the candidate of the Polkadot Ambassador Program. She is also a graduate from the Polkadot Blockchain Academy's Founders Track at Hong Kong (Jan - Feb 2024)
   
 - [Calvin Sze](https://www.linkedin.com/in/calvin-sze/) - Full Stack Blockchain Developer with 5 plus years of experience in blockchain development. He is a PBA alumni from Berkeley.
-
-- [Dheeraj Reddy](https://www.linkedin.com/in/dheeraj-reddy/) - Aspiring Rust systems engineer who is also a PBA alumni from Developer Track at Berkeley Cohort.
 
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) (Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
 
