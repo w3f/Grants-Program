@@ -1,7 +1,7 @@
 # Threshold Signature Implementation
 
 - **Team Name:** Rui Morais
-- **Payment Address:** FIAT
+- **Payment Address:** FIAT (Sent by email to grants@web3.foundation on 09/08/2024, 16:07 UTC+1)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Description :page_facing_up:
