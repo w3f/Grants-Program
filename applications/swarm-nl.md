@@ -137,20 +137,71 @@ We have built a PoC for SamaritanDB (see [the Github repo here](https://github.c
 
 ### Milestone 2
 
-- **Estimated Duration:** 1.5 months (6 weeks)
-- **FTE:** 1
-- **Costs:** $12,000
+- **Estimated Duration:** 2.5 months (10 weeks)
+- **FTE:** 1.5
+- **Costs:** $36,000
+
+#### 1. Research on Scaling
+
+Research objective: to find the most efficient implementation to scale swarms, using state of the art research (estimated: 2 weeks).
+
+
+**1 week:**
+
+- Fault tolerance algorithms and their implementations
+- Sharding algorithms
+- Cooperation / coordination algorithms
+
+**1 week:**
+
+- Report of findings
+- Comparative analysis and final decisions based on our findings for the direction of our implementation
+
+
+#### 2. Sharding and data forwarding implementation
+
+
+**A. 3 weeks: sharding and data forwarding**
+
+- 1 week: scaffolding and draft implementation
+- 2 weeks: review, testing and improvements
+
+
+**B. 2 weeks: writing integration-like tests to demonstrate the algorithms at scale**
+
+- 1 week: benchmarking network behavior
+- 1 week: documentation and results
+
+
+#### 3. IPFS integration
+
+
+**Estimated 1 week:**
+
+- Implementation of all IPFS features for a swarm / testing
+- Documentation and guides to easily use the IPFS features (tweak library accordingly if necessary)
+
+
+#### 4. Extendability of library
+
+**Estimated 2 weeks:**
+
+- Provide capabilities to take snapshots of networking state and send to remote server including logs
+- Testing and documentation
+- Touching up and miscellaneous
+
+This brings us to total estimation of 10 weeks with a 1.5 FTE. With hourly rates revised to 60 USD/hr at 40 hour per week, our estimations come to a 2400 USD (1 FTE) + 1200 (0.5 FTE). This brings the total to 36,000 USD for Milestone 2, to fund the work of a Lead Engineer + Protocol Researcher (Adedeji) and Project Lead + Developer (Sacha) required to ship the libraries' features for this milestone.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can add new nodes to SwarmNL. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0b.** | Documentation | We will provide both **inline documentation** of all new code and basic guides that explain how a user can add new nodes to SwarmNL and showcase API usage for different network configurations. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness.|
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Demo API usage | Showcase API usage with short guides using different configurations. |
-| 1. | Scaling | Implementation of sharding, data-forwarding and fault-tolerant algorithms into SwarmNL. |
-| 2. | IPFS integration | Implementation of interfaces to upload, download and pin IPFS files. |
-| 3. | Additional Extendability | Implementation of interfaces to POST arbitrary data to remote servers. |
+| 1. | Research | Research on decentralized fault-tolerant, coordination and sharding algorithms for large scale networks. |
+| 2. | Scaling | Implementation of sharding, data-forwarding and fault-tolerant algorithms into SwarmNL. |
+| 3. | IPFS integration | Implementation of interfaces to upload, download and pin IPFS files. |
+| 4. | Extendability of library | Implementation of interfaces to POST arbitrary data to remote servers. |
 
 
 ## Future Plans
