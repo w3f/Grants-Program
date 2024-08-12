@@ -162,11 +162,11 @@ the grant delivery will have 2 distinct parts split into three milestones
 - **Full-Time Equivalent (FTE):** 2 ( 1 Full time Developers at 1 FTE/month and 2 part time developers each at 0.5 FTE/month)
 - **Total Costs:** 29,000 USD
 
-### Milestone 1 - Cyborg Testnet Launch
+### Milestone 1 - Cyborg Oracle Implementation
 
 - **Estimated duration:** 2 months
 - **FTE:**  4
-- **Costs:** 9,000 USD
+- **Costs:** 10,000 USD
 
 #### **Deliverables:**
 
@@ -175,16 +175,15 @@ the grant delivery will have 2 distinct parts split into three milestones
 | **0a.** | License | GPLv3 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can (for example) deploy docker images using our interface. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Working Demo | We will provide video documentation to help developers understand the process of deploying containered tasks.|
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to deploy a local cyborg parachain and test the features of this delivery. |
+| 1. | Working Demo | We will provide video documentation to help developers understand the process of testing the Orcale implementation.|
 | 2. | Task Examples | We will provide example containers and data sets to help programmers understand and execute batch processes.|
-| 3. | Substrate Module: Payments | This pallet will be responsible for estimating the costs for executing a task based on server specifications and time. |
+| 3. | Substrate Module: Oracle | This pallet will be responsible for establishing communication and regulating the use of an oracle. |
 | 4. | Front end App: Cyborg Connect | The UI for accessing the features with a substrate wallet address |
-| 5. | Worker K3S Operator | The k8s worker acts as a trusted controller. It securely stores deployment states, including manifests and defined secrets. Based on the manifests, the Worker uses remote attestation to authenticate the task exceution process.|
-| 6. | Worker logs | The execution logs of the deployed container to serve as a proof of work. |
+| 5. | Cyborg Oracle | An ORML based oracle implementation to seamless exchange data packets between cyborg parachain and connected offchain clusters|
 
 
-### Milestone 2 - Task Distribution system - 1
+### Milestone 2 - Cyborg Worker Nodes
 
 - **Estimated duration:** 2 months
 - **FTE:**  4
@@ -206,7 +205,7 @@ the grant delivery will have 2 distinct parts split into three milestones
 | 5. | Worker K3S Operator | The k8s worker acts as a trusted controller. It securely stores deployment states, including manifests and defined secrets. Based on the manifests, the Worker uses remote attestation to authenticate the task exceution process.|
 | 6. | Worker logs | The execution logs of the deployed container to serve as a proof of work. |
 
-### Milestone 3 - Task Distribution system - 2
+### Milestone 3 - ZK Verification Layer
 
 - **Estimated duration:** 2 months
 - **FTE:**  4
