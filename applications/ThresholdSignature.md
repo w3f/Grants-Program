@@ -1,7 +1,9 @@
 # Threshold Signature Implementation
 
 - **Team Name:** Rui Morais
-- **Payment Address:** 14bBGQFAgKqdbGVDSWkm6dA8ZQzt9GxGSTALrD8SeafWW9gL (USDC)
+- **Payment Address:** 
+    - FIAT (Sent by email to grants@web3.foundation on 09/08/2024, 16:07 UTC+1)
+    - Polkadot: 14bBGQFAgKqdbGVDSWkm6dA8ZQzt9GxGSTALrD8SeafWW9gL
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Description :page_facing_up:
