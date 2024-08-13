@@ -2,6 +2,7 @@
 
 - **Team Name:** Polket
 - **Payment Address:** 0xd35f9Ea14D063af9B3567064FAB567275b09f03D(ETH-USDT)
+- **Payment Address:** 12uGmfQZem1aa8hycXQSaTEvHfpXwS2S7XhwbQa4jHeaA1wu(Polkadot)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -114,7 +115,7 @@ On the AISub platform, suppliers (model providers) can easily manage and publish
   - By leveraging the AIStream Protocol, suppliers can focus on their core business—running and optimizing AI models—while ensuring they automatically receive compensation as user demands are fulfilled.
 
 
-### Membership Program Plan
+#### Membership Program Plan
 
 ![AISub_Timeline](https://raw.githubusercontent.com/AISubtrate/AIsubBuild/master/AISub_Member_System.jpg)
 
@@ -128,20 +129,20 @@ The membership fees collected will be distributed among all participants, includ
 
 ### Ecosystem Fit
 
-### Where and how does your project fit into the ecosystem?
+#### Where and how does your project fit into the ecosystem?
 
  (AISub) will become an essential AI service platform within the Polkadot ecosystem, complementing existing infrastructure while adding new value through decentralized resource integration and a payment system. By focusing on AI model operation and payment within a decentralized framework, AISub enhances the ecosystem by providing a unique service that addresses the high entry barriers and centralization issues currently prevalent in AI technology.
 
-### Who is your target audience?
+#### Who is your target audience?
 
 Our primary target audience includes AI model developers, node operators providing computational resources, and third-party application developers seeking to leverage AI services through blockchain technology.
 
-### What need(s) does your project meet?
+#### What need(s) does your project meet?
 
 - **Lowering the Barrier for AI Adoption**: AISub meets the demand for simplified AI access by providing a user-friendly platform that allows individuals without deep technical backgrounds to easily access and utilize AI models.
 - **Decentralized Resource Integration**: The project enables a fair revenue model for resource providers, ensuring that those contributing AI models and computational power can earn rewards in a decentralized and transparent manner.
 
-### Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+#### Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
 No similar projects currently exist within the Polkadot ecosystem. While there are decentralized projects focused on computational resource integration, they typically do not specialize in AI model operation and payment. This uniqueness positions AISub as a distinctive and valuable addition to the ecosystem.
 
@@ -242,8 +243,6 @@ When the milestones in the grant are completed, we will open source the entire p
 Our projects are open source based on GPL-3.0 license.
 
 ## Future Plans
-
-### Future Plans
 
 1. We also plan to develop a Flutter version of the application, enabling users to access our services on more devices and platforms.
 2. We aim to integrate cross-chain functionality, allowing users to use a wider range of assets to purchase AI services, thereby enhancing the availability and convenience of our services.
