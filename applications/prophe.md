@@ -274,7 +274,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT 
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user canadd smart contract or wallet address they wish to monitor.
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the ReadME file, we will describe how to run these tests as well as quality assurance and A/B testing will be done and dashboard will be available at www.app.prophe.xyz.
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the ReadME file, we will describe how to run these tests as well as quality assurance and A/B testing will be done and dashboard will be available at www.pkdt.prophe.xyz.
 | **0d.** | Docker | We will provide a Dockerfile(s) that will include CI/CD pipelines for seamless integration and deployment that can be used to test all the functionality delivered with this milestone.
 | 0e. | Article | We will publish an **article**/workshop that explains the database architecture and a system architecture on how data is being fetched and returned offchain .
 | **1.** | Database design  | Set up of schemas on convexDB for efficient storage and retrieval of contract or wallet data
