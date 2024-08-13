@@ -1,8 +1,9 @@
 # AISub - Decentralized AI model operation and payment ecosystem
 
 - **Team Name:** Polket
-- **Payment Address:** 0xd35f9Ea14D063af9B3567064FAB567275b09f03D(ETH-USDT)
-- **Payment Address:** 12uGmfQZem1aa8hycXQSaTEvHfpXwS2S7XhwbQa4jHeaA1wu(Polkadot)
+- **Payment Details:**
+  - **DOT**: 12uGmfQZem1aa8hycXQSaTEvHfpXwS2S7XhwbQa4jHeaA1wu
+  - **Payment**: Polkadot AssetHub(12uGmfQZem1aa8hycXQSaTEvHfpXwS2S7XhwbQa4jHeaA1wu(USDC))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -194,6 +195,7 @@ Our team also uses the [3w](https://3w.com), a decentralized system that seamles
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** $30,000 USD
+- **DOT %:** 50%
 
 ### Milestone 1 - Complete the text part AI interaction of AI Sub, as well as the construction and operation of the front-end page, and the demo of the supplier part.
 
