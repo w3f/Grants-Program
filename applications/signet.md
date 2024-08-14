@@ -1,7 +1,7 @@
 # Signet - Talisman
 
 - **Team Name:** Paraverse Foundation
-- **Payment Address:** 128tk6D5CvYvGFtvjTgZT8yrD2wPWZyczBoj8LzkmGpTNbo9 (USDC/AssetHub)
+- **Payment Address:** 16mJFuy5t1YzWdjTqU5LKzp9SarANLgbvWHSPiEM9v8BSoxJ (USDC/AssetHub)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
