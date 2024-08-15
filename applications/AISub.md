@@ -241,7 +241,7 @@ Our team also uses the [3w](https://3w.com), a decentralized system that seamles
 
 
 
-When the milestones in the grant are completed, we will open source the entire project.
+We will open source the entire project.
 Our projects are open source based on GPL-3.0 license.
 
 ## Future Plans
