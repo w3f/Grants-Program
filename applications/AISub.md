@@ -123,7 +123,7 @@ On the AISub platform, suppliers (model providers) can easily manage and publish
 
 #### Membership Program Plan
 
-![AISub_Timeline](https://raw.githubusercontent.com/AISubtrate/AIsubBuild/master/AISub_Member_System.jpg)
+![AISub_Timeline](https://raw.githubusercontent.com/AISubtrate/AIsubBuild/master/AISub_Member_System2.jpg)
 
 We are introducing a Membership Program as part of our platform, allowing users to subscribe on a monthly or yearly basis. Under this plan, members will have access to a selection of popular AI models included in the membership offering.
 
