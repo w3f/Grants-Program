@@ -60,7 +60,7 @@ The design of the user interface (UI) on the AISub platform aims to provide an i
 2. **Review Management**:
   - Users can view their reviews of the AI models they have used through the user interface. Each review is linked to a specific model call record, allowing users to reflect on their feedback for each experience.
   - The platform also supports immediate reviews after using a model, enabling users to rate and leave detailed feedback on their experiences. These reviews will be stored on-chain and used for future model optimization and recommendation algorithms.
-  - Users can manage and edit their review records. If they have new insights about a particular review, they can modify or add to their feedback at any time.
+  - Only users who have actually used the model will be able to leave a review. This ensures that reviews come from genuine experiences. Additionally, since submitting a review incurs a cost, it further guarantees the authenticity and reliability of the feedback.
 
 3. **User Interaction and Feedback**:
   - The user interface is not just a query tool; it also provides various ways for users to interact with the platform. Users can submit their opinions and suggestions through the interface or seek support when encountering issues.
@@ -76,9 +76,10 @@ The design of the user interface (UI) on the AISub platform aims to provide an i
 
 6. **Model Execution and Result Retrieval**:
   - Users can initiate AI model execution requests directly from the user interface by following a specified JSON format. Users only need to input the required parameters, and the platform will automatically send the request to the blockchain and assign the appropriate model provider to handle it.
-  - Once the model execution is complete, the user interface will automatically retrieve and display the results from the blockchain, ensuring transparency and data security throughout the process.
-  - The platform offers real-time notifications, so users can be instantly notified when the model execution is complete and can view detailed execution results and related statistics.
-
+  - To ensure the authenticity of the results, each model provider's system incorporates a signature mechanism. This means that each execution result is signed with a unique signature generated using the provider's private key. Users can verify this signature to confirm that the output indeed comes from the specified model provider and model.
+  - Once the model execution is complete, the user interface will automatically retrieve and display the signed results from the blockchain, ensuring transparency and data security throughout the process.
+  - All model execution requests and corresponding execution records are recorded and stored on the blockchain. This allows users to view and verify which model provider executed which model and ensures that each execution is public, transparent, and tamper-proof.
+  - The platform offers real-time notifications to inform users when the model execution is complete, and provides detailed execution results and related statistics. Additionally, a user feedback and rating system is available for users to assess model providers based on their experience. The aggregated feedback allows the committee to effectively monitor provider behavior and take necessary actions to safeguard user interests.
 
 
 #### Supplier Product Overview
@@ -108,6 +109,7 @@ On the AISub platform, suppliers (model providers) can easily manage and publish
 4. **Output Model Execution Results**:
   - After receiving a user's AI model execution request, suppliers can directly output the results to the blockchain through the platform.
   - The platform provides a standardized API, enabling suppliers to efficiently process model execution requests and securely and transparently deliver the results to users.
+  - If the execution results exceed the size limit, the supplier will use IPFS (InterPlanetary File System) for storage within the protocol. In such cases, the data stored on the blockchain will be an IPFS link pointing to the actual result.
   - Suppliers can also review the model's execution logs and performance metrics, helping them analyze model performance and make continuous improvements based on user feedback.
 
 5. **AIStream Protocol Integration**:
@@ -115,18 +117,32 @@ On the AISub platform, suppliers (model providers) can easily manage and publish
   - Once registered, suppliers can use the AIStream Protocol to receive AI run requests from the platform and return the processed results to the blockchain, ensuring an automated and seamless integration process.
   - By leveraging the AIStream Protocol, suppliers can focus on their core business—running and optimizing AI models—while ensuring they automatically receive compensation as user demands are fulfilled.
 
+6. **Addressing Malicious Reviews**:
+  - If a supplier identifies malicious low ratings, they can challenge these reviews through the appeal process. The committee will review these challenges, and if a vote of more than 2/3 is reached, the malicious review can be removed.
+
 
 #### Membership Program Plan
 
 ![AISub_Timeline](https://raw.githubusercontent.com/AISubtrate/AIsubBuild/master/AISub_Member_System.jpg)
 
-
 We are introducing a Membership Program as part of our platform, allowing users to subscribe on a monthly or yearly basis. Under this plan, members will have access to a selection of popular AI models included in the membership offering.
 
-Additionally, we are introducing a new role on the platform: **Machine Supplier**. These providers, using the AIStream Protocol, can contribute computational power to the network without needing to manage or understand the specific AI models being used.
+The membership fees collected will be distributed among all participating suppliers. Distribution will be based on several factors, including model response times, user ratings, and the number of currently processed orders, ensuring a balanced load distribution.
 
-The membership fees collected will be distributed among all participants, including Machine Providers. Distribution will be based on several factors, including machine usage records, historical response performance, and user ratings, ensuring a balanced load distribution. Machines of the same tier will share the membership fees equally, encouraging fair and efficient use of resources.
+Membership purchases will be recorded on-chain with corresponding expiration block numbers. The expiration block number for a membership will be calculated based on the actual block time corresponding to the single block generated. Each time a member initiates a model execution request within the membership plan, the system will first verify if the member is within the valid block period of their membership. If the membership has expired, the system will prevent the execution of the request until a valid membership is confirmed.
 
+Suppliers must apply to join the membership program and await approval from the Committee. The Committee will review and approve supplier applications before they can become part of the membership plan.
+
+#### Committee Functionality
+
+We are introducing a Committee functionality within the platform, which can be accessed through asset staking. Individuals or entities can apply to become members of the Committee by staking assets. The Committee will handle various administrative tasks and disputes through a voting process similar to Polkadot's governance model.
+
+The Committee will have the following responsibilities:
+- **Handling Complaints:** The Committee can address user complaints against suppliers. If a complaint is validated by a 2/3 majority vote, the supplier's status may be set to "banned," restricting their ability to operate on the platform.
+- **Processing Appeals:** Suppliers who have been banned can appeal to the Committee. If the Committee decides to reinstate the supplier after reviewing the appeal, the supplier’s status will be updated accordingly.
+- **Reviewing Malicious Reviews:** The Committee will also review appeals related to malicious low ratings left by users. After a voting process, if the appeal is validated, the malicious review can be revoked.
+
+This Committee module is implemented as a separate pallet, ensuring that governance processes are transparent and fair.
 
 ### Ecosystem Fit
 
@@ -210,10 +226,9 @@ Our team also uses the [3w](https://3w.com), a decentralized system that seamles
 |    0b. | Documentation                                    | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 |    0c. | Testing Guide                                    | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                             |
 |    0d. | Docker                                           | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
-|     1. | pallet-user                                      | `record_usage_history()`: Record the user's history of using modules<br>`add_favorite_module()`: Add a module to the user's favorites<br>`get_usage_rate()`: Retrieve the usage rate of specific modules |
-|     2. | pallet-supplier                                  | `register_supplier()`: Register a new supplier<br>`heartbeat()`: Implement supplier heartbeat check<br>`get_evaluation_history()`: Retrieve historical evaluations<br>`get_pool_rewards()`: Obtain pool rewards |
-|     3. | pallet-currencies                                | `transfer()`: Transfer funds between accounts<br>`mint()`: Mint new currency tokens<br>`burn()`: Burn existing currency tokens<br>`get_balance()`: Retrieve balance for a specific account              |
-|     4. | pallet-model                                     | `create_model()`: Create a new AI model (supplier only)<br>`create_model_version()`: Create a new version of an existing model<br>`initiate_model_execution()`: Start the execution of a model<br>`initiate_model_quotation()`: Start a model quotation order<br>`pay_for_model_order()`: Process payment for a model order<br>`generate_model_result()`: Generate and store the results of model execution |
+|     1. | pallet-user                                     | `record_usage_history()`: Record the user's history of using modules<br>`add_favorite_module()`: Add a module to the user's favorites<br>`get_usage_rate()`: Retrieve the usage rate of specific modules<br>`submit_complaint()`: Submit a complaint against a supplier |
+|     2. | pallet-supplier                                  | `register_supplier()`: Register a new supplier<br>`heartbeat()`: Implement supplier heartbeat check<br>`get_evaluation_history()`: Retrieve historical evaluations<br>`get_pool_rewards()`: Obtain pool rewards<br>`submit_evaluation_appeal()`: Submit an appeal against an evaluation |
+|     4. | pallet-model                                     | `create_model()`: Create a new AI model (supplier only)<br>`create_model_version()`: Create a new version of an existing model<br>`initiate_model_execution()`: Start the execution of a model<br>`initiate_model_quotation()`: Start a model quotation order<br>`pay_for_model_order()`: Process payment for a model order<br>`generate_model_result()`: Generate and store the results of model execution (including specific signatures) |
 |     5. | Vue front end: Initial page and text part AI interaction support | Complete the interaction between the front-end page and Polkadot using Polkadot JS, with priority given to implementing text chat and interaction with text type AI models.                                                                   |
 |     6. | AI supplier demo: Text part                      | As an example of text type access for AI suppliers, the language is Golang.                                                                                                                                                                   |
 |     7. | AIStream Protocol: Doc , goSDK ,tsSDK            | Protocol documentation for monitoring AISub usage and serving suppliers, as well as the corresponding Golang version of the SDK.                                                                                                              |
@@ -232,9 +247,9 @@ Our team also uses the [3w](https://3w.com), a decentralized system that seamles
 |    0b. | Documentation                                                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                            |
 |    0c. | Testing Guide                                                     | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                        |
 |    0d. | Docker                                                            | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                            |
-|     1. | pallet-member                                                     | `create_membership_plan()`: Create new membership plans (admin only)<br>`purchase_membership_plan()`: Allow users to purchase a membership plan<br>`join_membership_plan_as_supplier()`: Suppliers join a membership plan to offer their models<br>`join_membership_plan_as_machine_supplier()`: Machine suppliers join a membership plan to perform calculations for models and receive pool rewards |
-|     2. | pallet-machine-supplier                                           | `create_machine_service()`: Create and register a machine service for running AI models<br>`penalize_slow_performance()`: Penalize machines for slow performance<br>`penalize_failure_to_run()`: Penalize machines that fail to run models as required |
-|     3. | Vue front end: Initial page and image part AI interaction support | Support image type JSON input and output, can directly input images for editing                                                                                                                                                                                                                                                          |
+| 1. | pallet-member | create_membership_plan(): Create new membership plans (Committee only)<br>purchase_membership_plan(): Allow users to purchase a membership plan on a monthly or yearly basis (actual calculation based on block height)<br>join_membership_plan_as_supplier(): Suppliers join a membership plan to offer their models<br>leave_membership_plan(): Suppliers exit the membership plan |
+| 2. | pallet-committee | become_committee_member(): Apply to become a Committee member by staking assets<br>submit_complaint(): Handle user complaints by initiating a voting process, where a vote of "yes" will approve the complaint<br>submit_evaluation_appeal(): Process appeals to revoke evaluations by initiating a voting process, where a vote of "yes" will approve the revocation<br>apply_penalty(): Penalize suppliers for poor performance by initiating a voting process, where a vote of "yes" will impose the penalty<br>approve_membership_plan(): Vote to approve or reject new membership plans submitted by admins<br>approve_supplier_join(): Vote to approve or reject suppliers applying to join the membership plan<br>approve_supplier_exit(): Vote to approve or reject suppliers applying to exit the membership plan |
+|      3. | Vue front end: Initial page and image part AI interaction support | Support image type JSON input and output, can directly input images for editing                                                                                                                                                                                                                                                          |
 |     4. | Vue front end: Initial page and video part AI interaction support | Support video type JSON input and output, can directly input videos or images for editing                                                                                                                                                                                                                                                |
 |     5. | AIStream Protocol: Doc and ts-SDK                                 | Protocol documentation for monitoring AISub usage and serving members, as well as the corresponding Golang version of the SDK and TypeScript version of the SDK.                                                                                                                                                                         |
 |     6. | AI supplier demo: Image part                                      | As an example of text and image type access for AI suppliers and machine suppliers, the language is Golang.                                                                                                                                                                                                                              |
