@@ -109,7 +109,7 @@ Michael Absolon - Faculty of Informatics and Information Technologies STU in Bra
 
 ### Legal Structure
 
-- **Registered Address:**  Postajok 270/5, 085 01 Bardejov
+- **Registered Address:**  Postajok 270/5, 085 01 Bardejov, Slovakia
 - **Registered Legal Entity:** Michael Absolon
 
 ### Team's experience
