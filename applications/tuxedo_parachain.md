@@ -3,6 +3,7 @@
 - **Team Name:** Off Narrative Labs 
 - **Payment Address:** 0x5a335908df9D2C47304338E3b744579Ed7C6a64d (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3 :chicken:
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1932#issuecomment-2295441371)
 
 ## Project Overview :page_facing_up:
 
