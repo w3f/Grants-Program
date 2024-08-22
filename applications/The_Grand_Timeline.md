@@ -69,11 +69,11 @@ Not applicable.
 The project has been in development for three years, with significant progress made in researching and documenting the history of crypto and Web3. The current version of the timeline is available on Figma, where I continue to work on it publicly.
 
 ![](https://jbm.infura-ipfs.io/ipfs/QmZC3EnHCgVKbQL7JwV9Jk23d92zcbKYkAUYVBTQdPD55j)
-
 Timelapse of the project over the past 3 years — [https://youtu.be/xz2kTPHb2iE](https://youtu.be/xz2kTPHb2iE)
 
 
-**The current status of the project can be called v.0.4 and we can see it in the Figma file where I work publicly: [Figma Link to The Grand Timeline](https://www.figma.com/design/pENhenndHyIMwzW2LgKzNd/The-Grand-Timeline)**
+**The current status of the project can be called v.0.4 and we can see it in the Figma file where I work publicly: 
+[Figma Link to The Grand Timeline](https://www.figma.com/design/pENhenndHyIMwzW2LgKzNd/The-Grand-Timeline)**
 
 ## "Development" Roadmap
 
@@ -86,19 +86,21 @@ Timelapse of the project over the past 3 years — [https://youtu.be/xz2kTPHb2iE
 * Website update about the project [grandtimeline.org](http://grandtimeline.org/) // 2 weeks
 * Research and finalization of the Events layer // 8-12 weeks
 * Filling the entire layer of People // 6-8 weeks
-* Static timline version v.1.0 ready for printing // 6-8 weeks
+* Static timeline version v.1.0 ready for printing // 6-8 weeks
 * UI and prototype of the interactive version // 2-3 weeks
 * Development and launch the interactive version // 4-6 weeks
 
+⚠️ Below I will describe only one Milestone that I can complete within the Level 1 grant and which is relevant to W3F
 
 ### Milestone 1 — Research and Documentation of Polkadot and Kusama Ecosystems
 
-- **Estimated duration:** 3 months
+- **Estimated duration:** 4-6 weeks
 - **FTE:** 1
 - **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0. | License | Apache 2.0 / MIT / Unlicense |
 | 1. | Research and documentation of Polkadot and Kusama's history and key developments | A comprehensive section of the timeline detailing key events, milestones, and the impact of Polkadot and Kusama on the broader Web3 ecosystem. |
 | 2. | Draft of the Polkadot and Kusama Section | A draft version of this section will be shared publicly for community feedback. |
 | 3. | Source of Truth | [Figma Link to The Grand Timeline](https://www.figma.com/design/pENhenndHyIMwzW2LgKzNd/The-Grand-Timeline) |
