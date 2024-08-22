@@ -129,7 +129,7 @@ This project is planned as 3 milestones, completed in three months.
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. |	Article | We will publish an article that explains what was done/achieved as part of the grant. |
-| 1. | Fast sync | A bootstrap node will be deployed so that the new subcoin nodes can sync to the tip of the Bitcoin network very quickly using the built-in advanced syncing strategy (e.g., light state sync) in Substrate. |
+| 1. | Fast sync | A bootstrap node will be deployed to demonstrate that the new subcoin nodes can perform a fast sync from other subcoin nodes using the built-in advanced syncing strategy (e.g., light state sync) in Substrate. |
 | 2 | Bitcoin Transaction Broadcasting | We will add an RPC call for broadcasting a Bitcoin transaction to the Bitcoin network from polkadot.js.org. |
 
 ## Future Plans
