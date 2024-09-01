@@ -260,19 +260,19 @@ The following flowchart gives a rough, oversimplified view of how the W3F Grants
 ```mermaid
 flowchart LR
     A(Project Focus)
-    A -->|Development| B[Stage of Development]
-    A -->|Research| C[Grants Program]
-    A -->|Other| D[Treasury]
-    B -->|Existing POC| E[Goal of the Application]
-    B -->|No POC| F[Grants Program]
-    E -->|Funding| G[Treasury or Grants Program]
+    A -->|Development| B[immediate public value?]
+    A -->|Research| B
+    B -->|No| C[Grants Program]
+    B -->|Yes| D[Treasury]
+    A -->|Business case| E[Venture Capital]
+    
+
     style C stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style D stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
-    style F stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
+    style E stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     
     click C "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
     click D "https://polkadot.network/treasury" "https://polkadot.network/treasury/" _blank
-    click F "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
 ```
 
 ### Treasury
