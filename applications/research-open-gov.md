@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-- **Project Name:** Action Research on OpenGov
+- **Project Name:**  OpenGov Action Research
 
 - **Team Name:** UNIVERSALDOT OU
 
@@ -77,14 +77,19 @@ OpenGov represents a significant innovation in decentralized governance, promisi
 
 ### Additional Information
 
+- **Team Experience:** 
+    We have published scientific work in [IEEE](https://ieeexplore.ieee.org/document/7302487) on evaluation of software development methodologies.
+
+
 - **Team Background:**  
-  [Provide a brief overview of the team members, their experience, and their roles in the project.]
+    - Igor Stojanov - Founder of UNIVERSALDOT Foundation. Igor has a Master Degree in Business Information Systems and currently works as a Senior Technology Consultant for a large consultant group.
+     - Freelancing Business Analyst 
+  
 
 - **Future Plans:**  
-  [Outline any potential follow-up projects or further research areas that could build on the results of this project.]
+    Following the completion of this research, we plan to expand the scope of our work by conducting longitudinal studies to track the evolution of OpenGov systems over time. Additionally, we aim to explore the scalability of the OpenGov framework by applying our findings to other blockchain networks and decentralized organizations.
 
-- **Maintenance:**  
-  [Specify if any ongoing maintenance or updates will be required following the completion of the research.]
+
 
 ## Legal Structure
 
