@@ -1,24 +1,26 @@
-# Open source contributor funding experiment
+# Open source contributor funding experiment setup
 
 - **Team Name:** Web3 Association
 - **Payment Address:** 14MvsY86yCauNJYp5AfjRYesQ32uXvaBzXEqoBJqj4MQpajR (DOT / USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
 **Brief description**
-This experiment will fund one or multiple developers that will help with developing open source initiatives in the Polkadot ecosystem. Contributors will be funded for a fixed period of time, such as 4 or 6 months. Contributors will need to follow the funding process that is outlined in the experiments documentation. For example contributors are expected to submit monthly contribution logs, share public contribution tasks and only working on open source initiatives. The goal of this experiment is to learn as much as possible about contributor funding. This experiment will also help with learning about how effective our suggested approaches are that have been identified in the funding process analysis (https://funding.treasuries.co). Full details about this contributor funding experiment can be found in our documentation (https://funding.contributors.org).
+This open source contributor funding experiment looks to fund one or multiple developers in the Polkadot ecosystem that will help with developing open source initiatives. Contributors will be funded for a fixed period of time, such as 4 or 6 months. Contributors will follow the funding process guidelines that are outlined in the experiments documentation. As some examples, contributors are expected to submit monthly contribution logs, share public contribution tasks and only work on open source initiatives. The goal of this experiment is to learn as much as possible about contributor funding. This experiment will help with learning about how effective our suggested approaches are that have been identified through analysing how a funding process can be structured (https://funding.treasuries.co). Full details about this contributor funding experiment can be found in our documentation (https://funding.contributors.org).
+
+The purpose of this proposal is to do the work required to setup up this experiment. This involves getting priority suggestions from across the ecosystem and finding developer candidates that would be interested in participating.
 
 **Relevance to Polkadot**
-Polkadot currently uses OpenGov and the technical fellowship as two different funding processes. This experiment looks to explore alternate approaches to determine whether they can provide an an improvement or not compared to the existing funding processes.
+Polkadot currently uses OpenGov and the technical fellowship as two different funding processes. This experiment looks to explore alternate approaches to determine whether these approaches could provide an an improvement or not compared to the existing funding processes.
 
 **Team interest**
-The Web3 Association has now been analysing treasuries for over a year. Historically George has completed analysis for a number of areas (https://docs.catalystcontributors.org) about the funding process in Cardano called Project Catalyst. George has been heavily interested in understanding treasury systems and funding processes. His recent efforts have been focussed on identifying the most effective funding approaches that could effectively scale to accommodate a growing number of voters and contributors. This funding experiment looks to trial a number of the suggestions that have come out of our treasury and funding analysis. We believe many of these suggestions could become long term solutions for Polkadot if the experiment proves to be successful.
+The Web3 Association has now been analysing treasuries for over a year. Historically George has completed analysis about the funding process in Cardano called Project Catalyst (https://docs.catalystcontributors.org). George has been heavily interested in understanding treasury systems and funding processes. His recent efforts have been focussed on identifying the most effective funding approaches that could be adopted to effectively scale and accommodate a growing number of voters and contributors. This funding experiment looks to trial the most promising suggestions that have come out of our treasury and funding analysis. We believe many of these approaches could become long term solutions for Polkadot if the experiment proves to be successful.
 
 **Academic research**
-The data generated from this experiment is currently not intended to be used in our own academic research. Our experiment will generate a report that will highlight some of the trends and findings from the experiment based on the data and feedback that is recorded throughout the experiment.
+The data generated from this experiment is currently not intended to be used in our own academic research. Our experiment will generate data outputs and a report that will highlight some of the trends and findings from the experiment.
 
 ### Project Details
 
@@ -71,7 +73,7 @@ Other ecosystems might decide to experiment with our suggested approach or a var
 We currently intend to publish all of the results and data related to the experiment in a GitBook repository under the domain data.contributors.org.
 
 **Managing expectations**
-This experiment will not involve any software development to create new solutions. Only existing tools and services will be used. The services and tools being used are existing Web2 solutions that cover our requirements for the experiment.
+The operation of this experiment will not involve any software development for creating new solutions. Only existing tools and services will be used to run the experiment. The services and tools being used to operate the experiment are existing Web2 solutions. These cover all our requirements. The lessons learnt from this experiment will be considered if we decide to help with developing any treasury and funding systems in the future.
 
 ### Ecosystem Fit
 
@@ -146,9 +148,9 @@ Educational resources
 
 ### Overview
 
-- **Total Estimated Duration:** 7 months
-- **Full-Time Equivalent (FTE):**  0.5 FTE
-- **Total Costs:** $190,000
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):**  1 FTE
+- **Total Costs:** $3,000
 - **DOT %:** 50%
 
 ### Milestone 1 — Experiment setup
@@ -163,131 +165,15 @@ Educational resources
 | **0b.** | Documentation | polkadot.contributors.org |
 | **0c.** | Methodology | All documentation, data and proposals will be open source |
 | **0d.** | Infrastructure | https://funding.contributors.org/contributor-funding-experiment/experiment-setup/tech-stack |
-| **0e.** | Article | The priority suggestions, contributor proposals and voting results will be publicly available from the polkadot experiment documentation. |
+| **0e.** | Article | The priority suggestions and contributor proposals will be publicly available from the polkadot experiment documentation. |
 | 1. | A priority suggestions board will be setup and the community will be invited to post their suggestions. |
 | 2. | The contributor proposal submission process will be setup and community members will be invited to submit their contributor proposals. |
-| 3. | The funding operator will confirm and finalise the experiment with the founding entities based on the priority suggestions and contributor proposals that have been submitted. |
-| 4. | The voting process will be setup using the submitted contributor proposals. |
-| 5. | Voters will be asked to cast their voters. |
-| 6. | Voting results will be aggregated and shared publicly. Voter feedback will be gathered. |
-| 7. | Successful contributors will be onboarded to the experiment. Their initial contribution tasks will be determined and added on a public contribution task board. |
-
-### Milestone 2 — 1st Month of contribution
-
-- **Estimated Duration:** 1 month
-- **FTE:** 0.5 FTE
-- **Costs:** $30,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | MIT |
-| **0b.** | Documentation | polkadot.contributors.org |
-| **0c.** | Methodology | All documentation, data and proposals will be open source |
-| **0d.** | Infrastructure | https://funding.contributors.org/contributor-funding-experiment/experiment-setup/tech-stack |
-| **0e.** | Article | The contribution logs will be added to the Polkadot experiment documentation resource once approved. |
-| 1. | Contributors will submit their contribution logs each month for review |
-| 2. | The funding operator will check and verify each contribution log to approve them. This is required for the contributors to receive any future payment. Approved contribution logs will be merged into the Polkadot experiment documentation. |
-
-### Milestone 3 — 2nd Month of contribution
-
-- **Estimated Duration:** 1 month
-- **FTE:** 0.5 FTE
-- **Costs:** $30,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | MIT |
-| **0b.** | Documentation | polkadot.contributors.org |
-| **0c.** | Methodology | All documentation, data and proposals will be open source |
-| **0d.** | Infrastructure | https://funding.contributors.org/contributor-funding-experiment/experiment-setup/tech-stack |
-| **0e.** | Article | The contribution logs will be added to the Polkadot experiment documentation resource once approved. |
-| 1. | Contributors will submit their contribution logs each month for review |
-| 2. | The funding operator will check and verify each contribution log to approve them. This is required for the contributors to receive any future payment. Approved contribution logs will be merged into the Polkadot experiment documentation. |
-
-### Milestone 4 — 3rd Month of contribution
-
-- **Estimated Duration:** 1 month
-- **FTE:** 0.5 FTE
-- **Costs:** $30,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | MIT |
-| **0b.** | Documentation | polkadot.contributors.org |
-| **0c.** | Methodology | All documentation, data and proposals will be open source |
-| **0d.** | Infrastructure | https://funding.contributors.org/contributor-funding-experiment/experiment-setup/tech-stack |
-| **0e.** | Article | The contribution logs will be added to the Polkadot experiment documentation resource once approved. |
-| 1. | Contributors will submit their contribution logs each month for review |
-| 2. | The funding operator will check and verify each contribution log to approve them. This is required for the contributors to receive any future payment. Approved contribution logs will be merged into the Polkadot experiment documentation. |
-
-### Milestone 5 — 4th Month of contribution
-
-- **Estimated Duration:** 1 month
-- **FTE:** 0.5 FTE
-- **Costs:** $30,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | MIT |
-| **0b.** | Documentation | polkadot.contributors.org |
-| **0c.** | Methodology | All documentation, data and proposals will be open source |
-| **0d.** | Infrastructure | https://funding.contributors.org/contributor-funding-experiment/experiment-setup/tech-stack |
-| **0e.** | Article | The contribution logs will be added to the Polkadot experiment documentation resource once approved. |
-| 1. | Contributors will submit their contribution logs each month for review |
-| 2. | The funding operator will check and verify each contribution log to approve them. This is required for the contributors to receive any future payment. Approved contribution logs will be merged into the Polkadot experiment documentation. |
-
-### Milestone 6 — 5th Month of contribution
-
-- **Estimated Duration:** 1 month
-- **FTE:** 0.5 FTE
-- **Costs:** $30,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | MIT |
-| **0b.** | Documentation | polkadot.contributors.org |
-| **0c.** | Methodology | All documentation, data and proposals will be open source |
-| **0d.** | Infrastructure | https://funding.contributors.org/contributor-funding-experiment/experiment-setup/tech-stack |
-| **0e.** | Article | The contribution logs will be added to the Polkadot experiment documentation resource once approved. |
-| 1. | Contributors will submit their contribution logs each month for review |
-| 2. | The funding operator will check and verify each contribution log to approve them. This is required for the contributors to receive any future payment. Approved contribution logs will be merged into the Polkadot experiment documentation. |
-
-### Milestone 7 — 6th Month of contribution
-
-- **Estimated Duration:** 1 month
-- **FTE:** 0.5 FTE
-- **Costs:** $30,500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | MIT |
-| **0b.** | Documentation | polkadot.contributors.org |
-| **0c.** | Methodology | All documentation, data and proposals will be open source |
-| **0d.** | Infrastructure | https://funding.contributors.org/contributor-funding-experiment/experiment-setup/tech-stack |
-| **0e.** | Article | The contribution logs will be added to the Polkadot experiment documentation resource once approved. |
-| 1. | Contributors will submit their contribution logs each month for review |
-| 2. | The funding operator will check and verify each contribution log to approve them. This is required for the contributors to receive any future payment. Approved contribution logs will be merged into the Polkadot experiment documentation. |
-
-### Milestone 8 — Experiment completion & analysis
-
-- **Estimated Duration:** 1 month
-- **FTE:** 1 FTE
-- **Costs:** $4,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | MIT |
-| **0b.** | Documentation | data.contributors.org |
-| **0c.** | Methodology | All documentation, data and proposals will be open source |
-| **0d.** | Infrastructure | https://funding.contributors.org/contributor-funding-experiment/experiment-setup/tech-stack |
-| **0e.** | Article | The experiments feedback, data and analysis report will be added to a new funding experiment data resource (data.contributor.org) |
-| 1. | Funding operator will request contributors and community members to peer review other contributors and provide feedback |
-| 2. | Funding operator will request experiment feedback from the voters and contributors |
-| 3. | Funding operator will aggregate all experiment data and then analyse the results to create a final report |
+| 3. | The funding operator will present the priority suggestions and contributor candidate proposals in a new proposal and suggest some parameters that could be suitable for the funding experiment. |
+| 4. | The funding operator will collaborate with the Web3 Foundation to confirm and finalise the experiment parameters before a decision is made by the committee about whether the funding experiment will be funded or not. |
 
 ## Future Plans
 
-The intentions of this experiment is to operate a low cost and efficient funding process that will explore the opportunity of contributor funding in more depth. The goal is to learn as much as possible about this funding process and whether the suggested approaches are effective or not. If the experiment proves to be successful then the next steps for us would be to look at what improvements can be made to the funding process which will be shared in a final report. We would then be interested in executing a second experiment that adopts the lessons learnt from the previous experiment and iteratively improve our understanding of how to operate an effective contributor funding process.
+The intentions of this experiment is to operate a cost efficient funding process that can explore the opportunity of contributor funding and a number of funding approaches in more depth. The goal is to learn as much as possible about contributor funding as possible and whether our suggested approaches are effective or not. If the experiment proves to be successful then the next steps for us would be to look at what improvements can be made to the funding process. These potential improvements will be documented in a final report. We would then be interested in executing a second experiment that adopts the lessons learnt from the previous experiment and iteratively improve our understanding of how to operate an effective contributor funding process.
 
 Over the long term this funding process has the opportunity to become the most effective and adopted way that Polkadot disburses it treasury assets to more consistently generate impact across the ecosystem.
 
