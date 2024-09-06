@@ -90,7 +90,7 @@ The technological landscape sees a plethora of competitors, each carving their n
 ### Contact
 
 - **Contact Name:** Barath Kanna
-- **Contact Email:** barathkannaofficial@gmail.com
+- **Contact Email:** barath@cyborgnetwork.io
 - **Website:** https://cyborgnetwork.io
 
 ### Legal Structure
