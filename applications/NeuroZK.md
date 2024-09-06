@@ -106,6 +106,13 @@ The technological landscape sees a plethora of competitors, each carving their n
   
 - [Calvin Sze](https://www.linkedin.com/in/calvin-sze/) - Full Stack Blockchain Developer with 5 plus years of experience in blockchain development. He is a PBA alumni from Berkeley.
 
+- [Noor Mohammed](https://www.linkedin.com/in/noormohammedb/) - Noor Mohammed B is a skilled blockchain developer with a strong focus on backend development, DevOps, and system development. With over three years of experience in Rust programming, he has worked extensively on decentralized applications within the EVM and Polkadot ecosystems. Noor is also proficient in network programming and has contributed significantly to building scalable and secure backend systems.
+
+- [Tom Bleek](https://www.linkedin.com/in/tom-bleek-a7332b182/) - Tom Bleek is a dedicated and enthusiastic front-end developer focused on building high-performance front-end applications with an exciting appearance / Substrate and React developer focused on building secure blockchains and high-performance dApps with an exciting appearance. With his
+experience in React and TypeScript Tom has played a key role in bringing projects to life, enhancing both the performance and user experience of complex web applications.
+
+- [Onggo Wahyudi](https://www.linkedin.com/in/sgid8t2c/) - Yudi is a specialist in backend development, with expertise in Rust and Substrate for blockchain projects. He excels in DevSecOps and AWS Cloud, and he graduated from the Polkadot Blockchain Academy in Singapore.
+
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra) - With three years of work in Rust, Substrate, and INK, Kresna has a foundational background in blockchain solutions. He was the former co-founder and head of protocol development at [Invarch Network](https://invarch.network/) (Polkadot and Kusama parachain). Beyond this, he is also a Polkadot Ambassador who manages the Polkadot Hub in Bali.
 
 ### Team Code Repos
@@ -121,14 +128,19 @@ Team Github Handles.
 
 - https://github.com/beekay2706
 - https://github.com/ZCalz
-- https://github.com/dheeraj07
+- https://github.com/noormohammedb
+- https://github.com/tom-blk
+- https://github.com/oWahyudi
 - https://github.com/Megha2712
 
 ### Team LinkedIn Profiles
 
 - https://www.linkedin.com/in/barath-kanna
 - https://www.linkedin.com/in/megha-varshini-t
-- https://www.linkedin.com/in/calvin-sze/
+- https://www.linkedin.com/in/calvin-sze
+- https://www.linkedin.com/in/noormohammedb
+- https://www.linkedin.com/in/tom-bleek-a7332b182
+- https://www.linkedin.com/in/sgid8t2c
 - https://www.linkedin.com/in/kresna-sucandra
 
 ## Development Status :open_book:
