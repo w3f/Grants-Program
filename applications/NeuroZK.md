@@ -155,24 +155,26 @@ We have created a UX demo for a potential user and the development for this gran
 
 ## Development Roadmap :nut_and_bolt:
 
-the grant delivery will have 2 distinct parts split into three milestones
+the grant delivery will have 3 distinct parts split into bimonthly milestones
 
-1. Enhance CyberDock for Testnet Release:
+1. TEE Oracle Implementation:
 
-* Develop a price estimation system based on server specifications.
-* Integrate Peaq DID pallet and incorporate server selection feature.
+* Develop an [ORML](https://github.com/open-web3-stack/open-runtime-module-library) based custom oracle for private and secure data exchange.
+* A custom pallet logic for handling the oracle.
+* UI updates for Oracle
 
-2. Development of EdgeCloud:
+2. Development of Cyborg Worker Node:
 
-* Create a functional system capable of managing one application across geographically isolated servers.
-* Cyborg Worker Node defintion and Configuration.
-* Implement efficient task and load distribution with low latency.
+* Cyborg Worker Node defintion and Configuration to enable compute providers to directly download executable and deploy worker nodes without clustering.
+* System Pallets for Cyborg parachain (Payments and Inventory)
+
+3. 
 
 ### Overview
 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):** 2 ( 1 Full time Developer at 1 FTE/month and 2 part time developers each at 0.5 FTE/month)
-- **Total Costs:** 29,000 USD
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 - Cyborg Oracle Implementation
 
@@ -190,7 +192,7 @@ the grant delivery will have 2 distinct parts split into three milestones
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to deploy a local cyborg parachain and test the features of this delivery. |
 | 1. | Working Demo | We will provide video documentation to help developers understand the process of testing the Orcale implementation.|
 | 2. | Substrate Module: Oracle | This pallet will be responsible for establishing communication and regulating the use of an oracle. |
-| 3. | Front end App: Cyborg Connect | Updated UI with features to display Task verification and result information from Orcale |
+| 3. | Front end App: Cyborg Connect | Updated UI with features to display Task verification and result information from Oracle |
 | 4. | Cyborg Oracle | An ORML based oracle implementation to seamless exchange data packets between cyborg parachain and connected offchain clusters|
 
 
