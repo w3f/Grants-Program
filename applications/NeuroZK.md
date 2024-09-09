@@ -54,7 +54,7 @@ Developers can monitor details such as resource utilization and application heal
 
 ### ZK Snark proof verification 
 
-For this grant application, We will improvise our previous submission to make it live on Paseo and then proceed with developing a decentralized proof verification system to incorporate an on-chain ZK Snark system for verifying AI infernece models executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, The Cyborg Worker node (A custom node implementation to manage running offchain tasks and streaming proofs into pallets for verification), an Oracle, and a testing suite.
+For this grant application, We will improvise our previous submission to make it live on Paseo and then proceed with developing a decentralized proof verification system to incorporate an on-chain ZK Snark system for verifying AI inference models executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, The Cyborg Worker node (A custom node implementation to manage running offchain tasks and streaming proofs into pallets for verification), an Oracle, and a testing suite.
 
 The objective is to deploy a pre trained AI inference model in servers at different geographical locations based on user requirements. The Substrate blockchain will establish secure communication with worker nodes to issue commands for deploying, testing and verifying model executions.
 
