@@ -15,13 +15,13 @@ This application is a follow up from our successful [grant delivery](https://git
 
 Cyborg Network is developing a DePIN-based marketplace for edge computing resources, enabling latency-sensitive applications to scale globally with ease. Users can seamlessly offload specific low-latency workloads to edge locations while maintaining their core deployment in the cloud. Our vision is to serve as essential middleware at the network edge, orchestrating these tasks to reduce cloud operational costs and enhance existing cloud services. In response to user demand and recognizing the growing importance of distributed AI inference infrastructure, we are prioritizing the development of a decentralized AI compute platform leveraging ZK proofs as our go-to-market strategy.
 
-As part of our previous application, we delivered CyberDock, a product line focused on helping users deploy dockerized containers into our edge server network. We are now focusing on expanding this approach to a new product line called NueroZK, which will enable AI apps to run Inference Engines backed by ZK proofs.
+As part of our previous application, we delivered CyberDock, a product line focused on helping users deploy dockerized containers into our edge server network. We are now focusing on expanding this approach to a new product line called NeuroZK, which will enable AI apps to run Inference Engines backed by ZK proofs.
 
 Users can easily run GPU based inference engines in our crowdsoruced GPU network, with compute integrity verified using a ZK SNARK proof that proves that the inference algorithm was executed with 100% accuracy without revealing the actual inference algorithm nor the query or result data.
 
 We are on a mission to establish Cyborg Network as a Polkadot parachain. Our decision is anchored in several key reasons:
 
-First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem. We have already initiated talks with a few ecosystem teams like [Peaq](https://www.peaq.network/), [Tanssi](https://www.tanssi.network/), [Ava Protocol](https://avaprotocol.org/) for potential integrations
+First, we're enticed by their advanced interoperable features, such as shared security and XCM. These functionalities pave the way for seamless integrations with other projects within the ecosystem. We have already initiated talks with a few ecosystem teams like [Peaq](https://www.peaq.network/), [Tanssi](https://www.tanssi.network/), [Ava Protocol](https://avaprotocol.org/) for potential integrations.
 
 Second, the unparalleled ecosystem and technical support provided by Polkadot and Kusama have been instrumental in our development, and we've had the privilege of closely collaborating with them over the years.
 
@@ -48,17 +48,17 @@ Once the docker container is deployed, its workload will be protected by softwar
 
 It seamlessly integrates with the current cloud-native toolchain for developers, typically avoiding the need for code changes.
  
-Developers can monitor details such as resource utilization and application health status through the Cyborg Connect application dashboard.
+Developers can monitor details such as resource utilization, and the app's health status through the Cyborg Connect application dashboard.
 
 ![dashboard](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/90f160c6-5cef-408b-8db2-c3e550fdb6a8)
 
 ### ZK Snark proof verification 
 
-For this grant application, We will improvise our previous submission to make it live on Paseo and then proceed with developing a decentralized proof verification system to incorporate an on-chain ZK Snark system for verifying AI inference models executed in an off-chain environment. The main components will include the Cyborg AppChain, which will be deployed on Tanssi's Dancebox testnet, The Cyborg Worker node (A custom node implementation to manage running offchain tasks and streaming proofs into pallets for verification), an Oracle, and a testing suite.
+For this grant application, we will improvise our previous submission to make it live on Paseo and then proceed with developing a decentralized proof verification system to incorporate an on-chain ZK Snark system for verifying AI inference models executed in an off-chain environment. The main components will include the Cyborg AppChain (Deployed on Tanssi's Dancebox testnet), Cyborg Worker node (A custom node implementation to manage running offchain tasks and streaming proofs into pallets for verification), TEE Oracle, and a testing suite.
 
-The objective is to deploy a pre trained AI inference model in servers at different geographical locations based on user requirements. The Substrate blockchain will establish secure communication with worker nodes to issue commands for deploying, testing and verifying model executions.
+The objective is to deploy a pre trained AI inference model in servers at different geographical locations based on user requirements. The Substrate blockchain will establish secure communication with worker nodes to issue commands for deploying, testing, and verifying model executions.
 
-We will define a new Substrate node configuration for the Cyborg worker nodes, which users can rent on demand from the pool of available worker nodes.
+We will define a new Substrate node configuration for the Cyborg worker nodes, which users can rent on-demand from the pool of available worker nodes.
 
 
 ### Ecosystem Fit
@@ -145,37 +145,37 @@ Team Github Handles.
 
 ## Development Status :open_book:
 
-We completed development of an on-chain task verification system under CyberDock as a part of our previous grant application, it contained three parts - Substrate pallets,Front end app and k3s worker configuration. While task verification made more sense for batch files, we also developed log streaming to provide work proofs for continously running applications.
+We have completed the development of an on-chain task verification system under CyberDock as a part of our previous grant application, it contained three parts - Substrate pallets, Front end app and k3s worker configurations. While task verification made more sense for batch files, we also developed log streaming to provide work proofs for continously running applications.
 
 <img width="1448" alt="7" src="https://github.com/user-attachments/assets/67d7535a-8ea6-4660-8bdd-bc8de22ea639">
 
-Through this process, we identified the need for having a much simpler provider onboarding experience, so we are developing a custom node implementation called cyborg worker nodes using which providers can connect their resoruces to the cyborg parachain just by downloading and installing an executable file on their VMs.This also aligns with our focus to launch a plug and play hardware series called 'Cyborg miners' that directly connects to the parachain like a ASIC miner.
+Through this process, we identified the need for having a much simpler provider onboarding experience, so we are developing a custom node implementation called Cyborg worker nodes using which providers can connect their resources to the Cyborg parachain just by downloading and installing an executable file on their VMs. This also aligns with our focus to launch a plug and play hardware series called 'Cyborg miners' that directly connects to the parachain like an ASIC miner.
 
-Consequently, we will be delivering a ZK based offchain compute verification system, that validates the integrity of executing pre-trained AI models for decentralized AI inferencing on crowdsourced GPUs. For this grant we will use ZK and TEE's to uphold data privacy in the system.
+Consequently, we will be delivering a ZK based offchain compute verification system, that validates the integrity of executing pre-trained AI models for decentralized AI inferencing on crowdsourced GPUs. For this grant we will use ZK and TEE to uphold data privacy in the system.
 
-We are also working concurrently on integrations with Peaq Network (DID pallet) and [CESS](https://cess.network/) for a decentralized storage product called CyStore. Additionally, we have garnered interest from Peaq to open an HRMP channel for XCM interactions between our chains once we are live
+We are also working concurrently on integrations with Peaq Network (DID pallet) and [CESS](https://cess.network/) for a decentralized storage product called CyStore. Additionally, we have garnered interest from Peaq to open an HRMP channel for XCM interactions between our chains once we are live.
 
-We have created a UX demo for a potential user and the development for this grant will look very similar to this [Cyborg Network UX demo](https://drive.google.com/file/d/1zrN4TRMDd5ON2xH9F00upcyK-3ofwV4r/view?usp=drivesdk)
+We have created a UX demo to understand our app flow [Cyborg Network UX demo](https://drive.google.com/file/d/1zrN4TRMDd5ON2xH9F00upcyK-3ofwV4r/view?usp=drivesdk)
 
 ## Development Roadmap :nut_and_bolt:
 
-the grant delivery will have 3 distinct parts split into bimonthly milestones
+The grant delivery will have 3 distinct parts split into 3 milestones delivered every 2 months,
 
 1. TEE Oracle Implementation:
 
-* Develop an [ORML](https://github.com/open-web3-stack/open-runtime-module-library) based custom oracle for private and secure data exchange.
-* A custom pallet logic for handling the oracle.
+* Develop an [ORML](https://github.com/open-web3-stack/open-runtime-module-library) based custom oracle for private and secure data exchange
+* A custom pallet logic for handling the oracle
 * UI updates for Oracle
 
 2. Development of Cyborg Worker Node:
 
-* Cyborg Worker Node defintion and Configuration to enable compute providers to directly download executable and deploy worker nodes without clustering.
+* Cyborg Worker Node defintion and configuration to enable compute providers to directly download executable and deploy worker nodes without clustering
 * System Pallets for Cyborg parachain (Payments and Inventory)
 * UI updates for Worker Nodes (Currently marked coming soon)
 
 3. NeuroZK - phase 1:
 
-* a RISC Zero based offchain ZK proof generation module
+* A RISC Zero based offchain ZK proof generation module
 * Pallet implementation for proof verification
 * System pallet for parachain (Worker Rewards)
 
