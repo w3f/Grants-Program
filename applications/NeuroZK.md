@@ -11,7 +11,7 @@
 
 ### Overview
 
-This application is a follow up from our successful grant delivery [grant application](https://github.com/w3f/Grants-Program/blob/master/applications/Cyborg.md)
+This application is a follow up from our successful [grant delivery](https://github.com/w3f/Grant-Milestone-Delivery/pull/1196)
 
 Cyborg Network is developing a DePIN-based marketplace for edge computing resources, enabling latency-sensitive applications to scale globally with ease. Users can seamlessly offload specific low-latency workloads to edge locations while maintaining their core deployment in the cloud. Our vision is to serve as essential middleware at the network edge, orchestrating these tasks to reduce cloud operational costs and enhance existing cloud services. In response to user demand and recognizing the growing importance of distributed AI inference infrastructure, we are prioritizing the development of a decentralized AI compute platform leveraging ZK proofs as our go-to-market strategy.
 
@@ -145,11 +145,15 @@ Team Github Handles.
 
 ## Development Status :open_book:
 
-We completed development of an on-chain task verification system under CyberDock as a part of our previous grant application, it contained four parts - Substrate pallets, Oracle implementation, Front end app and k3s worker configuration. While task verification made more sense for batch files, we also developed log streaming to provide work proofs for continously running applications.
+We completed development of an on-chain task verification system under CyberDock as a part of our previous grant application, it contained three parts - Substrate pallets,Front end app and k3s worker configuration. While task verification made more sense for batch files, we also developed log streaming to provide work proofs for continously running applications.
 
-Through this process, we identified the potential of using connected clusters than indivdual instances for better management efficiency, We are currently building an on chain task distribution system. Our team will shift focus to building custom pallets outlined in the technical architecture to steer our way through to become a parachain on Polkadot.
+<img width="1448" alt="7" src="https://github.com/user-attachments/assets/67d7535a-8ea6-4660-8bdd-bc8de22ea639">
 
-We are also working concurrently on integrations with Peaq Network (DID pallet) and [Flostream](https://flo.stream/) (for a decentralized storage product called CyStore). Additionally, we have garnered interest from Peaq to open an HRMP channel for XCM interactions between our chains once we are live
+Through this process, we identified the need for having a much simpler provider onboarding experience, so we are developing a custom node implementation called cyborg worker nodes using which providers can connect their resoruces to the cyborg parachain just by downloading and installing an executable file on their VMs.This also aligns with our focus to launch a plug and play hardware series called 'Cyborg miners' that directly connects to the parachain like a ASIC miner.
+
+Consequently, we will be delivering a ZK based offchain compute verification system, that validates the integrity of executing pre-trained AI models for decentralized AI inferencing on crowdsourced GPUs. For this grant we will use ZK and TEE's to uphold data privacy in the system.
+
+We are also working concurrently on integrations with Peaq Network (DID pallet) and [CESS](https://cess.network/) for a decentralized storage product called CyStore. Additionally, we have garnered interest from Peaq to open an HRMP channel for XCM interactions between our chains once we are live
 
 We have created a UX demo for a potential user and the development for this grant will look very similar to this [Cyborg Network UX demo](https://drive.google.com/file/d/1zrN4TRMDd5ON2xH9F00upcyK-3ofwV4r/view?usp=drivesdk)
 
@@ -167,8 +171,13 @@ the grant delivery will have 3 distinct parts split into bimonthly milestones
 
 * Cyborg Worker Node defintion and Configuration to enable compute providers to directly download executable and deploy worker nodes without clustering.
 * System Pallets for Cyborg parachain (Payments and Inventory)
+* UI updates for Worker Nodes (Currently marked coming soon)
 
-3. 
+3. NeuroZK - phase 1:
+
+* a RISC Zero based offchain ZK proof generation module
+* Pallet implementation for proof verification
+* System pallet for parachain (Worker Rewards)
 
 ### Overview
 
@@ -250,7 +259,7 @@ We won the [web3hackx](https://www.hkweb3month.com/hackathon) Hackathon - Hong K
 
 Megha Varshini (COO) - represented Cyborg Network at the Finals (Top 7 teams) of the PBA pitch Contest in Hong Kong (Feb 2024)
 
-Kresna (CIO) has also contributed to the **InvArch's Web3 Foundation Grant** [Milestone 1](https://github.com/w3f/Grant-Milestone-Delivery/blob/7932b07cc38150701ba8ed034723193f66002975/deliveries/InvArch_M1.md) that has been completed successfully. He also contributed to the  [Chocolate Network](https://substrate.io/ecosystem/projects/chocolate/) as a Substrate developer for their Substrate Builder Program (SBP) Milestone 1 delivery which has been completed successfully.
+Kresna has contributed to the **InvArch's Web3 Foundation Grant** [Milestone 1](https://github.com/w3f/Grant-Milestone-Delivery/blob/7932b07cc38150701ba8ed034723193f66002975/deliveries/InvArch_M1.md) that has been completed successfully. He also contributed to the  [Chocolate Network](https://substrate.io/ecosystem/projects/chocolate/) as a Substrate developer for their Substrate Builder Program (SBP) Milestone 1 delivery which has been completed successfully.
 
 Cyborg Network has been inducted into the [Polkadot Alpha Builder's Program](https://polkadot.network/development/alpha/) in March 2024.
 
