@@ -6,72 +6,30 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
+const buttonLinks = [
+  { to: './docs/Process/how-to-apply', text: 'Apply', className: styles.buttonDark },
+  { to: './docs/office-hours', text: 'Office Hours' },
+  { to: './docs/rfps', text: 'Browse RFPs' },
+  { to: 'https://futures.web3.foundation', text: 'Decentralized Futures ↗', className: styles.buttonCustom },
+  { to: 'https://jam.web3.foundation', text: 'JAM Prize ↗', className: styles.buttonCustom },
+];
 
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+function HomepageHeader({ siteConfig }) {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        {/* <h1 className="hero__title">{siteConfig.title} </h1>  */}
-        <img src="img/web3 foundation grants_black.jpg"></img>
+        <img src="img/web3 foundation grants_black.jpg" alt="Web3 Foundation Grants" width="500" height="300" />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}            
-          style={{
-            display: "block"
-          }}
-          >
-          <div>
+        <div className={styles.buttons}>
+          {buttonLinks.map((link, idx) => (
             <Link
-              className="button button--secondary button--lg"
-              to="./docs/Process/how-to-apply"
-              style={{
-                marginLeft: "10px",
-                marginBottom: "5px",
-                backgroundColor: "rgb(0, 0, 0)",
-                color: "rgb(250, 250, 250)"
-              }}>
-              Apply
+              key={idx}
+              className={clsx("button button--secondary button--lg", link.className || "")}
+              to={link.to}
+            >
+              {link.text}
             </Link>
-            <Link
-              className="button button--secondary button--lg"
-              to="./docs/office-hours"
-              style={{
-                marginLeft: "10px",
-                marginBottom: "5px"
-              }}>
-              Office Hours
-            </Link>
-            <Link
-              className="button button--secondary button--lg"
-              to="./docs/rfps"
-              style={{
-                marginLeft: "10px",
-                marginBottom: "5px",
-              }}>
-              Browse RFPs
-            </Link>
-            <Link
-              className="button button--secondary button--lg"
-              to="https://futures.web3.foundation"
-              style={{
-                marginLeft: "10px",
-                marginBottom: "5px",
-                backgroundColor: "rgb(250, 250, 250)"
-              }}>
-              Decentralized Futures ↗
-            </Link>
-            <Link
-              className="button button--secondary button--lg"
-              to="https://jam.web3.foundation"
-              style={{
-                marginLeft: "10px",
-                marginBottom: "5px",
-                backgroundColor: "rgb(250, 250, 250)"
-              }}>
-              JAM Prize ↗
-            </Link>
-          </div>
+          ))}
         </div>
       </div>
     </header>
@@ -79,12 +37,10 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Web3 Foundation Grants">
-      <HomepageHeader />
+    <Layout title={`${siteConfig.title}`} description="Web3 Foundation Grants">
+      <HomepageHeader siteConfig={siteConfig} />
       <main>
         <HomepageFeatures />
       </main>
