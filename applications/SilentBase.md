@@ -70,7 +70,7 @@ Our team has experience building smart contracts, Layer 2 solutions, and other D
 
 - **Estimated Duration:** 3 month
 - **FTE:**  2
-- **Total Costs :** 9,000 USDC
+- **Total Costs :** 9,000 USDC or **Total Cost DAI:** 9,000 DAI
 
 ### Milestone 1 — Core functionality
 
