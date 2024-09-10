@@ -72,7 +72,7 @@ Each component will have a very detailed guide to help the chain team to set up.
 ### Contact
 
 - **Contact Name:** Xavier Lau
-- **Contact Email:** xavier@inv.cafe
+- **Contact Email:** x@acg.box
 - **Website:** https://linktr.ee/aurevoirxavier
 
 ### Legal Structure
