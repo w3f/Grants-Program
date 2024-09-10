@@ -46,8 +46,9 @@ We will use the following technology stack:
 - **Team Lead & Developer**: Kelvin Yuli Andrian ([linkedin](https://linkedin.com/in/kelvinzer0))
   
 ### Contact
-- **Contact Email**: info@silentbase.xyz
-- **Website**: [silentbase.xyz](https://silentbase.xyz)
+* **Contact Name:** Kelvin Yuli Andrian
+* **Contact Email**: info@silentbase.xyz
+* **Website**: [silentbase.xyz](https://silentbase.xyz)
 
 ### Team's experience
 
@@ -67,9 +68,9 @@ Our team has experience building smart contracts, Layer 2 solutions, and other D
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** **9,000 USD**
+- **Estimated Duration:** 3 month
+- **FTE:**  2
+- **Costs:** 9,000 USD
 
 ### Milestone 1 — Core functionality
 
