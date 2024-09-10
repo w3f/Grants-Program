@@ -1,7 +1,9 @@
 # Polkadot Runtime Releaser
 
 - **Team Name:** hack-ink
-- **Payment Address:** 156HGo9setPcU2qhFMVWLkcmtCEGySLwNqa3DaEiYSWtte4Y (AssetHub) USDC
+- **Payment Address:**
+  - 156HGo9setPcU2qhFMVWLkcmtCEGySLwNqa3DaEiYSWtte4Y (AssetHub) USDC 50%
+  - 156HGo9setPcU2qhFMVWLkcmtCEGySLwNqa3DaEiYSWtte4Y (Polkadot) DOT  50%
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
