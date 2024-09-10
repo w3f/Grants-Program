@@ -45,7 +45,7 @@ We will use the following technology stack:
 ## Team :busts_in_silhouette:
 
 ### Team member
-- **Team Lead & Developer**: Kelvin Yuli Andrian ([linkedin](https://linkedin.com/in/kelvinzer0))
+- **Team Lead & Developer**: Kelvin Yuli Andrian ([linkedin](https://linkedin.com/in/kelvinzero))
   
 ### Contact
 - **Contact Name:** Kelvin Yuli Andrian
