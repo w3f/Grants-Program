@@ -34,6 +34,8 @@ We will use the following technology stack:
 
 3. ![Website Mockup](https://docs.silentbase.xyz/~gitbook/image?url=https%3A%2F%2F2216137726-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F00KsKzPk6Db4O2MojYyF%252Fuploads%252FBamYKHgWGGump91QWjoP%252Fwebsite-mockup-66bf4a9931ed186fc7bb3fc4-%25402x.webp%3Falt%3Dmedia%26token%3D1c53a011-f1e8-4c5a-a0df-c1d6f5355128&width=768&dpr=1&quality=100&sign=b82bf914&sv=1)
 
+**Registered Address:** Not present in the document.
+
 ### Ecosystem Fit
 
 - Silent Base operates within the **Ethereum Layer 2** ecosystem, helping solve high transaction fees and slow speeds.
@@ -70,7 +72,8 @@ Our team has experience building smart contracts, Layer 2 solutions, and other D
 
 - **Estimated Duration:** 3 month
 - **FTE:**  2
-- **Total Costs :** 9,000 USDC or **Total Cost DAI:** 9,000 DAI
+- **Total Costs:** 9,000 USDC
+
 
 ### Milestone 1 — Core functionality
 
