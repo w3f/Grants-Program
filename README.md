@@ -294,19 +294,19 @@ The best way to find out about upcoming hackathons is by following Polkadot on v
 
 Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
-- [Acala Grants Program](https://acala.network/ecosystem-program)
+- [Acala Ecosystem Program](https://acala.network/ecosystem-program)
 - [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program)
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
-- [Decentralized Futures Program](https://futures.web3.foundation/) 
+- [Decentralized JAM](https://jam.web3.foundation/) 
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
-- [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
-- [SubQuery Grants Programme](https://subquery.network/grants)
+- [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
+- [Polkadot Assurance Legion](https://polkadotassurance.com/)
 
 ## :information_source: License<!-- omit in toc -->
 
