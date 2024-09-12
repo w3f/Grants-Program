@@ -56,6 +56,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Liu-Cheng Xu](https://github.com/liuchengxu)                       | [Subcoin](./Subcoin.md)                     | [GitHub](https://github.com/subcoin-project/subcoin)                 | ☐          |        ☒       |      ☐      |
 | [Experio S M](https://www.linkedin.com/in/leogcustodio/)                       | [Polkadart Follow-up](./polkadart_extension.md)                     | [GitHub](https://github.com/leonardocustodio/polkadart)                 | ☐          |        ☐       |      ☐      |
 | [Solidbit GmbH](https://solid-bit.com/)                       | [ISO20022 Ecosystem Research and Technical Design](./ISO20022-Implementation-POC.md)                     | [GitHub](https://github.com/SolidbitGmbH)                 | ☐          |        ☐       |      ☐      |
+| [Katarína Valová](https://github.com/kacena123)                       | [AgriDot](./AgriDot.md)                     | [GitHub](https://github.com/kacena123)                 | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
