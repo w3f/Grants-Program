@@ -165,10 +165,7 @@ The above components can be uses as single component for all developers of Polka
 
 - **Contact Name:** Shawn Zheng
 - **Contact Email:** xiyuzheng1984@gmail.com
-- **Website:** https://dantenetwork.notion.site/Dante-Network-37b3fb6b70a845ecb4f6bc9d0f23229b
-- **Twitter:** https://twitter.com/DanteNetwork 
-- **Medium:** https://dante-network.medium.com/ 
-- **Telegram:** https://t.me/DanteNetworkEN 
+- **Website:** https://github.com/Omniverse-Web3-Labs
 
 ### Legal Structure
 

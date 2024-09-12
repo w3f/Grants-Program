@@ -4,7 +4,7 @@
 
 
 *  **Team Name:** [Tokenguard.io](http://tokenguard.io/) (Block Solutions Sp z o.o.)
-*  **Payment Address:** 0xa86d1302695a5e915fc54f2a18200337eacad082 (Ethereum ERC20 USDT)
+*  **Payment Address:** PL83249010570000990157469781 (USD IBAN; Alior Bank; SWIFT / BIC: ALBPPLPW)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
@@ -100,6 +100,7 @@ Over the course of six months, Tokenguard application was meticulously developed
 
 #### **Features and designs:**
 
+
 Dashboards overview - The overview of currently indexed and supported parachains:<br />
 <img src="https://imagizer.imageshack.com/img924/1246/BK6CYe.png" width="800" border="0" /><br /><br />
 
@@ -111,12 +112,11 @@ Filtering - The ability to sort data based on the most useful indicators:<br />
 <img src="https://imagizer.imageshack.com/img924/8639/9qncPN.png" width="800" border="0" /><br /><br />
 
 
-
-
 User activity analytics - A module that allows for an in-depth analysis of user behavior based on metrics such as DAU, MAU, retention or user segments:<br />
 <img src="https://imagizer.imageshack.com/img924/8259/bLTEVH.png" width="800" border="0" /><br /><br />
 
 #### **Proposal mockups - new standalone features:**
+
 
 
 Dashboard creator - The drag and drop feature allows users to add metrics onto the dashboard:<br />
@@ -196,6 +196,7 @@ Tokenguard's public features and data are already being used by community users 
 <img src="https://imagizer.imageshack.com/img922/508/rymrP6.png" width="800" border="0" />
 
 
+
 ## Team 👥
 ### Team members
 
@@ -227,6 +228,7 @@ Tokenguard’s clients include Swiss Sygnum Bank, [Bitcoin.com](http://bitcoin.c
 
 ### Current Traction & Business Model ###
 Our current business model focuses on offering growth analytics solutions for parachains & dApps and allowed us to validate both product and services through collaborations with notable parachains such as Astar and Aleph Zero. We believe that **delivering free of charge community analytics will further enhance discovery of growth insights within the whole ecosystem**, allowing it to win the race for leading position in the web3 space.
+
 
 Teams we cooperate with appreciate our flexibility and user-oriented approach:<br /><br />
 <img src="https://imagizer.imageshack.com/img923/978/GjfFD0.jpg" height="80" align="left" border="0" />*Tokenguard is the missing part for Astar ecosystem. Its analytics and tracking capabilities provide us with the crucial insights needed to understand on-chain activity and user behavior, allowing us to make data-driven decisions and optimize our strategies like never before.* <br />**Maarten Henskens, Head of Foundation, Astar Network**<br /><br />

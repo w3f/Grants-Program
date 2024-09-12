@@ -8,39 +8,61 @@ import HomepageFeatures from '../components/HomepageFeatures';
 
 
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+const HomepageHeader = () => {
+  const { siteConfig } = useDocusaurusContext();
+
+  const links = [
+    {
+      to: './docs/Process/how-to-apply',
+      text: 'Apply',
+      style: { backgroundColor: 'rgb(0, 0, 0)', color: 'rgb(250, 250, 250)' },
+    },
+    {
+      to: './docs/office-hours',
+      text: 'Office Hours',
+    },
+    {
+      to: './docs/rfps',
+      text: 'Browse RFPs',
+    },
+    {
+      to: 'https://futures.web3.foundation',
+      text: 'Decentralized Futures ↗',
+      style: { backgroundColor: 'rgb(250, 250, 250)' },
+    },
+    {
+      to: 'https://jam.web3.foundation',
+      text: 'JAM Prize ↗',
+      style: { backgroundColor: 'rgb(250, 250, 250)' },
+    },
+  ];
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title} </h1> 
+        <img src="img/web3 foundation grants_black.jpg" alt="Web3 Foundation Grants" />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="./docs/Process/how-to-apply">
-            Apply
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="./docs/rfps"
-            style={{
-              marginLeft: "20px"
-            }}>
-            Browse RFPs
-          </Link>
+        <div className={clsx(styles.buttons, 'button-container')}>
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              className="button button--secondary button--lg"
+              to={link.to}
+              style={{ marginLeft: '10px', marginBottom: '5px', ...link.style }}
+            >
+              {link.text}
+            </Link>
+          ))}
         </div>
       </div>
     </header>
   );
-}
+};
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Web3 Foundation Grants">
+    <Layout title={`${siteConfig.title}`} description="Web3 Foundation Grants">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

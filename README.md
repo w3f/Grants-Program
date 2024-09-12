@@ -21,8 +21,7 @@
 - [:moneybag: Referral Program](#moneybag-referral-program)
 - [:bulb: Help](#bulb-help)
   - [Real-time Conversation](#real-time-conversation)
-  - [Office Hours](#office-hours)
-  - [Additional Information](#additional-information)
+  - [Ecosystem Funding Office Hours](#ecosystem-funding-office-hours)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury vs Web3 Grants](#treasury-vs-web3-grants)
   - [Treasury](#treasury)
@@ -94,6 +93,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
+- [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
 
 #### W3F Grants Evaluators<!-- omit in toc -->
@@ -104,6 +104,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Seraya Takahashi](https://github.com/takahser)
+- [Piet Wolff](https://github.com/PieWol) 
 
 #### W3F Operations Team<!-- omit in toc -->
 
@@ -115,7 +116,7 @@ The Operations Team takes care of legal documents, invoicing, and remittances.
 
 ## :level_slider: Levels
 
-The W3F Grants Program offers different grant levels to help you best, depending on your current stage. 30% of any grant is paid out in vested DOT.
+The W3F Grants Program offers different grant levels to help you best, depending on your current stage. At least 50% of any grant is paid out in vested DOT.
 
 ### :hatching_chick: Level 1 (= InstaGrants)<!-- omit in toc -->
 
@@ -140,7 +141,7 @@ The W3F Grants Program offers different grant levels to help you best, depending
 
 ## :pencil: Process
 
-> **:loudspeaker:** 30% of each milestone payment is made in DOT (linearly vesting over 2 years). The remaining 70% is paid in_either_ USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) _or_ fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** At least 50% (as defined in your grant agreement) of each milestone payment is made in DOT (linearly vesting over 2 years). The remainder is paid in_either_ USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) _or_ fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -231,31 +232,21 @@ We also have Matrix/Element channels for real-time discussions on Web3 and Polka
 - [Polkadot Space](https://matrix.to/#/#polkadot:web3.foundation)
 - [Kusama Space](https://matrix.to/#/#kusama:web3.foundation)
 
-### Office Hours
+### Ecosystem Funding Office Hours
 
-Web3 Foundation Grants Office Hours are a chance to ask the grants team questions regarding a specific (potential) grant application. It offers
+Ecosystem Funding Office Hours are a chance to ask the W3F Ecosystem Funding team questions regarding a specific project or (potential) grant application. It offers
 
-- general guidance regarding the grants program,
+- general guidance regarding the various grants programs and prizes,
 - some quick initial feedback and
 - help how to navigate the ecosystem.
 
 Apply for Office Hours if you
 
-- need feedback before submitting an application,
-- want to find out what kind of support there might be available or
-- need help finding the resources you need.
+- want to find out what kind of support there might be available for your needs,
+- need feedback before submitting an application or
+- look for help finding other resources you might need.
 
-It is **not** a chance to pitch your project, especially since only a small subset of the committee will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
-
-### Additional Information
-
-<div align="center">
-
-| <img src="static/img/Web.svg?s=50" width="50"></img> | <img src="static/img/Twitter.svg?s=50" width="50"></img> | <img src="static/img/Learn.svg?s=50" width="50"></img> | <img src="static/img/Wiki.svg?s=50" width="50"></img> | <img src="static/img/Youtube.svg?s=50" width="50"></img> |
-| :-: | :-: | :-: | :-: | :-: |
-| [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
-
-</div>
+It is **not** a chance to _pitch_ your project, especially since only the various programs and prizes have different evaluation criteria and decision makers and only a small subset of the Grants team will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
 
 
 ## :rocket: Alternative Funding Sources
@@ -278,7 +269,6 @@ flowchart LR
     style C stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style D stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style F stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
-    style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     
     click C "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
     click D "https://polkadot.network/treasury" "https://polkadot.network/treasury/" _blank
@@ -304,26 +294,19 @@ The best way to find out about upcoming hackathons is by following Polkadot on v
 
 Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
-- [Acala Grants Program](https://acala.network/ecosystem-program)
+- [Acala Ecosystem Program](https://acala.network/ecosystem-program)
 - [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program)
-- [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
-- [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
-- [Decentralized Futures Program](https://futures.web3.foundation/) 
-- [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
+- [Decentralized JAM](https://jam.web3.foundation/) 
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
-- [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
-- [KodaDot Ecosystem Grants](https://github.com/kodadot/grants)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
-- [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
-- [Phala Builders Program](https://wiki.phala.network/en-us/build/general/builders-program/)
-- [Picasso / Composable Grants Program](https://docs.composable.finance/ecosystem/composable-grants/)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
-- [SubQuery Grants Programme](https://subquery.network/grants)
+- [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
+- [Polkadot Assurance Legion](https://polkadotassurance.com/)
 
 ## :information_source: License<!-- omit in toc -->
 

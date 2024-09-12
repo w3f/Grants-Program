@@ -1,4 +1,4 @@
-# Grant guidelines for most popular grant categories
+# Grant Guidelines for Most Popular Grant Categories
 
 While we ask teams to provide details of their envisioned solution, we are aware that precise implementation might slightly differ from the initial specification. Should there be large deviations from the original plan, please communicate this to the Grants Team ahead of time.
 

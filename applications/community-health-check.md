@@ -3,6 +3,7 @@
 - **Team Name:** TogetherCrew
 - **Payment Address:** eth:0x6612213880f80b298aB66375789E8Ef15e98604E (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1482#issuecomment-2050408213)
 
 ## Project Overview :page_facing_up:
 

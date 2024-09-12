@@ -19,7 +19,7 @@ jobs:
       - name: Get application filename # We assume there's only one
         if: ${{ !env.ACT }}
         id: 'files'
-        uses: Ana06/get-changed-files@v2.0.0
+        uses: Ana06/get-changed-files@v2.3.0
         with:
           filter: 'applications/*.md'
           format: 'csv'
@@ -42,7 +42,7 @@ jobs:
 
       - name: Checkout
         if: ${{ !env.ACT }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Parse application file
         if: ${{ !env.ACT }}
@@ -53,10 +53,10 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%d/%m/%Y')"
+        run: echo "date=$(date +'%d/%m/%Y')" >> $GITHUB_OUTPUT
 
       - name: Add entry to Google Sheet
-        uses: jroehl/gsheet.action@v1.2.0
+        uses: jroehl/gsheet.action@v2.1.1
         with:
           spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
           commands: |
@@ -119,6 +119,8 @@ jobs:
             In particular, please <b>don't announce the grant publicly before at least the first milestone of your
             project has been approved.</b> At that point or shortly before, you can get in touch with us at
             grantsPR@web3.foundation and we'll be happy to collaborate on an announcement about the work you’re doing.<br/><br/>
+            Also, if you haven't yet, consider signing up for the [Polkadot Alpha Program](https://polkadot.network/development/alpha/). 
+            The program offers plenty of resources for people building on Polkadot.
             Lastly, please remember to let us know in case you run into any delays or deviate from the deliverables
             in your application. You can either leave a comment here or directly request to amend your application
             via PR. We wish you luck with your project! :rocket:
