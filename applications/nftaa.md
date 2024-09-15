@@ -4,7 +4,7 @@
 - **Payment Details:**
   - 50% in DOT and 50% in USDC for every milestone
   - **DOT**: 14uSonkTVjMGkJwhqD4oTaDgfGe2LpPgPyS8obomuuNAWfFt
-  - **Payment**: 0xCB83A2f840B070D5604f98B6a37c0d1f9D281a4c (ERC20 USDC)
+  - **Payment**: 14uSonkTVjMGkJwhqD4oTaDgfGe2LpPgPyS8obomuuNAWfFt (DOT, USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ### Overview
@@ -316,18 +316,17 @@ After reimplementing functionalities from pallet_nfts, we will add our own funct
 
 |  Number | Deliverable                                  | Specification                                                                                                                                                                                           |
 |--------:|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                                      | MIT                                                                                                                                                                                                     |
-| **0b.** | Documentation                                | Inline documentation of code, as well as startup configuration with all necessary commands, included in repository                                                                                      |
+| **0a.** | License                                      | MIT |
+| **0b.** | Documentation                                | Inline documentation of code, as well as startup configuration with all necessary commands, included in repository |
 | **0c.** | Testing and Testing Guide                    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                         |
 | **0d.** | Docker                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                           |
 |      1. | nftaa_pallet                                 | We will create the initial version of the nftaa_pallet which includes:                                                                                                                                  |
-|     1a. | reimplement functionalities from pallet_nfts | Integration with the Substrate nfts pallet                                                                                                                                                              |
+|     1a. | reimplement functionalities from pallet_nfts | Integration with the Substrate nfts pallet |
 |     1b. | nftaa_address                                | NFTAA creation and ownership management (implement functionality to transfer ownership of NFTAA), construct keyless address for given NFT, create NFTAA address (index) as future input to act as proxy |
-|     1c. | nftaa_pallet_attributes                      | Basic NFT attributes handling, bind NFT and its new keyless address to one entity consists of filling in the attributes contained in the NFTAA item                                                     |
-|
-|     1d. | Act as proxy                                 | Implement the proxy functionality to allow NFTs to act as proxy accounts, the owner of NFTAA can do a call via it; for this, we will use pallet_utility special function as_derivate                    |
-|     1e. | Get owned assets                             | Functionality needed to get all assets owned by given NFTAA                                                                                                                                             |
-|     1f. | Get NFTAAs in account and owner              | Functions for getting all assets owned by given NFTAA and to get owner of given NFTAA with metadata                                                                                                     |
+|     1c. | nftaa_pallet_attributes                      | Basic NFT attributes handling, bind NFT and its new keyless address to one entity consists of filling in the attributes contained in the NFTAA item|
+|     1d. | Act as proxy                                 | Implement the proxy functionality to allow NFTs to act as proxy accounts, the owner of NFTAA can do a call via it; for this, we will use pallet_utility special function as_derivate |
+|     1e. | Get owned assets                             | Functionality needed to get all assets owned by given NFTAA |
+|     1f. | Get NFTAAs in account and owner              | Functions for getting all assets owned by given NFTAA and to get owner of given NFTAA with metadata |
 
 ### Milestone 2 — Additional features
 
