@@ -1,184 +1,404 @@
-# Name of your Project
+# NFT as an account (NFTAA)
 
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
-- **Team Name:** Legal name of your team (e.g. JsonCorp)
+- **Team Name:** Decenzio
 - **Payment Details:**
-  - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
-  - **Payment**: In case of payment in **USDC or USDT**, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of **fiat** payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and list here the date and time of your email (e.g. Fiat 24.12.1971, 11:59). 
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
-
-> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
-## Project Overview :page_facing_up:
-
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
+  - 50% in DOT and 50% in USDC for every milestone
+  - **DOT**: 14uSonkTVjMGkJwhqD4oTaDgfGe2LpPgPyS8obomuuNAWfFt
+  - **Payment**: 0xCB83A2f840B070D5604f98B6a37c0d1f9D281a4c (ERC20 USDC)
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ### Overview
 
-Please provide the following:
+NFT as an Account (NFTAA) is an innovative project aimed at revolutionizing the use of NFTs within
+the blockchain ecosystem, particularly in the Substrate based networks like Polkadot and Kusama.
+The project seeks to leverage the unique properties of NFTs to function as proxy accounts, enhancing interoperability,
+security, and flexibility across various blockchain networks.
+By enabling NFTs to hold assets, stake, and interact with other blockchain components similarly to standard accounts,
+NFTAA introduces a novel approach to blockchain interactions.
 
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+The core of NFTAA's integration with the Polkadot ecosystem lies in utilizing the Substrate framework to develop custom
+blockchain logic that supports NFT-based accounts.
+These NFT accounts can seamlessly interact with other pallets within the Substrate framework, allowing them to own
+assets, stake, and act as proxies for other accounts.
+This integration takes full advantage of Polkadot’s interoperability features, facilitating seamless communication and
+data sharing across multiple independent blockchains (parachains) within the Polkadot network.
+
+Our motivation for creating this project stems from the desire to address the inherent limitations and inefficiencies
+associated with traditional staking methods.
+Issues such as the illiquidity of staked assets and the complexities involved in transferring ownership pose significant
+challenges.
+By utilizing NFTs as accounts, we aim to provide a more secure and flexible staking solution, enhancing user control and
+ownership.
+This innovative approach opens new avenues for business opportunities and applications in DeFi
+and enterprise blockchain solutions, underscoring our commitment to advancing blockchain technology and its
+applications.
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+#### Business Overview
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
+NFTs are unique digital assets that can represent a wide range of physical and digital items with
+varying values.
+Traditionally, NFTs operate on the asset side of the owner-asset relationship, lacking the capability to own other
+assets.
+Conversely, accounts represent ownership of assets within the blockchain ecosystem.
+By combining these two concepts, we propose a unique entity that can both be uniquely identifiable and capable of owning
+other assets, leading to the concept of NFTAA.
 
+One of the significant strengths of the Substrate framework is its ability to facilitate the creation of custom
+blockchain logic.
+Through forkless runtime upgrades, it is possible to enhance the functionality of individual modules.
+This flexibility is critical as runtime pallets operate close to the system’s core, offering virtually limitless
+modification options.
+Although the transaction weight is a limiting factor in terms of computing resources available for each transaction, it
+does not detract from the Substrate framework’s overall power and adaptability.
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+Most Substrate pallets are designed based on a single account architecture, aligning with the NFTAA philosophy and
+facilitating smooth integration with existing infrastructure.
+By treating NFTAAs as conventional accounts, we can easily leverage the existing infrastructure for seamless
+communication.
+Additionally, NFTAAs can function as asset owners or participate in multi-signature schemes, further
+enhancing their utility and security.
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/286414435e0fdd51810c1093688daf67df59d010/proposal/prox.png" alt="Proposal Diagram" width="30%" height="30%">
+
+A significant feature of NFTAA is the ability to transfer ownership of such an account/asset to
+another owner with the real change of the private keys serving the NFTAA.
+For example, if Alice has an NFTAA in her wallet through which she stakes 100 DOT, Alice can sell the NFTAA to Bob,
+which causes Alice's wallet to no longer be able to manipulate the NFTAA,
+meaning, that Bob will have full access using his own private keys that only he knows.
+This gives NFTAA the unique ability to assess many complex use cases.
+
+#### Technical Details
+
+The implementation of the NFTAA concept within the Polkadot ecosystem can be approached in two primary ways.
+The first approach involves creating custom blockchain logic in the form of a pallet, written in Rust as a Substrate
+module.
+The second approach involves using smart contracts. For this proposal, we prefer the pallet approach due to its
+integration capabilities and performance benefits.
+
+The proposed state-of-the-art pallet is based on the _nfts_ and _utility_ pallets.
+The first step involves implementing and wrapping the NFT logic from the _nfts_ pallet into the _nftaa_ pallet.
+A collection in the _nfts_ runtime pallet is created to represent an equivalent of a smart contract instance.
+The _nftaa_ pallet marks a collection so that any token from this collection is treated as an account. After creating a
+mintable collection, the _nftaa_ special function must be called with the appropriate parameters, including _collection_id_
+and _attributes_.
+Attributes are crucial for enterprise use cases, allowing NFTAAs to be marked as entities such as companies or departments
+within a corporate structure.
+
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/main/proposal/nftaa_seq_dia_creation.svg" alt="Proposal Diagram" width="70%" height="30%">
+
+Reimplementing the _utility.as_derivate_ function is the second crucial step.
+Constructing a keyless address in the runtime pallet from accountId and index is challenging.
+The index must represent a concatenation of the collection and token ID, but since the index is a u16 type, it cannot
+accommodate two u32 types.
+To overcome this, we will use the _blake2_ hash function to encode the following properties: a binary prefix _"modlpy/nftproxy"_, followed by parachain, collection, and token ID. Both collection and token ID are u32 types, and
+padding them with zeros to length 32 prevents overlap.
+The _AccountId32_ type is then used to construct the address, ensuring a unique address for each NFTAA.
+
+Implementing the _nftaa_ act as a proxy function is the third critical step.
+This function requires verifying that the caller is the owner of the token, constructing a custom derivative function,
+setting the derived account as the caller, and executing the original call.
+This mechanism ensures secure and efficient operations, allowing NFTAAs to function effectively within the blockchain
+ecosystem.
+
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/main/proposal/nftaa_seq_dia_proxy.svg" alt="Proposal Diagram" width="70%" height="30%">
+
+Ultimately, the proposed pallet will enable the creation of NFTAAs, setting attributes, and staking on the relay chain via
+the NFTAA.
+This innovative approach not only enhances the functionality and security of NFTs within the blockchain ecosystem but
+also opens new possibilities for their application in various business and financial contexts.
+By combining the strengths of NFTs and blockchain technology, NFTAA represents a significant step forward in the
+evolution of digital assets and their management.
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+The NFTAA project aims to modernize staking and account management within the Polkadot and Substrate ecosystems through
+the innovative use of NFTs by leveraging the flexibility of the Substrate framework and Polkadot's interoperability features.
+These NFT-based accounts can own assets, participate in staking, and serve as proxies for other accounts, significantly
+enhancing security, transparency, and liquidity within blockchain networks.
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
+NFTAA targets a diverse audience, including parachain developers, dApp developers, wallet developers, end users, and
+researchers.
+Parachain developers building custom blockchain networks on Polkadot can benefit from enhanced staking and account
+management features offered by NFTAA.
+dApp developers will find NFTAA particularly useful for secure and flexible account management and staking solutions.
+Developers of cryptocurrency wallets can integrate NFTAA to provide users with advanced functionalities, thereby
+improving the user experience.
+Both individuals and enterprises looking for improved liquidity in their blockchain assets can leverage
+NFTAA for better asset management.
+Additionally, researchers and academics interested in exploring new blockchain innovations can study and expand upon the
+unique concepts introduced by NFTAA.
 
-## Team :busts_in_silhouette:
+The NFTAA project addresses several critical needs within the blockchain ecosystem.
+Utilizing NFTAA provides more methods for managing and delegating staking rights without exposing private keys.
+This approach significantly reduces the risk of unauthorized access and enhances overall security.
+Furthermore, NFTAA allows staked assets to remain liquid, enabling users to trade, lend, or use them as collateral even
+while they are staked.
+This flexibility is crucial for users who need access to their assets without compromising their staking benefits.
+The project also potentially leverages Polkadot's ability to connect multiple blockchains, ensuring seamless asset transfers and
+interactions across different networks.
+This interoperability is essential for creating a cohesive and efficient blockchain ecosystem.
+Moreover, NFTAA empowers users by allowing them to delegate staking rights, transfer ownership of staked assets, and
+interact with multiple blockchain networks through a single NFTAA, thereby enhancing user control and simplifying asset
+management.
 
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
+The needs addressed by the NFTAA project were identified through a comprehensive approach.
+A literature review of existing research on staking mechanisms, blockchain security, and asset management highlighted
+the limitations and potential improvements in current systems.
+Case studies examining current issues faced by stakers and asset managers in blockchain networks like Ethereum and
+Polkadot provided practical insights into the challenges and opportunities for innovation.
+Additionally, research on the drawbacks of existing staking mechanisms and the potential benefits of using NFTs for
+account management provided a solid foundation for the project's conceptual framework.
+
+There are similar projects in the Polkadot universe:
+
+- Lido: A liquid staking protocol that allows users to stake assets and receive derivatives representing the staked
+  amount.
+- Bifrost: Provides liquidity for staked assets through a voucher system and supports cross-chain staking.
+- Acala: Offers a similar staking mechanism with its LDOT token, providing immediate liquidity and flexibility in
+  staking.
+
+Differences and Distinctions:
+
+- NFTAA vs. Lido/Bifrost/Acala: Unlike these projects, NFTAA focuses on using NFTs as proxy accounts for staking, which
+  allows for a more flexible and secure delegation of staking rights and ownership. NFTAA also leverages the composability
+  of NFTs, enabling them to hold other assets and act as accounts within the blockchain ecosystem.
+
+Similar concepts exist in other ecosystems:
+
+- Rocket Pool: An Ethereum-based protocol for decentralized staking that allows users to earn rewards without running a
+  full node.
+- EIP-6551 (TBA - token bound accounts): A proposed Ethereum standard to enhance NFTs by equipping them with smart contract capabilities, allowing them to own assets and interact with other contracts.
+
+Differences and Distinctions (NFTAA vs. EIP-6551):
+
+NFTAA is designed specifically for the Polkadot and Substrate ecosystems, utilizing their unique features, such as interoperability and cross-chain communication.
+Additionally, NFTAA’s focus on using NFTs as proxy accounts for staking and asset management offers a novel approach compared to the more traditional liquid staking and smart contract enhancements in the Ethereum ecosystem.
+
+EIP 6551 presents certain limitations. Our solution, e.g., does not prioritize connecting existing NFTs but enables bidirectional binding of the NFT and proxy.
+Consequently, upon ownership of an NFT, we can discern from the NFT metadata indicating its status as an NFTAA.
+Furthermore, we enhance transparency by ensuring the atomic creation of the NFT and proxy within a single transaction, thereby promoting seamless integration.
+Likewise, our design does not need the registrar service to create the TBA address as opposed to TBA.
+In our case, the pallet creates the NFTAA with functionality that also works as the NFTAA address (TBA uses one more address than NFTAA).
+Another difference is that in TBA, you could have more accounts on one NFT, which, in our case, is not possible due to the atomic creation of exactly one NFT at the time of creating the NFTAA.
+Regarding security, there are at least two differences between NFTAA and TBA. The first is the possibility of generating the address of TBA sooner without having the deployed contract (as the create2 function for creating contracts is deterministic, i.e., you can calculate the future contract address).
+In this case, if the upcoming smart contract is badly developed (does not contain an execute function for byte calls to other contracts) or is not upgradeable, it can happen that assets or liquidity sent to the TBA will not be withdrawable and become locked forever (even the NFT bounded in TBA can be sent by a mistake (if not safeguarded) to the address of TBA. Therefore you lock yourself from it).
+The problem is that TBA uses only the address of any contract you want in the registry contract and does not look for any details on how the contract looks or if it is already deployed. In our case, the account form is pre-defined in the factory pallet, and even after deployment, we guarantee upgradeability as it is a proxy account.
+The second security issue is potential fraud, which is [described in the EIP 6551 specification](https://eips.ethereum.org/EIPS/eip-6551\#fraud-prevention) that you withdraw assets from the TBA and at the same time sell the NFT to someone who thought that they would also have the assets in the TBA. In our case, we provide the security measures for not withdrawing the assets from the NFTAA while also selling the NFT, which is bound to the NFTAA.
+
+
+In summary, the NFTAA project provides a unique solution to enhance staking and account management in the Polkadot
+ecosystem by leveraging NFTs' flexibility, security, and interoperability. It addresses key needs identified through
+comprehensive research and differentiates itself from similar projects in both Polkadot and related ecosystems.
+
+## Team
+
+Our team comprises seasoned blockchain experts, architects, and developers, each bringing extensive experience in
+blockchain technology and other technical knowledge. Our blockchain experts have a deep understanding of decentralized
+systems, consensus mechanisms, and smart contract development.
+Our architects are adept at designing scalable, secure, and efficient blockchain architectures, ensuring seamless
+integration and interoperability within the ecosystem.
+Our developers are proficient in Rust, leveraging its safety and performance features to build robust blockchain
+applications.
+Together, we are committed to pushing the boundaries of blockchain innovation and delivering cutting-edge solutions.
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Name of team leader:
+  - Roman Bitarovsky
+
+- Names of team members:
+  - Kristian Kostal
+  - Branislav Hozza
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Roman Bitarovsky
+- **Contact Email:** decenzio@protonmail.com
+- **Website:** decenzio.com
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Pod Sokolice 517/1 Trencin 911 01 SK
+- **Registered Legal Entity:** Decenzio s. r. o.
 
 ### Team's experience
+Roman has 2 years of experience as a Java backend developer in the banking domain. He participated in the development of a mobile banking wallet app and an app for managing loan applications used by bank back-office workers.
+Additionally, Roman was involved in the development of a DeFi aggregator, an app focused on integrating multiple DeFi functionalities, such as swap, portfolio tracking, loan usage, etc., on the Ethereum network. Roman studies Blockchain technology and completed a bachelor's thesis on NFTAA, with an article about this published by IEEE (check the Development status section).
+Currently, Roman is pursuing a Master's degree at FIIT STU and working on ZKP research. His further learning activities include a three-year program focusing on leadership. Recently, Roman co-founded Decenzio, a blockchain and Web3-oriented IT company.
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
+Branislav is a fullstack developer with nearly five years of experience, specializing in technologies such as Vue.js, TypeScript, JavaScript, .NET, and AdonisJS. He has made contributions to the blockchain space, working on the Kodadot NFT gallery platform.
+Additionally, Branislav played a key role in the development of Tokengram, a DeFi social platform, where he combined his development skills with a passion for decentralized finance.
+Branislav’s academic work further highlights his commitment to blockchain innovation. His bachelor’s thesis explored the on-chain representation of gaming assets, utilizing a Substrate pallet to code and research the integration of gaming assets on blockchain networks.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+Kristian is an experienced blockchain architect with a lot of projects behind him, e.g., gold-backed cryptocurrency, cross-chain interoperability API protocol, an EU-wide blockchain platform for debt financing of SMEs by issuing bonds, a web3 social network, etc. He holds PhD in Computer Science from the Slovak University of Technology, with his dissertation thesis focused on interoperability between
+heterogeneous blockchain networks. One of the partial challenges in the dissertation thesis was on scalability issues,
+where he studied Layer-2 techniques, especially with the use of Zero-knowledge proofs. In the last 3 years,
+he has been working on practical use cases of blockchain networks in different domains of computer science
+research. Mentionable are smart grids, e-voting platforms, and asset-sharing platforms with privacy
+preservation. He serves as a Slovak Representative for European blockchain services infrastructure within the
+European Blockchain Partnership (European Commission) and is also active in cooperating on policy-making documents regarding blockchain technologies. Besides that, he serves as leader of the Blockchain & FinTech research group and has authored 25 academic publications.
 
 ### Team Code Repos
+- [A pool-based liquidity protocol based on Polkadot](https://github.com/fiit-ba/pool-based-liquidity-protocol)
+- [An oracle network for Solana blockchain](https://github.com/fiit-ba/omniscient-blockchain-oracle)
+- [Tokengram social network for NFT holders](https://github.com/fiit-tp7-2023)
+- [On-chain representation of gaming assets](https://github.com/brano-hozza/meta-assets)
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+### Team GitHub Profiles
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- https://github.com/Roman-24
+- https://github.com/xkostal
+- https://github.com/brano-hozza
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- https://www.linkedin.com/in/romanbitarovsky/
+- https://www.linkedin.com/in/kristi%C3%A1n-ko%C5%A1%C5%A5%C3%A1l-9599a82b5/
+- https://www.linkedin.com/in/branislav-hozza-3b7234173/
 
+### Advisors
+Ecosystem developers who agreed to provide advisory help during the project implementation phase:
+- [Dudo50](https://github.com/dudo50), founder of ParaSpell (Interoperability solutions)
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+This concept has already been implemented as a prototype dApp on an Ethereum-like chain, with its details discussed in two
+academic publications.
+The first is a [conference full paper](https://arxiv.org/pdf/2404.14074) presented at
+the [2024 IEEE International Conference on Blockchain and Cryptocurrency in Dublin](https://icbc2024.ieee-icbc.org/).
+The second is a [Bachelor's thesis](https://opac.crzp.sk/?fn=detailBiblioForm&sid=2D2C61E4341E5366536A1A3BFA9A) where
+this concept was originally developed and first implemented using Solidity smart contracts on Moonriver.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
-- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
+- **Total Estimated Duration:** 6 months
+- **Full-Time Equivalent (FTE):**  2 FTE
+- **Total Costs:** 30,000 USD
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Basic functionality
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 2.5 months
+- **FTE:**  2
+- **Costs:** 15,000 USD
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+At first, we need to take pallet_nfts, take most core functions of NFS, and wrap these functionalities in our pallet. The reason to add pallet_nfts as a dependency and wrap the functions is to make usage of our pallet_nftaa easier and have all functionalities in one package for developers.
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#documentation) for details. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+Functionalities from pallet_nfts:
+- pallet::dispatchables::burn
+- pallet::dispatchables::buy_item
+- pallet::dispatchables::clear_attribute
+- pallet::dispatchables::clear_collection_metadata
+- pallet::dispatchables::clear_metadata
+- pallet::dispatchables::create
+- pallet::dispatchables::destroy
+- pallet::dispatchables::lock_collection
+- pallet::dispatchables::lock_item_properties
+- pallet::dispatchables::lock_item_transfer
+- pallet::dispatchables::mint
+- pallet::dispatchables::redeposit
+- pallet::dispatchables::set_attribute
+- pallet::dispatchables::set_collection_max_supply
+- pallet::dispatchables::set_collection_metadata
+- pallet::dispatchables::set_metadata
+- pallet::dispatchables::set_price
+- pallet::dispatchables::set_team
+- pallet::dispatchables::transfer
+- pallet::dispatchables::transfer_ownership
+- pallet::dispatchables::unlock_item_transfer
+- pallet::dispatchables::update_mint_settings
 
+After reimplementing functionalities from pallet_nfts, we will add our own functions related to NFTAA functionality.
 
-### Milestone 2 Example — Additional features
+|  Number | Deliverable                                  | Specification                                                                                                                                                                                           |
+|--------:|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                                      | MIT                                                                                                                                                                                                     |
+| **0b.** | Documentation                                | Inline documentation of code, as well as startup configuration with all necessary commands, included in repository                                                                                      |
+| **0c.** | Testing and Testing Guide                    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                         |
+| **0d.** | Docker                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                           |
+|      1. | nftaa_pallet                                 | We will create the initial version of the nftaa_pallet which includes:                                                                                                                                  |
+|     1a. | reimplement functionalities from pallet_nfts | Integration with the Substrate nfts pallet                                                                                                                                                              |
+|     1b. | nftaa_address                                | NFTAA creation and ownership management (implement functionality to transfer ownership of NFTAA), construct keyless address for given NFT, create NFTAA address (index) as future input to act as proxy |
+|     1c. | nftaa_pallet_attributes                      | Basic NFT attributes handling, bind NFT and its new keyless address to one entity consists of filling in the attributes contained in the NFTAA item                                                     |
+|
+|     1d. | Act as proxy                                 | Implement the proxy functionality to allow NFTs to act as proxy accounts, the owner of NFTAA can do a call via it; for this, we will use pallet_utility special function as_derivate                    |
+|     1e. | Get owned assets                             | Functionality needed to get all assets owned by given NFTAA                                                                                                                                             |
+|     1f. | Get NFTAAs in account and owner              | Functions for getting all assets owned by given NFTAA and to get owner of given NFTAA with metadata                                                                                                     |
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+### Milestone 2 — Additional features
 
-...
+- **Estimated Duration:** 2 month
+- **FTE:**  1.5
+- **Costs:** 9,000 USD
 
+Functionalities from pallet_nfts:
+- pallet::dispatchables::approve_item_attributes
+- pallet::dispatchables::approve_transfer
+- pallet::dispatchables::cancel_approval
+- pallet::dispatchables::cancel_item_attributes_approval
+- pallet::dispatchables::cancel_swap
+- pallet::dispatchables::claim_swap
+- pallet::dispatchables::clear_all_transfer_approvals
+- pallet::dispatchables::create_swap
+- pallet::dispatchables::force_collection_config
+- pallet::dispatchables::force_collection_owner
+- pallet::dispatchables::force_create
+- pallet::dispatchables::force_mint
+- pallet::dispatchables::force_set_attribute
+- pallet::dispatchables::mint_pre_signed
+- pallet::dispatchables::pay_tips
+- pallet::dispatchables::set_accept_ownership
+
+After these, we will add our own functions related to NFTAA staking functionality.
+
+| Number | Deliverable             | Specification                                                                                                                      |
+|-------:|-------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+|    2a. | nftaa_check             | We will add functionalities to read and check if NFTAA exists for a given account                                                  |
+|    2b. | nftaa_collections       | We will add functionalities to read existing collections and manage NFTAAs if they are in a collection.                            |
+|    2c. | nftaa_stake/unstake     | The functionality needed to do stake/unstake operations on behalf of NFTAA, its like deposit/withdrawal functions                  |
+|    2d. | nftaa_increase/decrease | Functions needed to increase or decrease stake by NFTAA, this is needed for full compatibility with traditional methods of staking |
+
+### Milestone 3 — Web app + article
+
+- **Estimated Duration:** 1.5 month
+- **FTE:**  1.5
+- **Costs:** 7,000 USD
+
+| Number | Deliverable     | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|-------:|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    3a. | Article         | We will publish an **article** that explains NFTAA (what was done/achieved as part of the grant). The article will be published through an online media service, e.g., medium.com, and advertised through social networks. Our ambition, as we are from academic environment, is to have also an academic paper about the idea of NFTAA in Polkadot published in a conference venue                                                                                    |
+|    3b. | Web app         | Develop a web application to interact with the nftaa_pallet, allowing users to create, manage, and transfer NFTAAs, provide a web application to interact with the nftaa_pallet: allowing users to create collections and single item; manage of metadata and attributes; operate with NFTAA ownership (transfers); play with staking, increase stake and unstake handled by NFTAA; read operations as get for an account, get assets of NFTAA, get the owner of NFTAA |
+|    3c. | Marketplace app | We will also create a lightweight marketplace application for easily buying and selling the NFTAAs with an overall list in a form of a bulleting board.                                                                                                                                                                                                                                                                                                                |
 
 ## Future Plans
 
-Please include here
+Once everything is implemented according to the proposed plan, the application will still be under constant improvement
+as technology progresses.
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+In the long run, we also want to improve the design and add new features that can be useful for developers and Polkadot users.
 
-## Referral Program (optional) :moneybag:
 
-You can find more information about the program [here](../README.md#moneybag-referral-program).
+## Referral Program :moneybag:
 
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDT/USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDT))
+- **Referrer:** [VikiiVal](https://github.com/vikiival)
+- **Payment Address:** 15BZFbMsCR1ki59mJHo8iAjgAozGJaYHR3oVRPQWNnoEZiL9 (USDC)
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** personal recommendation
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+The progress we've made so far is detailed in the Development Status section. Here's a summary of the key achievements:
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+- Prototype dApp on Ethereum-like Chain: We have successfully implemented a prototype dApp
+  on an Ethereum-like blockchain. This prototype demonstrates the core concepts and functionality of NFTAA.
+- Academic Publications: Our work on NFTAA has been documented in two academic publications. The first is a conference
+  full paper presented at the 2024 IEEE International Conference on Blockchain and Cryptocurrency in Dublin. The second
+  is a Bachelor's thesis where the concept was originally developed and first implemented using Solidity smart contracts
+  on Moonriver.
+
+This foundational work has provided valuable insights and a solid basis for the development of NFTAA on the Polkadot
+ecosystem.
