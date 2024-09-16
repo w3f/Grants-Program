@@ -32,8 +32,6 @@ We launched our public beta in August 2022 and currently have ~15,000 MAU active
 
 Alphaday is a React-Typescript dashboard on the frontend using a Python-Django backend built on distributed infrastructure with Postgres and Redis Databases.
 
-Most components of the frontend are free but there are some off-the-shelf code we used from various services that we were not given permission to open-source and therefore those are still closed-source. Many of the widgets we deployed (ie uniswap widget) and data from the API are freely available on the internet.
-
 #### Challenges
 
 As the primary core product is already developed, developing and deploying the dashboard poses minimal risk. 
@@ -147,22 +145,25 @@ Demo: https://www.youtube.com/watch?v=ThCd_W3rK_8
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | Blog | The latest Polkadot official announcements and blog post content |
-| 0b. | News | A feed of all news mentions of Polkadot/Kusama from coindesk, cointelegraph and 20+ other news sources aggregated from across the internet |
-| 0c. | Calendar | A calendar containing all Polkadot/Kusama events including meetups, hackathons with Polkadot/Kusama bounties, AMAs |
-| 0d. | Podcast | Podcast Feed featuring Polkadot/Kusama |
-| 0e. | Videos | Youtube stream containing educational Polkadot/Kusama/Web3 content |
-| 0f. | Documentation | Complete Polkadot/Kusama Document directory |  
-| 0g. | Forum | Integration with Polkadot Governance Forum to show the latest and trending discussion topics |  
-| 0h. | Social | Discord & Reddit Integration to show a feed of latest discussions for both Polkadot/Kusama |  
-| 0i. | Misc | FAQ, Polkadot Whitepaper, DOT/KSM tokenomics information |
-| 0j. | Token Price | Live DOT/KSM spot price chart |
-| 0k. | Developer Resources | Developer tools, API’s, tutorials, guides, grants & bounties, documentation, and any other ‘Build’ resources that can help build with Polkadot/Kusama |  
-| 0l. | Careers | Polkadot/Kusama/Web3 Careers integration to show the latest open jobs listed |  
-| 0m. | Roadmap |  A widget featuring the Polkadot roadmap with all the descriptions and links included |  
-| 0n. | Ecosystem | Categorized links and descriptions of products and services offered in the Polkadot/Kusama ecosystem |  
-| 0o. | TVL Data | Polkadot/Kusama TVL data through Defillama integration |
-| 0p. | Team | Polkadot/Kusama founders information |
+| 0a. | License | MIT |
+| 0b. | Documentation | Not applicable to Alphaday, as we have no Substrates nodes or sending functionality on the app |
+| 0c. | Testing Guide | We can provide a document as a guide to give a bit more detail on how to test a completed dashboard's functionality. It will be a reference to the points listed below (1-14) |
+| 0d. | Docker | The dashboard would be live and visible to anyone that accesses the url. As such, a Docker file would be deemed unnecessary. |
+| 0e. | Article | We will publish articles and other posts about the dashboard and the project once we deploy it. |
+| 1. | Blog | The latest Polkadot official announcements and blog post content |
+| 2. | News | A feed of all news mentions of Polkadot/Kusama from coindesk, cointelegraph and 20+ other news sources aggregated from across the internet |
+| 3. | Calendar | A calendar containing all Polkadot/Kusama events including meetups, hackathons with Polkadot/Kusama bounties, AMAs |
+| 4. | Documentation | Complete Polkadot/Kusama Document directory |  
+| 5. | Forum | Integration with Polkadot Governance Forum to show the latest and trending discussion topics |  
+| 6. | Social | Discord & Reddit Integration to show a feed of latest discussions for both Polkadot/Kusama |  
+| 7. | Misc | FAQ, Polkadot Whitepaper, DOT/KSM tokenomics information |
+| 8. | Token Price | Live DOT/KSM spot price chart |
+| 9. | Developer Resources | Developer tools, API’s, tutorials, guides, grants & bounties, documentation, and any other ‘Build’ resources that can help build with Polkadot/Kusama |  
+| l0. | Careers | Polkadot/Kusama/Web3 Careers integration to show the latest open jobs listed |  
+| 11. | Roadmap |  A widget featuring the Polkadot roadmap with all the descriptions and links included |  
+| 12. | Ecosystem | Categorized links and descriptions of products and services offered in the Polkadot/Kusama ecosystem |  
+| 13. | TVL Data | Polkadot/Kusama TVL data through Defillama integration |
+| 14. | Team | Polkadot/Kusama founders information |
 
 ### Milestone 2 — Maintenance & Curation of Dashboard
 
@@ -172,10 +173,10 @@ Demo: https://www.youtube.com/watch?v=ThCd_W3rK_8
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | API’s & RSS feeds | Changes in API or RSI feeds that need to be updated on a regular basis. |
-| 0b. | Updating Automated Sources | News sources or other content sources to be added or removed. |
-| 0c. | Manual Data Curation | Manually import data, such as upcoming events, that are not picked up by the Alphaday aggregator engine. |
-| 0d. | Further Development & Upkeep |  New developments or integrations, and quality assurance/testing of new features and widgets |
+| 1. | API’s & RSS feeds | Changes in API or RSI feeds that need to be updated on a regular basis. |
+| 2. | Updating Automated Sources | News sources or other content sources to be added or removed. |
+| 3. | Manual Data Curation | Manually import data, such as upcoming events, that are not picked up by the Alphaday aggregator engine. |
+| 4. | Further Development & Upkeep |  New developments or integrations, and quality assurance/testing of new features and widgets |
 
 ...
 
