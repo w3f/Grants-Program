@@ -57,6 +57,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Experio S M](https://www.linkedin.com/in/leogcustodio/)                       | [Polkadart Follow-up](./polkadart_extension.md)                     | [GitHub](https://github.com/leonardocustodio/polkadart)                 | ☐          |        ☐       |      ☐      |
 | [Solidbit GmbH](https://solid-bit.com/)                       | [ISO20022 Ecosystem Research and Technical Design](./ISO20022-Implementation-POC.md)                     | [GitHub](https://github.com/SolidbitGmbH)                 | ☐          |        ☐       |      ☐      |
 | [Katarína Valová](https://github.com/kacena123)                       | [AgriDot](./AgriDot.md)                     | [GitHub](https://github.com/kacena123)                 | ☐          |        ☐       |      ☐      |
+| [Web3 Association](https://github.com/web3association)                       | [Open source contributor funding experiment](./web3-association-open-source-contributor-funding-experiment-setup.md)                     | [GitHub](https://github.com/web3association)                 | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
