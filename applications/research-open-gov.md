@@ -66,7 +66,6 @@ OpenGov represents a significant innovation in decentralized governance, promisi
 - **Estimated Duration:** 1.5 months
 - **Deliverables:**
   - Data analysis results.
-  - Draft research report.
   - Final research report.
 - **Costs:** 10,000 USD
 
@@ -77,16 +76,26 @@ OpenGov represents a significant innovation in decentralized governance, promisi
 
 ### Additional Information
 
-- **Team Experience:** 
+
+### Team LinkedIn Profiles
+
+- https://www.linkedin.com/in/igor-stojanov-96364ba/
+- https://www.linkedin.com/in/charles-owen-jackson/
+
+
+
+**Team Experience:** 
     We have published scientific work in [IEEE](https://ieeexplore.ieee.org/document/7302487) on evaluation of software development methodologies.
+    Furthermore, Charles has contributed to writing many whitepapers, blogs on the topics of Cybersecurity, IoT, AI, Open Source and other similar topics. For more information, please refer to his portfolio: https://charlesowenjackson.com/portfolio/
 
 
-- **Team Background:**  
-    - Igor Stojanov - Founder of UNIVERSALDOT Foundation. Igor has a Master Degree in Business Information Systems and currently works as a Senior Technology Consultant for a large consultant group.
-     - Freelancing Business Analyst 
+**Team Background:**  
+    - Igor Stojanov - Founder of UNIVERSALDOT Foundation. Igor has a Master Degree in Business Information Systems and currently works as a Senior Technology Consultant for a large consultant group. For more information, check out https://igorstojanov.com
+     - Charles Owen-Jackson - Freelancing Business Analyst & Technology writer.
+        Charles, a UK native now residing in Prague since 2011, is a freelance writer specializing in case studies, enterprise technology, and content creation. With over a decade of experience, he has collaborated with prominent companies like Iron Mountain and CloudFactory, crafting content strategies across various formats. For more information, check out: https://charlesowenjackson.com 
   
 
-- **Future Plans:**  
+**Future Plans:**  
     Following the completion of this research, we plan to expand the scope of our work by conducting longitudinal studies to track the evolution of OpenGov systems over time. Additionally, we aim to explore the scalability of the OpenGov framework by applying our findings to other blockchain networks and decentralized organizations.
 
 
