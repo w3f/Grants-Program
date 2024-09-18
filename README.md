@@ -92,7 +92,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
-- [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
 
