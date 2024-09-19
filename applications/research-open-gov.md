@@ -12,6 +12,8 @@
 
 ## Project Details
 
+This is a response to the following request for proposal: https://grants.web3.foundation/docs/RFPs/action_research_opengov
+
 ### Abstract
 
 The proposed research project aims to conduct action research on OpenGov systems, particularly focusing on mechanisms of decentralized governance, participatory decision-making, and the application of governance frameworks within the Polkadot and Kusama ecosystems. The objective is to assess the effectiveness of these systems and provide actionable insights to improve the governance processes.
@@ -99,9 +101,12 @@ OpenGov represents a significant innovation in decentralized governance, promisi
     Following the completion of this research, we plan to expand the scope of our work by conducting longitudinal studies to track the evolution of OpenGov systems over time. Additionally, we aim to explore the scalability of the OpenGov framework by applying our findings to other blockchain networks and decentralized organizations.
 
 
-
 ## Legal Structure
 
 - **Legal Entity:** UNIVERSALDOT OU
 - **Registered Address:** Harju maakond, Tallinn, Kesklinna linnaosa, Ahtri tn 12, 15551
+
+## Payment
+
+Payment is to be paid in DOT at the Payment Address indicated above. The Dollar ($) to DOT conversion is to be made at the time of payment.
 
