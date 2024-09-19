@@ -44,7 +44,7 @@ Once the user triggers the function to mint a non-fungible asset, the xcNFT modu
 
 **Built with emphasis on UX**
 
-<img width="572" alt="UX PoC" src="https://github.com/user-attachments/assets/c98cb7e0-88d4-400b-847f-d824737a8ab9">
+<img width="572" alt="UX PoC" src="https://github.com/user-attachments/assets/c98cb7e0-88d4-400b-847f-d824737a8ab9"></img>
 
 Our [proof-of-concept](https://github.com/paraspell-research-foundation/xcNFT-Pallet/tree/main) solution was built to be easy to interact with for both developers and users. Events handle debugging of cross-chain messaging, so users are notified if the cross-chain message fails to execute the expected task. The destination selection logic is much simpler - users just type in the destination Parachain ID.
 
@@ -117,7 +117,7 @@ Michael Absolon - Faculty of Informatics and Information Technologies STU in Bra
 
 The Physical form of a certificate from PBA Buenos Aires 
 
-<img width="400" alt="certificate" src="https://user-images.githubusercontent.com/55763425/275783335-140792ac-80dd-4e48-92ce-fa630c3f390b.png">
+<img width="400" alt="certificate" src="https://user-images.githubusercontent.com/55763425/275783335-140792ac-80dd-4e48-92ce-fa630c3f390b.png"></img>
 
 - Michael is a dedicated TypeScript developer with 4 years of full-time experience in the Web2 sphere. Michael's expertise in this field was further solidified in 2019 when he won first place in the Junior Internet Web competition for his online multiplayer game, which was written in JavaScript. In addition to his professional background, Michael also achieved a master's degree in the same computer science University as Dušan. His passion for technology led him to explore Blockchain technology in his free time. Michael delivered many core functionalities to the XCM Tool stack at ParaSpell.
 
@@ -145,7 +145,7 @@ We have already built a functional demo / proof of concept for the xcNFT pallet 
 
 We have also submitted a paper regarding this concept to [Brainz 2024 conference](https://brains.dnac.org/2024/) that specifies in Blockchain related research. This paper got accepted and we will present it on the conference in Berlin in person.
 
-<img width="1171" alt="brainz 2024" src="https://github.com/user-attachments/assets/81c13a51-6559-4c2d-959e-f3a327400212">
+<img width="1171" alt="brainz 2024" src="https://github.com/user-attachments/assets/81c13a51-6559-4c2d-959e-f3a327400212"></img>
 
 ## Development Roadmap :nut_and_bolt:
 

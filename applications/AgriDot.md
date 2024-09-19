@@ -8,7 +8,7 @@
 
 ## Project Overview :page_facing_up:
 <div align="center">
-<img width="400" alt="AgriDot" src="https://github.com/user-attachments/assets/a5dae469-754d-49c4-9e69-d61d4a315616">
+<img width="400" alt="AgriDot" src="https://github.com/user-attachments/assets/a5dae469-754d-49c4-9e69-d61d4a315616"></img>
   <h4 align="center"> Empowering farmers and beekeepers with blockchain-based NFT field management and community-driven knowledge sharing. </h4>
   <p align="center">
   </p>
@@ -52,7 +52,7 @@ Application advantages compared to traditional Web2 agriculture applications:
 
 The UI of the application is designed to be simple to use and to abstract complexity anywhere possible to provide smooth UX for Farmers. Everything Blockchain/Polkadot related contains simple to understand explanation/guide Farmers can easily follow. Below is an example of a login screen & field overview screen.
 
-<img width="609" alt="UI" src="https://github.com/user-attachments/assets/9867841c-de95-44e0-ab7b-392e7e9f30fa">
+<img width="609" alt="UI" src="https://github.com/user-attachments/assets/9867841c-de95-44e0-ab7b-392e7e9f30fa"></img>
 
 We have prepared design mockups with simple workflows for the Web3 version in [Figma - here](https://www.figma.com/design/WR2ZtOiYJcq9cBZvRzH4l9/AgriDot). This Figma project also contains the design of our [current PoC](https://github.com/kacena123/aurora-borealis) Web2 solution for comparison. We believe, that the improvement in UI is substantial.
 
