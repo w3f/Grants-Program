@@ -2,7 +2,7 @@
 
 - **Team Name:** AgriDot
 - **Payment Details:**
-  - **DOT**: 1BygNiKxzMNNFEuGwwAAHmyasFXgP1WY3tA3uuVfsbNi4FM 
+  - **DOT**: 1ukfa64f2WxSvJy8zwNC2RpSiajt2X1hsYQqBHmM9DTjT8R 
   - **Payment**: Fiat payment - Details will be provided if the proposal gets accepted.
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 🐣
 
@@ -206,7 +206,7 @@ agricultural technology exhibitions.
 ## Referral Program :moneybag:
 
 - **Referrer:** [Dudo50](https://github.com/dudo50)
-- **Payment Address:** 141NGS2jjZca5Ss2Nysth2stJ6rimcnufCNHnh5ExSsftn7U (Polkadot)
+- **Payment Address:** 139zHfuPsG62FKQtwjxMwqZAwPNZG6BooUWgF6L3LWYLUu3z (Polkadot)
 
 ## Additional Information :heavy_plus_sign:
 
