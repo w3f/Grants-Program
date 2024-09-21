@@ -4,7 +4,7 @@
 This Request for Proposals is _closed_, meaning we are not looking for any more proposals on this topic at the moment.
 :::
 
-* **Status:** Closed
+* **Status:** Closed ([Implementation 1](https://github.com/w3f/Grants-Program/blob/master/applications/grantmaster.md), [Implementation 2](https://github.com/w3f/Grants-Program/blob/master/applications/Grant_management_webapp.md))
 * **Proposer:** [randombishop](https://github.com/randombishop)
 
 
