@@ -18,7 +18,7 @@ ParaSpell main advantages can be summarized in the following list:
 
 One of the ParaSpell main goals is to reduce the time necessary to create XCM calls or open HRMP channels.
 
-<img width="1027" alt="Open channel" src="https://github.com/user-attachments/assets/3a5c1c72-3e20-40fd-9e2c-80cde2dfb525">
+<img width="1027" alt="Open channel" src="https://github.com/user-attachments/assets/3a5c1c72-3e20-40fd-9e2c-80cde2dfb525"></img>
 
 As we can see in the figure above, the amount of details the user has to fill to transfer the XCM message is drastically reduced. As an example, users do not need to specify a specific route from origin to destination chain. These details are filled for them.
 
@@ -34,23 +34,23 @@ ParaSpell in its current form allows developers to install all dependencies as w
 
 The following screen allows the user to open the HRMP channels between list of parachains pulled from Rococo by API call.
 
-<img width="1027" alt="Open channel" src="https://github.com/user-attachments/assets/e8594046-0441-4b70-b2d0-71bf3c1755be">
+<img width="1027" alt="Open channel" src="https://github.com/user-attachments/assets/e8594046-0441-4b70-b2d0-71bf3c1755be"></img>
 
 Closing HRMP channels is just as simple as opening them. One button click to close the required channel.
 
-<img width="1042" alt="close channel" src="https://github.com/user-attachments/assets/6c67fdb4-46c4-4bc6-b2e4-5e7d55890d97">
+<img width="1042" alt="close channel" src="https://github.com/user-attachments/assets/6c67fdb4-46c4-4bc6-b2e4-5e7d55890d97"></img>
 
 If the user decides to transfer funds from Relay chain to Parachain they can do so by filling following details. These required details are way faster to fill than filling a full XCM call which requires a complete route and selection of concrete token.
 
-<img width="1044" alt="relay to para" src="https://github.com/user-attachments/assets/cc9bb30b-2a11-4879-9fe4-c8a49386f90f">
+<img width="1044" alt="relay to para" src="https://github.com/user-attachments/assets/cc9bb30b-2a11-4879-9fe4-c8a49386f90f"></img>
 
 The opposite, but nearly the same scenario is sending tokens from Parachain to Relay chain. It is just as simple, however.
 
-<img width="1038" alt="para to relay" src="https://github.com/user-attachments/assets/144cf071-ad7e-4ebc-b8d1-e4e1c06ebdb6">
+<img width="1038" alt="para to relay" src="https://github.com/user-attachments/assets/144cf071-ad7e-4ebc-b8d1-e4e1c06ebdb6"></img>
 
 The last transaction scenario is the transfer of funds between Parachain and another Parachain.
 
-<img width="1039" alt="para to para" src="https://github.com/user-attachments/assets/1569c637-50e2-42a4-83ed-42300ed59a4f">
+<img width="1039" alt="para to para" src="https://github.com/user-attachments/assets/1569c637-50e2-42a4-83ed-42300ed59a4f"></img>
 
 - Overview video of application is also available on Youtube
 [Link to overview video](https://youtu.be/YKZEa2MaY6Q)
