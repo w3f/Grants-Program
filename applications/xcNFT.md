@@ -36,21 +36,22 @@ xTokens has the following advantages compared to other fungible asset-sharing mo
 
 We wanted to create a process of sharing cross-chain non-fungible assets with other chains that is light, efficient, and simple. Our initial design consisted of simple sequence steps shown below:
 
-![Sequential-diagram](https://github.com/user-attachments/assets/50a3e635-3d0a-404e-b978-18434274ca3e)
+![Sequential-diagram](https://github.com/user-attachments/assets/a5a3560a-356c-4f8f-bbe2-e3c478fbd1a5)
 
 Once the user triggers the function to mint a non-fungible asset, the xcNFT module triggers Parachain A to mint a non-fungible asset if the user is authorised. Once minted, Parachain sends a cross-chain message to Parachain B through the Horizontally Relay Routed Message Passing (HRMP) protocol. If everything succeeds, the user is notified of a success with an event. The process was then designed further with a simple state diagram visible below - that essentially displays the same functionality mentioned above in a more graphical way.
 
-![State-diagram](https://github.com/user-attachments/assets/a0a0b676-2a75-4c98-80b0-d10a5965fccb)
+![State-diagram](https://github.com/user-attachments/assets/e7c27924-e7bd-4c88-9c28-4fece68a851e)
 
 **Built with emphasis on UX**
 
-<img width="572" alt="UX PoC" src="https://github.com/user-attachments/assets/c98cb7e0-88d4-400b-847f-d824737a8ab9"></img>
+<img width="572" alt="UX PoC" src="https://github.com/user-attachments/assets/5a284415-dad0-4d6d-a855-3d10b8b7928b"></img>
 
 Our [proof-of-concept](https://github.com/paraspell-research-foundation/xcNFT-Pallet/tree/main) solution was built to be easy to interact with for both developers and users. Events handle debugging of cross-chain messaging, so users are notified if the cross-chain message fails to execute the expected task. The destination selection logic is much simpler - users just type in the destination Parachain ID.
 
 **How module infrastructure looks at the current PoC state:**
 
-![Current PoC](https://github.com/user-attachments/assets/42f22745-d18f-443e-9731-a2c9efc2ef77)
+
+![Current PoC](https://github.com/user-attachments/assets/7066c39c-3cff-4a9f-983c-667fc40b6362)
 
 Currently, our [proof-of-concept](https://github.com/paraspell-research-foundation/xcNFT-Pallet/tree/main) solution stores lots of unnecessary data (Both on the origin and destination chain) to ensure the uniqueness of each asset, this will however be greatly improved once the module is reconstructed to use NFTs and Uniques modules for non-fungible asset management.
 
@@ -58,7 +59,7 @@ Currently, our [proof-of-concept](https://github.com/paraspell-research-foundati
 
 (Notice xcNFT rebrand from xNFT)
 
-![After PoC](https://github.com/user-attachments/assets/526c06bc-135a-4ca8-8f71-a6f546fe0465)
+![After PoC](https://github.com/user-attachments/assets/feea0805-a1e4-46f9-9fc4-fe7d4975c342)
 
 All non-fungible and collection related data will now be handled by NFTs and Uniques pallet which for non-cross-chain transfers will be interacted with directly and for cross-chain transfers will be interacted with through specialized parsing functions meant to parse cross-chain instruction into specified calls on destination chains. The module will also include many additional cross-chain and non-cross-chain functions further enhancing usability for developers and users.
 
@@ -145,7 +146,7 @@ We have already built a functional demo / proof of concept for the xcNFT pallet 
 
 We have also submitted a paper regarding this concept to [Brainz 2024 conference](https://brains.dnac.org/2024/) that specifies in Blockchain related research. This paper got accepted and we will present it on the conference in Berlin in person.
 
-<img width="1171" alt="brainz 2024" src="https://github.com/user-attachments/assets/81c13a51-6559-4c2d-959e-f3a327400212"></img>
+<img width="1171" alt="brainz 2024" src="https://github.com/user-attachments/assets/cb9010c5-ed8f-4165-9bec-1f3ceeb76177"></img>
 
 ## Development Roadmap :nut_and_bolt:
 
