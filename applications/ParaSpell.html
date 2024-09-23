@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">ParaSpell | Web3 Foundation Grants</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://grants.web3.foundation/applications/ParaSpell"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="ParaSpell | Web3 Foundation Grants"><meta data-rh="true" name="description" content="- Team Name:  ParaSpell"><meta data-rh="true" property="og:description" content="- Team Name:  ParaSpell"><link data-rh="true" rel="icon" href="/img/favicon-32x32.png"><link data-rh="true" rel="canonical" href="https://grants.web3.foundation/applications/ParaSpell"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/ParaSpell" hreflang="en"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/ParaSpell" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://9VKKGZO0U1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Web3 Foundation Grants" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.f2bda69c.css">
-<script src="/assets/js/runtime~main.77482777.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.7e6074bf.js" defer="defer"></script>
 <script src="/assets/js/main.5bfd06d8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,43 +24,29 @@
 <li>ParaSpell guarantees to be a completely decentralized, open-source platform that does not collect any user data.</li>
 </ul>
 <p>One of the ParaSpell main goals is to reduce the time necessary to create XCM calls or open HRMP channels.</p>
-<p><a href="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/comparisonImg.jpg" target="_blank" rel="noopener noreferrer">
-<img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/comparisonImg.jpg" alt="Opening channel screen" class="img_ev3q">
-</a></p>
+<img width="1027" alt="Open channel" src="https://github.com/user-attachments/assets/3a5c1c72-3e20-40fd-9e2c-80cde2dfb525">
 <p>As we can see in the figure above, the amount of details the user has to fill to transfer the XCM message is drastically reduced. As an example, users do not need to specify a specific route from origin to destination chain. These details are filled for them.</p>
 <p>Another goal of ParaSpell is having network installation, compilation &amp; startup done as simply as possible. This is achieved by makefile that groups commands into fewer much more intuitive commands and by network startup configuration file. Together, these two files take care of the network side, and adding new nodes into these files is intuitive.  Starting the application is also very simple and done by one command. Communication between application and network is made possible with Polkadot API libraries.</p>
 <p>ParaSpell focuses mainly on substrate developers. Added value comes from being user friendly SDK for simplifying development by saving time necessary to install &amp; launch network, open HRMP channels or create XCM transfers between nodes available in network.</p>
 <p>Overall ParaSpell is all about developer experience.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="project-details-">Project Details 🎯<a href="#project-details-" class="hash-link" aria-label="Direct link to Project Details 🎯" title="Direct link to Project Details 🎯">​</a></h3>
 <p>ParaSpell in its current form allows developers to install all dependencies as well as a network consisting of Rococo, Pichiu(Kylin network), Bifrost &amp; Acala nodes with one command. Launching a network is also done by one command. Once the network is installed and started ParaSpell application allows developers to open/close HRMP channels between mentioned parachains. In current progress ParaSpell already has user interface and main functionality almost finished.</p>
-<p>The following screen allows the user to open the HRMP channels between list of parachains pulled from Rococo by API call.
-<a href="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/Open%20channel.png" target="_blank" rel="noopener noreferrer">
-<img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/Open%20channel.png" alt="Opening channel screen" class="img_ev3q">
-</a></p>
-<p>Closing HRMP channels is just as simple as opening them. One button click to close the required channel.
-<a href="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/close%20channel.png" target="_blank" rel="noopener noreferrer">
-<img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/close%20channel.png" alt="Closing channel screen" class="img_ev3q">
-</a></p>
-<p>If the user decides to transfer funds from Relay chain to Parachain they can do so by filling following details. These required details are way faster to fill than filling a full XCM call which requires a complete route and selection of concrete token.
-<a href="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/relay%20to%20para.png" target="_blank" rel="noopener noreferrer">
-<img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/relay%20to%20para.png" alt="Relay to para screen" class="img_ev3q">
-</a></p>
-<p>The opposite, but nearly the same scenario is sending tokens from Parachain to Relay chain. It is just as simple, however.
-<a href="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/para%20to%20relay.png" target="_blank" rel="noopener noreferrer">
-<img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/para%20to%20relay.png" alt="Para to relay screen" class="img_ev3q">
-</a></p>
-<p>The last transaction scenario is the transfer of funds between Parachain and another Parachain.
-<a href="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/para%20to%20para.png" target="_blank" rel="noopener noreferrer">
-<img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/para%20to%20para.png" alt="Para to para screen" class="img_ev3q">
-</a></p>
+<p>The following screen allows the user to open the HRMP channels between list of parachains pulled from Rococo by API call.</p>
+<img width="1027" alt="Open channel" src="https://github.com/user-attachments/assets/e8594046-0441-4b70-b2d0-71bf3c1755be">
+<p>Closing HRMP channels is just as simple as opening them. One button click to close the required channel.</p>
+<img width="1042" alt="close channel" src="https://github.com/user-attachments/assets/6c67fdb4-46c4-4bc6-b2e4-5e7d55890d97">
+<p>If the user decides to transfer funds from Relay chain to Parachain they can do so by filling following details. These required details are way faster to fill than filling a full XCM call which requires a complete route and selection of concrete token.</p>
+<img width="1044" alt="relay to para" src="https://github.com/user-attachments/assets/cc9bb30b-2a11-4879-9fe4-c8a49386f90f">
+<p>The opposite, but nearly the same scenario is sending tokens from Parachain to Relay chain. It is just as simple, however.</p>
+<img width="1038" alt="para to relay" src="https://github.com/user-attachments/assets/144cf071-ad7e-4ebc-b8d1-e4e1c06ebdb6">
+<p>The last transaction scenario is the transfer of funds between Parachain and another Parachain.</p>
+<img width="1039" alt="para to para" src="https://github.com/user-attachments/assets/1569c637-50e2-42a4-83ed-42300ed59a4f">
 <ul>
 <li>Overview video of application is also available on Youtube
 <a href="https://youtu.be/YKZEa2MaY6Q" target="_blank" rel="noopener noreferrer">Link to overview video</a></li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="architecture-">Architecture 🏗<a href="#architecture-" class="hash-link" aria-label="Direct link to Architecture 🏗" title="Direct link to Architecture 🏗">​</a></h4>
-<p><a href="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/screenFlow.svg" target="_blank" rel="noopener noreferrer">
-<img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/dudo50/Polkachange/main/img/screenFlow.svg" alt="Diagram" class="img_ev3q">
-</a></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/618d97aa-437f-4c64-b3ab-a24ab21e75ea" alt="screenFlow" class="img_ev3q"></p>
 <p>Application is purposely designed to be as simple as possible. This guarantees, that all tasks can be done quickly and without extended searching. All necessary screens also feature notifications which will as a milestone explain be callback reactive. The loading screen is only present on the first application &amp; network startup, once accessing the same screen after the application was loaded it will be skipped automatically. The screen serves to register necessary assets in parachain nodes. This is only required to be run once per network startup.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="technology-stack-">Technology Stack 💻<a href="#technology-stack-" class="hash-link" aria-label="Direct link to Technology Stack 💻" title="Direct link to Technology Stack 💻">​</a></h4>
 <ul>
