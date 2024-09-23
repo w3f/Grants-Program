@@ -8,7 +8,7 @@
 
 ## Project Overview :page_facing_up:
 <div align="center">
-<img width="400" alt="AgriDot" src="https://github.com/user-attachments/assets/a5dae469-754d-49c4-9e69-d61d4a315616"></img>
+<img width="400" alt="AgriDot" src="https://github.com/user-attachments/assets/fb233743-eb46-4015-8fcd-e6e06513dce4"></img>
   <h4 align="center"> Empowering farmers and beekeepers with blockchain-based NFT field management and community-driven knowledge sharing. </h4>
   <p align="center">
   </p>
@@ -52,7 +52,7 @@ Application advantages compared to traditional Web2 agriculture applications:
 
 The UI of the application is designed to be simple to use and to abstract complexity anywhere possible to provide smooth UX for Farmers. Everything Blockchain/Polkadot related contains simple to understand explanation/guide Farmers can easily follow. Below is an example of a login screen & field overview screen.
 
-<img width="609" alt="UI" src="https://github.com/user-attachments/assets/9867841c-de95-44e0-ab7b-392e7e9f30fa"></img>
+<img width="609" alt="UI" src="https://github.com/user-attachments/assets/67fbfeaf-7017-4de6-b4a9-274c3e934e57"></img>
 
 We have prepared design mockups with simple workflows for the Web3 version in [Figma - here](https://www.figma.com/design/WR2ZtOiYJcq9cBZvRzH4l9/AgriDot). This Figma project also contains the design of our [current PoC](https://github.com/kacena123/aurora-borealis) Web2 solution for comparison. We believe, that the improvement in UI is substantial.
 
@@ -62,7 +62,7 @@ The application utilizes [Kusama Asset Hub](https://parachains.info/details/asse
 
 Below we demonstrate a simple use case of application cold startup, field creation, and crop origin proof creation.
 
-![agridot field and crop sequential](https://github.com/user-attachments/assets/8460e322-7479-4718-a1c3-597584f275c9)
+![agridot field and crop sequential](https://github.com/user-attachments/assets/ac82d2a0-76db-4789-beb3-4bf7af495b02)
 
 **Technology stack**
 - React native
@@ -85,11 +85,11 @@ The application bridges an important gap in niche user base and niche use case, 
 
 We have created a survey that was sent to 300 small and medium Agricultural businesses in Slovakia to gain insight on whether Farmers will be open to such an application and if so, if they will be willing to accept, that it will use Blockchain to enhance transparency. We received an overwhelming amount of responses from 167 farmers, that an application like this is very needed and they also provided us with feedback as to what should the application contain. We share the experiment results below.
 
-![chart1](https://github.com/user-attachments/assets/7e14838d-cd7f-4377-a465-04daf223239d)
+![chart1](https://github.com/user-attachments/assets/f42530a8-2bdc-458d-8ebd-6302f3e47316)
 
 First, we asked Farmers which listed features would they like to see in the ideal Agricultural application. The most useful for them is by far the weather monitoring. They also highly ranked Pest information and crop origin proofs. Based on this we then designed the application to fit most of the Farmer's needs.
 
-![chart2](https://github.com/user-attachments/assets/830d7d45-7c20-4d64-a878-d761264b0b1f)
+![chart2](https://github.com/user-attachments/assets/441dfc2c-9675-4cf6-bfab-bf67e0be4b38)
 
 In the second question, we asked Farmers if they would be open to Blockchain-based application that would enhance transparency of how their data is handled. More than 120 farmers stated, that they are open to this innovation and the rest of the farmers stated, that they are not open or that they are not sure which means, that the Farmers, that stated that they are not sure could change their mind once they try the application.
 
