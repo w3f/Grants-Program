@@ -58,6 +58,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Solidbit GmbH](https://solid-bit.com/)                       | [ISO20022 Ecosystem Research and Technical Design](./ISO20022-Implementation-POC.md)                     | [GitHub](https://github.com/SolidbitGmbH)                 | ☐          |        ☐       |      ☐      |
 | [Katarína Valová](https://github.com/kacena123)                       | [AgriDot](./AgriDot.md)                     | [GitHub](https://github.com/kacena123)                 | ☐          |        ☐       |      ☐      |
 | [Web3 Association](https://github.com/web3association)                       | [Open source contributor funding experiment](./web3-association-open-source-contributor-funding-experiment-setup.md)                     | [GitHub](https://github.com/web3association)                 | ☐          |        ☐       |      ☐      |
+| [SIGMA 8 SOLUTIONS](https://github.com/lukastanisic99)                       | [P2P State Channels](./P2PStateChannels.md)                     | [GitHub](https://github.com/lukastanisic99)                 | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
