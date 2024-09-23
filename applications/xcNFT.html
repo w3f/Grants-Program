@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">ParaSpell xcNFT pallet | Web3 Foundation Grants</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://grants.web3.foundation/applications/xcNFT"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="ParaSpell xcNFT pallet | Web3 Foundation Grants"><meta data-rh="true" name="description" content="- Team Name: ParaSpell Research Foundation"><meta data-rh="true" property="og:description" content="- Team Name: ParaSpell Research Foundation"><link data-rh="true" rel="icon" href="/img/favicon-32x32.png"><link data-rh="true" rel="canonical" href="https://grants.web3.foundation/applications/xcNFT"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/xcNFT" hreflang="en"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/xcNFT" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://9VKKGZO0U1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Web3 Foundation Grants" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.f2bda69c.css">
-<script src="/assets/js/runtime~main.88e8840f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.77482777.js" defer="defer"></script>
 <script src="/assets/js/main.5bfd06d8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -42,18 +42,18 @@
 <li>Precisely programmed functions that only require a few necessary parameters</li>
 </ul>
 <p>We wanted to create a process of sharing cross-chain non-fungible assets with other chains that is light, efficient, and simple. Our initial design consisted of simple sequence steps shown below:</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/50a3e635-3d0a-404e-b978-18434274ca3e" alt="Sequential-diagram" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/a5a3560a-356c-4f8f-bbe2-e3c478fbd1a5" alt="Sequential-diagram" class="img_ev3q"></p>
 <p>Once the user triggers the function to mint a non-fungible asset, the xcNFT module triggers Parachain A to mint a non-fungible asset if the user is authorised. Once minted, Parachain sends a cross-chain message to Parachain B through the Horizontally Relay Routed Message Passing (HRMP) protocol. If everything succeeds, the user is notified of a success with an event. The process was then designed further with a simple state diagram visible below - that essentially displays the same functionality mentioned above in a more graphical way.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/a0a0b676-2a75-4c98-80b0-d10a5965fccb" alt="State-diagram" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/e7c27924-e7bd-4c88-9c28-4fece68a851e" alt="State-diagram" class="img_ev3q"></p>
 <p><strong>Built with emphasis on UX</strong></p>
-<img width="572" alt="UX PoC" src="https://github.com/user-attachments/assets/c98cb7e0-88d4-400b-847f-d824737a8ab9">
+<img width="572" alt="UX PoC" src="https://github.com/user-attachments/assets/5a284415-dad0-4d6d-a855-3d10b8b7928b">
 <p>Our <a href="https://github.com/paraspell-research-foundation/xcNFT-Pallet/tree/main" target="_blank" rel="noopener noreferrer">proof-of-concept</a> solution was built to be easy to interact with for both developers and users. Events handle debugging of cross-chain messaging, so users are notified if the cross-chain message fails to execute the expected task. The destination selection logic is much simpler - users just type in the destination Parachain ID.</p>
 <p><strong>How module infrastructure looks at the current PoC state:</strong></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/42f22745-d18f-443e-9731-a2c9efc2ef77" alt="Current PoC" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/7066c39c-3cff-4a9f-983c-667fc40b6362" alt="Current PoC" class="img_ev3q"></p>
 <p>Currently, our <a href="https://github.com/paraspell-research-foundation/xcNFT-Pallet/tree/main" target="_blank" rel="noopener noreferrer">proof-of-concept</a> solution stores lots of unnecessary data (Both on the origin and destination chain) to ensure the uniqueness of each asset, this will however be greatly improved once the module is reconstructed to use NFTs and Uniques modules for non-fungible asset management.</p>
 <p><strong>How module infrastructure will look after proposal execution:</strong></p>
 <p>(Notice xcNFT rebrand from xNFT)</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/526c06bc-135a-4ca8-8f71-a6f546fe0465" alt="After PoC" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/feea0805-a1e4-46f9-9fc4-fe7d4975c342" alt="After PoC" class="img_ev3q"></p>
 <p>All non-fungible and collection related data will now be handled by NFTs and Uniques pallet which for non-cross-chain transfers will be interacted with directly and for cross-chain transfers will be interacted with through specialized parsing functions meant to parse cross-chain instruction into specified calls on destination chains. The module will also include many additional cross-chain and non-cross-chain functions further enhancing usability for developers and users.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="technology-stack-️">Technology Stack 💻️<a href="#technology-stack-️" class="hash-link" aria-label="Direct link to Technology Stack 💻️" title="Direct link to Technology Stack 💻️">​</a></h4>
 <ul>
@@ -114,7 +114,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-status-open_book">Development Status <!-- -->📖<a href="#development-status-open_book" class="hash-link" aria-label="Direct link to development-status-open_book" title="Direct link to development-status-open_book">​</a></h2>
 <p>We have already built a functional demo / proof of concept for the xcNFT pallet - <a href="https://github.com/paraspell-research-foundation/xcNFT-Pallet" target="_blank" rel="noopener noreferrer">link</a>. The proposal aims to add / rework many crucial parts that would make xcNFT much more compliant to main net use (Such as supporting both NFTS and Uniques pallet and more).</p>
 <p>We have also submitted a paper regarding this concept to <a href="https://brains.dnac.org/2024/" target="_blank" rel="noopener noreferrer">Brainz 2024 conference</a> that specifies in Blockchain related research. This paper got accepted and we will present it on the conference in Berlin in person.</p>
-<img width="1171" alt="brainz 2024" src="https://github.com/user-attachments/assets/81c13a51-6559-4c2d-959e-f3a327400212">
+<img width="1171" alt="brainz 2024" src="https://github.com/user-attachments/assets/cb9010c5-ed8f-4165-9bec-1f3ceeb76177">
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-roadmap-nut_and_bolt">Development Roadmap <!-- -->🔩<a href="#development-roadmap-nut_and_bolt" class="hash-link" aria-label="Direct link to development-roadmap-nut_and_bolt" title="Direct link to development-roadmap-nut_and_bolt">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview-1">Overview<a href="#overview-1" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
 <ul>
