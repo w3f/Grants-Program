@@ -148,8 +148,7 @@ Demo: https://www.youtube.com/watch?v=ThCd_W3rK_8
 | 0a. | License | MIT |
 | 0b. | Documentation | Not applicable to Alphaday, as we have no Substrates nodes or sending functionality on the app |
 | 0c. | Testing Guide | We can provide a document as a guide to give a bit more detail on how to test a completed dashboard's functionality. It will be a reference to the points listed below (1-14) |
-| 0d. | Docker | The dashboard would be live and visible to anyone that accesses the url. As such, a Docker file would be deemed unnecessary. |
-| 0e. | Article | We will publish articles and other posts about the dashboard and the project once we deploy it. |
+| 0d. | Article | We will publish articles and other posts about the dashboard and the project once we deploy it. |
 | 1. | Blog | The latest Polkadot official announcements and blog post content |
 | 2. | News | A feed of all news mentions of Polkadot/Kusama from coindesk, cointelegraph and 20+ other news sources aggregated from across the internet |
 | 3. | Calendar | A calendar containing all Polkadot/Kusama events including meetups, hackathons with Polkadot/Kusama bounties, AMAs |
@@ -167,7 +166,7 @@ Demo: https://www.youtube.com/watch?v=ThCd_W3rK_8
 
 ### Milestone 2 — Maintenance & Curation of Dashboard
 
-- **Estimated duration:** Indefinitely
+- **Estimated duration:** 2 months
 - **FTE:**  2
 - **Costs:** 1,000 USD
 
