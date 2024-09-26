@@ -190,6 +190,7 @@ The grant delivery will have 3 distinct parts split into 3 milestones delivered 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):** 2 ( 1 Full time Developer at 1 FTE/month and 2 part time developers each at 0.5 FTE/month)
 - **Total Costs:** 30,000 USD
+- **DOT %:** 50%
 
 ### Milestone 1 - Cyborg Oracle Implementation
 
