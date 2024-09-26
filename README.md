@@ -117,7 +117,7 @@ The Operations Team takes care of legal documents, invoicing, and remittances.
 
 The W3F Grants Program offers different grant levels to help you best, depending on your current stage. At least 50% of any grant is paid out in vested DOT.
 
-### :hatching_chick: Level 1 (= InstaGrants)<!-- omit in toc -->
+### :hatching_chick: Level 1<!-- omit in toc -->
 
 - **Target:** Individuals & small teams
 - **Amount:** Up to $10,000
