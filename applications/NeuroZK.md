@@ -60,6 +60,12 @@ The objective is to deploy a pre trained AI inference model in servers at differ
 
 We will define a new Substrate node configuration for the Cyborg worker nodes, which users can rent on-demand from the pool of available worker nodes.
 
+### ZK Proof Verification process
+
+Once a task is assigned to a particular worker node and it starts executing the task, at fixed intervals of time (currently arbitrarily set to 60 minutes), the ZK worker component in the worker node will generate a SNARK proof using the PLONK algorithm. We will use an oracle to convey this proof to the verifier pallet, which will evaluate the received proof using the verification key and public data inputs that the user submitted before execution.
+
+The pallet performs a series of elliptic curve operations and field arithmetic (over finite fields) to check the polynomial commitments and evaluations provided in the proof. The commitments must match the expected public inputs and satisfy the polynomial equations set by the PLONK circuit.Permutation arguments and other constraints encoded into the circuit are also validated at this stage. The Pallet checks whether all evaluations and commitments hold for the circuit, using the verification key. If they match, the proof is accepted as valid; otherwise, it is rejected. Once the verification succeeds, the transaction is processed as valid (e.g., approving the computation result). If the verification fails, the transaction is reverted or flagged as invalid.
+
 
 ### Ecosystem Fit
 
@@ -67,7 +73,7 @@ Cyborg Network enhances the Polkadot ecosystem with decentralized edge computing
 
 Though Cyborg and the [Phala Network](https://phala.network/) share aspirations of decentralized computing within the Polkadot/Kusama environment, our technical paths and business aspirations are distinct. Phala Network provides off-chain compute infrastructure for smart contract-based applications by enabling users to integrate 'phat' contracts with their existing smart contract logic. While Cyborg is focused on creating utility for web2 applications.
 
-Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture utilizing TEEs to safeguard user privacy. However, their specific market focus is currently untraceable. We are developing products for a validated market that has already attracted interest from various AI applications and 50 edge data center providers to join the network once it goes live.
+Another related project appears to be [Wetee](https://github.com/wetee-dao), which employs a comparable technical architecture utilizing TEEs to safeguard user privacy. However, their specific market focus is currently untraceable.
 
 ![Write here](https://github.com/Cyborg-Network/Grants-Program/assets/93442895/a09109d1-e8f7-4ae5-8f4c-2eafc4b6ef6a)
 
