@@ -1,6 +1,6 @@
 "use strict";
-exports.id = 902;
-exports.ids = [902];
+exports.id = 706;
+exports.ids = [706];
 exports.modules = {
 
 /***/ 21176:
@@ -30,7 +30,7 @@ var map = __webpack_require__(74722);
 var range = __webpack_require__(91395);
 // EXTERNAL MODULE: ./node_modules/dagre-d3-es/src/graphlib/index.js
 var graphlib = __webpack_require__(697);
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/data/list.js
+;// ./node_modules/dagre-d3-es/src/dagre/data/list.js
 /*
  * Simple doubly linked list implementation derived from Cormen, et al.,
  * "Introduction to Algorithms".
@@ -87,7 +87,7 @@ function filterOutLinks(k, v) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/greedy-fas.js
+;// ./node_modules/dagre-d3-es/src/dagre/greedy-fas.js
 
 
 
@@ -215,7 +215,7 @@ function assignBucket(buckets, zeroIdx, entry) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/acyclic.js
+;// ./node_modules/dagre-d3-es/src/dagre/acyclic.js
 
 
 
@@ -285,7 +285,7 @@ var pick = __webpack_require__(81942);
 var defaults = __webpack_require__(23068);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isSymbol.js
 var isSymbol = __webpack_require__(61882);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseExtremum.js
+;// ./node_modules/lodash-es/_baseExtremum.js
 
 
 /**
@@ -319,7 +319,7 @@ function baseExtremum(array, iteratee, comparator) {
 
 /* harmony default export */ const _baseExtremum = (baseExtremum);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseGt.js
+;// ./node_modules/lodash-es/_baseGt.js
 /**
  * The base implementation of `_.gt` which doesn't coerce arguments.
  *
@@ -337,7 +337,7 @@ function baseGt(value, other) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/identity.js
 var identity = __webpack_require__(29008);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/max.js
+;// ./node_modules/lodash-es/max.js
 
 
 
@@ -368,7 +368,7 @@ function max(array) {
 
 /* harmony default export */ const lodash_es_max = (max);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/last.js
+;// ./node_modules/lodash-es/last.js
 /**
  * Gets the last element of `array`.
  *
@@ -396,7 +396,7 @@ var _baseAssignValue = __webpack_require__(52528);
 var _baseForOwn = __webpack_require__(79841);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseIteratee.js + 16 modules
 var _baseIteratee = __webpack_require__(49574);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/mapValues.js
+;// ./node_modules/lodash-es/mapValues.js
 
 
 
@@ -443,7 +443,7 @@ function mapValues(object, iteratee) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/isUndefined.js
 var isUndefined = __webpack_require__(69592);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseLt.js
+;// ./node_modules/lodash-es/_baseLt.js
 /**
  * The base implementation of `_.lt` which doesn't coerce arguments.
  *
@@ -459,7 +459,7 @@ function baseLt(value, other) {
 
 /* harmony default export */ const _baseLt = (baseLt);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/min.js
+;// ./node_modules/lodash-es/min.js
 
 
 
@@ -492,7 +492,7 @@ function min(array) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_root.js
 var _root = __webpack_require__(41917);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/now.js
+;// ./node_modules/lodash-es/now.js
 
 
 /**
@@ -517,7 +517,7 @@ var now = function() {
 
 /* harmony default export */ const lodash_es_now = (now);
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/util.js
+;// ./node_modules/dagre-d3-es/src/dagre/util.js
 
 
 
@@ -754,7 +754,7 @@ function notime(name, fn) {
   return fn();
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/add-border-segments.js
+;// ./node_modules/dagre-d3-es/src/dagre/add-border-segments.js
 
 
 
@@ -792,7 +792,7 @@ function add_border_segments_addBorderNode(g, prop, prefix, sg, sgNode, rank) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/coordinate-system.js
+;// ./node_modules/dagre-d3-es/src/dagre/coordinate-system.js
 
 
 
@@ -869,7 +869,7 @@ function swapXYOne(attrs) {
   attrs.y = x;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/normalize.js
+;// ./node_modules/dagre-d3-es/src/dagre/normalize.js
 
 
 
@@ -962,7 +962,7 @@ function normalize_undo(g) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/minBy.js
+;// ./node_modules/lodash-es/minBy.js
 
 
 
@@ -998,7 +998,7 @@ function minBy(array, iteratee) {
 
 /* harmony default export */ const lodash_es_minBy = (minBy);
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/rank/util.js
+;// ./node_modules/dagre-d3-es/src/dagre/rank/util.js
 
 
 
@@ -1063,7 +1063,7 @@ function slack(g, e) {
   return g.node(e.w).rank - g.node(e.v).rank - g.edge(e).minlen;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/rank/feasible-tree.js
+;// ./node_modules/dagre-d3-es/src/dagre/rank/feasible-tree.js
 
 
 
@@ -1156,7 +1156,7 @@ function shiftRanks(t, g, delta) {
 var isArrayLike = __webpack_require__(38446);
 // EXTERNAL MODULE: ./node_modules/lodash-es/keys.js
 var keys = __webpack_require__(27422);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_createFind.js
+;// ./node_modules/lodash-es/_createFind.js
 
 
 
@@ -1187,7 +1187,7 @@ function createFind(findIndexFunc) {
 var _baseFindIndex = __webpack_require__(25707);
 // EXTERNAL MODULE: ./node_modules/lodash-es/toFinite.js + 3 modules
 var toFinite = __webpack_require__(74342);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/toInteger.js
+;// ./node_modules/lodash-es/toInteger.js
 
 
 /**
@@ -1225,7 +1225,7 @@ function toInteger(value) {
 
 /* harmony default export */ const lodash_es_toInteger = (toInteger);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/findIndex.js
+;// ./node_modules/lodash-es/findIndex.js
 
 
 
@@ -1282,7 +1282,7 @@ function findIndex(array, predicate, fromIndex) {
 
 /* harmony default export */ const lodash_es_findIndex = (findIndex);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/find.js
+;// ./node_modules/lodash-es/find.js
 
 
 
@@ -1328,7 +1328,7 @@ var find = _createFind(lodash_es_findIndex);
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/filter.js + 1 modules
 var filter = __webpack_require__(11662);
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/dijkstra.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/dijkstra.js
 
 
 
@@ -1395,7 +1395,7 @@ function runDijkstra(g, source, weightFn, edgeFn) {
   return results;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/dijkstra-all.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/dijkstra-all.js
 
 
 
@@ -1411,7 +1411,7 @@ function dijkstraAll(g, weightFunc, edgeFunc) {
   );
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/floyd-warshall.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/floyd-warshall.js
 
 
 
@@ -1478,7 +1478,7 @@ var _baseGetTag = __webpack_require__(88496);
 var isArray = __webpack_require__(92049);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isObjectLike.js
 var isObjectLike = __webpack_require__(53098);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/isString.js
+;// ./node_modules/lodash-es/isString.js
 
 
 
@@ -1512,7 +1512,7 @@ function isString(value) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseProperty.js
 var _baseProperty = __webpack_require__(70805);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_asciiSize.js
+;// ./node_modules/lodash-es/_asciiSize.js
 
 
 /**
@@ -1526,7 +1526,7 @@ var asciiSize = (0,_baseProperty/* default */.A)('length');
 
 /* harmony default export */ const _asciiSize = (asciiSize);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_hasUnicode.js
+;// ./node_modules/lodash-es/_hasUnicode.js
 /** Used to compose unicode character classes. */
 var rsAstralRange = '\\ud800-\\udfff',
     rsComboMarksRange = '\\u0300-\\u036f',
@@ -1554,7 +1554,7 @@ function hasUnicode(string) {
 
 /* harmony default export */ const _hasUnicode = (hasUnicode);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_unicodeSize.js
+;// ./node_modules/lodash-es/_unicodeSize.js
 /** Used to compose unicode character classes. */
 var _unicodeSize_rsAstralRange = '\\ud800-\\udfff',
     _unicodeSize_rsComboMarksRange = '\\u0300-\\u036f',
@@ -1600,7 +1600,7 @@ function unicodeSize(string) {
 
 /* harmony default export */ const _unicodeSize = (unicodeSize);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_stringSize.js
+;// ./node_modules/lodash-es/_stringSize.js
 
 
 
@@ -1620,7 +1620,7 @@ function stringSize(string) {
 
 /* harmony default export */ const _stringSize = (stringSize);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/size.js
+;// ./node_modules/lodash-es/size.js
 
 
 
@@ -1668,7 +1668,7 @@ function size(collection) {
 
 /* harmony default export */ const lodash_es_size = (size);
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/topsort.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/topsort.js
 
 
 
@@ -1706,7 +1706,7 @@ function topsort_topsort(g) {
 function topsort_CycleException() {}
 topsort_CycleException.prototype = new Error(); // must be an instance of Error to pass testing
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/is-acyclic.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/is-acyclic.js
 
 
 
@@ -1723,7 +1723,7 @@ function isAcyclic(g) {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/dfs.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/dfs.js
 
 
 
@@ -1771,7 +1771,7 @@ function doDfs(g, v, postorder, visited, navigation, acc) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/postorder.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/postorder.js
 
 
 
@@ -1780,7 +1780,7 @@ function postorder(g, vs) {
   return dfs(g, vs, 'post');
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/preorder.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/preorder.js
 
 
 
@@ -1791,7 +1791,7 @@ function preorder(g, vs) {
 
 // EXTERNAL MODULE: ./node_modules/dagre-d3-es/src/graphlib/graph.js + 9 modules
 var graph = __webpack_require__(73046);
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/prim.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/prim.js
 
 
 
@@ -1845,7 +1845,7 @@ function prim(g, weightFunc) {
   return result;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/alg/index.js
+;// ./node_modules/dagre-d3-es/src/graphlib/alg/index.js
 
 
 
@@ -1860,7 +1860,7 @@ function prim(g, weightFunc) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/rank/network-simplex.js
+;// ./node_modules/dagre-d3-es/src/dagre/rank/network-simplex.js
 
 
 
@@ -2098,7 +2098,7 @@ function isDescendant(tree, vLabel, rootLabel) {
   return rootLabel.low <= vLabel.lim && vLabel.lim <= rootLabel.lim;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/rank/index.js
+;// ./node_modules/dagre-d3-es/src/dagre/rank/index.js
 
 
 
@@ -2156,7 +2156,7 @@ function networkSimplexRanker(g) {
 var values = __webpack_require__(38207);
 // EXTERNAL MODULE: ./node_modules/lodash-es/reduce.js + 2 modules
 var reduce = __webpack_require__(89463);
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/nesting-graph.js
+;// ./node_modules/dagre-d3-es/src/dagre/nesting-graph.js
 
 
 
@@ -2297,7 +2297,7 @@ function cleanup(g) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseClone.js + 15 modules
 var _baseClone = __webpack_require__(91641);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/cloneDeep.js
+;// ./node_modules/lodash-es/cloneDeep.js
 
 
 /** Used to compose bitmasks for cloning. */
@@ -2328,7 +2328,7 @@ function cloneDeep(value) {
 
 /* harmony default export */ const lodash_es_cloneDeep = (cloneDeep);
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/add-subgraph-constraints.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/add-subgraph-constraints.js
 
 
 
@@ -2383,7 +2383,7 @@ function addSubgraphConstraints(g, cg, vs) {
   */
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/build-layer-graph.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/build-layer-graph.js
 
 
 
@@ -2463,7 +2463,7 @@ function createRootNode(g) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_assignValue.js
 var _assignValue = __webpack_require__(52851);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseZipObject.js
+;// ./node_modules/lodash-es/_baseZipObject.js
 /**
  * This base implementation of `_.zipObject` which assigns values using `assignFunc`.
  *
@@ -2488,7 +2488,7 @@ function baseZipObject(props, values, assignFunc) {
 
 /* harmony default export */ const _baseZipObject = (baseZipObject);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/zipObject.js
+;// ./node_modules/lodash-es/zipObject.js
 
 
 
@@ -2522,7 +2522,7 @@ var _arrayMap = __webpack_require__(45572);
 var _baseGet = __webpack_require__(66318);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseMap.js
 var _baseMap = __webpack_require__(52568);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseSortBy.js
+;// ./node_modules/lodash-es/_baseSortBy.js
 /**
  * The base implementation of `_.sortBy` which uses `comparer` to define the
  * sort order of `array` and replaces criteria objects with their corresponding
@@ -2547,7 +2547,7 @@ function baseSortBy(array, comparer) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseUnary.js
 var _baseUnary = __webpack_require__(52789);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_compareAscending.js
+;// ./node_modules/lodash-es/_compareAscending.js
 
 
 /**
@@ -2590,7 +2590,7 @@ function compareAscending(value, other) {
 
 /* harmony default export */ const _compareAscending = (compareAscending);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_compareMultiple.js
+;// ./node_modules/lodash-es/_compareMultiple.js
 
 
 /**
@@ -2636,7 +2636,7 @@ function compareMultiple(object, other, orders) {
 
 /* harmony default export */ const _compareMultiple = (compareMultiple);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseOrderBy.js
+;// ./node_modules/lodash-es/_baseOrderBy.js
 
 
 
@@ -2691,7 +2691,7 @@ function baseOrderBy(collection, iteratees, orders) {
 var _baseRest = __webpack_require__(24326);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_isIterateeCall.js
 var _isIterateeCall = __webpack_require__(6832);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/sortBy.js
+;// ./node_modules/lodash-es/sortBy.js
 
 
 
@@ -2741,7 +2741,7 @@ var sortBy = (0,_baseRest/* default */.A)(function(collection, iteratees) {
 
 /* harmony default export */ const lodash_es_sortBy = (sortBy);
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/cross-count.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/cross-count.js
 
 
 
@@ -2825,7 +2825,7 @@ function twoLayerCrossCount(g, northLayer, southLayer) {
   return cc;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/init-order.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/init-order.js
 
 
 
@@ -2871,7 +2871,7 @@ function initOrder(g) {
   return layers;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/barycenter.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/barycenter.js
 
 
 
@@ -2904,7 +2904,7 @@ function barycenter(g, movable) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/resolve-conflicts.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/resolve-conflicts.js
 
 
 
@@ -3034,7 +3034,7 @@ function mergeEntries(target, source) {
   source.merged = true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/sort.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/sort.js
 
 
 
@@ -3095,7 +3095,7 @@ function compareWithBias(bias) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/sort-subgraph.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/sort-subgraph.js
 
 
 
@@ -3175,7 +3175,7 @@ function mergeBarycenters(target, other) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/order/index.js
+;// ./node_modules/dagre-d3-es/src/dagre/order/index.js
 
 
 
@@ -3254,7 +3254,7 @@ function assignOrder(g, layering) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/parent-dummy-chains.js
+;// ./node_modules/dagre-d3-es/src/dagre/parent-dummy-chains.js
 
 
 
@@ -3344,7 +3344,7 @@ function parent_dummy_chains_postorder(g) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_castFunction.js
 var _castFunction = __webpack_require__(99922);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/forOwn.js
+;// ./node_modules/lodash-es/forOwn.js
 
 
 
@@ -3386,7 +3386,7 @@ function forOwn(object, iteratee) {
 var _baseFor = __webpack_require__(4574);
 // EXTERNAL MODULE: ./node_modules/lodash-es/keysIn.js + 2 modules
 var keysIn = __webpack_require__(55615);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/forIn.js
+;// ./node_modules/lodash-es/forIn.js
 
 
 
@@ -3427,7 +3427,7 @@ function forIn(object, iteratee) {
 
 /* harmony default export */ const lodash_es_forIn = (forIn);
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/position/bk.js
+;// ./node_modules/dagre-d3-es/src/dagre/position/bk.js
 
 
 
@@ -3841,7 +3841,7 @@ function width(g, v) {
   return g.node(v).width;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/position/index.js
+;// ./node_modules/dagre-d3-es/src/dagre/position/index.js
 
 
 
@@ -3874,7 +3874,7 @@ function positionY(g) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/layout.js
+;// ./node_modules/dagre-d3-es/src/dagre/layout.js
 
 
 
@@ -4342,7 +4342,7 @@ function canonicalize(attrs) {
   return newAttrs;
 }
 
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/dagre/index.js
+;// ./node_modules/dagre-d3-es/src/dagre/index.js
 
 
 
@@ -4386,7 +4386,7 @@ var _baseRest = __webpack_require__(24326);
 var _SetCache = __webpack_require__(62062);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseFindIndex.js
 var _baseFindIndex = __webpack_require__(25707);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsNaN.js
+;// ./node_modules/lodash-es/_baseIsNaN.js
 /**
  * The base implementation of `_.isNaN` without support for number objects.
  *
@@ -4400,7 +4400,7 @@ function baseIsNaN(value) {
 
 /* harmony default export */ const _baseIsNaN = (baseIsNaN);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_strictIndexOf.js
+;// ./node_modules/lodash-es/_strictIndexOf.js
 /**
  * A specialized version of `_.indexOf` which performs strict equality
  * comparisons of values, i.e. `===`.
@@ -4425,7 +4425,7 @@ function strictIndexOf(array, value, fromIndex) {
 
 /* harmony default export */ const _strictIndexOf = (strictIndexOf);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIndexOf.js
+;// ./node_modules/lodash-es/_baseIndexOf.js
 
 
 
@@ -4447,7 +4447,7 @@ function baseIndexOf(array, value, fromIndex) {
 
 /* harmony default export */ const _baseIndexOf = (baseIndexOf);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_arrayIncludes.js
+;// ./node_modules/lodash-es/_arrayIncludes.js
 
 
 /**
@@ -4466,7 +4466,7 @@ function arrayIncludes(array, value) {
 
 /* harmony default export */ const _arrayIncludes = (arrayIncludes);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_arrayIncludesWith.js
+;// ./node_modules/lodash-es/_arrayIncludesWith.js
 /**
  * This function is like `arrayIncludes` except that it accepts a comparator.
  *
@@ -4494,7 +4494,7 @@ function arrayIncludesWith(array, value, comparator) {
 var _cacheHas = __webpack_require__(64099);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_Set.js
 var _Set = __webpack_require__(39857);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/noop.js
+;// ./node_modules/lodash-es/noop.js
 /**
  * This method returns `undefined`.
  *
@@ -4515,7 +4515,7 @@ function noop() {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_setToArray.js
 var _setToArray = __webpack_require__(29959);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_createSet.js
+;// ./node_modules/lodash-es/_createSet.js
 
 
 
@@ -4536,7 +4536,7 @@ var createSet = !(_Set/* default */.A && (1 / (0,_setToArray/* default */.A)(new
 
 /* harmony default export */ const _createSet = (createSet);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseUniq.js
+;// ./node_modules/lodash-es/_baseUniq.js
 
 
 
@@ -4612,7 +4612,7 @@ function baseUniq(array, iteratee, comparator) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/isArrayLikeObject.js
 var isArrayLikeObject = __webpack_require__(53533);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/union.js
+;// ./node_modules/lodash-es/union.js
 
 
 
@@ -4644,7 +4644,7 @@ var union = (0,_baseRest/* default */.A)(function(arrays) {
 var values = __webpack_require__(38207);
 // EXTERNAL MODULE: ./node_modules/lodash-es/reduce.js + 2 modules
 var reduce = __webpack_require__(89463);
-;// CONCATENATED MODULE: ./node_modules/dagre-d3-es/src/graphlib/graph.js
+;// ./node_modules/dagre-d3-es/src/graphlib/graph.js
 
 
 var DEFAULT_EDGE_NAME = '\x00';
@@ -5189,7 +5189,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_MapCache.js + 14 modules
 var _MapCache = __webpack_require__(29471);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_setCacheAdd.js
+;// ./node_modules/lodash-es/_setCacheAdd.js
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
 
@@ -5210,7 +5210,7 @@ function setCacheAdd(value) {
 
 /* harmony default export */ const _setCacheAdd = (setCacheAdd);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_setCacheHas.js
+;// ./node_modules/lodash-es/_setCacheHas.js
 /**
  * Checks if `value` is in the array cache.
  *
@@ -5226,7 +5226,7 @@ function setCacheHas(value) {
 
 /* harmony default export */ const _setCacheHas = (setCacheHas);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_SetCache.js
+;// ./node_modules/lodash-es/_SetCache.js
 
 
 
@@ -5405,7 +5405,7 @@ var _assignValue = __webpack_require__(52851);
 var _copyObject = __webpack_require__(22031);
 // EXTERNAL MODULE: ./node_modules/lodash-es/keys.js
 var keys = __webpack_require__(27422);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseAssign.js
+;// ./node_modules/lodash-es/_baseAssign.js
 
 
 
@@ -5426,7 +5426,7 @@ function baseAssign(object, source) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/keysIn.js + 2 modules
 var keysIn = __webpack_require__(55615);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseAssignIn.js
+;// ./node_modules/lodash-es/_baseAssignIn.js
 
 
 
@@ -5451,7 +5451,7 @@ var _cloneBuffer = __webpack_require__(80154);
 var _copyArray = __webpack_require__(39759);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_getSymbols.js
 var _getSymbols = __webpack_require__(14792);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_copySymbols.js
+;// ./node_modules/lodash-es/_copySymbols.js
 
 
 
@@ -5475,7 +5475,7 @@ var _arrayPush = __webpack_require__(76912);
 var _getPrototype = __webpack_require__(15647);
 // EXTERNAL MODULE: ./node_modules/lodash-es/stubArray.js
 var stubArray = __webpack_require__(13153);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_getSymbolsIn.js
+;// ./node_modules/lodash-es/_getSymbolsIn.js
 
 
 
@@ -5502,7 +5502,7 @@ var getSymbolsIn = !nativeGetSymbols ? stubArray/* default */.A : function(objec
 
 /* harmony default export */ const _getSymbolsIn = (getSymbolsIn);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_copySymbolsIn.js
+;// ./node_modules/lodash-es/_copySymbolsIn.js
 
 
 
@@ -5524,7 +5524,7 @@ function copySymbolsIn(source, object) {
 var _getAllKeys = __webpack_require__(19042);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseGetAllKeys.js
 var _baseGetAllKeys = __webpack_require__(33831);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_getAllKeysIn.js
+;// ./node_modules/lodash-es/_getAllKeysIn.js
 
 
 
@@ -5545,7 +5545,7 @@ function getAllKeysIn(object) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_getTag.js + 3 modules
 var _getTag = __webpack_require__(9779);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_initCloneArray.js
+;// ./node_modules/lodash-es/_initCloneArray.js
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
 
@@ -5575,7 +5575,7 @@ function initCloneArray(array) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_cloneArrayBuffer.js
 var _cloneArrayBuffer = __webpack_require__(90565);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_cloneDataView.js
+;// ./node_modules/lodash-es/_cloneDataView.js
 
 
 /**
@@ -5593,7 +5593,7 @@ function cloneDataView(dataView, isDeep) {
 
 /* harmony default export */ const _cloneDataView = (cloneDataView);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_cloneRegExp.js
+;// ./node_modules/lodash-es/_cloneRegExp.js
 /** Used to match `RegExp` flags from their coerced string values. */
 var reFlags = /\w*$/;
 
@@ -5614,7 +5614,7 @@ function cloneRegExp(regexp) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_Symbol.js
 var _Symbol = __webpack_require__(241);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_cloneSymbol.js
+;// ./node_modules/lodash-es/_cloneSymbol.js
 
 
 /** Used to convert symbols to primitives and strings. */
@@ -5636,7 +5636,7 @@ function cloneSymbol(symbol) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_cloneTypedArray.js
 var _cloneTypedArray = __webpack_require__(1801);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_initCloneByTag.js
+;// ./node_modules/lodash-es/_initCloneByTag.js
 
 
 
@@ -5723,7 +5723,7 @@ var isArray = __webpack_require__(92049);
 var isBuffer = __webpack_require__(99912);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isObjectLike.js
 var isObjectLike = __webpack_require__(53098);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsMap.js
+;// ./node_modules/lodash-es/_baseIsMap.js
 
 
 
@@ -5747,7 +5747,7 @@ function baseIsMap(value) {
 var _baseUnary = __webpack_require__(52789);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_nodeUtil.js
 var _nodeUtil = __webpack_require__(64841);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/isMap.js
+;// ./node_modules/lodash-es/isMap.js
 
 
 
@@ -5778,7 +5778,7 @@ var isMap = nodeIsMap ? (0,_baseUnary/* default */.A)(nodeIsMap) : _baseIsMap;
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/isObject.js
 var isObject = __webpack_require__(23149);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsSet.js
+;// ./node_modules/lodash-es/_baseIsSet.js
 
 
 
@@ -5798,7 +5798,7 @@ function baseIsSet(value) {
 
 /* harmony default export */ const _baseIsSet = (baseIsSet);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/isSet.js
+;// ./node_modules/lodash-es/isSet.js
 
 
 
@@ -5827,7 +5827,7 @@ var isSet = nodeIsSet ? (0,_baseUnary/* default */.A)(nodeIsSet) : _baseIsSet;
 
 /* harmony default export */ const lodash_es_isSet = (isSet);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseClone.js
+;// ./node_modules/lodash-es/_baseClone.js
 
 
 
@@ -6011,7 +6011,7 @@ __webpack_require__.d(__webpack_exports__, {
 var _baseForOwn = __webpack_require__(79841);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isArrayLike.js
 var isArrayLike = __webpack_require__(38446);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_createBaseEach.js
+;// ./node_modules/lodash-es/_createBaseEach.js
 
 
 /**
@@ -6045,7 +6045,7 @@ function createBaseEach(eachFunc, fromRight) {
 
 /* harmony default export */ const _createBaseEach = (createBaseEach);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseEach.js
+;// ./node_modules/lodash-es/_baseEach.js
 
 
 
@@ -6115,7 +6115,7 @@ var _Symbol = __webpack_require__(241);
 var isArguments = __webpack_require__(52274);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isArray.js
 var isArray = __webpack_require__(92049);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_isFlattenable.js
+;// ./node_modules/lodash-es/_isFlattenable.js
 
 
 
@@ -6137,7 +6137,7 @@ function isFlattenable(value) {
 
 /* harmony default export */ const _isFlattenable = (isFlattenable);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseFlatten.js
+;// ./node_modules/lodash-es/_baseFlatten.js
 
 
 
@@ -6289,7 +6289,7 @@ __webpack_require__.d(__webpack_exports__, {
 var _Stack = __webpack_require__(11754);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_SetCache.js + 2 modules
 var _SetCache = __webpack_require__(62062);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_arraySome.js
+;// ./node_modules/lodash-es/_arraySome.js
 /**
  * A specialized version of `_.some` for arrays without support for iteratee
  * shorthands.
@@ -6316,7 +6316,7 @@ function arraySome(array, predicate) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_cacheHas.js
 var _cacheHas = __webpack_require__(64099);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_equalArrays.js
+;// ./node_modules/lodash-es/_equalArrays.js
 
 
 
@@ -6408,7 +6408,7 @@ var _Symbol = __webpack_require__(241);
 var _Uint8Array = __webpack_require__(43988);
 // EXTERNAL MODULE: ./node_modules/lodash-es/eq.js
 var eq = __webpack_require__(66984);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_mapToArray.js
+;// ./node_modules/lodash-es/_mapToArray.js
 /**
  * Converts `map` to its key-value pairs.
  *
@@ -6430,7 +6430,7 @@ function mapToArray(map) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_setToArray.js
 var _setToArray = __webpack_require__(29959);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_equalByTag.js
+;// ./node_modules/lodash-es/_equalByTag.js
 
 
 
@@ -6546,7 +6546,7 @@ function equalByTag(object, other, tag, bitmask, customizer, equalFunc, stack) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_getAllKeys.js
 var _getAllKeys = __webpack_require__(19042);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_equalObjects.js
+;// ./node_modules/lodash-es/_equalObjects.js
 
 
 /** Used to compose bitmasks for value comparisons. */
@@ -6646,7 +6646,7 @@ var isArray = __webpack_require__(92049);
 var isBuffer = __webpack_require__(99912);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isTypedArray.js + 1 modules
 var isTypedArray = __webpack_require__(33858);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsEqualDeep.js
+;// ./node_modules/lodash-es/_baseIsEqualDeep.js
 
 
 
@@ -6733,7 +6733,7 @@ function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/isObjectLike.js
 var isObjectLike = __webpack_require__(53098);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsEqual.js
+;// ./node_modules/lodash-es/_baseIsEqual.js
 
 
 
@@ -6763,7 +6763,7 @@ function baseIsEqual(value, other, bitmask, customizer, stack) {
 
 /* harmony default export */ const _baseIsEqual = (baseIsEqual);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsMatch.js
+;// ./node_modules/lodash-es/_baseIsMatch.js
 
 
 
@@ -6829,7 +6829,7 @@ function baseIsMatch(object, source, matchData, customizer) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/isObject.js
 var isObject = __webpack_require__(23149);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_isStrictComparable.js
+;// ./node_modules/lodash-es/_isStrictComparable.js
 
 
 /**
@@ -6848,7 +6848,7 @@ function isStrictComparable(value) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/keys.js
 var keys = __webpack_require__(27422);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_getMatchData.js
+;// ./node_modules/lodash-es/_getMatchData.js
 
 
 
@@ -6874,7 +6874,7 @@ function getMatchData(object) {
 
 /* harmony default export */ const _getMatchData = (getMatchData);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_matchesStrictComparable.js
+;// ./node_modules/lodash-es/_matchesStrictComparable.js
 /**
  * A specialized version of `matchesProperty` for source values suitable
  * for strict equality comparisons, i.e. `===`.
@@ -6896,7 +6896,7 @@ function matchesStrictComparable(key, srcValue) {
 
 /* harmony default export */ const _matchesStrictComparable = (matchesStrictComparable);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseMatches.js
+;// ./node_modules/lodash-es/_baseMatches.js
 
 
 
@@ -6922,7 +6922,7 @@ function baseMatches(source) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseGet.js
 var _baseGet = __webpack_require__(66318);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/get.js
+;// ./node_modules/lodash-es/get.js
 
 
 /**
@@ -6963,7 +6963,7 @@ var hasIn = __webpack_require__(39188);
 var _isKey = __webpack_require__(86586);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_toKey.js
 var _toKey = __webpack_require__(30901);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseMatchesProperty.js
+;// ./node_modules/lodash-es/_baseMatchesProperty.js
 
 
 
@@ -7002,7 +7002,7 @@ function baseMatchesProperty(path, srcValue) {
 var identity = __webpack_require__(29008);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseProperty.js
 var _baseProperty = __webpack_require__(70805);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_basePropertyDeep.js
+;// ./node_modules/lodash-es/_basePropertyDeep.js
 
 
 /**
@@ -7020,7 +7020,7 @@ function basePropertyDeep(path) {
 
 /* harmony default export */ const _basePropertyDeep = (basePropertyDeep);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/property.js
+;// ./node_modules/lodash-es/property.js
 
 
 
@@ -7054,7 +7054,7 @@ function property(path) {
 
 /* harmony default export */ const lodash_es_property = (property);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIteratee.js
+;// ./node_modules/lodash-es/_baseIteratee.js
 
 
 
@@ -7211,7 +7211,7 @@ var isArray = __webpack_require__(92049);
 var _isKey = __webpack_require__(86586);
 // EXTERNAL MODULE: ./node_modules/lodash-es/memoize.js
 var memoize = __webpack_require__(46632);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_memoizeCapped.js
+;// ./node_modules/lodash-es/_memoizeCapped.js
 
 
 /** Used as the maximum memoize cache size. */
@@ -7239,7 +7239,7 @@ function memoizeCapped(func) {
 
 /* harmony default export */ const _memoizeCapped = (memoizeCapped);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_stringToPath.js
+;// ./node_modules/lodash-es/_stringToPath.js
 
 
 /** Used to match property names within property paths. */
@@ -7270,7 +7270,7 @@ var stringToPath = _memoizeCapped(function(string) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/toString.js + 1 modules
 var lodash_es_toString = __webpack_require__(28894);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_castPath.js
+;// ./node_modules/lodash-es/_castPath.js
 
 
 
@@ -7614,7 +7614,7 @@ __webpack_require__.d(__webpack_exports__, {
 var _arrayFilter = __webpack_require__(2634);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseEach.js + 1 modules
 var _baseEach = __webpack_require__(6240);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseFilter.js
+;// ./node_modules/lodash-es/_baseFilter.js
 
 
 /**
@@ -7641,7 +7641,7 @@ function baseFilter(collection, predicate) {
 var _baseIteratee = __webpack_require__(49574);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isArray.js
 var isArray = __webpack_require__(92049);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/filter.js
+;// ./node_modules/lodash-es/filter.js
 
 
 
@@ -7795,7 +7795,7 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ lodash_es_has)
 });
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseHas.js
+;// ./node_modules/lodash-es/_baseHas.js
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
 
@@ -7818,7 +7818,7 @@ function baseHas(object, key) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_hasPath.js
 var _hasPath = __webpack_require__(85054);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/has.js
+;// ./node_modules/lodash-es/has.js
 
 
 
@@ -7867,7 +7867,7 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ lodash_es_hasIn)
 });
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseHasIn.js
+;// ./node_modules/lodash-es/_baseHasIn.js
 /**
  * The base implementation of `_.hasIn` without support for deep paths.
  *
@@ -7884,7 +7884,7 @@ function baseHasIn(object, key) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_hasPath.js
 var _hasPath = __webpack_require__(85054);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/hasIn.js
+;// ./node_modules/lodash-es/hasIn.js
 
 
 
@@ -8134,7 +8134,7 @@ var _isIndex = __webpack_require__(25353);
 var isObject = __webpack_require__(23149);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_toKey.js
 var _toKey = __webpack_require__(30901);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseSet.js
+;// ./node_modules/lodash-es/_baseSet.js
 
 
 
@@ -8187,7 +8187,7 @@ function baseSet(object, path, value, customizer) {
 
 /* harmony default export */ const _baseSet = (baseSet);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_basePickBy.js
+;// ./node_modules/lodash-es/_basePickBy.js
 
 
 
@@ -8221,7 +8221,7 @@ function basePickBy(object, paths, predicate) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/hasIn.js + 1 modules
 var hasIn = __webpack_require__(39188);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_basePick.js
+;// ./node_modules/lodash-es/_basePick.js
 
 
 
@@ -8248,7 +8248,7 @@ var flatten = __webpack_require__(34098);
 var _overRest = __webpack_require__(76875);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_setToString.js + 2 modules
 var _setToString = __webpack_require__(67525);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_flatRest.js
+;// ./node_modules/lodash-es/_flatRest.js
 
 
 
@@ -8266,7 +8266,7 @@ function flatRest(func) {
 
 /* harmony default export */ const _flatRest = (flatRest);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/pick.js
+;// ./node_modules/lodash-es/pick.js
 
 
 
@@ -8305,7 +8305,7 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ lodash_es_range)
 });
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseRange.js
+;// ./node_modules/lodash-es/_baseRange.js
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeCeil = Math.ceil,
     nativeMax = Math.max;
@@ -8339,7 +8339,7 @@ function baseRange(start, end, step, fromRight) {
 var _isIterateeCall = __webpack_require__(6832);
 // EXTERNAL MODULE: ./node_modules/lodash-es/toFinite.js + 3 modules
 var toFinite = __webpack_require__(74342);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_createRange.js
+;// ./node_modules/lodash-es/_createRange.js
 
 
 
@@ -8371,7 +8371,7 @@ function createRange(fromRight) {
 
 /* harmony default export */ const _createRange = (createRange);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/range.js
+;// ./node_modules/lodash-es/range.js
 
 
 /**
@@ -8431,7 +8431,7 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ lodash_es_reduce)
 });
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_arrayReduce.js
+;// ./node_modules/lodash-es/_arrayReduce.js
 /**
  * A specialized version of `_.reduce` for arrays without support for
  * iteratee shorthands.
@@ -8463,7 +8463,7 @@ function arrayReduce(array, iteratee, accumulator, initAccum) {
 var _baseEach = __webpack_require__(6240);
 // EXTERNAL MODULE: ./node_modules/lodash-es/_baseIteratee.js + 16 modules
 var _baseIteratee = __webpack_require__(49574);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseReduce.js
+;// ./node_modules/lodash-es/_baseReduce.js
 /**
  * The base implementation of `_.reduce` and `_.reduceRight`, without support
  * for iteratee shorthands, which iterates over `collection` using `eachFunc`.
@@ -8490,7 +8490,7 @@ function baseReduce(collection, iteratee, accumulator, initAccum, eachFunc) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/isArray.js
 var isArray = __webpack_require__(92049);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/reduce.js
+;// ./node_modules/lodash-es/reduce.js
 
 
 
@@ -8588,7 +8588,7 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ lodash_es_toFinite)
 });
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_trimmedEndIndex.js
+;// ./node_modules/lodash-es/_trimmedEndIndex.js
 /** Used to match a single whitespace character. */
 var reWhitespace = /\s/;
 
@@ -8609,7 +8609,7 @@ function trimmedEndIndex(string) {
 
 /* harmony default export */ const _trimmedEndIndex = (trimmedEndIndex);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseTrim.js
+;// ./node_modules/lodash-es/_baseTrim.js
 
 
 /** Used to match leading whitespace. */
@@ -8634,7 +8634,7 @@ function baseTrim(string) {
 var isObject = __webpack_require__(23149);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isSymbol.js
 var isSymbol = __webpack_require__(61882);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/toNumber.js
+;// ./node_modules/lodash-es/toNumber.js
 
 
 
@@ -8700,7 +8700,7 @@ function toNumber(value) {
 
 /* harmony default export */ const lodash_es_toNumber = (toNumber);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/toFinite.js
+;// ./node_modules/lodash-es/toFinite.js
 
 
 /** Used as references for various `Number` constants. */
@@ -8764,7 +8764,7 @@ var _arrayMap = __webpack_require__(45572);
 var isArray = __webpack_require__(92049);
 // EXTERNAL MODULE: ./node_modules/lodash-es/isSymbol.js
 var isSymbol = __webpack_require__(61882);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseToString.js
+;// ./node_modules/lodash-es/_baseToString.js
 
 
 
@@ -8803,7 +8803,7 @@ function baseToString(value) {
 
 /* harmony default export */ const _baseToString = (baseToString);
 
-;// CONCATENATED MODULE: ./node_modules/lodash-es/toString.js
+;// ./node_modules/lodash-es/toString.js
 
 
 /**
@@ -8886,7 +8886,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_arrayMap.js
 var _arrayMap = __webpack_require__(45572);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/_baseValues.js
+;// ./node_modules/lodash-es/_baseValues.js
 
 
 /**
@@ -8909,7 +8909,7 @@ function baseValues(object, props) {
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/keys.js
 var keys = __webpack_require__(27422);
-;// CONCATENATED MODULE: ./node_modules/lodash-es/values.js
+;// ./node_modules/lodash-es/values.js
 
 
 
@@ -8948,200 +8948,19 @@ function values(object) {
 
 /***/ }),
 
-/***/ 26902:
+/***/ 43706:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  diagram: () => (/* binding */ diagram)
-});
-
-// EXTERNAL MODULE: ./node_modules/mermaid/dist/mermaid-6dc72991.js + 8 modules
-var mermaid_6dc72991 = __webpack_require__(99702);
-// EXTERNAL MODULE: ./node_modules/dagre-d3-es/src/graphlib/index.js
-var graphlib = __webpack_require__(697);
-// EXTERNAL MODULE: ./node_modules/d3/src/index.js + 197 modules
-var src = __webpack_require__(26312);
-// EXTERNAL MODULE: ./node_modules/dagre-d3-es/src/dagre/index.js + 64 modules
-var dagre = __webpack_require__(21176);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/stringify.js
-
-/**
- * Convert array of 16 byte values to UUID string format of the form:
- * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
- */
-
-const byteToHex = [];
-
-for (let i = 0; i < 256; ++i) {
-  byteToHex.push((i + 0x100).toString(16).slice(1));
-}
-
-function unsafeStringify(arr, offset = 0) {
-  // Note: Be careful editing this code!  It's been tuned for performance
-  // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
-  return byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + '-' + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + '-' + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + '-' + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + '-' + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]];
-}
-
-function stringify(arr, offset = 0) {
-  const uuid = unsafeStringify(arr, offset); // Consistency check for valid UUID.  If this throws, it's likely due to one
-  // of the following:
-  // - One or more input array values don't map to a hex octet (leading to
-  // "undefined" in the uuid)
-  // - Invalid input values for the RFC `version` or `variant` fields
-
-  if (!validate(uuid)) {
-    throw TypeError('Stringified UUID is invalid');
-  }
-
-  return uuid;
-}
-
-/* harmony default export */ const esm_node_stringify = ((/* unused pure expression or super */ null && (stringify)));
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/regex.js
-/* harmony default export */ const regex = (/^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/validate.js
-
-
-function validate_validate(uuid) {
-  return typeof uuid === 'string' && regex.test(uuid);
-}
-
-/* harmony default export */ const esm_node_validate = (validate_validate);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/parse.js
-
-
-function parse(uuid) {
-  if (!esm_node_validate(uuid)) {
-    throw TypeError('Invalid UUID');
-  }
-
-  let v;
-  const arr = new Uint8Array(16); // Parse ########-....-....-....-............
-
-  arr[0] = (v = parseInt(uuid.slice(0, 8), 16)) >>> 24;
-  arr[1] = v >>> 16 & 0xff;
-  arr[2] = v >>> 8 & 0xff;
-  arr[3] = v & 0xff; // Parse ........-####-....-....-............
-
-  arr[4] = (v = parseInt(uuid.slice(9, 13), 16)) >>> 8;
-  arr[5] = v & 0xff; // Parse ........-....-####-....-............
-
-  arr[6] = (v = parseInt(uuid.slice(14, 18), 16)) >>> 8;
-  arr[7] = v & 0xff; // Parse ........-....-....-####-............
-
-  arr[8] = (v = parseInt(uuid.slice(19, 23), 16)) >>> 8;
-  arr[9] = v & 0xff; // Parse ........-....-....-....-############
-  // (Use "/" to avoid 32-bit truncation when bit-shifting high-order bytes)
-
-  arr[10] = (v = parseInt(uuid.slice(24, 36), 16)) / 0x10000000000 & 0xff;
-  arr[11] = v / 0x100000000 & 0xff;
-  arr[12] = v >>> 24 & 0xff;
-  arr[13] = v >>> 16 & 0xff;
-  arr[14] = v >>> 8 & 0xff;
-  arr[15] = v & 0xff;
-  return arr;
-}
-
-/* harmony default export */ const esm_node_parse = (parse);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/v35.js
-
-
-
-function stringToBytes(str) {
-  str = unescape(encodeURIComponent(str)); // UTF8 escape
-
-  const bytes = [];
-
-  for (let i = 0; i < str.length; ++i) {
-    bytes.push(str.charCodeAt(i));
-  }
-
-  return bytes;
-}
-
-const DNS = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
-const URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
-function v35(name, version, hashfunc) {
-  function generateUUID(value, namespace, buf, offset) {
-    var _namespace;
-
-    if (typeof value === 'string') {
-      value = stringToBytes(value);
-    }
-
-    if (typeof namespace === 'string') {
-      namespace = esm_node_parse(namespace);
-    }
-
-    if (((_namespace = namespace) === null || _namespace === void 0 ? void 0 : _namespace.length) !== 16) {
-      throw TypeError('Namespace must be array-like (16 iterable integer values, 0-255)');
-    } // Compute hash of namespace and value, Per 4.3
-    // Future: Use spread syntax when supported on all platforms, e.g. `bytes =
-    // hashfunc([...namespace, ... value])`
-
-
-    let bytes = new Uint8Array(16 + value.length);
-    bytes.set(namespace);
-    bytes.set(value, namespace.length);
-    bytes = hashfunc(bytes);
-    bytes[6] = bytes[6] & 0x0f | version;
-    bytes[8] = bytes[8] & 0x3f | 0x80;
-
-    if (buf) {
-      offset = offset || 0;
-
-      for (let i = 0; i < 16; ++i) {
-        buf[offset + i] = bytes[i];
-      }
-
-      return buf;
-    }
-
-    return unsafeStringify(bytes);
-  } // Function#name is not settable on some platforms (#270)
-
-
-  try {
-    generateUUID.name = name; // eslint-disable-next-line no-empty
-  } catch (err) {} // For CommonJS default export support
-
-
-  generateUUID.DNS = DNS;
-  generateUUID.URL = URL;
-  return generateUUID;
-}
-// EXTERNAL MODULE: external "crypto"
-var external_crypto_ = __webpack_require__(76982);
-var external_crypto_default = /*#__PURE__*/__webpack_require__.n(external_crypto_);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/sha1.js
-
-
-function sha1(bytes) {
-  if (Array.isArray(bytes)) {
-    bytes = Buffer.from(bytes);
-  } else if (typeof bytes === 'string') {
-    bytes = Buffer.from(bytes, 'utf8');
-  }
-
-  return external_crypto_default().createHash('sha1').update(bytes).digest();
-}
-
-/* harmony default export */ const esm_node_sha1 = (sha1);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/v5.js
-
-
-const v5 = v35('v5', 0x50, esm_node_sha1);
-/* harmony default export */ const esm_node_v5 = (v5);
-// EXTERNAL MODULE: ./node_modules/dayjs/dayjs.min.js
-var dayjs_min = __webpack_require__(74353);
-// EXTERNAL MODULE: ./node_modules/@braintree/sanitize-url/dist/index.js
-var dist = __webpack_require__(16750);
-// EXTERNAL MODULE: ./node_modules/dompurify/dist/purify.es.mjs
-var purify_es = __webpack_require__(99418);
-;// CONCATENATED MODULE: ./node_modules/mermaid/dist/erDiagram-09d1c15f.js
-
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   diagram: () => (/* binding */ diagram)
+/* harmony export */ });
+/* harmony import */ var _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(99702);
+/* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26312);
+/* harmony import */ var dagre_d3_es_src_dagre_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21176);
+/* harmony import */ var dagre_d3_es_src_graphlib_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(697);
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74353);
+/* harmony import */ var _braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16750);
+/* harmony import */ var dompurify__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(99418);
 
 
 
@@ -9160,138 +8979,123 @@ var parser = function() {
     for (o2 = o2 || {}, l = k.length; l--; o2[k[l]] = v)
       ;
     return o2;
-  }, $V0 = [6, 8, 10, 20, 22, 24, 26, 27, 28], $V1 = [1, 10], $V2 = [1, 11], $V3 = [1, 12], $V4 = [1, 13], $V5 = [1, 14], $V6 = [1, 15], $V7 = [1, 21], $V8 = [1, 22], $V9 = [1, 23], $Va = [1, 24], $Vb = [1, 25], $Vc = [6, 8, 10, 13, 15, 18, 19, 20, 22, 24, 26, 27, 28, 41, 42, 43, 44, 45], $Vd = [1, 34], $Ve = [27, 28, 46, 47], $Vf = [41, 42, 43, 44, 45], $Vg = [17, 34], $Vh = [1, 54], $Vi = [1, 53], $Vj = [17, 34, 36, 38];
+  }, $V0 = [1, 3], $V1 = [1, 4], $V2 = [1, 5], $V3 = [1, 6], $V4 = [5, 6, 8, 9, 11, 13, 31, 32, 33, 34, 35, 36, 44, 62, 63], $V5 = [1, 18], $V6 = [2, 7], $V7 = [1, 22], $V8 = [1, 23], $V9 = [1, 24], $Va = [1, 25], $Vb = [1, 26], $Vc = [1, 27], $Vd = [1, 20], $Ve = [1, 28], $Vf = [1, 29], $Vg = [62, 63], $Vh = [5, 8, 9, 11, 13, 31, 32, 33, 34, 35, 36, 44, 51, 53, 62, 63], $Vi = [1, 47], $Vj = [1, 48], $Vk = [1, 49], $Vl = [1, 50], $Vm = [1, 51], $Vn = [1, 52], $Vo = [1, 53], $Vp = [53, 54], $Vq = [1, 64], $Vr = [1, 60], $Vs = [1, 61], $Vt = [1, 62], $Vu = [1, 63], $Vv = [1, 65], $Vw = [1, 69], $Vx = [1, 70], $Vy = [1, 67], $Vz = [1, 68], $VA = [5, 8, 9, 11, 13, 31, 32, 33, 34, 35, 36, 44, 62, 63];
   var parser2 = {
     trace: function trace() {
     },
     yy: {},
-    symbols_: { "error": 2, "start": 3, "ER_DIAGRAM": 4, "document": 5, "EOF": 6, "line": 7, "SPACE": 8, "statement": 9, "NEWLINE": 10, "entityName": 11, "relSpec": 12, ":": 13, "role": 14, "BLOCK_START": 15, "attributes": 16, "BLOCK_STOP": 17, "SQS": 18, "SQE": 19, "title": 20, "title_value": 21, "acc_title": 22, "acc_title_value": 23, "acc_descr": 24, "acc_descr_value": 25, "acc_descr_multiline_value": 26, "ALPHANUM": 27, "ENTITY_NAME": 28, "attribute": 29, "attributeType": 30, "attributeName": 31, "attributeKeyTypeList": 32, "attributeComment": 33, "ATTRIBUTE_WORD": 34, "attributeKeyType": 35, "COMMA": 36, "ATTRIBUTE_KEY": 37, "COMMENT": 38, "cardinality": 39, "relType": 40, "ZERO_OR_ONE": 41, "ZERO_OR_MORE": 42, "ONE_OR_MORE": 43, "ONLY_ONE": 44, "MD_PARENT": 45, "NON_IDENTIFYING": 46, "IDENTIFYING": 47, "WORD": 48, "$accept": 0, "$end": 1 },
-    terminals_: { 2: "error", 4: "ER_DIAGRAM", 6: "EOF", 8: "SPACE", 10: "NEWLINE", 13: ":", 15: "BLOCK_START", 17: "BLOCK_STOP", 18: "SQS", 19: "SQE", 20: "title", 21: "title_value", 22: "acc_title", 23: "acc_title_value", 24: "acc_descr", 25: "acc_descr_value", 26: "acc_descr_multiline_value", 27: "ALPHANUM", 28: "ENTITY_NAME", 34: "ATTRIBUTE_WORD", 36: "COMMA", 37: "ATTRIBUTE_KEY", 38: "COMMENT", 41: "ZERO_OR_ONE", 42: "ZERO_OR_MORE", 43: "ONE_OR_MORE", 44: "ONLY_ONE", 45: "MD_PARENT", 46: "NON_IDENTIFYING", 47: "IDENTIFYING", 48: "WORD" },
-    productions_: [0, [3, 3], [5, 0], [5, 2], [7, 2], [7, 1], [7, 1], [7, 1], [9, 5], [9, 4], [9, 3], [9, 1], [9, 7], [9, 6], [9, 4], [9, 2], [9, 2], [9, 2], [9, 1], [11, 1], [11, 1], [16, 1], [16, 2], [29, 2], [29, 3], [29, 3], [29, 4], [30, 1], [31, 1], [32, 1], [32, 3], [35, 1], [33, 1], [12, 3], [39, 1], [39, 1], [39, 1], [39, 1], [39, 1], [40, 1], [40, 1], [14, 1], [14, 1], [14, 1]],
+    symbols_: { "error": 2, "start": 3, "directive": 4, "NEWLINE": 5, "RD": 6, "diagram": 7, "EOF": 8, "acc_title": 9, "acc_title_value": 10, "acc_descr": 11, "acc_descr_value": 12, "acc_descr_multiline_value": 13, "requirementDef": 14, "elementDef": 15, "relationshipDef": 16, "requirementType": 17, "requirementName": 18, "STRUCT_START": 19, "requirementBody": 20, "ID": 21, "COLONSEP": 22, "id": 23, "TEXT": 24, "text": 25, "RISK": 26, "riskLevel": 27, "VERIFYMTHD": 28, "verifyType": 29, "STRUCT_STOP": 30, "REQUIREMENT": 31, "FUNCTIONAL_REQUIREMENT": 32, "INTERFACE_REQUIREMENT": 33, "PERFORMANCE_REQUIREMENT": 34, "PHYSICAL_REQUIREMENT": 35, "DESIGN_CONSTRAINT": 36, "LOW_RISK": 37, "MED_RISK": 38, "HIGH_RISK": 39, "VERIFY_ANALYSIS": 40, "VERIFY_DEMONSTRATION": 41, "VERIFY_INSPECTION": 42, "VERIFY_TEST": 43, "ELEMENT": 44, "elementName": 45, "elementBody": 46, "TYPE": 47, "type": 48, "DOCREF": 49, "ref": 50, "END_ARROW_L": 51, "relationship": 52, "LINE": 53, "END_ARROW_R": 54, "CONTAINS": 55, "COPIES": 56, "DERIVES": 57, "SATISFIES": 58, "VERIFIES": 59, "REFINES": 60, "TRACES": 61, "unqString": 62, "qString": 63, "$accept": 0, "$end": 1 },
+    terminals_: { 2: "error", 5: "NEWLINE", 6: "RD", 8: "EOF", 9: "acc_title", 10: "acc_title_value", 11: "acc_descr", 12: "acc_descr_value", 13: "acc_descr_multiline_value", 19: "STRUCT_START", 21: "ID", 22: "COLONSEP", 24: "TEXT", 26: "RISK", 28: "VERIFYMTHD", 30: "STRUCT_STOP", 31: "REQUIREMENT", 32: "FUNCTIONAL_REQUIREMENT", 33: "INTERFACE_REQUIREMENT", 34: "PERFORMANCE_REQUIREMENT", 35: "PHYSICAL_REQUIREMENT", 36: "DESIGN_CONSTRAINT", 37: "LOW_RISK", 38: "MED_RISK", 39: "HIGH_RISK", 40: "VERIFY_ANALYSIS", 41: "VERIFY_DEMONSTRATION", 42: "VERIFY_INSPECTION", 43: "VERIFY_TEST", 44: "ELEMENT", 47: "TYPE", 49: "DOCREF", 51: "END_ARROW_L", 53: "LINE", 54: "END_ARROW_R", 55: "CONTAINS", 56: "COPIES", 57: "DERIVES", 58: "SATISFIES", 59: "VERIFIES", 60: "REFINES", 61: "TRACES", 62: "unqString", 63: "qString" },
+    productions_: [0, [3, 3], [3, 2], [3, 4], [4, 2], [4, 2], [4, 1], [7, 0], [7, 2], [7, 2], [7, 2], [7, 2], [7, 2], [14, 5], [20, 5], [20, 5], [20, 5], [20, 5], [20, 2], [20, 1], [17, 1], [17, 1], [17, 1], [17, 1], [17, 1], [17, 1], [27, 1], [27, 1], [27, 1], [29, 1], [29, 1], [29, 1], [29, 1], [15, 5], [46, 5], [46, 5], [46, 2], [46, 1], [16, 5], [16, 5], [52, 1], [52, 1], [52, 1], [52, 1], [52, 1], [52, 1], [52, 1], [18, 1], [18, 1], [23, 1], [23, 1], [25, 1], [25, 1], [45, 1], [45, 1], [48, 1], [48, 1], [50, 1], [50, 1]],
     performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate, $$, _$) {
       var $0 = $$.length - 1;
       switch (yystate) {
-        case 1:
-          break;
-        case 2:
-          this.$ = [];
-          break;
-        case 3:
-          $$[$0 - 1].push($$[$0]);
-          this.$ = $$[$0 - 1];
-          break;
         case 4:
-        case 5:
-          this.$ = $$[$0];
-          break;
-        case 6:
-        case 7:
-          this.$ = [];
-          break;
-        case 8:
-          yy.addEntity($$[$0 - 4]);
-          yy.addEntity($$[$0 - 2]);
-          yy.addRelationship($$[$0 - 4], $$[$0], $$[$0 - 2], $$[$0 - 3]);
-          break;
-        case 9:
-          yy.addEntity($$[$0 - 3]);
-          yy.addAttributes($$[$0 - 3], $$[$0 - 1]);
-          break;
-        case 10:
-          yy.addEntity($$[$0 - 2]);
-          break;
-        case 11:
-          yy.addEntity($$[$0]);
-          break;
-        case 12:
-          yy.addEntity($$[$0 - 6], $$[$0 - 4]);
-          yy.addAttributes($$[$0 - 6], $$[$0 - 1]);
-          break;
-        case 13:
-          yy.addEntity($$[$0 - 5], $$[$0 - 3]);
-          break;
-        case 14:
-          yy.addEntity($$[$0 - 3], $$[$0 - 1]);
-          break;
-        case 15:
-        case 16:
           this.$ = $$[$0].trim();
           yy.setAccTitle(this.$);
           break;
-        case 17:
-        case 18:
+        case 5:
+        case 6:
           this.$ = $$[$0].trim();
           yy.setAccDescription(this.$);
           break;
-        case 19:
-        case 43:
-          this.$ = $$[$0];
+        case 7:
+          this.$ = [];
+          break;
+        case 13:
+          yy.addRequirement($$[$0 - 3], $$[$0 - 4]);
+          break;
+        case 14:
+          yy.setNewReqId($$[$0 - 2]);
+          break;
+        case 15:
+          yy.setNewReqText($$[$0 - 2]);
+          break;
+        case 16:
+          yy.setNewReqRisk($$[$0 - 2]);
+          break;
+        case 17:
+          yy.setNewReqVerifyMethod($$[$0 - 2]);
           break;
         case 20:
-        case 41:
-        case 42:
-          this.$ = $$[$0].replace(/"/g, "");
+          this.$ = yy.RequirementType.REQUIREMENT;
           break;
         case 21:
-        case 29:
-          this.$ = [$$[$0]];
+          this.$ = yy.RequirementType.FUNCTIONAL_REQUIREMENT;
           break;
         case 22:
-          $$[$0].push($$[$0 - 1]);
-          this.$ = $$[$0];
+          this.$ = yy.RequirementType.INTERFACE_REQUIREMENT;
           break;
         case 23:
-          this.$ = { attributeType: $$[$0 - 1], attributeName: $$[$0] };
+          this.$ = yy.RequirementType.PERFORMANCE_REQUIREMENT;
           break;
         case 24:
-          this.$ = { attributeType: $$[$0 - 2], attributeName: $$[$0 - 1], attributeKeyTypeList: $$[$0] };
+          this.$ = yy.RequirementType.PHYSICAL_REQUIREMENT;
           break;
         case 25:
-          this.$ = { attributeType: $$[$0 - 2], attributeName: $$[$0 - 1], attributeComment: $$[$0] };
+          this.$ = yy.RequirementType.DESIGN_CONSTRAINT;
           break;
         case 26:
-          this.$ = { attributeType: $$[$0 - 3], attributeName: $$[$0 - 2], attributeKeyTypeList: $$[$0 - 1], attributeComment: $$[$0] };
+          this.$ = yy.RiskLevel.LOW_RISK;
           break;
         case 27:
+          this.$ = yy.RiskLevel.MED_RISK;
+          break;
         case 28:
-        case 31:
-          this.$ = $$[$0];
+          this.$ = yy.RiskLevel.HIGH_RISK;
+          break;
+        case 29:
+          this.$ = yy.VerifyType.VERIFY_ANALYSIS;
           break;
         case 30:
-          $$[$0 - 2].push($$[$0]);
-          this.$ = $$[$0 - 2];
+          this.$ = yy.VerifyType.VERIFY_DEMONSTRATION;
+          break;
+        case 31:
+          this.$ = yy.VerifyType.VERIFY_INSPECTION;
           break;
         case 32:
-          this.$ = $$[$0].replace(/"/g, "");
+          this.$ = yy.VerifyType.VERIFY_TEST;
           break;
         case 33:
-          this.$ = { cardA: $$[$0], relType: $$[$0 - 1], cardB: $$[$0 - 2] };
+          yy.addElement($$[$0 - 3]);
           break;
         case 34:
-          this.$ = yy.Cardinality.ZERO_OR_ONE;
+          yy.setNewElementType($$[$0 - 2]);
           break;
         case 35:
-          this.$ = yy.Cardinality.ZERO_OR_MORE;
-          break;
-        case 36:
-          this.$ = yy.Cardinality.ONE_OR_MORE;
-          break;
-        case 37:
-          this.$ = yy.Cardinality.ONLY_ONE;
+          yy.setNewElementDocRef($$[$0 - 2]);
           break;
         case 38:
-          this.$ = yy.Cardinality.MD_PARENT;
+          yy.addRelationship($$[$0 - 2], $$[$0], $$[$0 - 4]);
           break;
         case 39:
-          this.$ = yy.Identification.NON_IDENTIFYING;
+          yy.addRelationship($$[$0 - 2], $$[$0 - 4], $$[$0]);
           break;
         case 40:
-          this.$ = yy.Identification.IDENTIFYING;
+          this.$ = yy.Relationships.CONTAINS;
+          break;
+        case 41:
+          this.$ = yy.Relationships.COPIES;
+          break;
+        case 42:
+          this.$ = yy.Relationships.DERIVES;
+          break;
+        case 43:
+          this.$ = yy.Relationships.SATISFIES;
+          break;
+        case 44:
+          this.$ = yy.Relationships.VERIFIES;
+          break;
+        case 45:
+          this.$ = yy.Relationships.REFINES;
+          break;
+        case 46:
+          this.$ = yy.Relationships.TRACES;
           break;
       }
     },
-    table: [{ 3: 1, 4: [1, 2] }, { 1: [3] }, o($V0, [2, 2], { 5: 3 }), { 6: [1, 4], 7: 5, 8: [1, 6], 9: 7, 10: [1, 8], 11: 9, 20: $V1, 22: $V2, 24: $V3, 26: $V4, 27: $V5, 28: $V6 }, o($V0, [2, 7], { 1: [2, 1] }), o($V0, [2, 3]), { 9: 16, 11: 9, 20: $V1, 22: $V2, 24: $V3, 26: $V4, 27: $V5, 28: $V6 }, o($V0, [2, 5]), o($V0, [2, 6]), o($V0, [2, 11], { 12: 17, 39: 20, 15: [1, 18], 18: [1, 19], 41: $V7, 42: $V8, 43: $V9, 44: $Va, 45: $Vb }), { 21: [1, 26] }, { 23: [1, 27] }, { 25: [1, 28] }, o($V0, [2, 18]), o($Vc, [2, 19]), o($Vc, [2, 20]), o($V0, [2, 4]), { 11: 29, 27: $V5, 28: $V6 }, { 16: 30, 17: [1, 31], 29: 32, 30: 33, 34: $Vd }, { 11: 35, 27: $V5, 28: $V6 }, { 40: 36, 46: [1, 37], 47: [1, 38] }, o($Ve, [2, 34]), o($Ve, [2, 35]), o($Ve, [2, 36]), o($Ve, [2, 37]), o($Ve, [2, 38]), o($V0, [2, 15]), o($V0, [2, 16]), o($V0, [2, 17]), { 13: [1, 39] }, { 17: [1, 40] }, o($V0, [2, 10]), { 16: 41, 17: [2, 21], 29: 32, 30: 33, 34: $Vd }, { 31: 42, 34: [1, 43] }, { 34: [2, 27] }, { 19: [1, 44] }, { 39: 45, 41: $V7, 42: $V8, 43: $V9, 44: $Va, 45: $Vb }, o($Vf, [2, 39]), o($Vf, [2, 40]), { 14: 46, 27: [1, 49], 28: [1, 48], 48: [1, 47] }, o($V0, [2, 9]), { 17: [2, 22] }, o($Vg, [2, 23], { 32: 50, 33: 51, 35: 52, 37: $Vh, 38: $Vi }), o([17, 34, 37, 38], [2, 28]), o($V0, [2, 14], { 15: [1, 55] }), o([27, 28], [2, 33]), o($V0, [2, 8]), o($V0, [2, 41]), o($V0, [2, 42]), o($V0, [2, 43]), o($Vg, [2, 24], { 33: 56, 36: [1, 57], 38: $Vi }), o($Vg, [2, 25]), o($Vj, [2, 29]), o($Vg, [2, 32]), o($Vj, [2, 31]), { 16: 58, 17: [1, 59], 29: 32, 30: 33, 34: $Vd }, o($Vg, [2, 26]), { 35: 60, 37: $Vh }, { 17: [1, 61] }, o($V0, [2, 13]), o($Vj, [2, 30]), o($V0, [2, 12])],
-    defaultActions: { 34: [2, 27], 41: [2, 22] },
+    table: [{ 3: 1, 4: 2, 6: $V0, 9: $V1, 11: $V2, 13: $V3 }, { 1: [3] }, { 3: 8, 4: 2, 5: [1, 7], 6: $V0, 9: $V1, 11: $V2, 13: $V3 }, { 5: [1, 9] }, { 10: [1, 10] }, { 12: [1, 11] }, o($V4, [2, 6]), { 3: 12, 4: 2, 6: $V0, 9: $V1, 11: $V2, 13: $V3 }, { 1: [2, 2] }, { 4: 17, 5: $V5, 7: 13, 8: $V6, 9: $V1, 11: $V2, 13: $V3, 14: 14, 15: 15, 16: 16, 17: 19, 23: 21, 31: $V7, 32: $V8, 33: $V9, 34: $Va, 35: $Vb, 36: $Vc, 44: $Vd, 62: $Ve, 63: $Vf }, o($V4, [2, 4]), o($V4, [2, 5]), { 1: [2, 1] }, { 8: [1, 30] }, { 4: 17, 5: $V5, 7: 31, 8: $V6, 9: $V1, 11: $V2, 13: $V3, 14: 14, 15: 15, 16: 16, 17: 19, 23: 21, 31: $V7, 32: $V8, 33: $V9, 34: $Va, 35: $Vb, 36: $Vc, 44: $Vd, 62: $Ve, 63: $Vf }, { 4: 17, 5: $V5, 7: 32, 8: $V6, 9: $V1, 11: $V2, 13: $V3, 14: 14, 15: 15, 16: 16, 17: 19, 23: 21, 31: $V7, 32: $V8, 33: $V9, 34: $Va, 35: $Vb, 36: $Vc, 44: $Vd, 62: $Ve, 63: $Vf }, { 4: 17, 5: $V5, 7: 33, 8: $V6, 9: $V1, 11: $V2, 13: $V3, 14: 14, 15: 15, 16: 16, 17: 19, 23: 21, 31: $V7, 32: $V8, 33: $V9, 34: $Va, 35: $Vb, 36: $Vc, 44: $Vd, 62: $Ve, 63: $Vf }, { 4: 17, 5: $V5, 7: 34, 8: $V6, 9: $V1, 11: $V2, 13: $V3, 14: 14, 15: 15, 16: 16, 17: 19, 23: 21, 31: $V7, 32: $V8, 33: $V9, 34: $Va, 35: $Vb, 36: $Vc, 44: $Vd, 62: $Ve, 63: $Vf }, { 4: 17, 5: $V5, 7: 35, 8: $V6, 9: $V1, 11: $V2, 13: $V3, 14: 14, 15: 15, 16: 16, 17: 19, 23: 21, 31: $V7, 32: $V8, 33: $V9, 34: $Va, 35: $Vb, 36: $Vc, 44: $Vd, 62: $Ve, 63: $Vf }, { 18: 36, 62: [1, 37], 63: [1, 38] }, { 45: 39, 62: [1, 40], 63: [1, 41] }, { 51: [1, 42], 53: [1, 43] }, o($Vg, [2, 20]), o($Vg, [2, 21]), o($Vg, [2, 22]), o($Vg, [2, 23]), o($Vg, [2, 24]), o($Vg, [2, 25]), o($Vh, [2, 49]), o($Vh, [2, 50]), { 1: [2, 3] }, { 8: [2, 8] }, { 8: [2, 9] }, { 8: [2, 10] }, { 8: [2, 11] }, { 8: [2, 12] }, { 19: [1, 44] }, { 19: [2, 47] }, { 19: [2, 48] }, { 19: [1, 45] }, { 19: [2, 53] }, { 19: [2, 54] }, { 52: 46, 55: $Vi, 56: $Vj, 57: $Vk, 58: $Vl, 59: $Vm, 60: $Vn, 61: $Vo }, { 52: 54, 55: $Vi, 56: $Vj, 57: $Vk, 58: $Vl, 59: $Vm, 60: $Vn, 61: $Vo }, { 5: [1, 55] }, { 5: [1, 56] }, { 53: [1, 57] }, o($Vp, [2, 40]), o($Vp, [2, 41]), o($Vp, [2, 42]), o($Vp, [2, 43]), o($Vp, [2, 44]), o($Vp, [2, 45]), o($Vp, [2, 46]), { 54: [1, 58] }, { 5: $Vq, 20: 59, 21: $Vr, 24: $Vs, 26: $Vt, 28: $Vu, 30: $Vv }, { 5: $Vw, 30: $Vx, 46: 66, 47: $Vy, 49: $Vz }, { 23: 71, 62: $Ve, 63: $Vf }, { 23: 72, 62: $Ve, 63: $Vf }, o($VA, [2, 13]), { 22: [1, 73] }, { 22: [1, 74] }, { 22: [1, 75] }, { 22: [1, 76] }, { 5: $Vq, 20: 77, 21: $Vr, 24: $Vs, 26: $Vt, 28: $Vu, 30: $Vv }, o($VA, [2, 19]), o($VA, [2, 33]), { 22: [1, 78] }, { 22: [1, 79] }, { 5: $Vw, 30: $Vx, 46: 80, 47: $Vy, 49: $Vz }, o($VA, [2, 37]), o($VA, [2, 38]), o($VA, [2, 39]), { 23: 81, 62: $Ve, 63: $Vf }, { 25: 82, 62: [1, 83], 63: [1, 84] }, { 27: 85, 37: [1, 86], 38: [1, 87], 39: [1, 88] }, { 29: 89, 40: [1, 90], 41: [1, 91], 42: [1, 92], 43: [1, 93] }, o($VA, [2, 18]), { 48: 94, 62: [1, 95], 63: [1, 96] }, { 50: 97, 62: [1, 98], 63: [1, 99] }, o($VA, [2, 36]), { 5: [1, 100] }, { 5: [1, 101] }, { 5: [2, 51] }, { 5: [2, 52] }, { 5: [1, 102] }, { 5: [2, 26] }, { 5: [2, 27] }, { 5: [2, 28] }, { 5: [1, 103] }, { 5: [2, 29] }, { 5: [2, 30] }, { 5: [2, 31] }, { 5: [2, 32] }, { 5: [1, 104] }, { 5: [2, 55] }, { 5: [2, 56] }, { 5: [1, 105] }, { 5: [2, 57] }, { 5: [2, 58] }, { 5: $Vq, 20: 106, 21: $Vr, 24: $Vs, 26: $Vt, 28: $Vu, 30: $Vv }, { 5: $Vq, 20: 107, 21: $Vr, 24: $Vs, 26: $Vt, 28: $Vu, 30: $Vv }, { 5: $Vq, 20: 108, 21: $Vr, 24: $Vs, 26: $Vt, 28: $Vu, 30: $Vv }, { 5: $Vq, 20: 109, 21: $Vr, 24: $Vs, 26: $Vt, 28: $Vu, 30: $Vv }, { 5: $Vw, 30: $Vx, 46: 110, 47: $Vy, 49: $Vz }, { 5: $Vw, 30: $Vx, 46: 111, 47: $Vy, 49: $Vz }, o($VA, [2, 14]), o($VA, [2, 15]), o($VA, [2, 16]), o($VA, [2, 17]), o($VA, [2, 34]), o($VA, [2, 35])],
+    defaultActions: { 8: [2, 2], 12: [2, 1], 30: [2, 3], 31: [2, 8], 32: [2, 9], 33: [2, 10], 34: [2, 11], 35: [2, 12], 37: [2, 47], 38: [2, 48], 40: [2, 53], 41: [2, 54], 83: [2, 51], 84: [2, 52], 86: [2, 26], 87: [2, 27], 88: [2, 28], 90: [2, 29], 91: [2, 30], 92: [2, 31], 93: [2, 32], 95: [2, 55], 96: [2, 56], 98: [2, 57], 99: [2, 58] },
     parseError: function parseError(str, hash) {
       if (hash.recoverable) {
         this.trace(str);
@@ -9714,129 +9518,120 @@ var parser = function() {
       performAction: function anonymous(yy, yy_, $avoiding_name_collisions, YY_START) {
         switch ($avoiding_name_collisions) {
           case 0:
-            this.begin("acc_title");
-            return 22;
+            return "title";
           case 1:
+            this.begin("acc_title");
+            return 9;
+          case 2:
             this.popState();
             return "acc_title_value";
-          case 2:
-            this.begin("acc_descr");
-            return 24;
           case 3:
+            this.begin("acc_descr");
+            return 11;
+          case 4:
             this.popState();
             return "acc_descr_value";
-          case 4:
+          case 5:
             this.begin("acc_descr_multiline");
             break;
-          case 5:
-            this.popState();
-            break;
           case 6:
-            return "acc_descr_multiline_value";
-          case 7:
-            return 10;
-          case 8:
-            break;
-          case 9:
-            return 8;
-          case 10:
-            return 28;
-          case 11:
-            return 48;
-          case 12:
-            return 4;
-          case 13:
-            this.begin("block");
-            return 15;
-          case 14:
-            return 36;
-          case 15:
-            break;
-          case 16:
-            return 37;
-          case 17:
-            return 34;
-          case 18:
-            return 34;
-          case 19:
-            return 38;
-          case 20:
-            break;
-          case 21:
             this.popState();
-            return 17;
-          case 22:
-            return yy_.yytext[0];
-          case 23:
-            return 18;
-          case 24:
+            break;
+          case 7:
+            return "acc_descr_multiline_value";
+          case 8:
+            return 5;
+          case 9:
+            break;
+          case 10:
+            break;
+          case 11:
+            break;
+          case 12:
+            return 8;
+          case 13:
+            return 6;
+          case 14:
             return 19;
+          case 15:
+            return 30;
+          case 16:
+            return 22;
+          case 17:
+            return 21;
+          case 18:
+            return 24;
+          case 19:
+            return 26;
+          case 20:
+            return 28;
+          case 21:
+            return 31;
+          case 22:
+            return 32;
+          case 23:
+            return 33;
+          case 24:
+            return 34;
           case 25:
-            return 41;
+            return 35;
           case 26:
-            return 43;
+            return 36;
           case 27:
-            return 43;
+            return 37;
           case 28:
-            return 43;
+            return 38;
           case 29:
-            return 41;
+            return 39;
           case 30:
-            return 41;
+            return 40;
           case 31:
-            return 42;
+            return 41;
           case 32:
             return 42;
           case 33:
-            return 42;
+            return 43;
           case 34:
-            return 42;
+            return 44;
           case 35:
-            return 42;
+            return 55;
           case 36:
-            return 43;
+            return 56;
           case 37:
-            return 42;
+            return 57;
           case 38:
-            return 43;
+            return 58;
           case 39:
-            return 44;
+            return 59;
           case 40:
-            return 44;
+            return 60;
           case 41:
-            return 44;
+            return 61;
           case 42:
-            return 44;
+            return 47;
           case 43:
-            return 41;
+            return 49;
           case 44:
-            return 42;
+            return 51;
           case 45:
-            return 43;
+            return 54;
           case 46:
-            return 45;
+            return 53;
           case 47:
-            return 46;
+            this.begin("string");
+            break;
           case 48:
-            return 47;
+            this.popState();
+            break;
           case 49:
-            return 47;
+            return "qString";
           case 50:
-            return 46;
-          case 51:
-            return 46;
-          case 52:
-            return 46;
-          case 53:
-            return 27;
-          case 54:
-            return yy_.yytext[0];
-          case 55:
-            return 6;
+            yy_.yytext = yy_.yytext.trim();
+            return 62;
         }
       },
-      rules: [/^(?:accTitle\s*:\s*)/i, /^(?:(?!\n||)*[^\n]*)/i, /^(?:accDescr\s*:\s*)/i, /^(?:(?!\n||)*[^\n]*)/i, /^(?:accDescr\s*\{\s*)/i, /^(?:[\}])/i, /^(?:[^\}]*)/i, /^(?:[\n]+)/i, /^(?:\s+)/i, /^(?:[\s]+)/i, /^(?:"[^"%\r\n\v\b\\]+")/i, /^(?:"[^"]*")/i, /^(?:erDiagram\b)/i, /^(?:\{)/i, /^(?:,)/i, /^(?:\s+)/i, /^(?:\b((?:PK)|(?:FK)|(?:UK))\b)/i, /^(?:(.*?)[~](.*?)*[~])/i, /^(?:[\*A-Za-z_][A-Za-z0-9\-_\[\]\(\)]*)/i, /^(?:"[^"]*")/i, /^(?:[\n]+)/i, /^(?:\})/i, /^(?:.)/i, /^(?:\[)/i, /^(?:\])/i, /^(?:one or zero\b)/i, /^(?:one or more\b)/i, /^(?:one or many\b)/i, /^(?:1\+)/i, /^(?:\|o\b)/i, /^(?:zero or one\b)/i, /^(?:zero or more\b)/i, /^(?:zero or many\b)/i, /^(?:0\+)/i, /^(?:\}o\b)/i, /^(?:many\(0\))/i, /^(?:many\(1\))/i, /^(?:many\b)/i, /^(?:\}\|)/i, /^(?:one\b)/i, /^(?:only one\b)/i, /^(?:1\b)/i, /^(?:\|\|)/i, /^(?:o\|)/i, /^(?:o\{)/i, /^(?:\|\{)/i, /^(?:\s*u\b)/i, /^(?:\.\.)/i, /^(?:--)/i, /^(?:to\b)/i, /^(?:optionally to\b)/i, /^(?:\.-)/i, /^(?:-\.)/i, /^(?:[A-Za-z_][A-Za-z0-9\-_]*)/i, /^(?:.)/i, /^(?:$)/i],
-      conditions: { "acc_descr_multiline": { "rules": [5, 6], "inclusive": false }, "acc_descr": { "rules": [3], "inclusive": false }, "acc_title": { "rules": [1], "inclusive": false }, "block": { "rules": [14, 15, 16, 17, 18, 19, 20, 21, 22], "inclusive": false }, "INITIAL": { "rules": [0, 2, 4, 7, 8, 9, 10, 11, 12, 13, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], "inclusive": true } }
+      rules: [/^(?:title\s[^#\n;]+)/i, /^(?:accTitle\s*:\s*)/i, /^(?:(?!\n||)*[^\n]*)/i, /^(?:accDescr\s*:\s*)/i, /^(?:(?!\n||)*[^\n]*)/i, /^(?:accDescr\s*\{\s*)/i, /^(?:[\}])/i, /^(?:[^\}]*)/i, /^(?:(\r?\n)+)/i, /^(?:\s+)/i, /^(?:#[^\n]*)/i, /^(?:%[^\n]*)/i, /^(?:$)/i, /^(?:requirementDiagram\b)/i, /^(?:\{)/i, /^(?:\})/i, /^(?::)/i, /^(?:id\b)/i, /^(?:text\b)/i, /^(?:risk\b)/i, /^(?:verifyMethod\b)/i, /^(?:requirement\b)/i, /^(?:functionalRequirement\b)/i, /^(?:interfaceRequirement\b)/i, /^(?:performanceRequirement\b)/i, /^(?:physicalRequirement\b)/i, /^(?:designConstraint\b)/i, /^(?:low\b)/i, /^(?:medium\b)/i, /^(?:high\b)/i, /^(?:analysis\b)/i, /^(?:demonstration\b)/i, /^(?:inspection\b)/i, /^(?:test\b)/i, /^(?:element\b)/i, /^(?:contains\b)/i, /^(?:copies\b)/i, /^(?:derives\b)/i, /^(?:satisfies\b)/i, /^(?:verifies\b)/i, /^(?:refines\b)/i, /^(?:traces\b)/i, /^(?:type\b)/i, /^(?:docref\b)/i, /^(?:<-)/i, /^(?:->)/i, /^(?:-)/i, /^(?:["])/i, /^(?:["])/i, /^(?:[^"]*)/i, /^(?:[\w][^\r\n\{\<\>\-\=]*)/i],
+      conditions: { "acc_descr_multiline": { "rules": [6, 7], "inclusive": false }, "acc_descr": { "rules": [4], "inclusive": false }, "acc_title": { "rules": [2], "inclusive": false }, "unqString": { "rules": [], "inclusive": false }, "token": { "rules": [], "inclusive": false }, "string": { "rules": [48, 49], "inclusive": false }, "INITIAL": { "rules": [0, 1, 3, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 50], "inclusive": true } }
     };
     return lexer2;
   }();
@@ -9849,378 +9644,381 @@ var parser = function() {
   return new Parser();
 }();
 parser.parser = parser;
-const erParser = parser;
-let entities = {};
-let relationships = [];
-const Cardinality = {
-  ZERO_OR_ONE: "ZERO_OR_ONE",
-  ZERO_OR_MORE: "ZERO_OR_MORE",
-  ONE_OR_MORE: "ONE_OR_MORE",
-  ONLY_ONE: "ONLY_ONE",
-  MD_PARENT: "MD_PARENT"
+const parser$1 = parser;
+let relations = [];
+let latestRequirement = {};
+let requirements = {};
+let latestElement = {};
+let elements = {};
+const RequirementType = {
+  REQUIREMENT: "Requirement",
+  FUNCTIONAL_REQUIREMENT: "Functional Requirement",
+  INTERFACE_REQUIREMENT: "Interface Requirement",
+  PERFORMANCE_REQUIREMENT: "Performance Requirement",
+  PHYSICAL_REQUIREMENT: "Physical Requirement",
+  DESIGN_CONSTRAINT: "Design Constraint"
 };
-const Identification = {
-  NON_IDENTIFYING: "NON_IDENTIFYING",
-  IDENTIFYING: "IDENTIFYING"
+const RiskLevel = {
+  LOW_RISK: "Low",
+  MED_RISK: "Medium",
+  HIGH_RISK: "High"
 };
-const addEntity = function(name, alias = void 0) {
-  if (entities[name] === void 0) {
-    entities[name] = { attributes: [], alias };
-    mermaid_6dc72991.l.info("Added new entity :", name);
-  } else if (entities[name] && !entities[name].alias && alias) {
-    entities[name].alias = alias;
-    mermaid_6dc72991.l.info(`Add alias '${alias}' to entity '${name}'`);
+const VerifyType = {
+  VERIFY_ANALYSIS: "Analysis",
+  VERIFY_DEMONSTRATION: "Demonstration",
+  VERIFY_INSPECTION: "Inspection",
+  VERIFY_TEST: "Test"
+};
+const Relationships = {
+  CONTAINS: "contains",
+  COPIES: "copies",
+  DERIVES: "derives",
+  SATISFIES: "satisfies",
+  VERIFIES: "verifies",
+  REFINES: "refines",
+  TRACES: "traces"
+};
+const addRequirement = (name, type) => {
+  if (requirements[name] === void 0) {
+    requirements[name] = {
+      name,
+      type,
+      id: latestRequirement.id,
+      text: latestRequirement.text,
+      risk: latestRequirement.risk,
+      verifyMethod: latestRequirement.verifyMethod
+    };
   }
-  return entities[name];
+  latestRequirement = {};
+  return requirements[name];
 };
-const getEntities = () => entities;
-const addAttributes = function(entityName, attribs) {
-  let entity = addEntity(entityName);
-  let i;
-  for (i = attribs.length - 1; i >= 0; i--) {
-    entity.attributes.push(attribs[i]);
-    mermaid_6dc72991.l.debug("Added attribute ", attribs[i].attributeName);
+const getRequirements = () => requirements;
+const setNewReqId = (id) => {
+  if (latestRequirement !== void 0) {
+    latestRequirement.id = id;
   }
 };
-const addRelationship = function(entA, rolA, entB, rSpec) {
-  let rel = {
-    entityA: entA,
-    roleA: rolA,
-    entityB: entB,
-    relSpec: rSpec
-  };
-  relationships.push(rel);
-  mermaid_6dc72991.l.debug("Added new relationship :", rel);
+const setNewReqText = (text) => {
+  if (latestRequirement !== void 0) {
+    latestRequirement.text = text;
+  }
 };
-const getRelationships = () => relationships;
-const clear = function() {
-  entities = {};
-  relationships = [];
-  (0,mermaid_6dc72991.v)();
+const setNewReqRisk = (risk) => {
+  if (latestRequirement !== void 0) {
+    latestRequirement.risk = risk;
+  }
 };
-const erDb = {
-  Cardinality,
-  Identification,
-  getConfig: () => (0,mermaid_6dc72991.c)().er,
-  addEntity,
-  addAttributes,
-  getEntities,
+const setNewReqVerifyMethod = (verifyMethod) => {
+  if (latestRequirement !== void 0) {
+    latestRequirement.verifyMethod = verifyMethod;
+  }
+};
+const addElement = (name) => {
+  if (elements[name] === void 0) {
+    elements[name] = {
+      name,
+      type: latestElement.type,
+      docRef: latestElement.docRef
+    };
+    _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.l.info("Added new requirement: ", name);
+  }
+  latestElement = {};
+  return elements[name];
+};
+const getElements = () => elements;
+const setNewElementType = (type) => {
+  if (latestElement !== void 0) {
+    latestElement.type = type;
+  }
+};
+const setNewElementDocRef = (docRef) => {
+  if (latestElement !== void 0) {
+    latestElement.docRef = docRef;
+  }
+};
+const addRelationship = (type, src, dst) => {
+  relations.push({
+    type,
+    src,
+    dst
+  });
+};
+const getRelationships = () => relations;
+const clear = () => {
+  relations = [];
+  latestRequirement = {};
+  requirements = {};
+  latestElement = {};
+  elements = {};
+  (0,_mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.v)();
+};
+const db = {
+  RequirementType,
+  RiskLevel,
+  VerifyType,
+  Relationships,
+  getConfig: () => (0,_mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.c)().req,
+  addRequirement,
+  getRequirements,
+  setNewReqId,
+  setNewReqText,
+  setNewReqRisk,
+  setNewReqVerifyMethod,
+  setAccTitle: _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.s,
+  getAccTitle: _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.g,
+  setAccDescription: _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.b,
+  getAccDescription: _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.a,
+  addElement,
+  getElements,
+  setNewElementType,
+  setNewElementDocRef,
   addRelationship,
   getRelationships,
-  clear,
-  setAccTitle: mermaid_6dc72991.s,
-  getAccTitle: mermaid_6dc72991.g,
-  setAccDescription: mermaid_6dc72991.b,
-  getAccDescription: mermaid_6dc72991.a,
-  setDiagramTitle: mermaid_6dc72991.q,
-  getDiagramTitle: mermaid_6dc72991.t
+  clear
 };
-const ERMarkers = {
-  ONLY_ONE_START: "ONLY_ONE_START",
-  ONLY_ONE_END: "ONLY_ONE_END",
-  ZERO_OR_ONE_START: "ZERO_OR_ONE_START",
-  ZERO_OR_ONE_END: "ZERO_OR_ONE_END",
-  ONE_OR_MORE_START: "ONE_OR_MORE_START",
-  ONE_OR_MORE_END: "ONE_OR_MORE_END",
-  ZERO_OR_MORE_START: "ZERO_OR_MORE_START",
-  ZERO_OR_MORE_END: "ZERO_OR_MORE_END",
-  MD_PARENT_END: "MD_PARENT_END",
-  MD_PARENT_START: "MD_PARENT_START"
+const getStyles = (options) => `
+
+  marker {
+    fill: ${options.relationColor};
+    stroke: ${options.relationColor};
+  }
+
+  marker.cross {
+    stroke: ${options.lineColor};
+  }
+
+  svg {
+    font-family: ${options.fontFamily};
+    font-size: ${options.fontSize};
+  }
+
+  .reqBox {
+    fill: ${options.requirementBackground};
+    fill-opacity: 1.0;
+    stroke: ${options.requirementBorderColor};
+    stroke-width: ${options.requirementBorderSize};
+  }
+  
+  .reqTitle, .reqLabel{
+    fill:  ${options.requirementTextColor};
+  }
+  .reqLabelBox {
+    fill: ${options.relationLabelBackground};
+    fill-opacity: 1.0;
+  }
+
+  .req-title-line {
+    stroke: ${options.requirementBorderColor};
+    stroke-width: ${options.requirementBorderSize};
+  }
+  .relationshipLine {
+    stroke: ${options.relationColor};
+    stroke-width: 1;
+  }
+  .relationshipLabel {
+    fill: ${options.relationLabelColor};
+  }
+
+`;
+const styles = getStyles;
+const ReqMarkers = {
+  CONTAINS: "contains",
+  ARROW: "arrow"
 };
-const insertMarkers = function(elem, conf2) {
-  let marker;
-  elem.append("defs").append("marker").attr("id", ERMarkers.MD_PARENT_START).attr("refX", 0).attr("refY", 7).attr("markerWidth", 190).attr("markerHeight", 240).attr("orient", "auto").append("path").attr("d", "M 18,7 L9,13 L1,7 L9,1 Z");
-  elem.append("defs").append("marker").attr("id", ERMarkers.MD_PARENT_END).attr("refX", 19).attr("refY", 7).attr("markerWidth", 20).attr("markerHeight", 28).attr("orient", "auto").append("path").attr("d", "M 18,7 L9,13 L1,7 L9,1 Z");
-  elem.append("defs").append("marker").attr("id", ERMarkers.ONLY_ONE_START).attr("refX", 0).attr("refY", 9).attr("markerWidth", 18).attr("markerHeight", 18).attr("orient", "auto").append("path").attr("stroke", conf2.stroke).attr("fill", "none").attr("d", "M9,0 L9,18 M15,0 L15,18");
-  elem.append("defs").append("marker").attr("id", ERMarkers.ONLY_ONE_END).attr("refX", 18).attr("refY", 9).attr("markerWidth", 18).attr("markerHeight", 18).attr("orient", "auto").append("path").attr("stroke", conf2.stroke).attr("fill", "none").attr("d", "M3,0 L3,18 M9,0 L9,18");
-  marker = elem.append("defs").append("marker").attr("id", ERMarkers.ZERO_OR_ONE_START).attr("refX", 0).attr("refY", 9).attr("markerWidth", 30).attr("markerHeight", 18).attr("orient", "auto");
-  marker.append("circle").attr("stroke", conf2.stroke).attr("fill", "white").attr("cx", 21).attr("cy", 9).attr("r", 6);
-  marker.append("path").attr("stroke", conf2.stroke).attr("fill", "none").attr("d", "M9,0 L9,18");
-  marker = elem.append("defs").append("marker").attr("id", ERMarkers.ZERO_OR_ONE_END).attr("refX", 30).attr("refY", 9).attr("markerWidth", 30).attr("markerHeight", 18).attr("orient", "auto");
-  marker.append("circle").attr("stroke", conf2.stroke).attr("fill", "white").attr("cx", 9).attr("cy", 9).attr("r", 6);
-  marker.append("path").attr("stroke", conf2.stroke).attr("fill", "none").attr("d", "M21,0 L21,18");
-  elem.append("defs").append("marker").attr("id", ERMarkers.ONE_OR_MORE_START).attr("refX", 18).attr("refY", 18).attr("markerWidth", 45).attr("markerHeight", 36).attr("orient", "auto").append("path").attr("stroke", conf2.stroke).attr("fill", "none").attr("d", "M0,18 Q 18,0 36,18 Q 18,36 0,18 M42,9 L42,27");
-  elem.append("defs").append("marker").attr("id", ERMarkers.ONE_OR_MORE_END).attr("refX", 27).attr("refY", 18).attr("markerWidth", 45).attr("markerHeight", 36).attr("orient", "auto").append("path").attr("stroke", conf2.stroke).attr("fill", "none").attr("d", "M3,9 L3,27 M9,18 Q27,0 45,18 Q27,36 9,18");
-  marker = elem.append("defs").append("marker").attr("id", ERMarkers.ZERO_OR_MORE_START).attr("refX", 18).attr("refY", 18).attr("markerWidth", 57).attr("markerHeight", 36).attr("orient", "auto");
-  marker.append("circle").attr("stroke", conf2.stroke).attr("fill", "white").attr("cx", 48).attr("cy", 18).attr("r", 6);
-  marker.append("path").attr("stroke", conf2.stroke).attr("fill", "none").attr("d", "M0,18 Q18,0 36,18 Q18,36 0,18");
-  marker = elem.append("defs").append("marker").attr("id", ERMarkers.ZERO_OR_MORE_END).attr("refX", 39).attr("refY", 18).attr("markerWidth", 57).attr("markerHeight", 36).attr("orient", "auto");
-  marker.append("circle").attr("stroke", conf2.stroke).attr("fill", "white").attr("cx", 9).attr("cy", 18).attr("r", 6);
-  marker.append("path").attr("stroke", conf2.stroke).attr("fill", "none").attr("d", "M21,18 Q39,0 57,18 Q39,36 21,18");
+const insertLineEndings = (parentNode, conf2) => {
+  let containsNode = parentNode.append("defs").append("marker").attr("id", ReqMarkers.CONTAINS + "_line_ending").attr("refX", 0).attr("refY", conf2.line_height / 2).attr("markerWidth", conf2.line_height).attr("markerHeight", conf2.line_height).attr("orient", "auto").append("g");
+  containsNode.append("circle").attr("cx", conf2.line_height / 2).attr("cy", conf2.line_height / 2).attr("r", conf2.line_height / 2).attr("fill", "none");
+  containsNode.append("line").attr("x1", 0).attr("x2", conf2.line_height).attr("y1", conf2.line_height / 2).attr("y2", conf2.line_height / 2).attr("stroke-width", 1);
+  containsNode.append("line").attr("y1", 0).attr("y2", conf2.line_height).attr("x1", conf2.line_height / 2).attr("x2", conf2.line_height / 2).attr("stroke-width", 1);
+  parentNode.append("defs").append("marker").attr("id", ReqMarkers.ARROW + "_line_ending").attr("refX", conf2.line_height).attr("refY", 0.5 * conf2.line_height).attr("markerWidth", conf2.line_height).attr("markerHeight", conf2.line_height).attr("orient", "auto").append("path").attr(
+    "d",
+    `M0,0
+      L${conf2.line_height},${conf2.line_height / 2}
+      M${conf2.line_height},${conf2.line_height / 2}
+      L0,${conf2.line_height}`
+  ).attr("stroke-width", 1);
+};
+const markers = {
+  ReqMarkers,
+  insertLineEndings
+};
+let conf = {};
+let relCnt = 0;
+const newRectNode = (parentNode, id) => {
+  return parentNode.insert("rect", "#" + id).attr("class", "req reqBox").attr("x", 0).attr("y", 0).attr("width", conf.rect_min_width + "px").attr("height", conf.rect_min_height + "px");
+};
+const newTitleNode = (parentNode, id, txts) => {
+  let x = conf.rect_min_width / 2;
+  let title = parentNode.append("text").attr("class", "req reqLabel reqTitle").attr("id", id).attr("x", x).attr("y", conf.rect_padding).attr("dominant-baseline", "hanging");
+  let i = 0;
+  txts.forEach((textStr) => {
+    if (i == 0) {
+      title.append("tspan").attr("text-anchor", "middle").attr("x", conf.rect_min_width / 2).attr("dy", 0).text(textStr);
+    } else {
+      title.append("tspan").attr("text-anchor", "middle").attr("x", conf.rect_min_width / 2).attr("dy", conf.line_height * 0.75).text(textStr);
+    }
+    i++;
+  });
+  let yPadding = 1.5 * conf.rect_padding;
+  let linePadding = i * conf.line_height * 0.75;
+  let totalY = yPadding + linePadding;
+  parentNode.append("line").attr("class", "req-title-line").attr("x1", "0").attr("x2", conf.rect_min_width).attr("y1", totalY).attr("y2", totalY);
+  return {
+    titleNode: title,
+    y: totalY
+  };
+};
+const newBodyNode = (parentNode, id, txts, yStart) => {
+  let body = parentNode.append("text").attr("class", "req reqLabel").attr("id", id).attr("x", conf.rect_padding).attr("y", yStart).attr("dominant-baseline", "hanging");
+  let currentRow = 0;
+  const charLimit = 30;
+  let wrappedTxts = [];
+  txts.forEach((textStr) => {
+    let currentTextLen = textStr.length;
+    while (currentTextLen > charLimit && currentRow < 3) {
+      let firstPart = textStr.substring(0, charLimit);
+      textStr = textStr.substring(charLimit, textStr.length);
+      currentTextLen = textStr.length;
+      wrappedTxts[wrappedTxts.length] = firstPart;
+      currentRow++;
+    }
+    if (currentRow == 3) {
+      let lastStr = wrappedTxts[wrappedTxts.length - 1];
+      wrappedTxts[wrappedTxts.length - 1] = lastStr.substring(0, lastStr.length - 4) + "...";
+    } else {
+      wrappedTxts[wrappedTxts.length] = textStr;
+    }
+    currentRow = 0;
+  });
+  wrappedTxts.forEach((textStr) => {
+    body.append("tspan").attr("x", conf.rect_padding).attr("dy", conf.line_height).text(textStr);
+  });
+  return body;
+};
+const addEdgeLabel = (parentNode, svgPath, conf2, txt) => {
+  const len = svgPath.node().getTotalLength();
+  const labelPoint = svgPath.node().getPointAtLength(len * 0.5);
+  const labelId = "rel" + relCnt;
+  relCnt++;
+  const labelNode = parentNode.append("text").attr("class", "req relationshipLabel").attr("id", labelId).attr("x", labelPoint.x).attr("y", labelPoint.y).attr("text-anchor", "middle").attr("dominant-baseline", "middle").text(txt);
+  const labelBBox = labelNode.node().getBBox();
+  parentNode.insert("rect", "#" + labelId).attr("class", "req reqLabelBox").attr("x", labelPoint.x - labelBBox.width / 2).attr("y", labelPoint.y - labelBBox.height / 2).attr("width", labelBBox.width).attr("height", labelBBox.height).attr("fill", "white").attr("fill-opacity", "85%");
+};
+const drawRelationshipFromLayout = function(svg, rel, g, insert, diagObj) {
+  const edge = g.edge(elementString(rel.src), elementString(rel.dst));
+  const lineFunction = (0,d3__WEBPACK_IMPORTED_MODULE_0__/* .line */ .n8j)().x(function(d) {
+    return d.x;
+  }).y(function(d) {
+    return d.y;
+  });
+  const svgPath = svg.insert("path", "#" + insert).attr("class", "er relationshipLine").attr("d", lineFunction(edge.points)).attr("fill", "none");
+  if (rel.type == diagObj.db.Relationships.CONTAINS) {
+    svgPath.attr(
+      "marker-start",
+      "url(" + _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.e.getUrl(conf.arrowMarkerAbsolute) + "#" + rel.type + "_line_ending)"
+    );
+  } else {
+    svgPath.attr("stroke-dasharray", "10,7");
+    svgPath.attr(
+      "marker-end",
+      "url(" + _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.e.getUrl(conf.arrowMarkerAbsolute) + "#" + markers.ReqMarkers.ARROW + "_line_ending)"
+    );
+  }
+  addEdgeLabel(svg, svgPath, conf, `<<${rel.type}>>`);
   return;
 };
-const erMarkers = {
-  ERMarkers,
-  insertMarkers
-};
-const BAD_ID_CHARS_REGEXP = /[^\dA-Za-z](\W)*/g;
-let conf = {};
-let entityNameIds = /* @__PURE__ */ new Map();
-const setConf = function(cnf) {
-  const keys = Object.keys(cnf);
-  for (const key of keys) {
-    conf[key] = cnf[key];
-  }
-};
-const drawAttributes = (groupNode, entityTextNode, attributes) => {
-  const heightPadding = conf.entityPadding / 3;
-  const widthPadding = conf.entityPadding / 3;
-  const attrFontSize = conf.fontSize * 0.85;
-  const labelBBox = entityTextNode.node().getBBox();
-  const attributeNodes = [];
-  let hasKeyType = false;
-  let hasComment = false;
-  let maxTypeWidth = 0;
-  let maxNameWidth = 0;
-  let maxKeyWidth = 0;
-  let maxCommentWidth = 0;
-  let cumulativeHeight = labelBBox.height + heightPadding * 2;
-  let attrNum = 1;
-  attributes.forEach((item) => {
-    if (item.attributeKeyTypeList !== void 0 && item.attributeKeyTypeList.length > 0) {
-      hasKeyType = true;
-    }
-    if (item.attributeComment !== void 0) {
-      hasComment = true;
-    }
-  });
-  attributes.forEach((item) => {
-    const attrPrefix = `${entityTextNode.node().id}-attr-${attrNum}`;
-    let nodeHeight = 0;
-    const attributeType = (0,mermaid_6dc72991.x)(item.attributeType);
-    const typeNode = groupNode.append("text").classed("er entityLabel", true).attr("id", `${attrPrefix}-type`).attr("x", 0).attr("y", 0).style("dominant-baseline", "middle").style("text-anchor", "left").style("font-family", (0,mermaid_6dc72991.c)().fontFamily).style("font-size", attrFontSize + "px").text(attributeType);
-    const nameNode = groupNode.append("text").classed("er entityLabel", true).attr("id", `${attrPrefix}-name`).attr("x", 0).attr("y", 0).style("dominant-baseline", "middle").style("text-anchor", "left").style("font-family", (0,mermaid_6dc72991.c)().fontFamily).style("font-size", attrFontSize + "px").text(item.attributeName);
-    const attributeNode = {};
-    attributeNode.tn = typeNode;
-    attributeNode.nn = nameNode;
-    const typeBBox = typeNode.node().getBBox();
-    const nameBBox = nameNode.node().getBBox();
-    maxTypeWidth = Math.max(maxTypeWidth, typeBBox.width);
-    maxNameWidth = Math.max(maxNameWidth, nameBBox.width);
-    nodeHeight = Math.max(typeBBox.height, nameBBox.height);
-    if (hasKeyType) {
-      const keyTypeNodeText = item.attributeKeyTypeList !== void 0 ? item.attributeKeyTypeList.join(",") : "";
-      const keyTypeNode = groupNode.append("text").classed("er entityLabel", true).attr("id", `${attrPrefix}-key`).attr("x", 0).attr("y", 0).style("dominant-baseline", "middle").style("text-anchor", "left").style("font-family", (0,mermaid_6dc72991.c)().fontFamily).style("font-size", attrFontSize + "px").text(keyTypeNodeText);
-      attributeNode.kn = keyTypeNode;
-      const keyTypeBBox = keyTypeNode.node().getBBox();
-      maxKeyWidth = Math.max(maxKeyWidth, keyTypeBBox.width);
-      nodeHeight = Math.max(nodeHeight, keyTypeBBox.height);
-    }
-    if (hasComment) {
-      const commentNode = groupNode.append("text").classed("er entityLabel", true).attr("id", `${attrPrefix}-comment`).attr("x", 0).attr("y", 0).style("dominant-baseline", "middle").style("text-anchor", "left").style("font-family", (0,mermaid_6dc72991.c)().fontFamily).style("font-size", attrFontSize + "px").text(item.attributeComment || "");
-      attributeNode.cn = commentNode;
-      const commentNodeBBox = commentNode.node().getBBox();
-      maxCommentWidth = Math.max(maxCommentWidth, commentNodeBBox.width);
-      nodeHeight = Math.max(nodeHeight, commentNodeBBox.height);
-    }
-    attributeNode.height = nodeHeight;
-    attributeNodes.push(attributeNode);
-    cumulativeHeight += nodeHeight + heightPadding * 2;
-    attrNum += 1;
-  });
-  let widthPaddingFactor = 4;
-  if (hasKeyType) {
-    widthPaddingFactor += 2;
-  }
-  if (hasComment) {
-    widthPaddingFactor += 2;
-  }
-  const maxWidth = maxTypeWidth + maxNameWidth + maxKeyWidth + maxCommentWidth;
-  const bBox = {
-    width: Math.max(
-      conf.minEntityWidth,
-      Math.max(
-        labelBBox.width + conf.entityPadding * 2,
-        maxWidth + widthPadding * widthPaddingFactor
-      )
-    ),
-    height: attributes.length > 0 ? cumulativeHeight : Math.max(conf.minEntityHeight, labelBBox.height + conf.entityPadding * 2)
-  };
-  if (attributes.length > 0) {
-    const spareColumnWidth = Math.max(
-      0,
-      (bBox.width - maxWidth - widthPadding * widthPaddingFactor) / (widthPaddingFactor / 2)
-    );
-    entityTextNode.attr(
-      "transform",
-      "translate(" + bBox.width / 2 + "," + (heightPadding + labelBBox.height / 2) + ")"
-    );
-    let heightOffset = labelBBox.height + heightPadding * 2;
-    let attribStyle = "attributeBoxOdd";
-    attributeNodes.forEach((attributeNode) => {
-      const alignY = heightOffset + heightPadding + attributeNode.height / 2;
-      attributeNode.tn.attr("transform", "translate(" + widthPadding + "," + alignY + ")");
-      const typeRect = groupNode.insert("rect", "#" + attributeNode.tn.node().id).classed(`er ${attribStyle}`, true).attr("x", 0).attr("y", heightOffset).attr("width", maxTypeWidth + widthPadding * 2 + spareColumnWidth).attr("height", attributeNode.height + heightPadding * 2);
-      const nameXOffset = parseFloat(typeRect.attr("x")) + parseFloat(typeRect.attr("width"));
-      attributeNode.nn.attr(
-        "transform",
-        "translate(" + (nameXOffset + widthPadding) + "," + alignY + ")"
-      );
-      const nameRect = groupNode.insert("rect", "#" + attributeNode.nn.node().id).classed(`er ${attribStyle}`, true).attr("x", nameXOffset).attr("y", heightOffset).attr("width", maxNameWidth + widthPadding * 2 + spareColumnWidth).attr("height", attributeNode.height + heightPadding * 2);
-      let keyTypeAndCommentXOffset = parseFloat(nameRect.attr("x")) + parseFloat(nameRect.attr("width"));
-      if (hasKeyType) {
-        attributeNode.kn.attr(
-          "transform",
-          "translate(" + (keyTypeAndCommentXOffset + widthPadding) + "," + alignY + ")"
-        );
-        const keyTypeRect = groupNode.insert("rect", "#" + attributeNode.kn.node().id).classed(`er ${attribStyle}`, true).attr("x", keyTypeAndCommentXOffset).attr("y", heightOffset).attr("width", maxKeyWidth + widthPadding * 2 + spareColumnWidth).attr("height", attributeNode.height + heightPadding * 2);
-        keyTypeAndCommentXOffset = parseFloat(keyTypeRect.attr("x")) + parseFloat(keyTypeRect.attr("width"));
-      }
-      if (hasComment) {
-        attributeNode.cn.attr(
-          "transform",
-          "translate(" + (keyTypeAndCommentXOffset + widthPadding) + "," + alignY + ")"
-        );
-        groupNode.insert("rect", "#" + attributeNode.cn.node().id).classed(`er ${attribStyle}`, "true").attr("x", keyTypeAndCommentXOffset).attr("y", heightOffset).attr("width", maxCommentWidth + widthPadding * 2 + spareColumnWidth).attr("height", attributeNode.height + heightPadding * 2);
-      }
-      heightOffset += attributeNode.height + heightPadding * 2;
-      attribStyle = attribStyle === "attributeBoxOdd" ? "attributeBoxEven" : "attributeBoxOdd";
-    });
-  } else {
-    bBox.height = Math.max(conf.minEntityHeight, cumulativeHeight);
-    entityTextNode.attr("transform", "translate(" + bBox.width / 2 + "," + bBox.height / 2 + ")");
-  }
-  return bBox;
-};
-const drawEntities = function(svgNode, entities2, graph) {
-  const keys = Object.keys(entities2);
-  let firstOne;
-  keys.forEach(function(entityName) {
-    const entityId = generateId(entityName, "entity");
-    entityNameIds.set(entityName, entityId);
-    const groupNode = svgNode.append("g").attr("id", entityId);
-    firstOne = firstOne === void 0 ? entityId : firstOne;
-    const textId = "text-" + entityId;
-    const textNode = groupNode.append("text").classed("er entityLabel", true).attr("id", textId).attr("x", 0).attr("y", 0).style("dominant-baseline", "middle").style("text-anchor", "middle").style("font-family", (0,mermaid_6dc72991.c)().fontFamily).style("font-size", conf.fontSize + "px").text(entities2[entityName].alias ?? entityName);
-    const { width: entityWidth, height: entityHeight } = drawAttributes(
+const drawReqs = (reqs, graph, svgNode) => {
+  Object.keys(reqs).forEach((reqName) => {
+    let req = reqs[reqName];
+    reqName = elementString(reqName);
+    _mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.l.info("Added new requirement: ", reqName);
+    const groupNode = svgNode.append("g").attr("id", reqName);
+    const textId = "req-" + reqName;
+    const rectNode = newRectNode(groupNode, textId);
+    let titleNodeInfo = newTitleNode(groupNode, reqName + "_title", [
+      `<<${req.type}>>`,
+      `${req.name}`
+    ]);
+    newBodyNode(
       groupNode,
-      textNode,
-      entities2[entityName].attributes
+      reqName + "_body",
+      [
+        `Id: ${req.id}`,
+        `Text: ${req.text}`,
+        `Risk: ${req.risk}`,
+        `Verification: ${req.verifyMethod}`
+      ],
+      titleNodeInfo.y
     );
-    const rectNode = groupNode.insert("rect", "#" + textId).classed("er entityBox", true).attr("x", 0).attr("y", 0).attr("width", entityWidth).attr("height", entityHeight);
     const rectBBox = rectNode.node().getBBox();
-    graph.setNode(entityId, {
+    graph.setNode(reqName, {
       width: rectBBox.width,
       height: rectBBox.height,
       shape: "rect",
-      id: entityId
+      id: reqName
     });
   });
-  return firstOne;
+};
+const drawElements = (els, graph, svgNode) => {
+  Object.keys(els).forEach((elName) => {
+    let el = els[elName];
+    const id = elementString(elName);
+    const groupNode = svgNode.append("g").attr("id", id);
+    const textId = "element-" + id;
+    const rectNode = newRectNode(groupNode, textId);
+    let titleNodeInfo = newTitleNode(groupNode, textId + "_title", [`<<Element>>`, `${elName}`]);
+    newBodyNode(
+      groupNode,
+      textId + "_body",
+      [`Type: ${el.type || "Not Specified"}`, `Doc Ref: ${el.docRef || "None"}`],
+      titleNodeInfo.y
+    );
+    const rectBBox = rectNode.node().getBBox();
+    graph.setNode(id, {
+      width: rectBBox.width,
+      height: rectBBox.height,
+      shape: "rect",
+      id
+    });
+  });
+};
+const addRelationships = (relationships, g) => {
+  relationships.forEach(function(r) {
+    let src = elementString(r.src);
+    let dst = elementString(r.dst);
+    g.setEdge(src, dst, { relationship: r });
+  });
+  return relationships;
 };
 const adjustEntities = function(svgNode, graph) {
   graph.nodes().forEach(function(v) {
     if (v !== void 0 && graph.node(v) !== void 0) {
+      svgNode.select("#" + v);
       svgNode.select("#" + v).attr(
         "transform",
         "translate(" + (graph.node(v).x - graph.node(v).width / 2) + "," + (graph.node(v).y - graph.node(v).height / 2) + " )"
       );
     }
   });
+  return;
 };
-const getEdgeName = function(rel) {
-  return (rel.entityA + rel.roleA + rel.entityB).replace(/\s/g, "");
+const elementString = (str) => {
+  return str.replace(/\s/g, "").replace(/\./g, "_");
 };
-const addRelationships = function(relationships2, g) {
-  relationships2.forEach(function(r) {
-    g.setEdge(
-      entityNameIds.get(r.entityA),
-      entityNameIds.get(r.entityB),
-      { relationship: r },
-      getEdgeName(r)
-    );
-  });
-  return relationships2;
-};
-let relCnt = 0;
-const drawRelationshipFromLayout = function(svg, rel, g, insert, diagObj) {
-  relCnt++;
-  const edge = g.edge(
-    entityNameIds.get(rel.entityA),
-    entityNameIds.get(rel.entityB),
-    getEdgeName(rel)
-  );
-  const lineFunction = (0,src/* line */.n8j)().x(function(d) {
-    return d.x;
-  }).y(function(d) {
-    return d.y;
-  }).curve(src/* curveBasis */.qrM);
-  const svgPath = svg.insert("path", "#" + insert).classed("er relationshipLine", true).attr("d", lineFunction(edge.points)).style("stroke", conf.stroke).style("fill", "none");
-  if (rel.relSpec.relType === diagObj.db.Identification.NON_IDENTIFYING) {
-    svgPath.attr("stroke-dasharray", "8,8");
-  }
-  let url = "";
-  if (conf.arrowMarkerAbsolute) {
-    url = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
-    url = url.replace(/\(/g, "\\(");
-    url = url.replace(/\)/g, "\\)");
-  }
-  switch (rel.relSpec.cardA) {
-    case diagObj.db.Cardinality.ZERO_OR_ONE:
-      svgPath.attr("marker-end", "url(" + url + "#" + erMarkers.ERMarkers.ZERO_OR_ONE_END + ")");
-      break;
-    case diagObj.db.Cardinality.ZERO_OR_MORE:
-      svgPath.attr("marker-end", "url(" + url + "#" + erMarkers.ERMarkers.ZERO_OR_MORE_END + ")");
-      break;
-    case diagObj.db.Cardinality.ONE_OR_MORE:
-      svgPath.attr("marker-end", "url(" + url + "#" + erMarkers.ERMarkers.ONE_OR_MORE_END + ")");
-      break;
-    case diagObj.db.Cardinality.ONLY_ONE:
-      svgPath.attr("marker-end", "url(" + url + "#" + erMarkers.ERMarkers.ONLY_ONE_END + ")");
-      break;
-    case diagObj.db.Cardinality.MD_PARENT:
-      svgPath.attr("marker-end", "url(" + url + "#" + erMarkers.ERMarkers.MD_PARENT_END + ")");
-      break;
-  }
-  switch (rel.relSpec.cardB) {
-    case diagObj.db.Cardinality.ZERO_OR_ONE:
-      svgPath.attr(
-        "marker-start",
-        "url(" + url + "#" + erMarkers.ERMarkers.ZERO_OR_ONE_START + ")"
-      );
-      break;
-    case diagObj.db.Cardinality.ZERO_OR_MORE:
-      svgPath.attr(
-        "marker-start",
-        "url(" + url + "#" + erMarkers.ERMarkers.ZERO_OR_MORE_START + ")"
-      );
-      break;
-    case diagObj.db.Cardinality.ONE_OR_MORE:
-      svgPath.attr(
-        "marker-start",
-        "url(" + url + "#" + erMarkers.ERMarkers.ONE_OR_MORE_START + ")"
-      );
-      break;
-    case diagObj.db.Cardinality.ONLY_ONE:
-      svgPath.attr("marker-start", "url(" + url + "#" + erMarkers.ERMarkers.ONLY_ONE_START + ")");
-      break;
-    case diagObj.db.Cardinality.MD_PARENT:
-      svgPath.attr("marker-start", "url(" + url + "#" + erMarkers.ERMarkers.MD_PARENT_START + ")");
-      break;
-  }
-  const len = svgPath.node().getTotalLength();
-  const labelPoint = svgPath.node().getPointAtLength(len * 0.5);
-  const labelId = "rel" + relCnt;
-  const labelNode = svg.append("text").classed("er relationshipLabel", true).attr("id", labelId).attr("x", labelPoint.x).attr("y", labelPoint.y).style("text-anchor", "middle").style("dominant-baseline", "middle").style("font-family", (0,mermaid_6dc72991.c)().fontFamily).style("font-size", conf.fontSize + "px").text(rel.roleA);
-  const labelBBox = labelNode.node().getBBox();
-  svg.insert("rect", "#" + labelId).classed("er relationshipLabelBox", true).attr("x", labelPoint.x - labelBBox.width / 2).attr("y", labelPoint.y - labelBBox.height / 2).attr("width", labelBBox.width).attr("height", labelBBox.height);
-};
-const draw = function(text, id, _version, diagObj) {
-  conf = (0,mermaid_6dc72991.c)().er;
-  mermaid_6dc72991.l.info("Drawing ER diagram");
-  const securityLevel = (0,mermaid_6dc72991.c)().securityLevel;
+const draw = (text, id, _version, diagObj) => {
+  conf = (0,_mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.c)().requirement;
+  const securityLevel = conf.securityLevel;
   let sandboxElement;
   if (securityLevel === "sandbox") {
-    sandboxElement = (0,src/* select */.Ltv)("#i" + id);
+    sandboxElement = (0,d3__WEBPACK_IMPORTED_MODULE_0__/* .select */ .Ltv)("#i" + id);
   }
-  const root = securityLevel === "sandbox" ? (0,src/* select */.Ltv)(sandboxElement.nodes()[0].contentDocument.body) : (0,src/* select */.Ltv)("body");
+  const root = securityLevel === "sandbox" ? (0,d3__WEBPACK_IMPORTED_MODULE_0__/* .select */ .Ltv)(sandboxElement.nodes()[0].contentDocument.body) : (0,d3__WEBPACK_IMPORTED_MODULE_0__/* .select */ .Ltv)("body");
   const svg = root.select(`[id='${id}']`);
-  erMarkers.insertMarkers(svg, conf);
-  let g;
-  g = new graphlib/* Graph */.T({
-    multigraph: true,
-    directed: true,
-    compound: false
+  markers.insertLineEndings(svg, conf);
+  const g = new dagre_d3_es_src_graphlib_index_js__WEBPACK_IMPORTED_MODULE_2__/* .Graph */ .T({
+    multigraph: false,
+    compound: false,
+    directed: true
   }).setGraph({
     rankdir: conf.layoutDirection,
     marginx: 20,
@@ -10231,88 +10029,32 @@ const draw = function(text, id, _version, diagObj) {
   }).setDefaultEdgeLabel(function() {
     return {};
   });
-  const firstEntity = drawEntities(svg, diagObj.db.getEntities(), g);
-  const relationships2 = addRelationships(diagObj.db.getRelationships(), g);
-  (0,dagre/* layout */.Zp)(g);
+  let requirements2 = diagObj.db.getRequirements();
+  let elements2 = diagObj.db.getElements();
+  let relationships = diagObj.db.getRelationships();
+  drawReqs(requirements2, g, svg);
+  drawElements(elements2, g, svg);
+  addRelationships(relationships, g);
+  (0,dagre_d3_es_src_dagre_index_js__WEBPACK_IMPORTED_MODULE_1__/* .layout */ .Zp)(g);
   adjustEntities(svg, g);
-  relationships2.forEach(function(rel) {
-    drawRelationshipFromLayout(svg, rel, g, firstEntity, diagObj);
+  relationships.forEach(function(rel) {
+    drawRelationshipFromLayout(svg, rel, g, id, diagObj);
   });
-  const padding = conf.diagramPadding;
-  mermaid_6dc72991.u.insertTitle(svg, "entityTitleText", conf.titleTopMargin, diagObj.db.getDiagramTitle());
+  const padding = conf.rect_padding;
   const svgBounds = svg.node().getBBox();
   const width = svgBounds.width + padding * 2;
   const height = svgBounds.height + padding * 2;
-  (0,mermaid_6dc72991.i)(svg, height, width, conf.useMaxWidth);
+  (0,_mermaid_6dc72991_js__WEBPACK_IMPORTED_MODULE_6__.i)(svg, height, width, conf.useMaxWidth);
   svg.attr("viewBox", `${svgBounds.x - padding} ${svgBounds.y - padding} ${width} ${height}`);
 };
-const MERMAID_ERDIAGRAM_UUID = "28e9f9db-3c8d-5aa5-9faf-44286ae5937c";
-function generateId(str = "", prefix = "") {
-  const simplifiedStr = str.replace(BAD_ID_CHARS_REGEXP, "");
-  return `${strWithHyphen(prefix)}${strWithHyphen(simplifiedStr)}${esm_node_v5(
-    str,
-    MERMAID_ERDIAGRAM_UUID
-  )}`;
-}
-function strWithHyphen(str = "") {
-  return str.length > 0 ? `${str}-` : "";
-}
-const erRenderer = {
-  setConf,
+const renderer = {
   draw
 };
-const getStyles = (options) => `
-  .entityBox {
-    fill: ${options.mainBkg};
-    stroke: ${options.nodeBorder};
-  }
-
-  .attributeBoxOdd {
-    fill: ${options.attributeBackgroundColorOdd};
-    stroke: ${options.nodeBorder};
-  }
-
-  .attributeBoxEven {
-    fill:  ${options.attributeBackgroundColorEven};
-    stroke: ${options.nodeBorder};
-  }
-
-  .relationshipLabelBox {
-    fill: ${options.tertiaryColor};
-    opacity: 0.7;
-    background-color: ${options.tertiaryColor};
-      rect {
-        opacity: 0.5;
-      }
-  }
-
-    .relationshipLine {
-      stroke: ${options.lineColor};
-    }
-
-  .entityTitleText {
-    text-anchor: middle;
-    font-size: 18px;
-    fill: ${options.textColor};
-  }    
-  #MD_PARENT_START {
-    fill: #f5f5f5 !important;
-    stroke: ${options.lineColor} !important;
-    stroke-width: 1;
-  }
-  #MD_PARENT_END {
-    fill: #f5f5f5 !important;
-    stroke: ${options.lineColor} !important;
-    stroke-width: 1;
-  }
-  
-`;
-const erStyles = getStyles;
 const diagram = {
-  parser: erParser,
-  db: erDb,
-  renderer: erRenderer,
-  styles: erStyles
+  parser: parser$1,
+  db,
+  renderer,
+  styles
 };
 
 

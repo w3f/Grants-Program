@@ -16,7 +16,7 @@ __webpack_require__.d(__webpack_exports__, {
 var mermaid_6dc72991 = __webpack_require__(99702);
 // EXTERNAL MODULE: ./node_modules/d3/src/index.js + 197 modules
 var src = __webpack_require__(26312);
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/node_modules/d3-array/src/min.js
+;// ./node_modules/d3-sankey/node_modules/d3-array/src/min.js
 function min(values, valueof) {
   let min;
   if (valueof === undefined) {
@@ -38,7 +38,7 @@ function min(values, valueof) {
   return min;
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/src/align.js
+;// ./node_modules/d3-sankey/src/align.js
 
 
 function targetDepth(d) {
@@ -63,7 +63,7 @@ function center(node) {
       : 0;
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/node_modules/d3-array/src/sum.js
+;// ./node_modules/d3-sankey/node_modules/d3-array/src/sum.js
 function sum(values, valueof) {
   let sum = 0;
   if (valueof === undefined) {
@@ -83,7 +83,7 @@ function sum(values, valueof) {
   return sum;
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/node_modules/d3-array/src/max.js
+;// ./node_modules/d3-sankey/node_modules/d3-array/src/max.js
 function max(values, valueof) {
   let max;
   if (valueof === undefined) {
@@ -105,14 +105,14 @@ function max(values, valueof) {
   return max;
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/src/constant.js
+;// ./node_modules/d3-sankey/src/constant.js
 function constant(x) {
   return function() {
     return x;
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/src/sankey.js
+;// ./node_modules/d3-sankey/src/sankey.js
 
 
 
@@ -483,7 +483,7 @@ function Sankey() {
   return sankey;
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/node_modules/d3-path/src/path.js
+;// ./node_modules/d3-sankey/node_modules/d3-path/src/path.js
 var pi = Math.PI,
     tau = 2 * pi,
     epsilon = 1e-6,
@@ -615,17 +615,17 @@ Path.prototype = path.prototype = {
 
 /* harmony default export */ const src_path = (path);
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/node_modules/d3-shape/src/array.js
+;// ./node_modules/d3-sankey/node_modules/d3-shape/src/array.js
 var slice = Array.prototype.slice;
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/node_modules/d3-shape/src/constant.js
+;// ./node_modules/d3-sankey/node_modules/d3-shape/src/constant.js
 /* harmony default export */ function src_constant(x) {
   return function constant() {
     return x;
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/node_modules/d3-shape/src/point.js
+;// ./node_modules/d3-sankey/node_modules/d3-shape/src/point.js
 function point_x(p) {
   return p[0];
 }
@@ -634,7 +634,7 @@ function point_y(p) {
   return p[1];
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/node_modules/d3-shape/src/link/index.js
+;// ./node_modules/d3-sankey/node_modules/d3-shape/src/link/index.js
 
 
 
@@ -720,7 +720,7 @@ function linkRadial() {
   return l;
 }
 
-;// CONCATENATED MODULE: ./node_modules/d3-sankey/src/sankeyLinkHorizontal.js
+;// ./node_modules/d3-sankey/src/sankeyLinkHorizontal.js
 
 
 function horizontalSource(d) {
@@ -743,7 +743,7 @@ var dayjs_min = __webpack_require__(74353);
 var dist = __webpack_require__(16750);
 // EXTERNAL MODULE: ./node_modules/dompurify/dist/purify.es.mjs
 var purify_es = __webpack_require__(99418);
-;// CONCATENATED MODULE: ./node_modules/mermaid/dist/sankeyDiagram-707fac0f.js
+;// ./node_modules/mermaid/dist/sankeyDiagram-707fac0f.js
 
 
 
