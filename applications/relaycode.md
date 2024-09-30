@@ -2,8 +2,8 @@
 
 - **Team Name:** Eva Interactive Co.
 - **Payment Details:** 
-  - **DOT**: [Your Polkadot address]
-  - **Payment**: [USDC/USDT Polkadot AssetHub address or Fiat payment details]
+  - **Polkadot Asset Hub**: 13rG8sHiKv3JfhFA2ijzhrZBhPw9Dd2WfqjkPbxZmvGStZHb
+  - **Payment**: USDT
 - **Level:** 2
 
 ## Project Overview :page_facing_up:
@@ -36,6 +36,11 @@ Our team is passionate about improving the developer experience in the Polkadot 
   - Blockchain Interaction: dedot
   - Wallet Integration: Polkadot.js extension/Talisman
 
+We chose [dedot](https://github.com/dedotdev/dedot) over [polkadot-api/papi](https://github.com/polkadot-api/polkadot-api) for several reasons:
+1. First-class inbuilt support for SCALE codecs in TypeScript, which is crucial for our project's performance in handling real-time changes.
+2. Automatic fetching of metadata for any chain, simplifying our development process.
+3. Better performance for type handling, which is essential for the real-time encoding and decoding features of Relaycode.
+
 - Core Functionality:
   1. Dynamic loading of all available pallets and their respective functions
   2. Real-time encoding and decoding of extrinsic data
@@ -50,12 +55,12 @@ Our team is passionate about improving the developer experience in the Polkadot 
 
 ### Ecosystem Fit
 
-Relaycode fills a crucial gap in the Polkadot/Kusama ecosystem by providing a more intuitive and user-friendly interface for building and analyzing extrinsics. While tools like Polkadot.js Apps offer similar functionality, Relaycode focuses on improving the user experience and lowering the barrier to entry for new developers.
+Relaycode fills a crucial gap in the Polkadot ecosystem by providing a more intuitive and user-friendly interface for building and analyzing extrinsics. While tools like Polkadot.js Apps offer similar functionality, Relaycode focuses on improving the user experience and lowering the barrier to entry for new developers.
 
 Target Audience:
 - Developers building on Substrate-based chains
 - Parachain teams needing to test and debug extrinsics
-- dApp developers integrating with Polkadot/Kusama
+- dApp developers integrating with Polkadot
 - Blockchain researchers and auditors
 
 Relaycode addresses the need for a more accessible and efficient extrinsics builder, as identified through:
@@ -63,17 +68,12 @@ Relaycode addresses the need for a more accessible and efficient extrinsics buil
 - Discussions in Polkadot forums and social channels
 - Personal experience with existing tools
 
-Similar Projects:
-- Polkadot.js Apps: While it offers an extrinsics submitter, it lacks the user-friendly interface and real-time encoding/decoding features of Relaycode.
-- Substrate Front-End Template: Provides basic extrinsics functionality but is not as comprehensive or user-friendly as Relaycode.
-
-Relaycode distinguishes itself through its focus on user experience, real-time data presentation, and comprehensive support for all pallet functions and input types.
-
 ## Team :busts_in_silhouette:
 
 ### Team members
 
 - Yogesh Kumar
+- 1 FTE (To be decided)
 
 ### Contact
 
@@ -83,7 +83,7 @@ Relaycode distinguishes itself through its focus on user experience, real-time d
 
 ### Legal Structure
 
-- **Registered Address:** 190, Baba Farid Puri, New Delhi, India
+- **Registered Address:** 5/12, West Patel Nagar, New Delhi, India
 - **Registered Legal Entity:** Eva Interactive Co.
 
 ### Team's experience
@@ -95,8 +95,8 @@ Our team has not previously applied for a Web3 Foundation grant.
 
 ### Team Code Repos
 
-- https://github.com/[your_organisation]/relaycode
-- https://github.com/[your_organisation]/[other_relevant_project]
+- https://github.com/itsyogesh
+- https://github.com/itsyogesh/polkadot-hackathon-2024/blob/main/singapore/27-Relaycode/
 
 ### Team LinkedIn Profiles
 
@@ -121,28 +121,44 @@ We have received positive feedback from the hackathon judges and participants, e
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 2
 - **Total Costs:** 26,000 USD
-- **DOT %:** 50%
 
-### Milestone 1 — Enhanced Functionality and Production Readiness
+### Milestone 1 — MVP Development and Basic Deployment
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 1 month
 - **FTE:** 2
-- **Costs:** 26,000 USD
+- **Costs:** 13,000 USD
 
-|  Number | Deliverable                   | Specification                                                                                                                                                                                            |
-| ------: | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                       | Apache 2.0                                                                                                                                                                                               |
-| **0b.** | Documentation                 | We will provide comprehensive documentation including: <br>- Inline code documentation<br>- A tutorial explaining how to use Relaycode<br>- API specifications for core functionality                    |
-| **0c.** | Testing and Testing Guide     | We will develop unit tests covering all core functions. Integration tests will be implemented to ensure proper interaction with the Polkadot.js API. A testing guide will be provided in the repository. |
-| **0d.** | Docker                        | We will provide a Dockerfile to easily run a demo version of Relaycode.                                                                                                                                  |
-|     0e. | Article                       | We will publish an article on Medium explaining the features and benefits of Relaycode for the Polkadot/Kusama ecosystem.                                                                                |
-|      1. | UI Enhancement                | We will refine the user interface using shadcn/ui components, implementing a responsive design for various screen sizes.                                                                                 |
-|      2. | Comprehensive Pallet Support  | We will ensure that Relaycode supports all input types across all pallets, with proper encoding and decoding.                                                                                            |
-|      3. | Real-time Data Updates        | Implement real-time updates of encoded call data and call hash as users input parameters.                                                                                                                |
-|      4. | Wallet Integration            | Integrate with the Polkadot.js extension for signing and submitting extrinsics.                                                                                                                          |
-|      5. | Error Handling and Validation | Implement robust error handling and input validation to provide clear feedback to users.                                                                                                                 |
-|      6. | Performance Optimization      | Optimize the application for fast loading and responsive interaction, even when dealing with complex extrinsics.                                                                                         |
-|      7. | Deployment                    | Deploy Relaycode to a cloud platform for public access, with proper security measures in place.                                                                                                          |
+|  Number | Deliverable                   | Specification                                                                                                                                            |
+| ------: | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                       | Apache 2.0                                                                                                                                               |
+| **0b.** | Documentation                 | We will provide basic documentation including: <br>- Inline code documentation<br>- A simple tutorial explaining how to use the MVP version of Relaycode |
+| **0c.** | Testing and Testing Guide     | We will develop unit tests covering the core encoding and decoding functions. A basic testing guide will be provided in the repository.                  |
+| **0d.** | Docker                        | We will provide a Dockerfile to easily run the MVP version of Relaycode.                                                                                 |
+|      1. | Basic UI Implementation       | Implement the basic split-view interface using React, Tailwind CSS, and shadcn/ui components.                                                            |
+|      2. | Pallet and Function Selection | Implement dropdown menus for selecting pallets and their respective functions.                                                                           |
+|      3. | Parameter Input Fields        | Create dynamic input fields for extrinsic parameters based on the selected function.                                                                     |
+|      4. | Encoding and Decoding         | Implement real-time encoding and decoding of extrinsic data using dedot.                                                                                 |
+|      5. | Information Pane              | Display encoded call data and call hash in the information pane.                                                                                         |
+|      6. | Demo Deployment               | Deploy the MVP version of Relaycode to a cloud platform for demonstration purposes.                                                                      |
+
+### Milestone 2 — Enhanced Functionality and Production Deployment
+
+- **Estimated Duration:** 1 month
+- **FTE:** 2
+- **Costs:** 13,000 USD
+
+|  Number | Deliverable                   | Specification                                                                                                                                                                                                 |
+| ------: | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                       | Apache 2.0                                                                                                                                                                                                    |
+| **0b.** | Documentation                 | We will provide comprehensive documentation including: <br>- Detailed inline code documentation<br>- An in-depth tutorial explaining all features of Relaycode<br>- API specifications for core functionality |
+| **0c.** | Testing and Testing Guide     | We will expand our test suite to include integration tests and edge cases. A comprehensive testing guide will be provided.                                                                                    |
+| **0d.** | Docker                        | We will update the Dockerfile for the production version of Relaycode.                                                                                                                                        |
+|     0e. | Article                       | We will publish an article on Medium explaining the features and benefits of Relaycode for the Polkadot ecosystem.                                                                                     |
+|      1. | UI Refinement                 | Enhance the user interface with responsive design and improved user experience based on feedback from Milestone                                                                                       |
+|      2. | Wallet Integration            | Integrate with the Polkadot.js extension/Talisman for signing and submitting extrinsics.                                                                                                                               |
+|      3. | Error Handling and Validation | Implement robust error handling and input validation to provide clear feedback to users.                                                                                                                      |
+|      4. | Performance Optimization      | Optimize the application for fast loading and responsive interaction, even when dealing with complex extrinsics.                                                                                              |
+|      5. | Production Deployment         | Deploy the full version of Relaycode to a production environment with proper security measures.                                                                                                               |
 
 ## Future Plans
 
@@ -151,7 +167,7 @@ Short-term plans:
 - Create video tutorials and host webinars to promote Relaycode and educate the community
 
 Long-term vision:
-- Expand Relaycode to support other Substrate-based chains beyond Polkadot and Kusama
+- Expand Relaycode to support other Substrate-based chains beyond Polkadot
 - Develop additional features such as extrinsic templates and a visual extrinsic builder
 - Explore possibilities for integration with other tools in the Polkadot ecosystem
 
@@ -159,6 +175,11 @@ To ensure long-term maintenance and development:
 - We plan to seek additional funding through ecosystem grants and potentially through a decentralized autonomous organization (DAO) specifically created for Relaycode
 - We will build a community around Relaycode, encouraging open-source contributions
 - We will explore partnership opportunities with parachain teams and other projects in the ecosystem
+
+## Referral Program :moneybag: 
+
+- **Referrer:** AwesomeDOT(Fardeen Haque)
+- **Payment Address:** 12uoF3PZxDBURLVqj5DAJiyUADiqdCYwhq27wAmr2ML1L7fG (Polkadot Asset Hub)
 
 ## Additional Information :heavy_plus_sign:
 
