@@ -140,7 +140,7 @@ The W3F Grants Program offers different grant levels to help you best, depending
 
 ## :pencil: Process
 
-> **:loudspeaker:** At least 50% (as defined in your grant agreement) of each milestone payment is made in DOT (linearly vesting over 2 years). The remainder is paid in_either_ USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) _or_ fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** At least 50% (as defined in your grant agreement) of each milestone payment is made in DOT (linearly vesting over 2 years). The remainder is paid in USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -215,7 +215,7 @@ Please note that:
 
 We give away 500 USD to each referral of a successful grant application by _anyone having previously worked on a Web3 Foundation grant_ or _a [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors)_. Web3 Foundation and Parity employees do not qualify for the program, even if they previously worked on a grant.
 
-In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in USDT/USDC on Polkadot AssetHub after delivery and approval of the first milestone.
+In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in USDC on Polkadot AssetHub after delivery and approval of the first milestone.
 
 ## :bulb: Help
 
