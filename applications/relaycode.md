@@ -2,7 +2,7 @@
 
 - **Team Name:** Eva Interactive Co.
 - **Payment Details:** 
-  - **Polkadot Asset Hub**: 13rG8sHiKv3JfhFA2ijzhrZBhPw9Dd2WfqjkPbxZmvGStZHb
+  - **DOT Address**: 13rG8sHiKv3JfhFA2ijzhrZBhPw9Dd2WfqjkPbxZmvGStZHb
   - **Payment**: USDT
 - **Level:** 2
 
@@ -120,13 +120,15 @@ We have received positive feedback from the hackathon judges and participants, e
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** 26,000 USD
+- **Total Costs:** 30,000 USD
+- **DOT %:** 50%
 
 ### Milestone 1 — MVP Development and Basic Deployment
 
 - **Estimated Duration:** 1 month
 - **FTE:** 2
-- **Costs:** 13,000 USD
+- **Costs:** 15,000 USD
+- **DOT %:** 50%
 
 |  Number | Deliverable                   | Specification                                                                                                                                            |
 | ------: | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -145,7 +147,8 @@ We have received positive feedback from the hackathon judges and participants, e
 
 - **Estimated Duration:** 1 month
 - **FTE:** 2
-- **Costs:** 13,000 USD
+- **Costs:** 15,000 USD
+- **DOT %:** 50%
 
 |  Number | Deliverable                   | Specification                                                                                                                                                                                                 |
 | ------: | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -175,11 +178,6 @@ To ensure long-term maintenance and development:
 - We plan to seek additional funding through ecosystem grants and potentially through a decentralized autonomous organization (DAO) specifically created for Relaycode
 - We will build a community around Relaycode, encouraging open-source contributions
 - We will explore partnership opportunities with parachain teams and other projects in the ecosystem
-
-## Referral Program :moneybag: 
-
-- **Referrer:** AwesomeDOT(Fardeen Haque)
-- **Payment Address:** 12uoF3PZxDBURLVqj5DAJiyUADiqdCYwhq27wAmr2ML1L7fG (Polkadot Asset Hub)
 
 ## Additional Information :heavy_plus_sign:
 
