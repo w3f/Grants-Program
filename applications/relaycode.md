@@ -24,7 +24,7 @@ Our team is passionate about improving the developer experience in the Polkadot 
 
 ### Project Details
 
-<img src="https://raw.githubusercontent.com/itsyogesh/polkadot-hackathon-2024/refs/heads/main/singapore/27-Relaycode/docs/demo.gif" alt="Relaycode Demo" width="500">
+![Relaycode Demo](https://raw.githubusercontent.com/itsyogesh/polkadot-hackathon-2024/refs/heads/main/singapore/27-Relaycode/docs/demo.gif)
 
 - UI Components: We will provide a split-view interface with an extrinsic builder on the left and an information pane on the right. The builder will include dropdown menus for selecting pallets and functions, and input fields for parameters. The information pane will display encoded call data, call hash, and other relevant information.
 
@@ -90,7 +90,6 @@ Relaycode addresses the need for a more accessible and efficient extrinsics buil
 
 Yogesh Kumar has 10+ years of experience in fullstack development, with a focus on Blockchain development for the past 5 years. He has contributed to various projects and built products on Bitcoin, Ethereum and Polkadot ecosystem.
 
-
 Our team has not previously applied for a Web3 Foundation grant.
 
 ### Team Code Repos
@@ -133,7 +132,7 @@ We have received positive feedback from the hackathon judges and participants, e
 |  Number | Deliverable                   | Specification                                                                                                                                            |
 | ------: | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **0a.** | License                       | Apache 2.0                                                                                                                                               |
-| **0b.** | Documentation                 | We will provide basic documentation including: <br>- Inline code documentation<br>- A simple tutorial explaining how to use the MVP version of Relaycode |
+| **0b.** | Documentation                 | We will provide basic documentation including: **Inline code documentation** and a **simple tutorial** explaining how to use the MVP version of Relaycode |
 | **0c.** | Testing and Testing Guide     | We will develop unit tests covering the core encoding and decoding functions. A basic testing guide will be provided in the repository.                  |
 | **0d.** | Docker                        | We will provide a Dockerfile to easily run the MVP version of Relaycode.                                                                                 |
 |      1. | Basic UI Implementation       | Implement the basic split-view interface using React, Tailwind CSS, and shadcn/ui components.                                                            |
@@ -153,11 +152,11 @@ We have received positive feedback from the hackathon judges and participants, e
 |  Number | Deliverable                   | Specification                                                                                                                                                                                                 |
 | ------: | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **0a.** | License                       | Apache 2.0                                                                                                                                                                                                    |
-| **0b.** | Documentation                 | We will provide comprehensive documentation including: <br>- Detailed inline code documentation<br>- An in-depth tutorial explaining all features of Relaycode<br>- API specifications for core functionality |
+| **0b.** | Documentation                 | We will provide comprehensive documentation including: **Detailed inline code documentation**, and an **in-depth tutorial** explaining all features of Relaycode API specifications for core functionality |
 | **0c.** | Testing and Testing Guide     | We will expand our test suite to include integration tests and edge cases. A comprehensive testing guide will be provided.                                                                                    |
 | **0d.** | Docker                        | We will update the Dockerfile for the production version of Relaycode.                                                                                                                                        |
 |     0e. | Article                       | We will publish an article on Medium explaining the features and benefits of Relaycode for the Polkadot ecosystem.                                                                                     |
-|      1. | UI Refinement                 | Enhance the user interface with responsive design and improved user experience based on feedback from Milestone                                                                                       |
+|      1. | UI Refinement                 | Enhance the user interface with responsive design and improved user experience based on feedback from Milestone 1.                                                                                       |
 |      2. | Wallet Integration            | Integrate with the Polkadot.js extension/Talisman for signing and submitting extrinsics.                                                                                                                               |
 |      3. | Error Handling and Validation | Implement robust error handling and input validation to provide clear feedback to users.                                                                                                                      |
 |      4. | Performance Optimization      | Optimize the application for fast loading and responsive interaction, even when dealing with complex extrinsics.                                                                                              |
