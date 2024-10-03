@@ -3,7 +3,7 @@
 - **Team Name:** Eva Interactive Co.
 - **Payment Details:** 
   - **DOT Address**: 13rG8sHiKv3JfhFA2ijzhrZBhPw9Dd2WfqjkPbxZmvGStZHb
-  - **Payment**: USDT
+  - **Payment**: USDC
 - **Level:** 2
 
 ## Project Overview :page_facing_up:
