@@ -26,7 +26,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 | RFP | Last Updated |
 | :-- | :----------: |
-| [action_research_opengov.md](RFPs/action_research_opengov.md) | 31.05.2024 |
 | [anti-collusion_infrastructure.md](RFPs/anti-collusion_infrastructure.md) | 21.09.2023 |
 | [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 12.10.2023 |
 | [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |  
@@ -66,6 +65,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 | RFP | Last Updated |
 | :-- | :----------: |
+| [action_research_opengov.md](RFPs/action_research_opengov.md) | 31.05.2024 |
 | [a-and-v-topology.md](RFPs/a-and-v-topology.md) | 04.09.2023 |
 | [alternative-polkadot-js-api-console.md](RFPs/alternative-polkadot-js-api-console.md) | 19.05.2023 |
 | [appi.md](RFPs/appi.md) | 20.07.2021 |
