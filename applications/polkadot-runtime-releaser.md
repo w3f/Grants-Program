@@ -26,7 +26,7 @@ Especially to the new teams, they might not have enough experience to handle it.
 - When to notify the community to upgrade the node?
   - Collator/Validator nodes should be upgraded first.
   - RPC suppliers should be upgraded later.
-    - I saw some EVM RPCs require the runtime version equals to the node version.
+    - I saw some EVM RPCs require the runtime version to be equal to the node version.
 - How to host a wasm-override repository for the community?
   - Debug log WASM.
     - We always use `sp-api/disable-logging` in the release build, so no more detail logs in the general runtime.
