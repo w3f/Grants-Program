@@ -128,7 +128,7 @@ If they contain no activity, references to projects hosted elsewhere or live are
 |     1. | Try-runtime CI                | Comment on a release PR and see the try-runtime result.                                                               |
 |     2. | Release CI                    | Build and release the deterministic runtimes and the node files.                                                      |
 |     3. | WASM override tool            | It can build the specify feature WASM in one step and manage them well in the corresponding folder.                   |
-|     4. | WASM override CI              | Listen the build request from release CI.                                                                             |
+|     4. | WASM override CI              |  Listen for build requests from the release CI.                                                                             |
 |     5. | Version compare tool          | It can retrieve the on-chain runtime version and compare it with the latest GitHub tag.                               |
 |     6. | Release repository release CI | Based on the version comparison tool result, proceed to release the new version in this repository.                   |
 |     7. | Releases                      | GitHub release.                                                                                                       |
