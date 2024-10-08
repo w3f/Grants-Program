@@ -13,7 +13,7 @@
 Polkadot Runtime Releaser aka PRR.
 
 Since last year, my work is mainly focused on the chain/node maintenance.
-Runtime upgrade is grate feature fo Polkadot-SDK.
+Runtime upgrade is a great feature for the Polkadot-SDK.
 But there are lots of potential issues that could happen during the runtime upgrade.
 Especially to the new teams, they might not have enough experience to handle it.
 
