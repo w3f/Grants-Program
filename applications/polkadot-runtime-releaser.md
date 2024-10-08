@@ -63,6 +63,13 @@ PRR will supply these components, which will all be hosted in one repository.
 - A GitHub Action and a tool to monitor the on-chain runtime version and compare it with the release runtime version to trigger the release on the release repository.
 - A tool to build and manage the override WASMs.
 
+|   GitHub Action | Trigger                                                  | Output                                                                                                                  |
+| --------------: | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+|     try-runtime | Comment `/bot try-runtime <network>` under the PR.       | Bot will comment the try-runtime result under the PR.                                                                   |
+| Runtime release | Usually by tag, this can be configured by users.         | Build and release the runtime files.                                                                                    |
+|   WASM override | Runtime release action will notify this action.          | Build and push the runtime files to the repository.                                                                     |
+|    Node release | It's a scheduled action that runs every hour by default. | Retrieve the on-chain runtime version and compare it with the latest GitHub tag to determine if a release is necessary. |
+
 Each component will have a very detailed guide to help the chain team to set up.
 
 ## Team :busts_in_silhouette:
@@ -126,9 +133,9 @@ If they contain no activity, references to projects hosted elsewhere or live are
 |    0b. | Documentation                 | There will be a guide to tell people how to use this.                                                                 |
 |    0c. | Testing guide                 | There will be a guide and a demo repository to tell the auditor how to run the tests. All components will be covered. |
 |     1. | Try-runtime CI                | Comment on a release PR and see the try-runtime result.                                                               |
-|     2. | Release CI                    | Build and release the deterministic runtimes and the node files.                                                      |
+|     2. | Release CI                    | Build and release the deterministic runtime and the node files.                                                       |
 |     3. | WASM override tool            | It can build the specify feature WASM in one step and manage them well in the corresponding folder.                   |
-|     4. | WASM override CI              |  Listen for build requests from the release CI.                                                                             |
+|     4. | WASM override CI              | Listen for build requests from the release CI.                                                                        |
 |     5. | Version compare tool          | It can retrieve the on-chain runtime version and compare it with the latest GitHub tag.                               |
 |     6. | Release repository release CI | Based on the version comparison tool result, proceed to release the new version in this repository.                   |
 |     7. | Releases                      | GitHub release.                                                                                                       |
