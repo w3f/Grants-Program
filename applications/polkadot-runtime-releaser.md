@@ -27,7 +27,7 @@ Especially to the new teams, they might not have enough experience to handle it.
   - Collator/Validator nodes should be upgraded first.
   - RPC suppliers should be upgraded later.
     - I saw some EVM RPCs require the runtime version equals to the node version.
-- How to host a wasm-override repository for community?
+- How to host a wasm-override repository for the community?
   - Debug log WASM.
     - We always use `sp-api/disable-logging` in the release build, so no more detail logs in the general runtime.
     - We can enable the `sp-debug-derive/force-debug` in the debug build, so we can get more logs instead of `WASM stripped` (I think people often see this a lot while they are trying to get some debug log).
