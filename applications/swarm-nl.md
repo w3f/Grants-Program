@@ -118,7 +118,7 @@ We have built a PoC for SamaritanDB (see [the Github repo here](https://github.c
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 1
-- **Total Costs:** $24,000
+- **Total Costs:** $48,000
 
 ### Milestone 1
 
