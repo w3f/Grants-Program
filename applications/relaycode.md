@@ -1,6 +1,6 @@
 # Relaycode: An Improved Extrinsics Builder for Polkadot
 
-- **Team Name:** Eva Interactive Co.
+- **Team Name:** Yogesh Kumar
 - **Payment Details:** 
   - **DOT Address**: 13rG8sHiKv3JfhFA2ijzhrZBhPw9Dd2WfqjkPbxZmvGStZHb
   - **Payment**: USDC
@@ -83,8 +83,8 @@ Relaycode addresses the need for a more accessible and efficient extrinsics buil
 
 ### Legal Structure
 
-- **Registered Address:** 5/12, West Patel Nagar, New Delhi, India
-- **Registered Legal Entity:** Eva Interactive Co.
+- **Registered Address:** 5/12, West Patel Nagar, New Delhi, India - 110008
+- **Registered Legal Entity:** Yogesh Kumar
 
 ### Team's experience
 
