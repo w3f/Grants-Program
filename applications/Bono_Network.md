@@ -9,8 +9,8 @@ Bono Foundation
 ---
 
 **Payment Details**  
-- **BTC Address**:
-- **DOT Address**: 
+- **BTC Address**:3CLdWCgWH2jjQicozsTxarsTL7rgdo9hjr
+- **DOT Address**: 15zbAsy3MDCMd16zdzxpVzTCvqR5AWBiBMKGuejEd1J93YYo
 - **Level**: 3
 
 ---
