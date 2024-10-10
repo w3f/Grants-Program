@@ -22,13 +22,13 @@ Bono Foundation
 **Tagline**: Bono Network - Decentralizing Justice through Blockchain and AI
 
 **Brief Description**:  
-Bono is a decentralized legal infrastructure platform aiming to democratize access to justice globally. By integrating blockchain technology, AI (Codename Arbiter), and a global network of vetted law firms (the High Table), Bono provides affordable and accessible legal services across jurisdictions. Our mission is to modernize the legal industry by reducing costs, increasing transparency, and protecting vulnerable individuals through innovative technology solutions like zero-knowledge proofs and immutable legal records.
+Bono is a decentralized legal infrastructure platform aiming to democratize access to justice globally. By integrating blockchain technology, AI (Codename Arbiter), and a global network of vetted law firms (the High Table), Bono provides affordable and accessible legal services across jurisdictions. Our mission is to modernize the legal industry by reducing costs, increasing transparency, and protecting vulnerable individuals through innovative technology solutions like zero-knowledge proofs and immutable legal records, Worldwide.
 
 **Relation to Substrate/Polkadot/Kusama**:  
 Bono intends to leverage Substrate to build a blockchain-based legal infrastructure that is interoperable, secure, and scalable. By integrating with Polkadot, Bono can ensure cross-chain compatibility and high levels of security for legal document verification, tokenization of litigation, and decentralized governance mechanisms.
 
 **Why We Are Building Bono**:  
-Access to justice is a fundamental right, yet the current legal system is often inaccessible due to high costs, inefficiencies, and jurisdictional barriers. Bono seeks to bridge this gap by utilizing blockchain and AI technologies to create a transparent, efficient, and global legal platform.
+Access to justice is a fundamental right, yet the current legal system is often inaccessible due to high costs, inefficiencies, and jurisdictional barriers. Bono seeks to bridge this gap by utilizing blockchain and AI technologies to create a transparent, efficient, and global legal platform. Read our [Whitepaper](https://bit.ly/bono-whitepaper) for more information on how we plan to achieve this.
 
 ---
 
@@ -38,30 +38,29 @@ Access to justice is a fundamental right, yet the current legal system is often 
 
 1. **Bono Core**  
    - **Description**: Development of smart contracts for legal document approvals, integration with the High Table network, and verification of documents.
-   - **Technology Stack**: Substrate-based smart contracts, Polkadot integration, IPFS for document storage.
+   - **Technology Stack**: Substrate-based smart contracts, Polkadot integration, IPFS for document storage, KYC layer (currently Concordium) for member verification.
 
 2. **Zero-Knowledge (ZK) Module**  
    - **Description**: Implementation of zero-knowledge proofs for verifying legal documents without revealing sensitive information. This module also aims to protect political dissidents by preventing false targeting through international organizations like Interpol.
    - **Technology Stack**: ZK-SNARKs/ZK-STARKs integrated with Substrate, utilizing Rust for development.
 
 3. **GitLaw**  
-   - **Description**: An open-source, version-controlled repository of laws and regulations that integrates into Substrate to create an immutable record. This ensures that Codename Arbiter has access to up-to-date legal information across different jurisdictions.
+   - **Description**: An open-source, version-controlled repository of laws and regulations that integrates into Substrate to create an immutable record. This ensures that Codename Arbiter has access to up-to-date legal information across different jurisdictions. The immutable record will be in Sync with a DB on Github + Gitlab
    - **GitHub Repository**: [GitLaw Repository](https://github.com/BonoNetwork/Gitlaw)
-   - **Technology Stack**: Integration with Substrate, use of IPFS for decentralized storage.
+   - **Technology Stack**: Integration with Substrate, use of IPFS or other technologies for decentralized storage.
 
 4. **Decentralized Treasury System**  
-   - **Description**: A treasury system that supports the High Table token mechanism, where staked tokens represent a seigniorage of assets like BTC, DOT, ETH, etc. Their value grows based on a delta-neutral strategy, which involves holding the staking token and shorting it on a decentralized exchange (DEX), along with the protocol gains from Bono.
-   - **Technology Stack**: Smart contracts on Substrate, integration with DeFi protocols.
+   - **Description**: A treasury system that supports the High Table token mechanism, where staked tokens represent a seigniorage of assets like BTC, DOT, ETH, etc. Their value grows based on a variety of strategies, along with the protocol gains from Bono.
+   - **Technology Stack**: Smart contracts (EVM/Solidity Mostly), integration with DeFi protocols (Pendle locks,yield markets etc).
 
 5. **Blockchain of Law**  
    - **Description**: A collaborative effort between Bono and the Web3 Foundation to create a dedicated blockchain for legal processes. Initially, Bono will launch as a protocol and remain blockchain-agnostic at the core level, ensuring interoperability and broad adoption.
-   - **Technology Stack**: Custom Substrate-based blockchain, interoperability with Polkadot ecosystem. We may also use Aleph Zero initially for its privacy and scalability features.
-   - **RWA Tokenization**: Making Litigation Bonds More Accessible, especially in less developed regions.
+   - **Technology Stack**: Custom Substrate-based blockchain, interoperability with Polkadot ecosystem. 
+   - **RWA & Case Tokenization**: Making Litigation Bonds More Accessible, especially in less developed regions. This can solve some economics of litigation.
 ### Documentation
 
 - **UI Mockups and Designs**: Available upon request and included in the project documentation.
   ![bono](https://github.com/user-attachments/assets/bed1a49d-056e-4e80-9af0-130527efbf94)
-
 - **API Specifications**: Detailed API documentation for Bono Core, ZK Module, and GitLaw is provided in our technical documents.
 - **Architecture Diagrams**: Detailed diagrams illustrating the interaction between different modules, smart contracts, and external systems are included in our [documentation](https://miro.com/app/board/uXjVKkLBlTE=/).
 
@@ -75,10 +74,10 @@ Access to justice is a fundamental right, yet the current legal system is often 
 
 ## Ecosystem Fit
 
-- **Where and How It Fits**: Bono fills a crucial gap in the Polkadot ecosystem by providing a legal infrastructure layer that enables secure, cross-chain legal processes. It enhances the utility of the Polkadot network by introducing legal document verification, decentralized governance, and AI integration.
+- **Where and How It Fits**: Bono fills a crucial gap by providing a legal infrastructure layer that enables secure, cross-chain legal processes. It enhances the utility of the Polkadot network by introducing legal document verification, decentralized governance, and indirect AI integration.
 - **Target Audience**: Individuals seeking affordable legal services, law firms wanting to expand their reach, political dissidents requiring protection, and developers interested in building legal tech solutions.
 - **Needs Addressed**:
-  - **Access to Justice**: Making legal services affordable and accessible.
+  - **Access to Justice**: Making legal services affordable and accessible, especially in cross jurisdiction cases.
   - **Document Verification**: Secure and immutable verification of legal documents.
   - **Protection of Vulnerable Individuals**: Using ZK proofs to protect sensitive information.
 - **Identification of Needs**: Through extensive research, including studies on global access to justice, interviews with legal professionals, and analysis of cross-border legal challenges.
@@ -93,7 +92,7 @@ Access to justice is a fundamental right, yet the current legal system is often 
 - **Team Leader**: Ilya Arbabi
 - **Advisor**: Mikael Breinholst
 - **Engineers**: A team of employed engineers specializing in blockchain development, smart contracts, and AI integration.
-- **Partnered Law Firms**: Various law firms that are part of the High Table network.
+- **Partnered Law Firms**: Various law firms that are part of the High Table network. (Classified)
 
 ### Contact
 
@@ -111,9 +110,11 @@ Access to justice is a fundamental right, yet the current legal system is often 
 
 The team comprises professionals with extensive experience in blockchain technology, AI development, and the legal industry. Key members have backgrounds in:
 
-- **Blockchain Development**: Experience with Substrate, smart contract development, and decentralized applications.
-- **Artificial Intelligence**: Development of AI systems like Codename Arbiter, utilizing GPT-4 and advanced machine learning techniques.
+- **Blockchain Development**: Experience with Substrate, smart contract development, and decentralized applications, blockchains, and protocols such as Concordium, Olympus, Uniswap V3 Liquidity Pools and many more.
+- **Artificial Intelligence**: Development of AI systems like Codename Arbiter, RAG + Vector Embedding architecture, utilizing various LLMs and advanced machine learning techniques.
 - **Legal Expertise**: Collaborations with international law firms, understanding of cross-border legal processes, and experience in legal tech innovations.
+
+Full Resume of all team members available on Linkedin.
 
 ### Team Code Repos
 
@@ -131,8 +132,9 @@ The team comprises professionals with extensive experience in blockchain technol
 ## Development Status 📖
 
 - **Current Progress**:
+  - - **MVP**: Initial MVP developed, demonstrating tokenization of legal claims and AI-assisted case handling.   
   - **GitLaw**: Repository initiated and under active development ([GitLaw Repo](https://github.com/BonoNetwork/Gitlaw)).
-  - **MVP**: Initial MVP developed, demonstrating tokenization of legal claims and AI-assisted case handling.
+  - **Arbiter AI and RAG**: trainable on newest laws and regulations.
   - ![Codename Arbiter_Redacted_Page_5](https://github.com/user-attachments/assets/74a5ec1a-dbe3-4b59-9cdb-c8f35e539ea9)
   - **Smart Contracts**: Preliminary smart contracts for Bono Core are in development.
 - **Documentation**:
@@ -144,79 +146,93 @@ The team comprises professionals with extensive experience in blockchain technol
 ## Development Roadmap 🔩
 
 ### Overview
+**Brief**: Unlike many other projects in the crypto space, Bono aims to solve a problem first and then scale the solution as demand grows, rather than building a massive infrastructure that is not used by anyone. Our Pilot case targets over 100,000 individuals in 9 seperate legal cases for over 250 million dollars. Bono's solution will be the only way to reliably solve these complex multijurisdiction, global cases. The Following road map and its milestones are the steps that will be taken to prove our solution works.
 
-- **Total Estimated Duration**: 6 months
+- **Total Estimated Duration**: 4 months
 - **Full-Time Equivalent (FTE)**: 3
-- **Total Costs**: 3 BTC (at today's price of $60,000)
+- **Total Costs**:  $152,000
 - **DOT %**: 50%
 
 ---
 
-### Milestone 1 — Bono Core Development
+### Milestone 1 — Prerequisites and App Launch Preparation
 
-- **Estimated Duration**: 2 months
-- **FTE**: 1.5
-- **Costs**: 1 BTC
+**Estimated Duration**: 1 month  
+**FTE**: 1.5  
+**Costs**: 50000 USD
 
-| Number | Deliverable                    | Specification                                                                                                                                   |
-|--------|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a.    | License                        | Apache 2.0                                                                                                                                      |
-| 0b.    | Documentation                  | Inline code documentation and tutorials on deploying and interacting with Bono Core smart contracts                                             |
-| 0c.    | Testing and Testing Guide      | Comprehensive unit and integration tests with a detailed testing guide                                                                          |
-| 0d.    | Docker                         | Dockerfiles for deploying Bono Core components for testing and development                                                                      |
-| 1.     | Smart Contracts for Legal Documents | Development of smart contracts for legal document approvals, verification, and integration with the High Table network                       |
-| 2.     | Integration with High Table    | Establish communication protocols between Bono Core and the High Table network, enabling law firms to interact with the platform                |
-| 3.     | Document Verification Module   | Implementation of mechanisms to verify the authenticity and integrity of legal documents using blockchain                                       |
-
----
-
-### Milestone 2 — Zero-Knowledge (ZK) Module
-
-- **Estimated Duration**: 2 months
-- **FTE**: 1
-- **Costs**: 1 BTC
-
-| Number | Deliverable                     | Specification                                                                                                                                  |
-|--------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a.    | License                         | Apache 2.0                                                                                                                                     |
-| 0b.    | Documentation                   | Detailed documentation on the ZK Module, including how to implement and utilize zero-knowledge proofs within the platform                      |
-| 0c.    | Testing and Testing Guide       | Full test coverage of ZK functionalities with step-by-step testing procedures                                                                  |
-| 1.     | ZK Proof Implementation         | Develop zero-knowledge proof protocols for verifying legal documents without disclosing sensitive information                                  |
-| 2.     | Protection Mechanisms           | Implement features to protect individuals like political dissidents from false targeting, ensuring their data remains confidential             |
-| 3.     | Integration with Bono Core      | Seamless integration of the ZK Module with Bono Core smart contracts and the High Table network                                                |
+| Number | Deliverable                   | Specification                                                                                                                                     |
+|--------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                       | Apache 2.0                                                                                                                                         |
+| 0b.    | Documentation                 | Detailed documentation of the project's prerequisites, including legal structuring and DAO setup                                                  |
+| 0c.    | Testing and Testing Guide     | Not applicable (focuses on preparation and structuring)                                                                                           |
+| 0d.    | Docker                        | Not applicable                                                                                                                                     |
+| 1.     | DAO Legal Structuring         | Establish legal structures for the DAO to ensure compliance and protection for global participants . [More Information](https://legalnodes.com/article/choose-a-crypto-friendly-country-for-dao#does-a-dao-need-to-be-registered-)                                               |
+| 2.     | App Launch Preparation        | Prepare for the app launch: setting up necessary infrastructure, app store registrations, and initial awareness campaigns. Finalizing Partnership contracts with firms involved in the pilot case launch                         |
+| 3.     | Awareness and Marketing Setup | Begin groundwork for awareness campaigns supporting the launch, including partnerships with marketing agencies. over 100K individuals will be made aware. Details sent in private                                   |
 
 ---
 
-### Milestone 3 — GitLaw Integration and Decentralized Treasury System
+### Milestone 2 — MVP Testing and Integration
 
-- **Estimated Duration**: 2 months
-- **FTE**: 1.5
-- **Costs**: 1 BTC
+**Estimated Duration**: 1.5 months  
+**FTE**: 2  
+**Costs**: 54000 USD
 
-| Number | Deliverable                      | Specification                                                                                                                                  |
-|--------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a.    | License                          | Apache 2.0                                                                                                                                     |
-| 0b.    | Documentation                    | Comprehensive guides on GitLaw integration and the Treasury System                                                                              |
-| 0c.    | Testing and Testing Guide        | Complete testing of GitLaw functionalities and Treasury mechanisms with detailed instructions                                                  |
-| 1.     | GitLaw Integration               | Integrate GitLaw into the Substrate framework to maintain an immutable, version-controlled record of laws and regulations                       |
-| 2.     | Decentralized Treasury System    | Develop a treasury system that supports the High Table token mechanism, where staked tokens represent a seigniorage of BTC, DOT, ETH, etc., and their values grow based on a delta-neutral strategy and protocol gains |
-| 3.     | Architecture for Wider Use       | Design the Treasury System architecture to be modular, allowing other projects to adopt and utilize it                                          |
+| Number | Deliverable                       | Specification                                                                                                                                     |
+|--------|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                           | Apache 2.0                                                                                                                                        |
+| 0b.    | Documentation                     | Documentation on codebase, APIs, and integration guides                                                                                           |
+| 0c.    | Testing and Testing Guide         | Comprehensive unit tests and integration tests with detailed testing procedures                                                                   |
+| 0d.    | Docker                            | Dockerfiles for deploying the MVP components for testing and development                                                                          |
+| 1.     | Codebase Review and Refinement    | Review and refine the existing codebase to meet quality standards                                                                                 |
+| 2.     | MVP Integration                   | Integrate the MVP with real-world data for the initial +100k users sourced from our network                                                     |
+| 3.     | Pilot Testing                     | Conduct pilot tests with this user base, gather feedback, and make necessary adjustments                                                          |
+| 4.     | AI Integration with Arbiter       | Integrate the AI component, Arbiter, into the MVP for handling the initial cases. (beta test with firms)                                                                  |
+
+---
+
+### Milestone 3 — Plaza Preparation and Deployment Readiness
+
+**Estimated Duration**: 1.5 months  
+**FTE**: 2  
+**Costs**: 48000 USD
+
+| Number | Deliverable                            | Specification                                                                                                                                     |
+|--------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                                | Apache 2.0                                                                                                                                        |
+| 0b.    | Documentation                          | Documentation on smart contracts and Plaza integration guides                                                                                     |
+| 0c.    | Testing and Testing Guide              | Testing the smart contracts and Plaza integration with detailed instructions                                                                      |
+| 0d.    | Docker                                 | Dockerfiles for deploying the smart contracts and testing Plaza integration                                                                       |
+| 1.     | Smart Contracts Development in Solidity | Develop smart contracts in Solidity, ready for deployment on Plaza                                                                                |
+| 2.     | Plaza Integration                      | Prepare for integration with Plaza, Polkadot's proposed scalable system chain                                                                     |
+| 3.     | Finalizing Deployment Readiness        | Ensure all components are ready for deployment, including security audits and compliance checks                                                   |
+| 4.     | Documentation of Classified Info       | **Note**: Classified documents, partnerships, and additional information have been emailed to [grants@web3.foundation](mailto:grants@web3.foundation) |
 
 ---
 
 ## Future Plans
 
-- **Long-Term Maintenance**: Ongoing development and maintenance will be funded through partnerships with law firms, grants, and a sustainable model involving the commercial arm of Bono utilizing the software to generate profits that support the pro bono side.
-- **Short-Term Goals**: Finalize incorporation, launch the updated MVP with integrated modules, and expand the High Table network by onboarding more law firms.
-- **Vision**: To establish Bono as a global standard for legal infrastructure, making justice accessible to all and protecting vulnerable populations through technology.
+
+### Zero-Knowledge (ZK) Module + Privacy Layer
+
+We plan to develop a **Zero-Knowledge (ZK) Module** to implement zero-knowledge proofs for verifying legal documents without revealing sensitive information. This module will also protect individuals like political dissidents from false targeting and ensure their data remains confidential. Integration with Bono Core will enhance privacy and security.
+
+### GitLaw Integration and Decentralized Treasury System
+
+- **GitLaw Integration**: GitLaw will integrate into the Substrate framework to maintain an immutable, version-controlled record of laws and regulations, ensuring up-to-date legal information for our AI Arbiter and legal professionals.
+  
+- **Decentralized Treasury System**: We plan to develop a treasury system supporting the High Table token mechanism, where staked tokens represent BTC, DOT, ETH, etc., and grow through scalable strategies and protocol gains. The architecture can be modular for use by other projects.
 
 ---
 
 ## Additional Information ➕
 
-- **Licensing Considerations**: Licenses will allow the commercial arm of Bono and others to use the software commercially, ensuring that the pro bono aspects of the platform can function sustainably.
-- **Community and Partnerships**: We are collaborating with multiple law firms and organizations to broaden our reach and impact.
-- **Incorporation Status**: Currently in the process of incorporation, with potential jurisdictions being Switzerland or Luxembourg.
-- **How Did You Hear About the Grants Program?**: Through discussions with Mr Piet Wolff and engagement with the Polkadot community.
-- **Previous Grants**: This is our first application for a grant from the Web3 Foundation.
+- **Plaza Integration**: We are preparing for Plaza integration to align Bono with Polkadot’s future developments. Writing smart contracts in Solidity ensures readiness for deployment on Plaza, which consolidates functionalities into a scalable chain.
+- **Classified Information**: Classified documents, partnerships, and additional materials have been submitted via email to [grants@web3.foundation](mailto:grants@web3.foundation) as requested.
+- **Community and Partnerships**: Collaborations with multiple law firms and organizations broaden our reach and impact.
+- **Incorporation Status**: We are mid-process, with Switzerland or Luxembourg as potential jurisdictions.
+- **How Did You Hear About the Grants Program?**: Through discussions with Mr. Piet Wolff during the office hours and engagement with the Polkadot community.
+- **Previous Grants**: This is our first application for a grant from the Web3 Foundation. Bono Has yet to apply for other grants.
+
 
