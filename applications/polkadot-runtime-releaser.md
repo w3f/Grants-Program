@@ -121,7 +121,7 @@ If they contain no activity, references to projects hosted elsewhere or live are
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 22,500 USD
 
-### Milestone 1 Slothunter CLI tool
+### Milestone 1 Polkadot Runtime Releaser Tool Set
 
 - **Estimated duration:** 8 weeks
 - **FTE:**  1
