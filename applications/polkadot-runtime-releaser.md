@@ -130,7 +130,7 @@ If they contain no activity, references to projects hosted elsewhere or live are
 | Number | Deliverable                   | Specification                                                                                                         |
 | -----: | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 |    0a. | License                       | GPLv3                                                                                                                 |
-|    0b. | Documentation                 | There will be a guide to tell people how to use this.                                                                 |
+|    0b. | Documentation                 | There will be a guide to tell people how to use this and inline docs will cover core functionalities.                                                                 |
 |    0c. | Testing guide                 | There will be a guide and a demo repository to tell the auditor how to run the tests. All components will be covered. |
 |     1. | Try-runtime CI                | Comment on a release PR and see the try-runtime result.                                                               |
 |     2. | Release CI                    | Build and release the deterministic runtime and the node files.                                                       |
