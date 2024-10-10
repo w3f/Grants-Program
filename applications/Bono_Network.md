@@ -22,7 +22,7 @@ Bono Foundation
 **Tagline**: Bono Network - Decentralizing Justice through Blockchain and AI
 
 **Brief Description**:  
-Bono is a decentralized legal infrastructure platform aiming to democratize access to justice globally. By integrating blockchain technology, AI (Codename Arbiter), and a global network of vetted law firms (the High Table), Bono provides affordable and accessible legal services across jurisdictions. Our mission is to modernize the legal industry by reducing costs, increasing transparency, and protecting vulnerable individuals through innovative technology solutions like zero-knowledge proofs and immutable legal records, Worldwide.
+Bono is a decentralized legal infrastructure platform aiming to democratize access to justice globally. By integrating blockchain technology, AI (Codename Arbiter), and a global network of vetted law firms (the High Table), Bono provides affordable and accessible legal services across jurisdictions. Our mission is to modernize the legal industry by lowering the barriers to entry, increasing transparency, and protecting vulnerable individuals through innovative technology solutions like zero-knowledge proofs and immutable legal records, Worldwide.
 
 **Relation to Substrate/Polkadot/Kusama**:  
 Bono intends to leverage Substrate to build a blockchain-based legal infrastructure that is interoperable, secure, and scalable. By integrating with Polkadot, Bono can ensure cross-chain compatibility and high levels of security for legal document verification, tokenization of litigation, and decentralized governance mechanisms.
