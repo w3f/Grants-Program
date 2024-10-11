@@ -16,6 +16,7 @@ Besides, **there is a clear difference between an application being accepted and
 <a id="top"></a>
 
 - [2024](#2024)
+  - [🏄 Wave 24 - Q4 2024](#-wave-24---q4-2024)
   - [🏄 Wave 23 - Q3 2024](#-wave-23---q3-2024)
   - [🏄 Wave 22 - Q2 2024](#-wave-22---q2-2024)
   - [🏄 Wave 21 - Q1 2024](#-wave-21---q1-2024)
@@ -47,6 +48,15 @@ Besides, **there is a clear difference between an application being accepted and
 
 
 ## 2024
+
+### 🏄 Wave 24 - Q4 2024
+
+| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
+| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
+| [hack-ink](https://linktr.ee/aurevoirxavier)                       | [Polkadot Runtime Releaser](./polkadot-runtime-releaser.md)                     | [GitHub](https://github.com/AurevoirXavier)                 | ☐          |        ☐       |      ☐      |
+| [Coong Crafts](https://github.com/gmajor-encrypt)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☐       |      ☐      |
+
+[🔝](#top)
 
 ### 🏄 Wave 23 - Q3 2024
 
