@@ -54,7 +54,7 @@ Besides, **there is a clear difference between an application being accepted and
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
 | [hack-ink](https://linktr.ee/aurevoirxavier)                       | [Polkadot Runtime Releaser](./polkadot-runtime-releaser.md)                     | [GitHub](https://github.com/AurevoirXavier)                 | ☐          |        ☐       |      ☐      |
-| [Coong Crafts](https://github.com/gmajor-encrypt)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☐       |      ☐      |
+| [Coong Crafts](https://github.com/CoongCrafts)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
