@@ -26,11 +26,6 @@ const HomepageHeader = () => {
       text: 'Browse RFPs',
     },
     {
-      to: 'https://futures.web3.foundation',
-      text: 'Decentralized Futures ↗',
-      style: { backgroundColor: 'rgb(250, 250, 250)' },
-    },
-    {
       to: 'https://jam.web3.foundation',
       text: 'JAM Prize ↗',
       style: { backgroundColor: 'rgb(250, 250, 250)' },
