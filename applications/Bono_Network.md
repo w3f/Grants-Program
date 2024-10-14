@@ -150,7 +150,7 @@ Full Resume of all team members available on Linkedin.
 
 - **Total Estimated Duration**: 4 months
 - **Full-Time Equivalent (FTE)**: 3
-- **Total Costs**:  $152,000
+- **Total Costs**:  $112,000
 - **DOT %**: 50%
 
 ---
@@ -159,7 +159,7 @@ Full Resume of all team members available on Linkedin.
 
 **Estimated Duration**: 1 month  
 **FTE**: 1.5  
-**Costs**: 50000 USD
+**Costs**: 10000 USD
 
 | Number | Deliverable                   | Specification                                                                                                                                     |
 |--------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -167,7 +167,7 @@ Full Resume of all team members available on Linkedin.
 | 0b.    | Documentation                 | Detailed documentation of the project's prerequisites, including legal structuring and DAO setup                                                  |
 | 0c.    | Testing and Testing Guide     | Not applicable (focuses on preparation and structuring)                                                                                           |
 | 0d.    | Docker                        | Not applicable                                                                                                                                     |
-| 1.     | DAO Legal Structuring         | Establish legal structures for the DAO to ensure compliance and protection for global participants . [More Information](https://legalnodes.com/article/choose-a-crypto-friendly-country-for-dao#does-a-dao-need-to-be-registered-)                                               |
+| 1.     | DAO Legal Structuring         | Establish legal structures for the DAO to ensure compliance and protection for global participants . [More Information](https://legalnodes.com/article/choose-a-crypto-friendly-country-for-dao#does-a-dao-need-to-be-registered-) (Paid by BONO)                                              |
 | 2.     | App Launch Preparation        | Prepare for the app launch: setting up necessary infrastructure, app store registrations, and initial awareness campaigns. Finalizing Partnership contracts with firms involved in the pilot case launch                         |
 | 3.     | Awareness and Marketing Setup | Begin groundwork for awareness campaigns supporting the launch, including partnerships with marketing agencies. over 100K individuals will be made aware. Details sent in private                                   |
 
