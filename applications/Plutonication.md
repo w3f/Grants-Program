@@ -84,7 +84,7 @@ end
 
 subgraph Web
 D[dApp using Polkadot.js] ~~~ E[Plutonication Extension]
-E -. Connection via Polkadot.js extension .- D
+E -. Connection via Polkadotjs extension .- D
 end
 
 subgraph Phone

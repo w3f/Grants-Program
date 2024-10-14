@@ -7,7 +7,7 @@ title: Grant Levels
 
 The W3F Grants Program offers different grant levels to help you best depending on your current stage.
 
-## :hatching_chick: Level 1 (= InstaGrants)
+## :hatching_chick: Level 1
 
 - **Target:** Individuals & small teams
 - **Amount:** Up to $10,000

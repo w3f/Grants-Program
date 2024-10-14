@@ -1,7 +1,7 @@
 # Improve & Update Typechain Polkadot
 
 - **Team Name:** C Forge
-- **Payment Address:** 15VHeCpx5SUbRsbiZAfYtERxXPNKNZfc9bNBnGGZ4SvaT2ct (Both USDT & vested DOT)
+- **Payment Address:** 1Gciq9ByqbBycweYAzHpGMFPU6TwPjCMGBNXvJo6bqFoiMb (Both USDT & vested DOT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
