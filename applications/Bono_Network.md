@@ -11,6 +11,7 @@ Bono Foundation
 **Payment Details**  
 - **BTC Address**:3CLdWCgWH2jjQicozsTxarsTL7rgdo9hjr
 - **DOT Address**: 15zbAsy3MDCMd16zdzxpVzTCvqR5AWBiBMKGuejEd1J93YYo
+- **Asset hub Address**: 14ttQi6Yhkw1h3Quuo1R8kX9Q8wE1Zr7YBGT2VxWyzGrMLVk
 - **Level**: 3
 
 ---
@@ -159,7 +160,7 @@ Full Resume of all team members available on Linkedin.
 
 **Estimated Duration**: 1 month  
 **FTE**: 1.5  
-**Costs**: 10000 USD
+**Costs**: 10000 USDC
 
 | Number | Deliverable                   | Specification                                                                                                                                     |
 |--------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,7 +178,7 @@ Full Resume of all team members available on Linkedin.
 
 **Estimated Duration**: 1.5 months  
 **FTE**: 2  
-**Costs**: 54000 USD
+**Costs**: 54000 USDC
 
 | Number | Deliverable                       | Specification                                                                                                                                     |
 |--------|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,7 +197,7 @@ Full Resume of all team members available on Linkedin.
 
 **Estimated Duration**: 1.5 months  
 **FTE**: 2  
-**Costs**: 48000 USD
+**Costs**: 48000 USDC
 
 | Number | Deliverable                            | Specification                                                                                                                                     |
 |--------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
