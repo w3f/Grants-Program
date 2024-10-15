@@ -23,6 +23,10 @@ Include our script on the page where the products/services are, providing his me
    
     <script src="https://cryptocheckout.co/crypto.js&id=fa8b" ></script>
 
+Initialize the "Pay with CryptoCheckout" button
+
+    showbtn('MycontainerdivID',{usd:1},onApprove=function(transactionId){//Do something},onError=function(error){//Do something});
+    
 This project is live, check the UI here (also availabe with mobile version): https://cryptocheckout.co 
 Regardless the business plan, I store everything in nosql db, even no db server, just simple json or txtdb files. Concerning the API, depending of the business plan, if I use the previous plan where the merchant generate his wallet with us, I use the nodejs server (not exposed publickly) to create the wallets & return the data, req/res, data quering (select/update,...) handled by php functions
 - An overview of the technology stack to be used
