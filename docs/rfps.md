@@ -64,7 +64,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 | RFP | Last Updated |
 | :-- | :----------: |
-| [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 12.10.2023 |
+| [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 15.10.2024 |
 | [action_research_opengov.md](RFPs/action_research_opengov.md) | 31.05.2024 |
 | [a-and-v-topology.md](RFPs/a-and-v-topology.md) | 04.09.2023 |
 | [alternative-polkadot-js-api-console.md](RFPs/alternative-polkadot-js-api-console.md) | 19.05.2023 |
