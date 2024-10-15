@@ -57,11 +57,8 @@ The product demo (Pay with CryptoCheckout's button) available within the homepag
 This project does not provide UI for the merchant's transactions history or sending funds, the merchant should use the platform/app where the provided address is generated.<br/>
 
 ### Ecosystem Fit
-
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+- The project fit the ecosystem in its main coin (DOT), more specific in its transactions, simply by confirm such amount were sent from such buyer to such seller.<br/>
+- The target audiance is any person has DOT address/wallet, it could be as a merchant has online business want to accept DOT, or naturel user want to pay using his DOT balance.<br/>
 - What need(s) does your project meet?
 - How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
