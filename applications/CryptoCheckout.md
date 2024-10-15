@@ -64,7 +64,8 @@ This project does not provide UI for the merchant's transactions history or send
     - New online payments solution with reduced transaction fee.
     - Financial technology with high security levels, with more freedom (decentralized) & confidential.
 - The previous need identified within:
-    - Scientific article: https://journals2.ums.ac.id/laj/article/download/743/480/5791, the page 5/17
+    - Scientific article: https://journals2.ums.ac.id/laj/article/download/743/480/5791, Cryptocurrencies as Digital Payment Media: Opportunities 
+and Challenges, Univ Inter the page 7/15
     - 
 - How did you identify these Universitas Muhammadiyah Surakarta
 https://journals2.ums.ac.id › lajPDF
