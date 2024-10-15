@@ -15,7 +15,7 @@ The team interesting developing this project to redefine the online payments by 
 #### Architecture
 ![](https://cryptocheckout.co/archi.jpg)
 #### Tech stack
-This project uses apache as web server (it can be nginx), php & javascript for the front & the back ends, nosql db to store useful data such as merchants details
+This project uses apache as web server (it can be nginx), php & javascript for the front & the back ends, nosql db to store useful data such as merchants, transactions, bayer details
 #### Documentation
 Accepting crypto payments with CryptoCheckout does not require specific tech stack.<br/>
 The merchant must insert valid DOT address & generate merchant ID from the home page (no signup required).<br/>
