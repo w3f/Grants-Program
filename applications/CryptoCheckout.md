@@ -62,6 +62,7 @@ This project does not provide UI for the merchant's transactions history or send
 - This project meet these needs:
     - How to exploit the large maket ($2.28T), serve the large uaer base (at least 500M).
     - New online payments solution with reduced transaction fee.
+    - Financial technology with high security levels, with more freedom (decentralized) & confidential.
     - 
 - What need(s) does your project meet?
 - How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
