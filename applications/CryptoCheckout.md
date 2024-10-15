@@ -27,6 +27,8 @@ Initialize the "Pay with CryptoCheckout" button
 
     showbtn('MycontainerdivID',{usd:1},onApprove=function(transactionId){//Do something},onError=function(error){//Do something});
     
+Handle the server side payment validation, by using this endpoint to get transaction details:<br/>
+https://cryptocheckout.co/?transaction=transactionId, the transactionId is retreived from the onApprove(transactionId) event, eg in case using php: <br/>
 This project is live, check the UI here (also availabe with mobile version): https://cryptocheckout.co 
 Regardless the business plan, I store everything in nosql db, even no db server, just simple json or txtdb files. Concerning the API, depending of the business plan, if I use the previous plan where the merchant generate his wallet with us, I use the nodejs server (not exposed publickly) to create the wallets & return the data, req/res, data quering (select/update,...) handled by php functions
 - An overview of the technology stack to be used
