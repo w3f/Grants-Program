@@ -59,7 +59,10 @@ This project does not provide UI for the merchant's transactions history or send
 ### Ecosystem Fit
 - The project fit the ecosystem in its main coin (DOT), more specific in its transactions, simply by confirm such amount were sent from such buyer to such seller.<br/>
 - The target audiance is any person has DOT address/wallet, it could be as a merchant has online business want to accept DOT, or naturel user want to pay using his DOT balance.<br/>
-- This project is a way of exploiting the large crypto market ($2.28T)/ serving the large user base.
+- This project meet these needs:
+    - How to exploit the large maket ($2.28T), serve the large uaer base (at least 500M).
+    - New online payments solution with reduced transaction fee.
+    - 
 - What need(s) does your project meet?
 - How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
