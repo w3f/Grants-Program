@@ -12,6 +12,8 @@ The merchant must provide a valid DOT address when generating merchant ID in ord
 The team interesting developing this project to redefine the online payments by using the crypto wallet instead credit cards.
 
 ### Project Details
+#### Architecture
+![](https://cryptocheckout.co/archi.jpg)
 This project is live, check the UI here (also availabe with mobile version): https://cryptocheckout.co 
 Regardless the business plan, I store everything in nosql db, even no db server, just simple json or txtdb files. Concerning the API, depending of the business plan, if I use the previous plan where the merchant generate his wallet with us, I use the nodejs server (not exposed publickly) to create the wallets & return the data, req/res, data quering (select/update,...) handled by php functions
 - An overview of the technology stack to be used
