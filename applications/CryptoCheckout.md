@@ -51,6 +51,8 @@ https://cryptocheckout.co/?transaction=transactionId, the transactionId is retre
         die();
     }
     
+#### The MVP
+The product demo (Pay with CryptoCheckout's button) available within the homepage for both users (desktop & mobile):<br/> https://cryptocheckout.co<br/>
 This project is live, check the UI here (also availabe with mobile version): https://cryptocheckout.co 
 Regardless the business plan, I store everything in nosql db, even no db server, just simple json or txtdb files. Concerning the API, depending of the business plan, if I use the previous plan where the merchant generate his wallet with us, I use the nodejs server (not exposed publickly) to create the wallets & return the data, req/res, data quering (select/update,...) handled by php functions
 - An overview of the technology stack to be used
