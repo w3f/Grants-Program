@@ -3,10 +3,13 @@
 - **Team Name:** CrypCheck's team (solo at this moment)
 - **Payment Details:**
   - **DOT**: 12EsK6AEtBN2XKvu2hZiR9jKpDvYFs7tdgzoLwAdmUWnFjj9.
+- **Level:** 1
 
 ## Project Overview :page_facing_up:
 ### Overview
-Secure simple decentralized crypto payments gateway, depending on the merchant needs, if he wish to generate his DOT address with us, he will retrieve the mnemonic phrase of his wallet (this plan is deprecated although it's still available as soource code, but we don't present it to the merchants) or just paste his DOT & start accepting DOT as crypto payment method, I'm (solo) interesting building this project to enable any business online (6M regardless thier revenues) to exploit the crypto market, & benefit from them (online businesses including ecommerce platforms,..)
+Secure simple decentralized crypto payments gateway.<br/>
+The merchant must provide a valid DOT address when generating merchant ID in order to receive DOT payments (the only thing required).<br/>
+The team interesting developing this project to redefine the online payments by using the crypto wallet instead credit cards.
 
 ### Project Details
 This project is live, check the UI here (also availabe with mobile version): https://cryptocheckout.co 
