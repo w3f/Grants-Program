@@ -4,7 +4,7 @@
 This Request for Proposal is currently _open_, meaning we are actively looking for (additional) teams to apply for it.
 :::
 
-* **Status:** Open
+* **Status:** Closed
 * **Proposer:** [Bhargav Bhatt](https://github.com/bhargavbh),  [David Hawig](https://github.com/Noc2)
 
 ## Project Description :page_facing_up:  
