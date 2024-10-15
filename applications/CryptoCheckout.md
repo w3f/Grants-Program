@@ -65,7 +65,7 @@ This project does not provide UI for the merchant's transactions history or send
     - Financial technology with high security levels, with more freedom (decentralized) & confidential.
 - The previous need identified within:
     - Scientific article: https://journals2.ums.ac.id/laj/article/download/743/480/5791, Cryptocurrencies as Digital Payment Media: Opportunities 
-and Challenges, Universitas Muhammadiyah Surakarta, Feb 2023 (the page 7/15)
+and Challenges, Denny & Hari Sutra Disemadi, Universitas Muhammadiyah Surakarta, Feb 2023 (the page 7/15)
     - 
 - How did you identify these Universitas Muhammadiyah Surakarta
 https://journals2.ums.ac.id › lajPDF
