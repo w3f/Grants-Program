@@ -66,7 +66,8 @@ This project does not provide UI for the merchant's transactions history or send
 - The previous needs identified within:
     - Scientific article: https://journals2.ums.ac.id/laj/article/download/743/480/5791, Cryptocurrencies as Digital Payment Media: Opportunities 
 and Challenges, Denny & Hari Sutra Disemadi, Universitas Muhammadiyah Surakarta, Feb 2023 (the page 7/15)
-    - Case study: https://www2.deloitte.com/content/dam/Deloitte/us/Documents/audit/us-corporates-using-crypto-pov.pdf, The Business Benefit of Using Cryptocurrency, Deloitte US, 
+    - Case study: https://www2.deloitte.com/content/dam/Deloitte/us/Documents/audit/us-corporates-using-crypto-pov.pdf, The Business Benefit of Using Cryptocurrency, Deloitte US (the pages 3/16, 4/16)
+    - 
 - How did you identify these Universitas Muhammadiyah Surakarta
 https://journals2.ums.ac.id › lajPDF
 Cryptocurrencies as Digital Payment Medi? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
