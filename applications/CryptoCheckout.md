@@ -14,6 +14,15 @@ The team interesting developing this project to redefine the online payments by 
 ### Project Details
 #### Architecture
 ![](https://cryptocheckout.co/archi.jpg)
+#### Tech stack
+This project uses apache as web server (it can be nginx), php & javascript for the front & the back ends, nosql db to store useful data such as merchants details
+#### Documentation
+Accepting crypto payments with CryptoCheckout does not require specific tech stack.<br/>
+The merchant must insert valid DOT address & generate merchant ID from the home page (no signup required).<br/>
+Include our script on the page where the products/services are, providing his merchant ID on the link eg:
+   
+    <script src="https://cryptocheckout.co/crypto.js&id=fa8b" ></script>
+
 This project is live, check the UI here (also availabe with mobile version): https://cryptocheckout.co 
 Regardless the business plan, I store everything in nosql db, even no db server, just simple json or txtdb files. Concerning the API, depending of the business plan, if I use the previous plan where the merchant generate his wallet with us, I use the nodejs server (not exposed publickly) to create the wallets & return the data, req/res, data quering (select/update,...) handled by php functions
 - An overview of the technology stack to be used
