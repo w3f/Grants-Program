@@ -63,9 +63,11 @@ This project does not provide UI for the merchant's transactions history or send
     - How to exploit the large maket ($2.28T), serve the large uaer base (at least 500M).
     - New online payments solution with reduced transaction fee.
     - Financial technology with high security levels, with more freedom (decentralized) & confidential.
-    - 
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
+- The previous need identified within:
+    - Scientific research: 
+- How did you identify these Universitas Muhammadiyah Surakarta
+https://journals2.ums.ac.id › lajPDF
+Cryptocurrencies as Digital Payment Medi? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
   - If not, please indicate why such a project might not have been possible, successful, or attempted. 
