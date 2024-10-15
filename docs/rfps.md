@@ -27,7 +27,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | RFP | Last Updated |
 | :-- | :----------: |
 | [anti-collusion_infrastructure.md](RFPs/anti-collusion_infrastructure.md) | 21.09.2023 |
-| [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 12.10.2023 |
 | [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |  
 | [user-account-access-analysis.md](RFPs/user-account-access-analysis.md) | 07.01.2023 |
 
@@ -73,6 +72,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [candle-auction.md](RFPs/candle-auction.md) | 02.02.2022 |  
 | [crowdloan_front_end_template.md](RFPs/crowdloan_front_end_template.md) | 25.04.2023 |  
 | [epassport-zk-validation.md](RFPs/epassport-zk-validation.md) | 21.03.2023 |
+| [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 15.10.2024 |
 | [grant_management_webapp.md](RFPs/grant_management_webapp.md) | 25.09.2023 |
 | [jsonrpsee-proxy-support.md](RFPs/jsonrpsee-proxy-support.md) | 31.01.2024 |
 | [ksm-tipping-button.md](RFPs/ksm-tipping-button.md) | 20.07.2021 |  
