@@ -1,7 +1,7 @@
 # Formal Guarantees for GRANDPA Finality Gadget
 
-:::tip
-This Request for Proposal is currently _open_, meaning we are actively looking for (additional) teams to apply for it.
+:::danger
+This Request for Proposals is _closed_, meaning we are not looking for any more proposals on this topic at the moment.
 :::
 
 * **Status:** Closed
