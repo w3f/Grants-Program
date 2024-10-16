@@ -67,8 +67,8 @@ This project does not provide UI for the merchant's transactions history or send
     - Scientific article: https://journals2.ums.ac.id/laj/article/download/743/480/5791, Cryptocurrencies as Digital Payment Media: Opportunities 
 and Challenges, Denny & Hari Sutra Disemadi, Universitas Muhammadiyah Surakarta, Feb 2023 (the page 7/15)
     - Case study: https://www2.deloitte.com/content/dam/Deloitte/us/Documents/audit/us-corporates-using-crypto-pov.pdf, The Business Benefit of Using Cryptocurrency, Deloitte US (the pages 3/16, 4/16)
-    - Press article (includes case study): https://www.cbn.com.cy/article/2024/5/9/774001/why-businesses-are-turning-to-crypto-payments/, 
-- How did you identify these Universitas Muhammadiyah Surakarta
+    - Press article (includes case study): https://www.cbn.com.cy/article/2024/5/9/774001/why-businesses-are-turning-to-crypto-payments/, Charlie Rexstrew, Cyprys Business News. 
+- How did you identify these Universitas Muhammadiya Surakarta
 https://journals2.ums.ac.id › lajPDF
 Cryptocurrencies as Digital Payment Medi? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
