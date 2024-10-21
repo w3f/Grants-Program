@@ -365,7 +365,7 @@ After these, we will add our own functions related to NFTAA staking functionalit
 |    2c. | nftaa_stake/unstake     | The functionality needed to do stake/unstake operations on behalf of NFTAA, its like deposit/withdrawal functions                  |
 |    2d. | nftaa_increase/decrease | Functions needed to increase or decrease stake by NFTAA, this is needed for full compatibility with traditional methods of staking |
 
-### Milestone 3 — Web app + article
+### Milestone 3 — Web apps integrations + article
 
 - **Estimated Duration:** 1.5 month
 - **FTE:**  1.5
@@ -377,9 +377,9 @@ After these, we will add our own functions related to NFTAA staking functionalit
 | **0b.** | Documentation                                | Inline documentation of code, as well as startup configuration with all necessary commands, included in repository |
 | **0c.** | Testing and Testing Guide                    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-|    0e. | Article         | We will publish an **article** that explains NFTAA (what was done/achieved as part of the grant). The article will be published through an online media service, e.g., medium.com, and advertised through social networks. Our ambition, as we are from academic environment, is to have also an academic paper about the idea of NFTAA in Polkadot published in a conference venue                                                                                    |
-|    3a. | Web app         | Develop a web application to interact with the nftaa_pallet, allowing users to create, manage, and transfer NFTAAs, provide a web application to interact with the nftaa_pallet: allowing users to create collections and single item; manage of metadata and attributes; operate with NFTAA ownership (transfers); play with staking, increase stake and unstake handled by NFTAA; read operations as get for an account, get assets of NFTAA, get the owner of NFTAA |
-|    3b. | Marketplace app | We will also create a lightweight marketplace application for easily buying and selling the NFTAAs with an overall list in a form of a bulleting board.                                                                                                                                                                                                                                                                                                                |
+|    0e. | Article         | We will publish an **article** that explains NFTAA (what was done/achieved as part of the grant). The article will be published through an online media service, e.g., medium.com or Linkedin, and advertised through social networks. Our ambition, as we are from academic environment, is to have also an academic paper about the idea of NFTAA in Polkadot published in a conference venue                                                                                    |
+|    3a. | Web app integration         | Develop a webapp integration to interact with the nftaa_pallet (integration will be for popular existing Polkadot app for example like Polkadot Staking Dashboard), allowing users to create, manage, and transfer NFTAAs, provide a web application to interact with the nftaa_pallet: allowing users to create collections and single item; manage of metadata and attributes; operate with NFTAA ownership (transfers); play with staking, increase stake and unstake handled by NFTAA; read operations as get for an account, get assets of NFTAA, get the owner of NFTAA |
+|    3b. | Marketplace app integration | We will also prepare integration for existing NFT marketplace app (e.g. Kodadot) for easily buying and selling the NFTAAs with an overall list in a form of a bulleting board.                                                                                                                                                                                                                                                                                                                |
 
 ## Future Plans
 
