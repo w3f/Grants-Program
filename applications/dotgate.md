@@ -217,6 +217,7 @@ We have initiated the implementation of **DotGate** and have already completed a
 | **0a.** | License | MIT |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a developer can start using **DotGate** for their project. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Article | We will publish an article to introduce **DotGate** and how to use it. |
 | 1. | Documentation | We'll add documentation site to the repository. |
 | 2. | Sign-in | We'll add functionality to sign-in instead of connecting a wallet. |
 | 3. | Verify | We'll add functionality to verify the user's identity. |
