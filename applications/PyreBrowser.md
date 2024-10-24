@@ -104,27 +104,26 @@ The project is completed and launched! We are now working on other interesting w
 
 ### Overview
 
-- **Total Estimated Duration:** 6
+- **Total Estimated Duration:** 8
 - **Full-Time Equivalent (FTE):**  3 FTE
 - **Total Costs:** 30,000 USD
 - **DOT %:** 100%
 
 ### Milestone 1 Example — Basic functionality
 
-- **Estimated duration:** 4 months
+- **Estimated duration:** 8 months
 - **FTE:**  3
-- **Costs:** 20,000 USD
-  
-Intense marketing campaign targeting all major internet communities. Revamp of the main website and hiring of a dedicated community manager.
+- **Costs:** 30,000 USD
 
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 2 months
-- **FTE:**  3
-- **Costs:** 10,000 USD
-
-Development of template DAOs for our interconnected DAO system which allows people to form companies without paperwork and with autonomous shareholder features. We have several DAO models based on the works of Economists such as von Mises, Henry George, Hayek and Piero Sraffa which we hope to implement soon.
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | Our documentation is over at [](https://pyrebrowser.com/docs) and will be expanded further to be more intuitive and have more templates for web3 dapps |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Marketing | Intense marketing campaign targeting all major internet communities. Revamp of the main website and hiring of a dedicated community manager. |
+| 2. | Code Release | Release of code open source once we have acheived a solid community base of around 100 websites (or by June 2025) |
+| 3. | DAOs | Development of template DAOs for our interconnected DAO system which allows people to form companies without paperwork and with autonomous shareholder features. We have several DAO models based on the works of Economists such as von Mises, Henry George, Hayek and Piero Sraffa which we hope to implement soon. (Very exciting permutations of economic theory into contracts!) |
 
 ## Future Plans
 
