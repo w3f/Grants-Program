@@ -47,7 +47,7 @@ Our hope with GaiaSource is it will become a cybernetic hub for all to see trans
 
 ### Project Details
 
-The project is launched and fully functional for windows over at [](https://pyrebrowser.com) and has a roadmap in the documentation section. We need design, branding and marketing help.
+The project is launched and fully functional for windows over at [](https://pyrebrowser.com) and has a roadmap in the documentation section. We need design, branding and marketing help. The browser is built with Electron and NodeJS. P2P infrastructure is handled with Holepunch HyperDHT and decentralized communication within domains is facilitated by NOSTR - A censorship free chat protocol supported by Jack Dorsey.
 
 ### Ecosystem Fit
 
@@ -85,16 +85,9 @@ N/A
 - **Contact Email:** damian.ravi.work@gmail.com
 - **Website:** https://pyrebrowser.com
 
-### Legal Structure
-
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
-
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+I am a solo full-stack developer with 8 years experience and have worked on gig sites for various individuals and companies. I have built every type of DAPP ranging from casinos and exchanges to NFT marketplaces. I have good knowledge of the EVM and have worked on multiple chains.
 
 ### Team Code Repos
 
