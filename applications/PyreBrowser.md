@@ -123,7 +123,7 @@ Intense marketing campaign targeting all major internet communities. Revamp of t
 - **FTE:**  3
 - **Costs:** 10,000 USD
 
-Development of several complementary products including a casino that gives 100% of profits to charities through a transparent DAO. This will be the flagship for our interconnected DAO system which allows people to form companies without paperwork and with autonomous shareholder features. We have several DAO models based on the works of Economists such as von Mises, Henry George, Hayek and Piero Sraffa which we hope to implement soon.
+Development of template DAOs for our interconnected DAO system which allows people to form companies without paperwork and with autonomous shareholder features. We have several DAO models based on the works of Economists such as von Mises, Henry George, Hayek and Piero Sraffa which we hope to implement soon.
 
 
 ## Future Plans
