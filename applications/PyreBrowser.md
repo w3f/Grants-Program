@@ -47,7 +47,7 @@ Our hope with GaiaSource is it will become a cybernetic hub for all to see trans
 
 ### Project Details
 
-The project is launched and fully functional for windows over at [](https://pyrebrowser.com) and has a roadmap in the documentation section. We need design, branding and marketing help. The browser is built with Electron and NodeJS. P2P infrastructure is handled with Holepunch HyperDHT and decentralized communication within domains is facilitated by NOSTR - A censorship free chat protocol supported by Jack Dorsey.
+The project is launched and fully functional for windows over at [](https://pyrebrowser.com) and has a roadmap in the documentation section. We need design, branding and marketing help. The browser is built with Electron and NodeJS. P2P infrastructure is handled with Holepunch HyperDHT and decentralized communication within domains is facilitated by NOSTR - A censorship free chat protocol supported by Jack Dorsey. My running costs are only $20 a month for the main webpage server. The project is completely decentralized otherwise!
 
 ### Ecosystem Fit
 
