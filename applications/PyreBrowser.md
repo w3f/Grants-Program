@@ -35,9 +35,6 @@ A decentralized mailing system that takes advantage of Moonbeams low tx fees. I 
 GaiaSource:
 It offers a 0% fee alternative to Amazon, Ebay, Upwork, Ticketmaster, Uniswap. Im improving the UI and also adding a Trading View alternative built with Threejs. Theres also an alternative to Facebook that uses all the data mentioned in PyreMail but I need to find a better design for it.
 
-DragonBets:
-A casino that gives 100% of profits to charity projects or registered DAOs - I have a fairly good casino app and im just tuning it up for this. Should be released next year.
-
 Pyre Search:
 Is the inbuilt indexer. It downloads every website as they are uploaded/updated and picks through all the code. It costs me $20 to thoroughly scrape all websites and efficiently index them. Googles methods require spiderbots, vast servers and access to various DNS servers data. Anyone could build a Google alternative with their own algorithm and $5-20 in server costs on the pyre network.
 
