@@ -207,7 +207,36 @@ I explain why I am applying for a grant now in the **Additional Information** se
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
 | **0b.** | Documentation | The Polkanalysis code is documented as much as possible to be understandable and reusable by other developers. Each method includes a brief summary to explain its purpose. Each project has its own Readme file. |
-| **0c.** | Testing and Testing Guide | The code coverage of the application is 60%, with the goal of reaching 80%. There is a mix of unit tests and integration tests (which directly call the node). |
+| **0c.** | Testing and Testing Guide | Improve the code coverage of the application from 60% to 80%. |
+| **0d.** | Docker | We will provide a docker compose file that can be used to test all the functionality delivered with this milestone. |
+| **0e.** | Code quality | The project is analyzed with each build on [SonarCloud](https://sonarcloud.io/project/overview?id=Apolixit_Polkanalysis) to ensure clean, stable, and consistent code. |
+| 1. | **Web application** | |
+| 1.a | Block / events / extrinsics (search & display) | Pages to display details, along with a search engine to look up various blocks, events, and extrinsics. |
+| 1.b | Validators & Nominators (search & display) | Search engine and detailed page for validators & nominators. |
+| 1.c | Pools (search & display) | Search engine and detailed page for nomination pools |
+| 1.d | Accounts (search & display) | Search engine and detailed pages for blockchain accounts, displaying transactions and identity information. |
+| 1.e | Runtime & Metadata | Listing of the different Metadata + SpecVersion. For each, details of the number of calls / events / storage / constants. |
+| 1.f | SpecVersion comparison | Comparison of two different versions to identify changes. |
+| 2. | **Web API** | A REST API accessible by everyone to display domain-related information |
+| 2.a | Enpoint documentation | Documentation for all endpoints to facilitate usage for external callers. |
+| 2.b | Playwright API test | Writing Playwright tests for all API endpoints (End-to-End tests). |
+| 3. | **Worker** | A background worker that queries the blockchain and inserts useful data into a database. |
+| 3.a | Blockchain adaptation | The background worker has only been tested on Polkadot. I need to slightly refactor it to adapt to PeopleChain (and others in the future) because the functions to call may vary from one blockchain to another. |
+| 3.b | Re-run worker | Handle, with a more efficient way, the re launch of the worker (if something failed, or need to index something new). I need to avoid to remove / insert all the data again, but just be focused on the new data that did not exist yet into the database |
+| 4. | Domain | The domain is the project that contains the business logic. Here are the details below: |
+| 4.a | Performance improvement | Some use cases take too long to respond (approximately 5 seconds). I need to parallelize my asynchronous calls and test that each use case responds in less than 2 seconds (ideally less) |
+| 4.b | Cache generalisation | I have set up Redis for some use cases, but I need to generalize it across all use cases (where it makes sense) |
+| 5. | **Infrastructure** | Exposes the different Polkadot pallets I want to integrate into Polkanalysis. For Polkadot, I expose the following pallets: Auctions, Autorship, Babe, Balances, Crowdloan, Identity (for older versions, newer versions are handled by PeopleChain below), NominationPools, Registrar, Session, Staking, System, Timestamp. |
+| 5.a | Delegate to other chain | Improve the system that delegates certain calls to parachains like PeopleChain. I am not taking into account the block time, and my calls to PeopleChain are inconsistent.|
+| 6. | **New spec version version** | When a new spec version is deployed, I still have too much manual work. I need to develop batches to automate this process, specifically generating the new version, compiling it, and producing the associated .dll file. |
+
+### Milestone 0 - Works that already be done
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT (link to [this commit](https://github.com/Apolixit/Polkanalysis/pull/37/commits/368923f840c48c58f2bb17d7a9cfea81573dc63b)) |
+| **0b.** | Documentation | The Polkanalysis code is documented as much as possible to be understandable and reusable by other developers. Each method includes a brief summary to explain its purpose. Each project has its own Readme file. |
+| **0c.** | Testing and Testing Guide | The code coverage of the application is 60%. There is a mix of unit tests and integration tests (which directly call the node). |
 | **0d.** | Docker | We will provide a docker compose file that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Code quality | The project is analyzed with each build on [SonarCloud](https://sonarcloud.io/project/overview?id=Apolixit_Polkanalysis) to ensure clean, stable, and consistent code. |
 | **0f.** | .NET Aspire | In addition to the docker compose file, for local testing purposes, I will add a .NET Aspire project that allows launching the applications that make up Polkanalysis from a dashboard and aggregating logs/metrics/traces within a single application. |
@@ -286,11 +315,29 @@ However, there are still a number of technical difficulties that I haven't fully
 
 I plan to maintain this project and continue integrating various Polkadot parachains in the future (Asset Hub, Coretime, Collective, and Hydration as well). My goal is to first release the version described in Milestone 1 before adding these parachains.
 
-As for funding, I still need to work on it, but I’d like to incorporate pricing for API usage. By default, the API will be public and free, but with a free plan that limits the number of requests per second (primarily to avoid excessive hosting costs and prevent spamming from bots).
+As for funding, I still need to work on it, but I’d like to incorporate pricing for API usage (check details in "Marketing and long term" section). By default, the API will be public and free, but with a free plan that limits the number of requests per second (primarily to avoid excessive hosting costs and prevent spamming from bots).
 I think monetizing higher-tier plans that allow businesses to access a significantly larger number of requests would be a good approach.
 
 Depending on the popularity of the project, I may consider hiring developers to help or outsourcing part of the work.
 In any case, the project does not aim, at least initially, to manage all existing parachains, nor to compete with the major explorers out there (such as Subscan).
+
+## Marketing and long term
+
+The goal of this project is to cover its operational costs.
+
+### Marketing Strategies
+1. *Monetize the API* :
+By default, the API will be free to use, with an integrated rate limiter. If individuals or companies wish to request more data, a paid plan will be offered along with an API KEY.
+2. *Custom Endpoints* :
+For certain users, if there is a need for new endpoints for their usage, these will be charged.
+3. *Data Extraction* :
+Certain data can be extracted upon request, as long as Polkanalysis possesses it, and charges will apply based on the complexity and volume of the request.
+
+### Cost-Saving Strategies
+1. *Store relevant data in the database* :
+The goal will be to store relevant data in the database to avoid excessive billing. To achieve this, I plan to conduct studies (typically with Matomo Analytics) to analyze which pages generate traffic and which pages are the least consulted. This will help in providing a tool with content that interests internet users and customers.
+2. *Potentially retain data for a limited Time* :
+I am currently saving all events from each block in the database. The idea would be to keep only the last X months worth of data to prevent unnecessarily bloating the database. I will primarily check whether users analyze the blockchain mainly in the past or primarily in the present.
 
 ## Additional Information :heavy_plus_sign:
 
@@ -306,7 +353,9 @@ To conclude, this is the first grant I am requesting (for any project).
 
 I am available if you’d like to have a conversation or see some initial demos of the application :)
 
-## Screenshots of the API
+## Screenshots
+
+### API
 ![image](https://bl6pap003files.storage.live.com/y4mPr1uHiOeZFQ86ll6EnPZkE3kOGQzwQw33BkCMTxlHEqUs5eHmtwM3rB8r2dFN7VSyaKHFew-69ig8odRnPvKuOrA2NHl-if9tbWUdm1JVsvSJ-1uJYZ7c9foRlanbOlEfsrCIVT4kemC4Z-EHxkgXH9tH_3pZhLm25fxIUpOPYX0TkTK2cxTa9_SuEdfXQRu8AZ3O7ldrB5z8HWQTAJNNg?encodeFailures=1&width=1346&height=792)
 
 ![image](https://bl6pap003files.storage.live.com/y4m8FIafhVxQrHt_2otBSw34HIfY6e_aNnFzj5V1qw13jkboNnsFNyom-hifBKiGjHR2DCP6yEffynz50xV5RL331B0-Ed6blVqyfprU6oHbxSKRbJ1EHGebUWBOWbXvxtKizjDR3f7nX1Ghkvfjrou51o96L_ZKne-NOq4kxk2RGpGN3SxZYodDzS8Ho0iCBFgXXnSKUrgpasSH6y5AQ-wVA?encodeFailures=1&width=908&height=855)
@@ -314,3 +363,8 @@ I am available if you’d like to have a conversation or see some initial demos 
 ![image](https://bl6pap003files.storage.live.com/y4mX1J45esfMXakY_FjiAQwron7A_OyDX9f7-Pr-FM7yGt_bI-n2R-3mraFn67D8UdES8PUmTmGe7_LKOLKmAZjn2uaWBILwwuQk8XBY0Z4hD8fkH1bjLF2VBlQm-_PZJcodp3OzthFFBi33L2JhkHgSbUsrXDenluz4CoPU54dKAPaeqx68NY65AntEx9UuI0ToYmRtdBcX-TlOungYXL3-w?encodeFailures=1&width=998&height=843)
 
 
+### Worker
+
+![image](https://bl6pap003files.storage.live.com/y4m2BrsF_4T-bdYgpAzhwIYjfcN_GVYWJD40LvUXpb6mbJJqigXroNSE7-plc7UZul823YVrof6u0TrFzvDi9dsAMxCYF1toe8iglC4VxIWBg2HHChjzHXJx8P6LoPan0rdO1QNJvgUJn9kBWTkDU_jlTXSgrFloqIzXns_Qj5SCdJLut0GRZlynU3diGLiNmmbko-ftGqyCAKJYCmhxX8eBIXIl3vCc8SvChDS-vg0G2k?encodeFailures=1&width=1131&height=870)
+
+![image](https://bl6pap003files.storage.live.com/y4mZSgjDtCDnghlrLRLxtLYJf-CXtFasA5_dnv1n2aBE6_aCu_fPBQg_atZoke5CKw2IIcm48YMnebTMg2i7PO6aa_uWuAuTR4_bdq-hhPGhTP3GmFiiZaO8WWXn_6FMak6gAwT10RNpXQvy_8ZlMQP-WMDJ0QHrCqhxdCDRBDVeOxfRY0lcZdEKji-fBewjnzZABos70KqsyM5eVE33maro2F9m5V7dJ9NeUHVFxlvDBU?encodeFailures=1&width=1295&height=905)
