@@ -1,4 +1,4 @@
-# CryptoCheckout
+fr# CryptoCheckout
 
 - **Team Name:** CrypCheck's team (solo at this moment)
 - **Payment Details:**
@@ -104,10 +104,8 @@ The previous repos are myost recent attemps, both are on the farcaster protocol 
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
-
-
+- https://www.linkedin.com/in/benraouane-soufiane-5993bb275
+- 
 ## Development Status :open_book:
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
