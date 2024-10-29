@@ -105,9 +105,16 @@ The previous repos are myost recent attemps, both are on the farcaster protocol 
 ### Team LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/in/benraouane-soufiane-5993bb275
-- 
+
 ## Development Status :open_book:
 
+The repo of the whole CryptoCheckout's project: https://github.com/BenraouaneSoufiane/cryptocheckout.co/tree/main/site
+
+Built with php (without any framework) & jQuery, uses nosql bds for performance issues (located in the db directory)
+- index.php constract the main page & contain the core functionalities, includes all the api requests (generating new merchant id, handling the script inclusion call, validating the payments,...).
+-folders with crypto currencies symbols contain the qr images for each transaction.
+- other folders contain the main index.php file of each page
+- 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
 - links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
