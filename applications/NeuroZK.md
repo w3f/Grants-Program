@@ -153,7 +153,7 @@ Team Github Handles.
 
 We have completed the development of an on-chain task verification system under CyberDock as a part of our previous grant application, it contained three parts - Substrate pallets, Front end app and k3s worker configurations. While task verification made more sense for batch files, we also developed log streaming to provide work proofs for continously running applications.
 
-<img width="1448" alt="7" src="https://github.com/user-attachments/assets/67d7535a-8ea6-4660-8bdd-bc8de22ea639">
+<img width="1448" alt="7" src="https://github.com/user-attachments/assets/67d7535a-8ea6-4660-8bdd-bc8de22ea639"/>
 
 Through this process, we identified the need for having a much simpler provider onboarding experience, so we are developing a custom node implementation called Cyborg worker nodes using which providers can connect their resources to the Cyborg parachain just by downloading and installing an executable file on their VMs. This also aligns with our focus to launch a plug and play hardware series called 'Cyborg miners' that directly connects to the parachain like an ASIC miner.
 
