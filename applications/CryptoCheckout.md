@@ -120,7 +120,7 @@ this project used the official js packages for each crypto currency to implement
 Below are examples but not limited:
     - For Polkadot, this project uses @polkadot/api package: https://www.npmjs.com/package/@polkadot/api fellowing this documentation: https://polkadot.js.org/docs/ui-keyring/start/install.
     - For Ethereum & Ethereum like currencies, this project uses the ethers package to generate & import wallet for a such a transaction & the official package for each currency fellowing also the official docs: https://www.npmjs.com/package/ethers, fellowing its official documentation: https://docs.ethers.org/v5/
-    - 
+    - Same thing with other currencies, this project used the web3.js package to generate & import HD wallets to be used for transactions
 
 ## Development Roadmap :nut_and_bolt:
 
