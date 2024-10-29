@@ -116,6 +116,7 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 - Other folders contain the main index.php file of each page.
   
 - This project used the official documentation for each crypto currency his associated js library to implement the basic operations like generating wallets, creating, signing & submitting transaction
+    - For Polkadot, this project uses @polkadot/api lib 
 
 ## Development Roadmap :nut_and_bolt:
 
