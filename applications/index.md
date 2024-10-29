@@ -56,6 +56,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [hack-ink](https://linktr.ee/aurevoirxavier)                       | [Polkadot Runtime Releaser](./polkadot-runtime-releaser.md)                     | [GitHub](https://github.com/AurevoirXavier)                 | ☐          |        ☐       |      ☐      |
 | [Coong Crafts](https://github.com/CoongCrafts)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☐       |      ☐      |
 | [Tuguldur Baigalmaa](https://philoniare.com/about)                       | [Bison](./bison.md)                     | [GitHub](https://github.com/philoniare)                 | ☐          |        ☐       |      ☐      |
+| [Cyborg Network](https://cyborgnetwork.io/)                       | [NeuroZK](./NeuroZK.md)                     | [GitHub](https://github.com/Cyborg-Network)               | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
