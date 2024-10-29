@@ -115,8 +115,10 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 - Folders with crypto currencies symbols contain the qr images for each transaction.
 - Other folders contain the main index.php file of each page.
   
-- This project used the official documentation for each crypto currency his associated js library to implement the basic operations like generating wallets, creating, signing & submitting transaction, but all are not applicable due to the privacy issue (the merchant will not generate their wallets anymore using CryptoCheckout, they only share with us his addresses)
-    - For Polkadot, this project uses @polkadot/api lib: https://www.npmjs.com/package/@polkadot/api (the documentation is included in the page).
+- At the initial release (the changelog available in the site)
+this project used the official js packages for each crypto currency to implement the basic operations like generating wallets, creating, signing & submitting transaction fellowing the official documentation for each crypto currency.
+Below are examples but not limited:
+    - For Polkadot, this project uses @polkadot/api lib: https://www.npmjs.com/package/@polkadot/api.
     - For EVM cryptp currencies, this project uses the web3.js & ethers packages:
     - 
 
