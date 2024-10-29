@@ -98,12 +98,9 @@ Benraouane Soufiane: I started my career as envato author (making WordPress plug
 ### Team Code Repos
 
 - https://github.com/BenraouaneSoufiane/hypersub-bot
-- https://github.com/{your_organisation}/{project_2}
+- https://github.com/BenraouaneSoufiane/glodollar-donation-frame/tree/main
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+The previous repos are myost recent attemps, both are on the farcaster protocol (decentralized social media), the second repo uses the nextjs open graph images
 
 ### Team LinkedIn Profiles (if available)
 
