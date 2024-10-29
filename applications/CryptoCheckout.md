@@ -1,4 +1,4 @@
-fr# CryptoCheckout
+# CryptoCheckout
 
 - **Team Name:** CrypCheck's team (solo at this moment)
 - **Payment Details:**
@@ -94,13 +94,13 @@ and Challenges, Denny & Hari Sutra Disemadi, Universitas Muhammadiyah Surakarta,
 - **Registered Legal Entity:** (Still not incorporated).
 
 ### Team's experience
-Benraouane Soufiane: I started my career as envato author (making WordPress plugins/themes, selling them within the marketplace), then build the WP auto translator known as Hirak, an online tool like POEDIT, then by 2019, I developed mini web apps with thier apis such as translator, ip to country, currency exchange rates, until 2021 I started with the AI where I've build the OCR using tesseractjs & faceapi using tensorflowjs, by 2022 I started with web3 & the development of the CryptoCheckout
+Benraouane Soufiane: I started my career as an Envato author (making WordPress plugins/themes, selling them within the marketplace), then build the WP auto translator known as Hirak, an online tool like POEDIT, then by 2019, I developed mini web apps with thier apis such as translator, ip to country, currency exchange rates, until 2021 I started with the AI where I've build the OCR using tesseractjs & faceapi using tensorflowjs, by 2022 I started with web3 & the development of the CryptoCheckout
 ### Team Code Repos
 
 - https://github.com/BenraouaneSoufiane/hypersub-bot
 - https://github.com/BenraouaneSoufiane/glodollar-donation-frame/tree/main
 
-The previous repos are myost recent attemps, both are on the farcaster protocol (decentralized social media), the second repo uses the nextjs open graph images
+The previous repos are my most recent attemps, both are on the farcaster protocol (decentralized social media), the second repo uses the nextjs open graph images
 
 ### Team LinkedIn Profiles (if available)
 
@@ -115,13 +115,7 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 - Folders with crypto currencies symbols contain the qr images for each transaction.
 - Other folders contain the main index.php file of each page.
   
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+- This project used the official documentation for each crypto currency his associated js library to implement the basic operations like generating wallets, creating, signing & submitting transaction
 
 ## Development Roadmap :nut_and_bolt:
 
