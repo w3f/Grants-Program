@@ -55,6 +55,8 @@ Besides, **there is a clear difference between an application being accepted and
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
 | [hack-ink](https://linktr.ee/aurevoirxavier)                       | [Polkadot Runtime Releaser](./polkadot-runtime-releaser.md)                     | [GitHub](https://github.com/AurevoirXavier)                 | ☐          |        ☐       |      ☐      |
 | [Coong Crafts](https://github.com/CoongCrafts)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☐       |      ☐      |
+| [Tuguldur Baigalmaa](https://philoniare.com/about)                       | [Bison](./bison.md)                     | [GitHub](https://github.com/philoniare)                 | ☐          |        ☐       |      ☐      |
+| [Cyborg Network](https://cyborgnetwork.io/)                       | [NeuroZK](./NeuroZK.md)                     | [GitHub](https://github.com/Cyborg-Network)               | ☐          |        ☐       |      ☐      |
 
 [🔝](#top)
 
@@ -496,7 +498,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Banksy Finance](http://www.banksy.finance/)    | [NFT Pool-Based Lending Hub](./Banksy_Finance.md)                                         | [GitHub](https://github.com/Banksy-Finance)         | ☐          |       ☐        |     ☐     |
 | [SubDAO Labs](https://www.subdao.network/)      | [PolkaSign - Web3.0 app for electronic agreements](./SubDAO-Chrome-Extension.md)          | [GitHub](https://github.com/subdao-network)         | ☐          |       ☒        |     ☒     |
 | [Valibre](https://valibre.org)                  | [People Local Interactions Protocol (PLIP)](./plip.md)                                    | [GitHub](https://github.com/valibre-org/)           | ☐          |       ☐        |     ☐     |
-| [Reaudito](https://shivarthu.reaudito.com/#/)   | [Shivarthu: A blockchain-based decentralized governance system](./Shivarthu.md)           | [GitHub](https://github.com/amiyatulu/shivarthu)    | ☐          |       ☒        |     ☐     |
+| [Reaudito](https://shivarthu.reaudito.com/#/)   | [Shivarthu: A blockchain-based decentralized governance system](./Shivarthu.md)           | [GitHub](https://github.com/amiyatulu/shivarthu)    | ☐          |       ☒        |     ☒     |
 | Uniscan                                         | [NFT Explorer](./nft_explorer.md)                                                         | [GitHub](https://github.com/wuminzhe)               | ☐          |       ☒        |     ☒     |
 | [LimeChain](https://limechain.tech)             | [Subsembly - Support for GRANDPA](./assemblyscript-scale-codec.md)                        | [GitHub](https://github.com/LimeChain)              | ☐          |       ☒        |     ☒     |
 | [OpenSquare](https://www.opensquare.network)    | [Off-chain voting platform](./OpenSquare_paid_qa_protocol.md)                             | [GitHub](https://github.com/opensquare-network/)    | ☐          |       ☒        |     ☒     |
