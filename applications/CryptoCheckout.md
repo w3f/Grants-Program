@@ -119,7 +119,7 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 this project used the official js packages for each crypto currency to implement the basic operations like generating wallets, creating, signing & submitting transaction fellowing the official documentation for each crypto currency.
 Below are examples but not limited:
     - For Polkadot, this project uses @polkadot/api package: https://www.npmjs.com/package/@polkadot/api fellowing this documentation: https://polkadot.js.org/docs/ui-keyring/start/install.
-    - urrencies, this project uses the web3.js & ethers packages:
+    - For Ethereum & ethereum like currencies, this project uses the ethers package:
     - 
 
 ## Development Roadmap :nut_and_bolt:
