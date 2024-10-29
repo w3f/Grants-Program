@@ -67,14 +67,14 @@ This project does not provide UI for the merchant's transactions history or send
     - Scientific article: https://journals2.ums.ac.id/laj/article/download/743/480/5791, Cryptocurrencies as Digital Payment Media: Opportunities 
 and Challenges, Denny & Hari Sutra Disemadi, Universitas Muhammadiyah Surakarta, Feb 2023 (the page 7/15)
     - Case study: https://www2.deloitte.com/content/dam/Deloitte/us/Documents/audit/us-corporates-using-crypto-pov.pdf, The Business Benefit of Using Cryptocurrency, Deloitte US (the pages 3/16, 4/16)
-    - Press article (includes case study): https://www.cbn.com.cy/article/2024/5/9/774001/why-businesses-are-turning-to-crypto-payments/, Charlie Rexstrew, Cyprus Business News. 
-- How did you identify these Universitas Muhammadiya Surakarta
-https://journals2.ums.ac.id › lajPDF
-Cryptocurrencies as Digital Payment Medi? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
+    - Press article (includes case study): https://www.cbn.com.cy/article/2024/5/9/774001/why-businesses-are-turning-to-crypto-payments/, Charlie Rexstrew, Cyprus Business News.
+
+- There are no projects like this in the Substrate / Polkadot / Kusama ecosystem.
+    - The reasons that does not make it happens, successful or attempted are:
+        - Risky step (creating the saas is complexe & require much work & time without garanteed results).
+        - A time issue (which will be available next few months).
+          
+- There are many projects like this in related ecosystems. 
 
 ## Team :busts_in_silhouette:
 
