@@ -78,30 +78,23 @@ and Challenges, Denny & Hari Sutra Disemadi, Universitas Muhammadiyah Surakarta,
 
 ## Team :busts_in_silhouette:
 
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
-
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Benraouane Soufiane (solo at this moment)
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Benraouane Soufiane
+- **Contact Email:** admin@cryptocheckout.co or benrawane2012@gmail.com
+- **Website:** /
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** (still not incorporated).
+- **Registered Legal Entity:** (Still not incorporated).
 
 ### Team's experience
-
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
-
+Benraouane Soufiane: I started my career as envato author (making WordPress plugins/themes, selling them within the marketplace), then build the WP auto translator known as Hirak, an online tool like POEDIT, then by 2019, I developed mini web apps with thier apis such as translator, ip to country, currency exchange rates, until 2021 I started with the AI where I've build the OCR using tesseractjs & faceapi using tensorflowjs, by 2022 I started with web3 & the development of the CryptoCheckout
 ### Team Code Repos
 
 - https://github.com/{your_organisation}/{project_1}
