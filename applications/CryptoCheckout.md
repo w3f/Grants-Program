@@ -3,6 +3,8 @@
 - **Team Name:** CrypCheck's team (solo at this moment)
 - **Payment Details:**
   - **DOT**: 12gaMBQBEFbNRPtjGtccxf9iZfT9RguPmb3Bj2D8gNNuHGRL.
+  - **USDC (ERC20)**:
+    0xa3A235c475Dbb8f4D7220366251C6E2Ff43C6755
 - **Level:** 1
 
 ## Project Overview :page_facing_up:
@@ -128,14 +130,14 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 
 - **Total Estimated Duration:** Duration of the whole project is 1 month.
 - **Full-Time Equivalent (FTE):**  1 FTE (considering 8 hours per day).
-- **Total Costs:** 2,200 USD.
-- **DOT %:** 100%.
+- **Total Costs:** 4,200 USD.
+- **DOT %:** 50%.
 
 ### Milestone 1 WordPress plugin- WooCommerce payment methods extension
 
 - **Estimated duration:** 1-2 weeks
 - **FTE:**  1
-- **Costs:** 1,000 USD
+- **Costs:** 2,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -150,7 +152,7 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 
 - **Estimated duration:** 1-2 weeks
 - **FTE:**  1
-- **Costs:** 1,200 USD
+- **Costs:** 2,200 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
