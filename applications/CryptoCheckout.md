@@ -120,7 +120,7 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
         - For Polkadot, this project used @polkadot/api package: https://www.npmjs.com/package/@polkadot/api fellowing this documentation: https://polkadot.js.org/docs/ui-keyring/start/install.
     - After the update, this project ignore the previous packages when generating & importing the wallet to be used for the transactions, to match the addresses with the TrustWallet & Metamask apps/extensions, it used the official TrustWallet package:
         - https://www.npmjs.com/package/@trustwallet/wallet-core, fellowing this official doc: https://developer.trustwallet.com/developer/wallet-core/integration-guide/wallet-core-usage.
-        -  Duo to the pricacy of the merchants, the previous developments/edits were decprecated, the merchants prefer to not generate their wallets with CryptoCheckout, it enables the merchants to accept DOT by sharing only their addresses (the last update).
+        -  Due to the pricacy of the merchants, the previous developments/edits were decprecated, the merchants prefer to not generate their wallets with CryptoCheckout, it enables the merchants to accept DOT by sharing only their addresses (the last update).
           
 ## Development Roadmap :nut_and_bolt:
 
