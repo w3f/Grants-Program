@@ -192,5 +192,5 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 Additional info:
 - We already build private mail servers & contact our clients, we don't get them first time, but let us understand our client needs, resulting updating functionalities, the UI (accessibility of the product), the pricing,...
-- There are no ther teams contibute financially to this project.
+- There are no other teams contibute financially to this project.
 - We've applied for pre seed funding ($200k) to the Ethereum foundation (rejected).
