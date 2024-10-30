@@ -3,8 +3,7 @@ Bono Network
 
 ---
 
-**Team Name**  
-Bono Foundation
+**Team Name:** Bono Foundation
 
 ---
 
