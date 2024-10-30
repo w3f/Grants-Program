@@ -1,5 +1,4 @@
-**Name of your Project**  
-Bono Network
+# Bono Network
 
 ---
 
