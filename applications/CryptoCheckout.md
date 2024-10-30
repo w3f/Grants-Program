@@ -159,17 +159,21 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Shoify app: Shopify payment app | We will create a Shopify payment app that will add crypto payments to such Shopify store, unlike WordPress, the Shopify apps must be hosted, running on such vm or vps & connected to the main server, not just a source code, unlike other Shopify apps, the development of payment apps requires a review to unlock features related with payment process |
+| 1. | Shoify app: Shopify payment app | We will create a Shopify payment app that will add crypto payments to such Shopify store, unlike WordPress, the Shopify apps must be hosted, running on such vm or vps & connected to the main server, not just a source code, & unlike other Shopify apps, the development of payment apps requires a review to unlock features related with payment processing. |
 | 1a. | The Shopify payment app's phase 1 | Developing the admin app settings, paying 200$ & submit for review. |
 | 1b. | The Shopify payment app's phase 2 | Developing the UI of the buyer, implmenting the logic between admin app settings & the buyer UI, connections between front end & the backend.... |
 
 
 ## Future Plans
 
-Please include here
+Future plans are:
+    
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
+- Initially, we'll create crowdfundig campaign on any platform republic or kickstarter for example for pre seed funding, then via VCs, it may also via token sale.
+- Marketing plans in the short term are:
+    - Introducing our saas to any inline business, via email marketing fellowing spam act 2003/standards, by building our private mail servers, there are 200k of most visited online business, 6M whole online businesses.
+    - Introducing our saas via the social media platforms, x for example if we get funded.
+    - Making partnerships with any potential partner.
 - the team's long-term plans and intentions in relation to it.
 
 ## Referral Program (optional) :moneybag:
