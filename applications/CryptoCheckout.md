@@ -2,7 +2,7 @@
 
 - **Team Name:** CrypCheck's team (solo at this moment)
 - **Payment Details:**
-  - **DOT**: 12EsK6AEtBN2XKvu2hZiR9jKpDvYFs7tdgzoLwAdmUWnFjj9.
+  - **DOT**: 12gaMBQBEFbNRPtjGtccxf9iZfT9RguPmb3Bj2D8gNNuHGRL.
 - **Level:** 1
 
 ## Project Overview :page_facing_up:
