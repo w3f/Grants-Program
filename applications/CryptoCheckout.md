@@ -72,7 +72,7 @@ and Challenges, Denny & Hari Sutra Disemadi, Universitas Muhammadiyah Surakarta,
 - There are no projects like this in the Substrate / Polkadot / Kusama ecosystem.
     - The reasons that does not make it happens, successful or attempted are:
         - Risky step (creating the saas is complexe & require much work & time without garanteed results).
-        - A time issue (which will be available next few months).
+        - A time issue (which may be available next few months).
           
 - There are many projects like this in related ecosystems. 
 
