@@ -15,7 +15,7 @@ The team interesting developing this project to redefine the online payments by 
 #### Architecture
 ![](https://cryptocheckout.co/archi.jpg)
 #### Tech stack
-This project uses apache as web server (it can be nginx), php & javascript for the front & the back ends, nosql db to store useful data such as merchants, transactions, bayer details
+This project uses apache as web server (it can be nginx), php & javascript for the front & the back ends, nosql db to store useful data such as merchants, transactions, bayer details...
 #### Documentation
 Accepting crypto payments with CryptoCheckout does not require specific tech stack.<br/>
 The merchant must insert valid DOT address & generate merchant ID from the home page (no signup required).<br/>
@@ -120,7 +120,8 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
         - For Polkadot, this project used @polkadot/api package: https://www.npmjs.com/package/@polkadot/api fellowing this documentation: https://polkadot.js.org/docs/ui-keyring/start/install.
     - After the update, this project ignore the previous packages when generating & importing the wallet to be used for the transactions, to match the addresses with the TrustWallet & Metamask apps/extensions, it used the official TrustWallet package:
         - https://www.npmjs.com/package/@trustwallet/wallet-core, fellowing this official doc: https://developer.trustwallet.com/developer/wallet-core/integration-guide/wallet-core-usage.
-        -  The last update ignore all that previous development, for privacy issue, (the merchant prefer to not generate their wallet with CryptoCheckout, so we enable the merchant accept DOT by sharing only their addresses), the previous updates are DEPREACATED now.
+        -  Duo to the pricacy of the merchants, the previous developments/edits were decprecated, the merchants prefer to not generate their wallets with CryptoCheckout, it enables the merchants to accept DOT by sharing only their addresses (the last update).
+          
 ## Development Roadmap :nut_and_bolt:
 
 This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
