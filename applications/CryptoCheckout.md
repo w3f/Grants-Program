@@ -94,7 +94,7 @@ and Challenges, Denny & Hari Sutra Disemadi, Universitas Muhammadiyah Surakarta,
 - **Registered Legal Entity:** (Still not incorporated).
 
 ### Team's experience
-Benraouane Soufiane: I started my career as an Envato author (making WordPress plugins/themes, selling them within the marketplace), then build the WP auto translator known as Hirak, an online tool like POEDIT, then by 2019, I developed mini web apps with thier apis such as translator, ip to country, currency exchange rates, until 2021 I started with the AI where I've build the OCR using tesseractjs & faceapi using tensorflowjs, by 2022 I started with web3 & the development of the CryptoCheckout
+Benraouane Soufiane: he started his career as an Envato author (making WordPress plugins/themes, selling them within the marketplace), then he built the WP auto translator known as Hirak, an online tool like POEDIT, then by 2019, he developed mini web apps with their apis such as translator, ip to country, currency exchange rates, until 2021 he started with the AI where where he built the OCR using the tesseractjs package & the faceapi using the tensorflowjs package, by 2022 he started with the web3 & the development of the CryptoCheckout
 ### Team Code Repos
 
 - https://github.com/BenraouaneSoufiane/hypersub-bot
