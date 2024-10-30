@@ -169,13 +169,16 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 Future plans are:
     
 
-- Initially, we'll create crowdfundig campaign on any platform republic or kickstarter for example for pre seed funding, then via VCs, it may also via token sale.
+- Funding this project initially, by creating crowdfunding campaign on any platform, republic or kickstarter for example, for a pre seed round, then via VCs, it may also via token sale.
 - Marketing plans in the short term are:
     - Introducing our saas to any inline business, via email marketing fellowing spam act 2003/standards, by building our private mail servers, there are 200k of most visited online business, 6M whole online businesses.
     - Introducing our saas via the social media platforms, x for example if we get funded.
     - Making partnerships with any potential partner.
-- the team's long-term plans and intentions in relation to it.
-
+- After we get funded, we build the team & attaching roles & responsibilities, starting with
+    - Growth resp that contact & handle partnerships
+    - Full stack/DevOps engineers to customize, add new features, monitor & tracing fails,...
+    - PR/marketing agents
+    - Customer support to handle requests from clients & collect feedbacks.
 ## Referral Program (optional) :moneybag:
 
 You can find more information about the program [here](../README.md#moneybag-referral-program).
@@ -185,10 +188,9 @@ You can find more information about the program [here](../README.md#moneybag-ref
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** via ChatGPT
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+Additional info:
+- We already build private mail servers & contact our clients, we don't get them first time, but let us understand our client needs, resulting updating functionalities, the UI (accessibility of the product), the pricing,...
+- There are no ther teams contibute financially to this project.
+- We've applied for pre seed funding ($200k) to the Ethereum foundation (rejected).
