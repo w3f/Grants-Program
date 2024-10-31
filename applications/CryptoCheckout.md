@@ -62,7 +62,7 @@ This project does not provide UI for the merchant's transactions history or send
 - The project fit the ecosystem in its main coin (DOT), more specific in its transactions, simply by confirm such amount were sent from such buyer to such seller.<br/>
 - The target audiance is any person has DOT address/wallet, it could be as a merchant has online business want to accept DOT, or naturel user want to pay using his DOT balance.<br/>
 - This project meet these needs:
-    - How to exploit the large maket ($2.28T), serve the large uaer base (at least 500M).
+    - How to exploit the large maket ($2.28T), serve the large user base (at least 500M).
     - New online payments solution with reduced transaction fee.
     - Financial technology with high security levels, with more freedom (decentralized) & confidential.
 - The previous needs identified within:
@@ -157,7 +157,7 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user (merchant) can accept DOT payments on his WooCommerce store, & how another user (buyer) use his DOT balance to purchase something using test network, which will show how the new functionality works. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user (merchant) can accept DOT payments on his Shopify store, & how another user (buyer) use his DOT balance to purchase something using test network, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
