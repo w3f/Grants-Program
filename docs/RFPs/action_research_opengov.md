@@ -1,7 +1,11 @@
 # Action Research for OpenGov
 
-* **Status:** Open (anyone is allowed to apply) 
-* **Proposer:**  [Anaelle | Parity](https://github.com/anaelleparity)
+:::danger
+This Request for Proposals is _closed_, meaning we are not looking for any more proposals on this topic at the moment.
+:::
+
+* **Status:** Closed
+* **Proposer:** [Anaelle | Parity](https://github.com/anaelleparity)
 * **Projects you think this work could be useful for** [optional]: [OpenGov](https://wiki.polkadot.network/docs/learn-polkadot-opengov-index)
 * **Teams/People that could deliver the RFP** [optional]: [The Web4 initiative](https://forum.polkadot.network/t/the-web4-initiative-decentralizing-user-powers-and-controls/4202/3), [Address Labs](https://polkadot.polkassembly.io/referenda/450), [Metagov](https://polkadot.polkassembly.io/post/1777), [Polkalytics](https://polkadot.polkassembly.io/referenda/459), and other blockchain ecosystem contributors with academic/analyst backgrounds.
 

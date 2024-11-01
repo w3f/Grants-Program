@@ -92,7 +92,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
-- [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
 
@@ -116,9 +115,9 @@ The Operations Team takes care of legal documents, invoicing, and remittances.
 
 ## :level_slider: Levels
 
-The W3F Grants Program offers different grant levels to help you best, depending on your current stage. 30% of any grant is paid out in vested DOT.
+The W3F Grants Program offers different grant levels to help you best, depending on your current stage. At least 50% of any grant is paid out in vested DOT.
 
-### :hatching_chick: Level 1 (= InstaGrants)<!-- omit in toc -->
+### :hatching_chick: Level 1<!-- omit in toc -->
 
 - **Target:** Individuals & small teams
 - **Amount:** Up to $10,000
@@ -141,7 +140,7 @@ The W3F Grants Program offers different grant levels to help you best, depending
 
 ## :pencil: Process
 
-> **:loudspeaker:** 30% of each milestone payment is made in DOT (linearly vesting over 2 years). The remaining 70% is paid in_either_ USDT or USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets) _or_ fiat (USD, EUR, CHF). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** At least 50% (as defined in your grant agreement) of each milestone payment is made in DOT (linearly vesting over 2 years). The remainder is paid in USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -216,7 +215,7 @@ Please note that:
 
 We give away 500 USD to each referral of a successful grant application by _anyone having previously worked on a Web3 Foundation grant_ or _a [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors)_. Web3 Foundation and Parity employees do not qualify for the program, even if they previously worked on a grant.
 
-In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in USDT/USDC on Polkadot AssetHub after delivery and approval of the first milestone.
+In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in USDC on Polkadot AssetHub after delivery and approval of the first milestone.
 
 ## :bulb: Help
 
@@ -269,7 +268,6 @@ flowchart LR
     style C stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style D stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style F stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
-    style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     
     click C "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
     click D "https://polkadot.network/treasury" "https://polkadot.network/treasury/" _blank
@@ -280,7 +278,6 @@ flowchart LR
 
 The treasury is a pot of on-chain funds collected through transaction fees, slashing, staking inefficiencies, etc. The funds held in the treasury can be spent on spending proposals. Both [Polkadot](https://polkadot.network/) and [Kusama](https://kusama.network/) offer everyone the opportunity to apply for funding via the treasury. See:
 
-- [Treasury](https://polkadot.network/treasury/)
 - [Treasury Bounties](https://polkadot.subsquare.io/treasury/bounties)
 - [Polkadot Treasury Guide](https://docs.google.com/document/d/1IZykdp2cyQavcRyZd_dgNj5DcgxgZR6kAqGdcNARu1w)
 - [Kusama Treasury Guide](https://docs.google.com/document/d/1p3UQUjph5t8TVaWnTkfrI5mE-BABnM9Xvtuhdlhl6JE)
@@ -295,19 +292,20 @@ The best way to find out about upcoming hackathons is by following Polkadot on v
 
 Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
-- [Acala Grants Program](https://acala.network/ecosystem-program)
+- [Acala Ecosystem Program](https://acala.network/ecosystem-program)
 - [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program)
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
-- [Decentralized Futures Program](https://futures.web3.foundation/) 
+- [Decentralized JAM](https://jam.web3.foundation/) 
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
-- [OAK’s Developer Grants](https://oak.tech/community/grants/)
+- [Moondance Labs Ecosysytem Funding Program](https://www.moondancelabs.com/ecosystem-grants-w3f)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
-- [SubQuery Grants Programme](https://subquery.network/grants)
+- [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
+- [Polkadot Assurance Legion](https://polkadotassurance.com/)
 
 ## :information_source: License<!-- omit in toc -->
 

@@ -16,15 +16,15 @@ XCM (Cross-Consensus Message) is a messaging format and language used to communi
 
 In the past two proposals, support for ordinary DMP, UMP, HRMP, XCM V3/V4, and snowBridge (Ethereum bridge) has been completed. This proposal is a continuation of the previous proposals.
 
-1. Add feature for the Polkadot <=> Kusama bridge(https://wiki.polkadot.network/docs/learn-guides-dot-ksm-bridge), including  message sending and message tracking.
+1. Add feature for the Polkadot \<=\> Kusama bridge(https://wiki.polkadot.network/docs/learn-guides-dot-ksm-bridge), including  message sending and message tracking.
 2. Message tracking needs to be adjusted after the recent messageQueue pallet upgrade, and this proposal will also adjust message tracking.
 3. Update the mainnet configuration of the Ethereum Bridge.
 
 ### Project Details
 
-1. Add feature for the Polkadot <=> Kusama bridge(https://wiki.polkadot.network/docs/learn-guides-dot-ksm-bridge), including cross-chain transfers of native tokens and foreign tokens, as well as message tracking. Message tracking includes tracking messages from the initiating chain and the receiving chain.
+1. Add feature for the Polkadot \<=\> Kusama bridge(https://wiki.polkadot.network/docs/learn-guides-dot-ksm-bridge), including cross-chain transfers of native tokens and foreign tokens, as well as message tracking. Message tracking includes tracking messages from the initiating chain and the receiving chain.
 2. Due to the removal of the **dmpQueue** and **xcmpQueue** pallets, message tracking needs to be adjusted. This proposal will adjust message tracking accordingly.
-3. The Ethereum Bridge has opened the Polkadot <=> Ethereum bridge in runtime [1002004](https://bridgehub-polkadot.subscan.io/runtime?version=1002004). This proposal will update the configuration of this bridge.
+3. The Ethereum Bridge has opened the Polkadot \<=\> Ethereum bridge in runtime [1002004](https://bridgehub-polkadot.subscan.io/runtime?version=1002004). This proposal will update the configuration of this bridge.
 
 ### Ecosystem Fit
 
@@ -72,7 +72,7 @@ I have many years of PHP development experience and nearly five years of blockch
 
 ## Development Status :open_book:
 
-I have researched the Polkadot <> Kusama bridge.
+I have researched the Polkadot \<\> Kusama bridge.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -94,7 +94,7 @@ I have researched the Polkadot <> Kusama bridge.
 |    0b. | Documentation                    | Simple documentation on how to use and how to test                                                                                                              |
 |    0c. | Testing and Testing Guide        | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker                           | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
-|     1. | Polkadot <=> Kusama message send | Support Polkadot <=> Kusama cross-chain message sending                                                                                                         |  
+|     1. | Polkadot \<=\> Kusama message send | Support Polkadot \<=\> Kusama cross-chain message sending                                                                                                         |  
 |     2. | Message tracking                 | Adjust message tracking after the recent messageQueue pallet upgrade                                                                                            |
 |     3. | Ethereum Bridge update           | Update the mainnet configuration of the Ethereum Bridge                                                                                                         |
 |     4. | CLI support                      | Add a command-line tool to send messages from Polkadot => Kusama                                                                                                |

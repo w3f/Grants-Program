@@ -1,7 +1,7 @@
 # Signet - Talisman
 
 - **Team Name:** Paraverse Foundation
-- **Payment Address:** 128tk6D5CvYvGFtvjTgZT8yrD2wPWZyczBoj8LzkmGpTNbo9 (USDC/AssetHub)
+- **Payment Address:** 16mJFuy5t1YzWdjTqU5LKzp9SarANLgbvWHSPiEM9v8BSoxJ (USDC/AssetHub)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -86,13 +86,13 @@ Alternate methods of managing staking positions, such as Polkadot Staking Dashbo
 
 ### Team members
 
-- Team leader: William Chen
+- Team leader: Nobyte
 - Team members: Nipsey, Glide, Chris Ling
 
 ### Contact
 
-- **Contact Name:** William Chen
-- **Contact Email:** william@talisman.xyz
+- **Contact Name:** Nobyte
+- **Contact Email:** t@talisman.xyz
 - **Website:** https://talisman.xyz
 
 ### Legal Structure
@@ -101,8 +101,6 @@ Alternate methods of managing staking positions, such as Polkadot Staking Dashbo
 - **Registered Legal Entity:** Paraverse Foundation
 
 ### Team's experience
-
-William is the COO of Talisman. He has first hand experience with intricacies of managing fully-on-chain entities, including treasury management, distributed workforce compensation processes and other internal financial and operational processes on both Polkadot and Ethereum.
 
 Nipsey is the co-founder and CTO of Talisman. Nipsey leads the effort around Talisman's nomination pools, which, together, are the largest in Polkadot, containing over 3 million DOT.
 
@@ -120,7 +118,7 @@ We have not previously applied for a grant at the Web3 Foundation.
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/replghost
+- https://github.com/0byt
 - https://github.com/jonathanpdunne
 - https://github.com/0xglide
 - https://github.com/chrisling-dev

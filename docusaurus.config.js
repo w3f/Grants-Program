@@ -8,7 +8,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Web3 Foundation Grants',
-  tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama.',
+  tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama',
   url: 'https://grants.web3.foundation',
   baseUrl: '/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
@@ -35,7 +35,8 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        'Do you want to help build <a target="_blank" rel="noopener noreferrer" href="https://graypaper.com/">JAM</a>? Checkout the <a target="_blank" rel="noopener noreferrer" href="https://jam.web3.foundation/">JAM Prize!</a>',
+        // 'Looking for advice on how to fund your project? Apply for Office Hours <a target="_blank" rel="noopener noreferrer" href="https://grants.web3.foundation/docs/office-hours">here!</a>',
+        'Looking for advice on how to fund your project? Apply for Office Hours <a href="https://grants.web3.foundation/docs/office-hours">here!</a>',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
