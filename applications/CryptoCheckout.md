@@ -145,7 +145,7 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user (merchant) can accept DOT payments on his WooCommerce store, & how another user (buyer) use his DOT balance to purchase something using test network, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant.|
 | 1. | WordPress plugin: WooCommerce payment method/gateway | We will create a WordPress plugin that will add crypto payments to the WooCommerce payment methods. |
 
 ### Milestone 2 Shopify app- Shopify payment app
@@ -160,7 +160,7 @@ Built with php (without any framework) & jQuery, uses nosql bds for performance 
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user (merchant) can accept DOT payments on his Shopify store, & how another user (buyer) use his DOT balance to purchase something using test network, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant.|
 | 1. | Shoify app: Shopify payment app | We will create a Shopify payment app that will add crypto payments to such Shopify store, unlike WordPress, the Shopify apps must be hosted, running on such vm or vps & connected to the main server, not just a source code, & unlike other Shopify apps, the development of payment apps requires a review to unlock features related with payment processing. |
 | 1a. | The Shopify payment app's phase 1 | Developing the admin app settings, paying 200$ & submit for review. |
 | 1b. | The Shopify payment app's phase 2 | Developing the UI of the buyer, implmenting the logic between admin app settings & the buyer UI, connections between front end & the backend.... |
