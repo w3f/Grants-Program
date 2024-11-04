@@ -9,13 +9,9 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
-#### **Swush: A Unified DEX Aggregator for Polkadot’s Cross-Chain Ecosystem**
+### **Swush: A Unified DEX Aggregator for Polkadot’s Cross-Chain Ecosystem**
 
 **The Case for a DEX Aggregator**
 
@@ -27,7 +23,9 @@ As the cross-chain asset and network grows, users increasingly need efficient, c
 
 A **DEX aggregator** directly addresses these issues by connecting to multiple decentralized exchanges (DEXs) and liquidity sources, allowing users to access the best swap rates, lowest fees, and minimal slippage for their trades. Within Polkadot, an aggregator can unify these scattered resources into a single, user-friendly interface, making DeFi more accessible and enhancing overall ecosystem liquidity.
 
-**Swush: A Solution Aligned with Polkadot’s Vision**
+### **Swush: A Solution Aligned with Polkadot’s Vision**
+
+![cover](https://github.com/user-attachments/assets/84090aea-7633-413f-a512-fe610388d50a)
 
 Swush is a DEX aggregator built on Polkadot Asset Hub, specifically to meet the needs of Polkadot’s cross-chain DeFi users. By leveraging cross-chain messaging (XCM), and aggregating assets from multiple parachains, Swush allows users to swap assets seamlessly across the ecosystem with minimal friction.
 
@@ -35,7 +33,7 @@ Key features include:
 
 - **Optimized Route Selection:** Real-time analysis of liquidity and fees ensures users receive the most cost-effective swap routes.
 - **User-Friendly Cross-Chain Swaps:** A simplified interface abstracts complex cross-chain steps, making transfers straightforward.
-- **Centralized Liquidity Access:** By aggregating from Polkadot’s Asset Hub and other parachains, [s](http://swush.me/)wush maximizes the utility of existing liquidity pools.
+- **Centralized Liquidity Access:** By aggregating from Polkadot’s Asset Hub and other parachains, swush maximizes the utility of existing liquidity pools.
 
 
 ### Ecosystem Fit
@@ -72,8 +70,7 @@ As outlined in the **The Case for a DEX Aggregator,** Polkadot’s ecosystem fac
 
  **4. Existing Similar Projects in Polkadot/Kusama**
 
-- While other DEXs exist in Polkadot, such as **Hydration** or **StellaSwap**, they focus more on liquidity pools and swaps within their ecosystems rather than a cross-chain aggregation solution.
-- Swush aggregates liquidity across parachains, automates route optimization, and provides a user-centric platform for efficient cross-chain swaps. This makes it distinct as it addresses liquidity fragmentation across the entire Polkadot ecosystem.
+A cross-chain DEX Aggregator doesn't exist yet in the ecosystem as per our research. While other DEXs exist in Polkadot, such as **Hydration** or **StellaSwap**, they focus more on liquidity pools and swaps within their ecosystems rather than a cross-chain aggregation solution.
 
  **5. Similar Projects in Other Ecosystems**
 
@@ -87,11 +84,11 @@ The success of our DEX aggregator is closely tied to the adoption and growth of 
 
 Several development teams have already expressed interest in building on Plaza, pending the launch of smart contract support, which will be essential for Plaza’s functionality. However, the immediate demand for a DEX aggregator will depend on Plaza’s initial adoption rate and traction among parachains and users.
 
-**Future Expansion** 
-
-As Plaza matures, the DEX aggregator can expand its features and integrate with new smart contracts, enabling a broader range of DeFi applications and cross-chain asset interactions. With robust adoption, the aggregator could become a key infrastructure component, supporting advanced features such as yield farming, liquidity mining, and multi-asset swaps, further enhancing Plaza’s utility and attracting even more projects and users to the ecosystem.
 
 ### Project Details
+
+![Screenshot 2024-11-05 034439](https://github.com/user-attachments/assets/c7997621-c916-441b-98d9-b43b3618f837)
+
 
  **1. UI Mockups/Designs**
 
@@ -131,7 +128,7 @@ As Plaza matures, the DEX aggregator can expand its features and integrate with 
         - liquidity,
         - slippage across parachains and DEXs.
 
-## insert architecture diagrams
+![Untitled-2023-12-14-2209](https://github.com/user-attachments/assets/3d549de6-3f80-4fce-afce-556a9e66cf43)
 
 
 ## Team :busts_in_silhouette:
@@ -177,7 +174,7 @@ https://github.com/swush-labs/
 
 ### Overview[](https://grants.web3.foundation/applications/typink#overview-1)
 
-- **Total Estimated Duration:** 3-4 months
+- **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):** 1.5
 - **Total Costs:** 25,000 USD
 - **DOT %:** 50%
@@ -208,6 +205,7 @@ https://github.com/swush-labs/
     - Development of a notification system to provide users with real-time feedback on transaction status.
 - **User Authentication & Profiles:**
     - Implement user profiles to store settings (e.g.. preferred slippage tolerance).
+      
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
@@ -223,12 +221,16 @@ https://github.com/swush-labs/
 | 5. | **Basic Notification System** | (as mentioned above) |
 | 6. | **User Authentication & Profiles** | (as mentioned above) |
 
+
 ---
+
 
 ### **Milestone 2: Advanced Features & Full Testing**
 - **Time: 1.5 - 2 months**
-- **FTE:**  1,5
+- **FTE:**  1.5
 - **Costs:** 16000 USD
+
+### **Features:**
 
 - **Cross-Chain (XCM) APIs and DEX Swap Integration:**
     - Integration of cross-chain messaging (XCM) APIs to transfer assets from asset hub to parachains and vice versa
@@ -249,6 +251,7 @@ https://github.com/swush-labs/
     - Implementation of user transaction history, enabling users to view their past swaps.
 
 Note: for parachain DEX integration we will do for Hydration only as of now. 
+
  
 
 | Number | Deliverable | Specification |
@@ -265,6 +268,7 @@ Note: for parachain DEX integration we will do for Hydration only as of now.
 | 5. | **Optimized Routing** | (as mentioned above) |
 | 6. | **Advanced Simulated Testing Environment** | (as mentioned above) |
 | 7 | **User Transaction History** | (as mentioned above) |
+
 
 ## Future Plans
 
