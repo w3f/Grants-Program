@@ -213,7 +213,7 @@ https://github.com/swush-labs/
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
 | **0c.** | Testing and Testing Guide | Tutorial that explains how to test all deliverables of this milestone. Core functions for this milestone will be tested with **Simulated Testing Environment** as mentioned above. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an ****article for the work done. |
+| 0e. | Article | We will publish an article for the work done. |
 | 1. | **UI/UX Design**  | (as mentioned above) |
 | 2. | **Basic Functional UI (Responsive Design)** | (as mentioned above) |
 | 3. | **Wallet Integration** | (as mentioned above) |
@@ -226,7 +226,7 @@ https://github.com/swush-labs/
 
 
 ### **Milestone 2: Advanced Features & Full Testing**
-- **Time: 1.5 - 2 months**
+- **Time: 2-2.5 months**
 - **FTE:**  1.5
 - **Costs:** 16000 USD
 
@@ -260,7 +260,7 @@ Note: for parachain DEX integration we will do for Hydration only as of now.
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
 | **0c.** | Testing and Testing Guide | Tutorial that explains how to test all deliverables of this milestone. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an ****article for the work done. |
+| 0e. | Article | We will publish an article for the work done. |
 | 1. | **Cross-Chain (XCM) APIs and DEX Swap Integration** | (as mentioned above) |
 | 2. | **Slippage Control and Protection** | (as mentioned above) |
 | 3. | **Real-time Fee Updates** | (as mentioned above) |
