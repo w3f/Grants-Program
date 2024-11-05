@@ -163,6 +163,7 @@ After a sucessfull delivery of an MVP in the first 2 Milestones and the deployme
 - **Total Estimated Duration:** 6.25 months
 - **Full-Time Equivalent (FTE):** 2 FTE
 - **Total Costs:** 75000 USD
+- **DOT %:** 50%
 
 ### Milestone 1: Usability, Reachability
 
