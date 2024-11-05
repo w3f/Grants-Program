@@ -25,9 +25,9 @@ A **DEX aggregator** directly addresses these issues by connecting to multiple d
 
 ### **Swush: A Solution Aligned with Polkadot’s Vision**
 
-<img src="https://github.com/user-attachments/assets/84090aea-7633-413f-a512-fe610388d50a" alt="Image description" width="960" height="580">
+<img src="https://github.com/user-attachments/assets/84090aea-7633-413f-a512-fe610388d50a" alt="Image description" width="960" height="580"> \
 
-Swush is a DEX aggregator built on Polkadot Asset Hub, specifically to meet the needs of Polkadot’s cross-chain DeFi users. By leveraging cross-chain messaging (XCM), and aggregating assets from multiple parachains, Swush allows users to swap assets seamlessly across the ecosystem with minimal friction.
+**Swush** is a **DEX aggregator** built on Polkadot Asset Hub, specifically to meet the needs of Polkadot’s cross-chain DeFi users. By leveraging cross-chain messaging (XCM), and aggregating assets from multiple parachains, Swush allows users to swap assets seamlessly across the ecosystem with minimal friction.
 
 Key features include:
 
@@ -50,17 +50,17 @@ On a related note, cross-chain DEX solutions are gaining momentum. we recently c
 
 Teams like Velocity Labs are advancing AssetHub integration beyond the Polkadot ecosystem, focusing on areas such as CEXs, onramps, and oracles. Their recent announcement regarding [AssetHub integration for custodians](https://medium.com/velocity-labs/improving-user-experience-for-polkadot-assets-the-ultimate-guide-for-custodians-706800a540b6) is an encouraging development.
 
- **1. Where and How swush Fits into the Polkadot Ecosystem**
+*Where and How swush Fits into the Polkadot Ecosystem**
 
 Swush fits as a DEX aggregator within the Polkadot ecosystem, addressing the need for efficient, cross-chain asset swaps. By aggregating liquidity from various parachains and optimizing routes, swush  helps users access the most cost-effective and time-efficient paths for asset exchanges. This supports Polkadot’s vision of a unified, interoperable blockchain ecosystem by simplifying cross-chain DeFi activities.
 
- **2. Target Audience**
+ **Target Audience**
 
 - **Primary Users:** General users in the Polkadot ecosystem looking for efficient asset swaps.
 - **Developers & DApp Builders:** Parachain developers and dApp builders seeking cross-chain liquidity solutions for their own applications.
 - **DeFi Traders:** DeFi users within the Polkadot and Kusama networks who rely on optimized routing for swaps to reduce costs and increase transaction efficiency.
 
- **3. Problem(s) Addressed**
+ **Problem(s) Addressed**
 
 As outlined in the **The Case for a DEX Aggregator,** Polkadot’s ecosystem faces challenges mentioned below. **Swush** tackles these issues with a clear, user-centric approach:
 
@@ -68,19 +68,19 @@ As outlined in the **The Case for a DEX Aggregator,** Polkadot’s ecosystem fac
 - **Streamlined Cross-Chain Transactions:** swush simplifies complex multi-step transactions into a single, user-friendly interface, reducing friction and making cross-chain interactions accessible to all users.
 - **Enhanced Utility for Asset Hub:** With its aggregation model, swush fully leverages the Asset Hub’s capacity, positioning it as a key liquidity hub and aligning with Polkadot’s vision of a unified, interoperable DeFi ecosystem.
 
- **4. Existing Similar Projects in Polkadot/Kusama**
+ **Existing Similar Projects in Polkadot/Kusama**
 
 A cross-chain DEX Aggregator doesn't exist yet in the ecosystem as per our research. While other DEXs exist in Polkadot, such as **Hydration** or **StellaSwap**, they focus more on liquidity pools and swaps within their ecosystems rather than a cross-chain aggregation solution.
 
- **5. Similar Projects in Other Ecosystems**
+ **Similar Projects in Other Ecosystems**
 
-- **Jupiter(Solana)** : We published some key stats [here](https://www.notion.so/Jupiter-on-Solana-A-Success-Story-10da0d44e13d80aea29dc771f76b67a6?pvs=21)
+- **Jupiter(Solana)** : We published some key stats [here](https://www.notion.so/Jupiter-on-Solana-A-Success-Story-10da0d44e13d80aea29dc771f76b67a6?pvs=21).
 - **1inch (Ethereum):** A popular DEX aggregator on Ethereum that uses liquidity aggregation and route optimization to lower swap costs.
-- **Thorchain (Cross-Chain):** Focuses on native cross-chain asset swaps. Swush takes a similar approach but uses Polkadot’s cross-consensus messaging (XCM)
+- **Thorchain (Cross-Chain):** Focuses on native cross-chain asset swaps. Swush takes a similar approach but uses Polkadot’s cross-consensus messaging (XCM).
 
 **The Case for Growth**
 
-The success of our DEX aggregator is closely tied to the adoption and growth of the **Plaza** within the Polkadot ecosystem. For a DEX on Plaza to reach its full potential, it will require strong traction and active participation from various ecosystem players.
+The success of our DEX aggregator is closely tied to the adoption and growth of the **Plaza** within the Polkadot ecosystem. For a DEX aggregator on Plaza to reach its full potential, it will require strong traction and active participation from various ecosystem players.
 
 Several development teams have already expressed interest in building on Plaza, pending the launch of smart contract support, which will be essential for Plaza’s functionality. However, the immediate demand for a DEX aggregator will depend on Plaza’s initial adoption rate and traction among parachains and users.
 
@@ -90,7 +90,7 @@ Several development teams have already expressed interest in building on Plaza, 
 ![Screenshot 2024-11-05 034439](https://github.com/user-attachments/assets/c7997621-c916-441b-98d9-b43b3618f837)
 
 
- **1. UI Mockups/Designs**
+ **UI Mockups/Designs**
 
 - UI features include
     - **Swap Interface:** Allows users to initiate and confirm cross-chain swaps with input fields for asset selection, swap amount, slippage tolerance, and fee breakdown.
@@ -99,14 +99,15 @@ Several development teams have already expressed interest in building on Plaza, 
     - **Notification System:** Real-time alerts on transaction statuses (success, pending, or failure).
 - **Mockups and UI Designs:** Our initial UI is hosted [here](https://swush-labs.github.io/swush-me-app/) , but we are working on evolving the UI/UX, checkout our ongoing work at figma [here](https://www.figma.com/design/kWunXnESHS2wN4xBESBikE/Untitled?node-id=0-1&t=axXKrqgd5AFmmKkX-1). We are still in process of finalizing the design as we intend to evolve it more and make as UX friendly as possible.
 
- **2. API Specifications**
+ **API Specifications**
 
 - **Wallet APIs** : Fetches user and asset balance in real time and transaction interactions such as connecting wallet, signing a transaction etc.
 - **Rate & Fee API:** Fetches real-time swap rates and fee estimates from various DEXs on connected parachains.
 - **Route Optimization API:** Calculates the most cost-effective routes based on liquidity, fees, and network conditions.
 - **Transaction History API:** Records and retrieves completed transactions for user reference.
+- **XCM APIs:** Cross chain transfer of assets
 
- **3. Technology Stack**
+ **Technology Stack**
 
 - **Frontend:** Next.js and React
 - **Backend:** Node.js with TypeScript to handle core logic, API integrations, and cross-chain messaging.
@@ -114,7 +115,7 @@ Several development teams have already expressed interest in building on Plaza, 
 - **Blockchain Integration:** Polkadot.js API to enable wallet connections, XCM transactions, and interaction with DEXs across Polkadot’s parachains.
 - **DevOps:**  CI/CD with GitHub Actions for efficient development workflows.
 
- **4. Core Components & Architecture**
+ **Core Components & Architecture**
 
 - **Cross-Chain (XCM) APIs and DEX Swap Integration:**
     - Integration of cross-chain messaging (XCM) APIs to transfer assets from asset hub to parachain(Hydration)
@@ -123,10 +124,10 @@ Several development teams have already expressed interest in building on Plaza, 
 - **Real-time Rate and Fee Updates:**
     - Implementation of real-time updates for swap rates, liquidity, and transaction fees. This will involve pulling live data from liquidity pools or simulating real-time data based on the mock environment.
 - **Optimized Routing**
-    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by
-        - comparing fees,
-        - liquidity,
-        - slippage across parachains and DEXs.
+    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing
+        - fees
+        - liquidity
+        - slippage across parachains and DEXs
 
 ![Untitled-2023-12-14-2209](https://github.com/user-attachments/assets/3d549de6-3f80-4fce-afce-556a9e66cf43)
 
@@ -203,7 +204,7 @@ https://github.com/swush-labs/
         - Final Aggregation and Testing Simulation
 - **Basic Notification System:**
     - Development of a notification system to provide users with real-time feedback on transaction status.
-- **User Authentication & Profiles:**
+- **User Profiles:**
     - Implement user profiles to store settings (e.g.. preferred slippage tolerance).
       
 
@@ -219,7 +220,7 @@ https://github.com/swush-labs/
 | 3. | **Wallet Integration** | (as mentioned above) |
 | 4. | **Simulated Testing Environment** | (as mentioned above) |
 | 5. | **Basic Notification System** | (as mentioned above) |
-| 6. | **User Authentication & Profiles** | (as mentioned above) |
+| 6. | **User Profiles** | (as mentioned above) |
 
 
 ---
@@ -233,18 +234,18 @@ https://github.com/swush-labs/
 ### **Features:**
 
 - **Cross-Chain (XCM) APIs and DEX Swap Integration:**
-    - Integration of cross-chain messaging (XCM) APIs to transfer assets from asset hub to parachains and vice versa
+    - Integration of cross-chain messaging (XCM) APIs to transfer assets from parachains to Asset Hub after succesfull swap in parachain DEX and store as foreign asset in Polkadot Asset Hub.
 - **Slippage Control and Protection:**
-    - Implementation of slippage control, allowing users to set a maximum slippage tolerance for their swaps. This ensures that users are protected against drastic price changes during the transaction execution process.
+    - Implementation of slippage control, allowing users to swap assets below maximum slippage tolerance set in User Profiles(Milestone 1). This ensures that users are protected against drastic price changes during the transaction execution process.
 - **Real-time Fee Updates:**
-    - Implementation of real-time updates for swap rates, liquidity, and transaction fees. This will involve pulling live data from liquidity pools in Asset Hub and parachain DEXes
+    - Implementation of real-time updates for swap rates, liquidity, and transaction fees. This will involve pulling live data from liquidity pools in Asset Hub and parachain DEX.
 - **Multi Asset Pair Swap**
     - Support swaps between asset pairs not present in liquidity pools (e.g., MYTH/USDC when only DOT/USDC and DOT/MYTH are available).
 - **Optimized Routing**
-    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by
-        - comparing fees,
-        - liquidity,
-        - slippage across parachain DEXs.
+    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing
+        - fees
+        - liquidity
+        - slippage across parachain DEX.
 - **Advanced Simulated Testing Environment:**
     - Comprehensive testing of the entire DEX aggregator, including functionality, security, and performance. This will involve simulating various attack vectors, testing transaction reliability across multiple chains, and ensuring the stability of the platform under different scenarios (e.g., high transaction volume, fluctuating liquidity).
 - **User Transaction History:**
