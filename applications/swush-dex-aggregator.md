@@ -99,13 +99,6 @@ Several development teams have already expressed interest in building on Plaza, 
     - **Notification System:** Real-time alerts on transaction statuses (success, pending, or failure).
 - **Mockups and UI Designs:** Our initial UI is hosted [here](https://swush-labs.github.io/swush-me-app/) , but we are working on evolving the UI/UX, checkout our ongoing work at figma [here](https://www.figma.com/design/kWunXnESHS2wN4xBESBikE/Untitled?node-id=0-1&t=axXKrqgd5AFmmKkX-1). We are still in process of finalizing the design as we intend to evolve it more and make as UX friendly as possible.
 
- **API Specifications**
-
-- **Wallet APIs** : Fetches user and asset balance in real time and transaction interactions such as connecting wallet, signing a transaction etc.
-- **Rate & Fee API:** Fetches real-time swap rates and fee estimates from various DEXs on connected parachains.
-- **Route Optimization API:** Calculates the most cost-effective routes based on liquidity, fees, and network conditions.
-- **Transaction History API:** Records and retrieves completed transactions for user reference.
-- **XCM APIs:** Cross chain transfer of assets
 
  **Technology Stack**
 
@@ -122,12 +115,9 @@ Several development teams have already expressed interest in building on Plaza, 
 - **Slippage Control and Protection:**
     - Implementation of slippage control, allowing users to set a maximum slippage tolerance for their swaps. This ensures that users are protected against drastic price changes during the transaction execution process.
 - **Real-time Rate and Fee Updates:**
-    - Implementation of real-time updates for swap rates, liquidity, and transaction fees. This will involve pulling live data from liquidity pools or simulating real-time data based on the mock environment.
+    - Implementation of real-time updates for swap rates and transaction fees.
 - **Optimized Routing**
-    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing
-        - fees
-        - liquidity
-        - slippage across parachains and DEXs
+    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing fees, quote price and slippage.
 
 ![Untitled-2023-12-14-2209](https://github.com/user-attachments/assets/3d549de6-3f80-4fce-afce-556a9e66cf43)
 
@@ -197,10 +187,10 @@ https://github.com/swush-labs/
     - Integration of Web3 wallets (e.g., Polkadot.js, Talisman) for seamless user authentication, transaction signing, and balance viewing.
 - **Simulated Testing Environment:**
     - Setup of a simulated testing environment to replicate real-world conditions. This will include mock wallets for swap visualizations, allowing developers to test various swap scenarios and edge cases (e.g., low liquidity, high fees).
-        - Mock multiple networks  (Polkadot Asset Hub and parachains)
-        - Liquidity pools for asset swaps.
+        - Mock multiple networks  (Polkadot Asset Hub and parachain)
+        - Liquidity pools for asset swaps
         - Cross-chain asset swapping
-        - Route optimization to find the best route based on fees, slippage, and liquidity.
+        - Route optimization to find the most cost-efficient swap
         - Final Aggregation and Testing Simulation
 - **Basic Notification System:**
     - Development of a notification system to provide users with real-time feedback on transaction status.
@@ -238,16 +228,13 @@ https://github.com/swush-labs/
 - **Slippage Control and Protection:**
     - Implementation of slippage control, allowing users to swap assets below maximum slippage tolerance set in User Profiles(Milestone 1). This ensures that users are protected against drastic price changes during the transaction execution process.
 - **Real-time Fee Updates:**
-    - Implementation of real-time updates for swap rates, liquidity, and transaction fees. This will involve pulling live data from liquidity pools in Asset Hub and parachain DEX.
+    - Implementation of real-time updates for swap rates and transaction fees. This will involve pulling live data from Asset Hub and parachain DEX.
 - **Multi Asset Pair Swap**
     - Support swaps between asset pairs not present in liquidity pools (e.g., MYTH/USDC when only DOT/USDC and DOT/MYTH are available).
 - **Optimized Routing**
-    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing
-        - fees
-        - liquidity
-        - slippage across parachain DEX.
+    - Automated route optimization to ensure that users are always getting the most cost-efficient swap.
 - **Advanced Simulated Testing Environment:**
-    - Comprehensive testing of the entire DEX aggregator, including functionality, security, and performance. This will involve simulating various attack vectors, testing transaction reliability across multiple chains, and ensuring the stability of the platform under different scenarios (e.g., high transaction volume, fluctuating liquidity).
+    - Comprehensive testing of the entire DEX aggregator, including functionality and performance. This will involve simulating testing transaction reliability across multiple chains, and ensuring the stability of the platform under different scenarios (e.g., high transaction volume, fluctuating slippage).
 - **User Transaction History:**
     - Implementation of user transaction history, enabling users to view their past swaps.
 
