@@ -127,20 +127,16 @@ Several development teams have already expressed interest in building on Plaza, 
 ### **Team members**
 
 **Name of team leader:**
-
 - Anwesh Nayak (@muddlebee)
 
 **Names of team members:**
-
 - Arnav Nayak
 
 ### **Contact**
-
 - **Contact Name:** Anwesh Nayak
 - **Contact Email:** [anweshknayak@gmail.com](mailto:anweshknayak@gmail.com)
 
 ### **Legal Structure**
-
 - **Registered Address:** NA
 - **Registered Legal Entity:** NA
 
@@ -213,10 +209,7 @@ https://github.com/swush-labs/
 | 6. | **User Profiles** | (as mentioned above) |
 
 
----
-
-
-### **Milestone 2: Advanced Features & Full Testing**
+### **Milestone 2: Advanced Features**
 - **Time: 2-2.5 months**
 - **FTE:**  1.5
 - **Costs:** 16000 USD
