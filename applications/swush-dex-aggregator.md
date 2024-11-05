@@ -158,7 +158,7 @@ https://github.com/swush-labs/
 
 ## Development Status :open_book:
 We have added all our research work at [Ecosystem Fit section](#ecosystem-fit). \
-Our initial UI which we created is hosted [here](https://swush-labs.github.io/swush-me-app/) which we have iterated as per the designs shared at [Project Details](#project-details).
+Our initial UI which we created is hosted [here](https://swush-labs.github.io/swush-me-app/), but we plan to iterate as per the designs shared at [Project Details](#project-details).
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -172,7 +172,7 @@ Our initial UI which we created is hosted [here](https://swush-labs.github.io/sw
 ### **Milestone 1: Foundational Development & Simulation Environment**
 
 - **Time: 1.5 - 2 months**
-- **FTE:**  1,5
+- **FTE:**  1.5
 - **Costs:** 9000 USD
 
 ### **Initial Proof of Concept (POC):**
