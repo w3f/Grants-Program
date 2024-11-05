@@ -25,7 +25,7 @@ A **DEX aggregator** directly addresses these issues by connecting to multiple d
 
 ### **Swush: A Solution Aligned with Polkadot’s Vision**
 
-![cover](https://github.com/user-attachments/assets/84090aea-7633-413f-a512-fe610388d50a)
+<img src="https://github.com/user-attachments/assets/84090aea-7633-413f-a512-fe610388d50a" alt="Image description" width="960" height="580">
 
 Swush is a DEX aggregator built on Polkadot Asset Hub, specifically to meet the needs of Polkadot’s cross-chain DeFi users. By leveraging cross-chain messaging (XCM), and aggregating assets from multiple parachains, Swush allows users to swap assets seamlessly across the ecosystem with minimal friction.
 
