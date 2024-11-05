@@ -97,8 +97,7 @@ Several development teams have already expressed interest in building on Plaza, 
     - **Wallet Connection:** Seamless integration with popular wallets like Polkadot.js and Talisman.
     - **Transaction History:** View of past transactions, including swap details, fees, and timestamps.
     - **Notification System:** Real-time alerts on transaction statuses (success, pending, or failure).
-- **Mockups and UI Designs:** Our initial UI is hosted [here](https://swush-labs.github.io/swush-me-app/) , but we are working on evolving the UI/UX, checkout our ongoing work at figma [here](https://www.figma.com/design/kWunXnESHS2wN4xBESBikE/Untitled?node-id=0-1&t=axXKrqgd5AFmmKkX-1). We are still in process of finalizing the design as we intend to evolve it more and make as UX friendly as possible.
-
+- **Mockups and UI Designs:** Our ongoing work at figma [here](https://www.figma.com/design/kWunXnESHS2wN4xBESBikE/Untitled?node-id=0-1&t=axXKrqgd5AFmmKkX-1). We are still in process of finalizing the design as we intend to evolve it more and make as UX friendly as possible. 
 
  **Technology Stack**
 
@@ -156,6 +155,10 @@ https://github.com/swush-labs/
 
 - https://github.com/muddlebee
 - https://www.linkedin.com/in/arnav-nayak-321595141/
+
+## Development Status :open_book:
+We have added all our research work at [Ecosystem Fit section](#ecosystem-fit). \
+Our initial UI which we created is hosted [here](https://swush-labs.github.io/swush-me-app/) which we have iterated as per the designs shared at [Project Details](#project-details).
 
 ## Development Roadmap :nut_and_bolt:
 
