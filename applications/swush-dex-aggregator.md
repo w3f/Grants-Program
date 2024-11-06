@@ -50,9 +50,9 @@ On a related note, cross-chain DEX solutions are gaining momentum. we recently c
 
 Teams like Velocity Labs are advancing AssetHub integration beyond the Polkadot ecosystem, focusing on areas such as CEXs, onramps, and oracles. Their recent announcement regarding [AssetHub integration for custodians](https://medium.com/velocity-labs/improving-user-experience-for-polkadot-assets-the-ultimate-guide-for-custodians-706800a540b6) is an encouraging development.
 
-*Where and How swush Fits into the Polkadot Ecosystem**
+**Where and How swush Fits into the Polkadot Ecosystem**
 
-Swush fits as a DEX aggregator within the Polkadot ecosystem, addressing the need for efficient, cross-chain asset swaps. By aggregating liquidity from various parachains and optimizing routes, swush  helps users access the most cost-effective and time-efficient paths for asset exchanges. This supports Polkadot’s vision of a unified, interoperable blockchain ecosystem by simplifying cross-chain DeFi activities.
+Swush fits as a DEX aggregator on Polkadot Asset Hub, addressing the need for efficient, cross-chain asset swaps. By aggregating liquidity from various parachains and optimizing routes, swush  helps users access the most cost-effective and time-efficient paths for asset exchanges. This supports Polkadot’s vision of a unified, interoperable blockchain ecosystem by simplifying cross-chain DeFi activities.
 
  **Target Audience**
 
