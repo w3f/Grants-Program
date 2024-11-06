@@ -110,7 +110,11 @@ Several development teams have already expressed interest in building on Plaza, 
  **Core Components & Architecture**
 
 - **Cross-Chain (XCM) APIs and DEX Swap Integration:**
-    - Integration of cross-chain messaging (XCM) APIs to transfer assets from asset hub to parachain(Hydration)
+    - Integrates cross-chain messaging (XCM) to transfer assets from the Asset Hub to a parachain (e.g., Hydration) for swapping. After the swap on the parachain, assets are returned to the Asset Hub, allowing users to access parachain liquidity while keeping assets on the Asset Hub.
+
+![{CE2E77C1-01B8-40A8-BF80-AA6F11ED57BE}](https://github.com/user-attachments/assets/3e06c9b2-b0e1-4fc9-9b11-377e55630469)
+
+
 - **Slippage Control and Protection:**
     - Implementation of slippage control, allowing users to set a maximum slippage tolerance for their swaps. This ensures that users are protected against drastic price changes during the transaction execution process.
 - **Real-time Rate and Fee Updates:**
@@ -226,7 +230,7 @@ Our initial UI which we created is hosted [here](https://swush-labs.github.io/sw
 ### **Features:**
 
 - **Cross-Chain (XCM) APIs and DEX Swap Integration:**
-    - Integration of cross-chain messaging (XCM) APIs to transfer assets from parachains to Asset Hub after succesfull swap in parachain DEX and store as foreign asset in Polkadot Asset Hub.
+    -  Integrates cross-chain messaging (XCM) to transfer assets from the Asset Hub to a parachain (e.g., Hydration) for swapping. After the swap on the parachain, assets are returned to the Asset Hub, allowing users to access parachain liquidity while keeping assets on the Asset Hub.
 - **Slippage Control and Protection:**
     - Implementation of slippage control, allowing users to swap assets below maximum slippage tolerance set in User Profiles(Milestone 1). This ensures that users are protected against drastic price changes during the transaction execution process.
 - **Real-time Fee Updates:**
