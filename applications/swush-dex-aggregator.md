@@ -120,6 +120,12 @@ Several development teams have already expressed interest in building on Plaza, 
 
 ![Untitled-2023-12-14-2209](https://github.com/user-attachments/assets/3d549de6-3f80-4fce-afce-556a9e66cf43)
 
+- **Asset Storage on Polkadot Asset Hub**
+We plan to store all assets, including parachain tokens such as HDX(Hydration) and GLMR(Moonbeam), as foreign assets on the Polkadot Asset Hub. The Asset Hub provides a unified repository where native tokens, parachain assets, and bridged tokens can be securely registered, managed, and operated.
+    - More info on Assets at Asset Hub https://wiki.polkadot.network/docs/build-integrate-assets
+
+![{C3C3F61D-8A45-4065-BA66-8EBAC8B96993}](https://github.com/user-attachments/assets/e5c1abf0-effd-480d-b1bb-f7810220530b)
+
 
 ## Team :busts_in_silhouette:
 
