@@ -187,9 +187,6 @@ Our initial UI which we created is hosted [here](https://swush-labs.github.io/sw
 
 ### **Initial Proof of Concept (POC):**
 
-- **UI/UX Design**
-    - Enhance the current design mockups
-    - Establish a design system for the entire app
 - **Basic Functional UI (Responsive Design):**
     - Creation of a responsive user interface (UI) that will serve as the primary interaction layer. The UI will include swap functionality, wallet connection, and real-time asset balances of user.
 - **Wallet Integration:**
@@ -214,12 +211,11 @@ Our initial UI which we created is hosted [here](https://swush-labs.github.io/sw
 | **0c.** | Testing and Testing Guide | Tutorial that explains how to test all deliverables of this milestone. Core functions for this milestone will be tested with **Simulated Testing Environment** as mentioned above. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article for the work done. |
-| 1. | **UI/UX Design**  | (as mentioned above) |
-| 2. | **Basic Functional UI (Responsive Design)** | (as mentioned above) |
-| 3. | **Wallet Integration** | (as mentioned above) |
-| 4. | **Simulated Testing Environment** | (as mentioned above) |
-| 5. | **Basic Notification System** | (as mentioned above) |
-| 6. | **User Profiles** | (as mentioned above) |
+| 1. | **Basic Functional UI (Responsive Design)** | (as mentioned above) |
+| 2. | **Wallet Integration** | (as mentioned above) |
+| 3. | **Simulated Testing Environment** | (as mentioned above) |
+| 4. | **Basic Notification System** | (as mentioned above) |
+| 5. | **User Profiles** | (as mentioned above) |
 
 
 ### **Milestone 2: Advanced Features**
