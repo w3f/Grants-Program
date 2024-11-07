@@ -1,7 +1,7 @@
 # Polkadart Extension
 
 - **Team Name:** EXPERIO S M LTDA
-- **Payment Address:** 167QS6UiF1ZJBkHtngCBoHTSbLm4Rokc2ehfFBEniEGQXB4k (USDC)
+- **Payment Address:** 16DbfLdtuSMsifHnvRFev81YvGAGWnVuQJ4r6NAH9tcSZxWW (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
