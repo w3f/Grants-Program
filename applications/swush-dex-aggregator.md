@@ -118,8 +118,9 @@ We plan to store all assets, including parachain tokens such as HDX(Hydration) a
 
 - **Cross-Chain (XCM) APIs and DEX Swap Integration:**
     - Integrates cross-chain messaging (XCM) to transfer assets from the Asset Hub to a parachain (e.g., Hydration) for swapping. After the swap on the parachain, assets are returned to the Asset Hub, allowing users to access parachain liquidity while keeping assets on the Asset Hub.
+    - Polkadot Asset Hub’s Asset APIs to enable real-time asset balances, rates, and integration of Asset Hub assets in cross-chain swaps.
+![{97A26176-B7E8-4A29-B683-156575BE2518}](https://github.com/user-attachments/assets/a885b892-f231-46ea-aca9-cf126e4f2d64)
 
-![{CE2E77C1-01B8-40A8-BF80-AA6F11ED57BE}](https://github.com/user-attachments/assets/3e06c9b2-b0e1-4fc9-9b11-377e55630469)
 
 
 - **Slippage Control and Protection:**
@@ -127,7 +128,7 @@ We plan to store all assets, including parachain tokens such as HDX(Hydration) a
 - **Real-time Rate and Fee Updates:**
     - Implementation of real-time updates for swap rates and transaction fees.
 - **Optimized Routing**
-    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing fees, quote price and slippage.
+    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing fees, quote price and slippage across various DEXes(e.g. Polkadot Asset Hub DEX and Hydration DEX)
 
 ![Untitled-2023-12-14-2209](https://github.com/user-attachments/assets/3d549de6-3f80-4fce-afce-556a9e66cf43)
 
@@ -229,6 +230,8 @@ Our initial UI which we created is hosted [here](https://swush-labs.github.io/sw
 
 - **Cross-Chain (XCM) APIs and DEX Swap Integration:**
     -  Integrates cross-chain messaging (XCM) to transfer assets from the Asset Hub to a parachain (e.g., Hydration) for swapping. After the swap on the parachain, assets are returned to the Asset Hub, allowing users to access parachain liquidity while keeping assets on the Asset Hub.
+    - Polkadot Asset Hub’s Asset APIs to enable real-time asset balances, rates, and integration of Asset Hub assets in cross-chain swaps.
+
 - **Slippage Control and Protection:**
     - Implementation of slippage control, allowing users to swap assets below maximum slippage tolerance set in User Profiles(Milestone 1). This ensures that users are protected against drastic price changes during the transaction execution process.
 - **Real-time Fee Updates:**
@@ -236,7 +239,7 @@ Our initial UI which we created is hosted [here](https://swush-labs.github.io/sw
 - **Multi Asset Pair Swap**
     - Support swaps between asset pairs not present in liquidity pools (e.g., MYTH/USDC when only DOT/USDC and DOT/MYTH are available).
 - **Optimized Routing**
-    - Automated route optimization to ensure that users are always getting the most cost-efficient swap.
+    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing fees, quote price and slippage across various DEXes(e.g. Polkadot Asset Hub DEX and Hydration DEX)
 - **Advanced Simulated Testing Environment:**
     - Comprehensive testing of the entire DEX aggregator, including functionality and performance. This will involve simulating testing transaction reliability across multiple chains, and ensuring the stability of the platform under different scenarios (e.g., high transaction volume, fluctuating slippage).
 - **User Transaction History:**
