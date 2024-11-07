@@ -1,8 +1,4 @@
-# Web3 Foundation Grants Program<!-- omit in toc -->
-
-<p align="center">
-  <img src="static/img/Grants_Program.png" style="width:1300px" />
-</p>
+# Polkadot Open Source Grants Bounty<!-- omit in toc -->
 
 
 - [:wave: Introduction](#wave-introduction)
@@ -30,9 +26,28 @@
 
 ## :wave: Introduction
 
-As part of our commitment to promoting the Web3 ecosystem, we offer a comprehensive grants program focused on funding software development and research efforts related to **Polkadot and Kusama**. For more information about the Web3 Foundation, please visit the [About page](https://web3.foundation/about/) on our website.
+[Open Source Developer Grants Bounty](https://polkadot.polkassembly.io/bounty/59) support individuals and small teams in developing open-source software for the Polkadot ecosystem. This initiative aims to fund up to 15 projects with grants of up to $30,000 each, focusing on those with a proven background in open-source software development. Projects can include proofs of concept, general-purpose libraries, or full-scale dApps that benefit the Polkadot ecosystem.
 
 ### Guidelines
+
+The inner workings of the bounty will be loosely based on the [Web3 Foundation Grants Program](https://grants.web3.foundation/). This means teams apply publicly using an application template, where community members can comment and make change suggestions, and applications are accepted or rejected by the curators of this bounty based on the following criteria:
+	
+* The applications focus on open-source software development directly or indirectly beneficial for the Polkadot ecosystem. Acceptable licenses are The Unlicense, Apache, MIT, or GPL v3.
+* Teams need to build solutions on or for the Polkadot Network, which are:
+focussed on implementing common good infrastructure and
+not the issuer and/or the promoter of any token at the time of the application.
+Teams need to successfully undergo a KYC/KYB process.
+* Each team can only receive one grant. 
+* The technical development is unique and doesn’t already exist in the ecosystem. 
+* The curators don’t directly benefit financially from the applications/grants. For individual cases of conflict of interest, the curators must recuse themselves from the evaluation and discussion of the application and milestones.
+* Projects must not actively encourage gambling, illicit trade, money laundering, or criminal activities in general.
+* The scope and funding amount of the project as a whole and each milestone are subject to discussion. Since grants are focused on software development, funding should closely follow the person-hours estimated for each milestone. 
+* If an application is accepted, they can start working on the project. Payments are made once a milestone is delivered and successfully evaluated by one of the curators of the bounty. 
+
+The bounty aims to support roughly 15 projects initially. However, the number of projects that the program can support ultimately depends on the price of DOT after the bounty is approved and the amount being requested by the applicants. No project should receive more than 30,000 USD based on the conversion rate that will be specified in the application itself. For example, if the DOT price doubles, it would be possible to support twice the number of projects with the requested funds. If the DOT price goes down, the number of projects that can be supported will be lower. 
+
+
+In any case, the money will only be used for the specified scope and returned after no less than eight months if not spent. If the program is successful and all the money is spent before the timeline, we might ask the treasury to top up the funds and continue with the program. However, this also depends on the project summary report and the success of the program.
 
 Anyone is welcome to apply for a grant. Projects funded through our programs are broad in scope, but our focus lies on strong **technical** projects that add value to the ecosystem.
 
@@ -43,14 +58,6 @@ Generally, your project will have better chances to be accepted if:
 - Your team has **proven experience** with the relevant languages and technologies and/or a strong technical background. You will be asked to provide the GitHub profiles of your team members as part of your application, which we will examine for past activity and code quality. Naturally, you can also link to projects on other platforms.
 - Your application is **rich in technical details** and well-defined.
 - You can clearly present how your project stands out among competitors or implements technology that doesn't exist in the ecosystem yet.
-
-Additionally, it must fulfill the following requirements:
-
-- All code produced as part of a grant must be **open-sourced**, and it must also not rely on closed-source software for full functionality. We prefer Apache 2.0, but GPLv3, MIT, or Unlicense are also acceptable.
-- We do not award grants for projects that have been the object of a successful token sale.
-- Applications must not mention a specific token. Furthermore, the focus of the application should lie on the software that is being implemented/research being carried out as part of the grant and less on your project/venture/operation. For the purpose of the application and delivery, think about how others might also benefit from your work.
-- As a general rule, teams are asked to finish a grant before applying for another one.
-- Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering, or criminal activities in general.
 
 In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product.
 
@@ -78,65 +85,22 @@ For questions about the grants program itself, see our [FAQ](docs/faq.md#frequen
 
 ### Team
 
-#### W3F Grants Committee<!-- omit in toc -->
+#### Curators<!-- omit in toc -->
 
-The committee consists of individuals who know the funding priorities of the Polkadot ecosystem and is responsible for evaluating grant applications and providing feedback on these.
+The curators consists of individuals who know the funding priorities of the Polkadot ecosystem and is responsible for evaluating grant applications and providing feedback on these.
 
-In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
+ - Diogo Mendonca from Ditavia
+ - Tommi Enenkel from Alice und Bob
+ - Otar Shakarishvili from JUST Open Source
+ - Luca von Wyttenbach from Polimec
+ - Sebastian Müller from Web3 Foundation
 
-- [Santiago Balaguer](https://github.com/SBalaguer)
-- [Aeron Buchanan](https://github.com/aeronbuchanan)
-- [David Hawig](https://github.com/Noc2)
-- [Sebastian Müller](https://github.com/semuelle)
-- [Bill Laboon](https://github.com/laboon)
-- [Keegan Quigley](https://github.com/keeganquigley)
-- [Raul Romanutti](https://github.com/rrtti)
-- [Seraya Takahashi](https://github.com/takahser)
-- [Piet Wolff](https://github.com/PieWol) 
-- [Gavin Wood](https://github.com/gavofyork)
-
-#### W3F Grants Evaluators<!-- omit in toc -->
-
-Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
-
-- [David Hawig](https://github.com/Noc2)
-- [Sebastian Müller](https://github.com/semuelle)
-- [Keegan Quigley](https://github.com/keeganquigley)
-- [Seraya Takahashi](https://github.com/takahser)
-- [Piet Wolff](https://github.com/PieWol) 
-
-#### W3F Operations Team<!-- omit in toc -->
-
-The Operations Team takes care of legal documents, invoicing, and remittances.
-
-- [Melanie Diener](https://github.com/meldien)
-- [Rouven Pérez](https://github.com/RouvenP)
-
-
-## :level_slider: Levels
-
-The W3F Grants Program offers different grant levels to help you best, depending on your current stage. At least 50% of any grant is paid out in vested DOT.
-
-### :hatching_chick: Level 1<!-- omit in toc -->
-
-- **Target:** Individuals & small teams
-- **Amount:** Up to $10,000
-- **Requirements:** 2 approvals
-- **Benefits:** Feedback during application process and evaluation, introduction to related teams/projects
-
-### :baby_chick: Level 2<!-- omit in toc -->
+## :level_slider: Grant
 
 - **Target:** Small teams/start-ups
 - **Amount:** Up to $30,000
 - **Requirements:** 3 approvals
-- **Benefits:** All of the above + [co-promotion](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/announcement-guidelines.md), [Grants Program badge](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/grant-badge-guidelines.md)
-
-### :rooster: Level 3<!-- omit in toc -->
-
-- **Target:** Companies/foundations with a proven track record
-- **Amount:** Unlimited
-- **Requirements:** 5 approvals (for >$100k: Web3 Foundation Council approval + Pitch call)
-- **Benefits:** All of the above + VC introductions
+- **Benefits:** ???
 
 ## :pencil: Process
 
