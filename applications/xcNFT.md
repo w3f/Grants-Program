@@ -3,7 +3,7 @@
 - **Team Name:** ParaSpell Research Foundation
 - **Payment Details:**
   - **DOT**: 139zHfuPsG62FKQtwjxMwqZAwPNZG6BooUWgF6L3LWYLUu3z
-  - **Payment**: FIAT - Payment details will be provided in advance before first milestone delivery if the proposal gets accepted.
+  - **Payment**: FIAT - (Shared 7.Nov.2024 22:54 via contact email mentioned in the application)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 🐤
 
 ## Project Overview :page_facing_up:
