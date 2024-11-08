@@ -33,33 +33,52 @@
 
 - The functions related are as follows:
   
-  For organizational managers:  
+  For organizational managers:
+  
   Organizational management
+  
   1.1 register_collective: Register a collective organization,
+  
   1.2 remove_collective:   Delete collective organizations,
+  
   1.3 reset_collective:    Modify collective organization,
     
   Member Management
+  
   2.1 add_member:    Add a member;
+  
   2.2 remove_member: Delete a member;
+  
   2.3 reset_member:  To modify a member;
 
   Topic management
   3.1 add_issue:    Add voting topic,
+  
   3.2 remove_issue: Delete voting topic;
+  
   3.3 reset_issue:  Modify the voting topic;
+  
   3.4 set_schedule: Voting time planning, including start time, disclosure time, decision time, feedback time, etc;
+  
   3.5 set_share_snapshot: Snapshot of equity shares during the voting period;
 
   Proposal management
+  
   4.2 exec_motion:       Execute the proposal;
-  4.3 record_misconduct: Records improper behavior, 
+  
+  4.3 record_misconduct: Records improper behavior,
+  
 
   For organizational members, the relevant functional functions are as follows:
+  
   5.1 transfer_to:  Transfer of Shares
+  
   5.2 commit:       To submit a commitment vote;
+  
   5.3 reveal:       Reveal the voting value;
+  
   5.4 confirm_decision:  confirms whether the decision result is fair;
+  
   5.5 report_misconduct:  Report misconduct Behavior of Selected Nodes
 _  
  
