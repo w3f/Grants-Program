@@ -29,6 +29,7 @@
 - An overview of the technology stack to be used 
   
   pallet_cdao_decentralized_desion
+  
   pallet_cdao_collective  
 
 - The functions related are as follows:
