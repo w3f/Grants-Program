@@ -85,15 +85,20 @@ _
 - PoC/MVP or other relevant prior work or research on the topic
 
   A specific case of implementing MACI is as follows:
+  
   Assuming that five nodes A, B, C, D, and E have the right to create a new block (and therefore have the right to share the gas cost brought by the new block);
   Assuming that the five nodes have voting shares of 5, 40, 40, 5, and 10 respectively;
+  
   Question: How to produce blocks and how to allocate gas costs? 
  
   The solution for super fair governance is as follows:
+  
   Firstly, each node provides its own block production plan and the total gas that can be obtained from that plan (using bit commitment model, following the step of first committing and then revealing, to provide its own plan);
+  
   Secondly, the decentralized desion system provides a solution.
 
   Assuming that A, B, C, D, and E have expected gas returns of 9, 7, 6, 5, and 4 tokens for the new block, respectively.
+  
   The decentralized desion result is as follows:
 
   A is responsible for generating new block and paying 8.415 tokens to the other four nodes;
@@ -103,28 +108,36 @@ _
   E received a profit of 0.67 tokens.
 
   The analysis of super fairness is as follows:
+  
   E believes that the new block can generate 4 tokens and holds 10% of the shares,
-  Therefore, in a fair state, 0.4 tokens should be distributed; 
+  Therefore, in a fair state, 0.4 tokens should be distributed;
+  
   Also, due to the fact that E actually received 0.67 tokens,Therefore, in E, the share of income per ticket that exceeds the fair value is (0.67-0.4)/10=0.027.
 
   Similarly,It can be analyzed that in B, C, and D, the income per ticket also exceeds the fair value by 0.027 tokens;
 
   Finally, analyze A:
+  
   A believes that the new block can generate 9 tokens, with others holding 95% of the shares,
   Therefore, in a fair state, 8.55 tokens should be paid to others;
+  
   Also, due to A's actual payment of 8.415 tokens, Therefore, in A, the share of income per ticket that exceeds the fair value is (8.55-8.415)/5=0.027.
 
-  Overall, 
+  Overall,
+  
   Decentralized decision-making systems allocate block allocation rights for new blocks,Each token holder can earn 0.027 more than their fair state earnings.
   
-  Conclusion: 
-  In the above allocation scheme, regardless of how other participants collude,As long as the participants' own voting is honest, the final benefit will exceed their fair share.  
+  Conclusion:
+  
+  In the above allocation scheme, regardless of how other participants collude,As long as the participants' own voting is honest, the final benefit will exceed their fair share.
+  
   So, we have established a minimal anti-collusion infrastructure and implemented a mechanism to prevent bribery and collusion. 
 
  
 - What your project is *not* or will *not* provide or implement 
  
   At present, it is not yet a universal anti-collusion system, and the next step of expansion can be used for voting governance on general and controversial issues.
+  
   MACI now can only be applied to simple consensus mechanism processing, such as service provider, providing NFT equity division services for the collective co-creation of NFTs, determining which node is responsible for creating blocks and how to allocate gas fees for consensus nodes, etc. 
  
 ### Ecosystem Fit
@@ -140,9 +153,13 @@ _
 - What need(s) does your project meet?
   
   Provide a decentralized decision-making and voting service interface. The decision result meets the following requirements:
+  
   1 Anti collusion, prohibiting the infringement of the rights and interests of minority opinion holders,
+  
   2 Eliminate governance attacks,
+  
   3 Avoiding the tyranny of the majority,
+  
   4 Enhance members' enthusiasm for participating in governance.
 
 - How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
@@ -150,19 +167,27 @@ _
   The implementation of anti-collusion is based on super fair governance. The concept of super fair governance comes from super fair distribution. Super fair distribution is a mathematical model for solving cake distribution problems.
   Typical cake-cutting solutions are envy-free division and super fair distribution, two decentralized decision-making techniques based on the principle of unanimous consent, which aim to make everyone believe that their cake is bigger than that of others or that their cake is bigger than that of the average.
   
-  Related papers can be referred to: 
-  1 Arnsperger C. Envy-Freeness and Distributive Justice[J]. Journal of Economic Surveys , 1994 , 8(2):155-186. 
-  2 Brams S J, Taylor AD. Fair Division: From Cake-Cutting to Dispute Resolution[J] Social Justice Research,1999,12(2). 
-  3 Liu Chao, Wang WenJie,Super Fair Distribution Based on Individual Preference[C],International Conference on Management Science And Intelligent Control(ICMSIC 2011), 2011-8:368-372. 
+  Related papers can be referred to:
+  
+  1 Arnsperger C. Envy-Freeness and Distributive Justice[J]. Journal of Economic Surveys , 1994 , 8(2):155-186.
+  
+  2 Brams S J, Taylor AD. Fair Division: From Cake-Cutting to Dispute Resolution[J] Social Justice Research,1999,12(2).
+  
+  3 Liu Chao, Wang WenJie,Super Fair Distribution Based on Individual Preference[C],International Conference on Management Science And Intelligent Control(ICMSIC 2011), 2011-8:368-372.
+  
   4 Chen Y , Lai J K , Parkes D C ,et al. Truth, justice, and cake cutting[J].Games & Economic Behavior, 2013, 77(1):284-297. 
 
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   
-  - There is no such pallet that supports Minimal anti collusion infrastructure. The reasons for the failure of these projects are as follows:  
-    The existing voting system, especially the voting system based on the principle of majority, will inevitably lead to damage to the rights of minority opinion holders and cannot avoid collusion among voters to obtain improper benefits. 
-    Using encryption methods to assist in voting decisions can only ensure that participants accurately do what they want to do, but cannot guarantee that the system does the right thing.       
+  - There is no such pallet that supports Minimal anti collusion infrastructure. The reasons for the failure of these projects are as follows:
+  -  
+    The existing voting system, especially the voting system based on the principle of majority, will inevitably lead to damage to the rights of minority opinion holders and cannot avoid collusion among voters to obtain improper benefits.
+
+    Using encryption methods to assist in voting decisions can only ensure that participants accurately do what they want to do, but cannot guarantee that the system does the right thing.
+      
     The solution to the problem lies in changing the principle of majority voting to the principle of unanimous consent.In other words, any final decision must be unanimously agreed upon by all voters.
+  
  
 - Are there any projects similar to yours in related ecosystems? 
   
@@ -264,7 +289,9 @@ Sam, MBA, Senior Project Manager, Data Analyst, with over 20 years of cross disc
 ## Future Plans 
 
  First, we hope to extend the minimum anti-collusion infrastructure into a new consensus mechanism and build a super fair governance chain;
+ 
  Second, we will construct a general, super fair solution to the general dispute problem, i.e., a sufficient anti-collusion infrastructure;
+ 
  Finally, we look forward to the emergence of more and more decentralized decision-making applications (ddapps) on the super fair governance chain, which requires the joint efforts of community members. 
 
 ## Additional Information : 
@@ -275,7 +302,8 @@ Sam, MBA, Senior Project Manager, Data Analyst, with over 20 years of cross disc
 
 **other additional information**  
 
-- The paper about super fair governance is still under review. 
+- The paper about super fair governance is still under review.
+  
 - In polkadot-hackathon-2024 , We plan to build a super fair governance chain, but we are just planning, the workload exceeded expectations, so we need to redo the development plan. 
 
 
