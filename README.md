@@ -1,6 +1,5 @@
 # Polkadot Open Source Grants Bounty<!-- omit in toc -->
 
-
 - [:wave: Introduction](#wave-introduction)
   - [Guidelines](#guidelines)
   - [Project Ideas](#project-ideas)
@@ -12,12 +11,8 @@
   - [2. Application Review](#2-application-review)
   - [3. Milestone Delivery and Payment](#3-milestone-delivery-and-payment)
   - [Changes to a Grant after Approval](#changes-to-a-grant-after-approval)
-- [:mailbox\_with\_mail: Suggest a Project](#mailbox_with_mail-suggest-a-project)
-- [:hammer\_and\_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
-- [:moneybag: Referral Program](#moneybag-referral-program)
 - [:bulb: Help](#bulb-help)
   - [Real-time Conversation](#real-time-conversation)
-  - [Ecosystem Funding Office Hours](#ecosystem-funding-office-hours)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury vs Web3 Grants](#treasury-vs-web3-grants)
   - [Treasury](#treasury)
@@ -134,52 +129,6 @@ The curators consists of individuals who know the funding priorities of the Polk
 - If your _delivery schedule_ significantly changes, please also open a pull request with an updated timeline.
 - If your deliveries are significantly delayed, and we cannot get a hold of you, we will terminate the grant (3 approvals required, regardless of level. If a member of the committee creates the termination PR, only two more approvals are required).
 
-## :mailbox_with_mail: Suggest a Project
-
-If you think that we should support the development of certain tools or projects that aren't in the Polkadot/Kusama [tech stack](https://wiki.polkadot.network/docs/build-open-source), feel free to submit a suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
-
-**Submit an idea:**
-
-If you have an idea for a project or would like to highlight an area in which you'd like to see teams build but lack the technical background to create a detailed outline, you're welcome to open an [issue](https://github.com/w3f/Grants-Program/issues/new) or add it to the [tech stack](https://wiki.polkadot.network/docs/build-open-source) as a potentially interesting project. We will review your suggestion and, if necessary, will create an RFP based on it and reach out to teams able to build it.
-
-**Submit an RFP (Request for Proposals):**
-
-Ideas generally have better chances of being implemented if they're presented in a project outline format that can be picked up straight away by a team, so if you have a good concept of the milestones required to bring your project to life, you can follow the process below and directly submit an RFP:
-
-1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
-2. In the newly created fork, create a copy of the suggestion template ([`RFPs/suggestion-template.md`](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/suggestion-template.md)) inside the [`rfps`](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/docs/RFPs/suggestion-template.md) of the template into the new one, and _do not modify the template file directly._
-3. Name the file after your idea: `project_name.md`.
-4. Fill out the template with the project details. Please include as many details as possible.
-5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grants-Program/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
-6. You will see the same template as for creating an application. Please replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
-7. The RFP will be accepted and merged as soon as it receives three approvals from [W3F Grants Committee](https://github.com/w3f/Grants-Program#w3f-grants-committee) members.
-
-## :hammer_and_wrench: Maintenance Grants
-
-Maintenance Grants are yet another idea to get involved with the Polkadot community. If you are a user of an open-source library that has gone out of date, or you simply want to work on small new features/fix bugs in these repos, we can support your contributions via a grant. We are happy to award rolling grants on a monthly basis, as long as the work done within each time period is performed to a quality standard deemed satisfactory by the grant evaluators.
-
-The process of applying for a Maintenance Grant is similar to what was already outlined above, but instead of defining very detailed deliverables for each milestone upfront, we will ask you to specify, where possible:
-
-- The repo(s) that need maintenance
-- Outline of why the specific project should continue being supported
-- Broad overview of the features/bugs that need development contributions
-- An assurance that the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it would make more sense for the current owners to transfer the repository to your organisation. If you can't get in touch with them, you may, of course, work on a fork)
-- Max budget per month
-
-Then, at the end of each month, you will need to provide a comprehensive report of the work done, including the list of issues/bugs/pull requests worked on, time spent on each of these & finally the associated cost. It is quite likely that the time allocation & cost will vary from month to month, depending on the nature of the project you're contributing to. The delivery process and format should follow that of a typical [milestone delivery](https://github.com/w3f/Grant-Milestone-Delivery#mailbox-milestone-delivery-process), as will the processing of the payment.
-
-Please note that:
-
-- Maintenance grants, as the name suggests, are meant to allow teams/individuals to maintain a certain project, and not to continue its development or implement larger features. Please use the traditional application process for this purpose.
-- The 1-month timeframe is just a guideline. If you find it unsuitable for you or the chosen project for any reason, feel free to adjust as seen fit and point this out in your application.
-- Please bear in mind that the Grants Committee might be stricter in accepting maintainers when compared to typical grants, mostly selecting for applicants with proven experience in the relevant tech stacks.
-- Maintenance Grants are only awarded for fixed timeframes. The requested duration needs to be specified in the application.
-
-## :moneybag: Referral Program
-
-We give away 500 USD to each referral of a successful grant application by _anyone having previously worked on a Web3 Foundation grant_ or _a [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors)_. Web3 Foundation and Parity employees do not qualify for the program, even if they previously worked on a grant.
-
-In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in USDC on Polkadot AssetHub after delivery and approval of the first milestone.
 
 ## :bulb: Help
 
@@ -195,21 +144,6 @@ We also have Matrix/Element channels for real-time discussions on Web3 and Polka
 - [Polkadot Space](https://matrix.to/#/#polkadot:web3.foundation)
 - [Kusama Space](https://matrix.to/#/#kusama:web3.foundation)
 
-### Ecosystem Funding Office Hours
-
-Ecosystem Funding Office Hours are a chance to ask the W3F Ecosystem Funding team questions regarding a specific project or (potential) grant application. It offers
-
-- general guidance regarding the various grants programs and prizes,
-- some quick initial feedback and
-- help how to navigate the ecosystem.
-
-Apply for Office Hours if you
-
-- want to find out what kind of support there might be available for your needs,
-- need feedback before submitting an application or
-- look for help finding other resources you might need.
-
-It is **not** a chance to _pitch_ your project, especially since only the various programs and prizes have different evaluation criteria and decision makers and only a small subset of the Grants team will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
 
 
 ## :rocket: Alternative Funding Sources
