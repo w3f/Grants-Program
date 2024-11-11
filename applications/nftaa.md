@@ -362,8 +362,6 @@ After these, we will add our own functions related to NFTAA staking functionalit
 | **0d.** | Docker                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 |    2a. | nftaa check             | We will add functionalities to read and check if NFTAA exists for a given account                                                  |
 |    2b. | nftaa collections       | We will add functionalities to read existing collections and manage NFTAAs if they are in a collection.                            |
-|    2c. | nftaa stake/unstake     | The functionality needed to do stake/unstake operations on behalf of NFTAA, its like deposit/withdrawal functions                  |
-|    2d. | nftaa increase/decrease | Functions needed to increase or decrease stake by NFTAA, this is needed for full compatibility with traditional methods of staking |
 
 ### Milestone 3 — Web apps integrations + article
 
