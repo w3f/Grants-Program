@@ -182,7 +182,7 @@ _
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   
   - There is no such pallet that supports Minimal anti collusion infrastructure. The reasons for the failure of these projects are as follows:
-  -  
+    
     The existing voting system, especially the voting system based on the principle of majority, will inevitably lead to damage to the rights of minority opinion holders and cannot avoid collusion among voters to obtain improper benefits.
 
     Using encryption methods to assist in voting decisions can only ensure that participants accurately do what they want to do, but cannot guarantee that the system does the right thing.
