@@ -322,11 +322,11 @@ After reimplementing functionalities from pallet_nfts, we will add our own funct
 | **0d.** | Docker                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 |      1. | nftaa_pallet                                 | We will create the initial version of the nftaa_pallet which includes:                                                                                                                                  |
 |     1a. | reimplement functionalities from pallet_nfts | Integration with the Substrate nfts pallet |
-|     1b. | nftaa_address                                | NFTAA creation and ownership management (implement functionality to transfer ownership of NFTAA), construct keyless address for given NFT, create NFTAA address (index) as future input to act as proxy |
-|     1c. | nftaa_pallet_attributes                      | Basic NFT attributes handling, bind NFT and its new keyless address to one entity consists of filling in the attributes contained in the NFTAA item|
-|     1d. | Act as proxy                                 | Implement the proxy functionality to allow NFTs to act as proxy accounts, the owner of NFTAA can do a call via it; for this, we will use pallet_utility special function as_derivate |
-|     1e. | Get owned assets                             | Functionality needed to get all assets owned by given NFTAA |
-|     1f. | Get NFTAAs in account and owner              | Functions for getting all assets owned by given NFTAA and to get owner of given NFTAA with metadata |
+|     1b. | nftaa address                                | NFTAA creation and ownership management (implement functionality to transfer ownership of NFTAA), construct keyless address for given NFT, create NFTAA address (index) as future input to act as proxy |
+|     1c. | nftaa attributes                      | Basic NFT attributes handling, bind NFT and its new keyless address to one entity consists of filling in the attributes contained in the NFTAA item|
+|     1d. | nftaa act as proxy                                 | Implement the proxy functionality to allow NFTs to act as proxy accounts, the owner of NFTAA can do a call via it; for this, we will use pallet_utility special function as_derivate. We will ensure that when an NFTAA is listed for sale, assets owned by the NFTAA cannot be withdrawn, effectively preventing fraudulent transfers. Therefore, if the NFTAA is listed, proxy calls will not be possible. |
+|     1e. | find owned assets                             | Functionality needed to find all assets owned by given NFTAA |
+|     1f. | find NFTAAs for account and owner              | Functions to find owner of given NFTAA |
 
 ### Milestone 2 — Additional features
 
@@ -360,10 +360,10 @@ After these, we will add our own functions related to NFTAA staking functionalit
 | **0b.** | Documentation                                | Inline documentation of code, as well as startup configuration with all necessary commands, included in repository |
 | **0c.** | Testing and Testing Guide                    | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-|    2a. | nftaa_check             | We will add functionalities to read and check if NFTAA exists for a given account                                                  |
-|    2b. | nftaa_collections       | We will add functionalities to read existing collections and manage NFTAAs if they are in a collection.                            |
-|    2c. | nftaa_stake/unstake     | The functionality needed to do stake/unstake operations on behalf of NFTAA, its like deposit/withdrawal functions                  |
-|    2d. | nftaa_increase/decrease | Functions needed to increase or decrease stake by NFTAA, this is needed for full compatibility with traditional methods of staking |
+|    2a. | nftaa check             | We will add functionalities to read and check if NFTAA exists for a given account                                                  |
+|    2b. | nftaa collections       | We will add functionalities to read existing collections and manage NFTAAs if they are in a collection.                            |
+|    2c. | nftaa stake/unstake     | The functionality needed to do stake/unstake operations on behalf of NFTAA, its like deposit/withdrawal functions                  |
+|    2d. | nftaa increase/decrease | Functions needed to increase or decrease stake by NFTAA, this is needed for full compatibility with traditional methods of staking |
 
 ### Milestone 3 — Web apps integrations + article
 
