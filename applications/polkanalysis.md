@@ -197,7 +197,7 @@ I explain why I am applying for a grant now in the **Additional Information** se
 - **Total Costs:** 30,000 USD
 - **DOT %:** Percentage of Total Costs to be paid in (vested) DOT: 50%
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 - First release - Web application / Rest API / Background worker on Polkadot and PeopleChain
 
 - **Estimated duration from now:** 4 months
 - **FTE:**  1
