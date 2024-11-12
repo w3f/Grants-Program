@@ -5,6 +5,7 @@
 - **Team Name:** Andrea Di Franco
 - **Payment Address:** Polkadot Asset Hub (USDC) 13jYU81g4FjBWX4ZMW2o42JCeneqB7xEHfs2muhPfW3RYkq
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2113#issuecomment-2468394537)
 
 ## Project Overview :page_facing_up:
 
