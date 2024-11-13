@@ -97,10 +97,11 @@ This project is planned as 2 milestones, completed in two months.
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to do a fast sync to the tip of the Bitcoin chain. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the tool to download the UTXO set snapshot and import it to Bitcoin Core node. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Full Bitcoin Fast Sync | The key obstacles listed in https://github.com/subcoin-project/subcoin/issues/56#issue-2535464363 will be resolved and a public bootstrap node synced to Bitcoin’s tip will be deployed, enabling users to quickly sync to Bitcoin’s latest state using fast sync. |
+| **0e.** | Article | We will publish an article that explains what was done/achieved as part of the grant. |
+| 1. | `subcoin-snapcake` | We will provide a dedicated tool for downloading the UTXO set snapshot compatible with Bitcoin Core from the Subcoin P2P network. This tool is resources-efficient and does not actually require a full regular Substrate node but only utilizes the Substate networking compoenents. |
 
 ### Milestone 2
 
@@ -111,11 +112,11 @@ This project is planned as 2 milestones, completed in two months.
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the tool to download the UTXO set snapshot and import it to Bitcoin Core node. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to do a fast sync to the tip of the Bitcoin chain. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | We will publish an article that explains what was done/achieved as part of the grant. |
-| 1. | `subcoin-snapcake` | We will provide a dedicated tool for downloading the UTXO set snapshot compatible with Bitcoin Core from the Subcoin P2P network. This tool is resources-efficient and does not actually a full regular Substrate node but only utilizes the Substate networking compoenents. |
+| 1. | Full Bitcoin Fast Sync | The key obstacles listed in https://github.com/subcoin-project/subcoin/issues/56#issue-2535464363 will be resolved and a public bootstrap node synced to Bitcoin’s tip will be deployed, enabling users to quickly sync to Bitcoin’s latest state using fast sync. |
 
 ## Future Plans
 
