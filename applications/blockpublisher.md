@@ -10,7 +10,9 @@
 ## Overview
 #### Decentralized Publishing of News, Journals, and Books
 
-The advent of blockchain technology has the potential to transform the publishing industry in several ways. By leveraging decentralized networks and cryptographic techniques, blockchain-based publishing solutions can offer a more efficient, transparent, and accessible system for authors, publishers, and readers alike.
+The advent of blockchain technology has the potential to transform the publishing industry in several ways. By leveraging decentralized networks and cryptographic techniques, blockchain-based publishing solutions can offer a more efficient, transparent, and accessible system for authors, publishers, and readers alike. It's also versatile enough to be used for entertainment content.
+
+
 
 ### Project Details
 
@@ -42,6 +44,8 @@ A per-article fee will be chosen from a list of tips provided. The money fund fo
 
 The price discovery process is achieved through the adaptation of the [Shivarthu protocol](https://github.com/reaudito/shivarthu/blob/main/docs/shivarthu/Shivarthu.md) or schelling game. In the new modified version, as schelling game requires more computation for large number of jurors, drawing rounds are done offchain using zero knowledge proof ([an example code.](https://github.com/reaudito/anonymous-account-crates)
 
+## Integration with other social media
+The FOSS UI interface can be integrated with other FOSS social media platforms like Mastodon and Bluesky for cross-posting, increasing visibility of articles and posts.
 
 ### Ecosystem Fit
 
