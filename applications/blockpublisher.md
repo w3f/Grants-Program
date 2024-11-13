@@ -83,19 +83,28 @@ Tanushree Behera (B.Ed) has one and half year experinece in rust, substrate, pol
 ## Milestone:
 
 
-Milestone 1:
+### Milestone 1:
 
 - Substrate Template Development:
 
 Develop Substrate templates for price discovery, article storage, and staking coin management.
-Implement and test the Substrate templates to ensure seamless integration with the overall system.
 
 
 - **Estimated duration:** 8 month
 - **FTE:**  1,3
 - **Costs:** 10,000 USD
 
-Milestone 2:
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  GPL |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user about the project |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant.) |
+| 1. | Basic schema | Develop Substrate templates for price discovery, article storage, and staking coin management.|
+| 2. | Tests | Implement and test the Substrate templates to ensure seamless integration with the overall system.|
+
+### Milestone 2:
 
 - Leptos UI Development:
 
@@ -106,7 +115,17 @@ Integrate the Leptos UI with the Substrate templates to enable a seamless user e
 - **FTE:**  1,3
 - **Costs:** 10,000 USD
 
-Milestone 3:
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  GPL |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user about the project |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant.) |
+| 1. | Leptos UI Development | Design and develop a user-friendly UI for article upload, viewing, and interaction with the Substrate templates using Leptos.|
+
+
+### Milestone 3:
 
 - Zero-Knowledge Proof (ZKP) Integration:
 
@@ -116,3 +135,13 @@ Integrate the ZKP system with the Substrate templates and Leptos UI to enable se
 - **Estimated duration:** 6 month
 - **FTE:**  1,3
 - **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  GPL |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user about the project |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant.) |
+| 1. | ZKP for article purchase | Develop a ZKP system for secure article purchasing, ensuring that buyers can prove ownership of the article without revealing the password.|
+| 2. | UI | Integrate the ZKP system with the Substrate templates and Leptos UI to enable secure and private article purchasing. |
