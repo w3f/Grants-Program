@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-applications/nftaa" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.1">
+<title data-rh="true">NFT as an account (NFTAA) | Web3 Foundation Grants</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://grants.web3.foundation/applications/nftaa"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="NFT as an account (NFTAA) | Web3 Foundation Grants"><meta data-rh="true" name="description" content="- Team Name: Decenzio"><meta data-rh="true" property="og:description" content="- Team Name: Decenzio"><link data-rh="true" rel="icon" href="/img/favicon-32x32.png"><link data-rh="true" rel="canonical" href="https://grants.web3.foundation/applications/nftaa"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/nftaa" hreflang="en"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/nftaa" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://9VKKGZO0U1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Web3 Foundation Grants" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.9d1e38fb.css">
+<script src="/assets/js/runtime~main.3ea74b73.js" defer="defer"></script>
+<script src="/assets/js/main.b30e4aef.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" style="background-color:#000;color:#ffffff" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">Looking for advice on how to fund your project? Apply for Office Hours <a href="https://grants.web3.foundation/docs/office-hours">here!</a></div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/w3f_logo.svg" alt="W3F Grants Program" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/w3f_logo.svg" alt="W3F Grants Program" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Grants Program</b></a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/docs/introduction">Docs</a><a class="navbar__item navbar__link" href="/applications">List of Grants</a><a class="navbar__item navbar__link" href="/docs/faq">FAQ</a><a class="navbar__item navbar__link" href="/docs/Process/how-to-apply">Apply</a><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Command+K)"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>NFT as an account (NFTAA)</h1></header>
+<ul>
+<li><strong>Team Name:</strong> Decenzio</li>
+<li><strong>Payment Details:</strong>
+<ul>
+<li>50% in DOT and 50% in USDC for every milestone</li>
+<li><strong>DOT</strong>: 14uSonkTVjMGkJwhqD4oTaDgfGe2LpPgPyS8obomuuNAWfFt</li>
+<li><strong>Payment</strong>: 14uSonkTVjMGkJwhqD4oTaDgfGe2LpPgPyS8obomuuNAWfFt (DOT, USDC)</li>
+</ul>
+</li>
+<li><strong><a href="https://github.com/w3f/Grants-Program/tree/master#level_slider-levels" target="_blank" rel="noopener noreferrer">Level</a>:</strong> 2</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
+<p>NFT as an Account (NFTAA) is an innovative project aimed at revolutionizing the use of NFTs within
+the blockchain ecosystem, particularly in the Substrate based networks like Polkadot and Kusama.
+The project seeks to leverage the unique properties of NFTs to function as proxy accounts, enhancing interoperability,
+security, and flexibility across various blockchain networks.
+By enabling NFTs to hold assets, stake, and interact with other blockchain components similarly to standard accounts,
+NFTAA introduces a novel approach to blockchain interactions.</p>
+<p>The core of NFTAA&#x27;s integration with the Polkadot ecosystem lies in utilizing the Substrate framework to develop custom
+blockchain logic that supports NFT-based accounts.
+These NFT accounts can seamlessly interact with other pallets within the Substrate framework, allowing them to own
+assets, stake, and act as proxies for other accounts.
+This integration takes full advantage of Polkadot’s interoperability features, facilitating seamless communication and
+data sharing across multiple independent blockchains (parachains) within the Polkadot network.</p>
+<p>Our motivation for creating this project stems from the desire to address the inherent limitations and inefficiencies
+associated with traditional staking methods.
+Issues such as the illiquidity of staked assets and the complexities involved in transferring ownership pose significant
+challenges.
+By utilizing NFTs as accounts, we aim to provide a more secure and flexible staking solution, enhancing user control and
+ownership.
+This innovative approach opens new avenues for business opportunities and applications in DeFi
+and enterprise blockchain solutions, underscoring our commitment to advancing blockchain technology and its
+applications.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="project-details">Project Details<a href="#project-details" class="hash-link" aria-label="Direct link to Project Details" title="Direct link to Project Details">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="business-overview">Business Overview<a href="#business-overview" class="hash-link" aria-label="Direct link to Business Overview" title="Direct link to Business Overview">​</a></h4>
+<p>NFTs are unique digital assets that can represent a wide range of physical and digital items with
+varying values.
+Traditionally, NFTs operate on the asset side of the owner-asset relationship, lacking the capability to own other
+assets.
+Conversely, accounts represent ownership of assets within the blockchain ecosystem.
+By combining these two concepts, we propose a unique entity that can both be uniquely identifiable and capable of owning
+other assets, leading to the concept of NFTAA.</p>
+<p>One of the significant strengths of the Substrate framework is its ability to facilitate the creation of custom
+blockchain logic.
+Through forkless runtime upgrades, it is possible to enhance the functionality of individual modules.
+This flexibility is critical as runtime pallets operate close to the system’s core, offering virtually limitless
+modification options.
+Although the transaction weight is a limiting factor in terms of computing resources available for each transaction, it
+does not detract from the Substrate framework’s overall power and adaptability.</p>
+<p>Most Substrate pallets are designed based on a single account architecture, aligning with the NFTAA philosophy and
+facilitating smooth integration with existing infrastructure.
+By treating NFTAAs as conventional accounts, we can easily leverage the existing infrastructure for seamless
+communication.
+Additionally, NFTAAs can function as asset owners or participate in multi-signature schemes, further
+enhancing their utility and security.</p>
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/286414435e0fdd51810c1093688daf67df59d010/proposal/prox.png" alt="Proposal Diagram" width="30%" height="30%">
+<p>A significant feature of NFTAA is the ability to transfer ownership of such an account/asset to
+another owner with the real change of the private keys serving the NFTAA.
+For example, if Alice has an NFTAA in her wallet through which she stakes 100 DOT, Alice can sell the NFTAA to Bob,
+which causes Alice&#x27;s wallet to no longer be able to manipulate the NFTAA,
+meaning, that Bob will have full access using his own private keys that only he knows.
+This gives NFTAA the unique ability to assess many complex use cases.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="technical-details">Technical Details<a href="#technical-details" class="hash-link" aria-label="Direct link to Technical Details" title="Direct link to Technical Details">​</a></h4>
+<p>The implementation of the NFTAA concept within the Polkadot ecosystem can be approached in two primary ways.
+The first approach involves creating custom blockchain logic in the form of a pallet, written in Rust as a Substrate
+module.
+The second approach involves using smart contracts. For this proposal, we prefer the pallet approach due to its
+integration capabilities and performance benefits.</p>
+<p>The proposed state-of-the-art pallet is based on the <em>nfts</em> and <em>utility</em> pallets.
+The first step involves implementing and wrapping the NFT logic from the <em>nfts</em> pallet into the <em>nftaa</em> pallet.
+A collection in the <em>nfts</em> runtime pallet is created to represent an equivalent of a smart contract instance.
+The <em>nftaa</em> pallet marks a collection so that any token from this collection is treated as an account. After creating a
+mintable collection, the <em>nftaa</em> special function must be called with the appropriate parameters, including <em>collection_id</em>
+and <em>attributes</em>.
+Attributes are crucial for enterprise use cases, allowing NFTAAs to be marked as entities such as companies or departments
+within a corporate structure.</p>
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/main/proposal/nftaa_seq_dia_creation.svg" alt="Proposal Diagram" width="70%" height="30%">
+<p>Reimplementing the <em>utility.as_derivate</em> function is the second crucial step.
+Constructing a keyless address in the runtime pallet from accountId and index is challenging.
+The index must represent a concatenation of the collection and token ID, but since the index is a u16 type, it cannot
+accommodate two u32 types.
+To overcome this, we will use the <em>blake2</em> hash function to encode the following properties: a binary prefix <em>&quot;modlpy/nftproxy&quot;</em>, followed by parachain, collection, and token ID. Both collection and token ID are u32 types, and
+padding them with zeros to length 32 prevents overlap.
+The <em>AccountId32</em> type is then used to construct the address, ensuring a unique address for each NFTAA.</p>
+<p>Implementing the <em>nftaa</em> act as a proxy function is the third critical step.
+This function requires verifying that the caller is the owner of the token, constructing a custom derivative function,
+setting the derived account as the caller, and executing the original call.
+This mechanism ensures secure and efficient operations, allowing NFTAAs to function effectively within the blockchain
+ecosystem.</p>
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/main/proposal/nftaa_seq_dia_proxy.svg" alt="Proposal Diagram" width="70%" height="30%">
+<p>Ultimately, the proposed pallet will enable the creation of NFTAAs, setting attributes, and staking on the relay chain via
+the NFTAA.
+This innovative approach not only enhances the functionality and security of NFTs within the blockchain ecosystem but
+also opens new possibilities for their application in various business and financial contexts.
+By combining the strengths of NFTs and blockchain technology, NFTAA represents a significant step forward in the
+evolution of digital assets and their management.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ecosystem-fit">Ecosystem Fit<a href="#ecosystem-fit" class="hash-link" aria-label="Direct link to Ecosystem Fit" title="Direct link to Ecosystem Fit">​</a></h3>
+<p>The NFTAA project aims to modernize staking and account management within the Polkadot and Substrate ecosystems through
+the innovative use of NFTs by leveraging the flexibility of the Substrate framework and Polkadot&#x27;s interoperability features.
+These NFT-based accounts can own assets, participate in staking, and serve as proxies for other accounts, significantly
+enhancing security, transparency, and liquidity within blockchain networks.</p>
+<p>NFTAA targets a diverse audience, including parachain developers, dApp developers, wallet developers, end users, and
+researchers.
+Parachain developers building custom blockchain networks on Polkadot can benefit from enhanced staking and account
+management features offered by NFTAA.
+dApp developers will find NFTAA particularly useful for secure and flexible account management and staking solutions.
+Developers of cryptocurrency wallets can integrate NFTAA to provide users with advanced functionalities, thereby
+improving the user experience.
+Both individuals and enterprises looking for improved liquidity in their blockchain assets can leverage
+NFTAA for better asset management.
+Additionally, researchers and academics interested in exploring new blockchain innovations can study and expand upon the
+unique concepts introduced by NFTAA.</p>
+<p>The NFTAA project addresses several critical needs within the blockchain ecosystem.
+Utilizing NFTAA provides more methods for managing and delegating staking rights without exposing private keys.
+This approach significantly reduces the risk of unauthorized access and enhances overall security.
+Furthermore, NFTAA allows staked assets to remain liquid, enabling users to trade, lend, or use them as collateral even
+while they are staked.
+This flexibility is crucial for users who need access to their assets without compromising their staking benefits.
+The project also potentially leverages Polkadot&#x27;s ability to connect multiple blockchains, ensuring seamless asset transfers and
+interactions across different networks.
+This interoperability is essential for creating a cohesive and efficient blockchain ecosystem.
+Moreover, NFTAA empowers users by allowing them to delegate staking rights, transfer ownership of staked assets, and
+interact with multiple blockchain networks through a single NFTAA, thereby enhancing user control and simplifying asset
+management.</p>
+<p>The needs addressed by the NFTAA project were identified through a comprehensive approach.
+A literature review of existing research on staking mechanisms, blockchain security, and asset management highlighted
+the limitations and potential improvements in current systems.
+Case studies examining current issues faced by stakers and asset managers in blockchain networks like Ethereum and
+Polkadot provided practical insights into the challenges and opportunities for innovation.
+Additionally, research on the drawbacks of existing staking mechanisms and the potential benefits of using NFTs for
+account management provided a solid foundation for the project&#x27;s conceptual framework.</p>
+<p>There are similar projects in the Polkadot universe:</p>
+<ul>
+<li>Lido: A liquid staking protocol that allows users to stake assets and receive derivatives representing the staked
+amount.</li>
+<li>Bifrost: Provides liquidity for staked assets through a voucher system and supports cross-chain staking.</li>
+<li>Acala: Offers a similar staking mechanism with its LDOT token, providing immediate liquidity and flexibility in
+staking.</li>
+</ul>
+<p>Differences and Distinctions:</p>
+<ul>
+<li>NFTAA vs. Lido/Bifrost/Acala: Unlike these projects, NFTAA focuses on using NFTs as proxy accounts for staking, which
+allows for a more flexible and secure delegation of staking rights and ownership. NFTAA also leverages the composability
+of NFTs, enabling them to hold other assets and act as accounts within the blockchain ecosystem.</li>
+</ul>
+<p>Similar concepts exist in other ecosystems:</p>
+<ul>
+<li>Rocket Pool: An Ethereum-based protocol for decentralized staking that allows users to earn rewards without running a
+full node.</li>
+<li>EIP-6551 (TBA - token bound accounts): A proposed Ethereum standard to enhance NFTs by equipping them with smart contract capabilities, allowing them to own assets and interact with other contracts.</li>
+</ul>
+<p>Differences and Distinctions (NFTAA vs. EIP-6551):</p>
+<p>NFTAA is designed specifically for the Polkadot and Substrate ecosystems, utilizing their unique features, such as interoperability and cross-chain communication.
+Additionally, NFTAA’s focus on using NFTs as proxy accounts for staking and asset management offers a novel approach compared to the more traditional liquid staking and smart contract enhancements in the Ethereum ecosystem.</p>
+<p>EIP 6551 presents certain limitations. Our solution, e.g., does not prioritize connecting existing NFTs but enables bidirectional binding of the NFT and proxy.
+Consequently, upon ownership of an NFT, we can discern from the NFT metadata indicating its status as an NFTAA.
+Furthermore, we enhance transparency by ensuring the atomic creation of the NFT and proxy within a single transaction, thereby promoting seamless integration.
+Likewise, our design does not need the registrar service to create the TBA address as opposed to TBA.
+In our case, the pallet creates the NFTAA with functionality that also works as the NFTAA address (TBA uses one more address than NFTAA).
+Another difference is that in TBA, you could have more accounts on one NFT, which, in our case, is not possible due to the atomic creation of exactly one NFT at the time of creating the NFTAA.
+Regarding security, there are at least two differences between NFTAA and TBA. The first is the possibility of generating the address of TBA sooner without having the deployed contract (as the create2 function for creating contracts is deterministic, i.e., you can calculate the future contract address).
+In this case, if the upcoming smart contract is badly developed (does not contain an execute function for byte calls to other contracts) or is not upgradeable, it can happen that assets or liquidity sent to the TBA will not be withdrawable and become locked forever (even the NFT bounded in TBA can be sent by a mistake (if not safeguarded) to the address of TBA. Therefore you lock yourself from it).
+The problem is that TBA uses only the address of any contract you want in the registry contract and does not look for any details on how the contract looks or if it is already deployed. In our case, the account form is pre-defined in the factory pallet, and even after deployment, we guarantee upgradeability as it is a proxy account.
+The second security issue is potential fraud, which is <a href="https://eips.ethereum.org/EIPS/eip-6551#fraud-prevention" target="_blank" rel="noopener noreferrer">described in the EIP 6551 specification</a> that you withdraw assets from the TBA and at the same time sell the NFT to someone who thought that they would also have the assets in the TBA. In our case, we provide the security measures for not withdrawing the assets from the NFTAA while also selling the NFT, which is bound to the NFTAA.</p>
+<p>In summary, the NFTAA project provides a unique solution to enhance staking and account management in the Polkadot
+ecosystem by leveraging NFTs&#x27; flexibility, security, and interoperability. It addresses key needs identified through
+comprehensive research and differentiates itself from similar projects in both Polkadot and related ecosystems.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="team">Team<a href="#team" class="hash-link" aria-label="Direct link to Team" title="Direct link to Team">​</a></h2>
+<p>Our team comprises seasoned blockchain experts, architects, and developers, each bringing extensive experience in
+blockchain technology and other technical knowledge. Our blockchain experts have a deep understanding of decentralized
+systems, consensus mechanisms, and smart contract development.
+Our architects are adept at designing scalable, secure, and efficient blockchain architectures, ensuring seamless
+integration and interoperability within the ecosystem.
+Our developers are proficient in Rust, leveraging its safety and performance features to build robust blockchain
+applications.
+Together, we are committed to pushing the boundaries of blockchain innovation and delivering cutting-edge solutions.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-members">Team members<a href="#team-members" class="hash-link" aria-label="Direct link to Team members" title="Direct link to Team members">​</a></h3>
+<ul>
+<li>
+<p>Name of team leader:</p>
+<ul>
+<li>Roman Bitarovsky</li>
+</ul>
+</li>
+<li>
+<p>Names of team members:</p>
+<ul>
+<li>Kristian Kostal</li>
+<li>Branislav Hozza</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contact">Contact<a href="#contact" class="hash-link" aria-label="Direct link to Contact" title="Direct link to Contact">​</a></h3>
+<ul>
+<li><strong>Contact Name:</strong> Roman Bitarovsky</li>
+<li><strong>Contact Email:</strong> <a href="mailto:decenzio@protonmail.com" target="_blank" rel="noopener noreferrer">decenzio@protonmail.com</a></li>
+<li><strong>Website:</strong> decenzio.com</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="legal-structure">Legal Structure<a href="#legal-structure" class="hash-link" aria-label="Direct link to Legal Structure" title="Direct link to Legal Structure">​</a></h3>
+<ul>
+<li><strong>Registered Address:</strong> Pod Sokolice 517/1 Trencin 911 01 SK</li>
+<li><strong>Registered Legal Entity:</strong> Decenzio s. r. o.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="teams-experience">Team&#x27;s experience<a href="#teams-experience" class="hash-link" aria-label="Direct link to Team&#x27;s experience" title="Direct link to Team&#x27;s experience">​</a></h3>
+<p>Roman has 2 years of experience as a Java backend developer in the banking domain. He participated in the development of a mobile banking wallet app and an app for managing loan applications used by bank back-office workers.
+Additionally, Roman was involved in the development of a DeFi aggregator, an app focused on integrating multiple DeFi functionalities, such as swap, portfolio tracking, loan usage, etc., on the Ethereum network. Roman studies Blockchain technology and completed a bachelor&#x27;s thesis on NFTAA, with an article about this published by IEEE (check the Development status section).
+Currently, Roman is pursuing a Master&#x27;s degree at FIIT STU and working on ZKP research. His further learning activities include a three-year program focusing on leadership. Recently, Roman co-founded Decenzio, a blockchain and Web3-oriented IT company.</p>
+<p>Branislav is a fullstack developer with nearly five years of experience, specializing in technologies such as Vue.js, TypeScript, JavaScript, .NET, and AdonisJS. He has made contributions to the blockchain space, working on the Kodadot NFT gallery platform.
+Additionally, Branislav played a key role in the development of Tokengram, a DeFi social platform, where he combined his development skills with a passion for decentralized finance.
+Branislav’s academic work further highlights his commitment to blockchain innovation. His bachelor’s thesis explored the on-chain representation of gaming assets, utilizing a Substrate pallet to code and research the integration of gaming assets on blockchain networks.</p>
+<p>Kristian is an experienced blockchain architect with a lot of projects behind him, e.g., gold-backed cryptocurrency, cross-chain interoperability API protocol, an EU-wide blockchain platform for debt financing of SMEs by issuing bonds, a web3 social network, etc. He holds PhD in Computer Science from the Slovak University of Technology, with his dissertation thesis focused on interoperability between
+heterogeneous blockchain networks. One of the partial challenges in the dissertation thesis was on scalability issues,
+where he studied Layer-2 techniques, especially with the use of Zero-knowledge proofs. In the last 3 years,
+he has been working on practical use cases of blockchain networks in different domains of computer science
+research. Mentionable are smart grids, e-voting platforms, and asset-sharing platforms with privacy
+preservation. He serves as a Slovak Representative for European blockchain services infrastructure within the
+European Blockchain Partnership (European Commission) and is also active in cooperating on policy-making documents regarding blockchain technologies. Besides that, he serves as leader of the Blockchain &amp; FinTech research group and has authored 25 academic publications.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-code-repos">Team Code Repos<a href="#team-code-repos" class="hash-link" aria-label="Direct link to Team Code Repos" title="Direct link to Team Code Repos">​</a></h3>
+<ul>
+<li><a href="https://github.com/fiit-ba/pool-based-liquidity-protocol" target="_blank" rel="noopener noreferrer">A pool-based liquidity protocol based on Polkadot</a></li>
+<li><a href="https://github.com/fiit-ba/omniscient-blockchain-oracle" target="_blank" rel="noopener noreferrer">An oracle network for Solana blockchain</a></li>
+<li><a href="https://github.com/fiit-tp7-2023" target="_blank" rel="noopener noreferrer">Tokengram social network for NFT holders</a></li>
+<li><a href="https://github.com/brano-hozza/meta-assets" target="_blank" rel="noopener noreferrer">On-chain representation of gaming assets</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-github-profiles">Team GitHub Profiles<a href="#team-github-profiles" class="hash-link" aria-label="Direct link to Team GitHub Profiles" title="Direct link to Team GitHub Profiles">​</a></h3>
+<ul>
+<li><a href="https://github.com/Roman-24" target="_blank" rel="noopener noreferrer">https://github.com/Roman-24</a></li>
+<li><a href="https://github.com/xkostal" target="_blank" rel="noopener noreferrer">https://github.com/xkostal</a></li>
+<li><a href="https://github.com/brano-hozza" target="_blank" rel="noopener noreferrer">https://github.com/brano-hozza</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-linkedin-profiles">Team LinkedIn Profiles<a href="#team-linkedin-profiles" class="hash-link" aria-label="Direct link to Team LinkedIn Profiles" title="Direct link to Team LinkedIn Profiles">​</a></h3>
+<ul>
+<li><a href="https://www.linkedin.com/in/romanbitarovsky/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/romanbitarovsky/</a></li>
+<li><a href="https://www.linkedin.com/in/kristi%C3%A1n-ko%C5%A1%C5%A5%C3%A1l-9599a82b5/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/kristi%C3%A1n-ko%C5%A1%C5%A5%C3%A1l-9599a82b5/</a></li>
+<li><a href="https://www.linkedin.com/in/branislav-hozza-3b7234173/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/branislav-hozza-3b7234173/</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="advisors">Advisors<a href="#advisors" class="hash-link" aria-label="Direct link to Advisors" title="Direct link to Advisors">​</a></h3>
+<p>Ecosystem developers who agreed to provide advisory help during the project implementation phase:</p>
+<ul>
+<li><a href="https://github.com/dudo50" target="_blank" rel="noopener noreferrer">Dudo50</a>, founder of ParaSpell (Interoperability solutions)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-status-open_book">Development Status <!-- -->📖<a href="#development-status-open_book" class="hash-link" aria-label="Direct link to development-status-open_book" title="Direct link to development-status-open_book">​</a></h2>
+<p>This concept has already been implemented as a prototype dApp on an Ethereum-like chain, with its details discussed in two
+academic publications.
+The first is a <a href="https://arxiv.org/pdf/2404.14074" target="_blank" rel="noopener noreferrer">conference full paper</a> presented at
+the <a href="https://icbc2024.ieee-icbc.org/" target="_blank" rel="noopener noreferrer">2024 IEEE International Conference on Blockchain and Cryptocurrency in Dublin</a>.
+The second is a <a href="https://opac.crzp.sk/?fn=detailBiblioForm&amp;sid=2D2C61E4341E5366536A1A3BFA9A" target="_blank" rel="noopener noreferrer">Bachelor&#x27;s thesis</a> where
+this concept was originally developed and first implemented using Solidity smart contracts on Moonriver.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-roadmap-nut_and_bolt">Development Roadmap <!-- -->🔩<a href="#development-roadmap-nut_and_bolt" class="hash-link" aria-label="Direct link to development-roadmap-nut_and_bolt" title="Direct link to development-roadmap-nut_and_bolt">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview-1">Overview<a href="#overview-1" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
+<ul>
+<li><strong>Total Estimated Duration:</strong> 6 months</li>
+<li><strong>Full-Time Equivalent (FTE):</strong>  2 FTE</li>
+<li><strong>Total Costs:</strong> 30,000 USD</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-1--basic-functionality">Milestone 1 — Basic functionality<a href="#milestone-1--basic-functionality" class="hash-link" aria-label="Direct link to Milestone 1 — Basic functionality" title="Direct link to Milestone 1 — Basic functionality">​</a></h3>
+<ul>
+<li><strong>Estimated duration:</strong> 2.5 months</li>
+<li><strong>FTE:</strong>  2</li>
+<li><strong>Costs:</strong> 15,000 USD</li>
+</ul>
+<p>At first, we need to take pallet_nfts, take most core functions of NFS, and wrap these functionalities in our pallet. The reason to add pallet_nfts as a dependency and wrap the functions is to make usage of our pallet_nftaa easier and have all functionalities in one package for developers.</p>
+<p>Functionalities from pallet_nfts:</p>
+<ul>
+<li>pallet::dispatchables::burn</li>
+<li>pallet::dispatchables::buy_item</li>
+<li>pallet::dispatchables::clear_attribute</li>
+<li>pallet::dispatchables::clear_collection_metadata</li>
+<li>pallet::dispatchables::clear_metadata</li>
+<li>pallet::dispatchables::create</li>
+<li>pallet::dispatchables::destroy</li>
+<li>pallet::dispatchables::lock_collection</li>
+<li>pallet::dispatchables::lock_item_properties</li>
+<li>pallet::dispatchables::lock_item_transfer</li>
+<li>pallet::dispatchables::mint</li>
+<li>pallet::dispatchables::redeposit</li>
+<li>pallet::dispatchables::set_attribute</li>
+<li>pallet::dispatchables::set_collection_max_supply</li>
+<li>pallet::dispatchables::set_collection_metadata</li>
+<li>pallet::dispatchables::set_metadata</li>
+<li>pallet::dispatchables::set_price</li>
+<li>pallet::dispatchables::set_team</li>
+<li>pallet::dispatchables::transfer</li>
+<li>pallet::dispatchables::transfer_ownership</li>
+<li>pallet::dispatchables::unlock_item_transfer</li>
+<li>pallet::dispatchables::update_mint_settings</li>
+</ul>
+<p>After reimplementing functionalities from pallet_nfts, we will add our own functions related to NFTAA functionality.</p>
+<table><thead><tr><th style="text-align:right">Number</th><th>Deliverable</th><th>Specification</th></tr></thead><tbody><tr><td style="text-align:right"><strong>0a.</strong></td><td>License</td><td>MIT</td></tr><tr><td style="text-align:right"><strong>0b.</strong></td><td>Documentation</td><td>Inline documentation of code, as well as startup configuration with all necessary commands, included in repository</td></tr><tr><td style="text-align:right"><strong>0c.</strong></td><td>Testing and Testing Guide</td><td>Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.</td></tr><tr><td style="text-align:right"><strong>0d.</strong></td><td>Docker</td><td>We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.</td></tr><tr><td style="text-align:right">1.</td><td>nftaa_pallet</td><td>We will create the initial version of the nftaa_pallet which includes:</td></tr><tr><td style="text-align:right">1a.</td><td>reimplement functionalities from pallet_nfts</td><td>Integration with the Substrate nfts pallet</td></tr><tr><td style="text-align:right">1b.</td><td>nftaa address</td><td>NFTAA creation and ownership management (implement functionality to transfer ownership of NFTAA), construct keyless address for given NFT, create NFTAA address (index) as future input to act as proxy</td></tr><tr><td style="text-align:right">1c.</td><td>nftaa attributes</td><td>Basic NFT attributes handling, bind NFT and its new keyless address to one entity consists of filling in the attributes contained in the NFTAA item</td></tr><tr><td style="text-align:right">1d.</td><td>nftaa act as proxy</td><td>Implement the proxy functionality to allow NFTs to act as proxy accounts, the owner of NFTAA can do a call via it; for this, we will use pallet_utility special function as_derivate. We will ensure that when an NFTAA is listed for sale, assets owned by the NFTAA cannot be withdrawn, effectively preventing fraudulent transfers. Therefore, if the NFTAA is listed, proxy calls will not be possible.</td></tr><tr><td style="text-align:right">1e.</td><td>find owned assets</td><td>Functionality needed to find all assets owned by given NFTAA</td></tr><tr><td style="text-align:right">1f.</td><td>find NFTAAs for account and owner</td><td>Functions to find owner of given NFTAA</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-2--additional-features">Milestone 2 — Additional features<a href="#milestone-2--additional-features" class="hash-link" aria-label="Direct link to Milestone 2 — Additional features" title="Direct link to Milestone 2 — Additional features">​</a></h3>
+<ul>
+<li><strong>Estimated Duration:</strong> 2 month</li>
+<li><strong>FTE:</strong>  1.5</li>
+<li><strong>Costs:</strong> 9,000 USD</li>
+</ul>
+<p>Functionalities from pallet_nfts:</p>
+<ul>
+<li>pallet::dispatchables::approve_item_attributes</li>
+<li>pallet::dispatchables::approve_transfer</li>
+<li>pallet::dispatchables::cancel_approval</li>
+<li>pallet::dispatchables::cancel_item_attributes_approval</li>
+<li>pallet::dispatchables::cancel_swap</li>
+<li>pallet::dispatchables::claim_swap</li>
+<li>pallet::dispatchables::clear_all_transfer_approvals</li>
+<li>pallet::dispatchables::create_swap</li>
+<li>pallet::dispatchables::force_collection_config</li>
+<li>pallet::dispatchables::force_collection_owner</li>
+<li>pallet::dispatchables::force_create</li>
+<li>pallet::dispatchables::force_mint</li>
+<li>pallet::dispatchables::force_set_attribute</li>
+<li>pallet::dispatchables::mint_pre_signed</li>
+<li>pallet::dispatchables::pay_tips</li>
+<li>pallet::dispatchables::set_accept_ownership</li>
+</ul>
+<p>After these, we will add our own functions related to NFTAA staking functionality.</p>
+<table><thead><tr><th style="text-align:right">Number</th><th>Deliverable</th><th>Specification</th></tr></thead><tbody><tr><td style="text-align:right"><strong>0a.</strong></td><td>License</td><td>MIT</td></tr><tr><td style="text-align:right"><strong>0b.</strong></td><td>Documentation</td><td>Inline documentation of code, as well as startup configuration with all necessary commands, included in repository</td></tr><tr><td style="text-align:right"><strong>0c.</strong></td><td>Testing and Testing Guide</td><td>Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.</td></tr><tr><td style="text-align:right"><strong>0d.</strong></td><td>Docker</td><td>We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.</td></tr><tr><td style="text-align:right">2a.</td><td>nftaa check</td><td>We will add functionalities to read and check if NFTAA exists for a given account</td></tr><tr><td style="text-align:right">2b.</td><td>nftaa collections</td><td>We will add functionalities to read existing collections and manage NFTAAs if they are in a collection.</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-3--web-apps-integrations--article">Milestone 3 — Web apps integrations + article<a href="#milestone-3--web-apps-integrations--article" class="hash-link" aria-label="Direct link to Milestone 3 — Web apps integrations + article" title="Direct link to Milestone 3 — Web apps integrations + article">​</a></h3>
+<ul>
+<li><strong>Estimated Duration:</strong> 1.5 month</li>
+<li><strong>FTE:</strong>  1.5</li>
+<li><strong>Costs:</strong> 7,000 USD</li>
+</ul>
+<table><thead><tr><th style="text-align:right">Number</th><th>Deliverable</th><th>Specification</th></tr></thead><tbody><tr><td style="text-align:right"><strong>0a.</strong></td><td>License</td><td>MIT</td></tr><tr><td style="text-align:right"><strong>0b.</strong></td><td>Documentation</td><td>Inline documentation of code, as well as startup configuration with all necessary commands, included in repository</td></tr><tr><td style="text-align:right"><strong>0c.</strong></td><td>Testing and Testing Guide</td><td>Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.</td></tr><tr><td style="text-align:right"><strong>0d.</strong></td><td>Docker</td><td>We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.</td></tr><tr><td style="text-align:right">0e.</td><td>Article</td><td>We will publish an <strong>article</strong> that explains NFTAA (what was done/achieved as part of the grant). The article will be published through an online media service, e.g., medium.com or Linkedin, and advertised through social networks. Our ambition, as we are from academic environment, is to have also an academic paper about the idea of NFTAA in Polkadot published in a conference venue</td></tr><tr><td style="text-align:right">3a.</td><td>Web app integration</td><td>Develop a webapp integration to interact with the nftaa_pallet (integration will be for popular existing Polkadot app for example like Polkadot Staking Dashboard), allowing users to create, manage, and transfer NFTAAs, provide a web application to interact with the nftaa_pallet: allowing users to create collections and single item; manage of metadata and attributes; operate with NFTAA ownership (transfers); play with staking, increase stake and unstake handled by NFTAA; read operations as get for an account, get assets of NFTAA, get the owner of NFTAA</td></tr><tr><td style="text-align:right">3b.</td><td>Marketplace app integration</td><td>We will also prepare integration for existing NFT marketplace app (e.g. Kodadot) for easily buying and selling the NFTAAs with an overall list in a form of a bulleting board.</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="future-plans">Future Plans<a href="#future-plans" class="hash-link" aria-label="Direct link to Future Plans" title="Direct link to Future Plans">​</a></h2>
+<p>Once everything is implemented according to the proposed plan, the application will still be under constant improvement
+as technology progresses.</p>
+<p>In the long run, we also want to improve the design and add new features that can be useful for developers and Polkadot users.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="referral-program-moneybag">Referral Program <!-- -->💰<a href="#referral-program-moneybag" class="hash-link" aria-label="Direct link to referral-program-moneybag" title="Direct link to referral-program-moneybag">​</a></h2>
+<ul>
+<li><strong>Referrer:</strong> <a href="https://github.com/vikiival" target="_blank" rel="noopener noreferrer">VikiiVal</a></li>
+<li><strong>Payment Address:</strong> 15BZFbMsCR1ki59mJHo8iAjgAozGJaYHR3oVRPQWNnoEZiL9 (USDC)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-information-heavy_plus_sign">Additional Information <!-- -->➕<a href="#additional-information-heavy_plus_sign" class="hash-link" aria-label="Direct link to additional-information-heavy_plus_sign" title="Direct link to additional-information-heavy_plus_sign">​</a></h2>
+<p><strong>How did you hear about the Grants Program?</strong> personal recommendation</p>
+<p>The progress we&#x27;ve made so far is detailed in the Development Status section. Here&#x27;s a summary of the key achievements:</p>
+<ul>
+<li>Prototype dApp on Ethereum-like Chain: We have successfully implemented a prototype dApp
+on an Ethereum-like blockchain. This prototype demonstrates the core concepts and functionality of NFTAA.</li>
+<li>Academic Publications: Our work on NFTAA has been documented in two academic publications. The first is a conference
+full paper presented at the 2024 IEEE International Conference on Blockchain and Cryptocurrency in Dublin. The second
+is a Bachelor&#x27;s thesis where the concept was originally developed and first implemented using Solidity smart contracts
+on Moonriver.</li>
+</ul>
+<p>This foundational work has provided valuable insights and a solid basis for the development of NFTAA on the Polkadot
+ecosystem.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/w3f/Grants-Program/edit/master/applications/nftaa.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#project-details" class="table-of-contents__link toc-highlight">Project Details</a></li><li><a href="#ecosystem-fit" class="table-of-contents__link toc-highlight">Ecosystem Fit</a></li><li><a href="#team" class="table-of-contents__link toc-highlight">Team</a><ul><li><a href="#team-members" class="table-of-contents__link toc-highlight">Team members</a></li><li><a href="#contact" class="table-of-contents__link toc-highlight">Contact</a></li><li><a href="#legal-structure" class="table-of-contents__link toc-highlight">Legal Structure</a></li><li><a href="#teams-experience" class="table-of-contents__link toc-highlight">Team&#39;s experience</a></li><li><a href="#team-code-repos" class="table-of-contents__link toc-highlight">Team Code Repos</a></li><li><a href="#team-github-profiles" class="table-of-contents__link toc-highlight">Team GitHub Profiles</a></li><li><a href="#team-linkedin-profiles" class="table-of-contents__link toc-highlight">Team LinkedIn Profiles</a></li><li><a href="#advisors" class="table-of-contents__link toc-highlight">Advisors</a></li></ul></li><li><a href="#development-status-open_book" class="table-of-contents__link toc-highlight">Development Status 📖</a></li><li><a href="#development-roadmap-nut_and_bolt" class="table-of-contents__link toc-highlight">Development Roadmap 🔩</a><ul><li><a href="#overview-1" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#milestone-1--basic-functionality" class="table-of-contents__link toc-highlight">Milestone 1 — Basic functionality</a></li><li><a href="#milestone-2--additional-features" class="table-of-contents__link toc-highlight">Milestone 2 — Additional features</a></li><li><a href="#milestone-3--web-apps-integrations--article" class="table-of-contents__link toc-highlight">Milestone 3 — Web apps integrations + article</a></li></ul></li><li><a href="#future-plans" class="table-of-contents__link toc-highlight">Future Plans</a></li><li><a href="#referral-program-moneybag" class="table-of-contents__link toc-highlight">Referral Program 💰</a></li><li><a href="#additional-information-heavy_plus_sign" class="table-of-contents__link toc-highlight">Additional Information ➕</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">More Info</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/w3f/Grants-Program" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://web3.foundation/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/Support Docs/privacy_policy">Privacy Policy</a></li><li class="footer__item"><a href="https://web3.foundation/legal-disclosures/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Legal Disclosures</a></li></ul></div><div class="col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/Web3foundation" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&amp;via=matrix.org&amp;via=matrix.parity.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">Grants Community Matrix Channel<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2024 Web3 Foundation</div></div></div></footer></div>
+</body>
+</html>
