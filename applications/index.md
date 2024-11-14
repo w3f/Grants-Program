@@ -71,7 +71,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Katarína Valová](https://github.com/kacena123)                       | [AgriDot](./AgriDot.md)                     | [GitHub](https://github.com/kacena123)                 | ☐          |        ☐       |      ☐      |
 | [ParaSpell Research Foundation](https://paraspell.xyz/)                       | [xcNFT](./xcNFT.md)                     | [GitHub](https://github.com/paraspell)                 | ☐          |        ☐       |      ☐      |
 | [Web3 Association](https://github.com/web3association)                       | [Open source contributor funding experiment](./web3-association-open-source-contributor-funding-experiment-setup.md)                     | [GitHub](https://github.com/web3association)                 | ☐          |        ☐       |      ☐      |
-| [SIGMA 8 SOLUTIONS](https://github.com/lukastanisic99)                       | [P2P State Channels](./P2PStateChannels.md)                     | [GitHub](https://github.com/lukastanisic99)                 | ☐          |        ☐       |      ☐      |
+| [SIGMA 8 SOLUTIONS](https://github.com/lukastanisic99)                       | [P2P State Channels](./P2PStateChannels.md)                     | [GitHub](https://github.com/lukastanisic99)                 | ☐          |        ☒       |      ☐      |
 
 [🔝](#top)
 
@@ -93,7 +93,7 @@ Besides, **there is a clear difference between an application being accepted and
 
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
-| [MLabs](https://mlabs.city/)                       | [TuxedoDapp](./TuxedoDapp.md)                     | [GitHub](https://github.com/mlabs-haskell)                 | ☐          |        ☐       |      ☐      |
+| [MLabs](https://mlabs.city/)                       | [TuxedoDapp](./TuxedoDapp.md)                     | [GitHub](https://github.com/mlabs-haskell)                 | ☐          |        ☒       |      ☒      |
 | [Lastic](https://www.lastic.xyz/)                       | [Coretime Indexer + Visualizations](./lastic-grant3.md)                     | [GitHub](https://github.com/LasticXYZ)                 | ☐          |        ☒       |      ☒      |
 | [IgorStojanov](https://igorstojanov.com/)                       | [Material Design Makeover for Substrate Front-End Template](./lsi-front-end-template.md)                     | [GitHub](https://github.com/stojanov-igor)                 | ☐          |        ☒       |      ☒      |
 | DOT Login                       | [DOT Login](./dot-login.md)                     | [GitHub](https://github.com/singkeo)                 | ☐          |        ☒       |      ☒      |
