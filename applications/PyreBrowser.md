@@ -118,7 +118,7 @@ The project is completed and launched! We are now working on other interesting w
 | **0b.** | Documentation | Our documentation is over at [](https://pyrebrowser.com/docs) and will be expanded further to be more intuitive and have more templates for web3 dapps |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Marketing | Intense marketing campaign targeting all major internet communities. Revamp of the main website and hiring of a dedicated community manager. |
+| 1. | Marketing | Intense marketing campaign targeting all major internet communities. Revamp of the main website and innovating good marketing ploys (twitter referal programs, social media linked faucet (for 1 GLMR anyone can create a multitude of things - so just giving someone 20 cents in crypto is a huge boon to the network)). |
 | 2. | Code Release | Release of code open source once we have acheived a solid community base of around 100 websites (or by June 2025) |
 | 3. | DAOs | Development of template DAOs for our interconnected DAO system which allows people to form companies without paperwork and with autonomous shareholder features. We have several DAO models based on the works of Economists such as von Mises, Henry George, Hayek and Piero Sraffa which we hope to implement soon. (Very exciting permutations of economic theory into contracts!) |
 
