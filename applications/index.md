@@ -448,7 +448,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Setheum](https://setheum.xyz/)                       | [Setheum HighEnd LaunchPad Crowdsales Module](./setheum.md)                             | [GitHub](https://github.com/Setheum-Labs)                              | ☐          |       ☐        |     ☐     |
 | [SaaS3 Lab](https://www.saas3.io)                     | [SaaS3](./SaaS3.md)                                                                     | [GitHub](https://github.com/SaaS3Lab)                                  | ☐          |       ☒        |     ☒     |
 | [NUTS Finance](https://nuts.finance)                  | [DOT-pegged derivative built on top of the stable asset protocol](./tdot.md)    | [GitHub](https://github.com/nutsfinance/)                              | ☒          |       ☒        |     ☐     |
-| [Strategy Object](https://strategyobject.com/)        | [Substrate Client for Java](./substrate_client_java.md)                                 | [GitHub](https://github.com/strategyobject/substrate-client-java)      | ☐          |       ☒        |     ☐     |
+| [Strategy Object](https://strategyobject.com/)        | [Substrate Client for Java](./substrate_client_java.md)                                 | [GitHub](https://github.com/strategyobject/substrate-client-java)      | ☒          |       ☒        |     ☐     |
 
 [🔝](#top)
 
