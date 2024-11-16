@@ -1,5 +1,5 @@
 - **Team Name:** Zondax AG
-- **Payment Address:**    USDT (Ethereum network) 0xabe888ba5e2fe8486197eca61d58dd63f2a2f5c6
+- **Payment Address:**   DOT/AssetHub address 1fN87Fgj5BUhezFgbLiGbXTMrBVggnmYBX9anzMBky8KaJ5
 - **[Level]**: 3
 
 ## Project Overview :page_facing_up:
@@ -101,6 +101,7 @@ In this milestone, we will extend the functionality of the application by introd
 ### Milestone3  Maintenance and improvements 
 
 Ongoing maintenance and operation of the application for a period of 12 months. 
+We will cover all costs for the operation of the website, we can provide monitoring information similar to checkly.
 
 Modifications and updates to ensure optimal performance and address any issues
 Includes maintenance of the Migration Ledger App without the addition of new features.
@@ -161,7 +162,7 @@ It does not include technical support for parachains teams.
 - **Estimated workload:** 1 month 
 - **Delivery time:**: 12 months 
 - **FTE:**  0,3 
-- **Costs:** 12'000/ USDT
+- **Costs:** 12'000/ USDT - We request a monthly payment of $1k per month.
 
 Maintenance and operation for 12 months
 
