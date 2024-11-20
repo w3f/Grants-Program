@@ -60,7 +60,7 @@ communication.
 Additionally, NFTAAs can function as asset owners or participate in multi-signature schemes, further
 enhancing their utility and security.
 
-<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/286414435e0fdd51810c1093688daf67df59d010/proposal/prox.png" alt="Proposal Diagram" width="30%" height="30%">
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/286414435e0fdd51810c1093688daf67df59d010/proposal/prox.png" alt="Proposal Diagram" width="30%" height="30%" />
 
 A significant feature of NFTAA is the ability to transfer ownership of such an account/asset to
 another owner with the real change of the private keys serving the NFTAA.
@@ -86,7 +86,7 @@ and _attributes_.
 Attributes are crucial for enterprise use cases, allowing NFTAAs to be marked as entities such as companies or departments
 within a corporate structure.
 
-<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/main/proposal/nftaa_seq_dia_creation.svg" alt="Proposal Diagram" width="70%" height="30%">
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/main/proposal/nftaa_seq_dia_creation.svg" alt="Proposal Diagram" width="70%" height="30%" />
 
 Reimplementing the _utility.as_derivate_ function is the second crucial step.
 Constructing a keyless address in the runtime pallet from accountId and index is challenging.
@@ -102,7 +102,7 @@ setting the derived account as the caller, and executing the original call.
 This mechanism ensures secure and efficient operations, allowing NFTAAs to function effectively within the blockchain
 ecosystem.
 
-<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/main/proposal/nftaa_seq_dia_proxy.svg" alt="Proposal Diagram" width="70%" height="30%">
+<img src="https://raw.githubusercontent.com/decenzio/NFTAA-Polkadot/main/proposal/nftaa_seq_dia_proxy.svg" alt="Proposal Diagram" width="70%" height="30%" />
 
 Ultimately, the proposed pallet will enable the creation of NFTAAs, setting attributes, and staking on the relay chain via
 the NFTAA.

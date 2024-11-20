@@ -1,7 +1,8 @@
 # Substrate Client for Java
 
 - **Team Name:** Seals  
-- **Payment Address:** Information provided in the "W3F Technical Grant Application Form"  
+- **Payment Address:** Information provided in the "W3F Technical Grant Application Form"
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/726#issuecomment-2463302672)
 
 ## Project Overview :page_facing_up:
 

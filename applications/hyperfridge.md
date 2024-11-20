@@ -298,7 +298,7 @@ Repos:
 
 ### Milestone 5 Demo-UI with stable-coin application
 
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 5 month
 * **FTE:**  0.5
 * **Costs:** 1.000 USD
 
