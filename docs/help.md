@@ -12,7 +12,7 @@ title: 💡 Help
 - Take the time to read our **supplementary material**, such as our [guidelines](https://grants.web3.foundation/docs/Introduction/intro), [FAQs](https://grants.web3.foundation/docs/faq) and [guidelines for popular grant categories](https://grants.web3.foundation/docs/Support%20Docs/grant_guidelines_per_category) to understand what we're looking for.
 - Be liberal in the description of your broader vision, but be specific about how you plan to achieve your goals and which parts will be covered by the grant.
 - The more information you can provide in the application, the better. The grant application "only" needs to contain all information required to define the grant, but we are happy to also take supporting documents into account during the evaluation, such as whitepapers, academic papers or presentations.
-- Collect feedback from your target audience. The more you can show that you made an effort to confirm market fit and verification of your approach (do people in the ecosystem agree? How is this problem solved in other ecosystems?), the easier our job.
+- Collect feedback from your target audience. The more you can demonstrate that you made an effort to confirm market fit and verification of your approach (do people in the ecosystem agree? How is this problem solved in other ecosystems?), the easier our job becomes.
 - Be specific about your output. While it's noble to chip away at your grand vision, we are keen to see deliverables that also can stand on their own and bring immediate value to the ecosystem. Keep in mind who the target audience for specific deliverables might be; you may be looking for end users, but the library you are building will be used by other developers.
 
 ### Real-time Conversation
