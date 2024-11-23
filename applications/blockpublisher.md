@@ -28,21 +28,88 @@ Key Features of Blockchain-Based Publishing:
 ### Pasword Sharing:
 Sharing passwords for encrypted files is problematic, in P2P systems. One approach is to store the hash of the password in the blockchain and use Zero Knowledge Proof.
 
+Storing password hashes on blockchain can reveal the structure of a password and may be less secure. However, the purpose of the app is to promote open access and disclose the password after one or two months, once some funding for the article or content has been raised. Therefore, stringent password security is not required. Additionally, users can utilize an auto-password generator to create strong passwords.
+
 ### Secure Article Purchase:
-When a buyer purchases an article, they will pay double or 1.5 times the price. The money will remain in escrow, a secure and tamper-proof storage solution, until the buyer has proven they have access to the article.
+When a buyer purchases an article, they will pay 1.5 or 1.2 times the price. The money will remain in escrow in smart contract, a secure and tamper-proof storage solution, until the buyer has proven they have access to the article.
+
+What if a user doesn't submit proof after accessing the password? The reason for paying an additional amount is to incentivize them to provide proof that they have obtained the password and accessed the content. The money is refunded once they prove they have access to the password or content.
+
+Knowing that users have access to the content will help build their reputation for the user. They can be granted special privileges, such as increased voting power or more chance to be selected as jurors during price discovery.
 
 ### Zero-Knowledge Proof:
 
-To facilitate this, a zero-knowledge proof system will be used. In this system, the buyer must prove to the network that they possess the correct password, without revealing the password itself.
+To facilitate this, a zero-knowledge proof system will be used. In this system, the buyer must prove to the network that they possess the correct password, without revealing the password itself. One hash to match the hash stored in blockchain to validate the password is correct.
 
 ### Per-Article Fee and Open Access:
 
-A per-article fee will be chosen from a list of tips provided. The money fund for the article will remain in escrow until the price discovery process is complete. If the article receives additional money from taxes, it will be released from escrow and article is made open access to the public.
+A per-article fee will be chosen from a list of tips provided. The money fund for the article will remain in escrow until the price discovery process is complete. If the article receives additional money from transaction costs and inflation of token, it will be released from escrow and article is made open access to the public.
 
 
 ## Price discovery
 
 The price discovery process is achieved through the adaptation of the [Shivarthu protocol](https://github.com/reaudito/shivarthu/blob/main/docs/shivarthu/Shivarthu.md) or schelling game. In the new modified version, as schelling game requires more computation for large number of jurors, drawing rounds are done offchain using zero knowledge proof ([an example code.](https://github.com/reaudito/anonymous-account-crates)
+
+### Price discovery of mechanism through Score Schelling Game:
+
+1) Here is how the score Schelling game works to calculate score. For example, you can have a score between -10 and +10. The range of -10 to +10 poses a problem because the mean works best without extreme values. If someone gives -10, and others give 1, the mean result can be skewed due to the -10 outlier. The trick is to remove outliers by computing the standard deviation and eliminating all values more than one standard deviation away from the mean. Subsequently, we calculate the new mean of the remaining values, which consist of atleast 68.27% of the dataset. This new mean becomes the score. If your given score is close to the new mean, you receive incentives. If it deviates from the new mean, a portion of your staking value is deducted. Commit and reveal scheme is used.
+
+
+Code to calculate new mean:
+
+```python
+import statistics
+
+
+
+def calculate_new_mean(items):
+    mean = statistics.mean(items)
+    print(mean)
+    sd = statistics.stdev(items)
+    print(sd)
+
+
+    #The values less than one standard deviation away from the mean account for 68.27% of the set
+    #So we calculate mean of this 68.27% of data removing outlier
+
+    # New data
+    new_items = []
+    for x in items:
+        if x >= mean - sd and x <= mean + sd:
+            new_items.append(x)
+
+    print(new_items)
+
+    new_mean = statistics.mean(new_items)
+    print(new_mean)
+    print("********************")
+
+items = [-10, 1, 1, 1, 5, 1, 1, 7]
+calculate_new_mean(items)
+# 0.875
+# 4.969550137731641
+# [1, 1, 1, 5, 1, 1]
+# 1.6666666666666667
+# ********************
+items2 = [-10, -10, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+calculate_new_mean(items2)
+# -1.5833333333333333
+# 3.941811612428832
+# [0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+# 0.1
+# ********************
+items3 = [-10, -10, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, -9, -8, -7, -6, -5, -4, -3, -2, -1]
+calculate_new_mean(items3)
+# -3.0476190476190474
+# 3.8141341150540375
+# [0, 0, 0, 0, 0, 0, 0, 0, 0, -6, -5, -4, -3, -2, -1]
+# -1.4
+# ********************
+```
+
+3) Then, we will do quality score voting Schelling game that checks the quality or impact of positive externality. The score range is 0-5
+4) A fixed amount of tokens is released for each score. The highest amount of tokens will be released for a score of 5, fewer tokens for a score of 1, and no tokens for a score of 0.
+
 
 ## Integration with other social media
 The FOSS UI interface can be integrated with other FOSS social media platforms like Mastodon and Bluesky for cross-posting, increasing visibility of articles and posts.
