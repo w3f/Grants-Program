@@ -1,0 +1,280 @@
+# QueryWeb3
+
+- **Team Name:** QueryWeb3
+- **Payment Details:**
+  - **DOT**: 15SXUVLizxWtMpYx7eambqqH9Bi942WZdT4wDH89GTXfkeso
+  - **Payment**: 15SXUVLizxWtMpYx7eambqqH9Bi942WZdT4wDH89GTXfkeso , Currency ( USDT)
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+
+## Project Overview :page_facing_up:
+
+- **Tagline**: The most valuable BI and efficient AI-powered information service platform in the Polkadot ecosystem.
+- **Brief Description**: QueryWeb3 aims to address the fragmentation of information and data across various projects within the Polkadot and Kusama ecosystem. By aggregating data, we improve information retrieval and transaction efficiency, enhance user experience, and increase user satisfaction.
+- **Integration with Substrate/Polkadot/Kusama**: Our platform aggregates and analyzes data from the Polkadot and Kusama ecosystem, providing users with timely and integrated valuable information.
+- **Team Interest**: Our team is passionate about leveraging both BI and AI to solve the challenges of fragmented information in the blockchain ecosystem. By integrating advanced BI and AI technologies, we aim to enhance the overall user experience and efficiency, providing users with timely, valuable insights and data-driven decision-making capabilities.
+
+### Overview
+
+Please provide the following:
+
+- If the name of your project is not descriptive, a tagline (one sentence summary).
+- A brief description of your project.
+- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+- An indication of why your team is interested in creating this project.
+
+### Project Details
+
+Use Case 1: QueryWeb3 
+
+- Business Description：By consolidating all underlying data from the Polkadot and Kusama ecosystem chains (including transaction volume, transaction count, DEX trading data, TVL and so on) into foundational BI data, and aggregating activity data, document data, technical code, funding data, TG data, DC data, X data, media data, and video data related to the Polkadot ecosystem into a database, we can use AI to extract user intent and provide timely information feedback.
+
+- Business flow
+![business flow for queryweb3](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2Fa6eea7ae-635d-4c2a-b857-3fd6fbf57622%2Fimage.png?table=block&id=12d2a993-d640-80de-9861-f38852cc6271&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+- **User Roles**: Polkadot users
+
+![queryweb3](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2F3f301465-e1c0-4a47-ae2e-e20aa51ff2ee%2Fimage.png?table=block&id=10a2a993-d640-8082-bd6b-e0013ec9a78a&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+
+
+Use Case 2: Yield Query
+
+- Business Description：allows users to query snapshots of various chains within the Polkadot ecosystem (e.g., DOT, KSM, Hydration, Bifrost, etc.) on any given day. Users can search for all asset types (RWA or DeFi) and all yield types (staking, farming), including all tokens (DOT, KSM, HDT, vDOT, vKSM, BNC, etc.). The query results will list the TVL (Total Value Locked), 24-hour trading volume, and the number of transactions for each token or currency pair.  Additionally, based on these query results, our platform can display the top 10 yield rates in the Polkadot ecosystem, the top 10 chains by TVL, and various visual representations such as line charts, pie charts, or other graphical formats. This information is designed to provide investors and operators with valuable insights for making informed investment and operational decisions.
+
+- Data process： Extract DEFI yield data through the APIs of various blockchains into TiDB and other databases, then process and organize it into multidimensional data suitable for BI, and store it in TiDB.
+
+- Business flow
+![Business flow for yield query](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2F72c39f08-a156-4621-b692-2d799dec3ae8%2Fimage.png?table=block&id=12d2a993-d640-8000-a6f7-c8d337600098&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+
+- User Roles: Polkadot users including investors, operators, data analysts, technical personnel, and media personnel.
+
+![Yield query](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2F6379f6e0-67b8-4957-85db-70dddde1bd3d%2Fimage.png?table=block&id=10a2a993-d640-80f5-bd5a-d7c06146082c&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+
+Use Case 3:Vol & Txns Query
+
+- Business Description：allows users to query transaction volume, transaction count, and token trading volume data for any chain within the Polkadot ecosystem over a specified time period. Users can analyze this data across various time cycles, such as daily, weekly, monthly, quarterly, semi-annual, and annual cycles. The query results will include year-over-year (YoY) and month-over-month (MoM) metrics and so on .Additionally, based on these query results, our platform can generate reports showing the top 10 chains by transaction volume (or transaction count, YoY, MoM、QoQ) for a specific period, as well as trend line charts and other visual representations over a given time frame. This enables users to understand the current state and development trends of each chain within the Polkadot ecosystem. For example, users can observe whether the monthly transaction volume or transaction count has increased or decreased over the past year. This information helps users understand the status and trends of various chains within the Polkadot ecosystem, identify chains with investment potential or risks, and make informed investment and operational decisions.
+
+- data process: Initially, extract data from APIs like Subscan, Hydration, Bifrost and so on for DOT, KSM, Hydration, and Bifrost, process it into multidimensional BI data, and save it to MySQL or Crust to form the data source.
+
+- Business folw ： the same as use case2
+
+- **User Roles**: Polkadot users including investors, operators, data analysts, technical personnel, and media personnel.
+
+![Vol&Txns query](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2F7bbaaa93-b688-47eb-a052-3a68706406fd%2Fimage.png?table=block&id=0a4f87d6-b3ca-4f35-b3ac-b19961126cca&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+
+
+### Ecosystem Fit
+
+Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+
+- Where and how does your project fit into the ecosystem?
+
+- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+Our target audience includes parachain/dapp/wallet/UI developers, designers, our own user base, and users of other dapps within the ecosystem.
+
+- What need(s) does your project meet?
+QueryWeb3 meets the need for timely and integrated information from the Polkadot ecosystem, addressing issues such as finding high-yield financial products, getting timely feedback on information queries, tracking major wallet movements, and identifying airdrops and NFT rewards.
+
+- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
+
+
+**Similar Projects**:
+
+- If there are similar projects, we will identify and assess them, explaining how QueryWeb3 is distinct. If no similar projects exist, we will indicate why such a project might not have been possible, successful, or attempted.
+
+- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
+  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
+
+- Are there any projects similar to yours in related ecosystems? 
+
+## Team :busts_in_silhouette:
+
+> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
+
+### Team members
+
+- Product Manager: RogerLe
+    
+    Entered the blockchain industry in 2017 as a long-term value investor. Have been holding Polkadot since its auction in 2017 and continuously increasing the position.
+    
+    3 years of BI consulting at Huawei, with successful BI business system solutions, methodologies, and practical business experience.
+    
+    4 years of technical development, 8 years of product management，worked at Infosys for several years.
+    
+    Awarded third place in the National Graduate Business Competition “Peak Moment” (strategy, product design, marketing, R&D, finance), serving as the team leader.
+    
+    Independently developed quantitative trading strategies.
+    
+    Resilient, pursuing lifelong growth, with a diverse knowledge structure: Bachelor’s degree in Computer Science and Master’s degree in Economic Philosophy.
+    
+    Other link: [RogerLe🦄🦍 (@lechangxu) / X](https://x.com/lechangxu)
+
+- Names of team members
+- **Community Operations & Technical Advisor:** Dr cao
+    
+    actively participated in several parachain projects as CM, ambassadors, founder of AIWeb3, leads the most vibrant Chinese community within the Polkadot ecosystem, and also renowned for its active Chinese content creators.
+    
+    He is one of the most engaged users, investors, and YouTubers in Polkadot eco (verified by Mythical, check the tweet here: https://twitter.com/cao_lab/status/1781750280117510518).
+    
+    Dr. Cao has also developed Discord and Telegram bots for AIWeb3 and various parachain Chinese communities.
+
+- **Backend Developer:** YanOctavian
+    
+    5 years Senior Polkadot eco-developer and 7 years Ethereum eco-developer;
+    
+    Proficient in public chain development;
+    
+    He has extensive practical experience in the blockchain field and is involved in most areas of public chain development, including rollup and zero-knowledge proof.
+    
+    Rich experience in project management and team leadership.
+    
+    He has worked on prestigious teams such as orbiter.
+    
+    Currently working at SuperEx, helping them build their own public chain using polkadot eco-technology.
+    
+    An avid amateur AI enthusiast, I believe AI technology will bring great changes to web3.
+
+- **Full-Stack Developer:** BinX
+    
+    12 years experience in front, familiar with the react/vue/flutter/nestjs/fastapi conventional technology stack;
+    
+    Familiar with javascript/python/Java/dart language, understands rust;
+    
+    Familiar with web3 Dapp development;
+    
+    Proficient in Polkadot.js, with experience in developing multiple wallets and Dapps.
+
+### Contact
+
+- **Contact Name:** RogerLe
+- **Contact Email:** lechangxu@gmail.com
+- **Website:** https://queryweb3.com/
+
+### Legal Structure
+
+- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
+- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+
+### Team's experience
+
+Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
+
+If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+
+### Team Code Repos
+
+- https://github.com/{your_organisation}/{project_1}
+- https://github.com/{your_organisation}/{project_2}
+
+Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+
+- https://github.com/{team_member_1}
+- https://github.com/{team_member_2}
+
+### Team LinkedIn Profiles (if available)
+
+- https://www.linkedin.com/{person_1}
+- https://www.linkedin.com/{person_2}
+
+
+## Development Status :open_book:
+
+If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+
+- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
+- academic publications relevant to the problem,
+- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
+- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
+- previous interface iterations, such as mock-ups and wireframes.
+
+## Development Roadmap :nut_and_bolt:
+
+This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+
+Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
+
+> :exclamation: If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
+
+### Overview
+
+- **Total Estimated Duration:** 4.5 months
+- **Full-Time Equivalent (FTE):**  60
+- **Total Costs:** 30,000 USD
+
+### Milestone 1 1 构建defi索引和数据后台
+
+- **Estimated duration:** 1.5 month
+- **FTE:**  25
+- **Costs:** 12,000 USD
+
+> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#documentation) for details. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| 1. | DEFI indexer | 负责数据的ETL工作， 根据每条链（先做Biforst、Acala、Assethub、HDX、Moonbean， 后续再添加更多链）上每个DEX或者每个DEFI产品的操作规则，对相关数据进行解析并入库 |
+| 2. | 事实表和维度表|根据数据的特点，建立defi数据事实表和维度表 |
+| 3. | 数据后台 | 基于TiDB、GraphQL和Django构建一个数据后台，对外提供数据api |
+
+
+### Milestone 2 网页和BI开发
+
+- **Estimated Duration:** 1 month
+- **FTE:**  2,0
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| 1. | staking indexer | 对波卡链staking相关的数据进行ETL并入库 |
+| 2. | Web服务 | 开发官网并且提供数据查询，实现case 2所提及的功能 |
+| 3. | BI开发 | 基于superset， 为用户实现更多维度的数据查询和展示 |
+
+
+### Milestone 3 大数据服务
+
+- **Estimated Duration:** 1 month
+- **FTE:**  1,5 
+- **Costs:** 8,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| 1. | 大数据后台 | 一个基于kafka、Spark和Flink的大数据后台，让用户请求更加及时 |
+| 2. | 智能数据查询 | 通过chat2db进行二次开发，让用户可以实现意图查询 |
+
+
+...
+
+
+## Future Plans
+
+Please include here
+
+- how you intend to finance the project's long-term maintenance and development,
+- how you intend to use, enhance, and promote your project in the short term, and
+- the team's long-term plans and intentions in relation to it.
+
+## Referral Program (optional) :moneybag:
+
+You can find more information about the program [here](../README.md#moneybag-referral-program).
+
+- **Referrer:** weimeme
+- **Payment Address:** 152SFecVuA1X6ii1CGTzQWyq4xUMQXHD67TtDJyFNiRyujms (Assethub USDC)
+
+## Additional Information :heavy_plus_sign:
+
+**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+
+Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+
+- Work you have already done.
+- If there are any other teams who have already contributed (financially) to the project.
+- Previous grants you may have applied for.
