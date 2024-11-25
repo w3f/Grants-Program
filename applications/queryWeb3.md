@@ -200,7 +200,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Full-Time Equivalent (FTE):**  60
 - **Total Costs:** 30,000 USD
 
-### Milestone 1 1 构建defi索引和数据后台
+### Milestone 1 Build a DeFi index and data backend.
 
 - **Estimated duration:** 1.5 month
 - **FTE:**  25
@@ -215,12 +215,12 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | DEFI indexer | 负责数据的ETL工作， 根据每条链（先做Biforst、Acala、Assethub、HDX、Moonbean， 后续再添加更多链）上每个DEX或者每个DEFI产品的操作规则，对相关数据进行解析并入库 |
-| 2. | 事实表和维度表|根据数据的特点，建立defi数据事实表和维度表 |
-| 3. | 数据后台 | 基于TiDB、GraphQL和Django构建一个数据后台，对外提供数据api |
+| 1. | DEFI indexer | Responsible for ETL (Extract, Transform, Load) tasks, parsing and storing relevant data according to the operational rules of each DEX or DEFI product on each blockchain (starting with Bifrost, Acala, Assethub, HDX, Moonbeam, and adding more chains later). |
+| 2. | Facts table and dimensions table.|Based on BI data, establish DEFI data fact tables and dimension tables. |
+| 3. | Data backend. | Build a data backend based on TiDB, GraphQL, and Django to provide external data APIs.|
 
 
-### Milestone 2 网页和BI开发
+### Milestone 2 Web and BI development.
 
 - **Estimated Duration:** 1 month
 - **FTE:**  2,0
@@ -231,12 +231,12 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | staking indexer | 对波卡链staking相关的数据进行ETL并入库 |
-| 2. | Web服务 | 开发官网并且提供数据查询，实现case 2所提及的功能 |
-| 3. | BI开发 | 基于superset， 为用户实现更多维度的数据查询和展示 |
+| 1. | staking indexer | Perform ETL (Extract, Transform, Load) operations on staking-related data from the Polkadot chain and store it in the database. |
+| 2. | Web service | Develop an official website and provide data query functionality to implement the features mentioned in case 2. |
+| 3. | BI development | Based on Superset, enable users to perform more multidimensional data queries and visualizations. |
 
 
-### Milestone 3 大数据服务
+### Milestone 3 Big data service
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1,5 
@@ -247,8 +247,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | 大数据后台 | 一个基于kafka、Spark和Flink的大数据后台，让用户请求更加及时 |
-| 2. | 智能数据查询 | 通过chat2db进行二次开发，让用户可以实现意图查询 |
+| 1. | Big data backend. | A big data backend based on Kafka, Spark, and Flink, enabling more timely user requests. |
+| 2. | BI query | Conduct secondary development with Chat2DB, enabling users to perform intent-based queries. |
 
 
 ...
