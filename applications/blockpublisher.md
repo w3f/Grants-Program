@@ -216,3 +216,18 @@ Integrate the ZKP system with the Substrate templates and Leptos UI to enable se
 | 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant.) |
 | 1. | ZKP for article purchase | Develop a ZKP system for secure article purchasing, ensuring that buyers can prove ownership of the article without revealing the password.|
 | 2. | UI | Integrate the ZKP system with the Substrate templates and Leptos UI to enable secure and private article purchasing. |
+
+
+## Future Plans
+
+- how you intend to finance the project's long-term maintenance and development
+
+Once the token value of the app increases, future maintenance cost and development is done through native treasury or governance of the app.
+
+- how you intend to use, enhance, and promote your project in the short term, and
+
+In the short term, our developer team focus on building a robust foundation for our project by hiring and leading a marketing team to increase visibility and user adoption. To ensure the project's initial sustainability and growth, we will explore funding opportunities through venture capital and the Polkadot treasury
+
+- the team's long-term plans and intentions in relation to it.
+
+Polkadot is really a mature framework for dapp developers. Our developer team consists of full-time, dedicated professionals focused on contributing to the Polkadot ecosystem. With Polkadot providing the necessary minimum financial support, we are committed to Polkadot ecosystem development and are willing to maintain our projects for decades to come.
