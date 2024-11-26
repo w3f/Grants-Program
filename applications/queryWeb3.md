@@ -13,14 +13,6 @@
 - **Integration with Substrate/Polkadot/Kusama**: Our platform aggregates and analyzes data from the Polkadot and Kusama ecosystem, providing users with timely and integrated valuable information.
 - **Team Interest**: Our team is passionate about leveraging both BI and AI to solve the challenges of fragmented information in the blockchain ecosystem. By integrating advanced BI and AI technologies, we aim to enhance the overall user experience and efficiency, providing users with timely, valuable insights and data-driven decision-making capabilities.
 
-### Overview
-
-Please provide the following:
-
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
 
 ### Project Details
 
@@ -52,7 +44,7 @@ Use Case 3:Vol & Txns Query
 
 - Business Description：allows users to query transaction volume, transaction count, and token trading volume data for any chain within the Polkadot ecosystem over a specified time period. Users can analyze this data across various time cycles, such as daily, weekly, monthly, quarterly, semi-annual, and annual cycles. The query results will include year-over-year (YoY) and month-over-month (MoM) metrics and so on .Additionally, based on these query results, our platform can generate reports showing the top 10 chains by transaction volume (or transaction count, YoY, MoM、QoQ) for a specific period, as well as trend line charts and other visual representations over a given time frame. This enables users to understand the current state and development trends of each chain within the Polkadot ecosystem. For example, users can observe whether the monthly transaction volume or transaction count has increased or decreased over the past year. This information helps users understand the status and trends of various chains within the Polkadot ecosystem, identify chains with investment potential or risks, and make informed investment and operational decisions.
 
-- data process: Initially, extract data from APIs like Subscan, Hydration, Bifrost and so on for DOT, KSM, Hydration, and Bifrost, process it into multidimensional BI data, and save it to MySQL or Crust to form the data source.
+- data process: Initially, extract data from APIs like Subscan, Hydration, Bifrost and so on for DOT, KSM, Hydration, and Bifrost, process it into multidimensional BI data, and save it to TiDB to form the data source.
 
 - Business folw ： the same as use case2
 
@@ -151,8 +143,8 @@ QueryWeb3 meets the need for timely and integrated information from the Polkadot
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 3118 Yindu Road, Minhang District, Shanghai, China
+- **Registered Legal Entity:** N/A
 
 ### Team's experience
 
@@ -162,13 +154,13 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
+- https://github.com/Query-Web3
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- https://github.com/Query-Web3/backend
+- https://github.com/Query-Web3/frontend
+- https://github.com/Query-Web3/database
 
 ### Team LinkedIn Profiles (if available)
 
@@ -178,13 +170,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+Under construction
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -223,7 +209,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 ### Milestone 2 Web and BI development.
 
 - **Estimated Duration:** 1 month
-- **FTE:**  2,0
+- **FTE:**  20
 - **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
@@ -239,7 +225,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 ### Milestone 3 Big data service
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1,5 
+- **FTE:**  15
 - **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
@@ -250,17 +236,38 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 1. | Big data backend. | A big data backend based on Kafka, Spark, and Flink, enabling more timely user requests. |
 | 2. | BI query | Conduct secondary development with Chat2DB, enabling users to perform intent-based queries. |
 
-
 ...
 
 
 ## Future Plans
 
-Please include here
+### Financing Long-Term Maintenance and Development
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+To ensure the long-term sustainability of QueryWeb3 and provide public goods for the Polkadot ecosystem, we plan to implement the following measures:
+
+- **Partnerships and Sponsorships**: Collaborating with key stakeholders within the Polkadot and Kusama ecosystem to secure funding and sponsorship deals.
+- **Grants and Funding**: Considering support from the Polkadot or KSM treasury and applying for grants from the Web3 Foundation and other blockchain-focused funding bodies to support continuous development.
+- **Community Crowdfunding**: Conducting community crowdfunding campaigns to engage and support the project's long-term development by attracting passionate users and developers.
+
+### Short-Term Use, Enhancement, and Promotion
+
+In the short term, we aim to rapidly iterate on our platform to enhance its functionality and user experience. Our focus includes:
+
+- **User Feedback Integration**: Actively soliciting and incorporating user feedback to ensure our platform meets the needs of our community.
+- **Marketing and Outreach**: Utilizing targeted marketing campaigns and participating in industry events to raise awareness about QueryWeb3, and expanding our influence through cooperation with communities like AIweb3.
+- **Feature Expansion**: Continuously adding new features and improving existing ones to provide more value to our users, such as advanced data visualization tools and real-time alerts.
+- **Data Integration and AI Services**: Using BI to integrate data and provide better AI services, offering users timely value discovery, investment information, and operational insights.
+
+### Long-Term Plans and Intentions
+
+Looking ahead, our team has ambitious goals for QueryWeb3:
+
+- **Become the Go-To Information Hub**: Establish QueryWeb3 as the most reliable and comprehensive BI and AI-powered information service platform in the Polkadot ecosystem.
+- **Expand Ecosystem Integration**: Deepen our integration with the Polkadot and Kusama ecosystems by adding support for more parachains and external data sources.
+- **Innovative Solutions**: Leverage cutting-edge technologies like machine learning and advanced analytics to provide predictive insights and automate complex data queries.
+- **Community Building**: Through this BI+AI data platform, address information asymmetry and data fragmentation issues, continuously serving the Polkadot ecosystem community users to enhance Polkadot's core competitiveness.
+
+By executing on these plans, we aim to create a robust and invaluable resource for the Polkadot and Kusama ecosystems, enhancing overall user experience, improving information retrieval, and driving greater efficiency in transactions and decision-making processes.
 
 ## Referral Program (optional) :moneybag:
 
