@@ -24,7 +24,7 @@ Use Case 1: QueryWeb3
 ![business flow for queryweb3](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2Fa6eea7ae-635d-4c2a-b857-3fd6fbf57622%2Fimage.png?table=block&id=12d2a993-d640-80de-9861-f38852cc6271&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
 - **User Roles**: Polkadot users
 
-![queryweb3](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2F3f301465-e1c0-4a47-ae2e-e20aa51ff2ee%2Fimage.png?table=block&id=10a2a993-d640-8082-bd6b-e0013ec9a78a&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+![queryweb3](https://github.com/Query-Web3/product/blob/main/UI/queryweb3_with_AI.png)
 
 
 Use Case 2: Yield Query
@@ -38,7 +38,7 @@ Use Case 2: Yield Query
 
 - User Roles: Polkadot users including investors, operators, data analysts, technical personnel, and media personnel.
 
-![Yield query](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2F6379f6e0-67b8-4957-85db-70dddde1bd3d%2Fimage.png?table=block&id=10a2a993-d640-80f5-bd5a-d7c06146082c&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+![Yield query](https://raw.githubusercontent.com/Query-Web3/product/refs/heads/main/UI/Yield%20query.webp?token=GHSAT0AAAAAACZVGVFATVKL4KHR5FAG57ZKZ2FIMHA)
 
 Use Case 3:Vol & Txns Query
 
@@ -50,7 +50,7 @@ Use Case 3:Vol & Txns Query
 
 - **User Roles**: Polkadot users including investors, operators, data analysts, technical personnel, and media personnel.
 
-![Vol&Txns query](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2F7bbaaa93-b688-47eb-a052-3a68706406fd%2Fimage.png?table=block&id=0a4f87d6-b3ca-4f35-b3ac-b19961126cca&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+![Vol&Txns query](https://raw.githubusercontent.com/Query-Web3/product/refs/heads/main/UI/vol%26txns%20query.webp?token=GHSAT0AAAAAACZVGVFAC2UQ2XPXSICKANW6Z2FILUA)
 
 
 ### Ecosystem Fit
