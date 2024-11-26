@@ -115,6 +115,7 @@ It does not include technical support for parachains teams.
 - **Delivery time:**: 3 months 
 - **Full-Time Equivalent (FTE):**  2.7 FTE
 - **Total Costs:** 87'000 USDT
+- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT = 50%
 
 ### Milestone 1  Initial UI & Basic Functionality
 
