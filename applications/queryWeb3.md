@@ -38,7 +38,7 @@ Use Case 2: Yield Query
 
 - User Roles: Polkadot users including investors, operators, data analysts, technical personnel, and media personnel.
 
-![Yield query](https://raw.githubusercontent.com/Query-Web3/product/refs/heads/main/UI/Yield%20query.webp?token=GHSAT0AAAAAACZVGVFATVKL4KHR5FAG57ZKZ2FIMHA)
+![Yield query](https://github.com/Query-Web3/product/blob/main/UI/Yield%20query.webp)
 
 Use Case 3:Vol & Txns Query
 
@@ -50,7 +50,7 @@ Use Case 3:Vol & Txns Query
 
 - **User Roles**: Polkadot users including investors, operators, data analysts, technical personnel, and media personnel.
 
-![Vol&Txns query](https://raw.githubusercontent.com/Query-Web3/product/refs/heads/main/UI/vol%26txns%20query.webp?token=GHSAT0AAAAAACZVGVFAC2UQ2XPXSICKANW6Z2FILUA)
+![Vol&Txns query](https://github.com/Query-Web3/product/blob/main/UI/vol%26txns%20query.webp)
 
 
 ### Ecosystem Fit
