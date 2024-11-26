@@ -21,7 +21,7 @@ Use Case 1: QueryWeb3
 - Business Description：By consolidating all underlying data from the Polkadot and Kusama ecosystem chains (including transaction volume, transaction count, DEX trading data, TVL and so on) into foundational BI data, and aggregating activity data, document data, technical code, funding data, TG data, DC data, X data, media data, and video data related to the Polkadot ecosystem into a database, we can use AI to extract user intent and provide timely information feedback.
 
 - Business flow
-![business flow for queryweb3](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2Fa6eea7ae-635d-4c2a-b857-3fd6fbf57622%2Fimage.png?table=block&id=12d2a993-d640-80de-9861-f38852cc6271&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+![business flow for queryweb3](https://github.com/Query-Web3/product/blob/main/business%20flow/queryweb3_with_ai_businessflow.png)
 - **User Roles**: Polkadot users
 
 ![queryweb3](https://github.com/Query-Web3/product/blob/main/UI/queryweb3_with_AI.png)
@@ -34,7 +34,7 @@ Use Case 2: Yield Query
 - Data process： Extract DEFI yield data through the APIs of various blockchains into TiDB and other databases, then process and organize it into multidimensional data suitable for BI, and store it in TiDB.
 
 - Business flow
-![Business flow for yield query](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fefcdcde0-30fd-4903-b1a8-870020f35197%2F72c39f08-a156-4621-b692-2d799dec3ae8%2Fimage.png?table=block&id=12d2a993-d640-8000-a6f7-c8d337600098&spaceId=efcdcde0-30fd-4903-b1a8-870020f35197&width=2000&userId=638ad09f-5298-4a73-90a4-fce8f1564ca6&cache=v2)
+![Business flow for yield query](https://github.com/Query-Web3/product/blob/main/business%20flow/YieldQuery_businessflow.webp)
 
 - User Roles: Polkadot users including investors, operators, data analysts, technical personnel, and media personnel.
 
