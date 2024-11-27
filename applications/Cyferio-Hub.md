@@ -9,42 +9,33 @@
 
 ## Project Overview :page_facing_up:
 
-Cyferio Hub is a confidential rollup router designed to bring scalability, privacy, and interoperability to Polkadot and broader blockchain ecosystems like Ethereum, Bitcoin, and Solana. The Cyferio Hub SDK simplifies the creation and management of confidential rollups, offering a toolkit for privacy-preserving applications. Together, they enable developers to deploy scalable, interoperable, and confidential solutions efficiently.
+Cyferio Hub is a confidential rollup router designed to bring scalability, privacy, and interoperability to Polkadot and broader blockchain ecosystems such as Ethereum, Bitcoin, and Solana. The Cyferio SDK simplifies the creation and management of confidential rollups, offering a toolkit for privacy-preserving applications. Together, they enable developers to deploy scalable, interoperable, and confidential solutions efficiently.
 
 
 ### Overview
 
-Cyferio Hub, built on top of Substrate, serves as a cache layer that links rollups to the Polkadot parachains. This integration simplifies cross-chain communication, enhances scalability, and allows developers to easily build and deploy applications. By providing a seamless settlement layer, Cyferio Hub improves scalability, security, and interoperability, extending the capabilities of existing rollups across various blockchain networks.
+Cyferio Hub, built on top of Substrate, serves as a cache layer that links rollups to the Polkadot parachains. This integration simplifies cross-chain communication, enhances scalability, and allows developers to easily build and deploy applications. By providing a seamless settlement layer, Cyferio Hub extends the capabilities of existing rollups across various blockchain networks.
 
-Moreover, with the Cyferio Hub SDK, developers can easily create confidential rollups that are compatible with existing Substrate-based applications. This compatibility ensures a smooth transition path for developers who are already familiar with Substrate's framework and ecosystem. Also, it brings privacy features to the table, such as confidential transactions, confidential governance, and confidential identity layer, engaging new users to the ecosystem.
+Moreover, with the Cyferio SDK, developers can easily create confidential rollups that are compatible with existing Substrate-based applications. This compatibility ensures a smooth transition path for developers who are already familiar with Substrate's framework and ecosystem. Also, it brings privacy features to the table using FHE (Fully Homomorphic Encryption), such as confidential transactions, confidential governance, and confidential identity layer, engaging new users to the ecosystem.
 
 Last but not least, Cyferio Hub has been recognized for its innovative approach, winning the first prize in the "Building a Blockchain Based on Polkadot SDK" category and the Best Innovation Award at the Polkadot Hackathon 2024 in Bangkok. The team is confident in the project's potential to advance confidential applications across the blockchain ecosystem.
 
 ### Project Details
-// TODO
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
+The Cyferio Hub project aims to unlock confidential applications with FHE rollups that are connected to the Polkadot and broader blockchain ecosystem. Our final product will be a fundamental infrastructure with Cyferio SDK as FHE rollup framework and Cyferio Hub as a rollup router connecting these confidential rollups to the Polkadot parachains and other L1s. This will enable developers to build applications with privacy-preserving use cases. 
 
+Cyferio Hub is built on Substrate, leveraging its modular architecture to integrate with multiple rollups, parachains, and L1s. Cyferio SDK is a modular rollup framework with FHE integration that simplifies the creation and management of confidential rollups, providing developers with the necessary tools to build privacy-preserving applications. Our prior work includes a Proof of Concept (PoC) and a Minimum Viable Product (MVP) as documented in [Cyferio Hub](https://github.com/cyferio-labs/cyferio-hub-node), [Cyferio SDK](https://github.com/cyferio-labs/tmc), and [Website](https://cyferio.com).
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+Additionally, we will further enhance the scalability and speed of transaction processing within Cyferio Hub by collaborating with DragonflyDB to develop an in-memory storage solution. This collaboration will ensure that our infrastructure can support the growing demands of privacy-preserving applications and cross-chain interoperability, providing a robust and efficient solution for developers.
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+Furthermore, we are committed to fostering innovative privacy-preserving projects within the Polkadot ecosystem by incubating teams that are building novel confidential applications using Cyferio's tech stack. Our incubation program will provide these teams with the necessary resources, mentorship, and support to grow and scale their projects. By leveraging Cyferio Hub and Cyferio SDK, these teams will be able to develop cutting-edge privacy-preserving solutions that enhance the overall capabilities of the Polkadot network.
+
 
 ### Ecosystem Fit
+
 Cyferio Hub unlock a new dimension of applications with privacy-preserving use cases by integrating FHE rollups and cross-chain interoperability on the Polkadot ecosystem. It serves as a vital settlement layer and cache, significantly reducing the costs and technical barriers for dApp developers.
 
 Our target audience includes parachain developers and appchain developers seeking confidential rollup solutions and cross-chain data interoperability.
-
-Cyferio Hub addresses the need for cost-effective, privacy-preserving transaction processing and interoperability among rollups, enabling developers to build and scale on Polkadot without significant upfront infrastructure investment. Specific features such as FHE integration and a decentralized cache mechanism ensure that transaction processing remains both secure and efficient, reducing operational costs. Rising costs associated with securing parachain slots and maintaining appchains, along with discussions in the Polkadot developer community, have highlighted a demand for affordable rollup solutions.
 
 Projects such as Fhenix offer FHE rollup solutions on Ethereum, but Cyferio Hub is the first project that brings FHE rollups to the Polkadot ecosystem and makes it furthermore compatible with the broader blockchain ecosystem.
 
@@ -69,7 +60,7 @@ Projects such as Fhenix offer FHE rollup solutions on Ethereum, but Cyferio Hub 
 
 ### Team's experience
 
-Our team has extensive experience within the blockchain industry, particularly in privacy-preserving technologies such as FHE and ZK. Previously, we developed a TMC, Trusted Modular Calculator (now Cyferio Hub SDK) that builds on top of Sovereign SDK and provides confidential modules using TFHE-rs for privacy-focused applications.
+Our team has extensive experience within the blockchain industry, particularly in privacy-preserving technologies such as FHE and ZK. Previously, we developed a TMC, Trusted Modular Calculator (now Cyferio SDK) that builds on top of Sovereign SDK and provides confidential modules using TFHE-rs for privacy-focused applications.
 
 Henry Liu and Frank Wang are core contributors to the Sovereign SDK, a novel modular rollup framework, further demonstrating our commitment to advancing the rollup technology landscape. Moven Tsai has been working on programmable cryptography and is a grant at PSE for the ZK acceleration with mobile GPU project (https://github.com/zkmopro/gpu-acceleration). 
 
@@ -82,12 +73,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://github.com/Zombieliu
 - https://github.com/moven0831
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/in/hongqi-liu-a94186326
-- https://www.linkedin.com/in/moven0831
-
+- https://github.com/vladilen11
 
 ## Development Status :open_book:
 
@@ -98,15 +84,15 @@ The Cyferio Hub MVP has been successfully integrated with Sui and Babylon, demon
 ### Overview
 
 - **Total Estimated Duration**: 6 months
-- **Full-Time Equivalent (FTE)**: 4 FTE
-- **Total Costs**: 50,000 USD
+- **Full-Time Equivalent (FTE)**: 3 FTE
+- **Total Costs**: 100,000 USD
 - **DOT %**: 50%
 
 ### Milestone 1 — Adapters Implementation
 
 - **Estimated Duration**: 2 months
-- **FTE**: 1.5
-- **Costs**: 17,500 USD
+- **FTE**: 3
+- **Costs**: 20,000 USD
 
 | Number  | Deliverable               | Specification                                                                                     |   |
 | ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | - |
@@ -118,21 +104,21 @@ The Cyferio Hub MVP has been successfully integrated with Sui and Babylon, demon
 ### Milestone 2 — FHE Key Management Protocol Integration
 
 - **Estimated Duration**: 2 months
-- **FTE**: 1.5
-- **Costs**: 17,500 USD
+- **FTE**: 3
+- **Costs**: 40,000 USD
 
 | Number  | Deliverable                 | Specification                                                                                                                                   |   |
 | ------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | - |
 | **0a.** | License                     | Apache 2.0                                                                                                                                      |   |
 | **0b.** | Documentation               | Extend the documentation to include workflows for integrating MPC Key Management Protocol.                                                      |   |
 | **0c.** | Testing Guide               | Integration tests for secure key management and its impact on confidential rollup applications.                                                 |   |
-| **1.**  | MPC Key Management Protocol | Integrate MPC Key Management Protocol for FHE keys to ensure the robustness of confidential applications on rollups created by Cyferio Hub SDK. |   |
+| **1.**  | MPC Key Management Protocol | Integrate MPC Key Management Protocol for FHE keys to ensure the robustness of confidential applications on rollups created by Cyferio SDK. |   |
 
 ### Milestone 3 — Live Testnet Deployment
 
 - **Estimated Duration**: 2 months
-- **FTE**: 1
-- **Costs**: 15,000 USD
+- **FTE**: 3
+- **Costs**: 40,000 USD
 
 | Number  | Deliverable   | Specification                                                                          |   |
 | ------- | ------------- | -------------------------------------------------------------------------------------- | - |
