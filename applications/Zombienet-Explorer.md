@@ -184,7 +184,7 @@ With sufficient interest as different parachain teams instrument their parachain
 
 ## Additional Information :heavy_plus_sign:
 
-* Bill Laboon of Web3F recommended we develop a XCM call graph UI which led us down the distributed tracing route.  See also: supporting this RFP for [XCM library & tools](https://github.com/w3f/Grants-Program/blob/master/rfps/open/xcm-tool.md)
+* Bill Laboon of Web3F recommended we develop a XCM call graph UI which led us down the distributed tracing route.  See also: supporting this RFP for [XCM library & tools](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/xcm-tool.md)
 * Polkaholic directly addresses RFP for a [Multi-Chain Block Explorer](https://github.com/w3f/Grants-Program/blob/master/rfps/open/multi-chain-block-explorer.md)
 * Colorful Notion submitted a Treasury Proposal to [Kusama](https://kusama.polkassembly.io/motion/555) + Polkadot and would like to have Polkaholic.io supported by Treasury.  
 * Colorful Notion welcomes active collaborations with parachains in Zombienet, especially in the area of distributed tracing, remote execution, XCM interoperability between EVM+WASM oriented shards, and chain-specific block explorers

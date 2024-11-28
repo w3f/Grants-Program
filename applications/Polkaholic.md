@@ -264,6 +264,6 @@ Polkaholic.io intends to operate its multi-chain block explorer for Polkadot use
 ## Additional Information :heavy_plus_sign:
 
 * Polkaholic directly addresses this RFP for a [Multi-Chain Block Explorer](https://github.com/w3f/Grants-Program/blob/master/rfps/open/multi-chain-block-explorer.md)
-* Bill@Web3F recommended we develop a XCM call graph UI, supporting this RFP for [XCM library & tools](https://github.com/w3f/Grants-Program/blob/master/rfps/open/xcm-tool.md)
+* Bill@Web3F recommended we develop a XCM call graph UI, supporting this RFP for [XCM library & tools](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/xcm-tool.md)
 * We were recommended by Radha to look at the Grants + Treasury Program and through June 2022's Polkadot Decoded event after submitting a polkadot.js PR.
 * We welcome active collaborations with parachains, wallet developers, and projects engaged in "remote control" XCM that are interested in XCM Transfers + Messages APIs and related tooling.
