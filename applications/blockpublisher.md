@@ -41,6 +41,8 @@ Knowing that users have access to the content will help build their reputation f
 
 To facilitate this, a zero-knowledge proof system will be used. In this system, the buyer must prove to the network that they possess the correct password, without revealing the password itself. One hash to match the hash stored in blockchain to validate the password is correct.
 
+Example code of using zero knowledge proof for anonymous voting([an example code.](https://github.com/reaudito/anonymous-account-crates)
+
 ### Per-Article Fee and Open Access:
 
 A per-article fee will be chosen from a list of tips provided. The money fund for the article will remain in escrow until the price discovery process is complete. If the article receives additional money from transaction costs and inflation of token, it will be released from escrow and article is made open access to the public.
@@ -48,7 +50,7 @@ A per-article fee will be chosen from a list of tips provided. The money fund fo
 
 ## Price discovery
 
-The price discovery process is achieved through the adaptation of the [Shivarthu protocol](https://github.com/reaudito/shivarthu/blob/main/docs/shivarthu/Shivarthu.md) or schelling game. In the new modified version, as schelling game requires more computation for large number of jurors, drawing rounds are done offchain using zero knowledge proof ([an example code.](https://github.com/reaudito/anonymous-account-crates)
+The price discovery process is achieved through the adaptation of the [Shivarthu protocol](https://github.com/reaudito/shivarthu/blob/main/docs/shivarthu/Shivarthu.md) or schelling game.
 
 ### Price discovery of mechanism through Score Schelling Game:
 
@@ -146,7 +148,7 @@ Tanushree Behera (B.Ed) has one and half year experinece in rust, substrate, pol
 - https://github.com/orgs/reaudito/repositories
 
 ### Overview
-- **Total Estimated Duration:** 1 and Half Yeards
+- **Total Estimated Duration:** 1 Years and 8 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 30,000 USD
 - **DOT %:** 50% Dot
