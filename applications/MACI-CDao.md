@@ -24,7 +24,7 @@
 
 - MACI use case 
   
-  ![usecase][def]
+  ![usecase][def_maci]
   
 - An overview of the technology stack to be used 
   
@@ -169,8 +169,8 @@
 
 ### Legal Structure
 
-- **Registered Address:**       NA
-- **Registered Legal Entity:**  CDAO
+- **Registered Address:**       No legal structure yet.
+- **Registered Legal Entity:**  No legal structure yet.
 
 ### Team's experience
 
@@ -205,6 +205,8 @@ Sam, MBA, Senior Project Manager, Data Analyst, with over 20 years of cross disc
  
 - Description: Pallet written in Rust for Substrate 2.0 based blockchains. The Pallet will use decentralized decision algorithms to implement the Minimum Anti-Collusion Infrastructure (MACI) mechanism. 
 
+-![DecentralizedDecisionActivityDiagram][def_ddad]
+
 | Number | Deliverable    | Specification | 
 | ------ | -----------    | ------------- |
 | 0a.    | License        | Apache 2.0    |  
@@ -219,6 +221,8 @@ Sam, MBA, Senior Project Manager, Data Analyst, with over 20 years of cross disc
 - **FTE:**                1.5
 - **Costs:**              10,000 USD 
 - Description: Pallet written in Rust for Substrate 2.0 based blockchains. The Pallet will implement  member management and bit commitment voting process,together with decentralized decision pallets, it forms the Minimum anti-collusion Infrastructure (MACI).   
+
+-![CollectiveSequenceDiagram][def_csd]
 
 | Number | Deliverable    | Specification | 
 | ------ | -----------    | ------------- |
@@ -241,7 +245,8 @@ Sam, MBA, Senior Project Manager, Data Analyst, with over 20 years of cross disc
 | **0a.**| License        | Apache 2.0    |  
 | **0b.**| Documentation  | Code documentation, API reference. |  
 | **0c.**| test           | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness.| 
-| **0d.**| Article        | We will publish an article that explains the work done as part of the grant. |  
+| **0d.**| Docker         | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |  
+| **0e.**| Article        | We will publish an article that explains the work done as part of the grant. |  
 | 1.     | Anti-collusion | Implement Minimum Anti-Collusion Infrastructure (MACI). | 
 | 2.     | Voting Example | Integrate a basic voting example that test the mechanism.  | 
    
@@ -265,4 +270,6 @@ Sam, MBA, Senior Project Manager, Data Analyst, with over 20 years of cross disc
 - In polkadot-hackathon-2024, We plan to build a super fair governance chain, but we are just planning. The workload exceeded expectations, so we need to redo the development plan. 
 
 
-[def]: https://github.com/iunknow588/super-fair-chain/blob/a645a872f0e967b0cec23405cac5e70cbdfd852b/docs/maci.png
+[def_maci]: https://github.com/iunknow588/super-fair-chain/blob/master/docs/maci.png
+[def_ddad]: https://github.com/iunknow588/super-fair-chain/blob/master/docs/DecentralizedDecisionActivityDiagram.png
+[def_csd]: https://github.com/iunknow588/super-fair-chain/blob/master/docs/CollectiveSequenceDiagram.png
