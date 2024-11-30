@@ -72,11 +72,28 @@ QueryWeb3 meets the need for timely and integrated information from the Polkadot
 
 - If there are similar projects, we will identify and assess them, explaining how QueryWeb3 is distinct. If no similar projects exist, we will indicate why such a project might not have been possible, successful, or attempted.
 
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
+There are no projects entirely similar to ours, although some have partial similarities, making our BI+AI QueryWeb3 project unique. Here are two examples:
 
-- Are there any projects similar to yours in related ecosystems? 
+1. **Subscan in the Polkadot Ecosystem**: They offer the following services:
+    - **Blockchain Data Queries**: Comprehensive queries on Polkadot and its ecosystem, including block information, transaction records, and account balances.
+    - **Transaction and Event Tracking**: Users can track the transaction history and events of specific addresses in real-time.
+    - **Asset Management**: Detailed information on various assets, including transfer records and current balances.
+    - **Governance and Proposals**: Displays governance proposals and voting situations in the Polkadot network.
+    - **Statistical Analysis**: Provides network statistics, helping users analyze the network's health.
+    
+    QueryWeb3 provides BI+AI services based on these data points, offering multi-dimensional BI reports and statistical analysis. This includes identifying investment opportunities through top transaction volumes and trends. Currently, no project in the Polkadot community achieves this level of analysis. Additionally, users can query which DeFi pools offer the highest returns, enabling efficient investment and staking. Our BI data also feeds into AI, aggregating various project data in the Polkadot ecosystem to solve information asymmetry and data fragmentation issues, serving investors, operators, and media in the Polkadot community.
+    
+2. **DEX Screener in the Ethereum Ecosystem**: They offer the following services:
+    - **Real-time Data Analysis**: Provides real-time data on prices, liquidity, market cap, and trading volume.
+    - **Charts and Trend Analysis**: Supports TradingView charts for technical analysis.
+    - **Multi-Chain Data Aggregation**: Tracks data from over 80 blockchain networks, covering thousands of DEX trading pairs.
+    - **Personalization Features**: Users can set alerts, create watchlists, analyze trends, and trade directly on the platform.
+    - **Cross-Chain Analysis Tools**: Provides data analysis tools across multiple DEX and blockchain networks, helping users make more informed trading decisions.
+    
+    QueryWeb3 is similar to DEX Screener in some respects. We process base trading information and volume into BI data, offering multi-dimensional, varied granularity, and different perspective charts and trend analyses. We also use AI searches to solve information asymmetry in the Polkadot ecosystem, improving user value discovery efficiency and reducing trading costs.
+    
+
+In summary, unlike Subscan and DEX Screener, Subscan provides basic information search services, and DEX Screener mainly offers DeFi information services. However, QueryWeb3 excels in dimensions, depth, perspective, and scope. QueryWeb3 aggregates various data within the Polkadot ecosystem and processes basic data into BI reports, offering direct application value for users, investors, and project operators. The QueryWeb3 project is crucial and irreplaceable in the current Polkadot ecosystem.
 
 ## Team :busts_in_silhouette:
 
@@ -200,7 +217,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#documentation) for details. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| 0e. | Article | We will be publishing an article on the Polkadot community, AIweb3 community, as well as on X and Telegram to update everyone on our progress and work. |
 | 1. | DEFI indexer | Responsible for ETL (Extract, Transform, Load) tasks, parsing and storing relevant data according to the operational rules of each DEX or DEFI product on each blockchain (starting with Bifrost, Acala, Assethub, HDX, Moonbeam, and adding more chains later). |
 | 2. | Facts table and dimensions table.|Based on BI data, establish DEFI data fact tables and dimension tables. |
 | 3. | Data backend. | Build a data backend based on TiDB, GraphQL, and Django to provide external data APIs.|
@@ -216,7 +233,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | -----: | ----------- | ------------- |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| 0e. | Article | We will be publishing an article on the Polkadot community, AIweb3 community, as well as on X and Telegram to update everyone on our progress and work. |
 | 1. | staking indexer | Perform ETL (Extract, Transform, Load) operations on staking-related data from the Polkadot chain and store it in the database. |
 | 2. | Web service | Develop an official website and provide data query functionality to implement the features mentioned in case 2. |
 | 3. | BI development | Based on Superset, enable users to perform more multidimensional data queries and visualizations. |
@@ -232,7 +249,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | -----: | ----------- | ------------- |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| 0e. | Article | We will be publishing an article on the Polkadot community, AIweb3 community, as well as on X and Telegram to update everyone on our progress and work.|
 | 1. | Big data backend. | A big data backend based on Kafka, Spark, and Flink, enabling more timely user requests. |
 | 2. | BI query | Conduct secondary development with Chat2DB, enabling users to perform intent-based queries. |
 
