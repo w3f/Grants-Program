@@ -220,7 +220,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 0e. | Article | We will be publishing an article on the Polkadot community, AIweb3 community, as well as on X and Telegram to update everyone on our progress and work. |
 | 1. | DEFI indexer | Responsible for ETL (Extract, Transform, Load) tasks, parsing and storing relevant data according to the operational rules of each DEX or DEFI product on each blockchain (starting with Bifrost, Acala, Assethub, HDX, Moonbeam, and adding more chains later). |
 | 2. | Facts table and dimensions table.|Based on BI data, establish DEFI data fact tables and dimension tables. |
-| 3. | Data backend. | Build a data backend based on MySQL, GraphQL, and Django to provide external data APIs.|
+| 3. | Data backend. | Build a data backend based on MySQL, GraphQL, and FastAPI to provide external data APIs.|
 
 
 ### Milestone 2 Web and BI development.
