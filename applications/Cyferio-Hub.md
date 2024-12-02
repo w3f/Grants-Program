@@ -9,7 +9,7 @@
 Cyferio Hub is a confidential rollup router designed to bring scalability, privacy, and interoperability to Polkadot, its parachains, and broader blockchain ecosystems such as Ethereum, Bitcoin, and Solana. The Cyferio SDK simplifies the creation and management of confidential rollups, offering a toolkit for privacy-preserving applications. Together, they enable developers to deploy scalable, interoperable, and confidential solutions efficiently.
 
 <p align="center">
- <img src="https://github.com/cyferio-labs/cyferio-sdk/blob/main/assets/w3f/Cyferio%20Hub.png?raw=true" alt="Cyferio Hub"/>
+ <img src="https://github.com/cyferio-labs/cyferio-hub-node/blob/main/assets/w3f/Cyferio%20Hub.png?raw=true" alt="Cyferio Hub"/>
     <br>
     <em>Overview of Cyferio Hub</em>
 </p>
@@ -20,7 +20,7 @@ Cyferio Hub is a confidential rollup router designed to bring scalability, priva
 Cyferio Hub, built on top of Substrate, serves as a cache layer that links rollups to the Polkadot parachains. This integration simplifies cross-chain communication, enhances scalability, and allows developers to easily build and deploy applications. By providing a seamless settlement layer, Cyferio Hub extends the capabilities of existing rollups across various blockchain networks.
 
 <p align="center">
- <img src="https://github.com/cyferio-labs/cyferio-sdk/blob/main/assets/w3f/Cyferio%20Hub%20Arch.png?raw=true" alt="Cyferio Hub"/>
+ <img src="https://github.com/cyferio-labs/cyferio-hub-node/blob/main/assets/w3f/Cyferio%20Hub%20Arch.png?raw=true" alt="Cyferio Hub"/>
     <br>
     <em>Architecture of Cyferio Hub</em>
 </p>
@@ -28,7 +28,7 @@ Cyferio Hub, built on top of Substrate, serves as a cache layer that links rollu
 Moreover, with the Cyferio SDK, developers can easily create confidential rollups that are compatible with existing Substrate-based applications. This compatibility ensures a smooth transition path for developers who are already familiar with Substrate's framework and ecosystem. Also, it brings privacy features to the table using FHE (Fully Homomorphic Encryption), such as confidential transactions, confidential governance, and confidential identity layer, engaging new users to the ecosystem.
 
 <p align="center">
- <img src="https://github.com/cyferio-labs/cyferio-sdk/blob/main/assets/w3f/Cyferio%20SDK%20Arch.png?raw=true" alt="Cyferio Hub"/>
+ <img src="https://github.com/cyferio-labs/cyferio-hub-node/blob/main/assets/w3f/Cyferio%20SDK%20Arch.png?raw=true" alt="Cyferio Hub"/>
     <br>
     <em>Architecture of Cyferio SDK</em>
 </p>
@@ -46,7 +46,7 @@ Additionally, we will further enhance the scalability and speed of transaction p
 Furthermore, we are committed to fostering innovative privacy-preserving projects within the Polkadot ecosystem by incubating teams that are building novel confidential applications using Cyferio's tech stack. Our incubation program will provide these teams with the necessary resources, mentorship, and support to grow and scale their projects. By leveraging Cyferio Hub and Cyferio SDK, these teams will be able to develop cutting-edge privacy-preserving solutions that enhance the overall capabilities of the Polkadot network.
 
 <p align="center">
- <img src="https://github.com/cyferio-labs/cyferio-sdk/blob/main/assets/w3f/Cyferio%20SDK%20Flow.png?raw=true" alt="Cyferio Hub"/>
+ <img src="https://github.com/cyferio-labs/cyferio-hub-node/blob/main/assets/w3f/Cyferio%20SDK%20Flow.png?raw=true" alt="Cyferio Hub"/>
     <br>
     <em>Flow of Cyferio SDK</em>
 </p>
@@ -67,7 +67,7 @@ Projects such as Fhenix offer FHE rollup solutions on Ethereum, but Cyferio Hub 
 ### Team members
 
 - Team Leader: Henry Liu
-- Team Members: Moven Tsai, Frank Wang, Bob
+- Team Members: Moven Tsai, Frank Wang, Bob Chen
 
 ### Contact
 
@@ -89,7 +89,6 @@ Henry Liu and Frank Wang are core contributors to the Sovereign SDK, a novel mod
 ### Team Code Repos
 
 - https://github.com/cyferio-labs/cyferio-hub-node
-- https://github.com/cyferio-labs/tmc
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
