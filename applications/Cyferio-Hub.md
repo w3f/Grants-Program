@@ -56,9 +56,9 @@ Furthermore, we are committed to fostering innovative privacy-preserving project
 
 Cyferio Hub unlocks a new dimension of applications with privacy-preserving use cases by integrating FHE rollups and cross-chain interoperability on the Polkadot ecosystem. Our target audience includes parachain developers and appchain developers seeking confidential rollup solutions and cross-chain data interoperability.
 
-For instance, we expect to integrate with Acala to leverage its mature DeFi platform and provide a new flavor of DeFi applications with on-chain confidentiality provided by FHE rollup. Privacy-preserving applications such as confidential stablecoin payment system, confidential lending protocol, and confidential DEXs can be built on top of it.
+For instance, with the upgrades of JAM (Join-Accumulate Machine), we envision that the FHE rollups created by Cyferio SDK can be deployed on JAM and leverage its advantages to enhance Developer Accessibility, Economic Flexibility with Agile Coretime, and improved Scalability.
 
-Moreover, with the upgrades of JAM (Join-Accumulate Machine), we envision that the FHE rollups created by Cyferio SDK can be deployed on JAM and leverage its advantages to enhance Developer Accessibility, Economic Flexibility with Agile Coretime, and improved Scalability.
+Moreover, we expect to integrate with Acala to leverage its mature DeFi platform and provide a new flavor of DeFi applications with on-chain confidentiality provided by FHE rollup. Privacy-preserving applications such as confidential stablecoin payment system, confidential lending protocol, and confidential DEXs can be built on top of it.
 
 Projects such as Fhenix offer FHE rollup solutions on Ethereum, but Cyferio Hub is the first project that brings FHE rollups to the Polkadot ecosystem and makes it furthermore compatible with the broader blockchain ecosystem. Therefore, with the cross-chain settlement and interoperability features provided by Cyferio Hub, we aim to expand the Polkadot ecosystem by bringing applications on other rollups to it.
 
