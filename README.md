@@ -101,4 +101,4 @@ If you have any questions, feedback or concerns about this program, please open 
 
 ## :information_source: License<!-- omit in toc -->
 
-[Apache License 2.0](LICENSE) © Web3 Foundation
+[Apache License 2.0](LICENSE)
