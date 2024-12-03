@@ -181,7 +181,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://www.linkedin.com/lechangxu
 
-
 ## Development Status :open_book:
 
 Under construction
