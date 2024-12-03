@@ -165,9 +165,7 @@ In summary, unlike Subscan and DEX Screener, Subscan provides basic information 
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+Please see the Team members‘introduction
 
 ### Team Code Repos
 
@@ -181,21 +179,12 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- https://www.linkedin.com/lechangxu
 
 
 ## Development Status :open_book:
 
 Under construction
-
-## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
 
 ### Overview
 
