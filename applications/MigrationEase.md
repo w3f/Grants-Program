@@ -163,7 +163,7 @@ It does not include technical support for parachains teams.
 - **Estimated workload:** 1 month 
 - **Delivery time:**: 12 months 
 - **FTE:**  0,3 
-- **Costs:** 12'000/ USDT - We request a monthly payment of $1k per month.
+- **Costs:** 12'000/ USDT - We request a payment of $3k per quarter.
 
 Maintenance and operation for 12 months
 
