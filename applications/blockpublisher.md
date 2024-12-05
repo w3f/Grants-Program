@@ -216,7 +216,7 @@ Integrate the ZKP system with the Substrate templates and Leptos UI to enable se
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant.) |
-| 1. | ZKP for article purchase | Develop a ZKP system for secure article purchasing, ensuring that buyers can prove ownership of the article without revealing the password.|
+| 1. | ZKP for article purchase | Develop a ZKP system for secure article purchasing, ensuring that buyers can prove ownership of the article without revealing the password. RiscZero framework is used for ZKP system.|
 | 2. | UI | Integrate the ZKP system with the Substrate templates and Leptos UI to enable secure and private article purchasing. |
 
 
