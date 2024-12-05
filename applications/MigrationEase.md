@@ -85,7 +85,7 @@ The core features include:
 - **Connect to Ledger Hardware Device**: Users will be able to securely connect their hardware wallets when using the polkadot generic and migration apps previously developed by Zondax.
 - **Scan and View Accounts**: The app will scan the connected devices and display all relevant accounts, allowing users to view their account balances.
 - **Balance Overview**: Users can easily check the balance of their accounts, including unstaked/available funds.
-- **Transfer and Account Management**: For accounts that are not locked (e.g., due to staking or other restrictions), users will be able to transfer accounts and send funds.
+- **Transfer and Account Management**: For accounts that are not locked (e.g., due to staking or other restrictions), users will be able to transfer accounts and send funds. This will include the transfer of NFTs. 
 
 ### Milestone 2  Advanced Flows and Improvements
 
