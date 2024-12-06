@@ -29,9 +29,9 @@ Use Case 1: QueryWeb3
 
 Use Case 2: Yield Query
 
-- Business Description：allows users to query snapshots of various chains within the Polkadot ecosystem (e.g., DOT, KSM, Hydration, Bifrost, etc.) on any given day. Users can search for all asset types (RWA or DeFi) and all yield types (staking, farming), including all tokens (DOT, KSM, HDT, vDOT, vKSM, BNC, etc.). The query results will list the TVL (Total Value Locked), 24-hour trading volume, and the number of transactions for each token or currency pair.  Additionally, based on these query results, our platform can display the top 10 yield rates in the Polkadot ecosystem, the top 10 chains by TVL, and various visual representations such as line charts, pie charts, or other graphical formats. This information is designed to provide investors and operators with valuable insights for making informed investment and operational decisions.
+- Business Description：allows users to query snapshots of various chains within the Polkadot ecosystem (e.g., Polkadot, Kusama, Hydration, Bifrost, etc.) on any given day. Users can search for all asset types (RWA or DeFi) and all yield types (staking, farming), including all tokens (DOT, KSM, HDT, vDOT, vKSM, BNC, etc.). The query results will list the TVL (Total Value Locked), 24-hour trading volume, and the number of transactions for each token or currency pair.  Additionally, based on these query results, our platform can display the top 10 yield rates in the Polkadot ecosystem, the top 10 chains by TVL, and various visual representations such as line charts, pie charts, or other graphical formats. This information is designed to provide investors and operators with valuable insights for making informed investment and operational decisions.
 
-- Data process： Extract DEFI yield data through the APIs of various blockchains into MySQL and other databases, then process and organize it into multidimensional data suitable for BI, and store it in MySQL.
+- Data process: Extract DEFI yield data through the APIs of various blockchains into MySQL and other databases, then process and organize it into multidimensional data suitable for BI, and store it in MySQL.
 
 - Business flow
 ![Business flow for yield query](https://github.com/Query-Web3/product/blob/main/business%20flow/YieldQuery_businessflow.webp)
@@ -40,13 +40,13 @@ Use Case 2: Yield Query
 
 ![Yield query](https://github.com/Query-Web3/product/blob/main/UI/Yield%20query.webp)
 
-Use Case 3:Vol & Txns Query
+Use Case 3: Vol & Txns Query
 
 - Business Description：allows users to query transaction volume, transaction count, and token trading volume data for any chain within the Polkadot ecosystem over a specified time period. Users can analyze this data across various time cycles, such as daily, weekly, monthly, quarterly, semi-annual, and annual cycles. The query results will include year-over-year (YoY) and month-over-month (MoM) metrics and so on .Additionally, based on these query results, our platform can generate reports showing the top 10 chains by transaction volume (or transaction count, YoY, MoM、QoQ) for a specific period, as well as trend line charts and other visual representations over a given time frame. This enables users to understand the current state and development trends of each chain within the Polkadot ecosystem. For example, users can observe whether the monthly transaction volume or transaction count has increased or decreased over the past year. This information helps users understand the status and trends of various chains within the Polkadot ecosystem, identify chains with investment potential or risks, and make informed investment and operational decisions.
 
 - data process: Initially, extract data from APIs like Subscan, Hydration, Bifrost and so on for DOT, KSM, Hydration, and Bifrost, process it into multidimensional BI data, and save it to MySQL to form the data source.
 
-- Business folw ： the same as use case2
+- Business flow ： the same as use case 2
 
 - **User Roles**: Polkadot users including investors, operators, data analysts, technical personnel, and media personnel.
 
