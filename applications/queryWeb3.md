@@ -206,7 +206,7 @@ Under construction
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will be publishing an article on the Polkadot community, AIweb3 community, as well as on X and Telegram to update everyone on our progress and work. |
-| 1. | DEFI indexer | Responsible for ETL (Extract, Transform, Load) tasks, parsing and storing relevant data according to the operational rules of each DEX or DEFI product on each blockchain (starting with Bifrost, Acala, Assethub, HDX, Moonbeam, and adding more chains later). |
+| 1. | DEFI indexer | Responsible for ETL (Extract, Transform, Load) tasks, parsing and storing relevant data according to the operational rules of each DEX or DEFI product on each blockchain (starting with Bifrost, Acala, Hydration, Moonbeam, and adding more chains later). |
 | 2. | Facts table and dimensions table.|Based on BI data, establish DEFI data fact tables and dimension tables. |
 | 3. | Data backend. | Build a data backend based on MySQL, GraphQL, and FastAPI to provide external data APIs.|
 
