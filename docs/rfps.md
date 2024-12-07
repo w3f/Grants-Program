@@ -26,7 +26,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 | RFP | Last Updated |
 | :-- | :----------: |
-| [anti-collusion_infrastructure.md](RFPs/anti-collusion_infrastructure.md) | 21.09.2023 |
 | [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |  
 
 </details>
@@ -40,6 +39,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | :-- | :----------: |
 | [alternative_polkadot_host_implementations.md](RFPs/alternative_polkadot_host_implementations.md) | 02.03.2023 |
 | [analysis-website-and-data-platform.md](RFPs/analysis-website-and-data-platform.md) | 21.09.2023 |
+| [anti-collusion_infrastructure.md](RFPs/anti-collusion_infrastructure.md) | 21.09.2023 |
 | [data_analysis_tools.md](RFPs/data_analysis_tools.md) | 21.09.2023 |  
 | [decentralized-security-marketplace.md](RFPs/decentralized-security-marketplace.md) | 25.09.2023 |  
 | [identity-directory.md](RFPs/identity-directory.md) | 20.09.2023 |

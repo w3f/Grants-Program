@@ -302,10 +302,11 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [Moondance Labs Ecosysytem Funding Program](https://www.moondancelabs.com/ecosystem-grants-w3f)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
-- [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
-- [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
 - [Polkadot Assurance Legion](https://polkadotassurance.com/)
+- [Polkadot Open Source Developer Grants](https://github.com/PolkadotOpenSourceGrants/apply)
+- [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
+- [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
 
 ## :information_source: License<!-- omit in toc -->
 
