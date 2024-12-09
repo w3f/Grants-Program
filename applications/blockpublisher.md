@@ -118,7 +118,7 @@ The FOSS UI interface can be integrated with other FOSS social media platforms l
 
 ### Ecosystem Fit
 
-Build on substrate, it will become parachain in Kumama or Polkadot
+Build on substrate, it will become parachain in Kusama or Polkadot
 
 
 ## Team
