@@ -174,7 +174,7 @@ Develop Substrate templates for price discovery, article storage, and staking co
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant.) |
-| 1. | Basic schema | Develop Substrate templates for price discovery, article storage, and staking coin management.|
+| 1. | Basic schema | Develop Substrate templates for price discovery, article storage, and token staking management.|
 | 2. | Tests | Implement and test the Substrate templates to ensure seamless integration with the overall system.|
 
 ### Milestone 2:
