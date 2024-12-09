@@ -10,12 +10,13 @@
 
 ### Overview
 
-Please provide the following:
+Bridging the gap between crypto and traditional finance in Sub-Saharan Africa through seamless on-and-offramping solutions.
 
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+Oneramp is a crypto on-and-offramping solution designed for Sub-Saharan Africa, empowering users to effortlessly buy and sell cryptocurrencies using mobile money and bank transfers. Operating in Uganda, Kenya, Tanzania, Zambia, Nigeria, and Ghana, Oneramp integrates with local financial systems to enable users to transact with popular blockchain networks, including StarkNet, Celo, Polygon, and Base. Our platform addresses the unique challenges of financial inclusion in the region, offering a user-friendly and secure gateway for individuals and businesses to participate in the global crypto economy.
+
+Our vision is to integrate Oneramp with the Polkadot ecosystem, enabling seamless on-and-offramping capabilities for USDC and USDT on the Polkadot Asset hub, and Facilitate crypto to fiat payments using their stable coins, enabling financial solutions, including support for DeFi, remittances, and decentralized commerce in Sub-Saharan Africa.
+
+As a team deeply rooted in Sub-Saharan Africa, we understand the region's unique challenges and opportunities for financial inclusion. The Polkadot ecosystem aligns with our mission to democratize access to blockchain technology by offering interoperable and scalable solutions. We see Polkadot as a critical partner in our journey to reduce barriers to entry, enhance user access to decentralized services, and foster economic empowerment across the region. Through this project, we aim to bring the benefits of the Polkadot ecosystem to millions of underserved individuals and businesses, creating a sustainable bridge between traditional and decentralized finance.
 
 ### Project Details
 
