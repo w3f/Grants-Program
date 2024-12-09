@@ -71,7 +71,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Katarína Valová](https://github.com/kacena123)                       | [AgriDot](./AgriDot.md)                     | [GitHub](https://github.com/kacena123)                 | ☐          |        ☐       |      ☐      |
 | [ParaSpell Research Foundation](https://paraspell.xyz/)                       | [xcNFT](./xcNFT.md)                     | [GitHub](https://github.com/paraspell)                 | ☐          |        ☒       |      ☒      |
 | [Web3 Association](https://github.com/web3association)                       | [Open source contributor funding experiment](./web3-association-open-source-contributor-funding-experiment-setup.md)                     | [GitHub](https://github.com/web3association)                 | ☐          |        ☐       |      ☐      |
-| [SIGMA 8 SOLUTIONS](https://github.com/lukastanisic99)                       | [P2P State Channels](./P2PStateChannels.md)                     | [GitHub](https://github.com/lukastanisic99)                 | ☐          |        ☒       |      ☐      |
+| [SIGMA 8 SOLUTIONS](https://github.com/lukastanisic99)                       | [P2P State Channels](./P2PStateChannels.md)                     | [GitHub](https://github.com/lukastanisic99)                 | ☐          |        ☒       |      ☒      |
 
 [🔝](#top)
 
@@ -102,7 +102,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Relai Network](https://relai.network/)                       | [Futur & Fusion Protocols](./FuturFusion.md)                     | [GitHub](https://github.com/RELAI-Network)                 | ☐          |        ☒       |      ☒      |
 | [Zondax AG](https://zondax.ch/)                       | [User Account Access Security Analysis](./research_wallets.md)                     | [GitHub](https://github.com/zondax)                 | ☐          |        ☐       |      ☐      |
 | [Philoniare Team](https://github.com/philoniare/)                       | [create-substrate-app](./create-substrate-app.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☒       |      ☒      |
-| [David Semakula](https://davidsemakula.com)                       | [pallet-verifier](./pallet-verifier.md)                     | [GitHub](https://github.com/davidsemakula)                 | ☐          |        ☐       |      ☐      |
+| [David Semakula](https://davidsemakula.com)                       | [pallet-verifier](./pallet-verifier.md)                     | [GitHub](https://github.com/davidsemakula)                 | ☐          |        ☒       |      ☒      |
 | [Algorealm](https://github.com/algorealminc)                       | [SwarmNL](./swarm-nl.md)                     | [GitHub](https://github.com/algorealminc)                 | ☐          |        ☒       |      ☒      |
 | [Rui Morais](https://github.com/fiono11)                       | [Threshold Signature Implementation](./ThresholdSignature.md)                     | [GitHub](https://github.com/fiono11)                 | ☐          |        ☐       |      ☐      |
 
