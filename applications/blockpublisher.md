@@ -160,7 +160,7 @@ Tanushree Behera (B.Ed) has one and half year experinece in rust, substrate, pol
 
 - Substrate Template Development:
 
-Develop Substrate templates for price discovery, article storage, and staking coin management.
+Develop Substrate templates for price discovery, article storage, and token staking management.
 
 
 - **Estimated duration:** 8 month
