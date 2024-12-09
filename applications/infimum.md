@@ -52,7 +52,7 @@ The goal of this system is to deincentivize collusion between participants given
         4. Poll message state: mapping between poll id and a merkle tree of secret participant messages (i.e. votes and/or nullifiers)
         5. Poll Result: mapping between poll id and outcome
     4. Dependencies
-        1. We will rely on the [Groth16](https://eprint.iacr.org/2016/260.pdf) verifier provided by [bellman](https://github.com/zkcrypto/bellman/blob/main/src/groth16/verifier.rs) under the [MIT license](https://github.com/zkcrypto/bellman/blob/main/LICENSE-MIT).
+        1. We will rely on the [Groth16](https://eprint.iacr.org/2016/260.pdf) verifier provided by [arkworks](https://github.com/arkworks-rs/groth16) under the [MIT license](https://github.com/arkworks-rs/groth16/blob/master/LICENSE-MIT).
 2. CLI tool
     1. Description
         1. Facilitates off-chain computations performed by participants and trusted operators. In particular, generating the values (e.g. encryption keys, proofs) required by the function signatures specified in the first deliverable (1.Susbtrate Pallet). This will be provided as a TypeScript library (in order to serve as a starting point for future integration into dApps) with a simple CLI wrapper.
@@ -175,9 +175,9 @@ Development status will be found over at [https://github.com/rhysbalevicius/infi
 | 0a. | License | MIT |
 | 0b. | Documentation | Inline documentation. Amendment to the original guide explaining the requirements for satisfying the verification logic. |
 | 0c. | Testing | Unit tests for methods added. Updated unit tests for amended methods. |
-| 1a. | Pallet: verification methods | Private methods for verifying proofs which have been generated off-chain by the CLI delivered in Milestone 3. Relies on the verification logic provided by bellman (https://github.com/zkcrypto/bellman). |
+| 1a. | Pallet: verification methods | Private methods for verifying proofs which have been generated off-chain by the CLI delivered in Milestone 3. Relies on the verification logic provided by arkworks (https://github.com/arkworks-rs/groth16). |
 | 1b. | Pallet: method modifications | Modifications to methods 1.ii.h and 1.ii.i (listed under deliverables in the project overview) to call the private verification methods defined in Milestone 2.1.a — these modifications will guard against storage updates in the case that verification fails, and publish the final poll outcome in the case of success. |
-| 2. | Circom circuits  | Fork of MACI circuits defined here (https://github.com/privacy-scaling-explorations/maci/tree/master/circuits/circom) and licensed under MIT, amended as necessary for consumption within our off-chain proof generation pipeline. |
+| 2. | Circom circuits  | Fork of MACI circuits defined here (https://github.com/privacy-scaling-explorations/maci/tree/dev/packages/circuits) and licensed under MIT, amended as necessary for consumption within our off-chain proof generation pipeline. |
 
 ### Milestone 3 — CLI tool and docsite
 
