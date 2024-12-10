@@ -20,34 +20,42 @@ As a team deeply rooted in Sub-Saharan Africa, we understand the region's unique
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+here is the oneramp [widget](https://pay.oneramp.io)
+here is the oneramp [project demo](https://youtu.be/N7O2s7tmJZ8)
+Here’s a quick overview of the user journey when buying/selling stablecoins on OneRamp:
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+- The user navigates to the OneRamp platform via a mobile or web browser.
+- They select the blockchain they want to use (polkadot).
+- The user connects their crypto wallet.
+- They enter the amount of USDC/USDT they wish to buy/sell.
+- The user makes a payment using mobile money/transfers stablecoins from their wallet.
+- Finally, they receive USDC in their connected wallet/ receive mobile money to their mobile phone contact.
+here is the architecture of the processes
+<table>
+  <tr>
+    <th>Sell</th>
+    <th>Buy</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/eec27df7-a365-4cf4-9d55-401eb43ae5be" alt="sellcrypto" width="400"></img>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/7ec1f78e-9ef3-47e0-a9ca-52a50d35a04b" alt="buycrypto" width="400"></img>
+    </td>
+  </tr>
+</table>
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+Oneramp fits into the Polkadot/Substrate/Kusama ecosystem as a critical on-and-offramping solution tailored for Sub-Saharan Africa. By bridging the gap between crypto and traditional financial systems, Oneramp simplifies access to Stablecoins that can then be swapped for DOT, KSM, and assets within parachains, enabling seamless transactions between decentralized platforms and local payment methods like mobile money and bank transfers. This integration empowers the ecosystem by onboarding users from a region with rapidly growing crypto adoption while supporting developers and dApps in expanding their user base.
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted.
-- Are there any projects similar to yours in related ecosystems?
+Our target markets includes wallets, developers and parachain teams seeking to grow in African markets, dApp builders requiring accessible on-and-offramping solutions, wallet providers integrating Polkadot assets, and end users who need a simple way to transact using their preferred local payment methods. Oneramp addresses critical needs such as financial inclusion for underbanked and unbanked populations, enhanced accessibility to decentralized financial services, and liquidity bridging for DOT, KSM, and other Polkadot assets. It also supports developer adoption by providing ready-to-integrate infrastructure for parachains and dApps.
+
+The need for Oneramp was identified through market research and direct user feedback. Sub-Saharan Africa ranks among the highest in global crypto adoption, driven by remittances and financial access gaps. Oneramp’s existing operations in six African countries, with over 5000 users and $130,000 in transaction volume, demonstrate the demand for localized payment solutions. Reports such as the [Chainalysis Africa Crypto Adoption](https://www.chainalysis.com/blog/africa-cryptocurrency-adoption/) and GSMA Mobile Money studies(https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/gsma_resources/state-of-the-industry-report-on-mobile-money-2023-2/) where mobile money accounts for over 70% of the finacial transactions in sub-saharan africa underscore the importance of a mobilemoney-cryptocurrency bridge in facilitating financial transactions in this region.
+
+Currently, there are no dedicated on-and-offramping solutions tailored to Sub-Saharan Africa within the Polkadot ecosystem, presenting a significant opportunity for Oneramp to fill this gap. While generic fiat-crypto gateways exist in other ecosystems, they lack the localized payment integrations critical for success in Africa. Oneramp’s focus on mobile money and local banking systems uniquely positions it to drive adoption and accessibility in the Polkadot ecosystem. By addressing these challenges, Oneramp is poised to become a vital enabler of financial inclusion and decentralized finance adoption across the region.
+Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 ## Team :busts_in_silhouette:
 
@@ -55,40 +63,44 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Elias Hezron Opio - Founder oneramp
+- Jovan Mwesigwa Balambirwa - co-founder oneramp
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Elias Hezron Opio
+- **Contact Email:** eliashezron23@gmail.com
+- **Website:** https://oneramp.io
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 1111b South Governors Ave STE 23770 Dover, DE, 19904 US
+- **Registered Legal Entity:** Oneramp, Inc.
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
+**Elias Hezron Opio**
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+- PBA singapore Graduate
+- Ethereum Core developer intern at nethermind
+
+**Jovan Mwesigwa**
+
+- 8 Hackathon Winner with Celo
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
+- https://github.com/oneramp
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- https://github.com/eliashezron
+- https://github.com/JovanMwesigwa
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- https://www.linkedin.com/in/eliashezron/
+- https://www.linkedin.com/in/jovan-mwesigwa/
 
 ## Development Status :open_book:
 
