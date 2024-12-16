@@ -3,7 +3,7 @@
 + **Payment Address:** 0xfb0e3808e0c14b9e92ba38f9f0304f66d855f981 (USDT-ERC20)
 + [**Level**](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels)**:** 1
 
-## Project Overview 
+## Project Overview 📄
 The Transactions Agent Pallet is designed to provide a proxy signing tool for the Substrate ecosystem, aiming to enhance the user interaction experience on Substrate chains. It includes signer accounts and proxy accounts, allowing a user’s wallet address (signer account) to perform on-chain transactions via a token-holding wallet address (proxy account) even without holding tokens.
 
 ### Overview
