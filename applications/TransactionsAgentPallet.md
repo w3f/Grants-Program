@@ -8,13 +8,13 @@ The Transactions Agent Pallet is designed to provide a proxy signing tool for th
 
 ### Overview
 #### background
-Since the inception of Substrate, more than 190 projects have been developed based on the Substrate framework (Data from [https://polkaproject.com/#/projects?cateID=1&tagID=0).](https://polkaproject.com/#/projects?cateID=1&tagID=0).)  Substrate provides developers with a powerful framework that significantly reduces development costs.  It has been used to implement various application scenarios, such as cross-chain asset protocols, privacy computing, distributed storage, and DeFi.
+Since the inception of Substrate, more than 190 projects have been developed based on the Substrate framework (Data from [https://polkaproject.com/#/projects?cateID=1&tagID=0](https://polkaproject.com/#/projects?cateID=1&tagID=0)).  Substrate provides developers with a powerful framework that significantly reduces development costs.  It has been used to implement various application scenarios, such as cross-chain asset protocols, privacy computing, distributed storage, and DeFi.
 
 Against the backdrop of mass adoption, Substrate projects need more users to engage with their products and continuously improve based on user feedback.  However, a gap exists between users and Substrate-based Dapps:
 
 + For users, using different Dapps requires holding the tokens of those Substrate projects.  This demands time and effort to acquire and manage various tokens.
 + For Substrate projects or Dapps, there is a strong incentive to encourage users to try their products for free as a way to convert them into paying users.  The lower the barrier for users to try products for free, the easier it becomes to convert them.
-+ As of November 2024, Substrate has approximately 200,000 active addresses (data from [https://tokenterminal.com/explorer/projects/polkadot),](https://tokenterminal.com/explorer/projects/polkadot),) compared to around 7 million on Ethereum.
++ As of November 2024, Substrate has approximately 200,000 active addresses (data from [https://tokenterminal.com/explorer/projects/polkadot](https://tokenterminal.com/explorer/projects/polkadot)), compared to around 7 million on Ethereum.
 
 We urgently need more active users, and we need a simpler and more efficient way to convert users.  This is a critical challenge that must be addressed immediately.
 
