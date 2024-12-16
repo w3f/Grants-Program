@@ -104,7 +104,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Philoniare Team](https://github.com/philoniare/)                       | [create-substrate-app](./create-substrate-app.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☒       |      ☒      |
 | [David Semakula](https://davidsemakula.com)                       | [pallet-verifier](./pallet-verifier.md)                     | [GitHub](https://github.com/davidsemakula)                 | ☐          |        ☒       |      ☒      |
 | [Algorealm](https://github.com/algorealminc)                       | [SwarmNL](./swarm-nl.md)                     | [GitHub](https://github.com/algorealminc)                 | ☐          |        ☒       |      ☒      |
-| [Rui Morais](https://github.com/fiono11)                       | [Threshold Signature Implementation](./ThresholdSignature.md)                     | [GitHub](https://github.com/fiono11)                 | ☐          |        ☐       |      ☐      |
+| [Rui Morais](https://github.com/fiono11)                       | [Threshold Signature Implementation](./ThresholdSignature.md)                     | [GitHub](https://github.com/fiono11)                 | ☐          |        ☒       |      ☒      |
 
 [🔝](#top)
 
