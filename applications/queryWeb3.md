@@ -190,7 +190,7 @@ Under construction
 - **Total Estimated Duration:** 4.5 months
 - **Full-Time Equivalent (FTE):**  60
 - **Total Costs:** 30,000 USD
-
+- **DOT payment:** 50% of total costs.
 ### Milestone 1 Build a DeFi index and data backend.
 
 - **Estimated duration:** 1.5 month
