@@ -274,7 +274,7 @@ Note: for parachain DEX integration we will do for Hydration only as of now.
     - Our initial focus is on a beautiful UX and strong branding to build user confidence in our platform. We recognize that trust-building will take time, as users may be cautious initially. To attract new users, we plan to launch NFTs and incentive programs that encourage engagement and usage.
 - **Long-term Vision:**
     - Establish Swush as a trusted platform and cross-chain transaction hub for Polkadot.
-    - Achieve self-sustainability through revenue streams such as trading fees, liquidity provider (LP) fees, or yield farming.
+    - Achieve self-sustainability through revenue streams such as trading fees. Since cross-chain transfers incur some fees, we’re also exploring additional revenue streams.
 
 ## Additional Information :heavy_plus_sign:
 
