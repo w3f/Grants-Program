@@ -114,12 +114,12 @@ Several development teams have already expressed interest in building on Plaza, 
 We plan to store all assets, including parachain tokens such as HDX(Hydration) and GLMR(Moonbeam), as foreign assets on the Polkadot Asset Hub. The Asset Hub provides a unified repository where native tokens, parachain assets, and bridged tokens can be securely registered, managed, and operated.
     - More info on Assets at [Asset Hub](https://wiki.polkadot.network/docs/build-integrate-assets)
 
-![{C3C3F61D-8A45-4065-BA66-8EBAC8B96993}](https://github.com/user-attachments/assets/e5c1abf0-effd-480d-b1bb-f7810220530b)
+![](https://github.com/user-attachments/assets/e5c1abf0-effd-480d-b1bb-f7810220530b)
 
 - **Cross-Chain (XCM) APIs and DEX Swap Integration:**
     - Integrates cross-chain messaging (XCM) to transfer assets from the Asset Hub to a parachain (e.g., Hydration) for swapping. After the swap on the parachain, assets are returned to the Asset Hub, allowing users to access parachain liquidity while keeping assets on the Asset Hub.
     - Polkadot Asset Hub’s Asset APIs to enable real-time asset balances, rates, and integration of Asset Hub assets in cross-chain swaps.
-![{97A26176-B7E8-4A29-B683-156575BE2518}](https://github.com/user-attachments/assets/a885b892-f231-46ea-aca9-cf126e4f2d64)
+![](https://github.com/user-attachments/assets/a885b892-f231-46ea-aca9-cf126e4f2d64)
 
 
 
