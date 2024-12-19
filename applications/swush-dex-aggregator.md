@@ -25,7 +25,7 @@ A **DEX aggregator** directly addresses these issues by connecting to multiple d
 
 ### **Swush: A Solution Aligned with Polkadot’s Vision**
 
-<img src="https://github.com/user-attachments/assets/84090aea-7633-413f-a512-fe610388d50a" alt="Image description" width="960" height="580"> \
+<img src="https://github.com/user-attachments/assets/84090aea-7633-413f-a512-fe610388d50a" alt="Image description" width="960" height="580" />
 
 **Swush** is a **DEX aggregator** built on Polkadot Asset Hub, specifically to meet the needs of Polkadot’s cross-chain DeFi users. By leveraging cross-chain messaging (XCM), and aggregating assets from multiple parachains, Swush allows users to swap assets seamlessly across the ecosystem with minimal friction.
 
@@ -112,7 +112,7 @@ Several development teams have already expressed interest in building on Plaza, 
 
 - **Asset Storage on Polkadot Asset Hub**
 We plan to store all assets, including parachain tokens such as HDX(Hydration) and GLMR(Moonbeam), as foreign assets on the Polkadot Asset Hub. The Asset Hub provides a unified repository where native tokens, parachain assets, and bridged tokens can be securely registered, managed, and operated.
-    - More info on Assets at Asset Hub https://wiki.polkadot.network/docs/build-integrate-assets
+    - More info on Assets at [Asset Hub](https://wiki.polkadot.network/docs/build-integrate-assets)
 
 ![{C3C3F61D-8A45-4065-BA66-8EBAC8B96993}](https://github.com/user-attachments/assets/e5c1abf0-effd-480d-b1bb-f7810220530b)
 
