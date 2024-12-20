@@ -3,6 +3,7 @@
 - **Team Name:** Zondax AG
 - **Payment Address:** We prefer a payment in fiat. Bank details will be provided by email. 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** Terminated
 
 ## Project Overview :page_facing_up:
 
