@@ -156,6 +156,25 @@ Polkadot Substrate Integration, Web App
 - Total Estimated Duration: 3 months
 - Full-Time Equivalent (FTE): 4 FTE
 
+------------------------
+- Milestone 1 –  Research & Design (Completed)
+
+Finalize the project architecture and design, Research bonding curve mechanisms and presale dynamics, Collaborate with Polkadot ecosystem developers for integration strategies.
+
+- Milestone 2 – Initial Platform integration for Polkadot Substrate (Duration 5 weeks) by Jan 30th 2025
+
+Development of functionalities for front-end user interface and backend infrastructure for Polkadot.
+
+- Milestone 3 – Contract Development & Security Audits(5 weeks) by Feb 15th 2025
+
+Develop the bonded curve mechanism into the presale contract, Factory Contract development for Token Creation, Regular Presale Contract, Locking/Vesting Contract, Airdrops Contract, Conduct initial tests with selected partners and projects.
+
+- Milestone 4 – Testnet & Mainnet Launch (by Feb 30th 2025)
+
+Finalize platform for mainnet launch, Focus on user acquisition, education, and community building, Host a series of AMAs and events to promote Hydrapad and educate the ecosystem about bonded curve presale models.
+
+------------------------
+
 
 | Number | Deliverable                 | Specification                                                                                                                                                                                                                                                                                                  |
 | -----: | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -164,11 +183,6 @@ Polkadot Substrate Integration, Web App
 |    0c. | Testing Guide               | Core functions will be thoroughly covered by unit tests to ensure both functionality and robustness. The guide will include detailed instructions on how to run these tests, allowing users to easily verify the correctness and reliability of the system. This will provide an additional layer of confidence and transparency, ensuring that the implementation meets the highest standards of quality.                                                                                                                                                              |
 |    0d. | Docker                      | We will provide a Dockerfile (or set of Dockerfiles) that can be used to easily test all the functionality delivered with this milestone. This will enable users to quickly set up a consistent testing environment, ensuring that they can validate the new features and functionality in an isolated and reproducible manner. The Dockerfile(s) will simplify the process of testing, making it more accessible and efficient for developers and testers alike.                                                                                                                                                                                                  |
 |    0e. | Article                     | We will publish an article or workshop that provides an in-depth explanation of our advertising workflow, along with detailed technical insights. This resource will walk users through the entire process, from the high-level overview to the underlying technical aspects, helping them understand how the workflow is structured and how it can be leveraged effectively.                                                                                                                                                                                                   |
-|     1. | Phase 1 –  Research & Design (Completed) | Finalize the project architecture and design, Research bonding curve mechanisms and presale dynamics, Collaborate with Polkadot ecosystem developers for integration strategies. |
-|     2. | Phase 2 – Initial Platform integration for Polkadot Substrate (5 weeks) | Development of functionalities for front-end user interface and backend infrastructure for Polkadot.                                                                  |
-|     3. | Phase 3 – Contract Development & Security Audits(5 weeks) | Develop the bonded curve mechanism into the presale contract, Factory Contract development for Token Creation, Regular Presale Contract, Locking/Vesting Contract, Airdrops Contract, Conduct initial tests with selected partners and projects.                                                    |
-|     4. | Phase 4 – Beta Testing and Polkadot Integration (4 weeks) | Launch beta platform for public use, Possible Integrate with Polkadot’s parachain network, Perform extensive security and performance testing.                                                                     |
-|     5. | Phase 5 – Mainnet Launch & Community Engagement (2 weeks) | Finalize platform for mainnet launch, Focus on user acquisition, education, and community building, Host a series of AMAs and events to promote Hydrapad and educate the ecosystem about bonded curve presale models.                                                                     |
 
 #### Funding Request
 
