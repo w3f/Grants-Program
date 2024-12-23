@@ -1,6 +1,6 @@
 # Transactions Agent Pallet
 + **Team Name:** WePolka
-+ **Payment Address:** 0xfb0e3808e0c14b9e92ba38f9f0304f66d855f981 (USDT-ERC20)
++ **Payment Address:** 12UD2FdspWzwfRUURNtcr2Hujk35r5dCY8WTJCe9sZbk1QmE (USDC-Polkadot AssetHub)
 + [**Level**](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels)**:** 1
 
 ## Project Overview 📄
