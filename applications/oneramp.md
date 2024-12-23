@@ -119,11 +119,11 @@ At this stage we’ll execute three deliverables:
 - **Total Costs:** 60,000
 - **DOT %:** 50%
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Finish [oneramp polkadot app ](https://polkadot.oneramp.io) and Documentation
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 1 month
 - **FTE:** 3
-- **Costs:** 20,000 USD
+- **Costs:** 10,000 USD
 
 In the first milestone, the features for the POC will be implemented and tested by limited users.
 
@@ -140,15 +140,27 @@ complete the [oneramp polkadot widget](https://polkadot.oneramp.io)
 |     0e. | Article                                                                | We will publish an **article**/workshop that explains the product and how it's being used in sub-saharan africa                                                                                                        |
 |      1. | Finish [oneramp polkadot app ](https://polkadot.oneramp.io)            | we will complete the oneramp polkadot app that will have on and offramping functionality in Uganda, Kenya, Ghana, Nigeria, Tanzania                                                                                    |
 |      2. | Documentation for intergation of oneramp for polkadot wallet providers | the most commonn form of on and offramp provider intergation is through re-direct links, We shall provide neccessary documentation to allow for wallet providers to onboard oneramp as a service in their applications |
-|      3. | Support for Malawi and Cameroon                                        | add support for Malawi and Cameroon allowing users in those regions to be able to on and offramp on polkadot through oneramp,                                                                                          |
-|      4. | Support for South Africa                                               | Add support for South Africa, This is the second-biggest crypto adoption market in sub-saharan Africa after Nigeria as per [chainalysis](https://www.chainalysis.com/blog/africa-cryptocurrency-adoption/)             |
+|      3. | Support for South Africa                                               | Add support for South Africa, This is the second-biggest crypto adoption market in sub-saharan Africa after Nigeria as per [chainalysis](https://www.chainalysis.com/blog/africa-cryptocurrency-adoption/)             |
+|      4. | Support for Malawi and Cameroon                                        | add support for Malawi and Cameroon allowing users in those regions to be able to on and offramp on polkadot through oneramp,                                                                                          |
 |      5. | marketing gampaign to create awareness about polkadot on oneramp       | Run an marketing gampaign to create awareness about polkadot on oneramp and how users can easily onboard                                                                                                               |
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Support for South Africa
 
-- **Estimated Duration:** 2 month
-- **FTE:** 2
-- **Costs:** 40,000 USD
+- **Estimated Duration:** 1 month
+- **FTE:** 3
+- **Costs:** 15,000 USD
+
+### Milestone 3 — Support for Malawi and Cameroon
+
+- **Estimated Duration:** 1 month
+- **FTE:** 3
+- **Costs:** 15,000 USD
+
+### Milestone 4 — marketing gampaign (run concurantly with development)
+
+- **Estimated Duration:** 3 month
+- **FTE:** 3
+- **Costs:** 20,000 USD
 
 ...
 
