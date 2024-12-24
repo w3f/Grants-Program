@@ -1,6 +1,8 @@
 # Transactions Agent Pallet
 + **Team Name:** WePolka
-+ **Payment Address:** 12UD2FdspWzwfRUURNtcr2Hujk35r5dCY8WTJCe9sZbk1QmE (USDC-Polkadot AssetHub)
++ **Payment Details:**
+    + **Payment Address:** 12UD2FdspWzwfRUURNtcr2Hujk35r5dCY8WTJCe9sZbk1QmE (USDC-Polkadot AssetHub)
+    + **Payment:** accept 50% vested DOT.
 + [**Level**](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels)**:** 1
 
 ## Project Overview 📄
