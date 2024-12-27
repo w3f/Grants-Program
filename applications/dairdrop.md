@@ -2,8 +2,8 @@
 
 - **Team Name:** dairdrop
 - **Payment Details:**
-  - **Payment**: 1H4GsGKaAv6VCwgx7gRgPm9AmCKqzEDjb2GyWoERj9xBRAH (Assethub USDC)
-  - **DOT**: 1H4GsGKaAv6VCwgx7gRgPm9AmCKqzEDjb2GyWoERj9xBRAH (polkadot)
+  - **Payment**: 12WygU75eKwg2y8TeyRTzWMVDC5GyYfC4KY1r5EKt5emGjek (Assethub USDC)
+  - **DOT**: 12WygU75eKwg2y8TeyRTzWMVDC5GyYfC4KY1r5EKt5emGjek (polkadot)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
