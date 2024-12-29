@@ -6,7 +6,7 @@
   - **Payment**: email (29.12.24) 
 - **Level:** 3
 
-## Project Overview :page_facing_up:
+## Project Overview
 
 
 ### Overview
@@ -27,6 +27,8 @@ We’ll manage the price volatility hedging for the DOT tokens as needed and ass
 
 We’re planning to collaborate with a Polkadot wallet(s) to add this cashback offering to their users as an integral part of their wallet functionality.
 
+![Top brands and retalers we've integrated with](https://github.com/user-attachments/assets/3400e110-be1e-4a9d-a122-027248bc46c9)
+
 **Polkadot Ecosystem Benefits from DOT cashback**
 - Attract new investors by offering DOT cashback on fiat purchases
 - “Wake-up” dormant users (see more details below)
@@ -40,17 +42,17 @@ Bring is all about bridging and connecting Web2 and Web3 ecosystems. We do so by
 ### Project Details
 
 -   [Mockups and UIs - White-Label Crypto Cashback Guidelines, Breakdown, Integrations examples](https://www.figma.com/design/GNDOOYeSslLef4xkzfnE3A/Crypto-Cashback-Template-%28Polkadot%29?node-id=0-1&t=5NC34JArcLNp2KAB-1) (please see 5 pages on Figma) 
--   Documentation of core components to be deployed:
-[Crypto Cashback Integration Package for Google Chrome extensions](https://bringweb3.atlassian.net/wiki/external/ZDNkZGNiMTAyMjFhNDlhOTllMmMzYzExZGZlM2I4MjM)  
-[Cashback Portal Page Specification](https://bringweb3.atlassian.net/wiki/external/ZjdlZjhjZWU5NzdhNDUyNTk4NWQ4ZDk1YzJjNGY3OWM)
+- [API specifications of the core functionality](https://bringweb3.atlassian.net/wiki/external/M2YzOWI5OTA1NjZkNDZmOWI1MGQ2ZWJkMDg0MTk5Mjk)
+- [Cashback Portal Page Specification](https://bringweb3.atlassian.net/wiki/external/ZjdlZjhjZWU5NzdhNDUyNTk4NWQ4ZDk1YzJjNGY3OWM)
+- [Chrome-extension-kit](https://www.npmjs.com/package/@bringweb3/chrome-extension-kit?activeTab=readme#table-of-content)
 -   PoC/MVP or other relevant prior work or research on the topic
 [A video of the functional prototype showing the UI/UX designs in action](https://www.loom.com/share/7af43e19f96042d7bc6ba1c92a5a18c6?sid=12526950-82e6-4637-b1c9-e8ea94d9d563)
 [Yoroi wallet implementation (Chrome web store)](https://chromewebstore.google.com/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo)
 
-The project will not provide (wallet's side implementation):  
-1.Signature by the user for claiming his rewards.
-2. A way to connect to the user's wallet and get the address.
-3. All Github repos will be publicly available except from our Backend API repository.
+The project will not provide:  
+1.Signature by the user for claiming his rewards
+2. A way to connect to the user's wallet and get the address
+3. All Github repos will be publicly available except from our Backend API repository
   
 
 ### Ecosystem Fit
@@ -97,7 +99,7 @@ KEY DIFFERENCES with our integration
 Yes,  Loli enables Bitcoin cashback.
 StormX - offers its own token as cashback
 
-### Team 
+##  Team 
 **Team members & experience:**
 
 **Iri Zohar - Founder & CEO**
@@ -136,7 +138,7 @@ Crypto Investor & Kaspa Miner
 Senior Research Associate @ Emendo Biotherapeutics
 Researcher @ Biolojic Design, Ltd.
 
-![full team](https://drive.google.com/file/d/1Jm52BYTorvV82qdXMey1foPc2CdY3p9p/view?usp=drive_link)
+![Bring_full team](https://github.com/user-attachments/assets/f6b9a17e-27a1-4ee6-839e-4b2ffd5f0cfd)
 
 ### Contact
 
@@ -148,22 +150,33 @@ Researcher @ Biolojic Design, Ltd.
 -   **Registered Address:**  BSR City, Shaham St 3, Petah Tikva, Israel
 -   **Registered Legal Entity:**  Bring Web3 LTD
 
-### Team LinkedIn Profiles:
--   [https://www.linkedin.com/in/irizohar/](https://www.linkedin.com/%7Bperson_1%7D)
--   [https://www.linkedin.com/in/gidonalter/](https://www.linkedin.com/%7Bperson_2%7D)
--   [https://www.linkedin.com/in/moranshak/](https://www.linkedin.com/%7Bperson_2%7D)
--   [https://www.linkedin.com/in/noam-kronman-06b15757/](https://www.linkedin.com/%7Bperson_2%7D)
--   [https://www.linkedin.com/in/danielkalfa/](https://www.linkedin.com/%7Bperson_2%7D)
--   [https://www.linkedin.com/in/hadar-gattegno-a5b033155/](https://www.linkedin.com/%7Bperson_2%7D)
+### Team Code Repos
+-   [https://github.com/Bring-Web3-LTD/chromeExtension]
+-   [https://github.com/Bring-Web3-LTD/cashbackPortal]
 
-### Development Roadmap 
+GitHub accounts of team members:
+ - [https://github.com/kalfada}]
+ - [https://github.com/NoamMK]
+
+### Team LinkedIn Profiles:
+ -   [https://www.linkedin.com/in/irizohar/](https://www.linkedin.com/%7Bperson_1%7D)
+ -   [https://www.linkedin.com/in/gidonalter/](https://www.linkedin.com/%7Bperson_2%7D)
+ -   [https://www.linkedin.com/in/moranshak/](https://www.linkedin.com/%7Bperson_2%7D)
+ -   [https://www.linkedin.com/in/noam-kronman-06b15757/](https://www.linkedin.com/%7Bperson_2%7D)
+ -   [https://www.linkedin.com/in/danielkalfa/](https://www.linkedin.com/%7Bperson_2%7D)
+ -   [https://www.linkedin.com/in/hadar-gattegno-a5b033155/](https://www.linkedin.com/%7Bperson_2%7D)
+
+## Development Status 
+
+[](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#development-status-open_book)
+## Development Roadmap 
 ### Overview
 Total Estimated Duration: 4 months
 Full-Time Equivalent (FTE): 2.5 FTE
 Total Costs: 75,000 USD
 DOT %: 50% - DOT, 50% - USD
 
-**Milestone 1 — Polkadot Support: Plan and Research**
+**Milestone 1 — Polkadot Integration: Plan and Research**
 
 **Estimated Duration:** 1 month  
 **FTE:** 0.5  
@@ -171,8 +184,9 @@ DOT %: 50% - DOT, 50% - USD
 
 Conduct research on the Polkadot and Kusama ecosystems to establish the best approach for implementing DOT cashback functionality and structuring the system for seamless integration.
 
- - Documentation: provide documentation of findings, including risks, opportunities, and technical considerations
- - Testing Guide: no testing at this stage
+License: MIT 
+Documentation: provide documentation of findings, including risks, opportunities, and technical considerations
+Testing Guide: no testing at this stage
  - Blockchain Analysis - conduct a deep dive into Polkadot and its parachains to identify technical requirements and integration opportunities.
  - Implementation Strategy - develop a plan for integrating the DOT cashback system within Polkadot’s infrastructure.    
  
@@ -184,8 +198,9 @@ Conduct research on the Polkadot and Kusama ecosystems to establish the best app
 
 Design the technical architecture of the DOT cashback, with a focus on Gate.io integration and enhancing user functionalities.
 
- - Documentation: system architecture and functional design 
- - Testing Guide: no testing at this stage
+License: MIT
+Documentation: system architecture and functional design 
+Testing Guide: no testing at this stage
  - System Design - cashback system architecture 
  - Gate.io Integration 
  - Search Featur - enhanced brand search and offer filtering within the wallet
@@ -197,7 +212,8 @@ Design the technical architecture of the DOT cashback, with a focus on Gate.io i
 **Costs:** $20,000 USD
  
 Secure a partnership with a Polkadot wallet and collaboratively design the user interface (UI) to align with the wallet’s functionality and branding.
- - Documentation:
+License: MIT
+Documentation:
  --- Signed agreement with the partner wallet
 --- Access to the prototype - Figma file with all UI designs of the partner wallet brand
 --- A video of the functional prototype showing the UI/UX designs in action
@@ -209,7 +225,7 @@ Secure a partnership with a Polkadot wallet and collaboratively design the user 
     -   Work closely with the partner wallet to design all user interfaces, including:
         -   Cashback Portal
         -   Cashbach Popup (Chrome extension)
-
+ - Testing Guide: no testing at this stage
 
 ### **Milestone 4 — Development, Integration, and QA**
 
@@ -219,8 +235,23 @@ Secure a partnership with a Polkadot wallet and collaboratively design the user 
 
 Develop, integrate, and test the DOT cashback system with the partner wallet, ensuring a fully functional product ready for deployment.
 
- - Documentation: fully functional system integrated within the partner wallet.
-
+ License:MIT
+Documentation: 
+ - A signed letter by the partner wallet approving the completion of the development
+ - [ ] Walkthrough Videos: 
+      - Portal 
+       - Chrome Extension
+       - Claim process demo.mp4
+       - Backend API - Components, Functionality of Chrome extension - via Postman
+       - Presenting the UI
+ - [ ] Detailed Documentation - open source (Chrome extension code, UIs and APIs)
+      - API Docs
+      - NPM package for integrating popup
+      - Cashback Portal Integration docs
+      - UI Breakdown
+ - [ ] User guides to the partner wallet for testing:
+       - QA 1_User guide for testing
+       - QA 2_SOP
  - Build and integrate the designed cashback functionalities, including backend support and APIs
  - Cashback tracking and token claims
     -   Testing all components, UI functionality and responsiveness.    
@@ -230,8 +261,8 @@ Develop, integrate, and test the DOT cashback system with the partner wallet, en
 
 ## Future Plans
 
- - Our team that consists of seasoned executives and operators as detailed in the team paragraph
- - We’ve recently successfully integrated with Yoroi wallet (1+ million installs)
+ - Our team consists of seasoned executives and operators as detailed in the team paragraph
+ - We’ve recently successfully integrated with Yoroi wallet (1 million+ installs)
  - We’ve successfully delivered another version of this system and launched it on the Casper blockchain. 
  - We’ve completed a SAFE investment round and have the funds needed to successfully execute this
 
