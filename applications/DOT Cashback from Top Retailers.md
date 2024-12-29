@@ -2,15 +2,13 @@
 
 - **Team Name:** Bring
 - **Payment Details:**
-  - **DOT**: 0x6F668425835B575cDc14866aF9b62738C9E524AE
-  - **Payment**: email (29.12.24) 
+        -  DOT: 0x6F668425835B575cDc14866aF9b62738C9E524AE
+        -   Payment: email (29.12.24) 
 - **Level:** 3
 
 ## Project Overview
 
-
 ### Overview
-
 
 **Name**  
 DOT Cashback from Top Brands and Retailers for Polkadot Wallets and Ecosystem
@@ -37,17 +35,18 @@ We’re planning to collaborate with a Polkadot wallet(s) to add this cashback o
 - New revenue stream for wallets (earn from every purchase - rev-share)
 
 **Team Motivation**
-Bring is all about bridging and connecting Web2 and Web3 ecosystems. We do so by integrating **a proven cashback model** into Polkadot’s framework, benefiting wallets, users, and the ecosystem as a whole.
+Bring is all about bridging and connecting Web2 and Web3 ecosystems. 
+We do so by integrating **a proven cashback model** into Polkadot’s framework, benefiting wallets, users, 
+and the ecosystem as a whole.
 
 ### Project Details
 
--   [Mockups and UIs - White-Label Crypto Cashback Guidelines, Breakdown, Integrations examples](https://www.figma.com/design/GNDOOYeSslLef4xkzfnE3A/Crypto-Cashback-Template-%28Polkadot%29?node-id=0-1&t=5NC34JArcLNp2KAB-1) (please see 5 pages on Figma) 
+-   [Mockups and UIs](https://www.figma.com/design/GNDOOYeSslLef4xkzfnE3A/Crypto-Cashback-Template-%28Polkadot%29?node-id=0-1&t=5NC34JArcLNp2KAB-1) (please see 5 pages on Figma) 
 - [API specifications of the core functionality](https://bringweb3.atlassian.net/wiki/external/M2YzOWI5OTA1NjZkNDZmOWI1MGQ2ZWJkMDg0MTk5Mjk)
 - [Cashback Portal Page Specification](https://bringweb3.atlassian.net/wiki/external/ZjdlZjhjZWU5NzdhNDUyNTk4NWQ4ZDk1YzJjNGY3OWM)
 - [Chrome-extension-kit](https://www.npmjs.com/package/@bringweb3/chrome-extension-kit?activeTab=readme#table-of-content)
--   PoC/MVP or other relevant prior work or research on the topic
-[A video of the functional prototype showing the UI/UX designs in action](https://www.loom.com/share/7af43e19f96042d7bc6ba1c92a5a18c6?sid=12526950-82e6-4637-b1c9-e8ea94d9d563)
-[Yoroi wallet implementation (Chrome web store)](https://chromewebstore.google.com/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo)
+- [A video of the functional prototype showing the UI/UX designs in action](https://www.loom.com/share/7af43e19f96042d7bc6ba1c92a5a18c6?sid=12526950-82e6-4637-b1c9-e8ea94d9d563)
+- [Yoroi wallet implementation (Chrome web store)](https://chromewebstore.google.com/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo)
 
 The project will not provide:  
 1.Signature by the user for claiming his rewards
@@ -72,71 +71,74 @@ Those effects will be measured and reported as:
 -   Number of users that received DOT cashback via this service
 -   Amount of DOT paid as cashback to users
 -   Income to wallet from DOT cashback distribution
+Business model: 100% paid by the retailer: 60% (user cashback), 20% to the wallet, 20% to Bring. 
 
 **Target audience**  
 Any Polkadot wallet or other user facing dapps who wish to implement DOT cashback offerings to their user base.  
   
-**Needs the project meet - wallets of the major challenges:**
-1.Attract new users
+**Need the project meet:** 
+Major challenges wallets are straggling with:
+1. Attract new users
 2. Keeping users engaged and staying top-of-mind 
 3. Generate income to sustain and grow their business, w/o compromising the user’s experience.
 
 **How did you identify these needs?**
-From our business internal data (we’re live) typically at list 90% of chrome extension wallet are inactive.
+Since we are live, our business internal data shows that typically, at list 90% of chrome extension wallet are inactive.
 
 **Are there any other projects similar to yours in the Polkadot ecosystem?**  
-Yes, Raise, which enables purchases using DOT and DOT cash back.  
+Yes. Raise, which enables purchases using DOT and DOT cash back.  
 
 **How is your project different?**  
-KEY DIFFERENCES with our integration
-* pay with FIAT- get DOT: enabling new investors into the ecosystem effortlessly - anyone can become a DOT investor instantly by starting to accumulate cashback rewards.  
+KEY DIFFERENCES with our integration:
+* pay with FIAT- get DOT: enabling new investors into the ecosystem effortlessly - anyone can become a DOT investor instantly by starting to accumulate cashback rewards
 * 1000 retailers VS 10,000 retailers
-* Minor change of user behavior  - the user doesn’t need to own any other currency and can pay for his shopping just as he normally would.
-* Much wider range of users - not applied only for DOT holders
-* Chrome extension: the cashback experience and offering is embedded within the user’s day-to-day browsing routine and connected to the wallet, so no matter the user’s personal shopping preferences and behavior - we have full coverage on both experiences.
+* Minor change of user behavior  - the user doesn’t need to own any other currency and can pay for his shopping just as he normally would
+* Much wider range of users - applying to all users, not only DOT holders
+* Chrome extension: the cashback experience and offering is embedded within the user’s day-to-day browsing routine and connected to the wallet, so no matter the user’s personal shopping preferences and behavior - we have full coverage on both experiences (mobile and desktop)
 
 **Are there any projects similar to yours in related ecosystems?**  
-Yes,  Loli enables Bitcoin cashback.
+Yes, Loli enables Bitcoin cashback
 StormX - offers its own token as cashback
 
 ##  Team 
 **Team members & experience:**
+Our team consists of seasoned executives and operators as detailed in the team paragraph
 
 **Iri Zohar - Founder & CEO**
 Serial entrepreneur
-CEO & Founder @ Freshub - retail & IoT, sold to IKAN, equity deal
-CEO & Founder @ eXelate - ad-tech / data & analytics, sold to Nielsen, $200M
-CEO & Founder @ Oridian - ad-tech / media, sold to Y-Brant, $20M
+        -   CEO & Founder @ Freshub - retail & IoT, sold to IKAN, equity deal
+        -   CEO & Founder @ eXelate - ad-tech / data & analytics, sold to Nielsen, $200M
+        -   CEO & Founder @ Oridian - ad-tech / media, sold to Y-Brant, $20M
 
 **Gidon Alter**
 Seasoned Ad-tech Executive, Entrepreneur
-CEO @ JAG Method - Insurtech online advertising
-Founder & Exec Director ReturnX @ affiliate agency
-Founder & CEO @ Urban Grind Rosters - coffee roster & cafe
+        -   CEO @ JAG Method - Insurtech online advertising
+        -   Founder & Exec Director ReturnX @ affiliate agency
+        -   Founder & CEO @ Urban Grind Rosters - coffee roster & cafe
 
 **Moran Shaked, VP Product Design & Biz-Dev**
 Web3 Veteran - Product, Marketing, BD
-Owner @ High Deck - Design & UX Agency
-Head of Community & Marketing @ Colu - blockchain abstraction layer
-Co-founder @ Miss Bitcoin - first "woman-in-crypto” community
+        -   Owner @ High Deck - Design & UX Agency
+        -   Head of Community & Marketing @ Colu - blockchain abstraction layer
+        -   Co-founder @ Miss Bitcoin - first "woman-in-crypto” community
 
 **Noam Kronman, Head of R&D**
 Experienced Engineer, Architect and Product
-Full Stack Developer @ Beamm
-Frontend Developer @ DFine
-Head of Product @ Freshub
+        -   Full Stack Developer @ Beamm
+        -   Frontend Developer @ DFine
+        -   Head of Product @ Freshub
 
 **Daniel Kalfa, Full Stack Developer**
 Tech Leader and Experienced Engineer
-Full Stack Mentor @ Mego
-CTO @ JAMBO MUSIC LTD
-IT Engineer @ Ezra Solutions
+        -   Full Stack Mentor @ Mego
+        -   CTO @ JAMBO MUSIC LTD
+        -   IT Engineer @ Ezra Solutions
 
 **Hadar Gattegno, Data Scientist & Community Manager**
 Data Scientist, R&D, Cryptocurrencies
-Crypto Investor & Kaspa Miner
-Senior Research Associate @ Emendo Biotherapeutics
-Researcher @ Biolojic Design, Ltd.
+        -   Crypto Investor & Kaspa Miner
+        -   Senior Research Associate @ Emendo Biotherapeutics
+        -   Researcher @ Biolojic Design, Ltd.
 
 ![Bring_full team](https://github.com/user-attachments/assets/f6b9a17e-27a1-4ee6-839e-4b2ffd5f0cfd)
 
@@ -167,8 +169,8 @@ GitHub accounts of team members:
  -   [https://www.linkedin.com/in/hadar-gattegno-a5b033155/](https://www.linkedin.com/%7Bperson_2%7D)
 
 ## Development Status 
+We've attached links to previous interface and mock-ups on the Figma files and prototype video provided above.
 
-[](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#development-status-open_book)
 ## Development Roadmap 
 ### Overview
 Total Estimated Duration: 4 months
@@ -203,7 +205,7 @@ Documentation: system architecture and functional design
 Testing Guide: no testing at this stage
  - System Design - cashback system architecture 
  - Gate.io Integration 
- - Search Featur - enhanced brand search and offer filtering within the wallet
+ - Search Feature - enhanced brand search and offer filtering within the wallet
 
 ### **Milestone 3 — Business Development: Partner Wallet Collaboration**
 
@@ -217,15 +219,16 @@ Documentation:
  --- Signed agreement with the partner wallet
 --- Access to the prototype - Figma file with all UI designs of the partner wallet brand
 --- A video of the functional prototype showing the UI/UX designs in action
+Testing Guide: functional UI demo
 
  -   Partnership Agreement: 
 --- Identify and engage with a Polkadot wallet partner
---- Sign a collaboration agreement detailing integration terms
+--- Sign a collaboration agreement
  - UI Design Development:
     -   Work closely with the partner wallet to design all user interfaces, including:
         -   Cashback Portal
         -   Cashbach Popup (Chrome extension)
- - Testing Guide: no testing at this stage
+
 
 ### **Milestone 4 — Development, Integration, and QA**
 
@@ -253,22 +256,22 @@ Documentation:
        - QA 1_User guide for testing
        - QA 2_SOP
  - Build and integrate the designed cashback functionalities, including backend support and APIs
- - Cashback tracking and token claims
-    -   Testing all components, UI functionality and responsiveness.    
-  
- - Collaborate with the partner wallet for final integration and deployment.
-
+ - Testing all components, UI functionality and responsiveness  
+ - Collaborate with the partner wallet for final integration and deployment
+ - We will publish an article that explains what was achieved as part of the grant
 
 ## Future Plans
 
- - Our team consists of seasoned executives and operators as detailed in the team paragraph
  - We’ve recently successfully integrated with Yoroi wallet (1 million+ installs)
- - We’ve successfully delivered another version of this system and launched it on the Casper blockchain. 
+ - We’ve successfully delivered the first version of this system and launched it on the Casper blockchain which are now adding the browser-extension element as well.  We’ve also integrated with Aurora wallet, the demo is fully functional and there’s a waiting list of users who wish to use it. 
  - We’ve completed a SAFE investment round and have the funds needed to successfully execute this
+ - We’ve successfully integrated with Commision Junction, Impact - the two leading affiliate networks. We’ve also integrated with CJ, Rakuten and ShareASale networks. Together, they are able to record the full data of completed purchases in hundreds of stores
 
-Promotion:
+Promotion: 
  1. Social presence- collaborate with brands and wallets
- 2. We’re B2b marketing - in direct contact with all ecosystem players
-
+ 2. Retail Media marketing campaigns - a powerful tool through our good relations with the retailers where users are offered the opportunity to effortlessly earn DOT as cashback from their store purchases. Demographically relevant users (with no affiliation to any blockchain’s wallets) browse a participating store.
+ 3. Ongoing B2B marketing - in direct contact with all ecosystem players
+ 
+![Dor cashback social](https://github.com/user-attachments/assets/17790af7-4810-4c7d-9238-a138b4c1f2fb)
 Long term:
 We strongly believe this will be a strong company as we see from market and we plan to build this as a long lasting one. 
