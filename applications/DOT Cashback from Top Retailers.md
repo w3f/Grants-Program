@@ -35,6 +35,7 @@ We’re planning to collaborate with a Polkadot wallet(s) to add this cashback o
 - New revenue stream for wallets (earn from every purchase - rev-share)
 
 **Team Motivation**
+
 Bring is all about bridging and connecting Web2 and Web3 ecosystems. 
 We do so by integrating **a proven cashback model** into Polkadot’s framework, benefiting wallets, users, 
 and the ecosystem as a whole.
@@ -49,9 +50,10 @@ and the ecosystem as a whole.
 - [Yoroi wallet implementation (Chrome web store)](https://chromewebstore.google.com/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo)
 
 The project will not provide:  
-1.Signature by the user for claiming his rewards
-2. A way to connect to the user's wallet and get the address
-3. All Github repos will be publicly available except from our Backend API repository
+
+* Signature by the user for claiming his rewards
+* A way to connect to the user's wallet and get the address
+* All Github repos will be publicly available except from our Backend API repository
   
 
 ### Ecosystem Fit
@@ -77,12 +79,14 @@ Business model: 100% paid by the retailer: 60% (user cashback), 20% to the walle
 Any Polkadot wallet or other user facing dapps who wish to implement DOT cashback offerings to their user base.  
   
 **Need the project meet:** 
+
 Major challenges wallets are straggling with:
 1. Attract new users
 2. Keeping users engaged and staying top-of-mind 
 3. Generate income to sustain and grow their business, w/o compromising the user’s experience.
 
 **How did you identify these needs?**
+
 Since we are live, our business internal data shows that typically, at list 90% of chrome extension wallet are inactive.
 
 **Are there any other projects similar to yours in the Polkadot ecosystem?**  
@@ -106,39 +110,39 @@ Our team consists of seasoned executives and operators as detailed in the team p
 
 **Iri Zohar - Founder & CEO**
 Serial entrepreneur
-        -   CEO & Founder @ Freshub - retail & IoT, sold to IKAN, equity deal
-        -   CEO & Founder @ eXelate - ad-tech / data & analytics, sold to Nielsen, $200M
-        -   CEO & Founder @ Oridian - ad-tech / media, sold to Y-Brant, $20M
+* CEO & Founder @ Freshub - retail & IoT, sold to IKAN, equity deal
+* CEO & Founder @ eXelate - ad-tech / data & analytics, sold to Nielsen, $200M
+* CEO & Founder @ Oridian - ad-tech / media, sold to Y-Brant, $20M
 
 **Gidon Alter**
 Seasoned Ad-tech Executive, Entrepreneur
-        -   CEO @ JAG Method - Insurtech online advertising
-        -   Founder & Exec Director ReturnX @ affiliate agency
-        -   Founder & CEO @ Urban Grind Rosters - coffee roster & cafe
+* CEO @ JAG Method - Insurtech online advertising
+* Founder & Exec Director ReturnX @ affiliate agency
+* Founder & CEO @ Urban Grind Rosters - coffee roster & cafe
 
 **Moran Shaked, VP Product Design & Biz-Dev**
 Web3 Veteran - Product, Marketing, BD
-        -   Owner @ High Deck - Design & UX Agency
-        -   Head of Community & Marketing @ Colu - blockchain abstraction layer
-        -   Co-founder @ Miss Bitcoin - first "woman-in-crypto” community
+* Owner @ High Deck - Design & UX Agency
+* Head of Community & Marketing @ Colu - blockchain abstraction layer
+* Co-founder @ Miss Bitcoin - first "woman-in-crypto” community
 
 **Noam Kronman, Head of R&D**
 Experienced Engineer, Architect and Product
-        -   Full Stack Developer @ Beamm
-        -   Frontend Developer @ DFine
-        -   Head of Product @ Freshub
+* Full Stack Developer @ Beamm
+* Frontend Developer @ DFine
+ * Head of Product @ Freshub
 
 **Daniel Kalfa, Full Stack Developer**
 Tech Leader and Experienced Engineer
-        -   Full Stack Mentor @ Mego
-        -   CTO @ JAMBO MUSIC LTD
-        -   IT Engineer @ Ezra Solutions
+* Full Stack Mentor @ Mego
+* CTO @ JAMBO MUSIC LTD
+* IT Engineer @ Ezra Solutions
 
 **Hadar Gattegno, Data Scientist & Community Manager**
 Data Scientist, R&D, Cryptocurrencies
-        -   Crypto Investor & Kaspa Miner
-        -   Senior Research Associate @ Emendo Biotherapeutics
-        -   Researcher @ Biolojic Design, Ltd.
+* Crypto Investor & Kaspa Miner
+* Senior Research Associate @ Emendo Biotherapeutics
+* Researcher @ Biolojic Design, Ltd.
 
 ![Bring_full team](https://github.com/user-attachments/assets/f6b9a17e-27a1-4ee6-839e-4b2ffd5f0cfd)
 
