@@ -273,5 +273,6 @@ Promotion:
  3. Ongoing B2B marketing - in direct contact with all ecosystem players
  
 ![Dor cashback social](https://github.com/user-attachments/assets/17790af7-4810-4c7d-9238-a138b4c1f2fb)
+
 Long term:
 We strongly believe this will be a strong company as we see from market and we plan to build this as a long lasting one. 
