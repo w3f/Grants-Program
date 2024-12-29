@@ -2,8 +2,8 @@
 
 - **Team Name:** Bring
 - **Payment Details:**
-        -  DOT: 0x6F668425835B575cDc14866aF9b62738C9E524AE
-        -   Payment: email (29.12.24) 
+- DOT: 0x6F668425835B575cDc14866aF9b62738C9E524AE
+- Payment: email (29.12.24) 
 - **Level:** 3
 
 ## Project Overview
@@ -101,6 +101,7 @@ KEY DIFFERENCES with our integration:
 * Chrome extension: the cashback experience and offering is embedded within the user’s day-to-day browsing routine and connected to the wallet, so no matter the user’s personal shopping preferences and behavior - we have full coverage on both experiences (mobile and desktop)
 
 **Are there any projects similar to yours in related ecosystems?**  
+
 Yes, Loli enables Bitcoin cashback
 StormX - offers its own token as cashback
 
@@ -191,10 +192,13 @@ DOT %: 50% - DOT, 50% - USD
 Conduct research on the Polkadot and Kusama ecosystems to establish the best approach for implementing DOT cashback functionality and structuring the system for seamless integration.
 
 License: MIT 
+
 Documentation: provide documentation of findings, including risks, opportunities, and technical considerations
+
 Testing Guide: no testing at this stage
- - Blockchain Analysis - conduct a deep dive into Polkadot and its parachains to identify technical requirements and integration opportunities.
- - Implementation Strategy - develop a plan for integrating the DOT cashback system within Polkadot’s infrastructure.    
+
+* Blockchain Analysis - conduct a deep dive into Polkadot and its parachains to identify technical requirements and integration opportunities.
+* Implementation Strategy - develop a plan for integrating the DOT cashback system within Polkadot’s infrastructure.    
  
 ### **Milestone 2 — System and Architecture Design**
 
@@ -205,11 +209,14 @@ Testing Guide: no testing at this stage
 Design the technical architecture of the DOT cashback, with a focus on Gate.io integration and enhancing user functionalities.
 
 License: MIT
+
 Documentation: system architecture and functional design 
+
 Testing Guide: no testing at this stage
- - System Design - cashback system architecture 
- - Gate.io Integration 
- - Search Feature - enhanced brand search and offer filtering within the wallet
+
+* System Design - cashback system architecture 
+* Gate.io Integration 
+* Search Feature - enhanced brand search and offer filtering within the wallet
 
 ### **Milestone 3 — Business Development: Partner Wallet Collaboration**
 
@@ -218,20 +225,27 @@ Testing Guide: no testing at this stage
 **Costs:** $20,000 USD
  
 Secure a partnership with a Polkadot wallet and collaboratively design the user interface (UI) to align with the wallet’s functionality and branding.
-License: MIT
-Documentation:
- --- Signed agreement with the partner wallet
---- Access to the prototype - Figma file with all UI designs of the partner wallet brand
---- A video of the functional prototype showing the UI/UX designs in action
-Testing Guide: functional UI demo
 
- -   Partnership Agreement: 
---- Identify and engage with a Polkadot wallet partner
---- Sign a collaboration agreement
- - UI Design Development:
-    -   Work closely with the partner wallet to design all user interfaces, including:
-        -   Cashback Portal
-        -   Cashbach Popup (Chrome extension)
+License: MIT
+
+Documentation:
+
+* Signed agreement with the partner wallet
+* Access to the prototype - Figma file with all UI designs of the partner wallet brand
+* A video of the functional prototype showing the UI/UX designs in action
+
+Testing Guide: 
+
+Functional UI demo
+
+* Partnership Agreement:
+  
+* Identify and engage with a Polkadot wallet partner
+* Sign a collaboration agreement
+* UI Design Development:
+- Work closely with the partner wallet to design all user interfaces, including:
+- Cashback Portal
+- Cashbach Popup (Chrome extension)
 
 
 ### **Milestone 4 — Development, Integration, and QA**
@@ -242,7 +256,8 @@ Testing Guide: functional UI demo
 
 Develop, integrate, and test the DOT cashback system with the partner wallet, ensuring a fully functional product ready for deployment.
 
- License:MIT
+License: MIT
+
 Documentation: 
  - A signed letter by the partner wallet approving the completion of the development
  - [ ] Walkthrough Videos: 
