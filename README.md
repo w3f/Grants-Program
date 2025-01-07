@@ -1,19 +1,19 @@
 # Polkadot Open Source Grants Bounty<!-- omit in toc -->
 
-- [:wave: Introduction](#wave-introduction)
+- [Introduction](#introduction)
   - [Guidelines](#guidelines)
   - [Project Ideas](#project-ideas)
   - [Support](#support)
   - [Curators](#curators)
-- [:pencil: Process](#pencil-process)
+- [Process](#process)
   - [1. Application](#1-application)
   - [2. Application Review](#2-application-review)
   - [3. Milestone Delivery and Payment](#3-milestone-delivery-and-payment)
   - [Changes to a Grant after Approval](#changes-to-a-grant-after-approval)
-- [:bulb: Help](#bulb-help)
+- [Help](#help)
   - [Real-time Conversation](#real-time-conversation)
 
-## :wave: Introduction
+## Introduction
 
 [Open Source Developer Grants](https://polkadot.polkassembly.io/bounty/59) support individuals and small teams in developing open-source software for the Polkadot ecosystem. This initiative aims to fund up to 15 projects with grants of up to $30,000 USD (payable in DOT) each, focusing on those with a proven background in open-source software development. Projects can include proofs of concept, general-purpose libraries, or full-scale dApps that benefit the Polkadot ecosystem.
 
@@ -23,7 +23,7 @@ Anyone is welcome to apply for a grant. Projects funded through our programs are
 	
 * The applications focus on open-source software development directly or indirectly beneficial for the Polkadot ecosystem. Acceptable licenses are The Unlicense, Apache, MIT, or GPL v3.
 * Teams need to build solutions on or for the Polkadot Network, which are:
-  * focussed on implementing common good infrastructure and
+  * focused on implementing common good infrastructure and
   * not the issuer and/or the promoter of any token at the time of the application.
 * Teams need to successfully undergo a KYC/KYB process.
 * Each team can only receive one grant. 
@@ -31,8 +31,6 @@ Anyone is welcome to apply for a grant. Projects funded through our programs are
 * Projects must not actively encourage gambling, illicit trade, money laundering, or criminal activities in general.
 * The scope and funding amount of the project as a whole and each milestone are subject to discussion. Since grants are focused on software development, funding should closely follow the person-hours estimated for each milestone. 
 * If an application is accepted, they can start working on the project. Payments are made once a milestone is delivered and successfully evaluated by one of the curators of the bounty. 
-
-No project should receive more than 30,000 USD based on the conversion rate that will be specified in the application itself. For example, if the DOT price doubles, it would be possible to support twice the number of projects with the requested funds. If the DOT price goes down, the number of projects that can be supported will be lower. 
 
 Generally, your project will have better chances to be accepted if:
 
@@ -66,7 +64,7 @@ The curators consists of individuals who know the funding priorities of the Polk
  - Luca von Wyttenbach from Polimec
  - Sebastian Müller from Web3 Foundation
 
-## :pencil: Process
+## Process
 
 ### 1. Application
 
@@ -86,7 +84,7 @@ The curators consists of individuals who know the funding priorities of the Polk
 
 ### 3. Milestone Delivery and Payment
 
-   Milestones are to be delivered on the [delivery](https://github.com/PolkadotOpenSourceGrants/delivery/) repository following the [process](https://github.com/PolkadotOpenSourceGrants/delivery#mailbox-milestone-delivery-process) described therein.
+   Milestones are to be delivered on the [delivery](https://github.com/PolkadotOpenSourceGrants/delivery/) repository following the [process](https://github.com/PolkadotOpenSourceGrants/delivery#milestone-delivery-process) described therein.
 
 ### Changes to a Grant after Approval
 
@@ -95,10 +93,10 @@ The curators consists of individuals who know the funding priorities of the Polk
 - If your deliveries are significantly delayed, and we cannot get a hold of you, we will terminate the grant.
 
 
-## :bulb: Help
+## Help
 
 If you have any questions, feedback or concerns about this program, please open an issue on the application repository. One of the curators will get back to you as soon as possible. Alternatively, we have a Matrix channel for grant-related questions and activities. Head over there to ask grants-related questions, share your experience with other applications and grantees, or simply hang out: [Polkadot Open Source Developer Grants Program](https://matrix.to/#/#OSDGP:matrix.org)
 
-## :information_source: License<!-- omit in toc -->
+## License<!-- omit in toc -->
 
 [Apache License 2.0](LICENSE)
