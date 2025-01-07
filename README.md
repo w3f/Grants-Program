@@ -2,6 +2,8 @@
 
 - [Introduction](#introduction)
   - [Guidelines](#guidelines)
+    - [Application Requirements](#application-requirements)
+    - [Tips for Good Applications](#tips-for-good-applications)
   - [Project Ideas](#project-ideas)
   - [Support](#support)
   - [Curators](#curators)
