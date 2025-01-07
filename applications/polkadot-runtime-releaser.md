@@ -23,10 +23,6 @@ Especially to the new teams, they might not have enough experience to handle it.
   - The rustc/OS version affects the compiled artifacts.
   - There are also some unclear things of the srtool.
     - E.G. https://substrate.stackexchange.com/questions/11686/getting-error-rust-nightly-not-installed-when-starting-an-srtool-container-to-bu​a
-- When to notify the community to upgrade the node?
-  - Collator/Validator nodes should be upgraded first.
-  - RPC suppliers should be upgraded later.
-    - I saw some EVM RPCs require the runtime version to be equal to the node version.
 - How to host a wasm-override repository for the community?
   - Debug log WASM.
     - We always use `sp-api/disable-logging` in the release build, so no more detail logs in the general runtime.
@@ -45,30 +41,27 @@ For any Polkadot-SDK-based chain, they could use PRR to release their runtime. I
 For PRR's utilization, the chain team requires two repositories: one for their code and another for the release.
 
 Take `foo-network` as an example.
-They should have two repositories, `foo-network/foo` and `foo-network/foo-release`.
+They should have two repositories, `foo-network/foo` and `foo-network/foo-runtime-overrides`.
 
 `foo-network/foo` is the base Polkadot-SDK-based chain repository that everyone should have.
 
-`foo-network/foo-release` is a new repository that PRR requires.
+`foo-network/foo-runtime-overrides` is a new repository that PRR requires.
 It will have 2 branches, `foo` and `bar` if they have 2 networks, `foo`(mainnet) and `bar`(canary network).
 It will host the override WASMs and the release under the corresponding network branch.
 
-For collator/validator nodes, they should monitor the `foo-network/foo` repository release as usual.
-For RPC suppliers or service node, they should monitor the `foo-network/foo-release` repository release, it's a more stable version. It will only be published once the on-chain runtime upgrade get confirmed.
-
 PRR will supply these components, which will all be hosted in one repository.
+- A specialized custom Docker image maintained by Hack-Ink for building Polkadot-SDK-based runtimes.
 - A GitHub Action to response the try-runtime. (Users can comment something like `/bot try-runtime <network>` under a release PR to trigger this action.)
 - A GitHub Action to build the release runtime.
 - A GitHub Action to notify release repository there is a new release that release repository can start preparing the override WASMs.
-- A GitHub Action and a tool to monitor the on-chain runtime version and compare it with the release runtime version to trigger the release on the release repository.
 - A tool to build and manage the override WASMs.
+- A tool to inspect the basic information from the WASM file.
 
-|   GitHub Action | Trigger                                                  | Output                                                                                                                  |
-| --------------: | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-|     try-runtime | Comment `/bot try-runtime <network>` under the PR.       | Bot will comment the try-runtime result under the PR.                                                                   |
-| Runtime release | Usually by tag, this can be configured by users.         | Build and release the runtime files.                                                                                    |
-|   WASM override | Runtime release action will notify this action.          | Build and push the runtime files to the repository.                                                                     |
-|    Node release | It's a scheduled action that runs every hour by default. | Retrieve the on-chain runtime version and compare it with the latest GitHub tag to determine if a release is necessary. |
+|   GitHub Action | Trigger                                            | Output                                                |
+| --------------: | -------------------------------------------------- | ----------------------------------------------------- |
+|     try-runtime | Comment `/bot try-runtime <network>` under the PR. | Bot will comment the try-runtime result under the PR. |
+| Runtime release | Usually by tag, this can be configured by users.   | Build and release the runtime files.                  |
+|   WASM override | Runtime release action will notify this action.    | Build and push the runtime files to the repository.   |
 
 Each component will have a very detailed guide to help the chain team to set up.
 
@@ -127,18 +120,19 @@ If they contain no activity, references to projects hosted elsewhere or live are
 - **FTE:**  1
 - **Costs:** 22,500 USD
 
-| Number | Deliverable                   | Specification                                                                                                         |
-| -----: | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-|    0a. | License                       | GPLv3                                                                                                                 |
-|    0b. | Documentation                 | There will be a guide to tell people how to use this and inline docs will cover core functionalities.                                                                 |
-|    0c. | Testing guide                 | There will be a guide and a demo repository to tell the auditor how to run the tests. All components will be covered. |
-|     1. | Try-runtime CI                | Comment on a release PR and see the try-runtime result.                                                               |
-|     2. | Release CI                    | Build and release the deterministic runtime and the node files.                                                       |
-|     3. | WASM override tool            | It can build the specify feature WASM in one step and manage them well in the corresponding folder.                   |
-|     4. | WASM override CI              | Listen for build requests from the release CI.                                                                        |
-|     5. | Version compare tool          | It can retrieve the on-chain runtime version and compare it with the latest GitHub tag.                               |
-|     6. | Release repository release CI | Based on the version comparison tool result, proceed to release the new version in this repository.                   |
-|     7. | Releases                      | GitHub release.                                                                                                       |
+| Number | Deliverable            | Specification                                                                                                         |
+| -----: | ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                | GPLv3                                                                                                                 |
+|    0b. | Documentation          | There will be a guide to tell people how to use this and inline docs will cover core functionalities.                 |
+|    0c. | Testing guide          | There will be a guide and a demo repository to tell the auditor how to run the tests. All components will be covered. |
+|     1. | Docker image           | A well-maintained, long-term version Docker image for Polkadot-SDK-based runtime managed by Hack-Ink.                 |
+|     2. | Try-Runtime CI         | Comment on a release PR and see the try-runtime result.                                                               |
+|     3. | Release CI             | Build and release the deterministic runtime.                                                                          |
+|     4. | WASM override tool     | It can build the specify feature WASM in one step and manage them well in the corresponding folder.                   |
+|     5. | WASM override CI       | Listen for build requests from the release CI.                                                                        |
+|     6. | WASM info inspect tool | Use it to inspect the WASM basic information and integrate the result into the release note.                          |
+|     7. | Releases               | Publish on GitHub release and crates.io release.                                                                      |
+|     8. | Workshop               | There will be a workshop repository for teams to learn how to setup the release pipeline step by step.                |
 
 ## Future Plans
 
