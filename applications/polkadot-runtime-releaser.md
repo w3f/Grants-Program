@@ -132,7 +132,7 @@ If they contain no activity, references to projects hosted elsewhere or live are
 |     5. | WASM override CI       | Listen for build requests from the release CI.                                                                        |
 |     6. | WASM info inspect tool | Use it to inspect the WASM basic information and integrate the result into the release note.                          |
 |     7. | Releases               | Publish on GitHub release and crates.io release.                                                                      |
-|     8. | Workshop               | There will bes workshop repository for teams to learn how to setup the release pipeline step by step.                 |
+|     8. | Workshop               | There will be a workshop repository for teams to learn how to setup the release pipeline step by step.                |
 
 ## Future Plans
 
