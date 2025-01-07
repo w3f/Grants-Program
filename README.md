@@ -14,54 +14,75 @@
 
 ## Introduction
 
-[Open Source Developer Grants](https://polkadot.polkassembly.io/bounty/59) support individuals and small teams in developing open-source software for the Polkadot ecosystem. This initiative aims to fund up to 15 projects with grants of up to $30,000 USD (payable in DOT) each, focusing on those with a proven background in open-source software development. Projects can include proofs of concept, general-purpose libraries, or full-scale dApps that benefit the Polkadot ecosystem.
+The [Polkadot Open Source Developer Grants bounty](https://polkadot.polkassembly.io/bounty/59) supports individuals and small teams in developing open-source software for the Polkadot ecosystem. This initiative aims to initially fund up to 15 projects with grants of up to $30,000 USD (payable in DOT) each, focusing on those with a proven background in open-source software development. Projects can include proofs of concept, general-purpose libraries, or full-scale dApps that benefit the Polkadot ecosystem.
 
-### Guidelines
+## Guidelines
 
-Anyone is welcome to apply for a grant. Projects funded through our programs are broad in scope, but our focus lies on strong **technical** projects that add value to the ecosystem. Teams apply publicly using an application template, where community members can comment and make change suggestions. Applications are accepted or rejected by the curators of this bounty based on the following criteria:
-	
-* The applications focus on open-source software development directly or indirectly beneficial for the Polkadot ecosystem. Acceptable licenses are The Unlicense, Apache, MIT, or GPL v3.
-* Teams need to build solutions on or for the Polkadot Network, which are:
-  * focused on implementing common good infrastructure and
-  * not the issuer and/or the promoter of any token at the time of the application.
-* Teams need to successfully undergo a KYC/KYB process.
-* Each team can only receive one grant. 
-* The technical development is unique and doesn’t already exist in the ecosystem. 
-* Projects must not actively encourage gambling, illicit trade, money laundering, or criminal activities in general.
-* The scope and funding amount of the project as a whole and each milestone are subject to discussion. Since grants are focused on software development, funding should closely follow the person-hours estimated for each milestone. 
-* If an application is accepted, they can start working on the project. Payments are made once a milestone is delivered and successfully evaluated by one of the curators of the bounty. 
+Anyone is welcome to apply for a grant. Projects funded through our programs are broad in scope, but our focus lies on projects with a strong technical focus that demonstrably add value to the Polkadot ecosystem. Therefore, applicants will be expected to present a solid and compelling long-term roadmap. We also expect the application teams to have a thorough understanding of the technologies they are planning to use. Also note that:
 
-Generally, your project will have better chances to be accepted if:
+- Grant payouts are **denominated in USD** and paid out after a milestone has been delivered and _successfully evaluated_. Payouts are made in DOT using the 7-day EMA price as listed by Subscan at the day of payout initiation without any top-up requests thereafter due to potential price movements.
+- The program aims to efficiently fund software development that is beneficial for the Polkadot ecosystem as a whole. As such, we don't fund **tangential costs** such as business-oriented activities (marketing, business planning), events, outreach, hosting costs, or audits. 
+- If work on a grant significantly falls behind **schedule**, grantees must notify the curators as soon as possible to map out an action plan. The curators maintain the right to cancel a grant if grantees fail to do so, are unresponsive to inquiries or the grant becomes technically obsolete.
 
-- It presents a **well-researched** or tested concept, for which, ideally, you are able to show some prior work.
-- You can demonstrate that the project will be **maintained** after completion of the grant, be it through an obvious commitment to the technology from your side, additional funding sources, or an existing business model.
-- Your team has **proven experience** with the relevant languages and technologies and/or a strong technical background. You will be asked to provide the GitHub profiles of your team members as part of your application, which we will examine for past activity and code quality. Naturally, you can also link to projects on other platforms.
-- Your application is **rich in technical details** and well-defined.
-- You can clearly present how your project stands out among competitors or implements technology that doesn't exist in the ecosystem yet.
 
-In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](https://github.com/PolkadotOpenSourceGrants/apply/blob/master/docs/Support%20Docs/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product.
+### Application Requirements
 
-⚠️ We take licensing and the right of all teams in and outside the ecosystem to be recognised for their work very seriously. Using others' work with no attribution or indication that this was not your own work as part of a milestone delivery **will lead to immediate termination**. Please reach out to us before submitting if you have any doubts on how to comply with a specific license and we'll be happy to help.
+Applications fall into one of two categories, open source projects and business-oriented projects. For pure **open source projects**, we expect the applicants to provide evidence of 
 
-We also try to enforce our [code of conduct](CODE_OF_CONDUCT.md) and, based on this, may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
+- the community expressing desire for such a project, for example by an active forum post or evidence of similar, successful projects in other ecosystems and
+- experience in open source software development and community engagement initiatives.
 
-### Project Ideas
+For **business-oriented projects**, we require applicants to provide
 
-An overview of existing projects in the Web 3.0 Technology Stack, along with broad project ideas we would potentially be interested in funding, can be found [here](https://wiki.polkadot.network/docs/build-open-source), as well as a list of previously accepted applications [here](https://github.com/PolkadotOpenSourceGrants/apply/blob/master/applications/index.md).
+- a robust business plan including a comprehensive market analysis documenting the target audience and their needs/pain points, market size and growth potential, trends, competitive landscape, and go-to-market strategy including customer acquisition, 
+- a long-term roadmap that includes funding goals which outline your funding requirements, including the amount of funding needed, the timeline for securing funding and the proposed use of funds. This should include a detailed breakdown of costs, revenue projections and key milestones that will be achieved with the funding.
 
-### Support
+Additionally, successful grant applications must fulfill the following requirements:
 
-The scope of the Open Source Developer Grants Bounty consists of funding and feedback on delivered milestones. This means that we do not provide hands-on support as part of a grant. 
+- Code produced as part of a grant must be open-sourced, and it should also not rely on closed-source software for full functionality. Please refer to the list of OSI approved licenses for options.
+- We do not award grants for projects that have been the object of a successful token sale.
+- We do not fund projects that actively encourage gambling, illicit trade, money laundering, or criminal activities in general.
+- The beneficiaries of the grant must successfully go through a KYC/KYB check during the application phase in order to be eligible.
+- In addition to the information provided on your application, note that your project will need to comply with our delivery guidelines. In particular, we require all projects to create documentation that explains how their project works in detail. At a minimum, written documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product.
 
-### Curators
+Finally, we take licensing and the right of all teams in and outside the ecosystem to be recognized for their work very seriously. Using others' work with no attribution or indication that this was not your own work as part of a milestone delivery will lead to immediate termination. Please reach out to us before submitting if you have any doubts on how to comply with a specific license and we'll be happy to assist.
+
+In addition to the information provided on your application, note that your project will need to comply with our [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product.
+
+### Tips for Good Applications
+
+Generally, your project will have a better chance of being accepted if
+
+- the focus of the application lies on the software that is being developed as part of the grant and less on a project/venture/operation. For the purpose of the application and delivery, think about how others benefit from your work.
+- it presents a well-researched or tested concept, for which ideally you can show some prior work;
+- you have tangible proof of how and to what extent the project is a benefit to the Polkadot ecosystem and its users;
+- you can demonstrate that the project will be maintained after completion of the grant, be it through an obvious commitment to the technology from your side or additional funding sources;
+- your team has proven experience with the relevant languages and technologies and/or a strong technical background;
+- your application is rich in technical details and well-defined;
+- you can present how your project stands out among competitors or implement technology that doesn't exist in the ecosystem yet.
+
+Also, we expect the teams to already have a solid idea about the project's expected final state. Therefore, we recommend including as much information as possible about the current state of your project, relevant previous work, and the proposed architecture/work, such as
+
+- Mockups/designs of any UI components
+- Data models and/or API specifications of core functions
+- An overview of the technology stack to be used
+- Documentation of core components, protocols, architecture, etc. to be deployed
+- PoC/MVP or other relevant prior work or research on the topic
+- What your project is _not_ or _will not_ provide or implement
+
+## Support
+
+The scope of the Open Source Developer Grants Bounty consists of funding and feedback on delivered milestones. This means that we do not provide hands-on support as part of a grant. If you have issues or questions about your grant or the processes around it, please reach out to us as described in the [Help](#help) section below.
+
+## Curators
 
 The curators consists of individuals who know the funding priorities of the Polkadot ecosystem and is responsible for evaluating grant applications and providing feedback on these.
 
- - Diogo Mendonca from Ditavia
- - Tommi Enenkel from Alice und Bob
- - Otar Shakarishvili from JUST Open Source
- - Luca von Wyttenbach from Polimec
- - Sebastian Müller from Web3 Foundation
+ - Diogo Mendonca from [Ditavia](https://www.ditavia.com/)
+ - Tommi Enenkel from [Alice und Bob](https://twitter.com/alice_und_bob)
+ - Otar Shakarishvili from [JUST Open Source](https://www.justopensource.io/)
+ - Luca von Wyttenbach from [Polimec](https://www.polimec.org/)
+ - Sebastian Müller from [Web3 Foundation](https://web3.foundation/)
 
 ## Process
 
