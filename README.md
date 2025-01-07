@@ -11,7 +11,6 @@
   - [3. Milestone Delivery and Payment](#3-milestone-delivery-and-payment)
   - [Changes to a Grant after Approval](#changes-to-a-grant-after-approval)
 - [Help](#help)
-  - [Real-time Conversation](#real-time-conversation)
 
 ## Introduction
 
