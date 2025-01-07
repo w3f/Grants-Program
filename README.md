@@ -37,7 +37,7 @@ For **business-oriented projects**, we require applicants to provide
 - a robust business plan including a comprehensive market analysis documenting the target audience and their needs/pain points, market size and growth potential, trends, competitive landscape, and go-to-market strategy including customer acquisition, 
 - a long-term roadmap that includes funding goals which outline your funding requirements, including the amount of funding needed, the timeline for securing funding and the proposed use of funds. This should include a detailed breakdown of costs, revenue projections and key milestones that will be achieved with the funding.
 
-Additionally, successful grant applications must fulfill the following requirements:
+Additionally, _all_ grant applications must fulfill the following requirements:
 
 - Code produced as part of a grant must be open-sourced, and it should also not rely on closed-source software for full functionality. Please refer to the list of OSI approved licenses for options.
 - We do not award grants for projects that have been the object of a successful token sale.
