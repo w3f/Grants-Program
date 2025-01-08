@@ -84,6 +84,8 @@ In a typical rug pull, the project creator retains control over the raised funds
 - **Automatic Fees and Refunds:** 
 The presale includes automated functions for fee collection, token distribution, and refunds. If the presale fails (e.g., fundraising target is not met), users can automatically reclaim their ETH in proportion to their contribution, preventing the project creator from absconding with the funds. 
 
+![Product Architecture](https://i.ibb.co/jGCPMNX/Screenshot-590.png)
+
 #### KPIs for Impact Estimation:
 We believe that our Dapp integration will bring measurable value to both our platform and your ecosystem. Key performance indicators (KPIs) to estimate the impact include:
 
@@ -92,6 +94,14 @@ We believe that our Dapp integration will bring measurable value to both our pla
 - **User Growth:** We project to onboard 100,000 active users by the end of Year 1, including investors and project teams, driving adoption of Neo network for presale transactions.
 
 - **Liquidity and Trading Activity:** We are expecting that new projects launch will lead to increased trading volume and liquidity within your ecosystem.
+
+**Why we want to build on Polkadot**
+
+- Polkadot’s unique multi-chain framework offers an unparalleled advantage in terms of interoperability. With its relay chain and parachains, Polkadot enables seamless communication between different blockchains. For a bonded curve launchpad, where assets and liquidity need to be bridged across various ecosystems, Polkadot’s cross-chain capabilities are a natural fit. This ensures we can facilitate broader participation and integration with different blockchain communities, making our platform more accessible and scalable.
+
+- Substrate's modular framework allows us to customize the blockchain layer according to our needs, especially as we design a bonded curve mechanism for our launchpad. Substrate’s flexibility in governance, consensus mechanisms, and runtime modules makes it easy to tailor the platform's features while maintaining high performance. This adaptability means we can innovate rapidly and efficiently.
+
+- Polkadot’s parachains can scale independently, enabling our project to grow alongside the broader ecosystem. By utilizing Polkadot’s infrastructure, we can ensure that our launchpad can handle increased transaction volumes as our user base and features expand, without compromising performance or decentralization.
 
 #### Technology Stack
 
@@ -102,6 +112,20 @@ We believe that our Dapp integration will bring measurable value to both our pla
 - Security: SSL, Polkadot's security model, smart contract audits
 - DevOps: GitHub Actions.
 - Monitoring: Mixpanel
+
+**Technical Details: Smart Contract Language and Integration on Polkadot**
+
+For the smart contract component of the launchpad, we will use Ink!, which is a Rust-based programming language designed for writing WebAssembly (Wasm) smart contracts on Substrate-based chains. Ink! is highly optimized for Substrate and enables us to deploy smart contracts directly on Polkadot parachains, ensuring both security and performance. It's well-suited for our use case because it allows us to build flexible complex logic, while also taking advantage of the native Polkadot parachain infrastructure for scalability and cross-chain functionalities.
+
+- By integrating with parachains, we can ensure cross-chain liquidity and asset transfers, which are crucial for a launchpad that needs to interact with multiple ecosystems (e.g., different token standards, DEXs, or other decentralized projects).
+
+- For cross-chain communication, we plan to utilize XCMP (Cross-Chain Message Passing) to facilitate trustless interactions between parachains or the Polkadot relay chain.
+
+- By using Wasm smart contracts (via Ink!) and Substrate’s native architecture, our launchpad will benefit from the security and performance optimizations of Polkadot and Substrate. Ink! contracts are executed in the Polkadot runtime environment, ensuring that they inherit the security guarantees and consensus mechanisms of Polkadot and its parachains.
+
+- The substrate runtime also ensures that our smart contracts are highly efficient and can be executed in a gas-efficient manner, reducing unnecessary costs for users interacting with the launchpad.
+
+- Polkadot’s ecosystem provides future-proof integration with other blockchain ecosystems, and through its bridges (e.g., with Ethereum, Bitcoin, or Cosmos), our launchpad could potentially support token sales, liquidity pools, and other activities across various blockchain networks. This is a critical advantage of building on Polkadot, as it aligns with our goal of creating a highly interoperable launchpad.
 
 #### Team members: 
 
@@ -165,11 +189,11 @@ Finalize the project architecture and design, Research bonding curve mechanisms 
 
 Development of functionalities for front-end user interface and backend infrastructure for Polkadot.
 
-- Milestone 3 – Contract Development & Security Audits(5 weeks) by Feb 15th 2025
+- Milestone 3 – Contract Development & Security Audits(5 weeks) by Feb 30th 2025
 
 Develop the bonded curve mechanism into the presale contract, Factory Contract development for Token Creation, Regular Presale Contract, Locking/Vesting Contract, Airdrops Contract, Conduct initial tests with selected partners and projects.
 
-- Milestone 4 – Testnet & Mainnet Launch (by Feb 30th 2025)
+- Milestone 4 – Testnet & Mainnet Launch (by March 15th 2025)
 
 Finalize platform for mainnet launch, Focus on user acquisition, education, and community building, Host a series of AMAs and events to promote Hydrapad and educate the ecosystem about bonded curve presale models.
 
@@ -183,6 +207,11 @@ Finalize platform for mainnet launch, Focus on user acquisition, education, and 
 |    0c. | Testing Guide               | Core functions will be thoroughly covered by unit tests to ensure both functionality and robustness. The guide will include detailed instructions on how to run these tests, allowing users to easily verify the correctness and reliability of the system. This will provide an additional layer of confidence and transparency, ensuring that the implementation meets the highest standards of quality.                                                                                                                                                              |
 |    0d. | Docker                      | We will provide a Dockerfile (or set of Dockerfiles) that can be used to easily test all the functionality delivered with this milestone. This will enable users to quickly set up a consistent testing environment, ensuring that they can validate the new features and functionality in an isolated and reproducible manner. The Dockerfile(s) will simplify the process of testing, making it more accessible and efficient for developers and testers alike.                                                                                                                                                                                                  |
 |    0e. | Article                     | We will publish an article or workshop that provides an in-depth explanation of our advertising workflow, along with detailed technical insights. This resource will walk users through the entire process, from the high-level overview to the underlying technical aspects, helping them understand how the workflow is structured and how it can be leveraged effectively.                                                                                                                                                                                                   |
+| **Milestone 1:** | **Project Architecture, Bonded Curve Mechanism Research, Polkadot Ecosystem Integration Strategy** (Completed)                  | Finalized platform design, focusing on integrating with Polkadot Substrate, Detailed research on bonded curve mechanisms for presale dynamics, Collaboration with Polkadot ecosystem developers to define integration strategy.                                                                                                                                                                                                                           |
+| **Milestone 2:**| **Initial Platform Integration for Polkadot Substrate.** Duration: 5 weeks (Completion by Jan 30, 2025)          | **Frontend Integration:** Initial integration of frontend user interface with Polkadot, using Polkadot.js API. **Backend Infrastructure Setup:** Backend integration for managing presale data and token mechanics using Polkadot Substrate. **Core Functionality:** Implement token creation and presale management systems on Polkadot. **User Testing and Feedback:** Initial tests with a select group of users to validate platform functionality and address any issues.                                                                                                                  |
+|**Milestone 3:**|  **Contract Development & Security Audits** Duration: 4 weeks (Completion by Feb 30, 2025) | **Bonded Curve Presale Contract:** Development of the presale contract using Substrate-based smart contracts (ink!). **Factory Contract for Token Creation:** A contract enabling startups to create tokens for their presale events. Presale, Locking, Vesting & Airdrop Contracts: Development of smart contracts for managing presale events, token locking, token vesting, and airdrops. **Security Audits:** Third-party audits of all smart contracts to ensure safety and security. **Testnet Deployment:** Deployment of contracts on the testnet and internal tests for contract functionality and security.                                                                                                                             |
+| **Milestone 4:** | **Testnet & Mainnet Launch**  Duration: 2 weeks (Completion by March 15, 2025) | **Testnet Launch:** Final testing of platform and contracts on the testnet, involving select projects to ensure smooth functionality. **Mainnet Launch:** Full deployment of the platform on the Polkadot mainnet with live presales. User Acquisition & Community Building: Launch of marketing campaigns, AMAs, and events to build the community around Hydrapad. Documentation & Tutorials: Detailed documentation, including a tutorial for presale creation and platform usage. **User Dashboard:** Launch of a user dashboard to manage investments, presales, and tokens.
+                                                                                        
 
 #### Funding Request
 
