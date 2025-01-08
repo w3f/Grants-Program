@@ -19,7 +19,7 @@ The [Polkadot Open Source Developer Grants bounty](https://polkadot.polkassembly
 
 ## Guidelines
 
-Anyone is welcome to apply for a grant. Projects funded through our programs are broad in scope, but our focus lies on projects with a strong technical focus that demonstrably add value to the Polkadot ecosystem. Therefore, applicants will be expected to present a solid and compelling long-term roadmap. We also expect the application teams to have a thorough understanding of the technologies they are planning to use. Also note that:
+Anyone is welcome to apply for a grant. Projects funded through our program are broad in scope, but our focus lies on projects with a strong technical focus that demonstrably add value to the Polkadot ecosystem. Therefore, applicants will be expected to present a solid and compelling long-term roadmap. We also expect the application teams to have a thorough understanding of the technologies they are planning to use. Also note that:
 
 - Grant payouts are **denominated in USD** and paid out after a milestone has been delivered and _successfully evaluated_. Payouts are made in DOT using the 7-day EMA price as listed by Subscan at the day of payout initiation without any top-up requests thereafter due to potential price movements.
 - The program aims to efficiently fund software development that is beneficial for the Polkadot ecosystem as a whole. As such, we don't fund **tangential costs** such as business-oriented activities (marketing, business planning), events, outreach, hosting costs, or audits. 
@@ -28,10 +28,10 @@ Anyone is welcome to apply for a grant. Projects funded through our programs are
 
 ### Application Requirements
 
-Applications fall into one of two categories, open source projects and business-oriented projects. For pure **open source projects**, we expect the applicants to provide evidence of 
+Applications fall into one of two categories, open-source projects and business-oriented projects. For pure **open-source projects**, we expect the applicants to provide evidence of 
 
 - the community expressing desire for such a project, for example by an active forum post or evidence of similar, successful projects in other ecosystems and
-- experience in open source software development and community engagement initiatives.
+- experience in open-source software development and community engagement initiatives.
 
 For **business-oriented projects**, we require applicants to provide
 
