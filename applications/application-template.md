@@ -108,7 +108,11 @@ This section should break the development roadmap down into milestones and deliv
 - Equipment
 - Subcontracts/Subscriptions
 
-| Item | Cost | Amount | Total | Description/Notes | 
+| Category | Item | Cost | Amount | Total | Description |
+| --- | ---- | --- | --- | --- | ---|
+| Personell | Full-Stack Developer | 8,000 USD | 0.5 FTE | 4,000 USD | leading project with tech architecture and design |
+| Personell | Smart Contract Developer | 10,000 USD | 1 FTE | 10,000 USD | focused on execution and implementation |
+| --- | --- | --- | **Total** | **14,000 USD** |  |
 | ---- | ----------- | ---- | ------ | ----- |
 | Full-Stack Developer | 8,000 | 0.5 | 4,000 |  |
 | Smart Contract Developer | 12,000 | 1 | 12,000 |  |
