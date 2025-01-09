@@ -102,6 +102,11 @@ This section should break the development roadmap down into milestones and deliv
 | 4. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
 
 ### Budget Breakdown (Example, please adapt)
+ **Category:** Budget Breakdown positions are split within the following categories: 
+ 
+- Personnel
+- Equipment
+- Subcontracts/Subscriptions
 
 | Item | Cost | Amount | Total | Description/Notes | 
 | ---- | ----------- | ---- | ------ | ----- |
