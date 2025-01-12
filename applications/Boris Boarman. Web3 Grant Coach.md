@@ -1,4 +1,4 @@
-# Boris Boarman AI
+# Boris Boarman. Web3 Grant Coach
 
 - **Team Name:** Whatdahack?!
 - **Payment Details:**
