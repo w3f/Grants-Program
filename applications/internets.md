@@ -109,7 +109,7 @@ A collection of Interprimitives is referred to as a net, and many nets will exis
 ### Contact
 
 - **Contact Name:** Alexander Curtis
-- **Contact Email:** alex@blackfaxlabs.com
+- **Contact Email:** alexandercurtis095@gmail.com
 - **Website:** https://blackfax.io
 
 ### Legal Structure
