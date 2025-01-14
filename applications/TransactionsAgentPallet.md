@@ -41,6 +41,9 @@ To enhance the usability of the Transactions Agent Pallet, we provide a signatur
 #### Typical example
 ![img2](https://github.com/OIyoung/Transactions-Agent/blob/main/static/image2.png)
 
+#### Sequence
+![img3](https://github.com/OIyoung/Transactions-Agent/blob/main/static/image3.png)
+
 ## Team 👥
 ### Team members
 + Oscar Feng
