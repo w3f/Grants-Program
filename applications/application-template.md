@@ -84,7 +84,8 @@ This section should break the development roadmap down into milestones and deliv
 ### Overview
 
 - **Estimated Duration:** Duration of the whole project (e.g. 3 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
+- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the grant throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
+- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD).
 
 > Note that deliverables 0a to 0e are mandatory. Please adapt their specification to your project.
 
@@ -99,6 +100,20 @@ This section should break the development roadmap down into milestones and deliv
 | 2. | Smart contract Y | The Y Substrate module will... |
 | 3. | Substrate chain | X and Y of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
 | 4. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+
+### Budget Breakdown (Example, please adapt)
+ **Category:** Budget Breakdown positions are split within the following categories: 
+ 
+- Personnel
+- Equipment
+- Subcontracts/Subscriptions
+
+| Category | Item | Cost | Amount | Total | Description |
+| --- | ---- | --- | --- | --- | ---|
+| Personell | Full-Stack Developer | 8,000 USD | 0.5 FTE | 4,000 USD | leading project with tech architecture and design |
+| Personell | Smart Contract Developer | 10,000 USD | 1 FTE | 10,000 USD | focused on execution and implementation |
+| --- | --- | --- | **Total** | **14,000 USD** |  |
+
 
 ## Future Plans
 
