@@ -2,7 +2,7 @@
 
 - **Team Name:** Cyferio Labs
 - **Payment Address:** 14McWFng3MFhG3E7XVgiHXBvLMYasdJWidmbrG2LZW46LNJU
-- **Level:** 3
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
@@ -107,16 +107,16 @@ The Cyferio Hub MVP has been successfully integrated with Sui and Babylon, demon
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):** 4 FTE
-- **Total Costs:** 100,000 USD
+- **Total Estimated Duration:** 4 months
+- **Full-Time Equivalent (FTE):** 2 FTE
+- **Total Costs:** 30,000 USD
 - **DOT %:** 50%
 
 ### Milestone 1 — Adapters Implementation
 
 - **Estimated Duration:** 2 months
-- **FTE:** 4
-- **Costs:** 30,000 USD
+- **FTE:** 2
+- **Costs:** 15,000 USD
 
 | Number | Deliverable               | Specification                                                         |
 | ------ | ------------------------- | --------------------------------------------------------------------- |
@@ -132,8 +132,8 @@ The Cyferio Hub MVP has been successfully integrated with Sui and Babylon, demon
 ### Milestone 2 — FHE Key Management Protocol Integration
 
 - **Estimated Duration:** 2 months
-- **FTE:** 4
-- **Costs:** 30,000 USD
+- **FTE:** 2
+- **Costs:** 15,000 USD
 
 | Number | Deliverable                 | Specification                                                                                          |
 | ------ | --------------------------- | ------------------------------------------------------------------------------------------------------ |
@@ -145,25 +145,18 @@ The Cyferio Hub MVP has been successfully integrated with Sui and Babylon, demon
 | **2.** | Cyferio Client              | A client sdk for users to encrypt inputs into FHE ciphertexts with ZKP generated for the validity of the ciphertexts for the FHE rollup.                            |
 | **3.** | Zama ZKP Module             | Module for sending encrypted inputs and corresponding ZKP to Zama KMS node for verification, ensuring robust validity checks.          |
 
-### Milestone 3 — Live Testnet Deployment
-
-- **Estimated Duration:** 2 months
-- **FTE:** 4
-- **Costs:** 40,000 USD
-
-| Number | Deliverable     | Specification                                                                                |
-| ------ | --------------- | ----------------------------------------------------------------------------------------------|
-| **0a.**| License         | Apache 2.0                                                                                    |
-| **0b.**| Documentation   | Updated docs with deployment and management instructions for the live testnet.                |
-| **0c.**| Testing Guide   | Integration tests for testnet operations, validating performance and reliability.             |
-| **0d.**| Article/Tutorial| An article/tutorial explaining testnet setup and usage for developers and users.              |
-| **1.** | Float DB        | An in-memory storage solution (based on Jellyfish Merkle Tree and DragonflyDB) to enhance scalability. |
-| **2.** | JAM Integration | Integrate Cyferio SDK and Hub with JAM to showcase interoperability within Polkadot ecosystem.|
-| **3.** | Live Testnet    | Deploy and test a live testnet for Cyferio Hub, validating full cross-chain functionalities. |
-
 ## Future Plans
 
-In the short term, we intend to onboard existing rollup projects to leverage Cyferio Hub's decentralized cache and settlement functionalities, enabling seamless integration with Polkadot. In the long term, Cyferio Labs aims to sustain the project's growth by incorporating additional zkVM solutions and introducing privacy-preserving functionalities for dApp developers.
+In the short term, we will:
+
+- Deploy a live testnet to validate performance, reliability, and cross-chain functionalities.
+- Enhance scalability by integrating an in-memory storage solution (Float DB using Jellyfish Merkle Tree and DragonflyDB).
+- Integrate with JAM to showcase interoperability within the Polkadot ecosystem.
+
+In the long term, Cyferio Labs aims to sustain the project’s growth by:
+
+- Onboarding additional rollup projects to leverage our decentralized cache and settlement functionalities.
+- Incorporating additional zkVM solutions and advanced privacy-preserving features for dApp developers.
 
 ## Additional Information :heavy_plus_sign:
 
