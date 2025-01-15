@@ -54,7 +54,7 @@ Besides, **there is a clear difference between an application being accepted and
 | Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
 | [hack-ink](https://linktr.ee/aurevoirxavier)                       | [Polkadot Runtime Releaser](./polkadot-runtime-releaser.md)                     | [GitHub](https://github.com/AurevoirXavier)                 | ☐          |        ☐       |      ☐      |
-| [Coong Crafts](https://github.com/CoongCrafts)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☐       |      ☐      |
+| [Coong Crafts](https://github.com/CoongCrafts)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☒       |      ☐      |
 | [Tuguldur Baigalmaa](https://philoniare.com/about)                       | [Bison](./bison.md)                     | [GitHub](https://github.com/philoniare)                 | ☐          |        ☐       |      ☐      |
 | [Cyborg Network](https://cyborgnetwork.io/)                       | [NeuroZK](./NeuroZK.md)                     | [GitHub](https://github.com/Cyborg-Network)               | ☐          |        ☐       |      ☐      |
 
@@ -71,7 +71,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Katarína Valová](https://github.com/kacena123)                       | [AgriDot](./AgriDot.md)                     | [GitHub](https://github.com/kacena123)                 | ☐          |        ☐       |      ☐      |
 | [ParaSpell Research Foundation](https://paraspell.xyz/)                       | [xcNFT](./xcNFT.md)                     | [GitHub](https://github.com/paraspell)                 | ☐          |        ☒       |      ☒      |
 | [Web3 Association](https://github.com/web3association)                       | [Open source contributor funding experiment](./web3-association-open-source-contributor-funding-experiment-setup.md)                     | [GitHub](https://github.com/web3association)                 | ☐          |        ☐       |      ☐      |
-| [SIGMA 8 SOLUTIONS](https://github.com/lukastanisic99)                       | [P2P State Channels](./P2PStateChannels.md)                     | [GitHub](https://github.com/lukastanisic99)                 | ☐          |        ☒       |      ☐      |
+| [SIGMA 8 SOLUTIONS](https://github.com/lukastanisic99)                       | [P2P State Channels](./P2PStateChannels.md)                     | [GitHub](https://github.com/lukastanisic99)                 | ☐          |        ☒       |      ☒      |
 
 [🔝](#top)
 
@@ -102,9 +102,9 @@ Besides, **there is a clear difference between an application being accepted and
 | [Relai Network](https://relai.network/)                       | [Futur & Fusion Protocols](./FuturFusion.md)                     | [GitHub](https://github.com/RELAI-Network)                 | ☐          |        ☒       |      ☒      |
 | [Zondax AG](https://zondax.ch/)                       | [User Account Access Security Analysis](./research_wallets.md)                     | [GitHub](https://github.com/zondax)                 | ☐          |        ☐       |      ☐      |
 | [Philoniare Team](https://github.com/philoniare/)                       | [create-substrate-app](./create-substrate-app.md)                     | [GitHub](https://github.com/philoniare/)                 | ☐          |        ☒       |      ☒      |
-| [David Semakula](https://davidsemakula.com)                       | [pallet-verifier](./pallet-verifier.md)                     | [GitHub](https://github.com/davidsemakula)                 | ☐          |        ☐       |      ☐      |
+| [David Semakula](https://davidsemakula.com)                       | [pallet-verifier](./pallet-verifier.md)                     | [GitHub](https://github.com/davidsemakula)                 | ☐          |        ☒       |      ☒      |
 | [Algorealm](https://github.com/algorealminc)                       | [SwarmNL](./swarm-nl.md)                     | [GitHub](https://github.com/algorealminc)                 | ☐          |        ☒       |      ☒      |
-| [Rui Morais](https://github.com/fiono11)                       | [Threshold Signature Implementation](./ThresholdSignature.md)                     | [GitHub](https://github.com/fiono11)                 | ☐          |        ☐       |      ☐      |
+| [Rui Morais](https://github.com/fiono11)                       | [Threshold Signature Implementation](./ThresholdSignature.md)                     | [GitHub](https://github.com/fiono11)                 | ☐          |        ☒       |      ☒      |
 
 [🔝](#top)
 
@@ -168,9 +168,9 @@ Besides, **there is a clear difference between an application being accepted and
 | [Eiger](https://www.eiger.co/)                                 | [MoveVM Substrate Pallet, part 2](./Substrate_Move_System_Pallet_2.md)   | [GitHub](https://github.com/eigerco)                               | ☐          |        ☒       |      ☒     |
 | [Rust Syndicate x Decentration](https://www.decentration.org/)                                 | [XCMSend](./xcmsend.md)   | [GitHub](https://github.com/decentration)                               | ☐          |        ☒       |      ☒     |
 | [Off Narrative Labs](https://github.com/Off-Narrative-Labs)                                 | [Tuxedo Parachain Support](./tuxedo_parachain.md)   | [GitHub](https://github.com/Off-Narrative-Labs)                               | ☐          |        ☒       |      ☐     |
-| [PolyCrypt GmbH](https://polycry.pt)                                 | [Distributed Cryptography for Polkadot Wallets](./distributed_cryptography_for_polkadot_wallets.md)   | [GitHub](https://github.com/perun-network)                               | ☐          |        ☐       |      ☐     |
+| [PolyCrypt GmbH](https://polycry.pt)                                 | [Distributed Cryptography for Polkadot Wallets](./distributed_cryptography_for_polkadot_wallets.md)   | [GitHub](https://github.com/perun-network)                               | ☐          |        ☒       |      ☐     |
 | [Open Smart Contract](https://github.com/OpenSmartContract)                                 | [ISO20022 PoC](./ISO20022.md)   | [GitHub](https://github.com/OpenSmartContract)                               | ☐          |        ☒       |      ☒     |
-| [DAOsign](https://daosign.org/)                                 | [DAOsign](./DAOsign.md)   | [GitHub](https://github.com/DAOsign)                               | ☐          |        ☒       |      ☐     |
+| [DAOsign](https://daosign.org/)                                 | [DAOsign](./DAOsign.md)   | [GitHub](https://github.com/DAOsign)                               | ☐          |        ☒       |      ☒     |
 | [Zondax AG](https://zondax.ch/)                                 | [PoC Polkadot Conformance Tests](./polkadot_tests.md)   | [GitHub](https://github.com/zondax)                               | ☐          |        ☒       |      ☒     |
 | [SO/DA zone](https://github.com/sodazone)                           | [Ocelloids XCM Transfer Monitoring Service](ocelloids_xcm_monitoring_service.md)       | [GitHub](https://github.com/sodazone)                                 | ☐          |        ☒       |      ☒     |
 | [Moonsong Labs](https://moonsonglabs.com/)                           | [StorageHub](./StorageHub.md)       | [GitHub](https://github.com/Moonsong-Labs)                                 | ☐          |        ☒       |      ☒     |

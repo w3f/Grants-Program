@@ -3,7 +3,7 @@
 - **Team Name:** AgriDot
 - **Payment Details:**
   - **DOT**: 1ukfa64f2WxSvJy8zwNC2RpSiajt2X1hsYQqBHmM9DTjT8R 
-  - **Payment**: Fiat payment - Details will be provided if the proposal gets accepted.
+  - **Payment**: Fiat payment - Details shared on 8. January 2025 at 18:36 via email in the application below.
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 🐣
 
 ## Project Overview :page_facing_up:
