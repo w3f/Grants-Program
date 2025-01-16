@@ -57,6 +57,15 @@ Besides, **there is a clear difference between an application being accepted and
 | [Coong Crafts](https://github.com/CoongCrafts)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☒       |      ☐      |
 | [Tuguldur Baigalmaa](https://philoniare.com/about)                       | [Bison](./bison.md)                     | [GitHub](https://github.com/philoniare)                 | ☐          |        ☐       |      ☐      |
 | [Cyborg Network](https://cyborgnetwork.io/)                       | [NeuroZK](./NeuroZK.md)                     | [GitHub](https://github.com/Cyborg-Network)               | ☐          |        ☐       |      ☐      |
+| [Eva Interactive](https://www.linkedin.com/in/itsyogesh)                       | [Relaycode Extrinsics Builder](./relaycode.md)                     | [GitHub](https://github.com/itsyogesh)               | ☐          |        ☐       |      ☐      |
+| [ChainSupport Labs](https://github.com/ChainSupport)                       | [Frontier PoS Template](./frontier-pos-template.md)                     | [GitHub](https://github.com/ChainSupport)               | ☐          |        ☐       |      ☐      |
+| [Decenzio](https://decenzio.com/)                       | [NFTAA - NFT as an account](./nftaa.md)                     | [GitHub](https://github.com/Roman-24)               | ☐          |        ☐       |      ☐      |
+| [Apolixit](https://github.com/Apolixit/)                       | [Polkanalysis](./polkanalysis.md)                     | [GitHub](https://github.com/Apolixit/)               | ☐          |        ☐       |      ☐      |
+| [KodaLabs](https://github.com/kodadot)                       | [Multichain Identity Indexer](./multichain_identity_indexer.md)                     | [GitHub](https://github.com/kodadot)               | ☐          |        ☐       |      ☐      |
+| [Zondax AG](https://zondax.ch/)                       | [MigrationEase](./MigrationEase.md)                     | [GitHub](https://github.com/zondax)               | ☐          |        ☐       |      ☐      |
+| [Dota Network](https://x.com/dot20_dota)                       | [dairdrop](./docname.md)                     | [GitHub](https://github.com/dota-network)               | ☐          |        ☐       |      ☐      |
+| [Swush Labs](https://github.com/swush-labs/)                       | [Swush DEX Aggregator](./swush-dex-aggregator.md)                     | [GitHub](https://github.com/swush-labs/)               | ☐          |        ☐       |      ☐      |
+
 
 [🔝](#top)
 
