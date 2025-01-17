@@ -116,7 +116,7 @@ At this stage we’ll execute three deliverables:
 
 - **Total Estimated Duration:** 3
 - **Full-Time Equivalent (FTE):** 3FTE
-- **Total Costs:** 60,000
+- **Total Costs:** 40,000
 - **DOT %:** 50%
 
 ### Milestone 1 — Finish [oneramp polkadot app ](https://polkadot.oneramp.io) and Documentation
@@ -125,24 +125,25 @@ At this stage we’ll execute three deliverables:
 - **FTE:** 3
 - **Costs:** 10,000 USD
 
+Deliverable: Working application - on and offramp in kenya, Uganda, Tanzania, Ghana and Nigeria(offramp only), documentation and opensource API
+
 In the first milestone, the features for the POC will be implemented and tested by limited users. Funds will purely be used for development costs.
 
 complete the [oneramp polkadot widget](https://polkadot.oneramp.io)
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
 
-|  Number | Deliverable                                                            | Specification                                                                                                                                                                                                          |
-| ------: | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                                                                | Apache 2.0                                                                                                                                                                                                             |
-| **0b.** | Documentation                                                          | We will provide both **inline documentation** of the product and a tutorial explanation of the product and how to use it.                                                                                              |
-| **0c.** | Testing and Testing Guide                                              | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness.                                                                                                               |
-| **0d.** | Docker                                                                 | We will provide a Dockercontainer that can be used to test all the functionality delivered with this milestone.                                                                                                        |
-|     0e. | Article                                                                | We will publish an **article**/workshop that explains the product and how it's being used in sub-saharan africa                                                                                                        |
-|      1. | Finish [oneramp polkadot app ](https://polkadot.oneramp.io)            | we will complete the oneramp polkadot app that will have on and offramping functionality in Uganda, Kenya, Ghana, Nigeria, Tanzania                                                                                    |
-|      2. | Documentation for intergation of oneramp for polkadot wallet providers | the most commonn form of on and offramp provider intergation is through re-direct links, We shall provide neccessary documentation to allow for wallet providers to onboard oneramp as a service in their applications |
-|      3. | Support for South Africa                                               | Add support for South Africa, This is the second-biggest crypto adoption market in sub-saharan Africa after Nigeria as per [chainalysis](https://www.chainalysis.com/blog/africa-cryptocurrency-adoption/)             |
-|      4. | Support for Malawi and Cameroon                                        | add support for Malawi and Cameroon allowing users in those regions to be able to on and offramp on polkadot through oneramp,                                                                                          |
-|      5. | marketing gampaign to create awareness about polkadot on oneramp       | Run an marketing gampaign to create awareness about polkadot on oneramp and how users can easily onboard                                                                                                               |
+|  Number | Deliverable                                                                                                                         | Specification                                                                                                                                                                                                          |
+| ------: | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                                                                                                                             | Apache 2.0                                                                                                                                                                                                             |
+| **0b.** | Documentation                                                                                                                       | We will provide both **inline documentation** of the product and a tutorial explanation of the product and how to use it.                                                                                              |
+| **0c.** | Testing and Testing Guide                                                                                                           | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness.                                                                                                               |
+| **0d.** | Docker                                                                                                                              | We will provide a Dockercontainer that can be used to test all the functionality delivered with this milestone.                                                                                                        |
+|     0e. | Article                                                                                                                             | We will publish an **article**/workshop that explains the product and how it's being used in sub-saharan africa                                                                                                        |
+|      1. | Finish [oneramp polkadot app ](https://polkadot.oneramp.io)                                                                         | we will complete the oneramp polkadot app that will have on and offramping functionality in Uganda, Kenya, Ghana, Nigeria, Tanzania                                                                                    |
+|      2. | Documentation for intergation of oneramp for polkadot wallet providers                                                              | the most commonn form of on and offramp provider intergation is through re-direct links, We shall provide neccessary documentation to allow for wallet providers to onboard oneramp as a service in their applications |
+|      3. | Support for South Africa, (on and offramp on polkadot in SouthAfrica using oneramp, documentation and opensource API)               | Add support for South Africa, This is the second-biggest crypto adoption market in sub-saharan Africa after Nigeria as per [chainalysis](https://www.chainalysis.com/blog/africa-cryptocurrency-adoption/)             |
+|      4. | Support for Malawi and Cameroon (on and offramp on polkadot in Malawi and Cameroon using oneramp, documentation and opensource API) | add support for Malawi and Cameroon allowing users in those regions to be able to on and offramp on polkadot through oneramp,                                                                                          |
 
 ### Milestone 2 — Support for South Africa
 
@@ -152,22 +153,19 @@ This milestone will allow the usage of access to the [second biggest market](htt
 - **FTE:** 3
 - **Costs:** 15,000 USD
 
+Deliverable: on and offramp on polkadot in SouthAfrica using oneramp, documentation and opensource API
+
 ### Milestone 3 — Support for Malawi and Cameroon
 
 This milestone will allow the usage of access to the [seventh biggest market](https://www.chainalysis.com/blog/africa-cryptocurrency-adoption/) and the growing malawi market in sub-saharan africa. Yes [api](https://github.com/oneramp/oneramp-api) and intergration logic will be opensource. Funds will mainly go towards salaries, travel and business expenses.
+
+Deliverable: on and offramp on polkadot in Malawi and Cameroon using oneramp
 
 - **Estimated Duration:** 1 month
 - **FTE:** 3
 - **Costs:** 15,000 USD
 
-### Milestone 4 — marketing gampaign (run concurantly with development)
-
-This milestone will aim at marketing strategies to create awareness of the product and get more users to try it out such as giving cashbacks to users who use the application
-
-- **Estimated Duration:** 3 month
-- **FTE:** 3
-- **Costs:** 20,000 USD
-
+Deliverable: on and offramp on polkadot in Malawi and Cameroon using oneramp, documentation and opensource API
 ...
 
 ## Future Plans
