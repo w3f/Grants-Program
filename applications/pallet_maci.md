@@ -239,7 +239,7 @@ This registry will be implemented in one of these 2 forms:
 `pallet-quadratic-funding`  
 **Algorithm for calculating funds:**
 
-As explained by Vitalik B. in [this](https://vitalik.ca/general/2019/12/07/quadratic.html) blog post, some voting methods will favor plutocracy while some others will neglect the range of support or disproving of creating good.
+As explained by Vitalik B. in [this](https://vitalik.eth.limo/general/2019/12/07/quadratic.html) blog post, some voting methods will favor plutocracy while some others will neglect the range of support or disproving of creating good.
 Quadratic funding seems like the best fit for aggregating people's preferences for funding some public goods, so the platform will implement the **Constrained Liberal Radicalism algorithm** (Quadratic funding) for calculating the funds for a specific project.
 
 Bellow are all the components that have to be developed before the platform is ready for use:

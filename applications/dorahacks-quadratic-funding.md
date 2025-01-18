@@ -9,7 +9,7 @@ We would like to bring quadratic funding grants to Polkadot and Kusama ecosystem
 
 ### Overview
 
-Quadratic Funding was proposed in Vitalik Buterin's paper Quadratic Payments https://vitalik.ca/general/2019/12/07/quadratic.html. It's now been proven as an effective way to encourage grass-root innovation from the developer community and a unique mechanism to allow community contributors to directly support early-stage projects. Currently, GitCoin's ETH Grant and HackerLink's BSC Grant are already practicing this idea.
+Quadratic Funding was proposed in Vitalik Buterin's paper Quadratic Payments https://vitalik.eth.limo/general/2019/12/07/quadratic.html. It's now been proven as an effective way to encourage grass-root innovation from the developer community and a unique mechanism to allow community contributors to directly support early-stage projects. Currently, GitCoin's ETH Grant and HackerLink's BSC Grant are already practicing this idea.
 
 This project develops a substrate pallet that implements the quadratic funding process. The pallet will be tested on a local substrate node, and a simple frontend interface will be created based on Substrate Frontend Template.
 

@@ -15,7 +15,7 @@ Zero-knowledge proof (zkp) is a cryptographic technology which enables you to pr
 
 However, it requires tremendous expertise to construct a zkp for certain computation. This hinders the adoption of this powerful technique for everyday use. Wouldn't it be great if we can construct a zkp for any general purpose computation without a deep understanding of zkp? Enter the [Distaff VM](https://github.com/GuildOfWeavers/distaff), a zk-STARK virtual machine written in Rust. For any program executed on Distaff VM, a STARK-based proof of execution is generated. This proof can then be used by anyone to verify that a program was executed correctly without knowing the inputs to the program or even the program itself.
 
-The Starks Network is a [zk-STARK](https://vitalik.ca/general/2017/11/09/starks_part_1.html) based zkp parachain for the Polkadot/Kusama ecosystem. At its core, it uses the Distaff VM for zk-STARK proof generation and verification. Powered by the [Substrate](https://github.com/paritytech/substrate) blockchain framework, the Starks Network can serve other blockchains and enable applications such as private smart contract and private credential verification.
+The Starks Network is a [zk-STARK](https://vitalik.eth.limo/general/2017/11/09/starks_part_1.html) based zkp parachain for the Polkadot/Kusama ecosystem. At its core, it uses the Distaff VM for zk-STARK proof generation and verification. Powered by the [Substrate](https://github.com/paritytech/substrate) blockchain framework, the Starks Network can serve other blockchains and enable applications such as private smart contract and private credential verification.
 
 ### Substrate/Polkadot Integration
 

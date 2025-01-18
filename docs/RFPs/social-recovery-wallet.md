@@ -21,7 +21,7 @@ Apart from the [social recovery pallet](https://github.com/paritytech/substrate/
 
 **Other interesting sources:** 
 - https://www.parity.io/social-recovery-on-substrate/ 
-- https://vitalik.ca/general/2021/01/11/recovery.html 
+- https://vitalik.eth.limo/general/2021/01/11/recovery.html 
 - https://github.com/paritytech/substrate/blob/master/frame/recovery 
 - https://github.com/paritytech/substrate/tree/master/frame/proxy 
 - https://github.com/paritytech/substrate/tree/master/frame/multisi
