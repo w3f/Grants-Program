@@ -48,7 +48,7 @@ Encrypted data.
 This encrypted comment is stored:
 Byte string is divided into segments and is stored in a chain of cells c_1,...,c_k (c_1 is the root of the body). Each cell (except for the last one) has a reference to the next.
 c_1 contains up to 35 bytes (not including 4-byte tag), all other cells contain up to 127 bytes.
-This format has the following limitations: k <= 16, max string length is 1024.
+This format has the following limitations: k \<= 16, max string length is 1024.
 > This excellent encryption/decryption method ensures the uniqueness of each encrypted message, even for identical content. Additionally, it eliminates the need to store AES encryption keys on servers, making it more universal, secure, and decentralized.
 ---
 
