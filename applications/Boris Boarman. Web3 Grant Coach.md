@@ -52,8 +52,8 @@ Hugging Face Models: For fine-tuned, on-premise scoring.
 InvestML: For impact analysis and projections. 
 
 Blockchain Interaction:
-ethers.js: For blockchain interaction.
-Alchemy, Infura, or a self-hosted Ethereum node: For connecting to blockchain networks.
+polkadot.js: For interacting with the Polkadot blockchain.
+Polkadot API endpoints: Use endpoints from services like OnFinality, Polkadot RPC nodes, or self-hosted Polkadot nodes for connecting to the network.
 
 Smart Contract Deployment:
 Hardhat or Truffle: For compiling and deploying Solidity smart contracts.
