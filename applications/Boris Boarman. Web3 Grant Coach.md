@@ -33,7 +33,7 @@ The AI assistant guides the user through a sequence of questions to collect enou
 
 ### Project Details
 - Project logo/mascot: ![image](https://europe1.discourse-cdn.com/flex013/uploads/lido/original/2X/8/822ebf0e310133b5b401ebf0bb9494a6eda05858.jpeg)
-- Mockups/designs of any UI components: https://drive.google.com/drive/folders/1QpLKJmFSAIPPsO6HUDtNGikW4ca2T08r?usp=sharing
+- Mockups/designs of any UI components: [Boris Boarman UI Mockups](https://drive.google.com/drive/folders/1QpLKJmFSAIPPsO6HUDtNGikW4ca2T08r?usp=sharing)
 
 - An overview of the technology stack to be used:
 Frameworks:
