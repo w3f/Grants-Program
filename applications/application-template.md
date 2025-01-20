@@ -3,13 +3,13 @@
 > [!NOTE]
 > This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
 >
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
+> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
 
 - **Team Name:** Legal name of your team (e.g. JsonCorp)
 - **Payment Details:**
   - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
   - **Payment**: In case of payment in **USDC or USDT**, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of **fiat** payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and list here the date and time of your email (e.g. Fiat 24.12.1971, 11:59). 
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1, 2 or 3
 
 > [!IMPORTANT]
 > *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -108,7 +108,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
+- links to improvement proposals or [RFPs](https://grants.web3.foundation/docs/rfps) (requests for proposal),
 - academic publications relevant to the problem,
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
@@ -173,7 +173,7 @@ Please include here
 
 ## Referral Program (optional) :moneybag:
 
-You can find more information about the program [here](../README.md#moneybag-referral-program).
+You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
 
 - **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
 - **Payment Address:** Polkadot/Kusama (USDT/USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDT))
