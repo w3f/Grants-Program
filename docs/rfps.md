@@ -24,9 +24,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
     <b>🟢 Open:</b> We are looking for (additional) teams to implement this.
   </summary>
 
-| RFP | Last Updated |
-| :-- | :----------: |
-| [ISO_20022.md](RFPs/ISO_20022.md) | 12.10.2023 |  
+There are currently no open RFPs. Please check back later.
 
 </details>
 
@@ -46,6 +44,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [IDE_for_ink_Smart_Contracts.md](RFPs/IDE_for_ink_Smart_Contracts.md) | 20.09.2023 |
 | [implementation-benchmarking.md](RFPs/implementation-benchmarking.md) | 20.09.2023 |
 | [ink!_smart_contract_block_explorer.md](RFPs/ink_smart_contract_block_explorer.md) | 20.09.2023 |
+| [ISO_20022.md](RFPs/ISO_20022.md) | 21.01.2025 |  
 | [ISO_8583.md](RFPs/ISO_8583.md) | 20.09.2023 |
 | [move_smart_contract_pallet.md](RFPs/move_smart_contract_pallet.md) | 02.08.2023 |
 | [polkadot-protocol_conformance_tests.md](RFPs/polkadot-protocol_conformance_tests.md) | 21.09.2023 |
