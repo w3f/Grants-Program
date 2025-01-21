@@ -44,7 +44,6 @@ There are currently no open RFPs. Please check back later.
 | [IDE_for_ink_Smart_Contracts.md](RFPs/IDE_for_ink_Smart_Contracts.md) | 20.09.2023 |
 | [implementation-benchmarking.md](RFPs/implementation-benchmarking.md) | 20.09.2023 |
 | [ink!_smart_contract_block_explorer.md](RFPs/ink_smart_contract_block_explorer.md) | 20.09.2023 |
-| [ISO_20022.md](RFPs/ISO_20022.md) | 21.01.2025 |  
 | [ISO_8583.md](RFPs/ISO_8583.md) | 20.09.2023 |
 | [move_smart_contract_pallet.md](RFPs/move_smart_contract_pallet.md) | 02.08.2023 |
 | [polkadot-protocol_conformance_tests.md](RFPs/polkadot-protocol_conformance_tests.md) | 21.09.2023 |
@@ -72,6 +71,7 @@ There are currently no open RFPs. Please check back later.
 | [epassport-zk-validation.md](RFPs/epassport-zk-validation.md) | 21.03.2023 |
 | [formal_guarantees_for_grandpa.md](RFPs/formal_guarantees_for_grandpa.md) | 15.10.2024 |
 | [grant_management_webapp.md](RFPs/grant_management_webapp.md) | 25.09.2023 |
+| [ISO_20022.md](RFPs/ISO_20022.md) | 21.01.2025 |  
 | [jsonrpsee-proxy-support.md](RFPs/jsonrpsee-proxy-support.md) | 31.01.2024 |
 | [ksm-tipping-button.md](RFPs/ksm-tipping-button.md) | 20.07.2021 |  
 | [multi-chain-block-explorer.md](RFPs/multi-chain-block-explorer.md) | 27.09.2023 |
