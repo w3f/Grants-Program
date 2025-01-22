@@ -29,7 +29,7 @@ Help us locate your project in the Polkadot/Kusama landscape and what problems i
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 - What need(s) does your project meet?
 - How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Polkadot/Kusama ecosystem?
+- Are there any other projects similar to yours in the Polkadot/Kusama ecosystem? Make sure to at least check the [Polkadot Forum](https://forum.polkadot.network/), the [wiki's Tech Stack doc](https://wiki.polkadot.network/docs/build-open-source) and [OpenGov](https://polkadot.subsquare.io/referenda?status=executed&is_treasury=true).
   - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
   - If not, please indicate why such a project might not have been possible, successful, or attempted. 
 - Are there any projects similar to yours in related ecosystems? 
