@@ -3,7 +3,7 @@
 - **Team Name:** My AI
 - **Payment Address:** Fiat 05.02.2024, 10:41 (CET)
 - **Level:** 2 
-
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/1340#issuecomment-2583612024)
 
 ## Project Overview :page_facing_up:
 
