@@ -15,20 +15,28 @@ Staking Rewards proposes a comprehensive research initiative to enhance Polkadot
 
 **Objective:** Develop a comprehensive, data-driven framework to rank validators for the Polkadot network, which will form the foundation for selecting the Top 16 Decentralized Nodes (DNs) from the Polkadot Decentralized Nodes Program for the Default Nomination Pool in the Stake App.
 
-   ● **Deliverables for Milestone 1:**
 
-   ◦  List of metrics, categorized into:
-       □ **Performance and Reliability:** Uptime, block production efficiency, latency, slash history.
-       □ **Staking and Rewards:** Commission rate, APY, minimum stake requirement.
-       □ **Reputation and Trust:** Identity verification, slash-free period, reputation.
-       □ **Decentralization and Inclusion:** Geographical distribution, operator diversity.
-       □ **Technical Setup:** Hardware specifications, client version.
-       □ **Engagement and Transparency:** Governance participation, validator communication.
-       □ **Financial and Risk:** Stake distribution, oversaturation risk, fee stability.
-    ◦  Analysis of on-chain and off-chain data sources.
-    ◦  Preliminary scoring model for ranking validators based on weighted metrics.
-    ◦  A ranked list of the **Top 16 Decentralized Nodes (DNs)** for inclusion in the Default Nomination Pool.
-    ◦  Results will be published in the form of a **Research Report**.
+**Milestone 1: Research & Methodology Development**
+**Objective:** Develop a comprehensive, data-driven framework to rank validators for the Polkadot network, which will form the foundation for selecting the Top 16 Decentralized Nodes (DNs) from the Polkadot Decentralized Nodes Program for the Default Nomination Pool in the Stake App.
+
+
+**Deliverables for Milestone 1:**
+| Number  | Deliverable       | Specification                                                                                                |
+| ------- | ----------------- | ------------------------------------------------------------------------------------------------------------ |
+| 0.      | Article           | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant).   |
+|         |                   | (Content, language, and medium should reflect your target audience described above.)                         |
+| 1.      | Metrics           | List of metrics, categorized into:                                                                           |
+|         |                   |       **Performance and Reliability:** Uptime, block production efficiency, latency, slash history.          |
+|         |                   |       **Staking and Rewards:** Commission rate, APY, minimum stake requirement.                              |
+|         |                   |       **Reputation and Trust:** Identity verification, slash-free period, reputation.                        |
+|         |                   |       **Decentralization and Inclusion:** Geographical distribution, operator diversity.                     |
+|         |                   |       **Technical Setup:** Hardware specifications, client version.                                          |
+|         |                   |       **Engagement and Transparency:** Governance participation, validator communication.                    |
+|         |                   |       **Financial and Risk:** Stake distribution, oversaturation risk, fee stability.                        |
+| 2.      | Data Sources      | Analysis of on-chain and off-chain data sources.                                                             |
+| 3.      | Validator Scoring | Preliminary scoring model for ranking validators based on weighted metrics.                                  |
+| 4.      | DN Selection      | A ranked list of the **Top 16 Decentralized Nodes (DNs)** for inclusion in the Default Nomination Pool.      |
+| 5.      | Research Report   | Results will be published in the form of a **Research Report**.                                              |
 
 
 **Milestone 2: Staging and Testing**
