@@ -1,9 +1,9 @@
 # # DOT Cashback and Rewards from Top Retailers
-
-- **Team Name:** Bring
-- **Payment Details:**
-        -  DOT: 0x6F668425835B575cDc14866aF9b62738C9E524AE
-        -   Payment: email (29.12.24) 
+-   **Team Name:**  BRING WEB3 LTD
+-   **Payment Details:**
+    -   **DOT**: Polkadot address: 1emKGNTpcujBzNck3An1vmcYNLuJM2nvNDn4xr2rrDsdQcq 
+    -   **Payment**: Fiat payment 29.12.2024, 1:48
+    - **AssetHub address**: 1emKGNTpcujBzNck3An1vmcYNLuJM2nvNDn4xr2rrDsdQcq (USDC)
 - **Level:** 3
 
 ## Project Overview
@@ -41,7 +41,7 @@ and the ecosystem as a whole.
 
 ### Project Details
 
-- [Mockups and UIs](https://www.figma.com/design/GNDOOYeSslLef4xkzfnE3A/Crypto-Cashback-Template-%28Polkadot%29?node-id=0-1&t=5NC34JArcLNp2KAB-1) (please see 5 pages on Figma) 
+-   [Mockups and UIs](https://www.figma.com/design/GNDOOYeSslLef4xkzfnE3A/Crypto-Cashback-Template-%28Polkadot%29?node-id=0-1&t=5NC34JArcLNp2KAB-1) (please see 5 pages on Figma) 
 - [API specifications of the core functionality](https://bringweb3.atlassian.net/wiki/external/M2YzOWI5OTA1NjZkNDZmOWI1MGQ2ZWJkMDg0MTk5Mjk)
 - [Cashback Portal Page Specification](https://bringweb3.atlassian.net/wiki/external/ZjdlZjhjZWU5NzdhNDUyNTk4NWQ4ZDk1YzJjNGY3OWM)
 - [Chrome-extension-kit](https://www.npmjs.com/package/@bringweb3/chrome-extension-kit?activeTab=readme#table-of-content)
@@ -173,16 +173,17 @@ We've attached links to previous interface and mock-ups on the Figma files and p
 
 ## Development Roadmap 
 ### Overview
-Total Estimated Duration: 4 months
-Full-Time Equivalent (FTE): 2.5 FTE
-Total Costs: 75,000 USD
-DOT %: 50% - DOT, 50% - USD
+-   **Total Estimated Duration:**  4 months
+-   **Full-Time Equivalent (FTE):**  2.5 FTE
+-   **Total Costs:**  55,000 USD 
+-   **DOT %:**  50% payment in vested DOT
 
-**Milestone 1 — Polkadot Integration: Plan and Research**
+### **Milestone 1 — Polkadot Integration: Plan and Research**
 
 **Estimated Duration:** 1 month  
 **FTE:** 0.5  
-**Costs:** $7000 USD  
+**Costs:** $7000 USD
+
 **Overview:** Conduct a research on the Polkadot and Kusama ecosystems to establish the best approach for implementing DOT cashback and DOT rewards functionality, and structuring the system for seamless integration.
 
 | Number | Deliverable | Specification |
@@ -197,7 +198,8 @@ DOT %: 50% - DOT, 50% - USD
 
 **Estimated Duration:** 1 month  
 **FTE:** 1.0  
-**Costs:** $12,000 USD  
+**Costs:** $12,000 USD
+
 **Overview:** Design the technical architecture of the DOT cashback, with a focus on Gate.io integration and enhancing user functionalities.
 
 | Number | Deliverable | Specification |
@@ -209,33 +211,19 @@ DOT %: 50% - DOT, 50% - USD
 | 2. | Cashback Token Selection| enable cashback in multiple Polkadot tokens for the partner wallet to offer |
 | 3. | Search Feature | enhanced brand search and offer filtering within the wallet|
 
-### **Milestone 3 — Business Development: Partner Wallet Collaboration**
-
-**Estimated Duration:** 1 month  
-**FTE:** 1.5  
-**Costs:** $20,000 USD  
- **Overview:** Secure a partnership with a Polkadot wallet and collaboratively design the user interface (UI) to align with the wallet’s functionality and branding.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | MIT|
-| **0b.** | Documentation | 1. Signed agreement with the partner wallet 2. Access to the prototype - Figma file with all UI designs of the partner wallet brand 3. A video of the functional prototype showing the UI/UX designs in action  |
-| **0c.** | Testing and Testing Guide | functional UI demo|
-| 1. | Partnership Agreement | 1. Identify and engage with a Polkadot wallet partner 2. Sign a collaboration agreement |
-| 2. | UI Design Development | Work closely with the partner wallet to design all user interfaces, including: 1. Cashback Portal 2. Cashbach Popup (Chrome extension)|
-
-### **Milestone 4 — Development, Integration and QA**
+### **Milestone 3 — Development, Integration and QA**
 
 **Estimated Duration:** 1 month  
 **FTE:** 2  
 **Costs:** $36,000 USD
+
  **Overview:** Develop, integrate, and test the DOT cashback system with the partner wallet, ensuring a fully functional product ready for deployment.
  
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT|
 | **0b.** | Documentation | 1. A signed letter by the partner wallet approving the completion of the development 2. Walkthrough Videos of the: Portal + Chrome Extension + Claim process demo mp4 +  Backend API - Components, Functionality of Chrome extension - via Postman + Presenting the UI 3. Detailed Documentation - open source (Chrome extension code, UIs and APIs): API Docs + NPM package for integrating popup + Cashback Portal Integration docs + UI Breakdown 4.User guides to the partner wallet for testing: QA 1_User guide for testing + QA 2_SOP |
-| **0c.** | Testing and Testing Guide | a public link showing the DOT cashback feature in the partner wallet|
+| **0c.** | Testing and Testing Guide | 1. A public link showing the DOT cashback feature in the partner wallet 2. A detailed user-facing guide showcasing the cashback integration step by step including screenshots and explanations on the various options|
 | **0d.** | Article | We will publish an article that explains what was achieved as part of the grant|
 | 1. | Development | Build and integrate the designed cashback functionalities, including backend support and APIs |
 | 2. | QA | Testing all components, UI functionality and responsiveness |
@@ -264,19 +252,8 @@ We strongly believe this will be a strong company as we see from market and we p
 Technical Overview:
 
 **Diverse & Scalable vs. Single Integration**  
-Bring: Open source - **designed to be used by any Polkadot builder**  
+Bring: Open source - **designed to be used by any Polkadot builder**
 Raise: Native integration - limited to one - Polkadot app
-
-**Architecture**  
-    1.Versatile Infrastructure for DOT Rewards: a comprehensive infrastructure designed to support various DOT reward types, with cashback rewards as the first of many applications.  
-    2.Our codebase is open source MIT license, enabling security audits, comprehensive RESTful API and community contributions.  
-    3.Our system includes a built-in revenue-sharing mechanism, ensuring a seamless revenue cut for the Polkadot builder.
-
-**Performance Optimisation mechanism**  
-    AB Testing, Reporting, Analytics
-
-**Support Multiple Tokens**  
-Bring enables wallets to reward their users with a variety of Polkadot tokens, rather than a one limited offer, so the user can choose how they'd like to get their rewards
     
 **Quick & Easy Integration**  
     1. A ready made white label iFrame template to be integrated and adjusted to the wallet's brand, as quickly as 'Plug-and-Play'  
@@ -287,3 +264,14 @@ Bring enables wallets to reward their users with a variety of Polkadot tokens, r
     1. Powerful popup offerings while browsing (Chrome extension)  
     2. Wallet's portal - users can browse through the offering via a dedicated section within the wallet (websites/native apps) - engage with the wallet  
     3. Organic mobile experience
+
+**Architecture**  
+1. Versatile Infrastructure for DOT Rewards: a comprehensive infrastructure designed to support various DOT reward types, with cashback rewards as the first of many applications.  
+2. Our codebase is open source MIT license, enabling security audits, comprehensive RESTful API and community contributions.  
+3. Our system includes a built-in revenue-sharing mechanism, ensuring a seamless revenue cut for the Polkadot builder.
+
+**Performance Optimisation mechanism**  
+    AB Testing, Reporting, Analytics
+
+**Support Multiple Tokens**  
+Bring enables wallets to reward their users with a variety of Polkadot tokens, rather than a one limited offer, so the user can choose how they'd like to get their rewards
