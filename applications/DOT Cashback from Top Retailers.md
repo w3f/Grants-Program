@@ -5,7 +5,6 @@
     -   **Payment**: Fiat payment 29.12.2024, 1:48
     - **AssetHub address**: 1emKGNTpcujBzNck3An1vmcYNLuJM2nvNDn4xr2rrDsdQcq (USDC)
 - **Level:** 3
-- **Total_milestones:** 3
 
 ## Project Overview
 
