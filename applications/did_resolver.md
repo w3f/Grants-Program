@@ -4,7 +4,7 @@
 - **Payment Details:**
     - **DOT**: 5HHJX1Nq3f6QH8HGxnCemyBQ4eAcpUwmKoLMw5AvboavPfrh
     - **Payment**: AssetHub/USDC: 5HHJX1Nq3f6QH8HGxnCemyBQ4eAcpUwmKoLMw5AvboavPfrh
-- **Level** 2
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
