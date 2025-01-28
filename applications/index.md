@@ -47,12 +47,22 @@ Besides, **there is a clear difference between an application being accepted and
   - [🏄 Wave 1 - Q1 2019](#-wave-1---q1-2019)
 
 
+## 2025
+
+### 🏄 Wave 25 - Q1 2025
+
+| Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
+| :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
+| [ChainSupport Labs](https://github.com/ChainSupport)             | [eliza-plugin-dot](./eliza-plugin-dot.md)       | [GitHub](https://github.com/ChainSupport/eliza-plugin-dot.git) |    ☐       |       ☐       |     ☐      |
+
+[🔝](#top)
+
 ## 2024
 
 ### 🏄 Wave 24 - Q4 2024
 
-| Team                                                               | Project                                                                                                | Link                                       | Terminated | First Delivery | Completed  |
-| :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
+| Team                          | Project                                         | Link                                       | Terminated | First Delivery | Completed  |
+| :-----------------------------| :-----------------------------------------------| :------------------------------------------| :--------: | :------------: | :--------: |
 | [hack-ink](https://linktr.ee/aurevoirxavier)                       | [Polkadot Runtime Releaser](./polkadot-runtime-releaser.md)                     | [GitHub](https://github.com/AurevoirXavier)                 | ☐          |        ☒       |      ☒      |
 | [Coong Crafts](https://github.com/CoongCrafts)                       | [typink](./typink.md)                     | [GitHub](https://github.com/CoongCrafts)                 | ☐          |        ☒       |      ☐      |
 | [Tuguldur Baigalmaa](https://philoniare.com/about)                       | [Bison](./bison.md)                     | [GitHub](https://github.com/philoniare)                 | ☐          |        ☐       |      ☐      |
