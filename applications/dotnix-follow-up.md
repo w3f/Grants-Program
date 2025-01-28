@@ -156,7 +156,7 @@ We initially applied for a different follow-up grant and received valuable feedb
 
 - **Total Estimated Duration:** tba months
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** tba USD
+- **Total Costs:** 30,000 USD
 - **DOT %:** 50%
 
 ### Milestone 1: Usability, Security
