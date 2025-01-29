@@ -96,7 +96,7 @@ Milestone 1 is the only Research Development Milestone. For future milestones, i
 
 - **Estimated duration:** 2 month
 - **FTE:**  2
-- **Costs:** 15,000 Eur
+- **Costs:** 15,000 USD
 
 **Objective:** Develop a comprehensive, data-driven framework to rank validators for the Polkadot network, which will form the foundation for selecting the Top 16 Decentralized Nodes (DNs) from the Polkadot Decentralized Nodes Program for the Default Nomination Pool in the Stake App.
 
