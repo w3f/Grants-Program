@@ -89,7 +89,7 @@ Milestone 1 is the only Research Development Milestone. For future milestones, i
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 15.000 Euro
+- **Total Costs:** 15.000 USD
 
 
 ### Milestone 1 Research & Methodology Development
