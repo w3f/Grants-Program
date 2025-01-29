@@ -35,7 +35,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [HydraDX Grants and Bounties](https://immunefi.com/bug-bounty/hydration/information/)
 - [ink!ubator](https://use.ink/ubator/)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
-- [Moondance Labs Ecosysytem Funding Program](https://www.moondancelabs.com/ecosystem-grants-w3f)
+- [Moondance Labs Ecosystem Funding Program](https://www.moondancelabs.com/ecosystem-grants-w3f)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Polkadot Open Source Developer Grants Bounty](https://github.com/PolkadotOpenSourceGrants)
 - [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
