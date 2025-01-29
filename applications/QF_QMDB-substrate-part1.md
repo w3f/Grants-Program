@@ -1,8 +1,9 @@
-# Substrate - QMDB Integration Part 1
+# Substrate - QMDB Core Integration for Substrate Storage Enhancement
 
 - **Team Name:** Quantum Fusion
 - **Payment Details:** 
-  - **DOT:** [Account details to be provided securely]
+  - **DOT:** 5DNqyUcanQhL5Fy2TpzDAc8Ac6DcYt8sjpLFBgv7kuWmaLXc
+  - **USDC:** 12K97oseeBxoWnyYRU3DJkxKTiDGFBh1pK4jLyuUJzYHkqdD
   - Tax number: PT312117116
 - **Level:** 2
 
@@ -10,7 +11,8 @@
 
 ### Overview
 
-We are planning to integrate QMDB to Substrate for Parachains. The main goal is to increase the speed of transactions verification with QMDB. This is directly connected to the ecosystem since Polkadot has plans to integrate QMDB to Substrate.
+We are focusing on QMDB integration as the proof storage engine within Substrate (https://github.com/QuantumFusion-network/spec/issues/16). 
+This is the first step of our blockchain state storage research and optimisation - https://github.com/QuantumFusion-network/spec/issues/13
 
 ### Project Details
 
@@ -35,8 +37,8 @@ What this project will not provide:
 ### Ecosystem Fit
 
 - **Target Audience:** All parachains for this iteration. We are avoiding the problem of migration as it won't be helpful for Polkadot L1 at this moment.
-- **Project Fit:** The project directly integrates into Substrate's core infrastructure
-- **Similar Projects:** Yes, Polkadot and QMDB team could do the same in the future
+- **Project Fit:** Polkadot’s focus on modular and scalable blockchain infrastructure makes it an ideal candidate for advanced storage optimisations like QMDB integration. By enhancing storage efficiency, this proposal aligns with Polkadot’s long-term vision of high-performance, decentralized systems.
+- **Similar Projects:** 
 
 ## Team :busts_in_silhouette:
 
@@ -51,7 +53,7 @@ What this project will not provide:
 
 ### Legal Structure
 - **Registered Address:** Travessa Eugenia Brandao de Melo 273A, Santa Cruz, Madeira, Portugal
-- **Registered Legal Entity:** Private Entrepreneur Sergei Cherepanov
+- **Registered Legal Entity:** Private Entrepreneur Sergei Cherepanov, PT312117116
 
 ### Team's experience
 Previous Polkadot grants:
@@ -80,14 +82,15 @@ Currently in initial development phase with:
 
 - **Total Estimated Duration:** 7 weeks
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** 5,000 DOT
-- **DOT %:** 100%
+- **Total Costs:** 30,000 USD
+- **DOT %:** 50%
+- **USDC %:** 50%
 
 ### Milestone 1 — QMDB Core Integration
 
 - **Estimated Duration:** 3 weeks
 - **FTE:** 2
-- **Costs:** 2,000 DOT
+- **Costs:** 12,000 USD
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
@@ -104,7 +107,7 @@ Currently in initial development phase with:
 
 - **Estimated Duration:** 2 weeks
 - **FTE:** 2
-- **Costs:** 1,500 DOT
+- **Costs:** 9,000 USD
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
@@ -120,7 +123,7 @@ Currently in initial development phase with:
 
 - **Estimated Duration:** 1 week
 - **FTE:** 2
-- **Costs:** 750 DOT
+- **Costs:** 4,500 USD
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
@@ -136,7 +139,7 @@ Currently in initial development phase with:
 
 - **Estimated Duration:** 1 week
 - **FTE:** 2
-- **Costs:** 750 DOT
+- **Costs:** 4,500 USD
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
