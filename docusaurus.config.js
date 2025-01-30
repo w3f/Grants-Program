@@ -35,8 +35,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        // 'Looking for advice on how to fund your project? Apply for Office Hours <a target="_blank" rel="noopener noreferrer" href="https://grants.web3.foundation/docs/office-hours">here!</a>',
-        'Looking for advice on how to fund your project? Apply for Office Hours <a href="https://grants.web3.foundation/docs/office-hours">here!</a>',
+        'For updates on our ongoing programs and initiatives, check out <a target="_blank" rel="noopener noreferrer" href="https://medium.com/web3foundation/web3-foundation-ecodev-wave-24-recipients-e15adea23002">our latest blog post!</a>',
       backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
