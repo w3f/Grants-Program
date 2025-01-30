@@ -11,7 +11,7 @@
 
 ### Overview
 
-We are focusing on QMDB integration as the proof storage engine within Substrate (https://github.com/QuantumFusion-network/spec/issues/16). 
+We are focusing on QMDB integration as the proof storage engine within Substrate   (https://github.com/QuantumFusion-network/spec/issues/16). 
 This is the first step of our blockchain state storage research and optimisation  -  https://github.com/QuantumFusion-network/spec/issues/13
 
 ### Project Details
