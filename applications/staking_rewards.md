@@ -11,9 +11,22 @@ Staking Rewards proposes a comprehensive research initiative to enhance Polkadot
 
 ### Project Details
 
-**Milestone 1: Research & Methodology Development**
+### Milestone 1 Research & Methodology Development
 
 **Objective:** Develop a comprehensive, data-driven framework to rank validators for the Polkadot network, which will form the foundation for selecting the Top 16 Decentralized Nodes (DNs) from the Polkadot Decentralized Nodes Program for the Default Nomination Pool in the Stake App.
+
+
+**Deliverables for Milestone 1:**
+
+| Number  | Deliverable | Specification |
+| ------- | ---------- | ------------- |
+| 0.      | Article    | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). The article will include: |
+|         |            | - **Metrics:** Performance & Reliability (uptime, block production efficiency, latency, slash history), Staking & Rewards (commission rate, APY, minimum stake), Reputation & Trust (identity verification, slash-free period, reputation), Decentralization & Inclusion (geographical distribution, operator diversity), Technical Setup (hardware specs, client version), Engagement & Transparency (governance participation, validator communication), Financial & Risk (stake distribution, oversaturation risk, fee stability). |
+|         |            | - **Data Sources:** Analysis of on-chain and off-chain data sources. |
+|         |            | - **Validator Scoring:** Preliminary scoring model for ranking validators based on weighted metrics. |
+|         |            | - **DN Selection:** A ranked list of the **Top 16 Decentralized Nodes (DNs)** for inclusion in the Default Nomination Pool. |
+|         |            | - **Research Report:** Results published in the form of a research report. |
+
 
 
 **Milestone 2: Staging and Testing**
@@ -92,26 +105,6 @@ Milestone 1 is the only Research Development Milestone. For future milestones, i
 - **Total Costs:** 15.000 USD
 - **DOT %:** 50 %
 
-
-
-### Milestone 1 Research & Methodology Development
-
-- **Estimated duration:** 2 month
-- **FTE:**  2
-- **Costs:** 15,000 USD
-
-**Objective:** Develop a comprehensive, data-driven framework to rank validators for the Polkadot network, which will form the foundation for selecting the Top 16 Decentralized Nodes (DNs) from the Polkadot Decentralized Nodes Program for the Default Nomination Pool in the Stake App.
-
-
-**Deliverables for Milestone 1:**
-| Number  | Deliverable       | Specification                                                                                                |
-| ------- | ----------------- | ------------------------------------------------------------------------------------------------------------ |
-| 0.      | Article           | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.)  |
-| 1.      | Metrics           | List of metrics, categorized into: **Performance and Reliability:** Uptime, block production efficiency, latency, slash history. **Staking and Rewards:** Commission rate, APY, minimum stake requirement. **Reputation and Trust:** Identity verification, slash-free period, reputation. **Decentralization and Inclusion:** Geographical distribution, operator diversity. **Technical Setup:** Hardware specifications, client version. **Engagement and Transparency:** Governance participation, validator communication. **Financial and Risk:** Stake distribution, oversaturation risk, fee stability.                                                                                  |
-| 2.      | Data Sources      | Analysis of on-chain and off-chain data sources.                                                             |
-| 3.      | Validator Scoring | Preliminary scoring model for ranking validators based on weighted metrics.                                  |
-| 4.      | DN Selection      | A ranked list of the **Top 16 Decentralized Nodes (DNs)** for inclusion in the Default Nomination Pool.      |
-| 5.      | Research Report   | Results will be published in the form of a **Research Report**.                                              |
 
 ## Future Plans
 Staking Rewards aims to integrate and push Polkadot Staking via the Stake App.
