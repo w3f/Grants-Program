@@ -95,6 +95,16 @@ Milestone 1 is the only Research Development Milestone. For future milestones, i
 - **Total Costs:** 15.000 USD
 - **DOT %:** 50 %
 
+**Deliverables for Milestone 1:**
+
+| Number  | Deliverable | Specification |
+| ------- | ---------- | ------------- |
+| 0.      | Article    | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). The article will include: |
+| 1.      | Metrics | Performance & Reliability (uptime, block production efficiency, latency, slash history), Staking & Rewards (commission rate, APY, minimum stake), Reputation & Trust (identity verification, slash-free period, reputation), Decentralization & Inclusion (geographical distribution, operator diversity), Technical Setup (hardware specs, client version), Engagement & Transparency (governance participation, validator communication), Financial & Risk (stake distribution, oversaturation risk, fee stability). |
+| 2.      | Data Sources | Analysis of on-chain and off-chain data sources. |
+| 3.      | Validator Scoring | Preliminary scoring model for ranking validators based on weighted metrics. |
+| 4.      | DN Selection | A ranked list of the **Top 16 Decentralized Nodes (DNs)** for inclusion in the Default Nomination Pool. |
+| 5.      | Research Report | Results published in the form of a research report. |
 
 ## Future Plans
 Staking Rewards aims to integrate and push Polkadot Staking via the Stake App.
