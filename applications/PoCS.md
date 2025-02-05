@@ -33,7 +33,7 @@ In this landscape of ever-evolving blockchain technology we are poised to reshap
 
 #### Prior work - Research
 
-Our [PoCS research](https://jobyreuben.in/JOURNALS/pocs) is documented. We have also included [simulations](https://jobyreuben.in/JOURNALS/pocs#pocs-simulations-ethereum-pocs) on the research document to show how PoCS would behave if Ethereum used PoCS from its genesis block.
+Our [PoCS research](https://auguth.org/PRESS/pocs) is documented. We have also included [simulations](https://github.com/auguth/dot_org/tree/ef242d1703ba790d0aff12bf01f1796ce3156d66/assets/pocs/simulation/pocs) on the research document to show how PoCS would behave if Ethereum used PoCS from its genesis block.
 
 #### Substrate implementation Design
 
@@ -67,7 +67,7 @@ This function allows a developer to claim their rewards from the Validator Rewar
 
 <b> Protocol design </b> <br />
 <p align="center">
-  <img src="https://jobyreuben.in/assets/pocs/pocs.jpeg" />
+  <img src="https://raw.githubusercontent.com/auguth/dot_org/refs/heads/gh-pages/assets/pocs/images/pocs.jpeg" />
 </p>
 
 #### What your project is not or will not provide or implement
