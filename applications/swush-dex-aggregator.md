@@ -271,19 +271,6 @@ Note: for parachain DEX integration we will do for Hydration only as of now.
 | 8 | **User Transaction History** | (as mentioned above) |
 
 
-
-## Future Plans
-
-- **Long-term Maintenance and Development Funding:**
-    - With our estimated budget, we plan for the platform to be self-sustainable for maintenance and further development until it achieves product-market fit (PMF).
-    - Should we see significant user traction after Plaza’s full launch, especially with smart contract support, we will seek additional funding.
-- **Short-term Strategy:**
-    - Our initial focus is on a beautiful UX and strong branding to build user confidence in our platform. We recognize that trust-building will take time, as users may be cautious initially. To attract new users, we plan to launch NFTs and incentive programs that encourage engagement and usage.
-- **Long-term Vision:**
-    - Establish Swush as a trusted platform and cross-chain transaction hub for Polkadot.
-    - Achieve self-sustainability through revenue streams such as trading fees. Since cross-chain transfers incur some fees, we’re also exploring additional revenue streams.
-
-
 ## Future Plans
 
 - **Long-term Maintenance and Development Funding:**
