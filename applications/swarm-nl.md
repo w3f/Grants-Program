@@ -1,6 +1,8 @@
 # SwarmNL
 - **Team Name:** Algorealm
-- **Payment Address:** 14pG7HieCjNk2hZ4X2YvxkbpAXs9oCeW8aNZcD7tD2tpaJT9 (Polkadot AssetHub)
+- **Payment Details:**
+   - **DOT:** 14pG7HieCjNk2hZ4X2YvxkbpAXs9oCeW8aNZcD7tD2tpaJT9
+   - **Payment Address:** 14G7SjRE2TbWVH2yXNe2uwYU1H8Q4c4hyWk892naB3eX7KTy (Polkadot AssetHub)
 - **Level:** 3
 
 ## Project Overview :page_facing_up:
