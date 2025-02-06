@@ -17,20 +17,17 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 **Tagline**
 
-Empowering AI Development with Decentralized, Data Annotation Services on Polkadot.
+Decentralized, Data Annotation Services for AI on Polkadot.
 
 **Brief Description**
 
-The **Decentralized Data Annotation Platform (DAP)** is a blockchain-powered service built on Polkadot, designed to provide high-quality, privacy-preserving data annotation for AI development. The platform connects AI companies and researchers with annotators who perform tasks like labeling images, tagging text, or categorizing audio. Annotators earn rewards for their work, while data providers receive accurately annotated datasets to train and improve AI models. By leveraging Polkadot's interoperability and scalability, DAP ensures a transparent, fair, and efficient annotation process, while advanced cryptographic tools like zero-knowledge proofs (ZKPs) protect data privacy and verify annotation quality.
+The **Decentralized Data Annotation Platform (DAP)** is a blockchain-powered service built on Polkadot that connects AI companies and researchers with annotators who perform tasks like labeling images, tagging text, or categorizing audio. Annotators earn rewards for their work, while data providers receive accurately annotated datasets to train and improve AI models. By leveraging Polkadot’s interoperability and scalability, DAP ensures a transparent, fair, and efficient annotation process. Advanced cryptographic tools like zero-knowledge proofs (ZKPs) protect data privacy and verify annotation quality, making DAP a trusted solution for ethical AI development.
 
 **Integration into Polkadot**
-DAP integrates into the Polkadot ecosystem by:
-Utilizing Substrate for building custom blockchain logic and smart contracts.
-Leveraging Polkadot's parachain architecture for scalability and cross-chain interoperability.
-Using Polkadot's native token (DOT) for rewards and transactions, with potential integration of other parachain assets.
-Employing off-chain workers for secure, privacy-preserving data processing.
+DAP integrates into the Polkadot ecosystem by leveraging Substrate for custom blockchain logic, parachains for scalability, and DOT for rewards and transactions. By employing advanced cryptographic tools like zero-knowledge proofs (ZKPs) and off-chain workers, DAP ensures privacy-preserving data processing and cross-chain interoperability. This makes DAP a valuable addition to Polkadot’s growing suite of decentralized services, particularly for AI developers and data providers.
+
 **Team Motivation**
-Our team is passionate about creating ethical, decentralized solutions for AI development. We believe that data annotation is a critical yet often overlooked component of AI, and we aim to empower annotators while ensuring data privacy and fairness. By building on Polkadot, we can create a scalable, interoperable platform that aligns with the Web3 vision of user-owned data and decentralized ecosystems.
+Our team is driven by a shared vision of ethical, decentralized AI development. We recognize that data annotation is a critical yet undervalued component of AI, often plagued by issues like underpaid labor and centralized data control. By building DAP on Polkadot, we aim to empower annotators with fair compensation and data providers with high-quality, privacy-preserving datasets. This aligns with the Web3 vision of user-owned data and decentralized ecosystems, creating a more equitable future for AI development.
 
 ### Project Details
 
@@ -82,19 +79,19 @@ Our team is passionate about creating ethical, decentralized solutions for AI de
 ### Ecosystem Fit
 
 **Where and How Does DAP Fit into the Ecosystem?**  
-DAP addresses the growing need for high-quality, ethically sourced data in AI development. It integrates into the Polkadot ecosystem as a decentralized service layer for data annotation, complementing existing parachains and dApps focused on AI, data storage, and privacy.
+DAP addresses the growing demand for high-quality, ethically sourced data in AI development. It integrates into the Polkadot ecosystem as a decentralized service layer for data annotation, complementing existing parachains and dApps focused on AI, data storage, and privacy. By leveraging Polkadot’s interoperability, DAP enables seamless collaboration between AI developers, annotators, and data providers across multiple chains.
 
 **Target Audience**
 
-- **AI Companies and Researchers**: Need annotated datasets for training AI models.
-- **Annotators**: Individuals (gig workers) or communities seeking flexible, rewarding annotation work.
+- **AI Companies and Researchers**: Require accurately annotated datasets for training and improving AI models.
+- **Annotators**:Individuals or communities seeking flexible, rewarding opportunities to contribute to AI development.
 - **Web3 Developers**: Building privacy-focused AI applications on Polkadot.
 
 **Needs Addressed**
 
-- **High-Quality Data Annotation**: AI models require accurately labeled data, which is often expensive and time-consuming to produce.
+- **High-Quality Data Annotation**: AI models depend on accurately labeled data, which is often costly and time-consuming to produce.
 - **Data Privacy**: Traditional annotation platforms centralize data, raising privacy concerns.
-- **Fair Compensation**: Annotators are often underpaid and lack transparency in earnings.
+- **Fair Compensation**: Annotators are frequently underpaid and lack transparency in earnings, which DAP addresses through blockchain-based reward systems.
 
 **Evidence of Need**
 
@@ -112,9 +109,8 @@ DAP is unique in its focus on data annotation as a service, combining privacy-pr
 
 **Similar Projects in Related Ecosystems**
 
-- **Labelbox (Centralized)**: A popular annotation platform but lacks decentralization and privacy features.
-- **Hive (Blockchain-Based)**: Focuses on AI training but does not specialize in annotation services.
-
+- **Labelbox (Centralized)**: A data annotation platform platform that lacks decentralization and privacy features, raising concerns about data security and user control.
+- **Hive (Blockchain-Based)**:  Focuses on AI training but does not specialize in annotation services, limiting its utility for data providers and annotators.
 DAP stands out by leveraging Polkadot's strengths to create a decentralized, privacy-first annotation platform that addresses the limitations of both centralized and blockchain-based alternatives.
 
 ## Team :busts_in_silhouette:
@@ -146,7 +142,7 @@ sunasunday111@gmail.com
 **Mike Boutin**
 
 - **Role**: Full-Stack JavaScript Developer
-- **Experience**: 15 years of expertise in full-stack development, with a passion for innovative technologies and software solutions.
+- **Experience**: 15 years of expertise in full-stack development, 10 years blockchain development expirence with a passion for innovative technologies and software solutions.
 - **Skills**: Proficient in JavaScript, React, React-Native, Node.js, and HTML5 game development.  
   Mike brings a wealth of experience in building scalable, user-friendly applications. His expertise in JavaScript and React is instrumental in developing the platform’s frontend and ensuring a seamless user experience.
 
