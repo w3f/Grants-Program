@@ -100,12 +100,12 @@ Milestone 1 is the only Research Development Milestone. For future milestones, i
 | Number  | Deliverable | Specification |
 | ------- | ---------- | ------------- |
 | 0a.     | Copyright and Licenses | CC BY 4.0 |
-| 0e.     | Article    | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. The article will include: |
-|         |            | - **Metrics:** Performance & Reliability (uptime, block production efficiency, latency, slash history), Staking & Rewards (commission rate, APY, minimum stake), Reputation & Trust (identity verification, slash-free period, reputation), Decentralization & Inclusion (geographical distribution, operator diversity), Technical Setup (hardware specs, client version), Engagement & Transparency (governance participation, validator communication), Financial & Risk (stake distribution, oversaturation risk, fee stability). |
-|         |            | - **Data Sources:** Analysis of on-chain and off-chain data sources. |
-|         |            | - **Validator Scoring:** Preliminary scoring model for ranking validators based on weighted metrics. |
-|         |            | - **DN Selection:** A ranked list of the **Top 16 Decentralized Nodes (DNs)** for inclusion in the Default Nomination Pool. |
-|         |            | - **Research Report:** Results published in the form of a research report. |
+| 1.     | Article    | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. The article will include: |
+| 1a.       |            | - **Metrics:** Performance & Reliability (uptime, block production efficiency, latency, slash history), Staking & Rewards (commission rate, APY, minimum stake), Reputation & Trust (identity verification, slash-free period, reputation), Decentralization & Inclusion (geographical distribution, operator diversity), Technical Setup (hardware specs, client version), Engagement & Transparency (governance participation, validator communication), Financial & Risk (stake distribution, oversaturation risk, fee stability). |
+| 1b.       |            | - **Data Sources:** Analysis of on-chain and off-chain data sources. |
+| 1c.        |            | - **Validator Scoring:** Preliminary scoring model for ranking validators based on weighted metrics. |
+| 1d.        |            | - **DN Selection:** A ranked list of the **Top 16 Decentralized Nodes (DNs)** for inclusion in the Default Nomination Pool. |
+| 2.        | Research Report | Results published in the form of a research report. |
 
 
 ## Future Plans
