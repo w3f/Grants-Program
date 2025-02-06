@@ -18,8 +18,11 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 ### Overview
 
 **Tagline**
+
 Empowering AI Development with Decentralized, Data Annotation Services on Polkadot.
+
 **Brief Description**
+
 The **Decentralized Data Annotation Platform (DAP)** is a blockchain-powered service built on Polkadot, designed to provide high-quality, privacy-preserving data annotation for AI development. The platform connects AI companies and researchers with annotators who perform tasks like labeling images, tagging text, or categorizing audio. Annotators earn rewards for their work, while data providers receive accurately annotated datasets to train and improve AI models. By leveraging Polkadot's interoperability and scalability, DAP ensures a transparent, fair, and efficient annotation process, while advanced cryptographic tools like zero-knowledge proofs (ZKPs) protect data privacy and verify annotation quality.
 
 **Integration into Polkadot**
