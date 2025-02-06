@@ -1,6 +1,4 @@
-# Name of your Project
-
-Decentralized Data Annotation Platform (DAP)
+# Decentralized Data Annotation Platform (DAP)
 
 - **Team Name:** Train AI Group
 - **Payment Details:**
