@@ -143,6 +143,7 @@ There are currently two potential, optional recovery mechanisms available:
 1. **Built-in recovery mechanism in zklogin-pallet**: Each zklogin address can designate a recoverer. Under specific conditions, such as when a zklogin address has been inactive for N hours, the recoverer can send transactions and manage assets on behalf of the zklogin address.
 2. **zklogin + proxy**: Through the proxy pallet, a zklogin address can set up 'delegate' or 'delayed-delegate' accounts. At any time when assets in the zklogin address face potential threats, users can immediately handle their assets securely through the proxy module.
 
+mechanism 1 will be implemented within the scope of this grant.
 
 
 ## Security and Privacy
@@ -267,6 +268,7 @@ This part serves as substrate runtime pallets, consists of two main components:
    1. Transaction entry points for ZK operations
    2. Transaction verification workflow
    3. Maintenance of valid JWK (JSON Web Key) set
+   4. Recovery mechanism
 2. primitive-zklogin
    1. Core type definitions for zkLogin
    2. Zero-knowledge proof verification components
