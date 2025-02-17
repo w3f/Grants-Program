@@ -56,6 +56,8 @@ Besides, **there is a clear difference between an application being accepted and
 | Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
 | :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
 | [ChainSupport Labs](https://github.com/ChainSupport)             | [eliza-plugin-dot](./eliza-plugin-dot.md)       | [GitHub](https://github.com/ChainSupport/eliza-plugin-dot.git) |    ☐       |       ☐       |     ☐      |
+| [TCDT Lab](https://github.com/ChainSupport)             | Blockchain Interoperability through DNS and Asset Discovery       | [GitHub](https://github.com/tcdt-lab) |    ☐       |       ☐       |     ☐      |
+| [Staking Rewards](https://www.stakingrewards.com/)             | [Validator Performance - Research & Methodology Development](./staking_rewards.md)       | [GitHub](https://github.com/stakingrewards) |    ☐       |       ☐       |     ☐      |
 
 [🔝](#top)
 
