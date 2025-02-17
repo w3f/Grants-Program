@@ -63,7 +63,7 @@ Some of the products attract millions of people, [like Privy](https://bingx.com/
 
 ### How Kzero works
 
-![zklogin-mechanism](https://p.ipic.vip/uicx29.png)
+![zklogin-mechanism](https://p.ipic.vip/9ppk9h.png)
 
 (Step 0) We plan to use Groth16 for our protocol’s zkSNARK instantiation, requiring a singular generation of a structured common reference string (CRS) linked to the circuit. A ceremony is conducted to generate the CRS, which is used to produce the proving key in the ZK Proving Service, the verifying key in Project Authority.
 
@@ -124,7 +124,7 @@ This is a Substrate runtime pallet that:
 
 ### KZero Workflow
 
-![KZero workflow](https://p.ipic.vip/ksox66.png)
+![KZero workflow](https://p.ipic.vip/5vptx2.png)
 
 In short, the Kzero process can be broken down into the following steps
 
@@ -133,6 +133,50 @@ In short, the Kzero process can be broken down into the following steps
 3. Utilizing the salt service, the user communicates with the salt server. After verifying their identity through the JWT, they obtain the unique salt associated with their zkAccount, which is essential for the ZKP Generation process and on-chain address calculation.
 4. Utilizing ZKP generation service to efficiently and securely generate zero-knowledge proof, ensuring privacy and security without exposing sensitive information.
 5. Finally, the user assembles the zkLogin transaction, signs it using the ephemeral keypair generated earlier, and then sends the signed transaction to the blockchain for verification, ensuring a secure and seamless login process.
+
+
+
+### Recovery Mechanisms
+
+There are currently two potential, optional recovery mechanisms available:
+
+1. **Built-in recovery mechanism in zklogin-pallet**: Each zklogin address can designate a recoverer. Under specific conditions, such as when a zklogin address has been inactive for N hours, the recoverer can send transactions and manage assets on behalf of the zklogin address.
+2. **zklogin + proxy**: Through the proxy pallet, a zklogin address can set up 'delegate' or 'delayed-delegate' accounts. At any time when assets in the zklogin address face potential threats, users can immediately handle their assets securely through the proxy module.
+
+
+
+## Security and Privacy
+
+**Ephemeral Private Key**
+
+The ephemeral private key remains valid only before the expiration time. If this key is lost, users can simply generate a new ephemeral private key for signing transactions, along with a new ZK proof. However, in cases where the temporary private key is compromised, attackers would still need both the user's salt and a valid ZK proof to access and transfer funds.
+
+The ephemeral private key is stored in the browser's **session storage**, which means that:
+
+- Maintains data only for the duration of a browser session
+- Automatically clears when the browser tab or window is closed
+- Is isolated to a single browser tab/window
+- Provides better security compared to Local Storage for sensitive data
+- Data is never transferred to the server
+
+
+
+**User Salt**
+
+The user salt plays a vital role in both:
+
+- generating ZK proofs
+- deriving zkLogin addresses
+
+While a compromised user salt alone doesn't directly threaten funds, it does create privacy implications. An attacker with access to the user salt could link a user's subject identifier (sub) to their zkLogin address.
+
+
+
+**Salt Server**
+
+The salt server leverages a master seed along with the user's JSON Web Token (JWT) to derive a reproducible salt value for each user and application. The security of the master seed and the derivation algorithm is critical, so the entire computation is executed in a secure environment, such as a Trusted Execution Environment (TEE). This setup ensures that the master seed, which is critically important, is generated within a trusted environment, preventing even administrators from accessing it.
+
+To address potential disaster scenarios, the master seed is divided into multiple encrypted shards. These shards are distributed to a Salt Value Committee, which may consist of community-selected members or esteemed entities like Parity Technologies, the Web3 Foundation, and others. This approach enhances resilience and ensures that no single entity has complete control over the master seed, thus maintaining the integrity and security of the identity-to-address separation.
 
 
 
@@ -236,7 +280,7 @@ This part serves as substrate runtime pallets, consists of two main components:
 | 0d.    | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1      | kzero-runtime             | open source repo                                             |
 | 2      | Tests                     | tests on pallet-zklogin and primitive-zklogin                |
-| 3      | docs                     | A tutorial for how to integrate Kzero into a substrate-based blockchain               |
+| 3      | docs                      | A tutorial for how to integrate Kzero into a substrate-based blockchain |
 
 ## Milestone 3: Salt Service
 
@@ -253,7 +297,7 @@ This part serves as substrate runtime pallets, consists of two main components:
 | 0c.    | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d.    | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1      | Salt Service Code         | We will provide the repository for the Salt Service, along with service guide and testing documentation. |
-| 2      | docs         | A tutorial for how to use the Salt Service. |
+| 2      | docs                      | A tutorial for how to use the Salt Service.                  |
 
 ## Milestone 4: KZero-SDK
 
