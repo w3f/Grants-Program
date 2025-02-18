@@ -237,6 +237,7 @@ Team github:
 - **Total Estimated Duration:** 2 Months
 - **Full-Time Equivalent** (FTE): 4 FTE
 - **Total Costs:** 50,000 USD
+- **DOT %**: 50%
 
 Milestone 1: ZKP Service
 
