@@ -1,6 +1,7 @@
 - **Team Name:** Kzero
 - **Payment Details:**
   - **Payment**: 167Y6kiaPzkVhYs9YM1q4bB987D4eHRLPAKgRqJpxby8Rv2f (USDT)
+  - **Payment**: 167Y6kiaPzkVhYs9YM1q4bB987D4eHRLPAKgRqJpxby8Rv2f (DOT)
 - **Level**: 3
 
 ## Project Overview 📄
