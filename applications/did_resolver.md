@@ -123,16 +123,16 @@ At this moment we have gone only through the research phase, and we have not yet
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
+- **Total Estimated Duration:** 9 weeks
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 30,000 USD
 - **DOT %:** 50%
 
 ### Milestone 1
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 3 weeks
 - **FTE:**  2
-- **Costs:** 30,000 USD
+- **Costs:** 10,000 USD
 
 |  Number | Deliverable                 | Specification                                                                                                                                                   |
 |--------:|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -142,13 +142,40 @@ At this moment we have gone only through the research phase, and we have not yet
 | **0d.** | Docker                      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
 | **0e.** | Article                     | We will publish an **article/workshop** that explains what was done/achieved as part of the grant.                                                              |
 |     1.1 | Specification               | **Written specification** detailing `did:polkadot:` method parameters, structure, and resolution methods.                                                       |
-|     2.1 | Client package              | A client package for retrieving information from any Polkadot-based blockchain that implements the Identity pallet.                                             |
-|     3.1 | Driver implementation       | **Universal Resolver-compatible driver** implementing the resolution of `did:polkadot:`.                                                                        |
-|     3.2 | Resolution testing tools    | **Basic CLI or HTTP interface** for local resolution testing.                                                                                                   |
-|     3.3 | Unit tests                  | **Unit tests** ensuring correct DID Document construction from Polkadot addresses.                                                                              |
-|     4.1 | Integration & Documentation | **Example application** showcasing how an application can use the Polkadot-based DIDs.                                                                          |
-|     5.1 | Marketing & Release         | **Community announcement, tutorials, and best-practice guides** for the final release.                                                                          |
+|     2.1 | Client package              | A javascript client module for retrieving information from any Polkadot-based blockchain that implements the Identity pallet.                                             |
 
+### Milestone 2
+
+- **Estimated duration:** 3 weeks
+- **FTE:**  2
+- **Costs:** 10,000 USD
+
+|  Number | Deliverable                 | Specification                                                                                                                                                   |
+|--------:|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | Apache 2.0                                                                                                                                                      |
+| **0b.** | Documentation               | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the driver, resolver and client package     |
+| **0c.** | Testing and Testing Guide   | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker                      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
+| **0e.** | Article                     | We will publish an **article/workshop** that explains what was done/achieved as part of the grant.                                                              |
+|     1.1 | Driver implementation       | **Universal Resolver-compatible driver** implementing the resolution of `did:polkadot:` and `did:kusama`.                                                                        |
+|     2.1 | Resolution testing tools    | **Basic CLI or HTTP interface** for local resolution testing.                                                                                                   |
+
+### Milestone 3
+
+- **Estimated duration:** 3 weeks
+- **FTE:**  2
+- **Costs:** 10,000 USD
+
+|  Number | Deliverable                 | Specification                                                                                                                                                   |
+|--------:|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | Apache 2.0                                                                                                                                                      |
+| **0b.** | Documentation               | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use the driver, resolver and client package     |
+| **0c.** | Testing and Testing Guide   | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker                      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
+| **0e.** | Article                     | We will publish an **article/workshop** that explains what was done/achieved as part of the grant.                                                              |
+|     1.1 | Unit tests                  | **Unit tests** ensuring correct DID Document construction from Polkadot addresses.                                                                              |
+|     2.1 | Integration & Documentation | **Example application** showcasing how an application can use the Polkadot-based DIDs.                                                                          |
+|     3.1 | Marketing & Release         | **Community announcement, tutorials, and best-practice guides** for the final release.                                                                          |
 
 ## Future Plans
 
