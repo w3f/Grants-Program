@@ -1,12 +1,12 @@
 # NFT Checker
 
-> DQA’s NFT Verification and Checker Tool for Secure Web3 Integration ~ NFT Checker
+> DQA’s NFT Verification and Checker Tool for Secure Web3 Integration ~ [NFT Checker](https://nftchecker.tech)
 
-- **Team Name:** Legal name of your team (e.g. JsonCorp)
+- **Team Name:** [Digital Quantum Association (DQA from now on)](https://DQA.group)
 - **Payment Details:**
   - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
   - **Payment**: In case of payment in **USDC**, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of **fiat** payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and list here the date and time of your email (e.g. Fiat 24.12.1971, 11:59). 
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1, 2 or 3
+- **Level:** 3
 
 > [!IMPORTANT]
 > *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
