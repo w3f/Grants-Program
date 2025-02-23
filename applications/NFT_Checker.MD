@@ -99,40 +99,48 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Raul C. Săraru - Founder | CEO | Owner 
+- Andrei Petri - Lead Developer
+- Sergi Valero - Integrator partner | CEO of [Moonlorian](https://www.moonlorian.com)
+- Adam Noaf - Market analysis and strategic planning support
+- Ovidiu Badila - Lead community advisor
+- Zack Roberts -  Serial Entrepreneur | Corporate Lawyer
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Raul C. Săraru
+- **Contact Email:** raul@dqa.group
+- **Website:** [https://DQA.group](https://DQA.group ) | [https://NFTChecker.Tech](https://NFTChecker.Tech)
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** <span style="color:red">Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)</span>
+- **Registered Legal Entity:** DIGITAL QUANTUM ASSOCIATION S.R.L.
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+- *Raul C. Săraru*: Serial entrepreneur with 20+ years of experience in various industries.
+- *Andrei Petri*: A Senior Software Engineer with extensive expertise in applications and the main Developer behind the NFT Checker. 
+- *Sergi Valero* and Moonlorian serve as the Blockchain Integrator for our NFT Checker software.
+- *Adam Noaf*: Blockchain & Web3 | Advisor | Ambassador.
+- *Ovidiu Badila*: Social Campaigns, building and maintaining community.
+- *Zack Roberts*: Zach’s main role is to manage our Legal Department, Intellectual Property, and Patents.
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
+- [https://github.com/Raul-DQA/mx-assets](https://github.com/Raul-DQA/mx-assets)
+- <span style="color:red"> current NFT checker github - AND any other public interesting Andrei Petri github</span>
+- [https://github.com/Moonlorian/vesting-dapp](https://github.com/Moonlorian/vesting-dapp)
+- [https://github.com/Moonlorian/TurboDeFi](https://github.com/Moonlorian/TurboDeFi)
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+### Team LinkedIn Profiles
 
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- [Raul C. Săraru | LinkedIn](https://www.linkedin.com/in/raul-c-sararu)
+- [Andrei Petri | LinkedIn](https://www.linkedin.com/in/andrei-petri-886121122)
+- [Sergi Valero | LinkedIn](https://www.linkedin.com/in/sergi-valero-pujol-6809b818)
+- [Adam Noaf| LinkedIn](https://www.linkedin.com/in/adam-noaf-5144631b4)
+- [Zack Roberts | LinkedIn](https://www.linkedin.com/in/zach-roberts-10222712)
 
 
 ## Development Status :open_book:
