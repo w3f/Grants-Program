@@ -3,9 +3,9 @@
 > DQA’s NFT Verification and Checker Tool for Secure Web3 Integration ~ [NFT Checker](https://nftchecker.tech)
 
 - **Team Name:** [Digital Quantum Association (DQA from now on)](https://DQA.group)
-- **Payment Details:**
-  - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
-  - **Payment**: In case of payment in **USDC**, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of **fiat** payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and list here the date and time of your email (e.g. Fiat 24.12.1971, 11:59). 
+- **Payment Address:**
+  - **DOT**: Polkadot address: 15oF4...
+  - **USDC**: Polkadot AssetHub address: 15oF4...
 - **Level:** 3
 
 > [!IMPORTANT]
@@ -19,31 +19,45 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+NFT Checker’s goal is clear: to make NFTs practical, valuable, and trusted, driving adoption across multiple sectors. With Polkadot’s infrastructure, this vision becomes scalable and impactful, positioning both NFT Checker and Polkadot as leaders in real-world blockchain applications.
+NFT Checker addresses a critical need in the NFT market: trust and utility. By bridging Web2 and Web3, this platform enables users to verify and leverage NFTs securely for real-world applications, including healthcare, wellness tourism, e-commerce, gaming and many more.
+This project isn’t just about recovery; it’s about redefining the purpose of NFTs. By integrating with Polkadot, NFT Checker will deliver:
+- **Authenticity**: Robust verification systems to ensure trust and transparency.
+- **Scalability**: A seamless connection between traditional systems and decentralized platforms.
+- **Practical Utility**: Real-world value through tokenized rewards, secure services, and exclusive benefits.
+- **Fraud Prevention**: Implementing advanced anti-fraud mechanisms to combat scams that have eroded trust in the NFT market. By ensuring rigorous verification and monitoring, NFT Checker aims to restore confidence and promote a safer environment for NFT transactions.
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+#### BAckground
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
+The NFTChecker, developed by DQA, is a solution designed to address two critical issues in the NFT market: utility gaps and trust erosion. Built to bridge real-world applications with digital ecosystems, this platform isn’t just about NFTs - it’s about solving real challenges.
+This proposal seeks funding to:
+- **Integrate Polkadot Blockchain**: To enhance the platform’s scalability, efficiency, and security.
+- **Expand Operational Capabilities**: To deliver value through real-world applications, starting with telemedicine, e-commerce, user data management, gaming and wellness tourism.
+Please check our Video [DEMO](https://www.youtube.com/watch?v=lSodxIn3Yhc)
 
+#### How it works
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+To obtain a real-world product or service through our NFT Checker platform, follow these steps:
+Acquire the NFT:
+1. Visit a supported NFT marketplace.
+ a. Log in with your digital wallet.
+ b. Purchase the desired NFT associated with the product or service you're interested in.
+2. Redeem Your Product or Service:
+ a. Navigate to the NFT Checker platform.
+ b. Log in using the same wallet to access your NFT holdings.
+ c. Select the NFT corresponding to the product or service you wish to claim.
+ d. Initiate the redemption process to receive a voucher or code for the real-world product or service.
+ e. During this process, NFT Checker temporarily locks your NFT in a smart contract to prevent double-spending.
+3. Retrieve Your NFT:
+ a. After the specified locking period (which varies depending on the NFT collection and associated partner agreements), return to NFT Checker.
+ b. Log in with your wallet.
+ c. Withdraw your NFT from the smart contract back into your wallet.
+4. Future Actions:
+ a. Once reclaimed, you can choose to resell, gift, or utilize the NFT again, depending on its terms and conditions.
+b . This streamlined process ensures a secure and efficient way to redeem NFTs for tangible products and services, maintaining the integrity of each transaction.
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
 
 ### Ecosystem Fit
 
