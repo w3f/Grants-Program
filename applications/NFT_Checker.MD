@@ -8,9 +8,6 @@
   - **USDC**: Polkadot AssetHub address: 15oF4...
 - **Level:** 3
 
-> [!IMPORTANT]
-> *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up:
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
@@ -70,7 +67,6 @@ The NFT space has been plagued by **scams** and **a lack of practical use cases*
 - **Restoring Trust**: By enabling **authenticity, verification, and transparency.**
 - **Redefining Utility**: By creating a platform that empowers NFTs to serve real-world purposes, from healthcare to e-commerce.
 
-
 ### Ecosystem Fit
 
 #### WHy Polkadot?
@@ -94,9 +90,6 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 
 ## Team :busts_in_silhouette:
 
-> [!IMPORTANT]
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
-
 ### Team members
 
 - Raul C. Săraru - Founder | CEO | Owner 
@@ -114,7 +107,9 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 
 ### Legal Structure
 
-- **Registered Address:** <span style="color:red">Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)</span>
+- **Registered Address:**
+> [!IMPORTANT]
+> Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
 - **Registered Legal Entity:** DIGITAL QUANTUM ASSOCIATION S.R.L.
 
 ### Team's experience
@@ -129,10 +124,10 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 ### Team Code Repos
 
 - [https://github.com/Raul-DQA/mx-assets](https://github.com/Raul-DQA/mx-assets)
-- <span style="color:red"> current NFT checker github - AND any other public interesting Andrei Petri github</span>
+> [!IMPORTANT]
+> current NFT checker github - AND any other public interesting Andrei Petri github
 - [https://github.com/Moonlorian/vesting-dapp](https://github.com/Moonlorian/vesting-dapp)
 - [https://github.com/Moonlorian/TurboDeFi](https://github.com/Moonlorian/TurboDeFi)
-
 
 ### Team LinkedIn Profiles
 
@@ -142,6 +137,7 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 - [Adam Noaf| LinkedIn](https://www.linkedin.com/in/adam-noaf-5144631b4)
 - [Zack Roberts | LinkedIn](https://www.linkedin.com/in/zach-roberts-10222712)
 
+___
 
 ## Development Status :open_book:
 
