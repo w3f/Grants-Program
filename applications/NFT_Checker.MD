@@ -41,34 +41,26 @@ Please check our Video [DEMO](https://www.youtube.com/watch?v=lSodxIn3Yhc)
 
 To obtain a real-world product or service through our NFT Checker platform, follow these steps:
 
-**1. Acquire the NFT:**
+*1. Acquire the NFT:*
+ - a) Visit a supported NFT marketplace.
+ - b) Log in with your digital wallet.
+ - c)Purchase the desired NFT associated with the product or service you're interested in.
 
- a.Visit a supported NFT marketplace.
- b. Log in with your digital wallet.
- c. Purchase the desired NFT associated with the product or service you're interested in.
+*2. Redeem Your Product or Service:*
+ - a) Navigate to the NFT Checker platform.
+ - b) Log in using the same wallet to access your NFT holdings.
+ - c) Select the NFT corresponding to the product or service you wish to claim.
+ - d) Initiate the redemption process to receive a voucher or code for the real-world product or service.
+ - e) During this process, NFT Checker temporarily locks your NFT in a smart contract to prevent double-spending.
 
-**2. Redeem Your Product or Service:**
+*3. Retrieve Your NFT:*
+ - a) After the specified locking period (which varies depending on the NFT collection and associated partner agreements), return to NFT Checker.
+ - b) Log in with your wallet.
+ - c) Withdraw your NFT from the smart contract back into your wallet.
 
- a. Navigate to the NFT Checker platform.
- 
- b. Log in using the same wallet to access your NFT holdings.
- 
- c. Select the NFT corresponding to the product or service you wish to claim.
- 
- d. Initiate the redemption process to receive a voucher or code for the real-world product or service.
- 
- e. During this process, NFT Checker temporarily locks your NFT in a smart contract to prevent double-spending.
-
-**3. Retrieve Your NFT:**
-
- a. After the specified locking period (which varies depending on the NFT collection and associated partner agreements), return to NFT Checker.
- b. Log in with your wallet.
- c. Withdraw your NFT from the smart contract back into your wallet.
-
-**4. Future Actions:**
-
- a. Once reclaimed, you can choose to resell, gift, or utilize the NFT again, depending on its terms and conditions.
- b. This streamlined process ensures a secure and efficient way to redeem NFTs for tangible products and services, maintaining the integrity of each transaction.
+*4. Future Actions:*
+- a) Once reclaimed, you can choose to resell, gift, or utilize the NFT again, depending on its terms and conditions.
+- b) This streamlined process ensures a secure and efficient way to redeem NFTs for tangible products and services, maintaining the integrity of each transaction.
 
 
 ### Ecosystem Fit
