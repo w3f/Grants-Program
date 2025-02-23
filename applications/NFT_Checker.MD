@@ -6,6 +6,8 @@
 - **Payment Address:**
   - **DOT**: Polkadot address: 15oF4...
   - **USDC**: Polkadot AssetHub address: 15oF4...
+> [!CAUTION]
+> Create a wallet and paste here
 - **Level:** 3
 
 ## Project Overview :page_facing_up:
@@ -137,17 +139,19 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 - [Adam Noaf| LinkedIn](https://www.linkedin.com/in/adam-noaf-5144631b4)
 - [Zack Roberts | LinkedIn](https://www.linkedin.com/in/zach-roberts-10222712)
 
-___
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+### Previous Achievements
+- ***[MVP](https://nftchecker.tech/nft-checker) Ready for Deployment***:
+    - Created and prepared for deployment with active NFT collections, including **[Skully]**(https://dapp.nftchecker.tech/en/collection/skully) and **[GAIA](https://dapp.nftchecker.tech/en/collection/gaia)**.
+    - Proven cross-chain capabilities and scalable backend infrastructure.
+- ***Tokenized Rewards and E-Commerce Features***:
+    - Demonstrated how NFTs provide value through **rewards and e-commerce applications**.
+    - Empowered businesses to use NFTs for customer incentives and secure transactions.
+    - **Scalable Backend System**:
+        - Built to support *SaaS onboarding for NFT projects*, laying the groundwork for broader industry integration.
 
-- links to improvement proposals or [RFPs](https://grants.web3.foundation/docs/rfps) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -155,8 +159,7 @@ This section should break the development roadmap down into milestones and deliv
 
 Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
 
-> [!CAUTION]
-> If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
+
 
 ### Overview
 
