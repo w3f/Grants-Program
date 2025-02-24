@@ -287,12 +287,13 @@ Roberts**.
 
 ## Referral Program (optional) :moneybag:
 
-You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
+- **Referrer:** Albert Burgos | Polkadot support specialist.
 
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDC))
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
+**How did you hear about the Grants Program?**
+ - We met Polkadot's Business Development team at physical booth, in three events:
+    - 1. [European Blockchain Convention](https://eblockchainconvention.com) Barcelona 2024
+    - 2. [Merge](https://www.mmerge.io) Madrid 2024
+    - 3, [World Token Congress](https://worldtokencongress.com) 2024
