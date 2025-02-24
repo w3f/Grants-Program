@@ -110,9 +110,17 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 ### Legal Structure
 
 - **Registered Address:**
-> [!IMPORTANT]
+> [!CAUTION]
 > Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
 - **Registered Legal Entity:** DIGITAL QUANTUM ASSOCIATION S.R.L.
+
+#### Intellectual Property
+The NFT Checker is owned exclusively by [DQA](https://dqa.group), and its legal entity **DIGITAL QUANTUM ASSOCIATION S.R.L.**, and protected by our partner professional IP firm and our in-house corporate lawyers.
+**Intellectual Property Rights** include copyrights, trademarks, design rights, patents, trade secrets, and all proprietary rights related to the NFT Checker Software – including its source code, design, functionalities, and any associated documentation or derivative works.
+**Legal Representation**
+Our **IP filing process** is supported by our partner firm [VD Law Group](https://www.vdlawgroup.com), legally represented by Sergiu-Traian Vasilescu, Managing Partner.
+This document is also represented by our in-house **CFO** and Corporate Lawyer Specialist, **Zach 
+Roberts**.
 
 ### Team's experience
 
@@ -187,8 +195,7 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 | **0c.** | Testing and Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
-| 1. | Polkadot SDK integration | Fully functional live demo of NFT Checker showcasing blockchain features; 
-Verified and operational on-chain transaction systems. |
+| 1. | Polkadot SDK integration | Fully functional live demo of NFT Checker showcasing blockchain features; Verified and operational on-chain transaction systems. |
 | 2. | Audit | Software certification by a third party company |
 
 ### Milestone 2 - Development of SaaS Onboarding Module
@@ -206,7 +213,6 @@ Verified and operational on-chain transaction systems. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
 | 1. | SaaS platform including the following features | **Account Creation Page**: User-friendly onboarding process; **Add and Configure Collections**: Intuitive tools for managing NFTs; **Verification Features**: Compliance checks, authenticity validation, and scamming alert systems; **Upgraded Back Office**: Enhanced management dashboard for users and admins.|
 | 2. | Live onboarding module | Deployed on [https://dapp.nftchecker.tech](https://dapp.nftchecker.tech) |
-| 3. | Volume KPI's | 1,500 users; 15,000 transactions; 10 integrated projects |
 
 ### Milestone 3 - Scale the project
 
@@ -225,6 +231,7 @@ Verified and operational on-chain transaction systems. |
 | 2. | Volume KPI's | 1,500 users; 15,000 transactions; 10 integrated projects |
 
 ## Future Plans
+> CONTINUAR AQUÍ, poner los volume kpi's del medio y final; poner la "long-term vision y su infografía.
 
 Please include here
 
