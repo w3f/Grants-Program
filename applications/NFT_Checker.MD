@@ -294,6 +294,6 @@ Roberts**.
 
 **How did you hear about the Grants Program?**
  - We met Polkadot's Business Development team at physical booth, in three events:
-    - 1. [European Blockchain Convention](https://eblockchainconvention.com) Barcelona 2024
-    - 2. [Merge](https://www.mmerge.io) Madrid 2024
-    - 3, [World Token Congress](https://worldtokencongress.com) 2024
+    - 1. [European Blockchain Convention](https://eblockchainconvention.com) - Barcelona (SPAIN) 2024
+    - 2. [Merge](https://www.mmerge.io) - Madrid (SPAIN) 2024
+    - 3. [World Token Congress](https://worldtokencongress.com) - Barcelona (SPAIN) 2024
