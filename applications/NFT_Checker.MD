@@ -123,7 +123,8 @@ Roberts**.
 ### Team's experience
 
 - *Raul C. Săraru*: Serial entrepreneur with 20+ years of experience in various industries.
-- *Andrei Petri*: A Senior Software Engineer with extensive expertise in applications and the main Developer behind the NFT Checker. 
+- *Andrei Petri*: A Senior Software Engineer with extensive expertise in applications and the main Developer behind the NFT Checker.
+  > Andrei is signing up in the **[Polkadot academy](https://polkadot.com/blockchain-academy)++, and taking part in the second wave of PBA-X, starting April 14th 
 - *Sergi Valero* and Moonlorian serve as the Blockchain Integrator for our NFT Checker software.
 - *Adam Noaf*: Blockchain & Web3 | Advisor | Ambassador.
 - *Ovidiu Badila*: Social Campaigns, building and maintaining community.
@@ -234,7 +235,8 @@ Roberts**.
 - 1. Scalable SaaS Platform
   - We aim to launch a **scalable SaaS platform** that enables effortless integration of NFT projects, supporting businesses in unlocking blockchain’s potential. This platform will serve as the backbone for NFT Checker, delivering secure and efficient solutions tailored to various industries.
 - 2. Token **TGE Launch** for the the **Telemedicine Ecosystem**: This semester, we are proposing to align the Telemedicine Ecosystem’s launch of the token (TGE), planned to use the launchpad **[Polimec](https://www.polimec.org)**
-- 3. Sector Adoption and Growth - **Real-World Applications** of NFT Checker integration
+- 3. Smart Contract development: Add the Smart Contract lockd feature. as soon as **[Pop](https://onpop.io)** and/or **[Plaza](https://www.rob.tech/blog/plaza/)** will be available.
+- 4. Sector Adoption and Growth - **Real-World Applications** of NFT Checker integration
   - a) **Healthcare** - [HHHub.tech](https://hhhub.tech)
   - b) **E-Commerce** - [HHHub.Store](https://hhhub.store)
   - c) **Scalable Cash Flow Driver**:
