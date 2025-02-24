@@ -115,10 +115,15 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 - **Registered Legal Entity:** DIGITAL QUANTUM ASSOCIATION S.R.L.
 
 #### Intellectual Property
+
 The NFT Checker is owned exclusively by [DQA](https://dqa.group), and its legal entity **DIGITAL QUANTUM ASSOCIATION S.R.L.**, and protected by our partner professional IP firm and our in-house corporate lawyers.
+
 **Intellectual Property Rights** include copyrights, trademarks, design rights, patents, trade secrets, and all proprietary rights related to the NFT Checker Software – including its source code, design, functionalities, and any associated documentation or derivative works.
+
 **Legal Representation**
-Our **IP filing process** is supported by our partner firm [VD Law Group](https://www.vdlawgroup.com), legally represented by Sergiu-Traian Vasilescu, Managing Partner.
+
+Our **IP filing process** is supported by our partner firm [VD Law Group](https://www.vdlawgroup.com), legally represented by **Sergiu-Traian Vasilescu**, Managing Partner.
+
 This document is also represented by our in-house **CFO** and Corporate Lawyer Specialist, **Zach 
 Roberts**.
 
