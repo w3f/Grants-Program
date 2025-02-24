@@ -183,13 +183,13 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide inline code documentation, a **gitbook user tutorial** and a Readme file for the open source repository |
-| **0c.** | Testing and Testing Guide | Che code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
+| **0b.** | Documentation | We will provide inline code documentation, a **gitbook user tutorial** and a Readme file for the open source repository. |
+| **0c.** | Testing and Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
 | 1. | Polkadot SDK integration | Fully functional live demo of NFT Checker showcasing blockchain features; 
 Verified and operational on-chain transaction systems. |
-
+| 2. | Audit | Software certification by a third party company |
 
 ### Milestone 2 - Development of SaaS Onboarding Module
 
@@ -200,15 +200,13 @@ Verified and operational on-chain transaction systems. |
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT |
-| **0b.** | Documentation | We will provide inline code documentation, a **gitbook user tutorial** and a Readme file for the open source repository |
-| **0c.** | Testing and Testing Guide | Che code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
+| **0b.** | Documentation | We will provide inline code documentation, a **gitbook user tutorial** and a Readme file for the open source repository. |
+| **0c.** | Testing and Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
-| 1. | SaaS platform including the following features | - Account Creation Page: User-friendly onboarding process.
- - Add and Configure Collections: Intuitive tools for managing NFTs.
- - Verification Features: Compliance checks, authenticity validation, and scamming alert systems.
- - Upgraded Back Office: Enhanced management dashboard for users and admins.|
+| 1. | SaaS platform including the following features | **Account Creation Page**: User-friendly onboarding process; **Add and Configure Collections**: Intuitive tools for managing NFTs; **Verification Features**: Compliance checks, authenticity validation, and scamming alert systems; **Upgraded Back Office**: Enhanced management dashboard for users and admins.|
 | 2. | Live onboarding module | Deployed on [https://dapp.nftchecker.tech](https://dapp.nftchecker.tech) |
+| 3. | Volume KPI's | 1,500 users; 15,000 transactions; 10 integrated projects |
 
 ### Milestone 3 - Scale the project
 
@@ -216,7 +214,15 @@ Verified and operational on-chain transaction systems. |
 - **FTE:**  2.5
 - **Costs:** 20,000 USD
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide inline code documentation, a **gitbook user tutorial** and a Readme file for the open source repository. |
+| **0c.** | Testing and Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
+| 1. | Drive adoption within the Polkadot ecosystem |Targeted social media ads across platforms like LinkedIn, Twitter, and Telegram; Host live demos and webinars showcasing NFT Checker’s capabilities; Establish partnerships with industry influencers and key stakeholders.|
+| 2. | Volume KPI's | 1,500 users; 15,000 transactions; 10 integrated projects |
 
 ## Future Plans
 
