@@ -165,7 +165,7 @@ Roberts**.
 ***Immediate Focus Post-Funding***:
 - **Development of NFT Checker**:
   - *Primary Goal*: Finalize the integration of the **Polkadot blockchain** to ensure the NFT Checker operates with high scalability, security, and efficiency.
- - *Key Objectives*:
+ - **Key Objectives**:
    - Implement on-chain and off-chain verification systems.
    - Roll out a **SaaS onboarding module** to empower businesses to manage NFT collections seamlessly.
    - Launch targeted marketing campaigns to attract early adopters, onboard projects, and demonstrate platform capabilities.
