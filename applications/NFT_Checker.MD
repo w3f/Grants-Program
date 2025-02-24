@@ -144,7 +144,7 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 
 ### Previous Achievements
 - ***[MVP](https://nftchecker.tech/nft-checker) Ready for Deployment***:
-    - Created and prepared for deployment with active NFT collections, including **[Skully]**(https://dapp.nftchecker.tech/en/collection/skully) and **[GAIA](https://dapp.nftchecker.tech/en/collection/gaia)**.
+    - Created and prepared for deployment with active NFT collections, including **[Skully](https://dapp.nftchecker.tech/en/collection/skully)** and **[GAIA](https://dapp.nftchecker.tech/en/collection/gaia)**.
     - Proven cross-chain capabilities and scalable backend infrastructure.
 - ***Tokenized Rewards and E-Commerce Features***:
     - Demonstrated how NFTs provide value through **rewards and e-commerce applications**.
@@ -155,51 +155,68 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-
+***Immediate Focus Post-Funding***:
+- **Development of NFT Checker**:
+ - *Primary Goal*: Finalize the integration of the **Polkadot blockchain** to ensure the NFT Checker operates with high scalability, security, and efficiency.
+ - *Key Objectives*:
+  - Implement on-chain and off-chain verification systems.
+  - Roll out a **SaaS onboarding module** to empower businesses to manage NFT collections seamlessly.
+  - Launch targeted marketing campaigns to attract early adopters, onboard projects, and demonstrate platform capabilities.
+ - **Outcome**: Establish a trusted, user-friendly platform for NFT verification and utility across healthcare, e-commerce, and other sectors.
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
-- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
+- **Total Estimated Duration:** 12 weeks
+- **Full-Time Equivalent (FTE):**  6 FTE
+- **Total Costs:** 100,000 USD
+- **DOT %:** 50% (Percentage of Total Costs to be paid in vested DOT)
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 —  Integration of Polkadot Blockchain
 
 - **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:**  6
+- **Costs:** 50,000 USD
 
 > [!NOTE]
 > **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#documentation) for details. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide inline code documentation, a **gitbook user tutorial** and a Readme file for the open source repository |
+| **0c.** | Testing and Testing Guide | Che code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
+| 1. | Polkadot SDK integration | Fully functional live demo of NFT Checker showcasing blockchain features; 
+Verified and operational on-chain transaction systems. |
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 - Development of SaaS Onboarding Module
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:**  3.5
+- **Costs:** 30,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | We will provide inline code documentation, a **gitbook user tutorial** and a Readme file for the open source repository |
+| **0c.** | Testing and Testing Guide | Che code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
+| 1. | SaaS platform including the following features | - Account Creation Page: User-friendly onboarding process.
+ - Add and Configure Collections: Intuitive tools for managing NFTs.
+ - Verification Features: Compliance checks, authenticity validation, and scamming alert systems.
+ - Upgraded Back Office: Enhanced management dashboard for users and admins.|
+| 2. | Live onboarding module | Deployed on [https://dapp.nftchecker.tech](https://dapp.nftchecker.tech) |
+
+### Milestone 3 - Scale the project
+
+- **Estimated Duration:** 1 month
+- **FTE:**  2.5
+- **Costs:** 20,000 USD
 
 ...
-
 
 ## Future Plans
 
