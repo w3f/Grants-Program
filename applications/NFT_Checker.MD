@@ -229,7 +229,7 @@ Roberts**.
 
 ## Future Plans
 
-### Mid-Term Goals - Growth pahse (4+ Months)
+### Mid-Term Goals - Growth phase (4+ Months)
 - 1. Scalable SaaS Platform
   - We aim to launch a **scalable SaaS platform** that enables effortless integration of NFT projects, supporting businesses in unlocking blockchain’s potential. This platform will serve as the backbone for NFT Checker, delivering secure and efficient solutions tailored to various industries.
 - 2. Token **TGE Launch** for the the **Telemedicine Ecosystem**: This semester, we are proposing to align the Telemedicine Ecosystem’s launch of the token (TGE), planned to use the launchpad **[Polimec](https://www.polimec.org)**
