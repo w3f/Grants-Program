@@ -184,8 +184,6 @@ Roberts**.
 - **FTE:**  6
 - **Costs:** 50,000 USD
 
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
