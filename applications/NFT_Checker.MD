@@ -229,13 +229,59 @@ Roberts**.
 | 2. | Volume KPI's | 1,500 users; 15,000 transactions; 10 integrated projects |
 
 ## Future Plans
-> CONTINUAR AQUÍ, poner los volume kpi's del medio y final; poner la "long-term vision y su infografía.
 
-Please include here
+### Mid-Term Goals - Growth pahse (4+ Months)
+- 1. Scalable SaaS Platform
+  - We aim to launch a **scalable SaaS platform** that enables effortless integration of NFT projects, supporting businesses in unlocking blockchain’s potential. This platform will serve as the backbone for NFT Checker, delivering secure and efficient solutions tailored to various industries.
+- 2. Token **TGE Launch** for the the **Telemedicine Ecosystem**: This semester, we are proposing to align the Telemedicine Ecosystem’s launch of the token (TGE), planned to use the launchpad **[Polimec](https://www.polimec.org)**
+- 3. Sector Adoption and Growth - **Real-World Applications** of NFT Checker integration
+  - a) **Healthcare** - [HHHub.tech](https://hhhub.tech)
+  - b) **E-Commerce** - [HHHub.Store](https://hhhub.store)
+  - c) **Scalable Cash Flow Driver**:
+    - Attracting wellness-focused vendors and products to ensure rapid onboarding and customer acquisition.
+    - *Enables early financial returns to support the broader ecosystem development*.
+  - d) **Potential Sectors for Immediate and Near-Future Expansion** Beyond healthcare and e-commerce, **NFT Checker** is strategically designed to expand into additional high-value sectors:
+    - *Gaming*: Ensures secure in-game NFT usage, protecting player investments and enhancing ecosystem trust.
+    - *Art & Collectibles*: Validates originality and ensures provenance for digital artworks and collectibles.
+    - *Finance & Banking*: Supports asset tokenization, NFT-backed insurance policies, and DeFi collateral verification.
+    - *Real Estate*: Facilitates NFT-based ownership and rental agreements for properties.
+    - *Supply Chain & Logistics*: Tracks product provenance and shipment contracts, ensuring ethical sourcing and reliability.
+    - *Entertainment & Media*: Authenticates NFT-based tickets and verifies digital rights for creative content.
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+
+![NFT CHECKER OUR APPROACH INFOGRAPHIC](https://d3t4nwcgmfrp9x.cloudfront.net/upload/consejos-google-drive.jpg)
+
+### Long-Term Vision - Expansion phase (12+ months)
+
+- **Transformative Telemedicine Ecosystem - [HHHub.tech](https://hhhub.tech) - powered by [DQA](https://dqa.group)**:
+    - Leverage **NFT Checker** for secure, verifiable healthcare services and treatments.
+    - Align funding efforts through **ICO** and **TGE** to sustain development; detailed in this proposal.
+    - Focus on integrating telemedicine with blockchain to improve accessibility and transparency.
+- **Expansion Across Sectors:**
+    - Broaden NFT Checker’s applications into gaming, wellness tourism, supply chain logistics, real estate, and other high-value industries.
+    - Strengthen partnerships and scalability for global adoption.
+- **[HHHub.Store](https://hhhub.store/)** - a ready-to-launch e-commerce platform prioritized for immediate cash flow.
+    - Goal: Onboard vendors, producers, and distributors rapidly.
+    - Enable secure and verified transactions using NFT Checker, ensuring trust for customers and businesses alike.
+ - **[Whitepaper](https://docs.google.com/document/d/1-q1izYliNeE9Is2RL5dVNt-3bMl57asOT5LB0gL_ltc/edit?usp=sharing) DQA.**
+
+![NFT CHECKER OUR APPROACH INFOGRAPHIC](https://d3t4nwcgmfrp9x.cloudfront.net/upload/consejos-google-drive.jpg)
+
+### Grant impact
+
+- A. Initial Phase - This current grant phase (Months 1–3)
+  - 1. Users target: 1,500 users (Total: 1,500).
+  - 2. Transactions (TXs) target: 15,000 transactions (Total: 15,000).
+  - 3. Projects Integrated target: 10 projects (Total: 10).
+- B. Growth Phase (Months 4–12)
+  - 1. Users target: 7,500 users (Total: 9,000).
+  - 2. Transactions (TXs) target: 65,000 transactions (Total: 80,000).
+  - 3. Projects Integrated target: 25 projects (Total: 35).
+- C. Expansion Phase (Year 2 and Beyond)
+  - 1. Users target: 15,000 users (Total: 24,000).
+  - 2. Transactions (TXs) target: 140,000 transactions (Total: 220,000).
+  - 3. Projects Integrated target: 50 projects (Total: 85).
+
 
 ## Referral Program (optional) :moneybag:
 
