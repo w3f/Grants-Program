@@ -3,6 +3,7 @@
 - **Team Name:** Massa Labs
 - **Payment Address:** 13zRBDBEYWGBZAiCeqMqefPCZ7cXS4GCmizt93NqWoTattpZ (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2218#issuecomment-2672251347)
 
 ## Project Overview :page_facing_up:
 
