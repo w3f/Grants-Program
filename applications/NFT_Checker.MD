@@ -4,10 +4,8 @@
 
 - **Team Name:** [Digital Quantum Association (DQA from now on)](https://DQA.group)
 - **Payment Address:**
-  - **DOT**: Polkadot address: 15oF4...
-  - **USDC**: Polkadot AssetHub address: 15oF4...
-> [!CAUTION]
-> Create a wallet and paste here
+  - **DOT**: Polkadot address: 5HGYvy6NNPJr1SsTs4ny98DfRoxfEct5fPCUtuLV2kgKrxkx
+  - **USDC**: Polkadot AssetHub address: 5HGYvy6NNPJr1SsTs4ny98DfRoxfEct5fPCUtuLV2kgKrxkx
 - **Level:** 3
 
 ## Project Overview :page_facing_up:
@@ -110,8 +108,9 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 ### Legal Structure
 
 - **Registered Address:**
-> [!CAUTION]
-> Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
+    - Bucharest; Disctric#3
+    - Str.: Gheorghe Petrascu; Nr. 14; Bloc. B9B; Sc.#2; et.#1; Ap.48
+    - Romania
 - **Registered Legal Entity:** DIGITAL QUANTUM ASSOCIATION S.R.L.
 - **Intellectual Property**
     - The NFT Checker is owned exclusively by [DQA](https://dqa.group), and its legal entity **DIGITAL QUANTUM ASSOCIATION S.R.L.**, and protected by our partner professional IP firm and our in-house corporate lawyers.
@@ -133,8 +132,6 @@ Roberts**.
 ### Team Code Repos
 
 - [https://github.com/Raul-DQA/mx-assets](https://github.com/Raul-DQA/mx-assets)
-> [!IMPORTANT]
-> current NFT checker github - AND any other public interesting Andrei Petri github
 - [https://github.com/Moonlorian/vesting-dapp](https://github.com/Moonlorian/vesting-dapp)
 - [https://github.com/Moonlorian/TurboDeFi](https://github.com/Moonlorian/TurboDeFi)
 
