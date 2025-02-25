@@ -77,7 +77,7 @@ By leveraging Polkadot’s **interoperable ecosystem and NFT-focused infrastruct
 
 #### Unlocking NFT Liquidity and Data-Driven Monetization
 
-![NFT CHECKER POLKADOT INFOGRAPHIC](https://d3t4nwcgmfrp9x.cloudfront.net/upload/consejos-google-drive.jpg)
+![NFT CHECKER POLKADOT INFOGRAPHIC](https://drive.google.com/uc?export=view&id=1YGQiY4rvFpx4T6N1tXF0kk7zMM4GczIv)
 
 Polkadot provides the infrastructure, but the real value comes from how we leverage NFT data. NFT Checker does more than just verify assets—it transforms fragmented NFT markets into structured, monetizable ecosystems. With our ability to **track every NFT holder across Polkadot’s parachains**, we are not just ensuring authenticity, we are unlocking new business pipelines.
 The NFT space is evolving beyond collectibles. **Every NFT holder represents a recurring revenue opportunity**, and our data-driven model turns that potential into tangible business outcomes.
