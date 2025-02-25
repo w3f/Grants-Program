@@ -13,7 +13,9 @@
 ### Overview
 
 NFT Checker’s goal is clear: to make NFTs practical, valuable, and trusted, driving adoption across multiple sectors. With Polkadot’s infrastructure, this vision becomes scalable and impactful, positioning both NFT Checker and Polkadot as leaders in real-world blockchain applications.
+
 NFT Checker addresses a critical need in the NFT market: trust and utility. By bridging Web2 and Web3, this platform enables users to verify and leverage NFTs securely for real-world applications, including healthcare, wellness tourism, e-commerce, gaming and many more.
+
 This project isn’t just about recovery; it’s about redefining the purpose of NFTs. By integrating with Polkadot, NFT Checker will deliver:
 - **Authenticity**: Robust verification systems to ensure trust and transparency.
 - **Scalability**: A seamless connection between traditional systems and decentralized platforms.
