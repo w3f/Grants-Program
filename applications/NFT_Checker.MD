@@ -77,7 +77,7 @@ By leveraging Polkadot’s **interoperable ecosystem and NFT-focused infrastruct
 
 #### Unlocking NFT Liquidity and Data-Driven Monetization
 
-![NFT CHECKER POLKADOT INFOGRAPHIC](https://drive.google.com/uc?export=view&id=1YGQiY4rvFpx4T6N1tXF0kk7zMM4GczIv)
+![ECOSYSTEM HH Hub by DQA in POLKADOT](https://drive.google.com/uc?export=view&id=1YGQiY4rvFpx4T6N1tXF0kk7zMM4GczIv)
 
 Polkadot provides the infrastructure, but the real value comes from how we leverage NFT data. NFT Checker does more than just verify assets—it transforms fragmented NFT markets into structured, monetizable ecosystems. With our ability to **track every NFT holder across Polkadot’s parachains**, we are not just ensuring authenticity, we are unlocking new business pipelines.
 The NFT space is evolving beyond collectibles. **Every NFT holder represents a recurring revenue opportunity**, and our data-driven model turns that potential into tangible business outcomes.
@@ -246,7 +246,7 @@ Roberts**.
     - *Entertainment & Media*: Authenticates NFT-based tickets and verifies digital rights for creative content.
 
 
-![NFT CHECKER OUR APPROACH INFOGRAPHIC](https://d3t4nwcgmfrp9x.cloudfront.net/upload/consejos-google-drive.jpg)
+![Ecosystem HH Hub by DQA](https://drive.google.com/uc?export=view&id=1EM8D14JZ8yT8M4ciNBsEyDMw8unkbgfF)
 
 ### Long-Term Vision - Expansion phase (12+ months)
 
@@ -262,7 +262,7 @@ Roberts**.
     - Enable secure and verified transactions using NFT Checker, ensuring trust for customers and businesses alike.
  - **[Whitepaper](https://docs.google.com/document/d/1-q1izYliNeE9Is2RL5dVNt-3bMl57asOT5LB0gL_ltc/edit?usp=sharing) DQA.**
 
-![NFT CHECKER OUR APPROACH INFOGRAPHIC](https://d3t4nwcgmfrp9x.cloudfront.net/upload/consejos-google-drive.jpg)
+![INFOGRAPHICS NFT CHECKER - LONG-TERM VISION](https://drive.google.com/uc?export=view&id=15devXEdFla1yuDuotRqrXrBVp1_5Id0d)
 
 ### Grant impact
 
