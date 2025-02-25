@@ -189,7 +189,7 @@ Roberts**.
 | **0c.** | Testing and Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
-| 1. | Polkadot SDK integration | Fully functional live demo of NFT Checker showcasing blockchain features; Verified and operational on-chain transaction systems. |
+| 1. | Polkadot SDK integration | Fully functional live demo of NFT Checker showcasing blockchain features; Verified and operational on-chain transaction systems. Deployed on [https://polkadot-dapp.nftchecker.tech](https://dapp.nftchecker.tech)|
 | 2. | Audit | Software certification by a third party company |
 
 ### Milestone 2 - Development of SaaS Onboarding Module
@@ -206,7 +206,7 @@ Roberts**.
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
 | 1. | SaaS platform including the following features | **Account Creation Page**: User-friendly onboarding process; **Add and Configure Collections**: Intuitive tools for managing NFTs; **Verification Features**: Compliance checks, authenticity validation, and scamming alert systems; **Upgraded Back Office**: Enhanced management dashboard for users and admins.|
-| 2. | Live onboarding module | Deployed on [https://dapp.nftchecker.tech](https://dapp.nftchecker.tech) |
+| 2. | Live onboarding module | Deployed on [https://polkadot-onboarding.nftchecker.tech](https://nft-checker-app-raulcsararu.replit.app/auth)|
 
 ### Milestone 3 - Scale the project
 
