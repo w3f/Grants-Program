@@ -10,10 +10,6 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
 NFT Checker’s goal is clear: to make NFTs practical, valuable, and trusted, driving adoption across multiple sectors. With Polkadot’s infrastructure, this vision becomes scalable and impactful, positioning both NFT Checker and Polkadot as leaders in real-world blockchain applications.
