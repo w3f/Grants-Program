@@ -59,7 +59,7 @@ To obtain a real-world product or service through our NFT Checker platform, foll
 - a) Once reclaimed, you can choose to resell, gift, or utilize the NFT again, depending on its terms and conditions.
 - b) This streamlined process ensures a secure and efficient way to redeem NFTs for tangible products and services, maintaining the integrity of each transaction.
 
-![NFT CHECKER TOOL INFOGRAPHIC](https://d3t4nwcgmfrp9x.cloudfront.net/upload/consejos-google-drive.jpg)
+![NFT CHECKER TOOL INFOGRAPHIC](https://drive.google.com/file/d/1n0Wqowu0kiFVHxBp9DkpkAcUCtQk_Apc/view?usp=sharing)
 
 #### The Problems We’re Solving
 
