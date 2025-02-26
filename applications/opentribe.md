@@ -123,13 +123,15 @@ Opentribe positions itself as the “talent layer” for Polkadot—providing a 
 ## Team
 
 - **Team Name:** Opentribe  
-- **Contact Name:** Nitesh (Team Leader)  
+- **Contact Name:** Nitesh Sharma(Team Leader)  
 - **Contact Email:** graphicsofdot@gmail.com  
 - **Website:** [dotgraphic.info](https://dotgraphic.info)
 
 ### Team Members
 
-- **Nitesh**: Experienced Project Manager, with prior contributions to Polkadot-related initiatives.
+- **Nitesh Sharma**: [Linkedin](https://www.linkedin.com/in/nit-sharma) - Experienced digital marketer and project manager, with prior contributions to Polkadot-related initiatives.
+- **Shikhar Singh**: [Linkedin](https://www.linkedin.com/in/nit-sharma) - **Frontend Lead** - Experienced full stack engineer with strong crypto and frontend development skills.
+- **Mratyunjay Soni**: [Linkedin](https://www.linkedin.com/in/manofcode/) -  Backend Lead - Over 5 years of experience in backend technologies including Python, Node and Go.
 
 ### Team Information
 
