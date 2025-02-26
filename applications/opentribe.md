@@ -130,7 +130,7 @@ Opentribe positions itself as the “talent layer” for Polkadot—providing a 
 ### Team Members
 
 - **Nitesh Sharma**: [Linkedin](https://www.linkedin.com/in/nit-sharma) - Experienced digital marketer and project manager, with prior contributions to Polkadot-related initiatives.
-- **Shikhar Singh**: [Linkedin](https://www.linkedin.com/in/nit-sharma) - **Frontend Lead** - Experienced full stack engineer with strong crypto and frontend development skills.
+- **Shikhar Singh**: [Linkedin](https://bento.me/0xshikhar) - **Frontend Lead** - Experienced full stack engineer with strong crypto and frontend development skills.
 - **Mratyunjay Soni**: [Linkedin](https://www.linkedin.com/in/manofcode/) -  Backend Lead - Over 5 years of experience in backend technologies including Python, Node and Go.
 
 ### Team Information
