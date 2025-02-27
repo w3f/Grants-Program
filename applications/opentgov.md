@@ -148,7 +148,7 @@ Finally, I will create a CLI tool that faciliates the setup of the bot without h
 
 - **Estimated Duration:** 3
 - **Full-Time Equivalent (FTE):**  1
-- **Total Costs:** 16 440 USD
+- **Total Costs:** 15 000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -174,8 +174,7 @@ Finally, I will create a CLI tool that faciliates the setup of the bot without h
 | --- | ---- | --- | --- | --- | ---|
 | Personel | Full-Stack Developer | 13,000 USD | 1 FTE | 13,000 USD | Developing (frontend and backend) and deploying the project according to the milestones. |
 | Personel | Technical Writing | 2,000 USD | 1 FTE | 2,000 USD | Writing an entire documentation covering telegram bot setup, governance proxy creation and overall project usage. |
-| Equipment | 1 year 32GB RAM VPS | 770 USD | 2 FTE | 1440 USD | VPS to host the backend (telegram group management) and the frontend of the websites (onepager and documentation). |
-| --- | --- | --- | **Total** | **16,440 USD** |  |
+| --- | --- | --- | **Total** | **15,000 USD** |  |
 
 ## Future Plans
 
