@@ -173,18 +173,19 @@ https://github.com/swush-labs/
 We have added all our research work at [Ecosystem Fit section](#ecosystem-fit). \
 Our initial UI which we created is hosted [here](https://swush-labs.github.io/swush-me-app/), but we plan to iterate as per the designs shared at [Project Details](#project-details).
 
+
 ## Development Roadmap :nut_and_bolt:
 
-### Overview[](https://grants.web3.foundation/applications/typink#overview-1)
+### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):** 1.5
-- **Total Costs:** 25,000 USD
-- **DOT %:** 50%
+- **Total Estimated Duration:** 5 months
+- **Full-Time Equivalent (FTE):** 1.5
+- **Total Costs:** 25,000 USD
+- **DOT %:** 50%
 
 ### **Milestone 1: Foundational Development & Simulation Environment**
 
-- **Time: 1.5 - 2 months**
+- **Time: 2-2.5 months**
 - **FTE:**  1.5
 - **Costs:** 9000 USD
 
@@ -194,15 +195,13 @@ Our initial UI which we created is hosted [here](https://swush-labs.github.io/sw
     - Creation of a responsive user interface (UI) that will serve as the primary interaction layer. The UI will include swap functionality, wallet connection, and real-time asset balances of user.
 - **Wallet Integration:**
     - Integration of Web3 wallets (e.g., Polkadot.js, Talisman) for seamless user authentication, transaction signing, and balance viewing.
-- **Simulated Testing Environment:**
-    - Setup of a simulated testing environment to replicate real-world conditions. This will include mock wallets for swap visualizations, allowing developers to test various swap scenarios and edge cases (e.g., low liquidity, high fees).
-        - Mock multiple networks  (Polkadot Asset Hub and parachain)
-        - Liquidity pools for asset swaps
-        - Cross-chain asset swapping
-        - Route optimization to find the most cost-efficient swap
-        - Final Aggregation and Testing Simulation
+- **Asset APIs**
+	 - Fetch asset info and metadata from Asset Hub and Hydration parachain present in their liquidity pool and display in UI
+- **Asset Pair Rates APIs**
+    - Fetch asset rates for pairs present in liquidity pool of Asset Hub and Hydration parachain and display in UI
 - **Basic Notification System:**
     - Development of a notification system to provide users with real-time feedback on transaction status.
+
 - **User Profiles:**
     - Implement user profiles to store settings (e.g.. preferred slippage tolerance).
       
@@ -210,39 +209,45 @@ Our initial UI which we created is hosted [here](https://swush-labs.github.io/sw
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | **0a.** | License | GPLv3  |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
 | **0c.** | Testing and Testing Guide | Tutorial that explains how to test all deliverables of this milestone. Core functions for this milestone will be tested with **Simulated Testing Environment** as mentioned above. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article for the work done. |
+| 0e. | Article | We will publish an article for the work done. |
 | 1. | **Basic Functional UI (Responsive Design)** | (as mentioned above) |
 | 2. | **Wallet Integration** | (as mentioned above) |
-| 3. | **Simulated Testing Environment** | (as mentioned above) |
-| 4. | **Basic Notification System** | (as mentioned above) |
-| 5. | **User Profiles** | (as mentioned above) |
+| 3. | **Asset APIs** | (as mentioned above) |
+| 4. | **Asset Pair Rates APIs** | (as mentioned above) |
+| 5. | **Basic Notification System** | (as mentioned above) |
+| 6. | **User Profiles** | (as mentioned above) |
+
+
 
 
 ### **Milestone 2: Advanced Features**
-- **Time: 2-2.5 months**
+- **Time: 2.5 months**
 - **FTE:**  1.5
 - **Costs:** 16000 USD
 
 ### **Features:**
 
-- **Cross-Chain (XCM) APIs and DEX Swap Integration:**
+- **Cross-Chain (XCM) APIs**
     -  Integrates cross-chain messaging (XCM) to transfer assets from the Asset Hub to a parachain (e.g., Hydration) for swapping. After the swap on the parachain, assets are returned to the Asset Hub, allowing users to access parachain liquidity while keeping assets on the Asset Hub.
-    - Polkadot Asset Hub’s Asset APIs to enable real-time asset balances, rates, and integration of Asset Hub assets in cross-chain swaps.
-
-- **Slippage Control and Protection:**
+- **Slippage Control and Protection**
     - Implementation of slippage control, allowing users to swap assets below maximum slippage tolerance set in User Profiles(Milestone 1). This ensures that users are protected against drastic price changes during the transaction execution process.
-- **Real-time Fee Updates:**
-    - Implementation of real-time updates for swap rates and transaction fees. This will involve pulling live data from Asset Hub and parachain DEX.
-- **Multi Asset Pair Swap**
-    - Support swaps between asset pairs not present in liquidity pools (e.g., MYTH/USDC when only DOT/USDC and DOT/MYTH are available).
+- **Asset Balance**    
+    - Real time asset balances of user.
+- **Real-time Fee Updates**
+    - Real-time updates for swap rates, transaction fees and XCM fees wherever applicable.
+- **Asset Pair Swap**
+    - Swap between asset pairs present in liquidity pools.
+    - **Multi Asset Pair Swap**
+         - Support swaps between asset pairs not present in liquidity pools (e.g., MYTH/USDC when only DOT/USDC and DOT/MYTH are available).
+
 - **Optimized Routing**
-    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing fees, quote price and slippage across various DEXes(e.g. Polkadot Asset Hub DEX and Hydration DEX)
-- **Advanced Simulated Testing Environment:**
-    - Comprehensive testing of the entire DEX aggregator, including functionality and performance. This will involve simulating testing transaction reliability across multiple chains, and ensuring the stability of the platform under different scenarios (e.g., high transaction volume, fluctuating slippage).
-- **User Transaction History:**
+    - Automated route optimization to ensure that users are always getting the most cost-efficient swap by comparing fees, quote price and slippage across various DEXes(e.g. Polkadot Asset Hub DEX and Hydration DEX).
+- **Chopsticks simulation**
+    - Chopsticks simulation to test all the features mentioned above.
+- **User Transaction History**
     - Implementation of user transaction history, enabling users to view their past swaps.
 
 Note: for parachain DEX integration we will do for Hydration only as of now. 
@@ -252,17 +257,18 @@ Note: for parachain DEX integration we will do for Hydration only as of now.
 | Number | Deliverable | Specification |
 | --- | --- | --- |
 | **0a.** | License | GPLv3  |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
 | **0c.** | Testing and Testing Guide | Tutorial that explains how to test all deliverables of this milestone. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article for the work done. |
-| 1. | **Cross-Chain (XCM) APIs and DEX Swap Integration** | (as mentioned above) |
-| 2. | **Slippage Control and Protection** | (as mentioned above) |
-| 3. | **Real-time Fee Updates** | (as mentioned above) |
-| 4. | **Multi Asset Pair Swap** | (as mentioned above) |
-| 5. | **Optimized Routing** | (as mentioned above) |
-| 6. | **Advanced Simulated Testing Environment** | (as mentioned above) |
-| 7 | **User Transaction History** | (as mentioned above) |
+| 0e. | Article | We will publish an article for the work done. |
+| 1. | **Cross-Chain (XCM) APIs** | (as mentioned above) |
+| 2. | **Asset Balance** | (as mentioned above) |
+| 3. | **Slippage Control and Protection** | (as mentioned above) |
+| 4. | **Real-time Fee Updates** | (as mentioned above) |
+| 5. | **Asset Pair Swap** | (as mentioned above) |
+| 6. | **Optimized Routing** | (as mentioned above) |
+| 7. | **Chopsticks simulation** | (as mentioned above) |
+| 8 | **User Transaction History** | (as mentioned above) |
 
 
 ## Future Plans
