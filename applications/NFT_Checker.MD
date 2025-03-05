@@ -170,14 +170,14 @@ Roberts**.
 
 - **Total Estimated Duration:** 12 weeks
 - **Full-Time Equivalent (FTE):**  6 FTE
-- **Total Costs:** 100,000 USD
+- **Total Costs:** 90,000 USD
 - **DOT %:** 50% (Percentage of Total Costs to be paid in vested DOT)
 
 ### Milestone 1 —  Integration of Polkadot Blockchain
 
 - **Estimated duration:** 1 month
 - **FTE:**  6
-- **Costs:** 50,000 USD
+- **Costs:** 40,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -188,7 +188,6 @@ Roberts**.
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
 | 1. | Polkadot SDK integration | Fully functional live demo of NFT Checker showcasing blockchain features; Verified and operational on-chain transaction systems. Deployed on [https://polkadot-dapp.nftchecker.tech](https://dapp.nftchecker.tech)|
-| 2. | Audit | Software certification by a third party company |
 
 ### Milestone 2 - Development of SaaS Onboarding Module
 
