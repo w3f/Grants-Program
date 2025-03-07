@@ -4,8 +4,7 @@
 - **Payment Details:**
   - **DOT**:16PDdKmaQzqHEKRob87vEsjHS4p9hHV7AcmTnai7hFVkchcr
   - **Payment**: In case of payment in **USDC**: 16PDdKmaQzqHEKRob87vEsjHS4p9hHV7AcmTnai7hFVkchcr
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1, 2 or 3
-  Level 2
+- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 ## Project Overview :page_facing_up:
 
