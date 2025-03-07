@@ -27,6 +27,7 @@ Key features include:
 
 ### Deliverables
 
+- **License:** Apache 2.0 license ensuring open source compliance and contribution guidelines.
 - **Mockups & UI Designs:** A Figma design file that includes user-friendly interfaces for market creation, participation, and token management. The mockups ensure seamless user experience.
 - **Data Models & APIs:** Backend APIs and database structures for managing prediction events, trades, and token rewards. The data layer incorporates advanced query optimizations for real-time updates.
 - **Technology Stack:**
@@ -37,6 +38,8 @@ Key features include:
   - Platform usage manuals.
   - SDK integration guides.
   - Smart contract APIs and examples.
+- **Tests:** Comprehensive test suite for smart contracts and frontend components to ensure reliability and security.
+- **Testing Guide:** Step-by-step instructions for running tests locally and validating functionality across different components.
 - **Proof-of-Concept (PoC)/Minimum Viable Product (MVP):** Initial version of the platform with functionalities like market creation, participation, and token staking.
 
 ### Smart Contract Details
@@ -45,7 +48,7 @@ Key features include:
     
 #### Overview of Smart Contracts in Prediqs
 
-The smart contracts powering Prediqs are designed to ensure security, scalability, and flexibility. These contracts integrate seamlessly with Substrate’s modular architecture, enabling advanced functionality and interoperability within the Polkadot ecosystem.
+The smart contracts powering Prediqs are designed to ensure security, scalability, and flexibility. These contracts integrate seamlessly with Substrate's modular architecture, enabling advanced functionality and interoperability within the Polkadot ecosystem.
 
 #### Core Components
 
@@ -88,8 +91,11 @@ Prediqs integrates advanced AI algorithms to assist in market resolution by:
 - Analyzing large datasets in real time to predict outcomes more accurately.
 - Offering AI generated insights to improve decision-making for participants.
 - Reducing bias in market outcomes by leveraging impartial AI based resolutions.
+- Providing personalized market recommendations based on user preferences and past participation patterns.
+- Implementing natural language processing to interpret complex market conditions and translate them into clear outcomes.
+- Using machine learning models to detect anomalies in trading patterns that might indicate market manipulation.
 
-The AI systems will continuously learn and adapt, ensuring that predictions and resolutions are based on the most reliable data.
+The AI systems will continuously learn and adapt, ensuring that predictions and resolutions are based on the most reliable data. Our proprietary deep learning models analyze historical market performance alongside real-time external data sources to provide users with actionable intelligence that guides their prediction strategies.
 
 ### Oracle Integration
 
@@ -103,7 +109,7 @@ Oracles enhance trust and transparency, ensuring that market outcomes are determ
 
 ### Infinite Scrolling UI
 
-The platform’s UI has been upgraded to include an **infinite scrolling feature**, which:
+The platform's UI has been upgraded to include an **infinite scrolling feature**, which:
 
 - Provides a seamless browsing experience for users by loading new markets dynamically as they scroll.
 - Reduces page load times and improves performance by fetching content incrementally.
@@ -123,11 +129,17 @@ This feature creates a modern, intuitive interface that encourages users to expl
 
 - **Cross-Chain Functionality:**
   - Supports communication with other parachains, enabling cross-chain prediction markets.
-  - Utilizes Polkadot’s XCM (Cross-Consensus Messaging) for seamless interoperability.
+  - Utilizes Polkadot's XCM (Cross-Consensus Messaging) for seamless interoperability.
 
 - **Upgradability:**
   - Supports future updates without disrupting the existing ecosystem.
   - Modular contract design allows individual components to be upgraded independently.
+
+- **AI Predictive Analytics Dashboard:**
+  - Provides users with AI-powered insights on market trends and potential outcomes.
+  - Features visual representations of prediction probabilities and confidence intervals.
+  - Offers sentiment analysis of market discussions to gauge community sentiment.
+  - Empowers users with data-driven decision support for more informed predictions.
 
 
 ### Security Measures
@@ -139,6 +151,7 @@ This feature creates a modern, intuitive interface that encourages users to expl
 - **Fraud Prevention:**
   - Implements advanced fraud detection algorithms to identify and mitigate malicious behavior.
   - Includes automated dispute resolution mechanisms for contested markets.
+  - Leverages AI pattern recognition to identify suspicious trading patterns in real-time.
 
 - **Audits and Bug Bounties:**
   - Conducts regular security audits by reputable firms.
@@ -160,7 +173,7 @@ This feature creates a modern, intuitive interface that encourages users to expl
 
 ### Problem Statement
 
-Prediction markets are often centralized, costly, and limited in scope. Prediqs addresses these issues by offering a decentralized, user-driven platform built on Polkadot’s robust infrastructure.
+Prediction markets are often centralized, costly, and limited in scope. Prediqs addresses these issues by offering a decentralized, user-driven platform built on Polkadot's robust infrastructure.
 
 ### Target Audience
 
@@ -171,11 +184,11 @@ Prediction markets are often centralized, costly, and limited in scope. Prediqs 
 
 ### Evidence of Need
 
-Surveys and market analyses highlight the growing interest in decentralized prediction markets. The current centralized models face scalability issues and lack transparency, making Prediqs’ decentralized approach a significant improvement.
+Surveys and market analyses highlight the growing interest in decentralized prediction markets. The current centralized models face scalability issues and lack transparency, making Prediqs' decentralized approach a significant improvement.
 
 ### What Makes Prediqs Different From Other Prediction Markets? 
 
-Unlike existing platforms, Prediqs emphasizes **user-generated markets** and Polkadot’s cross-chain capabilities. These ensure scalability and broader integration possibilities compared to siloed platforms.
+Unlike existing platforms, Prediqs emphasizes **user-generated markets** and Polkadot's cross-chain capabilities. These ensure scalability and broader integration possibilities compared to siloed platforms. Our AI-powered analytics layer also provides users with intelligence and insights that are unavailable on competing platforms, creating a more informed and efficient prediction experience.
 
 ---
 
@@ -203,7 +216,7 @@ Unlike existing platforms, Prediqs emphasizes **user-generated markets** and Pol
 - **Registered Address:** Çarşı Mahallesi Panaroma Sokak Rotamavi Rezidans 18/A Istanbul/Turkey 34909
 - **Registered Legal Entity:** Paff Studios Yazılım Donanım ve Ticaret Limited Şirketi
 
-### Team’s Experience
+### Team's Experience
 
 Paff Studios is young group that combines expertise in blockchain development, smart contract design, and user experience. Previous projects include:
 
@@ -250,6 +263,7 @@ Paff Studios is young group that combines expertise in blockchain development, s
 | **2.** | AI Integration       | Integration of **AI** into the 'Discover' page of PoC design |
 | **3.** | Basic Smart Contract | Written in **Solidity**, a base smart contract that covers basic features (Market Creation / Resolution functions, Basic price calculation etc.) |
 | **4.**  | Deploying the Contracts| Deploying the smart contracts to the **Westend Asset Hub** for testing |
+| **5.**  | Basic Working Frontend | A functional frontend application with core user interface components connected to deployed smart contracts |
 
 
 
@@ -258,8 +272,8 @@ Paff Studios is young group that combines expertise in blockchain development, s
 ## Future Plans
 
 - **Short Term:** Launch the platform on **Westend Asset Hub**, gather user feedback, refine features, and implement security features to protect against reentrancy and fraud attacks.
-- **Medium Term:** Deploy on **Polkadot Asset Hub**.
-- **Long Term:** Expand integrations with other parachains, introduce advanced market dynamics, and enable cross-chain prediction markets.
+- **Medium Term:** Deploy on **Polkadot Asset Hub**, enhance AI capabilities with more advanced prediction models and user-specific insights.
+- **Long Term:** Expand integrations with other parachains, introduce advanced market dynamics, and enable cross-chain prediction markets. Develop a comprehensive AI ecosystem that learns from market behaviors across multiple chains to provide increasingly accurate predictive tools.
 
 ---
 ## **Prediqs vs. Competitors: Detailed Comparison Table**
@@ -269,12 +283,12 @@ Paff Studios is young group that combines expertise in blockchain development, s
 | **Blockchain**              | Polkadot (XCM-enabled cross-chain)                                                    | Polkadot/Substrate                                        | Ethereum (L1) + Polygon (L2)                              | Polygon                                                   | Ethereum/Polygon via Azuro                                | Ethereum (regulated)                                      | Ethereum + Polygon                                        |
 | **Cross-Chain Support**     | ✅ **Multi-chain** (Ethereum, Polygon, Polkadot parachains via XCM)                    | ❗ Polkadot parachains only                                | ❌ Ethereum/Polygon only                                   | ❌ Polygon-only                                           | ❗ Ethereum/Polygon via Azuro                              | ❌ Single-chain                                           | ❌ Ethereum/Polygon only                                  |
 | **Smart Contract Architecture** | Smart-Contract-based, optimized for prediction markets                          | Native Substrate modules                                  | EVM-based order-book model                                 | Simplified EVM contracts                                  | Peer-to-peer liquidity pools ("Liquidity Tree")           | Traditional EVM contracts                                 | AMM-based (constant-product formula)                     |
-| **AI Integration**          | ✅ **Advanced Layer**:<br>- Real-time analytics<br>- Risk scoring<br>- Sentiment analysis | ❌ None                                                   | ❌ No AI layer                                             | ❌ Basic trend analysis                                   | ❌ None                                                    | ❌ None                                                    | ❌ None                                                    |
+| **AI Integration**          | ✅ **Advanced Layer**:<br>- Real-time analytics<br>- Risk scoring<br>- Sentiment analysis<br>- Personalized market recommendations<br>- NLP for outcome interpretation<br>- ML-based market manipulation detection | ❌ None                                                   | ❌ No AI layer                                             | ❌ Basic trend analysis                                   | ❌ None                                                    | ❌ None                                                    | ❌ None                                                    |
 | **Governance Model**        | ✅ **DAO-driven** (on-chain proposals + voting)                                       | Polkadot-native on-chain governance                       | Investor-controlled                                        | Limited community input                                   | Protocol-controlled updates                               | Centralized/regulatory oversight                          | Minimal on-chain governance                               |
 | **User Experience**         | ✅ **Web2-Like**:<br>- Gamification (quests, leaderboards)<br>- Social logins<br>- Simplified onboarding | Technical UI requiring blockchain knowledge                                  | Complex order-book for advanced traders                    | Minimalist UI for rapid trading                           | Sports-focused UX with live odds                          | Traditional derivatives-like interface                    | AMM-based interface for casual traders                   |
 | **Market Focus**            | **Broad**:<br>- Sports<br>- Finance<br>- Politics<br>- Social events                  | Community-driven events                                   | High-stakes politics/economics                             | Trending/short-term topics                                | **Niche**: Sports/gaming                                  | Regulated political outco<mes                              | Frequent, small-bet markets                               |
 | **Liquidity Model**         | **Hybrid**:<br>- Liquidity pools<br>- Cross-chain incentives                              | On-chain liquidity aggregation                            | Order-book with deep liquidity                             | Simplified order-book                                     | Peer-to-peer liquidity pools                              | Centralized liquidity                                     | AMM-driven liquidity                                      |
-| **Security Model**          | ✅ **Polkadot shared security** + DAO audits                                          | Polkadot’s shared security                                | Ethereum/Polygon validators + UMA oracle                   | Polygon’s PoS consensus                                   | Azuro Protocol security                                   | Regulatory compliance                                     | Ethereum/Polygon security                                 |
+| **Security Model**          | ✅ **Polkadot shared security** + DAO audits                                          | Polkadot's shared security                                | Ethereum/Polygon validators + UMA oracle                   | Polygon's PoS consensus                                   | Azuro Protocol security                                   | Regulatory compliance                                     | Ethereum/Polygon security                                 |
 | **Development Speed**       | ✅ **Rapid**: Lightweight contracts + Polkadot SDK                                    | ❌ Slow (Substrate-native tooling)                        | Limited by Ethereum scalability                            | Basic EVM tooling                                         | Azuro Protocol integration                                | Regulatory hurdles                                        | Standard EVM development                                  |
 | **Wallet Support**          | Nova Wallet, SubWallet, Talisman, Polkadot.js + social login                         | Polkadot.js, Talisman                                     | MetaMask, WalletConnect                                    | Polygon Wallet, MetaMask                                  | MetaMask, WalletConnect                                   | Traditional wallets + KYC                                 | MetaMask, TrustWallet                                     |
 | **Adoption Metrics**        | ✅ **Funnel 25k+ users** (from our own sports AI platform)<br>DAO incentives                        | Polkadot-native community                                 | High liquidity but niche audience                          | Small-scale traders                                       | Sports/gaming niche                                       | Regulated user base                                       | AMM-focused traders                                       |
@@ -287,7 +301,7 @@ Paff Studios is young group that combines expertise in blockchain development, s
 
 **Prediqs** is positioned to lead the decentralized prediction market space by merging:  
 - 🔗 **Cross-chain interoperability** (via Polkadot XCM).  
-- 🧠 **AI-powered decision-making** for traders.  
+- 🧠 **AI-powered decision-making** for traders, featuring advanced machine learning models that analyze market trends, user behavior, and external data to provide actionable insights.  
 - 🎮 **Gamification** to bridge Web2 and Web3 users.  
 - ⚡ **PVM scalability** and sub-cent fees.  
 
