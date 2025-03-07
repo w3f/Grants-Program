@@ -1,4 +1,4 @@
-### 🚀 Project Abstract
+### 💪 Project Abstract
 
 > Please replace these instructions with a brief description of your project summarising key points (1-2 paragraphs).
 
