@@ -1,6 +1,6 @@
-# NFT Checker
+# Assets Checker
 
-> DQA’s NFT Verification and Checker Tool for Secure Web3 Integration ~ [NFT Checker](https://nftchecker.tech)
+> DQA’s Digital Assets Verification and Checker Tool for Secure Web3 Integration ~ [Assets Checker](https://assestschecker.tech)
 
 - **Team Name:** [Digital Quantum Association (DQA from now on)](https://DQA.group)
 - **Payment Address:**
@@ -12,21 +12,21 @@
 
 ### Overview
 
-NFT Checker’s goal is clear: to make NFTs practical, valuable, and trusted, driving adoption across multiple sectors. With Polkadot’s infrastructure, this vision becomes scalable and impactful, positioning both NFT Checker and Polkadot as leaders in real-world blockchain applications.
+Assets Checker’s goal is clear: to make Digital Assets represented by Tokens like utility tokens, memcoins and NFTs (including all fungible/semifungible/nonfungible), a valuable and trusted asset, driving adoption across multiple sectors. With Polkadot’s infrastructure, this vision becomes scalable and impactful, positioning both Assets Checker and Polkadot as leaders in real-world blockchain applications.
 
-NFT Checker addresses a critical need in the NFT market: trust and utility. By bridging Web2 and Web3, this platform enables users to verify and leverage NFTs securely for real-world applications, including healthcare, wellness tourism, e-commerce, gaming and many more.
+Assets Checker addresses a critical need in the Tokens/NFTs market: trust and utility. By bridging Web2 and Web3, this platform enables users to verify and leverage Tokens/NFTs securely for real-world applications, including healthcare, wellness tourism, e-commerce, gaming and many more.
 
-This project isn’t just about recovery; it’s about redefining the purpose of NFTs. By integrating with Polkadot, NFT Checker will deliver:
+This project isn’t just about recovery; it’s about redefining the purpose of Tokens. By integrating with Polkadot, Assets Checker will deliver:
 - **Authenticity**: Robust verification systems to ensure trust and transparency.
 - **Scalability**: A seamless connection between traditional systems and decentralized platforms.
 - **Practical Utility**: Real-world value through tokenized rewards, secure services, and exclusive benefits.
-- **Fraud Prevention**: Implementing advanced anti-fraud mechanisms to combat scams that have eroded trust in the NFT market. By ensuring rigorous verification and monitoring, NFT Checker aims to restore confidence and promote a safer environment for NFT transactions.
+- **Fraud Prevention**: Implementing advanced anti-fraud mechanisms to combat scams that have eroded trust in the Tokens market. By ensuring rigorous verification and monitoring, Assets Checker aims to restore confidence and promote a safer environment for digital assets transactions.
 
 ### Project Details
 
 #### Background
 
-The NFTChecker, developed by DQA, is a solution designed to address two critical issues in the NFT market: utility gaps and trust erosion. Built to bridge real-world applications with digital ecosystems, this platform isn’t just about NFTs - it’s about solving real challenges.
+The Assets Checker, developed by DQA, is a solution designed to address two critical issues in the Tokens market: utility gaps and trust erosion. Built to bridge real-world applications with digital ecosystems, this platform isn’t just about Tokens - it’s about solving real challenges.
 This proposal seeks funding to:
 - **Integrate Polkadot Blockchain**: To enhance the platform’s scalability, efficiency, and security.
 - **Expand Operational Capabilities**: To deliver value through real-world applications, starting with telemedicine, e-commerce, user data management, gaming and wellness tourism.
@@ -34,57 +34,57 @@ Please check our Video [DEMO](https://www.youtube.com/watch?v=lSodxIn3Yhc)
 
 #### How it works
 
-To obtain a real-world product or service through our NFT Checker platform, follow these steps:
+To obtain a real-world product or service through our Assets Checker platform, follow these steps:
 
-*1. Acquire the NFT:*
- - a) Visit a supported NFT marketplace.
+*1. Acquire the Assets:*
+ - a) Visit a supported DEX/NFT marketplace.
  - b) Log in with your digital wallet.
- - c)Purchase the desired NFT associated with the product or service you're interested in.
+ - c)Purchase the desired Digital Assets associated with the product or service you're interested in.
 
 *2. Redeem Your Product or Service:*
- - a) Navigate to the NFT Checker platform.
- - b) Log in using the same wallet to access your NFT holdings.
- - c) Select the NFT corresponding to the product or service you wish to claim.
+ - a) Navigate to the Assets Checker platform.
+ - b) Log in using the same wallet to access your Token/NFT holdings.
+ - c) Select the Token/NFT corresponding to the product or service you wish to claim.
  - d) Initiate the redemption process to receive a voucher or code for the real-world product or service.
- - e) During this process, NFT Checker temporarily locks your NFT in a smart contract to prevent double-spending.
+ - e) During this process, Assets Checker temporarily locks your Token/NFT in a smart contract to prevent double-spending.
 
-*3. Retrieve Your NFT:*
- - a) After the specified locking period (which varies depending on the NFT collection and associated partner agreements), return to NFT Checker.
+*3. Retrieve Your Assets:*
+ - a) After the specified locking period (which varies depending on the Token/NFT collection and associated partner agreements), return to Assets Checker.
  - b) Log in with your wallet.
- - c) Withdraw your NFT from the smart contract back into your wallet.
+ - c) Withdraw your Digital Assets from the smart contract back into your wallet.
 
 *4. Future Actions:*
-- a) Once reclaimed, you can choose to resell, gift, or utilize the NFT again, depending on its terms and conditions.
-- b) This streamlined process ensures a secure and efficient way to redeem NFTs for tangible products and services, maintaining the integrity of each transaction.
+- a) Once reclaimed, you can choose to resell, gift, or utilize the Token/NFT again, depending on its terms and conditions.
+- b) This streamlined process ensures a secure and efficient way to redeem Tokens/NFTs for tangible products and services, maintaining the integrity of each transaction.
 
-![NFT CHECKER TOOL INFOGRAPHIC](https://drive.google.com/uc?export=view&id=1n0Wqowu0kiFVHxBp9DkpkAcUCtQk_Apc)
+![ASSETS CHECKER TOOL INFOGRAPHIC](https://drive.google.com/uc?export=view&id=1n0Wqowu0kiFVHxBp9DkpkAcUCtQk_Apc)
 
 #### The Problems We’re Solving
 
-The NFT space has been plagued by **scams** and **a lack of practical use cases**, eroding trust and slowing adoption. With **NFT Checker**, we are addressing these issues head-on:
+The Tokens/NFTs space has been plagued by **scams** and **a lack of practical use cases**, eroding trust and slowing adoption. With **Assets Checker**, we are addressing these issues head-on:
 - **Restoring Trust**: By enabling **authenticity, verification, and transparency.**
-- **Redefining Utility**: By creating a platform that empowers NFTs to serve real-world purposes, from healthcare to e-commerce.
+- **Redefining Utility**: By creating a platform that empowers Tokens/NFTs to serve real-world purposes, from healthcare to e-commerce.
 
 ### Ecosystem Fit
 
 #### WHy Polkadot?
 
-Polkadot is particularly strong in the **NFT sector**, with platforms like **Unique Network, KodaDot, and NFTMozaic** driving innovation and adoption. These projects enable seamless NFT minting, trading, and cross-chain transfers, enhancing liquidity and market accessibility.
+Polkadot is particularly strong in the **Digital Assets sector**, with platforms like **Unique Network, KodaDot, and NFTMozaic** driving innovation and adoption. These projects enable seamless NFT minting, trading, and cross-chain transfers, enhancing liquidity and market accessibility.
 
-By leveraging Polkadot’s **interoperable ecosystem and NFT-focused infrastructure**, we unlock new opportunities for **cross-chain NFT verification, data-driven insights, and scalable digital asset management**.
+By leveraging Polkadot’s **interoperable ecosystem and Token-focused infrastructure**, we unlock new opportunities for **cross-chain Token verification, data-driven insights, and scalable digital asset management**.
 
-#### Unlocking NFT Liquidity and Data-Driven Monetization
+#### Unlocking Tokens/NFTs Liquidity and Data-Driven Monetization
 
 ![ECOSYSTEM HH Hub by DQA in POLKADOT](https://drive.google.com/uc?export=view&id=1YGQiY4rvFpx4T6N1tXF0kk7zMM4GczIv)
 
-Polkadot provides the infrastructure, but the real value comes from how we leverage NFT data. NFT Checker does more than just verify assets—it transforms fragmented NFT markets into structured, monetizable ecosystems. With our ability to **track every NFT holder across Polkadot’s parachains**, we are not just ensuring authenticity, we are unlocking new business pipelines.
-The NFT space is evolving beyond collectibles. **Every NFT holder represents a recurring revenue opportunity**, and our data-driven model turns that potential into tangible business outcomes.
-- *Data = Business* – NFT ownership, activity, and transaction patterns become actionable market intelligence.
+Polkadot provides the infrastructure, but the real value comes from how we leverage Tokens/NFTs data. Assets Checker does more than just verify assets—it transforms fragmented Tokens/NFTs markets into structured, monetizable ecosystems. With our ability to **track every Digital Asset holder across Polkadot’s parachains**, we are not just ensuring authenticity, we are unlocking new business pipelines.
+The Memecoin/NFT space is evolving beyond collectibles. **Every Memecoin/NFT holder represents a recurring revenue opportunity**, and our data-driven model turns that potential into tangible business outcomes.
+- *Data = Business* – Digital Asset ownership, activity, and transaction patterns become actionable market intelligence.
 - *Cross-Chain Market Expansion* – We unify NFT data across Unique Network, KodaDot, and NFTMozaic, making Polkadot’s fragmented NFT ecosystem a single, monetizable asset pool.
 - *Real-World Conversion* – Raw blockchain data is transformed into business opportunities in Web2 and Web3, ensuring sustainable revenue streams.
-- *Continuous Monetization* – Once an NFT holder is identified, they become an ongoing engagement point for targeted sales, gaming incentives, and ecosystem interactions.
+- *Continuous Monetization* – Once an  Digital Asset holder is identified, they become an ongoing engagement point for targeted sales, gaming incentives, and ecosystem interactions.
 
-By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s advanced verification and analytics**, we are building more than a tool - we are creating a **data-powered engine that turns every NFT transaction into a long-term economic opportunity**.
+By integrating **Polkadot’s cross-chain infrastructure with Assets Checker’s advanced verification and analytics**, we are building more than a tool - we are creating a **data-powered engine that turns every  Digital Asset transaction into a long-term economic opportunity**.
 
 ## Team :busts_in_silhouette:
 
@@ -101,7 +101,7 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
 
 - **Contact Name:** Raul C. Săraru
 - **Contact Email:** raul@dqa.group
-- **Website:** [https://DQA.group](https://DQA.group ) | [https://NFTChecker.Tech](https://NFTChecker.Tech)
+- **Website:** [https://DQA.group](https://DQA.group ) | [https://AssetsChecker.Tech](https://AssetsChecker.Tech)
 
 ### Legal Structure
 
@@ -111,8 +111,8 @@ By integrating **Polkadot’s cross-chain infrastructure with NFT Checker’s ad
     - Romania
 - **Registered Legal Entity:** DIGITAL QUANTUM ASSOCIATION S.R.L.
 - **Intellectual Property**
-    - The NFT Checker is owned exclusively by [DQA](https://dqa.group), and its legal entity **DIGITAL QUANTUM ASSOCIATION S.R.L.**, and protected by our partner professional IP firm and our in-house corporate lawyers.
-   - *Intellectual Property Rights* include copyrights, trademarks, design rights, patents, trade secrets, and all proprietary rights related to the NFT Checker Software – including its source code, design, functionalities, and any associated documentation or derivative works.
+    - The Assets Checker is owned exclusively by [DQA](https://dqa.group), and its legal entity **DIGITAL QUANTUM ASSOCIATION S.R.L.**, and protected by our partner professional IP firm and our in-house corporate lawyers.
+   - *Intellectual Property Rights* include copyrights, trademarks, design rights, patents, trade secrets, and all proprietary rights related to the Assets Checker Software – including its source code, design, functionalities, and any associated documentation or derivative works.
     - *Legal Representation*: Our **IP filing process** is supported by our partner firm [VD Law Group](https://www.vdlawgroup.com), legally represented by **Sergiu-Traian Vasilescu**, Managing Partner.
     - This document is also represented by our in-house **CFO** and Corporate Lawyer Specialist, **Zach 
 Roberts**.
@@ -120,9 +120,9 @@ Roberts**.
 ### Team's experience
 
 - *Raul C. Săraru*: Serial entrepreneur with 20+ years of experience in various industries.
-- *Andrei Petri*: A Senior Software Engineer with extensive expertise in applications and the main Developer behind the NFT Checker.
+- *Andrei Petri*: A Senior Software Engineer with extensive expertise in applications and the main Developer behind the Assets Checker.
   > Andrei is signing up in the **[Polkadot academy](https://polkadot.com/blockchain-academy)**, and taking part in the second wave of PBA-X, starting April 14th 
-- *Sergi Valero* and Moonlorian serve as the Blockchain Integrator for our NFT Checker software.
+- *Sergi Valero* and Moonlorian serve as the Blockchain Integrator for our Assets Checker software.
 - *Adam Noaf*: Blockchain & Web3 | Advisor | Ambassador.
 - *Ovidiu Badila*: Social Campaigns, building and maintaining community.
 - *Zack Roberts*: Zach’s main role is to manage our Legal Department, Intellectual Property, and Patents.
@@ -149,22 +149,22 @@ Roberts**.
     - Created and prepared for deployment with active NFT collections, including **[Skully](https://dapp.nftchecker.tech/en/collection/skully)** and **[GAIA](https://dapp.nftchecker.tech/en/collection/gaia)**.
     - Proven cross-chain capabilities and scalable backend infrastructure.
 - ***Tokenized Rewards and E-Commerce Features***:
-    - Demonstrated how NFTs provide value through **rewards and e-commerce applications**.
-    - Empowered businesses to use NFTs for customer incentives and secure transactions.
+    - Demonstrated how Tokens/NFTs provide value through **rewards and e-commerce applications**.
+    - Empowered businesses to use Tokens/NFTs for customer incentives and secure transactions.
     - **Scalable Backend System**:
-        - Built to support *SaaS onboarding for NFT projects*, laying the groundwork for broader industry integration.
+        - Built to support *SaaS onboarding for Utility/Memecoin/NFT projects*, laying the groundwork for broader industry integration.
 
 
 ## Development Roadmap :nut_and_bolt:
 
 ***Immediate Focus Post-Funding***:
-- **Development of NFT Checker**:
-  - *Primary Goal*: Finalize the integration of the **Polkadot blockchain** to ensure the NFT Checker operates with high scalability, security, and efficiency.
+- **Development of Assets Checker**:
+  - *Primary Goal*: Finalize the integration of the **Polkadot blockchain** to ensure the Assets Checker operates with high scalability, security, and efficiency.
  - **Key Objectives**:
    - Implement on-chain and off-chain verification systems.
-   - Roll out a **SaaS onboarding module** to empower businesses to manage NFT collections seamlessly.
+   - Roll out a **SaaS onboarding module** to empower businesses to manage Tokens/NFTs collections seamlessly.
    - Launch targeted marketing campaigns to attract early adopters, onboard projects, and demonstrate platform capabilities.
-- **Outcome**: Establish a trusted, user-friendly platform for NFT verification and utility across healthcare, e-commerce, and other sectors.
+- **Outcome**: Establish a trusted, user-friendly platform for Digital Assets verification and utility across healthcare, e-commerce, and other sectors.
 
 ### Overview
 
@@ -187,7 +187,7 @@ Roberts**.
 | **0c.** | Testing and Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
-| 1. | Polkadot SDK integration | Fully functional live demo of NFT Checker showcasing blockchain features; Verified and operational on-chain transaction systems. Deployed on [https://polkadot-dapp.nftchecker.tech](https://dapp.nftchecker.tech)|
+| 1. | Polkadot SDK integration | Fully functional live demo of Assets Checker showcasing blockchain features; Verified and operational on-chain transaction systems. Deployed on [https://polkadot-dapp.assetschecker.tech](https://dapp.assetschecker.tech)|
 
 ### Milestone 2 - Development of SaaS Onboarding Module
 
@@ -202,8 +202,8 @@ Roberts**.
 | **0c.** | Testing and Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
-| 1. | SaaS platform including the following features | **Account Creation Page**: User-friendly onboarding process; **Add and Configure Collections**: Intuitive tools for managing NFTs; **Verification Features**: Compliance checks, authenticity validation, and scamming alert systems; **Upgraded Back Office**: Enhanced management dashboard for users and admins.|
-| 2. | Live onboarding module | Deployed on [https://polkadot-onboarding.nftchecker.tech](https://nft-checker-app-raulcsararu.replit.app/auth)|
+| 1. | SaaS platform including the following features | **Account Creation Page**: User-friendly onboarding process; **Add and Configure Collections**: Intuitive tools for managing Tokens/NFTs; **Verification Features**: Compliance checks, authenticity validation, and scamming alert systems; **Upgraded Back Office**: Enhanced management dashboard for users and admins.|
+| 2. | Live onboarding module | Deployed on [https://polkadot-onboarding.assetschecker.tech](https://nft-checker-app-raulcsararu.replit.app/auth)|
 
 ### Milestone 3 - Scale the project
 
@@ -218,27 +218,27 @@ Roberts**.
 | **0c.** | Testing and Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains this milestone achieved as part of the Polkadot grant. Medium: LinkedIn; Language: English |
-| 1. | Drive adoption within the Polkadot ecosystem |Targeted social media ads across platforms like LinkedIn, Twitter, and Telegram; Host live demos and webinars showcasing NFT Checker’s capabilities; Establish partnerships with industry influencers and key stakeholders.|
+| 1. | Drive adoption within the Polkadot ecosystem |Targeted social media ads across platforms like LinkedIn, Twitter, and Telegram; Host live demos and webinars showcasing Assets Checker’s capabilities; Establish partnerships with industry influencers and key stakeholders.|
 | 2. | Volume KPI's | 1,500 users; 15,000 transactions; 10 integrated projects |
 
 ## Future Plans
 
 ### Mid-Term Goals - Growth phase (4+ Months)
 - 1. Scalable SaaS Platform
-  - We aim to launch a **scalable SaaS platform** that enables effortless integration of NFT projects, supporting businesses in unlocking blockchain’s potential. This platform will serve as the backbone for NFT Checker, delivering secure and efficient solutions tailored to various industries.
+  - We aim to launch a **scalable SaaS platform** that enables effortless integration of Utility tokens, memecoins and NFT projects; supporting businesses in unlocking blockchain’s potential. This platform will serve as the backbone for Assets Checker, delivering secure and efficient solutions tailored to various industries.
 - 2. Token **TGE Launch** for the the **Telemedicine Ecosystem**: This semester, we are proposing to align the Telemedicine Ecosystem’s launch of the token (TGE), planned to use the launchpad **[Polimec](https://www.polimec.org)**
 - 3. **Smart Contract development**: Adding the Smart Contract locking feature, as soon as **[Pop](https://onpop.io)** and/or **[Plaza](https://www.rob.tech/blog/plaza/)** will be available.
-- 4. Sector Adoption and Growth - **Real-World Applications** of NFT Checker integration
+- 4. Sector Adoption and Growth - **Real-World Applications** of Assets Checker integration
   - a) **Healthcare** - [HHHub.tech](https://hhhub.tech)
   - b) **E-Commerce** - [HHHub.Store](https://hhhub.store)
   - c) **Scalable Cash Flow Driver**:
     - Attracting wellness-focused vendors and products to ensure rapid onboarding and customer acquisition.
     - *Enables early financial returns to support the broader ecosystem development*.
-  - d) **Potential Sectors for Immediate and Near-Future Expansion** Beyond healthcare and e-commerce, **NFT Checker** is strategically designed to expand into additional high-value sectors:
-    - *Gaming*: Ensures secure in-game NFT usage, protecting player investments and enhancing ecosystem trust.
+  - d) **Potential Sectors for Immediate and Near-Future Expansion** Beyond healthcare and e-commerce, **Assets Checker** is strategically designed to expand into additional high-value sectors:
+    - *Gaming*: Ensures secure in-game memcoins and NFTs usage, protecting player investments and enhancing ecosystem trust.
     - *Art & Collectibles*: Validates originality and ensures provenance for digital artworks and collectibles.
-    - *Finance & Banking*: Supports asset tokenization, NFT-backed insurance policies, and DeFi collateral verification.
-    - *Real Estate*: Facilitates NFT-based ownership and rental agreements for properties.
+    - *Finance & Banking*: Supports asset tokenization, Token-backed or NFT-backed insurance policies, and DeFi collateral verification.
+    - *Real Estate*: Facilitates Utility Token- based or NFT-based ownership and rental agreements for properties.
     - *Supply Chain & Logistics*: Tracks product provenance and shipment contracts, ensuring ethical sourcing and reliability.
     - *Entertainment & Media*: Authenticates NFT-based tickets and verifies digital rights for creative content.
 
@@ -248,18 +248,18 @@ Roberts**.
 ### Long-Term Vision - Expansion phase (12+ months)
 
 - **Transformative Telemedicine Ecosystem - [HHHub.tech](https://hhhub.tech) - powered by [DQA](https://dqa.group)**:
-    - Leverage **NFT Checker** for secure, verifiable healthcare services and treatments.
+    - Leverage **Assets Checker** for secure, verifiable healthcare services and treatments.
     - Align funding efforts through **ICO** and **TGE** to sustain development; detailed in this proposal.
     - Focus on integrating telemedicine with blockchain to improve accessibility and transparency.
 - **Expansion Across Sectors:**
-    - Broaden NFT Checker’s applications into gaming, wellness tourism, supply chain logistics, real estate, and other high-value industries.
+    - Broaden Assets Checker’s applications into gaming, wellness tourism, supply chain logistics, real estate, and other high-value industries.
     - Strengthen partnerships and scalability for global adoption.
 - **[HHHub.Store](https://hhhub.store/)** - a ready-to-launch e-commerce platform prioritized for immediate cash flow.
     - Goal: Onboard vendors, producers, and distributors rapidly.
-    - Enable secure and verified transactions using NFT Checker, ensuring trust for customers and businesses alike.
+    - Enable secure and verified transactions using Assets Checker, ensuring trust for customers and businesses alike.
  - **[Whitepaper](https://docs.google.com/document/d/1-q1izYliNeE9Is2RL5dVNt-3bMl57asOT5LB0gL_ltc/edit?usp=sharing) DQA.**
 
-![INFOGRAPHICS NFT CHECKER - LONG-TERM VISION](https://drive.google.com/uc?export=view&id=15devXEdFla1yuDuotRqrXrBVp1_5Id0d)
+![INFOGRAPHICS ASSETS CHECKER - LONG-TERM VISION](https://drive.google.com/uc?export=view&id=15devXEdFla1yuDuotRqrXrBVp1_5Id0d)
 
 ### Grant impact
 
