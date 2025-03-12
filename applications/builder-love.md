@@ -161,35 +161,161 @@ Resources required for migration:
     - Estimated hourly rate: $145
     - Total estimated expense: $23,200 (founder’s compensation)
     - Role will be fulfilled by founding member
-- Saas licenses for cloud hosting API and front end, AI tools, such as cursor.ai and gemini
-    - google cloud sql postgres database: $150 per month
-    - vercel for public beta: $20 per month
-    - Cursor.ai: $65 per month
-    - Gemini: $65 per month
-    - Miscellaneous buffer: $700
-    - Total cost: $1,000
+
+## Milestone 1 - create data infrastructure with production level availability and security
+- Estimated duration: 2 weeks
+- FTE: 2
+- Costs: $15,000
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Deliverable</th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0a.</td>
+      <td>License</td>
+      <td>MIT license/public repo</td>
+    </tr>
+    <tr>
+      <td>ob.</td>
+      <td>Documentation</td>
+      <td>Data infrastructure architecture description</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Database</td>
+      <td>Create Google cloud sql postgres instance and schemas</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cloud SQL proxy client</td>
+      <td>Configure Google sql proxy client/server daemon</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Local network</td>
+      <td>Configure Tailscale local client network for development environment</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Data orchestration</td>
+      <td>Configure Dagster daemons: webserver for monitoring, and dagster execution daemon</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Database API</td>
+      <td>Configure python Flask REST API on Google Cloud Run</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>API cache</td>
+      <td>Configure Google Cloud Memorystore for Redis to cache API responses</td>
+    </tr>
+  </tbody>
+</table>
+
+## Milestone 2 - create data interfaces
+- Estimated duration: 1 week
+- FTE: 2
+- Costs: $7,500
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Deliverable</th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0a.</td>
+      <td>License</td>
+      <td>MIT license/public repo</td>
+    </tr>
+    <tr>
+      <td>ob.</td>
+      <td>Documentation</td>
+      <td>Document the first two data ingestion interfaces--Github API and Discourse API--and associated scripts</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Compute environment</td>
+      <td>Configure Google compute engine resources for data interfaces</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Data interface scripts</td>
+      <td>Rewrite data ingestion, cleaning, and loading scripts. Moving from local Python/sqlite/JSON model to cloud postgres/Dagster/API server model</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Improve rate limit handling</td>
+      <td>Refactor current data interface scripts to more efficiently handle API rate limits in order to save time and compute costs</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>dbt transform, load, and test</td>
+      <td>Configure dbt for scheduled data normalization, cleaning, loading, and testing jobs i.e., moving data from raw -> clean -> api schemas with built in test scripts.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Milestone 3 - update charts and analytics
+- Estimated duration: 1 week
+- FTE: 2
+- Costs: $7,500
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Deliverable</th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0a.</td>
+      <td>License</td>
+      <td>MIT license/public repo</td>
+    </tr>
+    <tr>
+      <td>ob.</td>
+      <td>Documentation</td>
+      <td>Document the postgres database API that the builder.love web app will use to request data. This includes available endpoints and access control configurations.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>API authentication</td>
+      <td>Write code to authenticate and connect to API from webapp</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Query</td>
+      <td>Update react/next/tailwind project to implement functions/hooks to fetch data from the API, instead of client-side JSON</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Vercel</td>
+      <td>Update Vercel configuration with required API environment variables, and CORS (Cross-Origin Resource Sharing) on the API to allow requests from Vercel domain</td>
+    </tr>
+  </tbody>
+</table>
+
+### Deliverables
+- Data infrastructure with production level availability and security
+- Robust and efficient data pipelines that can easily expand to onboard new datasets
+- Data analytics methodology that simplifies platform front end work
 
 **Why is this work necessary?**
 
 We were able to create a minimum viable product using client-side json files generated locally using python. This process is fragile, not easily testable, will not scale, and client-side json is not suitable for complex queries. The project needs a server-side database and API to support growth beyond the MVP.
-
-## Deliverables
-- Data infrastructure with production level availability and security
-    - Google cloud sql postgres instance
-    - Highly available machines for running pipelines
-        - Google sql proxy client/server connection daemon
-        - Tailscale local client network
-        - Dagster daemons: webserver for monitoring, and dagster execution daemon
-    - Configure front end API service
-    - Create staging/production relationship
-        - Integrate Google Cloud Database Migration Service to ensure no downtime
-- Robust and efficient data pipelines that can easily expand to onboard new datasets
-    - Pipelines that connect to the right data sources
-    - Query buildout
-    - API rate handling
-    - Better testing built into pipelines to flag for issues
-- Data analytics methodology that simplifies platform front end work
-    - Standardize analytics tables, queries, charts, and front end tools so that the product team can move fast and learn
 
 ## Future Plans
 
