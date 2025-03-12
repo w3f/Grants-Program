@@ -4,7 +4,7 @@
 - **Payment Details:**
   - **DOT**: 17Z48djwTpSpC5UkebURth5mxZHr4Y1TexaRdFU7kBo5Uei
   - **Payment**: 17Z48djwTpSpC5UkebURth5mxZHr4Y1TexaRdFU7kBo5Uei (USDT)
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 3
+- **[Level]:** 3
 
 ## Project Overview :page_facing_up:
 
