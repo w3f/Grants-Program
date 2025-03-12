@@ -178,6 +178,11 @@ To ensure long-term maintenance and development:
 - We will build a community around Relaycode, encouraging open-source contributions
 - We will explore partnership opportunities with parachain teams and other projects in the ecosystem
 
+## Referral Program :moneybag: 
+
+- **Referrer:** AwesomeDOT(Fardeen Haque)
+- **Payment Address:** 12uoF3PZxDBURLVqj5DAJiyUADiqdCYwhq27wAmr2ML1L7fG (Polkadot Asset Hub)
+
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** We were encouraged to apply by the hackathon organizers after presenting our project.
