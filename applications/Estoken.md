@@ -98,7 +98,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - **Are there any projects similar to yours in related ecosystems?**  
   Projects like RealT (Ethereum) and Propy exist, but they face scalability issues and high gas fees on Ethereum. Estoken differentiates by deploying on Polkadot via Moonbeam, offering lower fees, cross-chain capabilities, and integration with Polkadot's growing DeFi ecosystem.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
