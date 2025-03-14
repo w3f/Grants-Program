@@ -1,9 +1,9 @@
 # Estoken
 
+- **Team Name:** Estoken
 - **Payment Details:**
-  - **USDC**
-  - Network: Assets Hub
-  - Address: 1RmJaMuAvvymDa1A7oGN6WCZwoAi12A7yRQEJGNFfrJ15ke
+  - **DOT**:1RmJaMuAvvymDa1A7oGN6WCZwoAi12A7yRQEJGNFfrJ15ke.
+  - **Payment**: 1RmJaMuAvvymDa1A7oGN6WCZwoAi12A7yRQEJGNFfrJ15ke(usdc)
 - **Level:** 2
 
 ## Project Overview :page_facing_up:
