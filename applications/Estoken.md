@@ -3,7 +3,8 @@
 - **Team Name:** Estoken
 - **Payment Details:**
   - **DOT**:1RmJaMuAvvymDa1A7oGN6WCZwoAi12A7yRQEJGNFfrJ15ke.
-  - **Payment**: 1RmJaMuAvvymDa1A7oGN6WCZwoAi12A7yRQEJGNFfrJ15ke(usdc)
+  - **Payment**:1RmJaMuAvvymDa1A7oGN6WCZwoAi12A7yRQEJGNFfrJ15ke(usdc)
+    network:Assets Hub
 - **Level:** 2
 
 ## Project Overview :page_facing_up:
