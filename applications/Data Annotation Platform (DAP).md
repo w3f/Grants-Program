@@ -64,14 +64,7 @@ DAP addresses the growing demand for high-quality, ethically sourced data in AI 
 - **Forum Discussions**: Polkadot and Web3 communities have expressed interest in decentralized AI solutions.
 - **Case Studies**: Centralized annotation platforms like Amazon Mechanical Turk face criticism for low wages and lack of transparency.
 
-- **Ocean Protocol**: Focuses on data monetization but does not provide annotation services.
-- **KILT Protocol**: Offers decentralized identity solutions but does not address data annotation.
-
-DAP is unique in its focus on data annotation as a service, combining privacy-preserving technologies (e.g., ZKPs) with Polkadot's interoperability. Unlike Ocean Protocol, DAP does not monetize raw data but instead provides a platform for annotators and AI developers to collaborate ethically.
-
-- **Labelbox (Centralized)**: A data annotation platform platform that lacks decentralization and privacy features, raising concerns about data security and user control.
-- **Hive (Blockchain-Based)**:  Focuses on AI training but does not specialize in annotation services, limiting its utility for data providers and annotators.
-DAP stands out by leveraging Polkadot's strengths to create a decentralized, privacy-first annotation platform that addresses the limitations of both centralized and blockchain-based alternatives.
+Within the Polkadot ecosystem, DAP uniquely focuses on data annotation as a service with privacy-preserving technologies like ZKPs and Polkadot's interoperability, distinguishing it from Ocean Protocol, which targets data monetization without annotation services, and KILT Protocol, which provides decentralized identity solutions but not data annotation, while outside Polkadot, DAP surpasses centralized competitors like Labelbox, which lacks decentralization and privacy features, and blockchain-based Hive, which focuses on AI training without specializing in annotation, by leveraging Polkadot’s strengths to create a decentralized, privacy-first platform that addresses the limitations of both.
 
 ## Team :busts_in_silhouette:
 
@@ -143,8 +136,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://github.com/BlockchainViper (Emmanuel Isitor)
 - https://github.com/bilozorDev (Alex Bilozor)
 - https://www.figma.com/design/hOT2QVypSyJk9El7GHeAcb/Polkadot-DAP (Nikki)
+  
 ### Team LinkedIn Profiles (if available)
-
 https://www.linkedin.com/in/emmanueleclipsewebsite/
 
 ## Development Status :open_book:
@@ -159,7 +152,7 @@ https://www.linkedin.com/in/emmanueleclipsewebsite/
 **Frontend Live Demo**: [Mikael-Frontend Demo](https://mikael-frontend.vercel.app/)
 
 ---
-
+**Articles and sources for the problem**
 - **"Exploring the Complex Ethical Challenges of Data Annotation"** (Stanford HAI)
 
   - Link: [Read Article](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation)
@@ -267,22 +260,15 @@ In the short term, we will focus on deploying the MVP on Polkadot’s testnet, e
 To ensure its long term sustainability, we plan to introduce a small platform fee for data providers and AI companies with fees reinvested into maintenance, feature development, and community incentives, explore a future utility token model to incentivize participation, governance, and ecosystem growth (though not part of this grant application), and collaborate with research institutions and blockchain projects to secure funding and expand use cases.
 
 ## Additional Information :heavy_plus_sign:
-
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
 **How Did You Hear About the Grants Program?**  
 We learned about the Web3 Foundation Grants Program through: Recommendations from other teams in the Polkadot ecosystem.
 
 ---
 
 **Work Already Done**
-
 - **Research**: Conducted extensive research on data annotation workflows, blockchain integration, and privacy-preserving technologies.
 - **MVP in Progress**: UI/UX design and most frontend completed. Backend development underway, transitioning to traditional authentication (Google login, email/password).
 
 ---
-
 **Contributions from Other Teams**  
 Currently, the project is self-funded by the core team. We have not received financial contributions from other teams or organizations.
