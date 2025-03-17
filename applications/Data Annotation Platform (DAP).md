@@ -45,9 +45,7 @@ Our team is driven by a shared vision of ethical, decentralized AI development. 
 - **PoC**: A working prototype demonstrating task assignment, annotation submission, and reward distribution using Substrate and IPFS.
 - **MVP**: A functional platform with basic annotation tasks (e.g., image labeling) and ZKP-based verification.
 
-- DAP is currently **not** a data marketplace for buying and selling raw data.
-- DAP does **not** handle tokenomics or governance beyond reward distribution.
-- DAP is **not** a centralized AI training platform; it focuses solely on annotation services.
+DAP is currently not a data marketplace for buying and selling raw data, does not handle tokenomics or governance beyond reward distribution, and is not a centralized AI training platform, focusing solely on annotation services.
 
 ### Ecosystem Fit
 DAP addresses the growing demand for high-quality, ethically sourced data in AI development. It integrates into the Polkadot ecosystem as a decentralized service layer for data annotation, complementing existing parachains and dApps focused on AI, data storage, and privacy. By leveraging Polkadot’s interoperability, DAP enables seamless collaboration between AI developers, annotators, and data providers across multiple chains.
@@ -59,10 +57,6 @@ DAP addresses the growing demand for high-quality, ethically sourced data in AI 
 - **High-Quality Data Annotation**: AI models depend on accurately labeled data, which is often costly and time-consuming to produce.
 - **Data Privacy**: Traditional annotation platforms centralize data, raising privacy concerns.
 - **Fair Compensation**: Annotators are frequently underpaid and lack transparency in earnings, which DAP addresses through blockchain-based reward systems.
-
-- **Scientific Articles**: Studies highlight the importance of data quality in AI model performance (e.g., _"Data Quality for Machine Learning"_ by Sculley et al.).
-- **Forum Discussions**: Polkadot and Web3 communities have expressed interest in decentralized AI solutions.
-- **Case Studies**: Centralized annotation platforms like Amazon Mechanical Turk face criticism for low wages and lack of transparency.
 
 Within the Polkadot ecosystem, DAP uniquely focuses on data annotation as a service with privacy-preserving technologies like ZKPs and Polkadot's interoperability, distinguishing it from Ocean Protocol, which targets data monetization without annotation services, and KILT Protocol, which provides decentralized identity solutions but not data annotation, while outside Polkadot, DAP surpasses centralized competitors like Labelbox, which lacks decentralization and privacy features, and blockchain-based Hive, which focuses on AI training without specializing in annotation, by leveraging Polkadot’s strengths to create a decentralized, privacy-first platform that addresses the limitations of both.
 
