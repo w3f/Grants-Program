@@ -4,50 +4,30 @@
 - **Payment Details:**
   - **DOT**:16PDdKmaQzqHEKRob87vEsjHS4p9hHV7AcmTnai7hFVkchcr
   - **Payment**: In case of payment in **USDC**: 16PDdKmaQzqHEKRob87vEsjHS4p9hHV7AcmTnai7hFVkchcr
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
-
 ### Overview
-
-**Tagline**
 
 Decentralized, Data Annotation Services for AI on Polkadot.
 
-**Brief Description**
-
 The **Decentralized Data Annotation Platform (DAP)** is a blockchain-powered service built on Polkadot that connects AI companies and researchers with annotators who perform tasks like labeling images, tagging text, or categorizing audio. Annotators earn rewards for their work, while data providers receive accurately annotated datasets to train and improve AI models. By leveraging Polkadot’s interoperability and scalability, DAP ensures a transparent, fair, and efficient annotation process. Advanced cryptographic tools like zero-knowledge proofs (ZKPs) protect data privacy and verify annotation quality, making DAP a trusted solution for ethical AI development.
 
-**Integration into Polkadot**
 DAP integrates into the Polkadot ecosystem by leveraging Substrate for custom blockchain logic, parachains for scalability, and DOT for rewards and transactions. By employing advanced cryptographic tools like zero-knowledge proofs (ZKPs) and off-chain workers, DAP ensures privacy-preserving data processing and cross-chain interoperability. This makes DAP a valuable addition to Polkadot’s growing suite of decentralized services, particularly for AI developers and data providers.
 
-**Team Motivation**
 Our team is driven by a shared vision of ethical, decentralized AI development. We recognize that data annotation is a critical yet undervalued component of AI, often plagued by issues like underpaid labor and centralized data control. By building DAP on Polkadot, we aim to empower annotators with fair compensation and data providers with high-quality, privacy-preserving datasets. This aligns with the Web3 vision of user-owned data and decentralized ecosystems, creating a more equitable future for AI development.
 
 ### Project Details
-
-**Mockups/Designs**  
 [View on Figma](https://www.figma.com/design/hOT2QVypSyJk9El7GHeAcb/Polkadot-DAP?m=auto&t=ZByXTVY9jPKJAxXG-1)
-
-**Data Models / API Specifications**
-
-**Data Model:**
 
 - **Dataset**: Contains metadata about the dataset (e.g., type, size, annotation guidelines).
 - **AnnotationTask**: Represents a single annotation task, including task ID, annotator ID, and status.
 - **Reward**: Tracks rewards earned by annotators, including payment status and transaction hash.
 
-**API Specifications:**
-
 - `submitAnnotation(taskId, annotationData)`: Submits an annotation for a specific task.
 - `verifyAnnotation(taskId, zkpProof)`: Verifies the quality of an annotation using zero-knowledge proofs.
 - `distributeReward(annotatorId, amount)`: Distributes rewards to annotators via smart contracts.
-
-**Technology Stack**
 
 - **Blockchain**: Substrate (Polkadot SDK) for smart contracts and on-chain logic.
 - **Storage**: IPFS or Crust Network for decentralized data storage.
@@ -56,57 +36,38 @@ Our team is driven by a shared vision of ethical, decentralized AI development. 
 - **Backend**: Node.js for off-chain computation and API management.
 - **AI Tools**: Federated learning for AI-assisted annotation suggestions.
 
-**Core Components**
-
 - **Decentralized Storage**: Encrypted datasets stored on IPFS or Crust Network.
 - **Annotation Engine**: AI-assisted tools for efficient annotation.
 - **Smart Contracts**: Manage task assignment, reward distribution, and dispute resolution.
 - **Verification Layer**: ZKPs for privacy-preserving quality assurance.
 - **Interoperability Module**: Enables cross-chain data sharing and integration with other parachains.
 
-**PoC/MVP**
-
 - **PoC**: A working prototype demonstrating task assignment, annotation submission, and reward distribution using Substrate and IPFS.
 - **MVP**: A functional platform with basic annotation tasks (e.g., image labeling) and ZKP-based verification.
-
-**What DAP Is Not**
 
 - DAP is currently **not** a data marketplace for buying and selling raw data.
 - DAP does **not** handle tokenomics or governance beyond reward distribution.
 - DAP is **not** a centralized AI training platform; it focuses solely on annotation services.
 
 ### Ecosystem Fit
-
-**Where and How Does DAP Fit into the Ecosystem?**  
 DAP addresses the growing demand for high-quality, ethically sourced data in AI development. It integrates into the Polkadot ecosystem as a decentralized service layer for data annotation, complementing existing parachains and dApps focused on AI, data storage, and privacy. By leveraging Polkadot’s interoperability, DAP enables seamless collaboration between AI developers, annotators, and data providers across multiple chains.
-
-**Target Audience**
 
 - **AI Companies and Researchers**: Require accurately annotated datasets for training and improving AI models.
 - **Annotators**:Individuals or communities seeking flexible, rewarding opportunities to contribute to AI development.
 - **Web3 Developers**: Building privacy-focused AI applications on Polkadot.
 
-**Needs Addressed**
-
 - **High-Quality Data Annotation**: AI models depend on accurately labeled data, which is often costly and time-consuming to produce.
 - **Data Privacy**: Traditional annotation platforms centralize data, raising privacy concerns.
 - **Fair Compensation**: Annotators are frequently underpaid and lack transparency in earnings, which DAP addresses through blockchain-based reward systems.
-
-**Evidence of Need**
 
 - **Scientific Articles**: Studies highlight the importance of data quality in AI model performance (e.g., _"Data Quality for Machine Learning"_ by Sculley et al.).
 - **Forum Discussions**: Polkadot and Web3 communities have expressed interest in decentralized AI solutions.
 - **Case Studies**: Centralized annotation platforms like Amazon Mechanical Turk face criticism for low wages and lack of transparency.
 
-**Similar Projects in Polkadot/Kusama**
-
 - **Ocean Protocol**: Focuses on data monetization but does not provide annotation services.
 - **KILT Protocol**: Offers decentralized identity solutions but does not address data annotation.
 
-**Differentiation**  
 DAP is unique in its focus on data annotation as a service, combining privacy-preserving technologies (e.g., ZKPs) with Polkadot's interoperability. Unlike Ocean Protocol, DAP does not monetize raw data but instead provides a platform for annotators and AI developers to collaborate ethically.
-
-**Similar Projects in Related Ecosystems**
 
 - **Labelbox (Centralized)**: A data annotation platform platform that lacks decentralization and privacy features, raising concerns about data security and user control.
 - **Hive (Blockchain-Based)**:  Focuses on AI training but does not specialize in annotation services, limiting its utility for data providers and annotators.
@@ -129,12 +90,12 @@ Emmanuel Isitor
 **Contact Email**  
 sunasunday111@gmail.com  
 **Website**  
-[https://github.com/emmanueleclipse](https://github.com/emmanueleclipse)
+[https://github.com/emmanueleclipse] 
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Duta Bandara Permai Estate Blok 22 No 6 RT 03 RW 09 Jatimulya Village District Of Kosambi Banten 15211 Indonesia
+- **Registered Legal Entity:** CV Toma Bekti Mulya 
 
 ### Team's experience
 
@@ -172,14 +133,16 @@ sunasunday111@gmail.com
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
+- https://github.com/Train-AI-Group/Mikael-Frontend
+- https://github.com/Train-AI-Group/backend-nodejs 
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
-
+- https://github.com/DWboutin (Mike Boutin)
+- https://github.com/codert0109 (Ivan Malyshev)
+- https://github.com/BlockchainViper (Emmanuel Isitor)
+- https://github.com/bilozorDev (Alex Bilozor)
+- https://www.figma.com/design/hOT2QVypSyJk9El7GHeAcb/Polkadot-DAP (Nikki)
 ### Team LinkedIn Profiles (if available)
 
 https://www.linkedin.com/in/emmanueleclipsewebsite/
@@ -196,10 +159,6 @@ https://www.linkedin.com/in/emmanueleclipsewebsite/
 **Frontend Live Demo**: [Mikael-Frontend Demo](https://mikael-frontend.vercel.app/)
 
 ---
-
-**Research and Prior Work**
-
-**Ethical and Practical Challenges of Data Annotation**
 
 - **"Exploring the Complex Ethical Challenges of Data Annotation"** (Stanford HAI)
 
@@ -227,8 +186,6 @@ https://www.linkedin.com/in/emmanueleclipsewebsite/
   - **Relevance**: This article emphasizes the foundational role of data annotation in AI development. It highlights the importance of high-quality annotations for training accurate models, which aligns with DAP’s mission.
 
 ---
-
-**Prototype/Mockups**
 
 - **Prototype (Frontend UI)**: [Mikael-Frontend Demo](https://mikael-frontend.vercel.app/)
 - **Mockups**: [View on Figma](https://www.figma.com/design/hOT2QVypSyJk9El7GHeAcb/Polkadot-DAP?m=auto&t=ZByXTVY9jPKJAxXG-1)
@@ -305,40 +262,9 @@ https://www.linkedin.com/in/emmanueleclipsewebsite/
 
 ## Future Plans
 
-**Long-Term Maintenance and Development**  
-To ensure the long-term sustainability of the Decentralized Data Annotation Platform (DAP), we plan to adopt a multi-faceted financing strategy:
+In the short term, we will focus on deploying the MVP on Polkadot’s testnet, engaging with the Polkadot and AI communities through forums, social media, and webinars to onboard users, iterating by adding features like advanced AI-assisted tools, multi-language support, and integration with additional parachains, and partnering with AI startups, academic institutions, and data providers to pilot it, while our long-term vision for DAP is to become the go-to decentralized data annotation platform by supporting a wide range of tasks including image labeling, text tagging, audio transcription, and video analysis, leveraging Polkadot’s interoperability for seamless data sharing with other blockchains and marketplaces, building a global community of annotators particularly in underserved regions, and positioning it as a critical infrastructure layer with high-quality datasets. 
 
-- **Grant Funding**: Continue applying for grants from organizations like the Web3 Foundation, Polkadot Treasury, and other blockchain-focused initiatives to fund ongoing development and maintenance.
-- **Revenue Model**: Introduce a small platform fee for data providers and AI companies using the platform. These fees will be reinvested into platform maintenance, feature development, and community incentives.
-- **Tokenomics (Future)**: While not part of this grant application, we may explore a utility token model in the future to incentivize participation, governance, and ecosystem growth.
-- **Partnerships**: Collaborate with AI companies, research institutions, and blockchain projects to secure funding and expand the platform’s use cases.
-
----
-
-**Short-Term Plans**  
-In the short term, we will focus on:
-
-- **Platform Launch**: Deploy the MVP on Polkadot’s testnet and gather feedback from early users (annotators and data providers).
-- **Community Building**: Engage with the Polkadot and AI communities through forums, social media, and webinars to promote the platform and onboard users.
-- **Feature Enhancements**: Iterate on the platform based on user feedback, adding features like advanced AI-assisted tools, multi-language support, and integration with additional parachains.
-- **Partnerships**: Partner with AI startups, academic institutions, and data providers to pilot the platform and demonstrate its value.
-
----
-
-**Long-Term Vision**  
-Our long-term vision for DAP is to become the go-to platform for ethical, decentralized data annotation in the AI industry. We aim to:
-
-- **Expand Use Cases**: Support a wide range of annotation tasks, including image labeling, text tagging, audio transcription, and video analysis.
-- **Cross-Chain Integration**: Leverage Polkadot’s interoperability to integrate with other blockchains and data marketplaces, enabling seamless data sharing and collaboration.
-- **Global Reach**: Build a global community of annotators, particularly in underserved regions, to provide fair and flexible work opportunities.
-- **AI Ecosystem Growth**: Position DAP as a critical infrastructure layer for AI development, enabling the creation of high-quality, ethically sourced datasets.
-
-## Referral Program (optional) :moneybag:
-
-You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDC))
+To ensure its long term sustainability, we plan to introduce a small platform fee for data providers and AI companies with fees reinvested into maintenance, feature development, and community incentives, explore a future utility token model to incentivize participation, governance, and ecosystem growth (though not part of this grant application), and collaborate with research institutions and blockchain projects to secure funding and expand use cases.
 
 ## Additional Information :heavy_plus_sign:
 
@@ -347,18 +273,13 @@ You can find more information about the program [here](https://grants.web3.found
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
 **How Did You Hear About the Grants Program?**  
-We learned about the Web3 Foundation Grants Program through:
-
-- The Web3 Foundation website and official announcements.
-- Discussions on Polkadot’s Element (formerly Riot) channels.
-- Recommendations from other teams in the Polkadot ecosystem.
+We learned about the Web3 Foundation Grants Program through: Recommendations from other teams in the Polkadot ecosystem.
 
 ---
 
 **Work Already Done**
 
 - **Research**: Conducted extensive research on data annotation workflows, blockchain integration, and privacy-preserving technologies.
-- **Prototype**: Developed a working prototype demonstrating task assignment, annotation submission, and reward distribution using Substrate and IPFS.
 - **MVP in Progress**: UI/UX design and most frontend completed. Backend development underway, transitioning to traditional authentication (Google login, email/password).
 
 ---
