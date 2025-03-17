@@ -3,7 +3,7 @@
 ## 🌟 Project Overview
 
 - **Tagline:** AI-driven, cross-chain NFT marketplace on Polkadot.
-- **Description:** MozaicDotAI is a next-generation NFT marketplace that integrates AI to generate unique digital art and attach intelligent AI agents to NFTs. Built on Polkadot’s AssetHub, it enables seamless cross-chain NFT trading and ownership without requiring bridges, ensuring a secure and frictionless user experience.
+- **Description:** MozaicDotAI is a next-generation NFT marketplace that integrates AI to generate unique digital art and attach intelligent AI agents to NFTs giving it character. Built on Polkadot’s AssetHub using MozaicNFT Api, it enables seamless cross-chain NFT trading and ownership without requiring bridges, ensuring a secure and frictionless user experience.
 - **Integration with Polkadot:** MozaicDotAI leverages Polkadot’s native AssetHub to enable cross-chain NFT interoperability, reducing friction and security risks associated with external bridges.
 - **Motivation:** Our team is passionate about innovating the NFT space by introducing AI-driven NFT interactivity and utilizing Polkadot’s advanced multi-chain capabilities to create a more inclusive and efficient NFT marketplace.
 
@@ -11,9 +11,9 @@
 
 - **Technology Stack:**
   - **Smart Contracts:** ink! / Substrate
-  - **Backend:** Rust, Golang, Node.js
+  - **Backend:** Rust, Golang, Node.js, Eliza OS
   - **Frontend:** React, TypeScript
-  - **AI Integration:** Python-based AI models for NFT generation and dynamic metadata updates
+  - **AI Integration:** ElizaOS for NFT generation and dynamic metadata updates
   - **Storage:** IPFS for decentralized asset storage
   - **Blockchain Integration:** Polkadot AssetHub and cross-chain NFT standards
 
@@ -24,7 +24,7 @@
   - Cross-chain NFT transfer via Polkadot AssetHub
 
 - **Proof of Concept (MVP):**
-  - Basic NFT minting, buying, and selling functionalities using AssetHub
+  - Basic NFT minting, buying, and selling functionalities with royalties using AssetHub
   - AI-generated NFT image creation
   - Initial AI-agent functionality for dynamic NFT metadata
 
@@ -45,8 +45,8 @@
 
 ## 👥 Team
 
-- **Team Name:** MozaicDot Labs
-- **Contact Name:** Sushmit
+- **Team Name:** MozaicDotAI
+- **Contact Name:** Sushmit Sarmah
 - **Contact Email:** sushmitsarmah@gmail.com
 - **Website:** [[https://sushmitsarmah.github.io/](https://sushmitsarmah.github.io/)]
 
@@ -73,7 +73,7 @@
 ### **Overview**
 - **Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 1 developer
-- **Total Costs:** $15,000 USD
+- **Total Costs:** $10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -81,18 +81,20 @@
 | 0b. | Documentation | Full inline documentation and user tutorial |
 | 0c. | Testing and Testing Guide | Comprehensive unit and integration tests |
 | 0d. | Article | Publication on AI-driven NFTs in Polkadot |
-| 1. | AI NFT Generation | AI-powered NFT minting system |
-| 2. | AI Agent Integration | Attachable AI agents for interactive NFTs |
-| 3. | Marketplace Features | Smart contract-based buying, selling, and trading |
+| 1. | Integration of MozaicNFT api | NFT interactions
+| 2. | AI NFT Generation | AI-powered NFT minting system |
+| 3. | AI Agent Integration | Attachable AI agents for interactive NFTs |
+| 4. | Marketplace Features | Smart contract-based buying, selling, and trading |
 
 ### 💰 Budget Breakdown
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | AI NFT Generation, AI Agent Integration | $5,000 | 1.5 months |
-| 2 | Marketplace Features | $5,000 | 1.5 months |
-| 3 | Marketplace Features | $5,000 | 1.5 months |
-| **Total** | | **$15,000** | **3 months** |
+| 1 | Integration of MozaicNFT api to create, edit, delete, buy and sell nfts. | $2000 | 0.5 months |
+| 2 | AI NFT Generation, AI Agent Integration | $3,000 | 1 months |
+| 3 | AI Interactivity | $2,000 | 1.5 months |
+| 4 | Marketplace Features | $3,000 | 1.5 months |
+| **Total** | | **$10,000** | **3 months** |
 
 ## 🔮 Future Plans
 
