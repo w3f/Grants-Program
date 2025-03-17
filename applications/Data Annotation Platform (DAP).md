@@ -21,14 +21,17 @@ Our team is driven by a shared vision of ethical, decentralized AI development. 
 ### Project Details
 [View on Figma](https://www.figma.com/design/hOT2QVypSyJk9El7GHeAcb/Polkadot-DAP?m=auto&t=ZByXTVY9jPKJAxXG-1)
 
+**Core Components**
 - **Dataset**: Contains metadata about the dataset (e.g., type, size, annotation guidelines).
 - **AnnotationTask**: Represents a single annotation task, including task ID, annotator ID, and status.
 - **Reward**: Tracks rewards earned by annotators, including payment status and transaction hash.
-
+  
+**Key Functions**
 - `submitAnnotation(taskId, annotationData)`: Submits an annotation for a specific task.
 - `verifyAnnotation(taskId, zkpProof)`: Verifies the quality of an annotation using zero-knowledge proofs.
 - `distributeReward(annotatorId, amount)`: Distributes rewards to annotators via smart contracts.
-
+  
+**Technology Stack**
 - **Blockchain**: Substrate (Polkadot SDK) for smart contracts and on-chain logic.
 - **Storage**: IPFS or Crust Network for decentralized data storage.
 - **Cryptography**: Zero-knowledge proofs (ZKPs) for privacy-preserving verification.
@@ -36,14 +39,16 @@ Our team is driven by a shared vision of ethical, decentralized AI development. 
 - **Backend**: Node.js for off-chain computation and API management.
 - **AI Tools**: Federated learning for AI-assisted annotation suggestions.
 
+**System Architecture**
 - **Decentralized Storage**: Encrypted datasets stored on IPFS or Crust Network.
 - **Annotation Engine**: AI-assisted tools for efficient annotation.
 - **Smart Contracts**: Manage task assignment, reward distribution, and dispute resolution.
 - **Verification Layer**: ZKPs for privacy-preserving quality assurance.
 - **Interoperability Module**: Enables cross-chain data sharing and integration with other parachains.
 
+**Development Milestones**
 - **PoC**: A working prototype demonstrating task assignment, annotation submission, and reward distribution using Substrate and IPFS.
-- **MVP**: A functional platform with basic annotation tasks (e.g., image labeling) and ZKP-based verification.
+- **MVP**: A functional platform with basic annotation tasks (e.g., image labeling).
 
 DAP is currently not a data marketplace for buying and selling raw data, does not handle tokenomics or governance beyond reward distribution, and is not a centralized AI training platform, focusing solely on annotation services.
 
