@@ -12,14 +12,14 @@
 
 Decentralized, Data Annotation Services for AI on Polkadot.
 
-The **Decentralized Data Annotation Platform (DAP)** is a blockchain-powered service built on Polkadot that connects AI companies and researchers with annotators who perform tasks like labeling images, tagging text, or categorizing audio. Annotators earn rewards for their work, while data providers receive accurately annotated datasets to train and improve AI models. By leveraging Polkadot’s interoperability and scalability, DAP ensures a transparent, fair, and efficient annotation process. Advanced cryptographic tools like zero-knowledge proofs (ZKPs) protect data privacy and verify annotation quality, making DAP a trusted solution for ethical AI development.
+The **Decentralized Data Annotation Platform (DAP)** is a blockchain-powered service on Polkadot that enables users to perform data annotation tasks such as labeling images, tagging text, and categorizing audio, while connecting AI companies and researchers with annotators. Annotators earn fair rewards for their work, and data providers receive high-quality, privacy-protected datasets to train AI models. Built on Polkadot’s interoperable and scalable infrastructure, DAP ensures a transparent, efficient, and equitable annotation process. Optioanal dvanced cryptographic tools like zero-knowledge proofs (ZKPs) protect data privacy and verify annotation quality, making DAP a trusted solution for ethical AI development.
 
-DAP integrates into the Polkadot ecosystem by leveraging Substrate for custom blockchain logic, parachains for scalability, and DOT for rewards and transactions. By employing advanced cryptographic tools like zero-knowledge proofs (ZKPs) and off-chain workers, DAP ensures privacy-preserving data processing and cross-chain interoperability. This makes DAP a valuable addition to Polkadot’s growing suite of decentralized services, particularly for AI developers and data providers.
+DAP integrates into Polkadot’s ecosystem using Substrate for custom blockchain logic, parachains for scalability, and DOT for rewards and transactions. This setup supports seamless data processing and cross-chain interoperability, enhancing Polkadot’s decentralized services for AI developers and data providers.
 
-Our team is driven by a shared vision of ethical, decentralized AI development. We recognize that data annotation is a critical yet undervalued component of AI, often plagued by issues like underpaid labor and centralized data control. By building DAP on Polkadot, we aim to empower annotators with fair compensation and data providers with high-quality, privacy-preserving datasets. This aligns with the Web3 vision of user-owned data and decentralized ecosystems, creating a more equitable future for AI development.
+Our team is united by a vision of ethical, decentralized AI development. Data annotation is often undervalued, exploited by underpaid labor, and stifled by centralized control. By building DAP on Polkadot, we empower annotators with the tools to perform their work, earn fair compensation, and deliver secure, high-quality datasets, aligning with Web3’s mission of user-owned data and equitable ecosystems for a better AI future.
+
 
 ### Project Details
-[View on Figma](https://www.figma.com/design/hOT2QVypSyJk9El7GHeAcb/Polkadot-DAP?m=auto&t=ZByXTVY9jPKJAxXG-1)
 
 **Core Components**
 - **Dataset**: Contains metadata about the dataset (e.g., type, size, annotation guidelines).
@@ -33,24 +33,16 @@ Our team is driven by a shared vision of ethical, decentralized AI development. 
   
 **Technology Stack**
 - **Blockchain**: Substrate (Polkadot SDK) for smart contracts and on-chain logic.
-- **Storage**: IPFS or Crust Network for decentralized data storage.
-- **Cryptography**: Zero-knowledge proofs (ZKPs) for privacy-preserving verification.
 - **Frontend**: Express.js for the annotator and data provider interfaces.
 - **Backend**: Node.js for off-chain computation and API management.
-- **AI Tools**: Federated learning for AI-assisted annotation suggestions.
+- **AI Tools**: For AI-assisted annotation suggestions.
 
 **System Architecture**
-- **Decentralized Storage**: Encrypted datasets stored on IPFS or Crust Network.
-- **Annotation Engine**: AI-assisted tools for efficient annotation.
+- **Decentralized Storage**: Encrypted datasets stored on IPFS.
 - **Smart Contracts**: Manage task assignment, reward distribution, and dispute resolution.
 - **Verification Layer**: ZKPs for privacy-preserving quality assurance.
-- **Interoperability Module**: Enables cross-chain data sharing and integration with other parachains.
-
-**Development Milestones**
-- **PoC**: A working prototype demonstrating task assignment, annotation submission, and reward distribution using Substrate and IPFS.
-- **MVP**: A functional platform with basic annotation tasks (e.g., image labeling).
-
-DAP is currently not a data marketplace for buying and selling raw data, does not handle tokenomics or governance beyond reward distribution, and is not a centralized AI training platform, focusing solely on annotation services.
+  
+DAP is not a data marketplace for buying and selling raw data, does not handle tokenomics or governance beyond reward distribution, and is not a centralized AI training platform, focusing solely on annotation services.
 
 ### Ecosystem Fit
 DAP addresses the growing demand for high-quality, ethically sourced data in AI development. It integrates into the Polkadot ecosystem as a decentralized service layer for data annotation, complementing existing parachains and dApps focused on AI, data storage, and privacy. By leveraging Polkadot’s interoperability, DAP enables seamless collaboration between AI developers, annotators, and data providers across multiple chains.
@@ -128,8 +120,7 @@ sunasunday111@gmail.com
 - https://github.com/Train-AI-Group/Mikael-Frontend
 - https://github.com/Train-AI-Group/backend-nodejs 
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
+**Members repo**
 - https://github.com/DWboutin (Mike Boutin)
 - https://github.com/codert0109 (Ivan Malyshev)
 - https://github.com/BlockchainViper (Emmanuel Isitor)
@@ -145,9 +136,7 @@ https://www.linkedin.com/in/emmanueleclipsewebsite/
 
 - UI/UX design and most frontend completed.
 - Backend development underway, transitioning to traditional authentication (Google login, email/password).
-
-**Frontend Repository**: [Mikael-Frontend](https://github.com/Train-AI-Group/Mikael-Frontend/)  
-**Backend Repository**: [Backend Node.js](https://github.com/Train-AI-Group/backend-nodejs/)  
+   
 **Frontend Live Demo**: [Mikael-Frontend Demo](https://mikael-frontend.vercel.app/)
 
 ---
@@ -161,13 +150,6 @@ https://www.linkedin.com/in/emmanueleclipsewebsite/
   - Link: [Read Case Study](https://www.mdpi.com/1424-8220/22/4/1596)
   - **Relevance**: This case study highlights the practical challenges of data annotation in specialized domains, such as agriculture. It emphasizes the need for scalable and domain-specific annotation solutions, which DAP aims to provide.
 
-**AI and Data Annotation**
-
-- **"Large Language Models for Data Annotation: A Survey"** (arXiv)
-
-  - Link: [Read Survey](https://arxiv.org/html/2402.13446v1)
-  - **Relevance**: This survey explores the use of large language models (LLMs) for automating data annotation tasks. It provides insights into how DAP can integrate AI-assisted tools to improve annotation efficiency while maintaining human oversight.
-
 - **"The Hidden Costs of Data Annotation"** (Analytics Vidhya)
 
   - Link: [Read Blog Post](https://www.analyticsvidhya.com/blog/2023/12/what-is-data-annotation/)
@@ -178,10 +160,6 @@ https://www.linkedin.com/in/emmanueleclipsewebsite/
   - **Relevance**: This article emphasizes the foundational role of data annotation in AI development. It highlights the importance of high-quality annotations for training accurate models, which aligns with DAP’s mission.
 
 ---
-
-- **Prototype (Frontend UI)**: [Mikael-Frontend Demo](https://mikael-frontend.vercel.app/)
-- **Mockups**: [View on Figma](https://www.figma.com/design/hOT2QVypSyJk9El7GHeAcb/Polkadot-DAP?m=auto&t=ZByXTVY9jPKJAxXG-1)
-
 ## Development Roadmap :nut_and_bolt:
 
 
