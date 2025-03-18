@@ -2,7 +2,7 @@
 
 - **Team Name:** Lollipop Builders
 - **Payment Details:**
-  - **DOT**: 13W1E9hU8oKgVL1uaAGYTFLY9G1q2YJTjrVN5YEhUoXM4QHT
+  - **DOT**: 13W1E9hU8oKgVL1uaAGYTFLY9G1q2YJTjrVN5YEhUoXM4QHT, 
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 3
 
 
@@ -163,14 +163,14 @@ At this stage, development has not yet commenced. However, significant groundwor
 This roadmap outlines the phased development of the sBPF Runtime as a Service in PolkaVM, ensuring that Solana smart contracts can execute efficiently within Polkadot’s infrastructure. Given the 4MB size constraint of PVM services, the roadmap prioritizes feasibility analysis, optimization, and transaction processing integration. 
 - **Total Estimated Duration:** 8 weeks
 - **Full-Time Equivalent (FTE):** 3
-- **Total Costs:** $65,000 USD
-- **DOT %:** Percentage of Total Costs to be paid in vested DOT: 50%
+- **Total Costs:** $65,000 USD (equivalent in $DOT)
+- **DOT %:** 100% in $DOT equivalent, Percentage of Total Costs to be paid in vested DOT: 50%
 
 ### Milestone: sBPF Runtime Feasibility & Prototype Development in PolkaVM
 
 - **Estimated duration:** 8 weeks
 - **FTE:** 3
-- **Costs:** $65,000 USD
+- **Costs:** $65,000 USD (equivalent in $DOT)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
