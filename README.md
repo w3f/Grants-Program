@@ -94,6 +94,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Seraya Takahashi](https://github.com/takahser)
 - [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
+- [Aleksandar Dimitrijevic](https://github.com/alexdimes)
 
 #### W3F Grants Evaluators<!-- omit in toc -->
 
