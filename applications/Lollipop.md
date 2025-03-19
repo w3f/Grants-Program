@@ -2,7 +2,7 @@
 
 - **Team Name:** Lollipop Builders
 - **Payment Details:**
-  - **DOT**: 13W1E9hU8oKgVL1uaAGYTFLY9G1q2YJTjrVN5YEhUoXM4QHT, 
+  - **DOT**: 13W1E9hU8oKgVL1uaAGYTFLY9G1q2YJTjrVN5YEhUoXM4QHT
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 3
 
 
