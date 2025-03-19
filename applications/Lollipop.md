@@ -174,7 +174,7 @@ This roadmap outlines the phased development of the sBPF Runtime as a Service in
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | Initial architecture documentation explaining sBPF execution in PVM |
 | **0c.** | Testing and Testing Guide | Unit tests to measure compiled sBPF interpreter size |
 | 0d. | Article | Publish an article outlining feasibility analysis and prototype development |
