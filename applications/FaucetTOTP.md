@@ -1,9 +1,9 @@
-# Name of your Project
+# Faucet-TOTP
 
 - **Team Name:** TurnaLabs
 - **Payment Details:**
   - **DOT**: 13YqVAq8Yihh9FWHLT91wzKU7okFQueg4fgDGDVK4WZ8bi3k (Polkadot:DOT) 
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1
+- **Level:** 1
 
 ## Project Overview :page_facing_up:
 
