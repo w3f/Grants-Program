@@ -1,0 +1,31 @@
+# RFP for KappJs
+
+* **Status:** Open (anyone is allowed to apply) 
+* **Proposer:** Kunaal Gadhalay
+* **Your Project(s):** [optional]: Link(s)
+* **Projects you think this work could be useful for** [optional]: Link(s)
+* **Teams/People that could deliver the RFP** [optional]: Link(s)
+
+## Project Description :page_facing_up:
+
+Package for the implementation of a secure, high-performance and advanced Kusama DApp framework with a focus on security and efficiency. It would be available an deployed on npmjs. Integrated with logging and monitoring as priority. 
+
+## Deliverables :nut_and_bolt:
+
+Please list the deliverables of the project in as much detail as possible. Please also estimate the amount of work required and try to divide the project into meaningful milestones.
+
+* **Total Estimated Duration:** 1 month
+* **Full-time equivalent (FTE):**  Amount of time (in days) required for a single person to complete this project ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
+* **Total Costs:** $30,000
+### Milestone 1
+
+Please add additional milestones in the same way: 
+* **Estimated Duration:** 1 Month 
+* **FTE:**  Amount of time (in days) required for a single person to complete this milestone
+* **Costs:** Amount of Payment in USD for milestone 1: $15,000
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | Project Development | Development of the package.  
+| 2.  | Readme  |Addition of Readme|
