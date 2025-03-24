@@ -155,8 +155,7 @@ Detailed documentation and research findings will be maintained in our repositor
 | **0b.** | Documentation                     | Detailed documentation of governance query actions and smart contract interaction modules                         |
 | **0c.** | Testing and Testing Guide         | Unit tests covering governance and contract interactions with testing instructions                               |
 | 4.     | Transfers & Transactions   | Execute token transfers between accounts, multisigs, or across parachains (XCMP transfers).    
-| 5.     | Parachain Crowdloans  | 	Participate programmatically in parachain crowdloans by contributing DOT or KSM tokens.                  |
-| 6.     | NFT Minting and Trading: | Mint, transfer, and trade NFTs on parachains like Unique Network.             
+| 5.     | Subsidized Transactions  | 	Subsidized payment of transaction fees using asset hub's sufficient assets.                  |          
 
 ### Milestone 3 — DeFi (Decentralized Finance) Use Cases
 - **Estimated Duration:** 1 month
@@ -168,6 +167,7 @@ Detailed documentation and research findings will be maintained in our repositor
 | **0a.** | License                           | Apache 2.0                                                                                                        |
 | **0b.** | Documentation                     | Detailed documentation of governance query actions and smart contract interaction modules                         |
 | **0c.** | Testing and Testing Guide         | Unit tests covering governance and contract interactions with testing instructions                               |
+| 6.     | NFT Minting and Trading: | Mint, transfer, and trade NFTs on parachains like Unique Network.   
 | 7.     | Swapping Tokens  | Swap assets on decentralized exchanges (DEXes) like HydraDX, Mangata, Zenlink, or Acala DEX.                                |
 | 8.     | Liquidity Pools  | 	Deposit, withdraw, and monitor liquidity pools or yield farms on parachains like Moonbeam, Acala, or Parallel Finance.             |
 | 9.     | Collateralized Lending | Interact with lending protocols (e.g., Acala or Parallel Finance), to deposit collateral, borrow tokens, or repay loans.                   |
