@@ -3,7 +3,7 @@
 - **Team Name:** Train AI Group
 - **Payment Details:**
   - **DOT**:16PDdKmaQzqHEKRob87vEsjHS4p9hHV7AcmTnai7hFVkchcr
-  - **Payment**: In case of payment in **USDC**: 16PDdKmaQzqHEKRob87vEsjHS4p9hHV7AcmTnai7hFVkchcr
+  - **Payment**:**USDC**: 16PDdKmaQzqHEKRob87vEsjHS4p9hHV7AcmTnai7hFVkchcr
 - **Level:** 2
 
 ## Project Overview :page_facing_up:
