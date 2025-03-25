@@ -34,7 +34,7 @@ A web browser that integrates Polkadot network capabilities and crypto mining/st
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
-- The project is a simple user focused application (DApp) that enables users to earn rewards for time they spend via the browser.
+- The project is a simple user focused application (Hybrid DApp) that enables users to earn rewards for time they spend via the browser.
 - Polkadot Users. Anyone that browses the Web. 
 - It helps create a lightweight application that helps users leverage Blockchain technology into their Web operations. 
 - I have conducted extensive research, and on a comprehensive gap analysis using identification methodologies have been able to identify a market requirement.
@@ -163,6 +163,3 @@ You can find more information about the program [here](https://grants.web3.found
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
