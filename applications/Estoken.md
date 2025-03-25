@@ -184,7 +184,7 @@ We have completed technical architecture designs for these enhancements and are 
 | **0c.** | Testing and Testing Guide | All new functionality will be covered by unit and integration tests with detailed testing procedures. |
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e.| Article | We will publish an article explaining how Estoken leverages Polkadot's infrastructure and Chainlink oracles for real estate tokenization.|
-| 1. | Moonbeam Deployment | We will deploy our existing Solidity smart contracts to Moonbeam, a Polkadot parachain that supports Ethereum compatibility.|
+| 1. | Kusama Asset Hub Deployment| We will deploy our smart contracts on Kusama Asset Hub as an initial step before transitioning to Polkadot Asset Hub.|
 | 2. | Chainlink Oracle Integration | We will implement Chainlink oracle integration to verify and update property valuations from trusted real-world sources.|
 | 3. | Property Valuation Mechanism| We will develop a mechanism that uses oracle data to track property value changes over time.|
 | 4. | Cross-Chain Identity | We will implement a cross-chain identity solution that works across Polkadot's ecosystem for KYC compliance. |
@@ -225,7 +225,9 @@ We have completed technical architecture designs for these enhancements and are 
 | 0e.| Article | We will publish an article showcasing how Estoken leverages Polkadot's cross-chain capabilities for real estate investment.|
 | 1. | Cross-Chain Asset Transfer| We will implement functionality to transfer tokenized real estate assets between different parachains in the Polkadot ecosystem.|
 | 2. | Multi-Chain Dashboard | We will develop a dashboard that displays real estate investments across multiple parachains.|
-| 3. | Performance Optimization| We will optimize the platform for performance and scalability on Polkadot.|
+| 3. | Polkadot Asset Hub Deployment| After validating our deployment on Kusama Asset Hub, we will transition to Polkadot Asset Hub for broader interoperability and seamless cross-chain transactions.|
+| 4. | Performance Optimization| We will optimize the platform for performance and scalability on Polkadot.|
+
 
 ## Future Plans
 
