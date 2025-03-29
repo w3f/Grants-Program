@@ -162,7 +162,7 @@ AccessTool is built by a dedicated team committed to digital inclusivity and Web
 
 |  Number | Deliverable               | Specification                                                                                                                                                                  |
 | ------: | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **0a.** | License                   | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
+| **0a.** | License                   | Apache 2.0                                                                                                                                                                    |
 | **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can interact with the frontend and API functionalities.            |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. A guide will be provided for running these tests.                                   |
 | **0d.** | Docker                    | We will provide a Dockerfile(s) to test all delivered functionality.                                                                                                           |
@@ -180,7 +180,7 @@ AccessTool is built by a dedicated team committed to digital inclusivity and Web
 
 |  Number | Deliverable               | Specification                                                                                                                                    |
 | ------: | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **0a.** | License                   | Apache 2.0 / GPLv3 / MIT / Unlicense.                                                                                                            |
+| **0a.** | License                   | Apache 2.0                                                                                                                                    |
 | **0b.** | Documentation             | Documentation for AI scanner integration, usage, and API interactions.                                                                           |
 | **0c.** | Testing and Testing Guide | Unit and integration tests for AI-powered website scanning and compliance verification.                                                          |
 | **0d.** | Docker                    | Dockerfile for running and testing AI scanning functionality.                                                                                    |
@@ -198,7 +198,7 @@ AccessTool is built by a dedicated team committed to digital inclusivity and Web
 
 |  Number | Deliverable                               | Specification                                                                                          |
 | ------: | ----------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **0a.** | License                                   | Apache 2.0 / GPLv3 / MIT / Unlicense.                                                                  |
+| **0a.** | License                                   | Apache 2.0                                                                                            |
 | **0b.** | Documentation                             | Code documentation and a guide on smart contract interactions and blockchain integration.              |
 | **0c.** | Testing and Testing Guide                 | Smart contract unit tests and a guide to executing them.                                               |
 | **0d.** | Docker                                    | Docker environment for testing smart contract functionalities.                                         |
@@ -206,6 +206,7 @@ AccessTool is built by a dedicated team committed to digital inclusivity and Web
 |      1. | Smart Contract Development                | Develop and deploy smart contracts on Polkadot/Substrate for compliance recording and verification.    |
 |      2. | Blockchain Integration                    | Connect the AccessTool platform with smart contracts to log and track WCAG compliance data.            |
 |      3. | Substrate Configuration for Audit Logging | Set up the Substrate environment to support smart contract deployment and ensure immutable audit logs. |
+
 
 ...
 
