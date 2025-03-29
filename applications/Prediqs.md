@@ -230,6 +230,107 @@ Paff Studios is young group that combines expertise in blockchain development, s
 
 ---
 
+## Development Status 📖
+
+### Current Implementation Status
+
+The project is in its initial development phase, focusing on establishing the core smart contract architecture. We are organizing our development approach into vertical slices to ensure complete feature implementation across all layers.
+
+#### Layer Structure
+1. **Data Layer (Bottom)** - In Planning Phase
+   - Smart contract storage design
+   - Database schema planning
+   - Data access pattern documentation
+
+2. **Business Logic Layer (Middle)** - Initial Development
+   - Market creation logic design
+   - Prediction resolution algorithm planning
+   - Token distribution rules specification
+   - AI integration service architecture
+
+3. **User Interface Layer (Top)** - Initial Development
+   - React component architecture
+   - User interaction flow design
+   - Real-time update system planning
+   - Wallet integration specifications
+
+### Planned Vertical Slices
+
+#### 1. Market Creation Slice (In Development)
+**User Story:** As a user, I want to create a new prediction market so that I can start trading predictions.
+
+**Acceptance Criteria:**
+- User can input market details (title, description, end date)
+- Smart contract validates market parameters
+- UI provides real-time feedback on market creation status
+- Market appears in the discovery feed after creation
+
+**Current Status:**
+- Data Layer: Smart contract storage structure in design phase
+- Business Layer: Market validation logic in initial development
+- UI Layer: Market creation form wireframes in progress
+
+#### 2. Prediction Trading Slice (Planning Phase)
+**User Story:** As a user, I want to place predictions on markets so that I can participate in trading.
+
+**Acceptance Criteria:**
+- User can connect their wallet
+- User can view available markets
+- User can place predictions with specified amounts
+- User receives immediate confirmation of their trade
+
+**Current Status:**
+- Data Layer: Trade storage schema in planning phase
+- Business Layer: Trading logic architecture in design
+- UI Layer: Trading interface wireframes in initial stages
+
+#### 3. Market Resolution Slice (Planning Phase)
+**User Story:** As a user, I want to see market outcomes resolved automatically so that I can receive my rewards.
+
+**Acceptance Criteria:**
+- Oracle integration for outcome verification
+- Automated reward distribution
+- Real-time status updates
+- Clear resolution display
+
+**Current Status:**
+- Data Layer: Oracle integration architecture in planning
+- Business Layer: Resolution algorithms in design phase
+- UI Layer: Resolution display components in initial planning
+
+### Research & Development Work
+
+#### Technical Research (In Progress)
+- **Smart Contract Architecture:**
+  - Researching existing prediction market implementations on Polkadot
+  - Analyzing Zeitgeist's approach to market creation and resolution
+  - Studying PVM (Polkadot Virtual Machine) capabilities for our use case
+
+- **AI Integration:**
+  - Researching AI models suitable for market prediction
+  - Evaluating sentiment analysis tools for social media integration
+  - Investigating real-time data processing solutions for market analytics
+
+#### Community Engagement
+- **Polkadot Community:**
+  - Active participation in Polkadot Technical Discussion Forum
+  - Regular updates on our progress in the Polkadot ecosystem
+  - Collaboration with other teams building on Polkadot
+
+#### Design & UX Research
+- **User Interface:**
+  - Created initial wireframes for core features
+  - Conducted user research on prediction market interfaces
+  - Developed user flow diagrams for key functionalities
+
+#### Documentation
+- **Technical Documentation:**
+  - Creating initial architecture diagrams
+  - Drafting smart contract specifications
+  - Planning API documentation structure
+
+---
+
 ## Development Roadmap • :nut_and_bolt:
 
 ### Overview
