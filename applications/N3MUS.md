@@ -3,7 +3,8 @@
 - **Payment Details:**
     - **DOT**: 50%
     - **Payment**: 13dePGJmM3SDMhndSsoAEV1V43dXD8Vtv4p2qShaP3sd9S5M
-    - **Level**: 3
+    - Level: 3
+    - Total Cost: $200.000
 
 ## Project Overview
 ### Overview
