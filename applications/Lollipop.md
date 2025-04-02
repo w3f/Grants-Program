@@ -183,7 +183,7 @@ This roadmap outlines the phased development of the sBPF Runtime as a Service in
 | 2. | Memory & Execution Profiling for Minimal sBPF | Measure compiled binary size, execution time, and memory footprint for minimal sBPF programs. |
 | 3. | Fork `anza-xyz/sbpf` & Introduce PVM Service (`jam-pvm-common`) | Refactor sBPF interpreter to work as a PolkaVM service using `jam-pvm-common`. |
 | 4. | Compile & Measure sBPF Binary Size | Ensure it fits within 4MB PVM service limit. |
-| 5. | Minimal sBPF Execution Test in PVM | Deploy and execute a simple contract (e.g., counter) in PolkaVM to confirm functional sBPF execution. The result of execution to be stored in a separated DB. |
+| 5. | Minimal sBPF Execution Test in PVM | Deploy and execute a simple contract (e.g., counter) in PolkaVM to confirm functional sBPF execution. The result of execution to be stored in a separated DB. Containerize and run Minimal sBPF Execution Test in PVM using Docker. |
 
 
 ## Future Plans
