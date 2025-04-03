@@ -1,5 +1,9 @@
 # Bend-PVM: A Next-Generation Smart Contract Language for PolkaVM
 
+- **Team Name:** bend-pvm
+- **Payment Address:**   DOT/AssetHub address 13eJfzT8u1qKYkFDW6o7Ta19eGi9X8Y74cWLDComEVxbKGMa
+- **[Level]**: 2
+
 ## Project Overview
 
 Bend-PVM is a new smart contract programming language specifically optimized for PolkaVM. It combines the familiarity of Solidity with the power and safety of functional programming paradigms to create a secure, efficient, and developer-friendly language for the Polkadot ecosystem.
