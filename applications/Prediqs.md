@@ -2,7 +2,7 @@
 
 - **Team Name:** Paff Studios Yazılım Donanım ve Ticaret Limited Şirketi
 - **Payment Details:**
-  - **DOT:** 12QfNqK4qLyDykfMj5y8TLHX7hX2mViBJ6YBywaZzQJSsVzB (DOT)
+  - **DOT:** 12QfNqK4qLyDykfMj5y8TLHX7hX2mViBJ6YBywaZzQJSsVzB (DOT) 
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1
 
 ---
@@ -27,7 +27,6 @@ Key features include:
 
 ### Deliverables
 
-- **License:** Apache 2.0 license ensuring open source compliance and contribution guidelines.
 - **Mockups & UI Designs:** A Figma design file that includes user-friendly interfaces for market creation, participation, and token management. The mockups ensure seamless user experience.
 - **Data Models & APIs:** Backend APIs and database structures for managing prediction events, trades, and token rewards. The data layer incorporates advanced query optimizations for real-time updates.
 - **Technology Stack:**
@@ -38,9 +37,20 @@ Key features include:
   - Platform usage manuals.
   - SDK integration guides.
   - Smart contract APIs and examples.
-- **Tests:** Comprehensive test suite for smart contracts and frontend components to ensure reliability and security.
-- **Testing Guide:** Step-by-step instructions for running tests locally and validating functionality across different components.
 - **Proof-of-Concept (PoC)/Minimum Viable Product (MVP):** Initial version of the platform with functionalities like market creation, participation, and token staking.
+- **License:** MIT License file that clearly outlines usage terms, liability limitations, and redistribution rights for the codebase.
+- **Tests:** Comprehensive test suite including:
+  - Unit tests for smart contracts using Truffle/Hardhat
+  - Integration tests for frontend components with React Testing Library
+  - End-to-end tests with Cypress
+  - Performance and load testing scripts
+- **Testing Guide:** Detailed documentation covering:
+  - Test setup and configuration
+  - Running different test suites
+  - Writing new tests
+  - CI/CD pipeline integration
+  - Test coverage requirements and reporting
+
 
 ### Smart Contract Details
 
@@ -48,7 +58,7 @@ Key features include:
     
 #### Overview of Smart Contracts in Prediqs
 
-The smart contracts powering Prediqs are designed to ensure security, scalability, and flexibility. These contracts integrate seamlessly with Substrate's modular architecture, enabling advanced functionality and interoperability within the Polkadot ecosystem.
+The smart contracts powering Prediqs are designed to ensure security, scalability, and flexibility. These contracts integrate seamlessly with Substrate’s modular architecture, enabling advanced functionality and interoperability within the Polkadot ecosystem.
 
 #### Core Components
 
@@ -91,25 +101,23 @@ Prediqs integrates advanced AI algorithms to assist in market resolution by:
 - Analyzing large datasets in real time to predict outcomes more accurately.
 - Offering AI generated insights to improve decision-making for participants.
 - Reducing bias in market outcomes by leveraging impartial AI based resolutions.
-- Providing personalized market recommendations based on user preferences and past participation patterns.
-- Implementing natural language processing to interpret complex market conditions and translate them into clear outcomes.
-- Using machine learning models to detect anomalies in trading patterns that might indicate market manipulation.
 
-The AI systems will continuously learn and adapt, ensuring that predictions and resolutions are based on the most reliable data. Our proprietary deep learning models analyze historical market performance alongside real-time external data sources to provide users with actionable intelligence that guides their prediction strategies.
+The AI systems will continuously learn and adapt, ensuring that predictions and resolutions are based on the most reliable data.
 
-### Oracle Integration
+### Chainlink Oracle Integration
 
-To ensure the accuracy and reliability of external data, Prediqs utilizes oracle services, which:
+To ensure the accuracy and reliability of external data, Prediqs integrates with Chainlink's decentralized oracle network, which:
 
-- Fetch real-world data to resolve prediction markets (e.g., election results, sports scores).
-- Provide tamper-proof and decentralized verification of external events.
-- Enable seamless interaction between on-chain prediction markets and off-chain data sources.
+- Leverages Chainlink's Price Feeds for real-time market data and asset prices
+- Utilizes Chainlink's Automation for automated market resolution and reward distribution
+- Employs Chainlink's VRF (Verifiable Random Function) for provably fair random number generation
+- Connects to Chainlink's Data Feeds for reliable sports scores, election results, and other real-world data
 
-Oracles enhance trust and transparency, ensuring that market outcomes are determined fairly and securely.
+The Chainlink integration provides industry-leading security and reliability, ensuring that market outcomes are determined using tamper-proof, decentralized data sources.
 
 ### Infinite Scrolling UI
 
-The platform's UI has been upgraded to include an **infinite scrolling feature**, which:
+The platform’s UI has been upgraded to include an **infinite scrolling feature**, which:
 
 - Provides a seamless browsing experience for users by loading new markets dynamically as they scroll.
 - Reduces page load times and improves performance by fetching content incrementally.
@@ -129,7 +137,7 @@ This feature creates a modern, intuitive interface that encourages users to expl
 
 - **Cross-Chain Functionality:**
   - Supports communication with other parachains, enabling cross-chain prediction markets.
-  - Utilizes Polkadot's XCM (Cross-Consensus Messaging) for seamless interoperability.
+  - Utilizes Polkadot’s XCM (Cross-Consensus Messaging) for seamless interoperability.
 
 - **Upgradability:**
   - Supports future updates without disrupting the existing ecosystem.
@@ -140,7 +148,6 @@ This feature creates a modern, intuitive interface that encourages users to expl
   - Features visual representations of prediction probabilities and confidence intervals.
   - Offers sentiment analysis of market discussions to gauge community sentiment.
   - Empowers users with data-driven decision support for more informed predictions.
-
 
 ### Security Measures
 
@@ -173,7 +180,7 @@ This feature creates a modern, intuitive interface that encourages users to expl
 
 ### Problem Statement
 
-Prediction markets are often centralized, costly, and limited in scope. Prediqs addresses these issues by offering a decentralized, user-driven platform built on Polkadot's robust infrastructure.
+Prediction markets are often centralized, costly, and limited in scope. Prediqs addresses these issues by offering a decentralized, user-driven platform built on Polkadot’s robust infrastructure.
 
 ### Target Audience
 
@@ -184,11 +191,11 @@ Prediction markets are often centralized, costly, and limited in scope. Prediqs 
 
 ### Evidence of Need
 
-Surveys and market analyses highlight the growing interest in decentralized prediction markets. The current centralized models face scalability issues and lack transparency, making Prediqs' decentralized approach a significant improvement.
+Surveys and market analyses highlight the growing interest in decentralized prediction markets. The current centralized models face scalability issues and lack transparency, making Prediqs’ decentralized approach a significant improvement.
 
 ### What Makes Prediqs Different From Other Prediction Markets? 
 
-Unlike existing platforms, Prediqs emphasizes **user-generated markets** and Polkadot's cross-chain capabilities. These ensure scalability and broader integration possibilities compared to siloed platforms. Our AI-powered analytics layer also provides users with intelligence and insights that are unavailable on competing platforms, creating a more informed and efficient prediction experience.
+Unlike existing platforms, Prediqs emphasizes **user-generated markets** and Polkadot’s cross-chain capabilities. These ensure scalability and broader integration possibilities compared to siloed platforms.
 
 ---
 
@@ -216,7 +223,7 @@ Unlike existing platforms, Prediqs emphasizes **user-generated markets** and Pol
 - **Registered Address:** Çarşı Mahallesi Panaroma Sokak Rotamavi Rezidans 18/A Istanbul/Turkey 34909
 - **Registered Legal Entity:** Paff Studios Yazılım Donanım ve Ticaret Limited Şirketi
 
-### Team's Experience
+### Team’s Experience
 
 Paff Studios is young group that combines expertise in blockchain development, smart contract design, and user experience. Previous projects include:
 
@@ -234,7 +241,7 @@ Paff Studios is young group that combines expertise in blockchain development, s
 
 ### Current Implementation Status
 
-The project is in its initial development phase, focusing on establishing the core smart contract architecture. We are organizing our development approach into vertical slices to ensure complete feature implementation across all layers.
+The project is in its initial development phase, focusing on establishing the core smart contract architecture.
 
 #### Layer Structure
 1. **Data Layer (Bottom)** - In Planning Phase
@@ -253,50 +260,6 @@ The project is in its initial development phase, focusing on establishing the co
    - User interaction flow design
    - Real-time update system planning
    - Wallet integration specifications
-
-### Planned Vertical Slices
-
-#### 1. Market Creation Slice (In Development)
-**User Story:** As a user, I want to create a new prediction market so that I can start trading predictions.
-
-**Acceptance Criteria:**
-- User can input market details (title, description, end date)
-- Smart contract validates market parameters
-- UI provides real-time feedback on market creation status
-- Market appears in the discovery feed after creation
-
-**Current Status:**
-- Data Layer: Smart contract storage structure in design phase
-- Business Layer: Market validation logic in initial development
-- UI Layer: Market creation form wireframes in progress
-
-#### 2. Prediction Trading Slice (Planning Phase)
-**User Story:** As a user, I want to place predictions on markets so that I can participate in trading.
-
-**Acceptance Criteria:**
-- User can connect their wallet
-- User can view available markets
-- User can place predictions with specified amounts
-- User receives immediate confirmation of their trade
-
-**Current Status:**
-- Data Layer: Trade storage schema in planning phase
-- Business Layer: Trading logic architecture in design
-- UI Layer: Trading interface wireframes in initial stages
-
-#### 3. Market Resolution Slice (Planning Phase)
-**User Story:** As a user, I want to see market outcomes resolved automatically so that I can receive my rewards.
-
-**Acceptance Criteria:**
-- Oracle integration for outcome verification
-- Automated reward distribution
-- Real-time status updates
-- Clear resolution display
-
-**Current Status:**
-- Data Layer: Oracle integration architecture in planning
-- Business Layer: Resolution algorithms in design phase
-- UI Layer: Resolution display components in initial planning
 
 ### Research & Development Work
 
@@ -347,12 +310,12 @@ The project is in its initial development phase, focusing on establishing the co
 
 | Number  | Deliverable          | Specification                                                |
 | ------- | -------------------- | ------------------------------------------------------------ |
-| **1.** | License              | Apache 2.0                                                   |
+| **1.** | License              | MIT License                                                  |
 | **2.** | Pitch Deck        | A pitch deck that explains the project in simple terms.                              |
 | **3.**  | Mockups & UI Designs | A detailed figma file including UI elements and typography that's used throughout the project                  |
 | **4.** | Basic Web Pages | A PoC web-pages of distinct features ( Such as discover, AI helper, etc.) |
 
-### Milestone 2 — Smart Contract Writing
+### Milestone 2 — Smart Contract Development
 
 - **Duration:** 2 weeks
 - **FTE:** 2 FTE
@@ -364,7 +327,6 @@ The project is in its initial development phase, focusing on establishing the co
 | **2.** | AI Integration       | Integration of **AI** into the 'Discover' page of PoC design |
 | **3.** | Basic Smart Contract | Written in **Solidity**, a base smart contract that covers basic features (Market Creation / Resolution functions, Basic price calculation etc.) |
 | **4.**  | Deploying the Contracts| Deploying the smart contracts to the **Westend Asset Hub** for testing |
-| **5.**  | Basic Working Frontend | A functional frontend application with core user interface components connected to deployed smart contracts |
 
 
 
@@ -373,7 +335,7 @@ The project is in its initial development phase, focusing on establishing the co
 ## Future Plans
 
 - **Short Term:** Launch the platform on **Westend Asset Hub**, gather user feedback, refine features, and implement security features to protect against reentrancy and fraud attacks.
-- **Medium Term:** Deploy on **Polkadot Asset Hub**, enhance AI capabilities with more advanced prediction models and user-specific insights.
+- **Medium Term:** Deploy on Polkadot Asset Hub, enhance AI capabilities with more advanced prediction models and user-specific insights.
 - **Long Term:** Expand integrations with other parachains, introduce advanced market dynamics, and enable cross-chain prediction markets. Develop a comprehensive AI ecosystem that learns from market behaviors across multiple chains to provide increasingly accurate predictive tools.
 
 ---
@@ -384,12 +346,12 @@ The project is in its initial development phase, focusing on establishing the co
 | **Blockchain**              | Polkadot (XCM-enabled cross-chain)                                                    | Polkadot/Substrate                                        | Ethereum (L1) + Polygon (L2)                              | Polygon                                                   | Ethereum/Polygon via Azuro                                | Ethereum (regulated)                                      | Ethereum + Polygon                                        |
 | **Cross-Chain Support**     | ✅ **Multi-chain** (Ethereum, Polygon, Polkadot parachains via XCM)                    | ❗ Polkadot parachains only                                | ❌ Ethereum/Polygon only                                   | ❌ Polygon-only                                           | ❗ Ethereum/Polygon via Azuro                              | ❌ Single-chain                                           | ❌ Ethereum/Polygon only                                  |
 | **Smart Contract Architecture** | Smart-Contract-based, optimized for prediction markets                          | Native Substrate modules                                  | EVM-based order-book model                                 | Simplified EVM contracts                                  | Peer-to-peer liquidity pools ("Liquidity Tree")           | Traditional EVM contracts                                 | AMM-based (constant-product formula)                     |
-| **AI Integration**          | ✅ **Advanced Layer**:<br>- Real-time analytics<br>- Risk scoring<br>- Sentiment analysis<br>- Personalized market recommendations<br>- NLP for outcome interpretation<br>- ML-based market manipulation detection | ❌ None                                                   | ❌ No AI layer                                             | ❌ Basic trend analysis                                   | ❌ None                                                    | ❌ None                                                    | ❌ None                                                    |
+| **AI Integration**          | ✅ **Advanced Layer**:<br>- Real-time analytics<br>- Risk scoring<br>- Sentiment analysis | ❌ None                                                   | ❌ No AI layer                                             | ❌ Basic trend analysis                                   | ❌ None                                                    | ❌ None                                                    | ❌ None                                                    |
 | **Governance Model**        | ✅ **DAO-driven** (on-chain proposals + voting)                                       | Polkadot-native on-chain governance                       | Investor-controlled                                        | Limited community input                                   | Protocol-controlled updates                               | Centralized/regulatory oversight                          | Minimal on-chain governance                               |
 | **User Experience**         | ✅ **Web2-Like**:<br>- Gamification (quests, leaderboards)<br>- Social logins<br>- Simplified onboarding | Technical UI requiring blockchain knowledge                                  | Complex order-book for advanced traders                    | Minimalist UI for rapid trading                           | Sports-focused UX with live odds                          | Traditional derivatives-like interface                    | AMM-based interface for casual traders                   |
 | **Market Focus**            | **Broad**:<br>- Sports<br>- Finance<br>- Politics<br>- Social events                  | Community-driven events                                   | High-stakes politics/economics                             | Trending/short-term topics                                | **Niche**: Sports/gaming                                  | Regulated political outco<mes                              | Frequent, small-bet markets                               |
 | **Liquidity Model**         | **Hybrid**:<br>- Liquidity pools<br>- Cross-chain incentives                              | On-chain liquidity aggregation                            | Order-book with deep liquidity                             | Simplified order-book                                     | Peer-to-peer liquidity pools                              | Centralized liquidity                                     | AMM-driven liquidity                                      |
-| **Security Model**          | ✅ **Polkadot shared security** + DAO audits                                          | Polkadot's shared security                                | Ethereum/Polygon validators + UMA oracle                   | Polygon's PoS consensus                                   | Azuro Protocol security                                   | Regulatory compliance                                     | Ethereum/Polygon security                                 |
+| **Security Model**          | ✅ **Polkadot shared security** + DAO audits                                          | Polkadot’s shared security                                | Ethereum/Polygon validators + UMA oracle                   | Polygon’s PoS consensus                                   | Azuro Protocol security                                   | Regulatory compliance                                     | Ethereum/Polygon security                                 |
 | **Development Speed**       | ✅ **Rapid**: Lightweight contracts + Polkadot SDK                                    | ❌ Slow (Substrate-native tooling)                        | Limited by Ethereum scalability                            | Basic EVM tooling                                         | Azuro Protocol integration                                | Regulatory hurdles                                        | Standard EVM development                                  |
 | **Wallet Support**          | Nova Wallet, SubWallet, Talisman, Polkadot.js + social login                         | Polkadot.js, Talisman                                     | MetaMask, WalletConnect                                    | Polygon Wallet, MetaMask                                  | MetaMask, WalletConnect                                   | Traditional wallets + KYC                                 | MetaMask, TrustWallet                                     |
 | **Adoption Metrics**        | ✅ **Funnel 25k+ users** (from our own sports AI platform)<br>DAO incentives                        | Polkadot-native community                                 | High liquidity but niche audience                          | Small-scale traders                                       | Sports/gaming niche                                       | Regulated user base                                       | AMM-focused traders                                       |
@@ -402,7 +364,7 @@ The project is in its initial development phase, focusing on establishing the co
 
 **Prediqs** is positioned to lead the decentralized prediction market space by merging:  
 - 🔗 **Cross-chain interoperability** (via Polkadot XCM).  
-- 🧠 **AI-powered decision-making** for traders, featuring advanced machine learning models that analyze market trends, user behavior, and external data to provide actionable insights.  
+- 🧠 AI-powered decision-making for traders, featuring advanced machine learning models that analyze market trends, user behavior, and external data to provide actionable insights. 
 - 🎮 **Gamification** to bridge Web2 and Web3 users.  
 - ⚡ **PVM scalability** and sub-cent fees.  
 
