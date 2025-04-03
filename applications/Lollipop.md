@@ -184,7 +184,8 @@ This roadmap outlines the phased development of the sBPF Runtime as a Service in
 | 2. | Memory & Execution Profiling for Minimal sBPF | Measure compiled binary size, execution time, and memory footprint for minimal sBPF programs. |
 | 3. | Fork `anza-xyz/sbpf` & Introduce PVM Service (`jam-pvm-common`) | Refactor sBPF interpreter to work as a PolkaVM service using `jam-pvm-common`. |
 | 4. | Compile & Measure sBPF Binary Size | Ensure it fits within 4MB PVM service limit. |
-| 5. | Minimal sBPF Execution Test in PVM | Deploy and execute a simple contract (e.g., counter) in PolkaVM to confirm functional sBPF execution. The result of execution to be stored in a separated DB. |
+| 5. | Solana Account Model Integration | Port Solana’s account model. |
+| 6. | Minimal sBPF Execution Test in PVM | Deploy and execute a simple contract (e.g., counter) in PolkaVM to confirm functional sBPF execution. The result of execution to be stored in a separated DB. |
 
 
 ## Future Plans
@@ -194,7 +195,7 @@ Lollipop is committed to expanding Polkadot's execution capabilities by enabling
 In the near future, we aim to:
 
 **1. Integration of Solana Account Model, Parallel Tx Scheduling, Interoperability & Compatibility**
-  - We are planning to port Solana’s account model as part of this grant. And we think everything will work sequentially at this stage, yet we also believe we can port everything Solanas has into our PolkaVM-based runtime, like Parallel TX Scheduling, and we expect some obstacles and stumbling blocks for this issue, but will be properly addressed.
+  - Parallel TX Scheduling: We think everything will work sequentially at this stage, yet we also believe we can port everything Solanas has into our PolkaVM-based runtime, like Parallel TX Scheduling, and we expect some obstacles and stumbling blocks for this issue, but will be properly addressed.
   - Interoperability & Compatibility: Our goal is to offer a commercial-ready system that's fully familiar to Solana developers. Apart from this grant, We're also integrating common Solana runtime dependencies (e.g., SPL libraries) to support standard interfaces with minimal changes. Our goal is to offer a commercial-ready system that's fully familiar to Solana developers.
 We are also planning Interoperability with Solana through lightweight instruction programs and post-execution callbacks, allowing NE-executed transactions to trigger on-chain logic.
 
