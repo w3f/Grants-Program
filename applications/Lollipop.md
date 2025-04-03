@@ -193,18 +193,23 @@ Lollipop is committed to expanding Polkadot's execution capabilities by enabling
 
 In the near future, we aim to:
 
-**1. Scale Up Development & Deployment**
+**1. Integration of Solana Account Model, Parallel Tx Scheduling, Interoperability & Compatibility**
+  - We are planning to port Solana’s account model as part of this grant. And we think everything will work sequentially at this stage, yet we also believe we can port everything Solanas has into our PolkaVM-based runtime, like Parallel TX Scheduling, and we expect some obstacles and stumbling blocks for this issue, but will be properly addressed.
+  - Interoperability & Compatibility: Our goal is to offer a commercial-ready system that's fully familiar to Solana developers. Apart from this grant, We're also integrating common Solana runtime dependencies (e.g., SPL libraries) to support standard interfaces with minimal changes. Our goal is to offer a commercial-ready system that's fully familiar to Solana developers.
+We are also planning Interoperability with Solana through lightweight instruction programs and post-execution callbacks, allowing NE-executed transactions to trigger on-chain logic.
+
+**2. Scale Up Development & Deployment**
   - Complete the implementation and optimization of sBPF execution in PolkaVM with multiple PVM services,
   - Deploy this execution layer, ensuring efficient performance and seamless interaction with Solana’s state model.
 
-**2. Enhance Compatibility & Performance**
+**3. Enhance Compatibility & Performance**
   - Investigate additional optimizations to improve the efficiency and security of sBPF execution.
 
-**3. Expand Developer Adoption**
+**4. Expand Developer Adoption**
   - Provide SDKs and tooling to help developers port and deploy Solana smart contracts to Polkadot.
   - Offer comprehensive documentation and examples to simplify integration.
 
-**4. Long-Term Vision: Unified Execution Layer**
+**5. Long-Term Vision: Unified Execution Layer**
   - This initiative aligns with Lollipop’s broader vision of creating a unified execution layer across multiple ecosystems.
   - In future iterations, we plan to extend PolkaVM’s support beyond Solana’s sBPF to other high-performance execution environments, such as AI-based computation or modular rollups.
 
