@@ -96,13 +96,18 @@ This feature enhances engagement and broadens the scope of prediction markets by
 
 ### AI-Based Market Resolution
 
-Prediqs integrates advanced AI algorithms to assist in market resolution by:
+Prediqs leverages a custom-trained LLM built with LangChain and PyTorch, specifically designed for prediction market analysis and resolution:
 
-- Analyzing large datasets in real time to predict outcomes more accurately.
-- Offering AI generated insights to improve decision-making for participants.
-- Reducing bias in market outcomes by leveraging impartial AI based resolutions.
+- Utilizes a specialized model trained on historical prediction market data and outcomes
+- Implements LangChain for efficient prompt engineering and chain-of-thought reasoning
+- Employs PyTorch's deep learning capabilities for real-time market analysis and pattern recognition
 
-The AI systems will continuously learn and adapt, ensuring that predictions and resolutions are based on the most reliable data.
+The custom LLM provides:
+- Market-specific insights by analyzing patterns across similar prediction events
+- Automated resolution suggestions based on verified outcome data
+- Bias detection through multi-perspective analysis of market conditions
+
+The model undergoes continuous fine-tuning using validated market outcomes, ensuring increasingly accurate predictions and resolutions over time. This specialized approach allows for more nuanced understanding of prediction markets compared to general-purpose AI solutions.
 
 ### Chainlink Oracle Integration
 
