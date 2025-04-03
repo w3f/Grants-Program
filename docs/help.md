@@ -6,21 +6,13 @@ title: 💡 Help
 
 ### Real-time Conversation
 
-We have a Matrix channel for grant-related questions and activities. Head over there to ask grants-related questions, share your experience with other applications and grantees, or simply hang out:
-
-- [W3F Grants Community](https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org)
-
-There are also program-specific Matrix channels for the Decentralized Futures Program and the JAM Prize:
-
-- [JAM Prize](https://matrix.to/#/#jam:polkadot.io)
-- [Decentralized Futures](https://matrix.to/#/#df:web3.foundation)
-
-
-We also have Matrix/Element channels for real-time discussions on Web3 and Polkadot. Join the conversation!
-
-- [Web3 Foundation Chat](https://matrix.to/#/#w3f:matrix.org)
-- [Polkadot Space](https://matrix.to/#/#polkadot:web3.foundation)
-- [Kusama Space](https://matrix.to/#/#kusama:web3.foundation)
+- [Matrix channel for **grant-related questions and activities**](https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org). Head over there to ask grants-related questions, share your experience with other applications and grantees, or simply hang out:
+- Program-specific Matrix channels for the [**Decentralized Futures Program**](https://matrix.to/#/#df:web3.foundation) and the [**JAM Prize**](https://matrix.to/#/#jam:polkadot.io):
+- For **technical questions**, check out the Polkadot Developer Support groups on [Telegram](https://t.me/substratedevs) and [Matrix](https://matrix.to/#/#substratedevs:matrix.org).
+- We also have general purpose Matrix channels and spaces for discussions on **Web3** and **Polkadot**. Join the conversation!
+  - [Web3 Foundation Chat](https://matrix.to/#/#w3f:matrix.org)
+  - [Polkadot Space](https://matrix.to/#/#polkadot:web3.foundation)
+  - [Kusama Space](https://matrix.to/#/#kusama:web3.foundation)
 
 ### Additional Information
 

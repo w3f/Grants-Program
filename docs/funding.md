@@ -3,9 +3,13 @@ sidebar_position: 8
 title: 🪙 Alternative Funding
 ---
 
+:::tip
+For an overview of funding initiatives, ecosystem support and implementation partners, also check https://web3.foundation/funding-support.
+:::
+
 Some funding sources might be more and some less suitable for your project throughout its various stages. We encourage you to explore alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
-:::tip
+:::note
 If you are unsure about what's the best next step for you and your project, consider signing up for the [Polkadot Alpha Program](https://polkadot.network/development/alpha/).
 :::
 
