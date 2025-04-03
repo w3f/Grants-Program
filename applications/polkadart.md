@@ -70,7 +70,7 @@ There are a numerous number of libraries available for Polkadot but we are the o
 
 ## Team :busts_in_silhouette:
 
-- Team Name: Snowpine Labs Inovacao Ltda
+- Team Name: Snowpine Labs Inovacao em Tecnologia Ltda
 - Contact Name: Leonardo Custodio
 - Contact Email: leonardo@custodio.me
 - Website: https://polkadart.dev
