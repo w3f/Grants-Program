@@ -77,7 +77,7 @@ The curators have deep, sector-specific experience across the Polkadot and build
 ### 1️⃣ Application
 
    0. 📚 Please read our [guidelines](#guidelines) above to familiarize yourself with the scope and goals of the programme.
-   1. 🔄 [Fork](https://github.com/PolkadotFastGrants/apply/fork) this repository.
+   1. 🔄 [Fork](https://github.com/Polkadot-Fast-Grants/apply) this repository.
    2. ➕ In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the contents of the template inside the new one. Make sure you **do not modify the template file directly**. 
    3. 📋 Name the new file after your project: `project_name.md`.
    4. ✏️ Fill out the template with the details of your project. The more information you provide, the faster the review. 
