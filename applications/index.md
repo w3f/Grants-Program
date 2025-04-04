@@ -51,6 +51,17 @@ Besides, **there is a clear difference between an application being accepted and
 
 ## 2025
 
+### 🏄 Wave 26 - Q2 2025
+
+| Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
+| :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
+| [Zondax AG](https://zondax.ch)             | [Ledger Universal Polkadot App upgrade](./ledgerUpgrade.md)       | [GitHub](https://github.com/Zondax) |    ☐       |       ☐       |     ☐      |
+| [Lollipop Builders](https://www.lollipop.builders/)             | [Lollipop: sBPF Runtime as a Service on PolkaVM](./Lollipop.md)       | [GitHub](https://github.com/LollipopBuilders) |    ☐       |       ☐       |     ☐      |
+
+
+[🔝](#top)
+
+
 ### 🏄 Wave 25 - Q1 2025
 
 | Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
@@ -61,7 +72,6 @@ Besides, **there is a clear difference between an application being accepted and
 | [Kzero](https://kzero.xyz/)             | [KZero Wallet](./KZero.md)       | [GitHub](https://github.com/kzero-xyz) |    ☐       |       ☐       |     ☐      |
 | [Sporyon Technologies](https://sporyon.io/)             | [Dotnix - Follow-Up](./dotnix-follow-up.md)       | [GitHub](https://github.com/sporyon) |    ☐       |       ☐       |     ☐      |
 
-[🔝](#top)
 
 ## 2024
 
