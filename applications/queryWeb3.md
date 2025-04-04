@@ -126,32 +126,6 @@ In summary, unlike Subscan and DEX Screener, Subscan provides basic information 
     
     Dr. Cao has also developed Discord and Telegram bots for AIWeb3 and various parachain Chinese communities.
 
-- **Backend Developer:** YanOctavian
-    
-    5 years Senior Polkadot eco-developer and 7 years Ethereum eco-developer;
-    
-    Proficient in public chain development;
-    
-    He has extensive practical experience in the blockchain field and is involved in most areas of public chain development, including rollup and zero-knowledge proof.
-    
-    Rich experience in project management and team leadership.
-    
-    He has worked on prestigious teams such as orbiter.
-    
-    Currently working at SuperEx, helping them build their own public chain using polkadot eco-technology.
-    
-    An avid amateur AI enthusiast, I believe AI technology will bring great changes to web3.
-
-- **Full-Stack Developer:** BinX
-    
-    12 years experience in front, familiar with the react/vue/flutter/nestjs/fastapi conventional technology stack;
-    
-    Familiar with javascript/python/Java/dart language, understands rust;
-    
-    Familiar with web3 Dapp development;
-    
-    Proficient in Polkadot.js, with experience in developing multiple wallets and Dapps.
-
 ### Contact
 
 - **Contact Name:** RogerLe
