@@ -2,9 +2,8 @@
 
 * **Status:** Open (anyone is allowed to apply)
 * **Proposer:** @michalisFr
-* **Your Project(s):** [optional]: 
-* **Projects you think this work could be useful for** [optional]: Decentralized Nodes, Staking providers
-* **Teams/People that could deliver the RFP** [optional]: Rust developers
+* **Projects you think this work could be useful for**: Decentralized Nodes, Staking providers
+* **Teams/People that could deliver the RFP**: Rust developers (with some Node.js knowledge)
 
 ## Project Description :page_facing_up: 
 
