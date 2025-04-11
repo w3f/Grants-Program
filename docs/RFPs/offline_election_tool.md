@@ -13,8 +13,6 @@ There is already [such a script](https://github.com/paritytech/substrate-debug-k
 
 ## Deliverables :nut_and_bolt:
 
-Please list the deliverables of the project in as much detail as possible. Please also estimate the amount of work required and try to divide the project into meaningful milestones.
-
 The new tool should be offer the below functionality:
 1. Accurately predict the result of the on-chain election (validators in the active set, their total stake, and the distribution of nominations), as if the actual election were to happen at that time. If the tool is run during the actual election window, the results should be effectively the same as with the actual election.
 2. Take into consideration all the various election algorithms 
