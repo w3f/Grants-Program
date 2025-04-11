@@ -49,8 +49,6 @@ Our team is profoundly committed to diminishing the barriers to entry for Polkad
 **Relevant Prior Work:**  
 We have already constructed the initial version of the Polkadot API Playground (PAPI Simulator) that facilitates the execution of pre-defined examples and visualization of their outputs. The codebase is available at: https://github.com/developerfred/papi-simulator and a live demo is accessible at: https://papi-simulator.aipop.fun
 
-This existing work represents a significant investment of time and resources for which we're requesting partial retroactive funding of $1,500 as part of this application.
-
 **UI Mockups:**  
 The interface will feature a three-panel layout:
 - Code editor (utilizing Monaco) for writing React/TypeScript
@@ -130,8 +128,6 @@ The current implementation encompasses:
 - Example selector with categorization
 - Network information display
 
-For this work already completed, we're requesting a retroactive grant of $1,500 as part of the total budget.
-
 Features we have yet to implement (and plan to develop with this grant):
 - Interactive React component creation and rendering
 - Real-time component state linked to blockchain state
@@ -143,9 +139,9 @@ Features we have yet to implement (and plan to develop with this grant):
 
 ### Overview
 
-- **Estimated Duration:** 50 days (10 milestones of 5 days each)
+- **Estimated Duration:** 10 days
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** $11,500 USD (including $1,500 retroactive funding for work already completed)
+- **Total Costs:** $10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -153,33 +149,34 @@ Features we have yet to implement (and plan to develop with this grant):
 | 0b. | Documentation | We will provide comprehensive inline documentation of all new code added to the project, plus updated tutorials explaining how to use the new interactive console features. Documentation will be updated incrementally with each milestone. |
 | 0c. | Testing and Testing Guide | Each milestone will include appropriate tests for its components. A testing guide will document how to run these tests, updated with each milestone. |
 | 0d. | Article | We will publish an article at the completion of the project explaining the new capabilities of PAPI Interactive Console and providing a walkthrough of building a simple DApp component from scratch. |
-| 1. | Enhanced Code Editor | Upgrade the Monaco editor with TypeScript-specific features for Polkadot API development, including autocompletion for polkadot-api functions, inline type checking, and parameter hints. |
-| 2. | React Component Preview Panel | Implement the component rendering environment that displays real-time previews of React components as they are being edited, with proper error boundaries and state preservation. |
-| 3. | State Management System | Build a state management system that connects React components to blockchain data, including hooks for querying chain state, transaction submission, and event subscriptions. |
-| 4. | Polkadot API Integration | Create the core integration layer between the React components and Polkadot networks, with support for connecting to multiple networks simultaneously. |
-| 5. | Parachain Support Framework | Extend the API layer to support parachain-specific functionality, with a plugin architecture that allows adding new parachains easily. |
-| 6. | Transaction Builder UI | Develop an interactive UI for building, signing, and sending transactions to Polkadot and parachains, with visual feedback for transaction status. |
-| 7. | Component Templates - Basic | Create a set of basic React component templates for common blockchain interactions like balance displays, transaction forms, and account pickers. |
-| 8. | Component Templates - Advanced | Implement advanced templates for DeFi, NFTs, and governance interactions specific to major Polkadot parachains. |
-| 9. | Component Export System | Build functionality to export working React components as standalone modules that can be integrated into external projects. |
-| 10. | Deployment Guide Generator | Create a system that generates deployment guides and boilerplate code for using exported components in various React frameworks. |
 
-### 💰 Budget Breakdown
+### Milestone 1: Core Interactive Console Development
 
-| Milestone | Deliverables | Cost (USD) | Estimated Completion |
-| --- | --- | --- | --- |
-| 0 | Retroactive funding for existing PAPI Simulator | $1,500 | Already completed |
-| 1 | Enhanced Code Editor | $1,000 | 5 days |
-| 2 | React Component Preview Panel | $1,000 | 5 days |
-| 3 | State Management System | $1,000 | 5 days |
-| 4 | Polkadot API Integration | $1,000 | 5 days |
-| 5 | Parachain Support Framework | $1,000 | 5 days |
-| 6 | Transaction Builder UI | $1,000 | 5 days |
-| 7 | Component Templates - Basic | $1,000 | 5 days |
-| 8 | Component Templates - Advanced | $1,000 | 5 days |
-| 9 | Component Export System | $1,000 | 5 days |
-| 10 | Deployment Guide Generator | $1,000 | 5 days |
-| **Total** | | **$11,500** | **50 days** |
+- **Estimated Duration:** 5 days
+- **FTE:** 2
+- **Costs:** 5,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1a. | Enhanced Code Editor | Upgrade the Monaco editor with TypeScript-specific features for Polkadot API development, including autocompletion for polkadot-api functions, inline type checking, and parameter hints. |
+| 1b. | React Component Preview Panel | Implement the component rendering environment that displays real-time previews of React components as they are being edited, with proper error boundaries and state preservation. |
+| 1c. | State Management System | Build a state management system that connects React components to blockchain data, including hooks for querying chain state, transaction submission, and event subscriptions. |
+| 1d. | Polkadot API Integration | Create the core integration layer between the React components and Polkadot networks, with support for connecting to multiple networks simultaneously. |
+| 1e. | Parachain Support Framework | Extend the API layer to support parachain-specific functionality, with a plugin architecture that allows adding new parachains easily. |
+
+### Milestone 2: Component Development and Export System
+
+- **Estimated Duration:** 5 days
+- **FTE:** 2
+- **Costs:** 5,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 2a. | Transaction Builder UI | Develop an interactive UI for building, signing, and sending transactions to Polkadot and parachains, with visual feedback for transaction status. |
+| 2b. | Component Templates - Basic | Create a set of basic React component templates for common blockchain interactions like balance displays, transaction forms, and account pickers. |
+| 2c. | Component Templates - Advanced | Implement advanced templates for DeFi, NFTs, and governance interactions specific to major Polkadot parachains. |
+| 2d. | Component Export System | Build functionality to export working React components as standalone modules that can be integrated into external projects. |
+| 2e. | Deployment Guide Generator | Create a system that generates deployment guides and boilerplate code for using exported components in various React frameworks. |
 
 ## 🔮 Future Plans
 
@@ -204,9 +201,6 @@ Features we have yet to implement (and plan to develop with this grant):
 Our vision is to establish the PAPI Interactive Console as the definitive starting point for any web developer entering the Polkadot ecosystem. By reducing the friction between traditional web development and blockchain development, we aim to significantly increase the number of developers building on Polkadot and its parachains.
 
 ## ℹ️ Additional Information
-
-**Work Already Completed:**
-The initial version of the PAPI Simulator is already functional and publicly accessible at papi-simulator.aipop.fun. This represents significant upfront investment for which we're requesting partial retroactive funding as part of this application. The $1,500 retroactive component would help cover some of our costs in developing the foundation on which we'll build the expanded features outlined in this proposal.
 
 **Community Interest:**
 We have already received positive feedback from the community regarding the initial PAPI Simulator. Developers have expressed keen interest in having more interactive capabilities, particularly for testing React components that interact with the blockchain.
