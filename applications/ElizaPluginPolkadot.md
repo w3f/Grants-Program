@@ -70,7 +70,7 @@
 
 - **Contact Name:** Mihail Kirov
 - **Contact Email:** me@mikirov.xyz
-- **Website:** Your website
+- **Website:** [esscrypt.com](https://esscrypt.com/)
 
 ### Legal Structure
 
@@ -100,9 +100,9 @@ Detailed documentation and research findings will be maintained in our repositor
 ## Development Roadmap :nut_and_bolt:
 ### Overview
 
-- **Total Estimated Duration:** 180 person-days
+- **Total Estimated Duration:** 120 person-days
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 20,000 USD
 - **DOT %:** 50% of total costs
 
 ### Milestone 1 — Basic Integration and Data Feed
@@ -157,21 +157,6 @@ Detailed documentation and research findings will be maintained in our repositor
 | 4.     | Transfers & Transactions   | Execute token transfers between accounts, multisigs, or across parachains (XCMP transfers).    
 | 5.     | Subsidized Transactions  | 	Subsidized payment of transaction fees using asset hub's sufficient assets.                  |          
 
-### Milestone 3 — DeFi (Decentralized Finance) Use Cases
-- **Estimated Duration:** 1 month
-- **FTE:** 2FTE, the listed members would contribute to different deliverables based on their skill-set.
-- **Costs:** 10,000 USD
-
-| Number | Deliverable                       | Specification                                                                                                     |
-| ------ | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                           | Apache 2.0                                                                                                        |
-| **0b.** | Documentation                     | Detailed documentation of governance query actions and smart contract interaction modules                         |
-| **0c.** | Testing and Testing Guide         | Unit tests covering governance and contract interactions with testing instructions                               |
-| 6.     | NFT Minting and Trading: | Mint, transfer, and trade NFTs on parachains like Unique Network.   
-| 7.     | Swapping Tokens  | Swap assets on decentralized exchanges (DEXes) like HydraDX, Mangata, Zenlink, or Acala DEX.                                |
-| 8.     | Liquidity Pools  | 	Deposit, withdraw, and monitor liquidity pools or yield farms on parachains like Moonbeam, Acala, or Parallel Finance.             |
-| 9.     | Collateralized Lending | Interact with lending protocols (e.g., Acala or Parallel Finance), to deposit collateral, borrow tokens, or repay loans.                   |
-
 ## Future Plans
 
 - **Long-Term Maintenance:**  
@@ -180,6 +165,8 @@ Detailed documentation and research findings will be maintained in our repositor
   We will introduce advanced analytics tools for real-time monitoring, support additional parachain networks, and implement custom runtime modules based on community feedback.
 - **Long-Term Vision:**  
   Our roadmap includes the development of easy-to-extend and intuitive interfaces, allowing contributors to easily extend and build on top of the plugin.
+- **PVM readiness**
+  One of our main goals will be to develop the current plugin with extensibility and forwards-compatibility in mind, defining common interfaces in such a way that a future AssetHub integration will be easier
 
 ## Additional Information :heavy_plus_sign:
 
