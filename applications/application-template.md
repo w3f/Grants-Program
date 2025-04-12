@@ -8,6 +8,7 @@ Please provide the following:
 - A brief description of your project
 - An indication of how your project relates to / integrates into Polkadot
 - An indication of why your team is interested in creating this project
+- (Optional but big bonus points): [1-min video pitch](https://www.ycombinator.com/video/)
 
 ### 🔍 Project Details
 
