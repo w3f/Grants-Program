@@ -16,6 +16,7 @@ Besides, **there is a clear difference between an application being accepted and
 <a id="top"></a>
 
 - [2025](#2025)
+  - [🏄 Wave 26 - Q2 2025](#-wave-26---q2-2025)
   - [🏄 Wave 25 - Q1 2025](#-wave-25---q1-2025)
 - [2024](#2024)
   - [🏄 Wave 24 - Q4 2024](#-wave-24---q4-2024)
@@ -51,6 +52,17 @@ Besides, **there is a clear difference between an application being accepted and
 
 ## 2025
 
+### 🏄 Wave 26 - Q2 2025
+
+| Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
+| :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
+| [Zondax AG](https://zondax.ch)             | [Ledger Universal Polkadot App upgrade](./ledgerUpgrade.md)       | [GitHub](https://github.com/Zondax) |    ☐       |       ☐       |     ☐      |
+| [Lollipop Builders](https://www.lollipop.builders/)             | [Lollipop: sBPF Runtime as a Service on PolkaVM](./Lollipop.md)       | [GitHub](https://github.com/LollipopBuilders) |    ☐       |       ☐       |     ☐      |
+
+
+[🔝](#top)
+
+
 ### 🏄 Wave 25 - Q1 2025
 
 | Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
@@ -58,8 +70,9 @@ Besides, **there is a clear difference between an application being accepted and
 | [ChainSupport Labs](https://github.com/ChainSupport)             | [eliza-plugin-dot](./eliza-plugin-dot.md)       | [GitHub](https://github.com/ChainSupport/eliza-plugin-dot.git) |    ☐       |       ☐       |     ☐      |
 | [TCDT Lab](https://github.com/ChainSupport)             | Blockchain Interoperability through DNS and Asset Discovery       | [GitHub](https://github.com/tcdt-lab) |    ☐       |       ☐       |     ☐      |
 | [Staking Rewards](https://www.stakingrewards.com/)             | [Validator Performance - Research & Methodology Development](./staking_rewards.md)       | [GitHub](https://github.com/stakingrewards) |    ☐       |       ☐       |     ☐      |
+| [Kzero](https://kzero.xyz/)             | [KZero Wallet](./KZero.md)       | [GitHub](https://github.com/kzero-xyz) |    ☐       |       ☐       |     ☐      |
+| [Sporyon Technologies](https://sporyon.io/)             | [Dotnix - Follow-Up](./dotnix-follow-up.md)       | [GitHub](https://github.com/sporyon) |    ☐       |       ☐       |     ☐      |
 
-[🔝](#top)
 
 ## 2024
 
@@ -78,7 +91,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [KodaLabs](https://github.com/kodadot)                       | [Multichain Identity Indexer](./multichain_identity_indexer.md)                     | [GitHub](https://github.com/kodadot)               | ☐          |        ☐       |      ☐      |
 | [Zondax AG](https://zondax.ch/)                       | [MigrationEase](./MigrationEase.md)                     | [GitHub](https://github.com/zondax)               | ☐          |        ☐       |      ☐      |
 | [Dota Network](https://x.com/dot20_dota)                       | [dairdrop](./docname.md)                     | [GitHub](https://github.com/dota-network)               | ☐          |        ☐       |      ☐      |
-| [Swush Labs](https://github.com/swush-labs/)                       | [Swush DEX Aggregator](./swush-dex-aggregator.md)                     | [GitHub](https://github.com/swush-labs/)               | ☐          |        ☐       |      ☐      |
+| [Swush Labs](https://github.com/swush-labs/)                       | [Swush DEX Aggregator](./swush-dex-aggregator.md)                     | [GitHub](https://github.com/swush-labs/)               | ☐          |        ☒       |      ☐      |
 | [QueryWeb3](https://queryweb3.com/)                       | [QueryWeb3](./queryWeb3.md)                     | [GitHub](https://github.com/Query-Web3/)               | ☐          |        ☐       |      ☐      |
 
 
@@ -90,7 +103,7 @@ Besides, **there is a clear difference between an application being accepted and
 | :------------------------------------------------------------------| :------------------------------------------------------------------------------------------------------| :------------------------------------------| :---------: | :------------: | :--------: |
 | [gmajor](https://github.com/gmajor-encrypt)                       | [subxt-python](./subxt-python.md)                     | [GitHub](https://github.com/gmajor-encrypt/xcm-tools)                 | ☐          |        ☒       |      ☐      |
 | [Liu-Cheng Xu](https://github.com/liuchengxu)                       | [Subcoin](./Subcoin.md)                     | [GitHub](https://github.com/subcoin-project/subcoin)                 | ☐          |        ☒       |      ☐      |
-| [Experio S M](https://www.linkedin.com/in/leogcustodio/)                       | [Polkadart Follow-up](./polkadart_extension.md)                     | [GitHub](https://github.com/leonardocustodio/polkadart)                 | ☐          |        ☒       |      ☐      |
+| [Experio S M](https://www.linkedin.com/in/leogcustodio/)                       | [Polkadart Follow-up](./polkadart_extension.md)                     | [GitHub](https://github.com/leonardocustodio/polkadart)                 | ☐          |        ☒       |      ☒      |
 | [Solidbit GmbH](https://solid-bit.com/)                       | [ISO20022 Ecosystem Research and Technical Design](./ISO20022-Implementation-POC.md)                     | [GitHub](https://github.com/SolidbitGmbH)                 | ☐          |        ☒       |      ☒      |
 | [Katarína Valová](https://github.com/kacena123)                       | [AgriDot](./AgriDot.md)                     | [GitHub](https://github.com/kacena123)                 | ☐          |        ☒       |      ☒      |
 | [ParaSpell Research Foundation](https://paraspell.xyz/)                       | [xcNFT](./xcNFT.md)                     | [GitHub](https://github.com/paraspell)                 | ☐          |        ☒       |      ☒      |
@@ -160,7 +173,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [CoinFabrik](https://www.coinfabrik.com/)                    | [CoinFabrik On Ink Integration Tests 3](CoinFabrik_On_Ink_Integration_Tests_3.md)                                                              | [GitHub](https://github.com/CoinFabrik)                      | ☐          |       ☒        |     ☒     |
 | [Andrea Di Franco](https://github.com/andredif)                    | [QuantumGuard](quantum-guard.md)                                                              | [GitHub](https://github.com/andredif)                      | ☐          |       ☐        |     ☐     |
 | [Solidbit GmbH](https://solid-bit.com)                    | [Democratic Governance](democratic-governance-1.md)                                                              | [GitHub](https://github.com/encointer)                      | ☐          |       ☒        |     ☒     |
-| [Auguth Tech](https://github.com/auguth)                    | [Proof of Contract Stake (Pallet)](PoCS.md)                                                              | [GitHub](https://github.com/auguth/pocs)                      | ☐          |       ☒        |     ☐     |
+| [Auguth Tech](https://github.com/auguth)                    | [Proof of Contract Stake (Pallet)](PoCS.md)                                                              | [GitHub](https://github.com/auguth/pocs)                      | ☐          |       ☒        |     ☒     |
 
 [🔝](#top)
 
