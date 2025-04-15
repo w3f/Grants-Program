@@ -6,7 +6,7 @@ Implementing a Open-Source Library for Bandersnatch Elliptic Curve, VRF and Ring
 
 #### Brief
 
-This library aims to develop a Python library that implements the Bandersnatch Ring Verifiable Random Function (VRF) and associated ring proofs. 
+Dotring is a Python library that implements the Bandersnatch Ring Verifiable Random Function (VRF) and ring proofs as specified by W3F. 
 While a reference implementation exists in Rust ([ark-vrf](https://github.com/davxy/ark-vrf)), offering an additional implementation creates diversity in the ecosystem—a key factor in strengthening overall security. In doing so, DotRing extends W3F’s efforts beyond their original Rust ecosystem, ensuring that robust cryptographic techniques are available and adaptable to various environments.
 
 #### Relation to Polkadot
@@ -93,7 +93,7 @@ By providing this library, we aim to fill this gap and promote broader adoption 
 -   **Target Audience:** DotRing is aimed at developers, researchers, and tool builders engaged in implementing and testing cryptographic protocols. It benefits teams looking to compare implementations, perform cross-validation, or integrate advanced cryptographic techniques into their applications—all while contributing to the overall robustness of the ecosystem.
 
 -   **Need(s) Met:**
-    - Enhanced Security Through Diversity: Multiple implementations enable independent verification, ensuring that any vulnerability in one can be cross-checked against another.
+    - Security Through Diversity: Multiple implementations enable independent verification, ensuring that any vulnerability in one can be cross-checked against another.
     - Broader Adoption and Experimentation: By offering an alternative implementation, DotRing stimulates research and development in areas where reliance on a single language or platform might otherwise constrain progress.
     - Ecosystem Resilience: This additional implementation increases the diversity of available tools, reducing dependence on a singular technology stack and promoting a richer developer ecosystem.
 
