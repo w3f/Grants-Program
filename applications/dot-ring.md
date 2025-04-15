@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Implementing Open-Source Libraries for Bandersnatch Elliptic Curve, VRF and Ring Proofs in Python.
+Implementing a Open-Source Library for Bandersnatch Elliptic Curve, VRF and Ring Proofs in Python.
 
 #### Brief
 
@@ -18,7 +18,7 @@ The [Bandersnatch VRF](https://github.com/davxy/bandersnatch-vrf-spec) and [Ring
 - Fosters Innovation: With a varied implementation base, researchers and developers have additional tools and perspectives to innovate on top of the established cryptographic standards.
 #### Why Us?
 
-As a core component of JAM's consensus mechanism we noticed almost everyone's dependency on [ark-ec-vrf](https://github.com/davxy/ark-vrf)
+As a core component of JAM's consensus mechanism we noticed almost everyone's dependency on [ark-vrf](https://github.com/davxy/ark-vrf)
 library for implementing Ring VRF Signatures. Though it is the best aligned implementation we recognize the need for diverse language support in cryptographic implementations for security. Even beyond that, we see the potential of its use cases outside of blockchain infrastructure. <br/>
 Our team at Chainscore Labs brings deep expertise in cryptographic research and open-source software development. Rather than merely targeting a specific language demographic, DotRing is about providing an independent, robust implementation that enhances the resilience and adaptability of the ring-vrf specification. Our additional implementation reinforces security by offering cross-checks against the reference Rust implementation and extends the pioneering work of W3F across the broader software ecosystem.
 
@@ -86,7 +86,7 @@ The lack of multiple independent implementations for W3F’s advanced cryptograp
 
 By providing this library, we aim to fill this gap and promote broader adoption and understanding of these cryptographic techniques.​
 
-- **What need(s) does your project meet?** DotRing meets the critical need for diversified implementations of W3F’s cryptographic standards. While the primary reference exists in Rust (e.g., ark-ec-vrf), having an additional, independently developed implementation not only expands the available toolset but also deepens the scrutiny on security and performance. By extending W3F’s efforts beyond a single language ecosystem, we foster broader interoperability, encourage innovation, and bolster trust within the Polkadot/Kusama environment.
+- **What need(s) does your project meet?** DotRing meets the critical need for diversified implementations of W3F’s cryptographic standards. While the primary reference exists in Rust (e.g., ark-vrf), having an additional, independently developed implementation not only expands the available toolset but also deepens the scrutiny on security and performance. By extending W3F’s efforts beyond a single language ecosystem, we foster broader interoperability, encourage innovation, and bolster trust within the Polkadot/Kusama environment.
 
 -   **Where/How:** This project is a foundational building block within the infrastructure (eg Safrole/JAM Block Production) and developer tooling layer of the Polkadot/Kusama ecosystem. It provides a secure and verifiable mechanism for privacy-preserving applications and randomness generation, crucial for decentralized protocols, consensus mechanisms, and identity verification.
 
