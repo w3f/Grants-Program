@@ -14,14 +14,17 @@
 
 ### 🔍 Project Details
 
-We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
+- Technology stack: Kash is a Substrate-based parachain built on the Polkadot ecosystem, harnessing shared security and XCM (cross-chain messaging) to drive its AI-powered prediction markets. Its off-chain AI framework, ElizaOS, runs on Phala Network with Intel SGX, enabling secure computation for market curation and resolution. Trustless operations are powered by zkTLS oracles and a ZKML pipeline via RISC Zero’s zkVM, aligning with Polkadot’s zero-knowledge vision (e.g., JAM protocol). Liquidity is sourced from Acala’s aUSD stablecoin, while Acurast delivers decentralized real-world data as oracles. The user experience is streamlined through a Polkadot.js frontend and custom APIs for social media integration, starting with X's API and moving later to Reddit, Telegam, Farecaster and more. 
 
-- An overview of the technology stack to be used
 - Documentation of core components, protocols, architecture, etc. to be deployed
+  
 - Any PoC/MVP or other relevant prior work or research on the topic
-- Mockups/designs of any UI components
+
+- [Demo mockup](https://www.youtube.com/watch?v=lnyuNwofK7M)
+  
 - Data models / API specifications of the core functionality
-- What your project is *not* or will *not* provide or implement
+  
+- What Kash is *not* or will *not* provide or implement
   - This is a place for you to manage expectations and clarify any limitations
 
 ### 🧩 Ecosystem Fit
@@ -29,7 +32,7 @@ We expect applicants to have a solid idea about the project's expected final sta
 Help us locate your project in the Polkadot landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
-- Who is your target audience?
+- Target audience: 
 - What need(s) does your project meet?
 - Are there any other projects similar to yours in the Polkadot ecosystem?
   - If so, how is your project different?
@@ -113,9 +116,11 @@ Please provide a breakdown of your budget by milestone:
 
 Please include:
 
-- How you intend to continue development after the Fast-Grant
+- Future development after the Fast Grant: Kash is on full speed seeking fundraising from BAs and VCs. We already have gathered a small initial amount from BAs, and tier one VCs have shown solid interest in learning more about our pre-seed round. The round costs will be broken down into GTM execution (gamified farming for SocialFi pre-launch), MVP development and community engagement competitions. For the former, we have already partnered with top crypto B2C marketing and strategy companies that have brought products like Coinbase, Lido or Uniswap to the next level. The MVP will take around 3-4 months until official launch with solid and loyal user base (from the farming strategy) and community competitions will be coordinated from our Discord server and executed on X, regarding our "feed ambassadaor", referral and leaderboard strategies to keep Kash users engaged and maximise X viral growth.
+
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
-- Your vision for the project's growth and impact in the Polkadot ecosystem
+  
+- Vision of Kash within Polkadot: Kash aims to become the largest prediction market in the world whose technology enables for a higher-frequency betting schedule and a viral user growth, given our full embedding directly onto social media, fully powered and driven via advanced AI agents and immediate, trustless cryptographic techniques. Polymarket brought the concept of prediction markets to the world, and Kash is here to double down on that and overcome the biggest barriers these platforms have had thus far, albeit their massive success ($3 billion volume in most popular markets alone), with Elon Musk reposting them all the time. 
 
 ## ℹ️ Additional Information
 
