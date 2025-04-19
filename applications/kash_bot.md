@@ -266,20 +266,27 @@ Over 3 months, two full‑time engineers (Matthew & Lucas) will deliver Kash’
 
 ## 🔮 Future Plans
 
-Please include:
+### Continued Development Post–Fast Grant
+Once the core POC is delivered, Kash will move into a 3–4 month MVP phase focused on:  
+1. **GTM & Farming Launch** – Deploy gamified “farm‑to‑fish” SocialFi campaigns to onboard savers and gamblers via token‑incentivized yield farms, in partnership with top crypto B2C agencies (ex‑Coinbase, Lido, Uniswap teams).  
+2. **MVP Feature Build‑out** – Harden and extend the oracle network to handle multiple data sources, add multi‑choice markets, and integrate front‑end UIs for X/Discord.  
+3. **Community Engagement** – Coordinate Discord “feed ambassador” contests, X‑based referral campaigns, and leaderboard competitions to lock in a loyal user base and drive viral adoption.
 
-- Future development after the Fast Grant: Kash is on full speed seeking fundraising from BAs and VCs. We already have gathered a small initial amount from BAs, and tier one VCs have shown solid interest in learning more about our pre-seed round. The round costs will be broken down into GTM execution (gamified farming for SocialFi pre-launch), MVP development and community engagement competitions. For the former, we have already partnered with top crypto B2C marketing and strategy companies that have brought products like Coinbase, Lido or Uniswap to the next level. The MVP will take around 3-4 months until official launch with solid and loyal user base (from the farming strategy) and community competitions will be coordinated from our Discord server and executed on X, regarding our "feed ambassadaor", referral and leaderboard strategies to keep Kash users engaged and maximise X viral growth.
+### Additional Funding Plans
+- **Pre‑Seed VC & Angels** – We will secure angel checks and are in advanced discussions with tier‑one VCs for a pre‑seed round.  
+- **Grants & Ecosystem Programs** – We will apply for Polkadot ecosystem grants (beyond Fast‑Grant) and pursue relevant accelerator support.  
+- **Strategic Partnerships** – Engage DAOs, DeFi protocols, and prediction‑market infrastructure projects for co‑marketing and potential co‑funding.
 
-- Any plans for seeking additional funding (other grants, VC funding, etc.)
-  
-- Vision of Kash within Polkadot: Kash aims to become the largest prediction market in the world whose technology enables for a higher-frequency betting schedule and a viral user growth, given our full embedding directly onto social media, fully powered and driven via advanced AI agents and immediate, trustless cryptographic techniques. Polymarket brought the concept of prediction markets to the world, and Kash is here to double down on that and overcome the biggest barriers these platforms have had thus far, albeit their massive success ($3 billion volume in most popular markets alone), with Elon Musk reposting them all the time. 
+### Vision & Ecosystem Impact
+Kash aims to become the world’s largest, highest‑frequency prediction platform—fully embedded in social media and powered by trustless zk‑proof oracles and AI agents. By leveraging Polkadot’s scalability and cross‑chain messaging, we will:  
+- **Double‑Down on Adoption** – Simplify market creation & resolution to attract millions of X, Farecaster, and Reddit users.  
+- **Enable Reusable Oracle Infrastructure** – Open‑source our zkTLS⇄AI oracle stack so other DApps can tap into provably‑fair off‑chain data.  
+- **Drive Native DeFi Growth** – Fuse prediction markets with yield‑bearing strategies to convert “savers” into active participants and bootstrap deep liquidity.  
+- **Catalyze SocialFi on Polkadot** – Showcase how Polkadot’s security and governance can underpin truly trustless, socially‑driven financial products at scale.  
+
 
 ## ℹ️ Additional Information
 
-Here you can add any additional information that you think is relevant to this application, such as:
-
-- Work you have already done
-- If there are any other teams who have already contributed to the project
-- Other funding you may have applied for
+Beyond the technical team, Kash has secured founding members from tier-one web3 crypto protocols, from legal to design to hard core cryptographics experts, as the project's success relies on the correct GTM, development, execution and user adoption, maximising our chances. 
 
 Remember that the Fast-Grants Programme is designed as a first step for promising projects. We're looking for projects that can continue to grow beyond this initial funding.
