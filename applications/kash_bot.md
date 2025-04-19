@@ -17,7 +17,7 @@
 - ### Kash-team-fit:
   Kash is built upon two main pillars that the team profoundly believes in. Firstly, the unequivocal human right to permissionlessly participate in prediction markets to yield an accurate public good, and, secondly, the team's certainty and vision of the future of retail finance being fully embedded into social media and running on cryptorails. Finally, the team includes the nerdiest of cryptographers (zkp experts), blocklchain security hackers (DeFi focused) together with the most degen of crypto / web3 B2C marketers. The team further brings 7+ years of early-stage, product-led crypto entrepreneurial experience, with the best successful failures and vital lessons learned, all of which make us the hungriest to conquer the GTM with Kash 🔥
   
-- ### [1-min video pitch](https://www.ycombinator.com/video/)
+- ### [1-min video pitch](https://youtu.be/9Z_46SslsDE)
 
 ### 🔍 Project Details
 
@@ -193,8 +193,8 @@ Prediction markets with integrated AI+zk proofs and social login are a novel con
 
 #### LinkedIn Profile
 
-- ![Matthew Wampler-Doty](https://vitalik.eth.limo/general/2017/09/14/prehistory.html)
-- ![Lucas Martin Calderon](https://uk.linkedin.com/in/lucasmartincalderon)
+- ![Lucas Martin Calderon, Founder](https://uk.linkedin.com/in/lucasmartincalderon)
+- ![Matthew Wampler-Doty, 1st Kasher](https://vitalik.eth.limo/general/2017/09/14/prehistory.html)
 
 ### Team Code Repos
 
