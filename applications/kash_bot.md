@@ -26,6 +26,9 @@
 
 - ### Documentation of core components, protocols, architecture, etc. to be deployed
   1. #### KashDAO Architecture Design
+     ![kash_polka_architecture](https://github.com/user-attachments/assets/968706b8-663b-45f5-9aa9-b5ab04dfd0e0)
+  2. #### Protocol Architecture
+     
      
   
 - Any PoC/MVP or other relevant prior work or research on the topic
