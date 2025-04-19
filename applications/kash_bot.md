@@ -17,7 +17,7 @@
 - ### Kash-team-fit:
   Kash is built upon two main pillars that the team profoundly believes in. Firstly, the unequivocal human right to permissionlessly participate in prediction markets to yield an accurate public good, and, secondly, the team's certainty and vision of the future of retail finance being fully embedded into social media and running on cryptorails. Finally, the team includes the nerdiest of cryptographers (zkp experts), blocklchain security hackers (DeFi focused) together with the most degen of crypto / web3 B2C marketers. The team further brings 7+ years of early-stage, product-led crypto entrepreneurial experience, with the best successful failures and vital lessons learned, all of which make us the hungriest to conquer the GTM with Kash 🔥
   
-- [1-min video pitch](https://www.ycombinator.com/video/)
+- ### [1-min video pitch](https://www.ycombinator.com/video/)
 
 ### 🔍 Project Details
 
@@ -45,7 +45,7 @@
 - ### Tokenomics and Token Utility Prior Research and Work For Community Engagement and Sustanability
   ![kash_tokenomics](https://github.com/user-attachments/assets/feb8680b-ee0f-4618-9e3e-2cef12e1dd55)
 
-- [Demo mockup](https://www.youtube.com/watch?v=lnyuNwofK7M)
+- ### [Demo mockup](https://www.youtube.com/watch?v=lnyuNwofK7M)
   
 - ### Data models / API specifications of the core functionality
   Core functionality is exposed via two complementary interfaces: (1) a lightweight REST/WebSocket API for off‑chain agents and front‑end bots, and (2) the on‑chain RPC and extrinsic methods of our parachain.
@@ -145,21 +145,38 @@ struct MarketInfo<AccountId, Balance, BlockNumber> {
 
 Resolution proofs are verified by the on‑chain `Verifier` pallet using a succinct SNARK verifying key. Events such as `MarketCreated`, `BetPlaced`, `MarketResolved`, and `PayoutIssued` provide real‑time feeds to off‑chain indexers. Cross‑chain asset transfers and XCM‑wrapped extrinsics enable multi‑network interoperability for both liquidity and resolution agents.
   
-- ### What Kash is *not* or will *not* provide or implement
-  
+- ### What our project is **not** or **will not** provide in this grant
+  In this three‑month fast grant we will **not** deploy a full production parachain, build a user‑facing trading UI, or finalize tokenomics and governance flows. Our scope is limited to delivering comprehensive technical documentation and prototypes for (1) smart‑contract driven automated market creation, (2) an advanced zkTLS⇄AI oracle network ensuring off‑chain site integrity and uptime, and (3) an in‑house Polkadot “Privy” module using threshold cryptography for social‑login account creation. Everything beyond these core R&D efforts—end‑to‑end parachain integration, performance tuning to >1,000 TPS, cross‑chain asset bridges, mobile SDKs, compliance/KYC layers, full audit and security hardening—will be scheduled for the subsequent project phase, outside the grant’s timeline.  
 
 ### 🧩 Ecosystem Fit
 
-Help us locate your project in the Polkadot landscape and what problems it tries to solve by answering each of these questions:
+Kash positions itself as a high‑impact Polkadot parachain, combining decentralized prediction markets (CPAMM), advanced zkTLS⇄AI oracle technology, and seamless social‑login onboarding. By integrating AI‑curated markets with on‑chain composability and Substrate‑native pallet design, Kash not only enriches DeFi and oracle capabilities on Polkadot but also unlocks a massive user base from social platforms (X, Farecaster, Reddit).
 
-- Where and how does your project fit into the ecosystem?
-- Target audience: 
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Polkadot ecosystem?
-  - If so, how is your project different?
-  - If not, why might such a project not exist yet?
+### Where and how does your project fit into the ecosystem?  
+Kash ships as a dedicated parachain runtime composed of custom pallets for MarketFactory, AMM, Resolver and ProxyAccount. It leverages Polkadot’s cross‑chain messaging (XCM) to integrate off‑chain AI agents (ElizaOS) and Mira consensus for automated market creation, and embeds a zkTLS oracle pallet for trustless outcome verification. FeeProxy and DEX‑Aggregator pallets (e.g. HydraDX) handle gas sponsorship and in‑chain swaps, while Relay Chain governance (Democracy, Treasury) oversees protocol upgrades and buy‑backs.
 
-> **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
+### Target audience  
+- **Retail bettors & social traders** on X, Farecaster, Reddit—any user can create or join markets via simple social posts. Our first, initial ICP is anyone 25-35 years-old, crypto degen, previously partcipated in social bets or SocialFi apps and is tech savvy (enough to have a crypto wallet). As per some gaming psychological customer profiling, this sort of user could be consider a "gambler". 
+- **DeFi investors** seeking new on‑chain yield opportunities with dynamic fee/reward models. As per some gaming psychological customer profiling, this sort of user could be consider a "saver" or "sophisticated investor"
+
+### What need(s) does your project meet?  
+- **Mass onboarding**: social‑login via Privy‑MPC lowers UX barriers, bringing millions of non‑crypto users to Polkadot.  
+- **Automated, decentralized market creation**: AI‑driven question structuring and on‑chain Factory instantiation scales prediction markets beyond manual provisioning.  
+- **Trustless resolution**: zkTLS proofs + ezkl‑compiled AI inference deliver cryptographically verifiable outcomes without centralized oracles.  
+- **Composable infra**: other parachains can leverage Kash’s oracle and AMM pallets to bootstrap their own markets or extend existing DeFi apps.
+
+### Are there any other projects similar to yours in the Polkadot ecosystem?  
+- **PolkaOracle** offers a general oracle network on Polkadot, but lacks integrated zkTLS proofs and AI inference pipelines
+- **Polkadex** is a parachain DEX focused on order‑book trading; it doesn’t provide prediction markets or AI‑driven oracles
+
+**How is Kash different?**  
+- **End‑to‑end zkTLS⇄AI oracle** built into the runtime, not just data feeds. The first, automated, decentralised, immediate and trustless prediction market resolution oracle network. 
+- **Automated market creation** by off‑chain AI agents, not manual proposals, through ElizaOS and Polkadot integration, at the cutting-edge of advanced agentic AI models. 
+- **Social‑first UX** with threshold‑cryptography login, onboarding via existing social identities.
+- **Kash is to Polkadot what PayPal was to e-commerce** by setting a precedent and first-mover-advantage when it comes to fully embedding prediction markets into social media. 
+
+**If no direct analogue exists, why?**  
+Prediction markets with integrated AI+zk proofs and social login are a novel convergence of SocialFi, AI‑oracles, and DeFi—areas still nascent on Polkadot. Kash pioneers this combination, filling a clear gap in the ecosystem.  
 
 ## 👥 Team
 
