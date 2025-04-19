@@ -180,75 +180,89 @@ Prediction markets with integrated AI+zk proofs and social login are a novel con
 
 ## 👥 Team
 
-- **Team Name:** Name of your team. If you apply as a legal entity, please use its name.
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email
-- **Website:** Your website, GitHub org, blog, or similar
+- **Team Name:**
+  Kash (no legal entity)
+- **Contact Name:**
+  Lucas Martin Calderon
+- **Contact Email:**
+  lucas@kash.bot
+- **Website:**
+  kash.bot (not operational)
 
 ### Team members
 
-Please list the legal name of all grant beneficiaries. Solo developers (1-person teams) are eligible for funding.
+#### LinkedIn Profile
 
-#### LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- ![Matthew Wampler-Doty](https://vitalik.eth.limo/general/2017/09/14/prehistory.html)
+- ![Lucas Martin Calderon](https://uk.linkedin.com/in/lucasmartincalderon)
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
+- https://github.com/organizations/KashDAO
 
 Please also provide the GitHub accounts of all team members:
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- https://github.com/xcthulhu
+- https://github.com/LucasMartinCalderon
 
 ### Team's experience
 
-Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
+#### Matthew Wampler-Doty
+Matthew Wampler‑Doty is a rare polymath whose career bridges blockchain architecture, AI, astrophysics, and formal methods. In 2014 he co‑designed Ethereum’s ASIC‑resistant PoW proposal (“Dagger Hashimoto”), a memory‑hard algorithm that effectively staved off profitable ASICs and preserved network decentralization. He then calibrated the original EVM opcode gas schedule—work still reflected in the Yellow Paper and tracked by tools like the evm-opcode-gas-costs repository—ensuring smart contracts run safely and efficiently. As a principal scientist, he has led development of novel consensus protocols and scalable contract execution engines, advancing blockchain throughput and resilience. Prior to blockchain, Matthew engineered the focal plane electronics for NASA’s TESS mission—creating real‑time camera simulators and compilers essential for exoplanet discovery and produced groundbreaking AI tools for chemical‑reaction inference. His formal‑verification work includes a mechanized proof of Birkhoff’s Representation Theorem and a reduction of finitely‑additive probability counter‑examples to NP‑complete MAX‑SAT problems. Across every domain, Matthew combines deep theoretical insight with hands‑on engineering rigor, making him uniquely qualified to architect and secure Kash’s innovative zkTLS ⇄ AI oracle and threshold‑cryptography login systems.
+
+#### Lucas Martin Calderon 
+Lucas is a visionary technologist and entrepreneur whose deep expertise spans blockchain infrastructure, AI-driven SaaS, and hardware‑accelerated computing. In 2014 he launched Spain’s first academic Bitcoin mining pool and, in the wake of Ethereum’s DAO hack, specialised back in 2016 in smart contract security research. He holds two engineering degrees and an MSc focusing on electronics, blockchain, and AI from UCL, where he contributed to quantum‑photonics research and co‑designed a CPU architecture that dynamically reconfigures itself to running workloads. He has built an AI‑powered smart‑contract vulnerability scanner leveraging non‑Euclidean topology analytics, attracting both government funding and a soft acquisition offer from a leading Web3 security firm. He served as exclusive advisor to a Layer‑1 chain founded by NYSE executives, and later as CEO of a protocol tokenizing diamonds — where he engineered a patent‑eligible, AI‑driven AMM and a cryptographically verifiable asset‑token linkage system.
+
 
 ## 📊 Development Status
 
-If you've already started implementing your project, please provide a link and a description of the code. Otherwise, please provide some documentation on the research and other work you have conducted before applying.
+Kash officially launched in April 2025 as a brand‑new protocol. Since then, we’ve completed comprehensive feasibility studies and market research—validating both our cutting‑edge technical approach and strong user demand with outstanding results. Please find how Kash tackles the biggest challenges in the prediction market field, enabling Kash to become the largest protocol globally: 
 
+### How Kash Tackles Prediction Markets Biggest Challenges
+
+> 💡  
+> Please note that there are 4 main types of user personas in the prediction markets field:
+> - **Savers**: participate in prediction markets to earn income.  
+> - **Gamblers**: participate in prediction markets for the thrill of the bet.  
+> - **Sharps**: sophisticated investors with relevant asymmetric market insights.
+
+| **Issue**                            | **Kash's Strategic Solution**                                                                                   | **Impact & Result**                                                                                                    | **How Kash Clearly Outperforms Kalshi, Polymarket, and Manifold**                                                                                                                                         |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Low Demand** (Lack of Savers)      | Kash’s AI agents identify savers and reward them with variable‑ratio incentives and near‑miss rewards.         | ✅ Attracts savers seeking **positive‑sum returns** beyond zero‑sum betting.                                            | 🚀 **Kash:** Intrinsic DeFi yield for savers. 📉 **Kalshi:** No savings incentives. 📉 **Polymarket:** Pure betting, no yield. 📉 **Manifold:** Play‑money, no real finance.                                   |
+| **Low Engagement** (Lack of Gamblers) | **High‑frequency, AI‑driven markets** plus **gamified mechanics** (variable‑ratio rewards, near‑miss triggers). | ✅ **Fast resolutions** and dynamic experiences boost participation and excitement.                                      | 🚀 **Kash:** Real‑time AI + gamification. 📉 **Kalshi:** Slow cadence, low engagement. 📉 **Polymarket:** Moderate speed, little gamification. 📉 **Manifold:** No real stakes.                                |
+| **Limited Liquidity** (Few Sharps)   | **Viral social distribution** via **X, Reddit, Telegram, Discord** to mobilize large pools of users.          | ✅ **Deep liquidity**, strong arbitrage and hedging opportunities for sharps.                                           | 🚀 **Kash:** Deep social reach. 📉 **Kalshi:** Niche markets, limited users. 📉 **Polymarket:** Regulatory constraints. 📉 **Manifold:** No financial incentives for sharps.                                 |
+| **Poor Market Accessibility**        | **Intent‑based UX** on social platforms with **Privy non‑custodial smart wallets** (OAuth + MPC).             | ✅ Removes friction, enabling **one‑click mass adoption** from everyday users.                                          | 🚀 **Kash:** Instant, gasless participation. 📉 **Kalshi:** Complex onboarding. 📉 **Polymarket:** UX friction. 📉 **Manifold:** No real‑money integration.                                                   |
+| **Inefficient Pricing & Incentives** | **Continuous AI market signals** and **in‑protocol gamification** drive dynamic odds and participation.       | ✅ Enables frequent **arbitrage** and a **diverse participant base** with aligned financial interests.                  | 🚀 **Kash:** AI‑driven inefficiencies = profit opportunities. 📉 **Kalshi:** Static odds, limited depth. 📉 **Polymarket:** No advanced gamification. 📉 **Manifold:** No professional mechanistic edge.        |
+| **Lack of Virality & Growth**        | **Real‑time trending alignment** and embedded social mechanics ensure perpetual relevance and discovery.      | ✅ Maximizes **organic user acquisition**, **market momentum**, and **social virality**.                                | 🚀 **Kash:** Deep platform integration for viral loops. 📉 **Kalshi:** No social layer. 📉 **Polymarket:** Basic sharing. 📉 **Manifold:** Limited real‑world traction.                                        |
 ## 📅 Development Roadmap
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, please describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality.
-
-**Important notes:**
-- Each milestone is capped at **$5,000 USD**
-- Milestones must be delivered within **3 months** of approval
-- The maximum grant amount is **$10,000 USD** per application (up to **$15,000 USD** per project in exceptional cases)
-- You will only receive payment after successful milestone delivery
+**Summary:**  
+Over 3 months, two full‑time engineers (Matthew & Lucas) will deliver Kash’s core protocol modules as Polkadot, EVM‑compatible smart contracts and off‑chain services. We thank Polkadot and request **$10,000 USD** under the **MIT license**, with verification via unit tests, coverage reports, local POC demos and documentation.
 
 ### Overview
+- **Estimated Duration:** 3 months  
+- **Full‑Time Equivalent (FTE):** 2 engineers  
+- **Total Cost:** \$10,000 USD  
 
-- **Estimated Duration:** Duration of the whole project (maximum 3 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project
-- **Total Costs:** Requested amount in USD for the whole project (maximum $10,000 USD)
-
-> Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
-| 1. | Feature X | We will create a feature that will... (Please describe in detail) |
-| 2. | Feature Y | The Y feature will... (Please describe in detail) |
-| 3. | Feature Z | The Z feature will... (Please describe in detail) |
+| Number  | Deliverable                            | Specification                                                                                                                                                                                                                                   |
+|--------:|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | **License**                            | Release all code and artifacts under the **MIT License**.                                                                                                                                                                                        |
+| **0b.** | **Documentation**                      | - **Inline code docs** (NatSpec/JSDoc) for contracts & services.  <br>- **User guide**: contract deployment, off‑chain service setup, CLI usage, end‑to‑end workflow.                                                                              |
+| **0c.** | **Testing & Guide**                    | - **Unit tests** for contract logic, oracle flows, MPC simulations.  <br>- **Threshold‑crypto tests** for t‑of‑n signing.  <br>- **Coverage report** ≥ 95%.                                                                                        |
+| **0d.** | **Article**                            | Publish a **technical blog post** detailing architecture, implementation, and test outcomes—targeting Base & Polkadot communities.                                                                                                               |
+| **1.**  | **Concentrated‑Liquidity Market Module** | - **EVM contract** (`MarketFactory.sol`) that:  <br>  • Creates a **binary‑outcome pool** with deadline/metadata.  <br>  • Implements **concentrated liquidity** (Uniswap v4 style).  <br>  • Exposes `createMarket()`, `addLiquidity()`, `placeBet()`.  <br>- **Range SDK & CLI**: tick‑math helpers + visualization tool.  <br>- **Verification:** Hardhat/Foundry tests + demo scripts showing pool creation, LP range positions, and trades updating reserves. |
+| **2.**  | **AI‑Agent Integration POC**           | - **Off‑chain agent** in Node.js that uses ElizaOS to detect X posts, generates market proposals, and calls `createMarket()`.  <br>- **SDK module** for signing intent via MPC/social‑login → JSON‑RPC to MarketFactory.  <br>- **Verification:** POC script demonstrating market creation end‑to‑end and unit tests for agent logic, connected to Polkadot. |
+| **3.**  | **zkTLS ⇄ AI Oracle Network POC**      | - **Off‑chain service** fetching one HTTP source over **zkTLS**, running an **ezkl‑compiled AI classifier** to output YES/NO + proof.  <br>- **Oracle contract** consuming and verifying the proof on‑chain (`resolveMarket()`).  <br>- **Verification:** Local chain demo, unit tests for proof generation & on‑chain verification. |
 
 ### 💰 Budget Breakdown
 
-Please provide a breakdown of your budget by milestone:
+| Milestone | Deliverables                                                               | Cost (USD) | Estimated Completion |
+|----------:|----------------------------------------------------------------------------|-----------:|---------------------:|
+| **1**     | 0a–0d + Deliverable 1 (Market + Liquidity Module & CLI)                    |   \$5,000 |  3 weeks          |
+| **2**     | Deliverable 2 (AI‑Agent Integration POC + SDK)                              |   \$2,500 | 3 weeks         |
+| **3**     | Deliverable 3 (zkTLS⇄AI Oracle Network POC)                                 |   \$2,500 | 3 weeks        |
+| **Total** |                                                                            | **\$10,000**| **9 weeks**        |
 
-| Milestone | Deliverables | Cost (USD) | Estimated Completion |
-| --- | --- | --- | --- |
-| 1 | Features X, Y | $5,000 | 1.5 months |
-| 2 | Feature Z | $5,000 | 1.5 months |
-| **Total** | | **$10,000** | **3 months** |
 
 ## 🔮 Future Plans
 
