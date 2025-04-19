@@ -27,18 +27,126 @@
 - ### Documentation of core components, protocols, architecture, etc. to be deployed
   1. #### KashDAO Architecture Design
      ![kash_polka_architecture](https://github.com/user-attachments/assets/968706b8-663b-45f5-9aa9-b5ab04dfd0e0)
-  2. #### Protocol Architecture
-     
-     
+     The KashDAO architecture leverages Polkadot’s on‑chain governance pallets (Democracy, Council, Technical Committee) alongside a bespoke Treasury & Buyback pallet to coordinate protocol funding, fee management, and token buy‑backs. Market parameters, pallet upgrades, and oracle lists are submitted as GOVERNANCE calls and voted on via on‑chain referenda. Once approved, the Scheduler pallet enacts changes automatically at the next era boundary. Emergency multi‑sig interventions are handled by the Proxy pallet under a “Collective” proxy group, ensuring no single actor can unilaterally pause markets or alter critical modules. This design creates a fully decentralized decision loop—proposals originate in the community, are ratified on the Relay Chain, and executed atomically in the Kash parachain runtime.
+  3. #### Protocol Architecture
+     ![kash_aaa](https://github.com/user-attachments/assets/4d5c9788-92dc-4171-a1f5-22dfba8a448a)
+     At its core, the Kash parachain runtime bundles three key pallets: the AMM pallet for on‑chain constant‑product markets, the Resolver pallet for trustless outcome settlement via zk‑proof verification, and a ProxyAccount pallet for gas delegation and meta‑transactions. Off‑chain, ElizaOS agents and Mira validators generate and curate markets, then submit XCM‑encoded extrinsics to the parachain. Liquidity provisioning and swaps execute through an integrated DEX Aggregator pallet (e.g., HydraDX), while the FeeProxy pallet sponsors transaction fees, paid in xcUSD or KASH. MEV protection is provided by a dedicated bundle relayer that interfaces with collators—ensuring private inclusion of large bets. Together, these modules stitch off‑chain intelligence and on‑chain execution into a seamless, Polkadot‑native protocol.
+  5. #### Listeners
+     ![kash_wallet](https://github.com/user-attachments/assets/f9f7fa15-1f80-4d79-9519-0c27d43a1e44)
+     Kash off‑chain listeners consist of two streams: the X Post Listener monitors public tweets tagging @kash_bot, parsing structured bet intents via a lightweight NLP layer; the DM Interface handles private commands, mapping natural‑language requests (“Bet 20 on NO”) into discrete extrinsic payloads. Both listeners sign payloads with a Privy‑managed MPC key and forward them to a ProxyDispatcher service. This service batches incoming operations into a single “UserOperation” and routes them through the ProxyAccount pallet, enabling gas‑abstracted execution. By decoupling social ingestion from on‑chain calls, Kash maintains high throughput, resilience to social‑layer rate limits, and an immutable audit trail of user intents.
+  7. #### Wallet & Account Logic
+     ![kash_wallet_sequence](https://github.com/user-attachments/assets/44dce2d5-a9e4-43eb-9542-282458d5c401)
+     Wallets are instantiated via the Privy MPC framework, which generates an SS58 address and splits key shares between the user device and Kash’s HSM. Each user gets a ProxyAccount on the parachain, controlled by a “proxy” pallet instance. When a user action arrives, the Privy service reconstructs the signature locally, and the ProxyDispatcher submits the extrinsic through the ProxyAccount, which can both batch 0x‑style swaps and AMM interactions. Fees are sponsored by the FeeProxy pallet, debited in xcUSD on success. In case of account compromise, users can rotate shares via an emergency recovery pallet, re-establishing control without exposing seed phrases—preserving self‑custody and user experience.
+  9. #### Automated, AI-Powered Market Creation
+     ![kash_market_creation](https://github.com/user-attachments/assets/4df5932d-f598-4be6-b9b0-b9a7a3640a6f)
+     ElizaOS agents run in a distributed off‑chain worker network, continuously scanning X for emerging topics. Upon detecting a suitable signal, the Market Creator agent uses a fine‑tuned LLM to normalize the question, then computes a “Gambling‑Neutral Behavioral Score” and consults Mira validators for consensus. If the score and validator attestations pass predefined thresholds, the agent submits an XCM‑wrapped instantiate_market extrinsic to the parachain’s Factory pallet. That pallet spins up a new instance of the AMM and Resolver pallets, initializing liquidity pools and on‑chain metadata. A feedback message is then sent back through @kash_bot, complete with initial odds—turning social chatter into decentralized markets in under seconds.
+
   
-- Any PoC/MVP or other relevant prior work or research on the topic
+- ### Tokenomics and Token Utility Prior Research and Work For Community Engagement and Sustanability
+  ![kash_tokenomics](https://github.com/user-attachments/assets/feb8680b-ee0f-4618-9e3e-2cef12e1dd55)
 
 - [Demo mockup](https://www.youtube.com/watch?v=lnyuNwofK7M)
   
-- Data models / API specifications of the core functionality
+- ### Data models / API specifications of the core functionality
+  Core functionality is exposed via two complementary interfaces: (1) a lightweight REST/WebSocket API for off‑chain agents and front‑end bots, and (2) the on‑chain RPC and extrinsic methods of our parachain.
+
+In the off‑chain API, each `UserOperation` object is modeled as:
+
+```json
+{
+  "sender_ss58": "5F…",
+  "calls": [
+    {
+      "pallet": "dexAgg",
+      "method": "swap_exact_input",
+      "args": {
+        "asset_in": "DOT",
+        "asset_out": "xcUSD",
+        "amount_in": 1000000000000
+      }
+    },
+    {
+      "pallet": "amm",
+      "method": "place_bet",
+      "args": {
+        "market_id": "0xabc123…",
+        "outcome": 1,
+        "amount": 50000000000
+      }
+    }
+  ],
+  "fee_asset": "xcUSD",
+  "max_fee": 1000000000,
+  "nonce": 42,
+  "signature": "0x…"
+}
+```
+
+The ProxyDispatcher packages this payload and dispatches it via the `proxy.dispatch` extrinsic.
+
+On‑chain, the runtime exposes pallets with the following key extrinsics (parameters simplified):
+
+- **Factory.instantiate_market**  
+  ```rust
+  fn instantiate_market(
+      origin: Origin, 
+      question: Vec<u8>, 
+      outcomes: u8, 
+      deadline: T::BlockNumber
+  ) -> MarketId
+  ```
+- **AMM.add_liquidity**  
+  ```rust
+  fn add_liquidity(
+      origin: Origin, 
+      market_id: MarketId, 
+      amounts: Vec<Balance>
+  )
+  ```
+- **AMM.place_bet**  
+  ```rust
+  fn place_bet(
+      origin: Origin, 
+      market_id: MarketId, 
+      outcome: u8, 
+      amount: Balance
+  )
+  ```
+- **Resolver.resolve_market**  
+  ```rust
+  fn resolve_market(
+      origin: Origin, 
+      market_id: MarketId, 
+      outcome: u8, 
+      proof: Vec<u8>
+  )
+  ```
+- **Treasury.withdraw_proceeds**  
+  ```rust
+  fn withdraw_proceeds(
+      origin: Origin, 
+      market_id: MarketId
+  )
+  ```
+
+Market state is stored in a Rust struct:
+
+```rust
+struct MarketInfo<AccountId, Balance, BlockNumber> {
+    question: Vec<u8>,
+    creator: AccountId,
+    outcomes: u8,
+    reserves: Vec<Balance>,
+    deadline: BlockNumber,
+    resolved: bool,
+    result: Option<u8>,
+}
+```
+
+Resolution proofs are verified by the on‑chain `Verifier` pallet using a succinct SNARK verifying key. Events such as `MarketCreated`, `BetPlaced`, `MarketResolved`, and `PayoutIssued` provide real‑time feeds to off‑chain indexers. Cross‑chain asset transfers and XCM‑wrapped extrinsics enable multi‑network interoperability for both liquidity and resolution agents.
   
-- What Kash is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations
+- ### What Kash is *not* or will *not* provide or implement
+  
 
 ### 🧩 Ecosystem Fit
 
