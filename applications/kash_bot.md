@@ -1,22 +1,32 @@
 # 📝 Kash
 
 ## 🌟 Project Overview
+<img width="656" alt="Screenshot 2025-04-19 at 16 55 07" src="https://github.com/user-attachments/assets/b96ff522-1b88-47ff-95ea-d23889eab0d6" />
 
-- Name and one-liner of the project: Kash - Your Friendly AI-Powered Prediction Markets Crypto Buddy On X
+- ### Name and one-liner of the project
+  Kash - Your Friendly AI-Powered Prediction Markets Crypto Buddy On X
   
-- Description: Kash enables users to effortlessly place bets on the outcome of future events, directly from a simple X post. ElizaOS and Mira Network are used to digest market signals to create new trending markets and to perfectly target the right X thread at the right time to ensure maximum user kick and engagement. Equally, Kash is building the first zkTLS <> AI oracle network to resolve markets immediately, in a decentralised and trustless manner - three of the biggest challenges stopping prediction markets from becoming the next big thing. At the core of Kash, there is Polkadot, to ensure millions of users deposit USDT on the biggest prediction markets, with Kash understanding and executing user intents from a simple post, automatically, fully effortlessly and seamlessly. Before, PayPal changed the game with email-based payment systems. Today, Kash is redifining SocialFi with a simple post - poised for viral growth.
+- ### Description
+  Kash enables users to effortlessly place bets on the outcome of future events, directly from a simple X post. ElizaOS and Mira Network are used to digest market signals to create new trending markets and to perfectly     target the right X thread at the right time to ensure maximum user kick and engagement. Equally, Kash is building the first zkTLS <> AI oracle network to resolve markets immediately, in a decentralised and trustless manner -three of the biggest challenges stopping prediction markets from becoming the next big thing. At the core of Kash, there is Polkadot, to ensure millions of users deposit USDT on the biggest prediction markets, with Kash understanding and executing user intents from a simple post, automatically, fully effortlessly and seamlessly. **Before, PayPal changed the game with email-based payment systems. Today, Kash is redifining SocialFi with a simple post - poised for viral growth.** 🧨
+<img width="1158" alt="Screenshot 2025-04-19 at 16 48 48" src="https://github.com/user-attachments/assets/8737a587-d2c4-4fed-945f-c040de88cbdd" />
 
-- Polkadot integration: Kash integrates seamlessly into Polkadot as a Substrate-based parachain, leveraging Polkadot’s shared security and XCM interoperability to enhance its AI-driven prediction markets. Built natively on Polkadot, Kash taps into Phala Network’s off-chain compute for its ElizaOS AI and aligns its zkTLS oracles and ZKML resolution with Polkadot’s zero-knowledge focus (e.g., JAM protocol). It can pull liquidity from Acala or data via Acurast, showcasing Polkadot’s flexibility for complex DeFi primitives. For Polkadot, Kash introduces a socially-driven use case—prediction markets with social media integration—boosting retail adoption, ecosystem liquidity, and technical innovation in AI and ZK domains - it effectively has the power to bring million of X users seamlessly onto Polkadot. 
+
+- ### Polkadot integration:
+  Kash integrates seamlessly into Polkadot as a Substrate-based parachain, leveraging Polkadot’s shared security and XCM interoperability to enhance its AI-driven prediction markets. Built natively on Polkadot, Kash taps into Phala Network’s off-chain compute for its ElizaOS AI and aligns its zkTLS oracles and ZKML resolution with Polkadot’s zero-knowledge focus (e.g., JAM protocol). It can pull liquidity from Acala or data via Acurast, showcasing Polkadot’s flexibility for complex DeFi primitives. For Polkadot, Kash introduces a socially-driven use case—prediction markets with social media integration—boosting retail adoption, ecosystem liquidity, and technical innovation in AI and ZK domains - it effectively has the power to bring million of X users seamlessly onto Polkadot 🙌
   
-- Kash-team-fit: Kash is built upon two main pillars that the team profoundly believes in. Firstly, the unequivocal human right to permissionlessly participate in prediction markets to yield an accurate public good, and, secondly, the team's certainty and vision of the future of retail finance being fully embedded into social media and running on cryptorails. Finally, the team includes the nerdiest of cryptographers (zkp experts), blocklchain security hackers (DeFi focused) together with the most degen of crypto / web3 B2C marketers. 
+- ### Kash-team-fit:
+  Kash is built upon two main pillars that the team profoundly believes in. Firstly, the unequivocal human right to permissionlessly participate in prediction markets to yield an accurate public good, and, secondly, the team's certainty and vision of the future of retail finance being fully embedded into social media and running on cryptorails. Finally, the team includes the nerdiest of cryptographers (zkp experts), blocklchain security hackers (DeFi focused) together with the most degen of crypto / web3 B2C marketers. The team further brings 7+ years of early-stage, product-led crypto entrepreneurial experience, with the best successful failures and vital lessons learned, all of which make us the hungriest to conquer the GTM with Kash 🔥
   
 - [1-min video pitch](https://www.ycombinator.com/video/)
 
 ### 🔍 Project Details
 
-- Technology stack: Kash is a Substrate-based parachain built on the Polkadot ecosystem, harnessing shared security and XCM (cross-chain messaging) to drive its AI-powered prediction markets. Its off-chain AI framework, ElizaOS, runs on Phala Network with Intel SGX, enabling secure computation for market curation and resolution. Trustless operations are powered by zkTLS oracles and a ZKML pipeline via RISC Zero’s zkVM, aligning with Polkadot’s zero-knowledge vision (e.g., JAM protocol). Liquidity is sourced from Acala’s aUSD stablecoin, while Acurast delivers decentralized real-world data as oracles. The user experience is streamlined through a Polkadot.js frontend and custom APIs for social media integration, starting with X's API and moving later to Reddit, Telegam, Farecaster and more. 
+- ### Technology stack:
+  Kash is a Substrate-based parachain built on the **Polkadot ecosystem**, harnessing shared security and **XCM** (cross-chain messaging) to drive its **AI-powered prediction markets**. Its off-chain AI framework, **ElizaOS**, runs on **Phala Network** with Intel SGX, enabling secure computation for market curation and resolution. Trustless operations are powered by **zkTLS oracles and a ZKML pipeline via RISC Zero’s zkVM**, aligning with Polkadot’s zero-knowledge vision (e.g., JAM protocol). Liquidity is sourced from **Acala’s aUSD stablecoin**, while **Acurast** delivers decentralized real-world data as oracles. The user experience is streamlined through a **Polkadot.js** frontend and custom APIs for social media integration, starting with X's API and moving later to Reddit, Telegam, Farecaster and more. 
 
-- Documentation of core components, protocols, architecture, etc. to be deployed
+- ### Documentation of core components, protocols, architecture, etc. to be deployed
+  1. #### KashDAO Architecture Design
+     
   
 - Any PoC/MVP or other relevant prior work or research on the topic
 
