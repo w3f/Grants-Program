@@ -177,8 +177,8 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | Deliverables 0a-d, 1, 2 | $5,000 | 1 months |
-| 2 | Deliverable 3 | $5,000 | 2 months |
+| 1 | Deliverables 0a-d, 1 | $5,000 | 1.5 months |
+| 2 | Deliverables 2, 3 | $5,000 | 1.5 months |
 | **Total** | | **$10,000** | **3 months** |
 
 ## 🔮 Future Plans
