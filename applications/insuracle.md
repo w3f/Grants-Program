@@ -106,7 +106,8 @@ Focusing exclusively on parametric triggers linked to verifiable, objective real
 
 ### Team members
 
-Please list the legal name of all grant beneficiaries. Solo developers (1-person teams) are eligible for funding.
+Daniel Abraham 
+Kirill Slavin
 
 #### LinkedIn Profiles (if available)
 
