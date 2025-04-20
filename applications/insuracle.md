@@ -196,7 +196,7 @@ Develop and integrate additional parametric insurance products (e.g., Flood insu
 Enhance the UI/UX for a more seamless user experience.
 Explore integrations with other Polkadot DeFi protocols (e.g., for premium payments, collateral management, or yield generation on payout pools).
 Prepare for mainnet deployment.
-Additional Funding: We plan to actively seek further funding to support continued development and growth. This includes applying for follow-on grants within the Polkadot ecosystem (e.g., W3F General Grants, parachain ecosystem grants) and potentially pursuing seed-stage Venture Capital funding once the MVP demonstrates traction and market viability.
+Additional Funding: We plan to actively seek further funding to support continued development and growth. This includes applying for follow-on grants within the Polkadot ecosystem (e.g., W3F General Grants, parachain ecosystem grants) and pursuing seed-stage Venture Capital funding once the MVP demonstrates traction and market viability.
 Vision & Impact: Our vision is for Insuracle to become the premier platform for transparent, efficient, and accessible parametric insurance within the Polkadot ecosystem and beyond. We aim to significantly disrupt the traditional insurance market by leveraging blockchain automation, reducing overhead, and increasing trust. By providing robust risk management tools and enabling new forms of coverage, Insuracle will attract users, increase on-chain activity, and demonstrate a powerful real-world use case for Polkadot's technology.
 
 ## ℹ️ Additional Information
