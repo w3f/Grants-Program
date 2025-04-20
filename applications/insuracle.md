@@ -5,13 +5,21 @@
 Please provide the following:
 
 - If the name of your project is not descriptive, a tagline (one sentence summary)
+
   Insuracle provides parametric insurance with policies and payments enabled by smart contracts
+
 - A brief description of your project
+
   Parametric insurance is based on simple verifiable inputs like how many inches of flood water, how many stolen credit cards for sale on DarkNet.  And this        model finally allows insurance to be formalised into smart contacts. We’ll take data from APIs to decentralised oracles, which will supply smart contracts.
+
 - An indication of how your project relates to / integrates into Polkadot
+
   Why Polkadot? Simple: resilience is the number one requirement in insurance. And decentralisation will kill the greedy intermediaries.
+
 - An indication of why your team is interested in creating this project
+
   Daniel is an actuary (primed for the insurtech world) and a founder and Kirill was a $100-million fintech founder and a global cyber chief exec.
+
 - (Optional but big bonus points): [1-min video pitch](https://www.ycombinator.com/video/)
 
 ### 🔍 Project Details
