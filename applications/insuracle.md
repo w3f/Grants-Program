@@ -49,9 +49,9 @@ Help us locate your project in the Polkadot landscape and what problems it tries
 
 ## 👥 Team
 
-- **Team Name:** Name of your team. If you apply as a legal entity, please use its name.
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email
+- **Team Name:** Insuracle
+- **Contact Name:** Daniel Abraham
+- **Contact Email:** danielftabraham@outlook.com
 - **Website:** Your website, GitHub org, blog, or similar
 
 ### Team members
@@ -60,8 +60,8 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 
 #### LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- https://www.linkedin.com/in/daniel-abraham-909448202/
+- https://www.linkedin.com/in/kirillslavin/
 
 ### Team Code Repos
 
@@ -70,14 +70,18 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 
 Please also provide the GitHub accounts of all team members:
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- https://github.com/danielabrahamx
+- https://github.com/ksslavin
 
 ### Team's experience
 
 Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
 
-## 📊 Development Status
+Kirill attended Cambridge University and studied cryptography, founded a $100M fintech startup, and was also a global cyber chief executive for a decacorn. 
+Kirill also founded rebrew.io, monetising customer reviews by minting them as NFTs.
+Daniel studied actuarial science at Bayes Business School, and also has professional experience working in a cybersecurity startup, and a deep understanding of actuarial risk modelling.
+
+## 📊 Development Status - (N/A, idea only)
 
 If you've already started implementing your project, please provide a link and a description of the code. Otherwise, please provide some documentation on the research and other work you have conducted before applying.
 
