@@ -148,8 +148,16 @@ This section should break the development roadmap down into milestones and deliv
 ### Overview
 
 - **Estimated Duration:** Duration of the whole project (maximum 3 months)
+
+  3 months
+  
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project
+
+  2 months
+  
 - **Total Costs:** Requested amount in USD for the whole project (maximum $10,000 USD)
+
+  $10,000 USD
 
 > Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
 
