@@ -114,7 +114,7 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 - https://www.linkedin.com/in/kirillslavin/
 
 ### Team Code Repos
-
+N/A
 - https://github.com/{your_organisation}/{project_1}
 - https://github.com/{your_organisation}/{project_2}
 
@@ -163,13 +163,13 @@ This section should break the development roadmap down into milestones and deliv
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
-| 1. | Feature X | We will create a feature that will... (Please describe in detail) |
-| 2. | Feature Y | The Y feature will... (Please describe in detail) |
-| 3. | Feature Z | The Z feature will... (Please describe in detail) |
+| 0a. | License | MIT |
+| 0b. | Documentation |We will provide inline code documentation explaining key functions and logic. Additionally, a basic tutorial will guide users on setting up a local development environment, deploying the smart contracts to a testnet, and interacting with the core functions (policy creation, status check) via the frontend dApp or command line. |
+| 0c. | Testing and Testing Guide | Core smart contract functions (policy creation, state changes, premium handling, trigger logic, payout) will be covered by comprehensive unit tests (e.g., using Hardhat/Foundry or cargo test depending on language). The guide will detail how to execute these tests and interpret the results. |
+| 0d. | Article | We will publish an article (e.g., on Medium or a project blog) summarizing the Insuracle concept, the work completed during the grant (Milestones 1 & 2 achievements), the MVP functionalities, and outlining our future plans for the project within the Polkadot ecosystem. |
+| 1. | Core Contracts (MVP) | Development, testing, and documentation of the core smart contracts (likely Solidity or ink!) for the Cyber Breach insurance product. Includes: Policy creation logic (asset monitored, coverage amount, trigger threshold), basic premium acceptance, state management (Active, Expired), and internal logic for handling oracle data (initially mocked). Verification: Deployed contracts on specified testnet, GitHub repo with documented code, successful execution report of unit tests covering core logic. |
+| 2. | Basic Frontend dApp | A minimal web interface (e.g., React) enabling users to: connect a Polkadot{.js} compatible wallet, input policy parameters (asset, coverage, trigger), see a mock premium, deploy a policy to the testnet contract, and view their active policies associated with their wallet. Verification: Link to the live dApp hosted (e.g., IPFS/Vercel), GitHub repo, screencast demonstrating user flow on testnet. |
+| 3. | Oracle Integration & Payout | Integrate a chosen oracle service (e.g., Acurast, Chainlink) on testnet to receive mock/test data simulating dark web breach record counts. Implement smart contract logic to process oracle data, compare against policy trigger threshold, update policy state (e.g., Triggered, PaidOut), and execute automated payouts of testnet tokens. Update frontend to reflect these status changes. Verification: Updated contracts on testnet, GitHub repo, screencast showing end-to-end flow (policy creation -> mock trigger via oracle -> status change -> testnet token payout). |
 
 ### 💰 Budget Breakdown
 
@@ -177,8 +177,8 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | Features X, Y | $5,000 | 1.5 months |
-| 2 | Feature Z | $5,000 | 1.5 months |
+| 1 | Deliverables 0a-d, 1, 2 | $5,000 | 1 months |
+| 2 | Deliverable 3 | $5,000 | 2 months |
 | **Total** | | **$10,000** | **3 months** |
 
 ## 🔮 Future Plans
@@ -189,6 +189,16 @@ Please include:
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
 - Your vision for the project's growth and impact in the Polkadot ecosystem
 
+  Post-Grant Development: Following successful completion of the grant milestones and MVP delivery, we intend to:
+Refine the MVP based on user feedback and testing.
+Conduct formal security audits of the smart contracts.
+Develop and integrate additional parametric insurance products (e.g., Flood insurance, potentially DeFi-specific options like depeg insurance).
+Enhance the UI/UX for a more seamless user experience.
+Explore integrations with other Polkadot DeFi protocols (e.g., for premium payments, collateral management, or yield generation on payout pools).
+Prepare for mainnet deployment.
+Additional Funding: We plan to actively seek further funding to support continued development and growth. This includes applying for follow-on grants within the Polkadot ecosystem (e.g., W3F General Grants, parachain ecosystem grants) and potentially pursuing seed-stage Venture Capital funding once the MVP demonstrates traction and market viability.
+Vision & Impact: Our vision is for Insuracle to become the premier platform for transparent, efficient, and accessible parametric insurance within the Polkadot ecosystem and beyond. We aim to significantly disrupt the traditional insurance market by leveraging blockchain automation, reducing overhead, and increasing trust. By providing robust risk management tools and enabling new forms of coverage, Insuracle will attract users, increase on-chain activity, and demonstrate a powerful real-world use case for Polkadot's technology.
+
 ## ℹ️ Additional Information
 
 Here you can add any additional information that you think is relevant to this application, such as:
@@ -196,5 +206,9 @@ Here you can add any additional information that you think is relevant to this a
 - Work you have already done
 - If there are any other teams who have already contributed to the project
 - Other funding you may have applied for
+
+  Work Already Done: The project is currently at the idea stage, but significant foundational work has been completed, including conceptualization of the parametric insurance model, initial market research identifying needs in flood and cyber risk, technical feasibility assessment for using smart contracts and oracles on Polkadot, and formation of the core team.
+Team Contributions: The project concept and initial work have been solely contributed by the core team members listed (Daniel Abraham, Kirill Slavin), leveraging their combined expertise in actuarial science, risk modeling, cryptography, cybersecurity, and fintech entrepreneurship.
+Other Funding: Insuracle has not applied for or received any other grants or external funding at this time. This Fast-Grant application represents our first formal request for funding.
 
 Remember that the Fast-Grants Programme is designed as a first step for promising projects. We're looking for projects that can continue to grow beyond this initial funding.
