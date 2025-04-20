@@ -26,12 +26,37 @@ Please provide the following:
 
 We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
 
-- An overview of the technology stack to be used 
+- An overview of the technology stack to be used
+
+  Blockchain/Smart Contracts: Polkadot Parachain (Astar or Moonbeam) using Solidity or ink! for smart contracts.
+Oracles: Integration with decentralized oracles (e.g., Chainlink, Acurast) for external data feeds.
+Frontend: Web dApp using React/Vue, interacting via polkadot-js/ethers.js.
+Storage: IPFS for frontend/metadata hosting.
+
 - Documentation of core components, protocols, architecture, etc. to be deployed
+
+  High-level architecture, core smart contract logic, and oracle integration strategy documentation will be produced during initial milestones. (Currently conceptual)
+
+  
 - Any PoC/MVP or other relevant prior work or research on the topic
+
+  Idea stage. Foundational market research and technical feasibility assessment completed. Actuarial and technical concepts validated internally by the team's expertise.
+
 - Mockups/designs of any UI components
+
+https://v0-modern-web3-dashboard-74ri4qowu.vercel.app/
+
 - Data models / API specifications of the core functionality
+
+  Core data entities (Policy, ClaimEvent) conceptually defined. Detailed specifications and API definitions are planned for development milestones.
+  
 - What your project is *not* or will *not* provide or implement
+
+  Not a traditional underwriter or holder of traditional reserves.
+Does not cover non-parametric or subjective claims.
+Will initially focus on specific, high-reliability data use cases (e.g. cyber attack, fire, flood).
+Does not build proprietary oracle networks or act as a primary data source.
+
   - This is a place for you to manage expectations and clarify any limitations
 
 ### 🧩 Ecosystem Fit
@@ -39,11 +64,36 @@ We expect applicants to have a solid idea about the project's expected final sta
 Help us locate your project in the Polkadot landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
+
+  Insuracle fits within the DeFi sector of the Polkadot ecosystem. It will function as an application layer, deploying smart contracts on a suitable parachain (e.g., Astar, Moonbeam, or potentially others) to utilize Polkadot's shared security, interoperability, and resilience. It leverages essential ecosystem components like smart contract platforms and oracle integrations (e.g., Chainlink, Acurast) to bring real-world risk management on-chain.
+  
 - Who is your target audience?
+
+  Individuals and communities seeking transparent, automated coverage for specific parametric risks (initially flood) often underserved by traditional insurance.
+Small to medium-sized businesses (SMBs) needing efficient coverage against quantifiable cyber threats (like data breaches detected via dark web monitoring).
+Web3 users and DeFi participants looking for innovative, blockchain-native risk management solutions.
+
 - What need(s) does your project meet?
+
+Insuracle addresses the needs for:
+  Transparency & Efficiency: Replacing complex, costly traditional insurance processes with clear, automated smart contract logic.
+Speed & Reliability: Enabling near-instant payouts automatically triggered by verified oracle data, removing human delays and disputes.
+Accessibility & New Markets: Offering coverage for specific, parametric risks that may be difficult or expensive to insure traditionally.
+Reduced Counterparty Risk: Minimizing reliance on intermediaries through trust-minimized smart contract execution.
+
 - Are there any other projects similar to yours in the Polkadot ecosystem?
+
+  Broader DeFi insurance space exists (with multi-chain projects like Neptune Mutual focusing on parametric cover for DeFi risks, or aggregators), but our research indicates no active, dedicated projects focusing specifically on parametric insurance for real-world events like flood and data breaches, built natively within the Polkadot ecosystem. Some projects like PolkaInsure were conceptualized previously, but their current status or exact model differs.
+  
   - If so, how is your project different?
+ 
+    Insuracle differentiates itself from existing broader DeFi insurance protocols by:
+
+Focusing exclusively on parametric triggers linked to verifiable, objective real-world data feeds (not subjective claims assessment or solely DeFi-related risks like smart contract exploits).
+
   - If not, why might such a project not exist yet?
+ 
+    Polkadot's development initially emphasized core infrastructure, interoperability solutions, and foundational DeFi primitives (like DEXs and lending), potentially delaying the emergence of more specialized application layers like niche insurance.
 
 > **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
 
