@@ -15,7 +15,7 @@ jobs:
       - name: Create issue in Internal-Reviews repo
         uses: actions/github-script@v7
         with:
-          token: ${{ secrets.PRIVATE_REPO_PAT }}
+          github-token: ${{ secrets.PRIVATE_REPO_PAT }}
           script: |
             const title = context.payload.pull_request.title;
             const url = context.payload.pull_request.html_url;
