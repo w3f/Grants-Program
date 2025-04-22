@@ -45,7 +45,7 @@
 - ### Tokenomics and Token Utility Prior Research and Work For Community Engagement and Sustanability
   ![kash_tokenomics](https://github.com/user-attachments/assets/feb8680b-ee0f-4618-9e3e-2cef12e1dd55)
 
-- ### [Demo mockup](https://www.youtube.com/watch?v=lnyuNwofK7M)
+- ### [Demo mockup](https://youtu.be/2XzEAwKtLJ4)
   
 - ### Data models / API specifications of the core functionality
   Core functionality is exposed via two complementary interfaces: (1) a lightweight REST/WebSocket API for off‑chain agents and front‑end bots, and (2) the on‑chain RPC and extrinsic methods of our parachain.
@@ -148,6 +148,16 @@ Resolution proofs are verified by the on‑chain `Verifier` pallet using a succi
 - ### What our project is **not** or **will not** provide in this grant
   In this three‑month fast grant we will **not** deploy a full production parachain, build a user‑facing trading UI, or finalize tokenomics and governance flows. Our scope is limited to delivering comprehensive technical documentation and prototypes for (1) smart‑contract driven automated market creation, (2) an advanced zkTLS⇄AI oracle network ensuring off‑chain site integrity and uptime, and (3) an in‑house Polkadot “Privy” module using threshold cryptography for social‑login account creation. Everything beyond these core R&D efforts—end‑to‑end parachain integration, performance tuning to >1,000 TPS, cross‑chain asset bridges, mobile SDKs, compliance/KYC layers, full audit and security hardening—will be scheduled for the subsequent project phase, outside the grant’s timeline.  
 
+### 👽 User Acquisition Strategy and Execution
+
+![pre-launch-image](https://github.com/user-attachments/assets/cbd0a2e7-c659-4adb-8bac-acb1341fbe72)
+
+Kash’s go-to-market strategy is engineered to acquire a massive user base by turning social engagement into a high-stakes, reward-driven game. During pre-launch, Kash runs a multi-season, Simpsons-themed gamified farming campaign that transforms social media activity—memes, predictions, riddles, referrals—into a viral quest for $KASH tokens and exclusive NFT status. With influencer seeding (50–100 KOLs), auto-generated visual bet tweets, and a mystery-driven finale, the campaign is structured to pull in hundreds of thousands of users across X, Farcaster, and Discord. Scarcity via invite-only beta, constant leaderboard reshuffles, and casino-style psychological hooks (like variable rewards and near-miss messaging) ensure participants don’t just join—they obsessively compete, share, and climb. Every social interaction becomes a growth node in a self-reinforcing flywheel.
+
+![post_launch_image_kash](https://github.com/user-attachments/assets/7927cb47-4add-4819-a866-38d1c77c9b5a)
+
+Post-launch, Kash rapidly activates these primed users by leveraging viral loops, real-time trend hijacking, and creator-driven market seeding. Launch is synced with a high-profile cultural event to ensure visibility, with influencers posting their bets in real-time, creating shareable content for immediate network effects. Paid ads, real-world visibility (like London bus campaigns), and integrations with platforms like Discord and Farcaster expand the reach beyond crypto Twitter. To drive conversion and long-term retention, the strategy layers in token yield mechanics, exclusive memberships, gamified betting incentives, and governance-lite perks—turning every user into a stakeholder. In short, Kash doesn’t just market—it builds a movement fueled by memes, money, and mass virality, making client acquisition a matter of momentum, not speculation.
+
 ### 🧩 Ecosystem Fit
 
 Kash positions itself as a high‑impact Polkadot parachain, combining decentralized prediction markets (CPAMM), advanced zkTLS⇄AI oracle technology, and seamless social‑login onboarding. By integrating AI‑curated markets with on‑chain composability and Substrate‑native pallet design, Kash not only enriches DeFi and oracle capabilities on Polkadot but also unlocks a massive user base from social platforms (X, Farecaster, Reddit).
@@ -155,8 +165,10 @@ Kash positions itself as a high‑impact Polkadot parachain, combining decentral
 ### Where and how does your project fit into the ecosystem?  
 Kash ships as a dedicated parachain runtime composed of custom pallets for MarketFactory, AMM, Resolver and ProxyAccount. It leverages Polkadot’s cross‑chain messaging (XCM) to integrate off‑chain AI agents (ElizaOS) and Mira consensus for automated market creation, and embeds a zkTLS oracle pallet for trustless outcome verification. FeeProxy and DEX‑Aggregator pallets (e.g. HydraDX) handle gas sponsorship and in‑chain swaps, while Relay Chain governance (Democracy, Treasury) oversees protocol upgrades and buy‑backs.
 
-### Target audience  
-- **Retail bettors & social traders** on X, Farecaster, Reddit—any user can create or join markets via simple social posts. Our first, initial ICP is anyone 25-35 years-old, crypto degen, previously partcipated in social bets or SocialFi apps and is tech savvy (enough to have a crypto wallet). As per some gaming psychological customer profiling, this sort of user could be consider a "gambler". 
+### Target audience 
+
+- **Retail bettors & social traders** on X, Farecaster, Reddit, Telegram, Discord, among others!
+—any user can create or join markets via simple social posts. Our first, initial ICP is anyone 25-35 years-old, crypto degen, previously partcipated in social bets or SocialFi apps and is tech savvy (enough to have a crypto wallet). As per some gaming psychological customer profiling, this sort of user could be consider a "gambler". 
 - **DeFi investors** seeking new on‑chain yield opportunities with dynamic fee/reward models. As per some gaming psychological customer profiling, this sort of user could be consider a "saver" or "sophisticated investor"
 
 ### What need(s) does your project meet?  
@@ -193,8 +205,8 @@ Prediction markets with integrated AI+zk proofs and social login are a novel con
 
 #### LinkedIn Profile
 
-- ![Lucas Martin Calderon, Founder](https://uk.linkedin.com/in/lucasmartincalderon)
-- ![Matthew Wampler-Doty, 1st Kasher](https://vitalik.eth.limo/general/2017/09/14/prehistory.html)
+- [Lucas Martin Calderon, Founder](https://uk.linkedin.com/in/lucasmartincalderon)
+- [Matthew Wampler-Doty, 1st Kasher](https://vitalik.eth.limo/general/2017/09/14/prehistory.html)
 
 ### Team Code Repos
 
