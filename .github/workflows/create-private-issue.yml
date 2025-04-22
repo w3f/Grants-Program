@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Token presence check
-        run: echo "Token exists: ${{ secrets.PRIVATE_REPO_PAT != '' }}"
+        run: |
+          echo "Token exists: ${{ secrets.PRIVATE_REPO_PAT != '' }}"
 
       - name: Create issue in Internal-Reviews repo
         uses: actions/github-script@v7
