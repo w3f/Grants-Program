@@ -13,9 +13,9 @@
 
 ### Overview
 
-**ParaPort** is an SDK product designed to simplify and automate cross-chain actions in the Polkadot ecosystem. Its primary goal is to provide a seamless user experience when transferring tokens between parachains, automatically handling all the complex steps of Polkadot's bridging mechanism (XCM teleports) alongside the user's intended transaction. Inspired by its initial success as an internal solution within [KodaDot](https://kodadot.xyz/) for minting NFTs on AssetHub, ParaPort has grown into a robust, standalone framework ready to be integrated by a wide variety of applications in the Polkadot ecosystem.
+**ParaPort** is an embedded auto-teleport solution designed to simplify cross-chain transactions in the Polkadot ecosystem. Its primary function is to detect when users need tokens on different parachains and seamlessly handle the entire teleportation process alongside the user's intended action with minimal additional friction. Originally developed as an internal feature within [KodaDot](https://kodadot.xyz/) for minting NFTs on AssetHub, ParaPort has evolved into a comprehensive plug-and-play integration that any application in the Polkadot ecosystem can implement, bridging the gap between complex XCM mechanisms and intuitive user experiences without requiring extensive technical knowledge from developers or users.
 
-ParaPort is based on the academic research paper ["Protocol for Unifying Cross-Chain Liquidity on Polkadot" (Valaštín et al., 2024)](https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2024.1413840/full). The SDK implements *ParaSpell*, an intelligent XCM library the most efficient way for moving tokens between chains. As a result, developers no longer need to manually build or maintain complicated cross-chain logic, and users no longer need to guess how many tokens to bridge or which route to use.
+ParaPort is based on the academic research paper ["Protocol for Unifying Cross-Chain Liquidity on Polkadot" (Valaštín et al., 2024)](https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2024.1413840/full). The building blocks implement *ParaSpell*, an intelligent XCM library, the most efficient way for moving tokens between chains. As a result, developers no longer need to manually build or maintain complicated cross-chain logic, and users no longer need to guess how many tokens to bridge or which route to use.
 
 **Key Features of ParaPort include:**
 
@@ -174,7 +174,7 @@ We have initialized the [exezbcz/paraport](https://github.com/exezbcz/paraport) 
 | 1a. | Cross-Chain Messaging Implementation | XCM message construction, transfer instruction generation, execution engine, protocol adapters, transaction signing, verification, and recovery management. |
 | 1b. | Bridge & Network Management | Network discovery, bridge registry, connection management, health monitoring, protocol selection, asset mapping, and configuration management. |
 | 1c. | Teleport Calculation System | Fee calculation, quote generation, route analysis, balance validation, funds assessment, subscription management, fund detection, and volatility handling. |
-| 1d. | SDK Foundation & Lifecycle Management | Foundational architecture providing clean API interfaces, unified event system, centralized configuration management, and pluggable component registry, ensuring SDK stability and extensibility while maintaining optimal resource utilization across diverse application environments. |
+| 1d. | Foundation & Lifecycle Management | Foundational architecture providing clean API interfaces, unified event system, centralized configuration management, and pluggable component registry, ensuring stability and extensibility while maintaining optimal resource utilization across diverse application environments. |
 | 2a. | Vue/React components | Modular, installable components available via NPM. |
 | 2b. | Inline UI | Progress visualization, customization API, error recovery UI, mobile-first design, state management, and minimal configuration options. |
 | 2c. | UI Component Library | Open-source Figma file containing all UI components, states, and design patterns for easy customization and implementation. |
@@ -227,8 +227,8 @@ As the table with deliveries can be hard to comprehend, we list a detailed list 
 - **Subscription System**: Develop a balance monitoring system that watches for changes across multiple chains.
 - **Fund Detection**: Create a mechanism that detects when expected funds arrive on target chains.
 
-### 1d. SDK Foundation & Lifecycle Management
-- **SDK Initialization Framework**: Design a robust initialization system with dependency injection, configuration validation, and graceful startup sequencing.
+### 1d. Foundation & Lifecycle Management
+- **Initialization**: Design a robust initialization system with dependency injection, configuration validation, and graceful startup sequencing.
 - **State Management Core**: Create a centralized state management system with immutable data patterns for consistent application state across components.
 - **Asynchronous Operation Engine**: Design a system for managing long-running operations with cancellation, timeout handling, and resource cleanup.
 Resource Optimization: Implement intelligent connection pooling, request batching, and subscription management to minimize network and memory usage.
@@ -292,6 +292,9 @@ After successfully implementing ParaPort's core bridging functionalities, our fo
 - **Payment Address:** 14BZFbYEGoWWPjbbZUdLZ1TqDtdXvdeCy3R3t4QXqJmS91Dx
 
 ## Additional Information :heavy_plus_sign:
+
+> [!NOTE]
+> We call it SDK because we provide building blocks which are built on top of the ParaSpell, XCM and Polkadot API
 
 **ParaPort** is positioned as a **public good** for the Polkadot ecosystem—an SDK that any dApp can adopt to radically improve user experience. Eliminating friction from cross-chain token transfers fosters broader adoption of Polkadot's multi-chain paradigm.
 
