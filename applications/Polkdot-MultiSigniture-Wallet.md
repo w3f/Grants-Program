@@ -4,7 +4,7 @@
 - **Payment Details:**
   - **DOT**: 1XsqJ2uNmEz4RZssE17VMzCW26akUNgZqYuJNbTNDJ1uLGS
   - **Payment**: **USDC** 1XsqJ2uNmEz4RZssE17VMzCW26akUNgZqYuJNbTNDJ1uLGS
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels)**: 2
+- **Level**: 2
 
 ## Project Overview :page_facing_up:
 We propose developing a backend service for a multisignature wallet tailored to the Polkadot ecosystem. 
@@ -151,7 +151,7 @@ Perfect! Let's revise the **milestones** and **tech stack references** to better
 
 ---
 
-### **Milestone 1 — Core Node.js Wallet API & Webhook Infrastructure**
+### Milestone 1 — Core Node.js Wallet API & Webhook Infrastructure
 
 - **Estimated Duration:** 1 month  
 - **FTE:** 1.5  
@@ -171,7 +171,7 @@ Perfect! Let's revise the **milestones** and **tech stack references** to better
 
 ---
 
-### **Milestone 2 — Multiwallet, Batch TXs & Advanced Security**
+### Milestone 2 — Multiwallet, Batch TXs & Advanced Security
 
 - **Estimated Duration:** 1 month  
 - **FTE:** 1.5  
