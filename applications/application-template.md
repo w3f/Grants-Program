@@ -107,6 +107,8 @@ Please provide a breakdown of your budget by milestone:
 | 2 | Feature Z | $5,000 | 1.5 months |
 | **Total** | | **$10,000** | **3 months** |
 
+Make sure you show clearly what the funding is going towards (e.g. 30 hours of a full time employee at $X / hour).
+
 ## 🔮 Future Plans
 
 Please include:
