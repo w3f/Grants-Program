@@ -2,7 +2,8 @@ name: Copy PR to Private Repo
 
 on:
   pull_request:
-    types: [opened]
+    types:
+      - opened
 
 jobs:
   copy_to_private:
@@ -20,15 +21,22 @@ jobs:
       - name: Create issue in Internal-Reviews repo
         uses: actions/github-script@v7
         with:
-          token: ${{ secrets.PRIVATE_REPO_PAT }}
+          github-token: ${{ secrets.PRIVATE_REPO_PAT }}
           script: |
             const title = context.payload.pull_request.title;
             const url = context.payload.pull_request.html_url;
             const user = context.payload.pull_request.user.login;
 
-            await github.issues.create({
-              owner: 'Polkadot-Fast-Grants',
-              repo: 'Internal-Reviews',
-              title: `New Grant Submission: ${title}`,
-              body: `A new PR was submitted by @${user}:\n\n${url}`
-            });
+            try {
+              const result = await github.rest.issues.create({
+                owner: 'Polkadot-Fast-Grants',
+                repo: 'Internal-Reviews',
+                title: `New Grant Submission: ${title}`,
+                body: `A new PR was submitted by @${user}:\n\n${url}`
+              });
+
+              console.log(`✅ Successfully created Issue #${result.data.number} for PR: "${title}"`);
+            } catch (error) {
+              console.error("❌ Failed to create issue in Internal-Reviews repo:", error.message);
+              throw error; // rethrow so the Action fails and shows properly in GitHub UI
+            }
