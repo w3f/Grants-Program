@@ -106,8 +106,8 @@ Conceptualized architecture and conducted feasibility research, ready to initiat
 | 0b.    | Documentation            | Inline documentation and detailed tutorial covering setup, scripting workflows, and usage examples                                                       |
 | 0c.    | Testing and Testing Guide| Comprehensive unit tests for core functionalities and detailed guide on running tests                                                                    |
 | 0d.    | Article                  | Publish an article detailing the automation engine's capabilities and initial use cases                                                                  |
-| 1.     | MVP Automation Engine    | Develop core pallet for event-driven automation with basic web UI supporting simple scripting for cross-chain asset transfers                            |
-| 2.     | Advanced Automation & XCM Integration | Enhanced script conditions, timers, oracle data integration, and full demonstration of real cross-chain automation between two parachains.      |
+| 1.     | MVP Automation Engine    | Integrating with parachain testnets to validate Chainflows utility. Develop core pallet for event-driven automation with basic web UI supporting simple scripting for cross-chain asset transfers.                            |
+| 2.     | Surveying users & Improvements | Advanced Automation & XCM Integration | Enhanced script conditions, timers, oracle data integration, and full demonstration of real cross-chain automation between two parachains.      |
 
 ### 💰 Budget Breakdown
 
