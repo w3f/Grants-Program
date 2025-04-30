@@ -75,16 +75,41 @@ References:
 - [W3F VRF Specification](https://github.com/davxy/bandersnatch-vrf-spec)
 -   [RFC-9380](https://datatracker.ietf.org/doc/rfc9380/) and [RFC-9381](https://datatracker.ietf.org/doc/rfc9381/)
 
+##### 4. Fiat-Shamir Transcript Implementation:
+
+Implement a robust transcript mechanism based on the Fiat-Shamir transformation for building non-interactive proof systems. This component will provide a standardized way to manage protocol states and derive challenges pseudo-randomly from the public transcript data.
+
+Objective:
+- Provide a secure transcript abstraction using an extendable-output function (XOF) like SHAKE128.
+- Implement strong domain separation using a methodology that ensures distinct inputs map to distinct transcript states, inspired by techniques like postfix length appending for compatibility with idiomatic Python interfaces.
+- Support explicit labeling for different data types added to the transcript.
+- Offer an intuitive API (e.g., `append_message`, `get_challenge`) for protocol developers.
+- Potentially support transcript state accumulation for use cases like remote signing or proof aggregation.
+
+Deliverables:
+- A dedicated `transcript` module with clear API and usage examples.
+- Comprehensive unit tests verifying correct state updates and domain separation.
+- Documentation explaining the transcript logic and security considerations.
+
+##### 5. Research and Performance Analysis:
+
+Objective: To contribute to the academic understanding, performance benchmarking, and practical application of the implemented cryptographic schemes by disseminating research findings and performance analysis.
+
+Deliverables:
+-   Research Paper 1 (Working Title: *"Comparative Analysis of VRF Implementations on Elliptic Curves"*): A paper detailing the implementation nuances, performance characteristics, and comparative analysis of the IETF, Pedersen, and Ring VRF schemes, particularly focusing on the Bandersnatch curve context. Draft available [here](https://drive.google.com/file/d/1z3e5hPWbs5BdeusJrQ1uwemt2HCGukQW/view?usp=sharing). Related blog post [here](https://chainscore.finance/en/blog/verifiable-randomness-with-context-understanding-vrf-with-additional-data-vrf-ad), with more forthcoming.
+-   Research Paper 2 (Working Title: *"Ring Proofs in Modern Cryptography: A Practical Perspective"*): A paper exploring the practical implementation aspects, potential optimizations, challenges encountered, and broader applications of W3F's Ring Proof specification, based on the development of the DotRing library.
+-   A dedicated benchmarking suite with representative workloads and metrics for the GLV curve, VRF variants, ring proofs, and transcript module.
+
 #### Project Scope - What it IS and IS NOT:
-- IS: A Python library providing low-level cryptographic primitives for Bandersnatch, Ring VRF, and Ring Proofs based strictly on the W3F specifications. It will include clear APIs, thorough tests, comprehensive documentation, and benchmarks.
-- IS NOT: A full dApp, a blockchain node, a system integrating these proofs directly into a specific application logic (though it enables such integrations), or a Rust wrapper. It does not include formal verification or a third-party security audit within this grant's scope.
+- IS: A Python library providing low-level cryptographic primitives for Bandersnatch, Ring VRF, Ring Proofs, and Fiat-Shamir transcripts based strictly on the W3F specifications and sound cryptographic principles. It will include clear APIs, thorough tests, comprehensive documentation, benchmarks, performance analysis, *and the publication of associated research findings*.
+- IS NOT: A full dApp, a blockchain node, a system integrating these proofs directly into a specific application logic (though it enables such integrations), or a Rust wrapper. It does not include formal verification or a third-party security audit within this grant's scope, *nor does it guarantee acceptance into specific academic journals/conferences within the grant timeline, though submission is planned*.
 
 
 ### Ecosystem Fit
 
 The lack of multiple independent implementations for W3F’s advanced cryptographic primitives presents both a security risk and a limitation in innovation. DotRing addresses this gap by providing an alternative implementation of the Bandersnatch VRF and Ring Proofs. This diversity is essential as it allows for cross-verification of results, reduces the risk of single points of failure, and strengthens the overall ecosystem resilience.
 
-By providing this library, we aim to fill this gap and promote broader adoption and understanding of these cryptographic techniques.​
+By providing this library *and accompanying research analysis*, we aim to fill this gap and promote broader adoption and understanding of these cryptographic techniques.​
 
 - **What need(s) does your project meet?** DotRing meets the critical need for diversified implementations of W3F’s cryptographic standards. While the primary reference exists in Rust (e.g., ark-vrf), having an additional, independently developed implementation not only expands the available toolset but also deepens the scrutiny on security and performance. By extending W3F’s efforts beyond a single language ecosystem, we foster broader interoperability, encourage innovation, and bolster trust within the Polkadot/Kusama environment.
 
@@ -146,23 +171,24 @@ Our team blends practical Web3/Polkadot ecosystem knowledge with specialized Pyt
 
 ### Overview
 
--   **Estimated Duration:** 2 Months
--   **Full-Time Equivalent (FTE):** 1.5 FTE
--   **Total Costs:** 8,900 USD
+-   **Estimated Duration:** 3 Months 
+-   **Full-Time Equivalent (FTE):** 4.25 FTE 
+-   **Total Costs:** 12,609 USD 
 
 
-| Number | Deliverable               | Specification                                                                                                                                                                                                                                                                                                     |
+| Number | Deliverable               | Specification                                                                                                                                                                                                                                                                                                     | 
 | -----: | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    0a. | License                   | MIT License.                                                                                                                                                                                                                                                                                                      |
 |    0b. | Documentation             | We will provide both inline documentation of the code and a comprehensive tutorial that explains how to utilize the library's functionalities.                                                                                                                                                                    |
-|    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#testing-guide) for details. |
+|    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#testing-guide) for details. | - |
 |    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                     |
 |    0e. | Article                   | We will publish an article or workshop that explains what was achieved as part of the grant.                                                                                                                    |
-|     1. |  Bandersnatch Curve & Core VRF Logic  | Implement core finite field and elliptic curve arithmetic for Bandersnatch in Python, including GLV optimization. Implement the basic structures and cryptographic operations (KeyGen, Prove, Verify) for the Ring VRF according to the W3F specification, focusing on correctness. Establish testing infrastructure (Pytest), basic benchmarks, and documentation structure (Sphinx). Deliverables 0a-0d covered for this scope.                                                                                                                          |
-|     2. | Ring Proofs & Final Library Release         | Implement the W3F Ring Proof generation and verification logic, integrating it with the Ring VRF components from M1. Refine APIs based on usability testing. Implement comprehensive test suites, including property-based tests and integration tests (potentially using vectors derived from the Rust implementation). Optimize performance based on benchmarking. Finalize documentation, including API reference and tutorials. Package the library for release on PyPI. Deliverable 0e (Article/Tutorial).will...                                                                                                                                                                                                                                                                                    |
+|    0f. | Research Papers           | Drafts of the two research papers outlined in Core Component 5, ready for submission. |
+|     1. |  Bandersnatch Curve, Core VRF Logic & Transcript Foundation | Implement core finite field and elliptic curve arithmetic for Bandersnatch in Python, including GLV optimization. Implement the basic structures and cryptographic operations (KeyGen, Prove, Verify) for the Ring VRF according to the W3F specification, focusing on correctness. Implement the Fiat-Shamir transcript module using SHAKE128, including domain separation logic and basic API. Establish testing infrastructure (Pytest), basic benchmarks, and documentation structure (Sphinx). Deliverables 0a-0d covered for this scope.                                                                                                                          |
+|     2. | Ring Proofs, Final Library Release & Research Papers | Implement the W3F Ring Proof generation and verification logic, integrating it with the Ring VRF components and Transcript from M1. Refine APIs based on usability testing. Implement comprehensive test suites, including property-based tests and integration tests (potentially using vectors derived from the Rust implementation). Optimize performance based on benchmarking. Finalize documentation, including API reference and tutorials. Package the library for release on PyPI. Complete drafts of the research papers (Deliverable 0f). Deliverable 0e (Article/Tutorial). |
 
 
-### Budget Breakdown (Example, please adapt)
+### Budget Breakdown 
 
 **Category:** Budget Breakdown positions are split within the following categories:
 
@@ -170,20 +196,21 @@ Our team blends practical Web3/Polkadot ecosystem knowledge with specialized Pyt
 -   Equipment
 -   Subcontracts/Subscriptions
 
-| Category  | Item                     | Cost       | Amount    | Total          | Description                                       |
-| --------- | ------------------------ | ---------- | --------- | -------------- | ------------------------------------------------- |
-| Personell | Python Cryptography Engineer (Siva)     | 2,967 USD  | 1 FTE   | 5,933 USD      | Full-time focus on implementation, testing, optimization, and documentation of cryptographic components. |
-| Personell | Lead Developer / PM (Prasad) | 2,967 USD | 0.5 FTE     | 2,967 USD     | Focus on architecture, code review, project management, testing integration, documentation, and release.   |
-| ---       | ---                      | ---        | **Total** | **8,900 USD** |                                                   |
+| Category  | Item                     | Monthly Rate | Amount     | Total           | Description                                       |
+| --------- | ------------------------ | ------------ | ---------- | --------------- | ------------------------------------------------- |
+| Personell | Python Cryptography Engineer (Siva)     | ~2,967 USD   | 2.75 FTE   | 8,159 USD       | Focus on implementation, testing, optimization, documentation of cryptographic components, and contribution to research paper content/benchmarking. |
+| Personell | Lead Developer / PM (Prasad) | ~2,967 USD   | 1.5 FTE     | 4,450 USD      | Focus on architecture, code review, project management, testing integration, documentation, release, and leading research paper writing/structuring.   |
+| ---       | ---                      | ---          | **Total**  | **12,609 USD**  |                                                   |
 
 ## Future Plans
 
 
 ### Short-Term (Post-Grant):
-- **Promotion**: Announce the library release widely through relevant channels (Polkadot community chats like the grants channel, Python cryptography forums, Twitter/X, LinkedIn). Publish the tutorial article (Deliverable 0e).
+- **Promotion**: Announce the library release widely through relevant channels (Polkadot community chats like the grants channel, Python cryptography forums, Twitter/X, LinkedIn). Publish the tutorial article (Deliverable 0e). *Submit research papers (Deliverable 0f) to relevant conferences/journals.*
 - **JAM Engagement**: Present DotRing as an alternative implementation to JAM implementers to collect initial feedback and overall increasing security of JAM.
 - **Maintenance**: Actively monitor the GitHub repository for issues and pull requests. Provide bug fixes and respond to user queries. Ensure compatibility with upcoming Python versions.
 - **Enhancements**: Based on initial feedback, potentially add more helper functions, improve performance further, or enhance documentation/examples. Consider generating test vectors compatible with the Rust implementation if not already done.
+- **Research Presentation**: *Present findings from the research papers at relevant workshops or conferences if accepted.*
 
 ### Long-Term Maintenance & Development:
 - **Community Building**: Foster a small community around the library, encouraging contributions and usage.
