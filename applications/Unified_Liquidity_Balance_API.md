@@ -138,7 +138,7 @@ Our team has extensive experience in cloud‑native TypeScript and Rust developm
 
 ### Milestone 3 — Documentation, Tooling & Support
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 6 months
 - **FTE:** 2
 - **Costs:** 9,000 USD
 
