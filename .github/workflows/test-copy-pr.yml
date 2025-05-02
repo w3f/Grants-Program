@@ -1,0 +1,45 @@
+name: Test Copy PR to Private Repo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  copy_to_private:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if token is present and echo length
+        run: |
+          TOKEN_LENGTH=${#PRIVATE_REPO_PAT}
+          echo "🔍 Token length: $TOKEN_LENGTH"
+
+          if [ -z "$PRIVATE_REPO_PAT" ]; then
+            echo "❌ Token is NOT set properly"
+            exit 1
+          else
+            echo "✅ Token is available"
+          fi
+        env:
+          PRIVATE_REPO_PAT: ${{ secrets.PRIVATE_REPO_PAT }}
+
+      - name: Create test issue in Internal-Reviews repo
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PRIVATE_REPO_PAT }}
+          script: |
+            const now = new Date().toISOString();
+            const title = `Test Issue - ${now}`;
+            const body = `This is a test issue created by the workflow_dispatch test at ${now}.`;
+
+            try {
+              const result = await github.rest.issues.create({
+                owner: 'Polkadot-Fast-Grants',
+                repo: 'Internal-Reviews',
+                title,
+                body
+              });
+
+              console.log(`✅ Successfully created Issue #${result.data.number}: "${title}"`);
+            } catch (error) {
+              console.error("❌ Failed to create issue:", error.message);
+              throw error;
+            }
