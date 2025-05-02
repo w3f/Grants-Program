@@ -1,10 +1,9 @@
-# N3MUS is to game studios what Shopify is to e-commerce, a full-stack tournament platform to grow your audience, reward them, and keep them playing.
 - **Team Name:** N3MUS
 - **Payment Details:**
     - **DOT**: 50%
     - **Payment**: 13dePGJmM3SDMhndSsoAEV1V43dXD8Vtv4p2qShaP3sd9S5M
     - Level: 3
-    - Total Cost: $200.000
+    - Total Cost: $100.000
 
 ## Project Overview
 ### Overview
@@ -13,11 +12,11 @@
 N3MUS is a Web3-native tournament platform designed to integrate directly with Polkadot-native and Ecosystem games. It allows games and studios to run interactive, reward-based tournaments where players complete in-game and social tasks to climb leaderboards and earn rewards.
 By leveraging Polkadot's infrastructure, N3MUS offers an interoperable, scalable, and secure environment to execute and verify tournament results on-chain.
 
-- **🔥 Traction (March 2025):**
+- **🔥 Traction (April 2025):**
 
-    - 108,000+ Gameplays (109% MoM Growth)
-    - 30 Tournaments | 6,750+ Players
-    - Responsible for 6,300+ Gameplay Hours
+    - 255,000+ Gameplays (116% MoM Growth)
+    - 53 Tournaments | 7,600+ Players
+    - Responsible for 21,249+ Gameplay Hours
     - Partnered with Flamengo (48M fans) | launching on-chain CS2 tournaments
     - Expanding to pro esports teams & top Web2 titles
 
@@ -88,7 +87,7 @@ We are currently in planning stages with the following games:
 
 - Nitro Nation World Tour - https://hub.n3mus.com/games/nitro-nation-world-tour  
 - Flappywud – https://hub.n3mus.com/games/flappywud
-- Chess on Chain (not listed yet)
+- Chess on Chain - https://hub.n3mus.com/games/chess-on-chain
 
 - **Target Audience:**
     - Game studios building on Polkadot;
@@ -102,9 +101,9 @@ We are currently in planning stages with the following games:
     - Engaging quests and rewards system for actual gamers (not just point/airdrop farmers).
 
 - **Evidence:**
-    - Active case study on Moonbeam with 10K+ players and 100K+ gameplays;
+    - Active case study on Moonbeam with 10K+ players and 255K+ gameplays;
     - Twitter & Telegram feedback on need for transparency and engagement;
-    - Internal usage data with >60% player return rate;
+    - Internal usage data with >72% player return rate;
     - All our participants and tournament data is fully on chain;
     - Proven track record: from zero to 10K transactions in a single week for a new game tournament.
 
@@ -148,10 +147,10 @@ We will also leveraging Polkadots partnership with HEROIC and their AimDots CS2 
 
 
 - ## Grant Request Overview – Polkadot
-    - **Total Grant Requested:** $200,000
+    - **Total Grant Requested:** $100,000
     - **Estimated Duration:** 6 months
     - **Full-Time Equivalent (FTE):** 2-3
-    - **Total Project Costs:** $200,000
+    - **Total Project Costs:** $100,000
     - **% in Dot:** 50%
 
 ## Milestone 1 – Q1-Q2 2025: Polkadot Integration & Launch ($20,000)
@@ -181,7 +180,7 @@ The vested DOT will be used to cover staffing, event management for Polkadot-spe
 | 5 | Tournaments Execution | N3MUS Hosts and manages 15 game tournaments within the Polkadot ecosystem. | |
 | 6 | On-Chain and Social Missions (Quests) | Execute both on-chain and social media missions for each tournament. All missions will center around Polkadot, with Polkadot and the featured games as the primary focus across all content and posts. |
 
-## Milestone 2 – Q2-Q3 2025: Growth Through Game Integrations ($60,000)
+## Milestone 2 – Q2-Q3 2025: Growth Through Game Integrations ($30,000)
 The USDC received from Milestone 1 will be entirely used to host tournaments featuring games within the Polkadot ecosystem.
 Looking ahead, 100% of the USDC received in Milestone 2 will also be fully allocated toward hosting additional tournaments for Polkadot ecosystem games in Milestone 3.
 
@@ -204,7 +203,7 @@ The vested DOT will be used to cover staffing, event management for Polkadot-spe
 | 4 | Web2 game onboarding | Collaborate with HEROIC (an existing Polkadot partner) to organize a CS2 tournament that leverages blockchain technology. We are already doing this with Flamengo (48M fans, the largest club in LatAm) and Moonbeam (https://x.com/flaesports/status/1906814609140432966). Our goal is to add real value to existing gaming partnerships by applying blockchain technology and onboarding users into the Polkadot ecosystem. Currently the partnership with HEROIC doesn't leverage Polkadot Technology |
 
 
-## Milestone 3 – Q3-Q4 2025: Expansion and Ecosystem Onboarding ($60,000)
+## Milestone 3 – Q3-Q4 2025: Expansion and Ecosystem Onboarding ($25,000)
 The USDC received from Milestone 2 will be entirely used to host tournaments featuring games within the Polkadot ecosystem.
 Looking ahead, 100% of the USDC received in Milestone 3 will also be fully allocated toward hosting additional tournaments for Polkadot ecosystem games in Milestone 4.
 
@@ -223,14 +222,14 @@ The vested DOT will be used to cover staffing, event management for Polkadot-spe
 | 0d. | Docker | N3MUS provides a Dockerfile that sets up an API backend for integration into Polkadot AssetHub |
 | 0e. | Article | N3MUS publishes articles, in collaboration with several Polkadot BD-related companies, highlighting the work completed under the grant, integration of Polkadot AssetHub with a focus on integration and collaboration. Ofcourse we will expand the number of articles as marketing incentives with the goal of onboarding more users and studios. We also want to include gaming nights and events |
 | 1 | Integration | Integrate at least 5 Additional Games to the Polkadot Ecosytem (or AH directly) |
-| 2 | Ongoing tournaments | Host 50 tournaments (subject to prize pool availability). Prize pools will range from $250 to $2,000 per tournament, with an average of $500. Factors influencing prize pool size include game popularity, on-chain incentives provided by the game, and player participation levels |
+| 2 | Ongoing tournaments | Host 30 tournaments (subject to prize pool availability). Prize pools will range from $250 to $2,000 per tournament, with an average of $500. Factors influencing prize pool size include game popularity, on-chain incentives provided by the game, and player participation levels |
 | 3 | High Impact Tournaments | Launch larger and high impact tournaments with custom campaigns (e.g., CS2, LoL mod, sponsored events) in collaboration with pro eSports companies like Flamengo. |
-| 4 | Metrics | Achieve over 400,000 tracked gameplays across all integrated games. All gameplay data will be verified on-chain and published in transparent reports |
+| 4 | Metrics | Achieve over 300,000 tracked gameplays across all integrated games. All gameplay data will be verified on-chain and published in transparent reports |
 | 5 | Marketing | Collaborate with Polkadot BD companies for publications and gamer onboarding campaigns |
 | 6 | Mid-Point Report | Publish Polkadot case study with developer feedback, metrics, and learnings |
 
 
-## Milestone 4 – Q4 2025: Flagship Tournaments & Scaling ($60,000)
+## Milestone 4 – Q4 2025: Flagship Tournaments & Scaling ($25,000)
 
 The USDC received from Milestone 3 will be entirely used to host tournaments featuring games within the Polkadot ecosystem.
 Looking ahead, 100% of the USDC received in Milestone 4 will also be fully allocated toward hosting additional tournaments for Polkadot ecosystem games in coming months.
@@ -248,11 +247,11 @@ The vested DOT will be used to cover staffing, event management for Polkadot-spe
 | 0e. | Article | N3MUS publishes articles, in collaboration with several Polkadot BD-related companies, highlighting the work completed under the grant, integration of Polkadot AssetHub with a focus on integration and collaboration. Ofcourse we will expand the number of articles as marketing incentives with the goal of onboarding more users and studios. We also want to include gaming nights and events |
 | 1 | Integration | Expand to 15+ Integrated games, ensuring ongoing ecosystem growth |
 | 2 | Flagship Tournaments | Run 3 Flagship Tournaments (longer duration, higher attention, higher prize pool) with three high potential games |
-| 3 | Ongoing tournaments | Host 50 tournaments (subject to prize pool availability). Prize pools will range from $250 to $2,000 per tournament, with an average of $500. Factors influencing prize pool size include game popularity, on-chain incentives provided by the game, and player participation levels |
+| 3 | Ongoing tournaments | Host 25 tournaments (subject to prize pool availability). Prize pools will range from $250 to $2,000 per tournament, with an average of $500. Factors influencing prize pool size include game popularity, on-chain incentives provided by the game, and player participation levels |
 | 4 | Final Ecosystem Report | Includes interviews, community feedback, and recommendations |
 | 5 | Developer Roundtable | Engage game teams to shape future feature development |
 
-When Milestone 4 is completed, we will use 100% of the USDC to continue with tournaments on Polkadot with a goal of running an additional 50 tournaments.
+When Milestone 4 is completed, we will use 100% of the USDC to continue with tournaments on Polkadot with a goal of running an additional 25-50 tournaments.
 
 
 
