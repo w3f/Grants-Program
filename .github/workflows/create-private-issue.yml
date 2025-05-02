@@ -1,44 +1,53 @@
-name: Copy PR to Private Repo
+name: Create Issue in Private Repo
 
 on:
-  pull_request:
+  workflow_run:
+    workflows: ["PR Open Checks"]
     types:
-      - opened
+      - completed
 
 jobs:
-  copy_to_private:
+  create_issue:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+
     steps:
-      - name: Token presence check
+      - name: Download original PR event data
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          name: pr-metadata
+          run_id: ${{ github.event.workflow_run.id }}
+          path: ./pr-data
+
+      - name: Read PR metadata
+        id: pr
         run: |
-          if [ -z "$PRIVATE_REPO_PAT" ]; then
-            echo "❌ Token is NOT set properly"
-            exit 1
-          else
-            echo "✅ Token is available"
-          fi
-        env:
-          PRIVATE_REPO_PAT: ${{ secrets.PRIVATE_REPO_PAT }}
+          echo "Reading PR data..."
+          PR_TITLE=$(cat ./pr-data/title.txt)
+          PR_URL=$(cat ./pr-data/url.txt)
+          PR_USER=$(cat ./pr-data/user.txt)
+
+          echo "pr_title=$PR_TITLE" >> "$GITHUB_OUTPUT"
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+          echo "pr_user=$PR_USER" >> "$GITHUB_OUTPUT"
 
       - name: Create issue in Internal-Reviews repo
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.PRIVATE_REPO_PAT }}
           script: |
-            const title = context.payload.pull_request.title;
-            const url = context.payload.pull_request.html_url;
-            const user = context.payload.pull_request.user.login;
+            const prTitle = `${{ steps.pr.outputs.pr_title }}`;
+            const prUrl = `${{ steps.pr.outputs.pr_url }}`;
+            const prUser = `${{ steps.pr.outputs.pr_user }}`;
 
-            try {
-              const result = await github.rest.issues.create({
-                owner: 'Polkadot-Fast-Grants',
-                repo: 'Internal-Reviews',
-                title: `New Grant Submission: ${title}`,
-                body: `A new PR was submitted by @${user}:\n\n${url}`
-              });
+            const issueTitle = `New Grant Submission: ${prTitle}`;
+            const issueBody = `A new PR was submitted by @${prUser}:\n\n${prUrl}`;
 
-              console.log(`✅ Successfully created Issue #${result.data.number} for PR: "${title}"`);
-            } catch (error) {
-              console.error("❌ Failed to create issue in Internal-Reviews repo:", error.message);
-              throw error;
-            }
+            const result = await github.rest.issues.create({
+              owner: 'Polkadot-Fast-Grants',
+              repo: 'Internal-Reviews',
+              title: issueTitle,
+              body: issueBody
+            });
+
+            console.log(`✅ Created issue #${result.data.number}: ${issueTitle}`);
