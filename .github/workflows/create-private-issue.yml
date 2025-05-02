@@ -37,4 +37,8 @@ jobs:
                 body: `A new PR was submitted by @${user}:\n\n${url}`
               });
 
-              console.log(`✅ Successfully created Issue #${result.data.number} for PR: "${tit
+              console.log(`✅ Successfully created Issue #${result.data.number} for PR: "${title}"`);
+            } catch (error) {
+              console.error("❌ Failed to create issue in Internal-Reviews repo:", error.message);
+              throw error;
+            }
