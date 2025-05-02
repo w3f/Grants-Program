@@ -1,0 +1,12 @@
+name: PR Open Checks
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  mark-pr-opened:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log PR open event
+        run: echo "🔔 PR #${{ github.event.pull_request.number }} opened by ${{ github.actor }}"
