@@ -118,13 +118,21 @@ Built an initial MVP in 48 hours during [ETHIndia'24](https://ethindia2024.devfo
 ### What has NOT been done?
 
 A. Team based gameplays. Currently users cannot form teams to play, only individual users can register. Since the game involves moving around and aims to encourage community building, its essential to have team based plays available. This will require changes across the contract and frontend.
+
 B. Huddles (realtime video chat) should create a room for just the team members using NFT gated rooms which users get as part of registration.
+
 C. The location verification algorithm is not consistent yet. Needs work for deterministic gameplay since this forms the backbone.
-D. Even the a Trust Score is geenrated, actual reward distribution has not been worked on. Once hunt gets over / the top x teams should automatically be distributed rewards and the game should either be stopped for everyone else / allowed to be continued with reduced/very few rewards. 
-E. There is no interface for the Trearue Hunt and thereby Clue creation. All of it was done manually. It has lots of moving parts like adding the hunt metadata, seed clue description, attach an exact GPS coordinate from the map as the answer, decide the clue order, encrypt the clues via Lit Protocol, store the metadata on Walrus, obtain the blobIds and add them on-chain and attach/configure rewards with the hunt.
+
+D. Even the a Trust Score is generated, actual reward distribution has not been worked on. Once hunt gets over / the top x teams should automatically be distributed rewards and the game should either be stopped for everyone else / allowed to be continued with reduced/very few rewards. 
+
+E. There is no interface for the Treasure Hunt and thereby Clue creation. All of it was done manually. It has lots of moving parts like adding the hunt metadata, seed clue description, attach an exact GPS coordinate from the map as the answer, decide the clue order, encrypt the clues via Lit Protocol, store the metadata on Walrus, obtain the blobIds and add them on-chain and attach/configure rewards with the hunt.
+
 F. Unit tests for the smart contract and frontend.
+
 G. Replace Claude with the Perplexity Sonar API for more realtime, location aware clue generation. 
-H. Ironing out, bug fixes and UI improvements. 
+
+H. Ironing out, bug fixes and UI improvements.
+
 
 
 ## 📅 Development Roadmap
@@ -143,13 +151,13 @@ H. Ironing out, bug fixes and UI improvements.
 | 0b. | Documentation | We will provide both **inline documentation** of the code and tutorials/docs to create hunts, play hunts and run the project. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article**/video that explains what was done/achieved as part of the grant. |
-| 1. | Team based gameplays | Feature explained in #what-has-not-been-done section, point A. |
-| 2. | Team gated huddles | Feature explained in #what-has-not-been-done section, point B. |
-| 3. | Improvements to location verification | Feature explained in #what-has-not-been-done section, point C.  |
-| 4. | Reward Distribution | Feature explained in #what-has-not-been-done section, point D. |
-| 5. | Treasure Hunt Creation Interface | Feature explained in #what-has-not-been-done section, point E. |
-| 6. | Unit Tests | Feature explained in #what-has-not-been-done section, point F. |
-| 7. | Perplexity Sonar API | Feature explained in #what-has-not-been-done section, point G. |
+| 1. | Team based gameplays | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point A. |
+| 2. | Team gated huddles | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point B. |
+| 3. | Improvements to location verification | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point C. |
+| 4. | Reward Distribution | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point D. |
+| 5. | Treasure Hunt Creation Interface | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point E. |
+| 6. | Unit Tests | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point F. |
+| 7. | Perplexity Sonar API | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point G. |
 | 8. | Documentation | Necessary Documentation |
 
 ### 💰 Budget Breakdown
