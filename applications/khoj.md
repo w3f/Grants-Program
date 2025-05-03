@@ -1,4 +1,4 @@
-# 📝 Khoj
+# 💎 Khoj
 
 ## 🌟 Project Overview
 
@@ -6,9 +6,7 @@
 - **Description**: Khoj (meaning "search" or "discovery" in Hindi) is a gamified geo-location based treasure hunt platform that combines real-world exploration with Web3 technology.
   It allows users to participate in location-based AI treasure hunts where they solve riddles, visit physical locations, and earn onchain rewards.
 - **Integration with Polkadot**: <placeholder>
-- **Motivation**: The desire started off in college when we wanted to onboard the new joinees of our tech club with a different experience that combines Web3 with the real world in a gamified manner.
-- Since then, we haven't found a platform that solves this our way and we would love to solve this to onboard not just our club members but the world.
-
+- **Motivation**: The desire started off in college when we wanted to onboard the new joinees of our tech club with a different experience that combines Web3 with the real world in a gamified manner. Since then, we haven't found a platform that solves this our way and we would love to solve this to onboard not just our club members but go beyond.
 - (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
 
 ### 🔍 Project Details
@@ -26,19 +24,37 @@ We expect applicants to have a solid idea about the project's expected final sta
       - Multiple Attempts: Players get 3 attempts per clue to verify their location
       - Real-time Collaboration: Built-in video chat for team coordination.
       - Rewards & Reputation: Fastest players win rewards based on a reputation score generated which can be redeemed later.
-
 - Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
+  <table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a58e3f3a-c8d9-466b-8197-647033a9c977" width="200"><br>
+      <sub><i>Discover Hunts</i></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/4d91886c-2e6c-49c0-8e83-f8e24d502ac5" width="200"><br>
+      <sub><i>Clue Page</i></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/7520840d-7dc7-41ac-a341-27ff45755e3b" width="200"><br>
+      <sub><i>Treasure Found/Hunt Completion</i></sub>
+    </td>
+  </tr>
+</table>
+
+- Data Flow Diagram
+  ![image](https://github.com/user-attachments/assets/eb833d3c-5c37-4b60-9861-10fa1a2c6209)
+
 - What your project is *not* or will *not* provide or implement
   - This is a place for you to manage expectations and clarify any limitations
 
 ### 🧩 Ecosystem Fit
 
-- Where and how does your project fit into the ecosystem?: The main aim is to increase adotion and onboard more users to Polkadot in a gamified manner. Create an application that feels Web2 but onboards users to the Polkadot ecosystem.
-- Who is your target audience? The game can be played by anyone as the use cases are broad.
-  But the focus can be on brands, blockchain projects, DAOs, educational institutions, tourism boards, event organizers, fitness platforms, and local communities — essentially anyone looking to drive real-world engagement through interactive, location-based experiences.
-- Are there any other projects similar to yours in the Polkadot ecosystem?: No
-  - If not, why might such a project not exist yet? There is slight synonimity with Pokemon Go but otherwise the concept of Khoj is novel. It's not present on any blockchain, let alone Polkadot. 
+- _Where and how does your project fit into the ecosystem?_: The main aim is to increase adotion and onboard more users to Polkadot in a gamified manner. Create an application that feels Web2 but onboards users to the Polkadot ecosystem. 
+- _Who is your target audience?_ The game can be played by anyone as the use cases are broad.
+  But the focus can be on  local communities, blockchain projects, DAOs, educational institutions and event organizers — essentially anyone looking to drive real-world engagement through interactive, location-based experiences. Also the majority of Polkadot ecosystem is desktop focused. Even though wallets have their apps like SubWallet/the Polkadot App, there are few applications that leverage this smartphone first experience. Apart from the enthusiasts, the larger web2 native audience is on mobile. We want to capture this audience to transition into the Web3 world. 
+- _Are there any other projects similar to yours in the Polkadot ecosystem?_: No
+  - _If not, why might such a project not exist yet?_ There is slight synonimity with Pokemon Go but otherwise the concept of Khoj is novel. It's not present on any blockchain, let alone Polkadot. 
 
 ## 👥 Team
 
@@ -49,27 +65,19 @@ We expect applicants to have a solid idea about the project's expected final sta
 
 ### Team members
 
-#### LinkedIn Profiles (if available)
+| Name               | GitHub                                             | LinkedIn                                               | Experience |
+|--------------------|----------------------------------------------------|---------------------------------------------------------|------------|
+| **Parth Mittal**   | [mittal-parth](https://github.com/mittal-parth)   | [mittal-parth](https://www.linkedin.com/in/mittal-parth/) | - Graduated with a [distinction](https://kodadot.xyz/ahp/gallery/171-16) from the Polkadot Blockchain Academy - 5, Singapore <br> - [2nd Runner Up](https://www.linkedin.com/posts/mittal-parth_hackathon-winners-web3-activity-7048340759116214272-eJvo) in the ink! Smart Contract Category at the Polkadot Hackathon: Europe Edition 2023 <br> - [2x ETHIndia Winner](https://www.thehindu.com/news/cities/Mangalore/nitk-iiit-delhi-team-makes-it-to-top-12-winners-in-ethindia-22/article66238923.ece), 2022 edition being the world's largest Ethereum Hackathon <br> - Creator of the [polkadot-dev-cli](https://github.com/mittal-parth/polkadot-dev-cli) |
+| **Abhiraj Mengade**| [abhiraj-mengade](https://github.com/abhiraj-mengade) | [abhiraj-mengade](https://www.linkedin.com/in/abhiraj-mengade/) | - Graduated with a distinction from the Polkadot Blockchain Academy - 5, Singapore <br> - [2nd Runner Up](https://www.linkedin.com/posts/mittal-parth_hackathon-winners-web3-activity-7048340759116214272-eJvo) in the ink! Smart Contract Category at the Polkadot Hackathon: Europe Edition 2023 |
+| **Shubham Rasal**  | [Shubham-Rasal](https://github.com/Shubham-Rasal) | [shubhamrasal](https://www.linkedin.com/in/shubhamrasal/) | - Placeholder |
+| **Ayush Kumar Singh** | [ayush4345](https://github.com/ayush4345)        | [ayush45](https://www.linkedin.com/in/ayush45/)        | - Placeholder |
 
-- Parth Mittal: https://www.linkedin.com/in/mittal-parth/
-- Shubham Rasal: https://www.linkedin.com/in/shubhamrasal/
-- Abhiraj Mengade: https://www.linkedin.com/in/abhiraj-mengade/
-- Ayush Kumar Singh: https://www.linkedin.com/in/ayush45/
 
 ### Team Code Repos
 
 - https://github.com/marcdhi/Khoj
 
-#### GitHub Accounts: 
 
-- Parth Mittal: https://github.com/mittal-parth
-- Shubham Rasal: https://github.com/Shubham-Rasal
-- Abhiraj Mengade: https://github.com/abhiraj-mengade
-- Ayush Kumar Singh: https://github.com/ayush4345
-
-### Team's experience
-
-Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
 
 ## 📊 Development Status
 
