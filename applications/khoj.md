@@ -7,7 +7,6 @@
   It allows users to participate in location-based AI treasure hunts where they solve riddles, visit physical locations, and earn onchain rewards.
 - **Integration with Polkadot**: <placeholder>
 - **Motivation**: The desire started off in college when we wanted to onboard the new joinees of our tech club with a different experience that combines Web3 with the real world in a gamified manner. Since then, we haven't found a platform that solves this our way and we would love to solve this to onboard not just our club members but go beyond.
-- (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
 
 ### 🔍 Project Details
 
@@ -23,7 +22,7 @@ We expect applicants to have a solid idea about the project's expected final sta
       - [Walrus Network](https://www.walrus.xyz) for data storage
       - [Huddle01](https://huddle01.com/) for real-time collaboration
 - **PoC/MVP**
-  - [Demo Video on YouTube](https://www.youtube.com/watch?v=9JETJmd9TOk)
+  - [Demo Video](https://www.youtube.com/watch?v=9JETJmd9TOk) | [Demo focused on tech explanation](https://www.youtube.com/watch?v=qJ4OCtnvjUY&t=4718s)
   - [GitHub](https://github.com/marcdhi/Khoj)
   - Core Gameplay:
       - Progressive Riddles: Each hunt consists of multiple interconnected clues that tell a story.
