@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Log PR open event
-        run: echo "🔔 PR #${{ github.event.pull_request.number }} opened by ${{ github.actor }}"
+        run: echo '🔔 PR #${{ github.event.pull_request.number }} opened by ${{ github.actor }}'
