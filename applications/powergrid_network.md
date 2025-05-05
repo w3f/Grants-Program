@@ -198,7 +198,7 @@ The detailed research is documented in our whitepaper and research document, whi
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
 | 1 | Smart Contract Development | $5,000 | 2 Weeks |
-| 2 | Web & Mobile App Development | $5,000 | 6 weeks(by 20 June 2025) |
+| 2 | Web & Mobile App Development | $5,000 | 6 weeks |
 | **Total** | | **$10,000** | **2 months** |
 
 ## 🔮 Future Plans
