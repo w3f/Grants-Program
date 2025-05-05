@@ -21,7 +21,7 @@ Our team is passionate about real-time strategy games, and this project is a nat
 
 - **Smart Contracts:** Solidity (deployed on EVM-compatible Polkadot parachains)
 - **Oracle** We will use Acurast Trusted Execution Environment (TEE) to get Weather and Randomness data.
-- **Zero-Knowledge Proofs:** Noir for circuit development, with Solidity verifier contracts generated using Aztec’s Barretenberg package, if Noir proof verification fails on PolkaVM, we will try Circom, and finally FHE (using Inco's Confidentiality Computation Layer). More on these technologies are discussed later.
+- **Zero-Knowledge Proofs(Future Goal):** Noir for circuit development, with Solidity verifier contracts generated using Aztec’s Barretenberg package, if Noir proof verification fails on PolkaVM, we will try Circom, and finally FHE (using Inco's Confidentiality Computation Layer). More on these technologies are discussed later.
 - **Frontend:** Next.js, TypeScript, TailwindCSS
 - **Backend / Game Engine:** The backend will be minimal, as most of the game logic is handled on-chain. Off-chain scripts written in TypeScript/Node.js will run as cron jobs to manage regular game state updates. Initially, we’ll use a centralized backend to fetch weather data during the early development phase. As the project matures, these scripts will be migrated into Acurast TEEs to enable decentralized, verifiable weather data retrieval
 - **Indexer:** SubQuery for efficient game updates on frontend and leaderboard functionality
@@ -38,7 +38,43 @@ To support multiple in-game locations, each with their own dynamic weather, we w
 
 We also plan to incorporate Acurast’s Verifiable Random Function (VRF) to introduce controlled randomness into battles, adding depth and unpredictability to each encounter. Until Acurast is available on PolkadotHub, we will mock the randomness during development. Even if integration doesn’t happen within the three-month grant window, we’re confident it will follow soon given Acurast’s strong presence in the Polkadot ecosystem.
 
-#### **Optional Addition (ZK or FHE for information assymetry)** 
+#### **Relevant Prior Work:**
+
+We've explored ZK and FHE as core tools for building information-asymmetric strategy games—focusing on fog-of-war, hidden state, and verifiable actions. Through hackathons like ETHGlobal CircuitBreaker, zkHack Istanbul, zkHack Montreal and ETHDenver, we've gained hands-on experience with Noir, FHE (Inco/Fhenix), and zkVMs (Risc0 and Mina), laying the foundation for this game. We discuss these projects in more detail in the Development Status section below.
+
+#### **Fast Grant Expectations**
+
+Developing a real-time weather-driven strategy game will take the full three-month build period, even without integrating optional zk proofs or FHE. The main challenge is designing a scalable weather data aggregator, similar to Chainlink’s price feeds, using Acurast’s TEE-powered oracle network to fetch, verify, and publish on-chain weather conditions. While supporting a single location is simple, extending this to any number of cities requires careful planning and robust infrastructure. In parallel with the backend and smart contract work, I will also focus on building a polished frontend and delivering a smooth, engaging user experience.
+
+For this grant, we will deliver a playable proof-of-concept version of Tempest Veil. Below is a list of core deliverables, along with optional features we plan to include in future iterations: 
+
+#### Core Deliverables
+
+- ✅ **Functional Gameplay Prototype**  
+  - Real-time strategy mechanics driven by real-world weather  
+  - Player actions: move, attack, and resolve combat based on on-chain data  
+  - Controlled randomness using verifiable oracle input  
+
+- ✅ **User Interface and Game Loop**  
+  - Polished frontend with intuitive controls  
+  - Fully playable core game loop
+
+- ✅ **Backend and Smart Contracts**  
+  - Weather data fetched and verified via Acurast's TEE-powered oracle network  
+  - On-chain logic for player actions and environment-based combat resolution  
+  - Scalable weather aggregator architecture supporting multiple cities  
+
+#### Optional (Stretch Goal)
+
+- ⚙️ **Fog of War Implementation** *(optional depending on tooling support)*  
+  - Preferred: FHE via Inco's Confidentiality Layer (pending PolkaVM compatibility)  
+  - Alternative: ZK proofs using Noir, Circom, or Risc0 as an alternative for hidden strategies, if the FHE coprocessor is not compatible with PolkaVM in time.
+
+### Long term Goals - Optional Addition of ZK or FHE for information assymetry, and AI NPC agents.
+
+> Note: The three month Fast Grant will focus on building a weather based RTS game as a foundation for future integration of fog of war mechanics, preferably using FHE via Inco's Confidentiality Layer once it becomes available beyond this initial timeframe.
+
+>Note: While FHE is my preferred approach for implementing fog of war, I am including multiple options because it is still uncertain whether Inco’s Confidentiality Layer will support PolkaVM. To ensure progress, I am also prepared to use ZK alternatives such as Noir, Circom, or Risc0 depending on compatibility and readiness.
 
 Tempest Veil will explore hidden information to enable asymmetric gameplay, such as concealing army composition and strategy. This depends on VM compatibility and may not be fully supported on PolkadotHub’s polkaVM.
 We will make three attempts to enable hidden strategy in *Tempest Veil*:
@@ -47,7 +83,7 @@ We will make three attempts to enable hidden strategy in *Tempest Veil*:
 
   2. **Fallback to Circom**: If Noir does not work, we will rewrite the circuits in Circom and use Circom-compatible verifiers. However, Circom verifiers are also likely to face similar compatibility issues with PolkadotHub’s VM due to the same reliance on precompiles.
 
-  3. **FHE via Inco**: As a third approach, we will explore fully homomorphic encryption (FHE) using Inco’s “Confidentiality as a Service” to achieve hidden strategy. More details are available [here](https://docs.inco.org/confidentiality-as-a-service/connect-to-dapps-on-existing-evm-chains). This service has not launched yet, and it is still unclear whether it will support the PolkadotHub VM (PVM).
+  3. **FHE via Inco ( Most Prefrred) **: As a third approach, we will explore fully homomorphic encryption (FHE) using Inco’s “Confidentiality as a Service” to achieve hidden strategy. More details are available [here](https://docs.inco.org/confidentiality-as-a-service/connect-to-dapps-on-existing-evm-chains). This service has not launched yet, and it is still unclear whether it will support the PolkadotHub VM (PVM).
 
 We can guarantee that we will make every effort to implement hidden strategy in the game. However, due to current tooling limitations and VM compatibility concerns, we cannot guarantee success within the three-month grant timeline. If the technology becomes viable later, we are committed to incorporating it as soon as possible.
 
@@ -72,20 +108,6 @@ The FHE implementation offers a significantly better user experience, as it does
 ![alt text](https://github.com/Cloakworks-collective/tempest_veil_fast_grant/raw/main/images/fhe_1_2.png)
 
 The game state will reside on PolkadotHub contracts, while battles are intended to be executed within an FHE coprocessor. This will require a way to transfer state between the two environments, potentially across different chains. Since the FHE coprocessors have not yet launched and their architecture is not fully defined, we will need to explore and adapt once more technical details become available.
-
-#### **Relevant Prior Work:**
-
-We've explored ZK and FHE as core tools for building information-asymmetric strategy games—focusing on fog-of-war, hidden state, and verifiable actions. Through hackathons like ETHGlobal CircuitBreaker, zkHack Istanbul, zkHack Montreal and ETHDenver, we've gained hands-on experience with Noir, FHE (Inco/Fhenix), and zkVMs (Risc0 and Mina), laying the foundation for this game. We discuss these projects in more detail in the Development Status section below.
-
-#### **Fast Grant Expectations**
-
-For this grant, we will deliver a playable proof-of-concept version of Tempest Veil—a fun, on-chain strategy game with real-time battles influenced by verifiable weather data and controlled randomness. The prototype will include a functional UI, core gameplay loop, and foundational contracts that allow players to move, attack, and resolve combat based on real-world environmental conditions.
-
-While zero-knowledge proofs and fully homomorphic encryption are not required to enjoy the game, we will explore integrating them for hidden strategies if tooling and chain support allow. These features are experimental and may extend beyond the three-month grant window, but we’re committed to pursuing them as the ecosystem matures.
-
-Alongside the game, we will publish blog posts and tutorials to share what we’ve learned—especially around integrating real-world data with smart contracts and designing verifiable on-chain gameplay. All code will be open source to promote transparency, reusability, and ecosystem growth.
-
-#### Long term Goals - Beyond Fast Grant
 
 **Tempest Veil** is more than just a game—it’s a permissionless, long-term experiment in cryptonative strategy design. Our vision is to create an open, moddable world where anyone can play, contribute, or build custom tools and agents on top of the game’s core mechanics. We're exploring how zero-knowledge, FHE, and verifiable AI can unlock new forms of emergent, asymmetric gameplay—not just as technical showcases, but to make something fun, strategic, and community-driven.
 
