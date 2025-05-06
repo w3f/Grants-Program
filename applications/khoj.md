@@ -5,7 +5,7 @@
 - **Tagline**: Participate in AI-personalised treasure hunts where each clue is a physical location. Earn on-chain rewards and onboard a million users.
 - **Description**: Khoj (meaning "search" or "discovery" in Hindi) is a gamified geo-location based treasure hunt platform that combines real-world exploration with Web3 technology.
   It allows users to participate in location-based AI treasure hunts where they solve riddles, visit physical locations, and earn on-chain rewards.
-- **Integration with Polkadot**: The application smart contract (which includes token creation and NFTs) will be deployed on the Polkadot Blockchain.
+- **Integration with Polkadot**: The application smart contract (which includes token creation and NFTs) will be deployed on Moonbeam Aplha.
 - **Motivation**: The desire started off in college when we wanted to onboard the new joinees of our tech club with a different experience that combines Web3 with the real world in a gamified manner. Since then, we haven't found a platform that solves this our way, and we would love to solve this to onboard not just our club members but go beyond.
 
 ### 🔍 Project Details
