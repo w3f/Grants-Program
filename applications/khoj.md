@@ -17,9 +17,9 @@ We expect applicants to have a solid idea about the project's expected final sta
   - Smart Contract: Solidity Smart contract deployed on Moonbeam
   - Integrations:
       - [True Network](https://docs.truenetwork.io/) (building on-chain reputation in Polkadot)
-      - Coinbase's CDP SDK for smart wallet authentication
+      - [Reown's App Kit](https://reown.com/appkit) for social & email embedded wallets.
       - [Lit Protocol](https://www.litprotocol.com/) for secure location verification and blind compute
-      - [Walrus Network](https://www.walrus.xyz) for data storage
+      - IPFS/Crust for data storage.
       - [Huddle01](https://huddle01.com/) for real-time collaboration
 - **PoC/MVP**
   - [Demo Video](https://www.youtube.com/watch?v=9JETJmd9TOk) | [Demo focused on tech explanation](https://www.youtube.com/watch?v=qJ4OCtnvjUY&t=4718s)
