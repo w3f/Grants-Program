@@ -54,11 +54,16 @@ We expect applicants to have a solid idea about the project's expected final sta
   </tr>
 </table>
 
-- Data Flow Diagram
-  ![image](https://github.com/user-attachments/assets/eb833d3c-5c37-4b60-9861-10fa1a2c6209)
+- Gameplay Data Flow Diagram
+  ![image](https://github.com/user-attachments/assets/9133efad-86e1-4225-b5c1-ab13a36b7f9d)
+- Hunt Creation Data Flow Diagram <br/>
+  <img src="https://github.com/user-attachments/assets/3b6dd267-c952-4dd5-8fab-2c60a936dc85" width="600">
+
 
 - What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations
+  - We wont be implementing any sdk or tool for the ecosystem it is a dApp.
+  - Deployment will be restricted to Moonbeam Alpha (Testnet) for now.
+  - Unit tests will be restricted to the smart contract, not including the frontend.
 
 ### 🧩 Ecosystem Fit
 
@@ -117,23 +122,23 @@ Built an initial MVP in 48 hours during [ETHIndia'24](https://ethindia2024.devfo
 
 ### What has NOT been done?
 
-A. Team based gameplays. Currently users cannot form teams to play, only individual users can register. Since the game involves moving around and aims to encourage community building, its essential to have team based plays available. This will require changes across the contract and frontend.
+A. Replace the Coinbase CDP [OnChainKit Wallet](https://docs.base.org/builderkits/onchainkit/wallet/wallet) with [Reown's App Kit](https://reown.com/appkit). This is because Reown supports social & email embedded wallets in addition to leading wallets like SubWallet (CDP does not support social logins as of now). Since our focus is on onboarding, we beleive that a familiar/smooth experience for the user is quintessential. Reown supports wagmi, which has Moonbeam Aplha and Moonbeam [as supported core chains](https://wagmi.sh/core/api/chains), which ensures compatibility. 
 
-B. Huddles (real-time video chat) should create a room for just the team members using NFT gated rooms, which users get as part of registration.
+B. Replace Walrus Storage with IPFS/[Crust](https://wiki.crust.network/docs/en/build101) for clue/hunt metadata/rich media storage.
 
-C. The location verification algorithm is not consistent yet. Needs work for deterministic gameplay since this forms the backbone.
+C. Replace Claude with the Perplexity Sonar API for more real-time, location-aware clue generation. 
 
-D. Even the a Trust Score is generated, actual reward distribution has not been worked on. Once hunt gets over / the top, x teams should automatically be distributed rewards, and the game should either be stopped for everyone else / allowed to be continued with reduced/very few rewards. 
+D. The location verification algorithm is not consistent yet. Needs work for deterministic gameplay since this forms the backbone.
 
-E. There is no interface for the Treasure Hunt and thereby Clue creation. All of it was done manually. It has lots of moving parts like adding the hunt metadata, seed clue description, attach an exact GPS coordinate from the map as the answer, decide the clue order, encrypt the clues via Lit Protocol, store the metadata on Walrus, obtain the blobIds and add them on-chain and attach/configure rewards with the hunt.
+E. Team based gameplays. Currently users cannot form teams to play, only individual users can register. Since the game involves moving around and aims to encourage community building, its essential to have team based plays available. This will require changes across the contract and frontend.
 
-F. Unit tests for the smart contract and frontend.
+F. Huddles (real-time video chat) should create a room for just the team members using NFT gated rooms, which users get as part of registration.
 
-G. Replace Claude with the Perplexity Sonar API for more real-time, location-aware clue generation. 
+G. Even the a Trust Score is generated, actual reward distribution has not been worked on. Once hunt gets over / the top, x teams should automatically be distributed rewards, and the game should either be stopped for everyone else / allowed to be continued with reduced/very few rewards. 
 
-H. Ironing out, bug fixes, and UI improvements.
+H. There is no interface for the Treasure Hunt and thereby Clue creation. All of it was done manually. It has lots of moving parts like adding the hunt metadata, seed clue description, attach an exact GPS coordinate from the map as the answer, decide the clue order, encrypt the clues via Lit Protocol, store the metadata on IPFS/Crust, obtain the blobIds and add them on-chain and attach/configure rewards with the hunt.
 
-
+I. Unit tests for the smart contract.
 
 ## 📅 Development Roadmap
 
@@ -151,14 +156,16 @@ H. Ironing out, bug fixes, and UI improvements.
 | 0b. | Documentation | We will provide both **inline documentation** of the code and tutorials/docs to create hunts, play hunts, and run the project. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article**/video that explains what was done/achieved as part of the grant. |
-| 1. | Team based gameplays | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point A. |
-| 2. | Team gated huddles | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point B. |
-| 3. | Improvements to location verification | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point C. |
-| 4. | Reward Distribution | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point D. |
-| 5. | Treasure Hunt Creation Interface | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point E. |
-| 6. | Unit Tests | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point F. |
-| 7. | Perplexity Sonar API | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point G. |
-| 8. | Documentation | Necessary Documentation |
+| 1. | Replace Coinbase CDP with Reown Kit | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point A. |
+| 2. | Replace Walrus with IPFS/Crust | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point B. |
+| 3. | Perplexity Sonar API | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point C. |
+| 4. | Improvements to location verification | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point D. |
+| 5. | Team based gameplays | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point E. |
+| 6. | Team gated huddles | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point F. |
+| 7. | Reward Distribution | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point G. |
+| 8. | Treasure Hunt Creation Interface | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point H. |
+| 9. | Unit Tests | Feature explained in [What has NOT been done](#what-has-not-been-done) section, point I. |
+| 10. | Documentation | Necessary Documentation |
 
 ### 💰 Budget Breakdown
 
@@ -166,8 +173,8 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables              | Cost (USD) | Estimated Completion |
 |-----------|---------------------------|------------|-----------------------|
-| 1         | Features 1, 2, 3 and 7    | $2,740     | 1.5 months            |
-| 2         | Features 4, 5, 6 and 8    | $1,760     | 1 month               |
+| 1         | Features 1, 2, 3, 4 and 5 | $2,740     | 1.5 months            |
+| 2         | Features 6, 7, 8, 9 and 10| $1,760     | 1 month               |
 | **Total** |                           | **$4,500** | **2.5 months**        |
 
 **Budget Calculation:**
