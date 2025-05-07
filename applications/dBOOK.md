@@ -36,7 +36,7 @@ Frontend: Allows user to chat with intelligence engine and execute transaction. 
 - Documentation of core components, protocols, architecture, etc. to be deployed:  
 https://whitepaper.dbook.network/
 - Any PoC/MVP or other relevant prior work or research on the topic:  
-Demo link: https://docsend.com/v/jrb5g/intelligencedemo
+Demo link: https://docsend.com/v/jrb5g/intelligencedemo  
 Whitepaper link: https://whitepaper.dbook.network/  
 Website link: https://dbook.network/  
 - Mockups/designs of any UI components:  
