@@ -20,27 +20,27 @@ The new tool should be offer the below functionality:
 4. Allow for voters and candidates accounts that may not have bonded amount or may not even exist on-chain (this is a limitation of the original script)
 5. Be usable both as a CLI tool but also expose an API through which parameters can be set and results digested 
 
-* **Total Estimated Duration:** 4 weeks?
-* **Full-time equivalent (FTE):**  20? 
-* **Total Costs:** No idea 
+* **Total Estimated Duration:** 4 weeks
+* **Full-time equivalent (FTE):**  1
+* **Total Costs:** 5,000
 
 ### Milestone 1
 
-* **Estimated Duration:** 2 weeks?
-* **FTE:**  10?
-* **Costs:** Half
+* **Estimated Duration:** 2 weeks
+* **FTE:**  1
+* **Costs:** 2,500 USD
 
 ### Milestone 2
 
-* **Estimated Duration:** 1 week?
-* **FTE:**  5?
-* **Costs:** 1/4
+* **Estimated Duration:** 1 week
+* **FTE:**  1
+* **Costs:** 1,250 USD
 
 ### Milestone 3
 
-* **Estimated Duration:** 1 week?
-* **FTE:**  5?
-* **Costs:** 1/4
+* **Estimated Duration:** 1 week
+* **FTE:**  1
+* **Costs:** 1,250 USD
 
 
 | Number | Deliverable | Specification | 
