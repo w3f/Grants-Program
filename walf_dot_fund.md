@@ -26,11 +26,9 @@ For entrepreneurs frustrated with traditional crowdfunding platforms. We want to
 - React frontend  
 
 **Architecture:**  
-- Product minted as open edition NFT  
-- Smart contract used to deploy ERC-1155 contract  
-- Tracks pledge count  
-- Escrows USDC funds  
-- Airdrops reward NFTs based on tiered logic  
+Mint → Pledge (USDC) → Escrow (Smart contract) → Goal Met?
+                         ├── Yes → ✅ Airdrop + Release Funds
+                         └── No  → ❌ Refund
 
 **PoC/MVP:**  
 Submitted to EasyA Polkadot hackathon  
@@ -93,17 +91,30 @@ More details: [Walf Media Kit](https://walf.co/wp-content/uploads/2024/11/WALF-2
 
 ## 💰 Budget Breakdown
 
-| Milestone | Deliverables                                 | Category    | Cost (USD) | Estimated Completion |
-|-----------|----------------------------------------------|-------------|------------|-----------------------|
-| 1         | Marketing Strategy & Rollout                 | Marketing   | $1,500     | Month 0.38            |
-| 2         | Community Growth Campaign (Twitter/IG/Email) | Marketing   | $1,000     | Month 0.76            |
-| 3         | Video Content Creation                        | Marketing   | $500       | Month 1.14            |
-| 4         | Smart Contract Logic (mint, escrow, airdrop) | Development | $2,500     | Month 1.52            |
-| 5         | Contract Deployment + Unit Tests             | Development | $1,000     | Month 1.9             |
-| 6         | Backend Integration w/ UI                    | Development | $1,000     | Month 2.28            |
-| 7         | Frontend UI Components (React)               | Design/Dev  | $500       | Month 2.66            |
-| 8         | UX/UI Design + Responsive Layouts            | Design      | $1,000     | Month 3.04            |
+| Milestone | Deliverables | KPIs | Est. Time | Cost (USD) |
+|----------|--------------|------|-----------|------------|
+| 1. Core Smart Contract Logic | ERC-1155 minting contract, escrow wallet, refund + goal logic, tier structure | All logic tested locally | days 0 - 18 | $4,000 |
+| 2. Frontend + Contract Integration | React UI connected via Polkadot.js, tier display, backer UX | Demo app live with wallet connection | days 19 - 36 | $3,000 |
+| 3. Airdrop Engine + Campaign Admin UI | Reward NFT logic, airdrop trigger, admin dashboard | 5 simulated airdrop flows | 30 hrs × $50/hr | days 36 - 54 |
+| 4. Initial Creator Onboarding + Test Campaigns | Setup for first 10 campaigns, tutorial/demo video, docs | ≥10 creators onboarded, ≥500 mints, ≥200 unique backers | days 54 - 72 | $750 |
+| 5. Marketing & Growth Ops | Email funnel, content, teaser videos, social rollout | 1,000 landing page visits, ≥100 sign-ups | days 72 - 91 | $750 |
 
+## 🧾 Budget Clarity
+
+| Milestone                            | Task Description                                      | Est. Hours | Rate (USD/hr) | Subtotal (USD) |
+|-------------------------------------|-------------------------------------------------------|------------|----------------|----------------|
+| 1. Core Smart Contract Logic        | ERC-1155 minting, escrow, refund logic, tiers         | 18 hrs     | $50            | $4,000         |
+| 2. Frontend + Contract Integration  | React frontend, Polkadot.js wallet connect, UX        | 18 hrs     | $50            | $3,000         |
+| 3. Airdrop Engine + Admin UI        | Reward logic, admin UI, simulate 5 flows              | 18 hrs     | $50            | $1,500         |
+| 4. Creator Onboarding + Test Campaigns | Demo, docs, tutorials, creator support             | 18 hrs     | $50            | $750           |
+| 5. Marketing & Growth Ops           | Email funnel, social media, landing page setup        | 18 hrs     | $50            | $750           |
+| **Total**                           | —                                                     | **90 hrs**| —              | **$10,000**    |
+
+---
+## 🔗 Expected Polkadot Impact
+
+- Estimated 750–1,500 on-chain transactions (NFT mints, pledges, refunds, airdrops) during initial rollout  
+- Brings real creator economy use case to Asset Hub  
 ---
 
 ## 🔮 Future Plans
