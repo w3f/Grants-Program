@@ -126,10 +126,10 @@ Our documentation is available at https://polkadart.dev at keeps being improved 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code as well as **online documentation** related to changes in this milestone on https://polkadart.dev |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **0e.** | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| **0b.** | Documentation | Our code is documented and we will also provide documentation for all deliverables use-cases at https://polkadart.dev |
+| **0c.** | Testing | Unit tests will be created for all main functionalities, they can be easily run by running the docker image bellow |
+| **0d.** | Docker | A Dockerfile is provided to run all unit tests without the need of installing any dependencies |
+| **0e.** | Article | We will create an article that will be posted at Medium and Polkadot Forum to explain the new features |
 | **1.** | Metadata V16 | Parse and interpretate metadata v16 making it backwards compability with previous versions |
 | **2.** | Transaction Format V5 | Use the new transaction format v5 to generate extrinsics and keep v4 as fallback  |
 | **3.** | New JSON API interfaces | Create new interfaces for the JSON API |
@@ -143,10 +143,10 @@ Our documentation is available at https://polkadart.dev at keeps being improved 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code as well as **online documentation** related to changes in this milestone on https://polkadart.dev |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **0e.** | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| **0b.** | Documentation | Our code is documented and we will also provide documentation for all deliverables use-cases at https://polkadart.dev |
+| **0c.** | Testing | Unit tests will be created for all main functionalities, they can be easily run by running the docker image bellow |
+| **0d.** | Docker | A Dockerfile is provided to run all unit tests without the need of installing any dependencies |
+| **0e.** | Article | We will create an article that will be posted at Medium and Polkadot Forum to explain the new features |
 | **1.** | Substrate metadata | Use typed metadata as default |
 | **2.** | Registry | Adjust registry to work with typed metadata |
 | **3.** | Polkadart CLI | Adjust CLI to work with typed metadata |
@@ -161,10 +161,10 @@ Our documentation is available at https://polkadart.dev at keeps being improved 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code as well as **online documentation** related to changes in this milestone on https://polkadart.dev |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **0e.** | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
+| **0b.** | Documentation | Our code is documented and we will also provide documentation for all deliverables use-cases at https://polkadart.dev |
+| **0c.** | Testing | Unit tests will be created for all main functionalities, they can be easily run by running the docker image bellow |
+| **0d.** | Docker | A Dockerfile is provided to run all unit tests without the need of installing any dependencies |
+| **0e.** | Article | We will create an article that will be posted at Medium and Polkadot Forum to explain the new features |
 | **1.** | Runner | Add support for running code snippet in the browser |
 | **2.** | Saving snippets  | Add the possibility of the user to save snippets in the cloud |
 | **3.** | Sharing snippets  | Allow users to share their snippets with other users |
