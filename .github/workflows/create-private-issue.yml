@@ -1,53 +1,40 @@
-name: Create Issue in Private Repo
+name: Create Issue on PR Creation
 
 on:
-  workflow_run:
-    workflows: ["PR Open Checks"]
-    types:
-      - completed
+  pull_request:
+    types: [opened]
 
 jobs:
-  create_issue:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  create-issue:
+    # Prevent secret exposure on forked PRs
+    if: github.repository == 'Polkadot-Fast-Grants/apply'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
 
     steps:
-      - name: Download original PR event data
-        uses: dawidd6/action-download-artifact@v2
-        with:
-          name: pr-metadata
-          run_id: ${{ github.event.workflow_run.id }}
-          path: ./pr-data
-
-      - name: Read PR metadata
-        id: pr
-        run: |
-          echo "Reading PR data..."
-          PR_TITLE=$(cat ./pr-data/title.txt)
-          PR_URL=$(cat ./pr-data/url.txt)
-          PR_USER=$(cat ./pr-data/user.txt)
-
-          echo "pr_title=$PR_TITLE" >> "$GITHUB_OUTPUT"
-          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
-          echo "pr_user=$PR_USER" >> "$GITHUB_OUTPUT"
-
-      - name: Create issue in Internal-Reviews repo
-        uses: actions/github-script@v7
+      - name: Create issue in private repository
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.PRIVATE_REPO_PAT }}
           script: |
-            const prTitle = `${{ steps.pr.outputs.pr_title }}`;
-            const prUrl = `${{ steps.pr.outputs.pr_url }}`;
-            const prUser = `${{ steps.pr.outputs.pr_user }}`;
+            const pr = context.payload.pull_request;
+            const prTitle = pr.title;
+            const prNumber = pr.number;
+            const prAuthor = pr.user.login;
+            const prLink = pr.html_url;
 
-            const issueTitle = `New Grant Submission: ${prTitle}`;
-            const issueBody = `A new PR was submitted by @${prUser}:\n\n${prUrl}`;
-
-            const result = await github.rest.issues.create({
+            await github.rest.issues.create({
               owner: 'Polkadot-Fast-Grants',
               repo: 'Internal-Reviews',
-              title: issueTitle,
-              body: issueBody
+              title: `New Grant Submission: ${prTitle}`,
+              body: `A new PR was submitted in the public repository.
+              
+              **PR Details**
+              - **Title**: ${prTitle}
+              - **Author**: @${prAuthor}
+              - **Link**: ${prLink}
+              `,
+              labels: ['Needs Review']
             });
-
-            console.log(`✅ Created issue #${result.data.number}: ${issueTitle}`);
