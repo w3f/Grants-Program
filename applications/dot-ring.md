@@ -164,8 +164,8 @@ Our team blends practical Web3/Polkadot ecosystem knowledge with specialized Pyt
 ## Development Status
 
 - Research: We have thoroughly reviewed the W3F specifications for Bandersnatch VRF and Ring Proofs, the underlying paper on the Bandersnatch curve (eprint/2021/1152), and studied the ark-vrf Rust implementation for architectural insights and test vector generation.
-- Prototyping: We have developed preliminary Python code for basic field arithmetic and curve operations on Bandersnatch curve, IETF and Pedersen VRF functions validating our understanding of the core mathematics, and are able to pass all IETF and Pedersen test vectors. We are currently working on the GLV optimisation and Ring Proof implementation.
-- Discussions: We are aware of the discussions surrounding Ring VRFs in the context of Polkadot's future roadmap (e.g., JAM) through public materials and Polkadot community channels. We plan to engage with the community (e.g., Matrix channel, potentially Polkadot Forum) during development for feedback and provide it to other protocol implementation.
+- Prototyping: We have developed preliminary Python code for basic field arithmetic and curve operations on Bandersnatch curve, IETF and Pedersen VRF functions validating our understanding of the core mathematics, and are able to pass all IETF and Pedersen test vectors. We now have a working prototype of GLV optimisation, Fiat Shamir Transcript and Ring Proof implementation, and are working towards Ring VRF functionality. We look to integrate this in Safrole implementation and test real time working.
+- Discussions: We are aware of the discussions surrounding Ring VRFs in the context of Polkadot's future roadmap (e.g., JAM) through public materials and Polkadot community channels. We'll soon be engaging with the JAM community (e.g., Matrix channel, potentially Polkadot Forum) during development for feedback and provide it to other protocol implementation.
 
 ## Development Roadmap
 
