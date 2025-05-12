@@ -3,6 +3,7 @@
 - **Team Name:** Web3 Association
 - **Payment Address:** 14MvsY86yCauNJYp5AfjRYesQ32uXvaBzXEqoBJqj4MQpajR (DOT / USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2370#issuecomment-2869681320)
 
 ## Project Overview :page_facing_up:
 
