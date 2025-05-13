@@ -31,7 +31,7 @@ Our successful CREATURES NFT collection (2,222 NFTs sold out in 48 hours) connec
 
 ### (Optional but huge bonus points): 1-min video pitch
 
-[Video to be added]
+(https://github.com/baseddlsg/Polka-Space/blob/main/oiub.mp4)
 
 ## 🔍 Project Details
 
