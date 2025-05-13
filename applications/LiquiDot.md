@@ -15,12 +15,18 @@ Please provide the following:
 We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
 
 - An overview of the technology stack to be used
+  NextJs (Wagmi for wallet) for Frontend,  NodeJS (Express, PolkadotJS for blockchain calls) for backend, PostgreSQL for database, Solidity for Smart Contracts, AWS for hosting.
 - Documentation of core components, protocols, architecture, etc. to be deployed
+- Finish the Diagram
 - Any PoC/MVP or other relevant prior work or research on the topic
+- Attach a link to github (Add explanation)
 - Mockups/designs of any UI components
+- Attach a link to youtube/add new components.
 - Data models / API specifications of the core functionality
+- Users,Positions,Pools,Decisions
 - What your project is *not* or will *not* provide or implement
   - This is a place for you to manage expectations and clarify any limitations
+  - (Its not full add later) Chains/Dexes + simple rebalancing/decision making engine
 
 ### 🧩 Ecosystem Fit
 
