@@ -22,8 +22,6 @@ https://docsend.com/v/jrb5g/polkadot
 
 ### 🔍 Project Details
 
-We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
-
 - An overview of the technology stack to be used:  
 **Intelligence Engine**: Maps user intentions to programmable on-chain intentions.  
 Tech Stack: JavaScript/Node.js, Anthropic SDK.  
@@ -44,7 +42,6 @@ https://drive.google.com/drive/folders/1B0P2MB3SLHcLNxfoZZx2o7PO-jNOonhB?usp=sha
 - Data models / API specifications of the core functionality:  
 To be decided later  
 - What your project is _not_ or will _not_ provide or implement:  
-  - This is a place for you to manage expectations and clarify any limitations  
 What dBOOK is not going to build or promise  
 	•	Not another wallet: We enhance existing Polkadot wallets through an SDK; we will never ship a standalone wallet that competes with our partners.  
 	•	Not a new parachain (at launch): Intent ordering runs off-chain first, with the option to migrate to a lightweight parathread only for shared security—not to create yet another execution environment.  
@@ -54,6 +51,42 @@ What dBOOK is not going to build or promise
 	•	Not a “yield guarantee: Our AI ranks opportunities, but market risk, slippage and protocol risk remain the user's responsibility; we do not underwrite returns.  
 	•	Not a replacement for Polkadot governance or XCM tooling: We consume XCM and OpenGov primitives rather than re-implementing them.  
 In short: dBOOK is an assitant and recommendation engine—not a wallet, not a chain, and not a custodial service—designed to reduce fragmentation rather than add to it.  
+
+## 👽 GTM Strategy
+dBOOK will roll out in two waves—**Private Beta** followed by **Public Launch**—using a lean, content-driven funnel that turns early adopters into the primary growth engine.  
+The strategy focuses on:  
+* Seeding broad awareness with zero-cost channels,  
+* Capturing qualified leads through a referral-powered wait-list,  
+* Activating those leads in a tightly managed private beta, and  
+* Leveraging their success stories to amplify reach ahead of the open release.
+
+### Funnel & Channels
+
+**Awareness:** Put dBOOK = chat-to-transact on the radar of crypto Twitter & builders.  
+  * Many-part X thread series like “Why intents > transactions”, “UX death by bridges”, “How dBOOK works in one GIF.”, etc.  
+  * Medium deep-dive reposted to Mirror + Hackernoon.  
+  * Reddit posts in relevant builder community groups.  
+  * Indie-dev teaser to spark conversation in builder circles.  
+
+**Acquisition:** Convert interest into wait-list & segment qualified testers.  
+  * Discord & Telegram entry gates via single-page wait-list that collect wallet addresses, persona (“dev”, "memer", “yield chaser”, etc).  
+  * Referral loop: Every sign-up gets 5 invite codes & XP points. Every successful referral earns XP points multiplier.  
+
+**Activation (Private Beta):** Turn testers into engaged product advocates.  
+  * 100+ testers admitted in staggered cohorts.  
+  * Gamified quests and Notion bug/idea board.  
+    1. (“Execute your first cross-chain transfer”, “Execute your first DOT→USDC swap”, “Perform your first farm” etc.). Every quest completed earns XP points.  
+    2. Each accepted issue earns “Intent Pioneer” NFT (future airdrop whitelisting).  
+  * Loom videos from founders showcasing new fixes and tips.  
+
+**Advocacy:** Leverage satisfied testers to feed the top of funnel for public launch.  
+  * Social proof toolkit: Auto-generated quote cards “I swapped DOT to GLMR in 7 s – @dBOOK_handle.  
+  * Beta-to-public referral: Each successful beta user receives 10 public-launch invite links that count toward future token airdrop multipliers.  
+
+**Public Launch:** Ensure credibility & readiness.  
+  * Create marketing material for X, reddit, and other social medial platforms leveraging the social proofs, positive community feedback for launch. Publish Builders Log #1 summarising beta metrics & shipped fixes.  
+  * Target user-base of 1000 members.  
+
 
 ### 🧩 Ecosystem Fit
 
@@ -129,35 +162,13 @@ Harshit Singhal has a background in cryptography and blockchain technology. He p
 
 ## 📊 Development Status
 
-If you've already started implementing your project, please provide a link and a description of the code. Otherwise, please provide some documentation on the research and other work you have conducted before applying.  
--- Whitepaper Link: https://whitepaper.dbook.network/  
+The team has already developed a WebApp Proof of Concept for the EVM ecosystem (with support for native and ERC20 asset transfers, swaps, user analytics).  
+Demo link: https://docsend.com/v/jrb5g/intelligencedemo  
+Whitepaper Link: https://whitepaper.dbook.network/  
 
 ## 📅 Development Roadmap
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, please describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality.  
-**Stage 1: Frameworks & Wallet SDK**  
-Deliverables:  
-a. Open-source Intelligence Engine SDK for polkadot{.js}-compatible wallets.  
-b. Substrate Intent Pallet that maps parachain calls to the dBOOK intent schema.  
-Success Milestone:  
-a. Live in-wallet chat panel with successful translation of "intention to intent".  
-b. Code published under Apache 2.0.  
-
-**Stage 2: Native Asset Transfer & XCM Settlement**  
-Deliverables:  
-a. Settlement Engine that converts intents → XCM v3 messages.  
-b. Support for DOT with major parachain assets (Acala aUSD, GLMR, ASTAR) with fee abstraction.  
-Success Milestone:  
-a. End-to-end "Convert DOT to GLMR" live demonstration.  
-b. 1000+ cross-chain intents settled with less than 1% failure.  
-
-**Stage 3: Protocol / Parachain Integration & Recommendations**  
-Deliverables:  
-a. Parachain adapters for top ecosystems (Acala DeFi, Astar EVM, Moonbeam DEXes, HydraDX LBP).  
-b. Recommendation Engine: tag based live recommendation system.  
-Success Milestone:  
-a. 10+ parachains live through pallet adapters.  
-b. Live recommendations via in-wallet chat activities.  
-
+### Summary
+A dedicated team of three full-time engineers will deliver the milestone modules in 45 days. Every feature will be accessible via a WebApp demo (public test link included). The entire codebase—complete with unit tests, PoC examples, and comprehensive docs—will be released as open source under the Apache 2.0 license.
 
 **Important notes:**
 
@@ -169,13 +180,11 @@ b. Live recommendations via in-wallet chat activities.
 ### Overview
 
 - **Estimated Duration:** Duration of the whole project (maximum 3 months):  
-2.5 months
+45 days
 - **Full-Time Equivalent (FTE):** Average number of full-time employees working on the project:  
-4
+3
 - **Total Costs:** Requested amount in USD for the whole project (maximum $10,000 USD):  
 Total Cost = $9000  
-2 FTE at $1200/month  
-2 FTE at $600/month
 
 > Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
 
@@ -185,46 +194,67 @@ Total Cost = $9000
 |    0b. | Documentation                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a wallet service can integrate the dBOOK's intelligence engine and it's functionalitites.                                           |
 |    0c. | Testing and Testing Guide         | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                          |
 |    0d. | Article                           | We will publish an **article** that explains what was done/achieved as part of the grant.                                                                                                                                                |
-|     1. | Wallet Intelligence SDK + Chat UI | We will publish @dbook/sdk (TypeScript) shipping a plug-and-play React/Vue chat panel so any polkadot{.js}-compatible wallet can translate plain-language requests into a signed Intent JSON.    |
-|     2. | Intent Pallet v0                  | We will release a Substrate pallet that maps common extrinsics (transfer, swap, stake, etc.) to the dBOOK intent schema and emits IntentExecuted events for indexing and audit.                                                          |
-|     3. | Settlement Engine β               | We will integrate and create(if required) solver services that convert an intent into XCM v3 messages, execute cross-parachain transfers (e.g., DOT → GLMR) and return one atomic result to the wallet, with automatic fee-asset selection. |
-|     4. | Asset-Support Matrix v1           | We will add DOT plus major parachain assets (aUSD, GLMR, ASTR), auto-detect available pairs per wallet and demonstrate ≥1000 cross-chain intents with <1 % failure.                                                                     |
-|     5. | Parachain Adapters v1             | We will publish ready-made adapter crates for Acala, Astar, Moonbeam, HydraDX and others, so any parachain protocol can expose its functionality as intent-callable endpoints.                                             |
-|     6. | Recommendation Engine v1          | We will publish a rule-based tags model that delivers intent-mapped protocol suggestions inside the wallet chat.                                |
 
-### 💰 Budget Breakdown
+### Milestone 1
+* Estimated Time = 10 days
+* Cost = $2500  
 
-Please provide a breakdown of your budget by milestone:
+| Number | Deliverable                       | Specification                                                                                                                                                                                                                            |
+| -----: | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     1a. | Intent Pallet                    | We will publish a substrate intent pallet that maps parachain calls to the dBOOK intent schema. |
+|     1b. | Query on-chain statistics        | View and query user-wallet and blockchain level analytics. (Eg., “I want to view my portfolio”, “What is the current gas fee?”). |
+|     1c. | Native asset transfer            | In-app demonstration of native asset transfers on parachains like AssetHub, Acala, Astar, etc. (Eg. “I want to send 10 DOT to my friend Harry”). |
 
-| Milestone | Deliverables                                                | Cost (USD)  | Estimated Completion |
-| --------- | ----------------------------------------------------------- | ----------- | -------------------- |
-| 1         | Wallet Intelligence SDK + Chat UI, Intent Pallet v0         | $2,700      | 0.75 month           |
-| 2         | Settlement Engine β, Asset-Support Matrix v1                | $2,700      | 0.75 month           |
-| 2         | Parachain Adapters v1, Recommendation Engine v1             | $3,600      | 1 month              |
-| **Total** |                                                             | **$9,000**  | **2.5 months**       |
+### Milestone 2
+* Estimated Time = 21 days
+* Cost = $3500  
+
+| Number | Deliverable                       | Specification                                                                                                                                                                                                                            |
+| -----: | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     2a. | Protocol Bindings & Execution    | We will build binding adapters for top protocols like Hydration, Bifrost, Arthswap, Moonwell, Gamma, etc., in the categories Swap, Bridge, Lending & Borrowing, Staking. This will expose their functionality as intent-callable endpoints to the settlement engine. Successful demonstration via the in-app chat interface to be delivered. (Eg., “I want to get atleast 10% yield on Bifrost”, “Convert 10 DOT to GLMR ”). |
+|     2b. | Advanced  analytics              | View and query protocol level statistics. (Eg., “What are my current LP positions?”, “How much yield I’ve earned on Bifrost?”, etc.) |
+
+### Milestone 3
+* Estimated Time = 14 days
+* Cost = $3000  
+
+| Number | Deliverable                       | Specification                                                                                                                                                                                                                            |
+| -----: | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     3a. | Recommendation engine            | We will publish a rule-based tags model that delivers intent-mapped protocol suggestions and live interaction through in-app conversation. |
+|     3b. | Wallet SDK                       | We will publish @dbook/sdk (TypeScript) shipping a plug-and-play React chat panel so any polkadot{.js}-compatible wallet can translate plain-language requests into a signed Intent JSON.  |
+
+
+### Cost Breakdown
+
+Finishing the three milestones will take roughly 140 hours. With a budget of $9,000, that comes to an hourly rate of about $64.20.
+
 
 ## 🔮 Future Plans
 
 Please include:
 
 - How you intend to continue development after the Fast-Grant  
-‣ Post the fast grant, we intent to onboard users onto the B2C web-app and start monetisation from procotols for in-app personalised recommendations  
-‣ Integrate other agentic workflows to broaden user-segments  
-‣ Build rails for inward flow from other ecosystems (wallet APIs)
+During the fast-grant program, we wiill continuously collect feedback to improve our offerings. 
+Post fast-grant,  
+a. **MVP feature Build-out:** Strengthen protocol directory by adding categories like Marketplaces, Social, Tokenization, On-ramp, Other Agentic Workflows, etc., to broaden user-segments. Develop module for risk engine to abort any path exceeding user-defined thresholds, memory optimisation for the Intelligence Engine.  
+b. **GTM & Community Engagement:** Launch a private beta access program. Utilise these referrals for organic growth on X to prepare for public launch. Leverage leaderboard competitions, KOLs, and indie developers to create good word of mouth and target an active userbase of 1000.  
 
 - Any plans for seeking additional funding (other grants, VC funding, etc.):  
 We intend to raise additional capital through venture funding and complementary grant opportunities.  
+Post fast-grant, we will apply for W3F and other relevant grants, to completely build out the MVP and progress towards the GTM strategy.
 - Your vision for the project's growth and impact in the Polkadot ecosystem:  
-dBOOK will become the default on-ramp and routing layer that funnels people, liquidity, and attention into Polkadot.  
-	‣ Unlock mainstream access. By abstracting every bridge, XCM call and fee swap behind a single chat request, we expect to bring > 1 million new wallets into the ecosystem within three years—users who would otherwise stay on EVM, Solana or Cosmos.  
-	‣ Super-charge protocol growth. Any parachain that ships the dBOOK pallet is automatically surfaced—ranked and risk-scored—in every integrated wallet, turning Polkadot’s “long tail” of dApps into a curated storefront and boosting TVL and active addresses across the Relay Chain.  
-	‣ Ecosystem flywheel. More users → more intents → more fees and data → better AI recommendations → higher protocol conversion—creating a self-reinforcing loop that elevates Polkadot from a technically superior network to the most user-friendly multichain hub.  
+Post the MVP launch, our focus will be to make onboarding to Polkadot even more seamless.  
+
+	a. **Unlock mainstream access.** Users on any chain will be able to discover and interact with Polkadot-native assets and protocols directly—no need to worry about bridges, wallets, or chain switching. We’ll enable this through multi-chain agentic flows, and solvers running on Polkadot that abstract away cross-chain complexity. We also plan to apply for follow-on grant where Polkadot DAO funds the solver. In this setup, users pay on their native chain (e.g., Ethereum), and the solver executes the transaction on Polkadot, making cross-chain interactions feel native.  
+	b. **Super-charge protocol growth.** Any parachain that ships the dBOOK pallet is automatically surfaced—ranked and risk-scored—in every integrated wallet, turning Polkadot’s “long tail” of dApps into a curated storefront and boosting TVL and active addresses across the Relay Chain.  
+	c. **Ecosystem flywheel.** More users → more intents → more fees and data → better AI recommendations → higher protocol conversion—creating a self-reinforcing loop that elevates Polkadot from a technically superior network to the most user-friendly multichain hub.  
 
 ## ℹ️ Additional Information
 
 Here you can add any additional information that you think is relevant to this application, such as:
 
 - Work you have already done  
+Our team has already developed a PoC for the EVM ecosystem.  
 Demo link: https://docsend.com/v/jrb5g/intelligencedemo
 - If there are any other teams who have already contributed to the project
 - Other funding you may have applied for
