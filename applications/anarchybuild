@@ -127,8 +127,8 @@ Core functions will be fully covered by comprehensive unit tests to ensure funct
 Article
 We will publish an article that explains what was done/achieved as part of the grant.
 1.
-On-chain commenting
-The deliverable here is to create comments as sub-NFTs of the ERC-721s uploaded by AI builders. This sets up the infrastructure for incentivised engagement and opens the possibility for more dynamic project support through being able to ‘tip’ comments in the form of NFTs if there are helpful towards the subject matter (a continuation of our Hackathon work)
+Completion of 3x Focus Groups (traction)
+As part of our GTM, we will run three separate focus groups with various audiences to gain feedback on UX and understand the priority features on the roadmap. All focus groups will culminate with a live competition, with all entries uploaded to the Anarchy platform (driving tvl on Moonbeam).
 2.
 Built in AI text-image generator
 Integrating the Pollinations API (adding to the Creative Commons licensing we are currently building in to the tech stack) will allow the user to do the following actions on the Anarchy site:
@@ -144,7 +144,7 @@ Deliverables
 Cost (USD)
 Estimated Completion
 M1
-On-Chain comments
+Traction Milestone (run 3 focus groups)
 $5,000
 1 month
 M2
