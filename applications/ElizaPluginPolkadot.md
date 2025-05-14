@@ -105,7 +105,7 @@ Detailed documentation and research findings will be maintained in our repositor
 - **Total Costs:** 20,000 USD
 - **DOT %:** 50% of total costs
 
-### Milestone 1 — Basic Integration and Data Feed
+### Milestone 1 — Wallet and On-Chain Observability
 
 - **Estimated Duration:** 1 month
 - **FTE:** 2FTE, the listed members would contribute to different deliverables based on their skill-set.
@@ -143,7 +143,7 @@ Detailed documentation and research findings will be maintained in our repositor
 - Set up integration and unit tests targeting ≥95% coverage.
 - Define common interfaces for future actions and providers.
  
-### Milestone 2 — Advanced Governance and Smart Contract Interaction
+### Milestone 2 — Asset Hub Subsidized Transactions and Cross-Parachain Transfers
 
 - **Estimated Duration:** 1 month
 - **FTE:** 2FTE, the listed members would contribute to different deliverables based on their skill-set.
