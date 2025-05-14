@@ -1,6 +1,6 @@
 # The Implied Impermanent Loss and Implied LVR
 
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1
+- **Level:** 1
 - **Team Name:** Implied Risk Team
 
 ## Project Overview :page_facing_up:
