@@ -71,13 +71,6 @@ Our current working papers, on which this proposal is built,
 got presented at various conferences. 
 
 ## Development Roadmap :nut_and_bolt:
-Dates - Project stage 
-- 06-08/2025 – Accessing, preparing, and processing spot and option data via the Amberdata API 
-- 08-09/2025 – Accessing liquidity pool data using The Graph
-- 09-12/2025 – Developing the mathematical optimization framework to replicate V3 type of pools and LVR 
-- 01-02/2026 – Programming and numerically solving the optimization framework  
-- 02-06/2026 – Live implementation of the code to calculate the measure in real time
-- 07-08/2026 – First White paper draft
 
 
 ### Overview
@@ -88,35 +81,33 @@ Dates - Project stage
 We want to emphasize that any amount of sponsorship or donation would be beneficial for us since we are trying to request funding from different funding sources to realize this project.
 
 
-### Milestone 1 
+### Milestone 1 - Data Acquisition and Optimization Framework
 
-- **Estimated duration:** 2 months
-- **Costs:** 6.000 USD
+- **Estimated duration:** 6 months
+- **Costs:** 7.000 USD
+- 1a – Accessing, preparing, and processing spot and option data via the Amberdata API 
+- 1b – Accessing liquidity pool data using The Graph
+- 1c – Developing the mathematical optimization framework to replicate V3 type of pools and LVR 
 
-### Milestone 2 
-
-- **Estimated duration:** 1 months
-- **Costs:** 1,000 USD
-
-### Milestone 3
-
-- **Estimated duration:** 3 months
-- **Costs:** 0 USD
-
-### Milestone 4
-
+### Milestone 2 - Programming and numerically solving the optimization framework
 - **Estimated duration:** 2 months
 - **Costs:** 0 USD
 
-### Milestone 5
+
+### Milestone 3 - Live implementation of the code to calculate the measure in real time. 
 
 - **Estimated duration:** 4 months
-- **Costs:** 2,000 USD
+- **Costs:** 2000 USD
+- 2a. Calculate the Impermanent Loss (IIL) for the top liquidity pools, leveraging for respective SDKs.
+- 2b. Focus on optimizing for gas efficiency by designing and deploying contracts that perform the IIL calculation in a cost-effective manner, using Forge and Foundry as the primary development tools.
+- 2c. The project will simulate the integration of an Active Validator Set (AVS), sourced from Eigenlayer or a similar provider, to supply the necessary data inputs required by the IIL solver. 
+- 2d. The project will include the drafting of a proposal to establish a connection with an AVS in a testnet environment.
 
-### Milestone 6
 
+### Milestone 4 - First White paper draft
 - **Estimated duration:** 2 months
-- **Costs:** 1,000 USD
+- **Costs:** 1000 USD
+
 
 ## Future Plans
 
