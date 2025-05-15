@@ -270,7 +270,7 @@ Nevan Sujit is an undergrad student at the University of Pennsylvania studying M
 | 1         | 0a–0d + Deliverable 1 (Account Abstraction)       | \$2,000      | 1 month              |
 | 2         | Deliverable 2 (Mobile App Development)            | \$4,000      | 1.5 months           |
 | 3         | Deliverable 3 (Proof-of-Fan Verification System)  | \$4,000      | 1.5 months           |
-| **Total** |                                                   | **\$10,000** | **3 months**         |
+| **Total** |                                                   | **\$10,000** | **4 months**         |
 
 ---
 
