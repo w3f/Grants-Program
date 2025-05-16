@@ -66,9 +66,9 @@ There are currently no similar projects in the Substrate/Polkadot ecosystem that
 
 Jake Hemmerle is a software engineer with several years of experience with blockchain architecture and development. His background includes Substrate runtime development, cryptography engineering, and he has contributions to multiple open source projects, including Substrate and Matrix, as well as several Substrate-based projects, including Entropy and Astar Network.
 
-- **Email:** <jakehemmerle@gmail.com>
-- **GitHub:** <https://github.com/jakehemmerle>
-- **LinkedIn:** <https://www.linkedin.com/in/jakehemmerle/>
+- **Email:** jakehemmerle@gmail.com
+- **GitHub:** https://github.com/jakehemmerle
+- **LinkedIn:** https://www.linkedin.com/in/jakehemmerle/
 
 ## Development Status :open_book:
 
