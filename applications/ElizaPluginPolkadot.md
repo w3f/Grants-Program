@@ -155,7 +155,8 @@ Detailed documentation and research findings will be maintained in our repositor
 | **0b.** | Documentation                     | Detailed documentation of governance query actions and smart contract interaction modules                         |
 | **0c.** | Testing and Testing Guide         | Unit tests covering governance and contract interactions with testing instructions                               |
 | 4.     | Transfers & Transactions   | Execute token transfers between accounts, multisigs, or across parachains (XCMP transfers).    
-| 5.     | Subsidized Transactions  | 	Subsidized payment of transaction fees using asset hub's sufficient assets.                  |          
+| 5.     | Subsidized Transactions  | 	Subsidized payment of transaction fees using asset hub's sufficient assets.                  |
+| 6.     | Official ElizaOS Repository Integration | Submit a pull request to the official ElizaOS plugin repository and ensure successful merge. This ensures the plugin becomes an official part of the ElizaOS ecosystem and is accessible to all ElizaOS users. |          
 
 ## Future Plans
 
