@@ -33,11 +33,56 @@ We expect applicants to have a solid idea about the project's expected final sta
 Help us locate your project in the Polkadot landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
+  Our project is an automated LP manager with cross-chain functionality, designed to optimize capital efficiency and user experience across multiple parachains in the Polkadot ecosystem. This enables users to manage assets and interact with DEXs, DeFi protocols, and liquidity pools a lot more efficiently and across networks like the Hub, Hydration, Moonbeam, Acala, etc, from a single interface and without being confined to a single chain’s limitations. Our project directly supports Polkadot’s vision of a multichain future by reducing fragmentation and improving capital flow across its ecosystem.
+  
 - Who is your target audience?
+  Our project is targeted at crypto enthusiasts looking to optimize their experience within the PolkaDot ecosystem. It is for people who know stuff about crypto already, who are looking for a more reliable way to make money than trading and yet higher potential yield compared to the basic spot/HODL. This can also be an interesting discovery for those who know something about crypto but are newbies in liquidity providing.
+
+Our goal is to also serve developers and projects building on parachains that need efficient, cross-chain liquidity management. We are doing this by providing an automatic and native solution for anyone seeking to maximize yield, reduce manual intervention, and 
+seamlessly manage liquidity across multiple Polkadot-connected chains.
+
+Additionally, institutional DeFi participants looking for reliable 
+infrastructure to manage large-scale cross-chain liquidity positions 
+represent an additional potential future audience.
+
 - What need(s) does your project meet?
+Our project addresses several critical needs within the Polkadot ecosystem, particularly around liquidity management and user empowerment in a cross-chain DeFi environment. 
+We solve these challenges by offering:
+
+    -Cross-chain liquidity optimization: Using Polkadot’s XCM, we dynamically allocate liquidity across multiple parachains to improve capital efficiency.
+
+    -User-defined strategies: Users can select from risk-based strategies (e.g., conservative, moderate, aggressive) tailored to their goals and risk tolerance.
+
+    -Advanced risk management tools: Features like stop-loss and take-profit thresholds allow users to safeguard positions and automate exits based on market conditions.
+
+    -Custom asset preferences: Users can specify which coins they're interested in, ensuring personalized exposure across pools.
+
+    -Capital control: Users can set maximum allocation per pool, define a minimum acceptable APR, and decide how many pools to distribute their position across.
+
+    -Yield maximization through automation: The system continuously monitors and reallocates liquidity to optimize returns without manual intervention.
+
+    -User-friendly automation: Reduces the operational burden on users by automating complex liquidity management strategies.
 - Are there any other projects similar to yours in the Polkadot ecosystem?
   - If so, how is your project different?
   - If not, why might such a project not exist yet?
+While there are projects in the Polkadot ecosystem focused on liquidity provision and automated market making (such as HydraDX or various DEXs on Moonbeam and Acala), none currently offer a cross-chain automated liquidity manager with the same level of customization, user control, and strategy-based automation as our solution.
+
+Most existing tools are limited to individual parachains or offer basic liquidity provisioning without features like:
+
+    Cross-chain pool rebalancing via XCM
+
+    Strategy selection (risk-adjusted)
+
+    Stop-loss/take-profit triggers
+
+    Custom coin selection and APR thresholds
+
+    Smart allocation across multiple pools
+
+We believe this gap exists because the complexity of implementing robust cross-chain logic, especially for DeFi strategies.
+
+Our project is built to fill this gap—bridging the technical challenge with a user-first design that empowers participants to take full advantage of Polkadot’s multichain architecture.
+
 
 > **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
 
