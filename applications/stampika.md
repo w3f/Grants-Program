@@ -7,12 +7,14 @@
 - Stampika lets travellers mint NFT stamps from real-world visits through NFC Tags - building digital identity while helping sites engage and track visitors
 - The 2 key stakeholders of our project would be the users (travellers) and organisations (tourism board, landmark owners).
 
-We would like to bring the social experience at the end of travels where people share where they have been with friends and families online. Users would be to view other people’s stamps and when they have collected them as they are publicly on the blockchain.
+- We would like to bring the social experience at the end of travels where people share where they have been with friends and families online. Users would be to view other people’s stamps and when they have collected them as they are publicly on the blockchain.
 
-An NFC Sticker Tag would be placed at landmarks and users would be able to scan the NFC Tag and instantly claim a stamp, similar to a proof-of-location. We would then provide organisations with information of when users visit, allowing them to obtain more data points for boosting visits.
+- An NFC Sticker Tag would be placed at landmarks and users would be able to scan the NFC Tag and instantly claim a stamp, similar to a proof-of-location. We would then provide organisations with information of when users visit, allowing them to obtain more data points for boosting visits.
 
 - We will be deploying the Stamp Contracts (Modified ERC721) on Polkadot Hub and sponsor users with their gas fees through our backend. This will help with onboarding masses to Polkadot as we would only be using blockchain under the hood, abstracting away the complicated part of blockchain.
+
 - This project aligns with the team’s core values of encouraging activity and movement. We strongly believe that there will be a strong shift in the world where people go offline and explore the outside world more.
+
 - Pitch Deck: [https://www.canva.com/design/DAGn5plRum0/9_t-GuUGFxGAzDnFmNgfxg/edit](https://www.canva.com/design/DAGn5plRum0/9_t-GuUGFxGAzDnFmNgfxg/edit?utm_content=DAGn5plRum0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ### 🔍 Project Details
