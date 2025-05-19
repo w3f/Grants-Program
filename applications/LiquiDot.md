@@ -15,18 +15,87 @@ Please provide the following:
 We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
 
 - An overview of the technology stack to be used
-  NextJs (Wagmi for wallet) for Frontend,  NodeJS (Express, PolkadotJS for blockchain calls) for backend, PostgreSQL for database, Solidity for Smart Contracts, AWS for hosting.
+  NextJs (Wagmi for wallet) for Frontend,  NestJS (TypeORM , PolkadotJS for blockchain calls) for backend, PostgreSQL for database, Solidity(Openzepelin,Reactive Smart Contracts) for Smart Contracts, AWS for hosting.
 - Documentation of core components, protocols, architecture, etc. to be deployed
-- Finish the Diagram
+
+High Level Diagram
+```mermaid
+flowchart TB
+ subgraph User["User Interaction"]
+        Frontend["Frontend UI (Next.js)"]
+  end
+ subgraph Backend["Backend Services"]
+        Server["Express Server"]
+        PoolAnalytics["LP Data Aggregator"]
+        IDWorker["Investment Decision Worker"]
+        InvestmentDecision["Blockchain Interaction Service"]
+        PostgreSQL
+        
+  end
+ subgraph AssetHub["Asset Hub (Substrate)"]
+        AssetsPallet["Liquidity Provider/Vault Contract"]
+  end
+ subgraph Relayers["Cross-Chain Communication"]
+        XCMRelayer["XCM Message Relayer"]
+  end
+ subgraph XCMProxyComponentS["XCM Proxy Components"]
+        PositionTracking["Position Tracking"]
+        BalanceManager["Token Balance Manager"]
+        RangeCalculator["Tick Range Calculator"]
+  end
+ subgraph Moonbeam["Moonbeam Parachain"]
+        XCMProxy["XCM Proxy Contract"]
+        XCMProxyComponentS
+  end
+ subgraph DEXes["DEX Pools"]
+        AlgebraPools["Algebra Pools"]
+  end
+    Frontend -- Deposits/Withdraws assets --> AssetsPallet
+    Frontend -- Sets investment preferences --> Server
+    XCMRelayer -- Delivers XCM messages --> XCMProxy
+    XCMProxy -- Uses --> PositionTracking & BalanceManager & RangeCalculator
+    XCMProxy -- Provides liquidity to --> AlgebraPools
+    AssetsPallet -- XCM asset transfer --> XCMRelayer
+    XCMRelayer -- Delivers assets --> XCMProxy
+    XCMProxy -- Transfers back assets/rewards --> XCMRelayer
+    XCMRelayer -- Delivers assets back --> AssetsPallet
+    InvestmentDecision -- Issues XCM Transfer Calls --> AssetsPallet
+    AssetsPallet -- Issues XCM Messages --> XCMRelayer
+    Frontend -- Reads Position Status --> XCMProxy
+    InvestmentDecision -- Reads Position Status --> XCMProxy
+    IDWorker -- Issue Decisions --> InvestmentDecision
+    PostgreSQL -- Provide Positions & User Preferences Data --> IDWorker
+    Server --> IDWorker
+    PoolAnalytics -- Provide Pool Data --> IDWorker
+```
+
+Yap About the way contracts work (Users deposited tokens can only be swapped/Provided as liquidity in the contract definition)
+
 - Any PoC/MVP or other relevant prior work or research on the topic
-- Attach a link to github (Add explanation)
+  [Our Github Project link](https://github.com/gabikreal1/PolkadotHack2025)
+  Minimal PoC, with mock frontend,mock backend and simple contracts, using XCM.
 - Mockups/designs of any UI components
-- Attach a link to youtube/add new components.
+  Will need to add couple of new components (Gabriel)
+  [Video to the Demo](https://www.youtube.com/watch?v=9bX0Up0pLww&feature=youtu.be)
 - Data models / API specifications of the core functionality
-- Users,Positions,Pools,Decisions
+Refine it with Claude (Gabriel)
+Users (Wallet, Balance, Token, UserPreferencesID), 
+UserPreferences(Minimum APY, Max Allocation Per Pool, UserCoins, Risk Tolerance, TakeProfit, StopLoss)
+*Transactions (Check with claude, could get it of blockchain)
+Positions(UserID,PoolID,Amount1,Amount2,TokenID1,TokenID2,TimeStamp,StopLoss,TakeProfit)
+Pools(PoolAddress,TokenID1,TokenID2,24hrVolume,TVL,DEXID)
+Dexes(DexAddress,ChainAddress)
+*Decisions (Check with Claude)
+Coins (CoinAddress, MarketCap, Ticker, LatestPrice)
+
+Api specs (unkown, yap potential api with claude)
+
 - What your project is *not* or will *not* provide or implement
   - This is a place for you to manage expectations and clarify any limitations
+  - Decisions are not made on web3, we do won't implement zkProofs of decisions computations in the MVP.
+  - We will do the MVP only with dexes that provide data via API.
   - (Its not full add later) Chains/Dexes + simple rebalancing/decision making engine
+  - Think of more limitations
 
 ### 🧩 Ecosystem Fit
 
