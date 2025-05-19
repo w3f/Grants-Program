@@ -17,17 +17,19 @@
 
 - Pitch Deck: [https://www.canva.com/design/DAGn5plRum0/9_t-GuUGFxGAzDnFmNgfxg/edit](https://www.canva.com/design/DAGn5plRum0/9_t-GuUGFxGAzDnFmNgfxg/edit?utm_content=DAGn5plRum0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
+- <a id="video-pitch"> Video Pitch</a>: https://www.youtube.com/watch?v=pzqG57ep1mI
+
 ### 🔍 Project Details
 
-We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
+Mobile App and Dashboard UI: https://www.notion.so/Polkadot-Fast-Grants-Application-App-UI-1f8611f020d780be8a63ea729e55d9c1?pvs=4
 
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- Any PoC/MVP or other relevant prior work or research on the topic
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and clarify any limitations
+We demonstrate a working prototype in the [video pitch](#video-pitch)
+
+- Tech Stack
+
+  - Landing Page: NextJS, TailwindCSS
+  - Application: React Native, Privy, RNR UI
+  - Backend: NestJS, Viem, Supabase
 
 ### 🧩 Ecosystem Fit
 
