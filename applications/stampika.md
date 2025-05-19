@@ -15,15 +15,13 @@
 
 - This project aligns with the team’s core values of encouraging activity and movement. We strongly believe that there will be a strong shift in the world where people go offline and explore the outside world more.
 
-- Pitch Deck: [https://www.canva.com/design/DAGn5plRum0/9_t-GuUGFxGAzDnFmNgfxg/edit](https://www.canva.com/design/DAGn5plRum0/9_t-GuUGFxGAzDnFmNgfxg/edit?utm_content=DAGn5plRum0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
-- <a id="video-pitch"> Video Pitch</a>: https://www.youtube.com/watch?v=pzqG57ep1mI
+- Pitch Deck: https://www.canva.com/design/DAGnogxARvE/EC2ZigywHsxXm7_VCZytMA/edit?utm_content=DAGnogxARvE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ### 🔍 Project Details
 
 Mobile App and Dashboard UI: https://www.notion.so/Polkadot-Fast-Grants-Application-App-UI-1f8611f020d780be8a63ea729e55d9c1?pvs=4
 
-We demonstrate a working prototype in the [video pitch](#video-pitch)
+We demonstrate a working prototype here: https://www.youtube.com/watch?v=pzqG57ep1mI
 
 - Tech Stack
 
@@ -106,7 +104,7 @@ We developed a prototype Android Mobile App at EasyA Consensus Hackathon. Stampi
 | 0d.    | Article                                                | We will publish an **article** on our website that explains what was done/achieved as part of the grant.                                                                                                                                                                           |
 | 1.     | Branding Design + UI Revamp                            | We will create a branding guide for Stampika and revamp UI, creating components according to our new design system.                                                                                                                                                                |
 | 2.     | Landing Page                                           | We will create a landing page according to the brand design to introduce Stampika and its features. This will be the front of our project and will be shared to other people who are interested in our project.<br><br>\- Features of Stampika<br>\- Waiting List subscription<br> |
-| 3.     | Mobile App Development                                 | We will create work on a more scalable mobile app, both for IOS and Android                                                                                                                                                                                                        |
+| 3.     | Mobile App Development                                 | We will work on creating a more scalable mobile app, both for IOS and Android. We faced some Build issues due to version mismatch while integrating with Privy, hence we plan to re-setup the mobile app.                                                                          |
 | 4.     | User Management System<br>(With Gmail and Wallets)<br> | We will integrate Privy into our application to allow users to login and seamlessly create a blockchain address for them. Users willa also be bale to<br><br>\- Gmail Login<br>\- Other Wallets<br>                                                                                |
 | 5.     | Designing NFC Sticker Stamps                           | We will design and produce our custom NFC Sticker Stamps with our branding similar to below<br><br><br>[https://nfctagify.com/cdn/shop/files/STICKER_BIG_R.jpg?v=1723041047](https://nfctagify.com/cdn/shop/files/STICKER_BIG_R.jpg?v=1723041047)                                  |
 | 6.     | Integrate Social Timeline                              | The social timeline feature will allow users to view stamps other people have collected.<br><br>This will be integrated with our backend system.<br><br>\- Stamps Collected Database<br>\- Optional Collection Message on post<br>                                                 |
@@ -124,7 +122,7 @@ Please provide a breakdown of your budget by milestone:
 | 2         | 0c, 0d, 5, 6, 7, 8    | $5,000      | 1.5 months           |
 | **Total** |                       | **$10,000** | **3 months**         |
 
-- 300 hours of Software Development work at $25 / hour
+- 295 hours of Software Development work at $25 / hour
 - 100 hours of Business Development work at $25 / hour
 
 ### Additional Costs
