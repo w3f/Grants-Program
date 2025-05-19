@@ -2,13 +2,13 @@
 
 ## 🌟 Project Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tagline (one sentence summary)
 - A brief description of your project
+  (Theo Yap)
 - An indication of how your project relates to / integrates into Polkadot
+  (Theo Yap)
 - An indication of why your team is interested in creating this project
-- (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
+  (Theo Yap)
+- (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/) (We may do it)
 
 ### 🔍 Project Details
 
@@ -201,18 +201,18 @@ This section should break the development roadmap down into milestones and deliv
 
 ### Overview
 
-- **Estimated Duration:** Duration of the whole project (maximum 3 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project
-- **Total Costs:** Requested amount in USD for the whole project (maximum $10,000 USD)
+- **Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):**  2 Full-Time Equivalent.
+- **Total Costs:** $7500-$10000
 
 > Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense (Research Into that (Gabriel)) |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... (Via Github Pages) (Contract docs (Functions ETC, Provide Backend Docs, Fontnend Docs, and User Docs) |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. (Manual Testing, Extensive Unit Tests) |
+| 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. (Publish on Medium,X) |
 | 1. | Feature X | We will create a feature that will... (Please describe in detail) |
 | 2. | Feature Y | The Y feature will... (Please describe in detail) |
 | 3. | Feature Z | The Z feature will... (Please describe in detail) |
@@ -234,15 +234,17 @@ Make sure you show clearly what the funding is going towards (e.g. 30 hours of a
 Please include:
 
 - How you intend to continue development after the Fast-Grant
+- (Rashad Yap)
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
+- (Theo Yap) (Maybe mention
 - Your vision for the project's growth and impact in the Polkadot ecosystem
+- (Theo Yap)
 
 ## ℹ️ Additional Information
 
 Here you can add any additional information that you think is relevant to this application, such as:
 
-- Work you have already done
-- If there are any other teams who have already contributed to the project
-- Other funding you may have applied for
+- Work you have already done (Remention with claude) 
+- Other funding you may have applied for (Maybe mention Moonbeam)
 
 Remember that the Fast-Grants Programme is designed as a first step for promising projects. We're looking for projects that can continue to grow beyond this initial funding.
