@@ -13,13 +13,16 @@
 
 - We will be deploying the Stamp Contracts (Modified ERC721) on Polkadot Hub and sponsor users with their gas fees through our backend. This will help with onboarding masses to Polkadot as we would only be using blockchain under the hood, abstracting away the complicated part of blockchain.
 
-- This project aligns with the team’s core values of encouraging activity and movement. We strongly believe that there will be a strong shift in the world where people go offline and explore the outside world more.
+- This project aligns with the team’s core values of encouraging activity and movement. In a world where AI-driven productivity increasingly reduces the human need for traditional work, there’s been a noticeable long-term shift in investment toward the entertainment and experience economy. At the heart of this trend lies a paradox: as technology accelerates, so does the human longing for nature, authenticity, and offline experiences. That’s precisely the space we’re targeting.
 
-- Pitch Deck: https://www.canva.com/design/DAGnogxARvE/EC2ZigywHsxXm7_VCZytMA/edit?utm_content=DAGnogxARvE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+- Pitch Deck: https://www.canva.com/design/DAGnogxARvE/EC2ZigywHsxXm7_VCZytMA/edit
 
 ### 🔍 Project Details
 
-Mobile App and Dashboard UI: https://www.notion.so/Polkadot-Fast-Grants-Application-App-UI-1f8611f020d780be8a63ea729e55d9c1?pvs=4
+Mobile UI
+| Empty Home Page  | Full Home Page  | Social Page  | Profile Page  |
+|---|---|---|---|
+|  ![Empty Home Page](https://i.imgur.com/PNWVr7l.png) |![Full Home Page](https://i.imgur.com/r9vDTqQ.png)   |  ![Social Page](https://i.imgur.com/z1Lq4MW.png) |  ![Profile Page](https://i.imgur.com/OQwEGHw.png) |
 
 We demonstrate a working prototype here: https://www.youtube.com/watch?v=pzqG57ep1mI
 
