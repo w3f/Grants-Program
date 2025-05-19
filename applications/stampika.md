@@ -31,6 +31,10 @@ We demonstrate a working prototype in the [video pitch](#video-pitch)
   - Application: React Native, Privy, RNR UI
   - Backend: NestJS, Viem, Supabase
 
+- Architecture
+  - Using a monorepo structure: we have will have `contracts`, `backend` and `frontend`
+  - NFC scans from the mobile app will be handled by the frontend, which makes an API call to the backend to mint an NFT on chain.
+
 ### 🧩 Ecosystem Fit
 
 Stampika is an application is built on Polkadot Hub. It is designed for avid explorers and travel enthusiasts who delight in visiting landmarks—whether on domestic adventures or overseas getaways. Inspired by traditions such as Japan’s iconic stamp-collecting culture, where travelers collect physical stamps in notebooks, Stampika brings this experience into the digital age.
@@ -120,10 +124,13 @@ Please provide a breakdown of your budget by milestone:
 | 2         | 0c, 0d, 5, 6, 7, 8    | $5,000      | 1.5 months           |
 | **Total** |                       | **$10,000** | **3 months**         |
 
+- 300 hours of Software Development work at $25 / hour
+- 100 hours of Business Development work at $25 / hour
+
 ### Additional Costs
 
-- iOS Developer Pass
-- Google Play License
+- iOS Developer Pass $99.99
+- Google Play License $25
 - Hosting Fees
 - Subsidising Gas Fees
 
