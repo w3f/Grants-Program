@@ -37,7 +37,7 @@ We demonstrate a working prototype here: https://www.youtube.com/watch?v=pzqG57e
   - We will have the following repositories `contracts`, `backend`, `frontend` and `landing-page`
   - NFC scans from the mobile app will be handled by the frontend, which makes an API call to the backend to mint an NFT on chain.
  
-We will be working on abstracting blockchain as much as possible.
+We will be working on abstracting blockchain as much as possible. We will only be launching on testnet for our pilot testing. 
  
 We will not include the data analysis dashboard and related endpoints for the Tourism Boards in this Fast Grant and will leave that as future work. 
 
@@ -98,6 +98,12 @@ We developed a prototype Android Mobile App at EasyA Consensus Hackathon. stampi
 
 ## 📅 Development Roadmap
 
+### Success KPI (By End of Pilot Testing) 
+
+- 25 Users onboarded
+- 25 Stamps collected
+- 3 Landmarks collaborated with (Live NFC Stamps available to be collected)
+
 ### Overview
 
 - **Estimated Duration:** 3 months
@@ -113,7 +119,7 @@ We developed a prototype Android Mobile App at EasyA Consensus Hackathon. stampi
 | 1.     | Branding Design + UI Revamp                            | We will create a branding guide for stampika and revamp UI, creating components according to our new design system.                                                                                                                                                                |
 | 2.     | Landing Page                                           | We will create a landing page according to the brand design to introduce stampika and its features. This will be the front of our project and will be shared to other people who are interested in our project.<br><br>\- Features of stampika<br>\- Waiting List subscription<br> |
 | 3.     | Mobile App Development                                 | We will work on creating a more scalable mobile app, both for IOS and Android. We faced some Build issues due to version mismatch while integrating with Privy, hence we plan to re-setup the mobile app.                                                                          |
-| 4.     | User Management System<br>(With Gmail and Wallets)<br> | We will integrate Privy into our application to allow users to login and seamlessly create a blockchain address for them. Users will also be able to add their name, age and other information in the settings. <br><br>\- Gmail Login<br>\- Other Wallets<br>                                                                                |
+| 4.     | User Management System<br>(With Gmail and other OAuths)<br> | We will integrate Privy into our application to allow users to login and seamlessly create an embedded blockchain address for them. Users will also be able to add their name, age and other information in the settings. <br><br>\- Gmail Login<br>\- Telegram / Wallet Login<br>                                                                                |
 | 5.     | Designing NFC Sticker Stamps                           | We will design and produce our custom NFC Sticker Stamps with our branding similar to below<br><br><br><img src="https://nfctagify.com/cdn/shop/files/STICKER_BIG_R.jpg" width="350"/>|
 | 6.     | Integrate Social Timeline                              | The social timeline feature will allow users to view stamps other people have collected.<br><br>This will be integrated with our backend system.<br><br>\- Stamps Collected Database<br>\- Optional Collection Message on post<br>                                                 |
 | 7.     | Integrate Friends Feature                              | This feature will build on top of the Social Timeline feature where users can now add friends and make their account private so their stamps are only shared with other friends.<br><br>\- Friend Requests<br>\- Private Account Feature<br>                                       |
