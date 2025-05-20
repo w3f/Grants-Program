@@ -4,12 +4,12 @@
 
 ## 🌟 Project Overview
 
-- stampika lets travellers mint NFT stamps from real-world visits through NFC Tags - building digital identity while helping sites engage and track visitors
-- The 2 key stakeholders of our project would be the users (travellers) and organisations (tourism board, landmark owners).
+- stampika lets travelers mint NFT stamps from real-world visits through NFC Tags - building digital identity while helping sites engage and track visitors
+- The 2 key stakeholders of our project would be the users (travelers) and organizations (tourism board, landmark owners).
 
 - We would like to bring the social experience at the end of travels where people share where they have been with friends and families online. Users would be to view other people’s stamps and when they have collected them as they are publicly on the blockchain.
 
-- An NFC Sticker Tag would be placed at landmarks and users would be able to scan the NFC Tag and instantly claim a stamp, similar to a proof-of-location. We would then provide organisations with information of when users visit, allowing them to obtain more data points for boosting visits.
+- An NFC Sticker Tag would be placed at landmarks and users would be able to scan the NFC Tag and instantly claim a stamp, similar to a proof-of-location. We would then provide organizations with information of when users visit, allowing them to obtain more data points for boosting visits.
 
 - We will be deploying the Stamp Contracts (Modified ERC721) on Polkadot Hub and sponsor users with their gas fees through our backend. This will help with onboarding masses to Polkadot as we would only be using blockchain under the hood, abstracting away the complicated part of blockchain.
 
@@ -39,7 +39,7 @@ We demonstrate a working prototype here: https://www.youtube.com/watch?v=pzqG57e
  
 We will be working on abstracting blockchain as much as possible.
  
-We will not include the data analysis dashbaord and related endpoints for the Tourism Boards in this Fast Grant and will leave that as future work. 
+We will not include the data analysis dashboard and related endpoints for the Tourism Boards in this Fast Grant and will leave that as future work. 
 
 ### 🧩 Ecosystem Fit
 
