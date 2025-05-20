@@ -31,10 +31,15 @@ We demonstrate a working prototype here: https://www.youtube.com/watch?v=pzqG57e
   - Landing Page: NextJS, TailwindCSS
   - Application: React Native, Privy, RNR UI
   - Backend: NestJS, Viem, Supabase
+  - Contracts: Hardhat, Solidity
 
 - Architecture
-  - Using a monorepo structure: we have will have `contracts`, `backend` and `frontend`
+  - We will have the following repositories `contracts`, `backend`, `frontend` and `landing-page`
   - NFC scans from the mobile app will be handled by the frontend, which makes an API call to the backend to mint an NFT on chain.
+ 
+We will be working on abstracting blockchain as much as possible.
+ 
+We will not include the data analysis dashbaord and related endpoints for the Tourism Boards in this Fast Grant and will leave that as future work. 
 
 ### 🧩 Ecosystem Fit
 
@@ -45,7 +50,7 @@ stampika addresses the need for:
 - **Proof of Location & Attendance**: Tourism companies can leverage stampika to authenticate a user’s visit to specific landmarks. This is particularly valuable for implementing loyalty programs or gamified travel experiences, where visitors earn rewards for exploring multiple locations.
 - **Actionable Visitor Insights**: By capturing scan data, stampika channels anonymized travel patterns and behavior to relevant organizations. These insights can inform marketing strategies, optimize tourist flows, and support cultural and urban planning efforts.
 
-There aren’t any similar projects in the Polkadot Ecosystem (referencing https://parachains.info/#projects). We believe that this is one of the pioneer efforts to apply Web3 to the tourism industry.
+There aren’t any similar projects in the Polkadot Ecosystem (referencing https://parachains.info/#projects). We believe that this is one of the pioneer efforts to apply Web3 to the tourism industry. This could be due to the fact that this project is quite dependent on our business development efforts and the fact that NFC libraries are not as easy to work with in the past.
 
 ## 👥 Team
 
@@ -108,8 +113,8 @@ We developed a prototype Android Mobile App at EasyA Consensus Hackathon. stampi
 | 1.     | Branding Design + UI Revamp                            | We will create a branding guide for stampika and revamp UI, creating components according to our new design system.                                                                                                                                                                |
 | 2.     | Landing Page                                           | We will create a landing page according to the brand design to introduce stampika and its features. This will be the front of our project and will be shared to other people who are interested in our project.<br><br>\- Features of stampika<br>\- Waiting List subscription<br> |
 | 3.     | Mobile App Development                                 | We will work on creating a more scalable mobile app, both for IOS and Android. We faced some Build issues due to version mismatch while integrating with Privy, hence we plan to re-setup the mobile app.                                                                          |
-| 4.     | User Management System<br>(With Gmail and Wallets)<br> | We will integrate Privy into our application to allow users to login and seamlessly create a blockchain address for them. Users will also be able to<br><br>\- Gmail Login<br>\- Other Wallets<br>                                                                                 |
-| 5.     | Designing NFC Sticker Stamps                           | We will design and produce our custom NFC Sticker Stamps with our branding similar to below<br><br><br>[https://nfctagify.com/cdn/shop/files/STICKER_BIG_R.jpg?v=1723041047](https://nfctagify.com/cdn/shop/files/STICKER_BIG_R.jpg?v=1723041047)                                  |
+| 4.     | User Management System<br>(With Gmail and Wallets)<br> | We will integrate Privy into our application to allow users to login and seamlessly create a blockchain address for them. Users will also be able to add their name, age and other information in the settings. <br><br>\- Gmail Login<br>\- Other Wallets<br>                                                                                |
+| 5.     | Designing NFC Sticker Stamps                           | We will design and produce our custom NFC Sticker Stamps with our branding similar to below<br><br><br><img src="https://nfctagify.com/cdn/shop/files/STICKER_BIG_R.jpg" width="350"/>|
 | 6.     | Integrate Social Timeline                              | The social timeline feature will allow users to view stamps other people have collected.<br><br>This will be integrated with our backend system.<br><br>\- Stamps Collected Database<br>\- Optional Collection Message on post<br>                                                 |
 | 7.     | Integrate Friends Feature                              | This feature will build on top of the Social Timeline feature where users can now add friends and make their account private so their stamps are only shared with other friends.<br><br>\- Friend Requests<br>\- Private Account Feature<br>                                       |
 | 8.     | Publish Test Application                               | We will publish the application on TestFlight iOS and Google Play Console or available as an .apk file.<br><br>Users will be able to download a beta version of the app.<br>                                                                                                       |
@@ -122,18 +127,20 @@ Please provide a breakdown of your budget by milestone:
 | Milestone | Deliverables          | Cost (USD)  | Estimated Completion |
 | --------- | --------------------- | ----------- | -------------------- |
 | 1         | 0a, 0b, 1, 2, 3, 4, 5 | $5,000      | 1.5 months           |
-| 2         | 0c, 0d, 5, 6, 7, 8    | $5,000      | 1.5 months           |
+| 2         | 0c, 0d, 5, 6, 7, 8, 9 | $5,000      | 1.5 months           |
 | **Total** |                       | **$10,000** | **3 months**         |
 
-- 295 hours of Software Development work at $25 / hour
-- 100 hours of Business Development work at $25 / hour
+- 260 hours of Software Development work at $25 / hour = $6,500
+- 100 hours of Business Development work at $25 / hour = $2,500
 
 ### Additional Costs
-
-- iOS Developer Pass $99.99
+- iOS Developer Pass $100
 - Google Play License $25
-- Hosting Fees
-- Subsidising Gas Fees
+- Hosting Server Fees $250
+- Custom NFC Tags $100
+- Transport Fees to Landmark Partners $525
+
+Total = $10,000
 
 ## 🔮 Future Plans
 
