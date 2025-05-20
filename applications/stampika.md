@@ -88,7 +88,7 @@ Individual GitHub
 
 ### Team's experience
 
-We are all final year School of Computing students from National University of Singapore. Collectively, we have won prizes at 7 hackathons in the past. 3 of our members are part of NUS Overseas College, a very selective programme from NUS that provide opportunities for studnets to intern in start-up companies in leading entrepreneurial hotspots across the world - in our case, it’s Toronto.
+We are all final year School of Computing students from National University of Singapore. Collectively, we have won prizes at 7 hackathons in the past. 3 of our members are part of NUS Overseas College, a very selective programme from NUS that provide opportunities for students to intern in start-up companies in leading entrepreneurial hotspots across the world - in our case, it’s Toronto.
 
 Our team has also worked for Web3 companies like CoinGecko, Mavennet while also contributing to open source blockchain repositories like Cosmos-sdk.
 
