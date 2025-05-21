@@ -76,6 +76,9 @@ We expect applicants to have a solid idea about the project's expected final sta
 - Documentation of core components, protocols, architecture, etc. to be deployed
 - Any PoC/MVP or other relevant prior work or research on the topic
 - Mockups/designs of any UI components
+```
+We had created a demo video that goes how Eunoia works and UI components in https://www.loom.com/share/712dbee1166144769c994e3c1ca12746?sid=3d42edec-e899-4bf7-a237-efde4cfce395
+```
 - Data models / API specifications of the core functionality
 - What your project is *not* or will *not* provide or implement
   - This is a place for you to manage expectations and clarify any limitations
@@ -147,11 +150,19 @@ This section should break the development roadmap down into milestones and deliv
 - The maximum grant amount is **$10,000 USD** per application (up to **$15,000 USD** per project in exceptional cases)
 - You will only receive payment after successful milestone delivery
 
+### Success KPIs
+- Smart contract launched on Polkadot mainnet
+- Web application launched 
+- Compass AI launched
+- 3 Charities onboarded
+- 20 Unique donor wallets 
+- 2 Marketing/Giving events
+
 ### Overview
 
-- **Estimated Duration:** Duration of the whole project (maximum 3 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project
-- **Total Costs:** Requested amount in USD for the whole project (maximum $10,000 USD)
+- **Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):** 1.5 (3 members x 50% part-time)
+- **Total Costs:** $8,500 USD
 
 > Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
 
@@ -161,9 +172,12 @@ This section should break the development roadmap down into milestones and deliv
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
-| 1. | Feature X | We will create a feature that will... (Please describe in detail) |
-| 2. | Feature Y | The Y feature will... (Please describe in detail) |
-| 3. | Feature Z | The Z feature will... (Please describe in detail) |
+| 1. | Mainnet Smart Contract Launch| Deploy Eunoia on a Polkadot parachain (e.g. Moonbeam) with lastest smart contracts|
+| 2. | Mainnet UI + API Launch| Deploy Eunoia with all UI and APIs complete and launch for Polkadot mainnet|
+| 3. | Compass Launch| Compass AI agent is the tool to support users to find the charities to donate. It will be complete and launch along with the mainnet instance|
+| 4. | Charities Onboarding| With our connections and over the hacakthon we had reached out few charities already. We want to complete the onboarding of them into Eunoia with the mainnet launched|
+| 5. | Users Onboarding| After charities gets onboarded we will start working with universities, clubs, and organizations to promote the giving towards the causes|
+| 6. | Eunoia Documents| A lot of users will new to web3 giving platform (Eunoia). So we provide the documents including white paper and tutorials to guide these new users through|
 
 ### 💰 Budget Breakdown
 
@@ -171,11 +185,23 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | Features X, Y | $5,000 | 1.5 months |
-| 2 | Feature Z | $5,000 | 1.5 months |
-| **Total** | | **$10,000** | **3 months** |
+| 1 | 0a, 0b, 1, 2, 3 | $5,000 | 1.5 months |
+| 2 | 0c, 0d, 4, 5, 6 | $3,500 | 1.5 months |
+| **Total** | | **$8,500** | **3 months** |
 
-Make sure you show clearly what the funding is going towards (e.g. 30 hours of a full time employee at $X / hour).
+Resources
+- 100 hrs smart contracts + UI development and launch (Jimmy) =  100hrs * 25$/hr = $2,500
+- 100 hrs AI agent + backend api development and launch (Randy) =  100hrs * 25$/hr = $2,500
+- 100 hrs business devevelopment, onboarding charities & users (Alex) =  100hrs * 25$/hr = $2,500
+- $1,000 for tools, domains, gas fees = $1,000
+  - $200 for hosting APIs servers
+  - $10 for domain
+  - $50 for gas fees to onboard initital smart contract, users, and charities
+  - $100 for AI tokens for the agents
+  - $180 for dev tool subscription
+  - $105 for X Premium subscription
+  - $355 for marketing events (e.g merch, 1:1 donation matching)
+
 
 ## 🔮 Future Plans
 
