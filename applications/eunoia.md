@@ -3,7 +3,7 @@
 ## 🌟 Project Overview
 
 **Tagline:**  
-> ****Eunoia is a full-stack AI giving platform, rebuilding charity from the ground up using blockchain transparency and intelligent agents.
+> **Eunoia is a full-stack AI giving platform, rebuilding charity from the ground up using blockchain transparency and intelligent agents.**
 
 **Eunoia in a Nutshell**  
 - **Mission** – “Fix charity with code.” AI agents (Compass) route each donor to vetted causes and log every cent on-chain (Aptos → now Polkadot).  
