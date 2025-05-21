@@ -157,37 +157,47 @@ Our project is built to fill this gap—bridging the technical challenge with a 
 
 ## 👥 Team
 
-- **Team Name:** Name of your team. If you apply as a legal entity, please use its name.
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email
-- **Website:** Your website, GitHub org, blog, or similar
+- **Team Name:** LiquiDOT
+- **Contact Name:** Gabriel Bandman
+- **Contact Email:** gabrielsoftware04@gmail.com
+- **Website:** (add later)
 
 ### Team members
 
 Please list the legal name of all grant beneficiaries. Solo developers (1-person teams) are eligible for funding.
 
+1. Rashad Hosseini
+2. Gabriel Bandman
+3. Fedir Maliarenko
+
 #### LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- [Rashad Hosseini](https://www.linkedin.com/in/rashad-hosseini/)
+- [Gabriel Bandman](https://www.linkedin.com/in/gabriel-b-384581265/)
+- [Fedir Maliarenko (Telegram) ](t.me/fyodortg)
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
+- [Liquidot Repository](https://github.com/gabikreal1/PolkadotHack2025)
 
 Please also provide the GitHub accounts of all team members:
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- [Rashad Hosseini](https://github.com/rashad-h)
+- [Gabriel Bandman](https://github.com/gabikreal1)
+- [Fedir Maliarenko](https://github.com/fedyacrypto)
+  
 
 ### Team's experience
 
 Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
 
+(Each of us, should write individual experience, then we could combine into some ending statement)
+
 ## 📊 Development Status
 
 If you've already started implementing your project, please provide a link and a description of the code. Otherwise, please provide some documentation on the research and other work you have conducted before applying.
+
+(Remention from project details)
 
 ## 📅 Development Roadmap
 
@@ -201,9 +211,9 @@ This section should break the development roadmap down into milestones and deliv
 
 ### Overview
 
-- **Estimated Duration:** 3 months
+- **Estimated Duration:** 8 weeks
 - **Full-Time Equivalent (FTE):**  2 Full-Time Equivalent.
-- **Total Costs:** $7500-$10000
+- **Total Costs:** $9600
 
 > Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
 
@@ -228,6 +238,9 @@ Please provide a breakdown of your budget by milestone:
 | **Total** | | **$10,000** | **3 months** |
 
 Make sure you show clearly what the funding is going towards (e.g. 30 hours of a full time employee at $X / hour).
+
+1 x 30 hours of full-time employee at $20/hour
+2 x 15 hours of part-time employee at $20/hour
 
 ## 🔮 Future Plans
 
