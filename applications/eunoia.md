@@ -1,9 +1,14 @@
-#  <img src="https://github.com/user-attachments/assets/2fa359f1-b985-4a02-af60-c45fb14422f8" alt="Eunoia Logo" height="50"/> Eunoia
+<p align="center"> <img src="https://github.com/user-attachments/assets/a6dcd231-63b3-492d-b3d5-42c15c321a6e" alt="Eunoia Logo"/>
 
 ## 🌟 Project Overview
 
 **Tagline:**  
 > **Eunoia is a full-stack AI giving platform, rebuilding charity from the ground up using blockchain transparency and intelligent agents.**
+
+**Description:**  
+Most startups sell AI tools to existing incumbents, but following YCombinator's ["full-stack AI"](https://www.ycombinator.com/rfs) approach, we're creating a new kind of charity platform entirely run by AI agents and decentralized smart contracts.
+
+Our AI agents, **Compass**, autonomously scan, rank, and recommend causes aligned with a donor’s values — all in real time. Every donation is tracked on-chain from wallet to charity to real-world spend, ensuring every penny is accounted for.
 
 **Eunoia in a Nutshell**  
 - **Mission** – “Fix charity with code.” AI agents (Compass) route each donor to vetted causes and log every cent on-chain (Aptos → now Polkadot).  
@@ -11,11 +16,6 @@
 - **Solution** – Multi-chain donation contracts + real-time tracing + 0.20% optional fee.  
 - **Status** – Aptos MVP live; ink! v6 draft contract; Polkadot SDK wired into React front-end; demo Loom online; won Polkadot prize at Consensus hackathon.  
 - **Team** – 5 founders covering AI, full-stack, Rust/Web3, PM, finance; 12+ prior agents/contracts built; open-source repo public.
-
-**Description:**  
-Most startups sell AI tools to existing incumbents, but following YCombinator's ["full-stack AI"](https://www.ycombinator.com/rfs) approach, we're creating a new kind of charity platform entirely run by AI agents and decentralized smart contracts.
-
-Our AI agents, **Compass**, autonomously scan, rank, and recommend causes aligned with a donor’s values — all in real time. Every donation is tracked on-chain from wallet to charity to real-world spend, ensuring every penny is accounted for.
 
 **Key Features:**  
 - Radical Transparency  
@@ -29,7 +29,12 @@ Our AI agents, **Compass**, autonomously scan, rank, and recommend causes aligne
 **Why Polkadot:**  
 We’re deploying to **Moonbeam**, allowing DOT and native stablecoins to be sent directly to vetted charities. We’ll use **Subscan** for event indexing and **Plaza Hub** for donation stats. Future integrations may include **KILT** for charity verification and **XCM** for multichain routing.
 
-- (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
+**The Pitch**  
+[1-min video pitch](https://www.ycombinator.com/video/)
+
+
+![image](https://github.com/user-attachments/assets/c2a13979-1a4e-4a0d-a7c1-a53ea394c716)
+
 
 ### 🔍 Project Details
 
@@ -196,26 +201,26 @@ We’ve already built an MVP version of our application during the EasyA Hackath
 
 ### 💰 Budget Breakdown
 
-Please provide a breakdown of your budget by milestone:
+| Milestone | Key Deliverables | Cost (USD) | ETA |
+|-----------|------------------|------------|-----|
+| **1** | 0a - License • 0b - Documentation • 1 - ink! Smart Contract (testnet → mainnet) • 2 Wallet-connected UI | **$2,900** | Month 1 |
+| **2** | 3 -  Compass AI agent • Backend APIs (matching & search) | **$2,600** | Month 2 |
+| **3** | 0c - Testing + Guide • 0d - Article • 4 - Charity Onboarding • 5 - User Onboarding • 6 - Whitepaper & Tutorials | **$3,000** | Month 3 |
+| **Total** | — | **$8,500** | **3 months** |
 
-| Milestone | Deliverables | Cost (USD) | Estimated Completion |
-| --- | --- | --- | --- |
-| 1 | 0a, 0b, 1, 2, 3 | $5,000 | 1.5 months |
-| 2 | 0c, 0d, 4, 5, 6 | $3,500 | 1.5 months |
-| **Total** | | **$8,500** | **3 months** |
+---
 
-Resources
-- 100 hrs smart contracts + UI development and launch =  100hrs * 25$/hr = $2,500
-- 100 hrs AI agent + backend api development and launch =  100hrs * 25$/hr = $2,500
-- 100 hrs business devevelopment, onboarding charities & users =  100hrs * 25$/hr = $2,500
-- $1,000 for tools, domains, gas fees = $1,000
-  - $200 for hosting APIs servers
-  - $10 for domain
-  - $50 for gas fees to onboard initital smart contract, users, and charities
-  - $100 for AI tokens for the agents
-  - $180 for dev tool subscription
-  - $105 for X Premium subscription
-  - $355 for marketing events (e.g merch, 1:1 donation matching)
+#### 🧮 Resource Allocation (by milestone)
+
+| Milestone | Hours / Items | Amount |
+|-----------|---------------|--------|
+| **1** | 80 hrs ink! + UI dev @ $25/hr = $2,000  • 16 hrs docs = $400  • Hosting + testnet gas + domain = $500 | $2,900 |
+| **2** | 100 hrs Compass AI & backend @ $25/hr = $2,500  • AI inference credits = $100 | $2,600 |
+| **3** | 100 hrs testing, onboarding, content @ $25/hr = $2,500  • Marketing/events, X Premium, merch, extra gas = $500 | $3,000 |
+
+> **Why this split?**  
+> • Front-loads core infrastructure (Milestone 1), isolates the AI differentiator (Milestone 2), and reserves verification + go-to-market tasks for Milestone 3.  
+
 
 ## 🔮 Future Plans
 
