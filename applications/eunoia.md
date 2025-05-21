@@ -1,9 +1,9 @@
-# 📝 Name of your Project
+#  <img src="https://github.com/user-attachments/assets/2fa359f1-b985-4a02-af60-c45fb14422f8" alt="Eunoia Logo" height="50"/> Eunoia
 
 ## 🌟 Project Overview
 
 **Tagline:**  
-Eunoia is an AI-powered, multi-chain giving platform that combats charity fraud by providing real-time, on-chain donation transparency, low fees, and smart cause-matching agents.
+> ****Eunoia is a full-stack AI giving platform, rebuilding charity from the ground up using blockchain transparency and intelligent agents.
 
 **Eunoia in a Nutshell**  
 - **Mission** – “Fix charity with code.” AI agents (Compass) route each donor to vetted causes and log every cent on-chain (Aptos → now Polkadot).  
@@ -13,7 +13,9 @@ Eunoia is an AI-powered, multi-chain giving platform that combats charity fraud 
 - **Team** – 5 founders covering AI, full-stack, Rust/Web3, PM, finance; 12+ prior agents/contracts built; open-source repo public.
 
 **Description:**  
-Eunoia is an AI-powered, multi-chain giving platform fixing the broken charity system. We built Eunoia using smart AI agents called Compass that scan, rank, and recommend causes aligned with a donor’s values — all in real time. Every donation is tracked on-chain from wallet to charity to real-world spend, ensuring every penny is accounted for.
+Most startups sell AI tools to existing incumbents, but following YCombinator's ["full-stack AI"](https://www.ycombinator.com/rfs) approach, we're creating a new kind of charity platform entirely run by AI agents and decentralized smart contracts.
+
+Our AI agents, **Compass**, autonomously scan, rank, and recommend causes aligned with a donor’s values — all in real time. Every donation is tracked on-chain from wallet to charity to real-world spend, ensuring every penny is accounted for.
 
 **Key Features:**  
 - Radical Transparency  
@@ -26,8 +28,6 @@ Eunoia is an AI-powered, multi-chain giving platform fixing the broken charity s
 
 **Why Polkadot:**  
 We’re deploying to **Moonbeam**, allowing DOT and native stablecoins to be sent directly to vetted charities. We’ll use **Subscan** for event indexing and **Plaza Hub** for donation stats. Future integrations may include **KILT** for charity verification and **XCM** for multichain routing.
-
-
 
 - (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
 
