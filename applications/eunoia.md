@@ -108,12 +108,14 @@ Help us locate your project in the Polkadot landscape and what problems it tries
 - Jimmy Yan
 - Randy Haddad
 - Alex Salsali
+- Alejandro Garcia
 
 #### LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/in/jimmy-yan-jy/
 - https://www.linkedin.com/in/randyelh/
 - https://www.linkedin.com/in/alexsalsali/
+- https://www.linkedin.com/in/alejandrogarciapolo/
 
 ### Team Code Repos
 
@@ -124,6 +126,7 @@ Please also provide the GitHub accounts of all team members:
 - https://github.com/JY20
 - https://github.com/RandyHaddad
 - https://github.com/asalsali 
+- https://github.com/maestromaximo 
 
 ### Team's experience
 
@@ -142,14 +145,6 @@ We’ve already built an MVP version of our application during the EasyA Hackath
 
 ## 📅 Development Roadmap
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, please describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality.
-
-**Important notes:**
-- Each milestone is capped at **$5,000 USD**
-- Milestones must be delivered within **3 months** of approval
-- The maximum grant amount is **$10,000 USD** per application (up to **$15,000 USD** per project in exceptional cases)
-- You will only receive payment after successful milestone delivery
-
 ### Success KPIs
 - Smart contract launched on Polkadot mainnet
 - Web application launched 
@@ -157,6 +152,7 @@ This section should break the development roadmap down into milestones and deliv
 - 3 Charities onboarded
 - 20 Unique donor wallets 
 - 2 Marketing/Giving events
+- Whitepaper and tutorials available for community
 
 ### Overview
 
@@ -172,12 +168,12 @@ This section should break the development roadmap down into milestones and deliv
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
-| 1. | Mainnet Smart Contract Launch| Deploy Eunoia on a Polkadot parachain (e.g. Moonbeam) with lastest smart contracts|
-| 2. | Mainnet UI + API Launch| Deploy Eunoia with all UI and APIs complete and launch for Polkadot mainnet|
-| 3. | Compass Launch| Compass AI agent is the tool to support users to find the charities to donate. It will be complete and launch along with the mainnet instance|
-| 4. | Charities Onboarding| With our connections and over the hacakthon we had reached out few charities already. We want to complete the onboarding of them into Eunoia with the mainnet launched|
-| 5. | Users Onboarding| After charities gets onboarded we will start working with universities, clubs, and organizations to promote the giving towards the causes|
-| 6. | Eunoia Documents| A lot of users will new to web3 giving platform (Eunoia). So we provide the documents including white paper and tutorials to guide these new users through|
+| 1. | Mainnet Smart Contract Launch| Deploy Eunoia on a Polkadot parachain (e.g. Moonbeam) with lastest smart contracts, users able to donate.|
+| 2. | Mainnet UI + API Launch| Deploy Eunoia with all UI and APIs complete and launch for Polkadot mainnet, no errors during the user interaction.|
+| 3. | Compass Launch| Compass AI agent is the tool to support users to find the charities to donate. It will be complete and launch along with the mainnet instance. User are able obtain charities matches, 80% correct matching rate.|
+| 4. | Charities Onboarding| With our connections and over the hacakthon we had reached out few charities already. We want to complete the onboarding of them into Eunoia with the mainnet launched. Over 3 charties are onboarded on Eunoia platform.|
+| 5. | Users Onboarding| After charities gets onboarded we will start working with universities, clubs, and organizations to promote the giving towards the causes. With over 20 users onboarded and donate towards causes.|
+| 6. | Eunoia Documents| A lot of users will new to web3 giving platform (Eunoia). So we provide the documents including white paper and tutorials to guide these new users through. Whitepaper and tutorials documents are available to be viewed by the communtiy.|
 
 ### 💰 Budget Breakdown
 
@@ -190,9 +186,9 @@ Please provide a breakdown of your budget by milestone:
 | **Total** | | **$8,500** | **3 months** |
 
 Resources
-- 100 hrs smart contracts + UI development and launch (Jimmy) =  100hrs * 25$/hr = $2,500
-- 100 hrs AI agent + backend api development and launch (Randy) =  100hrs * 25$/hr = $2,500
-- 100 hrs business devevelopment, onboarding charities & users (Alex) =  100hrs * 25$/hr = $2,500
+- 100 hrs smart contracts + UI development and launch =  100hrs * 25$/hr = $2,500
+- 100 hrs AI agent + backend api development and launch =  100hrs * 25$/hr = $2,500
+- 100 hrs business devevelopment, onboarding charities & users =  100hrs * 25$/hr = $2,500
 - $1,000 for tools, domains, gas fees = $1,000
   - $200 for hosting APIs servers
   - $10 for domain
@@ -202,21 +198,21 @@ Resources
   - $105 for X Premium subscription
   - $355 for marketing events (e.g merch, 1:1 donation matching)
 
-
 ## 🔮 Future Plans
 
-Please include:
-
-- How you intend to continue development after the Fast-Grant
-- Any plans for seeking additional funding (other grants, VC funding, etc.)
-- Your vision for the project's growth and impact in the Polkadot ecosystem
+- Expansion: Launch Compass AI for deeper personalization, partner with faith-based donor networks, integrate stablecoin off-ramps.
+- Growth: Apply to Gitcoin, government, aptos grants, funding from universities to contiune the growth of the project.
+- Vision: Become the go-to transparent giving layer across multichain ecosystems and go to platform for giving for causes.
+- Goal: For this program we want to complete and launch Eunoia on mainnet, for the future our focus will be switching from product development to go to market strategies.
 
 ## ℹ️ Additional Information
 
-Here you can add any additional information that you think is relevant to this application, such as:
+- Built in 72 hours at Consensus EasyA Hackathon
+- Won the Polkadot integration challenge
+- Team has experience across blockchain, AI, product, and nonprofit ops
+- We believe Eunoia is the first Web3-native platform purpose-built for radically accountable giving
 
-- Work you have already done
-- If there are any other teams who have already contributed to the project
-- Other funding you may have applied for
+"Charity is broken. We're fixing it with code."
+
 
 Remember that the Fast-Grants Programme is designed as a first step for promising projects. We're looking for projects that can continue to grow beyond this initial funding.
