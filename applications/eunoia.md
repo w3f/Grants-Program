@@ -33,18 +33,18 @@ We’re deploying to **Moonbeam**, allowing DOT and native stablecoins to be sen
 
 ### 🔍 Project Details
 
-We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
+### Tech Stack  
 
-- An overview of the technology stack to be used
-```
-💻 Frontend (`eunoia_web`)
+💻 **Frontend:** (`eunoia_web`)
 - Framework & Libraries: React (Hooks, Context API)
 - UI Components: Material UI (MUI)
 - API Communication: Axios
 - State Management: React Context API, Component State
 - Blockchain Interaction: 
   - Polkadot: `@polkadot/api`, `@polkadot/extension-dapp`
-⚙️ Backend (`eunoia_backend`)
+
+
+⚙️ **Backend:** (`eunoia_backend`)
 - Framework: Django (Python)
 - API: Django REST Framework
 - Database: SQLite (development), PostgreSQL (production)
@@ -53,23 +53,37 @@ We expect applicants to have a solid idea about the project's expected final sta
 - AI/ML Integration:
   - Libraries: `sentence-transformers`, `scikit-learn`, `nltk`
   - Vector Database: FAISS or Pinecone
-🔗 Blockchain Integration (`Polkadot Network`)
+
+🔗 **Smart Contracts:** (`Polkadot Network`)
 - Language: ink! (Rust-based eDSL)
 - Smart Contract: `eunoia2`
 - Features:
   - Charity registration
   - Donations in native tokens
   - Event emission: `DonateEvent`, `CharityRegisteredEvent`
-```
+
+
+
+
+### Demo  
+- [Demo Video (Loom)](https://www.loom.com/share/712dbee1166144769c994e3c1ca12746?sid=3d42edec-e899-4bf7-a237-efde4cfce395)  
+- [GitHub Repo](https://github.com/JY20/eunoia)
+
+### API / Data Models  
+- `/donate` – trigger contract  
+- `/charities` – list charities  
+- `/match` – Compass AI match scores
+
+### Not Included  
+- Not an NFT project or DAO  
+- Not a pooled grant platform
+
+(NEEDS TO BE DONE STILL: AI) 
+- **AI in Tech Stack?:** sentence-transformers, sklearn  (What was used for AI Agents? OpenAI API)
 - Documentation of core components, protocols, architecture, etc. to be deployed
-- Any PoC/MVP or other relevant prior work or research on the topic
 - Mockups/designs of any UI components
-```
-We had created a demo video that goes how Eunoia works and UI components in https://www.loom.com/share/712dbee1166144769c994e3c1ca12746?sid=3d42edec-e899-4bf7-a237-efde4cfce395
-```
-- Data models / API specifications of the core functionality
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations
+
+
 
 ### 🧩 Ecosystem Fit
 
