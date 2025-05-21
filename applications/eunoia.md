@@ -15,7 +15,7 @@ Our AI agents, **Compass**, autonomously scan, rank, and recommend causes aligne
 - **Problem** – $7B/yr lost to fraud; 81% of donors distrust charities; legacy platforms take up to 5%.  
 - **Solution** – Multi-chain donation contracts + real-time tracing + 0.20% optional fee.  
 - **Status** – Aptos MVP live; ink! v6 draft contract; Polkadot SDK wired into React front-end; demo Loom online; won Polkadot prize at Consensus hackathon.  
-- **Team** – 5 founders covering AI, full-stack, Rust/Web3, PM, finance; 12+ prior agents/contracts built; open-source repo public.
+- **Team** – 4 founders covering AI, full-stack, Rust/Web3, PM, finance; 12+ prior agents/contracts built; open-source repo public.
 
 **Key Features:**  
 - Radical Transparency  
@@ -26,8 +26,11 @@ Our AI agents, **Compass**, autonomously scan, rank, and recommend causes aligne
 - Real-Time Impact Tracking  
 - Secure and Verifiable
 
-**Why Polkadot:**  
-We’re deploying to **Moonbeam**, allowing DOT and native stablecoins to be sent directly to vetted charities. We’ll use **Subscan** for event indexing and **Plaza Hub** for donation stats. Future integrations may include **KILT** for charity verification and **XCM** for multichain routing.
+**Why Polkadot:**
+Our team is more familiar with Rust, making our project naturally compatible with Polkadot’s ecosystem and developer tooling. This not only streamlines development for us but also opens access to thousands of users within the Polkadot network. By integrating with Polkadot, we enable users to donate any Polkadot-native assets, such as DOT, to charitable causes. Every donation will be transparently tracked on-chain, ensuring accountability and trust.
+
+**Why Eunoia:**
+
 
 **The Pitch**  
 [1-min video pitch](https://www.ycombinator.com/video/)
@@ -95,7 +98,7 @@ We’re deploying to **Moonbeam**, allowing DOT and native stablecoins to be sen
 **Where does this fit?**  
 - “DeFi-for-good” layer on Moonbeam  
 - First Polkadot-native donation protocol  
-- Widget-ready for Plaza/Polkadot-Hub
+- Widget-ready for Polkadot-Hub
 
 **Target Audience**  
 - Social-good DAOs  
