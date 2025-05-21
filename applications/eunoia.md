@@ -2,43 +2,31 @@
 
 ## 🌟 Project Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tagline (one sentence summary)
-
+**Tagline:**  
 Eunoia is an AI-powered, multi-chain giving platform that combats charity fraud by providing real-time, on-chain donation transparency, low fees, and smart cause-matching agents.
 
-- A brief description of your project
+**Eunoia in a Nutshell**  
+- **Mission** – “Fix charity with code.” AI agents (Compass) route each donor to vetted causes and log every cent on-chain (Aptos → now Polkadot).  
+- **Problem** – $7B/yr lost to fraud; 81% of donors distrust charities; legacy platforms take up to 5%.  
+- **Solution** – Multi-chain donation contracts + real-time tracing + 0.20% optional fee.  
+- **Status** – Aptos MVP live; ink! v6 draft contract; Polkadot SDK wired into React front-end; demo Loom online; won Polkadot prize at Consensus hackathon.  
+- **Team** – 5 founders covering AI, full-stack, Rust/Web3, PM, finance; 12+ prior agents/contracts built; open-source repo public.
 
-Eunoia is an AI-powered, multi-chain giving platform fixing the broken charity system. Every year, over $7B is lost to fraud, mismanagement, and opaque middlemen in the giving space. Traditional platforms charge up to 5% in fees, while 81% of donors report a lack of trust in nonprofits. Eunoia changes that by putting radical transparency at the core of giving.
+**Description:**  
+Eunoia is an AI-powered, multi-chain giving platform fixing the broken charity system. We built Eunoia using smart AI agents called Compass that scan, rank, and recommend causes aligned with a donor’s values — all in real time. Every donation is tracked on-chain from wallet to charity to real-world spend, ensuring every penny is accounted for.
 
-We built Eunoia using smart AI agents called Compass that scan, rank, and recommend causes aligned with a donor’s values — all in real time. Donors simply describe what matters to them, and our agents handle the rest. Every donation is tracked on-chain from wallet to charity to real-world spend, ensuring every penny is accounted for.
+**Key Features:**  
+- Radical Transparency  
+- AI-Powered Matching  
+- Direct Giving (no middlemen)  
+- Ultra-Low Fees  
+- Multi-Chain Support (Aptos + Polkadot)  
+- Real-Time Impact Tracking  
+- Secure and Verifiable
 
-Built initially on Aptos for fast, low-cost transactions and now expanding to Polkadot for its interoperability and cross-chain asset transfers, Eunoia ensures maximum transparency and accessibility for charities and donors worldwide. Smart contracts manage donations, fund distributions, and auditing, while our AI infrastructure filters, verifies, and optimizes cause matching based on donor preferences and impact data.
+**Why Polkadot:**  
+We’re deploying to **Moonbeam**, allowing DOT and native stablecoins to be sent directly to vetted charities. We’ll use **Subscan** for event indexing and **Plaza Hub** for donation stats. Future integrations may include **KILT** for charity verification and **XCM** for multichain routing.
 
-Key features include:
-
-Radical Transparency: All donations and fund flows recorded on-chain
-
-AI-Powered Matching: Agents match donors with causes in real time
-
-Direct Giving: No middlemen — funds go straight to verified charities or recipients
-
-Ultra-Low Fees: 0.20% optional “Amplify Impact” fee to fund platform growth
-
-Multi-Chain Support: Currently on Aptos and Polkadot, with more coming
-
-Real-Time Impact Tracking: Donors track their funds' journey and outcomes instantly
-
-Secure and Verifiable: Auditable smart contracts and verified recipient wallets
-
-Eunoia empowers small orgs, field workers, and missionaries who are often overlooked by large platforms while restoring donor trust with verifiable, on-chain proof of impact.
-
-- An indication of how your project relates to / integrates into Polkadot
-
-Our team is more familiar with Rust, making our project naturally compatible with Polkadot’s ecosystem and developer tooling. This not only streamlines development for us but also opens access to thousands of users within the Polkadot network. By integrating with Polkadot, we enable users to donate any Polkadot-native assets, such as DOT, to charitable causes. Every donation will be transparently tracked on-chain, ensuring accountability and trust.
-
-- An indication of why your team is interested in creating this project
 
 
 - (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
@@ -215,4 +203,3 @@ Resources
 "Charity is broken. We're fixing it with code."
 
 
-Remember that the Fast-Grants Programme is designed as a first step for promising projects. We're looking for projects that can continue to grow beyond this initial funding.
