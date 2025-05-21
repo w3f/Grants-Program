@@ -5,11 +5,11 @@
 Please provide the following:
 
 - If the name of your project is not descriptive, a tagline (one sentence summary)
-```
+
 Eunoia is an AI-powered, multi-chain giving platform that combats charity fraud by providing real-time, on-chain donation transparency, low fees, and smart cause-matching agents.
-```
+
 - A brief description of your project
-```
+
 Eunoia is an AI-powered, multi-chain giving platform fixing the broken charity system. Every year, over $7B is lost to fraud, mismanagement, and opaque middlemen in the giving space. Traditional platforms charge up to 5% in fees, while 81% of donors report a lack of trust in nonprofits. Eunoia changes that by putting radical transparency at the core of giving.
 
 We built Eunoia using smart AI agents called Compass that scan, rank, and recommend causes aligned with a donor’s values — all in real time. Donors simply describe what matters to them, and our agents handle the rest. Every donation is tracked on-chain from wallet to charity to real-world spend, ensuring every penny is accounted for.
@@ -33,14 +33,14 @@ Real-Time Impact Tracking: Donors track their funds' journey and outcomes instan
 Secure and Verifiable: Auditable smart contracts and verified recipient wallets
 
 Eunoia empowers small orgs, field workers, and missionaries who are often overlooked by large platforms while restoring donor trust with verifiable, on-chain proof of impact.
-```
+
 - An indication of how your project relates to / integrates into Polkadot
-```
+
 Our team is more familiar with Rust, making our project naturally compatible with Polkadot’s ecosystem and developer tooling. This not only streamlines development for us but also opens access to thousands of users within the Polkadot network. By integrating with Polkadot, we enable users to donate any Polkadot-native assets, such as DOT, to charitable causes. Every donation will be transparently tracked on-chain, ensuring accountability and trust.
-```
+
 - An indication of why your team is interested in creating this project
-```
-```
+
+
 - (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
 
 ### 🔍 Project Details
