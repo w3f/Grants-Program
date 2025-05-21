@@ -87,14 +87,25 @@ We’re deploying to **Moonbeam**, allowing DOT and native stablecoins to be sen
 
 ### 🧩 Ecosystem Fit
 
-Help us locate your project in the Polkadot landscape and what problems it tries to solve by answering each of these questions:
+**Where does this fit?**  
+- “DeFi-for-good” layer on Moonbeam  
+- First Polkadot-native donation protocol  
+- Widget-ready for Plaza/Polkadot-Hub
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Polkadot ecosystem?
-  - If so, how is your project different?
-  - If not, why might such a project not exist yet?
+**Target Audience**  
+- Social-good DAOs  
+- Civic donors  
+- Underfunded nonprofits
+
+**Need Met**  
+- Transparent, traceable, low-fee donations  
+- Real-time donor visibility and impact tracking
+
+**Competitors?**  
+None with Compass AI + smart contracts for charity.
+
+**Why it doesn’t exist yet?**  
+Social good ≠ DeFi yet; tech stack is complex (ink! + AI + full-stack).
 
 > **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
 
