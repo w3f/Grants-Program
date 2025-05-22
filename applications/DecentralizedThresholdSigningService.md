@@ -114,6 +114,7 @@ The most similar project we found is [this](https://github.com/nulltea/tss-libp2
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the service can be used. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| **0e.** | Article | We will publish an **article**/workshop that explains how the service works under the hood and how it can be used from a user perspective. |
 | **1.a** | Decentralized Threshold Signature Service CLI | Two peers on different machines exchange messages and produce a threshold signature using the Olaf protocol with protocol parameters defined by user input from the CLI. |
 
 ## Future Plans
