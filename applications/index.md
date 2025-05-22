@@ -58,6 +58,9 @@ Besides, **there is a clear difference between an application being accepted and
 | :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
 | [Zondax AG](https://zondax.ch)             | [Ledger Universal Polkadot App upgrade](./ledgerUpgrade.md)       | [GitHub](https://github.com/Zondax) |    ☐       |       ☐       |     ☐      |
 | [Lollipop Builders](https://www.lollipop.builders/)             | [Lollipop: sBPF Runtime as a Service on PolkaVM](./Lollipop.md)       | [GitHub](https://github.com/LollipopBuilders) |    ☐       |       ☐       |     ☐      |
+| [NP Labs](https://np.engineering/)             | [Nullifier Prime: Compliant and Programmable Privacy](./np-compliant_and_programmable_privacy.md)       | [GitHub](https://github.com/NP-Eng) |    ☐       |       ☐       |     ☐      |
+| [Jake Hemmerle](https://github.com/jakehemmerle)             | [Substrate MCP Server](./mcp-polkadot.md)       | [GitHub](https://github.com/jakehemmerle) |    ☐       |       ☐       |     ☐      |
+| [Esscrypt Ltd.](https://esscrypt.com/)             | [Polkadot ElizaOS Plugin](./ElizaPluginPolkadot.md)       | [GitHub](https://github.com/Esscrypt) |    ☐       |       ☐       |     ☐      |
 
 
 [🔝](#top)
