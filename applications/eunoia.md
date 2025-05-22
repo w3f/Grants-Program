@@ -36,11 +36,11 @@ We built Eunoia because donors deserve more than a 'thank you' — they deserve 
 That story stuck with us. Eunoia makes sure that money meant to help actually helps. We track donations from wallet to impact, with smart contracts and AI agents doing the work in between. Whether it’s field missionaries or underfunded nonprofits, we make every cent count — and make it verifiable.
 
 
-**The Pitch**  
-[1-min video pitch](https://www.ycombinator.com/video/)
+**The Pitch Video & Pitch Deck**  
+[1-min video pitch](https://youtube.com/shorts/vuppID_Ak6A)
 
+[The Pitch Deck](https://www.canva.com/design/DAGnhs6JB-Y/XFQtLITEDRy6iL1UmWYzxg/view?utm_content=DAGnhs6JB-Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h68a12e566b)
 
-![image](https://github.com/user-attachments/assets/c2a13979-1a4e-4a0d-a7c1-a53ea394c716)
 
 
 ### 🔍 Project Details
@@ -90,17 +90,11 @@ That story stuck with us. Eunoia makes sure that money meant to help actually he
 - Not an NFT project or DAO  
 - Not a pooled grant platform
 
-(NEEDS TO BE DONE STILL: AI) 
-- **AI in Tech Stack?:** sentence-transformers, sklearn  (What was used for AI Agents? OpenAI API)
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- Mockups/designs of any UI components
-
-
 
 ### 🧩 Ecosystem Fit
 
 **Where does this fit?**  
-- “DeFi-for-good” layer on Moonbeam  
+- “DeFi-for-good” layer 
 - First Polkadot-native donation protocol  
 - Widget-ready for Polkadot-Hub
 
@@ -114,10 +108,10 @@ That story stuck with us. Eunoia makes sure that money meant to help actually he
 - Real-time donor visibility and impact tracking
 
 **Competitors?**  
-None with Compass AI + smart contracts for charity.
+None with AI Agents like Compass for curating/matching verified charities and organizations. Other Web2 platforms do not use smart contracts for charity on just Web2 payment processors and admin overheads, which results in high fees.
 
 **Why it doesn’t exist yet?**  
-Social good ≠ DeFi yet; tech stack is complex (ink! + AI + full-stack).
+Social good ≠ DeFi yet; tech stack is complex (ink! + AI Agents + full-stack).
 
 > **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
 
@@ -155,15 +149,10 @@ Please also provide the GitHub accounts of all team members:
 
 ### Team's experience
 
-Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
-
-
 Our team brings a well-rounded mix of expertise in Web3, AI, and product management, backed by real-world experience in startups and nonprofit projects. Randy, an AI Engineer from McGill University, specializes in machine learning and natural language processing. Alex, a Product Manager from the University of Waterloo, offers product strategy and user experience insight. Jimmy, a Web3 Engineer, full-stack developer, and founder of Trivex (a DeFi platform on Starknet) — leads blockchain development. Together, the team has collectively build over 12 agents, smart contracts, and impact-driven applications. Fluent in eight languages and bonded by a shared passion for innovation (and Chick-Fil-A runs), this team thrives at the intersection of technology, social good, and decentralized systems.
 
 
 ## 📊 Development Status
-
-If you've already started implementing your project, please provide a link and a description of the code. Otherwise, please provide some documentation on the research and other work you have conducted before applying.
 
 We’ve already built an MVP version of our application during the EasyA Hackathon, which you can view (https://github.com/JY20/eunoia). While full Polkadot integration wasn’t completed during the hackathon due to recent upgrades to ink! v6, we successfully developed draft smart contracts and integrated the Polkadot SDK with our client web application. The smart contract integration is our next priority, and we plan to complete this during the program by deploying to testnet and then launching the application on mainnet.
 
