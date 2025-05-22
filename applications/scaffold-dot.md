@@ -58,7 +58,7 @@ I don't think so, just came from Consensus hackathon, mentioned this to a few Po
 ### Team members
 
 Please list the legal name of all grant beneficiaries. Solo developers (1-person teams) are eligible for funding.
-Miles Patterson, 
+Miles Patterson, Anwesh Nayak
 
 #### LinkedIn Profiles (if available)
 
@@ -77,7 +77,8 @@ Please also provide the GitHub accounts of all team members:
 ### Team's experience
 
 Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
-Miles has been using scaffold-eth since the first version and has written tutorials on how to implement a proxy factory with scaffold-eth 2 for Minimal Proxies, UUPS, and Upgradeable Beacon Proxies. He has also forked buidlguidlv3 for an MVP of testnet.FanSociety.xyz
+Miles has ~3 years of full stack dev experience. He has been using scaffold-eth since the first version and has written tutorials on how to implement a proxy factory with scaffold-eth 2 for Minimal Proxies, UUPS, and Upgradeable Beacon Proxies. He has also forked buidlguidlv3 for an MVP of testnet.FanSociety.xyz
+Anwesh has ~5 years full stack dev experience. Previously worked as a tech lead at B2B fintech firm. Was previously a Polkadot Ambassador and the community manager/moderator of the official Polkadot/Kusama discord. Has been contributing to Polkadot ecosystem for >2 years. Has participated in Thousand Contributors Programme by w3f and has been adding suggestions/improvements across the w3f github projects (polkadot-wiki). Also wrote a comprehensive tutorial to get started with Polkadot using the polkadot-js API. https://polkadotjs-developer-hub.gitbook.io/
 
 ## 📊 Development Status
 
@@ -108,9 +109,9 @@ This section should break the development roadmap down into milestones and deliv
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
-| 1. | MVP | We will fork the scaffold-eth 2 repository and configure hardhat with hardhat-polkadot and resolc. User will be able to clone the repository, deploy to WestEnd Hub with zero configuration, and test the dapp with the frontend that is gnerated from the contract ABI.
-| 2. | Local PVM chain | Users will be able to run a local PVM chain that will function like the public chains. The frontend will be able to interact with the smart contracts deployed to localy run PVM chain.
-| 3. | Rebrand | Will update the look and feel of the frontend to follow Polkadot's Brand Hub colors, fonts, etc.
+| 1. | MVP | Will fork the scaffold-eth 2 repository and configure hardhat with hardhat-polkadot, hardhat-polkadot-node and resolc. User will be able to clone the repository, run and deploy to local chain, deploy to WestEnd Hub with zero configuration, and test the dapp with the frontend that is generated from the contract ABI. Toolkit will be capable of deploying to Polkadot and Kusama Hub when they're publicly available.
+| 2. | Rebrand | Will update the look and feel of the frontend to follow Polkadot's Brand Hub colors, fonts, etc. Quicklink to Westend faucet.
+| 3. | Foundry | Add support for Foundry. Relying on Parity Tech to finish their fork.
 
 ### 💰 Budget Breakdown
 
@@ -118,10 +119,10 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | MVP | $2000 | 3 weeks |
-| 2 | Local PVM chain | $5,000 | 3 weeks |
-| 3 | Rebrand | 
-| **Total** | | **$10,000** | **3 months** |
+| 1 | MVP | $4000 | 2 weeks | 40 hours of fulltime at $100 USD / hr.
+| 2 | Rebrand | $2000 | 2 weeks | 20 hours of partime at $100 USD / hr.
+| 3 | Foundry | $2000 | 2 weeks | 20 hours of partime at $100 USD / hr.
+| **Total** | | **$8,000** | **6 weeks** |
 
 Make sure you show clearly what the funding is going towards (e.g. 30 hours of a full time employee at $X / hour).
 
@@ -130,8 +131,11 @@ Make sure you show clearly what the funding is going towards (e.g. 30 hours of a
 Please include:
 
 - How you intend to continue development after the Fast-Grant
+Fast-Grant success will set us up for OpenGov Treasury proposals if further development is needed
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
+Not at the moment. Just want to build this thing quickly.
 - Your vision for the project's growth and impact in the Polkadot ecosystem
+Polkadot Hub is coming, let's have things ready for various skill level devs to deploy there quickly. Scaffold-DOT should be useful for tinkerers and hackathons. Scaffold-eth has speedrunethereum, a series of challenges that introduce devs to the toolkit and get progressively more challenging. Could be cool to have something similar.
 
 ## ℹ️ Additional Information
 
