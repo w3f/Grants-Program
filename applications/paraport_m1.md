@@ -9,7 +9,7 @@
 
 ## Project Overview :page_facing_up:
 
-![image](https://hackmd.io/_uploads/H1AraVBAkx.png)
+![image](https://github.com/user-attachments/assets/84184ffb-9502-4ce4-a56a-b29f12bf7653)
 
 ### Overview
 
@@ -25,7 +25,7 @@ ParaPort is based on the academic research paper ["Protocol for Unifying Cross-C
 - Readily embeddable with minimal configuration
 
 By simplifying cross-chain operations, ParaPort aims to increase the adoption of Polkadot parachains, create a more cohesive user experience across the ecosystem, and enable new possibilities for cross-chain applications.
-![image](https://hackmd.io/_uploads/By0pnES0kx.png)
+![image](https://github.com/user-attachments/assets/51c04576-82d7-42bb-a0ee-4a8c7e3fa8b4)
 
 
 ### Project Details
@@ -43,7 +43,8 @@ For developers, our SDK offers:
 
 Ultimately, ParaPort hides complicated cross-chain operations behind a single, user-friendly interface, enabling frictionless user experiences throughout the Polkadot ecosystem.
 
-![integration_example](https://hackmd.io/_uploads/S1rMImF01e.png)
+![integration_example](https://github.com/user-attachments/assets/fb2ea986-3b9a-4f59-accd-8a50ec7a3535)
+)
 
 
 
@@ -57,7 +58,8 @@ To properly handle cross-chain message creation, we leverage the ParaSpell frame
 
 Our project interacts with the Vue and React frameworks. These powerful, open-source, and popular frontend frameworks are used by most Web3 developers.
 
-![paraport-nice](https://hackmd.io/_uploads/rypb7sjRyl.png)
+![paraport-nice](https://github.com/user-attachments/assets/c2e3f087-3543-464f-9974-64c33dc5e34c)
+)
 
 On the architectural level, we have a few layers, as described in the picture above. From the top down (from user to core), we have an SDK that is installable for popular frontend frameworks (Vue, React). SDK provides embeddable UI components that seamlessly integrate into existing dApps. Additionally, developers can adapt components into their custom branding and user flow with minimal changes. Most importantly, SDK is very verbose, offering detailed error handling, including retries, partial teleports, or user cancellations. In the heart of our SDK, we have a core library.
 Core contains all the important logic shown to the user via SDK and offers reactive hooks that can then spawn an interaction. When Core receives a request for teleportation, it automatically finds the best route, calculates and verifies balances, and prepares transactions for the user so they can be signed.
@@ -80,7 +82,8 @@ flowchart TD
 The project structure is organized into several key directories. The `packages/core` directory contains the core implementation of Paraparport that can be reused across different frameworks. The `packages/sdk` directory contains Vue components that can be installed on any Vue/React projects with proper type definition. The `packages/statick` directory contains configuration for currently supported chains and a list of RPC nodes.
 
 This architecture ensures *invisible complexity* for the user while preserving developer freedom to tailor the UI to their specific application domain.
-![image](https://hackmd.io/_uploads/Sk82K4rR1l.png)
+![image](https://github.com/user-attachments/assets/9a38d098-ba7d-4cbc-bce3-510b4c7bd9b6)
+
 
 
 
@@ -134,7 +137,7 @@ Ondrej and Hussnain are a dedicated duo that brings best-in-class solutions for 
 ### Team Code Repos
 
 - [KodaDot (NFT Marketplace)](https://github.com/kodadot/nft-gallery)  
-- [.memo (Polkadot POAP)](https://github.com/dotmemo/app)  
+- [.memo (Polkadot POAP)](https://github.com/dotmemoxyz/app)  
 - [Ondrej Pulc](https://github.com/exezbcz)
 - [Hussnain Sharif](https://github.com/hassnian)
 
@@ -305,4 +308,4 @@ ParaPort complements other initiatives in the Polkadot ecosystem (such as **UX B
 
 **We look forward to furthering cross-chain capabilities with ParaPort, helping Polkadot reach its full potential as an interconnected network of specialized blockchains.**
 
-![image](https://hackmd.io/_uploads/H1AraVBAkx.png)
+![image](https://github.com/user-attachments/assets/f1256b58-40d7-48b0-9ff5-9edbf689d3d0)
