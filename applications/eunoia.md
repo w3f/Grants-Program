@@ -31,6 +31,10 @@ Our team is more familiar with Rust, making our project naturally compatible wit
 
 **Why Eunoia:**
 
+We built Eunoia because donors deserve more than a 'thank you' — they deserve proof. One of our team members (Alex) watched a close family member get scammed while trying to adopt. They lost $10,000, and the agency misused over $400,000 in total. In the end, the family had to go to Rwanda themselves to complete the adoption with just $600 and a lawyer.
+
+That story stuck with us. Eunoia makes sure that money meant to help actually helps. We track donations from wallet to impact, with smart contracts and AI agents doing the work in between. Whether it’s field missionaries or underfunded nonprofits, we make every cent count — and make it verifiable.
+
 
 **The Pitch**  
 [1-min video pitch](https://www.ycombinator.com/video/)
