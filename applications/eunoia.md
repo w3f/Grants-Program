@@ -210,7 +210,7 @@ We’ve already built an MVP version of our application during the EasyA Hackath
 
 | Milestone | Hours / Items | Amount |
 |-----------|---------------|--------|
-| **1** | 80 hrs ink! + UI dev @ $25/hr = $2,000, 16 hrs docs = $400, Hosting + testnet gas + domain = $500 | $2,000 + $400 + $500 = $2,900 |
+| **1** | 80 hrs ink! smart contract @ $25/hr = $2,000, UI dev @ $25/hr = $500, Hosting + testnet gas + domain = $400 | $2,000 + $500 + $400 = $2,900 |
 | **2** | 100 hrs Compass AI & backend @ $25/hr = $2,500, AI inference credits = $100 | $2,500 + $100 = $2,600 |
 | **3** | 100 hrs testing, onboarding, content @ $25/hr = $2,500, Marketing/events, X Premium, merch, extra gas = $500 | $2,500 + $500 = $3,000 |
 
