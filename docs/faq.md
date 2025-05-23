@@ -45,7 +45,7 @@ title: 🙋 FAQ
 
 ### My application was rejected. Do you have any recommendations on where to go from here?
 
-  We usually give reasons why an application was rejected. We always try to be constructive and work with you towards an application that is beneficial to all parties. If we find no common ground, please have a look at [our list of alternative funding opportunities](funding.md).
+  We usually give reasons why an application was rejected. We always try to be constructive and work with you towards an application that is beneficial to all parties. If we find no common ground, please have a look at [our list of alternative funding opportunities](funding.md) or the more general W3F [Funding & Support page](https://web3.foundation/funding-support/).
 
 ### One of your grantees is using my code without respecting the terms of its license
 
@@ -68,7 +68,7 @@ title: 🙋 FAQ
 
 ### How do I apply if I want to keep information private?
 
-  For special cases that do not fit the regular grants structure, we provide [a form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). You can provide all application data by submitting this form, or submit the form with a reference to a pull request with data you are willing to make public.
+  For special cases that do not fit the regular grants structure, we provide alternative methods of applying. Please reach out to us by submitting an [Office Hours](office-hours.md) application to discuss your needs.
 
   Our [application template](https://github.com/w3f/Grants-Program/blob/e03a3e760846bfaf44352cb17a6763ff0fcf1a94/.github/pull_request_template.md?plain=1#L21) also offers the possibility to make the application public, but to keep its discussion private.
 
