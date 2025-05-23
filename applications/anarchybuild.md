@@ -169,6 +169,13 @@ In terms of building sustainable income flows for this product, we will focus on
 Subscriptions: Basic users will have the option to use the platform for free, with limited functionality. These limits do not apply to active engagement in the platform, but restrict monetisation opportunities. With the basic package, gg’s need to be purchased on a PAYG model.
 Premium & Premium Plus users will have enhanced monetisation opportunities within the platform, including hosting design competitions, hosting educational content or engaging in incentivised community moderation. With these subscription models, additional gg’s are automatically credited for utility within the platform.
 
+Users will be paying for the platform via two mediums:
+Pay as you go: Buy additional tokens to be able to operate on the site (staking, tipping and advertising space)
+Monthly: As part of a subscription package where the user has access to these features: https://anarchy.build/pricing
+Subscriptions will initially be charged via Stripe, migrating to WalletConnect when smart accounts enables subscriptions/standing orders. Ad-hoc payments will be handled via Moonpay.
+Engagement is incentivised by everyone involved in the process earning gg’s when any content is monetised, everyone gets a slice of the pie. tokenising comments is just one avenue for this, but people will be able to stake against anything that is tokenised, which will generate gg’s for both them and the owner. if ownership transfers, so do the destination for future staking rewards
+Our go-to-market strategy is three-fold: Focus groups (with AI groups, entrepreneur clubs and Build in Public Communities), University partnerships (hosting alumi projects on the site) and social media engaging (we are working with two agencies: one to improve our X thought leadership and the other that focusses more on video content)
+
 
 gg’s: A credit based system is used within the platform, powered by gg’s. These credits can be purchased on a PAYG model or included within the tiered subscription packages, and enable users to financially reward designers, curators and moderators.
 
