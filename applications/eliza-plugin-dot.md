@@ -6,6 +6,7 @@
   - **DOT:** 12RdrZcEhcrngiNYfyyGiA5dU5aGAj8h7Cj5movAWdkwYGD3  
   - **Payment:** 12RdrZcEhcrngiNYfyyGiA5dU5aGAj8h7Cj5movAWdkwYGD3 (Assethub USDC)  
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1  
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2482#issuecomment-2880901719)
 
 ## Project Overview :page_facing_up:
 
