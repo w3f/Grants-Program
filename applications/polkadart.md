@@ -175,8 +175,8 @@ Our documentation is available at https://polkadart.dev at keeps being improved 
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personnel | Blockchain Engineer & Team Lead | 15,000 USD | 0.5 FTE | 15,000 USD | lead & developer |
-| Personnel | Mobile Software Engineer | 15,000 USD | 0.5 FTE | 15,000 USD | developer |
+| Personnel | Blockchain Engineer & Team Lead | 5,000 USD | 3 FTE | 15,000 USD | lead & developer |
+| Personnel | Mobile Software Engineer | 5,000 USD | 3 FTE | 15,000 USD | developer |
 | --- | --- | --- | **Total** | **30,000 USD** |  |
 
 ## Future Plans
