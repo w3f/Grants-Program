@@ -1,128 +1,286 @@
-# 📝 Name of your Project
+# 📝 EchoPay-2 – Polkadot Fast-Grant Application
 
 ## 🌟 Project Overview
 
-Please provide the following:
+**🎯 Name of your Project:** EchoPay-2  
+**🗣️ Tagline:** Voice-activated payment dApp that enables secure cryptocurrency transactions using natural language commands on Polkadot.
 
-- If the name of your project is not descriptive, a tagline (one sentence summary)
-- A brief description of your project
-- An indication of how your project relates to / integrates into Polkadot
-- An indication of why your team is interested in creating this project
-- (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
+### 📌 Brief Description
 
-### 🔍 Project Details
+EchoPay-2 develops a voice-activated payment dApp to help users send secure transactions using natural language, powered by AI voice recognition and Polkadot. The project addresses the fundamental challenge of cryptocurrency adoption by eliminating the complexity of wallet addresses and transaction forms. Users can simply say:  
+> _"Send 5 DOT to Alice"_  
+...to complete payments.
 
-We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
+### 🧩 Polkadot Integration
 
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- Any PoC/MVP or other relevant prior work or research on the topic
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations
+- 🔗 **Polkadot JS API** for seamless chain interaction  
+- 🔐 **SubWallet** and **Talisman** wallet integrations for secure key management  
+- 🧾 **ink! smart contracts** for tamper-proof transaction logging  
+- 🔄 Future **XCM integration** to enable cross-chain voice commands  
+- 🚀 Deployed on **Westend testnet** with expansion plans
 
-### 🧩 Ecosystem Fit
+### 🚀 Team Interest
 
-Help us locate your project in the Polkadot landscape and what problems it tries to solve by answering each of these questions:
+EchoPay-2 aims to make crypto payments as intuitive as smartphone voice commands. With multiple hackathon wins:
+- 🥈 2nd Prize at Encode London  
+- 🥇 1st Prize at AI Forge Dominos Hackathon  
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Polkadot ecosystem?
-  - If so, how is your project different?
-  - If not, why might such a project not exist yet?
+The team is passionate about merging voice tech with blockchain infrastructure to accelerate adoption.
 
-> **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
+---
+
+## 🔍 Project Details
+
+### 🧱 Technology Stack Overview
+
+- **Frontend:** React + Vite + TypeScript  
+- **Voice Processing:** Web Speech API + custom NLP parser  
+- **Blockchain Layer:** @polkadot/api + @polkadot/extension-dapp  
+- **Smart Contracts:** ink! smart contracts for transaction validation/logging  
+- **Wallet Integration:** SubWallet and Talisman
+
+### ⚙️ Core Architecture Components
+
+1. 🎙️ Voice captured via Web Speech API  
+2. 🔍 Parsed using custom NLP for payment details  
+3. 🔗 Transactions built using @polkadot/api  
+4. 🔐 Sent to wallet extensions for user signing  
+5. 🧾 Transactions logged on-chain with ink! contracts
+
+### 🛠️ Substrate Framework Integration
+
+- Real-time balance queries using storage abstraction  
+- No need for full chain sync  
+- Modular voice transaction validation
+
+### 🔒 Smart Contract Design
+
+Due to Polkadot’s asset model:
+- ❌ Native DOT can't be moved directly  
+- ✅ Contracts log transactions, validate commands, and whitelist recipients  
+- ✅ `log_payment` method ensures tamper-proof records
+
+---
+
+## 🕰️ Prior Work
+
+- **EchoPay v1:** Moonbase Alpha (Aug 2024)  
+- **EchoPay v2:** Launched April 2025 on Westend with:
+  - Enhanced AI voice input  
+  - GUI/frontend separation  
+  - SubWallet integration  
+  - Improved UX  
+  - Polkadot ecosystem migration
+
+### ⚠️ Current Limitations
+
+- No direct wallet extension control (security restrictions)  
+- Requires secondary authentication  
+- Contracts serve as loggers—not direct processors
+
+---
+
+## 🧩 Ecosystem Fit
+
+**Accelerated Development Pathway:**  
+Our project benefits from direct access to Polkadot's Developer Experience team, who are assisting with:  
+`- Cross-chain testnet deployments`  
+`- Wallet extension API optimizations`  
+`- Governance strategy for future treasury proposals`  
+
+This institutional support positions EchoPay-2 to become a reference implementation for voice-controlled transactions across the Polkadot ecosystem.
+
+### 🌐 Ecosystem Position
+
+EchoPay-2 serves as a **user accessibility layer** within the Polkadot ecosystem, simplifying blockchain use through intuitive voice interaction.
+
+### 👥 Target Audience
+
+- 🧑‍💻 Crypto newcomers  
+- 💼 Power users  
+- 🏢 Businesses wanting frictionless payments  
+- 👨‍🔧 Developers exploring voice+blockchain
+
+### 🛠️ Problem Resolution
+
+Solves 3 major crypto pain points:
+1. ❌ Complicated wallet addresses  
+2. ❌ Irreversible, error-prone transactions  
+3. ❌ High technical barriers
+
+### ⚔️ Competitive Landscape
+
+- No similar voice-powered dApps on Polkadot  
+- Voice fintech exists in TradFi, but **not combined with Web3**  
+- Cross-chain voice control via **XCM** is a unique, first-of-its-kind feature
+
+---
+
+## 🎯 Unique Differentiation
+
+- 🎙️ Voice-driven commands for crypto payments  
+- 🔁 XCM support: _"Send 5 DOT from Polkadot to USDC on AssetHub"_  
+- 🧾 Immutable transaction logs via ink!  
+- 🔐 Security-first design with non-custodial wallet support
+
+---
+
+## 🔒 Enhanced Security Architecture
+
+**Biometric Authentication Integration**  
+Following technical consultations with Polkadot DevEx lead Nikolai Kozlov
 
 ## 👥 Team
 
-- **Team Name:** Name of your team. If you apply as a legal entity, please use its name.
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email
-- **Website:** Your website, GitHub org, blog, or similar
+**🏷️ Team Name:** EchoPay Development Team  
+**📨 Contact Name:** Dave Cheng  
+**📧 Email:** `firstdreamlord@gmail.com`  
+**🔗 GitHub:** [EchoPay-2 Repository](https://github.com/YanniWu88/EchoPay-2/tree/master)
 
-### Team members
+### 🧑‍🤝‍🧑 Team Members
 
-Please list the legal name of all grant beneficiaries. Solo developers (1-person teams) are eligible for funding.
+| Name       | Role                   | Background & Skills                                      |
+|------------|------------------------|-----------------------------------------------------------|
+| Freya Wu   | Chief Marketing Officer | Web3 & AI, Financial Markets Analyst, IPO Audit Leader   |
+| Dave Cheng | Chief Vision Officer    | AI & Blockchain, Hackathon Champion, Logistics Innovation|
 
-#### LinkedIn Profiles (if available)
+### 🏆 Team Achievements
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- 🥈 Encode London – Best DApp (Flare's Data Protocols)  
+- 🥇 AI Forge Hackathon  
+- 🥇 Solana SaaS Business Analysis
 
-### Team Code Repos
-
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
-
-Please also provide the GitHub accounts of all team members:
-
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
-
-### Team's experience
-
-Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
+---
 
 ## 📊 Development Status
 
-If you've already started implementing your project, please provide a link and a description of the code. Otherwise, please provide some documentation on the research and other work you have conducted before applying.
+### ✅ Current Implementation
+
+- Deployed on **Westend testnet**  
+- React-based frontend operational  
+- Voice recognition and command parsing in place  
+- Wallet extension (SubWallet/Talisman) integration  
+- ink! smart contract logging
+
+### 🧪 Technical Achievements
+
+- Voice-to-transaction pipeline built with Web Speech API + NLP  
+- Real-time DOT balance fetching  
+- ink! smart contract deployed for logging  
+- Secure wallet extension signing
+
+### 📚 Documentation
+
+Available on [GitHub](https://github.com/YanniWu88/EchoPay-2/tree/master)  
+Includes:
+- README files  
+- Technical specs  
+- Setup instructions  
+- Demo videos
+
+---
 
 ## 📅 Development Roadmap
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, please describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality.
+| Item                  | Details                          |
+|-----------------------|----------------------------------|
+| 🕒 Estimated Duration  | 3 months                         |
+| 👥 FTE Required        | 2.5 Full-Time Equivalents (FTE) |
+| 💵 Total Costs         | $10,000 USD                     |
 
-**Important notes:**
-- Each milestone is capped at **$5,000 USD**
-- Milestones must be delivered within **3 months** of approval
-- The maximum grant amount is **$10,000 USD** per application (up to **$15,000 USD** per project in exceptional cases)
-- You will only receive payment after successful milestone delivery
 
-### Overview
+---
 
-- **Estimated Duration:** Duration of the whole project (maximum 3 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project
-- **Total Costs:** Requested amount in USD for the whole project (maximum $10,000 USD)
+## 📌 Milestone Breakdown
 
-> Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
+| #   | Deliverable                | Specification                                                                                           |
+|-----|----------------------------|---------------------------------------------------------------------------------------------------------|
+| 0a  | **License**                | MIT License for open-source accessibility                                                              |
+| 0b  | **Documentation**          | Inline code comments and user tutorial for voice setup, wallet integration, and transaction processes   |
+| 0c  | **Testing & Guide**        | Unit tests for voice parsing, smart contract calls, and wallet connectivity + comprehensive test guide |
+| 0d  | **Technical Article**      | Documentation on integrating voice tech with Polkadot and implementation lessons                        |
+| 1   | **Enhanced Voice Processing** | Advanced NLP with multi-currency support, complex commands, and ambiguity handling                      |
+| 2   | **Cross-Chain Integration** | XCM support for voice-controlled transfers between Polkadot, Kusama, and AssetHub                      |
+| 3   | **Production Security Features** | Multi-factor auth, voice biometrics, and contract-level validation for secure deployment          |
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
-| 1. | Feature X | We will create a feature that will... (Please describe in detail) |
-| 2. | Feature Y | The Y feature will... (Please describe in detail) |
-| 3. | Feature Z | The Z feature will... (Please describe in detail) |
+---
 
-### 💰 Budget Breakdown
+## 💰 Budget Breakdown
 
-Please provide a breakdown of your budget by milestone:
+### 📅 Milestone Timeline
 
-| Milestone | Deliverables | Cost (USD) | Estimated Completion |
-| --- | --- | --- | --- |
-| 1 | Features X, Y | $5,000 | 1.5 months |
-| 2 | Feature Z | $5,000 | 1.5 months |
-| **Total** | | **$10,000** | **3 months** |
+| Milestone | Deliverables                                    | Cost (USD) | Estimated Completion |
+|-----------|--------------------------------------------------|------------|-----------------------|
+| 1         | Enhanced Voice Processing, Testing Infrastructure | $5,000     | 1.5 months            |
+| 2         | Cross-Chain Integration, Production Security      | $5,000     | 1.5 months            |
+| **Total** |                                                  | **$10,000**| **3 months**          |
 
-Make sure you show clearly what the funding is going towards (e.g. 30 hours of a full time employee at $X / hour).
+### 🧾 Budget Allocation
+
+| Role                      | Hours | Rate (USD/hr) | Total (USD) |
+|---------------------------|-------|----------------|-------------|
+| Senior Developer          | 120   | $35            | $4,200      |
+| Voice Tech Specialist     | 80    | $30            | $2,400      |
+| Smart Contract Developer  | 60    | $40            | $2,400      |
+| Testing & Documentation   | 40    | $25            | $1,000      |
+| **Total**                 |       |                | **$10,000** |
+
+---
 
 ## 🔮 Future Plans
 
-Please include:
+### 🚀 Post-Grant Development
 
-- How you intend to continue development after the Fast-Grant
-- Any plans for seeking additional funding (other grants, VC funding, etc.)
-- Your vision for the project's growth and impact in the Polkadot ecosystem
+- ✅ Deploy on **Polkadot Mainnet**
+- 🔗 Expand **multi-parachain support**
+- 🧠 Add **AI-driven conversational payments**
+- 🧰 Develop **enterprise-grade API integrations**
+
+### 💸 Additional Funding Strategy
+
+- 🏛️ Apply for **Polkadot Treasury grants**
+- 📈 Explore **VC investment** for commercial scaling
+- 🤝 Partner with **wallet providers** and **payment networks**
+
+### 🌍 Long-Term Vision
+
+- 🔊 Standardize voice-controlled blockchain interfaces
+- 🏠 Integrate with **smart homes**, **POS systems**, and **IoT**
+- 🌐 Scale to **1 billion+ users globally**
+
+---
 
 ## ℹ️ Additional Information
 
-Here you can add any additional information that you think is relevant to this application, such as:
+### ✅ Completed Work
 
-- Work you have already done
-- If there are any other teams who have already contributed to the project
-- Other funding you may have applied for
+- Deployed **EchoPay-2 v2** on Westend testnet  
+- Produced detailed **technical docs** and **demo materials**  
+- Proven track record through **multiple hackathon victories**
 
-Remember that the Fast-Grants Programme is designed as a first step for promising projects. We're looking for projects that can continue to grow beyond this initial funding.
+**Recent Ecosystem Recognition:**  
+Our team was recently awarded **3rd Place** in the EasyA Polkadot Hackathon (May 2025), validating our technical execution and alignment with Polkadot's ecosystem priorities. 
+
+**Developer Experience Partnership:**  
+Since Monday 19 May, we've been working closely with Nikolai Kozlov from parity.io and the DevEx team who have committed to providing:  
+- Ongoing technical guidance for XCM integration challenges  
+- Architecture reviews of our voice transaction validation system  
+- Introductions to key ecosystem partners like Talisman and Nova Wallet  
+- Assistance optimizing our ink! smart contract gas efficiency
+
+This collaboration ensures EchoPay-2 will meet Polkadot's technical standards while maximizing interoperability with AssetHub and other parachains.
+
+
+### 🏆 Previous Recognition
+
+- 🥇 AI Forge Dominos Hackathon  
+- 🥈 Encode London – Flare Protocols  
+- 🥇 Solana SaaS Business Analysis
+
+### ⚙️ Technical Innovation
+
+Combining **real-time voice recognition** with **Polkadot’s XCM**, EchoPay-2 introduces a novel interface that radically simplifies blockchain transactions while preserving decentralization, user control, and security.
+
+> _This application positions EchoPay-2 as a transformative project solving real adoption barriers using Polkadot's cross-chain capabilities._
+
+
