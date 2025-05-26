@@ -7,7 +7,7 @@
 
 ## 🌟 Project Overview
 
-DotStriker! won first runner-up at the [EasyA Consensus 2025 Hackathon](https://www.easya.io/events/easya-consensus-toronto-hackathon) under the Polkadot build track.
+DotStriker! won second place at the [EasyA Consensus 2025 Hackathon](https://www.easya.io/events/easya-consensus-toronto-hackathon) under the Polkadot build track.
 
 No shooting. No luck. Just speed, skill, and sync. <br/>
 The Striker who collects the most, wins. 🏆
@@ -38,11 +38,32 @@ Games are the fastest way to showcase new tech. A well-designed game teaches use
 
 ## 🔍 Project Details
 
-### Overview and Expectations
+### Expectations
 
 DotStriker! is a fully on-chain, real-time multiplayer game on Polkadot where multiple players simultaneously pilot NFT-based spaceships. Players buy ship fuel with DOT, powering movement and gameplay in a native on-chain economy. They collect coins to upgrade and compete for crypto rewards and rare NFTs.
 
 All NFTs, including new ship models, will be simulated on-chain in this milestone, showcasing dynamic asset minting without backend servers. DotStriker! will operate entirely on-chain without relying on backend infrastructure, centralized matchmaking, or off-chain processes, delivering a truly trustless, real-time multiplayer gaming experience.
+
+### Gameplay
+
+DotStriker! isn’t just intended to be a great technical showcase. The ultimate goal is to design the game to be *fun*. We've carefully considered the setting, the motivations that keep players engaged, and how to design gameplay that’s rewarding and emotionally resonant.
+
+#### Visual Identity through NFTs
+We use stylized, meme-inspired NFT ships to build emotional attachment. These visuals aren’t just cosmetic—they represent identity, rarity, and value. <br/>
+<img src="coin_1.png" width="150" height="140" alt="Meme coin">
+<img src="coin_2.png" width="150" height="140" alt="Meme coin">
+<img src="coin_3.png" width="150" height="140" alt="Meme coin"><br/>
+
+
+#### On-Chain Incentives that Matter
+Players are driven by:
+- *Long-term goals*: Find and trade rare NFTs.
+- *Short-term goals*: Recover more DOT than they staked (e.g., enter with 5 DOT, aim to exit with 10).
+
+#### Gameplay Loop
+When a player joins with 5 DOT, that value is scattered as in-game resources across the map—alongside other players’ DOT. **The objective: collect your own and compete for others, all on-chain in real time.**
+
+This balance of visual appeal, risk, and real value makes DotStriker! a compelling on-chain game, not just a tech demo.
 
 ### Built With ♡
 
@@ -160,7 +181,7 @@ _NOTE_: A detailed breakdown of tasks is given in the annex below.
 
 ### Post-Grant Development:
 
-We will build real tradable NFTs, expand maps and multiplayer for chaotic battles, add obstacles like black holes and traps, introduce NFT upgrades and themes, and extend cross-platform play to desktop, iOS, and browser.
+We will build real tradable NFTs, expand maps and multiplayer for chaotic battles, add obstacles like black holes and traps, introduce NFT upgrades and themes, and extend cross-platform play.
 
 ### Future Funding:
 
@@ -203,6 +224,8 @@ DotStriker! will position Polkadot as the leader in fully on-chain, real-time mu
 |        | **Total Unity Tasks**    |                                                                                                | **29** |
 |        | **Total Economy & Docs** |                                                                                                | **11** |
 |        | **Grand Total**          |                                                                                                | **75** |
+
+#### *Invoice breakdown*: 75h × $65/h = $4,875
 
 [Rust]: https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=white
 [Rust-url]: https://www.rust-lang.org/
