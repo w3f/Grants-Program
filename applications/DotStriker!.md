@@ -16,7 +16,7 @@ The Striker who collects the most, wins. 🏆
 
 ### Brief Description
 
-DotStriker! is a fully on-chain, real-time multiplayer battle game on Polkadot where players pilot NFT spaceships in a serverless arena. All gameplay—movement, combat, upgrades, and rewards—is executed entirely on-chain, with no backend or off-chain APIs. Players fuel ships with DOT, collect coins to upgrade, and compete for crypto rewards and NFTs minted dynamically by the blockchain.
+DotStriker! is a fully on-chain, real-time multiplayer battle game on Polkadot where players pilot NFT spaceships in a serverless arena. All gameplay—movement, upgrades, and rewards—is executed entirely on-chain, with no backend or off-chain APIs. Players fuel ships with DOT, collect coins to upgrade, and compete for crypto rewards and NFTs minted dynamically by the blockchain.
 
 Essentially, DotStriker! demonstrates that Polkadot can be the first blockchain to power a truly real-time, fully on-chain multiplayer game—without compromises, middleware, or off-chain components. It redefines what's possible in Web3 gaming, turning the blockchain into the game engine itself.
 
@@ -76,7 +76,7 @@ If you cannot see the preview on your browser, [here](https://youtu.be/jCJ-B3NH3
 
 ### Wireframes
 
-Like many ambitious projects, Dotstrikers! began as a humble proof-of-concept napkin sketch — here’s a glimpse at the game's earliest UI design ideas.
+Like many ambitious projects, Dotstriker! began as a humble proof-of-concept napkin sketch — here’s a glimpse at the game's earliest UI design ideas.
 
 <img src="wf_registration.png" height=600 alt="Registration">
 <img src="wf_gameplay.png" width="600" alt="Gameplay">
@@ -119,7 +119,7 @@ Please also provide the GitHub accounts of all team members:
 
 ### Team's experience
 
-The team first connected at Consensus 2025, sparking a collaboration that led to the creation of DotStrikers! On our own, we do some pretty cool things too!
+The team first connected at Consensus 2025, sparking a collaboration that led to the creation of DotStriker! On our own, we do some pretty cool things too!
 
 Roman has over 14 years of software development experience, including several blockchain-related projects. He developed one of the first Libra blockchain transaction explorers, created a C# SDK for Move smart contracts, and built NFT smart contracts using OpenZeppelin.
 
@@ -133,20 +133,13 @@ At the EasyA Hackathon, we presented a functioning MVP that demonstrated real-ti
 
 <img src="roadmap.png" width="600" alt="Roadmap">
 
-<!-- This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, please describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality.
-
-**Important notes:**
-
-- Each milestone is capped at **$5,000 USD**
-- Milestones must be delivered within **3 months** of approval
-- The maximum grant amount is **$10,000 USD** per application (up to **$15,000 USD** per project in exceptional cases)
-- You will only receive payment after successful milestone delivery -->
 
 ### Overview
 
+- **Milestone Title:** Fully On-Chain Real-Time Multiplayer Prototype with NFT Simulation
 - **Estimated Duration:** 3-4 weeks
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** 4550$
+- **Total Costs:** $4,875
 
 | Number | Deliverable               | Specification                                                                                                                                                                                                                                                   |
 | ------ | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -164,9 +157,9 @@ _NOTE_: A detailed breakdown of tasks is given in the annex below.
 
 | Milestone | Deliverables                                                                                                                                                                                                                                                                                                                                                                                                                 | Cost (USD)  | Estimated Completion |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------- |
-| 1         | **Substrate Pallet**: Resource spawning, energy-based movement, player positioning, collection tracking, admin reset, and NFT simulation (not tradable). <br>**Simulated NFTs**: Rarity logic based on live player count, ship type variants (Uncommon, Rare, Mystical). <br>**Unity Client**: Game board UI, account linking, ship movement, energy UI, visual effects, collectible rendering, and auto-collection trigger. | \$4,225     | 3 weeks              |
+| 1         | **Substrate Pallet**: Resource spawning, energy-based movement, player positioning, collection tracking, admin reset, and NFT simulation (not tradable). <br>**Simulated NFTs**: Rarity logic based on live player count, ship type variants (Uncommon, Rare, Mystical). <br>**Unity Client**: Game board UI, account linking, ship movement, energy UI, visual effects, collectible rendering, and auto-collection trigger. | \$4,160     | 3 weeks              |
 | 2         | **Game Economy Design**: Tuning energy costs, coin rewards, and drop rates. <br>**Documentation**: Setup and developer notes. <br>**Live Playtest**: In-person session with 5–10 users; collect feedback on clarity, flow, and replayability.                                                                                                                                                                                | \$715       | 1 week               |
-| **Total** |                                                                                                                                                                                                                                                                                                                                                                                                                              | **\$4,940** | **3–4 weeks**        |
+| **Total** |                                                                                                                                                                                                                                                                                                                                                                                                                              | **\$4,875** | **3–4 weeks**        |
 
 ## 🔮 Future Plans
 
@@ -201,7 +194,7 @@ DotStriker! will position Polkadot as the leader in fully on-chain, real-time mu
 | 13     | Unity Tasks              | Implement player account selection: generate test accounts locally and associate with DeviceId | 2      |
 | 14     | Unity Tasks              | Display collected resources in the UI                                                          | 2      |
 | 15     | Unity Tasks              | Add a button to start the game by paying 20 coins (full energy)                                | 2      |
-| 16     | Unity Tasks              | Allow selecting a ship skin if the required NFT is owned; skins bound to player account        | 3      |
+| 16     | Unity Tasks              | Allow selecting a ship skin if the required NFT is owned; skins bound to player account        | 2      |
 | 17     | Unity Tasks              | Add a visual charging effect before movement (up to 2 seconds delay)                           | 3      |
 | 18     | Unity Tasks              | Show charging indicator and engine flame effect; smooth ship rotation with idle animation      | 3      |
 | 19     | Unity Tasks              | Add a space-themed Skybox for dynamic movement feel                                            | 2      |
@@ -212,9 +205,10 @@ DotStriker! will position Polkadot as the leader in fully on-chain, real-time mu
 | 24     | Economy & Docs           | Design and simulate balanced in-game economy: energy cost, coin generation, NFT drop rates     | 5      |
 | 25     | Economy & Docs           | Write internal documentation for the Substrate pallet, including setup and developer notes     | 6      |
 |        | **Total Pallet Tasks**   |                                                                                                | **35** |
-|        | **Total Unity Tasks**    |                                                                                                | **33** |
+|        | **Total Unity Tasks**    |                                                                                                | **29** |
 |        | **Total Economy & Docs** |                                                                                                | **11** |
-|        | **Grand Total**          |                                                                                                | **79** |
+|        | **Grand Total**          |                                                                                                | **75** |
+
 
 [Rust]: https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=white
 [Rust-url]: https://www.rust-lang.org/
