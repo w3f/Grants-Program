@@ -7,8 +7,6 @@
 
 ## 🌟 Project Overview
 
-### Tagline
-
 DotStriker! won first runner-up at the [EasyA Consensus 2025 Hackathon](https://www.easya.io/events/easya-consensus-toronto-hackathon) under the Polkadot build track.
 
 No shooting. No luck. Just speed, skill, and sync. <br/>
@@ -44,9 +42,7 @@ Games are the fastest way to showcase new tech. A well-designed game teaches use
 
 DotStriker! is a fully on-chain, real-time multiplayer game on Polkadot where multiple players simultaneously pilot NFT-based spaceships. Players buy ship fuel with DOT, powering movement and gameplay in a native on-chain economy. They collect coins to upgrade and compete for crypto rewards and rare NFTs.
 
-All NFTs, including new ship models, will be simulated on-chain in this milestone, showcasing dynamic asset minting without backend servers. The fuel system supports cross-chain payments via XCM, enabling tokens like USDT (Moonbeam) and aUSD (Acala) to be used.
-
-DotStriker! will operate entirely on-chain without relying on backend infrastructure, centralized matchmaking, or off-chain processes, delivering a truly trustless, real-time multiplayer gaming experience.
+All NFTs, including new ship models, will be simulated on-chain in this milestone, showcasing dynamic asset minting without backend servers. DotStriker! will operate entirely on-chain without relying on backend infrastructure, centralized matchmaking, or off-chain processes, delivering a truly trustless, real-time multiplayer gaming experience.
 
 ### Built With ♡
 
@@ -64,7 +60,7 @@ If you cannot see the preview on your browser, [here](https://youtube.com/shorts
 
 ### Playing DotStriker!
 
-Watch a quick demo of how DotStriker works:
+Watch a quick demo of how DotStriker! works:
 <br />
 <video src="https://youtu.be/jCJ-B3NH390" controls></video>
 <br />
@@ -132,7 +128,6 @@ At the EasyA Hackathon, we presented a functioning MVP that demonstrated real-ti
 ## 📅 Development Roadmap
 
 <img src="roadmap.png" width="600" alt="Roadmap">
-
 
 ### Overview
 
@@ -208,7 +203,6 @@ DotStriker! will position Polkadot as the leader in fully on-chain, real-time mu
 |        | **Total Unity Tasks**    |                                                                                                | **29** |
 |        | **Total Economy & Docs** |                                                                                                | **11** |
 |        | **Grand Total**          |                                                                                                | **75** |
-
 
 [Rust]: https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=white
 [Rust-url]: https://www.rust-lang.org/
