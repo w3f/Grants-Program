@@ -1,22 +1,41 @@
-#  Verydorm - Property On Blockchain
-- **Team Name:** Verydorm
-- **Payment Address:**
-  - **USDT**: 0x7C7568e6f94a14bcDc71e1B4c475047915650b13 
-  - **Payment**: Fiat payment
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 🐣
 
+# Verydorm - Property On Blockchain
 
-## 1. Project Overview.
+-  **Team Name:** Verydorm
+
+-  **Payment Address:**
+
+-  **USDC (On Polkadot)**: 15oDwj8goWNZJrpmreMzVEgpvmxdkHoZHAG36jCY7s16yp1o
+-  **Polkadot Asset Hub**: 15oDwj8goWNZJrpmreMzVEgpvmxdkHoZHAG36jCY7s16yp1o
+-  **DOT**: 15oDwj8goWNZJrpmreMzVEgpvmxdkHoZHAG36jCY7s16yp1o
+
+-  **Payment**: Crypto payment. USDC Preferred
+
+-  **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 🐣
+  
+
+## Project Overview :page_facing_up:
+
+  
+
 
 ![Verydorm Logo](https://raw.githubusercontent.com/speedily/dummypics/refs/heads/main/Logo1verydorm-removebg-preview.png)
 
 
 **Step into the future of property management with Verydorm  where blockchain meets trust, security, and prosperity.**
 
-**Project Description:**  
+  
+
+### Overview
+
+  
 Verydorm is a decentralized platform aimed at transforming property management and real estate transactions, especially in developing and emerging nations. By leveraging blockchain technology, Verydorm solves problems like property fraud, lack of transparency in land records, and inefficiencies in renting and property maintenance. The platform enables secure listings, immutable property records, automated rent collection, and end-to-end property lifecycle management.
 
-## 2. Project Details
+  
+
+### Project Details
+
+  
 
 ### Problem Statement
 Real estate issues in developing countries include:
@@ -31,16 +50,8 @@ Verydorm provides a decentralized, secure platform offering:
 - **Blockchain Property Records** – Immutable and auditable.
 - **Tenant & Property Management** – Rent, legal tools, screening, repairs.
 - **Verydorm Coin (Token)** – Native token for transactions, verifications, and fees.
-
-
-
-### Use Cases
-- **Landlords:** Secure listing, tenant verification, rent automation  
-- **Tenants:** Discover verified rentals, build reputation  
-- **Property Managers:** Manage multiple units via dashboard  
-- **Blockchain Records:** Tamper-proof storage of ownership, rental history, and transactions
-
-
+  
+ 
 ### **UI Design** 
 ![Verydorm Logo](https://raw.githubusercontent.com/speedily/dummypics/refs/heads/main/uifinal.png)
 
@@ -51,17 +62,22 @@ UML diagrams demonstrate application use cases such as blockchain property recor
 ### Technical Architecture
 - **Frontend:** Javascript, React + Material UI 
 - **Backend:** Node.js, Firebase  
-- **Blockchain:** Solidity smart contracts, hardhat on Base blockchain   
+- **Blockchain:** Solidity smart contracts, hardhat on Base blockchain(Previously). This Will Be Migrated To Polkadot Blockchain
 - **Token Utility:** Verydorm Coin for all in-platform operations (rent, verification, fees, staking)
+ 
 
-### **Ecosystem Fit**
+### Ecosystem Fit
+
+  
+
+
 Verydorm is uniquely positioned within the intersection of blockchain technology and the real estate sector, particularly targeting challenges prevalent in developing and emerging economies. The project complements and strengthens the broader blockchain ecosystem by applying decentralization, transparency, and tokenization to a traditionally opaque and centralized industry—property management.
 While blockchain has seen applications in DeFi, identity, and supply chain, Verydorm brings innovation to the underexplored domain of real estate management. By leveraging smart contracts on the Base blockchain (with future plans to integrate with Polkadot), Verydorm introduces trustless property listings, immutable ownership records, and automated rent transactions—bridging the gap between Web3 infrastructure and real-world utility.
 Unlike most crypto or blockchain platforms that focus on speculative financial products, Verydorm directly addresses real-world pain points such as property fraud, tenant verification, and inefficiencies in property maintenance. This increases the appeal of Web3 solutions to everyday users—landlords, tenants, and property managers—who may not yet be exposed to blockchain technology.
 Moreover, the introduction of Verydorm Coin as a utility token for rent, verification, staking, and service fees creates a self-sustaining micro-economy that aligns incentives across stakeholders. It also opens opportunities for deeper integration with other decentralized identity, DeFi, and governance protocols.
 In the broader Web3 and real estate ecosystem, Verydorm fills a vital niche—providing infrastructure and tools where centralized systems have failed or remain inaccessible. Its focus on high-impact markets like Kenya, Nigeria, and India makes it a valuable addition to the global blockchain landscape, advancing adoption where the need is greatest.
-
-### **Bar Chart:**  
+  
+ ### **Bar Chart:**  
 ![Verydorm Logo](https://raw.githubusercontent.com/speedily/dummypics/refs/heads/main/barchartyellow.png)
 - Here is a bar chart illustrating the essential features that the Verydorm platform should include, rated on a scale from 0 to 160. Each yellow bar represents the relative importance or emphasis placed on a feature based on the content of the grant application. Let me know if you'd like to adjust the scale, colors, or add/export the chart.  
 
@@ -81,9 +97,13 @@ By addressing these challenges, we aim to restore trust in property ownership sy
 **Easy Base** 
 
 Generates Links/QR/Buttons To Accept Base Network ETH payments On MetaMask on web and social media - [Web](https://devfolio.co/projects/easybase-545a), [Video](https://www.loom.com/share/3c1f6b591d594f1abcfcf4c35f72217d?source=embed_watch_on_loom_cta&t=3). Integrating Base Network Transaction Verification To Our Service On Each Successful Payment
-Allowing People To Integrate Our Service With Base Features Like Recieving Donation Payments In Their Web Site Blog SocialMedia.
+Allowing People To Integrate Our Service With Base Features Like Recieving Donation Payments In Their Web Site Blog SocialMedia. 
 
-## Team Info
+## Team :busts_in_silhouette:
+
+  
+
+
 
 **Team Members:**
 - Emmanuel Muthomi – CEO
@@ -95,12 +115,15 @@ Allowing People To Integrate Our Service With Base Features Like Recieving Donat
 - Website: [https://frontend.verydorm.com](https://www.verydorm.com)
 - YouTube Demo: [https://www.youtube.com/watch?v=95GyeeXWN5A](https://www.youtube.com/watch?v=95GyeeXWN5A)
 - GitHub: [https://github.com/Manuel254001/Verydorm](https://github.com/Manuel254001/Verydorm)
-- Email: ceo@verydorm.com
+- Email: ceo@verydorm.com  
 
-**Legal Structure:**
+### Legal Structure
 - Individual
 
-**Teams Experience:**
+  
+
+### Team's experience  
+
 - Emmanuel Muthomi – CEO Emmanuel Muthomi is widely recognized as one of the most innovative young minds in Africa. A visionary Web3 developer, data engineer, and entrepreneur, Emmanuel blends cutting-edge technical expertise with strong leadership and a keen business sense to pioneer transformative digital solutions.
 As a Web3 developer, Emmanuel is proficient in a wide range of programming languages and tools including Solidity, JavaScript, TypeScript, Python, Rust, and SQL,
 with deep expertise in building decentralized applications (dApps), smart contracts, and tokenomics systems on Ethereum, Polygon, and Solana.
@@ -114,88 +137,176 @@ His passion for technology, combined with a sharp understanding of economics, go
 - Gifton Isika Mwange - VP Of Backend is a results-driven Software Developer and Data Analyst with a strong background in full-stack web development, API integration, and data visualization. He currently serves as the Vice President of Backend Development at Verydorm, where he leads the design and implementation of backend systems and APIs to support secure, scalable, and efficient application functionality.
 Gift is highly proficient in technologies such as Python, JavaScript, and various database management systems. His work is characterized by a deep commitment to problem-solving, performance optimization, and innovation through data-driven strategies. With a passion for leveraging technology to build impactful solutions, he continues to contribute meaningfully to both product development and user experience enhancement. Github https://github.com/isikagifton123456789. Learn more about him at: https://www.linkedin.com/in/giftonmwange/
 - Brian Tanui - Frontend. Brian Tanui is a versatile Software and AI Engineer with expertise in frontend development using React and Angular, and backend systems built with Node.js, Express, and Django. Skilled in deploying cloud-native applications on AWS and Azure, he also leverages TensorFlow, PyTorch, and generative AI models to create scalable, intelligent solutions.He has successfully optimized AI model inference by 40%, improving performance and operational efficiency for clients in finance and healthcare. With a strong focus on real-time data processing and microservices, Brian excels in collaborative environments, delivering impactful, high-performance software. Github https://github.com/k-i-b-i-wott. https://www.linkedin.com/in/briantanui/
-
-### Team Code Repo & Github Profile
-
+- 
+### Team Code Repos & Github Profile
 - https://github.com/Manuel254001/Verydorm
 
-### Team LinkedIn Profiles
+### Team LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/company/verydorm/
+  
 
 ### Advisors
 Ecosystem developers who agreed to provide advisory help during the project implementation phase:
 
 - Based Ambassadors (Interoperability solutions)
+  
+  
 
-## Development Status 
+## Development Status :open_book:
 
-Currently, there is a Frontend [web](https://frontend.verydorm.com) in development
+ - Currently, there is a Frontend [web](https://frontend.verydorm.com) in development
 
-We have created backend API [web](https://backend.verydorm.com) 
+- We have created backend API [web](https://backend.verydorm.com) 
 
-Verydorm Coin is live - [web](https://coin.verydorm.com).
+- Verydorm Coin for Base Blockchain is live on Uniswap - [web](https://coin.verydorm.com).
+We will be Putting it on Polkadot Blockchain During This Level 1 Project.
+  
 
+## Development Roadmap :rocket:
 
+  The Verydorm project will be delivered in **three major milestones** over a span of approximately **4.5 months**. Each milestone builds upon the previous, adding core functionality, user and admin features, and blockchain integration to ensure a full-featured, decentralized property management platform.
 
-## Development Roadmap 
 
 ### Overview
 
 - **Total Estimated Duration:** 4.5 months
 - **Full-Time Equivalent (FTE):**  1
 - **Total Costs:** 10,000 USD
-- **DOT %:** 50%
-
-## 3. Milestone Deliverables
-
-### Milestone 1: MVP Platform Development
-- **Duration:** 2 months  
-- **Deliverables:**
-  - Frontend with property listing and dashboard
-  - Backend with user authentication and database
-  - Smart contracts for listings and ownership proof
-
-### Milestone 2: Blockchain Integration & Testing
-- **Duration:** 1 month  
-- **Deliverables:**
-  - Deploy smart contracts to Base testnet
-  - Web3 wallet integration
-  - Initial property verification and transactions
-  - Community tester feedback
-
-### Milestone 3: Property Management Features
-- **Duration:** 1.5 months  
-- **Deliverables:**
-  - Tenant placement with KYC tools
-  - Rent collection and reminders
-  - Legal automation (e.g., notices)
-  - Maintenance request system
-  - Verydorm Coin payments
-
-| Number | Deliverable | Specification | Duration |
-| ------:| ----------- | ------------- | -------- |
-| **1.a** | Frontend Platform | We will implement a responsive frontend interface with property listing features and a user dashboard for landlords, tenants, and admins. |  (20 days) |
-| **1.b** | Backend Platform | We will build a backend system with user authentication, role-based access control, and a secure database for storing listings, user data, and activity logs. |  (20 days) |
-| **1.c** | Smart Contracts (MVP) | We will develop and test Ethereum-compatible smart contracts to manage property listings and prove ownership on-chain. Contracts will be designed for upgradeability. |  (20 days) |
-| **2.a** | Smart Contract Deployment | We will deploy the smart contracts developed in Milestone 1 to the Base testnet and ensure they are verifiable, accessible, and integrated with the frontend. |  (7-8 days) |
-| **2.b** | Web3 Wallet Integration | We will integrate Web3 wallets (e.g. MetaMask) into the platform, enabling users to sign transactions and interact with contracts directly. |  (7-8 days) |
-| **2.c** | Property Transaction Testing | We will conduct on-chain test transactions for property verification and ownership transfer, including handling edge cases and failed transactions. | (7-8 days) |
-| **2.d** | Community Feedback | We will engage community testers to explore the platform, collect structured feedback via surveys/forms, and implement critical suggestions. |  (7-8 days) |
-| **3.a** | Tenant Onboarding & KYC | We will implement a tenant placement system with integrated KYC tools to verify identity before engaging in contracts. |  (9 days) |
-| **3.b** | Rent Collection System | We will build a rent payment feature with automatic due-date reminders and payment history tracking, supporting both fiat and crypto. |  (9 days) |
-| **3.c** | Legal Automation | We will integrate automation tools to generate legal notices, such as eviction warnings or overdue rent alerts, based on tenant behavior. | (9 days) |
-| **3.d** | Maintenance Request System | We will add a feature for tenants to submit maintenance requests, which landlords or property managers can respond to via the dashboard. | (9 days) |
-| **3.e** | Verydorm Coin Payments | We will enable payment and service functionalities using Verydorm Coin, including wallet balance tracking and smart contract-triggered payments. | (9 days) |
+- **DOT %:** 50% 
 
 
+### 🧱 Milestone 1: MVP Platform Development
 
+- **Estimated Duration:** 2 Months  
+- **Objective:** Deliver a functional MVP platform for end-users with essential features to list, browse, and view properties.
+
+#### ✅ Key Deliverables:
+- 🚀 **Frontend Interface**:
+  - User dashboard and responsive UI for seamless experience
+  - Property search interface with maps and filters
+  - Individual property detail pages with amenities display (WiFi, Parking, Nearby places, etc.)
+
+- ⚙️ **Backend Development**:
+  - User registration, login, and role-based authentication
+  - Relational database setup for property, user, and booking data
+
+- 🔗 **Integration**:
+  - Full stack integration between frontend and backend
+  - Search with filters, map view, and pagination for property browsing
+
+- 💡 **Additional Features**:
+  - Display real-time room availability and pricing fluctuations
+  - Dynamic user interface updates with latest discounts and offers
+
+- 🧪 **Testing**:
+  - Unit, integration, and user acceptance testing of all MVP features
+
+
+### 🛠️ Milestone 2: Admin & Staff Management System
+
+- **Estimated Duration:** 1 Month  
+- **Objective:** Build robust tools for backend admin, support staff, and user interaction moderation.
+
+#### ✅ Key Deliverables:
+- 🔐 **Admin Portal**:
+  - Add/Remove staff with role assignment
+  - Full KYC verification workflow for users and properties
+
+- 🤝 **Support Staff Tools**:
+  - Interface to verify, approve, or reject property listings
+  - Moderation tools for managing comments, reviews, and ratings
+
+- 🧾 **User Enhancements**:
+  - Report and flag inappropriate comments or listings
+  - Discount coupons automatically applied during booking
+  - Post-booking feedback system with ratings and reviews
+
+- 📷 **Property Listing Management Features**:
+  - Upload and reorder property images
+  - Dynamic pricing panel with discount management
+
+- 🧑‍💻 **Support Integration**:
+  - 3rd-party live chat integration for real-time support
+
+
+
+### 🔗 Milestone 3: Blockchain Integration & Sales Features
+
+- **Estimated Duration:** 1.5 Months  
+- **Objective:** Launch blockchain features and sales mechanisms to support token utility, payments, and community engagement.
+
+#### ✅ Key Deliverables:
+- ⛓️ **Blockchain Deployment**:
+  - Smart contract deployment on the Polkadot blockchain
+  - Launch of **Verydorm Coin**, the platform’s native utility token on Polkadot blockchain
+
+- 🔄 **Crypto Integration**:
+  - Verydorm Coin swappable for cryptocurrency
+  - Integrated payment gateway
+  - Utility of Verydorm Coin For Transactions
+
+- 🔔 **Notifications & Referral**:
+  - Automated payment collection reminders
+  - Referral system to incentivize community growth
+
+- 📢 **Community & Documentation**:
+  - Feedback collection from early testers and community
+  - Official publication of the **Verydorm Whitepaper**
+
+
+
+
+>  **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+
+
+## Milestone 1: MVP Platform Development  Deliverables
+
+| Number | Deliverable | Specification | Duration (days) |
+|--------|-------------|---------------|------------------|
+| **0a** | Frontend MVP | React-based frontend with property listing interface, filterable search with maps and pagination, and individual property pages showing amenities. | 15 |
+| **0b** | Backend MVP | Node.js/Express backend with user authentication, REST API, and Firebase database for listings and users. | 12 |
+| **0c** | Property Search System | Search capability with filters (price, location, amenities), pagination, and map integration. | 8 |
+| **0d** | Property Detail Pages | Pages with room availability, dynamic pricing info (drops, discounts), and service tags (WiFi, parking, proximity info). | 7 |
+| 0e | Integration & Testing | Integrated frontend and backend workflows; full-stack testing of all MVP deliverables. | 8 |
+| 0f | Testing and Testing Guide | Unit and integration tests for frontend/backend logic. Guide will describe how to run and validate tests. | 5 |
+| 0g | Documentation | Inline documentation and tutorial for platform setup and usage. | 5 |
+
+
+## Milestone 2: Admin & Staff Management System  Deliverables
+
+
+| Number | Deliverable | Specification | Duration (days) |
+|--------|-------------|---------------|------------------|
+| **0a** | Admin Panel | Functionality to manage staff roles, perform KYC, and moderate user/property content. | 7 |
+| **0b** | Support Staff Interface | Tools for verifying listings, moderating reviews, and handling user reports. | 5 |
+| **0c** | Enhanced User Booking | Interface for users to book properties with auto-applied coupons and provide feedback. | 4 |
+| **0d** | Image & Content Management | Upload/rearrange multiple images, manage dynamic pricing plans and discount visibility. | 4 |
+| 0e | Live Support Integration | Integration with a 3rd-party LiveChat system for real-time user support. | 4 |
+| 0f | Testing and Testing Guide | Tests for admin workflows and staff moderation tools. Guide for validating system functionalities. | 3 |
+| 0g | Documentation | Documentation for admin panel setup and staff operations. | 3 |
+
+
+## Milestone 3: Blockchain Integration & Sales Features  Deliverables
+
+| Number | Deliverable | Specification | Duration (days) |
+|--------|-------------|---------------|------------------|
+| **0a** | Smart Contract Deployment | Smart contract development and deployment on Polkadot blockchain. | 10 |
+| **0b** | Verydorm Coin | Launch of Verydorm Coin as a utility token, swappable for other  cryptocurrency. | 6 |
+| **0c** | Crypto Payment Integration | Integration of wallet connection and crypto-based booking/payment system. | 6 |
+| **0d** | Referral and Incentive System | Functionality for users to refer others and earn Verydorm coins. | 4 |
+| 0e | Notification System | Payment reminders, booking confirmations, and updates via email/push alerts. | 3 |
+| 0f | Whitepaper | Release of the official Verydorm whitepaper detailing technology, tokenomics, and vision. | 4 |
+| 0g | Community Testing | Collect and integrate feedback from early community testers via surveys and open channels. | 4 |
+| 0h | Article | Publish an article/workshop on deploying blockchain components for property. | 2 |
+| 0i | Testing and Testing Guide | Smart contract testing and payment flow verification. Includes a guide to replicate test scenarios. | 3 |
+| 0j | Documentation | Technical documentation for smart contracts, token, and blockchain features. | 3 |
 
 
 ## 4. Future Plans
 
-- **Mobile Apps:** Native iOS and Android apps for landlords, tenants, and managers  
-- **AI Tools:** Smart pricing, fraud prediction, tenant analysis  
+- **Mobile Apps:**  iOS and Android apps for landlords, tenants, and managers  
+- **AI Integration:** Smart pricing, fraud prediction, tenant analysis  
 - **Global Expansion:** Focus on Africa and other Developing Countries  
 - **Token Ecosystem:** $VERYDORM for staking, access, and discounts
 
@@ -203,6 +314,8 @@ Verydorm Coin is live - [web](https://coin.verydorm.com).
 
 - **Integration Into Search Engines and Travel Booking Sites:** Search property records from hotel booking sites like Google and Booking.com via our api partner program integration.
 
+
+  
 
 
 ## 5. Additional Information
