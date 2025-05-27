@@ -94,7 +94,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [KodaLabs](https://github.com/kodadot)                       | [Multichain Identity Indexer](./multichain_identity_indexer.md)                     | [GitHub](https://github.com/kodadot)               | ☐          |        ☐       |      ☐      |
 | [Zondax AG](https://zondax.ch/)                       | [MigrationEase](./MigrationEase.md)                     | [GitHub](https://github.com/zondax)               | ☐          |        ☐       |      ☐      |
 | [Dota Network](https://x.com/dot20_dota)                       | [dairdrop](./docname.md)                     | [GitHub](https://github.com/dota-network)               | ☐          |        ☐       |      ☐      |
-| [Swush Labs](https://github.com/swush-labs/)                       | [Swush DEX Aggregator](./swush-dex-aggregator.md)                     | [GitHub](https://github.com/swush-labs/)               | ☐          |        ☒       |      ☐      |
+| [Swush Labs](https://github.com/swush-labs/)                       | [Swush DEX Aggregator](./swush-dex-aggregator.md)                     | [GitHub](https://github.com/swush-labs/)               | ☐          |        ☒       |      ☒      |
 | [QueryWeb3](https://queryweb3.com/)                       | [QueryWeb3](./queryWeb3.md)                     | [GitHub](https://github.com/Query-Web3/)               | ☐          |        ☐       |      ☐      |
 
 
