@@ -46,21 +46,24 @@ All NFTs, including new ship models, will be simulated on-chain in this mileston
 
 ### Gameplay
 
-DotStriker! isn’t just intended to be a great technical showcase. The ultimate goal is to design the game to be *fun*. We've carefully considered the setting, the motivations that keep players engaged, and how to design gameplay that’s rewarding and emotionally resonant.
+DotStriker! isn’t just intended to be a great technical showcase. The ultimate goal is to design the game to be _fun_. We've carefully considered the setting, the motivations that keep players engaged, and how to design gameplay that’s rewarding and emotionally resonant.
 
 #### Visual Identity through NFTs
+
 We use stylized, meme-inspired NFT ships to build emotional attachment. These visuals aren’t just cosmetic—they represent identity, rarity, and value. <br/>
 <img src="https://github.com/oyonika/dotstriker/blob/master/applications/coin_1.png?raw=true" width="150" height="140" alt="Meme coin">
 <img src="https://github.com/oyonika/dotstriker/blob/master/applications/coin_2.png?raw=true" width="150" height="140" alt="Meme coin">
 <img src="https://github.com/oyonika/dotstriker/blob/master/applications/coin_3.png?raw=true" width="150" height="140" alt="Meme coin"><br/>
 
-
 #### On-Chain Incentives that Matter
+
 Players are driven by:
-- *Long-term goals*: Find and trade rare NFTs.
-- *Short-term goals*: Recover more DOT than they staked (e.g., enter with 5 DOT, aim to exit with 10).
+
+- _Long-term goals_: Find and trade rare NFTs.
+- _Short-term goals_: Recover more DOT than they staked (e.g., enter with 5 DOT, aim to exit with 10).
 
 #### Gameplay Loop
+
 When a player joins with 5 DOT, that value is scattered as in-game resources across the map—alongside other players’ DOT. **The objective: collect your own and compete for others, all on-chain in real time.**
 
 This balance of visual appeal, risk, and real value makes DotStriker! a compelling on-chain game, not just a tech demo.
@@ -70,14 +73,6 @@ This balance of visual appeal, risk, and real value makes DotStriker! a compelli
 [![Rust][Rust]][Rust-url]
 [![Unity][Unity]][Unity-url]
 [![Polkadot][Polkadot]][Polkadot-url]
-
-### Building DotStriker!
-
-Watch our developers talk a little bit about the idea and how it was built:
-<br />
-<video src="https://youtube.com/shorts/fRfvrtR77ak" controls></video>
-<br />
-If you cannot see the preview on your browser, [here](https://youtube.com/shorts/fRfvrtR77ak) is the link.
 
 ### Playing DotStriker!
 
@@ -126,6 +121,7 @@ Like many ambitious projects, Dotstriker! began as a humble proof-of-concept nap
 
 ### Team Code Repos
 
+- https://github.com/rio900/on-chain-game
 - https://github.com/rio900/game-client
 - https://github.com/sibra29/game-registration-contract
 
@@ -141,6 +137,14 @@ The team first connected at Consensus 2025, sparking a collaboration that led to
 Roman has over 14 years of software development experience, including several blockchain-related projects. He developed one of the first Libra blockchain transaction explorers, created a C# SDK for Move smart contracts, and built NFT smart contracts using OpenZeppelin.
 
 Oyonika is a software engineer with interests in cryptography and the cutting-edge world of blockchain. She enjoys designing secure protocols, optimizing on-chain logic, and building robust Web3 infrastructures. She has worked with both startups and established companies, turning ideas into full-stack applications by writing code, shipping features, and scaling systems from the ground up.
+
+### Building DotStriker!
+
+Watch our developers talk a little bit about the idea and how it was built:
+<br />
+<video src="https://youtube.com/shorts/fRfvrtR77ak" controls></video>
+<br />
+If you cannot see the preview on your browser, [here](https://youtube.com/shorts/fRfvrtR77ak) is the link.
 
 ## 📊 Development Status
 
@@ -225,7 +229,7 @@ DotStriker! will position Polkadot as the leader in fully on-chain, real-time mu
 |        | **Total Economy & Docs** |                                                                                                | **11** |
 |        | **Grand Total**          |                                                                                                | **75** |
 
-#### *Invoice breakdown*: 75h × $65/h = $4,875
+#### _Invoice breakdown_: 75h × $65/h = $4,875
 
 [Rust]: https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=white
 [Rust-url]: https://www.rust-lang.org/
