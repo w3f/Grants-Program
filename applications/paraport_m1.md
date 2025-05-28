@@ -23,6 +23,7 @@ ParaPort is based on the academic research paper ["Protocol for Unifying Cross-C
 - Streamlined processing that handles bridging before executing user-intended transactions in a seamless flow
 - Simple, customizable user interface requiring only signatures from the user
 - Readily embeddable with minimal configuration
+- Out-of-the-box support for parachains like AssetHub and Hydration
 
 By simplifying cross-chain operations, ParaPort aims to increase the adoption of Polkadot parachains, create a more cohesive user experience across the ecosystem, and enable new possibilities for cross-chain applications.
 ![image](https://github.com/user-attachments/assets/51c04576-82d7-42bb-a0ee-4a8c7e3fa8b4)
@@ -99,6 +100,8 @@ This architecture ensures *invisible complexity* for the user while preserving d
 
 **ParaPort** adds value to the Polkadot ecosystem by providing an essential bridging abstraction for any cross-chain operation. Without it, dApp developers must implement complicated bridging logic or force users through manual transfers. ParaPort revolutionizes the user experience by eliminating context switching, delivering a consistent bridging flow across all applications, and making cross-chain complexity invisible—letting users focus on their intended actions. At the same time, the SDK intelligently handles token movements behind the scenes.
 
+With the upcoming transition of assets from the Polkadot Relay Chain to Polkadot Hub, ParaPort's expansion to support parachains like Hydration ensures that users will continue to experience seamless cross-chain operations regardless of architectural changes in the ecosystem.
+
 - **Use Cases**  
   - **NFT Minting**: Move DOT or parachain-specific tokens for minting fees automatically.  
   - **Swapping & DEX**: Cross-chain token exchanges can incorporate ParaPort to route liquidity from any chain.  
@@ -152,7 +155,7 @@ Ecosystem developers who agreed to provide advisory help during the project impl
 
 ## Development Status :open_book:
 
-We have initialized the [exezbcz/paraport](https://github.com/exezbcz/paraport) repository and are ready for SDK development. Polkadot network and People chain. As mentioned, we have installed the Polkadot package and an initial setup for the Relay chain, People chain, and Polkadot AssetHub, as they will be the base point of our development. All development tasks are tracked in [github.com/exezbcz/paraport/1](https://github.com/exezbcz/paraport/milestone/1)—Milestone 1 track.
+We have initialized the [exezbcz/paraport](https://github.com/exezbcz/paraport) repository and are ready for SDK development. Polkadot network and People chain. As mentioned, we have installed the Polkadot package and an initial setup for the Relay chain, People chain, Hydration parachain and Polkadot AssetHub, as they will be the base point of our development. All development tasks are tracked in [github.com/exezbcz/paraport/1](https://github.com/exezbcz/paraport/milestone/1)—Milestone 1 track.
 
 
 ## Development Roadmap :nut_and_bolt:
@@ -182,6 +185,7 @@ We have initialized the [exezbcz/paraport](https://github.com/exezbcz/paraport) 
 | 2b. | Inline UI | Progress visualization, customization API, error recovery UI, mobile-first design, state management, and minimal configuration options. |
 | 2c. | UI Component Library | Open-source Figma file containing all UI components, states, and design patterns for easy customization and implementation. |
 | 3a. | Basic Error Handling | System, network, transaction, and user interaction error handlers with recovery strategies, retry mechanisms, and transaction reset capabilities. |
+| 3b. | Hydration Parachain Integration | Full integration of Hydration parachain with support for its native tokens and cross-chain operations |
 
 As the table with deliveries can be hard to comprehend, we list a detailed list of deliverables below.
 
@@ -269,6 +273,14 @@ Resource Optimization: Implement intelligent connection pooling, request batchin
 - **Retry Mechanism**: Develop functionality to identify and restart failed teleport operations with error handling.
 - **Transaction Reset**: Design functionality to reset failed transactions to their initial state for retry attempts.
 
+### 3b. Hydration Parachain Integration
+- **Chain Configuration**: Set up Hydration parachain configuration within the ParaPort system, including RPC endpoints and network identifiers.
+- **Token Support**: Add support for native token on the Hydration parachain.
+- **Cross-Chain Routes**: Establish and test cross-chain routes between Hydration and other supported chains (Polkadot relay chain).
+- **Fee Calculation**: Implement accurate fee calculation for transfers to and from the Hydration parachain.
+- **Example Implementation**: Create a reference implementation showcasing cross-chain operations with Hydration.
+- **Documentation**: Provide specific documentation for Hydration integration and use cases.
+
 ## Future Plans 🔭
 
 After successfully implementing ParaPort's core bridging functionalities, our focus will shift toward the following expansions and improvements:
@@ -287,6 +299,9 @@ After successfully implementing ParaPort's core bridging functionalities, our fo
 
 6. **XCM bridge modal**
     - Develop an easy-to-plug cross-chain bridging modal that maintains a consistent user experience across all integrated applications.
+
+7. **Additional Parachain Support**
+    - Continue to expand support for emerging parachains in the Polkadot ecosystem based on user demand and ecosystem growth.
 
 
 ## Referral Program (optional) :moneybag:
