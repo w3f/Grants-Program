@@ -213,7 +213,7 @@ This section should break the development roadmap down into milestones and deliv
 
 - **Estimated Duration:** 8 weeks
 - **Full-Time Equivalent (FTE):**  2 Full-Time Equivalent.
-- **Total Costs:** $9600
+- **Total Costs:** $9650
 
 > Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
 
@@ -222,10 +222,13 @@ This section should break the development roadmap down into milestones and deliv
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **video tutorial** of how to use the tool and cover all of the LP tool automator parameters for users, and will provide extensive **documentation** for all of the contracts deployed (Via Github Pages) |
 | 0c. | Testing and Testing Guide | We will cover the core functions of the contracts deployed with hardhat and foundry (Deposit, withdraw,swap, liquidity minting,liqudity burning, XCM messages). We will cover the backend & frontend with unit tests. All of the testing guide will be on github pages |
-| 0d. | Article | [https://x.com/Gabik_B](Gabriel) would be building in public, and covering most of the progress. Upon completion we will publish an article about (milestone 1, milestone 2), our MVP functionalities, and cover future plans of the development.|
-| 1. | Feature X | We will create a feature that will... (Please describe in detail) |
-| 2. | Feature Y | The Y feature will... (Please describe in detail) |
-| 3. | Feature Z | The Z feature will... (Please describe in detail) |
+| 0d. | Article | [Gabriel](https://x.com/Gabik_B) would be building in public, and covering most of the progress. Upon completion we will publish an article about (milestone 1, milestone 2), our MVP functionalities, and cover future plans of the development.|
+
+| 1. | Core Contracts| We will finish development and test coverage of our Core contracts. (Gabriel) |
+| 2. | Core Backend with database | (Gabriel ( LP data aggregator, Investment Decision Worker) (Rest Rashad) |
+| 3. | Core Frontend | The Z feature will... (Please describe in detail) (Rashad) |
+
+
 
 ### 💰 Budget Breakdown
 
@@ -233,14 +236,16 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | Features X, Y | $5,000 | 1.5 months |
-| 2 | Feature Z | $5,000 | 1.5 months |
-| **Total** | | **$10,000** | **3 months** |
+# 2 conratcs, 6 backend , 2 frontend 
+| 1 | Features X, Y | $7,200 | 6 weeks |
+| 2 | Feature Z | $2,400 | 2 weeks |
+| **Total** | | **$9,650** | **8 weeks** |
 
 Make sure you show clearly what the funding is going towards (e.g. 30 hours of a full time employee at $X / hour).
 
 1 x 30 hours of full-time employee at $20/hour
 2 x 15 hours of part-time employee at $20/hour
+$50 AWS hosting, Vercel hosting, Testing Gas Fees, Domain name(Liquidot.xyz)
 
 ## 🔮 Future Plans
 
@@ -249,7 +254,7 @@ Please include:
 - How you intend to continue development after the Fast-Grant
 - (Rashad Yap)
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
-- (Theo Yap) (Maybe mention
+- (Theo Yap)
 - Your vision for the project's growth and impact in the Polkadot ecosystem
 - (Theo Yap)
 
