@@ -3,11 +3,11 @@
 ## 🌟 Project Overview
 
 - A brief description of your project
-  (Theo Yap)
+  LiquiDOT is a customizable LP manager designed to enhance and simplify DeFi participation. Built with the Polkadot ecosystem in mind, LiquiDOT empowers users to manage LP strategies with precision, automation, and cross-chain functionality.  
 - An indication of how your project relates to / integrates into Polkadot
-  (Theo Yap)
+  Polkadot’s infrastructure enables LiquiDOT to function effectively across chains via smart contract deployment and cross-chain messaging. This cross-chain operability is crucial for users who operate on multiple parachains or wish to diversify across ecosystems. By leveraging Polkadot, LiquiDOT ensures interoperability, scalability, and security.
 - An indication of why your team is interested in creating this project
-  (Theo Yap)
+  Our team got interested in creating LiquiDOT because we’ve spent some time in the DeFi space and noticed how hard it still is to manage liquidity in a smart and flexible way. Whether it's basic automation or avoiding impermanent loss, the tools out there just don’t offer much control. You either have to manually monitor everything or rely on very rigid systems. We wanted to build something that actually helps — something that gives people the tools to manage their liquidity seamlessly, from a single interface, in accordance to the risk strategy of their choice. Each of us brings a slightly different perspective: one of us works in fintech, another is deep into mobile full-stack development, and another is into blockchain data analytics. We saw a shared opportunity to combine those skills and build a tool we’d actually want to use ourselves. 
 - (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/) (We may do it)
 
 ### 🔍 Project Details
