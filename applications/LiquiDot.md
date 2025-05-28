@@ -219,10 +219,10 @@ This section should break the development roadmap down into milestones and deliv
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense (Research Into that (Gabriel)) |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... (Via Github Pages) (Contract docs (Functions ETC, Provide Backend Docs, Fontnend Docs, and User Docs) |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. (Manual Testing, Extensive Unit Tests) |
-| 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. (Publish on Medium,X) |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both **video tutorial** of how to use the tool and cover all of the LP tool automator parameters for users, and will provide extensive **documentation** for all of the contracts deployed (Via Github Pages) |
+| 0c. | Testing and Testing Guide | We will cover the core functions of the contracts deployed with hardhat and foundry (Deposit, withdraw,swap, liquidity minting,liqudity burning, XCM messages). We will cover the backend & frontend with unit tests. All of the testing guide will be on github pages |
+| 0d. | Article | [https://x.com/Gabik_B](Gabriel) would be building in public, and covering most of the progress. Upon completion we will publish an article about (milestone 1, milestone 2), our MVP functionalities, and cover future plans of the development.|
 | 1. | Feature X | We will create a feature that will... (Please describe in detail) |
 | 2. | Feature Y | The Y feature will... (Please describe in detail) |
 | 3. | Feature Z | The Z feature will... (Please describe in detail) |
