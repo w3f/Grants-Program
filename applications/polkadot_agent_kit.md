@@ -1,7 +1,8 @@
 # Polkadot Agent Kit
 
 - **Team Name:** Elastic Labs (https://elasticlabs.org/) - Core contributors of [OpenGuild Community](https://openguild.wtf).
-- **Payment Address:** 15NL11ZoE9KUY54VWUzC3mawgzsQ2UcniXKSAFUa1hC8vnKd (Elastic Labs Multisig)
+- **Payment Address:** 
+  - **DOT**: 15NL11ZoE9KUY54VWUzC3mawgzsQ2UcniXKSAFUa1hC8vnKd (Elastic Labs Multisig)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview
