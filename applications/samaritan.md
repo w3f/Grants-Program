@@ -184,7 +184,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 
 - **Estimated duration:** 1 month  
 - **FTE:** 1.5  
-- **Costs:** 14,400 USD
+- **Costs:** $14,400
 
 | Number | Deliverable | Specification |
 |--------|-------------|---------------|
@@ -206,7 +206,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 
 - **Estimated Duration:** 1.5 months  
 - **FTE:** 1.5  
-- **Costs:** 21,600 USD
+- **Costs:** $21,600
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
@@ -226,7 +226,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 
 - **Estimated Duration:** 1.5 months  
 - **FTE:** 1.5  
-- **Costs:** 21,600 USD
+- **Costs:** $21,600
 
 
 | Number | Deliverable | Specification |
