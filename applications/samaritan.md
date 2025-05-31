@@ -214,7 +214,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 | **0b.** | Documentation | Inline code documentation and a technical guide explaining the real-time sync engine, how it integrates with SwarmNL, and how clients can listen for updates and push changes. |
 | **0c.** | Testing + Testing Guide | Unit and integration tests covering document syncing, subscription logic, and merge resolution. A test guide will explain how to run local and simulated multi-client scenarios. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **1.** | Real-Time Document Engine (Rust) | A Rust-based backend that maintains live JSON documents, handles client subscriptions, and broadcasts updates using SwarmNL. |
+| **1.** | Real-Time Document Engine | A Rust-based backend that maintains live JSON documents, handles client subscriptions, and broadcasts updates using SwarmNL. |
 | **2.** | Pub/Sub Protocol | A structured topic-based protocol for syncing documents and metadata updates (e.g., `doc:update`, `doc:delete`, `user:presence`). |
 | **3.** | TypeScript/Javascript Client SDK | A browser-compatible SDK for subscribing to documents, applying updates, listening for changes and handling reconnection logic. |
 | **4.** | Integration with Auth System | Real-time access control using tokens from Milestone 1. Ensures only authenticated and authorized users can read/write documents. |
@@ -236,8 +236,8 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 | **0c.** | Testing and Testing Guide | Unit and integration tests covering upload, retrieval, access enforcement, CID handling, and signature validation. A testing guide will explain test execution. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | Publish an article describing Samaritan’s decentralized storage architecture, SwarmNL integration, and advantages over centralized cloud storage. |
-| **1.** | Rust-based Storage Node | Core daemon implemented in Rust handling storage, CID resolution, signature validation, access control, and peer synchronization via SwarmNL. |
-| **2.** | Storage Gateway API (Rust) | RESTful and WebSocket gateway exposing endpoints for upload/download with signed request validation and SwarmNL integration. |
+| **1.** | Storage Node | Core daemon implemented in Rust handling storage, CID resolution, signature validation, access control, and peer synchronization via SwarmNL. |
+| **2.** | Storage Gateway API | RESTful and WebSocket gateway exposing endpoints for upload/download with signed request validation and SwarmNL integration. |
 | **3.** | TypeScript SDK | Browser- and Node.js-compatible SDK for interacting with the storage layer. |
 | **4.** | React Admin Interface | Dashboard for developers and node operators to view stored content, metadata, and node replication status. |
 | **5.** | Binary Publishing | Publish compiled binaries for easy installation and deployment on popular platforms (Linux, macOS, Windows). |
