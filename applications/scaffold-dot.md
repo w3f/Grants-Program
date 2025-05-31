@@ -2,28 +2,30 @@
 
 ## 🌟 Project Overview
 
-Please provide the following:
+Scaffold-DOT is an open source, fullstack toolkit for building, testing, and deploying EVM smart contracts onto Polkadot Hub.
 
-- If the name of your project is not descriptive, a tagline (one sentence summary)
-Open source, fullstack toolkit for building and deploying EVM smart contracts onto Polkadot Hub.
-- A brief description of your project
-A fork of scaffold-eth. Built using NextJS, Reown AppKit, Hardhat, Wagmi, Viem, and Typescript. Possibly support Foundry in the future.
-- An indication of how your project relates to / integrates into Polkadot
-0 to Polkadot Hub for EVM devs and new devs. Great for hackathons, tinkering and MVPs. Integrates hardhat-polkadot, resolc, hardhat-polkadot-node packages.
-- An indication of why your team is interested in creating this project
+Built using NextJS, Reown AppKit, Hardhat, Wagmi, Viem, and Typescript. Foundry support planned in the future.
+
+0 to Polkadot Hub for EVM devs and new devs. Great for hackathons, tinkering and MVPs. Integrates hardhat-polkadot, resolc, hardhat-polkadot-node packages with a fork of scaffold-eth.
+
 Scaffold-DOT will be a fully configured way to get started with deploying EVM contracts to Polkadot Hub. Let's have this ready for the releases to Kusama Hub and Polkadot Hub.
 - (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/)
 
 ### 🔍 Project Details
 
-We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
+#### Tech Stack:
+NextJS for frontend/backend
+Reown AppKit wallet connection including email and social wallet creation in app
+Hardhat for EVM testing and deployment
+Wagmi and Viem for interacting with smart contracts
+Scaffold-DOT is a fork of Scaffold-ETH 2.
+*Foundry will be added when foundry-polkadot is available*
 
-- An overview of the technology stack to be used
-NextJS for frontend, Reown AppKit wallet connection including email and social wallet creation in app, hardhat for EVM testing and deployment *may add Foundry support if possible, pending paritytech/foundry-polkadot*, Wagmi and Viem for interacting with blockchain. Scaffold-DOT is a fork of Scaffold-ETH 2.
-- Documentation of core components, protocols, architecture, etc. to be deployed
-It's a scaffold-eth fork that is configured for deploying to Polkadot Hub. See github.com/scaffold-eth/scaffold-eth-2
-- Any PoC/MVP or other relevant prior work or research on the topic
-Have been using scaffold-eth since version 1. Have lots of experience with scaffold-eth-2. 
+#### Documentation of architecture
+Documentation is provided in README.md files and notes within code. More documentation to come.
+
+#### MVP / Experience:
+One contributor has been using scaffold-eth for ~3 years, another contributor has been in Polkadot for ~3 years. We're forking a project called scaffold-ETH which is a familiar toolkit in the ETH space.
 - Mockups/designs of any UI components
 - Data models / API specifications of the core functionality
 - What your project is *not* or will *not* provide or implement
@@ -31,22 +33,13 @@ Will not support smart contracts written in Ink! Not for running DOOM :)
 
 ### 🧩 Ecosystem Fit
 
-Help us locate your project in the Polkadot landscape and what problems it tries to solve by answering each of these questions:
+Toolkit is aimed at devs familiar with ethereum tools that want to deploy to Hub. It's a great toolkit for new devs, hackathons and can be built on top of for production level dapps.
 
-- Where and how does your project fit into the ecosystem?
-Great toolkit for hackathons and onboarding devs to Polkadot Hub. 
-- Who is your target audience?
-Tinkerers, new devs, Polkadot curious Solidity devs.
-- What need(s) does your project meet?
-Get people deploying onto Westend Hub and Polkadot Hub with minimal configuration.
-- Are there any other projects similar to yours in the Polkadot ecosystem?
-I don't think so, just came from Consensus hackathon, mentioned this to a few Polkadot devs and they said yeah that would be cool to have.
-  - If so, how is your project different?
-  It's a fork of scaffold-eth 2 but will be configured with hardhat-polkadot, resolc, PVM local chain, rebranded to look Polkadot native with Polkadot HUB design system.
-  - If not, why might such a project not exist yet?
-  Hub is brand new, haven't needed this before now
+The project is meant to provide a fully configured repo to make it dead simple to deploy to Hub.
 
-> **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
+There are no projects that bridge Ethereum developers to Polkadot quite like this, could be wrong though. I don't know what I don't know.
+I just came from Consensus Toronto hackathon, mentioned this to a few Polkadot devs and they said yeah that would be cool to have.
+Hub is pretty new, the ecosystem has been focused on Ink! smart contract tooling, there hasn't been a need for this before now.
 
 ## 👥 Team
 
@@ -57,13 +50,12 @@ I don't think so, just came from Consensus hackathon, mentioned this to a few Po
 
 ### Team members
 
-Please list the legal name of all grant beneficiaries. Solo developers (1-person teams) are eligible for funding.
 Miles Patterson, Anwesh Nayak
 
 #### LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/in/miles-patterson-a02653139
-- https://www.linkedin.com/{person_2}
+- https://www.linkedin.com/anweshnayak
 
 ### Team Code Repos
 
@@ -76,24 +68,14 @@ Please also provide the GitHub accounts of all team members:
 
 ### Team's experience
 
-Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
 Miles has ~3 years of full stack dev experience. He has been using scaffold-eth since the first version and provides support in the various scaffold-eth telegram chatrooms. Has written tutorials on how to implement a proxy factory with scaffold-eth 2 for Minimal Proxies, UUPS, and Upgradeable Beacon Proxies including additional components for doing so. He has also forked buidlguidlv3 for an MVP of FanSociety.xyz
 Anwesh has ~5 years full stack dev experience. Previously worked as a tech lead at B2B fintech firm. Was previously a Polkadot Ambassador and the community manager/moderator of the official Polkadot/Kusama discord. Has been contributing to Polkadot ecosystem for >2 years. Has participated in Thousand Contributors Programme by w3f and has been adding suggestions/improvements across the w3f github projects (polkadot-wiki). Also wrote a comprehensive tutorial to get started with Polkadot using the polkadot-js API. https://polkadotjs-developer-hub.gitbook.io/
 
 ## 📊 Development Status
 
-If you've already started implementing your project, please provide a link and a description of the code. Otherwise, please provide some documentation on the research and other work you have conducted before applying.
 It's a fork of scaffold-eth 2. Scaffold-DOT repo can be located at https://github.com/scaffold-dot/scaffold-dot
 
 ## 📅 Development Roadmap
-
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, please describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality.
-
-**Important notes:**
-- Each milestone is capped at **$5,000 USD**
-- Milestones must be delivered within **3 months** of approval
-- The maximum grant amount is **$10,000 USD** per application (up to **$15,000 USD** per project in exceptional cases)
-- You will only receive payment after successful milestone delivery
 
 ### Overview
 
@@ -110,42 +92,26 @@ This section should break the development roadmap down into milestones and deliv
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
 | 1. | MVP | Will fork the scaffold-eth 2 repository and configure hardhat with hardhat-polkadot, hardhat-polkadot-node and resolc. User will be able to clone the repository, run and deploy to local chain, deploy to WestEnd Hub with zero configuration, and test the dapp with the frontend that is generated from the contract ABI. Toolkit will be capable of deploying to Polkadot and Kusama Hub when they're publicly available.
-| 2. | Rebrand | Will update the look and feel of the frontend to follow Polkadot's Brand Hub colors, fonts, etc. Quicklink to Westend faucet.
-| 3. | Foundry | Add support for Foundry. Relying on Parity Tech to finish their fork.
+| 2. | UI/UX | Will update the look and feel of the frontend to follow Polkadot's Brand Hub colors, fonts, etc. Quicklink to Westend faucet. Swap wallet connection library for social and email login without browser extension.
+| 3. | Foundry | Add support for Foundry. Relying on Parity Tech to finish their fork. npx cli tool to configure the build with hardhat vs foundry. Configure Foundry for polkadot hub.
 
 ### 💰 Budget Breakdown
-
-Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
 | 1 | MVP | $4000 | 3 weeks | 40 hours of fulltime at $100 USD / hr.
-| 2 | Rebrand | $2000 | 3 weeks | 20 hours of partime at $100 USD / hr.
+| 2 | UI/UX | $2500 | 3 weeks | 25 hours of partime at $100 USD / hr.
 | 3 | Foundry | $2000 | 2 weeks | 20 hours of partime at $100 USD / hr.
-| **Total** | | **$8,000** | **6 weeks** |
-
-Make sure you show clearly what the funding is going towards (e.g. 30 hours of a full time employee at $X / hour).
+| **Total** | | **$8,500** | **8 weeks** |
 
 ## 🔮 Future Plans
 
-Please include:
-
-- How you intend to continue development after the Fast-Grant
 Fast-Grant success will set us up for OpenGov Treasury proposals if further development is needed, open to other sources.
-- Any plans for seeking additional funding (other grants, VC funding, etc.)
+
 Not sure what will be needed to maintain this long term. If toolkit is useful, the community will fund it.
-- Your vision for the project's growth and impact in the Polkadot ecosystem
-Polkadot Hub is coming, let's have things ready for devs (with a variety of skill/experience) to make use of Hub quickly. Scaffold-DOT should be useful for tinkerers, hackathons and MVPs. Scaffold-eth has speedrunethereum, a series of challenges that introduce devs to the toolkit and get progressively more challenging and cover a variety of smart contract uses and topics. Could be cool to have something similar for Polkadot ecosystem.
+
+Polkadot Hub is coming, let's have things ready for devs (with a variety of skill/experience) to make use of Hub quickly. Scaffold-DOT should be useful for tinkerers, hackathons and MVPs. Scaffold-eth has speedrunethereum, a series of challenges that introduce devs to the toolkit and get progressively more challenging and cover a variety of smart contract uses and topics. Could be cool to have something similar for scaffold-dot Polkadot ecosystem.
 
 ## ℹ️ Additional Information
 
-Here you can add any additional information that you think is relevant to this application, such as:
-
-- Work you have already done
-We have forked the SE2 repot. Configured it to use hardhat-polkadot, resolc, and working on hardhat-polkadot-node (local PVM chain)
-- If there are any other teams who have already contributed to the project
-Nope.
-- Other funding you may have applied for
-Nope.
-
-Remember that the Fast-Grants Programme is designed as a first step for promising projects. We're looking for projects that can continue to grow beyond this initial funding.
+We have forked the SE2 repo. Configured it to use hardhat-polkadot, resolc, and working on hardhat-polkadot-node (local PVM chain)
