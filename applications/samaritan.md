@@ -134,8 +134,8 @@ Samaritan is the only solution that combines:
 
 ### Team members
 
-Name of team leader: Adedeji Adebayo
-Names of team members: Sacha Lansky
+- Name of team leader: Adedeji Adebayo
+- Names of team members: Sacha Lansky
 
 ### Contact
 
