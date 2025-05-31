@@ -1,4 +1,4 @@
-# Samaritan
+*# Samaritan
 
 - **Team Name:** Algorealm
 - **Payment Details:**
@@ -153,7 +153,7 @@ Samaritan is the only solution that combines:
 
 ### Team's experience
 
-**Adedeji Adebayo** is a dynamic and inquisitive programmer with over 7 years of experience in web development, systems software, and blockchain developemt. He is the founder of Algorealm, a company focused on building foundational infrastructure for decentralized applications.
+Adedeji Adebayo is a dynamic and inquisitive programmer with over 7 years of experience in web development, systems software, and blockchain developemt. He is the founder of Algorealm, a company focused on building foundational infrastructure for decentralized applications.
 Adedeji has earned recognition in the Web3 space, notably securing a top-three position in the Web3 and Tooling category of the Polkadot Hackathon: North America Edition. He also won the KILT category in the Polkadot Hackathon: Europe Edition with a solution tackling property management issues in West Africa.
 He served as core developer on [**SwarmNL**](https://github.com/algorealmInc/SwarmNL), a Rust library for building custom networking layers in decentralized and distributed applications.
 
@@ -257,4 +257,4 @@ Samaritan is part of a broader vision we’ve been pursuing since our initial pr
 
 ## Additional Information :heavy_plus_sign:.
 
-**How did you hear about the Grants Program?** Personal recommendation.
+**How did you hear about the Grants Program?** Personal recommendation.*
