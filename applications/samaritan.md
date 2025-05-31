@@ -37,10 +37,13 @@ Rather than trying to replace all of Firebase, Samaritan focuses on the core fea
 #### Key Features of Samaritan
 
 1. Decentralized Authentication
+
 Samaritan replaces traditional email-and-password systems with a seamless, wallet-based login experience. Users authenticate using cryptographic signatures from wallets like MetaMask or Polkadot.js, allowing for secure, passwordless access without reliance on centralized identity providers. This form of authentication is inherently self-sovereign—users own and control their identity entirely—and it's interoperable across apps, making it easy for developers to support cross-platform login while respecting user privacy and autonomy.
 2. Real-Time Document Sync
+
 Samaritan includes a real-time, peer-to-peer document database built in Rust, designed for speed, safety, and collaboration at scale. It tracks structured JSON data and supports live updates across users and devices, enabling features like shared state, presence, and history. Powered by SwarmNL, it achieves low-latency communication without relying on a central server. While CRDTs may be used internally to handle conflict resolution, the core abstraction remains a developer-friendly document store — not a merge engine. This makes it ideal for building real-time dashboards, multiplayer apps, co-editing tools, and any product that benefits from decentralized, responsive state.
 3. Decentralized Storage
+
 Instead of sending all data to a central server, Samaritan embraces a local-first, peer-to-peer storage model. It uses CRDTs (Conflict-free Replicated Data Types) to ensure that data written offline or in parallel across devices always merges correctly. Data is stored locally, synced in real-time when connections are available, and optionally anchored to IPFS for persistence. This approach not only improves performance and privacy but also makes applications resilient to network interruptions and server outages.
 
 
