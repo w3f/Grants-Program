@@ -256,7 +256,7 @@ Please include:
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
 - (Theo Yap)
 - Your vision for the project's growth and impact in the Polkadot ecosystem
-- (Theo Yap)
+- We see LiquiDOT growing into a core piece of DeFi infrastructure within the Polkadot ecosystem. As more and more parachains, DEXes, and assets come emerge, managing liquidity across them will only get more fragmented and time-consuming. Our goal is to solve that with a single, reliable platform that lets users automate their LP strategies, manage risk, and move seamlessly between chains. By integrating closely with Polkadot ecosystem, we aim to offer truly multichain liquidity management from day one. In the long run, we hope LiquiDOT can help lower the barrier to entry for new users, support better capital efficiency for experienced ones, and ultimately encourage deeper participation in Polkadot-based DeFi.
 
 ## ℹ️ Additional Information
 
