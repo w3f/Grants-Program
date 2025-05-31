@@ -139,7 +139,7 @@ Names of team members: Sacha Lansky
 
 ### Contact
 
-- **Contact Name:** Adedjei Adebayo
+- **Contact Name:** Adedeji Adebayo
 - **Contact Email:** adebayodeji15@gmail.com
 
 ### Legal Structure
@@ -187,7 +187,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 | **0a.** | License | MIT License. All code and deliverables for this milestone will be released under the MIT license. |
 | **0b.** | Documentation | Full inline documentation will be provided for all Rust and TypeScript modules. A setup guide will demonstrate how to integrate wallet-based authentication. |
 | **0c.** | Testing and Testing Guide | The authentication logic will be covered with unit and integration tests. A guide will detail how to test signature verification, session handling, and API endpoints. |
-| **0d.** | Docker | A `Dockerfile` and `docker-compose.yml` will be provided to run the Rust backend and React admin panel locally. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **1.** | Authentication Rust Backend | A Rust backend that verifies signatures from Polkadot or Ethereum wallets. It supports login by verifying a signed challenge (nonce), issues JWTs for authenticated sessions, and handles token refresh and revocation. |
 | **2.** | TS/JS Auth SDK | A TypeScript/JavaScript SDK that handles wallet connection, retrieves a challenge from the backend, signs it, and exchanges it for a JWT. Supports both Polkadot.js and MetaMask-compatible wallets. |
 | **3.** | React Admin Panel | A React-based admin dashboard to monitor and test authentication flows, including wallet connections and active sessions. |
@@ -209,7 +209,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | Inline code documentation and a technical guide explaining the real-time sync engine, how it integrates with SwarmNL, and how clients can listen for updates and push changes. |
 | **0c.** | Testing + Testing Guide | Unit and integration tests covering document syncing, subscription logic, and merge resolution. A test guide will explain how to run local and simulated multi-client scenarios. |
-| **0d.** | Docker | A Docker image to run the real-time document sync engine locally for testing and development. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **1.** | Real-Time Document Engine (Rust) | A Rust-based backend that maintains live JSON documents, handles client subscriptions, and broadcasts updates using SwarmNL. |
 | **2.** | Pub/Sub Protocol | A structured topic-based protocol for syncing documents and metadata updates (e.g., `doc:update`, `doc:delete`, `user:presence`). |
 | **3.** | TypeScript/Javascript Client SDK | A browser-compatible SDK for subscribing to documents, applying updates, listening for changes and handling reconnection logic. |
@@ -230,7 +230,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 | **0a.** | License | Code released under the MIT license. |
 | **0b.** | Documentation | Inline code documentation and a comprehensive developer guide detailing how to run storage nodes, connect via SDK, upload/download data, and manage access control. |
 | **0c.** | Testing and Testing Guide | Unit and integration tests covering upload, retrieval, access enforcement, CID handling, and signature validation. A testing guide will explain test execution. |
-| **0d.** | Docker | Dockerfile and docker-compose setup for local deployment of the decentralized storage node with SwarmNL bootstrapping. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | Publish an article describing Samaritan’s decentralized storage architecture, SwarmNL integration, and advantages over centralized cloud storage. |
 | **1.** | Rust-based Storage Node | Core daemon implemented in Rust handling storage, CID resolution, signature validation, access control, and peer synchronization via SwarmNL. |
 | **2.** | Storage Gateway API (Rust) | RESTful and WebSocket gateway exposing endpoints for upload/download with signed request validation and SwarmNL integration. |
