@@ -26,10 +26,10 @@ Documentation is provided in README.md files and notes within code. More documen
 
 #### MVP / Experience:
 One contributor has been using scaffold-eth for ~3 years, another contributor has been in Polkadot for ~3 years. We're forking a project called scaffold-ETH which is a familiar toolkit in the ETH space.
-![Image](https://github.com/user-attachments/assets/12e4a857-84b4-4b1b-a899-862aa0cee084)
 ![Image](https://github.com/user-attachments/assets/8cbcecee-e880-4e4e-85f4-dd262f69655e)
-![Image](https://github.com/user-attachments/assets/130355e7-45ed-4891-915f-50eaa9207293)
+![Image](https://github.com/user-attachments/assets/12e4a857-84b4-4b1b-a899-862aa0cee084)
 ![Image](https://github.com/user-attachments/assets/4b1b2db9-58e1-4d8c-aae9-97f1cf8fb509)
+![Image](https://github.com/user-attachments/assets/130355e7-45ed-4891-915f-50eaa9207293)
 Will not support smart contracts written in Ink! Not for running DOOM :)
 
 ### 🧩 Ecosystem Fit
