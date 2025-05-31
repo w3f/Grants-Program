@@ -98,6 +98,8 @@ A few projects address fragments of what Samaritan offers:
 - **KILT** and **Litentry** provide decentralized identity and verifiable credentials. However, they do not support real-time collaboration, shared state management, or decentralized data synchronization across users and devices.
 - **Crust Network** is focused on decentralized file storage, offering an IPFS-based alternative to cloud storage. While powerful for static content, it does not address dynamic application state or real-time collaboration.
 Apillon is like a Web3 version of AWS, offering modular tools such as storage, identity, and hosting. However, it lacks the real-time sync, collaborative data flow, and decentralized conflict resolution that make Samaritan feel more like using Firebase. Samaritan is designed with the user experience in mind—fast, real-time, and built for seamless collaboration.
+-- **Apillon** is like a Web3 version of AWS, offering modular tools such as storage, identity, and hosting. However, it lacks the real-time sync, collaborative data flow, and decentralized conflict resolution that make Samaritan feel more like using Firebase. Samaritan is designed with the user experience in mind — fast, real-time, and built for quick execution and seamless collaboration.
+
 
 
 Samaritan distinguishes itself by combining decentralized identity, real-time data synchronization, and self-sovereign storage into a cohesive, developer-friendly backend — specifically built for applications that need collaborative, live experiences without relying on centralized infrastructure.
