@@ -5,13 +5,13 @@
 
 DotRing Suite is an open-source **family of four inter-locking Python libraries**—`ec-crypto`, `dotring`, `pyvrf` and `fiat-shamir`—that brings the Web3 Foundation's Bandersnatch Ring VRF and ring-proof standards to the Python ecosystem.([VRF Spec](https://github.com/davxy/bandersnatch-vrfs-spec), [GitHub](https://github.com/davxy/ring-proof-spec/blob/main/specification.md), [Cryptology ePrint Archive](https://eprint.iacr.org/2021/1152))
 
-Whereas the reference implementation lives exclusively in Rust via the [`ark-vrf`](https://crates.io/crates/ark-vrf) crate, security guidances (e.g., NIST FIPS 140-3 IG) explicitly recommends *independent* implementations so results can be cross-verified and single points of failure avoided.
+Whereas the reference implementation lives exclusively in Rust via the [`ark-vrf`](https://crates.io/crates/ark-vrf) and [`ring-proof`](https://github.com/w3f/ring-proof/tree/master/w3f-ring-proof) crate, security guidances (e.g., NIST FIPS 140-3 IG) explicitly recommends *independent* implementations so results can be cross-verified and single points of failure avoided.
 
 Our suite therefore complements the Rust code-base, offering **language diversity, easier auditability, and platform reach**—all without sacrificing performance thanks to a GLV-accelerated Bandersnatch curve core that delivers ≈40 % faster scalar multiplication.([Cryptology ePrint Archive](https://eprint.iacr.org/2021/1152), [Ethereum Research](https://ethresear.ch/t/introducing-bandersnatch-a-fast-elliptic-curve-built-over-the-bls12-381-scalar-field/9957))
 
 Beyond the headline Ring VRF, DotRing Suite fully supports every hashing-to-curve and VRF construction defined in [RFC 9380](https://datatracker.ietf.org/doc/rfc9380/) and [RFC 9381](https://datatracker.ietf.org/doc/rfc9381/), respectively, so developers can mix-and-match curves such as P-256, Edwards25519, Jubjub and Bandersnatch under a common API.
 
-The `fiat-shamir` module supplies a generic transcript/XOF layer (SHAKE128/256) that underpins zero-knowledge protocols and enables seamless composition with future proof systems.
+The `fiat-shamir` module supplies a generic transcript/XOF layer (SHAKE128/256) that is compatible with [`ark-transcript`](https://crates.io/crates/ark-transcript) and underpins zero-knowledge protocols and enables seamless composition with future proof systems.
 
 Together, the four libraries form a complete suite for randomness, privacy-preserving identity, JAM/Safrole consensus and any project needing auditable, modern elliptic-curve cryptography on Python.
 
@@ -26,8 +26,8 @@ The [Bandersnatch VRF](https://github.com/davxy/bandersnatch-vrf-spec) and [Ring
 
 #### Why Us?
 
-As a core component of JAM's consensus mechanism we noticed almost everyone's dependency on [ark-vrf](https://github.com/davxy/ark-vrf)
-library for implementing Ring VRF Signatures. Though it is the best aligned implementation we recognize the need for diverse language support in cryptographic implementations for security. Even beyond that, we see the potential of its use cases outside of blockchain infrastructure. <br/>
+As a core component of JAM's consensus mechanism we noticed almost everyone's dependency on [ark-vrf](https://github.com/davxy/ark-vrf) and [w3f-ring-proof](https://github.com/w3f/ring-proof/tree/master/w3f-ring-proof)
+libraries for implementing Ring VRF Signatures. Though it is the best aligned implementation we recognize the need for diverse language support in cryptographic implementations for security. Even beyond that, we see the potential of its use cases outside of blockchain infrastructure. <br/>
 Our team at Chainscore Labs brings deep expertise in cryptographic research and open-source software development. Rather than merely targeting a specific language demographic, DotRing is about providing an independent, robust implementation that enhances the resilience and adaptability of the ring-vrf specification. Our additional implementation reinforces security by offering cross-checks against the reference Rust implementation and extends the pioneering work of W3F across the broader software ecosystem.
 
 ### Project Details
@@ -50,23 +50,29 @@ The DotRing Ecosystem will be structured as a suite of interoperable Python libr
 
 ##### 1. `ec-crypto`: Foundational Elliptic Curve Library
 
-Objective: To provide a comprehensive, secure, and performant library for core elliptic curve cryptography over various standard and cutting-edge curves, with full support for RFC 9380 Hashing to Curves.
+Objective: To provide a comprehensive, secure, and performant library for core elliptic curve cryptography over various standard and cutting-edge curves, with full support for RFC 9380 Hashing to Curves, implemented from scratch without any deviations from specification.
 Deliverables:
 -   **Curve Arithmetic & Operations**:
     -   Bandersnatch (with GLV endomorphism optimization as per Masson et al.)
-    -   Jubjub (and Banderwagon for use with Bandersnatch proofs if applicable)
+    -   Jubjub and Baby Jubjub
     -   Ed25519 (EdDSA)
     -   NIST P-256
-    -   (Future considerations, if time/resources permit beyond core scope: Pallas, other NIST curves P-384/P-521, secp256k1, BLS12-381)
+    -   NIST P-256  
+    -   NIST P-384  
+    -   NIST P-521  
+    -   curve25519  
+    -   edwards25519
+    -   curve448    
+    -   edwards448  
+    -   secp256k1   
+    -   BLS12-381 G1
+    -   BLS12-381 G2
+
 -   **Standard Cryptographic Functions**: Key generation, point compression/decompression, ECDSA/EdDSA signing and verification (where applicable for the curve).
--   **Hashing to Elliptic Curves (RFC 9380)**:
-    -   Full implementation of all 14 suites listed in Section8 of RFC 9380 ("Suites for Hashing") for the implemented curves. This includes:
-        -   Suites for P-256 (e.g., P256_XMD:SHA-256_SSWU_RO_, P256_XMD:SHA-256_SSWU_NU_)
-        -   Suites for edwards25519 (e.g., edwards25519_XMD:SHA-512_ELL2_RO_, edwards25519_XOF:SHAKE256_ELL2_RO_)
-        -   Support for generic modes like `ExpandMsgXOF` (e.g., with SHAKE256) and `ExpandMsgXMD`.
-        -   Implementation of underlying mapping-to-curve algorithms (Shallue-van de Woestijne, Simplified SWU, Elligator 2, etc.) as required by the suites.
+
 -   Thorough unit tests (aiming for >80% coverage), extensive API documentation, and clear usage examples.
 -   Initial benchmarks for all core operations on supported curves.
+
 
 References: [Masson, Sanso, and Zhang's work on Bandersnatch (ePrint 2021/1152)](https://eprint.iacr.org/2021/1152.pdf), [RFC 9380 - Hashing to Elliptic Curves](https://www.rfc-editor.org/rfc/rfc9380.html).
 
@@ -74,20 +80,48 @@ References: [Masson, Sanso, and Zhang's work on Bandersnatch (ePrint 2021/1152)]
 
 Objective: To implement IETF standard VRFs and other significant VRF variants (Pedersen, Ring), leveraging `ec-crypto` for underlying curve operations.
 Deliverables:
--   **IETF ECVRF (RFC 9381)**:
-    -   Full implementation of ECVRF algorithms (Section5 & Section6 of RFC 9381) for P-256 and Ed25519, supporting relevant ciphersuites (e.g., ECVRF-P256-SHA256-TAI, ECVRF-EDWARDS25519-SHA512-TAI, ECVRF-P256-SHA256-SSWU, etc.).
+-   **IETF ECVRF**:
+    -   Full implementation of ECVRF algorithms (Section5 & Section6 of RFC 9381) for P-256 and Ed25519, supporting all 14 suites listed in Section8 of RFC 9380 ("Suites for Hashing") for the implemented curves. This includes:
+        -   P256_XMD:SHA-256_SSWU_RO_         
+        -   P256_XMD:SHA-256_SSWU_NU_         
+        -   P384_XMD:SHA-384_SSWU_RO_         
+        -   P384_XMD:SHA-384_SSWU_NU_         
+        -   P521_XMD:SHA-512_SSWU_RO_         
+        -   P521_XMD:SHA-512_SSWU_NU_         
+        -   curve25519_XMD:SHA-512_ELL2_RO_   
+        -   curve25519_XMD:SHA-512_ELL2_NU_   
+        -   edwards25519_XMD:SHA-512_ELL2_RO_ 
+        -   edwards25519_XMD:SHA-512_ELL2_NU_ 
+        -   curve448_XOF:SHAKE256_ELL2_RO_    
+        -   curve448_XOF:SHAKE256_ELL2_NU_    
+        -   edwards448_XOF:SHAKE256_ELL2_RO_  
+        -   edwards448_XOF:SHAKE256_ELL2_NU_  
+        -   secp256k1_XMD:SHA-256_SSWU_RO_    
+        -   secp256k1_XMD:SHA-256_SSWU_NU_    
+        -   BLS12381G1_XMD:SHA-256_SSWU_RO_   
+        -   BLS12381G1_XMD:SHA-256_SSWU_NU_   
+        -   BLS12381G2_XMD:SHA-256_SSWU_RO_   
+        -   BLS12381G2_XMD:SHA-256_SSWU_NU_   
+        -   Bandersnatch_XMD:SHA-512_ELL2_RO_ 
+        -   Bandersnatch_XMD:SHA-512_ELL2_NU_ 
+        -   Jubjub_XMD:SHA-512_ELL2_RO_  
+        -   Jubjub_XMD:SHA-512_ELL2_NU_   
+        -   Babyjubjub_XMD:SHA-512_ELL2_RO_ 
+        -   Babyjubjub_XMD:SHA-512_ELL2_NU_
+
     -   Correct handling of domain separation tags (DSTs) and all helper functions as per the RFC.
     -   Verification against official RFC test vectors.
--   **Pedersen VRF**: Implementation for Bandersnatch.
--   **Ring VRF**: The core Bandersnatch Ring VRF scheme, integrating with `dotring` (for ring proofs) and `fiat-shamir`.
+-   **Pedersen VRF**: Implementation for all curves extending IETF.
+-   **Ring VRF**: The core Bandersnatch Ring VRF scheme, integrating with `dotring` (for ring proofs).
 -   Modular design for potential future additions of VRF schemes or curve support.
 -   Comprehensive testing, API documentation, and examples.
+-   Verification against ark-vrf test vectors.
 
 References: [RFC 9381 - Verifiable Random Functions (VRFs)](https://datatracker.ietf.org/doc/html/rfc9381), [W3F Bandersnatch-VRF specification](https://github.com/davxy/bandersnatch-vrf-spec).
 
 ##### 3. `fiat-shamir`: Generic Transcript Layer
 
-Objective: To provide a robust, secure, and flexible transcript mechanism using extendable-output functions (XOFs) for building non-interactive proof systems, following CFRG guidelines.
+Objective: To provide a robust, secure, and flexible transcript mechanism using extendable-output functions (XOFs) for building non-interactive proof systems, following CFRG guidelines and fully compatible with [`ark-transcript`](https://crates.io/crates/ark-transcript).
 Deliverables:
 -   Secure transcript abstraction supporting SHAKE128 and SHAKE256 as XOFs.
 -   Strong domain separation methodologies (e.g., based on postfix length appending or explicit tagged hashing).
@@ -106,7 +140,7 @@ Deliverables:
 -   Construction of the complete Ring VRF by combining ring proofs with the VRF components from `pyvrf`.
 -   Development of a "Snark-friendly" API where appropriate, considering common patterns in zero-knowledge proof systems.
 -   Clear API, in-depth documentation clarifying the protocol and its usage, and illustrative examples.
--   Rigorous testing to ensure correctness and compatibility with the W3F specification.
+-   Rigorous testing to ensure correctness and compatibility with the W3F specification, and verification against ark-vrf test vectors.
 
 Reference: [W3F Ring-Proof specification](https://github.com/davxy/ring-proof-spec/blob/main/specification.md).
 
@@ -116,7 +150,7 @@ Objective: To investigate and implement advanced performance optimizations, cond
 Deliverables:
 -   **Performance Optimization Research & Prototypes**:
     -   GLV endomorphism for Bandersnatch scalar multiplication in `ec-crypto` (confirming ≈40% speed-up).
-    -   Investigation and prototyping of FFT-based polynomial arithmetic for relevant components (e.g., if used in commitment schemes or proof systems built atop these libraries).
+    -   Investigation and prototyping of FFT-based polynomial arithmetic for relevant components.
     -   Prototyping and analysis of SIMD (AVX2/NEON) optimizations for critical batch field operations in `ec-crypto` and `dotring`, potentially via Python C extensions or targeted JIT compilation for identified bottlenecks. (Initial R&D report as part of M2).
 -   **Benchmarking Suite**: Covering all core operations in `ec-crypto`, VRF schemes in `pyvrf`, and proof systems in `dotring`. Comparisons against `arkworks-rust` for Bandersnatch components.
 -   **Publications**:
@@ -207,7 +241,7 @@ Our team blends practical Web3/Polkadot ecosystem knowledge with specialized Pyt
 | -----: | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    0a. | License                   | MIT License.                                                                                                                                                                                                                                                                                                      |
 |    0b. | Documentation             | We will provide both inline documentation of the code and a comprehensive tutorial that explains how to utilize the library's functionalities.                                                                                                                                                                    |
-|    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#testing-guide) for details. | - |
+|    0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests, IETF test vectors for H2C and JAM test vectors for Ring VRF to ensure functionality and robustness. | - |
 |    0d. | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                     |
 |    0e. | Article                   | We will publish an article or workshop that explains what was achieved as part of the grant.                                                                                                                    |
 |    0f. | Research Papers           | Drafts of the two research papers outlined in Core Component 5, ready for submission. |
