@@ -19,8 +19,7 @@ We expect applicants to have a solid idea about the project's expected final sta
 - Documentation of core components, protocols, architecture, etc. to be deployed
 
 High Level Diagram
-```mermaid
-graph TB
+```mermaidgraph TB
     %% User Interaction Layer
     subgraph User["User Interaction"]
         Frontend["Frontend UI (Next.js)"]
@@ -130,14 +129,14 @@ graph TB
     PoolAnalytics -->|Monitors Moonbeam Pools| AlgebraPools
     PoolAnalytics -->|Monitors Hydration Pools| HydrationXYK
 
-    %% Styling
-    classDef userLayer fill:#e1f5fe
-    classDef backendLayer fill:#f3e5f5
-    classDef assetHubLayer fill:#e8f5e8
-    classDef crossChainLayer fill:#fff3e0
-    classDef moonbeamLayer fill:#e3f2fd
-    classDef hydrationLayer fill:#f1f8e9
-    classDef dexLayer fill:#fce4ec
+    %% Enhanced Styling with Better Colors
+    classDef userLayer fill:#4fc3f7,stroke:#0288d1,stroke-width:3px,color:#000
+    classDef backendLayer fill:#ba68c8,stroke:#7b1fa2,stroke-width:3px,color:#fff
+    classDef assetHubLayer fill:#66bb6a,stroke:#388e3c,stroke-width:3px,color:#fff
+    classDef crossChainLayer fill:#ffb74d,stroke:#f57c00,stroke-width:3px,color:#000
+    classDef moonbeamLayer fill:#64b5f6,stroke:#1976d2,stroke-width:3px,color:#fff
+    classDef hydrationLayer fill:#81c784,stroke:#4caf50,stroke-width:3px,color:#000
+    classDef dexLayer fill:#f06292,stroke:#c2185b,stroke-width:3px,color:#fff
 
     class Frontend userLayer
     class Server,PoolAnalytics,IDWorker,InvestmentDecision,PostgreSQL backendLayer
