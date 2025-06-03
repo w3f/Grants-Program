@@ -192,6 +192,7 @@ Please also provide the GitHub accounts of all team members:
 Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
 
 (Each of us, should write individual experience, then we could combine into some ending statement)
+- **Rashad Hosseini**, a software engineer with a bachelor's degree from the University of Leeds and currently working at the fintech unicorn Checkout.com. With experience in building robust financial technology solutions providing valuable expertise in developing secure and scalable systems, which is essential for creating reliable DeFi applications.
 
 ## 📊 Development Status
 
@@ -224,8 +225,8 @@ This section should break the development roadmap down into milestones and deliv
 | 0c. | Testing and Testing Guide | We will cover the core functions of the contracts deployed with hardhat and foundry (Deposit, withdraw,swap, liquidity minting,liqudity burning, XCM messages). We will cover the backend & frontend with unit tests. All of the testing guide will be on github pages |
 | 0d. | Article | [Gabriel](https://x.com/Gabik_B) would be building in public, and covering most of the progress. Upon completion we will publish an article about (milestone 1, milestone 2), our MVP functionalities, and cover future plans of the development.|
 | 1. | Core Contracts| We will finish development and test coverage of our Core contracts.  |
-| 2. | Core Backend with database | (Gabriel ( LP data aggregator, Investment Decision Worker) (Rest Rashad) |
-| 3. | Core Frontend | The Z feature will... (Please describe in detail) (Rashad) |
+| 2. | Core Backend with database | We will develop a comprehensive backend system with two primary components: an LP data aggregator that collects and normalizes liquidity pool data from various DEXes on the Moonbeam parachain (We will be integrating with other paracahins in the future), and an Investment Decision Worker that analyzes market data and user preferences to make optimal LP allocation decisions. The Investment Decision Worker will implement a core algorithm that determines when to rebalance positions and evaluates risk parameters based on user-defined thresholds. The backend will use NestJS and interact with a PostgreSQL database and use PolkadotJS for blockchain communication, enabling it to directly call smart contracts to execute liquidity operations. The PostgreSQL database will store user preferences, historical position data, and pool analytics to inform decision-making. |
+| 3. | Core Frontend | We will develop a user-facing interface using NextJS and Wagmi for wallet connectivity. The frontend will feature a dashboard with real-time position monitoring, strategy selection interface, preference configuration panel, and cross-chain position visualization. Key features include: 1) Interactive dashboard displaying current positions, and performance metrics. 2) Strategy configuration wizard allowing users to select risk profiles and set custom parameters; 3) Token selection interface. 4) Advanced settings panel for risk parameter configuration; 5) Transaction history and performance tracking visualizations. The UI will be responsive, with appropriate loading states and error handling for blockchain interactions. |
 
 
 
@@ -250,7 +251,9 @@ $50 AWS hosting, Vercel hosting, Testing Gas Fees, Domain name(Liquidot.xyz)
 Please include:
 
 - How you intend to continue development after the Fast-Grant
-- (Rashad Yap)
+  - After the Fast-Grant, we plan to focus on having a working proof of concept and onboarding a few initial users. Once we have proven this concept, we will dedicate more resources to the project, integrating more DEXes on other parachains, across the Polkadot ecosystem and optimizing our investment strategies. We'll continuously improve our decision engine to make smarter investment choices based on user feedback and market performance data. Our primary goal post-grant is to validate the core functionality with real users and refine the product based on their experience before expanding to a wider audience.
+
+   - Further development will include implementing reactive smart contracts that incorporate stop-loss and take-profit functionality, providing users with more advanced risk management tools. We'll also explore the potential decentralization of the decision engine, to become fully DeFi, allowing for smart investment strategies while maintaining security and reliability.
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
 - (Theo Yap)
 - Your vision for the project's growth and impact in the Polkadot ecosystem
