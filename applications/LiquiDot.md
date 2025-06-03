@@ -20,53 +20,132 @@ We expect applicants to have a solid idea about the project's expected final sta
 
 High Level Diagram
 ```mermaid
-flowchart TB
- subgraph User["User Interaction"]
+graph TB
+    %% User Interaction Layer
+    subgraph User["User Interaction"]
         Frontend["Frontend UI (Next.js)"]
-  end
- subgraph Backend["Backend Services"]
+    end
+
+    %% Backend Services
+    subgraph Backend["Backend Services"]
         Server["Express Server"]
         PoolAnalytics["LP Data Aggregator"]
         IDWorker["Investment Decision Worker"]
         InvestmentDecision["Blockchain Interaction Service"]
-        PostgreSQL
-        
-  end
- subgraph AssetHub["Asset Hub (Substrate)"]
-        AssetsPallet["Liquidity Provider/Vault Contract"]
-  end
- subgraph Relayers["Cross-Chain Communication"]
+        PostgreSQL[(PostgreSQL Database)]
+    end
+
+    %% Asset Hub (Main Contract with User Balances)
+    subgraph AssetHub["Asset Hub (Substrate)"]
+        AssetsPallet["AI Liquidity Provider/Vault Contract"]
+        UserBalances["User Balance Tracking"]
+        AssetTransfer["XCM Asset Transfer Interface"]
+    end
+
+    %% Cross-Chain Communication Layer
+    subgraph Relayers["Cross-Chain Communication"]
         XCMRelayer["XCM Message Relayer"]
-  end
- subgraph XCMProxyComponentS["XCM Proxy Components"]
-        PositionTracking["Position Tracking"]
-        BalanceManager["Token Balance Manager"]
-        RangeCalculator["Tick Range Calculator"]
-  end
- subgraph Moonbeam["Moonbeam Parachain"]
+        AssetBridge["XCM Asset Transfer Bridge"]
+    end
+
+    %% Moonbeam Components (Position Tracking Only)
+    subgraph Moonbeam["Moonbeam Parachain"]
         XCMProxy["XCM Proxy Contract"]
-        XCMProxyComponentS
-  end
- subgraph DEXes["DEX Pools"]
-        AlgebraPools["Algebra Pools"]
-  end
-    Frontend -- Deposits/Withdraws assets --> AssetsPallet
-    Frontend -- Sets investment preferences --> Server
-    XCMRelayer -- Delivers XCM messages --> XCMProxy
-    XCMProxy -- Uses --> PositionTracking & BalanceManager & RangeCalculator
-    XCMProxy -- Provides liquidity to --> AlgebraPools
-    AssetsPallet -- XCM asset transfer --> XCMRelayer
-    XCMRelayer -- Delivers assets --> XCMProxy
-    XCMProxy -- Transfers back assets/rewards --> XCMRelayer
-    XCMRelayer -- Delivers assets back --> AssetsPallet
-    InvestmentDecision -- Issues XCM Transfer Calls --> AssetsPallet
-    AssetsPallet -- Issues XCM Messages --> XCMRelayer
-    Frontend -- Reads Position Status --> XCMProxy
-    InvestmentDecision -- Reads Position Status --> XCMProxy
-    IDWorker -- Issue Decisions --> InvestmentDecision
-    PostgreSQL -- Provide Positions & User Preferences Data --> IDWorker
+        subgraph XCMProxyComponents["XCM Proxy Components"]
+            PositionTracking["Position Tracking"]
+            RangeCalculator["Tick Range Calculator"]
+        end
+    end
+
+    %% Hydration Components (XYK Pools)
+    subgraph Hydration["Hydration Parachain"]
+        HydrationProxy["Hydration XCM Proxy"]
+        subgraph HydrationComponents["Hydration Components"]
+            XYKPallet["XYK Pool Pallet"]
+            HydrationPositions["Position Management"]
+            RouterPallet["Router Pallet"]
+        end
+    end
+
+    %% DEX Pools
+    subgraph DEXes["DEX Pools"]
+        AlgebraPools["Algebra Pools (Moonbeam)"]
+        HydrationXYK["XYK Pools (Hydration)"]
+    end
+
+    %% User Flow Connections
+    Frontend -->|Deposits/Withdraws assets| AssetsPallet
+    Frontend -->|Sets investment preferences| Server
+    Frontend -->|Views portfolio| AssetsPallet
+
+    %% Asset Management Flow
+    AssetsPallet --> UserBalances
+    AssetsPallet --> AssetTransfer
+
+    %% Backend Decision Flow
     Server --> IDWorker
-    PoolAnalytics -- Provide Pool Data --> IDWorker
+    PostgreSQL -->|Provides Positions & User Preferences| IDWorker
+    PoolAnalytics -->|Provides Pool Data| IDWorker
+    IDWorker -->|Issues Investment Decisions| InvestmentDecision
+
+    %% Asset Transfer Flow - Moonbeam
+    InvestmentDecision -->|Transfer Assets to Moonbeam| AssetTransfer
+    AssetTransfer -->|XCM Asset Transfer| AssetBridge
+    AssetBridge -->|Delivers Assets| XCMProxy
+
+    %% Asset Transfer Flow - Hydration
+    InvestmentDecision -->|Transfer Assets to Hydration| AssetTransfer
+    AssetTransfer -->|XCM Asset Transfer| AssetBridge
+    AssetBridge -->|Delivers Assets| HydrationProxy
+
+    %% Cross-Chain Instruction Flow
+    InvestmentDecision -->|XCM Instructions| XCMRelayer
+    XCMRelayer -->|Instructions to Moonbeam| XCMProxy
+    XCMRelayer -->|Instructions to Hydration| HydrationProxy
+
+    %% Moonbeam Operations
+    XCMProxy --> PositionTracking
+    XCMProxy --> RangeCalculator
+    XCMProxy -->|Provides liquidity to| AlgebraPools
+    XCMProxy -->|Reads pool state| AlgebraPools
+
+    %% Hydration Operations
+    HydrationProxy --> XYKPallet
+    HydrationProxy --> HydrationPositions
+    HydrationProxy --> RouterPallet
+    XYKPallet -->|Creates/Manages| HydrationXYK
+    RouterPallet -->|Routes trades through| HydrationXYK
+
+    %% Return Asset Flows
+    XCMProxy -->|Return Assets/Rewards| AssetBridge
+    HydrationProxy -->|Return Assets/Rewards| AssetBridge
+    AssetBridge -->|XCM Asset Transfer Back| AssetTransfer
+    AssetTransfer -->|Credits User Balance| UserBalances
+
+    %% Data Reading Flows
+    Frontend -->|Reads Position Status| XCMProxy
+    Frontend -->|Reads Hydration Positions| HydrationProxy
+    InvestmentDecision -->|Reads Position Status| XCMProxy
+    InvestmentDecision -->|Reads Hydration Status| HydrationProxy
+    PoolAnalytics -->|Monitors Moonbeam Pools| AlgebraPools
+    PoolAnalytics -->|Monitors Hydration Pools| HydrationXYK
+
+    %% Styling
+    classDef userLayer fill:#e1f5fe
+    classDef backendLayer fill:#f3e5f5
+    classDef assetHubLayer fill:#e8f5e8
+    classDef crossChainLayer fill:#fff3e0
+    classDef moonbeamLayer fill:#e3f2fd
+    classDef hydrationLayer fill:#f1f8e9
+    classDef dexLayer fill:#fce4ec
+
+    class Frontend userLayer
+    class Server,PoolAnalytics,IDWorker,InvestmentDecision,PostgreSQL backendLayer
+    class AssetsPallet,UserBalances,AssetTransfer assetHubLayer
+    class XCMRelayer,AssetBridge crossChainLayer
+    class XCMProxy,PositionTracking,RangeCalculator moonbeamLayer
+    class HydrationProxy,XYKPallet,HydrationPositions,RouterPallet hydrationLayer
+    class AlgebraPools,HydrationXYK dexLayer
 ```
 
 Yap About the way contracts work (Users deposited tokens can only be swapped/Provided as liquidity in the contract definition)
