@@ -57,20 +57,9 @@ graph TB
         end
     end
 
-    %% Hydration Components (XYK Pools)
-    subgraph Hydration["Hydration Parachain"]
-        HydrationProxy["Hydration XCM Proxy"]
-        subgraph HydrationComponents["Hydration Components"]
-            XYKPallet["XYK Pool Pallet"]
-            HydrationPositions["Position Management"]
-            RouterPallet["Router Pallet"]
-        end
-    end
-
     %% DEX Pools
     subgraph DEXes["DEX Pools"]
         AlgebraPools["Algebra Pools (Moonbeam)"]
-        HydrationXYK["XYK Pools (Hydration)"]
     end
 
     %% User Flow Connections
@@ -93,15 +82,9 @@ graph TB
     AssetTransfer -->|XCM Asset Transfer| AssetBridge
     AssetBridge -->|Delivers Assets| XCMProxy
 
-    %% Asset Transfer Flow - Hydration
-    InvestmentDecision -->|Transfer Assets to Hydration| AssetTransfer
-    AssetTransfer -->|XCM Asset Transfer| AssetBridge
-    AssetBridge -->|Delivers Assets| HydrationProxy
-
     %% Cross-Chain Instruction Flow
     InvestmentDecision -->|XCM Instructions| XCMRelayer
     XCMRelayer -->|Instructions to Moonbeam| XCMProxy
-    XCMRelayer -->|Instructions to Hydration| HydrationProxy
 
     %% Moonbeam Operations
     XCMProxy --> PositionTracking
@@ -109,26 +92,15 @@ graph TB
     XCMProxy -->|Provides liquidity to| AlgebraPools
     XCMProxy -->|Reads pool state| AlgebraPools
 
-    %% Hydration Operations
-    HydrationProxy --> XYKPallet
-    HydrationProxy --> HydrationPositions
-    HydrationProxy --> RouterPallet
-    XYKPallet -->|Creates/Manages| HydrationXYK
-    RouterPallet -->|Routes trades through| HydrationXYK
-
     %% Return Asset Flows
     XCMProxy -->|Return Assets/Rewards| AssetBridge
-    HydrationProxy -->|Return Assets/Rewards| AssetBridge
     AssetBridge -->|XCM Asset Transfer Back| AssetTransfer
     AssetTransfer -->|Credits User Balance| UserBalances
 
     %% Data Reading Flows
     Frontend -->|Reads Position Status| XCMProxy
-    Frontend -->|Reads Hydration Positions| HydrationProxy
     InvestmentDecision -->|Reads Position Status| XCMProxy
-    InvestmentDecision -->|Reads Hydration Status| HydrationProxy
     PoolAnalytics -->|Monitors Moonbeam Pools| AlgebraPools
-    PoolAnalytics -->|Monitors Hydration Pools| HydrationXYK
 
     %% Enhanced Styling with Better Colors
     classDef userLayer fill:#4fc3f7,stroke:#0288d1,stroke-width:3px,color:#000
@@ -136,7 +108,6 @@ graph TB
     classDef assetHubLayer fill:#66bb6a,stroke:#388e3c,stroke-width:3px,color:#fff
     classDef crossChainLayer fill:#ffb74d,stroke:#f57c00,stroke-width:3px,color:#000
     classDef moonbeamLayer fill:#64b5f6,stroke:#1976d2,stroke-width:3px,color:#fff
-    classDef hydrationLayer fill:#81c784,stroke:#4caf50,stroke-width:3px,color:#000
     classDef dexLayer fill:#f06292,stroke:#c2185b,stroke-width:3px,color:#fff
 
     class Frontend userLayer
@@ -144,8 +115,7 @@ graph TB
     class AssetsPallet,UserBalances,AssetTransfer assetHubLayer
     class XCMRelayer,AssetBridge crossChainLayer
     class XCMProxy,PositionTracking,RangeCalculator moonbeamLayer
-    class HydrationProxy,XYKPallet,HydrationPositions,RouterPallet hydrationLayer
-    class AlgebraPools,HydrationXYK dexLayer
+    class AlgebraPools dexLayer
 ```
 
 Yap About the way contracts work (Users deposited tokens can only be swapped/Provided as liquidity in the contract definition)
