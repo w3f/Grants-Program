@@ -19,7 +19,8 @@ We expect applicants to have a solid idea about the project's expected final sta
 - Documentation of core components, protocols, architecture, etc. to be deployed
 
 High Level Diagram
-```mermaidgraph TB
+```mermaid
+graph TB
     %% User Interaction Layer
     subgraph User["User Interaction"]
         Frontend["Frontend UI (Next.js)"]
