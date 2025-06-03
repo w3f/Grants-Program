@@ -8,7 +8,7 @@
   Polkadot provides the ideal foundation for LiquiDOT by enabling seamless interaction across chains through smart contract deployment and cross-chain messaging. This allows us to connect with multiple parachains and decentralized exchanges, giving users the ability to manage liquidity across ecosystems from a single interface. Polkadot’s focus on interoperability and scalability directly supports our aim to build a robust and future-ready LP management tool.
 - An indication of why your team is interested in creating this project
   Our team came together around a shared interest in solving a problem we’ve encountered ourselves: the lack of smart, automated tools for liquidity providers. While trading platforms have long supported features like automation, stop loss, and take profit, these tools haven’t yet made their way into LP management — and we saw an opportunity to change that. We wanted to build something that gives users more control and peace of mind when providing liquidity. With backgrounds in fintech, mobile development, and blockchain analytics, we had the right mix of skills to bring the idea to life — and it’s something we’re genuinely excited to use ourselves.
-- (Optional but **huge bonus points**): [1-min video pitch](https://www.ycombinator.com/video/) (We may do it)
+
 
 ### 🔍 Project Details
 
