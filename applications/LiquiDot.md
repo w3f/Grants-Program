@@ -14,10 +14,6 @@
 
 We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
 
-- An overview of the technology stack to be used
-  NextJs (Wagmi for wallet) for Frontend,  NestJS (TypeORM , PolkadotJS for blockchain calls) for backend, PostgreSQL for database, Solidity(Openzepelin,Reactive Smart Contracts) for Smart Contracts, AWS for hosting.
-- Documentation of core components, protocols, architecture, etc. to be deployed
-
 High Level Diagram
 ```mermaid
 graph TB
