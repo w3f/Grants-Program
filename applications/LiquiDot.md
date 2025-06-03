@@ -28,7 +28,6 @@ graph TB
 
     %% Backend Services
     subgraph Backend["Backend Services"]
-        Server["Express Server"]
         PoolAnalytics["LP Data Aggregator"]
         IDWorker["Investment Decision Worker"]
         InvestmentDecision["Blockchain Interaction Service"]
@@ -63,22 +62,20 @@ graph TB
     end
 
     %% User Flow Connections
-    Frontend -->|Deposits/Withdraws assets| AssetsPallet
-    Frontend -->|Sets investment preferences| Server
-    Frontend -->|Views portfolio| AssetsPallet
+    Frontend -->|Deposits/Withdraws/Views Portfolio| AssetsPallet
+    Frontend -->|Sets investment preferences| IDWorker
 
     %% Asset Management Flow
     AssetsPallet --> UserBalances
     AssetsPallet --> AssetTransfer
 
     %% Backend Decision Flow
-    Server --> IDWorker
     PostgreSQL -->|Provides Positions & User Preferences| IDWorker
     PoolAnalytics -->|Provides Pool Data| IDWorker
     IDWorker -->|Issues Investment Decisions| InvestmentDecision
 
     %% Asset Transfer Flow - Moonbeam
-    InvestmentDecision -->|Transfer Assets to Moonbeam| AssetTransfer
+    InvestmentDecision -->|Instructs Contract to Transfer Assets| AssetTransfer
     AssetTransfer -->|XCM Asset Transfer| AssetBridge
     AssetBridge -->|Delivers Assets| XCMProxy
 
@@ -111,7 +108,7 @@ graph TB
     classDef dexLayer fill:#f06292,stroke:#c2185b,stroke-width:3px,color:#fff
 
     class Frontend userLayer
-    class Server,PoolAnalytics,IDWorker,InvestmentDecision,PostgreSQL backendLayer
+    class PoolAnalytics,IDWorker,InvestmentDecision,PostgreSQL backendLayer
     class AssetsPallet,UserBalances,AssetTransfer assetHubLayer
     class XCMRelayer,AssetBridge crossChainLayer
     class XCMProxy,PositionTracking,RangeCalculator moonbeamLayer
