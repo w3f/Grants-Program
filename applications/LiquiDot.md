@@ -191,7 +191,7 @@ Api specs (unkown, yap potential api with claude)
 
 
 
-#### Where and how does our project fit into the ecosystem?
+### Where and how does our project fit into the ecosystem?
   Our project is an automated LP manager with cross-chain functionality, designed to optimize capital efficiency and user experience across multiple parachains in the Polkadot ecosystem. This enables users to manage assets and interact with DEXs, DeFi protocols, and liquidity pools a lot more efficiently and across networks like the Hub, Hydration, Moonbeam, Acala, etc, from a single interface and without being confined to a single chain's limitations. Our project directly supports Polkadot's vision of a multichain future by reducing fragmentation and improving capital flow across its ecosystem.
   
 ### Who is our target audience?
@@ -210,15 +210,15 @@ We solve these challenges by offering:
 
   Cross-chain liquidity optimization: Using Polkadot's XCM, we dynamically allocate liquidity across multiple parachains to improve capital efficiency.
 
-  -User-defined strategies: Users can select from risk-based strategies (e.g., conservative, moderate, aggressive) tailored to their goals and risk tolerance.
+  - User-defined strategies: Users can select from risk-based strategies (e.g., conservative, moderate, aggressive) tailored to their goals and risk tolerance.
 
-  -Advanced risk management tools: Features like stop-loss and take-profit thresholds allow users to safeguard positions and automate exits based on market conditions.
+  - Advanced risk management tools: Features like stop-loss and take-profit thresholds allow users to safeguard positions and automate exits based on market conditions.
 
-  -Custom asset preferences: Users can specify which coins they're interested in, ensuring personalized exposure across pools.
+  - Custom asset preferences: Users can specify which coins they're interested in, ensuring personalized exposure across pools.
 
-  -Capital control: Users can set maximum allocation per pool, define a minimum acceptable APR, and decide how many pools to distribute their position across.
+  - Capital control: Users can set maximum allocation per pool, define a minimum acceptable APR, and decide how many pools to distribute their position across.
 
-  -Yield maximization through automation: The system continuously monitors and reallocates liquidity to optimize returns without manual intervention.
+  - Yield maximization through automation: The system continuously monitors and reallocates liquidity to optimize returns without manual intervention.
 
   -User-friendly automation: Reduces the operational burden on users by automating complex liquidity management strategies.
 - Are there any other projects similar to yours in the Polkadot ecosystem?
@@ -228,15 +228,11 @@ While there are projects in the Polkadot ecosystem focused on liquidity provisio
 
 Most existing tools are limited to individual parachains or offer basic liquidity provisioning without features like:
 
-    Cross-chain pool rebalancing via XCM
-
-    Strategy selection (risk-adjusted)
-
-    Stop-loss/take-profit triggers
-
-    Custom coin selection and APR thresholds
-
-    Smart allocation across multiple pools
+  - Cross-chain pool rebalancing via XCM
+  - Strategy selection (risk-adjusted)
+  - Stop-loss/take-profit triggers
+  - Custom coin selection and APR thresholds
+  - Smart allocation across multiple pools
 
 We believe this gap exists because the complexity of implementing robust cross-chain logic, especially for DeFi strategies.
 
