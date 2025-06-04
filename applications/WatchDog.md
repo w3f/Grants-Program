@@ -97,7 +97,7 @@ Build Union is a collaborative collective of talented developers, designers, str
 
 - Project manager and blockchain architect with deep experience in DAO tooling and transparency infrastructure.
 - Combines hands-on engineering with leadership in dApp development and open governance tooling.
-- LinkedIn: [emmanueleclipsewebsite](#)
+- LinkedIn: [emmanueleclipsewebsite](linkedin.com/in/emmanueleclipsewebsite/)
 
 ### Machine Learning & Data Engineering
 
@@ -141,9 +141,9 @@ Build Union is a collaborative collective of talented developers, designers, str
 
 ## Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+Contact Name:** Emmanuel O
+Contact Email:** Virtualsrikignly@gmail.com
+linkedin.com/in/emmanueleclipsewebsite/
 
 ## Legal Structure
 
@@ -221,13 +221,13 @@ Post-grant approval
 **Organizational Grant Details**
 ![Image](https://github.com/user-attachments/assets/1fb23c0f-9a32-4842-b1d8-7017d77dc68e)
 
-Admin Page
+**Admin Page**
 
 ![Image](https://github.com/user-attachments/assets/881847cc-9310-41cd-abba-6d9991d852aa)
 
 ## Future
 
-###Sustainability & Monetization
+### Sustainability & Monetization
 While initial funding from the Polkadot Treasury is required to bootstrap development, the long-term vision includes a hybrid, self-sustaining model through the following revenue strategies:
 
 **Ecosystem/ParaChain Audit Subscriptions**
@@ -242,5 +242,5 @@ Provide enhanced dashboards for large grantees, foundations, or institutional pa
 **Sponsored Integrations**
 Collaborate with ecosystem tools and infrastructure projects to integrate WatchDog data, supported by licensing or sponsorship agreements.
 
-##Conclusion
+## Conclusion
 WatchDog introduces a structured, intelligent accountability framework for the Polkadot Treasury and OpenGov. By transforming fragmented and inconsistent grant data into real-time, verifiable insights, it strengthens trust, reduces inefficiencies, and helps ensure the long-term effectiveness of Polkadot’s public funding mechanisms.
