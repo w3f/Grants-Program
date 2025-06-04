@@ -31,7 +31,7 @@ graph TB
         PoolAnalytics["LP Data Aggregator"]
         IDWorker["Investment Decision Worker"]
         InvestmentDecision["Blockchain Interaction Service"]
-        LiquidationService["MEV Liquidation Service"]
+        StopLossWorker["Stop-Loss/Take-Profit Worker"]
         PostgreSQL[(PostgreSQL Database)]
     end
 
@@ -48,13 +48,12 @@ graph TB
         AssetBridge["XCM Asset Transfer Bridge"]
     end
 
-    %% Moonbeam Components (Position Tracking + Liquidation)
+    %% Moonbeam Components (Position Tracking + Smart Contracts)
     subgraph Moonbeam["Moonbeam Parachain"]
         XCMProxy["XCM Proxy Contract"]
         subgraph XCMProxyComponents["XCM Proxy Components"]
             PositionTracking["Position Tracking"]
             RangeCalculator["Tick Range Calculator"]
-            LPMonitor["LP Stop-Loss Monitor"]
         end
     end
 
@@ -75,12 +74,12 @@ graph TB
     PostgreSQL -->|Provides Positions & User Preferences| IDWorker
     PoolAnalytics -->|Provides Pool Data| IDWorker
     IDWorker -->|Issues Investment Decisions| InvestmentDecision
-    IDWorker -->|Enrolls positions with stop-loss/take-profit| LPMonitor
+    IDWorker -->|Configures positions with tick range automation| XCMProxy
 
-    %% Liquidation Service Flow
-    LiquidationService -->|Monitors position health| LPMonitor
-    LiquidationService -->|Calls liquidation functions| XCMProxy
-    PostgreSQL -->|Stores monitored positions| LiquidationService
+    %% LP Range-Based Automation (No Oracle Dependency)
+    StopLossWorker -->|Monitors pool ticks & position ranges| AlgebraPools
+    StopLossWorker -->|Executes range-based liquidations| XCMProxy
+    StopLossWorker -->|Reports liquidations via XCM| AssetTransfer
 
     %% Asset Transfer Flow - Moonbeam
     InvestmentDecision -->|Instructs Contract to Transfer Assets| AssetTransfer
@@ -95,13 +94,12 @@ graph TB
     XCMProxy --> PositionTracking
     XCMProxy --> RangeCalculator
     XCMProxy -->|Provides liquidity to| AlgebraPools
-    XCMProxy -->|Reads pool state| AlgebraPools
+    XCMProxy -->|Reads pool ticks & position ranges| AlgebraPools
 
-    %% Stop-Loss Integration
-    LPMonitor -->|Monitors LP NFT positions| AlgebraPools
-    LPMonitor -->|Triggers liquidation| XCMProxy
-    XCMProxy -->|Executes liquidation| AlgebraPools
-    LPMonitor -->|Reports liquidations| PositionTracking
+    %% LP Range-Based Automation Flow
+    AlgebraPools -->|Pool tick changes| XCMProxy
+    XCMProxy -->|Detects out-of-range positions| PositionTracking
+    XCMProxy -->|Executes range-based liquidations| AlgebraPools
 
     XCMProxy -->|Return Assets/Rewards| AssetBridge
     AssetBridge -->|XCM Asset Transfer Back| AssetTransfer
@@ -119,11 +117,10 @@ graph TB
     classDef liquidationLayer fill:#e57373,stroke:#d32f2f,stroke-width:3px,color:#fff
 
     class Frontend userLayer
-    class PoolAnalytics,IDWorker,InvestmentDecision,PostgreSQL backendLayer
-    class LiquidationService liquidationLayer
+    class PoolAnalytics,IDWorker,InvestmentDecision,StopLossWorker,PostgreSQL backendLayer
     class AssetsPallet,UserBalances,AssetTransfer assetHubLayer
     class XCMRelayer,AssetBridge crossChainLayer
-    class XCMProxy,PositionTracking,RangeCalculator,LPMonitor moonbeamLayer
+    class XCMProxy,PositionTracking,RangeCalculator moonbeamLayer
     class AlgebraPools dexLayer
 ```
 
