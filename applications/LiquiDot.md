@@ -220,10 +220,13 @@ We solve these challenges by offering:
 
   - Yield maximization through automation: The system continuously monitors and reallocates liquidity to optimize returns without manual intervention.
 
-  -User-friendly automation: Reduces the operational burden on users by automating complex liquidity management strategies.
+  - User-friendly automation: Reduces the operational burden on users by automating complex liquidity management strategies.
+  
+
 - Are there any other projects similar to yours in the Polkadot ecosystem?
   - If so, how is your project different?
   - If not, why might such a project not exist yet?
+
 While there are projects in the Polkadot ecosystem focused on liquidity provision and automated market making (such as HydraDX or various DEXs on Moonbeam and Acala), none currently offer a cross-chain automated liquidity manager with the same level of customization, user control, and strategy-based automation as our solution.
 
 Most existing tools are limited to individual parachains or offer basic liquidity provisioning without features like:
