@@ -2,19 +2,23 @@
 
 ## 🌟 Project Overview
 
-- A brief description of your project
-  LiquiDOT is a customizable liquidity provider (LP) manager designed to simplify and improve participation in DeFi. It allows users to automate their LP strategies, set stop loss and take profit levels, and rebalance their positions without needing constant manual oversight. With support for multiple DEXes, LiquiDOT offers a single, user-friendly platform for managing liquidity across different ecosystems. The goal is to bring meaningful control, automation, and flexibility to liquidity providers — something that’s currently missing in the space. 
-- An indication of how your project relates to / integrates into Polkadot
-  Polkadot provides the ideal foundation for LiquiDOT by enabling seamless interaction across chains through smart contract deployment and cross-chain messaging. This allows us to connect with multiple parachains and decentralized exchanges, giving users the ability to manage liquidity across ecosystems from a single interface. Polkadot’s focus on interoperability and scalability directly supports our aim to build a robust and future-ready LP management tool.
-- An indication of why your team is interested in creating this project
-  Our team came together around a shared interest in solving a problem we’ve encountered ourselves: the lack of smart, automated tools for liquidity providers. While trading platforms have long supported features like automation, stop loss, and take profit, these tools haven’t yet made their way into LP management — and we saw an opportunity to change that. We wanted to build something that gives users more control and peace of mind when providing liquidity. With backgrounds in fintech, mobile development, and blockchain analytics, we had the right mix of skills to bring the idea to life — and it’s something we’re genuinely excited to use ourselves.
+## Project Description
+
+LiquiDOT is a customizable liquidity provider (LP) manager designed to simplify and improve participation in DeFi. It allows users to automate their LP strategies, set stop loss and take profit levels, and rebalance their positions without needing constant manual oversight. With support for multiple DEXes, LiquiDOT offers a single, user-friendly platform for managing liquidity across different ecosystems. The goal is to bring meaningful control, automation, and flexibility to liquidity providers — something that's currently missing in the space.
+
+## Integration with Polkadot
+
+Polkadot provides the ideal foundation for LiquiDOT by enabling seamless interaction across chains through smart contract deployment and cross-chain messaging. This allows us to connect with multiple parachains and decentralized exchanges, giving users the ability to manage liquidity across ecosystems from a single interface. Polkadot's focus on interoperability and scalability directly supports our aim to build a robust and future-ready LP management tool.
+
+## Our Team's Motivation
+
+Our team came together around a shared interest in solving a problem we've encountered ourselves: the lack of smart, automated tools for liquidity providers. While trading platforms have long supported features like automation, stop loss, and take profit, these tools haven't yet made their way into LP management — and we saw an opportunity to change that. We wanted to build something that gives users more control and peace of mind when providing liquidity. With backgrounds in fintech, mobile development, and blockchain analytics, we had the right mix of skills to bring the idea to life — and it's something we're genuinely excited to use ourselves.
 
 
 ### 🔍 Project Details
 
-We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
 
-High Level Diagram
+## Our High Level Diagram
 ```mermaid
 graph TB
     %% User Interaction Layer
@@ -109,22 +113,69 @@ graph TB
 
 Yap About the way contracts work (Users deposited tokens can only be swapped/Provided as liquidity in the contract definition)
 
-- Any PoC/MVP or other relevant prior work or research on the topic
+- We have developed minmal PoC
   [Our Github Project link](https://github.com/gabikreal1/PolkadotHack2025)
-  Minimal PoC, with mock frontend,mock backend and simple contracts, using XCM.
-- Mockups/designs of any UI components
-  Will need to add couple of new components (Gabriel)
+- Our Demo of the Frontend UI 
   [Video to the Demo](https://www.youtube.com/watch?v=9bX0Up0pLww&feature=youtu.be)
+
 - Data models / API specifications of the core functionality
 Refine it with Claude (Gabriel)
-Users (Wallet, Balance, Token, UserPreferencesID), 
-UserPreferences(Minimum APY, Max Allocation Per Pool, UserCoins, Risk Tolerance, TakeProfit, StopLoss)
-*Transactions (Check with claude, could get it of blockchain)
-Positions(UserID,PoolID,Amount1,Amount2,TokenID1,TokenID2,TimeStamp,StopLoss,TakeProfit)
-Pools(PoolAddress,TokenID1,TokenID2,24hrVolume,TVL,DEXID)
-Dexes(DexAddress,ChainAddress)
-*Decisions (Check with Claude)
-Coins (CoinAddress, MarketCap, Ticker, LatestPrice)
+### Data Models
+
+#### Users
+| Column | Type | Description |
+|--------|------|-------------|
+| Wallet | string | User's wallet address |
+| Balance | decimal | User's current balance |
+| Token | string | Token identifier |
+| UserPreferencesID | integer | Foreign key to UserPreferences |
+
+#### UserPreferences
+| Column | Type | Description |
+|--------|------|-------------|
+| Minimum APY | decimal | Minimum acceptable annual percentage yield |
+| Max Allocation Per Pool | decimal | Maximum allocation allowed per pool |
+| UserCoins | string[] | Array of preferred coins |
+| Risk Tolerance | integer | User's risk tolerance level |
+| TakeProfit | decimal | Take profit threshold |
+| StopLoss | decimal | Stop loss threshold |
+
+#### Positions
+| Column | Type | Description |
+|--------|------|-------------|
+| UserID | integer | Foreign key to Users |
+| PoolID | integer | Foreign key to Pools |
+| Amount1 | decimal | Amount of first token |
+| Amount2 | decimal | Amount of second token |
+| TokenID1 | string | First token identifier |
+| TokenID2 | string | Second token identifier |
+| TimeStamp | timestamp | Position creation time |
+| StopLoss | decimal | Position-specific stop loss |
+| TakeProfit | decimal | Position-specific take profit |
+
+#### Pools
+| Column | Type | Description |
+|--------|------|-------------|
+| PoolAddress | string | Pool's contract address |
+| TokenID1 | string | First token identifier |
+| TokenID2 | string | Second token identifier |
+| 24hrVolume | decimal | 24-hour trading volume |
+| TVL | decimal | Total value locked |
+| DEXID | integer | Foreign key to Dexes |
+
+#### Dexes
+| Column | Type | Description |
+|--------|------|-------------|
+| DexAddress | string | DEX contract address |
+| ChainAddress | string | Chain address |
+
+#### Coins
+| Column | Type | Description |
+|--------|------|-------------|
+| CoinAddress | string | Coin's contract address |
+| MarketCap | decimal | Market capitalization |
+| Ticker | string | Trading symbol |
+| LatestPrice | decimal | Most recent price |
 
 Api specs (unkown, yap potential api with claude)
 
