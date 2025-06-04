@@ -191,7 +191,7 @@ We believe this gap exists because the complexity of implementing robust cross-c
 Our project is built to fill this gap—bridging the technical challenge with a user-first design that empowers participants to take full advantage of Polkadot’s multichain architecture.
 
 
-> **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
+
 
 ## 👥 Team
 
@@ -215,11 +215,9 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 - [Fedir Maliarenko (Telegram) ](t.me/fyodortg)
 
 ### Team Code Repos
-
 - [Liquidot Repository](https://github.com/gabikreal1/PolkadotHack2025)
 
-Please also provide the GitHub accounts of all team members:
-
+### GitHub accounts of all team members
 - [Rashad Hosseini](https://github.com/rashad-h)
 - [Gabriel Bandman](https://github.com/gabikreal1)
 - [Fedir Maliarenko](https://github.com/fedyacrypto)
@@ -227,7 +225,6 @@ Please also provide the GitHub accounts of all team members:
 
 ### Team's experience
 
-Please describe the team's relevant experience, including any previous blockchain projects or contributions to the ecosystem.
 
 (Each of us, should write individual experience, then we could combine into some ending statement)
 - **Rashad Hosseini**, a software engineer with a bachelor's degree from the University of Leeds and currently working at the fintech unicorn Checkout.com. With experience in building robust financial technology solutions providing valuable expertise in developing secure and scalable systems, which is essential for creating reliable DeFi applications.
@@ -240,13 +237,6 @@ If you've already started implementing your project, please provide a link and a
 
 ## 📅 Development Roadmap
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, please describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality.
-
-**Important notes:**
-- Each milestone is capped at **$5,000 USD**
-- Milestones must be delivered within **3 months** of approval
-- The maximum grant amount is **$10,000 USD** per application (up to **$15,000 USD** per project in exceptional cases)
-- You will only receive payment after successful milestone delivery
 
 ### Overview
 
@@ -274,11 +264,11 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | Features X, Y | $7,200 | 6 weeks |
-| 2 | Feature Z | $2,400 | 2 weeks |
+| 1 | Core Contracts| $3,600 | 3 weeks |
+| 2 | Core Backend| $3,600 | 3 weeks |
+| 3 | Feature Z | $2,400 | 2 weeks |
 | **Total** | | **$9,650** | **8 weeks** |
 
-Make sure you show clearly what the funding is going towards (e.g. 30 hours of a full time employee at $X / hour).
 
 1 x 30 hours of full-time employee at $20/hour
 2 x 15 hours of part-time employee at $20/hour
@@ -292,6 +282,8 @@ Please include:
   - After the Fast-Grant, we plan to focus on having a working proof of concept and onboarding a few initial users. Once we have proven this concept, we will dedicate more resources to the project, integrating more DEXes on other parachains (out next DEX/parachian will most likely be Hydration), across the Polkadot ecosystem and optimizing our investment strategies. We'll continuously improve our decision engine to make smarter investment choices based on user feedback and market performance data. Our primary goal post-grant is to validate the core functionality with real users and refine the product based on their experience before expanding to a wider audience.
 
    - Further development will include implementing reactive smart contracts that incorporate stop-loss and take-profit functionality, providing users with more advanced risk management tools. We'll also explore the potential decentralization of the decision engine, to become fully DeFi, allowing for smart investment strategies while maintaining security and reliability. We will also be exploring the feature of sending notifications to users, regarding their investments, using a Telegram bot.
+ 
+  
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
 - (Theo Yap)
 - Your vision for the project's growth and impact in the Polkadot ecosystem
