@@ -31,6 +31,7 @@ graph TB
         PoolAnalytics["LP Data Aggregator"]
         IDWorker["Investment Decision Worker"]
         InvestmentDecision["Blockchain Interaction Service"]
+        LiquidationService["MEV Liquidation Service"]
         PostgreSQL[(PostgreSQL Database)]
     end
 
@@ -47,12 +48,13 @@ graph TB
         AssetBridge["XCM Asset Transfer Bridge"]
     end
 
-    %% Moonbeam Components (Position Tracking Only)
+    %% Moonbeam Components (Position Tracking + Liquidation)
     subgraph Moonbeam["Moonbeam Parachain"]
         XCMProxy["XCM Proxy Contract"]
         subgraph XCMProxyComponents["XCM Proxy Components"]
             PositionTracking["Position Tracking"]
             RangeCalculator["Tick Range Calculator"]
+            LPMonitor["LP Stop-Loss Monitor"]
         end
     end
 
@@ -63,7 +65,7 @@ graph TB
 
     %% User Flow Connections
     Frontend -->|Deposits/Withdraws/Views Portfolio| AssetsPallet
-    Frontend -->|Sets investment preferences| IDWorker
+    Frontend -->|Sets investment preferences & stop-loss| IDWorker
 
     %% Asset Management Flow
     AssetsPallet --> UserBalances
@@ -73,6 +75,12 @@ graph TB
     PostgreSQL -->|Provides Positions & User Preferences| IDWorker
     PoolAnalytics -->|Provides Pool Data| IDWorker
     IDWorker -->|Issues Investment Decisions| InvestmentDecision
+    IDWorker -->|Enrolls positions with stop-loss/take-profit| LPMonitor
+
+    %% Liquidation Service Flow
+    LiquidationService -->|Monitors position health| LPMonitor
+    LiquidationService -->|Executes liquidations for rewards| AlgebraPools
+    PostgreSQL -->|Stores monitored positions| LiquidationService
 
     %% Asset Transfer Flow - Moonbeam
     InvestmentDecision -->|Instructs Contract to Transfer Assets| AssetTransfer
@@ -89,6 +97,11 @@ graph TB
     XCMProxy -->|Provides liquidity to| AlgebraPools
     XCMProxy -->|Reads pool state| AlgebraPools
 
+    %% Stop-Loss Integration
+    LPMonitor -->|Monitors LP NFT positions| AlgebraPools
+    LPMonitor -->|Liquidates unhealthy positions| AlgebraPools
+    LPMonitor -->|Reports liquidations| PositionTracking
+
     XCMProxy -->|Return Assets/Rewards| AssetBridge
     AssetBridge -->|XCM Asset Transfer Back| AssetTransfer
     AssetTransfer -->|Credits User Balance| UserBalances
@@ -102,12 +115,14 @@ graph TB
     classDef crossChainLayer fill:#ffb74d,stroke:#f57c00,stroke-width:3px,color:#000
     classDef moonbeamLayer fill:#64b5f6,stroke:#1976d2,stroke-width:3px,color:#fff
     classDef dexLayer fill:#f06292,stroke:#c2185b,stroke-width:3px,color:#fff
+    classDef liquidationLayer fill:#e57373,stroke:#d32f2f,stroke-width:3px,color:#fff
 
     class Frontend userLayer
     class PoolAnalytics,IDWorker,InvestmentDecision,PostgreSQL backendLayer
+    class LiquidationService liquidationLayer
     class AssetsPallet,UserBalances,AssetTransfer assetHubLayer
     class XCMRelayer,AssetBridge crossChainLayer
-    class XCMProxy,PositionTracking,RangeCalculator moonbeamLayer
+    class XCMProxy,PositionTracking,RangeCalculator,LPMonitor moonbeamLayer
     class AlgebraPools dexLayer
 ```
 
@@ -222,8 +237,7 @@ We solve these challenges by offering:
 
   - User-friendly automation: Reduces the operational burden on users by automating complex liquidity management strategies.
   
-
-- Are there any other projects similar to yours in the Polkadot ecosystem?
+#### Are there any other projects similar to yours in the Polkadot ecosystem?
   - If so, how is your project different?
   - If not, why might such a project not exist yet?
 
@@ -279,6 +293,7 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 
 (Each of us, should write individual experience, then we could combine into some ending statement)
 - **Rashad Hosseini**, a software engineer with a bachelor's degree from the University of Leeds and currently working at the fintech unicorn Checkout.com. With experience in building robust financial technology solutions providing valuable expertise in developing secure and scalable systems, which is essential for creating reliable DeFi applications.
+- **Gabriel Bandman**, 
 
 ## 📊 Development Status
 
@@ -316,8 +331,8 @@ Please provide a breakdown of your budget by milestone:
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
 | 1 | Core Contracts| $3,600 | 3 weeks |
-| 2 | Core Backend| $3,600 | 3 weeks |
-| 3 | Feature Z | $2,400 | 2 weeks |
+| 2 | Core Backend| $3,625 | 3 weeks |
+| 3 | Core Frontend | $2,425 | 2 weeks |
 | **Total** | | **$9,650** | **8 weeks** |
 
 
