@@ -79,7 +79,7 @@ graph TB
 
     %% Liquidation Service Flow
     LiquidationService -->|Monitors position health| LPMonitor
-    LiquidationService -->|Executes liquidations for rewards| AlgebraPools
+    LiquidationService -->|Calls liquidation functions| XCMProxy
     PostgreSQL -->|Stores monitored positions| LiquidationService
 
     %% Asset Transfer Flow - Moonbeam
@@ -99,7 +99,8 @@ graph TB
 
     %% Stop-Loss Integration
     LPMonitor -->|Monitors LP NFT positions| AlgebraPools
-    LPMonitor -->|Liquidates unhealthy positions| AlgebraPools
+    LPMonitor -->|Triggers liquidation| XCMProxy
+    XCMProxy -->|Executes liquidation| AlgebraPools
     LPMonitor -->|Reports liquidations| PositionTracking
 
     XCMProxy -->|Return Assets/Rewards| AssetBridge
