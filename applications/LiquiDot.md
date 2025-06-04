@@ -85,17 +85,13 @@ graph TB
     XCMProxy -->|Provides liquidity to| AlgebraPools
     XCMProxy -->|Reads pool state| AlgebraPools
 
-    %% Return Asset Flows
     XCMProxy -->|Return Assets/Rewards| AssetBridge
     AssetBridge -->|XCM Asset Transfer Back| AssetTransfer
     AssetTransfer -->|Credits User Balance| UserBalances
 
-    %% Data Reading Flows
     Frontend -->|Reads Position Status| XCMProxy
     InvestmentDecision -->|Reads Position Status| XCMProxy
-    PoolAnalytics -->|Monitors Moonbeam Pools| AlgebraPools
 
-    %% Enhanced Styling with Better Colors
     classDef userLayer fill:#4fc3f7,stroke:#0288d1,stroke-width:3px,color:#000
     classDef backendLayer fill:#ba68c8,stroke:#7b1fa2,stroke-width:3px,color:#fff
     classDef assetHubLayer fill:#66bb6a,stroke:#388e3c,stroke-width:3px,color:#fff
