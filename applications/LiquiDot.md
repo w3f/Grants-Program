@@ -116,11 +116,11 @@ graph TB
     class AlgebraPools dexLayer
 ```
 
-#### Core Contracts Documenation
+### Core Contracts Documenation
 
 LiquiDOT's smart contract architecture follows a hub-and-spoke model designed for scalable cross-chain liquidity management. The system separates user asset custody (Asset Hub) from execution logic (Moonbeam Proxy), enabling secure, efficient cross-chain operations while maintaining clear separation of concerns. This architecture allows for future parachain integrations without compromising the core vault security or requiring user migration.
 
-### Asset Hub Vault Contract (Asset Hub/EVM)
+#### Asset Hub Vault Contract (Asset Hub/EVM)
 
 The **Asset Hub Vault Contract** serves as the primary custody and accounting layer for user deposits, implementing a secure vault pattern with integrated XCM messaging capabilities. This Solidity contract acts as the single source of truth for user balances and orchestrates all cross-chain operations through standardized XCM calls via Asset Hub's EVM environment.
 
@@ -149,7 +149,7 @@ function initialize(
 ) external initializer
 ```
 
-### XCM Proxy Contract (Moonbeam/EVM)
+#### XCM Proxy Contract (Moonbeam/EVM)
 
 The **XCM Proxy Contract** functions as the execution engine for all DEX interactions, implementing sophisticated liquidity management with automated position monitoring. This contract bridges XCM messages from Asset Hub into concrete DeFi operations on Moonbeam's EVM environment, handling complex LP strategies while maintaining gas efficiency.
 
