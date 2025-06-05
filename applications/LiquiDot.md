@@ -23,15 +23,14 @@ Our team came together around a shared interest in solving a problem we've encou
 - Backend - NestJS (TypeORM, PolkadotJS)
 - Contracts - Solidity (Openzeppelin)
 
-### Our High Level Diagram
+### Documenation of core components and architecture
+#### Liquidot High Level System Diagram
 ```mermaid
 graph TB
-    %% User Interaction Layer
     subgraph User["User Interaction"]
         Frontend["Frontend UI (Next.js)"]
     end
 
-    %% Backend Services
     subgraph Backend["Backend Services"]
         PoolAnalytics["LP Data Aggregator"]
         IDWorker["Investment Decision Worker"]
@@ -40,20 +39,17 @@ graph TB
         PostgreSQL[(PostgreSQL Database)]
     end
 
-    %% Asset Hub (Main Contract with User Balances)
     subgraph AssetHub["Asset Hub (Substrate)"]
         AssetsPallet["AI Liquidity Provider/Vault Contract"]
         UserBalances["User Balance Tracking"]
         AssetTransfer["XCM Asset Transfer Interface"]
     end
 
-    %% Cross-Chain Communication Layer
     subgraph Relayers["Cross-Chain Communication"]
         XCMRelayer["XCM Message Relayer"]
         AssetBridge["XCM Asset Transfer Bridge"]
     end
 
-    %% Moonbeam Components (Position Tracking + Smart Contracts)
     subgraph Moonbeam["Moonbeam Parachain"]
         XCMProxy["XCM Proxy Contract"]
         subgraph XCMProxyComponents["XCM Proxy Components"]
@@ -62,46 +58,37 @@ graph TB
         end
     end
 
-    %% DEX Pools
     subgraph DEXes["DEX Pools"]
         AlgebraPools["Algebra Pools (Moonbeam)"]
     end
 
-    %% User Flow Connections
     Frontend -->|Deposits/Withdraws/Views Portfolio| AssetsPallet
     Frontend -->|Sets investment preferences & stop-loss| IDWorker
 
-    %% Asset Management Flow
     AssetsPallet --> UserBalances
     AssetsPallet --> AssetTransfer
 
-    %% Backend Decision Flow
     PostgreSQL -->|Provides Positions & User Preferences| IDWorker
     PoolAnalytics -->|Provides Pool Data| IDWorker
     IDWorker -->|Issues Investment Decisions| InvestmentDecision
     IDWorker -->|Configures positions with tick range automation| XCMProxy
 
-    %% LP Range-Based Automation (No Oracle Dependency)
     StopLossWorker -->|Monitors pool ticks & position ranges| AlgebraPools
     StopLossWorker -->|Executes range-based liquidations| XCMProxy
     StopLossWorker -->|Reports liquidations via XCM| AssetTransfer
 
-    %% Asset Transfer Flow - Moonbeam
     InvestmentDecision -->|Instructs Contract to Transfer Assets| AssetTransfer
     AssetTransfer -->|XCM Asset Transfer| AssetBridge
     AssetBridge -->|Delivers Assets| XCMProxy
 
-    %% Cross-Chain Instruction Flow
     InvestmentDecision -->|XCM Instructions| XCMRelayer
     XCMRelayer -->|Instructions to Moonbeam| XCMProxy
 
-    %% Moonbeam Operations
     XCMProxy --> PositionTracking
     XCMProxy --> RangeCalculator
     XCMProxy -->|Provides liquidity to| AlgebraPools
     XCMProxy -->|Reads pool ticks & position ranges| AlgebraPools
 
-    %% LP Range-Based Automation Flow
     AlgebraPools -->|Pool tick changes| XCMProxy
     XCMProxy -->|Detects out-of-range positions| PositionTracking
     XCMProxy -->|Executes range-based liquidations| AlgebraPools
@@ -129,15 +116,123 @@ graph TB
     class AlgebraPools dexLayer
 ```
 
-Yap About the way contracts work (Users deposited tokens can only be swapped/Provided as liquidity in the contract definition)
+#### Core Contracts Documenation
 
-- We have developed minmal PoC
+LiquiDOT's smart contract architecture follows a hub-and-spoke model designed for scalable cross-chain liquidity management. The system separates user asset custody (Asset Hub) from execution logic (Moonbeam Proxy), enabling secure, efficient cross-chain operations while maintaining clear separation of concerns. This architecture allows for future parachain integrations without compromising the core vault security or requiring user migration.
+
+### Asset Hub Vault Contract (Asset Hub/EVM)
+
+The **Asset Hub Vault Contract** serves as the primary custody and accounting layer for user deposits, implementing a secure vault pattern with integrated XCM messaging capabilities. This Solidity contract acts as the single source of truth for user balances and orchestrates all cross-chain operations through standardized XCM calls via Asset Hub's EVM environment.
+
+**Core Responsibilities:**
+- **User Balance Management**: Tracks individual user deposits and withdrawals with precision accounting
+- **Asset Custody**: Securely holds user funds using battle-tested vault patterns with emergency controls
+- **XCM Message Forwarding**: Constructs and dispatches cross-chain messages to execute operations on target parachains
+- **Operation State Tracking**: Maintains operation history and status for user transparency and system recovery
+- **Access Control**: Implements role-based permissions for automated systems and emergency procedures
+
+**Key Functions:**
+- `deposit(amount, asset)` - Accept user deposits with automatic balance updates
+- `withdraw(amount, asset)` - Process withdrawals with safety checks and balance verification
+- `forwardXCMCall(chainId, poolId, operation, params)` - Construct and send XCM messages for remote execution
+- `executeSwap(sourceAsset, targetAsset, amount, minOutput)` - Initiate cross-chain swaps via XCM
+- `getUserBalance(user, asset)` - Query user balance for specific assets
+- `emergencyPause()` - Circuit breaker for system-wide operations
+
+**Contract Initialization:**
+```solidity
+function initialize(
+    address[] memory _supportedAssets,
+    XCMDestination[] memory _xcmDestinations,
+    address _feeCollector,
+    address _emergencyAdmin
+) external initializer
+```
+
+### XCM Proxy Contract (Moonbeam/EVM)
+
+The **XCM Proxy Contract** functions as the execution engine for all DEX interactions, implementing sophisticated liquidity management with automated position monitoring. This contract bridges XCM messages from Asset Hub into concrete DeFi operations on Moonbeam's EVM environment, handling complex LP strategies while maintaining gas efficiency.
+
+**Core Responsibilities:**
+- **Percentage-Based LP Management**: Handle LP position creation, modification, and removal with percentage-based range calculations (e.g., ±2%, ±5%, ±10% around current price)
+- **Dynamic Tick Range Conversion**: Automatically convert user-friendly percentage ranges to precise tick ranges based on current pool state
+- **Position Tracking & Storage**: Maintain comprehensive position records with owner mapping, active status monitoring, and range parameters
+- **Multi-Modal Token Operations**: Support both direct user operations and XCM-triggered operations for cross-chain functionality
+- **Advanced DEX Integration**: Full Algebra protocol integration with single-hop swapping and real-time price analysis
+- **Risk-Adaptive Range Management**: Enable users to set custom risk profiles through intuitive percentage-based position sizing
+
+**Key Functions:**
+
+*Liquidity Management:*
+- `addLiquidityAdapter(pool, token0, token1, rangePercentage, liquidityDesired, positionOwner)` - Create LP positions with percentage-based ranges (e.g., 500 = ±5%)
+- `calculateTickRange(pool, rangePercentage)` - Convert percentage ranges to precise tick boundaries based on current pool state
+- `executeBurn(pool, bottomTick, topTick, liquidity)` - Remove liquidity from existing positions with automatic token collection
+- `findPosition(pool, bottomTick, topTick)` - Locate specific positions by pool and tick range parameters
+- `getActivePositions()` - Query all active LP positions for stop-loss monitoring
+- `getUserPositions(user)` - Get all positions owned by a specific user with range details
+
+*Token Operations:*
+- `deposit(token, amount)` - Direct token deposits by users
+- `withdraw(token, amount)` - Direct token withdrawals by users  
+- `depositTokens(token, user, amount)` - XCM-triggered deposits (owner only)
+- `withdrawTokens(token, user, amount, recipient)` - XCM-triggered withdrawals (owner only)
+- `transferBalance(token, to, amount)` - Internal balance transfers between users
+
+*DEX Integration & Swapping:*
+- `swapExactInputSingle(tokenIn, tokenOut, recipient, amountIn, amountOutMinimum, limitSqrtPrice)` - Execute single-hop exact input swaps for position liquidations
+- `swapExactInput(path, recipient, amountIn, amountOutMinimum)` - Multi-hop swaps for complex token routing
+
+*Price Quotes & Analysis:*
+- `quoteExactInputSingle(tokenIn, tokenOut, amountIn, limitSqrtPrice)` - Get real-time swap quotes without execution
+- `quoteExactOutputSingle(tokenIn, tokenOut, amountOut, limitSqrtPrice)` - Quote exact output amounts for precise calculations
+
+*Stop-Loss & Position Monitoring:*
+- `getUserTokenBalance(user, token)` - Check user's token balances for position health calculation
+- `getBalance(token)` - Query contract's total token holdings for liquidity analysis
+- `checkPositionHealth(positionId)` - Determine if position is out of range and needs liquidation
+- `getPositionCurrentRange(positionId)` - Calculate current price position relative to user's range
+- `algebraMintCallback(amount0, amount1, data)` - Handle Algebra pool mint callbacks securely
+
+**Contract Initialization:**
+```solidity
+constructor(
+    address _owner,           // Asset Hub contract address (via XCM)
+    address _quoterContract,  // Algebra Quoter for price quotes
+    address _swapRouterContract // Algebra SwapRouter for swap execution
+) {
+    owner = _owner;
+    quoterContract = _quoterContract;
+    swapRouterContract = _swapRouterContract;
+}
+```
+
+### Integration Architecture
+
+Both contracts work in tandem through a carefully orchestrated flow optimized for percentage-based risk management:
+
+1. **User deposits** assets to Asset Hub Vault Contract and sets risk preferences (e.g., "±5% range")
+2. **Investment Decision Worker** analyzes opportunities and converts user preferences to specific pool parameters
+3. **Asset Hub** constructs XCM calls with operation parameters (chainId: Moonbeam, poolId, amounts, percentage ranges)
+4. **XCM Proxy** receives assets and instructions, converts percentages to precise ticks, executes DEX operations, and begins position monitoring
+5. **Stop-Loss Worker** continuously queries XCM Proxy to check if positions have moved outside their percentage ranges
+6. **Range-based liquidations** execute automatically when positions exit user-defined ranges, with settlement reported back via XCM
+
+### Key Architectural Benefits
+
+- **User-Friendly Risk Management**: Users set intuitive percentage ranges (±2%, ±5%, ±10%) rather than complex tick values
+- **Consistent Risk Profiles**: 5% means 5% regardless of token pair or current price levels
+- **Automated Range Conversion**: Smart contracts handle the complex math of converting percentages to precise tick boundaries
+- **Real-Time Monitoring**: Stop-loss triggers based on actual price movement relative to user's original range selection
+- **Cross-Chain Efficiency**: All complex calculations happen on Moonbeam while user funds remain secure on Asset Hub
+
+This architecture ensures **security** (funds custodied on Asset Hub), **user accessibility** (percentage-based controls), **mathematical precision** (automated tick conversion), and **scalability** (easy addition of new parachains) while maintaining a development timeline feasible for 8 weeks with 2 FTE developers.
+
+### We have developed minmal PoC
   [Our Github Project link](https://github.com/gabikreal1/PolkadotHack2025)
-- Our Demo of the Frontend UI 
+### Our Demo of the Frontend UI 
   [Video to the Demo](https://www.youtube.com/watch?v=9bX0Up0pLww&feature=youtu.be)
 
-- Data models / API specifications of the core functionality
-Refine it with Claude (Gabriel)
+
 ### Data Models
 
 #### Users
