@@ -5,6 +5,7 @@
   * **DOT:**   13zkusUEfqSXYomjHroNTXygY878hJAoEAkTtoc6DDrbaB5q
   * **USDC (Polkadot Asset Hub):**   13zkusUEfqSXYomjHroNTXygY878hJAoEAkTtoc6DDrbaB5q
 * **Level:** 2
+* **total_cost_dai:** 35000
 
 ---
 
