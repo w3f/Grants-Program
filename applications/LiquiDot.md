@@ -1,24 +1,29 @@
-# 📝 Name of your Project
+# 📝 LiquiDOT
 
 ## 🌟 Project Overview
 
-## Project Description
+### Project Description
 
 LiquiDOT is a customizable liquidity provider (LP) manager designed to simplify and improve participation in DeFi. It allows users to automate their LP strategies, set stop loss and take profit levels, and rebalance their positions without needing constant manual oversight. With support for multiple DEXes, LiquiDOT offers a single, user-friendly platform for managing liquidity across different ecosystems. The goal is to bring meaningful control, automation, and flexibility to liquidity providers — something that's currently missing in the space.
 
-## Integration with Polkadot
+### Integration with Polkadot
 
 Polkadot provides the ideal foundation for LiquiDOT by enabling seamless interaction across chains through smart contract deployment and cross-chain messaging. This allows us to connect with multiple parachains and decentralized exchanges, giving users the ability to manage liquidity across ecosystems from a single interface. Polkadot's focus on interoperability and scalability directly supports our aim to build a robust and future-ready LP management tool.
 
-## Our Team's Motivation
+### Our Team's Motivation
 
 Our team came together around a shared interest in solving a problem we've encountered ourselves: the lack of smart, automated tools for liquidity providers. While trading platforms have long supported features like automation, stop loss, and take profit, these tools haven't yet made their way into LP management — and we saw an opportunity to change that. We wanted to build something that gives users more control and peace of mind when providing liquidity. With backgrounds in fintech, mobile development, and blockchain analytics, we had the right mix of skills to bring the idea to life — and it's something we're genuinely excited to use ourselves.
 
 
 ### 🔍 Project Details
 
+### Tech Stack
 
-## Our High Level Diagram
+- Frontend - NextJS (Wagmi, PolkadotJS)
+- Backend - NestJS (TypeORM, PolkadotJS)
+- Contracts - Solidity (Openzeppelin)
+
+### Our High Level Diagram
 ```mermaid
 graph TB
     %% User Interaction Layer
@@ -258,10 +263,10 @@ Our project is built to fill this gap—bridging the technical challenge with a 
 
 ## 👥 Team
 
-- **Team Name:** LiquiDOT
+- **Team Name:** LiquiDOT (not a company yet)
 - **Contact Name:** Gabriel Bandman
 - **Contact Email:** gabrielsoftware04@gmail.com
-- **Website:** (add later)
+- **Website:** liquidot.xyz (not operational yet)
 
 ### Team members
 
@@ -306,7 +311,7 @@ If you've already started implementing your project, please provide a link and a
 
 - **Estimated Duration:** 8 weeks
 - **Full-Time Equivalent (FTE):**  2 Full-Time Equivalent.
-- **Total Costs:** $9650
+- **Total Costs:** $10000
 
 > Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
 
@@ -328,15 +333,12 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | Core Contracts| $3,600 | 3 weeks |
-| 2 | Core Backend| $3,625 | 3 weeks |
-| 3 | Core Frontend | $2,425 | 2 weeks |
-| **Total** | | **$9,650** | **8 weeks** |
+| 1 | Core Contracts| $3,750 | 3 weeks |
+| 2 | Core Backend| $3,750 | 3 weeks |
+| 3 | Core Frontend | $2,500 | 2 weeks |
+| **Total** | | **$10,000** | **8 weeks** |
 
 
-1 x 30 hours of full-time employee at $20/hour
-2 x 15 hours of part-time employee at $20/hour
-$50 AWS hosting, Vercel hosting, Testing Gas Fees, Domain name(Liquidot.xyz)
 
 ## 🔮 Future Plans
 
