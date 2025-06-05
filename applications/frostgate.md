@@ -4,8 +4,7 @@
 * **Payment Details:**
   * **DOT:**   13zkusUEfqSXYomjHroNTXygY878hJAoEAkTtoc6DDrbaB5q
   * **USDC (Polkadot Asset Hub):**   13zkusUEfqSXYomjHroNTXygY878hJAoEAkTtoc6DDrbaB5q
-* **Level:** 2
-* **total_cost_dai:** 35000
+* **Level:** 3
 
 ---
 
@@ -51,7 +50,7 @@ This would allow Polkadot to seamlessly participate in a broader, trustless ecos
 Frostgate is designed to deeply integrate with the Substrate and Polkadot ecosystems by providing:
 1. A **Substrate-native verification pallet** for zero-knowledge proofs
 2. **Custom runtime APIs** and hooks for proof consumption and execution
-3. A **Substrate ChainAdapter**, enabling seamless message normalization and ingestion
+3. A **Polkadot/Substrate ChainAdapter**, enabling seamless message normalization and ingestion
 
 Our architecture prioritizes low overhead, high verifiability, and compatibility with the tools and standards used within the Polkadot ecosystem.
 
@@ -232,11 +231,6 @@ While Polkadot's XCM handles messaging within the network, Frostgate extends tha
 - **Contact Email:** tosinoyinboblessed@gmail.com
 - **Website:** blessedtosinoyinbo.vzy.io
 
-* **[To Hire] Rust + ZK Engineer**
-
-  * Will support ZKPlug backend integrations
-  * Focus on Halo2 and RiscZero circuits
-  * Support general project development
 
 ---
 
@@ -247,7 +241,7 @@ While Polkadot's XCM handles messaging within the network, Frostgate extends tha
 
 ### Team's experience
 
-As a solo founder, I bring 4+ years of hands-on experience in backend and systems engineering with deep expertise in protocol research and zero-knowledge cryptography. Currently working as a Software Engineer at Vault, specializing in distributed storage infrastructure and node coordination.
+As a solo founder, I bring 4+ years of hands-on experience in backend and systems engineering with deep expertise in protocol research and zero-knowledge cryptography. Prev Software Engineer at Vault, specializing in distributed storage infrastructure and node coordination.
 
 Key relevant experience:
 - Vault - Building cryptographically verifiable distributed storage infrastructure
@@ -273,6 +267,11 @@ Upon grant approval, I plan to hire:
   - Support ZKPlug backend integrations
   - Focus on Halo2 and RiscZero circuits
   - General project development support
+ - **Full-stack Software Engineer** (part-time initially, scaling to full-time)
+  - Refine CLI for testing, message relay, proof submission etc.
+  - Focus on SDK improvement, write wrappers/utilites for other devs
+  - Frontend development, including public explorer for testnets, landing page/
+  - Work on UI to monitor cross-chain txs, relayer activites, testnet chain statues
 
 I have identified potential contributors from the Polkadot and Rust communities and will formalize hiring upon grant approval and initial funding.
 
@@ -303,8 +302,8 @@ I have identified potential contributors from the Polkadot and Rust communities 
 
 ### Total Duration: 3 months
 
-**FTE:** 1.5
-**Total Requested Grant:** $35,000
+**FTE:** 2.5
+**Total Requested Grant:** $50,000
 **DOT Share:** 60%
 **USDC Share:** 40%
 
@@ -313,7 +312,7 @@ I have identified potential contributors from the Polkadot and Rust communities 
 ### 🎯 Milestone 1: Core Protocol Stabilization & Foundation
 
 **Duration:** 1 month  
-**Cost:** $10,000  
+**Cost:** $15,000  
 **Focus:** Stabilize core components, implement essential adapters, and establish solid testing foundation
 
 | Number | Deliverable | Specification |
@@ -334,7 +333,7 @@ I have identified potential contributors from the Polkadot and Rust communities 
 ### 🎯 Milestone 2: Advanced Features & Testnet Integration
 
 **Duration:** 1 month  
-**Cost:** $12,000  
+**Cost:** $17,000  
 **Focus:** Advanced features, multi-chain support, and comprehensive tooling
 
 | Number | Deliverable | Specification |
@@ -355,7 +354,7 @@ I have identified potential contributors from the Polkadot and Rust communities 
 ### 🎯 Milestone 3: Production Readiness & Ecosystem Integration
 
 **Duration:** 1 month  
-**Cost:** $13,000  
+**Cost:** $18,000  
 **Focus:** Security hardening, scalability, production deployment, and ecosystem adoption
 
 | Number | Deliverable | Specification |
