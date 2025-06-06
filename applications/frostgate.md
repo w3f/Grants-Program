@@ -284,7 +284,7 @@ I have identified potential contributors from the Polkadot and Rust communities 
 * `frostgate-icap`: Chain adapter trait + Substrate adapter -> https://github.com/frostgate/frostgate-icap
 * `frostgate-zkip`: ZK plugin trait + SP1 backend -> https://github.com/frostgate/frostgate-zkip
 * `frost-cli`: CLI tool for proof generation and batch verification -> https://github.com/frostgate/frost-cli
-* frostgate-pallet-verifier: Complete Substrate pallet for ZK proof verification -> https://github.com/frostgate/frostgate-pallet-verifier
+* `frostgate-pallet-verifier`: Complete Substrate pallet for ZK proof verification -> https://github.com/frostgate/frostgate-pallet-verifier
 * `frostgate-sdk`: Core primitive types and functions -> https://github.com/frostgate/frostgate-sdk
 
 ---
