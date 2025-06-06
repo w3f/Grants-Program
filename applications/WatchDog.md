@@ -1,91 +1,62 @@
-# WatchDog: A Unified Grant Progress Tracking Platform for the Web3 Foundation and Polkadot Ecosystem
+## Unified Grant Progress Tracking Platform For Polkadot
+ 
+ **Team Name:** Build Union 
+- **Payment Details:**
+  - **DOT**: 1XYfhcszyy6jiHYvkBqPxUXq6YADRUaUkcZ8vopqNTiqjBv
+  - **USDC** 0x53785b7155d016ba9c64fc2117d0eac0b21c9869 
+- **[Level] **1
+
 
 ## Problem
 
-Tracking the progress of initiatives funded by the Web3 foundation, Polkadot Treasury, and OpenGov is currently fragmented. Updates are dispersed across Polkassembly, GitHub repositories, Substrate development logs, and social media. This lack of cohesion hinders the community’s ability to effectively oversee projects, evaluate progress, and address potential issues promptly. Manual cross-referencing is time-consuming for grant admins, and critical issues often go unnoticed until they become disruptive or irreversible.
-
+The Polkadot DAO, Web3 Foundation, and OpenGov have allocated over **34 million DOT** to fund ecosystem initiatives. While this capital has accelerated growth, updates and critical information about funded projects remain **fragmented** across platforms like **Polkassembly, GitHub, Discord**, and **X**. This results in **inconsistent reporting** and **limited oversight**, making it difficult for the community and grant administrators to get a comprehensive view of projects, track progress, ensure financial accountability, and evaluate alignment with Polkadot’s long-term goals. Resulting in **time-consuming and manual**, with risks of critical issues going unnoticed until. 
 ## Proposed Solution
 
-To overcome these challenges, we propose a **Unified Grant Progress Tracker for Polkadot** called **WatchDog** to improve project transparency and accountability — a dashboard purpose-built for the Web3 foundation, Polkadot Treasury, and OpenGov ecosystem.
+**WatchDog** is a unified platform designed for the Polkadot ecosystem to improve **transparency and accountability** for Web3 Foundation, Polkadot Treasury, and OpenGov grants. It consolidates data into a user-friendly dashboard and provides live, structured insights into **milestone progress**, **spending**, and **outcomes**:
 
-![Image](https://github.com/user-attachments/assets/a54c6967-be66-412a-8070-3176ab567323)
+![image](https://github.com/user-attachments/assets/12c0d82c-7736-47ab-acb3-03fdb295e7a1)
 
-It brings structured oversight to grant-funded projects by:
+- **Milestone Tracking:** Each grant has a dedicated page showing milestones, progress bars, and completion status, updated in real-time using data from GitHub and Polkadot’s development tools.
+- **Risk Detection:** Machine learning identifies delays, inactivity, or unusual fund activity, providing actionable suggestions for early intervention.
+- **Financial Transparency:** Tracks Treasury funds to project wallets, linking spending to milestones and flagging inconsistencies.
+- **Blockchain Verification:** Milestones are securely recorded on Polkadot’s blockchain for transparent, tamper-proof audit trails.
+- **Automated Alerts:** Sends in-app and email notifications for overdue milestones or deviations from grant plans.
+- **Visual Insights:** Displays progress through charts, such as bar graphs for milestone completion and line charts for fund usage trends.
 
-- **Milestone Tracking:** Dedicated pages for each grant, displaying key milestones, progress indicators (e.g., progress bars, percentages), and completion status.
-- Syncing with GitHub and Substrate dev tools for real-time technical progress updates.
-- Using machine learning to detect early signs of risk (delays, inactivity, unusual fund behavior).
-- Mapping Treasury disbursements to project-specific wallet activity to improve financial transparency.
-- Anchoring milestone attestations on-chain via hashed, verifiable records.
-- Consolidating fragmented data into a standardized, actionable format for voters and stakeholders.
-- **Automated Alerts:** Notifications for overdue milestones or significant deviations from the grant scope, delivered via in-app notifications and email.
-- **Visualizations:** Charts and graphs to provide a visual representation of project progress and trends.
-
-By embedding verification and automation into the grant lifecycle, WatchDog empowers the ecosystem with low-effort, low-cost, high-trust project monitoring.
+> WatchDog streamlines grant oversight, empowering stakeholders with clear, actionable insights at low cost and effort.
 
 ## Key Features and Differentiators
 
-### Live Grant Monitoring
+- **Live Grant Monitoring:** A dynamic dashboard tracks milestones, updates, and reports across all Polkadot Treasury and OpenGov projects, consolidating data from multiple sources.
+- **Proactive Risk Detection:** Machine learning analyzes real-time data to flag risks, such as:
+  - Significant milestone delays  
+  - Sudden project inactivity  
+  - Irregular fund usage  
+  Each flagged issue includes recommended actions to improve outcomes.
+- **Blockchain-Based Milestone Records:** Milestone submissions are securely stored on Polkadot’s blockchain, ensuring authenticity and enabling easy audits by stakeholders.
+- **Fund Flow Tracking:** WatchDog links Treasury disbursements to project milestones, highlighting:
+  - Delayed or unused funds  
+  - Unexpected project activity  
+  - Misalignments between reported progress and spending
+- **Standardized Reporting:** Automated reports combine data from GitHub commits, Polkadot development logs, and OpenGov metadata into a consistent format for easy comparison and decision-making.
+- **Multi-Source Data Integration:** WatchDog unifies data from GitHub, Polkassembly, and OpenGov into a single grant profile, combining governance discussions, technical updates, and financial tracking.
 
-A dynamic dashboard that tracks milestones, development updates, and reporting across the entire Polkadot Treasury and OpenGov landscape.
+## Community Oversight
 
-### Proactive Risk Detection
-
-Built-in machine learning models evaluate real-time inputs to detect anomalies such as:
-
-- Milestones are significantly delayed relative to the original timelines.
-- Projects exhibiting sudden inactivity.
-- Irregularities in fund disbursement and delivery performance.
-
-Each flagged project is paired with suggested actions to enable early intervention and improved capital efficiency.
-
-### On-Chain Milestone Attestations
-
-Every milestone submission is hashed and anchored on-chain using a lightweight Substrate pallet. Attestations are signed using Polkadot identity primitives to ensure auditability and authenticity.
-
-### Proposal-Linked Fund Flow Monitoring
-
-WatchDog maps Treasury disbursements to recipient wallets, milestones, and asset monitoring. This approach provides insight into:
-
-- Delayed or unutilized funds.
-- Unexpected wallet transfers.
-- Inconsistencies between reported progress and on-chain fund movement.
-
-Unlike general wallet tracking, this feature ties activity directly to project milestones and proposal IDs.
-
-### Standardized Reporting and Automated Summarization
-
-Structured progress reports are auto-generated by aggregating data from:
-
-- GitHub commits and pull requests.
-- Substrate development logs.
-- Forum updates.
-- Treasury proposal metadata.
-
-All reports follow a consistent template, facilitating comparison and enabling timely decision-making.
-
-### Multi-Source Data Fusion
-
-WatchDog integrates data across GitHub, Polkassembly, OpenGov, etc. Each grant receives a consolidated profile combining governance discussion, technical updates, and financial tracking in a single interface.
-
-### Community Oversight Layer
-
-- Stakeholders can endorse or raise concerns on submitted milestone reports.
-- Grantees may respond to feedback within the platform.
-- Verified developers and auditors can flag issues that feed into WatchDog's risk model.
-- Community signals help prioritize grants requiring further review or follow-up.
+- **Endorsements and Feedback:** Stakeholders can endorse or comment on milestone reports.
+- **Grantee Interaction:** Grantees can respond to feedback within the platform.
+- **Auditor Input:** Verified developers and auditors can flag issues, feeding into the risk detection system.
 
 ## Ecosystem Fit
 
-WatchDog aligns with Polkadot’s values of transparency, decentralization, and verifiability. It serves multiple stakeholder groups:
+WatchDog aligns with Polkadot’s values of **transparency, decentralization,** and **accountability**. It serves:
 
-- **Empowering Grant Administrators:** Tools to streamline oversight, automate progress reporting, generate insights, and trigger follow-ups.
-- **DOT/KSM Holders:** Visibility into how Treasury and OpenGov funds are allocated and used.
-- **OpenGov Voters:** Actionable insights to inform ongoing and future decisions.
-- **Contributors and Grantees:** Reduced manual reporting burdens and clearer expectations.
-- **Community Members:** Access to a verifiable, centralized source for project updates and accountability.
+- **DOT Token Holders & DAO Delegates:** Clear insights to evaluate grant performance.  
+- **Grant Recipients:** A user-friendly portal for reporting progress.  
+- **Governance Facilitators:** Portfolio-wide visibility to identify risks.  
+- **Community Members:** Transparent access to fund usage and project impact.
 
-WatchDog complements existing tools like Polkassembly by shifting the focus from governance discourse to delivery oversight, technical verification, and funding integrity. It serves as the DevOps and transparency layer for Polkadot’s on-chain public goods infrastructure.
+> WatchDog complements tools like **Polkassembly** by focusing on **delivery oversight, technical verification, and funding transparency**, acting as a **DevOps layer** for Polkadot’s public goods infrastructure.
 
 ## Team 👥
 
@@ -158,16 +129,16 @@ Post-grant approval
 ## Overview
 
 - **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):** 1.5
+- **Full-Time Equivalent (FTE):** 2
 - **Total Costs:** 10,000 USD
-- **DOT %:** ≥ 50%
+- **DOT %:** 50%
 
 ---
 
 ## Milestone 1 — Frontend Dashboard MVP
 
 - **Estimated Duration:** 1 month
-- **FTE:** 0.5
+- **FTE:** 1
 - **Costs:** 3,000 USD
 
 | Number  | Deliverable               | Specification                                                                                                      |
@@ -186,7 +157,7 @@ Post-grant approval
 ## Milestone 2 — Backend & GitHub Sync
 
 - **Estimated Duration:** 1 month
-- **FTE:** 1
+- **FTE:** 2
 - **Costs:** 7,000 USD
 
 | Number  | Deliverable                  | Specification                                                                                                  |
