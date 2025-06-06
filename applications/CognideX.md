@@ -1,189 +1,231 @@
-# Name of your Project
+# CognideX – Decentralized Data Marketplace
 
-> [!NOTE]
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
-
-- **Team Name:** Legal name of your team (e.g. JsonCorp)
+- **Team Name:** CognideX
 - **Payment Details:**
-  - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
-  - **Payment**: In case of payment in **USDC**, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of **fiat** payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and list here the date and time of your email (e.g. Fiat 24.12.1971, 11:59). 
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1, 2 or 3
+  - **DOT**: N/A (requesting USDC)
+  - **Payment**: 
+  (In case of payment in **USDC**, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of **fiat** payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and list here the date and time of your email (e.g. Fiat 24.12.1971, 11:59).)
+- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
-> [!IMPORTANT]
-> *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
-Please provide the following:
+**Tagline:** CognideX is a blockchain and AI-powered decentralized data marketplace. 
 
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+**Project Description:** CognideX enables individuals to monetize their data and enterprises to access high-quality, multi-source datasets with AI-driven insights. By leveraging blockchain for trust and transparency and AI for intelligent analytics, the platform transforms raw data into actionable knowledge. CognideX maintains an immutable on-chain record of data contributions and usage, ensuring end-to-end transparency and provenance for all data exchanges. On top of this, an AI assistant (Insight GPT) can analyze over 22,000 datasets and deliver aggregated answers or visualizations, so users gain insights rather than just raw data. 
+
+**Polkadot Integration:** CognideX is built on the Polkadot/Substrate stack. The core platform is implemented as a custom Substrate pallet (runtime module) on a Polkadot parachain, providing a decentralized ledger and smart contract logic for the data marketplace. The native token CGDX conforms to the Polkadot PSP-22 standard and is used for staking, on-chain governance, and rewarding data contributors. By building on Polkadot, CognideX benefits from cross-chain interoperability and the security of Polkadot’s relay chain, making it possible in the future to exchange data assets or insights across other parachains. 
+
+**Motivation:** Our team is driven to address the imbalance in today’s data economy, where large organizations capture most data value while individual data generators reap little benefit. Businesses and researchers also face silos, privacy concerns, and lack of trust when sourcing data. CognideX aims to bridge this gap by providing a trustless marketplace that incentivizes users to share data and ensures data consumers get reliable, verified information. We are passionate about the synergy of blockchain and AI; by combining Polkadot’s decentralized trust infrastructure with AI’s ability to extract insights, we hope to empower a new wave of data-driven applications and return value to data owners.
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+**Project Goals and Scope:** CognideX’s primary goal is to research and develop the architecture for a decentralized data marketplace that tightly integrates on-chain mechanisms with off-chain AI analytics. This research will produce a detailed protocol design and a proof-of-concept implementation demonstrating how data can be contributed, validated, tokenized, and queried in a decentralized, privacy-preserving way. The system covers the full lifecycle of data in the marketplace – from contribution and quality verification to tokenized reward distribution and AI-powered query processing. Key objectives include designing the data pipeline for quality control, the incentive model for data contributors (using the CGDX token), and the integration of a conversational AI assistant for end-users.
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
+**Architecture & Components:** The CognideX platform comprises several components working together:
 
+- **Substrate Pallet (On-Chain Layer):** The blockchain runtime module (CognideX pallet) handles identity of contributors, data transaction records, token reward distribution, and governance. Every dataset contribution or purchase is immutably recorded on-chain, logging the full lifecycle of data interactions. Smart contracts or runtime calls enforce business logic (for example, only allowing data that passed quality checks to be listed for sale). The pallet escrows and disburses CGDX token rewards, and also locks token stakes for governance voting on platform upgrades. The on-chain logic ensures fairness and transparency: for instance, each time a dataset is accessed or an AI model uses it, a usage event is logged, enabling auditability and provenance tracking for data and AI outcomes.
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+- **Data Quality Pipeline (Off-Chain Layer):** All user-contributed data undergoes an off-chain processing pipeline before being made available in the marketplace. This pipeline, implemented in an off-chain environment (e.g., a set of distributed nodes or cloud services), consists of modular stages for validation, cleaning, and anonymization. When a user contributes data, the Data Collection stage records metadata (data type, source, timestamp) on-chain, creating an immutable fingerprint of the contribution. Next, an Authenticity & Comparison stage automatically checks the new data against existing datasets or known references to detect duplicates or fake entries. Then a machine-learning-driven Quality Grading stage evaluates the dataset on factors like completeness, accuracy, timeliness, and consistency, yielding a quality score Q. Crucially, the pipeline’s results are anchored back on-chain at key checkpoints – for example, the quality score and a hash of the sanitized dataset can be stored in the blockchain state. This hash linking means any tampering with data after grading can be detected, and it ties the contributor’s on-chain identity to the verified data item. The blockchain also enforces that only data that has passed through this pipeline (and thus has an on-chain quality proof) can be listed in public Data Pools for consumers. The entire pipeline design is governed via the blockchain (upgrades must be proposed and approved by token-holders), ensuring transparency in how data is processed.
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+- **Insight GPT (AI Assistant):** Insight GPT is the AI-powered query engine and user interface of CognideX. It is a conversational assistant that allows users to ask natural language questions and receive analytics or answers derived from the pooled datasets. Internally, Insight GPT uses large-scale natural language processing and machine learning models to interpret user queries and automatically retrieve or aggregate data from relevant datasets on CognideX. Instead of forcing users to manually find and purchase raw data, the assistant can perform on-demand analysis across multiple data sources and provide the results directly (e.g. summary statistics, charts, or insights). This dramatically lowers the barrier for non-technical users to benefit from the data marketplace – they obtain knowledge and answers, not just files. The AI layer is also used behind the scenes in the data pipeline: it assists in data comparison and anomaly detection as well as in quality grading by learning from historical data contributions. Through this dual role, AI ensures the marketplace only hosts high-quality data and makes that data immediately useful to consumers. All AI-driven decisions that affect on-chain outcomes (like data acceptance or reward calculations) are logged and auditable against the blockchain’s records for accountability.
+
+- **CGDX Token and Incentives:** CognideX introduces CGDX, a native utility token (PSP-22 standard on Polkadot) that fuels the ecosystem. CGDX serves multiple functions: it is reward currency for data providers, a stake for governance, and a means of exchange within the marketplace. Data contributors earn CGDX tokens when they submit valuable data; the reward amount is computed based on the quality score Q of their dataset and the size/novelty of the contribution. This quality-pegged reward mechanism incentivizes users to provide comprehensive, accurate data – higher quality submissions yield larger token payouts. The token rewards are disbursed through on-chain transactions from a reward pool escrowed in the CognideX pallet. CGDX is also used for staking in governance: community members stake tokens to propose or vote on changes (e.g., adjusting pipeline parameters, adding new data categories). This on-chain governance ensures the platform evolves according to its users’ collective decisions, for example to adopt improved anonymization algorithms or machine learning models as they become available. By combining incentives with governance, CGDX aligns all participants towards improving the marketplace: contributors are rewarded for quality, consumers gain trust in the data, and token-holders guide the project’s evolution.
+
+- **Technology Stack:** On the blockchain side, CognideX will utilize Rust and the Substrate framework to develop the custom pallet and runtime logic. This pallet could be deployed either on a standalone Substrate chain that plans to become a Polkadot parachain, or as a module in an existing parachain, leveraging Polkadot’s shared security. Smart contracts (likely Ink! if needed) or off-chain workers may be used for certain features like triggering external data processing or complex computations not suited on-chain. The off-chain data pipeline and AI components will be developed using Python (for machine learning and data processing libraries) and possibly AI frameworks such as TensorFlow/PyTorch or Transformer-based NLP models for Insight GPT. Data storage for the contributed datasets will be handled off-chain: initially, data may be stored on secure cloud storage or a decentralized storage network (e.g., IPFS or a parachain like Crust) with content hashes referenced on-chain. The user-facing application can be a web interface (React/TypeScript) or a chat interface integrated with the AI assistant. We have a working prototype of the front-end at CognideX.ai which demonstrates the conversational query experience and data pool concept. The prototype currently connects to a backend that holds a repository of ~22k public datasets and uses an AI model to answer queries, showcasing the core idea of Insight GPT.
+
+**Current Status (PoC & Research):** The CognideX project is in an advanced concept stage with a proof-of-concept already developed. The web application at CognideX.ai allows users to interact with the AI assistant and query a wide range of datasets via natural language. This PoC, built in late 2024, demonstrates the feasibility of integrating a conversational AI with a large dataset repository. In parallel, we have produced a comprehensive technical whitepaper (January 2025) detailing the platform’s design. The whitepaper covers CognideX’s architecture (blockchain–AI synergy, data pipeline, privacy mechanisms), the Insight GPT design, and the CGDX token’s role in staking and rewards. It also lays out theoretical foundations and references for our approach. Additionally, we maintain documentation on our project website (docs.cognidex.ai) including user guides (e.g., how individuals can download their personal data from platforms like LinkedIn or TikTok to contribute to CognideX data pools) and overviews of key features. To date, our development has focused on off-chain components (data ingestion scripts, AI assistant prototypes) and the high-level design of on-chain components. We have not yet implemented the Substrate pallet or on-chain logic, which is a primary focus of this grant. No token has been launched or distributed – any token mention is currently conceptual for design purposes. We have engaged with the Polkadot community through developer events (our team participated in a Polkadot Buildathon in 2024) and received encouraging feedback on the concept. All research so far has been self-funded and the codebase is private; however, we plan to open source the relevant modules (Substrate code, simulation scripts) as we progress under this grant. 
+
+**What CognideX is _not_ (Out of Scope):** To manage expectations, we clarify the features and areas that are out of scope or not provided by this project at this stage:
+
+- **Token Launch or Economic Model:** We will not be issuing a tradable token or focusing on tokenomics beyond the functional use of CGDX for the prototype. The project is research-oriented; any future mainnet token economics or distribution (e.g., crowdloan or public sale) is outside the scope of this grant.
+
+- **Finished End-User Product:** This grant will deliver a reference implementation and research findings, but not a production-ready marketplace deployed for public use. The UI will be a basic demo. Large-scale deployment, mobile apps, or a polished consumer product experience will come later.
+
+- **Data Licensing and Compliance:** The project will not address legal frameworks for data licensing, compliance with specific data privacy regulations, or KYC of users. We focus on technical mechanisms (encryption, anonymization) to protect privacy, but legal/governance aspects (like data usage agreements between contributors and buyers) are not covered in this research scope.
+
+- **General AI Model Training:** Our AI component (Insight GPT) uses existing language model techniques to answer queries; we are not developing a new general-purpose ML model or making breakthroughs in AI algorithms. The innovation lies in integrating AI with blockchain data governance, rather than creating new AI architectures from scratch.
+
+- **Cross-Chain Integration:** While built on Polkadot, the current scope does not include cross-chain feature implementation (e.g., using XCM to query data from other parachains). We consider this a future enhancement once the core platform is proven; initially, CognideX will operate in its own environment with off-chain data sources.
+
+By defining what is out of scope, we ensure the project’s focus remains on the core research questions: designing a robust decentralized data exchange protocol with AI integration, and validating its feasibility within Polkadot’s ecosystem.
+
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+**Ecosystem Need & Gaps:** CognideX addresses a significant gap in the Polkadot ecosystem: the lack of a dedicated platform for trustless data exchange and monetization. Currently, individuals have limited means to profit from the data they generate, and organizations struggle to acquire diverse datasets due to data silos and privacy barriers. Polkadot, with its multi-chain architecture, has tremendous potential for a data economy but has yet to see a fully-fledged decentralized data marketplace. CognideX aims to fill this void by providing the infrastructure where data can be treated as a digital asset – one that is transparently tracked on-chain and enriched by AI. By doing so, CognideX meets the need for a secure data-sharing framework in Web3: it gives users control and ownership over their data (aligning with Web3 values) while enabling data-driven innovation across parachains and dApps. 
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
+**Target Audience:** The project’s primary users are two groups: data providers and data consumers. Data providers are individual users or organizations who contribute data (such as personal datasets, IoT device data, social media exports, etc.) into CognideX’s pools in exchange for token rewards. Data consumers are businesses, analysts, researchers, and developers who need access to aggregated data or insights – for example, a DeFi project seeking user behavioral data, a researcher requiring multi-source datasets for analysis, or even other parachains that could query CognideX for data through cross-chain calls in the future. We also anticipate interest from developers and parachain teams: CognideX can serve as a data-service hub in Polkadot, so other projects (like AI/ML dApps, oracle providers, or analytics tools) could build on top of it by interfacing with our runtime or API. For instance, a parachain focusing on healthcare data could integrate with CognideX to monetize its datasets, or a wallet developer could incorporate our Insight GPT to answer user questions using on-chain data. In summary, our target audience spans parachain developers (seeking data infrastructure), dApp/analytics developers, end-users who contribute data, and end-users who consume insights. 
+
+**Needs Met by CognideX:** The platform meets several critical needs:
+- **Trust and Transparency in Data Sharing:** By recording all data transactions and provenance on an immutable ledger, CognideX builds trust among participants who may not know each other. Data consumers can verify where data came from and how it was processed, while providers trust that usage and rewards are tracked fairly. This addresses the trust deficit that often prevents data sharing in traditional settings.
+Incentivization for Data Contribution: CognideX creates a data marketplace economy where good data is rewarded. This incentivization is key to unlocking valuable datasets that currently remain unused in personal silos. Individuals are more willing to share personal data if they receive fair compensation and retain control; CognideX’s blockchain and token model ensures exactly that (with rewards tied to data quality and usage transparency).
+
+- **High-Quality Data Access for Web3 Projects:** Polkadot projects often need real-world or cross-platform data (for example, an insurance dApp might need access to climate or traffic data, a social networking dApp might benefit from social media insights). CognideX provides a one-stop source of diverse datasets that are vetted for quality and enhanced by AI. The need for such a data layer is evident in the wider blockchain space – e.g., oracle networks provide real-time feeds, but a marketplace like CognideX would offer historical and analytic datasets not covered by simple oracles.
+
+- **Streamlined Data Utilization via AI:** A unique need we identified is making complex datasets immediately useful. Many potential data buyers lack data science expertise to derive value from raw CSV files or databases. CognideX meets this need by integrating the Insight GPT assistant, which lets users query in plain language and get meaningful answers. This feature essentially turns the marketplace into an intelligent data service rather than just a data repository. Early user testing with our PoC showed that business users prefer asking questions (“Which demographics are most interested in product X?”) over manually sifting through datasets – the AI lowers the skill barrier to using the data.
+
+**Evidence of Need:** We identified these needs through a combination of research and community engagement. Numerous industry reports and articles highlight how data silos and privacy concerns impede data sharing in traditional sectors. The success of Web2 data marketplaces (and the controversies around them) show both the demand for data and the importance of giving control back to users. Moreover, forum discussions in the Polkadot community and hackathon feedback have pointed out that Polkadot lacks a native data provisioning layer. A concrete indicator is the partnership between Ocean Protocol (an Ethereum-based data marketplace) and the Polkadot ecosystem via Moonbeam, this collaboration was aimed at providing Polkadot with access to a data marketplace solution. It underscores that the need for data marketplaces in Polkadot is recognized, but until now it’s being filled by external solutions rather than a Substrate-native project. CognideX’s proposal is directly aligned with this recognized need, bringing a Polkadot-first data marketplace to life. We’ve also taken cues from academic literature on data monetization and personal data stores, which advocate blockchain as a means to empower individuals in the data economy (several references cited in our whitepaper back this approach). 
+
+**Comparison with Similar Projects:** Within the Polkadot ecosystem, CognideX is a novel initiative, we are not aware of any existing Substrate-based project that offers a decentralized data marketplace with AI integration. Some related efforts include:
+- **Ocean Protocol:** Ocean Protocol is a well-known data marketplace protocol originally built on Ethereum. It tokenizes datasets and allows data providers to sell access to their data while preserving privacy via a compute-to-data paradigm. Ocean has begun deploying on Moonbeam (a Polkadot parachain) to bring its marketplace to Polkadot. How CognideX differs: Unlike Ocean, which focuses on data tokenization and exchange, CognideX emphasizes an integrated AI-driven insight delivery. Ocean typically requires consumers to manually find datasets and then run analysis off-chain, whereas CognideX’s Insight GPT can serve answers directly from the data pools, greatly improving user experience. Technically, CognideX is built as a Substrate runtime module deeply integrated with Polkadot’s cross-chain capabilities (whereas Ocean on Moonbeam relies on EVM smart contracts). We also plan on-chain governance of data processing and a quality-score-based reward system, which is a more granular incentive mechanism (Ocean’s incentives revolve around data tokens and liquidity). Our use of the PSP-22 token standard and integration with Polkadot’s native features (like on-chain identity and governance pallets) further differentiate us as a Polkadot-native approach.
+
+- **DataHighway (Polkadot Parachain):** DataHighway is an IoT-focused project in Polkadot that enables trading of IoT data and bandwidth through tokenized data NFTs. It’s more specific in scope (IoT connectivity data) and uses NFTs/F-NFTs to represent data rights. How CognideX differs: CognideX targets a broader range of datasets (social, economic, personal, etc.) and uses an AI-enhanced marketplace model rather than NFTizing data streams. We focus on data quality assessment and analytic insights; DataHighway is more about IoT device networking and token incentives for connectivity providers. In essence, DataHighway addresses IoT network data trading, while CognideX is a general data/insights marketplace.
+
+- **Decentralized Storage and Data Protocols:** Projects like Crust or Sia (file storage) and Kylin (a Polkadot project for data analytics/oracles) each cover pieces of the data ecosystem (storage, oracles), but none offers an end-to-end marketplace for user-contributed datasets with compensation. CognideX can actually complement these – e.g., we could use a storage network to store the actual dataset files, or incorporate oracle price feeds as data sources – but by itself, CognideX stands in a unique category within Polkadot.
+
+If we consider related ecosystems (Ethereum and others), Ocean Protocol (as mentioned) and SingularityNET (a decentralized AI marketplace) are the closest analogues. SingularityNET focuses on AI services (algorithms for sale) rather than data. Fetch.ai provides infrastructure for AI agents that can share data, but it’s more agent-based and not a user marketplace. CognideX distinguishes itself by uniting three elements – data marketplace, AI-driven analytics, and a Substrate-based token economy – which to our knowledge has not been done in a cohesive platform. We believe Polkadot’s technology is particularly well-suited for this convergence, thanks to on-chain governance (to evolve the pipeline), interoperability (to possibly fetch and serve data across chains), and scalability for handling many transactions (data contributions and usage logging). 
+
+In summary, CognideX fits into the Polkadot ecosystem as a data/AI service parachain. It addresses unmet needs by enabling a decentralized data economy, targets a broad user base from individuals to enterprises, and differentiates itself through integrated AI and a Polkadot-native design. By doing so, it can become a cornerstone for data availability and AI services in the Polkadot network, complementing existing infrastructure and unlocking new possibilities for data-driven dApps.
 
 ## Team :busts_in_silhouette:
 
-> [!IMPORTANT]
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
-
 ### Team members
 
-- Name of team leader
-- Names of team members
+- **Bhargav Sagiraju** – Team Lead & Full-Stack AI Engineer. Bhargav is the initiator of the CognideX project and will lead the development and research efforts. He is an AI Research Manager at the National University of Singapore and Development Head at CognideX. Bhargav holds a Master’s degree in Business Analytics (NUS MSBA) and has deep expertise in machine learning (especially large language models and generative AI) as well as blockchain technology. He has worked on several data-driven projects and full-stack applications, and has actively participated in Polkadot ecosystem events (including a Polkadot blockchain development bootcamp in 2024). Bhargav’s combination of AI and blockchain experience drives the core vision of CognideX.
+
+- **Professor James Pang Yan** – Academic Advisor & Data Science Lead. Prof. Pang is an Associate Professor at NUS Business School and Co-Director of the NUS Business Analytics Centre. He brings extensive experience in data analytics, big data architectures, and decision science. As a seasoned researcher (Ph.D. from NUS) and educator in analytics, he guides the design of CognideX’s data quality framework and analytics methodologies. Prof. Pang has published research on data-driven decision systems and has industry collaboration experience, giving CognideX a strong foundation in rigorous data management practices. He will advise on the project’s research methodology and ensure our approach aligns with state-of-the-art data science techniques.
+
+- **Soumya Haridas** – Blockchain Developer & Data Scientist. Soumya is a developer with a background in data science and software engineering. She earned her MSBA from NUS and has worked as a data scientist at Kotak Life (financial services), where she handled large datasets and predictive modeling. Soumya has also been involved in blockchain and Web3 development, participating in hackathons (including an award-winning project at IISC Pravega hackathon). On the CognideX team, she focuses on smart contract and Substrate development, implementing the pallet logic for data transactions and token economics. Additionally, she contributes to the AI pipeline development, leveraging her data science skills to refine the quality scoring algorithms. Soumya’s cross-discipline skill set is valuable for bridging the on-chain and off-chain components of CognideX.
+
+
+
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name 1:** Bhargav Sagiraju
+- **Contact Email 1:** bhargavs@nus.edu.sg
+
+- **Contact Name 1:** Professor James Pang Yan
+- **Contact Email 2:** jamespang@nus.edu.sg
+
+- **Website:** https://cognidex.ai
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** N/A (The project is currently an academic/independent research initiative and not yet incorporated. We plan to establish a legal entity in the near future as the project progresses.)
+- **Registered Legal Entity:** N/A (no registered company at this time)
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
+Our team combines strong expertise in artificial intelligence, data analytics, and blockchain development:
+- Prof. James Pang offers over 15 years of experience in data analytics and is a thought leader in the space. As Co-Director of NUS Business Analytics Centre, he has overseen numerous industry analytics projects and helped shape big data strategy for enterprises. He has specific interests in data privacy and algorithmic governance, which align well with CognideX’s goals of privacy-preserving data sharing. James has advised graduate student projects on blockchain applications in analytics, giving him context on decentralized tech. His role in CognideX is to ensure the methodologies for data quality scoring, anonymization, and incentive alignment are backed by scientific research and proven techniques.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+- Bhargav has 4+ years of experience in AI research and full-stack development. At NUS, he manages research projects involving blockchain, large language models and data analytics. He has developed dashboards and AI tools (see his GitHub bhargav1000 for projects) and is proficient in Python, JavaScript, Solidity, CSS and Rust. Bhargav has also contributed to Web3 projects; for example, he attended the Polkadot Blockchain Academy (PBA) 2025 in Lucerne, Switzerland where he built a prototype blockchain dApp for polkadot validators performance measurement, gaining familiarity with TypeScript, Substrate and Polkadot SDKs. His blend of skills ensures CognideX’s AI & Blockchain integration will be technically sound and user-friendly.
+
+- Soumya has over 3 years of experience in data science and software development. At Kotak Life, she built machine learning models and handled sensitive customer data, which gives her insight into data privacy and quality issues in a corporate setting. She also has solid coding experience in Python and has developed smart contract prototypes in Solidity and ink!. Soumya won a blockchain hackathon in 2022 with a project on decentralized identity, demonstrating her ability to quickly apply new blockchain tech. In CognideX, she has been prototyping the Moonbeam based Smart Contracts and additional on-chain and off-chain features. Soumya also contributes to testing the AI assistant with various datasets to refine its accuracy. Soumya has also successfully graduated from PBA-X and is also actively learning through project development on Moonbeam.
+
+Collectively, our team has the right mix of academic knowledge, practical coding ability, and domain expertise in AI & blockchain. We have previously collaborated on data-centric projects at NUS, which gives us good team synergy. While this is our first joint grant application to W3F, our track record includes academic publications (by Prof. Pang), internal prototypes (the CognideX PoC), and contributions to open-source projects (Bhargav has open-sourced machine learning project code on GitHub, and Soumya has contributed to a research implementation on GitHub for an AI segmentation model).
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
+We will conduct development in a public repository once the grant is approved. We plan to use a GitHub organization (e.g., https://github.com/Decentralized-Data-Marketplace/) for hosting the code. Initially, the repository will include the project code, and simulation scripts. (Currently, our prototype code is in a private repo; it will be migrated to the public repo with an appropriate open-source license when we begin the grant work.)
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+Bhargav Sagiraju – GitHub: bhargav1000 (active with projects in AI and blockchain)
+Soumya Haridas – GitHub: soumya-haridas (to be provided, if available – otherwise contributions will be under the CognideX org)
+Please Note: Bhargav and Soumya are mainly owners of the main CognideX github repo and take full ownership of the repositories thereof.
 
-### Team LinkedIn Profiles (if available)
+James Pang – Not a developer account (Prof. Pang will advise but not commit code)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+We will also invite community collaboration on our repo and document our progress via commits and issues.
+
+### Team LinkedIn Profiles
+
+- Bhargav Sagiraju – https://www.linkedin.com/in/bhargav-sagiraju/
+- Soumya Haridas – https://www.linkedin.com/in/soumya-haridas/
+- James Pang – https://www.linkedin.com/in/james-yan-pang-257a6311/
 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+We have undertaken substantial preliminary work to validate the feasibility of CognideX, both in theory and practice:
 
-- links to improvement proposals or [RFPs](https://grants.web3.foundation/docs/rfps) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+- **Proof of Concept:** As mentioned, a working PoC is live at cognidex.ai. This prototype demonstrates the core user experience: contributors can upload sample data (the current version uses public datasets for demo purposes), and consumers can query an AI assistant for insights. For example, we integrated a subset of open datasets (like World Bank indicators, sample social media data) and enabled questions like “What is the correlation between X and Y?” to be answered by the AI. The PoC, built with a React frontend and a Python backend, confirmed that non-technical users find value in the ability to ask questions and get immediate answers from combined data sources. It also helped us test basic reward logic in a simulated environment (we used a simple off-chain points system to mimic token rewards for uploads). The PoC is still running as a demo and serves as a user feedback tool while we design the robust decentralized version.
+
+- **Whitepaper and Documentation:** We authored the CognideX Technical Whitepaper (Jan 2025), which thoroughly documents our system design, research findings, and technical approach. 
+The whitepaper covers:
+1. **Blockchain–AI Synergy:** the conceptual framework of how blockchain ensures data integrity and fair rewards, while AI ensures data usefulness.
+
+2. **Data Pipeline:** a detailed design of each stage (as summarized in Project Details above), including diagrams of data flow and descriptions of our quality scoring algorithm and privacy preservation techniques.
+
+3. **Insight GPT Architecture:** how the conversational AI is structured (it outlines the use of a transformer-based model with fine-tuning on Q&A pairs derived from our datasets, and how it interfaces with the data pools).
+
+4. **CGDX Token Utility:** an explanation of the token’s technical role in staking and governance, referencing Polkadot’s governance model and how we adapt it for our needs.
+
+5. **Security and Privacy:** discussion of planned measures like differential privacy (for aggregating data in answers without revealing individual data points) and on-chain access control for sensitive datasets.
+
+6. **References:** scientific and industry references that influenced our design (e.g., we cite Polkadot and Substrate documentation, AI and blockchain research papers, and relevant data marketplace studies).
+
+The whitepaper serves as the foundational blueprint for our implementation. We have shared it with a few domain experts for feedback and incorporated their suggestions, for instance, on improving community governance of the pipeline.
+
+- **Prior Research & Inspiration:** We conducted a survey of existing data marketplaces and relevant technologies. This includes studying Ocean Protocol’s architecture, the AMD ALICE project (which combined AI with ledger technology), and academic proposals for data pricing models. We also looked at Polkadot’s treasury and identity pallets to see how data identities might be managed. On the AI side, we experimented with open-source LLMs (like GPT-J and GPT-3 via API) to evaluate their performance on domain-specific Q&A, guiding our choice of model for Insight GPT. All this research is documented in an internal wiki and will be distilled into public documentation as part of this grant’s deliverables (e.g., a literature review in our milestone reports).
+
+- **Community Engagement:** We have engaged with the Polkadot community through the official forum and Discord. A discussion thread we started on the Polkadot forum (“Decentralized Data Marketplace ideas – seeking feedback”) garnered some interest; community members asked about how we handle GDPR concerns and whether we could integrate with existing identity projects like Kilt – this feedback is influencing our approach to privacy and identity (possibly integrating decentralized identity for contributors in the future). We have also been in contact with a Web3 Foundation grants team member informally, who advised us on focusing our scope for a research grant and suggested we outline how our work could eventually become a parachain – advice we have taken in this proposal.
+
+- **Code and Repository Status:** As of now, our code is in two parts: the front-end/AI prototype (which is functional for demos) and early-stage Substrate code. The Substrate code consists of a scaffolded pallet (using the Substrate node template) where we have started defining data structures (e.g., a DataPool struct and a Contribution struct with fields for hash, contributor account, quality score, etc.). Basic extrinsics like submit_contribution and buy_data are outlined but not fully implemented/tested yet. This code is not yet public; it’s on a private GitHub repo. We will initialize a fresh public repo and migrate the code there once the project kicks off under the grant. Documentation for this code (Rust doc comments and a draft README) is being written to make onboarding easier for new contributors.
+
+In summary, we have validated the core concept through a PoC and laid out the detailed design in a whitepaper. We are now ready to transition into the implementation and experimentation phase, for which we seek W3F’s support. The groundwork done so far ensures that we won’t be starting from scratch – instead, we’ll be building on a solid foundation of research and prototype insights.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> [!CAUTION]
-> If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
+The roadmap below is structured into 2 milestones spanning a total of 2 months. This timeline is appropriate for a Level 2 research grant. Each milestone is research-focused with clear deliverables, including documentation, prototype code, and analysis. We anticipate an average team commitment of about 1.5 FTE over the 2 months (the three team members will contribute part-time around their academic schedules, roughly equivalent to one and a half full-time persons).
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
-- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
+- **Total Estimated Duration:** 3 months (approximately 12 weeks)
+- **Full-Time Equivalent (FTE):**  2 FTE (combined effort across team members)
+- **Total Costs:** $30,000 USD (to be paid in USDC)
+- **DOT %:** 0% (we request 100% in USDC)
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Protocol Design & Simulation
 
 - **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+- **FTE:**  2
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#documentation) for details. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| **0a.** | License | Apache 2.0 / MIT dual-license for all new source code. Documentation and research reports will be released under CC-BY-4.0. |
+| **0b.** | Documentation | We will deliver comprehensive documentation for this milestone: an updated technical specification document covering the CognideX protocol design, and inline code documentation. The spec document will include the data model (pallet storage schema for data pools, contributions, and token balances), state transition logic for key extrinsics, and diagrams of system architecture. It will also explain our research methodology and simulation setup. |
+| **0c.** | Testing and Testing Guide | For any code produced (e.g., simulation scripts or prototype functions), we will include unit tests and/or analysis scripts. We will provide a Test Guide describing how to run the simulations and interpret results. For example, if we deliver a Python simulation of the reward mechanism, we’ll include tests verifying that higher-quality contributions indeed yield higher rewards, and instructions to replicate these tests. |
+| **0d.** | Docker | A Dockerfile will be provided to set up a consistent environment for running the simulations and any prototype node. This will include necessary dependencies (Rust toolchain, Python libraries, etc.). By running the Docker image, W3F should be able to execute our simulation and any demo of milestone 1 without hassle. |
+| 0e. | Article | We will publish an **article** that explains all the achieved milestones and deliverables from 0a. to 0d. over various platforms and also present our work at upcoming conferences such as Token2049 Singapore. |
+| 1. | CognideX Protocol Design Paper | A detailed design document (approx. 20-30 pages) outlining the finalized protocol. This is essentially an expanded whitepaper focusing on implementation details. It will cover: Substrate Pallet design (storage items, extrinsics, events), Data Quality Pipeline workflow (with flowcharts of off-chain vs on-chain interactions), CGDX token mechanics (reward formula, staking and governance processes), and privacy measures. We will highlight how the design leverages Substrate and Polkadot features. This document will be written in a research-oriented style, including rationale for design choices and potential alternatives considered. |
+| 2. | Simulation Results | We will develop a simulation or prototype to validate key aspects of the design. Specifically: (a) a data quality & reward simulation – a script that simulates multiple data contributors with varying data quality, applies our reward formula, and shows the distribution of rewards and effects of the early-bonus mechanism; (b) a governance scenario simulation – illustrating how a proposed change (e.g., modifying quality scoring parameters) would be voted on and enacted via token governance. The simulations may be done in Python or as a simplified Rust runtime test. We will provide results (graphs or tables) and an analysis in a short report. This will demonstrate that our incentive model is sound (e.g., no obvious exploits or unfair outcomes in simulation) and that governance is feasible (e.g., token-weighted voting behaves as expected). |
+| 3. | Preliminary Insight GPT Integration Plan | Since this milestone is mostly design, we will also deliver a plan/spec for integrating the AI assistant with the blockchain. This will describe how queries will be handled in the future (e.g., Insight GPT querying the on-chain index of data pools to know what data is available, then retrieving data from off-chain storage). We will also define APIs or data formats for communication between the on-chain part and the off-chain AI engine. This plan ensures that our blockchain design will accommodate the AI component smoothly in the next milestone. |
 
+**Achievement Criteria for Milestone 1:** 
+- W3F should be able to read our design paper and see a clear, well-argued approach for each component of CognideX. The simulation code and results should demonstrate the viability of our incentive model (e.g., show that a contributor with, say, 80% quality gets higher reward than one with 50%, and that early contributors get the intended bonus). 
 
-### Milestone 2 Example — Additional features
+- Run the AI assistant service and query it to get a response that involves data contributed on-chain. Even if simplified, this proves the concept of the AI integration. The Docker setup should make this straightforward to try out.
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- Read our article and final report to understand the research insights and how the prototype could evolve into a full product. The article should effectively communicate the value of our project to the broader community, and the final report should satisfy more technical readers or grant evaluators that we’ve met our objectives.
 
-...
-
+- All code should be open-sourced in our repository. We expect the final codebase to include: the Substrate node/pallet code, the off-chain processing script, and the AI assistant code, along with configuration files. Successful completion means the project is usable for a demo and forms a solid basis for continued development.
 
 ## Future Plans
 
-Please include here
+Looking beyond this initial 3-month research grant, we have ambitious plans for CognideX and are committed to its long-term success. Our future plans include:
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+- **Continued Development and Mainnet Launch:** After the research phase, our next step will be to refine the prototype into a production-ready platform. This likely involves applying for a follow-up development grant (perhaps a Level 2 or 3) to implement features that were out of scope or only rudimentary in the prototype. Specifically, we plan to develop a full-featured Substrate parachain for CognideX. This would include robust data storage solutions (integrating with decentralized storage networks for actual dataset hosting), advanced privacy enhancements (such as zero-knowledge proofs to verify data properties without revealing content), and a polished user interface. The ultimate goal is to launch CognideX as a parachain on Polkadot or as a common-good parachain if the community finds it valuable for the ecosystem. We anticipate needing to secure a parachain slot, potentially via a crowdloan – which the CGDX token could facilitate (this would be designed carefully in the tokenomics phase). A rough timeline for mainnet could be 6-12 months after the research phase, depending on development and auditing.
 
-## Referral Program (optional) :moneybag:
+- **Sustainability and Maintenance:** We intend to finance ongoing development through a combination of grants, ecosystem funding, and eventually marketplace revenue. In the short term, we may seek additional W3F grants or Polkadot treasury funding for specific aspects (e.g., building an XCM interface so other parachains can call CognideX’s functions). Long term, as CognideX becomes operational, a fee model will sustain it: for example, taking a small percentage of each data purchase transaction or subscription fees for enterprise users of Insight GPT. Those fees (possibly in DOT or CGDX) can go towards a treasury governed by CGDX holders to fund maintenance, upgrades, and community rewards. We also plan to open source the entire project and foster a community of contributors (similar to how projects like Subscan or Substrate itself have multiple contributors), ensuring the project isn’t solely dependent on the initial team. Technically, the governance features we implement mean the platform can evolve through on-chain upgrades post-launch, allowing the community to drive its maintenance and improvement in a decentralized manner.
 
-You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
+- **Ecosystem Integration and Adoption:** We will actively promote CognideX within the Polkadot ecosystem to drive adoption. This includes integrating with other projects: for instance, we might collaborate with an identity protocol (like KILT or Litentry) to allow users to prove certain attributes about themselves when contributing data (enhancing trust in data source). We also foresee integrating CognideX with oracle networks (like Chainlink or a native Polkadot oracle) so that real-time data feeds can enter data pools (imagine a pool for live IoT sensor data). A key integration plan is enabling cross-chain queries: using Polkadot’s Cross-Consensus Messaging (XCM), a smart contract on another parachain could query CognideX for an insight (e.g., a DeFi platform could call, “what’s the average credit score of users in pool X?” to adjust lending rates). In the medium term, we want to make CognideX a data oracle hub for Polkadot, complementing existing oracle solutions with richer, queryable data. On the AI side, as the Web3 space grows, we will explore integration with decentralized compute networks (like Phala or Ocean’s compute-to-data) so that the heavy AI processing can be done in a privacy-preserving, decentralized manner rather than our centralized server.
 
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDC))
+- **Commercial and Community Growth:** We believe CognideX can become not just a protocol, but an ecosystem of its own. We plan to reach out to potential data partners – for example, companies or research institutions willing to bootstrap some data pools (perhaps open data or data they wish to monetize). We’ll also engage with communities around personal data ownership (such as dApp users interested in monetizing their social media data) to populate the platform early on. On the demand side, we’ll pilot the platform with a few use-case verticals: for instance, marketing analytics (helping companies query aggregate consumer data), academic research (providing a trove of data for social scientists or health researchers under proper privacy controls), and crypto projects (offering analytics on on-chain and off-chain combined data, which could be very valuable for project metrics). Success in these areas will drive more users to contribute and consume data, creating network effects. We will likely pursue funding or partnerships with enterprises for sustainable growth once we have a viable product – for example, a subscription model for advanced analytics to enterprises.
+
+- **Long-Term Vision:** In the long run, we intend CognideX to be the Polkadot ecosystem’s go-to data marketplace and analytics engine. We envision a future where any user is the sovereign of their data, able to plug their data into CognideX and earn from it, and any developer or organization can easily access a world of crowdsourced data by querying our platform. The team plans to continue full-time on this project (post-academia, Bhargav and Soumya are keen on turning CognideX into a startup if the research shows promise, and Prof. Pang will remain an advisor and perhaps join the board of such an entity). We will also ensure the project’s decentralization; as it matures, governance will increasingly shift to CGDX token holders, and potentially a DAO structure will manage aspects of the marketplace (like curation of data pools). This aligns with Polkadot’s ethos of decentralization.
+
+- **Potential Impact on Polkadot:** By integrating into Polkadot, CognideX could enhance the ecosystem’s data availability, making Polkadot an attractive hub for data-driven Web3 applications. Our future plan includes offering Polkadot-native SDKs/APIs for developers (for example, a JavaScript library to easily query CognideX from a frontend, or an Rust API for parachains to retrieve data). We also consider multi-chain deployment: while Polkadot will be our home, we might deploy interfaces on other networks (e.g., an Ethereum smart contract that lets Ethereum dApps purchase data from CognideX, communicating via bridges or XCMP between Polkadot and Ethereum). This would funnel value back to DOT and the Polkadot ecosystem while expanding our user base across Web3.
+
+In summary, the successful completion of this research grant will be the catalyst for building a fully functional CognideX network. We are dedicated to maintaining and developing the project long-term. Financing will transition from grants to protocol revenue and possibly venture investment (if aligned with decentralization goals). In the short term, our focus is on delivering a solid foundation; in the long term, it’s on scaling that into a self-sustaining, widely used platform that showcases the power of Polkadot for real-world data applications. We are excited about the journey ahead and confident that CognideX can become a flagship use-case of blockchain and AI convergence in the Polkadot ecosystem.
+
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+**How did you hear about the Grants Program?** Web3 Foundation Website, Twitter and personal recommendation from Jake Blew of Scytale Digital
