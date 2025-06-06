@@ -284,7 +284,7 @@ I have identified potential contributors from the Polkadot and Rust communities 
 * `frostgate-icap`: Chain adapter trait + Substrate adapter -> https://github.com/frostgate/frostgate-icap
 * `frostgate-zkip`: ZK plugin trait + SP1 backend -> https://github.com/frostgate/frostgate-zkip
 * `frost-cli`: CLI tool for proof generation and batch verification -> https://github.com/frostgate/frost-cli
-* `frostgate-verifier`: In-progress Substrate pallet -> https://github.com/frostgate/frostgate-verifier
+* frostgate-pallet-verifier: Complete Substrate pallet for ZK proof verification -> https://github.com/frostgate/frostgate-pallet-verifier
 * `frostgate-sdk`: Core primitive types and functions -> https://github.com/frostgate/frostgate-sdk
 
 ---
@@ -325,8 +325,9 @@ I have identified potential contributors from the Polkadot and Rust communities 
 | 1a. | ICAP Core Refinements | - Complete ChainAdapter trait implementation<br>- Enhanced EVM adapter with Web3 integration<br>- Comprehensive error handling and async support<br>- Connection pooling and resource management |
 | 1b. | Substrate Integration | - Full Substrate ChainAdapter implementation<br>- Event listening and message submission<br>- Finality verification system<br>- Runtime integration support |
 | 1c. | Message Protocol Enhancement | - FrostMessage serialization/deserialization<br>- Proper nonce management system<br>- Message validation pipeline<br>- Replay protection with timestamp validation |
-| 1d. | ZK Proof System | - Complete ZKPlug trait with SP1 backend<br>- Proof generation optimization<br>- Proof caching mechanism<br>- Resource management for concurrent proving |
-| 1e. | SDK Foundation | - High-level SDK interface<br>- Builder patterns for configuration<br>- Configuration validation<br>- Basic TypeScript bindings |
+| 1d. | Substrate Pallet Integration | - Complete integration and testing of frostgate-pallet-verifier with runtime hooks, proof verification capabilities, and seamless parachain compatibility |
+| 1e. | ZK Proof System | - Complete ZKPlug trait with SP1 backend<br>- Proof generation optimization<br>- Proof caching mechanism<br>- Resource management for concurrent proving |
+| 1f. | SDK Foundation | - High-level SDK interface<br>- Builder patterns for configuration<br>- Configuration validation<br>- Basic TypeScript bindings |
 
 ---
 
@@ -496,6 +497,7 @@ frostgate/
 * Batch support: 100+ messages per proof
 * Message latency: <5s end-to-end
 * Throughput: 1000+ messages per minute
+* Successfully verify ZK proofs on-chain using the frostgate-pallet-verifier in a local Substrate runtime
 
 ---
 
