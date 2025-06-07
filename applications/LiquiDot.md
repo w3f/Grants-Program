@@ -36,12 +36,11 @@ graph TB
         PoolAnalytics["LP Data Aggregator"]
         IDWorker["Investment Decision Worker"]
         StopLossWorker["Stop-Loss/Take-Profit Worker"]
-        PostgreSQL[(PostgreSQL Database)]
+        PostgreSQL[(LP Data Aggregator)]
     end
 
-    subgraph AssetHub["Asset Hub (Substrate)"]
-        AssetsPallet["AI Liquidity Provider/Vault Contract"]
-        UserBalances["User Balance Tracking"]
+    subgraph AssetHub["Asset Hub"]
+        AssetsPallet["Liquidity Provider/Vault Contract"]
     end
 
     subgraph Moonbeam["Moonbeam Parachain"]
@@ -52,18 +51,18 @@ graph TB
         AlgebraPools["Algebra Pools (Moonbeam)"]
     end
 
-    Frontend -->|User Interface| AssetsPallet
-    Frontend -->|Sets Preferences| IDWorker
+    Frontend -->|Deposit/Withdraw Tokens| AssetsPallet
+    Frontend -->|Configure Investment Preferences| IDWorker
 
-    PostgreSQL -->|Data| IDWorker
-    PoolAnalytics -->|Pool Data| IDWorker
-    IDWorker -->|Investment Calls| AssetsPallet
+    PostgreSQL -->|Historical Position Data| IDWorker
+    PoolAnalytics -->|Real-time Pool Analytics| IDWorker
+    IDWorker -->|Execute Investment Decisions| AssetsPallet
 
-    AssetsPallet -->|XCM Transfer & Instructions| XCMProxy
-    XCMProxy -->|LP Operations| AlgebraPools
-    XCMProxy -->|Return Proceeds| AssetsPallet
+    AssetsPallet -->|Cross-chain Asset Transfer with LP Instructions| XCMProxy
+    XCMProxy -->|Mint/Burn Liquidity Positions| AlgebraPools
+    XCMProxy -->|Liquidation Proceeds via XCM| AssetsPallet
 
-    StopLossWorker -->|Monitors & Liquidates| XCMProxy
+    StopLossWorker -->|Monitor Positions & Execute Stop-Loss| XCMProxy
 
     classDef userLayer fill:#4fc3f7,stroke:#0288d1,stroke-width:3px,color:#000
     classDef backendLayer fill:#ba68c8,stroke:#7b1fa2,stroke-width:3px,color:#fff
@@ -73,7 +72,7 @@ graph TB
 
     class Frontend userLayer
     class PoolAnalytics,IDWorker,StopLossWorker,PostgreSQL backendLayer
-    class AssetsPallet,UserBalances assetHubLayer
+    class AssetsPallet assetHubLayer
     class XCMProxy moonbeamLayer
     class AlgebraPools dexLayer
 ```
