@@ -62,7 +62,9 @@ graph TB
     XCMProxy -->|Mint/Burn Liquidity Positions| AlgebraPools
     XCMProxy -->|Liquidation Proceeds via XCM| AssetsPallet
 
-    StopLossWorker -->|Monitor Positions & Execute Stop-Loss| XCMProxy
+    StopLossWorker -->|Read Position Data| XCMProxy
+    StopLossWorker -->|Monitor Pool Prices| AlgebraPools
+    StopLossWorker -->|Execute Stop-Loss Liquidations| XCMProxy
 
     classDef userLayer fill:#4fc3f7,stroke:#0288d1,stroke-width:3px,color:#000
     classDef backendLayer fill:#ba68c8,stroke:#7b1fa2,stroke-width:3px,color:#fff
