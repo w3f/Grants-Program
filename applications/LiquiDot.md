@@ -46,45 +46,24 @@ graph TB
 
     subgraph Moonbeam["Moonbeam Parachain"]
         XCMProxy["XCM Proxy Contract"]
-        subgraph XCMProxyComponents["XCM Proxy Components"]
-            PositionTracking["Position Tracking"]
-            RangeCalculator["Tick Range Calculator"]
-        end
     end
 
     subgraph DEXes["DEX Pools"]
         AlgebraPools["Algebra Pools (Moonbeam)"]
     end
 
-    Frontend -->|Deposits/Withdraws/Views Portfolio| AssetsPallet
-    Frontend -->|Sets investment preferences & stop-loss| IDWorker
+    Frontend -->|User Interface| AssetsPallet
+    Frontend -->|Sets Preferences| IDWorker
 
-    AssetsPallet --> UserBalances
-    AssetsPallet --> AssetTransfer
+    PostgreSQL -->|Data| IDWorker
+    PoolAnalytics -->|Pool Data| IDWorker
+    IDWorker -->|Investment Calls| AssetsPallet
 
-    PostgreSQL -->|Provides Positions & User Preferences| IDWorker
-    PoolAnalytics -->|Provides Pool Data| IDWorker
-    IDWorker -->|Calls investInPool| AssetsPallet
+    AssetsPallet -->|XCM Transfer & Instructions| XCMProxy
+    XCMProxy -->|LP Operations| AlgebraPools
+    XCMProxy -->|Return Proceeds| AssetsPallet
 
-    StopLossWorker -->|Monitors pool ticks & position ranges| AlgebraPools
-    StopLossWorker -->|Executes range-based liquidations| XCMProxy
-
-    AssetsPallet -->|XCM Asset Transfer + Instructions| XCMProxy
-
-    XCMProxy --> PositionTracking
-    XCMProxy --> RangeCalculator
-    XCMProxy -->|Provides liquidity to| AlgebraPools
-    XCMProxy -->|Reads pool ticks & position ranges| AlgebraPools
-
-    AlgebraPools -->|Pool tick changes| XCMProxy
-    XCMProxy -->|Detects out-of-range positions| PositionTracking
-    XCMProxy -->|Executes range-based liquidations| AlgebraPools
-
-    XCMProxy -->|Return Assets/Rewards via XCM| AssetsPallet
-    AssetsPallet -->|Credits User Balance| UserBalances
-
-    Frontend -->|Reads Position Status| XCMProxy
-    IDWorker -->|Reads Position Status| XCMProxy
+    StopLossWorker -->|Monitors & Liquidates| XCMProxy
 
     classDef userLayer fill:#4fc3f7,stroke:#0288d1,stroke-width:3px,color:#000
     classDef backendLayer fill:#ba68c8,stroke:#7b1fa2,stroke-width:3px,color:#fff
@@ -95,7 +74,7 @@ graph TB
     class Frontend userLayer
     class PoolAnalytics,IDWorker,StopLossWorker,PostgreSQL backendLayer
     class AssetsPallet,UserBalances assetHubLayer
-    class XCMProxy,PositionTracking,RangeCalculator moonbeamLayer
+    class XCMProxy moonbeamLayer
     class AlgebraPools dexLayer
 ```
 
