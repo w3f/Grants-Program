@@ -154,43 +154,41 @@ function initialize(
 The **XCM Proxy Contract** functions as the execution engine for all DEX interactions, implementing sophisticated liquidity management with automated position monitoring. This contract bridges XCM messages from Asset Hub into concrete DeFi operations on Moonbeam's EVM environment, handling complex LP strategies while maintaining gas efficiency.
 
 **Core Responsibilities:**
-- **Percentage-Based LP Management**: Handle LP position creation, modification, and removal with percentage-based range calculations (e.g., ±2%, ±5%, ±10% around current price)
-- **Dynamic Tick Range Conversion**: Automatically convert user-friendly percentage ranges to precise tick ranges based on current pool state
+- **Asymmetric Range LP Management**: Handle LP position creation, modification, and removal with flexible percentage-based ranges (e.g., -5%/+10%, -2%/+15% around current price)
+- **Dynamic Tick Range Conversion**: Automatically convert user-friendly asymmetric percentage ranges to precise tick ranges based on current pool state
 - **Position Tracking & Storage**: Maintain comprehensive position records with owner mapping, active status monitoring, and range parameters
 - **Multi-Modal Token Operations**: Support both direct user operations and XCM-triggered operations for cross-chain functionality
 - **Advanced DEX Integration**: Full Algebra protocol integration with single-hop swapping and real-time price analysis
-- **Risk-Adaptive Range Management**: Enable users to set custom risk profiles through intuitive percentage-based position sizing
+- **Risk-Adaptive Range Management**: Enable users to set custom risk profiles through intuitive asymmetric percentage ranges for different market conditions
 
 **Key Functions:**
 
 *Liquidity Management:*
-- `addLiquidityAdapter(pool, token0, token1, rangePercentage, liquidityDesired, positionOwner)` - Create LP positions with percentage-based ranges (e.g., 500 = ±5%)
-- `calculateTickRange(pool, rangePercentage)` - Convert percentage ranges to precise tick boundaries based on current pool state
+- `addLiquidityAdapter(pool, token0, token1, lowerRangePercent, upperRangePercent, liquidityDesired, positionOwner)` - Create LP positions with asymmetric ranges (e.g., -500/+1000 = -5%/+10%)
+- `calculateTickRange(pool, lowerRangePercent, upperRangePercent)` - Convert asymmetric percentage ranges to precise tick boundaries based on current pool state
 - `executeBurn(pool, bottomTick, topTick, liquidity)` - Remove liquidity from existing positions with automatic token collection
 - `findPosition(pool, bottomTick, topTick)` - Locate specific positions by pool and tick range parameters
 - `getActivePositions()` - Query all active LP positions for stop-loss monitoring
 - `getUserPositions(user)` - Get all positions owned by a specific user with range details
 
 *Token Operations:*
-- `deposit(token, amount)` - Direct token deposits by users
-- `withdraw(token, amount)` - Direct token withdrawals by users  
-- `depositTokens(token, user, amount)` - XCM-triggered deposits (owner only)
-- `withdrawTokens(token, user, amount, recipient)` - XCM-triggered withdrawals (owner only)
+- `depositTokens(token, user, amount)` - XCM-triggered deposits from Asset Hub (owner only)
+- `withdrawTokens(token, user, amount, recipient)` - XCM-triggered withdrawals to Asset Hub (owner only)
 - `transferBalance(token, to, amount)` - Internal balance transfers between users
+- `getUserTokenBalance(user, token)` - Check user's token balances for position health calculation
+- `getBalance(token)` - Query contract's total token holdings for liquidity analysis
 
 *DEX Integration & Swapping:*
-- `swapExactInputSingle(tokenIn, tokenOut, recipient, amountIn, amountOutMinimum, limitSqrtPrice)` - Execute single-hop exact input swaps for position liquidations
-- `swapExactInput(path, recipient, amountIn, amountOutMinimum)` - Multi-hop swaps for complex token routing
+- `swapExactInputSingle(tokenIn, tokenOut, recipient, amountIn, amountOutMinimum, limitSqrtPrice)` - Execute exact input swaps for position liquidations
 
 *Price Quotes & Analysis:*
 - `quoteExactInputSingle(tokenIn, tokenOut, amountIn, limitSqrtPrice)` - Get real-time swap quotes without execution
-- `quoteExactOutputSingle(tokenIn, tokenOut, amountOut, limitSqrtPrice)` - Quote exact output amounts for precise calculations
 
 *Stop-Loss & Position Monitoring:*
-- `getUserTokenBalance(user, token)` - Check user's token balances for position health calculation
-- `getBalance(token)` - Query contract's total token holdings for liquidity analysis
 - `checkPositionHealth(positionId)` - Determine if position is out of range and needs liquidation
-- `getPositionCurrentRange(positionId)` - Calculate current price position relative to user's range
+- `getPositionCurrentRange(positionId)` - Calculate current price position relative to user's asymmetric range
+- `liquidatePosition(positionId)` - Execute position liquidation when out of range, converting to base assets
+- `reportLiquidationToAssetHub(positionId, finalAmounts)` - Send liquidation results back to Asset Hub via XCM
 - `algebraMintCallback(amount0, amount1, data)` - Handle Algebra pool mint callbacks securely
 
 **Contract Initialization:**
@@ -210,22 +208,22 @@ constructor(
 
 Both contracts work in tandem through a carefully orchestrated flow optimized for percentage-based risk management:
 
-1. **User deposits** assets to Asset Hub Vault Contract and sets risk preferences (e.g., "±5% range")
-2. **Investment Decision Worker** analyzes opportunities and converts user preferences to specific pool parameters
-3. **Asset Hub** constructs XCM calls with operation parameters (chainId: Moonbeam, poolId, amounts, percentage ranges)
-4. **XCM Proxy** receives assets and instructions, converts percentages to precise ticks, executes DEX operations, and begins position monitoring
-5. **Stop-Loss Worker** continuously queries XCM Proxy to check if positions have moved outside their percentage ranges
-6. **Range-based liquidations** execute automatically when positions exit user-defined ranges, with settlement reported back via XCM
+1. **User deposits** assets to Asset Hub Vault Contract and sets risk preferences (e.g., "-5%/+10% range")
+2. **Investment Decision Worker** analyzes opportunities and converts user preferences to specific pool parameters  
+3. **Asset Hub** transfers assets via XCM to Moonbeam and sends operation instructions (poolId, amounts, asymmetric percentage ranges)
+4. **XCM Proxy** receives assets from Asset Hub, converts asymmetric percentages to precise ticks, executes DEX operations, and begins position monitoring
+5. **Stop-Loss Worker** continuously queries XCM Proxy to check if positions have moved outside their asymmetric ranges
+6. **Range-based liquidations** execute automatically when positions exit user-defined ranges, with XCM Proxy reporting results and returning assets to Asset Hub via XCM
 
 ### Key Architectural Benefits
 
-- **User-Friendly Risk Management**: Users set intuitive percentage ranges (±2%, ±5%, ±10%) rather than complex tick values
-- **Consistent Risk Profiles**: 5% means 5% regardless of token pair or current price levels
-- **Automated Range Conversion**: Smart contracts handle the complex math of converting percentages to precise tick boundaries
-- **Real-Time Monitoring**: Stop-loss triggers based on actual price movement relative to user's original range selection
-- **Cross-Chain Efficiency**: All complex calculations happen on Moonbeam while user funds remain secure on Asset Hub
+- **User-Friendly Risk Management**: Users set intuitive asymmetric percentage ranges (-5%/+10%, -2%/+15%) rather than complex tick values  
+- **Flexible Risk Profiles**: Different downside and upside ranges allow for tailored risk management based on market conditions
+- **Automated Range Conversion**: Smart contracts handle the complex math of converting asymmetric percentages to precise tick boundaries
+- **Real-Time Monitoring**: Stop-loss triggers based on actual price movement relative to user's original asymmetric range selection
+- **Cross-Chain Efficiency**: All complex calculations and liquidations happen on Moonbeam while user funds remain secure on Asset Hub
 
-This architecture ensures **security** (funds custodied on Asset Hub), **user accessibility** (percentage-based controls), **mathematical precision** (automated tick conversion), and **scalability** (easy addition of new parachains) while maintaining a development timeline feasible for 8 weeks with 2 FTE developers.
+This architecture ensures **security** (funds custodied on Asset Hub), **user accessibility** (asymmetric percentage-based controls), **mathematical precision** (automated tick conversion), and **scalability** (easy addition of new parachains) while maintaining a development timeline feasible for 8 weeks with 2 FTE developers.
 
 ### We have developed minmal PoC
   [Our Github Project link](https://github.com/gabikreal1/PolkadotHack2025)
