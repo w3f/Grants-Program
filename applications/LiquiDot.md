@@ -92,6 +92,7 @@ The **Asset Hub Vault Contract** serves as the primary custody and accounting la
 - **Asset Custody**: Securely holds user funds using battle-tested vault patterns with emergency controls
 - **Investment Orchestration**: Initiates cross-chain LP investments by transferring assets and sending instructions via XCM
 - **Proceeds Management**: Receives and processes liquidation proceeds from cross-chain positions
+- **Multi-Modal Liquidation**: Supports emergency liquidations and strategic rebalancing via XCM
 - **Operation State Tracking**: Maintains investment history and status for user transparency and system recovery
 - **Access Control**: Implements role-based permissions for automated systems and emergency procedures
 
@@ -100,6 +101,8 @@ The **Asset Hub Vault Contract** serves as the primary custody and accounting la
 - `withdraw(amount, asset)` - Process withdrawals with safety checks and balance verification
 - `investInPool(chainId, poolId, baseAsset, amounts, lowerRange, upperRange)` - Initiate cross-chain LP investments via XCM
 - `receiveProceeds(chainId, positionId, finalAmounts)` - Receive liquidation proceeds from XCM Proxy
+- `emergencyLiquidatePosition(chainId, positionId)` - Emergency liquidation override (admin only)
+- `rebalancePosition(chainId, positionId)` - Strategic position rebalancing for portfolio optimization
 - `getUserBalance(user, asset)` - Query user balance for specific assets
 - `getActiveInvestments(user)` - Query user's active cross-chain positions
 - `emergencyPause()` - Circuit breaker for system-wide operations
@@ -126,7 +129,8 @@ The **XCM Proxy Contract** functions as the execution engine for all DEX interac
 - **Dynamic Tick Range Conversion**: Automatically convert user-friendly asymmetric percentage ranges to precise tick ranges based on current pool state
 - **Position Tracking & Monitoring**: Maintain comprehensive position records with real-time health monitoring and range parameters
 - **Advanced DEX Integration**: Full Algebra protocol integration with optimized swapping and liquidity operations
-- **Automated Liquidation**: Execute position liquidations when out of range and return proceeds to Asset Hub via XCM
+- **Multi-Source Liquidation**: Handle liquidations from Stop-Loss Worker (with range validation) and Asset Hub (emergency/rebalancing)
+- **Security Validation**: Verify position health before liquidation to prevent unauthorized or erroneous liquidations
 
 **Key Functions:**
 
@@ -155,9 +159,9 @@ The **XCM Proxy Contract** functions as the execution engine for all DEX interac
 - `quoteExactInputSingle(tokenIn, tokenOut, amountIn, limitSqrtPrice)` - Get real-time swap quotes without execution
 
 *Stop-Loss & Liquidation:*
-- `checkPositionHealth(positionId)` - Determine if position is out of range and needs liquidation
-- `getPositionCurrentRange(positionId)` - Calculate current price position relative to user's asymmetric range
-- `executeFullLiquidation(positionId)` - Complete liquidation flow: burn LP position, swap to base asset, return to Asset Hub
+- `getPositionDetails(positionId)` - Provide raw position data (entry price, ranges, tokens, pool info) for backend analysis
+- `executeFullLiquidation(positionId, liquidationType)` - Complete liquidation flow with validation: burn LP position, swap to base asset, return to Asset Hub
+- `isPositionOutOfRange(positionId)` - Validate if position is actually beyond user's asymmetric range (internal security check)
 - `swapToBaseAsset(token0Amount, token1Amount, baseAsset)` - Convert position tokens back to original base asset
 - `algebraMintCallback(amount0, amount1, data)` - Handle Algebra pool mint callbacks securely
 
@@ -260,17 +264,25 @@ Our architecture ensures **security** (funds custodied on Asset Hub), **user acc
 | Ticker | string | Trading symbol |
 | LatestPrice | decimal | Most recent price |
 
-Api specs (unkown, yap potential api with claude)
 
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations
-  - Decisions are not made on web3, we do won't implement zkProofs of decisions computations in the MVP.
-  - We will do the MVP only with dexes that provide data via API.
-  - (Its not full add later) Chains/Dexes + simple rebalancing/decision making engine
-  - Think of more limitations
+
+### Project Limitations (MVP Scope)
+
+**What LiquiDOT will NOT provide or implement in this initial release:**
+
+- **No Partial Withdrawals**: Only full liquidations and rebalancing are supported - no partial position exits or portfolio adjustments
+- **Single Chain DEX Integration**: MVP limited to Moonbeam Algebra pools only - no multi-chain DEX support initially  
+- **Basic Investment Logic**: Simple rule-based investment decisions - no AI/ML algorithms or complex predictive models
+- **No zkProof Validations**: Investment decision computations happen off-chain without zero-knowledge proofs for verification
+- **API-Dependent Pool Data**: Only DEXes that provide reliable API access for pool analytics - no on-chain data parsing for non-API DEXes
+- **Limited Asset Support**: Restricted to major assets with established oracles and sufficient liquidity
+- **No Governance Token**: MVP operates with centralized decision-making - no DAO governance or community voting
+- **Single Strategy Type**: Only automated LP range management - no yield farming, lending, or other DeFi strategies
+- **No Impermanent Loss Calculations**: Users must understand IL risks independently - no IL tracking or warnings
+- **No 24/7 Guaranteed Uptime**: Backend monitoring may experience maintenance downtime affecting stop-loss execution
+- **No Tax Reporting Integration**: Users responsible for their own tax calculations and DeFi activity reporting
 
 ### 🧩 Ecosystem Fit
-
 
 
 ### Where and how does our project fit into the ecosystem?
