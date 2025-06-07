@@ -64,7 +64,7 @@ graph TB
 
     PostgreSQL -->|Provides Positions & User Preferences| IDWorker
     PoolAnalytics -->|Provides Pool Data| IDWorker
-    IDWorker -->|Calls investInPool()| AssetsPallet
+    IDWorker -->|Calls investInPool| AssetsPallet
 
     StopLossWorker -->|Monitors pool ticks & position ranges| AlgebraPools
     StopLossWorker -->|Executes range-based liquidations| XCMProxy
