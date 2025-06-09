@@ -129,8 +129,6 @@ Collectively, our team has the right mix of academic knowledge, practical coding
 
 We will conduct development in a public repository once the grant is approved. We plan to use a GitHub organization (e.g., https://github.com/Decentralized-Data-Marketplace/) for hosting the code. Initially, the repository will include the project code, and simulation scripts. (Currently, our prototype code is in a private repo; it will be migrated to the public repo with an appropriate open-source license when we begin the grant work.)
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
 Bhargav Sagiraju – GitHub: bhargav1000 (active with projects in AI and blockchain)
 Soumya Haridas – GitHub: SoumyaH22 (active with projects in AI and blockchain)
 Please Note: Bhargav and Soumya are mainly owners of the main CognideX github repo and take full ownership of the repositories thereof.
@@ -235,4 +233,5 @@ In summary, the successful completion of this research grant will be the catalys
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** 
+
 Web3 Foundation Website, Twitter and personal recommendation from Jake Blew of Scytale Digital
