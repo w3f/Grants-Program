@@ -33,7 +33,7 @@ title: 🙋 FAQ
 
 ### When do I get paid?
 
-  Payments are issued once a milestone has been successfully delivered. Successful delivery requires that you have submitted the milestone as per our delivery guidelines _and_ that the Grants team has reviewed _and officially accepted_ your submission. Payment is made within 14 days after approval.
+  Payments are issued within 30 days of a milestone being successfully delivered. Successful delivery requires that you have submitted the milestone as per our delivery guidelines _and_ that the Grants team has reviewed _and officially accepted_ your submission. See also our [Terms & Conditions](https://grants.web3.foundation/docs/Support%20Docs/T&Cs#7--terms-of-grant-giving).
 
 ### Can I reuse someone else’s open-source code?
 
