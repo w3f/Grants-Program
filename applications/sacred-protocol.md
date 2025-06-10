@@ -46,6 +46,9 @@ Our application is built on a modern, full-stack TypeScript architecture optimiz
 - **Authentication**: `Supabase` – Secure auth, real-time database, and scalable backend services.
 - **External APIs**:
   - `Twitter API SDK` – Social media integration.
+  - `Kick API SDK` - Social media integration.
+  - `Youtube v3 API` - Social media integration.
+  - `Twitch API SDK` - Social media integration.
   - `Google Generative AI` – AI-powered features and content generation.
 
 ### Limitations & Scope Clarification
