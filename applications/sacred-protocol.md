@@ -36,6 +36,7 @@ Our application is built on a modern, full-stack TypeScript architecture optimiz
 ### Blockchain Integration
 
 - **Solana**: `Web3.js`, `@solana/spl-token`
+- **Polkadot**: `Polkadot API`
 
 ### Backend
 
