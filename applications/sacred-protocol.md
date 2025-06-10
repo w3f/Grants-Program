@@ -19,16 +19,43 @@ This goal of this proposal is to break ground, into the ecosystem by allowing fo
 **f.** VIDEO PITCH HERE
 
 ### 🔍 Project Details
+## 🛠️ Technology Stack Overview
 
-We expect applicants to have a solid idea about the project's expected final state. Therefore, please submit (where relevant):
+Our application is built on a modern, full-stack TypeScript architecture optimized for performance, scalability, and multi-blockchain interoperability.
 
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- Any PoC/MVP or other relevant prior work or research on the topic
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations
+### Frontend
+
+- **Framework**: `React 18` with `Next.js` – Combines client-side interactivity with server-side rendering for optimal performance.
+- **Styling**: `Tailwind CSS` – Utility-first CSS framework for responsive, scalable UI development.
+- **UI Components**: `Radix UI`, `Lucide Icons` – Accessible, customizable design components.
+- **Animations**: `Framer Motion`, `Lottie` – Smooth animations and engaging micro-interactions.
+- **Form Handling**: `React Hook Form` + `Zod` – Type-safe, performant form validation and management.
+- **Data Management**: `TanStack React Query` – Robust client-side caching and state synchronization.
+- **Browser Integration**: Chrome Extension APIs – For enhanced in-browser functionality.
+
+### Blockchain Integration
+
+- **Solana**: `Web3.js`, `@solana/spl-token`
+
+### Backend
+
+- **Framework**: `Next.js` API Routes – Server-side logic and API handling.
+- **Language**: `TypeScript` – Static type checking for better code reliability.
+- **Database**: `Prisma ORM` with `SQL` – Type-safe database access with automated migrations.
+- **Authentication**: `Supabase` – Secure auth, real-time database, and scalable backend services.
+- **External APIs**:
+  - `Twitter API SDK` – Social media integration.
+  - `Google Generative AI` – AI-powered features and content generation.
+
+### Limitations & Scope Clarification
+
+To manage expectations and clarify project boundaries:
+
+- **Source Code**: The project will **not** provide the source code for the Sacred API backend and the Chrome Extension client.
+- **Polkadot Integration**: Polkadot network features will be accessible through our public extension and web app.
+- **Open Source Deliverables**: An open source CLI tool will be submitted, accompanied by full documentation, a testing suite, and a tutorial for sending and receiving tips on the Polkadot network. Details below.
+
+---
 
 ### 🧩 Ecosystem Fit
 
@@ -108,7 +135,6 @@ Sacred Protocol is the result of an iterative journey through multiple real-worl
 
 - https://app.sacredprotocol.com
 - https://chromewebstore.google.com/detail/sacred/nmhhcmgieandjhccpjokogfnipabadlp
-- https://github.com/sacredprotocol
 - https://sacred-protocol.gitbook.io/sacred
 
 ## 📅 Development Roadmap
