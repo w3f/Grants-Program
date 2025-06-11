@@ -70,7 +70,7 @@ Team Members
 
 - Rumen Yanakiev
 - rumen.yanakiev@limechain.tech
-- **Website:** [limechain.tech](https://file+.vscode-resource.vscode-cdn.net/Users/marinkonjari/Projects/W3F-Grants-Program/applications/limechain.tech)
+- **Website:** [limechain.tech](https://limechain.tech)
 
 ### **Legal Structure**
 
