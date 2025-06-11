@@ -1,4 +1,4 @@
-*# Samaritan
+# Samaritan
 
 - **Team Name:** Algorealm
 - **Payment Details:**
