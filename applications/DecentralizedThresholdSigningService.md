@@ -73,6 +73,7 @@ The most similar project we found is [this](https://github.com/nulltea/tss-libp2
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 1 FTE
 - **Total Costs:** 30,000 USD
+- **DOT %:** 50%
 
 ### Milestone 1 - Development of the Node
 
