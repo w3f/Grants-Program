@@ -202,7 +202,7 @@ Documentation includes architectural overview, basic integration guides, and pre
 ### 🎯 Milestone 2: Integration & Testnet Demo
 
 **Duration:** 1 month  
-**Cost:** $12,000  
+**Cost:** $12,000 
 **Focus:** Complete integration, pallet development, and working testnet demo
 
 | Number | Deliverable | Specification |
