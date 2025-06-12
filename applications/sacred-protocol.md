@@ -110,7 +110,9 @@ Edward Buchi: https://www.linkedin.com/in/edwardbuchi
 h. **Team Code Repos:**
 
 Organisation: https://github.com/Sacred-Protocol
+
 Team Member 1: https://github.com/paulsacred
+
 Team Member 2: https://github.com/Worthingtravis
 
 ### i. Team's experience
