@@ -1,4 +1,4 @@
-## Unified Grant Progress Tracking Platform For Polkadot
+## Automated Grant Progress Monitoring & Risk Detection for Web3 Foundation
  
  **Team Name:** Build Union 
 - **Payment Details:**
@@ -8,37 +8,36 @@
 
 
 ## Problem
+The **Web3 Foundation Grants Program** oversees hundreds of innovative projects within the Polkadot ecosystem, driving its growth and development. However, tracking the progress of these grants remains challenging, as updates are often scattered across GitHub repositories, pull requests, and issues, making it difficult to evaluate milestone completion, detect delays, or assess overall project health. This fragmentation increases the workload for reviewers who must spend hours manually cross-referencing data, and risks overlooking early indicators of project stagnation, such as inactive repositories or scope drift, while also reducing transparency for the community. Without an automated tracking system, the Web3 Foundation faces significant challenges in maximizing the impact and success of its grant funding.
 
-The Polkadot DAO, Web3 Foundation, and OpenGov have allocated over **34 million DOT** to fund ecosystem initiatives. While this capital has accelerated growth, updates and critical information about funded projects remain currently **fragmented** across platforms, Polkassembly, GitHub repositories, Substrate development logs, and social media, making it difficult for the community and grant administrators to oversee progress, evaluate outcomes, and identify issues early. Manual cross-referencing is time-consuming for grant administrators, and critical risks, such as delays or mismanagement, often go unnoticed
-## Proposed Solution
+##  Proposed Solution
+WatchDog is a lightweight, GitHub-integrated, web-based monitoring platform that aggregates W3F grant progress and activities into a real-time, user-friendly dashboard. It automates milestone tracking, visualizes project activity, and flags risks (e.g., inactivity or delays) using basic ML. Designed to complement W3F’s existing workflows, WatchDog reduces reviewer workload, enhances grantee accountability, and provides the community with transparent insights into funded projects, along with enhancements, like on-chain milestone attestations, to further strengthen trust.
 
-WatchDog is a platform designed to enhance **accountability**, **efficiency **, and  **transparency** in the Polkadot grant ecosystem by centralizing fragmented data into a user-friendly dashboard. It provides structured oversight for Web3 Foundation, Polkadot Treasury, and OpenGov grants, empowering stakeholders with actionable insights. Key features include:
+###  Key Features
 
-- **Milestone Tracking:** Dedicated grant pages with progress indicators (e.g., progress bars, percentages) and completion status, synced with GitHub and Substrate tools for real-time technical updates.  
-- **Financial Transparency:** Mapping Treasury disbursements to project-specific wallet activity for clear, verifiable spending oversight.  
-- **Risk Detection:** Machine learning algorithms to identify early signs of delays, inactivity, or unusual fund behavior.  
-- **On-Chain Verification:** Milestone attestations anchored on-chain via hashed, verifiable records for high-trust reporting.  
-- **Automated Alerts:** In-app and email notifications for overdue milestones or deviations from grant scope, enabling proactive issue resolution.  
-- **Data Visualization:** Charts and graphs to illustrate project progress, trends, and financial activity, simplifying community oversight.  
-- **Community Empowerment:** Standardized, consolidated data formats for voters and stakeholders, reducing manual effort and fostering trust.
+- **Milestone Tracking** Live dashboards showing each grant’s milestones progress with indicators (e.g., progress bars, percentages) and completion status.
 
-### Impact
+- **GitHub Integration**  Syncs PRs, issues, commits, and releases for all grant-related repositories.
 
-WatchDog streamlines grant management by automating monitoring, reporting, and risk identification, significantly reducing administrative burden. By embedding verification and automation into the grant lifecycle, it ensures low-effort, low-cost, high-trust project oversight, enabling the Polkadot ecosystem to address issues promptly and drive successful outcomes.
+- **Activity Visualization** Graphs and timelines showing recent coding activity and engagement trends.
 
- ## Ecosystem Fit
+- **Risk Detection * ML algorithms to identify early signs of delays, inactivity (e.g., no commits in X days).
 
-WatchDog aligns with Polkadot’s core values of **accountability**, **decentralization**, and **transparency**, serving:
+- **Automated Notifications** Optional alerts via email or dashboard for delays or deviations.
 
-- **DOT Token Holders & DAO Delegates:** Clear insights to evaluate grant performance and inform voting decisions.  
-- **Grant Recipients:** A user-friendly portal to report progress and demonstrate accountability.  
-- **Governance Facilitators:** Portfolio-wide visibility to identify risks and streamline administration.  
-- **Community Members:** Transparent access to fund usage and project impact, fostering trust.  
+- **Lightweight Documentation View** Pulls summary-level GitHub activity and README data for reviewer-friendly views.
 
-As a governance layer for Polkadot’s public goods infrastructure, WatchDog complements tools like Polkassembly by focusing on delivery oversight, technical verification, and funding transparency, ensuring seamless integration into the ecosystem.
 ## Impact
 
-WatchDog streamlines grant management, **reduces administrative effort**, and enables **proactive risk mitigation**. By embedding automation and verification into the grant lifecycle, it delivers low-effort, low-cost, high-trust oversight, empowering Polkadot’s community to drive successful outcomes.
+WatchDog streamlines grant management, reduces administrative effort, and enables proactive risk mitigation. By embedding automation and verification into the grant lifecycle, it delivers low-effort, low-cost, high-trust oversight, empowering the W3F and Polkadot’s community to drive successful outcomes.
+
+## Ecosystem Fit
+
+WatchDog enhances, not replaces, the W3F GitHub-based grant workflow. It enhances and adds a monitoring layer on top of public activity to aid:
+
+- **W3F Grant Reviewers:** Evaluate progress in seconds via real-time dashboards.  
+- **Grantees:** Share transparent progress without extra overhead.  
+- **Community Members:** Access visible signals of grant health and activity.
 
 ## Team 👥
 
@@ -197,3 +196,5 @@ Collaborate with ecosystem tools and infrastructure projects to integrate WatchD
 
 ## Conclusion
 WatchDog introduces a structured, intelligent accountability framework for the Polkadot Treasury and OpenGov. By transforming fragmented and inconsistent grant data into real-time, verifiable insights, it strengthens trust, reduces inefficiencies, and helps ensure the long-term effectiveness of Polkadot’s public funding mechanisms.
+
+WatchDog brings clarity and efficiency to the Web3 Foundation grant oversight process. By transforming fragmented GitHub activity into meaningful, actionable insights, it delivers transparent oversight with minimal effort, reduces inefficiencies and maximum trust for both reviewers and the community. As a comprehensive monitoring solution, WatchDog will directly enhance the effectiveness and success of the W3F Grants Program for easier scaling.
