@@ -8,7 +8,7 @@
 
 
 ## Problem
-The Web3 Foundation Grants Program oversees hundreds of innovative projects within the Polkadot ecosystem, driving its growth and development. However, tracking the progress of these grants remains challenging, as updates are often scattered across GitHub repositories, pull requests, and issues, making it difficult to evaluate milestone completion, detect delays, or assess overall project health. This fragmentation increases the workload for reviewers who must spend hours manually cross-referencing GitHub activity across multiple repositories, correlating commits to milestone deliverables, and identifying stalled projects. There are risks of overlooking early indicators of project stagnation, while also reducing transparency for the community. Without an automated tracking system, the Web3 Foundation faces significant challenges in maximizing the impact and success of its grant funding.
+The Web3 Foundation Grants Program oversees hundreds of innovative projects within the Polkadot ecosystem, driving its growth and development. However, tracking the progress of these grants remains challenging, as updates are often scattered across GitHub repositories, pull requests, and issues, making it difficult to evaluate milestone completion, detect delays, or assess overall project health. This fragmentation increases the workload for reviewers who must spend hours manually cross-referencing GitHub activity across multiple repositories, correlating commits to milestone deliverables, and identifying stalled projects. There are risks of overlooking early indicators of project stagnation. Without an automated tracking system, the Web3 Foundation faces significant challenges in maximizing the impact and success of its grant funding.
 
 ##  Proposed Solution
 WatchDog is a lightweight, GitHub-integrated, web-based monitoring platform that aggregates W3F grant progress and activities into a real-time, user-friendly dashboard. It automates milestone tracking, visualizes project activity, and flags risks (e.g., inactivity or delays) using basic ML. Designed to complement W3F’s existing workflows, WatchDog reduces reviewer workload, enhances grantee accountability, and provides the community with transparent insights into funded projects, along with enhancements, like on-chain milestone attestations, to further strengthen trust.
@@ -18,13 +18,13 @@ WatchDog is a lightweight, GitHub-integrated, web-based monitoring platform that
 ### Core Administrative Features
 
 - **Search & Filter Tools**  
-  Allow admins and community to explore grants by category, status, technology stack, and development stage.
+  Allow admins and the community to explore grants by category, status, technology stack, and development stage.
 
 - **Project Activity & Updates**  
   Real-time updates on significant milestones and deliverables with automated GitHub integration, allowing grantees to add context to project updates and share relevant resources.
 
 - **Administrative Dashboard**  
-  Comprehensive overview combining high-level statistics on active grants, completion rates, ecosystem health, funding distribution across categories, aggregated performance metrics, success rates, completion times, and resource allocation efficiency for administrative evaluation.
+  Comprehensive overview combining high-level statistics on active grants, completion rates, and ecosystem health for administrative evaluation.
 
 - **Risk Detection & Analytics**  
   ML algorithms to identify early signs of delays and inactivity (e.g., no commits in X days), with risk flags, comparative analysis, and workflow optimization.
@@ -33,9 +33,6 @@ WatchDog is a lightweight, GitHub-integrated, web-based monitoring platform that
 
 - **Public Transparency Hub**  
   Community-facing dashboards with project discovery tools, progress visibility, and engagement opportunities for public access.
-
-- **Community Engagement System**  
-  Multi-tier feedback mechanism allowing community members to flag concerns, suggest improvements, contribute insights to project evaluation, and provide constructive feedback on individual projects.
 
 - **Automated Reporting**  
   Monthly transparency reports are generated automatically from dashboard data, highlighting ecosystem trends, successful projects, and areas needing attention.
@@ -49,7 +46,7 @@ WatchDog is a lightweight, GitHub-integrated, web-based monitoring platform that
   Cross-reference new applications against existing projects to identify potential overlaps and suggest collaboration opportunities before funding decisions.
 
 - **Impact Tracking**  
-  Long-term success metrics, including project adoption, ecosystem integration, and value creation, to inform future funding strategies.
+  To inform future funding strategies.
 
 - **Strategic Alignment Tools** Help potential applicants understand ecosystem priorities and contribute to filling identified gaps, increasing proposal quality, and ecosystem coherence.
 
