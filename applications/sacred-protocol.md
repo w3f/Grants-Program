@@ -16,7 +16,7 @@ This goal of this proposal is to break ground, into the ecosystem by allowing fo
 
 **e. Motivation:** We believe Polkadot is uniquely suited for global-scale social utility applications. Its multi-chain design and tooling like Talisman/Subwallet Wallet provide the backbone for scalable, user-friendly micro-transactions.
 
-**f.** VIDEO PITCH HERE
+**f.Video Pitch:** https://shorturl.at/XQQxo
 
 ### 🔍 Project Details
 ## 🛠️ Technology Stack Overview
