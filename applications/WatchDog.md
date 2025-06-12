@@ -23,6 +23,8 @@ WatchDog is a lightweight, GitHub-integrated, web-based monitoring platform that
 - **Project Activity & Updates**  
   Real-time updates on significant milestones and deliverables with automated GitHub integration, allowing grantees to add context to project updates and share relevant resources.
 
+ - **Verifiable records** Milestone attestations are hashed and anchored on-chain, creating immutable and verifiable records using a Substrate pallet.
+ - 
 - **Administrative Dashboard**  
   Comprehensive overview combining high-level statistics on active grants, completion rates, and ecosystem health for administrative evaluation.
 
@@ -50,7 +52,9 @@ WatchDog is a lightweight, GitHub-integrated, web-based monitoring platform that
 
 - **Strategic Alignment Tools** Help potential applicants understand ecosystem priorities and contribute to filling identified gaps, increasing proposal quality, and ecosystem coherence.
 
-
+**On-Chain Milestone Attestations**
+ Milestone submissions are hashed and anchored on-chain using a lightweight Substrate pallet, creating an immutable and queryable audit log
+ 
 ## Impact
 
 WatchDog streamlines grant oversight by reducing administrative burden and enabling real-time milestone tracking. By embedding automation, verification, and alerting into the grant lifecycle, it allows the Web3 Foundation to proactively mitigate risks and increase funding accountability with minimal overhead. WatchDog ensures that grant funding translates into progress. It enhances reviewer efficiency, making sure grantees are on track.
