@@ -186,16 +186,16 @@ Sacred Protocol is the result of an iterative journey through multiple real-worl
 
 Sacred Protocol is not just a proposal — it's a living product already in the hands of communities. We’ve deployed on Solana MainNet and are now actively building toward supporting Polkadot. Our browser extension (v1.2.5) facilitates real tipping using real crypto, directly to creators, contributors, and communities.
 
-Our litepaper is available at: https://www.sacredprotocol.com/litepaper
+- Our litepaper is available at: https://www.sacredprotocol.com/litepaper
 
-Our MVP is live on Solana MainNet: https://chromewebstore.google.com/detail/sacred/nmhhcmgieandjhccpjokogfnipabadlp
+- Our MVP is live on Solana MainNet: https://chromewebstore.google.com/detail/sacred/nmhhcmgieandjhccpjokogfnipabadlp
 
-The current live version of Sacred is v1.2.5: https://x.com/SacredProtocol/status/1931117203312759061
+- The current live version of Sacred is v1.2.5: https://x.com/SacredProtocol/status/1931117203312759061
 
-We've actively tested and fixed issues, such as account rent exploits: https://x.com/SacredProtocol/status/1932556478810055035
+- We've actively tested and fixed issues, such as account rent exploits: https://x.com/SacredProtocol/status/1932556478810055035
 
-We successfully ran a meme contest using Sacred: https://x.com/SacredProtocol/status/1918314388450402644
+- We successfully ran a meme contest using Sacred: https://x.com/SacredProtocol/status/1918314388450402644
 
-In collaboration with PizzaDAO (https://x.com/Pizza_DAO), we executed our first global donation drive for Global Pizza Day: https://x.com/SacredProtocol/status/1925019532017422793
+- In collaboration with PizzaDAO (https://x.com/Pizza_DAO), we executed our first global donation drive for Global Pizza Day: https://x.com/SacredProtocol/status/1925019532017422793
 
 We're already supporting real transactions with real value—and with Polkadot’s support, we can extend this momentum into a multichain tipping standard.
