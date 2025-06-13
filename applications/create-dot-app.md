@@ -22,12 +22,9 @@ npx create-dot-app my-polkadot-app
 ```
 
 **🎯 Multiple Frontend Framework Support** *(Key Differentiator)*
-- React.js with TypeScript
-- Vue.js with TypeScript  
-- Svelte with TypeScript
-- SvelteKit (Svelte-based)
-- Next.js (React-based)
-- Nuxt.js (Vue-based)
+- React and Next
+- Vue and Nuxt
+- Svelte and Sveltekit
 
 **📦 Pre-configured Starter Templates**
 Each framework will include multiple SDK integration options:
@@ -44,11 +41,9 @@ For example, React developers can choose between:
 - `react-dedot` - React template with Dedot integration
 
 This dual-SDK approach ensures developers can work with their preferred API layer while maintaining the same frontend framework, offering templates like:
-- `vue-papi`, `vue-dedot`
-- `svelte-papi`, `svelte-dedot`  
-- `sveltekit-papi`, `sveltekit-dedot`
 - `nextjs-papi`, `nextjs-dedot`
-- `nuxtjs-papi`, `nuxtjs-dedot`
+- `vue-papi`, `vue-dedot`, `nuxtjs-papi`, `nuxtjs-dedot`
+- `svelte-papi`, `svelte-dedot`, `sveltekit-papi`, `sveltekit-dedot`
 
 **🔧 Built-in Best Practices**
 - Modern API integration with PAPI or Dedot SDKs (developer's choice)
@@ -96,9 +91,11 @@ This dual-SDK approach ensures developers can work with their preferred API laye
 ## Development Status
 
 ### Current Status
-**Project Phase:** Pre-Development / Planning Stage
+**Project Phase:** Active Development
 
-The Create Dot App project is currently in the initial planning phase. Development has not yet commenced, allowing for a fresh start with clear objectives based on current ecosystem needs.
+The Create Dot App project is currently under active development. The core CLI infrastructure and template system are being implemented, with initial framework templates in progress.
+
+**Repository:** https://github.com/preschian/create-dot-app
 
 ### Research & Preparation Completed
 - Analysis of existing tools
@@ -119,7 +116,7 @@ This section breaks down the development roadmap into milestones and deliverable
 
 - **Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):** 0.5 FTE
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 10,000 USD
 
 ## Milestone 1: Core CLI Infrastructure & Initial Templates
 
@@ -132,10 +129,13 @@ This section breaks down the development roadmap into milestones and deliverable
 | 0c. | Testing and Testing Guide | Core CLI functions and generated templates will be fully covered by comprehensive integration tests including template generation, wallet connection flows, and API integration validation. The guide will describe how to run these tests and validate template outputs |
 | 0d. | Repository | We will provide a complete repository with all source code, tests, and examples that can be used to test and verify all milestone deliverables |
 | 0e. | Article | We will publish an **article** explaining the motivation behind Create Dot App, how it addresses current ecosystem gaps, and a comprehensive guide for developers on getting started with the tool |
-| 1. | CLI Core Framework | Interactive command-line interface with user prompts for framework selection, SDK choice (PAPI/Dedot), and template options. Includes project name validation, directory creation, and dependency management |
-| 2. | Template Engine | Flexible templating system that can generate projects based on user selections, with variable substitution, file copying, and package.json configuration |
+| 1. | CLI Core Framework | Interactive command-line interface with user prompts for framework selection, SDK choice (PAPI/Dedot), and template options |
+| 2. | Template Engine | Flexible templating system that can generate projects based on user selections |
 | 3. | React Templates | Complete React.js starter templates with both PAPI and Dedot integrations (`react-papi`, `react-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
 | 4. | Vue.js Templates | Complete Vue.js starter templates with both PAPI and Dedot integrations (`vue-papi`, `vue-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
+| 5. | Hardhat-Polkadot Template | Complete Hardhat development environment template specifically configured for Polkadot smart contract development |
+| 6. | Integration Testing | Comprehensive integration tests for all generated templates |
+| 7. | NPM Package Distribution | Production-ready NPM package with proper versioning, dependency management, and automated publishing pipeline |
 
 ## Milestone 2: Extended Framework Support & Production Release
 
@@ -147,9 +147,8 @@ This section breaks down the development roadmap into milestones and deliverable
 | 2. | Svelte Templates | Complete Svelte starter templates with both PAPI and Dedot integrations (`svelte-papi`, `svelte-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
 | 3. | SvelteKit Templates | Complete SvelteKit starter templates with both PAPI and Dedot integrations (`sveltekit-papi`, `sveltekit-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
 | 4. | Nuxt.js Templates | Complete Nuxt.js starter templates with both PAPI and Dedot integrations (`nuxtjs-papi`, `nuxtjs-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
-| 5. | Integration Testing | Comprehensive integration tests for all generated templates, including end-to-end testing of wallet connections, API integrations, and cross-framework compatibility validation |
-| 6. | NPM Package Distribution | Production-ready NPM package with proper versioning, dependency management, and automated publishing pipeline |
-| 7. | Community Tools | Contribution guidelines, template validation tools, and documentation for community members to add new templates or frameworks |
+| 5. | Docs Landing Page | Comprehensive documentation website with getting started guides |
+| 6. | Community Tools | Contribution guidelines, template validation tools, and documentation for community members to add new templates or frameworks |
 
 ## Budget Breakdown
 
@@ -157,8 +156,8 @@ This section breaks down the development roadmap into milestones and deliverable
 
 | Category | Item | Cost (Monthly) | Duration | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personnel | Full-Stack Developer | 15,000 USD | 2 months | 30,000 USD | Leading project development, implementing CLI tool, creating all framework templates, testing, and documentation |
-| --- | --- | --- | **Total** | **30,000 USD** |  |
+| Personnel | Full-Stack Developer | 5,000 USD | 2 months | 10,000 USD | Leading project development, implementing CLI tool, creating all framework templates, testing, and documentation |
+| --- | --- | --- | **Total** | **10,000 USD** |  |
 
 ## Testing & Verification Strategy
 
@@ -171,7 +170,6 @@ This section breaks down the development roadmap into milestones and deliverable
 **CLI Testing:**
 - Interactive prompts must handle all user input scenarios
 - Error handling for invalid project names and existing directories
-
 
 ## Future Plans
 
