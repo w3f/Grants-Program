@@ -183,6 +183,12 @@ _NOTE_: A detailed breakdown of tasks is given in the annex below.
 
 ## 🔮 Future Plans
 
+ - **Drive adoption through streamers**: We would use gamer-streamers to grow Polkadot’s reach via real-time, community-led content.
+- **Position Polkadot as a gaming backbone**: We would showcase Polkadot as the ideal foundation for fully decentralized, serverless games.
+- **Prove feasibility with a working prototype**: We would build a real-time, fully on-chain game prototype to demonstrate technical viability and set a new benchmark.
+- **Prime the community for JAM**: We would engage streamers early to build an active audience ready to adopt JAM-based applications.
+- **Lay the groundwork for follow-on funding**: The Fast Grant would allow us to validate the concept, making a strong case for future expansion through a larger grant.
+
 ### Post-Grant Development:
 
 We will build real tradable NFTs, expand maps and multiplayer for chaotic battles, add obstacles like black holes and traps, introduce NFT upgrades and themes, and extend cross-platform play.
