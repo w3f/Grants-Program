@@ -136,19 +136,19 @@ Please provide a breakdown of your budget by milestone:
 | 2         | 0c, 0d, 5, 6, 7, 8, 9 | $5,000      | 1.5 months           |
 | **Total** |                       | **$10,000** | **3 months**         |
 
-| **Cost Category** | **Line** | **Deliverables / Activity** | **Rate × Qty** | **Sub-total (USD)** |
+| **Cost Category** |  **Deliverables / Activity** | **Rate × Qty** | **Sub-total (USD)** | **Section Total (USD)** |
 |-------------------|--------------|-----------------------------|----------------|---------------------|
 | **1 Personnel** |
-| 1.1 Software Engineering | Mobile rebuild (iOS + Android), Privy integration, backend API, social timeline & comments, blockchain calls, smart contracts, tests | 200 hrs × $25 | $5 000 |
-| 1.2 UI / Brand Design | Brand guide, design system, landing & mobile mock-ups, NFC sticker layout | 35 hrs × $25 | $875 |
-| 1.3 QA & Test Ops | Device matrix, TestFlight / Play uploads | 20 hrs × $25 | $500 |
-| 1.4 Business / Partnerships | Museum outreach, pilot onboarding | 110 hrs × $25 | $2 750 |
+| Software Engineering | Mobile rebuild (iOS + Android), Privy integration, backend API, social timeline & comments, blockchain calls, smart contracts, tests | 200 hrs × $25 | $5 000 |
+| UI / Brand Design | Brand guide, design system, landing & mobile mock-ups, NFC sticker layout | 35 hrs × $25 | $875 |
+| QA & Test Ops | Device matrix, TestFlight / Play uploads | 20 hrs × $25 | $500 |
+| Business / Partnerships | Museum outreach, pilot onboarding | 110 hrs × $25 | $2 750 |
 | **Personnel subtotal** | | | | **$9 125** |
 | **2 Software & Cloud** |
 | Apple Developer Program | Required for TestFlight & App Store | 1 licence | $100 |  |
 | Google Play Console | Android beta distribution | 1 licence | $25 |  |
 | Hosting / RPC / DB | Vercel, Supabase, RPC Provider (3 mo) | $50 / mo × 3 | $150 |  |
-| Domains & Email | stampika.xyz renewal, SendGrid credits | lump sum | $50 |  |
+| Domains & Email | stampika.xyz + hello@stampika.xyz registration | lump sum | $50 |  |
 | **Software subtotal** | | | | **$325** |
 | **3 Hardware & Materials** |
 | NFC NTAG 215 stickers | 250 pcs @ $0.30 + custom print @ $0.10 | | $100 |  |
