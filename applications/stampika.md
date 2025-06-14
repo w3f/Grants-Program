@@ -121,8 +121,8 @@ We developed a prototype Android Mobile App at EasyA Consensus Hackathon. stampi
 | 3.     | Mobile App Development                                 | We will work on creating a more scalable mobile app, both for IOS and Android. We faced some Build issues due to version mismatch while integrating with Privy, hence we plan to re-setup the mobile app.                                                                          |
 | 4.     | User Management System<br>(With Gmail and other OAuths)<br> | We will integrate Privy into our application to allow users to login and seamlessly create an embedded blockchain address for them. Users will also be able to add their name, age and other information in the settings. <br><br>\- Gmail Login<br>\- Telegram / Wallet Login<br>                                                                                |
 | 5.     | Designing NFC Sticker Stamps                           | We will design and produce our custom NFC Sticker Stamps with our branding similar to below<br><br><br><img src="https://nfctagify.com/cdn/shop/files/STICKER_BIG_R.jpg" width="350"/>|
-| 6.     | Integrate Social Timeline                              | The social timeline feature will allow users to view stamps other people have collected.<br><br>This will be integrated with our backend system.<br><br>\- Stamps Collected Database<br>\- Optional Collection Message on post<br>                                                 |
-| 7.     | Integrate Friends Feature                              | This feature will build on top of the Social Timeline feature where users can now add friends and make their account private so their stamps are only shared with other friends.<br><br>\- Friend Requests<br>\- Private Account Feature<br>                                       |
+| 6.     | Integrate Social Profile                              | The social profile feature will allow users to view stamps other people have collected.<br><br>This will be integrated with our backend system.<br><br>\- Stamps Collected Database<br>\- Information on themselves<br>                                                 |
+| 7.     | Integrate Comment Feature                              | This feature will build on top of the Social feature where users can now comment on stamps / stamp collection point after scanning the NFC tag so they can interact with other people about their thoughts - providing a new form of engagement.<br><br>\- Text comments <br>\- Image comments<br>                                       |
 | 8.     | Publish Test Application                               | We will publish the application on TestFlight iOS and Google Play Console or available as an .apk file.<br><br>Users will be able to download a beta version of the app.<br>                                                                                                       |
 | 9.     | Pilot Testing with Mississauga Authorities             | This is where we will work with landmarks in Mississauga (where the team is currently based) and integrate stampika with landmarks + allowing users to test out the full application flow.<br><br><br>                                                                             |
 
@@ -136,25 +136,41 @@ Please provide a breakdown of your budget by milestone:
 | 2         | 0c, 0d, 5, 6, 7, 8, 9 | $5,000      | 1.5 months           |
 | **Total** |                       | **$10,000** | **3 months**         |
 
-- 260 hours of Software Development work at $25 / hour = $6,500
-- 100 hours of Business Development work at $25 / hour = $2,500
-
-### Additional Costs
-- iOS Developer Pass $100
-- Google Play License $25
-- Hosting Server Fees $250
-- Custom NFC Tags $100
-- Transport Fees to Landmark Partners $525
-
-Total = $10,000
+| **Cost Category** | **Line** | **Deliverables / Activity** | **Rate × Qty** | **Sub-total (USD)** |
+|-------------------|--------------|-----------------------------|----------------|---------------------|
+| **1 Personnel** |
+| 1.1 Software Engineering | Mobile rebuild (iOS + Android), Privy integration, backend API, social timeline & comments, blockchain calls, smart contracts, tests | 200 hrs × $25 | $5 000 |
+| 1.2 UI / Brand Design | Brand guide, design system, landing & mobile mock-ups, NFC sticker layout | 35 hrs × $25 | $875 |
+| 1.3 QA & Test Ops | Device matrix, TestFlight / Play uploads | 20 hrs × $25 | $500 |
+| 1.4 Business / Partnerships | Museum outreach, pilot onboarding | 110 hrs × $25 | $2 750 |
+| **Personnel subtotal** | | | | **$9 125** |
+| **2 Software & Cloud** |
+| Apple Developer Program | Required for TestFlight & App Store | 1 licence | $100 |  |
+| Google Play Console | Android beta distribution | 1 licence | $25 |  |
+| Hosting / RPC / DB | Vercel, Supabase, RPC Provider (3 mo) | $50 / mo × 3 | $150 |  |
+| Domains & Email | stampika.xyz renewal, SendGrid credits | lump sum | $50 |  |
+| **Software subtotal** | | | | **$325** |
+| **3 Hardware & Materials** |
+| NFC NTAG 215 stickers | 250 pcs @ $0.30 + custom print @ $0.10 | | $100 |  |
+| **Hardware subtotal** | | | | **$100** |
+| **4 Pilot Ops** |
+| Local transport | 8 on-site visits | $40 / trip (including tickets) | $320 | |
+| Demo signage & holders | Posters, acrylic mounts, QR backups | lump sum | $130 |  |
+| **Pilot ops subtotal** | | | | **$450** |
+| **TOTAL** | | | | **$10 000** |
 
 ## 🔮 Future Plans
 
 - Development
   - After completing the pilot testing in Mississauga, the team would be relocating back to Singapore where we will work on acquiring more users and landmarks in Singapore.
   - We will integrate a data analytics dashboard for tourism boards that collaborate with us to provide them more information
-- Vision for Polkadot
-  - After we onboard new users, we could introduce them to other parts of the ecosystem provided that the projects are aligned with the vision of stampika - For example, NFT Marketplace.
+- Vision for Polkadot:
+  - We believe that an onchain future will be the default for most people.
+  - We will seemlessly onboard users as we abstract a lot of the blockchain nitty gritty out of the way, making it simple for first time users
+  - We can introduce new users to parts of the ecosystem e.g. NFT Marketplace like KodaDot to allow users to potentially trade their stamps 
+  - stampika would also support an Onchain Identity Layer as we will be able to add more flair and personality to each wallet address. This is optional as well to the users so there will be no privacy concerns.
+  - Cross-Project Airdrops & Perks could also be done with stampika as other projects would be able to query the different stamps each wallet address has, thus verifying the proof of location of the users. For example, an NFT project might want to only airdrop to people who have travelled to Japan in 2025 and we could help achieve that goal with Proof of Locations.
+  - A very far reach goal will be to allow users to bridge the stamps to other parachains so that it could be used directly in other contracts.
 - Additional Funding
   - National University of Singapore (NUS) Venture Initiation Program (SGD$10k)
   - As NUS Students, we plan to submit and pitch our project to gain backing of our University
