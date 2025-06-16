@@ -173,14 +173,21 @@ Sacred Protocol is the result of an iterative journey through multiple real-worl
 | **Total** |  | **$15,000** | **2 months** |
 
 
-## 🔮 Future Plans
+## 🔮 Future Plans & Long Term Value for Polkadot Ecosystem
 
-- Convert core business logic into Smart Contracts (ie. Escrow Mechanisms)
-- Expand support for native tips on other Polkadot wallets and parachains
-- Launch Creator Analytics Dashboard for tipping history and top fans
-- Partner with content platforms (eg. Kick, BlueSky)
-- Pursue additional grants or venture support to scale tipping volume
-- Expand Integrations with [Polkadot App](https://polkadot.subsquare.io/referenda/1573) for more user adoption
+**Over the next iterations we have in store, Sacred’s north‑star is to make DOT (and parachain‑native USDC) the default “thank‑you” currency of the internet. Every tip will travel via XCM, hopping transparently between the Relay Chain and any integrated parachain, so creators and fans experience a single friction‑free wallet while Polkadot captures the fee flow. Once this internal flywheel is proven, we will layer in bridge adapters (e.g. Snowbridge, Wormhole) that convert ETH, SOL, or other L1 liquidity into DOT before it enters Sacred, importing external value—and new users—into the Polkadot economy while keeping settlement trust‑minimised.**
+
+- Convert core business logic into ink! smart contracts (e.g. escrow/dispute‑resolution modules) to remove all off‑chain trust assumptions.
+
+- Expand support for native tips on additional Polkadot wallets and parachains, ensuring one‑click UX across the ecosystem.
+
+- Launch a Creator Analytics Dashboard so creators can track tipping history, top fans, and cross‑parachain revenue.
+
+- Partner with mainstream content platforms (e.g. Kick, BlueSky) to embed Polkadot‑powered tipping in their creator tooling.
+
+- Pursue additional grants or venture support to scale transaction volume and liquidity incentives.
+
+- Expand integrations with the official [Polkadot App](https://polkadot.subsquare.io/referenda/1573) (referendum 1573) to drive greater on‑chain adoption and visibility.
 
 ## ℹ️ Additional Information
 
