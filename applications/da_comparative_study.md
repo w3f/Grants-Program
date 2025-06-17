@@ -1,6 +1,6 @@
-# Comparative Study of Data Availability Schemes in Various Blockchains
+# Benchmarking Blockchain Data Availability: Polkadot ELVES vs Modular DA Layers
 
-### Data Availability in Polkadot vs the Rest
+### Comparative Study of Data Availability Schemes in Various Blockchains
 
 ----
 
@@ -14,7 +14,7 @@
 
 ### Overview
 
-This application is in response to the [Research Task](https://pba-alumni-jobs.myjboard.io/jobs/135334802-research-task), and has been discussed with the Research Team at Web3 Foundation beforehand.
+This application is in response to the [Research Task](https://pba-alumni-jobs.myjboard.io/jobs/135334802-research-task).
 
 A comprehensive comparison of Polkadot's ELVES protocol against emerging data availability solutions (Celestia, Espresso's Tiramisu, NEAR's sharded DA, Polygon Avail, etc.).
 * **Project Description:** We will conduct an in-depth research study on how different blockchain ecosystems ensure **data availability**, i.e. that all block data is published and retrievable by the network. The study will qualitatively and quantitatively compare Polkadot's integrated parachain availability scheme to other approaches like Celestia's modular DA layer, Espresso's *Tiramisu* layered DA, NEAR's sharded data availability, Polygon's Avail chain, and any similar solutions. We will benchmark these schemes on metrics such as bandwidth overhead, proof sizes, data availability latency, and validator resource costs, using both theoretical analysis and **production network data**. This includes analyzing real telemetry from Polkadot/Kusama, Celestia's mainnet, Espresso's testnet, NEAR's shard metrics, Avail's testnet/mainnet, etc. The outcome will be a detailed report and open-source tools that illuminate the trade-offs in design and performance of each scheme.
