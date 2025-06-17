@@ -51,12 +51,11 @@ Hub is pretty new, the ecosystem has been focused on Ink! smart contract tooling
 
 ### Team members
 
-Miles Patterson, Anwesh Nayak
+Miles Patterson
 
 #### LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/in/miles-patterson-a02653139
-- https://www.linkedin.com/anweshnayak
 
 ### Team Code Repos
 
@@ -65,12 +64,16 @@ Miles Patterson, Anwesh Nayak
 Please also provide the GitHub accounts of all team members:
 
 - https://github.com/gotnoshoeson
-- https://github.com/muddlebee
+
 
 ### Team's experience
 
 Miles has ~3 years of full stack dev experience. He has been using scaffold-eth since the first version and provides support in the various scaffold-eth telegram chatrooms. Has written tutorials on how to implement a proxy factory with scaffold-eth 2 for Minimal Proxies, UUPS, and Upgradeable Beacon Proxies including additional components for doing so. He has also forked buidlguidlv3 for an MVP of FanSociety.xyz
-Anwesh has ~5 years full stack dev experience. Previously worked as a tech lead at B2B fintech firm. Was previously a Polkadot Ambassador and the community manager/moderator of the official Polkadot/Kusama discord. Has been contributing to Polkadot ecosystem for >2 years. Has participated in Thousand Contributors Programme by w3f and has been adding suggestions/improvements across the w3f github projects (polkadot-wiki). Also wrote a comprehensive tutorial to get started with Polkadot using the polkadot-js API. https://polkadotjs-developer-hub.gitbook.io/
+
+### Contributor and Advisor
+- https://github.com/muddlebee
+Muddlebee has ~5 years full stack dev experience. Previously worked as a tech lead at B2B fintech firm. Was previously a Polkadot Ambassador and the community manager/moderator of the official Polkadot/Kusama discord. Has been contributing to Polkadot ecosystem for >2 years. Has participated in Thousand Contributors Programme by w3f and has been adding suggestions/improvements across the w3f github projects (polkadot-wiki). Also wrote a comprehensive tutorial to get started with Polkadot using the polkadot-js API. https://polkadotjs-developer-hub.gitbook.io/
+
 
 ## 📊 Development Status
 
