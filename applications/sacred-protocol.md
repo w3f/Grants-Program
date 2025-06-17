@@ -172,6 +172,22 @@ Sacred Protocol is the result of an iterative journey through multiple real-worl
 | 3 | - Deploy on Polkadot Mainnet<br>- Integrate Polkadot wallet integrations (SubWallet or Talisman) for sending tips on Sacred App<br>- Complete CLI tool with comprehensive unit tests & documentation<br>- Lock in Polkadot Creator Campaign<br>- Formalize a partnership with a Polkadot creator to run the campaign | $5,000 | 0.5 months |
 | **Total** |  | **$15,000** | **2 months** |
 
+### Budget Breakdown by Milestone
+
+### Milestone 1
+- **Employee Cost:** $5,000 (1 engineer for 1 month)  
+- **Infrastructure Cost:** $0 (minimal infra needs, deferred to later stages)  
+- **Total:** $5,000
+
+### Milestone 2
+- **Employee Cost:** $3,750 (1.5 engineers for 0.5 month)  
+- **Infrastructure Cost:** $1,250 (API costs, RPC Endpoints, CI/CD & Devops, Node Service Providers, AI Tooling)  
+- **Total:** $5,000
+
+### Milestone 3
+- **Employee Cost:** $4,500 (1.5 engineers for 0.5 month, 0.5 campaign manager for 0.5 month)  
+- **Infrastructure Cost:** $500 (The infrastructure costs allocated to Milestone 3 are partially carried over from Milestone 2, e.g. Monthly service fees)  
+- **Total:** $5,000
 
 ## 🔮 Future Plans & Long Term Value for Polkadot Ecosystem
 
