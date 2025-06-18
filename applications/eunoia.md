@@ -91,29 +91,42 @@ That story stuck with us. Eunoia makes sure that money meant to help actually he
 - Not a pooled grant platform
 
 
-### 🧩 Ecosystem Fit
+### 🧩 Ecosystem Fit And Long Term Values
 
-**Where does this fit?**  
-- “DeFi-for-good” layer 
-- First Polkadot-native donation protocol  
-- Widget-ready for Polkadot-Hub
+Eunoia is a pioneering "DeFi-for-good" giving protocol, uniquely positioned to enhance the Polkadot ecosystem by addressing key challenges, expanding user adoption, and introducing innovative features. Below is an outline of how Eunoia contributes to the ecosystem and long-term value to Polkadot.
 
-**Target Audience**  
-- Social-good DAOs  
-- Civic donors  
-- Underfunded nonprofits
+## 1. Driving User Adoption Through Simplified Interfaces
+Polkadot faces challenges with declining user bases and transaction volumes, largely due to complex interfaces that deter new users. Eunoia tackles this by:
+- **Simplifying Access**: Integrating Web2.5 payment solutions, allowing users to donate via familiar Web2 payment methods or Web3 crypto payments. Eunoia handles crypto conversions, ensuring seamless delivery to charities.
+- **User-Friendly Design**: Offering a widget-ready interface compatible with Polkadot-Hub, making it easy for users to engage with the platform without navigating complex DeFi protocols.
+- **Outcome**: By lowering the entry barrier, Eunoia attracts a broader audience, including civic donors and non-crypto-native users, boosting Polkadot’s overall user base and transaction activity.
 
-**Need Met**  
-- Transparent, traceable, low-fee donations  
-- Real-time donor visibility and impact tracking
+## 2. Pioneering a Polkadot-Native Giving Protocol
+As the first Polkadot-native giving platform, Eunoia fills a critical gap in the ecosystem:
+- **Unique Positioning**: Unlike Web2 charity platforms reliant on payment processors with high fees and administrative overhead, Eunoia leverages Polkadot’s ink! smart contracts for transparent, low-fee, and traceable donations.
+- **Real-Time Impact Tracking**: Donors gain visibility into their contributions’ impact, fostering trust and encouraging repeat engagement.
+- **Outcome**: Eunoia establishes Polkadot as a hub for social-good DeFi, attracting purpose-driven users and organizations to the ecosystem.
 
-**Competitors?**  
-None with AI Agents like Compass for curating/matching verified charities and organizations. Other Web2 platforms do not use smart contracts for charity on just Web2 payment processors and admin overheads, which results in high fees.
+## 3. Leveraging AI for Enhanced Functionality
+Eunoia’s integration of Compass, an AI agent for curating and matching verified charities, sets it apart from competitors:
+- **No Direct Competitors**: No other platform combines AI-driven charity verification with Polkadot’s smart contract capabilities, offering a unique value proposition.
+- **Enhanced Match**: AI-driven curation ensures donors are matched with verified nonprofits that align with their preferences, improving the donation experience and efficiency.
+- **Outcome**: This innovative feature positions Polkadot as a leader in blending AI and blockchain for social impact, drawing attention from developers and organizations exploring similar integrations.
 
-**Why it doesn’t exist yet?**  
-Social good ≠ DeFi yet; tech stack is complex (ink! + AI Agents + full-stack).
+## 4. Supporting Social-Good DAOs and Nonprofits
+Eunoia targets social-good DAOs, civic donors, and underfunded nonprofits, addressing their specific needs:
+- **Tailored Solutions**: Provides a low-fee, transparent platform for donations, directly benefiting underfunded organizations.
+- **Community Building**: By onboarding charities and fostering donor engagement, Eunoia creates a vibrant community within Polkadot, encouraging long-term participation.
+- **Outcome**: Strengthens Polkadot’s ecosystem by aligning it with socially impactful initiatives, attracting mission-driven users and organizations.
 
-> **Note**: We prioritize projects building on Plaza/Polkadot Hub, games, and DeFi applications, though all types of projects will be considered.
+## Conclusion
+Eunoia adds long-term value to Polkadot by:
+- Simplifying user onboarding with Web2.5 payments and intuitive interfaces.
+- Establishing a first-of-its-kind donation protocol with low fees and transparent tracking.
+- Integrating AI to enhance trust and functionality.
+- Supporting social-good initiatives that attract diverse users
+
+By increasing user engagement, transaction volume, and ecosystem visibility, Eunoia positions Polkadot as a leading blockchain for social impact and DeFi innovation.
 
 ## 👥 Team
 
@@ -208,14 +221,39 @@ We’ve already built an MVP version of our application during the EasyA Hackath
 
 #### 🧮 Resource Allocation (by milestone)
 
-| Milestone | Hours / Items | Amount |
-|-----------|---------------|--------|
-| **1** | 80 hrs ink! smart contract @ $25/hr = $2,000, UI dev @ $25/hr = $500, Hosting + testnet gas + domain = $400 | $2,000 + $500 + $400 = $2,900 |
-| **2** | 100 hrs Compass AI & backend @ $25/hr = $2,500, AI inference credits = $100 | $2,500 + $100 = $2,600 |
-| **3** | 100 hrs testing, onboarding, content @ $25/hr = $2,500, Marketing/events, X Premium, merch, extra gas = $500 | $2,500 + $500 = $3,000 |
+| Milestone | Task Description | Hours | Rate ($/hr) | Cost ($) | Additional Expenses | Total Amount ($) |
+|-----------|------------------|-------|-------------|----------|---------------------|------------------|
+| **1** | Ink! smart contract development (testnet) | 60 | 25 | 1,500 | - | - |
+| | Fixing and updating smart contract for mainnet | 20 | 25 | 500 | - | - |
+| | UI development | 20 | 25 | 500 | - | - |
+| | Hosting (cloud services for testnet) | - | - | - | 200 | - |
+| | Testnet gas fees | - | - | - | 150 | - |
+| | Domain registration | - | - | - | 50 | - |
+| **Milestone 1 Total** | | 100 | - | 2,500 | 400 | **2,900** |
+| **2** | AI model development for Compass AI | 60 | 25 | 1,500 | - | - |
+| | Backend setup for APIs (AI model integration) | 20 | 25 | 500 | - | - |
+| | Deployment of API backend, AI model, and database to cloud | 20 | 25 | 500 | - | - |
+| | AI inference credits (cloud-based AI processing) | - | - | - | 100 | - |
+| **Milestone 2 Total** | | 100 | - | 2,500 | 100 | **2,600** |
+| **3** | Testing and quality assurance | 20 | 25 | 500 | - | - |
+| | Onboarding charities (reach outs, board meetings, integration setup) | 60 | 25 | 1,500 | - | - |
+| | Content creation (brand building, social media posts, marketing campaigns) | 20 | 25 | 500 | - | - |
+| | Marketing campaigns and events | - | - | - | 200 | - |
+| | X Premium subscription (for enhanced visibility) | - | - | - | 200 | - |
+| | Merchandise (promotional materials) | - | - | - | 80 | - |
+| | Additional gas fees (mainnet transactions) | - | - | - | 20 | - |
+| **Milestone 3 Total** | | 100 | - | 2,500 | 500 | **3,000** |
+| **Grand Total** | | 300 | - | 7,500 | 1,000 | **8,500** |
 
-> **Why this split?**  
-> • Front-loads core infrastructure (Milestone 1), isolates the AI differentiator (Milestone 2), and reserves verification + go-to-market tasks for Milestone 3.  
+>### Notes
+>- **Hourly Rate**: All development, testing, and content creation tasks are billed at $25/hour.
+>- **Additional Expenses**: Include non-labor costs such as hosting, gas fees, domain registration, AI inference credits, marketing, X Premium subscription, merchandise, and extra gas for transactions.
+>- **Milestone Breakdown**:
+  >   - **Milestone 1**: Smart contract development, UI, and infrastructure setup for testnet and mainnet.
+  >   - **Milestone 2**: AI model development, backend API setup, and cloud deployment.
+  >   - **Milestone 3**: Testing, charity onboarding, content creation, and marketing efforts.
+>- **Why this split?**  
+>     -  Front-loads core infrastructure (Milestone 1), isolates the AI differentiator (Milestone 2), and reserves verification + go-to-market tasks for Milestone 3.  
 
 
 ## 🔮 Future Plans
