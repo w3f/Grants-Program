@@ -12,7 +12,7 @@
 
 ### Overview
 
-Frostgate is a modular interoperability protocol designed to enable secure, trust-minimized message transmission across heterogeneous blockchains. Rooted in our research of Succinct State Validation (SSV), Frostgate employs succinct cryptographic proofs to establish verifiable claims about state transitions on external chains. This design minimizes dependency on centralized relayers, multi-signature committees, or heavyweight consensus replication.
+Frostgate is a modular interoperability protocol designed to enable secure, trust-minimized message transmission across heterogeneous blockchains. Rooted in our research of [Succinct State Validation (SSV)](https://axialabsresearch.github.io/article/succinct-state-validation), Frostgate employs succinct cryptographic proofs to establish verifiable claims about state transitions on external chains. This design minimizes dependency on centralized relayers, multi-signature committees, or heavyweight consensus replication.
 
 By treating each chain as an isolated context with its own finality semantics, Frostgate introduces Interoperability Chain Abstraction via its ChainAdapter interface, a canonical boundary for cryptographic externalization. This allows sovereign chains to interoperate via standardized proof systems, introducing modularity at the consensus and proof backends.
 
@@ -114,7 +114,8 @@ The initial implementation focuses on Substrate-to-Substrate message passing wit
 
 - **Contact Name:** Blessed Tosin-Oyinbo Olamide
 - **Contact Email:** [Reach out via email](tosinoyinboblessed@gmail.com)
-- **Website:** [Frostgate Research](https://medium.com/@frostgate/)
+- **Website:** [Axia Labs](https://axialabsresearch.github.io/)
+- **Medium** [Frostgate Medium](https://medium.com/@frostgate)
 - **Social Media:** [Frostgate Twitter](https://x.com/devfrostgate)
 
 ### Legal Structure
@@ -123,8 +124,15 @@ The initial implementation focuses on Substrate-to-Substrate message passing wit
 
 ### Team's Experience
 
-**Blessed Tosin-Oyinbo** - Founder, Lead Engineer at Axia Labs. Previously Marketing/DevRel Lead at Payscribe. Worked on Vault (Verifiable distributed storage infrastructure) and independent Solana research focusing on succinct cryptographic proofs for validator-side deterministic settlement in high-throughput systems. Over 4 years of industry and open-source experience.
+**Blessed Tosin-Oyinbo** - [Founder, Lead Engineer at Axia Labs](https://axialabsresearch.github.io/author/blessed-tosin-oyinbo). Previously Marketing/DevRel Lead at Payscribe. Worked on Vault (Verifiable distributed storage infrastructure) and independent Solana research focusing on succinct cryptographic proofs for validator-side deterministic settlement in high-throughput systems. Over 4 years of industry and open-source experience.
 
+### Research Publications
+You can find our research on blockchain interoperability on our website @ [Axia Labs Research](https://axialabsresearch.github.io)
+
+#### Primitive Research
+[Succinct State Validation](https://axialabsresearch.github.io/article/succinct-state-validation)
+[Frostproofs](https://axialabsresearch.github.io/article/frostproof)
+[Researching the cross-chain problem](https://axialabsresearch.github.io/article/the-cross-chain-trust-problem)
 
 ### Team Code Repos
 - [frostgate-sdk](https://github.com/frostgate/frostgate-sdk)
