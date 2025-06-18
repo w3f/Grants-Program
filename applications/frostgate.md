@@ -130,9 +130,9 @@ The initial implementation focuses on Substrate-to-Substrate message passing wit
 You can find our research on blockchain interoperability on our website @ [Axia Labs Research](https://axialabsresearch.github.io)
 
 #### Primitive Research
-[Succinct State Validation](https://axialabsresearch.github.io/article/succinct-state-validation)
-[Frostproofs](https://axialabsresearch.github.io/article/frostproof)
-[Researching the cross-chain problem](https://axialabsresearch.github.io/article/the-cross-chain-trust-problem)
+- [The Cross-Chain Problem](https://axialabsresearch.github.io/article/the-cross-chain-trust-problem)
+- [Succinct State Validation](https://axialabsresearch.github.io/article/succinct-state-validation)
+- [Frostproofs](https://axialabsresearch.github.io/article/frostproof)
 
 ### Team Code Repos
 - [frostgate-sdk](https://github.com/frostgate/frostgate-sdk)
