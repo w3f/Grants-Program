@@ -122,13 +122,42 @@ Research and experimentation completed using `actix-web` and SFU stream routing 
 | 3 | Recording + IPFS | RTP capture → GStreamer pipeline → WebM file → Upload to IPFS and return CID |
 | 4 | Substrate Integration | Store session CID, timestamps, and participant events (join, drop, reconnect) on a test Substrate chain using `subxt` |
 
-### 💰 Budget Breakdown
+### 💰 Budget Breakdown (Solo Developer @ $30/hr)
 
-| Milestone | Deliverables | Cost (USD) | Estimated Completion |
-|-----------|--------------|------------|----------------------|
-| 1 | 0a, 0b, 0c, 0d, 1, 2 | $5,000 | 1.5 months |
-| 2 | 3, 4 | $5,000 | 1.5 months |
-| **Total** |              | **$10,000** | **3 months** |
+#### Milestone 1
+
+| Task                                              | Hours | Rate   | Subtotal |
+|---------------------------------------------------|--------|--------|----------|
+| Set up signaling server (`actix-web`)             | 40     | $30/hr | $1,200   |
+| Implement SFU media routing (`webrtc-rs`)         | 64     | $30/hr | $1,920   |
+| Develop test suite + CLI validation               | 48     | $30/hr | $1,440   |
+| Basic frontend (React) integration for proctoring | 32     | $30/hr | $960     |
+| **Milestone 1 Total**                             | 184    | —      | **$5,520** |
+
+#### Milestone 2
+
+| Task                                              | Hours | Rate   | Subtotal |
+|---------------------------------------------------|--------|--------|----------|
+| Build recording pipeline (GStreamer)              | 40     | $30/hr | $1,200   |
+| IPFS integration + storage validation             | 24     | $30/hr | $720     |
+| Implement Substrate interaction (`subxt`)         | 48     | $30/hr | $1,440   |
+| Log participant events (join, drop, reconnect)    | 24     | $30/hr | $720     |
+| Write documentation + tutorial                    | 4      | $30/hr | $120     |
+| Write blog article + prepare milestone PR         | 4      | $30/hr | $120     |
+| Final testing + polishing + delivery              | 24     | $30/hr | $720     |
+| **Milestone 2 Total**                             | 168    | —      | **$5,040** |
+
+---
+
+### 💵 Budget Summary
+
+| Item                       | Details         |
+|----------------------------|-----------------|
+| **Total Hours**            | 352 hrs         |
+| **Hourly Rate**            | $30/hr          |
+| **Total Development Cost** | **$10,560**     |
+| **Requested Grant Amount** | **$10,000**     |
+| **Rationale**              | Full-stack solo development of PolkaRTC: signaling, SFU logic, on-chain event logging, IPFS integration, minimal frontend, and public documentation.
 
 ## 🔮 Future Plans
 
