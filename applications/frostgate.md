@@ -37,7 +37,7 @@ Unlike existing interoperability solutions, Frostgate eliminates trust assumptio
 | Governance Dependencies | No core dependecies | Oracle Selection | Validator Governance | Client Updates |
 
 **Key Differentiators:**
-- **Pure Cryptographic Verification**: No validator sets, no oracles, no committees
+- **Pure Cryptographic Verification**: Which replaces need for cenatralized relayer, validator sets, multi-signature committees
 - **Modular ZK Backends**: Support for SP1, Halo2, RiscZero without vendor lock-in  
 - **Native Substrate Integration**: Built specifically for Polkadot ecosystem requirements
 - **Chain Sovereignty**: No shared security assumptions or governance dependencies
@@ -129,10 +129,12 @@ The initial implementation focuses on Substrate-to-Substrate message passing wit
 ### Research Publications
 You can find our research on blockchain interoperability on our website @ [Axia Labs Research](https://axialabsresearch.github.io)
 
-#### Primitive Research
+#### Primitive Research and Articles
 - [The Cross-Chain Problem](https://axialabsresearch.github.io/article/the-cross-chain-trust-problem)
 - [Succinct State Validation](https://axialabsresearch.github.io/article/succinct-state-validation)
 - [Frostproofs](https://axialabsresearch.github.io/article/frostproof)
+- [Thinking Beyond Bridges](https://axialabsresearch.github.io/article/beyond-bridges)
+- [How Zero-Knowledge Proofs Enable Trustless Interoperability](https://axialabsresearch.github.io/article/inside-frostgate)
 
 ### Team Code Repos
 - [frostgate-sdk](https://github.com/frostgate/frostgate-sdk)
