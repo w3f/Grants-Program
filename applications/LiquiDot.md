@@ -370,9 +370,10 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 ### Team's experience
 
 
-(Each of us, should write individual experience, then we could combine into some ending statement)
 - **Rashad Hosseini**, a software engineer with a bachelor's degree from the University of Leeds and currently working at the fintech unicorn Checkout.com. With experience in building robust financial technology solutions providing valuable expertise in developing secure and scalable systems, which is essential for creating reliable DeFi applications.
-- **Gabriel Bandman**, 
+- **Fedir Maliarenko**, a crypto enthusiast currently studying Business Analytics at the University of Southampton. With hands-on experience in DeFi protocols, liquidity provision (LP), and automated trading, bringing practical insight into the mechanics of decentralized finance—an essential foundation for contributing to the creation of the product 
+- **Gabriel Bandman**, a software engineer and 3-time Web3/DeFi hackathon winner with hands-on experience building AI-driven trading agents, delta-neutral vaults, and liquidity automation systems. With a focus on reactive smart contracts and full-stack product development, bringing deep technical expertise in automating liquidity provision and optimizing DeFi strategies—crucial for advancing the protocol’s core functionality.
+
 
 ## 📊 Development Status
 
@@ -413,7 +414,6 @@ Please provide a breakdown of your budget by milestone:
 | 2 | Core Backend| $3,750 | 3 weeks |
 | 3 | Core Frontend | $2,500 | 2 weeks |
 | **Total** | | **$10,000** | **8 weeks** |
-
 
 
 ## 🔮 Future Plans
