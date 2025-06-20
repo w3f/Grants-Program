@@ -183,3 +183,23 @@ EasyA Consensus Hackathon 2025 Achievements
 - Forte: 3rd Place
 
 The project is fresh out of EasyA Consensus Hackathon. We focused intensely on the stampika for the whole 3 days and we are looking to take it to the next level
+
+### Answers to Questions during Review
+
+> How do you plan to cover user gas fees? We don't see this reflected in your budget breakdown or technical deliverable
+
+We plan to deploy on testnet for our pilot testing so we will be slowly collecting DOT tokens from the faucet. In the future when we launch on mainnet, we have spoken to Eric from Distractive and he mentioned that Minting gas-fees can be covered by the Marketing Bounty in the future.
+
+ If needed, we are more than happy to deploy the pilot testing on the mainnet and can re-allocate the budget from elsewhere.
+
+Regarding the technical aspect, the minting will be done via our backend server as of now. We will consider moving to using EIP7702 smart wallets in the future when it is less experimental and available on Polkadot Asset Hub. Upon scanning of the NFC tags, the users' client will call the backend with their privy access token and the backend server will then call the mint function with the backend wallet. 
+
+> What mechanisms do you plan to include to prevent attacks (e.g. spam/replay attacks during busy periods)?
+
+We will be implementing the following mechanisms
+1. Privy Access Token - With Privy as our account management system, we will ensure that every backend call before the actual minting must be accompanied with a valid privy access token 
+2. Rate-limiting & IP throttling - We will limit requests from the same access token and same IP to prevent users from claiming too many via the same. 
+3. Access Control Minting - Since we have the backend wallet performing the mints, we will add access control such that only the registered wallets such as the backend wallets will be able to mint, thus thwarting bot accounts minting. We will perform safe security industry practices with the backend wallet.
+4. User Address Registry - Depending on the scale and frequency of attacks, we will consider an on-chain address registry as part of the Stamp Contracts only allows verified users of stampika to be minted a stamp.
+
+With the current mechanisms, a busy period would consist of many stampika users trying to mint at the same time which should be handled properly. Bad actors such as non stampika users would not be able to mint in the first place.
