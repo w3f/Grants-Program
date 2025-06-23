@@ -42,6 +42,145 @@ We will be working on abstracting blockchain as much as possible. We will only b
 
 We will not include the data analysis dashboard and related endpoints for the Tourism Boards in this Fast Grant and will leave that as future work.
 
+#### Example Flow
+
+```mermaid
+sequenceDiagram
+    participant U as User Phone
+    participant T as NFC Tag
+    participant FE as App
+    participant API as /claim Endpoint
+    participant DB as Supabase
+    participant Q as Pub/Sub Queue
+    participant MW as Mint Worker
+    participant AH as Asset Hub (EVM)
+
+    U->>T: Tap
+    T-->>U: https://stampika.xyz/tag/123
+    U->>FE: Open App
+    FE->>API: POST /claim {jwt, tagId}
+    API->>API: Verify JWT + rate-limit
+    API->>DB: Verify Duplicate
+    DB-->>API: 
+    API->>DB: INSERT (wallet, tagId)
+    API->>Q: Publish job
+    API-->>FE: 202 Accepted (optimistic UI)
+    FE-->>U: Display Confetti 🎉
+
+    MW-->>Q: Batch pull ≤25 claims
+    MW->>AH: Mint batch NFT tx
+    AH-->>MW: Tx receipt + events
+    MW->>DB: UPDATE claims → Minted
+```
+
+#### Planned Architecture Diagram
+
+This is our planned architecture, it is subjected to change in the future based on our use case.
+
+```mermaid
+flowchart LR
+    subgraph Mobile
+        App[React Native App]
+    end
+
+    subgraph Cloud
+        API[/Cloud App Engine : REST API/]
+        DB[(Supabase Postgres claim table)]
+        Pub[Pub/Sub Queue]
+        Worker[/Cloud App Engine : Mint Worker/]
+        KMS[[GCP KMS HSM Key]]
+        Stack[GCP Alerts]
+    end
+
+    subgraph Blockchain
+        Hub[(Polkadot Asset Hub)]
+    end
+
+    NFC[NFC Tag] --> App
+    App --> API
+    API --> DB
+    API --> Pub
+    Pub --> Worker
+    Worker --> KMS
+    Worker --> Hub
+    Hub --> Worker
+    Worker --> DB
+    API --> Stack
+    Worker --> Stack
+```
+
+#### Gas Fee Sponsorship
+
+stampika promises a **one-tap experience**. Asking first-time tourists to purchase DOT or sign raw transactions would kill adoption, so we shoulder gas costs in the pilot.
+
+##### Why we chose the *backend-wallet* method for v1  
+
+| Option | Pros | Cons | Verdict |
+|--------|------|------|---------|
+| **Backend wallet pays every mint** | • Zero UX friction<br>• One key to harden<br>• Cost easy to monitor | • Custodial risk if key leaks | **Chosen** for 3-month pilot |
+| **Faucet each Privy wallet** | • Users self-sign, no hot key | • Extra drip service<br>• Sybil drain risk<br>• More support overhead | v2 upgrade once Asset Hub integrates paymasters or EIP7702 |
+
+We chose the backend wallet for the 3-month pilot because it saves engineering time and keeps the onboarding path literally one tap. This is more similar to typical Web2 apps which most of the travel useres will be from, allowing for better onboarding.
+
+##### Operational safeguards  
+
+1. **HSM custody** – Polkadot key stored in **GCP Cloud KMS HSM**
+2. **Queue + batch** – `/claim` → Pub/Sub → Cloud Run worker mints ≤25 stamps per tx; absorbs peak spikes.  
+3. **Gas budget caps** – Wallet pre-funded with 5 DOT. Worker halts and triggers PagerDuty if `gasSpentToday > 0.3 DOT`.  
+4. **Real-time alerts** – Stackdriver alarms on low balance (<1 DOT) or 5xx spikes.  
+5. **Kill switch** – `MINT_ENABLED=false` disables the worker loop instantly.  
+6. **Audit trail** – Each mint maps to Pub/Sub ID + Privy user ID for forensic traceability.
+
+This setup delivers a friction-free UX while capping financial risk to a few dollars per day—ideal for a grant-funded pilot.
+
+| Topic | Implementation detail |
+|-------|-----------------------|
+| **Custody** | Backend wallet is a Polkadot key managed by **GCP Cloud KMS + Secret Manager**. |
+| **Mint queue** | `claim` API ➜ Pub/Sub ➜ Cloud Run worker batches ≤25 mints/tx. |
+| **Throughput** | Sustains **250 mints/min**, >10× peak forecast. |
+| **Gas fund size** | Pilot need ≈ 0.075 DOT; wallet pre-funded with 5 DOT. |
+| **Alerts** | Alert if balance < 1 DOT or gas/day > 0.3 DOT. |
+| **Post-pilot** | Optional user-funded drip (0.1 DOT) + self-signed mints. |
+
+Another consideration we had was to faucet a certain amount of Gas fee
+
+Ideally we’ll use paymaster or EIP-4337/7702 style smart wallet, however, Polkadot Asset Hub is not supported by both Plinko and Privy therefore we will have to use our custom solutions below.
+
+#### Anti-Attack Mechanism
+
+stampika runs a custodial minting service since every tap triggers our backend wallet to submit an on-chain transaction and pay the fee. If an attacker can spam that API, replay a claim link, or trick the contract into minting many stamps, the result is (a) gas drained from the sponsorship wallet, (b) bogus NFTs that pollute the dataset, and (c) degraded trust with venues and the Polkadot community. Because pilot events may see sudden surges—school field-trips, festival gates — our defences must block abuse without slowing legitimate bursts of traffic.
+
+Goal: guarantee on-chain stamps for valid users AND prevent non-registered users not at the location from obtaining a stamp
+
+Threat model we defend against:
+
+- Anonymous API spammers who do not hold a stampika account.
+- Replay attackers who forward a tag URL or capture network traffic.
+- Scripted “gas-grief” bots that hammer /claim to drain DOT.
+- Key-compromise or logic-bypass attempts aimed at minting arbitrary NFTs.
+
+| Layer | Control | Attack stopped |
+|-------|---------|----------------|
+| **1 Request auth** | Privy User JWT in every `/claim`. | Anonymous API spam. |
+| **2 Rate-limit** | 5 claims/min per IP + 30 claims/hr per wallet | Flood / DDoS during peak. |
+| **3 Duplicate guard (DB)** | `(tagId, wallet)` table — reject if already claimed. | Replay / link-forward cheats. |
+| **4 On-chain guard** | `claimed[tagId][wallet]` mapping in contract and `onlyOwner` modifier | Backend bypass and double-mint. |
+| **5 Alerting** | Alerts if **rejected-rate > 5 %** or **gas/day > 0.3 DOT**. | Early detection. |
+| **6 Kill-Switch Flag**| `MINT_ENABLED=false` env flag to halt minting while investgating | Immediate halt. |
+
+```mermaid
+graph TD
+    A(User tap) -->|Static URL /tag/ID| B[Mobile Web/App]
+    B -->|Privy JWT, tagId| C(Backend /claim)
+    C --> D{Rate-limit OK?}
+    D -- no --> R1[429 Slow down]
+    D -- yes --> E{Already claimed?}
+    E -- yes --> R2[409 Duplicate]
+    E -- no --> F[Mint via backend wallet]
+    F --> G[(Polkadot Asset Hub)]
+    G --> H[Tx event ➜ success to app]
+```
+
 ### 🧩 Ecosystem Fit
 
 stampika is an application is built on Polkadot Hub. It is designed for avid explorers and travel enthusiasts who delight in visiting landmarks—whether on domestic adventures or overseas getaways. Inspired by traditions such as Japan’s iconic stamp-collecting culture, where travelers collect physical stamps in notebooks, stampika brings this experience into the digital age.
@@ -57,14 +196,14 @@ There aren’t any similar projects in the Polkadot Ecosystem. We believe that t
 These values are estimated based on an number of 250 users and 1,000 stamp NFTs minted in a timespan of 90 days.
 
 Boost to on-chain activity.
-Stampika’s pilot plans to creates 250 new wallets; if even 10 % return to claim stamps each day, Asset Hub’s daily active accounts jump from ~300 to ~325 — a 10 % lift <https://assethub-polkadot.subscan.io/tools/charts?type=account>. With 1,000 stamp claims over the period (≈11/day - 1,000 / 90 days) the network can also see signed extrinsics climb from ~600 <https://assethub-polkadot.subscan.io/tools/charts?type=extrinsic> to ~611 per day.
+stampika’s pilot plans to creates 250 new wallets; if even 10 % return to claim stamps each day, Asset Hub’s daily active accounts jump from ~300 to ~325 — a 10 % lift <https://assethub-polkadot.subscan.io/tools/charts?type=account>. With 1,000 stamp claims over the period (≈11/day - 1,000 / 90 days) the network can also see signed extrinsics climb from ~600 <https://assethub-polkadot.subscan.io/tools/charts?type=extrinsic> to ~611 per day.
 
 NFT volume catalyst.
-Those 1 000 stamps are NFT Mints, and will boost NFT mint numbers on Asset Hub by roughly 50% from ~600 (average mint rate per month ≈ 333 - 1,000/3 months). Number of Active NFT Users can also jump by 250, a big contrast to the current active number of 60.
+Those 1,000 stamps are NFT Mints, and will boost NFT mint numbers on Asset Hub by roughly 50% from ~600 (average mint rate per month ≈ 333 - 1,000/3 months). Number of Active NFT Users can also jump by 250, a big contrast to the current active number of 60.
 ![AssetHubNFT Activity](https://i.imgur.com/KE6lHNS.jpeg)
 
 Feed for KodaDot and other dApps.
-KodaDot and other Hub-compatible markets can index Stampika collections on day one, unlocking a fresh stream of travel-themed NFTs for collectors and giving the marketplace new, non-profile-picture inventory to trade if users so wish to trade them.
+KodaDot and other Hub-compatible markets can index stampika collections on day one, unlocking a fresh stream of travel-themed NFTs for collectors and giving the marketplace new, non-profile-picture inventory to trade if users so wish to trade them.
 
 Further Knock-on benefits.
 More wallets and stamps mean richer data for indexers, extra fee revenue for collators and a live showcase for Venue <-> User Stamps that other Polkadot dApps can query for airdrops, on-chain reputation or cross-parachain quests. By onboarding stampika, Polkadot can position itself as a blockchain with more real-life usage and more than just for financial purposes.
@@ -117,9 +256,9 @@ We developed a prototype Android Mobile App at EasyA Consensus Hackathon. stampi
 
 ### Success KPI (By End of Pilot Testing)
 
-- 25 Users onboarded
-- 25 Stamps collected
-- 3 Landmarks collaborated with (Live NFC Stamps available to be collected)
+- 250 Users onboarded
+- 1000 Stamps collected
+- 20 Landmarks collaborated with (Live NFC Stamps available to be collected)
 
 ### Overview
 
