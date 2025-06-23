@@ -236,10 +236,10 @@ The SubLua project is currently in active development, with a working proof of c
 | 0d. | Docker | Updated Docker configuration supporting production deployments and multi-architecture builds. |
 | 0e. | Article | Case study article showcasing a complete real-world application built with SubLua, including architecture decisions, lessons learned, and performance metrics. |
 | 1. | WebSocket Connection Management | Robust WebSocket connection handling with automatic reconnection, connection pooling, heartbeat monitoring, and graceful degradation to HTTP when WebSocket is unavailable. |
-| 2. | Advanced Cryptographic Features | Support for additional cryptographic operations including multi-signature accounts, proxy accounts, and identity management. Secure key storage recommendations and examples. |
-| 3. | Production Game Example | Complete, polished game demonstrating production-ready blockchain integration. Includes player account management, token economics, leaderboards, and secure transaction handling. |
+| 2. | Advanced Cryptographic Features | Support for additional cryptographic operations, including multi-signature accounts, proxy accounts, and identity management. Secure key storage recommendations and examples. |
+| 3. | Production Game Example | A complete and polished game that demonstrates production-ready blockchain integration. Includes player account management, token economics, leaderboards, and secure transaction handling. |
 | 4. | SDK Packaging and Distribution | Proper LuaRocks package creation, automated build pipeline, cross-platform binary distribution, and installation scripts for major operating systems. |
-| 5. | Security Audit and Hardening | Comprehensive security review of cryptographic implementations, secure coding practices enforcement, vulnerability assessment, and security documentation. |
+| 5. | Security Audit and Hardening | Comprehensive security review of cryptographic implementations, enforcement of secure coding practices, vulnerability assessment, and security documentation. |
 
 ### Budget Breakdown
 
@@ -251,15 +251,14 @@ The SubLua project is currently in active development, with a working proof of c
 | Subcontracts | Security Audit | 2,000 USD | 1x | 2,000 USD | External security review of cryptographic components |
 | --- | --- | --- | **Total** | **29,000 USD** |  |
 
-*Note: Requesting 25,000 USD to fit within typical grant ranges*
-*Note: About 10,000 USD of our funding will be tipped to active community contributors to this project*
+*Note: Requesting 25,000 USD to fit within typical grant ranges; About 10,000 USD of our funding will be tipped to active community contributors to this project*
 
 ## Future Plans
 
 **Long-term Maintenance:**
-- Establish sustainable maintenance model through:
+- Establish a sustainable maintenance model through:
   - Community contributions and governance
-  - Potential integration with existing Polkadot ecosystem funding
+  - Potential integration with the existing Polkadot ecosystem funding
   - Commercial support services for enterprise users
   - Partnership with game development companies using the SDK
 
