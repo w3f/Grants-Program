@@ -151,7 +151,7 @@ Threat model we defend against:
 | **2 Rate-limit** | 5 claims/min per IP + 30 claims/hr per wallet | Flood / DDoS during peak. |
 | **3 Duplicate guard (DB)** | `(tagId, wallet)` table — reject if already claimed. | Replay / link-forward cheats. |
 | **4 On-chain guard** | `claimed[tagId][wallet]` mapping in contract and `onlyOwner` modifier | Backend bypass and double-mint. |
-| **5 Alerting** | Alerts if **rejected-rate > 5 %** or **gas/day > 0.3 DOT**. | Early detection. |
+| **5 Alerting** | Alerts if **rejected-rate > 5 %**. | Early detection. |
 | **6 Kill-Switch Flag**| `MINT_ENABLED=false` env flag to halt minting while investgating | Immediate halt. |
 
 ```mermaid
@@ -182,7 +182,12 @@ There aren’t any similar projects in the Polkadot Ecosystem. We believe that t
 These values are estimated based on an number of 250 users and 1,000 stamp NFTs minted in a timespan of 90 days.
 
 Boost to on-chain activity.
-stampika’s pilot plans to creates 250 new wallets; if even 10 % return to claim stamps each day, Asset Hub’s daily active accounts jump from ~300 to ~325 — a 10 % lift <https://assethub-polkadot.subscan.io/tools/charts?type=account>. With 1,000 stamp claims over the period (≈11/day - 1,000 / 90 days) the network can also see signed extrinsics climb from ~600 <https://assethub-polkadot.subscan.io/tools/charts?type=extrinsic> to ~611 per day.
+stampika’s pilot plans to creates 250 new wallets; if even 10 % return to claim stamps each day, Asset Hub’s daily active accounts jump from ~300 to ~325 - a 10% lift. With 1,000 stamp claims over the period (≈11/day - 1,000 / 90 days) the network can also see signed extrinsics climb from ~600 d to ~611 per day.
+
+sources:
+
+1. daily active wallet source: <https://assethub-polkadot.subscan.io/tools/charts?type=account>
+2. daily signed extrinsics source: <https://assethub-polkadot.subscan.io/tools/charts?type=account>
 
 NFT volume catalyst.
 Those 1,000 stamps are NFT Mints, and will boost NFT mint numbers on Asset Hub by roughly 50% from ~600 (average mint rate per month ≈ 333 - 1,000/3 months). Number of Active NFT Users can also jump by 250, a big contrast to the current active number of 60.
