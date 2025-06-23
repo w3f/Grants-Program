@@ -125,26 +125,12 @@ We chose the backend wallet for the 3-month pilot because it saves engineering t
 ##### Operational safeguards  
 
 1. **HSM custody** – Polkadot key stored in **GCP Cloud KMS HSM**
-2. **Queue + batch** – `/claim` → Pub/Sub → Cloud Run worker mints ≤25 stamps per tx; absorbs peak spikes.  
-3. **Gas budget caps** – Wallet pre-funded with 5 DOT. Worker halts and triggers PagerDuty if `gasSpentToday > 0.3 DOT`.  
-4. **Real-time alerts** – Stackdriver alarms on low balance (<1 DOT) or 5xx spikes.  
-5. **Kill switch** – `MINT_ENABLED=false` disables the worker loop instantly.  
-6. **Audit trail** – Each mint maps to Pub/Sub ID + Privy user ID for forensic traceability.
+2. **Queue + batch** – `/claim` → Pub/Sub → Cloud Run worker mints ≤25 stamps per tx; absorbs peak spikes and prevents nonce clash.
+3. **Real-time alerts** – Stackdriver alarms on low balance (<1 DOT) or 5xx spikes.  
+4. **Kill switch** – `MINT_ENABLED=false` disables the worker loop instantly.  
+5. **Audit trail** – Each mint maps to Pub/Sub ID + Privy user ID for forensic traceability.
 
 This setup delivers a friction-free UX while capping financial risk to a few dollars per day—ideal for a grant-funded pilot.
-
-| Topic | Implementation detail |
-|-------|-----------------------|
-| **Custody** | Backend wallet is a Polkadot key managed by **GCP Cloud KMS + Secret Manager**. |
-| **Mint queue** | `claim` API ➜ Pub/Sub ➜ Cloud Run worker batches ≤25 mints/tx. |
-| **Throughput** | Sustains **250 mints/min**, >10× peak forecast. |
-| **Gas fund size** | Pilot need ≈ 0.075 DOT; wallet pre-funded with 5 DOT. |
-| **Alerts** | Alert if balance < 1 DOT or gas/day > 0.3 DOT. |
-| **Post-pilot** | Optional user-funded drip (0.1 DOT) + self-signed mints. |
-
-Another consideration we had was to faucet a certain amount of Gas fee
-
-Ideally we’ll use paymaster or EIP-4337/7702 style smart wallet, however, Polkadot Asset Hub is not supported by both Plinko and Privy therefore we will have to use our custom solutions below.
 
 #### Anti-Attack Mechanism
 
