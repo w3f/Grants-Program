@@ -53,6 +53,22 @@ stampika addresses the need for:
 
 There aren’t any similar projects in the Polkadot Ecosystem. We believe that this is one of the pioneer efforts to apply Web3 to the tourism industry. This could be due to the fact that this project is quite dependent on our business development efforts and the fact that NFC libraries are not as easy to work with in the past.
 
+**Ecosystem Impact**:
+These values are estimated based on an number of 250 users and 1,000 stamp NFTs minted in a timespan of 90 days.
+
+Boost to on-chain activity.
+Stampika’s pilot plans to creates 250 new wallets; if even 10 % return to claim stamps each day, Asset Hub’s daily active accounts jump from ~300 to ~325 — a 10 % lift <https://assethub-polkadot.subscan.io/tools/charts?type=account>. With 1,000 stamp claims over the period (≈11/day - 1,000 / 90 days) the network can also see signed extrinsics climb from ~600 <https://assethub-polkadot.subscan.io/tools/charts?type=extrinsic> to ~611 per day.
+
+NFT volume catalyst.
+Those 1 000 stamps are NFT Mints, and will boost NFT mint numbers on Asset Hub by roughly 50% from ~600 (average mint rate per month ≈ 333 - 1,000/3 months). Number of Active NFT Users can also jump by 250, a big contrast to the current active number of 60.
+![AssetHubNFT Activity](https://i.imgur.com/KE6lHNS.jpeg)
+
+Feed for KodaDot and other dApps.
+KodaDot and other Hub-compatible markets can index Stampika collections on day one, unlocking a fresh stream of travel-themed NFTs for collectors and giving the marketplace new, non-profile-picture inventory to trade if users so wish to trade them.
+
+Further Knock-on benefits.
+More wallets and stamps mean richer data for indexers, extra fee revenue for collators and a live showcase for Venue <-> User Stamps that other Polkadot dApps can query for airdrops, on-chain reputation or cross-parachain quests. By onboarding stampika, Polkadot can position itself as a blockchain with more real-life usage and more than just for financial purposes.
+
 ## 👥 Team
 
 - **Team Name:** stampika
