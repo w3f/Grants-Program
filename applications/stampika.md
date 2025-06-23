@@ -15,16 +15,17 @@
 
 - This project aligns with the team’s core values of encouraging activity and movement. In a world where AI-driven productivity increasingly reduces the human need for traditional work, there’s been a noticeable long-term shift in investment toward the entertainment and experience economy. At the heart of this trend lies a paradox: as technology accelerates, so does the human longing for nature, authenticity, and offline experiences. That’s precisely the space we’re targeting.
 
-- Pitch Deck: https://www.canva.com/design/DAGnogxARvE/EC2ZigywHsxXm7_VCZytMA/edit
+- Pitch Deck: <https://www.canva.com/design/DAGnogxARvE/EC2ZigywHsxXm7_VCZytMA/edit>
 
 ### 🔍 Project Details
 
 Mobile UI
+
 | Empty Home Page  | Full Home Page  | Social Page  | Profile Page  |
 |---|---|---|---|
 |  ![Empty Home Page](https://i.imgur.com/PNWVr7l.png) |![Full Home Page](https://i.imgur.com/r9vDTqQ.png)   |  ![Social Page](https://i.imgur.com/z1Lq4MW.png) |  ![Profile Page](https://i.imgur.com/OQwEGHw.png) |
 
-We demonstrate a working prototype here: https://www.youtube.com/watch?v=pzqG57ep1mI
+We demonstrate a working prototype here: <https://www.youtube.com/watch?v=pzqG57ep1mI>
 
 - Tech Stack
 
@@ -36,10 +37,10 @@ We demonstrate a working prototype here: https://www.youtube.com/watch?v=pzqG57e
 - Architecture
   - We will have the following repositories `contracts`, `backend`, `frontend` and `landing-page`
   - NFC scans from the mobile app will be handled by the frontend, which makes an API call to the backend to mint an NFT on chain.
- 
-We will be working on abstracting blockchain as much as possible. We will only be launching on testnet for our pilot testing. 
- 
-We will not include the data analysis dashboard and related endpoints for the Tourism Boards in this Fast Grant and will leave that as future work. 
+
+We will be working on abstracting blockchain as much as possible. We will only be launching on testnet for our pilot testing.
+
+We will not include the data analysis dashboard and related endpoints for the Tourism Boards in this Fast Grant and will leave that as future work.
 
 ### 🧩 Ecosystem Fit
 
@@ -56,8 +57,8 @@ There aren’t any similar projects in the Polkadot Ecosystem. We believe that t
 
 - **Team Name:** stampika
 - **Contact Name:** Wei Rong Chu
-- **Contact Email:** chuweiron18@gmail.com
-- **Website:** https://github.com/wr1159/stamply
+- **Contact Email:** <chuweiron18@gmail.com>
+- **Website:** <https://github.com/wr1159/stamply>
 
 ### Team members
 
@@ -68,23 +69,23 @@ There aren’t any similar projects in the Polkadot Ecosystem. We believe that t
 
 #### LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/charlyn-kwan-20651a233/
-- https://www.linkedin.com/in/sg-leow-kai-jie/
-- https://www.linkedin.com/in/kyoeun-kim/
-- https://www.linkedin.com/in/wei-rong-chu/
+- <https://www.linkedin.com/in/charlyn-kwan-20651a233/>
+- <https://www.linkedin.com/in/sg-leow-kai-jie/>
+- <https://www.linkedin.com/in/kyoeun-kim/>
+- <https://www.linkedin.com/in/wei-rong-chu/>
 
 ### Team Code Repos
 
 Team GitHub
 
-- https://github.com/wr1159/stamply
+- <https://github.com/wr1159/stamply>
 
 Individual GitHub
 
-- https://github.com/charkty/
-- https://github.com/kaijie0102
-- https://github.com/kyoeun-kim
-- https://github.com/wr1159/
+- <https://github.com/charkty/>
+- <https://github.com/kaijie0102>
+- <https://github.com/kyoeun-kim>
+- <https://github.com/wr1159/>
 
 ### Team's experience
 
@@ -98,7 +99,7 @@ We developed a prototype Android Mobile App at EasyA Consensus Hackathon. stampi
 
 ## 📅 Development Roadmap
 
-### Success KPI (By End of Pilot Testing) 
+### Success KPI (By End of Pilot Testing)
 
 - 25 Users onboarded
 - 25 Stamps collected
@@ -148,7 +149,7 @@ Please provide a breakdown of your budget by milestone:
 | Apple Developer Program | Required for TestFlight & App Store | 1 licence | $100 |  |
 | Google Play Console | Android beta distribution | 1 licence | $25 |  |
 | Hosting / RPC / DB | Vercel, Supabase, RPC Provider (3 mo) | $50 / mo × 3 | $150 |  |
-| Domains & Email | stampika.xyz + hello@stampika.xyz registration | lump sum | $50 |  |
+| Domains & Email | stampika.xyz + <hello@stampika.xyz> registration | lump sum | $50 |  |
 | **Software subtotal** | | | | **$325** |
 | **3 Hardware & Materials** |
 | NFC NTAG 215 stickers | 250 pcs @ $0.30 + custom print @ $0.10 | | $100 |  |
@@ -167,7 +168,7 @@ Please provide a breakdown of your budget by milestone:
 - Vision for Polkadot:
   - We believe that an onchain future will be the default for most people.
   - We will seemlessly onboard users as we abstract a lot of the blockchain nitty gritty out of the way, making it simple for first time users
-  - We can introduce new users to parts of the ecosystem e.g. NFT Marketplace like KodaDot to allow users to potentially trade their stamps 
+  - We can introduce new users to parts of the ecosystem e.g. NFT Marketplace like KodaDot to allow users to potentially trade their stamps
   - stampika would also support an Onchain Identity Layer as we will be able to add more flair and personality to each wallet address. This is optional as well to the users so there will be no privacy concerns.
   - Cross-Project Airdrops & Perks could also be done with stampika as other projects would be able to query the different stamps each wallet address has, thus verifying the proof of location of the users. For example, an NFT project might want to only airdrop to people who have travelled to Japan in 2025 and we could help achieve that goal with Proof of Locations.
   - A very far reach goal will be to allow users to bridge the stamps to other parachains so that it could be used directly in other contracts.
@@ -192,13 +193,14 @@ We plan to deploy on testnet for our pilot testing so we will be slowly collecti
 
  If needed, we are more than happy to deploy the pilot testing on the mainnet and can re-allocate the budget from elsewhere.
 
-Regarding the technical aspect, the minting will be done via our backend server as of now. We will consider moving to using EIP7702 smart wallets in the future when it is less experimental and available on Polkadot Asset Hub. Upon scanning of the NFC tags, the users' client will call the backend with their privy access token and the backend server will then call the mint function with the backend wallet. 
+Regarding the technical aspect, the minting will be done via our backend server as of now. We will consider moving to using EIP7702 smart wallets in the future when it is less experimental and available on Polkadot Asset Hub. Upon scanning of the NFC tags, the users' client will call the backend with their privy access token and the backend server will then call the mint function with the backend wallet.
 
 > What mechanisms do you plan to include to prevent attacks (e.g. spam/replay attacks during busy periods)?
 
 We will be implementing the following mechanisms
-1. Privy Access Token - With Privy as our account management system, we will ensure that every backend call before the actual minting must be accompanied with a valid privy access token 
-2. Rate-limiting & IP throttling - We will limit requests from the same access token and same IP to prevent users from claiming too many via the same. 
+
+1. Privy Access Token - With Privy as our account management system, we will ensure that every backend call before the actual minting must be accompanied with a valid privy access token
+2. Rate-limiting & IP throttling - We will limit requests from the same access token and same IP to prevent users from claiming too many via the same.
 3. Access Control Minting - Since we have the backend wallet performing the mints, we will add access control such that only the registered wallets such as the backend wallets will be able to mint, thus thwarting bot accounts minting. We will perform safe security industry practices with the backend wallet.
 4. User Address Registry - Depending on the scale and frequency of attacks, we will consider an on-chain address registry as part of the Stamp Contracts only allows verified users of stampika to be minted a stamp.
 
