@@ -152,13 +152,13 @@ SubLua would be the first production-ready blockchain SDK for Lua in any major e
 ## Team
 
 **Team Name:** MontaQ Labs
-**Contact Name:** Haoyang Li
-**Contact Email:** haoyang@montaq.org
+**Contact Name:** Abhiraj Mengade
+**Contact Email:** contact@montaq.org
 **Website:** https://github.com/MontaQLabs
 
 ### Team members
 
-[Please provide legal names of all grant beneficiaries]
+Abhiraj Mengade, Haoyang Li
 
 #### LinkedIn Profiles (if available)
 
@@ -176,7 +176,7 @@ SubLua would be the first production-ready blockchain SDK for Lua in any major e
 
 ### Team's Experience
 
-Our team has strong experience in Polkadot/Substrate development, Lua programming, game development, and blockchain SDK creation. Abhiraj Mengade is a Polkadot Blockchain Academy graduate with distinction and a Teaching Assistant for PBA-X 2025. He has won multiple Polkadot hackathons, including Bangkok and Paris, and has experience in Lua programming and scripting logic relevant to game development. Haoyang Li, also a graduate of the Polkadot Blockchain Academy, has a background in Linux kernel security and cryptography research. He won the Vara Hackathon as a solo developer and has worked on frontend integration for Polkadot SDKs. He led a frontend integration workshop at the Polkadot AssetHub Hackathon and is focused on building developer-friendly frontend tooling to improve accessibility to Polkadot’s infrastructure.
+Our team has strong experience in Polkadot/Substrate development, Lua programming, and blockchain integration. Abhiraj Mengade is a Polkadot Blockchain Academy graduate with distinction and a Teaching Assistant for PBA-X 2025. He has won multiple Polkadot hackathons, including Bangkok and Paris, and has experience in Lua programming and scripting logic relevant to game development. Haoyang Li, also a graduate of the Polkadot Blockchain Academy, has a background in Linux kernel security and cryptography research. He won the Vara Hackathon as a solo developer and has worked on frontend integration for Polkadot SDKs. He led a frontend integration workshop at the Polkadot AssetHub Hackathon and is focused on building developer-friendly frontend tooling to improve accessibility to Polkadot’s infrastructure.
 
 ## Development Status
 
