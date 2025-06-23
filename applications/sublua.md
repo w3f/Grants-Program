@@ -16,7 +16,7 @@ SubLua integrates directly with the Substrate ecosystem by:
 - Enabling interaction with standard pallets (balances, system, etc.)
 
 **Team Interest:**
-Our team recognized a significant gap in the Substrate ecosystem - while there are excellent SDKs for JavaScript/TypeScript and Python, the Lua ecosystem was completely underserved. Given Lua's widespread use in gaming, IoT, embedded systems, and web applications, we saw an opportunity to dramatically expand the potential developer base for Substrate chains.
+Our team recognized a significant gap in the Substrate ecosystem - while there are excellent SDKs for JavaScript/TypeScript and Python, the Lua ecosystem was completely underserved. Given Lua's widespread use in gaming, IoT, embedded systems, and web applications, we saw an opportunity to expand the potential developer base for Substrate chains dramatically.
 
 ### Project Details
 
@@ -152,8 +152,8 @@ SubLua would be the first production-ready blockchain SDK for Lua in any major e
 ## Team
 
 **Team Name:** MontaQ Labs
-**Contact Name:** [Your Full Name]
-**Contact Email:** [Your Email]
+**Contact Name:** Haoyang Li
+**Contact Email:** haoyang@montaq.org
 **Website:** https://github.com/MontaQLabs
 
 ### Team members
@@ -162,27 +162,26 @@ SubLua would be the first production-ready blockchain SDK for Lua in any major e
 
 #### LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{team_member_1}
-- https://www.linkedin.com/{team_member_2}
+- https://www.linkedin.com/in/abhiraj-mengade/
+- https://www.linkedin.com/in/haoyang-li-aa3647240/
 
 ### Team Code Repos
 
 - https://github.com/MontaQLabs/sublua
-- https://github.com/MontaQLabs/{other_projects}
 
 ### Team GitHub Accounts
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- https://github.com/abhiraj-mengade
+- https://github.com/lhymmEU
 
 ### Team's Experience
 
-[Please describe your team's relevant experience with Polkadot/Substrate development, Lua programming, game development, and blockchain SDK creation. Include any previous contributions to the Polkadot ecosystem.]
+Our team has strong experience in Polkadot/Substrate development, Lua programming, game development, and blockchain SDK creation. Abhiraj Mengade is a Polkadot Blockchain Academy graduate with distinction and a Teaching Assistant for PBA-X 2025. He has won multiple Polkadot hackathons, including Bangkok and Paris, and has experience in Lua programming and scripting logic relevant to game development. Haoyang Li, also a graduate of the Polkadot Blockchain Academy, has a background in Linux kernel security and cryptography research. He won the Vara Hackathon as a solo developer and has worked on frontend integration for Polkadot SDKs. He led a frontend integration workshop at the Polkadot AssetHub Hackathon and is focused on building developer-friendly frontend tooling to improve accessibility to Polkadot’s infrastructure.
 
 ## Development Status
 
 **Current Implementation:**
-The SubLua project is already in active development with a working proof-of-concept. The current codebase includes:
+The SubLua project is currently in active development, with a working proof of concept. The current codebase includes:
 
 - **Core SDK** (`sdk/` directory): Complete Lua interface with modules for RPC, signing, transactions, and chain configuration
 - **Rust FFI Library** (`polkadot-ffi/`): Cryptographic operations using substrate-primitives
@@ -253,6 +252,7 @@ The SubLua project is already in active development with a working proof-of-conc
 | --- | --- | --- | **Total** | **29,000 USD** |  |
 
 *Note: Requesting 25,000 USD to fit within typical grant ranges*
+*Note: About 10,000 USD of our funding will be tipped to active community contributors to this project*
 
 ## Future Plans
 
@@ -272,7 +272,7 @@ The SubLua project is already in active development with a working proof-of-conc
 
 **Long-term Vision:**
 - Position SubLua as the standard blockchain SDK for Lua developers
-- Foster a community of developers building blockchain-enabled games and applications
+- Build a community of developers for blockchain-enabled games and applications
 - Explore opportunities for parachain-specific optimizations
 - Investigate integration with emerging Substrate features like smart contracts
 - Develop specialized tools for specific verticals (IoT, gaming, web applications)
@@ -286,14 +286,14 @@ The SubLua project is already in active development with a working proof-of-conc
 - Preliminary performance testing and optimization
 
 **Community Interest:**
-- Multiple requests for Lua SDK in Polkadot developer forums
+- Multiple requests for the Lua SDK in the Polkadot developer forums
 - Interest expressed by indie game developers in blockchain integration
 - Potential adoption by IoT and embedded systems developers
 
 **Technical Innovation:**
 SubLua introduces several innovative approaches:
 - Lightweight FFI architecture minimizing runtime overhead
-- Automatic chain configuration detection reducing setup complexity
+- Automatic chain configuration detection reduces setup complexity
 - Game-developer-friendly API design prioritizing ease of use
 - Cross-platform compatibility supporting diverse deployment scenarios
 
