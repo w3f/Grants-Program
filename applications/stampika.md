@@ -179,10 +179,10 @@ stampika addresses the need for:
 There aren’t any similar projects in the Polkadot Ecosystem. We believe that this is one of the pioneer efforts to apply Web3 to the tourism industry. This could be due to the fact that this project is quite dependent on our business development efforts and the fact that NFC libraries are not as easy to work with in the past.
 
 **Ecosystem Impact**:
-These values are estimated based on an number of 250 users and 1,000 stamp NFTs minted in a timespan of 90 days.
+These values are estimated based on an number of 100 users and 200 stamp NFTs minted in a timespan of 30 days (Pilot Testing Phase)
 
 Boost to on-chain activity.
-stampika’s pilot plans to creates 250 new wallets; if even 10 % return to claim stamps each day, Asset Hub’s daily active accounts jump from ~300 to ~325 - a 10% lift. With 1,000 stamp claims over the period (≈11/day - 1,000 / 90 days) the network can also see signed extrinsics climb from ~600 d to ~611 per day.
+stampika’s pilot plans to creates 100 new wallets; if even 20 % return to claim stamps each day, Asset Hub’s daily active accounts jump from ~300 to ~320 - a ~7% lift. With 200 stamp claims over the period (≈6/day - 200 / 30 days) the network can also see signed extrinsics climb from ~600 to ~606 per day a 1% increase.
 
 sources:
 
@@ -190,7 +190,7 @@ sources:
 2. daily signed extrinsics source: <https://assethub-polkadot.subscan.io/tools/charts?type=account>
 
 NFT volume catalyst.
-Those 1,000 stamps are NFT Mints, and will boost NFT mint numbers on Asset Hub by roughly 50% from ~600 (average mint rate per month ≈ 333 - 1,000/3 months). Number of Active NFT Users can also jump by 250, a big contrast to the current active number of 60.
+Those 200 stamps are NFT Mints, and will boost NFT mint numbers on Asset Hub by roughly 33% from ~600. Number of Active NFT Users can also jump by 100, a big contrast to the current active number of 60.
 ![AssetHubNFT Activity](https://i.imgur.com/KE6lHNS.jpeg)
 
 Feed for KodaDot and other dApps.
@@ -247,9 +247,9 @@ We developed a prototype Android Mobile App at EasyA Consensus Hackathon. stampi
 
 ### Success KPI (By End of Pilot Testing)
 
-- 250 Users onboarded
-- 1000 Stamps collected
-- 20 Landmarks collaborated with (Live NFC Stamps available to be collected)
+- 100 Users onboarded
+- 200 Stamps collected
+- 20 Live NFC Stamps
 
 ### Overview
 
