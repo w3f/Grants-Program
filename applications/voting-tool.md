@@ -87,8 +87,8 @@ This section should break the development roadmap down into milestones and deliv
 ### Overview
 
 - **Estimated Duration:** 1 month (excluding past work)
-- **Full-Time Equivalent (FTE):**  2.4
-- **Total Costs:** 22,400 USD
+- **Full-Time Equivalent (FTE):**  2.5
+- **Total Costs:** 23,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -107,8 +107,8 @@ This section should break the development roadmap down into milestones and deliv
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
 | Personell | Full-Stack Developer | 10,000 USD | 2 FTE | 20,000 USD | doing majority of the development work |
-| Personell | Document writer & tester | 6,000 USD | 0.4 FTE | 2,400 USD | creating documentation & manual testing  |
-| --- | --- | --- | **Total** | **22,400 USD** |  |
+| Personell | Document writer & tester | 6,000 USD | 0.5 FTE | 3,000 USD | creating documentation & manual testing  |
+| --- | --- | --- | **Total** | **23,000 USD** |  |
 
 
 ## Future Plans
