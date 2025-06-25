@@ -69,51 +69,46 @@ Our other team members are not software developers, Vonyi has high technical kno
 
 ## Development Status
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+The MVP is ready, it can be found here: https://github.com/ZelmaCorp/VotingTool
 
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with relevant actors in the ecosystem,
-- previous interface iterations, such as mock-ups and wireframes.
+There is a forum discussion about this tool, it can be found here: https://forum.polkadot.network/t/status-update-on-the-development-of-a-notion-based-voting-tool-for-emerging-communities-and-smaller-daos-active-in-opengov/13469/1
+
+[probably insert flowchart here]
 
 ## Development Roadmap
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected. Below, we provide an **example milestone** with mandatory (0a to 0e) and example deliverables. 
+**Milestone 1**: (done) Possible to fetch proposals from OpenGov, possible to cast votes to Mimir, and the app will update the status of the proposal in Notion
 
-**Please notice that Polkadot Open Source Grants only accept projects up to 3 months of duration and up to 2 milestones.**
+**Milestone 2**: TODO OpenGov overlay, or Telegram bot, etc
+
+
+This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected. Below, we provide an **example milestone** with mandatory (0a to 0e) and example deliverables. 
 
 ### Overview
 
-- **Estimated Duration:** Duration of the whole project (e.g. 3 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the grant throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD).
-
-> Note that deliverables 0a to 0e are mandatory. Please adapt their specification to your project.
+- **Estimated Duration:** 1 month (excluding past work)
+- **Full-Time Equivalent (FTE):**  2.4
+- **Total Costs:** 20,400 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can start using the tool |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#testing-guide) for details. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Pallet X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Smart contract Y | The Y Substrate module will... |
-| 3. | Substrate chain | X and Y of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 4. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**that explains what was done as part of the grant). |
+| 1. | Express backend that does proposal fetching | We will create an Express up, that is able to fetch proposals from OpenGov, and insert them into Notion |
+| 2. | Mimir integration | We will extend the Express app, to work together with Mimir, for batch voting |
+| 3. | Telegram? | We will create a Telegram integration, so users can handle referendas through Telegram |
+| 4. | OpenGov overlay? | We will create an extension, so Notion is not needed, all actions can be done through OpenGov |
 
 ### Budget Breakdown (Example, please adapt)
- **Category:** Budget Breakdown positions are split within the following categories: 
- 
-- Personnel
-- Equipment
-- Subcontracts/Subscriptions
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personell | Full-Stack Developer | 8,000 USD | 0.5 FTE | 4,000 USD | leading project with tech architecture and design |
-| Personell | Smart Contract Developer | 10,000 USD | 1 FTE | 10,000 USD | focused on execution and implementation |
-| --- | --- | --- | **Total** | **14,000 USD** |  |
+| Personell | Full-Stack Developer | 9,000 USD | 2 FTE | 18,000 USD | doing majority of the development work |
+| Personell | Document writer & tester | 6,000 USD | 0.4 FTE | 2,400 USD | creating documentation & manual testing  |
+| --- | --- | --- | **Total** | **20,400 USD** |  |
 
 
 ## Future Plans
