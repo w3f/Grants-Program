@@ -39,47 +39,33 @@ Similar tools in the ecosystem:
  - ChaosDAO’s Discord bot: TODO
  - Trustless Core’s Google Sheets: requires many manual actions, compared to our solution.
 
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Polkadot/Kusama ecosystem? Make sure to at least check the [Polkadot Forum](https://forum.polkadot.network/), the [wiki's Tech Stack doc](https://wiki.polkadot.network/docs/build-open-source) and [OpenGov](https://polkadot.subsquare.io/referenda?status=executed&is_treasury=true).
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
-
 ## Team
 
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase.
-
-- **Team Name:** Name of your team. If you apply as a legal entity, please use its name.
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email
-- **Website:** Your website, GitHub org, blog, or similar
+- **Team Name:** Hungarian Polkadot DAO
+- **Contact Name:** Peter Ott
+- **Contact Email:** o.peter.33@tutanota.de
+- **Website:** https://polkadothungary.net/
 
 ### Team members
-
-Please list the legal name of all grant beneficiaries.
+ - Peter Ott
+ - [Vonyi]
 
 #### LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- https://www.linkedin.com/in/ottpeter/
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
+This is a DAO, that's main activity is not software development. We are part of Decentralized Voices Program 4. The tool was originally developed by Vonyi, and now it's mainly developed by me (Peter).
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere are also fine.
-
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- https://github.com/ottpeter/
+- https://github.com/send4t/
 
 ### Team's experience
 
-Please describe the team's relevant experience, such as Polkadot-related projects in progress or contributions to the ecosystem made by team members in the past.
+Peter - Full Stack software developer with 4 years of professional development experience and 10 years in the cryptocurrency space, specializing in TypeScript applications. Previously won a price in the DAO Track at Polkadot Championship, demonstrating expertise in decentralized governance solutions. Has hands-on experience with decentralized technologies including IPFS and Swarm, combining deep blockchain knowledge with practical development skills.
+
+Our other team members are not software developers, Vonyi has high technical knowledge, for example, he started developing the original (Vercel) app, and he is maintaining polkadothungary.net. The other team members are very good at community building, Spectra created the Notion templates, which we are using to organize our activity within the DAO, Zsófi is working at PBA. We are the multi-talent team, and we experimented this tool on ourselves at first.
 
 ## Development Status
 
@@ -106,8 +92,8 @@ This section should break the development roadmap down into milestones and deliv
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#license) for details. |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#documentation) for details. |
+| 0a. | License | GPLv3 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can start using the tool |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#testing-guide) for details. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
