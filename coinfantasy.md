@@ -1,10 +1,5 @@
 # CoinFantasy
 
-> [!NOTE]
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
-
 - **Team Name:** CoinFantasy Inc. 
 - **Payment Details:**
   - **DOT**: 14owCoW5SNApxbdwGsBKjcfnu7u9z2D6saquGnNQyML9Ukk4                   
@@ -15,27 +10,34 @@
 > *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
-
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
+CoinFantasy is the world’s first freemium fantasy sports platform that transforms live crypto markets into zero-risk, competitive gameplay. By wrapping real-time token performance in familiar fantasy-sports mechanics—drafts, lineups, leaderboards—we onboard millions of sports fans into Web3 through play, education, and community.
 
 ### Overview
 CoinFantasy: Where Crypto Meets Fantasy Sports. CoinFantasy is a pioneering gamified fantasy sports platform that transforms real-time crypto market data into competitive gameplay, 
 providing an engaging gateway for users to experience cryptocurrency in a familiar format. The platform is designed to integrate seamlessly with Substrate-based networks like Polkadot and Kusama, 
-leveraging decentralized technology to ensure scalability, security, and transparency. Our team is driven by the passion to reduce the barriers to crypto adoption by combining the thrill of fantasy sports with innovative digital asset management, 
-ultimately fostering greater crypto engagement and financial literacy among a broader audience.
+leveraging decentralized technology to ensure scalability, security, and transparency. Our team is driven by the passion to reduce the barriers to crypto adoption by combining the thrill of fantasy sports with innovative digital asset management, ultimately fostering greater crypto engagement and financial literacy among a broader audience.
 
 ### Project Details
 
-https://coinfantasy.fun
+Overview
 
+CoinFantasy is the world’s first fantasy sports-style platform powered by real-time cryptocurrency market data. Instead of drafting athletes, users draft crypto assets (coins/tokens) into fantasy teams and compete based on live financial metrics such as price volatility, Sharpe ratio, momentum, and hourly delta trends.
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+CoinFantasy transforms passive crypto observation into an engaging, gamified experience — similar in spirit to fantasy football, but deeply tied to the mechanics of DeFi and trading behaviors. The platform operates across recurring match rounds, with auto-scheduling, auto-scoring, and AI-generated match narratives for maximum user engagement.
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+Architecture
+
+Frontend: React + Tailwind + Shadcn + Framer Motion for responsive UI/UX.
+Backend: Node.js + Express with PostgreSQL via Prisma ORM.
+Scheduler: pgBoss for background job orchestration (match timing, scoring intervals, story generation).
+Scoring Engine: Isolated microservice (Dockerized) that maps coin performance to fantasy stats per position (QB, RB, WR, etc.).
+On-chain ambitions: While MVP is off-chain, future milestones will include Web3 integration for scoring proofs, rewards issuance, and league registry using Substrate-based chains or bridges.
+
+Problem It Solves
+
+CoinFantasy is created to solve the The Three Lows of crypto, low penetration, low engagement, and low retention. 
+Despite high crypto awareness, crypto adoption in the general public remains low (~15% in the U.S.). CoinFantasy offers a fun, zero-risk, game-driven gateway into crypto that’s easier to onboard and more engaging than trading apps or DeFi dashboards.
+
 
 ### Ecosystem Fit
 
@@ -50,8 +52,6 @@ built on Polkadot’s low-fee, cross-chain capabilities, sets it apart as a pion
 
 ## Team :busts_in_silhouette:
 
-> [!IMPORTANT]
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
 
 ### Team members
 
@@ -65,29 +65,30 @@ William Wang
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 10-50 Jackson, Long Island City, NY 11101
+- **Registered Legal Entity:** CoinFantasy Inc.
 
 ### Team's experience
+William Wang
+Previously CEO and Co-founder
+Satoshi.Art (Montreal, Canada & New York City, USA) 
+Premium NFT platform co-founded with Waka Flocka 
+Successfully launched one of the biggest phygital NFT projects collaborating with grammy winning rapper Lil Durk
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+Bitchain Exchange (Jersey City, USA)
+World's fastest crypto exchange with 3.5m tps and latency <10μs
+A fully regulated, fully compliant crypto-currency exchange targeting institution market
+Co-founded with formal chief architect and technical lead of NYSE (Pillar) trading system
+Successfully raised $2M seed investment from one of the largest Crypto mining pool in the world 
 
 ### Team Code Repos
-
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
 - https://github.com/coinfantasy365
 
 ### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
-
+N/A
 
 ## Development Status :open_book:
 
@@ -99,54 +100,88 @@ This section should break the development roadmap down into milestones and deliv
 
 Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
 
-> [!CAUTION]
-> If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** 6 months
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  2 (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** 50000 USD (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
+- **Total Costs:** 30000 USD (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
 - **DOT %:** 100%
 
-### Milestone 1  — Public V1 release with Polkadot Integration
+### Milestone 1  — Core Game Engine (Fantasy League + Draft System)
 
-- **Estimated duration:** 6 month
+- **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 50,000 USD
-
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#documentation) for details. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| **0a.** | License |  MIT   |
+| **0b.** | Documentation | Inline code docs and a beginner tutorial explaining how to start a mock fantasy league with the API. |
+| **0c.** | Testing and Testing Guide | 90%+ unit test coverage on core game logic: team creation, league joining, draft logic. Test suite included with setup steps. |
+| **0d.** | Docker | Dockerfile + docker-compose to spin up game engine with DB and API. |
+|1.	|League Engine	Backend service (TypeScript, Node.js) that supports league creation, round-robin scheduling, user management, and team slot assignment.
+|2.	|Snake Draft Module	Draft logic with randomized order and stateful progression. Stores pick history and team rosters in PostgreSQL.
+|3.	|REST API	Endpoints for creating leagues, joining teams, triggering and progressing through the draft. Swagger/OpenAPI documentation included.
 
-
-### Milestone 2 Example — Additional features
+### Milestone 2 Scoring Engine & Match Simulation
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:**  2
+- **Costs:** 10,000 USD
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License |  MIT   |
+| **0b.** | Documentation |Scoring engine setup guide + architecture diagram.|
+| **0c.** | Testing and Testing Guide |Full test coverage for scoring logic functions: volatility, price change, Sharpe ratio, momentum.|
+| **0d.** | Docker | Standalone container for scoring engine with mocked market data.|
+|1.|Scoring Engine	TypeScript service that computes match results using proprietary scoring algorithm. Listens for match start events using PG Boss.|
+|2.|Match Cycle Simulation	Auto-match flow runs every 3 hours, pulling latest mock crypto prices and processing team scores.|
+|3.|Stats Recording	Writes match results and individual coin performance into a persistent database. Prepares for Polkadot integration.|
+
+### Milestone 3 Polkadot Integration + Frontend Dashboard
+
+- **Estimated Duration:** 1 month
+- **FTE:**  2
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License |  MIT   |
+| **0b.** | Documentation |Docs on interacting with chain + user guide for app.|
+| **0c.** | Testing and Testing Guide |End-to-end tests for chain interaction and frontend UI.|
+| **0d.** | Docker | Full-stack Docker bundle to launch backend + frontend + scoring engine.|
+|1.	|ink! Smart Contract Stub	A smart contract to record match hashes, basic metadata, and checksum. This sets stage for token rewards.|
+|2.	|React Frontend	Lightweight frontend (React + Tailwind) showing league lobby, teams, match stats.|
+|3.	|Chain Submission Script	Service to submit match results to Polkadot chain. Uses Polkadot.js API.|
+|4.	|Deployment	Deploy on mainnet.|
+| **0e.** |Article | Publish a DevPost blog titled “Turning Crypto Markets into Fantasy Sports: Building on Polkadot with CoinFantasy” highlighting architecture, ecosystem fit, and public benefit.|
 
 
 ## Future Plans
 
-Please include here
+CoinFantasy has already launched its public beta and continues to evolve rapidly. After the completion of the grant milestones, our next development priorities include:
 
--Will raise venture capital once public V1 is live with daily active users. 
+Full On-Chain Match Verification
+Extend our scoring and match results to be fully verifiable and stored on-chain, using Polkadot parachain infrastructure or a custom Substrate chain.
+
+Decentralized League Governance
+Enable DAO-style governance over custom league creation, rules, and scoring parameters through smart contracts and on-chain voting.
+
+Interoperability Across Chains
+Expand support for multiple ecosystems and assets through Polkadot’s cross-chain messaging (XCMP) and bridge protocols.
+
+Builder Tools & SDKs
+Open up CoinFantasy’s engine and match framework as an SDK so other projects can build games and simulations on top of our infrastructure.
+
+Community Growth via Hackathons & Partnerships
+Partner with Substrate developers, host community tournaments, and run integrations with other gaming or DeFi projects to drive ecosystem adoption.
+
+Academic Collaboration
+Work with university labs and crypto researchers to validate the statistical models and scoring algorithms powering the fantasy engine.
+
+
+We also plan to apply to other ecosystem grants and VCs to support scaling. Once we reach product-market fit, we intend to raise external funding to accelerate mass adoption.
 
 ## Referral Program (optional) :moneybag:
 
