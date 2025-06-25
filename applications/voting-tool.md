@@ -88,7 +88,7 @@ This section should break the development roadmap down into milestones and deliv
 
 - **Estimated Duration:** 1 month (excluding past work)
 - **Full-Time Equivalent (FTE):**  2.4
-- **Total Costs:** 20,400 USD
+- **Total Costs:** 22,400 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -106,9 +106,9 @@ This section should break the development roadmap down into milestones and deliv
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personell | Full-Stack Developer | 9,000 USD | 2 FTE | 18,000 USD | doing majority of the development work |
+| Personell | Full-Stack Developer | 10,000 USD | 2 FTE | 20,000 USD | doing majority of the development work |
 | Personell | Document writer & tester | 6,000 USD | 0.4 FTE | 2,400 USD | creating documentation & manual testing  |
-| --- | --- | --- | **Total** | **20,400 USD** |  |
+| --- | --- | --- | **Total** | **22,400 USD** |  |
 
 
 ## Future Plans
@@ -121,8 +121,4 @@ Please include here
 
 ## Additional Information
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done
-- If there are any other teams who have already contributed (financially) to the project
-- Other funding you may have applied for
+Together with Vonyi, we got 500-500 USD from PIF, for the early stages of the development.
