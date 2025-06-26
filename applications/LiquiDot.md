@@ -280,6 +280,7 @@ Our architecture ensures **security** (funds custodied on Asset Hub), **user acc
 - **Single Strategy Type**: Only automated LP range management - no yield farming, lending, or other DeFi strategies
 - **No Impermanent Loss Calculations**: Users must understand IL risks independently - no IL tracking or warnings
 - **No 24/7 Guaranteed Uptime**: Backend monitoring may experience maintenance downtime affecting stop-loss execution
+- **No Position NFTs / Share Tokens**: For the MVP, user positions live only in the Asset-Hub contract's internal mapping. Transferable position NFTs (ERC-721) or vault share tokens (ERC-20/4626) will be added in a future release.
 - **No Tax Reporting Integration**: Users responsible for their own tax calculations and DeFi activity reporting
 
 ### 🧩 Ecosystem Fit
@@ -372,7 +373,7 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 
 - **Rashad Hosseini**, a software engineer with a bachelor's degree from the University of Leeds and currently working at the fintech unicorn Checkout.com. With experience in building robust financial technology solutions providing valuable expertise in developing secure and scalable systems, which is essential for creating reliable DeFi applications.
 - **Fedir Maliarenko**, a crypto enthusiast currently studying Business Analytics at the University of Southampton. With hands-on experience in DeFi protocols, liquidity provision (LP), and automated trading, bringing practical insight into the mechanics of decentralized finance—an essential foundation for contributing to the creation of the product 
-- **Gabriel Bandman**, a software engineer and 3-time Web3/DeFi hackathon winner with hands-on experience building AI-driven trading agents, delta-neutral vaults, and liquidity automation systems. With a focus on reactive smart contracts and full-stack product development, bringing deep technical expertise in automating liquidity provision and optimizing DeFi strategies—crucial for advancing the protocol’s core functionality.
+- **Gabriel Bandman**, a software engineer and 3-time Web3/DeFi hackathon winner with hands-on experience building AI-driven trading agents, delta-neutral vaults, and liquidity automation systems. With a focus on reactive smart contracts and full-stack product development, bringing deep technical expertise in automating liquidity provision and optimising DeFi strategies—crucial for advancing the protocol's core functionality.
 
 
 ## 📊 Development Status
@@ -418,17 +419,25 @@ Please provide a breakdown of your budget by milestone:
 
 ## 🔮 Future Plans
 
-Please include:
 
 - How you intend to continue development after the Fast-Grant
-  - After the Fast-Grant, we plan to focus on having a working proof of concept and onboarding a few initial users. Once we have proven this concept, we will dedicate more resources to the project, integrating more DEXes on other parachains (out next DEX/parachian will most likely be Hydration), across the Polkadot ecosystem and optimizing our investment strategies. We'll continuously improve our decision engine to make smarter investment choices based on user feedback and market performance data. Our primary goal post-grant is to validate the core functionality with real users and refine the product based on their experience before expanding to a wider audience.
 
-   - Further development will include implementing reactive smart contracts that incorporate stop-loss and take-profit functionality, providing users with more advanced risk management tools. We'll also explore the potential decentralization of the decision engine, to become fully DeFi, allowing for smart investment strategies while maintaining security and reliability. We will also be exploring the feature of sending notifications to users, regarding their investments, using a Telegram bot.
- 
-  
+   
+   - **Step 1 — Multi-Parachain Expansion**: Integrate Hydration on Moonriver and add additional parachain DEXes via XCM, growing LiquiDOT's coverage beyond Moonbeam.
+   - **Step 2 — UX & Onboarding Refinement**: Redesign the dashboard with guided strategy wizards, portfolio summaries, and in-app education to make DeFi onboarding seamless for newcomers.
+   - **Step 3 — Data-Driven Strategy Enhancements**: Leverage live performance metrics and user feedback to upgrade the Investment Decision Engine with A/B-tested rebalancing rules and risk scoring.
+   - **Progressively decentralised & zk-secured architecture**: Eliminate remaining centralisation points by moving the engine on-chain with **zk-SNARK-verified** instructions, introducing DAO governance, issuing **ERC-721 position NFTs**, and enabling event-driven notifications.  Collectively these upgrades remove the "No zkProof Validations" and "No Position NFTs / Share Tokens" limitations and pave the way for a permissionless LiquiDOT v2.
+
 - Any plans for seeking additional funding (other grants, VC funding, etc.)
-- (Theo Yap)
+- - **Strategic Funding Roadmap**: After delivering the MVP we will actively pursue larger capital injections to accelerate growth.  Our next steps include:
+      1. **Polkadot & Web3 Foundation Grants** – submit follow-up proposals to the Web3 Foundation's Web3 Grants Program and the Fast-Grants bounty, and prepare a Treasury spend proposal to the on-chain Polkadot Treasury.
+      2. **Moonbeam Ecosystem Grants** – apply for the Moonbeam Ecosystem Grant once cross-chain functionality is proven to extend coverage to additional DEXes on Moonbeam.
+      3. **VC Seed Round** – engage Polkadot-focused funds such as Scytale Digital and Harbour Capital to raise a seed round that will finance security audits, liquidity incentives, and team expansion.
+      4. **DeFi Infrastructure & Tooling Bounty** – once we have at least USD 5 M TVL and a live main-net deployment, apply for the DeFi Infrastructure bounty to scale backend monitoring and UX tooling.
+      These combined resources will provide 12-18 months of runway, allow us to reach > USD 10 M TVL, and position LiquiDOT as core liquidity middleware in the Polkadot ecosystem.
+
 - Your vision for the project's growth and impact in the Polkadot ecosystem
+
 - We see LiquiDOT growing into a core piece of DeFi infrastructure within the Polkadot ecosystem. As more and more parachains, DEXes, and assets come emerge, managing liquidity across them will only get more fragmented and time-consuming. Our goal is to solve that with a single, reliable platform that lets users automate their LP strategies, manage risk, and move seamlessly between chains. By integrating closely with Polkadot ecosystem, we aim to offer truly multichain liquidity management from day one. In the long run, we hope LiquiDOT can help lower the barrier to entry for new users, support better capital efficiency for experienced ones, and ultimately encourage deeper participation in Polkadot-based DeFi.
 
 ## ℹ️ Additional Information
