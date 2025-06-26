@@ -99,8 +99,8 @@ This section should break the development roadmap down into milestones and deliv
 | 0e. | Article | We will publish an **article**that explains what was done as part of the grant). |
 | 1. | Express backend that does proposal fetching | We will create an Express up, that is able to fetch proposals from OpenGov, and insert them into Notion |
 | 2. | Mimir integration | We will extend the Express app, to work together with Mimir, for batch voting |
-| 3. | OpenGov overlay | We will create an extension, so Notion is not needed, all actions can be done through OpenGov |
-| 4. | SQLite database | We will switch from Notion to an SQLite database. Most likely we will keep Notion as a legacy option |
+| 3. | SQLite database | We will switch from Notion to an SQLite database. Most likely we will keep Notion as a legacy option |
+| 4. | OpenGov overlay | We will create an extension, so Notion is not needed, all actions can be done through OpenGov |
 
 ### Budget Breakdown (Example, please adapt)
 
