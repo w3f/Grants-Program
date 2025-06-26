@@ -1,4 +1,4 @@
-# Voting Tool
+# OpenGov Voting Tool
 
 ## Project Overview
 
@@ -9,7 +9,7 @@ We have been using the Voting Tool in Decentralized Voices Program for Cohorts 3
 ### Project Details
 
 The project started as a Vercel app that generates an RSS feed from the proposals, that can be consumed by Notion.
-
+ 
 Later it was completely redesign into an Express app. **The app does the following**:
  - periodically checks OpenGov for new or updated proposals
  - inserts new proposals into Notion, or updates an existing proposal
@@ -26,7 +26,7 @@ These are the **external systems**, that we are interacting with:
  - Notion
  - CoinGecko
 
-A current limitation is, that the tool is tied to Notion, but if we would change the database to, for example, Postgres or MongoDB, then it wouldn't connect to Notion properly, and our DAO is using Notion extensively. We wouldn't want to use a second app for proposal management. There are multiple solutions here, one is to create an extension that will add an overlay above OpenGov, instead of Notion, so we wouldn't experience it as using one more app, or we could switch to a database like Postgres, develop a front end for the tool, and probably somehow bridge that to Notion, for communities that prefer Notion.  
+A current limitation is, that the tool is tied to Notion. In Milestone 2, we will switch to SQLite. That will make it possible to connect subsequent front ends as well. Most likely we will keep Notion as a legacy option for now.
 
 ### Ecosystem Fit
 
@@ -43,7 +43,7 @@ Similar tools in the ecosystem:
 
 - **Team Name:** Hungarian Polkadot DAO
 - **Contact Name:** Peter Ott
-- **Contact Email:** o.peter.33@tutanota.de
+- **Contact Email:** o.peter.33@tutanota.de  LESZ EMAIL CIMUNK
 - **Website:** https://polkadothungary.net/
 
 ### Team members
@@ -56,7 +56,7 @@ Similar tools in the ecosystem:
 
 ### Team Code Repos
 
-This is a DAO, that's main activity is not software development. We are part of Decentralized Voices Program 4. The tool was originally developed by Vonyi, and now it's mainly developed by me (Peter).
+This is a DAO, that's main activity is not software development. We are part of Decentralized Voices Cohort 4. The tool was originally developed by Vonyi, and now it's mainly developed by me (Peter).
 
 - https://github.com/ottpeter/
 - https://github.com/send4t/
@@ -65,7 +65,7 @@ This is a DAO, that's main activity is not software development. We are part of 
 
 Peter - Full Stack software developer with 4 years of professional development experience and 10 years in the cryptocurrency space, specializing in TypeScript applications. Previously won a price in the DAO Track at Polkadot Championship, demonstrating expertise in decentralized governance solutions. Has hands-on experience with decentralized technologies including IPFS and Swarm, combining deep blockchain knowledge with practical development skills.
 
-Our other team members are not software developers, Vonyi has high technical knowledge, for example, he started developing the original (Vercel) app, and he is maintaining polkadothungary.net. The other team members are very good at community building, Spectra created the Notion templates, which we are using to organize our activity within the DAO, Zsófi is working at PBA. We are the multi-talent team, and we experimented this tool on ourselves at first.
+Other team members include Vonyi who has deep technical knowledge, for example, he started developing the original (Vercel) app, and he is maintaining *polkadothungary.net*. The other team members are very good at community building, Spectra created the Notion templates, which we are using to organize our activity within the DAO, Zsófi is working at PBA. We are the multi-talent team, and we experimented this tool on ourselves at first.
 
 ## Development Status
 
@@ -79,7 +79,7 @@ There is a forum discussion about this tool, it can be found here: https://forum
 
 **Milestone 1**: (done) Possible to fetch proposals from OpenGov, possible to cast votes to Mimir, and the app will update the status of the proposal in Notion
 
-**Milestone 2**: TODO OpenGov overlay, or Telegram bot, etc
+**Milestone 2**: OpenGov overlay exists, it is using an SQLite database, instead of Notion
 
 
 This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected. Below, we provide an **example milestone** with mandatory (0a to 0e) and example deliverables. 
@@ -94,13 +94,13 @@ This section should break the development roadmap down into milestones and deliv
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can start using the tool |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#testing-guide) for details. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Integration tests will be also implemented, to test external services for API change or other error. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**that explains what was done as part of the grant). |
 | 1. | Express backend that does proposal fetching | We will create an Express up, that is able to fetch proposals from OpenGov, and insert them into Notion |
 | 2. | Mimir integration | We will extend the Express app, to work together with Mimir, for batch voting |
-| 3. | Telegram? | We will create a Telegram integration, so users can handle referendas through Telegram |
-| 4. | OpenGov overlay? | We will create an extension, so Notion is not needed, all actions can be done through OpenGov |
+| 3. | OpenGov overlay | We will create an extension, so Notion is not needed, all actions can be done through OpenGov |
+| 4. | SQLite database | We will switch from Notion to an SQLite database. Most likely we will keep Notion as a legacy option |
 
 ### Budget Breakdown (Example, please adapt)
 
@@ -113,11 +113,9 @@ This section should break the development roadmap down into milestones and deliv
 
 ## Future Plans
 
-Please include here
+We will maintain this tool, as we are using it ourselves as well, so small improvements will continuously happen.
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+We will probably add other front ends, apart from the OpenGov overlay, as the app now has an SQLite database, to which we can connect from other front ends as well.
 
 ## Additional Information
 
