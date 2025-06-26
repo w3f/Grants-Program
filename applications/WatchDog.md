@@ -191,6 +191,8 @@ Post-grant approval
 
 **Project details page** Indepth detials on grant
  ![image](https://github.com/user-attachments/assets/0c161026-077a-4d27-8508-d83996d85090) 
+table view
+![image](https://github.com/user-attachments/assets/0045398c-7b6f-4786-8f2c-e52803ff166e)
 
  **Grant Control Page**
 
