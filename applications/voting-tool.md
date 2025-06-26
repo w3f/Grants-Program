@@ -35,9 +35,9 @@ We originally developed this tool to ourselves, because before this, voting on p
 Our target audience is mainly small or recently created DAOs, together with the Notion templates that Spectra created, this forms a starter pack. We handed over this starter pack to 7 DAOs in a regional gathering, in Warsaw. To our knowledge, one of them, Bohemia Fam, aka the Czechish DAO has actively adopted the tool and continues to use it.
 
 Similar tools in the ecosystem: 
- - Permanence DAO’s Telegram bot: Their Telegram bot handles proposal evaluation via Telegram. It uses AI to summarize comments. It does not do batch voting.
- - ChaosDAO’s Discord bot: TODO
- - Trustless Core’s Google Sheets: requires many manual actions, compared to our solution.
+ - *Permanence DAO’s Telegram bot*: Their Telegram bot handles proposal evaluation via Telegram. It uses AI to summarize comments. It does not do batch voting.
+ - *ChaosDAO’s Discord bot*: ChaosDAO works perfect for bigger DAOs with 20+ members with social trust between them. But the owner of Discord server can do force vote. Our tool due to nature of Notion also allows this but the votes are casted from a proxy controlled by a multisig. So even if someone force submits a vote the multisig members can decide to reject it.
+ - *Trustless Core’s Google Sheets*: requires many manual actions, compared to our solution.
 
 ## Team
 
@@ -79,10 +79,7 @@ There is a forum discussion about this tool, it can be found here: https://forum
 
 **Milestone 1**: (done) Possible to fetch proposals from OpenGov, possible to cast votes to Mimir, and the app will update the status of the proposal in Notion
 
-**Milestone 2**: OpenGov overlay exists, it is using an SQLite database, instead of Notion
-
-
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected. Below, we provide an **example milestone** with mandatory (0a to 0e) and example deliverables. 
+**Milestone 2**: OpenGov overlay exists, it is using an SQLite database, instead of Notion. All the functionalities work that used to work with the Notion-version.
 
 ### Overview
 
