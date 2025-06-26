@@ -173,9 +173,10 @@ Technical and architectural planning is ongoing, with public code repositories t
 | 2.     | Wallet Integration        | Frontend integration with Talisman and SubWallet via Polkadot.js API, enabling users to preview transactions and view risk/fee alerts in a Next.js UI.                                                                                                               |
 | 3.     | SDK/APIs                  | A modular JavaScript SDK with APIs for dApps/wallets to integrate TxSim’s simulation, fee estimation, and risk detection features.                                                                                                                                   |
 
-![Image](https://github.com/user-attachments/assets/05e18f23-9ab6-476f-808c-56c234223ad9)
+![image](https://github.com/user-attachments/assets/15d4eb82-6de7-49e1-8a96-cfaf9e055113)
+![image](https://github.com/user-attachments/assets/41a13e18-112f-4b09-a659-8b6b165b5360)
 
-![Image](https://github.com/user-attachments/assets/ce118f31-924b-4e9b-8d87-36da29304001)
+
 
 ---
 
