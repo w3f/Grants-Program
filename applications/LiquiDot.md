@@ -378,9 +378,12 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 
 ## 📊 Development Status
 
-If you've already started implementing your project, please provide a link and a description of the code. Otherwise, please provide some documentation on the research and other work you have conducted before applying.
 
-(Remention from project details)
+[Current Repo](https://github.com/gabikreal1/PolkadotHack2025)
+
+LiquiDOT is currently in an early proof-of-concept phase. The repository contains draft Solidity contracts (Vault, XCM Proxy, Router) that compile and deploy on a local Hardhat network but still need significant security reviews, gas optimisation, and real XCM wiring. A lightweight NestJS service and a wire-frame Next.js dashboard demonstrate the intended deposit → invest → monitor flow, yet most business logic and cross-chain integrations are stubbed out.
+
+The next milestones focus on hardening the contracts, implementing genuine cross-chain calls, expanding the unit-test suite, and upgrading the UI/UX from prototype to production quality. These steps will turn the concept into a robust cross-chain liquidity manager.
 
 ## 📅 Development Roadmap
 
@@ -422,8 +425,7 @@ Please provide a breakdown of your budget by milestone:
 
 - How you intend to continue development after the Fast-Grant
 
-   
-   - **Step 1 — Multi-Parachain Expansion**: Integrate Hydration on Moonriver and add additional parachain DEXes via XCM, growing LiquiDOT's coverage beyond Moonbeam.
+   - **Step 1 — Multi-Parachain Expansion**: Integrate Hydration and add additional parachain DEXes via XCM, growing LiquiDOT's coverage beyond Moonbeam.
    - **Step 2 — UX & Onboarding Refinement**: Redesign the dashboard with guided strategy wizards, portfolio summaries, and in-app education to make DeFi onboarding seamless for newcomers.
    - **Step 3 — Data-Driven Strategy Enhancements**: Leverage live performance metrics and user feedback to upgrade the Investment Decision Engine with A/B-tested rebalancing rules and risk scoring.
    - **Progressively decentralised & zk-secured architecture**: Eliminate remaining centralisation points by moving the engine on-chain with **zk-SNARK-verified** instructions, introducing DAO governance, issuing **ERC-721 position NFTs**, and enabling event-driven notifications.  Collectively these upgrades remove the "No zkProof Validations" and "No Position NFTs / Share Tokens" limitations and pave the way for a permissionless LiquiDOT v2.
@@ -440,11 +442,5 @@ Please provide a breakdown of your budget by milestone:
 
 - We see LiquiDOT growing into a core piece of DeFi infrastructure within the Polkadot ecosystem. As more and more parachains, DEXes, and assets come emerge, managing liquidity across them will only get more fragmented and time-consuming. Our goal is to solve that with a single, reliable platform that lets users automate their LP strategies, manage risk, and move seamlessly between chains. By integrating closely with Polkadot ecosystem, we aim to offer truly multichain liquidity management from day one. In the long run, we hope LiquiDOT can help lower the barrier to entry for new users, support better capital efficiency for experienced ones, and ultimately encourage deeper participation in Polkadot-based DeFi.
 
-## ℹ️ Additional Information
 
-Here you can add any additional information that you think is relevant to this application, such as:
 
-- Work you have already done (Remention with claude) 
-- Other funding you may have applied for (Maybe mention Moonbeam)
-
-Remember that the Fast-Grants Programme is designed as a first step for promising projects. We're looking for projects that can continue to grow beyond this initial funding.
