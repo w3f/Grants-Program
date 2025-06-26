@@ -24,12 +24,15 @@ WatchDog is a lightweight, GitHub-integrated, web-based monitoring platform that
   Real-time updates on significant milestones and deliverables with automated GitHub integration, allowing grantees to add context to project updates and share relevant resources.
 
  - **Verifiable records** Milestone attestations are hashed and anchored on-chain, creating immutable and verifiable records using a Substrate pallet.
- - 
+   
 - **Administrative Dashboard**  
   Comprehensive overview combining high-level statistics on active grants, completion rates, and ecosystem health for administrative evaluation.
 
 - **Risk Detection & Analytics**  
   ML algorithms to identify early signs of delays and inactivity (e.g., no commits in X days), with risk flags, comparative analysis, and workflow optimization.
+
+- **Auto Review Feedback**  
+An automated review feature provides initial feedback to applicants, identifying missing details or inconsistencies in submitted proposals before manual review.
 
 ### Community & Transparency Features
 
@@ -145,7 +148,7 @@ Post-grant approval
 
 ## Milestone 1 — Frontend Dashboard MVP
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 2 Weeks
 - **FTE:** 1
 - **Costs:** 3,000 USD
 
@@ -164,7 +167,7 @@ Post-grant approval
 
 ## Milestone 2 — Backend & GitHub Sync
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 1.2 month
 - **FTE:** 2
 - **Costs:** 7,000 USD
 
@@ -182,27 +185,29 @@ Post-grant approval
 
 ### MVP Pages
 
-**Project list page**
+**Project list & Recent updates page**
+![image](https://github.com/user-attachments/assets/1aac1b30-5fc4-4d1f-a84e-32e223ea4493)
 
-![Image](https://github.com/user-attachments/assets/77b12a31-4fd5-4df2-bbae-cd37d77c5208)
-
-![Image](https://github.com/user-attachments/assets/572e8f70-893d-4160-9aaf-d68e21ddaca5)
 
 **Project details page** Indepth detials on grant
-![Image](https://github.com/user-attachments/assets/6c519cf7-60e2-4a99-b45d-e2d556c85b1f)
+ ![image](https://github.com/user-attachments/assets/0c161026-077a-4d27-8508-d83996d85090) 
+
+ **Grant Control Page**
+
+ ![image](https://github.com/user-attachments/assets/0dc2f168-4783-4362-a848-144c59571a16)
 
 ### Post MVP Pages
 
-**Grant Control Page**
 
-![Image](https://github.com/user-attachments/assets/2ba6b795-0651-4c1b-9e7a-1191a83de819)
+**Admin Organizational Grant Details**
+ ![image](https://github.com/user-attachments/assets/69ffe990-a011-41b6-b54f-42daabcc40f2)
 
-**Organizational Grant Details**
-![Image](https://github.com/user-attachments/assets/1fb23c0f-9a32-4842-b1d8-7017d77dc68e)
+**Admin Vote**
+![image](https://github.com/user-attachments/assets/1d857304-9445-49e1-a7fc-45808e4921c5)
 
-**Admin Page**
+**Ai Grant Review** Provide preliminary feedback for applicants regarding missing details and fit in proposals
+![image](https://github.com/user-attachments/assets/f5e5be04-4a78-445c-98f3-e616f1e1ca3d)
 
-![Image](https://github.com/user-attachments/assets/881847cc-9310-41cd-abba-6d9991d852aa)
 
 ## Future
 
