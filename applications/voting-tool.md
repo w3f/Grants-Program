@@ -117,6 +117,8 @@ We will maintain this tool, as we are using it ourselves as well, so small impro
 
 We will probably add other front ends, apart from the OpenGov overlay, as the app now has an SQLite database, to which we can connect from other front ends as well.
 
+If API structure will change do to the upcoming AssetHub migration, we will follow that, and we will adjust the software to be in sync with the new API / API response.
+
 ## Additional Information
 
 Together with Vonyi, we got 500-500 USD from PIF, for the early stages of the development.
