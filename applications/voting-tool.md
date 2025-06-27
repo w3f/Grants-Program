@@ -43,12 +43,12 @@ Similar tools in the ecosystem:
 
 - **Team Name:** Hungarian Polkadot DAO
 - **Contact Name:** Peter Ott
-- **Contact Email:** o.peter.33@tutanota.de  LESZ EMAIL CIMUNK
+- **Contact Email:** o.peter.33@tutanota.de
 - **Website:** https://polkadothungary.net/
 
 ### Team members
  - Peter Ott
- - [Vonyi]
+ - Vonyi
 
 #### LinkedIn Profiles (if available)
 
@@ -72,8 +72,6 @@ Other team members include Vonyi who has deep technical knowledge, for example, 
 The MVP is ready, it can be found here: https://github.com/ZelmaCorp/VotingTool
 
 There is a forum discussion about this tool, it can be found here: https://forum.polkadot.network/t/status-update-on-the-development-of-a-notion-based-voting-tool-for-emerging-communities-and-smaller-daos-active-in-opengov/13469/1
-
-[probably insert flowchart here]
 
 ## Development Roadmap
 
