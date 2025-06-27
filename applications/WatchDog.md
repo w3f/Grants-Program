@@ -187,12 +187,14 @@ Post-grant approval
 
 **Project list & Recent updates page**
 ![image](https://github.com/user-attachments/assets/1aac1b30-5fc4-4d1f-a84e-32e223ea4493)
-
-
-**Project details page** Indepth detials on grant
- ![image](https://github.com/user-attachments/assets/0c161026-077a-4d27-8508-d83996d85090) 
 table view
 ![image](https://github.com/user-attachments/assets/0045398c-7b6f-4786-8f2c-e52803ff166e)
+
+**Project details Page** Indepth detials on grant
+ ![image](https://github.com/user-attachments/assets/0c161026-077a-4d27-8508-d83996d85090) 
+ 
+**Organization Details Page**
+![image](https://github.com/user-attachments/assets/27a09e82-3124-4015-89f7-87fc3e9e76fe)
 
  **Grant Control Page**
 
