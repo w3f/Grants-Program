@@ -104,58 +104,61 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  2 (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** 30000 USD (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
+- **Total Costs:** 30000 USD
 - **DOT %:** 100%
 
-### Milestone 1  — Core Game Engine (Fantasy League + Draft System)
+### Milestone 1 — Core Game Engine (Fantasy League + Draft System)
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
+- **Estimated duration:** 1 month  
+- **FTE:** 2  
 - **Costs:** 10,000 USD
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License |  MIT   |
-| **0b.** | Documentation | Inline code docs and a beginner tutorial explaining how to start a mock fantasy league with the API. |
-| **0c.** | Testing and Testing Guide | 90%+ unit test coverage on core game logic: team creation, league joining, draft logic. Test suite included with setup steps. |
-| **0d.** | Docker | Dockerfile + docker-compose to spin up game engine with DB and API. |
-|1.	|League Engine	Backend service (TypeScript, Node.js) that supports league creation, round-robin scheduling, user management, and team slot assignment.
-|2.	|Snake Draft Module	Draft logic with randomized order and stateful progression. Stores pick history and team rosters in PostgreSQL.
-|3.	|REST API	Endpoints for creating leagues, joining teams, triggering and progressing through the draft. Swagger/OpenAPI documentation included.
+| Number  | Deliverable           | Specification                                                                                                         |
+| -------:| --------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License               | MIT                                                                                                                   |
+| **0b.** | Documentation         | Inline code docs and a beginner tutorial explaining how to start a mock fantasy league with the API.                  |
+| **0c.** | Testing & Test Guide  | ≥ 90% unit-test coverage on core game logic: team creation, league joining, draft logic. Includes setup instructions. |
+| **0d.** | Docker                | Dockerfile + docker-compose to spin up the game engine with DB and API.                                               |
+| **1.**  | League Engine         | Backend service (TypeScript, Node.js) supporting league creation, round-robin scheduling, user management, team slots. |
+| **2.**  | Snake Draft Module    | Draft logic with randomized order and stateful progression; stores pick history and rosters in PostgreSQL.            |
+| **3.**  | REST API              | Endpoints for creating leagues, joining teams, and driving the draft. Swagger/OpenAPI docs included.                 |
 
 ### Milestone 2 Scoring Engine & Match Simulation
 
-- **Estimated Duration:** 1 month
-- **FTE:**  2
-- **Costs:** 10,000 USD
+- **Estimated Duration:** 1 month  
+- **FTE:** 2  
+- **Costs:** 10,000 USD  
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License |  MIT   |
-| **0b.** | Documentation |Scoring engine setup guide + architecture diagram.|
-| **0c.** | Testing and Testing Guide |Full test coverage for scoring logic functions: volatility, price change, Sharpe ratio, momentum.|
-| **0d.** | Docker | Standalone container for scoring engine with mocked market data.|
-|1.|Scoring Engine	TypeScript service that computes match results using proprietary scoring algorithm. Listens for match start events using PG Boss.|
-|2.|Match Cycle Simulation	Auto-match flow runs every 3 hours, pulling latest mock crypto prices and processing team scores.|
-|3.|Stats Recording	Writes match results and individual coin performance into a persistent database. Prepares for Polkadot integration.|
+| Number  | Deliverable              | Specification                                                                                                             |
+| ------: | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                  | MIT                                                                                                                       |
+| **0b.** | Documentation            | Scoring engine setup guide + architecture diagram.                                                                        |
+| **0c.** | Testing and Test Guide   | Full test coverage for scoring logic functions: volatility, price change, Sharpe ratio, momentum.                         |
+| **0d.** | Docker                   | Standalone container for scoring engine with mocked market data.                                                          |
+| **1.**  | Scoring Engine           | TypeScript service that computes match results using proprietary scoring algorithm. Listens for match-start events via PG Boss. |
+| **2.**  | Match Cycle Simulation   | Auto-match flow runs every 3 hours, pulls latest mock crypto prices, and processes team scores.                             |
+| **3.**  | Stats Recording          | Writes match results and individual coin performance into a persistent database. Prepares for Polkadot integration.       |
 
-### Milestone 3 Polkadot Integration + Frontend Dashboard
+### Milestone 3 — Polkadot Integration + Frontend Dashboard
 
-- **Estimated Duration:** 1 month
-- **FTE:**  2
-- **Costs:** 10,000 USD
+- **Estimated Duration:** 1 month  
+- **FTE:** 2  
+- **Costs:** 10,000 USD  
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License |  MIT   |
-| **0b.** | Documentation |Docs on interacting with chain + user guide for app.|
-| **0c.** | Testing and Testing Guide |End-to-end tests for chain interaction and frontend UI.|
-| **0d.** | Docker | Full-stack Docker bundle to launch backend + frontend + scoring engine.|
-|1.	|ink! Smart Contract Stub	A smart contract to record match hashes, basic metadata, and checksum. This sets stage for token rewards.|
-|2.	|React Frontend	Lightweight frontend (React + Tailwind) showing league lobby, teams, match stats.|
-|3.	|Chain Submission Script	Service to submit match results to Polkadot chain. Uses Polkadot.js API.|
-|4.	|Deployment	Deploy on mainnet.|
-| **0e.** |Article | Publish a DevPost blog titled “Turning Crypto Markets into Fantasy Sports: Building on Polkadot with CoinFantasy” highlighting architecture, ecosystem fit, and public benefit.|
+| Number  | Deliverable                 | Specification                                                                                                                                                |
+| -------:| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **0a.** | License                     | MIT                                                                                                                                                          |
+| **0b.** | Documentation               | Docs on interacting with the chain + user guide for the app                                                                                                 |
+| **0c.** | Testing & Test Guide        | End-to-end tests covering chain interaction and frontend UI                                                                                                  |
+| **0d.** | Docker                      | Full-stack Docker bundle to launch backend + frontend + scoring engine                                                                                       |
+| **1.**  | ink! Smart Contract Stub    | Contract to record match hashes, metadata, and checksums—lays groundwork for token rewards                                                                   |
+| **2.**  | React Frontend              | Lightweight React + Tailwind UI showing league lobby, teams, and match stats                                                                                 |
+| **3.**  | Chain Submission Script     | Service using Polkadot.js API to submit match results on-chain                                                                                               |
+| **4.**  | Deployment                  | Deploy contracts and frontend to Polkadot mainnet                                                                                                           |
+| **0e.** | Article                     | Publish a DevPost blog titled “Turning Crypto Markets into Fantasy Sports: Building on Polkadot with CoinFantasy,” highlighting architecture & public benefit |
+
+
+
 
 
 ## Future Plans
