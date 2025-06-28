@@ -2,9 +2,9 @@
 
 - **Team Name:** Linkora Development Team
 - **Payment Details:**
-  - **DOT**: 1AhqF8fFZzQvKtEYq6nwbKZN3sxVHUxNHVGwJK5rUz1EGGm1 
-  - **Payment**: 1AhqF8fFZzQvKtEYq6nwbKZN3sxVHUxNHVGwJK5rUz1EGGm1 (USDC)
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
+  - **DOT**: 12RVB4nCrecAmjhKrfM4gbvMLKrU1WAoDvkm1n7C1EDppfnk 
+  - **Payment**: 12RVB4nCrecAmjhKrfM4gbvMLKrU1WAoDvkm1n7C1EDppfnk (USDC)
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
