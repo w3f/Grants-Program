@@ -201,7 +201,7 @@ Both contracts work in tandem through a carefully orchestrated flow optimized fo
 Our architecture ensures **security** (funds custodied on Asset Hub), **user accessibility** (asymmetric percentage-based controls), **mathematical precision** (automated tick conversion), and **scalability** (easy addition of new parachains)
 
 ### We have developed minmal PoC
-  [Our Github Project link](https://github.com/gabikreal1/PolkadotHack2025)
+  [Our Github Project link](https://github.com/gabikreal1/LiquiDOT)
 ### Our Demo of the Frontend UI 
   [Video to the Demo](https://www.youtube.com/watch?v=9bX0Up0pLww&feature=youtu.be)
 
@@ -360,7 +360,7 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 - [Fedir Maliarenko (Telegram) ](t.me/fyodortg)
 
 ### Team Code Repos
-- [Liquidot Repository](https://github.com/gabikreal1/PolkadotHack2025)
+- [Liquidot Repository](https://github.com/gabikreal1/LiquiDOT)
 
 ### GitHub accounts of all team members
 - [Rashad Hosseini](https://github.com/rashad-h)
@@ -379,7 +379,7 @@ Please list the legal name of all grant beneficiaries. Solo developers (1-person
 ## 📊 Development Status
 
 
-[Current Repo](https://github.com/gabikreal1/PolkadotHack2025)
+[Current Repo](https://github.com/gabikreal1/LiquiDOT)
 
 LiquiDOT is currently in an early proof-of-concept phase. The repository contains draft Solidity contracts (Vault, XCM Proxy, Router) that compile and deploy on a local Hardhat network but still need significant security reviews, gas optimisation, and real XCM wiring. A lightweight NestJS service and a wire-frame Next.js dashboard demonstrate the intended deposit → invest → monitor flow, yet most business logic and cross-chain integrations are stubbed out.
 
