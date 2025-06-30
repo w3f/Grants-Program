@@ -68,7 +68,8 @@ The curators have deep, sector-specific experience across the Polkadot and build
 
 - 🧩 [Otar Shakarishvili](https://www.linkedin.com/in/otarshakarishvili/) (Project Advisor and Governance Specialist at JUST Open Source, ex-Parity Project Manager)
 - 🔗 [Sacha Lansky](https://www.linkedin.com/in/alexander-sacha-lansky/) (Developer Relations at WebZero, ex-Parity Engineering)
-- 🌐 [Flavio Bianchi](https://www.linkedin.com/in/flbi/) (Polimec Foundation Council Member, Polimec Marketing and BD)
+- 🌐 [Nikos Kontakis](https://www.linkedin.com/in/nikolaoskontakis/) (Lead Engineer, Polkadot Blockchain Academy)
+- 🌐 [Filip Filipovic](https://www.linkedin.com/in/filip-m-filipovic-68825033/) (Developer Relations and Council Member, NFT Mozaic)
 - 🏫 [Phil Kwok](https://linkedin.com/in/philip-k-building) (Co-Founder of EasyA and the EasyA x Polkadot University)
 - 🏫 [Dom Kwok](https://www.linkedin.com/in/dom-k-b73381100/) (Co-Founder of EasyA and the EasyA x Polkadot University)
 
