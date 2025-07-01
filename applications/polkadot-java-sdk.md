@@ -1,6 +1,4 @@
-# Name of your Project
-
-**Polkadot Java SDK**
+# Polkadot Java SDK
 
 ## Project Overview
 
