@@ -190,7 +190,7 @@ The roadmap below is structured into 2 milestones spanning a total of 2 months. 
 
 ### Milestone 1 — Protocol Design & Simulation
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 3 months
 - **FTE:**  2
 - **Costs:** 30,000 USD
 
@@ -204,6 +204,7 @@ The roadmap below is structured into 2 milestones spanning a total of 2 months. 
 | 1. | CognideX Protocol Design Paper | A detailed design document (approx. 20-30 pages) outlining the finalized protocol. This is essentially an expanded whitepaper focusing on implementation details. It will cover: Substrate Pallet design (storage items, extrinsics, events), Data Quality Pipeline workflow (with flowcharts of off-chain vs on-chain interactions), CGDX token mechanics (reward formula, staking and governance processes), and privacy measures. We will highlight how the design leverages Substrate and Polkadot features. This document will be written in a research-oriented style, including rationale for design choices and potential alternatives considered. |
 | 2. | Simulation Results | We will develop a simulation or prototype to validate key aspects of the design. Specifically: (a) a data quality & reward simulation – a script that simulates multiple data contributors with varying data quality, applies our reward formula, and shows the distribution of rewards and effects of the early-bonus mechanism; (b) a governance scenario simulation – illustrating how a proposed change (e.g., modifying quality scoring parameters) would be voted on and enacted via token governance. The simulations may be done in Python or as a simplified Rust runtime test. We will provide results (graphs or tables) and an analysis in a short report. This will demonstrate that our incentive model is sound (e.g., no obvious exploits or unfair outcomes in simulation) and that governance is feasible (e.g., token-weighted voting behaves as expected). |
 | 3. | Preliminary Insight GPT Integration Plan | Since this milestone is mostly design, we will also deliver a plan/spec for integrating the AI assistant with the blockchain. This will describe how queries will be handled in the future (e.g., Insight GPT querying the on-chain index of data pools to know what data is available, then retrieving data from off-chain storage). We will also define APIs or data formats for communication between the on-chain part and the off-chain AI engine. This plan ensures that our blockchain design will accommodate the AI component smoothly in the next milestone. |
+| 4. | End to End Platform Deployment | We will integrate and deploy all aforementioned components into the CognideX platform which will be accessible via the web portal and will be fully functional. We will define and add monitoring components which will be used against failures and ensure that the platform is running at all times with incident reporting. This will also allow us to develop a Standard Operating Procedure (SOP) to ensure smooth operations at all times. |
 
 **Achievement Criteria for Milestone 1:** 
 - W3F should be able to read our design paper and see a clear, well-argued approach for each component of CognideX. The simulation code and results should demonstrate the viability of our incentive model (e.g., show that a contributor with, say, 80% quality gets higher reward than one with 50%, and that early contributors get the intended bonus). 
