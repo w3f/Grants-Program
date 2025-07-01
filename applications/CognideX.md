@@ -12,6 +12,7 @@
 
 ### Overview
 
+![CognideX Screen Shot](https://github.com/Decentralized-Data-Marketplace/CognideX-Documentation/blob/main/images/cgdx-screenshot.png)
 **Tagline:** CognideX is a blockchain and AI-powered decentralized data marketplace. 
 
 **Project Description:** CognideX enables individuals to monetize their data and enterprises to access high-quality, multi-source datasets with AI-driven insights. By leveraging blockchain for trust and transparency and AI for intelligent analytics, the platform transforms raw data into actionable knowledge. CognideX maintains an immutable on-chain record of data contributions and usage, ensuring end-to-end transparency and provenance for all data exchanges. CognideX also issues a Data Watermark over every dataset to ensure data ownership and prevent fraudulent resale. On top of this, an AI assistant D-GPT (Data-GPT) can optimize search over 22,000 datasets and our newest addition, I-GPT (Insight-GPT) delivers aggregated answers or visualizations, so users gain insights rather than just raw data. 
@@ -33,6 +34,8 @@
 - **Data Watermark (On-Chain Layer):** Every dataset is watermarked using our proprietary technology which produces an "invisible" hash inside each dataset that can be verified on-chain via the CognideX platform. This promotes ownership as each watermark hash is bound to a specific dataset for a given user. This embedding is randomized and is verifiable in case of fraudulent resale which ensures that user data inside CognideX truly belongs to the owners of that data i.e., Data Contributors.
 
 - **Data GPT (AI Assistant):** Data GPT is the AI-powered query engine and user interface of CognideX. It is a conversational assistant that allows users to ask natural language questions and receive answers derived from the pooled datasets. Data GPT uses retrieval augmented generation and large language models to interpret user queries and automatically retrieve or aggregate data from relevant datasets on CognideX. 
+
+![CognideX Smart Assistant use cases](https://github.com/Decentralized-Data-Marketplace/CognideX-Documentation/blob/main/images/CognideX-Smart-Assistant-use-cases.png)
 
 - **Insight GPT (AI Assistant):** Insight GPT is the AI-powered query engine and user interface of CognideX. It is a conversational assistant that allows users to ask natural language questions and receive analytics derived from the pooled datasets. Internally, Insight GPT uses large-scale natural language processing and machine learning models to interpret user queries and automatically retrieve or aggregate data from relevant datasets on CognideX. Instead of forcing users to manually find and purchase raw data, the assistant can perform on-demand analysis across multiple data sources and provide the results directly (e.g. summary statistics, charts, or insights). This dramatically lowers the barrier for non-technical users to benefit from the data marketplace – they obtain knowledge and answers, not just files. The AI layer is also used behind the scenes in the data pipeline: it assists in data comparison and anomaly detection as well. Through this dual role, AI ensures the marketplace only hosts high-quality data and makes that data immediately useful to consumers. All AI-driven decisions that affect on-chain outcomes (like data acceptance or reward calculations) are logged and auditable against the blockchain’s records for accountability.
 
@@ -111,8 +114,8 @@ In summary, CognideX fits into the Polkadot ecosystem as a data/AI service parac
 
 ### Legal Structure
 
-- **Registered Address:** N/A (The project is currently an academic/independent research initiative and not yet incorporated. We plan to establish a legal entity in the near future as the project progresses.)
-- **Registered Legal Entity:** N/A (no registered company at this time)
+- **Registered Address:** 1 Business Link, #04-02 Biz 2, Singapore 117592
+- **Registered Legal Entity:** 1 Business Link, #04-02 Biz 2, Singapore 117592
 
 ### Team's experience
 
@@ -140,8 +143,8 @@ We will also invite community collaboration on our repo and document our progres
 ### Team LinkedIn Profiles
 
 - Bhargav Sagiraju – https://www.linkedin.com/in/bhargav-sagiraju/
-- Soumya Haridas – https://www.linkedin.com/in/soumya-haridas/
 - James Pang – https://www.linkedin.com/in/james-yan-pang-257a6311/
+- Soumya Haridas – https://www.linkedin.com/in/soumya-haridas/
 
 
 ## Development Status :open_book:
