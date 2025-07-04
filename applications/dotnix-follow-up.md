@@ -1,8 +1,8 @@
 # Dotnix
 
-- **Team Name:** Sporyon Technologies OÜ
+- **Team Name:** Sporyon Systems KLG
 
-- **Payment Address-sporyon:** Fiat 25.03.2024, 15:18
+- **Payment Address-sporyon:** Fiat 04.07.2025, 12:55
 - **DOT-sporyon:** 1Z765yAFnVpzYT7Vk2wKaePoP1YGdYQ5yUw3nVEyu2DYju8
 - **DOT-tv:** 1Qtup4rW7TCCryMTH6UB7Fx2cN8ntbNyYVhbjRZiHP7skXQ
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -107,8 +107,8 @@ Our primary focus is on the DotSama community that seeks a way to deploy hardene
 
 ### Legal Structure
 
-- **Registered Address:** **Harju maakond, Tallinn, Kesklinna linnaosa, Narva mnt 7-652, 10117**
-- **Registered Legal Entity:** **SPORYON Technologies OÜ**
+- **Registered Address:** **Kesselhaldenstr 06, 9016 St. Gallen Schweiz**
+- **Registered Legal Entity:** **SPORYON Systems KLG**
 
 ### Team's experience
 
