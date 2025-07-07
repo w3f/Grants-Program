@@ -22,10 +22,11 @@ Our team is passionate about leveraging blockchain technology to solve real-worl
 ### 🔍 Project Details
 
 **Technology Stack:**
-- **Blockchain**: 
+- **Blockchain**:
   - Polkadot/Substrate framework
   - Smart Contracts: Ink! (Rust-based for Polkadot)
   - WASM for smart contract compilation
+  - Polkadot-API (PAPI) for blockchain interactions
 - **Frontend**: 
   - Web: React.js, TypeScript, Tailwind CSS
   - Mobile: React Native for cross-platform app development
@@ -149,13 +150,13 @@ Please also provide the GitHub accounts of all team members:
 
 Our team has experience in blockchain development across multiple projects:
 
-1. **Blockchain-Based Distributed Solar Forecasting System** at ISA Solarthon - Developed a solution that utilized blockchain technology to create a decentralized network for solar energy forecasting, improving grid management for renewable energy integration.
+1. **Blockchain-Based Distributed Solar Forecasting System** at ISA Solarthon (https://isa.int/solarthon) - Developed a solution that utilized blockchain technology to create a decentralized network for solar energy forecasting, improving grid management for renewable energy integration.
 
 2. **ChainPay** (https://chainpay-agoric.netlify.app) - A blockchain-based payment system that demonstrates our ability to create secure financial applications on distributed ledger technology.
 
 3. **EducateFi** (https://github.com/kunal-drall/EducateFi) - An educational finance platform utilizing blockchain for transparent and efficient learning resource management.
 
-4. **CuraChain UI** (https://github.com/kunal-drall/curachain_ui) - A blockchain healthcare interface showcasing our front-end development capabilities for complex applications.
+4. **CuraChain UI** (https://github.com/kunal-drall/curachain , https://github.com/kunal-drall/curachain_ui) - A blockchain healthcare interface showcasing our front-end development capabilities for complex applications.
 
 These projects demonstrate our technical expertise in blockchain development, UI/UX design, and working with complex systems - all skills directly applicable to building the PowerGrid Network.
 
@@ -190,7 +191,7 @@ The detailed research is documented in our whitepaper and research document, whi
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. We will implement test scenarios for smart contracts including device registration, grid events, and reward distribution. The testing guide will explain how to run these tests and validate system functionality. |
 | 0d. | Article | We will publish an **article** explaining PowerGrid Network's contribution to solving energy grid challenges using blockchain technology, highlighting the implementation on Polkadot and the advantages of this approach. |
 | 1. | Smart Contract Development | We will build the core smart contracts for PowerGrid Network:<br>- **Resource Registry Contract**: for device onboarding, staking, metadata, and performance scoring<br>- **Grid Service Contract**: for grid event triggering, opt-in tracking, energy flexibility scoring, and reward allocation<br>- **Token Contract ($PWGD)**: for minting, reward distribution, staking, and governance participation<br>- **Governance Contract**: for on-chain parameter updates, treasury control, and DAO voting<br>All contracts will be written in **Ink!**, deployed to a local **Substrate testnet**, and tested with comprehensive **unit and integration tests** to simulate grid events, participation, and token distribution. |
-| 2. | Web & Mobile App Development | We will develop full-featured frontend interfaces for users to interact with the on-chain system:<br>- **User Onboarding** and **Device Registration** connected to the Resource Registry contract<br>- **Energy Dashboard** displaying device stats and real-time recommendations from the AI engine<br>- **Grid Event Panel** to opt in to active grid events (triggering Grid Service Contract)<br>- **Wallet View** to display $PWGD rewards (linked to Token Contract)<br>- Web app will be built using **React.js**, **TypeScript**, and **TailwindCSS**; Mobile app using **React Native** for iOS/Android<br>- Both platforms will share a **smart contract integration layer** using **Polkadot.js API**, and will be tested with **Playwright** and **BrowserStack**. |
+| 2. | Smart Device Integration | We will integrate one real smart plug or Home-Assistant sensor to push live watt-hour data on-chain, demonstrating the physical-verification layer. This includes:<br>- **Device Integration**: Connect a smart plug (e.g., TP-Link Kasa) or Home-Assistant sensor to the Resource Registry Contract<br>- **Data Pipeline**: Develop a backend service (Node.js/Express) to collect real-time watt-hour data and submit it to the blockchain via **Polkadot-API (PAPI)**<br>- **On-Chain Verification**: Store device data (e.g., watt-hours, device ID) in the Resource Registry Contract and validate grid event participation through the Grid Service Contract<br>- **Testing**: Validate the integration with end-to-end tests simulating real-world device data flows, using tools like **Mocha/Chai** for backend testing and **PAPI** for blockchain interaction testing. |
 
 
 ### 💰 Budget Breakdown
@@ -198,7 +199,7 @@ The detailed research is documented in our whitepaper and research document, whi
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
 | 1 | Smart Contract Development | $5,000 | 2 Weeks |
-| 2 | Web & Mobile App Development | $5,000 | 6 weeks |
+| 2 | Smart Device Integration | $5,000 | 6 weeks |
 | **Total** | | **$10,000** | **2 months** |
 
 ## 🔮 Future Plans
