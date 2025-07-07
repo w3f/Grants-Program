@@ -2,9 +2,7 @@
 
 - **Team Name:** CognideX
 - **Payment Details:**
-  - **DOT**: N/A (requesting USDC)
-  - **Payment**: 
-  (In case of payment in **USDC**, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). In the case of **fiat** payment, please share your bank account privately with grants@web3.foundation via your contact email (see below) and list here the date and time of your email (e.g. Fiat 24.12.1971, 11:59).)
+  - **Address**: 1126M1fdZyqLkL9GaPNxEtwCv3ptsXeQ8opshXas6JmHXV9r (USDC)
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 
