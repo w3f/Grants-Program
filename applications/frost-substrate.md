@@ -514,11 +514,11 @@ FROST Protocol directly supports key Web3 Foundation priorities:
 
 ### Commitment to Open Source
 
-FROST Protocol will be fully open-source under Apache-2.0 license, encouraging community contribution and ecosystem growth. We commit to:
+FROST Protocol and `frost-substrate` will be fully open-source under Apache-2.0 license, encouraging community contribution and ecosystem growth. We commit to:
 
 - Transparent development process with regular updates
 - Community-driven feature development and roadmap
 - Comprehensive documentation and developer resources
 - Long-term maintenance and support
 
-We believe FROST Protocol represents a significant step forward in parachain interoperability, offering the performance, security, and developer experience needed to unlock the full potential of the Polkadot ecosystem.
+We believe `frost-substrate` represents a significant step forward in parachain interoperability, offering the performance, security, and developer experience needed to unlock the full potential of the Polkadot ecosystem.
