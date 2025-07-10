@@ -43,12 +43,12 @@ Similar tools in the ecosystem:
 
 - **Team Name:** Hungarian Polkadot DAO
 - **Contact Name:** Peter Ott
-- **Contact Email:** o.peter.33@tutanota.de
+- **Contact Email:** o.peter.33@tutanota.de  LESZ EMAIL CIMUNK
 - **Website:** https://polkadothungary.net/
 
 ### Team members
  - Peter Ott
- - Vonyi
+ - [Vonyi]
 
 #### LinkedIn Profiles (if available)
 
@@ -73,6 +73,8 @@ The MVP is ready, it can be found here: https://github.com/ZelmaCorp/VotingTool
 
 There is a forum discussion about this tool, it can be found here: https://forum.polkadot.network/t/status-update-on-the-development-of-a-notion-based-voting-tool-for-emerging-communities-and-smaller-daos-active-in-opengov/13469/1
 
+[probably insert flowchart here]
+
 ## Development Roadmap
 
 **Milestone 1**: (done) Possible to fetch proposals from OpenGov, possible to cast votes to Mimir, and the app will update the status of the proposal in Notion
@@ -81,9 +83,15 @@ There is a forum discussion about this tool, it can be found here: https://forum
 
 ### Overview
 
-- **Estimated Duration:** 1 month (excluding past work)
+- **Total Estimated Duration:** 2 month
 - **Full-Time Equivalent (FTE):**  2.5
 - **Total Costs:** 23,000 USD
+
+### Milestone 1: Notion updater and Mimir integration
+
+- **Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):**  1.25
+- **Total Costs:** 11,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -92,10 +100,24 @@ There is a forum discussion about this tool, it can be found here: https://forum
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Integration tests will be also implemented, to test external services for API change or other error. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**that explains what was done as part of the grant). |
-| 1. | Express backend that does proposal fetching | We will create an Express up, that is able to fetch proposals from OpenGov, and insert them into Notion |
+| 1. | Express backend that does proposal fetching | We will create an Express app, that is able to fetch proposals from OpenGov, and insert them into Notion |
 | 2. | Mimir integration | We will extend the Express app, to work together with Mimir, for batch voting |
-| 3. | SQLite database | We will switch from Notion to an SQLite database. Most likely we will keep Notion as a legacy option |
-| 4. | OpenGov overlay | We will create an extension, so Notion is not needed, all actions can be done through OpenGov |
+
+### Milestone 2: OpenGov Overlay
+
+- **Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):**  1.25
+- **Total Costs:** 11,500 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | GPLv3 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can start using the tool |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Integration tests will be also implemented, to test external services for API change or other error. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**that explains what was done as part of the grant). |
+| 1. | SQLite database | We will switch from Notion to an SQLite database. Most likely we will keep Notion as a legacy option |
+| 2. | OpenGov overlay | We will create an extension, so Notion is not needed, all actions can be done through OpenGov |
 
 ### Budget Breakdown (Example, please adapt)
 
