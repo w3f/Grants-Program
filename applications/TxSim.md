@@ -64,6 +64,9 @@ Polkadot’s high transaction velocity and DeFi growth amplify scam and fee risk
 - **Detection Engine:** Custom WASM bytecode parsing for Substrate contracts.
 - **Database:** Scalable storage for over 100,000 contract signatures across Polkadot parachains.
 
+**Planned PVM (RISC-V) Support:**
+While TxSim’s initial MVP will focus on EVM (Moonbeam) and WASM (Astar), we’ve designed the architecture to support future integration of Asset Hub’s upcoming RISC-V–based PolkaVM. Unlike WASM or EVM, PVM introduces new challenges — including limited tooling, evolving RPC standards, and the need for custom simulation emulators. However, our modular simulator engine is meant to plug in additional VMs, and we anticipate integrating PVM as the ecosystem matures, without requiring additional funding. This phased approach ensures TxSim stays aligned with the Polkadot Hub roadmap and remains compatible with its evolving execution environments.
+
 ## Competitive Advantage
 
 TxSim uniquely combines transaction simulation, risk detection, and user-friendly UX for Polkadot’s Substrate ecosystem. The table below compares TxSim to competitors:
