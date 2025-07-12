@@ -375,7 +375,7 @@ This grant would allow us to kick off focused development, content production, a
 
 **Total Estimated Duration:** 6 months  
 **Full-Time Equivalent (FTE):** 2
-**Total Requested Grant Amount:** 20,000 USD  
+**Total Requested Grant Amount:** 24,000 USD  
 **DOT %:** 50% (vested in DOT)
 
 ---
@@ -418,7 +418,7 @@ This grant would allow us to kick off focused development, content production, a
 
 **Estimated Duration:** 1 month  
 **FTE:** 2  
-**Requested Amount:** 3,000 USD
+**Requested Amount:** 4,000 USD
 
 | No. | Deliverable | Specification |
 |-----|-------------|---------------|
@@ -433,7 +433,7 @@ This grant would allow us to kick off focused development, content production, a
 
 **Estimated Duration:** 1 month  
 **FTE:** 2  
-**Requested Amount:** 3,000 USD
+**Requested Amount:** 4,000 USD
 
 | No. | Deliverable | Specification |
 |-----|-------------|---------------|
@@ -448,7 +448,7 @@ This grant would allow us to kick off focused development, content production, a
 
 **Estimated Duration:** 1 month  
 **FTE:** 2  
-**Requested Amount:** 3,000 USD
+**Requested Amount:** 4,000 USD
 
 | No. | Deliverable | Specification |
 |-----|-------------|---------------|
@@ -463,7 +463,7 @@ This grant would allow us to kick off focused development, content production, a
 
 **Estimated Duration:** 1 month  
 **FTE:** 2  
-**Requested Amount:** 3,000 USD
+**Requested Amount:** 4,000 USD
 
 | No. | Deliverable | Specification |
 |-----|-------------|---------------|
