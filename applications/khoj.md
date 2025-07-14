@@ -5,7 +5,7 @@
 - **Tagline**: Participate in AI-personalised treasure hunts where each clue is a physical location. Earn on-chain rewards and onboard a million users.
 - **Description**: Khoj (meaning "search" or "discovery" in Hindi) is a gamified geo-location based treasure hunt platform that combines real-world exploration with Web3 technology.
   It allows users to participate in location-based AI treasure hunts where they solve riddles, visit physical locations, and earn on-chain rewards.
-- **Integration with Polkadot**: The application smart contract (which includes token creation and NFTs) will be deployed on Moonbeam Aplha.
+- **Integration with Polkadot**: The application smart contract (which includes token creation and NFTs) will be deployed on Polkadot AssetHub.
 - **Motivation**: The desire started off in college when we wanted to onboard the new joinees of our tech club with a different experience that combines Web3 with the real world in a gamified manner. Since then, we haven't found a platform that solves this our way, and we would love to solve this to onboard not just our club members but go beyond.
 
 ### 🔍 Project Details
@@ -14,7 +14,7 @@ We expect applicants to have a solid idea about the project's expected final sta
 
 - An overview of the technology stack to be used
   - Frontend: React, TypeScript, TailwindCSS
-  - Smart Contract: Solidity Smart contract deployed on Moonbeam
+  - Smart Contract: Solidity Smart contract deployed on AssetHub
   - Integrations:
       - [True Network](https://docs.truenetwork.io/) (building on-chain reputation in Polkadot)
       - [Reown's App Kit](https://reown.com/appkit) for social & email embedded wallets.
@@ -62,7 +62,7 @@ We expect applicants to have a solid idea about the project's expected final sta
 
 - What your project is *not* or will *not* provide or implement
   - We wont be implementing any sdk or tool for the ecosystem it is a dApp.
-  - Deployment will be restricted to Moonbeam Alpha (Testnet) for now.
+  - Deployment will be restricted to Polkadot AssetHub. 
   - Unit tests will be restricted to the smart contract, not including the frontend.
 
 ### 🧩 Ecosystem Fit
@@ -201,4 +201,3 @@ So:
 - The vision is to become the answer for the most distincitve way to drive engagement, become an interesting funnel to gain users to Polkadot.
 - Some near goals are to conduct hunts at smaller Polkadot specific events, community meetups, JAM tour events and hackathons - ETHIndia'25 being a target.
 - One goal close to heart is to become a standard part of each PBA cohort experience, unique to each new location :)
-- We also plan to support the EVM compatability that Polkadot is [rolling out](https://contracts.polkadot.io/)
