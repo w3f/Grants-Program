@@ -1,0 +1,20 @@
+name: CLA Assistant
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  cla:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check CLA
+        uses: contributor-assistant/github-action@v2.4.0
+        with:
+          path-to-signatures: 'cla/signatures.json'
+          path-to-clafile: 'cla/cla.md'
