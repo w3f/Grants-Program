@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run CLA Assistant
-        uses: cla-assistant/github-action@v2
+        uses: contributor-assistant/github-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # If using a Personal Access Token, add it as a secret and reference here:
