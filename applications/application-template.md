@@ -129,4 +129,4 @@ Here you can also add any additional information that you think is relevant to t
 
 - Work you have already done
 - If there are any other teams who have already contributed (financially) to the project
-- Other funding you may have applied for
+- Please declare if you have submitted this product for funding to any other entities, wether you got funded, how much you got funded, and provide any other relevant details.
