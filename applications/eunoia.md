@@ -53,7 +53,7 @@ That story stuck with us. Eunoia makes sure that money meant to help actually he
 - API Communication: Axios
 - State Management: React Context API, Component State
 - Blockchain Interaction: 
-  - Polkadot: `@polkadot/api`, `@polkadot/extension-dapp`
+  - Polkadot: `polkadot-api`
 
 
 ⚙️ **Backend:** (`eunoia_backend`)
@@ -209,7 +209,7 @@ We’ve already built an MVP version of our application during the EasyA Hackath
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was done/achieved as part of the grant. |
 | 1. | Mainnet Smart Contract Launch| Deploy Eunoia on a Polkadot parachain (e.g. Moonbeam) with lastest smart contracts, users able to donate.|
-| 2. | Mainnet UI + API Launch| Deploy Eunoia with all UI and APIs complete and launch for Polkadot mainnet, no errors during the user interaction.|
+| 2. | Mainnet UI + API Launch| Deploy Eunoia with all UI and APIs complete and launch for Polkadot mainnet, no errors during the user interaction. This task will also include the migration to polkadot-api.|
 | 3. | Compass Launch| Compass AI agent is the tool to support users to find the charities to donate. It will be complete and launch along with the mainnet instance. User are able obtain charities matches, 80% correct matching rate.|
 | 4. | Charities Onboarding| With our connections and over the hacakthon we had reached out few charities already. We want to complete the onboarding of them into Eunoia with the mainnet launched. Over 3 charties are onboarded on Eunoia platform.|
 | 5. | Users Onboarding| After charities gets onboarded we will start working with universities, clubs, and organizations to promote the giving towards the causes. With over 20 users onboarded and donate towards causes.|
@@ -219,7 +219,7 @@ We’ve already built an MVP version of our application during the EasyA Hackath
 
 | Milestone | Key Deliverables | Cost (USD) | ETA |
 |-----------|------------------|------------|-----|
-| **1** | 0a - License • 0b - Documentation • 1 - ink! Smart Contract (testnet → mainnet) • 2 Wallet-connected UI | **$2,900** | Month 1 |
+| **1** | 0a - License • 0b - Documentation • 1 - ink! Smart Contract (testnet → mainnet) • 2 Wallet-connected UI and migration to polkadot-api| **$2,900** | Month 1 |
 | **2** | 3 -  Compass AI agent • Backend APIs (matching & search) | **$2,600** | Month 2 |
 | **3** | 0c - Testing + Guide • 0d - Article • 4 - Charity Onboarding • 5 - User Onboarding • 6 - Whitepaper & Tutorials | **$3,000** | Month 3 |
 | **Total** | — | **$8,500** | **3 months** |
@@ -232,7 +232,7 @@ We’ve already built an MVP version of our application during the EasyA Hackath
 |-----------|------------------|-------|-------------|----------|---------------------|------------------|
 | **1** | Ink! smart contract development (testnet) | 60 | 25 | 1,500 | - | - |
 | | Fixing and updating smart contract for mainnet | 20 | 25 | 500 | - | - |
-| | UI development | 20 | 25 | 500 | - | - |
+| | UI development and migration to polkadot-api | 20 | 25 | 500 | - | - |
 | | Hosting (cloud services for testnet) | - | - | - | 200 | - |
 | | Testnet gas fees | - | - | - | 150 | - |
 | | Domain registration | - | - | - | 50 | - |
@@ -256,7 +256,7 @@ We’ve already built an MVP version of our application during the EasyA Hackath
 >- **Hourly Rate**: All development, testing, and content creation tasks are billed at $25/hour.
 >- **Additional Expenses**: Include non-labor costs such as hosting, gas fees, domain registration, AI inference credits, marketing, X Premium subscription, merchandise, and extra gas for transactions.
 >- **Milestone Breakdown**:
-  >   - **Milestone 1**: Smart contract development, UI, and infrastructure setup for testnet and mainnet.
+  >   - **Milestone 1**: Smart contract development, UI, migration to polkadot-api and infrastructure setup for testnet and mainnet.
   >   - **Milestone 2**: AI model development, backend API setup, and cloud deployment.
   >   - **Milestone 3**: Testing, charity onboarding, content creation, and marketing efforts.
 >- **Why this split?**  
