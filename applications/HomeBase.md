@@ -12,15 +12,15 @@
 
 Real estate tokenization is one of the most promising use-cases for Real-World Assets (RWA) in Web3, enabling fractional ownership, liquidity, and programmable governance over physical assets. Yet, the space faces critical challenges:
 
-1. **Trustless Infrastructure** – ensuring transparent, censorship-resistant settlement.
-2. **Cross-Chain Liquidity** – connecting real estate assets to DeFi markets.
+1. **Trustless Infrastructure** – ensuring transparent, censorship-resistant settlement.  
+2. **Cross-Chain Liquidity** – connecting real estate assets to DeFi markets.  
 3. **Compliant Governance** – aligning legal frameworks with on-chain ownership.
 
 **Homebase** delivers a **Polkadot-native RWA protocol** addressing these challenges through a modular architecture combining blockchain, backend services, and live frontend applications.
 
-✅ **Custom Substrate blockchain** already deployed.  
-✅ **Node.js / Express backend** connected and live.  
-✅ **Frontend dApp live at:**
+✅ Custom Substrate blockchain already deployed.  
+✅ Node.js / Express backend connected and live.  
+✅ Frontend dApp live at:
 
 - User dashboard → [https://homebase-escrow-haven.vercel.app/](https://homebase-escrow-haven.vercel.app/)  
 - Landlord login → [https://homebase-escrow-haven.vercel.app/landlord-login](https://homebase-escrow-haven.vercel.app/landlord-login)  
@@ -33,107 +33,98 @@ Real estate tokenization is one of the most promising use-cases for Real-World A
 
 Homebase bridges physical real estate and DeFi by offering:
 
-- **Tokenization:** Turn real estate into fractional on-chain shares.
-- **Trading:** Enable users to buy, sell, and hold fractions.
-- **Governance:** Token-weighted voting on property-level decisions.
+- **Tokenization:** Turn real estate into fractional on-chain shares.  
+- **Trading:** Enable users to buy, sell, and hold fractions.  
+- **Governance:** Token-weighted voting on property-level decisions.  
 - **Cross-Chain:** Use XCM to connect with DeFi parachains (e.g., Acala, Moonbeam).
 
 ---
 
 ## Conceptual Architecture
 
-| Layer            | Component              | Role                                                                                  |
-|------------------|------------------------|--------------------------------------------------------------------------------------|
-| Core Blockchain  | `pallet_rwa_core`      | Register property metadata, legal documents (stored via IPFS).                       |
-| Asset Management | `pallet_rwa_asset`     | Mint fractional tokens (ERC-20-like), enforce cap, track ownership checkpoints.     |
-| Marketplace      | `pallet_rwa_marketplace` | Enable secondary trading with on-chain order book, events, and settlement.          |
-| Cross-Chain      | `pallet_rwa_xcm`       | Allow token transfers and governance actions across parachains via XCM.             |
-| Compliance Layer | *ink!* contracts       | Handle KYC, AML, legal freezes, and regulatory triggers.                            |
-| Backend API      | Node.js / Express      | Provide off-chain services (KYC, compliance, notifications) & connect to Substrate. |
+| Layer             | Component              | Role                                                                                   |
+|-------------------|------------------------|---------------------------------------------------------------------------------------|
+| Core Blockchain   | `pallet_rwa_core`      | Register property metadata, legal documents (stored via IPFS).                        |
+| Asset Management  | `pallet_rwa_asset`     | Mint fractional tokens, enforce supply cap, track ownership checkpoints.             |
+| Marketplace       | `pallet_rwa_marketplace` | Enable secondary trading with on-chain order book, events, and settlement.           |
+| Cross-Chain       | `pallet_rwa_xcm`       | Allow token transfers and governance across parachains via XCM.                      |
+| Compliance Layer  | *ink!* contracts       | Handle KYC, AML, legal freezes, and regulatory triggers.                             |
+| Backend API       | Node.js / Express      | Provide off-chain services (KYC, compliance, notifications), connect to Substrate.   |
 
 ---
 
 ## Technical Overview
 
-- **Blockchain Layer:** Custom Substrate runtime (Rust), with modular pallets for RWA management, trading, governance, and XCM.
-- **Backend Layer:** Node.js / Express server:
-  - Connects to deployed Substrate nodes using `@polkadot/api`.
-  - Listens to blockchain events via WebSockets.
-  - Provides REST & GraphQL APIs for frontend/admin.
-  - Handles KYC/AML, user profiles, compliance, third-party integrations.
-- **Frontend Layer:** React + TypeScript dApp:
-  - Uses Polkadot.js API for wallet interactions.
-  - Connects to backend API for off-chain workflows.
-  - **Live demos:**
-    - User dashboard → [https://homebase-escrow-haven.vercel.app/](https://homebase-escrow-haven.vercel.app/)
-    - Landlord login → [https://homebase-escrow-haven.vercel.app/landlord-login](https://homebase-escrow-haven.vercel.app/landlord-login)
-    - Seller login → [https://homebase-escrow-haven.vercel.app/seller-login](https://homebase-escrow-haven.vercel.app/seller-login)
-    - Admin login → [https://homebase-escrow-haven.vercel.app/admin-login](https://homebase-escrow-haven.vercel.app/admin-login)
+- **Blockchain:** Substrate runtime, Rust pallets.  
+- **Backend:** Node.js / Express:
+  - Connects to Substrate via `@polkadot/api`.  
+  - Listens to events, exposes REST + GraphQL APIs.  
+  - Manages KYC/AML, admin dashboards, partner onboarding.  
+- **Frontend:** React + TypeScript dApp:
+  - Polkadot.js API integration, wallet connections, user dashboards.
 - **HanPay Online Wallet:**  
-  - Optional payment/settlement portal → [https://hanpay-portal.vercel.app/#hero](https://hanpay-portal.vercel.app/#hero)
-  - Enables users to **complete payments, settle bargains, or transfer assets off-chain after negotiating in Homebase**.
-
-- **DevOps & Monitoring:** Docker, GitHub Actions CI/CD, Prometheus, Grafana.
+  [https://hanpay-portal.vercel.app/#hero](https://hanpay-portal.vercel.app/#hero)  
+  Optional standalone payment portal to settle bargains or off-chain transfers.
+- **DevOps:** Docker, GitHub Actions, Prometheus, Grafana.
 
 ---
 
-### HanPay Wallet Integration
+## Market Validation
 
-In addition to the main Homebase app, we are developing the **HanPay Online Wallet** as a complementary layer to:
+- Global real estate tokenization market projected >$16 trillion by 2030.  
+- Initial interest from landlords, sellers, and investors in Nigeria, Serbia, EU.  
+- Early pilot discussions with property managers and legal custodians.  
+- Positive organic feedback from live app demos and community.
 
-- Provide a **standalone payment portal** for settling transactions negotiated via Homebase.  
-- Allow users to **bargain within Homebase** and then **settle via HanPay** if they prefer off-chain or alternative payment flows.
-- Enable faster onboarding for landlords, sellers, and users who prefer web-based payment channels.
+---
 
-This strengthens our user ecosystem and broadens the ways users can interact with Homebase assets.
+## Legal & Operational Flow
 
-HanPay Online Wallet: [https://hanpay-portal.vercel.app/#hero](https://hanpay-portal.vercel.app/#hero)
+We recognize that technical integration is only one side of bringing RWAs on-chain.
+
+- **Asset Custody:**  
+  Real-world property onboarding will be done through partnerships with legal custodians and notaries, who will verify ownership, legal status, and ensure asset-backing.
+
+- **Legal Agreements:**  
+  Every tokenized property will be backed by a legal contract defining rights, revenue sharing, and governance, ensuring fractional token holders are protected.
+
+- **Operational Partners:**  
+  We are in early discussions with real estate providers and legal advisors to pilot 1–2 properties, allowing us to validate the legal-to-on-chain bridge.
+
+This approach ensures Homebase controls distribution with both technical and legal safeguards.
 
 ---
 
 ## Asset Distribution Flow
 
-1️⃣ **Register Property:**  
-Owner submits details + legal docs (IPFS) → stored on-chain (`pallet_rwa_core`).
-
-2️⃣ **Mint Fractional Tokens:**  
-Fixed-supply tokens minted (`pallet_rwa_asset`) → ERC-20-like fractions.
-
-3️⃣ **Marketplace Trading:**  
-Users buy/sell fractions (`pallet_rwa_marketplace`) → events stream to frontend/backend.
-
-4️⃣ **Governance Participation:**  
-Fractional owners vote on proposals → backend handles notifications.
-
-5️⃣ **Payment & Settlement:**  
-Users **either pay through the Homebase app or settle via HanPay Online Wallet**.
-
-6️⃣ **Cross-Chain Liquidity:**  
-XCM enables moving tokens to DeFi parachains.
+1️⃣ Register property → Verified with legal docs, IPFS hash on-chain.  
+2️⃣ Mint fractional tokens → Capped supply tied to legal asset.  
+3️⃣ Enable marketplace trading → On-chain, with backend KYC/compliance.  
+4️⃣ Allow governance participation → Token-holder votes.  
+5️⃣ Settle via Homebase or HanPay Wallet → User flexibility.  
+6️⃣ Unlock cross-chain liquidity → XCM connections to DeFi.
 
 ---
 
 ## Ecosystem Fit
 
-Polkadot currently lacks:
+Homebase fills major gaps in Polkadot’s ecosystem:
 
-- A **dedicated RWA parachain** for real estate.
-- A **dual-path settlement system** combining on-chain trades + optional web-based payments.
-- **Cross-chain governance tools** to integrate real-world assets with DeFi.
-
-Homebase + HanPay fill these gaps, offering a uniquely flexible and compliant ecosystem.
+- A real estate-specific RWA parachain.  
+- A dual on-chain/off-chain payment flow.  
+- A governance + compliance bridge between real-world and DeFi.
 
 ---
 
 ## Team
 
-| Role                | Name               | Notes                                  |
-|---------------------|--------------------|----------------------------------------|
-| Project Lead        | Emeka Iwuagwu     | 8+ years in web & blockchain engineering |
-| Rust/Substrate Devs | 2 FT engineers    | Ex-Parity, Substrate ecosystem experts |
-| Node.js Developer   | 1 FT engineer     | Backend API, KYC, compliance, indexing |
-| Frontend Developer  | 1 FT engineer     | React, TypeScript, UX/UI, wallet integration |
-| Legal Advisor       | 1 PT advisor      | Real estate law, fintech compliance    |
+| Role                | Name               | Notes                                     |
+|---------------------|--------------------|------------------------------------------|
+| Project Lead        | Emeka Iwuagwu     | 8+ years web/blockchain engineering      |
+| Rust Devs          | 2 FT engineers    | Ex-Parity, Substrate experience         |
+| Node.js Dev        | 1 FT engineer     | Backend API, KYC, compliance             |
+| Frontend Dev       | 1 FT engineer     | React, TypeScript, UX/UI                 |
+| Legal Advisor      | 1 PT advisor      | Real estate law, fintech compliance      |
 
 **Contact:** e.iwuagwu@hotmail.com, emeka@hanpay.xyz  
 **Legal Entity:** HanPay (Nigeria / Serbia, in formation)
@@ -142,83 +133,71 @@ Homebase + HanPay fill these gaps, offering a uniquely flexible and compliant ec
 
 ## Development Roadmap
 
-### Overview
+### Milestone 1 – Public Testnet & Marketplace
 
-| Item               | Details             |
-|--------------------|---------------------|
-| Total Duration     | 3–4 months         |
-| FTE               | 3–5 people         |
-| Total Funding Request | $150,000 USD    |
+| #  | Deliverable            | Specification                                                                                                                                         |
+|-----|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a | Documentation          | Inline Rust + Node.js docs, operator + dev tutorials.                                                                                                |
+| 0b | Testing + QA          | Unit + integration tests, backend API tests, manual QA plan.                                                                                          |
+| 0c | Docker + CI/CD        | Docker setup, GitHub Actions CI pipeline.                                                                                                            |
+| 1  | Testnet Deployment    | Faucet, block explorer, telemetry, testnet node with full marketplace and KYC backend.                                                                |
+| 2  | Marketplace Features  | List/create properties, mint tokens, list on DEX, match orders, view events.                                                                         |
+| 3  | Backend Features      | KYC verification endpoint, compliance checks, admin dashboard, off-chain storage.                                                                    |
+| 4  | Frontend Features     | Wallet connection, display properties, buy/sell tokens, user dashboard, notifications.                                                               |
 
----
-
-### 🛠 Milestone 1 – Public Testnet & Marketplace
-
-| #    | Deliverable             | Specification                                                                                                                                                        |
-|------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0a   | License                | Apache-2.0 license in main repo.                                                                                                                                   |
-| 0b   | Documentation          | Inline Rust + Node.js docs; README tutorials for node setup, backend API, operator guide.                                                                          |
-| 0c   | Testing & QA          | Unit/integration tests for pallets and backend; coverage report; manual QA checklist.                                                                               |
-| 0d   | Docker + CI/CD        | Dockerfile, docker-compose; GitHub Actions for CI/CD pipelines.                                                                                                     |
-| 1    | Public Testnet        | Launch with faucet, Polkadot.js endpoint, block explorer, telemetry, monitoring (Prometheus, Grafana).                                                              |
-| 2    | Marketplace Pallet    | Build `pallet_rwa_marketplace` for listing, buying, selling tokens; integrate events, fees, extrinsics.                                                            |
-| 3    | Frontend Integration  | Extend React dApp: live marketplace, wallet tx flow, portfolio dashboard.                                                                                           |
-| 4    | Backend KYC/Compliance API | Node.js / Express service connected to chain; manages KYC checks, compliance workflows, off-chain services, GraphQL indexer.                                      |
-| 5    | Asset Minting Logic   | Secure mint/distribution flow; cap enforcement, checkpointing, audit trail on-chain.                                                                               |
-
-*Duration:* 1–1.5 months  
-*Cost:* $60,000
+*Duration:* 1–1.5 months, *Cost:* $60,000
 
 ---
 
-### 🚀 Milestone 2 – Mainnet, XCM & Governance
+### Milestone 2 – Mainnet Readiness & XCM Integration
 
-| #    | Deliverable             | Specification                                                                                                                                                         |
-|------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1    | Mainnet Parachain      | Register on Polkadot relay, onboard collators, ensure economic/security guarantees.                                                                                  |
-| 2    | XCM Integration       | Build `pallet_rwa_xcm` for cross-chain token transfers, governance calls; test interoperability with Acala, Moonbeam.                                               |
-| 3    | Governance Module     | Deploy council, proposal, referendum pallets; enable token-weighted voting; connect backend to governance events.                                                   |
-| 4    | Backend Governance Hooks | Extend Node.js API for governance events, admin tools, notification flows.                                                                                          |
-| 5    | Frontend Finalization | Production-ready UI/UX; governance dashboards; multi-wallet support (Polkadot.js, Talisman, Subwallet).                                                              |
+| #  | Deliverable            | Specification                                                                                                                                         |
+|-----|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a | Documentation          | Final user + dev docs, governance guides.                                                                                                           |
+| 0b | Testing + QA          | Governance + XCM module tests, backend integration tests.                                                                                            |
+| 0c | Docker + CI/CD        | Final release CI, automated deployment scripts.                                                                                                     |
+| 1  | Governance Features   | Council creation, proposal + referendum pallets, token-weighted voting, backend hooks.                                                              |
+| 2  | XCM Integration       | Cross-chain transfer support, governance routing, Acala/Moonbeam test integrations.                                                                |
+| 3  | Backend Updates       | Governance event streaming, admin tools for proposals, notification system.                                                                         |
+| 4  | Frontend Updates      | Governance dashboard, cross-chain activity view, multi-wallet support.                                                                              |
 
-*Duration:* 1–1.5 months  
-*Cost:* $60,000
+*Duration:* 1–1.5 months, *Cost:* $60,000
 
 ---
 
-### 🌍 Milestone 3 – Ecosystem Growth & Compliance
+### Milestone 3 – Ecosystem Growth & Compliance
 
-| #    | Deliverable             | Specification                                                                                                                                                    |
-|------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1    | ink! Contract Modules | KYC, AML, legal freeze contracts; integrate with runtime via precompiles.                                                                                       |
-| 2    | Benchmarking + Performance | Substrate benchmarking suite; backend load testing; stress test ≥1,000 tx/s; optimize weights, storage.                                                      |
-| 3    | Launch & Community    | Publish launch article, host Twitter Spaces, launch Discord, run ambassador/dev incentive programs.                                                              |
-| 4    | Real-World Onboarding | Build partner toolkit: asset issuer guides, legal templates, pilot onboarding with 1–2 real estate companies.                                                   |
+| #  | Deliverable            | Specification                                                                                                                                         |
+|-----|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a | Documentation          | Legal compliance docs, onboarding kits for partners.                                                                                                |
+| 0b | Testing + QA          | Benchmarking, stress tests (≥1,000 tx/s), backend load testing.                                                                                      |
+| 1  | ink! Contracts        | KYC, AML, asset-freeze contracts, runtime hooks.                                                                                                     |
+| 2  | Community Launch      | Launch article, Twitter Spaces, Discord, ambassador + dev programs.                                                                                  |
+| 3  | Partner Onboarding    | Real estate toolkit, pilot with 1–2 property managers, integrate with HanPay Wallet.                                                                 |
 
-*Duration:* 1 month  
-*Cost:* $30,000
+*Duration:* 1 month, *Cost:* $30,000
 
 ---
 
 ## Future Plans
 
-- Deploy **EVM precompiles** for cross-ecosystem bridging.
-- Integrate **oracles** for on-chain valuation and pricing.
-- Expand into **commercial real estate, REITs, and developer pools**.
-- Launch **developer grants and ambassador programs** to grow network effects.
+- Deploy EVM precompiles for cross-ecosystem bridging.  
+- Integrate oracles for asset valuation + pricing.  
+- Expand into commercial real estate, REITs.  
+- Launch developer + ambassador incentive programs.
 
 ---
 
 ### Funding Summary
 
-| Area                    | Description                                  |
-|-------------------------|--------------------------------------------|
-| Engineering            | Rust/Substrate, Node.js, React, XCM, ink! |
-| Compliance & Legal     | Real estate law, KYC, AML integration      |
-| Infrastructure         | Testnet, mainnet, monitoring, collators    |
-| Community Development  | Launch events, documentation, partnerships|
+| Area                 | Description                            |
+|----------------------|--------------------------------------|
+| Engineering         | Rust/Substrate, Node.js, React, ink! |
+| Compliance & Legal | Real estate law, KYC, AML integration |
+| Infrastructure      | Testnet, monitoring, tooling         |
+| Community           | Launch events, documentation         |
 
-**Total Funding Request:** $150,000 USD over ~4 months.
+**Total Requested:** $150,000 over ~4 months
 
 ---
 
