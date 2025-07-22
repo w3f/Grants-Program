@@ -114,7 +114,7 @@ flowchart TD
 
 ### Contact
 
-- **Contact Name:** Mrisho 
+- **Contact Name:** Mrisho Lukamba
 - **Contact Email:** MrishoLukamba@navatim.com
 
 ### Legal Structure
@@ -158,7 +158,7 @@ flowchart TD
 | 3. | SP1 RISC-V zkVM Integration | We will integrate the SP1 RISC-V zkVM shell for executing parachain functions and generating cryptographic proofs of execution correctness. |
 | 4. | Parachain System Pallet: validate_block Modification | We will modify the `validate_block` function in the `parachain-system` pallet to verify submitted proofs against expected inputs/outputs and check execution cycle consistency. |
 
-### Milestone 2 — Final Testing, Workload Distribution and Developer SDK
+### Milestone 2 — Workload Distribution and Parachain Demo & Benchmark
 
 * **Estimated duration**: 1.5 months
 * **FTE**: 1.05
