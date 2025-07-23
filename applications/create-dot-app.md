@@ -18,20 +18,35 @@ Create Dot App addresses these challenges by providing a comprehensive, framewor
 
 **🚀 One-Command Setup**
 ```bash
-npx create-dot-app my-polkadot-app
+npx create-dot-app
 ```
 
-**🎯 Multiple Frontend Framework Support** *(Key Differentiator)*
-- React and Next
-- Vue and Nuxt
-- Svelte and Sveltekit
+**🎯 Multiple Frontend Framework Support**
+- React and Vue (1st phase)
+- Next and Nuxt (2nd phase)
+
+**Planned Templates**
+
+- **Frontend Frameworks:** Svelte, SvelteKit, Solid, Remix
+- **Backend Frameworks:** Hono, Elysia, Fastify, H3
+
+Open to feedback for additional frameworks
 
 **📦 Pre-configured Starter Templates**
-Each framework will include multiple SDK integration options:
-- Basic wallet connection dApp
-- NFT items list
 
-**🔧 Dual SDK Integration Options**
+SDK integrations:
+- Basic wallet connection
+- Read on-chain data (account balance)
+- Subscribe to on-chain data (latest block number)
+- Submit on-chain data (remark)
+- Multi-chain connection (mainnet and testnet)
+
+Framework integrations:
+- Tailwind CSS (with additional icon and UI plugins)
+- TypeScript
+- ESLint plugin
+
+**🔧 Multiple SDK Integration Choices**
 For maximum flexibility and developer choice, each frontend framework template will offer two modern Polkadot API integration options:
 - **PAPI (Polkadot API)** - The next-generation type-safe Polkadot API
 - **Dedot** - A lightweight, modern TypeScript SDK for Polkadot
@@ -40,7 +55,7 @@ For example, React developers can choose between:
 - `react-papi` - React template with PAPI integration
 - `react-dedot` - React template with Dedot integration
 
-This dual-SDK approach ensures developers can work with their preferred API layer while maintaining the same frontend framework, offering templates like:
+This multiple-SDK approach ensures developers can work with their preferred API layer while maintaining the same frontend framework, offering templates like:
 - `nextjs-papi`, `nextjs-dedot`
 - `vue-papi`, `vue-dedot`, `nuxtjs-papi`, `nuxtjs-dedot`
 - `svelte-papi`, `svelte-dedot`, `sveltekit-papi`, `sveltekit-dedot`
@@ -54,7 +69,7 @@ This dual-SDK approach ensures developers can work with their preferred API laye
 1. **Interactive Project Setup**: Guided CLI prompts for selecting frameworks, SDK preferences (PAPI vs Dedot), templates, and configurations
 2. **Modular Architecture**: Clean separation between blockchain logic and frontend presentation with choice of modern API layers
 3. **Developer Experience**: Hot reloading, type safety, and comprehensive documentation for both PAPI and Dedot integrations
-4. **Multi-chain Support**: Templates compatible with Polkadot, Kusama, and custom substrate chains across both SDK options
+4. **Multi-chain Support**: Templates compatible with Polkadot, Kusama, and custom Substrate chains across both SDK options
 5. **Production Ready**: Optimized build configurations and deployment guides for each framework-SDK combination
 
 ### Target Audience
@@ -86,7 +101,7 @@ This dual-SDK approach ensures developers can work with their preferred API laye
 ### Team's experience
 
 - 5+ Years Web Development Experience: Extensive background in modern web development with comprehensive full-stack development skills
-- Fullstack Developer at Koda.art - Currently contributing as a fullstack developer at Koda.art, a platform within the Polkadot ecosystem, where I have gained comprehensive experience with Polkadot.js API integration, substrate chain interactions, modern frontend frameworks in blockchain applications, user experience design for Web3 applications, and production deployment and maintenance of dApps.
+- Full-stack Developer at Koda.art - Currently contributing as a full-stack developer at Koda.art, a platform within the Polkadot ecosystem, where I have gained comprehensive experience with Polkadot.js API integration, Substrate chain interactions, modern frontend frameworks in blockchain applications, user experience design for Web3 applications, and production deployment and maintenance of dApps.
 
 ## Development Status
 
@@ -102,6 +117,7 @@ The Create Dot App project is currently under active development. The core CLI i
 - Evaluation of modern Polkadot APIs (PAPI vs Dedot)
 - Frontend framework ecosystem assessment
 - CLI architecture and template structure planning
+- Received feedback. Details: https://polkadot-ux-bounty.notion.site/Create-Dot-App-22ce1c2781f3802d87a4c97d898f42e6
 
 ### Development Readiness
 Starting from scratch provides advantages including clean architecture, incorporation of latest technologies, and avoiding legacy technical debt. All necessary technical knowledge and resources are in place to begin immediate development upon grant approval.
@@ -110,12 +126,12 @@ Development will commence with repository setup, CLI implementation, template cr
 
 ## Development Roadmap
 
-This section breaks down the development roadmap into milestones and deliverables for the Create Dot App CLI tool. The project focuses on creating a comprehensive scaffolding tool that supports multiple frontend frameworks with dual SDK integration options (PAPI and Dedot).
+This section breaks down the development roadmap into milestones and deliverables for the Create Dot App CLI tool. The project focuses on creating a comprehensive scaffolding tool that supports multiple frontend frameworks with multiple SDK integration choices (PAPI and Dedot).
 
 ### Overview
 
 - **Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):** 0.5 FTE
+- **Full-Time Equivalent (FTE):** 2 FTE
 - **Total Costs:** 10,000 USD
 
 ## Milestone 1: Core CLI Infrastructure & Initial Templates
@@ -133,9 +149,7 @@ This section breaks down the development roadmap into milestones and deliverable
 | 2. | Template Engine | Flexible templating system that can generate projects based on user selections |
 | 3. | React Templates | Complete React.js starter templates with both PAPI and Dedot integrations (`react-papi`, `react-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
 | 4. | Vue.js Templates | Complete Vue.js starter templates with both PAPI and Dedot integrations (`vue-papi`, `vue-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
-| 5. | Hardhat-Polkadot Template | Complete Hardhat development environment template specifically configured for Polkadot smart contract development |
-| 6. | Integration Testing | Comprehensive integration tests for all generated templates |
-| 7. | NPM Package Distribution | Production-ready NPM package with proper versioning, dependency management, and automated publishing pipeline |
+| 5. | NPM Package Distribution | Production-ready NPM package with proper versioning, dependency management, and automated publishing pipeline |
 
 ## Milestone 2: Extended Framework Support & Production Release
 
@@ -144,11 +158,10 @@ This section breaks down the development roadmap into milestones and deliverable
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 1. | Next.js Templates | Complete Next.js starter templates with both PAPI and Dedot integrations (`nextjs-papi`, `nextjs-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
-| 2. | Svelte Templates | Complete Svelte starter templates with both PAPI and Dedot integrations (`svelte-papi`, `svelte-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
-| 3. | SvelteKit Templates | Complete SvelteKit starter templates with both PAPI and Dedot integrations (`sveltekit-papi`, `sveltekit-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
-| 4. | Nuxt.js Templates | Complete Nuxt.js starter templates with both PAPI and Dedot integrations (`nuxtjs-papi`, `nuxtjs-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
-| 5. | Docs Landing Page | Comprehensive documentation website with getting started guides |
-| 6. | Community Tools | Contribution guidelines, template validation tools, and documentation for community members to add new templates or frameworks |
+| 2. | Nuxt.js Templates | Complete Nuxt.js starter templates with both PAPI and Dedot integrations (`nuxtjs-papi`, `nuxtjs-dedot`), including wallet connection utilities and basic dApp structure with NFT items list functionality |
+| 3. | Integration Testing | Comprehensive integration tests for all generated templates, including deployment testing to major hosting platforms (Vercel, Netlify, and Cloudflare Pages) to ensure all templates work correctly in production environments |
+| 4. | Docs Landing Page | Comprehensive documentation website with getting started guides |
+| 5. | Community Tools | Contribution guidelines, template validation tools, and documentation for community members to add new templates or frameworks |
 
 ## Budget Breakdown
 
@@ -166,17 +179,33 @@ This section breaks down the development roadmap into milestones and deliverable
 - All templates must compile without errors
 - Wallet connection functionality must work across supported wallets
 - Both PAPI and Dedot integrations must successfully connect to Polkadot/Kusama networks
-
-**CLI Testing:**
-- Interactive prompts must handle all user input scenarios
-- Error handling for invalid project names and existing directories
+- Deployment testing to major hosting platforms (Vercel, Netlify, and Cloudflare Pages)
+- Cross-browser compatibility testing for wallet integrations
 
 ## Future Plans
 
-- **Additional Framework Support**: Expand support to include Preact, Solid, and Remix frameworks
+- **Additional Framework Support**: Expand support to include Svelte, Preact, Solid, and Remix frameworks
 - **Smart Contract Templates**: Add Solidity smart contract templates for PolkaVM integration
 - **Mobile Development**: Explore templates for Expo and NativeScript (requires further research and feasibility analysis)
 
+## Success Metrics
+
+The project success will be measured through concrete adoption and quality metrics:
+
+**Adoption Metrics:**
+- Progressive user adoption from 5+ early users to 20+ active users successfully scaffolding projects
+- GitHub community engagement with 10+ repository stars
+- NPM package distribution and usage tracking
+- Real-world deployments by at least 2 developers/creators to public endpoints
+
+**Quality Metrics:**
+- All generated templates meet production standards: responsive design, proper error handling, scalable architecture, and maintained wallet connections
+- Comprehensive documentation and developer resources
+- Automated CI/CD pipeline ensuring template quality and reliability
+- Integration of community feedback from all development phases
+
 ## Additional Information
 
-I am currently working full-time at Koda.art, a Polkadot NFT marketplace on AssetHub. This hands-on experience with production Polkadot applications provides deep insights into developer pain points and ecosystem needs that directly inform this project.
+According to the [State of JavaScript 2024 survey](https://2024.stateofjs.com/en-US/libraries/front-end-frameworks/#front_end_frameworks_ratios), React's dominance is showing signs of decline with decreasing interest and satisfaction metrics among developers, while alternative frameworks like Vue.js and Svelte are gaining momentum and maintaining higher satisfaction rates. This trend validates the importance of providing developers with diverse framework options beyond React-only solutions, making Create Dot App's comprehensive multi-framework support particularly relevant for the evolving JavaScript ecosystem.
+
+Additionally, this project has received extensive feedback and validation from the Polkadot UX Bounty team. The detailed feedback and discussions can be found at [Create-Dot-App UX Bounty Review](https://polkadot-ux-bounty.notion.site/Create-Dot-App-22ce1c2781f3802d87a4c97d898f42e6).
