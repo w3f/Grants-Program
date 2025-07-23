@@ -3,9 +3,8 @@ sidebar_position: 1
 title: 1. Application
 ---
 
-
 :::tip
-If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+If you want to apply in **private** or your project does not fit this program, you can reach out to us [:arrow_right: here](https://grants.web3.foundation/docs/office-hours). We are happy to discuss or recommend alternative funding initiatives.
 :::
 
 :::info

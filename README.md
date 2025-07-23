@@ -141,7 +141,7 @@ The W3F Grants Program offers different grant levels to help you best, depending
 
 ## :pencil: Process
 
-> **:loudspeaker:** At least 50% (as defined in your grant agreement) of each milestone payment is made in DOT (linearly vesting over 2 years). The remainder is paid in USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private**, you can do so [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** At least 50% (as defined in your grant agreement) of each milestone payment is made in DOT (linearly vesting over 2 years). The remainder is paid in USDC on the Polkadot [AssetHub](https://wiki.polkadot.network/docs/learn-assets). Please indicate your preference in the application [as outlined in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md?plain=1#L7). If you want to apply in **private** or your project does not fit this program for any reason, you can reach out to us [:arrow_right: here](https://grants.web3.foundation/docs/office-hours). 
 
 ### 1. Application
 
