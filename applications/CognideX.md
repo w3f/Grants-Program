@@ -3,7 +3,7 @@
 - **Team Name:** CognideX
 - **Payment Details:**
   - **Address**: 1126M1fdZyqLkL9GaPNxEtwCv3ptsXeQ8opshXas6JmHXV9r (USDC)
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
+- **[Level]:** 2
 
 
 ## Project Overview :page_facing_up:
