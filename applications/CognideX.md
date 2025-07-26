@@ -102,13 +102,15 @@ In summary, CognideX fits into the Polkadot ecosystem as a data/AI service parac
 
 ### Contact
 
-- **Contact Name 1:** Bhargav Sagiraju
-- **Contact Email 1:** bhargavs@nus.edu.sg
+- **Contact Name:** Bhargav Sagiraju
+- **Contact Email:** bhargavs@nus.edu.sg
+- **Website:** https://cognidex.ai
 
+(Alternate Contact:
 - **Contact Name 2:** Professor James Pang Yan
 - **Contact Email 2:** jamespang@nus.edu.sg
+)
 
-- **Website:** https://cognidex.ai
 
 ### Legal Structure
 
