@@ -172,13 +172,13 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 ### Overview
 
 - **Total Estimated Duration:** 4.5 months
-- **Full-Time Equivalent (FTE):**  1.5 FTE
+- **Full-Time Equivalent (FTE):**  2.5 FTE
 - **Total Costs:** $57,200
 
 ### 🚀 Milestone 1 — Authentication
 
 - **Estimated duration:** 1 month  
-- **FTE:** 1.5  
+- **FTE:** 2.5  
 - **Cost:** $14,000
 
 | Number | Deliverable | Specification |
@@ -200,7 +200,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 ### 🚀 Milestone 2 — Real-Time Document Sync
 
 - **Estimated Duration:** 1.5 months  
-- **FTE:** 1.5  
+- **FTE:** 2.5
 - **Cost:** $21,600
 
 | Number | Deliverable | Specification |
