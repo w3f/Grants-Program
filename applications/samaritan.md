@@ -173,7 +173,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 
 - **Total Estimated Duration:** 4.5 months
 - **Full-Time Equivalent (FTE):**  1.5 FTE
-- **Total Costs:** $57,600
+- **Total Costs:** $57,200
 
 ### 🚀 Milestone 1 — Authentication
 
