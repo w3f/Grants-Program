@@ -59,7 +59,7 @@ Samaritan builds on our earlier work developing [SwarmNL](https://github.com/alg
 - React (Admin Dashboard)
 
 #### What Samaritan is not
-Samaritan is not a blockchain or smart contract platform. It doesn't aim to create a new consensus layer, token economy, or on-chain execution environment. Instead, it integrates with existing chains like Ethereum and Polkadot for authentication, data anchoring, and event-driven workflows.
+Samaritan is not a blockchain or smart contract platform. It doesn't aim to create a new consensus layer, token economy, or on-chain execution environment. Instead, it integrates with Polkadot for authentication, data anchoring, and event-driven workflows.
 
 It also isn’t trying to replicate Firebase feature-for-feature. Services like analytics, crash reporting, or deep user segmentation are out of scope for the MVP. Samaritan is focused on solving three core backend primitives for Web3 apps: authentication, real-time data sync, and smart contract integration. Additional features will be considered based on real developer needs and community feedback.
 
@@ -104,7 +104,7 @@ Samaritan distinguishes itself by combining **wallet-based authentication**, **r
 Samaritan is a unified Web3 backend that:
 
 - Includes a **decentralized document database** powered by a custom sync engine (built on SwarmNL) for real-time, conflict-free collaboration.
-- Provides **serverless authentication** using Ethereum and Polkadot wallets — no username/password or backend setup required.
+- Provides **serverless authentication** Polkadot wallets — no username/password or backend setup required.
 - Supports **event-driven smart contract integration**, enabling both reactive (listen to events) and proactive (trigger contracts) interactions.
 - Delivers a **simple, Firebase-like developer experience**, with intuitive SDKs and patterns for building live, collaborative apps — without the centralized overhead.
 
@@ -173,34 +173,34 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 
 - **Total Estimated Duration:** 4.5 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
-- **Total Costs:** $57,200
+- **Total Costs:** $60,000
 
 ### 🚀 Milestone 1 — Authentication
 
 - **Estimated duration:** 1 month  
-- **FTE:** 2.5  
-- **Cost:** $14,000
+- **FTE:** 2
+- **Cost:** $16,800
 
 | Number | Deliverable | Specification |
 |--------|-------------|---------------|
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | Full inline documentation will be provided for all Rust and TypeScript modules. A setup guide will demonstrate how to integrate wallet-based authentication. |
-| **0c.** | Testing and Testing Guide | The authentication logic will be covered with unit and integration tests. A guide will detail how to test signature verification, session handling, and API endpoints. |
-| **0d.** | Docker | A `Dockerfile` and `docker-compose.yml` will be provided to run the Rust backend and React admin panel locally. |
-| **1.** | Authentication Rust Backend | A Rust backend that verifies signatures from Polkadot or Ethereum wallets. It supports login by verifying a signed challenge (nonce), issues JWTs for authenticated sessions, and handles token refresh and revocation. |
-| **2.** | TS/JS Auth SDK | A TypeScript/JavaScript SDK that handles wallet connection, retrieves a challenge from the backend, signs it, and exchanges it for a JWT. Supports both Polkadot.js and MetaMask-compatible wallets. |
-| **3.** | React Admin Panel | A React-based admin dashboard to monitor and test authentication flows, including wallet connections and active sessions. |
-| **4.** | Nonce Challenge System | A secure challenge-response system where the backend issues a unique nonce per login attempt, which the user signs with their wallet to prove ownership. Nonces expire after a short time window. |
-| **5.** | Token System | Stateless authentication using short-lived access tokens and long-lived refresh tokens, signed using server-side keys. Token rotation and revocation will be implemented. |
-| **6.** | Session Persistence | The SDK will manage session state in the browser using secure local/session storage. It will automatically refresh tokens and handle re-authentication as needed. |
-| **7.** | Examples | Practical examples demonstrating how to implement decentralized authentication with **Samaritan** |
-
+| **0b.** | Documentation | Comprehensive inline documentation for all Rust and TypeScript modules, plus integration guide for wallet-based authentication setup. |
+| **0c.** | Testing and Testing Guide | Complete unit and integration test coverage for signature verification, session handling, and API endpoints with detailed testing instructions. |
+| **0d.** | Docker | Production-ready `Dockerfile` and `docker-compose.yml` for local development of the Rust node and React admin panel. |
+| **1.** | Rust Authentication Node | High-performance server with HTTP/WebSocket endpoints, multi-chain signature verification (Sr25519/secp256k1), and RESTful API for authentication flows. |
+| **2.** | Database & Storage Layer | Secure data persistence layer handling nonces, user sessions, and account data with automatic expiry cleanup and schema migrations. |
+| **3.** | Universal Auth SDK | TypeScript/JavaScript SDK with automatic wallet detection (Polkadot.js, MetaMask), challenge-response handling, and seamless JWT token management. |
+| **4.** | React Admin Panel | A React-based admin dashboard to monitor and test authentication flows, including wallet connections and active sessions. |
+| **5.** | Security Challenge System | Cryptographically secure nonce generation with time-based expiry, replay attack protection, and wallet ownership verification. |
+| **6.** | JWT Token Management | Stateless authentication with short-lived access tokens (15min), long-lived refresh tokens (7 days), and automatic rotation with revocation support. |
+| **7.** | Client Session Handling | Browser-based session persistence with secure storage, automatic token refresh, and graceful re-authentication on expiry. |
+| **8.** | Integration Examples | Complete sample applications demonstrating Samaritan authentication integration patterns and best practices. |
 
 
 ### 🚀 Milestone 2 — Real-Time Document Sync
 
 - **Estimated Duration:** 1.5 months  
-- **FTE:** 2.5
+- **FTE:** 2.5  
 - **Cost:** $21,600
 
 | Number | Deliverable | Specification |
@@ -209,7 +209,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 | **0b.** | Documentation | Inline code documentation and a technical guide explaining the real-time sync engine, how it integrates with SwarmNL, and how clients can listen for updates and push changes. |
 | **0c.** | Testing + Testing Guide | Unit and integration tests covering document syncing, subscription logic, and merge resolution. A test guide will explain how to run local and simulated multi-client scenarios. |
 | **0d.** | Docker | A Docker image to run the real-time document sync engine locally for testing and development. |
-| **1.** | Real-Time Document Engine (Rust) | A Rust-based backend that maintains live JSON documents, handles client subscriptions, and broadcasts updates using SwarmNL. |
+| **1.** | Real-Time Document Engine (Rust) | A Rust-based backend yncs JSON documents across 5+ concurrent clients, handles client subscriptions, and broadcasts updates using SwarmNL. |
 | **2.** | Pub/Sub Protocol | A structured topic-based protocol for syncing documents and metadata updates (e.g., `doc:update`, `doc:delete`, `user:presence`). |
 | **3.** | TypeScript/Javascript Client SDK | A browser-compatible SDK for subscribing to documents, applying updates, listening for changes and handling reconnection logic. |
 | **4.** | Integration with Auth System | Real-time access control using tokens from Milestone 1. Ensures only authenticated and authorized users can read/write documents. |
@@ -220,7 +220,7 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 ### 🚀 Milestone 3 — Smart Contract Integration & Extensibility
 
 - **Estimated Duration:** 1.5 months  
-- **FTE:** 1.5  
+- **FTE:** 2.5  
 - **Cost:** $21,600
 
 | Number | Deliverable | Specification |
@@ -230,11 +230,10 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 | **0c.** | Testing + Guide | Tests for contract-event listeners and trigger executions, with instructions for simulating events and observing side effects. |
 | **0d.** | Docker | Updated Docker environment with support for smart contract event listening and trigger execution. |
 | **1.** | Smart Contract Event Listener (Rust) | Build a background service that listens for contract events from a Substrate-based chain (via WebSocket), parses relevant logs, and forwards them to registered functions. |
-| **2.** | Cloud Function Engine (Rust) | Add a module that lets developers register and deploy custom logic (e.g., serverless functions) to run in response to events. These functions can access document data, trigger sync, or call external APIs. |
+| **2.** | Cloud Function Engine (Rust) | Build a lightweight, event-driven function runtime that supports **bidirectional interaction** with smart contracts. Developers can register serverless functions that (a) respond to on-chain events (e.g., NFT minted, proposal passed), and (b) trigger smart contract calls from backend logic (e.g., after a workflow completes or a condition is met). Functions can also emit sync updates, modify app state, or interact with external APIs — all without centralized infrastructure. |
 | **3.** | Plugin Runtime API | Define a plugin interface for sandboxed code execution (WASM or restricted JS). Integrate runtime with developer-deployable extensions. |
 | **4.** | Admin Dashboard Extension | Extend the React dashboard to allow function creation, log inspection, and event simulation. |
 | **5.** | Example Application | Example: An NFT minting contract that triggers an off-chain profile creation or leaderboard update, demonstrating two-way interaction. |
-
 
 ## Future Plans
 
