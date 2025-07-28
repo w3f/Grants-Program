@@ -1,9 +1,8 @@
 # Samaritan
 
 - **Team Name:** Algorealm
-- **Payment Details:**
-  - **DOT**: 14pG7HieCjNk2hZ4X2YvxkbpAXs9oCeW8aNZcD7tD2tpaJT9
-  - **Payment Address**: 14G7SjRE2TbWVH2yXNe2uwYU1H8Q4c4hyWk892naB3eX7KTy (Polkadot AssetHub)
+- **DOT**: 14pG7HieCjNk2hZ4X2YvxkbpAXs9oCeW8aNZcD7tD2tpaJT9
+  - **Payment Address**: 15M8sYRQSbErkg7eFMCHfpsGqR484A1YA4gHhfwBokDcV6aP (Polkadot AssetHub)
 - **Level:** 3
 
 
@@ -12,40 +11,43 @@
 Samaritan is a decentralized backend-as-a-service (BaaS) platform that offers Firebase-like APIs for building real-time Web3 applications.
 
 ### Overview
-Samaritan is a modern backend for Web3 apps that combines a real-time document database, decentralized authentication, and peer-to-peer storage, making it easy to build collaborative, data-driven dapps without relying on centralized servers.
+
+**Samaritan** is a modern backend for Web3 apps, offering real-time document sync, wallet-based authentication, and a serverless function layer for event-driven logic — all without relying on centralized infrastructure. It enables developers to build collaborative, reactive dApps with the speed and simplicity of Firebase, but with the principles of decentralization at its core.
 
 
 **Integration with Substrate / Polkadot**  
-Samaritan will interoperate with Polkadot through:
-- Polkadot.js-based wallet auth
+Samaritan integrates seamlessly with the Polkadot ecosystem via:
 
-**Why We’re Building This**  
-Firebase has become the go-to backend for modern app development because it's fast, simple, and powerful — developers can build, test, and iterate in hours, not weeks. It offers real-time updates, easy authentication, and seamless data storage with minimal setup, making it a joy to use.
+- **Wallet-based authentication** using Polkadot.js
+- **Event listeners** for Ink! smart contracts
+- **Off-chain triggers** responding to on-chain activity
 
-But Firebase is also a centralized system, controlled by a single entity. In the Web3 world, that’s a dealbreaker.
 
-Samaritan brings the developer experience of Firebase into the decentralized web — enabling real-time apps that are easy to build and iterate on, while upholding Web3 values like data ownership, trustlessness, and composability. With familiar tools and interfaces, Samaritan empowers developers to move fast without compromising on sovereignty or control.
+**Why We’re Building This**
+
+Firebase revolutionized app development by giving developers instant access to tools for real-time data, authentication, and cloud functions — allowing rapid iteration without backend complexity. But Firebase is a closed, centralized service — unsuitable for the Web3 vision of trustless, user-owned infrastructure.
+
+Samaritan brings the Firebase experience to Web3: fast to integrate, powerful for real-time collaboration, and aligned with decentralization. Developers get a familiar stack — instant auth, real-time sync, and programmable logic — while users retain control over identity and data. Samaritan helps dApp teams move quickly without giving up sovereignty or composability.
 
 ### Project Details
 
-Samaritan is a backend-as-a-service (BaaS) designed specifically for decentralized applications. Inspired by the developer experience offered by platforms like Firebase — including real-time data updates, simple authentication, and easy integration — Samaritan brings those features to the Web3 space while preserving decentralization and data sovereignty.
+**Samaritan** is a backend-as-a-service (BaaS) designed for decentralized applications. It brings the simplicity and power of Firebase — including real-time data updates, plug-and-play authentication, and reactive backend logic — into the Web3 world, without compromising on decentralization or user ownership.
 
-Unlike traditional backends where data and authentication are managed by centralized providers, Samaritan uses decentralized storage (e.g., IPFS) and blockchain-based authentication through wallet signatures (e.g., MetaMask, Polkadot.js). 
+Instead of relying on centralized services, Samaritan uses **wallet-based authentication** (e.g., Polkadot.js, MetaMask) and connects directly to **blockchain smart contracts** for event-based triggers. It enables a two-way interaction model: smart contracts can emit events that trigger backend logic, and backend logic can also invoke smart contracts when needed.
 
-Rather than trying to replace all of Firebase, Samaritan focuses on the core features most useful to dApp developers — authentication, storage, and real-time updates — and builds them to be modular and interoperable.
+Rather than replicating all of Firebase, Samaritan focuses on the core features that matter most for dApp developers — **authentication**, **real-time sync**, and **serverless function execution** — all built to be modular, decentralized, and chain-agnostic.
+
 
 #### Key Features of Samaritan
 
-1. Decentralized Authentication:
+1. Decentralized Authentication
 Samaritan replaces traditional email-and-password systems with a seamless, wallet-based login experience. Users authenticate using cryptographic signatures from wallets like MetaMask or Polkadot.js, allowing for secure, passwordless access without reliance on centralized identity providers. This form of authentication is inherently self-sovereign—users own and control their identity entirely—and it's interoperable across apps, making it easy for developers to support cross-platform login while respecting user privacy and autonomy.
-
-2. Real-Time Document Sync:
+2. Real-Time Document Sync
 Samaritan includes a real-time, peer-to-peer document database built in Rust, designed for speed, safety, and collaboration at scale. It tracks structured JSON data and supports live updates across users and devices, enabling features like shared state, presence, and history. Powered by SwarmNL, it achieves low-latency communication without relying on a central server. While CRDTs may be used internally to handle conflict resolution, the core abstraction remains a developer-friendly document store — not a merge engine. This makes it ideal for building real-time dashboards, multiplayer apps, co-editing tools, and any product that benefits from decentralized, responsive state.
+3. Smart Contract Event Integration  
+Samaritan enables bi-directional interaction with smart contracts, bringing dynamic, event-driven logic to Web3 apps. On one hand, developers can register functions that react to on-chain events—like minting an NFT or updating a DAO proposal—executing off-chain code securely in response. On the other hand, Samaritan can also trigger smart contracts based on backend logic or user actions (e.g., writing to the database, reaching a threshold, or invoking a workflow). These interactions are processed through a lightweight function runtime that mirrors cloud functions—without central infrastructure—enabling powerful automation between on-chain and off-chain systems.
 
-3. Decentralized Storage:
-Instead of sending all data to a central server, Samaritan embraces a local-first, peer-to-peer storage model. It uses CRDTs (Conflict-free Replicated Data Types) to ensure that data written offline or in parallel across devices always merges correctly. Data is stored locally, synced in real-time when connections are available, and optionally anchored to IPFS for persistence. This approach not only improves performance and privacy but also makes applications resilient to network interruptions and server outages.
-
-
+This makes it ideal for building collaborative Web3 applications — from multiplayer tools and real-time dashboards to automated workflows and co-editors — all on decentralized infrastructure.
 This makes it ideal for building collaborative apps like editors, shared dashboards, or multiplayer tools — all on Web3 infrastructure.
 
 Samaritan builds on our earlier work developing [SwarmNL](https://github.com/algorealmInc/SwarmNL), a lightweight peer-to-peer networking layer designed for real-time synchronization without centralized servers, built on libp2p. With this, we are able to bring real-time, decentralized communication patterns to Samaritan — allowing users and devices to sync data directly, securely, and with minimal latency. SwarmNL’s architecture forms the backbone of Samaritan’s real-time update engine.
@@ -57,31 +59,33 @@ Samaritan builds on our earlier work developing [SwarmNL](https://github.com/alg
 - React (Admin Dashboard)
 
 #### What Samaritan is not
-Samaritan is not intended to be a full-fledged blockchain or smart contract platform. While it leverages decentralization principles, it will not provide its own consensus mechanism, token economy, or on-chain execution environment. Instead, it integrates with existing chains (e.g., Ethereum, Polkadot) for identity proofs or data anchoring when needed.
+Samaritan is not a blockchain or smart contract platform. It doesn't aim to create a new consensus layer, token economy, or on-chain execution environment. Instead, it integrates with existing chains like Ethereum and Polkadot for authentication, data anchoring, and event-driven workflows.
 
-Additionally, Samaritan does not aim to replicate Firebase feature-for-feature. Services like analytics, crash reporting, or user segmentation dashboards are outside the scope of this MVP. Our focus is tightly centered on authentication, storage, and real-time sync—reimagined in a trust-minimized, user-owned way. Features beyond that will only be explored with community feedback and scaling demands.
+It also isn’t trying to replicate Firebase feature-for-feature. Services like analytics, crash reporting, or deep user segmentation are out of scope for the MVP. Samaritan is focused on solving three core backend primitives for Web3 apps: authentication, real-time data sync, and smart contract integration. Additional features will be considered based on real developer needs and community feedback.
 
 ### Ecosystem Fit
-Samaritan fits into the Polkadot ecosystem as a developer tool for handling real-time data sync, decentralized identity, and user-owned storage. It provides basic building blocks that parachains, dapps, or wallets can use when they need real-time collaboration or persistent user data — without falling back on centralized servers or databases. Rather than offering a full platform, Samaritan focuses on enabling these core capabilities in a way that aligns with Polkadot’s goals around interoperability, privacy, and user control.
+Samaritan fits into the Polkadot ecosystem as a lightweight developer tool for real-time data sync, decentralized identity, and smart contract event integration. It provides essential backend primitives—like wallet-based authentication, live peer-to-peer collaboration, and contract-triggered workflows—that parachains, dApps, and wallets can use without depending on centralized infrastructure.
+
+Rather than trying to be a full-featured platform, Samaritan focuses on enabling these foundational capabilities in a modular, pluggable way that supports Polkadot’s vision of interoperability, trustlessness, and developer empowerment.
 
 
-#### Target Audience
+#### 🎯 Target Audience
 
 Our primary target audience includes:
 
-- **dApp developers** looking to add decentralized, collaborative features to their apps (e.g., multiplayer editing, shared data spaces).
-- **Wallet and identity providers** exploring richer DID integrations and account-linked state.
-- **Parachain teams** needing decentralized sync and document coordination without spinning up extra infrastructure.
-- **End-users and builders** who want trustless tools to collaborate, store, and sync information without vendor lock-in.
+- **dApp developers** who need real-time, collaborative features like shared dashboards, multiplayer editing, or live session data.
+- **Wallet and identity providers** looking to extend DID systems with live application state tied to users.
+- **Parachain and infrastructure teams** that want to integrate real-time app logic or contract-triggered workflows without maintaining extra backend services.
+- **Builders and creators** seeking developer-friendly, decentralized alternatives to Firebase for identity and event-driven apps.
 
-#### Needs Met by Samaritan
+#### ✅ Needs Met by Samaritan
 
-Samaritan solves key problems faced by dapp developers:
+Samaritan solves critical backend challenges for decentralized app developers:
 
-- **Real-time document database** for syncing data across users and devices without relying on centralized servers.  
-- **Decentralized, serverless infrastructure** to reduce costs and improve availability.  
-- **Wallet-based authentication** and cross-platform identity support.  
-- **Private, shared state** for collaborative apps — without exposing data to third parties.
+- **Live document synchronization** across clients using peer-to-peer messaging — no centralized relay or server needed.  
+- **Wallet-based authentication** using Polkadot.js or MetaMask, with self-sovereign sessions and no passwords.  
+- **Event-driven backend logic**, triggered by smart contract events or external inputs — allowing rich, decentralized workflows.  
+- **Infrastructure minimization**, by removing the need to maintain custom backend stacks or centralized APIs.
 
 
 #### How These Needs Were Identified
@@ -91,37 +95,26 @@ We identified these needs through a combination of:
 - Experience from building **SwarmNL**, our CRDT engine base, and testing it in apps requiring offline sync and real-time collaboration.
 - https://www.buildondot.com/ideas/web3-firebase/
 
-#### Similar Projects in the Polkadot Ecosystem
+Samaritan distinguishes itself by combining **wallet-based authentication**, **real-time peer-to-peer data sync**, and **event-driven backend logic** into a cohesive, developer-friendly backend. It is purpose-built for applications that require **live, collaborative experiences**—without relying on centralized infrastructure. By abstracting complex decentralized primitives into familiar interfaces, Samaritan empowers developers to build modern, Web3-native apps with minimal friction.
 
-A few projects address fragments of what Samaritan offers:
-
-- **KILT** and **Litentry** provide decentralized identity and verifiable credentials. However, they do not support real-time collaboration, shared state management, or decentralized data synchronization across users and devices.
-- **Crust Network** is focused on decentralized file storage, offering an IPFS-based alternative to cloud storage. While powerful for static content, it does not address dynamic application state or real-time collaboration.
-Apillon is like a Web3 version of AWS, offering modular tools such as storage, identity, and hosting. However, it lacks the real-time sync, collaborative data flow, and decentralized conflict resolution that make Samaritan feel more like using Firebase. Samaritan is designed with the user experience in mind—fast, real-time, and built for seamless collaboration.
-- **Apillon** is like a Web3 version of AWS, offering modular tools such as storage, identity, and hosting. However, it lacks the real-time sync, collaborative data flow, and decentralized conflict resolution that make Samaritan feel more like using Firebase. Samaritan is designed with the user experience in mind — fast, real-time, and built for quick execution and seamless collaboration.
-
-
-
-Samaritan distinguishes itself by combining decentralized identity, real-time data synchronization, and self-sovereign storage into a cohesive, developer-friendly backend — specifically built for applications that need collaborative, live experiences without relying on centralized infrastructure.
 
 
 #### What Makes Samaritan Different
 
 Samaritan is a unified Web3 backend that:
 
-- Includes a **decentralized document database** powered by a custom CRDT engine (built on SwarmNL) for real-time, conflict-free collaboration.
-- Provides **serverless authentication** using Ethereum and Polkadot wallets — no backend setup needed.
-- Leverages **IPFS** for durable, self-sovereign storage with a fast, reactive sync layer optimized for edge performance.
-- Delivers a **simple, Firebase-like developer experience**, with intuitive APIs and familiar patterns — no steep learning curve.
-
+- Includes a **decentralized document database** powered by a custom sync engine (built on SwarmNL) for real-time, conflict-free collaboration.
+- Provides **serverless authentication** using Ethereum and Polkadot wallets — no username/password or backend setup required.
+- Supports **event-driven smart contract integration**, enabling both reactive (listen to events) and proactive (trigger contracts) interactions.
+- Delivers a **simple, Firebase-like developer experience**, with intuitive SDKs and patterns for building live, collaborative apps — without the centralized overhead.
 
 #### Similar Projects in Other Ecosystems
 
 We’ve studied comparable efforts outside Polkadot:
 
-- **Automerge** and **Yjs** offer CRDTs, but lack native identity or storage integration.
-- **Textile**, **3Box/Ceramic**, and **OrbitDB** focus on decentralized storage, but don’t provide deterministic sync or strong offline collaboration guarantees.
-- **Liveblocks** and **Firebase** are performant and popular, but centralized and not suitable for trustless systems.
+- **Automerge** and **Yjs** offer CRDTs, but lack native wallet-based auth or contract integration.
+- **Textile**, **3Box/Ceramic**, and **OrbitDB** focus on decentralized identity or storage, but don’t provide real-time collaboration or bidirectional contract logic.
+- **Liveblocks** and **Firebase** are widely used for real-time apps but are centralized and unsuitable for decentralized, trust-minimized systems.
 
 #### Why Samaritan is Unique
 
@@ -129,17 +122,16 @@ Samaritan is the only solution that combines:
 
 - **Real-time CRDT-based syncing** for live, conflict-free collaboration  
 - **Decentralized identity** using Ethereum and Polkadot wallets  
-- **Distributed, self-sovereign storage** powered by IPFS  
+- **Smart contract integration** for two-way communication between on-chain events and off-chain logic  
 
 ...all in a single, protocol-native system purpose-built for modern Web3 applications.
-
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
 - Name of team leader: Adedeji Adebayo
-- Names of team members: Sacha Lansky
+- Names of team members: Sacha Lansky, Promise Okafor, Daniel Brai
 
 ### Contact
 
@@ -148,8 +140,8 @@ Samaritan is the only solution that combines:
 
 ### Legal Structure
 
-- **Registered Address:**  n/a
-- **Registered Legal Entity:** n/a
+- **Registered Address:**  	374 Westgate St, Apt 12, Iowa City, Iowa 52246 Us
+- **Registered Legal Entity:** Algorealm, Inc.
 
 ### Team's experience
 
@@ -159,11 +151,14 @@ He served as core developer on [**SwarmNL**](https://github.com/algorealmInc/Swa
 
 Sacha Lansky joined Parity in 2021, where he led all things developer relations including launching initiatives like the Substrate Newsletter, Substrate Seminar and SDK Unwinds and has played a key role in the content launch for the first wave of the Polkadot Blockchain Academy. He now leads the developer relations team at WebZero, delivering hackathons for the ecosystem and helping developers build on Polkadot. He was also the project lead for the development of SwarmNL.
 
+Promise Okafor is a seasoned software engineer with over 5 years of experience in crafting scalable and accessible frontend applications using JavaScript and its frameworks, including React and Next.js. With a keen eye for detail, Promise ensures that every aspect of the user experience is meticulously considered and executed. His expertise spans a range of technologies, including React, Next.js, Tailwind CSS, TypeScript, Redux, and TanStack Query, allowing him to deliver high-quality solutions that meet the demands of modern web development.
+
+Daniel Brai is a Software Engineer over 3 years of experience building web applications and APIs. Daniel specializes in backend development and has a passion for artificial intelligence and machine learning.  He uses right tool for the job as such he has expertise using Python, Typescript, Golang, Rust and Elixir in various projects.
+
 ### Team Code Repos
 
 - https://github.com/algorealminc
-- https://github.com/thewoodfish
-- https://github.com/sacha-l
+
 
 ## Development Status :open_book:
 
@@ -184,14 +179,14 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 
 - **Estimated duration:** 1 month  
 - **FTE:** 1.5  
-- **Costs:** $14,400
+- **Cost:** $14,000
 
 | Number | Deliverable | Specification |
 |--------|-------------|---------------|
-| **0a.** | License | MIT License. All code and deliverables for this milestone will be released under the MIT license. |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | Full inline documentation will be provided for all Rust and TypeScript modules. A setup guide will demonstrate how to integrate wallet-based authentication. |
 | **0c.** | Testing and Testing Guide | The authentication logic will be covered with unit and integration tests. A guide will detail how to test signature verification, session handling, and API endpoints. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| **0d.** | Docker | A `Dockerfile` and `docker-compose.yml` will be provided to run the Rust backend and React admin panel locally. |
 | **1.** | Authentication Rust Backend | A Rust backend that verifies signatures from Polkadot or Ethereum wallets. It supports login by verifying a signed challenge (nonce), issues JWTs for authenticated sessions, and handles token refresh and revocation. |
 | **2.** | TS/JS Auth SDK | A TypeScript/JavaScript SDK that handles wallet connection, retrieves a challenge from the backend, signs it, and exchanges it for a JWT. Supports both Polkadot.js and MetaMask-compatible wallets. |
 | **3.** | React Admin Panel | A React-based admin dashboard to monitor and test authentication flows, including wallet connections and active sessions. |
@@ -206,15 +201,15 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 
 - **Estimated Duration:** 1.5 months  
 - **FTE:** 1.5  
-- **Costs:** $21,600
+- **Cost:** $21,600
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | Inline code documentation and a technical guide explaining the real-time sync engine, how it integrates with SwarmNL, and how clients can listen for updates and push changes. |
 | **0c.** | Testing + Testing Guide | Unit and integration tests covering document syncing, subscription logic, and merge resolution. A test guide will explain how to run local and simulated multi-client scenarios. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **1.** | Real-Time Document Engine | A Rust-based backend that maintains live JSON documents, handles client subscriptions, and broadcasts updates using SwarmNL. |
+| **0d.** | Docker | A Docker image to run the real-time document sync engine locally for testing and development. |
+| **1.** | Real-Time Document Engine (Rust) | A Rust-based backend that maintains live JSON documents, handles client subscriptions, and broadcasts updates using SwarmNL. |
 | **2.** | Pub/Sub Protocol | A structured topic-based protocol for syncing documents and metadata updates (e.g., `doc:update`, `doc:delete`, `user:presence`). |
 | **3.** | TypeScript/Javascript Client SDK | A browser-compatible SDK for subscribing to documents, applying updates, listening for changes and handling reconnection logic. |
 | **4.** | Integration with Auth System | Real-time access control using tokens from Milestone 1. Ensures only authenticated and authorized users can read/write documents. |
@@ -222,26 +217,24 @@ Now that SwarmNL is stable and proven, we are in the strongest position yet to r
 | **6.** | Real-Time Demo App | A minimal collaborative app demonstrating real-time editing of shared documents across multiple clients, powered by the sync engine. |
 
 
-### 🚀 Milestone 3 — Decentralized Storage
+### 🚀 Milestone 3 — Smart Contract Integration & Extensibility
 
 - **Estimated Duration:** 1.5 months  
 - **FTE:** 1.5  
-- **Costs:** $21,600
-
+- **Cost:** $21,600
 
 | Number | Deliverable | Specification |
 |--------|-------------|---------------|
-| **0a.** | License | Code released under the MIT license. |
-| **0b.** | Documentation | Inline code documentation and a comprehensive developer guide detailing how to run storage nodes, connect via SDK, upload/download data, and manage access control. |
-| **0c.** | Testing and Testing Guide | Unit and integration tests covering upload, retrieval, access enforcement, CID handling, and signature validation. A testing guide will explain test execution. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **0e.** | Article | Publish an article describing Samaritan’s decentralized storage architecture, SwarmNL integration, and advantages over centralized cloud storage. |
-| **1.** | Storage Node | Core daemon implemented in Rust handling storage, CID resolution, signature validation, access control, and peer synchronization via SwarmNL. |
-| **2.** | Storage Gateway API | RESTful and WebSocket gateway exposing endpoints for upload/download with signed request validation and SwarmNL integration. |
-| **3.** | TypeScript SDK | Browser- and Node.js-compatible SDK for interacting with the storage layer. |
-| **4.** | React Admin Interface | Dashboard for developers and node operators to view stored content, metadata, and node replication status. |
-| **5.** | Binary Publishing | Publish compiled binaries for easy installation and deployment on popular platforms (Linux, macOS, Windows). |
-| **6.** | Example Applications | Provide example scripts and demo applications showing the full authentication, storage, retrieval, and real-time update workflow from front-end to backend. |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | Developer documentation on how to deploy cloud functions triggered by Ink! smart contract events. Includes architecture guides and setup instructions. |
+| **0c.** | Testing + Guide | Tests for contract-event listeners and trigger executions, with instructions for simulating events and observing side effects. |
+| **0d.** | Docker | Updated Docker environment with support for smart contract event listening and trigger execution. |
+| **1.** | Smart Contract Event Listener (Rust) | Build a background service that listens for contract events from a Substrate-based chain (via WebSocket), parses relevant logs, and forwards them to registered functions. |
+| **2.** | Cloud Function Engine (Rust) | Add a module that lets developers register and deploy custom logic (e.g., serverless functions) to run in response to events. These functions can access document data, trigger sync, or call external APIs. |
+| **3.** | Plugin Runtime API | Define a plugin interface for sandboxed code execution (WASM or restricted JS). Integrate runtime with developer-deployable extensions. |
+| **4.** | Admin Dashboard Extension | Extend the React dashboard to allow function creation, log inspection, and event simulation. |
+| **5.** | Example Application | Example: An NFT minting contract that triggers an off-chain profile creation or leaderboard update, demonstrating two-way interaction. |
+
 
 ## Future Plans
 
@@ -257,4 +250,4 @@ Samaritan is part of a broader vision we’ve been pursuing since our initial pr
 
 ## Additional Information :heavy_plus_sign:.
 
-**How did you hear about the Grants Program?** Personal recommendation.*
+**How did you hear about the Grants Program?** Personal recommendation.
