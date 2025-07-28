@@ -1,18 +1,10 @@
 # Cumulus MultiBlock Prover
 
-> [!NOTE]
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
-
 - **Team Name:** Navatim Labs
 - **Payment Details:**
   - **DOT**: 14uNH42NjxS3c4VSxVyHjZYea5ZyJEYWYxjRzmxKQB75pdRB
   - **Payment**: 14uNH42NjxS3c4VSxVyHjZYea5ZyJEYWYxjRzmxKQB75pdRB (USDT)
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
-
-> [!IMPORTANT]
-> *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+- **Level:** 2
 
 ## 2. Project Overview
 
