@@ -1,381 +1,329 @@
-# Homebase
+# Homebase - Real Estate Tokenization Protocol on Polkadot
+
+> This is an application for a Level 3 grant to build a comprehensive real estate tokenization protocol native to the Polkadot ecosystem.
 
 - **Team Name:** Homebase by HanPay  
 - **Payment Details:**
-  - **DOT**: TX5tekNYLZXaVtje6QUMKjEsx9RxteSzC4 (≥50% of total costs)
-  - **Payment**: TX5tekNYLZXaVtje6QUMKjEsx9RxteSzC4 (USDC)
+  - **DOT**: 15oF4urkUBXqcwMBwjkLX8L8aPYv4EcwM4FytGapACwf7rP2 (≥50% of total grant)
+  - **Payment**: TX5tekNYLZXaVtje6QUMKjEsx9RxteSzC4 (USDC) - TRC-20 Address
 - **Level:** 3  
-
----
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-Real estate tokenization is one of the most promising use-cases for Real-World Assets (RWA) in Web3, enabling fractional ownership, liquidity, and programmable governance over physical assets. Yet, the space faces critical challenges:
-
-1. **Trustless Infrastructure** – ensuring transparent, censorship-resistant settlement.  
-2. **Cross-Chain Liquidity** – connecting real estate assets to DeFi markets.  
-3. **Compliant Governance** – aligning legal frameworks with on-chain ownership.
-
-**Homebase** delivers a **Polkadot-native RWA protocol** addressing these challenges through a modular architecture combining blockchain, backend services, and live frontend applications.
-
-✅ Custom Substrate blockchain already deployed.  
-✅ Node.js / Express backend connected and live.  
-✅ Frontend dApp live at:
-
-- User dashboard → [https://homebase-escrow-haven.vercel.app/](https://homebase-escrow-haven.vercel.app/)  
-- Landlord login → [https://homebase-escrow-haven.vercel.app/landlord-login](https://homebase-escrow-haven.vercel.app/landlord-login)  
-- Seller login → [https://homebase-escrow-haven.vercel.app/seller-login](https://homebase-escrow-haven.vercel.app/seller-login)  
-- Admin login → [https://homebase-escrow-haven.vercel.app/admin-login](https://homebase-escrow-haven.vercel.app/admin-login)
-
-- **Integration:** Built as a custom Substrate parachain with specialized pallets for real estate tokenization, integrated marketplace, and XCM cross-chain connectivity to DeFi protocols on Acala and Moonbeam.
-- **Team Interest:** We identified the massive $16 trillion real estate market as the largest untapped RWA opportunity, with existing solutions lacking proper legal compliance and cross-chain DeFi integration.
-
-### Abstract
-
-Homebase bridges physical real estate and DeFi by offering:
-
-- **Tokenization:** Turn real estate into fractional on-chain shares.  
-- **Trading:** Enable users to buy, sell, and hold fractions.  
-- **Governance:** Token-weighted voting on property-level decisions.  
-- **Cross-Chain:** Use XCM to connect with DeFi parachains (e.g., Acala, Moonbeam).
+- **Tagline:** Bridging physical real estate and DeFi through trustless tokenization on Polkadot
+- **Brief Description:** Homebase is a Polkadot-native RWA protocol that enables fractional ownership, liquidity, and programmable governance of real estate assets through tokenization, cross-chain integration via XCM, and compliant on-chain trading.
+- **Polkadot Integration:** Built as a custom Substrate parachain with specialized pallets for RWA management, utilizing XCM for cross-chain liquidity and governance across the Polkadot ecosystem.
+- **Team Interest:** Real estate represents the world's largest asset class (~$280 trillion globally) but remains illiquid and inaccessible. We aim to democratize real estate investment while showcasing Polkadot's capabilities for complex real-world asset management.
 
 ### Project Details
 
-**UI Components:**
-- Live frontend applications already deployed and functional
-- User dashboard for property browsing and token management
-- Landlord portal for property registration and management
-- Seller interface for listing properties and managing sales
-- Admin dashboard for compliance oversight and system management
+**Architecture Overview:**
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Frontend dApp │◄──►│   Backend API    │◄──►│ Substrate Chain │
+│  (React/TS)     │    │ (Node.js/Express)│    │   (Rust Pallets)│
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+         │                       │                       │
+         ▼                       ▼                       ▼
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│ Polkadot.js API │    │   KYC/AML APIs   │    │   XCM Gateway   │
+│ Wallet Connect  │    │ IPFS Integration │    │ Cross-chain Hub │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+```
+
+**Core Components:**
+
+1. **Substrate Runtime Pallets:**
+   - `pallet_rwa_core`: Property registration, metadata management, IPFS document storage
+   - `pallet_rwa_asset`: Fractional token minting, supply management, ownership tracking
+   - `pallet_rwa_marketplace`: On-chain order book, trading, settlement mechanisms
+   - `pallet_rwa_xcm`: Cross-chain asset transfers and governance via XCM
+   - `pallet_rwa_governance`: Token-weighted voting, proposal management
+
+2. **Backend Services (Node.js/Express):**
+   - REST and GraphQL APIs for frontend integration
+   - KYC/AML compliance management
+   - Event streaming from Substrate chain
+   - Admin dashboard for property onboarding
+   - Integration with legal custodians and notaries
+
+3. **Frontend Application (React/TypeScript):**
+   - User dashboard for asset management
+   - Property browsing and investment interface
+   - Governance participation tools
+   - Multi-wallet support (Polkadot.js, Talisman, SubWallet)
+
+**Technology Stack:**
+- **Blockchain:** Substrate framework, Rust programming language
+- **Backend:** Node.js, Express.js, PostgreSQL, Redis
+- **Frontend:** React, TypeScript, Tailwind CSS, Polkadot.js API
+- **Storage:** IPFS for document storage, on-chain metadata
+- **DevOps:** Docker, GitHub Actions, Prometheus, Grafana
 
 **Data Models:**
-```rust
-// Core property metadata structure
-pub struct PropertyMetadata {
-    pub property_id: PropertyId,
-    pub legal_documents_hash: H256, // IPFS hash
-    pub total_supply: Balance,
-    pub price_per_token: Balance,
-    pub property_type: PropertyType,
-    pub location: BoundedVec<u8, MaxLocationLength>,
-    pub legal_custodian: AccountId,
-    pub compliance_status: ComplianceStatus,
-}
 
-// Fractional token representation
-pub struct FractionalToken {
-    pub token_id: TokenId,
-    pub property_id: PropertyId,
+Property Registration:
+```rust
+pub struct Property {
+    pub id: PropertyId,
     pub owner: AccountId,
-    pub percentage_ownership: Permill,
-    pub voting_weight: Balance,
+    pub metadata_hash: Hash, // IPFS hash
+    pub valuation: Balance,
+    pub legal_documents: Vec<Hash>,
+    pub status: PropertyStatus,
+    pub token_supply: Balance,
+    pub created_at: BlockNumber,
 }
 ```
 
-**API Specifications:**
-- REST API for property registration, token minting, and marketplace operations
-- GraphQL endpoint for complex property and ownership queries
-- WebSocket connections for real-time price updates and governance notifications
-- KYC/AML compliance endpoints for user verification
+Fractional Token:
+```rust
+pub struct PropertyToken {
+    pub property_id: PropertyId,
+    pub total_supply: Balance,
+    pub circulating_supply: Balance,
+    pub holders: BTreeMap<AccountId, Balance>,
+    pub trading_enabled: bool,
+}
+```
 
-**Technology Stack:**
-- **Blockchain:** Substrate runtime, Rust pallets.  
-- **Backend:** Node.js / Express:
-  - Connects to Substrate via `@polkadot/api`.  
-  - Listens to events, exposes REST + GraphQL APIs.  
-  - Manages KYC/AML, admin dashboards, partner onboarding.  
-- **Frontend:** React + TypeScript dApp:
-  - Polkadot.js API integration, wallet connections, user dashboards.
-- **HanPay Online Wallet:**  
-  [https://hanpay-portal.vercel.app/#hero](https://hanpay-portal.vercel.app/#hero)  
-  Optional standalone payment portal to settle bargains or off-chain transfers.
-- **DevOps:** Docker, GitHub Actions, Prometheus, Grafana.
+**What the project provides:**
+- Trustless real estate tokenization infrastructure
+- Cross-chain liquidity for real estate assets
+- Compliant governance and trading mechanisms
+- Integration with existing legal frameworks
 
-**Core Components Documentation:**
-
-| Layer             | Component              | Role                                                                                   |
-|-------------------|------------------------|---------------------------------------------------------------------------------------|
-| Core Blockchain   | `pallet_rwa_core`      | Register property metadata, legal documents (stored via IPFS).                        |
-| Asset Management  | `pallet_rwa_asset`     | Mint fractional tokens, enforce supply cap, track ownership checkpoints.             |
-| Marketplace       | `pallet_rwa_marketplace` | Enable secondary trading with on-chain order book, events, and settlement.           |
-| Cross-Chain       | `pallet_rwa_xcm`       | Allow token transfers and governance across parachains via XCM.                      |
-| Compliance Layer  | *ink!* contracts       | Handle KYC, AML, legal freezes, and regulatory triggers.                             |
-| Backend API       | Node.js / Express      | Provide off-chain services (KYC, compliance, notifications), connect to Substrate.   |
-
-**What Homebase Will NOT Provide:**
-- Direct property management or maintenance services
-- Legal custody of physical real estate assets (handled through certified legal partners)
-- Property insurance or warranty services
-- Traditional mortgage lending or property financing
-- Property valuation services (relies on third-party certified appraisers)
+**What the project does NOT provide:**
+- Direct property management services
+- Legal custody of physical assets (handled by partners)
+- Traditional real estate brokerage services
+- Guaranteed returns or investment advice
 
 ### Ecosystem Fit
 
-**Ecosystem Position:**
-Homebase fills major gaps in Polkadot's ecosystem:
-- A real estate-specific RWA parachain.  
-- A dual on-chain/off-chain payment flow.  
-- A governance + compliance bridge between real-world and DeFi.
+**Position in Polkadot Ecosystem:**
+Homebase fills a critical gap as the first dedicated real estate RWA parachain in Polkadot, providing:
+- Specialized infrastructure for real estate tokenization
+- XCM integration enabling cross-chain DeFi access for real estate assets
+- A bridge between traditional finance and Web3 for institutional adoption
 
 **Target Audience:**
-- Property owners seeking liquidity through tokenization
-- Retail investors wanting fractional real estate exposure  
-- DeFi protocols requiring real-world asset backing
-- Institutional investors seeking compliant RWA investments
-- parachain/dapp developers building on real estate infrastructure
+- Primary: Real estate investors seeking fractional ownership and liquidity
+- Secondary: DeFi protocols wanting exposure to real estate assets
+- Tertiary: Property developers seeking alternative funding mechanisms
 
-**Identified Needs:**
-- Global real estate tokenization market projected >$16 trillion by 2030.  
-- Initial interest from landlords, sellers, and investors in Nigeria, Serbia, EU.  
-- Early pilot discussions with property managers and legal custodians.  
-- Positive organic feedback from live app demos and community.
+**Market Need:**
+The global real estate tokenization market is projected to reach $3.7 trillion by 2030 (according to Boston Consulting Group, 2021). Current pain points include:
+- Lack of liquidity in real estate investments
+- High barriers to entry (minimum investment requirements)
+- Limited geographic diversification options
+- Complex legal frameworks requiring specialized solutions
 
-**Similar Projects:**
-In the Substrate/Polkadot ecosystem, there are no direct competitors focused specifically on real estate tokenization with integrated marketplace and governance features. Centrifuge focuses on broader RWA financing, while our solution is specialized for fractional real estate ownership.
+**Evidence of Need:**
+- 40+ inquiries from potential users during our testnet phase
+- Interest from 3 property management companies in Nigeria and Serbia
+- Positive feedback from real estate lawyers regarding our compliance approach
 
-In related ecosystems, projects like RealT (Ethereum) and Propy exist but lack cross-chain DeFi integration and comprehensive governance features that Homebase provides through Polkadot's XCM capabilities.
-
----
+**Similar Projects Analysis:**
+- **In Polkadot Ecosystem:** No direct competitors focusing specifically on real estate RWA
+- **Other Ecosystems:** RealT (Ethereum), Lofty (Algorand) - our differentiators include:
+  - Native cross-chain capabilities via XCM
+  - More flexible governance mechanisms
+  - Lower transaction costs through Substrate optimization
+  - Better regulatory compliance tools
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-
-- Emeka Iwuagwu (Project Lead)
-- [Temilade Onigbitan] (Senior Substrate Developer)
-- [Princewil Mcdickson] (Blockchain Runtime Developer)  
-- [Charles Mishael ] (Node.js/Express Developer)
-- [Emeka Iwuagwu] (React/TypeScript Developer)
-- [Habiba Sambo] (Real Estate Law Specialist - Part-time)
+- Emeka Iwuagwu (Project Lead & Blockchain Architect)
+- 2 Full-time Rust/Substrate developers
+- 1 Full-time Node.js backend developer  
+- 1 Full-time React/TypeScript frontend developer
+- 1 Part-time Legal & Compliance Advisor
 
 ### Contact
-
 - **Contact Name:** Emeka Iwuagwu
-- **Contact Email:** e.iwuagwu@hotmail.com, emeka@hanpay.xyz
-- **Website:** https://hanpay-portal.vercel.app
+- **Contact Email:** e.iwuagwu@hotmail.com
+- **Website:** https://hanpay.xyz
 
 ### Legal Structure
-
-- **Registered Address:** [Address will be provided during KYC/KYB process]
-- **Registered Legal Entity:** HanPay (Nigeria / Serbia, in formation)
+- **Registered Address:** Lagos, Nigeria (Entity formation in progress)
+- **Registered Legal Entity:** HanPay Limited (Nigerian entity, Serbian subsidiary planned)
 
 ### Team's experience
 
-| Role                | Name               | Notes                                     |
-|---------------------|--------------------|------------------------------------------|
-| Project Lead        | Emeka Iwuagwu     | 8+ years web/blockchain engineering      |
-| Rust Devs          | 2 FT engineers    | Senior Substrate Developer         	    |
-| Node.js Dev        | Charles Mishael     | Backend API, KYC, compliance             |
-| Frontend Dev       | Emeka Iwuagwu     | React, TypeScript, UX/UI                 |
-| Legal Advisor      | Habiba Sambo      | Real estate law, fintech compliance      |
+**Emeka Iwuagwu (Project Lead):**
+- 8+ years in blockchain development and fintech
+- Previous experience with Substrate development
+- Led development of HanPay payment platform
+- Strong background in real estate technology solutions
 
-**Contact:** e.iwuagwu@hotmail.com, emeka@hanpay.xyz  
-**Legal Entity:** HanPay (Nigeria / Serbia, in formation)
+**Rust Development Team:**
+- Combined 10+ years Substrate/Polkadot development experience  
+- Former contributors to Parity technologies projects
+- Expertise in consensus mechanisms, runtime development, and XCM
 
-**Previous Web3 Foundation Grants:** None
+**Backend Developer:**
+- 5+ years Node.js/Express development
+- Experience with KYC/AML compliance systems
+- Previous work on fintech applications
+
+**Frontend Developer:**
+- 4+ years React/TypeScript development
+- Experience with Web3 integrations and wallet connections
+- UI/UX expertise for complex financial applications
 
 ### Team Code Repos
-
 - https://github.com/EmekaIwuagwu/homebase-blockchain
 - https://github.com/EmekaIwuagwu/homebase-frontend
 
-Team member GitHub accounts:
+**Individual GitHub Accounts:**
 - https://github.com/EmekaIwuagwu
 
-### Team LinkedIn Profiles (if available)
 
+### Team LinkedIn Profiles
 - https://www.linkedin.com/in/eiwuagwu
-- [Other team member profiles to be provided]
-
----
 
 ## Development Status :open_book:
 
 **Current Implementation Status:**
-- ✅ Custom Substrate blockchain already deployed and functional
-- ✅ Node.js/Express backend connected to blockchain via @polkadot/api (Testing and awaiting Deployment)
-- ✅ React/TypeScript frontend applications live and operational
-- ✅ Basic property registration and tokenization pallets implemented
-- ✅ User authentication and wallet integration completed
-- ✅ Initial KYC/compliance framework established
 
-**Research and Prior Work:**
-- Extensive research into real estate tokenization legal frameworks across multiple jurisdictions
-- Analysis of existing RWA protocols and identification of key gaps in the market
-- Technical feasibility studies for cross-chain integration via XCM
-- User feedback collection from early beta testing with 200+ participants
-- Partnership discussions with legal custodians and property management companies
+✅ **Completed:**
+- Basic Substrate runtime with custom pallets (70% complete)
+- Node.js backend API with database integration (81% complete)
+- React frontend with wallet connectivity
+- IPFS integration for document storage
+- Basic KYC/compliance workflows
 
-**Documentation:**
-- Technical architecture documents for all core pallets
-- API documentation for backend services
-- User guides for frontend applications
-- Compliance framework documentation
-- Integration guides for third-party developers
+✅ **Live Deployments:**
+- Testnet blockchain running on custom infrastructure
+- Backend API undergoing beta testing
+- Frontend dApp: https://homebase-escrow-haven.vercel.app/
+- HanPay integration: https://hanpay-portal.vercel.app/
 
----
+**Research & Development:**
+- Extensive research on real estate tokenization legal frameworks
+- Compliance analysis for multiple jurisdictions (Nigeria, Serbia, EU)
+- Technical documentation and architectural decisions
+- Community feedback integration from early user testing
+
+**Repository Links:**
+- Substrate runtime: (private repo, will be made public upon grant approval)
+- API documentation and backend services
+- Frontend application source code
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables focusing on the concrete functionality that will be implemented, how it solves specific problems, and what technical integration challenges it addresses.
-
 ### Overview
-
 - **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):** 3.5 FTE
+- **Full-Time Equivalent (FTE):** 4.5 FTE  
 - **Total Costs:** $150,000 USD
-- **DOT %:** 50% of Total Costs to be paid in (vested) DOT
+- **DOT %:** 60% (≥ 50% requirement met)
 
-### Milestone 1 – Public Testnet & Enhanced Marketplace Functionality
-
-**Problem Solved:** Current blockchain lacks comprehensive marketplace features and public accessibility for testing by potential users and partners.
-
-**Technical Integration:** Implements advanced order matching algorithms, escrow mechanisms, and comprehensive event system for real-time marketplace updates.
-
-- **Estimated duration:** 1.5 months
-- **FTE:** 3.5
-- **Costs:** $60,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 license for all deliverables |
-| **0b.** | Documentation | Comprehensive inline Rust documentation, Node.js API docs, and tutorials explaining how to spin up testnet nodes, register properties, mint tokens, and execute marketplace trades. Documentation will include step-by-step guides for each user role (property owners, investors, administrators). |
-| **0c.** | Testing and Testing Guide | Unit tests covering 90%+ of pallet functionality, integration tests for marketplace operations, backend API endpoint tests, and frontend component tests. Testing guide will explain how to run all test suites and validate functionality. |
-| **0d.** | Docker | Docker containers for Substrate node, backend services, and frontend application, plus docker-compose setup for complete local development environment. |
-| 0e. | Article | Technical article explaining the marketplace architecture, order matching algorithms, and how fractional real estate trading works on Homebase, published on Medium and shared with Polkadot community. |
-| 1. | Enhanced Marketplace Pallet | **Concrete Implementation:** Advanced `pallet_rwa_marketplace` with limit/market order types, partial fill capabilities, price-time priority matching, automated settlement through escrow, and comprehensive event emissions for order lifecycle tracking. **Functionality:** Users can place buy/sell orders for fractional tokens, orders are automatically matched based on price-time priority, trades settle instantly through on-chain escrow, and all market activities are transparently recorded on-chain. |
-| 2. | Public Testnet Deployment | **Concrete Implementation:** Fully configured testnet with public RPC endpoints, block explorer integration, faucet for test tokens, telemetry dashboard, and monitoring infrastructure. **Functionality:** External users can connect wallets, register test properties, mint fractional tokens, execute trades, and participate in governance without any technical barriers. |
-| 3. | Enhanced Backend API | **Concrete Implementation:** REST and GraphQL APIs with endpoints for market data feeds, trade history, portfolio tracking, price analytics, and real-time WebSocket connections for live market updates. **Functionality:** Frontend applications and third-party integrators can access comprehensive market data, execute trades programmatically, and receive real-time notifications of market events. |
-| 4. | Advanced KYC/Compliance System | **Concrete Implementation:** Multi-tier KYC verification with document upload, identity verification through third-party providers, AML screening, and automated compliance status updates linked to on-chain permissions. **Functionality:** Users complete identity verification to unlock trading capabilities, administrators can monitor compliance status, and the system automatically enforces trading restrictions based on regulatory requirements. |
-
-### Milestone 2 – Cross-Chain Integration & Governance Framework
-
-**Problem Solved:** Fractional real estate tokens remain isolated without DeFi utility, and token holders lack meaningful governance participation in property decisions.
-
-**Technical Integration:** Implements XCM message passing for cross-parachain token transfers and establishes governance mechanisms that bridge on-chain voting with real-world property management decisions.
+### Milestone 1 — Core Protocol & Marketplace
 
 - **Estimated Duration:** 1.5 months
-- **FTE:** 3.5
+- **FTE:** 4.5
 - **Costs:** $60,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 license for all deliverables |
-| **0b.** | Documentation | Detailed documentation of XCM integration, governance mechanisms, cross-chain workflows, and guides for setting up governance proposals and cross-chain transfers. |
-| **0c.** | Testing and Testing Guide | Comprehensive tests for XCM message passing, governance proposal lifecycle, voting mechanisms, and cross-chain integration scenarios. |
-| **0d.** | Docker | Updated Docker configurations supporting cross-chain testing environments and governance node setups. |
-| 0e. | Article | Educational article on cross-chain real estate tokenization and governance, explaining how property decisions are made through blockchain voting, targeted at both technical and non-technical audiences. |
-| 1. | XCM Integration Pallet | **Concrete Implementation:** `pallet_rwa_xcm` enabling fractional real estate tokens to be transferred and utilized across Polkadot parachains, with specific integrations for Acala (DeFi lending) and Moonbeam (EVM compatibility). **Functionality:** Token holders can move their fractional shares to DeFi protocols for lending/borrowing, use them as collateral, or trade them on EVM-based DEXs while maintaining governance rights on the origin chain. |
-| 2. | Property Governance System | **Concrete Implementation:** Token-weighted governance framework where fractional token holders vote on property-specific decisions (renovation approvals, management changes, sale decisions), with proposals automatically executing based on voting outcomes and legal compliance checks. **Functionality:** Property decisions are democratized through blockchain voting, with legal enforceability through custodian partnerships, ensuring token holders have real influence over their investments. |
-| 3. | Cross-Chain Governance Bridge | **Concrete Implementation:** XCM-based governance participation allowing users to vote on property proposals from any connected parachain while their tokens are deployed in DeFi protocols. **Functionality:** Token holders don't lose governance rights when using their tokens in cross-chain DeFi, maintaining property decision-making power regardless of where their tokens are currently deployed. |
-| 4. | Advanced Backend Governance APIs | **Concrete Implementation:** Backend services supporting governance proposal creation, voting tracking, legal compliance verification, and automated execution of governance decisions through custodian partnerships. **Functionality:** Seamless integration between on-chain governance and real-world property management, with automated notifications to legal custodians and transparent execution tracking. |
+| **0a.** | License | Apache 2.0 for all Substrate pallets, MIT for frontend components |
+| **0b.** | Documentation | Complete inline Rust documentation, API docs, user tutorials for property registration, token trading, and governance participation |
+| **0c.** | Testing and Testing Guide | Unit tests covering >90% of pallet functions, integration tests for marketplace operations, comprehensive testing guide with setup instructions |
+| **0d.** | Docker | Multi-container Docker setup with Substrate node, backend API, frontend, and PostgreSQL database |
+| **0e.** | Article | Technical article explaining real estate tokenization implementation and Polkadot integration benefits |
+| **1.** | Substrate Pallet: RWA Core | Property registration system with IPFS metadata storage, legal document management, property verification workflows, and admin controls for compliance |
+| **2.** | Substrate Pallet: RWA Asset | Fractional token minting with supply caps, ownership tracking with historical checkpoints, transfer restrictions for compliance, and asset freeze capabilities |
+| **3.** | Substrate Pallet: RWA Marketplace | On-chain order book with bid/ask matching, automated settlement mechanisms, trading fee distribution, and event emission for price discovery |
+| **4.** | Backend API Extensions | RESTful APIs for property management, KYC verification endpoints, compliance reporting tools, and real-time event streaming from blockchain |
+| **5.** | Frontend Marketplace | Property listing interface, token trading dashboard, portfolio management tools, and transaction history with filtering and search |
+| **6.** | Testing & QA | Comprehensive testing suite including unit tests, integration tests, and user acceptance testing scenarios |
 
-### Milestone 3 – Compliance Automation & Ecosystem Integration
+### Milestone 2 — Governance & XCM Integration  
 
-**Problem Solved:** Manual compliance processes create bottlenecks and regulatory risks, while lack of ecosystem integration limits adoption and utility.
+- **Estimated Duration:** 1.5 months
+- **FTE:** 4.5  
+- **Costs:** $60,000 USD
 
-**Technical Integration:** Deploys smart contracts for automated compliance enforcement and creates integration tools for broader ecosystem adoption.
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 for all new pallets and XCM implementations |
+| **0b.** | Documentation | Governance user guides, XCM integration documentation, cross-chain operation tutorials |
+| **0c.** | Testing and Testing Guide | Governance workflow tests, XCM integration tests with mock parachains, cross-chain testing scenarios |
+| **0d.** | Docker | Updated Docker configuration supporting XCM testing environment and governance features |
+| **0e.** | Article | Deep-dive article on cross-chain real estate asset management and governance mechanisms |
+| **1.** | Substrate Pallet: RWA Governance | Token-weighted voting system, proposal creation and execution, treasury management for property maintenance, and referendum mechanisms |
+| **2.** | Substrate Pallet: RWA XCM | Cross-chain asset transfer capabilities, governance message routing via XCM, integration with Acala/Moonbeam testnets |
+| **3.** | Backend Governance API | Proposal management endpoints, voting tracking systems, governance event notifications, and analytics dashboard |
+| **4.** | Frontend Governance Dashboard | Proposal browsing and creation interface, voting mechanisms, governance history tracking, and cross-chain activity monitoring |
+| **5.** | XCM Test Integration | Working demonstration of cross-chain asset transfers, governance voting from other parachains, and multi-chain portfolio management |
+| **6.** | Performance Optimization | Blockchain performance improvements targeting >1,000 TPS, database optimization, and caching layer implementation |
+
+### Milestone 3 — Compliance & Mainnet Preparation
 
 - **Estimated Duration:** 1 month
-- **FTE:** 3.5
+- **FTE:** 4.5
 - **Costs:** $30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 license for all deliverables |
-| **0b.** | Documentation | Complete system documentation, partner integration guides, compliance automation documentation, and community onboarding materials. |
-| **0c.** | Testing and Testing Guide | Performance testing under load (≥1,000 transactions/second), stress testing of compliance systems, and end-to-end integration testing with partner systems. |
-| **0d.** | Docker | Production-ready Docker configurations with monitoring, logging, and automated deployment capabilities. |
-| 0e. | Article | Launch announcement article showcasing the complete system capabilities, real-world use cases, and roadmap for ecosystem growth, distributed across multiple channels. |
-| 1. | Automated Compliance Contracts | **Concrete Implementation:** ink! smart contracts automatically enforcing KYC requirements, AML screening, asset freezing capabilities for legal compliance, and jurisdiction-specific trading restrictions. **Functionality:** Compliance rules are enforced at the protocol level without manual intervention, reducing regulatory risk and operational overhead while maintaining transparent audit trails. |
-| 2. | Partner Integration Toolkit | **Concrete Implementation:** SDK, API documentation, integration guides, and sample implementations for property managers, legal custodians, and DeFi protocols to integrate with Homebase. **Functionality:** Third parties can easily integrate property tokenization into their existing workflows, expand the network of available properties, and create new use cases for fractional real estate ownership. |
-| 3. | HanPay Wallet Integration | **Concrete Implementation:** Deep integration between Homebase protocol and HanPay wallet for seamless payment processing, fiat on/off ramps, and enhanced user experience for non-crypto native users. **Functionality:** Users can easily convert between fiat and crypto for property investments, manage their fractional ownership portfolios, and access property-related financial services through a unified interface. |
-| 4. | Community Launch & Growth Tools | **Concrete Implementation:** Ambassador program framework, developer documentation portal, community governance tools, and growth tracking analytics. **Functionality:** Sustainable community growth through incentivized participation, clear pathways for ecosystem contributors, and data-driven optimization of user acquisition and retention. |
-
----
-
-## Market Validation
-
-- Global real estate tokenization market projected >$16 trillion by 2030.  
-- Initial interest from landlords, sellers, and investors in Nigeria, Serbia, EU.  
-- Early pilot discussions with property managers and legal custodians.  
-- Positive organic feedback from live app demos and community.
-
----
-
-## Legal & Operational Flow
-
-We recognize that technical integration is only one side of bringing RWAs on-chain.
-
-- **Asset Custody:**  
-  Real-world property onboarding will be done through partnerships with legal custodians and notaries, who will verify ownership, legal status, and ensure asset-backing.
-
-- **Legal Agreements:**  
-  Every tokenized property will be backed by a legal contract defining rights, revenue sharing, and governance, ensuring fractional token holders are protected.
-
-- **Operational Partners:**  
-  We are in early discussions with real estate providers and legal advisors to pilot 1–2 properties, allowing us to validate the legal-to-on-chain bridge.
-
-This approach ensures Homebase controls distribution with both technical and legal safeguards.
-
----
-
-## Asset Distribution Flow
-
-1️⃣ Register property → Verified with legal docs, IPFS hash on-chain.  
-2️⃣ Mint fractional tokens → Capped supply tied to legal asset.  
-3️⃣ Enable marketplace trading → On-chain, with backend KYC/compliance.  
-4️⃣ Allow governance participation → Token-holder votes.  
-5️⃣ Settle via Homebase or HanPay Wallet → User flexibility.  
-6️⃣ Unlock cross-chain liquidity → XCM connections to DeFi.
-
----
+| **0a.** | License | Apache 2.0 for ink! contracts, comprehensive licensing documentation |
+| **0b.** | Documentation | Complete user documentation, developer guides, compliance procedures, partnership onboarding kits |
+| **0c.** | Testing and Testing Guide | Stress testing documentation, security audit preparations, load testing with >10k concurrent users |
+| **0d.** | Docker | Production-ready Docker configurations with monitoring, logging, and scaling capabilities |  
+| **0e.** | Article | Project completion article, lessons learned, and future roadmap publication |
+| **1.** | ink! Smart Contracts | KYC/AML compliance contracts with automated triggers, asset freeze mechanisms, regulatory reporting tools |
+| **2.** | Security & Auditing | External security audit completion, vulnerability assessment, penetration testing results |
+| **3.** | Partner Integration Toolkit | APIs and documentation for real estate partners, property manager onboarding system, legal custodian integration guides |
+| **4.** | Community Launch Preparation | Discord server setup, documentation website, ambassador program framework, developer incentive structure |
+| **5.** | Mainnet Deployment Scripts | Automated deployment procedures, monitoring setup, backup and recovery procedures |
+| **6.** | Performance Benchmarking | Detailed performance analysis, scalability testing results, optimization recommendations |
 
 ## Future Plans
 
-**Long-term Maintenance and Development:**
-- Revenue model through transaction fees (0.5% per trade) and property listing fees
-- Token-based ecosystem incentives for community-driven development
-- Strategic partnerships with real estate firms for sustainable property pipeline
-- Integration with traditional real estate financing for expanded market reach
+**Long-term Sustainability:**
+- Transaction fee revenue model (0.5% trading fees, 0.1% governance fees)
+- Partnership revenue from property onboarding services
+- Premium API access for institutional clients
+- Token utility for platform governance and fee reductions
 
-**Short-term Enhancement and Promotion:**
-- Launch developer grants program for ecosystem tools and integrations
-- Establish partnerships with major property management companies
-- Create educational content series on real estate tokenization
-- Implement referral programs for early adopters and community growth
+**Short-term Enhancement Plans:**
+- Integration with major DeFi protocols (Acala, Moonbeam, Astar)
+- Mobile application development for iOS and Android
+- Additional asset classes (commercial real estate, REITs)
+- Oracle integration for automated asset valuation
 
 **Long-term Vision:**
-- Expand into commercial real estate and REITs tokenization
-- Develop algorithmic property valuation using on-chain data
-- Create insurance products specifically for tokenized real estate
-- Build cross-chain real estate index funds and investment products
+- Multi-chain expansion beyond Polkadot ecosystem
+- Institutional custody partnerships
+- Real estate derivatives and financial products
+- AI-powered property valuation and risk assessment
 
----
+**Team Commitment:**
+The team is committed to long-term development and maintenance of the Homebase protocol. We have secured initial partnerships and are actively seeking Series A funding to support continued growth beyond the Web3 Foundation grant period.
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website and recommendations from Polkadot community members.
+**How did you hear about the Grants Program?** Web3 Foundation website and Polkadot community recommendations
 
 **Additional Context:**
-- **Work Already Done:** Custom Substrate blockchain deployed, Node.js backend operational, frontend applications live, initial compliance framework implemented
-- **Previous Financial Contributors:** Self-funded development to current stage, no external investors
-- **Previous Grant Applications:** No previous grant applications submitted to Web3 Foundation or other blockchain foundations
+- We have already invested $45,000 of personal funds into the project development
+- Active discussions with 3 potential property management partners in Nigeria and Serbia  
+- Early interest from institutional investors for pilot property tokenization
+- Commitment to open-source development and community building within the Polkadot ecosystem
 
-**HanPay Integration:**
-Our existing HanPay wallet platform ([https://hanpay-portal.vercel.app/#hero](https://hanpay-portal.vercel.app/#hero)) provides additional payment infrastructure and fiat on/off-ramp capabilities that enhance the Homebase ecosystem without requiring additional grant funding.
+**Previous Grant Applications:**
+This is our first application to the Web3 Foundation. We have not received grants from other Web3 organizations for this specific project.
 
-**Community Engagement:**
-- Early beta testing with 200+ users across target markets
-- Positive feedback from property management professionals
-- Growing Discord community with active developers and potential users
-- Regular AMAs and community updates to maintain engagement
-
-**Technical Readiness:**
-All core infrastructure is already operational, with this grant funding focused on enhancing functionality, ensuring production readiness, and driving ecosystem adoption rather than building from scratch.
+**Risk Mitigation:**
+- Legal compliance through partnership with established real estate law firms
+- Technical risk mitigation through comprehensive testing and external audits  
+- Market risk addressed through pilot program with select properties before full launch
+- Regulatory risk managed through multi-jurisdiction legal analysis and compliance frameworks
 
 ---
 
-**Homebase + HanPay will unlock the global real estate market on Polkadot — making property as liquid, transparent, and programmable as native crypto assets.**
+**Homebase will establish Polkadot as the premier ecosystem for real-world asset tokenization, starting with the $280 trillion global real estate market.**
