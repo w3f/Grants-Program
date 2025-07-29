@@ -4,7 +4,7 @@
 
 - **Team Name:** Homebase by HanPay  
 - **Payment Details:**
-  - **DOT**: 15oF4urkUBXqcwMBwjkLX8L8aPYv4EcwM4FytGapACwf7rP2 (≥50% of total grant)
+  - **DOT**: 13QrJsxfwEabrYuDAjQfuEt1iFPJdxWERRVUkAuLbGSv6og8 (≥50% of total grant)
   - **Payment**: TX5tekNYLZXaVtje6QUMKjEsx9RxteSzC4 (USDC) - TRC-20 Address
 - **Level:** 3  
 
