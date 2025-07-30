@@ -187,7 +187,7 @@ Sacred Protocol is the result of an iterative journey through multiple real-worl
 
 **Over the next iterations we have in store, Sacred’s north‑star is to make DOT (and parachain‑native USDC) the default “thank‑you” currency of the internet. Every tip will travel via XCM, hopping transparently between the Relay Chain and any integrated parachain, so creators and fans experience a single friction‑free wallet while Polkadot captures the fee flow. Once this internal flywheel is proven, we will layer in bridge adapters (e.g. Snowbridge, Wormhole) that convert ETH, SOL, or other L1 liquidity into DOT before it enters Sacred, importing external value—and new users—into the Polkadot economy while keeping settlement trust‑minimised.**
 
-- Convert core business logic into ink! smart contracts (e.g. escrow/dispute‑resolution modules) to remove all off‑chain trust assumptions.
+- Secure and Audit the Sacred Protocol Mechanism and get it production ready for a Polkadot Asset Hub Release
 
 - Expand support for native tips on additional Polkadot wallets and parachains, ensuring one‑click UX across the ecosystem.
 
