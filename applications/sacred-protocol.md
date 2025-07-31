@@ -12,7 +12,7 @@ This goal of this proposal is to break ground, into the ecosystem by allowing fo
 
 **c. Brief Description:** Sacred Protocol is a decentralized tipping primitive that allows creators to receive support from fans across borders, platforms, and currencies. We aim to break open the creator economy for the 80–90% of audiences currently unable to tip due to geographic, platform, and payment limitations.
 
-**d. Polkadot Integration:** This project introduces Polkadot-native tipping by integrating Polkadot wallets and enabling transactions in DOT on Westend and MainNet. Sacred becomes a live dApp showcasing Polkadot’s potential for social finance and creator engagement. This proposal also includes building a Creator Campaign working with creators to increase engagement and community building within the Polkadot ecosystem.
+**d. Polkadot Integration:** This project introduces Polkadot-native tipping by integrating Polkadot wallets and enabling transactions in DOT on Paseo and MainNet. Sacred becomes a live dApp showcasing Polkadot’s potential for social finance and creator engagement. This proposal also includes building a Creator Campaign working with creators to increase engagement and community building within the Polkadot ecosystem.
 
 **e. Motivation:** We believe Polkadot is uniquely suited for global-scale social utility applications. Its multi-chain design and tooling like Polkadot Wallet provide the backbone for scalable, user-friendly micro-transactions.
 
@@ -35,7 +35,7 @@ Our application is built on a modern, full-stack TypeScript architecture optimiz
 ### Blockchain Integration
 
 - **Polkadot**: `Polkadot API and RPC endpoints`
-- Starting with smart contract deployment on Polkadot Westend Test network then launching on Polkadot Kusama network.
+- Starting with smart contract deployment on Polkadot Paseo Test network then launching on Polkadot Kusama network.
 
 ### Backend
 
@@ -153,7 +153,7 @@ Sacred Protocol is the result of an iterative journey through multiple real-worl
 | 0b | Documentation | We will provide inline documentation in the code and a basic tutorial that explains how a user can send and receive tips on Polkadot. |
 | 0c | Testing and Testing Guide | Core functions will be covered by comprehensive unit tests to ensure functionality and robustness. The guide will describe how to run these tests. |
 | 0d | Article | We will publish a post with an article explaining what was achieved as part of the grant. |
-| 1 | Smart Contracts with Escrow logic to send & claim tips | The smart contracts will be deployed to the Westend Test network. <br><br>Send & Receive tips in native token on Polkadot network, starting with Westend testnet. Support social media platform Twitter/X<br><br>**To verify:**<br>- Using the CLI tool and test functions a user should be able to:<br>&nbsp;&nbsp;- send a tip to a Twitter post or profile via the Polkadot test network<br>&nbsp;&nbsp;- authenticate with Twitter and claim their tip to their wallet on the Polkadot test network |
+| 1 | Smart Contracts with Escrow logic to send & claim tips | The smart contracts will be deployed to the Paseo Test network. <br><br>Send & Receive tips in native token on Polkadot network, starting with Paseo testnet. Support social media platform Twitter/X<br><br>**To verify:**<br>- Using the CLI tool and test functions a user should be able to:<br>&nbsp;&nbsp;- send a tip to a Twitter post or profile via the Polkadot test network<br>&nbsp;&nbsp;- authenticate with Twitter and claim their tip to their wallet on the Polkadot test network |
 | 2 | App UI Interface with Polkadot wallet support | A user interface to facilitate sending and claiming tips. This feature will add the ability for users to connect their Polkadot wallet to the App to send & claim/receive their tips in native token.<br><br>**To verify:**<br>- A user should be able to connect their Polkadot wallet to the App, and both send & receive tips to their wallet on the Polkadot test network. |
 | 3 | Polkadot-Based Community Campaign | The smart contracts will be deployed to Polkadot Kusama network. <br><br>This deliverable is the campaign itself the details campaign brief that details that include: objectives, how it will be run and a partnership with an influential creator(s) within the Polkadot Community.<br><br>Execute a community campaign to drive Polkadot adoption, including a campaign brief outlining objectives, execution plan, and collaboration with key creators in the Polkadot ecosystem.<br><br>**To verify:**<br>- Campaign materials and plans are co-developed with creators within the ecosystem to grow engagement |
 
@@ -161,8 +161,8 @@ Sacred Protocol is the result of an iterative journey through multiple real-worl
 
 | **Milestone** | **Deliverables** | **Cost (USD)** | **Estimated Completion** |
 |--------------|------------------|----------------|---------------------------|
-| 1 |- Open source smart contracts for escrow logic and handling user flow to send and claim tips in native token on Polkadot Westend test network | $5,000 | 1 month |
-| 2 | - Open source UI interface to send and receive tips on Polkadot Westend network with native tokens on Social Platform Twitter/X<br>- Polkadot wallet integrations & support | $3,500 | 0.5 months |
+| 1 |- Open source smart contracts for escrow logic and handling user flow to send and claim tips in native token on Polkadot Paseo test network | $5,000 | 1 month |
+| 2 | - Open source UI interface to send and receive tips on Polkadot Paseo network with native tokens on Social Platform Twitter/X<br>- Polkadot wallet integrations & support | $3,500 | 0.5 months |
 | 3 | - Deploy smart contracts on Polkadot Kusama <br>- Lock in Polkadot Creator Campaign <br>- Formalising a partnership with Polkadot creator to run the creator campaign | $1,500 | 0.5 months |
 | **Total** |  | **$10,000** | **2 months** |
 
