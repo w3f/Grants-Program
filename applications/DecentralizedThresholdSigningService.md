@@ -14,34 +14,34 @@ This project is a continuation of [this one](https://github.com/w3f/Grants-Progr
 
 ### Technical Details
 
-Each participant in the threshold signing group will run a **browser-based application** that performs decentralized key generation and signing operations through the **Olaf threshold signature protocol**, compiled to **WebAssembly (WASM)**. The networking layer is built using **JavaScript** and **libp2p** for peer discovery and communication.
+Each participant in the threshold signing group will run a browser-based application that performs decentralized key generation and signing operations through the Olaf threshold signature protocol, compiled to WebAssembly (WASM). The networking layer is built using JavaScript and `libp2p` for peer discovery and communication.
 
 #### 🌐 Networking Layer (JavaScript)
 
 ##### Transport
-- Peers connect to a **relay server** using **WebSockets**.
+- Peers connect to a relay server using WebSockets.
 
 ##### Discovery
-- When a peer connects, it sends its **Substrate/Polkadot/Kusama address** to the relay server.
-- The relay server assigns the peer a random **libp2p Peer ID** and stores the mapping:  
+- When a peer connects, it sends its Substrate/Polkadot/Kusama address to the relay server.
+- The relay server assigns the peer a random `libp2p` Peer ID and stores the mapping:  
 Address → Peer ID
 
-- Peers can query the relay server with a known blockchain address to obtain the corresponding **Peer ID**.
+- Peers can query the relay server with a known blockchain address to obtain the corresponding Peer ID.
 
 ##### Direct Peer Communication
-- Once a Peer ID is obtained, the peer establishes a **WebRTC** connection using **libp2p**.
-- All protocol messages are exchanged via this secure, direct **P2P channel**.
+- Once a Peer ID is obtained, the peer establishes a WebRTC connection using `libp2p`.
+- All protocol messages are exchanged via this secure, direct P2P channel.
 
 #### 🔐 Cryptographic Protocol (Rust → WASM)
 
-The cryptographic logic is written in **Rust** and compiled to **WebAssembly (WASM)** for browser use.
+The cryptographic logic is written in Rust and compiled to WebAssembly (WASM) for browser use.
 
 ##### Core Functionality
-- **Distributed Key Generation (DKG)** to derive a shared threshold public key.
-- **Threshold Signing** for signing **Substrate/Kusama/Polkadot extrinsics**.
+- Distributed Key Generation (DKG) to derive a shared threshold public key.
+- Threshold Signing for signing Substrate/Kusama/Polkadot extrinsics.
 
 ##### State Management
-- Key shares and protocol state are stored in **browser-local storage** (e.g., `IndexedDB`).
+- Key shares and protocol state are stored in browser-local storage (e.g., `IndexedDB`).
 
 ### Ecosystem Fit
 
