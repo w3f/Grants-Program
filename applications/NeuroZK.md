@@ -1,7 +1,7 @@
 # NeuroZK - Empowering AI at the edge with zero-knowledge proofs.
 
 - **Team Name:** Cyborg Network
-- **Payment Address:** 12Enn321pZSZkNtBwsTRxxZTKS9DsGpk8PTkZsnsMjTzrtFa (AssetHub USDT) 
+- **Payment Address:** 14zJseuDH5WvWXKKyc6svecBrLQ5CyoJkZN3SxYioRRC2ZsY (AssetHub USDT) 
 - **DOT Vesting Address:** 15p7mTm9uKt1w7GF3AU1TNPWm4eAHgieTjtfsVVEtqHazpaY
 - **Level:** 2
 
