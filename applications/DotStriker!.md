@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://github.com/rio900/on-chain-game">
-    <img src="https://github.com/oyonika/dotstriker/blob/master/applications/logo.png?raw=true" width="200" height="180" alt="Logo">
+    <img src="https://github.com/oyonika/dotstriker/blob/master/applications/assets/assets/logo.png?raw=true" width="200" height="180" alt="Logo">
 </a>
 <h1>DotStriker! 🚀 </h1>
 </div>
@@ -51,9 +51,9 @@ DotStriker! isn’t just intended to be a great technical showcase. The ultimate
 #### Visual Identity through NFTs
 
 We use stylized, meme-inspired NFT ships to build emotional attachment. These visuals aren’t just cosmetic—they represent identity, rarity, and value. <br/>
-<img src="https://github.com/oyonika/dotstriker/blob/master/applications/coin_1.png?raw=true" width="150" height="140" alt="Meme coin">
-<img src="https://github.com/oyonika/dotstriker/blob/master/applications/coin_2.png?raw=true" width="150" height="140" alt="Meme coin">
-<img src="https://github.com/oyonika/dotstriker/blob/master/applications/coin_3.png?raw=true" width="150" height="140" alt="Meme coin"><br/>
+<img src="https://github.com/oyonika/dotstriker/blob/master/applications/assets/coin_1.png?raw=true" width="150" height="140" alt="Meme coin">
+<img src="https://github.com/oyonika/dotstriker/blob/master/applications/assets/coin_2.png?raw=true" width="150" height="140" alt="Meme coin">
+<img src="https://github.com/oyonika/dotstriker/blob/master/applications/assets/coin_3.png?raw=true" width="150" height="140" alt="Meme coin"><br/>
 
 #### On-Chain Incentives that Matter
 
@@ -84,14 +84,14 @@ If you cannot see the preview on your browser, [here](https://youtu.be/jCJ-B3NH3
 
 ### Screenshots
 
-<img src="https://github.com/oyonika/dotstriker/blob/master/applications/screenshot_1.jpeg?raw=true" alt="Registration">
+<img src="https://github.com/oyonika/dotstriker/blob/master/applications/assets/screenshot_1.jpeg?raw=true" alt="Registration">
 
 ### Wireframes
 
 Like many ambitious projects, Dotstriker! began as a humble proof-of-concept napkin sketch — here’s a glimpse at the game's earliest UI design ideas.
 
-<img src="https://github.com/oyonika/dotstriker/blob/master/applications/wf_registration.png?raw=true" height=600 alt="Registration">
-<img src="https://github.com/oyonika/dotstriker/blob/master/applications/wf_gameplay.png?raw=true" width="600" alt="Gameplay">
+<img src="https://github.com/oyonika/dotstriker/blob/master/applications/assets/wf_registration.png?raw=true" height=600 alt="Registration">
+<img src="https://github.com/oyonika/dotstriker/blob/master/applications/assets/wf_gameplay.png?raw=true" width="600" alt="Gameplay">
 
 ### 🧩 Ecosystem Fit
 
@@ -152,7 +152,7 @@ At the EasyA Hackathon, we presented a functioning MVP that demonstrated real-ti
 
 ## 📅 Development Roadmap
 
-<img src="https://github.com/oyonika/dotstriker/blob/master/applications/roadmap.png?raw=true" width="600" alt="Roadmap">
+<img src="https://github.com/oyonika/dotstriker/blob/master/applications/assets/assets/roadmap.png?raw=true" width="600" alt="Roadmap">
 
 ### Overview
 
