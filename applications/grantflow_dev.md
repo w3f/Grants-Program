@@ -83,7 +83,7 @@ This section should break the development roadmap down into milestones and deliv
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
+| 0a. | License | MIT |
 | 0b. | Documentation | We will provide inline code documentation and a basic tutorial explaining how users (grantees/curators) can submit forms, review submissions, approve milestones, trigger payouts via the dashboard, and use integrated chat features for communication. |
 | 0c. | Testing and Testing Guide | Core functions (e.g., submissions, approvals, payouts, chat integrations) will be covered by unit/integration tests using Jest. The guide will describe running tests via npm commands |
 | 0d. | Article | We will publish an article on Medium or similar explaining the platform's development, features (including chat and Polkadot integrations), and impact on Polkadot bounties. |
