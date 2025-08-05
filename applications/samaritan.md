@@ -1,7 +1,7 @@
 # Samaritan
 
 - **Team Name:** Algorealm
-- **DOT**: 14pG7HieCjNk2hZ4X2YvxkbpAXs9oCeW8aNZcD7tD2tpaJT9
+- **DOT**: 15M8sYRQSbErkg7eFMCHfpsGqR484A1YA4gHhfwBokDcV6aP
   - **Payment Address**: 15M8sYRQSbErkg7eFMCHfpsGqR484A1YA4gHhfwBokDcV6aP (Polkadot AssetHub)
 - **Level:** 3
 
@@ -140,8 +140,8 @@ Samaritan is the only solution that combines:
 
 ### Legal Structure
 
-- **Registered Address:**  	374 Westgate St, Apt 12, Iowa City, Iowa 52246 Us
-- **Registered Legal Entity:** Algorealm, Inc.
+- **Registered Address:**  	n/a
+- **Registered Legal Entity:** n/a
 
 ### Team's experience
 
