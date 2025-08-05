@@ -129,3 +129,5 @@ The most similar project we found is [this](https://github.com/nulltea/tss-libp2
 Build a production-ready, secure Progressive Web App (PWA) that includes:
 - Robust asynchronous peer-to-peer communication.
 - Support for configurable t-out-of-n threshold schemes.
+- Add proof of ownership to prevent address spoofing.
+- Implement a network of relay servers to achieve full decentralization.
