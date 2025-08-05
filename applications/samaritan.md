@@ -140,8 +140,8 @@ Samaritan is the only solution that combines:
 
 ### Legal Structure
 
-- **Registered Address:**  	n/a
-- **Registered Legal Entity:** n/a
+- **Registered Address:**  	374 Westgate St, Apt 12, Iowa City, Iowa 52246 Us
+- **Registered Legal Entity:** Algorealm, Inc.
 
 ### Team's experience
 
