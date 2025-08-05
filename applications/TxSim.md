@@ -133,48 +133,70 @@ Technical and architectural planning is ongoing, with public code repositories t
 
 ## Budget
 
-**Overview**
+## Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):** 1 (2 developers part-time, ~20 hours/week each per milestone)
-- **Total Costs:** 60,000 USD
-- **DOT %:** 50% (30,000 USD equivalent in vested DOT, 30,000 USD in USDC)
-
----
-
-### Milestone 1: Core Infrastructure
-
-**Estimated Duration:** 2 months  
-**FTE:** 1  
-**Costs:** 30,000 USD
-
-| Number | Deliverable               | Specification                                                                                                                                                                                             |
-| ------ | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0a.    | License                   | MIT License, ensuring open-source compatibility for Polkadot’s ecosystem.                                                                                                                                 |
-| 0b.    | Documentation             | Inline documentation for the simulation engine and fee estimation module. A tutorial will guide developers on setting up TxSim’s backend and simulating a transaction on Moonbeam (EVM) and Astar (WASM). |
-| 0c.    | Testing and Testing Guide | Unit tests covering simulation and fee estimation functions with ≥90% coverage. A guide will detail running tests locally or via Docker, including 50+ test scenarios for Moonbeam and Astar.             |
-| 0d.    | Docker                    | Dockerfile to spin up TxSim’s backend, enabling testing of transaction simulation and fee estimation on Moonbeam and Astar.                                                                               |
-| 1.     | Simulation Engine         | A backend module using Polkadot.js API (Ethers.js for Moonbeam’s EVM) to simulate contract calls on Moonbeam/Astar and extrinsic calls on Asset Hub, previewing transaction outcomes.                     |
-| 2.     | Fee Estimation Module     | A module calculating accurate weight-based fee estimates for Moonbeam, Astar, and Asset Hub transactions, with optimization suggestions (e.g., lower fee alternatives).                                   |
+- **Total Estimated Duration:** 3 months  
+- **Full-Time Equivalent (FTE):** 1 (2 developers part-time, ~20 hours/week each per milestone)  
+- **Total Costs:** 28,000 USD  
+- **DOT %:** 50% (14,000 USD equivalent in vested DOT, 14,000 USD in USDC)
 
 ---
 
-### Milestone 2: MVP Completion
+## Milestone 1 — Core Simulation Engine
 
-**Estimated Duration:** 2 months  
-**FTE:** 1  
-**Costs:** 30,000 USD
+- **Estimated Duration:** 1 month  
+- **FTE:** 1  
+- **Costs:** 10,000 USD  
 
-| Number | Deliverable               | Specification                                                                                                                                                                                                                                                        |
-| ------ | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0a.    | License                   | MIT License, ensuring open-source compatibility for Polkadot’s ecosystem.                                                                                                                                                                                            |
-| 0b.    | Documentation             | Updated inline documentation for risk detection, wallet integration, and SDK. A tutorial will guide users on integrating TxSim with Talisman/SubWallet, simulating transactions, and viewing risk/fee alerts on Moonbeam, Astar, and Asset Hub.                      |
-| 0c.    | Testing and Testing Guide | Comprehensive unit tests covering risk detection, wallet integration, and SDK functions with ≥80% coverage. A guide will detail running tests locally or via Docker, including 50+ revert scenarios on Moonbeam, Astar, and Asset Hub.                               |
-| 0d.    | Docker                    | Updated Dockerfile to test all MVP functionality (simulation, fee estimation, risk detection, wallet integration) on Moonbeam, Astar, and Asset Hub.                                                                                                                 |
-| 0e.    | Article                   | A Medium article explaining TxSim’s MVP achievements, targeting Polkadot developers and DeFi users. It will cover how TxSim prevents failed transactions and scams, with examples on Moonbeam, Astar, and Asset Hub, and link to a live demo for beta participation. |
-| 1.     | Risk Detection Module     | A detection engine flagging extrinsic failures and reverts (e.g., insufficient fees, invalid inputs) via WASM bytecode analysis for Moonbeam/Astar and extrinsic validation for Asset Hub.                                                                           |
-| 2.     | Wallet Integration        | Frontend integration with Talisman and SubWallet via Polkadot.js API, enabling users to preview transactions and view risk/fee alerts in a Next.js UI.                                                                                                               |
-| 3.     | SDK/APIs                  | A modular JavaScript SDK with APIs for dApps/wallets to integrate TxSim’s simulation, fee estimation, and risk detection features.                                                                                                                                   |
+**Deliverables**
+
+| Number | Deliverable           | Specification                                                                                                                                   |
+|--------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                | MIT                                                                                                                                            |
+| 0b.    | Documentation          | We will provide both inline documentation and a user guide explaining how to run the simulation engine, estimate fees, and interpret outputs. |
+| 0c.    | Testing and Guide      | Core functions will be covered by unit tests (≥80% coverage). We will include a guide to run and validate them.                               |
+| 0d.    | Docker                 | A Dockerfile will be provided for quick testing and deployment of the simulation engine.                                                      |
+| 1.     | Simulation Engine      | Initial EVM-based transaction simulation engine targeting Moonbeam and Astar networks.                                                         |
+| 2.     | Fee Estimation Module  | First implementation of the fee estimation logic based on simulated outcomes.                                                                 |
+
+---
+
+## Milestone 2 — Fee Optimization and Testing
+
+- **Estimated Duration:** 1 month  
+- **FTE:** 1  
+- **Costs:** 10,000 USD  
+
+**Deliverables**
+
+| Number | Deliverable         | Specification                                                                                                                               |
+|--------|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License              | MIT                                                                                                                                        |
+| 0b.    | Documentation        | Updated documentation to reflect new features and enhancements.                                                                            |
+| 0c.    | Testing and Guide    | ≥90% test coverage with an expanded test suite to handle edge cases.                                                                      |
+| 0d.    | Docker               | Updated Dockerfile for the enhanced version of the simulation engine.                                                                      |
+| 1.     | Fee Optimization     | Advanced logic to recommend optimal transaction parameters (e.g., gas limits, max fees) based on simulation data.                         |
+| 2.     | Performance Tuning   | Enhancements in simulation speed and accuracy for an improved development experience.                                                                  |
+
+---
+
+## Milestone 3 — SDK and Integration APIs
+
+- **Estimated Duration:** 1 month  
+- **FTE:** 1  
+- **Costs:** 8,000 USD  
+
+**Deliverables**
+
+| Number | Deliverable          | Specification                                                                                                                               |
+|--------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License               | MIT                                                                                                                                         |
+| 0b.    | Documentation         | A complete SDK/API reference and a guide for integration into dApps or wallets.                                                             |
+| 0c.    | Testing and Guide     | Unit tests (≥80%) for the SDK and API modules with a usage walkthrough.                                                                    |
+| 0d.    | Docker                | Dockerfile for testing the SDK via a minimal backend+frontend demo.                                                                         |
+| 0e.    | Article               | We will publish a developer-focused article demonstrating the SDK integration in a real-world Moonbeam/Astar dApp.                         |
+| 1.     | JavaScript SDK        | A modular JavaScript SDK with APIs for dApps/wallets to integrate TxSim’s simulation, fee estimation, and risk detection features.         |
+| 2.     | Frontend Integration  | A minimal frontend showcasing SDK integration with example transactions and simulation results.                                            |
 
 ![image](https://github.com/user-attachments/assets/15d4eb82-6de7-49e1-8a96-cfaf9e055113)
 ![image](https://github.com/user-attachments/assets/41a13e18-112f-4b09-a659-8b6b165b5360)
