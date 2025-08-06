@@ -12,7 +12,7 @@ Research potential ways to integrate formal verification into the development pr
 
 - A brief description of your project.
   
-This project is an R&D initiative to further secure Polkadot and subsequent parachains. With the recent increase in discussions of stablecoins across all ecosystem, we observed the benefit of gaining mathematical assurance for the safety of functions within `pallet_assets` for future integration of Circle’s CCTP (Cross Chain Transfer Protocol).
+This project is an R&D initiative to further secure Polkadot and subsequent parachains. With the recent increase in discussions of stablecoins across all ecosystem, we observed the benefit of gaining mathematical assurance for the safety of functions within `pallet_balances` for existing and future uses. As Polkadot continues to grow so should the level of scrutiny when it comes to security.
 Since pallets are an essential part of the Polkadot infrastructure, we want to take a deep look at exactly how the current logic functions. `pallet_balances` is used by every token on Polkadot. Within `pallet_balances`, the `fungible` traits are what will be researched specifically.
 We plan how to apply our Rocq-based framework [Inference](https://github.com/Inferara/inference-language-spec/blob/main/README.md) to Polkadot’s fungible trait set.
 Adaptation of the `fungible` trait set for formal verifications within our non-deterministic WASM framework will enable complete trait extraction with validated semantic mapping ready for formal specification.
@@ -116,7 +116,7 @@ Our project focuses on the need to explore additional formal verification method
 
 - How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
 
-For the needs of formal verification, there have been many things we have identified as needs. In regard to this research project, we originally identified these needs through observations of the Polkadot forum. While reading about the [Business Development update](https://forum.polkadot.network/t/a-polkadot-hub-launch-update-from-business-development-group-april-2025/12361), we observed the future goals, specifically related to `pallet_assets`. What began as a regular observation on the status of [Polkadot Hub](https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/reference_docs) turned into further exploring the Polkadot SDK docs from Paritytech.
+For the needs of formal verification, there have been many things we have identified as needs. In regard to this research project, we originally identified these needs through observations of the Polkadot forum. While reading about the [Business Development update](https://forum.polkadot.network/t/a-polkadot-hub-launch-update-from-business-development-group-april-2025/12361), we observed the future goals, related to `pallet_assets`. Although this is where the interest began, we have turned our attention solely toward `pallet_balances` for further study. What began as a regular observation on the status of [Polkadot Hub](https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/reference_docs) turned into further exploring the Polkadot SDK docs from Paritytech.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   
@@ -227,16 +227,16 @@ If you've already started working on your project or it is part of a larger proj
 
 ### Milestone 1 of 1 
 - **Estimated duration**: 1 month
-- **FTE**:  1.5
+- **FTE**:  1.25
 - **Costs**: 10,000 USD
 
 | Number | Deliverable             | Specification                                                                                                |
 |--------|-------------------------|--------------------------------------------------------------------------------------------------------------|
 | 0a.    | License                 | MIT.                                                                                                         |
-| 0b.    | Documentation           | We will provide informative documentation on our research process and findings.                              |
-| 0c.    | Reproducibility         | We will provide step-by-step verification guides for the grants team to independently validate results.      |
-| 0d.    | Article Information     | An article that will include test-like fungible trait specifications & WASM modules.                         |
-| 0e.    | Final Research Article  | We will publish a detailed research article that explains our research findings and results.                 |
+| 0b.    | Documentation           | We will provide informative documentation on our research process and findings. This will be in a dedicated GitHub repository. Will also include 0c-0d deliverables and research artifacts.                             |
+| 0c.    | Reproducibility         | We will provide step-by-step guides for the grants team to know what we have done. Includes rust code of the functionality that has been researched and resulting byte code.     |
+| 0d.    | Final Research Article     |  We will publish a detailed research article to the Github repository and our website that explains our research findings and results. This includes the reproducibility guide of the 0c deliverable, notably WASM binary compilation artifacts.  _Textual_ description of `fungible` traits specification along with discovered assumptions regarding execution environment, required for its implementation.  This article will include a cleaned up and annotated WASM module of `pallet_balances`. Includes Rust code that is distilled and ready to reason about. Ordinary unit tests to confirm its faithfulness to the original in a classical sense.  This prepares `pallet_balances` for future reasoning.                                   |
+
 
 
 
@@ -253,6 +253,22 @@ We will continue to share our progress and interesting discoveries during the re
 
 We anticipate that this research will pave the way for further exploration into implementing a theorem catalog and fully applying our verification methodology to Polkadot, thereby enabling a clear path to implementation verification.
 
+- If we would sign the grant, what would you envision to be the next step(s) after its completion? Would you continue to work on this, and if yes, in what capacity?
+
+After the completion of this grant, we would use the bytecode from the research artifacts of `pallet_balances` for further reasoning. This enables us to formalize and define formal properties for this substrate. 
+
+The next step would be to ensure the soundness of the properties.
+
+Here is a detailed description of how we envision the future research steps:
+### Research findings and next steps.
+Our general plan for the complete research consists of three major phases:
+1. **Land clearing**. Our in-development methodology for program verification relies on reasoning about already compiled WASM modules, so we can not treat them as black-box objects that just need to work somehow. It is important to isolate meaningful code, that specification should be covering, from the surrounding elements of infrastructure, that may slip into compiled modules due to the uncontrollable complexities of build process. To be properly specified, `pallet_balances` must be first stripped of everything not directly related to its core functionality. If there are any algorithm subtasks, currently delegated to external frameworks, they must be either re-implemented inline, or comprehensively annotated to become explicit suppositions of future spec. Basically, `pallet_balances` should start looking like it was hand-written with a systematically minimalist approach.
+2. **Specification design**. Using our in-development language Inference, we write formal specification of traits implemented in subject module, with regard to suppositions, discovered in the previous step. By nature of our tool-chain, this formal specification itself targets a variety of WASM for compilation, though the resulting module is not executable due to its reliance on the controllable non-determinism to express para-virtual branching.
+3. **Formal verification**. We link together WASM modules of the covered pallet and its formal specification in our in-development Coq-based reasoning environment. Such linking produces Coq theories, that can be roughly summarized as "If non-deterministic execution was possible, this code would terminate successfully". Proving resulting theories by logical means essentially implies, that subject module adheres to the specification in all cases.
+This particular grant application covers only the first point of this plan (Land Clearing), but we are looking forward to continuing our work on the next steps, depending on eligibility of results and your concernment.
+
+
+As for capacity, for any future grants we hope to increase the existing team capacity. Such an increase would be from FTE of 1.25 to 2. The increase of capacity opens up the opportunity to involve more individuals into the research project. The scale of the team depends on the grant size of course.
 
 ## Additional Information :heavy_plus_sign:
 
