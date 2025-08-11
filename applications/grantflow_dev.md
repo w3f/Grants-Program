@@ -78,6 +78,7 @@ This section should break the development roadmap down into milestones and deliv
 - **Estimated Duration:** 2 months (within 3-month cap)
 - **Full-Time Equivalent (FTE):** 0.5 FTE (part-time availability)
 - **Total Costs:** $10,000 USD (full payout in USD; no DOT lockup requested)
+- **Milestone Structure:** 4 sequential milestones with early on-chain integration
 
 > Note that deliverables 0a to 0d are mandatory. Please adapt their specification to your project.
 
@@ -87,10 +88,10 @@ This section should break the development roadmap down into milestones and deliv
 | 0b. | Documentation | We will provide inline code documentation and a basic tutorial explaining how users (grantees/curators) can submit forms, review submissions, approve milestones, trigger payouts via the dashboard, and use integrated chat features for communication. |
 | 0c. | Testing and Testing Guide | Core functions (e.g., submissions, approvals, payouts, chat integrations) will be covered by unit/integration tests using Jest. The guide will describe running tests via npm commands |
 | 0d. | Article | We will publish an article on Medium or similar explaining the platform's development, features (including chat and Polkadot integrations), and impact on Polkadot bounties. |
-| 1. | Polish POC and Feedback Integration | Refine existing POC features (bug fixes, usability improvements for accounts, forms, approvals). Collect and integrate feedback from committees via forms. Deliverable: Updated codebase with improved UX and schema revisions. Verification: Demo access and committee feedback logs. |
-| 2. | Full-Functioning Platform excl. On-chain mechanism | Full grant cycles should now be possible, from proposal review to multiple milestone payouts. |
-| 3. | Onboarding, Multi-Sig Integration, and Chat Features  | Build onboarding flow, demo experience, integrate Polkadot multi-sig for approvals/payouts and chain auth, add chat features for committees and grantees, and onboard 5 committees. Deliverable: Functional dashboard with submission states, on-chain approvals, and chat. Verification: Test payouts/auth on testnet, chat functionality, and committee onboarding confirmation. |
-| 4. | Final Enhancements and Deployment.  | Add flexible enhancements, full testing, and deployment. Deliverable: Live platform with public transparency features and all integrations. Verification: End-to-end testing, usage guide, and committee trials. |
+| 1. | Polish POC and Core Platform Foundation | Refine existing POC features (bug fixes, usability improvements for accounts, forms, approvals). Implement core platform architecture with improved database schema, authentication flow, and basic submission/review workflows. Deliverable: Stable platform foundation with polished user experience. Verification: Demo access, functional forms, and basic approval workflows. |
+| 2. | On-Chain Integration and Multi-Sig Implementation | Integrate Polkadot multi-sig for approvals and payouts. Full grant cycles from submission to on-chain payout should be functional. Deliverable: Working on-chain integration with testnet deployment. Verification: Successful test transactions, multi-sig approvals, and payout mechanisms on Polkadot testnet. |
+| 3. | Chat Features and Committee Onboarding | Add integrated chat features for committees and grantees, build comprehensive onboarding flow, and onboard 5 committees to the platform. Enhance dashboard with real-time communication and collaboration tools. Deliverable: Full-featured platform with chat integration and active committee participation. Verification: Chat functionality, committee onboarding confirmation, and active usage metrics. |
+| 4. | Final Enhancements and Production Deployment | Complete final testing, add public transparency features, implement production optimizations, and deploy to mainnet. Include comprehensive documentation and usage guides. Deliverable: Production-ready platform with all features operational. Verification: End-to-end testing, live deployment, and committee trials on mainnet. |
 
 ### 💰 Budget Breakdown
 
@@ -98,11 +99,13 @@ Please provide a breakdown of your budget by milestone:
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | --- | --- | --- | --- |
-| 1 | 0a-0d + Milestone 1 (Polish POC and Feedback) + Milestone 2 (Full platform excl. On-chain) | $5,000 | 3 weeks |
-| 2 | Milestone 3 (Multi-Sig, Onboarding, and Chat) and 4, Final Enhancement | $5,000 | 3 weeks (cumulative: 1.5 months) |
-| **Total** |  | **$10,000** | **1-2 months** |
+| 1 | 0a-0d + Polish POC and Core Platform Foundation | $2,000 | 2 weeks |
+| 2 | On-Chain Integration and Multi-Sig Implementation | $3,000 | 3 weeks (cumulative: 5 weeks) |
+| 3 | Chat Features and Committee Onboarding | $3,000 | 2 weeks (cumulative: 7 weeks) |
+| 4 | Final Enhancements and Production Deployment | $2,000 | 1 week (cumulative: 8 weeks) |
+| **Total** |  | **$10,000** | **2 months** |
 
-Funding covers: 120 hours of development at ~$83/hour (part-time solo work, including research, coding, testing, chat implementation, Polkadot integrations, and committee interactions). All payments requested in full USD, without DOT lockup.
+Funding covers: 120 hours of development at ~$83/hour (part-time solo work, including research, coding, testing, early on-chain integration, chat implementation, Polkadot integrations, and committee interactions). Sequential milestone delivery ensures early on-chain functionality validation. All payments requested in full USD, without DOT lockup.
 
 ## 🔮 Future Plans
 
