@@ -156,7 +156,7 @@ Technical and architectural planning is ongoing, with public code repositories t
 | 0b.    | Documentation          | We will provide both inline documentation and a user guide explaining how to run the simulation engine, estimate fees, and interpret outputs. |
 | 0c.    | Testing and Guide      | Core functions will be covered by unit tests (≥80% coverage). We will include a guide to run and validate them.                               |
 | 0d.    | Docker                 | A Dockerfile will be provided for quick testing and deployment of the simulation engine.                                                      |
-| 1.     | Simulation Engine      | Initial EVM-based transaction simulation engine targeting Moonbeam and Astar networks.                                                         |
+| 1.     | Simulation Engine      | Initial transaction simulation engine targeting Moonbeam (EVM) and Astar (WASM) networks, with an architecture designed for future compatibility with Substrate pallets and runtime calls (e.g., Asset Hub PVM).                                                         |
 | 2.     | Fee Estimation Module  | First implementation of the fee estimation logic based on simulated outcomes.                                                                 |
 
 ---
@@ -195,8 +195,8 @@ Technical and architectural planning is ongoing, with public code repositories t
 | 0c.    | Testing and Guide     | Unit tests (≥80%) for the SDK and API modules with a usage walkthrough.                                                                    |
 | 0d.    | Docker                | Dockerfile for testing the SDK via a minimal backend+frontend demo.                                                                         |
 | 0e.    | Article               | We will publish a developer-focused article demonstrating the SDK integration in a real-world Moonbeam/Astar dApp.                         |
-| 1.     | JavaScript SDK        | A modular JavaScript SDK with APIs for dApps/wallets to integrate TxSim’s simulation, fee estimation, and risk detection features.         |
-| 2.     | Frontend Integration  | A minimal frontend showcasing SDK integration with example transactions and simulation results.                                            |
+| 1.     | JavaScript SDK        | Modular JS SDK with APIs for dApps/wallets to integrate TxSim’s simulation and fee estimation, supporting EVM, WASM smart contracts, and Substrate pallet extrinsics.
+| 2.     | Frontend Integration  | Examplefrontend showcasing SDK integration with example transactions and simulation results.                                            |
 
 ![image](https://github.com/user-attachments/assets/15d4eb82-6de7-49e1-8a96-cfaf9e055113)
 ![image](https://github.com/user-attachments/assets/41a13e18-112f-4b09-a659-8b6b165b5360)
