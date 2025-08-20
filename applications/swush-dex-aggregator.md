@@ -214,7 +214,6 @@ Figma link can be found [here](https://www.figma.com/proto/kWunXnESHS2wN4xBESBik
 
 - Anwesh Nayak (@muddlebee)
 - Arnav Nayak
-- Backend dev (Position to be filled)
 
 ### **Contact**
 - **Contact Name:** Anwesh Nayak
@@ -312,7 +311,6 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 
 | Category | Item | FTE | Total | Description |
 | --- | --- | --- | --- | --- |
-| Personell | Project Lead | 1 FTE | 20,000 USD | leading project with tech architecture and implementation |
-| Personell | Product Lead, UI design/dev | 1 FTE | 10,000 USD | product management, design, UI/UX planning and development |
-| Personell | Backend Dev | 0.5 FTE |  | Position yet to be filled and budget will be split between existing team members |
+| Personell | Project Lead | 1 FTE | 20,000 USD | Leading project with tech architecture, implementation, research and product roadmap |
+| Personell | Product Lead, UI design/dev | 1 FTE | 10,000 USD | Product management, design, UI/UX planning and development |
 | --- | --- | **Total** | **30,000USD** |  |
