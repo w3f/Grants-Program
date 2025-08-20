@@ -131,12 +131,12 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 
 **Cross-Ecosystem Bridging via Chainflip + Hyperliquid Integration**
 
-**Chainflip** enables trustless cross-chain swaps without wrapped tokens, offering 30-50% lower fees than traditional bridges with 1-3 minute settlement times.
+**Chainflip** is a cross-chain liquidity network built for asset swaps between ecosystems. Instead of relying on wrapped tokens, it enables native-to-native swaps across chains like Polkadot, Ethereum, and Solana with lower fees and 1–3 minute settlement times.
 
-**Hyperliquid** is a high-performance perp DEX with $753M+ TVL, sub-100ms latency, and 100x leverage on 50+ markets.
+**Hyperliquid** is a decentralized exchange for perpetual futures (“perps”) - a popular crypto trading product that lets users long or short assets with leverage, without expiry. Designed for speed and scale, it delivers sub-100ms trade execution, supports across 50+ markets, and secures over $750M in TVL.
 
-- One-click flow: DOT/USDC/USDT → Arbitrum (via Chainflip) → Hyperliquid deposit
-- Revenue sharing through referral partnerships
+- One-click flow: DOT/USDC/USDT → Arbitrum (via Chainflip) → Hyperliquid deposit.
+- Revenue sharing through Hyperliquid's referral program, with referral links integrated directly into the Swush swap UI.
 
 ### User Flow
 **Milestone 1: Cross-chain swaps within Polkadot ecosystem**
