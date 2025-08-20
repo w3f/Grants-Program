@@ -299,12 +299,12 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 | 0c. | Testing and Testing Guide |  Core functions will be tested using chopsticks for multi network simulation to test the transactions to test the core functionality and unit tests wherever applicable. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone |
 | 0e. | Article | We will publish a documentation that explains all the features covered in this milestone |
-| 1. | User analytics (basic) | Track usage stats, transaction/swap history across multiple chains |
+| 1. | User analytics | Track usage stats, transaction/swap history across multiple chains and user XP points |
 | 2. | Currency dollar value | USD valuation of assets integrated in UI |
 | 3. | Currency metadata rendering | Currency logo display, names, symbols, and decimals per chain |
 | 4. | Ethereum EVM support | Extended evm wallet support for Ethereum/Arbitrum and Solana |
 | 5. | User XP Points | Post swap completion, awarding each user XP Points and unlock new levels on more points |
-| 6. | Chainflip integration for Arbitrum and Solana | Channel routing for Asset Hub based assets like DOT/USDC/USDT to Arbitrum and Solana |
+| 6. | Chainflip integration for Arbitrum and Solana | Cross ecosystem asset swaps for Asset Hub based assets like DOT/USDC/USDT to Arbitrum and Solana with fee estimation, slippage protection, and transaction status tracking |
 | 7. | Hyperliquid referral on-ramp | One-click Asset Hub/Polkadot(DOT/USDC/USDT) → Arbitrum(with chainflip) → Hyperliquid deposit |
 
 - **Estimated Duration:** 1.5-2 months
