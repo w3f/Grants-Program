@@ -302,8 +302,8 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 | 1. | User analytics | Track usage stats, transaction/swap history across multiple chains and user XP points |
 | 2. | Currency dollar value | USD valuation of assets integrated in UI |
 | 3. | Currency metadata rendering | Currency logo display, names, symbols, and decimals per chain |
-| 4. | Ethereum EVM support | Extended evm wallet support for Ethereum/Arbitrum and Solana |
-| 5. | User XP Points | Post swap completion, awarding each user XP Points and unlock new levels on more points |
+| 4. | User XP Points | Post swap completion, awarding each user XP Points and unlock new levels on more points |
+| 5. | Ethereum EVM support | Extended evm wallet support for Ethereum/Arbitrum and Solana |
 | 6. | Chainflip integration for Arbitrum and Solana | Cross ecosystem asset swaps for Asset Hub based assets like DOT/USDC/USDT to Arbitrum and Solana with fee estimation, slippage protection, and transaction status tracking |
 | 7. | Hyperliquid referral on-ramp | One-click Asset Hub/Polkadot(DOT/USDC/USDT) → Arbitrum(with chainflip) → Hyperliquid deposit |
 
