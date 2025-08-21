@@ -47,7 +47,7 @@ While Jupiter dominates Solana and 1inch leads on EVM chains, **Polkadot lacks a
 
 Inspired by CRED (App to pay credit card bills), which rewards users for payments (e.g., pay bills), Swush brings a similar mechanic to DeFi.
 
-Each successful swap earns **rewards**, which users can redeem and use for **post-swap actions** like redirecting to staking, vaults, or dApps on the target parachain. This helps parachains **onboard and retain liquidity**, while users gain deeper, contextual benefits.
+Each successful swap earns users **Swush points** while also unlocking **post-swap action prompts** like staking, vaults, or dApp interactions on the target parachain. This reward system helps parachains **onboard and retain liquidity**, while users gain both loyalty benefits and deeper engagement opportunities.
 
      
 | UI Card | Example |
