@@ -171,6 +171,12 @@ The W3F Grants Program offers different grant levels to help you best, depending
 - If your _delivery schedule_ significantly changes, please also open a pull request with an updated timeline.
 - If your deliveries are significantly delayed, and we cannot get a hold of you, we will terminate the grant (3 approvals required, regardless of level. If a member of the committee creates the termination PR, only two more approvals are required).
 
+## KYB/KYC
+
+NOTICE: 
+In connection with your participation in an ecosystem initiative organised by Web 3.0 Technologies Foundation, you agree to the processing of your personal data for identity verification, in order to prevent fraud, ensure eligibility, and maintain the integrity of our processes. This processing is based on legitimate interests under the EU General Data 
+Protection Regulation and on justified organisational needs under the Swiss Federal Act on Data Protection. Please follow these links to complete the [KYC (Know Your Customer)](https://in.sumsub.com/websdk/p/uni_6qX6Ju3vlfrMQbbG) or [KYB (Know Your Business)](https://in.sumsub.com/websdk/p/uni_6eVGNmoJ83HVovnN) process. Your information will be handled in line with the [Web3 Foundation Privacy and Cookies Policy](https://web3.foundation/privacy-and-cookies/) and the [Sumsub Privacy Notice](https://sumsub.com/privacy-notice-service/).
+
 ## :mailbox_with_mail: Suggest a Project
 
 If you think that we should support the development of certain tools or projects that aren't in the Polkadot/Kusama [tech stack](https://wiki.polkadot.network/docs/build-open-source), feel free to submit a suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
