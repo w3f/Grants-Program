@@ -92,6 +92,30 @@ Compares predicted results with on-chain results for verification and debugging.
 - Inaccurate for newer election algorithms or edge cases (e.g., non-existent accounts).
 - Lacking API support and customization flexibility.
 
+#### Additional information
+
+- **Relation to polkadot-staking-miner (https://github.com/paritytech/polkadot-staking-miner/issues/1050):**  
+  Our planned approach largely coincides with the discussion in the referenced issue.  
+  We intend to base the solution on `polkadot-staking-miner`, extending it with offline election prediction capability and exposing parameters for customization.
+
+- **Election algorithm if unspecified:**  
+  If the user does not specify an algorithm, the tool will default to the election algorithm currently used by the Polkadot chain (Phragmen).  
+  This ensures consistency with on-chain elections.
+
+- **Handling missing snapshot block in Off Phase:**  
+  If no snapshot block is specified and the tool is executed during the Off Phase, it will fallback to the latest available chain state to generate results.  
+  This allows predictions to remain useful without requiring manual input.
+
+- **Compatibility after Asset Hub migrations / staking-async:**  
+  We are aware that the new staking miner only works with staking-async after the Asset Hub migrations.  
+  Our tool is designed with this in mind to ensure smooth operation post-migration.
+
+- **Output requirements (nominator allocation + stake):**  
+  The output will include:  
+  1. List of nominators allocated to each validator  
+  2. Specific stake amounts allocated.  
+  We consider this essential for the usefulness of the tool.
+
 This project will build upon that foundation, reusing logic where valid, but heavily refactoring and extending it to meet modern use cases.
 
 ### Ecosystem Fit
@@ -132,9 +156,6 @@ Stack exchange profiles of some of our team members:
 2. https://substrate.stackexchange.com/users/354/shubham-gupta
 3. https://substrate.stackexchange.com/users/2372/arunjot-singh
 
-We are the technical partners for [Peer Coin](https://explorer.peer.inc/)
-
-
 ## Development Status :open_book:
 
 [offline-election-tool](https://grants.web3.foundation/docs/RFPs/offline_election_tool)
@@ -160,7 +181,7 @@ We are the technical partners for [Peer Coin](https://explorer.peer.inc/)
 | **0b.** | Documentation |Inline code documentation and a tutorial explaining how to simulate an election with default or custom inputs via CLI. |
 | **0c.** | Testing and Testing Guide | Unit tests for the election logic; guide on how to run and interpret the results. |
 | **0d.** | Docker | Dockerfile to build and run the CLI simulator locally. |
-| 1. | Core Election Engine	 | Updated version of the existing election script with support for accurate simulation of on-chain validator election logic using Phragmén and other supported algorithms. |
+| 1. | Core Election Engine	 | Updated version of the existing election script with support for accurate simulation of on-chain validator election logic using Phragmén algorithm. |
 | 2. | Custom Inputs Support | Allows passing custom active set size, voters, candidates, and their stakes via JSON input. |
 
 
