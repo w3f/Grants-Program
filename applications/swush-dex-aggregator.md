@@ -8,9 +8,13 @@
 
 > *Building the missing UX layer that lets users interact with Polkadot's full liquidity stack through one unified interface.*
 
-### Swush: A Unified DEX Aggregator for Polkadot’s Cross-Chain Ecosystem
+### Swush: A Unified DEX Aggregator for Polkadot's Cross-Chain Ecosystem
 
 Swush is a cross-chain DEX aggregator for Polkadot. It finds and executes the best asset swap routes across parachains, abstracting away the complexity of XCM and multiple parachains and DEXs.
+
+**Simple example:**
+> *Want to swap DOT(Asset Hub) → USDC(Bifrost)?* Instead of manually checking rates across Asset Hub, Hydration, and Bifrost DEXs, Swush automatically finds the best route (e.g., Hydration offers 3% better rates), handles all XCM complexity, and executes in few clicks.
+
 
 We delivered Swush v1, backed by a [Web3 Foundation grant](https://github.com/w3f/Grants-Program/blob/master/applications/swush-dex-aggregator.md), an MVP that finds and executes optimal swaps across Asset Hub, Hydration. This validated the core model: users don't want to figure out XCM hops or check multiple DEXs - they just want the best swap, in one click.
 
@@ -22,7 +26,7 @@ With **Swush v2**, we are expanding this foundation into a full routing engine:
 
 | Feature | Description |
 |---------|-------------|
-| 🔄 **Cross-chain swaps** | Best asset swap routes across Asset Hub, HydraDX, Moonbeam, Acala, Bifrost |
+| 🔄 **Cross-chain swaps** | Best asset swap routes across Asset Hub, Hydration, Moonbeam, Acala, Bifrost |
 | 🌉 **Cross-ecosystem bridging** | Route and swap assets via Chainflip to Arbitrum and Solana |
 | ⚡ **Direct perps market access** | One-click deposits into Hyperliquid after swaps |
 | 🎯 **Reward-driven liquidity** | Incentives like vouchers, NFTs, or staking prompts on destination chains |
@@ -80,8 +84,8 @@ These NFTs are more than collectibles—they’re brand anchors and functional r
 
 While tools like [Turtle.cool](https://turtle.cool/) provide basic cross-chain transfers and swaps, Swush differentiates itself as:
 
-- A **comprehensive multi-hop swap router** that compares asset swap routes across various DEXs (Asset Hub, HydraDX, Bifrost) rather than just a bridge
-- **Deeply integrated** with multiple parachain DEXs and liquidity pools via XCM (HydraDX, Moonbeam, Bifrost, Acala)
+- A **comprehensive multi-hop swap router** that compares asset swap routes across various DEXs (Asset Hub, Hydration, Bifrost) rather than just a bridge
+- **Deeply integrated** with multiple parachain DEXs and liquidity pools via XCM (Hydration, Moonbeam, Bifrost, Acala)
 - **Cross-ecosystem enabled** with bridging capabilities via Chainflip to Arbitrum and Solana
 - **Perps market gateway** providing direct access to Hyperliquid derivatives trading
 - **Engagement engine** combining ecosystem incentives, and brand loyalty mechanics through reward-driven actions and NFT-based community building
@@ -103,6 +107,23 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 <div align="center">
 <img width="550" alt="cross-chain" src="https://github.com/user-attachments/assets/2462a5da-622e-4b5e-a856-4e55b4717a32" />
 </div>
+
+### Cross-Parachain DEX Aggregation: Detailed Example
+
+**Scenario:** User wants to swap DOT (Asset Hub) → USDC (Bifrost)
+
+**With Swush:**
+
+- **Route 1**: DOT (Asset Hub) → XCM to Bifrost → Bifrost DEX (Rate: 3.98)
+- **Route 2**: DOT (Asset Hub) → XCM to Hydration → Hydration DEX → XCM to Bifrost (Rate: 4.02)
+- **Route 3**: Asset Hub DEX → XCM to Bifrost (Rate: 3.99)
+
+**Result:** Swush automatically selects Route 2 (Hydration), giving user best swap rate.
+
+**Visual Representation of the routes:**
+
+<img width="1840" height="936" alt="Mermaid Chart - Create complex, visual diagrams with text  A smarter way of creating diagrams -2025-08-22-205320" src="https://github.com/user-attachments/assets/07de2200-aa03-455d-a446-e63c64f4adb2" />
+
 
 ### Core Features, Components & Architecture
 
@@ -145,14 +166,14 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 ### User Flow
 **Milestone 1: Cross-chain swaps within Polkadot ecosystem**
 
-*(Asset Hub ↔ HydraDX ↔ Moonbeam ↔ Bifrost, with multi-wallet & fee estimation)*
+*(Asset Hub ↔ Hydration ↔ Moonbeam ↔ Bifrost, with multi-wallet & fee estimation)*
 
 1. **User Connects Wallet**
     - Substrate or EVM wallet detection (multi-wallet support)
     - Network manager selects optimal RPC endpoints for each chain
 2. **Select Swap**
     - Choose source/destination chain + token
-    - Router-core computes best route via connected parachains (e.g., Asset Hub → HydraDX → Bifrost) comparing asset swap rates across various DEXs.
+    - Router-core computes best route via connected parachains (e.g., Asset Hub → Hydration → Bifrost) comparing asset swap rates across various DEXs.
 3. **Fee Estimation**
     - Fetch XCM fee weights (BuyExecution, Transact, ReserveAssetDeposit) and transaction/swap estimated fees
 4. **Dry Run and Slippage Protection**
@@ -264,7 +285,7 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 ## Development Roadmap
 
 ### Overview
-- **Estimated Duration:** 4-4.5 months
+- **Estimated Duration:** 5-6 months
 - **Full-Time Equivalent (FTE):** 2.0
 - **Total Costs:** $30,000 USD
 
@@ -286,7 +307,7 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 | 6. | Transaction dry run | Dry run transaction to confirm execution and outcome of the transaction |
 | 7. | Slippage protection | Protection to check if the output amount is within the acceptable range |
 
-- **Estimated Duration:** 2-2.5 months
+- **Estimated Duration:** 2.5-3 months
 - **Full-Time Equivalent (FTE):** 2.0
 - **Total Costs:** $18,000 USD
 
@@ -307,7 +328,7 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 | 6. | Chainflip integration for Arbitrum and Solana | Cross ecosystem asset swaps for Asset Hub based assets like DOT/USDC/USDT to Arbitrum and Solana with fee estimation, slippage protection, and transaction status tracking |
 | 7. | Hyperliquid referral on-ramp | One-click Asset Hub/Polkadot(DOT/USDC/USDT) → Arbitrum(with chainflip) → Hyperliquid deposit |
 
-- **Estimated Duration:** 1.5-2 months
+- **Estimated Duration:** 2-2.5 months
 - **Full-Time Equivalent (FTE):** 2.0
 - **Total Costs:** $12,000 USD
 
