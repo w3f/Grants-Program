@@ -13,7 +13,10 @@
 Swush is a cross-chain DEX aggregator for Polkadot. It finds and executes the best asset swap routes across parachains, abstracting away the complexity of XCM and multiple parachains and DEXs.
 
 **Simple example:**
-> *Want to swap DOT(Asset Hub) → USDC(Bifrost)?* Instead of manually checking rates across Asset Hub, Hydration, and Bifrost DEXs, Swush automatically finds the best route (e.g., Hydration offers 3% better rates), handles all XCM complexity, and executes in few clicks.
+
+> **Want to swap DOT(Asset Hub) → USDC(Bifrost)?**
+> 
+> Instead of manually checking rates across Asset Hub, Hydration, and Bifrost DEXs, Swush automatically finds the best route (e.g., Hydration offers 3% better rates), handles all XCM complexity, and executes in few clicks.
 
 
 We delivered Swush v1, backed by a [Web3 Foundation grant](https://github.com/w3f/Grants-Program/blob/master/applications/swush-dex-aggregator.md), an MVP that finds and executes optimal swaps across Asset Hub, Hydration. This validated the core model: users don't want to figure out XCM hops or check multiple DEXs - they just want the best swap, in one click.
@@ -230,10 +233,10 @@ Figma link can be found [here](https://www.figma.com/proto/kWunXnESHS2wN4xBESBik
 
 ## Team 
 
-- **Team Name:** Swush Labs(No legal entity)
+- **Team Name:** Swush Labs (Not a legal entity)
 - **Contact Name:** Anwesh Nayak
 - **Contact Email:** anweshknayak@gmail.com
-- **Website:** https://app.swush.me
+- **Website:** NA
 
 ### **Team members**
 
@@ -250,9 +253,9 @@ Figma link can be found [here](https://www.figma.com/proto/kWunXnESHS2wN4xBESBik
 
 ### **Team's experience**
 
-I have around 6 years of experience in full stack development. Previously worked as a tech lead at B2B fintech firm. Also, previously was a polkadot ambassador and the community manager/moderator of the official polkadot/kusama discord. I have been contributing to the ecosystem since 3 years. Also participated in Thousand Contributors Programme by w3f and have been adding suggestions/improvements across the w3f github projects(polkodot-wiki).
+I have around 6 years of full-stack development experience, working as a Tech Lead and Software Engineer at fintech companies. For the past 3 years, I've been actively contributing to the Polkadot ecosystem as a former Ambassador and community moderator/manager for the official Polkadot/Kusama Discord.
 
-Also wrote a comprehensive tutorial to get started with Polkadot using the polkadot-js API (https://polkadotjs-developer-hub.gitbook.io/)
+Also, I've participated in the Web3 Foundation Thousand Contributors Programme, contributed to polkadot-wiki, and wrote a comprehensive tutorial for developers getting started with Polkadot ([polkadotjs-developer-hub.gitbook.io](https://polkadotjs-developer-hub.gitbook.io/)).
 
 **Arnav** our Lead Product Designer with 4+ years of experience leading the end-to-end design of digital products, while also taking on responsibilities in product strategy and management. As the first designer at India’s first music tech licensing platform, he played a key role in shaping the product from the ground up. He has also worked on diverse projects including shopping-focused AI agents, a sports platform with landing and backend applications, and a calling automation AI tool for PwC.
 
