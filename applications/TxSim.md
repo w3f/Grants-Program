@@ -93,7 +93,7 @@ TxSim eliminates blind transactions in Polkadot, reducing scams and fee waste wh
 
 **Emmanuel — Project Lead**  
 Role: Project manager and blockchain architect with deep experience in DAO tooling and transparency infrastructure. Combines hands-on engineering with leadership in dApp development and open governance tooling.  
-LinkedIn: [linkedin.com/in/emmanuel-eclipse](https://linkedin.com/in/emmanuel-eclipse)  
+LinkedIn: [linkedin.com/in/emmanuel-eclipse](https://www.linkedin.com/in/emmanueleclipsewebsite/)  
 Contact: virtualstrikingly@gmail.com
 
 **Golden K. — Machine Learning Developer**  
