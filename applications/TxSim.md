@@ -5,7 +5,7 @@
 
 - **DOT:** 1XYfhcsZFhcszyy6jiHYvkBqPxUXq6YADRUaUkcZ8vopqNTiqjBv
 - **USDC:** 0x53785b7155d016ba9c64fc2117d0eac0b21c9869  
-  **Grant Level:** 3
+  **Grant Level:** 2
 
 ---
 
