@@ -225,6 +225,33 @@ If you've already started working on your project or it is part of a larger proj
 - **Total Costs**: $10,000
 - **DOT%**: 50%
 
+### Specific Deliverables
+
+
+We are aiming to prepare verification of `pallet_balances` adherence to some of the following properties (preliminary list, subject to changes depending on research progress):
+1. **Conservation of Total Issuance**
+   The total issuance must always equal the sum of all account balances (free + held) plus any imbalances (credits/debts) that haven't been handled.
+2. **Non-Negative Balances**
+   No account should ever have a negative free or held balance.
+3. **Existential Deposit (ED) Invariant**
+   No account should have a total balance (free + held) strictly between 0 and ED (exclusive). If it does, the account should be reaped.
+4. **Spendable Balance Constraint**
+   The spendable balance (free minus holds and freezes) should never be negative.
+5. **Hold and Freeze Consistency**
+   Holds are cumulative: the total held is the sum of all holds. Freezes are not cumulative: the effective freeze is the maximum of all freezes.
+6. **Transfer Properties**
+   Accounting preconditions and postconditions.
+7. **Slashing Invariant**
+   When slashing a hold from an account, the held balance and total issuance is reduced by given amount.
+8. **Imbalance Handling**
+   When an imbalance (credit or debt) is dropped, it should adjust total issuance.
+   
+The finalized list of formal properties will be refined and re-defined in research artifacts.
+
+Regarding compiled module our primary targets for annotation are points of interaction between `pallet_balances` and its execution environment. In WASM architecture this would be imported and exported function references. All meaningful externally callable routines of the module will be properly documented, including their calling conventions (in most generic sense, as in "what needs to be done to form arguments and parse results if we manually call WASM?") and conceptual relations to the `fungible` trait set. Also, every external routine that is called from inside of the module will receive the same treatment, with comprehensive description of its suppositions, adherence to which is required for correct execution.
+
+As for acceptance criteria we propose to use [fungible conformance tests](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/support/src/traits/tokens/fungible/conformance_tests) that will be executed with the logic preserved and included into the the research repository with the prepared for formal reasoning `pallet_balances` code. That said, the reasoning ready palette code must pass all conformance tests. As this testing module can not be backported to support the new version of `pallet balances` we will recreate a full semantic equivalent of this test-suite for manual linkage. 
+
 ### Milestone 1 of 1 
 - **Estimated duration**: 1 month
 - **FTE**:  1.25
@@ -234,8 +261,8 @@ If you've already started working on your project or it is part of a larger proj
 |--------|-------------------------|--------------------------------------------------------------------------------------------------------------|
 | 0a.    | License                 | MIT.                                                                                                         |
 | 0b.    | Documentation           | We will provide informative documentation on our research process and findings. This will be in a dedicated GitHub repository. Will also include 0c-0d deliverables and research artifacts.                             |
-| 0c.    | Reproducibility         | We will provide step-by-step guides for the grants team to know what we have done. Includes rust code of the functionality that has been researched and resulting byte code.     |
-| 0d.    | Final Research Article     |  We will publish a detailed research article to the Github repository and our website that explains our research findings and results. This includes the reproducibility guide of the 0c deliverable, notably WASM binary compilation artifacts.  _Textual_ description of `fungible` traits specification along with discovered assumptions regarding execution environment, required for its implementation.  This article will include a cleaned up and annotated WASM module of `pallet_balances`. Includes Rust code that is distilled and ready to reason about. Ordinary unit tests to confirm its faithfulness to the original in a classical sense.  This prepares `pallet_balances` for future reasoning.                                   |
+| 0c.    | Reproducibility         | We will provide step-by-step guides for the grants team to know what we have done. Includes rust code of the functionality that has been researched and resulting byte code. We will provide .rs files for the fungible conformance tests.     |
+| 0d.    | Final Research Article     |  We will publish a detailed research article to the Github repository and our website that explains our research findings and results. This includes the reproducibility guide of the 0c deliverable, notably WASM binary compilation artifacts.  _Textual_ description of `fungible` traits specification along with discovered assumptions regarding execution environment, required for its implementation. All public functions, involved in implementation of traits Inspect, Unbalanced, UnbalancedHold, Mutate, InspectHold, MutateHold, UnbalancedHold, InspectFreeze, MutateFreeze and Balanced. This article will include a cleaned up and annotated WASM module of `pallet_balances`. Includes Rust code that is distilled and ready to reason about. Ordinary unit tests to confirm its faithfulness to the original in a classical sense.  This prepares `pallet_balances` for future reasoning.                                   |
 
 
 
