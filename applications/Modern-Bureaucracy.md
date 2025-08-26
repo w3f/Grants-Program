@@ -13,11 +13,13 @@
 
 Modern Bureaucracy brings to the Polkadot ecosystem the translation layer that lets humans speak to blockchains in their own language while maintaining cryptographic proof of every interaction.
 
-We solve the blockchain UX problem by transforming natural language inputs into schema-compliant encrypted transactions through local AI assistance. Unlike oracle solutions that inject external data on-chain, we provide an infrastructure where humans retain full control and legal responsibility for content while AI handles structural compliance. Every interaction generates immutable proof of who formatted what, when, and how - essential for regulatory audit requirements.
+Coupled with its dapp, maieutic-elicitation, Modern Bureaucracy is a protocol that facilitate the exchange and transformation of data by dismantling the bureaucratic moat that protects incumbent monopolies from competition by making compliance accessible to any actor with genuine value to offer.
+
+We solve the blockchain UX problem by transforming natural language inputs into schema-compliant encrypted transactions through local AI assistance. Unlike oracle solutions that inject external data on-chain, we provide an infrastructure where humans retain full control and legal responsibility for content while AI handles structural compliance. Every interaction generates immutable proof of who formatted what, when, and how - essential for regulatory audit requirements and trust between participants. The dapp inside the MCP can be extractd and coupled with a database to automat the exchange according to local parameters.
 
 As a former army technocrat, I realized adding more layers of control to exclude dishonest comportments will only result in excluding the honest ones who don't have the administrative skills or back office to conform to the strict formalism of the controls. The dishonest will always have the money from the technical fraud to pay for administrative conformity.
 
-My solution is to empower the non-technical and honest ones by giving them an edge through low-cost AI-assisted administrative compliance, decentralized coordination, and progressive construction of deliverables through public onchain compliances.
+My solution is to empower the honest ones by giving them an edge through low-cost AI-assisted administrative compliance, decentralized coordination, and progressive construction of deliverables through public onchain compliances.
 
 ### Modern Bureaucracy as a part of Substrate / Kusama / Polkadot / Web 3 Ecosystem
 
@@ -92,6 +94,7 @@ Treasury proposals fail due to poor structure, not bad ideas. We turn AI into a 
 - Most Polkadot treasury proposals are rejected on first submission
 - Average resubmission takes 2 weeks of back-and-forth communication  
 - Small teams can't afford $20k+ for professional compliance writers
+- complex compliance necessitate decentralized solution (EBSI)
 - European institutions need citizen-facing interfaces for blockchain compliance
 
 ### Similar Projects
@@ -151,9 +154,9 @@ Sergeant, specialized in Java Enterprise architecture. Designed and integrated w
 ### Team Code Repos
 
 - https://github.com/polykrate/Modern-Bureaucracy (to be implemented through the grant)
-- https://github.com/polykrate/complex-eliciation (to be implemented through the grant)
-- https://github.com/polykrate/human-context-protocol (current development)
-- https://github.com/polykrate/gosseyn (current development)
+- https://github.com/polykrate/complex-eliciation (to be implemente through the grant)
+- https://github.com/polykrate/human-context-protocol (polyvalent prototype)
+- https://github.com/polykrate/gosseyn (experimentation)
 
 Please also provide the GitHub accounts of all team members:
 
@@ -247,7 +250,7 @@ A workflow for the treasury proposal optimized for AI assistance will be publish
 | 4. | Encryption Module | ChaCha20-Poly1305 with X25519 ECDH implementation |
 | 5. | Event Listener | Real-time chain monitoring and AI notification |
 | 6. | Extrinsic Tool | For workflow initiation and execution |
-| 7. | Public Opinion | Community research: What data are needed for valid treasury proposals? |
+| 7. | Treasury Requirements Research | Document community-validated data requirements for successful proposals |
 
 ### Milestone 3 — Workflow Integration & Production Deployment
 
@@ -263,7 +266,7 @@ A workflow for the treasury proposal optimized for AI assistance will be publish
 | 0d. | Docker | Docker-compose for complete integration |
 | 0e. | Article | Technical deep-dive published on Polkadot blog explaining the AI-blockchain bridge architecture and use cases |
 | 1. | Paseo Deployment | Live testnet with AI-assisted treasury proposal workflow |
-| 2. | Performance Report | Latency (<4000ms), throughput (>20 msg/s), cost analysis |
+| 2. | Performance Report | Latency (<200 ms), throughput (>300 msg/s), cost analysis |
 | 3. | XCM Preparation | Design document for cross-chain AI services |
 | 4. | Video Tutorial | 10-minute setup and usage guide |
 | 5. | Security Audit | Basic security review and threat model |
