@@ -125,7 +125,7 @@ This project directly contributes to the Polkadot ecosystem by:
 ### Referral Program
 This project was inspired by the need for practical Web3 applications in traditional industries and the potential of Polkadot's interoperability features for service-based businesses. The project addresses the Web3 Foundation's goal of expanding the Polkadot ecosystem into real-world business applications while demonstrating the practical value of blockchain technology in traditional service industries.
 
----
+-----
 
 **Total Funding Request**: 50000 DAI
 **Project Duration**: 24 weeks
