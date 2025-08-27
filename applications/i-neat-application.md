@@ -1,3 +1,4 @@
+**Project Name:** iNEAT ERP
 **Team Name:** Value Creating Solutions Sdn Bhd
 **Contact Name:** Vijaya Babu Bollavarapu
 **Contact Email:** contact@vcsmy.com
