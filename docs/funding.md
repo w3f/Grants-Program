@@ -41,6 +41,5 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Moondance Labs Ecosystem Funding Program](https://www.moondancelabs.com/ecosystem-grants-w3f)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Polkadot Open Source Developer Grants Bounty](https://github.com/PolkadotOpenSourceGrants)
-- [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
 - [Polkadot Assurance Legion](https://polkadotassurance.com/)
