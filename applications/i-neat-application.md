@@ -6,11 +6,11 @@
 
 **Contact Email:** contact@vcsmy.com
 
-**Payment Address:** 16a39MTc69T7P6kSJ9XGcyxr164UhSuP1T4g8ruj7qQGweiS
+**Payment Address (Polkadot):** 16a39MTc69T7P6kSJ9XGcyxr164UhSuP1T4g8ruj7qQGweiS
 
 **Level:** 2
 
-**Total Cost DAI:** 50000
+**Total Cost (DAI):** 50000
 
 ## Project Overview
 
