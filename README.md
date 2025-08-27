@@ -312,7 +312,6 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
 - [Polkadot Assurance Legion](https://polkadotassurance.com/)
 - [Polkadot Open Source Developer Grants](https://github.com/PolkadotOpenSourceGrants/apply)
-- [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
 - [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
 
 ## :information_source: License<!-- omit in toc -->
