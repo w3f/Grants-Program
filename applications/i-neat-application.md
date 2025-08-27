@@ -3,11 +3,20 @@
 ## Team Name
 Value Creating Solutions Sdn Bhd
 
+## Contact Name
+Vijaya Babu Bollavarapu
+
+## Contact Email
+contact@vcsmy.com
+
 ## Payment Address
 16a39MTc69T7P6kSJ9XGcyxr164UhSuP1T4g8ruj7qQGweiS
 
 ## Level
 2
+
+## Total Cost DAI
+50000
 
 ## Project Overview
 
@@ -18,7 +27,6 @@ iNEAT ERP is a comprehensive Enterprise Resource Planning system for cleaning se
 - **Project Name**: iNEAT ERP - AI-Powered Cleaning Services Management with Polkadot Integration
 - **Website**: https://vcsmy.com
 - **GitHub Repository**: https://github.com/vcsmy/ineat-erp
-- **Contact Email**: contact@vcsmy.com
 
 ### Ecosystem Fit
 This project directly contributes to the Polkadot ecosystem by:
@@ -68,44 +76,12 @@ This project directly contributes to the Polkadot ecosystem by:
   - Integration with blockchain verification
 - Recruitment Timeline: Weeks 1-2 of project
 
-**Development Approach**: 
-Our team will be assembled during the initial project phase, ensuring we hire the best talent for each specialized role. This approach allows us to carefully select developers with proven expertise in Substrate development and AI/ML, while maintaining project momentum through our lead developer's full-stack capabilities.
-
-### Team Recruitment Strategy
-
-**Recruitment Process**:
-1. **Week 1**: Post job openings on specialized platforms
-   - Substrate/Polkadot communities
-   - AI/ML job boards
-   - Blockchain developer networks
-2. **Week 2**: Interview and select candidates
-   - Technical assessment for Substrate development
-   - ML model development evaluation
-   - Cultural fit and communication assessment
-3. **Week 3**: Onboard and begin development
-
-**Recruitment Platforms**:
-- Substrate Developer Network
-- Polkadot Ecosystem Discord
-- AI/ML communities (Kaggle, Papers With Code)
-- Professional networks (LinkedIn, GitHub)
-
-**Quality Assurance**:
-- Technical coding assessments
-- Portfolio review of previous projects
-- Reference checks from previous employers
-- Trial period for skill validation
-
 ### Development Roadmap
 **Total Duration**: 24 weeks (6 months)
 
 #### Milestone 1: Substrate Parachain Foundation (Weeks 1-8)
 - **Duration**: 8 weeks
-- **Cost**: $20,000 USD
-- **Team Allocation**:
-  - Lead Developer: $12,000 (60%)
-  - Web3 Developer: $6,000 (30%)
-  - AI/ML Engineer: $2,000 (10%)
+- **Cost**: 20000 DAI
 - **Deliverables**:
   - Custom Substrate parachain for cleaning services
   - Service verification pallets (pallets for service tracking, quality assessment, payment processing)
@@ -116,11 +92,7 @@ Our team will be assembled during the initial project phase, ensuring we hire th
 
 #### Milestone 2: AI/ML Integration with On-Chain Validation (Weeks 9-16)
 - **Duration**: 8 weeks
-- **Cost**: $15,000 USD
-- **Team Allocation**:
-  - Lead Developer: $6,000 (40%)
-  - Web3 Developer: $3,000 (20%)
-  - AI/ML Engineer: $6,000 (40%)
+- **Cost**: 15000 DAI
 - **Deliverables**:
   - AI models for route optimization with on-chain verification
   - Quality prediction system integrated with Substrate pallets
@@ -131,11 +103,7 @@ Our team will be assembled during the initial project phase, ensuring we hire th
 
 #### Milestone 3: Production Deployment and Ecosystem Integration (Weeks 17-24)
 - **Duration**: 8 weeks
-- **Cost**: $15,000 USD
-- **Team Allocation**:
-  - Lead Developer: $7,000 (47%)
-  - Web3 Developer: $6,000 (40%)
-  - AI/ML Engineer: $2,000 (13%)
+- **Cost**: 15000 DAI
 - **Deliverables**:
   - Production-ready parachain deployment
   - Full XCM integration for cross-chain payments
@@ -144,110 +112,29 @@ Our team will be assembled during the initial project phase, ensuring we hire th
   - Documentation and community resources
   - Performance optimization and scaling
 
-### Technical Architecture
-
-#### **High-Level Architecture**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Django Backend│    │  Polkadot Relay │    │  Custom Parachain│
-│                 │◄──►│     Chain       │◄──►│   (iNEAT ERP)   │
-│  - User Mgmt    │    │                 │    │                 │
-│  - Business     │    │  - XCM Router   │    │  - Service      │
-│  - AI/ML        │    │  - DID Registry │    │    Verification │
-│  - API Layer    │    │  - Asset Mgmt   │    │  - Payments     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Mobile Apps    │    │  Polkadot.js    │    │  IoT Devices    │
-│                 │    │   Extension     │    │                 │
-│  - React Native │    │  - Wallet       │    │  - GPS Tracking │
-│  - JWT Auth     │    │  - Transactions │    │  - Quality      │
-│  - Offline      │    │  - DID Mgmt     │    │    Sensors      │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
-
-#### **Technology Stack**
-- **Backend**: Django 5.2.5, Django REST Framework, PostgreSQL, Redis
-- **AI/ML**: OpenAI GPT-4, Scikit-learn, Pandas, NumPy, Custom ML models
-- **Web3**: Substrate Interface, Web3.py, Polkadot.js integration
-- **Mobile**: React Native with JWT authentication
-- **Blockchain**: Custom Substrate parachain, XCM, DID standards
-
-### Key Features
-
-#### **Core ERP Modules**
-- **HR & Payroll**: Digital employee management with blockchain verification
-- **Finance**: Smart contract-based invoicing and payment processing
-- **Inventory**: Real-time tracking with IoT and blockchain integration
-- **Client Management**: AI-optimized scheduling with on-chain verification
-
-#### **AI/ML Capabilities**
-- **Route Optimization**: Genetic algorithm with ML optimization (30-40% travel time reduction)
-- **Quality Prediction**: Ensemble learning for service quality assessment (85%+ accuracy)
-- **Demand Forecasting**: Time series analysis with seasonal decomposition (20% cost reduction)
-- **Fraud Detection**: Anomaly detection using isolation forests (90% fraud reduction)
-
-#### **Web3 Integration**
-- **Substrate Parachain**: Custom chain for cleaning service verification
-- **Decentralized Identity**: Polkadot's DID standard implementation
-- **Cross-Chain Messaging**: XCM for cross-chain payment processing
-- **Smart Contracts**: Service verification and automated payments
-- **Supply Chain Tracking**: Blockchain-based asset tracking and verification
-
-### Success Metrics
-
-#### **Technical Metrics**
-- ✅ Parachain successfully deployed on Polkadot testnet
-- ✅ XCM messages working between chains
-- ✅ DID verification on-chain
-- ✅ Smart contracts deployed and functional
-- ✅ Polkadot.js wallet integration complete
-
-#### **Business Metrics**
-- ✅ Service verification time reduced by 50%
-- ✅ Payment processing automated via smart contracts
-- ✅ Cross-chain transactions enabled
-- ✅ Supply chain transparency achieved
-- ✅ Quality assurance automated
-
-### Risk Mitigation
-
-#### **Technical Risks**
-1. **Substrate Learning Curve**: Allocate extra time for Rust/Substrate development
-2. **XCM Complexity**: Start with simple messages, gradually increase complexity
-3. **Parachain Deployment**: Use testnet first, then mainnet
-4. **Security**: Comprehensive security audit before mainnet
-
-#### **Team Risks**
-1. **Recruitment Challenges**: Multiple recruitment channels and backup candidates
-2. **Skill Gaps**: Technical assessments and trial periods
-3. **Communication**: Regular team meetings and project management tools
-4. **Knowledge Transfer**: Comprehensive documentation and code reviews
-
 ### Additional Information
 - **Open Source**: All code will be open-sourced under MIT License
 - **Documentation**: Comprehensive documentation for other developers to build upon
 - **Community**: Active participation in Polkadot ecosystem events and hackathons
 - **Sustainability**: Revenue model through premium features and enterprise licensing
 - **Innovation**: Pioneering AI-assisted development with human expertise
+- **Ecosystem Contribution**: Direct contribution to Polkadot's parachain ecosystem
+- **Real-World Impact**: Addressing actual business problems in the cleaning services industry
+- **Scalability**: Framework can be adapted for other service-based industries
 
 ### Referral Program
-This project was inspired by the need for practical Web3 applications in traditional industries and the potential of Polkadot's interoperability features for service-based businesses.
+This project was inspired by the need for practical Web3 applications in traditional industries and the potential of Polkadot's interoperability features for service-based businesses. The project addresses the Web3 Foundation's goal of expanding the Polkadot ecosystem into real-world business applications while demonstrating the practical value of blockchain technology in traditional service industries.
 
 ---
 
-**Total Funding Request**: $50,000 USD
+**Total Funding Request**: 50000 DAI
 **Project Duration**: 24 weeks
 **Team Size**: 3 FTE (1 Lead + 2 Recruited Specialists)
 **Grant Level**: 2 (Infrastructure Development)
 
----
-
-**Contact Information**:
-- **Lead Developer**: Vijaya Babu Bollavarapu
-- **Email**: contact@vcsmy.com
-- **Website**: https://vcsmy.com
-- **GitHub**: https://github.com/vcsmy/ineat-erp
-- **LinkedIn**: https://www.linkedin.com/in/bollavarapu
+**Expected Impact**:
+- 30-40% reduction in operational costs for cleaning services
+- 25% improvement in service quality through AI/ML optimization
+- 90% reduction in payment disputes using blockchain verification
+- Creation of reusable framework for other service industries
+- Direct contribution to Polkadot's parachain ecosystem growth
