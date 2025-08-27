@@ -303,7 +303,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Decentralized JAM](https://jam.web3.foundation/) 
-- [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
+- [HydraDX Grants and Bounties](https://docs.hydration.net/community/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [Moondance Labs Ecosystem Funding Program](https://www.moondancelabs.com/ecosystem-grants-w3f)
