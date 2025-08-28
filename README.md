@@ -312,7 +312,6 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Polkadot Open Source Developer Grants](https://github.com/PolkadotOpenSourceGrants/apply)
 - [RingDAO Collaboration Hub](https://github.com/ringecosystem/collaboration)
 
-
 ## :information_source: License<!-- omit in toc -->
 
 [Apache License 2.0](LICENSE) © Web3 Foundation
