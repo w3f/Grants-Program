@@ -29,7 +29,7 @@ jobs:
           path-to-document: 'https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/T%26Cs.md'
           # branch should not be protected
           branch: 'master'
-          allowlist: semuelle,takahser,Noc2,nikw3f,dsm-w3f,keeganquigley,laboon,github-actions[bot]
+          allowlist: semuelle,takahser,Noc2,PieWol,keeganquigley,laboon,github-actions[bot]
 
          # the followings are the optional inputs - If the optional inputs are not given, then default values will be taken
           remote-organization-name: w3f
