@@ -301,7 +301,6 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 
 - [Acala Ecosystem Program](https://acala.network/ecosystem-program)
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
-- [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Decentralized JAM](https://jam.web3.foundation/) 
 - [HydraDX Grants and Bounties](https://docs.hydration.net/community/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
@@ -311,6 +310,8 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
 - [Polkadot Assurance Legion](https://polkadotassurance.com/)
 - [Polkadot Open Source Developer Grants](https://github.com/PolkadotOpenSourceGrants/apply)
+- [RingDAO Collaboration Hub](https://github.com/ringecosystem/collaboration)
+
 
 ## :information_source: License<!-- omit in toc -->
 
