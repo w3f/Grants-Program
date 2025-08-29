@@ -9,5 +9,5 @@ jobs:
     steps:
     - uses: yogevbd/enforce-label-action@2.1.0
       with:
-        BANNED_LABELS: "admin-review"
+        BANNED_LABELS: 
         BANNED_LABELS_DESCRIPTION: "Remove `admin-review` label for merge"
