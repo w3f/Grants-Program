@@ -106,30 +106,30 @@ By collapsing setup from weeks to minutes and enabling AI-driven iteration, PIDN
 
 ### Contact 
 
-* **Name**: Shivani Digari (Main contact)
-**Role**: Product Lead
-**Email**: digarishivani@gmail.com  
-**Github**: https://github.com/shivaniD96
-**LinkedIn**: https://www.linkedin.com/in/shivani-digari/  
+* **Name**: Shivani Digari (Main contact) <br>
+**Role**: Product Lead <br>
+**Email**: digarishivani@gmail.com  <br>
+**Github**: https://github.com/shivaniD96 <br>
+**LinkedIn**: https://www.linkedin.com/in/shivani-digari/  <br>
 **Experience**: Shivani has spent the last 6+ years building and scaling fintech and SaaS platforms that turned complex, infrastructure-heavy systems into products serving thousands of users and billions in value. From a $1B+ co-lending platform to AI-powered loan systems that cut turnaround times from weeks to days, her career has focused on translating technical possibilities into accessible, intuitive experiences.
 She believes Web3 faces the same inflection point Web2 once did: powerful technology constrained by poor developer and user experience. With PIDN, Shivani is bringing her Web2 learnings into Web3 to ensure that Polkadot's interoperability promise is not just advanced in theory but easy and natural to build with. Her vision is to make Polkadot the ecosystem where cross-chain development feels effortless — empowering both human developers and AI agents to innovate faster.
 
-* **Name**: Puneet Mahajan 
-**Role**: Tech Lead 
-**Github**: https://github.com/puneet2019
+* **Name**: Puneet Mahajan <br>
+**Role**: Tech Lead <br>
+**Github**: https://github.com/puneet2019 <br>
 **Experience**: Puneet builds the rails that let interchain finance actually run. A protocol engineer in the Cosmos stack, he’s contributed to Persistence One’s core chain and pSTAKE’s native liquid-staking modules—turning research-heavy ideas into production Go. His footprint spans SDK/IBC issues and tooling, with a bias toward secure, composable abstractions and developer ergonomics. He believes Web3’s next curve depends on cross-chain UX that feels native. With PIDN, he’s making restaked security and LST-Fi primitives easy to build with—for human teams and AI agents alike.
 
 Core team consists of 3 member developer team expereicenced with web2 and web3 software development in experience with: kubernetes, rust, go and JS/TS
 
 Advisors
-* **Name**: Maajid Narula
-**Role**: Product Advisor
-**LinkedIn**: https://www.linkedin.com/in/maajid/
+* **Name**: Maajid Narula <br>
+**Role**: Product Advisor <br>
+**LinkedIn**: https://www.linkedin.com/in/maajid/ <br>
 **Experience**: Maajid turns frontier tech into products people actually use. A product leader across Cosmos, Ethereum, and Polkadot, he’s partnered with teams on Astar (a Polkadot parachain) and Soneium (Sony’s new Ethereum L2), consistently favoring simple mental models over protocol sprawl. Now advising Web3Fabric on PIDN, he’s pushing for developer experiences where interoperability is invisible and value flow is native. His focus: make cross-chain building feel obvious—so both human teams and AI agents can compose on-chain services with confidence.
 
-* **Name**: Anmol Yadav
-**Role**: Tech Advisor
-**LinkedIn**: https://www.linkedin.com/in/anmol-yadav-152126a4/
+* **Name**: Anmol Yadav <br>
+**Role**: Tech Advisor <br>
+**LinkedIn**: https://www.linkedin.com/in/anmol-yadav-152126a4/ <br>
 **Experience**: Anmol turns interchain chaos into developer-grade systems. As co-founder of Hyperweb and creator of Starship—the Kubernetes, powered dev/test environment for Cosmos developers, he ships pragmatic tooling that spins up full multi-chain testnets and CI flows (now even Solana). Advising Web3Fabric on PIDN, his focus is making cross-chain workflows (and agent-driven automation) feel native from day one.
 
 ## Legal Structure
