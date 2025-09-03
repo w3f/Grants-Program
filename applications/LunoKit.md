@@ -186,7 +186,7 @@ LunoKit has completed its initial version and has officially released a usable v
 | 0e.  | Package Management | Use pnpm workspace and Changesets for version management and package publishing, supporting automated NPM publishing. |
 | 1.   | Core Module: `@luno-kit/core` | Implement core connector abstraction (`BaseConnector`), configuration system (`createConfig`), chain definitions (`Chain` type), and storage system; support custom API options and type definitions. |
 | 2.   | Wallet Connectors Collection | Implement 6 connectors: Polkadot{.js} Extension, SubWallet, Talisman, Polkagate, Nova Wallet, WalletConnect. Each connector supports account discovery, connection management, and signing. |
-| 3.   | Chain Configuration System | Pre-configure 4 chains: Polkadot, Kusama, Westend, Paseo, including RPC endpoints, SS58, token info, and icons; support custom Substrate chain configurations. |
+| 3.   | Chain Configuration System | Pre-configure 6 chains: Polkadot, Kusama, Westend, Paseo,Polkadot AssetHub, Paseo AssetHub including RPC endpoints, SS58, token info, and icons; support custom Substrate chain configurations. |
 | 4.   | Utility Functions Library | Implement essential utility functions such as address format conversion, SS58 encoding/decoding, balance formatting, and device detection. |
 | 5.   | Type System | Provide full TS types (`Account`, `Chain`, `Config`, `Connector`, `Signer`, etc.) to ensure type safety. |
 | 6.   | UI Components: `@luno-kit/ui` | Implement 10 complete UI components: ConnectButton, ConnectModal, AccountDetailsModal, etc. |
@@ -220,7 +220,6 @@ LunoKit has completed its initial version and has officially released a usable v
 In the short term, our focus will be on both enhancing LunoKit’s functionality and promoting it across the Polkadot ecosystem:
 
 - **More UI Components**: Add richer UI components, including advanced asset lists with NFT support and on-chain transaction history for addresses.
-- **Chain Support Expansion**: Add support for new parachains, improve chain switching UX. 
 - **PolkaVM Support**: Continue developing support for PolkaVM, enabling developers to connect both Substrate-based accounts and EVM-based accounts simultaneously. This will significantly improve efficiency for those deploying Solidity DApps on PolkaHub chains.  
 - **Extended Wallet Support**: Integrate additional wallets such as Ledger, OneKey, Mimir, Fearless, and Polkadot Vault.  
 - **Multi-framework Frontend Support**: Extend beyond React to support frameworks such as **Vue** and **Svelte**, broadening accessibility for developers.  
