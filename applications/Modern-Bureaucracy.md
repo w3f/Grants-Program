@@ -155,8 +155,6 @@ Sergeant, specialized in Java Enterprise architecture. Designed and integrated w
 
 - https://github.com/polykrate/Modern-Bureaucracy (to be implemented through the grant)
 - https://github.com/polykrate/complex-eliciation (to be implemente through the grant)
-- https://github.com/polykrate/human-context-protocol (polyvalent prototype)
-- https://github.com/polykrate/gosseyn (experimentation)
 
 Please also provide the GitHub accounts of all team members:
 
