@@ -164,7 +164,7 @@ Please also provide the GitHub accounts of all team members:
 
 ### Team LinkedIn Profiles
 
-- https://www.linkedin.com/in/jean-francois-meneust-a488bb121/ 
+- [https://www.linkedin.com/in/jean-françois-meneust-a488bb121/ ](https://www.linkedin.com/in/jean-fran%C3%A7ois-meneust-a488bb121/)
 
 ## Development Status 📖
 
@@ -181,7 +181,7 @@ Successfully demonstrated working prototype to W3F evaluator Keegan Quigley, sho
 - **MCP Server:** TypeScript implementation bridging AI to blockchain via Dedot and Helia
 - **IPFS Integration:** Helia light node for encrypted content storage and peer-to-peer communication
 - **Local Testing:** Full system operational on local Substrate omni node, One AI send an instruction to the other that execute it then report through a valid Json Object
-**Grant Deliverables (full Proof of Concept):**
+- **Grant Deliverables (full Proof of Concept):**
 A new specialized parachain, Modern Bureaucracy will be built from the POP's parachain template :
   - `pallet-pki`: key management and identity system
   - `pallet-crypto-trails`: workflow coordination with audit trails
@@ -266,7 +266,7 @@ A workflow for the treasury proposal optimized for AI assistance will be publish
 | 0d. | Docker | Docker-compose for complete integration |
 | 0e. | Article | Technical deep-dive published on Polkadot blog explaining the AI-blockchain bridge architecture and use cases |
 | 1. | Paseo Deployment | Live testnet with AI-assisted treasury proposal workflow |
-| 2. | Performance Report | Latency (<200 ms), throughput (>300 msg/s), cost analysis |
+| 2. | Performance Report | Latency (<200 ms), throughput (>75 msg/s), cost analysis |
 | 3. | XCM Preparation | Design document for cross-chain AI services |
 | 4. | Video Tutorial | 10-minute setup and usage guide |
 | 5. | Security Audit | Basic security review and threat model |
