@@ -31,7 +31,7 @@ Please provide the following:
 
 - **Description:** OmniPass is an open-source npm package designed to enable developers to quickly integrate an embedded light wallet into their dApps. It leverages WebAuthn passkeys with PRF (Pseudo-Random Function) extensions to generate deterministic, stateless private keys directly from user biometrics or hardware authenticators. This eliminates the need for seed phrases, persistent storage, or complex key management, recreating keys on-demand for each session. The package handles wallet creation, authentication, transaction signing, and integration with Polkadot/Substrate APIs, making it ideal for browser-based web apps.
 
-- **Relation to Substrate / Polkadot / Kusama:** OmniPass integrates directly with Polkadot.js libraries to connect to Substrate-based chains, enabling easy user onboarding for dApps on Polkadot, Kusama, or parachains. It supports testnet interactions out-of-the-box (e.g., signing transactions on Westend or Rococo) and promotes broader adoption by simplifying access to Substrate's runtime and light client features without requiring users to manage traditional wallets.
+- **Relation to Substrate / Polkadot / Kusama:** OmniPass integrates directly with Polkadot-api libraries to connect to Substrate-based chains, enabling easy user onboarding for dApps on Polkadot, Kusama, or parachains. It supports testnet interactions out-of-the-box (e.g., signing transactions on Paseo) and promotes broader adoption by simplifying access to Substrate's runtime and light client features without requiring users to manage traditional wallets.
 
 - **Team Interest:** As a solo developer with a background in web3 authentication, I've been fascinated by passkey-based wallets since discovering PRF extensions for encryption and key derivation. With PRF support expanding in 2025 (e.g., broader adoption in browsers like Chrome and Safari, and integrations in web3 tools), now is the perfect time to build an open-source solution that bridges web2 UX with Substrate's decentralized ecosystem.
 
@@ -47,25 +47,25 @@ We expect the teams to already have a solid idea about your project's expected f
 - What your project is *not* or will *not* provide or implement
   - This is a place for you to manage expectations and clarify any limitations that might not be obvious
 
-  - **Mockups/Designs of UI Components:** Wireframes for key UI elements (e.g., passkey registration modal, transaction signing flow, and wallet dashboard) will be provided in Figma (shared link upon milestone completion). These focus on minimalistic, embeddable components that blend into host dApps.
+- **Mockups/Designs of UI Components:** Wireframes for key UI elements (e.g., passkey registration modal, transaction signing flow, and wallet dashboard) will be provided in Figma (shared link upon milestone completion). These focus on minimalistic, embeddable components that blend into host dApps.
 
 - **Data Models / API Specifications:** The package exposes a simple API based on WebAuthn standards:
   - `createWallet(options: { rpName: string, userName: string }): Promise<Wallet>` – Registers a passkey and derives a stateless key pair using PRF.
   - `authenticate(): Promise<AuthResult>` – Authenticates via biometrics and recreates the private key.
   - `signTransaction(tx: SubstrateTx): Promise<SignedTx>` – Signs transactions using Polkadot-api integration.
-
   Reference: Web Authentication API (https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API).
 
 - **Technology Stack:** 
   - Core: Node.js/npm package with TypeScript.
-  - Dependencies: @oslojs/webauthn (for WebAuthn handling), @oslojs/encoding (base64/HEX utilities), @oslojs/crypto (cryptographic primitives for PRF), @polkadot-api (for Substrate integration).
-  - Testing: Jest for unit/integration tests.
+  - Dependencies: @oslojs/webauthn (for WebAuthn handling), @oslojs/encoding (base64/HEX utilities), @oslojs/crypto (cryptographic primitives for PRF), @polkadot-api (for Substrate integration) polkadot-labs/hdkd.
+ 
 
 - **Documentation of Core Components:** 
   - **Passkey Registration:** Uses `navigator.credentials.create()` with PRF extension to generate a credential and derive a salt for key generation.
   - **Stateless Key Derivation:** PRF evaluates a pseudo-random function over the passkey's output to recreate Ed25519 or Sr25519 keys deterministically.
-  - **Architecture:** Client-side only (browser-embedded), no server dependencies; connects to Substrate nodes via WebSocket (e.g., ws://localhost:9944).
+  - **Architecture:** Client-side only (browser-embedded), no server dependencies; connects to Substrate nodes via WebSocket.
   - Protocols: Compliant with FIDO2/WebAuthn for passkeys; uses Substrate's SCALE codec for transactions.
+https://github.com/swenthebuilder/OmniPassFundingApplication/blob/main/webauthnprf.md
 
 - **PoC/MVP or Prior Work:** A live PoC is available at https://passkeywallet.fundation.dev/, demonstrating passkey creation, PRF extension check, and basic stateless key recreation. It simulates wallet setup in 4 steps, emphasizing security (no key storage) and speed. Source code is in the repo: https://github.com/swenthebuilder/passkeywallet (initial commits include WebAuthn setup and PRF derivation logic).
 
@@ -100,7 +100,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
   - Retail users seeking simple, seedless crypto management.
   - Enterprises integrating blockchain services with secure, biometric auth.
 
-- **Fit in the Ecosystem:** OmniPass provides vertical integration for user interactions in the Polkadot/Substrate stack, sitting between dApp frontends and Substrate nodes. It simplifies wallet embedding for parachain projects, enhancing accessibility without relying on extensions
+- **Fit in the Ecosystem:** OmniPass provides vertical integration for user interactions in the Polkadot/Substrate stack, sitting between dApp frontends and Substrate nodes. It simplifies wallet embedding for projects, enhancing accessibility without relying on extensions
 
 - **Needs Met:** Addresses onboarding friction (e.g., seed phrase loss, complex setups) by enabling passwordless, stateless wallets. Improves 
 security against phishing and key theft while maintaining non-custodial control.
