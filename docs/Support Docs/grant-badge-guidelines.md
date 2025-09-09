@@ -24,4 +24,4 @@ To that end, we’ve created a badge for grant recipients. This is available for
 
 Also, please don't use the **name or logo of the Web3 Foundation** in any context that could misrepresent your relationship with Web3 Foundation. Infringement of these guidelines can result in an immediate annulment of the grant.
 
-In case of any questions, please don’t hesitate to reach out to us at grantsPR@web3.foundation.
+In case of any questions, please don’t hesitate to reach out to us at comms@web3.foundation.
