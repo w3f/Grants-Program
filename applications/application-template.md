@@ -1,3 +1,48 @@
+Here’s the expanded Web3 Foundation grant proposal for the AIXS Token Platform, now including the Development Status, Development Roadmap, and Future Plans sections:
+
+---
+
+Development Status 📖
+The AIXS Token Platform is currently in active development under Honeypotz GmbH. The MVP includes:
+• A working prototype for tokenized AI model access
+• Integration with Superfluid for streaming payments
+• Confidential inferencing using Trusted Execution Environments (TEEs)
+• Terraform-based deployment across Azure, AWS, and GCP
+Repository & Codebase
+• GitHub (private repo): [Link available upon request]
+• Includes smart contracts (Ink!), FastAPI backend, React frontend, and TEE integration scripts
+Prior Work & Research
+• Scientific Publications:
+    • Confidential AI Inference using TEEs
+    • Tokenized Access Control for AI Models
+• Forum Discussions:
+    • Polkadot governance forums on AI integration
+    • Web3 Foundation Telegram discussions with ecosystem contributors
+• Blog Posts & Articles:
+    • “Decentralizing AI Model Hosting with AIXS” — Honeypotz Blog
+    • “Streaming Payments for AI-as-a-Service” — Medium article
+• Mockups & Wireframes:
+    • Vendor dashboard for model upload and analytics
+    • Consumer portal for model discovery and token payments
+    • Admin console for governance and compliance
+
+---
+
+Development Roadmap 🔩
+Overview
+• Total Estimated Duration: 4 months
+• Full-Time Equivalent (FTE): 2.5
+• Total Costs: 48,000 USD
+• DOT %: 60% of total costs to be paid in vested DOT
+
+---
+
+![IMG_1031](https://github.com/user-attachments/assets/21062128-c10c-460b-b3a4-88e0a8ac97c7)
+![IMG_1032](https://github.com/user-attachments/assets/c17afeb8-c2ec-4e7a-8e8d-b6917a1d5c21)
+![IMG_1033](https://github.com/user-attachments/assets/4180cf8c-ddd0-41a5-985f-257127b0de20)
+![IMG_1034](https://github.com/user-attachments/assets/46efb595-9384-481a-b0d2-d5b37a984aff)
+
+
 # Name of your Project
 
 > [!NOTE]
