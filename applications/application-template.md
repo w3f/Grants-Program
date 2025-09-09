@@ -1,3 +1,116 @@
+
+
+---
+
+Tagline
+AIXS Token — powering decentralized AI model hosting and monetization across the Polkadot ecosystem.
+Brief Description
+AIXS is a cross-platform token infrastructure designed to enable decentralized hosting, monetization, and interoperability of AI models. It provides a secure, scalable, and compliant framework for AI vendors to deploy models, manage access, and receive payments using Web3-native mechanisms. AIXS integrates with Polkadot through smart contracts, parachain interoperability, and Substrate-based modules to support confidential inferencing, trusted execution environments (TEEs), and tokenized access control.
+Relation to Substrate / Polkadot / Kusama
+AIXS will be deployed as a Substrate-based module and smart contract on a Polkadot parachain. It leverages Polkadot’s cross-chain messaging (XCM) for interoperability between AI model vendors and consumers, and integrates with Kusama for early-stage experimentation and testing. Confidential computing and TEEs will be supported via integrations with Substrate pallets and off-chain workers.
+Team Interest
+Our team is passionate about democratizing access to AI and enabling secure, decentralized monetization of models. We believe Polkadot’s modular architecture and cross-chain capabilities are ideal for building a scalable AI hosting infrastructure that respects privacy, compliance, and performance.
+
+---
+
+Project Details
+UI Mockups / Designs
+• AIXS Dashboard: Vendor onboarding, model upload, access control, and analytics.
+• Consumer Portal: Model discovery, usage tracking, and token payments.
+• Admin Console: Governance, compliance, and audit logs.
+Data Models / API Specs
+• Model Registry: Metadata, versioning, access policies.
+• Token Payment API: Streamed payments via Superfluid/Sablier.
+• Inference API: Secure model invocation with encrypted payloads.
+Technology Stack
+• Frontend: React + TypeScript
+• Backend: FastAPI + Python
+• Blockchain: Substrate, Ink! smart contracts, Polkadot parachain
+• Confidential Computing: Intel SGX / AMD SEV via TEEs
+• Cloud: Azure, AWS, GCP (Terraform-based deployment)
+• Payments: Superfluid, Sablier, AIXS token
+Documentation
+• Architecture diagrams
+• Smart contract specs
+• TEE integration protocols
+• API documentation
+• Governance and compliance modules
+PoC / MVP
+• MVP deployed for AI model hosting with tokenized access
+• Integration with Superfluid for streaming payments
+• TEE-based confidential inferencing prototype
+• GitHub repo with smart contracts and deployment scripts
+Limitations
+• AIXS does not provide model training infrastructure
+• No tokenomics or speculative financial instruments
+• No hosting or maintenance costs covered by this grant
+• No marketing or business planning activities included
+
+---
+
+Ecosystem Fit
+Fit in the Ecosystem
+AIXS serves as a decentralized infrastructure layer for AI model hosting and monetization. It complements existing parachains by enabling AI-as-a-Service capabilities, secure inferencing, and tokenized access control.
+Target Audience
+• AI model vendors
+• Dapp developers
+• Parachain teams needing AI capabilities
+• Researchers and data scientists
+• Privacy-focused enterprises
+Needs Met
+• Secure hosting of AI models
+• Tokenized access and monetization
+• Confidential inferencing
+• Compliance with HIPAA, FDA, Safe AI Act
+Evidence of Need
+• Scientific articles on confidential AI
+• Forum discussions on decentralized AI hosting
+• Case studies on AI model monetization challenges
+• Market demand for privacy-preserving AI inferencing
+Similar Projects in Polkadot Ecosystem
+• Phala Network: Focused on confidential computing, but not AI-specific
+• Crust Network: Decentralized storage, not tailored for AI model hosting
+Differentiation:
+• AIXS focuses on AI model monetization and inferencing
+• Integrates token streaming and access control
+• Built for compliance-heavy use cases (healthcare, finance)
+Similar Projects in Other Ecosystems
+• Ocean Protocol: Data monetization, not model hosting
+• SingularityNET: AI marketplace, lacks TEE integration and compliance focus
+Why AIXS is Unique:
+• Built on Polkadot for modularity and interoperability
+• Focused on secure, compliant AI model hosting
+• Tokenized access with streaming payments
+
+---
+
+Team 👥
+Team Members
+• Team Leader: Vladimir Lialine
+• Team Members:
+    • Backend Lead: [Name]
+    • Smart Contract Developer: [Name]
+    • DevOps Engineer: [Name]
+    • Compliance Advisor: [Name]
+Contact
+• Contact Name: Vladimir Lialine
+• Contact Email: vladimir@honeypotz.net
+• Website: https://honeypotz.net
+• LinkedIn: https://linkedin.com/in/vlad-lialine
+Legal Structure
+• Registered Address: 42 Hirschmattstrasse, Lucerne LH 6003
+• Registered Legal Entity: Honeypotz GmbH
+Team Experience
+• Developed multiple SaaS platforms including:
+    • SAAS AI Factory: Multi-tenant AI SaaS launcher
+    • QUANTUMSAFE BIOEDGE: Quantum-resilient AI platform
+    • My AI Tutor: AI-powered education platform
+    • Honeypot Farm: Cybersecurity honeypot deployment
+• Experience with Substrate, TEEs, confidential computing, and tokenized systems
+• Previous grant applications: None yet submitted to W3F
+
+
+
 # Name of your Project
 
 > [!NOTE]
