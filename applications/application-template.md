@@ -1,3 +1,73 @@
+Polkadot Open Grant Proposal
+
+## Project Name
+**AIXS Token**
+
+## Team Name
+**Honeypotz GmbH**
+
+## Website / GitHub
+- Website: https://honeypotz.ai
+- GitHub: https://github.com/Deepbody-me/AIXS-Token
+
+## Contact
+- Email: team@honeypotz.net
+- Founder: Vladimir Lialine
+
+## Project Overview
+
+**AIXS Token** is a decentralized protocol for hosting and monetizing AI models across a multi-vendor ecosystem. It enables secure, tokenized access to AI services, allowing developers, researchers, and enterprises to deploy, share, and monetize models using a unified token standard.
+
+Built on **Substrate**, AIXS Token will integrate with Polkadot parachains to support cross-chain interoperability, privacy-preserving inferencing, and confidential model execution using **Trusted Execution Environments (TEE)**.
+
+## Deliverables
+
+### Milestone 1 – Core Token Infrastructure (Month 1–3)
+- Substrate-based AIXS token module
+- Token minting, burning, and staking logic
+- GitHub repository with documentation and tests
+- Integration with Polkadot JS wallet
+
+### Milestone 2 – AI Model Registry & Access Control (Month 4–6)
+- Smart contract-based AI model registry
+- Role-based access control for model usage
+- Token-gated API endpoints for model inferencing
+- Frontend dashboard for model onboarding
+
+### Milestone 3 – Confidential AI Execution (Month 7–12)
+- Integration with TEE (Intel SGX / AMD SEV)
+- Confidential inferencing pipeline
+- Encrypted model hosting and execution
+- Audit logs and usage analytics
+
+### Milestone 4 – Cross-Chain Interoperability (Month 13–18)
+- XCM integration for token and model portability
+- Bridges to Ethereum and other AI ecosystems
+- Final security audit and deployment
+
+## Future Plans
+
+- Launch AIXS Token on Polkadot parachain
+- Expand to support AI model marketplaces
+- Enable dynamic pricing and token streaming (via Superfluid/Sablier)
+- Collaborate with AI vendors and research institutions
+
+## Team Background
+
+**Honeypotz GmbH** is building a portfolio of AI-native SaaS platforms, including:
+- SAAS AI Factory – Multi-tenant AI SaaS launcher
+- QUANTUMSAFE BIOEDGE – Quantum-resilient AI for healthcare
+- My AI Tutor – AI-powered education platform
+- Compliance AI – Regulatory compliance automation
+
+The team has deep experience in AI, blockchain, cloud infrastructure, and confidential computing.
+
+
+
+
+
+
+
 # Name of your Project
 
 > [!NOTE]
