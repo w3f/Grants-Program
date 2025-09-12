@@ -14,28 +14,34 @@ This project is a continuation of [this one](https://github.com/w3f/Grants-Progr
 
 ### Technical Details
 
-Each participant in the threshold signing group will run a dedicated node application. This application will include:
+Each participant in the threshold signing group will run a browser-based application that performs decentralized key generation and signing operations through the Olaf threshold signature protocol, compiled to WebAssembly (WASM). The networking layer is built using JavaScript and `libp2p` for peer discovery and communication.
 
-- Core Threshold Signing Protocol: The service will use the Olaf threshold signature protocol, which was implemented in the previous grant.
+#### 🌐 Networking Layer (JavaScript)
 
-- Peer-to-peer networking via [`rust-libp2p`](https://github.com/libp2p/rust-libp2p) (Milestone 1):
+##### Transport
+- Peers connect to a relay server using WebSockets.
 
-    - Peer discovery: nodes will identify and discover each other through a Distributed Hash Table (DHT) that maps their Substrate/Polkadot/Kusama public addresses to their peer IDs.
+##### Discovery
+- When a peer connects, it sends its Substrate/Polkadot/Kusama address to the relay server.
+- The relay server assigns the peer a random `libp2p` Peer ID and stores the mapping:  
+Address → Peer ID
 
-    - Secure communication: [`libp2p_noise`](https://docs.rs/libp2p-noise/latest/libp2p_noise/) provides secure, authenticated channels between participating nodes for exchanging protocol messages.
+- Peers can query the relay server with a known blockchain address to obtain the corresponding Peer ID.
 
-- Integration of the Olaf protocol with the underlying network (Milestone 2), managing:
-    - Distributed Key Generation (DKG) and signing rounds.
+##### Direct Peer Communication
+- Once a Peer ID is obtained, the peer establishes a WebRTC connection using `libp2p`.
+- All protocol messages are exchanged via this secure, direct P2P channel.
 
-    - Local storage of key shares and protocol state.
+#### 🔐 Cryptographic Protocol (Rust → WASM)
 
-- A Command Line Interface (Milestone 3) that allow users to:
+The cryptographic logic is written in Rust and compiled to WebAssembly (WASM) for browser use.
 
-    - Configure node settings (network addresses and peer IDs).
-    
-    - Configure protocol settings (threshold and number of participants).
-    
-    - Execute the Olaf protocol.
+##### Core Functionality
+- Distributed Key Generation (DKG) to derive a shared threshold public key.
+- Threshold Signing for signing Substrate/Kusama/Polkadot extrinsics.
+
+##### State Management
+- Key shares and protocol state are stored in browser-local storage (e.g., `IndexedDB`).
 
 ### Ecosystem Fit
 
@@ -75,7 +81,7 @@ The most similar project we found is [this](https://github.com/nulltea/tss-libp2
 - **Total Costs:** 30,000 USD
 - **DOT %:** 50%
 
-### Milestone 1 - Development of the Node
+### Milestone 1 - Peer Discovery via Blockchain Address
 
 - **Estimated duration:** 1 month
 - **FTE:** 1
@@ -87,9 +93,9 @@ The most similar project we found is [this](https://github.com/nulltea/tss-libp2
 | **0b.** | Documentation | We will provide **inline documentation** of the code. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **1.a** | Development of the Node | Two peers running on different machines are able to discover each other through their Substrate/Kusama/Polkadot address, establish a connection, and exchange messages. |
+| **1.a** | Peer Discovery via Blockchain Address | Two browsers connect to a relay server, register with a Substrate/Kusama/Polkadot address, discover each other, and exchange messages directly over WebRTC using `libp2p`. |
 
-### Milestone 2 - Integration of Olaf into the Node
+### Milestone 2 - Distributed Key Generation 
 
 - **Estimated duration:** 1 month
 - **FTE:** 1
@@ -101,9 +107,9 @@ The most similar project we found is [this](https://github.com/nulltea/tss-libp2
 | **0b.** | Documentation | We will provide **inline documentation** of the code. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| **1.a** | Integration of Olaf into the Node | Two peers on different machines exchange messages and successfully produce a threshold signature using the Olaf protocol with hardcoded protocol parameters. |
+| **1.a** | Distributed Key Generation | Two browsers exchange messages and successfully produce a shared threshold public key using the Olaf DKG protocol compiled to WASM. |
 
-### Milestone 3 - Decentralized Threshold Signature Service CLI
+### Milestone 3 - Threshold Signature
 
 - **Estimated duration:** 1 month
 - **FTE:** 1
@@ -116,8 +122,12 @@ The most similar project we found is [this](https://github.com/nulltea/tss-libp2
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **0e.** | Article | We will publish an **article**/workshop that explains how the service works under the hood and how it can be used from a user perspective. |
-| **1.a** | Decentralized Threshold Signature Service CLI | Two peers on different machines exchange messages and produce a threshold signature using the Olaf protocol with protocol parameters defined by user input from the CLI. |
+| **1.a** | Threshold Signature | Two browsers exchange messages and produce a valid threshold signature over a given Substrate/Kusama/Polkadot extrinsic using the Olaf protocol compiled to WASM. |
 
 ## Future Plans
 
-- Develop a webwallet for the user interface or integrate it in an established webwallet of the ecosystem, if there is interest.
+Build a production-ready, secure Progressive Web App (PWA) that includes:
+- Robust asynchronous peer-to-peer communication.
+- Support for configurable t-out-of-n threshold schemes.
+- Add proof of ownership to prevent address spoofing.
+- Implement a network of relay servers to achieve full decentralization.
