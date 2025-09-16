@@ -54,6 +54,54 @@
 ### Team LinkedIn Profiles (if available)
 - https://www.linkedin.com/in/brian-piggott-4144b818/
 - _Additional profiles TBD_
+- 
+# dotfrm — DNS-first identities for farms (pallet reuse)
+
+**Team:** dotfrm  
+**Payment:** DOT (vesting) to: `YOUR_POLKADOT_ADDRESS` • USDC (AssetHub) to: `YOUR_ASSETHUB_ADDRESS`  
+**Level:** 1
+
+## What & why
+- **Problem:** Small farms need low-cost, trustworthy identities and listings.
+- **Solution:** Reuse an existing **name-service pallet** (not build a new one), expose a clean SDK, and ship a DNS-first demo so users reach content with normal browsers. The on-chain short name “`.frm`” is **for apps/provenance**, not for end-user browsing.
+
+## Approach (addresses review)
+- **Pallet reuse, not reinvention.** We will evaluate and pick **one** existing pallet (e.g. `xaya/substrate-names`, `pnsproject/pns-pallets`) and **modernize it** (latest FRAME, expiry/renewal, transfers, resolver/text/contenthash records), then **contribute fixes upstream**.
+- **DNS-first access.** Public sites resolve via ordinary DNS (`.com`, `.farm`, etc.). Gateways/IPFS links are **optional demos only**.
+- **Open source.** Fork inherits upstream license; SDKs released under a permissive license where possible.
+
+## Milestones
+
+### M1 — Pick & modernize a pallet (4–6 weeks)
+**Deliverables**
+- Compare ≥3 existing pallets; document choice and trade-offs.
+- Update chosen pallet to latest Substrate/FRAME with tests (≥80% lines changed), CI green.
+- Minimal devnet & scripts to register/transfer/resolve.
+- Open PRs upstream for neutral fixes.
+
+**Acceptance**
+- `cargo test` passes on CI; readme shows one command to register & resolve a sample name.
+
+### M2 — SDK + DNS-first demo (4 weeks)
+**Deliverables**
+- TypeScript (and Rust, if useful) SDK: `checkAvailability`, `register`, `renew`, `transfer`, `resolve`, `setRecord`.
+- DNS-first demo site (no special browsers). Include a short **how-to** for optional IPFS/DNSLink mirroring; not required for use.
+- Quickstart docs.
+
+**Acceptance**
+- Example app resolves a farm record end-to-end with the SDK; tags/releases published.
+
+## Team
+- Lead: Brian Piggott (Substrate/TS)
+- Contractors: Substrate/Rust, Frontend
+
+## Budget & Timeline
+- M1: $X,XXX (DOT/USDC), 4–6 weeks
+- M2: $X,XXX (DOT/USDC), 4 weeks
+
+## License
+- Pallet fork: inherits upstream license.
+- SDKs/examples: MIT/Apache-2.0 where compatible.
 
 ## Development Status :open_book:
 Early design artifacts (architecture diagrams, schema drafts, UI wireframes) exist privately and will be recreated in open repositories under the selected license. No prior W3F grant.
