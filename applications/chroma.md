@@ -83,14 +83,15 @@ The need was identified through direct experience in dApp development where manu
 Currently, there is no comprehensive E2E testing library specifically designed for Polkadot wallet integrations. After thorough research of the Polkadot Forum, Tech Stack documentation, and OpenGov proposals, no similar project was found addressing this specific need.
 
 **Similar Projects in Related Ecosystems:**
-The closest comparable project is [@chainsafe/cypress-polkadot-wallet](https://www.npmjs.com/package/@chainsafe/cypress-polkadot-wallet), which provides Cypress-based testing for Polkadot wallets. However, Chroma differs significantly:
+The closest comparable project is [@chainsafe/cypress-polkadot-wallet](https://www.npmjs.com/package/@chainsafe/cypress-polkadot-wallet), which provides Cypress-based testing for Polkadot wallets. However, through direct testing experience with this package on a real dApp (https://polkadot-starter-vue-dedot.vercel.app/), several limitations were discovered that Chroma addresses:
 
 - **Framework Choice**: Uses Playwright instead of Cypress, offering better extension support and performance
-- **Implementation Approach**: Does not modify wallet internals like `signerPayload`, maintaining compatibility with real wallet behavior
+- **Implementation Approach**: Does not modify wallet internals like `injectedWeb3`, maintaining compatibility with real wallet behavior. The ChainSafe package requires dApps to adapt their implementation to work with the modified `injectedWeb3`, which can be problematic for existing applications
 - **Multi-chain Support**: Native support for both Polkadot and Ethereum chains through Talisman integration
 - **Real Extension Testing**: Works with actual wallet extensions rather than modified implementations
+- **Smart Wallet Compatibility**: For dApps implementing smart wallets (e.g., using Privy.io), Chroma recommends maintaining both web2 and web3 login options on the login page, as E2E testing with wallet extensions is more reliable and stable compared to testing with web2 credential systems like Google login
 
-This approach makes Chroma particularly suitable for the current ecosystem where PVM is live on Kusama, enabling comprehensive testing for smart contract dApps. 
+This approach makes Chroma particularly suitable for the current ecosystem where PVM is live on Kusama, enabling comprehensive testing for smart contract dApps without requiring modifications to existing dApp implementations. 
 
 ## Team
 
@@ -112,7 +113,7 @@ This approach makes Chroma particularly suitable for the current ecosystem where
 ### Team Code Repos
 
 - https://github.com/preschian/create-dot-app
-- https://github.com/preschian/chroma (to be open-sourced)
+- https://github.com/avalix-labs/chroma (open-source repository coming soon)
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere are also fine.
 
@@ -140,11 +141,17 @@ A functional proof of concept has been developed and publicly demonstrated, show
 - ✅ Basic Playwright integration with wallet extensions
 - ✅ Account import functionality working
 - ✅ Transaction approval/rejection flows functional
-- 🔄 Preparing for initial open-source release (version 0.0.x)
-- 🔄 Integration testing with Create Dot App project
+- ✅ Initial release available on NPM: https://www.npmjs.com/package/@avalix/chroma
+- 🔄 Open-source repository coming soon at: https://github.com/avalix-labs/chroma
+- ✅ Integration testing with Create Dot App project completed
 
 **Testing and Validation:**
-The library is being tested against the Create Dot App repository (https://github.com/preschian/create-dot-app) to ensure real-world applicability and identify potential issues before the official release.
+The library has been successfully integrated and tested with the Create Dot App repository to ensure real-world applicability:
+
+- **Integration Implementation**: Successfully integrated Chroma into Create Dot App via pull request: https://github.com/preschian/create-dot-app/pull/146/files
+- **CI/CD Validation**: The integration runs smoothly in GitHub Actions, demonstrating reliability in automated environments: https://github.com/preschian/create-dot-app/actions/runs/17754583058/job/50455331711
+
+This real-world integration validates the library's effectiveness and demonstrates its readiness for broader adoption in the Polkadot ecosystem.
 
 **Known Limitations:**
 - **Browser Support**: Currently limited to Chromium-based browsers due to Playwright's extension support constraints
