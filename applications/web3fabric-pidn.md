@@ -1,4 +1,4 @@
-# Project Overview
+# Polkadot Interop Devnet (PIDN)
 
 * Team Name: Web3Fabric
 * Payment Details:
@@ -6,7 +6,7 @@
   * USDT: 15iFtNCWbxCBnSz3VHKiy5uim254pFbWtz9Tu9tXbMcerS39
 * Level: 3
 
-## Description
+## Project Overview
 "Empowering developers to revolutionize cross-chain innovation—Polkadot-first, one-command multi-ecosystem devnets for seamless testing and prototyping."
 
 The Polkadot Interop Devnet (PIDN) will make Polkadot the natural hub for multi-chain development. With a single command, developers will be able to spin up a local or CI-ready relay chain + parachains alongside optional Cosmos zones, Ethereum clients, Solana validators, and Bitcoin nodes, plus preconfigured bridges (e.g., Snowbridge, Axelar, Wormhole).
@@ -100,37 +100,69 @@ Why PIDN unlocks this market:
 
 By collapsing setup from weeks to minutes and enabling AI-driven iteration, PIDN will transform Polkadot into the default hub for interoperability-native development. This positions Polkadot ahead of Cosmos, Ethereum, and Solana as the place where both human and AI developers build the next generation of cross-chain applications.
 
+## What PIDN Is Not
+- Not a hosted/SaaS offering (grant scope is open-source tooling).  
+- No token, tokenomics, or incentive programs.  
+- No custodial operations or production bridge ops.
+
 # Team Information
 
 ## Team Members
+* **Name**: Shivani Digari (Main contact) <br>
+* **Name**: Puneet Mahajan <br>
 
 ### Contact 
-
 * **Name**: Shivani Digari (Main contact) <br>
 **Role**: Product Lead <br>
 **Email**: digarishivani@gmail.com  <br>
-**Github**: https://github.com/shivaniD96 <br>
-**LinkedIn**: https://www.linkedin.com/in/shivani-digari/  <br>
-**Experience**: Shivani has spent the last 6+ years building and scaling fintech and SaaS platforms that turned complex, infrastructure-heavy systems into products serving thousands of users and billions in value. From a $1B+ co-lending platform to AI-powered loan systems that cut turnaround times from weeks to days, her career has focused on translating technical possibilities into accessible, intuitive experiences.
-She believes Web3 faces the same inflection point Web2 once did: powerful technology constrained by poor developer and user experience. With PIDN, Shivani is bringing her Web2 learnings into Web3 to ensure that Polkadot's interoperability promise is not just advanced in theory but easy and natural to build with. Her vision is to make Polkadot the ecosystem where cross-chain development feels effortless — empowering both human developers and AI agents to innovate faster.
 
 * **Name**: Puneet Mahajan <br>
 **Role**: Tech Lead <br>
-**Github**: https://github.com/puneet2019 <br>
-**Experience**: Puneet builds the rails that let interchain finance actually run. A protocol engineer in the Cosmos stack, he’s contributed to Persistence One’s core chain and pSTAKE’s native liquid-staking modules—turning research-heavy ideas into production Go. His footprint spans SDK/IBC issues and tooling, with a bias toward secure, composable abstractions and developer ergonomics. He believes Web3’s next curve depends on cross-chain UX that feels native. With PIDN, he’s making restaked security and LST-Fi primitives easy to build with—for human teams and AI agents alike.
-
-Core team consists of 3 member developer team expereicenced with web2 and web3 software development in experience with: kubernetes, rust, go and JS/TS
 
 Advisors
 * **Name**: Maajid Narula <br>
 **Role**: Product Advisor <br>
 **LinkedIn**: https://www.linkedin.com/in/maajid/ <br>
-**Experience**: Maajid turns frontier tech into products people actually use. A product leader across Cosmos, Ethereum, and Polkadot, he’s partnered with teams on Astar (a Polkadot parachain) and Soneium (Sony’s new Ethereum L2), consistently favoring simple mental models over protocol sprawl. Now advising Web3Fabric on PIDN, he’s pushing for developer experiences where interoperability is invisible and value flow is native. His focus: make cross-chain building feel obvious—so both human teams and AI agents can compose on-chain services with confidence.
 
 * **Name**: Anmol Yadav <br>
 **Role**: Tech Advisor <br>
 **LinkedIn**: https://www.linkedin.com/in/anmol-yadav-152126a4/ <br>
-**Experience**: Anmol turns interchain chaos into developer-grade systems. As co-founder of Hyperweb and creator of Starship—the Kubernetes, powered dev/test environment for Cosmos developers, he ships pragmatic tooling that spins up full multi-chain testnets and CI flows (now even Solana). Advising Web3Fabric on PIDN, his focus is making cross-chain workflows (and agent-driven automation) feel native from day one.
+
+## Team's Experience
+The Web3Fabric team combines deep product, protocol engineering, and infrastructure expertise across Web2 fintech scale-ups and Web3 ecosystems like Polkadot, Cosmos, and Ethereum. Collectively, the team has over a decade of experience delivering developer tooling, interoperability frameworks, and high-scale financial platforms.
+
+- **Product Leadership — Shivani Digari**  
+  - 6+ years leading fintech and SaaS product development, including a $1B+ co-lending platform and AI-driven lending systems that cut turnaround times from weeks to days.  
+  - Expert in translating complex infrastructure into developer-friendly experiences with a focus on usability, reliability, and adoption.  
+  - Brings strong experience in turning ecosystem-level goals (like interoperability) into tangible developer tooling.
+
+- **Protocol & Infrastructure Engineering — Puneet Mahajan**  
+  - Protocol engineer with contributions to **Cosmos SDK** and **IBC-based projects** such as Persistence One and pSTAKE.  
+  - Skilled in Rust, Go, and Kubernetes; built liquid staking, relayer tooling, and multi-chain orchestration frameworks.  
+  - Brings battle-tested knowledge of cross-chain primitives and secure abstractions for production-grade interoperability.
+
+- **Technical Advisory — Anmol Yadav**  
+  - Co-founder of **Hyperweb** and creator of **Starship**, a Kubernetes-powered multi-chain dev/test environment widely used in the Cosmos ecosystem.  
+  - Specialist in developer tooling, reproducible CI/CD pipelines, and multi-chain network orchestration.  
+  - Advises PIDN’s integration with Starship for broader multi-ecosystem compatibility.
+
+- **Product Advisory — Maajid Narula**  
+  - Product leader across **Cosmos, Ethereum, and Polkadot ecosystems**, with advisory roles in **Astar (Polkadot parachain)** and **Sony’s Soneium (Ethereum L2)**.  
+  - Known for simplifying mental models for complex cross-chain UX and ensuring intuitive developer experiences.  
+  - Focused on making interoperability invisible and natural for builders.
+
+- **Core Developer Team (3 members)**  
+  - Experienced across Web2 and Web3 software development with skills in **Rust, Go, TypeScript/JavaScript, and Kubernetes orchestration**.  
+  - Previous contributions include CI/CD-ready local devnets, multi-chain relayers, Snowbridge test flows, and benchmarking frameworks for XCM/IBC performance.
+
+Together, the team has delivered production systems processing **billions in value**, authored **open-source developer tooling**, and built **cross-ecosystem orchestration frameworks**. Their combined background ensures that PIDN is not just a technical prototype but a **developer-friendly product poised to become the standard for interoperability testing in the Polkadot ecosystem**.
+
+### Team Code Repos
+* **Github**: https://github.com/shivaniD96 <br> 
+* **Github**: https://github.com/puneet2019 <br>
+
+### Team LinkedIn profiles
+* **LinkedIn**: https://www.linkedin.com/in/shivani-digari/  <br>
 
 ## Legal Structure
 * Registered Address: Sharjah Media City, Sharjah, UAE
@@ -172,55 +204,139 @@ This upfront investment directly accelerates time-to-first-deliverable and ensur
 
 Baseline deliverables (license, documentation, testing, and Docker images) are included in every milestone; outreach deliverables are included in the final milestone.
 
-### Milestone 1 — Core Polkadot Network Foundation (8–10 weeks, $25,000)
-**Focus**: Establish the foundation by delivering a reproducible local devnet with relay chain and parachains.
+### Milestone 1 — Core Polkadot Network Foundation
+- **Estimated Duration:** 8–10 weeks  
+- **FTE:** 2.0–2.5  
+- **Costs:** $25,000 USD  
 
-**Key Deliverables**:
-- **Relay Chain**: Local relay chain network with configurable validators and runtime.
-- **Parachain Support**: Framework to deploy 2+ parachains (asset hub + generic parachain template).
-- **Network Orchestration**: Kubernetes/Docker-based orchestration system for multi-node networks.
-- **Observability**: Prometheus metrics, Grafana dashboards (finality, block time, validator status), structured logging.
-- **CLI Bootstrap**: Basic CLI (pidn up/down/status/logs) with YAML config schema and profile examples.
-- **CI Templates**: Ready-to-use GitHub Actions workflows for spinning up PIDN in CI environments.
+**Deliverables**
 
-**Acceptance Criteria**: A scripted `pidn up --profile polkadot-basic` successfully launches relay chain + 2 parachains, produces metrics dashboards and structured logs, and runs reproducibly in both local and CI environments.
+| #   | Deliverable | Specification |
+|-----|-------------|---------------|
+| 0a. | **License** | MIT License in root of repository |
+| 0b. | **Documentation** | Initial docs: README + “Getting Started” (relay + 2 parachains) |
+| 0c. | **Testing & Guide** | Unit/integration tests for bootstrapping; `docs/testing.md` |
+| 0d. | **Docker** | Custom Dockerfiles for relay chain and parachain nodes |
+| 1.  | **Helm Chart: Kubernetes Deployment** | Base chart to spin up relay + ≥2 parachains |
+| 1.a | Relay Chain Templates | Validator StatefulSets, service, configmap, secrets |
+| 1.b | Parachain Support | Generic collator templates; Asset Hub + template parachain |
+| 1.c | Genesis/Spec Tooling | Genesis/spec generation scripts and chain spec configs |
+| 2.  | **CLI Bootstrap** | Core CLI for network lifecycle |
+| 2.a | Commands | `pidn up`, `pidn down`, `pidn status`, `pidn logs` |
+| 2.b | Config Handling | YAML schema + validation; profile loader |
+| 2.c | Profiles | `polkadot-basic` profile (relay + 2 parachains) |
+| 3.  | **Examples Directory** | `examples/polkadot-basic` runnable sample (one command) |
+| 4.  | **CI Templates** | GitHub Actions to spin PIDN locally/CI (matrix-ready) |
+| 5.  | **Observability** | Prometheus + Grafana dashboards (finality, block time, validators) |
 
-### Milestone 2 — XCM Implementation, Registry & Network APIs (8–10 weeks, $30,000)
-**Focus**: Implement XCM functionality, network registry services, and comprehensive network metadata APIs.
+**Acceptance Criteria:**  
+`pidn up --profile polkadot-basic` launches relay + 2 parachains via the Helm chart; custom Docker images are used; examples and CI workflow run green; dashboards render core metrics.
 
-**Key Deliverables**:
-- **XCM Integration**: HRMP channel configuration, XCM message testing harness, cross-parachain asset transfers with validation.
-- **Network Registry**: REST API service for network discovery, chain metadata, and runtime information with persistent storage.
-- **Network Endpoints**: Comprehensive `/networks`, `/parachains`, `/xcm` REST endpoints with OpenAPI documentation.
-- **Metadata Management**: Real-time network state tracking, validator/collator status, block production metrics, and health monitoring.
-- **XCM Test Suite**: Automated test harness for common XCM scenarios (asset transfers, remote execution, teleports) with detailed reporting.
+### Milestone 2 — XCM Implementation, Registry & Network APIs
+- **Estimated Duration:** 8–10 weeks  
+- **FTE:** 2.0–2.5  
+- **Costs:** $30,000 USD  
 
-**Acceptance Criteria**: `pidn up --profile polkadot-xcm` successfully deploys relay chain + parachains with functional HRMP channels; XCM asset transfers execute successfully between parachains; Registry API provides comprehensive network metadata; all endpoints documented and tested.
+**Deliverables**
 
-### Milestone 3 — `pidnjs` SDK & Comprehensive Usage Examples (6 weeks, $20,000)
-**Focus**: Develop comprehensive TypeScript SDK and detailed examples for local, cluster, and CI/CD usage patterns. Key for AI driven development.
+| #   | Deliverable | Specification |
+|-----|-------------|---------------|
+| 0a. | **Documentation** | Docs for XCM flows, Registry API, and config examples |
+| 0b. | **Testing & Guide** | Automated XCM test suite (transfers, teleports, remote execution) |
+| 0c. | **Docker** | Dockerfiles for XCM relayer and Registry service |
+| 1.  | **Helm Chart: Extensions** | Subcharts for relayer + registry |
+| 1.a | XCM Relayer Subchart | StatefulSet/Deployment, secrets, health/readiness |
+| 1.b | Registry API Subchart | REST service, storage, ingress/service |
+| 1.c | HRMP Bootstrap Jobs | Jobs to open HRMP channels between parachains |
+| 2.  | **CLI Enhancements (XCM)** | XCM/HRMP flows from the CLI |
+| 2.a | Channel Ops | `pidn xcm open-channel`, `pidn xcm close-channel` |
+| 2.b | XCM Runner | `pidn xcm run` to execute test scenarios |
+| 2.c | Config | HRMP pair definitions and asset routing in YAML |
+| 3.  | **Examples Directory** | `examples/polkadot-xcm` with end-to-end asset transfer |
+| 4.  | **Network Registry API** | `/networks`, `/parachains`, `/xcm` endpoints + OpenAPI |
+| 5.  | **Metadata Management** | Persisted chain/para metadata, validator/collator health |
+| 6.  | **XCM Test Suite (CI)** | CI job produces reports and pass/fail gates for PRs |
 
-**Key Deliverables**:
-- **pidnjs SDK**: Feature-rich TypeScript library with network management, XCM operations, monitoring integration, and developer utilities.
-- **Local Development Examples**: Comprehensive tutorials and code samples for local PIDN usage, including debugging workflows and common development patterns.
-- **Kubernetes Cluster Integration**: Production-ready examples for deploying PIDN in existing K8s clusters with proper RBAC, networking, and resource management.
-- **CI/CD Pipeline Templates**: Ready-to-use GitHub Actions, GitLab CI, and Jenkins pipeline configurations for automated testing with PIDN networks.
-- **Developer Tooling**: CLI plugins, VS Code extensions, and integration helpers for streamlined development workflows.
-- **Documentation Hub**: Interactive documentation site with API references, tutorials, and community examples.
+**Acceptance Criteria:**  
+`pidn up --profile polkadot-xcm` deploys relay + parachains, opens HRMP channels, and runs XCM transfers successfully. Registry API serves live metadata; CI XCM suite passes.
 
-**Acceptance Criteria**: pidnjs SDK enables programmatic network management and XCM operations; developers can deploy PIDN in 3+ different environments (local, K8s cluster, CI) using provided examples; comprehensive documentation covers all major use cases with working code samples.
+---
 
-### Milestone 4 — Starship Integration & Long-term Maintenance (4 weeks, $15,000)
-**Focus**: Upstream PIDN to Starship for cross-ecosystem compatibility and establish long-term maintenance strategy.
+### Milestone 3 — pidnjs SDK & Developer Tooling
+- **Estimated Duration:** 6 weeks  
+- **FTE:** 2.0–2.5  
+- **Costs:** $20,000 USD  
 
-**Key Deliverables**:
-- **Starship Compatibility Layer**: Integrate PIDN as a native Starship module, enabling seamless cross-ecosystem devnets (Polkadot + Cosmos + Ethereum).
-- **Cross-Ecosystem Profiles**: Develop unified configuration profiles that combine Polkadot parachains with Cosmos zones, Ethereum networks, and bridge connections.
-- **Upstream Contributions**: Submit PRs to hyperweb-io/starship to add native Polkadot support, contributing chain templates, relayer configurations, and monitoring integrations.
-- **Maintenance Strategy**: Establish governance model with Starship community, define contribution guidelines, and create sustainable maintenance plan.
-- **v1.0 Release & Documentation**: Final release with comprehensive documentation, migration guides, and community onboarding materials.
+**Deliverables**
 
-**Acceptance Criteria**: PIDN successfully integrates with Starship enabling `starship start --config polkadot-cosmos-ethereum.yaml`; upstream PRs accepted by Starship maintainers; maintenance governance established with clear contributor pathways.
+| #   | Deliverable | Specification |
+|-----|-------------|---------------|
+| 0a. | **Documentation** | Interactive docs hub (API refs, tutorials, guides) |
+| 0b. | **Testing & Guide** | SDK unit/integration tests; multi-env CI |
+| 0c. | **Docker** | SDK test containers with sample networks |
+| 1.  | **Helm Chart: Enhancements** | Dev-friendly presets for K8s |
+| 1.a | RBAC/Profiles | Namespaced RBAC + small/medium/large resource presets |
+| 1.b | Networking | Optional ingress/service templates for local/cluster |
+| 1.c | Telemetry Hooks | Pre-wired metrics dashboards for SDK demos |
+| 2.  | **pidnjs SDK** | TypeScript SDK to manage networks + XCM |
+| 2.a | Network Mgmt | Start/stop/status/logs programmatically |
+| 2.b | XCM Ops | Helpers for HRMP ops and XCM scenarios |
+| 2.c | Config API | Programmatic overrides/merges for YAML profiles |
+| 3.  | **Examples Directory** | `examples/sdk-local`, `examples/ci-pipelines`, `examples/k8s-cluster` |
+| 4.  | **CI/CD Templates** | Expanded GitHub Actions, GitLab CI, Jenkins |
+| 5.  | **Developer Tooling** | VS Code extension + CLI plugins for common workflows |
+
+**Acceptance Criteria:**  
+Developers use `pidnjs` to spin networks and run XCM scenarios locally, in K8s clusters, and CI. Examples run out-of-the-box; docs cover SDK, configs, and pipelines.
+
+---
+
+### Milestone 4 — Starship Integration & v1.0 Release
+- **Estimated Duration:** 4 weeks  
+- **FTE:** 1.5–2.0  
+- **Costs:** $15,000 USD  
+
+**Deliverables**
+
+| #   | Deliverable | Specification |
+|-----|-------------|---------------|
+| 0a. | **License** | MIT License maintained |
+| 0b. | **Documentation** | Final docs: migration guides, contributor guidelines, governance |
+| 0c. | **Testing & Guide** | E2E tests across Polkadot + Cosmos + Ethereum profiles |
+| 0d. | **Docker** | Final images for Polkadot + cross-ecosystem profiles (pushed to OCI/registry) |
+| 0e. | **Article/Workshop** | “Cross-Ecosystem Devnets with PIDN + Starship” |
+| 1.  | **Helm Chart: Starship Integration** | PIDN packaged as a Starship-compatible module/subchart |
+| 1.a | Module Manifest & Interface | Starship module manifest (YAML/JSON) + interface contract; versioned and documented |
+| 1.b | Polkadot Module Packaging | Relay/parachain Helm chart refactored to reusable subchart with values schema + README badges |
+| 1.c | Init/Teardown Hooks | Pre/post hooks and Jobs for multi-ecosystem boot/shutdown (HRMP bootstrap, health checks) |
+| 1.d | Chart Linting & CT | `chart-testing` CI job + chart schema validation; OCI chart publishing workflow |
+| 2.  | **CLI/SDK Compatibility** | Starship-aware commands and loaders |
+| 2.a | Config Loader | Load/validate Starship YAMLs via CLI/SDK; schema errors surfaced clearly |
+| 2.b | Orchestration | Start/stop/status/logs across ecosystems from one interface |
+| 2.c | Adapters | Thin adapters mapping Starship lifecycle to PIDN internals (Helm/K8s ops, profiles) |
+| 3.  | **Examples Directory** | `examples/cross-ecosystem` runnable demo |
+| 3.a | Example Configs | Example Starship YAML combining Polkadot + Cosmos + Ethereum |
+| 3.b | Tutorial | Step-by-step guide + recordings/screens for boot/run/teardown |
+| 3.c | CI Example | Minimal CI workflow invoking Starship + PIDN module with smoke tests |
+| 4.  | **Upstream Contributions (PRs)** | PRs into the Starship repo to add the PIDN plugin/module |
+| 4.a | **Primary PR to `hyperweb-io/starship`** | Adds the Polkadot module, manifests, docs links, sample configs, and CI badge updates |
+| 4.b | Docs PR | Adds/updates Starship docs site pages referencing the new Polkadot module |
+| 4.c | Chart Index/Registry PR | Adds/updates chart index/registry references used by Starship to pull the module |
+| 4.d | CI Integration PR | Ensures Starship CI runs lint/build/smoke tests for the new module (chart-testing, helm lint, basic boot) |
+| 5.  | **Maintenance Plan** | Governance, LTS profiles, CODEOWNERS, triage SLA, SemVer policy |
+| 5.a | Contribution Model | `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, DCO sign-off notes |
+| 5.b | Release Policy | Semantic versioning, release notes, deprecation policy, backport/LTS plan |
+| 5.c | Security & Support | SECURITY.md (reporting), supported matrix & EOL policy |
+| 6.  | **v1.0 Release** | Tagged release, changelog, images/charts pushed; docs and workshop published |
+| 6.a | Provenance & SBOM | Build provenance (SLSA-oriented where possible) + SBOM artifacts attached to release |
+| 6.b | Compatibility Matrix | Verified versions table (K8s, Helm, polkadot-sdk, starship, node/images) |
+
+**Acceptance Criteria:**  
+- `starship start --config polkadot-cosmos-ethereum.yaml` launches cross-ecosystem networks including Polkadot.  
+- Primary **PR to `hyperweb-io/starship`** for the Polkadot module is **merged** (or acknowledged with requested follow-ups tracked).  
+- Charts and images are linted, tested, and **published** to an OCI/registry; docs & examples live; v1.0 tagged with changelog and SBOM.  
+
+---
 
 ## Technial Specification
 ### Architecture Overview
