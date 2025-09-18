@@ -95,9 +95,6 @@ This approach makes Chroma particularly suitable for the current ecosystem where
 
 ## Team
 
-- **Contact Name:** Preschian Febryantara
-- **Contact Email:** preschian27@gmail.com
-
 ### Team members
 
 - Preschian Febryantara
