@@ -89,18 +89,14 @@ The closest comparable project is [@chainsafe/cypress-polkadot-wallet](https://w
 - **Implementation Approach**: Does not modify wallet internals like `injectedWeb3`, maintaining compatibility with real wallet behavior. The ChainSafe package requires dApps to adapt their implementation to work with the modified `injectedWeb3`, which can be problematic for existing applications
 - **Multi-chain Support**: Native support for both Polkadot and Ethereum chains through Talisman integration
 - **Real Extension Testing**: Works with actual wallet extensions rather than modified implementations
-- **Smart Wallet Compatibility**: For dApps implementing smart wallets (e.g., using Privy.io), Chroma recommends maintaining both web2 and web3 login options on the login page, as E2E testing with wallet extensions is more reliable and stable compared to testing with web2 credential systems like Google login
+- **Embedded Wallet Compatibility**: For dApps implementing embedded wallets (e.g., using Privy.io), Chroma recommends maintaining both web2 and web3 login options on the login page, as E2E testing with wallet extensions is more reliable and stable compared to testing with web2 credential systems like Google login
 
 This approach makes Chroma particularly suitable for the current ecosystem where PVM is live on Kusama, enabling comprehensive testing for smart contract dApps without requiring modifications to existing dApp implementations. 
 
 ## Team
 
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase.
-
-- **Team Name:** Individual Developer
 - **Contact Name:** Preschian Febryantara
 - **Contact Email:** preschian27@gmail.com
-- **Website:** https://preschian.com
 
 ### Team members
 
@@ -163,8 +159,6 @@ This real-world integration validates the library's effectiveness and demonstrat
 
 This section breaks down the development roadmap into milestones and deliverables. The functionality will be described in detail to enable proper verification and testing.
 
-**Please notice that Polkadot Open Source Grants only accept projects up to 3 months of duration and up to 2 milestones.**
-
 ### Overview
 
 - **Estimated Duration:** 3 months
@@ -203,10 +197,10 @@ This section breaks down the development roadmap into milestones and deliverable
 - Equipment
 - Subcontracts/Subscriptions
 
-| Category | Item | Cost | Amount | Total | Description |
+| Category | Milestone | Duration | FTE | Cost | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personnel | Full-Stack Developer | 30,000 USD | 1 FTE | 30,000 USD | Complete development of Chroma library including architecture, implementation, testing, documentation, and deployment |
-| Personnel |  |
+| Personnel | Milestone 1: Core Library and Polkadot.js Extension Support | 1 month | 1 FTE | 10,000 USD | Core library development, Polkadot.js Extension integration, fixtures implementation, documentation, and testing |
+| Personnel | Milestone 2: Talisman Wallet Support and Multi-chain Features | 2 months | 1 FTE | 20,000 USD | Talisman wallet integration, EVM chain support, multi-chain utilities, documentation website, and extended testing |
 | --- | --- | --- | **Total** | **30,000 USD** |  |
 
 
