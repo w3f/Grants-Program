@@ -185,10 +185,14 @@ This section breaks down the development roadmap into milestones and deliverable
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 1. | Talisman Wallet Context | Automated download, installation, and management of Talisman wallet extension within the testing environment |
-| 2. | Talisman Polkadot Fixtures | Implementation of account import, authorization, and transaction management fixtures specifically for Talisman wallet's Polkadot functionality |
-| 3. | EVM Chain Support | Implementation of Ethereum/EVM chain testing fixtures including account import, authorization, and transaction management for Ethereum-based chains |
-| 4. | Multi-chain Testing Utilities | Helper functions and utilities for switching between different chains and managing multi-chain testing scenarios |
-| 5. | Documentation Website | Creation of a dedicated documentation website with comprehensive guides, examples, and API references |
+| 2. | Talisman Account Import (Polkadot) | Implementation of account import fixtures using seed phrases for Polkadot chains within Talisman wallet |
+| 3. | Talisman Authorization (Polkadot) | Implementation of authorization handling fixtures for Polkadot dApp connections and permissions within Talisman wallet |
+| 4. | Talisman Transaction Management (Polkadot) | Implementation of transaction approval and rejection fixtures for Polkadot chains within Talisman wallet |
+| 5. | Talisman Account Import (Ethereum) | Implementation of account import fixtures using seed phrases or private keys for Ethereum chains within Talisman wallet |
+| 6. | Talisman Authorization (Ethereum) | Implementation of authorization handling fixtures for Ethereum dApp connections and permissions within Talisman wallet |
+| 7. | Talisman Transaction Management (Ethereum) | Implementation of transaction approval and rejection fixtures for Ethereum chains within Talisman wallet |
+| 8. | Multi-chain Testing Utilities | Helper functions and utilities for switching between different chains and managing multi-chain testing scenarios |
+| 9. | Documentation/Landing Page Website | Creation of a dedicated documentation/landing page website with comprehensive guides, examples, and API references |
 
 ### Budget Breakdown
  **Category:** Budget Breakdown positions are split within the following categories: 
