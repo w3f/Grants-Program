@@ -25,24 +25,24 @@ As this tool is primarily CLI- and API-based, no user interface mockups are requ
 #### Data Models / API Specifications
 #### Core Input Parameters (JSON Schema format):
 
-{
-  "voters": [
     {
-      "account_id": "AccountId",
-      "stake": "u128",
-      "targets": ["ValidatorId"]
+      "voters": [
+        {
+          "account_id": "AccountId",
+          "stake": "u128",
+          "targets": ["ValidatorId"]
+        }
+      ],
+      "candidates": [
+        {
+          "account_id": "ValidatorId",
+          "bond": "u128"
+        }
+      ],
+      "active_set_size": 100,
+      "election_algorithm": "sequential-phragmen | phragmen | approval-voting",
+      "snapshot_block": "optional<u32>"
     }
-  ],
-  "candidates": [
-    {
-      "account_id": "ValidatorId",
-      "bond": "u128"
-    }
-  ],
-  "active_set_size": 100,
-  "election_algorithm": "sequential-phragmen | phragmen | approval-voting",
-  "snapshot_block": "optional<u32>"
-}
 
 #### Core API Endpoints (REST):
 
@@ -52,15 +52,15 @@ As this tool is primarily CLI- and API-based, no user interface mockups are requ
 
 #### API Output Example:
 
-{
-  "active_validators": [
     {
-      "account_id": "ValidatorId",
-      "total_stake": "u128",
-      "nominators": ["AccountId"]
+      "active_validators": [
+        {
+          "account_id": "ValidatorId",
+          "total_stake": "u128",
+          "nominators": ["AccountId"]
+        }
+      ]
     }
-  ]
-}
 
 #### Technology Stack
 
