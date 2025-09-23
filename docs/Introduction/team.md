@@ -13,6 +13,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Aleksandar Dimitrijevic](https://github.com/alexdimes)
+- [Radhakrishna Dasari](https://github.com/DrW3RK)
 - [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
