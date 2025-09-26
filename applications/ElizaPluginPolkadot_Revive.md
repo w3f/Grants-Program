@@ -3,7 +3,7 @@
 - **Team Name:** TEM Solutions
 - **Payment Details:**
   - **DOT**: 14dkGZ9YbMoy5ipU2cXT3oxTrGhJPcDekbaVB2yMjTRifkhW
-  - **Payment**: 14dkGZ9YbMoy5ipU2cXT3oxTrGhJPcDekbaVB2yMjTRifkhW (USDC) 
+  - **Payment (USDC)**: 14dkGZ9YbMoy5ipU2cXT3oxTrGhJPcDekbaVB2yMjTRifkhW — Polkadot AssetHub address
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -27,7 +27,7 @@ Our team successfully delivered the foundational Polkadot ElizaOS Plugin, demons
   - Unified contract interaction endpoints supporting both eth_call and bare_call
   - Revive-native asset management with ERC20 compatibility
   - Contract event querying and filtering via eth_getLogs
-  - Subscan API integration for Revive contract analytics and verification status
+  - Subscan API integration for Revive contract details
 
 - **Technology Stack:**  
   - **Core Integration:** TypeScript with polkadot-js API and Ethereum RPC client libraries
@@ -79,6 +79,7 @@ Our team successfully delivered the foundational Polkadot ElizaOS Plugin, demons
 
 - **Contact Name:** Tyler Ellis McWilliams
 - **Contact Email:** tyler.ellis.mcwilliams@gmail.com
+ - **Website:** n/a
 
 ### Legal Structure
 
@@ -94,6 +95,7 @@ Our team successfully delivered the foundational Polkadot ElizaOS Plugin ([M1](h
 
 ### Team Code Repos
 
+- [Polkadot ElizaOS Plugin](https://github.com/Esscrypt/plugin-polkadot) (contains both foundational plugin and upcoming Revive extension)
 - [Mihail Kirov](https://github.com/mikirov)
 - [Tyler Ellis McWilliams](https://github.com/tylermcwilliams)
 
@@ -123,22 +125,22 @@ Initial architectural designs for address routing between H160 and AccountId32 f
 - **FTE:** 2 FTE, team members will contribute to deliverables based on their specialized expertise
 - **Costs:** 10,000 USD
 
-| Number | Deliverable                       | Specification                                                                                                     |
-| ------ | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                           | Apache 2.0                                                                                                        |
-| **0b.** | Documentation                     | Comprehensive Revive contract deployment guide, dual-mode operation documentation, and API integration tutorials |
-| **0c.** | Testing and Testing Guide         | Complete unit and integration tests for Revive contract deployment, interaction, and dual-mode operations with detailed testing instructions |
-| 1.     | Account Mapping & Address Routing | Implement intelligent H160 ↔ AccountId32 conversion with automatic address type detection for Revive operations |
-| 2.     | Revive Contract Deployment        | Create unified action supporting both Ethereum RPC contract deployment and Substrate upload_code for Revive pallet |
-| 3.     | Revive Contract Calls             | Develop unified contract interaction supporting both eth_call and Substrate bare_call for Revive contracts |
-| 4.     | Enhanced Balance Queries          | Extend existing getBalance action to support both eth_getBalance and native Substrate queries for Revive assets |
-| 5.     | Contract Events System            | Implement Revive contract event querying and filtering using eth_getLogs with real-time monitoring capabilities |
+| Number | Deliverable                       | Specification |
+| ------ | --------------------------------- | ------------- |
+| **0a.** | License | Apache 2.0. <br><br>**Acceptance Criteria:** Apache-2.0 `LICENSE` at repo root. <br><br>**Verification:** Reviewer checks repository root for `LICENSE`. |
+| **0b.** | Documentation | Comprehensive Revive contract deployment guide, dual-mode operation documentation, and API integration tutorials. <br><br>**Acceptance Criteria:** Quickstart (deploy + 1 read call) and basic usage examples are present. <br><br>**Verification:** Reviewer follows a quickstart (deploy + one call) end-to-end using the described steps and sample configuration. |
+| **0c.** | Testing and Testing Guide | Unit and integration tests for Revive deployment, interaction, and dual-mode operations with a Local Testing Guide. <br><br>**Acceptance Criteria:** `TESTING.md` and `.env.example` are present; test commands work and tests pass. <br><br>**Verification:** Reviewer runs the suite per `TESTING.md`; tests pass. |
+| 1.     | Account Mapping & Address Routing | Implement intelligent H160 ↔ AccountId32 conversion with automatic address type detection for Revive operations. <br><br>**Acceptance Criteria:** Provider exposes `detectAddressType`, `toH160`, `toAccountId32`; basic examples and unit tests included. <br><br>**Verification:** Documented example demonstrates conversion in both directions with expected outputs; unit tests are green. |
+| 2.     | Revive Contract Deployment | Create unified action supporting both Ethereum RPC contract deployment and Substrate `upload_code` for the Revive pallet. <br><br>**Acceptance Criteria:** One action deploys via EVM and Substrate paths; example shows a successful deployment and deployed address. <br><br>**Verification:** Reviewer follows the walkthrough and reproduces the documented example; on-chain inclusion is verifiable. |
+| 3.     | Revive Contract Calls | Develop unified contract interaction supporting both `eth_call` and Substrate `bare_call` for Revive contracts. <br><br>**Acceptance Criteria:** For a sample read function, both paths return the same decoded result; example provided. <br><br>**Verification:** Reviewer follows the walkthrough and reproduces the example; output matches contract state. |
+| 4.     | Enhanced Balance Queries | Extend existing getBalance action to support native balance queries for Revive addresses. <br><br>**Acceptance Criteria:** Supports H160 via `eth_getBalance` and AccountId32 via `system.account`; example shows both with units. <br><br>**Verification:** Reviewer reproduces the example and cross-checks values with an explorer/API. |
+| 5.     | Contract Events System | Implement Revive contract event querying and filtering using `eth_getLogs` with real-time monitoring capabilities. <br><br>**Acceptance Criteria:** Historical filter example and a simple live monitoring example; outputs include block number, tx hash, and topics. <br><br>**Verification:** Reviewer follows the example and observes events with the stated fields. |
 
 **Plugin Actions:**
 - **Deploy Contract:** Unified action supporting both Ethereum RPC deployment and Substrate upload_code to Revive pallet
 - **Call Contract Function:** Single action supporting both eth_call and bare_call for Revive contracts
 - **Query Contract Events:** Contract event querying and filtering using eth_getLogs
-- **Enhanced Balance Queries:** Extend existing getBalance action to support both eth_getBalance and native Substrate queries
+- **Enhanced Balance Queries:** Extend existing getBalance to support native balances via eth_getBalance and system.account
 
 **Providers:**
 - **Revive Contract Provider:** Manages dual-mode Revive contract interactions with address routing
@@ -150,22 +152,22 @@ Initial architectural designs for address routing between H160 and AccountId32 f
 - **FTE:** 2 FTE, team members will contribute to deliverables based on their specialized expertise
 - **Costs:** 10,000 USD
 
-| Number | Deliverable                       | Specification                                                                                                     |
-| ------ | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                           | Apache 2.0                                                                                                        |
-| **0b.** | Documentation                     | Complete API documentation, Revive integration guide, and analytics usage instructions                            |
-| **0c.** | Testing and Testing Guide         | Comprehensive test coverage for analytics integration, Revive compatibility, and performance optimization with detailed testing protocols |
-| 6.     | apiService Revive Extension       | Extend existing apiService module with pallet-revive endpoint support and Ethereum RPC proxy connection management |
-| 7.     | Revive Native Asset Integration   | Enhance asset management actions to support Revive native ERC20 assets alongside traditional Substrate assets with subsidized transaction support |
-| 8.     | Contract Analytics Integration    | Implement Subscan API integration for Revive contract metrics, transaction history analysis, and verification status monitoring |
-| 9.     | Performance & Error Handling      | Deploy unified error handling system, gas/weight translation utilities, and performance optimization layer for Revive operations |
-| 10.    | Official ElizaOS Integration      | Submit comprehensive pull request to official ElizaOS plugin repository with full documentation and ensure successful merge for ecosystem-wide availability |
+| Number | Deliverable                       | Specification |
+| ------ | --------------------------------- | ------------- |
+| **0a.** | License | Apache 2.0. <br><br>**Acceptance Criteria:** Apache-2.0 `LICENSE` present and unchanged. <br><br>**Verification:** Reviewer checks repository. |
+| **0b.** | Documentation | Complete API documentation, Revive integration guide, and analytics usage instructions. <br><br>**Acceptance Criteria:** API reference and analytics quickstart are present with one working example. <br><br>**Verification:** Reviewer follows analytics quickstart to retrieve metrics for a sample contract. |
+| **0c.** | Testing and Testing Guide | Comprehensive tests for analytics integration, Revive compatibility, performance optimization, and error handling, with an updated Local Testing Guide. <br><br>**Acceptance Criteria:** `TESTING.md` is updated; tests for new modules exist and pass locally. <br><br>**Verification:** Reviewer runs test suite and integration tests per `TESTING.md`; all pass using the provided configuration. |
+| 6.     | apiService Revive Extension | Extend existing apiService module with pallet-revive endpoint support and Ethereum RPC proxy connection management. <br><br>**Acceptance Criteria:** apiService supports mode selection (EVM/Substrate) and exposes a simple health check. <br><br>**Verification:** Documented example shows successful health check and mode switching using configuration. |
+| 7.     | Revive Native Asset Integration | Enhance asset management actions to support Revive native ERC20 assets alongside traditional Substrate assets with subsidized transaction support. <br><br>**Acceptance Criteria:** Actions support ERC20 balance/transfer and native balances; optional subsidized flag documented. <br><br>**Verification:** Documented examples show balance retrieval and a transfer that updates balances as expected on a test network or local node. |
+| 8.     | Contract Analytics Integration | Implement Subscan API integration for Revive contract details. <br><br>**Acceptance Criteria:** Subscan integration with basic backoff; a valid `SUBSCAN_API_KEY` is required. On-chain/cache fallback is documented. Provide a contract details feature with an example output. <br><br>**Verification:** Reviewer retrieves contract details for a sample contract using a valid `SUBSCAN_API_KEY`. |
+| 9.     | Reliability & Error Policy | Unified error body and dry-run fee preview for transfers. <br><br>**Acceptance Criteria:** Actions return a unified error body; transfer actions support `dryRun` returning a fee estimate. <br><br>**Verification:** Reviewer observes the unified error body and a dry-run fee preview. |
+| 10.    | Official ElizaOS Integration | Submit comprehensive pull request to official ElizaOS plugin repository with full documentation; merge is a stretch goal. <br><br>**Acceptance Criteria:** PR opened to official repo with docs; CI green. <br><br>**Verification:** Link to PR; walkthrough and docs visible in repository. |
 
 **System Components:**
 - **apiService Revive Extension:** Extend existing apiService module with pallet-revive endpoint support and Ethereum RPC proxy connections
 - **Revive Asset Integration:** Enhance existing asset management actions to support Revive ERC20 assets alongside traditional Substrate assets
-- **Contract Analytics:** Subscan API integration for contract metrics and transaction history
-- **Error Handling:** Unified error handling system and gas/weight translation utilities for Revive operations
+- **Contract Analytics:** Subscan API integration for contract details
+- **Error Handling:** Unified error body and dry-run fee previews for transfers
 
 ## Future Plans
 
