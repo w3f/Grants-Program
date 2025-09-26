@@ -5,7 +5,7 @@
 
 - **DOT:**  13VM8zijwQcCSSTMuwdBEaM1mrqMz4xpDj2MkixUKBFmJxpm
 - **USDC:** 13VM8zijwQcCSSTMuwdBEaM1mrqMz4xpDj2MkixUKBFmJxpm
-  **Grant Level:** 2
+- **Grant Level:** 2
 
 ---
 
