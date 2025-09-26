@@ -38,7 +38,8 @@ TxSim is a user-friendly tool for Polkadot’s Substrate-based smart contracts a
   _While TxSim’s initial risk detection engine focuses on heuristic rules and WASM bytecode analysis, we plan to enhance detection capabilities over time by incorporating community reporting, machine learning models, and integration with external threat intelligence feeds. This phased approach will enable TxSim to adapt to emerging scam tactics and improve accuracy in identifying complex or zero-day threats._
 
 - **Fee Estimation:** Provides accurate fee estimates using Polkadot’s weight-based model, with optimization suggestions.
-- **Wallet Integration:** Designed for easy integration by wallet developers (e.g., Talisman, SubWallet) via the Polkadot.js API, requiring no separate accounts or services.
+- **Wallet Integration:** - Designed so wallet developers (e.g., Talisman, SubWallet) can easily connect to TxSim via the Polkadot.js API, without requiring separate accounts or additional services.
+
 - **Polkadot Focus:** Targets Moonbeam, Astar, and Asset Hub parachains, with modular SDK/APIs for dApp/wallet integration.
 
 ## Ecosystem Fit
