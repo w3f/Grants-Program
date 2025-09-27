@@ -192,7 +192,7 @@ Next stage is to integrate these into a unified CLI/API with production-like env
 **Total Duration**: 6–7 months  
 **Team Effort (FTE)**: 2.5–3.0 full-time equivalents  
 **Budget**: $90,000 USD  
-**Payment Split**: 40% vested DOT (over 18 months), 60% USDC (AssetHub)
+**Payment Split**: 50% vested DOT, 50% USDC (AssetHub)
 
 Baseline deliverables (license, documentation, testing, and Docker images) are included in every milestone; outreach deliverables are included in the final milestone.
 
