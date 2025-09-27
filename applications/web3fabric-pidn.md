@@ -194,14 +194,6 @@ Next stage is to integrate these into a unified CLI/API with production-like env
 **Budget**: $90,000 USD  
 **Payment Split**: 40% vested DOT (over 18 months), 60% USDC (AssetHub)
 
-**Upfront Payment**: $20,000 USD (22.2% of total budget)
-*Justification*: The upfront payment is essential to cover critical project initiation costs that cannot be deferred:
-- **Developer Onboarding**: Transitioning our existing development team to focus full-time on PIDN requires immediate resource allocation to ensure dedicated commitment and rapid project kickoff.
-- **Cloud Infrastructure & CI/CD Setup**: Production-like multi-chain devnets require substantial computational resources. We need to provision cloud instances for relay chains, parachains, and external blockchain nodes (Ethereum, Cosmos, Solana), plus establish robust CI/CD pipelines across multiple repositories.
-- **Development Environment & Tooling**: Professional licenses for monitoring tools, development environments, security scanning tools, and premium organizational features necessary for enterprise-grade open-source development.
-
-This upfront investment directly accelerates time-to-first-deliverable and ensures the team can focus on building rather than fundraising or infrastructure procurement during critical early development phases.
-
 Baseline deliverables (license, documentation, testing, and Docker images) are included in every milestone; outreach deliverables are included in the final milestone.
 
 ### Milestone 1 — Core Polkadot Network Foundation
