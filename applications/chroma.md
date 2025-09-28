@@ -8,10 +8,10 @@
 Chroma is an end-to-end (E2E) testing library specifically designed for Polkadot wallet interactions. It enables developers to write automated tests that interact with real wallet extensions, providing a comprehensive testing solution for decentralized applications (dApps) in the Polkadot ecosystem.
 
 **Polkadot Integration:**
-Chroma integrates directly with the Polkadot ecosystem by supporting popular wallet extensions like Polkadot.js Extension and Talisman Wallet. It enables testing of wallet connections, account imports, transaction approvals, and authorization flows that are essential for Polkadot dApps. The library is particularly valuable now that PVM (Polkadot Virtual Machine) is live on Kusama, supporting smart contract development.
+Chroma integrates directly with the Polkadot ecosystem by supporting popular wallet extensions like Polkadot.js Extension and Talisman Wallet. It enables testing of wallet connections, account imports, transaction approvals, and authorization flows that are essential for Polkadot dApps, including both parachain applications and smart contract dApps.
 
 **Team Interest:**
-We identified a significant gap in the Polkadot testing ecosystem - there was no comprehensive E2E testing library that could directly connect with real wallet extensions. This makes it difficult for developers to properly test their dApps' wallet integration, leading to potential bugs and poor user experiences in production.
+I identified a significant gap in the Polkadot testing ecosystem - there was no comprehensive E2E testing library that could directly connect with real wallet extensions. This makes it difficult for developers to properly test their dApps' wallet integration, leading to potential bugs and poor user experiences in production.
 
 ### Project Details
 
@@ -51,8 +51,6 @@ test('sign transaction', async ({ page, importAccount, authorize, approveTx, rej
 })
 ```
 
-**Proof of Concept:**
-A working proof of concept has been developed and demonstrated, showcasing the core functionality: https://x.com/0xPresc/status/1963458250869018864
 
 **What Chroma is NOT:**
 - Not a replacement for unit testing - it focuses specifically on E2E wallet integration testing
@@ -77,21 +75,16 @@ Chroma fits into the Polkadot developer tooling landscape as a specialized testi
 - **Real Extension Testing**: Tests against actual wallet extensions rather than mocked implementations
 
 **Need Identification:**
-The need was identified through direct experience in dApp development where manual wallet testing proved to be time-consuming and error-prone. The proof of concept demonstrates the technical feasibility of the approach (https://x.com/0xPresc/status/1963458250869018864).
+The need was identified through direct experience in dApp development where manual wallet testing proved to be time-consuming and error-prone. This challenge was particularly evident during my work on NFT marketplace projects, where at that time I struggled with E2E testing for wallet integrations (`https://github.com/kodadot/nft-gallery/issues/4981`). Multiple proof of concepts have been developed to demonstrate the technical feasibility and comprehensive capabilities of the approach.
 
 **Similar Projects in Polkadot Ecosystem:**
-Currently, there is no comprehensive E2E testing library specifically designed for Polkadot wallet integrations. After thorough research of the Polkadot Forum, Tech Stack documentation, and OpenGov proposals, no similar project was found addressing this specific need.
-
-**Similar Projects in Related Ecosystems:**
-The closest comparable project is [@chainsafe/cypress-polkadot-wallet](https://www.npmjs.com/package/@chainsafe/cypress-polkadot-wallet), which provides Cypress-based testing for Polkadot wallets. However, through direct testing experience with this package on a real dApp (https://polkadot-starter-vue-dedot.vercel.app/), several limitations were discovered that Chroma addresses:
+After thorough research of the Polkadot Forum, W3F grants, and OpenGov proposals, no comprehensive E2E testing library specifically designed for Polkadot wallet integrations was found. The closest comparable project is [@chainsafe/cypress-polkadot-wallet](https://www.npmjs.com/package/@chainsafe/cypress-polkadot-wallet), which provides Cypress-based testing for Polkadot wallets. Initially, my research aimed to follow their implementation approach with a similar implementation but adapted for Playwright, as it seemed like a promising foundation for Polkadot wallet testing. However, through direct testing experience with this package, several critical limitations were discovered that ultimately led me to develop Chroma with a different approach:
 
 - **Framework Choice**: Uses Playwright instead of Cypress, offering better extension support and performance
-- **Implementation Approach**: Does not modify wallet internals like `injectedWeb3`, maintaining compatibility with real wallet behavior. The ChainSafe package requires dApps to adapt their implementation to work with the modified `injectedWeb3`, which can be problematic for existing applications
+- **Implementation Approach**: Does not modify wallet internals like `injectedWeb3`, maintaining compatibility with real wallet behavior. Additionally, with the ongoing discussion to deprecate `signPayload` in favor of the new transaction interface (`https://forum.polkadot.network/t/toward-an-interoperable-transaction-interface-introducing-createtransaction/15060`), Chroma's approach of not modifying `injectedWeb3` implementations ensures better future compatibility
 - **Multi-chain Support**: Native support for both Polkadot and Ethereum chains through Talisman integration
 - **Real Extension Testing**: Works with actual wallet extensions rather than modified implementations
-- **Embedded Wallet Compatibility**: For dApps implementing embedded wallets (e.g., using Privy.io), Chroma recommends maintaining both web2 and web3 login options on the login page, as E2E testing with wallet extensions is more reliable and stable compared to testing with web2 credential systems like Google login
-
-This approach makes Chroma particularly suitable for the current ecosystem where PVM is live on Kusama, enabling comprehensive testing for smart contract dApps without requiring modifications to existing dApp implementations. 
+- **Embedded Wallet Compatibility**: In my proof of concept with Talisman wallet, I demonstrate support for embedded wallet solutions such as those from Thirdweb or Privy.io, providing comprehensive testing coverage for dApps using embedded wallet integrations
 
 ## Team
 
@@ -116,7 +109,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 Preschian is a full-stack developer with extensive experience in web3 and blockchain development. Key relevant experience includes:
 
-- **Polkadot Ecosystem Development**: Active contributor to the Polkadot development community with experience in building dApps and developer tools
+- **NFT Marketplace dApp Development**: Contributed to NFT marketplace dApp development at Chaotic (formerly KodaDot), where I directly encountered the wallet integration testing challenges that led to identifying the need for Chroma
 - **Create Dot App**: Developed and maintains a boilerplate template for rapid Polkadot dApp development (https://github.com/preschian/create-dot-app)
 - **Web3 Testing Expertise**: Deep understanding of wallet integration challenges and testing requirements in decentralized applications
 
@@ -129,12 +122,16 @@ For more detailed information about experience and background, please visit: htt
 **Proof of Concept:**
 A functional proof of concept has been developed and publicly demonstrated, showing the library's ability to interact with real wallet extensions for automated testing. The demonstration can be viewed at: https://x.com/0xPresc/status/1963458250869018864
 
+Additional proof of concept demonstrates Chroma's capability with Talisman wallet for Solidity contract interactions: https://x.com/0xPresc/status/1970166415736098900
+
+Another demonstration shows Chroma's testing capability with embedded wallet integration using Talisman: https://x.com/0xPresc/status/1970166419217338838
+
 **Development Progress:**
 - ✅ Core architecture designed and implemented
 - ✅ Basic Playwright integration with wallet extensions
 - ✅ Account import functionality working
 - ✅ Transaction approval/rejection flows functional
-- ✅ Initial release available on NPM: https://www.npmjs.com/package/@avalix/chroma
+- ✅ Proof of concept release available on NPM: https://www.npmjs.com/package/@avalix/chroma
 - 🔄 Open-source repository coming soon at: https://github.com/avalix-labs/chroma
 - ✅ Integration testing with Create Dot App project completed
 
@@ -225,7 +222,10 @@ This section breaks down the development roadmap into milestones and deliverable
 ## Additional Information
 
 **Work Already Completed:**
-- Proof of concept development demonstrating core functionality with both Polkadot.js Extension and basic transaction handling
+- Proof of concept development demonstrating core functionality with Polkadot.js Extension and basic transaction handling
+- Proof of concept for Talisman wallet integration with Solidity contract interactions
+- Proof of concept for embedded wallet compatibility with solutions like Thirdweb and Privy.io
+- Proof of concept for multi-chain testing support across Polkadot and Ethereum chains
 - Initial architecture design and implementation approach validation
 - Research and analysis of existing solutions in the ecosystem
 
@@ -239,6 +239,7 @@ This project has not been submitted for funding to any other entities. This is t
 - The project will be developed using TypeScript for better type safety and developer experience
 - All code will be open-source under MIT license to encourage community contributions
 - The library will follow semantic versioning for predictable updates and compatibility
+- Extension version compatibility handling to ensure stable testing across different wallet extension versions
 - Comprehensive CI/CD pipeline will be implemented to ensure code quality and automated testing
 
 **Project Impact:**
