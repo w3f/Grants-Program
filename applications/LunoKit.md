@@ -185,7 +185,7 @@ LunoKit has completed its initial version and has officially released a usable v
 | 0d.  | Build System | Complete monorepo build; TypeScript compiled using tsup, supporting both ESM and CJS outputs. |
 | 0e.  | Package Management | Use pnpm workspace and Changesets for version management and package publishing, supporting automated NPM publishing. |
 | 1.   | Core Module: `@luno-kit/core` | Implement core connector abstraction (`BaseConnector`), configuration system (`createConfig`), chain definitions (`Chain` type), and storage system; support custom API options and type definitions. |
-| 2.   | Wallet Connectors Collection | Implement 6 connectors: Polkadot{.js} Extension, SubWallet, Talisman, Polkagate, Nova Wallet, WalletConnect. Each connector supports account discovery, connection management, and signing. |
+| 2.   | Wallet Connectors Collection | Implement 6 connectors: Polkadot.js Extension, SubWallet, Talisman, Polkagate, Nova Wallet, WalletConnect. Each connector supports account discovery, connection management, and signing. |
 | 3.   | Chain Configuration System | Pre-configure 6 chains: Polkadot, Kusama, Westend, Paseo,Polkadot AssetHub, Paseo AssetHub including RPC endpoints, SS58, token info, and icons; support custom Substrate chain configurations. |
 | 4.   | Utility Functions Library | Implement essential utility functions such as address format conversion, SS58 encoding/decoding, balance formatting, and device detection. |
 | 5.   | Type System | Provide full TS types (`Account`, `Chain`, `Config`, `Connector`, `Signer`, etc.) to ensure type safety. |
