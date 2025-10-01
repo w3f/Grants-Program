@@ -2,102 +2,76 @@
 
 - **Team Name:** Intercaster
 - **Payment Details:**
-  - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
-  - **Payment**: 
+  - **DOT**: 16idCRomJEA8xaKEcjGLL6WnKCzybfJfXMgk7MGahJBPSGHF
+  - **Payment (USDC)**: 16idCRomJEA8xaKEcjGLL6WnKCzybfJfXMgk7MGahJBPSGHF
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-Intercaster aims to bridge the Farcaster protocol and its innovative Frames feature with the Polkadot ecosystem through a custom parachain implementation. This proposal outlines the development of a specialized parachain that leverages Polkadot's cross-consensus messaging (XCM) capabilities to validate and process Farcaster messages, creating a seamless integration between these two powerful ecosystems. 
-
-By enabling this interoperability, we can expand the potential applications of decentralized social protocols and empower developers to build cross-chain applications that leverage the strengths of both networks.
-
+Intercaster Gateway serves as a specialized message routing parachain connecting Farcaster's social ecosystem with Polkadot's multi-chain infrastructure. The project functions as a Substrate-based parachain that creates a trustless bridge between Farcaster's 350,000+ daily active users and Polkadot's diverse parachain ecosystem. Intercaster Gateway strategically leverages Farcaster's existing Snapchain validation infrastructure while providing efficient cross-chain message routing via native XCMP channels. The project integrates directly into the Polkadot ecosystem as a native parachain built using the Substrate framework, implementing XCMP channels for direct parachain-to-parachain communication and utilizing XCM v4/v5 standards for cross-consensus messaging.
 
 ### Project Details
 
-Intercaster will act as a bridge between the Farcaster social protocol and the Polkadot ecosystem, enabling seamless interaction between these two networks. Our goal is to develop a parachain that can validate, process, and relay Farcaster messages, particularly those involving Frames, using Polkadot's XCM capabilities.
+The Intercaster Gateway architecture comprises three core components that work together to enable seamless social-to-blockchain integration. The XCMP Channel Manager Pallet handles direct parachain-to-parachain message routing, dynamic channel establishment and management, and message prioritization and batching to optimize throughput. The Social Context Engine manages Farcaster identity mapping to Polkadot accounts, implements social reputation scoring with cross-chain portability, and tracks engagement metrics that can inform blockchain operations. The XCM Integration Layer provides native XCM v4/v5 message formatting, coordinates cross-chain execution, and handles fee calculation and distribution across the network.
 
-This integration will allow developers to create applications that combine Farcaster's social features with Polkadot's cross-chain capabilities, opening up new possibilities for decentralized social applications. By leveraging both ecosystems, we can create more powerful, interoperable decentralized applications that extend beyond current limitations.
+Our technology stack centers on Substrate framework for parachain runtime development, with Rust powering core pallet development for performance and security. TypeScript and JavaScript support SDK and API development for broad developer accessibility, while React enables intuitive developer tools and dashboards. Polkadot-JS facilitates seamless blockchain interactions throughout the system.
 
-#### Technical Architecture
+The core API specifications include essential functions for XCMP channel management through establish_xcmp_channel which allows parachains to create communication channels with specified configurations, and social message routing via route_social_message which processes social interactions and routes them to appropriate parachains with preserved social context. These APIs enable developers to integrate social functionality into their parachains without building complex bridging infrastructure from scratch.
 
-The Intercaster parachain architecture consists of interconnected components that enable seamless bridge functionality between the Farcaster and Polkadot ecosystems. The system operates through three primary layers: the Farcaster ecosystem providing social data and identity management, the Intercaster parachain serving as the validation and translation bridge, and the Polkadot ecosystem offering cross-chain messaging and shared security.
+**Architecture Components:**
 
-##### Custom Farcaster Hub Validation Layer
+1. XCMP Channel Manager Pallet
 
-The Intercaster implementation incorporates the bridge module directly into a custom Farcaster Hub. The custom Hub maintains full compatibility with the Farcaster protocol while extending functionality to support Polkadot integration. The integrated Hub processes Farcaster messages through the standard validation pipeline while simultaneously preparing relevant messages for cross-chain transmission. This approach leverages the Hub's existing Ed25519 signature verification and message validation infrastructure, reducing resource requirements and operational complexity. The unified system operates within the established Farcaster gossip network while providing additional bridge functionality.
+  - Direct parachain-to-parachain message routing
 
-This Hub-layer validation leverages Farcaster's established trust model, where Hubs serve as the authoritative validators of protocol compliance. The custom Hub extends standard functionality with enhanced anti-spam mechanisms and real-time bridge processing.
+  - Dynamic channel establishment and management
 
-##### Parachain Pallet Validation Layer
+  - Message prioritization and batching
 
-The Message Validation Pallet in the Intercaster parachain provides secondary verification focused on cross-chain security:
+2. Social Context Engine
 
-- Attestation Verification: Validates Hub-generated proofs using stored public keys
-- Parachain Policy Enforcement: Applies custom rules including XCM message formatting requirements, destination parachain compatibility checks, and gas limit enforcement
-- Frame-Specific Validation: For Frame interactions, verifies Frame URL whitelisting, button action permissions, and state transition consistency
+  - Farcaster identity mapping to Polkadot accounts
 
-This dual-layer approach creates a defense-in-depth security model where protocol validation occurs at the source (Hub) while cross-chain integrity checks happen at the destination (parachain).
+  - Social reputation scoring and cross-chain portability
+  
+  - Engagement metrics for blockchain operations
 
-##### XCM Integration Architecture
+3. XCM Integration Layer
 
-The XCM Integration functionality translates validated Farcaster messages into XCM-compatible formats for transmission across the Polkadot network. This translation process maintains message integrity while adapting to XCM's standardized instruction format. The system encodes messages according to XCM version 4 specifications, ensuring compatibility with the current Polkadot infrastructure.
+  - Native XCM v4/v5 message formatting
 
-Message routing utilizes Horizontal Relay-routed Message Passing (HRMP) channels for communication between parachains. The system implements timeout handling, failure recovery mechanisms, and delivery confirmation to ensure reliable cross-chain message transmission. XCM messages carry sufficient context and authorization information to enable secure execution on target parachains.
+  - Cross-chain execution coordination
 
+  - Fee calculation and distribution
+
+**Technology Stack:**
+
+- Substrate framework for parachain runtime
+
+- Rust for core pallet development
+
+- TypeScript/JavaScript for SDK and APIs
+
+- React for developer tools and dashboards
+
+- Polkadot-JS for blockchain interactions
 
 ![High Level Arch](https://github.com/Shritesh99/polkadot-farcaster-demo-parachain/blob/master/img/High_level_arch.png?raw=true)
 
-#### Message Flow Architecture
-
-##### Frame Interaction Processing
-
-The message flow begins when users interact with Farcaster Frames within Warpcast or other compatible clients. User actions such as button clicks generate FrameAction protobuf messages containing the frame URL, button index, cast ID, and optional input text. These messages are cryptographically signed using the user's Ed25519 account key, ensuring authenticity and non-repudiation.
-
-Frame servers receive POST requests from Farcaster clients and must respond within the 5-second timeout limit. The server forwards the signed message data to a Farcaster Hub for validation, which verifies the signature against the user's registered public key and validates message structure compliance. Upon successful validation, the Hub returns the decoded message payload to the Frame server.
-
-###### Hub-to-Parachain Transmission
-
-The integrated Intercaster Hub processes validated Frame interactions through the following steps:
-
-1. User Action: Warpcast sends signed Frame interaction to the Frame server
-
-2. Hub Validation: Custom Hub performs primary validation (signature + protocol checks)
-
-3. Attestation Packaging: Hub generates Merkle proof of message inclusion, validation timestamp, and signer public key reference.
-
-4. Bridge Transmission: Attested message sent to parachain via libp2p direct channel
-
-The Hub applies filtering logic to determine which messages require cross-chain processing, avoiding unnecessary overhead for purely social interactions. Messages destined for blockchain operations undergo additional validation and are queued for XCM transmission. The bridge maintains detailed logs of all processed messages for monitoring and debugging purposes.
-
-##### Parachain Processing and Cross-Chain Execution
-
-Once received by the Intercaster parachain, messages undergo secondary validation through the Message Validation Pallet:
-
-1. The pallet verifies attestation proofs from the Hub
-2. It checks for replay attacks by comparing message timestamps
-3. The pallet enforces parachain-specific policies and constraints
-4. Valid messages are forwarded to the XCM Integration Pallet
-
-The XCM Integration Pallet then:
-
-1. Encodes the validated message into XCM format
-2. Routes the message through HRMP channels to the target parachain
-3. Monitors for delivery confirmation or timeout events
-
-Target parachains receive XCM messages through their configured channels and decode the embedded instructions. Upon receipt, destination parachains execute the encoded operations such as DeFi transactions, NFT minting, or governance actions. The execution typically completes within 2 seconds, with results emitted as blockchain events for dApp consumption.
-
-![Sequence Diagram](https://github.com/Shritesh99/polkadot-farcaster-demo-parachain/blob/master/img/Seq.png?raw=true)
+#### Incentive Model
+The project incorporates a comprehensive incentive model designed to ensure long-term sustainability and community engagement. The economic architecture includes multiple revenue streams comprising transaction fees of 0.005-0.01 DOT per routed message based on complexity, premium API services for advanced social context data, developer tool subscriptions, and partnership integration fees. Revenue distribution follows a structured allocation where 50% supports operational costs including infrastructure and maintenance, 25% funds community incentives and developer grants, 15% supports protocol development and improvements, and 10% builds treasury reserves for long-term sustainability. User incentives include social engagement rewards where users earn native utility tokens for meaningful social interactions that drive blockchain adoption, creator monetization tools enabling content creators to receive automatic revenue sharing from Frame-triggered blockchain operations, and reputation-based benefits providing enhanced features and reduced fees for users with high social reputation scores. Infrastructure operator incentives include collator rewards with competitive compensation for running parachain infrastructure, performance bonuses for maintaining high uptime and low latency, and community recognition programs highlighting significant contributors to the ecosystem.
 
 ### Ecosystem Fit
 
-Intercaster positions itself as a specialized middleware parachain bridging Farcaster's decentralized social protocol with Polkadot's multi-chain ecosystem. Our target audience spans parachain developers seeking social integration capabilities, dApp developers building cross-chain applications, Farcaster creators wanting blockchain functionality, and users seeking seamless social-to-DeFi experiences. The project addresses the critical interoperability gap between social protocols and blockchain infrastructure—enabling Frame interactions to trigger cross-chain operations while maintaining security through hybrid validation models.
+Intercaster Gateway positions itself as critical middleware infrastructure connecting social protocols with Polkadot's multi-chain ecosystem, functioning similarly to how Bridge Hub connects external networks but specifically focused on social protocol integration. Our target audience encompasses multiple stakeholder groups including parachain developers seeking social integration capabilities for their chains, dApp developers building cross-chain social applications who need seamless social-to-blockchain functionality, Farcaster developers wanting to add blockchain functionality to their social applications, and end users seeking seamless social-to-DeFi experiences without complex wallet management.
 
-We identified these needs through evidence including Farcaster's rapid growth (20M+ MeWe users integrating with Frequency parachain, Solana wallet integration driving user adoption), increasing demand for SocialFi applications (Base network's 54,341 daily token launches driven by Zora-Farcaster integration), and the $25,000 weekly Creator Rewards Program demonstrating monetization demand. Unlike existing Polkadot social projects—Frequency focuses on DSNP messaging infrastructure while Subsocial provides general social networking features—Intercaster specifically enables Farcaster Frame interactions to execute blockchain operations across any Polkadot parachain via XCM, creating unique cross-chain social functionality unavailable elsewhere.
+The project addresses several critical needs within the ecosystem. The primary interoperability gap exists because no current infrastructure connects social protocols with Polkadot's multi-chain ecosystem effectively. Blockchain applications suffer from social context loss, lacking social proof and community engagement data that could enhance user experience and trust. Complex integration requirements currently force each parachain to independently build social features, creating inefficient duplication of effort. Finally, users experience fragmented UX when trying to transition from social interactions to blockchain operations, creating barriers to adoption.
 
-Similar projects in related ecosystems include RainFrame (Ethereum-Farcaster DeFi integration) and Zora-Base integration (social token creation), but these lack Polkadot's cross-consensus capabilities and shared security model that Intercaster leverages for trustless, scalable social-blockchain bridging across multiple specialized chains simultaneously. The project fills a previously impossible niche by combining Farcaster's social engagement with Polkadot's cross-chain composability, enabling novel applications like governance voting through social feeds, cross-chain creator monetization, and Frame-triggered DeFi operations—capabilities that couldn't exist until both ecosystems reached sufficient maturity for secure integration.
+We identified these needs through comprehensive market research. Farcaster processes over 50,000 daily casts with rapidly growing Frame interactions, demonstrating strong social engagement that could benefit from blockchain integration. The Polkadot ecosystem manages over $12 billion in total value locked across parachains, requiring social engagement mechanisms for governance and community building. Social trading markets show over 300% year-over-year growth, indicating strong demand for social-financial integration. Forum discussions on Polkadot governance consistently highlight the need for social consensus mechanisms to improve decision-making processes.
+
+Within the Polkadot ecosystem, similar projects exist but serve different purposes. Frequency focuses on DSNP messaging infrastructure rather than social-to-blockchain bridging, while Subsocial provides general social networking capabilities but lacks cross-parachain routing functionality. Bridge Hub connects external networks but doesn't address social protocol integration specifically. Intercaster Gateway uniquely enables Farcaster Frame interactions to execute operations across any Polkadot parachain via XCMP, providing social context preservation and cross-chain coordination capabilities unavailable elsewhere.
 
 ## Team :busts_in_silhouette:
 
@@ -136,47 +110,72 @@ I have already started working on the project as a part of the previous grant. I
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  1
-- **Total Costs:** 30K (20K USDC + 10K USD locked in DOT)
-- **DOT %:** 33%
+- **Total Estimated Duration:** 6 months
+- **Full-Time Equivalent (FTE):**  1 FTE
+- **Total Costs:** 30K (15K USDC + 15K USD locked in DOT)
+- **DOT %:** 50%
 
-### Milestone 1 - Intercaster Hub development
+#### Milestone 1 - Core XCMP Infrastructure
+- Estimated duration: 2 months
+- FTE: 1
+- Costs: 10,000 USD
 
-The initial phase focuses on developing the core integrated Hub architecture and establishing fundamental bridge functionality. This includes:
-- Extending the existing Farcaster Hub codebase to incorporate bridge module functionality
-- Implementing basic message validation and XCM message format development
-- Establishing development environments and testing frameworks
+| Number | Deliverable | Specification |
+| ----- | ----------- | ------------- |
+| 0a. | License | Apache 2.0. All code will be open-source and available under Apache 2.0 license for maximum ecosystem compatibility. |
+| 0b. | Documentation | We will provide comprehensive inline documentation of all pallets and runtime modules, plus detailed tutorials explaining how to deploy the parachain, establish XCMP channels, and route social messages. Documentation will include API references, integration guides, and example implementations. |
+| 0c. | Testing and Testing Guide | Core XCMP functionality will be fully covered by unit tests, integration tests, and cross-chain message routing tests. The testing guide will explain how to run all tests, set up test environments, and validate XCMP channel functionality. |
+| 0d | Docker | We will provide comprehensive Docker configuration including parachain node, relay chain setup for testing, and all dependencies needed to test XCMP message routing functionality in an isolated environment. |
+| 0e. | Article | We will publish a technical article explaining XCMP-based social protocol integration architecture, its benefits for the Polkadot ecosystem, and how it enables new classes of social-blockchain applications. |
+| 1. | Substrate Pallet: XCMP Channel Manager | We will create a Substrate pallet that manages XCMP channel establishment, configuration, and lifecycle management. It will handle channel opening/closing, parameter updates, and connection status monitoring with target parachains. |
+| 2. | Substrate Pallet: Message Router | We will develop a message routing pallet that processes incoming social messages, determines target parachains, applies routing rules, and manages message queuing and batching for optimal throughput across XCMP channels. |
+| 3. | Substrate Pallet: XCM Integration | We will implement an XCM integration pallet that handles XCM v4/v5 message formatting, cross-chain execution coordination, fee calculation, and delivery confirmation tracking for social message routing operations. |
+| 4. | Substrate Pallet: Basic Incentive Framework | We will create a foundational incentive pallet that handles fee collection, basic reward distribution, and treasury management to support the economic model of the gateway parachain. |
+| 5. | Parachain Runtime | The complete parachain runtime will integrate all pallets (Channel Manager, Message Router, XCM Integration, Basic Incentives) with governance functionality, creating a fully operational parachain ready for XCMP-based social message routing. |
+<!-- | 6. | 	TypeScript SDK: Core APIs | We will deliver a TypeScript library that provides core APIs for XCMP channel management, message routing, and basic parachain integration, enabling developers to build applications on the infrastructure. | -->
 
-- **Estimated duration:** 1 month
-- **Costs:** 10,000 USD
+#### Milestone 2 — Social Context Engine & Incentive Implementation
+- Estimated duration: 2 months
+- FTE: 1
+- Costs: 10,000 USD
 
-### Milestone 2 - Parachain Development
+| Number | Deliverable | Specification |
+| ----- | ----------- | ------------- |
+| 0a.	| License |	Apache 2.0. All social context and incentive mechanism code will be open-source under Apache 2.0 license. |
+| 0b.	| Documentation	| We will provide detailed documentation for social context preservation, identity mapping systems, reputation scoring mechanisms, and comprehensive incentive model implementation with integration examples and best practices. |
+| 0c. |	Testing and Testing Guide |	Complete test coverage for social context features, identity verification, reputation portability, and incentive distribution mechanisms. Testing guide will include Farcaster integration testing and multi-parachain reputation scenarios. |
+| 0d.	| Docker |	Updated Docker environment including social context engine, Farcaster integration components, incentive distribution systems, and comprehensive testing infrastructure for social-blockchain workflows. |
+| 0e.	| Article |	We will publish an article demonstrating social context preservation in cross-chain operations, showcasing new possibilities for social DeFi applications, and explaining the sustainable incentive model design. |
+| 1. |	Substrate Pallet: Social Context Engine	| We will create a pallet for preserving and managing social context data from Farcaster, including identity mapping between FIDs and Polkadot accounts, social reputation scoring, and engagement metrics tracking across chains. |
+| 2. |	Substrate Pallet: Farcaster Identity Bridge |	We will develop a secure bridge pallet that connects Farcaster FIDs to Polkadot accounts with cryptographic verification, privacy preservation, and support for multiple account associations per social identity. |
+| 3. |	Substrate Pallet: Reputation Engine	| We will implement a cross-chain reputation system that aggregates social engagement metrics, enables reputation portability across parachains, and provides reputation-based access controls and benefits. |
+| 4. |	Substrate Pallet: Advanced Incentive System |	We will create a comprehensive incentive pallet implementing user engagement rewards, creator monetization tools, developer integration bounties, infrastructure operator incentives, and automated distribution mechanisms with governance controls. |
+| 5. | Social Message Parser |	We will deliver an advanced message parsing system for Farcaster Frames supporting complex social actions, multi-step workflows, and intelligent routing based on social context and user reputation. |
 
-The second phase implements Frame processing capabilities and cross-chain message routing on the Intercaster parachain. Key activities include:
+#### Milestone 2 — Production Deployment & Advanced Incentives
+- Estimated duration: 2 months
+- FTE: 1
+- Costs: 10,000 USD
 
-- Developing state management for complex multi-step Frame applications
-- Implementing efficient XCM message batching and routing
-- Conducting comprehensive testing on Rococo/Paseo testnet
-
-- **Estimated duration:** 1 month
-- **Costs:** 10,000 USD
-
-### Milestone 3 - Deploymnet
-
-The final phase focuses on mainnet deployment and ecosystem development. Key activities include:
-
-- Securing a parachain slot through auction or lease mechanisms
-- Conducting final security reviews and performance optimization
-- Deploying the integrated Hub to the mainnet with comprehensive monitoring
-- Releasing developer tools, SDKs, and example applications
-
-- **Estimated duration:** 1 month
-- **Costs:** 10,000 USD
+| Number | Deliverable | Specification |
+| ----- | ----------- | ------------- |
+| 0a.	| License |	Apache 2.0. All production deployment code, monitoring systems, and advanced incentive features will be open-source. |
+| 0b. |	Documentation	| Complete production documentation including deployment guides, operational procedures, monitoring setup, security best practices, and comprehensive API references for all production features. |
+| 0c. |	Testing and Testing Guide |	Production-ready testing suite including load testing, security testing, multi-parachain integration testing, incentive system stress testing, and comprehensive testing guide for production validation. |
+| 0d. |	Docker | Production-grade Docker images and deployment configurations for mainnet parachain operation, including monitoring, logging, and backup systems with comprehensive operational documentation. |
+| 0e. |	Article	| We will publish a comprehensive case study of production deployment with performance metrics, ecosystem impact analysis, and lessons learned from real-world social-blockchain integration. |
+| 1.	| Kusama Testnet Deployment |	Full parachain deployment on Kusama with XCMP channels to major parachains, comprehensive monitoring systems, and real-world testing environment for final validation and optimization.
+| 2.	| Multi-Parachain Integration |	Active integrations with 25+ parachains including DeFi (Acala, Parallel), smart contract platforms (Moonbeam, Astar), and specialized chains (Asset Hub, Efinity) with full XCMP channel support and production traffic handling. |
+| 3.	| Mainnet Deployment  |	Comprehensive Polkadot mainnet deployment including security audits by reputable firms, performance optimization based on testnet data, governance system setup, and operational procedures for production launch. |
+| 4.	| Advanced Incentive Analytics	| Comprehensive incentive tracking and optimization system providing user engagement analysis, reward distribution monitoring, economic sustainability metrics, and data-driven optimization tools for continuous incentive model improvement. |
 
 ## Future Plans
 
-This project brings the integration of the Polkadot Ecosystem with the Farcaster communities. We will be incentivizing from each parachain who wants to expand their community to the Farcaster frames. We'll be hosting seminars and workshops to onboard users to use the parachain and expand their dApps to Farcaster frames.
+Our long-term maintenance and development strategy ensures sustainable growth and community ownership of the protocol through comprehensive incentive alignment. We plan to transition to community governance for sustainable protocol development, establishing decentralized decision-making processes that can evolve both the technical protocol and economic incentive model based on ecosystem needs and performance data. The decentralized maintenance fund created through treasury mechanisms will ensure ongoing operational support and infrastructure maintenance without relying on centralized funding, supported by sustainable revenue streams from transaction fees and premium services. Strategic partnerships with parachain teams will enable continued feature development and ensure the system evolves to meet changing ecosystem requirements while providing mutual incentive alignment through revenue sharing and co-development opportunities.
+
+Our short-term enhancement and promotion plans focus on rapid ecosystem adoption and developer engagement through targeted incentive programs. We will launch a comprehensive developer incentive program with integration bounties to encourage early adoption and integration by parachain teams, providing immediate rewards for successful integrations and ongoing benefits for high-performance partners. Regular hackathons focused on social-blockchain applications will showcase the unique capabilities enabled by Intercaster Gateway and generate innovative use cases, with substantial prize pools funded by protocol revenue to attract top-tier developers. We plan to create extensive educational content and workshop series to help developers understand and utilize the new possibilities created by social-blockchain integration, supported by mentorship rewards and community recognition programs. Strategic partnerships with major DeFi and NFT parachains will provide high-value integration examples and drive user adoption through proven applications, with revenue sharing agreements that align long-term interests and incentivize continued collaboration.
+
+Our long-term vision extends beyond the current project scope to establish Intercaster Gateway as foundational infrastructure for decentralized social applications with sustainable economic incentives. We plan to expand support to additional social protocols beyond Farcaster, creating a comprehensive social protocol bridge that serves multiple communities while scaling incentive mechanisms across larger user bases. Research and development of next-generation cross-chain social primitives will push the boundaries of what's possible in social-blockchain integration, funded by protocol treasury and community grants to ensure continued innovation. We will actively contribute to Polkadot protocol improvements specifically designed to better support social use cases, potentially influencing the core protocol's evolution while establishing industry standards for incentive-driven infrastructure projects. The ultimate goal is building the foundation for decentralized social infrastructure standards that can be adopted across the broader blockchain ecosystem, with proven economic models that ensure long-term sustainability and community ownership.
 
 ## Additional Information :heavy_plus_sign:
 
