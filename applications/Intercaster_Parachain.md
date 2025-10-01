@@ -4,7 +4,7 @@
 - **Payment Details:**
   - **DOT**: 16idCRomJEA8xaKEcjGLL6WnKCzybfJfXMgk7MGahJBPSGHF
   - **Payment (USDC)**: 16idCRomJEA8xaKEcjGLL6WnKCzybfJfXMgk7MGahJBPSGHF
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
