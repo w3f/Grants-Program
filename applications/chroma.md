@@ -198,7 +198,7 @@ This section breaks down the development roadmap into milestones and deliverable
 | Category | Milestone | Duration | FTE | Cost | Description |
 | --- | ---- | --- | --- | --- | ---|
 | Personnel | Milestone 1: Core Library and Polkadot.js Extension Support | 1 month | 1 FTE | 10,000 USD | Core library development, Polkadot.js Extension integration, fixtures implementation, documentation, and testing |
-| Personnel | Milestone 2: Talisman Wallet Support and Multi-chain Features | 2 months | 1 FTE | 20,000 USD | Talisman wallet integration, EVM chain support, multi-chain utilities, documentation website, and extended testing |
+| Personnel | Milestone 2: Talisman Wallet Support and Multi-chain Features | 2 months | 2 FTE | 20,000 USD | Talisman wallet integration, EVM chain support, multi-chain utilities, documentation website, and extended testing |
 | --- | --- | --- | **Total** | **30,000 USD** |  |
 
 
