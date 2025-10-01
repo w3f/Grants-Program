@@ -55,7 +55,6 @@ test('sign transaction', async ({ page, importAccount, authorize, approveTx, rej
 **What Chroma is NOT:**
 - Not a replacement for unit testing - it focuses specifically on E2E wallet integration testing
 - Not a wallet extension itself - it works with existing wallet extensions
-- Not limited to headless testing - requires browser UI for reliable wallet interactions
 - Currently limited to Chromium-based browsers due to Playwright extension support limitations
 
 ### Ecosystem Fit
@@ -140,12 +139,13 @@ The library has been successfully integrated and tested with the Create Dot App 
 
 - **Integration Implementation**: Successfully integrated Chroma into Create Dot App via pull request: https://github.com/preschian/create-dot-app/pull/146/files
 - **CI/CD Validation**: The integration runs smoothly in GitHub Actions, demonstrating reliability in automated environments: https://github.com/preschian/create-dot-app/actions/runs/17754583058/job/50455331711
+- **Headless Mode Testing**: Validated headless mode compatibility with Polkadot.js Extension in CI/CD pipeline: https://github.com/preschian/create-dot-app/actions/runs/18152695184 (pull request: https://github.com/preschian/create-dot-app/pull/161/files)
 
 This real-world integration validates the library's effectiveness and demonstrates its readiness for broader adoption in the Polkadot ecosystem.
 
 **Known Limitations:**
 - **Browser Support**: Currently limited to Chromium-based browsers due to Playwright's extension support constraints
-- **Headless Mode**: May require non-headless mode to avoid flaky tests and ensure reliable wallet interactions
+- **Headless Mode**: In testing with Polkadot.js Extension, both headless and headed modes work reliably. However, behavior may differ with other wallet extensions
 - **Extension Dependency**: Relies on open-source wallet extensions for implementation
 
 
