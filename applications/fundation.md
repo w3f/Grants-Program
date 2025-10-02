@@ -135,7 +135,7 @@ Maintenance will be **community-driven** via GitHub contributions.
 Sustainability will be sought through optional donations and partnerships with Polkadot teams.
 
 **Short-term use, enhancement, and promotion:**
-Release v1.0 and promote via the **BuildOnDot** community. Enhance based on early user feedback, adding more rollup templates and governance modules.
+Release v1.0 and promote via the **BuildOnDot** community. Enhance based on early user feedback, adding more modules defi and governance .
 
 **Team's long-term plans:**
 Grow the BuildOnDot community to onboard new developers and evolve Fundation into a full CLI toolset, with the end goal being omnipass.
