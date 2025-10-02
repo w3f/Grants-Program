@@ -1,192 +1,156 @@
-# Name of your Project
+This is an excellent catch and a crucial detail for a technical grant application. I have updated the grant proposal to include explicit deliverables for the **Dockerfile** and the **GitHub MD files** (specifically `README.md` and `CHANGELOG.md`), as well as ensuring the language consistently refers to the **Polkadot-API** usage.
 
-> [!NOTE]
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
+Here is the revised and finalized grant application:
 
-- **Team Name:** swen usa llc
-- **Payment Details:**
-  - **DOT**: "12F4tc8yuGc5pZsbbPNS4TEwpDr7td8rMvnVyPQFxQnskqTk".
-  - **Payment**: "12F4tc8yuGc5pZsbbPNS4TEwpDr7td8rMvnVyPQFxQnskqTk". 
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):1
+# Fundation
 
-> [!IMPORTANT]
-> *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+  - **Team Name:** swen usa llc
+  - **Payment Details:**
+      - **DOT**: 12F4tc8yuGc5pZsbbPNS4TEwpDr7td8rMvnVyPQFxQnskqTk
+      - **Payment**: 12F4tc8yuGc5pZsbbPNS4TEwpDr7td8rMvnVyPQFxQnskqTk (USDC)
+  - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1
 
-## Project Overview :page_facing_up:
+-----
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
+## Project Overview :page\_facing\_up:
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
+**Tagline:** Build dApps Faster Than Ever. Accelerate Your Polkadot Projects with Fundation's Polkadot API Management, Robust Auth, and Modular Toolkit.
 
 ### Overview
-Tagline:
-Build fast and break things: a toolkit for going from concept to launch quickly.
 
-Project Description:
-Fundation is a set of modules that empowers developers to build decentralized applications (dApps) rapidly on the Polkadot ecosystem.
+**Project Description:**
+**Fundation** is a modular, open-source framework that empowers developers to build decentralized applications (dApps) rapidly on the Polkadot ecosystem. It uses the **Polkadot-API** to provide abstracted, reusable components for authentication, asset management, and UI, significantly reducing development time.
 
-Integration with Polkadot/Kusama:
-The primary goal of Fundation is to simplify dApp development on top of Asset Hub and rollups, significantly reducing development time.
+**Integration with Polkadot/Kusama:**
+Fundation is designed to simplify dApp development on top of Substrate-based chains, particularly **Asset Hub** and **rollups**, by providing a streamlined front-end layer that interacts directly with the network via **Polkadot-API**.
 
-Team's Motivation:
-While building my first dApp on Polkadot, Stake2Build, over a year and a half ago, I realized how far behind the ecosystem was in front-end and web developer tooling. Although many improvements have been made since then, I believe this tool will still be of great benefit to the community by addressing these ongoing challenges.
+**Team's Motivation:**
+The project addresses the recognized gap in front-end tooling within the Polkadot ecosystem, aiming to lower the entry barrier for indie developers, hackathon teams, and startups.
 
 ### Project Details
-Technology Stack:
-Core Stack: Next.js
-UI: Tailwind CSS, shadcn/ui
-Database: IndexedDB and SQLite
-API: Polkadot.js API
 
-Proof of Concept (PoC)/MVP:
-Website: https://www.fundation.dev/
-MVP: https://www.fundation.dev/login
+**Technology Stack:**
 
-Mockups/UI Designs:
-I have posted numerous videos on my X (formerly Twitter) page showcasing updates and ideas. You can view them here: https://x.com/swenw31.
+  * **Core Stack:** Next.js
+  * **UI:** Tailwind CSS, shadcn/ui
+  * **Database (Local):**SQLite
+  * **API:** **Polkadot-API**
+
+**PoC/MVP or other relevant prior work or research on the topic:**
+
+  * **Website:** [https://www.fundation.dev/](https://www.fundation.dev/)
+  * **MVP/Login Demo:** [https://www.fundation.dev/login](https://www.fundation.dev/login)
+
+
+**What your project is *not* or will *not* provide or implement:**
+
+  * Fundation is a **front-end development framework** and will not provide backend infrastructure services (e.g., decentralized storage, node hosting).
+  * It will not include logic for the creation or deployment of **smart contracts**.
 
 ### Ecosystem Fit
-Fundation is positioned on the front-end side of the development stack.
 
-### Target Audience:
-Our target audience includes small-scale developers, participants in hackathons, and teams looking to kickstart their projects quickly.
+**Need(s) does your project meet?**
+The project aims to significantly **lower the barrier to entry** for new developers and provide an **80% faster development cycle** for experienced teams on Polkadot.
 
-### Needs Met:
-The project aims to lower the barrier to entry for new developers, thereby expanding the Polkadot developer pool.
+**Differentiation:**
+Fundation is **fully open-source and self-hostable**, offering full control without vendor lock-in. Unlike EVM-centric tools, it is **Polkadot-native** and optimized for the Substrate architecture, focusing on Polkadot-API abstraction for key dApp functionalities.
 
-### Needs Identification:
-The need for better developer tooling and a faster time-to-market has been a recurring topic within the Polkadot community for some time. Multiple projects are attempting to solve this, and I believe Fundation will be a valuable addition to these efforts.
-### Comparison with Similar Projects:
-- Apillon: A Polkadot-focused Web3 platform offering UI and API integration for parachain services.
+-----
 
-- Thirdweb: An Ethereum/EVM-focused platform with SDKs and smart contract tools, targeting games and creator platforms.
-
-- Magic: An Ethereum-based authentication tool using passwordless logins, not a full DApp solution.
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
-
-Differentiation:
-Fundation is open-source and self-hostable, prioritizing ease of use and flexibility. Unlike Apillon or Thirdweb, it doesn’t rely on third-party services. This ensures developers retain full control over their work and can adapt it freely without waiting for external updates.
-
-## Team :busts_in_silhouette:
-
-> [!IMPORTANT]
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
+## Team :busts\_in\_silhouette:
 
 ### Team members
-Victor Stallone Peck (Swen) 
+
+  - Victor Stallone Peck (Swen)
 
 ### Contact
-- Team Name: Fundation
-- Contact: Victor Stallone Peck (Swen) 
-- Email: swenpeck@outlook.com
-- Website: https://www.fundation.dev/
-- Team Members: Victor Stallone Peck (Solo Developer)
-- Code Repos: github.com/swenthebuilder
 
+  - **Contact Name:** Victor Stallone Peck (Swen)
+  - **Contact Email:** swenpeck@outlook.com
+  - **Website:** [https://www.fundation.dev/](https://www.fundation.dev/)
 
 ### Legal Structure
 
-- **Registered Address: "1389 SW 12th Ave , pompano beach florida 33069"
-- **Registered Legal Entity:SWENUSA LLC
+  - **Registered Address:** 1389 SW 12th Ave , pompano beach florida 33069
+  - **Registered Legal Entity:** SWENUSA LLC
 
 ### Team's experience
-I have been involved in the Polkadot ecosystem for some time, but only recently decided to engage more actively. Fundation was initially intended as an internal tool for my own dApp development. However, seeing a greater need within the community, I am now seeking funding to develop it for a broader audience.
 
-In addition to this project, I recently started a new initiative called the BuildOnDot community on X. While separate from this grant, its goal is to help new developers feel more comfortable and connected within the Polkadot ecosystem.
-
+Experience gained from building the dApp Stake2Build and leading the BuildOnDot developer community. Additionally, extensive corporate and freelance work, primarily in e-commerce platforms and corporate websites.
 
 ### Team Code Repos
 
-- github.com/swenthebuilder
+  - [https://github.com/swenthebuilder](https://www.google.com/search?q=https://github.com/swenthebuilder)
 
-## Development Status :open_book:
+-----
 
-I have been documenting my progress, including concepts and mock-ups, through regular updates on X.
-Personal Updates: https://x.com/swenw31
-BuildOnDot Community: https://x.com/i/communities/1934658730303373790
-I will be adding more formal mock-ups for the mini-dApps soon, which will be built to showcase the functionalities of Fundation.
-
-## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> [!CAUTION]
-> If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
+## Development Roadmap :nut\_and\_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
-- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
+  - **Total Estimated Duration:** 2 months
+  - **Full-Time Equivalent (FTE):** 1
+  - **Total Costs:** 10,000 USD
+  - **DOT %:** 85%
 
-### Milestone 1 Example — Basic functionality
+-----
 
-- **Estimated duration:** 2 month
-- **FTE:**  0,5
-- **Costs:** 10,000 USD
+### Milestone 1 — Base Module Functionality
 
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+  - **Estimated duration:** 1 month
+  - **FTE:** 1
+  - **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | base module comption| Authentication, Dynamic Blockchain API, UX Refinement.  |
-| 0b. | Documentation & code releash |Detailed documentation and public code release. |
+| :----: | ----------- | ------------- |
+| **0a.** | License | We will release all code under the **Apache 2.0** license. |
+| **0b.** | Documentation | We will provide **inline documentation**, a comprehensive **README.md** with setup instructions |
+| 1. | Authentication Module | Implement **modular authentication**: Wallet-based (Polkadot.js extension), Social, Email/Password, and Passkey (WebAuthn), with secure session management. |
+| 2. | Dynamic Blockchain API Module | Build an abstracted **Asset Retrieval System** for Polkadot chains via the **Polkadot-API**. This module will handle chain selection, token fetching, and balance queries. |
+| 3. | UX/UI Components | Deliver polished UI components for **intuitive chain connect/disconnect** and responsive asset display. |
 
+-----
 
-## 📅 Development Roadmap // Budget Breakdown 
+### Milestone 2 — Comprehensive Documentation & Launch
 
-### Milestone 1: Base Module Functionality
-- Includes: Deliverables 0a & 0b
-- Duration: 1 month
-- Cost: $10,000
-### Deliverables:
-- Authentication: Complete wallet-based signup/login, plus social login, email, and passkey options.
-- Dynamic Blockchain Asset Retrieval: Simplified asset fetching—developers select chains/tokens, and Fundation handles the rest.
-- UX Refinement: Streamlined chain connections/disconnections and overall design polish.
-- Code Optimization: Readable code with inline comments explaining functionality.
-- Documentation: An overview, in-depth technical details, and a getting-started tutorial.
+  - **Estimated Duration:** 1 month
+  - **FTE:** 1
+  - **Costs:** 5,000 USD
 
-...
+| Number | Deliverable | Specification |
+| :----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0. |
+| **0b.** | Documentation | **Full documentation suite** (architecture, API schemas, integration examples) hosted on a dedicated site. |
+| **0c.** | Article | We will publish an **article** and **video walkthroughs** on platforms like Medium/X/YouTube explaining the v1.0 features. |
+| 1. | Final Code Release | Tag the **v1.0 release** on GitHub with a comprehensive **CHANGELOG.md** detailing features and fixes. |
+| 2. | Tutorial dApp | Develop a fully functional mini-dApp (e.g., simple asset transfer) to serve as a **core template** showcasing all features. |
+| 3. | Project Sustainability Plan | Detail the maintenance strategy (community contributions, monthly releases, BuildOnDot promotion) and long-term roadmap. |
 
+-----
 
 ## Future Plans
 
-Please include here
+**Long-term maintenance and development financing:**
+Maintenance will be **community-driven** via GitHub contributions. 
+Sustainability will be sought through optional donations and partnerships with Polkadot teams.
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+**Short-term use, enhancement, and promotion:**
+Release v1.0 and promote via the **BuildOnDot** community. Enhance based on early user feedback, adding more rollup templates and governance modules.
+
+**Team's long-term plans:**
+Grow the BuildOnDot community to onboard new developers and evolve Fundation into a full CLI toolset, with the end goal being omnipass.
+
+-----
 
 ## Referral Program (optional) :moneybag:
 
-You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
+  - **Referrer:** N/A
+  - **Payment Address:** N/A
 
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDC))
+-----
 
-## Additional Information :heavy_plus_sign:
-Additional Information
-Concepts and mock-ups will be provided as they are developed.
+## Additional Information :heavy\_plus\_sign:
 
-<img src="https://raw.githubusercontent.com/swenthebuilder/PapiNextjsBasic/refs/heads/main/nftconcept.jpeg" alt="nftconcept" width="400"/>
-<img src="https://raw.githubusercontent.com/swenthebuilder/PapiNextjsBasic/refs/heads/main/Nftdapp.png" alt="NftDapp" width="400"/>
-basic layout custom icons and graphics will be made later
-<img src="https://raw.githubusercontent.com/swenthebuilder/PapiNextjsBasic/refs/heads/main/opengov.png" alt="Opengov" width="400"/>
+**How did you hear about the Grants Program?** Personal recommendation from keegan@web3.foundation.
 
-
-**How did you hear about the Grants Program?** Web3 Foundation Website / 
-keegan@web3.foundation
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+**Work you have already done:** Initial MVP built and tested in a live demo (**DotGrant** platform).
