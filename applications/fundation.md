@@ -99,7 +99,7 @@ Experience gained from building the dApp Stake2Build and leading the BuildOnDot 
 
   - **Estimated duration:** 1 month
   - **FTE:** 1
-  - **Costs:** 5,000 USD
+  - **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
 | :----: | ----------- | ------------- |
@@ -115,7 +115,7 @@ Experience gained from building the dApp Stake2Build and leading the BuildOnDot 
 
   - **Estimated Duration:** 1 month
   - **FTE:** 1
-  - **Costs:** 5,000 USD
+  - **Costs:** 2,000 USD
 
 | Number | Deliverable | Specification |
 | :----: | ----------- | ------------- |
