@@ -60,6 +60,74 @@ Finally, we take licensing and the right of all teams in and outside the ecosyst
 
 We also try to enforce our [code of conduct](CODE_OF_CONDUCT.md) and, based on this, may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
 
+### What We're Looking For
+
+We're excited to support projects that align with our vision for a thriving Web3 ecosystem. Here's what makes us particularly enthusiastic about an application:
+
+**💡 User-Centric Innovation**
+- Projects that focus on real user needs and can serve a broad user base
+- Solutions that address practical challenges and improve user experiences
+
+**🔄 Dogfooding & Practical Value**  
+- Projects that can be actively used and tested by Web3 Foundation, Parity, your team, and the broader ecosystem
+- Tools and applications that solve problems we face ourselves
+
+**🪙 DOT Token Alignment**
+- Projects that create tangible demand and usage for the DOT token
+- Solutions that strengthen the Polkadot ecosystem's economic foundation
+
+**💰 Sustainable Business Models**
+- Teams demonstrating strong financial discipline and clear planning
+- Projects with a realistic path to financial independence within 12-24 months
+- Evidence of thoughtful resource management and business strategy
+
+**⚖️ Regulatory Awareness**
+- Projects that understand and comply with regulatory requirements in their target markets
+- Teams that proactively consider compliance and legal considerations
+
+**🌟 Exciting Verticals**
+
+We're particularly interested in (but not limited to) these areas:
+- **Cross-border payments & stablecoins**, especially serving Latin America and Southeast Asia
+- **AI applications** like content authentication and verification systems
+- **DePIN/IoT solutions** with concrete, marketable products
+- **Proof-of-personhood** implementations and identity solutions
+- **Web2 to Web3 bridges** - bringing familiar concepts (think HackMD, Spotify-like experiences) to Polkadot
+
+### What Doesn't Fit Our Program
+
+To help you determine if our program is the right fit, here are types of projects we typically don't fund:
+
+**❌ Generic Approaches**
+- Projects based on generic talking points from other ecosystems without Polkadot-specific innovation
+- Applications that could apply to any blockchain without meaningful differentiation
+
+**🪙 Token-Only Focus**
+- Projects focused primarily on token sales rather than providing genuine utility
+- Applications where the main value proposition is speculative trading
+
+**📈 Marketing Without Substance**
+- Pure marketing efforts without concrete technical deliverables
+- Projects aimed at "saving" or promoting other projects through marketing alone
+- Generic promotional activities without defined use cases
+
+**💸 Financial Sustainability Concerns**
+- Teams without clear financial planning or path to sustainability
+- Projects that don't demonstrate responsible resource management
+- Applications lacking realistic business models or revenue streams
+
+**🔒 Limited Usability**
+- Products that we and the community cannot meaningfully test or use
+- Solutions that exist in isolation without practical application
+
+**🌐 Misaligned Objectives**
+- Projects that don't create meaningful demand or usage for DOT tokens
+- Solutions that could easily exist on any blockchain without leveraging Polkadot's unique features
+
+**⚖️ Regulatory Blindness**
+- Projects that ignore or are unaware of regulatory requirements in their target markets
+- Teams that haven't considered compliance implications for their solutions
+
 ### Project Ideas
 
 An overview of existing projects in the Web 3.0 Technology Stack, along with broad project ideas we would potentially be interested in funding, can be found [here](https://wiki.polkadot.network/docs/build-open-source), as well as a list of previously accepted applications [here](https://github.com/w3f/Grants-Program/blob/master/applications/index.md).
