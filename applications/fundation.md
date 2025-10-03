@@ -26,7 +26,7 @@ While building my first dApp on Polkadot, Stake2Build, over a year and a half ag
 - Core Stack: Next.js  
 - UI: Tailwind CSS, shadcn/ui  
 - Database: SQLite  
-- API: Polkadot-api API  
+- API: Polkadot-api
 ![Papiclient](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Papiclient.png)  
 **Proof of Concept (PoC)/MVP:**  
 - Website: https://www.fundation.dev/  
