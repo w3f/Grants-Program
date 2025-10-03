@@ -1,7 +1,3 @@
-This is an excellent catch and a crucial detail for a technical grant application. I have updated the grant proposal to include explicit deliverables for the **Dockerfile** and the **GitHub MD files** (specifically `README.md` and `CHANGELOG.md`), as well as ensuring the language consistently refers to the **Polkadot-API** usage.
-
-Here is the revised and finalized grant application:
-
 # Fundation
 
   - **Team Name:** swen usa llc
