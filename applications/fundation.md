@@ -30,7 +30,7 @@ While building my first dApp on Polkadot, Stake2Build, over a year and a half ag
 ![Papiclient](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Papiclient.png)  
 **Proof of Concept (PoC)/MVP:**  
 - Website: https://www.fundation.dev/  
-- MVP: https://www.fundation.dev/login  
+- MVP: https://dationauth.vercel.app/login  
 - Mockups/UI Designs:  
   I have posted numerous videos on my X (formerly Twitter) page showcasing updates and ideas. You can view them here: https://x.com/swenw31.  
 
@@ -99,7 +99,7 @@ Experience gained from building the dApp Stake2Build and leading the BuildOnDot 
 | **2.**  | Dynamic Blockchain API Module | Build an abstracted **Asset Retrieval System** for Polkadot chains via the **Polkadot-API**. This module will handle chain selection, token fetching, and balance queries. |
 | **3.**  | UX/UI Components    | Deliver polished UI components for **intuitive chain connect/disconnect** and responsive asset display. |
 
-![Identity](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Identity.png)  
+![Identity](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Identityfix.png)  
 ![Network Select](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Network%20Select.png)
 
 ---
