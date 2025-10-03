@@ -101,7 +101,7 @@ Experience gained from building the dApp Stake2Build and leading the BuildOnDot 
 | **3.**  | UX/UI Components    | Deliver polished UI components for **intuitive chain connect/disconnect** and responsive asset display. |
 
 ![Identity](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Identity.png)  
-![PNetwork Select](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Network%20Select.png)
+![Network Select](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Network%20Select.png)
 
 ---
 
@@ -131,7 +131,7 @@ Sustainability will be sought through optional donations and partnerships with P
 Release v1.0 and promote via the **BuildOnDot** community. Enhance based on early user feedback, adding more modules for DeFi and governance.
 
 **Team's long-term plans:**  
-Grow Polkadot through more dApps with an end goal of creating a light wallet.
+My long-term vision is to accelerate Polkadot adoption by enabling the rapid creation of high-quality dApps. I aim to develop a comprehensive suite of tools and products that empower developers, lower technical barriers, and foster a thriving ecosystem—ultimately driving mainstream adoption of Polkadot technology.
 
 ## Referral Program (optional) :moneybag:
 
