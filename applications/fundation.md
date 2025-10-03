@@ -46,12 +46,11 @@ Fundation is positioned on the front-end side of the development stack.
 - **Thirdweb:** An Ethereum/EVM-focused platform with SDKs and smart contract tools, targeting games and creator platforms.  
 - **Base OnchainKit:** OnchainKit is your go-to SDK for building beautiful onchain applications. Ship in minutes, not weeks.  
 - **Magic:** An Ethereum-based authentication tool using passwordless logins, not a full dApp solution.  
+ - **Polkadot-UI:** Deliver great UX with ready-made, typesafe Polkadot components. Fully customizable. Fully open source. Powered by papi and dedot
 
 **Are there any projects similar to yours in the Polkadot/Kusama ecosystem?**  
 Yes, projects like Apillon address similar needs.  
-
-**If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.**  
-Fundation is open-source and self-hostable, prioritizing ease of use and flexibility. Unlike Apillon or Thirdweb, it doesn’t rely on third-party services. This ensures developers retain full control over their work and can adapt it freely without waiting for external updates. Base OnchainKit is the closest but lacks full-stack authentication and chain management.  
+Fundation is fully open-source and self-hostable, prioritizing developer autonomy and flexibility. Unlike Apillon or Thirdweb, it does not depend on third-party services, allowing teams to maintain complete control over their deployments and adapt the framework as needed without external dependencies or delays. While Base OnchainKit offers rapid onchain app development, it lacks comprehensive full-stack authentication and robust chain management features. In comparison to Polkadot-UI, Fundation and Polkadot-UI share some similarities, but their scopes and objectives differ significantly: Polkadot-UI provides a reusable component library compatible with multiple React frameworks, whereas Fundation delivers an integrated, end-to-end toolkit focused specifically on accelerating dApp development and authentication within the Polkadot ecosystem.
 
 **Are there any projects similar to yours in related ecosystems?**  
 Yes, as noted above (e.g., Thirdweb in Ethereum/EVM, Magic for auth).  
