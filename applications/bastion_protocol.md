@@ -191,6 +191,35 @@ Bastion provides foundational social finance primitives that complement existing
 - DAOs struggle with financial coordination beyond basic multisigs
 - No existing solution provides runtime-level social finance primitives
 
+### Alignment with W3F Grants Program Priorities
+
+**User-Centric Innovation**
+- Addresses real user needs: communities worldwide manage billions through informal lending circles (ROSCAs, stokvels, tandas, hui) but lack transparent, scalable infrastructure
+- Serves broad user base: investment clubs, DAOs, community savings groups, underbanked populations
+- Solves practical challenge: DeFi's 150-200% collateralization excludes most people; we reduce requirements through social trust + blockchain accountability
+
+**DOT Token Alignment**
+- Circle treasuries hold and operate with DOT natively
+- Collective staking creates sustained DOT demand as groups stake together
+- Participation in parachain auctions pools DOT from multiple users
+- Multi-asset support via Asset Hub strengthens Polkadot's core infrastructure
+
+**Relevant Vertical: Financial Inclusion**
+- Directly serves underbanked populations who currently use informal lending circles
+- Enables transparent cross-border group savings and lending with blockchain security
+- Brings proven traditional finance models (ROSCAs managing billions, credit unions with $2.6T globally) to Web3
+- Focus on practical financial access rather than speculation
+
+**What Bastion Avoids:**
+
+- **Not Generic**: Polkadot-specific Substrate FRAME pallets leveraging Asset Hub, DOT staking, and parachain auction mechanisms—cannot be replicated on other chains without similar runtime-level architecture
+
+- **Not Token-Focused**: Zero token sale or speculative token. Pure utility focus on group coordination primitives. Value comes from enabling new application categories.
+
+- **Not Marketing-Only**: 100% technical deliverables—working pallet, runtime integration, dApp, indexer, comprehensive documentation. No marketing budget or promotional activities.
+
+- **Demonstrable Usability**: Working demo with full documentation enables testing from day one. Web3 Foundation can use internally for treasury management. Open-source allows community contributions.
+
 ## Team :busts_in_silhouette:
 
 ### Team members
