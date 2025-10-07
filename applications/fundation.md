@@ -95,6 +95,8 @@ Experience gained from building the dApp Stake2Build and leading the BuildOnDot 
 |--------|----------------------|-------------------------------------------------------------------------------|
 | **0a.** | License             | We will release all code under the **Apache 2.0** license.                    |
 | **0b.** | Documentation       | We will provide **inline documentation** and a comprehensive **README.md** with setup instructions. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the delivery guidelines for details. |
+| **0d.** | Docker	   | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | **1.**  | Authentication Module | Implement **modular authentication**: Wallet-based, Social, Email/Password, and Passkey (WebAuthn), with secure session management. |
 | **2.**  | Dynamic Blockchain API Module | Build an abstracted **Asset Retrieval System** for Polkadot chains via the **Polkadot-API**. This module will handle chain selection, token fetching, and balance queries. |
 | **3.**  | UX/UI Components    | Deliver polished UI components for **intuitive chain connect/disconnect** and responsive asset display. |
