@@ -5,7 +5,7 @@
 **Project Name:** Archive  
 **Team Name:** Archive Core  
 **Members:** Vladimir Prodous (Founder), Elina (CTO)  
-**GitHub:** N/A 
+**GitHub:** githabium 
 **Website:** (https://why-not-beta.vercel.app/)
 
 **Short Summary:**  
@@ -55,7 +55,8 @@ Our architecture is designed to showcase Polkadot as a home for creative and cul
 | **Total** |  | **10 weeks** | **$30,000** |  |
 
 **Funding Level:** Level 2 Grant ($30,000)  
-**Payment Preference:** 50% in DOT (vested), 50% in USDC  
+**Payment Preference:** 50% in DOT (vested), 50% in USDC
+**Payment Adress USDC:** 0x6fd3012966a57acab95725b3f1d8e7e4d2b8c755 (Ethereum ERC 20)
 
 ---
 
