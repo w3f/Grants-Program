@@ -1,87 +1,121 @@
-# Humanized AI Platform
+# Humanized AI Platform for Decentralized Content Creation
 
-## Project Overview
-
-**Project Name:** Humanized AI Platform  
-**Team Name:** BreckinZephan Labs  
-**Website (if any):** Coming soon  
-**Linked Repositories:** https://github.com/breckinzephan-dot/humanized-ai-platform  
-**Grant Category:** Open Source Software / AI Integration  
-
-### Project Description
-
-Humanized AI is a Web3-based platform that blends artificial intelligence with blockchain transparency to create an open, ethical, and decentralized ecosystem for intelligent automation.  
-The project aims to make AI tools more “humanized” — transparent, accountable, and community-driven — while allowing developers and businesses to build and interact with AI agents safely.
-
-We will build a decentralized web app and open-source SDK that allows creators and organizations to integrate intelligent automation into their operations while maintaining full data privacy and traceability on-chain.
+## Project Details
+- **Title**: Humanized AI Platform: Decentralized Content Creation on Substrate  
+- **One-liner**: A decentralized AI assistant built on Substrate for human-like content creation with on-chain ownership and provenance.  
+- **Category**: Tooling & Infrastructure  
+- **Date**: 2025-10-10  
+- **Main contact**: Diogo (diogo-w3f)  
+- **Team background**: Solo founder with 5+ years in content creation and Web3 integration. Currently developing the Substrate module using the node-template and Polkadot-JS API and learning ink! smart contract patterns from Parity docs.  
+- **Project website / repo**: https://github.com/breckinzephan-dot/humanized-ai-platform (PR: w3f/Grants-Program#267)  
+- **Related applications**: None (first-time applicant).
 
 ---
 
-## Project Goals
+## Project Description
+- **Problem**  
+  Centralized platforms often flag or penalize AI-generated content, which reduces creator reach and trust. This discourages creators from adopting decentralized workflows and harms content-driven Web3 use cases.
 
-1. **Transparency in AI** – Provide blockchain-backed proof of how AI models process and output data.  
-2. **Data Ownership** – Give users full control of their personal and interaction data.  
-3. **AI + Web3 Integration** – Enable smart contracts to interact directly with AI models through our SDK.  
-4. **Community Collaboration** – Allow developers to extend and contribute to open AI modules.  
+- **Solution**  
+  Humanized AI provides a customizable assistant that produces human-like content while anchoring authorship and provenance on-chain. The system combines a frontend UI, a backend "humanization" engine, and a Substrate pallet that records ownership hashes and metadata.
 
----
+- **Ecosystem fit**  
+  The project demonstrates a practical Substrate use-case (content provenance and decentralized tooling) and helps bridge Web2 UX into Polkadot’s Web3 stack—encouraging creator-focused adoption.
 
-## Deliverables and Milestones
+- **Target users**  
+  Freelance writers, independent creators, content teams, and Web3-native publishing platforms.
 
-### **Milestone 1 – Platform Foundation**
-- Develop the core decentralized backend architecture.  
-- Set up smart contracts for user identity and data control.  
-- Create GitHub documentation and initial project structure.  
+- **Current status**  
+  Early development: repository scaffolded, Substrate node-template customized for a content pallet, and frontend prototype skeleton created. Milestone 1 will produce a working prototype.
 
-**Estimated Duration:** 4 weeks  
-**Cost:** $10,000  
-
----
-
-### **Milestone 2 – AI Module Integration**
-- Build initial AI interaction APIs.  
-- Integrate model transparency layer (proof-of-interaction).  
-- Basic web interface for user testing.  
-
-**Estimated Duration:** 6 weeks  
-**Cost:** $20,000  
+- **Maintenance & support**  
+  Open-source (Apache 2.0). Planned community-driven contributions, documentation, and periodic security audits after major milestones.
 
 ---
 
-### **Milestone 3 – SDK + Community Tools**
-- Develop developer SDK for AI + Web3 integration.  
-- Release open-source documentation and tutorials.  
-- Launch community contribution guidelines.  
+## Technical Details
 
-**Estimated Duration:** 6 weeks  
-**Cost:** $20,000  
+### High-level architecture
+[React UI] --> [Node.js Backend (humanization engine)] --> [Polkadot-JS API] --> [Substrate Pallet]
 
----
+UI: text input, preview, wallet connect
 
-## Total Grant Request
+Backend: request normalization, model orchestration, content hash generation
 
-**$50,000 USD**
+Pallet: store content hash, owner AccountId, timestamp, and optional metadata
 
----
 
-## Team Members
+### Stack & tools
+- Frontend: React / Next.js, TypeScript, Polkadot-JS extension integration  
+- Backend: Node.js (TypeScript), Express or Fastify, REST/JSON API  
+- Blockchain: Substrate Node Template, custom pallet in Rust, ink! (where applicable)  
+- Integration: @polkadot/api (Polkadot-JS API)  
+- Testing: Jest (frontend), cargo test (pallet), integration tests via local testnet  
+- CI/CD: GitHub Actions (lint, tests, build artifacts)  
+- Storage model: On-chain anchoring (store content hash + metadata). Raw content not stored on-chain; optionally use IPFS for larger artifacts (content hash on-chain).  
+- Security: Content hashed + optional symmetric encryption for metadata; plan community audit after M1.
 
-| Name | Role | GitHub | Email |
-|------|------|---------|-------|
-| Owoyemi Ademola | Project Lead & Developer | [@breckinzephan-dot](https://github.com/breckinzephan-dot) | breckinzephan@gmail.com |
-
----
-
-## Additional Information
-
-We are committed to building an open, ethical, and transparent AI ecosystem that aligns with Web3 values.  
-The project will remain open source, and all core components will be licensed under Apache 2.0.
-
----
-
-## Future Vision
-
-The Humanized AI Platform will evolve into a decentralized AI ecosystem where every user, developer, and organization can interact, contribute, and build trusted intelligent applications — powered by blockchain integrity and humanized intelligence.
+### Current progress (signals of work done)
+- Repository scaffolded with `frontend/` and `pallet/` directories.  
+- Substrate node-template forked and initial pallet scaffold created.  
+- Basic React app bootstrapped with wallet connect placeholder.  
+- CI pipeline skeleton added (lint + basic tests).
 
 ---
 
+## Milestones & Deliverables
+
+| # | Title | Deliverables | Timeline | Budget (USD) |
+|---|-------|--------------|----------|--------------|
+| 1 | Prototype Development | - React UI minimal app (text input, submit, preview).<br>- Substrate pallet `storeContent(content_hash: [u8;32], owner: AccountId, metadata: Vec<u8>)` with basic storage & event emission.<br>- Backend Node.js bridge that computes content hash and submits extrinsics via Polkadot-JS API.<br>- Unit tests: `cargo test` for pallet, Jest for frontend.<br>- Repo README, demo script, and short demo video (2-3 mins). | 5 weeks | $15,000 |
+| 2 | AI Integration & Verification | - Integrate humanization layer (model orchestration) behind backend API (adapter for hosted LLM or open models).<br>- Develop automated detection-evasion testbench and benchmark (report target: ≥80% human-likeness measurement using agreed metrics).<br>- Update pallet to include verification/anchor API and off-chain worker pattern if needed.<br>- Security review and documentation update. | 6 weeks (post-M1) | $20,000 |
+
+**Total requested:** $35,000
+
+**Payment & delivery:** Milestone-based. Funds disbursed after review & acceptance of milestone deliverables. DOT vesting arrangements (if applied) will follow grant agreement terms.
+
+---
+
+## Acceptance criteria (per milestone)
+
+**M1 Acceptance**
+- Frontend demo deployed locally and accessible with README steps.  
+- Pallet compiled and tested (`cargo test`) with `storeContent` extrinsic and emitted events captured in Polkadot-JS Apps.  
+- Backend bridge successfully submits a `storeContent` extrinsic using a local node.  
+- Repo includes instructions to reproduce demo and unit/integration tests.
+
+**M2 Acceptance**
+- Backend integrates a humanization model producing demonstrably human-like outputs on benchmark dataset.  
+- Automated tests showing detection-evasion target met (documented methodology + results).  
+- Pallet upgraded if required and documentation for integration published.
+
+---
+
+## Security & privacy
+- Raw content is never stored on-chain; only hashes and minimal metadata to prove provenance.  
+- Optionally support IPFS for content storage with on-chain anchor.  
+- Post-M1 community audit planned; security contact added to repo.
+
+---
+
+## Licensing & openness
+- License: Apache 2.0.  
+- All core components will be open-source; SDKs and documentation published in the repo.
+
+---
+
+## Additional notes & next steps
+- Quick tasks to complete pre-M1 submission: finalize pallet scaffold, complete frontend wallet-connect flow, and capture a 2–3 minute demo walkthrough.  
+- Recommended dev resources: Substrate Node Template tutorials, Polkadot-JS integration guides, ink! examples.  
+- CLA: ensure you sign the Contributor License Agreement in the PR thread if requested by the bot.
+
+---
+
+## Contact
+- **Owner / Lead:** Owoyemi Ademola (breckinzephan-dot)  
+- **Email:** breckinzephan@gmail.com  
+- **Repo / PR:** https://github.com/breckinzephan-dot/Grants-Program (applications/humanized-ai-platform.md) — PR: w3f/Grants-Program#267
+
+
+
+### High-level architecture
