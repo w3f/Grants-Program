@@ -1,65 +1,231 @@
-# Name of your Project
+# Growwr: Building the Future of Work on Polkadot
 
 > [!NOTE]
 > This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
 >
 > See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
 
-- **Team Name:** Legal name of your team (e.g. JsonCorp)
+- **Team Name:** Growwr Inc.
 - **Payment Details:**
-  - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
-  - **Payment**: For the **USDC** portion of the payment, please provide a Polkadot AssetHub address and the currency (e.g. 15oF4... (USDC)). 
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1, 2 or 3
+  - **DOT**: For the **DOT** compensation, DOT: 16AzsJCQCWsinV1RyBd3H4XRNE5XWUCWL9GfCZSt6u5vum8S
+  - **Payment**: (BTC) 15TKWqweL1W6tSik8xi4QmSfX1sdSWXrZb
+- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** Level 2
 
 > [!IMPORTANT]
 > *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
-Please provide the following:
+**Tagline:**
 
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+Empowering Africa’s workforce with AI and blockchain—building a transparent, trustless, and borderless future of work on Polkadot.
+ 
+**Description:**
+
+Growwr is an AI-powered work platform designed to connect verified African professionals with global businesses while ensuring trust, payment security, and transparency through blockchain technology. Today, 74% of freelancers across Africa experience payment delays of up to three months, and 16% never receive payment at all. Beyond that, millions remain excluded from financial systems—lacking access to credit, insurance, or even device financing.
+
+Growwr solves these systemic challenges by merging AI and Web3. Our platform uses AI engines for talent verification, chemistry-fit matching, and performance intelligence, while integrating Polkadot’s blockchain to ensure trustless payments, on-chain work credentials, and transparent work histories. Every transaction and verified contribution will be recorded on Polkadot, creating an immutable professional identity that eliminates fraud, bias, and opacity in the hiring process.
+By deploying on Polkadot, Growwr leverages its scalable multi-chain architecture, interoperability, and low-cost transactions to build a high-throughput infrastructure for millions of micro-transactions between businesses and workers. Our vision is to make Polkadot the core trust layer for the future of work across emerging markets—powering verified identity, instant cross-border payments, and decentralized professional reputation systems.
+
+**Why We’re Building This:**
+Our journey is deeply personal. In 2021, Growwr’s founder lost 17 international contracts simply because of nationality—a reflection of the systemic bias and payment insecurity facing over 300 million skilled professionals across emerging markets. That experience inspired the creation of Growwr: a platform that restores trust, opportunity, and inclusion using AI and blockchain.
+Polkadot’s ecosystem offers the ideal foundation to scale this vision. With its Substrate framework and interoperable design, we can build a future-ready infrastructure that connects verified talent to global opportunities—securely, transparently, and without borders.
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+Growwr is building a trustless AI-powered work infrastructure on Polkadot, enabling verified identity, instant cross-border payments, and on-chain reputation for global talent.
+We’re creating a decentralized layer that ensures freelancers and businesses across emerging markets can work and get paid instantly, securely, and transparently — powered by Polkadot’s scalability and interoperability.
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
+The final platform will consist of three main layers:
+
+**1. AI Work Intelligence Layer**
+ Powered by Growwr’s proprietary AI engines:
+- **TalentVerify™** – verifies identity, credentials, and skills using cross-referenced digital fingerprints, behavioral data, and social proofs.
+- **SmartMatch™** – uses AI to match verified talent with projects using performance, culture-fit, and skill data.
+- **PerformanceIQ™** – analyzes on-chain records and project outcomes to predict reliability and work quality.
+
+**2. Blockchain Trust Layer (Polkadot/Substrate Integration)**
+- **Decentralized Identity (DID)**: On-chain verified profiles for talent and businesses.
+- **Smart Escrow Contracts:** Automate milestones, delivery, and secure payments using Polkadot stable assets.
+- **Immutable Work Ledger**: Stores verified work transactions and performance metrics.
+- **Reputation Protocol**: Builds transparent reputation scores based on verified contributions.
+
+**3. Application Layer (Web + API)**
+- Unified web platform and API suite for businesses and freelancers to hire, collaborate, and transact seamlessly — entirely on-chain.
 
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+**Mockups / UI Components**
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+Our UI is currently live and under continuous improvement.
+Key interfaces include:
+- **Employer Dashboard** – post roles, manage contracts, and execute escrow payments.
+- **Talent Dashboard** – manage verified profiles, proposals, and track payouts.
+  
+**Links**
+
+- Live Product: https://growwr.co/ 
+- Web App (Beta): https://growwr.co/join 
+- Product Demo: https://growwr.docsend.com/view/vabmpt9hjxerpppc/d/ne2iiusuqqpaj23k 
+- Pitch Deck: https://growwr.docsend.com/view/ixaq66mzknrpx5ji 
+- Product Roadmap: https://growwr.docsend.com/view/vabmpt9hjxerpppc/d/rttfdy7d7ix3ctge 
+- Technology Stack: https://growwr.docsend.com/view/vabmpt9hjxerpppc/d/kyrw5v9nx3iambym 
+
+**Data Models / API Specifications**
+
+- User DID Registry to store decentralized identity linked to Polkadot address
+- Smart Contract Layer to define project milestones, dispute logic, and escrow release
+- Reputation Engine to aggregate work outcomes into on-chain performance index
+
+All blockchain interactions are managed using the Polkadot.js API and secured via Substrate-based pallets for escrow and identity.
+
+**Technology Stack**
+
+- Frontend: Next.js, React, Tailwind CSS
+- Backend: Java (Spring Boot), Node.js
+- Blockchain: Polkadot/Substrate, Ink! Smart Contracts, Polkadot.js
+- AI: Python, Google Gemini API, Cursor
+- Database: PostgreSQL, Redis, IPFS (for proof storage)
+- Infrastructure: Google Cloud, Digital Ocean
+- Payment: Cross-chain bridge to Polkadot stable assets
+
+**Proof of Concept / Prior Work**
+
+Growwr has already proven traction in Web2 and is now transitioning to Web3 infrastructure with Polkadot.
+
+**Web2 Traction:**
+
+- 19,000+ professionals vetted using Growwr AI
+- 2,000+ global businesses served
+- $1.5M+ processed in secure payouts
+- Users across 13 countries, top markets include USA, Germany, South Africa, and Nigeria
+- 0% payment failure rate
+
+**Live Analytics Dashboards:** https://infogram.com/growwr-public-analytics-dashboard-1h0n25ow3lw7l4p 
+
+**Milestones & Accomplishments**
+
+Despite receiving only $6,000 in grant funding to date, we’ve achieved significant recognition and validation:
+
+- Winner: $6,000 grant from GET Accelerated Program 2024
+- Selected for TechCrunch Startup Battlefield Class of 2024
+- Shortlisted: VISA Accelerator Africa 2025
+- Top 5 Winner: AFRISE Challenge 2025
+- Finalist: Africa Fintech Summit, Washington DC 2025
+- Finalist: Pitchfest Nigeria 2025
+- 1st Runner-Up Winner: TERMII Conference Pitch Competition 2025
+- Finalist: Founders’ Connect Launchpad Competition 2025
+- Shortlisted: Verto Awards 2025
+- Finalist: Africa Ignite Competition, Cape Town
+- Shortlisted: Startups Award at Moonshot
+
+These milestones highlight not just validation from African ecosystems but also recognition at global startup platforms.
+
+**Press coverage** (TechCrunch Startup Battlefield feature, pitch competition recognitions).
+
+- GET Accelerated Cohort 3 Awards N55m Equity‑free Funding to Startups (THISDAYLIVE, Jan 10, 2025)
+Growwr won one of five N10m equity‑free grants awarded in GET Accelerated’s third cohort.
+Link: https://www.thisdaylive.com/index.php/2025/01/10/get-accelerated-cohort-3-awards-n55m-equity-free-funding-to-startups/
+- 8 African startups make TechCrunch Startup Battlefield (TechPoint Africa, Sep 12, 2024)
+Listed among eight African startups selected for TechCrunch Startup Battlefield 200 at Disrupt 2024.
+Link: https://techpoint.africa/insight/8-african-startups-make-techcrunch-startup-battlefield/
+- Nigerian Startup, Growwr, is building ‘Upwork for Africa’ (TechCabal, Feb 3, 2025)
+Featured in TechCabal’s flagship news section, highlighting Growwr’s mission, traction, and impact metrics.
+Link: https://techcabal.com/2025/02/03/nigerian-startup-growwr-is-building-upwork-for-africa/
+- 11 Startups Selected to Pitch at 13th Africa Fintech Summit in Washington D.C. (Africa Fintech Summit Pulse, Apr 2, 2025)
+Announced as one of 11 innovative fintech startups shortlisted for the AFTS New Venture Pitch Competition.
+Link: https://www.linkedin.com/pulse/11-startups-selected-pitch-13th-africa-fintech-56ogf/
+- How Nigeria’s Growwr helps businesses hire, manage and pay vetted African tech talent
+Link: https://disruptafrica.com/2025/10/09/how-nigerias-growwr-helps-businesses-hire-manage-and-pay-vetted-african-tech-talent/ 
+- Africa Ignite Pitch Competition 2024 Finalist (Informa Connect Limited, Oct 2, 2024)
+Named a finalist in the Africa Ignite Pitch Competition 2024, earning the chance to advance to the Startup World Cup Grand Finale.
+Link: https://africatechfestival.com/africaignite/pitch-competition/
+- AFRISE Challenge 2025 Cohort Announcement (Opportunity Desk, Mar 4, 2025)
+Announced as part of the selected cohort for the AFRISE Challenge 2025 accelerator program.
+Link: https://www.linkedin.com/posts/hindsight-ventures_afrise-cohort-2025-activity-7315999540644397056-LCvg/
+- Founder Institute Lagos Produces 11 New Technology Companies (Founder Institute, Feb 28, 2024)
+Recognized Growwr as one of 11 alumni from the Lagos cohort of the Founder Institute’s pre‑seed accelerator.
+Link: https://fi.co/insight/founder-institute-lagos-produces-11-new-technology-companies
+- Selected for TechCrunch Disrupt 2024 Startup Battlefield (TechCrunch Disrupt 2024, Oct 28–30, 2024)
+Included in the official Startup Battlefield roster at TechCrunch Disrupt 2024 in San Francisco.
+Link: https://techcrunch.com/startup-battlefield/company/growwr/
+- Growwr | TechCrunch (TechCrunch, 2025)
+Featured company profile on TechCrunch’s Startup Battlefield page, showcasing Growwr’s core product and founders.
+Link: https://techcrunch.com/startup-battlefield/company/?status=all&pg=1&event=2725895&location=577037496
+- Verto Awards 2025 
+Link: https://cityvoice.ng/2025/09/26/verto-announces-shortlisted-participants-for-verto-awards-2025/ 
+
+**Scope Clarifications — What Growwr Will Not Implement**
+
+- Growwr will not issue or manage tokens during the grant phase.
+- The project will not handle decentralized exchanges or speculative financial products.
+- We will not allocate grant funds to marketing, PR, or hosting overheads; all funds will be directed towards development and integration on Polkadot.
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+**Where and how does your project fit into the Polkadot/Substrate/Kusama ecosystem?**
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
+Growwr fits into the Polkadot ecosystem as a decentralized, AI-powered work infrastructure layer that brings trustless talent verification, on-chain identity, and borderless payments to the future of work. We leverage Polkadot’s multi-chain architecture to build interoperable components that serve both the talent and enterprise sides of hiring.
+
+Our integration leverages:
+
+- Substrate for building a decentralized Talent Identity Chain (TIC) — a registry of verified professionals, work history, and credentials.
+- Polkadot parachains for cross-chain payment processing and smart contract settlement between clients and freelancers.
+- Decentralized storage via IPFS for immutable portfolio records.
+- Ink! smart contracts for escrow-backed milestone payments and automated performance releases.
+
+
+**Who is your target audience?**
+
+Our project serves two main user groups within the Polkadot ecosystem:
+
+- Web3 companies and DAOs — who need verifiable, bias-free access to global talent (developers, designers, marketers, and community managers).
+- Web3 professionals — who need on-chain proof-of-skill, verified reputation, and trustless payouts.
+
+Indirectly, our work also supports parachain developers, dapp creators, and wallet builders, as Growwr can integrate their APIs for payments, identity, or analytics — expanding real-world utility across the ecosystem.
+
+**What needs does your project meet?**
+
+Growwr addresses three critical gaps in the decentralized work economy:
+
+- Trustless Identity – Talent verification and credential validation on-chain, reducing fraud and bias.
+- Secure Payments – Escrow-backed, automated payments for freelancers and employers across 180+ countries.
+- On-Chain Reputation – Decentralized profiles showcasing verified work history, enabling transparent hiring and financing (credit, insurance, etc.).
+
+We are effectively building the decentralized LinkedIn + Upwork for Web3, powered by Polkadot.
+
+**How did you identify these needs?**
+
+Our team validated these problems through:
+- First-hand experience: Our founders lost contracts due to regional bias and payment failure — a reality faced by millions.
+- User data: 17,000+ talent applications and 3,000+ businesses onboarded in our Web2 MVP show deep demand for verifiable, borderless hiring.
+- Market research: 70% of freelancers in emerging markets experience delayed or missing payments; 54% of employers report poor hiring accuracy (Source: World Bank & IFC 2023).
+- Community signals: Web3 DAOs and remote-first teams repeatedly cite the lack of trusted work reputation and compliance tools as barriers to scaling decentralized hiring.
+
+**Are there similar projects in the Substrate / Polkadot / Kusama ecosystem?**
+
+To date, there are no direct equivalents of Growwr within the Polkadot ecosystem. However, partial analogues exist:
+- TalentLayer (EVM) – a decentralized hiring protocol, but lacks integrated AI vetting and productivity management.
+- Braintrust (non-Polkadot) – focuses on tokenized work, not verified identity or performance.
+- Dock.io (credentialing) – provides decentralized credentials but not work matching or escrow.
+
+Growwr differs by offering an end-to-end AI + blockchain infrastructure covering:
+
+1. Talent verification
+2. AI-based matching
+3. Escrow-backed payments
+4. Productivity and upskilling
+
+Verification systems were manual or non-scalable — Growwr’s AI engines automate that process.
+
+**Are there similar projects in related ecosystems?**
+
+Yes. In the broader Web3 space:
+- Braintrust and TalentLayer target decentralized work but rely on self-attested data and don’t integrate AI.
+- Deel and Remote.com solve cross-border payments but remain Web2, with no blockchain transparency.
+
+Growwr bridges both worlds, combining AI vetting + decentralized infrastructure, making it the first trustless, AI-powered, multi-chain hiring ecosystem.
 
 ## Team :busts_in_silhouette:
 
