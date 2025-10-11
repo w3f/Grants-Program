@@ -234,122 +234,218 @@ Growwr bridges both worlds, combining AI vetting + decentralized infrastructure,
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Obinna Umeh - Co-founder & CEO
+- Emmanuel Ajayi - Co-founder & CTO
+- James Nottidge - Blockchain Engineer
+- Caleb Okpahenom Okpaheifufue - Cybersecurity Engineer
+- Opeyemi Jamiu - Product Designer
+- Onuora Gaius - QA Engineer
+- Oreoluwa Somuyiwa - Full-Stack Engineer
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Obinna Umeh
+- **Contact Email:** obinna@growwr.co
+- **Website:** [Growwr Website](https://growwr.co/)
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 651 N Broad St, Suite 201, Middletown, Delaware, 19709, USA
+- **Registered Legal Entity:** Growwr Inc.
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
+Growwr is built by an experienced team with strong backgrounds in fintech, blockchain, AI, and Web3 product development. Our core team has shipped products that scaled to 100K+ users, handled millions in payments, and integrated with crypto networks and financial APIs.
+We have not previously applied for a Web3 Foundation grant.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+**Leadership:**
+
+- Obinna Umeh (CEO & Co-Founder) – Nottingham Law School alumnus with honors, Obinna is a growth and product marketing expert with deep expertise in crypto, Web3, and fintech. He previously scaled Breet, a Web3 crypto company in Africa, to over 100,000 users in less than 6 months, and has led growth for global fintech and Web3 companies including WPMU Dev, Web2 Ranker, Cardtonic, and Dandy Writers (which scaled to ₦20M revenue in 10 months).
+https://www.linkedin.com/in/obinnaumeh/ 
+https://obinnaumeh.webflow.io/
+
+- Emmanuel Ajayi (CTO & Co-Founder) – First-class graduate of Covenant University, Emmanuel brings strong blockchain network and product expertise. He has built and scaled products for companies like Trove Finance and Flexip Group, and founded Product Kitchen, delivering high-impact software solutions. Emmanuel leads the architecture of Growwr’s blockchain integrations, ensuring robust scalability and Stellar network alignment.
+https://www.linkedin.com/in/emmanuel-ajayi-aj 
+https://github.com/emma-ajay 
+
+**Engineering & Design:**
+
+- James (Blockchain Engineer) – Ex-Software Engineer at Quidax (crypto fintech) and alumnus of Covenant University, James has deep blockchain and Web3 development expertise. He has contributed to projects with Headstart Lab and Google Developer Studio, building secure and scalable blockchain-based systems.
+- Ore (Full-Stack Engineer) – Ex-Engineer with experience at First Bank, Sterling Bank, and MoniePoint (Africa’s latest unicorn), Ore specializes in payments and scalable Web2/Web3 integrations across fintech and banking.
+- Opeyemi (Senior Product Designer) – With experience leading product design for Polaris Bank and First Bank, Opeyemi ensures Growwr’s user experience is seamless, intuitive, and scalable across devices.
+- Caleb (Cybersecurity Engineer) – A cybersecurity engineer currently pursuing a Master’s in Computer Science & Cybersecurity at George Washington University, Caleb ensures that Growwr’s infrastructure, blockchain contracts, and payment systems are secure, compliant, and resilient.
+- Gaius (QA Engineer) – QA engineer and alumnus of Covenant University, with prior expertise at SystemSpecs Group. Gaius drives quality assurance and testing to ensure reliable, bug-free deployments of Growwr’s Web2 and Web3 components.
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
-
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
-
-
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+Growwr Web3 is not live yet. It will be open source.
+Github repo: https://github.com/Growwr
 
-- links to improvement proposals or [RFPs](https://grants.web3.foundation/docs/rfps) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+Researches that helps:
+
+- [How Much Can Freelancers Make in 2025? - Upwork](https://www.upwork.com/resources/how-much-do-freelancers-make)
+- [What is the gig economy and what's the deal for gig workers? | World Economic Forum](https://www.weforum.org/stories/2024/11/what-gig-economy-workers/)
+- [Nigeria's Gig-economy: The Rise of Independent Workers](https://www.verivafrica.com/insights/nigerias-gig-economy-the-rise-of-independent-workers)
+- [Freelancing in Africa: A Growing Trend On the Continent](https://africa.com/freelancing-africa-growing-trend-continent/)
+
+Just this week, I have connected with 2 Nigerians who suffered same issue:
+
+- [Read Ridwan’s story](https://www.linkedin.com/posts/ridwan-akinfenwa_techjourney-software-engineering-activity-7369804640403488768-gJ5x?utm_source=share&utm_medium=member_desktop&rcm=ACoAADm9NOUB9nZSMXq6VmGJgcLXlWxbuEH3RxA)
+- [Read the comments here to see more stories](https://x.com/EOEboh/status/1965144928113344569)
+
+Supporting research articles:
+
+- [9 of 10 Africans unqualified for Jobs apply to - Research - P.M. News](https://pmnewsnigeria.com/2018/12/13/9-of-10-africans-unqualified-for-jobs-apply-to-research/)
+- [The 'wicked problems’ of talent management](https://www.edgecumbe.co.uk/wp-content/uploads/Wicked-Problems-FINAL-07-11-22.pdf)
+- [New Report Finds 59% of Freelancers Are Owed $50,000 or More by Late Paying Clients](https://www.globenewswire.com/news-release/2022/02/17/2387268/0/en/New-Report-Finds-59-of-Freelancers-Are-Owed-50-000-or-More-by-Late-Paying-Clients.html)
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+We’ll assume:
 
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
+Total Duration: 3 months
+
+FTE: ~3.5 full-time engineers + 1 product manager
+
+Total Costs: $26,000 (50% vested in DOT)
+
+Focus: Building Growwr’s Substrate-powered escrow & reputation engine integrated into the existing Growwr ecosystem.
+
+**Overview**
+
+| Item                           | Description                 |
+| ------------------------------ | --------------------------- |
+| **Total Estimated Duration**   | 3 months                    |
+| **Full-Time Equivalent (FTE)** | 2.5                         |
+| **Total Costs**                | $26,000 USD                 |
+| **DOT % (vested)**             | 50% (equivalent to $13,000) |
+| **Deliverables**               | 3 core milestones           |
+
+**Milestone 1 — Substrate Smart Escrow Module**
+
+Estimated duration: 1 month
+FTE: 2.5
+Costs: $10,000 USD
+
+**Objective**
+
+Develop a Substrate-based trustless escrow engine that securely holds payments between clients and freelancers until predefined project milestones are achieved. This will serve as the foundational blockchain layer for Growwr’s payment architecture.
+
+| No. | Deliverable                            | Specification                                                                                                                                        |
+| --- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. | License                                | MIT                                                                                                                                                  |
+| 2. | Documentation                          | Inline Rust documentation for Substrate modules + basic user setup guide showing how to deploy a local node and execute a sample escrow transaction. |
+| 3. | Testing & Guide                        | Unit tests covering escrow initiation, milestone validation, and payment release; 90%+ test coverage.                                                |
+| 4. | Docker                                 | Dockerfile for launching the node and running all tests locally.                                                                                     |
+| 5.  | Substrate Module: **Escrow Engine**    | Implements payment locking/unlocking logic with milestone-based release. Uses Substrate’s balances and contracts pallets.                            |
+| 6.  | Smart Contracts: **Payment Validator** | ink! smart contract that automatically releases funds based on validated completion hashes from Growwr’s API.                                        |
+| 7.  | Integration                            | Initial API endpoint for interaction between Growwr Web2 backend and Substrate node.                                                                 |
+
+**Milestone 2 — On-Chain Identity & Reputation System**
+
+Estimated duration: 1 month
+FTE: 1
+Costs: $6,000 USD
+
+**Objective**
+
+Develop an on-chain identity (DID) and reputation engine to verify and store freelancer credentials, ratings, and work history in a decentralized, tamper-proof format.
+
+| No. | Deliverable                            | Specification                                                                                                                 |
+| --- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1. | License                                | MIT                                                                                                                           |
+| 2. | Documentation                          | Comprehensive README and user guide explaining DID registration, credential verification, and reputation scoring.             |
+| 3. | Testing & Guide                        | Unit and integration tests for identity registration, verification, and retrieval endpoints.                                  |
+| 4. | Docker                                 | Docker container to spin up the reputation system locally with mock Growwr API integration.                                   |
+| 5.  | Substrate Module: **DID & Reputation** | Module to register on-chain identities linked to Growwr user IDs. Uses verifiable credentials and stores performance metrics. |
+| 6.  | Library: **Reputation JS SDK**         | JS library enabling Growwr frontend to fetch and display reputation scores from the Substrate node.                           |
+| 7.  | Integration                            | Connect Growwr’s AI models to auto-score performance (via Gemini + Cursor) and log reputation proofs on-chain.                |
+
+**Milestone 3 — AI-Powered Project Scoring + Polkadot Integration**
+
+Estimated duration: 1 month
+FTE: 2
+Costs: $10,000 USD
+
+**Objective**
+
+Integrate Growwr’s AI engines (Gemini + Cursor) into the blockchain layer to provide AI-verified project scoring and skill matching, then connect the entire system to Polkadot’s relay chain for scalability and cross-chain identity.
+
+| No. | Deliverable           | Specification                                                                                                                                |
+| --- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. | License               | MIT                                                                                                                                          |
+| 2. | Documentation         | Setup guide explaining end-to-end workflow from AI evaluation → Substrate module update → on-chain verification.                             |
+| 3. | Testing & Guide       | End-to-end testing of AI prediction integration and Polkadot relay communication.                                                            |
+| 4. | Docker                | Combined image for AI layer + Substrate node.                                                                                                |
+| 5.  | AI Integration Module | Connects Growwr’s machine learning models for performance prediction to Substrate events.                                                    |
+| 6.  | Cross-Chain Bridge    | Uses Polkadot’s relay chain to connect Growwr’s Substrate parachain to other identity networks for verifiable credentials.                   |
+| 7.  | Article               | Publish a technical post on *“Building Trustless AI-Powered Work Systems on Polkadot”* detailing architecture, achievements, and next steps. |
+
+**Expected Outcomes**
+
+- Fully operational trustless work engine on Substrate
+- Seamless integration of AI-based skill scoring and milestone validation
+- Decentralized identity and reputation tracking system for global freelancers
+- Strengthened Polkadot ecosystem adoption through new users and real work-related transactio
 
 > [!CAUTION]
 > If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
-- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
-
-### Milestone 1 Example — Basic functionality
-
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#documentation) for details. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
-
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-...
-
 
 ## Future Plans
 
-Please include here
+**Long-Term Maintenance & Financing**
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+Growwr’s long-term maintenance and development are structured around a hybrid sustainability model that blends revenue from our Web2 operations with decentralized growth incentives.
+Currently, our Web2 platform already generates steady transaction-based revenue from client-talent escrow fees (20% blended take-rate). With over 19,000 vetted talents, 2,000 businesses, and $1.5M+ processed, this revenue supports ongoing operations and feature development.
+
+To sustain and scale our Web3 modules, we’re financing future development through three pillars:
+
+- Escrow and transaction fees on Polkadot will partially fund long-term maintenance.
+- A developer bounty pool will be established, directing a fraction of transaction fees toward community contributors for bug fixes, security, and upgrades.
+- Licensing and SDK revenue from Growwr’s AI engine and on-chain reputation layer, enabling other platforms to integrate our infrastructure through APIs.
+
+In parallel, Growwr is closing its pre-seed round to cover our current financial burn rate, extend runway, and accelerate growth. This raise will strengthen our developer pipeline, enhance product infrastructure, and increase revenue growth in preparation for our seed stage.
+
+Growwr’s long-term goal is to become the AI-powered trust and identity layer for the global future of work, built securely on Polkadot.
+
+Over the next 3 years, we aim to:
+
+- Expand into enterprise and DAO workforce management, enabling transparent, cross-border collaborations.
+- Launch the Growwr SDK, allowing developers to embed AI-driven performance and milestone validation in any Web3 or traditional application.
+- Progressively decentralize governance, empowering verified users, developers, and partners to shape roadmap decisions and funding priorities.
+
+Drive adoption at scale: onboard 1 million verified freelancers and 10,000 businesses, creating a measurable transaction footprint across Polkadot.
+
+Our vision is to make Growwr the decentralized standard for proof-of-work, proof-of-skill, and proof-of-payment — positioning Polkadot as the infrastructure powering the borderless digital economy of the future.
 
 ## Referral Program (optional) :moneybag:
 
 You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
 
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDC))
+N/A
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+Work Completed So Far
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+Growwr has already developed and deployed a functional Web2 platform, now serving as the foundation for our transition into a Web3-enabled infrastructure.
+Key milestones achieved include:
+
+- 19,000+ vetted African professionals onboarded
+- 2,000+ businesses actively hiring and managing teams
+- $1.5M+ processed in transactions via secure escrow
+- Core product built using Next.js, Java Spring Boot, PostgreSQL, Redis, and WebSocket real-time infrastructure
+- Integrated with Stripe, Paystack, and Brex for local and global payments
+
+We are now extending this infrastructure onto Polkadot/Substrate, incorporating on-chain escrow, identity, and reputation modules to enable trustless collaboration globally.
