@@ -43,7 +43,7 @@ const HomepageHeader = () => {
               key={index}
               className="button button--secondary button--lg"
               to={link.to}
-              style={{ marginLeft: '10px', marginBottom: '5px', ...link.style }}
+              style={{ ...link.style }}
             >
               {link.text}
             </Link>
