@@ -19,7 +19,28 @@
 }
 
 .buttons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 10px;
   align-items: center;
   justify-content: center;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .buttons {
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+
+/* Mobile: max 2 buttons per row */
+@media screen and (max-width: 600px) {
+  .buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: stretch;
+  }
+  .button-container .button {
+    width: 100%;
+    display: block;
+  }
 }
