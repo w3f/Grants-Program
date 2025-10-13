@@ -7,9 +7,9 @@
 > See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
 
 - **Team Name:** AsiaREC Limited
-- **Payment Details:** 12uKg5HuAXxXK53V1TpuRi4gfEpA371xTKvFLKrgz2QgMNV8
-  - **DOT**: For the **DOT** 12uKg5HuAXxXK53V1TpuRi4gfEpA371xTKvFLKrgz2QgMNV8
-  - **Payment**: For the **USDC** 12uKg5HuAXxXK53V1TpuRi4gfEpA371xTKvFLKrgz2QgMNV8 
+- **Payment Details:** 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o
+  - **DOT**: For the **DOT** 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o
+  - **Payment**: For the **USDC** 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):**  3
 
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ We expect the teams to already have a solid idea about your project's expected f
 - AsiaREC has a web2 MVP that we have conducted two pilots on. We can give the team a demo anytime. 
 - Pitch deck: https://docs.google.com/presentation/d/1d9-ouTszOlTf6rAN5wrF9vz9-D7goV4VpjiSG7oBCAI/edit?slide=id.p1#slide=id.p1
 - Architecture of AsiaREC Config 3 China Market Hourly Matching Platform on Energy Web Infra: https://docs.google.com/presentation/u/1/d/1enk7QsmVFh-wXQtUpsL0FqyBBWV7tg37/edit?slide=id.p1#slide=id.p1
-- This pilot will be using Configuration 3 of the Energy Tag Standard and we will tailor it for the China Market (primarily processing data for cross border transfer). This will not be a general purpose regsitry that can be applied to any market, although we will be able to reuse components of what we build here for a broader product. 
+- This pilot will be using Configuration 3 of the Energy Tag Standard and we will tailor it for the China Market (primarily processing data for cross border transfer). This will not be a general purpose regsitry that can be applied to any market, although we will be able to reuse components of what we build here for a broader product.
 
 - Design a database infrastructure and system architecture capable of handling a vast increase in meter data collection, EAC issuance, and hourly transactions. Ensure systems can reliably track and manage EACs and can be transferred between accounts down to the Wh level.
 - Design user interface (and backend) elements and good front user experiences allowing registry users to switch between hourly and monthly EAC viewing and management.
