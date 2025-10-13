@@ -1,4 +1,4 @@
----
+Veterans way of life---
 sidebar_position: 5
 ---
 
