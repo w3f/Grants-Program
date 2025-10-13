@@ -10,15 +10,15 @@
 
 ### Overview
 
-**Tagline:** Circle-Based Finance (CBF) primitives for collaborative DeFi on Polkadot Asset Hub
+**Tagline:** Circle-Based Finance (CBF) primitives for collaborative DeFi on Polkadot
 
 **Description:**
 
-Bastion Protocol introduces Circle-Based Finance, where users form "circles" (social groups) to collectively pool assets, stake together, and participate in auctions. Unlike traditional DeFi that serves only individual users, Bastion leverages social trust + group coordination to enable new financial primitives on Polkadot Asset Hub.
+Bastion Protocol introduces Circle-Based Finance, where users form "circles" (social groups) to collectively pool assets, stake together, and participate in auctions. Unlike traditional DeFi that serves only individual users, Bastion leverages social trust + group coordination to enable new financial primitives on Polkadot.
 
 **Integration with Polkadot:**
 
-We're building a native Substrate pallet (`pallet-circles`) for Polkadot's Asset Hub, making group-based financial coordination available as runtime primitives that any parachain or dApp can integrate. This extends Polkadot's DeFi capabilities with social finance mechanisms at the protocol level.
+We're building a native Substrate pallet (`pallet-circles`) as reusable infrastructure for the Polkadot ecosystem, making group-based financial coordination available as runtime primitives that any parachain can integrate. This grant delivers testnet implementation with comprehensive integration documentation, enabling parachains to add group coordination features to their runtimes.
 
 **Why We're Building This:**
 
@@ -86,12 +86,12 @@ We bridge two extremes:
 - Standardized interfaces enable cross-ecosystem interoperability
 - Similar to how `pallet-assets` enabled an asset management ecosystem
 
-**4. Built for Asset Hub**
+**4. Built for Polkadot Ecosystem**
 
 Unlike standalone chains or generic smart contracts:
 - Native integration with Polkadot Asset Hub for multi-asset support
 - Circle treasuries hold DOT, USDC, USDT, custom assets
-- Cross-parachain compatibility through Asset Hub
+- Cross-parachain compatibility through XCM and Asset Hub
 - Polkadot shared security model
 
 **5. Collective DeFi Operations**
@@ -122,7 +122,7 @@ Not just holding funds together—groups can:
 
 Only solution providing:
 ✅ Native runtime primitives (not smart contracts)  
-✅ Built specifically for Polkadot Asset Hub integration  
+✅ Built specifically for Polkadot ecosystem integration  
 ✅ Composable primitives other developers can leverage  
 ✅ Collective DeFi operations (staking, auctions, lending)  
 ✅ Social trust + blockchain security hybrid model  
@@ -153,18 +153,20 @@ This combination doesn't exist elsewhere in blockchain.
 - Indexing: SubQuery, PostgreSQL, GraphQL
 - Testing: Substrate tests, Jest
 
-**Level 1 Scope:**
+**Grant Scope:**
 - Circle management and member operations
 - Collective deposits and treasury
 - Group staking (mock for demo)
 - Circle auctions
 - Basic governance (proposals, voting)
+- Testnet deployment (Rococo/Westend)
+- Comprehensive integration documentation
 
-**Out of Scope for Level 1:**
-- Lending/borrowing (Level 2)
-- Advanced reputation systems (Level 2)
-- Cross-chain beyond Asset Hub (Level 2)
-- Mainnet deployment or audits
+**Out of Scope:**
+- Lending/borrowing (future grant)
+- Advanced reputation systems (future grant)
+- Mainnet deployment
+- Security audits
 - Tokenomics
 
 ### Ecosystem Fit
@@ -172,7 +174,7 @@ This combination doesn't exist elsewhere in blockchain.
 **Position in Polkadot:**
 
 Bastion provides foundational social finance primitives that complement existing infrastructure:
-- **Asset Hub**: We extend it with group coordination
+- **Asset Hub**: We leverage it for multi-asset support via XCM
 - **DeFi Parachains**: Can integrate our primitives for collective features
 - **DAO Platforms**: We focus on financial coordination; they focus on governance
 - **NFT Marketplaces**: Circle auctions enable group purchasing
@@ -191,6 +193,40 @@ Bastion provides foundational social finance primitives that complement existing
 - DAOs struggle with financial coordination beyond basic multisigs
 - No existing solution provides runtime-level social finance primitives
 
+### Business Model & Sustainability
+
+**Current Grant Focus:**
+
+This grant focuses on building testnet infrastructure and validating the concept with the Polkadot community. All deliverables are technical, with no mainnet deployment or operational costs within this scope.
+
+**Post-MVP Sustainability Strategy:**
+
+After testnet validation and if we pursue mainnet deployment (either standalone or via parachain partnerships), sustainability would come from:
+
+**Revenue Streams:**
+
+1. **Transaction Fees**: Small percentage fee (0.1-0.5%) on circle treasury operations, collective staking, and auction participation
+2. **Premium Features**: Freemium model with basic circles free and advanced features (enhanced governance, analytics, cross-chain operations) on paid tiers
+3. **Enterprise Services**: Integration consulting, custom development, and support contracts for parachain teams
+4. **Protocol Services**: Managed circle infrastructure for organizations
+
+**Development Timeline & Path to Mainnet:**
+
+- **Q1-Q2 2025**: Grant-funded testnet MVP development and deployment
+- **Mid-2026**: Community validation, feedback gathering, and testnet refinement
+- **Late 2026**: Path to mainnet via either:
+  - Integration into existing parachains (preferred approach), OR
+  - External fundraising for standalone parachain deployment if clear demand exists
+
+**Deployment Strategy:**
+
+We prioritize ecosystem integration over standalone operations. If existing parachains adopt `pallet-circles`, this eliminates our need for parachain operational costs while creating broader ecosystem value. Standalone parachain deployment would only be pursued with:
+- Clear demand demonstrated from testnet usage
+- Secured external funding for operational costs
+- Sustainable revenue model validated
+
+This approach ensures responsible financial planning while focusing the grant on delivering quality public goods infrastructure.
+
 ### Alignment with W3F Grants Program Priorities
 
 **User-Centric Innovation**
@@ -204,19 +240,31 @@ Bastion provides foundational social finance primitives that complement existing
 - Participation in parachain auctions pools DOT from multiple users
 - Multi-asset support via Asset Hub strengthens Polkadot's core infrastructure
 
+**Dogfooding & Practical Value**
+- Web3 Foundation can use Bastion for internal treasury management
+- Parity teams can test group coordination for project funding
+- Other parachains can integrate the pallet to add social finance features
+- Testable infrastructure from day one with comprehensive documentation
+
 **Relevant Vertical: Financial Inclusion**
 - Directly serves underbanked populations who currently use informal lending circles
 - Enables transparent cross-border group savings and lending with blockchain security
 - Brings proven traditional finance models (ROSCAs managing billions, credit unions with $2.6T globally) to Web3
 - Focus on practical financial access rather than speculation
 
+**Sustainable Business Model**
+- Clear revenue streams through transaction fees and premium features
+- Path to financial independence within 12-24 months post-mainnet
+- Responsible financial planning with phased approach
+- Multiple sustainability paths (integration services, enterprise features, protocol fees)
+
 **What Bastion Avoids:**
 
 - **Not Generic**: Polkadot-specific Substrate FRAME pallets leveraging Asset Hub, DOT staking, and parachain auction mechanisms—cannot be replicated on other chains without similar runtime-level architecture
 
-- **Not Token-Focused**: Zero token sale or speculative token. Pure utility focus on group coordination primitives. Value comes from enabling new application categories.
-
 - **Not Marketing-Only**: 100% technical deliverables—working pallet, runtime integration, dApp, indexer, comprehensive documentation. No marketing budget or promotional activities.
+
+- **Not Financially Irresponsible**: Clear business model, phased deployment, focus on testnet validation before mainnet commitment
 
 - **Demonstrable Usability**: Working demo with full documentation enables testing from day one. Web3 Foundation can use internally for treasury management. Open-source allows community contributions.
 
@@ -240,11 +288,11 @@ Bastion provides foundational social finance primitives that complement existing
 
 ### Team's experience
 
-**Kunal** has 2+ years of Web3 development with multiple hackathon wins across Solana, Sui, and EVM ecosystems. Lead developer at 29projectslab, he has delivered full-stack dApps integrating complex DeFi protocols. Experience spans frontend development, smart contract integration, protocol design, and blockchain infrastructure.
+**Kunal** is a **Polkadot Fast Grants Program alumni** with 6+ months of active Substrate development experience. He remains an active contributor to the Polkadot community. Beyond Polkadot, he has 2+ years of Web3 development with multiple hackathon wins across Solana, Sui, and EVM ecosystems. As lead developer at 29projectslab, he has delivered full-stack dApps integrating complex DeFi protocols. Experience spans Substrate FRAME pallets, frontend development, protocol design, and blockchain infrastructure.
 
-**Priya** is an experienced Rust and React developer who has contributed to DeFi and NFT projects. Expertise includes secure smart contracts, backend APIs, and blockchain infrastructure. Strong technical knowledge of both frontend and blockchain development.
+**Priya** is an experienced Rust and React developer who has contributed to DeFi and NFT projects. Expertise includes secure smart contract development, backend APIs, and blockchain infrastructure. Strong technical knowledge of both frontend and blockchain development, with particular strength in Rust-based systems.
 
-Together, the team has demonstrated ability to deliver complete Web3 solutions from protocol design through frontend implementation, with particular strength in DeFi primitives and user experience.
+Together, the team combines proven Polkadot ecosystem experience with broader Web3 expertise, demonstrating ability to deliver complete solutions from protocol design through frontend implementation, with particular strength in DeFi primitives and user experience.
 
 ### Team Code Repos
 
@@ -350,26 +398,37 @@ We're ready to begin development upon grant approval with detailed technical spe
 - Video tutorials and example applications
 - Bug fixes and improvements based on usage
 - Presentations at Polkadot events
+- Outreach to parachain teams for integration interest
 
-**Medium-term (6-12 Months) - Level 2 Grant:**
-- Circle-based lending and borrowing with reputation-based credit
+**Medium-term (Mid-2026):**
+- Community validation and feedback gathering on testnet
+- Refinement based on user testing and parachain feedback
+- Documentation improvements
+- Performance optimization
+- Additional example implementations
+
+**Late 2026 - Path to Mainnet:**
+- Circle-based lending and borrowing with reputation-based credit (potential follow-up grant)
 - Advanced reputation system (cross-circle, privacy-preserving)
 - Cross-parachain integration via XCM
 - Enhanced governance (delegation, weighted voting)
 - Production hardening with security audit
+- Mainnet deployment via either parachain integration or standalone chain (pending funding)
 
 **Long-term Vision:**
 - Become standard social finance layer for Polkadot ecosystem
-- Integration with major parachains (Acala, Astar, Parallel)
+- Integration with major parachains (Acala, Astar, Parallel, HydraDX)
 - Enable millions of underbanked individuals to access DeFi through circles
 - New category of financial applications built on Bastion primitives
 
 **Sustainability:**
-- Open-source community building
+- Open-source community building and ecosystem adoption
+- Revenue from transaction fees and premium features (post-mainnet)
+- Integration services and consulting for parachain teams
 - Regular updates for new Substrate versions
-- Follow-up grant applications
-- Partnerships with parachains and dApps
-- Consulting for integration support
+- Follow-up grant applications for advanced features
+- Strategic partnerships with established parachains
+- External fundraising if standalone parachain deployment pursued
 
 ## Additional Information :heavy_plus_sign:
 
@@ -379,13 +438,12 @@ Web3 Foundation website and Polkadot developer documentation.
 
 **Additional Context:**
 
-- This is our first W3F grant application
-- No previous grants or external funding for this project
-- Team commitment: 1.5 FTE total (0.75 FTE each)
+- Team commitment: 1.5 FTE total (0.75 FTE each) with 6+ months Polkadot development experience
 - All deliverables will be open-source (Apache 2.0)
 - Designed as foundational infrastructure for ecosystem use
 - Addresses genuine gap in DeFi by focusing on group coordination primitives
 - Ready to begin development immediately upon approval
+- Testnet deployment for this grant; mainnet path determined by community feedback and funding
 
 **Why Bastion Matters for Polkadot:**
 
