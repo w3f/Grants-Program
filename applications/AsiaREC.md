@@ -1,4 +1,4 @@
-# AsiaREC hourly matching tool on chain
+# AsiaREC - hourly matching tool on chain
 
 > [!NOTE]
 > This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
