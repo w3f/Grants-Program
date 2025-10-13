@@ -1,9 +1,5 @@
 # AsiaREC - hourly matching tool on chain
 
-> [!NOTE]
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
 
 - **Team Name:** AsiaREC Limited
 - **Payment Details:** 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o
@@ -15,10 +11,6 @@
 > *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
-
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide the name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
@@ -95,9 +87,12 @@ N/A
 
 ### Team LinkedIn Profiles (if available)
 
-Jeff Huang: linkedin.com/in/jeffhuangcarbon
-Sam Greenwood: linkedin.com/in/samuelgreenwoodhk
-Qian Wu https://www.linkedin.com/in/wuqian/ 
+Jeff Huang: 
+https://www.linkedin.com/in/jeffhuangcarbon
+Sam Greenwood: 
+https://www.linkedin.com/in/samuelgreenwoodhk
+Qian Wu 
+https://www.linkedin.com/in/wuqian/ 
 
 
 
