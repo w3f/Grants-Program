@@ -1,7 +1,7 @@
 # Team Name  
 **Vumah Labs**
 
-## Payment Details
+## Payment Details: 15mPRCCzYcZbxAGQep4JcRAg551tcYHixf3bm4KBZ7H31bjS
 - **Level:** 2  
 
 ---
@@ -160,7 +160,24 @@ Vumah Labs provides a **trust and data integrity layer** within Polkadot—bridg
 
 **Legal Structure:**  
 - **Entity:** Vumah Labs Limited  
-- **Address:** Ecobank Towers, Muindi Mbingu St, Nairobi  
+- **Address:** Ecobank Towers, Muindi Mbingu St, Nairobi
+
+ ## Team's Experience
+
+The **Vumah Labs** team combines deep technical expertise in **AI**, **blockchain** and **zero-knowledge cryptography** with a strong background in research and innovation.
+
+**Chepkemoi Chepkwony W** — *Founder and Lead Architect*  
+Chepkemoi is a **Computer Scientist** with extensive experience in emerging technologies, having led multiple AI and blockchain research initiatives. Her work bridges **zero-knowledge proof systems** **decentralized trust architectures**, and **applied machine learning**, building on previous developer and advocacy roles within blockchain ecosystems such as **Aleo**. She has also been instrumental in developing **AI models for media trust** and **blockchain-based verification systems** through Vumah Labs.
+
+**Swaleh Maulid Omar** — *AI/ML Engineer and Research Scientist (KIRDI)*  
+Swaleh brings over a decade of experience in **data science**, **computer vision**, and **applied machine learning**. He holds a **PhD in Information Technology** from **Jomo Kenyatta University of Agriculture and Technology (JKUAT)**, with published research in **deep learning** and **EEG signal analysis (LSTM-CNN architectures)**. His prior work includes **AI-driven projects** for public health **IoT-enabled agriculture**, and **big data platforms** for agri-extension services. Swaleh’s expertise ensures scientific rigor in **Kweli’s deepfake detection** and **model training pipelines**.
+
+**Anastacia Cherotich** — *Project Coordinator and Partnerships Lead*  
+Anastacia contributes experience in **governance**, **ESG alignment**, and **stakeholder engagement**, essential for scaling ethical AI solutions and ensuring compliance with **data integrity** and **privacy standards**.
+
+The team is currently expanding to include a **Frontend Developer (React, JS, SDK Integration)** and a **Blockchain Engineer (Smart Contract Development)** to strengthen product development and user experience.  
+Together, the team’s combined backgrounds in **AI research** **blockchain engineering**, and **responsible technology development** position Vumah Labs to deliver a **scientifically grounded** and **technically robust** solution.
+
 
 **Repos:**  
 - [Kweli-2.0](https://github.com/Wilfychep/Kweli-2.0)  
@@ -179,43 +196,85 @@ Now transitioning to Substrate and Polkadot.
 
 ## Development Roadmap 🔩
 
-**Duration:** 4 months  
-**Total Cost:** $30,000  
-**DOT %:** 50%
+### Overview
+**Description:** Development of Vumah Labs MVP: Kweli Verification Engine, Vumah SDK, and RailKit Interoperability Layer (Phase 1)  
+**Total Estimated Duration:** 4 Months  
+**Full-Time Equivalent (FTE):** Milestone 1 – 1.5; Milestone 2 – 2; Milestone 3 – 2  
+**Total Costs:** 30,000 USD  
+**DOT Percentage:** 50%  
+
+---
 
 ### Milestone 1 — Kweli Verification Engine (Core Substrate Integration)
-- Duration: 1.5 months | FTE: 1.5 | Cost: $10,000  
-- Deliverables:  
-  - MIT License  
-  - Inline documentation & setup guides  
-  - Unit tests ≥70% coverage  
-  - `kweli_verification_pallet` implementation  
-  - ZK proof integration  
-  - Flask API gateway  
-  - Docker setup  
-  - Technical article publication  
+
+**Estimated Duration:** 1.5 Months  
+**FTE:** 1.5  
+**Costs:** 11,000 USD  
+
+This milestone establishes the foundation of the Vumah Trust Stack by implementing the **Kweli Verification Engine** as a Substrate pallet and integrating it with an AI-driven proof validation pipeline. It enables on-chain storage of authenticity proofs and communication with the AI backend.
+
+| Number | Deliverable | Specification |
+|:-------|:-------------|:---------------|
+| 0a. | **License** | MIT License |
+| 0b. | **Documentation** | Inline code documentation, README setup guide, Docker setup instructions, and Substrate module configuration documentation. |
+| 0c. | **Testing Guide** | Unit test coverage (≥70%) for the core pallet and API integration. Documentation will describe how to execute the test suite. |
+| 1 | **Substrate Pallet: Kweli Verification Module** | Implementation of `kweli_verification_pallet` that stores media authenticity hashes and zero-knowledge proof attestations on-chain. |
+| 2 | **ZK Proof Integration Engine** | Integration of AI-generated proof data with on-chain verification logic using Substrate’s storage and proof modules. |
+| 3 | **API Gateway for Off-chain Inference** | RESTful API built with Flask for interfacing AI verification results to Substrate module endpoints. |
+| 4 | **Docker Environment** | Dockerfile and Compose configuration for full local deployment of the Kweli Verification Engine. |
+| 5 | **Article** | Publish a technical article on integrating AI verification proofs into a Substrate runtime pallet. |
+
+---
 
 ### Milestone 2 — Vumah SDK (Developer Integration Layer)
-- Duration: 1.5 months | FTE: 2 | Cost: $10,000  
-- Deliverables:  
-  - MIT License  
-  - Inline TypeScript documentation  
-  - Unit tests ≥80% coverage (Jest)  
-  - Vumah SDK (JavaScript)  
-  - Polkadot.js wallet integration  
-  - SDK demo app  
-  - Dockerized test environment  
-  - Developer article  
 
-### Milestone 3 — RailKit Interoperability Layer
-- Duration: 1 month | FTE: 2 | Cost: $10,000  
-- Deliverables:  
-  - MIT License  
-  - Rust + JS docs  
-  - Integration & E2E tests (XCM proof transfer)  
-  - KILT & Frequency integration  
-  - Demo deployment (cross-chain proof exchange)  
-  - Final article  
+**Estimated Duration:** 1.5 Months  
+**FTE:** 2  
+**Costs:** 11,000 USD  
+
+This milestone focuses on the **developer integration layer**, delivering the open-source **Vumah SDK** that allows developers to embed authenticity verification and ZK proof validation directly into their dApps using Polkadot’s APIs.
+
+| Number | Deliverable | Specification |
+|:-------|:-------------|:---------------|
+| 0a. | **License** | MIT License |
+| 0b. | **Documentation** | Inline TypeScript documentation, setup guide for developers, SDK API reference, and integration tutorial. |
+| 0c. | **Testing Guide** | Unit tests covering ≥80% of SDK logic using Jest; includes guide for testing proof generation and Substrate communication. |
+| 1 | **Vumah SDK (JavaScript Library)** | Development of the open-source Vumah SDK to generate and verify ZK proofs, interact with the Kweli pallet, and broadcast transactions to Polkadot AssetHub. |
+| 2 | **Polkadot.js Integration** | Implementation of Polkadot.js APIs for wallet connection, DOT transaction handling, and querying verification proofs. |
+| 3 | **SDK Examples & Demo App** | Sample front-end dApp showing how developers can embed authenticity checks and proof verification using the SDK. |
+| 4 | **Dockerized SDK Environment** | Containerized environment for SDK testing and integration validation. |
+| 5 | **Article** | Publish a developer-focused article on using the Vumah SDK for verifiable media authentication on Polkadot. |
+
+---
+
+### Milestone 3 — RailKit Interoperability Layer (Cross-Parachain Proof Verification)
+
+**Estimated Duration:** 1 Month  
+**FTE:** 2  
+**Costs:** 8,000 USD  
+
+This milestone introduces **RailKit**, the interoperability layer that enables cross-chain verification of authenticity proofs using **XCM**. It connects the Kweli pallet with identity and data parachains (KILT and Frequency) for decentralized validation.
+
+| Number | Deliverable | Specification |
+|:-------|:-------------|:---------------|
+| 0a. | **License** | MIT License |
+| 0b. | **Documentation** | Inline Rust and JS documentation, README setup, and technical guide for RailKit configuration across parachains. |
+| 0c. | **Testing Guide** | Integration and end-to-end test suite verifying proof transfer and validation across parachains using XCM. |
+| 0d. | **Article** | Publish a final article summarizing RailKit’s cross-chain verification architecture and its integration with KILT & Frequency. |
+| 1 | **RailKit Cross-Parachain Module** | Develop the RailKit layer enabling cross-chain proof transfer and verification between Kweli pallet and external parachains via XCM. |
+| 2 | **KILT Integration** | Implement decentralized identity linkage for proof ownership using KILT credential schemas and DID support. |
+| 3 | **Frequency Integration** | Enable proof broadcasting via Frequency for decentralized content attestations and reputation propagation. |
+| 4 | **Demo Deployment** | Full demonstration deployment connecting two parachains, showing interoperable proof exchange and validation workflow. |
+
+---
+
+### Summary
+
+At the completion of this 4-month development cycle, the **Vumah Trust Stack MVP** will include:
+- A functional **Kweli Verification Engine** pallet for Substrate.
+- An open-source **Vumah SDK** for developer integration.
+- A working **RailKit interoperability layer** connecting multiple parachains for verifiable proof exchange.  
+This MVP establishes a foundation for trust infrastructure that enhances media integrity, digital identity assurance, and cross-chain data verification on Polkadot.
 
 ---
 
@@ -235,4 +294,15 @@ Now transitioning to Substrate and Polkadot.
 - No prior external funding received.  
 
 ---
+## Additional Information
+
+The project builds on prior work conducted by **Vumah Labs** an emerging technology lab based in **Nairobi, Kenya**, focused on **AI**, **blockchain** and **digital trust** solutions.  
+The team has already developed a **working prototype** demonstrating **AI-based deepfake detection** and **zero-knowledge verification** using **Starknet**.
+
+We have not yet received external financial contributions for this project; however, we have **self-funded early development** through internal resources and **technical support from community networks** within AI and blockchain research ecosystems.
+
+Previously, the team participated in open innovation challenges and accelerator programs aimed at leveraging AI and blockchain for **transparency and social impact** including **UNICEF’s “Unlocking the Power of AI and Blockchain for Data Integrity and Trust”** open call.  
+These experiences have strengthened our technical foundation and informed our approach to **ethical, decentralized media verification** across Africa.
+
+Our work positions Vumah Labs as a regional leader in applying emerging technologies to enhance **digital authenticity**, **data integrity**, and **trust infrastructure** for users and developers alike.
 
