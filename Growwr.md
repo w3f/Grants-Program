@@ -8,7 +8,7 @@
 - **Team Name:** Growwr Inc.
 - **Payment Details:**
   - **DOT**: For the **DOT** compensation, DOT: 16AzsJCQCWsinV1RyBd3H4XRNE5XWUCWL9GfCZSt6u5vum8S
-  - **Payment**: (BTC) 15TKWqweL1W6tSik8xi4QmSfX1sdSWXrZb
+  - **Payment**:  ---
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** Level 2
 
 > [!IMPORTANT]
@@ -311,9 +311,9 @@ We’ll assume:
 
 Total Duration: 3 months
 
-FTE: ~3.5 full-time engineers + 1 product manager
+FTE: ~3 full-time engineers + 1 product manager across a 3 month build cycle
 
-Total Costs: $26,000 (50% vested in DOT)
+Total Costs: $26,000
 
 Focus: Building Growwr’s Substrate-powered escrow & reputation engine integrated into the existing Growwr ecosystem.
 
@@ -322,15 +322,14 @@ Focus: Building Growwr’s Substrate-powered escrow & reputation engine integrat
 | Item                           | Description                 |
 | ------------------------------ | --------------------------- |
 | **Total Estimated Duration**   | 3 months                    |
-| **Full-Time Equivalent (FTE)** | 2.5                         |
+| **Full-Time Equivalent (FTE)** | 4                           |
 | **Total Costs**                | $26,000 USD                 |
-| **DOT % (vested)**             | 50% (equivalent to $13,000) |
 | **Deliverables**               | 3 core milestones           |
 
 **Milestone 1 — Substrate Smart Escrow Module**
 
 Estimated duration: 1 month
-FTE: 2.5
+FTE: 3
 Costs: $10,000 USD
 
 **Objective**
@@ -350,7 +349,7 @@ Develop a Substrate-based trustless escrow engine that securely holds payments b
 **Milestone 2 — On-Chain Identity & Reputation System**
 
 Estimated duration: 1 month
-FTE: 1
+FTE: 2
 Costs: $6,000 USD
 
 **Objective**
@@ -370,7 +369,7 @@ Develop an on-chain identity (DID) and reputation engine to verify and store fre
 **Milestone 3 — AI-Powered Project Scoring + Polkadot Integration**
 
 Estimated duration: 1 month
-FTE: 2
+FTE: 3
 Costs: $10,000 USD
 
 **Objective**
@@ -399,6 +398,9 @@ Integrate Growwr’s AI engines (Gemini + Cursor) into the blockchain layer to p
 
 ### Overview
 
+Escrow Module: Reviewers can create, release, and refund escrow via Asset Hub using the demo UI or API endpoint; all transactions are verifiable on-chain.
+
+Identity (PoP) Module: Reviewers can register a test identity, link it to a Growwr user, and verify attestation references.
 
 ## Future Plans
 
@@ -426,6 +428,22 @@ Over the next 3 years, we aim to:
 Drive adoption at scale: onboard 1 million verified freelancers and 10,000 businesses, creating a measurable transaction footprint across Polkadot.
 
 Our vision is to make Growwr the decentralized standard for proof-of-work, proof-of-skill, and proof-of-payment — positioning Polkadot as the infrastructure powering the borderless digital economy of the future.
+
+**Code Repos & Licensing:**
+
+We’ll share two open-source modules:
+
+- growwr-escrow-module (MIT License)
+
+- growwr-identity-adapter (Apache 2.0 License)
+
+Each will include documentation, examples, and Docker scripts for local testing.
+
+Public repos will be available at:
+
+https://github.com/growwrhq/growwr-escrow-module
+
+https://github.com/growwrhq/growwr-identity-adapter
 
 ## Referral Program (optional) :moneybag:
 
