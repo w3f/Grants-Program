@@ -1,18 +1,10 @@
 # Growwr: Building the Future of Work on Polkadot
 
-> [!NOTE]
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
-
 - **Team Name:** Growwr Inc.
 - **Payment Details:**
   - **DOT**: For the **DOT** compensation, DOT: 16AzsJCQCWsinV1RyBd3H4XRNE5XWUCWL9GfCZSt6u5vum8S
   - **Payment**:  ---
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** Level 2
-
-> [!IMPORTANT]
-> *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
@@ -70,7 +62,8 @@ Key interfaces include:
 - Product Demo: https://growwr.docsend.com/view/vabmpt9hjxerpppc/d/ne2iiusuqqpaj23k 
 - Pitch Deck: https://growwr.docsend.com/view/ixaq66mzknrpx5ji 
 - Product Roadmap: https://growwr.docsend.com/view/vabmpt9hjxerpppc/d/rttfdy7d7ix3ctge 
-- Technology Stack: https://growwr.docsend.com/view/vabmpt9hjxerpppc/d/kyrw5v9nx3iambym 
+- Technology Stack: https://growwr.docsend.com/view/vabmpt9hjxerpppc/d/kyrw5v9nx3iambym
+- Performance Dashboard: https://infogram.com/growwr-public-analytics-dashboard-1h0n25ow3lw7l4p
 
 **Data Models / API Specifications**
 
@@ -102,8 +95,6 @@ Growwr has already proven traction in Web2 and is now transitioning to Web3 infr
 - Users across 13 countries, top markets include USA, Germany, South Africa, and Nigeria
 - 0% payment failure rate
 
-**Live Analytics Dashboards:** https://infogram.com/growwr-public-analytics-dashboard-1h0n25ow3lw7l4p 
-
 **Milestones & Accomplishments**
 
 Despite receiving only $6,000 in grant funding to date, we’ve achieved significant recognition and validation:
@@ -121,40 +112,6 @@ Despite receiving only $6,000 in grant funding to date, we’ve achieved signifi
 - Shortlisted: Startups Award at Moonshot
 
 These milestones highlight not just validation from African ecosystems but also recognition at global startup platforms.
-
-**Press coverage** (TechCrunch Startup Battlefield feature, pitch competition recognitions).
-
-- GET Accelerated Cohort 3 Awards N55m Equity‑free Funding to Startups (THISDAYLIVE, Jan 10, 2025)
-Growwr won one of five N10m equity‑free grants awarded in GET Accelerated’s third cohort.
-Link: https://www.thisdaylive.com/index.php/2025/01/10/get-accelerated-cohort-3-awards-n55m-equity-free-funding-to-startups/
-- 8 African startups make TechCrunch Startup Battlefield (TechPoint Africa, Sep 12, 2024)
-Listed among eight African startups selected for TechCrunch Startup Battlefield 200 at Disrupt 2024.
-Link: https://techpoint.africa/insight/8-african-startups-make-techcrunch-startup-battlefield/
-- Nigerian Startup, Growwr, is building ‘Upwork for Africa’ (TechCabal, Feb 3, 2025)
-Featured in TechCabal’s flagship news section, highlighting Growwr’s mission, traction, and impact metrics.
-Link: https://techcabal.com/2025/02/03/nigerian-startup-growwr-is-building-upwork-for-africa/
-- 11 Startups Selected to Pitch at 13th Africa Fintech Summit in Washington D.C. (Africa Fintech Summit Pulse, Apr 2, 2025)
-Announced as one of 11 innovative fintech startups shortlisted for the AFTS New Venture Pitch Competition.
-Link: https://www.linkedin.com/pulse/11-startups-selected-pitch-13th-africa-fintech-56ogf/
-- How Nigeria’s Growwr helps businesses hire, manage and pay vetted African tech talent
-Link: https://disruptafrica.com/2025/10/09/how-nigerias-growwr-helps-businesses-hire-manage-and-pay-vetted-african-tech-talent/ 
-- Africa Ignite Pitch Competition 2024 Finalist (Informa Connect Limited, Oct 2, 2024)
-Named a finalist in the Africa Ignite Pitch Competition 2024, earning the chance to advance to the Startup World Cup Grand Finale.
-Link: https://africatechfestival.com/africaignite/pitch-competition/
-- AFRISE Challenge 2025 Cohort Announcement (Opportunity Desk, Mar 4, 2025)
-Announced as part of the selected cohort for the AFRISE Challenge 2025 accelerator program.
-Link: https://www.linkedin.com/posts/hindsight-ventures_afrise-cohort-2025-activity-7315999540644397056-LCvg/
-- Founder Institute Lagos Produces 11 New Technology Companies (Founder Institute, Feb 28, 2024)
-Recognized Growwr as one of 11 alumni from the Lagos cohort of the Founder Institute’s pre‑seed accelerator.
-Link: https://fi.co/insight/founder-institute-lagos-produces-11-new-technology-companies
-- Selected for TechCrunch Disrupt 2024 Startup Battlefield (TechCrunch Disrupt 2024, Oct 28–30, 2024)
-Included in the official Startup Battlefield roster at TechCrunch Disrupt 2024 in San Francisco.
-Link: https://techcrunch.com/startup-battlefield/company/growwr/
-- Growwr | TechCrunch (TechCrunch, 2025)
-Featured company profile on TechCrunch’s Startup Battlefield page, showcasing Growwr’s core product and founders.
-Link: https://techcrunch.com/startup-battlefield/company/?status=all&pg=1&event=2725895&location=577037496
-- Verto Awards 2025 
-Link: https://cityvoice.ng/2025/09/26/verto-announces-shortlisted-participants-for-verto-awards-2025/ 
 
 **Scope Clarifications — What Growwr Will Not Implement**
 
@@ -229,9 +186,6 @@ Growwr bridges both worlds, combining AI vetting + decentralized infrastructure,
 
 ## Team :busts_in_silhouette:
 
-> [!IMPORTANT]
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
-
 ### Team members
 
 - Obinna Umeh - Co-founder & CEO
@@ -284,26 +238,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-Growwr Web3 is not live yet. It will be open source.
-Github repo: https://github.com/Growwr
-
-Researches that helps:
-
-- [How Much Can Freelancers Make in 2025? - Upwork](https://www.upwork.com/resources/how-much-do-freelancers-make)
-- [What is the gig economy and what's the deal for gig workers? | World Economic Forum](https://www.weforum.org/stories/2024/11/what-gig-economy-workers/)
-- [Nigeria's Gig-economy: The Rise of Independent Workers](https://www.verivafrica.com/insights/nigerias-gig-economy-the-rise-of-independent-workers)
-- [Freelancing in Africa: A Growing Trend On the Continent](https://africa.com/freelancing-africa-growing-trend-continent/)
-
-Just this week, I have connected with 2 Nigerians who suffered same issue:
-
-- [Read Ridwan’s story](https://www.linkedin.com/posts/ridwan-akinfenwa_techjourney-software-engineering-activity-7369804640403488768-gJ5x?utm_source=share&utm_medium=member_desktop&rcm=ACoAADm9NOUB9nZSMXq6VmGJgcLXlWxbuEH3RxA)
-- [Read the comments here to see more stories](https://x.com/EOEboh/status/1965144928113344569)
-
-Supporting research articles:
-
-- [9 of 10 Africans unqualified for Jobs apply to - Research - P.M. News](https://pmnewsnigeria.com/2018/12/13/9-of-10-africans-unqualified-for-jobs-apply-to-research/)
-- [The 'wicked problems’ of talent management](https://www.edgecumbe.co.uk/wp-content/uploads/Wicked-Problems-FINAL-07-11-22.pdf)
-- [New Report Finds 59% of Freelancers Are Owed $50,000 or More by Late Paying Clients](https://www.globenewswire.com/news-release/2022/02/17/2387268/0/en/New-Report-Finds-59-of-Freelancers-Are-Owed-50-000-or-More-by-Late-Paying-Clients.html)
+Github: https://github.com/Growwr
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -393,9 +328,6 @@ Integrate Growwr’s AI engines (Gemini + Cursor) into the blockchain layer to p
 - Decentralized identity and reputation tracking system for global freelancers
 - Strengthened Polkadot ecosystem adoption through new users and real work-related transactio
 
-> [!CAUTION]
-> If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
-
 ### Overview
 
 Escrow Module: Reviewers can create, release, and refund escrow via Asset Hub using the demo UI or API endpoint; all transactions are verifiable on-chain.
@@ -467,3 +399,20 @@ Key milestones achieved include:
 - Integrated with Stripe, Paystack, and Brex for local and global payments
 
 We are now extending this infrastructure onto Polkadot/Substrate, incorporating on-chain escrow, identity, and reputation modules to enable trustless collaboration globally.
+Researches that helps:
+
+- [How Much Can Freelancers Make in 2025? - Upwork](https://www.upwork.com/resources/how-much-do-freelancers-make)
+- [What is the gig economy and what's the deal for gig workers? | World Economic Forum](https://www.weforum.org/stories/2024/11/what-gig-economy-workers/)
+- [Nigeria's Gig-economy: The Rise of Independent Workers](https://www.verivafrica.com/insights/nigerias-gig-economy-the-rise-of-independent-workers)
+- [Freelancing in Africa: A Growing Trend On the Continent](https://africa.com/freelancing-africa-growing-trend-continent/)
+
+Just this week, I have connected with 2 Nigerians who suffered same issue:
+
+- [Read Ridwan’s story](https://www.linkedin.com/posts/ridwan-akinfenwa_techjourney-software-engineering-activity-7369804640403488768-gJ5x?utm_source=share&utm_medium=member_desktop&rcm=ACoAADm9NOUB9nZSMXq6VmGJgcLXlWxbuEH3RxA)
+- [Read the comments here to see more stories](https://x.com/EOEboh/status/1965144928113344569)
+
+Supporting research articles:
+
+- [9 of 10 Africans unqualified for Jobs apply to - Research - P.M. News](https://pmnewsnigeria.com/2018/12/13/9-of-10-africans-unqualified-for-jobs-apply-to-research/)
+- [The 'wicked problems’ of talent management](https://www.edgecumbe.co.uk/wp-content/uploads/Wicked-Problems-FINAL-07-11-22.pdf)
+- [New Report Finds 59% of Freelancers Are Owed $50,000 or More by Late Paying Clients](https://www.globenewswire.com/news-release/2022/02/17/2387268/0/en/New-Report-Finds-59-of-Freelancers-Are-Owed-50-000-or-More-by-Late-Paying-Clients.html)
