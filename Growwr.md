@@ -441,9 +441,9 @@ Each will include documentation, examples, and Docker scripts for local testing.
 
 Public repos will be available at:
 
-https://github.com/growwrhq/growwr-escrow-module
+- https://github.com/Growwr/growwr-escrow-module
 
-https://github.com/growwrhq/growwr-identity-adapter
+- https://github.com/Growwr/growwr-identity-adapter
 
 ## Referral Program (optional) :moneybag:
 
