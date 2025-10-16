@@ -10,7 +10,7 @@ For an overview of funding initiatives, ecosystem support and implementation par
 Some funding sources might be more and some less suitable for your project throughout its various stages. We encourage you to explore alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
 :::note
-If you are unsure about what's the best next step for you and your project, consider signing up for the [Polkadot Alpha Program](https://polkadot.network/development/alpha/).
+If you are unsure about what's the best next step for you and your project, consider applying for [Ecosystem Funding Office Hours](./office-hours.md).
 :::
 
 ### Treasury
@@ -32,16 +32,14 @@ The best way to find out about upcoming hackathons is by following Polkadot on t
 Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
 - [Acala Ecosystem Program](https://acala.network/ecosystem-program)
-- [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program)
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
 - [Darwinia Grants Program](https://github.com/ringecosystem/collaboration)
 - [Decentralized JAM](https://jam.web3.foundation/) 
-- [HydraDX Grants and Bounties](https://immunefi.com/bug-bounty/hydration/information/)
+- [HydraDX Grants and Bounties](https://docs.hydration.net/community/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [Moondance Labs Ecosystem Funding Program](https://www.moondancelabs.com/ecosystem-grants-w3f)
 - [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program)
 - [Polkadot Open Source Developer Grants Bounty](https://github.com/PolkadotOpenSourceGrants)
-- [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
 - [Polkadot Assurance Legion](https://polkadotassurance.com/)

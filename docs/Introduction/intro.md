@@ -28,6 +28,74 @@ Additionally, it must fulfill the following requirements:
 - Lastly, we **do not fund** projects that actively encourage gambling, illicit trade, money laundering, or criminal activities in general.
 - The beneficiaries of the grant must successfully go through a **KYC/KYB check** during the application phase in order to be eligible.
 
+### What We're Looking For
+
+We're excited to support projects that align with our vision for a thriving Web3 ecosystem. Here's what makes us particularly enthusiastic about an application:
+
+**💡 User-Centric Innovation**
+- Projects that focus on real user needs and can serve a broad user base
+- Solutions that address practical challenges and improve user experiences
+
+**🔄 Dogfooding & Practical Value**  
+- Projects that can be actively used and tested by Web3 Foundation, Parity, your team, and the broader ecosystem
+- Tools and applications that solve problems we face ourselves
+
+**🪙 DOT Token Alignment**
+- Projects that create tangible demand and usage for the DOT token
+- Solutions that strengthen the Polkadot ecosystem's economic foundation
+
+**💰 Sustainable Business Models**
+- Teams demonstrating strong financial discipline and clear planning
+- Projects with a realistic path to financial independence within 12-24 months
+- Evidence of thoughtful resource management and business strategy
+
+**⚖️ Regulatory Awareness**
+- Projects that understand and comply with regulatory requirements in their target markets
+- Teams that proactively consider compliance and legal considerations
+
+**🌟 Exciting Verticals**
+
+We're particularly interested in (but not limited to) these areas:
+- **Cross-border payments & stablecoins**, especially serving Latin America and Southeast Asia
+- **AI applications** like content authentication and verification systems
+- **DePIN/IoT solutions** with concrete, marketable products
+- **Proof-of-personhood** implementations and identity solutions
+- **Web2 to Web3 bridges** - bringing familiar concepts (think HackMD, Spotify-like experiences) to Polkadot
+
+### What Doesn't Fit Our Program
+
+To help you determine if our program is the right fit, here are types of projects we typically don't fund:
+
+**❌ Generic Approaches**
+- Projects based on generic talking points from other ecosystems without Polkadot-specific innovation
+- Applications that could apply to any blockchain without meaningful differentiation
+
+**🪙 Token-Only Focus**
+- Projects focused primarily on token sales rather than providing genuine utility
+- Applications where the main value proposition is speculative trading
+
+**📈 Marketing Without Substance**
+- Pure marketing efforts without concrete technical deliverables
+- Projects aimed at "saving" or promoting other projects through marketing alone
+- Generic promotional activities without defined use cases
+
+**💸 Financial Sustainability Concerns**
+- Teams without clear financial planning or path to sustainability
+- Projects that don't demonstrate responsible resource management
+- Applications lacking realistic business models or revenue streams
+
+**🔒 Limited Usability**
+- Products that we and the community cannot meaningfully test or use
+- Solutions that exist in isolation without practical application
+
+**🌐 Misaligned Objectives**
+- Projects that don't create meaningful demand or usage for DOT tokens
+- Solutions that could easily exist on any blockchain without leveraging Polkadot's unique features
+
+**⚖️ Regulatory Blindness**
+- Projects that ignore or are unaware of regulatory requirements in their target markets
+- Teams that haven't considered compliance implications for their solutions
+
 In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](../Support%20Docs/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product.
 
 Please also heed our [Announcement Guidelines](../Support%20Docs/announcement-guidelines.md) for grant-related communications.

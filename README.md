@@ -60,6 +60,74 @@ Finally, we take licensing and the right of all teams in and outside the ecosyst
 
 We also try to enforce our [code of conduct](CODE_OF_CONDUCT.md) and, based on this, may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
 
+### What We're Looking For
+
+We're excited to support projects that align with our vision for a thriving Web3 ecosystem. Here's what makes us particularly enthusiastic about an application:
+
+**💡 User-Centric Innovation**
+- Projects that focus on real user needs and can serve a broad user base
+- Solutions that address practical challenges and improve user experiences
+
+**🔄 Dogfooding & Practical Value**  
+- Projects that can be actively used and tested by Web3 Foundation, Parity, your team, and the broader ecosystem
+- Tools and applications that solve problems we face ourselves
+
+**🪙 DOT Token Alignment**
+- Projects that create tangible demand and usage for the DOT token
+- Solutions that strengthen the Polkadot ecosystem's economic foundation
+
+**💰 Sustainable Business Models**
+- Teams demonstrating strong financial discipline and clear planning
+- Projects with a realistic path to financial independence within 12-24 months
+- Evidence of thoughtful resource management and business strategy
+
+**⚖️ Regulatory Awareness**
+- Projects that understand and comply with regulatory requirements in their target markets
+- Teams that proactively consider compliance and legal considerations
+
+**🌟 Exciting Verticals**
+
+We're particularly interested in (but not limited to) these areas:
+- **Cross-border payments & stablecoins**, especially serving Latin America and Southeast Asia
+- **AI applications** like content authentication and verification systems
+- **DePIN/IoT solutions** with concrete, marketable products
+- **Proof-of-personhood** implementations and identity solutions
+- **Web2 to Web3 bridges** - bringing familiar concepts (think HackMD, Spotify-like experiences) to Polkadot
+
+### What Doesn't Fit Our Program
+
+To help you determine if our program is the right fit, here are types of projects we typically don't fund:
+
+**❌ Generic Approaches**
+- Projects based on generic talking points from other ecosystems without Polkadot-specific innovation
+- Applications that could apply to any blockchain without meaningful differentiation
+
+**🪙 Token-Only Focus**
+- Projects focused primarily on token sales rather than providing genuine utility
+- Applications where the main value proposition is speculative trading
+
+**📈 Marketing Without Substance**
+- Pure marketing efforts without concrete technical deliverables
+- Projects aimed at "saving" or promoting other projects through marketing alone
+- Generic promotional activities without defined use cases
+
+**💸 Financial Sustainability Concerns**
+- Teams without clear financial planning or path to sustainability
+- Projects that don't demonstrate responsible resource management
+- Applications lacking realistic business models or revenue streams
+
+**🔒 Limited Usability**
+- Products that we and the community cannot meaningfully test or use
+- Solutions that exist in isolation without practical application
+
+**🌐 Misaligned Objectives**
+- Projects that don't create meaningful demand or usage for DOT tokens
+- Solutions that could easily exist on any blockchain without leveraging Polkadot's unique features
+
+**⚖️ Regulatory Blindness**
+- Projects that ignore or are unaware of regulatory requirements in their target markets
+- Teams that haven't considered compliance implications for their solutions
+
 ### Project Ideas
 
 An overview of existing projects in the Web 3.0 Technology Stack, along with broad project ideas we would potentially be interested in funding, can be found [here](https://wiki.polkadot.network/docs/build-open-source), as well as a list of previously accepted applications [here](https://github.com/w3f/Grants-Program/blob/master/applications/index.md).
@@ -86,11 +154,12 @@ In cases where a niche expert opinion is desirable, one of the committee members
 
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
+- [Radhakrishna Dasari](https://github.com/DrW3RK)
+- [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Bill Laboon](https://github.com/laboon)
 - [Keegan Quigley](https://github.com/keeganquigley)
-- [Raul Romanutti](https://github.com/rrtti)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
@@ -170,6 +239,12 @@ The W3F Grants Program offers different grant levels to help you best, depending
 - Accepted grant applications can be amended at any time. However, this _necessitates a reevaluation by the committee_ and the same number of approvals as an application (according to the [levels](#level_slider-levels)). If your application has been accepted and, during development, you find that your project significantly deviates from the original specification, please open a new pull request that modifies the existing application. This also applies in case of significant delays.
 - If your _delivery schedule_ significantly changes, please also open a pull request with an updated timeline.
 - If your deliveries are significantly delayed, and we cannot get a hold of you, we will terminate the grant (3 approvals required, regardless of level. If a member of the committee creates the termination PR, only two more approvals are required).
+
+## KYB/KYC
+
+NOTICE: 
+In connection with your participation in an ecosystem initiative organised by Web 3.0 Technologies Foundation, you agree to the processing of your personal data for identity verification, in order to prevent fraud, ensure eligibility, and maintain the integrity of our processes. This processing is based on legitimate interests under the EU General Data 
+Protection Regulation and on justified organisational needs under the Swiss Federal Act on Data Protection. Please follow these links to complete the [KYC (Know Your Customer)](https://in.sumsub.com/websdk/p/uni_6qX6Ju3vlfrMQbbG) or [KYB (Know Your Business)](https://in.sumsub.com/websdk/p/uni_6eVGNmoJ83HVovnN) process. Your information will be handled in line with the [Web3 Foundation Privacy and Cookies Policy](https://web3.foundation/privacy-and-cookies/) and the [Sumsub Privacy Notice](https://sumsub.com/privacy-notice-service/).
 
 ## :mailbox_with_mail: Suggest a Project
 
@@ -294,11 +369,9 @@ The best way to find out about upcoming hackathons is by following Polkadot on v
 Below is a list of other grant and bounty programs in the Polkadot/Substrate ecosystem:
 
 - [Acala Ecosystem Program](https://acala.network/ecosystem-program)
-- [Aleph Zero Funding Program](https://alephzero.org/ecosystem-funding-program)
 - [Avail Uncharted Grants](https://github.com/availproject/avail-uncharted/blob/main/grants/grants.md) 
-- [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Decentralized JAM](https://jam.web3.foundation/) 
-- [HydraDX Grants and Bounties](https://docs.hydradx.io/spending_fw/)
+- [HydraDX Grants and Bounties](https://docs.hydration.net/community/spending_fw/)
 - [ink!ubator](https://use.ink/ubator/)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [Moondance Labs Ecosystem Funding Program](https://www.moondancelabs.com/ecosystem-grants-w3f)
@@ -306,8 +379,7 @@ Below is a list of other grant and bounty programs in the Polkadot/Substrate eco
 - [Pendulum / Amplitude Grant Programs](https://pendulumchain.org/ecosystem-grant)
 - [Polkadot Assurance Legion](https://polkadotassurance.com/)
 - [Polkadot Open Source Developer Grants](https://github.com/PolkadotOpenSourceGrants/apply)
-- [Polkadot Pioneers Prize](https://pioneersprize.polkadot.network/)
-- [SubQuery Developer Guild](https://github.com/subquery/developer-guild)
+- [RingDAO Collaboration Hub](https://github.com/ringecosystem/collaboration)
 
 ## :information_source: License<!-- omit in toc -->
 
