@@ -197,7 +197,7 @@ Stack exchange profiles of some of our team members:
 | **0b.** | Documentation |Examples and guide on how to include hypothetical or non-existent accounts in the simulation. |
 | **0c.** | Testing and Testing Guide | Unit tests covering edge cases with invalid or off-chain accounts. |
 | **0d.** | Docker | Docker image updated to support all new input types. |
-| 1. | Hypothetical Account Simulation	 | Updated version of the existing election script with support for accurate simulation of on-chain validator election logic using Phragmén and other supported algorithms. |
+| 1. | Hypothetical Account Simulation	 | Extend simulation engine to support voters or candidates that do not exist on-chain or lack bonded amounts. |
 
 ### Milestone 3 API Interface
 
@@ -213,7 +213,7 @@ Stack exchange profiles of some of our team members:
 | **0c.** | Testing and Testing Guide | Integration tests for all API endpoints and a guide to test via API calls. |
 | **0d.** | Docker | Dockerfile to run the RESTful API server exposing the simulation endpoints. |
 | **0e.** | Article | A blog post or technical article describing how the election simulation works, how to use the tool via API, and its applications for nominators and validator programs. |
-| 1. | Core Election Engine	 | Extend simulation engine to support voters or candidates that do not exist on-chain or lack bonded amounts. |
+| 1. | API functionality		 | Implement API functionality to set parameters and expose results. |
 
 
 ...
