@@ -19,11 +19,12 @@ Empowering Africa’s workforce with AI and blockchain—building a transparent,
 Growwr is an AI-powered work platform designed to connect verified African professionals with global businesses while ensuring trust, payment security, and transparency through blockchain technology. Today, 74% of freelancers across Africa experience payment delays of up to three months, and 16% never receive payment at all. Beyond that, millions remain excluded from financial systems—lacking access to credit, insurance, or even device financing.
 
 Growwr solves these systemic challenges by merging AI and Web3. Our platform uses AI engines for talent verification, chemistry-fit matching, and performance intelligence, while integrating Polkadot’s blockchain to ensure trustless payments, on-chain work credentials, and transparent work histories. Every transaction and verified contribution will be recorded on Polkadot, creating an immutable professional identity that eliminates fraud, bias, and opacity in the hiring process.
-By deploying on Polkadot, Growwr leverages its scalable multi-chain architecture, interoperability, and low-cost transactions to build a high-throughput infrastructure for millions of micro-transactions between businesses and workers. Our vision is to make Polkadot the core trust layer for the future of work across emerging markets—powering verified identity, instant cross-border payments, and decentralized professional reputation systems.
+By integrating with Polkadot, Growwr benefits from interoperability, scalability, and low-cost transactions, enabling fast, secure micro-payments across borders. Our goal is to make Polkadot the trust layer for the future of work in emerging markets—powering verified identity, instant payments, and transparent reputation systems.
 
 **Why We’re Building This:**
 Our journey is deeply personal. In 2021, Growwr’s founder lost 17 international contracts simply because of nationality—a reflection of the systemic bias and payment insecurity facing over 300 million skilled professionals across emerging markets. That experience inspired the creation of Growwr: a platform that restores trust, opportunity, and inclusion using AI and blockchain.
-Polkadot’s ecosystem offers the ideal foundation to scale this vision. With its Substrate framework and interoperable design, we can build a future-ready infrastructure that connects verified talent to global opportunities—securely, transparently, and without borders.
+
+Polkadot’s ecosystem provides the ideal foundation to scale this vision. Its interoperable and secure design allows Growwr to connect verified talent to global opportunities—ensuring trust, transparency, and borderless collaboration.
 
 ### Project Details
 
@@ -65,13 +66,13 @@ Key interfaces include:
 - Smart Contract Layer to define project milestones, dispute logic, and escrow release
 - Reputation Engine to aggregate work outcomes into on-chain performance index
 
-All blockchain interactions are managed using the Polkadot.js API and secured via Substrate-based pallets for escrow and identity.
+All blockchain interactions are managed using the Polkadot.js API, integrating Polkadot’s identity and escrow standards for trustless verification and payments.
 
 **Technology Stack**
 
 - Frontend: Next.js, React, Tailwind CSS
 - Backend: Java (Spring Boot), Node.js
-- Blockchain: Polkadot/Substrate, Ink! Smart Contracts, Polkadot.js
+- Blockchain: Polkadot, Ink! Smart Contracts, Polkadot.js
 - AI: Python, Google Gemini API, Cursor
 - Database: PostgreSQL, Redis, IPFS (for proof storage)
 - Infrastructure: Google Cloud, Digital Ocean
@@ -119,7 +120,7 @@ These milestones highlight not just validation from African ecosystems but also 
 
 Growwr is building a Web2-to-Web3 bridge for global work infrastructure — integrating Polkadot’s scalable, interoperable network to power trustless payments, verified digital identity, and on-chain reputation for African and global talent.
 
-We’re not creating a new parachain; instead, we’re leveraging existing Polkadot primitives such as Asset Hub, and Proof of Personhood (PoP) for the following purposes:
+We’re leveraging existing Polkadot primitives such as Asset Hub, and Proof of Personhood (PoP) for the following purposes:
 
 - Cross-border payments: Integrating USDC on Asset Hub for instant, low-cost, and borderless transactions between freelancers and clients.
 
@@ -140,12 +141,13 @@ In summary, Growwr strengthens the Polkadot ecosystem by:
 
 **Who is your target audience?**
 
-Our project serves two main user groups within the Polkadot ecosystem:
+Growwr serves two primary user groups within the Polkadot ecosystem:
 
-- Web3 companies and DAOs — who need verifiable, bias-free access to global talent (developers, designers, marketers, and community managers).
-- Web3 professionals — who need on-chain proof-of-skill, verified reputation, and trustless payouts.
+- Web3 Companies and DAOs – who require verifiable, bias-free access to global talent across roles such as developers, designers, marketers, and community managers.
 
-Indirectly, our work also supports parachain developers, dapp creators, and wallet builders, as Growwr can integrate their APIs for payments, identity, or analytics — expanding real-world utility across the ecosystem.
+- Web3 Professionals – who need on-chain proof-of-skill, verified reputation, and trustless payouts to build transparent work histories and financial inclusion.
+
+Indirectly, Growwr also supports developers, dApp creators, and wallet providers by integrating their APIs for payments, identity, and analytics, helping expand real-world utility and interoperability across the Polkadot ecosystem.
 
 **What needs does your project meet?**
 
