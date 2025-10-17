@@ -32,20 +32,14 @@ We’re creating a decentralized layer that ensures freelancers and businesses a
 
 The final platform will consist of three main layers:
 
-**1. AI Work Intelligence Layer**
- Powered by Growwr’s proprietary AI engines:
-- **TalentVerify™** – verifies identity, credentials, and skills using cross-referenced digital fingerprints, behavioral data, and social proofs.
-- **SmartMatch™** – uses AI to match verified talent with projects using performance, culture-fit, and skill data.
-- **PerformanceIQ™** – analyzes on-chain records and project outcomes to predict reliability and work quality.
+**1. AI Work Intelligence Layer:**
+Uses Growwr’s AI systems (TalentVerify™, SmartMatch™, and PerformanceIQ™) to verify talent, match them with projects, and predict reliability.
 
-**2. Blockchain Trust Layer (Polkadot/Substrate Integration)**
-- **Decentralized Identity (DID)**: On-chain verified profiles for talent and businesses.
-- **Smart Escrow Contracts:** Automate milestones, delivery, and secure payments using Polkadot stable assets.
-- **Immutable Work Ledger**: Stores verified work transactions and performance metrics.
-- **Reputation Protocol**: Builds transparent reputation scores based on verified contributions.
+**2. Blockchain Trust Layer:**
+Integrates Polkadot for decentralized identity (DID), smart escrow payments using stable assets, and on-chain reputation tracking.
 
-**3. Application Layer (Web + API)**
-- Unified web platform and API suite for businesses and freelancers to hire, collaborate, and transact seamlessly — entirely on-chain.
+**3. Application Layer:**
+A seamless web and API interface enabling businesses and freelancers to hire, collaborate, and transact securely — fully powered by Polkadot.
 
 
 **Mockups / UI Components**
@@ -123,14 +117,25 @@ These milestones highlight not just validation from African ecosystems but also 
 
 **Where and how does your project fit into the Polkadot/Substrate/Kusama ecosystem?**
 
-Growwr fits into the Polkadot ecosystem as a decentralized, AI-powered work infrastructure layer that brings trustless talent verification, on-chain identity, and borderless payments to the future of work. We leverage Polkadot’s multi-chain architecture to build interoperable components that serve both the talent and enterprise sides of hiring.
+Growwr is building a Web2-to-Web3 bridge for global work infrastructure — integrating Polkadot’s scalable, interoperable network to power trustless payments, verified digital identity, and on-chain reputation for African and global talent.
 
-Our integration leverages:
+We’re not creating a new parachain; instead, we’re leveraging existing Polkadot primitives such as Asset Hub, and Proof of Personhood (PoP) for the following purposes:
 
-- Substrate for building a decentralized Talent Identity Chain (TIC) — a registry of verified professionals, work history, and credentials.
-- Polkadot parachains for cross-chain payment processing and smart contract settlement between clients and freelancers.
-- Decentralized storage via IPFS for immutable portfolio records.
-- Ink! smart contracts for escrow-backed milestone payments and automated performance releases.
+- Cross-border payments: Integrating USDC on Asset Hub for instant, low-cost, and borderless transactions between freelancers and clients.
+
+- Decentralized identity: Using Proof of Personhood to issue on-chain DIDs linked to verified Growwr profiles, enabling transparent work histories.
+
+This integration transforms Growwr from a centralized Web2 platform into a trustless, interoperable dApp, contributing directly to Polkadot’s ecosystem growth. By embedding Polkadot into our live product, we bring over 50,000 existing users (talent and businesses) into the DOT economy — increasing real-world DOT and stable asset utility.
+
+In summary, Growwr strengthens the Polkadot ecosystem by:
+
+- Driving user adoption (50k+ users and growing),
+
+- Increasing stablecoin and DOT-based transaction volume,
+
+- Demonstrating a high-impact real-world use case (cross-border work + identity verification), and
+
+- Serving as a reusable integration model for other Web2 platforms entering Web3.
 
 
 **Who is your target audience?**
@@ -156,7 +161,7 @@ We are effectively building the decentralized LinkedIn + Upwork for Web3, powere
 
 Our team validated these problems through:
 - First-hand experience: Our founders lost contracts due to regional bias and payment failure — a reality faced by millions.
-- User data: 17,000+ talent applications and 3,000+ businesses onboarded in our Web2 MVP show deep demand for verifiable, borderless hiring.
+- User data: 19,000+ talent applications and 2,000+ businesses onboarded in our Web2 MVP show deep demand for verifiable, borderless hiring.
 - Market research: 70% of freelancers in emerging markets experience delayed or missing payments; 54% of employers report poor hiring accuracy (Source: World Bank & IFC 2023).
 - Community signals: Web3 DAOs and remote-first teams repeatedly cite the lack of trusted work reputation and compliance tools as barriers to scaling decentralized hiring.
 
@@ -248,7 +253,7 @@ Total Duration: 3 months
 
 FTE: ~3 full-time engineers + 1 product manager across a 3 month build cycle
 
-Total Costs: $26,000
+Total Costs: $22,000
 
 Focus: Building Growwr’s Substrate-powered escrow & reputation engine integrated into the existing Growwr ecosystem.
 
@@ -258,26 +263,26 @@ Focus: Building Growwr’s Substrate-powered escrow & reputation engine integrat
 | ------------------------------ | --------------------------- |
 | **Total Estimated Duration**   | 3 months                    |
 | **Full-Time Equivalent (FTE)** | 4                           |
-| **Total Costs**                | $26,000 USD                 |
+| **Total Costs**                | $22,000 USD                 |
 | **Deliverables**               | 3 core milestones           |
 
-**Milestone 1 — Substrate Smart Escrow Module**
+**Milestone 1 — Cross-Border Payment Integration (DOT and Stable Assets)**
 
 Estimated duration: 1 month
 FTE: 3
-Costs: $10,000 USD
+Costs: $11,000 USD
 
 **Objective**
 
-Develop a Substrate-based trustless escrow engine that securely holds payments between clients and freelancers until predefined project milestones are achieved. This will serve as the foundational blockchain layer for Growwr’s payment architecture.
+Enable transparent cross-border payments in DOT or stable assets through Growwr.
 
 | No. | Deliverable                            | Specification                                                                                                                                        |
 | --- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. | License                                | MIT                                                                                                                                                  |
-| 2. | Documentation                          | Inline Rust documentation for Substrate modules + basic user setup guide showing how to deploy a local node and execute a sample escrow transaction. |
-| 3. | Testing & Guide                        | Unit tests covering escrow initiation, milestone validation, and payment release; 90%+ test coverage.                                                |
-| 4. | Docker                                 | Dockerfile for launching the node and running all tests locally.                                                                                     |
-| 5.  | Substrate Module: **Escrow Engine**    | Implements payment locking/unlocking logic with milestone-based release. Uses Substrate’s balances and contracts pallets.                            |
+| 2. | Documentation                          | Inline Rust documentation for basic user setup guide showing how to deploy a local node and execute a sample escrow transaction. |
+| 3. | Testing & Guide                        | Unit tests covering payment; 90%+ test coverage.                                                |
+| 4. | Asset Hub Integration                  | Integrate Asset Hub assets (DOT + stable assets) for escrow funding and settlement.                                                                                   |
+| 5.  | Payment Flow Setup    | Build payment logic for deposits and withdrawals using DOT or supported stablecoins.                         |
 | 6.  | Smart Contracts: **Payment Validator** | ink! smart contract that automatically releases funds based on validated completion hashes from Growwr’s API.                                        |
 | 7.  | Integration                            | Initial API endpoint for interaction between Growwr Web2 backend and Substrate node.                                                                 |
 
