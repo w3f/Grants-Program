@@ -255,18 +255,9 @@ FTE: ~3 full-time engineers + 1 product manager across a 3 month build cycle
 
 Total Costs: $22,000
 
-Focus: Building Growwr’s Substrate-powered escrow & reputation engine integrated into the existing Growwr ecosystem.
-
 **Overview**
 
-| Item                           | Description                 |
-| ------------------------------ | --------------------------- |
-| **Total Estimated Duration**   | 3 months                    |
-| **Full-Time Equivalent (FTE)** | 4                           |
-| **Total Costs**                | $22,000 USD                 |
-| **Deliverables**               | 3 core milestones           |
-
-**Milestone 1 — Cross-Border Payment Integration (DOT and Stable Assets)**
+**Milestone 1 — Cross-Border Payment Integration**
 
 Estimated duration: 1 month
 FTE: 3
@@ -274,19 +265,19 @@ Costs: $11,000 USD
 
 **Objective**
 
-Enable transparent cross-border payments in DOT or stable assets through Growwr.
+Enable seamless cross-border payments using Polkadot’s Asset Hub and supported stable assets (e.g., USDC/USDT), integrated into Growwr’s escrow system.
 
-| No. | Deliverable                            | Specification                                                                                                                                        |
-| --- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. | License                                | MIT                                                                                                                                                  |
-| 2. | Documentation                          | Inline Rust documentation for basic user setup guide showing how to deploy a local node and execute a sample escrow transaction. |
-| 3. | Testing & Guide                        | Unit tests covering payment; 90%+ test coverage.                                                |
-| 4. | Asset Hub Integration                  | Integrate Asset Hub assets (DOT + stable assets) for escrow funding and settlement.                                                                                   |
-| 5.  | Payment Flow Setup    | Build payment logic for deposits and withdrawals using DOT or supported stablecoins.                         |
-| 6.  | Smart Contracts: **Payment Validator** | ink! smart contract that automatically releases funds based on validated completion hashes from Growwr’s API.                                        |
-| 7.  | Integration                            | Initial API endpoint for interaction between Growwr Web2 backend and Substrate node.                                                                 |
+| Number | Deliverable                | Specification                                                                                      |
+| :----- | :------------------------- | :------------------------------------------------------------------------------------------------- |
+| 0a.    | License                    | MIT                                                                                         |
+| 0b.    | Documentation              | Inline technical documentation explaining escrow and payment workflows.                            |
+| 0c.    | Testing Guide              | Comprehensive test guide for deposit, release, and refund functions using Asset Hub assets.        |
+| 1.     | Asset Hub Integration      | Integrate Asset Hub stable assets (DOT + USDC/USDT equivalents) for escrow funding and settlement. |
+| 2.     | Escrow Contract Connection | Connect existing open-source escrow contract (ink! based) for secure project payments.             |
+| 3.     | Payment Flow Logic         | Implement DOT-based and stablecoin-based transaction flows between clients and talent.             |
+| 4.     | Demo Transaction           | Complete 3 verified cross-border test transactions on Westend.                                     |
 
-**Milestone 2 — On-Chain Identity & Reputation System**
+**Milestone 2 — Web2-to-Web3 Connection**
 
 Estimated duration: 1 month
 FTE: 2
@@ -294,50 +285,45 @@ Costs: $6,000 USD
 
 **Objective**
 
-Develop an on-chain identity (DID) and reputation engine to verify and store freelancer credentials, ratings, and work history in a decentralized, tamper-proof format.
+Connect Growwr’s existing Web2 infrastructure to Polkadot using the Polkadot.js API for user identity, payments, and verification.
 
-| No. | Deliverable                            | Specification                                                                                                                 |
-| --- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 1. | License                                | MIT                                                                                                                           |
-| 2. | Documentation                          | Comprehensive README and user guide explaining DID registration, credential verification, and reputation scoring.             |
-| 3. | Testing & Guide                        | Unit and integration tests for identity registration, verification, and retrieval endpoints.                                  |
-| 4. | Docker                                 | Docker container to spin up the reputation system locally with mock Growwr API integration.                                   |
-| 5.  | Substrate Module: **DID & Reputation** | Module to register on-chain identities linked to Growwr user IDs. Uses verifiable credentials and stores performance metrics. |
-| 6.  | Library: **Reputation JS SDK**         | JS library enabling Growwr frontend to fetch and display reputation scores from the Substrate node.                           |
-| 7.  | Integration                            | Connect Growwr’s AI models to auto-score performance (via Gemini + Cursor) and log reputation proofs on-chain.                |
+| Number | Deliverable             | Specification                                                                             |
+| :----- | :---------------------- | :---------------------------------------------------------------------------------------- |
+| 0a.    | License                 | MIT                                                                                |
+| 0b.    | Documentation           | Guide detailing integration between Growwr backend and Polkadot.js API.                   |
+| 0c.    | Testing Guide           | Include steps for testing DID creation, wallet connection, and API calls.                 |
+| 1.     | Polkadot.js Integration | Integrate wallet connection and transaction signing for escrow and identity operations.   |
+| 2.     | DID Integration         | Implement decentralized identity linking to user Polkadot address. |
+| 3.     | API Connection Layer    | Build a lightweight API bridge connecting Growwr’s backend to Polkadot blockchain calls.  |
+| 4.     | Web Interface Update    | Enable end-users to trigger on-chain interactions directly from Growwr.co dashboard.     |
 
-**Milestone 3 — AI-Powered Project Scoring + Polkadot Integration**
+
+**Milestone 3 — Production Deployment + Public Demo**
 
 Estimated duration: 1 month
 FTE: 3
-Costs: $10,000 USD
+Costs: $5,000 USD
 
 **Objective**
 
-Integrate Growwr’s AI engines (Gemini + Cursor) into the blockchain layer to provide AI-verified project scoring and skill matching, then connect the entire system to Polkadot’s relay chain for scalability and cross-chain identity.
+Integrate Growwr’s AI engines (Gemini + Cursor) into the blockchain layer and deploy full Polkadot integration (payments, identity, verification) into Growwr’s live platform and showcase a working demo.
 
-| No. | Deliverable           | Specification                                                                                                                                |
-| --- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. | License               | MIT                                                                                                                                          |
-| 2. | Documentation         | Setup guide explaining end-to-end workflow from AI evaluation → Substrate module update → on-chain verification.                             |
-| 3. | Testing & Guide       | End-to-end testing of AI prediction integration and Polkadot relay communication.                                                            |
-| 4. | Docker                | Combined image for AI layer + Substrate node.                                                                                                |
-| 5.  | AI Integration Module | Connects Growwr’s machine learning models for performance prediction to Substrate events.                                                    |
-| 6.  | Cross-Chain Bridge    | Uses Polkadot’s relay chain to connect Growwr’s Substrate parachain to other identity networks for verifiable credentials.                   |
-| 7.  | Article               | Publish a technical post on *“Building Trustless AI-Powered Work Systems on Polkadot”* detailing architecture, achievements, and next steps. |
+| Number | Deliverable        | Specification                                                                   |
+| :----- | :----------------- | :------------------------------------------------------------------------------ |
+| 0a.    | License            | MIT                                                                             |
+| 0b.    | Documentation      | Publish end-to-end implementation documentation and user guide.                 |
+| 0c.    | Testing Guide      | Include mainnet test scenarios and validation checklists.                       |
+| 1.     | Mainnet Deployment | Deploy escrow, payment, and DID integration on Growwr.co production.           |
+| 2.     | Public Demo        | Launch live demo showcasing cross-border payment and identity flow on Polkadot. |
+| 3.     | User Migration     | Onboard 50,000+ users to Growwr’s Polkadot-integrated infrastructure.           |
+| 4.     | Report             | Provide transaction data, analytics, and verification of DOT and asset usage.   |
 
-**Expected Outcomes**
-
-- Fully operational trustless work engine on Substrate
-- Seamless integration of AI-based skill scoring and milestone validation
-- Decentralized identity and reputation tracking system for global freelancers
-- Strengthened Polkadot ecosystem adoption through new users and real work-related transactio
 
 ### Overview
 
-Escrow Module: Reviewers can create, release, and refund escrow via Asset Hub using the demo UI or API endpoint; all transactions are verifiable on-chain.
+- Reviewers can create, release, and refund escrow via Asset Hub using the demo UI or API endpoint; all transactions are verifiable on-chain.
 
-Identity (PoP) Module: Reviewers can register a test identity, link it to a Growwr user, and verify attestation references.
+- Reviewers can register a test identity, link it to a Growwr user, and verify attestation references.
 
 ## Future Plans
 
