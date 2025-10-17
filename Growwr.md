@@ -3,7 +3,6 @@
 - **Team Name:** Growwr Inc.
 - **Payment Details:**
   - **DOT**: For the **DOT** compensation, DOT: 16AzsJCQCWsinV1RyBd3H4XRNE5XWUCWL9GfCZSt6u5vum8S
-  - **Payment**:  ---
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** Level 2
 
 ## Project Overview :page_facing_up:
