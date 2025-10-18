@@ -1,3 +1,7 @@
+---
+level: 2
+---
+
 # The Social Mask - Privacy-Preserving Journalist Identity on Substrate
 
 - **Team Name:** The Social Mask Project
@@ -70,31 +74,54 @@ As journalists ourselves from Mexico, we've witnessed colleagues murdered for in
 - Legal defense services for journalists
 - Physical security or relocation assistance
 
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
-
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+**Position in the Ecosystem:**
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
+The Social Mask fits into Polkadot's identity and governance vertical. We're building journalism-specific infrastructure that extends Substrate's native capabilities for real-world impact. Our parachain will be one of the first use cases demonstrating how Polkadot's cross-chain architecture can protect human rights defenders.
+
+**Target Audience:**
+
+- **Primary**: Investigative journalists in Mexico, Russia, Hong Kong, Turkey, and other countries with press freedom restrictions
+- **Secondary**: Human rights organizations, press freedom NGOs, independent media outlets
+- **Tertiary**: Other parachains requiring verifiable credentials (e.g., voting systems, whistleblower platforms)
+- **Technical**: Substrate developers interested in identity and privacy pallets
+
+**Needs Addressed:**
+
+1. **Identity Protection**: Traditional press credentials are death sentences in authoritarian regimes
+2. **Credential Verification**: Publishers need to verify journalist authenticity without compromising anonymity
+3. **Censorship Resistance**: Government server seizures and domain blocking silence critical journalism
+4. **Cross-platform Interoperability**: Credentials should work across multiple platforms and parachains
+
+**Need Identification:**
+
+- **Committee to Protect Journalists Database**: [1,200+ journalists killed since 2000](https://cpj.org/data/killed/)
+- **UNESCO Report**: [Press Freedom & Safety of Journalists](https://en.unesco.org/themes/safety-journalists)
+- **Article 19 Research**: [Digital Security for Journalists](https://www.article19.org/data/files/digital_security_for_journalists.pdf)
+- **Reporters Without Borders**: 2024 World Press Freedom Index shows 70% of countries have "problematic" or worse press freedom
+- **Our User Research**: Interviews with 30+ journalists in Mexico, Russia, and Hong Kong revealed need for anonymous yet verifiable credentials
+
+**Similar Projects in Polkadot:**
+
+- **KILT Protocol**: Provides decentralized identifiers, but not journalism-specific. We'll integrate with KILT for DID infrastructure while adding journalistic credential workflows.
+- **Litentry**: Focuses on identity aggregation across chains. Our project is complementary—we provide the journalism credential layer that could be aggregated by Litentry.
+- **Subsocial**: Decentralized social network on Substrate, but not privacy-focused for high-risk users.
+
+**Our Differentiation:**
+
+- **Journalism-specific pallets** tailored to press freedom workflows
+- **Zero-knowledge credentials** that prove journalistic accreditation without revealing identity
+- **Threat model designed for authoritarian regimes** (not just censorship resistance but physical safety)
+- **Integration with existing press freedom organizations** for credential issuance
+
+**Similar Projects in Other Ecosystems:**
+
+- **Ceramic Network (Ethereum)**: Decentralized identity protocol, but lacks Polkadot's cross-chain capabilities
+- **Lens Protocol (Polygon)**: Social media with portable identity, but not designed for high-risk journalism
+- **None** specifically address journalist protection with zero-knowledge credentials
 
 ## Team :busts_in_silhouette:
-
-> [!IMPORTANT]
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
-
 ### Team members
 
 - **Oswaldo Navarro Hernández** - CEO & Legal Lead
@@ -191,12 +218,7 @@ We are in the early research and design phase. We have:
 - **Estimated duration:** 6 weeks
 - **FTE:** 2
 - **Costs:** 9,000 USD (7,000 USD in DOT + 2,000 USD in USDC)
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#license) for details. |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#documentation) for details. |
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
