@@ -1,4 +1,5 @@
 ---
+project_name: "The Social Mask - Privacy-Preserving Journalist Identity on Substrate"
 level: 2
 ---
 
@@ -377,3 +378,4 @@ If successful, we anticipate:
 **Contact for Questions:**
 
 We are happy to provide additional technical details, discuss integration strategies with existing Polkadot projects, or arrange calls with our team and partner organizations (Committee to Protect Journalists, Reporters Without Borders). Please feel free to reach out via the contact information provided above.
+
