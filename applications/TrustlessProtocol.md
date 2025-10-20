@@ -158,14 +158,6 @@ An initial version developed in Rust for Ethereum includes:
 The Polkadot version will refactor this into a Substrate-compatible
 module with a proof verifier and node registry system.
 
-### 
-
-### 
-
-### 
-
-### 
-
 ### **Core Architecture**
 
 ![Trustless Protocol Architecture](https://drive.google.com/uc?export=view&id=1QhS1_5n9yNElrK5bHujhMLntTavkvJkF)
@@ -284,85 +276,42 @@ Related project:
 
 ### **Milestone 1: Methodology, Infrastructure, and Environment Setup**
 
--   **Estimated Duration**: 2 weeks
+**Duration:** 2 weeks | **FTE:** 1 | **Cost:** USD 4,000
 
--   **FTE**: 1
-
--   **Costs**: USD 4,000
-
-  ----------------------------------------------------------------------------
-  **No**   **Deliverable**   **Specification**
-  -------- ----------------- -------------------------------------------------
-  0a       License           MIT
-
-  0b       Documentation     High-level architecture documentation and ZK
-                             methodology whitepaper
-
-  0c       Testing Guide     Initial testing plan for proof generation and DKG
-                             simulations
-
-  0d       Docker            Local testing environment for proof module
-
-  1        Infrastructure    Create Substrate node skeleton for Trustless
-           Setup             Module
-
-  2        Benchmark         Define proof generation benchmarks and
-           Definition        performance metrics
-
-  3        Experiment Setup  Setup plan for trustless node simulation
-           Plan              environment
-  ----------------------------------------------------------------------------
+| No | Deliverable | Specification |
+|----|-------------|---------------|
+| 0a | License | MIT |
+| 0b | Documentation | High-level architecture documentation and ZK methodology whitepaper |
+| 0c | Testing Guide | Initial testing plan for proof generation and DKG simulations |
+| 0d | Docker | Local testing environment for proof module |
+| 1 | Infrastructure Setup | Create Substrate node skeleton for Trustless Module |
+| 2 | Benchmark Definition | Define proof generation benchmarks and performance metrics |
+| 3 | Experiment Setup Plan | Setup plan for trustless node simulation environment |
 
 ### **Milestone 2: Implementation Phase**
 
--   **Estimated Duration**: 3 weeks
+**Duration:** 3 weeks | **FTE:** 1 | **Cost:** USD 4,000
 
--   **FTE**: 1
-
--   **Costs**: USD 4,000
-
-  -----------------------------------------------------------------------------
-  **No**   **Deliverable**   **Specification**
-  -------- ----------------- --------------------------------------------------
-  0a       Documentation     Developer guide for ZK module and proof validator
-
-  0b       Testing Guide     Unit tests for ZK proof validation logic
-
-  0c       Docker            Containerized Substrate node with working proof
-                             validator
-
-  1        Trustless Module  Implement proof verification and DKG process in
-                             Substrate
-
-  2        Proof RPC         JSON-RPC endpoint for proof submission
-
-  3        Integration Test  Local testnet verification of ZK-proof submission
-  -----------------------------------------------------------------------------
+| No | Deliverable | Specification |
+|----|-------------|---------------|
+| 0a | Documentation | Developer guide for ZK module and proof validator |
+| 0b | Testing Guide | Unit tests for ZK proof validation logic |
+| 0c | Docker | Containerized Substrate node with working proof validator |
+| 1 | Trustless Module | Implement proof verification and DKG process in Substrate |
+| 2 | Proof RPC | JSON-RPC endpoint for proof submission |
+| 3 | Integration Test | Local testnet verification of ZK-proof submission |
 
 ### **Milestone 3: Trustless Node Development**
 
--   **Estimated Duration**: 3 weeks
+**Duration:** 3 weeks | **FTE:** 1 | **Cost:** USD 2,000
 
--   **FTE**: 1
-
--   **Costs**: USD 2,000
-
-  -----------------------------------------------------------------------------
-  **No**   **Deliverable**   **Specification**
-  -------- ----------------- --------------------------------------------------
-  0a       Article           Publish article explaining trustless node
-                             architecture
-
-  0b       Testing Guide     Integration tests for multi-node DKG
-
-  1        Node Registry     On-chain registry system for participating
-                             trustless nodes
-
-  2        Off-Chain Worker  Implement proof validation off-chain worker
-
-  3        P2P Node          Minimal prototype allowing external users to join
-           Prototype         as trustless nodes
-  -----------------------------------------------------------------------------
+| No | Deliverable | Specification |
+|----|-------------|---------------|
+| 0a | Article | Publish article explaining trustless node architecture |
+| 0b | Testing Guide | Integration tests for multi-node DKG |
+| 1 | Node Registry | On-chain registry system for participating trustless nodes |
+| 2 | Off-Chain Worker | Implement proof validation off-chain worker |
+| 3 | P2P Node Prototype | Minimal prototype allowing external users to join as trustless nodes |
 
 ## **Future Plans**
 
