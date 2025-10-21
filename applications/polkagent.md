@@ -139,6 +139,15 @@
 
 I have been an active builder in the Polkadot ecosystem for years and developed [Subalfred](https://github.com/hack-ink/subalfred), a previous W3F-funded project. Subalfred is a developer-oriented **toolbox for Substrate**, offering a collection of practical CLI utilities such as account encoding/decoding, storage key helpers, and other “small but useful” commands. It was built for developers and received positive feedback for simplifying day-to-day technical work.
 
+Part of the motivation for starting this project came from my reflection on the [discussion here](https://github.com/w3f/Grants-Program/pull/2373#issuecomment-2316583336).
+After delivering Subalfred, I kept using it myself and saw how stable and useful it had become, but also realized an important limitation: **being a CLI tool naturally limits adoption**.
+Most users prefer to open a simple webpage or interact through a chatbot instead of installing a command-line program.
+Even though Subalfred can compute hashes or query chain data easily, it still feels inaccessible to many.
+
+That feedback made me rethink how such developer tools could reach a broader audience.
+Polkagent is a direct response — a next step that keeps the reliability and precision of Subalfred’s utilities but adds **an AI-friendly, natural-language layer**.
+Users and agents can now “ask” rather than “type”, and the tool can later evolve into web or conversational forms without losing its Substrate foundation.
+
 With **Polkagent**, I want to take that same experience further — this time not just for developers but for **all Polkadot users**. The idea is to bring the convenience of Subalfred’s tooling into an **AI-driven, natural-language experience**, where users can interact with the blockchain simply by asking questions instead of running technical commands.
 
 In the past few years, I’ve observed, both as a long-time Substrate developer and as a moderator on Substrate Stack Exchange, that **the ecosystem has lost momentum**. Many teams have left Polkadot, and new users find it very hard to get started. The technology remains powerful, but the **entry barrier is high** — you need to understand runtimes, metadata, storage layouts, and upgrade cycles before you can do anything meaningful.
@@ -211,7 +220,7 @@ Personal. (no legal structure entry)
 ### Overview
 
 - **Total Estimated Duration:** ~1 month
-- **Full‑Time Equivalent (FTE):** ~3.5
+- **Full‑Time Equivalent (FTE):** ~2.5
 - **Total Costs:** **30,000 USD**
 - **DOT %:** **50%** (vested DOT), remaining **50%** in **USDC (Polkadot AssetHub)**
 
