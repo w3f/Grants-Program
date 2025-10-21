@@ -14,7 +14,7 @@
 
 ### Overview
 
-- **Tag line (AI focus):** *Turn Substrate metadata into a few **AI‑ready macro tools** and a multi‑turn **Planner**, so agents and humans can query chain data safely in natural language.*
+- **Tagline (AI focus):** *Turn Substrate metadata into a few **AI‑ready macro tools** and a multi‑turn **Planner**, so agents and humans can query chain data safely in natural language.*
 
 - **Brief description:**
   Polkagent exposes a **small, stable macro‑tool surface** via a Rust CLI + HTTP gateway, plus an **AI Planner** for multi‑turn task solving. Instead of thousands of fine‑grained endpoints, we provide four high‑level tools designed for **LLM/agent integration** and manual CLI use:
@@ -137,6 +137,23 @@
 - **Needs met:** Smaller integration surface for LLMs; schema‑enforced safety; **multi‑turn Planner** to resolve ambiguity; reproducibility across upgrades.
 - **Similar projects & difference:** Subalfred and SDKs are developer‑centric; Polkagent exposes **macro tools with a single audited execution gate and a built‑in Planner** optimized for NL/AI flows.
 
+I have been an active builder in the Polkadot ecosystem for years and developed [Subalfred](https://github.com/hack-ink/subalfred), a previous W3F-funded project. Subalfred is a developer-oriented **toolbox for Substrate**, offering a collection of practical CLI utilities such as account encoding/decoding, storage key helpers, and other “small but useful” commands. It was built for developers and received positive feedback for simplifying day-to-day technical work.
+
+With **Polkagent**, I want to take that same experience further — this time not just for developers but for **all Polkadot users**. The idea is to bring the convenience of Subalfred’s tooling into an **AI-driven, natural-language experience**, where users can interact with the blockchain simply by asking questions instead of running technical commands.
+
+In the past few years, I’ve observed, both as a long-time Substrate developer and as a moderator on Substrate Stack Exchange, that **the ecosystem has lost momentum**. Many teams have left Polkadot, and new users find it very hard to get started. The technology remains powerful, but the **entry barrier is high** — you need to understand runtimes, metadata, storage layouts, and upgrade cycles before you can do anything meaningful.
+
+**Polkagent directly addresses this pain.** It lowers the barrier by letting people use the same capabilities in plain language. Traditional command-line tools or the Polkadot.js/apps interface require technical knowledge and a lot of clicking around. With Polkagent, users can simply ask:
+
+- “What storage prefixes exist on chain X?”
+- “Which pallet might this hash belong to?”
+- “What is my current usable balance?”
+
+These are tasks that normally require reading code or running multiple queries.
+Later versions will also integrate data from **indexers, Subscan, Polkassembly, Subsquare**, and similar sources, allowing users to perform what previously required several pages and queries with just **one sentence**. **For example: “Where did the last 100 DOT in my account come from?”** (This complex query becomes feasible after indexer integration.)
+
+This is the kind of **AI-powered innovation** the ecosystem needs: turning complex developer-level operations into a conversational, user-friendly experience. It will make Polkadot more approachable for newcomers, more efficient for builders, and ultimately help keep users and projects inside the ecosystem by making interaction simple and accessible again.
+
 ---
 
 ## Team :busts_in_silhouette:
@@ -149,7 +166,7 @@
 
 - **Contact Name:** Xavier Lau
 - **Contact Email:** [x@hack.ink](mailto:x@hack.ink)
-- **Website:** [https://github.com/hack-ink](https://github.com/hack-ink)
+- **Website:** [https://github.com/aurexav](https://github.com/aurexav)
 
 ### Legal Structure
 
@@ -214,7 +231,7 @@ Personal. (no legal structure entry)
 |      1. | Registry loader               | Load IR (`bundle.json`, `tools_skeleton.jsonl`), generate `params_brief/returns_brief/examples/x-typetag`. **DoD:** `polkagent registry inspect` prints counts + sample brief. |
 |      2. | `registry.search`             | BM25 search over Substrate tools. **DoD:** `curl /registry/search -d '{"query":"balance 15xxx","k":5}'` returns `query.system.account` with brief & example.                   |
 |      3. | `registry.describe`           | Return **full JSON‑Schema** (+ `$defs`) + examples. **DoD:** `curl /registry/describe -d '{"tool_name":"query.system.account"}'` shows merged `$defs`.                         |
-|      4. | `graph.hint` (substrate‑only) | Alias/typetag‑based edges (e.g., SS58). **DoD:** `curl /graph/hint` over a whitelist returns edges & aliases.                                                                  |
+|      4. | `graph.hint`  | Alias/typetag‑based edges (e.g., SS58). **DoD:** `curl /graph/hint` over a whitelist returns edges & aliases.                                                                  |
 
 ### Milestone 2 — Substrate Execution Pipeline (Read‑Only)
 
@@ -228,7 +245,7 @@ Personal. (no legal structure entry)
 | **0b.** | Documentation               | Storage‑key construction (`twox128`, `blake2_128_concat`), SS58 validation, RPC usage, dynamic decoding walkthrough.                                                                                                                          |
 | **0c.** | Testing and Testing Guide   | Unit and integration tests cover key derivation, RPC mocking, and failure cases; guide explains running `cargo test` plus CLI smoke tests against a local node.                                                                               |
 | **0d.** | Docker                      | Dockerfile builds binaries, provisions dependencies, and runs the test suite with sample RPC configuration.                                                                                                                                   |
-|      5. | `tool.execute` (substrate backend) | Single gate → `state_getStorage` → **dynamic SCALE decode** via `scale-info`/`scale-value`. **DoD:** `curl /validate_and_execute -d '{"tool_name":"query.system.account","args":{"accountId":"<SS58>"}}'` returns decoded fields and `nonce`. |
+|      5. | `tool.execute`  | Single gate → `state_getStorage` → **dynamic SCALE decode** via `scale-info`/`scale-value`. **DoD:** `curl /validate_and_execute -d '{"tool_name":"query.system.account","args":{"accountId":"<SS58>"}}'` returns decoded fields and `nonce`. |
 |      6. | Result meta                 | Attach `{specVersion, metadataHash, rpcUsed}` to success responses.                                                                                                                                                                           |
 |      7. | Error typing                | Structured errors: `schema`, `exec` (`RpcError`, `DecodeError`, `NotFound`), `bad_request`; consistent HTTP codes & bodies.                                                                                                                   |
 
