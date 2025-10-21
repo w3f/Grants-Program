@@ -275,20 +275,22 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 
 ## Development Roadmap :nut_and_bolt:
 
-### Overview
+# Overview
 
-- **Total Estimated Duration:** 21 weeks (around 5 months, maybe a bit longer if we hit blockers)
-- **Full-Time Equivalent (FTE):** 1 FTE
-- **Total Costs:** 25,000 USD
-- **DOT %:** 78% (19,500 USD in USDC + 5,500 USD in DOT)
+- **Total Estimated Duration:** 21 weeks (around five months, maybe a bit longer if we hit blockers)
+- **Full-Time Equivalent (FTE):** 1 FTE  
+- **Total Costs:** 29,000 USD  
+- **Payment Split:** 50% in DOT (14,500 USD) + 50% in USDC (14,500 USD)
 
 ---
 
-### Milestone 1 — Journalist Identity Pallet & Core Infrastructure
+## Milestone 1 — Journalist Identity Pallet & Core Infrastructure
 
-- **Estimated duration:** 6 weeks (possibly 7 if testing takes longer)
-- **FTE:** 1
-- **Costs:** 6,000 USD (4,680 USD in USDC + 1,320 USD in DOT)
+- **Estimated Duration:** 6 weeks (possibly 7 if testing takes longer)
+- **FTE:** 1  
+- **Costs:** 10,000 USD  
+  - 5,000 USDC  
+  - 5,000 DOT  
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -303,11 +305,14 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 
 ---
 
-### Milestone 2 — Press Credential Pallet & XCM Integration
 
-- **Estimated Duration:** 6 weeks
-- **FTE:** 1
-- **Costs:** 8,000 USD (6,240 USD in USDC + 1,760 USD in DOT)
+## Milestone 2 — Press Credential Pallet & XCM Integration
+
+- **Estimated Duration:** 6 weeks  
+- **FTE:** 1  
+- **Costs:** 10,000 USD  
+  - 5,000 USDC  
+  - 5,000 DOT  
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -322,11 +327,13 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 
 ---
 
-### Milestone 3 — Publication Registry Pallet & Frontend Interface
+## Milestone 3 — Publication Registry Pallet & Frontend Interface
 
-- **Estimated Duration:** 5 weeks
-- **FTE:** 1
-- **Costs:** 6,500 USD (5,070 USD in USDC + 1,430 USD in DOT)
+- **Estimated Duration:** 5 weeks  
+- **FTE:** 1  
+- **Costs:** 5,000 USD  
+  - 2,500 USDC  
+  - 2,500 DOT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -341,11 +348,14 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 
 ---
 
-### Milestone 4 — Security Audit, Documentation & Mainnet Preparation
 
-- **Estimated Duration:** 4 weeks
-- **FTE:** 1
-- **Costs:** 4,500 USD (3,510 USD in USDC + 990 USD in DOT)
+## Milestone 4 — Security Audit, Documentation & Mainnet Preparation
+
+- **Estimated Duration:** 4 weeks  
+- **FTE:** 1  
+- **Costs:** 4,000 USD  
+  - 2,000 USDC  
+  - 2,000 DOT  
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -449,5 +459,6 @@ Actually, let me be honest - these numbers could be higher or lower depending on
 **Contact for Questions:**
 
 We're happy to provide additional technical details, discuss integration strategies with existing Polkadot projects, or arrange calls with our team and partner organizations (Committee to Protect Journalists, Reporters Without Borders). Please feel free to reach out via the contact information provided above.
+
 
 
