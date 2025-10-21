@@ -1,6 +1,6 @@
 ---
 project_name: "The Social Mask - Privacy-Preserving Journalist Identity on Substrate"
-level: "1"
+level: "2"
 ---
 
 # The Social Mask - Privacy-Preserving Journalist Identity on Substrate
