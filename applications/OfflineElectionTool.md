@@ -25,6 +25,7 @@ As this tool is primarily CLI- and API-based, no user interface mockups are requ
 #### Data Models / API Specifications
 #### Core Input Parameters (JSON Schema format):
 
+```json
 {
   "voters": [
     {
@@ -43,6 +44,7 @@ As this tool is primarily CLI- and API-based, no user interface mockups are requ
   "election_algorithm": "sequential-phragmen | phragmen | approval-voting",
   "snapshot_block": "optional<u32>"
 }
+```
 
 #### Core API Endpoints (REST):
 
@@ -52,6 +54,7 @@ As this tool is primarily CLI- and API-based, no user interface mockups are requ
 
 #### API Output Example:
 
+```json
 {
   "active_validators": [
     {
@@ -61,6 +64,7 @@ As this tool is primarily CLI- and API-based, no user interface mockups are requ
     }
   ]
 }
+```
 
 #### Technology Stack
 
