@@ -1,121 +1,167 @@
-# Humanized AI Platform for Decentralized Content Creation
+# LumeAI – Decentralized AI Content Anchoring Platform
 
-## Project Details
-- **Title**: Humanized AI Platform: Decentralized Content Creation on Substrate  
-- **One-liner**: A decentralized AI assistant built on Substrate for human-like content creation with on-chain ownership and provenance.  
-- **Category**: Tooling & Infrastructure  
-- **Date**: 2025-10-10  
-- **Main contact**: Diogo (diogo-w3f)  
-- **Team background**: Solo founder with 5+ years in content creation and Web3 integration. Currently developing the Substrate module using the node-template and Polkadot-JS API and learning ink! smart contract patterns from Parity docs.  
-- **Project website / repo**: https://github.com/breckinzephan-dot/humanized-ai-platform (PR: w3f/Grants-Program#267)  
-- **Related applications**: None (first-time applicant).
+**Project Name:** LumeAI  
+**Team Name:** LumeAI Team  
+**Grant Level:** Level 1 (Entry / Fast Grant)  
+**Requested Amount:** $15,000  
+**Estimated Duration:** 5 weeks  
+**Team Contact Email:** breckinzephan@gmail.com  
+**Polkadot Address:** 16K32a6pJX7QsCodyivozQy9Xs2SgTBzbLa81BgX9VzpH9Nm
 
 ---
 
-## Project Description
-- **Problem**  
-  Centralized platforms often flag or penalize AI-generated content, which reduces creator reach and trust. This discourages creators from adopting decentralized workflows and harms content-driven Web3 use cases.
+## 1. Project Overview
 
-- **Solution**  
-  Humanized AI provides a customizable assistant that produces human-like content while anchoring authorship and provenance on-chain. The system combines a frontend UI, a backend "humanization" engine, and a Substrate pallet that records ownership hashes and metadata.
+**Overview**
 
-- **Ecosystem fit**  
-  The project demonstrates a practical Substrate use-case (content provenance and decentralized tooling) and helps bridge Web2 UX into Polkadot’s Web3 stack—encouraging creator-focused adoption.
+LumeAI is a decentralized platform designed to anchor AI-generated content (text, image, and video metadata) on-chain to ensure authenticity, traceability, and transparent ownership.  
+It helps creators, marketers, and developers verify AI content provenance while enabling privacy-preserving storage through IPFS and Substrate-based smart modules.
 
-- **Target users**  
-  Freelance writers, independent creators, content teams, and Web3-native publishing platforms.
-
-- **Current status**  
-  Early development: repository scaffolded, Substrate node-template customized for a content pallet, and frontend prototype skeleton created. Milestone 1 will produce a working prototype.
-
-- **Maintenance & support**  
-  Open-source (Apache 2.0). Planned community-driven contributions, documentation, and periodic security audits after major milestones.
+The core idea is to make AI-generated content undetectable and verifiable, empowering creators in DeFi, NFT, and digital marketing spaces.
 
 ---
 
-## Technical Details
+## 2. Project Details
 
-### High-level architecture
-[React UI] --> [Node.js Backend (humanization engine)] --> [Polkadot-JS API] --> [Substrate Pallet]
+### Problem
+AI content authenticity is becoming a critical challenge. Deepfakes, plagiarism, and unverified AI usage erode trust across digital platforms.  
+Centralized verification services are prone to censorship and single points of failure.
 
-UI: text input, preview, wallet connect
+### Solution
+LumeAI leverages Polkadot’s interoperable network and Substrate to create a decentralized verification layer for AI-generated content.  
+Each content hash is anchored on-chain using a custom **`storeContent` pallet**, enabling:
+- Tamper-proof verification
+- Interoperability with other Polkadot parachains
+- Transparent provenance tracking
+- Optional encrypted metadata storage via IPFS
 
-Backend: request normalization, model orchestration, content hash generation
+### Technical Architecture
 
-Pallet: store content hash, owner AccountId, timestamp, and optional metadata
+**Stack Overview**
+- **Frontend:** React / Next.js  
+- **Backend:** Node.js / Express  
+- **Blockchain Layer:** Substrate SDK, Polkadot-JS API  
+- **Storage:** IPFS (for optional content anchoring)  
+- **Smart Module:** Custom Substrate pallet (`storeContent`)
 
+**Workflow**
+1. User generates content (text/image/video).  
+2. LumeAI hashes content metadata locally.  
+3. Hash is stored on-chain via Substrate pallet.  
+4. Optional IPFS storage of the actual content.  
+5. On-chain record is queryable by creators, brands, or verifiers.
 
-### Stack & tools
-- Frontend: React / Next.js, TypeScript, Polkadot-JS extension integration  
-- Backend: Node.js (TypeScript), Express or Fastify, REST/JSON API  
-- Blockchain: Substrate Node Template, custom pallet in Rust, ink! (where applicable)  
-- Integration: @polkadot/api (Polkadot-JS API)  
-- Testing: Jest (frontend), cargo test (pallet), integration tests via local testnet  
-- CI/CD: GitHub Actions (lint, tests, build artifacts)  
-- Storage model: On-chain anchoring (store content hash + metadata). Raw content not stored on-chain; optionally use IPFS for larger artifacts (content hash on-chain).  
-- Security: Content hashed + optional symmetric encryption for metadata; plan community audit after M1.
+### Deployment Plan
+The `storeContent` pallet will be deployed as part of a parachain connected to the **Polkadot Relay Chain**.  
+This setup enables:
+- Shared security  
+- XCM-based cross-chain verification  
+- Integration with existing content or NFT parachains
 
-### Current progress (signals of work done)
-- Repository scaffolded with `frontend/` and `pallet/` directories.  
-- Substrate node-template forked and initial pallet scaffold created.  
-- Basic React app bootstrapped with wallet connect placeholder.  
-- CI pipeline skeleton added (lint + basic tests).
-
----
-
-## Milestones & Deliverables
-
-| # | Title | Deliverables | Timeline | Budget (USD) |
-|---|-------|--------------|----------|--------------|
-| 1 | Prototype Development | - React UI minimal app (text input, submit, preview).<br>- Substrate pallet `storeContent(content_hash: [u8;32], owner: AccountId, metadata: Vec<u8>)` with basic storage & event emission.<br>- Backend Node.js bridge that computes content hash and submits extrinsics via Polkadot-JS API.<br>- Unit tests: `cargo test` for pallet, Jest for frontend.<br>- Repo README, demo script, and short demo video (2-3 mins). | 5 weeks | $15,000 |
-| 2 | AI Integration & Verification | - Integrate humanization layer (model orchestration) behind backend API (adapter for hosted LLM or open models).<br>- Develop automated detection-evasion testbench and benchmark (report target: ≥80% human-likeness measurement using agreed metrics).<br>- Update pallet to include verification/anchor API and off-chain worker pattern if needed.<br>- Security review and documentation update. | 6 weeks (post-M1) | $20,000 |
-
-**Total requested:** $35,000
-
-**Payment & delivery:** Milestone-based. Funds disbursed after review & acceptance of milestone deliverables. DOT vesting arrangements (if applied) will follow grant agreement terms.
-
----
-
-## Acceptance criteria (per milestone)
-
-**M1 Acceptance**
-- Frontend demo deployed locally and accessible with README steps.  
-- Pallet compiled and tested (`cargo test`) with `storeContent` extrinsic and emitted events captured in Polkadot-JS Apps.  
-- Backend bridge successfully submits a `storeContent` extrinsic using a local node.  
-- Repo includes instructions to reproduce demo and unit/integration tests.
-
-**M2 Acceptance**
-- Backend integrates a humanization model producing demonstrably human-like outputs on benchmark dataset.  
-- Automated tests showing detection-evasion target met (documented methodology + results).  
-- Pallet upgraded if required and documentation for integration published.
+Initial testing will run on a local Substrate node and Kusama testnet.  
+Full deployment will follow a parachain slot auction for mainnet hosting.
 
 ---
 
-## Security & privacy
-- Raw content is never stored on-chain; only hashes and minimal metadata to prove provenance.  
-- Optionally support IPFS for content storage with on-chain anchor.  
-- Post-M1 community audit planned; security contact added to repo.
+## 3. Ecosystem Fit
+
+### Target Users
+- AI creators & agencies using generative tools  
+- NFT marketplaces ensuring content authenticity  
+- DeFi projects needing proof-of-origin for media assets
+
+### Ecosystem Impact
+LumeAI directly increases **DOT** utility by:
+1. **Parachain Slot Auctions:** bonding DOT (500K+ typical) for 2-year leases  
+2. **Transaction Fees:** on-chain anchoring incurs DOT usage  
+3. **Staking & Governance:** users participate in parachain validation  
+4. **Ecosystem Growth:** onboarding creators from Web2 into Polkadot
+
+By making AI content verifiable and interoperable, LumeAI strengthens Polkadot’s creative and data layers.
 
 ---
 
-## Licensing & openness
-- License: Apache 2.0.  
-- All core components will be open-source; SDKs and documentation published in the repo.
+## 4. Development Status
+
+Nothing has been built yet — the project is currently in the **planning and architecture stage**.  
+However, early scaffolding work has begun on:
+- Frontend repo setup  
+- Substrate pallet draft design (`storeContent`)  
+- CI pipeline configuration
+
+All deliverables for this milestone will be new and open-sourced.
 
 ---
 
-## Additional notes & next steps
-- Quick tasks to complete pre-M1 submission: finalize pallet scaffold, complete frontend wallet-connect flow, and capture a 2–3 minute demo walkthrough.  
-- Recommended dev resources: Substrate Node Template tutorials, Polkadot-JS integration guides, ink! examples.  
-- CLA: ensure you sign the Contributor License Agreement in the PR thread if requested by the bot.
+## 5. Team
+
+**Founder:** Owoyemi Basit Ademola  
+- GitHub: [breckinzephan](https://github.com/breckinzephan)  
+- LinkedIn: [Ademola Owoyemi](https://www.linkedin.com/in/ademola-owoyemi-b6314b256)  
+- Role: Full-Stack Developer, Blockchain Engineer, AI Integrator  
+
+**Team:** LumeAI Team (solo founder for Milestone 1)  
 
 ---
 
-## Contact
-- **Owner / Lead:** Owoyemi Ademola (breckinzephan-dot)  
-- **Email:** breckinzephan@gmail.com  
-- **Repo / PR:** https://github.com/breckinzephan-dot/Grants-Program (applications/humanized-ai-platform.md) — PR: w3f/Grants-Program#267
+## 6. Team Experience
 
+Owoyemi has over 4 years of experience building decentralized web applications and AI-integrated systems.  
+Previous work includes:
+- Smart contract and dApp development  
+- AI content generation and IPFS integration  
+- Full-stack development with React, Node.js, and Substrate SDK  
 
+---
 
-### High-level architecture
+## 7. Team Code Repos
+
+GitHub Organization: [https://github.com/breckinzephan-dot](https://github.com/breckinzephan-dot)  
+Main Repo: `https://github.com/breckinzephan-dot/lumeai`
+
+---
+
+## 8. Development Roadmap
+
+### **Milestone 1 — Core MVP Implementation**
+**Estimated Duration:** 5 weeks  
+**Cost:** $15,000  
+
+| Deliverable | Description | Technology | Output |
+|--------------|--------------|-------------|---------|
+| 1. Technical Architecture & Setup | Define repo structure, install dependencies, CI/CD setup | GitHub, Substrate SDK | Public repo initialized |
+| 2. Pallet Development | Build `storeContent` pallet with hash storage and retrieval | Rust, Substrate FRAME | Functional pallet module |
+| 3. Frontend Integration | Create UI for content upload and hash verification | React / Next.js | Demo web interface |
+| 4. API Layer | Node.js bridge between frontend and Substrate RPC | Node.js, Polkadot-JS API | RESTful API endpoints |
+| 5. Testing & Documentation | Unit + integration tests, detailed README | Jest, Mocha | Verified test results + docs |
+| 6. Demo Video | Showcase content submission and on-chain verification | — | 3–5 min demo video |
+
+**Acceptance Criteria:**
+- Pallet compiles and runs on local node  
+- Frontend can successfully anchor and retrieve hashes  
+- Code open-sourced under Apache 2.0  
+- Basic tests and documentation complete
+
+---
+
+## 9. Future Plans
+Following Milestone 1, LumeAI aims to:
+- Expand to **multi-modal AI content verification**
+- Integrate **cross-chain metadata sharing** via XCM
+- Launch a **creator dashboard** for managing anchored content
+- Partner with NFT marketplaces for provenance validation
+
+---
+
+## 10. Additional Information
+
+LumeAI’s goal aligns with Polkadot’s mission of interoperability and security — bringing decentralized verification tools to creators globally.  
+This grant will enable the initial MVP required for broader ecosystem adoption.
+
+---
+
+**Grant Level:** ✅ Level 1 (Entry / Fast Grant)  
+**Requested Amount:** $15,000  
+**Duration:** 5 weeks  
+**Team Contact:** breckinzephan@gmail.com  
+**Polkadot Address:** 16K32a6pJX7QsCodyivozQy9Xs2SgTBzbLa81BgX9VzpH9Nm
