@@ -1,6 +1,6 @@
 ---
 project_name: "The Social Mask - Privacy-Preserving Journalist Identity on Substrate"
-level: "2"
+level: "1"
 ---
 
 # The Social Mask - Privacy-Preserving Journalist Identity on Substrate
@@ -449,3 +449,4 @@ Actually, let me be honest - these numbers could be higher or lower depending on
 **Contact for Questions:**
 
 We're happy to provide additional technical details, discuss integration strategies with existing Polkadot projects, or arrange calls with our team and partner organizations (Committee to Protect Journalists, Reporters Without Borders). Please feel free to reach out via the contact information provided above.
+
