@@ -280,7 +280,7 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 - **Total Estimated Duration:** 21 weeks (around 5 months, maybe a bit longer if we hit blockers)
 - **Full-Time Equivalent (FTE):** 1 FTE
 - **Total Costs:** 25,000 USD
-- **DOT %:** 78% (19,500 USD in DOT + 5,500 USD in USDC)
+- **DOT %:** 78% (19,500 USD in USDC + 5,500 USD in DOT)
 
 ---
 
@@ -288,7 +288,7 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 
 - **Estimated duration:** 6 weeks (possibly 7 if testing takes longer)
 - **FTE:** 1
-- **Costs:** 6,000 USD (4,680 USD in DOT + 1,320 USD in USDC)
+- **Costs:** 6,000 USD (4,680 USD in USDC + 1,320 USD in DOT)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -307,7 +307,7 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 
 - **Estimated Duration:** 6 weeks
 - **FTE:** 1
-- **Costs:** 8,000 USD (6,240 USD in DOT + 1,760 USD in USDC)
+- **Costs:** 8,000 USD (6,240 USD in USDC + 1,760 USD in DOT)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -326,7 +326,7 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 
 - **Estimated Duration:** 5 weeks
 - **FTE:** 1
-- **Costs:** 6,500 USD (5,070 USD in DOT + 1,430 USD in USDC)
+- **Costs:** 6,500 USD (5,070 USD in USDC + 1,430 USD in DOT)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -345,7 +345,7 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 
 - **Estimated Duration:** 4 weeks
 - **FTE:** 1
-- **Costs:** 4,500 USD (3,510 USD in DOT + 990 USD in USDC)
+- **Costs:** 4,500 USD (3,510 USD in USDC + 990 USD in DOT)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -449,4 +449,5 @@ Actually, let me be honest - these numbers could be higher or lower depending on
 **Contact for Questions:**
 
 We're happy to provide additional technical details, discuss integration strategies with existing Polkadot projects, or arrange calls with our team and partner organizations (Committee to Protect Journalists, Reporters Without Borders). Please feel free to reach out via the contact information provided above.
+
 
