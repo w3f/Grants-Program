@@ -16,6 +16,7 @@ Besides, **there is a clear difference between an application being accepted and
 <a id="top"></a>
 
 - [2025](#2025)
+  - [🏄 Wave 28 - Q4 2025](#-wave-28---q4-2025)
   - [🏄 Wave 27 - Q3 2025](#-wave-27---q3-2025)
   - [🏄 Wave 26 - Q2 2025](#-wave-26---q2-2025)
   - [🏄 Wave 25 - Q1 2025](#-wave-25---q1-2025)
@@ -53,12 +54,31 @@ Besides, **there is a clear difference between an application being accepted and
 
 ## 2025
 
+
+### 🏄 Wave 28 - Q4 2025
+
+| Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
+| :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
+| [Bilinear Labs](https://www.bilinearlabs.io)             | [Offline Election Tool](https://grants.web3.foundation/docs/RFPs/offline_election_tool)       | [GitHub](https://github.com/bilinearlabs) |    ☐       |       ☐       |     ☐      |
+|          |      | | | |  |
+
+<!---
+| []()             | []()       | [GitHub]() |    ☐       |       ☐       |     ☐      |
+-->
+
+[🔝](#top)
+
+
 ### 🏄 Wave 27 - Q3 2025
 
 | Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
 | :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
 | [Stanislav Terliakov](https://github.com/sterliakov)             | [`substrate-interface` maintenance](./substrate-interface-maintenance.md)       | [GitHub](https://github.com/JAMdotTech/py-polkadot-sdk) |    ☐       |       ☐       |     ☐      |
-| [ChainScore Finance](https://chainscore.finance)             | [Benchmarking Blockchain Data Availability: Polkadot ELVES vs Modular DA Layers](./da_comparative_study.md)       | [GitHub](https://github.com/Chainscore) |    ☐       |       ☐       |     ☐      |
+| [ChainScore Labs](https://chainscore.finance)             | [Benchmarking Blockchain Data Availability: Polkadot ELVES vs Modular DA Layers](./da_comparative_study.md)       | [GitHub](https://github.com/Chainscore) |    ☐       |       ☐       |     ☐      |
+| [Inferara](https://inferara.com/)             | [Preparing Polkadot's pallet_balances for Formal Verification using the Inference Framework](./Preparing%20Polkadot%20pallet_balances%20for%20Formal%20Verification.md)       | [GitHub](https://github.com/Inferara) |    ☐       |       ☐       |     ☐      |
+| [AntLabs India](https://antiersolutions.com)             | [Offline Election Tool](./OfflineElectionTool.md)       |  |    ☐       |       ☐       |     ☐      |
+| Build Union             | [TxSim: Transaction Simulator and Risk Detector for Polkadot](./TxSim.md)       |  |    ☐       |       ☐       |     ☐      |
+| [LunoLab](https://www.lunolab.xyz/)             | [LunoKit](./LunoKit.md)       | [GitHub](https://github.com/Luno-lab/LunoKit) |    ☐       |       ☐       |     ☐      |
 
 [🔝](#top)
 
