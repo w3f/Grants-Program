@@ -249,13 +249,12 @@ Github: https://github.com/Growwr
 
 ## Development Roadmap :nut_and_bolt:
 
-We’ll assume:
+**Overview**
 
-Total Duration: 3 months
-
-FTE: ~3 full-time engineers + 1 product manager across a 3 month build cycle
-
-Total Costs: $22,000
+- Total Duration: 3 months
+- FTE: ~3 full-time engineers + 1 product manager across a 3 month build cycle
+- Total Costs: $22,000
+- DOT %: 40%
 
 **Overview**
 
