@@ -3,6 +3,7 @@
 - **Team Name:** Growwr Inc.
 - **Payment Details:**
   - **DOT**: For the **DOT** compensation, DOT: 16AzsJCQCWsinV1RyBd3H4XRNE5XWUCWL9GfCZSt6u5vum8S
+  - **USDC**: For the **USDC** (Asset Hub Polkadot) compensation, USDC: 16BSWkFeXcAB32mPsMXgKcZu3GZWyAj71JKSTjfJLcAj6eGP
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** Level 2
 
 ## Project Overview :page_facing_up:
