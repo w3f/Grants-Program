@@ -256,8 +256,6 @@ Github: https://github.com/Growwr
 - Total Costs: $22,000
 - DOT %: 40%
 
-**Overview**
-
 **Milestone 1 — Cross-Border Payment Integration**
 
 Estimated duration: 1 month
@@ -268,15 +266,17 @@ Costs: $11,000 USD
 
 Enable seamless cross-border payments using Polkadot’s Asset Hub and supported stable assets (e.g., USDC/USDT), integrated into Growwr’s escrow system.
 
-| Number | Deliverable                | Specification                                                                                      |
-| :----- | :------------------------- | :------------------------------------------------------------------------------------------------- |
-| 0a.    | License                    | MIT                                                                                         |
-| 0b.    | Documentation              | Inline technical documentation explaining escrow and payment workflows.                            |
-| 0c.    | Testing Guide              | Comprehensive test guide for deposit, release, and refund functions using Asset Hub assets.        |
-| 1.     | Asset Hub Integration      | Integrate Asset Hub stable assets (DOT + USDC/USDT equivalents) for escrow funding and settlement. |
-| 2.     | Escrow Contract Connection | Connect existing open-source escrow contract (ink! based) for secure project payments.             |
-| 3.     | Payment Flow Logic         | Implement DOT-based and stablecoin-based transaction flows between clients and talent.             |
-| 4.     | Demo Transaction           | Complete 3 verified cross-border test transactions on Westend.                                     |
+| Number | Deliverable                | Specification                                                                                                                                          |
+| :----- | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                    | MIT                                                                                                                                                    |
+| 0b.    | Documentation              | Inline technical documentation explaining escrow and payment workflows.                                                                                |
+| 0c.    | Testing Guide              | Comprehensive test guide for deposit, release, and refund functions using Asset Hub assets.                                                            |
+| 0d.    | Docker                     | Provide a Dockerfile and container setup for running the escrow and payment integration module locally, including setup instructions and dependencies. |
+| 1.     | Asset Hub Integration      | Integrate Asset Hub stable assets (DOT + USDC/USDT equivalents) for escrow funding and settlement.                                                     |
+| 2.     | Escrow Contract Connection | Connect existing open-source escrow contract (ink! based) for secure project payments.                                                                 |
+| 3.     | Payment Flow Logic         | Implement DOT-based and stablecoin-based transaction flows between clients and talent.                                                                 |
+| 4.     | Demo Transaction           | Complete 3 verified cross-border test transactions on Westend.                                                                                         |
+
 
 **Milestone 2 — Web2-to-Web3 Connection**
 
@@ -288,15 +288,16 @@ Costs: $6,000 USD
 
 Connect Growwr’s existing Web2 infrastructure to Polkadot using the Polkadot.js API for user identity, payments, and verification.
 
-| Number | Deliverable             | Specification                                                                             |
-| :----- | :---------------------- | :---------------------------------------------------------------------------------------- |
-| 0a.    | License                 | MIT                                                                                |
-| 0b.    | Documentation           | Guide detailing integration between Growwr backend and Polkadot.js API.                   |
-| 0c.    | Testing Guide           | Include steps for testing DID creation, wallet connection, and API calls.                 |
-| 1.     | Polkadot.js Integration | Integrate wallet connection and transaction signing for escrow and identity operations.   |
-| 2.     | DID Integration         | Implement decentralized identity linking to user Polkadot address. |
-| 3.     | API Connection Layer    | Build a lightweight API bridge connecting Growwr’s backend to Polkadot blockchain calls.  |
-| 4.     | Web Interface Update    | Enable end-users to trigger on-chain interactions directly from Growwr.co dashboard.     |
+| Number | Deliverable             | Specification                                                                                                                                                    |
+| :----- | :---------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                 | MIT                                                                                                                                                              |
+| 0b.    | Documentation           | Guide detailing integration between Growwr backend and Polkadot.js API.                                                                                          |
+| 0c.    | Testing Guide           | Include steps for testing DID creation, wallet connection, and API calls.                                                                                        |
+| 0d.    | Docker                  | Provide a Dockerfile and container setup for running the Web2-to-Web3 integration module locally, including Polkadot.js connection and API bridge configuration. |
+| 1.     | Polkadot.js Integration | Integrate wallet connection and transaction signing for escrow and identity operations.                                                                          |
+| 2.     | DID Integration         | Implement decentralized identity linking to user Polkadot address.                                                                                               |
+| 3.     | API Connection Layer    | Build a lightweight API bridge connecting Growwr’s backend to Polkadot blockchain calls.                                                                         |
+| 4.     | Web Interface Update    | Enable end-users to trigger on-chain interactions directly from Growwr.co dashboard.                                                                             |
 
 
 **Milestone 3 — Production Deployment + Public Demo**
