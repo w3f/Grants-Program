@@ -245,9 +245,9 @@ Source codes will reside in
 
 Repos for further reference
 
-- https://github.com/Growwr/growwr-escrow-module
+- https://github.com/Growwr/growwr-escrow-module (MIT License)
 
-- https://github.com/Growwr/growwr-identity-adapter
+- https://github.com/Growwr/growwr-identity-adapter (Apache 2.0 License)
 
 ### Team LinkedIn Profiles (if available)
 
