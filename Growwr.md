@@ -253,7 +253,7 @@ Repos for further reference
 
 ## Development Status :open_book:
 
-Github: https://github.com/Growwr
+Growwr’s core Web2 platform is fully developed and live with over 50,000 talents and 2,000 businesses across 13 countries. The next phase focuses on integrating Polkadot for decentralized identity, escrow payments, and verification — connecting our existing infrastructure to Web3. Support researches, blogs and articles can be found on the "Additional Information" section. I have sent proof of analytics and user base privately via email.
 
 ## Development Roadmap :nut_and_bolt:
 
