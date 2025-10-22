@@ -364,7 +364,7 @@ N/A
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** I heard about you from an online search via [this article](https://rocknblock.io/blog/blockchain-ecosystem-grants-list#celo-community-fund-grant).
+**How did you hear about the Grants Program?** I heard about you from an online search via [this article](https://rocknblock.io/blog/blockchain-ecosystem-grants-list).
 
 **Work Completed So Far**
 
