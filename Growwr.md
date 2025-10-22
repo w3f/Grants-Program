@@ -310,15 +310,16 @@ Costs: $5,000 USD
 
 Integrate Growwr’s AI engines (Gemini + Cursor) into the blockchain layer and deploy full Polkadot integration (payments, identity, verification) into Growwr’s live platform and showcase a working demo.
 
-| Number | Deliverable        | Specification                                                                   |
-| :----- | :----------------- | :------------------------------------------------------------------------------ |
-| 0a.    | License            | MIT                                                                             |
-| 0b.    | Documentation      | Publish end-to-end implementation documentation and user guide.                 |
-| 0c.    | Testing Guide      | Include mainnet test scenarios and validation checklists.                       |
-| 1.     | Mainnet Deployment | Deploy escrow, payment, and DID integration on Growwr.co production.           |
-| 2.     | Public Demo        | Launch live demo showcasing cross-border payment and identity flow on Polkadot. |
-| 3.     | User Migration     | Onboard 50,000+ users to Growwr’s Polkadot-integrated infrastructure.           |
-| 4.     | Report             | Provide transaction data, analytics, and verification of DOT and asset usage.   |
+| Number | Deliverable        | Specification                                                                                                                                                                                             |
+| :----- | :----------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License            | MIT                                                                                                                                                                                                       |
+| 0b.    | Documentation      | Publish end-to-end implementation documentation and user guide.                                                                                                                                           |
+| 0c.    | Testing Guide      | Include mainnet test scenarios and validation checklists.                                                                                                                                                 |
+| 0d.    | Docker             | Provide a Dockerfile and container setup for deploying the full Growwr-Polkadot integration stack (escrow, DID, and AI verification modules) in a reproducible environment for testing and demo purposes. |
+| 1.     | Mainnet Deployment | Deploy escrow, payment, and DID integration on Growwr.co production.                                                                                                                                      |
+| 2.     | Public Demo        | Launch live demo showcasing cross-border payment and identity flow on Polkadot.                                                                                                                           |
+| 3.     | User Migration     | Onboard 50,000+ users to Growwr’s Polkadot-integrated infrastructure.                                                                                                                                     |
+| 4.     | Report             | Provide transaction data, analytics, and verification of DOT and asset usage.                                                                                                                             |
 
 
 ### Overview
