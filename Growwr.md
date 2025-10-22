@@ -329,13 +329,6 @@ Integrate Growwr’s AI engines (Gemini + Cursor) into the blockchain layer and 
 | 3.     | User Migration     | Onboard 50,000+ users to Growwr’s Polkadot-integrated infrastructure.                                                                                                                                     |
 | 4.     | Report             | Provide transaction data, analytics, and verification of DOT and asset usage.                                                                                                                             |
 
-
-### Overview
-
-- Reviewers can create, release, and refund escrow via Asset Hub using the demo UI or API endpoint; all transactions are verifiable on-chain.
-
-- Reviewers can register a test identity, link it to a Growwr user, and verify attestation references.
-
 ## Future Plans
 
 **Long-Term Maintenance & Financing**
@@ -363,22 +356,6 @@ Drive adoption at scale: onboard 1 million verified freelancers and 10,000 busin
 
 Our vision is to make Growwr the decentralized standard for proof-of-work, proof-of-skill, and proof-of-payment — positioning Polkadot as the infrastructure powering the borderless digital economy of the future.
 
-**Code Repos & Licensing:**
-
-We’ll share two open-source modules:
-
-- growwr-escrow-module (MIT License)
-
-- growwr-identity-adapter (Apache 2.0 License)
-
-Each will include documentation, examples, and Docker scripts for local testing.
-
-Public repos will be available at:
-
-- https://github.com/Growwr/growwr-escrow-module
-
-- https://github.com/Growwr/growwr-identity-adapter
-
 ## Referral Program (optional) :moneybag:
 
 You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
@@ -387,9 +364,9 @@ N/A
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** I heard about you from an online search via [this article](https://rocknblock.io/blog/blockchain-ecosystem-grants-list#celo-community-fund-grant).
 
-Work Completed So Far
+**Work Completed So Far**
 
 Growwr has already developed and deployed a functional Web2 platform, now serving as the foundation for our transition into a Web3-enabled infrastructure.
 Key milestones achieved include:
@@ -413,7 +390,7 @@ Just this week, I have connected with 2 Nigerians who suffered same issue:
 - [Read Ridwan’s story](https://www.linkedin.com/posts/ridwan-akinfenwa_techjourney-software-engineering-activity-7369804640403488768-gJ5x?utm_source=share&utm_medium=member_desktop&rcm=ACoAADm9NOUB9nZSMXq6VmGJgcLXlWxbuEH3RxA)
 - [Read the comments here to see more stories](https://x.com/EOEboh/status/1965144928113344569)
 
-Supporting research articles:
+**Supporting research articles:**
 
 - [9 of 10 Africans unqualified for Jobs apply to - Research - P.M. News](https://pmnewsnigeria.com/2018/12/13/9-of-10-africans-unqualified-for-jobs-apply-to-research/)
 - [The 'wicked problems’ of talent management](https://www.edgecumbe.co.uk/wp-content/uploads/Wicked-Problems-FINAL-07-11-22.pdf)
