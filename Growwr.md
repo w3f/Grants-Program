@@ -222,12 +222,8 @@ We have not previously applied for a Web3 Foundation grant.
 **Leadership:**
 
 - Obinna Umeh (CEO & Co-Founder) – Nottingham Law School alumnus with honors, Obinna is a growth and product marketing expert with deep expertise in crypto, Web3, and fintech. He previously scaled Breet, a Web3 crypto company in Africa, to over 100,000 users in less than 6 months, and has led growth for global fintech and Web3 companies including WPMU Dev, Web2 Ranker, Cardtonic, and Dandy Writers (which scaled to ₦20M revenue in 10 months).
-https://www.linkedin.com/in/obinnaumeh/ 
-https://obinnaumeh.webflow.io/
 
-- Emmanuel Ajayi (CTO & Co-Founder) – First-class graduate of Covenant University, Emmanuel brings strong blockchain network and product expertise. He has built and scaled products for companies like Trove Finance and Flexip Group, and founded Product Kitchen, delivering high-impact software solutions. Emmanuel leads the architecture of Growwr’s blockchain integrations, ensuring robust scalability and Stellar network alignment.
-https://www.linkedin.com/in/emmanuel-ajayi-aj 
-https://github.com/emma-ajay 
+- Emmanuel Ajayi (CTO & Co-Founder) – First-class graduate of Covenant University, Emmanuel brings strong blockchain network and product expertise. He has built and scaled products for companies like Trove Finance and Flexip Group, and founded Product Kitchen, delivering high-impact software solutions. Emmanuel leads the architecture of Growwr’s blockchain integrations, ensuring robust scalability and Stellar network alignment. 
 
 **Engineering & Design:**
 
@@ -246,10 +242,14 @@ Source codes will reside in
 Repos for further reference
 
 - https://github.com/Growwr/growwr-escrow-module (MIT License)
-
 - https://github.com/Growwr/growwr-identity-adapter (Apache 2.0 License)
+- https://github.com/emma-ajay
 
 ### Team LinkedIn Profiles (if available)
+
+- Obinna Umeh: https://www.linkedin.com/in/obinnaumeh/
+- Obinna Umeh (Work Portfolio): https://obinnaumeh.webflow.io/
+- Emmanuel Ajayi: https://www.linkedin.com/in/emmanuel-ajayi-aj 
 
 ## Development Status :open_book:
 
