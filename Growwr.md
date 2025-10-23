@@ -262,7 +262,7 @@ Growwr’s core Web2 platform is fully developed and live with over 50,000 talen
 - Total Duration: 3 months
 - FTE: ~3 full-time engineers + 1 product manager across a 3 month build cycle
 - Total Costs: $22,000
-- DOT %: 40%
+- DOT %: 60%
 
 **Milestone 1 — Cross-Border Payment Integration**
 
