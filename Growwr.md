@@ -108,7 +108,7 @@ Despite receiving only $6,000 in grant funding to date, we’ve achieved signifi
 
 These milestones highlight not just validation from African ecosystems but also recognition at global startup platforms.
 
-**Scope Clarifications — What Growwr Will Not Implement**
+**What your project is not or will not provide/implement**
 
 - Growwr will not issue or manage tokens during the grant phase.
 - The project will not handle decentralized exchanges or speculative financial products.
