@@ -60,11 +60,8 @@ Besides, **there is a clear difference between an application being accepted and
 | Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
 | :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
 | [Bilinear Labs](https://www.bilinearlabs.io)             | [Offline Election Tool](https://grants.web3.foundation/docs/RFPs/offline_election_tool)       | [GitHub](https://github.com/bilinearlabs) |    ☐       |       ☐       |     ☐      |
-|          |      | | | |  |
+| [QueensGame](https://queensgame.io)                      | [Queens Game](https://queensgame.io)                                      | [GitHub](https://github.com/airobus/queensgame.io)                 |    ☐       |       ☐       |     ☐      |
 
-<!---
-| []()             | []()       | [GitHub]() |    ☐       |       ☐       |     ☐      |
--->
 
 [🔝](#top)
 
