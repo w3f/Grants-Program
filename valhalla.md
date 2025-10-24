@@ -63,7 +63,7 @@ Heimdall AI: On-platform assistant using open-source LLaMA, running in browser/c
 Funding Request
 Amount: $10,000–$20,000 (due to milestone-based DOT vesting structure—see below)
 
-If paid up front, $5,000–$10,000 would be sufficient; with half vesting over two years, increased ask is needed to ensure our team and platform can operate consistently.
+If paid up front, $8,000–$10,000 would be sufficient; with half vesting over two years, increased ask is needed to ensure our team and platform can operate consistently.
 
 # Money Breakdown (Estimate)
 
