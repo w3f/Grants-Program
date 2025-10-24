@@ -122,3 +122,7 @@ Project roadmap: https://valhallanft.xyz/roadmap
 Github: [not fully ready yet]
 
 X (Twitter): https://x.com/Valhalla__xyz
+
+# current setup
+
+the founder it self handling all the coding things wth ai and i have a request to the team there is a not from your side can you give me some suggestions so it will help us and i will make sure after we get the grant money in the first we will launch our launchpad and marketplace then working on a game and dex.
