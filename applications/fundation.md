@@ -20,6 +20,22 @@ The primary goal of Fundation is to simplify dApp development on top of Asset Hu
 **Team's Motivation:**  
 While building my first dApp on Polkadot, Stake2Build, over a year and a half ago, I realized how far behind the ecosystem was in front-end and web developer tooling. Although many improvements have been made since then, I believe this tool will still be of great benefit to the community by addressing these ongoing challenges, lowering entry barriers for indie devs, hackathon teams, and startups.
 
+
+- What your project is *not* or will *not* provide or implement
+  This funding covers the base module only. It provides fast full‑stack dApp scaffolding limited to:
+
+  - Modular authentication (wallet, social, email/password, WebAuthn)
+  - Blockchain connectivity and chain management via polkadot‑api
+  - Reusable UI components and utilities to accelerate dApp development
+
+  What this does NOT include:
+
+  - Prebuilt showcase dApps, full application templates, or production end‑user apps
+  - Application‑specific components, custom integrations, or business logic required to implement particular dApps
+  - Hosting, third‑party paid services, or deployment/maintenance of end‑user applications
+
+  In short: the deliverable is a developer‑focused toolkit to jumpstart dApp development. Teams will still need to build, adapt, and deploy their own complete applications on top of the base module; additional funding would be needed to deliver full showcase apps or bespoke integrations.
+
 ### Project Details
 
 **Technology Stack:**  
@@ -72,6 +88,20 @@ Experience gained from building the dApp Stake2Build and leading the BuildOnDot 
 ### Team Code Repos
 - [https://github.com/swenthebuilder](https://github.com/swenthebuilder)
 
+### Team LinkedIn Profiles (if available)
+
+- None
+
+## Development Status :open_book:
+
+If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying.: no code to show 
+
+- links to improvement proposals or [RFPs](https://grants.web3.foundation/docs/rfps) (requests for proposal),
+- academic publications relevant to the problem,
+- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
+- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
+- previous interface iterations, such as mock-ups and wireframes.
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
@@ -99,7 +129,7 @@ Experience gained from building the dApp Stake2Build and leading the BuildOnDot 
 ![Network Select](https://github.com/swenthebuilder/PapiNextjsBasic/blob/main/Network%20Select.png)
 
 ---
-
+ 
 ### Milestone 2 — Comprehensive Documentation & Launch
 - **Estimated Duration:** 1 month  
 - **FTE:** 0.5  
@@ -127,3 +157,44 @@ Release v1.0 and promote via the **BuildOnDot** community. Enhance based on earl
 
 **Team's long-term plans:**  
 My long-term vision is to accelerate Polkadot adoption by enabling the rapid creation of high-quality dApps. I aim to develop a comprehensive suite of tools and products that empower developers, lower technical barriers, and foster a thriving ecosystem—ultimately driving mainstream adoption of Polkadot technology.
+
+
+Master Plan
+
+## Master Plan
+
+### Phase One: Fundation
+Current funding request will establish the foundation framework and core modules.
+
+### Phase Two: DAppaggedon
+Development of showcase dApps targeting key Polkadot ecosystem needs:
+- Gaming
+- DeFi
+- Social
+- OpenGov
+These applications will demonstrate Polkadot's capabilities and potential.
+
+### Phase Three: Clone Wars & Case Studies
+- Create Web3 versions of popular Web2 applications
+- Document migration challenges and solutions
+- Develop detailed case studies for enterprise adoption
+- Focus on e-commerce migration to Web3 architecture
+
+### Phase Four — Omnipass Lightwallet
+- Embedded light wallet delivered as an NPM package.
+- Intended for single relying-party use: the wallet instance is created and usable only on the site/app where it was instantiated.
+- Goals: easy integration, minimal footprint, secure local key storage, and fast onboarding for dApp developers.
+
+### Phase Five — Omnipass Browser Extension & Mobile App
+- Browser extension wallet
+  - Cross-site passkey use: allows a single passkey to authenticate across multiple dApps without creating a new light wallet for each site.
+  - Standard extension features: secure key storage, permissioned site access, connect/disconnect flows, and background sync.
+- Mobile app
+  - Mirrors extension functionality on mobile: stores the wallet, provides deep links/universal links for in-browser flows, and supports mobile-to-dapp communication.
+  - Use cases: mobile-first dApps, seamless auth between mobile browser and native app, and push/QR flows for transaction approval.
+
+### Phase Six — Omni Protocol
+- Omni ID: a wallet naming protocol for human-readable addresses (e.g., swen@dot).
+- Features: name resolution, chain-aware addressing, lookup/fallback to raw addresses, and a registry model (on-chain or decentralized) to map names to account identifiers.
+- Goals: simplify fund transfers and UX by enabling username+chain transfers while preserving security and ownership controls.
+- Considerations: name collision handling, ownership verification, and privacy/resolution performance.
