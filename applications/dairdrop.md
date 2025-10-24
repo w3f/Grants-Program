@@ -5,6 +5,7 @@
   - **Payment**: 12WygU75eKwg2y8TeyRTzWMVDC5GyYfC4KY1r5EKt5emGjek (Assethub USDC)
   - **DOT**: 12WygU75eKwg2y8TeyRTzWMVDC5GyYfC4KY1r5EKt5emGjek (polkadot)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2429#issuecomment-3366941838)
 
 ## Project Overview :page_facing_up:
 
