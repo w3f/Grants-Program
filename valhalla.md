@@ -1,8 +1,11 @@
 # Project Name: Valhalla
 
 **Payment Details:**
+
 **DOT: 1Ef9icGP5xfsiZfSqrBN5o5f7fNsHmMxxhU6mwahAh361bu address**
+
 **USDC: 0x7bf2d50d2ec35ae6100be9c4dbdadbe211ae722e address**
+
 **Level 2 grant..**
 
 # Project Overview
