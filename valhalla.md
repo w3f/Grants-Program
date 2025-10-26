@@ -1,8 +1,9 @@
 # Project Name: Valhalla
 
-DOT: 1Ef9icGP5xfsiZfSqrBN5o5f7fNsHmMxxhU6mwahAh361bu address
-USDC: 0x7bf2d50d2ec35ae6100be9c4dbdadbe211ae722e address
-Level 2 grant..
+**Payment Details:**
+**DOT: 1Ef9icGP5xfsiZfSqrBN5o5f7fNsHmMxxhU6mwahAh361bu address**
+**USDC: 0x7bf2d50d2ec35ae6100be9c4dbdadbe211ae722e address**
+**Level 2 grant..**
 
 # Project Overview
 Valhalla is an open, community-driven platform launching first on Monad and expanding to multiple chains. We're building a collection of decentralized DApps, including a creator-owned NFT launchpad (with zero deployment fees), a GameFi DEX with unique token mining and rewards mechanics, and practical staking features.
