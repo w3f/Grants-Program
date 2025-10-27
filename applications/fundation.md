@@ -93,14 +93,8 @@ Experience gained from building the dApp Stake2Build and leading the BuildOnDot 
 - None
 
 ## Development Status :open_book:
+No code to show — the MVP was a rushed job for a fast grant. I’m currently working on the Foundation website and documentation.
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying.: no code to show 
-
-- links to improvement proposals or [RFPs](https://grants.web3.foundation/docs/rfps) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
 
 ## Development Roadmap :nut_and_bolt:
 
