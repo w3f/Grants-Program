@@ -204,20 +204,29 @@ This section breaks down the development roadmap into milestones and deliverable
 
 ## Future Plans
 
-**Long-term Maintenance and Development:**
-- **Additional Funding**: Seek additional funding opportunities to support advanced features such as additional open source wallets in the Polkadot ecosystem and other E2E testing frameworks (Cypress, WebDriver, Vitest browser mode)
+**Maintenance Commitment:**
 
-**Short-term Enhancement and Promotion:**
-- **Community Engagement**: Actively engage with the Polkadot developer community through forums, Discord, and social media
-- **Integration Examples**: Create comprehensive examples and case studies showing Chroma integration with popular Polkadot dApps
-- **Framework Expansion**: Begin research and development for supporting additional wallet extensions (limited to open-source wallets)
-- **Performance Optimization**: Continuously improve test execution speed and reliability based on user feedback
+Beyond the funded milestones, I commit to maintaining Chroma for a minimum of 6 months after completion, including bug fixes, security patches, and compatibility updates for Playwright and wallet extensions.
+
+**Sustainability Strategy:**
+
+To ensure long-term viability:
+- **Lightweight Architecture**: Keeping the codebase minimal and Playwright-first to reduce maintenance complexity
+- **Automated CI/CD**: Comprehensive testing pipelines to catch breaking changes early
+- **Dogfooding**: Active use in my own projects (Create Dot App) ensures I'll notice and fix issues quickly
+- **Community Building**: Creating clear contribution guidelines and engaging local Web2/Web3 developer communities to build a contributor base
+
+**Short-term Plans (6-12 months):**
+- Actively engage with the Polkadot developer community through forums, Discord, and social media to drive adoption
+- Create comprehensive integration examples and case studies with popular Polkadot dApps
+- Reach out to wallet teams (Polkadot.js, Talisman) to establish communication channels and explore official support
+- Begin research for supporting additional open-source wallet extensions
 
 **Long-term Vision:**
-- **Standard Testing Tool**: Establish Chroma as the standard E2E testing solution for Polkadot ecosystem wallet integrations
-- **Comprehensive Polkadot Support**: Expand support to cover all major open-source wallets and testing scenarios within the Polkadot ecosystem
-- **Advanced Testing Features**: Develop advanced features such as parallel test execution, test result analytics, and integration with popular CI/CD platforms
-- **Developer Ecosystem Growth**: Contribute to the overall growth of the Polkadot developer ecosystem by reducing friction in dApp development and testing
+- Establish Chroma as the standard E2E testing solution for Polkadot wallet integrations
+- Expand support to cover all major open-source wallets in the ecosystem
+- Seek additional funding for advanced features like support for other testing frameworks (Cypress, WebDriver, Vitest browser mode)
+- Contribute to the overall growth of the Polkadot developer ecosystem by reducing friction in dApp development and testing
 
 ## Additional Information
 
