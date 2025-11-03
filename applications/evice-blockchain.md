@@ -1,7 +1,8 @@
 # Evice Blockchain: Quantum-Resistant WASM L1/L2 with ZK-Aggregation
 
 * **Project Name:** Evice Blockchain
-* **Team Name:** Evice Labs 
+* **Team Name:** Evice Labs
+* **Level:** 3
 * **Payment Address:** 5Gpx19KAKftCDuxA2JuHfkkKuVBeiSp6eq9HUsd2LqDGUXw5
 
 ## Project Overview 📄
