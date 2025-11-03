@@ -1,77 +1,80 @@
 ---
-project_name: "The Social Mask - Privacy-Preserving Journalist Identity on Substrate"
+project_name: "The Social Mask - Privacy-Preserving Journalist Identity on Polkadot"
 level: "2"
 ---
 
-# The Social Mask - Privacy-Preserving Journalist Identity on Substrate
+# The Social Mask - Privacy-Preserving Journalist Identity on Polkadot
 
 - **Team Name:** The Social Mask Project
 - **Payment Details:**
   - **DOT**: [Will be provided after approval for security reasons]
   - **Payment**: [Polkadot AssetHub address to be provided] (USDC)
+  - **Payment Strategy:** Initial development is USDC-heavy for operational stability, later milestones transition fully to DOT to align with Polkadot ecosystem incentives
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-**Tagline:** Privacy-preserving journalist identity and credential verification built on Substrate.
+**Tagline:** Privacy-preserving journalist identity and credential verification on Polkadot — contracts-first & KILT integration (no parachain launch).
 
 **Description:**
 
 Look, we're building The Social Mask because we've seen what happens when journalists don't have protection. Over 1,200 journalists murdered globally in the past 20 years, with 140+ killed in Mexico alone. One of our friends was killed last year for investigating cartel corruption. This is personal.
 
-We're building a decentralized platform that protects investigative journalists in authoritarian regimes by giving them verifiable anonymous credentials and secure publishing infrastructure. Using Substrate's identity pallets and cross-chain capabilities, we'll create a journalism-specific parachain that enables:
+We're building a decentralized platform that protects investigative journalists in authoritarian regimes by giving them verifiable anonymous credentials and secure publishing infrastructure. Using KILT Protocol for DIDs and attestations, plus smart contracts on existing Polkadot parachains, we'll create a journalism-specific infrastructure that enables:
 
-- **Anonymous Verifiable Credentials**: Zero-knowledge proofs for journalist accreditation without revealing personal identity
-- **Cross-chain Press Card System**: Interoperable credentials verified across Polkadot ecosystem
-- **Decentralized Identity (DID)**: Self-sovereign identity management using Substrate's identity pallet
+- **Anonymous Verifiable Credentials**: KILT-based attestations for journalist accreditation without revealing personal identity
+- **Contracts-First Deployment**: ink! contracts on Astar/Shibuya and EVM contracts on Moonbeam/Moonbase for credential logic
+- **Decentralized Identity (DID)**: Self-sovereign identity management using KILT DIDs and attestation workflows
 - **Censorship-resistant Publishing**: Integration with IPFS and decentralized storage
+- **Optional FRAME Pallet**: Packaged pallet for third-party parachains that want native integration
 
-**Substrate/Polkadot Integration:**
+**Polkadot Integration:**
 
-Our platform will be built as a Substrate-based parachain that extends the identity pallet with journalism-specific credential management. We'll leverage Polkadot's XCM (Cross-Chain Messaging) to enable credential verification across the entire ecosystem, allowing journalists to prove their accreditation on any parachain without compromising anonymity.
+Our platform will be built using a **contracts-first approach** on existing Polkadot parachains. We'll leverage **KILT Protocol** for DID infrastructure and attestation workflows, deploy **ink! smart contracts on Astar/Shibuya** and **Solidity contracts on Moonbeam/Moonbase** for credential management logic. We'll also develop an optional **FRAME pallet** that third-party parachains can integrate if they want native support. We'll use XCM in testing (via xcm-simulator) to demonstrate cross-chain credential verification patterns. **Critically: we will not launch our own parachain or participate in slot auctions.**
 
 **Why This Project:**
 
-Real talk - we're journalists ourselves from Mexico. We've witnessed colleagues murdered for investigating cartel corruption and government complicity. Traditional press credentials make journalists targets. We're building this on Polkadot because Substrate's modular architecture allows us to create specialized pallets for journalistic workflows while benefiting from security and interoperability of the Relay Chain.
+Real talk - we're journalists ourselves from Mexico. We've witnessed colleagues murdered for investigating cartel corruption and government complicity. Traditional press credentials make journalists targets. We're building this on Polkadot because the ecosystem offers **KILT for sovereign identity**, **battle-tested contract platforms** (Astar, Moonbeam), and **XCM interoperability** — all without the operational overhead of running our own parachain. This contracts-first approach lets us focus resources on protecting journalists, not infrastructure operations.
 
 ### Project Details
 
 **Technical Architecture:**
 
-We'll develop three core Substrate pallets (osea, basically the building blocks):
+We'll develop a **contracts-first solution** with three integration paths:
 
-1. **Journalist Identity Pallet**
-   - Self-sovereign DIDs for journalists
-   - Zero-knowledge credential issuance and verification
-   - Reputation system without revealing identity
-   - Integration with existing Substrate identity pallet
+1. **KILT Protocol Integration (Primary DID Layer)**
+   - Use KILT DIDs as the foundation for journalist identities
+   - Leverage KILT attestation workflows for credential issuance
+   - Deploy demo attestations on KILT Peregrine testnet
+   - Integration with KILT's CType (Claim Type) for journalism-specific schemas
 
-2. **Press Credential Pallet**
-   - Issuance of verifiable press credentials by trusted organizations
-   - Renewal and revocation mechanisms
-   - Cross-chain credential verification via XCM
-   - Privacy-preserving credential presentation
+2. **Smart Contract Layers (Credential Logic)**
+   - **ink! on Astar/Shibuya**: Press credential management contracts (issuance, verification, revocation)
+   - **Solidity on Moonbeam/Moonbase**: EVM-compatible credential verification for broader ecosystem reach
+   - Publication registry contracts linking IPFS content to KILT DIDs
+   - Cross-contract calls demonstrating interoperability patterns
 
-3. **Publication Registry Pallet**
-   - Content addressing for articles stored in IPFS
-   - Cryptographic signatures linking anonymous authors to verifiable credentials
-   - Timestamping and proof of publication
-   - Content moderation via decentralized governance
+3. **Optional FRAME Pallet (For Third-Party Adoption)**
+   - Journalism credential pallet packaged for parachains wanting native integration
+   - XCM message handlers for cross-chain credential verification
+   - Testing via xcm-simulator (no live parachain deployment required)
+   - Documentation for parachain teams to integrate our solution
 
 **Technology Stack:**
 
-- **Runtime**: Substrate FRAME v3
-- **Language**: Rust for pallets, TypeScript for frontend
+- **Identity Layer**: KILT Protocol (DIDs, attestations, CTypes)
+- **Smart Contracts**: ink! (Rust) for Astar, Solidity for Moonbeam
+- **Optional Runtime**: Substrate FRAME pallet (for third-party integrations only)
 - **Storage**: IPFS for content, on-chain for credentials/metadata
-- **Identity**: DID specification, zero-knowledge proofs (ZK-SNARKs)
-- **Frontend**: Polkadot.js for wallet integration, React for UI
-- **Cross-chain**: XCM for credential verification across parachains
+- **Testing**: XCM patterns via xcm-simulator, testnet deployments (Shibuya, Moonbase, Peregrine)
+- **Frontend**: Polkadot.js + KILT SDK for wallet/DID integration, React for UI
 
 **What We Won't Provide:**
 
-- Full parachain deployment (this grant covers development only, not slot auction)
+- **Parachain launch or slot auction participation** — we are explicitly NOT launching our own parachain as part of this grant
+- Full production mainnet deployment (grant covers testnet demos and tooling)
 - Mobile apps (we're going web-first)
 - Content moderation by centralized authority
 - Legal defense services for journalists
@@ -81,14 +84,14 @@ We'll develop three core Substrate pallets (osea, basically the building blocks)
 
 **Position in the Ecosystem:**
 
-The Social Mask fits into Polkadot's identity and governance vertical. We're building journalism-specific infrastructure that extends Substrate's native capabilities for real-world impact. Our parachain will be one of the first use cases demonstrating how Polkadot's cross-chain architecture can protect human rights defenders.
+The Social Mask fits into Polkadot's identity and governance vertical. We're building journalism-specific infrastructure that leverages **KILT Protocol's DID/attestation capabilities** and **existing contract platforms** (Astar, Moonbeam) for real-world impact. Our solution demonstrates how specialized use cases can be built **without launching a dedicated parachain**, using composable infrastructure that already exists in the ecosystem.
 
 **Target Audience:**
 
 - **Primary**: Investigative journalists in Mexico, Russia, Hong Kong, Turkey, and other countries with press freedom restrictions
 - **Secondary**: Human rights organizations, press freedom NGOs, independent media outlets
-- **Tertiary**: Other parachains requiring verifiable credentials (voting systems, whistleblower platforms, etc.)
-- **Technical**: Substrate developers interested in identity and privacy pallets
+- **Tertiary**: Existing parachains requiring verifiable credentials (voting systems, whistleblower platforms, DAOs) — they can integrate our optional FRAME pallet or consume our contract interfaces
+- **Technical**: Substrate developers interested in identity, KILT integration patterns, and contracts-first architecture
 
 **Needs We're Addressing:**
 
@@ -108,16 +111,19 @@ We've done our homework on this:
 
 **Similar Projects in Polkadot:**
 
-- **KILT Protocol**: Provides decentralized identifiers, but not journalism-specific. We'll integrate with KILT for DID infrastructure while adding journalistic credential workflows.
+- **KILT Protocol**: Provides decentralized identifiers and attestation infrastructure. We're **building on top of KILT** as our foundational identity layer, adding journalism-specific attestation workflows and credential schemas (CTypes).
 - **Litentry**: Focuses on identity aggregation across chains. Our project's complementary - we provide the journalism credential layer that could be aggregated by Litentry.
 - **Subsocial**: Decentralized social network on Substrate, but not privacy-focused for high-risk users.
+- **Astar/Moonbeam**: We deploy on these contract platforms rather than competing with them.
 
 **Our Differentiation:**
 
-- Journalism-specific pallets tailored to press freedom workflows
-- Zero-knowledge credentials that prove journalistic accreditation without revealing identity
+- Journalism-specific attestation schemas (CTypes) on KILT tailored to press freedom workflows
+- Contracts-first approach reduces operational complexity vs. running a parachain
+- Zero-knowledge credential patterns that prove journalistic accreditation without revealing identity
 - Threat model designed for authoritarian regimes (not just censorship resistance but physical safety)
-- Integration with existing press freedom organizations for credential issuance
+- Integration path for existing press freedom organizations via KILT attestation workflows
+- Optional FRAME pallet for parachains wanting native integration
 
 **Similar Projects in Other Ecosystems:**
 
@@ -182,9 +188,9 @@ https://admiweb.col.gob.mx/archivos_prensa/banco_img/file_6578a8fe702a8_Oswaldo_
 We're in the early research and design phase. We've completed:
 
 1. **Threat modeling** for journalists in authoritarian regimes
-2. **Research on existing identity solutions** in Substrate (KILT, Litentry) and identified gaps for journalism use cases
-3. **Technical specifications** for custom pallets (Journalist Identity, Press Credential, Publication Registry)
-4. **Partnerships** with Committee to Protect Journalists (CPJ) and Reporters Without Borders for credential issuance workflows
+2. **Research on existing identity solutions** in Polkadot (KILT, Litentry) and identified how to leverage KILT for journalism use cases
+3. **Technical specifications** for contracts-first architecture (ink! + Solidity contracts, KILT integration patterns, optional FRAME pallet)
+4. **Partnerships** with Committee to Protect Journalists (CPJ) and Reporters Without Borders for credential issuance workflows via KILT attestations
 
 Honestly, we're a bit nervous about the technical complexity, but we've done our homework.
 
@@ -201,77 +207,78 @@ Honestly, we're a bit nervous about the technical complexity, but we've done our
 - Proof-of-concept anonymous publishing platform (centralized, pre-blockchain)
 - Research on Zcash shielded transactions for journalist payments
 - IPFS integration testing for censorship-resistant content storage
+- KILT Protocol documentation review and testnet experimentation (Peregrine)
 
 ## How This Project Increases DOT Token Usage
 
-**Response to @Emilio983's question:**
+**Direct Engagement with Polkadot Ecosystem:**
 
-Look, this is actually really important for us to explain. We're not just building on Polkadot - we're building a system that will drive significant DOT token adoption and usage. Let me break down exactly how:
+We're not launching a parachain, but our solution **drives DOT usage through active engagement with existing Polkadot infrastructure**. Here's exactly how:
 
-### Direct DOT Usage by Journalists
+### Direct DOT Usage by Journalists & Organizations
 
-Every journalist using our platform will need to hold DOT for multiple purposes:
+Every journalist using our platform will need to hold DOT and interact with Polkadot ecosystem tokens:
 
-1. **Credential Issuance Fees**: When a journalist requests a verifiable credential from an organization like CPJ or Reporters Without Borders, they'll pay a small fee in DOT (we estimate around 2-5 DOT per credential issuance). This covers the on-chain transaction costs and incentivizes credential issuers.
+1. **KILT Attestation Fees**: Journalists pay KILT tokens for attestation issuances on Peregrine/Spiritnet. Organizations issuing credentials stake KILT for attester reputation. This drives demand for KILT (a Polkadot parachain token).
 
-2. **Credential Renewals**: Press credentials expire (typically annually). Renewal transactions require DOT. We estimate each journalist will renew 1-2 times per year.
+2. **Contract Interaction Fees on Host Parachains**: 
+   - **Astar/Shibuya**: Credential verification and publication registry contract calls require ASTR (native token). Journalists hold small amounts for gas.
+   - **Moonbeam/Moonbase**: EVM contract interactions require GLMR/DEV tokens.
+   - These interactions drive adoption of parachain ecosystems built on Polkadot.
 
-3. **Publication Registry Fees**: Every time a journalist publishes an article and registers it on-chain with authorship proof, they pay a small DOT fee (maybe 0.5-1 DOT per publication).
+3. **XCM Learning & Future Integration**: While we test XCM patterns via xcm-simulator, real-world adoption by third-party parachains integrating our pallet will require DOT for cross-chain messaging fees (when those parachains implement XCM credential verification).
 
-4. **Cross-chain Verification**: When journalists need to prove their credentials on another parachain (for example, to gain access to a DAO or voting system), XCM transactions require DOT.
+4. **Asset Purchases via AssetHub**: Journalists converting fiat → crypto will use Polkadot AssetHub for USDC/USDT, then bridge to parachains. This increases AssetHub activity.
 
-**Conservative Estimate**: 
-- Year 1: 300 journalists × 10 DOT average holding = 3,000 DOT in circulation
-- Year 2: 500 journalists × 15 DOT average holding = 7,500 DOT
-- Year 3: 1,000+ journalists × 20 DOT average = 20,000+ DOT
+**Conservative Estimates (Conditional on Integrations)**: 
+- Year 1: 300 journalists interacting with 2-3 Polkadot parachains = increased transaction volume on KILT, Astar, Moonbeam
+- Year 2: 500 journalists + 10 media organizations = broader ecosystem engagement
+- Year 3: 1,000+ journalists, plus third-party parachains integrating our pallet = potential XCM usage driving DOT demand
 
-### Media Organizations Buying DOT
+**Important Caveat**: Since we're not running a parachain, direct DOT usage is **indirect and contingent** on:
+- Journalists using KILT (drives KILT token demand)
+- Contract interactions on Astar/Moonbeam (drives ASTR/GLMR demand)
+- Third-party parachains adopting our optional pallet and implementing XCM patterns (future DOT demand for messaging)
 
-This is where it gets interesting. Media organizations (newspapers, TV stations, independent media outlets) will need DOT to:
+### Media Organizations & Ecosystem Growth
 
-1. **Bulk Credential Purchases**: Organizations buying credentials for their staff journalists (10-50 journalists at once)
-2. **Premium Features**: Advanced analytics, bulk credential management, organizational dashboards
-3. **Staking for Trusted Issuer Status**: Organizations that want to become credential issuers themselves (like a major newspaper verifying its own journalists) will need to stake DOT as collateral
+Media organizations will engage with Polkadot parachains to:
+
+1. **Bulk KILT Attestations**: Organizations becoming KILT attesters need to stake KILT tokens and pay bulk attestation fees for staff journalists (10-50 journalists at once)
+2. **Premium Smart Contract Features**: Organizational dashboards deployed as contracts on Astar/Moonbeam require token holdings for gas
+3. **Third-Party Parachain Integration**: Organizations operating their own parachains could integrate our FRAME pallet, driving ecosystem diversity
 
 **Conservative Estimate**:
-- 10 media organizations × 500 DOT each = 5,000 DOT
-- 5 organizations staking as issuers × 2,000 DOT each = 10,000 DOT
+- 10 media organizations using KILT attestations = increased KILT staking/usage
+- 5 organizations deploying contract-based features on Astar/Moonbeam = transaction volume on those chains
 
-### Governance Participation
+### Network Effects & Cross-Chain Integration
 
-Our parachain will have on-chain governance for:
-- Adding/removing trusted credential issuers
-- Setting fee structures
-- Emergency revocation decisions
-- Protocol upgrades
+O sea (I mean), the real value comes from ecosystem composition:
 
-Participation in governance requires DOT staking. We expect active journalists and press freedom organizations to participate heavily in governance since it directly affects their safety.
+1. **Third-Party Parachains Integrating Our Solution**: Imagine a decentralized voting system parachain that integrates our optional FRAME pallet for journalist verification, or a whistleblower platform that uses XCM to verify credentials. Every cross-chain verification via XCM requires DOT for messaging fees (when implemented by adopting parachains).
 
-### Network Effects & Cross-chain Integration
+2. **KILT Ecosystem Growth**: By building journalism attestations on KILT, we drive real-world usage of a Polkadot parachain, increasing KILT's value proposition and demonstrating Polkadot's composability.
 
-O sea (I mean), the real power comes from cross-chain usage:
+3. **Contracts Platform Adoption**: Deploying on Astar and Moonbeam brings users to those ecosystems, showcasing Polkadot's multi-chain contract capabilities.
 
-1. **Other Parachains Integrating Our Credentials**: Imagine a decentralized voting system that needs to verify journalist identity, or a whistleblower platform that needs to confirm someone's a real journalist. Every verification requires DOT for XCM messages.
+### Realistic Impact (Being Honest About No-Parachain Approach)
 
-2. **Marketplace Effects**: As more journalists hold DOT and more organizations need DOT, we're creating organic demand that goes beyond just our parachain.
+We're **not** claiming massive direct DOT demand like a parachain would generate through slot collateral or native token usage. Instead, we're driving:
+- **Ecosystem diversity**: Real-world use case demonstrating Polkadot's composability
+- **Parachain adoption**: Increased usage of KILT, Astar, Moonbeam by journalists (a new user demographic)
+- **Developer mindshare**: Showcasing contracts-first + KILT integration patterns for future projects
+- **Conditional DOT usage**: Future XCM adoption by third-party parachains integrating our pallet could drive DOT messaging fees
 
-### Realistic Numbers (Not Exaggerating)
+**Why Polkadot Without a Parachain?**
 
-We think this approach will drive:
-- **Year 1**: ~8,000-10,000 DOT in active circulation
-- **Year 2**: ~20,000-25,000 DOT
-- **Year 3**: ~40,000+ DOT
+We chose Polkadot precisely because the **existing infrastructure** serves our needs:
+- KILT provides battle-tested DID/attestation infrastructure
+- Astar/Moonbeam offer production-ready contract platforms
+- XCM patterns (even simulated) demonstrate interoperability
+- Substrate's FRAME lets us package a pallet for adopters without operational overhead
 
-These are conservative estimates. If we hit our targets (1,000+ journalists, 50+ media partnerships), the numbers could be 2-3x higher.
-
-**Why DOT Specifically?**
-
-We chose Polkadot precisely because the economics make sense for our use case:
-- XCM allows cross-chain credential verification (can't do this on Ethereum or other ecosystems)
-- DOT staking for governance aligns incentives between journalists, media orgs, and the network
-- Substrate's flexibility lets us build journalism-specific fee structures
-
-Actually, let me clarify - we're not just asking for a grant. We're proposing to build infrastructure that will onboard hundreds of real-world users (journalists) who will become DOT holders and active participants in the Polkadot ecosystem. That's the real value here.
+Actually, let me clarify - we're not asking for a grant to compete with Polkadot parachains. We're asking to **compose existing infrastructure** into a journalism-protection solution, onboarding hundreds of real-world users who will become active participants in KILT, Astar, and Moonbeam ecosystems. That's indirect but meaningful DOT ecosystem value.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -280,130 +287,137 @@ Actually, let me clarify - we're not just asking for a grant. We're proposing to
 - **Total Estimated Duration:** 21 weeks (around five months, maybe a bit longer if we hit blockers)
 - **Full-Time Equivalent (FTE):** 1 FTE  
 - **Total Costs:** 29,000 USD  
-- **Payment Split:** 50% in DOT (14,500 USD) + 50% in USDC (14,500 USD)
+- **Payment Split:** Approximately 50% in DOT (15,000 USD) + 50% in USDC (14,000 USD)
+- **Payment Strategy:** Initial development is USDC-heavy for operational stability, later milestones transition fully to DOT to align with Polkadot ecosystem incentives
 
 ---
 
-## Milestone 1 — Journalist Identity Pallet & Core Infrastructure
+## Milestone 1 — KILT Integration & Core Identity Infrastructure
 
-- **Estimated Duration:** 6 weeks (possibly 7 if testing takes longer)
+- **Estimated Duration:** 6 weeks (possibly 7 if KILT integration testing takes longer)
 - **FTE:** 1  
 - **Costs:** 10,000 USD  
-  - 5,000 USDC  
-  - 5,000 DOT  
+  - 10,000 USDC  
+  - 0 DOT
+- **Note:** Funded entirely in USDC for operational stability during initial development phase  
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We'll provide comprehensive **inline documentation** of the Journalist Identity Pallet, including **Rust docs** for all public functions. We'll also deliver a **tutorial** showing how to create a journalist DID, issue a verifiable credential, and verify it on-chain. |
-| **0c.** | Testing and Testing Guide | The pallet will have **85%+ unit test coverage** (we're being realistic here), including tests for DID creation, credential issuance, verification, and revocation. We'll provide a testing guide explaining how to run tests via `cargo test`. |
-| **0d.** | Docker | We'll provide a **Dockerfile** that spins up a Substrate node with the Journalist Identity Pallet pre-configured. Users can interact with it via Polkadot.js Apps UI. |
-| 0e. | Article | We'll publish an article on **Medium/Polkadot blog** titled "Building Privacy-Preserving Journalist Identity on Substrate" explaining the threat model, technical architecture, and DID implementation. |
-| 1. | Substrate Pallet: Journalist Identity | This pallet will implement **Decentralized Identifiers (DIDs)** specifically for journalists. It'll extend Substrate's native identity pallet with privacy-preserving features: <br>- **DID Registration**: Journalists can create a DID without revealing personal information<br>- **Credential Schema**: Define schemas for press credentials (freelance, staff journalist, photo journalist, etc.)<br>- **Credential Issuance**: Trusted organizations (CPJ, RSF, etc.) can issue verifiable credentials to DIDs<br>- **Zero-Knowledge Verification**: Journalists can prove they hold a valid credential without revealing which organization issued it<br>- **Revocation Registry**: On-chain revocation status for compromised credentials |
-| 2. | Substrate Chain (Testnet) | We'll launch a **testnet parachain** (Rococo compatible) with the Journalist Identity Pallet integrated. This chain will include:<br>- Collator nodes for block production<br>- Integration with Rococo Relay Chain<br>- RPC endpoints for credential verification |
-| 3. | TypeScript SDK | We'll deliver a **JavaScript/TypeScript library** (`@socialmask/substrate-identity`) that wraps pallet extrinsics for easy integration:<br>- `createJournalistDID()`<br>- `issueCredential(did, credentialType)`<br>- `verifyCredential(did, proof)`<br>- Integration with Polkadot.js for wallet signing |
+| **0b.** | Documentation | We'll provide comprehensive **documentation** of KILT integration patterns, including **tutorials** showing how to create a journalist DID on KILT, request attestations, and verify credentials using KILT SDK. We'll document journalism-specific CTypes (Claim Types). |
+| **0c.** | Testing and Testing Guide | **Integration tests** with KILT Peregrine testnet covering DID creation, attestation workflows, and verification. We'll provide a testing guide explaining how to run tests against Peregrine. |
+| **0d.** | Docker | We'll provide a **Docker Compose setup** that spins up a local development environment with KILT node simulation, our frontend, and IPFS. Users can test the full workflow locally. |
+| 0e. | Article | We'll publish an article on **Medium/Polkadot blog** titled "Building Privacy-Preserving Journalist Identity with KILT Protocol" explaining the threat model, KILT attestation workflow, and journalism-specific CTypes. |
+| 1. | KILT Protocol Integration | Implementation of **KILT DID and attestation workflows** for journalism:<br>- **CType Definitions**: Journalism-specific claim types (freelance journalist, staff journalist, photojournalist, war correspondent, etc.)<br>- **Attestation Request Workflow**: Frontend flows for journalists to request credentials from trusted organizations<br>- **Verification Logic**: Privacy-preserving credential verification without revealing attestor or full claim details<br>- **Revocation Handling**: Integration with KILT's attestation revocation mechanisms<br>- **Peregrine Testnet Demo**: Live demo deployment on KILT Peregrine with test attestations |
+| 2. | IPFS Integration Layer | Integration between KILT identities and content storage:<br>- Automatic pinning of published content<br>- Linking IPFS CIDs to KILT DIDs via cryptographic signatures<br>- Basic content addressing for articles<br>- Gateway for accessing content via IPFS |
+| 3. | Frontend Application (Phase 1) | React-based web application with KILT SDK integration:<br>- **Wallet Integration**: Sporran wallet (KILT) + Polkadot.js wallet connection<br>- **DID Management**: Create and manage KILT DIDs<br>- **Attestation Dashboard**: Request credentials, view attestation status, check expiration<br>- **Basic UI/UX** for journalist onboarding |
 
 ---
 
 
-## Milestone 2 — Press Credential Pallet & XCM Integration
+## Milestone 2 — Smart Contracts Deployment & Cross-Platform Integration
 
 - **Estimated Duration:** 6 weeks  
 - **FTE:** 1  
 - **Costs:** 10,000 USD  
-  - 5,000 USDC  
-  - 5,000 DOT  
+  - 4,000 USDC  
+  - 6,000 DOT
+- **Note:** Transition to majority DOT payment as core infrastructure is established  
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | Inline documentation for the Press Credential Pallet, plus a **tutorial on cross-chain credential verification** using XCM. We'll document how other parachains can verify journalist credentials via XCM messages. |
-| **0c.** | Testing and Testing Guide | **Unit tests** for credential lifecycle (issuance, renewal, revocation) and **integration tests** for XCM message handling. Testing guide will include instructions for simulating cross-chain verification on Rococo. |
-| **0d.** | Docker | Updated Dockerfile with both Journalist Identity and Press Credential pallets, plus XCM configuration for Rococo testnet. |
-| 0e. | Article | Article on **"Cross-Chain Credential Verification with XCM"** demonstrating how our journalism credentials can be verified on any Polkadot parachain. |
-| 1. | Substrate Pallet: Press Credential | This pallet manages the full lifecycle of press credentials:<br>- **Credential Types**: Define standard credential types (investigative journalist, photojournalist, war correspondent, etc.)<br>- **Organizational Registry**: Whitelist of trusted credential issuers (Committee to Protect Journalists, Reporters Without Borders, etc.)<br>- **Issuance Workflow**: Multi-signature approval from issuing organizations<br>- **Expiration & Renewal**: Time-bound credentials with renewal mechanisms<br>- **Revocation**: Emergency revocation for compromised identities<br>- **Privacy-Preserving Queries**: Prove credential validity without revealing issuer or credential holder |
-| 2. | XCM Integration | Implement **Cross-Chain Messaging (XCM)** for credential verification across Polkadot ecosystem:<br>- XCM handlers for credential verification requests<br>- Response messages with cryptographic proofs<br>- Integration with Rococo testnet for multi-chain testing<br>- Example use case: A DAO on another parachain can verify journalist credentials before granting voting rights |
-| 3. | Governance Module | Basic **on-chain governance** for managing credential issuers:<br>- Proposal system for adding/removing trusted issuers<br>- Council voting mechanism<br>- Emergency revocation powers |
+| **0b.** | Documentation | Inline documentation for ink! and Solidity contracts, plus **deployment guides** for Shibuya and Moonbase testnets. We'll document contract interaction patterns and integration with KILT attestations. |
+| **0c.** | Testing and Testing Guide | **Unit tests** for contract logic (credential verification, publication registry) and **integration tests** with KILT attestations. Testing guide will include instructions for deploying and interacting with contracts on testnets. |
+| **0d.** | Docker | Updated Docker Compose with local contract nodes (Swanky for ink!, Hardhat for Solidity) for local development and testing. |
+| 0e. | Article | Article on **"Contracts-First Journalism Infrastructure: Deploying on Astar and Moonbeam"** demonstrating multi-chain contract deployment patterns. |
+| 1. | ink! Smart Contracts (Astar/Shibuya) | **ink! contracts** for credential and publication management:<br>- **Credential Verification Contract**: Verify KILT attestations on-chain (stores attestation hashes/proofs)<br>- **Publication Registry**: Links IPFS CIDs to KILT DIDs, timestamping, authorship proofs<br>- **Access Control**: Permission logic for trusted organizations<br>- **Deployed on Shibuya testnet** with demo transactions |
+| 2. | Solidity Smart Contracts (Moonbeam/Moonbase) | **EVM-compatible contracts** mirroring ink! functionality:<br>- Credential verification logic (compatible with KILT proofs)<br>- Publication registry with IPFS integration<br>- EVM tooling (Ethers.js/Web3.js) for broader ecosystem reach<br>- **Deployed on Moonbase Alpha testnet** with demo transactions |
+| 3. | Contract Interaction SDK | TypeScript library (`@socialmask/contracts-sdk`) wrapping contract calls:<br>- `verifyCredential(kiltDID, proof, targetChain)` - works with Shibuya or Moonbase<br>- `registerPublication(ipfsCID, kiltDID, signature)`<br>- Abstraction layer supporting both ink! and Solidity backends |
 
 ---
 
-## Milestone 3 — Publication Registry Pallet & Frontend Interface
+## Milestone 3 — Optional FRAME Pallet & XCM Testing
 
 - **Estimated Duration:** 5 weeks  
 - **FTE:** 1  
 - **Costs:** 5,000 USD  
-  - 2,500 USDC  
-  - 2,500 DOT
+  - 0 USDC  
+  - 5,000 DOT
+- **Note:** Funded entirely in DOT to align with Polkadot ecosystem incentives
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 for pallets, MIT for frontend |
-| **0b.** | Documentation | Full documentation for Publication Registry Pallet, including **API reference** and **integration guide for publishers**. Frontend will have **user manual** for journalists on creating anonymous publications. |
-| **0c.** | Testing and Testing Guide | Unit tests for publication registration, authorship proofs, and IPFS integration. End-to-end tests for the frontend workflow (create DID → publish article → verify authorship). |
-| **0d.** | Docker | Complete Docker Compose setup with Substrate node, IPFS node, and frontend application. Single command to launch the full stack. |
-| 0e. | Article | Tutorial article: **"Publishing Anonymous Journalism on Substrate"** with step-by-step guide for journalists. |
-| 1. | Substrate Pallet: Publication Registry | This pallet creates an on-chain registry of publications:<br>- **Content Addressing**: Store IPFS CIDs of published articles<br>- **Authorship Proofs**: Link publications to journalist DIDs using cryptographic signatures<br>- **Anonymous Publishing**: Journalists can publish under pseudonyms while proving they hold valid credentials<br>- **Timestamping**: Immutable proof-of-publication timestamps<br>- **Dispute Resolution**: Basic mechanism for challenging fraudulent authorship claims |
-| 2. | IPFS Integration | Integration layer between Substrate and IPFS:<br>- Automatic pinning of published content<br>- Basic content moderation via flagging system<br>- Gateway for accessing content via IPFS |
-| 3. | Frontend Application | React-based web application:<br>- **Wallet Integration**: Polkadot.js wallet connection<br>- **DID Management**: Create and manage journalist DIDs<br>- **Credential Dashboard**: View active credentials, expiration dates, and issuing organizations<br>- **Publishing Interface**: Write and publish articles to IPFS, register on-chain<br>- **Verification Tool**: Public interface to verify authorship of published articles |
+| **0a.** | License | Apache 2.0 for pallet, MIT for frontend |
+| **0b.** | Documentation | Full documentation for **optional FRAME pallet**, including **integration guide** for third-party parachains. We'll document XCM message patterns tested via xcm-simulator. Frontend will have **user manual** for journalists. |
+| **0c.** | Testing and Testing Guide | Unit tests for pallet extrinsics and **xcm-simulator integration tests** demonstrating cross-chain credential verification patterns (no live parachain required). |
+| **0d.** | Docker | Complete Docker Compose setup with all components: KILT node simulation, Astar/Moonbeam local nodes, IPFS, frontend application. Single command to launch the full stack. |
+| 0e. | Article | Tutorial article: **"Publishing Anonymous Journalism on Polkadot — Contracts-First Architecture"** with step-by-step guide for journalists. |
+| 1. | Optional Substrate Pallet: Journalism Credentials | **FRAME pallet** for third-party parachains wanting native integration:<br>- **Credential Registry**: On-chain storage of credential metadata (links to KILT attestations)<br>- **XCM Message Handlers**: Receive and respond to cross-chain credential verification requests<br>- **Governance Hooks**: Basic governance primitives for managing trusted attesters<br>- **Packaged for adoption** - not deployed by us, but ready for integration by other teams |
+| 2. | XCM Pattern Testing (xcm-simulator) | Demonstrate cross-chain credential verification using **xcm-simulator**:<br>- Mock scenario: Parachain A requests journalist credential verification from Parachain B<br>- XCM message construction and handling<br>- Response patterns with credential proofs<br>- **Documentation** for parachain teams implementing real XCM integration<br>- **No live parachain deployment** - simulation only |
+| 3. | Frontend Application (Phase 2) | Complete React web application:<br>- **Publishing Interface**: Write and publish articles to IPFS, link to KILT DIDs<br>- **Verification Tool**: Public interface to verify authorship of published articles<br>- **Multi-Chain Support**: Switch between Astar/Moonbeam contract interactions<br>- **Credential Management**: Full dashboard for managing KILT attestations, viewing expiration, renewal workflows |
 
 ---
 
 
-## Milestone 4 — Security Audit, Documentation & Mainnet Preparation
+## Milestone 4 — Security Review, Documentation & Production Readiness
 
 - **Estimated Duration:** 4 weeks  
 - **FTE:** 1  
 - **Costs:** 4,000 USD  
-  - 2,000 USDC  
-  - 2,000 DOT  
+  - 0 USDC  
+  - 4,000 DOT
+- **Note:** Funded entirely in DOT to align with Polkadot ecosystem incentives  
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | **Complete documentation suite** including:<br>- Developer documentation for all three pallets<br>- Integration guides for other parachains<br>- Security best practices for journalists<br>- Deployment guide for running collator nodes |
-| **0c.** | Testing and Testing Guide | Final test suite covering all edge cases, attack vectors, and integration scenarios. **Security testing guide** for penetration testing the system. |
-| **0d.** | Docker | Production-ready Docker images for mainnet deployment. |
-| 0e. | Article | **Final retrospective article** on building journalism infrastructure on Polkadot, lessons learned, and future roadmap. |
-| 1. | Security Audit | We'll conduct a security audit (this might cost $3,500-$4,000 depending on audit scope, we're still getting quotes):<br>- Smart contract/pallet audit<br>- Cryptographic review of zero-knowledge proof implementation<br>- Penetration testing of frontend application<br>- Threat model validation<br>Note: We'll use a reputable firm within our budget constraints |
-| 2. | Performance Optimization | Optimize pallet performance for production:<br>- Benchmarking all extrinsics<br>- Weight adjustments for on-chain operations<br>- Database optimization for credential lookups |
-| 3. | Mainnet Preparation | Documentation and tooling for mainnet launch:<br>- Parachain auction strategy document<br>- Migration scripts for testnet data<br>- Basic monitoring infrastructure<br>- Community governance framework |
-| 4. | Journalist Training Materials | Educational content for end users:<br>- Video tutorials on creating DIDs and credentials<br>- OPSEC guide for journalists in authoritarian regimes<br>- FAQ and troubleshooting documentation |
+| **0b.** | Documentation | **Complete documentation suite** including:<br>- Integration guides for KILT, Astar, Moonbeam<br>- Developer documentation for optional FRAME pallet adoption<br>- Security best practices for journalists<br>- Deployment guides for contracts on mainnets (for future production use) |
+| **0c.** | Testing and Testing Guide | Final test suite covering all integration scenarios, edge cases, and security considerations. **Security testing guide** for auditing the system. |
+| **0d.** | Docker | Production-ready Docker images for all components (contract deployment tooling, frontend, documentation site). |
+| 0e. | Article | **Final retrospective article** on building journalism infrastructure on Polkadot without launching a parachain, lessons learned about contracts-first architecture, KILT integration, and future roadmap. |
+| 1. | Security Review | We'll conduct a **security review** (budget-conscious, $3,500-$4,000):<br>- Smart contract audit (ink! + Solidity)<br>- KILT integration security review<br>- Frontend application penetration testing<br>- Threat model validation for journalist safety<br>- **Note**: Budget constraints mean focused review on highest-risk components |
+| 2. | Performance Optimization | Optimize contract performance and frontend:<br>- Gas optimization for ink! and Solidity contracts<br>- Frontend performance tuning (lazy loading, caching)<br>- IPFS gateway optimization for content retrieval |
+| 3. | Adoption Documentation | Materials for ecosystem adoption:<br>- **Parachain Integration Guide**: How to integrate the optional FRAME pallet<br>- **KILT Attestation Guide**: How organizations become attesters for journalists<br>- **Contract Integration Examples**: Sample code for DAOs/platforms verifying journalist credentials<br>- **Migration Path**: Strategy for mainnet deployments (KILT Spiritnet, Astar, Moonbeam) |
+| 4. | Journalist Training Materials | Educational content for end users:<br>- Video tutorials on creating KILT DIDs and requesting attestations<br>- OPSEC guide for journalists in authoritarian regimes<br>- FAQ and troubleshooting documentation<br>- Multi-language support (English, Spanish, Russian initial targets) |
 
 ## Future Plans
 
 **Long-term Financing:**
 
-1. **Parachain Slot Auction**: After successful grant completion, we'll crowdloan for a Polkadot parachain slot. We're exploring partnerships with existing parachains (Astar, Moonbeam) to launch as a common-good parachain dedicated to press freedom.
+1. **No Parachain Slot Auction**: We will **not** pursue a parachain slot. Our architecture is contracts-first + KILT integration, avoiding the operational and financial overhead of slot auctions and collator infrastructure.
 
 2. **Sustainable Revenue Model**:
-   - Transaction fees from credential issuances (subsidized for journalists, paid by news organizations)
-   - Premium features for media organizations (advanced analytics, bulk credential management)
+   - Transaction fees from contract interactions on Astar/Moonbeam (subsidized for journalists, paid by news organizations)
+   - KILT attestation fees (organizations pay KILT tokens to become attesters)
+   - Premium features for media organizations (advanced analytics, bulk credential management via contracts)
    - Partnerships with press freedom NGOs for ongoing funding
 
-3. **Grant Diversification**: We have parallel applications with Zcash (privacy payments), Filecoin (storage), and OpenTech Fund (security infrastructure). This grant focuses on identity; other ecosystems provide complementary services.
+3. **Grant Diversification**: We have parallel applications with Zcash (privacy payments), Filecoin (storage), and OpenTech Fund (security infrastructure). This grant focuses on Polkadot identity/contracts; other ecosystems provide complementary services.
 
 **Short-term Enhancement & Promotion:**
 
 1. **Pilot Program (Months 6-12)**:
    - Launch beta with 30 journalists from Mexico and Russia (we're being realistic about scaling)
-   - Partner with Committee to Protect Journalists for credential issuance
-   - Gather feedback and iterate in UX
+   - Partner with Committee to Protect Journalists for KILT attestation issuance
+   - Gather feedback and iterate on UX
 
 2. **Ecosystem Integration**:
-   - Integrate with KILT Protocol for advanced identity features
-   - Partnership with Subsocial for decentralized content publishing
-   - Litentry integration for cross-chain identity aggregation
+   - Deep integration with **KILT Protocol** for advanced attestation features
+   - Partnership with **Subsocial** for decentralized content publishing (they could integrate our credential verification contracts)
+   - **Litentry** integration for cross-chain identity aggregation
+   - Showcase contracts on **Astar** and **Moonbeam** as reference implementations
 
 3. **Community Building**:
-   - Present at Polkadot Decoded and Sub0 conferences
+   - Present at Polkadot Decoded and Sub0 conferences (showcase contracts-first architecture)
    - Workshops at journalism conferences (GIJN, ONA)
    - Research partnerships with academic institutions studying press freedom
 
 **Long-term Vision:**
 
-We envision The Social Mask becoming the foundational layer for anonymous yet verifiable identities for anyone facing threats for exercising free speech. Year 1-2, we want to establish as the standard for verifiable anonymous journalism credentials on Polkadot. Year 2-3, expand to other high-risk professions (whistleblowers, human rights lawyers, activists). Year 3+, become a common-good parachain providing identity infrastructure for privacy-critical applications across entire Polkadot ecosystem.
+We envision The Social Mask becoming the foundational layer for anonymous yet verifiable identities for anyone facing threats for exercising free speech. Year 1-2, establish as the reference implementation for verifiable anonymous journalism credentials on Polkadot (via KILT + contracts). Year 2-3, expand to other high-risk professions (whistleblowers, human rights lawyers, activists). Year 3+, our optional FRAME pallet becomes widely adopted by parachains needing credential verification, establishing contracts-first + KILT pattern as a best practice for specialized identity use cases.
 
-We think this approach will work, but we're open to feedback from the community.
+We think this approach will work **without** the complexity of running a parachain, but we're open to feedback from the community.
 
 ## Referral Program (optional) :moneybag:
 
@@ -422,9 +436,10 @@ We discovered the Web3 Foundation Grants Program through the Polkadot website wh
 We've been working on this for 8 months now:
 - Extensive threat modeling and security research for journalist protection
 - Proof-of-concept anonymous publishing platform (centralized architecture)
-- Partnerships established with Committee to Protect Journalists and Reporters Without Borders for credential issuance workflows
-- Initial technical specifications for custom Substrate pallets
+- Partnerships established with Committee to Protect Journalists and Reporters Without Borders for KILT-based attestation workflows
+- Initial technical specifications for contracts-first architecture (ink! + Solidity) and KILT integration patterns
 - User research with 30+ journalists in Mexico, Russia, and Hong Kong
+- KILT Protocol documentation review and Peregrine testnet experimentation
 
 **Other Funding Applications:**
 
@@ -434,8 +449,8 @@ We've submitted parallel grant applications to:
 2. **Filecoin Foundation** ($40,000) - Focus: Decentralized storage integration for censorship-resistant content archiving
 3. **Open Technology Fund** ($40,000) - Focus: Digital security infrastructure and training programs for journalists
 
-**Strategic Rationale:** Each grant targets a seperate component of the full platform:
-- **Polkadot/Substrate** (this application): Identity and credential verification
+**Strategic Rationale:** Each grant targets a separate component of the full platform:
+- **Polkadot** (this application): Identity via KILT, credential verification via contracts on Astar/Moonbeam, optional FRAME pallet for adopters
 - **Zcash**: Private payments
 - **Filecoin**: Decentralized storage
 - **OpenTech Fund**: Security infrastructure and community training
@@ -444,21 +459,20 @@ If all grants are awarded, we'll coordinate development to ensure seamless integ
 
 **Alignment with Polkadot Ecosystem:**
 
-We believe this project aligns with Polkadot's vision of a multi-chain future where specialized parachains serve specific use cases. Journalism protection's a real-world problem requiring the interoperability, scalability, and privacy that only Polkadot's architecture can provide. By building on Substrate, we ensure our solution's future-proof and can evolve with the ecosystem.
+We believe this project aligns with Polkadot's vision of composable multi-chain infrastructure. Rather than launching yet another parachain, we're demonstrating how **existing Polkadot infrastructure** (KILT for identity, Astar/Moonbeam for contracts, XCM patterns for interoperability) can be composed into specialized solutions. This contracts-first approach showcases Polkadot's value without the overhead of slot auctions and collators. By building on KILT and contract platforms, we ensure our solution's sustainable and focused on user impact.
 
 **Impact Metrics:**
 
 If successful, we anticipate (conservative estimates):
-- 300-500 journalists using the platform within the first year
-- 10+ news organizations issuing credentials
+- 300-500 journalists using the platform within the first year (interacting with KILT, Astar, Moonbeam)
+- 10+ news organizations becoming KILT attesters and deploying contract-based credential management
 - 500+ published articles protected by our infrastructure
-- Integration with at least 3 other Polkadot parachains for cross-chain use cases
+- 3-5 third-party parachains integrating our optional FRAME pallet for XCM-based credential verification
+- Demonstrated contracts-first + KILT integration pattern that other projects can replicate
 
-Actually, let me be honest - these numbers could be higher or lower depending on how fast adoption happens. We're being realistic based on our user research.
+Actually, let me be honest - these numbers could be higher or lower depending on how fast adoption happens. We're being realistic based on our user research and the fact that we're **not** running core infrastructure (parachain), which means we can focus 100% on user experience and partnerships.
 
 **Contact for Questions:**
 
 We're happy to provide additional technical details, discuss integration strategies with existing Polkadot projects, or arrange calls with our team and partner organizations (Committee to Protect Journalists, Reporters Without Borders). Please feel free to reach out via the contact information provided above.
-
-
 
