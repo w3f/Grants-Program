@@ -1969,13 +1969,14 @@ By separating bonding, election, and reward logic into independent pallets and t
 
 ### Contact
 
-* **Contact Name:** Joby Reuben
-* **Email:** [jobyreuben@gmail.com](mailto:jobyreuben@gmail.com)
+- **Contact Name:** Joby Reuben
+- **Contact Email:** jobyreuben@gmail.com
+- **Website:** - 
 
 ### Legal Structure
 
-* **Registered Legal Entity:** Auguth Tech Pvt. Ltd.
-* **Registered Address:** 22A/5, Gandhi Nagar, Oddanchatram, Dindigul, Tamil Nadu, India – 624619
+- **Registered Address:** 22A/5, Gandhi Nagar, Oddanchatram, Dindigul, Tamil Nadu, India – 624619
+- **Registered Legal Entity:** Auguth Tech Pvt. Ltd.
 
 ### Team’s Experience
 
@@ -1987,7 +1988,7 @@ Both have contributed to advanced **closed-source systems** involving compilers,
 
 The team also delivered the earlier **Web3 Foundation–supported PoCS (Proof of Contract Stake)** project (Early 2024), which validated XP-based staking mechanisms. The findings from that work directly inform the M3S framework, evolving it from a single proof-of-concept into a **general-purpose staking and bonding architecture** suitable for broader ecosystem use.
 
-### Team Code Repositories
+### Team Code Repos
 
 Most prior projects from **Auguth Tech** and the senior team members are **proprietary**, developed over several years and incorporating **original research** in **consensus mechanisms**, **runtime parallelization**, and **state mechanics**. These works remain confidential due to their **continued relevance to internal R&D and forthcoming commercialization efforts**, forming the foundation for future releases. This confidentiality has also contributed to the significant **interval between the team’s initial [PoCS](https://github.com/w3f/Grants-Program/blob/master/applications/PoCS.md) grant and the current proposal**, as efforts were directed toward advancing and validating these core systems.
 
@@ -1998,7 +1999,7 @@ Reviewers are requested to evaluate this proposal based on its **technical preci
 * [Joby Reuben](https://github.com/jobyreuben)
 * [Naveen Jose](https://github.com/silvernberry)
 
-**LinkedIn Profiles**
+### Team LinkedIn Profiles
 
 * [Joby Reuben](https://www.linkedin.com/in/jobyreuben)
 * [Naveen Jose](https://www.linkedin.com/in/naveen-jose-568b02144)
