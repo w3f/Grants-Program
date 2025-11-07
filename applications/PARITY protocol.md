@@ -104,7 +104,10 @@ This is **on-chain relative performance market infrastructure.**
 * **Richard Welsh** — Project Lead
 * **Bharath** — Full-Stack Blockchain Developer & Product Architect
 * **Frode Aschim** — Strategy, Logic and Trading Oversight
+
+**Unpaid Advisory**
 * **Daniel Olano** — DAO Infrastructure, Scalability, and Interoperability
+* **Phil Mitchelson** — Marketing, Growth, Commercial  
 
 ### Contact
 
@@ -126,6 +129,7 @@ This is **on-chain relative performance market infrastructure.**
 **Unpaid advisor**  
 
 - Daniel Olano is the founder of Virto Network and the Krievo parachain.
+- Phil Mitchelson is currently VP of Growth at Superbet 
 
 ### Team Code Repos
 
@@ -137,6 +141,8 @@ This is **on-chain relative performance market infrastructure.**
 * [Richard Welsh](https://www.linkedin.com/in/richardwelsh)
 * [Bharath](https://www.linkedin.com/in/bharathcoorg)
 * [Frode Aschim](https://www.linkedin.com/in/frode-aschim-9936a912)
+* [Phil Mitchelson](https://www.linkedin.com/in/phil-mitchelson)
+
 
 ## Development Status :open_book:
 
