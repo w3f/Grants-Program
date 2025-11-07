@@ -33,9 +33,9 @@ Just as [Polymarket](https://polymarket.com/) and [Kalshi](https://kalshi.com/) 
 
 - **Crypto centric:** Bitcoin vs Gold, Ethereum vs Bitcoin, Solana vs Ethereum etc
 - **Traditional markets:** Microsoft vs Apple market cap, Intel vs Nvidia market cap 
-- **Sports:** Team A’s performance vs Team B’s performance
-- **Film and TV:** Streaming performance etc
-- **Music:** Streaming performance etc
+- **Sports:** Team/Player A’s performance vs Team/Player B’s performance
+- **Film and TV:** Streaming/Subscriber performance between IP/Platform A and IP/Platform B
+- **Music:** Streaming/Subscriber performance between Artist/Platform A and Artist/Platform B.
 
 Adoption of **dUSD** creates an ongoing and scalable revenue stream to Decent Partners from **Brale (dUSD issuer)**. Adoption recirculates funding, which can be directed into new R&D/innovation. 
 
