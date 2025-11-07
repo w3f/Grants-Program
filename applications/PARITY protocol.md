@@ -146,7 +146,7 @@ This is **on-chain relative performance market infrastructure.**
 
 ## Development Status :open_book:
 
-The team have spent around 6 months in R&D on the project and are close to finalising the core contracting logic, operations and fee structures, but there are few decisions to be made on rebalancing systems and the contracts will need to be audited. We also want to enable the broader community to test and improve the project ahead of launch. 
+The team have spent around 6 months in R&D on the project and are close to finalising the core contracting logic, operations and fee structures, but there are few decisions to be made on rebalancing systems owing to the need to bootstrap initial demand in Kusama. The contracts will need to be audited. We also want to enable the broader community to test and improve the project ahead of launch. 
 
 * Proof of Concept live on Paseo Asset Hub
 * Core contracts 90% complete
