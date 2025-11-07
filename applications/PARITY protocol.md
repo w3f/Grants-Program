@@ -103,7 +103,7 @@ This is **on-chain relative performance market infrastructure.**
 
 * **Richard Welsh** — Project Lead
 * **Bharath** — Full-Stack Blockchain Developer & Product Architect
-* **Frode Aschim** — Strategy, Logic and Trading Oversight
+* **Frode Aschim** — Logic, Compliance and Trading Oversight
 
 **Unpaid Advisory**
 * **Daniel Olano** — DAO Infrastructure, Scalability, and Interoperability
@@ -128,13 +128,13 @@ This is **on-chain relative performance market infrastructure.**
 
 **Unpaid advisor**  
 
-- Daniel Olano is the founder of Virto Network and the Krievo parachain.
+- Daniel Olano is the founder of Virto Network and the Kreivo parachain.
 - Phil Mitchelson is currently VP of Growth at Superbet 
 
 ### Team Code Repos
 
-* TO DO [https://github.com/decent-partners/parity-protocol-evm](https://github.com/decent-partners/parity-protocol-evm)
-* TO DO [https://github.com/decent-partners/parity-ui](https://github.com/decent-partners/parity-ui)
+* [Original concept](https://github.com/Decent-Partners/Parity/blob/main/Concept/Original.md) 
+* [Contracts](https://github.com/Decent-Partners/Parity/tree/main/Logic)
 
 ### Team LinkedIn Profiles (if available)
 
@@ -172,11 +172,9 @@ The team have spent around 6 months in R&D on the project and are close to final
 
 ## Future Plans
 
-* Publish open audit on GitHub
 * Propose audit via [PAL bounty](https://dotpal.io/) or Kusama Treasury
-* Propose bug bounty and testing incentives via Kusama Treasury
+* Propose bug bounty, testing/UX incentives via Kusama Treasury
 * Maintain public repo and template forks
-* Submit for **W3F Maintenance Grant** for ongoing updates
 
 ## Referral Program (optional) :moneybag:
 
