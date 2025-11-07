@@ -11,7 +11,7 @@
 
 ### Overview
 
-**Parity Protocol** is an open-source suite of EVM smart contracts enabling the creation of **synthetic ratio markets** between any two on-chain assets.
+**Parity Protocol** is an open-source suite of EVM smart contracts enabling the creation of **synthetic ratio markets** between any two on-chain assets. The design incorporates a compounding NAV strategy that rewards early adopters through a dynamic bonus mechanism. 
 
 It delivers a **secure, reusable primitive** for tracking relative performance, designed for deployment across Polkadot’s EVM compatible networks — beginning with **Kusama Asset Hub (AH)**.
 
