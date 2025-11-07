@@ -135,6 +135,7 @@ The remaining funds will serve as the stipend for the **1.0 FTE** (Syafiq Nabil)
 **Justification for Cost:** This funding provides the stipend for the **1.0 FTE** (Syafiq Nabil) to dedicate two months to building the core ZK-Rollup components, including the complex `AggregationCircuit`.
 
 | Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
 | 1. | ZK-Rollup Node | A functional Sequencer and Prover are implemented. |
 | 2. | AggregationCircuit | The `AggregationCircuit` is implemented, capable of aggregating at least two L2 batch proofs into one. |
 | 3. | L1/L2 Communication | The L2 Sequencer can successfully post the aggregated proof to the L1 bridge contract (from M1) for verification. |
