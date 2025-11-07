@@ -162,11 +162,12 @@ The team have spent around 6 months in R&D on the project and are close to final
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | **1.** | Public repo, testnet deployments (Paseo AH), oracle integration, indexer setup (Supabase), monitoring scripts                                                  | 4 weeks / 10,000 USD |
 | **2.** | Protocol rebalancing logic, reserve stability via lending protocol/DEX integration, full test suite, developer documentation, PMM swap examples, fork template | 4 weeks / 10,000 USD |
-| **3.** | Third-party audit, NatSpec + tutorial, mainnet deploy (Asset Hub), full dUSD integration, DAO legal wrapper setup (Wyoming DAO LLC / UNA/DUNA)                 | 4 weeks / 10,000 USD |
+| **3.** | NatSpec + tutorial, mainnet deploy (Asset Hub), full dUSD integration, full Virto Connect integration, DAO legal wrapper setup (Wyoming DAO LLC / UNA/DUNA)                 | 4 weeks / 10,000 USD |
 
 ## Future Plans
 
 * Publish open audit on GitHub
+* Propose audit via [PAL bounty](https://dotpal.io/) or Kusama Treasury
 * Propose bug bounty and testing incentives via Kusama Treasury
 * Maintain public repo and template forks
 * Submit for **W3F Maintenance Grant** for ongoing updates
