@@ -1,44 +1,51 @@
-# **Parity Protocol**
-
----
+# Parity Protocol
 
 * **Team Name:** Decent Partners Ltd
 * **Payment Details:**
 
-  * **DOT:** `FvrbaMus8iASyrQYkajQWDxsYvG5gb72PFPuvy8TvkFFVGn` (Kusama Asset Hub)
+  * **DOT:** FvrbaMus8iASyrQYkajQWDxsYvG5gb72PFPuvy8TvkFFVGn (Polkadot Asset Hub)
+  * **Payment:** FvrbaMus8iASyrQYkajQWDxsYvG5gb72PFPuvy8TvkFFVGn (Polkadot Asset Hub)
 * **Level:** 2
 
----
+## Project Overview :page_facing_up:
 
-## **Project Overview :page_facing_up:**
+### Overview
 
 **Parity Protocol** is an open-source suite of EVM smart contracts enabling the creation of **synthetic ratio exposure positions** between any two on-chain assets.
 
 It delivers a **secure, reusable primitive** for tracking relative performance, designed for deployment across Polkadot’s EVM compatible networks — beginning with **Kusama Asset Hub (AH)**.
 
-A reference implementation has been created to launch a **Kusama vs Polkadot market cap ratio position** on **Kusama AH**, supporting minting/burning of ratio tokens in **KSM, dUSD, or DOT**.
+I enables the tokenisation of any rivalry through `ratio tokens` - using degen financial engineering to empower epic David vs Goliath competitions. 
+The core concept is to productise; “Can an underdog challenge the incumbent and reach parity? 
 
-The protocol drives adoption of **dUSD**, creating an ongoing and scalable revenue stream to Decent Partners from **Brale (dUSD issuer)**. Adoption recirculates funding, which can be directed into new R&D.
+A reference implementation has been created to launch a **Kusama vs Polkadot market cap ratio position** on **Kusama AH**, enabling the ecosystem to dogfood its own internal rivalry and culture. Minting/burning of ratio tokens is done with **KSM, dUSD, or DOT**. 
+
+This approach mobilises economic competition between the two communities with the aim of: 
+- Kickstarting defi experimentation and culture in Kusama
+- Capitalising on proven demand for prediction markets 
+- Introducing an entirely new financial primitive to crypto (ratio trades w/ NAV bonuses)  
+- Demonstrating the scalability, efficiency and interoperability of Polkadot’s tech stack.  
+- Creating net new demand for KSM and DOT 
+- Driving adoption of Kusama’s native dUSD stablecoin
+- Using degen incentives to encourage rapid innovation in the broader ecosystem.
+
+Just as [Polymarket](https://polymarket.com/) and [Kalshi](https://kalshi.com/) are opening up infinite new prediction markets, Parity Protocol unlocks any ratio trade with a normalised and verifiable relative price / data feed;
+
+- **Crypto centric:** Bitcoin vs Gold, Ethereum vs Bitcoin, Solana vs Ethereum etc
+- **Traditional markets:** Microsoft vs Apple market cap, Intel vs Nvidia market cap 
+- **Sports:** Team A’s performance vs Team B’s performance
+- **Film and TV:** Streaming performance etc
+- **Music:** Streaming performance etc
+
+Adoption of **dUSD** creates an ongoing and scalable revenue stream to Decent Partners from **Brale (dUSD issuer)**. Adoption recirculates funding, which can be directed into new R&D/innovation. 
 
 For compliance and regulatory reasons, markets on the protocol will be launched by a new decentralised commercial entity (Wyoming DAO LLC or UNA/DUNA) that will receive fees and enable community involvement / access through separate fundraising and ownership.
 
 All logic is **on-chain, open-source (Apache 2.0)**, and fully forkable.
 
-### **Core Public-Good Goals**
+### Project Details
 
-* ✅ Provide an audited, well-tested EVM template for ratio-based mint/burn primitives
-* ✅ Promote **dUSD** as a native settlement layer and enable **ratio rebalancing** using dUSD liquidity
-* ✅ Deliver multi-source oracle consensus with freshness and outlier protections; XCM-backed data as a roadmap extension
-* ✅ Publish open audit reports and comprehensive developer documentation
-* ✅ Seed reusable tooling for prediction/persuasion markets via templates and indexer analytics
-
-**Live Testnet PoC:** [ParityIndex.app](https://parityindex.app) (Paseo Asset Hub testnet)
-
----
-
-## **Project Details**
-
-### **Architecture (Solidity 0.8.24)**
+**Architecture (Solidity 0.8.24)**
 
 * EVM mint/burn system issuing `ratio tokens` in return for (`KSM`, `DOT`, `dUSD`) while maintaining a target minimum reserve ratio.
 * Pricing and safety via a multi-source oracle aggregator with consensus, freshness checks, and an emergency fallback.
@@ -47,45 +54,40 @@ All logic is **on-chain, open-source (Apache 2.0)**, and fully forkable.
 * Governance and operations coordinated through `AdminManager` and `ProtocolManager`, enabling safe batch role changes, delayed admin transfers, and emergency recovery.
 * Deployments and integrations: Paseo Asset Hub testnet (`chainId 420420422`); off-chain indexer records on-chain events and metrics to Supabase for analytics and the frontend dashboard.
 
-### **Key Contracts**
+**Key Contracts**
 
-| Contract                 | Function                                                                        | Security Features                                      |
-| ------------------------ | ------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| `PARITYProtocol.sol`     | Mint/burn controller; NAV allocation/bonus; user state; events                  | Role-based access; deadlines/min-outs; circuit breaker |
-| `ReserveVault.sol`       | Asset custody; ratio checks; available liquidity                                | Role-based access; minimum ratio enforcement           |
-| `NAVVault.sol`           | NAV holdings; `contributeToNAV`; `distributeNAVBonus`; `getNAVBonus`            | Role-based access; composition targets                 |
-| `MultiOracleSystem.sol`  | Aggregated pricing; consensus; outlier rejection; freshness; emergency fallback | Oracle/Operator roles; health checks                   |
-| `PMMTradingExecutor.sol` | Oracle-priced swaps and quotes with dynamic slippage/fees                       | Operator/Manager roles; deadlines/min-outs             |
-| `SurplusManager.sol`     | Detects and transfers surplus collateral above threshold                        | Operator/Manager roles; ratio maintenance              |
-| `AdminManager.sol`       | Role admin; contract registration; batch grant/revoke; delayed admin transfer   | 24h admin transfer; emergency recovery                 |
-| `ProtocolManager.sol`    | Coordinates protocol components                                                 | Cross-contract role management                         |
-| `ParityBonusPolicy.sol`  | Computes dynamic burn percentage (premium or contribution)                      | Caps and safeguards                                    |
-| `MintingLogic.sol`       | Mint computation and NAV allocation                                             | Internal                                               |
-| `BurningLogic.sol`       | Burn computation and NAV bonus                                                  | Internal                                               |
-| `TestFaucet.sol`         | Testnet token faucet utility                                                    | Rate limits                                            |
+| Contract               | Function                                                                        | Security Features                                      |
+| ---------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| PARITYProtocol.sol     | Mint/burn controller; NAV allocation/bonus; user state; events                  | Role-based access; deadlines/min-outs; circuit breaker |
+| ReserveVault.sol       | Asset custody; ratio checks; available liquidity                                | Role-based access; minimum ratio enforcement           |
+| NAVVault.sol           | NAV holdings; contributeToNAV; distributeNAVBonus; getNAVBonus                  | Role-based access; composition targets                 |
+| MultiOracleSystem.sol  | Aggregated pricing; consensus; outlier rejection; freshness; emergency fallback | Oracle/Operator roles; health checks                   |
+| PMMTradingExecutor.sol | Oracle-priced swaps and quotes with dynamic slippage/fees                       | Operator/Manager roles; deadlines/min-outs             |
+| SurplusManager.sol     | Detects and transfers surplus collateral above threshold                        | Operator/Manager roles; ratio maintenance              |
+| AdminManager.sol       | Role admin; contract registration; batch grant/revoke; delayed admin transfer   | 24h admin transfer; emergency recovery                 |
+| ProtocolManager.sol    | Coordinates protocol components                                                 | Cross-contract role management                         |
+| ParityBonusPolicy.sol  | Computes dynamic burn percentage (premium or contribution)                      | Caps and safeguards                                    |
+| MintingLogic.sol       | Mint computation and NAV allocation                                             | Internal                                               |
+| BurningLogic.sol       | Burn computation and NAV bonus                                                  | Internal                                               |
+| TestFaucet.sol         | Testnet token faucet utility                                                    | Rate limits                                            |
 
-### **Data Flow**
+**Data Flow**
 
-**Mint path:**
-User → `PARITYProtocol` (oracle validation, fee) → `ReserveVault` (custody) + `NAVVault` (NAV contribution) → emit `PARITYMinted` → indexer → Supabase → frontend update.
+* **Mint path:**
+  User → `PARITYProtocol` (oracle validation, fee) → `ReserveVault` (custody) + `NAVVault` (NAV contribution) → emit `PARITYMinted` → indexer → Supabase → frontend update.
+* **Burn path:**
+  User → `PARITYProtocol` (bonus policy) → `BurningLogic` → `ReserveVault` (liquidity) → `NAVVault` (NAV bonus) → emit `PARITYBurned` → indexer → Supabase → UI.
+* **Swap path:**
+  User → `PMMTradingExecutor` → oracle quote/fee → `ReserveVault` provides liquidity → emit `PMMSwap` → indexer → UI.
+* **Surplus maintenance:**
+  `SurplusManager` periodically transfers excess collateral to maintain ratio health.
 
-**Burn path:**
-User → `PARITYProtocol` (bonus policy) → `BurningLogic` → `ReserveVault` (liquidity) → `NAVVault` (NAV bonus) → emit `PARITYBurned` → indexer → Supabase → UI.
-
-**Swap path:**
-User → `PMMTradingExecutor` → oracle quote/fee → `ReserveVault` provides liquidity → emit `PMMSwap` → indexer → UI.
-
-**Surplus maintenance:**
-`SurplusManager` periodically transfers excess collateral to maintain ratio health.
-
----
-
-## **Ecosystem Fit**
+### Ecosystem Fit
 
 | W3F Priority           | Contribution                                                                         |
 | ---------------------- | ------------------------------------------------------------------------------------ |
-| **DOT/KSM Demand**     | Requires `KSM`, `DOT`, or `dUSD` to mint/burn; drives on-chain demand.               |
-| **dUSD Adoption**      | `dUSD` is the primary settlement asset; NAV bonuses prioritise `dUSD`.               |
+| **DOT/KSM Demand**     | Requires KSM, DOT, or dUSD to mint/burn; drives on-chain demand.                     |
+| **dUSD Adoption**      | dUSD is the primary settlement asset; NAV bonuses prioritise dUSD.                   |
 | **Polkadot-Native**    | Built for Asset Hub EVM; live on Paseo testnet; XCM-backed data integration planned. |
 | **Reusable Primitive** | Open APIs, SDK, and templates; Hardhat suite; forkable architecture.                 |
 | **Testable & Usable**  | Live PoC with full UI and indexer analytics.                                         |
@@ -93,78 +95,84 @@ User → `PMMTradingExecutor` → oracle quote/fee → `ReserveVault` provides l
 **No token. No leverage. No gambling.**
 This is **on-chain relative performance market infrastructure.**
 
----
+## Team :busts_in_silhouette:
 
-## **Team :busts_in_silhouette:**
+### Team members
 
-### **Team Members**
+* **Richard Welsh** — Project Lead
+* **Bharath** — Full-Stack Blockchain Developer & Product Architect
+* **Frode Aschim** — Strategy, Logic and Trading Oversight
+* **Daniel Olano** — DAO Infrastructure, Scalability, and Interoperability
 
-| Name              | Role                                                  | GitHub                                          | Experience                                                                                                                                                      |
-| ----------------- | ----------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Richard Welsh** | Project Lead                                          | [monsieurbulb](https://github.com/monsieurbulb) | Managing Partner, Decent Partners; Kabocha parachain steward; Polkadot ICO investor; Cofounder [Copa90](https://copa90.com); EIR [Prehype](https://prehype.com) |
-| **Bharath**       | Full-Stack Blockchain Developer & Product Architect   | [bharathcoorg](https://github.com/bharathcoorg) | End-to-end protocol, frontend, and indexer developer; Edgeware contributor; founder of Limewheels Pvt Ltd & Coorg Delivery Pvt Ltd                              |
-| **Frode Aschim**  | Strategy, Logic and Trading Oversight                 | —                                               | Investor, Trader, Market Maker; founder Ether Capital Ltd and Range Capital Partners                                                                            |
-| **Daniel Olano**  | DAO Infrastructure, Scalability, and Interoperability | [Daniel Olano](https://github.com/olanod)                                               | Founder of Virto Network and Kreivo parachain                                                                                                                   |
+### Contact
 
-### **Open-Source Repositories (Apache 2.0)**
+* **Contact Name:** Richard Welsh
+* **Contact Email:** [not provided]
+* **Website:** [https://decent.partners](https://decent.partners)
 
-* Core Contracts: [github.com/decent-partners/parity-protocol-evm](https://github.com/decent-partners/parity-protocol-evm)
-* Frontend + SDK: [github.com/decent-partners/parity-ui](https://github.com/decent-partners/parity-ui)
+### Legal Structure
 
----
+* **Registered Address:** [Not provided]
+* **Registered Legal Entity:** Decent Partners Ltd (UK)
 
-## **Development Status :open_book:**
+### Team's experience
 
-* ✅ Proof of Concept live on Paseo Asset Hub
-* ✅ Core contracts 90% complete
-* ✅ Oracle aggregation tested
-* 🔄 Rebalancing logic in final R&D phase
-* 🔄 Testing, community feedback, and contract audits in progress
-* 🔄 DAO entity formation for commercialisation
+Richard Welsh is Managing Partner of Decent Partners, Kabocha parachain steward, Polkadot ICO investor, and cofounder of Copa90.
+Bharath is an end-to-end protocol and frontend developer, Edgeware contributor, and founder of Limewheels Pvt Ltd & Coorg Delivery Pvt Ltd.
+Frode Aschim is a trader and market maker, founder of Ether Capital Ltd and Range Capital Partners.
+Daniel Olano is the founder of Virto Network and the Krievo parachain.
 
----
+### Team Code Repos
 
-## **Development Roadmap :nut_and_bolt:**
+* [https://github.com/decent-partners/parity-protocol-evm](https://github.com/decent-partners/parity-protocol-evm)
+* [https://github.com/decent-partners/parity-ui](https://github.com/decent-partners/parity-ui)
 
-* **Total Duration:** 12 weeks
-* **FTE:** 2.5
-* **Total Cost:** $30,000 USD
-* **DOT %:** 50% vested
+### Team LinkedIn Profiles (if available)
 
-| Milestone | Deliverables                                                                                                                                                   | Duration | Cost (USD) |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------- |
-| **1**     | Public repo, testnet deployments (Paseo AH), oracle integration, indexer setup (Supabase), monitoring scripts                                                  | 4 weeks  | 10,000     |
-| **2**     | Protocol rebalancing logic, reserve stability via lending protocol/DEX integration, full test suite, developer documentation, PMM swap examples, fork template | 4 weeks  | 10,000     |
-| **3**     | Third-party audit, NatSpec + tutorial, mainnet deploy (Asset Hub), full dUSD integration, DAO legal wrapper setup (Wyoming DAO LLC / UNA/DUNA)                 | 4 weeks  | 10,000     |
+* [https://www.linkedin.com/in/richardwelsh](https://www.linkedin.com/in/richardwelsh)
+* [https://www.linkedin.com/in/bharathcoorg](https://www.linkedin.com/in/bharathcoorg)
 
----
+## Development Status :open_book:
 
-## **Future Plans**
+The team have spent around 6 months in R&D on the project and are close to finalising the core contracting logic, operations and fee structures, but there are few decisions to be made on rebalancing systems and the contracts will need to be audited. We also want to enable the broader community to test and improve the project ahead of launch. 
+
+* Proof of Concept live on Paseo Asset Hub
+* Core contracts 90% complete
+* Oracle aggregation tested
+* Rebalancing logic in final R&D phase
+* Testing, community feedback, and contract audits in progress
+* DAO entity formation for commercialisation and go to market
+
+## Development Roadmap :nut_and_bolt:
+
+### Overview
+
+* **Total Estimated Duration:** 12 weeks
+* **Full-Time Equivalent (FTE):** 2.5
+* **Total Costs:** 30,000 USD
+* **DOT %:** 50%
+
+| Number | Deliverable                                                                                                                                                    | Specification        |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| **1.** | Public repo, testnet deployments (Paseo AH), oracle integration, indexer setup (Supabase), monitoring scripts                                                  | 4 weeks / 10,000 USD |
+| **2.** | Protocol rebalancing logic, reserve stability via lending protocol/DEX integration, full test suite, developer documentation, PMM swap examples, fork template | 4 weeks / 10,000 USD |
+| **3.** | Third-party audit, NatSpec + tutorial, mainnet deploy (Asset Hub), full dUSD integration, DAO legal wrapper setup (Wyoming DAO LLC / UNA/DUNA)                 | 4 weeks / 10,000 USD |
+
+## Future Plans
 
 * Publish open audit on GitHub
 * Propose bug bounty and testing incentives via Kusama Treasury
 * Maintain public repo and template forks
 * Submit for **W3F Maintenance Grant** for ongoing updates
 
----
+## Referral Program (optional) :moneybag:
 
-## **Legal Structure**
+(empty)
 
-* **Entity:** Decent Partners Ltd (UK)
-* **KYC/KYB:** Via [Brale](https://brale.xyz) / [Bloque API](https://copilot.bloque.app)
-* **Commercial Activity:** None during grant; no token, fundraising, or proprietary software
-* **Future Market Deployment:** Via separate DAO legal wrapper (Wyoming DAO LLC / UNA/DUNA)
-
----
-
-## **Additional Information :heavy_plus_sign:**
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 Web3 Foundation Website and internal developer community channels.
 
 **Summary:**
 Parity Protocol is open, auditable **EVM infrastructure**, built natively for the **Kusama ecosystem** to enable new forms of synthetic exposure and composable DeFi primitives using **dUSD**.
-
----
-
-Would you like me to add a **summary table** (project name, duration, grant size, key contacts) at the top? It’s optional but can make the GitHub submission more reviewer-friendly.
