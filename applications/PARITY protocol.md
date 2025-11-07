@@ -11,20 +11,21 @@
 
 ### Overview
 
-**Parity Protocol** is an open-source suite of EVM smart contracts enabling the creation of **synthetic ratio exposure positions** between any two on-chain assets.
+**Parity Protocol** is an open-source suite of EVM smart contracts enabling the creation of **synthetic ratio markets** between any two on-chain assets.
 
 It delivers a **secure, reusable primitive** for tracking relative performance, designed for deployment across Polkadot’s EVM compatible networks — beginning with **Kusama Asset Hub (AH)**.
 
 The protocol enables the tokenisation of any rivalry through `ratio tokens` - using degen financial engineering to empower epic David vs Goliath competitions that can capture interest, attention and tribal instincts / animal spirits.  
 
-The core aim is to productise the question; _“Can an underdog challenge the incumbent and reach parity?_ 
+The core aim is to productise and mobilise the question; _“Can an underdog challenge the incumbent and reach parity?_ 
 
 A reference implementation has been created to launch a **Kusama vs Polkadot market cap ratio position** on **Kusama AH**, enabling the ecosystem to dogfood its own internal rivalry and culture. Minting/burning of ratio tokens is done with **KSM, dUSD, or DOT**. 
 
 This approach mobilises economic competition between the two communities with the aim of: 
 - Kickstarting defi experimentation and culture in Kusama
+- Dogfooding the native tech with an easy to understand and access initial implementation.
 - Capitalising on proven demand for prediction markets 
-- Introducing an entirely new financial primitive to crypto (ratio trades w/ NAV bonuses)  
+- Introducing an entirely new financial primitive to crypto (ratio markets w/ NAV bonuses)  
 - Demonstrating the scalability, efficiency and interoperability of Polkadot’s tech stack.  
 - Creating net new demand for KSM and DOT 
 - Driving adoption of Kusama’s native dUSD stablecoin
@@ -113,7 +114,7 @@ This is **on-chain relative performance market infrastructure.**
 
 ### Legal Structure
 
-* **Registered Address:** [Not provided]
+* **Registered Address:** 15 West Street, Brighton, England, BN1 2RL
 * **Registered Legal Entity:** Decent Partners Ltd (UK)
 
 ### Team's experience
@@ -125,13 +126,14 @@ Daniel Olano is the founder of Virto Network and the Krievo parachain.
 
 ### Team Code Repos
 
-* [https://github.com/decent-partners/parity-protocol-evm](https://github.com/decent-partners/parity-protocol-evm)
-* [https://github.com/decent-partners/parity-ui](https://github.com/decent-partners/parity-ui)
+* TO DO [https://github.com/decent-partners/parity-protocol-evm](https://github.com/decent-partners/parity-protocol-evm)
+* TO DO [https://github.com/decent-partners/parity-ui](https://github.com/decent-partners/parity-ui)
 
 ### Team LinkedIn Profiles (if available)
 
-* [https://www.linkedin.com/in/richardwelsh](https://www.linkedin.com/in/richardwelsh)
-* [https://www.linkedin.com/in/bharathcoorg](https://www.linkedin.com/in/bharathcoorg)
+* [Richard Welsh](https://www.linkedin.com/in/richardwelsh)
+* [Bharath](https://www.linkedin.com/in/bharathcoorg)
+* [Frode Aschim](https://www.linkedin.com/in/frode-aschim-9936a912)
 
 ## Development Status :open_book:
 
