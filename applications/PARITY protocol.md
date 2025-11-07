@@ -186,4 +186,4 @@ The team have spent around 6 months in R&D on the project and are close to final
 Web3 Foundation Website and internal developer community channels.
 
 **Summary:**
-Parity Protocol is open, auditable **EVM infrastructure**, built natively for the **Kusama ecosystem** to enable new forms of synthetic exposure and composable DeFi primitives using **dUSD**.
+Parity Protocol is open, auditable **EVM infrastructure**, built natively for the **Kusama ecosystem** to enable novel synthetic ratio markets.
