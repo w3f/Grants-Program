@@ -15,7 +15,7 @@
 
 It delivers a **secure, reusable primitive** for tracking relative performance, designed for deployment across Polkadot’s EVM compatible networks — beginning with **Kusama Asset Hub (AH)**.
 
-I enables the tokenisation of any rivalry through `ratio tokens` - using degen financial engineering to empower epic David vs Goliath competitions. 
+The protocol enables the tokenisation of any rivalry through `ratio tokens` - using degen financial engineering to empower epic David vs Goliath competitions. 
 The core concept is to productise; “Can an underdog challenge the incumbent and reach parity? 
 
 A reference implementation has been created to launch a **Kusama vs Polkadot market cap ratio position** on **Kusama AH**, enabling the ecosystem to dogfood its own internal rivalry and culture. Minting/burning of ratio tokens is done with **KSM, dUSD, or DOT**. 
