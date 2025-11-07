@@ -119,10 +119,13 @@ This is **on-chain relative performance market infrastructure.**
 
 ### Team's experience
 
-Richard Welsh is Managing Partner of Decent Partners, Kabocha parachain steward, Polkadot ICO investor, and cofounder of Copa90.
-Bharath is an end-to-end protocol and frontend developer, Edgeware contributor, and founder of Limewheels Pvt Ltd & Coorg Delivery Pvt Ltd.
-Frode Aschim is a trader and market maker, founder of Ether Capital Ltd and Range Capital Partners.
-Daniel Olano is the founder of Virto Network and the Krievo parachain.
+- Richard Welsh is Managing Partner of Decent Partners, Kabocha parachain steward, Polkadot ICO investor, and cofounder of Copa90.
+- Bharath is an end-to-end protocol and frontend developer, Edgeware contributor, and founder of Limewheels Pvt Ltd & Coorg Delivery Pvt Ltd.
+- Frode Aschim is a trader and market maker, founder of Ether Capital Ltd and Range Capital Partners.
+
+**Unpaid advisor**  
+
+- Daniel Olano is the founder of Virto Network and the Krievo parachain.
 
 ### Team Code Repos
 
