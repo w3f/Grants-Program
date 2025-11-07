@@ -104,7 +104,7 @@ This is **on-chain relative performance market infrastructure.**
 | **Richard Welsh** | Project Lead                                          | [monsieurbulb](https://github.com/monsieurbulb) | Managing Partner, Decent Partners; Kabocha parachain steward; Polkadot ICO investor; Cofounder [Copa90](https://copa90.com); EIR [Prehype](https://prehype.com) |
 | **Bharath**       | Full-Stack Blockchain Developer & Product Architect   | [bharathcoorg](https://github.com/bharathcoorg) | End-to-end protocol, frontend, and indexer developer; Edgeware contributor; founder of Limewheels Pvt Ltd & Coorg Delivery Pvt Ltd                              |
 | **Frode Aschim**  | Strategy, Logic and Trading Oversight                 | —                                               | Investor, Trader, Market Maker; founder Ether Capital Ltd and Range Capital Partners                                                                            |
-| **Daniel Olano**  | DAO Infrastructure, Scalability, and Interoperability | —                                               | Founder of Virto Network and Kreivo parachain                                                                                                                   |
+| **Daniel Olano**  | DAO Infrastructure, Scalability, and Interoperability | [Daniel Olano](https://github.com/olanod)                                               | Founder of Virto Network and Kreivo parachain                                                                                                                   |
 
 ### **Open-Source Repositories (Apache 2.0)**
 
