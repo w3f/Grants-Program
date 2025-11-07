@@ -135,8 +135,8 @@ This is **on-chain relative performance market infrastructure.**
 
 ### Team Code Repos
 
-* [Original concept](https://github.com/Decent-Partners/Parity/blob/main/Concept/Original.md) 
-* [Contracts](https://github.com/Decent-Partners/Parity/tree/main/Logic)
+* [Readme](https://github.com/Decent-Partners/PARITY-Index) 
+* [Contracts](https://github.com/Decent-Partners/PARITY-Index/tree/main/contracts)
 
 ### Team LinkedIn Profiles (if available)
 
