@@ -117,6 +117,7 @@ Review Access (Optional): We are happy to provide temporary, private read-access
 The remaining funds will serve as the stipend for the **1.0 FTE** (Syafiq Nabil) to execute this milestone.
 
 | Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide core documentation of the consensus and crypto modules. |
 | 1. | L1 Consensus Module | Code for the Aegis consensus (Velocity & Gravity layers) is implemented and functional in a private test environment. |
