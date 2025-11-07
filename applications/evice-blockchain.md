@@ -153,6 +153,7 @@ The remaining funds will serve as the stipend for the **1.0 FTE** (Syafiq Nabil)
 It also covers the initial cloud hosting costs for this public environment.
 
 | Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
 | 1. | Public Testnet | A public-facing testnet (per roadmap Q1 2026) is launched and stable. |
 | 2. | Developer Tooling | The `validator_tool`, `faucet`, and `create_tx` CLI tools are documented and released. |
 | 3. | SDK | A basic SDK for smart contract deployment on the WASM runtime is provided. |
