@@ -152,7 +152,7 @@ The team have spent around 6 months in R&D on the project and are close to final
 * Core contracts 90% complete
 * Oracle aggregation tested
 * Rebalancing logic in final R&D phase
-* Testing, community feedback, and contract audits in progress
+* Testing and community feedback in progress
 * DAO entity formation for commercialisation and go to market
 
 ## Development Roadmap :nut_and_bolt:
