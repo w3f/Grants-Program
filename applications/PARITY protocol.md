@@ -109,7 +109,7 @@ This is **on-chain relative performance market infrastructure.**
 ### Contact
 
 * **Contact Name:** Richard Welsh
-* **Contact Email:** [not provided]
+* **Contact Email:** richard@decent.partners
 * **Website:** [https://decent.partners](https://decent.partners)
 
 ### Legal Structure
