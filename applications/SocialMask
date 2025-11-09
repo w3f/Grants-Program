@@ -1,0 +1,390 @@
+# The Social Mask – Privacy-Preserving Journalist Identity on Polkadot
+
+**Team:** The Social Mask Project  
+**Payment Address:** 15dbb9bWqs6XhkfjbyfEfGHeztEBkjT7uxJG5WnhHCutCJWT (DOT)  
+**Total Funding:** 5,000 USD in DOT  
+**Duration:** 12 weeks
+
+---
+
+## Abstract
+
+After eight months of development and testing across multiple blockchain platforms, we're building The Social Mask on Polkadot — a privacy-preserving identity system that lets journalists prove their credentials without revealing who they are.
+
+The architecture is straightforward: journalists create pseudonymous decentralized identifiers (DIDs) through KILT Protocol, receive verifiable credentials from trusted press organizations, publish articles to IPFS, and register authorship on-chain using ink! smart contracts on Astar. Anyone can verify a journalist's credentials and publications without ever learning their real identity.
+
+This Fast-Grants milestone delivers a fully functional testnet demo in 12 weeks: working KILT integration, deployed ink! contract on Shibuya, IPFS content storage, a React frontend we've already built (now adapted for Polkadot wallets), comprehensive tests, and documentation that lets other developers reproduce everything. All code is open-source under Apache 2.0. **Note on privacy limitations:** We don't mitigate network-level traffic analysis; OPSEC guidance is included in documentation.
+
+We chose Polkadot after trying Algorand and Zcash because it's the only ecosystem where we found native DID infrastructure (KILT), mature smart contract tooling (ink! + cargo-contract), and a developer-friendly path to production without launching our own parachain.
+
+---
+
+## Background and Previous Integrations
+
+We didn't start with Polkadot. Over the past eight months, we tested Social Mask on two other chains to validate the core idea: that anonymous journalists need both verifiable credentials and censorship-resistant publishing.
+
+**Algorand Integration (January–April 2025):**  
+We built the first version on Algorand because of its speed and low fees. The frontend worked well — journalists could connect wallets, publish content, and register publications through PyTeal smart contracts. But we hit a wall with identity: Algorand has no native DID infrastructure. We tried workarounds (custom credential schemas stored in app state), but without standardized verifiable credentials, the system couldn't scale beyond our test group. Attesters would need to trust our custom implementation rather than using established cryptographic standards.
+
+**Zcash Exploration (May–July 2025):**  
+We then looked at Zcash for stronger privacy guarantees. The shielded pools are excellent for private payments, but Zcash's programmability is extremely limited. There's no smart contract platform we could use, the SDK is sparse, and integrating with web frontends required brittle custom servers. More importantly, Zcash operates in isolation — there's no interoperability with identity systems or content storage protocols. We learned that privacy alone isn't enough; we need composability.
+
+**Why We Chose Polkadot (August 2025):**  
+Both experiments clarified what we actually needed: native DID support, mature smart contract tooling in a language we know (Rust), testnet infrastructure that doesn't cost real money, and a multi-chain ecosystem where identity (KILT) and contracts (Astar) can work together without us deploying our own parachain.
+
+Polkadot was the only ecosystem that checked all those boxes. KILT Protocol gives us W3C-compliant DIDs and verifiable credentials out of the box. ink! smart contracts run on Astar with cargo-contract, the same Rust tooling we use for other projects. Shibuya testnet has free faucets and good uptime. And most importantly, we can compose existing parachains (KILT for identity, Astar for contracts) instead of reinventing wheels or running infrastructure we can't afford to maintain.
+
+The previous integrations weren't wasted — they proved the UX works and validated demand with real journalists. Now we're rebuilding the backend on infrastructure that can actually support this long-term.
+
+---
+
+## Problem & Solution
+
+**The Problem**
+
+More than 1,200 journalists have been killed since 2000, according to the Committee to Protect Journalists. In Mexico alone, over 140 journalists have been murdered in the past two decades. Traditional press credentials make journalists identifiable targets in authoritarian regions. Existing platforms offer anonymity (like Tor-based whistleblower drops) or credibility (like verified Twitter accounts), but not both simultaneously.
+
+Journalists in conflict zones need a way to prove "I am a legitimate reporter for a recognized outlet" without revealing their name, location, or previous work. That's the gap we're filling.
+
+**Our Solution**
+
+We use Polkadot infrastructure to separate identity verification from identity exposure:
+
+- **KILT Protocol** handles decentralized identifiers (DIDs) and verifiable credentials. A journalist creates a pseudonymous DID, then requests a credential from a trusted organization (like CPJ or RSF). The credential cryptographically proves "this DID belongs to an accredited journalist" without storing any personal information on-chain. The journalist controls when and how to present that credential.
+
+- **ink! smart contracts on Astar** provide a publication registry. When a journalist publishes an article, we upload the content to IPFS (censorship-resistant, no central server to seize), then register the IPFS hash and author DID on-chain. Anyone can verify that "DID X published content Y at time Z" by querying the contract. The authorship record is permanent and tamper-proof.
+
+- **React frontend** (which we've already built for Algorand) connects wallets, manages DIDs, handles publishing workflows, and provides a public verification tool. We're adapting it to work with Sporran (KILT wallet) and Polkadot.js.
+
+The full flow: Create pseudonymous DID → Get credential from trusted org → Publish article to IPFS → Register publication on Shibuya contract → Third parties verify authorship via public interface. At no point does the journalist's real identity appear on-chain or in content metadata.
+
+---
+
+## Scope & Non-Goals
+
+**What We're Building (In Scope)**
+
+This milestone delivers a complete, working system on Polkadot testnets:
+
+- KILT DID creation and management using the KILT SDK
+- Mock attestation workflow showing how credential issuance works (we'll simulate press credentials since we don't have production attesters onboarded yet)
+- ink! smart contract deployed to Astar Shibuya testnet for publication registry (stores IPFS hashes + author DIDs)
+- IPFS integration: upload articles, get content IDs (CIDs), link them to on-chain records
+- React frontend we've already built, now adapted to connect Sporran and Polkadot.js wallets
+- Full documentation: architecture diagrams, deployment guides, testing instructions, verification steps
+- Automated test suite with CI/CD so anyone can reproduce our results
+- Docker environment for one-command local setup
+
+**What We're NOT Building (Out of Scope)**
+
+- **No parachain deployment.** We're using a contracts-first approach — KILT handles identity, Astar handles contract logic. We don't need our own parachain slot, collators, or runtime governance. That's the whole point of composability.
+- **No FRAME pallet development** (that's future work if we ever need custom runtime logic).
+- **No mainnet deployment** in this milestone. We're delivering testnet infrastructure with clear documentation for mainnet migration, but we're not deploying to production networks yet.
+- **No Solidity or EVM contracts.** Single stack: ink! on Astar. We tried Solidity in early prototypes; Rust + ink! fits our team better.
+- **No XCM cross-chain messaging** (deferred until we see production usage patterns).
+- **No production attestation partnerships** (we're using mock credentials for this demo; real CPJ/RSF integrations require legal agreements beyond this grant's scope).
+- **No mobile apps, content moderation systems, or physical security training.** Those are separate layers.
+
+**Dependencies**
+
+This milestone is completely self-contained. We have separate applications submitted to Zcash Foundation (for private payment features), Filecoin Foundation (for decentralized storage incentives), and Open Technology Fund (for journalist security training). None of those block this deliverable — if they all get rejected, this Polkadot integration still works independently. If they succeed, we can integrate their components later as optional enhancements.
+
+---
+
+## Single Milestone: Functional Testnet Demo
+
+**Duration:** 12 weeks  
+**Budget:** $5,000 USD in DOT  
+**What You Get:** Complete working system on testnets with full documentation
+
+**Building from Scratch:** This milestone builds the full KILT + ink! integration from scratch. The current repository (https://github.com/Emilio983/SocialMask/tree/main/main-site) contains only the frontend UI base, which we'll adapt. All Polkadot-specific components (KILT DIDs, ink! contracts, IPFS modules) are new deliverables.
+
+**Repository Structure:**
+- `socialmask-contracts/` — ink! publication registry
+- `socialmask-kilt/` — KILT SDK integration module
+- `socialmask-ipfs/` — IPFS content storage module  
+- `socialmask-frontend/` — React UI (adapted from existing base)
+
+### What We're Delivering
+
+| # | Component | What It Does |
+|---|-----------|--------------|
+| **0a** | License | Apache 2.0 across all repos (standard for Polkadot projects) |
+| **0b** | Documentation | **Repository-level:** README (overview + quick start), ARCHITECTURE (system design), DEPLOYMENT (step-by-step testnet setup), VERIFICATION (reviewer guide), THREAT_MODEL (security scope)<br>**Code-level:** Rustdoc comments on contract functions, JSDoc on frontend components, inline explanations for KILT SDK patterns |
+| **0c** | Testing & Guide | **Tests:** Unit tests for contract logic, integration tests for KILT+contract flows, E2E tests (Cypress) for full user journey<br>**Guide:** TESTING.md with prerequisites, commands (`cargo test`, `npm test`), expected outputs, Docker setup for reproducibility |
+| **0d** | Docker Environment | One-command local stack (`docker-compose up`) with KILT node, Swanky (Astar local), IPFS daemon, frontend dev server — everything configured with health checks |
+| **0e** | Article | 1,200-1,500 word post on Medium/Polkadot blog explaining the technical approach, why contracts-first, architecture walkthrough, code snippets, threat model summary, future work. Title: "Building Anonymous Journalism Infrastructure on Polkadot: KILT + ink! Contracts" |
+| **1** | KILT DID Module | TypeScript SDK wrapping KILT for journalist workflows:<br>• `createJournalistDID()` → generates DID on Peregrine<br>• `requestAttestation()` → mock credential flow (simulates press credential issuance)<br>• `verifyCredential()` → validates credential signatures<br>• Custom CType schema for journalism credentials<br>**Testnet:** DIDs created on KILT Peregrine testnet for this demo; Spiritnet mainnet migration path documented in DEPLOYMENT.md (no mainnet deployment in this milestone)<br>**Tests + Verification:** Script that runs full flow and outputs DID URI, credential JSON, validation results |
+| **2** | ink! Contract | Publication registry (`publication_registry.rs`) deployed on Shibuya:<br>• `register_publication()` → stores IPFS CID + author DID + signature<br>• `get_publication()` → retrieves publication metadata<br>• `verify_authorship()` → checks DID matches publication record<br>**Tests + Verification:** Unit tests, integration tests, deployment script, live contract address on Subscan |
+| **3** | IPFS Integration | TypeScript module for content storage:<br>• `uploadArticle()` → pins to IPFS (Infura/Pinata gateways), returns CID<br>• `retrieveArticle()` → fetches from gateway with retry logic<br>**Tests + Verification:** Upload/retrieval tests, example CID in VERIFICATION.md with gateway links |
+| **4** | Frontend Demo | React 18 + TypeScript app (adapting existing UI to Polkadot wallets):<br>• Wallet connection (Sporran for KILT, Polkadot.js for Astar)<br>• DID creation + credential request interface<br>• Publishing workflow (form → IPFS → contract registration)<br>• Public verification tool (query by publication ID or CID)<br>**Deployment:** Live demo on Vercel/Netlify, walkthrough video (3-5 min) |
+| **5** | CI/CD & Integration Tests | GitHub Actions pipeline:<br>• Contract tests, KILT integration tests, frontend tests, Docker build<br>• End-to-end flow test covering create DID → publish → verify<br>**Verification:** Passing CI badge, test logs in VERIFICATION.md |
+| **6** | Documentation Suite | Complete docs enabling external reproduction (README, ARCHITECTURE, DEPLOYMENT, TESTING, VERIFICATION, THREAT_MODEL) — written so non-team members can deploy locally and verify all deliverables<br><br>**THREAT_MODEL.md scope:**<br>• What we protect: identity exposure (KILT pseudonymity), content censorship (IPFS), credential forgery (crypto signatures)<br>• What we DON'T protect: network-level traffic analysis, ISP surveillance, legal jurisdiction risks<br>• Explicit disclaimer: testnet demo only; production deployment requires security audit<br><br>**Reviewer Quick-Start (in VERIFICATION.md):**<br>1. `docker-compose up` — launches full local stack<br>2. `npm run test:e2e` — runs end-to-end demo flow<br>3. Check Shibuya contract at documented address via Subscan |
+| **7** | Release & Delivery | GitHub release `v0.1.0-fastgrant` with compiled artifacts (WASM, frontend build), delivery PR to W3F grants repo, public announcement |
+
+### How We Know It's Done (Acceptance Criteria)
+
+1. **Deployed Contract:**  
+   ink! contract live on Shibuya testnet, address visible on Subscan, deployment script runs without errors
+
+2. **Working End-to-End Flow:**  
+   Script `scripts/e2e-demo.sh` executes full journey (create DID → mock attestation → upload to IPFS → register on contract → verify authorship) in under 5 minutes, outputs saved to `demo-output.log`
+
+3. **Public Demo:**  
+   Live frontend at public URL (no login required), walkthrough video shows complete workflow, connects to Shibuya + Peregrine testnets
+
+4. **Test Coverage:**  
+   CI pipeline green, `npm run test:all` passes, ≥70% coverage on contracts and KILT module (measured with cargo-tarpaulin and nyc)
+
+5. **Reproducible Documentation:**  
+   External reviewer (not on our team) can follow DEPLOYMENT.md and replicate everything, VERIFICATION.md includes all artifacts (contract address, example DIDs/CIDs, transaction hashes), no "TBD" or "TODO" placeholders
+
+6. **Code Quality:**  
+   Apache 2.0 LICENSE in all repos, README in each repo, zero compiler warnings (`cargo clippy` clean), zero linter errors (`npm run lint` clean)
+
+7. **Open Source:**  
+   All repos public on GitHub, CONTRIBUTING.md present, issue templates configured
+
+---
+
+## Budget: 5,000 USD in DOT
+
+**Total:** $5,000 USD  
+**Payout:** In DOT using the 7-day EMA as listed by Subscan at payout initiation (standard Fast-Grants process)
+
+We estimated the full workload at 220 hours ($11,000 at $50/hour), but Fast-Grants caps at $5,000. We're absorbing the $6,000 difference through team contributions and unfunded development time because we need this infrastructure to exist regardless of funding level.
+
+### Breakdown by Component
+
+| Component | Hours | Notes |
+|-----------|-------|-------|
+| **KILT Integration** | 60 | DID SDK wrapper, mock attestation flow, CType schema, Sporran wallet connection |
+| **ink! Contract Development** | 40 | Publication registry, signature verification, testing, Shibuya deployment scripts |
+| **IPFS Integration** | 15 | Upload/retrieval module, gateway configuration, retry logic for reliability |
+| **Frontend Adaptation** | 50 | Adapting existing React app to Polkadot wallets, DID management UI, publishing workflow |
+| **Testing & CI** | 25 | Unit tests, integration tests, E2E flows, GitHub Actions setup |
+| **Documentation** | 30 | Architecture diagrams, deployment guides, testing instructions, threat model analysis |
+| **Total** | **220 hours** | **= $11,000 estimated** |
+| **Fast-Grants Cap** | | **= $5,000 funded** |
+| **Team Co-Funding** | | **= $6,000 absorbed** |
+
+**Payment Terms:**
+
+- **Currency:** DOT only (no USDC, no splits across tokens)
+- **Address:** 15dbb9bWqs6XhkfjbyfEfGHeztEBkjT7uxJG5WnhHCutCJWT (Polkadot native format; Asset Hub equivalent available upon request)
+- **Rate calculation:** 7-day EMA as listed by Subscan at payout initiation
+- **Timing:** Retroactive payment after all deliverables verified
+
+**Co-Funding Sources:**
+
+- 100+ hours of unpaid development time (we've already built parts of this on other chains)
+- Free testnet resources (Shibuya faucet, KILT Peregrine faucet, public IPFS gateways)
+- Local development environment (no cloud infrastructure costs in this phase)
+
+---
+
+## Ecosystem Fit & Why Polkadot
+
+**Why Polkadot Without a Parachain**
+
+We chose contracts-first architecture deliberately. After researching parachain deployment costs (slot auctions, collator operations, governance overhead), we realized launching our own parachain would consume all our resources on infrastructure instead of building tools journalists actually need.
+
+The contracts-first approach lets us:
+
+- **Ship faster:** Deploy on existing infrastructure (KILT + Astar) instead of spending months on runtime development and testnet coordination.
+- **Focus on users:** All our effort goes into UX, security, and journalist onboarding rather than parachain operations.
+- **Prove composability:** We demonstrate that Polkadot's multi-chain architecture works exactly as designed — specialized parachains (KILT for identity, Astar for contracts) compose into complete applications without everyone needing their own slot.
+- **Lower barriers for others:** Journalism projects, DAOs, voting systems, whistleblower platforms — they can all fork our contracts and adapt them without launching parachains. That's healthier for the ecosystem than fragmenting everything into isolated chains.
+
+**Honest Assessment of DOT Usage**
+
+Let's be clear: this milestone does NOT create direct DOT demand. We're not running a parachain, we're not doing native DOT transactions, and we're not driving significant staking. Anyone who claims otherwise is overselling.
+
+What we *do* provide is ecosystem growth in ways that matter long-term:
+
+1. **KILT Ecosystem Expansion:**  
+   Journalists create DIDs on KILT Peregrine testnet (and eventually Spiritnet mainnet). Production deployment means credential issuers pay KILT tokens for attestation fees. We bring a completely new user demographic (investigative journalists, press freedom NGOs) into a Polkadot parachain that currently focuses on DeFi and NFT use cases.
+
+2. **Astar Smart Contract Adoption:**  
+   Every publication registration costs a small amount of ASTR for gas. Journalists and third-party verifiers need to hold ASTR to interact with our contracts. We showcase ink! smart contract maturity for non-financial applications — journalism infrastructure, not DeFi.
+
+3. **Reference Implementation Value:**  
+   We're documenting a complete pattern: KILT DIDs + ink! contracts + IPFS storage. Other developers building identity-sensitive applications (anonymous voting, credential verification, whistleblower protection) can fork our code instead of solving the same problems from scratch. This reduces duplicate effort across the Polkadot ecosystem.
+
+4. **Developer Mindshare:**  
+   We're Rust developers who could build on Ethereum, Solana, or standalone infrastructure. We chose Polkadot because the tooling (cargo-contract, KILT SDK, Substrate stack) fits how we think about distributed systems. If this works well, we'll advocate for Polkadot in security/journalism circles where blockchain still has a bad reputation.
+
+**Indirect DOT Alignment:**
+
+- KILT and Astar benefit from increased transaction volume and new user types (non-crypto-native journalists).
+- If this pattern succeeds, other parachains might integrate our verification logic via XCM (future work), which would drive cross-chain messaging volume.
+- Polkadot's narrative as a "composable multi-chain platform" gets a real-world use case beyond DeFi — that matters for adoption conversations with institutions and NGOs.
+
+**Bottom Line:**  
+We're not claiming this pumps DOT price or increases staking yields. We're building infrastructure diversity and proving that Polkadot's architecture actually works for sensitive, real-world applications. That's a longer-term bet on ecosystem health.
+
+**Relationship to Other Grants**
+
+We've applied to three other programs:
+
+- **Zcash Community Grants:** Private payment layer (shielded transactions for journalist donations). Completely separate from this milestone; no integration work here.
+- **Filecoin Foundation:** Decentralized storage incentives (pay for long-term IPFS pinning). Separate infrastructure; this grant uses free IPFS gateways, Filecoin integration is optional later.
+- **Open Technology Fund:** Security training for journalists (OPSEC, threat modeling, safe usage). Pure education, no code overlap.
+
+Each grant covers a distinct layer. If all four succeed, we can integrate them into a complete platform. If only Polkadot succeeds, we still deliver working identity infrastructure. No cross-dependencies, no blockers.
+
+---
+
+## Team & Contact
+
+**Team:**
+
+- **Emilio Navarro Mejía** – Technical Lead & Substrate Developer
+- **Oswaldo Navarro Hernández** – Project Lead & Partnerships
+
+**Contact:**
+
+- **Email:** hi@socialmask.org
+- **GitHub:** https://github.com/Emilio983/SocialMask
+- **Payment Address:** 15dbb9bWqs6XhkfjbyfEfGHeztEBkjT7uxJG5WnhHCutCJWT (DOT)
+- **Location:** Mexico City, Mexico
+
+**Who We Are:**
+
+**Emilio Navarro Mejía** has spent the past four years building blockchain infrastructure, mostly in Rust. He's contributed to Substrate-based projects focused on privacy-preserving voting systems and cryptographic identity implementations. Background: Computer Science degree with specialization in cryptography and distributed systems. He handles all the technical architecture, smart contract development, and infrastructure deployment for Social Mask.
+
+- GitHub: https://github.com/Emilio983
+- LinkedIn: https://www.linkedin.com/in/emilio-navarro-mejia-b4944238a/
+
+**Oswaldo Navarro Hernández** is an investigative journalist with eight years covering organized crime and corruption in Mexico. He's published investigations in The Guardian and El País covering international human rights abuses. His legal background (international human rights law, digital privacy regulations) and direct partnerships with Committee to Protect Journalists and Reporters Without Borders give us credibility with the organizations that will eventually issue credentials through our system. He handles user research, NGO partnerships, and threat modeling based on real-world journalist operational security needs.
+
+- Professional Profile: https://admiweb.col.gob.mx/archivos_prensa/banco_img/file_6578a8fe702a8_Oswaldo_Navarro_Hernndez.pdf
+
+**Prior Web3 Foundation Grants:** None (this is our first application).
+
+**Legal Structure:** We're operating as individual contributors for this Fast-Grants milestone. If we secure larger funding or move to mainnet production, we'll formalize as a legal entity (likely Mexican nonprofit or international association, depending on partnership requirements with NGOs).
+
+---
+
+## Timeline
+
+**Total Duration:** 12 weeks from approval
+
+We've structured this timeline based on dependencies (can't test contracts until they're written, can't build frontend until wallets are integrated) and buffer time for testnet issues.
+
+### Weekly Breakdown
+
+| Weeks | Focus | What Gets Done |
+|-------|-------|----------------|
+| **1-2** | KILT Integration | Set up KILT SDK, build DID creation module, configure Peregrine testnet, define CType schema for press credentials, test Sporran wallet connection |
+| **3-4** | Contract Development | Write ink! publication registry contract, implement signature verification, test locally with Swanky Node, write unit tests |
+| **5** | IPFS Integration | Build IPFS upload/retrieval module, configure gateway failovers (Infura, Pinata, Cloudflare), integration tests combining KILT + IPFS |
+| **6-7** | Deployment & Testing | Deploy contract to Shibuya testnet, run full integration tests (DID → IPFS → contract), write deployment scripts, document testnet setup |
+| **8-9** | Frontend Adaptation | Adapt existing React app to connect Polkadot wallets, build DID management UI, implement publishing workflow, create verification tool |
+| **10** | E2E Testing & CI | Write end-to-end test suite, set up GitHub Actions CI/CD, run frontend E2E tests with Cypress, fix bugs discovered during testing |
+| **11** | Documentation | Write all docs (README, ARCHITECTURE, DEPLOYMENT, TESTING, VERIFICATION, THREAT_MODEL), internal code review, record walkthrough video |
+| **12** | Final Delivery | Publish article to Medium/Polkadot blog, create GitHub release `v0.1.0-fastgrant`, submit delivery PR, announce publicly |
+
+**Key Milestones:**
+
+- **Week 4:** Contract working locally (we can register publications and verify them via script)
+- **Week 7:** Full stack deployed on testnets (Shibuya + Peregrine), integration tests passing
+- **Week 9:** Frontend demo live at public URL
+- **Week 12:** All deliverables complete, documented, and verified
+
+**Risk Mitigation:**
+
+- **KILT testnet downtime:** We run local KILT node via Docker for development; only use Peregrine for final integration testing
+- **Contract deployment issues:** Extensive local testing on Swanky Node before touching Shibuya
+- **IPFS gateway unreliability:** Three fallback gateways configured; tests pass even if one gateway is down
+- **Wallet integration bugs:** Buffer week (week 10) specifically allocated for bug fixes and polish based on E2E test results
+
+---
+
+## License
+
+**All code: Apache 2.0**
+
+We're using Apache 2.0 across all repositories (contracts, frontend, KILT integration, IPFS modules, documentation). It's standard for Polkadot/Substrate projects, provides patent protection, and maximizes compatibility with ecosystem tools.
+
+ink! contract source files will include Apache 2.0 headers. Documentation is also Apache 2.0, so other projects can freely fork our KILT + ink! integration patterns without licensing friction.
+
+---
+
+## Why Fast-Grants
+
+After eight months of building on Algorand and exploring Zcash, we realized Polkadot is where this can actually work long-term. The composability between KILT (identity) and Astar (contracts) gives us everything we need without reinventing infrastructure or running our own parachain.
+
+**Why Fast-Grants Fits This Project:**
+
+1. **We're past the research phase.** We've already validated the UX with real journalists, built frontend prototypes, tested two blockchain integrations, and identified exactly what technical components we need. This isn't speculative research — it's pure implementation work. We can finish in 12 weeks because we know exactly what we're building.
+
+2. **Low-risk, high-verification deliverables.** Every output is testable: deployed contracts on Shibuya (verifiable via Subscan), live demo with public URL, open GitHub repos, CI/CD pipelines that anyone can run. There's no hand-waving about "future architecture decisions" — everything is concrete and reproducible.
+
+3. **Single focused milestone, no ongoing obligations.** We're delivering a complete testnet demo with documentation. After delivery, the code is public and the contracts are on-chain. We're not asking for maintenance funding or multi-year commitments. This grant accelerates work we're already doing and ensures we meet Polkadot ecosystem standards for testing, documentation, and code quality.
+
+4. **Retroactive validation.** We've bootstrapped for eight months. Fast-Grants funding doesn't pay us to start experimenting — it pays us to finish what we've started and deliver production-quality open-source tools that other Polkadot developers can use.
+
+**What Happens After This Grant**
+
+This milestone delivers a public good: reference implementation for KILT + ink! integration, documentation for DID-based applications, and working code that journalism projects, DAOs, or whistleblower platforms can fork. Whether our specific project succeeds commercially doesn't matter — the infrastructure will exist and benefit the ecosystem.
+
+For long-term sustainability, we have three paths:
+
+- **Additional grants** for mainnet deployment and production attestation partnerships (likely W3F General Grants or ecosystem-specific programs).
+- **NGO partnerships** with Committee to Protect Journalists, Reporters Without Borders, and similar organizations (they have institutional budgets for press freedom tools).
+- **Transaction fees** if we eventually run credential attestation services (journalists pay small KILT fees for verified credentials; we take a percentage as service operators).
+
+The key point: this Fast-Grants milestone isn't betting on our revenue model. It's funding infrastructure that makes Polkadot useful for privacy-sensitive identity applications, regardless of what happens to our project afterward.
+
+---
+
+## Additional Information
+
+**How We Found Fast-Grants:**  
+Through Polkadot's grants page and recommendations from the KILT Protocol community. After our Algorand integration didn't work out due to identity infrastructure limitations, we started researching Polkadot parachains and discovered KILT. Their documentation pointed us to Fast-Grants as the right funding path for contract-based projects.
+
+**Prior Work (Unfunded Development):**
+
+- 8 months of threat modeling, technical specifications, and architecture design
+- Partnerships established with Committee to Protect Journalists and Reporters Without Borders (MOU signed for future credential issuance; awaiting production deployment)
+- User research with 30+ journalists in Mexico, Russia, and Hong Kong (identifying UX requirements, threat models, operational security needs)
+- Proof-of-concept implementations on Algorand (frontend works, contracts deployed, but identity layer inadequate) and Zcash exploration (privacy strong, programmability weak)
+- Existing React frontend already built and tested with real users: https://github.com/Emilio983/SocialMask/tree/main/main-site
+
+**What We Learned From Previous Integrations:**
+
+Our Algorand version proved journalists understand the UX (connect wallet → create pseudonym → publish → verify). But without standardized DIDs and verifiable credentials, we couldn't scale beyond test groups. Zcash taught us that privacy alone isn't enough — we need composability and developer tools.
+
+Polkadot's multi-chain architecture solves both problems: KILT provides W3C-compliant identity infrastructure, Astar provides mature smart contract deployment, and we can compose them without building everything ourselves.
+
+**Parallel Grant Applications:**
+
+- **Zcash Community Grants** (privacy payment layer) – Status: Pending
+- **Filecoin Foundation** (decentralized storage incentives) – Status: Pending  
+- **Open Technology Fund** (journalist security training) – Status: Pending
+
+Each application covers a distinct infrastructure component. This Polkadot Fast-Grants milestone is fully independent — it delivers working identity infrastructure whether the others succeed or not.
+
+**Expected Impact (Conservative Estimates):**
+
+- **50-100 journalists** testing the demo within 3 months of delivery (we have waiting lists from user research)
+- **5+ Polkadot teams** reviewing our contracts-first + KILT integration pattern (based on similar open-source releases we've seen in Substrate ecosystem)
+- **3-5 academic/NGO citations** for our threat model and architecture documentation (press freedom organizations actively research technical protection tools)
+
+**Why This Matters Beyond Our Project:**
+
+Even if Social Mask fails as a product, we're creating reference architecture for DID-based applications on Polkadot. The documentation, contracts, and integration patterns we're building will help other developers who need:
+
+- Anonymous credential verification (voting systems, whistleblower platforms)
+- Content authorship proof without identity exposure (academic publishing, leaks, corporate whistleblowing)
+- Composing KILT identity with custom smart contract logic
+
+That's valuable ecosystem infrastructure regardless of our commercial success.
+
+**Verification Contact:**  
+hi@socialmask.org — We're available for reviewer questions, demo walkthroughs, technical deep-dives, or clarifications on any part of this proposal.
+
+---
+
+**End of Proposal**
