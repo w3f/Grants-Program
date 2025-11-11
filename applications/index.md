@@ -78,7 +78,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Inferara](https://inferara.com/)             | [Preparing Polkadot's pallet_balances for Formal Verification using the Inference Framework](./Preparing%20Polkadot%20pallet_balances%20for%20Formal%20Verification.md)       | [GitHub](https://github.com/Inferara) |    ☐       |        ☒       |      ☒      |
 | [AntLabs India](https://antiersolutions.com)             | [Offline Election Tool](./OfflineElectionTool.md)       |  |    ☐       |       ☐       |     ☐      |
 | Build Union             | [TxSim: Transaction Simulator and Risk Detector for Polkadot](./TxSim.md)       |  |    ☐       |       ☐       |     ☐      |
-| [LunoLab](https://www.lunolab.xyz/)             | [LunoKit](./LunoKit.md)       | [GitHub](https://github.com/Luno-lab/LunoKit) |    ☐       |       ☐       |     ☐      |
+| [LunoLab](https://www.lunolab.xyz/)             | [LunoKit](./LunoKit.md)       | [GitHub](https://github.com/Luno-lab/LunoKit) |    ☐       |       ☒       |     ☐      |
 
 [🔝](#top)
 
