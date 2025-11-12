@@ -2,7 +2,8 @@
 
 
 - **Team Name:** AsiaREC Limited
-- **Payment Details: 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o
+
+- **Payment Details:** 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o
   - **DOT**: For the **DOT** 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o.
   - **Payment**: For the **USDC** 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o
 
