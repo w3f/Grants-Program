@@ -108,7 +108,7 @@ no
 | Zenlink DEX Smart Contract Repository | A git repository containing the dex smart contract source code. The smart contract can be deployed to a substrate chain using ink! which is a smart contract substrate pallet. The smart contract will has Automate Market Maker(AMM) function. |
 | Tests        | The code will have proper unit-test coverage to ensure functionality and robustness                                                                    | 
 | Docker       | Docker image with a Substrate chain using our module, demonstrating its functionality                                                                  | 
-| Tutorial       | The tutorial will not only indicate that how to use set up and deploy it into the ink! module, and also introduce special user cases and potential extensibility. It will be be published on Medium.                                                                   |
+| Tutorial       | The tutorial will not only indicate that how to use set up and deploy it into the ink! module, and also introduce special user cases and potential extensibility. It will be published on Medium.                                                                   |
 
 ### Community engagement
 

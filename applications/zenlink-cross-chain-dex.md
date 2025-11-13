@@ -116,7 +116,7 @@ no
 | Asset Module Technical specifications |  These spec will describe the architecture and usage with Zenlink DEX Module, and also be included in the [whitepaper](https://github.com/zenlinkpro/whitepaper/blob/master/en/zenlink_whitepaper_en.pdf). |
 | Zenlink DEX Pallet Repository | A git repository containing the dex source code. The pallet will be adapted to a general asset module and achieve the cross-chain dex functionalities. |
 | Tests        | The code will have proper unit-test coverage to ensure functionality and robustness                                                                    | 
-| Tutorial       | The tutorial will not only indicate that how to use set up and deploy it into Rococo testnet, and also introduce special user cases and potential extensibility. It will be be published on Medium.                                                                   |
+| Tutorial       | The tutorial will not only indicate that how to use set up and deploy it into Rococo testnet, and also introduce special user cases and potential extensibility. It will be published on Medium.                                                                   |
 
 ### Community engagement
 

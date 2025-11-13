@@ -97,7 +97,7 @@ We have come up with a high-level implementation plan and will start implementin
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and and an **article** explaining how to use the tool to benchmark custom compute intensive functions and cross-contract calls along with a **live demo** if possible. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and an **article** explaining how to use the tool to benchmark custom compute intensive functions and cross-contract calls along with a **live demo** if possible. |
 | **0c.** | Testing and Testing Guide | We are building atop of the benchmarking framework that's part of the substrate-core. Some tests may be included when it comes to the functions being tested. |
 | **0d.** | Docker | Not Applicable. |
 | 0e. | Article | We will publish an **article** that explains how each implementation technique performs, and when to choose which. |

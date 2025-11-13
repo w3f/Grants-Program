@@ -209,7 +209,7 @@ The goal is to achive a fully functional mechanism for the random selection of t
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and and an documentation of the infrastructure |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and an documentation of the infrastructure |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** on Medium that explains how we are going to develop this step. |
@@ -228,7 +228,7 @@ The goal is to achive a fully functional mechanism for the random selection of t
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and and an documentation of the infrastructure |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and an documentation of the infrastructure |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** on Medium that explains how we are going to develop this step. |
