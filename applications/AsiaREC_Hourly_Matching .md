@@ -193,7 +193,7 @@ In the longer term, Within polkadot ecosystem, we plan to launch our own tokeniz
 You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
 
 - **Referrer:** Polkaport East, (Max Rebol)
-- **Payment Address:** 13sSPVKmPe9aJLMnTWQeucbj7rP8zy53qwsWawbiZ7ZEbo7o
+- **Payment Address:** Polkadot/Kusama (USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDC))
 
 ## Additional Information :heavy_plus_sign:
 
