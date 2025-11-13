@@ -92,6 +92,7 @@ This also has the potential to act as a tool for governments and regulatory bodi
 - Sam Greenwood, Interim CEO: transitioned into web 3 during his MBA at HKU ('21), after working for Rio Tinto in government relations. Post MBA he has worked as a product manager and consultant in blockchain.
 - Derek Meng, CTO: Mr. Meng worked at the Dalian Commodity Exchange, focusing on specialized business tasks for the trading system. And Experienced in crypto, green energy marketing.
 - Qian Wu CSO: Ms Qian Wu is Partner in Oliver Wyman’s Beijing office, with 20 years consulting experience in climate change and sustainability. She is specialised in corporate net zero strategy, clean-tech investment and supply chain resilience. 
+- Ajax Wong, PM: Mr.Wong has over 10 years of experience in IT system development, having led the construction of multiple financial trading platforms; practical experience in large-scale distributed high-availability technical architectures based on SOA; excellent professional skills, including distributed services such as Dubbo, OOD&P, software architecture, programming languages, commonly used large-scale databases, and mainstream operating systems; extensive experience in software development management, with research in technologies such as .NET, Java, GIS, iOS, and Android; familiar with current cloud computing and big data technologies like Hadoop.
 
 ### Contact
 
