@@ -153,7 +153,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 - **Estimated duration:** 3 ~ 4 month
 - **FTE:**  8 ~ 10
-- **Costs:** 10,000 USD
+- **Costs:** 98,000 USD
 
 
 | Phase | Deliverable | Specification |
