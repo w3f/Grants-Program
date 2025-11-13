@@ -107,7 +107,7 @@ This also has the potential to act as a tool for governments and regulatory bodi
 ### Team's experience
 
 The team has deep experience and expertise in the carbon markets, sustainability, and blockchain space. Jeff Huang, has been working at globally leading carbon exchanges including the Chicago Climate Exchange, Intercontinental Exchange (ICE) and is a national thought leader within carbon & power markets in China. Derek has developed trading infrastructure, which will be critical for the trading of the GCs through his time working at Dalian Futures Exchange. Qian has over 20 years experience working in global carbon markets contributing to the establishment and implementation of the various carbon initiatives through her role as a consultant and expert. Sam has completed various web 3 projects as a product manager and consultant including, a web credential verification system, NFT loyalty platform, and interoperability bridge to name a few. 
-We are also partnering up with Granular Energy, an Energy Tag accredited registry that has a production grade solution. AsiaREC will customize their solution for the China market and deploy it on Energy Web Infrastructure. This will give Energy Web & Polkadot the first Energy Tag accredited solution for the China market
+We are also partnering up with Granular Energy, an Energy Tag accredited registry that has a production grade solution. AsiaREC will customize their solution for the China market and deploy it in Polkadot ecosystem. This will give Polkadot the first Energy Tag accredited solution for the China market
 
 ### Team Code Repos
 
@@ -149,11 +149,11 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
 - **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
 
-### Milestone 
+### Milestone 1 — Product Development
 
-- **Estimated duration:** 3 ~ 4 month
+- **Estimated duration:** 2 ~ 3 month
 - **FTE:**  8 ~ 10
-- **Costs:** 98,000 USD
+- **Costs:** 83,000 USD
 
 
 | Phase | Deliverable | Specification |
@@ -162,6 +162,16 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **Core Module Development** | Runnable code version (including frontend, backend)| Develop core modules including client, platform management end, core business processing system. |
 | **Testing & Optimization** | Test Report, Bug Fix List| Functional testing (verify process closed-loop), Polkadot chain integration testing, Bug fixing.|
 | **Pilot Verification** | Pilot Verification Report, Function Optimization Record | Deploy test environment, user testing, collect feedback|
+
+### Milestone 2 — Pilot Project Execution
+
+- **Estimated Duration:** 1 month
+- **FTE:**  2
+- **Costs:** 15,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Pilot Project Execution | AsiaREC will execute 5-10 pilot projects with strategic partners to establish an 'APAC Granular Certificate Alliance' that will promote the Energy Tag Standard in Asia. We will also engage policy makers in China and the EU to audit our product & pilots and adopt AsaiREC as an acceptable tracking system to meet regulatory obligations. |
 
 
 ## Future Plans
@@ -172,11 +182,11 @@ Green Fintech PoC Program: https://greenfintechpoc.cyberport.hk/
 Web3 PoC Program: https://www.web3poc.cyberport.hk/
 PolyU’s International Future Challenge: https://www.polyu.edu.hk/kteo/entrepreneurship/international-future-challenge/?sc_lang=en 
  
-To give you an idea of previous pilots that we have completed, please see our write up on the Wanhau Case study ( https://energytag.org/projects/china-first-hourly-matched-pilot/ ) and the Midea Case study ( https://energytag.org/projects/china-first-hourly-matched-ppa/ ).  We plan on running multiple pilots like these cited above on the MVP that we build on Energy Web infrastructure. Each pilot will be highlighted by strategic partners globally and domestically in the China market. Eventually we will partner with large SOEs and become accredited by Energy Tag so that we have international recognition and can be promoted by industry leaders like RE100 and GHG Protocol. We also plan to do a large marketing campaign around the COP 30 conference. We believe the best way to gain market adoption is through continuing to run these pilots and educate the market on the benefit of GCs. Through these pilots AsiaREC will form a GC Alliance that is committed to growing the adoption of GC tracking across the Greater China region. These SOEs and AsiaREC users have a strong incentive to promote GCs because it will act as a tool to reduce the costs imposed on them by CBAM and other regulatory requirements. 
+To give you an idea of previous pilots that we have completed, please see our write up on the Wanhau Case study ( https://energytag.org/projects/china-first-hourly-matched-pilot/ ) and the Midea Case study ( https://energytag.org/projects/china-first-hourly-matched-ppa/ ).  We plan on running multiple pilots like these cited above on the MVP that we build on Polkadot. Each pilot will be highlighted by strategic partners globally and domestically in the China market. Eventually we will partner with large SOEs and become accredited by Energy Tag so that we have international recognition and can be promoted by industry leaders like RE100 and GHG Protocol. We also plan to do a large marketing campaign around the COP 30 conference. We believe the best way to gain market adoption is through continuing to run these pilots and educate the market on the benefit of GCs. Through these pilots AsiaREC will form a GC Alliance that is committed to growing the adoption of GC tracking across the Greater China region. These SOEs and AsiaREC users have a strong incentive to promote GCs because it will act as a tool to reduce the costs imposed on them by CBAM and other regulatory requirements. 
 
 Our long term plan is to establish AsiaREC as a neutral GC registry for all of Asia through establishing a cross industry GC Alliance. This will act as a Polkadot-powered trust layer for clean energy markets in APAC and support China's clean energy exporters in meeting global requirements like CBAM, GHG Protocol, and RE100. We believe AsiaREC will help Hong Kong turn into a global carbon markets hub and the government will increasingly support us as we continue to make progress. Eventually we will need to trade these Granular Certificates and even set up a futures market for them, similar to the GC Trading Alliance in the US.
 
-While we are developing the MVP and running the initial pilots on Energy Web infrastructure, we remain open to building a solution directly on the Polkadot SDK that is tailored for the Greater China region if Energy Web proves not to be the best long-term fit. Testing Energy Web allows us to run fast, low-risk pilots while also preparing our team to engage more deeply with the Polkadot ecosystem. In the longer term, we plan to launch our own tokenized market for standardized Granular Certificates (GCs), enabling efficient trading, settlement, and liquidity provisioning across Asia. This token will serve as the foundation for scaling the China REC market and integrating it with regional and global REC markets.
+In the longer term, Within polkadot ecosystem, we plan to launch our own tokenized market for standardized Granular Certificates (GCs), enabling efficient trading, settlement, and liquidity provisioning across Asia. This token will serve as the foundation for scaling the China REC market and integrating it with regional and global REC markets.
 
 ## Referral Program (optional) :moneybag:
 
