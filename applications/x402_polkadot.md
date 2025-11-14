@@ -6,8 +6,6 @@
   - **Payment**: 12ECJeQWJBt2UVfyMQfsLca7M9aXRVzcJmbh2RvRv9yaAiwW 
 - **Level:** 3
 
-3
-
 ## Project Overview :page_facing_up:
 
 ### Overview
