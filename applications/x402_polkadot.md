@@ -4,7 +4,7 @@
 - **Payment Details:**
   - **DOT**: 12ECJeQWJBt2UVfyMQfsLca7M9aXRVzcJmbh2RvRv9yaAiwW
   - **Payment**: 12ECJeQWJBt2UVfyMQfsLca7M9aXRVzcJmbh2RvRv9yaAiwW 
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 3
+- **Level:** 3
 
 3
 
