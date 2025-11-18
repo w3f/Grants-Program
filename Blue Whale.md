@@ -241,8 +241,7 @@ Blue Whale is unique in combining:
 ### Contact
 
 - **Contact Name:** Ngozi
-- **Contact Email:** ngozi@bluewhale.io
-- **Website:** https://bluewhale.io 
+- **Contact Email:** janeromeo111@gmail.com
 
 ### Legal Structure
 
@@ -277,7 +276,7 @@ Team Members:
 
 ### Team LinkedIn Profiles (if available)
 
-LinkedIn profiles not yet available.
+N/A
 
 ## Development Status :open_book:
 
