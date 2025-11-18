@@ -1,18 +1,12 @@
 # Agroasys
 
-
-
 - **Team Name:** Agroasys Tech
 - **Payment Details:**
   - **DOT**: 1U1XRcPB1bw5jKVR9ovTavsGeAVGqNKBzHuSh19GVqj1skL
   - **Payment**: 1U1XRcPB1bw5jKVR9ovTavsGeAVGqNKBzHuSh19GVqj1skL (USDC)
 - **Level:** 2 
 
-
-
 ## Project Overview :page_facing_up:
-
-
 
 ### Overview
 
@@ -42,7 +36,6 @@ The platform will include:
 
 
 We have prepared a complete prototype of the Agroasys Web3 platform in Lovable. It includes all essential workflows and interface screens that reflect the final production architecture. As Lovable requires login for preview access, we will provide the private link and temporary credentials directly to the reviewers. This prototype also includes the conceptual layout of our initial PoC for comparison, showing clear UX and workflow improvements.
-
 
 #### Data models / API specifications of the core functionality
 The core platform uses a modular enterprise architecture with custodial wallet management.
@@ -148,7 +141,6 @@ Within the Polkadot ecosystem, we enable parachain and dApp developers to integr
 
 The platform functions as both a standalone application and an interoperable service module that other parachains can integrate for agricultural contract verification and settlement tracking.
 
-
 These needs were validated through multi-stakeholder interviews, East Africa trade data ([Trademark Africa](https://trademarkafrica.com/tracking-east-africas-top-agricultural-commodities-and-export-destinations-new-report/#:~:text=East%20Africa's%20agricultural%20trade%20is,demands%20require%20urgent%20policy%20interventions.)), and World Bank reports highlighting the inefficiencies of Africa’s agri-export payments and the 30–40% loss in transaction value due to intermediaries ([World Bank: Digitalizing Agricultural Payments in Sub-Saharan Africa](https://www.worldbank.org/en/publication/globalfindex/brief/data-from-the-global-findex-2021-digitalizing-agricultural-payments-in-sub-Saharan-africa)). Field discussions with over 100 traders in East Africa and Middle East alone revealed a consistent lack of trust in payment and contract enforcement systems, confirming strong demand for tamper-proof, digitally signed contracts and blockchain-based settlements.
 
 Within the Polkadot/Substrate ecosystem, few projects currently address agricultural settlement infrastructure. Projects like [Centrifuge](https://centrifuge.io/), [Peaq Network](https://www.peaq.xyz/), and [Pendulum](https://www.pendulumchain.org/) explore real-world asset tokenization and financial bridges, but none focus on agricultural trade contracts, Ricardian logic, or Africa’s agricultural export economy. Agroasys introduces a new use case: sector-specific contract enforcement integrated with blockchain-based settlement verification, designed to comply with East African and Global trade laws.
@@ -158,12 +150,11 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 
 ## Team :busts_in_silhouette:
 
-
-
 ### Team members
 
-- Aston Steven
-- Names of team members
+- **Mrisho Lukamba** - Engineering Lead [Github](https://github.com/MrishoLukamba) [Linkedin](https://www.linkedin.com/in/mrisho-lukamba/)
+- **Aston Steven** - Product lead, [Github](https://github.com/Astonstevn) [Linkedin](https://www.linkedin.com/in/aston-steven/)
+- **Julius Stephen** - UX/UI Lead, [Github](https://github.com/kingposhwolf)
 
 ### Contact
 
@@ -179,13 +170,9 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
-
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
+- [Agroasys Github](https://github.com/Agroasys/Agroasys)
 - https://github.com/{your_organisation}/{project_2}
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
@@ -201,21 +188,16 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+We have developed a demo platform that illustrates how Agroasys will operate once the blockchain integration layer is connected, giving a clear picture of the full end-to-end workflow for enterprise users—our primary target segment. The demo showcases the core processes, including contract creation, signing flows, quality assurance steps, and settlement logic, and provides a visual understanding of how these components will interact with the on-chain anchoring and USDC settlement mechanisms planned for integration. This demonstration has been instrumental in validating the platform’s design and its relevance for large buyers, exporters, and institutional partners.
 
-- links to improvement proposals or [RFPs](https://grants.web3.foundation/docs/rfps) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+For review purposes, we have attached login details that allow you to access the [agroasys demo](https://preview--agroasys-prototype.lovable.app/) demo environment and explore its current capabilities. Please use the following credentials to log in: review@agroasys.com with the password 0192837465.
 
 ## Development Roadmap :nut_and_bolt:
-
 
 ### Overview
 
 - **Total Estimated Duration:** 10 weeks
-- **Full-Time Equivalent (FTE):** 2 FTE
+- **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs:** 30,000 USD
 
 ### Milestone 1 AssetHub-Integrated Ricardian Contract System
@@ -264,7 +246,9 @@ If you've already started implementing your project or it is part of a larger re
 
 Our long-term sustainability will be financed through recurring revenue from platform commissions, enterprise integrations, and commercial pilot conversions, targeting financial independence within 12-18 months post-grant. In the short term, we will enhance and promote the project by scaling our Polkadot integration (adding audit trails, APIs, and verification mechanisms to our Substrate module) and executing a regional expansion into East Africa, West Africa and Middle East via strategic partnerships. Long-term, our vision is to become the digital backbone of Africa's agricultural trade, enabling transparent, compliant, and instant cross-border settlements powered by Polkadot.
 
+## Referral Program :moneybag:
 
+- **Referrer:** Bekka, DevRel Lead at Polkadot Africa”
 
 ## Additional Information :heavy_plus_sign:
 
