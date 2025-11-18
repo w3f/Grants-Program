@@ -362,6 +362,7 @@ Web3 Foundation website and through the Polkadot developer community.
 
 **Work you have already done:**
 
+- [Successfully released a Rust community template for x402 in Solana](https://github.com/crypto-priest/x402-solana-rust)
 - Comprehensive research on x402 protocol specification and existing implementations
 - Analysis of Polkadot AssetHub integration requirements and API capabilities
 - Technical architecture design and component specification
