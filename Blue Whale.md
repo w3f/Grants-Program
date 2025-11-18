@@ -16,7 +16,7 @@ Blue Whale is an AI-powered smart wallet that allows users to send, receive, and
 
 **Over 2.7 billion people use WhatsApp monthly, but only 420 million own crypto wallets**, which means crypto adoption has reached just 16% of WhatsApp's user base. This 84% gap exists because traditional wallets are complex, intimidating, and require downloading unfamiliar apps.  Meanwhile, Polkadot's powerful technology remains largely inaccessible to mainstream users who would benefit from it the most.
 
-Using Blue Whale: we embed a smart Polkadot wallet directly into WhatsApp, transforming crypto from technical to conversational. Users can send DOT with the same ease as sending a text: "send 10 DOT to Sarah" — done.
+Using Blue Whale, we embed a smart Polkadot wallet directly into WhatsApp, transforming cryptocurrency  from a technical concept to a conversational experience. Users can send DOT with the same ease as sending a text: "send 10 DOT to Sarah" — done.
 
 **Why This Matters for Polkadot:**
 
@@ -42,6 +42,10 @@ Our previous experience with blockchain chatbots revealed consistent patterns: w
 - Plain English commands: "send 5 DOT to John", "what's my balance?", "Show last 10 transactions"
 - Multi-language support (initial: English, Spanish, French, Swahili, Hindi)
 - AI-powered intent recognition with error correction ("send 5 dot" → interprets as "send 5 DOT")
+  <img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/c93f8748-d055-45c1-b2b7-142cdd76ffbf" />
+  <img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/df46ef2f-af32-4d0f-82f3-7bec7e8ba208" />
+
+
 
 **Balance & Portfolio View**
 - Real-time DOT balance updates
