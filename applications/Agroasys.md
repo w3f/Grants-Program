@@ -59,7 +59,7 @@ The core platform uses a modular enterprise architecture with custodial wallet m
 - **Contract API**: Ricardian contract generation, signing coordination, and anchoring
 - **Verification API**: On-chain proof verification and audit evidence export
 
-#### Technology Stack
+### Technology Stack
 
 **Blockchain Layer**: Polkadot AssetHub primitives
 - `system.remark` for contract hash anchoring and metadata
