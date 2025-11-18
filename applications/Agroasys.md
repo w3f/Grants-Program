@@ -173,13 +173,14 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 ### Team Code Repos
 
 - [Agroasys Github](https://github.com/Agroasys/Agroasys)
+
 - **Mrisho Lukamba** - Mrisho Lukamba is an innovative blockchain engineer and cryptography specialist with a strong foundation in mathematics and physics. He previously worked as an engineer at TONOMUS NEOM and contributed to Class Lambda, giving him hands on experience designing cryptographically secure architectures and Web3 infrastructure for African markets. At Agroasys he leads the integration of Polkadot based settlement layers, focuses on transaction throughput and finality, and hardens the platform’s cryptographic integrity, key management, and verification pipelines. [Github](https://github.com/MrishoLukamba)
 
-**Gokul Ravindran** - is a senior blockchain engineer with deep, hands-on experience across smart contract development, exchange infrastructure, and on-chain analysis; he has built smart contracts for more than seven cryptocurrency projects and designed a production-grade orderbook and matching engine for a crypto exchange, and he created a proof of concept for IQVIA that integrated IPFS, Ethereum, and BigchainDB. He has authored four blockchain whitepapers, performed on-chain analysis for over ten projects, advised high-net-worth individuals on crypto investments, collaborated on multiple NFT projects, and developed tax computation software for complex crypto portfolios. Gokul’s multidisciplinary expertise strengthens Agroasys’s capabilities in settlement logic, cryptographic integrity, and scalable trading-grade systems. Some of his notable works includ: [Safemoon.sol](https://github.com/0xneox/Safemoon.sol) [Horizon](https://github.com/0xneox/horizon) [Gateway](https://github.com/0xneox/gateway) [Exonum](https://github.com/0xneox/exonum)
+- **Gokul Ravindran** - is a senior blockchain engineer with deep, hands-on experience across smart contract development, exchange infrastructure, and on-chain analysis; he has built smart contracts for more than seven cryptocurrency projects and designed a production-grade orderbook and matching engine for a crypto exchange, and he created a proof of concept for IQVIA that integrated IPFS, Ethereum, and BigchainDB. He has authored four blockchain whitepapers, performed on-chain analysis for over ten projects, advised high-net-worth individuals on crypto investments, collaborated on multiple NFT projects, and developed tax computation software for complex crypto portfolios. Gokul’s multidisciplinary expertise strengthens Agroasys’s capabilities in settlement logic, cryptographic integrity, and scalable trading-grade systems. Some of his notable works includ: [Safemoon.sol](https://github.com/0xneox/Safemoon.sol) [Horizon](https://github.com/0xneox/horizon) [Gateway](https://github.com/0xneox/gateway) [Exonum](https://github.com/0xneox/exonum)
 
-**Aston Steven** - is the project lead and an experienced Web3 founder across East Africa who has driven regional initiatives including the launch of East Africa and Tanzania Web3 chambers. He has championed the adoption of Ricardian contracts in the region, led grant and partnership efforts with major foundations, and represents Agroasys in investor and government engagements. At Agroasys he connects product strategy, legal enforceability, and market partnerships to ensure the platform is both visionary and deliverable.
+- **Aston Steven** - is the project lead and an experienced Web3 founder across East Africa who has driven regional initiatives including the launch of East Africa and Tanzania Web3 chambers. He has championed the adoption of Ricardian contracts in the region, led grant and partnership efforts with major foundations, and represents Agroasys in investor and government engagements. At Agroasys he connects product strategy, legal enforceability, and market partnerships to ensure the platform is both visionary and deliverable.
 
-**Julius Stephen** is an experienced UX and product designer with a background in information security and a proven track record delivering high-quality Web3 interfaces and user journeys. He has designed and contributed to multiple Web3 products, giving him a strong understanding of wallet interactions, signing flows, and decentralized identity from a user-experience perspective. Julius specializes in translating complex technical systems into clear, intuitive workflows for both enterprise buyers and farmers, ensuring that security, compliance, and performance requirements are met without compromising usability. At Agroasys he leads all UX and interaction design, shaping the user flows for Ricardian contract signing, custodial wallet experiences, and settlement operations, and helps steer the broader product roadmap toward scalable and enterprise-ready Web3 adoption.
+- **Julius Stephen** is an experienced UX and product designer with a background in information security and a proven track record delivering high-quality Web3 interfaces and user journeys. He has designed and contributed to multiple Web3 products, giving him a strong understanding of wallet interactions, signing flows, and decentralized identity from a user-experience perspective. Julius specializes in translating complex technical systems into clear, intuitive workflows for both enterprise buyers and farmers, ensuring that security, compliance, and performance requirements are met without compromising usability. At Agroasys he leads all UX and interaction design, shaping the user flows for Ricardian contract signing, custodial wallet experiences, and settlement operations, and helps steer the broader product roadmap toward scalable and enterprise-ready Web3 adoption.
 
 ## Development Status :open_book:
 
@@ -215,9 +216,7 @@ For review purposes, we have attached login details that allow you to access the
 | 4. | Deployment Framework | We will create deployment scripts for AssetHub testnet/mainnet with production readiness checklists |
 
 
-
 ### Milestone 2 Custodial Wallet System & Settlement Engine
-
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  3
@@ -236,7 +235,6 @@ For review purposes, we have attached login details that allow you to access the
 | 4. | Integration Test Suite |  We will create comprehensive tests proving Web2 user actions trigger valid on-chain signatures and settlements |
 ...
 
-
 ## Future Plans
 
 Our long-term sustainability will be financed through recurring revenue from platform commissions, enterprise integrations, and commercial pilot conversions, targeting financial independence within 12-18 months post-grant. In the short term, we will enhance and promote the project by scaling our Polkadot integration (adding audit trails, APIs, and verification mechanisms to our Substrate module) and executing a regional expansion into East Africa, West Africa and Middle East via strategic partnerships. Long-term, our vision is to become the digital backbone of Africa's agricultural trade, enabling transparent, compliant, and instant cross-border settlements powered by Polkadot.
@@ -249,7 +247,3 @@ Our long-term sustainability will be financed through recurring revenue from pla
 
 **How did you hear about the Grants Program?**
 I learned about the Grants Program through direct engagement with the ecosystem, including a Polkadot event I participated in and subsequent meetings with several members of the Web3 Foundation team.
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
