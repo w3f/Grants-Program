@@ -32,10 +32,14 @@ The platform will include:
 - **Contract Creation** UI: Form-driven builder for parameterizing Ricardian Contracts (goods, Incoterms, delivery windows, penalties, quantities).
 - **Settlement Dashboard**: Real-time view of on-chain settlement status, proofs, and cross-border transactions.
 
-![Screenshot 2025-11-14 at 18.31.56](https://hackmd.io/_uploads/SJm6apExZl.png)
-![Screenshot 2025-11-14 at 18.32.08](https://hackmd.io/_uploads/SyXpp6Vgbg.png)
-![Screenshot 2025-11-14 at 18.40.51](https://hackmd.io/_uploads/rkmaa6Nl-g.png)
-![Screenshot 2025-11-14 at 18.41.02](https://hackmd.io/_uploads/ByXpaaVg-g.png)
+<img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 31 56" src="https://github.com/user-attachments/assets/65bb8713-9764-4563-92b2-c2603e5eb734" />
+
+<img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 32 08" src="https://github.com/user-attachments/assets/70fe4a1e-0002-41e9-8e86-317f5a462e6c" />
+
+<img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 40 51" src="https://github.com/user-attachments/assets/3b384719-adbb-47af-868b-edf8fd870ca3" />
+
+<img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 41 02" src="https://github.com/user-attachments/assets/ae9d787c-eafb-4b71-8fe0-268282020112" />
+
 
 We have prepared a complete prototype of the Agroasys Web3 platform in Lovable. It includes all essential workflows and interface screens that reflect the final production architecture. As Lovable requires login for preview access, we will provide the private link and temporary credentials directly to the reviewers. This prototype also includes the conceptual layout of our initial PoC for comparison, showing clear UX and workflow improvements.
 
@@ -106,8 +110,9 @@ Our architecture connects traditional enterprise procurement with blockchain-bas
 - **Reconciliation**: Automated settlement matching between on-chain events and off-chain records
 - **Audit Trails**: Complete transaction history exportable for legal proceedings
 
+<img width="14256" height="11211" alt="Chain arch" src="https://github.com/user-attachments/assets/c5451752-7faa-4709-9ff5-f9ef9873eb43" />
 
-***`architecture.image`***
+
 
 ### Ecosystem Fit
 
@@ -157,7 +162,7 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 
 ### Team members
 
-- Name of team leader
+- Aston Steven
 - Names of team members
 
 ### Contact
