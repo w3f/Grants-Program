@@ -152,7 +152,7 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 
 ### Team members
 
-- **Mrisho Lukamba** - Engineering Lead [Github](https://github.com/MrishoLukamba) [Linkedin](https://www.linkedin.com/in/mrisho-lukamba/)
+- **Mrisho Lukamba** - Blockchain Engineer & Cryptography Specialist [Github](https://github.com/MrishoLukamba) [Linkedin](https://www.linkedin.com/in/mrisho-lukamba/)
 - **Aston Steven** - Product lead, [Github](https://github.com/Astonstevn) [Linkedin](https://www.linkedin.com/in/aston-steven/)
 - **Julius Stephen** - UX/UI Lead, [Github](https://github.com/kingposhwolf)
 - **Gokul Ravindran** - Senior Blockchain Engineer, [Github](https://github.com/0xneox) [X](https://twitter.com/0xneox)
@@ -173,24 +173,19 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 ### Team Code Repos
 
 - [Agroasys Github](https://github.com/Agroasys/Agroasys)
-- https://github.com/{your_organisation}/{project_2}
+- **Mrisho Lukamba** - Mrisho Lukamba is an innovative blockchain engineer and cryptography specialist with a strong foundation in mathematics and physics. He previously worked as an engineer at TONOMUS NEOM and contributed to Class Lambda, giving him hands on experience designing cryptographically secure architectures and Web3 infrastructure for African markets. At Agroasys he leads the integration of Polkadot based settlement layers, focuses on transaction throughput and finality, and hardens the platform’s cryptographic integrity, key management, and verification pipelines. [Github](https://github.com/MrishoLukamba)
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+**Gokul Ravindran** - is a senior blockchain engineer with deep, hands-on experience across smart contract development, exchange infrastructure, and on-chain analysis; he has built smart contracts for more than seven cryptocurrency projects and designed a production-grade orderbook and matching engine for a crypto exchange, and he created a proof of concept for IQVIA that integrated IPFS, Ethereum, and BigchainDB. He has authored four blockchain whitepapers, performed on-chain analysis for over ten projects, advised high-net-worth individuals on crypto investments, collaborated on multiple NFT projects, and developed tax computation software for complex crypto portfolios. Gokul’s multidisciplinary expertise strengthens Agroasys’s capabilities in settlement logic, cryptographic integrity, and scalable trading-grade systems. Some of his notable works includ: [Safemoon.sol](https://github.com/0xneox/Safemoon.sol) [Horizon](https://github.com/0xneox/horizon) [Gateway](https://github.com/0xneox/gateway) [Exonum](https://github.com/0xneox/exonum)
 
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+**Aston Steven** - is the project lead and an experienced Web3 founder across East Africa who has driven regional initiatives including the launch of East Africa and Tanzania Web3 chambers. He has championed the adoption of Ricardian contracts in the region, led grant and partnership efforts with major foundations, and represents Agroasys in investor and government engagements. At Agroasys he connects product strategy, legal enforceability, and market partnerships to ensure the platform is both visionary and deliverable.
 
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
-
+**Julius Stephen** is an experienced UX and product designer with a background in information security and a proven track record delivering high-quality Web3 interfaces and user journeys. He has designed and contributed to multiple Web3 products, giving him a strong understanding of wallet interactions, signing flows, and decentralized identity from a user-experience perspective. Julius specializes in translating complex technical systems into clear, intuitive workflows for both enterprise buyers and farmers, ensuring that security, compliance, and performance requirements are met without compromising usability. At Agroasys he leads all UX and interaction design, shaping the user flows for Ricardian contract signing, custodial wallet experiences, and settlement operations, and helps steer the broader product roadmap toward scalable and enterprise-ready Web3 adoption.
 
 ## Development Status :open_book:
 
 We have developed a demo platform that illustrates how Agroasys will operate once the blockchain integration layer is connected, giving a clear picture of the full end-to-end workflow for enterprise users—our primary target segment. The demo showcases the core processes, including contract creation, signing flows, quality assurance steps, and settlement logic, and provides a visual understanding of how these components will interact with the on-chain anchoring and USDC settlement mechanisms planned for integration. This demonstration has been instrumental in validating the platform’s design and its relevance for large buyers, exporters, and institutional partners.
 
-For review purposes, we have attached login details that allow you to access the [agroasys demo](https://preview--agroasys-prototype.lovable.app/) demo environment and explore its current capabilities. Please use the following credentials to log in: review@agroasys.com with the password 0192837465.
+For review purposes, we have attached login details that allow you to access the [agroasys demo](https://preview--agroasys-prototype.lovable.app/) demo environment and explore its current capabilities. Please use the following credentials to log in: review@agroasys.com with the password 0192837465. Also the platform youtube walkthrough video [Video Demo](https://youtu.be/vSiZdUCG36I?si=EB7CRtqy5ueG6q8n)
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -203,7 +198,7 @@ For review purposes, we have attached login details that allow you to access the
 ### Milestone 1 AssetHub-Integrated Ricardian Contract System
 
 - **Estimated duration:** 6 weeks
-- **FTE:**  1
+- **FTE:**  2
 - **Costs:** 16,000 USD
 
 
@@ -225,7 +220,7 @@ For review purposes, we have attached login details that allow you to access the
 
 
 - **Estimated Duration:** 4 weeks
-- **FTE:**  2
+- **FTE:**  3
 - **Costs:** 14,000 USD
 
 | Number | Deliverable | Specification |
