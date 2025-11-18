@@ -155,6 +155,7 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 - **Mrisho Lukamba** - Engineering Lead [Github](https://github.com/MrishoLukamba) [Linkedin](https://www.linkedin.com/in/mrisho-lukamba/)
 - **Aston Steven** - Product lead, [Github](https://github.com/Astonstevn) [Linkedin](https://www.linkedin.com/in/aston-steven/)
 - **Julius Stephen** - UX/UI Lead, [Github](https://github.com/kingposhwolf)
+- **Gokul Ravindran** - Senior Blockchain Engineer, [Github](https://github.com/0xneox) [X](https://twitter.com/0xneox)
 
 ### Contact
 
@@ -166,7 +167,6 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 
 - **Registered Address:** Plot No. 84 Kinondoni Rd, Dar es Salaam, Tanzania  
 - **Registered Legal Entity:** Agroasys Company Limited
-
 
 ### Team's experience
 
