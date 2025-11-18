@@ -231,17 +231,13 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 ### Overview
 
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months) 
-25 Weeks
+- **Total Estimated Duration:** 25 Weeks
 
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-1.5 FTE
+- **Full-Time Equivalent (FTE):** 1.5 FTE
  
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
-$166,038 USD
+- **Total Costs:** $166,038 USD
 
-- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
-50%
+- **DOT %:** 50%
 
 ### Milestone 1  — Decode Extrinsics & Events
 
