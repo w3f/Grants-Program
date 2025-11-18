@@ -105,7 +105,6 @@ Our architecture connects traditional enterprise procurement with blockchain-bas
 
 <img width="14256" height="11211" alt="Chain arch" src="https://github.com/user-attachments/assets/c5451752-7faa-4709-9ff5-f9ef9873eb43" />
 
-
 ### Ecosystem Fit
 
 Agroasys leverages Polkadot's production-ready AssetHub to bring tamper-evident, legally enforceable Ricardian contracts and cryptographic settlement proofs to Africa's agricultural value chains. Our platform bridges the gap between traditional enterprise trade and Web3 infrastructure by utilizing Polkadot's existing primitives for maximum security and reliability.
