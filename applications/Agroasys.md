@@ -35,7 +35,7 @@ The platform will include:
 <img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 41 02" src="https://github.com/user-attachments/assets/ae9d787c-eafb-4b71-8fe0-268282020112" />
 
 
-We have prepared a complete prototype of the Agroasys Web3 platform in Lovable. It includes all essential workflows and interface screens that reflect the final production architecture. As Lovable requires login for preview access, we will provide the private link and temporary credentials directly to the reviewers. This prototype also includes the conceptual layout of our initial PoC for comparison, showing clear UX and workflow improvements.
+We have prepared a complete prototype of the Agroasys Web3 platform. It includes all essential workflows and interface screens that reflect the final production architecture. As Lovable requires login for preview access, we will provide the private link and temporary credentials directly to the reviewers. This prototype also includes the conceptual layout of our initial PoC for comparison, showing clear UX and workflow improvements.
 
 #### Data models / API specifications of the core functionality
 The core platform uses a modular enterprise architecture with custodial wallet management.
