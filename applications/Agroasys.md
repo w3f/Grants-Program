@@ -134,10 +134,7 @@ Agroasys leverages Polkadot's production-ready AssetHub to bring tamper-evident,
 - **Sustainable Model**: Revenue-generating platform that doesn't require ongoing grants
 
 Agroasys serves agricultural exporters, cooperatives, and enterprise buyers requiring transparent, low-cost digital settlements. We provide a trust layer that digitizes and verifies contracts and transactions between stakeholders.
-
-Within the Polkadot ecosystem, we enable parachain and dApp developers to integrate our modules for contract verification, settlement proofs, and agricultural data oracles. This dual approach ensures real-world adoption while contributing technical interoperability to the broader Web3 ecosystem.
-
-The platform functions as both a standalone application and an interoperable service module that other parachains can integrate for agricultural contract verification and settlement tracking.
+Within the Polkadot ecosystem, we enable parachain and dApp developers to integrate our modules for contract verification, settlement proofs, and agricultural data oracles. This dual approach ensures real-world adoption while contributing technical interoperability to the broader Web3 ecosystem. The platform functions as both a standalone application and an interoperable service module that other parachains can integrate for agricultural contract verification and settlement tracking.
 
 These needs were validated through multi-stakeholder interviews, East Africa trade data ([Trademark Africa](https://trademarkafrica.com/tracking-east-africas-top-agricultural-commodities-and-export-destinations-new-report/#:~:text=East%20Africa's%20agricultural%20trade%20is,demands%20require%20urgent%20policy%20interventions.)), and World Bank reports highlighting the inefficiencies of Africa’s agri-export payments and the 30–40% loss in transaction value due to intermediaries ([World Bank: Digitalizing Agricultural Payments in Sub-Saharan Africa](https://www.worldbank.org/en/publication/globalfindex/brief/data-from-the-global-findex-2021-digitalizing-agricultural-payments-in-sub-Saharan-africa)). Field discussions with over 100 traders in East Africa and Middle East alone revealed a consistent lack of trust in payment and contract enforcement systems, confirming strong demand for tamper-proof, digitally signed contracts and blockchain-based settlements.
 
