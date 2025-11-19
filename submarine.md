@@ -1,13 +1,5 @@
 # Submarine — Open Explorer & Indexer for Polkadot
 
-> [!NOTE]
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
-
-
-
-
 - **Team Name:** MLabs LTD
 - **Payment Details:**
   - **DOT**: For the **DOT** compensation, please provide a Polkadot address (e.g. 15oF4...).
@@ -110,12 +102,6 @@ Unlike existing explorer offerings that are tightly coupled to specific hosting 
 
 ## Team
 
-
-> [!IMPORTANT]
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase. See our [FAQ](https://grants.web3.foundation/docs/faq#what-is-kyckyb-and-why-do-i-have-to-provide-this-data) for more info.
-
-
-
 ### Team members
 
 - Luke Mahoney 
@@ -195,16 +181,6 @@ NA
 
 ## Development Status
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://grants.web3.foundation/docs/rfps) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
-
-
-
 We have completed initial research and a working Rust prototype that validate feasibility and performance assumptions for Submarine. The materials below underpin the project’s viability. Please request access from the MLabs team:
 
 Executive summary:
@@ -219,13 +195,6 @@ https://github.com/szg251/submarine
 This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
 Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-
-
-> [!CAUTION]
-> If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
-
-
 
 
 ### Overview
@@ -251,34 +220,15 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 $29,760
 
 
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
-
-
-Number
-Deliverable
-Specification
-0a
-License
-Apache 2.0 / GPLv3 / MIT / Unlicense. See the delivery guidelines for details.
-0b
-Documentation
-We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the delivery guidelines for details.
-0c
-Testing and Testing Guide
-Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the delivery guidelines for details.
-0d
-Docker
-We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-1
-SCALE Parser
-Build a parser that consumes raw SCALE-encoded bytes and, using on-chain metadata, splits them into pallet-call indices and parameter payloads.
-2
-Metadata Fetching & Caching
-Auto-fetch latest on-chain metadata; Cache metadata versions based upon changes signified by specVersion or txVersionbumps.
-3
-Type Registry Generation
-Tooling to generate and version per-chain custom type registries; persist registries for historical lookups and re-decode.
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | SCALE Parser | Build a parser that consumes raw SCALE-encoded bytes and, using on-chain metadata, splits them into pallet-call indices and parameter payloads. |
+| 2. | Metadata Fetching & Caching | Auto-fetch latest on-chain metadata; Cache metadata versions based upon changes signified by specVersion or txVersion bumps. |
+| 3. | Type Registry Generation | Tooling to generate and version per-chain custom type registries; persist registries for historical lookups and re-decode. |
 
 
 
@@ -296,45 +246,18 @@ Tooling to generate and version per-chain custom type registries; persist regist
 $48,852
 
 
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
-
-
-
- 
-Number
-Deliverable
-Specification
-0a
-License
-Apache 2.0 / GPLv3 / MIT / Unlicense. See the delivery guidelines for details.
-0b
-Documentation
-We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the delivery guidelines for details.
-0c
-Testing and Testing Guide
-Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the delivery guidelines for details.
-0d
-Docker
-We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-1
-Research 
-Research and develop of data structures and parsers needed for Relay + AssetHub - Basic smoke testing
-2
-Block scanner with basic checkpointing
-Continuously pull new blocks via RPC, decode extrinsics/events (using the M1 parser), and persist a “last processed block” pointer. 
-3
-Rewind
-On restart or re-org, rewind N blocks based upon point (e.g. 5–10) to ensure consistency
-4
-Field extraction & Filtering
-Prioritize field selection for UI pertinent information such as account ID balances, transfer records (`from` , `to` , `amount` , `block` , etc); Discard non-prioritized information
-5
-Storage Schema Design & Implementation
-Define a DB schema for storing and accessing the extracted information; implement database queries
-6
-Data-Access Module
-Define and design required endpoints; API exposing in-process function calls that batch, group, and sort results for UI consumption
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Research | Research and develop of data structures and parsers needed for Relay + AssetHub - Basic smoke testing |
+| 2. | Block scanner with basic checkpointing | Continuously pull new blocks via RPC, decode extrinsics/events (using the M1 parser), and persist a "last processed block" pointer. |
+| 3. | Rewind | On restart or re-org, rewind N blocks based upon point (e.g. 5–10) to ensure consistency |
+| 4. | Field extraction & Filtering | Prioritize field selection for UI pertinent information such as account ID balances, transfer records (`from` , `to` , `amount` , `block` , etc); Discard non-prioritized information |
+| 5. | Storage Schema Design & Implementation | Define a DB schema for storing and accessing the extracted information; implement database queries |
+| 6. | Data-Access Module | Define and design required endpoints; API exposing in-process function calls that batch, group, and sort results for UI consumption |
 
 
 
@@ -351,35 +274,15 @@ Define and design required endpoints; API exposing in-process function calls tha
 $25,830
 
 
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
-
-
-
-Number
-Deliverable
-Specification
-0a
-License
-Apache 2.0 / GPLv3 / MIT / Unlicense. See the delivery guidelines for details.
-0b
-Documentation
-We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the delivery guidelines for details.
-0c
-Testing and Testing Guide
-Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the delivery guidelines for details.
-0d
-Docker
-We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-1
-Component Development 
-Draft wireframes and build out front-end screens; Implement Navigation and routing between views; Loading, empty-state, error, etc displays
-2
-Data-access Integration
-Wire up in-process function calls to UI components; Ensure pagination and filter controls map cleanly
-3
-Essential Validation & Testing
-End-to-end smoke tests: block →decode → store → UI render; Verify UX flows
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Component Development | Draft wireframes and build out front-end screens; Implement Navigation and routing between views; Loading, empty-state, error, etc displays |
+| 2. | Data-access Integration | Wire up in-process function calls to UI components; Ensure pagination and filter controls map cleanly |
+| 3. | Essential Validation & Testing | End-to-end smoke tests: block →decode → store → UI render; Verify UX flows |
 
 
 ### Milestone 4 — Infrastructure & DevOps
@@ -394,35 +297,15 @@ End-to-end smoke tests: block →decode → store → UI render; Verify UX flows
 $18,648
 
 
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
-
-
-
-Number
-Deliverable
-Specification
-0a
-License
-Apache 2.0 / GPLv3 / MIT / Unlicense. See the delivery guidelines for details.
-0b
-Documentation
-We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the delivery guidelines for details.
-0c
-Testing and Testing Guide
-Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the delivery guidelines for details.
-0d
-Docker
-We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-1
-Containerization
-Dockerize each component (decoder, indexer, UI); Define reproducible images with clear version tags
-2
-CI/CD Pipeline
-Automate builds, unit/integration tests
-3
-Hosting & Deployment 
-Stand up bare-metal infrastructure; Configure load-balancers, db clusters, and network security; Monitoring and logging implementation; Manage secrets and environment-specific configs
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Containerization | Dockerize each component (decoder, indexer, UI); Define reproducible images with clear version tags |
+| 2. | CI/CD Pipeline | Automate builds, unit/integration tests |
+| 3. | Hosting & Deployment | Stand up bare-metal infrastructure; Configure load-balancers, db clusters, and network security; Monitoring and logging implementation; Manage secrets and environment-specific configs |
 
 
 
@@ -438,37 +321,15 @@ Stand up bare-metal infrastructure; Configure load-balancers, db clusters, and n
 $42,948
 
 
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
-
-
-
-Number
-Deliverable
-Specification
-0a
-License
-Apache 2.0 / GPLv3 / MIT / Unlicense. See the delivery guidelines for details.
-0b
-Documentation
-We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. See the delivery guidelines for details.
-0c
-Testing and Testing Guide
-Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the delivery guidelines for details.
-0d
-Docker
-We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-1
-Partner Parachain Onboarding
-Identify 2-5 partner parachains and secure agreement for 6-month free trial; Organize customized integration relative their parachain specifics
-2
-Essential Validation
-Ensure explorers are operating properly relative chain specific types and metadata; Verify critical workflows versus actual on-chain activity
-3
-Service Deployment, Monitoring and Feedback loop 
-Deploy integrated indexers to our infrastructure; Collect partner chain and, where available, community feedback; BD efforts for further product development including organizing further community funding if necessary
-
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Partner Parachain Onboarding | Identify 2-5 partner parachains and secure agreement for 6-month free trial; Organize customized integration relative their parachain specifics |
+| 2. | Essential Validation | Ensure explorers are operating properly relative chain specific types and metadata; Verify critical workflows versus actual on-chain activity |
+| 3. | Service Deployment, Monitoring and Feedback loop | Deploy integrated indexers to our infrastructure; Collect partner chain and, where available, community feedback; BD efforts for further product development including organizing further community funding if necessary |
 
 
 ## Future Plans
@@ -482,7 +343,7 @@ Please include here
 
 In the near term, our focus is exactly what this grant proposes: harden the Rust indexer and explorer, finalize the versioned relational schema, and ship a documented REST API with an OpenAPI spec and cursor-based pagination. We’ll cut tagged releases, provide a reference deployment (Docker on bare metal or common IaaS), and validate end-to-end on 2–5 pilot parachains so that fresh deployments ingest blocks, decode extrinsics/events, and render in the UI reliably. This phase is about turning the current prototype into a stable, reproducible open-source baseline that any team can self-host.
 
-Beyond the grant, we intend to build a sustainable business around Submarine while keeping the core Apache-2.0/MIT and vendor-neutral. Ongoing development and maintenance will be financed through optional managed hosting with transparent, usage-based pricing; support subscriptions with SLAs and onboarding; and funded integrations for chain-specific extractors or new pallets. This model preserves zero lock-in—teams can run Submarine themselves, or pay for convenience and guarantees—while giving us a durable path to maintain compatibility across runtime upgrades, publish benchmarks and cost profiles, and keep the roadmap public and semantically versioned.
+Beyond the grant, we intend to build a sustainable business around Submarine while keeping the core Apache-2.0 and vendor-neutral. Ongoing development and maintenance will be financed through optional managed hosting with transparent, usage-based pricing; support subscriptions with SLAs and onboarding; and funded integrations for chain-specific extractors or new pallets. This model preserves zero lock-in—teams can run Submarine themselves, or pay for convenience and guarantees—while giving us a durable path to maintain compatibility across runtime upgrades, publish benchmarks and cost profiles, and keep the roadmap public and semantically versioned.
 
 
 ## Additional Information 
@@ -495,11 +356,3 @@ Here you can also add any additional information that you think is relevant to t
 - Work you have already done.
 - If there are any other teams who have already contributed (financially) to the project.
 - Previous grants you may have applied for.
-
-
-
-
-
-
-
-
