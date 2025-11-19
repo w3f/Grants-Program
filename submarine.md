@@ -222,7 +222,7 @@ $29,760
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -248,7 +248,7 @@ $48,852
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -276,7 +276,7 @@ $25,830
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -299,7 +299,7 @@ $18,648
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -323,7 +323,7 @@ $42,948
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense. |
+| **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
@@ -343,7 +343,7 @@ Please include here
 
 In the near term, our focus is exactly what this grant proposes: harden the Rust indexer and explorer, finalize the versioned relational schema, and ship a documented REST API with an OpenAPI spec and cursor-based pagination. We’ll cut tagged releases, provide a reference deployment (Docker on bare metal or common IaaS), and validate end-to-end on 2–5 pilot parachains so that fresh deployments ingest blocks, decode extrinsics/events, and render in the UI reliably. This phase is about turning the current prototype into a stable, reproducible open-source baseline that any team can self-host.
 
-Beyond the grant, we intend to build a sustainable business around Submarine while keeping the core Apache-2.0/MIT and vendor-neutral. Ongoing development and maintenance will be financed through optional managed hosting with transparent, usage-based pricing; support subscriptions with SLAs and onboarding; and funded integrations for chain-specific extractors or new pallets. This model preserves zero lock-in—teams can run Submarine themselves, or pay for convenience and guarantees—while giving us a durable path to maintain compatibility across runtime upgrades, publish benchmarks and cost profiles, and keep the roadmap public and semantically versioned.
+Beyond the grant, we intend to build a sustainable business around Submarine while keeping the core Apache-2.0 and vendor-neutral. Ongoing development and maintenance will be financed through optional managed hosting with transparent, usage-based pricing; support subscriptions with SLAs and onboarding; and funded integrations for chain-specific extractors or new pallets. This model preserves zero lock-in—teams can run Submarine themselves, or pay for convenience and guarantees—while giving us a durable path to maintain compatibility across runtime upgrades, publish benchmarks and cost profiles, and keep the roadmap public and semantically versioned.
 
 
 ## Additional Information 
