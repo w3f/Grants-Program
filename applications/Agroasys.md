@@ -103,7 +103,8 @@ Our architecture connects traditional enterprise procurement with blockchain-bas
 - **Reconciliation**: Automated settlement matching between on-chain events and off-chain records
 - **Audit Trails**: Complete transaction history exportable for legal proceedings
 
-<img width="14256" height="11211" alt="Chain arch" src="https://github.com/user-attachments/assets/c5451752-7faa-4709-9ff5-f9ef9873eb43" />
+<img width="14256" height="11211" alt="chain arch" src="https://github.com/user-attachments/assets/3794cb58-8148-452c-b9bc-1b8579b75c80" />
+
 
 ### Ecosystem Fit
 
