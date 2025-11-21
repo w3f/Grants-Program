@@ -180,7 +180,24 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 
 ## Development Status :open_book:
 
-We have developed a demo platform that illustrates how Agroasys will operate once the blockchain integration layer is connected, giving a clear picture of the full end-to-end workflow for enterprise users—our primary target segment. The demo showcases the core processes, including contract creation, signing flows, quality assurance steps, and settlement logic, and provides a visual understanding of how these components will interact with the on-chain anchoring and USDC settlement mechanisms planned for integration. This demonstration has been instrumental in validating the platform’s design and its relevance for large buyers, exporters, and institutional partners.
+#### Prior Work :building_construction:
+
+To ensure this grant focuses strictly on Web3 infrastructure, it is important to distinguish between the **Agroasys Marketplace (Web2 Layer)**, which is already built, and the **Settlement & Anchor Layer (Web3 Layer)**, which is the subject of this proposal.
+
+#### 1. Completed: The Agroasys Marketplace (Client Layer)
+We have already designed, developed, and deployed the core marketplace infrastructure. This layer handles the business logic, user interfaces, and trade negotiation workflows.
+* **Frontend & UI:** The React-based dashboards for Contract Creation, Trade Negotiation, and User Management are complete (as seen in the "UI Mockups" section).
+* **Off-Chain Database:** The Postgres schemas for User Identity, KYC data, and commodity tracking are implemented.
+* **Matchmaking Engine:** The logic connecting buyers to cooperatives is functional.
+* **Document Generation:** The engine that compiles trade terms into a human-readable PDF (the visual representation of the Ricardian contract) is built.
+
+#### 2. To Be Built: The Web3 Integration (The Grant Scope)
+The grant focuses exclusively on the "Blockchain Integration Layer". The existing Marketplace currently lacks the cryptographic binding and settlement rails.
+- **The Grant covers:**
+    - Building the **Signing Service** (converting Web2 actions into cryptographic signatures).
+    - Developing the **Custodial Key Management System** (securely holding keys for enterprise users).
+    - Implementing the **Settlement Engine** (listening to on-chain events and reconciling them with the off-chain DB).
+    - Integration with **AssetHub** (using `system.remark` and `Assets` pallet).
 
 For review purposes, we have attached login details that allow you to access the [agroasys demo](https://preview--agroasys-prototype.lovable.app/) demo environment and explore its current capabilities. Please use the following credentials to log in: review@agroasys.com with the password 0192837465. Also the platform youtube walkthrough video [Video Demo](https://youtu.be/vSiZdUCG36I?si=EB7CRtqy5ueG6q8n)
 
