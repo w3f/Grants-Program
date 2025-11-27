@@ -17,6 +17,36 @@ As the initial implementation aligned with the Senate’s forthcoming legislativ
 
 The project also represents a strategic milestone for the Philippines’ digital future. Through Capella, Substrate and Polkadot technologies are positioned to become the de facto standard for the country’s blockchain infrastructure, offering modularity, scalability, security, and interoperability for nationwide systems. Beyond transparency, Capella lays the groundwork for a broader ecosystem of public-sector innovation, where citizens, developers, and government agencies collaborate on a unified, next-generation digital governance platform.
 
+### Project Details
+
+#### Problem Statement
+#### Senate Bill No. 1330
+#### Government Budget and Procurement Process
+#### Blockchain Recording
+#### Citizen Empowerment
+#### Other Applications
+
+### Ecosystem Fit
+
+#### Parachain for Government
+#### 100 Million Users
+#### 
+
+### Team
+
+#### Harold Glenn Minerva
+#### Caesar Ditan
+#### Noah Oliver Rigonan
+#### Arneil Polican
+
+### Development Status
+
+### Development Roadmap
+
+### Future Plans
+
+
+
 
 
 
