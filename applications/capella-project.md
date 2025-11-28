@@ -20,7 +20,15 @@ The project also represents a strategic milestone for the Philippines’ digital
 ### Project Details
 
 #### Problem Statement
+
+Lack of transparency in government budgeting and spending makes it difficult for citizens, civil society, and even oversight bodies to track how public funds are allocated and used. This opacity has contributed to corruption, the proliferation of ghost projects, and the misuse of public resources, as seen in cases where infrastructure funds listed in the Department of Public Works and Highways’ budget either did not materialize or were mismanaged, with little visibility into procurement processes, disbursements, and project execution. Additionally, the current system provides minimal opportunity for meaningful citizen participation or accountability, leaving taxpayers unable to effectively question or monitor government expenditures. Inefficiencies in record-keeping and weak audit-traceability further compound these issues, as financial data can be fragmented, delayed, or prone to manipulation, undermining public trust in institutions and the effective management of national resources.
+
 #### Senate Bill No. 1330
+
+Senate Bill No. 1330 seeks to address the problem of opaque government budgeting and spending by leveraging blockchain technology to make financial data transparent, immutable, and publicly accessible. By recording every step of the budget process, from appropriation, fund release, and procurement, to project execution and liquidation on a blockchain ledger, all transactions become time-stamped and tamper-proof, creating a permanent audit trail. This allows citizens, civil society groups, and oversight bodies to independently verify how funds are allocated and spent in real time, reducing opportunities for corruption, ghost projects, and fund mismanagement. 
+
+Blockchain’s decentralized and secure nature also ensures that records cannot be altered retroactively, strengthening accountability and trust in government operations. Furthermore, by making budget data accessible through user-friendly interfaces, SB 1330 empowers citizens to monitor expenditures, participate in oversight, and hold public officials accountable, while streamlining auditing processes and improving overall efficiency in public finance management.
+
 #### Government Budget and Procurement Process
 #### Blockchain Recording
 #### Citizen Empowerment
