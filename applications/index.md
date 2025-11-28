@@ -93,7 +93,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Esscrypt Ltd.](https://esscrypt.com/)             | [Polkadot ElizaOS Plugin](./ElizaPluginPolkadot.md)       | [GitHub](https://github.com/Esscrypt) |    ☐       |       ☒       |     ☒      |
 | [Elastic Labs](https://elasticlabs.org/)             | [Polkadot Agent Kit](./polkadot_agent_kit.md)       | [GitHub](https://github.com/elasticlabs-org/polkadot-agent-kit) |    ☐       |       ☒       |     ☐      |
 | [Ondřej Pulc](https://github.com/exezbcz)             | [ParaPort - Embedded Polkadot Auto-teleport App](./paraport_m1.md)       | [GitHub](https://github.com/exezbcz/paraport) |    ☐       |       ☐       |     ☐      |
-| [Rui Morais](https://github.com/fiono11)             | [Decentralized Threshold Signature Service Implementation](./DecentralizedThresholdSigningService.md)       | [GitHub](https://github.com/fiono11) |    ☐       |       ☐       |     ☐      |
+| [Rui Morais](https://github.com/fiono11)             | [Decentralized Threshold Signature Service Implementation](./DecentralizedThresholdSigningService.md)       | [GitHub](https://github.com/fiono11) |    ☐       |       ☒       |     ☐      |
 
 [🔝](#top)
 
@@ -106,7 +106,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [TCDT Lab](https://github.com/ChainSupport)             | Blockchain Interoperability through DNS and Asset Discovery       | [GitHub](https://github.com/tcdt-lab) |    ☐       |       ☐       |     ☐      |
 | [Staking Rewards](https://www.stakingrewards.com/)             | [Validator Performance - Research & Methodology Development](./staking_rewards.md)       | [GitHub](https://github.com/stakingrewards) |    ☐       |       ☐       |     ☐      |
 | [Kzero](https://kzero.xyz/)             | [KZero Wallet](./KZero.md)       | [GitHub](https://github.com/kzero-xyz) |    ☐       |       ☒       |     ☐      |
-| [Sporyon Technologies](https://sporyon.io/)             | [Dotnix - Follow-Up](./dotnix-follow-up.md)       | [GitHub](https://github.com/sporyon) |    ☐       |       ☐       |     ☐      |
+| [Sporyon Technologies](https://sporyon.io/)             | [Dotnix - Follow-Up](./dotnix-follow-up.md)       | [GitHub](https://github.com/sporyon) |    ☐       |       ☒       |     ☐      |
 
 
 ## 2024
@@ -124,7 +124,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Decenzio](https://decenzio.com/)                       | [NFTAA - NFT as an account](./nftaa.md)                     | [GitHub](https://github.com/Roman-24)               | ☐          |        ☒       |      ☒      |
 | [Apolixit](https://github.com/Apolixit/)                       | [Polkanalysis](./polkanalysis.md)                     | [GitHub](https://github.com/Apolixit/)               | ☐          |        ☐       |      ☐      |
 | [KodaLabs](https://github.com/kodadot)                       | [Multichain Identity Indexer](./multichain_identity_indexer.md)                     | [GitHub](https://github.com/kodadot)               | ☐          |        ☒       |      ☒      |
-| [Zondax AG](https://zondax.ch/)                       | [MigrationEase](./MigrationEase.md)                     | [GitHub](https://github.com/zondax)               | ☐          |        ☐       |      ☐      |
+| [Zondax AG](https://zondax.ch/)                       | [MigrationEase](./MigrationEase.md)                     | [GitHub](https://github.com/zondax)               | ☐          |        ☒       |      ☐      |
 | [Dota Network](https://x.com/dot20_dota)                       | [dairdrop](./docname.md)                     | [GitHub](https://github.com/dota-network)               | ☐          |        ☐       |      ☐      |
 | [Swush Labs](https://github.com/swush-labs/)                       | [Swush DEX Aggregator](./swush-dex-aggregator.md)                     | [GitHub](https://github.com/swush-labs/)               | ☐          |        ☒       |      ☒      |
 | [QueryWeb3](https://queryweb3.com/)                       | [QueryWeb3](./queryWeb3.md)                     | [GitHub](https://github.com/Query-Web3/)               | ☐          |        ☐       |      ☐      |
