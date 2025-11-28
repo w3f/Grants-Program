@@ -1,3 +1,11 @@
+---
+team_name: Monza Tech LLC
+contact_name: Alexandre Figueras
+contact_email: alex@monzatech.co
+level: 2
+address: 14znUCRAVUgUSYLcStj2gug3fUBnu5v6ARtEgjDt5YGRPGjn
+---
+
 # Grant Application: Sentinel Grid
 
 ## 1. Project Overview :page_facing_up:
@@ -16,9 +24,6 @@ Sentinel Grid provides decentralized, verifiable monitoring for critical infrast
 ### 1.3 Team
 - Alexandre Figueras - Founder/Lead Developer
 - Engineering Team - Blockchain & infrastructure development
-
-**Contact:** alex@monzatech.co  
-**Legal Structure:** Monza Tech LLC
 
 ## 2. Project Details :rocket:
 
