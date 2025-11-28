@@ -2,6 +2,7 @@
 team_name: Monza Tech LLC
 contact_name: Alexandre Figueras
 contact_email: alex@monzatech.co
+project_name: Sentinel Grid
 level: 2
 address: 14znUCRAVUgUSYLcStj2gug3fUBnu5v6ARtEgjDt5YGRPGjn
 ---
