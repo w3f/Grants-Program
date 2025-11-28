@@ -93,7 +93,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [Esscrypt Ltd.](https://esscrypt.com/)             | [Polkadot ElizaOS Plugin](./ElizaPluginPolkadot.md)       | [GitHub](https://github.com/Esscrypt) |    ☐       |       ☒       |     ☒      |
 | [Elastic Labs](https://elasticlabs.org/)             | [Polkadot Agent Kit](./polkadot_agent_kit.md)       | [GitHub](https://github.com/elasticlabs-org/polkadot-agent-kit) |    ☐       |       ☒       |     ☐      |
 | [Ondřej Pulc](https://github.com/exezbcz)             | [ParaPort - Embedded Polkadot Auto-teleport App](./paraport_m1.md)       | [GitHub](https://github.com/exezbcz/paraport) |    ☐       |       ☐       |     ☐      |
-| [Rui Morais](https://github.com/fiono11)             | [Decentralized Threshold Signature Service Implementation](./DecentralizedThresholdSigningService.md)       | [GitHub](https://github.com/fiono11) |    ☐       |       ☐       |     ☐      |
+| [Rui Morais](https://github.com/fiono11)             | [Decentralized Threshold Signature Service Implementation](./DecentralizedThresholdSigningService.md)       | [GitHub](https://github.com/fiono11) |    ☐       |       ☒       |     ☐      |
 
 [🔝](#top)
 
