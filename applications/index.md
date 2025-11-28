@@ -106,7 +106,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [TCDT Lab](https://github.com/ChainSupport)             | Blockchain Interoperability through DNS and Asset Discovery       | [GitHub](https://github.com/tcdt-lab) |    ☐       |       ☐       |     ☐      |
 | [Staking Rewards](https://www.stakingrewards.com/)             | [Validator Performance - Research & Methodology Development](./staking_rewards.md)       | [GitHub](https://github.com/stakingrewards) |    ☐       |       ☐       |     ☐      |
 | [Kzero](https://kzero.xyz/)             | [KZero Wallet](./KZero.md)       | [GitHub](https://github.com/kzero-xyz) |    ☐       |       ☒       |     ☐      |
-| [Sporyon Technologies](https://sporyon.io/)             | [Dotnix - Follow-Up](./dotnix-follow-up.md)       | [GitHub](https://github.com/sporyon) |    ☐       |       ☐       |     ☐      |
+| [Sporyon Technologies](https://sporyon.io/)             | [Dotnix - Follow-Up](./dotnix-follow-up.md)       | [GitHub](https://github.com/sporyon) |    ☐       |       ☒       |     ☐      |
 
 
 ## 2024
