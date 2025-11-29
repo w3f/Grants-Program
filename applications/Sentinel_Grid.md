@@ -1,112 +1,136 @@
 ---
-team_name: Monza Tech LLC
-contact_name: Alexandre Figueras
-contact_email: alex@monzatech.co
-project_name: Sentinel Grid
+team_name: "Monza Tech LLC"
+project_name: "Sentinel Grid"
+contact_name: "Alexandre Figueras"
+contact_email: "alex@monzatech.co"
 level: 2
-address: 14znUCRAVUgUSYLcStj2gug3fUBnu5v6ARtEgjDt5YGRPGjn
+address: "14znUCRAVUgUSYLcStj2gug3fUBnu5v6ARtEgjDt5YGRPGjn"
+total_cost_dai: 50000
+license: "Apache-2.0"
+github: "https://github.com/MonzaTech"
 ---
 
 # Grant Application: Sentinel Grid
 
+## Project Abstract
+
+Sentinel Grid is a Substrate-based protocol providing decentralized, verifiable monitoring for mission-critical infrastructure. We ingest encrypted telemetry from energy grids and telecom networks, run deterministic AI-based anomaly scoring off-chain, and record provable events onchain. This creates tamper resistant audit trails, cross-chain alerting, and tokenizable real-world assets for infrastructure operators and downstream DeFi/insurance primitives.
+
+This application requests funding to finalize Substrate pallets, off-chain workers, XCM integration, and a production-ready monitoring dashboard so we can run pilot deployments with utility partners and demonstrate cross-chain resilience workflows.
+
+---
+
 ## 1. Project Overview
 
 ### 1.1 Overview
-Sentinel Grid provides decentralized and verifiable monitoring for critical infrastructure using Substrate. We ingest and analyze real-time telemetry from energy grids and telecom networks to detect anomalies and prevent catastrophic failures. The goal is to bring mission-critical infrastructure systems into the Polkadot ecosystem with reliable, cross-chain visibility.
+Sentinel Grid provides decentralized and verifiable monitoring for critical infrastructure using Substrate. We ingest and analyze real-time telemetry from energy grids and telecom networks to detect anomalies and prevent cascading failures. The project demonstrates how Polkadot and Substrate can host mission-critical infrastructure primitives.
 
 ### 1.2 Project Details
-- Current Status: Live MVP with real-time telemetry ingestion, anomaly scoring, and on-chain event logging
-- Ecosystem: Polkadot, Substrate, XCM
-- Tech Stack: Rust, Substrate FRAME pallets, Off-chain Workers, React dashboard, Polkadot JS, XCM SDK
-- Total Estimated Duration: 4 months
-- Full-time Equivalent: 2 FTE
-- Total Costs: 50000 USD
-- GitHub: https://github.com/MonzaTech
+- **Current Status:** Live MVP with real-time telemetry ingestion, anomaly scoring, and on-chain event logging  
+- **Ecosystem:** Polkadot, Substrate, XCM  
+- **Tech Stack:** Rust, Substrate FRAME pallets, Off-chain Workers, React dashboard, Polkadot JS  
+- **Total Estimated Duration:** 4 months  
+- **Full-time Equivalent (FTE):** 2 FTE  
+- **Total Costs:** 50,000 USD (50,000 DAI equivalent specified in frontmatter)  
+- **GitHub:** https://github.com/MonzaTech
 
 ### 1.3 Team
 **Alexandre Figueras**  
-Infrastructure analytics, Rust development, Substrate engineering, predictive maintenance systems. Previous deployments include real-time telemetry pipelines and blockchain integrations.  
+Founder. Infrastructure analytics, applied AI, Substrate R&D. Past work includes real-time telemetry pipelines and blockchain integrations.  
 GitHub: https://github.com/alexfigueras
 
 **Senior Rust Engineer**  
-Experience with FRAME pallets, runtime development, Off-chain Workers, and XCM message handling.  
+FRAME pallet and runtime development, off-chain workers, XCM integration.  
 GitHub: https://github.com/MonzaTech
 
 **Frontend Engineering Support**  
-Responsible for the real-time dashboard, Polkadot JS integration, and test network tools.
+Real-time dashboard, Polkadot JS integration, UX for pilot operators.
 
-The team has previous experience delivering telemetry systems, Substrate research, and a live MVP that already demonstrates the core concept.
+The team has delivered an MVP demonstrating core functionality and has early engagement with infrastructure stakeholders.
 
 ---
 
 ## 2. Project Details
 
 ### 2.1 Ecosystem Fit
-Sentinel Grid brings real-world critical infrastructure telemetry to Polkadot. It expands the ecosystem beyond financial use cases by providing high-assurance monitoring tools for industrial and public-sector systems. No other Substrate project focuses on energy grids or telecom networks. By introducing verifiable telemetry, deterministic anomaly scores, and cross-chain alerts, Sentinel Grid offers new primitives for the Substrate and Polkadot ecosystem.
+Sentinel Grid expands the Polkadot/Substrate ecosystem into industrial and public-sector infrastructure. It provides primitives not currently available: verifiable off-chain telemetry, deterministic anomaly scoring, and XCM cross-chain alert propagation. This broadens Substrate usage beyond finance and collectibles and attracts enterprise and public-sector users.
 
-### 2.2 Technology Stack
-- Substrate FRAME pallets for telemetry verification and scoring
-- Off-chain workers for real-time data ingestion and preprocessing
-- XCM for cross-chain alert propagation
-- Rust for core logic and runtime development
-- React and Polkadot JS for visualization and dashboards
+### 2.2 Technical Approach
+- **Substrate FRAME pallets** for telemetry verification, scoring, and event anchoring  
+- **Off-chain Workers** for ingestion, preprocessing, and deterministic AI scoring (deterministic model inference pipeline)  
+- **XCM** for sending alerts and verified events across chains and parachains  
+- **Frontend:** React + Polkadot JS for the operator dashboard and developer tooling  
+- **Deployment:** Dockerized local testnet and sample datasets for reproducible demos
 
 ---
 
 ## 3. Development Roadmap
 
 ### 3.1 Overview
-- Total Duration: 4 months
-- FTE: 2
-- Total Cost: 50000 USD
+- **Total Duration:** 4 months  
+- **FTE:** 2  
+- **Total Cost:** 50,000 USD
 
----
+### 3.2 Milestone 1 — Core Infrastructure (2 months) — 25,000 USD
+**Deliverables**
+- Substrate pallets implementing telemetry packet verification and deterministic scoring  
+- Off-chain Workers capable of ingesting and processing 1,000 packets/hour in test mode  
+- XCM example demonstrating cross-chain transmission of an anomaly event  
+- Unit tests covering core pallet logic (target 80% coverage)  
+- Dockerized local deployment and developer docs
 
-### 3.2 Milestone 1: Core Infrastructure
-**Estimated Duration:** 2 months  
-**Costs:** 25000 USD
+**Acceptance Criteria**
+- Pallets compile cleanly and pass CI tests  
+- Off-chain worker demonstrates required throughput on test data  
+- XCM example successfully relays a sample event across two local chains  
+- Documentation sufficient for a developer to run the local demo
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | Tutorials, API documentation, setup guides |
-| 0c. | Testing | Unit tests with 80 percent coverage of pallet logic |
-| 0d. | Docker | Full local network deployment with off-chain workers |
-| 1. | Substrate Pallets | Verification of telemetry packets with signature checks and scoring logic |
-| 2. | Off-chain Workers | Real-time sensor processing, minimum 1000 packets per hour in test |
-| 3. | XCM Integration | Working example sending anomaly scores between two chains |
+### 3.3 Milestone 2 — Monitoring System (2 months) — 25,000 USD
+**Deliverables**
+- React dashboard with Polkadot JS integration showing live telemetry and alerts  
+- Cross-chain alerting module using XCM to broadcast verified anomalies  
+- Two vertical demo scenarios: energy grid and telecom site failure simulation  
+- End-to-end demo video, test datasets, and developer API docs
 
-**Acceptance Criteria:**  
-Pallets compile with no errors, documented tests cover core logic, XCM example runs locally, telemetry packets can be processed and verified in a sample network.
-
----
-
-### 3.3 Milestone 2: Monitoring System
-**Estimated Duration:** 2 months  
-**Costs:** 25000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1. | Dashboard | Real-time UI built with React and Polkadot JS |
-| 2. | Alerting | Cross-chain alerts triggered by anomalies using XCM |
-| 3. | Example Scenarios | Two use cases: energy infrastructure and telecom failures |
-| 4. | End to End Demo | Full workflow from telemetry to scoring to cross-chain alerts |
-
-**Acceptance Criteria:**  
-Dashboard shows live telemetry, alerts are broadcast across chains, at least two vertical examples are functional, and an end to end demo with video and dataset is delivered.
+**Acceptance Criteria**
+- Dashboard connected to testnet showing live feeds and alerts  
+- XCM-based alerts propagate across three connected test chains in simulation  
+- Two demo scenarios executed and documented with results
+- End-to-end demo published (video + dataset)
 
 ---
 
 ## 4. Additional Information
 
-### 4.1 What makes this project unique
-Sentinel Grid is the first Substrate-based project focused on industrial and public-sector critical infrastructure. It introduces new primitives to Polkadot, including verifiable off-chain telemetry feeds, deterministic anomaly scoring, and cross-chain alerts. The MVP already proves feasibility and the need for decentralized monitoring in a market of more than 200 billion USD.
+### 4.1 What makes this project unique?
+Sentinel Grid is the first Substrate-native system targeting industrial infrastructure with verifiable telemetry and cross-chain alerting. It introduces primitives that enable new enterprise flows such as infrastructure-backed RWAs, parametric insurance triggers, and interoperable resilience tooling.
 
 ### 4.2 Previous Work
-- Live MVP at monzatech.co
-- Real-time telemetry ingestion and anomaly scoring demonstrations
-- Engagement with infrastructure and defense innovation programs
-- Previous RWA data integrations on blockchain networks
+- Live MVP demonstrating telemetry ingestion and anomaly scoring (internal demo)  
+- Early POCs with anonymized energy and telecom datasets  
+- Engagements with defense innovation programs for dual-use validation
 
 ### 4.3 Similar Projects
-There are no direct Substrate competitors. Legacy solutions from traditional industrial vendors are centralized and lack verifiable audit trails or cross-chain capabilities.
+No direct Substrate competitors. Legacy vendors (Siemens, ABB) offer proprietary centralized solutions without onchain verifiability or cross-chain capabilities.
+
+---
+
+## 5. Funding & Licensing
+
+- **Requested Funding:** 50,000 USD (denominated in DAI as specified above)  
+- **License:** Apache-2.0 for all grant deliverables  
+- **KYC/KYB:** Acknowledged and understood; Monza Tech will complete required checks
+
+---
+
+## 6. Contact & Payment
+
+- **Contact:** Alexandre Figueras — alex@monzatech.co  
+- **Payment Address:** 14znUCRAVUgUSYLcStj2gug3fUBnu5v6ARtEgjDt5YGRPGjn
+
+---
+
+## 7. Appendix (attachments to include in PR)
+- Link to MVP demo video (attach or link)  
+- Link to sample telemetry dataset (attach or link)  
+- Link to GitHub repo with initial code and docs (https://github.com/MonzaTech)
