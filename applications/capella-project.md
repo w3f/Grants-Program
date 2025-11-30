@@ -71,7 +71,12 @@ In essence, Capella amplifies Polkadot by bringing real-world institutional adop
 Harold Glenn Minerva is a Polkadot Blockchain Academy alumnus with strong expertise in Web3 engineering, AI-driven systems, and decentralized infrastructure. He holds a Bachelor’s degree in Electronics and Communications Engineering and an MBA from the University of San Carlos. As a founder of multiple technology ventures including Xode Blockchain, Liteclerk Corporation, and other software-focused companies, he has led the development of blockchain tools, cross-chain systems, and enterprise platforms. His combined background in engineering, business, and advanced blockchain specialization positions him as a capable architect of next-generation Web3 and AI solutions.
 
 #### Caesar Ditan
+
 #### Noah Oliver Rigonan
+[GitHub](https://github.com/oliverrigonan) • [LinkedIn](https://www.linkedin.com/in/noaholiverrigonan)
+
+
+
 #### Arneil Polican
 
 ### Development Status
