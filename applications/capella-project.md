@@ -71,8 +71,7 @@ Harold Glenn Minerva is a Polkadot Blockchain Academy alumnus with strong expert
 
 #### Caesar Ditan
 
-#### Noah Oliver Rigonan
-[GitHub](https://github.com/oliverrigonan) • [LinkedIn](https://www.linkedin.com/in/noaholiverrigonan)
+#### Noah Oliver Rigonan ([GitHub](https://github.com/oliverrigonan) • [LinkedIn](https://www.linkedin.com/in/noaholiverrigonan))
 
 
 
