@@ -81,7 +81,60 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 
 ### Development Roadmap
 
-#### Capella Substrate Node
+### Overview
+
+- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
+- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
+- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
+- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
+
+#### Milestone 1: Marketing and On-line Materials
+
+- **Estimated duration:** 1 month
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
+  
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1.1 | Capella Brand | Logo, brand, and other marketing materials for the Capella Project |
+| 1.2 | Capella Website | Provide an on-line portal for the Capella Project |
+| 1.3 | Documetation | On-line documentation using Github |
+
+#### Milestone 2: Capella Substrate Node
+
+- **Estimated duration:** 1 month
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
+  
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+
+#### Milestone 3: Local Support Activities 
+
+- **Estimated duration:** 1 month
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
+  
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+
+### Milestone 4: Mainnet Deployment
+
+- **Estimated duration:** 1 month
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
+  
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+
+#### Milestone 5: Governance Setup and Ecosystem Integration
+
+- **Estimated duration:** 1 month
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
+  
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
 
 
 ### Future Plans
