@@ -77,9 +77,12 @@ Harold Glenn Minerva is a Polkadot Blockchain Academy alumnus with strong expert
 
 ### Development Status
 
-
+Capella is currently being engineered using the existing Xode Blockchain codebase, allowing the team to rapidly spin up a dedicated Capella node while sharing the same runtime framework and core pallets for faster deployment. The foundational blockchain logic is already stable, given Xode’s production-grade architecture, enabling Capella to focus primarily on configuration, customization, and feature extensions. The major remaining work involves establishing the national infrastructure footprint across the Philippines, preparing for parachain slot acquisition, and securing Polkadot coretime to operate Capella as a fully integrated, scalable public-sector blockchain.
 
 ### Development Roadmap
+
+#### Capella Substrate Node
+
 
 ### Future Plans
 
