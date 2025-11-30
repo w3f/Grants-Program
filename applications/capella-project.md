@@ -139,7 +139,8 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 
 ### Future Plans
 
-
+#### CBDC and Stable Coins in Capella for Remittance application
+With Capella fully deployed and actively used by citizens, the platform becomes a strong foundation for expanding into major national-scale use cases. One of the most strategic opportunities is the introduction of CBDC-backed digital assets, enabling financial institutions to leverage Capella as a secure, transparent settlement layer. This also opens the door for on-chain remittances from overseas Filipino workers, where a central-bank-issued stablecoin can move through Capella with lower costs, faster settlement, and full auditability. These advancements become possible precisely because Capella is a community-based, fully permissionless blockchain, allowing both public and private sectors—including banks, fintechs, and regulators—to build seamlessly on top of a shared national infrastructure.
 
 
 
