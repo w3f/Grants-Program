@@ -1,6 +1,6 @@
 # Offline election tool
 
-* **Status:** Open (anyone is allowed to apply)
+* **Status:** [Under Development 1](https://github.com/antiers-solutions/polkadot-staking-miner/tree/feat/offline-election-prediction-tool), [Under Development 2](https://github.com/bilinearlabs/offline-election-tool)
 * **Proposer:** @michalisFr
 * **Projects you think this work could be useful for**: Decentralized Nodes, Staking providers
 * **Teams/People that could deliver the RFP**: Rust developers (with some Node.js knowledge)
