@@ -26,7 +26,6 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
   | RFP | Last Updated |
   | :-- | :----------: |
-  | [Offline election tool](RFPs/offline_election_tool.md) | 22.09.2025 |
 
 </details>
 
@@ -51,6 +50,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
   | [polkadot-protocol_conformance_tests.md](RFPs/polkadot-protocol_conformance_tests.md) | 21.09.2023 |
   | [Static-Analysis-for-Runtime-Pallets.md](RFPs/Static-Analysis-for-Runtime-Pallets.md) | 27.09.2023 |
   | [xcm-tool.md](RFPs/xcm-tool.md) | 21.09.2023 |
+  | [Offline election tool](RFPs/offline_election_tool.md) | 01.12.2025 |
 
 </details>
 
