@@ -102,14 +102,23 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 | 1.4 | Public Document | Produce Capella’s whitepaper, technical and user guides, developer documentation, and publish them on a dedicated documentation site. |
 | 1.5 | Partner & Government Outreach Materials | Create briefing decks, LGU kits, integration packages, case studies, and demo walkthroughs for professional stakeholder engagements. |
 
-#### Milestone 2: Capella Substrate Node
+#### Milestone 2: Capella Substrate Node (Testnet and Mainnet)
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 2 months
+- **FTE:**  2 FTE
+- **Costs:** 5,000 USD (Hardware infrastructure already provided)
   
 | Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
+| 2.1 | Code Integration | Integrate the Capella node into the Xode codebase, configure the runtime, update binaries and CLI tools, and validate functionality on a local dev chain. |
+| 2.2 | Runtime & Pallet Setup | Configure base and Capella-specific pallets, verify block production and extrinsic flow, and generate initial chain spec files. |
+| 2.3 | Binary Release Preparation | Build optimized binaries for Linux and Windows, implement versioning and changelog, test execution, and publish through GitHub or internal repositories. |
+| 2.4 | Dockerization | Create a Dockerfile for Capella, publish images to a registry, test performance and networking, and provide docker-compose templates for deployment. |
+| 2.5 | Server Deployment | Deploy collators and boot nodes, configure systemd for auto-restart, implement logging and monitoring, and validate synchronization and block finality. |
+| 2.6 | Parachain | Prepare parachain runtimes and relay-chain settings, generate genesis state and WASM, register Capella as a parachain, run testnet collators, and validate HRMP channels, messaging, and block finality. |
+| 2.7 | Public Testnet Launch | Deploy testnet nodes and collators, publish endpoints, invite developers to test, and monitor network stability and performance. |
+| 2.8 | Security Review & Optimization | Audit runtime and node behavior, optimize block weights and fees, fix testnet issues, and complete compatibility testing with wallets, explorers, and tools. |
+| 2.9 | Mainnet Launch | Finalize mainnet specs, publish binaries and Docker images, deploy nodes, announce endpoints and documentation, and start mainnet block production and monitoring. |
+
 
 #### Milestone 3: Local Support Activities 
 
@@ -120,14 +129,6 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 
-### Milestone 4: Mainnet Deployment
-
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-  
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
 
 #### Milestone 5: Governance Setup and Ecosystem Integration
 
