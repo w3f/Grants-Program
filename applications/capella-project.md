@@ -90,9 +90,9 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 
 #### Milestone 1: Marketing and On-line Materials
 
-- **Estimated duration:** 2 Weeks
+- **Estimated duration:** 1 Month
 - **FTE:**  2 FTE
-- **Costs:** 500 USD
+- **Costs:** 2,000 USD
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -105,8 +105,8 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 #### Milestone 2: Capella Substrate Node (Testnet and Mainnet)
 
 - **Estimated duration:** 2 months
-- **FTE:**  2 FTE
-- **Costs:** 5,000 USD (Hardware infrastructure already provided)
+- **FTE:**  4 FTE
+- **Costs:** 10,000 USD 
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -121,24 +121,20 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 | 2.9 | Mainnet Launch | Finalize mainnet specs, publish binaries and Docker images, deploy nodes, announce endpoints and documentation, and start mainnet block production and monitoring. |
 
 
-#### Milestone 3: Local Support Activities 
+#### Milestone 3: Users, Governance & Collator Nodes Expansion 
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
+- **Estimated duration:** 2 month
+- **FTE:**  3 FTE
 - **Costs:** 8,000 USD
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 3.1 | Governance & Policy Setup | Establish Capella’s governance framework by setting up key wallets, defining voting, staking, and collator policies, and publishing all rules for transparency. |
+| 3.2 | Collator Node Expansion | Recruit and onboard collator operators, deploy nodes with required staking, verify performance and synchronization, and update bootnode lists while monitoring network health. |
+| 3.3 | User & Ecosystem Engagement | Onboard LGUs and partners, provide documentation and support, educate stakeholders on governance and staking, and monitor user participation. |
+| 3.4 | External Partnerships & Advocacy | Join the Philippine Blockchain Council and TWGs, participate in policy discussions, advocate Capella’s use-cases, and align governance and staking policies with national standards. |
+| 3.5 | Monitoring & Iteration | Track staking, voting, and collator participation, gather feedback, adjust policies and incentives, and publish regular governance and staking reports. |
 
-
-#### Milestone 5: Governance Setup and Ecosystem Integration
-
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-  
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
 
 
 ### Future Plans
