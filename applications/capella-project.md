@@ -90,15 +90,17 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 
 #### Milestone 1: Marketing and On-line Materials
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 2 Weeks
+- **FTE:**  2 FTE
+- **Costs:** 500 USD
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1.1 | Capella Brand | Logo, brand, and other marketing materials for the Capella Project |
-| 1.2 | Capella Website | Provide an on-line portal for the Capella Project |
-| 1.3 | Documetation | On-line documentation using Github |
+| 1.1 | Capella Brand | Define Capella’s core identity, finalize messaging and tone, create the full visual identity, logo, and produce a brand guideline. |
+| 1.2 | Core Marketing Asset | Develop the pitch deck, one-pager, social media kit, and short explainer scripts to clearly present Capella’s value and technology. |
+| 1.3 | Website | Build Capella’s online presence by creating the site structure, designing the UX/UI, developing all pages, writing content, testing, and launching with proper analytics and SEO setup.|
+| 1.4 | Public Document | Produce Capella’s whitepaper, technical and user guides, developer documentation, and publish them on a dedicated documentation site. |
+| 1.5 | Partner & Government Outreach Materials | Create briefing decks, LGU kits, integration packages, case studies, and demo walkthroughs for professional stakeholder engagements. |
 
 #### Milestone 2: Capella Substrate Node
 
