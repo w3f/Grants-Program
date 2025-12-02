@@ -109,6 +109,7 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 - **Costs:** 5,000 USD (Hardware infrastructure already provided)
   
 | Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
 | 2.1 | Code Integration | Integrate the Capella node into the Xode codebase, configure the runtime, update binaries and CLI tools, and validate functionality on a local dev chain. |
 | 2.2 | Runtime & Pallet Setup | Configure base and Capella-specific pallets, verify block production and extrinsic flow, and generate initial chain spec files. |
 | 2.3 | Binary Release Preparation | Build optimized binaries for Linux and Windows, implement versioning and changelog, test execution, and publish through GitHub or internal repositories. |
