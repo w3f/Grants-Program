@@ -3,7 +3,7 @@
 - **Team Name:** Blockspace Corporation
 - **Payment Details:**
   - **DOT**: 1botc3We3PdComZFNVUgSVThzKRMH4poSorUTMCCUvaoPWg
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2 (10,000 DOTs)
+- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2 (20,000 USDT)
 
 ## Project Overview
 
@@ -83,10 +83,10 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
-- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
+- **Total Estimated Duration:** 5 Months
+- **Full-Time Equivalent (FTE):**  5 FTE
+- **Total Costs:** 20,000 USDT
+- **DOT %:** 40% (Locked and Polkadot Ecosystem Parachain Fees)
 
 #### Milestone 1: Marketing and On-line Materials
 
@@ -134,8 +134,6 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 | 3.3 | User & Ecosystem Engagement | Onboard LGUs and partners, provide documentation and support, educate stakeholders on governance and staking, and monitor user participation. |
 | 3.4 | External Partnerships & Advocacy | Join the Philippine Blockchain Council and TWGs, participate in policy discussions, advocate Capella’s use-cases, and align governance and staking policies with national standards. |
 | 3.5 | Monitoring & Iteration | Track staking, voting, and collator participation, gather feedback, adjust policies and incentives, and publish regular governance and staking reports. |
-
-
 
 ### Future Plans
 
