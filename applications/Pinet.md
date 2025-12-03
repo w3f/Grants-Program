@@ -159,6 +159,12 @@ All deliverables under **Apache 2.0** (Web3 Foundation–preferred).
 
 ## Contact
 
-Telegram: @pinet_pnte
+Telegram: @pinet_pnte  
 Email: pinetworkinton@outlook.com  
-Twitter: https://x.com/pinetworkinton
+Twitter: https://x.com/pinetworkinton  
+
+---
+
+## Discussion Preference
+
+I prefer the discussion of this application to take place in a **public GitHub Discussion** linked to this PR.
