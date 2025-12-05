@@ -29,6 +29,14 @@ Senate Bill Number (SBN) 1330, known as “Blockchain the Budget Bill,” was au
 
 Blockchain’s decentralized and secure nature also ensures that records cannot be altered retroactively, strengthening accountability and trust in government operations. Furthermore, by making budget data accessible through user-friendly interfaces, SB 1330 empowers citizens to monitor expenditures, participate in oversight, and hold public officials accountable, while streamlining auditing processes and improving overall efficiency in public finance management.
 
+#### Senate Bill No. 1506
+
+On November 12, 2025, Senate Bill No. 1330 evolved into and was replaced by Senate Bill No. 1506, or "The CADENA Act."  It stands for Citizen Access and Disclosure of Expenditures for National Accountability (CADENA) Act. This evolution was a product of consultations with various stakeholders, including the Technical Working Group (TWG) organized by the Senate Committee on Science and Technology, headed by Senator Bam Aquino. 
+
+Sec. 2. Declaration of Policy. – It is the policy of the State to uphold transparency, accountability, and good governance in the management and disbursement of public funds. The State shall safeguard honesty and integrity in public service, adopt effective measures against graft and corruption, and institutionalize public disclosure through open, verifiable, and citizen-accessible digital systems. To this end, the government shall establish a digital platform that provides timely, accurate, tamper-evident, and traceable publication of government budget transactions. The system shall guarantee that all government appropriations, disbursements, procurements, and expenditures are disclosed and made publicly accessible to citizens and oversight institutions.
+
+Sec. 4. Coverage. – This Act shall apply to all National Government departments, bureaus, offices, agencies, and other instrumentalities, including government-owned or controlled corporations, and their subsidiaries.
+
 #### Blockchain Infrastructure
 
 The base-layer of the project is built on Substrate parachain technology within the Polkadot ecosystem, providing a modern, scalable, and interoperable blockchain foundation. Leveraging Substrate allows for modular development, enabling the customization of consensus mechanisms, governance models, and runtime logic to meet the specific needs of government agencies and LGUs. As a parachain, the network benefits from Polkadot’s shared security model, ensuring that all data submitted on-chain is protected by robust validator networks without each agency needing to maintain its own separate security infrastructure. This provides a high level of trust and resilience while keeping operational complexity manageable.
