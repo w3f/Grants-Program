@@ -144,9 +144,9 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 3.1 | Governance & Policy Setup | Establish Capella’s governance framework by setting up key wallets, defining voting, staking, and collator policies, and publishing all rules for transparency. |
-| 3.2 | Collator Node Expansion | Recruit and onboard collator operators, deploy nodes with required staking, verify performance and synchronization, and update bootnode lists while monitoring network health. |
-| 3.3 | User & Ecosystem Engagement | Onboard LGUs and partners, provide documentation and support, educate stakeholders on governance and staking, and monitor user participation. |
-| 3.4 | External Partnerships & Advocacy | Join the Philippine Blockchain Council and TWGs, participate in policy discussions, advocate Capella’s use-cases, and align governance and staking policies with national standards. |
+| 3.2 | User & Ecosystem Engagement | Onboard LGUs and partners, provide documentation and support, educate stakeholders on governance and staking, and monitor user participation. |
+| 3.3 | External Partnerships & Advocacy | Join the Philippine Blockchain Council and TWGs, participate in policy discussions, advocate Capella’s use-cases, and align governance and staking policies with national standards. |
+| 3.4 | Collator Node Expansion | Recruit and onboard collator operators, deploy nodes with required staking, verify performance and synchronization, and update bootnode lists while monitoring network health. |
 | 3.5 | Monitoring & Iteration | Track staking, voting, and collator participation, gather feedback, adjust policies and incentives, and publish regular governance and staking reports. |
 
 ### Future Plans
