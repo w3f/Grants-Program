@@ -79,13 +79,13 @@ Harold Glenn Minerva is a Polkadot Blockchain Academy alumnus with strong expert
 
 #### Caesar Ditan ([LinkedIn](https://www.linkedin.com/in/caesarditan/))
 
-Caesar Ditan is the Chief Marketing Officer of Xode Blockchain, driving Web3-focused brand strategy and nationwide adoption for the Philippines’ first homegrown chain in the Polkadot ecosystem. With extensive experience in marketing leadership, advertising, sales, and IT services—including roles such as Head of Marketing at Human Incubator Inc., he brings strong expertise in digital campaigns, brand development, and community growth. He has led major initiatives like the Philippines Web3 Bootcamp, national roadshows, and international events, combining traditional marketing discipline with deep engagement in blockchain innovation.
+Caesar Ditan is the Chief Marketing Officer of Xode Blockchain, driving Web3-focused brand strategy and nationwide adoption for the Philippines’ first homegrown chain in the Polkadot ecosystem. With extensive experience in marketing leadership, advertising, sales, and IT services, including roles such as Head of Marketing at Human Incubator Inc., he brings strong expertise in digital campaigns, brand development, and community growth. He has led major initiatives like the Philippines Web3 Bootcamp, national roadshows, and international events, combining traditional marketing discipline with deep engagement in blockchain innovation.
 
 #### Noah Oliver Rigonan ([GitHub](https://github.com/oliverrigonan) • [LinkedIn](https://www.linkedin.com/in/noaholiverrigonan))
 
 Noah Oliver Rigonan is a Senior Software Engineer and blockchain developer at Xode Blockchain, specializing in Rust-based Substrate development and Ink! smart contracts. A graduate of the Polkadot Blockchain Academy in Hong Kong, he brings strong expertise in blockchain architecture, governance, and parachain engineering. With a background in full-stack development across Python, Node.js, React, AWS, and Docker, Noah combines deep Web3 technical skills with solid software engineering fundamentals to build scalable, production-grade blockchain solutions.
 
-#### Arneil Polican ()
+#### Arneil Polican (GitHub • LinkedIn)
 
 
 
