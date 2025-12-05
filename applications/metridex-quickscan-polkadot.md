@@ -5,132 +5,143 @@
   - **DOT**: 14pXBrSmwcJHdDghpC6zdymsTsbckC6ggzmCek7YNPHBjdMR
   - **Payment**: 14pXBrSmwcJHdDghpC6zdymsTsbckC6ggzmCek7YNPHBjdMR (USDC)
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
 - **Tagline:** On-chain risk and intel layer for Polkadot tokens and parachain assets, delivered via Telegram bot and simple APIs.
-
 - **Brief description:**  
-  Metridex QuickScan is a lightweight risk and intelligence engine that turns raw on-chain data into a human-readable risk snapshot for a given asset or account.  
-  Today, Metridex is live as a Telegram bot and HTML report generator focused on EVM networks (Ethereum, BNB Chain, Polygon). It aggregates signals such as liquidity, LP-lock status, holder concentration, contract age and basic website/domain checks.  
-
-  This grant proposes to **extend Metridex QuickScan to Polkadot, AssetHub and selected parachains**, exposing Substrate-specific risk signals through:
+  Metridex QuickScan is a lightweight risk & intel engine that gives traders and builders a fast, opinionated snapshot of a token or contract: liquidity security, holder concentration, contract age, basic website/domain checks and LP-lock information.  
+  Today, Metridex is live as a Telegram bot and HTML report generator focused on EVM chains (Ethereum, BNB Chain, Polygon, Base). With this grant, we will add **first-class support for Polkadot, AssetHub and selected parachains**, exposing Substrate-specific risk signals through:
   - a reusable Substrate/Polkadot risk engine library,
   - a QuickScan integration that can be consumed by the existing Telegram bot,
   - and a simple HTTP API + demo page for the Polkadot ecosystem.
-
 - **Relation to Substrate / Polkadot / Kusama:**  
   We will build dedicated data ingestion and risk-scoring modules for:
-  - Polkadot and AssetHub (accounts and asset-level intel),
-  - at least two parachains (initially Moonbeam and Astar),
-
+  - Polkadot and AssetHub (account and asset-level intel),
+  - at least two parachains (initially Moonbeam and Astar),  
   using standard Substrate RPC, metadata and indexing patterns. The engine will:
   - parse on-chain data (balances, transfers, identity flags, multisig/vesting where relevant),
   - surface ecosystem-specific signals (e.g. treasury / governance / crowdloan history where applicable),
   - and map them into a unified QuickScan risk model already used on EVM networks.
-
 - **Why our team is interested:**  
-  Metridex is being built as a chain-agnostic “risk & intel” layer targeting everyday users and small communities, not only professional funds. We want to:
-  - reuse our existing QuickScan model and UX,
-  - bring it natively to the Polkadot ecosystem,
-  - and keep the Substrate/Polkadot risk module **open-source** so that wallets, bots and dashboards can integrate it without vendor lock-in.
+  Metridex is being built as a chain-agnostic “risk & intel” layer for retail and small desks who mostly live inside Telegram. Polkadot has a rich, multi-parachain environment but relatively few simple, opinionated risk tools aimed at everyday users. We want to:
+  - leverage our existing QuickScan engine and UX,
+  - bring Polkadot and its parachains into the same “one-tap risk snapshot” experience,
+  - and open-source the Substrate-specific parts so that wallets, bots and dashboards can reuse them.
 
 ### Project Details
 
-We propose the following architecture and components:
+We already have a working QuickScan implementation for several EVM chains. Under this grant we will add a Polkadot-specific layer with the following components:
 
-- **Core Substrate/Polkadot QuickScan module**
-  - A small, well-documented library that:
-    - connects to a Polkadot or parachain node (full node or public endpoint),
-    - fetches key on-chain data for a given account / asset / token representation,
-    - normalises the data into a generic internal model used by Metridex QuickScan.
+- **Mockups / UI components**
+  - Reuse existing Telegram bot layout (summary card + “More details” view) and adapt labels for Polkadot/AssetHub.
+  - Simple HTML report and/or web demo page for several Polkadot ecosystem assets (e.g. DOT, AssetHub tokens, parachain assets).
 
-- **Risk model & scoring**
-  - Extend the existing QuickScan scoring model (used on EVM) with Polkadot-specific dimensions, such as:
-    - basic checks on extrinsics and transfers history,
-    - identity flags (where present),
-    - crowdloan / treasury interactions where available,
-    - validator and governance-related information for relevant account types.
-  - Each QuickScan will produce:
-    - a simple risk score (e.g. Low / Medium / High),
-    - a list of “Why++” reasons explaining the score in plain language.
+- **Data models / API specifications**
+  - Unified **RiskSnapshot** data model:
+    - chain_id, asset identifier (e.g. DOT, AssetHub asset, parachain asset),
+    - liquidity & volume proxies (where applicable),
+    - holder concentration and “whale vs. retail” breakdown where the data is available,
+    - account/asset “age” (first appearance on chain),
+    - flags for suspicious patterns (e.g. sudden supply changes, one-sided flows, unusual treasury interactions),
+    - basic website/domain intel when a dApp or token site is linked.
+  - **HTTP API**:
+    - `GET /api/quickscan/polkadot/{identifier}` returning a JSON RiskSnapshot,
+    - `GET /api/sample/polkadot` serving a small set of canned examples for reviewers.
 
-- **Polkadot/AssetHub adapters**
-  - Components that:
-    - understand native token and asset representations (e.g. AssetHub assets),
-    - map them to our internal asset model,
-    - and provide a standard interface for the QuickScan engine and Telegram bot.
+- **Technology stack**
+  - **Backend:** Rust and/or TypeScript for Substrate/Polkadot integration (using polkadot-js API and standard Substrate RPC).
+  - **Existing engine glue:** Python/TypeScript used in the current Metridex QuickScan implementation.
+  - **Telegram bot / frontend:** Existing Metridex Telegram bot and HTML report renderer (Flask / Gunicorn server with HTML templates).
+  - **Database / cache:** Simple caching layer (e.g. Redis or in-process cache) for recently scanned Polkadot assets to keep latency low.
 
-- **Parachain adapters (Moonbeam, Astar to start)**
-  - Small adapters that:
-    - mount on top of each parachain’s RPC and indexing layer,
-    - expose account/asset information necessary for the risk model,
-    - and feed that into the same QuickScan pipeline.
+- **Documentation of core components & architecture**
+  - High-level architecture diagram showing:
+    - Substrate RPC / polkadot-js integration,
+    - risk engine library,
+    - Telegram bot adapter,
+    - HTTP API and report generator.
+  - Developer-oriented docs describing how to:
+    - add a new parachain adapter,
+    - extend the list of risk checks and signals,
+    - integrate the library into another bot or UI.
 
-- **API + Telegram integration**
-  - Expose the new Polkadot QuickScan capabilities through:
-    - an HTTP endpoint in our existing backend (e.g. `/quickscan/polkadot`),
-    - the Telegram bot (new “Polkadot mode” and chain autodetection where possible),
-    - and a simple public demo page (HTML) that shows a QuickScan for a given account/asset.
+- **Prior work / PoC**
+  - Existing EVM-oriented QuickScan engine (Telegram bot + HTML reports) deployed at:
+    - Website: https://metridex.com
+    - Bot: https://t.me/MetridexBot
+  - Current implementation already provides:
+    - multi-chain QuickScan for several EVM networks,
+    - LP-lock “lite” analysis,
+    - WHOIS / SSL / Wayback-style website checks,
+    - HTML report generation and basic alerts.
 
-We will prioritise:
-- minimal dependencies (standard RPC, no heavy custom indexers unless necessary),
-- clear documentation and examples for integrators (wallets, bots, dashboards),
-- and a structure that allows further parachains to be added later with relatively small incremental effort.
+- **Out of scope / limitations**
+  - No token issuance, liquidity management or financial instruments.
+  - No complex off-chain order matching or trading functionality.
+  - No DAO tooling or governance frameworks beyond reading existing on-chain governance data where applicable.
+  - We do **not** intend to build a full block explorer or full-featured portfolio manager; this grant focuses on:
+    - reusable risk / intel library for Polkadot and selected parachains,
+    - integration into the existing Metridex UX (Telegram + HTML),
+    - and a simple API surface for third-party integrations.
 
 ### Ecosystem Fit
 
 - **Where and how does the project fit into the ecosystem?**  
-  Metridex QuickScan for Polkadot sits between raw node data and end-user interfaces. It does not aim to replace explorers or existing analytics dashboards. Instead it:
+  Metridex QuickScan for Polkadot sits between raw node data and end-user UIs. It does not compete with explorers; instead it:
   - aggregates a small set of risk-relevant signals for assets and accounts,
-  - compresses them into a concise, human-readable summary (risk score + key reasons),
+  - transforms them into a concise, human-readable summary (risk score + key reasons),
   - and delivers them via Telegram and a simple web/API layer.
-
   It is intended to be:
   - embedded inside Telegram communities (trading chats, ecosystem channels),
   - integrated by wallets and dashboards that want a “one-tap risk snapshot” without building their own engine.
 
-- **Who is the target audience?**
-  - Retail users and small traders who interact with tokens and assets via Telegram links and simple UIs.
-  - Parachain and ecosystem teams that want:
-    - better visibility into the risk profile of assets circulating in their community,
-    - tooling to pre-screen assets that they list, promote or monitor.
-  - Bot and wallet builders who want to add risk snapshots into their UX with minimal engineering time.
+- **Target audience**
+  - Retail users and small traders who primarily live in Telegram and interact with tokens via links and contract IDs.
+  - Parachain teams and ecosystem projects that want to:
+    - embed risk information into their communities,
+    - pre-screen assets they list, showcase or track.
+  - Wallet, dApp and dashboard developers who need a simple risk layer but do not want to maintain a full risk engine.
 
-- **What need(s) does the project meet? How were they identified?**  
-  Across EVM ecosystems we see a very common pattern:
-  - users interact with new assets quickly (links in chats, social media, etc.),
-  - they rarely have time or expertise to investigate LP-locks, holders, governance or code audits,
-  - and existing tools are often either too complex or focused on a single chain.
+- **Needs addressed**
+  - Make Polkadot/parachain assets more approachable for non-expert users by showing:
+    - simple, opinionated risk signals instead of raw blockchain data,
+    - consistent UX across EVM and Substrate ecosystems.
+  - Provide a reusable library so that each Polkadot project does not need to reinvent “basic risk checks” for their own UI.
+  - Improve transparency for Telegram-centric user flows (where links to assets often circulate without context).
 
-  On Polkadot, there is a growing number of assets, parachains and communities. However, **simple, opinionated risk snapshots** for everyday users are still limited.  
-  We identified the need by:
-  - operating and iterating Metridex QuickScan as a Telegram bot on EVM chains,
-  - watching user behaviour (most interactions are short, mobile-first, and often via chats),
-  - and monitoring discussions in communities where token risk is often evaluated manually or not at all.
+- **How needs were identified (evidence)**
+  - Internal work building and running Metridex QuickScan on EVM chains showed strong user preference for:
+    - quick, opinionated “traffic-light” style risk views,
+    - very low friction UX (Telegram, one tap, no account).
+  - We observed multiple discussions in broader crypto communities around:
+    - rug-pulls, opaque liquidity, unclear ownership and website safety,
+    - difficulty in understanding token and contract risk without advanced tools.
+  - Polkadot ecosystem feedback (via public channels and grant programs) often highlights a need for:
+    - better tooling for onboarding non-expert users,
+    - more ecosystem-specific, dApp-level analytics.
 
-- **Similar projects in the Substrate / Polkadot / Kusama ecosystem**  
-  There are explorers and analytics solutions in the Polkadot ecosystem, but we are not aware of a project that:
-  - focuses specifically on **quick risk snapshots** for assets/accounts,
-  - provides a reusable **open-source risk engine** with a simple API,
-  - and is optimised for **Telegram and lightweight integrations**.
+- **Similar projects in Substrate / Polkadot / Kusama**
+  - There are explorers and analytics dashboards in the Polkadot ecosystem that expose rich data, but we are not aware of a project that:
+    - focuses specifically on **opinionated risk snapshots**,
+    - is designed first for Telegram-based user flows,
+    - and provides a small, reused library for risk checks that can be plugged into bots and simple UIs.
+  - Our differentiation:
+    - chain-agnostic QuickScan model already proven on EVM,
+    - strong focus on UX (Telegram + concise HTML reports),
+    - an explicit goal to open-source the Substrate/Polkadot layer for reuse.
 
-  Where overlaps exist (e.g. dashboards that show some risk-related metrics), our differentiation is:
-  - a chain-agnostic QuickScan model already tested on EVM,
-  - strong UX focus (Telegram + concise HTML reports),
-  - and an explicit goal to make the Substrate/Polkadot risk layer open and reusable.
-
-- **Similar projects in related ecosystems**  
-  In EVM ecosystems there are tools and bots that provide partial risk intel (honeypot checkers, contract scanners, etc.), but:
-  - they are often chain-specific,
-  - or closed-source and tightly coupled to a single commercial product.
-
-  Metridex aims to:
-  - keep the Substrate/Polkadot risk engine open-source,
-  - provide a minimal dependency surface (standard RPC, no proprietary backends),
-  - and keep integration friction low for Telegram communities and lightweight dashboards.
+- **Similar projects in related ecosystems**
+  - On EVM side there are several tools and bots that provide partial risk intel (e.g. contract scanners or honeypot checkers). However:
+    - they are often chain-specific,
+    - or closed-source and tied to a single commercial product.
+  - Metridex aims to:
+    - keep the Substrate/Polkadot risk engine open,
+    - provide a minimal dependency surface (standard Substrate RPC),
+    - and keep integration friction low for Telegram communities and lightweight dashboards.
 
 ## Team :busts_in_silhouette:
 
@@ -148,7 +159,7 @@ We will prioritise:
 ### Legal Structure
 
 - **Registered Address:** Not yet incorporated; currently applying as an individual builder (pre-incorporation).
-- **Registered Legal Entity:** None yet – a dedicated legal entity will be created once the project grows and recurring revenue justifies incorporation.
+- **Registered Legal Entity:** None yet – a dedicated legal entity (likely in the EU) is planned as the project grows and recurring revenue justifies incorporation.
 
 ### Team's experience
 
@@ -157,14 +168,12 @@ We will prioritise:
   - Telegram-based tools and automation,
   - multi-chain analytics with on-chain and off-chain data sources.
 - Metridex QuickScan has been developed and iterated as:
-  - a Telegram bot for EVM chains (Ethereum, BNB Chain, Polygon),
-  - an HTML report generator with more detailed analytics,
-  - and a watchlist/alerts layer for selected addresses.
+  - a Telegram bot for token risk snapshots,
+  - an HTML report generator with WHOIS/SSL/Wayback-style checks,
+  - a multi-chain engine for Ethereum, BNB Chain, Polygon and Base.
+- The current focus is to extend this experience to Substrate/Polkadot/Kusama and provide a high-quality, opinionated risk layer that others can reuse.
 
-The current focus is to:
-- harden the core QuickScan engine,
-- extend it beyond EVM into ecosystems like Polkadot,
-- and turn it into a sustainable product rather than a side experiment.
+No prior grants from Web3 Foundation have been received.
 
 ### Team Code Repos
 
@@ -181,29 +190,25 @@ Please also provide the GitHub accounts of all team members (current main develo
 
 ## Development Status :open_book:
 
-The existing Metridex QuickScan product (EVM-focused) is already implemented and live:
+Metridex QuickScan already exists as a working product focused on EVM chains:
 
-- **QuickScan engine and bot:**
-  - Telegram bot that accepts contract addresses / tokens,
-  - performs on-chain checks (liquidity, LP-locks, holders, basic website checks),
-  - and returns a short risk summary plus “More details” HTML report.
+- **Website:** https://metridex.com  
+- **Telegram bot:** https://t.me/MetridexBot  
+- **Showcase / repo:** https://github.com/omarakhmedov-web/metridex-showcase  
 
-- **HTML report generator:**
-  - Backend that renders a detailed report (signals, LP-lock info, links to explorers, etc.),
-  - currently used as a deep-dive view for EVM assets.
+The current codebase includes:
 
-- **Existing repositories and prior work:**
-  - `metridex-showcase` GitHub repository with examples and documentation,
-  - `metridex-website` for the public-facing landing and documentation pages.
+- a risk engine that aggregates on-chain and off-chain signals for EVM networks,
+- LP-lock “lite” analysis and basic website/domain intel,
+- HTML report generation and a Telegram bot UI.
 
-Research and experiments already done:
+Under this grant we will:
 
-- Evaluated different data sources and APIs for EVM chains,
-- Designed a generic internal model for QuickScan signals (risk reasons, LP-lock data, etc.),
-- Implemented a production deployment (Telegram + backend) and iterated with real users,
-- Started exploring Substrate/Polkadot RPC and ecosystem tooling to understand the shape of on-chain data and integration options.
+- add a new Substrate/Polkadot module to the engine,
+- implement Polkadot/AssetHub/parachain adapters,
+- and ship them as a dedicated library and Telegram / HTTP integrations.
 
-The Polkadot integration proposed in this application is a **new, chain-specific module** building on top of this existing work.
+There is no existing Web3 Foundation grant related to this work.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -212,51 +217,48 @@ The Polkadot integration proposed in this application is a **new, chain-specific
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 1.5 FTE on average
 - **Total Costs:** 20,000 USD
-- **DOT %:** 60% of Total Costs to be paid in (vested) DOT
+- **DOT %:** 60% of total costs to be paid in (vested) DOT
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Core Polkadot & AssetHub QuickScan
 
-- **Estimated duration:** 1.5 months  
-- **FTE:** 1.5  
-- **Costs:** 10,000 USD  
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | All new code produced under this milestone (Substrate/Polkadot QuickScan module, adapters and related tooling) will be released under the Apache 2.0 license in a public GitHub repository. |
-| **0b.** | Documentation | We will provide inline documentation and a short “Getting started with Metridex QuickScan for Polkadot” guide that explains how to run the module, connect it to a node, and request a single-asset QuickScan. |
-| **0c.** | Testing and Testing Guide | Core functions (data ingestion, risk scoring and normalisation) will be covered by unit tests and basic integration tests. A testing guide will describe how to run the test suite locally. |
-| **0d.** | Docker | We will provide a Dockerfile (and, if helpful, a simple docker-compose setup) that runs the QuickScan backend with the Polkadot module enabled and exposes the HTTP API for testing. |
-| 1. | Substrate data ingestion library | Implement a small, focused library that connects to a Polkadot node (and optionally AssetHub) and fetches the on-chain data needed for QuickScan: balances, transfers, basic account metadata and identity flags where available. |
-| 2. | Polkadot/AssetHub QuickScan adapter | Implement an adapter that maps Polkadot/AssetHub assets and accounts into the generic Metridex QuickScan internal model, ready to be consumed by the Telegram bot and HTML report generator. |
-| 3. | Risk model extension for Polkadot | Define and implement additional risk rules specific to Polkadot/AssetHub (e.g. basic checks around transfers, identity flags, treasury/governance interactions where applicable) and integrate them into the existing QuickScan scoring pipeline. |
-| 4. | HTTP endpoint and CLI | Expose a simple HTTP endpoint (e.g. `/quickscan/polkadot`) and a minimal CLI tool that trigger a QuickScan for a given account/asset and return a JSON response with risk score and reasons. |
-| 5. | Public demo page | Implement a basic HTML page that calls the new endpoint and shows a human-readable QuickScan result for Polkadot/AssetHub assets (suitable as a public demo for the ecosystem). |
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1.5 months  
-- **FTE:** 1.5  
-- **Costs:** 10,000 USD  
+- **Estimated duration:** 1.5 months
+- **FTE:** 1.5
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | All additional code (parachain adapters, governance/validator intel, Telegram integration changes) will be released under Apache 2.0 in the same public repository. |
-| **0b.** | Documentation | Documentation will be extended to cover parachain adapters and integrator flows, including a short “Integrate Metridex QuickScan Polkadot module into your bot or wallet” guide. |
-| **0c.** | Testing and Testing Guide | Unit and integration tests will be extended to cover parachain adapters and governance/validator-related checks. The testing guide will be updated accordingly. |
-| **0d.** | Docker | The Docker setup will be updated so that all supported chains (Polkadot, AssetHub and selected parachains) can be exercised with a single command, using public RPC endpoints where possible. |
-| **0e.** | Article | We will publish an article that explains the Metridex QuickScan integration for Polkadot and parachains, describes typical risk signals, and walks through several real examples. The article will be published on a public platform (e.g. the Metridex website and/or a developer-oriented medium). |
-| 1. | Parachain adapters (Moonbeam & Astar) | Add adapters for at least two parachains (initially Moonbeam and Astar) that reuse the same internal QuickScan model while accounting for chain-specific details. Each adapter will be documented with configuration and usage examples. |
-| 2. | Governance & validator intel (where applicable) | For chains where governance and validator information is easily accessible, we will add lightweight checks (e.g. whether an account is a known validator, treasury-related, or involved in governance) and surface them as additional QuickScan reasons. |
-| 3. | Telegram bot integration | Extend the existing Telegram bot so that it can: (a) detect Polkadot/AssetHub/parachain context where possible, (b) route QuickScan requests to the new module, and (c) render Polkadot-specific risk reasons in a clear, concise way for end users. |
-| 4. | Public API documentation | Provide a short API reference for the new endpoints and data structures, enabling wallets, bots and dashboards to integrate Polkadot QuickScan results programmatically. |
-| 5. | Example integrations | Implement one or two minimal example integrations (for example, a simple bot or script) that demonstrate how third parties can call the QuickScan API for Polkadot and parachains and embed results into their own UX. |
+| **0a.** | License | All new code produced under this milestone will be released under the Apache 2.0 license in a public GitHub repository. |
+| **0b.** | Documentation | We will provide inline documentation and a developer-oriented README explaining how to run the Substrate/Polkadot QuickScan module, how to connect to a node, and how to request a single-asset risk snapshot. |
+| **0c.** | Testing and Testing Guide | Core functions (data ingestion, risk calculation and API endpoints) will be covered by unit tests and basic integration tests. A guide will describe how to run tests locally. |
+| **0d.** | Docker | A Dockerfile (and optional docker-compose configuration) will be provided to run the QuickScan backend (including the Polkadot module) and expose the HTTP API for testing. |
+| 1. | Substrate data ingestion library | Implement a small library (Rust and/or TypeScript) that connects to Polkadot and AssetHub via Substrate RPC / polkadot-js, and exposes high-level methods to fetch balances, transfers, asset metadata and basic account intelligence (age, activity, identity flags where relevant). |
+| 2. | Polkadot QuickScan risk engine module | Implement a risk-scoring module that transforms Substrate-level data into the internal Metridex RiskSnapshot model (e.g. basic risk score + key signals covering liquidity proxies, holder distribution where possible, account/asset age and suspicious patterns). |
+| 3. | HTTP API endpoints | Expose at least two endpoints: `GET /api/quickscan/polkadot/{identifier}` for live scans and `GET /api/sample/polkadot` for sample outputs. Responses will be documented with example payloads. |
+| 4. | Telegram bot beta integration | Extend the existing Metridex Telegram bot to accept Polkadot/AssetHub identifiers and display a basic QuickScan summary, using the new module. Configuration and usage instructions will be documented. |
+
+### Milestone 2 — Parachain support, governance intel and article
+
+- **Estimated Duration:** 1.5 months
+- **FTE:** 1.5
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | All additional code (parachain adapters, governance module, UI updates) will be released under Apache 2.0 in the same public repository. |
+| **0b.** | Documentation | Documentation will be extended to cover parachain adapters, governance-related signals and how to add a new parachain. We will provide a short “How to integrate Metridex QuickScan Polkadot module into your bot/UI” guide. |
+| **0c.** | Testing and Testing Guide | Unit and integration tests will be expanded to cover parachain data paths and governance signals. The testing guide will be updated accordingly. |
+| **0d.** | Docker | The Docker setup will be updated so that all new functionality (parachains and governance intel) can be tested with a single command, using public endpoints where possible. |
+| **0e.** | Article | We will publish an article that explains the architecture and capabilities of Metridex QuickScan for Polkadot and parachains, and walks through several real examples. The article will be aimed at developers and ecosystem teams and published on a public platform (e.g. the Metridex website and/or a developer-oriented medium). |
+| 1. | Parachain adapters (Moonbeam & Astar) | Add adapters for at least two parachains (Moonbeam and Astar), implementing asset/account risk snapshots using the same RiskSnapshot model. Each adapter will be documented with examples. |
+| 2. | Governance & validator intel (where applicable) | For chains where governance and validator information is readily accessible, add simple signals such as: whether an address has participated in governance, holds specific roles, or interacts with treasury/council where that data is available. These signals will be surfaced as part of the QuickScan output. |
+| 3. | Enhanced Telegram & HTML UX | Improve the Telegram and HTML report presentation for Polkadot/parachain assets (clear labelling of network, risk score and top signals). At least 3–5 well-known ecosystem assets will be used as public examples, accessible via the HTTP API and demo HTML reports. |
 
 ## Future Plans
 
 In the short term we plan to:
 
 - maintain the Substrate/Polkadot QuickScan module as part of the public Metridex codebase,
-- add more parachain adapters based on ecosystem interest and feedback,
+- add more parachain adapters based on ecosystem interest,
 - and work with selected wallets, bots and dashboards that want to integrate simple risk snapshots into their UX.
 
 For long-term sustainability:
@@ -267,9 +269,9 @@ For long-term sustainability:
 - As the project grows and usage stabilises, we intend to formalise the legal entity and explore:
   - revenue-sharing arrangements with larger communities,
   - integration partnerships with wallets and dApps,
-  - and potentially additional chains where the same QuickScan model is useful.
+  - and additional grants / co-funding for extending coverage to more chains and features.
 
-The overall goal is to turn Metridex into a sustainable, chain-agnostic risk and intel product with Polkadot as one of the first-class ecosystems.
+Our long-term intention is to keep Polkadot support first-class and align future roadmap items (more parachains, more signals, better UX) with community feedback.
 
 ## Referral Program (optional) :moneybag:
 
@@ -278,11 +280,14 @@ The overall goal is to turn Metridex into a sustainable, chain-agnostic risk and
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation website and public documentation about the Grants Program.
+**How did you hear about the Grants Program?** Web3 Foundation website and public documentation around the Grants Program.
 
 Additional context:
 
+
 - Metridex has been developed as a chain-agnostic risk and intel layer with an emphasis on fast, opinionated results and simple UX (Telegram + HTML reports).
-- We have submitted several grant applications to other ecosystems, but no external funding has been secured yet; all current Metridex development has been self-funded.
+- We have submitted several grant applications to other ecosystems (e.g. L2s and DEX ecosystems) but have not received any funding yet; all current Metridex development has been self-funded.
 - The existing EVM-focused MVP is public and will serve as the foundation for this Polkadot integration.
-- We see Polkadot and its parachains as a natural next step and want to keep the Substrate/Polkadot risk module open and reusable for the wider ecosystem.
+- We see Polkadot and its parachains as a natural next step and would like to make the Substrate/Polkadot risk module open and reusable for the wider ecosystem.
+  - build a high-quality, open-source Substrate/Polkadot risk layer,
+  - and ship a practical, immediately usable integration for both users and builders.
