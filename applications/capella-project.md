@@ -85,9 +85,9 @@ Caesar Ditan is the Chief Marketing Officer of Xode Blockchain, driving Web3-foc
 
 Noah Oliver Rigonan is a Senior Software Engineer and blockchain developer at Xode Blockchain, specializing in Rust-based Substrate development and Ink! smart contracts. A graduate of the Polkadot Blockchain Academy in Hong Kong, he brings strong expertise in blockchain architecture, governance, and parachain engineering. With a background in full-stack development across Python, Node.js, React, AWS, and Docker, Noah combines deep Web3 technical skills with solid software engineering fundamentals to build scalable, production-grade blockchain solutions.
 
-#### Arneil Polican (GitHub • LinkedIn)
+#### Arneil Polican ([GitHub](https://github.com/ArneilPaulPolican) • [LinkedIn](https://www.linkedin.com/in/arneilpaulpolican/))
 
-
+Arneil Paul Polican is a software engineer and DevOps specialist, bringing solid experience in backend development, infrastructure management, and deployment automation. With a background across multiple IT and engineering roles, he supports the reliability and scalability of Xode’s systems while also contributing to media and technical coverage for major Web3 events such as the Polkadot Sub0 Reset conference. Combining DevOps discipline with hands-on software engineering, he helps ensure smooth operations and strong technical execution across the Xode ecosystem.
 
 ### Development Status
 
