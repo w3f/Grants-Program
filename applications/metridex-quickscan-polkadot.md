@@ -3,7 +3,7 @@
 - **Team Name:** Metridex
 - **Payment Details:**
   - **DOT**: 14pXBrSmwcJHdDghpC6zdymsTsbckC6ggzmCek7YNPHBjdMR
-  - **Payment**: 14pXBrSmwcJHdDghpC6zdymsTsbckC6ggzmCek7YNPHBjdMR  (USDC)
+  - **Payment**: 14pXBrSmwcJHdDghpC6zdymsTsbckC6ggzmCek7YNPHBjdMR (USDC)
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 ## Project Overview :page_facing_up:
