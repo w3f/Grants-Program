@@ -1,4 +1,3 @@
-[metridex-quickscan-polkadot_FIXED (1).md](https://github.com/user-attachments/files/23968250/metridex-quickscan-polkadot_FIXED.1.md)
 # Metridex QuickScan for Polkadot
 
 - **Team Name:** Metridex
