@@ -133,7 +133,7 @@ Our implementation consists of two complementary packages that together provide 
 **Deliverables**:
 
 - **Entropy VRF**: 
-  - Implements Gray Paper equation 158: `H_vrfsig ∈ bssignature{H_authorbskey}{Xentropy ∥ banderout{H_sealsig}}{[]}`
+  - Implements Gray Paper 0.7.2 equation 6.17: `H_vrfsig ∈ bssignature{H_authorbskey}{Xentropy ∥ banderout{H_sealsig}}{[]}`
   - Block entropy generation for JAM consensus
   - Deterministic randomness derived from seal signatures
 
