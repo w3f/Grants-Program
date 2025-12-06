@@ -16,6 +16,7 @@ Besides, **there is a clear difference between an application being accepted and
 <a id="top"></a>
 
 - [2025](#2025)
+  - [🏄 Wave 28 - Q4 2025](#-wave-28---q4-2025)
   - [🏄 Wave 27 - Q3 2025](#-wave-27---q3-2025)
   - [🏄 Wave 26 - Q2 2025](#-wave-26---q2-2025)
   - [🏄 Wave 25 - Q1 2025](#-wave-25---q1-2025)
@@ -53,12 +54,31 @@ Besides, **there is a clear difference between an application being accepted and
 
 ## 2025
 
+
+### 🏄 Wave 28 - Q4 2025
+
+| Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
+| :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
+| [Bilinear Labs](https://www.bilinearlabs.io)             | [Offline Election Tool](https://grants.web3.foundation/docs/RFPs/offline_election_tool)       | [GitHub](https://github.com/bilinearlabs) |    ☐       |       ☐       |     ☐      |
+|          |      | | | |  |
+
+<!---
+| []()             | []()       | [GitHub]() |    ☐       |       ☐       |     ☐      |
+-->
+
+[🔝](#top)
+
+
 ### 🏄 Wave 27 - Q3 2025
 
 | Team                                                        | Project                                              | Link                                                           | Terminated | First Delivery | Completed  |
 | :-----------------------------------------------------------| :----------------------------------------------------| :--------------------------------------------------------------| :--------: | :------------: | :--------: |
 | [Stanislav Terliakov](https://github.com/sterliakov)             | [`substrate-interface` maintenance](./substrate-interface-maintenance.md)       | [GitHub](https://github.com/JAMdotTech/py-polkadot-sdk) |    ☐       |       ☐       |     ☐      |
-| [ChainScore Finance](https://chainscore.finance)             | [Benchmarking Blockchain Data Availability: Polkadot ELVES vs Modular DA Layers](./da_comparative_study.md)       | [GitHub](https://github.com/Chainscore) |    ☐       |       ☐       |     ☐      |
+| [ChainScore Labs](https://chainscore.finance)             | [Benchmarking Blockchain Data Availability: Polkadot ELVES vs Modular DA Layers](./da_comparative_study.md)       | [GitHub](https://github.com/Chainscore) |    ☐       |       ☒       |     ☐      |
+| [Inferara](https://inferara.com/)             | [Preparing Polkadot's pallet_balances for Formal Verification using the Inference Framework](./Preparing%20Polkadot%20pallet_balances%20for%20Formal%20Verification.md)       | [GitHub](https://github.com/Inferara) |    ☐       |        ☒       |      ☒      |
+| [AntLabs India](https://antiersolutions.com)             | [Offline Election Tool](./OfflineElectionTool.md)       |  |    ☐       |       ☐       |     ☐      |
+| Build Union             | [TxSim: Transaction Simulator and Risk Detector for Polkadot](./TxSim.md)       |  |    ☐       |       ☐       |     ☐      |
+| [LunoLab](https://www.lunolab.xyz/)             | [LunoKit](./LunoKit.md)       | [GitHub](https://github.com/Luno-lab/LunoKit) |    ☐       |       ☒       |     ☐      |
 
 [🔝](#top)
 
@@ -71,9 +91,9 @@ Besides, **there is a clear difference between an application being accepted and
 | [NP Labs](https://np.engineering/)             | [Nullifier Prime: Compliant and Programmable Privacy](./np-compliant_and_programmable_privacy.md)       | [GitHub](https://github.com/NP-Eng) |    ☐       |       ☐       |     ☐      |
 | [Jake Hemmerle](https://github.com/jakehemmerle)             | [Substrate MCP Server](./mcp-polkadot.md)       | [GitHub](https://github.com/jakehemmerle) |    ☐       |       ☐       |     ☐      |
 | [Esscrypt Ltd.](https://esscrypt.com/)             | [Polkadot ElizaOS Plugin](./ElizaPluginPolkadot.md)       | [GitHub](https://github.com/Esscrypt) |    ☐       |       ☒       |     ☒      |
-| [Elastic Labs](https://elasticlabs.org/)             | [Polkadot Agent Kit](./polkadot_agent_kit.md)       | [GitHub](https://github.com/elasticlabs-org/polkadot-agent-kit) |    ☐       |       ☐       |     ☐      |
+| [Elastic Labs](https://elasticlabs.org/)             | [Polkadot Agent Kit](./polkadot_agent_kit.md)       | [GitHub](https://github.com/elasticlabs-org/polkadot-agent-kit) |    ☐       |       ☒       |     ☐      |
 | [Ondřej Pulc](https://github.com/exezbcz)             | [ParaPort - Embedded Polkadot Auto-teleport App](./paraport_m1.md)       | [GitHub](https://github.com/exezbcz/paraport) |    ☐       |       ☐       |     ☐      |
-| [Rui Morais](https://github.com/fiono11)             | [Decentralized Threshold Signature Service Implementation](./DecentralizedThresholdSigningService.md)       | [GitHub](https://github.com/fiono11) |    ☐       |       ☐       |     ☐      |
+| [Rui Morais](https://github.com/fiono11)             | [Decentralized Threshold Signature Service Implementation](./DecentralizedThresholdSigningService.md)       | [GitHub](https://github.com/fiono11) |    ☐       |       ☒       |     ☐      |
 
 [🔝](#top)
 
@@ -86,7 +106,7 @@ Besides, **there is a clear difference between an application being accepted and
 | [TCDT Lab](https://github.com/ChainSupport)             | Blockchain Interoperability through DNS and Asset Discovery       | [GitHub](https://github.com/tcdt-lab) |    ☐       |       ☐       |     ☐      |
 | [Staking Rewards](https://www.stakingrewards.com/)             | [Validator Performance - Research & Methodology Development](./staking_rewards.md)       | [GitHub](https://github.com/stakingrewards) |    ☐       |       ☐       |     ☐      |
 | [Kzero](https://kzero.xyz/)             | [KZero Wallet](./KZero.md)       | [GitHub](https://github.com/kzero-xyz) |    ☐       |       ☒       |     ☐      |
-| [Sporyon Technologies](https://sporyon.io/)             | [Dotnix - Follow-Up](./dotnix-follow-up.md)       | [GitHub](https://github.com/sporyon) |    ☐       |       ☐       |     ☐      |
+| [Sporyon Technologies](https://sporyon.io/)             | [Dotnix - Follow-Up](./dotnix-follow-up.md)       | [GitHub](https://github.com/sporyon) |    ☐       |       ☒       |     ☐      |
 
 
 ## 2024
@@ -101,10 +121,10 @@ Besides, **there is a clear difference between an application being accepted and
 | [Cyborg Network](https://cyborgnetwork.io/)                       | [NeuroZK](./NeuroZK.md)                     | [GitHub](https://github.com/Cyborg-Network)               | ☐          |        ☒       |      ☒      |
 | [Eva Interactive](https://www.linkedin.com/in/itsyogesh)                       | [Relaycode Extrinsics Builder](./relaycode.md)                     | [GitHub](https://github.com/itsyogesh)               | ☐          |        ☒       |      ☐      |
 | [ChainSupport Labs](https://github.com/ChainSupport)                       | [Frontier PoS Template](./frontier-pos-template.md)                     | [GitHub](https://github.com/ChainSupport)               | ☐          |        ☒       |      ☒      |
-| [Decenzio](https://decenzio.com/)                       | [NFTAA - NFT as an account](./nftaa.md)                     | [GitHub](https://github.com/Roman-24)               | ☐          |        ☒       |      ☐      |
+| [Decenzio](https://decenzio.com/)                       | [NFTAA - NFT as an account](./nftaa.md)                     | [GitHub](https://github.com/Roman-24)               | ☐          |        ☒       |      ☒      |
 | [Apolixit](https://github.com/Apolixit/)                       | [Polkanalysis](./polkanalysis.md)                     | [GitHub](https://github.com/Apolixit/)               | ☐          |        ☐       |      ☐      |
 | [KodaLabs](https://github.com/kodadot)                       | [Multichain Identity Indexer](./multichain_identity_indexer.md)                     | [GitHub](https://github.com/kodadot)               | ☐          |        ☒       |      ☒      |
-| [Zondax AG](https://zondax.ch/)                       | [MigrationEase](./MigrationEase.md)                     | [GitHub](https://github.com/zondax)               | ☐          |        ☐       |      ☐      |
+| [Zondax AG](https://zondax.ch/)                       | [MigrationEase](./MigrationEase.md)                     | [GitHub](https://github.com/zondax)               | ☐          |        ☒       |      ☐      |
 | [Dota Network](https://x.com/dot20_dota)                       | [dairdrop](./docname.md)                     | [GitHub](https://github.com/dota-network)               | ☐          |        ☐       |      ☐      |
 | [Swush Labs](https://github.com/swush-labs/)                       | [Swush DEX Aggregator](./swush-dex-aggregator.md)                     | [GitHub](https://github.com/swush-labs/)               | ☐          |        ☒       |      ☒      |
 | [QueryWeb3](https://queryweb3.com/)                       | [QueryWeb3](./queryWeb3.md)                     | [GitHub](https://github.com/Query-Web3/)               | ☐          |        ☐       |      ☐      |

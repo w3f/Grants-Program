@@ -5,6 +5,7 @@
   - **DOT:** 16aP3oTaD7oQ6qmxU6fDAi7NWUB7knqH6UsWbwjnAhvRSxzS
   - **Payment:** If fiat payment is available, I will send you an email once my grant is approved.
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2430#issuecomment-3447738002)
 
 ## Project Overview :page_facing_up:
 

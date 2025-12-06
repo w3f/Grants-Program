@@ -10,7 +10,7 @@ For an overview of funding initiatives, ecosystem support and implementation par
 Some funding sources might be more and some less suitable for your project throughout its various stages. We encourage you to explore alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
 :::note
-If you are unsure about what's the best next step for you and your project, consider signing up for the [Polkadot Alpha Program](https://polkadot.network/development/alpha/).
+If you are unsure about what's the best next step for you and your project, consider applying for [Ecosystem Funding Office Hours](./office-hours.md).
 :::
 
 ### Treasury
