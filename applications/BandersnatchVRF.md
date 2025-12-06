@@ -271,7 +271,7 @@ Detailed documentation and research findings will be maintained in our repositor
 
 | Number | Deliverable | Detailed Specification |
 |--------|-------------|------------------------|
-| **1.** | **Entropy VRF Implementation** | Complete implementation of Gray Paper equation 158: `H_vrfsig ∈ bssignature{H_authorbskey}{Xentropy ∥ banderout{H_sealsig}}{[]}` for block entropy generation |
+| **1.** | **Entropy VRF Implementation** | Complete implementation of Gray Paper 0.7.2 equation 6.17: `H_vrfsig ∈ bssignature{H_authorbskey}{Xentropy ∥ banderout{H_sealsig}}{[]}` for block entropy generation |
 | **2.** | **Audit VRF Implementation** | Full audit signature generation for both tranche 0 and tranche N according to Gray Paper equations 54-62 and 105, including work report hashing |
 | **3.** | **Epoch Root Utilities** | Complete implementation of `getRingRoot` function for KZG polynomial commitments to validator sets, supporting ring VRF proofs |
 | **4.** | **Gamma Processing Functions** | VRF output processing utilities including `getCommitmentFromGamma`, `getBanderoutFromGamma`, and RFC 9381 compliant point-to-hash conversion |
