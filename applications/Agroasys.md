@@ -32,7 +32,6 @@ The platform will include:
 
 <img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 41 02" src="https://github.com/user-attachments/assets/ae9d787c-eafb-4b71-8fe0-268282020112" />
 
-
 We have prepared a complete prototype of the Agroasys Web3 platform. It includes all essential workflows and interface screens that reflect the final production architecture. As Lovable requires login for preview access, we will provide the private link and temporary credentials directly to the reviewers. This prototype also includes the conceptual layout of our initial PoC for comparison, showing clear UX and workflow improvements.
 
 #### Data models / API specifications of the core functionality
@@ -140,7 +139,6 @@ Within the Polkadot/Substrate ecosystem, few projects currently address agricult
 
 While other blockchain ecosystems have generic supply chain solutions, they face scalability, cost, and regional relevance limitations. Agroasys leverages Substrate's modularity and Polkadot's cross-chain capabilities to deliver a specialized, legally compliant settlement layer that connects African agricultural stakeholders directly to the global blockchain economy.
  
-
 ## Team :busts_in_silhouette:
 
 ### Team members
@@ -196,8 +194,6 @@ The grant focuses exclusively on the "Blockchain Integration Layer". The existin
     - Implementing the **Settlement Engine** (listening to on-chain events and reconciling them with the off-chain DB).
     - Integration with **AssetHub** (using `system.remark` and `Assets` pallet).
 
-For review purposes, we have attached login details that allow you to access the [agroasys demo](https://preview--agroasys-prototype.lovable.app/) demo environment and explore its current capabilities. Please use the following credentials to log in: review@agroasys.com with the password 0192837465. Also the platform youtube walkthrough video [Video Demo](https://youtu.be/vSiZdUCG36I?si=EB7CRtqy5ueG6q8n)
-
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
@@ -212,7 +208,6 @@ For review purposes, we have attached login details that allow you to access the
 - **FTE:**  2
 - **Costs:** 16,000 USD
 
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0
@@ -224,7 +219,6 @@ For review purposes, we have attached login details that allow you to access the
 | 2. | AssetHub Anchor Service | We will create a service that integrates with AssetHub's `system.remark` for contract hash anchoring and `Assets` pallet for USDC operations . |
 | 3. | Event Indexer system | We will develop an indexer that captures AssetHub events and provides GraphQL APIs for contract verification |
 | 4. | Deployment Framework | We will create deployment scripts for AssetHub testnet/mainnet with production readiness checklists |
-
 
 ### Milestone 2 Custodial Wallet System & Settlement Engine
 
