@@ -1,5 +1,3 @@
-# Agroasys
-
 - **Team Name:** Agroasys Tech
 - **Payment Details:**
   - **DOT**: 1U1XRcPB1bw5jKVR9ovTavsGeAVGqNKBzHuSh19GVqj1skL
@@ -103,8 +101,7 @@ Our architecture connects traditional enterprise procurement with blockchain-bas
 - **Reconciliation**: Automated settlement matching between on-chain events and off-chain records
 - **Audit Trails**: Complete transaction history exportable for legal proceedings
 
-<img width="14256" height="11211" alt="chain arch" src="https://github.com/user-attachments/assets/3794cb58-8148-452c-b9bc-1b8579b75c80" />
-
+<img width="7002" height="7668" alt="web3 layer" src="https://github.com/user-attachments/assets/0d18a2b1-7e43-4374-a03e-785d6eaa554d" />
 
 ### Ecosystem Fit
 
