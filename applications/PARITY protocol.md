@@ -166,11 +166,22 @@ The team have spent around 6 months in R&D on the project and are close to final
 * **Total Costs:** 30,000 USD
 * **DOT %:** 50%
 
-| Number | Deliverable                                                                                                                                                    | Specification        |
-| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| **1.** | Public repo, testnet deployments (Paseo AH), oracle integration, indexer setup (Supabase), monitoring scripts                                                  | 4 weeks / 10,000 USD |
-| **2.** | Protocol rebalancing logic, reserve stability via lending protocol/DEX integration, full test suite, developer documentation, PMM swap examples, fork template | 4 weeks / 10,000 USD |
-| **3.** | NatSpec + tutorial, mainnet deploy (Asset Hub), full dUSD integration, full Virto Connect integration, DAO legal wrapper setup (Wyoming DAO LLC / UNA/DUNA)                 | 4 weeks / 10,000 USD |
+## Milestones
+
+### Milestone 1
+- Public repo, testnet deployments (Paseo AH), oracle integration, indexer setup (Supabase), monitoring scripts
+- Estimated duration: 4 weeks
+- Cost: $10,000
+
+### Milestone 2
+- Protocol rebalancing logic, reserve stability via lending protocol/DEX integration, full test suite, developer documentation, PMM swap examples, fork template
+- Estimated duration: 4 weeks
+- Cost: $10,000
+
+### Milestone 3
+- NatSpec + tutorial, mainnet deploy (Asset Hub), full dUSD integration, full Virto Connect integration, DAO legal wrapper setup (Wyoming DAO LLC / UNA/DUNA
+- Estimated duration: 4 weeks
+- Cost: $10,000
 
 ## Future Plans
 
