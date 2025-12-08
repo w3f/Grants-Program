@@ -27,13 +27,13 @@ The platform will include:
 - **Contract Creation** UI: Form-driven builder for parameterizing Ricardian Contracts (goods, Incoterms, delivery windows, penalties, quantities).
 - **Settlement Dashboard**: Real-time view of on-chain settlement status, proofs, and cross-border transactions.
 
-<img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 31 56" src="https://github.com/user-attachments/assets/65bb8713-9764-4563-92b2-c2603e5eb734" />
+![Screenshot 2025-11-14 at 18 31 56](https://github.com/user-attachments/assets/65bb8713-9764-4563-92b2-c2603e5eb734)
 
-<img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 32 08" src="https://github.com/user-attachments/assets/70fe4a1e-0002-41e9-8e86-317f5a462e6c" />
+![Screenshot 2025-11-14 at 18 32 08](https://github.com/user-attachments/assets/70fe4a1e-0002-41e9-8e86-317f5a462e6c)
 
-<img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 40 51" src="https://github.com/user-attachments/assets/3b384719-adbb-47af-868b-edf8fd870ca3" />
+![Screenshot 2025-11-14 at 18 40 51](https://github.com/user-attachments/assets/3b384719-adbb-47af-868b-edf8fd870ca3)
 
-<img width="1470" height="835" alt="Screenshot 2025-11-14 at 18 41 02" src="https://github.com/user-attachments/assets/ae9d787c-eafb-4b71-8fe0-268282020112" />
+![Screenshot 2025-11-14 at 18 41 02](https://github.com/user-attachments/assets/ae9d787c-eafb-4b71-8fe0-268282020112)
 
 We have prepared a complete prototype of the Agroasys Web3 platform. It includes all essential workflows and interface screens that reflect the final production architecture. As Lovable requires login for preview access, we will provide the private link and temporary credentials directly to the reviewers. This prototype also includes the conceptual layout of our initial PoC for comparison, showing clear UX and workflow improvements.
 
@@ -103,7 +103,7 @@ Our architecture connects traditional enterprise procurement with blockchain-bas
 - **Reconciliation**: Automated settlement matching between on-chain events and off-chain records
 - **Audit Trails**: Complete transaction history exportable for legal proceedings
 
-<img width="7002" height="7668" alt="web3 layer" src="https://github.com/user-attachments/assets/0d18a2b1-7e43-4374-a03e-785d6eaa554d" />
+![web3 layer](https://github.com/user-attachments/assets/0d18a2b1-7e43-4374-a03e-785d6eaa554d)
 
 ### Ecosystem Fit
 
