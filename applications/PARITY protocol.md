@@ -131,7 +131,7 @@ This is **on-chain relative performance market infrastructure.**
 **Unpaid advisor**  
 
 - Daniel Olano is the founder of Virto Network and the Kreivo parachain.
-- Phil Mitchelson is currently VP of Growth at Superbet 
+- Phil Mitchelson is currently VP of Growth at [Superbet](https://superbet.ro/) 
 
 ### Team Code Repos
 
