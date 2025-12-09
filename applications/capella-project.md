@@ -99,14 +99,14 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 
 - **Total Estimated Duration:** 5 Months
 - **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 20,000 USDT
+- **Total Costs:** 20,000 USDC or DOT Equivalent
 - **DOT %:** 40% (Locked and Polkadot Ecosystem Parachain Fees)
 
 #### Milestone 1: Marketing and On-line Materials
 
 - **Estimated duration:** 1 Month
 - **FTE:**  2 FTE
-- **Costs:** 2,000 USD
+- **Costs:** 2,000 USDC or DOT Equivalent
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -120,7 +120,7 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 
 - **Estimated duration:** 2 months
 - **FTE:**  4 FTE
-- **Costs:** 10,000 USD 
+- **Costs:** 10,000 USDC or DOT Equivalent for Parachain and Coretime Fees
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -139,7 +139,7 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 
 - **Estimated duration:** 2 month
 - **FTE:**  3 FTE
-- **Costs:** 8,000 USD
+- **Costs:** 8,000 USDC or DOT Equivalent
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
