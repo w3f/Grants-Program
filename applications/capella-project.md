@@ -73,6 +73,21 @@ In essence, Capella amplifies Polkadot by bringing real-world institutional adop
 
 ### Team
 
+### Contact
+
+* **Contact Name:** Harold Glenn Minerva
+* **Contact Email:** hgminerva@gmail.com
+* https://blockspacecorp.com/
+
+### Legal Structure
+
+* **Registered Address:**  
+Blockspace Corporation  
+2nd Floor Fil-Chinese Amity Building, Queens Road, Camputhaw, Cebu City, Philippines 6000
+* **Registered Legal Entity:**  
+Blockspace Corporation
+SEC Registered Number: 2023120127114-11
+
 #### Harold Glenn Minerva ([GitHub](https://github.com/hgminerva) • [LinkedIn](https://www.linkedin.com/in/harold-glenn-minerva-1789a254/))
 
 Harold Glenn Minerva is a Polkadot Blockchain Academy alumnus with strong expertise in Web3 engineering, AI-driven systems, and decentralized infrastructure. He holds a Bachelor’s degree in Electronics and Communications Engineering and an MBA from the University of San Carlos. As a founder of multiple technology ventures including Xode Blockchain, Liteclerk Corporation, and other software-focused companies, he has led the development of blockchain tools, cross-chain systems, and enterprise platforms. His combined background in engineering, business, and advanced blockchain specialization positions him as a capable architect of next-generation Web3 and AI solutions.
