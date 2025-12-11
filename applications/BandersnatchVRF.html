@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-applications/BandersnatchVRF" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">TypeScript Bandersnatch VRF Suite – Complete Cryptographic Implementation for JAM Protocol | Web3 Foundation Grants</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://grants.web3.foundation/applications/BandersnatchVRF"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="TypeScript Bandersnatch VRF Suite – Complete Cryptographic Implementation for JAM Protocol | Web3 Foundation Grants"><meta data-rh="true" name="description" content="- Team Name: Esscrypt Ltd."><meta data-rh="true" property="og:description" content="- Team Name: Esscrypt Ltd."><link data-rh="true" rel="icon" href="/img/favicon-32x32.png"><link data-rh="true" rel="canonical" href="https://grants.web3.foundation/applications/BandersnatchVRF"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/BandersnatchVRF" hreflang="en"><link data-rh="true" rel="alternate" href="https://grants.web3.foundation/applications/BandersnatchVRF" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://9VKKGZO0U1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Web3 Foundation Grants" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.f3a7e75f.css">
+<script src="/assets/js/runtime~main.6a097349.js" defer="defer"></script>
+<script src="/assets/js/main.553e618a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:#000;color:#ffffff" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY"><a target="_blank" rel="noopener noreferrer" href="https://medium.com/web3foundation/web3-foundation-ecodev-wave-26-7f145c39c2ef">Our blog post on Ecosystem Development Wave 26 is now online!</a></div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/w3f_logo.svg" alt="W3F Grants Program" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/w3f_logo.svg" alt="W3F Grants Program" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Grants Program</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/docs/introduction">Docs</a><a class="navbar__item navbar__link" href="/applications">List of Grants</a><a class="navbar__item navbar__link" href="/docs/faq">FAQ</a><a class="navbar__item navbar__link" href="/docs/Process/how-to-apply">Apply</a><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Command+K)"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>TypeScript Bandersnatch VRF Suite – Complete Cryptographic Implementation for JAM Protocol</h1></header>
+<ul>
+<li><strong>Team Name:</strong> Esscrypt Ltd.</li>
+<li><strong>Payment Details:</strong></li>
+<li><strong>DOT</strong>: 15JRT5GjLAZkuvmpwmjCUp1RRLr7Y6Gnusz37ia37h2Xn5Rz</li>
+<li><strong>Payment</strong>: 15JRT5GjLAZkuvmpwmjCUp1RRLr7Y6Gnusz37ia37h2Xn5Rz (USDC)</li>
+<li><strong>Level:</strong> 2</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-overview-page_facing_up">Project Overview <!-- -->📄<a href="#project-overview-page_facing_up" class="hash-link" aria-label="Direct link to project-overview-page_facing_up" title="Direct link to project-overview-page_facing_up">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
+<p>The JAM protocol represents the next generation of blockchain consensus, requiring robust cryptographic primitives for secure randomness generation, validator selection, and privacy-preserving operations. While the reference implementation exists in Rust via <a href="https://crates.io/crates/ark-vrf" target="_blank" rel="noopener noreferrer"><code>ark-vrf</code></a> , <strong>security best practices mandate independent implementations</strong> to enable cross-verification and eliminate single points of failure.</p>
+<p>Our TypeScript implementation delivers <strong>enterprise-grade cryptographic security</strong> with <strong>superior developer experience</strong> and <strong>broader ecosystem compatibility</strong> , maintaining full compliance with Web3 Foundation specifications and IETF standards.</p>
+<p>This comprehensive suite provides <strong>complete VRF functionality</strong> including IETF-compliant VRF, Pedersen VRF, Ring VRF, and Elligator2. Our implementation enables seamless integration with modern web applications, browser-based clients, and Node.js environments—critical for the decentralized future.</p>
+<p><strong>Key Advantages:</strong></p>
+<ul>
+<li><strong>Zero Rust Dependencies</strong>: Pure TypeScript implementation eliminates compilation complexity</li>
+<li><strong>Browser-Ready</strong>: Direct integration with web applications and browser-based wallets</li>
+<li><strong>NPM Ecosystem</strong>: Seamless integration with existing JavaScript/TypeScript projects</li>
+<li><strong>Cross-Platform</strong>: Universal compatibility across Node.js, browsers, and edge environments</li>
+<li><strong>Developer-Friendly</strong>: Comprehensive TypeScript types and intuitive APIs</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="relation-to-jam-protocol">Relation to JAM Protocol<a href="#relation-to-jam-protocol" class="hash-link" aria-label="Direct link to Relation to JAM Protocol" title="Direct link to Relation to JAM Protocol">​</a></h4>
+<p>The <a href="https://github.com/davxy/bandersnatch-vrf-spec" target="_blank" rel="noopener noreferrer">Bandersnatch VRF</a> specification developed under Web3 Foundation are <strong>critical components</strong> of the JAM protocol&#x27;s consensus mechanism. Our TypeScript implementation provides:</p>
+<ul>
+<li><strong>Enhanced Security Through Diversity</strong>: Multiple independent implementations enable cross-verification and prevent single points of failure</li>
+<li><strong>Broader Ecosystem Access</strong>: Extends JAM&#x27;s cryptographic primitives beyond Rust to the entire JavaScript/TypeScript ecosystem</li>
+<li><strong>Developer Adoption</strong>: Enables web developers, browser-based applications, and Node.js services to participate in JAM networks</li>
+<li><strong>Research Innovation</strong>: Provides additional implementation perspectives for cryptographic research and protocol improvements</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="why-our-implementation-matters">Why Our Implementation Matters<a href="#why-our-implementation-matters" class="hash-link" aria-label="Direct link to Why Our Implementation Matters" title="Direct link to Why Our Implementation Matters">​</a></h4>
+<p>As active contributors to the JAM ecosystem through our <strong>PeanutButterAndJAM</strong> implementation, we identified a critical gap: <strong>overwhelming dependency on Rust-based cryptographic libraries</strong> creates barriers for developers and limits ecosystem diversity. Our TypeScript implementation addresses this by:</p>
+<ul>
+<li><strong>Eliminating Language Barriers</strong>: Enables JavaScript/TypeScript developers to build JAM-compatible applications without Rust expertise</li>
+<li><strong>Browser Integration</strong>: Provides cryptographic primitives directly accessible in web browsers for client-side applications</li>
+<li><strong>NPM Distribution</strong>: Makes JAM cryptographic tools available through the world&#x27;s largest package registry</li>
+<li><strong>Cross-Platform Compatibility</strong>: Ensures consistent cryptographic behavior across Node.js, browsers, and edge computing environments</li>
+<li><strong>Developer Experience</strong>: Offers comprehensive TypeScript types, intuitive APIs, and extensive documentation</li>
+</ul>
+<p>Our implementation serves as a <strong>foundational building block</strong> for the next generation of decentralized applications, enabling everything from browser-based wallets to server-side JAM node implementations.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="project-details">Project Details<a href="#project-details" class="hash-link" aria-label="Direct link to Project Details" title="Direct link to Project Details">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="technology-stack">Technology Stack<a href="#technology-stack" class="hash-link" aria-label="Direct link to Technology Stack" title="Direct link to Technology Stack">​</a></h4>
+<ul>
+<li><strong>Programming Language</strong>: <strong>TypeScript</strong> (ES2022+ targeting modern environments)</li>
+<li><strong>Core Dependencies</strong>: Minimal external dependencies using <code>@noble/curves</code> as the audited foundation</li>
+<li><strong>Testing Framework</strong>: <strong>Vitest</strong> for comprehensive unit, integration, and property-based testing</li>
+<li><strong>Performance Analysis</strong>: Built-in benchmarking tools for cryptographic operation analysis</li>
+<li><strong>Documentation</strong>: <strong>JSDoc</strong> with TypeScript integration for comprehensive API documentation</li>
+<li><strong>Code Quality</strong>: <strong>BiomeJS</strong> for linting, formatting, and code consistency</li>
+<li><strong>Continuous Integration</strong>: <strong>GitHub Actions</strong> for automated testing, security scanning, and documentation generation</li>
+<li><strong>Package Management</strong>: <strong>NPM</strong> distribution with proper TypeScript declarations</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="core-components">Core Components<a href="#core-components" class="hash-link" aria-label="Direct link to Core Components" title="Direct link to Core Components">​</a></h4>
+<p>Our implementation consists of two complementary packages that together provide complete Bandersnatch VRF functionality:</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="1-pbnjbandersnatch-foundational-elliptic-curve-package">1. <code>@pbnj/bandersnatch</code>: Foundational Elliptic Curve Package<a href="#1-pbnjbandersnatch-foundational-elliptic-curve-package" class="hash-link" aria-label="Direct link to 1-pbnjbandersnatch-foundational-elliptic-curve-package" title="Direct link to 1-pbnjbandersnatch-foundational-elliptic-curve-package">​</a></h5>
+<p><strong>Objective</strong>: Provide a comprehensive, secure, and performant TypeScript library for Bandersnatch elliptic curve cryptography with full RFC 9380 compliance.</p>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>
+<p><strong>Curve Arithmetic &amp; Operations</strong>:</p>
+<ul>
+<li>Complete Bandersnatch curve implementation</li>
+<li>Point addition, scalar multiplication, and field operations</li>
+<li>Point compression/decompression algorithms</li>
+<li>Curve parameter validation and constants</li>
+</ul>
+</li>
+<li>
+<p><strong>Cryptographic Primitives</strong>:</p>
+<ul>
+<li>Key pair generation and validation</li>
+<li>Point-to-hash conversion functions utilizing Elligator2</li>
+<li>Curve point serialization/deserialization</li>
+<li>Field element operations and validation</li>
+</ul>
+</li>
+<li>
+<p><strong>Quality Assurance</strong>:</p>
+<ul>
+<li>Comprehensive unit tests (&gt;90% coverage)</li>
+<li>Performance benchmarks for all operations</li>
+<li>Extensive TypeScript type definitions</li>
+<li>Complete API documentation with examples</li>
+</ul>
+</li>
+</ul>
+<p><strong>References</strong>: <a href="https://eprint.iacr.org/2021/1152.pdf" target="_blank" rel="noopener noreferrer">Masson, Sanso, and Zhang&#x27;s Bandersnatch work (ePrint 2021/1152)</a>, <a href="https://www.rfc-editor.org/rfc/rfc9380.html" target="_blank" rel="noopener noreferrer">RFC 9380 - Hashing to Elliptic Curves</a></p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="2-pbnjbandersnatch-vrf-core-vrf-implementation-suite">2. <code>@pbnj/bandersnatch-vrf</code>: Core VRF Implementation Suite<a href="#2-pbnjbandersnatch-vrf-core-vrf-implementation-suite" class="hash-link" aria-label="Direct link to 2-pbnjbandersnatch-vrf-core-vrf-implementation-suite" title="Direct link to 2-pbnjbandersnatch-vrf-core-vrf-implementation-suite">​</a></h5>
+<p><strong>Objective</strong>: Implement all major VRF schemes (IETF, Pedersen, Ring) leveraging the foundational bandersnatch package.</p>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>
+<p><strong>IETF VRF (RFC 9381 Compliant)</strong>:</p>
+<ul>
+<li>Complete ECVRF implementation for Bandersnatch curve</li>
+<li>Support for Bandersnatch_XMD:SHA-512_ELL2_RO_ suite</li>
+<li>Proper domain separation tag (DST) handling</li>
+<li>Verification against official RFC test vectors</li>
+<li>Prover and verifier classes with comprehensive error handling</li>
+</ul>
+</li>
+<li>
+<p><strong>Pedersen VRF</strong>:</p>
+<ul>
+<li>Full implementation extending IETF VRF patterns</li>
+<li>Optimized for Bandersnatch curve characteristics</li>
+<li>Complete test vector validation</li>
+</ul>
+</li>
+<li>
+<p><strong>Ring VRF</strong>:</p>
+<ul>
+<li>Complete W3F Ring Proof implementation for Bandersnatch</li>
+<li>KZG polynomial commitment integration</li>
+<li>Ring signature generation and verification</li>
+<li>Privacy-preserving validator selection</li>
+</ul>
+</li>
+<li>
+<p><strong>Cryptographic Infrastructure</strong>:</p>
+<ul>
+<li><strong>Elligator2</strong>: Hash-to-curve implementation for Bandersnatch</li>
+<li><strong>RFC 9381 Compliance</strong>: Complete IETF standard implementation</li>
+<li><strong>Nonce Generation</strong>: RFC 8032 compliant nonce generation</li>
+<li><strong>Point Processing</strong>: Gamma point handling and validation</li>
+</ul>
+</li>
+<li>
+<p><strong>Quality Assurance</strong>:</p>
+<ul>
+<li>End-to-end test suites for all VRF types</li>
+<li>Test vector validation against reference implementations</li>
+<li>Performance benchmarks and optimization analysis</li>
+<li>Comprehensive error handling and edge case coverage</li>
+</ul>
+</li>
+</ul>
+<p><strong>References</strong>: <a href="https://datatracker.ietf.org/doc/html/rfc9381" target="_blank" rel="noopener noreferrer">RFC 9381 - Verifiable Random Functions</a>, <a href="https://github.com/davxy/bandersnatch-vrf-spec" target="_blank" rel="noopener noreferrer">W3F Bandersnatch-VRF specification</a>, <a href="https://github.com/davxy/ring-proof-spec" target="_blank" rel="noopener noreferrer">W3F Ring-Proof specification</a></p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="3-pbnjbandersnatch-vrf-utils-jam-protocol-specialized-components">3. <code>@pbnj/bandersnatch-vrf</code> Utils: JAM Protocol Specialized Components<a href="#3-pbnjbandersnatch-vrf-utils-jam-protocol-specialized-components" class="hash-link" aria-label="Direct link to 3-pbnjbandersnatch-vrf-utils-jam-protocol-specialized-components" title="Direct link to 3-pbnjbandersnatch-vrf-utils-jam-protocol-specialized-components">​</a></h5>
+<p><strong>Objective</strong>: Implement specialized cryptographic utilities for JAM protocol consensus mechanisms and validator operations.</p>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>
+<p><strong>Entropy VRF</strong>:</p>
+<ul>
+<li>Implements Gray Paper 0.7.2 equation 6.17: <code>H_vrfsig ∈ bssignature{H_authorbskey}{Xentropy ∥ banderout{H_sealsig}}{[]}</code></li>
+<li>Block entropy generation for JAM consensus</li>
+<li>Deterministic randomness derived from seal signatures</li>
+</ul>
+</li>
+<li>
+<p><strong>Audit VRF</strong>:</p>
+<ul>
+<li>Audit signature generation for validator selection</li>
+<li>Work report hashing and tranche-based randomness</li>
+</ul>
+</li>
+<li>
+<p><strong>Epoch Root Utilities</strong>:</p>
+<ul>
+<li>KZG polynomial commitments to validator sets</li>
+<li>Ring VRF proof support for validator selection</li>
+</ul>
+</li>
+<li>
+<p><strong>Gamma Processing Functions</strong>:</p>
+<ul>
+<li>GP <code>banderout</code> implementation</li>
+<li>RFC 9381 compliant point-to-hash conversion</li>
+<li>VRF output processing and validation</li>
+</ul>
+</li>
+</ul>
+<p><strong>References</strong>: <a href="https://github.com/gavofyork/graypaper" target="_blank" rel="noopener noreferrer">Gray Paper safrole.tex</a>, <a href="https://github.com/gavofyork/graypaper" target="_blank" rel="noopener noreferrer">Gray Paper auditing.tex</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="project-scope---what-it-is-and-is-not">Project Scope - What it IS and IS NOT<a href="#project-scope---what-it-is-and-is-not" class="hash-link" aria-label="Direct link to Project Scope - What it IS and IS NOT" title="Direct link to Project Scope - What it IS and IS NOT">​</a></h4>
+<p><strong>IS</strong>: A comprehensive TypeScript cryptographic suite providing:</p>
+<ul>
+<li>Complete Bandersnatch elliptic curve implementation with GLV optimizations</li>
+<li>Full IETF VRF, Pedersen VRF, and Ring VRF implementations</li>
+<li>Specialized JAM protocol components (Entropy VRF, Audit VRF, Epoch Root utilities, Gamma processing)</li>
+<li>RFC 9380/9381 compliant hash-to-curve and VRF operations</li>
+<li>Production-ready APIs with comprehensive TypeScript types</li>
+<li>Extensive test suites and performance benchmarks</li>
+<li>Complete documentation and developer guides</li>
+</ul>
+<p><strong>IS NOT</strong>:</p>
+<ul>
+<li>A full blockchain node or dApp implementation</li>
+<li>A Rust wrapper or language binding</li>
+<li>A system that integrates proofs into specific application logic (though it enables such integrations)</li>
+<li>A formally verified implementation (though it follows cryptographic best practices)</li>
+<li>A third-party audited implementation (though it uses audited dependencies and follows security guidelines)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ecosystem-fit">Ecosystem Fit<a href="#ecosystem-fit" class="hash-link" aria-label="Direct link to Ecosystem Fit" title="Direct link to Ecosystem Fit">​</a></h3>
+<p>The JAM protocol&#x27;s success depends on <strong>diverse, robust cryptographic implementations</strong> that enable cross-verification and eliminate single points of failure. Our TypeScript implementation addresses critical ecosystem gaps:</p>
+<p><strong>Critical Needs Addressed:</strong></p>
+<ul>
+<li><strong>Language Diversity</strong>: Extends JAM cryptographic primitives beyond Rust to the entire JavaScript/TypeScript ecosystem</li>
+<li><strong>Developer Accessibility</strong>: Enables web developers to build JAM-compatible applications without Rust expertise</li>
+<li><strong>Browser Integration</strong>: Provides cryptographic primitives directly accessible in web browsers</li>
+<li><strong>Cross-Platform Compatibility</strong>: Ensures consistent behavior across Node.js, browsers, and edge environments</li>
+</ul>
+<p><strong>Target Applications:</strong></p>
+<ul>
+<li><strong>Browser-Based Wallets</strong>: Direct integration of JAM cryptographic primitives in web wallets</li>
+<li><strong>Light Clients</strong>: Efficient verification of JAM consensus proofs in resource-constrained environments</li>
+<li><strong>Web Applications</strong>: Seamless integration of JAM randomness and privacy features</li>
+<li><strong>Developer Tools</strong>: Comprehensive SDKs for JAM application development</li>
+<li><strong>Research Platforms</strong>: Cryptographic research and protocol experimentation</li>
+</ul>
+<p><strong>Ecosystem Impact:</strong></p>
+<ul>
+<li><strong>Security Enhancement</strong>: Multiple independent implementations enable cross-verification</li>
+<li><strong>Adoption Acceleration</strong>: Removes language barriers for web developers</li>
+<li><strong>Innovation Enablement</strong>: Provides additional implementation perspectives for protocol improvements</li>
+<li><strong>Ecosystem Resilience</strong>: Reduces dependence on single technology stack</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="team-busts_in_silhouette">Team <!-- -->👥<a href="#team-busts_in_silhouette" class="hash-link" aria-label="Direct link to team-busts_in_silhouette" title="Direct link to team-busts_in_silhouette">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-members">Team members<a href="#team-members" class="hash-link" aria-label="Direct link to Team members" title="Direct link to Team members">​</a></h3>
+<ul>
+<li><strong>Mihail Kirov:</strong><br>
+<!-- -->Lead Developer with 5+ years of experience in distributed systems and blockchain integration. Specializes in connecting AI systems with decentralized networks and has a strong track record in open-source contributions.
+Mentored at the <a href="https://www.linkedin.com/posts/polkadotprodigy_lets-welcome-mihail-kirov-who-is-joining-activity-7191345617330192384-DJbv?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAAC27-YYBCPf5vbQMBXvlthYYXnOflSOp-9A" target="_blank" rel="noopener noreferrer">Polkadot Prodigy</a> Hackathon
+<a href="https://github.com/mikirov" target="_blank" rel="noopener noreferrer">GitHub: mikirov</a> | <a href="https://www.linkedin.com/in/mihail-kirov/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contact">Contact<a href="#contact" class="hash-link" aria-label="Direct link to Contact" title="Direct link to Contact">​</a></h3>
+<ul>
+<li><strong>Contact Name:</strong> Mihail Kirov</li>
+<li><strong>Contact Email:</strong> <a href="mailto:me@mikirov.xyz" target="_blank" rel="noopener noreferrer">me@mikirov.xyz</a></li>
+<li><strong>Website:</strong> <a href="https://esscrypt.com/" target="_blank" rel="noopener noreferrer">esscrypt.com</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="legal-structure">Legal Structure<a href="#legal-structure" class="hash-link" aria-label="Direct link to Legal Structure" title="Direct link to Legal Structure">​</a></h3>
+<ul>
+<li><strong>Registered Address:</strong> Mladost 3, bl. 313, ent. 3, fl. 10, ap. 66, 1799, Sofia, Bulgaria.</li>
+<li><strong>Registered Legal Entity:</strong> Escrypt Ltd.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="teams-experience">Team&#x27;s experience<a href="#teams-experience" class="hash-link" aria-label="Direct link to Team&#x27;s experience" title="Direct link to Team&#x27;s experience">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-code-repos">Team Code Repos<a href="#team-code-repos" class="hash-link" aria-label="Direct link to Team Code Repos" title="Direct link to Team Code Repos">​</a></h3>
+<ul>
+<li><a href="https://github.com/mikirov" target="_blank" rel="noopener noreferrer">Mihail Kirov</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-linkedin-profiles">Team LinkedIn Profiles<a href="#team-linkedin-profiles" class="hash-link" aria-label="Direct link to Team LinkedIn Profiles" title="Direct link to Team LinkedIn Profiles">​</a></h3>
+<ul>
+<li><a href="https://www.linkedin.com/in/mihail-kirov/" target="_blank" rel="noopener noreferrer">Mihail Kirov</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-status-open_book">Development Status <!-- -->📖<a href="#development-status-open_book" class="hash-link" aria-label="Direct link to development-status-open_book" title="Direct link to development-status-open_book">​</a></h2>
+<p>We have conducted preliminary research and have established a solid architectural design for the JAM ElizaOS Plugin.
+Initial prototypes and integration experiments with our own PeanutButterAndJAM node have been performed,
+and design documents outlining core functionalities, data models, and API specifications are available.
+Our prior work on the Polkadot ElizaOS Plugin further validates our technical approach.
+Detailed documentation and research findings will be maintained in our repositories and published blog posts.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-roadmap-nut_and_bolt">Development Roadmap <!-- -->🔩<a href="#development-roadmap-nut_and_bolt" class="hash-link" aria-label="Direct link to development-roadmap-nut_and_bolt" title="Direct link to development-roadmap-nut_and_bolt">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview-1">Overview<a href="#overview-1" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
+<ul>
+<li><strong>Total Estimated Duration:</strong> 30 person-days</li>
+<li><strong>Full-Time Equivalent (FTE):</strong> 1 FTE</li>
+<li><strong>Total Costs:</strong> 20,000 USD</li>
+<li><strong>DOT %:</strong> 50% of total costs</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-1--core-bandersnatch-vrf-implementation">Milestone 1 — Core Bandersnatch VRF Implementation<a href="#milestone-1--core-bandersnatch-vrf-implementation" class="hash-link" aria-label="Direct link to Milestone 1 — Core Bandersnatch VRF Implementation" title="Direct link to Milestone 1 — Core Bandersnatch VRF Implementation">​</a></h3>
+<ul>
+<li><strong>Estimated Duration:</strong> 30 person-days</li>
+<li><strong>FTE:</strong> 1 FTE</li>
+<li><strong>Costs:</strong> 10,000 USD</li>
+</ul>
+<table><thead><tr><th>Number</th><th>Deliverable</th><th>Detailed Specification</th></tr></thead><tbody><tr><td><strong>0a.</strong></td><td><strong>Project Setup &amp; Licensing</strong></td><td>Apache 2.0 license, GitHub repository setup, CI/CD pipeline with GitHub Actions, package.json configuration for NPM distribution</td></tr><tr><td><strong>0b.</strong></td><td><strong>Core Documentation</strong></td><td>JSDoc API documentation, TypeScript type definitions, basic usage examples, and integration guides</td></tr><tr><td><strong>0c.</strong></td><td><strong>Testing Infrastructure</strong></td><td>Comprehensive test suite with &gt;90% coverage, test vector validation, performance benchmarks, and automated testing pipeline</td></tr><tr><td><strong>1.</strong></td><td><strong>Bandersnatch Curve Implementation</strong></td><td>Complete elliptic curve implementation with GLV endomorphism optimization, point arithmetic, field operations, key generation, and curve parameter validation</td></tr><tr><td><strong>2.</strong></td><td><strong>Elligator2 Hash-to-Curve</strong></td><td>RFC 9380 compliant Elligator2 implementation for Bandersnatch curve, supporting both random oracle (RO) and non-uniform (NU) variants</td></tr><tr><td><strong>3.</strong></td><td><strong>IETF VRF Implementation</strong></td><td>Full RFC 9381 ECVRF implementation with Bandersnatch_XMD:SHA-512_ELL2_RO_ suite, proper DST handling, and test vector validation</td></tr><tr><td><strong>4.</strong></td><td><strong>Pedersen VRF Implementation</strong></td><td>Complete Pedersen VRF implementation extending IETF patterns, optimized for Bandersnatch characteristics, with comprehensive test coverage</td></tr><tr><td><strong>5.</strong></td><td><strong>Ring VRF Implementation</strong></td><td>Full W3F Ring Proof implementation with KZG polynomial commitments, ring signature generation/verification, and privacy-preserving validator selection</td></tr><tr><td><strong>6.</strong></td><td><strong>Cryptographic Infrastructure</strong></td><td>RFC 8032 nonce generation, point processing utilities, VRF output validation, and comprehensive error handling with edge case coverage</td></tr><tr><td><strong>7.</strong></td><td><strong>Performance Optimization</strong></td><td>GLV endomorphism implementation, performance benchmarks, optimization analysis, and comparison with reference implementations</td></tr><tr><td><strong>8.</strong></td><td><strong>Core Package Distribution</strong></td><td>NPM package publication, TypeScript declarations, browser compatibility, and cross-platform testing</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="milestone-2--jam-protocol-specialized-components">Milestone 2 — JAM Protocol Specialized Components<a href="#milestone-2--jam-protocol-specialized-components" class="hash-link" aria-label="Direct link to Milestone 2 — JAM Protocol Specialized Components" title="Direct link to Milestone 2 — JAM Protocol Specialized Components">​</a></h3>
+<ul>
+<li><strong>Estimated Duration:</strong> 30 person-days</li>
+<li><strong>FTE:</strong> 1 FTE</li>
+<li><strong>Costs:</strong> 10,000 USD</li>
+</ul>
+<table><thead><tr><th>Number</th><th>Deliverable</th><th>Detailed Specification</th></tr></thead><tbody><tr><td><strong>1.</strong></td><td><strong>Entropy VRF Implementation</strong></td><td>Complete implementation of Gray Paper 0.7.2 equation 6.17: <code>H_vrfsig ∈ bssignature{H_authorbskey}{Xentropy ∥ banderout{H_sealsig}}{[]}</code> for block entropy generation</td></tr><tr><td><strong>2.</strong></td><td><strong>Audit VRF Implementation</strong></td><td>Full audit signature generation for both tranche 0 and tranche N according to Gray Paper 0.7.2 equations 17.3 and 17.14, including work report hashing</td></tr><tr><td><strong>3.</strong></td><td><strong>Epoch Root Utilities</strong></td><td>Complete implementation of <code>getRingRoot</code> function for KZG polynomial commitments to validator sets, supporting ring VRF proofs</td></tr><tr><td><strong>4.</strong></td><td><strong>Gamma Processing Functions</strong></td><td>VRF output processing utilities including <code>getCommitmentFromGamma</code>, <code>getBanderoutFromGamma</code>, and RFC 9381 compliant point-to-hash conversion</td></tr><tr><td><strong>5.</strong></td><td><strong>JAM Integration Testing</strong></td><td>End-to-end test suites for all JAM protocol components, integration with PeanutButterAndJAM implementation, and real-world usage validation</td></tr><tr><td><strong>6.</strong></td><td><strong>Advanced Documentation</strong></td><td>Comprehensive tutorials for JAM protocol integration, specialized component usage guides, and Gray Paper compliance documentation</td></tr><tr><td><strong>7.</strong></td><td><strong>Performance Analysis</strong></td><td>Specialized benchmarking for JAM protocol components, optimization analysis, and comparison with Rust reference implementations</td></tr><tr><td><strong>8.</strong></td><td><strong>Production Readiness</strong></td><td>Final package distribution, security hardening, edge case handling, and production deployment guidelines</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="future-plans">Future Plans<a href="#future-plans" class="hash-link" aria-label="Direct link to Future Plans" title="Direct link to Future Plans">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="short-term-post-grant">Short-Term (Post-Grant)<a href="#short-term-post-grant" class="hash-link" aria-label="Direct link to Short-Term (Post-Grant)" title="Direct link to Short-Term (Post-Grant)">​</a></h3>
+<p><strong>Community Engagement &amp; Adoption:</strong></p>
+<ul>
+<li><strong>Wide Distribution</strong>: Announce library release through JAM community channels, TypeScript cryptography forums, developer conferences, and social media</li>
+<li><strong>Developer Onboarding</strong>: Publish comprehensive tutorials, integration guides, and example applications</li>
+<li><strong>JAM Ecosystem Integration</strong>: Present implementation to JAM developers for feedback and adoption in production systems</li>
+<li><strong>Research Publication</strong>: Submit findings to relevant cryptographic conferences and journals</li>
+</ul>
+<p><strong>Maintenance &amp; Support:</strong></p>
+<ul>
+<li><strong>Active Maintenance</strong>: Monitor GitHub repository for issues, provide bug fixes, and respond to developer queries</li>
+<li><strong>Compatibility Updates</strong>: Ensure compatibility with upcoming TypeScript versions and Node.js releases</li>
+<li><strong>Performance Monitoring</strong>: Track performance metrics and optimize based on real-world usage patterns</li>
+</ul>
+<p><strong>Enhancement &amp; Extension:</strong></p>
+<ul>
+<li><strong>Feature Additions</strong>: Implement additional helper functions and utilities based on community feedback</li>
+<li><strong>Performance Improvements</strong>: Continue optimization efforts and implement advanced techniques</li>
+<li><strong>Test Vector Generation</strong>: Create comprehensive test vectors compatible with Rust implementations</li>
+<li><strong>Security Analysis</strong>: Conduct internal security reviews and implement additional hardening measures</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="long-term-maintenance--development">Long-Term Maintenance &amp; Development<a href="#long-term-maintenance--development" class="hash-link" aria-label="Direct link to Long-Term Maintenance &amp; Development" title="Direct link to Long-Term Maintenance &amp; Development">​</a></h3>
+<p><strong>Sustained Support Commitment:</strong></p>
+<ul>
+<li><strong>Full Compliance</strong>: Maintain full compliance with W3F specifications and any protocol updates for 1 year at no cost</li>
+<li><strong>Open Source Initiative</strong>: Continue maintenance as part of our open-source contributions beyond the initial year</li>
+</ul>
+<p><strong>Ecosystem Expansion:</strong></p>
+<ul>
+<li><strong>Integration Partnerships</strong>: Explore integrations with popular TypeScript Web3 tools and SDKs</li>
+<li><strong>Educational Resources</strong>: Develop educational content and workshops for cryptographic protocol implementation</li>
+<li><strong>Research Collaboration</strong>: Partner with academic institutions and research organizations for advanced cryptographic research</li>
+</ul>
+<p><strong>Strategic Development:</strong></p>
+<ul>
+<li><strong>Additional VRF Types</strong>: Consider implementing additional VRF schemes based on community needs</li>
+<li><strong>Formal Verification</strong>: Explore formal verification opportunities for critical components</li>
+<li><strong>Third-Party Audits</strong>: Pursue professional security audits for production-critical applications</li>
+<li><strong>Cross-Platform Optimization</strong>: Implement platform-specific optimizations for various JavaScript engines</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="teams-long-term-vision">Team&#x27;s Long-Term Vision<a href="#teams-long-term-vision" class="hash-link" aria-label="Direct link to Team&#x27;s Long-Term Vision" title="Direct link to Team&#x27;s Long-Term Vision">​</a></h3>
+<p>Our goal is to establish this project as the <strong>definitive TypeScript library</strong> for JAM cryptographic primitives. We envision this implementation becoming the foundation for:</p>
+<ul>
+<li><strong>Web-Native JAM Applications</strong>: Browser-based wallets, dApps, and light clients</li>
+<li><strong>Developer Education</strong>: Comprehensive learning resources for cryptographic protocol implementation</li>
+<li><strong>Research Platform</strong>: Enabling cryptographic research and protocol experimentation</li>
+<li><strong>Ecosystem Standard</strong>: Setting the standard for TypeScript cryptographic implementations in the JAM ecosystem</li>
+</ul>
+<p>Success will be measured by <strong>widespread adoption</strong> by developers, <strong>integration</strong> into production JAM applications, and <strong>recognition</strong> as a trusted, secure implementation within the broader cryptographic community.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-information-heavy_plus_sign">Additional Information <!-- -->➕<a href="#additional-information-heavy_plus_sign" class="hash-link" aria-label="Direct link to additional-information-heavy_plus_sign" title="Direct link to additional-information-heavy_plus_sign">​</a></h2>
+<p><strong>How did you hear about the Grants Program?</strong></p>
+<ul>
+<li>Research into missing TypeScript cryptographic implementations for JAM protocol</li>
+<li>Community discussions about language diversity in JAM ecosystem development</li>
+</ul>
+<p><strong>Additional Work:</strong><br>
+<!-- -->Our team has previously delivered successful implementations including:</p>
+<ul>
+<li><a href="https://github.com/w3f/Grants-Program/pull/2518" target="_blank" rel="noopener noreferrer">ElizaOS Polkadot Plugin</a> - Comprehensive Polkadot integration for AI systems</li>
+<li><strong>PeanutButterAndJAM</strong>: Active JAM protocol implementation demonstrating real-world usage of our cryptographic libraries</li>
+</ul>
+<p><strong>Previous Grants:</strong></p>
+<ul>
+<li><a href="https://github.com/w3f/Grants-Program/pull/2518" target="_blank" rel="noopener noreferrer">ElizaOS Polkadot Plugin</a> - Successfully delivered and maintained</li>
+</ul>
+<p><strong>Technical Expertise:</strong></p>
+<ul>
+<li><strong>Cryptographic Implementation</strong>: Deep experience in elliptic curve cryptography and VRF implementations</li>
+<li><strong>TypeScript Ecosystem</strong>: Extensive knowledge of modern TypeScript development practices and tooling</li>
+<li><strong>JAM Protocol</strong>: Active contributors to JAM ecosystem through PeanutButterAndJAM implementation</li>
+<li><strong>Web3 Integration</strong>: Proven track record in blockchain protocol integration and developer tooling</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/w3f/Grants-Program/edit/master/applications/BandersnatchVRF.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#project-overview-page_facing_up" class="table-of-contents__link toc-highlight">Project Overview 📄</a><ul><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#project-details" class="table-of-contents__link toc-highlight">Project Details</a></li><li><a href="#ecosystem-fit" class="table-of-contents__link toc-highlight">Ecosystem Fit</a></li></ul></li><li><a href="#team-busts_in_silhouette" class="table-of-contents__link toc-highlight">Team 👥</a><ul><li><a href="#team-members" class="table-of-contents__link toc-highlight">Team members</a></li><li><a href="#contact" class="table-of-contents__link toc-highlight">Contact</a></li><li><a href="#legal-structure" class="table-of-contents__link toc-highlight">Legal Structure</a></li><li><a href="#teams-experience" class="table-of-contents__link toc-highlight">Team&#39;s experience</a></li><li><a href="#team-code-repos" class="table-of-contents__link toc-highlight">Team Code Repos</a></li><li><a href="#team-linkedin-profiles" class="table-of-contents__link toc-highlight">Team LinkedIn Profiles</a></li></ul></li><li><a href="#development-status-open_book" class="table-of-contents__link toc-highlight">Development Status 📖</a></li><li><a href="#development-roadmap-nut_and_bolt" class="table-of-contents__link toc-highlight">Development Roadmap 🔩</a><ul><li><a href="#overview-1" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#milestone-1--core-bandersnatch-vrf-implementation" class="table-of-contents__link toc-highlight">Milestone 1 — Core Bandersnatch VRF Implementation</a></li><li><a href="#milestone-2--jam-protocol-specialized-components" class="table-of-contents__link toc-highlight">Milestone 2 — JAM Protocol Specialized Components</a></li></ul></li><li><a href="#future-plans" class="table-of-contents__link toc-highlight">Future Plans</a><ul><li><a href="#short-term-post-grant" class="table-of-contents__link toc-highlight">Short-Term (Post-Grant)</a></li><li><a href="#long-term-maintenance--development" class="table-of-contents__link toc-highlight">Long-Term Maintenance &amp; Development</a></li><li><a href="#teams-long-term-vision" class="table-of-contents__link toc-highlight">Team&#39;s Long-Term Vision</a></li></ul></li><li><a href="#additional-information-heavy_plus_sign" class="table-of-contents__link toc-highlight">Additional Information ➕</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More Info</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/w3f/Grants-Program" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://web3.foundation/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/Support Docs/privacy_policy">Privacy Policy</a></li><li class="footer__item"><a href="https://web3.foundation/legal-disclosures/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Legal Disclosures</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/Web3foundation" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&amp;via=matrix.org&amp;via=matrix.parity.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">Grants Community Matrix Channel<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2025 Web3 Foundation</div></div></div></footer></div>
+</body>
+</html>
