@@ -1,10 +1,10 @@
 # VoiceBan - A Decentralized Social Platform
 
-- **Team Name:** VoiceBan
-- **Payment Details:**
-  - **DOT**: 1cqNABGgtivgMt4PSAL81QporrxrfRooF91DYJoQhPoqUvt.
-  - **Payment**: 1cqNABGgtivgMt4PSAL81QporrxrfRooF91DYJoQhPoqUvt (USDC). 
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 3
+* **Team Name:** VoiceBan
+* **Payment Details:**
+  * **DOT**: 1cqNABGgtivgMt4PSAL81QporrxrfRooF91DYJoQhPoqUvt.
+  * **Payment**: 1cqNABGgtivgMt4PSAL81QporrxrfRooF91DYJoQhPoqUvt (USDC). 
+* **Level:** 3
 
 ## Project Overview :page_facing_up:
 
