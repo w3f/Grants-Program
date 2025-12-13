@@ -1,6 +1,7 @@
 # The Capella Project
 
 **Team Name:** Blockspace Corporation
+
 **Payment Details:**
 - **DOT:**  1botc3We3PdComZFNVUgSVThzKRMH4poSorUTMCCUvaoPWg
 - **USDC:** 1botc3We3PdComZFNVUgSVThzKRMH4poSorUTMCCUvaoPWg
