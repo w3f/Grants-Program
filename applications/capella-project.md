@@ -1,10 +1,9 @@
 # The Capella Project
 
-**Team Name:** Blockspace Corporation
-
-**Payment Details:**
-- **DOT:**  1botc3We3PdComZFNVUgSVThzKRMH4poSorUTMCCUvaoPWg
-- **USDC:** 1botc3We3PdComZFNVUgSVThzKRMH4poSorUTMCCUvaoPWg
+- **Team Name:** Blockspace Corporation
+- **Payment Details:**
+  - **DOT**: 1botc3We3PdComZFNVUgSVThzKRMH4poSorUTMCCUvaoPWg
+  - **USDC**: 1botc3We3PdComZFNVUgSVThzKRMH4poSorUTMCCUvaoPWg (USDC)
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 ## Project Overview
