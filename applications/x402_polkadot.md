@@ -3,34 +3,35 @@
 - **Team Name:** MahaSour
 - **Payment Details:**
   - **DOT**: 12ECJeQWJBt2UVfyMQfsLca7M9aXRVzcJmbh2RvRv9yaAiwW
-  - **Payment**: 12ECJeQWJBt2UVfyMQfsLca7M9aXRVzcJmbh2RvRv9yaAiwW 
-- **Level:** 3
+  - **Payment**: 12ECJeQWJBt2UVfyMQfsLca7M9aXRVzcJmbh2RvRv9yaAiwW
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
 - **Tagline**: HTTP-native micropayments for Polkadot's AI agent economy
-- **Description**: x402 is an open payment protocol that enables instant, programmatic stablecoin payments directly over HTTP using the 402 Payment Required status code. We are implementing x402 for the Polkadot ecosystem, allowing AI agents and applications to make autonomous micropayments using DOT, USDC, and USDT on Polkadot AssetHub.
-- **Integration with Polkadot**: Direct integration with Polkadot AssetHub for multi-token settlement (DOT, USDC, USDT) and leverages Polkadot.js ecosystem for wallet integration. Provides payment infrastructure layer for the Polkadot ecosystem, enabling developers to build paid APIs and AI agent applications.
+- **Description**: x402 is an open payment protocol that enables instant, programmatic stablecoin payments directly over HTTP using the 402 Payment Required status code. We are implementing x402 for the Polkadot ecosystem, allowing AI agents and applications to make autonomous micropayments using USDC on Polkadot AssetHub.
+- **Integration with Polkadot**: Direct integration with Polkadot AssetHub for USDC settlement and leverages Polkadot.js ecosystem for wallet integration. Provides payment infrastructure layer for the Polkadot ecosystem, enabling developers to build paid APIs and AI agent applications.
 - **Why we're interested**: The AI agent economy is projected to influence $30 trillion in transactions by 2030 (a16z). Currently, x402 only exists on Base and Solana. By bringing this protocol to Polkadot, we enable the ecosystem to compete in this emerging market while providing developers with production-ready payment infrastructure for autonomous agent applications.
 
 ### Project Details
 
 **Technology Stack:**
-- Client/Server SDKs: TypeScript/JavaScript (Node.js and browser) and Rust
+- Client/Server SDKs: TypeScript/JavaScript (Node.js and browser)
 - Facilitator Service: Rust
 - Blockchain Integration: Polkadot.js, subxt
 - Payment Settlement: Polkadot AssetHub
 - Cryptography: sr25519/ed25519 for signatures
-- Testing: Mocha (TypeScript), Cargo test (Rust)
+- Templates: Express.js, Next.js, Rust (Axum)
+- Testing: Mocha (TypeScript), Cargo (Rust)
 - Documentation: Docusaurus
 
 **Architecture:**
 
 ```
 ┌────────────────────────┐
-│      Client/Agent      │ (x402-polkadot-js or x402-polkadot-rs [client])
+│      Client/Agent      │ (x402-polkadot-js [client])
 └──────────┬─────────────┘
            │ HTTP + X-PAYMENT header
            ↓
@@ -57,20 +58,14 @@
    - Polkadot.js wallet integration
    - Payment signature creation and verification
 
-2. **x402-polkadot-rs Crate** - Rust crate providing:
-   - Client functionality for Rust applications
-   - Server middleware for web frameworks
-   - Type-safe payment handling
-
-3. **x402-facilitator** - Rust service providing:
+2. **x402-facilitator** - Rust service providing:
    - REST API for payment verification and settlement
-   - Multi-token support (DOT, USDT)
+   - USDC payment support on AssetHub
    - AssetHub transaction submission
    - Nonce tracking and replay attack prevention
 
-4. **Developer Tools:**
-   - CLI tool for testing and debugging
-   - Templates for Express, Next.js, and Rust
+3. **Developer Tools:**
+   - Templates for Express, Next.js, and Rust (Axum)
    - Comprehensive documentation and tutorials
 
 ### Ecosystem Fit
@@ -204,7 +199,7 @@ Yes, in other blockchain ecosystems:
 ### Team Code Repos
 
 **GitHub account:**
-- Mahavir - https://github.com/crypto-priest 
+- Mahavir - https://github.com/crypto-priest
 - Sourav - https://github.com/0xsouravm
 
 ### Team LinkedIn Profiles
@@ -236,64 +231,52 @@ We have completed the technical architecture design, identifying key components 
 
 ### Overview
 
-- **Total Estimated Duration:** 5 months
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 1
-- **Total Costs:** 100,000 USD
+- **Total Costs:** 30,000 USD
 - **DOT %:** 50%
 
-### Milestone 1 — x402-polkadot-js & x402-polkadot-rs Libraries
+### Milestone 1 — Facilitator Service Core
 
 - **Estimated duration:** 1 month
 - **FTE:** 1
-- **Costs:** 20,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a developer can install the libraries, integrate them into their application, and create their first paid endpoint. The tutorial will cover wallet setup, payment signature creation, and basic server-side verification. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests using `npm test` for JavaScript and `cargo test` for Rust. We will achieve 80%+ test coverage for both libraries. |
-| **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | x402-polkadot-js NPM Package | We will create a TypeScript/JavaScript library that brings x402 payment support to the Polkadot ecosystem. The client module will handle creating signed payments, integrate with Polkadot.js wallets (browser extension and Node.js), and include a fetch wrapper that automatically handles 402 responses. The server module will extract and validate X-PAYMENT headers, communicate with the facilitator API for verification, and generate proper 402 responses. The library will be framework-agnostic, working seamlessly with Express, Fastify, Next.js, and other Node.js frameworks. |
-| 2. | x402-polkadot-rs Crate | We will create a Rust library for backend developers building on Polkadot. It will provide payment signature creation using sr25519 or ed25519, HTTP client integration for making paid requests, and middleware for Axum and Actix frameworks. The implementation will be type-safe with proper error handling throughout, following Rust best practices. |
-
-### Milestone 2 — Facilitator Service Core
-
-- **Estimated duration:** 1 month
-- **FTE:** 1
-- **Costs:** 20,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to deploy and operate a facilitator service. Documentation will cover API endpoints, configuration options, and integration with AssetHub. We will also provide architecture documentation explaining design decisions. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests and integration tests to ensure functionality and robustness. In the guide, we will describe how to run these tests using `cargo test`. We will include load testing documentation and expected performance benchmarks. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests and integration tests to ensure functionality and robustness. In the guide, we will describe how to run these tests using `cargo test`. We will include load testing documentation with expected throughput (requests per second) and latency targets (p50, p95). |
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. The Docker image will be production-ready with health checks and multi-stage builds. We will also provide Docker Compose configuration for spinning up dependencies locally. |
 | 1. | REST API Server | We will create a Rust-based HTTP server using the Axum framework. The server will implement core endpoints: POST /verify (verifies payment signatures and structure), POST /settle (submits transaction to AssetHub), GET /health (service health check), and GET /status (provides facilitator status including gas balance). |
-| 2. | Payment Verification Engine | We will implement the cryptographic verification logic that handles sr25519/ed25519 signature verification, payment amount validation, expiration timestamp checking, and nonce tracking in the database to prevent replay attacks. All validation will conform to the x402 protocol specification. |
+| 2. | Payment Verification Engine | We will implement the cryptographic verification logic that handles sr25519/ed25519 signature verification, payment amount validation, expiration timestamp checking, nonce tracking in the database to prevent replay attacks, comprehensive input validation for all API endpoints, and balance verification before settlement. All validation will conform to the x402 protocol specification. |
 | 3. | Basic AssetHub Integration | We will implement connection to Polkadot AssetHub via RPC using the subxt library. The module will construct USDC transfer extrinsics, handle transaction submission and confirmation monitoring, implement retry logic for failed transactions, and check facilitator gas balances to ensure operational readiness. |
 | 4. | Database Layer | We will implement a database layer using PostgreSQL or SQLite for tracking nonces (critical for replay attack prevention), storing transaction history, and maintaining payment receipts. The implementation will include proper database migrations and connection pooling for production use. |
+| 5. | Production Hardening | We will implement rate limiting (configurable requests per IP), health check endpoints reporting service and dependency status, structured logging with transaction IDs for audit trails, and graceful error handling for network failures. |
 
-### Milestone 3 — Facilitator Multi-Token & Production Features
+
+### Milestone 2 — x402-polkadot-js Library
 
 - **Estimated duration:** 1 month
 - **FTE:** 1
-- **Costs:** 20,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to configure multi-token support and deploy to production. Documentation will include a multi-token integration guide, updated API reference, and an operational runbook for production deployment. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We will provide test suites covering all token types (DOT, USDC, USDT) and document expected behavior. |
-| **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. The image will be production-optimized with multi-token support configured. |
-| 1. | Multi-Token Support | We will extend the facilitator to support multiple payment tokens: DOT on AssetHub, and USDT on AssetHub (with configurable asset IDs). The facilitator will automatically detect which token is being used from the payment payload and use a unified transaction builder that handles all token types. |
-| 2. | Advanced Payment Features | We will implement payment batching where possible to reduce transaction costs, configurable facilitator fees (0-2% range adjustable via configuration), webhook notifications for payment success/failure events, and receipt generation that includes transaction hashes and cryptographic proofs. |
-| 3. | Production Hardening | We will implement production-grade features including: rate limiting and DDoS protection with per-IP limits, structured logging and metrics collection for monitoring, automatic retries with exponential backoff for failed operations, circuit breakers for RPC endpoints to handle node outages gracefully, detailed health checks showing dependency status, and flexible configuration via environment variables or config files. |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a developer can install the library, integrate it into their application, and create their first paid endpoint. The tutorial will cover wallet setup, payment signature creation, and basic server-side verification. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit and integration tests to ensure functionality and robustness. In the guide, we will describe how to run these tests using `npm test` for JavaScript. We will achieve 90%+ test coverage for the library. |
+| **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 1. | Client Module | We will create the client-side library that handles creating signed payments, integrates with Polkadot.js wallets (browser extension and Node.js), and includes a fetch wrapper that automatically handles 402 responses. |
+| 2. | Server Module | We will create the server-side library with middleware that extracts and validates X-PAYMENT headers, communicates with the facilitator API for verification, and generates proper 402 responses. The module will be framework-agnostic, working seamlessly with Express, Fastify, Next.js, and other Node.js frameworks. |
+| 3. | Frontend Test Client | We will create a simple frontend application to test and demonstrate the SDK integration, including wallet connection, payment signing, and end-to-end payment flow verification. |
 
-### Milestone 4 — Starter Templates (JavaScript & Rust)
+
+### Milestone 3 — Starter Templates & Documentation
 
 - **Estimated duration:** 1 month
 - **FTE:** 1
-- **Costs:** 20,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -303,31 +286,16 @@ We have completed the technical architecture design, identifying key components 
 | **0d.** | Docker | We will provide Dockerfiles and Docker Compose configurations that can be used to test all the functionality delivered with this milestone. Each template will have Docker Compose setups for local development. |
 | 1. | Express.js Template | We will create a production-ready Express API template demonstrating x402-polkadot-js in action. It will include paid endpoints example, environment configuration setup, proper error handling, Docker deployment configuration, and integration tests. |
 | 2. | Next.js Template | We will create a full-stack Next.js application template with API routes using x402 middleware, a React frontend that connects to Polkadot.js extension wallets, payment UI components, example paid content pages, and will be ready to deploy on Vercel or self-hosted infrastructure. |
-| 3. | Actix/Axum Template (Rust) | We will create a Rust backend template using x402-polkadot-rs with paid endpoints, middleware integration, configuration management, CORS setup, Docker deployment configuration, and integration tests. |
-| 4. | CLI Tool (x402-cli) | We will create a command-line debugging tool written in Rust. The tool will be able to create test payments, verify signatures locally, simulate the full payment flow, connect to testnet for testing, debug failed payments with detailed error messages, and manage test wallets. |
+| 3. | Project Website | We will create a marketing/landing page for the project that explains what x402-polkadot is, links to documentation and GitHub repositories, showcases live demos, provides community links (Discord/Telegram), displays a status page for facilitator uptime, and has a clear getting started call-to-action. |
+| 4. | Documentation Site | We will create a Docusaurus-based documentation site with getting started guides, API reference, integration tutorials, and troubleshooting FAQ. |
+| 5. | Rust Template | We will create a Rust backend template using Axum demonstrating facilitator integration with paid endpoints, middleware setup, configuration management, and Docker deployment. |
 
-### Milestone 5 — Documentation, Website & Production Launch
-
-- **Estimated duration:** 1 month
-- **FTE:** 1
-- **Costs:** 20,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that covers the complete integration process from start to finish. The documentation website will include getting started guides, full API references, integration tutorials, and troubleshooting guides. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We will provide end-to-end testing documentation and a production deployment testing checklist. |
-| **0d.** | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. We will provide final production deployment configurations with monitoring setup. |
-| **0e.** | Article | We will publish an **article** (Medium and technical blog post) that explains: (1) what x402 is and why it matters for the Polkadot ecosystem, (2) how we implemented the protocol for Polkadot with technical details, (3) step-by-step integration guide with code examples, and (4) real-world use cases for AI agents and micropayments. The target audience is Polkadot developers, AI/agent builders, and anyone interested in Web3 payment infrastructure. |
-| 1. | Documentation Website | We will create a Docusaurus-based documentation site (to be hosted at a domain like docs.x402.polkadot.org) with getting started guides for both JavaScript and Rust, complete API references, step-by-step tutorials, architecture diagrams showing how everything fits together, best practices and security guidelines, and a troubleshooting/FAQ section. |
-| 2. | Project Website | We will create a marketing/landing page for the project that explains what x402-polkadot is, links to documentation and GitHub repositories, showcases live demos, provides community links (Discord/Telegram), displays a status page for facilitator uptime, and has a clear getting started call-to-action. |
-| 3. | Production Deployment | We will deploy the facilitator service to production with cloud hosting (AWS/DigitalOcean/Hetzner), proper domain and SSL setup (like facilitator.polkadot.x402.org), monitoring and alerting for uptime/errors/transaction volume, automated backups, log aggregation, a public status page, and full security hardening. |
 
 ## Future Plans
 
 **Long-term maintenance and financing:**
 
-- **Year 1**: The grant funding ($100,000 USD) will cover development, infrastructure, and gas fees for the first year of operation
+- **Year 1**: The grant funding ($30,000 USD) will cover development
 - **Year 2+**: We plan to apply for Polkadot Treasury funding as ecosystem infrastructure, OR implement a 0.5-1% optional facilitator fee for self-sustainability
 - **Self-hosting option**: Developers will always have the option to run their own facilitator instances, ensuring no vendor lock-in
 
@@ -347,10 +315,20 @@ We have completed the technical architecture design, identifying key components 
 - Contribute improvements back to the broader x402 standard evolution
 - Expand to support additional Polkadot parachains and cross-chain scenarios
 - Build a thriving developer ecosystem around x402-polkadot
+- Expand SDK and template support to additional programming languages (Rust, Go, Python) based on community demand
+- Add support for additional tokens (DOT, USDT) on AssetHub
+- Develop CLI debugging tool for testing and debugging payment flows
+- Implement email notification system for payment events
+
+**Post-grant support:**
+
+- 6-week critical bug fix support after final milestone delivery
+- Ongoing community support through Discord and GitHub discussions
+- Security patches and dependency updates for 6 months
 
 ## Referral Program (optional) :moneybag:
 
-Referrer: Sourav Mishra(https://github.com/0xsouravm)
+Referrer: Sourav Mishra (https://github.com/0xsouravm)
 
 Payment Address: 16SGUEfpDop2fXi9K89yzCQWHJ3vHz1tKJVA1pCBjoew5tzP (USDC)
 
@@ -376,4 +354,3 @@ Successfully delivered a Web3 Foundation grant project - **OriginForge** - a Sel
 **Other teams who have contributed:**
 
 No other teams have contributed financially to this project.
-
