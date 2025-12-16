@@ -142,11 +142,11 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 | 0b. | Documentation | We will provide a document that defines Capella’s brand, messaging, and visual identity, provides key marketing and technical materials, and supports partner and government outreach, integration, and adoption. |
 | 0c. | Testing and Testing Guide | Our testing covers functionality, usability, security, and performance by validating core features, ensuring responsive and consistent UI across devices, assessing accessibility and user experience, measuring load and performance under varying conditions, checking for common security vulnerabilities, and reviewing SEO and content accuracy. |
 | 0d. | Docker | ------------- |
-| 1.a | Document - Capella Brand | Define Capella’s core identity, finalize messaging and tone, create the full visual identity, logo, and produce a brand guideline. |
-| 1.b | Document - Core Marketing Asset | Develop the pitch deck, one-pager, social media kit, and short explainer scripts to clearly present Capella’s value and technology. |
-| 1.c | Document - Public Document | Produce Capella’s whitepaper, technical and user guides, developer documentation, and publish them on a dedicated documentation site. |
-| 1.d | Document - Partner & Government Outreach Materials | Create briefing decks, LGU kits, integration packages, case studies, and demo walkthroughs for professional stakeholder engagements. |
-| 2.a | Website | Build Capella’s online presence by creating the site structure, designing the UX/UI, developing all pages, writing content, testing, and launching with proper analytics and SEO setup.|
+| 1a. | Document - Capella Brand | Define Capella’s core identity, finalize messaging and tone, create the full visual identity, logo, and produce a brand guideline. |
+| 1b. | Document - Core Marketing Asset | Develop the pitch deck, one-pager, social media kit, and short explainer scripts to clearly present Capella’s value and technology. |
+| 1c. | Document - Public Document | Produce Capella’s whitepaper, technical and user guides, developer documentation, and publish them on a dedicated documentation site. |
+| 1d. | Document - Partner & Government Outreach Materials | Create briefing decks, LGU kits, integration packages, case studies, and demo walkthroughs for professional stakeholder engagements. |
+| 2a. | Website | Build Capella’s online presence by creating the site structure, designing the UX/UI, developing all pages, writing content, testing, and launching with proper analytics and SEO setup.|
 
 #### Milestone 2: Capella Substrate Node (Testnet and Mainnet)
 
@@ -156,6 +156,11 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | ------------- |
+| 0b. | Documentation | ------------- |
+| 0c. | Testing and Testing Guide | ------------- |
+| 0d. | Docker | ------------- |
+| 0e. | Article | ------------- |
 | 2.1 | Code Integration | Integrate the Capella node into the Xode codebase, configure the runtime, update binaries and CLI tools, and validate functionality on a local dev chain. |
 | 2.2 | Runtime & Pallet Setup | Configure base and Capella-specific pallets, verify block production and extrinsic flow, and generate initial chain spec files. |
 | 2.3 | Binary Release Preparation | Build optimized binaries for Linux and Windows, implement versioning and changelog, test execution, and publish through GitHub or internal repositories. |
@@ -175,6 +180,11 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | ------------- |
+| 0b. | Documentation | ------------- |
+| 0c. | Testing and Testing Guide | ------------- |
+| 0d. | Docker | ------------- |
+| 0e. | Article | ------------- |
 | 3.1 | Governance & Policy Setup | Establish Capella’s governance framework by setting up key wallets, defining voting, staking, and collator policies, and publishing all rules for transparency. |
 | 3.2 | User & Ecosystem Engagement | Onboard LGUs and partners, provide documentation and support, educate stakeholders on governance and staking, and monitor user participation. |
 | 3.3 | External Partnerships & Advocacy | Join the Philippine Blockchain Council and TWGs, participate in policy discussions, advocate Capella’s use-cases, and align governance and staking policies with national standards. |
