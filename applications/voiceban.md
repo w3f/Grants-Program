@@ -109,21 +109,46 @@ Cloudflare reported customer-visible incidents in [2024](https://blog.cloudflare
 3. Regional submarine-cable failures in [March 2024](https://www.reuters.com/world/africa/internet-disruption-hits-west-central-africa-netblocks-cloudflare-data-shows-2024-03-14/) degraded access across West and Central Africa; 
 highlighting why multi-gateway, multi-path access matters for Web3 frontends.
 
-Within the Substrate/Polkadot/Kusama ecosystem, there are adjacent efforts but no project that combines browser-level, 
-DNS-independent access, deterministic IPNS-based validator discovery, and a chain-native social application. 
-- Social projects such as Subsocial focus on the application layer; 
-- Identity projects such as KILT focus on credentials; 
-- Infra threads in the [Polkadot forum](https://forum.polkadot.network/t/decentralized-nodes-polkadotters/14128) discuss decentralization of nodes and cloud dependencies. 
+### Related Work
+Within the Substrate/Polkadot/Kusama ecosystem, there are adjacent efforts addressing parts of the problem Voiceban targets,
+but no project that combines browser-level, DNS-independent access, deterministic IPNS-based backend discovery, 
+and a chain-native social application into a single, cohesive architecture. 
 
-VoiceBan’s distinction is to close the last mile for browsers (installable PWA + IPNS discovery over multiple public gateways) 
-and to standardize a rendezvous layer for validators that any parachain or app can import; thus, 
-removing DNS as a single choke point while keeping libp2p discovery untouched once inside the network. 
-In related ecosystems, partial solutions exist—naming (ENS/Handshake), hosting (Fleek), or social graphs (Lens/Farcaster)—but they either remain DNS-dependent for practical access or rely on centralized relayers/indexers for UX. 
-VoiceBan diverges by 
-(a) making browser entry decentralized and verifiable via IPNS + multi-gateway resolution, 
-(b) storing all social content on-chain (no reliance on pinning for core data), and 
-(c) packaging the access/resilience logic as reusable pallets and libraries that Polkadot teams can drop into their stacks.
+Social-focused projects such as **Subsocial** concentrate primarily on the application layer, providing social primitives 
+and creator tools on Substrate. While **Subsocial** demonstrates the viability of blockchain-based social interaction, 
+it continues to rely on conventional frontend hosting models and DNS-based access paths. 
+As a result, availability of the user interface remains vulnerable to the same infrastructural choke points that affect Web2 platforms. 
+VoiceBan differs by explicitly addressing this “last mile” problem: the frontend itself is installable as a PWA and discoverable through IPNS and multiple gateways, 
+ensuring that access to the application is resilient even when DNS or centralized hosting is disrupted.
 
+Identity-centric projects such as **KILT** focus on verifiable credentials and decentralized identity management. 
+While these systems are critical for trust and interoperability, they do not attempt to solve frontend availability, 
+browser access, or social coordination under adversarial network conditions. 
+VoiceBan complements such efforts by treating identity and social interaction as runtime-level primitives while extending 
+decentralization to the access layer itself, enabling identity-backed social systems to remain reachable without relying 
+on centralized web infrastructure.
+
+In related ecosystems, partial solutions exist but remain fragmented. **ENS** and **Handshake** provide decentralized naming, 
+yet practical access to applications using these systems typically still depends on DNS, browser extensions, or centralized gateways.
+
+A particularly relevant comparison is **Frequency**, which positions itself as a decentralized social networking protocol 
+optimized for high-throughput message publication and public data distribution. Frequency focuses on efficient, 
+scalable social data replication and provides strong guarantees around message ordering and availability at the protocol level. 
+However, **Frequency** explicitly assumes that clients can already reach the network and does not address how browser-based users 
+discover endpoints or access frontends in the presence of DNS censorship or infrastructure outages. 
+VoiceBan can be seen as complementary rather than competing in this regard: while **Frequency** optimizes the in-network 
+dissemination of social data, VoiceBan focuses on the pre-network and edge-access problem, i.e., how users reach decentralized systems in the first place. 
+By solving browser entry, frontend resilience, and validator rendezvous, VoiceBan targets a layer that remains largely unaddressed 
+even by advanced social protocols. Furthermore, VoiceBan also differs in architectural emphasis, as it treats identity, 
+social interaction, and governance as chain-native primitives, while packaging its access-resilience logic as reusable 
+pallets and client libraries that other Substrate projects can adopt independently of VoiceBan’s social application. 
+In contrast, DSNP remains deliberately agnostic about frontend delivery, browser access, and infrastructure-level availability.
+
+VoiceBan’s differentiation lies not in replacing existing social or identity systems, but in closing the gap between 
+decentralized backends and real-world browser access. By combining deterministic IPNS-based discovery, installable PWAs, 
+and Substrate-native social primitives, VoiceBan delivers an end-to-end model where decentralization extends from consensus
+and storage all the way to the user’s first network request. 
+This focus on resilient access and last-mile decentralization is what sets VoiceBan apart within the Polkadot ecosystem and beyond.
 ## Team :busts_in_silhouette:
 
 ### Team members
