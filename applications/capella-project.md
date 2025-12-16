@@ -105,6 +105,18 @@ Noah Oliver Rigonan is a Senior Software Engineer and blockchain developer at Xo
 
 Arneil Paul Polican is a software engineer and DevOps specialist, bringing solid experience in backend development, infrastructure management, and deployment automation. With a background across multiple IT and engineering roles, he supports the reliability and scalability of Xode’s systems while also contributing to media and technical coverage for major Web3 events such as the Polkadot Sub0 Reset conference. Combining DevOps discipline with hands-on software engineering, he helps ensure smooth operations and strong technical execution across the Xode ecosystem.
 
+### Team's Experience
+
+Our team has deep, hands-on experience building and maintaining open-source software across Web3, blockchain, DeFi, and enterprise systems. We specialize in Rust-based, Substrate blockchain development, delivering L1 and parachain infrastructure with native on-chain governance, cross-chain interoperability, and production-ready tooling. Our work spans full-stack platforms, DeFi protocols, wallets, DEX logic, bridges, and multisig systems, as well as enterprise-grade POS and CRM solutions that integrate real-world business workflows with Web3 technologies. Collectively, we are proficient in Rust, TypeScript, C#, Solidity, and decentralized architectures, with a proven track record of shipping real-world products, protocol-level code, and scalable integrations across both Web2 and Web3 ecosystems.
+
+### Team Code Repos
+
+- [https://github.com/Xode-DAO](https://github.com/Xode-DAO)
+- [https://github.com/Blockspace-Corporation](https://github.com/Blockspace-Corporation)
+- [https://github.com/Liteclerk-Corporation](https://github.com/Liteclerk-Corporation)
+- [https://github.com/Humidefi](https://github.com/Humidefi)
+- [https://github.com/Miming-DAO](https://github.com/Miming-DAO)
+
 ### Development Status
 
 Capella is currently being engineered using the existing Xode Blockchain codebase, allowing the team to rapidly spin up a dedicated Capella node while sharing the same runtime framework and core pallets for faster deployment. The foundational blockchain logic is already stable, given Xode’s production-grade architecture, enabling Capella to focus primarily on configuration, customization, and feature extensions. The major remaining work involves establishing the national infrastructure footprint across the Philippines, preparing for parachain slot acquisition, and securing Polkadot coretime to operate Capella as a fully integrated, scalable public-sector blockchain.
@@ -118,7 +130,7 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
 - **Total Costs:** 20,000 USDC or DOT Equivalent
 - **DOT %:** 40% (Locked and Polkadot Ecosystem Parachain Fees)
 
-#### Milestone 1: Marketing and On-line Materials
+#### Milestone 1: Marketing and On-line Materials (Capella Website / Documentation)
 
 - **Estimated duration:** 1 Month
 - **FTE:**  2 FTE
@@ -126,11 +138,15 @@ Capella is currently being engineered using the existing Xode Blockchain codebas
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1.1 | Capella Brand | Define Capella’s core identity, finalize messaging and tone, create the full visual identity, logo, and produce a brand guideline. |
-| 1.2 | Core Marketing Asset | Develop the pitch deck, one-pager, social media kit, and short explainer scripts to clearly present Capella’s value and technology. |
-| 1.3 | Website | Build Capella’s online presence by creating the site structure, designing the UX/UI, developing all pages, writing content, testing, and launching with proper analytics and SEO setup.|
-| 1.4 | Public Document | Produce Capella’s whitepaper, technical and user guides, developer documentation, and publish them on a dedicated documentation site. |
-| 1.5 | Partner & Government Outreach Materials | Create briefing decks, LGU kits, integration packages, case studies, and demo walkthroughs for professional stakeholder engagements. |
+| 0a. | License | Apache-2.0 |
+| 0b. | Documentation | We will provide a document that defines Capella’s brand, messaging, and visual identity, provides key marketing and technical materials, and supports partner and government outreach, integration, and adoption. |
+| 0c. | Testing and Testing Guide | Our testing covers functionality, usability, security, and performance by validating core features, ensuring responsive and consistent UI across devices, assessing accessibility and user experience, measuring load and performance under varying conditions, checking for common security vulnerabilities, and reviewing SEO and content accuracy. |
+| 0d. | Docker | ------------- |
+| 1.a | Document - Capella Brand | Define Capella’s core identity, finalize messaging and tone, create the full visual identity, logo, and produce a brand guideline. |
+| 1.b | Document - Core Marketing Asset | Develop the pitch deck, one-pager, social media kit, and short explainer scripts to clearly present Capella’s value and technology. |
+| 1.c | Document - Public Document | Produce Capella’s whitepaper, technical and user guides, developer documentation, and publish them on a dedicated documentation site. |
+| 1.d | Document - Partner & Government Outreach Materials | Create briefing decks, LGU kits, integration packages, case studies, and demo walkthroughs for professional stakeholder engagements. |
+| 2.a | Website | Build Capella’s online presence by creating the site structure, designing the UX/UI, developing all pages, writing content, testing, and launching with proper analytics and SEO setup.|
 
 #### Milestone 2: Capella Substrate Node (Testnet and Mainnet)
 
