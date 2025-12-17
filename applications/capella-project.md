@@ -187,9 +187,12 @@ Our team has deep, hands-on experience building and maintaining open-source soft
 
 ### Future Plans
 
-#### CBDC and Stable Coins in Capella for Remittance application
-With Capella fully deployed and actively used by citizens, the platform becomes a strong foundation for expanding into major national-scale use cases. One of the most strategic opportunities is the introduction of CBDC-backed digital assets, enabling financial institutions to leverage Capella as a secure, transparent settlement layer. This also opens the door for on-chain remittances from overseas Filipino workers, where a central-bank-issued stablecoin can move through Capella with lower costs, faster settlement, and full auditability. These advancements become possible precisely because Capella is a community-based, fully permissionless blockchain, allowing both public and private sectors, including banks, fintechs, and regulators to build seamlessly on top of a shared national infrastructure.
+#### CBDC and Stable Coins (e.g., [PHPC](https://www.coins.ph/en-ph/blog/coins-ph-to-launch-nationwide-stablecoin-education-drive-after-successful-polkadot-asset-hub-integration)) in Capella for Remittance application
+With Capella fully deployed and actively used by citizens, the platform becomes a strong foundation for expanding into major national-scale use cases that drive financial inclusion and innovation. One of the most strategic opportunities is the introduction of CBDC-backed digital assets, enabling financial institutions to leverage Capella as a secure, transparent settlement layer that supports efficient and reliable transactions across both public and private sectors.
 
+A key example of this national evolution is the issuance of the [PHPC stablecoin by Coins.ph in Assethub](https://www.coins.ph/en-ph/blog/coins-ph-to-launch-nationwide-stablecoin-education-drive-after-successful-polkadot-asset-hub-integration), pegged 1:1 to the Philippine Peso and operating under the approval and regulatory oversight of the Bangko Sentral ng Pilipinas. PHPC is designed to provide a stable digital currency that can support domestic payments, cross-border transfers, and remittances with enhanced speed, reduced costs, and full auditability, characteristics that align closely with Capella’s permissionless, community-based infrastructure. 
+
+These developments also open the door for on-chain remittances from Overseas Filipino Workers, where a central-bank-issued stablecoin or similarly regulated digital asset can move through Capella with lower costs, faster settlement, and full transparency. Because Capella is a fully permissionless blockchain, it allows both the public and private sectors — including banks, fintechs, and regulators to build seamlessly on top of a shared national infrastructure, accelerating adoption and utility for users throughout the Philippines.
 
 
 
