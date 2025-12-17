@@ -125,25 +125,25 @@ Our team has deep, hands-on experience building and maintaining open-source soft
 
 ### Overview
 
-- **Total Estimated Duration:** 5 Months
-- **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 20,000 USDC or DOT Equivalent
+- **Total Estimated Duration:** 4 Months
+- **Full-Time Equivalent (FTE):**  4 FTE
+- **Total Costs:** 7,000 USDC plus 5,000 DOTs
 - **DOT %:** 40% (Locked and Polkadot Ecosystem Parachain Fees)
 
-#### Milestone 1: Marketing and On-line Materials (Capella Website / Documentation)
+#### Milestone 1: Capella Website and On-line Documentation
 
 - **Estimated duration:** 1 Month
 - **FTE:**  2 FTE
-- **Costs:** 2,000 USDC or DOT Equivalent
+- **Costs:** 2,000 USDC
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache-2.0 |
 | 0b. | Documentation | We will provide a document that defines Capella’s brand, messaging, and visual identity, provides key marketing and technical materials, and supports partner and government outreach, integration, and adoption. |
 | 0c. | Testing and Testing Guide | Our testing covers functionality, usability, security, and performance by validating core features, ensuring responsive and consistent UI across devices, assessing accessibility and user experience, measuring load and performance under varying conditions, checking for common security vulnerabilities, and reviewing SEO and content accuracy. |
-| 0d. | Docker | ------------- |
+| 0d. | Docker | We will provide a [Dockerfile(s)](https://hub.docker.com/r/blockspacecorp/template-ui-angular) that can be used to test all the functionality of the [app](https://github.com/Blockspace-Corporation/template-ui-angular). |
 | 1a. | Document - Capella Brand | Define Capella’s core identity, finalize messaging and tone, create the full visual identity, logo, and produce a brand guideline. |
-| 1b. | Document - Core Marketing Asset | Develop the pitch deck, one-pager, social media kit, and short explainer scripts to clearly present Capella’s value and technology. |
+| 1b. | Document - Core Branding Assets | Develop the pitch deck, one-pager, social media kit, and short explainer scripts to clearly present Capella’s value and technology. |
 | 1c. | Document - Public Document | Produce Capella’s whitepaper, technical and user guides, developer documentation, and publish them on a dedicated documentation site. |
 | 1d. | Document - Partner & Government Outreach Materials | Create briefing decks, LGU kits, integration packages, case studies, and demo walkthroughs for professional stakeholder engagements. |
 | 2a. | Website | Build Capella’s online presence by creating the site structure, designing the UX/UI, developing all pages, writing content, testing, and launching with proper analytics and SEO setup.|
@@ -152,35 +152,30 @@ Our team has deep, hands-on experience building and maintaining open-source soft
 
 - **Estimated duration:** 2 months
 - **FTE:**  4 FTE
-- **Costs:** 10,000 USDC or DOT Equivalent for Parachain and Coretime Fees
+- **Costs:** 3,000 USDC and 5,000 DOT for Parachain and Coretime Fees
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | ------------- |
-| 0b. | Documentation | ------------- |
-| 0c. | Testing and Testing Guide | ------------- |
-| 0d. | Docker | ------------- |
-| 0e. | Article | ------------- |
-| 2.1 | Code Integration | Integrate the Capella node into the Xode codebase, configure the runtime, update binaries and CLI tools, and validate functionality on a local dev chain. |
-| 2.2 | Runtime & Pallet Setup | Configure base and Capella-specific pallets, verify block production and extrinsic flow, and generate initial chain spec files. |
-| 2.3 | Binary Release Preparation | Build optimized binaries for Linux and Windows, implement versioning and changelog, test execution, and publish through GitHub or internal repositories. |
-| 2.4 | Dockerization | Create a Dockerfile for Capella, publish images to a registry, test performance and networking, and provide docker-compose templates for deployment. |
-| 2.5 | Server Deployment | Deploy collators and boot nodes, configure systemd for auto-restart, implement logging and monitoring, and validate synchronization and block finality. |
-| 2.6 | Parachain | Prepare parachain runtimes and relay-chain settings, generate genesis state and WASM, register Capella as a parachain, run testnet collators, and validate HRMP channels, messaging, and block finality. |
-| 2.7 | Public Testnet Launch | Deploy testnet nodes and collators, publish endpoints, invite developers to test, and monitor network stability and performance. |
-| 2.8 | Security Review & Optimization | Audit runtime and node behavior, optimize block weights and fees, fix testnet issues, and complete compatibility testing with wallets, explorers, and tools. |
-| 2.9 | Mainnet Launch | Finalize mainnet specs, publish binaries and Docker images, deploy nodes, announce endpoints and documentation, and start mainnet block production and monitoring. |
+| 0a. | License | Apache-2.0 |
+| 0b. | Documentation | We will provide a dedicated wiki page on the Capella website containing comprehensive blockchain documentation and clear guides for developers on how to interact with the network and build applications on it. |
+| 0c. | Testing and Testing Guide | In addition to unit tests for our customized pallets, we conduct comprehensive [parachain functional testing](https://docs.google.com/spreadsheets/d/1XuDJtOtmlSJ0JSMGgiJqmz4VS7Pf3KPg-7r-bOfCJtI/edit?usp=sharing) using our own use cases to validate and exercise all core parachain functionalities end to end. |
+| 0d. | Docker | We will provide Dockerfile(s) that can be used to test all node functionalities; however, containers will not be used in production deployment. All deployments will be performed directly on virtual machines using the [binary release](https://github.com/Xode-DAO/xode-blockchain/releases/tag/v0.1.0). |
+| 1a. | Coding - Code Integration | Integrate the Capella node into the Xode codebase, configure the runtime, update binaries and CLI tools, and validate functionality on a local dev chain. |
+| 2.2 | Coding - Runtime & Pallet Setup | Configure base and Capella-specific pallets, verify block production and extrinsic flow, and generate initial chain spec files. |
+| 2.3 | Coding - Binary Release Preparation | Build optimized binaries for Linux and Windows, implement versioning and changelog, test execution, and publish through GitHub or internal repositories. |
+| 2.4 | DEVOPS - Dockerization | Create a Dockerfile for Capella, publish images to a registry, test performance and networking, and provide docker-compose templates for deployment. |
+| 2.5 | DEVOPS - Server Deployment | Deploy collators and boot nodes, configure systemd for auto-restart, implement logging and monitoring, and validate synchronization and block finality. |
+| 2.6 | DEVOPS - Parachain | Prepare parachain runtimes and relay-chain settings, generate genesis state and WASM, register Capella as a parachain, run testnet collators, and validate HRMP channels, messaging, and block finality. |
 
+#### Milestone 3: LGU Blockchain POC (Purchase Request Recording dApp)
 
-#### Milestone 3: Users, Governance & Collator Nodes Expansion 
-
-- **Estimated duration:** 2 month
-- **FTE:**  3 FTE
-- **Costs:** 8,000 USDC or DOT Equivalent
+- **Estimated duration:** 1 month
+- **FTE:**  2 FTE
+- **Costs:** 2,000 USDC
   
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | ------------- |
+| 0a. | License | Apache-2.0 |
 | 0b. | Documentation | ------------- |
 | 0c. | Testing and Testing Guide | ------------- |
 | 0d. | Docker | ------------- |
