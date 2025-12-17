@@ -128,7 +128,7 @@ Our team has deep, hands-on experience building and maintaining open-source soft
 - **Total Estimated Duration:** 4 Months
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** 7,000 USDC plus 5,000 DOTs
-- **DOT %:** 40% (Locked and Polkadot Ecosystem Parachain Fees)
+- **DOT %:** > 40% (Locked and Polkadot Ecosystem Parachain Fees)
 
 #### Milestone 1: Capella Website and On-line Documentation
 
@@ -161,13 +161,13 @@ Our team has deep, hands-on experience building and maintaining open-source soft
 | 0c. | Testing and Testing Guide | In addition to unit tests for our customized pallets, we conduct comprehensive [parachain functional testing](https://docs.google.com/spreadsheets/d/1XuDJtOtmlSJ0JSMGgiJqmz4VS7Pf3KPg-7r-bOfCJtI/edit?usp=sharing) using our own use cases to validate and exercise all core parachain functionalities end to end. |
 | 0d. | Docker | We will provide Dockerfile(s) that can be used to test all node functionalities; however, containers will not be used in production deployment. All deployments will be performed directly on virtual machines using the [binary release](https://github.com/Xode-DAO/xode-blockchain/releases/tag/v0.1.0). |
 | 1a. | Coding - Code Integration | Integrate the Capella node into the Xode codebase, configure the runtime, update binaries and CLI tools, and validate functionality on a local dev chain. |
-| 2.2 | Coding - Runtime & Pallet Setup | Configure base and Capella-specific pallets, verify block production and extrinsic flow, and generate initial chain spec files. |
-| 2.3 | Coding - Binary Release Preparation | Build optimized binaries for Linux and Windows, implement versioning and changelog, test execution, and publish through GitHub or internal repositories. |
-| 2.4 | DEVOPS - Dockerization | Create a Dockerfile for Capella, publish images to a registry, test performance and networking, and provide docker-compose templates for deployment. |
-| 2.5 | DEVOPS - Server Deployment | Deploy collators and boot nodes, configure systemd for auto-restart, implement logging and monitoring, and validate synchronization and block finality. |
-| 2.6 | DEVOPS - Parachain | Prepare parachain runtimes and relay-chain settings, generate genesis state and WASM, register Capella as a parachain, run testnet collators, and validate HRMP channels, messaging, and block finality. |
+| 1b. | Coding - Runtime & Pallet Setup | Configure base and Capella-specific pallets, verify block production and extrinsic flow, and generate initial chain spec files. |
+| 1c. | Coding - Binary Release Preparation | Build optimized binaries for Linux and Windows, implement versioning and changelog, test execution, and publish through GitHub or internal repositories. |
+| 2a. | DEVOPS - Dockerization | Create a Dockerfile for Capella, publish images to a registry, test performance and networking, and provide docker-compose templates for deployment. |
+| 2b. | DEVOPS - Server Deployment | Deploy collators and boot nodes, configure systemd for auto-restart, implement logging and monitoring, and validate synchronization and block finality. |
+| 2c. | DEVOPS - Parachain | Prepare parachain runtimes and relay-chain settings, generate genesis state and WASM, register Capella as a parachain, run testnet collators, and validate HRMP channels, messaging, and block finality. |
 
-#### Milestone 3: LGU Blockchain POC (Purchase Request Recording dApp)
+#### Milestone 3: dApp POC ([LGU Budget Blockchain dApp](https://www.figma.com/proto/5qXZC4OfhrryWweVX3UiYb/Rackson?node-id=29-91&p=f&t=JqaTqRIsAQu5CN2j-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=29%3A91&show-proto-sidebar=1&fbclid=IwY2xjawOvAitleHRuA2FlbQIxMABicmlkETFLUXBRb0YxTUEwbVlKbzlIc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlcj1r-dPMd8mc_myhlZZtvSmOlBESwbLMeZ2YuCJ9Wh4i7QD_j-P3WP_kLB_aem_fzuzdlMTX1yAe_tjB67YnA))
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 FTE
@@ -176,15 +176,14 @@ Our team has deep, hands-on experience building and maintaining open-source soft
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache-2.0 |
-| 0b. | Documentation | ------------- |
-| 0c. | Testing and Testing Guide | ------------- |
-| 0d. | Docker | ------------- |
-| 0e. | Article | ------------- |
-| 3.1 | Governance & Policy Setup | Establish Capella’s governance framework by setting up key wallets, defining voting, staking, and collator policies, and publishing all rules for transparency. |
-| 3.2 | User & Ecosystem Engagement | Onboard LGUs and partners, provide documentation and support, educate stakeholders on governance and staking, and monitor user participation. |
-| 3.3 | External Partnerships & Advocacy | Join the Philippine Blockchain Council and TWGs, participate in policy discussions, advocate Capella’s use-cases, and align governance and staking policies with national standards. |
-| 3.4 | Collator Node Expansion | Recruit and onboard collator operators, deploy nodes with required staking, verify performance and synchronization, and update bootnode lists while monitoring network health. |
-| 3.5 | Monitoring & Iteration | Track staking, voting, and collator participation, gather feedback, adjust policies and incentives, and publish regular governance and staking reports. |
+| 0b. | Documentation | We will provide comprehensive documentation and an FAQ section within the LGU Budget Blockchain dApp to guide users and address common questions. |
+| 0c. | Testing and Testing Guide | Our testing covers functionality, usability, security, and performance by validating core features, ensuring responsive and consistent UI across devices, assessing accessibility and user experience, measuring load and performance under varying conditions, checking for common security vulnerabilities, and reviewing SEO and content accuracy. |
+| 0d. | Docker | We will provide Dockerfile(s) that can be used to test all node functionalities; however, containers will not be used in production deployment. All deployments will be performed directly on virtual machines using the [binary release](https://github.com/Xode-DAO/xode-blockchain/releases/tag/v0.1.0). |
+| 1a. | Coding - API | Configure an API that communicates directly with the Capella parachain to submit transactions, query on-chain data, and listen to events, which will be consumed by the frontend UI. |
+| 1b. | Coding - Smart Contract | Implement custom pallets or smart contracts to manage record creation, updates, versioning, immutability, and event emission for auditabilit. |
+| 1c. | Coding - UI | Build a user interface that consumes the API to submit records, view histories, verify authenticity, and manage access, integrating wallet-based authentication and signing. |
+| 1d. | Coding - Wallet Address Integration | Enable wallet integration for authentication and transaction signing, with optional decentralized identity (DID) or KYC integrations where required. |
+| 1e. | Implementation -  | Deploy the dApp, monitor performance and usage, gather feedback, and continuously improve features, documentation, and developer tooling. |
 
 ### Future Plans
 
