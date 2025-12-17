@@ -183,7 +183,7 @@ Our team has deep, hands-on experience building and maintaining open-source soft
 | 1b. | Coding - Smart Contract | Implement custom pallets or smart contracts to manage record creation, updates, versioning, immutability, and event emission for auditabilit. |
 | 1c. | Coding - UI | Build a user interface that consumes the API to submit records, view histories, verify authenticity, and manage access, integrating wallet-based authentication and signing. |
 | 1d. | Coding - Wallet Address Integration | Enable wallet integration for authentication and transaction signing, with optional decentralized identity (DID) or KYC integrations where required. |
-| 1e. | Implementation -  | Deploy the dApp, monitor performance and usage, gather feedback, and continuously improve features, documentation, and developer tooling. |
+| 1e. | Implementation | Deploy the dApp, monitor performance and usage, gather feedback, and continuously improve features, documentation, and developer tooling. |
 
 ### Future Plans
 
