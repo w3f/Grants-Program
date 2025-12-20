@@ -315,4 +315,7 @@ The team intends for VoiceBan to become a long-lived, decentralized social coord
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website.
+
 **Figma Designs** https://www.figma.com/proto/iRqabzofEJBjk1jDcu878I/Web-App-V2--Web-View-?node-id=473-17460&t=coF44i9Qg5ldgnTH-1
+
+**VoiceBan MVP** https://voiceban.com 
