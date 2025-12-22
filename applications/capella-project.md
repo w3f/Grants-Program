@@ -204,6 +204,11 @@ A key example of this national evolution is the issuance of the [PHPC stablecoin
 
 These developments also open the door for on-chain remittances from Overseas Filipino Workers, where a central-bank-issued stablecoin or similarly regulated digital asset can move through Capella with lower costs, faster settlement, and full transparency. Because Capella is a fully permissionless blockchain, it allows both the public and private sectors — including banks, fintechs, and regulators to build seamlessly on top of a shared national infrastructure, accelerating adoption and utility for users throughout the Philippines.
 
+### Additional Information
+
+**How did you hear about the Grants Program?** We learned about the Web3 Foundation grant program through the Polkadot Blockchain Academy (PBA), where two members of our core team are PBA alumni, giving us firsthand exposure to the Polkadot ecosystem, its technical standards, and the Web3 Foundation’s long-term vision.
+
+**Previous grants:** Our prior engagement with the Polkadot ecosystem includes receiving grant support following a Polkadot U.S. Edition Hackathon, where our team placed [3rd in the DeFi category](https://devpost.com/software/humidefi-b70ito), demonstrating our ability to deliver competitive, production-ready solutions aligned with the Polkadot and Web3 Foundation ecosystem.
 
 
 
