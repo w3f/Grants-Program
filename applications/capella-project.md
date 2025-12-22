@@ -72,6 +72,16 @@ Finally, Capella’s long-term roadmap, encompassing public-sector data interope
 
 In essence, Capella amplifies Polkadot by bringing real-world institutional adoption, a diverse user base, continuous valuable data, and a strong governance-driven narrative,cementing Polkadot as the premier platform for decentralized public infrastructure.
 
+#### Similar Project(s)
+
+While [Qadena](https://qadenahub.com/) positions itself as a Layer-1 built with Cosmos SDK and CometBFT, it remains an early implementation of the Cosmos stack and has yet to consistently demonstrate stable block production and hardened transaction security at scale comparable to more mature appchains.
+
+In contrast, Capella, built on the Xode codebase and aligned with the Substrate/Polkadot architecture, inherits battle-tested consensus, shared security principles, and proven finality mechanisms already validated across multiple real-world Polkadot and Substrate networks. This provides significantly higher confidence in security, reliability, and long-term operational stability, which are critical requirements for a government-grade blockchain.
+
+With Web3 Foundation support, Capella becomes not only the right solution for securing and future-proofing a national government chain, but also a more sustainable platform for developers. Its native interoperability within the Polkadot ecosystem enables seamless cross-chain integration, shared liquidity, and composability—ensuring that builders can innovate without fragmentation or vendor lock-in.
+
+Supporting Capella directly advances the Web3 Foundation’s mission by enabling a secure, interoperable, and scalable next-generation chain that serves public infrastructure while fostering a thriving, developer-driven ecosystem.
+
 ### Team
 
 ### Contact
@@ -183,7 +193,7 @@ Our team has deep, hands-on experience building and maintaining open-source soft
 | 1b. | Coding - Smart Contract | Implement custom pallets or smart contracts to manage record creation, updates, versioning, immutability, and event emission for auditabilit. |
 | 1c. | Coding - UI | Build a user interface that consumes the API to submit records, view histories, verify authenticity, and manage access, integrating wallet-based authentication and signing. |
 | 1d. | Coding - Wallet Address Integration | Enable wallet integration for authentication and transaction signing, with optional decentralized identity (DID) or KYC integrations where required. |
-| 1e. | Implementation | Deploy the dApp, monitor performance and usage, gather feedback, and continuously improve features, documentation, and developer tooling. |
+| 2a. | Implementation | Deploy the dApp, monitor performance and usage, gather feedback, and continuously improve features, documentation, and developer tooling. |
 
 ### Future Plans
 
