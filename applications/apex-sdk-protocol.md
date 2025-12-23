@@ -4,7 +4,7 @@
 - **Payment Details:**
   - **DOT**: 5GhEERN2GTJ1cVRrXJfmnW62VDURjXdXQU6o5EahU1hR8va3
   - **Payment**: 5GhEERN2GTJ1cVRrXJfmnW62VDURjXdXQU6o5EahU1hR8va3 (USDC)
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
+- **Level:** 2
 
 ## Project Overview
 
