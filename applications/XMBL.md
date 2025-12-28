@@ -3,7 +3,7 @@
 - **Team Name:** XMBL
 - **Payment Details:**
   - **DOT**: 5G78vxs5ZRjmu9zYJVpGz5MHBe2R61wPtVMgUnSXvQj4U2wr
-  - **Payment**: 0xDA5D02846aC251afF6E648eA53139234858c3639 (USDC)
+  - **Payment**: 5G78vxs5ZRjmu9zYJVpGz5MHBe2R61wPtVMgUnSXvQj4U2wr (USDC on AssetHub)
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 > [!IMPORTANT]
