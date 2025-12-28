@@ -15,10 +15,10 @@
 
 - **Tagline:** A decentralized media content management and distribution platform built on Substrate, enabling creators to monetize content with cross-chain interoperability through Polkadot.
 
-- **Description:** XMBL is ready to implement a Substrate-based blockchain solution designed to revolutionize content creation, distribution, and monetization in the Web3 ecosystem. The platform provides a decentralized infrastructure for media content management, enabling creators to maintain ownership, control distribution, and receive fair compensation through transparent, on-chain mechanisms. XMBL leverages Substrate's modular architecture to create specialized pallets for content verification, licensing, revenue sharing, and cross-chain content portability.
+- **Description:** XMBL is a Substrate-based blockchain solution designed to revolutionize content creation, distribution, and monetization in the Web3 ecosystem. The platform provides a decentralized infrastructure for media content management, enabling creators to maintain ownership, control distribution, and receive fair compensation through transparent, on-chain mechanisms. XMBL leverages Substrate's modular architecture to create specialized pallets for content verification, licensing, revenue sharing, and cross-chain content portability.
 
 - **Substrate/Polkadot/Kusama Integration:** 
-  - **Substrate Framework:** XMBL will be geared to allow building products entirely on Substrate, utilizing custom pallets for content management, creator economics, and licensing. The modular design allows for easy upgrades and customization.
+  - **Substrate Framework:** XMBL will be built entirely on Substrate, utilizing custom pallets for content management, creator economics, and licensing. The modular design allows for easy upgrades and customization.
   - **Polkadot Parachain:** XMBL will operate as a specialized parachain on Polkadot, benefiting from shared security, cross-chain messaging (XCM), and interoperability with other parachains for content distribution and payment processing.
   - **Kusama Network:** Initial deployment and testing will occur on Kusama, allowing for rapid iteration of governance models, economic parameters, and feature testing in a real-world environment before mainnet launch.
   - **Cross-Chain Integration:** XMBL will utilize XCM to enable content creators to distribute across multiple parachains, accept payments in various assets, and interact with DeFi protocols for advanced monetization strategies.
@@ -159,7 +159,7 @@ Specific projects and contributions will be detailed during the KYC/KYB process.
 
 ### Team Code Repos
 
-- [To be provided - XMBL Polkadot repository will be created upon grant approval]
+- XMBL Polkadot repository will be created upon grant approval (https://github.com/xmbl-org/xmbl-polkadot)
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
