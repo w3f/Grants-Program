@@ -13,19 +13,23 @@
 
 Agroasys is a Web3-powered settlement and Ricardian contract layer for agricultural trade Infrastructure across Africa.
 
-Agroasys is a decentralized agricultural trade settlement platform designed to make cross-border agri-trade legally enforceable, transparent, and tamper-evident. It integrates Ricardian Contracts,  cryptographically signed, human-readable agreements with a Substrate-based anchoring layer that stores contract proofs, settlement states, and signatures on-chain. Off-chain logic manages the legal, operational, and UX layers, while on-chain proofs ensure integrity, auditability, and dispute resolution.
+Agroasys is a decentralized, non-custodial agricultural trade settlement platform designed to make cross-border agri-trade legally enforceable, transparent, and frictionless. It integrates Ricardian Contracts—cryptographically signed, human-readable agreements—with a Polkadot AssetHub Smart Contract layer that locks funds, stores contract hashes, and executes conditional settlements via Oracle triggers.
 
-The system targets exporters, aggregators, and buyers who require trustworthy trade contracts that can bridge real-world legal enforceability and blockchain transparency. Agroasys achieves this by combining cryptographic settlement proofs, data models aligned with trade laws, and developer-accessible APIs for integrating contract signing and verification into existing enterprise workflows.
+The system targets exporters, aggregators, and buyers who require trustworthy trade contracts that bridge real-world legal enforceability and blockchain transparency. Agroasys achieves this by combining PolkaVM (Solidity) Smart Contracts, Non-Custodial MPC Wallets (via Web3Auth) for invisible user onboarding, and Oracle Services that verify logistics data to automate fund release.
 
 ### Project Details
 
-A Web3-enabled digital agricultural trade infrastructure that replaces opaque, high-friction cross-border workflows with cryptographically verifiable Ricardian Contracts, deterministic settlement rails, and auditable supply-chain data flows. The system leverages Substrate-based primitives to guarantee contract integrity, minimize counterparty risk, and provide programmable settlement logic for inter-continental agri-trade.
+A Web3-enabled digital agricultural trade infrastructure that replaces opaque, high-friction cross-border workflows with cryptographically verifiable Ricardian Contracts and programmable settlement logic.
+
+The system moves away from centralized custody, utilizing non-custodial wallets where users retain full control of their keys (via Multi-Party Computation), while the platform acts only as an Oracle providing logistics data to the blockchain.
 
 #### UI Mockups & UX Components
 The platform will include:
 
-- **Contract Creation** UI: Form-driven builder for parameterizing Ricardian Contracts (goods, Incoterms, delivery windows, penalties, quantities).
-- **Settlement Dashboard**: Real-time view of on-chain settlement status, proofs, and cross-border transactions.
+- **Contract Creation UI**: Form-driven builder for parameterizing Ricardian Contracts (goods, Incoterms, delivery windows, penalties, quantities).
+- **Invisible Wallet Interface**: A seamless dashboard where enterprise users interact with Web3 via email login (MPC), without managing seed phrases directly.
+
+Settlement Dashboard: Real-time view of Smart Contract states (Locked, In-Transit, Released) and Oracle triggers.
 
 ![Screenshot 2025-11-14 at 18 31 56](https://github.com/user-attachments/assets/65bb8713-9764-4563-92b2-c2603e5eb734)
 
@@ -35,91 +39,90 @@ The platform will include:
 
 ![Screenshot 2025-11-14 at 18 41 02](https://github.com/user-attachments/assets/ae9d787c-eafb-4b71-8fe0-268282020112)
 
-We have prepared a complete prototype of the Agroasys Web3 platform. It includes all essential workflows and interface screens that reflect the final production architecture. As Lovable requires login for preview access, we will provide the private link and temporary credentials directly to the reviewers. This prototype also includes the conceptual layout of our initial PoC for comparison, showing clear UX and workflow improvements.
-
 #### Data models / API specifications of the core functionality
-The core platform uses a modular enterprise architecture with custodial wallet management.
+The core platform uses a modular enterprise architecture with non-custodial wallet management.
 
 **Core Data Models:**
-- **Contract Schema**: Off-chain Ricardian contracts with on-chain hash commitments via `system.remark`
-- **User Identity**: KYC-verified enterprise profiles with custodial wallet mappings
-- **Settlement Flow**: Multi-party approval workflows with USDC settlement tracking
-- **Audit Trail**: Comprehensive event logging for legal verification
+- **Contract Schema**: Off-chain Ricardian contracts (PDFs) with SHA-256 hashes stored in Smart Contract state.
+- **User Identity**: KYB-verified enterprise profiles mapped to non-custodial Polkadot addresses.
+- **Escrow Logic**: Smart Contract states managing the "Buyer-Pays-All" fee model (Product Price + Logistics Fees).
+- **Oracle Events**: Logistics status updates (Shipped/Arrived) that trigger on-chain state changes.
 
 **API Specifications:**
-- **Settlement API**: Initiate/confirm USDC-based settlement flows
-- **Identity API**: KYC/KYB verification and custodial wallet management
-- **Contract API**: Ricardian contract generation, signing coordination, and anchoring
-- **Verification API**: On-chain proof verification and audit evidence export
+- **Settlement API**: Interfaces between the frontend and the Smart Contract for creating trades and locking funds.
+- **Ricardian API**: Generates legal PDFs, calculates hashes, and coordinates signing.
+- **Oracle API**: Relays verified logistics data (DHL/Maersk) to the Smart Contract to trigger fund release.
+- **Indexing API**: Syncs on-chain Smart Contract events with the off-chain Postgres database for reconciliation.
 
 ### Technology Stack
 
-**Blockchain Layer**: Polkadot AssetHub primitives
-- `system.remark` for contract hash anchoring and metadata
-- `Assets` pallet for USDC transfers and settlement
-- No custom runtime logic required
+**Blockchain Layer**: Polkadot AssetHub (PolkaVM)
+- **PolkaVM (Pallet-Revive)**: For deploying Solidity-based Escrow Smart Contracts.
+- **Assets Pallet**: For native USDC storage and transfers.
+- **Asset Conversion Pallet**: For automated gas fee swapping (paying fees in USDC).
 
-**Custodial Wallet System**:
-- Platform-managed keys secured by KMS/HSM
-- Multi-party transaction signing coordination
-- Enterprise-grade security with fraud detection
+**Wallet & Security System**:
+- **Non-Custodial MPC**: Web3Auth integration for seedless, self-custodial key management.
+- **Client-Side Signing**: All transactions are signed locally on the user's device; the platform never sees private keys.
+- **KYT/AML Engine**: Real-time wallet screening before smart contract interaction.
 
 **Backend Services**:
-- Python/Django for business logic and orchestration
-- Node.js API gateway with GraphQL endpoints
-- Postgres for user profiles and transactional data
-- Encrypted document storage for contracts
-- Redis for real-time notifications and caching
+- **Node.js/NestJS**: API Gateway and Business Logic.
+- **Ricardian Service**: PDF generation and Hashing.
+- **Oracle Service**: Trusted data relay for logistics events.
+- **Postgres**: User profiles and trade metadata.
+- **Redis**: Rate limiting and caching.
 
 **Security & Monitoring**:
 - Fraud detection with rate limiting and anomaly detection
 - Comprehensive monitoring and alerting
 - Immutable audit logs for legal compliance
-#### Core Architecture & Protocol Documentation
-Our architecture connects traditional enterprise procurement with blockchain-based verification using Polkadot AssetHub's existing primitives.
+
+#### Core Architecture & Protocol Documentation;
+Our architecture connects traditional enterprise procurement with blockchain-based verification using Polkadot AssetHub's Smart Contract capabilities.
 
 **Contract Creation & Signing**:
-1. **Contract Generation**: Ricardian Contract Engine transforms trade agreements into legally-sound digital contracts
-2. **Multi-Party Coordination**: Platform coordinates signing between buyers and cooperatives using custodial wallets
-3. **Hash Anchoring**: Contract hashes are anchored on-chain via AssetHub's `system.remark` for immutable verification
-4. **Document Storage**: Full contracts stored in encrypted off-chain storage with legal-grade preservation
+1. **Ricardian Generation**: Engine transforms trade terms into a PDF and generates a SHA-256 hash.
+2. **Client-Side Signing**: User signs the hash using their non-custodial MPC wallet.
+3. **Smart Contract Lock**: The signature and hash are passed to the Escrow Smart Contract on AssetHub, which locks the Buyer's USDC.
 
 **Settlement Flow**:
-1. **Payment Initiation**: Buyer approves settlement through platform interface
-2. **Custodial Signing**: Platform retrieves buyer keys from KMS/HSM and signs USDC transfer
-3. **AssetHub Execution**: USDC transfer executed via AssetHub's `Assets` pallet
-4. **Event Indexing**: Settlement events captured and reconciled with off-chain records
-5. **Commission Processing**: Platform fees automatically calculated and routed to treasury
+1. **Logistics Trigger**: Logistics partners (real-world) update shipment status.
+2. **Oracle Execution**: The Agroasys Oracle Service relays this data to the Smart Contract.
+3. **Automated Release**: The Smart Contract verifies the condition and executes the split payment (100% to Supplier, Fees to Logistics/Treasury).
+4. **Reconciliation**: Indexers catch the on-chain event and update the user dashboard.
+
+![user flow](https://github.com/user-attachments/assets/09441121-1ac0-4ab0-b789-a6b87ad2c9a3)
 
 **Enterprise Integration**:
-- **Event-Driven Architecture**: Asynchronous processing with retry logic and error handling
-- **Fraud Prevention**: Real-time anomaly detection and rate limiting
-- **Legal Compliance**: Audit evidence export for court verification
-- **Monitoring**: Comprehensive health checks and performance metrics
+- **Invisible Onboarding**: Enterprise users login via SSO, with wallets generated in the background.
+- **Legal Enforceability**: The on-chain hash is cryptographically bound to the off-chain PDF (Ricardian).
+- **Compliance**: "Gatekeeper" middleware ensures only KYB-verified and AML-screened wallets can interact with the contracts.
 
 **Data Integrity & Verification**:
-- **On-Chain Proofs**: Cryptographic commitments via `system.remark` provide tamper-resistant verification
-- **Off-Chain Storage**: Sensitive documents encrypted with enterprise-grade security
-- **Reconciliation**: Automated settlement matching between on-chain events and off-chain records
-- **Audit Trails**: Complete transaction history exportable for legal proceedings
+- **On-Chain Proofs**: Cryptographic commitments are stored directly in Smart Contract State, creating an immutable link between the locked funds and the Ricardian Contract hash.
+- **Off-Chain Storage**: Sensitive documents (PDFs) are encrypted with enterprise-grade security and stored off-chain, linked only by their hash.
+- **Reconciliation**: Automated settlement matching between on-chain Smart Contract events and off-chain database records.
+- **Audit Trails**: Complete transaction history exportable for legal proceedings, proving exactly which document hash was active when funds were locked.
 
-![web3 layer](https://github.com/user-attachments/assets/0d18a2b1-7e43-4374-a03e-785d6eaa554d)
+![web3layer](https://github.com/user-attachments/assets/8cc6b3fd-c561-4635-9530-3d6b1d255286)
+
 
 ### Ecosystem Fit
 
-Agroasys leverages Polkadot's production-ready AssetHub to bring tamper-evident, legally enforceable Ricardian contracts and cryptographic settlement proofs to Africa's agricultural value chains. Our platform bridges the gap between traditional enterprise trade and Web3 infrastructure by utilizing Polkadot's existing primitives for maximum security and reliability.
+Agroasys leverages Polkadot's PolkaVM (Revive) on AssetHub to bring programmable, legally enforceable trade settlements to Africa. By using Smart Contracts instead of simple transfers, we enable complex logic (partial releases, fee splitting, dispute timers) without building a custom parachain.
 
 **Why Polkadot & AssetHub:**
-- **Enterprise-Grade Infrastructure**: AssetHub provides the stable, audited foundation required for real-world trade settlements
-- **Production-Ready Primitives**: We use `system.remark` for contract verification and the `Assets` pallet for USDC settlements - no custom runtime risk
-- **Shared Security**: Leverages Polkadot's battle-tested security model without the overhead of maintaining a parachain
-- **Interoperability Ready**: Built on XCM-enabled infrastructure for future cross-chain expansion
+- **PolkaVM**: Allows us to deploy standard Solidity logic for Escrow directly on the system chain.
+- **Native USDC**: AssetHub holds the liquidity required for B2B trade.
+- **Low Fees**: The Asset Conversion pallet allows users to pay gas in USDC, removing the need to hold DOT.
 
 **Addressing Real Market Needs:**
-- **$10B Serviceable Market** in East African agricultural trade corridors
+- **$10B Serviceable Market** in Global agricultural trade corridors
 - **5-12% bank fee reduction** through USDC settlements and streamlined reconciliation
-- **Legal enforceability** via Ricardian contracts with Tanzanian legal framework
-- **Enterprise adoption** through custodial wallets that eliminate crypto complexity
+- **Trustless Settlement**: Removing the need for the platform to hold funds (Custodial Risk).
+- **Legal Clarity**: Ricardian contracts provide the evidence needed for local courts, while Smart Contracts ensure execution.
+- **Frictionless UX**: Non-custodial MPC removes the "Crypto Barrier" for traditional agri-businesses.
 
 **Ecosystem Contributions:**
 - **Open-source reference implementation** for agricultural trade settlement on Polkadot
@@ -138,7 +141,7 @@ Within the Polkadot ecosystem, we enable parachain and dApp developers to integr
 
 These needs were validated through multi-stakeholder interviews, East Africa trade data ([Trademark Africa](https://trademarkafrica.com/tracking-east-africas-top-agricultural-commodities-and-export-destinations-new-report/#:~:text=East%20Africa's%20agricultural%20trade%20is,demands%20require%20urgent%20policy%20interventions.)), and World Bank reports highlighting the inefficiencies of Africa’s agri-export payments and the 30–40% loss in transaction value due to intermediaries ([World Bank: Digitalizing Agricultural Payments in Sub-Saharan Africa](https://www.worldbank.org/en/publication/globalfindex/brief/data-from-the-global-findex-2021-digitalizing-agricultural-payments-in-sub-Saharan-africa)). Field discussions with over 100 traders in East Africa and Middle East alone revealed a consistent lack of trust in payment and contract enforcement systems, confirming strong demand for tamper-proof, digitally signed contracts and blockchain-based settlements.
 
-Within the Polkadot/Substrate ecosystem, few projects currently address agricultural settlement infrastructure. Projects like [Centrifuge](https://centrifuge.io/), [Peaq Network](https://www.peaq.xyz/), and [Pendulum](https://www.pendulumchain.org/) explore real-world asset tokenization and financial bridges, but none focus on agricultural trade contracts, Ricardian logic, or Africa’s agricultural export economy. Agroasys introduces a new use case: sector-specific contract enforcement integrated with blockchain-based settlement verification, designed to comply with East African and Global trade laws.
+Within the Polkadot/Substrate ecosystem, few projects currently address agricultural settlement infrastructure. Projects like [Centrifuge](https://centrifuge.io/), [Peaq Network](https://www.peaq.xyz/), and [Pendulum](https://www.pendulumchain.org/) explore real-world asset tokenization and financial bridges, but none focus on agricultural trade contracts, Ricardian logic, or Africa’s agricultural export economy. Agroasys introduces a new use case: sector-specific contract enforcement integrated with blockchain-based settlement verification, designed to comply with Global trade laws.
 
 While other blockchain ecosystems have generic supply chain solutions, they face scalability, cost, and regional relevance limitations. Agroasys leverages Substrate's modularity and Polkadot's cross-chain capabilities to deliver a specialized, legally compliant settlement layer that connects African agricultural stakeholders directly to the global blockchain economy.
  
@@ -178,7 +181,7 @@ While other blockchain ecosystems have generic supply chain solutions, they face
 
 #### Prior Work :building_construction:
 
-To ensure this grant focuses strictly on Web3 infrastructure, it is important to distinguish between the **Agroasys Marketplace (Web2 Layer)**, which is already built, and the **Settlement & Anchor Layer (Web3 Layer)**, which is the subject of this proposal.
+To ensure this grant focuses strictly on Web3 infrastructure, it is important to distinguish between the **Agroasys Marketplace (Web2 Layer)**, which is already built, and the **Web3 Settlement Layer**, which is the subject of this proposal.
 
 #### 1. Completed: The Agroasys Marketplace (Client Layer)
 We have already designed, developed, and deployed the core marketplace infrastructure. This layer handles the business logic, user interfaces, and trade negotiation workflows.
@@ -188,12 +191,13 @@ We have already designed, developed, and deployed the core marketplace infrastru
 * **Document Generation:** The engine that compiles trade terms into a human-readable PDF (the visual representation of the Ricardian contract) is built.
 
 #### 2. To Be Built: The Web3 Integration (The Grant Scope)
-The grant focuses exclusively on the "Blockchain Integration Layer". The existing Marketplace currently lacks the cryptographic binding and settlement rails.
+The grant focuses exclusively on the "Blockchain Integration Layer".
+
 - **The Grant covers:**
-    - Building the **Signing Service** (converting Web2 actions into cryptographic signatures).
-    - Developing the **Custodial Key Management System** (securely holding keys for enterprise users).
-    - Implementing the **Settlement Engine** (listening to on-chain events and reconciling them with the off-chain DB).
-    - Integration with **AssetHub** (using `system.remark` and `Assets` pallet).
+    - Developing the Smart Contract Escrow (Solidity on PolkaVM).
+    - Integrating Web3Auth for non-custodial MPC wallets.
+    - Building the Oracle Service to trigger smart contracts based on logistics data.
+    - Implementing the Ricardian Hashing Bridge (connecting PDFs to Chain state).
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -203,7 +207,7 @@ The grant focuses exclusively on the "Blockchain Integration Layer". The existin
 - **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs:** 30,000 USD
 
-### Milestone 1 AssetHub-Integrated Ricardian Contract System
+### Milestone 1 Smart Contract Escrow & Ricardian Architecture
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  2
@@ -212,16 +216,16 @@ The grant focuses exclusively on the "Blockchain Integration Layer". The existin
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0
-| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to set up and run the system, including how to send test transactions to AssetHub to anchor contract hashes and how to observe the events. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article that explains the Ricardian contract system and how it integrates with AssetHub, including the benefits for agricultural trade in Africa. |
-| 1. | Ricardian Contract Service |  We will build a system that generates, hashes, and coordinates multi-party signing of Ricardian contracts with document storage and encryption |
-| 2. | AssetHub Anchor Service | We will create a service that integrates with AssetHub's `system.remark` for contract hash anchoring and `Assets` pallet for USDC operations . |
-| 3. | Event Indexer system | We will develop an indexer that captures AssetHub events and provides GraphQL APIs for contract verification |
-| 4. | Deployment Framework | We will create deployment scripts for AssetHub testnet/mainnet with production readiness checklists |
+| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to set up and run the system, including how to deploy the Solidity Smart Contracts to PolkaVM on AssetHub, how to generate a Ricardian hash, and how to verify the on-chain state via a block explorer. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests using Hardhat or Foundry to ensure functionality and robustness. In the guide, we will describe how to run these tests to verify the deposit, locking, and release mechanisms of the smart contract. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone, spinning up a local node and the Ricardian service. |
+| 0e. | Article | We will publish an article that explains the Ricardian-to-Smart-Contract bridge architecture on Polkadot, detailing how off-chain legal documents are cryptographically bound to on-chain execution via PolkaVM. |
+| 1. | Escrow Smart Contracts | We will develop the Solidity-based Escrow Smart Contracts compatible with PolkaVM. This module will include the `CreateTrade` function (which locks USDC and stores the Ricardian Hash), the `ReleaseFunds` function (which executes the logic to split payments between Supplier and Treasury), and the `dispute` mechanism. |
+| 2. | Ricardian Service | We will build a backend service (Python/Node.js) that accepts trade parameters, generates a PDF contract based on a standard template, calculates the SHA-256 hash of the document, and formats the output for the frontend to initiate the smart contract call. |
+| 3. | AssetHub Integration | We will create deployment scripts and interaction modules that interface with AssetHub’s `Assets` pallet (for USDC handling) and `AssetConversion` pallet (for gas fee abstraction), ensuring the Smart Contracts can interact natively with the chain. |
+| 4. | Event Indexer | We will develop a custom indexer (using SubQuery or Squid) that listens for specific Smart Contract events (e.g., `TradeLocked`, `FundsReleased`) and syncs this state to a local database to allow the API to query the status of trades. |
 
-### Milestone 2 Custodial Wallet System & Settlement Engine
+### Milestone 2 Non-Custodial Integration & Oracle Service
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  3
@@ -230,19 +234,19 @@ The grant focuses exclusively on the "Blockchain Integration Layer". The existin
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0
-| **0b.** | Documentation | We will provide documentation and tutorials for custodial wallet setup, KMS integration, and settlement flow execution |
-| **0c.** | Testing and Testing Guide | We will deliver integration tests for wallet management and settlement flows, plus guides for testing KMS/HSM interactions |
-| **0d.** | Docker | We will provide Docker containers for Custodial Wallet Manager, Transaction Signer, and Settlement Engine services |
-| 0e. | Article | We will publish an article that explains the Ricardian contract system and how it integrates with AssetHub, including the benefits for agricultural trade in Africa. |
-| 1. | Custodial Wallet Manager |  We will create a system that generates and maps blockchain accounts to Web2 user profiles for suppliers and buyers  |
-| 2. | Transaction Signer Service | We will build a secure service that communicates with KMS/HSM to sign settlement transactions without exposing private keys. |
-| 3. | Settlement Engine | We will develop an orchestration service that handles the complete settlement flow: logic checks → transaction signing → AssetHub broadcasting|
-| 4. | Integration Test Suite |  We will create comprehensive tests proving Web2 user actions trigger valid on-chain signatures and settlements |
+| **0b.** | Documentation | We will provide documentation and tutorials for setting up the Web3Auth SDK integration, configuring the Oracle API endpoints, and running the full settlement flow from the frontend. |
+| **0c.** | Testing and Testing Guide | We will deliver integration tests ensuring that Web2 logistics data correctly triggers on-chain Smart Contract functions. The guide will verify that the Oracle signatures are correctly validated by the Smart Contract before funds are released. |
+| **0d.** | Docker | We will provide Docker containers for the Oracle Service and Settlement API to facilitate easy deployment and testing. |
+| 0e. | Article | We will publish an article demonstrating the "Invisible Wallet" user experience for enterprise agriculture, showing how non-custodial MPC wallets lower the barrier to entry for Web3 trade. |
+| 1. | Web3Auth Integration |  We will implement the Web3Auth Multi-Party Computation (MPC) SDK into the React frontend. This module will enable email-based login and handle the client-side signing of the `createTrade` transaction using the generated non-custodial private key.  |
+| 2. | Oracle Verification Service | We will build a secure backend Oracle service that acts as the "Validation Layer." It will include logic to ingest logistics webhooks (simulating DHL/Maersk), verify the data against the trade terms, and cryptographically sign the "release" transaction using a designated Oracle key. |
+| 3. | Settlement API | We will develop the orchestration API that connects the user dashboard to the blockchain. This includes error handling, gas estimation for the Asset Conversion pallet, and broadcasting the signed transactions to the network.|
+| 4. | End-to-End Test Suite |  We will create a comprehensive end-to-end integration test suite that simulates a complete trade lifecycle: User Login (MPC) -> PDF Generation -> Client-Side Signing -> Smart Contract Lock -> Oracle Verification -> Fund Release. |
 ...
 
 ## Future Plans
 
-Our long-term sustainability will be financed through recurring revenue from platform commissions, enterprise integrations, and commercial pilot conversions, targeting financial independence within 12-18 months post-grant. In the short term, we will enhance and promote the project by scaling our Polkadot integration (adding audit trails, APIs, and verification mechanisms to our Substrate module) and executing a regional expansion into East Africa, West Africa and Middle East via strategic partnerships. Long-term, our vision is to become the digital backbone of Africa's agricultural trade, enabling transparent, compliant, and instant cross-border settlements powered by Polkadot.
+Our long-term sustainability will be financed through recurring revenue from platform commissions (automatically split via Smart Contract), enterprise integrations, and commercial pilot conversions. In the short term, we will enhance and promote the project by scaling our Polkadot integration and executing a regional expansion into East Africa, West Africa and Middle East.
 
 ## Referral Program :moneybag:
 
