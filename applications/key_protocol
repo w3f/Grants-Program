@@ -1,0 +1,85 @@
+# KEY Protocol - General Grant Application
+
+- **Project Name:** KEY Protocol
+- **Team Name:** KEY Protocol Team
+- **Payment Address:** [Tu Wallet USDC/USDT] (Ethereum ERC20 or Polkadot Asset Hub)
+- **Level:** 1 (Target: <$10k for initial module) or 2 (Target: up to $30k)
+
+## Project Overview :page_facing_up:
+
+### Overview
+
+KEY Protocol is a **DePIN infrastructure for confidential offline verification**. We solve the "Privacy Paradox" in impact measurement: How to verify biometric and field data in disconnected areas without exposing sensitive user information on-chain.
+
+We are applying to the Web3 Foundation to develop our core **Privacy Engine (Rust/WASM)**. This module uses Fuzzy Extractors to convert noisy biometric data (face/voice) into stable cryptographic keys directly in the device's RAM, enabling a Zero-Trust flow compatible with **Phala Network (TEEs)** and the Polkadot ecosystem.
+
+### Project Details
+
+We are building a bridge between physical reality in emerging markets (starting with Gran Chaco, Argentina) and the Polkadot ecosystem.
+
+**The Tech Stack:**
+- **Client-Side:** Rust compiled to WASM for offline biometric processing (Fuzzy Extractors).
+- **Compute:** TEE integration (planning to use **Phala Network**) for confidential evidence validation.
+- **Settlement:** ink! Smart Contracts (or EVM via peaq) for Identity and RWA minting.
+
+**Architecture:**
+1. **Capture:** Mobile device captures raw data (photo/audio).
+2. **Obfuscation:** The Rust/WASM module generates a private key from the biometrics and encrypts the payload *before* it touches the disk.
+3. **Storage:** Encrypted blobs sent to IPFS.
+4. **Verification:** TEEs attest the validity of the data and sign the result on-chain.
+
+### Ecosystem Fit
+
+KEY Protocol brings a high-impact **Real World Asset (RWA)** use case to Polkadot: Social Impact Verification. By building our privacy primitives in Rust, we allow any Substrate-based chain (like peaq, Phala, or Astar) to integrate "Offline Verification" into their pallets.
+
+## Team :busts_in_silhouette:
+
+### Team members
+- **Martín Lago** (Project Lead & Strategy)
+- **Kevin Ruiz** (CTO & Fullstack)
+- **Andrés Chanchi** (Blockchain Architect)
+- **Mateo Rivera** (Security Engineer)
+
+### Team's experience
+- **Martín Lago:** Data Analyst for 10+ social impact projects in Gran Chaco.
+- **Kevin Ruiz:** Experienced Fullstack dev for NGO platforms and e-commerce.
+- **Andrés Chanchi:** Blockchain Architect at Colmena DAO, expert in DAO governance.
+- **Mateo Rivera:** Infrastructure Security Engineer, specialized in distributed systems.
+
+### Team Code Repos
+- https://github.com/key-protocol
+
+## Development Status :open_book:
+
+- **Current State:** We have a functional MVP for offline data capture (Android) and the theoretical architecture for Fuzzy Extractors.
+- **Documentation:** [Link to your Pitch Deck or Technical Paper]
+
+## Development Roadmap :nut_and_bolt:
+
+### Milestone 1 — Privacy Engine (Rust/WASM Module)
+- **Estimated duration:** 2 months
+- **FTE:** 2
+- **Costs:** $15,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 |
+| 0b. | Documentation | We will provide inline documentation of the code and a basic tutorial on how to integrate the WASM module. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure cryptographic accuracy. |
+| 1. | Rust Crate | We will create a Rust library implementing the **Fuzzy Extractor** logic (or adapting an existing library for WASM target). |
+| 2. | WASM Build | Compilation of the Rust crate into a `.wasm` file optimized for mobile environments (no_std if possible). |
+| 3. | Demo App | A simple CLI or Web interface demonstrating: Input Biometric -> Output Stable Key -> Encryption -> Decryption Success. |
+
+### Milestone 2 — Phala Network / TEE Integration Design
+- **Estimated duration:** 1 month
+- **FTE:** 1
+- **Costs:** $10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Phat Contract | Development of a "Phat Contract" (Phala Network) blueprint that can receive the encrypted payload. |
+| 2. | Integration Guide | A technical paper detailing the flow: Mobile -> IPFS -> Phala TEE -> Verification Result. |
+
+## Future Plans
+After completing this grant, we will deploy the full protocol on **peaq mainnet**, utilizing the developed Rust modules to secure the "Last Mile" verification for our pilot with 5 NGOs in Latin America.
+
