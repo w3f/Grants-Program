@@ -1,0 +1,192 @@
+# μεράκι (pronounced Meraki)
+
+- **Team Name:** Team μεράκι
+- **Payment Details:**
+  - **DOT**: 13uv2m7nzgNT9Kyyea8TVZz9TgTL4cAG3QvQj9f2fg6toFGL
+  - **Payment**: 13uv2m7nzgNT9Kyyea8TVZz9TgTL4cAG3QvQj9f2fg6toFGL 
+- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 1
+
+
+## Project Overview :page_facing_up:
+
+If this application is in response to an RFP, please indicate this on the first line of this section.
+
+
+### Overview
+
+Please provide the following:
+
+μεράκι, aimed at contextual tailored content, moderating content, and offers rewards to its users for posting social media content online. In terms of rewards, this project uses DOT as the only payment gateway to exchange those rewards.  
+μεράκι dApp will be designed considering the current Web2 based social media challenges: privacy concerns. 
+
+To overcome those aforementioned challenges, μεράκι social-media dApp will be developing borrowable custom-built pallets and parachains (on Polkadot SDK): control of information (with deletion capabilities), (two different modules of) tailored content (without tracking users’ activity).  
+
+The interest, for initiating the social media dApp blockchain project, is typically driven by a combination of business imperatives: - The desire to solve real-world problems as μεράκι is aimed at removing communication barriers spiral-of-silence, and 
+- The opportunity for professional growth and innovation as decentralised social media is currently in the early stages of its technological evolution and the social media market has no limits.
+
+The current Web2 social media setting has the below primary issue:
+Privacy- social media (like Meta, etc.) can be controlled and other privacy concerns like user data exploitation (for tailored activity), access to accounts. Nepal banned 26 media sites for spotlighting the lavish lifestyles of politicians' children and allegations of corruption in ‘nepo kid’ campaign form. Apart from that, social media in India will be at stake (from April 2026) as the income tax department will have access to those platforms to look for any undisclosed income or valuable items.
+
+[A decentralised Social Media report, which was conducted by EU Blockchain Observatory and Forum, revealed that individuals who have had experience with as well without decentralised social media expertise have favoured both privacy and data ownership](https://blockchain-observatory.ec.europa.eu/news/publication-decentralised-social-media-report-2023-10-25_en).
+
+ μεράκι, backed with Polkadot blockchain, will be aimed at offering the below (within social media framework): 
+- Users having absolute control over their information
+- Users being offered tailored content based on zero tracking activity
+
+Technical implementation of aforementioned is detailed later beneath the overview.
+ Apart from that, it is vital to learn that there were no projects similar to that of the dApp within Polkadot ecosystem; however, there are a few in the blockchain ecosystem.  
+According to an MIT report, these projects -Freedom Box, Diaspora, Mastodon, Blockstack, IPFS, Solid, Appcoins, Steemit- which were aimed at but failed to possibly address such as: 
+
+In Security context, IPFS and Blockstack are yet have a good story on how users will manage their private cryptographic keys and gain a good mental model of complex security protocols.
+
+
+### Project Details
+ For mockups/designs and wireframes, please mail me.
+
+dApp Architecture
+
+Information Control
+μεράκι users will be able to delete information at their discretion aligned with Indian Digital Personal Data Protection (DPDP) Act, 2023. 
+
+Through a smart contract approach with data deletion capabilities, a custom pallet will be is designed allowing its users to create functions that enable them to delete their data, and further:
+This would allow implement custom storage mechanisms in which users have full control over their data lifecycle.
+This approach can further help design specific runtime functions for data deletion 
+
+Tailored Content
+Polkadot makes it possible for developing a custom ‘tailored content’ parachain however without tracking user activity unlike what Web2 social media apps practice (raising privacy concerns chiefly within social media framework).
+
+Technically, integration of tailored content feature will be built using the below tools and pathways:
+
+Tools:
+Smart Contract Development: By using Polkadot’s smart contract platforms, backend logic for the dApp will be developed.   Those platforms are aimed at deploying and interacting with smart contracts that can manage user data, preferences, and content delivery. 
+Application Development: By utilising Polkadot’s APIs, frontend will be built and further assist connect the dApp to the blockchain. Those APIs aimed at interacting with on-chain data, managing user sessions, and delivering content. 
+Decentralised Storage: Integrating decentralised storage solutions like Crust Network can be made possible to store user-generated content, media, and metadata in a censorship-resistant and resilient way. 
+Below is pathways which will be considered (in developing the custom-built pallet) by combining on-chain identity data with the dApp’s own logic, fetched at runtime: 
+By using People Chain for decentralised identity (profiles, sub-identities, registrar judgments) to drive personalisation signals (e.g., “verified,” display name), and then applying own content rules off-chain.
+
+Polkadot’s modular and interoperable architecture allows to customise μεράκι logic and user experience, based on above tools and pathways, in a custom-built pallet.
+
+The below will be an additional option a user can opt for advanced tailored options. For obtaining user activity, it will be developed as a separate custom-built pallet: 
+Monitoring on-chain events and activities such as custom logs and alerts for the dApp will be developed as a separate feature. 
+For identity-linked context for those logs, query identity data (from People Chain) alongside the dApp’s telemetry will be programmatically connected to both chains.
+
+Though Polkadot does not provide data analytical software in the traditional sense, combination of these tools- block explorers, indexers, and monitoring dashboards, will provide robust data analysis capabilities for the Polkadot-based project, μεράκι.
+
+Block Explorers: These serve as comprehensive analytics platforms for blockchain networks, allowing users to query and analyse data in real time through intuitive interfaces. 
+Indexers: These solutions offer APIs for retrieving and analysing large or complex datasets from the blockchain, supporting advanced queries. 
+Monitoring and Visualisation Tools: Those tools allow collect, monitor, and visualise operational data such as block production, peer connections, CPU usage, and more Runtime Metrics and Monitoring.
+
+The combination of the above three custom pallets will be developed for use in a single parachain.
+ 
+### Ecosystem Fit
+ This dApp project absolutely fits in addressing (blockchain based) social media challenges, and they are: 
+User-targeted Advertising or Tailored Content: though censorship-resistance and decentralisation are noble goals that will undoubtedly appeal to tech-savvy and politically inclined users, most users are not ideologically motivated and have no interest in shouldering the additional cost and responsibility of running these complex systems directly. 
+Security: In the social media setting, anyone can join and it is also challenging to develop software that is both cryptographically secure and easy to use.
+
+As discussed earlier, offering tailored content without tracking user activity is technically possible. While AI functional integration for curbing fake news and content moderation, and Information Control collectively satisfies Security concerns.
+ In addition, the target audience will be of μεράκι own user base.
+
+
+## Team :busts_in_silhouette:
+
+
+### Team members
+
+- Daruna Teja Naga Bhanu Vijay
+- Names of team members: n/a
+
+### Contact
+
+- **Contact Name:** Daruna Teja Naga Bhanu Vijay
+- **Contact Email:** dtnbhanuvijay@gmail.com
+- **Website:** linkedin.com/in/dtnbv/
+
+### Legal Structure
+
+- **Registered Address:** yet to be registered as it’s still in ideation stage
+- **Registered Legal Entity:** yet to be registered as it’s still in ideation stage
+
+### Team's experience
+
+The relevant experience includes establishing and operating a blockchain-like mechanism in [Odds Space Post news blog](https://dtnbhanuvijay.wixsite.com/oddsspacepost) form for four and a half years (2017–2021). Also having acquired specialised technical expertise in blockchain technology and computer science through MOOCs offered by HarvardX and edX. 
+
+In undergraduate program, an Android application was developed for UNICEF via the Children In Media Experiments (CHIME) program, aimed at enhancing social communication skills among underprivileged children. Currently, stationed as a freelance full-stack developer at a media management consultancy, managing strategic communications to acquire traditional leads and single-handedly overseeing the organisation's social media division.
+
+
+### Team Code Repos
+
+- https://github.com/dtnbv
+
+
+Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+
+- https://github.com/dtnbv
+
+
+### Team LinkedIn Profiles (if available)
+
+- linkedin.com/in/dtnbv/
+
+
+## Development Status :open_book:
+
+
+## Development Roadmap :nut_and_bolt:
+
+
+### Overview
+
+- **Total Estimated Duration:** 6 months
+- **Full-Time Equivalent (FTE):**  1 FTE
+- **Total Costs:** 7,000 USD
+- **DOT %:** 50% of total costs can be paid in DOT
+
+
+### Milestone 1 — Information Control
+
+- **Estimated duration:** 3 months
+- **FTE:**  1.0
+- **Costs:** 4,500 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | I will provide both inline documentation of the code and a basic document or video tutorial detailing how a user can use three pallets separately as well as integrate with in a single parachain all together. In addition, the documentation will be made public. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | I will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | I will publish a public article/workshop that details the functioning of these three pallets under one parachain as it is a private project. In addition, I can give a brief note upon request on what was achieved as a part of the grant. |
+| 1. | Pallet: 4 | A custom pallet which will be having data deleting capabilities |
+
+
+### Milestone 2 — Tailored Content feature
+
+- **Estimated duration:** 3 months
+- **FTE:**  1.0
+- **Costs:** 2,500 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | I will provide both inline documentation of the code and a basic document or video tutorial detailing how a user can use three pallets separately as well as integrate with in a single parachain all together. In addition, the documentation will be made public. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | I will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | I will publish a public article/workshop that details the functioning of these three pallets under one parachain as it is a private project. In addition, I can give a brief note upon request on what was achieved as a part of the grant. |
+| 1. | Pallet: 5 | A custom pallet will be built aiming front-end and back-end logic and integrated with storage solutions |
+| 1. | Pallet: 6 | A custom pallet will be aiming front-end and back-end logic and integrated with storage solutions alongside considering conglomeration of block explorers, indexers, and monitoring dashboards, aimed at tracking user activity |
+| 1. | Parachain: 3 | A custom parachain which will have functionality of both Pallets 4 and 5; however the latter pallet will be activated upon user opting a certain feature. |
+
+## Future Plans
+
+Please include here
+
+  Upon developing code in pallets and parachains form, front-end as in UI will be developed to test the MVP.
+
+## Referral Program (optional) :moneybag:
+
+
+## Additional Information :heavy_plus_sign:
+ I heard about the Grants Program via Web3 Foundation Website.  μεράκι, a greek word, pronounced Meraki and meaning things you pursue with passion. 
+
+Due to the project being patentable chiefly for its UI designs and mechanism, the mockups and wireframes can be mailed separately. Technical integration of AI integration which is aimed at moderating content and assessing fake news will be applied as a separate grant.
+
+The project has been bootstrapped in developing UI.
