@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **The Web3 Foundation has decided to [discontinue the general Grants Program](https://medium.com/web3foundation/aligning-web3-foundation-grants-program-with-polkadots-product-centric-vision-9ae83baafdc3).** We are not accepting new applications at this point. Please do not submit new pull requests.
+
 # Web3 Foundation Grants Program<!-- omit in toc -->
 
 <p align="center">
