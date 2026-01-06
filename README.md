@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **The Web3 Foundation has decided to [discontinue the general Grants Program](https://medium.com/web3foundation/aligning-web3-foundation-grants-program-with-polkadots-product-centric-vision-9ae83baafdc3).** We are not accepting new applications at this point. Please do not submit new pull requests.
+
 # Web3 Foundation Grants Program<!-- omit in toc -->
 
 <p align="center">
@@ -155,25 +158,22 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Radhakrishna Dasari](https://github.com/DrW3RK)
-- [Robert Hambrock](https://github.com/Lederstrumpf)
-- [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Bill Laboon](https://github.com/laboon)
 - [Keegan Quigley](https://github.com/keeganquigley)
-- [Seraya Takahashi](https://github.com/takahser)
 - [Piet Wolff](https://github.com/PieWol) 
 - [Gavin Wood](https://github.com/gavofyork)
 - [Aleksandar Dimitrijevic](https://github.com/alexdimes)
+- [Diogo Silveira Mendonca](https://github.com/diogo-w3f)
 
 #### W3F Grants Evaluators<!-- omit in toc -->
 
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
-- [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
-- [Seraya Takahashi](https://github.com/takahser)
-- [Piet Wolff](https://github.com/PieWol) 
+- [Piet Wolff](https://github.com/PieWol)
+- [Diogo Silveira Mendonca](https://github.com/diogo-w3f)
 
 #### W3F Operations Team<!-- omit in toc -->
 
