@@ -3,8 +3,8 @@
 
 - **Team Name:** ChainSupport Labs  
 - **Payment Details:**  
-  - **DOT:** 12RdrZcEhcrngiNYfyyGiA5dU5aGAj8h7Cj5movAWdkwYGD3  
-  - **Payment:** 12RdrZcEhcrngiNYfyyGiA5dU5aGAj8h7Cj5movAWdkwYGD3 (Assethub USDC)  
+  - **DOT:** 13SjitA3DTSV9HQDw9C8UCdA6LTzTp4vu5ncy2kFLkszHYDy  
+  - **Payment:** 13SjitA3DTSV9HQDw9C8UCdA6LTzTp4vu5ncy2kFLkszHYDy (Assethub USDC)  
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1  
 
 ## Project Overview :page_facing_up:
