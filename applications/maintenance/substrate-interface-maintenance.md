@@ -3,6 +3,7 @@
 - **Team Name:** Stanislav Terliakov
 - **Payment Address:** 13fczWPtdAtkePBYgW5SuwVBvDvEfXYPAPsfbue5ez2CrGEF (DOT, USDC).
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2571#issuecomment-3825902295)
 
 ## Project Overview :page_facing_up:
 
