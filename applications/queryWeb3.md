@@ -5,6 +5,7 @@
   - **DOT**: 15SXUVLizxWtMpYx7eambqqH9Bi942WZdT4wDH89GTXfkeso
   - **Payment**: 15SXUVLizxWtMpYx7eambqqH9Bi942WZdT4wDH89GTXfkeso , Currency ( USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2458#issuecomment-3929193682)
 
 ## Project Overview :page_facing_up:
 
