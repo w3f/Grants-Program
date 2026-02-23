@@ -3,6 +3,7 @@
 - **Team Name:** Staking Rewards
 - **Payment Address:** Payment Details will be sent to grants@web3.foundation privately.
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2484#issuecomment-3897928852)
 
 ### Overview
 
