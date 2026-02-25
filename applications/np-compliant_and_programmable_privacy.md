@@ -5,6 +5,7 @@
   - **DOT**: 15mXzKEjNF8mMQA7hprb7MaFRu9iWNsTsr3CsXsG5iryBkbo
   - **Payment**: Fiat, details to be shared upon approval
 - **Level:** 3
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2521#issuecomment-3915668889)
 
 ## Project Overview :page_facing_up:
 
