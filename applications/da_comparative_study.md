@@ -9,6 +9,7 @@
   - **DOT:** 15p3jWZaP4dHTkDTuKM5VXQL5XGfH9U5r6Ntu3UAv2K7vPb8
   - **Payment:** 15p3jWZaP4dHTkDTuKM5VXQL5XGfH9U5r6Ntu3UAv2K7vPb8 (USDC)
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/2578#issuecomment-3900164851)
 
 ## Project Overview :page_facing_up:
 
