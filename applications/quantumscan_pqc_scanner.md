@@ -2,8 +2,8 @@
 
 - **Team Name:** QuantumScan
 - **Payment Details:**
-  - **DOT**: [TODO: Add Polkadot address]
-  - **Payment**: [TODO: Add Polkadot AssetHub address] (USDC)
+  - **DOT**: 16LTGtVBbeq7SbCvTDJoeXzzE7Kp4ma5QvrU2iAggJxjy5pu
+  - **Payment**: 16LTGtVBbeq7SbCvTDJoeXzzE7Kp4ma5QvrU2iAggJxjy5pu (USDC)
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
 
 ## Project Overview :page_facing_up:
