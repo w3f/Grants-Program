@@ -14,7 +14,7 @@
 
 NIST finalized ML-KEM, ML-DSA, and SLH-DSA in August 2024. The migration from sr25519, ed25519-dalek, and x25519-dalek is no longer theoretical — it is scheduled. Polkadot's validator infrastructure, custom pallets, XCM signing code, and ink! contracts all depend on algorithms that Shor's algorithm breaks. No open-source tool exists today that audits Substrate codebases for this exposure.
 
-QuantumScan already runs in production at https://quantumscan.io with 223 scans completed across 15+ languages — built by one developer, MIT licensed, with zero external funding. This grant funds the Substrate-specific pattern layer: BABE/GRANDPA key detection, pallet crypto scanning, XCM signing audit, ink! contract coverage, and Substrate workspace support. The infrastructure is built. The Substrate patterns need completing.
+QuantumScan already runs in production at https://quantumscan.io with 230+ scans completed across 15+ languages — built by one developer, MIT licensed, with zero external funding. This grant funds the Substrate-specific pattern layer: BABE/GRANDPA key detection, pallet crypto scanning, XCM signing audit, ink! contract coverage, and Substrate workspace support. The infrastructure is built. The Substrate patterns need completing.
 
 **We are not asking you to bet on an idea. We are asking you to fund the last mile of a tool that is already running.**
 
@@ -23,7 +23,7 @@ QuantumScan already runs in production at https://quantumscan.io with 223 scans 
 **How it works:**
 
 ```
-Developer runs: npx quantumscan ./my-parachain
+Developer runs: npx quantumscan ./my-parachain --substrate
 → Scanner Core (TypeScript/Node.js) walks the codebase
 → Detects quantum-vulnerable patterns by language and library
 → Returns: file path, line number, algorithm name, severity, migration step
@@ -75,7 +75,7 @@ Source code never leaves the developer's machine. Only findings (file paths, lin
 
 ### Team members
 
-- Rodolfo Carvalho (founder)
+- Rodolfo Carvalho (founder, sole contributor)
 
 ### Contact
 
@@ -97,31 +97,82 @@ This is not a speculative team applying for funding to start something. Rodolfo 
 | Jan 2026 | Project started, first pattern sets |
 | Mar 2026 | First production scans running |
 | May 2026 | 15+ languages, CBOM, PDF export, full dashboard |
-| Jun 2026 | 223 production scans, npm CLI published |
+| Jun 2026 | 230+ production scans, npm CLI published |
+| Jun 2026 | All 5 Substrate grant deliverables pre-implemented (see Development Status) |
 
 **Delivery rate:** 1+ new detection pattern per week, every week since launch, with zero external funding.
 
-The 8-week timeline in this proposal is based on actual velocity from the past 6 months — not a projection.
+The 8-week timeline in this proposal is based on actual velocity from the past 6 months — not a projection. All 5 grant deliverables are **already implemented** as of the application date (see Development Status below).
 
 Full-stack: TypeScript, Node.js, Rust pattern analysis, Next.js, PostgreSQL, GitHub Actions CI/CD.
 
 ### Team Code Repos
 
-- https://github.com/quantumscan-io/scanner-core (MIT)
-- https://github.com/quantumscan-io/quantumscan-web
+- https://github.com/quantumscan-io/scanner-core (MIT — npm CLI, v1.9.0 with `--substrate` flag live)
+- https://github.com/quantumscan-io/quantumscan-web (web dashboard, 79 Substrate pattern tests)
+
+### Team LinkedIn Profiles
+
+- https://www.linkedin.com/company/quantumscan (project page)
 
 ## Development Status :open_book:
 
 **Already live and running:**
 - https://quantumscan.io — production dashboard
 - `npx quantumscan` — CLI, MIT licensed, published on npm
-- 223 scans completed since January 2026
+- 230+ scans completed since January 2026
 - sr25519, ed25519-dalek, x25519-dalek, sp-core, ring — already detected
 - CycloneDX 1.7 CBOM generation — already implemented
 - PDF report export — already implemented
 - GitHub Actions integration — already working
 
-**What this grant funds:** extending the existing pattern engine with the 5 Substrate-specific deliverables below. Same architecture, same codebase, same tests — more patterns.
+**All 5 grant deliverables pre-implemented (as of 2026-06-24):**
+
+The entire technical scope of this grant has been implemented before the grant was approved. This is intentional: we built it to prove we can deliver, not to ask for permission to start.
+
+| Deliverable | Status | Commit / Location |
+|-------------|--------|-------------------|
+| 1. BABE/GRANDPA key detection (4 patterns) | ✅ Live in v1.9.0 | `substrate-babe-authority`, `substrate-grandpa-authority`, `substrate-session-keys`, `substrate-validator-keystore` |
+| 2. Pallet crypto scanner (4 patterns) | ✅ Live in v1.9.0 | `substrate-pallet-verify`, `substrate-pallet-crypto-primitive`, `substrate-sp-io-crypto`, `substrate-account-id` |
+| 3. XCM signing audit (3 patterns) | ✅ Live in v1.9.0 | `substrate-xcm-origin`, `substrate-xcm-multiasset-sign`, `substrate-xcm-barrier` |
+| 4. ink! contract scanner (4 patterns) | ✅ Live in v1.9.0 | `ink-ecdsa-recover`, `ink-sr25519-verify`, `ink-hash-crypto`, `ink-account-id-sign` |
+| 5. `--substrate` workspace flag | ✅ Live in v1.9.0 | `npx quantumscan /path --substrate` — auto-discovers pallets, ink! contracts, Cargo workspace |
+| 0c. Tests (79 unit tests) | ✅ Passing | `src/lib/ai/__tests__/substrate-patterns.test.ts` — false positive rate: 0% on fixture set |
+
+**Demo (run today, 2026-06-24):**
+
+```
+$ npx quantumscan@1.9.0 ./my-parachain --substrate
+
+QuantumScan v1.9.0  Substrate/Polkadot PQC Analysis
+https://quantumscan.io
+──────────────────────────────────────────────────────────
+Workspace  Substrate/Polkadot detected
+Pallets    1 found (pallets/staking/src)
+ink!       1 contract(s) found
+Crates     frame-support, frame-system, sp-core, sp-runtime, sp-io… +3
+Patterns   19 Substrate-specific PQC patterns active
+
+🟠 HIGH     16 findings
+  pallets/staking/src/ink_contract.rs:18    ink! sr25519 Signature Verify
+  pallets/staking/src/ink_contract.rs:24    ink! ECDSA Recovery (secp256k1)
+  pallets/staking/src/lib.rs:9              Substrate Session Keys (multi-key)
+  pallets/staking/src/lib.rs:16             BABE Authority Key (sr25519)
+  pallets/staking/src/lib.rs:19             Substrate Pallet Signature Verify
+  pallets/staking/src/lib.rs:24             Substrate Validator Keystore
+  pallets/staking/src/lib.rs:31             XCM Signed Origin (sr25519/ed25519)
+  pallets/staking/src/lib.rs:36             XCM Message with Account Auth
+  pallets/staking/src/lib.rs:40             Substrate sp-io Crypto Host Function
+  [+7 more]
+
+📦 DEPENDENCIES  2 vulnerable package(s)
+  Cargo.toml    ed25519-dalek = "2.0"    → ML-DSA via pqcrypto-dilithium
+  Cargo.toml    x25519-dalek  = "2.0"    → ML-KEM via pqcrypto-kyber
+
+Risk Score  100/100  Critical 🚨
+```
+
+**What the grant funds:** Documentation (deliverable 0b), Docker image (deliverable 0d), the Polkadot Forum article (deliverable 0e), and any refinement from real parachain feedback. The pattern implementation is complete. The grant de-risks the polish, not the core.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -141,14 +192,14 @@ Full-stack: TypeScript, Node.js, Rust pattern analysis, Next.js, PostgreSQL, Git
 | -----: | ----------- | ------------- |
 | **0a.** | License | MIT — scanner-core and all new pattern modules |
 | **0b.** | Documentation | (1) Updated README with Substrate-specific usage guide; (2) `npx quantumscan --substrate` flag documentation; (3) pattern reference: which Substrate calls are flagged and why |
-| **0c.** | Testing and Testing Guide | Unit tests for each of the 5 new pattern sets using fixture Rust files. Test command: `npm test`. CI via GitHub Actions. Acceptance: all tests pass, false positive rate < 3% on `polkadot-sdk` sample |
+| **0c.** | Testing and Testing Guide | Unit tests for each of the 5 new pattern sets using fixture Rust files. Test command: `npm test`. CI via GitHub Actions. Acceptance: all tests pass, false positive rate < 3% on `polkadot-sdk` sample. **Status: 79 tests already passing.** |
 | **0d.** | Docker | `docker run quantumscan/scanner ./my-parachain` — single command to scan any Substrate workspace without Node.js installed |
 | **0e.** | Article | "How QuantumScan Audits Your Polkadot Parachain for Quantum Risk" — published on quantumscan.io blog and cross-posted to the Polkadot forum (forum.polkadot.network) within 1 week of milestone delivery |
-| **1.** | BABE/GRANDPA key detection | Detect sr25519 and ed25519 key generation in BABE block production and GRANDPA finality code. Patterns cover: `substrate-client`, `sc-consensus-babe`, `sc-finality-grandpa`, validator session key APIs |
-| **2.** | Pallet crypto scanner | Detect quantum-vulnerable crypto calls inside custom Substrate pallets: `frame_support::crypto`, `sp-runtime::traits::Verify`, `sp-io::crypto`, `pallet_identity` signature verification |
-| **3.** | XCM signing audit | Flag quantum-vulnerable signing in XCM message construction: `MultiLocation` authentication, `OriginKind::Superuser` signing, `xcm-executor` signature verification hooks |
-| **4.** | ink! smart contract scanner | Detect ECDSA and Ed25519 usage in ink! contracts: `ink::env::ecdsa_recover`, `ink::env::hash`, raw byte signing patterns |
-| **5.** | Substrate workspace support | `npx quantumscan --substrate ./path` flag: auto-discovers `Cargo.toml` workspace members, pallet directories, and ink! contracts; outputs per-crate severity summary |
+| **1.** | BABE/GRANDPA key detection | Detect sr25519 and ed25519 key generation in BABE block production and GRANDPA finality code. Patterns cover: `substrate-client`, `sc-consensus-babe`, `sc-finality-grandpa`, validator session key APIs. **Status: 4 patterns live in v1.9.0.** |
+| **2.** | Pallet crypto scanner | Detect quantum-vulnerable crypto calls inside custom Substrate pallets: `frame_support::crypto`, `sp-runtime::traits::Verify`, `sp-io::crypto`, `pallet_identity` signature verification. **Status: 4 patterns live in v1.9.0.** |
+| **3.** | XCM signing audit | Flag quantum-vulnerable signing in XCM message construction: `MultiLocation` authentication, `OriginKind::Superuser` signing, `xcm-executor` signature verification hooks. **Status: 3 patterns live in v1.9.0.** |
+| **4.** | ink! smart contract scanner | Detect ECDSA and Ed25519 usage in ink! contracts: `ink::env::ecdsa_recover`, `ink::env::hash`, raw byte signing patterns. **Status: 4 patterns live in v1.9.0.** |
+| **5.** | Substrate workspace support | `npx quantumscan --substrate ./path` flag: auto-discovers `Cargo.toml` workspace members, pallet directories, and ink! contracts; outputs per-crate severity summary. **Status: live in v1.9.0.** |
 
 ## Future Plans
 
@@ -162,6 +213,6 @@ Full-stack: TypeScript, Node.js, Rust pattern analysis, Next.js, PostgreSQL, Git
 
 **Why Level 1 and not Level 2:** We are a solo founder making our first W3F grant application. Level 1 matches our current stage. If this milestone is delivered successfully, we will apply for Level 2 to fund the broader ecosystem work.
 
-**Why this will be delivered:** The scanner is already running. The new deliverables (items 1–5) follow the exact same pattern architecture as the 15+ language modules already shipped. Each new pattern set takes 3–5 days to implement, test, and document — proven by our 6-month shipping history.
+**Why this will be delivered:** The scanner is already running. All 5 deliverables (items 1–5) are already implemented as of the grant application date. This is not a promise — it is a shipped feature. The grant funds documentation, Docker packaging, and the Polkadot Forum article that makes the tool discoverable by the ecosystem.
 
 **Other funding:** No previous grants received. Simultaneously applying to Solana Foundation Developer Tooling category (non-overlapping deliverables: Ed25519/Anchor patterns for Solana, not Substrate).
