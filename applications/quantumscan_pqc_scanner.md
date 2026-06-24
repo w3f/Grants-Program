@@ -10,11 +10,13 @@
 
 ### Overview
 
-**QuantumScan** is an open-source, privacy-first post-quantum cryptography (PQC) scanner that detects quantum-vulnerable cryptographic patterns in codebases across 15+ languages — with dedicated coverage for the Substrate/Polkadot ecosystem.
+**QuantumScan** is a live, privacy-first post-quantum cryptography (PQC) scanner that detects quantum-vulnerable cryptographic patterns in codebases across 15+ languages — with dedicated coverage for the Substrate/Polkadot validator infrastructure.
 
-Substrate-based chains use sr25519 (Schnorrkel), ed25519-dalek, and x25519-dalek for validator keys, account signatures, and cross-chain messaging. These algorithms are vulnerable to Shor's algorithm on quantum computers. Q-Day is estimated within 1,200–1,500 days. NIST finalized ML-KEM, ML-DSA, and SLH-DSA in August 2024.
+Polkadot's ~300 active validators depend on sr25519 (Schnorrkel), ed25519-dalek, and x25519-dalek for BABE/GRANDPA consensus keys, account signatures, and XCM message signing. These algorithms are broken by Shor's algorithm. Q-Day is estimated within 1,200–1,500 days. NIST finalized ML-KEM, ML-DSA, and SLH-DSA in August 2024 — the migration clock is running.
 
-QuantumScan enables Polkadot/Substrate developers to audit their codebases for quantum cryptographic exposure, receive severity-ranked findings, and generate actionable PQC migration guides — all without source code ever leaving their environment.
+**The core problem:** Polkadot's validator infrastructure has no tooling to measure its own quantum exposure at the code level. Validators cannot know which key generation paths, pallet cryptography calls, or XCM signing routines will need replacing before Q-Day forces an emergency migration.
+
+QuantumScan solves this by scanning Substrate/Polkadot codebases, ranking findings by severity, and generating validator-specific PQC migration guides — all without source code ever leaving the developer's environment. This is not a research proposal: QuantumScan is already running in production with 223 scans completed, addressing a concrete and measurable security gap in the ecosystem.
 
 ### Project Details
 
@@ -51,16 +53,17 @@ The scanner runs client-side via GitHub Actions. Only findings (file paths, line
 
 ### Ecosystem Fit
 
-**Where it fits:** Developer security tooling for the Substrate/Polkadot ecosystem.
+**Where it fits:** Validator infrastructure security tooling for the Substrate/Polkadot ecosystem.
 
-**Target audience:** Parachain developers, validator operators, wallet teams, and dApp developers building on Substrate who need to audit their Rust/TypeScript codebases for quantum cryptographic exposure before Q-Day.
+**Target audience:** Polkadot/Kusama validator operators, parachain developers, wallet teams, and dApp developers building on Substrate who need to audit their Rust/TypeScript codebases for quantum cryptographic exposure before Q-Day.
 
-**Need identified:**
-- NIST finalized PQC standards (FIPS 203/204/205) in August 2024
+**Concrete need in numbers:**
+- Polkadot has ~300 active validators, all relying on sr25519/ed25519 for BABE and GRANDPA
+- NIST finalized PQC standards (FIPS 203/204/205) in August 2024 — the transition window is now
 - No existing open-source tool audits Substrate codebases for quantum exposure at the code level
-- Commercial alternatives (IBM QRadar, SandboxAQ) cost $50,000+/year and are closed-source
+- Commercial alternatives (IBM QRadar, SandboxAQ) cost $50,000+/year, are closed-source, and are not Substrate-aware
 
-**Similar projects in ecosystem:** None identified that provide code-level PQC scanning for Substrate/Polkadot.
+**Similar projects in ecosystem:** None that provide code-level PQC scanning for Substrate/Polkadot validator infrastructure. QuantumGuard (W3F grant #2113) aimed to build a PQC parachain — a complementary but orthogonal approach. QuantumScan audits existing codebases; it does not replace cryptographic primitives.
 
 **Similar projects in related ecosystems:** Commercial tools exist (SandboxAQ, IBM QRadar) but are closed-source, expensive, and not ecosystem-specific.
 
@@ -83,7 +86,15 @@ The scanner runs client-side via GitHub Actions. Only findings (file paths, line
 
 ### Team's experience
 
-Rodolfo Carvalho has built and shipped QuantumScan from scratch since January 2026 — a full-stack TypeScript/Node.js application with scanner CLI, web dashboard, CBOM generation, and 15+ language pattern detection. 223 scans completed in production with zero external funding.
+Rodolfo Carvalho shipped QuantumScan from zero to production in under 6 months — with no external funding, no team, and no prior Substrate-specific work. The project now has:
+
+- **223 production scans** completed since January 2026
+- **15+ language pattern sets** shipping and maintained
+- **MIT-licensed CLI** published on npm, installable via `npx quantumscan`
+- **CycloneDX 1.7 CBOM generation**, PDF export, full web dashboard
+- **Averaging 1+ new detection pattern per week** since launch
+
+This grant funds a specific, bounded technical expansion — not a research exploration. Every deliverable in this proposal has a direct analogue in already-shipped code. The Substrate-specific patterns in Milestones 1 and 2 follow the same architecture as existing language modules, with execution timelines based on actual development velocity, not estimates.
 
 Full-stack expertise: TypeScript, Rust pattern analysis, Next.js, Node.js, PostgreSQL, GitHub Actions CI/CD.
 
@@ -104,7 +115,7 @@ QuantumScan is live and operational:
 - **223 scans completed** since January 2026
 - Existing Substrate/Polkadot patterns: sr25519, ed25519-dalek, x25519-dalek, sp-core, ring crate
 
-This grant funds Substrate-specific depth expansion beyond existing generic detection.
+This grant funds Substrate-specific depth expansion beyond existing generic detection — the infrastructure is built, the patterns need extending.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -134,7 +145,7 @@ This grant funds Substrate-specific depth expansion beyond existing generic dete
 | 4. | ink! smart contract scanner | Detect ECDSA/Ed25519 usage inside ink! smart contracts |
 | 5. | `cargo quantumscan` plugin | Rust-native CLI flag for Substrate workspaces: `cargo quantumscan ./my-parachain` |
 
-### Milestone 2 — PQC Migration Tooling and Documentation
+### Milestone 2 — PQC Migration Tooling and Validator Vulnerability Report
 
 - **Estimated Duration:** 2 months
 - **FTE:** 1
@@ -150,7 +161,7 @@ This grant funds Substrate-specific depth expansion beyond existing generic dete
 | 1. | PQC migration guide generator | Per-finding auto-generated migration steps: sr25519 → ML-DSA-65, ed25519 → ML-DSA-44, x25519 → ML-KEM-768 |
 | 2. | CBOM for parachains | CycloneDX 1.7 Cryptography BOM per pallet — maps findings to NIST FIPS 203/204/205 standards |
 | 3. | Substrate GitHub Action template | Ready-to-use GitHub Actions workflow for parachain teams to run PQC audit on every PR |
-| 4. | Polkadot ecosystem dashboard | Public dashboard at quantumscan.io/polkadot showing PQC readiness scores of major Polkadot ecosystem repos |
+| 4. | Polkadot Validator PQC Vulnerability Report | Scan 20+ active Polkadot/Kusama validator client repositories; produce anonymized public report classifying quantum exposure by validator type (BABE, GRANDPA, nominated). Delivered as PDF + quantumscan.io/polkadot-report — a concrete, measurable output the W3F and ecosystem can validate |
 
 ## Future Plans
 
@@ -158,11 +169,17 @@ This grant funds Substrate-specific depth expansion beyond existing generic dete
 
 **Long term:** Become the standard open-source PQC audit tool for all major blockchain ecosystems. Explore sustainable funding via: (1) enterprise support contracts for financial institutions using CBOM exports for DORA/NIS2 compliance, (2) API access for large-scale automated scanning.
 
-**Maintenance:** Scanner core is MIT licensed and designed for community contributions. Pattern database will be updated as NIST PQC standards evolve.
+**Maintenance:** Scanner core is MIT licensed and designed for community contributions. Pattern database will be updated as NIST PQC standards evolve (next FIPS round expected 2026–2027).
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website and ecosystem research while building PQC detection patterns for Substrate.
+
+**Execution track record:**
+- January 2026: project started from zero
+- March 2026: first production scans running
+- June 2026: 223 scans completed, 15+ language pattern sets, CycloneDX CBOM, PDF export, full dashboard — zero external funding
+- Velocity: 1+ new detection pattern per week, consistent shipping since launch
 
 **Work already done:**
 - QuantumScan is live at quantumscan.io with 223 scans completed
