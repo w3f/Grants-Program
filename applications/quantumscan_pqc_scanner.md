@@ -143,7 +143,7 @@ This grant funds Substrate-specific depth expansion beyond existing generic dete
 | 2. | Pallet crypto scanner | Detect quantum-vulnerable crypto usage inside custom Substrate pallets (`frame_support`, `sp-runtime`) |
 | 3. | XCM signing audit | Flag quantum-vulnerable signing patterns in XCM message construction and relay chain communication |
 | 4. | ink! smart contract scanner | Detect ECDSA/Ed25519 usage inside ink! smart contracts |
-| 5. | `cargo quantumscan` plugin | Rust-native CLI flag for Substrate workspaces: `cargo quantumscan ./my-parachain` |
+| 5. | Substrate workspace support | Substrate/Cargo workspace detection via npx CLI: `npx quantumscan --substrate ./my-parachain` — auto-discovers pallet directories, Cargo.toml members, and ink! contracts |
 
 ### Milestone 2 — PQC Migration Tooling and Validator Vulnerability Report
 
@@ -161,7 +161,7 @@ This grant funds Substrate-specific depth expansion beyond existing generic dete
 | 1. | PQC migration guide generator | Per-finding auto-generated migration steps: sr25519 → ML-DSA-65, ed25519 → ML-DSA-44, x25519 → ML-KEM-768 |
 | 2. | CBOM for parachains | CycloneDX 1.7 Cryptography BOM per pallet — maps findings to NIST FIPS 203/204/205 standards |
 | 3. | Substrate GitHub Action template | Ready-to-use GitHub Actions workflow for parachain teams to run PQC audit on every PR |
-| 4. | Polkadot Validator PQC Vulnerability Report | Scan 20+ active Polkadot/Kusama validator client repositories; produce anonymized public report classifying quantum exposure by validator type (BABE, GRANDPA, nominated). Delivered as PDF + quantumscan.io/polkadot-report — a concrete, measurable output the W3F and ecosystem can validate |
+| 4. | Polkadot Ecosystem PQC Vulnerability Report | Scan 20+ Polkadot/Kusama open-source repositories (parachains, pallets, wallets, tooling); produce public report classifying quantum exposure by component type (consensus keys, signing, key exchange). Delivered as PDF + quantumscan.io/polkadot-report — a concrete, measurable output the W3F and ecosystem can validate |
 
 ## Future Plans
 
