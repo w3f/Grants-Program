@@ -1,0 +1,43 @@
+name: "CLA Assistant"
+on:
+  issue_comment:
+    types: [created]
+  pull_request_target:
+    types: [opened,closed,synchronize]
+
+# explicitly configure permissions, in case your GITHUB_TOKEN workflow permissions are set to read-only in repository settings
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+  statuses: write
+
+jobs:
+  CLAAssistant:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "CLA Assistant"
+        if: (github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read and hereby sign the Contributor License Agreement.') || github.event_name == 'pull_request_target'
+        uses: contributor-assistant/github-action@v2.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # the below token should have repo scope and must be manually added by you in the repository's secret
+          # This token is required only if you have configured to store the signatures in a remote repository/organization
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        with:
+          path-to-signatures: 'signatures/version1/cla.json'
+          path-to-document: 'https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/T%26Cs.md'
+          # branch should not be protected
+          branch: 'master'
+          allowlist: semuelle,takahser,Noc2,PieWol,keeganquigley,laboon,github-actions[bot]
+
+         # the followings are the optional inputs - If the optional inputs are not given, then default values will be taken
+          remote-organization-name: w3f
+          remote-repository-name: grants-cla
+          #create-file-commit-message: 'For example: Creating file for storing CLA Signatures'
+          #signed-commit-message: 'For example: $contributorName has signed the CLA in $owner/$repo#$pullRequestNo'
+          custom-notsigned-prcomment: 'Thank you for your submission, we really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/T%26Cs.md) before we can accept your contribution. Please submit the following text as a separate comment:'
+          custom-pr-sign-comment: 'I have read and hereby sign the Contributor License Agreement.'
+          #custom-allsigned-prcomment: 'pull request comment when all contributors has signed, defaults to **CLA Assistant Lite bot** All Contributors have signed the CLA.'
+          lock-pullrequest-aftermerge: false # if you don't want this bot to automatically lock the pull request after merging (default - true)
+          #use-dco-flag: true - If you are using DCO instead of CLA

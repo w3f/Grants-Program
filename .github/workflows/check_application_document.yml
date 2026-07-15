@@ -1,0 +1,37 @@
+name: Check application document
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  get_filename:
+    if: contains(github.event.pull_request.body, 'Project Abstract')
+    runs-on: ubuntu-latest
+    outputs:
+      filename: ${{ steps.files.outputs.added }}
+    steps:
+
+      - name: Get application filename # We assume there's only one
+        id: 'files'
+        uses: Ana06/get-changed-files@v2.0.0
+        with:
+          filter: 'applications/*.md'
+          format: 'csv'
+
+  parse_document:
+    needs: get_filename
+    if: needs.get_filename.outputs.filename
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Parse application file
+        id: grant_parser
+        uses: w3f/parse-grant-application-action@master
+        with:
+          path: "${{ github.workspace }}/${{ needs.get_filename.outputs.filename }}"
